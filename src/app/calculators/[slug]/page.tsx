@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
 import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
 import { getCalculatorComponent } from "@/components/calculators/registry";
+import { ShareDialog } from "@/components/calculators/share-dialog";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
 import type { CategoryType } from "@/types/calculator";
 
@@ -49,18 +50,24 @@ export default async function CalculatorDetailPage({
   if (!CalculatorComponent) {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-surface-dark">
-        {/* Back navigation */}
+        {/* Back navigation + Share */}
         <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
-          <Link href="/calculators">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="gap-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              All Calculators
-            </Button>
-          </Link>
+          <div className="flex items-center justify-between">
+            <Link href="/calculators">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="gap-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                All Calculators
+              </Button>
+            </Link>
+            <ShareDialog
+              calculatorSlug={slug}
+              calculatorTitle={calculator.title}
+            />
+          </div>
         </div>
 
         <CalculatorLayout
@@ -107,16 +114,22 @@ export default async function CalculatorDetailPage({
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-surface-dark">
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
-        <Link href="/calculators">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="gap-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            All Calculators
-          </Button>
-        </Link>
+        <div className="flex items-center justify-between">
+          <Link href="/calculators">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="gap-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              All Calculators
+            </Button>
+          </Link>
+          <ShareDialog
+            calculatorSlug={slug}
+            calculatorTitle={calculator.title}
+          />
+        </div>
       </div>
       <CalculatorComponent />
     </div>

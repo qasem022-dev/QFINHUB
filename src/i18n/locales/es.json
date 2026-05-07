@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "calculators": "Calculadoras",
+    "aiSpecialist": "Especialista IA",
+    "dashboard": "Panel",
+    "signIn": "Iniciar Sesión",
+    "getStarted": "Comenzar",
+    "settings": "Ajustes",
+    "myPlans": "Mis Planes"
+  },
+  "hero": {
+    "title": "Tu Kit Financiero Completo",
+    "subtitle": "Calculadoras financieras de nivel profesional, análisis personalizados con IA y herramientas de planificación interactivas, todo en una plataforma.",
+    "cta": "Explorar Calculadoras",
+    "ctaAlt": "Probar Especialista IA"
+  },
+  "features": {
+    "calculators": "60+ Calculadoras Financieras",
+    "calculatorsDesc": "Calculadoras completas para préstamos, hipotecas, inversiones, jubilación, impuestos, bonos, opciones y más.",
+    "ai": "Especialista IA Personalizado",
+    "aiDesc": "Describe tus necesidades financieras en lenguaje sencillo y nuestra IA genera una calculadora funcional y editable.",
+    "dashboard": "Guardar y Panel",
+    "dashboardDesc": "Guarda tus calculadoras personalizadas y planes financieros, accede a ellos desde tu panel personal.",
+    "languages": "Soporte Multi-Idioma",
+    "languagesDesc": "Usa QFINHUB en inglés, español o hindi con detección geográfica automática.",
+    "widgets": "Widgets Insertables",
+    "widgetsDesc": "Inserta cualquier calculadora en tu sitio web o comparte resultados como imágenes y PDF.",
+    "design": "Diseño Profesional",
+    "designDesc": "Interfaz limpia y moderna con un esquema de colores profesional azul y verde."
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signUp": "Comenzar",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidaste tu Contraseña?",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?"
+  },
+  "calculators": {
+    "title": "Calculadoras Financieras",
+    "search": "Buscar calculadoras...",
+    "allCategories": "Todas las Categorías",
+    "back": "Todas las Calculadoras",
+    "comingSoon": "Implementación de la calculadora próximamente",
+    "share": "Compartir",
+    "exportImage": "Descargar como Imagen",
+    "exportPDF": "Descargar como PDF",
+    "embed": "Insertar"
+  },
+  "aiSpecialist": {
+    "title": "Especialista IA Personalizado",
+    "subtitle": "Describe lo que necesitas en lenguaje sencillo",
+    "placeholder": "Ej: Calcular mi pago hipotecario mensual...",
+    "send": "Enviar",
+    "generating": "Generando tu calculadora personalizada...",
+    "savePlan": "Guardar Plan",
+    "saved": "¡Guardado!",
+    "greeting": "¿Qué calculadora financiera te gustaría crear?",
+    "examples": [
+      "Calcular mis ahorros para la jubilación con un crecimiento del 7% en 30 años",
+      "Crear un calendario de amortización para un préstamo de coche de $50,000",
+      "Comparar alquilar vs comprar una casa de $400,000",
+      "Calcular interés compuesto con contribuciones mensuales"
+    ]
+  },
+  "dashboard": {
+    "welcome": "Bienvenido de nuevo",
+    "stats": "Estadísticas Rápidas",
+    "totalPlans": "Total de Planes",
+    "recentActivity": "Actividad Reciente",
+    "newCalculator": "Nueva Calculadora",
+    "myPlans": "Mis Planes",
+    "noPlans": "Aún no hay planes guardados. ¡Prueba el Especialista IA!",
+    "settings": "Ajustes"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados",
+    "theme": "Tema",
+    "language": "Idioma",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  }
+}

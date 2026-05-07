@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "calculators": "Calculators",
+    "aiSpecialist": "AI Specialist",
+    "dashboard": "Dashboard",
+    "signIn": "Sign In",
+    "getStarted": "Get Started",
+    "settings": "Settings",
+    "myPlans": "My Plans"
+  },
+  "hero": {
+    "title": "Your Complete Finance Toolkit",
+    "subtitle": "Professional-grade financial calculators, AI-powered custom analysis, and interactive planning tools — all in one platform.",
+    "cta": "Explore Calculators",
+    "ctaAlt": "Try AI Specialist"
+  },
+  "features": {
+    "calculators": "60+ Financial Calculators",
+    "calculatorsDesc": "Comprehensive calculators for loans, mortgages, investments, retirement, taxes, bonds, options, and more.",
+    "ai": "AI Custom Specialist",
+    "aiDesc": "Describe your financial needs in plain language, and our AI generates a fully functional, editable calculator.",
+    "dashboard": "Save & Dashboard",
+    "dashboardDesc": "Save your custom calculators and financial plans, access them from your personal dashboard.",
+    "languages": "Multi-Language Support",
+    "languagesDesc": "Use QFINHUB in English, Spanish, or Hindi with automatic geo-detection.",
+    "widgets": "Embeddable Widgets",
+    "widgetsDesc": "Embed any calculator on your website or share results as images and PDFs.",
+    "design": "Professional Design",
+    "designDesc": "Clean, modern interface with a professional blue and green color scheme."
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Get Started",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "calculators": {
+    "title": "Financial Calculators",
+    "search": "Search calculators...",
+    "allCategories": "All Categories",
+    "back": "All Calculators",
+    "comingSoon": "Calculator implementation coming soon",
+    "share": "Share",
+    "exportImage": "Download as Image",
+    "exportPDF": "Download as PDF",
+    "embed": "Embed"
+  },
+  "aiSpecialist": {
+    "title": "AI Custom Specialist",
+    "subtitle": "Describe what you need in plain language",
+    "placeholder": "e.g., Calculate my monthly mortgage payment...",
+    "send": "Send",
+    "generating": "Generating your custom calculator...",
+    "savePlan": "Save Plan",
+    "saved": "Saved!",
+    "greeting": "What financial calculator would you like to build?",
+    "examples": [
+      "Calculate my retirement savings with 7% growth over 30 years",
+      "Create a loan amortization schedule for a $50,000 car loan",
+      "Compare renting vs buying a $400,000 home",
+      "Calculate compound interest with monthly contributions"
+    ]
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "stats": "Quick Stats",
+    "totalPlans": "Total Plans",
+    "recentActivity": "Recent Activity",
+    "newCalculator": "New Calculator",
+    "myPlans": "My Plans",
+    "noPlans": "No saved plans yet. Try the AI Specialist!",
+    "settings": "Settings"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "search": "Search",
+    "noResults": "No results found",
+    "theme": "Theme",
+    "language": "Language",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

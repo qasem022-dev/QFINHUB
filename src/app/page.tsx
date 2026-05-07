@@ -1,7 +1,15 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useLocale } from "./i18n-provider";
+import { getTranslation } from "@/lib/i18n";
 
 export default function Home() {
+  const { locale } = useLocale();
+
+  const t = (path: string) => getTranslation(locale, path);
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
@@ -13,14 +21,13 @@ export default function Home() {
             AI-Powered Financial Intelligence
           </div>
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            Your Complete{" "}
+            {t("hero.title").split("Finance Toolkit")[0]}
             <span className="bg-gradient-to-r from-accent-400 to-accent-300 bg-clip-text text-transparent">
               Finance Toolkit
             </span>
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-300 sm:text-xl">
-            Professional-grade financial calculators, AI-powered custom analysis,
-            and interactive planning tools — all in one platform.
+            {t("hero.subtitle")}
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link href="/calculators">
@@ -28,7 +35,7 @@ export default function Home() {
                 size="lg"
                 className="h-14 min-w-[200px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/30 hover:bg-accent-700"
               >
-                Explore Calculators
+                {t("hero.cta")}
               </Button>
             </Link>
             <Link href="/ai-specialist">
@@ -37,13 +44,13 @@ export default function Home() {
                 variant="outline"
                 className="h-14 min-w-[200px] rounded-xl border-gray-600 bg-white/5 px-8 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/10"
               >
-                Try AI Specialist
+                {t("hero.ctaAlt")}
               </Button>
             </Link>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
-              { value: "60+", label: "Calculators" },
+              { value: "60+", label: t("features.calculators").replace(/60\+ /, "") },
               { value: "AI", label: "Custom Plans" },
               { value: "3", label: "Languages" },
               { value: "100%", label: "Free" },
@@ -69,22 +76,22 @@ export default function Home() {
             Everything You Need for Financial Analysis
           </h2>
           <p className="mx-auto mb-16 max-w-2xl text-center text-gray-500 dark:text-gray-400">
-            From simple loans to complex investment strategies, QFINHUB has you covered.
+            {t("hero.subtitle")}
           </p>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <div
-                key={feature.title}
+                key={feature.titleKey}
                 className="group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-primary-200 hover:shadow-md dark:border-gray-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700"
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
                   {feature.icon}
                 </div>
                 <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-                  {feature.title}
+                  {t(feature.titleKey)}
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                  {feature.description}
+                  {t(feature.descKey)}
                 </p>
               </div>
             ))}
@@ -107,7 +114,7 @@ export default function Home() {
               size="lg"
               className="h-14 min-w-[200px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/30 hover:bg-accent-700"
             >
-              Get Started Free
+              {t("auth.signUp")}
             </Button>
           </Link>
         </div>
@@ -133,9 +140,8 @@ export default function Home() {
 
 const features = [
   {
-    title: "60+ Financial Calculators",
-    description:
-      "Comprehensive calculators for loans, mortgages, investments, retirement, taxes, bonds, options, and more — all with accurate math and interactive charts.",
+    titleKey: "features.calculators",
+    descKey: "features.calculatorsDesc",
     icon: (
       <svg
         className="h-6 w-6"
@@ -153,9 +159,8 @@ const features = [
     ),
   },
   {
-    title: "AI Custom Specialist",
-    description:
-      "Describe your financial needs in plain language, and our AI generates a fully functional, editable calculator and personalized plan in real time.",
+    titleKey: "features.ai",
+    descKey: "features.aiDesc",
     icon: (
       <svg
         className="h-6 w-6"
@@ -173,9 +178,8 @@ const features = [
     ),
   },
   {
-    title: "Save & Dashboard",
-    description:
-      "Save your custom calculators and financial plans, access them from your personal dashboard, and manage everything in one place.",
+    titleKey: "features.dashboard",
+    descKey: "features.dashboardDesc",
     icon: (
       <svg
         className="h-6 w-6"
@@ -193,9 +197,8 @@ const features = [
     ),
   },
   {
-    title: "Multi-Language Support",
-    description:
-      "Use QFINHUB in English, Spanish, or Hindi with automatic geo-detection and seamless language switching.",
+    titleKey: "features.languages",
+    descKey: "features.languagesDesc",
     icon: (
       <svg
         className="h-6 w-6"
@@ -213,9 +216,8 @@ const features = [
     ),
   },
   {
-    title: "Embeddable Widgets",
-    description:
-      "Embed any calculator on your website or share results as images and PDFs with clients and colleagues.",
+    titleKey: "features.widgets",
+    descKey: "features.widgetsDesc",
     icon: (
       <svg
         className="h-6 w-6"
@@ -233,9 +235,8 @@ const features = [
     ),
   },
   {
-    title: "Professional Design",
-    description:
-      "Clean, modern interface with a professional blue and green color scheme. Dark mode included for late-night analysis.",
+    titleKey: "features.design",
+    descKey: "features.designDesc",
     icon: (
       <svg
         className="h-6 w-6"
