@@ -1,0 +1,52 @@
+"use client";
+
+import * as React from "react";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { formatCurrency, formatPercentage } from "@/lib/utils";
+
+export default function DividendCalculator() {
+  const [investment, setInvestment] = React.useState(50000);
+  const [yieldPct, setYieldPct] = React.useState(3.5);
+  const [growth, setGrowth] = React.useState(6);
+  const [years, setYears] = React.useState(10);
+
+  const annualIncome = investment * (yieldPct / 100);
+  const g = growth / 100;
+
+  let totalDividends = 0;
+  let currentIncome = annualIncome;
+  const chartData: { year: string; "Dividend Income": number }[] = [
+    { year: "Year 0", "Dividend Income": Math.round(currentIncome) },
+  ];
+  for (let y = 1; y <= years; y++) {
+    totalDividends += currentIncome;
+    if (y < years) {
+      currentIncome *= (1 + g);
+    }
+    chartData.push({ year: `Year ${y}`, "Dividend Income": Math.round(currentIncome) });
+  }
+
+  const yieldOnCost = investment > 0 ? (currentIncome / investment) * 100 : 0;
+
+  return (
+    <CalculatorLayout
+      title="Dividend Calculator"
+      description="Project dividend income with DRIP, growth rates, and reinvestment strategies."
+      icon={<span>💵</span>}
+      results={
+        <div className="space-y-4">
+          <ResultCard label="Annual Dividend Income" value={formatCurrency(currentIncome)} highlight subtext={`At year ${years}`} />
+          <ResultCard label="Total Dividends Received" value={formatCurrency(totalDividends)} subtext={`Over ${years} years`} />
+          <ResultCard label="Yield on Cost" value={formatPercentage(yieldOnCost)} />
+          <ResultCard label="Initial Annual Income" value={formatCurrency(annualIncome)} subtext={`At ${yieldPct}% yield`} />
+        </div>
+      }
+    >
+      <CalculatorChart type="area" data={chartData} xKey="year" yKey="Dividend Income" title="Dividend Growth" />
+      <CalculatorInput input={{ id: "investment", label: "Initial Investment", type: "number", defaultValue: 50000, suffix: "$", min: 0 }} value={investment} onChange={setInvestment} />
+      <CalculatorInput input={{ id: "yieldPct", label: "Dividend Yield", type: "number", defaultValue: 3.5, suffix: "%", min: 0, max: 20, step: 0.1 }} value={yieldPct} onChange={setYieldPct} />
+      <CalculatorInput input={{ id: "growth", label: "Annual Dividend Growth", type: "number", defaultValue: 6, suffix: "%", min: 0, max: 50, step: 0.1 }} value={growth} onChange={setGrowth} />
+      <CalculatorInput input={{ id: "years", label: "Investment Horizon", type: "number", defaultValue: 10, suffix: "years", min: 1, max: 50 }} value={years} onChange={setYears} />
+    </CalculatorLayout>
+  );
+}
