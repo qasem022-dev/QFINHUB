@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { PlausibleAnalytics } from "@/components/plausible-analytics";
 import { ThemeProvider } from "@/hooks/use-theme";
@@ -141,14 +140,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Google AdSense — production only */}
-        {process.env.NODE_ENV === "production" && (
-          <Script
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1102790706635466"
-            strategy="afterInteractive"
-            crossOrigin="anonymous"
-          />
-        )}
+        {/* Google AdSense site verification */}
+        <meta name="google-adsense-account" content="ca-pub-1102790706635466" />
         {/* Hreflang tags for multi-language support */}
         {locales.map((locale) => (
           <link
