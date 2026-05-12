@@ -2,23 +2,25 @@
 
 import * as React from "react";
 
+/**
+ * Injects the Plausible Analytics script exactly as provided.
+ * Uses DOM API to ensure Plausible's verification tool detects it.
+ */
 export function PlausibleAnalytics() {
-  const initialized = React.useRef(false);
+  const added = React.useRef(false);
 
   React.useEffect(() => {
-    if (initialized.current) return;
+    if (added.current) return;
+    // Avoid duplicate if already present
+    if (document.querySelector('script[src*="pa-d1k36"]')) return;
 
-    const initPlausible = async () => {
-      try {
-        const { init } = await import("@plausible-analytics/tracker");
-        init({ domain: "www.qfinhub.com" });
-        initialized.current = true;
-      } catch (err) {
-        console.warn("Plausible analytics init skipped:", err);
-      }
-    };
+    const script = document.createElement("script");
+    script.src = "https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js";
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
 
-    initPlausible();
+    added.current = true;
   }, []);
 
   return null;
