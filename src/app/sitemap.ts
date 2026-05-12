@@ -1,6 +1,6 @@
 import { allCalculators } from "@/lib/calculators";
 
-const BASE_URL = "https://qfinhub.com";
+const BASE_URL = "https://www.qfinhub.com";
 
 type ChangeFrequency =
   | "always"

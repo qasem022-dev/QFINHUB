@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
@@ -13,6 +14,8 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter",
 });
+
+const baseUrl = "https://www.qfinhub.com";
 
 export const metadata: Metadata = {
   title: {
@@ -48,7 +51,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  metadataBase: new URL("https://qfinhub.com"),
+  metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",
     languages: {
@@ -61,24 +64,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "QFINHUB",
-    title: "QFINHUB — Financial Tools Platform",
+    title: "QFINHUB — Free Financial Calculators Online",
     description:
-      "Professional financial calculators, AI-powered analysis, and comprehensive finance tools.",
-    url: "https://qfinhub.com",
+      "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+    url: baseUrl,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "QFINHUB — Financial Tools Platform",
+        alt: "QFINHUB — Free Financial Calculators Online",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QFINHUB — Financial Tools Platform",
+    title: "QFINHUB — Free Financial Calculators Online",
     description:
-      "Professional financial calculators, AI-powered analysis, and comprehensive finance tools.",
+      "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -98,7 +101,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "QFINHUB",
-  url: "https://qfinhub.com",
+  url: baseUrl,
   description:
     "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
   applicationCategory: "FinanceApplication",
@@ -142,23 +145,15 @@ export default function RootLayout({
             key={locale}
             rel="alternate"
             hrefLang={locale}
-            href={`https://qfinhub.com/${locale}`}
+            href={`${baseUrl}/${locale}`}
           />
         ))}
-        <link rel="alternate" hrefLang="x-default" href="https://qfinhub.com" />
+        <link rel="alternate" hrefLang="x-default" href={baseUrl} />
         {/* iOS PWA / Add to Home Screen support */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="QFINHUB" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* Privacy-friendly analytics (Plausible) — only in production */}
-        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
-          <script
-            defer
-            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
-            src="https://plausible.io/js/script.js"
-          />
-        )}
       </head>
       <body className="min-h-screen bg-white font-sans text-gray-900 antialiased dark:bg-surface-dark dark:text-gray-100">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -170,6 +165,7 @@ export default function RootLayout({
           </LocaleProvider>
           <Toaster />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
