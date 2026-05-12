@@ -34,11 +34,14 @@ import {
   CalendarDays,
   Search,
 } from "lucide-react";
+import { toast } from "sonner";
 import type { SavedPlan } from "@/types/ai";
+import { useTranslation } from "@/app/i18n-provider";
 
 const supabase = createClient();
 
 export default function PlansPage() {
+  const { t } = useTranslation();
   const [plans, setPlans] = React.useState<SavedPlan[]>([]);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState<string | null>(null);
@@ -70,12 +73,12 @@ export default function PlansPage() {
       setPlans(data ?? []);
     } catch (err) {
       setError(
-        err instanceof Error ? err.message : "Failed to load saved plans",
+        err instanceof Error ? err.message : t("dashboard.failedLoad"),
       );
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [t]);
 
   React.useEffect(() => {
     loadPlans();
@@ -98,7 +101,7 @@ export default function PlansPage() {
       } catch (err) {
         const message =
           err instanceof Error ? err.message : "Failed to delete plan";
-        alert(message);
+        toast.error(message);
       } finally {
         setDeleting(false);
       }
@@ -118,12 +121,20 @@ export default function PlansPage() {
 
   if (loading) {
     return (
-      <div className="flex h-[60vh] items-center justify-center">
-        <div className="flex flex-col items-center gap-3">
-          <Loader2 className="h-8 w-8 animate-spin text-primary-600" />
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Loading your saved plans...
-          </p>
+      <div className="space-y-6 animate-fade-in">
+        {/* Header skeleton */}
+        <div className="flex items-center justify-between">
+          <div className="space-y-2">
+            <div className="h-8 w-48 animate-pulse rounded bg-gray-200 dark:bg-gray-700" />
+            <div className="h-4 w-64 animate-pulse rounded bg-gray-200 dark:bg-gray-700" />
+          </div>
+          <div className="h-9 w-36 animate-pulse rounded-lg bg-gray-200 dark:bg-gray-700" />
+        </div>
+        {/* Grid skeleton */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="h-48 animate-pulse rounded-xl bg-gray-100 dark:bg-gray-800" />
+          ))}
         </div>
       </div>
     );
@@ -133,10 +144,10 @@ export default function PlansPage() {
     return (
       <div className="flex h-[60vh] items-center justify-center">
         <div className="flex flex-col items-center gap-3 text-center">
-          <AlertCircle className="h-8 w-8 text-red-500" />
+          <AlertCircle className="h-8 w-8 text-red-500" aria-hidden="true" />
           <p className="text-sm text-gray-500 dark:text-gray-400">{error}</p>
           <Button variant="outline" onClick={loadPlans}>
-            Try Again
+            {t("dashboard.tryAgain")}
           </Button>
         </div>
       </div>
@@ -149,16 +160,16 @@ export default function PlansPage() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            My Plans
+            {t("nav.myPlans")}
           </h1>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Manage your saved AI-generated financial calculators
+            {t("dashboard.recentPlansDesc")}
           </p>
         </div>
         <Button asChild>
           <Link href="/ai-specialist">
-            <Plus className="mr-1.5 h-4 w-4" />
-            New Plan
+            <Plus className="mr-1.5 h-4 w-4" aria-hidden="true" />
+            {t("dashboard.createFirstPlan")}
           </Link>
         </Button>
       </div>
@@ -166,10 +177,10 @@ export default function PlansPage() {
       {/* Search */}
       {plans.length > 0 && (
         <div className="relative max-w-md">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" aria-hidden="true" />
           <input
             type="text"
-            placeholder="Search plans by title or description..."
+            placeholder={t("dashboard.searchPlans")}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="flex h-9 w-full rounded-md border border-gray-200 bg-transparent py-1 pl-9 pr-3 text-sm shadow-sm transition-colors placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:placeholder:text-gray-400"
@@ -182,21 +193,20 @@ export default function PlansPage() {
         <Card>
           <CardContent className="flex flex-col items-center gap-4 px-6 py-16 text-center">
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/20 dark:to-accent-900/20">
-              <Bot className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+              <Bot className="h-8 w-8 text-primary-600 dark:text-primary-400" aria-hidden="true" />
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                No saved plans yet
+                {t("dashboard.noPlans")}
               </h3>
               <p className="mt-1 max-w-sm text-sm text-gray-500 dark:text-gray-400">
-                Try the AI Specialist to create your first financial calculator.
-                Describe what you need and it will be built instantly.
+                {t("dashboard.recentPlansDesc")}
               </p>
             </div>
             <Button asChild>
               <Link href="/ai-specialist">
-                <Plus className="mr-1.5 h-4 w-4" />
-                Create Your First Plan
+                <Plus className="mr-1.5 h-4 w-4" aria-hidden="true" />
+                {t("dashboard.createFirstPlan")}
               </Link>
             </Button>
           </CardContent>
@@ -204,13 +214,13 @@ export default function PlansPage() {
       ) : filteredPlans.length === 0 ? (
         <Card>
           <CardContent className="flex flex-col items-center gap-3 px-6 py-12 text-center">
-            <Search className="h-8 w-8 text-gray-400" />
+            <Search className="h-8 w-8 text-gray-400" aria-hidden="true" />
             <div>
               <p className="font-medium text-gray-900 dark:text-white">
-                No results found
+                {t("dashboard.noResults")}
               </p>
               <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                Try a different search term
+                {t("dashboard.tryDifferentSearch")}
               </p>
             </div>
             <Button
@@ -218,14 +228,14 @@ export default function PlansPage() {
               size="sm"
               onClick={() => setSearchQuery("")}
             >
-              Clear Search
+              {t("dashboard.clearSearch")}
             </Button>
           </CardContent>
         </Card>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filteredPlans.map((plan) => (
-            <Card key={plan.id} className="flex flex-col">
+            <Card key={plan.id} className="flex flex-col transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 animate-fade-in">
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
@@ -244,14 +254,19 @@ export default function PlansPage() {
                     )}
                   </div>
                   <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary-50 dark:bg-primary-900/30">
-                    <FileText className="h-4 w-4 text-primary-600 dark:text-primary-400" />
+                    <FileText className="h-4 w-4 text-primary-600 dark:text-primary-400" aria-hidden="true" />
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="flex-1 pb-3">
                 <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
-                  <CalendarDays className="h-3.5 w-3.5" />
-                  <span>Created {formatDate(plan.created_at)}</span>
+                  <CalendarDays className="h-3.5 w-3.5" aria-hidden="true" />
+                  <span>
+                    {t("dashboard.created")} {formatDate(plan.created_at, t)}
+                    {plan.updated_at && plan.updated_at !== plan.created_at && (
+                      <> · {t("dashboard.updated")} {formatDate(plan.updated_at, t)}</>
+                    )}
+                  </span>
                 </div>
                 {plan.config?.inputs && plan.config.inputs.length > 0 && (
                   <div className="mt-2 flex flex-wrap gap-1.5">
@@ -269,7 +284,7 @@ export default function PlansPage() {
                         variant="secondary"
                         className="text-[10px] font-normal"
                       >
-                        +{plan.config.inputs.length - 3} more
+                        +{plan.config.inputs.length - 3} {t("dashboard.more")}
                       </Badge>
                     )}
                   </div>
@@ -279,8 +294,8 @@ export default function PlansPage() {
               <CardFooter className="gap-2 pt-3">
                 <Button asChild variant="outline" size="sm" className="flex-1">
                   <Link href={`/ai-specialist?id=${plan.id}`}>
-                    <ExternalLink className="mr-1 h-3.5 w-3.5" />
-                    Open
+                    <ExternalLink className="mr-1 h-3.5 w-3.5" aria-hidden="true" />
+                    {t("dashboard.open")}
                   </Link>
                 </Button>
                 <Dialog
@@ -295,16 +310,16 @@ export default function PlansPage() {
                       size="icon"
                       className="h-8 w-8 text-gray-400 hover:text-red-600"
                       onClick={() => setDeleteOpen(plan.id)}
+                      aria-label={t("dashboard.deletePlan")}
                     >
-                      <Trash2 className="h-4 w-4" />
+                      <Trash2 className="h-4 w-4" aria-hidden="true" />
                     </Button>
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>Delete Plan</DialogTitle>
+                      <DialogTitle>{t("dashboard.deletePlan")}</DialogTitle>
                       <DialogDescription>
-                        Are you sure you want to delete &quot;{plan.title}&quot;?
-                        This action cannot be undone.
+                        {t("dashboard.deleteConfirm")} &quot;{plan.title}&quot;?
                       </DialogDescription>
                     </DialogHeader>
                     <DialogFooter>
@@ -313,7 +328,7 @@ export default function PlansPage() {
                         onClick={() => setDeleteOpen(null)}
                         disabled={deleting}
                       >
-                        Cancel
+                        {t("dashboard.cancel")}
                       </Button>
                       <Button
                         variant="destructive"
@@ -322,13 +337,13 @@ export default function PlansPage() {
                       >
                         {deleting ? (
                           <>
-                            <Loader2 className="mr-1.5 h-4 w-4 animate-spin" />
-                            Deleting...
+                            <Loader2 className="mr-1.5 h-4 w-4 animate-spin" aria-hidden="true" />
+                            {t("dashboard.deleting")}
                           </>
                         ) : (
                           <>
-                            <Trash2 className="mr-1.5 h-4 w-4" />
-                            Delete
+                            <Trash2 className="mr-1.5 h-4 w-4" aria-hidden="true" />
+                            {t("dashboard.delete")}
                           </>
                         )}
                       </Button>
@@ -344,15 +359,15 @@ export default function PlansPage() {
   );
 }
 
-function formatDate(dateString: string): string {
+function formatDate(dateString: string, t: (path: string) => string): string {
   const date = new Date(dateString);
   const now = new Date();
   const diffMs = now.getTime() - date.getTime();
   const diffDays = Math.floor(diffMs / 86400000);
 
-  if (diffDays === 0) return "today";
-  if (diffDays === 1) return "yesterday";
-  if (diffDays < 7) return `${diffDays} days ago`;
+  if (diffDays === 0) return t("dashboard.today");
+  if (diffDays === 1) return t("dashboard.yesterday");
+  if (diffDays < 7) return `${diffDays} ${t("dashboard.daysAgo")}`;
   return date.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",

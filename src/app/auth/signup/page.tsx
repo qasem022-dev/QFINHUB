@@ -18,6 +18,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
+import { useTranslation } from "@/app/i18n-provider";
 
 const signupSchema = z
   .object({
@@ -38,6 +39,7 @@ const signupSchema = z
 type SignupFormData = z.infer<typeof signupSchema>;
 
 export default function SignupPage() {
+  const { t } = useTranslation();
   const router = useRouter();
   const [showPassword, setShowPassword] = React.useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
@@ -75,15 +77,15 @@ export default function SignupPage() {
       router.push("/dashboard");
       router.refresh();
     } catch {
-      setServerError("Connection error. Please try again.");
+      setServerError(t("auth.connectionError"));
     }
   };
 
   const passwordRules = [
-    { label: "At least 8 characters", test: (v: string) => v.length >= 8 },
-    { label: "One uppercase letter", test: (v: string) => /[A-Z]/.test(v) },
-    { label: "One lowercase letter", test: (v: string) => /[a-z]/.test(v) },
-    { label: "One number", test: (v: string) => /[0-9]/.test(v) },
+    { label: t("auth.passwordRules.chars"), test: (v: string) => v.length >= 8 },
+    { label: t("auth.passwordRules.upper"), test: (v: string) => /[A-Z]/.test(v) },
+    { label: t("auth.passwordRules.lower"), test: (v: string) => /[a-z]/.test(v) },
+    { label: t("auth.passwordRules.number"), test: (v: string) => /[0-9]/.test(v) },
   ];
 
   return (
@@ -98,9 +100,9 @@ export default function SignupPage() {
               QFINHUB
             </span>
           </Link>
-          <CardTitle className="text-2xl">Create your account</CardTitle>
+          <CardTitle className="text-2xl">{t("auth.createAccount")}</CardTitle>
           <CardDescription>
-            Get started with QFINHUB&apos;s financial tools
+            {t("auth.signupDescription")}
           </CardDescription>
         </CardHeader>
 
@@ -113,11 +115,11 @@ export default function SignupPage() {
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">{t("auth.email")}</Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder={t("auth.emailPlaceholder")}
                 autoComplete="email"
                 {...register("email")}
                 className={errors.email ? "border-red-500" : ""}
@@ -128,12 +130,12 @@ export default function SignupPage() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password">{t("auth.password")}</Label>
               <div className="relative">
                 <Input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="Create a strong password"
+                  placeholder={t("auth.createPasswordPlaceholder")}
                   autoComplete="new-password"
                   {...register("password")}
                   onChange={(e) => {
@@ -146,13 +148,14 @@ export default function SignupPage() {
                 />
                 <button
                   type="button"
+                  aria-label="Toggle password visibility"
                   onClick={() => setShowPassword(!showPassword)}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                 >
                   {showPassword ? (
-                    <EyeOff className="h-4 w-4" />
+                    <EyeOff className="h-4 w-4" aria-hidden="true" />
                   ) : (
-                    <Eye className="h-4 w-4" />
+                    <Eye className="h-4 w-4" aria-hidden="true" />
                   )}
                 </button>
               </div>
@@ -186,12 +189,12 @@ export default function SignupPage() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="confirmPassword">Confirm Password</Label>
+              <Label htmlFor="confirmPassword">{t("auth.confirmPassword")}</Label>
               <div className="relative">
                 <Input
                   id="confirmPassword"
                   type={showConfirmPassword ? "text" : "password"}
-                  placeholder="Repeat your password"
+                  placeholder={t("auth.confirmPlaceholder")}
                   autoComplete="new-password"
                   {...register("confirmPassword")}
                   className={
@@ -200,15 +203,16 @@ export default function SignupPage() {
                 />
                 <button
                   type="button"
+                  aria-label="Toggle password visibility"
                   onClick={() =>
                     setShowConfirmPassword(!showConfirmPassword)
                   }
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                 >
                   {showConfirmPassword ? (
-                    <EyeOff className="h-4 w-4" />
+                    <EyeOff className="h-4 w-4" aria-hidden="true" />
                   ) : (
-                    <Eye className="h-4 w-4" />
+                    <Eye className="h-4 w-4" aria-hidden="true" />
                   )}
                 </button>
               </div>
@@ -227,10 +231,10 @@ export default function SignupPage() {
               {isSubmitting ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Creating account...
+                  {t("auth.creatingAccount")}
                 </>
               ) : (
-                "Create Account"
+                t("auth.createAccountBtn")
               )}
             </Button>
           </CardContent>
@@ -238,12 +242,12 @@ export default function SignupPage() {
 
         <CardFooter className="justify-center">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Already have an account?{" "}
+            {t("auth.hasAccount")}{" "}
             <Link
               href="/auth/login"
               className="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400"
             >
-              Sign in
+              {t("auth.signIn")}
             </Link>
           </p>
         </CardFooter>

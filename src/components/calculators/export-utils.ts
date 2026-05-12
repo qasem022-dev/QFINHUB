@@ -79,6 +79,7 @@ export async function exportAsJPEG(
 /**
  * Captures a DOM element as a PDF document and triggers a download.
  * Uses html-to-image to render the element to PNG first, then embeds it in a PDF.
+ * Preserves aspect ratio with proper margins for a professional look.
  * @param elementId - The ID of the DOM element to capture
  * @param filename - The download filename (without extension)
  */
@@ -97,6 +98,10 @@ export async function exportAsPDF(
       };
     }
 
+    // Get element dimensions for aspect ratio calculation
+    const rect = element.getBoundingClientRect();
+    const aspectRatio = rect.width / rect.height;
+
     const dataUrl = await toPng(element, {
       quality: 1.0,
       pixelRatio: 2,
@@ -104,14 +109,32 @@ export async function exportAsPDF(
     });
 
     const pdf = new jsPDF({
-      orientation: "portrait",
+      orientation: aspectRatio > 1 ? "landscape" : "portrait",
       unit: "px",
     });
 
-    const imgWidth = pdf.internal.pageSize.getWidth();
-    const imgHeight = pdf.internal.pageSize.getHeight();
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    const margin = 32;
 
-    pdf.addImage(dataUrl, "PNG", 0, 0, imgWidth, imgHeight, undefined, "FAST");
+    // Calculate image dimensions to fit within margins while preserving aspect ratio
+    const maxWidth = pageWidth - margin * 2;
+    const maxHeight = pageHeight - margin * 2;
+
+    let imgWidth = maxWidth;
+    let imgHeight = imgWidth / aspectRatio;
+
+    // If image is taller than page, scale down to fit height
+    if (imgHeight > maxHeight) {
+      imgHeight = maxHeight;
+      imgWidth = imgHeight * aspectRatio;
+    }
+
+    // Center on page
+    const x = (pageWidth - imgWidth) / 2;
+    const y = (pageHeight - imgHeight) / 2;
+
+    pdf.addImage(dataUrl, "PNG", x, y, imgWidth, imgHeight);
     pdf.save(`${filename}.pdf`);
 
     return { success: true };

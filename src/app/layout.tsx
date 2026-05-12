@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
+import { AuthProvider } from "@/components/providers/auth-provider";
+import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
 import { defaultLocale, locales } from "@/lib/i18n";
 
 const inter = Inter({
@@ -14,24 +16,38 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "QFINHUB — Financial Tools Platform",
+    default: "QFINHUB — Free Financial Calculators Online",
     template: "%s | QFINHUB",
   },
   description:
-    "Professional financial calculators, AI-powered analysis, and comprehensive finance tools for investors and analysts.",
+    "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance. Fast, accurate, and 100% free — no sign-up required.",
   keywords: [
-    "finance",
-    "calculators",
-    "investment",
-    "AI finance",
-    "financial analysis",
+    "financial calculator",
     "loan calculator",
     "mortgage calculator",
-    "retirement planning",
+    "investment calculator",
+    "retirement calculator",
+    "tax calculator",
+    "compound interest calculator",
+    "free finance tools",
   ],
   authors: [{ name: "QFINHUB" }],
   creator: "QFINHUB",
   publisher: "QFINHUB",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+    other: [
+      {
+        rel: "manifest",
+        url: "/site.webmanifest",
+      },
+    ],
+  },
   metadataBase: new URL("https://qfinhub.com"),
   alternates: {
     canonical: "/",
@@ -84,7 +100,7 @@ const jsonLd = {
   name: "QFINHUB",
   url: "https://qfinhub.com",
   description:
-    "Professional financial calculators, AI-powered analysis, and comprehensive finance tools for investors and analysts.",
+    "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "All",
   browserRequirements: "Requires JavaScript",
@@ -99,12 +115,12 @@ const jsonLd = {
   },
   availableLanguage: ["English", "Spanish", "Hindi"],
   featureList: [
-    "60+ Financial Calculators",
-    "AI Custom Specialist",
+    "124 Financial Calculators",
+    "AI Custom Calculator",
     "Multi-Language Support",
-    "Embeddable Widgets",
+    "Export to PDF & Image",
     "Save & Dashboard",
-    "Professional Design",
+    "Embeddable Widgets",
   ],
 };
 
@@ -130,11 +146,27 @@ export default function RootLayout({
           />
         ))}
         <link rel="alternate" hrefLang="x-default" href="https://qfinhub.com" />
+        {/* iOS PWA / Add to Home Screen support */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="QFINHUB" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        {/* Privacy-friendly analytics (Plausible) — only in production */}
+        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
+          <script
+            defer
+            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.js"
+          />
+        )}
       </head>
       <body className="min-h-screen bg-white font-sans text-gray-900 antialiased dark:bg-surface-dark dark:text-gray-100">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LocaleProvider>
-            {children}
+            <AuthProvider>
+              {children}
+              <PWAInstallPrompt />
+            </AuthProvider>
           </LocaleProvider>
           <Toaster />
         </ThemeProvider>

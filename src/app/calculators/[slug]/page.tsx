@@ -1,6 +1,7 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Share2 } from "lucide-react";
+import { ArrowLeft, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
   }
 
   return {
-    title: `${calculator.title} — QFINHUB`,
+    title: `${calculator.title}`,
     description: calculator.description,
   };
 }
@@ -111,8 +112,31 @@ export default async function CalculatorDetailPage({
   }
 
   // Render the dynamically loaded calculator component
+  const calculatorLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: calculator.title,
+    description: calculator.description,
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "All",
+    url: `https://qfinhub.com/calculators/${slug}`,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    author: {
+      "@type": "Organization",
+      name: "QFINHUB",
+    },
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-surface-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(calculatorLd) }}
+      />
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/calculators">
@@ -131,7 +155,15 @@ export default async function CalculatorDetailPage({
           />
         </div>
       </div>
-      <CalculatorComponent />
+      <Suspense
+        fallback={
+          <div className="flex items-center justify-center py-20">
+            <Loader2 className="h-8 w-8 animate-spin text-primary-600" />
+          </div>
+        }
+      >
+        <CalculatorComponent />
+      </Suspense>
     </div>
   );
 }

@@ -17,17 +17,19 @@ export default function CapitalGainsTaxCalculator() {
   const [holdingPeriod, setHoldingPeriod] = React.useState(0); // 0 = short, 1 = long
   const [otherIncome, setOtherIncome] = React.useState(50000);
 
-  const gain = proceeds - costBasis;
+  const safeBasis = Math.max(0, isFinite(costBasis) ? costBasis : 0);
+  const safeProceeds = Math.max(0, isFinite(proceeds) ? proceeds : 0);
+  const safeOtherIncome = Math.max(0, isFinite(otherIncome) ? otherIncome : 0);
+
+  const gain = safeProceeds - safeBasis;
   let taxRate: number;
   let taxOwed: number;
 
   if (holdingPeriod === 0) {
-    // Short-term: taxed as ordinary income
     taxRate = SHORT_TERM_RATE;
     taxOwed = gain * taxRate;
   } else {
-    // Long-term: 0%, 15%, or 20%
-    const totalIncome = otherIncome + gain;
+    const totalIncome = safeOtherIncome + gain;
     let rate = 0.20;
     for (const bracket of LONG_TERM_RATES) {
       if (totalIncome > bracket.from && totalIncome <= bracket.to) {
@@ -35,15 +37,14 @@ export default function CapitalGainsTaxCalculator() {
         break;
       }
     }
-    // simplified: apply the bracket the gain falls into
     taxRate = rate;
     taxOwed = gain * taxRate;
   }
 
-  const netProceeds = proceeds - taxOwed;
+  const netProceeds = Math.max(0, safeProceeds - taxOwed);
 
   const chartData = [
-    { name: "Cost Basis", value: Math.round(costBasis) },
+    { name: "Cost Basis", value: Math.round(safeBasis) },
     { name: "Tax Owed", value: Math.round(taxOwed) },
     { name: "Net Proceeds", value: Math.round(netProceeds) },
   ];
@@ -51,20 +52,21 @@ export default function CapitalGainsTaxCalculator() {
   return (
     <CalculatorLayout
       title="Capital Gains Tax"
-      description="Calculate capital gains tax on investments including short-term and long-term rates."
-      icon={<span>📑</span>}
+      description="Calculate capital gains tax on investments including short-term and long-term rates with bracket analysis."
+      icon={<span>💰</span>}
       results={
         <div className="space-y-4">
           <ResultCard label="Capital Gain" value={formatCurrency(gain)} highlight />
           <ResultCard label="Tax Owed" value={formatCurrency(taxOwed)} subtext={`${(taxRate * 100).toFixed(0)}% ${holdingPeriod === 0 ? "short-term" : "long-term"} rate`} />
           <ResultCard label="Net Proceeds" value={formatCurrency(netProceeds)} />
+          <ResultCard label="Effective Tax Rate on Gain" value={formatPercentage(gain > 0 ? (taxOwed / gain) * 100 : 0)} />
         </div>
       }
     >
       <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Gain Breakdown" />
       <CalculatorInput input={{ id: "costBasis", label: "Cost Basis", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The original purchase price including commissions and fees." }} value={costBasis} onChange={setCostBasis} />
-      <CalculatorInput input={{ id: "proceeds", label: "Sale Proceeds", type: "number", defaultValue: 20000, suffix: "$", min: 0 }} value={proceeds} onChange={setProceeds} />
-      <CalculatorInput input={{ id: "holdingPeriod", label: "Holding Period", type: "select", defaultValue: 0, options: [{ label: "Short-Term (< 1 year)", value: 0 }, { label: "Long-Term (≥ 1 year)", value: 1 }] }} value={holdingPeriod} onChange={setHoldingPeriod} />
+      <CalculatorInput input={{ id: "proceeds", label: "Sale Proceeds", type: "number", defaultValue: 20000, suffix: "$", min: 0, tooltip: "The total amount received from the sale." }} value={proceeds} onChange={setProceeds} />
+      <CalculatorInput input={{ id: "holdingPeriod", label: "Holding Period", type: "select", defaultValue: 0, options: [{ label: "Short-Term (< 1 year)", value: 0 }, { label: "Long-Term (≥ 1 year)", value: 1 }], tooltip: "Short-term gains are taxed as ordinary income; long-term gains get preferential rates." }} value={holdingPeriod} onChange={setHoldingPeriod} />
       <CalculatorInput input={{ id: "otherIncome", label: "Other Taxable Income", type: "number", defaultValue: 50000, suffix: "$", min: 0, tooltip: "Your other income to determine the correct long-term capital gains bracket." }} value={otherIncome} onChange={setOtherIncome} />
     </CalculatorLayout>
   );

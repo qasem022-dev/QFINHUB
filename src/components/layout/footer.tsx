@@ -1,38 +1,45 @@
-import Link from "next/link";
+"use client";
 
-const footerLinks = [
+import Link from "next/link";
+import { useTranslation } from "@/app/i18n-provider";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
+
+const footerGroups = [
   {
-    title: "Product",
+    titleKey: "footer.product",
     links: [
-      { href: "/calculators", label: "Calculators" },
-      { href: "/ai-specialist", label: "AI Specialist" },
-      { href: "/dashboard", label: "Dashboard" },
+      { href: "/calculators", labelKey: "nav.calculators" },
+      { href: "/ai-specialist", labelKey: "nav.aiSpecialist" },
+      { href: "/dashboard", labelKey: "nav.dashboard" },
     ],
   },
   {
-    title: "Company",
+    titleKey: "footer.company",
     links: [
-      { href: "/about", label: "About" },
-      { href: "/blog", label: "Blog" },
-      { href: "/contact", label: "Contact" },
+      { href: "/about", labelKey: "footer.about" },
+      { href: "/blog", labelKey: "footer.blog" },
+      { href: "/contact", labelKey: "footer.contact" },
     ],
   },
   {
-    title: "Legal",
+    titleKey: "footer.legal",
     links: [
-      { href: "/privacy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms of Service" },
+      { href: "/privacy", labelKey: "footer.privacyPolicy" },
+      { href: "/terms", labelKey: "footer.termsOfService" },
+      { href: "/cookies", labelKey: "footer.cookiePolicy" },
     ],
   },
 ];
 
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com" },
-  { label: "Twitter", href: "https://twitter.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
+  { labelKey: "footer.social.github", href: "https://github.com" },
+  { labelKey: "footer.social.twitter", href: "https://twitter.com" },
+  { labelKey: "footer.social.linkedin", href: "https://linkedin.com" },
 ];
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-surface-dark">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -40,24 +47,24 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-primary-600 to-accent-500">
-                <span className="text-xs font-bold text-white">Q</span>
-              </div>
-              <span className="text-base font-bold tracking-tight text-gray-900 dark:text-white">
-                QFINHUB
-              </span>
+              <img
+                src="/qfinhub-logo.svg"
+                alt="QFINHUB"
+                className="h-7 w-auto"
+                width={126}
+                height={28}
+              />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-              Professional financial calculators, AI-powered analysis, and
-              interactive planning tools for investors and analysts.
+              {t("footer.brandDesc")}
             </p>
           </div>
 
           {/* Link Groups */}
-          {footerLinks.map((group) => (
-            <div key={group.title}>
+          {footerGroups.map((group) => (
+            <div key={group.titleKey}>
               <h3 className="mb-3 text-sm font-semibold text-gray-900 dark:text-white">
-                {group.title}
+                {t(group.titleKey)}
               </h3>
               <ul className="space-y-2">
                 {group.links.map((link) => (
@@ -66,7 +73,7 @@ export function Footer() {
                       href={link.href}
                       className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
-                      {link.label}
+                      {t(link.labelKey)}
                     </Link>
                   </li>
                 ))}
@@ -78,18 +85,19 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-gray-100 pt-8 sm:flex-row dark:border-gray-700">
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            &copy; {new Date().getFullYear()} QFINHUB. All rights reserved.
+            &copy; {new Date().getFullYear()} QFINHUB. {t("footer.rights")}
           </p>
           <div className="flex items-center gap-4">
+            <LanguageSwitcher compact />
             {socialLinks.map((social) => (
               <a
-                key={social.label}
+                key={social.labelKey}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-gray-400 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
               >
-                {social.label}
+                {t(social.labelKey)}
               </a>
             ))}
           </div>

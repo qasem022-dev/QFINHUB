@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { toast } from "sonner";
+import { useTranslation } from "@/app/i18n-provider";
 import {
   Share2,
   Link,
@@ -38,9 +39,11 @@ export function ShareDialog({
   calculatorTitle,
   children,
 }: ShareDialogProps) {
+  const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
   const [exportingImage, setExportingImage] = React.useState(false);
   const [exportingPDF, setExportingPDF] = React.useState(false);
+  const [copiedEmbed, setCopiedEmbed] = React.useState(false);
 
   const baseUrl =
     typeof window !== "undefined"
@@ -52,7 +55,7 @@ export function ShareDialog({
   const copyToClipboard = async (text: string, label: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success(`${label} copied to clipboard`);
+      toast.success(`${label} ${t('share.copiedToClipboard')}`);
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
@@ -63,9 +66,10 @@ export function ShareDialog({
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      toast.success(`${label} copied to clipboard`);
+      toast.success(`${label} ${t('share.copiedToClipboard')}`);
     }
   };
+
 
   const handleExportImage = async () => {
     setExportingImage(true);
@@ -76,9 +80,9 @@ export function ShareDialog({
     setExportingImage(false);
 
     if (result.success) {
-      toast.success("Image downloaded successfully");
+      toast.success(t('share.imageDownloaded'));
     } else {
-      toast.error(result.error ?? "Failed to export image");
+      toast.error(result.error ?? t('share.exportFailed'));
     }
   };
 
@@ -91,9 +95,9 @@ export function ShareDialog({
     setExportingPDF(false);
 
     if (result.success) {
-      toast.success("PDF downloaded successfully");
+      toast.success(t('share.pdfDownloaded'));
     } else {
-      toast.error(result.error ?? "Failed to export PDF");
+      toast.error(result.error ?? t('share.exportFailed'));
     }
   };
 
@@ -107,15 +111,15 @@ export function ShareDialog({
             className="gap-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
           >
             <Share2 className="h-4 w-4" />
-            Share
+            {t('share.share')}
           </Button>
         )}
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Share & Export</DialogTitle>
+          <DialogTitle>{t('share.shareExport')}</DialogTitle>
           <DialogDescription>
-            Share {calculatorTitle} with others or export the results.
+            {t('share.shareDesc').replace('{title}', calculatorTitle)}
           </DialogDescription>
         </DialogHeader>
 
@@ -123,15 +127,15 @@ export function ShareDialog({
           <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="share" className="gap-1.5">
               <Link className="h-3.5 w-3.5" />
-              Share
+              {t('share.share')}
             </TabsTrigger>
             <TabsTrigger value="embed" className="gap-1.5">
               <Code className="h-3.5 w-3.5" />
-              Embed
+              {t('share.embed')}
             </TabsTrigger>
             <TabsTrigger value="export" className="gap-1.5">
               <ImageIcon className="h-3.5 w-3.5" />
-              Export
+              {t('share.export')}
             </TabsTrigger>
           </TabsList>
 
@@ -146,11 +150,11 @@ export function ShareDialog({
               variant="default"
               className="w-full gap-2"
               onClick={() =>
-                copyToClipboard(calculatorUrl, "Calculator link")
+                copyToClipboard(calculatorUrl, t('share.copyLink'))
               }
             >
               <Link className="h-4 w-4" />
-              Copy Link
+              {t('share.copyLink')}
             </Button>
           </TabsContent>
 
@@ -164,19 +168,25 @@ export function ShareDialog({
             <Button
               variant="default"
               className="w-full gap-2"
-              onClick={() =>
-                copyToClipboard(embedCode, "Embed code")
-              }
+              onClick={() => {
+                setCopiedEmbed(true);
+                copyToClipboard(embedCode, t('share.copyEmbed'));
+                setTimeout(() => setCopiedEmbed(false), 2000);
+              }}
             >
-              <Code className="h-4 w-4" />
-              Copy Embed Code
+              {copiedEmbed ? (
+                <Check className="h-4 w-4" />
+              ) : (
+                <Code className="h-4 w-4" />
+              )}
+              {copiedEmbed ? t('share.copied') : t('share.copyEmbed')}
             </Button>
           </TabsContent>
 
           {/* Export Tab */}
           <TabsContent value="export" className="space-y-4">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Export the calculator results as an image or PDF document.
+              {t('share.exportDesc')}
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button
@@ -190,7 +200,7 @@ export function ShareDialog({
                 ) : (
                   <ImageIcon className="h-4 w-4" />
                 )}
-                {exportingImage ? "Exporting..." : "Download PNG"}
+                {exportingImage ? t('share.exporting') : t('share.downloadPNG')}
               </Button>
               <Button
                 variant="outline"
@@ -203,7 +213,7 @@ export function ShareDialog({
                 ) : (
                   <FileText className="h-4 w-4" />
                 )}
-                {exportingPDF ? "Exporting..." : "Download PDF"}
+                {exportingPDF ? t('share.exporting') : t('share.downloadPDF')}
               </Button>
             </div>
           </TabsContent>

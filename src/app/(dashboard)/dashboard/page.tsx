@@ -3,7 +3,6 @@
 import * as React from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/browser";
-import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -20,10 +19,12 @@ import {
   Sparkles,
 } from "lucide-react";
 import type { SavedPlan } from "@/types/ai";
+import { useTranslation } from "@/app/i18n-provider";
 
 const supabase = createClient();
 
 export default function DashboardPage() {
+  const { t } = useTranslation();
   const [user, setUser] = React.useState<{
     email: string;
     name?: string;
@@ -80,18 +81,24 @@ export default function DashboardPage() {
   }, []);
 
   const greeting = user?.name
-    ? `Good ${timeOfDay}, ${user.name.split(" ")[0]}`
-    : `Good ${timeOfDay}`;
+    ? `${t(`dashboard.greeting.${timeOfDay}`)}, ${user.name.split(" ")[0]}`
+    : `${t(`dashboard.greeting.${timeOfDay}`)}`;
 
   if (loading) {
     return (
-      <div className="flex h-[60vh] items-center justify-center">
-        <div className="flex flex-col items-center gap-3">
-          <Loader2 className="h-8 w-8 animate-spin text-primary-600" />
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Loading your dashboard...
-          </p>
+      <div className="space-y-6 animate-fade-in">
+        {/* Welcome skeleton */}
+        <div className="h-48 animate-pulse rounded-2xl bg-gray-100 dark:bg-gray-800" />
+
+        {/* Stats skeleton */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="h-32 animate-pulse rounded-xl bg-gray-100 dark:bg-gray-800" />
+          ))}
         </div>
+
+        {/* Plans skeleton */}
+        <div className="h-64 animate-pulse rounded-xl bg-gray-100 dark:bg-gray-800" />
       </div>
     );
   }
@@ -103,7 +110,7 @@ export default function DashboardPage() {
           <AlertCircle className="h-8 w-8 text-red-500" />
           <p className="text-sm text-gray-500 dark:text-gray-400">{error}</p>
           <Button variant="outline" onClick={() => window.location.reload()}>
-            Try Again
+            {t("dashboard.tryAgain")}
           </Button>
         </div>
       </div>
@@ -121,13 +128,13 @@ export default function DashboardPage() {
             {greeting}! 👋
           </h1>
           <p className="mt-1.5 text-sm text-primary-100">
-            Welcome back to QFINHUB. Here&apos;s your financial overview.
+            {t("dashboard.welcomeBack")}
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Button asChild variant="secondary" size="sm">
               <Link href="/calculators">
                 <Calculator className="mr-1.5 h-4 w-4" />
-                Browse Calculators
+                {t("dashboard.browseCalcs")}
               </Link>
             </Button>
             <Button
@@ -138,7 +145,7 @@ export default function DashboardPage() {
             >
               <Link href="/ai-specialist">
                 <Bot className="mr-1.5 h-4 w-4" />
-                AI Specialist
+                {t("dashboard.aiSpecialist")}
               </Link>
             </Button>
           </div>
@@ -147,10 +154,10 @@ export default function DashboardPage() {
 
       {/* Quick Stats */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <Card>
+        <Card className="transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-gray-500 dark:text-gray-400">
-              Saved Plans
+              {t("dashboard.savedPlans")}
             </CardTitle>
             <FileText className="h-4 w-4 text-primary-600" />
           </CardHeader>
@@ -158,49 +165,49 @@ export default function DashboardPage() {
             <div className="text-2xl font-bold">{plans.length}</div>
             <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
               {plans.length === 0
-                ? "No plans saved yet"
-                : `${plans.length} plan${plans.length !== 1 ? "s" : ""} available`}
+                ? t("dashboard.noPlans")
+                : `${plans.length} ${t("dashboard.savedPlans")}`}
             </p>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-gray-500 dark:text-gray-400">
-              Recent Activity
+              {t("dashboard.recentActivity")}
             </CardTitle>
             <CalendarDays className="h-4 w-4 text-accent-600" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {plans.length > 0 ? "Active" : "None"}
+              {plans.length > 0 ? t("dashboard.active") : "—"}
             </div>
             <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
               {plans.length > 0
-                ? `Last used ${timeAgo(plans[0]!.created_at)}`
-                : "Start by creating a plan"}
+                ? `${t("dashboard.updated")} ${timeAgo(plans[0]!.updated_at || plans[0]!.created_at, t)}`
+                : t("dashboard.createFirstPlan")}
             </p>
           </CardContent>
         </Card>
 
-        <Card className="sm:col-span-2 lg:col-span-1">
+        <Card className="transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 sm:col-span-2 lg:col-span-1">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-gray-500 dark:text-gray-400">
-              Quick Actions
+              {t("dashboard.quickActions")}
             </CardTitle>
             <Sparkles className="h-4 w-4 text-amber-500" />
           </CardHeader>
           <CardContent className="space-y-2">
-            <Button asChild variant="outline" size="sm" className="w-full">
+            <Button asChild variant="outline" size="sm" className="w-full transition-all hover:shadow-sm">
               <Link href="/calculators">
                 <Calculator className="mr-1.5 h-4 w-4" />
-                New Calculator
+                {t("dashboard.newCalculator")}
               </Link>
             </Button>
-            <Button asChild variant="outline" size="sm" className="w-full">
+            <Button asChild variant="outline" size="sm" className="w-full transition-all hover:shadow-sm">
               <Link href="/ai-specialist">
                 <Bot className="mr-1.5 h-4 w-4" />
-                AI Specialist
+                {t("dashboard.aiSpecialist")}
               </Link>
             </Button>
           </CardContent>
@@ -208,18 +215,18 @@ export default function DashboardPage() {
       </div>
 
       {/* Recent Plans */}
-      <Card>
+      <Card className="transition-all duration-300 hover:shadow-md">
         <CardHeader className="flex flex-row items-center justify-between">
           <div>
-            <CardTitle>Recent Plans</CardTitle>
+            <CardTitle>{t("dashboard.recentPlans")}</CardTitle>
             <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-              Your most recently saved AI-generated calculators
+              {t("dashboard.recentPlansDesc")}
             </p>
           </div>
           {plans.length > 0 && (
             <Button asChild variant="ghost" size="sm">
               <Link href="/dashboard/plans">
-                View All
+                {t("dashboard.viewAll")}
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </Button>
@@ -234,17 +241,16 @@ export default function DashboardPage() {
               </div>
               <div>
                 <p className="font-medium text-gray-900 dark:text-white">
-                  No saved plans yet
+                  {t("dashboard.noPlans")}
                 </p>
                 <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                  Try the AI Specialist to create your first financial
-                  calculator!
+                  {t("dashboard.recentPlansDesc")}
                 </p>
               </div>
               <Button asChild>
                 <Link href="/ai-specialist">
                   <Plus className="mr-1.5 h-4 w-4" />
-                  Create Your First Plan
+                  {t("dashboard.createFirstPlan")}
                 </Link>
               </Button>
             </div>
@@ -274,7 +280,7 @@ export default function DashboardPage() {
                         variant="secondary"
                         className="text-[11px] font-normal"
                       >
-                        {timeAgo(plan.created_at)}
+                        {timeAgo(plan.created_at, t)}
                       </Badge>
                     </div>
                     <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300 dark:text-gray-600" />
@@ -289,7 +295,7 @@ export default function DashboardPage() {
   );
 }
 
-function timeAgo(dateString: string): string {
+function timeAgo(dateString: string, t: (path: string) => string): string {
   const now = new Date();
   const date = new Date(dateString);
   const diffMs = now.getTime() - date.getTime();
@@ -297,10 +303,10 @@ function timeAgo(dateString: string): string {
   const diffHours = Math.floor(diffMs / 3600000);
   const diffDays = Math.floor(diffMs / 86400000);
 
-  if (diffMins < 1) return "just now";
-  if (diffMins < 60) return `${diffMins}m ago`;
-  if (diffHours < 24) return `${diffHours}h ago`;
-  if (diffDays < 7) return `${diffDays}d ago`;
+  if (diffMins < 1) return t("dashboard.justNow");
+  if (diffMins < 60) return `${diffMins}${t("dashboard.mAgo")}`;
+  if (diffHours < 24) return `${diffHours}${t("dashboard.hAgo")}`;
+  if (diffDays < 7) return `${diffDays}${t("dashboard.dAgo")}`;
   return date.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",

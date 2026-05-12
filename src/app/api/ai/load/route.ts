@@ -5,12 +5,12 @@ export async function GET(_request: NextRequest) {
   try {
     const supabase = await createClient();
 
-    // Check authentication
+    // Check authentication using getUser() (server-verified)
     const {
-      data: { session },
-    } = await supabase.auth.getSession();
+      data: { user },
+    } = await supabase.auth.getUser();
 
-    if (!session) {
+    if (!user) {
       return NextResponse.json(
         { error: "Authentication required" },
         { status: 401 },
@@ -20,7 +20,7 @@ export async function GET(_request: NextRequest) {
     const { data, error } = await supabase
       .from("saved_plans")
       .select("*")
-      .eq("user_id", session.user.id)
+      .eq("user_id", user.id)
       .order("created_at", { ascending: false });
 
     if (error) {

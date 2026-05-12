@@ -15,6 +15,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/hooks/use-theme";
+import { useAuth } from "@/components/providers/auth-provider";
+import { ProtectedRoute } from "@/components/auth/protected-route";
 import {
   LayoutDashboard,
   Calculator,
@@ -28,6 +30,7 @@ import {
   Moon,
   ChevronDown,
   Bell,
+  Loader2,
 } from "lucide-react";
 
 const sidebarLinks = [
@@ -38,22 +41,24 @@ const sidebarLinks = [
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ];
 
-export default function DashboardLayout({
+function DashboardLayoutInner({
   children,
 }: {
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+  const { user, signOut, isLoading } = useAuth();
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
-
-  // Simulate auth state — replace with real auth context later
-  const user = null as { email: string; avatar_url?: string } | null;
 
   // Close sidebar on route change (mobile)
   React.useEffect(() => {
     setSidebarOpen(false);
   }, [pathname]);
+
+  const handleSignOut = async () => {
+    await signOut();
+  };
 
   return (
     <div className="flex min-h-screen bg-gray-50 dark:bg-surface-dark">
@@ -84,6 +89,7 @@ export default function DashboardLayout({
           </Link>
           <button
             onClick={() => setSidebarOpen(false)}
+            aria-label="Close sidebar"
             className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300 lg:hidden"
           >
             <X className="h-4 w-4" />
@@ -132,6 +138,7 @@ export default function DashboardLayout({
           {/* Mobile menu toggle */}
           <button
             onClick={() => setSidebarOpen(true)}
+            aria-label="Open sidebar"
             className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 lg:hidden"
           >
             <Menu className="h-5 w-5" />
@@ -158,43 +165,79 @@ export default function DashboardLayout({
             </button>
 
             {/* Notifications */}
-            <button className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800">
+            <button
+              aria-label="Notifications"
+              className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+            >
               <Bell className="h-4 w-4" />
             </button>
 
             {/* User Menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="flex items-center gap-2 rounded-lg p-1.5 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800">
-                  <Avatar className="h-7 w-7">
-                    <AvatarImage
-                      src={user?.avatar_url ?? undefined}
-                      alt={user?.email ?? ""}
-                    />
-                    <AvatarFallback className="bg-primary-100 text-xs font-medium text-primary-700 dark:bg-primary-900/40 dark:text-primary-400">
-                      {user?.email?.charAt(0).toUpperCase() ?? "U"}
-                    </AvatarFallback>
-                  </Avatar>
-                  <ChevronDown className="hidden h-4 w-4 text-gray-400 sm:block" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
-                <DropdownMenuItem asChild>
-                  <Link
-                    href="/dashboard/settings"
-                    className="flex items-center gap-2"
+            {isLoading ? (
+              <div className="flex h-9 w-9 items-center justify-center">
+                <Loader2 className="h-4 w-4 animate-spin text-gray-400" />
+              </div>
+            ) : user ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    aria-label="User menu"
+                    className="flex items-center gap-2 rounded-lg p-1.5 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
                   >
-                    <Settings className="h-4 w-4" />
-                    Settings
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="flex items-center gap-2 text-red-600 focus:text-red-600 dark:text-red-400">
-                  <LogOut className="h-4 w-4" />
-                  Sign Out
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+                    <Avatar className="h-7 w-7">
+                      <AvatarImage
+                        src={user.avatar_url ?? undefined}
+                        alt={user.name ?? user.email}
+                      />
+                      <AvatarFallback className="bg-primary-100 text-xs font-medium text-primary-700 dark:bg-primary-900/40 dark:text-primary-400">
+                        {(user.name ?? user.email).charAt(0).toUpperCase()}
+                      </AvatarFallback>
+                    </Avatar>
+                    <span className="hidden text-sm font-medium text-gray-700 dark:text-gray-300 sm:block">
+                      {user.name ?? user.email.split("@")[0]}
+                    </span>
+                    <ChevronDown className="hidden h-4 w-4 text-gray-400 sm:block" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  <div className="px-2 py-1.5">
+                    <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
+                      {user.name ?? "User"}
+                    </p>
+                    <p className="truncate text-xs text-gray-500 dark:text-gray-400">
+                      {user.email}
+                    </p>
+                  </div>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <Link
+                      href="/dashboard/settings"
+                      className="flex items-center gap-2"
+                    >
+                      <Settings className="h-4 w-4" />
+                      Settings
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    onClick={handleSignOut}
+                    className="flex items-center gap-2 text-red-600 focus:text-red-600 dark:text-red-400"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    Sign Out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <div className="flex items-center gap-2">
+                <Button asChild variant="ghost" size="sm">
+                  <Link href="/auth/login">Sign In</Link>
+                </Button>
+                <Button asChild size="sm">
+                  <Link href="/auth/signup">Get Started</Link>
+                </Button>
+              </div>
+            )}
           </div>
         </header>
 
@@ -204,5 +247,18 @@ export default function DashboardLayout({
         </main>
       </div>
     </div>
+  );
+}
+
+// AuthProvider is in the root layout — available to all pages
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <ProtectedRoute>
+      <DashboardLayoutInner>{children}</DashboardLayoutInner>
+    </ProtectedRoute>
   );
 }

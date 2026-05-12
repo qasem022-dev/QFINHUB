@@ -1,6 +1,6 @@
 import type { AICalculatorResponse, ChatMessage } from "@/types/ai";
 
-const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_PRO_API_KEY || process.env.DEEPSEEK_API_KEY;
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 const SYSTEM_PROMPT = `You are a financial calculator AI that generates structured calculator configurations.
@@ -117,6 +117,66 @@ Example for "compound interest calculator":
   }
 }`;
 
+// ── Complexity Detection ──────────────────────────────────────────
+// Keywords that suggest a request is complex and needs the Pro model.
+const COMPLEX_KEYWORDS = [
+  "option", "options", "option pricing",
+  "bond", "bonds", "bond yield", "bond price", "duration", "convexity",
+  "derivative", "derivatives", "futures", "swap",
+  "monte carlo", "simulation", "stochastic",
+  "black scholes", "black-scholes",
+  "yield curve", "term structure",
+  "portfolio optimization", "efficient frontier", "markowitz", "sharpe",
+  "risk analysis", "value at risk", "var", "cvar",
+  "advanced", "complex", "sophisticated",
+  "hedging", "hedge",
+  "correlation", "covariance",
+  "regression", "forecast", "prediction",
+  "capital asset pricing", "capm",
+  "weighted average cost of capital", "wacc",
+  "discounted cash flow", "dcf",
+  "sensitivity analysis",
+  "scenario analysis",
+  "tax optimization", "tax strategy",
+  "retirement withdrawal strategy",
+  "multi-variable", "multivariable",
+];
+
+function assessComplexity(query: string): { score: number; reason: string } {
+  const lower = query.toLowerCase();
+  let score = 0;
+  let matchedKeywords: string[] = [];
+
+  // Factor 1: Keyword matches (each match adds to score)
+  for (const keyword of COMPLEX_KEYWORDS) {
+    if (lower.includes(keyword)) {
+      score += 2;
+      matchedKeywords.push(keyword);
+    }
+  }
+
+  // Factor 2: Query length — longer queries tend to be more complex
+  if (lower.length > 100) score += 1;
+  if (lower.length > 250) score += 1;
+
+  // Factor 3: Multiple numbers/conditions mentioned
+  const numberMentions = (lower.match(/\d+/g) || []).length;
+  if (numberMentions > 5) score += 1;
+  if (numberMentions > 10) score += 1;
+
+  // Factor 4: Multiple variables/conditions mentioned
+  const conditionWords = ["if", "when", "assuming", "scenario", "compare", "versus", "vs"];
+  for (const word of conditionWords) {
+    if (lower.includes(word)) score += 0.5;
+  }
+
+  const reason = matchedKeywords.length > 0
+    ? `Matched keywords: ${matchedKeywords.slice(0, 3).join(", ")}`
+    : "Simple request (no complex keywords)";
+
+  return { score, reason };
+}
+
 function isValidAICalculatorResponse(obj: unknown): obj is AICalculatorResponse {
   if (!obj || typeof obj !== "object") return false;
   const resp = obj as Record<string, unknown>;
@@ -158,12 +218,18 @@ function extractJSON(text: string): string {
 export async function generateCalculator(
   query: string,
   context?: ChatMessage[],
-): Promise<AICalculatorResponse> {
+): Promise<AICalculatorResponse & { _model?: string; _complexity?: string }> {
   if (!DEEPSEEK_API_KEY) {
     throw new Error(
       "DEEPSEEK_API_KEY is not configured. Please add it to your .env.local file.",
     );
   }
+
+  // ── Smart Model Selection ─────────────────────────────────────
+  const { score, reason } = assessComplexity(query);
+  // Threshold: score >= 3 means complex enough for Pro
+  const useProModel = score >= 3;
+  const modelName = useProModel ? "deepseek-reasoner" : "deepseek-chat";
 
   const messages: { role: "system" | "user" | "assistant"; content: string }[] = [
     { role: "system", content: SYSTEM_PROMPT },
@@ -189,10 +255,10 @@ export async function generateCalculator(
         Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "deepseek-chat",
+        model: modelName,
         messages,
-        temperature: 0.3,
-        max_tokens: 4000,
+        temperature: useProModel ? 0.2 : 0.3,
+        max_tokens: useProModel ? 6000 : 4000,
       }),
     });
 
@@ -240,10 +306,18 @@ export async function generateCalculator(
           },
         ];
       }
-      return fixed as unknown as AICalculatorResponse;
+      return {
+        ...fixed,
+        _model: modelName,
+        _complexity: `Score ${score}: ${reason}`,
+      } as AICalculatorResponse & { _model?: string; _complexity?: string };
     }
 
-    return parsed;
+    return {
+      ...parsed,
+      _model: modelName,
+      _complexity: `Score ${score}: ${reason}`,
+    };
   } catch (error) {
     if (error instanceof SyntaxError) {
       throw new Error(

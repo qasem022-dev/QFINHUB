@@ -8,12 +8,14 @@ export default function NetWorthCalculator() {
   const [assets, setAssets] = React.useState(250000);
   const [liabilities, setLiabilities] = React.useState(150000);
 
-  const netWorth = assets - liabilities;
-  const dti = assets > 0 ? (liabilities / assets) * 100 : 0;
+  const safeAssets = isFinite(assets) ? assets : 0;
+  const safeLiabilities = isFinite(liabilities) ? liabilities : 0;
+  const netWorth = safeAssets - safeLiabilities;
+  const dti = safeAssets > 0 ? (safeLiabilities / safeAssets) * 100 : 0;
 
   const chartData = [
-    { category: "Assets", amount: Math.round(assets) },
-    { category: "Liabilities", amount: Math.round(liabilities) },
+    { category: "Assets", amount: Math.round(safeAssets) },
+    { category: "Liabilities", amount: Math.round(safeLiabilities) },
     { category: "Net Worth", amount: Math.round(netWorth) },
   ];
 
@@ -25,8 +27,8 @@ export default function NetWorthCalculator() {
       results={
         <div className="space-y-4">
           <ResultCard label="Net Worth" value={formatCurrency(netWorth)} highlight={netWorth >= 0} />
-          <ResultCard label="Total Assets" value={formatCurrency(assets)} />
-          <ResultCard label="Total Liabilities" value={formatCurrency(liabilities)} />
+          <ResultCard label="Total Assets" value={formatCurrency(safeAssets)} />
+          <ResultCard label="Total Liabilities" value={formatCurrency(safeLiabilities)} />
           <ResultCard label="Debt-to-Asset Ratio" value={formatPercentage(dti)} />
         </div>
       }

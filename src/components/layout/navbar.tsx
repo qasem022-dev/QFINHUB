@@ -14,6 +14,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/hooks/use-theme";
+import { useAuth } from "@/components/providers/auth-provider";
+import { useTranslation } from "@/app/i18n-provider";
+import { LanguageSwitcher, LanguageSwitcherMobile } from "@/components/ui/language-switcher";
 import {
   Menu,
   X,
@@ -26,20 +29,27 @@ import {
   LayoutDashboard,
 } from "lucide-react";
 
-const navLinks = [
-  { href: "/calculators", label: "Calculators" },
-  { href: "/ai-specialist", label: "AI Specialist", highlight: true },
-];
-
 export function Navbar() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+  const { user, signOut } = useAuth();
+  const { t, locale } = useTranslation();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
+  const [mounted, setMounted] = React.useState(false);
 
-  // Simulate auth state — replace with real auth context later
-  const user = null as { email: string; avatar_url?: string } | null;
   const isLoggedIn = user !== null;
+
+  const navLinks = [
+    { href: "/calculators", label: t("nav.calculators") },
+    { href: "/ai-specialist", label: t("nav.aiSpecialist"), highlight: true },
+  ];
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Wait for mount to avoid hydration mismatch with translations
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -64,12 +74,13 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary-600 to-accent-500">
-            <span className="text-sm font-bold text-white">Q</span>
-          </div>
-          <span className="hidden text-lg font-bold tracking-tight text-gray-900 sm:inline dark:text-white">
-            QFINHUB
-          </span>
+          <img
+            src="/qfinhub-logo.svg"
+            alt="QFINHUB"
+            className="h-8 w-auto"
+            width={144}
+            height={32}
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -102,11 +113,14 @@ export function Navbar() {
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
-            aria-label="Toggle theme"
+            aria-label={t("nav.toggleTheme")}
           >
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-transform dark:rotate-0 dark:scale-100" />
           </button>
+
+          {/* Language Switcher */}
+          <LanguageSwitcher compact />
 
           {isLoggedIn && user ? (
             <DropdownMenu>
@@ -125,22 +139,34 @@ export function Navbar() {
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
+                <div className="px-2 py-1.5">
+                  <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
+                    {user.name ?? "User"}
+                  </p>
+                  <p className="truncate text-xs text-gray-500 dark:text-gray-400">
+                    {user.email}
+                  </p>
+                </div>
+                <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link href="/dashboard" className="flex items-center gap-2">
                     <LayoutDashboard className="h-4 w-4" />
-                    Dashboard
+                    {t("nav.dashboard")}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/dashboard/settings" className="flex items-center gap-2">
                     <Settings className="h-4 w-4" />
-                    Settings
+                    {t("nav.settings")}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="flex items-center gap-2 text-red-600 focus:text-red-600 dark:text-red-400">
+                <DropdownMenuItem
+                  onClick={signOut}
+                  className="flex items-center gap-2 text-red-600 focus:text-red-600 dark:text-red-400"
+                >
                   <LogOut className="h-4 w-4" />
-                  Sign Out
+                  {t("nav.signOut")}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -148,7 +174,7 @@ export function Navbar() {
             <>
               <Link href="/auth/login">
                 <Button variant="ghost" size="sm">
-                  Sign In
+                  {t("nav.signIn")}
                 </Button>
               </Link>
               <Link href="/auth/signup">
@@ -156,7 +182,7 @@ export function Navbar() {
                   size="sm"
                   className="bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-sm hover:from-primary-700 hover:to-accent-600"
                 >
-                  Get Started
+                  {t("nav.getStarted")}
                 </Button>
               </Link>
             </>
@@ -167,7 +193,7 @@ export function Navbar() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 md:hidden"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-label={mobileOpen ? t("nav.closeMenu") : t("nav.openMenu")}
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -204,7 +230,7 @@ export function Navbar() {
               ) : (
                 <Moon className="h-4 w-4" />
               )}
-              {theme === "dark" ? "Light Mode" : "Dark Mode"}
+              {theme === "dark" ? t("nav.lightMode") : t("nav.darkMode")}
             </button>
 
             {isLoggedIn && user ? (
@@ -214,18 +240,21 @@ export function Navbar() {
                   className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
                 >
                   <User className="h-4 w-4" />
-                  Dashboard
+                  {t("nav.dashboard")}
                 </Link>
                 <Link
                   href="/dashboard/settings"
                   className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
                 >
                   <Settings className="h-4 w-4" />
-                  Settings
+                  {t("nav.settings")}
                 </Link>
-                <button className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-red-600 transition-colors hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                <button
+                  onClick={signOut}
+                  className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-red-600 transition-colors hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20"
+                >
                   <LogOut className="h-4 w-4" />
-                  Sign Out
+                  {t("nav.signOut")}
                 </button>
               </>
             ) : (
@@ -235,15 +264,20 @@ export function Navbar() {
                   className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
                 >
                   <User className="h-4 w-4" />
-                  Sign In
+                  {t("nav.signIn")}
                 </Link>
                 <Link href="/auth/signup">
                   <Button className="mt-1 w-full bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-sm hover:from-primary-700 hover:to-accent-600">
-                    Get Started
+                    {t("nav.getStarted")}
                   </Button>
                 </Link>
               </>
             )}
+          </div>
+
+          {/* Mobile Language Switcher */}
+          <div className="mt-4 border-t border-gray-100 pt-4 dark:border-gray-700">
+            <LanguageSwitcherMobile />
           </div>
         </div>
       )}

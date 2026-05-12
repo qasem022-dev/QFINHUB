@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="40" viewBox="0 0 180 40">
+  <defs>
+    <linearGradient id="q-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="q-gradient-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <!-- Logo mark -->
+  <rect x="2" y="4" width="32" height="32" rx="9" fill="url(#q-gradient)"/>
+  <!-- Inner glow -->
+  <rect x="4" y="6" width="28" height="28" rx="7" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <!-- Q letter -->
+  <text x="18" y="27" font-family="system-ui, -apple-system, 'SF Pro Text', sans-serif" font-size="20" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-0.5">Q</text>
+  <!-- Text -->
+  <text x="42" y="26" font-family="system-ui, -apple-system, 'SF Pro Display', sans-serif" font-size="19" font-weight="700" fill="#111827" letter-spacing="-0.3">QFINHUB</text>
+</svg>

@@ -3,6 +3,7 @@
 import * as React from "react";
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import { type Locale, defaultLocale } from "@/lib/i18n";
+import { getTranslation } from "@/lib/i18n";
 import { detectClientLocale } from "@/lib/i18n/geo-detect";
 
 const LOCALE_COOKIE = "qfinhub-locale";
@@ -107,4 +108,18 @@ export function useLocale() {
     throw new Error("useLocale must be used within a LocaleProvider");
   }
   return context;
+}
+
+/**
+ * Convenience hook that combines useLocale + getTranslation.
+ * Usage: const { t, locale, setLocale } = useTranslation();
+ *        t("nav.calculators") → "Calculators"
+ */
+export function useTranslation() {
+  const { locale, setLocale } = useLocale();
+  const t = React.useCallback(
+    (path: string) => getTranslation(locale, path),
+    [locale],
+  );
+  return { t, locale: locale as Locale, setLocale } as const;
 }

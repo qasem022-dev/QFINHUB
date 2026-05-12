@@ -18,6 +18,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
+import { toast } from "sonner";
+import { useTranslation } from "@/app/i18n-provider";
 
 const loginSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -27,9 +29,18 @@ const loginSchema = z.object({
 type LoginFormData = z.infer<typeof loginSchema>;
 
 export default function LoginPage() {
+  const { t } = useTranslation();
   const router = useRouter();
   const [showPassword, setShowPassword] = React.useState(false);
   const [serverError, setServerError] = React.useState<string | null>(null);
+
+  // Read redirectTo from URL search params (for auth route protection)
+  const redirectTo = React.useMemo(() => {
+    if (typeof window === "undefined") return "/dashboard";
+    const params = new URLSearchParams(window.location.search);
+    const r = params.get("redirectTo");
+    return r && r.startsWith("/") ? r : "/dashboard";
+  }, []);
 
   const {
     register,
@@ -52,14 +63,14 @@ export default function LoginPage() {
       const result = await res.json();
 
       if (!res.ok) {
-        setServerError(result.error ?? "Invalid email or password");
+        setServerError(result.error ?? t("auth.loginError"));
         return;
       }
 
-      router.push("/dashboard");
+      router.push(redirectTo);
       router.refresh();
     } catch {
-      setServerError("Connection error. Please try again.");
+      setServerError(t("auth.connectionError"));
     }
   };
 
@@ -75,9 +86,9 @@ export default function LoginPage() {
               QFINHUB
             </span>
           </Link>
-          <CardTitle className="text-2xl">Welcome back</CardTitle>
+          <CardTitle className="text-2xl">{t("auth.welcomeBack")}</CardTitle>
           <CardDescription>
-            Sign in to your account to continue
+            {t("auth.loginDescription")}
           </CardDescription>
         </CardHeader>
 
@@ -90,11 +101,11 @@ export default function LoginPage() {
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">{t("auth.email")}</Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder={t("auth.emailPlaceholder")}
                 autoComplete="email"
                 {...register("email")}
                 className={errors.email ? "border-red-500" : ""}
@@ -106,19 +117,24 @@ export default function LoginPage() {
 
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">{t("auth.password")}</Label>
                 <button
                   type="button"
+                  onClick={() =>
+                    toast.info(
+                      "Password reset coming soon. For now, please contact support."
+                    )
+                  }
                   className="text-xs text-primary-600 hover:text-primary-700 dark:text-primary-400"
                 >
-                  Forgot password?
+                  {t("auth.forgotPassword")}
                 </button>
               </div>
               <div className="relative">
                 <Input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="Enter your password"
+                  placeholder={t("auth.passwordPlaceholder")}
                   autoComplete="current-password"
                   {...register("password")}
                   className={errors.password ? "border-red-500 pr-10" : "pr-10"}
@@ -126,12 +142,13 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
+                  aria-label="Toggle password visibility"
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                 >
                   {showPassword ? (
-                    <EyeOff className="h-4 w-4" />
+                    <EyeOff className="h-4 w-4" aria-hidden="true" />
                   ) : (
-                    <Eye className="h-4 w-4" />
+                    <Eye className="h-4 w-4" aria-hidden="true" />
                   )}
                 </button>
               </div>
@@ -150,10 +167,10 @@ export default function LoginPage() {
               {isSubmitting ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Signing in...
+                  {t("auth.signingIn")}
                 </>
               ) : (
-                "Sign In"
+                t("auth.signIn")
               )}
             </Button>
           </CardContent>
@@ -161,12 +178,12 @@ export default function LoginPage() {
 
         <CardFooter className="justify-center">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Don&apos;t have an account?{" "}
+            {t("auth.noAccount")}{" "}
             <Link
               href="/auth/signup"
               className="font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400"
             >
-              Create one
+              {t("auth.createOne")}
             </Link>
           </p>
         </CardFooter>

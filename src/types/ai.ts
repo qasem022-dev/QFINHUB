@@ -72,4 +72,5 @@ export interface SavedPlan {
   title: string;
   config: AICalculatorResponse;
   created_at: string;
+  updated_at?: string;
 }

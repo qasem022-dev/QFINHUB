@@ -13,7 +13,6 @@ export async function GET(
   }
 
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
-  const appUrl = `${baseUrl}/calculators/${slug}`;
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -22,110 +21,70 @@ export async function GET(
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${calculator.title} — QFINHUB Widget</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background: transparent;
       color: #111827;
       -webkit-font-smoothing: antialiased;
-    }
-    .widget-container {
-      max-width: 100%;
-      border-radius: 12px;
-      border: 1px solid #e5e7eb;
-      background: #ffffff;
-      overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    }
-    .widget-header {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 16px 20px;
-      border-bottom: 1px solid #f3f4f6;
+      flex-direction: column;
+      min-height: 100vh;
     }
-    .widget-header h2 {
-      font-size: 16px;
-      font-weight: 600;
-      color: #111827;
+    .embed-wrapper {
+      width: 100%;
+      max-width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
-    .widget-header .icon {
-      font-size: 20px;
-      line-height: 1;
-    }
-    .widget-body {
-      padding: 20px;
-    }
-    .widget-body p {
-      font-size: 14px;
-      color: #6b7280;
-      line-height: 1.5;
-      margin-bottom: 16px;
-    }
-    .widget-cta {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 14px;
-      font-weight: 500;
-      color: #ffffff;
-      background: #111827;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .widget-cta:hover {
-      background: #374151;
-    }
-    .widget-footer {
-      padding: 12px 20px;
-      border-top: 1px solid #f3f4f6;
-      text-align: center;
-    }
-    .widget-footer a {
-      font-size: 12px;
-      color: #9ca3af;
-      text-decoration: none;
-    }
-    .widget-footer a:hover {
-      color: #6b7280;
+    .embed-frame {
+      width: 100%;
+      flex: 1;
+      border: none;
+      min-height: 400px;
     }
     @media (prefers-color-scheme: dark) {
-      .widget-container {
-        border-color: #374151;
-        background: #1f2937;
-      }
-      .widget-header {
-        border-bottom-color: #374151;
-      }
-      .widget-header h2 { color: #f9fafb; }
-      .widget-body p { color: #9ca3af; }
-      .widget-cta { color: #111827; background: #f9fafb; }
-      .widget-cta:hover { background: #e5e7eb; }
-      .widget-footer { border-top-color: #374151; }
-      .widget-footer a { color: #6b7280; }
+      body { color: #f9fafb; }
     }
   </style>
 </head>
 <body>
-  <div class="widget-container">
-    <div class="widget-header">
-      ${
-        typeof calculator.icon === "string"
-          ? `<span class="icon">${calculator.icon}</span>`
-          : ""
-      }
-      <h2>${calculator.title}</h2>
-    </div>
-    <div class="widget-body">
-      <p>${calculator.description}</p>
-      <a href="${appUrl}" class="widget-cta" target="_blank" rel="noopener">
-        Open Calculator →
-      </a>
-    </div>
-    <div class="widget-footer">
-      <a href="${baseUrl}/calculators" target="_blank" rel="noopener">Powered by QFINHUB</a>
-    </div>
+  <div class="embed-wrapper">
+    <iframe
+      class="embed-frame"
+      src="${baseUrl}/embed/${slug}"
+      title="${calculator.title}"
+      allow="clipboard-read; clipboard-write"
+      referrerpolicy="strict-origin-when-cross-origin"
+      loading="lazy"
+    ></iframe>
   </div>
+  <script>
+    (function() {
+      function sendHeight() {
+        var h = document.documentElement.scrollHeight;
+        parent.postMessage({ type: 'qfinhub-resize', height: h }, '*');
+      }
+      window.addEventListener('load', function() {
+        sendHeight();
+        setTimeout(sendHeight, 100);
+        setTimeout(sendHeight, 500);
+      });
+      window.addEventListener('resize', function() {
+        sendHeight();
+      });
+      var observer = new MutationObserver(function() {
+        sendHeight();
+      });
+      observer.observe(document.documentElement, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        characterData: true
+      });
+    })();
+  </script>
 </body>
 </html>`;
 
@@ -133,6 +92,8 @@ export async function GET(
     headers: {
       "Content-Type": "text/html; charset=utf-8",
       "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
     },
   });
 }

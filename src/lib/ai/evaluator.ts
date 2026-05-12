@@ -25,13 +25,13 @@ export function evaluateFormula(
       .replace(/\\/g, "/"); // backslash to forward slash
 
     // Use mathjs evaluate with scope
-    const result = math.evaluate(normalized, scope);
+    let result = math.evaluate(normalized, scope);
 
-    if (typeof result === "number") return result;
     if (typeof result === "bigint") return Number(result);
-    if (result?.toNumber) return result.toNumber();
+    if (result?.toNumber) result = result.toNumber();
 
-    return Number(result) || 0;
+    const num = Number(result);
+    return isFinite(num) ? num : 0;
   } catch {
     // Silently fail and return 0 for invalid formulas
     return 0;

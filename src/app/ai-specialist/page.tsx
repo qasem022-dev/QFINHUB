@@ -1,21 +1,82 @@
 "use client";
 
 import * as React from "react";
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { ChatPanel } from "@/components/ai-specialist/chat-panel";
-import { DynamicCalculator } from "@/components/ai-specialist/dynamic-calculator";
+import { DynamicCalculator, type DynamicCalculatorHandle } from "@/components/ai-specialist/dynamic-calculator";
 import type { ChatMessage, AICalculatorResponse } from "@/types/ai";
 import { generateId } from "@/lib/utils";
 import { toast } from "sonner";
 import { Sparkles, Loader2, Bookmark } from "lucide-react";
+import { createClient } from "@/lib/supabase/browser";
+import { useTranslation } from "@/app/i18n-provider";
 
-export default function AISpecialistPage() {
+function AISpecialistContent() {
+  const searchParams = useSearchParams();
+  const { t } = useTranslation();
   const [messages, setMessages] = React.useState<ChatMessage[]>([]);
   const [currentCalculator, setCurrentCalculator] =
     React.useState<AICalculatorResponse | null>(null);
   const [isLoading, setIsLoading] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
   const [isSaving, setIsSaving] = React.useState(false);
-  const [savedIds, setSavedIds] = React.useState<Set<string>>(new Set());
+  const [savedPlanId, setSavedPlanId] = React.useState<string | null>(null);
+  const [loadingPlan, setLoadingPlan] = React.useState(false);
+  const [hasUnsavedChanges, setHasUnsavedChanges] = React.useState(false);
+  const [savedTitle, setSavedTitle] = React.useState<string | null>(null);
+  const dynamicCalcRef = React.useRef<DynamicCalculatorHandle>(null);
+  const saveTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Load plan if ?id= query param is present
+  React.useEffect(() => {
+    const planId = searchParams.get("id");
+    if (!planId) return;
+
+    let cancelled = false;
+    setLoadingPlan(true);
+
+    (async () => {
+      try {
+        const supabase = createClient();
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
+          toast.error(t("aiSave.signInToView"));
+          return;
+        }
+
+        const { data, error } = await supabase
+          .from("saved_plans")
+          .select("*")
+          .eq("id", planId)
+          .eq("user_id", session.user.id)
+          .single();
+
+        if (error) throw error;
+        if (!data || cancelled) return;
+
+        const calculator = data.config as AICalculatorResponse;
+        setCurrentCalculator(calculator);
+        setSavedPlanId(planId);
+        setHasUnsavedChanges(false);
+        setSavedTitle(data.title || calculator.title);
+        setMessages([{
+          id: generateId(),
+          role: "assistant",
+          content: t("aiSave.loadedPlan").replace("{title}", data.title || calculator.title),
+          calculator,
+        }]);
+      } catch (err) {
+        if (!cancelled) {
+          toast.error(err instanceof Error ? err.message : t("aiSave.loadFailed"));
+        }
+      } finally {
+        if (!cancelled) setLoadingPlan(false);
+      }
+    })();
+
+    return () => { cancelled = true; };
+  }, [searchParams]);
 
   const handleSend = React.useCallback(
     async (query: string) => {
@@ -44,7 +105,7 @@ export default function AISpecialistPage() {
 
         if (!response.ok) {
           throw new Error(
-            data.error || "Failed to generate calculator",
+            data.error || t("aiSave.generating"),
           );
         }
 
@@ -54,15 +115,18 @@ export default function AISpecialistPage() {
         const assistantMessage: ChatMessage = {
           id: generateId(),
           role: "assistant",
-          content: data.content || `I've created a **${calculator.title}** for you. Check the results panel on the right to interact with it.`,
+          content: data.content || t("aiSave.createdCalc").replace("{title}", calculator.title),
           calculator,
         };
 
         setMessages((prev) => [...prev, assistantMessage]);
         setCurrentCalculator(calculator);
+        setSavedPlanId(null);
+        setHasUnsavedChanges(false);
+        setSavedTitle(null);
       } catch (err) {
         const errorMessage =
-          err instanceof Error ? err.message : "Something went wrong. Please try again.";
+          err instanceof Error ? err.message : t("aiSave.errorGeneric");
         setError(errorMessage);
 
         // Add error as assistant message
@@ -71,7 +135,7 @@ export default function AISpecialistPage() {
           {
             id: generateId(),
             role: "assistant",
-            content: `Sorry, I encountered an error: ${errorMessage}. Please try rephrasing your request.`,
+            content: t("aiSave.errorMessage").replace("{error}", errorMessage),
           },
         ]);
       } finally {
@@ -87,30 +151,62 @@ export default function AISpecialistPage() {
       setIsSaving(true);
 
       try {
+        const body: Record<string, unknown> = { config };
+
+        // If we already have a saved plan ID, update it instead of creating a duplicate
+        if (savedPlanId) {
+          body.id = savedPlanId;
+        }
+
         const response = await fetch("/api/ai/save", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ config }),
+          body: JSON.stringify(body),
         });
 
         const data = await response.json();
 
         if (!response.ok) {
-          throw new Error(data.error || "Failed to save calculator");
+          throw new Error(data.error || t("aiSave.saveFailed"));
         }
 
-        setSavedIds((prev) => new Set(prev).add(config.title));
-        toast.success("Calculator saved successfully!");
+        const planId = data.plan?.id;
+        if (planId) {
+          setSavedPlanId(planId);
+          setSavedTitle(data.title || config.title || null);
+        }
+        setHasUnsavedChanges(false);
+
+        if (data.updated) {
+          toast.success(t("aiSave.planUpdated"));
+        } else {
+          toast.success(t("aiSave.calcSaved"));
+        }
       } catch (err) {
         const errorMessage =
-          err instanceof Error ? err.message : "Failed to save calculator";
+          err instanceof Error ? err.message : t("aiSave.saveFailed");
         toast.error(errorMessage);
       } finally {
         setIsSaving(false);
       }
     },
-    [isSaving],
+    [isSaving, savedPlanId],
   );
+
+  // Ctrl+S keyboard shortcut for saving
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        if (currentCalculator && !isSaving) {
+          const configToSave = dynamicCalcRef.current?.getUpdatedConfig() ?? currentCalculator;
+          handleSave(configToSave);
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentCalculator, isSaving, handleSave]);
 
   return (
     <div className="flex h-[calc(100vh-4rem)] flex-col lg:flex-row">
@@ -122,10 +218,10 @@ export default function AISpecialistPage() {
           </div>
           <div>
             <h2 className="text-sm font-semibold text-gray-900 dark:text-white">
-              AI Specialist
+              {t("aiSpecialist.title")}
             </h2>
             <p className="text-[11px] text-gray-500 dark:text-gray-400">
-              Ask me to build any financial calculator
+              {t("aiSpecialist.askMe")}
             </p>
           </div>
         </div>
@@ -145,38 +241,71 @@ export default function AISpecialistPage() {
             <h2 className="text-sm font-semibold text-gray-900 dark:text-white">
               {currentCalculator
                 ? currentCalculator.title
-                : "Calculator Results"}
+                : t("aiSpecialist.noCalculator")}
             </h2>
             {currentCalculator && (
-              <span className="rounded-full bg-accent-100 px-2 py-0.5 text-[10px] font-medium text-accent-700 dark:bg-accent-900/30 dark:text-accent-400">
-                AI Generated
-              </span>
+              <>
+                <span className="rounded-full bg-accent-100 px-2 py-0.5 text-[10px] font-medium text-accent-700 dark:bg-accent-900/30 dark:text-accent-400">
+                  {t("aiSpecialist.generated")}
+                </span>
+                {(currentCalculator as any)._model && (
+                  <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${
+                    (currentCalculator as any)._model === 'deepseek-reasoner'
+                      ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400'
+                      : 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
+                  }`}>
+                    {(currentCalculator as any)._model === 'deepseek-reasoner' ? 'Pro' : 'Flash'}
+                  </span>
+                )}
+              </>
             )}
           </div>
           <div className="flex items-center gap-2">
-            {currentCalculator && !savedIds.has(currentCalculator.title) && (
+            {currentCalculator ? (
               <button
-                onClick={() => handleSave(currentCalculator)}
-                disabled={isSaving}
-                className="flex items-center gap-1.5 rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:bg-surface-dark dark:text-gray-300 dark:hover:bg-gray-800"
+                onClick={() => {
+                  const configToSave = dynamicCalcRef.current?.getUpdatedConfig() ?? currentCalculator;
+                  handleSave(configToSave);
+                }}
+                disabled={isSaving || isLoading}
+                className={`flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed ${
+                  isSaving
+                    ? "border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-800 dark:bg-blue-900/20 dark:text-blue-400"
+                    : savedPlanId
+                      ? hasUnsavedChanges
+                        ? "border-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100 dark:border-amber-800 dark:bg-amber-900/20 dark:text-amber-400 dark:hover:bg-amber-900/40"
+                        : "border-green-200 bg-green-50 text-green-700 hover:bg-green-100 dark:border-green-800 dark:bg-green-900/20 dark:text-green-400 dark:hover:bg-green-900/40"
+                      : "border-gray-200 bg-white text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-surface-dark dark:text-gray-300 dark:hover:bg-gray-800"
+                }`}
               >
                 {isSaving ? (
                   <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                ) : savedPlanId ? (
+                  <Bookmark className="h-3.5 w-3.5 fill-current" />
                 ) : (
                   <Bookmark className="h-3.5 w-3.5" />
                 )}
-                Save
+                {isSaving ? t("aiSave.saving") : savedPlanId ? (hasUnsavedChanges ? t("aiSave.saveChanges") : t("aiSave.planSaved")) : t("aiSave.savePlan")}
               </button>
-            )}
+            ) : null}
           </div>
         </div>
 
         {/* Content */}
-        {currentCalculator ? (
+        {loadingPlan ? (
+          <div className="flex flex-1 items-center justify-center p-8">
+            <div className="flex flex-col items-center gap-3">
+              <Loader2 className="h-8 w-8 animate-spin text-primary-600" />
+              <p className="text-sm text-gray-500 dark:text-gray-400">{t("aiSpecialist.loadingPlan")}</p>
+            </div>
+          </div>
+        ) : currentCalculator ? (
           <DynamicCalculator
+            ref={dynamicCalcRef}
             config={currentCalculator}
             onSave={handleSave}
-            saved={savedIds.has(currentCalculator.title)}
+            saved={!!savedPlanId}
+            onInputChange={() => setHasUnsavedChanges(true)}
           />
         ) : (
           <div className="flex flex-1 items-center justify-center p-8">
@@ -187,25 +316,28 @@ export default function AISpecialistPage() {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                AI Financial Specialist
+                {t("aiSpecialist.featuresTitle")}
               </h3>
               <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                Describe the financial calculator you need, and I'll
-                build it instantly — complete with inputs, results,
-                charts, and a personalized financial plan.
+                {t("aiSpecialist.featuresDesc")}
               </p>
               <div className="mt-8 grid grid-cols-2 gap-3 text-left">
-                {features.map((feature) => (
+                {[
+                  { icon: "🧮", titleKey: "aiSpecialist.featureCalc", descKey: "aiSpecialist.featureCalcDesc" },
+                  { icon: "📊", titleKey: "aiSpecialist.featureChart", descKey: "aiSpecialist.featureChartDesc" },
+                  { icon: "📋", titleKey: "aiSpecialist.featurePlans", descKey: "aiSpecialist.featurePlansDesc" },
+                  { icon: "💾", titleKey: "aiSpecialist.featureSave", descKey: "aiSpecialist.featureSaveDesc" },
+                ].map((feature) => (
                   <div
-                    key={feature.title}
+                    key={feature.titleKey}
                     className="rounded-xl border border-gray-100 bg-gray-50 p-3 dark:border-gray-700 dark:bg-gray-800/50"
                   >
                     <div className="mb-1 text-lg">{feature.icon}</div>
                     <p className="text-xs font-medium text-gray-900 dark:text-white">
-                      {feature.title}
+                      {t(feature.titleKey)}
                     </p>
                     <p className="mt-0.5 text-[11px] text-gray-500 dark:text-gray-400">
-                      {feature.description}
+                      {t(feature.descKey)}
                     </p>
                   </div>
                 ))}
@@ -218,25 +350,16 @@ export default function AISpecialistPage() {
   );
 }
 
-const features = [
-  {
-    icon: "🧮",
-    title: "Custom Calculators",
-    description: "AI builds any calculator you describe",
-  },
-  {
-    icon: "📊",
-    title: "Interactive Charts",
-    description: "Dynamic visualizations and tables",
-  },
-  {
-    icon: "📋",
-    title: "Financial Plans",
-    description: "Actionable steps and pro tips",
-  },
-  {
-    icon: "💾",
-    title: "Save & Reuse",
-    description: "Save your favorite calculators",
-  },
-];
+export default function AISpecialistPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex h-[calc(100vh-4rem)] items-center justify-center">
+          <Loader2 className="h-8 w-8 animate-spin text-primary-600" />
+        </div>
+      }
+    >
+      <AISpecialistContent />
+    </Suspense>
+  );
+}

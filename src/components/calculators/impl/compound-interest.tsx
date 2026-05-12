@@ -2,36 +2,45 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { PeriodInput, toMonths, type PeriodUnit } from "@/components/calculators/period-input";
 import { formatCurrency, formatPercentage } from "@/lib/utils";
 
 export default function CompoundInterestCalculator() {
   const [principal, setPrincipal] = React.useState(10000);
   const [rate, setRate] = React.useState(7);
-  const [years, setYears] = React.useState(10);
+  const [timeValue, setTimeValue] = React.useState(10);
+  const [timeUnit, setTimeUnit] = React.useState<PeriodUnit>("years");
   const [compoundings, setCompoundings] = React.useState(12);
   const [monthlyContribution, setMonthlyContribution] = React.useState(500);
 
-  const r = rate / 100;
-  const n = compoundings;
-  const t = years;
-  const pmt = monthlyContribution;
+  const safePrincipal = Math.max(0, principal ?? 0);
+  const safeRate = Math.max(0, Math.min(rate ?? 0, 100));
+  const safePmt = Math.max(0, monthlyContribution ?? 0);
+  const safeCompoundings = Math.max(1, compoundings ?? 1);
 
-  const futureValue =
-    principal * Math.pow(1 + r / n, n * t) +
-    pmt * ((Math.pow(1 + r / n, n * t) - 1) / (r / n));
+  const r = safeRate / 100;
+  const n = safeCompoundings;
+  const t = Math.max(0, toMonths(timeValue, timeUnit) / 12);
+  const pmt = safePmt;
 
-  const totalContributions = principal + pmt * 12 * t;
-  const totalInterest = futureValue - totalContributions;
+  const safeFV = (y: number): number => {
+    if (r === 0) return safePrincipal + pmt * 12 * y;
+    const factor = Math.pow(1 + r / n, n * y);
+    return safePrincipal * factor + pmt * ((factor - 1) / (r / n));
+  };
 
-  const chartData = Array.from({ length: t + 1 }, (_, i) => {
-    const y = i;
-    const fv =
-      principal * Math.pow(1 + r / n, n * y) +
-      pmt * ((Math.pow(1 + r / n, n * y) - 1) / (r / n));
-    const contrib = principal + pmt * 12 * y;
+  const futureValue = safeFV(t);
+  const totalContributions = safePrincipal + pmt * 12 * t;
+  const totalInterest = !isNaN(futureValue) && isFinite(futureValue) ? Math.max(0, futureValue - totalContributions) : 0;
+  const interestPct = futureValue > 0 ? ((totalInterest / futureValue) * 100) : 0;
+
+  const maxYears = Math.min(Math.ceil(t), 36);
+  const chartData = Array.from({ length: maxYears + 1 }, (_, i) => {
+    const fv = safeFV(i);
+    const contrib = safePrincipal + pmt * 12 * i;
     return {
-      year: `Year ${y}`,
-      "Total Value": Math.round(fv),
+      year: `Year ${i}`,
+      "Total Value": isNaN(fv) || !isFinite(fv) ? 0 : Math.round(fv),
       Contributions: Math.round(contrib),
     };
   });
@@ -55,7 +64,7 @@ export default function CompoundInterestCalculator() {
           <ResultCard
             label="Total Interest Earned"
             value={formatCurrency(totalInterest)}
-            subtext={futureValue > 0 ? `${((totalInterest / futureValue) * 100).toFixed(1)}% of final value` : undefined}
+            subtext={futureValue > 0 ? `${interestPct.toFixed(1)}% of final value` : undefined}
           />
         </div>
       }
@@ -77,10 +86,15 @@ export default function CompoundInterestCalculator() {
         value={rate}
         onChange={setRate}
       />
-      <CalculatorInput
-        input={{ id: "years", label: "Time Period", type: "number", defaultValue: 10, suffix: "years", min: 1, max: 50, tooltip: "How many years you plan to let the investment grow." }}
-        value={years}
-        onChange={setYears}
+      <PeriodInput
+        id="time-period"
+        label="Time Period"
+        value={timeValue}
+        unit={timeUnit}
+        onValueChange={setTimeValue}
+        onUnitChange={setTimeUnit}
+        min={1}
+        max={50}
       />
       <CalculatorInput
         input={{ id: "compoundings", label: "Compound Frequency", type: "select", defaultValue: 12, options: [{ label: "Annually (1)", value: 1 }, { label: "Semi-Annually (2)", value: 2 }, { label: "Quarterly (4)", value: 4 }, { label: "Monthly (12)", value: 12 }, { label: "Daily (365)", value: 365 }], tooltip: "How often interest is compounded per year." }}

@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/app/i18n-provider";
 
 interface CalculatorLayoutProps {
   title: string;
@@ -21,6 +22,7 @@ export function CalculatorLayout({
   results,
   className,
 }: CalculatorLayoutProps) {
+  const { t } = useTranslation();
   return (
     <div className={cn("mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8", className)}>
       {/* Header */}
@@ -51,10 +53,10 @@ export function CalculatorLayout({
           <Card className="border-gray-200 shadow-sm dark:border-gray-700">
             <CardHeader>
               <CardTitle className="text-base font-semibold text-gray-900 dark:text-white">
-                Inputs
+                {t('calcLayout.inputs')}
               </CardTitle>
               <CardDescription>
-                Adjust the values below to calculate your results
+                {t('calcLayout.inputsDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -64,14 +66,14 @@ export function CalculatorLayout({
         </div>
 
         {/* Results section */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2" id="calculator-results-panel">
           <Card className="border-gray-200 shadow-sm dark:border-gray-700">
             <CardHeader>
               <CardTitle className="text-base font-semibold text-gray-900 dark:text-white">
-                Results
+                {t('calcLayout.results')}
               </CardTitle>
               <CardDescription>
-                Your calculated results based on the inputs provided
+                {t('calcLayout.resultsDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>

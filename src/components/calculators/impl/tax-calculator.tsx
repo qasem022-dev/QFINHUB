@@ -29,15 +29,20 @@ const STANDARD_DEDUCTION_2024 = { single: 14600, married: 29200 };
 export default function TaxCalculator() {
   const [income, setIncome] = React.useState(75000);
   const [filingStatus, setFilingStatus] = React.useState(0); // 0 = single, 1 = married
+  const [w2Income, setW2Income] = React.useState(0);
+  const [preTaxDeductions, setPreTaxDeductions] = React.useState(0);
+
+  const safeIncome = Math.max(0, isFinite(income) ? income : 0);
+  const safeW2 = Math.max(0, isFinite(w2Income) ? w2Income : 0);
+  const safePreTax = Math.max(0, isFinite(preTaxDeductions) ? preTaxDeductions : 0);
 
   const brackets = filingStatus === 0 ? BRACKETS_2024_SINGLE : BRACKETS_2024_MARRIED;
   const deduction = filingStatus === 0 ? STANDARD_DEDUCTION_2024.single : STANDARD_DEDUCTION_2024.married;
-  const taxableIncome = Math.max(0, income - deduction);
+  const taxableIncome = Math.max(0, safeIncome - deduction - safePreTax);
 
   let totalTax = 0;
   const bracketBreakdown: { name: string; value: number }[] = [];
   let marginalRate = 0;
-  let prevFrom = 0;
 
   for (const bracket of brackets) {
     if (taxableIncome <= bracket.from) break;
@@ -51,28 +56,35 @@ export default function TaxCalculator() {
       });
     }
     marginalRate = bracket.rate;
-    prevFrom = bracket.from;
   }
 
-  const effectiveRate = taxableIncome > 0 ? (totalTax / income) * 100 : 0;
+  const effectiveRate = safeIncome > 0 ? (totalTax / safeIncome) * 100 : 0;
+  const afterTaxIncome = safeIncome - totalTax;
+  const takeHomePay = afterTaxIncome / 12;
+  const w2Withholding = safeW2 > 0 ? (safeW2 / safeIncome) * totalTax : 0;
+  const estimatedRefund = Math.max(0, w2Withholding - totalTax);
 
   return (
     <CalculatorLayout
       title="Tax Calculator"
-      description="Estimate your income tax liability with marginal rate brackets and deductions."
-      icon={<span>📋</span>}
+      description="Estimate your income tax liability with marginal rate brackets, deductions, and W-2 withholding analysis."
+      icon={<span>💰</span>}
       results={
         <div className="space-y-4">
           <ResultCard label="Total Tax" value={formatCurrency(totalTax)} highlight />
           <ResultCard label="Effective Tax Rate" value={formatPercentage(effectiveRate)} />
           <ResultCard label="Marginal Tax Rate" value={formatPercentage(marginalRate * 100)} />
           <ResultCard label="Taxable Income" value={formatCurrency(taxableIncome)} subtext={`After $${deduction.toLocaleString()} standard deduction`} />
+          <ResultCard label="After-Tax Income" value={formatCurrency(afterTaxIncome)} subtext={`≈ ${formatCurrency(takeHomePay)}/mo take-home`} />
+          {safeW2 > 0 && <ResultCard label="W-2 Withholding vs Owed" value={formatCurrency(estimatedRefund)} subtext={estimatedRefund > 0 ? "Estimated refund" : "Amount due"} />}
         </div>
       }
     >
       <CalculatorChart type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax by Bracket" />
-      <CalculatorInput input={{ id: "income", label: "Annual Income", type: "number", defaultValue: 75000, suffix: "$", min: 0 }} value={income} onChange={setIncome} />
-      <CalculatorInput input={{ id: "filingStatus", label: "Filing Status", type: "select", defaultValue: 0, options: [{ label: "Single", value: 0 }, { label: "Married Filing Jointly", value: 1 }] }} value={filingStatus} onChange={setFilingStatus} />
+      <CalculatorInput input={{ id: "income", label: "Annual Income", type: "number", defaultValue: 75000, suffix: "$", min: 0, tooltip: "Your total gross annual income before deductions." }} value={income} onChange={setIncome} />
+      <CalculatorInput input={{ id: "w2Income", label: "W-2 Wages", type: "number", defaultValue: 0, suffix: "$", min: 0, tooltip: "If you have W-2 wages, enter the amount to estimate withholding vs. tax owed." }} value={w2Income} onChange={setW2Income} />
+      <CalculatorInput input={{ id: "filingStatus", label: "Filing Status", type: "select", defaultValue: 0, options: [{ label: "Single", value: 0 }, { label: "Married Filing Jointly", value: 1 }], tooltip: "Your tax filing status determines which tax brackets and standard deduction apply." }} value={filingStatus} onChange={setFilingStatus} />
+      <CalculatorInput input={{ id: "preTaxDeductions", label: "Pre-Tax Deductions", type: "number", defaultValue: 0, suffix: "$", min: 0, tooltip: "Pre-tax deductions such as 401(k), HSA, FSA contributions." }} value={preTaxDeductions} onChange={setPreTaxDeductions} />
     </CalculatorLayout>
   );
 }
