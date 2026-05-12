@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toMonths, toPeriods } from "..";
 import { formatCurrency } from "@/lib/utils";
 
 export default function CustomerAcquisitionCostCalculator() {
@@ -11,6 +11,8 @@ export default function CustomerAcquisitionCostCalculator() {
   const [content, setContent] = React.useState(15000);
   const [ads, setAds] = React.useState(35000);
   const [newCustomers, setNewCustomers] = React.useState(500);
+  const [periodValue, setPeriodValue] = React.useState(1);
+  const [periodUnit, setPeriodUnit] = React.useState<"days" | "weeks" | "months" | "years">("months");
 
   const safeMarketing = isFinite(marketing) ? Math.max(0, marketing) : 0;
   const safeSalesTeam = isFinite(salesTeam) ? Math.max(0, salesTeam) : 0;
@@ -18,9 +20,21 @@ export default function CustomerAcquisitionCostCalculator() {
   const safeContent = isFinite(content) ? Math.max(0, content) : 0;
   const safeAds = isFinite(ads) ? Math.max(0, ads) : 0;
   const safeNewCustomers = isFinite(newCustomers) ? Math.max(1, newCustomers) : 1;
+  const safePeriod = isFinite(periodValue) ? Math.max(1, periodValue) : 1;
 
   const totalSpend = safeMarketing + safeSalesTeam + safeSoftware + safeContent + safeAds;
   const cac = safeNewCustomers > 0 ? totalSpend / safeNewCustomers : 0;
+
+  // Monthly equivalents
+  const periodMonths = toPeriods(safePeriod, periodUnit);
+  const monthlySpend = periodMonths > 0 ? totalSpend / periodMonths : totalSpend;
+  const monthlyCustomers = periodMonths > 0 ? safeNewCustomers / periodMonths : safeNewCustomers;
+  const monthlyCac = monthlyCustomers > 0 ? monthlySpend / monthlyCustomers : 0;
+
+  // Annualized CAC
+  const annualSpend = monthlySpend * 12;
+  const annualCustomers = monthlyCustomers * 12;
+  const annualCac = annualCustomers > 0 ? annualSpend / annualCustomers : 0;
 
   const chartData = [
     { name: "Marketing", value: safeMarketing },
@@ -37,7 +51,9 @@ export default function CustomerAcquisitionCostCalculator() {
       icon={<span>🎯</span>}
       results={
         <div className="space-y-4">
-          <ResultCard label="Customer Acquisition Cost" value={formatCurrency(cac)} highlight />
+          <ResultCard label="Customer Acquisition Cost" value={formatCurrency(cac)} highlight subtext={`Per customer over ${safePeriod} ${periodUnit}`} />
+          <ResultCard label="Monthly CAC" value={formatCurrency(monthlyCac)} subtext="Per customer per month" />
+          <ResultCard label="Annual CAC" value={formatCurrency(annualCac)} subtext="Per customer per year" />
           <ResultCard label="Total Spend" value={formatCurrency(totalSpend)} />
           <ResultCard label="New Customers" value={String(safeNewCustomers)} />
         </div>
@@ -50,6 +66,7 @@ export default function CustomerAcquisitionCostCalculator() {
       <CalculatorInput input={{ id: "content", label: "Content Creation", type: "number", defaultValue: 15000, suffix: "$", min: 0, step: 1000, tooltip: "Content marketing, videos, and creative production." }} value={content} onChange={setContent} />
       <CalculatorInput input={{ id: "ads", label: "Ad Spend", type: "number", defaultValue: 35000, suffix: "$", min: 0, step: 1000, tooltip: "Paid advertising across all channels." }} value={ads} onChange={setAds} />
       <CalculatorInput input={{ id: "newCustomers", label: "New Customers", type: "number", defaultValue: 500, min: 1, step: 1, tooltip: "Number of new customers acquired in the period." }} value={newCustomers} onChange={setNewCustomers} />
+      <PeriodInput id="analysisPeriod" label="Analysis Period" value={periodValue} unit={periodUnit} onValueChange={setPeriodValue} onUnitChange={setPeriodUnit} min={1} max={60} />
     </CalculatorLayout>
   );
 }

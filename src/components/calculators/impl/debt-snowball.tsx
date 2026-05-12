@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toPeriods } from "..";
 import { formatCurrency, formatNumber } from "@/lib/utils";
 
 interface DebtInfo {
@@ -16,6 +18,8 @@ export default function DebtSnowballCalculator() {
   const [debt2, setDebt2] = React.useState<DebtInfo>({ name: "Personal Loan", balance: 5000, minPayment: 150, rate: 12 });
   const [debt3, setDebt3] = React.useState<DebtInfo>({ name: "Car Loan", balance: 8000, minPayment: 250, rate: 6 });
   const [extraPayment, setExtraPayment] = React.useState(100);
+  const [maxPayoffTime, setMaxPayoffTime] = React.useState(50);
+  const [maxPayoffUnit, setMaxPayoffUnit] = React.useState<PeriodUnit>("years");
 
   const debts = [debt1, debt2, debt3].map(d => ({
     name: d.name,
@@ -25,6 +29,7 @@ export default function DebtSnowballCalculator() {
   }));
   const safeExtra = Math.max(0, extraPayment ?? 0);
   const totalMinPayment = debts.reduce((s, d) => s + d.minPayment, 0);
+  const maxPeriods = Math.max(1, toPeriods(maxPayoffTime, maxPayoffUnit));
 
   // Snowball method: order by smallest balance first
   const snowballOrder = [...debts].sort((a, b) => a.balance - b.balance);
@@ -37,7 +42,7 @@ export default function DebtSnowballCalculator() {
   let snowInterest = 0;
   const snowNames = snowballOrder.map(d => d.name);
 
-  while (snowBalances.some(b => b > 0) && snowMonths < 600) {
+  while (snowBalances.some(b => b > 0) && snowMonths < maxPeriods) {
     snowMonths++;
     let available = totalMinPayment + safeExtra;
     for (let i = 0; i < snowBalances.length; i++) {
@@ -47,7 +52,7 @@ export default function DebtSnowballCalculator() {
       snowInterest += interest;
       const minPmt = Math.min(snowMins[i]!, snowBalances[i]! + interest);
       const pmt = i === 0 ? Math.min(available, snowBalances[i]! + interest) : Math.min(minPmt, snowBalances[i]! + interest);
-      if (pmt - interest <= 0) { snowMonths = 600; break; }
+      if (pmt - interest <= 0) { snowMonths = maxPeriods; break; }
       snowBalances[i] = snowBalances[i]! - (pmt - interest);
       if (snowBalances[i]! < 0) snowBalances[i] = 0;
       available -= pmt;
@@ -55,7 +60,7 @@ export default function DebtSnowballCalculator() {
     }
   }
 
-  const isUnpaid = snowMonths >= 600;
+  const isUnpaid = snowMonths >= maxPeriods;
 
   const chartData = snowballOrder.map((d, i) => ({
     name: d.name,
@@ -88,6 +93,7 @@ export default function DebtSnowballCalculator() {
       <CalculatorInput input={{ id: "debt3Min", label: "Debt 3 - Min Payment", type: "number", defaultValue: 250, suffix: "$", min: 0, tooltip: "Minimum monthly payment for the third debt." }} value={debt3.minPayment} onChange={(v) => setDebt3({ ...debt3, minPayment: v })} />
       <CalculatorInput input={{ id: "debt3Rate", label: "Debt 3 - Rate", type: "number", defaultValue: 6, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Annual interest rate for the third debt." }} value={debt3.rate} onChange={(v) => setDebt3({ ...debt3, rate: v })} />
       <CalculatorInput input={{ id: "extraPayment", label: "Extra Monthly Payment", type: "number", defaultValue: 100, suffix: "$", min: 0, tooltip: "Additional amount to put toward debt each month." }} value={extraPayment} onChange={setExtraPayment} />
+      <PeriodInput id="maxPayoffTime" label="Maximum Time Horizon" value={maxPayoffTime} unit={maxPayoffUnit} onValueChange={setMaxPayoffTime} onUnitChange={setMaxPayoffUnit} min={1} max={100} />
     </CalculatorLayout>
   );
 }

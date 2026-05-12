@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toPeriods } from "..";
 import { formatCurrency, formatPercentage } from "@/lib/utils";
 
 function calculateIRR(initialInvestment: number, cashFlows: number[]): number {
@@ -53,32 +55,38 @@ function calculatePaybackPeriod(initialInvestment: number, cashFlows: number[]):
 
 export default function IRRCalculator() {
   const [initialInvestment, setInitialInvestment] = React.useState(-50000);
-  const [cf1, setCf1] = React.useState(8000);
-  const [cf2, setCf2] = React.useState(10000);
-  const [cf3, setCf3] = React.useState(12000);
-  const [cf4, setCf4] = React.useState(14000);
-  const [cf5, setCf5] = React.useState(16000);
-  const [cf6, setCf6] = React.useState(18000);
-  const [cf7, setCf7] = React.useState(20000);
-  const [cf8, setCf8] = React.useState(22000);
-  const [cf9, setCf9] = React.useState(24000);
-  const [cf10, setCf10] = React.useState(26000);
+  const [numPeriods, setNumPeriods] = React.useState(10);
+  const [numPeriodsUnit, setNumPeriodsUnit] = React.useState<PeriodUnit>("years");
+  const [cashFlows, setCashFlows] = React.useState<number[]>([8000, 10000, 12000, 14000, 16000, 18000, 20000, 22000, 24000, 26000]);
   const [discountRate, setDiscountRate] = React.useState(10);
 
-  const cashFlows = [cf1, cf2, cf3, cf4, cf5, cf6, cf7, cf8, cf9, cf10];
+  const safePeriods = Math.max(1, Math.min(50, Math.round(toPeriods(numPeriods, numPeriodsUnit))));
+
+  // Adjust cash flows array when period count changes
+  React.useEffect(() => {
+    setCashFlows(prev => {
+      if (prev.length === safePeriods) return prev;
+      if (prev.length < safePeriods) {
+        return [...prev, ...Array(safePeriods - prev.length).fill(0)];
+      }
+      return prev.slice(0, safePeriods);
+    });
+  }, [safePeriods]);
+
+  const activeCashFlows = cashFlows.slice(0, safePeriods);
   const safeDiscountRate = Math.max(0, Math.min(discountRate ?? 0, 100));
-  const irr = calculateIRR(initialInvestment, cashFlows);
-  const npv = calculateNPV(initialInvestment, cashFlows, safeDiscountRate);
-  const payback = calculatePaybackPeriod(initialInvestment, cashFlows);
+  const irr = calculateIRR(initialInvestment, activeCashFlows);
+  const npv = calculateNPV(initialInvestment, activeCashFlows, safeDiscountRate);
+  const payback = calculatePaybackPeriod(initialInvestment, activeCashFlows);
 
   const safeIrr = isNaN(irr) || !isFinite(irr) ? 0 : irr;
   const safeNpv = isNaN(npv) || !isFinite(npv) ? 0 : npv;
 
-  const paybackDisplay = payback <= 10
+  const paybackDisplay = payback <= safePeriods
     ? `${Math.floor(payback)} yrs ${Math.round((payback - Math.floor(payback)) * 12)} mos`
-    : ">10 years";
+    : `>${safePeriods} years`;
 
-  const chartData = cashFlows.map((cf, i) => ({
+  const chartData = activeCashFlows.map((cf, i) => ({
     year: `Year ${i + 1}`,
     "Cash Flow": cf,
   }));
@@ -96,62 +104,21 @@ export default function IRRCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="year" yKey="Cash Flow" title="Annual Cash Flows" />
+      <CalculatorChart type="bar" data={chartData} xKey="year" yKey="Cash Flow" title="Period Cash Flows" />
       <CalculatorInput
         input={{ id: "irr_initial", label: "Initial Investment", type: "number", defaultValue: -50000, suffix: "$", tooltip: "The upfront investment amount (negative value represents cash outflow)." }}
         value={initialInvestment}
         onChange={setInitialInvestment}
       />
-      <CalculatorInput
-        input={{ id: "irr_cf1", label: "Year 1 Cash Flow", type: "number", defaultValue: 8000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 1." }}
-        value={cf1}
-        onChange={setCf1}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf2", label: "Year 2 Cash Flow", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 2." }}
-        value={cf2}
-        onChange={setCf2}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf3", label: "Year 3 Cash Flow", type: "number", defaultValue: 12000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 3." }}
-        value={cf3}
-        onChange={setCf3}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf4", label: "Year 4 Cash Flow", type: "number", defaultValue: 14000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 4." }}
-        value={cf4}
-        onChange={setCf4}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf5", label: "Year 5 Cash Flow", type: "number", defaultValue: 16000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 5." }}
-        value={cf5}
-        onChange={setCf5}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf6", label: "Year 6 Cash Flow", type: "number", defaultValue: 18000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 6." }}
-        value={cf6}
-        onChange={setCf6}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf7", label: "Year 7 Cash Flow", type: "number", defaultValue: 20000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 7." }}
-        value={cf7}
-        onChange={setCf7}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf8", label: "Year 8 Cash Flow", type: "number", defaultValue: 22000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 8." }}
-        value={cf8}
-        onChange={setCf8}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf9", label: "Year 9 Cash Flow", type: "number", defaultValue: 24000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 9." }}
-        value={cf9}
-        onChange={setCf9}
-      />
-      <CalculatorInput
-        input={{ id: "irr_cf10", label: "Year 10 Cash Flow", type: "number", defaultValue: 26000, suffix: "$", min: 0, tooltip: "Expected cash inflow in year 10." }}
-        value={cf10}
-        onChange={setCf10}
-      />
+      <PeriodInput id="irr_periods" label="Number of Periods" value={numPeriods} unit={numPeriodsUnit} onValueChange={setNumPeriods} onUnitChange={setNumPeriodsUnit} min={1} max={50} />
+      {activeCashFlows.map((cf, i) => (
+        <CalculatorInput
+          key={`cf_${i}`}
+          input={{ id: `irr_cf${i + 1}`, label: `Period ${i + 1} Cash Flow`, type: "number", defaultValue: 0, suffix: "$", min: 0, tooltip: `Expected cash inflow in period ${i + 1}.` }}
+          value={cf}
+          onChange={(v) => setCashFlows(prev => { const next = [...prev]; next[i] = v; return next; })}
+        />
+      ))}
       <CalculatorInput
         input={{ id: "irr_discount", label: "Discount Rate", type: "number", defaultValue: 10, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "The rate used to discount future cash flows for NPV calculation." }}
         value={discountRate}

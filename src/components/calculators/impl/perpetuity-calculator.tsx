@@ -1,26 +1,34 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toPeriods } from "..";
 import { formatCurrency, formatPercentage } from "@/lib/utils";
 
 export default function PerpetuityCalculator() {
   const [payment, setPayment] = React.useState(1000);
   const [discountRate, setDiscountRate] = React.useState(5);
   const [growthRate, setGrowthRate] = React.useState(0);
+  const [payFreq, setPayFreq] = React.useState(1);
+  const [payFreqUnit, setPayFreqUnit] = React.useState<PeriodUnit>("years");
 
   const safePayment = Math.max(0, payment ?? 0);
   const safeR = Math.max(0.01, Math.min(discountRate ?? 0, 100)) / 100;
   const safeG = Math.max(0, Math.min(growthRate ?? 0, 50)) / 100;
 
+  // Convert periodic payment to annual equivalent
+  const periodsPerYear = 12 / Math.max(1, toPeriods(payFreq, payFreqUnit));
+  const annualPayment = safePayment * periodsPerYear;
+
   let pv = 0;
   let label = "Constant Perpetuity";
 
   if (safeG === 0 && safeR > 0) {
-    pv = safePayment / safeR;
+    pv = annualPayment / safeR;
     label = "Constant Perpetuity";
   } else if (safeG > 0 && safeR > safeG) {
-    pv = safePayment / (safeR - safeG);
+    pv = annualPayment / (safeR - safeG);
     label = "Growing Perpetuity";
   } else if (safeR <= 0) {
     pv = Infinity;
@@ -31,12 +39,12 @@ export default function PerpetuityCalculator() {
   }
 
   const displayPv = pv === Infinity ? "N/A" : formatCurrency(pv);
-  const annualPv = safePayment / safeR;
+  const annualPv = annualPayment / safeR;
 
   const barData = [
-    { metric: "Payment", value: safePayment },
+    { metric: "Annual Payment", value: Math.round(annualPayment) },
     { metric: "PV (No Growth)", value: Math.round(annualPv) },
-    { metric: "PV (With Growth)", value: safeG > 0 && safeR > safeG ? Math.round(safePayment / (safeR - safeG)) : 0 },
+    { metric: "PV (With Growth)", value: safeG > 0 && safeR > safeG ? Math.round(annualPayment / (safeR - safeG)) : 0 },
   ];
 
   return (
@@ -48,7 +56,7 @@ export default function PerpetuityCalculator() {
         <div className="space-y-4">
           <ResultCard label="Present Value" value={displayPv} highlight subtext={pv !== Infinity ? `At ${discountRate}% discount rate` : undefined} />
           <ResultCard label="Type" value={label} />
-          <ResultCard label="Annual Payment" value={formatCurrency(safePayment)} />
+          <ResultCard label="Annual Payment" value={formatCurrency(annualPayment)} />
         </div>
       }
     >
@@ -58,6 +66,7 @@ export default function PerpetuityCalculator() {
         value={payment}
         onChange={setPayment}
       />
+      <PeriodInput id="payFreq" label="Payment Frequency" value={payFreq} unit={payFreqUnit} onValueChange={setPayFreq} onUnitChange={setPayFreqUnit} min={1} max={12} />
       <CalculatorInput
         input={{ id: "discountRate", label: "Discount Rate", type: "number", defaultValue: 5, suffix: "%", min: 0.01, max: 100, step: 0.1, tooltip: "The required rate of return." }}
         value={discountRate}

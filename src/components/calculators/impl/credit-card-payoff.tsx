@@ -1,22 +1,25 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toPeriods } from "..";
 import { formatCurrency, formatNumber } from "@/lib/utils";
-
-const MAX_ITERATIONS = 600;
 
 export default function CreditCardPayoffCalculator() {
   const [balance, setBalance] = React.useState(5000);
   const [apr, setApr] = React.useState(22);
   const [minPercent, setMinPercent] = React.useState(2);
   const [extraPayment, setExtraPayment] = React.useState(100);
+  const [maxTime, setMaxTime] = React.useState(50);
+  const [maxTimeUnit, setMaxTimeUnit] = React.useState<PeriodUnit>("years");
 
   const safeBalance = isFinite(balance) && balance >= 0 ? balance : 0;
   const safeApr = isFinite(apr) ? apr : 0;
   const safeMinPercent = isFinite(minPercent) ? minPercent : 2;
   const safeExtra = isFinite(extraPayment) ? extraPayment : 0;
 
+  const maxMonths = Math.max(1, toPeriods(maxTime, maxTimeUnit));
   const monthlyRate = safeApr / 100 / 12;
 
   const simulate = (extra: number) => {
@@ -25,15 +28,14 @@ export default function CreditCardPayoffCalculator() {
     let months = 0;
     const path: { month: number; balance: number }[] = [{ month: 0, balance: bal }];
 
-    while (bal > 0 && months < MAX_ITERATIONS) {
+    while (bal > 0 && months < maxMonths) {
       const interest = bal * monthlyRate;
       totalInterest += interest;
       const minPayment = Math.max(bal * (safeMinPercent / 100), 25);
       const payment = minPayment + extra;
 
-      // If payment doesn't cover interest, debt is growing — break early
       if (payment <= interest && months > 0) {
-        months = MAX_ITERATIONS;
+        months = maxMonths;
         break;
       }
 
@@ -61,17 +63,17 @@ export default function CreditCardPayoffCalculator() {
     const minP = minOnly.path.find(p => p.month === m);
     const extraP = withExtra.path.find(p => p.month === m);
     return {
-      month: m === 0 ? "Start" : m >= MAX_ITERATIONS ? "Paid Off" : `Month ${m}`,
+      month: m === 0 ? "Start" : m >= maxMonths ? "Paid Off" : `Month ${m}`,
       "Minimum Only": minP?.balance ?? 0,
       "With Extra": extraP?.balance ?? 0,
     };
   });
 
-  const minLabel = minOnly.months >= MAX_ITERATIONS
-    ? `${formatNumber(MAX_ITERATIONS)}+ mo (may not pay off)`
+  const minLabel = minOnly.months >= maxMonths
+    ? `${formatNumber(maxMonths)}+ mo (may not pay off)`
     : `${formatNumber(minOnly.months)} mo`;
-  const extraLabel = withExtra.months >= MAX_ITERATIONS
-    ? `${formatNumber(MAX_ITERATIONS)}+ mo (may not pay off)`
+  const extraLabel = withExtra.months >= maxMonths
+    ? `${formatNumber(maxMonths)}+ mo (may not pay off)`
     : `${formatNumber(withExtra.months)} mo`;
 
   return (
@@ -94,6 +96,7 @@ export default function CreditCardPayoffCalculator() {
       <CalculatorInput input={{ id: "apr", label: "APR", type: "number", defaultValue: 22, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Your credit card's annual percentage rate." }} value={apr} onChange={setApr} />
       <CalculatorInput input={{ id: "min-percent", label: "Minimum Payment %", type: "number", defaultValue: 2, suffix: "%", min: 1, max: 100, step: 0.5, tooltip: "Minimum payment as a percentage of the balance." }} value={minPercent} onChange={setMinPercent} />
       <CalculatorInput input={{ id: "extra-payment", label: "Additional Payment", type: "number", defaultValue: 100, suffix: "$", min: 0, tooltip: "Extra amount you can pay each month beyond the minimum." }} value={extraPayment} onChange={setExtraPayment} />
+      <PeriodInput id="maxTime" label="Maximum Time Horizon" value={maxTime} unit={maxTimeUnit} onValueChange={setMaxTime} onUnitChange={setMaxTimeUnit} min={1} max={100} />
     </CalculatorLayout>
   );
 }

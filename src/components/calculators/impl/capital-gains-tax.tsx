@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toMonths } from "..";
 import { formatCurrency, formatPercentage } from "@/lib/utils";
 
 const SHORT_TERM_RATE = 0.35; // Assume top marginal for short-term
@@ -14,7 +16,8 @@ const LONG_TERM_RATES = [
 export default function CapitalGainsTaxCalculator() {
   const [costBasis, setCostBasis] = React.useState(10000);
   const [proceeds, setProceeds] = React.useState(20000);
-  const [holdingPeriod, setHoldingPeriod] = React.useState(0); // 0 = short, 1 = long
+  const [holdingValue, setHoldingValue] = React.useState(1);
+  const [holdingUnit, setHoldingUnit] = React.useState<PeriodUnit>("years");
   const [otherIncome, setOtherIncome] = React.useState(50000);
 
   const safeBasis = Math.max(0, isFinite(costBasis) ? costBasis : 0);
@@ -22,10 +25,12 @@ export default function CapitalGainsTaxCalculator() {
   const safeOtherIncome = Math.max(0, isFinite(otherIncome) ? otherIncome : 0);
 
   const gain = safeProceeds - safeBasis;
+  const holdingMonths = toMonths(holdingValue, holdingUnit);
+  const isLongTerm = holdingMonths >= 12;
   let taxRate: number;
   let taxOwed: number;
 
-  if (holdingPeriod === 0) {
+  if (!isLongTerm) {
     taxRate = SHORT_TERM_RATE;
     taxOwed = gain * taxRate;
   } else {
@@ -57,7 +62,7 @@ export default function CapitalGainsTaxCalculator() {
       results={
         <div className="space-y-4">
           <ResultCard label="Capital Gain" value={formatCurrency(gain)} highlight />
-          <ResultCard label="Tax Owed" value={formatCurrency(taxOwed)} subtext={`${(taxRate * 100).toFixed(0)}% ${holdingPeriod === 0 ? "short-term" : "long-term"} rate`} />
+          <ResultCard label="Tax Owed" value={formatCurrency(taxOwed)} subtext={`${(taxRate * 100).toFixed(0)}% ${isLongTerm ? "long-term" : "short-term"} rate`} />
           <ResultCard label="Net Proceeds" value={formatCurrency(netProceeds)} />
           <ResultCard label="Effective Tax Rate on Gain" value={formatPercentage(gain > 0 ? (taxOwed / gain) * 100 : 0)} />
         </div>
@@ -66,7 +71,7 @@ export default function CapitalGainsTaxCalculator() {
       <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Gain Breakdown" />
       <CalculatorInput input={{ id: "costBasis", label: "Cost Basis", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The original purchase price including commissions and fees." }} value={costBasis} onChange={setCostBasis} />
       <CalculatorInput input={{ id: "proceeds", label: "Sale Proceeds", type: "number", defaultValue: 20000, suffix: "$", min: 0, tooltip: "The total amount received from the sale." }} value={proceeds} onChange={setProceeds} />
-      <CalculatorInput input={{ id: "holdingPeriod", label: "Holding Period", type: "select", defaultValue: 0, options: [{ label: "Short-Term (< 1 year)", value: 0 }, { label: "Long-Term (≥ 1 year)", value: 1 }], tooltip: "Short-term gains are taxed as ordinary income; long-term gains get preferential rates." }} value={holdingPeriod} onChange={setHoldingPeriod} />
+      <PeriodInput id="holdingPeriod" label="Holding Period" value={holdingValue} unit={holdingUnit} onValueChange={setHoldingValue} onUnitChange={setHoldingUnit} min={1} max={50} />
       <CalculatorInput input={{ id: "otherIncome", label: "Other Taxable Income", type: "number", defaultValue: 50000, suffix: "$", min: 0, tooltip: "Your other income to determine the correct long-term capital gains bracket." }} value={otherIncome} onChange={setOtherIncome} />
     </CalculatorLayout>
   );

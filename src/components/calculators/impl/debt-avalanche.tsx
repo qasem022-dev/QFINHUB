@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toPeriods } from "..";
 import { formatCurrency, formatNumber } from "@/lib/utils";
 
 interface DebtInfo {
@@ -16,6 +18,8 @@ export default function DebtAvalancheCalculator() {
   const [debt2, setDebt2] = React.useState<DebtInfo>({ name: "Personal Loan", balance: 5000, minPayment: 150, rate: 12 });
   const [debt3, setDebt3] = React.useState<DebtInfo>({ name: "Car Loan", balance: 8000, minPayment: 250, rate: 6 });
   const [extraPayment, setExtraPayment] = React.useState(100);
+  const [maxPayoffTime, setMaxPayoffTime] = React.useState(50);
+  const [maxPayoffUnit, setMaxPayoffUnit] = React.useState<PeriodUnit>("years");
 
   const debts = [debt1, debt2, debt3].map(d => ({
     name: d.name,
@@ -25,6 +29,7 @@ export default function DebtAvalancheCalculator() {
   }));
   const safeExtra = Math.max(0, extraPayment ?? 0);
   const totalMinPayment = debts.reduce((s, d) => s + d.minPayment, 0);
+  const maxPeriods = Math.max(1, toPeriods(maxPayoffTime, maxPayoffUnit));
 
   // Snowball: smallest balance first
   const snowballOrder = [...debts].sort((a, b) => a.balance - b.balance);
@@ -39,7 +44,7 @@ export default function DebtAvalancheCalculator() {
     let interest = 0;
     const names = order.map(d => d.name);
 
-    while (balances.some(b => b > 0) && months < 600) {
+    while (balances.some(b => b > 0) && months < maxPeriods) {
       months++;
       let available = totalMinPayment + safeExtra;
       for (let i = 0; i < balances.length; i++) {
@@ -49,7 +54,7 @@ export default function DebtAvalancheCalculator() {
         interest += intPmt;
         const minPmt = Math.min(mins[i]!, balances[i]! + intPmt);
         const pmt = i === 0 ? Math.min(available, balances[i]! + intPmt) : Math.min(minPmt, balances[i]! + intPmt);
-        if (pmt - intPmt <= 0) { months = 600; break; }
+        if (pmt - intPmt <= 0) { months = maxPeriods; break; }
         balances[i] = balances[i]! - (pmt - intPmt);
         if (balances[i]! < 0) balances[i] = 0;
         available -= pmt;
@@ -81,7 +86,7 @@ export default function DebtAvalancheCalculator() {
           <ResultCard label="Avalanche Order" value={avaResult.names.join(" → ")} subtext="Highest rate first" />
           <ResultCard label="Snowball - Total Interest" value={formatCurrency(snowResult.interest)} />
           <ResultCard label="Interest Saved (vs Snowball)" value={formatCurrency(Math.max(0, interestSaved))} subtext={interestSaved > 0 ? "Avalanche saves more" : "Similar results"} />
-          {avaResult.months >= 600 && <ResultCard label="⚠️ Warning" value="May not fully pay off" subtext="Increase monthly payment" />}
+          {avaResult.months >= maxPeriods && <ResultCard label="⚠️ Warning" value="May not fully pay off" subtext="Increase monthly payment" />}
         </div>
       }
     >
@@ -96,6 +101,7 @@ export default function DebtAvalancheCalculator() {
       <CalculatorInput input={{ id: "debt3Min", label: "Debt 3 - Min Payment", type: "number", defaultValue: 250, suffix: "$", min: 0, tooltip: "Minimum monthly payment for the third debt." }} value={debt3.minPayment} onChange={(v) => setDebt3({ ...debt3, minPayment: v })} />
       <CalculatorInput input={{ id: "debt3Rate", label: "Debt 3 - Rate", type: "number", defaultValue: 6, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Annual interest rate for the third debt." }} value={debt3.rate} onChange={(v) => setDebt3({ ...debt3, rate: v })} />
       <CalculatorInput input={{ id: "extraPayment", label: "Extra Monthly Payment", type: "number", defaultValue: 100, suffix: "$", min: 0, tooltip: "Additional amount to put toward debt each month." }} value={extraPayment} onChange={setExtraPayment} />
+      <PeriodInput id="maxPayoffTime" label="Maximum Time Horizon" value={maxPayoffTime} unit={maxPayoffUnit} onValueChange={setMaxPayoffTime} onUnitChange={setMaxPayoffUnit} min={1} max={100} />
     </CalculatorLayout>
   );
 }

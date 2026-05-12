@@ -1,15 +1,20 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
+import type { PeriodUnit } from "..";
+import { toPeriods } from "..";
 import { formatCurrency } from "@/lib/utils";
 
 export default function PaybackPeriodCalculator() {
   const [initialInvestment, setInitialInvestment] = React.useState(50000);
   const [annualCashFlow, setAnnualCashFlow] = React.useState(12000);
+  const [timeHorizon, setTimeHorizon] = React.useState(50);
+  const [timeHorizonUnit, setTimeHorizonUnit] = React.useState<PeriodUnit>("years");
 
   const safeInvestment = Math.max(0, initialInvestment ?? 0);
   const safeCashFlow = Math.max(0, annualCashFlow ?? 0);
+  const maxYears = Math.max(1, Math.round(toPeriods(timeHorizon, timeHorizonUnit)));
 
   const evenPayback = safeCashFlow > 0 ? safeInvestment / safeCashFlow : Infinity;
 
@@ -18,7 +23,7 @@ export default function PaybackPeriodCalculator() {
   const safeDiscountRate = discountRate / 100;
   let cumulativeDCF = -safeInvestment;
   let dcfPaybackYear = Infinity;
-  for (let y = 1; y <= 50; y++) {
+  for (let y = 1; y <= maxYears; y++) {
     const dcf = safeCashFlow / Math.pow(1 + safeDiscountRate, y);
     cumulativeDCF += dcf;
     if (cumulativeDCF >= 0) {
@@ -28,14 +33,14 @@ export default function PaybackPeriodCalculator() {
     }
   }
 
-  // For uneven cash flows, simulate with the even amount and show cumulative
-  const years = Math.ceil(evenPayback) + 5;
+  // For even cash flows, simulate and show cumulative
+  const years = Math.min(Math.ceil(evenPayback) + 5, maxYears);
 
   const chartData: { year: string; "Simple Payback": number; "Discounted Payback": number }[] = [];
   let cumulative = -safeInvestment;
   let dcfCumulative = -safeInvestment;
   chartData.push({ year: "Year 0", "Simple Payback": cumulative, "Discounted Payback": dcfCumulative });
-  for (let y = 1; y <= Math.min(years, 36); y++) {
+  for (let y = 1; y <= Math.min(years, maxYears, 60); y++) {
     cumulative += safeCashFlow;
     dcfCumulative += safeCashFlow / Math.pow(1 + safeDiscountRate, y);
     chartData.push({
@@ -68,7 +73,7 @@ export default function PaybackPeriodCalculator() {
           <ResultCard label="Payback Period" value={paybackYear > 0 ? `${paybackYear.toFixed(2)} years` : "N/A"} highlight subtext={paybackYear > 0 ? `Discounted: ${dcfPaybackYear === Infinity ? "N/A" : dcfPaybackYear.toFixed(2)} yrs` : undefined} />
           <ResultCard label="Initial Investment" value={formatCurrency(safeInvestment)} />
           <ResultCard label="Annual Cash Flow" value={formatCurrency(safeCashFlow)} />
-          <ResultCard label="Discounted Payback" value={dcfPaybackYear === Infinity ? ">50 years" : `${dcfPaybackYear.toFixed(2)} years`} subtext={`At ${discountRate}% discount rate`} />
+          <ResultCard label="Discounted Payback" value={dcfPaybackYear === Infinity ? `>${maxYears} years` : `${dcfPaybackYear.toFixed(2)} years`} subtext={`At ${discountRate}% discount rate`} />
         </div>
       }
     >
@@ -83,6 +88,7 @@ export default function PaybackPeriodCalculator() {
         value={annualCashFlow}
         onChange={setAnnualCashFlow}
       />
+      <PeriodInput id="timeHorizon" label="Time Horizon" value={timeHorizon} unit={timeHorizonUnit} onValueChange={setTimeHorizon} onUnitChange={setTimeHorizonUnit} min={1} max={100} />
     </CalculatorLayout>
   );
 }

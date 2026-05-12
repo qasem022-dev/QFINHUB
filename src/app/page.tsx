@@ -18,13 +18,18 @@ import {
   Shield,
   Sparkles,
   ChevronRight,
-  Layers,
   Percent,
   Landmark,
+  Search,
+  DollarSign,
+  Clock,
+  Users,
+  LineChart,
 } from "lucide-react";
 import { useLocale } from "./i18n-provider";
 import { Footer } from "@/components/layout/footer";
 import { getTranslation } from "@/lib/i18n";
+import { Navbar } from "@/components/layout/navbar";
 
 const categories = [
   {
@@ -34,6 +39,7 @@ const categories = [
     icon: Calculator,
     gradient: "from-blue-500 to-blue-600",
     count: 12,
+    useCase: "Plan your next car, personal, or student loan",
   },
   {
     slug: "mortgage",
@@ -42,6 +48,7 @@ const categories = [
     icon: HomeIcon,
     gradient: "from-emerald-500 to-emerald-600",
     count: 10,
+    useCase: "Find out how much home you can afford",
   },
   {
     slug: "investment",
@@ -50,6 +57,7 @@ const categories = [
     icon: TrendingUp,
     gradient: "from-purple-500 to-purple-600",
     count: 15,
+    useCase: "Grow your money with smart investing",
   },
   {
     slug: "retirement",
@@ -58,6 +66,7 @@ const categories = [
     icon: PiggyBank,
     gradient: "from-amber-500 to-amber-600",
     count: 8,
+    useCase: "Retire with confidence — know your number",
   },
   {
     slug: "tax",
@@ -66,6 +75,7 @@ const categories = [
     icon: FileText,
     gradient: "from-red-500 to-red-600",
     count: 9,
+    useCase: "Never be surprised at tax time again",
   },
   {
     slug: "business",
@@ -74,6 +84,7 @@ const categories = [
     icon: Briefcase,
     gradient: "from-cyan-500 to-cyan-600",
     count: 10,
+    useCase: "Make data-driven business decisions",
   },
   {
     slug: "basic",
@@ -82,6 +93,7 @@ const categories = [
     icon: Percent,
     gradient: "from-sky-500 to-sky-600",
     count: 18,
+    useCase: "Everyday math, done in seconds",
   },
   {
     slug: "personal",
@@ -90,6 +102,7 @@ const categories = [
     icon: Landmark,
     gradient: "from-rose-500 to-rose-600",
     count: 16,
+    useCase: "Take control of your financial life",
   },
 ];
 
@@ -105,58 +118,89 @@ const quickCalcs = [
 ];
 
 const perks = [
-  { icon: Calculator, text: "124 Calculators", color: "text-primary-500" },
-  { icon: Zap, text: "Instant Results", color: "text-amber-500" },
-  { icon: BarChart3, text: "Interactive Charts", color: "text-blue-500" },
-  { icon: Download, text: "Export PDF / Image", color: "text-emerald-500" },
-  { icon: Globe, text: "English / Español / हिन्दी", color: "text-purple-500" },
-  { icon: Shield, text: "100% Free, No Sign-Up", color: "text-green-500" },
+  { icon: Calculator, text: "124 Live Calculators", color: "text-primary-500" },
+  { icon: Zap, text: "Instant Results — No Wait", color: "text-amber-500" },
+  { icon: BarChart3, text: "Interactive Charts on Every Tool", color: "text-blue-500" },
+  { icon: Download, text: "Export as PDF or Image", color: "text-emerald-500" },
+  { icon: Globe, text: "English · Español · हिन्दी", color: "text-purple-500" },
+  { icon: Shield, text: "100% Free · No Sign-Up Needed", color: "text-green-500" },
+];
+
+const useCases = [
+  {
+    icon: HomeIcon,
+    title: "Buying a Home?",
+    desc: "Compare mortgage rates, calculate affordability, and see if renting or buying makes more financial sense — in under 30 seconds.",
+    link: "/calculators?cat=mortgage",
+    linkText: "Try Mortgage Tools",
+  },
+  {
+    icon: TrendingUp,
+    title: "Planning Investments?",
+    desc: "See how compound interest grows your money. Optimize your portfolio allocation and calculate your expected returns.",
+    link: "/calculators?cat=investment",
+    linkText: "Explore Investment Tools",
+  },
+  {
+    icon: PiggyBank,
+    title: "Saving for Retirement?",
+    desc: "Model your 401(k) growth, compare Roth vs Traditional IRA, estimate Social Security benefits, and plan your retirement income.",
+    link: "/calculators?cat=retirement",
+    linkText: "Plan Your Retirement",
+  },
+  {
+    icon: FileText,
+    title: "Filing Taxes?",
+    desc: "Estimate your tax bill, calculate capital gains, find your effective tax rate, and plan for self-employment taxes.",
+    link: "/calculators?cat=tax",
+    linkText: "Tax Calculator Tools",
+  },
 ];
 
 const features = [
   {
-    title: "124 Calculators & Growing",
-    desc: "Professional-grade calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance — all in one place.",
+    title: "124 Calculators — All Free",
+    desc: "Professional-grade calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance. Every single one is 100% free.",
     icon: Calculator,
     color: "from-blue-500 to-blue-600",
   },
   {
-    title: "Interactive Charts & Tables",
-    desc: "Visualize your financial data with dynamic charts — line graphs, bar charts, pie charts, and amortization tables that update in real time.",
+    title: "Interactive Charts on Every Tool",
+    desc: "Visualize your financial data with dynamic line graphs, bar charts, pie charts, and amortization tables that update instantly as you adjust inputs.",
     icon: BarChart3,
     color: "from-purple-500 to-purple-600",
   },
   {
     title: "Export & Share Results",
-    desc: "Download calculation results as high-resolution images or PDF documents. Share them with your advisor, family, or save for your records.",
+    desc: "Download any calculation as a high-resolution image or PDF. Share with your financial advisor, family, or save for your records.",
     icon: Download,
     color: "from-emerald-500 to-emerald-600",
   },
   {
     title: "Multi-Language Support",
-    desc: "Use QFINHUB in English, Spanish, or Hindi with automatic language detection. More languages coming soon.",
+    desc: "Use QFINHUB in English, Spanish, or Hindi with automatic language detection. We're adding more languages to make finance accessible to everyone.",
     icon: Globe,
     color: "from-purple-500 to-purple-600",
   },
   {
     title: "AI Custom Calculator",
-    desc: "Describe your scenario in plain language and our AI builds a custom calculator with inputs, charts, and a personalized financial plan — instantly.",
+    desc: "Describe what you need in plain language and our AI builds a custom calculator with inputs, charts, and a personalized financial plan — instantly.",
     icon: Sparkles,
     color: "from-accent-500 to-accent-600",
   },
   {
-    title: "Privacy-First & Secure",
-    desc: "Most calculators run entirely in your browser — your data never touches our servers. No trackers, no ads, no data selling. Ever.",
+    title: "Privacy-First Design",
+    desc: "Calculations run in your browser — your data never touches our servers unless you choose to save it. No trackers, no ads, no data selling.",
     icon: Shield,
     color: "from-cyan-500 to-cyan-600",
   },
 ];
 
 const stats = [
-  { value: "124+", label: "Calculators" },
-  { value: "8", label: "Categories" },
-  { value: "37", label: "Interactive Now" },
-  { value: "3", label: "Languages" },
+  { value: "124", label: "Live Calculators", icon: Calculator },
+  { value: "8", label: "Categories", icon: BarChart3 },
+  { value: "Instant", label: "No Account Required", icon: Zap },
+  { value: "100%", label: "Free — Always", icon: Shield },
 ];
 
 export default function Home() {
@@ -166,119 +210,95 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* ── Navbar ── */}
-      <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur-md dark:border-gray-700 dark:bg-surface-dark/95">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center gap-2.5">
-            <img
-              src="/qfinhub-logo.svg"
-              alt="QFINHUB"
-              className="h-8 w-auto"
-              width={144}
-              height={32}
-            />
-          </Link>
-          <nav className="hidden items-center gap-1 md:flex">
-            <Link
-              href="/calculators"
-              className="rounded-lg px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
-            >
-              All Calculators
-            </Link>
-            <Link
-              href="/about"
-              className="rounded-lg px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-lg px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
-            >
-              Contact
-            </Link>
-          </nav>
-          <div className="flex items-center gap-3">
-            <Link href="/auth/login">
-              <Button variant="ghost" size="sm">
-                Sign In
-              </Button>
-            </Link>
-            <Link href="/auth/signup" className="hidden sm:inline-flex">
-              <Button
-                size="sm"
-                className="bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-sm hover:from-primary-700 hover:to-accent-600"
-              >
-                Get Started
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* ── Hero Section ── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50 px-4 pb-20 pt-16 dark:from-surface-dark dark:via-surface-dark dark:to-primary-950/20">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
         <div className="absolute inset-y-0 left-0 w-1/2 bg-[radial-gradient(ellipse_at_center_left,_var(--tw-gradient-stops))] from-emerald-500/5 via-transparent to-transparent" />
+        <div className="absolute inset-y-0 right-0 w-1/3 bg-[radial-gradient(ellipse_at_center_right,_var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
 
         <div className="relative z-10 mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
             {/* Badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-900/30 dark:text-primary-300">
               <span className="h-2 w-2 rounded-full bg-primary-500" />
-              124 Financial Calculators — 100% Free, No Sign-Up Required
+              <strong>124 Free Calculators</strong> — Instant, Accurate, No Sign-Up
             </div>
 
-            {/* Headline */}
+            {/* Headline with calculator emoji feel */}
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl dark:text-white">
               Free Financial Calculators{" "}
               <span className="bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent dark:from-primary-400 dark:to-accent-400">
-                for Everyone
+                for Real Life
               </span>
             </h1>
 
-            {/* Subtitle */}
+            {/* Subtitle — utility-focused, no marketing fluff */}
             <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-300">
               Fast, accurate calculators for loans, mortgages, investments,
               retirement, taxes, business, and personal finance. No account
-              needed — start calculating in seconds.
+              needed. Just enter your numbers and get answers instantly.
             </p>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons — big, bold, action-oriented */}
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link href="/calculators">
                 <Button
                   size="lg"
-                  className="h-14 min-w-[240px] rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/25 hover:bg-primary-700 transition-all hover:shadow-xl hover:shadow-primary-600/30 active:scale-[0.98]"
+                  className="h-14 min-w-[260px] rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 transition-all hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98]"
                 >
                   <Calculator className="mr-2 h-5 w-5" />
                   Browse All 124 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/calculators?cat=investment">
+              <Link href="/calculators?cat=mortgage">
                 <Button
                   size="lg"
                   variant="outline"
                   className="h-14 min-w-[200px] rounded-xl border-gray-300 bg-white/80 px-8 text-base font-semibold text-gray-700 backdrop-blur-sm hover:bg-gray-50 hover:border-gray-400 dark:border-gray-600 dark:bg-white/5 dark:text-gray-300 dark:hover:bg-white/10"
                 >
-                  <TrendingUp className="mr-2 h-5 w-5" />
-                  Investment Calculators
+                  <HomeIcon className="mr-2 h-5 w-5" />
+                  Mortgage Calculators
                 </Button>
+              </Link>
+            </div>
+
+            {/* Quick Search Bar - An entry point to find any calculator */}
+            <div className="mt-8">
+              <Link
+                href="/calculators"
+                className="mx-auto flex max-w-lg items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3.5 shadow-sm transition-all hover:border-primary-300 hover:shadow-md dark:border-gray-600 dark:bg-gray-800 dark:hover:border-primary-600"
+              >
+                <Search className="h-5 w-5 shrink-0 text-gray-400" />
+                <span className="text-sm text-gray-400">
+                  Search all 124 calculators — &quot;mortgage,&quot; &quot;retirement,&quot; &quot;compound interest&quot;...
+                </span>
+                <kbd className="ml-auto hidden rounded-md border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs text-gray-400 dark:border-gray-600 dark:bg-gray-700 sm:inline-block">
+                  ⌘K
+                </kbd>
               </Link>
             </div>
 
             {/* Stats Row */}
             <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-2xl font-bold text-primary-600 dark:text-primary-400 md:text-3xl">
-                    {stat.value}
+              {stats.map((stat) => {
+                const Icon = stat.icon;
+                return (
+                  <div key={stat.label} className="text-center">
+                    <div className="flex items-center justify-center gap-1.5">
+                      <Icon className="h-4 w-4 text-primary-500 dark:text-primary-400" />
+                      <div className="text-2xl font-bold text-primary-600 dark:text-primary-400 md:text-3xl">
+                        {stat.value}
+                      </div>
+                    </div>
+                    <div className="mt-0.5 text-xs font-medium text-gray-500 dark:text-gray-400">
+                      {stat.label}
+                    </div>
                   </div>
-                  <div className="mt-0.5 text-xs font-medium text-gray-500 dark:text-gray-400">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Perks bar */}
@@ -297,8 +317,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Category Grid ── */}
+      {/* ── Use Cases Section — "What are you here for?" ── */}
       <section className="border-b border-gray-100 bg-white px-4 py-16 dark:border-gray-800 dark:bg-surface-dark">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
+              What Are You Working On?
+            </h2>
+            <p className="mx-auto max-w-2xl text-gray-500 dark:text-gray-400">
+              Pick your goal below and we&apos;ll take you straight to the right tools.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {useCases.map((uc) => {
+              const Icon = uc.icon;
+              return (
+                <Link
+                  key={uc.title}
+                  href={uc.link}
+                  className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 dark:border-gray-700 dark:bg-surface-dark-elevated"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 text-white shadow-sm transition-transform group-hover:scale-110">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="mb-2 text-base font-semibold text-gray-900 dark:text-white">
+                    {uc.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+                    {uc.desc}
+                  </p>
+                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary-600 transition-all group-hover:gap-2 dark:text-primary-400">
+                    {uc.linkText}
+                    <ArrowRight className="h-4 w-4 transition-all group-hover:translate-x-0.5" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Category Grid ── */}
+      <section className="border-b border-gray-100 bg-gray-50 px-4 py-16 dark:border-gray-800 dark:bg-surface-dark/50">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
@@ -306,8 +367,7 @@ export default function Home() {
             </h2>
             <p className="mx-auto max-w-2xl text-gray-500 dark:text-gray-400">
               Choose from 8 categories covering every major personal and
-              business finance need. Each calculator is fast, accurate, and
-              completely free.
+              business finance need.
             </p>
           </div>
 
@@ -326,20 +386,16 @@ export default function Home() {
                     >
                       <Icon className="h-5 w-5" />
                     </div>
-                    <span className="text-xs font-semibold text-gray-400">
-                      {cat.count} calcs
+                    <span className="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+                      {cat.count}
                     </span>
                   </div>
                   <h3 className="mt-3 text-sm font-semibold text-gray-900 dark:text-white">
                     {cat.label}
                   </h3>
                   <p className="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400">
-                    {cat.desc}
+                    {cat.useCase}
                   </p>
-                  <div className="mt-3 flex items-center gap-1 text-xs font-medium text-primary-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-primary-400">
-                    Browse {cat.label.toLowerCase()} calculators
-                    <ChevronRight className="h-3 w-3" />
-                  </div>
                 </Link>
               );
             })}
@@ -348,14 +404,15 @@ export default function Home() {
       </section>
 
       {/* ── Popular Calculators Section ── */}
-      <section className="bg-gray-50 px-4 py-16 dark:bg-surface-dark/50">
+      <section className="bg-white px-4 py-16 dark:bg-surface-dark">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
               Most Used Calculators
             </h2>
             <p className="mx-auto max-w-xl text-gray-500 dark:text-gray-400">
-              Start with the tools people use most — all free, all instant.
+              Start with the tools people use most — enter your numbers, get
+              answers instantly.
             </p>
           </div>
 
@@ -394,7 +451,7 @@ export default function Home() {
       </section>
 
       {/* ── Features Section ── */}
-      <section className="bg-white px-4 py-16 dark:bg-surface-dark">
+      <section className="bg-gray-50 px-4 py-16 dark:bg-surface-dark/50">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
@@ -432,34 +489,45 @@ export default function Home() {
       {/* ── CTA Section ── */}
       <section className="bg-gradient-to-r from-primary-900 via-primary-800 to-primary-950 px-4 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <CheckCircle2 className="mx-auto mb-6 h-12 w-12 text-accent-400" />
+          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm">
+            <Calculator className="h-8 w-8 text-accent-400" />
+          </div>
           <h2 className="mb-4 text-3xl font-bold text-white">
-            Ready to Calculate?
+            Start Using 124 Free Calculators
           </h2>
           <p className="mb-3 text-lg text-gray-300">
-            No sign-up required. Start using any calculator instantly — or
-            create a free account to save your results.
+            No sign-up. No credit card. No limits. Just fast, accurate
+            financial tools — free for everyone, forever.
           </p>
-          <p className="mb-8 text-sm text-gray-400">
-            100% free. No credit card. No hidden fees. Forever.
+          <p className="mb-8 flex items-center justify-center gap-4 text-sm text-gray-400">
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="h-4 w-4 text-accent-400" /> Instant
+            </span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="h-4 w-4 text-accent-400" /> Accurate
+            </span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="h-4 w-4 text-accent-400" /> Free
+            </span>
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link href="/calculators">
               <Button
                 size="lg"
-                className="h-14 min-w-[200px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 transition-all active:scale-[0.98]"
+                className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 transition-all active:scale-[0.98]"
               >
-                Start Calculating
+                <Calculator className="mr-2 h-5 w-5" />
+                Find Your Calculator
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/calculators?cat=retirement">
+            <Link href="/about">
               <Button
                 size="lg"
                 variant="outline"
-                className="h-14 min-w-[200px] rounded-xl border-white/20 bg-white/5 px-8 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/30"
+                className="h-14 min-w-[180px] rounded-xl border-white/20 bg-white/5 px-8 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/30"
               >
-                Plan Your Retirement
+                Learn More
               </Button>
             </Link>
           </div>

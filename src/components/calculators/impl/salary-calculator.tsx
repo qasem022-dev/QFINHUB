@@ -1,18 +1,31 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toPeriods } from "..";
 import { formatCurrency } from "@/lib/utils";
 
 export default function SalaryCalculator() {
-  const [annualSalary, setAnnualSalary] = React.useState(75000);
+  const [payValue, setPayValue] = React.useState(75000);
+  const [payUnit, setPayUnit] = React.useState<"days" | "weeks" | "months" | "years">("years");
 
-  const safeSalary = isFinite(annualSalary) ? Math.max(0, annualSalary) : 0;
+  const safePay = isFinite(payValue) ? Math.max(0, payValue) : 0;
 
-  const hourly = safeSalary / 2080;
-  const weekly = safeSalary / 52;
-  const biweekly = safeSalary / 26;
-  const monthly = safeSalary / 12;
+  // Convert input to annual salary
+  let annualSalary = 0;
+  if (payUnit === "years") {
+    annualSalary = safePay;
+  } else if (payUnit === "months") {
+    annualSalary = safePay * 12;
+  } else if (payUnit === "weeks") {
+    annualSalary = safePay * 52;
+  } else if (payUnit === "days") {
+    annualSalary = safePay * 260; // ~260 working days per year
+  }
+
+  const hourly = annualSalary / 2080;
+  const weekly = annualSalary / 52;
+  const biweekly = annualSalary / 26;
+  const monthly = annualSalary / 12;
 
   const chartData = [
     { name: "Hourly", value: hourly },
@@ -21,6 +34,8 @@ export default function SalaryCalculator() {
     { name: "Monthly", value: monthly },
   ];
 
+  const payUnitLabel = payUnit === "years" ? "Annual" : payUnit === "months" ? "Monthly" : payUnit === "weeks" ? "Weekly" : "Daily";
+
   return (
     <CalculatorLayout
       title="Salary Calculator"
@@ -28,7 +43,7 @@ export default function SalaryCalculator() {
       icon={<span>💰</span>}
       results={
         <div className="space-y-4">
-          <ResultCard label="Annual Salary" value={formatCurrency(safeSalary)} highlight />
+          <ResultCard label="Annual Salary" value={formatCurrency(annualSalary)} highlight />
           <ResultCard label="Hourly (2,080 hrs)" value={formatCurrency(hourly)} />
           <ResultCard label="Weekly (52 weeks)" value={formatCurrency(weekly)} />
           <ResultCard label="Biweekly (26 periods)" value={formatCurrency(biweekly)} />
@@ -37,11 +52,7 @@ export default function SalaryCalculator() {
       }
     >
       <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Pay Breakdown" height={250} />
-      <CalculatorInput
-        input={{ id: "annualSalary", label: "Annual Salary", type: "number", defaultValue: 75000, suffix: "$", min: 0, tooltip: "Your total annual salary before taxes and deductions." }}
-        value={annualSalary}
-        onChange={setAnnualSalary}
-      />
+      <PeriodInput id="payAmount" label={`${payUnitLabel} Pay`} value={payValue} unit={payUnit} onValueChange={setPayValue} onUnitChange={setPayUnit} min={0} max={99999999} />
     </CalculatorLayout>
   );
 }
