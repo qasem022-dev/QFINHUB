@@ -58,10 +58,11 @@ export async function GET(request: NextRequest) {
       new URL(`/?${params.toString()}`, request.url)
     );
   } catch (err) {
-    console.error("Pinterest token exchange failed:", err);
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("Pinterest token exchange failed:", msg);
     return NextResponse.redirect(
       new URL(
-        "/?pinterest=error&message=token_exchange_failed",
+        "/?pinterest=error&message=" + encodeURIComponent(msg.substring(0, 200)),
         request.url
       )
     );
