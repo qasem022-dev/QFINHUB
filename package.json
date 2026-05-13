@@ -51,6 +51,7 @@
     "recharts": "^3.8.1",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.5.0",
+    "twitter-api-v2": "^1.29.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
