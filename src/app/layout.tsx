@@ -46,12 +46,6 @@ export const metadata: Metadata = {
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
-    other: [
-      {
-        rel: "manifest",
-        url: "/site.webmanifest",
-      },
-    ],
   },
   metadataBase: new URL(baseUrl),
   alternates: {
@@ -151,6 +145,9 @@ export default function RootLayout({
           />
         ))}
         <link rel="alternate" hrefLang="x-default" href={baseUrl} />
+        {/* Dual manifest references for browser compatibility */}
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
         {/* iOS PWA / Add to Home Screen support */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

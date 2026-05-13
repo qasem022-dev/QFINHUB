@@ -1,0 +1,38 @@
+{
+  "name": "QFINHUB — Free Financial Calculators",
+  "short_name": "QFINHUB",
+  "description": "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+  "start_url": "/?pwa=true",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "any",
+  "categories": ["finance", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "QFINHUB Financial Calculators"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

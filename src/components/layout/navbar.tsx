@@ -17,6 +17,7 @@ import { useTheme } from "@/hooks/use-theme";
 import { useAuth } from "@/components/providers/auth-provider";
 import { useTranslation } from "@/app/i18n-provider";
 import { LanguageSwitcher, LanguageSwitcherMobile } from "@/components/ui/language-switcher";
+import { usePWA } from "@/hooks/use-pwa";
 import {
   Menu,
   X,
@@ -27,6 +28,7 @@ import {
   User,
   Settings,
   LayoutDashboard,
+  Download,
 } from "lucide-react";
 
 export function Navbar() {
@@ -34,6 +36,7 @@ export function Navbar() {
   const { theme, setTheme } = useTheme();
   const { user, signOut } = useAuth();
   const { t, locale } = useTranslation();
+  const { canInstall, install, isStandalone, isIOS } = usePWA();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
   const [mounted, setMounted] = React.useState(false);
@@ -118,6 +121,20 @@ export function Navbar() {
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-transform dark:rotate-0 dark:scale-100" />
           </button>
+
+          {/* PWA Install Button (shown when installable) */}
+          {!isStandalone && canInstall && (
+            <button
+              onClick={install}
+              className="flex h-9 items-center gap-1.5 rounded-lg bg-gradient-to-r from-primary-600 to-accent-500 px-3 text-xs font-medium text-white shadow-sm transition-all hover:from-primary-700 hover:to-accent-600 hover:shadow-md"
+              aria-label="Install QFINHUB app"
+            >
+              <Download className="h-3.5 w-3.5" />
+              <span className="hidden lg:inline">Install App</span>
+            </button>
+          )}
+
+          {/* iOS Hint Button */}
 
           {/* Language Switcher */}
           <LanguageSwitcher compact />
@@ -232,6 +249,17 @@ export function Navbar() {
               )}
               {theme === "dark" ? t("nav.lightMode") : t("nav.darkMode")}
             </button>
+
+            {/* Mobile Install Button */}
+            {!isStandalone && canInstall && (
+              <button
+                onClick={install}
+                className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm font-medium text-primary-600 transition-colors hover:bg-primary-50 dark:text-primary-400 dark:hover:bg-primary-900/20"
+              >
+                <Download className="h-4 w-4" />
+                Install App
+              </button>
+            )}
 
             {isLoggedIn && user ? (
               <>
