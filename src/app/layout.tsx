@@ -50,9 +50,6 @@ export const metadata: Metadata = {
   verification: {
     google: "ca-pub-1102790706635466",
   },
-  other: {
-    "p:domain_verify": "4756ee5e97724d0b2403293fe43f64c3",
-  },
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",
@@ -141,6 +138,8 @@ export default function RootLayout({
         />
         {/* Google AdSense site verification */}
         <meta name="google-adsense-account" content="ca-pub-1102790706635466" />
+        {/* Pinterest site verification */}
+        <meta name="p:domain_verify" content="4756ee5e97724d0b2403293fe43f64c3" />
         {/* Hreflang tags for multi-language support */}
         {locales.map((locale) => (
           <link
