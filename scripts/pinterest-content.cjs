@@ -499,6 +499,8 @@ async function main() {
     category: bestPin.category,
     boardName: bestPin.boardName,
     title: bestPin.title,
+    description: bestPin.description || "Calculate your finances free at QFINHUB",
+    link: bestPin.link || "https://www.qfinhub.com/calculators/" + bestPin.slug,
     time: new Date().toISOString(),
     imagePath: pngPath
   });

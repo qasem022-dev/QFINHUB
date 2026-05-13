@@ -77,7 +77,7 @@ async function pinterestRequest(method, path, body, retries) {
       return await resp.json();
     } catch(e) {
       if (attempt < retries && !e.message.includes("401") && !e.message.includes("403")) {
-        console.log("Retrying (" + (attempt + 1) + "/" + retries + "): " + e.message.substring(0, 60));
+        console.log("Retrying (" + (attempt + 1) + "/" + retries + "): " + (e.message || "").substring(0, 60));
         await sleep(3000 * (attempt + 1));
         continue;
       }
@@ -136,8 +136,8 @@ async function createPin(boardId, title, description, link, imagePath) {
   
   var pinData = {
     board_id: boardId,
-    title: title.substring(0, 100),  // Pinterest max 100 chars
-    description: description.substring(0, 500),  // Pinterest max 500 chars
+    title: (title || "").substring(0, 100),  // Pinterest max 100 chars
+    description: (description || "").substring(0, 500),  // Pinterest max 500 chars
     link: link,
     alt_text: "Financial infographic from QFINHUB"
   };
@@ -304,9 +304,9 @@ async function postPin() {
   try {
     var pinBody = {
       board_id: boardId,
-      title: pinToPost.title.substring(0, 100),
-      description: pinToPost.description.substring(0, 500),
-      link: pinToPost.link,
+      title: (pinToPost.title || pinToPost.slug).substring(0, 100),
+      description: (pinToPost.description || "Try our free " + (pinToPost.slug || "").split("-").join(" ") + " calculator at QFINHUB").substring(0, 500),
+      link: pinToPost.link || "https://www.qfinhub.com/calculators/" + (pinToPost.slug || ""),
       alt_text: "Financial calculator infographic from QFINHUB",
       media_source: {
         source_type: "image_url",
@@ -351,7 +351,7 @@ async function postPin() {
   } catch(e) {
     console.error("");
     console.error("❌ PINTEREST POST FAILED");
-    console.error("  Error: " + e.message);
+    console.error("  Error: " + (e.message || e || "unknown"));
     console.error("");
     
     // If token expired, suggest OAuth refresh
@@ -365,7 +365,7 @@ async function postPin() {
     postLog.failed = postLog.failed || [];
     postLog.failed.push({
       slug: pinToPost.slug,
-      error: e.message.substring(0, 200),
+      error: (e.message || String(e)).substring(0, 200),
       time: new Date().toISOString()
     });
     writeFileSync(POST_LOG_FILE, JSON.stringify(postLog, null, 2));

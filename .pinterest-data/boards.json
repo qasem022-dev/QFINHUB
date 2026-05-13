@@ -1,1 +1,10 @@
-{}
+{
+    "mortgages": { "id": "1086071335079246633", "name": "Mortgage Calculators" },
+    "investing": { "id": "1086071335079246634", "name": "Investment Calculators" },
+    "retirement": { "id": "1086071335079246635", "name": "Retirement Planning" },
+    "loans": { "id": "1086071335079246636", "name": "Loan Calculators" },
+    "debt": { "id": "1086071335079246637", "name": "Debt Payoff Tools" },
+    "taxes": { "id": "1086071335079246638", "name": "Tax Calculators" },
+    "savings": { "id": "1086071335079246639", "name": "Savings & Budget" },
+    "everyday": { "id": "1086071335079246640", "name": "Everyday Calculators" }
+}
