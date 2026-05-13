@@ -179,7 +179,7 @@ export function generateGrowthChartSVG(
   }
   
   const pathD = points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x},${p.y}`).join(" ");
-  const areaD = pathD + ` L${points[points.length - 1].x},300 L${points[0].x},300 Z`;
+  const areaD = pathD + ` L${points[points.length - 1]?.x ?? 0},300 L${points[0]?.x ?? 0},300 Z`;
   
   const finalValue = points[points.length - 1]?.value || 0;
   const totalContributions = initialInvestment + monthlyContribution * years * 12;
@@ -212,8 +212,8 @@ export function generateGrowthChartSVG(
   <path d="${pathD}" fill="none" stroke="${BRAND_COLORS.primary}" stroke-width="2.5"/>
   
   <!-- End dot -->
-  <circle cx="${points[points.length - 1].x}" cy="${points[points.length - 1].y}" r="5" fill="${BRAND_COLORS.accent}"/>
-  <text x="${points[points.length - 1].x - 10}" y="${points[points.length - 1].y - 12}" text-anchor="end" font-size="11" fill="${BRAND_COLORS.accent}" font-weight="600">$${finalValue.toLocaleString()}</text>
+  <circle cx="${(points[points.length - 1]?.x ?? 0)}" cy="${(points[points.length - 1]?.y ?? 0)}" r="5" fill="${BRAND_COLORS.accent}"/>
+  <text x="${(points[points.length - 1]?.x ?? 0) - 10}" y="${(points[points.length - 1]?.y ?? 0) - 12}" text-anchor="end" font-size="11" fill="${BRAND_COLORS.accent}" font-weight="600">$${finalValue.toLocaleString()}</text>
   
   <!-- X-axis labels -->
   <text x="60" y="320" font-size="10" fill="#9ca3af">Year 0</text>
@@ -337,5 +337,5 @@ export function getRandomInfographic(): string {
     }),
   ];
 
-  return infographics[Math.floor(Math.random() * infographics.length)];
+  return infographics[Math.floor(Math.random() * infographics.length)] ?? "";
 }
