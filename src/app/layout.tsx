@@ -48,9 +48,10 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png" }],
   },
   verification: {
-    other: {
-      "p:domain_verify": "4756ee5e97724d0b2403293fe43f64c3",
-    },
+    google: "ca-pub-1102790706635466",
+  },
+  other: {
+    "p:domain_verify": "4756ee5e97724d0b2403293fe43f64c3",
   },
   metadataBase: new URL(baseUrl),
   alternates: {
