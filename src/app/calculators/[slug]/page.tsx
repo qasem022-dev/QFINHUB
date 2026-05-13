@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Loader2 } from "lucide-react";
+import { ArrowLeft, Loader2, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
@@ -64,10 +64,22 @@ export default async function CalculatorDetailPage({
                 All Calculators
               </Button>
             </Link>
-            <ShareDialog
-              calculatorSlug={slug}
-              calculatorTitle={calculator.title}
-            />
+            <div className="flex items-center gap-2">
+              <Link href={`/calculators/${slug}/embed`}>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="gap-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  <Code2 className="h-4 w-4" />
+                  <span className="hidden sm:inline">Embed</span>
+                </Button>
+              </Link>
+              <ShareDialog
+                calculatorSlug={slug}
+                calculatorTitle={calculator.title}
+              />
+            </div>
           </div>
         </div>
 

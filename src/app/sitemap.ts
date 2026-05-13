@@ -1,4 +1,8 @@
 import { allCalculators } from "@/lib/calculators";
+import { blogPosts } from "@/lib/blog/posts";
+import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
+import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
+import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -83,8 +87,8 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     {
       url: `${BASE_URL}/blog`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.4,
+      changeFrequency: "weekly",
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/dashboard`,
@@ -113,5 +117,62 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...calculatorPages];
+  // Blog post pages
+  const blogPages: SitemapEntry[] = blogPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: post.publishedAt,
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.6,
+  }));
+
+  // Programmatic SEO variant pages (thousands of targeted pages)
+  let variantPages: SitemapEntry[] = [];
+  try {
+    const variants = getAllVariantPages();
+    variantPages = variants.map((v) => ({
+      url: `${BASE_URL}/tools/${v.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as ChangeFrequency,
+      priority: 0.7,
+    }));
+  } catch (e) {
+    console.warn("Failed to generate variant pages:", e);
+  }
+
+  // Geotargeted city pages (mortgage calculator houston, etc.)
+  let geotargetedPages: SitemapEntry[] = [];
+  try {
+    const { US_CITIES, GEOTARGETED_CALCULATORS } = await import("@/lib/programmatic-seo/data/us-cities");
+    for (const calc of GEOTARGETED_CALCULATORS) {
+      for (const city of US_CITIES) {
+        const citySlug = city.name.toLowerCase().replace(/\s+/g, "-").replace(/\./g, "");
+        geotargetedPages.push({
+          url: `${BASE_URL}/calculators/${calc.slug}/${citySlug}-${city.stateAbbr.toLowerCase()}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly" as ChangeFrequency,
+          priority: 0.6,
+        });
+      }
+    }
+  } catch (e) {
+    console.warn("Failed to generate geotargeted pages:", e);
+  }
+
+  // Comparison pages
+  const comparisonPages: SitemapEntry[] = getAllComparisons().map((c) => ({
+    url: `${BASE_URL}/compare/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.6,
+  }));
+
+  // How-to-use guide pages
+  const guidePages: SitemapEntry[] = getAllHowToGuides().map((g) => ({
+    url: `${BASE_URL}/guides/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages];
 }

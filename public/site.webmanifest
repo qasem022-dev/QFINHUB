@@ -1,15 +1,15 @@
 {
-  "name": "QFINHUB — Financial Tools Platform",
+  "name": "QFINHUB — Free Financial Calculators",
   "short_name": "QFINHUB",
-  "description": "Professional financial calculators, AI-powered analysis, and financial planning tools. 60+ calculators, custom AI plans, and interactive charts.",
+  "description": "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
   "background_color": "#ffffff",
   "theme_color": "#1e40af",
   "orientation": "any",
   "categories": ["finance", "business", "productivity"],
-  "screenshots": [],
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

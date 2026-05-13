@@ -1,0 +1,71 @@
+{
+  "currentAges": [
+    { "display": "25", "value": 25 },
+    { "display": "30", "value": 30 },
+    { "display": "35", "value": 35 },
+    { "display": "40", "value": 40 },
+    { "display": "45", "value": 45 },
+    { "display": "50", "value": 50 },
+    { "display": "55", "value": 55 }
+  ],
+  "retirementAges": [
+    { "display": "55", "value": 55 },
+    { "display": "60", "value": 60 },
+    { "display": "62", "value": 62 },
+    { "display": "65", "value": 65 },
+    { "display": "67", "value": 67 },
+    { "display": "70", "value": 70 }
+  ],
+  "retirementGoalAmounts": [
+    { "display": "500k", "value": 500000 },
+    { "display": "750k", "value": 750000 },
+    { "display": "1M", "value": 1000000 },
+    { "display": "1.25M", "value": 1250000 },
+    { "display": "1.5M", "value": 1500000 },
+    { "display": "2M", "value": 2000000 },
+    { "display": "2.5M", "value": 2500000 },
+    { "display": "3M", "value": 3000000 },
+    { "display": "5M", "value": 5000000 }
+  ],
+  "monthlyContributions": [
+    { "display": "200", "value": 200 },
+    { "display": "500", "value": 500 },
+    { "display": "1000", "value": 1000 },
+    { "display": "1500", "value": 1500 },
+    { "display": "2000", "value": 2000 },
+    { "display": "3000", "value": 3000 },
+    { "display": "5000", "value": 5000 }
+  ],
+  "currentSavings": [
+    { "display": "0", "value": 0 },
+    { "display": "10k", "value": 10000 },
+    { "display": "50k", "value": 50000 },
+    { "display": "100k", "value": 100000 },
+    { "display": "250k", "value": 250000 },
+    { "display": "500k", "value": 500000 }
+  ],
+  "returnRates": [
+    { "display": "4%", "value": 4, "label": "Conservative" },
+    { "display": "5%", "value": 5, "label": "Moderate Conservative" },
+    { "display": "6%", "value": 6, "label": "Moderate" },
+    { "display": "7%", "value": 7, "label": "Balanced" },
+    { "display": "8%", "value": 8, "label": "Growth" },
+    { "display": "10%", "value": 10, "label": "Aggressive" }
+  ],
+  "withdrawalStrategies": [
+    { "display": "4% Rule", "description": "Withdraw 4% of portfolio annually, adjusted for inflation" },
+    { "display": "3% Rule", "description": "Conservative 3% withdrawal rate for longer retirement horizons" },
+    { "display": "5% Rule", "description": "More aggressive 5% withdrawal rate for shorter retirements" },
+    { "display": "Dynamic", "description": "Adjust withdrawals based on market performance" }
+  ],
+  "incomeLevels": [
+    { "display": "50k", "value": 50000 },
+    { "display": "75k", "value": 75000 },
+    { "display": "100k", "value": 100000 },
+    { "display": "120k", "value": 120000 },
+    { "display": "150k", "value": 150000 },
+    { "display": "200k", "value": 200000 },
+    { "display": "250k", "value": 250000 },
+    { "display": "300k", "value": 300000 }
+  ]
+}

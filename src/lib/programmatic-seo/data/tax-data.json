@@ -1,0 +1,90 @@
+{
+  "incomeBrackets": [
+    { "display": "40k", "value": 40000, "label": "Low Income" },
+    { "display": "60k", "value": 60000, "label": "Lower Middle Class" },
+    { "display": "80k", "value": 80000, "label": "Middle Class" },
+    { "display": "100k", "value": 100000, "label": "Upper Middle Class" },
+    { "display": "150k", "value": 150000, "label": "High Income" },
+    { "display": "200k", "value": 200000, "label": "High Earner" },
+    { "display": "250k", "value": 250000, "label": "Very High Earner" },
+    { "display": "300k", "value": 300000, "label": "Top Income" },
+    { "display": "400k", "value": 400000, "label": "High Net Worth" },
+    { "display": "500k", "value": 500000, "label": "Affluent" },
+    { "display": "750k", "value": 750000, "label": "Wealthy" },
+    { "display": "1M", "value": 1000000, "label": "Top 1%" }
+  ],
+  "filingStatuses": [
+    { "display": "single", "label": "Single", "standardDeduction": 14600 },
+    { "display": "married-joint", "label": "Married Filing Jointly", "standardDeduction": 29200 },
+    { "display": "married-separate", "label": "Married Filing Separately", "standardDeduction": 14600 },
+    { "display": "head-of-household", "label": "Head of Household", "standardDeduction": 21900 },
+    { "display": "qualifying-widow", "label": "Qualifying Surviving Spouse", "standardDeduction": 29200 }
+  ],
+  "taxYear": 2025,
+  "taxBrackets2025": {
+    "single": [
+      { "rate": 10, "from": 0, "to": 11925 },
+      { "rate": 12, "from": 11926, "to": 48475 },
+      { "rate": 22, "from": 48476, "to": 103350 },
+      { "rate": 24, "from": 103351, "to": 197300 },
+      { "rate": 32, "from": 197301, "to": 250525 },
+      { "rate": 35, "from": 250526, "to": 626350 },
+      { "rate": 37, "from": 626351, "to": Infinity }
+    ],
+    "married-joint": [
+      { "rate": 10, "from": 0, "to": 23850 },
+      { "rate": 12, "from": 23851, "to": 96950 },
+      { "rate": 22, "from": 96951, "to": 206700 },
+      { "rate": 24, "from": 206701, "to": 394600 },
+      { "rate": 32, "from": 394601, "to": 501050 },
+      { "rate": 35, "from": 501051, "to": 751600 },
+      { "rate": 37, "from": 751601, "to": Infinity }
+    ],
+    "head-of-household": [
+      { "rate": 10, "from": 0, "to": 17000 },
+      { "rate": 12, "from": 17001, "to": 64850 },
+      { "rate": 22, "from": 64851, "to": 103350 },
+      { "rate": 24, "from": 103351, "to": 197300 },
+      { "rate": 32, "from": 197301, "to": 250525 },
+      { "rate": 35, "from": 250526, "to": 626350 },
+      { "rate": 37, "from": 626351, "to": Infinity }
+    ]
+  },
+  "capitalGainsBrackets2025": {
+    "single": [
+      { "rate": 0, "from": 0, "to": 47025 },
+      { "rate": 15, "from": 47026, "to": 518900 },
+      { "rate": 20, "from": 518901, "to": Infinity }
+    ],
+    "married-joint": [
+      { "rate": 0, "from": 0, "to": 94050 },
+      { "rate": 15, "from": 94051, "to": 583750 },
+      { "rate": 20, "from": 583751, "to": Infinity }
+    ]
+  },
+  "standardDeductions": {
+    "single": 14600,
+    "married-joint": 29200,
+    "married-separate": 14600,
+    "head-of-household": 21900,
+    "qualifying-widow": 29200
+  },
+  "states": [
+    { "name": "California", "abbr": "CA", "topRate": 13.3, "hasStateIncomeTax": true },
+    { "name": "Texas", "abbr": "TX", "topRate": 0, "hasStateIncomeTax": false },
+    { "name": "New York", "abbr": "NY", "topRate": 10.9, "hasStateIncomeTax": true },
+    { "name": "Florida", "abbr": "FL", "topRate": 0, "hasStateIncomeTax": false },
+    { "name": "Illinois", "abbr": "IL", "topRate": 4.95, "hasStateIncomeTax": true },
+    { "name": "Pennsylvania", "abbr": "PA", "topRate": 3.07, "hasStateIncomeTax": true },
+    { "name": "Ohio", "abbr": "OH", "topRate": 3.75, "hasStateIncomeTax": true },
+    { "name": "Georgia", "abbr": "GA", "topRate": 5.49, "hasStateIncomeTax": true },
+    { "name": "North Carolina", "abbr": "NC", "topRate": 4.5, "hasStateIncomeTax": true },
+    { "name": "Michigan", "abbr": "MI", "topRate": 4.25, "hasStateIncomeTax": true },
+    { "name": "Nevada", "abbr": "NV", "topRate": 0, "hasStateIncomeTax": false },
+    { "name": "Washington", "abbr": "WA", "topRate": 0, "hasStateIncomeTax": false },
+    { "name": "Tennessee", "abbr": "TN", "topRate": 0, "hasStateIncomeTax": false },
+    { "name": "Arizona", "abbr": "AZ", "topRate": 2.5, "hasStateIncomeTax": true },
+    { "name": "Colorado", "abbr": "CO", "topRate": 4.4, "hasStateIncomeTax": true },
+    { "name": "Virginia", "abbr": "VA", "topRate": 5.75, "hasStateIncomeTax": true }
+  ]
+}

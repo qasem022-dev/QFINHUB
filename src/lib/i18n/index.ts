@@ -1,57 +1,81 @@
-export type Locale = "en" | "es" | "hi";
+import type { LanguageInfo } from "./languages";
+import { ALL_LANGUAGES } from "./languages";
 
-export const locales: Locale[] = ["en", "es", "hi"];
+// Re-export the language info
+export type { LanguageInfo };
+export { ALL_LANGUAGES, getLanguageInfo, getNativeName } from "./languages";
+
+export type Locale = string; // Now supports any locale code
+
+export const locales: Locale[] = ALL_LANGUAGES.map((l) => l.code);
 export const defaultLocale: Locale = "en";
 
-export const localeLabels: Record<Locale, string> = {
-  en: "English",
-  es: "Español",
-  hi: "हिन्दी",
-};
+export const localeLabels: Record<string, string> = {};
+for (const lang of ALL_LANGUAGES) {
+  localeLabels[lang.code] = lang.nativeName;
+}
 
-import en from "@/i18n/locales/en.json";
-import es from "@/i18n/locales/es.json";
-import hi from "@/i18n/locales/hi.json";
+// Dynamic import of all locale files
+const translationCache: Record<string, Record<string, unknown> | null> = {};
 
-const translations: Record<Locale, Record<string, unknown>> = {
-  en: en as Record<string, unknown>,
-  es: es as Record<string, unknown>,
-  hi: hi as Record<string, unknown>,
-};
+function loadTranslation(locale: string): Record<string, unknown> | null {
+  if (translationCache[locale] !== undefined) {
+    return translationCache[locale];
+  }
+
+  try {
+    // Dynamic require — all locale files are pre-generated
+    const data = require(`@/i18n/locales/${locale}.json`);
+    translationCache[locale] = data as Record<string, unknown>;
+    return translationCache[locale];
+  } catch {
+    // Fallback to English if locale file doesn't exist
+    if (locale !== "en") {
+      try {
+        const data = require(`@/i18n/locales/en.json`);
+        translationCache[locale] = data as Record<string, unknown>;
+        return translationCache[locale];
+      } catch {
+        translationCache[locale] = null;
+        return null;
+      }
+    }
+    translationCache[locale] = null;
+    return null;
+  }
+}
 
 /**
  * Get a nested translation value by dot-separated path.
  * e.g. getTranslation("en", "nav.calculators") => "Calculators"
  */
-export function getTranslation(locale: Locale, path: string): string {
-  const result = getNestedTranslation(locale, path);
-  if (typeof result === "string") return result;
-  return path;
-}
+export function getTranslation(locale: string, path: string): string {
+  const translations = loadTranslation(locale);
+  if (!translations) return path;
 
-/**
- * Get a nested value from the translations object by dot-separated path.
- * Returns the raw value (could be string, array, object).
- */
-export function getNestedTranslation(
-  locale: Locale,
-  path: string,
-): unknown {
   const keys = path.split(".");
-  let value: unknown = translations[locale];
+  let value: unknown = translations;
 
   for (const key of keys) {
-    if (value === null || value === undefined) return undefined;
-    if (typeof value !== "object") return undefined;
+    if (value === null || value === undefined) return path;
+    if (typeof value !== "object") return path;
     value = (value as Record<string, unknown>)[key];
   }
 
-  return value;
+  if (typeof value === "string") return value;
+  return path;
 }
 
 /**
  * Check if a locale is supported.
  */
-export function isSupportedLocale(locale: string): locale is Locale {
-  return locales.includes(locale as Locale);
+export function isSupportedLocale(locale: string): boolean {
+  return locales.includes(locale);
+}
+
+/**
+ * Get the number of supported languages.
+ */
+export function getLanguageCount(): number {
+  return ALL_LANGUAGES.length;
 }

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
-import { type Locale, defaultLocale } from "@/lib/i18n";
+import { type Locale, defaultLocale, isSupportedLocale } from "@/lib/i18n";
 import { getTranslation } from "@/lib/i18n";
 import { detectClientLocale } from "@/lib/i18n/geo-detect";
 
@@ -32,7 +32,7 @@ function getLocaleCookie(): Locale | null {
   );
   if (!match) return null;
   const value = match[1] as string;
-  if (value === "en" || value === "es" || value === "hi") return value;
+  if (isSupportedLocale(value)) return value;
   return null;
 }
 

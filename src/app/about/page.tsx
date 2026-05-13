@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const milestones = [
   { number: "124+", label: "Financial Calculators", icon: Calculator },
   { number: "8", label: "Categories Covered", icon: BarChart3 },
-  { number: "3", label: "Languages Supported", icon: Globe },
+  { number: "33", label: "Languages Supported", icon: Globe },
   { number: "100%", label: "Free — Always", icon: Shield },
 ];
 
@@ -45,9 +45,8 @@ const values = [
 
 const stats = [
   { value: "124+", label: "Calculators Live" },
-  { value: "37", label: "Fully Interactive" },
-  { value: "87", label: "Coming Soon" },
-  { value: "3", label: "Languages" },
+  { value: "33", label: "Languages" },
+  { value: "1,430+", label: "SEO Pages Indexed" },
   { value: "100%", label: "Free Forever" },
 ];
 
@@ -298,7 +297,7 @@ export default function AboutPage() {
           <h2 className="mb-12 text-center text-3xl font-bold text-white">
             QFINHUB by the Numbers
           </h2>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl font-bold text-accent-400 md:text-4xl">

@@ -318,7 +318,7 @@
     }
   },
   "embed": {
-    "comingSoon": "\u2014 जल्द आ रहा है",
+    "comingSoon": "— जल्द आ रहा है",
     "poweredBy": "QFINHUB द्वारा संचालित"
   },
   "common": {
@@ -335,5 +335,16 @@
     "light": "लाइट",
     "dark": "डार्क",
     "system": "सिस्टम"
+  },
+  "calcCategories": {
+    "all": "All",
+    "basic": "Basic",
+    "investment": "Investment",
+    "loan": "Loan",
+    "mortgage": "Mortgage",
+    "retirement": "Retirement",
+    "tax": "Tax",
+    "business": "Business",
+    "personal": "Personal Finance"
   }
 }

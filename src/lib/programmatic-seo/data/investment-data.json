@@ -1,0 +1,48 @@
+{
+  "investmentAmounts": [
+    { "display": "1k", "value": 1000 },
+    { "display": "5k", "value": 5000 },
+    { "display": "10k", "value": 10000 },
+    { "display": "25k", "value": 25000 },
+    { "display": "50k", "value": 50000 },
+    { "display": "100k", "value": 100000 },
+    { "display": "250k", "value": 250000 },
+    { "display": "500k", "value": 500000 },
+    { "display": "1M", "value": 1000000 }
+  ],
+  "returnRates": [
+    { "display": "4%", "value": 4, "label": "Conservative" },
+    { "display": "6%", "value": 6, "label": "Moderate" },
+    { "display": "7%", "value": 7, "label": "Balanced" },
+    { "display": "8%", "value": 8, "label": "Growth" },
+    { "display": "10%", "value": 10, "label": "Aggressive Growth" },
+    { "display": "12%", "value": 12, "label": "High Growth" }
+  ],
+  "investmentPeriods": [
+    { "display": "3yr", "value": 3 },
+    { "display": "5yr", "value": 5 },
+    { "display": "7yr", "value": 7 },
+    { "display": "10yr", "value": 10 },
+    { "display": "15yr", "value": 15 },
+    { "display": "20yr", "value": 20 },
+    { "display": "25yr", "value": 25 },
+    { "display": "30yr", "value": 30 }
+  ],
+  "monthlyContributions": [
+    { "display": "100", "value": 100 },
+    { "display": "250", "value": 250 },
+    { "display": "500", "value": 500 },
+    { "display": "750", "value": 750 },
+    { "display": "1000", "value": 1000 },
+    { "display": "1500", "value": 1500 },
+    { "display": "2000", "value": 2000 },
+    { "display": "3000", "value": 3000 },
+    { "display": "5000", "value": 5000 }
+  ],
+  "riskProfiles": [
+    { "display": "conservative", "assetMix": "20% stocks, 80% bonds", "expectedReturn": 4 },
+    { "display": "moderate", "assetMix": "60% stocks, 40% bonds", "expectedReturn": 6 },
+    { "display": "aggressive", "assetMix": "85% stocks, 15% bonds", "expectedReturn": 8 },
+    { "display": "very-aggressive", "assetMix": "100% stocks", "expectedReturn": 10 }
+  ]
+}

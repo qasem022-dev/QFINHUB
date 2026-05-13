@@ -8,7 +8,8 @@ import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
-import { defaultLocale, locales } from "@/lib/i18n";
+import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
+import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -55,11 +56,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",
-    languages: {
-      "en": "/en",
-      "es": "/es",
-      "hi": "/hi",
-    },
+    languages: Object.fromEntries(
+      locales.map((locale) => [locale, `/${locale}`])
+    ),
   },
   openGraph: {
     type: "website",
@@ -117,7 +116,7 @@ const jsonLd = {
     "@type": "Organization",
     name: "QFINHUB",
   },
-  availableLanguage: ["English", "Spanish", "Hindi"],
+  availableLanguage: ALL_LANGUAGES.map((l) => l.name),
   featureList: [
     "124 Financial Calculators",
     "AI Custom Calculator",
@@ -157,6 +156,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="QFINHUB" />
         <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
       </head>
       <body className="min-h-screen bg-white font-sans text-gray-900 antialiased dark:bg-surface-dark dark:text-gray-100">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -171,6 +171,22 @@ export default function RootLayout({
         <Analytics />
         {/* Plausible Analytics — production only */}
         {process.env.NODE_ENV === "production" && <PlausibleAnalytics />}
+        {/* Service Worker registration for PWA */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function() {
+                  navigator.serviceWorker.register("/sw.js").then(function(reg) {
+                    console.log("SW registered:", reg.scope);
+                  }).catch(function(err) {
+                    console.log("SW registration failed:", err);
+                  });
+                });
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   );

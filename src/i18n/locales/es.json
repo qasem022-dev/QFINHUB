@@ -318,7 +318,7 @@
     }
   },
   "embed": {
-    "comingSoon": "\u2014 próximamente",
+    "comingSoon": "— próximamente",
     "poweredBy": "Creado por QFINHUB"
   },
   "common": {
@@ -335,5 +335,16 @@
     "light": "Claro",
     "dark": "Oscuro",
     "system": "Sistema"
+  },
+  "calcCategories": {
+    "all": "All",
+    "basic": "Basic",
+    "investment": "Investment",
+    "loan": "Loan",
+    "mortgage": "Mortgage",
+    "retirement": "Retirement",
+    "tax": "Tax",
+    "business": "Business",
+    "personal": "Personal Finance"
   }
 }
