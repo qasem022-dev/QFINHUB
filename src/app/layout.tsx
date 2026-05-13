@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
   },
+  verification: {
+    other: {
+      "p:domain_verify": "4756ee5e97724d0b2403293fe43f64c3",
+    },
+  },
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",
@@ -148,8 +153,6 @@ export default function RootLayout({
         {/* Dual manifest references for browser compatibility */}
         <link rel="manifest" href="/manifest.json" />
         <link rel="manifest" href="/site.webmanifest" />
-        {/* Pinterest site verification */}
-        <meta name="p:domain_verify" content="4756ee5e97724d0b2403293fe43f64c3" />
         {/* iOS PWA / Add to Home Screen support */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
