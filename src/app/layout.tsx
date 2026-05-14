@@ -7,7 +7,6 @@ import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
-import { AdsterraBanner } from "@/components/ui/adsterra-banner";
 import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
 import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
 
@@ -135,13 +134,6 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale} suppressHydrationWarning className={inter.variable}>
       <head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5PXBXWNS')`,
-          }}
-        />
-        {/* End Google Tag Manager */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -169,22 +161,20 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="QFINHUB" />
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
-        {/* Privacy-friendly analytics by Plausible */}
-        <script async defer src="https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js"></script>
       </head>
       <body className="min-h-screen bg-white font-sans text-gray-900 antialiased dark:bg-surface-dark dark:text-gray-100">
-        {/* Google Tag Manager (noscript) */}
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PXBXWNS" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          }}
-        />
-        {/* End Google Tag Manager (noscript) */}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LocaleProvider>
             <AuthProvider>
               {children}
-              <AdsterraBanner />
+              {/* Adsterra Native Banner */}
+              <div className="w-full max-w-3xl mx-auto px-4 py-6 mt-8">
+                <div id="container-93e6358fa4836a576dd463e0a148a834" />
+              </div>
+              <script
+                async
+                src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"
+              />
               <PWAInstallPrompt />
             </AuthProvider>
           </LocaleProvider>
