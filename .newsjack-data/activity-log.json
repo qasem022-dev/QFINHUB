@@ -18,5 +18,159 @@
       "source": "Fed Press",
       "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm]]>"
     }
+  },
+  {
+    "ts": "2026-05-14T01:08:24.178Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:08:24.180Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces termination of enforcement actions with F &amp; M Holding Company, Inc. and Thread Bancorp, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:09:29.485Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:11:11.007Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:11:26.087Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": "2054731277056757825",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:11:31.090Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces termination of enforcement actions with F &amp; M Holding Company, Inc. and Thread Bancorp, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:11:45.971Z",
+    "type": "news-published",
+    "details": {
+      "slug": "what-the-fed-s-termination-of-enforcement-actions-means-for-your-mortgage-afford",
+      "title": "What the Fed’s Termination of Enforcement Actions Means for Your Mortgage Affordability in 2024",
+      "category": "fed-rate",
+      "tweetId": "2054731360485704064",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:16:04.480Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260508a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:16:04.483Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve issues FOMC statement",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:16:37.510Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260508a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:16:50.955Z",
+    "type": "news-published",
+    "details": {
+      "slug": "columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+      "title": "Columbia Bank MHC Acquisition Approved: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": "2054732639660384308",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260508a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:16:55.956Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve issues FOMC statement",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:17:10.644Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-holds-rates-steady-what-the-fomc-statement-means-for-your-mortgage-in-2025",
+      "title": "Fed Holds Rates Steady: What the FOMC Statement Means for Your Mortgage in 2025",
+      "category": "fed-rate",
+      "tweetId": "2054732720702656787",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:30:46.411Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T01:30:46.413Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues enforcement action with former employee of First Financial Bank",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260422a.htm]]>"
+    }
   }
 ]

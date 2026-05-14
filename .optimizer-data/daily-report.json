@@ -1,0 +1,109 @@
+{
+  "date": "2026-05-14",
+  "timestamp": "2026-05-14T01:05:09.624Z",
+  "programmaticSEO": {
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "variantTemplates": 322,
+      "generatorLines": 377
+    }
+  },
+  "keywordAnalysis": {
+    "topKeywords": [
+      {
+        "keyword": "monthly",
+        "count": 256
+      },
+      {
+        "keyword": "tax",
+        "count": 222
+      },
+      {
+        "keyword": "loan",
+        "count": 221
+      },
+      {
+        "keyword": "rate",
+        "count": 191
+      },
+      {
+        "keyword": "mortgage",
+        "count": 170
+      },
+      {
+        "keyword": "retirement",
+        "count": 161
+      },
+      {
+        "keyword": "compound",
+        "count": 131
+      },
+      {
+        "keyword": "invest",
+        "count": 130
+      },
+      {
+        "keyword": "income",
+        "count": 127
+      },
+      {
+        "keyword": "payment",
+        "count": 94
+      }
+    ],
+    "gaps": [
+      "debt",
+      "credit",
+      "budget",
+      "affordability",
+      "refinance"
+    ],
+    "suggestions": []
+  },
+  "engineHealth": {
+    "engines": {
+      "haro": {
+        "status": "no-data"
+      },
+      "x": {
+        "status": "ok",
+        "actionsToday": 0
+      },
+      "newsjack": {
+        "status": "ok",
+        "totalPublished": 0
+      },
+      "widgetOutreach": {
+        "status": "pending"
+      },
+      "pdf": {
+        "status": "ok",
+        "totalGenerated": 1
+      },
+      "pinterest": {
+        "status": "not-setup"
+      }
+    },
+    "issues": [
+      "HARO: No activity data yet"
+    ]
+  },
+  "suggestions": [
+    {
+      "priority": "medium",
+      "action": "Add more variant templates for: debt, credit, budget, affordability, refinance",
+      "details": "These keywords have low coverage (under 5 variants each)"
+    },
+    {
+      "priority": "high",
+      "action": "Engine issues detected",
+      "details": "HARO: No activity data yet"
+    },
+    {
+      "priority": "low",
+      "action": "Widget Outreach hasn't run yet",
+      "details": "First run will happen at next cron interval"
+    }
+  ]
+}

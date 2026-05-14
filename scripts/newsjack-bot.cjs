@@ -56,7 +56,7 @@ const FEEDS = [
   { name: "Realtor.com", url: "https://www.realtor.com/news/feed/", category: "real-estate" },
   { name: "IRS Newsroom", url: "https://www.irs.gov/newsroom/rss.xml", category: "tax" },
   { name: "NAR Research", url: "https://www.nar.realtor/research-and-statistics/rss.xml", category: "housing" },
-  { name: "Freddie Mac", url: "https://freddiemac.gcs-web.com/news-releases/rss", category: "housing" },
+  // { name: "Freddie Mac", url: "https://freddiemac.gcs-web.com/news-releases/rss", category: "housing" }, // Always ETIMEDOUT (dead feed)
   { name: "Reuters Finance", url: "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=personal-finance", category: "personal-finance" },
   { name: "Student Aid", url: "https://studentaid.gov/data-center/rss.xml", category: "student-loan" },
   { name: "BEA Data", url: "https://www.bea.gov/rss/news.xml", category: "inflation" },
@@ -181,6 +181,8 @@ Output EXACTLY this JSON:
 Return ONLY the JSON.`;
 
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout
     const resp = await fetch("https://api.deepseek.com/v1/chat/completions", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Authorization": `Bearer ${DEEPSEEK_KEY}` },
@@ -190,7 +192,9 @@ Return ONLY the JSON.`;
         temperature: 0.7,
         max_tokens: 2500,
       }),
+      signal: controller.signal,
     });
+    clearTimeout(timeoutId);
 
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
@@ -332,7 +336,8 @@ async function main() {
       allItems = allItems.concat(items);
       console.log(`${items.length} items`);
     } catch(e) {
-      console.log(`❌ ${e.message.substring(0, 30)}`);
+      const msg = e.message || e.code || "unknown";
+      console.log(`❌ ${msg.substring(0, 30)}`);
     }
     // Small delay between feeds
     await new Promise(r => setTimeout(r, 500 + Math.random() * 1500));

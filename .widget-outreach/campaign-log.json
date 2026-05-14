@@ -1,0 +1,12 @@
+[
+  {
+    "ts": "2026-05-14T01:27:06.276Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 10,
+      "skipped": 0,
+      "failed": 0,
+      "total": 67
+    }
+  }
+]
