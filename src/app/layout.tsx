@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { PlausibleAnalytics } from "@/components/plausible-analytics";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
@@ -163,6 +162,13 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="QFINHUB" />
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+        {/* Privacy-friendly analytics by Plausible — in <head> for detection */}
+        <script async src="https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i{}};plausible.init()`,
+          }}
+        />
       </head>
       <body className="min-h-screen bg-white font-sans text-gray-900 antialiased dark:bg-surface-dark dark:text-gray-100">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -177,8 +183,6 @@ export default function RootLayout({
           <Toaster />
         </ThemeProvider>
         <Analytics />
-        {/* Plausible Analytics — production only */}
-        {process.env.NODE_ENV === "production" && <PlausibleAnalytics />}
         {/* Service Worker registration for PWA */}
         <script
           dangerouslySetInnerHTML={{
