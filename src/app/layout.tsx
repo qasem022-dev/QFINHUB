@@ -162,13 +162,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="QFINHUB" />
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
-        {/* Privacy-friendly analytics by Plausible — in <head> for detection */}
-        <script async src="https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i{}};plausible.init()`,
-          }}
-        />
+        {/* Privacy-friendly analytics by Plausible */}
+        <script async defer src="https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js"></script>
       </head>
       <body className="min-h-screen bg-white font-sans text-gray-900 antialiased dark:bg-surface-dark dark:text-gray-100">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
