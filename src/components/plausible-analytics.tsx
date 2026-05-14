@@ -1,27 +1,29 @@
 "use client";
 
+import Script from "next/script";
 import * as React from "react";
 
 /**
- * Injects the Plausible Analytics script exactly as provided.
- * Uses DOM API to ensure Plausible's verification tool detects it.
+ * Plausible Analytics — Privacy-friendly analytics
+ * Exact snippet format from Plausible dashboard.
+ * Loads after page becomes interactive to avoid blocking rendering.
  */
 export function PlausibleAnalytics() {
-  const added = React.useRef(false);
-
-  React.useEffect(() => {
-    if (added.current) return;
-    // Avoid duplicate if already present
-    if (document.querySelector('script[src*="pa-d1k36"]')) return;
-
-    const script = document.createElement("script");
-    script.src = "https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js";
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
-
-    added.current = true;
-  }, []);
-
-  return null;
+  return (
+    <>
+      {/* Privacy-friendly analytics by Plausible */}
+      <Script
+        async
+        src="https://plausible.io/js/pa-d1k36NifZ_XtlgAoh2nEW.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="plausible-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i{}};plausible.init()`,
+        }}
+      />
+    </>
+  );
 }

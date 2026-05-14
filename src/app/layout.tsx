@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
+import { AdsterraBanner } from "@/components/ui/adsterra-banner";
 import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
 import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
 
@@ -168,6 +169,8 @@ export default function RootLayout({
           <LocaleProvider>
             <AuthProvider>
               {children}
+              {/* Adsterra Native Banner — production only, lazy loaded */}
+              {process.env.NODE_ENV === "production" && <AdsterraBanner />}
               <PWAInstallPrompt />
             </AuthProvider>
           </LocaleProvider>

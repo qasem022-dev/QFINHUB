@@ -382,5 +382,47 @@
       "tweetId": "2054940666971738126",
       "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260403a.htm]]>"
     }
+  },
+  {
+    "ts": "2026-05-14T18:03:38.978Z",
+    "type": "news-match",
+    "details": {
+      "title": "Stephen I. Miran submits his resignation as a member of the Federal Reserve Board, effective when or shortly before his successor on the Board is sworn in",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260514b.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T18:03:52.235Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-board-resignation-shakes-markets-how-to-protect-your-mortgage-affordability-",
+      "title": "Fed Board Resignation Shakes Markets: How to Protect Your Mortgage Affordability Now",
+      "category": "fed-rate",
+      "tweetId": "2054986065401061773",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260514b.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T18:03:57.237Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces it has made the joint findings with the Office of the Comptroller of the Currency required for the OCC to approve a request by Morgan Stanley Bank, N.A., for an exemption under section 23A of the Federal Reserve Act",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260326a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T18:04:13.262Z",
+    "type": "news-published",
+    "details": {
+      "slug": "morgan-stanley-bank-exemption-your-mortgage-what-the-fed-s-23a-ruling-means-for-",
+      "title": "Morgan Stanley Bank Exemption & Your Mortgage: What the Fed’s 23A Ruling Means for Home Loan Rates",
+      "category": "fed-rate",
+      "tweetId": "2054986153544331660",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260326a.htm]]>"
+    }
   }
 ]
