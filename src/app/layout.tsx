@@ -184,8 +184,7 @@ export default function RootLayout({
           <LocaleProvider>
             <AuthProvider>
               {children}
-              {/* Adsterra Native Banner — production only, lazy loaded */}
-              {process.env.NODE_ENV === "production" && <AdsterraBanner />}
+              <AdsterraBanner />
               <PWAInstallPrompt />
             </AuthProvider>
           </LocaleProvider>
