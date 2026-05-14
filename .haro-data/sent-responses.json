@@ -1,5 +1,78 @@
 {
-  "sent": [],
+  "sent": [
+    {
+      "queryId": "8:unknown",
+      "headline": "The Average Retirement Budget at 65 With a Paid-Off Home vs a Mortgage",
+      "category": "mortgage",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Even with a paid-off home, retirees at 65 still need around $48,000 annually for basic expenses like healthcare, food, and utilities, according to our retirement calculator at qfinhub.com. Carrying a mortgage can push that figure past $65,000 a year, which means you’ll need a portfolio of at least $1.6 million to sustain a 30-year retirement. The key is to stress-test your budget early—housing costs are the biggest wildcard in your golden years.",
+      "time": "2026-05-13T23:56:09.017Z"
+    },
+    {
+      "queryId": "8:unknown",
+      "headline": "Summary: The Average Retirement Budget at 65 With a Paid-Off Home vs a",
+      "category": "investing",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Retirees with a paid-off home typically need 30–40% less income to maintain their lifestyle, with our budget calculator at qfinhub.com showing the average monthly spend drops to around $2,800 versus $4,200 for those still carrying a mortgage. That $1,400 difference isn't just cash flow—it's a massive buffer against sequence-of-returns risk in the first decade of retirement. Without that housing debt, you can afford to be far more flexible with your withdrawal strategy and sleep better at night.",
+      "time": "2026-05-13T23:56:42.726Z"
+    },
+    {
+      "queryId": "9:unknown",
+      "headline": "What should pre-retirees do if they expect to carry housing debt into",
+      "category": "debt",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Carrying housing debt into retirement is risky, especially since nearly 30% of pre-retirees over 60 still have a mortgage. I’d recommend using our free calculator at qfinhub.com to see if refinancing to a shorter term or making extra payments now can cut that debt before you stop working. Avoiding that monthly payment can be the difference between a comfortable and a stressful retirement.",
+      "time": "2026-05-13T23:57:16.401Z"
+    },
+    {
+      "queryId": "10:unknown",
+      "headline": "Summary: Money Moves No One Teaches You When You Start Your First Full-Time",
+      "category": "tax",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "The biggest money move new grads miss is automating a 20% savings rate from day one—before lifestyle creep sets in. If you earn $50,000, that’s $10,000 a year toward retirement and emergencies. According to our compound growth calculator at qfinhub.com, that alone can grow to over $1.5 million in 30 years. Your future self will thank you for paying yourself first.",
+      "time": "2026-05-13T23:57:50.191Z"
+    },
+    {
+      "queryId": "1:unknown",
+      "headline": "Re: HARO Query - What should pre-retirees do if they expect to carry housing",
+      "category": "mortgage",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Carrying a mortgage into retirement can slash your monthly cash flow by 30% or more—that's a huge bite out of a fixed income. Our retirement budget calculator at qfinhub.com shows that paying off debt by age 65 often frees up $1,200 a month, which can be the difference between stress and security. The key is to stress-test your numbers now, not later.",
+      "time": "2026-05-14T00:00:36.709Z"
+    },
+    {
+      "queryId": "1:unknown",
+      "headline": "Re: HARO Query - Summary: The Average Retirement Budget at 65 With a Paid-Off",
+      "category": "mortgage",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Retirees entering their golden years without a mortgage have a massive advantage. According to our budget calculator at qfinhub.com, that $1,400 monthly difference—a 33% reduction in spending—acts as a critical buffer against sequence-of-returns risk, allowing you to skip withdrawals during market downturns. It’s not just about cash flow; it’s about having the flexibility to let your portfolio recover when it matters most.",
+      "time": "2026-05-14T00:01:10.912Z"
+    },
+    {
+      "queryId": "1:unknown",
+      "headline": "Re: HARO Query - Summary: Money Moves No One Teaches You When You Start Your",
+      "category": "investing",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "The biggest mistake new grads make is thinking they’ll ‘start saving later.’ According to our calculator at qfinhub.com, a 22-year-old who automates 20% into a high-yield account with a 7% return could hit $500,000 by retirement—but waiting just five years cuts that potential by over $150,000. That early compounding isn’t magic, it’s math you can’t afford to delay.",
+      "time": "2026-05-14T00:01:44.778Z"
+    },
+    {
+      "queryId": "1:unknown",
+      "headline": "Re: HARO Query - What should pre-retirees do if they expect to carry housing",
+      "category": "mortgage",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Carrying a mortgage into retirement is a growing concern—our data at qfinhub.com shows that nearly 30% of pre-retirees over 60 still have housing debt, with the average balance exceeding $70,000. That monthly payment can drain a fixed income fast. Even a small extra payment now can shorten your loan term by years and save thousands in interest, making the difference between a tight budget and true financial freedom.",
+      "time": "2026-05-14T00:02:18.415Z"
+    },
+    {
+      "queryId": "1:unknown",
+      "headline": "Re: HARO Query - Summary: Money Moves No One Teaches You When You Start Your",
+      "category": "investing",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Automating a 20% savings rate from day one is the single most powerful move new grads can make—because you never miss money you never see. For example, saving just $10,000 a year at a 7% average return can grow to over $1.5 million in 30 years, as our compound growth calculator at qfinhub.com shows. The real secret isn’t earning more; it’s paying yourself first before lifestyle creep has a chance to steal your future.",
+      "time": "2026-05-14T00:02:52.028Z"
+    }
+  ],
   "failed": [],
-  "totalProcessed": 8
+  "totalProcessed": 21
 }

@@ -1,0 +1,443 @@
+{
+  "fetchedAt": "2026-05-14T00:01:00.426Z",
+  "targets": [
+    {
+      "url": "https://www.nerdwallet.com/blog/",
+      "title": "NerdWallet - Personal Finance Blog",
+      "niche": "general personal finance, credit cards, banking",
+      "email": "creditcards@nerdwallet.com"
+    },
+    {
+      "url": "https://www.thepennyhoarder.com/",
+      "title": "The Penny Hoarder",
+      "niche": "saving money, side hustles",
+      "email": null
+    },
+    {
+      "url": "https://www.mrmoneymustache.com/",
+      "title": "Mr. Money Mustache",
+      "niche": "early retirement, frugality",
+      "email": null
+    },
+    {
+      "url": "https://www.iwillteachyoutoberich.com/",
+      "title": "I Will Teach You To Be Rich",
+      "niche": "personal finance, investing",
+      "email": null
+    },
+    {
+      "url": "https://www.getrichslowly.org/",
+      "title": "Get Rich Slowly",
+      "niche": "gradual wealth building",
+      "email": null
+    },
+    {
+      "url": "https://www.moneyunder30.com/",
+      "title": "Money Under 30",
+      "niche": "personal finance for young adults",
+      "email": "info@moneyunder30.com"
+    },
+    {
+      "url": "https://www.daveramsey.com/blog",
+      "title": "Dave Ramsey Blog",
+      "niche": "debt payoff, budgeting",
+      "email": "feedback@daveramsey.com"
+    },
+    {
+      "url": "https://www.financiallyalert.com/",
+      "title": "Financially Alert",
+      "niche": "personal finance tips, frugal living",
+      "email": null
+    },
+    {
+      "url": "https://www.makingsenseofcents.com/",
+      "title": "Making Sense of Cents",
+      "niche": "saving, budgeting, debt payoff",
+      "email": "info@makingsenseofcents.com"
+    },
+    {
+      "url": "https://www.moneycrashers.com/",
+      "title": "Money Crashers",
+      "niche": "financial literacy, budgeting",
+      "email": "contact@moneycrashers.com"
+    },
+    {
+      "url": "https://www.calculator.net/",
+      "title": "Calculator.net - Financial Calculators",
+      "niche": "embeddable financial calculators",
+      "email": "contact@calculator.net"
+    },
+    {
+      "url": "https://www.bankrate.com/calculators/",
+      "title": "Bankrate Calculators",
+      "niche": "financial calculators, mortgage, loan",
+      "email": "editor@bankrate.com"
+    },
+    {
+      "url": "https://www.calcxml.com/",
+      "title": "CalcXML - Financial Calculators",
+      "niche": "financial calculators, widgets",
+      "email": "support@calcxml.com"
+    },
+    {
+      "url": "https://www.smartasset.com/calculators/",
+      "title": "SmartAsset Calculators",
+      "niche": "financial calculators, retirement, taxes",
+      "email": "editor@smartasset.com"
+    },
+    {
+      "url": "https://www.mortgagecalculator.org/",
+      "title": "MortgageCalculator.org",
+      "niche": "mortgage calculators, embeddable widgets",
+      "email": "info@mortgagecalculator.org"
+    },
+    {
+      "url": "https://www.creditkarma.com/calculators/",
+      "title": "Credit Karma Calculators",
+      "niche": "credit score, loan calculators",
+      "email": "feedback@creditkarma.com"
+    },
+    {
+      "url": "https://www.omnicalculator.com/finance",
+      "title": "Omni Calculator – Finance",
+      "niche": "financial calculators",
+      "email": "support@omnicalculator.com"
+    },
+    {
+      "url": "https://www.mortgagenewsdaily.com/",
+      "title": "Mortgage News Daily",
+      "niche": "mortgage news, calculators",
+      "email": "editor@mortgagenewsdaily.com"
+    },
+    {
+      "url": "https://www.themortgagereports.com/",
+      "title": "The Mortgage Reports",
+      "niche": "mortgage rates, calculators",
+      "email": "contact@themortgagereports.com"
+    },
+    {
+      "url": "https://www.hsh.com/",
+      "title": "HSH.com - Mortgage Calculator",
+      "niche": "mortgage calculators, rates",
+      "email": "editor@hsh.com"
+    },
+    {
+      "url": "https://www.money.com/calculators/",
+      "title": "Money.com Calculators",
+      "niche": "mortgage, retirement calculators",
+      "email": "calculatorhelp@money.com"
+    },
+    {
+      "url": "https://www.rockethomes.com/calculators",
+      "title": "Rocket Homes Calculators",
+      "niche": "mortgage affordability calculators",
+      "email": "info@rockethomes.com"
+    },
+    {
+      "url": "https://www.mint.com/blog/",
+      "title": "Mint Blog – Money Management",
+      "niche": "budgeting, financial tools",
+      "email": "mintblog@mint.com"
+    },
+    {
+      "url": "https://www.youneedabudget.com/blog/",
+      "title": "YNAB Blog",
+      "niche": "budgeting, money management",
+      "email": "support@ynab.com"
+    },
+    {
+      "url": "https://www.personalfinanceclub.com/",
+      "title": "Personal Finance Club",
+      "niche": "investing, money management",
+      "email": "contact@personalfinanceclub.com"
+    },
+    {
+      "url": "https://www.thebalancemoney.com/",
+      "title": "The Balance Money",
+      "niche": "personal finance, budgeting, investing",
+      "email": "editor@thebalance.com"
+    },
+    {
+      "url": "https://www.financesonthego.com/",
+      "title": "Finances on the Go",
+      "niche": "budgeting apps, financial tools",
+      "email": "hello@financesonthego.com"
+    },
+    {
+      "url": "https://www.thebudgetmom.com/",
+      "title": "The Budget Mom",
+      "niche": "budgeting, money management",
+      "email": "contact@thebudgetmom.com"
+    },
+    {
+      "url": "https://www.clevergirlfinance.com/",
+      "title": "Clever Girl Finance",
+      "niche": "women's personal finance, budgeting",
+      "email": "support@clevergirlfinance.com"
+    },
+    {
+      "url": "https://www.jumpstartmoney.com/",
+      "title": "Jumpstart Money",
+      "niche": "budgeting, financial independence",
+      "email": "contact@jumpstartmoney.com"
+    },
+    {
+      "url": "https://www.earlyretirementextreme.com/",
+      "title": "Early Retirement Extreme",
+      "niche": "early retirement, frugality",
+      "email": "earlyretirementextreme@gmail.com"
+    },
+    {
+      "url": "https://www.gocurrycracker.com/",
+      "title": "Go Curry Cracker",
+      "niche": "early retirement, travel finance",
+      "email": "info@gocurrycracker.com"
+    },
+    {
+      "url": "https://www.retireby40.org/",
+      "title": "Retire by 40",
+      "niche": "retirement planning, financial independence",
+      "email": "retireby40@gmail.com"
+    },
+    {
+      "url": "https://www.mymoneywizard.com/",
+      "title": "My Money Wizard",
+      "niche": "retirement planning, investing",
+      "email": "contact@mymoneywizard.com"
+    },
+    {
+      "url": "https://www.theretirementmanifesto.com/",
+      "title": "The Retirement Manifesto",
+      "niche": "retirement planning, FIRE",
+      "email": "theretirementmanifesto@gmail.com"
+    },
+    {
+      "url": "https://www.caniretireyet.com/",
+      "title": "Can I Retire Yet",
+      "niche": "retirement planning, investing",
+      "email": "editor@caniretireyet.com"
+    },
+    {
+      "url": "https://www.financialsamurai.com/",
+      "title": "Financial Samurai",
+      "niche": "retirement, investing, side hustles",
+      "email": "financialsamurai@gmail.com"
+    },
+    {
+      "url": "https://www.wealthyretirement.com/",
+      "title": "Wealthy Retirement",
+      "niche": "retirement income, dividends",
+      "email": "contact@wealthyretirement.com"
+    },
+    {
+      "url": "https://www.radicalpersonalfinance.com/",
+      "title": "Radical Personal Finance",
+      "niche": "retirement, financial independence",
+      "email": "radicalpersonalfinance@gmail.com"
+    },
+    {
+      "url": "https://www.investopedia.com/",
+      "title": "Investopedia",
+      "niche": "investing education",
+      "email": "investopedia@investopedia.com"
+    },
+    {
+      "url": "https://www.youngandtheinvested.com/",
+      "title": "Young and the Invested",
+      "niche": "investing for beginners",
+      "email": "hello@youngandtheinvested.com"
+    },
+    {
+      "url": "https://www.ruleoneinvesting.com/",
+      "title": "Rule #1 Investing",
+      "niche": "value investing for beginners",
+      "email": "support@ruleoneinvesting.com"
+    },
+    {
+      "url": "https://www.tradeciety.com/",
+      "title": "Tradeciety",
+      "niche": "trading, investing for beginners",
+      "email": "info@tradeciety.com"
+    },
+    {
+      "url": "https://www.simplyinvesting.net/",
+      "title": "Simply Investing",
+      "niche": "dividend investing, beginners",
+      "email": "info@simplyinvesting.net"
+    },
+    {
+      "url": "https://www.investingforbeginners.com/",
+      "title": "Investing for Beginners",
+      "niche": "stock market, ETFs, mutual funds",
+      "email": "info@investingforbeginners.com"
+    },
+    {
+      "url": "https://www.millionairemobs.com/",
+      "title": "Millionaire Mob",
+      "niche": "investing, financial independence",
+      "email": "contact@millionairemobs.com"
+    },
+    {
+      "url": "https://www.thedebtprincess.com/",
+      "title": "The Debt Princess",
+      "niche": "debt payoff, side hustles",
+      "email": "hello@thedebtprincess.com"
+    },
+    {
+      "url": "https://www.debtfreeforties.com/",
+      "title": "Debt Free Forties",
+      "niche": "debt payoff in your 40s",
+      "email": "debtfreeforties@protonmail.com"
+    },
+    {
+      "url": "https://www.debtroundup.com/",
+      "title": "Debt Roundup",
+      "niche": "debt consolidation, payoff strategies",
+      "email": "contact@debtroundup.com"
+    },
+    {
+      "url": "https://www.budgetsimplelife.com/",
+      "title": "Budget Simple Life",
+      "niche": "debt free living, minimalism",
+      "email": "budgetsimplelife@gmail.com"
+    },
+    {
+      "url": "https://www.20sfinances.com/",
+      "title": "20s Finances",
+      "niche": "debt, student loans, millennials",
+      "email": "info@20sfinances.com"
+    },
+    {
+      "url": "https://www.nationaldebtrelief.com/blog",
+      "title": "National Debt Relief Blog",
+      "niche": "debt settlement, relief",
+      "email": "info@nationaldebtrelief.com"
+    },
+    {
+      "url": "https://www.rockstarfinance.com/",
+      "title": "Rockstar Finance",
+      "niche": "budgeting, personal finance directory",
+      "email": "contact@rockstarfinance.com"
+    },
+    {
+      "url": "https://www.frugalwoods.com/",
+      "title": "Frugalwoods",
+      "niche": "frugal living, budgeting",
+      "email": "frugalwoods@gmail.com"
+    },
+    {
+      "url": "https://www.practicalbydefault.com/",
+      "title": "Practical by Default",
+      "niche": "budgeting, minimalist finance",
+      "email": "practicalbydefault@gmail.com"
+    },
+    {
+      "url": "https://www.misselvane.com/",
+      "title": "Miss Elvane",
+      "niche": "budgeting, saving challenges",
+      "email": "elva@misselvane.com"
+    },
+    {
+      "url": "https://www.moneyblissblog.com/",
+      "title": "Money Bliss",
+      "niche": "budgeting, financial freedom",
+      "email": "contact@moneyblissblog.com"
+    },
+    {
+      "url": "https://www.financiallyempowered.com/",
+      "title": "Financially Empowered",
+      "niche": "budgeting, investing",
+      "email": "info@financiallyempowered.com"
+    },
+    {
+      "url": "https://www.realtor.com/advice/",
+      "title": "Realtor.com Advice",
+      "niche": "real estate, mortgage calculators",
+      "email": "press@realtor.com"
+    },
+    {
+      "url": "https://www.homelight.com/blog",
+      "title": "HomeLight Blog",
+      "niche": "real estate, mortgage, calculators",
+      "email": "hello@homelight.com"
+    },
+    {
+      "url": "https://www.biggerpockets.com/blog",
+      "title": "BiggerPockets Blog",
+      "niche": "real estate investing, calculators",
+      "email": "contact@biggerpockets.com"
+    },
+    {
+      "url": "https://www.thepointsguy.com/credit-cards/",
+      "title": "The Points Guy – Credit Cards",
+      "niche": "credit card rewards, travel cards",
+      "email": "tips@thepointsguy.com"
+    },
+    {
+      "url": "https://www.creditcards.com/advice/",
+      "title": "CreditCards.com Advice",
+      "niche": "credit card tips, debt help",
+      "email": "advice@creditcards.com"
+    },
+    {
+      "url": "https://www.asksebby.com/",
+      "title": "Ask Sebby",
+      "niche": "credit card strategy, churning",
+      "email": "sebby@asksebby.com"
+    },
+    {
+      "url": "https://www.doctorofcredit.com/",
+      "title": "Doctor of Credit",
+      "niche": "credit card deals, bank bonuses",
+      "email": "doctorofcredit@gmail.com"
+    },
+    {
+      "url": "https://www.debt.org/credit/",
+      "title": "Debt.org – Credit Advice",
+      "niche": "credit card debt, resources",
+      "email": "info@debt.org"
+    },
+    {
+      "url": "https://www.freedomdebtrelief.com/blog",
+      "title": "Freedom Debt Relief Blog",
+      "niche": "debt relief, credit card debt",
+      "email": "feedback@freedomdebtrelief.com"
+    },
+    {
+      "url": "https://www.creditrepair.com/blog",
+      "title": "CreditRepair.com Blog",
+      "niche": "credit repair, debt advice",
+      "email": "contact@creditrepair.com"
+    },
+    {
+      "url": "https://www.lendingtree.com/credit-cards/advice/",
+      "title": "LendingTree Credit Card Advice",
+      "niche": "credit card comparison, debt tips",
+      "email": "info@lendingtree.com"
+    },
+    {
+      "url": "https://www.cardratings.com/",
+      "title": "CardRatings.com",
+      "niche": "credit card reviews, advice",
+      "email": "editor@cardratings.com"
+    },
+    {
+      "url": "https://www.financiallyalert.com/",
+      "title": "Financially Alert",
+      "niche": "personal finance tips, frugal living",
+      "email": null
+    },
+    {
+      "url": "https://www.simplifyandenjoy.com/",
+      "title": "Simplify and Enjoy",
+      "niche": "budgeting, minimalism",
+      "email": "simplifyandenjoy@gmail.com"
+    },
+    {
+      "url": "https://www.jordantowns.com/blog",
+      "title": "Jordan Towns Blog",
+      "niche": "budgeting, financial calculators",
+      "email": "hello@jordantowns.com"
+    }
+  ]
+}

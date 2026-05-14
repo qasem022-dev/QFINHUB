@@ -1,0 +1,22 @@
+[
+  {
+    "ts": "2026-05-14T00:03:40.046Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T00:03:40.046Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces termination of enforcement actions with F &amp; M Holding Company, Inc. and Thread Bancorp, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm]]>"
+    }
+  }
+]
