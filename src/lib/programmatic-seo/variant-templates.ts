@@ -5,13 +5,13 @@ import type { VariantTemplate } from "./types";
  * Each template defines parameter combinations for a specific calculator,
  * generating unique SEO-optimized content variant pages.
  *
- * Total: 6 categories × 50+ templates each = 300+ base templates
- * With parameter expansions, generates 1000+ unique pages.
+ * Total: 11 categories × 70+ templates each = 800+ base templates
+ * With parameter expansions, generates 1800+ unique pages.
  */
 
 export const variantTemplates: VariantTemplate[] = [
   // ═══════════════════════════════════════════════════════════════
-  // MORTGAGE CALCULATOR — 55 templates
+  // MORTGAGE CALCULATOR — 55 existing + 60 new = 115 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "mortgage-calculator",
@@ -75,11 +75,65 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "mortgage-1M-30dp-30yr-5-5pct", params: { homePrice: 1000000, downPct: 30, rate: 5.5, term: 30, taxes: 15000, insurance: 4000 }, title: "$1M Mortgage with 30% Down at 5.5%", description: "Calculate a $1M jumbo mortgage with 30% down at 5.5%" },
       { slug: "mortgage-150k-3dp-30yr-7-5pct", params: { homePrice: 150000, downPct: 3, rate: 7.5, term: 30, taxes: 2200, insurance: 1000 }, title: "$150,000 Mortgage with 3% Down at 7.5%", description: "Calculate a $150,000 FHA mortgage with 3% down at 7.5%" },
       { slug: "mortgage-300k-5dp-30yr-8pct", params: { homePrice: 300000, downPct: 5, rate: 8, term: 30, taxes: 4500, insurance: 1500 }, title: "$300,000 Mortgage with 5% Down at 8%", description: "Calculate a $300,000 mortgage with 5% down at 8% interest rate" },
+      // NEW: 8%-9% rates
+      { slug: "mortgage-100k-30yr-8pct", params: { homePrice: 100000, downPct: 20, rate: 8, term: 30, taxes: 1500, insurance: 800 }, title: "$100,000 Mortgage at 8% for 30 Years", description: "Calculate monthly payment for a $100,000 mortgage at 8% interest over a 30-year term" },
+      { slug: "mortgage-100k-30yr-9pct", params: { homePrice: 100000, downPct: 20, rate: 9, term: 30, taxes: 1500, insurance: 800 }, title: "$100,000 Mortgage at 9% for 30 Years", description: "Calculate the monthly payment for a $100,000 mortgage with a 9% high interest rate" },
+      { slug: "mortgage-200k-30yr-8pct", params: { homePrice: 200000, downPct: 20, rate: 8, term: 30, taxes: 3000, insurance: 1200 }, title: "$200,000 Mortgage at 8% for 30 Years", description: "Calculate monthly payments on a $200,000 mortgage at 8% interest over 30 years" },
+      { slug: "mortgage-200k-30yr-8-5pct", params: { homePrice: 200000, downPct: 20, rate: 8.5, term: 30, taxes: 3000, insurance: 1200 }, title: "$200,000 Mortgage at 8.5% for 30 Years", description: "See the monthly payment for a $200,000 mortgage at 8.5% including taxes and insurance" },
+      { slug: "mortgage-300k-30yr-8pct", params: { homePrice: 300000, downPct: 20, rate: 8, term: 30, taxes: 4500, insurance: 1500 }, title: "$300,000 Mortgage at 8% for 30 Years", description: "Calculate what a $300,000 mortgage costs per month at 8% interest rate" },
+      { slug: "mortgage-350k-30yr-8pct", params: { homePrice: 350000, downPct: 20, rate: 8, term: 30, taxes: 5000, insurance: 1600 }, title: "$350,000 Mortgage at 8% for 30 Years", description: "Monthly payment estimate for a $350,000 mortgage at 8% including property taxes" },
+      { slug: "mortgage-400k-30yr-8pct", params: { homePrice: 400000, downPct: 20, rate: 8, term: 30, taxes: 6000, insurance: 1800 }, title: "$400,000 Mortgage at 8% for 30 Years", description: "Calculate the total monthly cost of a $400,000 mortgage with an 8% interest rate" },
+      { slug: "mortgage-500k-30yr-8pct", params: { homePrice: 500000, downPct: 20, rate: 8, term: 30, taxes: 7500, insurance: 2200 }, title: "$500,000 Mortgage at 8% for 30 Years", description: "Monthly payment breakdown for a $500,000 mortgage at 8% interest over 30 years" },
+      { slug: "mortgage-250k-30yr-8pct", params: { homePrice: 250000, downPct: 20, rate: 8, term: 30, taxes: 4000, insurance: 1300 }, title: "$250,000 Mortgage at 8% for 30 Years", description: "Calculate the monthly payment for a $250,000 mortgage at 8% interest rate" },
+      { slug: "mortgage-150k-30yr-8pct", params: { homePrice: 150000, downPct: 20, rate: 8, term: 30, taxes: 2200, insurance: 1000 }, title: "$150,000 Mortgage at 8% for 30 Years", description: "Find out the monthly cost of a $150,000 mortgage at 8% interest" },
+      // NEW: 10-year terms
+      { slug: "mortgage-100k-10yr-5pct", params: { homePrice: 100000, downPct: 20, rate: 5, term: 10, taxes: 1500, insurance: 800 }, title: "$100,000 Mortgage at 5% for 10 Years", description: "Calculate a $100,000 short-term mortgage at 5% over just 10 years" },
+      { slug: "mortgage-150k-10yr-5-5pct", params: { homePrice: 150000, downPct: 20, rate: 5.5, term: 10, taxes: 2200, insurance: 1000 }, title: "$150,000 Mortgage at 5.5% for 10 Years", description: "See the payment on a $150,000 accelerated 10-year mortgage at 5.5%" },
+      { slug: "mortgage-200k-10yr-6pct", params: { homePrice: 200000, downPct: 20, rate: 6, term: 10, taxes: 3000, insurance: 1200 }, title: "$200,000 Mortgage at 6% for 10 Years", description: "Calculate the higher monthly payment for a $200,000 10-year mortgage" },
+      { slug: "mortgage-250k-10yr-6-5pct", params: { homePrice: 250000, downPct: 20, rate: 6.5, term: 10, taxes: 4000, insurance: 1300 }, title: "$250,000 Mortgage at 6.5% for 10 Years", description: "Short-term mortgage payment on $250,000 at 6.5% over only 10 years" },
+      { slug: "mortgage-300k-10yr-5pct", params: { homePrice: 300000, downPct: 20, rate: 5, term: 10, taxes: 4500, insurance: 1500 }, title: "$300,000 Mortgage at 5% for 10 Years", description: "Accelerated payoff: $300,000 at 5% over a 10-year mortgage term" },
+      // NEW: 40-year terms
+      { slug: "mortgage-200k-40yr-6-5pct", params: { homePrice: 200000, downPct: 20, rate: 6.5, term: 40, taxes: 3000, insurance: 1200 }, title: "$200,000 Mortgage at 6.5% for 40 Years", description: "Calculate the lower monthly payment for a $200,000 extended 40-year mortgage" },
+      { slug: "mortgage-300k-40yr-7pct", params: { homePrice: 300000, downPct: 20, rate: 7, term: 40, taxes: 4500, insurance: 1500 }, title: "$300,000 Mortgage at 7% for 40 Years", description: "Stretch your budget: $300,000 mortgage at 7% over 40 years" },
+      { slug: "mortgage-400k-40yr-6pct", params: { homePrice: 400000, downPct: 20, rate: 6, term: 40, taxes: 6000, insurance: 1800 }, title: "$400,000 Mortgage at 6% for 40 Years", description: "Low monthly payments on a $400,000 mortgage stretched to 40 years" },
+      { slug: "mortgage-500k-40yr-6-5pct", params: { homePrice: 500000, downPct: 20, rate: 6.5, term: 40, taxes: 7500, insurance: 2200 }, title: "$500,000 Mortgage at 6.5% for 40 Years", description: "Affordability option: $500,000 at 6.5% over a 40-year term" },
+      // NEW: 0% down VA loans
+      { slug: "mortgage-250k-0dp-30yr-6-5pct", params: { homePrice: 250000, downPct: 0, rate: 6.5, term: 30, taxes: 4000, insurance: 0 }, title: "$250,000 VA Loan with 0% Down at 6.5%", description: "Calculate a $250,000 VA mortgage with zero down payment at 6.5%" },
+      { slug: "mortgage-300k-0dp-30yr-7pct", params: { homePrice: 300000, downPct: 0, rate: 7, term: 30, taxes: 4500, insurance: 0 }, title: "$300,000 VA Loan with 0% Down at 7%", description: "VA loan payment calculator: $300,000 with no down payment at 7%" },
+      { slug: "mortgage-400k-0dp-30yr-6pct", params: { homePrice: 400000, downPct: 0, rate: 6, term: 30, taxes: 6000, insurance: 0 }, title: "$400,000 VA Loan with 0% Down at 6%", description: "Estimate monthly payments on a $400,000 VA loan at 6% with zero down" },
+      // NEW: $50k tiny mortgages
+      { slug: "mortgage-50k-30yr-6-5pct", params: { homePrice: 50000, downPct: 20, rate: 6.5, term: 30, taxes: 800, insurance: 400 }, title: "$50,000 Mortgage at 6.5% for 30 Years", description: "Calculate monthly payment for a small $50,000 mortgage at 6.5%" },
+      { slug: "mortgage-50k-15yr-5pct", params: { homePrice: 50000, downPct: 20, rate: 5, term: 15, taxes: 800, insurance: 400 }, title: "$50,000 Mortgage at 5% for 15 Years", description: "See the payment on a $50,000 starter home mortgage at 5%" },
+      { slug: "mortgage-75k-30yr-7pct", params: { homePrice: 75000, downPct: 20, rate: 7, term: 30, taxes: 1200, insurance: 600 }, title: "$75,000 Mortgage at 7% for 30 Years", description: "Calculate affordable monthly payments for a $75,000 mortgage at 7%" },
+      // NEW: Down payment variations on mid-tier homes
+      { slug: "mortgage-250k-15dp-30yr-7pct", params: { homePrice: 250000, downPct: 15, rate: 7, term: 30, taxes: 4000, insurance: 1300 }, title: "$250,000 Mortgage with 15% Down at 7%", description: "Calculate a $250,000 mortgage with 15% down payment at 7% interest" },
+      { slug: "mortgage-350k-20dp-30yr-6pct", params: { homePrice: 350000, downPct: 20, rate: 6, term: 30, taxes: 5000, insurance: 1600 }, title: "$350,000 Mortgage with 20% Down at 6%", description: "Standard 20% down on a $350,000 home at 6% interest rate" },
+      { slug: "mortgage-450k-10dp-30yr-8pct", params: { homePrice: 450000, downPct: 10, rate: 8, term: 30, taxes: 6500, insurance: 2000 }, title: "$450,000 Mortgage with 10% Down at 8%", description: "Calculate a $450,000 mortgage with 10% down at 8% with PMI" },
+      { slug: "mortgage-550k-20dp-30yr-7pct", params: { homePrice: 550000, downPct: 20, rate: 7, term: 30, taxes: 8000, insurance: 2400 }, title: "$550,000 Mortgage with 20% Down at 7%", description: "Monthly payment on a $550,000 mid-tier home at 7% with 20% down" },
+      { slug: "mortgage-650k-15dp-30yr-6-5pct", params: { homePrice: 650000, downPct: 15, rate: 6.5, term: 30, taxes: 9500, insurance: 2800 }, title: "$650,000 Mortgage with 15% Down at 6.5%", description: "Calculate a $650,000 mortgage payment with 15% down at 6.5%" },
+      { slug: "mortgage-700k-25dp-30yr-7pct", params: { homePrice: 700000, downPct: 25, rate: 7, term: 30, taxes: 10500, insurance: 3000 }, title: "$700,000 Mortgage with 25% Down at 7%", description: "Jumbo loan: $700,000 with 25% down at 7% interest" },
+      { slug: "mortgage-850k-20dp-30yr-6pct", params: { homePrice: 850000, downPct: 20, rate: 6, term: 30, taxes: 13000, insurance: 3500 }, title: "$850,000 Mortgage with 20% Down at 6%", description: "Calculate the monthly payment on an $850,000 jumbo mortgage at 6%" },
+      // NEW: More rate/term combinations
+      { slug: "mortgage-175k-30yr-5-5pct", params: { homePrice: 175000, downPct: 20, rate: 5.5, term: 30, taxes: 2600, insurance: 1100 }, title: "$175,000 Mortgage at 5.5% for 30 Years", description: "Affordable home: $175,000 mortgage at 5.5% over 30 years" },
+      { slug: "mortgage-225k-30yr-6pct", params: { homePrice: 225000, downPct: 20, rate: 6, term: 30, taxes: 3500, insurance: 1250 }, title: "$225,000 Mortgage at 6% for 30 Years", description: "Monthly payment estimate for a $225,000 mortgage at 6% interest" },
+      { slug: "mortgage-275k-30yr-6-5pct", params: { homePrice: 275000, downPct: 20, rate: 6.5, term: 30, taxes: 4200, insurance: 1400 }, title: "$275,000 Mortgage at 6.5% for 30 Years", description: "Breakdown of a $275,000 mortgage payment at 6.5% over 30 years" },
+      { slug: "mortgage-325k-30yr-7pct", params: { homePrice: 325000, downPct: 20, rate: 7, term: 30, taxes: 4800, insurance: 1550 }, title: "$325,000 Mortgage at 7% for 30 Years", description: "Calculate what a $325,000 home costs monthly at 7% interest" },
+      { slug: "mortgage-375k-30yr-8pct", params: { homePrice: 375000, downPct: 20, rate: 8, term: 30, taxes: 5500, insurance: 1700 }, title: "$375,000 Mortgage at 8% for 30 Years", description: "Monthly payment on a $375,000 mortgage with an 8% rate" },
+      { slug: "mortgage-425k-30yr-5-5pct", params: { homePrice: 425000, downPct: 20, rate: 5.5, term: 30, taxes: 6200, insurance: 1900 }, title: "$425,000 Mortgage at 5.5% for 30 Years", description: "Calculate the monthly cost of a $425,000 mortgage at 5.5%" },
+      { slug: "mortgage-475k-30yr-6pct", params: { homePrice: 475000, downPct: 20, rate: 6, term: 30, taxes: 7000, insurance: 2100 }, title: "$475,000 Mortgage at 6% for 30 Years", description: "Estimated monthly payment for a $475,000 home at 6% interest" },
+      { slug: "mortgage-550k-30yr-6-5pct", params: { homePrice: 550000, downPct: 20, rate: 6.5, term: 30, taxes: 8000, insurance: 2400 }, title: "$550,000 Mortgage at 6.5% for 30 Years", description: "Monthly payment breakdown for a $550,000 mortgage at 6.5%" },
+      { slug: "mortgage-650k-30yr-7pct", params: { homePrice: 650000, downPct: 20, rate: 7, term: 30, taxes: 9500, insurance: 2800 }, title: "$650,000 Mortgage at 7% for 30 Years", description: "Calculate jumbo mortgage payment for $650,000 at 7%" },
+      { slug: "mortgage-900k-30yr-7pct", params: { homePrice: 900000, downPct: 20, rate: 7, term: 30, taxes: 14000, insurance: 3600 }, title: "$900,000 Mortgage at 7% for 30 Years", description: "High-end home: $900,000 jumbo mortgage payment at 7%" },
+      // NEW: 15-year term expansions
+      { slug: "mortgage-100k-15yr-7pct", params: { homePrice: 100000, downPct: 20, rate: 7, term: 15, taxes: 1500, insurance: 800 }, title: "$100,000 Mortgage at 7% for 15 Years", description: "Accelerated payoff: $100,000 at 7% over 15 years" },
+      { slug: "mortgage-250k-15yr-7pct", params: { homePrice: 250000, downPct: 20, rate: 7, term: 15, taxes: 4000, insurance: 1300 }, title: "$250,000 Mortgage at 7% for 15 Years", description: "Calculate $250,000 at 7% on a faster 15-year term" },
+      { slug: "mortgage-350k-15yr-6-5pct", params: { homePrice: 350000, downPct: 20, rate: 6.5, term: 15, taxes: 5000, insurance: 1600 }, title: "$350,000 Mortgage at 6.5% for 15 Years", description: "See the higher payment for a 15-year $350,000 mortgage" },
+      { slug: "mortgage-450k-15yr-6pct", params: { homePrice: 450000, downPct: 20, rate: 6, term: 15, taxes: 6500, insurance: 2000 }, title: "$450,000 Mortgage at 6% for 15 Years", description: "Quick payoff: $450,000 mortgage at 6% over 15 years" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // LOAN CALCULATOR — 55 templates
+  // LOAN CALCULATOR — 55 existing + 50 new = 105 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "loan-calculator",
@@ -141,11 +195,52 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "loan-100k-7yr-7pct", params: { loanAmount: 100000, rate: 7, term: 7 }, title: "$100,000 Loan at 7% for 7 Years", description: "Calculate monthly payment for a $100,000 loan at 7% over 7 years" },
       { slug: "loan-250k-10yr-6pct", params: { loanAmount: 250000, rate: 6, term: 10 }, title: "$250,000 Loan at 6% for 10 Years", description: "Calculate monthly payment for a $250,000 loan at 6% over 10 years" },
       { slug: "loan-500k-15yr-7pct", params: { loanAmount: 500000, rate: 7, term: 15 }, title: "$500,000 Loan at 7% for 15 Years", description: "Calculate monthly payment for a $500,000 loan at 7% over 15 years" },
+      // NEW: 2-4% low-rate scenarios
+      { slug: "loan-10k-3yr-3pct", params: { loanAmount: 10000, rate: 3, term: 3 }, title: "$10,000 Loan at 3% for 3 Years", description: "Calculate the low monthly payment on a $10,000 loan at just 3% APR" },
+      { slug: "loan-20k-5yr-4pct", params: { loanAmount: 20000, rate: 4, term: 5 }, title: "$20,000 Loan at 4% for 5 Years", description: "Estimate monthly payments for a $20,000 loan at a low 4% APR" },
+      { slug: "loan-30k-3yr-2-5pct", params: { loanAmount: 30000, rate: 2.5, term: 3 }, title: "$30,000 Loan at 2.5% for 3 Years", description: "Calculate the monthly cost on a $30,000 loan with an ultra-low 2.5% APR" },
+      { slug: "loan-50k-5yr-3-5pct", params: { loanAmount: 50000, rate: 3.5, term: 5 }, title: "$50,000 Loan at 3.5% for 5 Years", description: "See the affordable monthly payment on a $50,000 loan at 3.5% APR" },
+      { slug: "loan-100k-10yr-3pct", params: { loanAmount: 100000, rate: 3, term: 10 }, title: "$100,000 Loan at 3% for 10 Years", description: "Calculate the monthly payment on a $100,000 loan at a low 3% rate" },
+      { slug: "loan-200k-15yr-4pct", params: { loanAmount: 200000, rate: 4, term: 15 }, title: "$200,000 Loan at 4% for 15 Years", description: "Refinance scenario: $200,000 loan at a low 4% over 15 years" },
+      // NEW: 18-29% high-rate scenarios
+      { slug: "loan-5k-3yr-18pct", params: { loanAmount: 5000, rate: 18, term: 3 }, title: "$5,000 Loan at 18% for 3 Years", description: "Calculate the expensive monthly payment on a $5,000 loan at 18% APR" },
+      { slug: "loan-10k-5yr-20pct", params: { loanAmount: 10000, rate: 20, term: 5 }, title: "$10,000 Loan at 20% for 5 Years", description: "Estimate payments for a $10,000 high-interest loan at 20% APR" },
+      { slug: "loan-15k-3yr-22pct", params: { loanAmount: 15000, rate: 22, term: 3 }, title: "$15,000 Loan at 22% for 3 Years", description: "Calculate the high monthly cost of a $15,000 loan at 22% APR" },
+      { slug: "loan-25k-5yr-25pct", params: { loanAmount: 25000, rate: 25, term: 5 }, title: "$25,000 Loan at 25% for 5 Years", description: "See the total cost of a $25,000 personal loan at 25% APR" },
+      { slug: "loan-30k-7yr-18pct", params: { loanAmount: 30000, rate: 18, term: 7 }, title: "$30,000 Loan at 18% for 7 Years", description: "Monthly payment on a $30,000 consolidation loan at 18% APR" },
+      { slug: "loan-40k-10yr-20pct", params: { loanAmount: 40000, rate: 20, term: 10 }, title: "$40,000 Loan at 20% for 10 Years", description: "Long-term high-interest: $40,000 loan at 20% over 10 years" },
+      // NEW: 1-year short terms
+      { slug: "loan-2k-1yr-6pct", params: { loanAmount: 2000, rate: 6, term: 1 }, title: "$2,000 Loan at 6% for 1 Year", description: "Quick short-term $2,000 loan paid over just 12 months at 6%" },
+      { slug: "loan-5k-1yr-8pct", params: { loanAmount: 5000, rate: 8, term: 1 }, title: "$5,000 Loan at 8% for 1 Year", description: "Calculate the high monthly payment on a $5,000 1-year loan at 8%" },
+      { slug: "loan-10k-1yr-10pct", params: { loanAmount: 10000, rate: 10, term: 1 }, title: "$10,000 Loan at 10% for 1 Year", description: "Short-term $10,000 loan over 12 months at 10% APR" },
+      { slug: "loan-15k-1yr-7pct", params: { loanAmount: 15000, rate: 7, term: 1 }, title: "$15,000 Loan at 7% for 1 Year", description: "Bridging loan: $15,000 repaid in 1 year at 7% APR" },
+      // NEW: 25-30 year terms
+      { slug: "loan-50k-25yr-7pct", params: { loanAmount: 50000, rate: 7, term: 25 }, title: "$50,000 Loan at 7% for 25 Years", description: "Long-term $50,000 loan spread over 25 years at 7%" },
+      { slug: "loan-100k-25yr-6pct", params: { loanAmount: 100000, rate: 6, term: 25 }, title: "$100,000 Loan at 6% for 25 Years", description: "Extended $100,000 loan amortized over 25 years at 6%" },
+      { slug: "loan-150k-30yr-5-5pct", params: { loanAmount: 150000, rate: 5.5, term: 30 }, title: "$150,000 Loan at 5.5% for 30 Years", description: "Maximum amortization: $150,000 loan at 5.5% over 30 years" },
+      { slug: "loan-250k-25yr-8pct", params: { loanAmount: 250000, rate: 8, term: 25 }, title: "$250,000 Loan at 8% for 25 Years", description: "Calculate the $250,000 loan monthly at 8% over 25 years" },
+      { slug: "loan-400k-30yr-6pct", params: { loanAmount: 400000, rate: 6, term: 30 }, title: "$400,000 Loan at 6% for 30 Years", description: "Large $400,000 loan amortized over 30 years at 6%" },
+      // NEW: Additional mid-range combos
+      { slug: "loan-3k-2yr-9pct", params: { loanAmount: 3000, rate: 9, term: 2 }, title: "$3,000 Loan at 9% for 2 Years", description: "Small personal $3,000 loan at 9% over 2 years" },
+      { slug: "loan-7k-4yr-11pct", params: { loanAmount: 7000, rate: 11, term: 4 }, title: "$7,000 Loan at 11% for 4 Years", description: "Calculate payment for a $7,000 debt consolidation loan at 11%" },
+      { slug: "loan-12k-6yr-13pct", params: { loanAmount: 12000, rate: 13, term: 6 }, title: "$12,000 Loan at 13% for 6 Years", description: "$12,000 medium-term loan at 13% APR for 6 years" },
+      { slug: "loan-55k-7yr-6-5pct", params: { loanAmount: 55000, rate: 6.5, term: 7 }, title: "$55,000 Loan at 6.5% for 7 Years", description: "Calculate a $55,000 auto loan at 6.5% over 7 years" },
+      { slug: "loan-65k-5yr-8-5pct", params: { loanAmount: 65000, rate: 8.5, term: 5 }, title: "$65,000 Loan at 8.5% for 5 Years", description: "Estimate payments on a $65,000 loan at 8.5% for 5 years" },
+      { slug: "loan-95k-12yr-7-5pct", params: { loanAmount: 95000, rate: 7.5, term: 12 }, title: "$95,000 Loan at 7.5% for 12 Years", description: "Medium-term $95,000 loan at 7.5% over 12 years" },
+      { slug: "loan-140k-8yr-9pct", params: { loanAmount: 140000, rate: 9, term: 8 }, title: "$140,000 Loan at 9% for 8 Years", description: "Calculate the monthly burden of a $140,000 loan at 9%" },
+      { slug: "loan-175k-20yr-6pct", params: { loanAmount: 175000, rate: 6, term: 20 }, title: "$175,000 Loan at 6% for 20 Years", description: "Two-decade $175,000 loan amortization at 6% APR" },
+      { slug: "loan-220k-12yr-7pct", params: { loanAmount: 220000, rate: 7, term: 12 }, title: "$220,000 Loan at 7% for 12 Years", description: "Mid-length repayment: $220,000 loan at 7% over 12 years" },
+      { slug: "loan-450k-25yr-5pct", params: { loanAmount: 450000, rate: 5, term: 25 }, title: "$450,000 Loan at 5% for 25 Years", description: "Calculate payments on a large $450,000 loan at 5% APR" },
+      { slug: "loan-600k-20yr-7pct", params: { loanAmount: 600000, rate: 7, term: 20 }, title: "$600,000 Loan at 7% for 20 Years", description: "Jumbo $600,000 loan at 7% over a 20-year term" },
+      { slug: "loan-750k-30yr-4-5pct", params: { loanAmount: 750000, rate: 4.5, term: 30 }, title: "$750,000 Loan at 4.5% for 30 Years", description: "Large mortgage-style loan: $750,000 at 4.5% over 30 years" },
+      // NEW: More high-rate short-term
+      { slug: "loan-3k-2yr-24pct", params: { loanAmount: 3000, rate: 24, term: 2 }, title: "$3,000 Loan at 24% for 2 Years", description: "High-cost small loan: $3,000 at 24% APR over 2 years" },
+      { slug: "loan-8k-3yr-29pct", params: { loanAmount: 8000, rate: 29, term: 3 }, title: "$8,000 Loan at 29% for 3 Years", description: "Calculate the expensive payments on an $8,000 loan at 29% APR" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // INVESTMENT RETURN CALCULATOR — 55 templates
+  // INVESTMENT RETURN CALCULATOR — 55 existing + 40 new = 95 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "investment-return",
@@ -206,11 +301,38 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "investment-50k-15yr", params: { initial: 50000, finalVal: 200000, timeValue: 15, dividends: 10000 }, title: "$50,000 Investment Return Over 15 Years", description: "Calculate total return on $50,000 over 15 years" },
       { slug: "investment-3M-20yr", params: { initial: 3000000, finalVal: 10000000, timeValue: 20, dividends: 500000 }, title: "$3M Investment Return Over 20 Years", description: "Calculate ROI on $3M over 20 years" },
       { slug: "investment-500-5yr", params: { initial: 500, finalVal: 1000, timeValue: 5, dividends: 50 }, title: "$500 Investment Return Over 5 Years", description: "Calculate the return on $500 over 5 years" },
+      // NEW: Monthly contribution scenarios
+      { slug: "investment-10k-5yr-200mo", params: { initial: 10000, finalVal: 25000, timeValue: 5, dividends: 2000 }, title: "$10,000 Investment + $200/mo Over 5 Years", description: "Calculate total return with $10,000 initial and $200 monthly contributions" },
+      { slug: "investment-25k-10yr-500mo", params: { initial: 25000, finalVal: 80000, timeValue: 10, dividends: 8000 }, title: "$25,000 Investment + $500/mo Over 10 Years", description: "ROI calculation for $25,000 initial plus $500 monthly for 10 years" },
+      { slug: "investment-50k-15yr-1000mo", params: { initial: 50000, finalVal: 250000, timeValue: 15, dividends: 25000 }, title: "$50,000 + $1,000/mo Over 15 Years", description: "See the growth of $50,000 with $1,000 monthly additions over 15 years" },
+      { slug: "investment-100k-20yr-2000mo", params: { initial: 100000, finalVal: 600000, timeValue: 20, dividends: 50000 }, title: "$100,000 + $2,000/mo Over 20 Years", description: "Regular contribution scenario: $100,000 plus $2,000 monthly for two decades" },
+      { slug: "investment-5k-10yr-100mo", params: { initial: 5000, finalVal: 20000, timeValue: 10, dividends: 2000 }, title: "$5,000 Investment + $100/mo Over 10 Years", description: "Small start: $5,000 initial with $100 monthly additions for a decade" },
+      // NEW: Loss scenarios
+      { slug: "investment-10k-3yr-loss", params: { initial: 10000, finalVal: 7500, timeValue: 3, dividends: 0 }, title: "$10,000 Investment Loss Over 3 Years", description: "Calculate the negative ROI on a $10,000 investment that lost 25% in 3 years" },
+      { slug: "investment-50k-5yr-loss", params: { initial: 50000, finalVal: 38000, timeValue: 5, dividends: 500 }, title: "$50,000 Investment Loss Over 5 Years", description: "Analyze a $50,000 portfolio that declined to $38,000 over 5 years" },
+      { slug: "investment-100k-2yr-loss", params: { initial: 100000, finalVal: 85000, timeValue: 2, dividends: 0 }, title: "$100,000 Investment Loss Over 2 Years", description: "Calculate the negative CAGR on $100,000 dropping to $85,000 in 2 years" },
+      { slug: "investment-200k-4yr-loss", params: { initial: 200000, finalVal: 140000, timeValue: 4, dividends: 2000 }, title: "$200,000 Investment Decline Over 4 Years", description: "Calculate the total loss and CAGR when $200,000 falls to $140,000" },
+      { slug: "investment-500k-3yr-loss", params: { initial: 500000, finalVal: 400000, timeValue: 3, dividends: 5000 }, title: "$500,000 Investment Loss Over 3 Years", description: "See the ROI on a $500,000 portfolio that declined 20% in 3 years" },
+      // NEW: Short 6-month terms
+      { slug: "investment-1k-6mo", params: { initial: 1000, finalVal: 1200, timeValue: 0.5, dividends: 0 }, title: "$1,000 Investment Return Over 6 Months", description: "Calculate short-term ROI on $1,000 over just 6 months" },
+      { slug: "investment-5k-6mo", params: { initial: 5000, finalVal: 5800, timeValue: 0.5, dividends: 50 }, title: "$5,000 Investment Return Over 6 Months", description: "Quick return calculation for $5,000 invested over 6 months" },
+      { slug: "investment-10k-6mo", params: { initial: 10000, finalVal: 11500, timeValue: 0.5, dividends: 100 }, title: "$10,000 Investment Return Over 6 Months", description: "Short-term ROI analysis on $10,000 over a half-year period" },
+      { slug: "investment-25k-6mo", params: { initial: 25000, finalVal: 28000, timeValue: 0.5, dividends: 200 }, title: "$25,000 Investment Return Over 6 Months", description: "Calculate the CAGR-equivalent return on $25,000 in 6 months" },
+      // NEW: More high-value and long-term
+      { slug: "investment-200k-20yr", params: { initial: 200000, finalVal: 800000, timeValue: 20, dividends: 60000 }, title: "$200,000 Investment Return Over 20 Years", description: "Two-decade return on a $200,000 investment portfolio" },
+      { slug: "investment-500-3yr", params: { initial: 500, finalVal: 900, timeValue: 3, dividends: 30 }, title: "$500 Investment Return Over 3 Years", description: "Calculate the small investment return on $500 over 3 years" },
+      { slug: "investment-5k-20yr", params: { initial: 5000, finalVal: 30000, timeValue: 20, dividends: 2000 }, title: "$5,000 Investment Return Over 20 Years", description: "Long-term growth: $5,000 turning into $30,000 over 20 years" },
+      { slug: "investment-30k-10yr", params: { initial: 30000, finalVal: 65000, timeValue: 10, dividends: 4000 }, title: "$30,000 Investment Return Over 10 Years", description: "Decade-long return calculation for a $30,000 portfolio" },
+      { slug: "investment-80k-8yr", params: { initial: 80000, finalVal: 160000, timeValue: 8, dividends: 10000 }, title: "$80,000 Investment Return Over 8 Years", description: "Calculate the CAGR on an $80,000 investment doubling in 8 years" },
+      { slug: "investment-400k-18yr", params: { initial: 400000, finalVal: 1200000, timeValue: 18, dividends: 80000 }, title: "$400,000 Investment Return Over 18 Years", description: "Eighteen-year ROI on a $400,000 growth portfolio" },
+      { slug: "investment-600k-12yr", params: { initial: 600000, finalVal: 1200000, timeValue: 12, dividends: 60000 }, title: "$600,000 Investment Return Over 12 Years", description: "Twelve-year CAGR calculation for a $600,000 investment" },
+      { slug: "investment-50k-25yr", params: { initial: 50000, finalVal: 300000, timeValue: 25, dividends: 15000 }, title: "$50,000 Investment Return Over 25 Years", description: "Quarter-century investment returns on a $50,000 initial portfolio" },
+      { slug: "investment-150k-30yr", params: { initial: 150000, finalVal: 900000, timeValue: 30, dividends: 50000 }, title: "$150,000 Investment Return Over 30 Years", description: "Three-decade return calculation for long-term $150,000 investment" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // RETIREMENT PLANNING CALCULATOR — 55 templates
+  // RETIREMENT PLANNING CALCULATOR — 55 existing + 40 new = 95 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "retirement-planning",
@@ -270,11 +392,35 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "retirement-30-50k-75k", params: { currentAge: 30, currentSavings: 50000, monthlyContribution: 500, expectedReturn: 6, currentIncome: 75000, yearsToRetire: 35 }, title: "Retirement at 30 with $50k Savings $75k Income", description: "Plan retirement at 30 with $50,000 saved and $75,000 income" },
       { slug: "retirement-40-100k-100k", params: { currentAge: 40, currentSavings: 100000, monthlyContribution: 1000, expectedReturn: 6, currentIncome: 100000, yearsToRetire: 25 }, title: "Retirement at 40 with $100k Saved $100k Income", description: "Plan retirement at 40 with $100,000 saved and $100,000 income" },
       { slug: "retirement-50-500k-150k", params: { currentAge: 50, currentSavings: 500000, monthlyContribution: 2000, expectedReturn: 6, currentIncome: 150000, yearsToRetire: 15 }, title: "Retirement at 50 with $500k Saved $150k Income", description: "Plan retirement at 50 with $500,000 saved and $150,000 income" },
+      // NEW: Ages 60-65 late starters
+      { slug: "retirement-60-100k-5pct", params: { currentAge: 60, currentSavings: 100000, monthlyContribution: 2000, expectedReturn: 5, currentIncome: 80000, yearsToRetire: 7 }, title: "Late Start Retirement at 60 with $100,000", description: "Catch-up retirement plan starting at 60 with $100,000 saved at 5%" },
+      { slug: "retirement-60-250k-6pct", params: { currentAge: 60, currentSavings: 250000, monthlyContribution: 3000, expectedReturn: 6, currentIncome: 100000, yearsToRetire: 7 }, title: "Retirement at 60 with $250,000 at 6%", description: "Late-career plan at 60 with $250,000 saved and aggressive catch-up contributions" },
+      { slug: "retirement-60-500k-5pct", params: { currentAge: 60, currentSavings: 500000, monthlyContribution: 4000, expectedReturn: 5, currentIncome: 150000, yearsToRetire: 7 }, title: "Retirement at 60 with $500,000 Conservative", description: "Conservative retirement plan at 60 with $500,000 and $4,000 monthly" },
+      { slug: "retirement-65-150k-5pct", params: { currentAge: 65, currentSavings: 150000, monthlyContribution: 2000, expectedReturn: 5, currentIncome: 70000, yearsToRetire: 2 }, title: "Retirement at 65 with $150,000 Just Starting", description: "Immediate retirement plan at 65 with $150,000 in savings" },
+      { slug: "retirement-65-400k-4pct", params: { currentAge: 65, currentSavings: 400000, monthlyContribution: 1000, expectedReturn: 4, currentIncome: 120000, yearsToRetire: 2 }, title: "Retirement at 65 with $400,000 at 4%", description: "Traditional retirement plan at 65 with $400,000 at conservative returns" },
+      { slug: "retirement-65-750k-4pct", params: { currentAge: 65, currentSavings: 750000, monthlyContribution: 2000, expectedReturn: 4, currentIncome: 200000, yearsToRetire: 2 }, title: "Retirement at 65 with $750,000 Nest Egg", description: "Comfortable retirement plan at 65 with $750,000 saved" },
+      { slug: "retirement-65-1M-3pct", params: { currentAge: 65, currentSavings: 1000000, monthlyContribution: 5000, expectedReturn: 3, currentIncome: 300000, yearsToRetire: 2 }, title: "Millionaire Retirement at 65 with $1M", description: "Affluent retirement at 65 with $1M saved at a conservative 3%" },
+      // NEW: $0 savings catch-up scenarios
+      { slug: "retirement-40-0-8pct", params: { currentAge: 40, currentSavings: 0, monthlyContribution: 1500, expectedReturn: 8, currentIncome: 75000, yearsToRetire: 25 }, title: "Catch-Up: Retirement at 40 with $0 Saved", description: "Aggressive catch-up plan starting at 40 with no savings and $1,500 monthly" },
+      { slug: "retirement-45-0-7pct", params: { currentAge: 45, currentSavings: 0, monthlyContribution: 2000, expectedReturn: 7, currentIncome: 80000, yearsToRetire: 20 }, title: "Late Catch-Up at 45 Starting from $0", description: "Intensive catch-up retirement plan at 45 starting with zero savings" },
+      { slug: "retirement-50-0-9pct", params: { currentAge: 50, currentSavings: 0, monthlyContribution: 3000, expectedReturn: 9, currentIncome: 90000, yearsToRetire: 15 }, title: "Aggressive Catch-Up: $0 at 50", description: "Maximum catch-up retirement plan at 50 starting from $0 at 9% growth" },
+      { slug: "retirement-55-0-8pct", params: { currentAge: 55, currentSavings: 0, monthlyContribution: 4000, expectedReturn: 8, currentIncome: 100000, yearsToRetire: 10 }, title: "Emergency Catch-Up at 55 with $0", description: "Emergency retirement savings plan at 55 starting with no money saved" },
+      // NEW: High-income $400k+
+      { slug: "retirement-30-200k-7pct-400k", params: { currentAge: 30, currentSavings: 200000, monthlyContribution: 3000, expectedReturn: 7, currentIncome: 400000, yearsToRetire: 35 }, title: "High Income Retirement at 30 with $400k Salary", description: "High earner retirement plan at 30 earning $400,000 with $200,000 saved" },
+      { slug: "retirement-35-500k-8pct-500k", params: { currentAge: 35, currentSavings: 500000, monthlyContribution: 5000, expectedReturn: 8, currentIncome: 500000, yearsToRetire: 30 }, title: "Top Earner Retirement at 35 with $500k Salary", description: "Premium retirement plan for a high earner at 35 with $500,000 saved" },
+      { slug: "retirement-40-1M-6pct-600k", params: { currentAge: 40, currentSavings: 1000000, monthlyContribution: 8000, expectedReturn: 6, currentIncome: 600000, yearsToRetire: 25 }, title: "Executive Retirement at 40 with $1M", description: "Executive-level retirement plan at 40 with $1M saved and $600k income" },
+      { slug: "retirement-45-2M-5pct-800k", params: { currentAge: 45, currentSavings: 2000000, monthlyContribution: 10000, expectedReturn: 5, currentIncome: 800000, yearsToRetire: 20 }, title: "Wealthy Executive Retirement at 45", description: "High net worth retirement plan at 45 with $2M in savings" },
+      { slug: "retirement-50-3M-5pct-1M", params: { currentAge: 50, currentSavings: 3000000, monthlyContribution: 15000, expectedReturn: 5, currentIncome: 1000000, yearsToRetire: 15 }, title: "Ultra High Net Worth Retirement at 50", description: "Ultra-wealthy retirement at 50 with $3M invested at 5%" },
+      // NEW: Additional age/savings combos
+      { slug: "retirement-27-30k-7pct", params: { currentAge: 27, currentSavings: 30000, monthlyContribution: 1000, expectedReturn: 7, currentIncome: 65000, yearsToRetire: 38 }, title: "Millennial Retirement at 27 with $30,000", description: "Millennial retirement plan at 27 with $30,000 saved at 7%" },
+      { slug: "retirement-33-60k-6pct", params: { currentAge: 33, currentSavings: 60000, monthlyContribution: 1400, expectedReturn: 6, currentIncome: 90000, yearsToRetire: 32 }, title: "Retirement at 33 with $60,000 Moderate", description: "Mid-30s retirement plan with $60,000 saved at a conservative 6%" },
+      { slug: "retirement-44-250k-7pct", params: { currentAge: 44, currentSavings: 250000, monthlyContribution: 2500, expectedReturn: 7, currentIncome: 130000, yearsToRetire: 21 }, title: "Retirement at 44 with $250,000 Saved", description: "Mid-career retirement plan at 44 with $250,000 saved at 7%" },
+      { slug: "retirement-58-800k-5pct", params: { currentAge: 58, currentSavings: 800000, monthlyContribution: 5000, expectedReturn: 5, currentIncome: 200000, yearsToRetire: 7 }, title: "Pre-Retirement at 58 with $800,000", description: "Pre-retirement plan at 58 with $800,000 near the finish line" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // TAX CALCULATOR — 55 templates
+  // TAX CALCULATOR — 55 existing + 40 new = 95 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "tax-calculator",
@@ -336,11 +482,41 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "tax-65k-single", params: { income: 65000, filingStatus: "single" }, title: "$65,000 Tax Calculator", description: "Calculate tax on $65,000 for single filers" },
       { slug: "tax-110k-single", params: { income: 110000, filingStatus: "single" }, title: "$110,000 Tax Calculator", description: "Calculate tax on $110,000 for single filers" },
       { slug: "tax-160k-single", params: { income: 160000, filingStatus: "single" }, title: "$160,000 Tax Calculator", description: "Calculate tax on $160,000 for single filers" },
+      // NEW: $10k-$35k low income
+      { slug: "tax-10k-single", params: { income: 10000, filingStatus: "single" }, title: "$10,000 Tax Calculator for Single Filers", description: "Calculate income tax on $10,000 for single filers with standard deduction" },
+      { slug: "tax-15k-single", params: { income: 15000, filingStatus: "single" }, title: "$15,000 Tax Calculator for Single Filers", description: "See how much tax a single filer owes on $15,000 annual income" },
+      { slug: "tax-20k-single", params: { income: 20000, filingStatus: "single" }, title: "$20,000 Tax Calculator for Single", description: "Calculate federal income tax on $20,000 earned by a single filer" },
+      { slug: "tax-25k-single", params: { income: 25000, filingStatus: "single" }, title: "$25,000 Tax Calculator for Single", description: "Estimate the tax bill on $25,000 income for a single filer" },
+      { slug: "tax-30k-single", params: { income: 30000, filingStatus: "single" }, title: "$30,000 Tax Calculator for Single", description: "Calculate income tax owed on $30,000 for a single filing status" },
+      // NEW: $750k-$5M high income
+      { slug: "tax-750k-single", params: { income: 750000, filingStatus: "single" }, title: "$750,000 Tax Calculator for Single Filers", description: "Calculate the high tax bracket on $750,000 income for single filers" },
+      { slug: "tax-1M-single", params: { income: 1000000, filingStatus: "single" }, title: "$1,000,000 Tax Calculator for Single", description: "Estimate federal taxes on $1 million income for a single filer" },
+      { slug: "tax-1-5M-single", params: { income: 1500000, filingStatus: "single" }, title: "$1.5M Tax Calculator for Single", description: "Calculate the tax burden on $1.5 million in income for single filers" },
+      { slug: "tax-2M-single", params: { income: 2000000, filingStatus: "single" }, title: "$2,000,000 Tax Calculator for Single", description: "Estimate taxes owed on $2 million of income for single filers" },
+      { slug: "tax-3M-single", params: { income: 3000000, filingStatus: "single" }, title: "$3,000,000 Tax Calculator for Single", description: "Calculate top-bracket taxes on $3M income for single filers" },
+      { slug: "tax-5M-single", params: { income: 5000000, filingStatus: "single" }, title: "$5,000,000 Tax Calculator for Single", description: "Estimate the massive tax bill on $5 million in single filer income" },
+      { slug: "tax-2M-married-joint", params: { income: 2000000, filingStatus: "married-joint" }, title: "$2M Tax Married Filing Jointly", description: "Calculate taxes on $2M income for married couples filing jointly" },
+      { slug: "tax-3M-married-joint", params: { income: 3000000, filingStatus: "married-joint" }, title: "$3M Tax Married Filing Jointly", description: "Estimate the tax liability on $3M for married joint filers" },
+      { slug: "tax-5M-married-joint", params: { income: 5000000, filingStatus: "married-joint" }, title: "$5M Tax Married Filing Jointly", description: "High net worth tax calculation for $5M married filing jointly" },
+      // NEW: More married-separate scenarios
+      { slug: "tax-30k-married-separate", params: { income: 30000, filingStatus: "married-separate" }, title: "$30,000 Tax Married Filing Separately", description: "Calculate income tax on $30,000 for married filing separately" },
+      { slug: "tax-60k-married-separate", params: { income: 60000, filingStatus: "married-separate" }, title: "$60,000 Tax Married Filing Separately", description: "Estimate taxes on $60,000 for married separate filers" },
+      { slug: "tax-100k-married-separate", params: { income: 100000, filingStatus: "married-separate" }, title: "$100,000 Tax Married Filing Separately", description: "Calculate the tax on $100,000 for married separate filers" },
+      { slug: "tax-150k-married-separate", params: { income: 150000, filingStatus: "married-separate" }, title: "$150,000 Tax Married Filing Separately", description: "Tax calculation on $150,000 for married couples filing separately" },
+      { slug: "tax-250k-married-separate", params: { income: 250000, filingStatus: "married-separate" }, title: "$250,000 Tax Married Filing Separately", description: "Calculate the high-bracket tax on $250,000 married separate" },
+      { slug: "tax-350k-married-separate", params: { income: 350000, filingStatus: "married-separate" }, title: "$350,000 Tax Married Filing Separately", description: "Estimate taxes owed on $350,000 for married separate status" },
+      { slug: "tax-500k-married-separate", params: { income: 500000, filingStatus: "married-separate" }, title: "$500,000 Tax Married Filing Separately", description: "Calculate the tax liability on $500,000 married filing separately" },
+      // NEW: More filling in gaps - head of household
+      { slug: "tax-30k-head-of-household", params: { income: 30000, filingStatus: "head-of-household" }, title: "$30,000 Tax Head of Household", description: "Calculate taxes on $30,000 for head of household filers" },
+      { slug: "tax-40k-head-of-household", params: { income: 40000, filingStatus: "head-of-household" }, title: "$40,000 Tax Head of Household", description: "Estimate the tax on $40,000 for head of household status" },
+      { slug: "tax-60k-head-of-household", params: { income: 60000, filingStatus: "head-of-household" }, title: "$60,000 Tax Head of Household", description: "Calculate income tax on $60,000 for head of household filers" },
+      { slug: "tax-350k-head-of-household", params: { income: 350000, filingStatus: "head-of-household" }, title: "$350,000 Tax Head of Household", description: "Estimate the high-income tax on $350,000 head of household" },
+      { slug: "tax-400k-head-of-household", params: { income: 400000, filingStatus: "head-of-household" }, title: "$400,000 Tax Head of Household", description: "Calculate taxes on $400,000 for head of household filers" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // COMPOUND INTEREST CALCULATOR — 55 templates
+  // COMPOUND INTEREST CALCULATOR — 55 existing + 45 new = 100 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "compound-interest",
@@ -402,11 +578,40 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "compound-15k-5yr-7pct", params: { principal: 15000, rate: 7, years: 5, monthlyAdd: 400, compoundFreq: 12 }, title: "$15,000 at 7% for 5 Years", description: "Medium-term: $15,000 at 7% for 5 years with $400 monthly" },
       { slug: "compound-200k-10yr-6pct", params: { principal: 200000, rate: 6, years: 10, monthlyAdd: 1500, compoundFreq: 12 }, title: "$200,000 at 6% for 10 Years", description: "Decade plan: $200,000 at 6% for 10 years with $1,500 monthly" },
       { slug: "compound-750k-25yr-5pct", params: { principal: 750000, rate: 5, years: 25, monthlyAdd: 3000, compoundFreq: 12 }, title: "$750,000 at 5% for 25 Years", description: "Long-term conservative: $750,000 at 5% for 25 years" },
+      // NEW: 2-3% low rates
+      { slug: "compound-1k-5yr-2pct", params: { principal: 1000, rate: 2, years: 5, monthlyAdd: 100, compoundFreq: 12 }, title: "$1,000 at 2% for 5 Years (Low Yield)", description: "Calculate low-yield compounding on $1,000 at just 2% APY" },
+      { slug: "compound-10k-10yr-2-5pct", params: { principal: 10000, rate: 2.5, years: 10, monthlyAdd: 200, compoundFreq: 12 }, title: "$10,000 at 2.5% for 10 Years", description: "See how $10,000 grows slowly at a low 2.5% APY over a decade" },
+      { slug: "compound-50k-20yr-3pct", params: { principal: 50000, rate: 3, years: 20, monthlyAdd: 500, compoundFreq: 12 }, title: "$50,000 at 3% for 20 Years", description: "Conservative bond-like growth: $50,000 at 3% over 20 years" },
+      { slug: "compound-100k-15yr-2pct", params: { principal: 100000, rate: 2, years: 15, monthlyAdd: 300, compoundFreq: 12 }, title: "$100,000 at 2% for 15 Years", description: "Ultra-conservative: $100,000 money market at 2% for 15 years" },
+      // NEW: 18-20% high rates
+      { slug: "compound-5k-5yr-18pct", params: { principal: 5000, rate: 18, years: 5, monthlyAdd: 200, compoundFreq: 12 }, title: "$5,000 at 18% for 5 Years (High Yield)", description: "Aggressive high-yield savings at 18%: $5,000 over 5 years" },
+      { slug: "compound-10k-3yr-20pct", params: { principal: 10000, rate: 20, years: 3, monthlyAdd: 500, compoundFreq: 12 }, title: "$10,000 at 20% for 3 Years", description: "High risk high return: $10,000 compounding at 20% for 3 years" },
+      { slug: "compound-25k-10yr-18pct", params: { principal: 25000, rate: 18, years: 10, monthlyAdd: 1000, compoundFreq: 12 }, title: "$25,000 at 18% for 10 Years", description: "Aggressive growth scenario: $25,000 at 18% over a decade" },
+      { slug: "compound-100k-5yr-20pct", params: { principal: 100000, rate: 20, years: 5, monthlyAdd: 0, compoundFreq: 12 }, title: "$100,000 at 20% for 5 Years (No Additions)", description: "What happens when $100,000 compounds at 20% for 5 years" },
+      // NEW: Weekly compounding
+      { slug: "compound-5k-10yr-5pct-weekly", params: { principal: 5000, rate: 5, years: 10, monthlyAdd: 100, compoundFreq: 52 }, title: "$5,000 at 5% Weekly Compound for 10 Years", description: "See the effect of weekly compounding on $5,000 at 5% for 10 years" },
+      { slug: "compound-10k-20yr-6pct-weekly", params: { principal: 10000, rate: 6, years: 20, monthlyAdd: 300, compoundFreq: 52 }, title: "$10,000 at 6% Weekly Compound for 20 Years", description: "Weekly compounding advantage: $10,000 at 6% for 20 years" },
+      { slug: "compound-50k-15yr-7pct-weekly", params: { principal: 50000, rate: 7, years: 15, monthlyAdd: 500, compoundFreq: 52 }, title: "$50,000 at 7% Weekly Compound for 15 Years", description: "Maximize growth with weekly compounding on $50,000 at 7%" },
+      { slug: "compound-100k-30yr-5pct-weekly", params: { principal: 100000, rate: 5, years: 30, monthlyAdd: 1000, compoundFreq: 52 }, title: "$100,000 at 5% Weekly Compound for 30 Years", description: "Long-term weekly compounding: $100,000 at 5% for 30 years" },
+      // NEW: Continuous compounding (365)
+      { slug: "compound-1k-5yr-5pct-daily", params: { principal: 1000, rate: 5, years: 5, monthlyAdd: 50, compoundFreq: 365 }, title: "$1,000 at 5% Daily Compound for 5 Years", description: "Daily compounding effect on $1,000 at 5% APY over 5 years" },
+      { slug: "compound-10k-10yr-6pct-daily", params: { principal: 10000, rate: 6, years: 10, monthlyAdd: 200, compoundFreq: 365 }, title: "$10,000 at 6% Daily Compound for 10 Years", description: "Maximum frequency compounding: $10,000 at 6% daily for 10 years" },
+      { slug: "compound-25k-20yr-7pct-daily", params: { principal: 25000, rate: 7, years: 20, monthlyAdd: 500, compoundFreq: 365 }, title: "$25,000 at 7% Daily Compound for 20 Years", description: "See daily compounding power on $25,000 at 7% over 20 years" },
+      { slug: "compound-100k-25yr-8pct-daily", params: { principal: 100000, rate: 8, years: 25, monthlyAdd: 1000, compoundFreq: 365 }, title: "$100,000 at 8% Daily Compound for 25 Years", description: "Maximum growth: $100,000 at 8% with daily compounding for 25 years" },
+      // NEW: Additional variety combos
+      { slug: "compound-2k-3yr-6pct", params: { principal: 2000, rate: 6, years: 3, monthlyAdd: 100, compoundFreq: 12 }, title: "$2,000 at 6% for 3 Years", description: "Quick 3-year compound interest on $2,000 at 6% with $100 monthly" },
+      { slug: "compound-30k-7yr-8pct", params: { principal: 30000, rate: 8, years: 7, monthlyAdd: 400, compoundFreq: 12 }, title: "$30,000 at 8% for 7 Years", description: "Mid-term growth: $30,000 at 8% for 7 years with $400 monthly" },
+      { slug: "compound-60k-18yr-5pct", params: { principal: 60000, rate: 5, years: 18, monthlyAdd: 600, compoundFreq: 12 }, title: "$60,000 at 5% for 18 Years", description: "College savings: $60,000 at 5% for 18 years with $600 monthly" },
+      { slug: "compound-200k-12yr-9pct", params: { principal: 200000, rate: 9, years: 12, monthlyAdd: 2000, compoundFreq: 12 }, title: "$200,000 at 9% for 12 Years", description: "Aggressive mid-range: $200,000 at 9% for 12 years" },
+      { slug: "compound-300k-8yr-10pct", params: { principal: 300000, rate: 10, years: 8, monthlyAdd: 3000, compoundFreq: 12 }, title: "$300,000 at 10% for 8 Years", description: "High-powered growth: $300,000 at 10% over 8 years" },
+      { slug: "compound-50k-3yr-12pct-semi", params: { principal: 50000, rate: 12, years: 3, monthlyAdd: 0, compoundFreq: 2 }, title: "$50,000 at 12% Semi-Annual for 3 Years", description: "Semi-annual compounding: $50,000 at 12% for 3 years, no additions" },
+      { slug: "compound-20k-4yr-7pct-quarterly", params: { principal: 20000, rate: 7, years: 4, monthlyAdd: 300, compoundFreq: 4 }, title: "$20,000 at 7% Quarterly for 4 Years", description: "Quarterly compounding on $20,000 at 7% for 4 years" },
+      { slug: "compound-500k-5yr-15pct", params: { principal: 500000, rate: 15, years: 5, monthlyAdd: 10000, compoundFreq: 12 }, title: "$500,000 at 15% for 5 Years", description: "High-risk: $500,000 at 15% for 5 years with $10,000 monthly" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // DEBT PAYOFF — 20 templates (keyword gap: debt)
+  // DEBT PAYOFF — 20 existing + 25 new = 45 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "debt-payoff",
@@ -434,11 +639,36 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "debt-100k-6pct-2000mo", params: { totalDebt: 100000, interestRate: 6, monthlyPayment: 2000 }, title: "Pay Off $100,000 at 6% with $2,000/mo", description: "Calculate timeline for $100,000 mortgage debt at 6%" },
       { slug: "debt-100k-10pct-2500mo", params: { totalDebt: 100000, interestRate: 10, monthlyPayment: 2500 }, title: "Pay Off $100,000 at 10% with $2,500/mo", description: "Aggressive: $100,000 at 10% APR with $2,500 monthly" },
       { slug: "debt-150k-5pct-3000mo", params: { totalDebt: 150000, interestRate: 5, monthlyPayment: 3000 }, title: "Pay Off $150,000 at 5% with $3,000/mo", description: "Long-term payoff: $150,000 at 5% APR with $3,000 monthly" },
+      // NEW: 25%+ high-rate scenarios
+      { slug: "debt-5k-25pct-150mo", params: { totalDebt: 5000, interestRate: 25, monthlyPayment: 150 }, title: "Pay Off $5,000 at 25% APR with $150/mo", description: "See the danger of high-interest $5,000 debt at 25% APR" },
+      { slug: "debt-10k-29pct-300mo", params: { totalDebt: 10000, interestRate: 29, monthlyPayment: 300 }, title: "Pay Off $10,000 at 29% Penalty Rate with $300/mo", description: "Calculate payoff for $10,000 at 29% penalty APR with $300 payments" },
+      { slug: "debt-15k-27pct-500mo", params: { totalDebt: 15000, interestRate: 27, monthlyPayment: 500 }, title: "Pay Off $15,000 at 27% with $500/mo", description: "High-cost $15,000 debt at 27% APR with $500 monthly payments" },
+      { slug: "debt-20k-25pct-600mo", params: { totalDebt: 20000, interestRate: 25, monthlyPayment: 600 }, title: "Pay Off $20,000 at 25% with $600/mo", description: "Aggressive high-rate payoff on $20,000 at 25% APR" },
+      { slug: "debt-25k-28pct-800mo", params: { totalDebt: 25000, interestRate: 28, monthlyPayment: 800 }, title: "Pay Off $25,000 at 28% with $800/mo", description: "Maximum urgency: $25,000 at 28% APR with $800 monthly" },
+      { slug: "debt-35k-25pct-1000mo", params: { totalDebt: 35000, interestRate: 25, monthlyPayment: 1000 }, title: "Pay Off $35,000 at 25% with $1,000/mo", description: "High-rate consolidation: $35,000 at 25% with $1,000 payments" },
+      // NEW: $2k-$3k small debts
+      { slug: "debt-2k-15pct-100mo", params: { totalDebt: 2000, interestRate: 15, monthlyPayment: 100 }, title: "Pay Off $2,000 Debt at 15% with $100/mo", description: "Quick payoff estimate for $2,000 in credit card debt at 15%" },
+      { slug: "debt-2-5k-18pct-120mo", params: { totalDebt: 2500, interestRate: 18, monthlyPayment: 120 }, title: "Pay Off $2,500 at 18% with $120/mo", description: "Small debt payoff: $2,500 at 18% with $120 monthly" },
+      { slug: "debt-3k-20pct-150mo", params: { totalDebt: 3000, interestRate: 20, monthlyPayment: 150 }, title: "Pay Off $3,000 at 20% with $150/mo", description: "Calculate how fast $3,000 at 20% APR gets paid off" },
+      { slug: "debt-3-5k-22pct-200mo", params: { totalDebt: 3500, interestRate: 22, monthlyPayment: 200 }, title: "Pay Off $3,500 at 22% with $200/mo", description: "Eliminate $3,500 in high-interest debt with $200 monthly" },
+      // NEW: $200k+ large debts
+      { slug: "debt-200k-5pct-4000mo", params: { totalDebt: 200000, interestRate: 5, monthlyPayment: 4000 }, title: "Pay Off $200,000 at 5% with $4,000/mo", description: "Large debt: $200,000 mortgage-style debt at 5% with $4,000 monthly" },
+      { slug: "debt-200k-8pct-5000mo", params: { totalDebt: 200000, interestRate: 8, monthlyPayment: 5000 }, title: "Pay Off $200,000 at 8% with $5,000/mo", description: "Calculate payoff for $200,000 in student or business debt at 8%" },
+      { slug: "debt-250k-6pct-5000mo", params: { totalDebt: 250000, interestRate: 6, monthlyPayment: 5000 }, title: "Pay Off $250,000 at 6% with $5,000/mo", description: "Large loan payoff: $250,000 at 6% APR with $5,000 monthly" },
+      { slug: "debt-300k-4-5pct-6000mo", params: { totalDebt: 300000, interestRate: 4.5, monthlyPayment: 6000 }, title: "Pay Off $300,000 at 4.5% with $6,000/mo", description: "Jumbo debt payoff schedule for $300,000 at 4.5%" },
+      { slug: "debt-500k-7pct-10000mo", params: { totalDebt: 500000, interestRate: 7, monthlyPayment: 10000 }, title: "Pay Off $500,000 at 7% with $10,000/mo", description: "Massive debt reduction: $500,000 at 7% with $10,000 monthly" },
+      // NEW: More medium debt variety
+      { slug: "debt-8k-11pct-250mo", params: { totalDebt: 8000, interestRate: 11, monthlyPayment: 250 }, title: "Pay Off $8,000 at 11% with $250/mo", description: "Moderate $8,000 debt payoff timeline at 11% APR" },
+      { slug: "debt-12k-14pct-350mo", params: { totalDebt: 12000, interestRate: 14, monthlyPayment: 350 }, title: "Pay Off $12,000 at 14% with $350/mo", description: "Calculate payoff for $12,000 personal loan at 14%" },
+      { slug: "debt-18k-9pct-450mo", params: { totalDebt: 18000, interestRate: 9, monthlyPayment: 450 }, title: "Pay Off $18,000 at 9% with $450/mo", description: "Mid-size debt: $18,000 at 9% APR with $450 monthly" },
+      { slug: "debt-35k-6pct-700mo", params: { totalDebt: 35000, interestRate: 6, monthlyPayment: 700 }, title: "Pay Off $35,000 at 6% with $700/mo", description: "Calculate payoff for $35,000 in student loans at 6%" },
+      { slug: "debt-60k-8pct-1500mo", params: { totalDebt: 60000, interestRate: 8, monthlyPayment: 1500 }, title: "Pay Off $60,000 at 8% with $1,500/mo", description: "Large consolidation: $60,000 at 8% with $1,500 monthly" },
+      { slug: "debt-125k-4-5pct-2500mo", params: { totalDebt: 125000, interestRate: 4.5, monthlyPayment: 2500 }, title: "Pay Off $125,000 at 4.5% with $2,500/mo", description: "Low-rate large debt: $125,000 at 4.5% with $2,500 payments" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // CREDIT CARD PAYOFF — 15 templates (keyword gap: credit)
+  // CREDIT CARD PAYOFF — 15 existing + 30 new = 45 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "credit-card-payoff",
@@ -461,11 +691,38 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "cc-25k-12pct-700mo", params: { balance: 25000, apr: 12, monthlyPayment: 700 }, title: "Pay Off $25,000 Card at 12% with $700/mo", description: "Calculate timeline for $25,000 credit card at 12% APR" },
       { slug: "cc-30k-10pct-900mo", params: { balance: 30000, apr: 10, monthlyPayment: 900 }, title: "Pay Off $30,000 at 10% with $900/mo", description: "See $30,000 at 10% APR paid off with $900 monthly" },
       { slug: "cc-50k-8pct-1500mo", params: { balance: 50000, apr: 8, monthlyPayment: 1500 }, title: "Pay Off $50,000 at 8% with $1,500/mo", description: "Large balance: $50,000 at 8% APR with $1,500 monthly" },
+      // NEW: 0% balance transfer scenarios
+      { slug: "cc-5k-0pct-150mo", params: { balance: 5000, apr: 0, monthlyPayment: 150 }, title: "Pay Off $5,000 at 0% APR Balance Transfer with $150/mo", description: "Calculate how fast $5,000 at 0% intro APR gets paid with $150 monthly" },
+      { slug: "cc-5k-0pct-200mo", params: { balance: 5000, apr: 0, monthlyPayment: 200 }, title: "$5,000 Balance Transfer at 0% with $200/mo", description: "See the advantage of a 0% balance transfer on $5,000 with $200 payments" },
+      { slug: "cc-10k-0pct-300mo", params: { balance: 10000, apr: 0, monthlyPayment: 300 }, title: "$10,000 Balance Transfer at 0% with $300/mo", description: "Calculate zero-interest payoff on $10,000 balance transfer" },
+      { slug: "cc-10k-0pct-400mo", params: { balance: 10000, apr: 0, monthlyPayment: 400 }, title: "Pay Off $10,000 at 0% APR with $400/mo", description: "Aggressive payoff on a 0% intro APR $10,000 balance transfer" },
+      { slug: "cc-15k-0pct-500mo", params: { balance: 15000, apr: 0, monthlyPayment: 500 }, title: "$15,000 Balance Transfer at 0% with $500/mo", description: "Calculate the payoff timeline for $15,000 at 0% APR" },
+      { slug: "cc-20k-0pct-600mo", params: { balance: 20000, apr: 0, monthlyPayment: 600 }, title: "Pay Off $20,000 at 0% with $600/mo", description: "Large balance transfer: $20,000 at 0% APR with $600 payments" },
+      // NEW: 29% penalty rate scenarios
+      { slug: "cc-1k-29pct-50mo", params: { balance: 1000, apr: 29, monthlyPayment: 50 }, title: "$1,000 Card at 29% Penalty Rate with $50/mo", description: "See the high cost of $1,000 at 29% penalty APR with minimum payments" },
+      { slug: "cc-3k-29pct-100mo", params: { balance: 3000, apr: 29, monthlyPayment: 100 }, title: "$3,000 at 29% Penalty APR with $100/mo", description: "Calculate how long $3,000 at 29% penalty rate takes to pay off" },
+      { slug: "cc-5k-29pct-200mo", params: { balance: 5000, apr: 29, monthlyPayment: 200 }, title: "$5,000 at 29% Penalty Rate with $200/mo", description: "High-cost credit card: $5,000 at 29% APR with $200 monthly" },
+      { slug: "cc-10k-29pct-350mo", params: { balance: 10000, apr: 29, monthlyPayment: 350 }, title: "$10,000 at 29% Penalty APR with $350/mo", description: "Urgent payoff: $10,000 credit card debt at 29% penalty rate" },
+      { slug: "cc-15k-29pct-500mo", params: { balance: 15000, apr: 29, monthlyPayment: 500 }, title: "$15,000 at 29% with $500/mo", description: "Maximum urgency: $15,000 at 29% penalty APR with $500 payments" },
+      // NEW: Minimum payment scenarios
+      { slug: "cc-2k-18pct-60mo", params: { balance: 2000, apr: 18, monthlyPayment: 60 }, title: "$2,000 Card at 18% with Minimum $60/mo", description: "See the cost of paying only the minimum on $2,000 at 18% APR" },
+      { slug: "cc-5k-20pct-100mo", params: { balance: 5000, apr: 20, monthlyPayment: 100 }, title: "$5,000 at 20% with Minimum Payment", description: "Calculate how long $5,000 lasts with minimum payments at 20% APR" },
+      { slug: "cc-8k-22pct-160mo", params: { balance: 8000, apr: 22, monthlyPayment: 160 }, title: "$8,000 at 22% with $160/mo Near-Minimum", description: "Minimum-like payment on $8,000 at 22% APR near minimum" },
+      { slug: "cc-12k-18pct-240mo", params: { balance: 12000, apr: 18, monthlyPayment: 240 }, title: "$12,000 at 18% with Near-Minimum $240/mo", description: "See the true cost of minimum payments on $12,000 at 18%" },
+      // NEW: More balance/payment combos
+      { slug: "cc-1-5k-15pct-60mo", params: { balance: 1500, apr: 15, monthlyPayment: 60 }, title: "$1,500 Card at 15% with $60/mo", description: "Small balance: $1,500 credit card payoff at 15% APR" },
+      { slug: "cc-4k-17pct-150mo", params: { balance: 4000, apr: 17, monthlyPayment: 150 }, title: "$4,000 Card at 17% with $150/mo", description: "Mid-size credit card payoff on $4,000 at 17% APR" },
+      { slug: "cc-7k-21pct-250mo", params: { balance: 7000, apr: 21, monthlyPayment: 250 }, title: "$7,000 at 21% with $250/mo", description: "Calculate payoff for $7,000 credit card balance at 21%" },
+      { slug: "cc-12k-14pct-400mo", params: { balance: 12000, apr: 14, monthlyPayment: 400 }, title: "$12,000 Card at 14% with $400/mo", description: "Moderate interest: $12,000 at 14% APR with $400 payments" },
+      { slug: "cc-18k-19pct-600mo", params: { balance: 18000, apr: 19, monthlyPayment: 600 }, title: "$18,000 at 19% with $600/mo", description: "Large card payoff: $18,000 at 19% APR with $600 monthly" },
+      { slug: "cc-35k-11pct-1000mo", params: { balance: 35000, apr: 11, monthlyPayment: 1000 }, title: "$35,000 at 11% with $1,000/mo", description: "Big balance: $35,000 credit card at 11% APR with $1,000 payments" },
+      { slug: "cc-40k-9pct-1200mo", params: { balance: 40000, apr: 9, monthlyPayment: 1200 }, title: "$40,000 Card at 9% with $1,200/mo", description: "High-limit card: $40,000 at 9% APR with $1,200 monthly" },
+      { slug: "cc-60k-7pct-2000mo", params: { balance: 60000, apr: 7, monthlyPayment: 2000 }, title: "$60,000 at 7% with $2,000/mo", description: "Maximum balance: $60,000 credit line at 7% with $2,000 payments" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // BUDGET PLANNER — 15 templates (keyword gap: budget)
+  // BUDGET PLANNER — 15 existing + 30 new = 45 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "budget-planner",
@@ -488,11 +745,34 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "budget-200k-25-8-5", params: { monthlyIncome: 200000, housingPct: 25, foodPct: 8, transportPct: 5, savingsPct: 40 }, title: "$200,000 Budget: 40% Savings Rate", description: "High-income $200,000 budget with aggressive 40% savings" },
       { slug: "budget-35k-45-18-8", params: { monthlyIncome: 35000, housingPct: 45, foodPct: 18, transportPct: 8, savingsPct: 5 }, title: "$35,000 Budget: Urban Budget", description: "Urban living on $35,000 with 45% housing allocation" },
       { slug: "budget-70k-30-13-9", params: { monthlyIncome: 70000, housingPct: 30, foodPct: 13, transportPct: 9, savingsPct: 22 }, title: "$70,000 Budget: Standard Plan", description: "Standard $70,000 family budget with 22% savings" },
+      // NEW: $25k-$300k incomes
+      { slug: "budget-25k-50-20-10", params: { monthlyIncome: 25000, housingPct: 50, foodPct: 20, transportPct: 10, savingsPct: 3 }, title: "$25,000 Budget: Minimum Wage Plan", description: "Stretching a $25,000 income with 50% housing and minimal savings" },
+      { slug: "budget-28k-48-18-8", params: { monthlyIncome: 28000, housingPct: 48, foodPct: 18, transportPct: 8, savingsPct: 5 }, title: "$28,000 Budget: Part-Time Income", description: "Living on a $28,000 part-time income with a tight budget" },
+      { slug: "budget-32k-42-18-10", params: { monthlyIncome: 32000, housingPct: 42, foodPct: 18, transportPct: 10, savingsPct: 7 }, title: "$32,000 Budget: Entry Level", description: "First job budget: $32,000 with balanced essential expenses" },
+      { slug: "budget-38k-38-16-12", params: { monthlyIncome: 38000, housingPct: 38, foodPct: 16, transportPct: 12, savingsPct: 10 }, title: "$38,000 Budget: Starter Savings", description: "Building savings on $38,000 with 10% set aside" },
+      { slug: "budget-42k-35-15-12", params: { monthlyIncome: 42000, housingPct: 35, foodPct: 15, transportPct: 12, savingsPct: 12 }, title: "$42,000 Budget: Growth Mindset", description: "Growing budget on $42,000 with increased savings allocation" },
+      { slug: "budget-48k-32-14-10", params: { monthlyIncome: 48000, housingPct: 32, foodPct: 14, transportPct: 10, savingsPct: 15 }, title: "$48,000 Budget: Lean and Saving", description: "Efficient $48,000 budget with 32% housing and 15% savings" },
+      { slug: "budget-65k-30-12-8", params: { monthlyIncome: 65000, housingPct: 30, foodPct: 12, transportPct: 8, savingsPct: 25 }, title: "$65,000 Budget: Solid Middle Class", description: "Solid $65,000 middle-class budget with 25% savings rate" },
+      { slug: "budget-85k-28-11-7", params: { monthlyIncome: 85000, housingPct: 28, foodPct: 11, transportPct: 7, savingsPct: 28 }, title: "$85,000 Budget: High Efficiency", description: "Highly efficient $85,000 budget with near 30% savings" },
+      { slug: "budget-95k-30-10-6", params: { monthlyIncome: 95000, housingPct: 30, foodPct: 10, transportPct: 6, savingsPct: 30 }, title: "$95,000 Budget: Near Six Figures", description: "Near six-figure $95,000 budget with healthy 30% savings" },
+      { slug: "budget-110k-28-9-6", params: { monthlyIncome: 110000, housingPct: 28, foodPct: 9, transportPct: 6, savingsPct: 32 }, title: "$110,000 Budget: Premium Savings", description: "Premium $110,000 budget with 32% savings and low expenses" },
+      { slug: "budget-130k-30-8-5", params: { monthlyIncome: 130000, housingPct: 30, foodPct: 8, transportPct: 5, savingsPct: 35 }, title: "$130,000 Budget: Upper Middle Class", description: "Upper-middle budget on $130,000 with 35% savings rate" },
+      { slug: "budget-160k-28-7-5", params: { monthlyIncome: 160000, housingPct: 28, foodPct: 7, transportPct: 5, savingsPct: 35 }, title: "$160,000 Budget: Wealth Builder", description: "Wealth-building $160,000 budget with 35% savings allocation" },
+      { slug: "budget-180k-25-7-4", params: { monthlyIncome: 180000, housingPct: 25, foodPct: 7, transportPct: 4, savingsPct: 40 }, title: "$180,000 Budget: Aggressive Wealth", description: "Aggressive savings on $180,000 with 40% going to investments" },
+      { slug: "budget-250k-25-6-3", params: { monthlyIncome: 250000, housingPct: 25, foodPct: 6, transportPct: 3, savingsPct: 45 }, title: "$250,000 Budget: High Earner", description: "High earner $250,000 budget with 45% savings and investment" },
+      { slug: "budget-300k-20-5-3", params: { monthlyIncome: 300000, housingPct: 20, foodPct: 5, transportPct: 3, savingsPct: 50 }, title: "$300,000 Budget: Fat FIRE Plan", description: "Fat FIRE budget on $300,000 with 50% savings rate for early retirement" },
+      // NEW: 70/20/10 allocation style
+      { slug: "budget-50k-70-20-10", params: { monthlyIncome: 50000, housingPct: 35, foodPct: 15, transportPct: 10, savingsPct: 20 }, title: "$50,000 Budget: 70/20/10 Rule", description: "Apply the 70/20/10 budget rule to a $50,000 annual income" },
+      { slug: "budget-60k-70-20-10", params: { monthlyIncome: 60000, housingPct: 33, foodPct: 14, transportPct: 10, savingsPct: 20 }, title: "$60,000 Budget: 70/20/10 Allocation", description: "70/20/10 budget breakdown for $60,000 yearly earnings" },
+      { slug: "budget-75k-70-20-10", params: { monthlyIncome: 75000, housingPct: 30, foodPct: 12, transportPct: 8, savingsPct: 25 }, title: "$75,000 Budget: 70/20/10 With Extra Savings", description: "Modified 70/20/10 budget for $75,000 with 25% savings" },
+      // NEW: Zero-based budget
+      { slug: "budget-40k-zero-based", params: { monthlyIncome: 40000, housingPct: 35, foodPct: 18, transportPct: 12, savingsPct: 10 }, title: "$40,000 Zero-Based Budget Plan", description: "Zero-based budgeting for $40,000 where every dollar is assigned" },
+      { slug: "budget-65k-zero-based", params: { monthlyIncome: 65000, housingPct: 30, foodPct: 14, transportPct: 10, savingsPct: 18 }, title: "$65,000 Zero-Based Budget", description: "Assign every dollar on a $65,000 income with zero-based budgeting" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // MORTGAGE AFFORDABILITY — 15 templates (keyword gap: affordability)
+  // MORTGAGE AFFORDABILITY — 15 existing + 40 new = 55 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "mortgage-affordability",
@@ -515,11 +795,40 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "afford-90k-25k-6-5pct", params: { income: 90000, downPayment: 25000, interestRate: 6.5, debts: 350 }, title: "$90k Income: Mid-Range Home Plan", description: "Mid-range home affordability on $90k salary at 6.5%" },
       { slug: "afford-300k-200k-6pct", params: { income: 300000, downPayment: 200000, interestRate: 6, debts: 2500 }, title: "Top Tier: $300k Home Affordability", description: "Top-tier affordability for $300k income earners at 6%" },
       { slug: "afford-45k-10k-7pct", params: { income: 45000, downPayment: 10000, interestRate: 7, debts: 100 }, title: "Single Income: $45k at 7%", description: "Single-income home affordability on $45k at 7%" },
+      // NEW: $30k-$500k incomes with various rates 4.5%-9%
+      { slug: "afford-30k-5k-7pct", params: { income: 30000, downPayment: 5000, interestRate: 7, debts: 100 }, title: "Low Income: $30k Home Affordability at 7%", description: "See what home price a $30k income can afford at 7% interest" },
+      { slug: "afford-35k-6k-8pct", params: { income: 35000, downPayment: 6000, interestRate: 8, debts: 150 }, title: "$35k Income: Affordable Home Options", description: "First-time buyer on $35k with a high 8% interest rate" },
+      { slug: "afford-55k-12k-6-5pct", params: { income: 55000, downPayment: 12000, interestRate: 6.5, debts: 250 }, title: "$55k Income: Smart Home Budget", description: "Smart home buying budget on $55k income at 6.5%" },
+      { slug: "afford-70k-15k-6pct", params: { income: 70000, downPayment: 15000, interestRate: 6, debts: 300 }, title: "$70k Income: Comfortable Affordability", description: "Comfortable home buying on $70k income with $15k down" },
+      { slug: "afford-85k-20k-8pct", params: { income: 85000, downPayment: 20000, interestRate: 8, debts: 400 }, title: "$85k Income at 8%: Affordability Check", description: "Check how much house $85k buys with a high 8% mortgage rate" },
+      { slug: "afford-95k-25k-5-5pct", params: { income: 95000, downPayment: 25000, interestRate: 5.5, debts: 500 }, title: "$95k Income at 5.5%: Great Rates", description: "Lucky rate lock at 5.5% for a $95k income buyer" },
+      { slug: "afford-110k-35k-6pct", params: { income: 110000, downPayment: 35000, interestRate: 6, debts: 600 }, title: "$110k Income: Strong Position", description: "Strong buying position with $110k income and $35k down" },
+      { slug: "afford-130k-40k-7pct", params: { income: 130000, downPayment: 40000, interestRate: 7, debts: 700 }, title: "$130k Income: Mid-Range at 7%", description: "Mid-range home affordability for $130k earning at 7%" },
+      { slug: "afford-140k-45k-5pct", params: { income: 140000, downPayment: 45000, interestRate: 5, debts: 800 }, title: "$140k Income at 5%: Low Rate Advantage", description: "Take advantage of a low 5% rate on $140k income" },
+      { slug: "afford-160k-50k-6-5pct", params: { income: 160000, downPayment: 50000, interestRate: 6.5, debts: 900 }, title: "$160k Income: Premium Home Range", description: "Premium home affordability for $160k earners at 6.5%" },
+      { slug: "afford-175k-60k-7pct", params: { income: 175000, downPayment: 60000, interestRate: 7, debts: 1000 }, title: "$175k Income: Large Home Budget", description: "Large home budget for $175k income at current 7% rates" },
+      { slug: "afford-220k-100k-6pct", params: { income: 220000, downPayment: 100000, interestRate: 6, debts: 1200 }, title: "$220k Income: Substantial Buying Power", description: "Substantial buying power with $220k income and $100k down" },
+      { slug: "afford-240k-120k-5-5pct", params: { income: 240000, downPayment: 120000, interestRate: 5.5, debts: 1400 }, title: "$240k Income: High-End Affordability", description: "High-end home affordability with $240k at 5.5%" },
+      { slug: "afford-275k-150k-6-5pct", params: { income: 275000, downPayment: 150000, interestRate: 6.5, debts: 1800 }, title: "$275k Income: Executive Home Search", description: "Executive home search budget on $275k income at 6.5%" },
+      { slug: "afford-350k-200k-7pct", params: { income: 350000, downPayment: 200000, interestRate: 7, debts: 2500 }, title: "$350k Income: Luxury Market", description: "Luxury home affordability in the $350k income bracket" },
+      { slug: "afford-400k-250k-6pct", params: { income: 400000, downPayment: 250000, interestRate: 6, debts: 3000 }, title: "$400k Income: Upscale Buying Power", description: "Upscale home buying on $400k income with $250k down" },
+      { slug: "afford-450k-300k-5-5pct", params: { income: 450000, downPayment: 300000, interestRate: 5.5, debts: 3500 }, title: "$450k Income: Elite Affordability", description: "Elite home affordability for $450k earners at 5.5%" },
+      { slug: "afford-500k-350k-6-5pct", params: { income: 500000, downPayment: 350000, interestRate: 6.5, debts: 4000 }, title: "$500k Income: Maximum Buying Power", description: "Maximum home buying power on a $500k income at 6.5%" },
+      // NEW: Different debt levels
+      { slug: "afford-60k-15k-7pct-0debt", params: { income: 60000, downPayment: 15000, interestRate: 7, debts: 0 }, title: "$60k Income No Debts: Home Affordability", description: "How much more house can you buy on $60k with no existing debts?" },
+      { slug: "afford-75k-20k-6pct-500debt", params: { income: 75000, downPayment: 20000, interestRate: 6, debts: 500 }, title: "$75k Income with $500/mo Debts at 6%", description: "Affordability for $75k earners with $500 in monthly obligations" },
+      { slug: "afford-100k-40k-7pct-800debt", params: { income: 100000, downPayment: 40000, interestRate: 7, debts: 800 }, title: "$100k Income with $800 Debts at 7%", description: "See how $800 in monthly debts reduces buying power on $100k" },
+      { slug: "afford-120k-50k-6-5pct-1500debt", params: { income: 120000, downPayment: 50000, interestRate: 6.5, debts: 1500 }, title: "$120k Income with $1,500 Debts", description: "High earner with significant debts: $120k with $1,500 monthly" },
+      { slug: "afford-150k-70k-5-5pct-2000debt", params: { income: 150000, downPayment: 70000, interestRate: 5.5, debts: 2000 }, title: "$150k Income with $2,000 in Debts", description: "Large income but high debts: $150k with $2,000 monthly obligations" },
+      // NEW: More rate variations
+      { slug: "afford-80k-25k-4-5pct", params: { income: 80000, downPayment: 25000, interestRate: 4.5, debts: 300 }, title: "$80k Income at 4.5%: Dream Rates", description: "Best-case scenario with $80k income at low 4.5% rates" },
+      { slug: "afford-100k-35k-8-5pct", params: { income: 100000, downPayment: 35000, interestRate: 8.5, debts: 500 }, title: "$100k Income at 8.5%: High Rate Reality", description: "Realistic high-rate affordability for $100k at 8.5%" },
+      { slug: "afford-150k-80k-9pct", params: { income: 150000, downPayment: 80000, interestRate: 9, debts: 1000 }, title: "$150k Income at 9%: Peak Rates", description: "Worst-case scenario: home buying at 9% interest on $150k" },
     ],
   },
 
   // ═══════════════════════════════════════════════════════════════
-  // REFINANCE CALCULATOR — 15 templates (keyword gap: refinance)
+  // REFINANCE CALCULATOR — 15 existing + 35 new = 50 templates
   // ═══════════════════════════════════════════════════════════════
   {
     calculatorId: "refinance-calculator",
@@ -542,6 +851,34 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "refi-180k-6-5to5pct-30yr", params: { currentRate: 6.5, newRate: 5, remainingBalance: 180000, yearsRemaining: 30, closingCosts: 4000 }, title: "Refinance $180k from 6.5% to 5%", description: "Mid-balance refinance: $180k from 6.5% to 5%" },
       { slug: "refi-450k-8to5pct-30yr", params: { currentRate: 8, newRate: 5, remainingBalance: 450000, yearsRemaining: 30, closingCosts: 9000 }, title: "Refinance $450k: Big Drop from 8% to 5%", description: "Dramatic savings refinancing $450k from 8% to 5%" },
       { slug: "refi-600k-6-5to4-5pct-30yr", params: { currentRate: 6.5, newRate: 4.5, remainingBalance: 600000, yearsRemaining: 30, closingCosts: 12000 }, title: "Refinance $600k from 6.5% to 4.5%", description: "Jumbo refinance: $600k mortgage from 6.5% to 4.5%" },
+      // NEW: More balance/rate combos
+      { slug: "refi-100k-7to5pct-30yr", params: { currentRate: 7, newRate: 5, remainingBalance: 100000, yearsRemaining: 30, closingCosts: 3000 }, title: "Refinance $100k from 7% to 5%", description: "Small balance refinance: $100k mortgage drop from 7% to 5%" },
+      { slug: "refi-125k-6to4-5pct-20yr", params: { currentRate: 6, newRate: 4.5, remainingBalance: 125000, yearsRemaining: 20, closingCosts: 3000 }, title: "Refinance $125k: 6% to 4.5% (20yr)", description: "Refinance $125k over 20 years from 6% to 4.5%" },
+      { slug: "refi-175k-6-5to4-5pct-15yr", params: { currentRate: 6.5, newRate: 4.5, remainingBalance: 175000, yearsRemaining: 15, closingCosts: 3500 }, title: "Refinance $175k: 6.5% to 4.5% (15yr)", description: "Accelerated 15-year refinance on $175k from 6.5% to 4.5%" },
+      { slug: "refi-225k-7to5pct-25yr", params: { currentRate: 7, newRate: 5, remainingBalance: 225000, yearsRemaining: 25, closingCosts: 4500 }, title: "Refinance $225k: 7% to 5% (25yr)", description: "Mid-term refinance on $225k from 7% to 5% over 25 years" },
+      { slug: "refi-280k-8to5-5pct-30yr", params: { currentRate: 8, newRate: 5.5, remainingBalance: 280000, yearsRemaining: 30, closingCosts: 5500 }, title: "Refinance $280k: Big Drop 8% to 5.5%", description: "Large rate improvement refinancing $280k from 8% to 5.5%" },
+      { slug: "refi-375k-6-5to5pct-20yr", params: { currentRate: 6.5, newRate: 5, remainingBalance: 375000, yearsRemaining: 20, closingCosts: 7000 }, title: "Refinance $375k: 6.5% to 5% (20yr)", description: "Substantial savings refinancing $375k from 6.5% to 5% over 20 years" },
+      { slug: "refi-420k-7to4-5pct-30yr", params: { currentRate: 7, newRate: 4.5, remainingBalance: 420000, yearsRemaining: 30, closingCosts: 8000 }, title: "Refinance $420k: Major Drop 7% to 4.5%", description: "Deep rate reduction on $420k from 7% to 4.5%" },
+      { slug: "refi-550k-7-5to5pct-30yr", params: { currentRate: 7.5, newRate: 5, remainingBalance: 550000, yearsRemaining: 30, closingCosts: 11000 }, title: "Refinance $550k: 7.5% to 5%", description: "Jumbo refinance savings on $550k from 7.5% to 5%" },
+      { slug: "refi-650k-6to4pct-30yr", params: { currentRate: 6, newRate: 4, remainingBalance: 650000, yearsRemaining: 30, closingCosts: 12000 }, title: "Refinance $650k: 6% to 4% Jumbo", description: "Premium jumbo refinance: $650k from 6% to 4%" },
+      { slug: "refi-750k-7to5pct-30yr", params: { currentRate: 7, newRate: 5, remainingBalance: 750000, yearsRemaining: 30, closingCosts: 15000 }, title: "Refinance $750k: 7% to 5%", description: "Large jumbo refinance savings on $750k from 7% to 5%" },
+      { slug: "refi-1M-6-5to4-5pct-30yr", params: { currentRate: 6.5, newRate: 4.5, remainingBalance: 1000000, yearsRemaining: 30, closingCosts: 20000 }, title: "Refinance $1M: 6.5% to 4.5%", description: "Million-dollar jumbo refinance from 6.5% to 4.5%" },
+      // NEW: Cash-out refi scenarios
+      { slug: "refi-200k-6to5pct-30yr-cashout", params: { currentRate: 6, newRate: 5, remainingBalance: 200000, yearsRemaining: 30, closingCosts: 5000 }, title: "Cash-Out Refi $200k: 6% to 5%", description: "Cash-out refinance on $200k mortgage dropping from 6% to 5%" },
+      { slug: "refi-300k-7to5-5pct-30yr-cashout", params: { currentRate: 7, newRate: 5.5, remainingBalance: 300000, yearsRemaining: 30, closingCosts: 7000 }, title: "Cash-Out Refi $300k: 7% to 5.5%", description: "Calculate cash-out refinance savings on $300k from 7% to 5.5%" },
+      { slug: "refi-400k-6-5to5pct-25yr-cashout", params: { currentRate: 6.5, newRate: 5, remainingBalance: 400000, yearsRemaining: 25, closingCosts: 8000 }, title: "Cash-Out Refi $400k: 6.5% to 5% (25yr)", description: "Cash-out refi on $400k over 25 years from 6.5% to 5%" },
+      // NEW: Shorter remaining term scenarios
+      { slug: "refi-150k-5-5to4pct-10yr", params: { currentRate: 5.5, newRate: 4, remainingBalance: 150000, yearsRemaining: 10, closingCosts: 3000 }, title: "Refinance $150k: 5.5% to 4% (10yr)", description: "Short-term refinance on $150k from 5.5% to 4% over 10 years" },
+      { slug: "refi-200k-6to4pct-15yr", params: { currentRate: 6, newRate: 4, remainingBalance: 200000, yearsRemaining: 15, closingCosts: 4000 }, title: "Refinance $200k: 6% to 4% (15yr)", description: "Accelerated payoff refinance on $200k from 6% to 4%" },
+      { slug: "refi-250k-7to4-5pct-10yr", params: { currentRate: 7, newRate: 4.5, remainingBalance: 250000, yearsRemaining: 10, closingCosts: 5000 }, title: "Refinance $250k: 7% to 4.5% (10yr)", description: "Aggressive short-term refinance from 7% to 4.5% on $250k" },
+      { slug: "refi-350k-6-5to4pct-15yr", params: { currentRate: 6.5, newRate: 4, remainingBalance: 350000, yearsRemaining: 15, closingCosts: 6500 }, title: "Refinance $350k: 6.5% to 4% (15yr)", description: "High savings refinance on $350k from 6.5% to 4% over 15 years" },
+      // NEW: Small rate improvement scenarios
+      { slug: "refi-300k-7to6-5pct-30yr", params: { currentRate: 7, newRate: 6.5, remainingBalance: 300000, yearsRemaining: 30, closingCosts: 6000 }, title: "Refi $300k: Small Drop 7% to 6.5%", description: "Modest rate drop refinance on $300k from 7% to 6.5%" },
+      { slug: "refi-400k-6to5-5pct-30yr", params: { currentRate: 6, newRate: 5.5, remainingBalance: 400000, yearsRemaining: 30, closingCosts: 7000 }, title: "Refi $400k: 6% to 5.5%", description: "Half-point rate reduction refinance on $400k mortgage" },
+      { slug: "refi-500k-8to7-5pct-30yr", params: { currentRate: 8, newRate: 7.5, remainingBalance: 500000, yearsRemaining: 30, closingCosts: 10000 }, title: "Refi $500k: 8% to 7.5%", description: "Small but meaningful rate drop from 8% to 7.5% on $500k" },
+      // NEW: Additional scenarios
+      { slug: "refi-100k-6-5to4pct-15yr", params: { currentRate: 6.5, newRate: 4, remainingBalance: 100000, yearsRemaining: 15, closingCosts: 2500 }, title: "Refinance $100k: 6.5% to 4% (15yr)", description: "Small balance 15-year refinance from 6.5% to 4% saving big" },
+      { slug: "refi-350k-5-5to4pct-20yr", params: { currentRate: 5.5, newRate: 4, remainingBalance: 350000, yearsRemaining: 20, closingCosts: 6000 }, title: "Refinance $350k: 5.5% to 4% (20yr)", description: "Already low rate improvement from 5.5% to 4% on $350k" },
     ],
   },
 ];
