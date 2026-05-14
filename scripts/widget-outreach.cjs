@@ -365,7 +365,7 @@ async function findBlogs() {
 
   // Second: Try Google search as secondary source (best effort)
   console.log("  🔎 Also searching for more targets via web...");
-  const queriesA = [...SEARCH_QUERIES_A].sort(() => Math.random() - 0.5).slice(0, 3);
+  const queriesA = [...SEARCH_QUERIES_A].sort(() => Math.random() - 0.5).slice(0, 1);
   for (const q of queriesA) {
     try {
       const results = await searchGoogle(q);
@@ -390,7 +390,7 @@ async function findBlogs() {
 async function visitBlogs(targets, limit) {
   console.log(`\n🔎 Phase 2: Visiting blogs (${Math.min(limit || targets.length, targets.length)})...`);
   const enriched = [];
-  const batchSize = Math.min(limit || 15, 15); // Visit max 15 per run to be polite
+  const batchSize = Math.min(limit || 2, 2); // Visit max 2 per run to fit within cron 120s timeout
 
   for (let i = 0; i < Math.min(batchSize, targets.length); i++) {
     const target = targets[i];
@@ -445,8 +445,8 @@ async function visitBlogs(targets, limit) {
       console.log(`❌ ${e.message.substring(0, 40)}`);
     }
 
-    // Polite delay between requests
-    await new Promise(r => setTimeout(r, 2000 + Math.random() * 3000));
+    // Polite delay between requests (0.5-1.5s to fit cron 120s timeout)
+    await new Promise(r => setTimeout(r, 500 + Math.random() * 1000));
   }
 
   // Save updated targets
@@ -477,7 +477,7 @@ async function sendOutreach(targets) {
 
   console.log(`  Targets to email: ${toSend.length}`);
 
-  for (const target of toSend.slice(0, 10)) { // Max 10 per run
+  for (const target of toSend.slice(0, 1)) { // Max 1 per run to fit within cron 120s timeout
     console.log(`\n  [${sentCount + 1}] ${target.email} (${target.url.substring(0, 50)}...)`);
 
     const email = await generateEmail(target, target.niche || "general");
@@ -504,7 +504,7 @@ async function sendOutreach(targets) {
 
     // Delay between sends (avoid rate limiting)
     if (sentCount + failCount < toSend.length) {
-      const delay = 30000 + Math.random() * 30000; // 30-60 seconds
+      const delay = 3000 + Math.random() * 2000; // 3-5 seconds to fit within cron 120s timeout
       console.log(`  ⏳ Waiting ${Math.round(delay / 1000)}s...`);
       await new Promise(r => setTimeout(r, delay));
     }

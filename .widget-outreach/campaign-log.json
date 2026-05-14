@@ -8,5 +8,35 @@
       "failed": 0,
       "total": 67
     }
+  },
+  {
+    "ts": "2026-05-14T04:20:48.365Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 3,
+      "skipped": 0,
+      "failed": 0,
+      "total": 39
+    }
+  },
+  {
+    "ts": "2026-05-14T09:01:41.247Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 36
+    }
+  },
+  {
+    "ts": "2026-05-14T15:01:52.026Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 35
+    }
   }
 ]

@@ -172,5 +172,215 @@
       "source": "Fed Press",
       "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260422a.htm]]>"
     }
+  },
+  {
+    "ts": "2026-05-14T03:01:19.616Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T03:01:34.747Z",
+    "type": "news-published",
+    "details": {
+      "slug": "oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i",
+      "title": "OceanFirst Financial Corp. Approval: What It Means for Your Mortgage and Savings in 2024",
+      "category": "fed-rate",
+      "tweetId": "2054758995806835056",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T03:01:39.748Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues enforcement action with former employee of First Financial Bank",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260422a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T03:01:52.953Z",
+    "type": "news-published",
+    "details": {
+      "slug": "what-the-fed-s-enforcement-action-against-a-former-bank-employee-means-for-your-",
+      "title": "What the Fed’s Enforcement Action Against a Former Bank Employee Means for Your Mortgage Planning",
+      "category": "fed-rate",
+      "tweetId": "2054759072197697769",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260422a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T06:02:34.435Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of application by Banco de Credito del Peru",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T06:02:50.815Z",
+    "type": "news-published",
+    "details": {
+      "slug": "what-the-fed-s-approval-of-banco-de-credito-del-peru-means-for-your-mortgage-and",
+      "title": "What the Fed’s Approval of Banco de Credito del Peru Means for Your Mortgage and Savings in 2025",
+      "category": "fed-rate",
+      "tweetId": "2054804613493379344",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T06:02:55.816Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues enforcement action with Community Bankshares, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260416a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T06:03:09.891Z",
+    "type": "news-published",
+    "details": {
+      "slug": "what-the-fed-s-enforcement-action-against-community-bankshares-means-for-your-mo",
+      "title": "What the Fed’s Enforcement Action Against Community Bankshares Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": "2054804693373931710",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260416a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T09:02:13.572Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of application by Burke &amp; Herbert Financial Services Corp.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260410a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T09:02:29.567Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-approves-burke-herbert-bank-merger-what-it-means-for-your-mortgage-and-savin",
+      "title": "Fed Approves Burke & Herbert Bank Merger: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": "2054849822923079736",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260410a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T09:02:34.568Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces termination of enforcement actions with Crédit Agricole S.A. and Crédit Agricole Corporate and Investment Bank, Mega International Commercial Bank Co., Ltd, and the Goldman Sachs Group, Inc.",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260409a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T09:02:49.399Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-ends-enforcement-actions-against-major-banks-what-it-means-for-your-mortgage",
+      "title": "Fed Ends Enforcement Actions Against Major Banks: What It Means for Your Mortgage and Personal Finances",
+      "category": "fed-rate",
+      "tweetId": "2054849906037370895",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260409a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T12:03:28.219Z",
+    "type": "news-match",
+    "details": {
+      "title": "Minutes of the Federal Open Market Committee, March 17–18, 2026",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T12:03:42.397Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-minutes-march-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+      "title": "Fed Minutes March 2026: What the FOMC Decision Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": "2054895426600636838",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T12:03:47.397Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board invites public comment on proposal that would allow U.S. banks and credit unions to use intermediaries to transfer funds through the FedNow Service",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260408a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T12:04:01.110Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals",
+      "title": "FedNow Intermediary Proposal: What It Means for Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": "2054895505474535897",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260408a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T15:02:46.918Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260514a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T15:03:08.558Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-discount-window-survey-what-it-means-for-your-mortgage-and-savings",
+      "title": "Fed Discount Window Survey: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": "2054940583609897110",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260514a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T15:03:13.560Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues enforcement action with former employee of United Bank",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260403a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-14T15:03:28.430Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+      "title": "Fed Enforcement Action at United Bank: What It Means for Your Mortgage and Personal Finance",
+      "category": "fed-rate",
+      "tweetId": "2054940666971738126",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260403a.htm]]>"
+    }
   }
 ]

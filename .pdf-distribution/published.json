@@ -10,5 +10,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/10-essential-calculators.md"
       }
     }
+  },
+  "mortgage-affordability-guide": {
+    "title": "The Complete Guide to Mortgage Affordability",
+    "category": "mortgage",
+    "generatedAt": "2026-05-14T02:01:24.513Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/mortgage-affordability-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/mortgage-affordability-guide.md"
+      }
+    }
   }
 }
