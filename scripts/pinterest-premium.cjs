@@ -460,8 +460,8 @@ async function svgToPng(svgContent, path) {
 }
 
 function csvEscape(v) {
-  const s = String(v).replace(/"/g, '""');
-  return (s.includes(",") || s.includes("\n") || s.includes('"')) ? `"${s}"` : s;
+  // Just escape internal double quotes - outer quotes are added by row builder
+  return String(v).replace(/"/g, '""');
 }
 
 // ─── Pin definitions from Gemini concepts ────────────────────────────────────
@@ -566,17 +566,18 @@ async function main() {
     results.push({ ...pin, filename, sizeKB });
   }
 
-  // Pinterest exact CSV format from their docs: Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords
-  const header = "Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords";
+  // Pinterest exact CSV format: Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords
+  // Must use: UTF-8 BOM, CRLF line endings, ALL fields quoted
+  const header = '"Title","Media URL","Pinterest board","Thumbnail","Description","Link","Publish date","Keywords"';
+  const bom = "\ufeff";
   const rows = results.map((p) => {
     const mediaUrl = `https://www.qfinhub.com/pinterest-images/${p.filename}`;
     const link = `https://www.qfinhub.com/calculators/${p.slug}`;
-    // Board + Section combined with slash as Pinterest expects: "Board/Section"
     const board = `${csvEscape(p.board)}/${csvEscape(p.section)}`;
-    // Thumbnail: leave blank for image pins
-    return `${csvEscape(p.title)},${mediaUrl},${board},,${csvEscape(p.desc)},${link},,${csvEscape(p.tags)}`;
+    // Always quote all fields
+    return `"${csvEscape(p.title)}","${mediaUrl}","${board}","","${csvEscape(p.desc)}","${link}","","${csvEscape(p.tags)}"`;
   });
-  const csv = [header, ...rows].join("\n");
+  const csv = bom + [header, ...rows].join("\r\n") + "\r\n";
   const csvPath = resolve(PUBLIC_DIR, "..", "pinterest-import-premium.csv");
   writeFileSync(csvPath, csv);
 

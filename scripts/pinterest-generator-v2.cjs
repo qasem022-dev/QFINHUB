@@ -447,7 +447,9 @@ async function svgToPng(svgContent, outputPath) {
 
 function generateCSV(pins) {
   // Pinterest exact CSV format: Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords
-  const header = "Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords";
+  // Must use: UTF-8 BOM, CRLF line endings, ALL fields quoted
+  const header = '"Title","Media URL","Pinterest board","Thumbnail","Description","Link","Publish date","Keywords"';
+  const bom = "\ufeff";
 
   const rows = pins.map((pin) => {
     const title = csvEscape(pin.title);
@@ -456,18 +458,15 @@ function generateCSV(pins) {
     const mediaUrl = `https://www.qfinhub.com/pinterest-images/${pin.filename}`;
     const board = `${csvEscape(boardForCategory(pin.category))}/${csvEscape(sectionForCategory(pin.category))}`;
     const tags = csvEscape(pin.tags || getDefaultTags(pin.category));
-    return `${title},${mediaUrl},${board},,${desc},${link},,${tags}`;
+    return `"${title}","${mediaUrl}","${board}","","${desc}","${link}","","${tags}"`;
   });
 
-  return [header, ...rows].join("\n");
+  return bom + [header, ...rows].join("\r\n") + "\r\n";
 }
 
 function csvEscape(val) {
-  const s = String(val).replace(/"/g, '""');
-  if (s.includes(",") || s.includes("\n") || s.includes('"')) {
-    return `"${s}"`;
-  }
-  return s;
+  // Just escape internal double quotes - outer quotes are added by row builder
+  return String(val).replace(/"/g, '""');
 }
 
 function boardForCategory(cat) {
