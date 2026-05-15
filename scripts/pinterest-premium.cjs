@@ -567,11 +567,12 @@ async function main() {
   }
 
   // Generate CSV
-  const header = "Pin title,Description,Link (URL),Dominant Color,Board Name,Section,Tags,Image URL";
+  const header = "Pin title,Description,Link (URL),Dominant Color,Board name,Board section,Tags,Image URL,Video URL,Video title,Alt text";
   const rows = results.map((p) => {
     const link = `https://www.qfinhub.com/calculators/${p.slug}`;
     const imgUrl = `https://www.qfinhub.com/pinterest-images/${p.filename}`;
-    return `${csvEscape(p.title)},${csvEscape(p.desc)},${link},${p.hex},${csvEscape(p.board)},${csvEscape(p.section)},${csvEscape(p.tags)},${imgUrl}`;
+    const altText = `${p.title} — Free online calculator at QFINHUB`;
+    return `${csvEscape(p.title)},${csvEscape(p.desc)},${link},${p.hex},${csvEscape(p.board)},${csvEscape(p.section)},${csvEscape(p.tags)},${imgUrl},,${csvEscape(p.title)},${csvEscape(altText)}`;
   });
   const csv = [header, ...rows].join("\n");
   const csvPath = resolve(PUBLIC_DIR, "..", "pinterest-import-premium.csv");

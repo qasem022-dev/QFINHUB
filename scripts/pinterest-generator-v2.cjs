@@ -446,9 +446,8 @@ async function svgToPng(svgContent, outputPath) {
 // ─── Pinterest Import CSV Generator ──────────────────────────────────────────
 
 function generateCSV(pins) {
-  // Pinterest Bulk CSV format (Import Content tool):
-  // Pin title,Description,Link (URL),Dominant Color,Board Name,Section,Tags,Image URL,Product Aavailability
-  const header = "Pin title,Description,Link (URL),Dominant Color,Board Name,Section,Tags,Image URL";
+  // Pinterest Bulk CSV format
+  const header = "Pin title,Description,Link (URL),Dominant Color,Board name,Board section,Tags,Image URL,Video URL,Video title,Alt text";
 
   const rows = pins.map((pin) => {
     const title = csvEscape(pin.title);
@@ -459,7 +458,8 @@ function generateCSV(pins) {
     const section = csvEscape(sectionForCategory(pin.category));
     const tags = csvEscape(pin.tags || getDefaultTags(pin.category));
     const imageUrl = `https://www.qfinhub.com/pinterest-images/${pin.filename}`;
-    return `${title},${desc},${link},${color},${board},${section},${tags},${imageUrl}`;
+    const altText = csvEscape(`${pin.title} — Free online calculator at QFINHUB`);
+    return `${title},${desc},${link},${color},${board},${section},${tags},${imageUrl},,${title},${altText}`;
   });
 
   return [header, ...rows].join("\n");
