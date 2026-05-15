@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { Loader2 } from "lucide-react";
+import type { Metadata } from "next";
 import {
   allCalculators,
   getAllCategories,
@@ -11,6 +12,22 @@ import { getCalculatorComponent } from "@/components/calculators/registry";
 interface CalculatorsPageProps {
   searchParams: Promise<{ q?: string; cat?: string }>;
 }
+
+export const metadata: Metadata = {
+  title: "All 124 Financial Calculators",
+  description:
+    "Browse all 124 free financial calculators across 8 categories — loans, mortgages, investments, retirement, taxes, business, personal finance, and basic calculators. Fast, accurate, and 100% free.",
+  openGraph: {
+    title: "All 124 Free Financial Calculators | QFINHUB",
+    description:
+      "Browse and use 124 professional financial calculators across 8 categories. No sign-up required.",
+    images: ["/og-image.png"],
+    url: "https://www.qfinhub.com/calculators",
+  },
+  alternates: {
+    canonical: "https://www.qfinhub.com/calculators",
+  },
+};
 
 export default async function CalculatorsPage({ searchParams }: CalculatorsPageProps) {
   const params = await searchParams;

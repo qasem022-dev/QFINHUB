@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
+import { ConsentBanner } from "@/components/ui/consent-banner";
 import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
 import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
 
@@ -134,6 +135,31 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale} suppressHydrationWarning className={inter.variable}>
       <head>
+        {/* ════════════════════════════════════════════════
+             Google Consent Mode v2 — MUST execute BEFORE
+             gtag.js loads so that default consent signals
+             are in place when the tag library initializes.
+             ════════════════════════════════════════════════ */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+
+              // Consent defaults — denied for ads/analytics by default
+              gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied',
+                'functionality_storage': 'granted',
+                'personalization_storage': 'denied',
+                'security_storage': 'granted',
+                'wait_for_update': 500,
+              });
+            `,
+          }}
+        />
         {/* Google tag (gtag.js) — Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZL2W7KLRK8" />
         <script
@@ -190,6 +216,7 @@ export default function RootLayout({
                 src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"
               />
               <PWAInstallPrompt />
+              <ConsentBanner />
             </AuthProvider>
           </LocaleProvider>
           <Toaster />

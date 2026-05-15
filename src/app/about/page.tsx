@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { Calculator, Sparkles, Globe, Download, Shield, BarChart3, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us — Free Financial Calculators for Everyone",
   description:
-    "QFINHUB provides 124 free financial calculators covering loans, mortgages, investments, retirement, taxes, and personal finance. Fast, accurate, and 100% free for everyone.",
+    "QFINHUB is a free financial tools platform with 124 calculators for loans, mortgages, investments, retirement, taxes, and personal finance. Built for accuracy, privacy, and accessibility — 100% free, no sign-up required.",
   openGraph: {
-    title: "About QFINHUB | Free Financial Calculators",
+    title: "About QFINHUB | 124 Free Financial Calculators",
     description:
-      "Learn about QFINHUB — a free, professional financial tools platform with 124 calculators, AI-powered analysis, and multi-language support.",
+      "Learn about QFINHUB — a completely free platform with 124 professional financial calculators, AI-powered analysis, multi-language support, and privacy-first design.",
   },
 };
 

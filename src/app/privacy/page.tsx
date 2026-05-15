@@ -206,17 +206,32 @@ const sections = [
             selection, language choice). These cannot be disabled.
           </li>
           <li>
-            <strong>Analytics.</strong> We may use privacy-respecting analytics
-            to understand aggregate usage patterns. No personally identifiable
-            information is collected through analytics.
+            <strong>Analytics Cookies.</strong> We use Google Analytics to
+            understand aggregate usage patterns and improve our platform. No
+            personally identifiable information is collected through analytics.
+            These are disabled by default until you grant consent.
           </li>
           <li>
-            <strong>No Tracking.</strong> We do not use third-party tracking
-            cookies, advertising cookies, or cross-site tracking technologies.
-            We do not sell or share your data with advertising networks.
+            <strong>Advertising Cookies.</strong> We participate in Google
+            AdSense to support our free service. Advertising and personalization
+            cookies are disabled by default and only activated with your
+            explicit consent via our consent banner.
           </li>
         </ul>
-        <p>
+        <div className="mt-4 rounded-lg border border-accent-200 bg-accent-50 p-4 dark:border-accent-900/30 dark:bg-accent-900/20">
+          <p className="text-sm font-medium text-accent-800 dark:text-accent-300">
+            🛡️ Consent Management
+          </p>
+          <p className="mt-1 text-sm text-accent-700 dark:text-accent-400">
+            We use Google Consent Mode v2 to manage your privacy preferences.
+            When you first visit QFINHUB, you&apos;ll see a consent banner
+            where you can Accept All, Reject All, or Customize which types of
+            cookies you allow. Your choice is stored locally and respected by
+            Google&apos;s tags. You can also manage cookie preferences through
+            your browser settings at any time.
+          </p>
+        </div>
+        <p className="mt-4">
           Most web browsers allow you to control cookies through your browser
           settings. However, disabling essential cookies may affect the
           functionality of QFINHUB.
@@ -370,7 +385,7 @@ export default function PrivacyPage() {
             How QFINHUB collects, uses, and protects your data
           </p>
           <p className="mt-4 text-sm text-gray-400">
-            Last Updated: May 8, 2026
+            Last Updated: May 15, 2026
           </p>
         </div>
       </section>

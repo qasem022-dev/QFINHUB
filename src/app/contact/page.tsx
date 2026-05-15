@@ -4,13 +4,13 @@ import { Mail, MapPin, Clock, MessageSquare, ArrowRight, CheckCircle2 } from "lu
 import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Us — Get Support & Send Feedback",
   description:
-    "Get in touch with the QFINHUB team. We're here to help with questions, feedback, or support. Email us at q.finhub@gmail.com.",
+    "Have a question or feedback for QFINHUB? Contact our team via email at q.finhub@gmail.com. We respond to all inquiries within 24 hours. We're here to help.",
   openGraph: {
-    title: "Contact QFINHUB | Financial Calculators Support",
+    title: "Contact QFINHUB | Free Financial Calculators Support",
     description:
-      "Have a question or feedback? Contact the QFINHUB team. We respond to all inquiries promptly.",
+      "Need help or have feedback? Contact the QFINHUB team. We respond to all inquiries within 24 hours.",
   },
 };
 
