@@ -566,13 +566,15 @@ async function main() {
     results.push({ ...pin, filename, sizeKB });
   }
 
-  // Generate CSV — Pinterest exact column names
-  const header = "Pin title,Description,Destination URL,Dominant color (hex),Board Name,Board Section,Tags,Image URL,Video URL,Video Title,Alt text";
+  // Pinterest exact CSV format from their docs: Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords
+  const header = "Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords";
   const rows = results.map((p) => {
+    const mediaUrl = `https://www.qfinhub.com/pinterest-images/${p.filename}`;
     const link = `https://www.qfinhub.com/calculators/${p.slug}`;
-    const imgUrl = `https://www.qfinhub.com/pinterest-images/${p.filename}`;
-    const altText = `${p.title} — Free online calculator at QFINHUB`;
-    return `${csvEscape(p.title)},${csvEscape(p.desc)},${link},${p.hex},${csvEscape(p.board)},${csvEscape(p.section)},${csvEscape(p.tags)},${imgUrl},,${csvEscape(p.title)},${csvEscape(altText)}`;
+    // Board + Section combined with slash as Pinterest expects: "Board/Section"
+    const board = `${csvEscape(p.board)}/${csvEscape(p.section)}`;
+    // Thumbnail: leave blank for image pins
+    return `${csvEscape(p.title)},${mediaUrl},${board},,${csvEscape(p.desc)},${link},,${csvEscape(p.tags)}`;
   });
   const csv = [header, ...rows].join("\n");
   const csvPath = resolve(PUBLIC_DIR, "..", "pinterest-import-premium.csv");

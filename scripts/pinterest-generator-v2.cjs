@@ -446,20 +446,17 @@ async function svgToPng(svgContent, outputPath) {
 // ─── Pinterest Import CSV Generator ──────────────────────────────────────────
 
 function generateCSV(pins) {
-  // Pinterest exact CSV column names
-  const header = "Pin title,Description,Destination URL,Dominant color (hex),Board Name,Board Section,Tags,Image URL,Video URL,Video Title,Alt text";
+  // Pinterest exact CSV format: Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords
+  const header = "Title,Media URL,Pinterest board,Thumbnail,Description,Link,Publish date,Keywords";
 
   const rows = pins.map((pin) => {
     const title = csvEscape(pin.title);
     const desc = csvEscape(pin.description);
     const link = `https://www.qfinhub.com/calculators/${pin.slug}`;
-    const color = pin.color;
-    const board = csvEscape(boardForCategory(pin.category));
-    const section = csvEscape(sectionForCategory(pin.category));
+    const mediaUrl = `https://www.qfinhub.com/pinterest-images/${pin.filename}`;
+    const board = `${csvEscape(boardForCategory(pin.category))}/${csvEscape(sectionForCategory(pin.category))}`;
     const tags = csvEscape(pin.tags || getDefaultTags(pin.category));
-    const imageUrl = `https://www.qfinhub.com/pinterest-images/${pin.filename}`;
-    const altText = csvEscape(`${pin.title} — Free online calculator at QFINHUB`);
-    return `${title},${desc},${link},${color},${board},${section},${tags},${imageUrl},,${title},${altText}`;
+    return `${title},${mediaUrl},${board},,${desc},${link},,${tags}`;
   });
 
   return [header, ...rows].join("\n");
