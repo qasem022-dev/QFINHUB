@@ -126,5 +126,21 @@
     "category": "fed-rate",
     "tweetId": "2054986153544331660",
     "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260326a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm]]>": {
+    "slug": "fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa",
+    "title": "Fed Ends Enforcement on UBS/Credit Suisse: What It Means for Your Mortgage and Savings",
+    "publishedAt": "2026-05-15T18:03:52.857Z",
+    "category": "fed-rate",
+    "tweetId": "2055348459168023040",
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm]]>": {
+    "slug": "bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving",
+    "title": "Bowman’s Fed Speech on Banking Future: What It Means for Your Mortgage and Savings Goals",
+    "publishedAt": "2026-05-15T18:04:11.876Z",
+    "category": "fed-rate",
+    "tweetId": "2055348538998145096",
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm]]>"
   }
 }

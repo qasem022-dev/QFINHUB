@@ -424,5 +424,47 @@
       "tweetId": "2054986153544331660",
       "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260326a.htm]]>"
     }
+  },
+  {
+    "ts": "2026-05-15T18:03:37.943Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-15T18:03:52.858Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa",
+      "title": "Fed Ends Enforcement on UBS/Credit Suisse: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": "2055348459168023040",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-15T18:03:57.859Z",
+    "type": "news-match",
+    "details": {
+      "title": "Bowman, Opening Remarks",
+      "category": "fed-rate",
+      "source": "Fed Speeches",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-15T18:04:11.877Z",
+    "type": "news-published",
+    "details": {
+      "slug": "bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving",
+      "title": "Bowman’s Fed Speech on Banking Future: What It Means for Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": "2055348538998145096",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm]]>"
+    }
   }
 ]
