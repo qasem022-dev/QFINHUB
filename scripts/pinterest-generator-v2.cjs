@@ -446,8 +446,8 @@ async function svgToPng(svgContent, outputPath) {
 // ─── Pinterest Import CSV Generator ──────────────────────────────────────────
 
 function generateCSV(pins) {
-  // Pinterest Bulk CSV format
-  const header = "Pin title,Description,Link (URL),Dominant Color,Board name,Board section,Tags,Image URL,Video URL,Video title,Alt text";
+  // Pinterest exact CSV column names
+  const header = "Pin title,Description,Destination URL,Dominant color (hex),Board Name,Board Section,Tags,Image URL,Video URL,Video Title,Alt text";
 
   const rows = pins.map((pin) => {
     const title = csvEscape(pin.title);
