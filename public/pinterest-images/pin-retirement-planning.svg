@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Sage green background -->
+  <rect width="1000" height="1500" fill="#e8f5e9"/>
+  <!-- QFINHUB watermark -->
+  <text x="500" y="1400" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#a7d8a8" text-anchor="middle" opacity="0.5">QFINHUB</text>
+  <!-- Brand -->
+  <text x="50" y="60" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#065f46" letter-spacing="2">QFINHUB</text>
+  <!-- Headline -->
+  <text x="500" y="140" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#065f46" text-anchor="middle" letter-spacing="1">YOUR RETIREMENT CHECKUP</text>
+  <text x="500" y="200" font-family="Playfair Display, Georgia, serif" font-size="40" font-weight="700" fill="#1f2937" text-anchor="middle">Is Your Retirement</text>
+  <text x="500" y="250" font-family="Playfair Display, Georgia, serif" font-size="40" font-weight="700" fill="#065f46" text-anchor="middle">Fund Enough?</text>
+  <!-- Progress Ring visualization -->
+  <circle cx="500" cy="480" r="180" fill="none" stroke="#c6e6c7" stroke-width="20"/>
+  <!-- Progress arc: 65% (234 degrees of 360) -->
+  <path d="M 500 300 A 180 180 0 0 1 774.8 417.3" fill="none" stroke="url(#ringGrad)" stroke-width="20" stroke-linecap="round"/>
+  <!-- Center text -->
+  <text x="500" y="460" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#065f46" text-anchor="middle">65%</text>
+  <text x="500" y="490" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#6b7280" text-anchor="middle">of your goal funded</text>
+  <!-- Target callout -->
+  <rect x="250" y="580" width="500" height="50" rx="25" fill="#ffffff" opacity="0.7"/>
+  <text x="500" y="610" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#374151" text-anchor="middle">You need an additional $350/month to reach 100%</text>
+  <!-- Bottom white card -->
+  <rect x="60" y="680" width="880" height="320" rx="20" fill="#ffffff" opacity="0.85"/>
+  <text x="500" y="730" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1f2937" text-anchor="middle">Your Retirement Snapshot</text>
+  <!-- Mini stats -->
+  <rect x="100" y="770" width="370" height="90" rx="12" fill="#f0fdf4"/>
+  <text x="285" y="810" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">Current Savings</text>
+  <text x="285" y="840" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#065f46" text-anchor="middle">$280,000</text>
+  <rect x="530" y="770" width="370" height="90" rx="12" fill="#f0fdf4"/>
+  <text x="715" y="810" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">Goal at 65</text>
+  <text x="715" y="840" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#065f46" text-anchor="middle">$1,200,000</text>
+  <!-- CTA -->
+  <rect x="200" y="920" width="600" height="60" rx="30" fill="#065f46"/>
+  <text x="500" y="957" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Find Your Retirement Number →</text>
+  <!-- Footer features -->
+  <rect x="180" y="1030" width="200" height="36" rx="8" fill="#ffffff" opacity="0.7"/>
+  <text x="280" y="1053" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#374151" text-anchor="middle">✓ 401k &amp; IRA</text>
+  <rect x="400" y="1030" width="200" height="36" rx="8" fill="#ffffff" opacity="0.7"/>
+  <text x="500" y="1053" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#374151" text-anchor="middle">✓ Social Security</text>
+  <rect x="620" y="1030" width="200" height="36" rx="8" fill="#ffffff" opacity="0.7"/>
+  <text x="720" y="1053" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#374151" text-anchor="middle">✓ Pension Plans</text>
+  <!-- Hashtags -->
+  <text x="500" y="1110" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">#RetirementPlanning #FinancialFreedom #MoneyGoals</text>
+  <text x="500" y="1150" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#065f46" text-anchor="middle">qfinhub.com/calculators/retirement-planning</text>
+  <circle cx="50" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="150" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="250" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="350" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="450" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="550" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="650" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="750" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="850" cy="1420" r="3" fill="#065f46" opacity="0.2"/><circle cx="950" cy="1420" r="3" fill="#065f46" opacity="0.2"/>
+</svg>

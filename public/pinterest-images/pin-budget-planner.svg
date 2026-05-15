@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="terracotta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="slate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a373"/>
+      <stop offset="100%" stop-color="#e6ccb2"/>
+    </linearGradient>
+    <filter id="shadowSoft"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="rgba(0,0,0,0.08)"/></filter>
+  </defs>
+  <!-- Clean white -->
+  <rect width="1000" height="1500" fill="#ffffff"/>
+  <!-- QFINHUB -->
+  <text x="50" y="60" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#6366f1" letter-spacing="2">QFINHUB</text>
+  <!-- Headline -->
+  <text x="500" y="150" font-family="Playfair Display, Georgia, serif" font-size="40" font-weight="700" fill="#1f2937" text-anchor="middle">Master Your Money</text>
+  <text x="500" y="205" font-family="Playfair Display, Georgia, serif" font-size="40" font-weight="700" fill="#d97706" text-anchor="middle">With the 50/30/20 Rule</text>
+  <!-- Simple pie chart (SVG circle segments) -->
+  <g transform="translate(500,430)">
+    <!-- 50% Needs segment (terracotta) - top half -->
+    <path d="M 0 -180 A 180 180 0 0 1 0 180" fill="url(#terracotta)"/>
+    <!-- 30% Wants segment (slate) - bottom left quarter+ -->
+    <path d="M 0 180 A 180 180 0 0 1 -180 0" fill="url(#slate)"/>
+    <!-- 20% Savings segment (sand) - remaining -->
+    <path d="M -180 0 A 180 180 0 0 1 0 -180" fill="url(#sand)"/>
+    <!-- Center hole for donut effect -->
+    <circle cx="0" cy="0" r="70" fill="#ffffff"/>
+    <text x="0" y="-10" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#1f2937" text-anchor="middle">100%</text>
+    <text x="0" y="15" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">of your income</text>
+  </g>
+  <!-- Legend -->
+  <rect x="180" y="640" width="24" height="24" rx="4" fill="url(#terracotta)"/>
+  <text x="215" y="657" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#1f2937">50% Needs</text>
+  <text x="215" y="673" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6b7280">Rent, bills, groceries</text>
+  <rect x="480" y="640" width="24" height="24" rx="4" fill="url(#slate)"/>
+  <text x="515" y="657" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#1f2937">30% Wants</text>
+  <text x="515" y="673" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6b7280">Dining, travel, hobbies</text>
+  <rect x="780" y="640" width="24" height="24" rx="4" fill="url(#sand)"/>
+  <text x="815" y="657" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#1f2937">20% Savings</text>
+  <text x="815" y="673" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6b7280">Investments, debt, goals</text>
+  <!-- Example calculation -->
+  <rect x="100" y="720" width="800" height="100" rx="14" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" filter="url(#shadowSoft)"/>
+  <text x="500" y="758" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6b7280" text-anchor="middle">If you earn $5,000/month after tax:</text>
+  <text x="230" y="795" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#d97706" text-anchor="middle">$2,500 Needs</text>
+  <text x="500" y="795" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#475569" text-anchor="middle">$1,500 Wants</text>
+  <text x="770" y="795" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#d4a373" text-anchor="middle">$1,000 Savings</text>
+  <!-- Bottom section -->
+  <rect x="0" y="870" width="1000" height="630" fill="#f9f7f2"/>
+  <text x="500" y="920" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#1f2937" text-anchor="middle">See Your Personal Budget Breakdown</text>
+  <!-- CTA -->
+  <rect x="200" y="960" width="600" height="60" rx="30" fill="#d97706"/>
+  <text x="500" y="997" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Try the 50/30/20 Tool →</text>
+  <!-- Features -->
+  <rect x="180" y="1060" width="200" height="36" rx="8" fill="#ffffff" opacity="0.8"/>
+  <text x="280" y="1083" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#374151" text-anchor="middle">✓ Customizable</text>
+  <rect x="400" y="1060" width="200" height="36" rx="8" fill="#ffffff" opacity="0.8"/>
+  <text x="500" y="1083" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#374151" text-anchor="middle">✓ Track Expenses</text>
+  <rect x="620" y="1060" width="200" height="36" rx="8" fill="#ffffff" opacity="0.8"/>
+  <text x="720" y="1083" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#374151" text-anchor="middle">✓ Set Goals</text>
+  <!-- Hashtags -->
+  <text x="500" y="1140" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">#BudgetingTips #SavingMoney #FinancialPlanning</text>
+  <text x="500" y="1180" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#d97706" text-anchor="middle">qfinhub.com/calculators/budget-planner</text>
+  <circle cx="50" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="150" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="250" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="350" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="450" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="550" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="650" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="750" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="850" cy="1400" r="3" fill="#d97706" opacity="0.2"/><circle cx="950" cy="1400" r="3" fill="#d97706" opacity="0.2"/>
+</svg>
