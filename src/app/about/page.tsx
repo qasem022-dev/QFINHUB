@@ -339,6 +339,108 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── E-E-A-T Author Section ── */}
+      <section className="border-t border-gray-200 bg-white px-4 py-20 dark:border-gray-800 dark:bg-surface-dark">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-10 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              About the Founder
+            </h2>
+            <p className="mx-auto mt-2 max-w-2xl text-gray-500 dark:text-gray-400">
+              QFINHUB was created by a financial professional with years of
+              experience in personal finance, data analysis, and technology.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
+            {/* Author Avatar */}
+            <div className="shrink-0">
+              <div className="flex h-32 w-32 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 text-5xl text-white shadow-lg md:h-40 md:w-40">
+                QM
+              </div>
+            </div>
+
+            {/* Author Bio */}
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                Qasem Mohammed
+              </h3>
+              <p className="text-sm text-accent-600 dark:text-accent-400">
+                Founder &amp; Lead Developer
+              </p>
+              <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                <p>
+                  Qasem is the creator of QFINHUB, a platform built from the
+                  ground up to provide free, accurate financial tools for
+                  everyone. With expertise spanning financial modeling,
+                  data analysis, and full-stack development, he designed every
+                  calculator on this site to reflect real-world financial
+                  formulas and methodologies.
+                </p>
+                <p>
+                  Before launching QFINHUB, Qasem spent years working with
+                  financial data — building analysis tools, developing
+                  algorithmic models, and helping individuals understand their
+                  personal finances through clear, accessible data. He
+                  believes that financial literacy should not require expensive
+                  software or a finance degree.
+                </p>
+                <p>
+                  Qasem personally oversees the accuracy of every calculator,
+                  reviews all AI-generated content for quality, and ensures
+                  that QFINHUB remains 100% free — no hidden fees, no premium
+                  tiers, ever.
+                </p>
+              </div>
+
+              {/* Credentials */}
+              <div className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-50 px-3 py-1.5 text-xs font-medium text-primary-700 dark:bg-primary-900/30 dark:text-primary-400">
+                  ✓ Financial Modeling
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
+                  ✓ Data Analysis
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-accent-50 px-3 py-1.5 text-xs font-medium text-accent-700 dark:bg-accent-900/30 dark:text-accent-400">
+                  ✓ Full-Stack Development
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                  ✓ SEO &amp; Content Strategy
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Trust Signals */}
+          <div className="mt-12 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 text-center dark:border-gray-700 dark:bg-surface-dark-elevated">
+              <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">
+                124+
+              </div>
+              <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                Manual Accuracy Checks
+              </div>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 text-center dark:border-gray-700 dark:bg-surface-dark-elevated">
+              <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
+                1,600+
+              </div>
+              <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                Pages Indexed by Google
+              </div>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5 text-center dark:border-gray-700 dark:bg-surface-dark-elevated">
+              <div className="text-2xl font-bold text-accent-600 dark:text-accent-400">
+                100%
+              </div>
+              <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                Free &amp; Transparent
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="bg-gray-50 px-4 py-20 dark:bg-surface-dark/50">
         <div className="mx-auto max-w-3xl text-center">

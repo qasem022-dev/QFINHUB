@@ -8,6 +8,7 @@ import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
 import { ConsentBanner } from "@/components/ui/consent-banner";
+import { SiteFooter } from "@/components/layout/site-footer";
 import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
 import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
 
@@ -207,6 +208,7 @@ export default function RootLayout({
           <LocaleProvider>
             <AuthProvider>
               {children}
+              <SiteFooter />
               {/* Adsterra Native Banner */}
               <div className="w-full max-w-3xl mx-auto px-4 py-6 mt-8">
                 <div id="container-93e6358fa4836a576dd463e0a148a834" />

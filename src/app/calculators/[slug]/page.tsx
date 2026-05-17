@@ -5,7 +5,10 @@ import { ArrowLeft, Loader2, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
+import { CalculatorSEOContent } from "@/components/calculators/calculator-seo-content";
+import { YMYLDisclaimer } from "@/components/layout/ymyl-disclaimer";
 import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
+import { calculatorContent } from "@/lib/calculators/calculator-content";
 import { getCalculatorComponent } from "@/components/calculators/registry";
 import { ShareDialog } from "@/components/calculators/share-dialog";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
@@ -29,9 +32,15 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
     return { title: "Calculator Not Found" };
   }
 
+  const content = calculatorContent[slug];
+
   return {
     title: `${calculator.title}`,
-    description: calculator.description,
+    description: content?.explanation?.slice(0, 160) || calculator.description,
+    openGraph: {
+      title: `${calculator.title} | QFINHUB`,
+      description: content?.explanation?.slice(0, 160) || calculator.description,
+    },
   };
 }
 
@@ -50,7 +59,7 @@ export default async function CalculatorDetailPage({
   // Fallback: render metadata if no component is registered yet
   if (!CalculatorComponent) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-surface-dark">
+      <>
         {/* Back navigation + Share */}
         <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -119,9 +128,16 @@ export default async function CalculatorDetailPage({
             </p>
           </div>
         </CalculatorLayout>
-      </div>
-    );
-  }
+      <YMYLDisclaimer />
+      {calculatorContent[slug] && (
+        <CalculatorSEOContent
+          content={calculatorContent[slug]}
+          currentSlug={slug}
+        />
+      )}
+    </>
+  );
+}
 
   // Render the dynamically loaded calculator component
   const calculatorLd = {
@@ -176,6 +192,13 @@ export default async function CalculatorDetailPage({
       >
         <CalculatorComponent />
       </Suspense>
+      <YMYLDisclaimer />
+      {calculatorContent[slug] && (
+        <CalculatorSEOContent
+          content={calculatorContent[slug]}
+          currentSlug={slug}
+        />
+      )}
     </div>
   );
 }

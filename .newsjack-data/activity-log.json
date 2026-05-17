@@ -466,5 +466,215 @@
       "tweetId": "2055348538998145096",
       "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm]]>"
     }
+  },
+  {
+    "ts": "2026-05-15T21:02:13.579Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-15T21:02:24.698Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-chair-change-how-powell-s-pro-tempore-role-and-warsh-s-appointment-could-imp",
+      "title": "Fed Chair Change: How Powell’s Pro Tempore Role and Warsh’s Appointment Could Impact Your Mortgage",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-15T21:02:29.699Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-15T21:02:40.767Z",
+    "type": "news-published",
+    "details": {
+      "slug": "stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+      "title": "Stephen M. Calk 2025 Trust Fed Approval: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T14:37:48.240Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board announces it does not object to the conversion of United Texas Bank, of Dallas, Texas, from a bank supervised by the Federal Reserve to a national bank supervised by the Office of the Comptroller of the Currency",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515b.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T14:38:03.682Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-approves-united-texas-bank-conversion-what-it-means-for-your-mortgage-and-sa",
+      "title": "Fed Approves United Texas Bank Conversion: What It Means for Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515b.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T14:38:08.683Z",
+    "type": "news-match",
+    "details": {
+      "title": "Waller, Update On Federal Reserve Bank Operations",
+      "category": "fed-rate",
+      "source": "Fed Speeches",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T14:38:24.466Z",
+    "type": "news-published",
+    "details": {
+      "slug": "federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+      "title": "Federal Reserve Operations Update: How Waller’s Speech Impacts Your Mortgage Affordability in 2025",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T15:02:04.749Z",
+    "type": "news-match",
+    "details": {
+      "title": "Waller, Modernizing Federal Reserve Operations in the 21st Century",
+      "category": "fed-rate",
+      "source": "Fed Speeches",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T15:02:19.878Z",
+    "type": "news-published",
+    "details": {
+      "slug": "how-the-fed-s-modernization-plans-could-impact-your-mortgage-and-savings-goals",
+      "title": "How the Fed’s Modernization Plans Could Impact Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T15:02:24.880Z",
+    "type": "news-match",
+    "details": {
+      "title": "Barr, Brief Remarks on Stablecoins",
+      "category": "fed-rate",
+      "source": "Fed Speeches",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T15:02:36.875Z",
+    "type": "news-published",
+    "details": {
+      "slug": "stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers",
+      "title": "Stablecoin Regulation and Your Mortgage: What the GENIUS Act Means for Homebuyers",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T18:02:17.064Z",
+    "type": "news-match",
+    "details": {
+      "title": "Jefferson, Economic Outlook and Energy Effects",
+      "category": "fed-rate",
+      "source": "Fed Speeches",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T18:02:30.989Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-",
+      "title": "Fed’s Jefferson Speech: How Economic Outlook & Energy Effects Impact Your Mortgage Affordability",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-16T18:02:35.990Z",
+    "type": "news-match",
+    "details": {
+      "title": "Kevin Warsh comes into the Fed facing a big &apos;family fight&apos; over cutting interest rates",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108307827"
+    }
+  },
+  {
+    "ts": "2026-05-16T18:02:50.507Z",
+    "type": "news-published",
+    "details": {
+      "slug": "kevin-warsh-fed-rate-decision-how-rising-rates-impact-your-mortgage-affordabilit",
+      "title": "Kevin Warsh Fed Rate Decision: How Rising Rates Impact Your Mortgage Affordability in 2025",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108307827"
+    }
+  },
+  {
+    "ts": "2026-05-16T21:01:31.852Z",
+    "type": "news-match",
+    "details": {
+      "title": "This federal program trains older workers. The Trump administration wants to cut it",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108294840"
+    }
+  },
+  {
+    "ts": "2026-05-16T21:01:46.081Z",
+    "type": "news-published",
+    "details": {
+      "slug": "trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y",
+      "title": "Trump Administration’s Proposed SCSEP Cuts: What It Means for Older Workers and Your Retirement Budget",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108294840"
+    }
+  },
+  {
+    "ts": "2026-05-16T21:01:51.082Z",
+    "type": "news-match",
+    "details": {
+      "title": "Traders now see next Fed interest rate move as a hike following inflation surge",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108307789"
+    }
+  },
+  {
+    "ts": "2026-05-16T21:02:05.945Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings",
+      "title": "Fed Rate Hike Ahead? How Rising Inflation Impacts Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108307789"
+    }
   }
 ]

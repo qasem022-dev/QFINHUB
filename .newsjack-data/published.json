@@ -1,4 +1,28 @@
 {
+  "108294840": {
+    "slug": "trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y",
+    "title": "Trump Administration’s Proposed SCSEP Cuts: What It Means for Older Workers and Your Retirement Budget",
+    "publishedAt": "2026-05-16T21:01:46.079Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/16/senior-community-service-employment-program.html"
+  },
+  "108307789": {
+    "slug": "fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings",
+    "title": "Fed Rate Hike Ahead? How Rising Inflation Impacts Your Mortgage and Savings",
+    "publishedAt": "2026-05-16T21:02:05.944Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html"
+  },
+  "108307827": {
+    "slug": "kevin-warsh-fed-rate-decision-how-rising-rates-impact-your-mortgage-affordabilit",
+    "title": "Kevin Warsh Fed Rate Decision: How Rising Rates Impact Your Mortgage Affordability in 2025",
+    "publishedAt": "2026-05-16T18:02:50.506Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/16/kevin-warsh-comes-into-the-fed-facing-a-big-family-fight-over-cutting-interest-rates.html"
+  },
   "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>": {
     "slug": "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
     "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals",
@@ -142,5 +166,61 @@
     "category": "fed-rate",
     "tweetId": "2055348538998145096",
     "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm]]>": {
+    "slug": "fed-chair-change-how-powell-s-pro-tempore-role-and-warsh-s-appointment-could-imp",
+    "title": "Fed Chair Change: How Powell’s Pro Tempore Role and Warsh’s Appointment Could Impact Your Mortgage",
+    "publishedAt": "2026-05-15T21:02:24.698Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm]]>": {
+    "slug": "stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+    "title": "Stephen M. Calk 2025 Trust Fed Approval: What It Means for Your Mortgage and Savings",
+    "publishedAt": "2026-05-15T21:02:40.766Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515b.htm]]>": {
+    "slug": "fed-approves-united-texas-bank-conversion-what-it-means-for-your-mortgage-and-sa",
+    "title": "Fed Approves United Texas Bank Conversion: What It Means for Your Mortgage and Savings Goals",
+    "publishedAt": "2026-05-16T14:38:03.681Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260515b.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm]]>": {
+    "slug": "federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+    "title": "Federal Reserve Operations Update: How Waller’s Speech Impacts Your Mortgage Affordability in 2025",
+    "publishedAt": "2026-05-16T14:38:24.464Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm]]>": {
+    "slug": "how-the-fed-s-modernization-plans-could-impact-your-mortgage-and-savings-goals",
+    "title": "How the Fed’s Modernization Plans Could Impact Your Mortgage and Savings Goals",
+    "publishedAt": "2026-05-16T15:02:19.877Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm]]>": {
+    "slug": "stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers",
+    "title": "Stablecoin Regulation and Your Mortgage: What the GENIUS Act Means for Homebuyers",
+    "publishedAt": "2026-05-16T15:02:36.875Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm]]>": {
+    "slug": "fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-",
+    "title": "Fed’s Jefferson Speech: How Economic Outlook & Energy Effects Impact Your Mortgage Affordability",
+    "publishedAt": "2026-05-16T18:02:30.988Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm]]>"
   }
 }

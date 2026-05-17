@@ -38,5 +38,55 @@
       "failed": 0,
       "total": 35
     }
+  },
+  {
+    "ts": "2026-05-15T21:01:44.270Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 34
+    }
+  },
+  {
+    "ts": "2026-05-16T14:37:22.395Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 33
+    }
+  },
+  {
+    "ts": "2026-05-16T15:01:38.150Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 32
+    }
+  },
+  {
+    "ts": "2026-05-16T21:01:05.560Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 31
+    }
+  },
+  {
+    "ts": "2026-05-17T03:30:58.143Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 30
+    }
   }
 ]

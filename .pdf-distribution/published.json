@@ -34,5 +34,29 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/retirement-planning-guide.md"
       }
     }
+  },
+  "debt-payoff-strategies": {
+    "title": "Debt Payoff Strategies: Snowball vs Avalanche",
+    "category": "debt",
+    "generatedAt": "2026-05-16T15:09:16.259Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/debt-payoff-strategies.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/debt-payoff-strategies.md"
+      }
+    }
+  },
+  "compound-interest-guide": {
+    "title": "Compound Interest: The 8th Wonder of the World",
+    "category": "investing",
+    "generatedAt": "2026-05-17T03:31:14.525Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/compound-interest-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/compound-interest-guide.md"
+      }
+    }
   }
 }
