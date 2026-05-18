@@ -111,7 +111,7 @@ function CustomizeModal({
   );
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/40 backdrop-blur-sm"
@@ -239,7 +239,7 @@ export function ConsentBanner() {
     <>
       {/* Bottom Bar */}
       {visible && !showModal && (
-        <div className="fixed bottom-0 left-0 right-0 z-[9998] border-t border-gray-200 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.08)] dark:border-gray-700 dark:bg-surface-dark-elevated dark:shadow-[0_-4px_20px_rgba(0,0,0,0.3)]">
+        <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-gray-200 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.08)] dark:border-gray-700 dark:bg-surface-dark-elevated dark:shadow-[0_-4px_20px_rgba(0,0,0,0.3)]">
           <div className="mx-auto flex w-full max-w-7xl flex-col items-start gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
             {/* Text */}
             <div className="flex items-start gap-3 sm:max-w-xl">

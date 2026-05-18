@@ -64,5 +64,28 @@
   }
   body {
     @apply bg-white text-gray-900 dark:bg-surface-dark dark:text-gray-100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Mobile Touch + Performance ── */
+  button, a, [role="button"], input[type="submit"] {
+    touch-action: manipulation;
+  }
+
+  /* Ensure minimum touch target size for mobile (44px iOS/Android guideline) */
+  @media (max-width: 768px) {
+    button, a[role="button"], [role="tab"] {
+      min-height: 44px;
+    }
+    /* But don't force min-height on inline links */
+    a:not([role="button"]):not(.btn):not([class*="min-h"]):not([class*="h-"]):not([data-nav]) {
+      min-height: auto;
+    }
+  }
+
+  /* Prevent FOUT with Inter font */
+  .font-sans {
+    font-display: swap;
   }
 }

@@ -137,6 +137,15 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale} suppressHydrationWarning className={inter.variable}>
       <head>
+        {/* DNS Preconnect for third-party origins */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://pl29448163.profitablecpmratenetwork.com" />
+        {/* Inline critical CSS to prevent layout shift */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          html { overflow-y: scroll; -webkit-text-size-adjust: 100%; }
+          body { margin: 0; }
+        `}} />
         {/* ════════════════════════════════════════════════
              Google Consent Mode v2 — MUST execute BEFORE
              gtag.js loads so that default consent signals
@@ -210,13 +219,42 @@ export default function RootLayout({
             <AuthProvider>
               {children}
               <SiteFooter />
-              {/* Adsterra Native Banner */}
+              {/* Adsterra Native Banner — with loading skeleton */}
               <div className="w-full max-w-3xl mx-auto px-4 py-6 mt-8">
-                <div id="container-93e6358fa4836a576dd463e0a148a834" />
+                <div
+                  id="container-93e6358fa4836a576dd463e0a148a834"
+                  className="min-h-[120px] sm:min-h-[200px] relative"
+                >
+                  {/* Loading skeleton shown until ad renders */}
+                  <div
+                    id="container-93e6358fa4836a576dd463e0a148a834-skeleton"
+                    className="absolute inset-0 flex items-center justify-center bg-gray-50 dark:bg-surface-dark rounded-lg animate-pulse-soft"
+                  >
+                    <span className="text-xs text-gray-400 dark:text-gray-500">
+                      Loading...
+                    </span>
+                  </div>
+                </div>
               </div>
               <script
                 async
                 src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"
+              />
+              {/* Hide skeleton when ad loads */}
+              <script
+                dangerouslySetInnerHTML={{ __html: `
+                  (function() {
+                    var check = setInterval(function() {
+                      var c = document.getElementById('container-93e6358fa4836a576dd463e0a148a834');
+                      var s = document.getElementById('container-93e6358fa4836a576dd463e0a148a834-skeleton');
+                      if (c && c.children.length > 1) {
+                        if (s) s.style.display = 'none';
+                        clearInterval(check);
+                      }
+                    }, 500);
+                    setTimeout(function() { clearInterval(check); }, 10000);
+                  })();
+                ` }}
               />
               <PWAInstallPrompt />
               <ConsentBanner />
