@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-16",
-  "timestamp": "2026-05-16T15:08:51.926Z",
+  "date": "2026-05-17",
+  "timestamp": "2026-05-17T04:05:03.528Z",
   "programmaticSEO": {
     "status": "ok",
     "issues": [],
@@ -67,16 +67,16 @@
       },
       "newsjack": {
         "status": "ok",
-        "totalPublished": 24
+        "totalPublished": 28
       },
       "widgetOutreach": {
         "status": "ok",
-        "batchesSent": 7,
-        "totalEmailsSent": 18
+        "batchesSent": 9,
+        "totalEmailsSent": 20
       },
       "pdf": {
         "status": "ok",
-        "totalGenerated": 3
+        "totalGenerated": 5
       },
       "pinterest": {
         "status": "not-setup"

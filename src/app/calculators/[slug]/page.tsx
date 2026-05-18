@@ -139,7 +139,35 @@ export default async function CalculatorDetailPage({
   );
 }
 
-  // Render the dynamically loaded calculator component
+  // Build FAQ schema from tips with simple questions
+  const faqItems = (calculatorContent[slug]?.tips || []).map((tip, i) => ({
+    "@type": "Question",
+    name: i === 0
+      ? `What is the ${calculator.title}?`
+      : i === 1
+        ? `How do I use the ${calculator.title}?`
+        : `What factors affect ${calculator.title.toLowerCase()} results?`,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: tip,
+    },
+  }));
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://qfinhub.com/" },
+      { "@type": "ListItem", position: 2, name: "Calculators", item: "https://qfinhub.com/calculators" },
+      { "@type": "ListItem", position: 3, name: calculator.title, item: `https://qfinhub.com/calculators/${slug}` },
+    ],
+  };
+
+  const faqLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems,
+  } : null;
   const calculatorLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -154,8 +182,9 @@ export default async function CalculatorDetailPage({
       priceCurrency: "USD",
     },
     author: {
-      "@type": "Organization",
-      name: "QFINHUB",
+      "@type": "Person",
+      name: "Qasem Mohammed",
+      url: "https://qfinhub.com/about",
     },
   };
 
@@ -165,6 +194,16 @@ export default async function CalculatorDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(calculatorLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/calculators">

@@ -122,15 +122,26 @@ export function SiteFooter() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/cookies"
+                  className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  Cookie Policy
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-8 border-t border-gray-200 pt-6 text-center text-xs text-gray-400 dark:border-gray-700 dark:text-gray-500">
-          <p>
+          <p className="mb-1">
             &copy; {new Date().getFullYear()} QFINHUB. All rights reserved. |
             Built with accuracy and privacy in mind.
+          </p>
+          <p className="text-[10px] text-gray-400 dark:text-gray-500">
+            548 Market Street, PMB 72296, San Francisco, CA 94104-5401, United States
           </p>
         </div>
       </div>

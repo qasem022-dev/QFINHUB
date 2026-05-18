@@ -214,8 +214,11 @@ const sections = [
           <li>
             <strong>Advertising Cookies.</strong> We participate in Google
             AdSense to support our free service. Advertising and personalization
-            cookies are disabled by default and only activated with your
-            explicit consent via our consent banner.
+            cookies (including, but not limited to, _gcl_*, IDE, and NID cookies
+            from Google) are disabled by default and only activated with your
+            explicit consent via our consent banner in accordance with Google
+            Consent Mode v2. We also use Adsterra, a third-party ad network, to
+            display non-personalized advertisements.
           </li>
         </ul>
         <div className="mt-4 rounded-lg border border-accent-200 bg-accent-50 p-4 dark:border-accent-900/30 dark:bg-accent-900/20">

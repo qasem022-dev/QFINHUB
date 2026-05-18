@@ -38,10 +38,7 @@ const sections = [
     content: (
       <>
         <p className="mb-4">
-          QFINHUB uses a minimal set of cookies and local storage entries, all of which
-          are strictly necessary for the operation and security of our platform. We do
-          <strong> not</strong> use cookies for advertising, tracking across websites,
-          or selling your data.
+          QFINHUB uses minimal cookies and local storage entries. Based on your consent preferences, we use the following categories of cookies:
         </p>
         <div className="mb-4 overflow-x-auto">
           <table className="w-full text-left text-sm">
@@ -120,6 +117,34 @@ const sections = [
                 </td>
                 <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
                   Session
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300 font-mono text-xs">
+                  _ga, _ga_*, _gid
+                </td>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
+                  Analytics (Consent Required)
+                </td>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
+                  Google Analytics — tracks anonymized page views and usage patterns to help us improve the platform. Disabled by default until you grant analytics consent.
+                </td>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
+                  2 years / 24 hours
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300 font-mono text-xs">
+                  _gcl_*, IDE, NID
+                </td>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
+                  Advertising (Consent Required)
+                </td>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
+                  Google AdSense and advertising cookies — used to serve personalized or contextual ads on our site. Disabled by default until you grant ad consent.
+                </td>
+                <td className="px-4 py-3 text-gray-600 dark:text-gray-300">
+                  13 months / Varies
                 </td>
               </tr>
             </tbody>

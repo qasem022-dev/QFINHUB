@@ -7,6 +7,14 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/16/senior-community-service-employment-program.html"
   },
+  "108307614": {
+    "slug": "stephen-miran-exits-the-fed-how-his-policies-could-impact-your-mortgage-affordab",
+    "title": "Stephen Miran Exits the Fed: How His Policies Could Impact Your Mortgage Affordability and Savings Goals",
+    "publishedAt": "2026-05-17T04:05:54.570Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/15/stephen-miran-exits-the-fed-how-he-set-the-stage-for-kevin-warsh.html"
+  },
   "108307789": {
     "slug": "fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings",
     "title": "Fed Rate Hike Ahead? How Rising Inflation Impacts Your Mortgage and Savings",
@@ -222,5 +230,13 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm]]>"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-16/modest-ecb-rate-hike-would-limit-economic-pain-stournaras-says": {
+    "slug": "ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings",
+    "title": "ECB Rate Hike 2025: How a Modest Increase Affects Your Mortgage and Savings",
+    "publishedAt": "2026-05-17T04:06:13.793Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-16/modest-ecb-rate-hike-would-limit-economic-pain-stournaras-says"
   }
 }
