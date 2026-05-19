@@ -117,7 +117,7 @@ export function CalculatorSEOContent({
             <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {content.relatedCalculators
                 .filter((slug) => slug !== currentSlug)
-                .slice(0, 6)
+                .slice(0, 8)
                 .map((slug) => (
                   <Link
                     key={slug}
@@ -158,6 +158,32 @@ export function CalculatorSEOContent({
             </div>
           </section>
         )}
+
+        {/* E-E-A-T Author & Review Box */}
+        <section className="mt-10 rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-surface-dark-elevated">
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary-100 text-lg font-bold text-primary-700 dark:bg-primary-900/30 dark:text-primary-400">
+              QM
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                Written by Qasem Mohammed
+              </p>
+              <p className="mt-1 text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+                Financial tools developer and founder of QFINHUB. All calculators are built with 
+                industry-standard formulas and reviewed for accuracy. Content is for educational 
+                purposes only — always consult a qualified financial professional for decisions 
+                about your specific situation.
+              </p>
+              <p className="mt-2 text-xs text-gray-400 dark:text-gray-500">
+                Last updated: {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} · 
+                <Link href="/about" className="ml-1 text-primary-600 hover:underline dark:text-primary-400">About QFINHUB</Link>
+                {" · "}
+                <Link href="/terms" className="text-primary-600 hover:underline dark:text-primary-400">Editorial Policy</Link>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
