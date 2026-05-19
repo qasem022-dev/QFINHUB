@@ -108,5 +108,15 @@
       "failed": 0,
       "total": 28
     }
+  },
+  {
+    "ts": "2026-05-19T09:01:11.811Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 27
+    }
   }
 ]

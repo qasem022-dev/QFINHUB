@@ -47,6 +47,14 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
   },
+  "108308873": {
+    "slug": "30-year-treasury-yield-hits-1999-levels-how-to-protect-your-savings-and-retireme",
+    "title": "30-Year Treasury Yield Hits 1999 Levels: How to Protect Your Savings and Retirement",
+    "publishedAt": "2026-05-19T09:02:21.198Z",
+    "category": "inflation",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/19/treasurys-yields-inflation-traders-fed-interest-rates.html"
+  },
   "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>": {
     "slug": "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
     "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals",
@@ -286,5 +294,29 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-may-18-2026-100000178.html"
+  },
+  "https://www.bloomberg.com/news/videos/2026-05-19/allianz-s-zeng-on-us-rates-bond-yields-video": {
+    "slug": "allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+    "title": "AllianzGI Warns of Overpriced Inflation: What It Means for Your Mortgage and Bond Yields",
+    "publishedAt": "2026-05-19T06:01:25.200Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/videos/2026-05-19/allianz-s-zeng-on-us-rates-bond-yields-video"
+  },
+  "https://www.housingwire.com/?p=585893": {
+    "slug": "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+    "title": "2027 Social Security COLA Forecast Jumps to 3.9%: What Retirees Need to Know Now",
+    "publishedAt": "2026-05-19T06:01:49.080Z",
+    "category": "inflation",
+    "tweetId": null,
+    "sourceUrl": "https://www.housingwire.com/articles/social-security-cola-forecast-2027-inflation/"
+  },
+  "https://www.housingwire.com/?p=584477": {
+    "slug": "housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+    "title": "Housing Affordability Breakthrough: How New Policies Could Make Homeownership Accessible",
+    "publishedAt": "2026-05-19T09:01:54.056Z",
+    "category": "housing",
+    "tweetId": null,
+    "sourceUrl": "https://www.housingwire.com/articles/unlock-housing-supply-affordability/"
   }
 }

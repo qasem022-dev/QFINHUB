@@ -1,0 +1,30 @@
+═══════════════════════════════════════════
+  QFINHUB Blog Content Engine
+  2026-05-19
+═══════════════════════════════════════════
+
+📡 Fetching trending finance topics...
+  Google Trends Finance: 10 items
+  CNBC Finance: 30 items
+  Yahoo Finance: 44 items
+  Bloomberg Markets: 30 items
+  Housing Wire: 10 items
+  Realtor.com: 30 items
+
+🎯 Selecting best topic...
+  Topic: "Europe's VC market is splitting in two and AI is driving the gap"
+  Keyword: "investing Europe's VC market is splittin"
+  Category: investment
+  Source: trend
+
+✍️ Generating SEO blog post...
+  Title: Investing Europe's VC Market Is Splitting: AI Drives the Gap
+  Content: ~6780 chars
+  Reading time: 8 min
+
+📝 Publishing to blog...
+  ✅ Published: /blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap
+
+✅ Blog post published!
+   URL: https://www.qfinhub.com/blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap
+   Run 'npm run build && vercel --prod' to deploy

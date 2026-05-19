@@ -844,5 +844,89 @@
       "tweetId": null,
       "guid": "mortgage-refinance-rates-today-monday-may-18-2026-100000178.html"
     }
+  },
+  {
+    "ts": "2026-05-19T06:01:10.052Z",
+    "type": "news-match",
+    "details": {
+      "title": "AllianzGI’s Zeng on US Rates &amp; Bond Yields",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/videos/2026-05-19/allianz-s-zeng-on-us-rates-bond-yields-video"
+    }
+  },
+  {
+    "ts": "2026-05-19T06:01:25.206Z",
+    "type": "news-published",
+    "details": {
+      "slug": "allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+      "title": "AllianzGI Warns of Overpriced Inflation: What It Means for Your Mortgage and Bond Yields",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/videos/2026-05-19/allianz-s-zeng-on-us-rates-bond-yields-video"
+    }
+  },
+  {
+    "ts": "2026-05-19T06:01:30.209Z",
+    "type": "news-match",
+    "details": {
+      "title": "Social Security COLA forecast for 2027 jumps to 3.9% in response to rising inflation",
+      "category": "inflation",
+      "source": "Housing Wire",
+      "guid": "https://www.housingwire.com/?p=585893"
+    }
+  },
+  {
+    "ts": "2026-05-19T06:01:49.081Z",
+    "type": "news-published",
+    "details": {
+      "slug": "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "title": "2027 Social Security COLA Forecast Jumps to 3.9%: What Retirees Need to Know Now",
+      "category": "inflation",
+      "tweetId": null,
+      "guid": "https://www.housingwire.com/?p=585893"
+    }
+  },
+  {
+    "ts": "2026-05-19T09:01:35.113Z",
+    "type": "news-match",
+    "details": {
+      "title": "A common-sense approach to housing affordability",
+      "category": "housing",
+      "source": "Housing Wire",
+      "guid": "https://www.housingwire.com/?p=584477"
+    }
+  },
+  {
+    "ts": "2026-05-19T09:01:54.057Z",
+    "type": "news-published",
+    "details": {
+      "slug": "housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+      "title": "Housing Affordability Breakthrough: How New Policies Could Make Homeownership Accessible",
+      "category": "housing",
+      "tweetId": null,
+      "guid": "https://www.housingwire.com/?p=584477"
+    }
+  },
+  {
+    "ts": "2026-05-19T09:01:59.059Z",
+    "type": "news-match",
+    "details": {
+      "title": "U.S. Treasury sell-off eases, traders eye highest 30-year yield since 1999",
+      "category": "inflation",
+      "source": "CNBC Finance",
+      "guid": "108308873"
+    }
+  },
+  {
+    "ts": "2026-05-19T09:02:21.200Z",
+    "type": "news-published",
+    "details": {
+      "slug": "30-year-treasury-yield-hits-1999-levels-how-to-protect-your-savings-and-retireme",
+      "title": "30-Year Treasury Yield Hits 1999 Levels: How to Protect Your Savings and Retirement",
+      "category": "inflation",
+      "tweetId": null,
+      "guid": "108308873"
+    }
   }
 ]

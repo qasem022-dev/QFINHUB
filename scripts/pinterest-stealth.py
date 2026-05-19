@@ -300,7 +300,7 @@ async def upload_pins(browser, log):
     uploaded = log.get('uploaded', [])
     uploaded_files = {u['file'] for u in uploaded}
     
-    for img_path in images[:3]:  # Limit to 3 per run for safety
+    for img_path in images[:2]:  # Limit to 2 per run (fits 120s timeout)
         filename = os.path.basename(img_path)
         if filename in uploaded_files:
             print(f"   ⏭️ Already uploaded: {filename}")
@@ -396,10 +396,10 @@ async def upload_pins(browser, log):
             save_log(log)
             print(f"      ✅ Pin uploaded successfully!")
             
-            # Human delay between uploads
-            delay = random.randint(15000, 45000) / 1000
+            # Human delay between uploads (shorter for 120s timeout)
+            delay = random.randint(8000, 20000) / 1000
             print(f"      ⏳ Waiting {delay:.0f}s before next pin...")
-            await browser.wait(random.randint(15000, 45000))
+            await browser.wait(random.randint(8000, 20000))
             
         except Exception as e:
             print(f"      ❌ Upload failed: {e}")
