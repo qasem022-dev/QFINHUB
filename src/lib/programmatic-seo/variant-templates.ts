@@ -881,6 +881,120 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "refi-350k-5-5to4pct-20yr", params: { currentRate: 5.5, newRate: 4, remainingBalance: 350000, yearsRemaining: 20, closingCosts: 6000 }, title: "Refinance $350k: 5.5% to 4% (20yr)", description: "Already low rate improvement from 5.5% to 4% on $350k" },
     ],
   },
+
+  // ═══════════════════════════════════════════════════════════════
+  // AUTO LOAN CALCULATOR — 12 templates
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "auto-loan",
+    calculatorSlug: "auto-loan",
+    calculatorName: "Auto Loan Calculator",
+    category: "loan",
+    templates: [
+      { slug: "auto-loan-15k-4pct-48mo", params: { loanAmount: 15000, rate: 4, term: 48, downPct: 10 }, title: "$15,000 Auto Loan at 4% for 48 Months", description: "Calculate monthly car payment for a $15,000 auto loan at 4% APR over 48 months" },
+      { slug: "auto-loan-15k-5pct-60mo", params: { loanAmount: 15000, rate: 5, term: 60, downPct: 10 }, title: "$15,000 Auto Loan at 5% for 60 Months", description: "Calculate your $15,000 car payment at 5% over 5 years" },
+      { slug: "auto-loan-20k-4-5pct-60mo", params: { loanAmount: 20000, rate: 4.5, term: 60, downPct: 15 }, title: "$20,000 Auto Loan at 4.5% for 60 Months", description: "Calculate monthly payment for a $20,000 car loan at 4.5% APR" },
+      { slug: "auto-loan-20k-6pct-72mo", params: { loanAmount: 20000, rate: 6, term: 72, downPct: 10 }, title: "$20,000 Auto Loan at 6% for 72 Months", description: "Calculate your $20,000 auto loan payment at 6% over 6 years" },
+      { slug: "auto-loan-25k-5pct-60mo", params: { loanAmount: 25000, rate: 5, term: 60, downPct: 15 }, title: "$25,000 Auto Loan at 5% for 60 Months", description: "Calculate monthly car payment for a $25,000 auto loan at 5% APR" },
+      { slug: "auto-loan-25k-7pct-72mo", params: { loanAmount: 25000, rate: 7, term: 72, downPct: 10 }, title: "$25,000 Auto Loan at 7% for 72 Months", description: "Calculate your $25,000 car payment at 7% over 72 months" },
+      { slug: "auto-loan-30k-5-5pct-60mo", params: { loanAmount: 30000, rate: 5.5, term: 60, downPct: 20 }, title: "$30,000 Auto Loan at 5.5% for 60 Months", description: "Calculate monthly payment for a $30,000 car loan at 5.5% APR" },
+      { slug: "auto-loan-30k-7-5pct-72mo", params: { loanAmount: 30000, rate: 7.5, term: 72, downPct: 15 }, title: "$30,000 Auto Loan at 7.5% for 72 Months", description: "Calculate your $30,000 auto loan payment at 7.5% over 6 years" },
+      { slug: "auto-loan-35k-6pct-60mo", params: { loanAmount: 35000, rate: 6, term: 60, downPct: 20 }, title: "$35,000 Auto Loan at 6% for 60 Months", description: "Calculate monthly car payment for a $35,000 auto loan at 6% APR" },
+      { slug: "auto-loan-40k-6-5pct-72mo", params: { loanAmount: 40000, rate: 6.5, term: 72, downPct: 15 }, title: "$40,000 Auto Loan at 6.5% for 72 Months", description: "Calculate your $40,000 car payment at 6.5% over 72 months" },
+      { slug: "auto-loan-45k-7pct-72mo", params: { loanAmount: 45000, rate: 7, term: 72, downPct: 20 }, title: "$45,000 Auto Loan at 7% for 72 Months", description: "Calculate monthly payment for a $45,000 auto loan at 7% APR" },
+      { slug: "auto-loan-50k-5pct-60mo", params: { loanAmount: 50000, rate: 5, term: 60, downPct: 20 }, title: "$50,000 Auto Loan at 5% for 60 Months", description: "Calculate your $50,000 luxury car payment at 5% over 5 years" },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // 401(K) CALCULATOR — 12 templates
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "401k-calculator",
+    calculatorSlug: "401k-calculator",
+    calculatorName: "401(k) Calculator",
+    category: "retirement",
+    templates: [
+      { slug: "401k-50k-500mo-7pct-20yr", params: { balance: 50000, monthlyContribution: 500, employerMatch: 3, rate: 7, years: 20 }, title: "401(k) with $50K Balance, $500/Month at 7% for 20 Years", description: "Project your 401(k) growth starting with $50K and contributing $500/month at 7% return" },
+      { slug: "401k-50k-1000mo-7pct-25yr", params: { balance: 50000, monthlyContribution: 1000, employerMatch: 4, rate: 7, years: 25 }, title: "401(k) with $50K, $1,000/Month at 7% for 25 Years", description: "Calculate your 401(k) future value with $50K start and $1,000 monthly contributions" },
+      { slug: "401k-100k-500mo-6pct-20yr", params: { balance: 100000, monthlyContribution: 500, employerMatch: 3, rate: 6, years: 20 }, title: "401(k) with $100K Balance, $500/Month at 6% for 20 Years", description: "Project your $100K 401(k) growth with $500 monthly at 6% return" },
+      { slug: "401k-100k-1000mo-7pct-25yr", params: { balance: 100000, monthlyContribution: 1000, employerMatch: 4, rate: 7, years: 25 }, title: "401(k) with $100K, $1,000/Month at 7% for 25 Years", description: "Calculate retirement savings growth from $100K with $1,000 monthly contributions" },
+      { slug: "401k-100k-1500mo-8pct-30yr", params: { balance: 100000, monthlyContribution: 1500, employerMatch: 5, rate: 8, years: 30 }, title: "401(k) with $100K, $1,500/Month at 8% for 30 Years", description: "Maximize your 401(k) growth with aggressive contributions over 30 years" },
+      { slug: "401k-200k-1000mo-6-5pct-20yr", params: { balance: 200000, monthlyContribution: 1000, employerMatch: 4, rate: 6.5, years: 20 }, title: "401(k) with $200K, $1,000/Month at 6.5% for 20 Years", description: "Project $200K 401(k) growth with $1,000 monthly at 6.5% return" },
+      { slug: "401k-200k-2000mo-7pct-25yr", params: { balance: 200000, monthlyContribution: 2000, employerMatch: 5, rate: 7, years: 25 }, title: "401(k) with $200K, $2,000/Month at 7% for 25 Years", description: "Calculate maximum 401(k) growth for high-income earners over 25 years" },
+      { slug: "401k-500k-500mo-5pct-15yr", params: { balance: 500000, monthlyContribution: 500, employerMatch: 3, rate: 5, years: 15 }, title: "401(k) with $500K, $500/Month at 5% for 15 Years", description: "Near-retirement 401(k) projection with $500K and conservative 5% return" },
+      { slug: "401k-500k-2000mo-7pct-20yr", params: { balance: 500000, monthlyContribution: 2000, employerMatch: 5, rate: 7, years: 20 }, title: "401(k) with $500K, $2,000/Month at 7% for 20 Years", description: "High-balance 401(k) growth projection with aggressive contributions" },
+      { slug: "401k-0k-500mo-8pct-30yr", params: { balance: 0, monthlyContribution: 500, employerMatch: 3, rate: 8, years: 30 }, title: "401(k) Starting from $0, $500/Month at 8% for 30 Years", description: "See how starting early with $500/month grows your 401(k) from zero" },
+      { slug: "401k-0k-1000mo-7pct-35yr", params: { balance: 0, monthlyContribution: 1000, employerMatch: 4, rate: 7, years: 35 }, title: "401(k) from $0, $1,000/Month at 7% for 35 Years", description: "Long-term 401(k) growth starting from zero with consistent $1,000 monthly" },
+      { slug: "401k-0k-2000mo-7pct-40yr", params: { balance: 0, monthlyContribution: 2000, employerMatch: 5, rate: 7, years: 40 }, title: "401(k) from $0, $2,000/Month at 7% for 40 Years", description: "Max lifetime 401(k) growth over a full 40-year career" },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // SAVINGS GOAL CALCULATOR — 10 templates
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "savings-goal",
+    calculatorSlug: "savings-goal",
+    calculatorName: "Savings Goal Calculator",
+    category: "personal",
+    templates: [
+      { slug: "savings-10k-200mo-4pct", params: { goal: 10000, monthlySavings: 200, rate: 4 }, title: "Save $10,000 with $200/Month at 4% Interest", description: "Calculate how long to save $10,000 putting away $200 per month at 4% APY" },
+      { slug: "savings-10k-500mo-3pct", params: { goal: 10000, monthlySavings: 500, rate: 3 }, title: "Save $10,000 with $500/Month at 3% Interest", description: "See how fast you can reach $10,000 saving $500 monthly" },
+      { slug: "savings-25k-300mo-4-5pct", params: { goal: 25000, monthlySavings: 300, rate: 4.5 }, title: "Save $25,000 with $300/Month at 4.5% APY", description: "Calculate time to save $25,000 for a car or home down payment" },
+      { slug: "savings-25k-1000mo-5pct", params: { goal: 25000, monthlySavings: 1000, rate: 5 }, title: "Save $25,000 with $1,000/Month at 5% APY", description: "Aggressive savings plan to reach $25,000 with high-yield savings" },
+      { slug: "savings-50k-500mo-4pct", params: { goal: 50000, monthlySavings: 500, rate: 4 }, title: "Save $50,000 with $500/Month at 4% APY", description: "Calculate your path to $50,000 with consistent monthly savings" },
+      { slug: "savings-50k-1000mo-5pct", params: { goal: 50000, monthlySavings: 1000, rate: 5 }, title: "Save $50,000 with $1,000/Month at 5% APY", description: "Reach $50,000 faster with $1,000 monthly deposits at 5% interest" },
+      { slug: "savings-100k-1000mo-5pct", params: { goal: 100000, monthlySavings: 1000, rate: 5 }, title: "Save $100,000 with $1,000/Month at 5% APY", description: "Six-figure savings goal: calculate time to $100K with monthly deposits" },
+      { slug: "savings-100k-2000mo-6pct", params: { goal: 100000, monthlySavings: 2000, rate: 6 }, title: "Save $100,000 with $2,000/Month at 6% Return", description: "Reach $100K quickly with aggressive $2,000 monthly investments" },
+      { slug: "savings-500k-2000mo-7pct", params: { goal: 500000, monthlySavings: 2000, rate: 7 }, title: "Save $500,000 with $2,000/Month at 7% Return", description: "Long-term wealth building: path to half a million with consistent investing" },
+      { slug: "savings-1M-3000mo-7pct", params: { goal: 1000000, monthlySavings: 3000, rate: 7 }, title: "Save $1,000,000 with $3,000/Month at 7% Return", description: "Calculate your journey to millionaire status with disciplined monthly investing" },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // EMERGENCY FUND CALCULATOR — 10 templates
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "emergency-fund",
+    calculatorSlug: "emergency-fund",
+    calculatorName: "Emergency Fund Calculator",
+    category: "personal",
+    templates: [
+      { slug: "emergency-fund-3k-3mo", params: { monthlyExpenses: 3000, months: 3 }, title: "3-Month Emergency Fund for $3,000/Month Expenses", description: "Calculate how much to save for a 3-month emergency fund with $3K monthly expenses" },
+      { slug: "emergency-fund-3k-6mo", params: { monthlyExpenses: 3000, months: 6 }, title: "6-Month Emergency Fund for $3,000/Month Expenses", description: "The recommended 6-month cushion: calculate your emergency savings target" },
+      { slug: "emergency-fund-4k-6mo", params: { monthlyExpenses: 4000, months: 6 }, title: "6-Month Emergency Fund for $4,000/Month Expenses", description: "Family emergency fund: calculate 6 months of savings for $4K monthly costs" },
+      { slug: "emergency-fund-4k-12mo", params: { monthlyExpenses: 4000, months: 12 }, title: "12-Month Emergency Fund for $4,000/Month Expenses", description: "Ultimate safety net: a full year of expenses saved for emergencies" },
+      { slug: "emergency-fund-5k-6mo", params: { monthlyExpenses: 5000, months: 6 }, title: "6-Month Emergency Fund for $5,000/Month Expenses", description: "High cost of living emergency fund target for $5K monthly spending" },
+      { slug: "emergency-fund-2k-3mo", params: { monthlyExpenses: 2000, months: 3 }, title: "3-Month Emergency Fund for $2,000/Month Expenses", description: "Starter emergency fund: calculate savings needed for 3 months" },
+      { slug: "emergency-fund-6k-6mo", params: { monthlyExpenses: 6000, months: 6 }, title: "6-Month Emergency Fund for $6,000/Month Expenses", description: "High-earner emergency savings: 6 months at $6K monthly expenses" },
+      { slug: "emergency-fund-8k-6mo", params: { monthlyExpenses: 8000, months: 6 }, title: "6-Month Emergency Fund for $8,000/Month Expenses", description: "Executive-level emergency fund for $8K monthly living costs" },
+      { slug: "emergency-fund-10k-12mo", params: { monthlyExpenses: 10000, months: 12 }, title: "12-Month Emergency Fund for $10,000/Month Expenses", description: "Maximum protection: one year of expenses at $10K/month" },
+      { slug: "emergency-fund-1-5k-1mo", params: { monthlyExpenses: 1500, months: 1 }, title: "1-Month Starter Emergency Fund for $1,500/Month Expenses", description: "Beginner emergency fund: your first month of savings covered" },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ANNUITY CALCULATOR — 10 templates
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "annuity-calculator",
+    calculatorSlug: "annuity-calculator",
+    calculatorName: "Annuity Calculator",
+    category: "retirement",
+    templates: [
+      { slug: "annuity-100k-5pct-20yr", params: { investment: 100000, rate: 5, years: 20 }, title: "$100,000 Annuity at 5% for 20 Years", description: "Calculate monthly annuity payments from a $100K investment over 20 years" },
+      { slug: "annuity-100k-6pct-25yr", params: { investment: 100000, rate: 6, years: 25 }, title: "$100,000 Annuity at 6% for 25 Years", description: "See your monthly income from a $100K annuity at 6% over 25 years" },
+      { slug: "annuity-200k-5-5pct-20yr", params: { investment: 200000, rate: 5.5, years: 20 }, title: "$200,000 Annuity at 5.5% for 20 Years", description: "Calculate retirement income from a $200K annuity investment" },
+      { slug: "annuity-200k-7pct-30yr", params: { investment: 200000, rate: 7, years: 30 }, title: "$200,000 Annuity at 7% for 30 Years", description: "Long-term annuity: $200K at 7% over a 30-year retirement" },
+      { slug: "annuity-300k-5pct-25yr", params: { investment: 300000, rate: 5, years: 25 }, title: "$300,000 Annuity at 5% for 25 Years", description: "Calculate monthly payments from a $300K annuity over 25 years" },
+      { slug: "annuity-300k-6pct-30yr", params: { investment: 300000, rate: 6, years: 30 }, title: "$300,000 Annuity at 6% for 30 Years", description: "30-year retirement income from a $300K annuity at 6% return" },
+      { slug: "annuity-500k-5-5pct-25yr", params: { investment: 500000, rate: 5.5, years: 25 }, title: "$500,000 Annuity at 5.5% for 25 Years", description: "Major annuity: calculate income from a half-million dollar investment" },
+      { slug: "annuity-500k-7pct-30yr", params: { investment: 500000, rate: 7, years: 30 }, title: "$500,000 Annuity at 7% for 30 Years", description: "Maximum retirement annuity: $500K at 7% over 30 years" },
+      { slug: "annuity-1M-5pct-25yr", params: { investment: 1000000, rate: 5, years: 25 }, title: "$1,000,000 Annuity at 5% for 25 Years", description: "Million-dollar annuity: calculate guaranteed lifetime income" },
+      { slug: "annuity-1M-6pct-30yr", params: { investment: 1000000, rate: 6, years: 30 }, title: "$1,000,000 Annuity at 6% for 30 Years", description: "Maximum annuity payout: $1M investment at 6% over 30 years" },
+    ],
+  },
 ];
 
 /**
