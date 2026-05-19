@@ -94,7 +94,7 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebApplication",
+            "@type": "SoftwareApplication",
             name: `${calcConfig.label} for ${cityDisplay}`,
             description: `Free ${calcConfig.label.toLowerCase()} for ${city.name}, ${city.stateAbbr}`,
             applicationCategory: "FinanceApplication",
@@ -102,6 +102,37 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
             url: `https://qfinhub.com/calculators/${slug}/${geo}`,
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
             areaServed: { "@type": "City", name: city.name },
+            author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://qfinhub.com/" },
+              { "@type": "ListItem", position: 2, name: "Calculators", item: "https://qfinhub.com/calculators" },
+              { "@type": "ListItem", position: 3, name: `${calcConfig.label} for ${cityDisplay}`, item: `https://qfinhub.com/calculators/${slug}/${geo}` },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: `How to Calculate ${calcConfig.label} for ${city.name}`,
+            description: `Step-by-step guide to using our free ${calcConfig.label.toLowerCase()} tailored for ${city.name}, ${city.stateAbbr}.`,
+            step: [
+              { "@type": "HowToStep", position: 1, name: `Enter your loan amount`, text: `Input your expected home price or loan amount based on ${city.name}'s median home value of ${medianFormatted}.` },
+              { "@type": "HowToStep", position: 2, name: "Adjust interest rate and term", text: "Set the current mortgage interest rate and choose between a 15-year or 30-year loan term." },
+              { "@type": "HowToStep", position: 3, name: "Review your results", text: `See your estimated monthly payment, total interest, and amortization schedule specific to ${city.name}.` },
+            ],
           }),
         }}
       />
