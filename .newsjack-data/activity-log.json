@@ -1054,5 +1054,47 @@
       "tweetId": null,
       "guid": "https://www.bloomberg.com/news/articles/2026-05-19/trump-team-seeks-longer-gas-tax-holiday-with-phased-in-return"
     }
+  },
+  {
+    "ts": "2026-05-19T21:02:39.469Z",
+    "type": "news-match",
+    "details": {
+      "title": "Fed to hike? When traders see a rate increase coming",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108309181"
+    }
+  },
+  {
+    "ts": "2026-05-19T21:02:52.462Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-",
+      "title": "Fed Rate Hike Odds Rising by July 2027: How to Protect Your Mortgage and Savings Now",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108309181"
+    }
+  },
+  {
+    "ts": "2026-05-19T21:02:57.462Z",
+    "type": "news-match",
+    "details": {
+      "title": "Big Treasury Block Sales Drive ‘Capitulation’ Selloff in Bonds",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-19/big-treasury-block-sales-drive-capitulation-selloff-in-bonds"
+    }
+  },
+  {
+    "ts": "2026-05-19T21:03:07.606Z",
+    "type": "news-published",
+    "details": {
+      "slug": "treasury-selloff-hits-mortgages-how-to-protect-your-home-loan-plans",
+      "title": "Treasury Selloff Hits Mortgages: How to Protect Your Home Loan Plans",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-19/big-treasury-block-sales-drive-capitulation-selloff-in-bonds"
+    }
   }
 ]

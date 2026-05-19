@@ -55,6 +55,14 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/19/treasurys-yields-inflation-traders-fed-interest-rates.html"
   },
+  "108309181": {
+    "slug": "fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-",
+    "title": "Fed Rate Hike Odds Rising by July 2027: How to Protect Your Mortgage and Savings Now",
+    "publishedAt": "2026-05-19T21:02:52.461Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/19/fed-to-hike-when-traders-see-a-rate-increase-coming.html"
+  },
   "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>": {
     "slug": "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
     "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals",
@@ -366,5 +374,13 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-19/trump-team-seeks-longer-gas-tax-holiday-with-phased-in-return"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-19/big-treasury-block-sales-drive-capitulation-selloff-in-bonds": {
+    "slug": "treasury-selloff-hits-mortgages-how-to-protect-your-home-loan-plans",
+    "title": "Treasury Selloff Hits Mortgages: How to Protect Your Home Loan Plans",
+    "publishedAt": "2026-05-19T21:03:07.605Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-19/big-treasury-block-sales-drive-capitulation-selloff-in-bonds"
   }
 }
