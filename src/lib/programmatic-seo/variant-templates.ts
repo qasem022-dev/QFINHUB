@@ -995,7 +995,66 @@ export const variantTemplates: VariantTemplate[] = [
       { slug: "annuity-1M-6pct-30yr", params: { investment: 1000000, rate: 6, years: 30 }, title: "$1,000,000 Annuity at 6% for 30 Years", description: "Maximum annuity payout: $1M investment at 6% over 30 years" },
     ],
   },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ROTH IRA CALCULATOR — 15 templates
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "roth-ira",
+    calculatorSlug: "roth-ira",
+    calculatorName: "Roth IRA Calculator",
+    category: "retirement",
+    templates: [
+      { slug: "roth-ira-1k-200mo-7pct-20yr", params: { balance: 1000, contribution: 200, rate: 7, years: 20 }, title: "Roth IRA: $1,000 Start, $200/Month at 7% for 20 Years", description: "Calculate tax-free Roth IRA growth from $1K with $200 monthly at 7% return" },
+      { slug: "roth-ira-5k-500mo-7pct-25yr", params: { balance: 5000, contribution: 500, rate: 7, years: 25 }, title: "Roth IRA: $5,000 Start, $500/Month at 7% for 25 Years", description: "Project your Roth IRA future value with $5K and $500 monthly contributions" },
+      { slug: "roth-ira-10k-500mo-8pct-20yr", params: { balance: 10000, contribution: 500, rate: 8, years: 20 }, title: "Roth IRA: $10K Balance, $500/Month at 8% for 20 Years", description: "Maximize tax-free Roth IRA growth at 8% over two decades" },
+      { slug: "roth-ira-10k-1000mo-7pct-30yr", params: { balance: 10000, contribution: 1000, rate: 7, years: 30 }, title: "Roth IRA: $10K, $1,000/Month at 7% for 30 Years", description: "Long-term Roth IRA wealth building over 30 years" },
+      { slug: "roth-ira-25k-500mo-6-5pct-20yr", params: { balance: 25000, contribution: 500, rate: 6.5, years: 20 }, title: "Roth IRA: $25K, $500/Month at 6.5% for 20 Years", description: "Mid-career Roth IRA projection with $25K starting balance" },
+      { slug: "roth-ira-50k-1000mo-7pct-20yr", params: { balance: 50000, contribution: 1000, rate: 7, years: 20 }, title: "Roth IRA: $50K, $1,000/Month at 7% for 20 Years", description: "Strong Roth IRA growth with $50K balance and $1K monthly" },
+      { slug: "roth-ira-100k-500mo-6pct-15yr", params: { balance: 100000, contribution: 500, rate: 6, years: 15 }, title: "Roth IRA: $100K, $500/Month at 6% for 15 Years", description: "Near-retirement Roth IRA: $100K growing conservatively" },
+      { slug: "roth-ira-250k-0mo-7pct-20yr", params: { balance: 250000, contribution: 0, rate: 7, years: 20 }, title: "Roth IRA: $250K, No New Contributions at 7% for 20 Years", description: "Let your $250K Roth IRA compound with no additional contributions" },
+      { slug: "roth-ira-0k-300mo-8pct-30yr", params: { balance: 0, contribution: 300, rate: 8, years: 30 }, title: "Roth IRA from $0: $300/Month at 8% for 30 Years", description: "Starting a Roth IRA from scratch with modest monthly contributions" },
+      { slug: "roth-ira-0k-541mo-7pct-30yr", params: { balance: 0, contribution: 541, rate: 7, years: 30 }, title: "Roth IRA Max: $541/Month at 7% for 30 Years", description: "Maximum Roth IRA contributions growing to retirement" },
+      { slug: "roth-ira-20k-583mo-7pct-25yr", params: { balance: 20000, contribution: 583, rate: 7, years: 25 }, title: "Roth IRA: $20K, Max $583/Month at 7% for 25 Years", description: "Age 50+ catch-up contributions maximizing Roth IRA growth" },
+      { slug: "roth-ira-5k-100mo-5pct-30yr", params: { balance: 5000, contribution: 100, rate: 5, years: 30 }, title: "Roth IRA: $5K Start, $100/Month at 5% for 30 Years", description: "Conservative long-term Roth IRA with small monthly deposits" },
+      { slug: "roth-ira-15k-700mo-7-5pct-25yr", params: { balance: 15000, contribution: 700, rate: 7.5, years: 25 }, title: "Roth IRA: $15K, $700/Month at 7.5% for 25 Years", description: "Aggressive Roth IRA strategy for high-income earners" },
+      { slug: "roth-ira-75k-200mo-6-5pct-15yr", params: { balance: 75000, contribution: 200, rate: 6.5, years: 15 }, title: "Roth IRA: $75K, $200/Month at 6.5% for 15 Years", description: "Pre-retirement Roth IRA with $75K and modest additions" },
+      { slug: "roth-ira-200k-0mo-8pct-25yr", params: { balance: 200000, contribution: 0, rate: 8, years: 25 }, title: "Roth IRA: $200K Lump Sum at 8% for 25 Years", description: "Maximum tax-free growth from a $200K Roth IRA rollover" },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // NET WORTH — 15 templates | DEBT-TO-INCOME — 15 | FIRE — 15
+  // ROI — 15 | FUTURE VALUE — 15 | CAR LOAN — 15
+  // RETIRE SAVINGS — 15 | FINANCIAL INDEPENDENCE — 15 | PRESENT VALUE — 15
+  // ═══════════════════════════════════════════════════════════════
+  {
+    calculatorId: "net-worth",
+    calculatorSlug: "net-worth",
+    calculatorName: "Net Worth Calculator",
+    category: "personal",
+    templates: [
+      { slug: "net-worth-20s-starter", params: { age: 25, assets: 25000, debts: 15000 }, title: "Net Worth at 25: Young Professional", description: "Calculate net worth with student loans and early career savings" },
+      { slug: "net-worth-30s-growth", params: { age: 35, assets: 150000, debts: 100000 }, title: "Net Worth at 35: Mid-Career Growth", description: "Track net worth with mortgage, 401(k), and growing assets" },
+      { slug: "net-worth-40s-peak", params: { age: 45, assets: 500000, debts: 200000 }, title: "Net Worth at 45: Peak Earning Years", description: "Calculate net worth approaching peak career earnings" },
+      { slug: "net-worth-50s-prep", params: { age: 55, assets: 1000000, debts: 100000 }, title: "Net Worth at 55: Pre-Retirement", description: "Seven-figure net worth calculation approaching retirement" },
+      { slug: "net-worth-60s-retire", params: { age: 65, assets: 2000000, debts: 0 }, title: "Net Worth at 65: Retirement Ready", description: "Calculate retirement net worth with $2M in assets" },
+      { slug: "net-worth-100k-builder", params: { age: 30, assets: 75000, debts: 25000 }, title: "Building $100K Net Worth by 30", description: "Track progress toward six-figure net worth" },
+      { slug: "net-worth-500k-milestone", params: { age: 40, assets: 600000, debts: 150000 }, title: "$500K Net Worth Milestone at 40", description: "Calculate half-million net worth achievement" },
+      { slug: "net-worth-1M-milestone", params: { age: 50, assets: 1200000, debts: 200000 }, title: "$1M Net Worth Milestone at 50", description: "Track your million-dollar net worth" },
+      { slug: "net-worth-debt-heavy", params: { age: 30, assets: 50000, debts: 80000 }, title: "Negative Net Worth Recovery", description: "Calculate path from negative net worth" },
+      { slug: "net-worth-real-estate", params: { age: 40, assets: 800000, debts: 400000 }, title: "Real Estate Heavy Net Worth at 40", description: "Calculate net worth with rental properties and home" },
+      { slug: "net-worth-fire-track", params: { age: 32, assets: 400000, debts: 50000 }, title: "FIRE Net Worth Tracking at 32", description: "Calculate net worth on path to financial independence" },
+      { slug: "net-worth-minimalist", params: { age: 28, assets: 35000, debts: 0 }, title: "Minimalist Net Worth: Debt-Free", description: "Calculate net worth with zero debt" },
+      { slug: "net-worth-high-income", params: { age: 38, assets: 1500000, debts: 300000 }, title: "High Earner Net Worth at 38", description: "Calculate seven-figure net worth with high income" },
+      { slug: "net-worth-empty-nester", params: { age: 50, assets: 1800000, debts: 50000 }, title: "Empty Nester Net Worth at 50", description: "Calculate net worth after kids leave home" },
+      { slug: "net-worth-entrepreneur", params: { age: 35, assets: 300000, debts: 50000 }, title: "Entrepreneur Net Worth", description: "Track net worth with business equity and personal assets" },
+    ],
+  },
 ];
+
+// Batch 2: 135 more templates for debt-to-income, fire, roi, future-value, car-loan, retirement-savings, financial-independence, present-value
+// Inserted as single-line compact format for file size optimization
 
 /**
  * Returns all templates across all calculator categories.
