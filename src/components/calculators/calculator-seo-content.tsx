@@ -1,5 +1,6 @@
 import { CalculatorContent } from "@/types/calculator-content";
 import Link from "next/link";
+import { blogPosts } from "@/lib/blog/posts";
 
 interface CalculatorSEOContentProps {
   content: CalculatorContent;
@@ -14,6 +15,11 @@ export function CalculatorSEOContent({
   content,
   currentSlug,
 }: CalculatorSEOContentProps) {
+  // Find blog posts that reference this calculator
+  const relatedBlogPosts = blogPosts
+    .filter((post) => post.relatedCalculators?.includes(currentSlug))
+    .slice(0, 4);
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="prose prose-gray max-w-4xl dark:prose-invert mx-auto">
@@ -121,6 +127,34 @@ export function CalculatorSEOContent({
                     {formatSlug(slug)}
                   </Link>
                 ))}
+            </div>
+          </section>
+        )}
+
+        {/* Related Blog Posts */}
+        {relatedBlogPosts.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Related Guides & Articles
+            </h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {relatedBlogPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="rounded-lg border border-gray-200 bg-white px-4 py-3 hover:border-primary-300 hover:bg-primary-50 dark:border-gray-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:bg-primary-900/20 transition-all"
+                >
+                  <p className="text-sm font-medium text-primary-600 dark:text-primary-400">
+                    {post.title}
+                  </p>
+                  <p className="mt-1 text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+                    {post.description}
+                  </p>
+                  <p className="mt-1 text-xs text-gray-400 dark:text-gray-500">
+                    {post.readingTime} min read
+                  </p>
+                </Link>
+              ))}
             </div>
           </section>
         )}
