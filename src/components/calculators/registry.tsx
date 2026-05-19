@@ -82,6 +82,7 @@ const calculatorMap: Record<string, ComponentType<any>> = {
   "arm-calculator": dynamic(() => import("./impl/arm-calculator")),
   "pmi-calculator": dynamic(() => import("./impl/pmi-calculator")),
   "home-renovation": dynamic(() => import("./impl/home-renovation")),
+  "fire-calculator": dynamic(() => import("./impl/fire-calculator")),
   "basic-calculator": dynamic(() => import("./impl/basic-calculator")),
   "currency-converter": dynamic(() => import("./impl/currency-converter")),
   "tip-calculator": dynamic(() => import("./impl/tip-calculator")),

@@ -1359,6 +1359,35 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     relatedCalculators: ["budget-planner", "em-fund", "inflation-calculator"],
   },
 
+  "fire-calculator": {
+    explanation: `The QFINHUB FIRE Calculator helps you chart your path to Financial Independence and Early Retirement by calculating your FIRE number, projected portfolio value, and years to financial freedom. Whether you follow the classic 4% rule, pursue Lean FIRE, Fat FIRE, or Coast FIRE, this calculator gives you the clarity and motivation to achieve your early retirement goals.`,
+
+    formula: `FIRE Number = Annual Expenses ÷ Withdrawal Rate  |  Years to FIRE = ln((r × FIRE Number ÷ Annual Savings) + 1) ÷ ln(1 + r)`,
+
+    formulaDescription: `The FIRE number represents your target portfolio size — the amount you need invested to never run out of money. It is calculated by dividing your expected annual retirement expenses by your safe withdrawal rate (e.g., $40,000 ÷ 0.04 = $1,000,000 under the 4% rule). The years to FIRE formula then uses logarithmic math to determine how long it will take your current savings and ongoing contributions to reach that target at your expected rate of return.`,
+
+    realWorldUse: `Imagine you are a 30-year-old software engineer earning $120,000 per year who wants to retire by age 45. You have $150,000 already invested and plan to contribute $3,000 monthly. By using the FIRE Calculator, you can instantly see if your current trajectory hits your $1.25 million FIRE number by age 45, or if you need to increase your savings rate, adjust your timeline, or consider a more aggressive investment strategy. The calculator also lets you explore different scenarios — what if market returns are lower than expected? What if you use a 3.5% withdrawal rate instead of 4%? This empowers you to make data-driven decisions rather than blindly hoping your money lasts.`,
+
+    example: `If your expected annual expenses in retirement are $40,000 and you follow the 4% safe withdrawal rule, your FIRE number is $1,000,000 ($40,000 × 25). If you currently have $100,000 saved and contribute $3,000 monthly with a 7% annual return, you will reach your FIRE goal in approximately 12.3 years — at which point your portfolio generates enough passive income to cover your living expenses indefinitely.`,
+
+    keyFactors: [
+      "Annual retirement expenses — your projected yearly spending determines your entire FIRE number",
+      "Safe withdrawal rate — the classic 4% rule, though many FIRE advocates use 3.5% for extra safety",
+      "Current portfolio value — your starting point and the foundation for compound growth",
+      "Monthly savings rate — the single most powerful lever you control; higher savings rate = faster FIRE",
+      "Expected investment return — typically 7% after inflation for broad market index funds"
+    ],
+
+    tips: [
+      "Track your real expenses for at least 6 months before relying on any FIRE calculator — underestimating expenses is the #1 mistake.",
+      "Run scenarios with different withdrawal rates: try 3.5%, 4%, and 5% to see how sensitive your plan is to this assumption.",
+      "Don't forget about healthcare costs, taxes, and lumpy expenses (car replacement, home repairs) when estimating your annual retirement spending.",
+      "Revisit this calculator annually — as your income grows and expenses change, your FIRE number and timeline will shift."
+    ],
+
+    relatedCalculators: ["retirement-planning", "compound-interest", "investment-return", "savings-goal", "budget-planner", "net-worth", "401k-calculator", "retirement-withdrawal", "early-retirement"],
+  },
+
   "wedding-budget": {
     explanation: `The QFINHUB Wedding Budget Calculator is a comprehensive tool designed to help couples estimate, organize, and track their total wedding expenses. By breaking down costs across various categories, it ensures you stay within your financial limits while planning your dream day without the stress of hidden debt.`,
     formula: `Total Budget = (Guest Count × Cost Per Guest) + Fixed Vendor Costs + Contingency Fund`,

@@ -1117,6 +1117,15 @@ export const allCalculators: CalculatorConfig[] = [
     color: "primary",
   },
   {
+    id: "fire-calculator",
+    slug: "fire-calculator",
+    title: "FIRE Calculator",
+    description: "Plan your path to Financial Independence and Early Retirement with the 4% rule, compound growth projections, and FIRE number targeting.",
+    category: "retirement",
+    icon: "🔥",
+    color: "accent",
+  },
+  {
     id: "phone-plan-comparison",
     slug: "phone-plan-comparison",
     title: "Phone Plan Comparison",
