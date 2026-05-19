@@ -171,6 +171,23 @@ export default async function CalculatorDetailPage({
     "@type": "FAQPage",
     mainEntity: faqItems,
   } : null;
+
+  // Build HowTo schema from tips as step-by-step instructions
+  const howToSteps = (calculatorContent[slug]?.tips || []).map((tip, i) => ({
+    "@type": "HowToStep" as const,
+    position: i + 1,
+    name: `Step ${i + 1}: ${calculator.title}`,
+    text: tip,
+  }));
+
+  const howToLd = howToSteps.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to Use the ${calculator.title}`,
+    description: `Step-by-step guide to using the ${calculator.title} effectively. ${calculator.description}`,
+    step: howToSteps,
+  } : null;
+
   const calculatorLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -205,6 +222,12 @@ export default async function CalculatorDetailPage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+      {howToLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
         />
       )}
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
