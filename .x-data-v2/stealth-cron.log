@@ -1,0 +1,33 @@
+
+============================================================
+  🐦 X/Twitter Stealth Browser — Mode: full
+  Time: 2026-05-19T20:00:42.558001
+============================================================
+
+🕵️  Stealth Browser — Profile: x-engagement-bot
+   Fingerprint: Win32 | 8 cores | 16GB
+   Headless: True | Eye: True | Deepseek: True
+   Proxy: Direct
+   Session dir: /home/admin1/.hermes/stealth-profiles/x-engagement-bot
+   ✅ Browser launched (persistent profile)
+   ✅ Stealth patches injected (27 vectors)
+   ✅ Advanced Eye monitoring active
+   ✅ All systems ready
+
+⚠️ Not logged in. Attempting login...
+⚠️ Auto-login failed: Element not found: input[autocomplete="username"], input[name="text"]
+   Set headless=False and login manually on first run.
+
+🛑 Stealth Browser shutting down...
+   ✅ Eye monitoring stopped
+   ✅ Context closed
+   ✅ Playwright stopped
+   ✅ Shutdown complete
+
+
+🛑 Stealth Browser shutting down...
+   ✅ Eye monitoring stopped
+   ✅ Context closed
+   ✅ Playwright stopped
+   ✅ Shutdown complete
+

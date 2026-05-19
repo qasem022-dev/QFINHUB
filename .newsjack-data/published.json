@@ -318,5 +318,53 @@
     "category": "housing",
     "tweetId": null,
     "sourceUrl": "https://www.housingwire.com/articles/unlock-housing-supply-affordability/"
+  },
+  "https://www.bloomberg.com/news/videos/2026-05-19/bloomberg-brief-5-19-2026-video": {
+    "slug": "30-year-yields-near-2007-highs-how-to-protect-your-mortgage-and-savings-now",
+    "title": "30-Year Yields Near 2007 Highs: How to Protect Your Mortgage and Savings Now",
+    "publishedAt": "2026-05-19T12:01:53.912Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/videos/2026-05-19/bloomberg-brief-5-19-2026-video"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-19/record-number-of-borrowers-are-selling-bonds-in-europe-s-market": {
+    "slug": "europe-s-bond-rush-what-record-borrowing-means-for-your-mortgage-and-savings",
+    "title": "Europe’s Bond Rush: What Record Borrowing Means for Your Mortgage and Savings",
+    "publishedAt": "2026-05-19T12:02:57.205Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-19/record-number-of-borrowers-are-selling-bonds-in-europe-s-market"
+  },
+  "rate-cuts-off-table-2-144605302.html": {
+    "slug": "rate-cuts-are-off-the-table-2-stocks-under-30-for-this-market-how-to-protect-you",
+    "title": "Rate Cuts Are Off the Table: 2 Stocks Under $30 for This Market & How to Protect Your Mortgage",
+    "publishedAt": "2026-05-19T15:02:16.465Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/rate-cuts-off-table-2-144605302.html"
+  },
+  "fed-inflation-tracker-just-flashed-141000258.html": {
+    "slug": "fed-s-rising-inflation-forecast-how-to-protect-your-mortgage-and-savings",
+    "title": "Fed’s Rising Inflation Forecast: How to Protect Your Mortgage and Savings",
+    "publishedAt": "2026-05-19T15:02:40.455Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://finance.yahoo.com/economy/policy/articles/fed-inflation-tracker-just-flashed-141000258.html"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-18/oil-slips-as-trump-spurs-optimism-over-iran-deal-markets-wrap": {
+    "slug": "rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg",
+    "title": "Rising Bond Yields and Stock Market Drop: How Fed-Hike Anxiety Impacts Your Mortgage Affordability",
+    "publishedAt": "2026-05-19T18:04:07.973Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-18/oil-slips-as-trump-spurs-optimism-over-iran-deal-markets-wrap"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-19/trump-team-seeks-longer-gas-tax-holiday-with-phased-in-return": {
+    "slug": "trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget",
+    "title": "Trump Gas Tax Holiday: How Lower Fuel Costs Could Impact Your Mortgage and Budget",
+    "publishedAt": "2026-05-19T18:04:26.424Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-19/trump-team-seeks-longer-gas-tax-holiday-with-phased-in-return"
   }
 }

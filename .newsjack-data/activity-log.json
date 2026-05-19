@@ -928,5 +928,131 @@
       "tweetId": null,
       "guid": "108308873"
     }
+  },
+  {
+    "ts": "2026-05-19T12:01:34.812Z",
+    "type": "news-match",
+    "details": {
+      "title": "US Yields Near 2007 Highs; AI Push Fuels Job Cuts | Bloomberg Brief 5/19/2026",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/videos/2026-05-19/bloomberg-brief-5-19-2026-video"
+    }
+  },
+  {
+    "ts": "2026-05-19T12:01:53.913Z",
+    "type": "news-published",
+    "details": {
+      "slug": "30-year-yields-near-2007-highs-how-to-protect-your-mortgage-and-savings-now",
+      "title": "30-Year Yields Near 2007 Highs: How to Protect Your Mortgage and Savings Now",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/videos/2026-05-19/bloomberg-brief-5-19-2026-video"
+    }
+  },
+  {
+    "ts": "2026-05-19T12:01:58.915Z",
+    "type": "news-match",
+    "details": {
+      "title": "Record Number of Borrowers Are Selling Bonds in Europe’s Market",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-19/record-number-of-borrowers-are-selling-bonds-in-europe-s-market"
+    }
+  },
+  {
+    "ts": "2026-05-19T12:02:57.206Z",
+    "type": "news-published",
+    "details": {
+      "slug": "europe-s-bond-rush-what-record-borrowing-means-for-your-mortgage-and-savings",
+      "title": "Europe’s Bond Rush: What Record Borrowing Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-19/record-number-of-borrowers-are-selling-bonds-in-europe-s-market"
+    }
+  },
+  {
+    "ts": "2026-05-19T15:01:53.355Z",
+    "type": "news-match",
+    "details": {
+      "title": "Rate Cuts Are Off the Table. Here Are 2 Stocks Under $30 Built Exactly for This Moment",
+      "category": "fed-rate",
+      "source": "Yahoo Finance",
+      "guid": "rate-cuts-off-table-2-144605302.html"
+    }
+  },
+  {
+    "ts": "2026-05-19T15:02:16.466Z",
+    "type": "news-published",
+    "details": {
+      "slug": "rate-cuts-are-off-the-table-2-stocks-under-30-for-this-market-how-to-protect-you",
+      "title": "Rate Cuts Are Off the Table: 2 Stocks Under $30 for This Market & How to Protect Your Mortgage",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "rate-cuts-off-table-2-144605302.html"
+    }
+  },
+  {
+    "ts": "2026-05-19T15:02:21.468Z",
+    "type": "news-match",
+    "details": {
+      "title": "The Fed’s inflation tracker just flashed a warning: April and quarterly forecasts show prices are set to rise more",
+      "category": "fed-rate",
+      "source": "Yahoo Finance",
+      "guid": "fed-inflation-tracker-just-flashed-141000258.html"
+    }
+  },
+  {
+    "ts": "2026-05-19T15:02:40.456Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-s-rising-inflation-forecast-how-to-protect-your-mortgage-and-savings",
+      "title": "Fed’s Rising Inflation Forecast: How to Protect Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "fed-inflation-tracker-just-flashed-141000258.html"
+    }
+  },
+  {
+    "ts": "2026-05-19T18:03:55.210Z",
+    "type": "news-match",
+    "details": {
+      "title": "Stocks Fall as Fed-Hike Anxiety Lifts Bond Yields: Markets Wrap",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-18/oil-slips-as-trump-spurs-optimism-over-iran-deal-markets-wrap"
+    }
+  },
+  {
+    "ts": "2026-05-19T18:04:07.974Z",
+    "type": "news-published",
+    "details": {
+      "slug": "rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg",
+      "title": "Rising Bond Yields and Stock Market Drop: How Fed-Hike Anxiety Impacts Your Mortgage Affordability",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-18/oil-slips-as-trump-spurs-optimism-over-iran-deal-markets-wrap"
+    }
+  },
+  {
+    "ts": "2026-05-19T18:04:12.975Z",
+    "type": "news-match",
+    "details": {
+      "title": "Trump Team Seeks Longer Gas Tax Holiday With Phased-In Return",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-19/trump-team-seeks-longer-gas-tax-holiday-with-phased-in-return"
+    }
+  },
+  {
+    "ts": "2026-05-19T18:04:26.425Z",
+    "type": "news-published",
+    "details": {
+      "slug": "trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget",
+      "title": "Trump Gas Tax Holiday: How Lower Fuel Costs Could Impact Your Mortgage and Budget",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-19/trump-team-seeks-longer-gas-tax-holiday-with-phased-in-return"
+    }
   }
 ]
