@@ -1,0 +1,30 @@
+═══════════════════════════════════════════
+  QFINHUB Blog Content Engine
+  2026-05-19
+═══════════════════════════════════════════
+
+📡 Fetching trending finance topics...
+  Google Trends Finance: 10 items
+  CNBC Finance: 30 items
+  Yahoo Finance: ❌ 
+  Bloomberg Markets: 30 items
+  Housing Wire: 10 items
+  Realtor.com: 30 items
+
+🎯 Selecting best topic...
+  Topic: "Investor Angst Emerges in Riskiest Stocks on Rate Uncertainty"
+  Keyword: "mortgage rates 2025 Investor Angst Emerges in Risk"
+  Category: mortgage
+  Source: trend
+
+✍️ Generating SEO blog post...
+  Title: Investor Angst Emerges in Riskiest Stocks on Rate Uncertainty: Mortgage Rates 2025
+  Content: ~6837 chars
+  Reading time: 8 min
+
+📝 Publishing to blog...
+  ✅ Published: /blog/investor-angst-emerges-in-riskiest-stocks-on-rate-uncertainty-mortgage-rates-202
+
+✅ Blog post published!
+   URL: https://www.qfinhub.com/blog/investor-angst-emerges-in-riskiest-stocks-on-rate-uncertainty-mortgage-rates-202
+   Run 'npm run build && vercel --prod' to deploy
