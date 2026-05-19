@@ -62,15 +62,16 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
             "@context": "https://schema.org",
             "@graph": [
               {
-                "@type": "WebApplication",
+                "@type": "SoftwareApplication",
                 name: variant.meta.title,
                 description: variant.meta.description,
                 applicationCategory: "FinanceApplication",
                 operatingSystem: "All",
                 url: `https://qfinhub.com/tools/${variant.slug}`,
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Organization", name: "QFINHUB" },
+                author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about" },
               },
+              variant.schema.howToSchema,
               ...(variant.faqs.length > 0
                 ? [
                     {
@@ -88,6 +89,14 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
                     },
                   ]
                 : []),
+              {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://qfinhub.com/" },
+                  { "@type": "ListItem", position: 2, name: "Tools", item: "https://qfinhub.com/tools" },
+                  { "@type": "ListItem", position: 3, name: variant.meta.title, item: `https://qfinhub.com/tools/${variant.slug}` },
+                ],
+              },
             ],
           }),
         }}
