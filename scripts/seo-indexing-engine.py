@@ -16,6 +16,7 @@ PRIORITY_URLS = [
     "https://www.qfinhub.com/",
     "https://www.qfinhub.com/calculators",
     "https://www.qfinhub.com/blog",
+    # Top calculators (high search volume)
     "https://www.qfinhub.com/calculators/mortgage-calculator",
     "https://www.qfinhub.com/calculators/compound-interest",
     "https://www.qfinhub.com/calculators/retirement-planning",
@@ -23,6 +24,27 @@ PRIORITY_URLS = [
     "https://www.qfinhub.com/calculators/401k-calculator",
     "https://www.qfinhub.com/calculators/debt-snowball",
     "https://www.qfinhub.com/calculators/budget-planner",
+    # More high-value calculators
+    "https://www.qfinhub.com/calculators/auto-loan",
+    "https://www.qfinhub.com/calculators/credit-card-payoff",
+    "https://www.qfinhub.com/calculators/loan-calculator",
+    "https://www.qfinhub.com/calculators/amortization-schedule",
+    "https://www.qfinhub.com/calculators/refinance-calculator",
+    "https://www.qfinhub.com/calculators/rent-vs-buy",
+    "https://www.qfinhub.com/calculators/investment-return",
+    "https://www.qfinhub.com/calculators/retirement-savings",
+    "https://www.qfinhub.com/calculators/annuity-calculator",
+    "https://www.qfinhub.com/calculators/roi-calculator",
+    "https://www.qfinhub.com/calculators/roi-cagr",
+    "https://www.qfinhub.com/calculators/net-worth",
+    "https://www.qfinhub.com/calculators/mortgage-affordability",
+    "https://www.qfinhub.com/calculators/debt-to-income",
+    "https://www.qfinhub.com/calculators/car-loan",
+    "https://www.qfinhub.com/calculators/savings-goal",
+    "https://www.qfinhub.com/calculators/financial-independence",
+    "https://www.qfinhub.com/calculators/fire-calculator",
+    "https://www.qfinhub.com/calculators/emergency-fund",
+    "https://www.qfinhub.com/calculators/inflation-calculator",
 ]
 
 def get_token():
@@ -112,6 +134,22 @@ def get_recent_blog_posts():
     urls = [f"https://www.qfinhub.com/blog/{s}" for s in slugs[-10:]]
     return urls
 
+def get_tool_variant_pages():
+    """Get programmatic /tools variant page slugs"""
+    variants_file = os.path.join(PROJECT_DIR, "src/lib/programmatic-seo/variant-templates.ts")
+    if not os.path.exists(variants_file):
+        return []
+    
+    with open(variants_file) as f:
+        content = f.read()
+    
+    import re
+    slugs = re.findall(r'slug:\s*"([^"]+)"', content)
+    
+    # Return up to 20 tool variant URLs
+    urls = [f"https://www.qfinhub.com/tools/{s}" for s in slugs[:20]]
+    return urls
+
 def log_result(success, failed, errors):
     """Log results to JSON log file"""
     entry = {
@@ -147,6 +185,8 @@ def main():
     urls = list(PRIORITY_URLS)
     blog_urls = get_recent_blog_posts()
     urls.extend([u for u in blog_urls if u not in urls])
+    tool_urls = get_tool_variant_pages()
+    urls.extend([u for u in tool_urls if u not in urls][:15])  # Cap tool pages at 15 to avoid rate limits
     
     print(f"\n📤 Submitting {len(urls)} URLs...")
     
