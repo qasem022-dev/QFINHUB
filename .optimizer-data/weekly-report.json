@@ -1,0 +1,71 @@
+{
+  "report_id": "2026-W21",
+  "generated_at": "2026-05-19T01:17:00Z",
+  "engines": {
+    "haro": {
+      "status": "healthy",
+      "count": 22,
+      "last_activity": "2026-05-19T00:01:30.241Z",
+      "details": "22 sent, 0 failed, 34 total processed. Running every 3 hours via cron."
+    },
+    "widget_outreach": {
+      "status": "healthy",
+      "count": 39,
+      "last_activity": "2026-05-18T21:05:16.599Z",
+      "details": "39 email targets with messageId. Last batch sent 1 email (29 remaining). Running every 6 hours. Low throughput in recent batch."
+    },
+    "newsjack": {
+      "status": "healthy",
+      "count": 34,
+      "last_activity": "2026-05-19T00:03:12.044Z",
+      "details": "77 total log entries, 34 published articles across 6 days. Running every 3 hours via cron."
+    },
+    "optimizer": {
+      "status": "healthy",
+      "count": 1,
+      "last_activity": "2026-05-19T01:00:13.544Z",
+      "details": "Daily report generated. 1 stale suggestion (HARO no-data \u2014 HARO now has data). Engine health OK."
+    },
+    "x_data": {
+      "status": "stalled",
+      "count": 1,
+      "last_activity": "2026-05-14T14:00:57.407Z",
+      "details": "Only 1 tweet in log. All 5 X/Twitter cron jobs PAUSED since May 14. Root cause: X.com anti-bot detection requires stealth browser rebuild. Active rebuild plan exists."
+    }
+  },
+  "build": {
+    "last_commit": "9ac1023954a2d1dceb9679aabaeedb44661adf9c",
+    "commit_message": "Mobile performance: preconnect, touch targets, z-index, ad skeleton",
+    "author": "QFINHUB Dev",
+    "timestamp": "2026-05-18T23:23:12+03:00",
+    "build_status": "passed",
+    "build_timestamp": "2026-05-18T20:22:41Z"
+  },
+  "bottlenecks": [
+    {
+      "rank": 1,
+      "issue": "X/Twitter engines all paused \u2014 5 days without tweets. All 5 X cron jobs disabled since May 14 due to X.com anti-bot detection. Stealth browser rebuild plan created (2026-05-19_011500) but not yet executed.",
+      "engine": "x_data",
+      "priority": "HIGH",
+      "auto_implemented": false,
+      "action_taken": "Not auto-implemented \u2014 requires code changes (stealth_browser.py rebuild). Recommend prioritizing the rebuild plan."
+    },
+    {
+      "rank": 2,
+      "issue": "Gateway 39-hour outage (May 17 07:32 \u2192 May 18 22:13 EEST) caused 3 daily jobs to miss 1-2 runs (Blog Agent, PDF Distribution, Site Quality Check). Self-healing monitor detected and scheduler recovered. Jobs will catch up at next natural windows.",
+      "engine": "gateway",
+      "priority": "MEDIUM",
+      "auto_implemented": false,
+      "action_taken": "Self-healed. Monitor Blog Agent (07:00), PDF (05:00), Site Quality (09:00) today for successful completion."
+    },
+    {
+      "rank": 3,
+      "issue": "Pinterest pin generator and stealth upload both paused. Last generator run May 17. Not critical \u2014 secondary channel.",
+      "engine": "pinterest",
+      "priority": "LOW",
+      "auto_implemented": false,
+      "action_taken": "Not auto-implemented \u2014 requires review of why Pinterest was paused."
+    }
+  ],
+  "summary": "QFInHub engines overall healthy: HARO (22 responses), Newsjack (34 published), and Widget Outreach (39 targets) all active and running on schedule. Build passed from last night's commit (Mobile performance improvements). Critical issue: all X/Twitter engines paused for 5 days due to anti-bot detection \u2014 a stealth browser rebuild plan exists but needs execution. A 39-hour gateway outage (May 17-18) was self-healed; monitor 3 daily jobs catching up today. Zero auto-fixes applied this week (the one HIGH issue requires code changes)."
+}

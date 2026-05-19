@@ -63,7 +63,13 @@ export async function generateMetadata({ params }: GeoPageProps) {
   const title = `${calcConfig.label} for ${city.name}, ${city.stateAbbr} (2026)`;
   const description = `Free ${calcConfig.label.toLowerCase()} for ${city.name}, ${city.stateAbbr}. Calculate payments based on ${city.name}'s median home price of $${(city.medianHomePrice / 1000).toFixed(0)}K. No sign-up required.`;
 
-  return { title, description };
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `https://www.qfinhub.com/calculators/${slug}/${geo}`,
+    },
+  };
 }
 
 export default async function GeotargetedPage({ params }: GeoPageProps) {

@@ -52,5 +52,14 @@
       "issues": 1,
       "suggestions": 1
     }
+  },
+  {
+    "ts": "2026-05-19T01:00:13.545Z",
+    "type": "daily-run",
+    "details": {
+      "enginesOk": 4,
+      "issues": 1,
+      "suggestions": 1
+    }
   }
 ]

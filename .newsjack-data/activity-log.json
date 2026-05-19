@@ -718,5 +718,131 @@
       "tweetId": null,
       "guid": "https://www.bloomberg.com/news/articles/2026-05-16/modest-ecb-rate-hike-would-limit-economic-pain-stournaras-says"
     }
+  },
+  {
+    "ts": "2026-05-18T21:05:48.288Z",
+    "type": "news-match",
+    "details": {
+      "title": "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108308456"
+    }
+  },
+  {
+    "ts": "2026-05-18T21:06:01.078Z",
+    "type": "news-published",
+    "details": {
+      "slug": "kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+      "title": "Kevin Warsh Sworn In As Fed Chair: What It Means for Your Mortgage and Personal Finances",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108308456"
+    }
+  },
+  {
+    "ts": "2026-05-18T21:06:06.079Z",
+    "type": "news-match",
+    "details": {
+      "title": "The Fed will have to raise interest rates in July to appease &apos;bond vigilantes,&apos; Yardeni says",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108308272"
+    }
+  },
+  {
+    "ts": "2026-05-18T21:06:17.354Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-rate-hike-in-july-2025-how-bond-vigilantes-could-impact-your-mortgage-and-sa",
+      "title": "Fed Rate Hike in July 2025? How Bond Vigilantes Could Impact Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108308272"
+    }
+  },
+  {
+    "ts": "2026-05-19T00:02:41.746Z",
+    "type": "news-match",
+    "details": {
+      "title": "Gold Inches Up as Traders Weigh Iran Deal Prospects, Inflation",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-17/gold-holds-decline-as-hormuz-quagmire-keeps-inflation-fear-high"
+    }
+  },
+  {
+    "ts": "2026-05-19T00:02:55.110Z",
+    "type": "news-published",
+    "details": {
+      "slug": "gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you",
+      "title": "Gold Inches Up Amid Iran Deal Uncertainty and Inflation Fears: How to Protect Your Mortgage Affordability",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-17/gold-holds-decline-as-hormuz-quagmire-keeps-inflation-fear-high"
+    }
+  },
+  {
+    "ts": "2026-05-19T00:03:00.112Z",
+    "type": "news-match",
+    "details": {
+      "title": "Foreign Holdings of Treasuries Fell in March Amid Bill Sales",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-18/foreign-holdings-of-us-treasuries-fell-in-march-amid-bill-sales"
+    }
+  },
+  {
+    "ts": "2026-05-19T00:03:12.044Z",
+    "type": "news-published",
+    "details": {
+      "slug": "foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin",
+      "title": "Foreign Holdings of US Treasuries Drop: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-18/foreign-holdings-of-us-treasuries-fell-in-march-amid-bill-sales"
+    }
+  },
+  {
+    "ts": "2026-05-19T03:01:45.917Z",
+    "type": "news-match",
+    "details": {
+      "title": "Stock Market Week Ahead: Nvidia, Alphabet, Atlanta Fed Lead A Charged Week",
+      "category": "fed-rate",
+      "source": "Yahoo Finance",
+      "guid": "?src=A00220&amp;yptr=yahoo"
+    }
+  },
+  {
+    "ts": "2026-05-19T03:02:05.560Z",
+    "type": "news-published",
+    "details": {
+      "slug": "stock-market-week-ahead-nvidia-alphabet-earnings-atlanta-fed-how-to-protect-your",
+      "title": "Stock Market Week Ahead: Nvidia, Alphabet Earnings & Atlanta Fed – How to Protect Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "?src=A00220&amp;yptr=yahoo"
+    }
+  },
+  {
+    "ts": "2026-05-19T03:02:10.562Z",
+    "type": "news-match",
+    "details": {
+      "title": "Mortgage and refinance interest rates today, May 18, 2026: Will rates rise or fall this week?",
+      "category": "fed-rate",
+      "source": "Yahoo Finance",
+      "guid": "mortgage-refinance-rates-today-monday-may-18-2026-100000178.html"
+    }
+  },
+  {
+    "ts": "2026-05-19T03:02:28.330Z",
+    "type": "news-published",
+    "details": {
+      "slug": "mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+      "title": "Mortgage Rates Today, May 18, 2026: Will They Rise or Fall This Week? How to Prepare",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "mortgage-refinance-rates-today-monday-may-18-2026-100000178.html"
+    }
   }
 ]

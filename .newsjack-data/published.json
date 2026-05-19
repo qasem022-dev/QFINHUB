@@ -31,6 +31,22 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/16/kevin-warsh-comes-into-the-fed-facing-a-big-family-fight-over-cutting-interest-rates.html"
   },
+  "108308272": {
+    "slug": "fed-rate-hike-in-july-2025-how-bond-vigilantes-could-impact-your-mortgage-and-sa",
+    "title": "Fed Rate Hike in July 2025? How Bond Vigilantes Could Impact Your Mortgage and Savings",
+    "publishedAt": "2026-05-18T21:06:17.353Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html"
+  },
+  "108308456": {
+    "slug": "kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+    "title": "Kevin Warsh Sworn In As Fed Chair: What It Means for Your Mortgage and Personal Finances",
+    "publishedAt": "2026-05-18T21:06:01.077Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html"
+  },
   "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>": {
     "slug": "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
     "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals",
@@ -238,5 +254,37 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-16/modest-ecb-rate-hike-would-limit-economic-pain-stournaras-says"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-17/gold-holds-decline-as-hormuz-quagmire-keeps-inflation-fear-high": {
+    "slug": "gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you",
+    "title": "Gold Inches Up Amid Iran Deal Uncertainty and Inflation Fears: How to Protect Your Mortgage Affordability",
+    "publishedAt": "2026-05-19T00:02:55.108Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-17/gold-holds-decline-as-hormuz-quagmire-keeps-inflation-fear-high"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-18/foreign-holdings-of-us-treasuries-fell-in-march-amid-bill-sales": {
+    "slug": "foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin",
+    "title": "Foreign Holdings of US Treasuries Drop: What It Means for Your Mortgage and Savings",
+    "publishedAt": "2026-05-19T00:03:12.043Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-18/foreign-holdings-of-us-treasuries-fell-in-march-amid-bill-sales"
+  },
+  "?src=A00220&amp;yptr=yahoo": {
+    "slug": "stock-market-week-ahead-nvidia-alphabet-earnings-atlanta-fed-how-to-protect-your",
+    "title": "Stock Market Week Ahead: Nvidia, Alphabet Earnings & Atlanta Fed – How to Protect Your Mortgage and Savings Goals",
+    "publishedAt": "2026-05-19T03:02:05.560Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.investors.com/research/investing-action-plan/stock-market-week-ahead-nvidia-alphabet-atlanta-fed-lead-a-charged-week/?src=A00220&amp;yptr=yahoo"
+  },
+  "mortgage-refinance-rates-today-monday-may-18-2026-100000178.html": {
+    "slug": "mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+    "title": "Mortgage Rates Today, May 18, 2026: Will They Rise or Fall This Week? How to Prepare",
+    "publishedAt": "2026-05-19T03:02:28.330Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-may-18-2026-100000178.html"
   }
 }

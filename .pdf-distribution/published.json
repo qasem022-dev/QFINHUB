@@ -58,5 +58,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/compound-interest-guide.md"
       }
     }
+  },
+  "tax-planning-guide": {
+    "title": "Tax Planning Guide: Save Money on Your Taxes",
+    "category": "tax",
+    "generatedAt": "2026-05-19T02:00:42.884Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/tax-planning-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/tax-planning-guide.md"
+      }
+    }
   }
 }

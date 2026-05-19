@@ -88,5 +88,25 @@
       "failed": 0,
       "total": 30
     }
+  },
+  {
+    "ts": "2026-05-18T21:05:16.599Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 29
+    }
+  },
+  {
+    "ts": "2026-05-19T03:01:19.144Z",
+    "type": "outreach-batch",
+    "details": {
+      "sent": 1,
+      "skipped": 0,
+      "failed": 0,
+      "total": 28
+    }
   }
 ]

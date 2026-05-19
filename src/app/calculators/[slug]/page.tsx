@@ -37,6 +37,9 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
   return {
     title: `${calculator.title}`,
     description: content?.explanation?.slice(0, 160) || calculator.description,
+    alternates: {
+      canonical: `https://www.qfinhub.com/calculators/${slug}`,
+    },
     openGraph: {
       title: `${calculator.title} | QFINHUB`,
       description: content?.explanation?.slice(0, 160) || calculator.description,
