@@ -265,8 +265,64 @@ export default async function BlogPostPage({
   const contentWithoutH1 = post.content.replace(/^# (.+)$/m, "").trim();
   const h1Title = post.title;
 
+  // Extract FAQ questions from content for JSON-LD schema
+  const faqItems: { question: string; answer: string }[] = [];
+  const faqMatch = post.content.match(/<h2>FAQ<\/h2>([\s\S]*?)(?:<h2>|$)/i);
+  if (faqMatch) {
+    const faqBlock = faqMatch[1];
+    // Pattern 1: <h3>Question?</h3><p>Answer</p>
+    const qaRegex1 = /<h3>([^<]+)<\/h3>\s*<p>([^<]+(?:<(?!\/p>)[^<]*)*)<\/p>/gi;
+    let m;
+    while ((m = qaRegex1.exec(faqBlock)) !== null) {
+      const question = m[1].replace(/<[^>]+>/g, '').trim();
+      const answer = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 300);
+      if (question && answer && question.endsWith('?')) {
+        faqItems.push({ question, answer });
+      }
+    }
+    // Pattern 2: <p><strong>Q: Question?</strong><br/>A: Answer</p>
+    if (faqItems.length === 0) {
+      const qaRegex2 = /<strong>Q:\s*([^<]+)<\/strong>\s*<br\s*\/?>\s*A:\s*([\s\S]*?)(?=<p>|$)/gi;
+      while ((m = qaRegex2.exec(faqBlock)) !== null) {
+        const question = m[1].trim();
+        const answer = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 300);
+        if (question && answer) faqItems.push({ question, answer });
+      }
+    }
+  }
+  // Fallback: extract questions from any heading ending with ?
+  if (faqItems.length === 0) {
+    const allHeadings = post.content.match(/<h[23]>([^<]+\?)<\/h[23]>\s*<p>([^<]+(?:<(?!\/p>)[^<]*)*)<\/p>/gi);
+    if (allHeadings) {
+      for (const h of allHeadings.slice(0, 4)) {
+        const qMatch = h.match(/<h[23]>([^<]+)<\/h[23]>/);
+        const aMatch = h.match(/<p>([\s\S]+?)<\/p>/);
+        if (qMatch && aMatch) {
+          faqItems.push({ question: qMatch[1].trim(), answer: aMatch[1].replace(/<[^>]+>/g, '').trim().substring(0, 300) });
+        }
+      }
+    }
+  }
+
+  const faqSchema = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  } : null;
+
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-surface-dark">
+      {/* FAQPage JSON-LD Schema */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       {/* ── Navbar ── */}
       <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur-md dark:border-gray-700 dark:bg-surface-dark/95">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">

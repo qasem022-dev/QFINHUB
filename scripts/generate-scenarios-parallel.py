@@ -348,7 +348,7 @@ def generate_one_page(calc_type, calc_config, params):
 
 def run():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--count", type=int, default=500)
+    parser.add_argument("--count", type=int, default=750)
     parser.add_argument("--workers", type=int, default=10)
     args = parser.parse_args()
     
