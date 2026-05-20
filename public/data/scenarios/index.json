@@ -1,0 +1,32 @@
+{
+  "mortgage-100k-10dp-20yr-6-0pct": {
+    "batch": "batch-2026-05-20-5.json",
+    "title": "$90,000 Loan at 6% for 20 Years: Full Payment Breakdown",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-40yr-5-5pct": {
+    "batch": "batch-2026-05-20-5.json",
+    "title": "$150,000 Loan at 5.5% for 40 Years: $618.92/mo",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-450k-3dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-20-5.json",
+    "title": "15-Year $450,000 Mortgage at 5.5%: $3,567 Monthly Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-25dp-40yr-6-0pct": {
+    "batch": "batch-2026-05-20-5.json",
+    "title": "$1,000,000 Home at 6%: 40-Year Mortgage Payment Breakdown",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-5dp-20yr-8-5pct": {
+    "batch": "batch-2026-05-20-5.json",
+    "title": "$300,000 Mortgage at 8.5% for 20 Years: Full Payment Breakdown",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  }
+}

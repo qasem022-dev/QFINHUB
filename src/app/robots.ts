@@ -6,6 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.qfinhub.com/sitemap.xml",
+    sitemap: [
+      "https://www.qfinhub.com/sitemap.xml",
+      "https://www.qfinhub.com/scenario/sitemap.xml",
+    ],
   };
 }
