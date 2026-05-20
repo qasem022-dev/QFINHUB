@@ -301,7 +301,7 @@ async def upload_pins(browser, log):
     uploaded = log.get('uploaded', [])
     uploaded_files = {u['file'] for u in uploaded}
     
-    for img_path in images[:1]:  # Limit to 1 per run (fits 120s timeout)
+    for img_path in images[:25]:  # Process up to 25 pins per run
         filename = os.path.basename(img_path)
         if filename in uploaded_files:
             print(f"   ⏭️ Already uploaded: {filename}")

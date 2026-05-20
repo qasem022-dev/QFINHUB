@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       "https://www.qfinhub.com/sitemap.xml",
       "https://www.qfinhub.com/scenario/sitemap.xml",
+      "https://www.qfinhub.com/news-sitemap.xml",
     ],
   };
 }

@@ -427,7 +427,7 @@ async function main() {
 
   try {
     console.log("📬 Searching for unread HARO emails...");
-    const uids = await searchEmails(imap, 2);
+    const uids = await searchEmails(imap, 1);  // 1 day — runs 3x/day, avoids duplicates
     console.log("   Found " + uids.length + " unread emails");
 
     if (uids.length === 0) {

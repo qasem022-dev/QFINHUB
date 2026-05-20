@@ -9,7 +9,7 @@
  *   4. Outputs Pinterest import CSV
  *
  * Usage:
- *   node scripts/pinterest-generator-v2.cjs                    # Generate 6 pins NOW
+ *   node scripts/pinterest-generator-v2.cjs                    # Generate 25 pins NOW
  *   node scripts/pinterest-generator-v2.cjs --count 10         # Generate 10 pins
  *   node scripts/pinterest-generator-v2.cjs --csv-only         # Skip image generation
  *   node scripts/pinterest-generator-v2.cjs --scheduled        # Daily cron mode
@@ -120,7 +120,7 @@ function saveState(state) {
   writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
 }
 
-function pickCalculators(count = 6) {
+function pickCalculators(count = 25) {
   const state = getState();
   const postedSet = new Set(state.postedSlugs || []);
 
@@ -518,7 +518,7 @@ function getDefaultTags(cat) {
 
 async function main() {
   const args = process.argv.slice(2);
-  const pinCount = parseInt(args.find((a) => a.startsWith("--count="))?.split("=")[1] || "6", 10);
+  const pinCount = parseInt(args.find((a) => a.startsWith("--count="))?.split("=")[1] || "25", 10);
   const csvOnly = args.includes("--csv-only");
   const isScheduled = args.includes("--scheduled");
 
