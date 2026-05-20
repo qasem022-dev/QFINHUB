@@ -8,6 +8,9 @@ import { allCalculators } from "@/lib/calculators";
 
 const baseUrl = "https://www.qfinhub.com";
 
+// ISR: revalidate blog pages every hour for fresh schema + canonical updates
+export const revalidate = 3600;
+
 const categoryLabels: Record<BlogPost["category"], string> = {
   mortgage: "Mortgage",
   loan: "Loans",
