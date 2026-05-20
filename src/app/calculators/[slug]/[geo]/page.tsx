@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
 import { YMYLDisclaimer } from "@/components/layout/ymyl-disclaimer";
+import { LastReviewedBy } from "@/components/layout/last-reviewed";
 import { getCalculatorBySlug } from "@/lib/calculators";
 import { getCalculatorComponent } from "@/components/calculators/registry";
 import { US_CITIES, GEOTARGETED_CALCULATORS } from "@/lib/programmatic-seo/data/us-cities";
@@ -205,6 +206,7 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
         </div>
       </div>
       <YMYLDisclaimer />
+      <LastReviewedBy />
     </div>
   );
 }

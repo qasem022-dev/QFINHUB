@@ -4,6 +4,7 @@ import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { YMYLDisclaimer } from "@/components/layout/ymyl-disclaimer";
+import { LastReviewedBy } from "@/components/layout/last-reviewed";
 import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
 import { getCalculatorComponent } from "@/components/calculators/registry";
 import { calculatorContent } from "@/lib/calculators/calculator-content";
@@ -347,6 +348,7 @@ export default async function ScenarioPage({ params }: ScenarioPageProps) {
 
         {/* Disclaimer */}
         <YMYLDisclaimer />
+        <LastReviewedBy />
       </div>
     </div>
   );

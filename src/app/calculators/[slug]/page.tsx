@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
 import { CalculatorSEOContent } from "@/components/calculators/calculator-seo-content";
 import { YMYLDisclaimer } from "@/components/layout/ymyl-disclaimer";
+import { LastReviewedBy } from "@/components/layout/last-reviewed";
 import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
 import { calculatorContent } from "@/lib/calculators/calculator-content";
 import { getCalculatorComponent } from "@/components/calculators/registry";
@@ -264,6 +265,7 @@ export default async function CalculatorDetailPage({
           currentSlug={slug}
         />
       )}
+      <LastReviewedBy />
     </div>
   );
 }

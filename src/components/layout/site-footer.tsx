@@ -130,6 +130,14 @@ export function SiteFooter() {
                   Cookie Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/editorial-policy"
+                  className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  Editorial Policy
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
