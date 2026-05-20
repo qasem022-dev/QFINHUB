@@ -48,10 +48,10 @@ export function AdsterraBanner() {
     const hideScript = document.createElement("script");
     hideScript.textContent = `(function(){var c=setInterval(function(){var a=document.getElementById('container-${placementKey}');var b=document.getElementById('container-${placementKey}-skeleton');if(a&&a.children.length>1){if(b)b.style.display='none';clearInterval(c);}},500);setTimeout(function(){clearInterval(c);},10000);})();`;
 
-    // Append everything
+    // Append container to wrapper, scripts to document body for reliable execution
     wrapper.appendChild(container);
-    wrapper.appendChild(script);
-    wrapper.appendChild(hideScript);
+    document.body.appendChild(script);
+    document.body.appendChild(hideScript);
   }, []);
 
   return (
