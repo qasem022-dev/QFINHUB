@@ -37,7 +37,7 @@ export function PWAInstallPrompt() {
       } else if (!dismissed) {
         setShow(true);
       }
-    }, 10000);
+    }, 3000);  // Show quickly for better visibility
 
     return () => clearTimeout(timer);
   }, [isStandalone, isIOS, canInstall, dismissed]);

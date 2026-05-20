@@ -231,6 +231,28 @@ function AISpecialistContent() {
           isLoading={isLoading}
           error={error}
         />
+        {/* Example prompts shown when chat is empty */}
+        {messages.length === 0 && !isLoading && (
+          <div className="border-t border-gray-100 px-4 py-3 dark:border-gray-700">
+            <p className="mb-2 text-[11px] font-medium uppercase tracking-wider text-gray-400">Try asking...</p>
+            <div className="flex flex-wrap gap-1.5">
+              {[
+                "Calculate mortgage payment for a $350K home with 20% down",
+                "How much should I save monthly to retire at 60?",
+                "Compare Roth IRA vs Traditional IRA for a 30-year-old",
+                "What will $10K grow to in 20 years at 7% interest?",
+              ].map((prompt) => (
+                <button
+                  key={prompt}
+                  onClick={() => handleSend(prompt)}
+                  className="rounded-full border border-gray-200 px-3 py-1.5 text-left text-xs text-gray-600 transition-all hover:border-primary-300 hover:bg-primary-50 hover:text-primary-700 dark:border-gray-600 dark:text-gray-400 dark:hover:border-primary-600 dark:hover:bg-primary-900/20 dark:hover:text-primary-400"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Results Panel - Right */}
