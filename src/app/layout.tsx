@@ -56,7 +56,6 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(baseUrl),
   alternates: {
-    canonical: "/",
     languages: Object.fromEntries(
       locales.map((locale) => [locale, `/${locale}`])
     ),
