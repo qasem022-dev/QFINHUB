@@ -568,11 +568,11 @@ def call_deepseek_api(prompt):
     payload = {
         "model": DEEPSEEK_MODEL,
         "messages": [
-            {"role": "system", "content": "You are a financial content writer. Output ONLY valid JSON — no markdown, no explanations, no code fences."},
+            {"role": "system", "content": "You are a financial content writer. Output ONLY valid JSON — no markdown fences, no explanations before or after. Do NOT use unicode escape sequences (\\u2014, \\u2019, etc) — use the actual characters."},
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.7,
-        "max_tokens": 4096,
+        "max_tokens": 8192,
     }
     
     data = json.dumps(payload).encode("utf-8")
