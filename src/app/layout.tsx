@@ -260,43 +260,30 @@ export default function RootLayout({
             <AuthProvider>
               {children}
               <SiteFooter />
-              {/* Adsterra Native Banner — with loading skeleton */}
-              <div className="w-full max-w-3xl mx-auto px-4 py-6 mt-8">
-                <div
-                  id="container-93e6358fa4836a576dd463e0a148a834"
-                  className="min-h-[120px] sm:min-h-[200px] relative"
-                >
-                  {/* Loading skeleton shown until ad renders */}
-                  <div
-                    id="container-93e6358fa4836a576dd463e0a148a834-skeleton"
-                    className="absolute inset-0 flex items-center justify-center bg-gray-50 dark:bg-surface-dark rounded-lg animate-pulse-soft"
-                  >
-                    <span className="text-xs text-gray-400 dark:text-gray-500">
-                      Loading...
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <script
-                async
-                src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"
-              />
-              {/* Hide skeleton when ad loads */}
-              <script
-                dangerouslySetInnerHTML={{ __html: `
-                  (function() {
-                    var check = setInterval(function() {
-                      var c = document.getElementById('container-93e6358fa4836a576dd463e0a148a834');
-                      var s = document.getElementById('container-93e6358fa4836a576dd463e0a148a834-skeleton');
-                      if (c && c.children.length > 1) {
-                        if (s) s.style.display = 'none';
-                        clearInterval(check);
-                      }
-                    }, 500);
-                    setTimeout(function() { clearInterval(check); }, 10000);
-                  })();
-                ` }}
-              />
+              {/* Adsterra Native Banner — plain HTML to avoid React DOM conflicts */}
+              <div
+                className="w-full max-w-3xl mx-auto px-4 py-6 mt-8"
+                dangerouslySetInnerHTML={{
+                  __html: `
+<div id="container-93e6358fa4836a576dd463e0a148a834" style="min-height:120px;position:relative">
+  <div id="container-93e6358fa4836a576dd463e0a148a834-skeleton" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#f9fafb;border-radius:0.75rem">
+    <span style="font-size:0.75rem;color:#9ca3af">Loading...</span>
+  </div>
+</div>
+<script async src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"></script>
+<script>
+(function() {
+  var check = setInterval(function() {
+    var c = document.getElementById('container-93e6358fa4836a576dd463e0a148a834');
+    var s = document.getElementById('container-93e6358fa4836a576dd463e0a148a834-skeleton');
+    if (c && c.children.length > 1) {
+      if (s) s.style.display = 'none';
+      clearInterval(check);
+    }
+  }, 500);
+  setTimeout(function() { clearInterval(check); }, 10000);
+})();
+</script>` }} />
               <PWAInstallPrompt />
               <ConsentBanner />
             </AuthProvider>
