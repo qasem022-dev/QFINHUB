@@ -9,6 +9,7 @@ import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
 import { ConsentBanner } from "@/components/ui/consent-banner";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { AdsterraBanner } from "@/components/ads/adsterra-banner";
 import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
 import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
 
@@ -260,23 +261,8 @@ export default function RootLayout({
             <AuthProvider>
               {children}
               <SiteFooter />
-              {/* Adsterra Native Banner — container as plain HTML (React won't touch its children), scripts as regular tags */}
-              <div
-                className="w-full max-w-3xl mx-auto px-4 py-6 mt-8"
-                dangerouslySetInnerHTML={{
-                  __html: `<div id="container-93e6358fa4836a576dd463e0a148a834" style="min-height:120px;position:relative"><div id="container-93e6358fa4836a576dd463e0a148a834-skeleton" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#f9fafb;border-radius:0.75rem"><span style="font-size:0.75rem;color:#9ca3af">Loading...</span></div></div>`,
-                }}
-              />
-              <script
-                async
-                src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"
-                data-psid="93e6358fa4836a576dd463e0a148a834"
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `(function(){var c=setInterval(function(){var a=document.getElementById('container-93e6358fa4836a576dd463e0a148a834');var b=document.getElementById('container-93e6358fa4836a576dd463e0a148a834-skeleton');if(a&&a.children.length>1){if(b)b.style.display='none';clearInterval(c);}},500);setTimeout(function(){clearInterval(c);},10000);})();`,
-                }}
-              />
+              {/* Adsterra Native Banner — client component, inserted outside React DOM management */}
+              <AdsterraBanner />
               <PWAInstallPrompt />
               <ConsentBanner />
             </AuthProvider>
