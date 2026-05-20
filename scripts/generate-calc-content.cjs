@@ -23,7 +23,7 @@ try {
 }
 
 const API_KEY = process.env.GEMINI_API_KEY || '';
-const MODEL = 'gemini-3.1-flash-lite';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/${MODEL}:generateContent?key=${API_KEY}`;
 
 const allCalculators = require('/tmp/calculators-data.json');

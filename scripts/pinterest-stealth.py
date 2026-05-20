@@ -194,7 +194,7 @@ async def pinterest_stealth_automation(mode='full'):
                 await browser.type('input[type="password"]', password)
                 await browser.random_action()
                 await browser.click('button[type="submit"], div[data-test-id="registerFormSubmitButton"]')
-                await browser.wait(random.randint(5000, 8000))
+                await browser.wait(random.randint(3000, 5000))
                 
                 # Handle any verification popup
                 content = await browser.get_content()
@@ -300,7 +300,7 @@ async def upload_pins(browser, log):
     uploaded = log.get('uploaded', [])
     uploaded_files = {u['file'] for u in uploaded}
     
-    for img_path in images[:2]:  # Limit to 2 per run (fits 120s timeout)
+    for img_path in images[:1]:  # Limit to 1 per run (fits 120s timeout)
         filename = os.path.basename(img_path)
         if filename in uploaded_files:
             print(f"   ⏭️ Already uploaded: {filename}")
@@ -326,7 +326,7 @@ async def upload_pins(browser, log):
             # Navigate to pin creation
             await browser.navigate('https://www.pinterest.com/pin-builder/')
             await browser.random_action()
-            await browser.wait(random.randint(2000, 4000))
+            await browser.wait(random.randint(1000, 2000))
             
             # Upload image
             # Pinterest pin builder: click upload area, then file input appears
@@ -379,7 +379,7 @@ async def upload_pins(browser, log):
             try:
                 save_btn = 'button[type="submit"], div[data-test-id="board-dropdown-save-button"]'
                 await browser.click(save_btn)
-                await browser.wait(random.randint(3000, 5000))
+                await browser.wait(random.randint(2000, 3000))
             except:
                 pass
             
@@ -397,9 +397,9 @@ async def upload_pins(browser, log):
             print(f"      ✅ Pin uploaded successfully!")
             
             # Human delay between uploads (shorter for 120s timeout)
-            delay = random.randint(8000, 20000) / 1000
+            delay = random.randint(3000, 6000) / 1000
             print(f"      ⏳ Waiting {delay:.0f}s before next pin...")
-            await browser.wait(random.randint(8000, 20000))
+            await browser.wait(random.randint(3000, 6000))
             
         except Exception as e:
             print(f"      ❌ Upload failed: {e}")

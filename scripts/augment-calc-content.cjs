@@ -27,7 +27,7 @@ try {
 
 const API_KEY = process.env.GEMINI_API_KEY || '';
 if (!API_KEY) { console.error('GEMINI_API_KEY not found'); process.exit(1); }
-const MODEL = 'gemini-3.1-flash-lite';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/${MODEL}:generateContent?key=${API_KEY}`;
 
 const allCalculators = require('/tmp/calculators-data.json');

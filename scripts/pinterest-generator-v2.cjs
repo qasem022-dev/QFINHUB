@@ -45,7 +45,7 @@ try {
 }
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
-const GEMINI_MODEL = "gemini-3.1-flash-lite";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 const BASE_URL = "https://generativelanguage.googleapis.com/v1beta";
 
 // Ensure directories exist
