@@ -189,11 +189,12 @@ async def pinterest_stealth_automation(mode='full'):
             await browser.random_action()
             
             try:
-                await browser.type('input[type="email"], input[name="id"]', email)
+                await browser.wait(random.randint(2000, 3000))
+                await browser.type('#email, input[type="email"], input[name="id"]', email)
                 await browser.random_action()
-                await browser.type('input[type="password"]', password)
+                await browser.type('#password, input[type="password"]', password)
                 await browser.random_action()
-                await browser.click('button[type="submit"], div[data-test-id="registerFormSubmitButton"]')
+                await browser.click('button:has-text("Log in"), button[type="submit"]')
                 await browser.wait(random.randint(3000, 5000))
                 
                 # Handle any verification popup
