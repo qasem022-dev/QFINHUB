@@ -202,7 +202,7 @@ def main():
             print(f"  ✅ {short}")
         else:
             failed += 1
-            if "Unauthorized" in str(error) or "401" in str(error):
+            if "Unauthorized" in str(error) or "401" in str(error) or "invalid authentication credentials" in str(error).lower():
                 print("  🔄 Token expired, refreshing...")
                 token = refresh_token()
                 if token:

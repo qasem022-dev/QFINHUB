@@ -103,7 +103,7 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
             url: `https://qfinhub.com/calculators/${slug}/${geo}`,
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
             areaServed: { "@type": "City", name: city.name },
-            author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about" },
+            author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
           }),
         }}
       />

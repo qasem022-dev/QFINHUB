@@ -70,5 +70,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/tax-planning-guide.md"
       }
     }
+  },
+  "budgeting-101": {
+    "title": "Budgeting 101: Build a Budget That Actually Works",
+    "category": "savings",
+    "generatedAt": "2026-05-20T15:10:56.658Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/budgeting-101.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/budgeting-101.md"
+      }
+    }
   }
 }

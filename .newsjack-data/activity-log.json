@@ -1096,5 +1096,47 @@
       "tweetId": null,
       "guid": "https://www.bloomberg.com/news/articles/2026-05-19/big-treasury-block-sales-drive-capitulation-selloff-in-bonds"
     }
+  },
+  {
+    "ts": "2026-05-20T14:30:46.761Z",
+    "type": "news-match",
+    "details": {
+      "title": "Jeff Bezos says bottom half of earners should pay zero in income taxes",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108309720"
+    }
+  },
+  {
+    "ts": "2026-05-20T14:31:04.217Z",
+    "type": "news-published",
+    "details": {
+      "slug": "jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for",
+      "title": "Jeff Bezos Proposes Zero Income Tax for Bottom Half of Earners: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108309720"
+    }
+  },
+  {
+    "ts": "2026-05-20T14:31:09.226Z",
+    "type": "news-match",
+    "details": {
+      "title": "USD Near-Term Driven by Fed, Hormuz Risks, ANZ’s Zaman Says",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/videos/2026-05-20/zaman-usd-near-term-driven-by-fed-hormuz-risks-video"
+    }
+  },
+  {
+    "ts": "2026-05-20T14:31:23.244Z",
+    "type": "news-published",
+    "details": {
+      "slug": "usd-surge-fed-policy-how-to-protect-your-mortgage-affordability-in-2025",
+      "title": "USD Surge & Fed Policy: How to Protect Your Mortgage Affordability in 2025",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/videos/2026-05-20/zaman-usd-near-term-driven-by-fed-hormuz-risks-video"
+    }
   }
 ]

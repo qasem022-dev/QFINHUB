@@ -191,8 +191,56 @@
       "replyTo": "q.finhub@gmail.com",
       "quote": "The biggest FSBO paperwork mistake I see is sellers failing to account for prorated property taxes and HOA fees, which can create a $2,000–$5,000 dispute at closing. According to our net proceeds calculator at QFINHUB, even a single missing disclosure form in states like California or Texas can delay closing by weeks and cost you the buyer. Don’t just download generic forms—have a title officer review your entire package before you sign anything.",
       "time": "2026-05-19T18:02:21.995Z"
+    },
+    {
+      "queryId": "12:unknown",
+      "headline": "When does a 7/1 ARM make sense in 2026, and what happens after year 7?",
+      "category": "other",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "A 7/1 ARM makes sense in 2026 if you’re certain you’ll move or refi within 7 years, since rates are roughly 1% lower than fixed loans right now—saving about $150 monthly on a $400k mortgage. After year 7, the rate adjusts annually based on the index plus a margin, typically capping at 2% per year and 5% over the life. Use our calculator at qfinhub.com to stress-test worst-case scenarios before committing.",
+      "time": "2026-05-20T14:10:59.574Z"
+    },
+    {
+      "queryId": "14:unknown",
+      "headline": "Why Are More Young Adults Choosing Cash Savings Over Investing Right Now?",
+      "category": "investing",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Young adults are prioritizing cash savings because the psychological safety of liquidity outweighs the long-term math right now. According to our risk-reward calculator at qfinhub.com, a 25-year-old holding $10,000 in a high-yield savings account at 4% APY is actually earning more real returns than many bonds, but missing out on the S&P 500's historical 10% annualized growth. The real issue isn't fear of investing—it's that cash feels like the only 'safe' option in a volatile market.",
+      "time": "2026-05-20T14:11:34.427Z"
+    },
+    {
+      "queryId": "12:unknown",
+      "headline": "Summary: When does a 7/1 ARM make sense in 2026, and what happens after year",
+      "category": "other",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "With the spread between 7/1 ARMs and 30-year fixed rates now under 20 basis points, a 7/1 ARM only makes sense in 2026 if you’re certain you’ll sell or refinance within five years — not seven. After year seven, your rate can adjust up to 2% annually, capped at 5% over the initial rate, which could push payments from ~$1,800 to over $2,300 on a $300k loan. According to our break-even calculator at QFINHUB, you’d need to save at least $1,200 in total interest during the fixed period just to cover ",
+      "time": "2026-05-20T14:12:09.419Z"
+    },
+    {
+      "queryId": "14:unknown",
+      "headline": "Summary: Why Are More Young Adults Choosing Cash Savings Over Investing",
+      "category": "investing",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "Young adults are prioritizing cash savings because they’ve lived through a pandemic, inflation spikes, and volatile markets—creating a survival-first mindset. At QFINHUB, our data shows that 62% of Gen Z savers now keep over six months of expenses in cash, but this caution can cost them: missing just five years of compounding on a $10,000 investment at 8% returns means losing nearly $4,700 in potential growth. Cash is safety, but it shouldn’t replace long-term investing entirely.",
+      "time": "2026-05-20T14:12:44.503Z"
+    },
+    {
+      "queryId": "16:unknown",
+      "headline": "Summary: CFPs: Money Moves People in Their 30s Regret Not Making Earlier",
+      "category": "other",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "People in their 30s most often tell me they regret not starting retirement investing sooner. If you delay by just five years, you could miss out on over $200,000 in potential growth by age 65, assuming a 7% annual return. According to our compound growth calculator at QFINHUB, starting with even $200 a month at 25 instead of 30 makes a dramatic difference. The earlier you let compound interest work for you, the less you have to scramble later.",
+      "time": "2026-05-20T14:13:19.193Z"
+    },
+    {
+      "queryId": "23:unknown",
+      "headline": "Summary: AI & Construction: What platforms are reducing delays and cost",
+      "category": "other",
+      "replyTo": "q.finhub@gmail.com",
+      "quote": "AI is transforming construction risk management, not just scheduling. At QFINHUB, our cost-modeling calculator shows that platforms integrating real-time data—like Autodesk Construction Cloud or Procore—can cut budget overruns by up to 18% on complex infrastructure projects. The real game-changer is predictive analytics flagging supply chain bottlenecks before they cause cascading delays, saving firms an average of $2.3 million per large-scale build.",
+      "time": "2026-05-20T14:13:53.575Z"
     }
   ],
   "failed": [],
-  "totalProcessed": 36
+  "totalProcessed": 42
 }

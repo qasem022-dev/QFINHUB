@@ -42,6 +42,33 @@ export default function AboutPage() {
               "Full-Stack Development",
               "Algorithm Design",
             ],
+            alumniOf: {
+              "@type": "EducationalOrganization",
+              name: "Computer Science & Engineering",
+            },
+            sameAs: [
+              "https://www.linkedin.com/in/qasem-mohammed",
+              "https://github.com/qasem-mohammed",
+              "https://x.com/qfinhub",
+            ],
+            hasCredential: [
+              {
+                "@type": "EducationalOccupationalCredential",
+                name: "AI & Machine Learning Specialization",
+                recognizedBy: {
+                  "@type": "Organization",
+                  name: "DeepLearning.AI",
+                },
+              },
+              {
+                "@type": "EducationalOccupationalCredential", 
+                name: "Full-Stack Software Development",
+                recognizedBy: {
+                  "@type": "Organization",
+                  name: "Meta",
+                },
+              },
+            ],
           }),
         }}
       />

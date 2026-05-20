@@ -69,7 +69,7 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
                 operatingSystem: "All",
                 url: `https://qfinhub.com/tools/${variant.slug}`,
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about" },
+                author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
               },
               variant.schema.howToSchema,
               ...(variant.faqs.length > 0

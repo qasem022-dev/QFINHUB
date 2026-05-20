@@ -380,7 +380,7 @@ function buildSchema(scenario: ScenarioData) {
     operatingSystem: "All",
     url,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about" },
+    author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
   };
 
   const howTo = {

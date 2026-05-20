@@ -33,6 +33,44 @@ export function CalculatorSEOContent({
           </p>
         </section>
 
+        {/* Definition — AI Overview / Featured Snippet */}
+        {content.definition && (
+          <section className="mb-10">
+            <div className="rounded-xl border border-blue-200 bg-blue-50/50 p-6 dark:border-blue-800/30 dark:bg-blue-900/10">
+              <h2 className="text-lg font-semibold text-blue-900 dark:text-blue-200">
+                📖 Definition
+              </h2>
+              <p className="mt-2 leading-relaxed text-blue-800 dark:text-blue-300">
+                {content.definition}
+              </p>
+            </div>
+          </section>
+        )}
+
+        {/* Key Takeaways — AI Overview Quick Facts */}
+        {content.keyTakeaways && content.keyTakeaways.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Key Takeaways
+            </h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {content.keyTakeaways.map((takeaway, i) => (
+                <div
+                  key={i}
+                  className="flex items-start gap-3 rounded-lg border border-emerald-200 bg-emerald-50/50 p-4 dark:border-emerald-800/30 dark:bg-emerald-900/10"
+                >
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500 text-xs font-bold text-white">
+                    {i + 1}
+                  </span>
+                  <p className="text-sm leading-relaxed text-emerald-800 dark:text-emerald-200">
+                    {takeaway}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Formula */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -155,6 +193,28 @@ export function CalculatorSEOContent({
                   </p>
                 </Link>
               ))}
+            </div>
+          </section>
+        )}
+
+        {/* Citations — Authoritative Sources */}
+        {content.citations && content.citations.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Sources & References
+            </h2>
+            <div className="mt-4 rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-surface-dark-elevated">
+              <ul className="space-y-2">
+                {content.citations.map((citation, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+                    <span>{citation}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-xs text-gray-400 dark:text-gray-500 italic">
+                These authoritative sources inform our calculator methodology and ensure accuracy.
+              </p>
             </div>
           </section>
         )}

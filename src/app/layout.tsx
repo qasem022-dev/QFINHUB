@@ -98,6 +98,36 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "QFINHUB",
+  url: baseUrl,
+  logo: "https://www.qfinhub.com/logo.png",
+  sameAs: [
+    "https://x.com/qfinhub",
+    "https://www.linkedin.com/company/qfinhub",
+    "https://github.com/qfinhub",
+  ],
+  foundingDate: "2024",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "548 Market Street, PMB 72296",
+    addressLocality: "San Francisco",
+    addressRegion: "CA",
+    postalCode: "94104-5401",
+    addressCountry: "US",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    email: "hello@qfinhub.com",
+    availableLanguage: ["English"],
+  },
+  description:
+    "Free online financial calculator platform with 124+ tools for loans, mortgages, investments, retirement, taxes, and personal finance.",
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
@@ -117,6 +147,16 @@ const jsonLd = {
     "@type": "Person",
     name: "Qasem Mohammed",
     url: "https://qfinhub.com/about",
+    sameAs: [
+      "https://www.linkedin.com/in/qasem-mohammed",
+      "https://github.com/qasem-mohammed",
+    ],
+    jobTitle: "AI & Software Engineer, Founder & Lead Developer",
+    worksFor: {
+      "@type": "Organization",
+      name: "QFINHUB",
+      url: "https://www.qfinhub.com",
+    },
   },
   availableLanguage: ALL_LANGUAGES.map((l) => l.name),
   featureList: [
@@ -186,6 +226,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         {/* Google AdSense site verification */}
         <meta name="google-adsense-account" content="ca-pub-1102790706635466" />

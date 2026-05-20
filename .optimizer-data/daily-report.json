@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-19",
-  "timestamp": "2026-05-19T01:00:13.544Z",
+  "date": "2026-05-20",
+  "timestamp": "2026-05-20T12:27:49.685Z",
   "programmaticSEO": {
     "status": "ok",
     "issues": [],
     "stats": {
-      "variantTemplates": 689,
+      "variantTemplates": 893,
       "generatorLines": 377
     }
   },
@@ -13,43 +13,43 @@
     "topKeywords": [
       {
         "keyword": "rate",
-        "count": 548
+        "count": 741
       },
       {
         "keyword": "monthly",
-        "count": 500
+        "count": 593
       },
       {
         "keyword": "loan",
-        "count": 375
-      },
-      {
-        "keyword": "tax",
-        "count": 348
+        "count": 478
       },
       {
         "keyword": "income",
-        "count": 347
+        "count": 422
+      },
+      {
+        "keyword": "tax",
+        "count": 351
       },
       {
         "keyword": "mortgage",
-        "count": 313
+        "count": 322
       },
       {
         "keyword": "payment",
-        "count": 279
+        "count": 306
+      },
+      {
+        "keyword": "savings",
+        "count": 292
       },
       {
         "keyword": "retirement",
-        "count": 217
-      },
-      {
-        "keyword": "compound",
-        "count": 203
+        "count": 249
       },
       {
         "keyword": "invest",
-        "count": 185
+        "count": 234
       }
     ],
     "gaps": [],
@@ -63,20 +63,20 @@
       "x": {
         "status": "ok",
         "actionsToday": 0,
-        "lastRun": "2026-05-14T14:00:57.407Z"
+        "lastRun": "2026-05-19T11:36:59.538Z"
       },
       "newsjack": {
         "status": "ok",
-        "totalPublished": 34
+        "totalPublished": 48
       },
       "widgetOutreach": {
         "status": "ok",
-        "batchesSent": 10,
-        "totalEmailsSent": 21
+        "batchesSent": 14,
+        "totalEmailsSent": 25
       },
       "pdf": {
         "status": "ok",
-        "totalGenerated": 5
+        "totalGenerated": 6
       },
       "pinterest": {
         "status": "not-setup"

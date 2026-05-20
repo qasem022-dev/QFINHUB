@@ -206,6 +206,8 @@ export default async function CalculatorDetailPage({
       "@type": "Person",
       name: "Qasem Mohammed",
       url: "https://qfinhub.com/about",
+      sameAs: ["https://www.linkedin.com/in/qasem-mohammed"],
+      jobTitle: "AI & Software Engineer, Founder & Lead Developer",
     },
   };
 

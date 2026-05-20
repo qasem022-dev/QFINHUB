@@ -19,4 +19,10 @@ export interface CalculatorContent {
   tips: string[];
   /** Related calculator slugs for cross-linking */
   relatedCalculators: string[];
+  /** Authoritative citations (IRS, CFPB, Federal Reserve, etc.) — 2-3 trusted sources */
+  citations: string[];
+  /** Concise definition in AI Overview / featured-snippet format (1-2 sentences) */
+  definition: string;
+  /** 3-4 key takeaways for AI Overview "Key Takeaways" / "Quick Facts" panel */
+  keyTakeaways: string[];
 }

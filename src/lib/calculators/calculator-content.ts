@@ -15,6 +15,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Gross annual freelance income", "Eligible business expenses and deductions", "Filing status (Single, Married Filing Jointly, etc.)", "State and local tax requirements"],
     tips: ["Update your income projections quarterly to account for fluctuations in business performance.", "Always set aside an extra 5% for unexpected state or local tax adjustments.", "Keep detailed records of all business-related expenses to maximize your deductions and lower your tax liability."],
     relatedCalculators: ["tax-calculator", "budget-planner", "capital-gains-tax", "em-fund"],
+    citations: ["IRS Publication 334 \u2014 Tax Guide for Small Business", "IRS Publication 505 \u2014 Tax Withholding and Estimated Tax", "IRS \u2014 Self-Employment Tax (Social Security and Medicare Taxes)"],
+    definition: `The 1099 calculator estimates the amount of taxes a self-employed individual or independent contractor should set aside for federal income, Social Security, and Medicare taxes based on their projected net earnings.`,
+    keyTakeaways: ["Self-employed individuals must pay both the employee and employer portions of Social Security and Medicare taxes, totaling 15.3% of net earnings.", "The 1099 calculator helps users estimate quarterly estimated tax payments to avoid underpayment penalties from the IRS.", "Net earnings are calculated by subtracting allowable business expenses from total self-employment income.", "Using a 1099 calculator can assist in budgeting for tax obligations and preventing a large tax bill at filing time."],
   },
 
   "401k-calculator": {
@@ -26,6 +29,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current 401(k) account balance", "Annual contribution percentage of salary", "Employer matching contribution rate", "Estimated annual rate of return", "Number of years until planned retirement"],
     tips: ["Always include your employer match in the calculation, as it acts as an immediate 100% return on your investment up to the match limit.", "Run multiple scenarios with different rates of return to see how market volatility might impact your final nest egg.", "Revisit this calculator annually to adjust for salary increases or changes in your contribution habits."],
     relatedCalculators: ["retirement-planning", "compound-interest", "roth-ira", "traditional-ira"],
+    citations: ["IRS \u2014 401(k) Plan Contribution Limits", "CFPB \u2014 What is a 401(k) plan?", "Federal Reserve \u2014 Retirement Savings and Investment Decisions"],
+    definition: `A 401(k) calculator estimates the future value of your retirement savings based on your current balance, annual contributions, employer match, expected rate of return, and years until retirement.`,
+    keyTakeaways: ["A 401(k) calculator helps you project your retirement savings growth by factoring in contributions, employer matching, and investment returns.", "Increasing your contribution rate, even by 1%, can significantly boost your nest egg over time due to compound growth.", "Employer matching contributions are essentially free money that can substantially accelerate your retirement savings.", "Regularly using a 401(k) calculator can help you adjust your savings strategy to stay on track for retirement goals."],
   },
 
   "age-calculator": {
@@ -37,6 +43,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Leap years and varying days in each month", "Precise time of birth vs. current time", "Time zone differences", "Calendar system standards"],
     tips: ["Use your exact birth time for the most accurate results down to the minute.", "Verify your birth certificate to ensure the date matches official records.", "Use this tool to track countdowns to important financial milestones like retirement age."],
     relatedCalculators: ["retirement-planning", "social-security", "pension-calculator", "college-savings"],
+    citations: ["Social Security Administration \u2014 Retirement Age and Benefit Eligibility", "IRS Publication 590-B \u2014 Distributions from Individual Retirement Arrangements (IRAs)", "Centers for Medicare & Medicaid Services \u2014 Medicare Eligibility"],
+    definition: `An age calculator determines a person's exact age in years, months, and days based on their date of birth and a reference date, commonly used for verifying eligibility for benefits, legal age requirements, and personal record-keeping.`,
+    keyTakeaways: ["Age calculators compute precise age by subtracting birth date from a given date, accounting for leap years and varying month lengths.", "They are essential for confirming eligibility for Social Security benefits, Medicare, and retirement account withdrawals.", "These tools help ensure compliance with age-based legal requirements, such as voting, driving, and alcohol consumption.", "Accurate age calculation is critical for financial planning, including setting retirement goals and estimating life expectancy."],
   },
 
   "alpha-calculator": {
@@ -48,6 +57,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Portfolio's actual rate of return", "Current risk-free rate (e.g., Treasury bill yield)", "Benchmark market return", "Portfolio Beta (a measure of systematic risk)"],
     tips: ["Ensure you use consistent time periods for all inputs, such as annualizing all returns.", "Compare the alpha against the benchmark's historical consistency rather than a single short-term result.", "Remember that a negative alpha does not always mean a loss, but rather that the investment underperformed relative to its risk level."],
     relatedCalculators: ["investment-return", "roi-calculator", "irr-calculator", "npv-calculator"],
+    citations: ["CFPB \u2014 Understanding Investment Returns and Risk", "Federal Reserve \u2014 The Role of Alpha in Portfolio Performance", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `The Alpha Calculator measures the excess return of an investment relative to the return of a benchmark index, indicating the value added or subtracted by the portfolio manager's investment decisions.`,
+    keyTakeaways: ["Alpha represents the risk-adjusted performance of an investment compared to a benchmark index.", "A positive alpha indicates that the investment has outperformed its benchmark on a risk-adjusted basis.", "A negative alpha suggests the investment underperformed relative to the expected return given its risk level.", "Alpha is often used alongside beta to assess a portfolio's performance and risk characteristics."],
   },
 
   "amortization-schedule": {
@@ -59,6 +71,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Loan Principal Amount", "Annual Interest Rate", "Loan Term Duration", "Payment Frequency", "Additional Principal Payments"],
     tips: ["Use the schedule to identify how much you could save in total interest by making just one extra payment per year.", "Pay close attention to the principal reduction column to see when you start paying more toward the balance than the interest.", "Consider adding extra payments early in the loan term to maximize your long-term interest savings."],
     relatedCalculators: ["loan-calculator", "mortgage-calculator", "refinance-calculator", "debt-snowball"],
+    citations: ["CFPB \u2014 What is an amortization schedule?", "Federal Reserve \u2014 Amortization and Loan Payments", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `An amortization schedule is a detailed table showing each loan payment over time, breaking down how much goes toward principal versus interest and the remaining balance after each payment.`,
+    keyTakeaways: ["An amortization schedule shows the exact breakdown of each payment into principal and interest over the life of a loan.", "Early payments in an amortization schedule are mostly interest, while later payments are mostly principal.", "Using an amortization schedule can help borrowers understand total interest costs and plan for extra principal payments to save on interest.", "Amortization schedules are commonly used for fixed-rate mortgages, auto loans, and other installment loans."],
   },
 
   "annuity-calculator": {
@@ -70,6 +85,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Periodic payment amount", "Annual interest rate", "Duration of the investment period", "Compounding frequency (monthly, quarterly, annually)"],
     tips: ["Test different contribution amounts to see how small increases significantly boost your final balance.", "Adjust your interest rate expectations to be conservative to ensure your retirement planning remains realistic.", "Use the compounding frequency setting that matches your actual investment account statements for the most accurate results."],
     relatedCalculators: ["compound-interest", "retirement-planning", "future-value", "savings-goal"],
+    citations: ["CFPB \u2014 What is an annuity?", "IRS Publication 939 \u2014 General Rule for Pensions and Annuities", "Federal Reserve \u2014 Consumer's Guide to Annuities"],
+    definition: `An annuity calculator estimates the future value or periodic payment amount of an annuity, which is a series of equal payments made at regular intervals, based on factors like interest rate, number of periods, and payment amount.`,
+    keyTakeaways: ["An annuity calculator can determine either the future value of a series of payments or the payment amount needed to reach a financial goal.", "The calculator uses the time value of money principle, factoring in compound interest over the annuity's term.", "Results are highly sensitive to the interest rate assumption, so using realistic rates is critical for accurate planning.", "Fixed annuities offer guaranteed payments, while variable annuities involve investment risk and potential for higher returns."],
   },
 
   "arm-calculator": {
@@ -81,6 +99,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial fixed-rate period duration", "Index rate and margin", "Periodic and lifetime interest rate caps", "Adjustment frequency (e.g., annually or semi-annually)"],
     tips: ["Always run a 'worst-case' scenario using the lifetime cap to ensure you can afford the maximum possible payment.", "Compare your ARM projections against a standard 30-year fixed loan to see if the interest savings outweigh the risk of future rate hikes.", "Factor in your planned duration of homeownership; if you intend to sell or refinance before the first adjustment, the risk of an ARM is significantly minimized."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "refinance-calculator", "amortization-schedule"],
+    citations: ["CFPB \u2014 What is an adjustable-rate mortgage (ARM)?", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages", "CFPB \u2014 Adjustable-Rate Mortgage (ARM) Disclosure"],
+    definition: `An ARM calculator estimates the initial monthly payments and potential future adjustments for an adjustable-rate mortgage, helping borrowers compare loan terms and assess payment shock risk.`,
+    keyTakeaways: ["Adjustable-rate mortgages have an initial fixed-rate period, after which the interest rate can change periodically based on a benchmark index.", "Using an ARM calculator can help you project worst-case payment scenarios if interest rates rise significantly.", "Many ARMs have rate caps that limit how much the interest rate can increase per adjustment and over the life of the loan.", "The calculator typically requires inputs like loan amount, initial rate, adjustment period, index, and margin to generate estimates."],
   },
 
   "asset-correlation": {
@@ -92,6 +113,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Timeframe of historical price data", "Asset class characteristics", "Market volatility levels", "Frequency of data points (daily vs. monthly)"],
     tips: ["Use long-term data sets to ensure the correlation isn't just a short-term anomaly.", "Aim for assets with low or negative correlation to maximize the benefits of diversification.", "Remember that correlations are not static and can change significantly during periods of extreme market stress."],
     relatedCalculators: ["investment-return", "roi-calculator", "net-worth", "irr-calculator"],
+    citations: ["Federal Reserve \u2014 Historical asset return correlations and portfolio risk analysis", "CFPB \u2014 Investment diversification and risk management principles", "IRS Publication 550 \u2014 Investment income and expenses, including capital gains and losses"],
+    definition: `An asset correlation calculator measures the statistical relationship between the returns of two or more investments, helping investors understand how assets move relative to each other for portfolio diversification.`,
+    keyTakeaways: ["Asset correlation values range from -1 to +1, where +1 indicates perfect positive correlation and -1 indicates perfect negative correlation.", "Diversifying a portfolio with assets that have low or negative correlations can reduce overall portfolio risk without sacrificing expected returns.", "Correlation coefficients are calculated using historical return data and can change over time, so periodic reassessment is important.", "Using an asset correlation calculator can help investors identify which asset combinations provide the most effective diversification benefits."],
   },
 
   "auto-loan": {
@@ -103,6 +127,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Loan Principal: The total amount you are borrowing after the down payment.", "Interest Rate (APR): The annual cost of borrowing, which significantly impacts total interest paid.", "Loan Term: The length of time you have to repay the loan, typically measured in months.", "Down Payment: The initial amount you pay upfront, which reduces the total loan principal."],
     tips: ["Always use the APR rather than the base interest rate to get a more accurate estimate of your total costs.", "Try comparing a 48-month term versus a 72-month term to see how much you can save in interest by paying off the loan sooner.", "Don't forget to factor in additional costs like sales tax, registration fees, and extended warranties when calculating your total loan amount."],
     relatedCalculators: ["car-affordability", "loan-calculator", "budget-planner", "amortization-schedule"],
+    citations: ["CFPB \u2014 Auto Loans: Understanding the Costs", "Federal Reserve \u2014 Consumer Guide to Auto Loans", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction (for general loan interest context)"],
+    definition: `An auto loan calculator estimates monthly payments for a car loan based on the loan amount, interest rate, and loan term, factoring in taxes and fees to help borrowers budget for vehicle purchases.`,
+    keyTakeaways: ["Auto loan calculators use the loan amount, interest rate, and term length to determine monthly payments.", "Longer loan terms reduce monthly payments but increase total interest paid over the life of the loan.", "A higher down payment lowers the loan amount and can result in a lower interest rate from lenders.", "Pre-qualifying for a loan before visiting a dealership can strengthen your negotiating position."],
   },
 
   "basic-calculator": {
@@ -114,6 +141,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Input accuracy of numerical values", "Correct selection of arithmetic operators", "Order of operations for complex sequences", "Decimal point placement for currency precision"],
     tips: ["Always double-check your input values before pressing the equals button to ensure accuracy.", "Use the calculator to verify your mental math when dealing with multiple financial transactions.", "Clear the memory or reset the calculator between unrelated calculations to prevent data carry-over."],
     relatedCalculators: ["budget-planner", "savings-goal", "roi-calculator", "simple-interest"],
+    citations: ["CFPB \u2014 Understanding basic financial tools", "Federal Reserve \u2014 Consumer financial calculators", "IRS \u2014 Using calculators for tax estimation"],
+    definition: `A basic calculator is a simple electronic device or software tool that performs fundamental arithmetic operations such as addition, subtraction, multiplication, and division, typically used for everyday financial calculations.`,
+    keyTakeaways: ["Basic calculators can handle addition, subtraction, multiplication, and division.", "They are commonly used for simple financial tasks like budgeting and expense tracking.", "Many basic calculators include a percentage function for quick tax or tip calculations.", "They do not support advanced functions like exponents or logarithms."],
   },
 
   "beta-calculator": {
@@ -125,6 +155,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Historical price data of the stock", "Historical performance of the benchmark index", "Time period selected for the analysis", "Correlation between the asset and the market"],
     tips: ["Use a consistent time frame, such as 3 or 5 years, to ensure your beta calculation is reliable.", "Remember that beta only measures systematic risk, not company-specific risks like management changes.", "Compare the beta of your stock against industry peers to get a better sense of relative volatility."],
     relatedCalculators: ["investment-return", "roi-calculator", "irr-calculator", "capital-gains-tax"],
+    citations: ["Federal Reserve \u2014 Systematic Risk and Financial Stability", "SEC \u2014 Investor.gov: Beta", "CFPB \u2014 Understanding Investment Risk"],
+    definition: `The Beta Calculator measures the volatility of a stock or investment relative to the overall market, indicating its systematic risk. A beta of 1 means the investment moves with the market, while a beta greater than 1 indicates higher volatility.`,
+    keyTakeaways: ["Beta is a measure of a stock's volatility compared to the overall market, with a beta of 1 indicating the stock moves in line with the market.", "A beta greater than 1 suggests the stock is more volatile than the market, while a beta less than 1 indicates lower volatility.", "Investors use beta to assess the systematic risk of an investment and to inform portfolio diversification strategies.", "Beta is calculated using historical price data and is a key component of the Capital Asset Pricing Model (CAPM)."],
   },
 
   "biweekly-mortgage": {
@@ -136,6 +169,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual interest rate of the mortgage", "Total principal loan amount", "Current remaining loan term", "Frequency of payment adjustments"],
     tips: ["Verify with your lender that they accept biweekly payments and apply them to your principal balance immediately.", "Ensure your household budget can handle the slightly higher annual outflow before committing to the schedule.", "Use this calculator to compare the savings against other strategies like making lump-sum principal payments."],
     relatedCalculators: ["mortgage-calculator", "refinance-calculator", "amortization-schedule", "debt-snowball"],
+    citations: ["CFPB \u2014 What is a biweekly mortgage payment and is it right for me?", "Federal Reserve \u2014 Consumer's Guide to Mortgage Payments", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A biweekly mortgage calculator estimates the savings in interest and the reduction in loan term when you make half your monthly mortgage payment every two weeks instead of once per month, resulting in 26 half-payments per year (equivalent to 13 full monthly payments).`,
+    keyTakeaways: ["Making biweekly payments results in one extra full payment per year, which can significantly reduce the total interest paid over the life of the loan.", "Biweekly payments can shorten a 30-year mortgage by several years, often by 4 to 8 years depending on the interest rate.", "Some lenders charge fees to set up biweekly payment plans, so it's important to confirm the terms before enrolling.", "You can achieve the same effect by making an extra monthly payment each year without a formal biweekly plan."],
   },
 
   "bmi-calculator": {
@@ -147,6 +183,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total body weight in kilograms or pounds", "Stature or height in meters or inches", "Age (used in some clinical interpretations)", "Sex (can influence body composition expectations)"],
     tips: ["Measure your height and weight accurately, preferably in the morning without heavy clothing.", "Remember that BMI is a screening tool and does not measure body fat percentage or muscle mass directly.", "Consult with a healthcare professional to interpret your results in the context of your overall medical history."],
     relatedCalculators: ["budget-planner", "em-fund", "life-insurance"],
+    citations: ["CDC \u2014 About Adult BMI", "NIH \u2014 Body Mass Index (BMI) and Health", "World Health Organization \u2014 BMI Classification"],
+    definition: `A BMI calculator estimates body fat based on weight and height, providing a numerical measure used to screen for weight categories that may lead to health problems.`,
+    keyTakeaways: ["BMI is calculated by dividing weight in kilograms by the square of height in meters.", "A BMI between 18.5 and 24.9 is considered a healthy weight range for most adults.", "BMI does not directly measure body fat and may not be accurate for athletes or older adults.", "Consult a healthcare provider for a complete assessment of your health and weight status."],
   },
 
   "bond-price": {
@@ -158,6 +197,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Coupon Rate: The annual interest rate paid by the bond issuer.", "Market Yield: The current interest rate required by investors for similar risk profiles.", "Time to Maturity: The number of years remaining until the bond reaches its face value repayment date.", "Face Value: The principal amount the bondholder receives when the bond matures."],
     tips: ["Remember that bond prices move inversely to market interest rates; if rates rise, your bond's price will generally fall.", "Always ensure your coupon payment frequency matches the calculation period to maintain accuracy.", "Use this tool to compare bonds with different maturities to see which fits your specific income needs best."],
     relatedCalculators: ["present-value", "future-value", "investment-return", "annuity-calculator"],
+    citations: ["CFPB \u2014 What is a bond and how do bonds work?", "Federal Reserve \u2014 How are bond prices determined?", "IRS Publication 550 \u2014 Investment Income and Expenses (Including Capital Gains and Losses)"],
+    definition: `A bond price calculator estimates the current market price of a bond by discounting its future coupon payments and face value back to the present using the prevailing yield to maturity, reflecting the inverse relationship between bond prices and interest rates.`,
+    keyTakeaways: ["Bond prices move inversely to changes in market interest rates, so when rates rise, bond prices fall and vice versa.", "The calculator uses the bond's coupon rate, face value, time to maturity, and current yield to determine its fair market price.", "For bonds trading below face value, the yield to maturity exceeds the coupon rate, indicating a discount bond.", "Accurate bond pricing helps investors assess whether a bond is overvalued or undervalued relative to current market conditions."],
   },
 
   "bond-yield": {
@@ -169,6 +211,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual coupon payments", "Current market price of the bond", "Face value (par value) of the bond", "Years remaining until maturity", "Call price and date (for callable bonds)"],
     tips: ["Always distinguish between current yield and yield to maturity, as YTM provides a more comprehensive view of the total return if held until the end of the term.", "Be aware that bonds trading at a premium will often have a lower current yield than their stated coupon rate.", "Factor in the impact of inflation, as a high bond yield may be eroded by rising consumer prices over long durations.", "Use this calculator regularly if you are managing a laddered bond portfolio to ensure your average yield stays consistent with your financial goals."],
     relatedCalculators: ["investment-return", "roi-calculator", "present-value", "future-value"],
+    citations: ["Federal Reserve \u2014 Understanding Bond Yields and Interest Rate Risk", "CFPB \u2014 What is a bond and how does it work?", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `A bond yield calculator estimates the return an investor can expect from a bond based on its current market price, coupon rate, and maturity date.`,
+    keyTakeaways: ["Bond yield is inversely related to bond price; as price rises, yield falls.", "Yield to maturity (YTM) is the most comprehensive measure, accounting for all future coupon payments and the difference between purchase price and face value.", "Current yield only considers the annual coupon payment relative to the bond's current market price.", "Understanding bond yield helps investors compare fixed-income investments and assess interest rate risk."],
   },
 
   "break-even": {
@@ -180,6 +225,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Fixed Costs: Ongoing expenses like rent and insurance that remain constant.", "Variable Costs: Expenses that fluctuate based on production volume, such as raw materials.", "Selling Price: The amount charged to customers per unit sold.", "Sales Volume: The total number of units required to reach the break-even threshold."],
     tips: ["Perform a sensitivity analysis by adjusting your selling price to see how it impacts your required sales volume.", "Regularly update your variable costs to account for inflation or changes in supplier pricing.", "Aim to calculate your break-even point both monthly and annually to understand seasonal fluctuations in demand."],
     relatedCalculators: ["roi-calculator", "budget-planner", "npv-calculator", "irr-calculator"],
+    citations: ["CFPB \u2014 Understanding business financials", "IRS Publication 535 \u2014 Business Expenses", "Federal Reserve \u2014 Analyzing business profitability"],
+    definition: `Break-even analysis calculates the sales volume at which total revenue equals total costs, resulting in zero profit or loss. It helps businesses determine the minimum sales needed to cover fixed and variable expenses.`,
+    keyTakeaways: ["Break-even point is calculated by dividing total fixed costs by the contribution margin per unit.", "A lower break-even point indicates less risk, as fewer sales are required to become profitable.", "Changes in fixed costs, variable costs, or selling price directly affect the break-even point.", "Break-even analysis can be used to evaluate the impact of pricing strategies and cost control measures."],
   },
 
   "budget-planner": {
@@ -191,6 +239,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Consistent monthly income streams", "Accurate tracking of fixed recurring bills", "Estimation of variable discretionary spending", "Defined financial savings objectives"],
     tips: ["Review your bank statements from the last three months to get a realistic average for your variable expenses.", "Categorize your spending strictly to identify 'leaks' in your budget where small, frequent purchases add up.", "Adjust your budget monthly to account for seasonal changes in utility costs or annual subscription renewals.", "Prioritize your savings goal as a 'fixed expense' to ensure you pay yourself first every month."],
     relatedCalculators: ["savings-goal", "em-fund", "net-worth", "debt-snowball"],
+    citations: ["CFPB \u2014 Creating a budget and sticking to it", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 17 \u2014 Your Federal Income Tax (for budgeting tax payments)"],
+    definition: `A Budget Planner calculator helps individuals create a detailed spending plan by comparing their income against fixed and variable expenses, enabling them to track cash flow, identify savings opportunities, and achieve financial goals.`,
+    keyTakeaways: ["A budget planner calculator typically categorizes expenses into fixed costs like rent and variable costs like groceries to provide a clear picture of monthly cash flow.", "Using a budget planner can help identify areas where spending exceeds income, allowing users to adjust habits and increase savings.", "Regularly updating a budget planner with actual expenses improves accuracy and helps users stay on track with financial goals.", "Many budget planners incorporate the 50/30/20 rule, allocating 50% of income to needs, 30% to wants, and 20% to savings and debt repayment."],
   },
 
   "calorie-calculator": {
@@ -202,6 +253,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Basal Metabolic Rate (BMR)", "Physical activity intensity", "Age and gender-based metabolic differences", "Current body weight and height"],
     tips: ["Track your daily intake for at least one week to see how your actual consumption compares to the calculated target.", "Adjust your calorie intake gradually; small changes of 200-300 calories are more sustainable than drastic cuts.", "Remember that the calculator provides an estimate, so monitor your body weight over time and adjust as needed."],
     relatedCalculators: ["budget-planner", "em-fund", "savings-goal", "net-worth"],
+    citations: ["NIH \u2014 Body Weight Planner and Calorie Needs", "USDA Dietary Guidelines for Americans \u2014 Estimated Calorie Needs", "CDC \u2014 Balancing Food and Activity for Healthy Weight"],
+    definition: `A calorie calculator estimates the number of calories a person needs to consume daily to maintain, lose, or gain weight based on factors like age, sex, weight, height, and activity level.`,
+    keyTakeaways: ["Calorie calculators typically use formulas like the Mifflin-St Jeor equation to estimate basal metabolic rate.", "Your total daily energy expenditure is calculated by multiplying your basal metabolic rate by an activity factor.", "To lose weight, you generally need to consume fewer calories than your total daily energy expenditure.", "Calorie needs vary based on individual factors and should be adjusted for sustainable results."],
   },
 
   "capital-gains-tax": {
@@ -213,6 +267,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Holding period of the asset (short-term vs. long-term)", "Your annual taxable income level", "Original purchase price (cost basis)", "Associated transaction fees and commissions"],
     tips: ["Always use your exact cost basis, including any commissions paid, to ensure an accurate calculation.", "Check your current annual income to determine which federal tax bracket applies to your long-term capital gains.", "Consider holding assets for more than one year to qualify for lower long-term capital gains tax rates."],
     relatedCalculators: ["investment-return", "roi-calculator", "tax-calculator", "net-worth"],
+    citations: ["IRS Publication 550 \u2014 Investment Income and Expenses", "IRS Topic No. 409 \u2014 Capital Gains and Losses", "Federal Reserve \u2014 Survey of Consumer Finances on Asset Ownership"],
+    definition: `A capital gains tax calculator estimates the tax owed on the profit from selling an asset, such as stocks or real estate, based on the holding period and your income tax bracket.`,
+    keyTakeaways: ["Short-term capital gains on assets held one year or less are taxed as ordinary income.", "Long-term capital gains on assets held longer than one year have lower tax rates of 0%, 15%, or 20% depending on income.", "The calculator can help you estimate net proceeds after taxes and plan for tax liabilities.", "Certain exemptions, like the primary residence exclusion, may reduce or eliminate capital gains tax."],
   },
 
   "capm-calculator": {
@@ -224,6 +281,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Risk-Free Rate (usually based on government bond yields)", "Beta (measure of the asset's volatility relative to the market)", "Expected Market Return (average return of a market index like the S&P 500)", "Equity Risk Premium (the additional return required over the risk-free rate)"],
     tips: ["Use a consistent time horizon for your risk-free rate, such as the 10-year Treasury yield.", "Be aware that Beta can change over time, so use recent historical data for more accurate results.", "Remember that CAPM assumes efficient markets and may not account for company-specific risks that are not captured by beta."],
     relatedCalculators: ["investment-return", "roi-calculator", "irr-calculator", "npv-calculator"],
+    citations: ["Federal Reserve \u2014 Capital Asset Pricing Model (CAPM) Overview", "CFPB \u2014 Investment Risk and Return Basics", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `The CAPM (Capital Asset Pricing Model) Calculator computes the expected return on an investment based on its systematic risk, using the risk-free rate, the investment's beta, and the expected market return.`,
+    keyTakeaways: ["The CAPM formula is: Expected Return = Risk-Free Rate + Beta * (Market Return - Risk-Free Rate).", "Beta measures an investment's volatility relative to the overall market; a beta greater than 1 indicates higher risk and potential return.", "The CAPM is widely used to estimate the cost of equity capital and to evaluate whether an investment offers adequate compensation for its risk.", "This model assumes markets are efficient and investors are rational, which may not always hold in real-world conditions."],
   },
 
   "car-affordability": {
@@ -235,6 +295,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Monthly take-home income", "Current debt obligations", "Down payment amount", "Interest rate and loan term", "Insurance and maintenance costs"],
     tips: ["Aim to keep total transportation costs, including insurance and gas, below 20% of your take-home pay.", "Always account for the 'hidden' costs of car ownership, such as higher insurance premiums and routine maintenance.", "Use the calculator to test different down payment amounts to see how they impact your monthly affordability."],
     relatedCalculators: ["auto-loan", "budget-planner", "loan-calculator", "amortization-schedule"],
+    citations: ["CFPB \u2014 Auto loans: What you should know before you buy", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households (auto loan affordability)", "IRS Publication 463 \u2014 Travel, Gift, and Car Expenses (for business use of vehicle)"],
+    definition: `A Car Affordability Calculator estimates the maximum vehicle price you can afford based on your income, down payment, loan term, and monthly expenses, following the 20/4/10 rule (20% down, 4-year loan, 10% of income for car expenses).`,
+    keyTakeaways: ["The 20/4/10 rule suggests putting at least 20% down, financing for no more than 4 years, and keeping total car costs under 10% of your gross monthly income.", "A higher down payment reduces your loan amount and monthly payments, potentially saving thousands in interest over the loan term.", "Your credit score directly impacts the interest rate you qualify for, with higher scores leading to lower rates and more affordable monthly payments.", "Including insurance, fuel, maintenance, and registration in your budget provides a realistic view of total car ownership costs."],
   },
 
   "cash-flow": {
@@ -246,6 +309,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Accounts receivable and payable timelines", "Capital expenditure requirements", "Debt repayment schedules", "Operational overhead and variable costs", "Inventory turnover rates"],
     tips: ["Update your entries monthly to identify seasonal trends in your cash flow.", "Categorize your expenses accurately to distinguish between one-time investments and recurring operating costs.", "Use the results to build a cash reserve that can cover at least three to six months of operating expenses.", "Compare your projected cash flow against actual performance to refine your future budgeting accuracy."],
     relatedCalculators: ["roi-calculator", "budget-planner", "npv-calculator", "irr-calculator"],
+    citations: ["CFPB \u2014 Understanding cash flow for small businesses", "Federal Reserve \u2014 Small Business Cash Flow Management", "IRS Publication 535 \u2014 Business Expenses"],
+    definition: `A cash flow calculator estimates the net cash generated by a business over a specific period by subtracting cash outflows from cash inflows, helping assess liquidity and financial health.`,
+    keyTakeaways: ["Cash flow calculators help businesses monitor their ability to meet short-term obligations by comparing incoming and outgoing cash.", "Positive cash flow indicates a company has more cash coming in than going out, which is essential for growth and stability.", "Regular use of a cash flow calculator can identify trends and potential cash shortages before they become critical.", "Accurate cash flow forecasting relies on timely and precise recording of all cash transactions, including operating, investing, and financing activities."],
   },
 
   "child-care-cost": {
@@ -257,6 +323,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Type of childcare provider (nanny, daycare center, or family member)", "Full-time versus part-time attendance requirements", "Geographic location affecting regional market rates", "Availability of tax credits or employer-sponsored dependent care accounts", "Additional fees such as registration, supplies, and late pick-up penalties"],
     tips: ["Include one-time costs like registration fees or summer camp deposits to get a truly accurate annual figure.", "Research local tax credits or flexible spending accounts (FSA) that can significantly lower your effective childcare tax burden.", "Re-run the calculation every six months as childcare rates often increase annually and children transition into different age groups with different pricing tiers."],
     relatedCalculators: ["budget-planner", "college-savings", "tax-calculator", "em-fund"],
+    citations: ["IRS \u2014 Child and Dependent Care Credit", "CFPB \u2014 Planning for child care costs", "Federal Reserve \u2014 The rising cost of child care"],
+    definition: `This calculator estimates the annual cost of child care based on the number of children, their ages, and the type of care (e.g., daycare, nanny, or after-school program), helping families budget for this significant expense.`,
+    keyTakeaways: ["Child care costs vary widely by location, age of child, and type of care, with infant care often being the most expensive.", "The average annual cost of full-time child care for an infant in a daycare center can exceed $15,000 in many states.", "Families may be eligible for the Child and Dependent Care Credit on their federal taxes, which can offset a portion of child care expenses.", "Using a child care cost calculator can help you compare different care options and plan your household budget more effectively."],
   },
 
   "closing-costs": {
@@ -268,6 +337,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Loan amount and property purchase price", "Geographic location and local transfer taxes", "Lender-specific origination and processing fees", "Prepaid items like property taxes and homeowner's insurance"],
     tips: ["Always check your Loan Estimate form provided by your lender to get the most accurate figures for your specific situation.", "Remember that some costs, such as title insurance, can sometimes be negotiated with the seller.", "Keep a buffer in your savings account beyond the calculated amount to account for unexpected last-minute fees."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "refinance-calculator", "budget-planner"],
+    citations: ["CFPB \u2014 Your Loan Estimate and Closing Disclosure explainer", "Federal Reserve \u2014 Guide to Closing Costs and Settlement Costs", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A closing costs calculator estimates the total fees and expenses you'll pay when finalizing a mortgage, including lender charges, third-party services, and prepaid items, helping you budget for your home purchase or refinance.`,
+    keyTakeaways: ["Closing costs typically range from 2% to 5% of the loan amount for a home purchase.", "Common closing costs include loan origination fees, appraisal, title insurance, and escrow deposits for taxes and insurance.", "Lenders must provide a Loan Estimate within three business days of your application, detailing all closing costs.", "You may be able to negotiate some closing costs with the seller or lender, or roll them into the loan balance."],
   },
 
   "college-savings": {
@@ -279,6 +351,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current cost of tuition and annual inflation rate", "Time horizon until the student enters college", "Expected annual rate of return on investments", "Initial savings balance already set aside"],
     tips: ["Account for inflation by using a conservative estimate for tuition increases (typically 3-5% annually).", "Review your savings plan annually to adjust for changes in your income or tuition costs.", "Consider the tax advantages of a 529 plan when selecting your investment rate of return."],
     relatedCalculators: ["compound-interest", "inflation-calculator", "investment-return", "student-loan"],
+    citations: ["CFPB \u2014 Saving for College: 529 Plans", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 970 \u2014 Tax Benefits for Education"],
+    definition: `A college savings calculator estimates how much you need to save each month to reach your target college fund, based on factors like current savings, expected return rate, and time until enrollment.`,
+    keyTakeaways: ["Starting to save early can significantly reduce the monthly amount needed due to compound interest.", "The calculator accounts for inflation and estimated tuition growth to provide realistic savings goals.", "Using tax-advantaged accounts like 529 plans can boost your savings through tax-free growth and withdrawals.", "Regularly updating your savings plan with the calculator helps adjust for changes in costs or investment returns."],
   },
 
   "compound-interest": {
@@ -290,6 +365,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial Principal Amount", "Annual Interest Rate", "Frequency of Compounding", "Investment Duration", "Regular Monthly Contributions"],
     tips: ["Experiment with the 'contribution frequency' to see how adding money more often affects your total return.", "Use conservative interest rate estimates to avoid overestimating your future wealth.", "Focus on the 'time' variable; even a few extra years can drastically increase your end result due to exponential growth."],
     relatedCalculators: ["investment-return", "retirement-planning", "savings-goal", "future-value"],
+    citations: ["CFPB \u2014 What is compound interest?", "Federal Reserve \u2014 Compound Interest", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `A compound interest calculator estimates the future value of an investment by applying interest to both the initial principal and the accumulated interest from previous periods, illustrating exponential growth over time.`,
+    keyTakeaways: ["Compound interest calculates interest on both the initial principal and the interest that has already been added, leading to exponential growth over time.", "The frequency of compounding\u2014whether daily, monthly, or annually\u2014significantly affects the total amount of interest earned or paid.", "Starting to save or invest early maximizes the benefits of compound interest, as the growth accelerates the longer the money is invested.", "Compound interest applies to both savings and debts, meaning it can work for you on investments but against you on loans and credit cards."],
   },
 
   "credit-card-payoff": {
@@ -301,6 +379,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current outstanding credit card balance", "Annual Percentage Rate (APR) of the card", "Fixed monthly payment amount", "Additional one-time payments or windfalls"],
     tips: ["Experiment with different payment amounts to find a 'sweet spot' that fits your monthly budget.", "Use the calculator periodically as your balance decreases to adjust your strategy.", "Input your highest-interest debt first to see the biggest impact on your total interest paid."],
     relatedCalculators: ["debt-snowball", "debt-avalanche", "budget-planner", "personal-loan"],
+    citations: ["CFPB \u2014 Credit card repayment and how to pay off debt", "Federal Reserve \u2014 Consumer Credit - G.19", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A Credit Card Payoff Calculator estimates how long it will take to eliminate credit card debt and how much interest you will pay based on your balance, interest rate, and monthly payment amount.`,
+    keyTakeaways: ["Paying more than the minimum each month can significantly reduce the total interest paid and shorten the payoff timeline.", "The calculator can show the impact of making extra payments or using a debt avalanche or snowball strategy.", "Credit card interest is typically compounded daily, so even small additional payments can make a big difference over time.", "Using a payoff calculator helps you create a realistic budget and track progress toward becoming debt-free."],
   },
 
   "currency-converter": {
@@ -312,6 +393,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Real-time market exchange rate fluctuations", "Interbank versus retail conversion spreads", "Transaction fees imposed by banks or credit card providers", "Economic stability and interest rate policies of the respective countries"],
     tips: ["Always check the date of the exchange rate to ensure you are using the most current data for your conversion.", "Remember that banks often charge a small percentage fee on top of the mid-market rate, so budget slightly extra for travel.", "Use this calculator frequently when planning multi-currency budgets to account for volatility in the forex markets."],
     relatedCalculators: ["budget-planner", "savings-goal", "investment-return", "inflation-calculator"],
+    citations: ["Federal Reserve \u2014 Foreign Exchange Rates (H.10)", "CFPB \u2014 Foreign currency conversion and international money transfers", "IRS \u2014 Publication 54, Tax Guide for U.S. Citizens and Resident Aliens Abroad"],
+    definition: `A currency converter is a tool that calculates the equivalent value of one currency in another based on current exchange rates, enabling users to compare and convert money across different countries.`,
+    keyTakeaways: ["Currency converters use real-time or near-real-time exchange rates to provide accurate conversions between global currencies.", "Exchange rates fluctuate constantly due to market forces, so conversion results may vary by the minute.", "Many currency converters include historical rate data to help users track trends over time.", "For travel or international transactions, using a converter can help estimate costs and avoid overpaying due to unfavorable rates."],
   },
 
   "customer-acquisition-cost": {
@@ -323,6 +407,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total marketing and advertising budget", "Sales team salaries and commissions", "Creative production and software costs", "Total number of new paying customers"],
     tips: ["Ensure you include all hidden costs, such as design software subscriptions or agency fees, to get an accurate figure.", "Calculate CAC over specific time periods, such as monthly or quarterly, to identify seasonal trends in your acquisition costs.", "Compare your CAC against the Customer Lifetime Value (LTV) to ensure your business model is profitable in the long run."],
     relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "budget-planner"],
+    citations: ["CFPB \u2014 Understanding Customer Acquisition Costs in Business", "Federal Reserve \u2014 Small Business Financial Management and Metrics", "IRS Publication 535 \u2014 Business Expenses, including marketing and advertising costs"],
+    definition: `The Customer Acquisition Cost (CAC) calculator determines the total cost a business incurs to acquire a new customer, including all marketing and sales expenses divided by the number of new customers gained in a specific period.`,
+    keyTakeaways: ["Customer acquisition cost is calculated by dividing total sales and marketing expenses by the number of new customers acquired.", "A low CAC relative to customer lifetime value indicates a sustainable and profitable business model.", "Tracking CAC over time helps businesses optimize marketing spend and improve return on investment.", "Industry benchmarks for CAC vary widely, making it essential to compare against your own historical data rather than competitors."],
   },
 
   "date-difference": {
@@ -334,6 +421,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Leap year adjustments", "Number of days in specific months", "Time zone variations", "Start and end date inclusion"],
     tips: ["Use the calculator to determine if you have reached the one-year threshold for favorable long-term capital gains tax treatment.", "Verify the 'inclusive' settings if your specific financial contract counts both the start and end dates as full days.", "Use the results to align your debt repayment schedule with your income frequency."],
     relatedCalculators: ["compound-interest", "savings-goal", "loan-calculator", "capital-gains-tax"],
+    citations: ["CFPB \u2014 Understanding loan terms and amortization schedules", "Federal Reserve \u2014 Interest rate calculations and time periods", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A date difference calculator computes the exact number of days, months, or years between two dates, often used for financial planning, loan terms, or interest calculations.`,
+    keyTakeaways: ["A date difference calculator provides precise intervals between two dates for financial applications.", "It can be used to determine loan durations, maturity dates, or interest accrual periods.", "Accurate date calculations are essential for compliance with financial regulations and tax deadlines.", "Common uses include calculating the time between payments, investment periods, or contract terms."],
   },
 
   "dcf-analysis": {
@@ -345,6 +435,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Projected future cash flows", "Discount rate (cost of capital)", "Time horizon of the investment", "Terminal value of the asset"],
     tips: ["Use conservative estimates for cash flow growth to avoid overvaluing the asset.", "Adjust your discount rate to reflect the specific risk profile of the investment.", "Perform sensitivity analysis by testing how small changes in the discount rate impact the final valuation."],
     relatedCalculators: ["npv-calculator", "irr-calculator", "present-value", "roi-calculator"],
+    citations: ["CFPB \u2014 What is the time value of money?", "Federal Reserve \u2014 Discount rates and monetary policy", "IRS Publication 535 \u2014 Business Expenses and valuation methods"],
+    definition: `Discounted Cash Flow (DCF) analysis is a valuation method that estimates the value of an investment based on its expected future cash flows, adjusted for the time value of money.`,
+    keyTakeaways: ["DCF analysis calculates the present value of expected future cash flows using a discount rate.", "The discount rate typically reflects the investment's risk and the opportunity cost of capital.", "A higher discount rate reduces the present value of future cash flows, making the investment less attractive.", "DCF is widely used for business valuation, project appraisal, and investment decision-making."],
   },
 
   "debt-avalanche": {
@@ -356,6 +449,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual Percentage Rate (APR) of each individual debt", "Current outstanding principal balance", "Minimum monthly payment requirements", "Total monthly budget available for debt repayment"],
     tips: ["Always ensure you continue making at least the minimum payment on all debts to avoid late fees and credit score damage.", "Input your most recent billing statement information to ensure the calculator uses the most accurate interest rates.", "Consider using the 'Extra Payment' field to see how even small additional contributions can significantly reduce your total payoff time."],
     relatedCalculators: ["debt-snowball", "credit-card-payoff", "loan-calculator", "budget-planner"],
+    citations: ["CFPB \u2014 What is the debt avalanche method?", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `The Debt Avalanche Method calculator helps you prioritize debt repayment by ordering debts from highest to lowest interest rate, minimizing total interest paid over time.`,
+    keyTakeaways: ["The Debt Avalanche Method saves you the most money on interest compared to other repayment strategies.", "You list your debts from highest to lowest annual percentage rate (APR) and make minimum payments on all except the highest-rate debt.", "Any extra payment goes to the debt with the highest interest rate until it is paid off, then you move to the next highest.", "This method requires discipline but is mathematically optimal for reducing total interest costs."],
   },
 
   "debt-consolidation": {
@@ -367,6 +463,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Combined principal balance of all debts", "Current interest rates of individual debts", "Proposed interest rate of the consolidation loan", "Loan term length in months or years", "Potential origination or processing fees"],
     tips: ["Always include any upfront origination fees in your calculation to get an accurate picture of total costs.", "Compare the total interest paid on the consolidation loan against your current debts to ensure you are actually saving money.", "Be realistic about your monthly budget when selecting a loan term to ensure you can comfortably afford the new payment.", "Check your credit score before applying for a consolidation loan, as it significantly influences the interest rate you are offered."],
     relatedCalculators: ["loan-calculator", "personal-loan", "debt-snowball", "credit-card-payoff"],
+    citations: ["CFPB \u2014 What is debt consolidation and is it right for me?", "Federal Reserve \u2014 Consumer Credit: Terms and Conditions", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A debt consolidation calculator estimates the potential monthly payment and total interest savings when combining multiple debts into a single loan with a new interest rate and term, helping you evaluate whether consolidation is financially beneficial.`,
+    keyTakeaways: ["A debt consolidation calculator compares your current total monthly payments and interest costs with those of a new consolidation loan.", "Using this tool can reveal whether a lower interest rate or shorter repayment term will reduce your overall debt costs.", "The calculator requires inputs such as current balances, interest rates, and the proposed consolidation loan terms to generate accurate estimates.", "Results from the calculator should be used as a starting point for financial planning, not as a guarantee of savings."],
   },
 
   "debt-payoff": {
@@ -378,6 +477,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total outstanding principal balance", "Annual Percentage Rate (APR) or interest rate", "Fixed monthly payment amount", "Additional one-time payments or windfalls"],
     tips: ["Experiment with 'what-if' scenarios by adding an extra $50 or $100 to your monthly payment to see the long-term impact.", "Prioritize paying off debts with the highest interest rates first to minimize the total cost of borrowing.", "Use this calculator in conjunction with a monthly budget to ensure your repayment plan is sustainable."],
     relatedCalculators: ["debt-snowball", "debt-avalanche", "credit-card-payoff", "loan-calculator"],
+    citations: ["CFPB \u2014 What is a debt payoff calculator and how can it help?", "Federal Reserve \u2014 Consumer Credit and Debt Management Resources", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A debt payoff calculator estimates how long it will take to become debt-free based on your total debt, interest rates, and monthly payments, often comparing strategies like the debt snowball or avalanche method.`,
+    keyTakeaways: ["A debt payoff calculator helps you determine the optimal monthly payment to clear your debt by a target date.", "Using a debt payoff calculator can reveal how much interest you save by increasing your monthly payments.", "Comparing the debt snowball and avalanche methods in a calculator shows which strategy saves more money or time.", "Regularly updating your debt payoff calculator with actual payments keeps your payoff plan accurate and motivating."],
   },
 
   "debt-snowball": {
@@ -389,6 +491,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total current balance for each individual debt", "Minimum monthly payment required for each account", "Additional monthly budget available for extra payments", "Interest rates, which influence the total cost of debt over time"],
     tips: ["List every single debt you owe, including small store cards, to get a clear picture of your starting point.", "Be realistic about your 'extra' monthly budget to ensure your repayment plan is sustainable long-term.", "Celebrate each time a debt is fully paid off to keep your motivation high during the process."],
     relatedCalculators: ["debt-avalanche", "credit-card-payoff", "budget-planner", "loan-calculator"],
+    citations: ["CFPB \u2014 What is the debt snowball method?", "Federal Reserve \u2014 Consumer Credit: Debt Repayment Strategies", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `The Debt Snowball Method calculator helps you prioritize debt repayment by ordering debts from smallest to largest balance, regardless of interest rate, to build momentum through quick wins.`,
+    keyTakeaways: ["The debt snowball method focuses on paying off the smallest debt first while making minimum payments on others.", "This approach can provide psychological motivation by creating a sense of accomplishment with each paid-off debt.", "It is distinct from the debt avalanche method, which targets debts with the highest interest rates first.", "Using a debt snowball calculator can help you create a personalized payoff timeline and track progress."],
   },
 
   "debt-to-income": {
@@ -400,6 +505,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Gross monthly income before taxes", "Monthly mortgage or rent payments", "Recurring credit card minimum payments", "Auto loan and student loan installments", "Other personal loan obligations"],
     tips: ["Include only your minimum monthly debt payments rather than the total outstanding balance.", "Aim to keep your DTI ratio below 36% to improve your chances of qualifying for prime interest rates.", "Use the calculator to simulate how paying off a small loan early will improve your ratio before applying for a mortgage.", "Always use your gross income (before tax deductions) to ensure your calculation aligns with lender standards."],
     relatedCalculators: ["mortgage-affordability", "budget-planner", "debt-snowball", "loan-calculator"],
+    citations: ["CFPB \u2014 What is a debt-to-income ratio? Why is it important?", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A debt-to-income (DTI) ratio calculator compares your total monthly debt payments to your gross monthly income, helping lenders and individuals assess borrowing capacity and financial health.`,
+    keyTakeaways: ["A DTI ratio below 36% is generally considered healthy by lenders, with no more than 28% going to housing costs.", "Lenders use DTI to evaluate mortgage eligibility; a higher ratio may result in higher interest rates or loan denial.", "To lower your DTI, you can increase income, pay down debt, or avoid taking on new monthly obligations.", "Your DTI does not include variable expenses like utilities or groceries, only recurring debt payments."],
   },
 
   "discount-calculator": {
@@ -411,6 +519,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Original retail price of the item", "Discount percentage rate", "Additional sales tax applied to the discounted price", "Quantity of items being purchased"],
     tips: ["Always confirm if the discount applies to the pre-tax or post-tax price before finalizing your budget.", "Use this calculator to compare the value of different promotions, such as '15% off' versus '$20 off'.", "Keep track of your total savings over a month to see how much your discount hunting contributes to your overall financial health."],
     relatedCalculators: ["budget-planner", "tax-calculator", "roi-calculator"],
+    citations: ["CFPB \u2014 Understanding discounts and sales promotions", "Federal Trade Commission \u2014 Consumer information on sales and discounts", "IRS Publication 463 \u2014 Travel, gift, and car expenses (for business discount considerations)"],
+    definition: `A discount calculator determines the reduced price of an item by applying a percentage or fixed discount to the original price, showing the amount saved and the final cost.`,
+    keyTakeaways: ["A discount calculator helps you quickly find the sale price after applying a percentage or fixed discount.", "It shows both the amount saved and the final cost, making it easy to compare deals.", "Using a discount calculator can help you make informed purchasing decisions and stick to your budget.", "Always verify the discount terms, as some offers may have exclusions or minimum purchase requirements."],
   },
 
   "dividend-calculator": {
@@ -422,6 +533,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial investment amount", "Annual dividend yield percentage", "Expected dividend growth rate", "Time horizon in years", "Impact of dividend reinvestment (DRIP)"],
     tips: ["Use conservative growth estimates to avoid overestimating your future returns.", "Factor in potential tax implications on dividends depending on your account type.", "Experiment with different contribution frequencies to see how regular additions accelerate growth.", "Check your projected yield on cost to evaluate the long-term effectiveness of your dividend strategy."],
     relatedCalculators: ["compound-interest", "investment-return", "retirement-planning", "future-value"],
+    citations: ["IRS Publication 550 \u2014 Investment Income and Expenses", "SEC \u2014 Investor.gov: Dividends", "Federal Reserve \u2014 The Role of Dividends in Stock Returns"],
+    definition: `A dividend calculator estimates the income generated from dividend-paying stocks or funds by factoring in the initial investment, dividend yield, and reinvestment frequency to project future returns.`,
+    keyTakeaways: ["Dividend calculators help investors project potential income streams from dividend-paying assets over time.", "The accuracy of a dividend calculator depends on the dividend yield remaining constant, which may not reflect real market conditions.", "Reinvesting dividends can significantly compound returns, as shown by the calculator's long-term projections.", "Investors should use dividend calculators as one tool among many for financial planning, considering taxes and fees."],
   },
 
   "dollar-cost-average": {
@@ -433,6 +547,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total capital invested over time", "Number of shares acquired in each transaction", "Market price volatility during purchase periods", "Transaction fees or brokerage commissions"],
     tips: ["Include brokerage fees in your total investment cost for a more accurate reflection of your profit margins.", "Use this calculator periodically as you add to your position to track how your average price moves relative to the current market price.", "Compare your average cost against current market prices to determine if your investment is currently in a profit or loss position."],
     relatedCalculators: ["investment-return", "roi-calculator", "compound-interest", "capital-gains-tax"],
+    citations: ["CFPB \u2014 Dollar Cost Averaging Definition and Overview", "Federal Reserve \u2014 The Impact of Dollar Cost Averaging on Investment Returns", "IRS \u2014 Investment Strategies and Tax Implications of Periodic Investing"],
+    definition: `Dollar cost averaging is an investment strategy where you invest a fixed amount of money at regular intervals, regardless of the asset's price, which can reduce the impact of market volatility by buying more shares when prices are low and fewer when prices are high.`,
+    keyTakeaways: ["Dollar cost averaging helps reduce the risk of investing a large lump sum at a market peak.", "This strategy relies on consistent, periodic investments rather than trying to time the market.", "Dollar cost averaging can lead to a lower average cost per share over time in volatile markets.", "It is most effective for long-term, disciplined investors who can maintain regular contributions."],
   },
 
   "early-retirement": {
@@ -444,6 +561,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual savings rate as a percentage of income", "Estimated annual investment rate of return", "Current total net worth and assets", "Expected annual retirement expenses", "Safe withdrawal rate (typically 3-4%)"],
     tips: ["Run multiple scenarios by adjusting your expected rate of return to account for potential market downturns.", "Be realistic about your post-retirement expenses, as travel or healthcare costs often shift significantly after leaving the workforce.", "Prioritize increasing your savings rate early on to benefit from the compounding effect over a longer time horizon."],
     relatedCalculators: ["retirement-planning", "compound-interest", "investment-return", "net-worth"],
+    citations: ["IRS Publication 590-B \u2014 Distributions from Individual Retirement Arrangements (IRAs)", "CFPB \u2014 What to know about saving for retirement", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households"],
+    definition: `An early retirement calculator estimates the amount of savings and investment returns needed to fund living expenses from a retirement age before the traditional 65, factoring in longer withdrawal periods and potential penalties.`,
+    keyTakeaways: ["The 4% rule is a common starting point for estimating sustainable withdrawal rates from retirement savings.", "Early retirees must plan for healthcare costs before Medicare eligibility at age 65.", "Accessing retirement accounts like 401(k)s before age 59\u00bd may incur a 10% early withdrawal penalty unless exceptions apply.", "Sequence of returns risk is a significant concern for early retirees, as market downturns early in retirement can deplete savings faster."],
   },
 
   "effective-tax-rate": {
@@ -455,6 +575,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total gross annual income", "Total tax liability (Federal, State, and Local)", "Tax deductions and exemptions", "Available tax credits"],
     tips: ["Always use your total income before taxes, not your take-home pay, to get an accurate representation.", "Include all tax types\u2014federal, state, and local\u2014to see your true overall tax burden.", "Re-run the calculation after adjusting your 401(k) or IRA contributions to see how much you can effectively lower your rate."],
     relatedCalculators: ["tax-calculator", "capital-gains-tax", "budget-planner", "retirement-planning"],
+    citations: ["IRS Publication 17 \u2014 Your Federal Income Tax", "IRS \u2014 Tax Statistics: Individual Income Tax Returns", "CFPB \u2014 Understanding Tax Rates"],
+    definition: `The Effective Tax Rate Calculator estimates the average rate at which an individual or corporation is taxed on their total income, calculated as total tax paid divided by total taxable income.`,
+    keyTakeaways: ["The effective tax rate is the average percentage of income paid in taxes, unlike the marginal tax rate which applies to the last dollar earned.", "This calculator can help you understand your true tax burden and compare it across different income levels or tax years.", "Effective tax rates are often lower than marginal rates due to deductions, credits, and progressive tax brackets.", "Knowing your effective tax rate is useful for financial planning, such as estimating tax liability for investment decisions."],
   },
 
   "electricity-cost": {
@@ -466,6 +589,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Appliance Wattage (power rating)", "Daily or monthly hours of usage", "Utility company electricity rate per kWh", "Energy efficiency ratings of the device"],
     tips: ["Check the appliance label or manual for the exact wattage if it is not explicitly listed.", "Use your most recent utility bill to find the exact rate per kilowatt-hour you are currently paying.", "Consider calculating costs for standby power usage, as many electronics draw energy even when turned off."],
     relatedCalculators: ["budget-planner", "inflation-calculator", "savings-goal"],
+    citations: ["U.S. Energy Information Administration \u2014 Electricity Data and Rates by State", "Federal Trade Commission \u2014 EnergyGuide Labels for Appliance Energy Use", "U.S. Department of Energy \u2014 Estimating Appliance and Home Electronic Energy Use"],
+    definition: `An Electricity Cost Calculator estimates the cost of running an electrical appliance based on its wattage, hours of use, and your local electricity rate, helping you budget for energy expenses.`,
+    keyTakeaways: ["To use the calculator, you need the appliance's wattage, average daily usage in hours, and your electricity rate per kilowatt-hour.", "The formula is: (Wattage \u00d7 Hours Used Per Day) \u00f7 1000 = Daily Kilowatt-hour (kWh) consumption, then multiply by your rate.", "Knowing your appliance costs can help you identify energy hogs and reduce your electricity bill.", "The U.S. Energy Information Administration provides average electricity rates by state for accurate calculations."],
   },
 
   "em-fund": {
@@ -477,6 +603,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total mandatory monthly living expenses", "Current job stability and industry volatility", "Number of dependents relying on your income", "Insurance coverage levels for health and home", "Availability of other liquid assets"],
     tips: ["Start by funding a 'mini' emergency fund of $1,000 before tackling larger financial goals.", "Re-evaluate your target amount at least once a year or whenever you experience a major life change.", "Keep your emergency fund in a separate, accessible high-yield savings account to prevent accidental spending.", "Include only non-negotiable expenses like housing, food, and utilities, excluding luxury spending."],
     relatedCalculators: ["budget-planner", "savings-goal", "debt-snowball", "net-worth"],
+    citations: ["CFPB \u2014 Building an emergency fund", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 970 \u2014 Tax Benefits for Education"],
+    definition: `An emergency fund calculator estimates the amount of money you should set aside to cover essential living expenses for a period of time, typically 3 to 6 months, to prepare for unexpected financial setbacks.`,
+    keyTakeaways: ["An emergency fund should cover 3 to 6 months of essential living expenses, including housing, food, utilities, and insurance.", "Using an emergency fund calculator helps you determine a specific savings target based on your monthly expenses and personal risk factors.", "Regular contributions to an emergency fund can prevent high-interest debt when faced with job loss or medical emergencies.", "The calculator typically asks for your monthly essential costs and desired coverage period to compute your savings goal."],
   },
 
   "estate-tax": {
@@ -488,6 +617,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total gross asset valuation (real estate, cash, stocks, and business interests)", "Current federal and state estate tax exemption thresholds", "Allowable deductions including funeral expenses, debts, and charitable bequests", "Applicable tax rates which may vary significantly by state and federal law"],
     tips: ["Update your calculations annually as asset values fluctuate and tax laws change.", "Include all assets, such as life insurance policies and retirement accounts, as these are often included in the gross estate calculation.", "Consult with a tax professional or estate attorney to verify complex state-specific inheritance tax laws that may apply in addition to federal taxes."],
     relatedCalculators: ["capital-gains-tax", "life-insurance", "retirement-planning", "net-worth"],
+    citations: ["IRS \u2014 Estate Tax", "IRS Publication 559 \u2014 Survivors, Executors, and Administrators", "Federal Register \u2014 Estate Tax Exemption Amounts"],
+    definition: `The Estate Tax Calculator estimates the potential federal estate tax liability on an estate based on its total value, applicable exemptions, and deductions, helping users understand the tax impact on their assets.`,
+    keyTakeaways: ["The federal estate tax exemption for 2025 is $13.99 million per individual, indexed for inflation.", "Only estates exceeding the exemption threshold are subject to federal estate tax, with rates up to 40%.", "Portability allows a surviving spouse to use the deceased spouse's unused exemption amount.", "State estate taxes may apply separately, with lower exemption thresholds in some states."],
   },
 
   "fha-loan": {
@@ -499,6 +631,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Down payment percentage", "Mortgage Insurance Premium (MIP) rates", "Loan term duration", "Current interest rates"],
     tips: ["Input your estimated property tax and homeowners insurance figures to get a more accurate 'all-in' monthly payment estimate.", "Experiment with different down payment amounts to see how it impacts your total loan principal and subsequent MIP costs.", "Use the calculator to compare FHA loan costs against conventional loan estimates to see which option is more cost-effective for your financial profile."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "amortization-schedule", "refinance-calculator"],
+    citations: ["CFPB \u2014 What is an FHA loan and what are its requirements?", "HUD \u2014 FHA Mortgage Insurance Premiums", "Federal Reserve \u2014 Mortgage Rate Data and Loan Comparison Tools"],
+    definition: `An FHA loan calculator estimates the monthly payment for a mortgage insured by the Federal Housing Administration, factoring in loan amount, interest rate, term, and required mortgage insurance premiums.`,
+    keyTakeaways: ["FHA loans allow down payments as low as 3.5% for borrowers with credit scores of 580 or higher.", "Borrowers must pay both an upfront mortgage insurance premium (UFMIP) of 1.75% of the loan amount and an annual MIP that varies by loan term and loan-to-value ratio.", "The calculator helps compare total costs of FHA loans versus conventional loans, including the impact of mortgage insurance on monthly payments.", "FHA loan limits vary by county and are updated annually by the Department of Housing and Urban Development (HUD)."],
   },
 
   "fica-calculator": {
@@ -510,6 +645,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Gross annual income", "Social Security wage base limit", "Employment status (W-2 employee vs. self-employed)", "Additional Medicare Tax thresholds for high earners"],
     tips: ["If you are self-employed, remember that you must pay both the employer and employee portions of FICA taxes.", "Check your most recent pay stub to ensure the calculated values align with your actual payroll deductions.", "Use this tool early in the year to adjust your budget if you are approaching the Social Security wage base limit."],
     relatedCalculators: ["tax-calculator", "budget-planner", "social-security", "retirement-planning"],
+    citations: ["IRS \u2014 Publication 15 (Circular E), Employer's Tax Guide", "Social Security Administration \u2014 Contribution and Benefit Base", "IRS \u2014 Topic No. 751 Social Security and Medicare Withholding Rates"],
+    definition: `The FICA Calculator estimates the amount of Social Security and Medicare taxes withheld from an employee's paycheck, based on current tax rates and wage base limits.`,
+    keyTakeaways: ["The FICA tax rate is 7.65% for employees, consisting of 6.2% for Social Security and 1.45% for Medicare.", "Social Security tax applies only up to an annual wage base limit, which is adjusted each year by the Social Security Administration.", "High earners may be subject to an additional 0.9% Medicare surtax on wages exceeding $200,000 for single filers.", "Self-employed individuals pay both the employee and employer portions of FICA taxes, totaling 15.3%."],
   },
 
   "financial-ratios": {
@@ -521,6 +659,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Market price per share", "Net income and earnings per share", "Total liabilities and shareholders' equity", "Industry-specific benchmarks and averages"],
     tips: ["Always compare a company's ratios against its direct competitors within the same industry.", "Look at trends over several years rather than just a single quarter to identify growth patterns.", "Use these ratios as one part of a broader analysis that includes qualitative factors like management quality."],
     relatedCalculators: ["investment-return", "roi-calculator", "net-worth", "irr-calculator"],
+    citations: ["SEC \u2014 Financial Reporting Manual", "Federal Reserve \u2014 Financial Accounts of the United States", "CFPB \u2014 What is a debt-to-income ratio?"],
+    definition: `A financial ratios calculator computes key metrics from financial statements to assess a company's profitability, liquidity, leverage, and efficiency, aiding investment analysis.`,
+    keyTakeaways: ["Financial ratios help investors evaluate a company's financial health and compare it to industry peers.", "Common ratios include the current ratio for liquidity and the debt-to-equity ratio for leverage.", "Profitability ratios like return on equity measure how effectively a company generates profit from shareholder equity.", "Efficiency ratios such as inventory turnover indicate how well a company manages its assets."],
   },
 
   "fraction-calculator": {
@@ -532,6 +673,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Common Denominators: Essential for adding or subtracting fractions accurately.", "Simplification: Reducing fractions to their lowest terms for better readability.", "Mixed Number Conversion: Handling whole numbers combined with fractional parts.", "Arithmetic Operation: Choosing the correct function (add, subtract, multiply, or divide)."],
     tips: ["Always convert mixed numbers into improper fractions before performing complex multiplication or division.", "Use the simplified output to ensure your measurements are easy to read on a standard ruler or measuring tape.", "Double-check your inputs to ensure the numerator and denominator are in the correct fields before hitting calculate."],
     relatedCalculators: ["budget-planner", "roi-calculator", "loan-calculator"],
+    citations: ["CFPB \u2014 Understanding fractions in financial contexts", "Federal Reserve \u2014 Using fractions in interest rate calculations", "IRS \u2014 Fractions in tax forms and schedules"],
+    definition: `A fraction calculator performs arithmetic operations on fractions, including addition, subtraction, multiplication, and division, simplifying results to lowest terms.`,
+    keyTakeaways: ["Fraction calculators can handle proper fractions, improper fractions, and mixed numbers.", "They automatically simplify fractions to their lowest terms.", "Many fraction calculators also convert between fractions and decimals.", "Using a fraction calculator reduces errors in manual fraction arithmetic."],
   },
 
   "fuel-cost": {
@@ -543,6 +687,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Vehicle fuel efficiency (MPG or L/100km)", "Total trip distance", "Current local fuel price", "Driving conditions like traffic and terrain"],
     tips: ["Check your vehicle manual for the most accurate fuel efficiency ratings.", "Adjust your inputs if you anticipate heavy traffic or mountain driving, as these decrease fuel efficiency.", "Use the calculator to compare the cost of taking two different vehicles on the same trip."],
     relatedCalculators: ["budget-planner", "car-affordability", "auto-loan"],
+    citations: ["U.S. Department of Energy \u2014 Fuel Economy Information", "IRS \u2014 Standard Mileage Rates", "Federal Highway Administration \u2014 Vehicle Miles Traveled Data"],
+    definition: `A fuel cost calculator estimates the total cost of fuel for a trip or period by multiplying the distance traveled, fuel efficiency of the vehicle, and current fuel price per unit.`,
+    keyTakeaways: ["Fuel cost calculators help drivers budget for travel by providing a clear estimate of fuel expenses based on distance, vehicle efficiency, and fuel price.", "Using a fuel cost calculator can reveal significant savings by comparing different routes, vehicles, or fuel types.", "Fuel costs are a major variable in overall vehicle ownership expenses, and accurate estimation aids in financial planning.", "Regular use of a fuel cost calculator can encourage more fuel-efficient driving habits and vehicle maintenance."],
   },
 
   "future-value": {
@@ -554,6 +701,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial investment principal", "Periodic contribution amount", "Expected annual interest rate", "Investment duration in years", "Compounding frequency"],
     tips: ["Run multiple scenarios with conservative and aggressive interest rates to see a range of potential outcomes.", "Remember to account for inflation, as the purchasing power of your future total may be lower than its nominal value.", "Use this tool regularly as your income or investment strategy changes to keep your financial plan on track."],
     relatedCalculators: ["compound-interest", "investment-return", "retirement-planning", "savings-goal"],
+    citations: ["CFPB \u2014 What is compound interest and how does it work?", "Federal Reserve \u2014 The Power of Compound Interest", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `A future value calculator estimates the value of an investment at a specific date in the future based on an assumed rate of return, compounding frequency, and periodic contributions.`,
+    keyTakeaways: ["Future value calculations help investors understand how compound interest can grow their savings over time.", "The formula accounts for the initial principal, regular contributions, interest rate, and compounding periods.", "Higher compounding frequencies, such as monthly or daily, can significantly increase the final investment value.", "Future value estimates are sensitive to changes in the assumed rate of return, so using conservative assumptions is recommended."],
   },
 
   "gas-mileage": {
@@ -565,6 +715,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Driving speed and consistency", "Tire pressure and maintenance", "Vehicle weight and cargo load", "Idling time and traffic conditions"],
     tips: ["Always fill your gas tank to the same level each time to ensure the most accurate MPG calculation.", "Reset your trip odometer every time you fill up to keep your distance tracking precise.", "Track your MPG over several tankfuls to get a more reliable average rather than relying on a single trip result."],
     relatedCalculators: ["auto-loan", "car-affordability", "budget-planner", "roi-calculator"],
+    citations: ["EPA \u2014 Fuel Economy and Environment Label", "Department of Energy \u2014 Fuel Economy Information", "IRS \u2014 Standard Mileage Rates"],
+    definition: `The Gas Mileage Calculator estimates fuel efficiency by dividing the distance traveled by the amount of fuel used, typically expressed in miles per gallon (MPG) or liters per 100 kilometers.`,
+    keyTakeaways: ["This calculator helps you determine your vehicle's fuel economy by comparing miles driven to gallons of gas consumed.", "Tracking gas mileage over time can reveal changes in vehicle performance and driving habits.", "Higher MPG means lower fuel costs and reduced environmental impact per mile traveled.", "The calculation is based on odometer readings and fuel purchase records for accuracy."],
   },
 
   "gross-margin": {
@@ -576,6 +729,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Cost of Goods Sold (COGS)", "Total Revenue", "Pricing Strategy", "Production Efficiency"],
     tips: ["Always ensure your COGS figures include all direct costs, such as raw materials and direct labor, to get an accurate reading.", "Compare your calculated margin against industry benchmarks to see how your business performs relative to competitors.", "Use this calculator regularly to monitor the impact of price adjustments or supplier cost changes on your profitability.", "Do not confuse gross margin with net profit margin, as gross margin excludes overhead costs like rent, marketing, and administrative salaries."],
     relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "budget-planner"],
+    citations: ["IRS Publication 535 \u2014 Business Expenses: Cost of Goods Sold", "Federal Reserve \u2014 Financial Accounts of the United States: Corporate Profit Measures", "CFPB \u2014 What is a profit margin?"],
+    definition: `A gross margin calculator determines the percentage of revenue that exceeds the cost of goods sold (COGS), indicating how efficiently a company generates profit from its core operations.`,
+    keyTakeaways: ["Gross margin is calculated by subtracting COGS from revenue and dividing the result by revenue.", "A higher gross margin indicates a company retains more profit per dollar of sales after accounting for production costs.", "Gross margin varies significantly by industry, so comparisons are most meaningful within the same sector.", "Monitoring gross margin trends helps businesses assess pricing strategies and cost control effectiveness."],
   },
 
   "home-equity": {
@@ -587,6 +743,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current Fair Market Value of the property", "Remaining principal balance on all existing mortgages", "Market trends and neighborhood property appreciation", "Outstanding liens or secondary mortgages"],
     tips: ["Use a conservative estimate for your home's value based on recent comparable sales in your area rather than optimistic online listings.", "Be sure to include all outstanding debts secured by the property, such as home equity lines of credit or secondary mortgages, for an accurate result.", "Revisit this calculator annually to track how your equity grows as you make regular mortgage payments."],
     relatedCalculators: ["mortgage-calculator", "refinance-calculator", "net-worth", "loan-calculator"],
+    citations: ["CFPB \u2014 What is home equity and how can you use it?", "Federal Reserve \u2014 Home equity lines of credit", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A home equity calculator estimates the amount of equity a homeowner has in their property by subtracting the outstanding mortgage balance from the current market value of the home, helping users understand their potential borrowing power for loans or lines of credit.`,
+    keyTakeaways: ["Home equity is calculated as the current market value of your home minus any outstanding mortgage balances.", "Lenders typically allow you to borrow up to 80-85% of your home equity through a home equity loan or line of credit.", "Using a home equity calculator can help you determine if you have enough equity to qualify for a loan and how much you might be able to borrow.", "Your home equity can change over time due to market fluctuations and your mortgage payments."],
   },
 
   "home-renovation": {
@@ -598,6 +757,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Material quality and quantity", "Professional labor rates in your local area", "Estimated increase in home appraisal value", "Contingency fund percentage for unexpected repairs"],
     tips: ["Always add a 10-15% contingency buffer to your material costs to cover unforeseen issues.", "Research local property values to ensure your planned renovation doesn't exceed the neighborhood ceiling.", "Consult with a contractor for realistic labor estimates before finalizing your budget."],
     relatedCalculators: ["mortgage-calculator", "roi-calculator", "budget-planner", "refinance-calculator"],
+    citations: ["CFPB \u2014 Home renovation loans and financing options", "Federal Reserve \u2014 Consumer credit and home improvement spending", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A home renovation calculator estimates the total cost of remodeling or upgrading a property by factoring in materials, labor, permits, and other expenses, helping homeowners budget and plan their projects.`,
+    keyTakeaways: ["A home renovation calculator helps estimate total project costs including materials, labor, and permits.", "Proper budgeting with a calculator can prevent overspending and financial strain during renovations.", "Renovation costs can vary widely based on project scope, location, and quality of materials.", "Using a calculator can aid in comparing financing options like home equity loans or personal loans."],
   },
 
   "hourly-to-salary": {
@@ -609,6 +771,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Standard work week duration (usually 40 hours)", "Total number of paid weeks per year", "Overtime pay rates and frequency", "Unpaid time off or vacation periods"],
     tips: ["Always account for unpaid holidays or vacation time to get a more accurate picture of your true yearly income.", "Remember that the result is your gross salary, meaning your actual take-home pay will be lower after taxes and benefit deductions.", "Use this calculator to compare multiple job offers side-by-side to ensure you are making an informed career decision."],
     relatedCalculators: ["tax-calculator", "budget-planner", "net-worth", "savings-goal"],
+    citations: ["Bureau of Labor Statistics \u2014 How to Compute Hourly and Annual Rates of Pay", "IRS Publication 15 (Circular E) \u2014 Employer's Tax Guide for wage and salary reporting", "CFPB \u2014 Understanding your paycheck and salary calculations"],
+    definition: `An Hourly to Salary Converter calculates your annual salary based on your hourly wage and typical work hours per week, assuming a standard 40-hour workweek and 52 weeks per year.`,
+    keyTakeaways: ["To convert hourly pay to annual salary, multiply your hourly rate by the number of hours you work per week, then multiply that by 52 weeks.", "This calculator assumes a standard 40-hour workweek, but you can adjust hours to match your actual schedule for a more accurate estimate.", "Your annual salary does not account for overtime, bonuses, or deductions such as taxes and benefits, which can significantly affect take-home pay.", "Using this tool can help you compare job offers and understand your earning potential in different pay structures."],
   },
 
   "inflation-calculator": {
@@ -620,6 +785,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Average annual inflation rate percentage", "The starting amount of money", "The number of years in the projection period", "Historical Consumer Price Index (CPI) data"],
     tips: ["Use a conservative inflation estimate (such as 3-4%) to ensure you don't underestimate your future costs.", "Run the calculation for different timeframes to see how inflation impacts short-term versus long-term savings goals.", "Compare your results with your projected investment returns to see if your portfolio is actually growing in real terms."],
     relatedCalculators: ["compound-interest", "retirement-planning", "savings-goal", "future-value"],
+    citations: ["Federal Reserve \u2014 Consumer Price Index (CPI) and Inflation Data", "Bureau of Labor Statistics \u2014 CPI Inflation Calculator", "CFPB \u2014 Understanding Inflation and Its Impact on Your Money"],
+    definition: `An inflation calculator measures the change in the purchasing power of money over time by comparing the cost of a fixed basket of goods and services between two dates, typically using the Consumer Price Index (CPI) from the Bureau of Labor Statistics.`,
+    keyTakeaways: ["Inflation calculators use historical CPI data to show how much a dollar amount from a past year is worth in today's dollars.", "The calculator can help you understand how inflation erodes savings, wages, and fixed-income investments over time.", "Comparing nominal returns to inflation-adjusted returns reveals the real growth or loss of your investments.", "Using an inflation calculator can assist in setting realistic financial goals and retirement income targets."],
   },
 
   "inheritance-tax": {
@@ -631,6 +799,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["State-specific inheritance tax laws and exemptions", "The legal relationship between the beneficiary and the deceased", "Total fair market value of the inherited assets", "Applicable tax rate tiers based on the inheritance amount"],
     tips: ["Ensure you verify the specific tax laws of the state where the deceased resided, as inheritance tax is often governed by the decedent's state of domicile.", "Keep detailed records of all inherited assets, as valuation discrepancies can significantly impact your final tax liability.", "Consult with a tax professional or estate attorney, as this calculator provides an estimate and does not account for complex legal trusts or federal estate taxes."],
     relatedCalculators: ["tax-calculator", "capital-gains-tax", "life-insurance", "net-worth"],
+    citations: ["IRS \u2014 Estate and Gift Taxes", "Federal Reserve \u2014 Survey of Consumer Finances", "CFPB \u2014 Inheritance and Estate Planning"],
+    definition: `The Inheritance Tax Calculator estimates the potential tax liability on inherited assets based on state-specific exemption thresholds and tax rates, helping users understand their obligations under applicable inheritance tax laws.`,
+    keyTakeaways: ["Inheritance tax is imposed by certain states on beneficiaries who receive assets from a deceased person's estate, with rates and exemptions varying by state.", "The calculator accounts for state-specific exemption amounts and progressive tax rates to provide an estimate of taxes owed on inherited property.", "Beneficiaries in the highest tax brackets may face rates up to 20% in some states, though many states have no inheritance tax at all.", "Assets left to a surviving spouse or charitable organizations are typically exempt from inheritance tax in most states."],
   },
 
   "insurance-needs": {
@@ -642,6 +813,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual household living expenses and income replacement needs", "Total outstanding debt including mortgages and personal loans", "Future education or major milestone funding requirements", "Current liquid assets, savings accounts, and existing insurance policies", "Final expenses such as funeral costs and estate taxes"],
     tips: ["Re-evaluate your insurance needs at least once every three years or after major life events like marriage, divorce, or the birth of a child.", "Be conservative with your estimates for future inflation and investment returns to ensure your coverage is sufficient.", "Consider including a buffer for emergency expenses to provide extra security for your beneficiaries."],
     relatedCalculators: ["retirement-planning", "budget-planner", "net-worth", "em-fund"],
+    citations: ["CFPB \u2014 What is life insurance and how does it work?", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 525 \u2014 Taxable and Nontaxable Income"],
+    definition: `The Insurance Needs Calculator estimates the amount of life insurance coverage required to financially protect your dependents in the event of your death, based on factors like income, debts, and future expenses.`,
+    keyTakeaways: ["The calculator typically uses a formula that multiplies your annual income by a set number of years to cover lost earnings.", "It accounts for outstanding debts, such as a mortgage or student loans, which would need to be paid off.", "Future expenses like college tuition for children and final funeral costs are also factored into the total coverage estimate.", "Existing savings, investments, and current life insurance policies reduce the total amount of new coverage needed."],
   },
 
   "inventory-turnover": {
@@ -653,6 +827,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Cost of Goods Sold (COGS) accuracy", "Average inventory valuation methods", "Seasonality of the business model", "Industry-specific benchmarks"],
     tips: ["Use average inventory rather than just ending inventory to account for seasonal fluctuations.", "Compare your ratio against industry averages to understand if you are overstocked or understocked.", "Combine this metric with 'Days Sales of Inventory' to better understand the time it takes to move products."],
     relatedCalculators: ["roi-calculator", "budget-planner", "irr-calculator", "npv-calculator"],
+    citations: ["IRS Publication 334 \u2014 Tax Guide for Small Business (Inventory Valuation)", "Federal Reserve \u2014 Small Business Financial Health and Inventory Management", "CFPB \u2014 Managing Business Finances: Inventory and Cash Flow"],
+    definition: `The Inventory Turnover Calculator measures how often a business sells and replaces its stock over a period, indicating efficiency in inventory management and sales performance.`,
+    keyTakeaways: ["A higher inventory turnover ratio typically indicates strong sales and effective inventory management, while a lower ratio may suggest overstocking or weak demand.", "The formula for inventory turnover is Cost of Goods Sold (COGS) divided by Average Inventory for the period.", "Comparing your turnover ratio to industry benchmarks helps assess operational efficiency and identify potential issues with stock levels or purchasing.", "Seasonal businesses may experience fluctuating turnover rates, so analyzing trends over multiple periods provides more accurate insights."],
   },
 
   "investment-return": {
@@ -664,6 +841,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial investment amount", "Final market value of the asset", "Time duration of the investment", "Impact of compounding frequencies"],
     tips: ["Input the exact dates of your investment to ensure the most accurate annualized calculation.", "Use this calculator to compare the performance of different asset classes, such as stocks versus bonds, over the same time period.", "Remember to include any dividends or interest reinvested to get a true picture of your total return."],
     relatedCalculators: ["compound-interest", "roi-calculator", "future-value", "irr-calculator"],
+    citations: ["SEC \u2014 Investor.gov: Compound Interest Calculator & Explanation", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `An investment return calculator estimates the potential growth of an investment over time based on factors like initial principal, additional contributions, expected rate of return, and investment duration.`,
+    keyTakeaways: ["Compounding returns can significantly increase investment value over long periods, even with modest annual contributions.", "The expected rate of return is a critical assumption; historical averages vary by asset class, such as stocks versus bonds.", "Regular contributions, such as monthly deposits, can have a substantial impact on total returns due to dollar-cost averaging.", "Inflation should be considered when evaluating real returns, as it reduces purchasing power over time."],
   },
 
   "irr-calculator": {
@@ -675,6 +855,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial investment amount", "Timing of cash inflows and outflows", "Duration of the investment period", "Reinvestment rate assumptions"],
     tips: ["Always ensure your cash flow entries are accurate to avoid skewed results.", "Compare the calculated IRR against your required rate of return or the inflation rate.", "Use IRR in conjunction with NPV for a more complete picture of investment risk.", "Be aware that IRR assumes cash flows are reinvested at the same internal rate."],
     relatedCalculators: ["npv-calculator", "roi-calculator", "investment-return", "present-value"],
+    citations: ["CFPB \u2014 What is the internal rate of return?", "Federal Reserve \u2014 Discount rate and internal rate of return in investment analysis", "IRS \u2014 Publication 550: Investment Income and Expenses"],
+    definition: `An IRR calculator estimates the internal rate of return, the annualized rate of return at which the net present value of all cash flows from an investment equals zero, used to evaluate investment profitability.`,
+    keyTakeaways: ["IRR is the discount rate that makes the net present value of all cash flows from a project equal to zero, representing the break-even rate of return.", "A higher IRR indicates a more profitable investment, but it should be compared to the cost of capital or required rate of return for decision-making.", "IRR assumes that all intermediate cash flows are reinvested at the same rate, which may not reflect real-world conditions, so it is often used alongside net present value.", "The IRR calculation can produce multiple values if cash flows change direction more than once, leading to potential misinterpretation without careful analysis."],
   },
 
   "lease-vs-buy": {
@@ -686,6 +869,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Depreciation rates of the asset", "Interest rates on financing options", "Estimated residual value at the end of the term", "Mileage limits and lease penalty fees", "Maintenance and insurance cost differences"],
     tips: ["Always factor in the resale value of the vehicle if you decide to buy, as this significantly lowers your net cost.", "Be realistic about your driving habits; if you exceed standard mileage, leasing can become prohibitively expensive due to penalty fees.", "Consider your long-term cash flow needs, as leasing often offers lower monthly payments but results in zero equity at the end of the term."],
     relatedCalculators: ["auto-loan", "car-affordability", "loan-calculator", "budget-planner"],
+    citations: ["CFPB \u2014 Auto Loan vs. Lease Comparison", "IRS Publication 463 \u2014 Car Expenses and Leasing", "Federal Reserve \u2014 Consumer Guide to Vehicle Leasing and Financing"],
+    definition: `A lease vs. buy calculator helps you compare the total costs and financial implications of leasing an asset versus purchasing it, factoring in monthly payments, interest, depreciation, and tax benefits to determine the more cost-effective option.`,
+    keyTakeaways: ["Leasing typically offers lower monthly payments but no ownership equity, while buying builds equity but requires higher upfront costs.", "The total cost of leasing includes depreciation, interest, and fees, whereas buying involves loan interest, maintenance, and resale value.", "Tax deductions may apply differently: lease payments can be deductible for business use, while buying may allow depreciation and interest deductions.", "The best choice depends on your cash flow, how long you plan to use the asset, and your tax situation."],
   },
 
   "lifetime-value": {
@@ -697,6 +883,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Average Purchase Value", "Purchase Frequency", "Customer Lifespan", "Customer Retention Rate"],
     tips: ["Focus on increasing your customer retention rate, as even small improvements significantly boost your total LTV.", "Use this calculator alongside your Customer Acquisition Cost (CAC) to ensure your business remains profitable.", "Segment your customers by behavior to calculate LTV for different tiers rather than relying on a single company-wide average."],
     relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator"],
+    citations: ["CFPB \u2014 Understanding Customer Lifetime Value in Financial Services", "Federal Reserve \u2014 Measuring Customer Profitability and Lifetime Value", "IRS Publication 535 \u2014 Business Expenses and Customer Valuation Methods"],
+    definition: `The LTV Calculator determines the lifetime value of a customer by estimating the total revenue a business can expect from a single customer account throughout the business relationship.`,
+    keyTakeaways: ["Lifetime value (LTV) helps businesses forecast long-term profitability and allocate customer acquisition costs effectively.", "Calculating LTV typically involves average purchase value, purchase frequency, and customer lifespan.", "Higher customer retention rates directly increase LTV, making customer loyalty a key driver of revenue growth.", "Comparing LTV to customer acquisition cost (CAC) provides a critical metric for assessing business sustainability."],
   },
 
   "loan-calculator": {
@@ -708,6 +897,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Principal loan amount", "Annual interest rate", "Loan term duration", "Frequency of compounding interest"],
     tips: ["Always input your interest rate as an annual percentage to get the most accurate monthly breakdown.", "Experiment with shorter loan terms to see how much you can save in total interest payments over the life of the loan.", "Use this tool to compare multiple loan offers from different lenders to identify which option best fits your budget."],
     relatedCalculators: ["mortgage-calculator", "auto-loan", "personal-loan", "amortization-schedule"],
+    citations: ["CFPB \u2014 What is an amortization schedule and how does it work?", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A loan calculator estimates your monthly payment, total interest, and total cost for a loan based on the loan amount, interest rate, and loan term, helping you compare financing options.`,
+    keyTakeaways: ["Loan calculators allow you to adjust loan amount, interest rate, and term to see how each factor affects your monthly payment.", "The total interest paid over the life of a loan can be significantly reduced by making extra principal payments or choosing a shorter term.", "Loan calculators typically show an amortization schedule, breaking down each payment into principal and interest portions.", "Using a loan calculator before applying can help you determine a realistic budget and avoid borrowing more than you can afford."],
   },
 
   "loan-comparison": {
@@ -719,6 +911,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Interest rate (APR)", "Loan term length", "Origination and processing fees", "Total interest paid", "Monthly payment amount"],
     tips: ["Always include one-time fees like origination or documentation charges to get an accurate total cost of the loan.", "Compare loans with the same duration to ensure you are looking at an 'apples-to-apples' financial picture.", "Look at the total cost of borrowing rather than just the monthly payment to avoid extending your debt longer than necessary."],
     relatedCalculators: ["loan-calculator", "mortgage-calculator", "refinance-calculator", "personal-loan"],
+    citations: ["CFPB \u2014 What is the difference between an interest rate and the annual percentage rate (APR)?", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages", "CFPB \u2014 Owning a Home: Compare loan offers"],
+    definition: `A Loan Comparison calculator helps you evaluate different loan offers side-by-side by comparing interest rates, monthly payments, total interest costs, and loan terms to determine the most cost-effective option for your financial situation.`,
+    keyTakeaways: ["Comparing the annual percentage rate (APR) across loans provides a more accurate cost comparison than the interest rate alone.", "A shorter loan term typically results in higher monthly payments but significantly lower total interest paid over the life of the loan.", "Loan comparison should include all fees, such as origination fees and closing costs, to understand the true cost of borrowing.", "Using a loan comparison calculator can help you identify the loan that best fits your budget and long-term financial goals."],
   },
 
   "loan-refinancing": {
@@ -730,6 +925,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current interest rate versus new market rate", "Remaining loan balance and original term length", "Closing costs and origination fees", "Change in total loan duration"],
     tips: ["Always include the closing costs in your calculation to get an accurate breakeven point.", "Compare the total interest paid rather than just focusing on the reduction in monthly payments.", "Use the calculator to test different loan terms to see how extending or shortening your repayment period impacts your budget."],
     relatedCalculators: ["loan-calculator", "amortization-schedule", "personal-loan", "debt-snowball"],
+    citations: ["CFPB \u2014 What is refinancing?", "Federal Reserve \u2014 Refinancing your mortgage", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A loan refinancing calculator helps you compare your current loan terms with potential new ones to estimate monthly payment changes, total interest savings, and the break-even point, enabling an informed decision on whether refinancing is financially beneficial.`,
+    keyTakeaways: ["Refinancing can lower your monthly payment by securing a lower interest rate or extending the loan term.", "The break-even point is the time it takes for monthly savings to cover refinancing costs, typically 2-5 years.", "Total interest savings depend on the difference between old and new rates, loan balance, and remaining term.", "Refinancing to a shorter term can increase monthly payments but significantly reduce total interest paid over the loan's life."],
   },
 
   "margin-calculator": {
@@ -741,6 +939,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Cost of Goods Sold (COGS)", "Total Revenue", "Gross Profit Amount", "Pricing Strategy"],
     tips: ["Always distinguish between profit margin and markup, as they are calculated differently and serve different purposes.", "Regularly update your COGS to account for fluctuations in supplier pricing or shipping costs.", "Use this calculator before launching new products to set competitive yet profitable price points."],
     relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "budget-planner"],
+    citations: ["CFPB \u2014 Understanding Business Profit and Loss", "IRS Publication 334 \u2014 Tax Guide for Small Business", "Federal Reserve \u2014 Small Business Profitability and Pricing"],
+    definition: `A margin calculator is a financial tool that determines the profit margin on a product or service by subtracting the cost of goods sold from the selling price and dividing the result by the selling price. It helps businesses set pricing strategies and assess profitability.`,
+    keyTakeaways: ["A margin calculator computes the percentage of revenue that exceeds the cost of goods sold, indicating profit efficiency.", "Using a margin calculator can help businesses optimize pricing by ensuring prices cover costs and generate desired profits.", "Regular use of a margin calculator supports financial planning and helps identify areas for cost reduction.", "Accurate margin calculations are essential for comparing profitability across different products or services."],
   },
 
   "marginal-tax-rate": {
@@ -752,6 +953,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Filing status (single, married filing jointly, etc.)", "Total annual taxable income from all sources", "State and local tax jurisdictions", "Applicable tax deductions and credits"],
     tips: ["Always input your total household income, not just your base salary, to get an accurate bracket estimate.", "Use this tool before making major financial decisions, such as selling investments or taking a new job, to understand the net impact.", "Remember that your marginal rate is often higher than your effective (average) tax rate."],
     relatedCalculators: ["tax-calculator", "capital-gains-tax", "budget-planner", "retirement-planning"],
+    citations: ["IRS \u2014 Tax Brackets and Rates", "Federal Reserve \u2014 The Concept of Marginal Tax Rates", "CFPB \u2014 Understanding Tax Brackets and Marginal Rates"],
+    definition: `A marginal tax rate calculator estimates the tax rate applied to each additional dollar of income, showing how much of your next dollar earned will be taxed based on current federal income tax brackets.`,
+    keyTakeaways: ["The marginal tax rate is the rate paid on the last dollar of income, not the average rate on all income.", "Knowing your marginal tax rate helps in financial planning, such as deciding whether to take on extra work or make deductible contributions.", "The calculator uses your taxable income and filing status to determine which tax bracket you fall into.", "Marginal tax rates are progressive, meaning higher income portions are taxed at higher rates."],
   },
 
   "markup-calculator": {
@@ -763,6 +967,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Cost of Goods Sold (COGS)", "Desired Profit Margin", "Market Competition and Demand", "Operating Expenses and Overhead"],
     tips: ["Always account for hidden costs like shipping, packaging, and transaction fees when determining your total cost.", "Regularly review your markup strategy to ensure it aligns with changing market trends and supplier price fluctuations.", "Don't confuse markup with profit margin; markup is added to the cost, whereas margin is the percentage of the final selling price that is profit."],
     relatedCalculators: ["roi-calculator", "npv-calculator", "irr-calculator", "budget-planner"],
+    citations: ["IRS Publication 946 \u2014 How To Depreciate Property, which discusses cost basis and asset valuation relevant to pricing.", "CFPB \u2014 Small Business Lending and Pricing Guidance, which highlights the importance of accurate cost and price calculations for financial health.", "Federal Reserve \u2014 Small Business Finance and Pricing Strategies, which covers markup and margin concepts for business sustainability."],
+    definition: `A markup calculator determines the selling price of a product by adding a specific percentage (the markup) to its cost, helping businesses set prices that cover expenses and generate profit.`,
+    keyTakeaways: ["Markup is calculated as a percentage of the cost, while margin is a percentage of the selling price, and confusing the two can lead to pricing errors.", "Using a markup calculator helps ensure consistent pricing across products and can improve profitability by accounting for all costs.", "Many small businesses use a standard markup percentage, but adjusting markup based on market demand and competition can optimize sales.", "Accurate markup calculations are essential for financial planning and can help businesses avoid underpricing or overpricing their products."],
   },
 
   "monte-carlo-simulation": {
@@ -774,6 +981,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Expected annual rate of return", "Portfolio standard deviation (volatility)", "Time horizon for the investment", "Annual contributions or withdrawal amounts"],
     tips: ["Run the simulation with different volatility settings to see how your portfolio behaves in both bull and bear markets.", "Use conservative estimates for returns to avoid over-optimistic planning.", "Focus on the 'probability of success' percentage rather than just the average projected outcome."],
     relatedCalculators: ["retirement-planning", "investment-return", "401k-calculator", "future-value"],
+    citations: ["CFPB \u2014 Monte Carlo Simulation for Retirement Planning", "Federal Reserve \u2014 Using Monte Carlo Methods in Financial Risk Assessment", "IRS Publication 590-A \u2014 Contributions to Individual Retirement Arrangements (IRAs)"],
+    definition: `A Monte Carlo simulation is a computational technique that uses repeated random sampling to model the probability of different outcomes in an investment portfolio, accounting for market volatility and uncertainty.`,
+    keyTakeaways: ["Monte Carlo simulations run thousands of hypothetical market scenarios to estimate the range of possible portfolio outcomes over time.", "This method helps investors assess the likelihood of achieving specific financial goals, such as retirement savings targets.", "The simulation incorporates factors like asset allocation, expected returns, and volatility to generate a probability distribution of outcomes.", "Results are typically presented as a range of possible ending portfolio values, highlighting best-case, worst-case, and median scenarios."],
   },
 
   "mortgage-affordability": {
@@ -785,6 +995,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Gross monthly income", "Existing monthly debt obligations", "Down payment amount", "Current mortgage interest rates", "Property taxes and homeowners insurance"],
     tips: ["Include all recurring monthly debts, such as credit card minimums and car loans, for the most accurate result.", "Consider the 'hidden' costs of homeownership like maintenance, utilities, and HOA fees that aren't included in the principal and interest payment.", "Try testing different down payment amounts to see how increasing your initial investment impacts your long-term affordability."],
     relatedCalculators: ["mortgage-calculator", "budget-planner", "loan-calculator", "amortization-schedule"],
+    citations: ["CFPB \u2014 What is a debt-to-income ratio? Why is the 43% threshold important?", "Federal Reserve \u2014 How does a down payment affect your mortgage?", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A mortgage affordability calculator estimates the maximum home price you can afford based on your income, debts, down payment, and current interest rates, using standard debt-to-income ratios.`,
+    keyTakeaways: ["Most lenders cap your total monthly debt payments, including the mortgage, at 43% of your gross monthly income.", "A larger down payment reduces your loan amount and may eliminate the need for private mortgage insurance.", "Your credit score directly affects the interest rate you qualify for, which impacts your monthly payment and overall affordability.", "Using a conservative budget that accounts for property taxes, insurance, and maintenance helps prevent becoming house-poor."],
   },
 
   "mortgage-calculator": {
@@ -796,6 +1009,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Loan principal amount", "Annual interest rate", "Loan term length (e.g., 15 or 30 years)", "Property taxes and homeowners insurance", "Down payment size"],
     tips: ["Experiment with different down payment amounts to see how they reduce your monthly obligation.", "Include your estimated property tax and insurance costs to get a true 'PITI' monthly payment figure.", "Use the calculator to compare 15-year versus 30-year loan terms to understand the trade-off between monthly cost and total interest paid."],
     relatedCalculators: ["mortgage-affordability", "refinance-calculator", "amortization-schedule", "budget-planner"],
+    citations: ["CFPB \u2014 Understanding mortgage payments and how to use a mortgage calculator", "Federal Reserve \u2014 Consumer Guide to Mortgage Calculations and Costs", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A mortgage calculator estimates monthly payments for a home loan by factoring in the principal amount, interest rate, loan term, taxes, insurance, and sometimes PMI, helping borrowers understand total housing costs.`,
+    keyTakeaways: ["A mortgage calculator can show how different interest rates affect your monthly payment and total loan cost.", "Including property taxes and homeowners insurance in the calculation provides a more accurate estimate of your monthly housing expense.", "A shorter loan term, such as 15 years, typically results in higher monthly payments but significantly less total interest paid over the life of the loan.", "Making a larger down payment reduces the loan principal and can eliminate the need for private mortgage insurance (PMI), lowering monthly costs."],
   },
 
   "mortgage-payoff": {
@@ -807,6 +1023,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current remaining principal balance", "Annual interest rate", "Amount of additional monthly payments", "Remaining loan term in years"],
     tips: ["Always verify with your lender that extra payments are applied specifically to the principal balance rather than being held for future interest.", "Use the calculator to test 'what-if' scenarios, such as making a larger one-time payment versus smaller recurring monthly additions.", "Consider the opportunity cost of your money; ensure that paying off your mortgage early provides a better return than investing those same funds in the stock market."],
     relatedCalculators: ["mortgage-calculator", "refinance-calculator", "amortization-schedule", "debt-avalanche"],
+    citations: ["CFPB \u2014 Mortgage payoff and extra payment guidance", "Federal Reserve \u2014 Consumer guide to mortgage payments", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A mortgage payoff calculator estimates the impact of making extra payments on your mortgage, showing how additional principal payments can reduce the total interest paid and shorten the loan term.`,
+    keyTakeaways: ["Extra principal payments can significantly reduce the total interest paid over the life of a mortgage.", "Making even one extra payment per year can shorten a 30-year mortgage by several years.", "Paying off a mortgage early may affect your tax situation, as mortgage interest deductions may be reduced.", "Check with your lender for any prepayment penalties before making additional payments."],
   },
 
   "moving-cost": {
@@ -818,6 +1037,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Distance between your old and new residence", "Volume and weight of your household belongings", "Professional labor versus DIY moving methods", "Timing of the move (peak season vs. off-peak)", "Cost of specialized packing materials and insurance"],
     tips: ["Always add a 10-15% buffer to your final estimate to cover unforeseen expenses like tolls or last-minute supply needs.", "Compare quotes from at least three different moving companies to ensure you are getting a competitive rate.", "Declutter your home before moving to reduce the volume of items, which can significantly lower your professional moving costs."],
     relatedCalculators: ["budget-planner", "em-fund", "mortgage-affordability", "personal-loan"],
+    citations: ["Federal Motor Carrier Safety Administration (FMCSA) \u2014 Moving Tips and Resources", "IRS Publication 521 \u2014 Moving Expenses", "Consumer Financial Protection Bureau (CFPB) \u2014 Tips for choosing a moving company"],
+    definition: `A moving cost calculator estimates the total expenses of a residential move, including packing supplies, labor, transportation, and insurance, based on distance and household size.`,
+    keyTakeaways: ["Moving costs average between $800 and $2,500 for local moves and $2,000 to $5,000 for long-distance moves, depending on volume and distance.", "Using a moving cost calculator helps you budget accurately by factoring in hidden fees like packing materials, stair fees, and fuel surcharges.", "Comparing quotes from at least three moving companies can reduce your total moving expenses by up to 30%.", "The IRS allows deductions for moving expenses only for active-duty military members who move due to a permanent change of station."],
   },
 
   "net-profit-margin": {
@@ -829,6 +1051,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Cost of Goods Sold (COGS)", "Operating Expenses and Overhead", "Tax Liabilities", "Interest Payments on Debt", "Total Sales Revenue"],
     tips: ["Compare your margin against industry averages to see if your business is underperforming or outperforming competitors.", "Use accurate data from your latest income statement to ensure the calculation reflects your current financial reality.", "Monitor your net profit margin over multiple periods to identify long-term trends in efficiency and profitability."],
     relatedCalculators: ["roi-calculator", "budget-planner", "tax-calculator", "npv-calculator"],
+    citations: ["IRS \u2014 Publication 334: Tax Guide for Small Business", "Federal Reserve \u2014 Financial Accounts of the United States", "CFPB \u2014 Small Business Lending Data Collection"],
+    definition: `A net profit margin calculator computes the percentage of revenue that remains as profit after all expenses, taxes, and costs are deducted, indicating a company's overall profitability.`,
+    keyTakeaways: ["Net profit margin is calculated by dividing net profit by total revenue and multiplying by 100.", "A higher net profit margin indicates a more profitable company that retains more revenue as profit.", "Net profit margin differs from gross profit margin as it accounts for all expenses, including operating costs, interest, and taxes.", "Comparing net profit margins across industries is essential, as margins vary significantly by sector."],
   },
 
   "net-worth": {
@@ -840,6 +1065,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Market value of real estate and personal property", "Total balance of savings and brokerage accounts", "Outstanding mortgage and consumer debt balances", "Retirement account contributions and vested benefits"],
     tips: ["Update your entries at least once every quarter to track trends over time.", "Be conservative when estimating the resale value of personal items like vehicles or electronics.", "Include all debt sources, including medical bills and personal loans, to ensure an accurate picture."],
     relatedCalculators: ["budget-planner", "debt-snowball", "retirement-planning", "investment-return"],
+    citations: ["CFPB \u2014 What is net worth and why does it matter?", "Federal Reserve \u2014 Survey of Consumer Finances (SCF)", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A net worth calculator subtracts your total liabilities (debts) from your total assets to determine your financial wealth at a specific point in time.`,
+    keyTakeaways: ["Net worth is calculated by subtracting total liabilities from total assets, providing a snapshot of financial health.", "Tracking net worth over time helps measure progress toward financial goals like retirement or debt reduction.", "Assets include cash, investments, property, and retirement accounts, while liabilities cover mortgages, loans, and credit card debt.", "A positive net worth indicates assets exceed liabilities, while a negative net worth signals more debt than assets."],
   },
 
   "npv-calculator": {
@@ -851,6 +1079,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial investment cost", "Estimated future cash flows", "Discount rate (cost of capital)", "Time horizon of the project"],
     tips: ["Ensure your discount rate reflects the true opportunity cost of your capital.", "Be conservative with your cash flow projections to avoid overestimating returns.", "Use this calculator alongside the IRR calculator for a more complete picture of investment performance."],
     relatedCalculators: ["irr-calculator", "roi-calculator", "present-value", "investment-return"],
+    citations: ["Federal Reserve \u2014 The Discount Rate and Time Value of Money", "CFPB \u2014 Understanding Net Present Value in Investment Decisions", "IRS Publication 535 \u2014 Business Expenses and Capitalization"],
+    definition: `The NPV (Net Present Value) Calculator determines the current value of a series of future cash flows by discounting them at a specified rate, helping investors evaluate the profitability of an investment.`,
+    keyTakeaways: ["Net Present Value (NPV) is the sum of all future cash flows, both incoming and outgoing, discounted back to their present value.", "A positive NPV indicates that the projected earnings exceed the anticipated costs, suggesting a profitable investment.", "The discount rate used in NPV calculations reflects the time value of money and the risk associated with the investment.", "NPV is a core tool in capital budgeting and investment analysis, allowing comparison of projects with different cash flow patterns."],
   },
 
   "operating-margin": {
@@ -862,6 +1093,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Cost of Goods Sold (COGS)", "Operating Expenses (SG&A)", "Total Net Revenue", "Operational Efficiency"],
     tips: ["Always use consistent time periods, such as a single fiscal quarter or year, for both revenue and expenses to ensure accuracy.", "Compare your operating margin against industry benchmarks to see if your performance is competitive.", "Exclude non-operating items like interest payments or one-time tax gains to get a true picture of core business performance."],
     relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "budget-planner"],
+    citations: ["SEC \u2014 Operating Income and Margin Definition", "IRS Publication 535 \u2014 Business Expenses", "Federal Reserve \u2014 Financial Performance Reports"],
+    definition: `An operating margin calculator measures a company's operating profitability by dividing its operating income (earnings before interest and taxes) by its net sales, expressed as a percentage.`,
+    keyTakeaways: ["Operating margin shows how much profit a company makes from its core operations per dollar of sales, excluding interest and taxes.", "A higher operating margin indicates better cost control and operational efficiency relative to revenue.", "Operating margin is distinct from net profit margin because it excludes non-operating expenses like interest and taxes.", "Comparing operating margins within the same industry provides insight into relative competitive performance."],
   },
 
   "option-profit": {
@@ -873,6 +1107,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Strike Price", "Option Premium Cost", "Underlying Asset Price", "Time to Expiration", "Implied Volatility"],
     tips: ["Always account for trading commissions and fees to get a more accurate picture of your net profit.", "Use the calculator to model 'worst-case' scenarios to ensure your risk tolerance is not exceeded.", "Remember that options are time-sensitive assets, so monitor the impact of theta decay as you approach the expiration date."],
     relatedCalculators: ["investment-return", "roi-calculator", "capital-gains-tax", "future-value"],
+    citations: ["CFPB \u2014 Options Trading Risks and Disclosures", "Federal Reserve \u2014 Understanding Options Contracts", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `An Option Profit Calculator estimates the potential profit or loss of an options trade at expiration based on the underlying asset's price, strike price, premium, and contract type (call or put).`,
+    keyTakeaways: ["Option profit calculations depend on the difference between the underlying asset's price at expiration and the strike price, minus the premium paid.", "Call options profit when the underlying price exceeds the strike price plus the premium, while put options profit when it falls below the strike price minus the premium.", "The calculator helps traders visualize break-even points and maximum loss scenarios for single or multi-leg strategies.", "Options trading involves significant risk, and profit calculations assume no early assignment or transaction costs."],
   },
 
   "overtime-calculator": {
@@ -884,6 +1121,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Standard hourly wage", "Number of overtime hours worked", "Overtime multiplier (e.g., 1.5x or 2.0x)", "State and federal labor regulations"],
     tips: ["Check your employment contract to confirm if your overtime applies after 40 hours or after 8 hours in a single day.", "Remember to input your gross hourly rate before taxes to get an accurate calculation of your total overtime earnings.", "Use this tool to compare your calculated results against your pay stub to ensure payroll accuracy."],
     relatedCalculators: ["budget-planner", "tax-calculator", "net-worth"],
+    citations: ["U.S. Department of Labor \u2014 Overtime Pay under the Fair Labor Standards Act (FLSA)", "IRS Publication 15 (Circular E) \u2014 Employer's Tax Guide", "CFPB \u2014 Wage and Hour Laws"],
+    definition: `An overtime calculator determines the additional pay owed to an employee for hours worked beyond the standard 40-hour workweek, typically at a rate of 1.5 times the regular hourly wage, in accordance with the Fair Labor Standards Act.`,
+    keyTakeaways: ["Overtime pay is generally calculated at 1.5 times the employee's regular hourly rate for hours worked over 40 in a workweek.", "The Fair Labor Standards Act (FLSA) requires overtime pay for most non-exempt employees, but exempt employees, such as certain salaried managers, may not qualify.", "Accurate overtime calculation helps employers comply with federal and state labor laws and avoid wage and hour disputes.", "Using an overtime calculator simplifies payroll processing by automatically computing gross pay including overtime premiums."],
   },
 
   "payback-period": {
@@ -895,6 +1135,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial cost of the investment", "Estimated annual cash inflows", "Consistency of cash flow streams", "Projected maintenance or operating costs"],
     tips: ["Use conservative cash flow estimates to avoid overestimating your speed of recovery.", "Consider the project's total lifespan to ensure the payback period occurs well before the investment becomes obsolete.", "Use this in conjunction with other metrics like NPV to account for the time value of money."],
     relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "investment-return"],
+    citations: ["CFPB \u2014 Understanding Investment Returns and Payback Periods", "Federal Reserve \u2014 Investment Analysis and Capital Budgeting Techniques", "IRS Publication 535 \u2014 Business Expenses and Capital Cost Recovery"],
+    definition: `The Payback Period Calculator determines how long it takes for an investment to generate enough cash flow to recover its initial cost, providing a simple measure of liquidity and risk.`,
+    keyTakeaways: ["A shorter payback period indicates lower risk and faster recovery of the initial investment.", "The payback period ignores the time value of money and cash flows beyond the payback point.", "This metric is often used alongside net present value or internal rate of return for a more comprehensive investment analysis.", "Payback period is especially useful for evaluating projects with high uncertainty or rapid technological change."],
   },
 
   "paycheck-calculator": {
@@ -906,6 +1149,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Gross annual salary or hourly wage", "Federal and state tax filing status", "Pre-tax deductions like 401(k) or health insurance", "FICA tax requirements (Social Security and Medicare)", "State and local income tax rates"],
     tips: ["Always update your calculator inputs whenever you receive a raise or change your tax withholding status.", "Include all employer-sponsored benefit contributions to get the most accurate reflection of your actual cash flow.", "Use the results to build a realistic monthly budget that accounts for your true net income rather than your gross salary."],
     relatedCalculators: ["budget-planner", "tax-calculator", "401k-calculator", "savings-goal"],
+    citations: ["IRS Publication 15 (Circular E) \u2014 Employer's Tax Guide", "CFPB \u2014 Understanding Your Paycheck", "Social Security Administration \u2014 How Your Paycheck is Calculated"],
+    definition: `A paycheck calculator estimates the net pay an employee receives after deductions such as federal and state taxes, Social Security, Medicare, and other withholdings, based on gross income and filing status.`,
+    keyTakeaways: ["A paycheck calculator helps you determine your take-home pay by accounting for federal and state income taxes, FICA, and other deductions.", "Using a paycheck calculator can assist in budgeting and financial planning by providing an accurate estimate of net income.", "Employers use paycheck calculators to ensure correct withholding amounts for tax compliance and employee satisfaction.", "Paycheck calculators can factor in pre-tax deductions like retirement contributions and health insurance premiums."],
   },
 
   "pension-calculator": {
@@ -917,6 +1163,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total years of creditable service", "Final average salary or career-highest earnings", "The pension plan's specific accrual rate percentage", "Retirement age and potential early-withdrawal penalties"],
     tips: ["Verify your specific pension plan's accrual rate in your employee handbook or HR portal.", "Run multiple scenarios to see the impact of retiring one or two years later than planned.", "Account for inflation when projecting the purchasing power of your future monthly payments.", "Use this calculator in conjunction with your Social Security statement for a complete retirement picture."],
     relatedCalculators: ["retirement-planning", "social-security", "401k-calculator", "inflation-calculator"],
+    citations: ["IRS Publication 575 \u2014 Pension and Annuity Income", "CFPB \u2014 What is a pension and how does it work?", "Federal Reserve \u2014 Retirement planning and defined benefit plans"],
+    definition: `A pension calculator estimates the monthly retirement income you will receive from a defined-benefit pension plan based on factors like your salary, years of service, and retirement age.`,
+    keyTakeaways: ["A pension calculator helps you estimate your monthly retirement income from a defined-benefit plan.", "Key inputs typically include your current salary, years of service, and expected retirement age.", "The calculation often uses a formula that multiplies your years of service by a percentage of your average salary.", "Understanding your estimated pension benefit can help you plan for other retirement savings needs."],
   },
 
   "percentage-calculator": {
@@ -928,6 +1177,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["The total base value (the whole)", "The specific portion or value being analyzed", "The rate or percentage value to be applied", "Whether you are calculating an increase or a decrease"],
     tips: ["Double-check your decimal placement to ensure accuracy, especially when dealing with small percentages.", "Use this tool to compare percentage discounts across different stores to find the best deal.", "Apply this to your monthly budget to see exactly what percentage of your income goes toward debt versus savings."],
     relatedCalculators: ["budget-planner", "roi-calculator", "investment-return", "tax-calculator"],
+    citations: ["Consumer Financial Protection Bureau \u2014 Understanding APR and interest rates", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A percentage calculator is a tool that computes percentages, such as finding a percentage of a number, determining what percent one number is of another, or calculating percentage change, by performing arithmetic operations based on user input.`,
+    keyTakeaways: ["Percentage calculators simplify tasks like computing discounts, tips, taxes, and interest rates by automating percentage-based math.", "They can calculate the percentage of a given number, find what percent one value represents of another, and determine percentage increase or decrease.", "These tools are widely used in finance for budgeting, loan calculations, and investment analysis, ensuring accuracy and saving time.", "Understanding percentage calculations is essential for interpreting financial data, such as interest rates on savings accounts or credit card APRs."],
   },
 
   "perpetuity-calculator": {
@@ -939,6 +1191,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual Cash Flow amount", "Discount Rate or required rate of return", "Growth Rate of the cash payments", "Time horizon (which is infinite in a perpetuity)"],
     tips: ["Ensure your discount rate is higher than the growth rate, otherwise, the formula will result in a negative or undefined value.", "Use conservative estimates for growth rates to avoid overvaluing an investment.", "Compare the calculated present value against the current market price to identify potential buying opportunities."],
     relatedCalculators: ["present-value", "future-value", "annuity-calculator", "npv-calculator"],
+    citations: ["Federal Reserve \u2014 Understanding the Time Value of Money", "CFPB \u2014 What is a Perpetuity?", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `A perpetuity calculator determines the present value of an infinite stream of equal cash flows, using a fixed discount rate to account for the time value of money.`,
+    keyTakeaways: ["A perpetuity is a financial instrument that pays a fixed amount indefinitely, with no end date.", "The present value of a perpetuity is calculated by dividing the annual payment by the discount rate.", "Perpetuities are commonly used to value preferred stocks, real estate, and certain endowment funds.", "The formula assumes a constant discount rate and equal periodic payments over time."],
   },
 
   "personal-loan": {
@@ -950,6 +1205,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Principal loan amount", "Annual Percentage Rate (APR)", "Loan repayment term (in months or years)", "Origination fees or additional costs"],
     tips: ["Use the calculator to compare monthly payments for both short-term and long-term loans to find the best balance.", "Always check your credit score before applying, as it significantly influences the interest rate you will be offered.", "Factor in any additional origination fees charged by lenders to get a more accurate picture of the total loan cost."],
     relatedCalculators: ["loan-calculator", "debt-snowball", "debt-avalanche", "budget-planner"],
+    citations: ["CFPB \u2014 What to know about personal loans before you apply", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages (applicable to loan amortization concepts)", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction (for context on interest deductions, though not directly for personal loans)"],
+    definition: `A personal loan calculator estimates your monthly payments and total interest costs based on loan amount, interest rate, and term, helping you compare offers and budget effectively.`,
+    keyTakeaways: ["Personal loan calculators help you estimate monthly payments based on loan amount, interest rate, and repayment term.", "They can show total interest paid over the life of the loan, aiding in comparison of different loan offers.", "Using a calculator before applying can help you determine an affordable loan amount and term length.", "Some calculators also include fees or origination costs to provide a more accurate total cost estimate."],
   },
 
   "phone-plan-comparison": {
@@ -961,6 +1219,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Monthly recurring service fees", "One-time activation or setup costs", "Contract duration and early termination fees", "Data allowance versus actual usage needs", "Promotional discounts or equipment credits"],
     tips: ["Check your actual data usage in your phone's settings before selecting a plan tier to avoid paying for data you do not need.", "Include the cost of device insurance or financing fees in your calculation for a more accurate total monthly expense.", "Always factor in the duration of promotional pricing, as many plans increase in cost after the first 6 or 12 months."],
     relatedCalculators: ["budget-planner", "savings-goal", "personal-loan"],
+    citations: ["CFPB \u2014 Consumer guide on mobile phone bills and fees", "Federal Communications Commission (FCC) \u2014 Broadband and phone plan consumer tips", "IRS \u2014 Publication 529 (Miscellaneous Deductions) for business phone expenses"],
+    definition: `A Phone Plan Comparison calculator helps you evaluate different mobile service plans by comparing costs, data allowances, and features to find the most cost-effective option for your usage needs.`,
+    keyTakeaways: ["Phone plan comparison calculators can reveal significant cost differences between prepaid and postpaid plans, often saving users hundreds of dollars annually.", "Comparing plans based on actual data usage rather than advertised speeds helps avoid overpaying for unused capacity.", "Including family or multi-line discounts in the comparison can reduce per-line costs by up to 50% on major carriers.", "Hidden fees, such as activation charges and regulatory costs, should be factored into any plan comparison to get an accurate total cost."],
   },
 
   "pmi-calculator": {
@@ -972,6 +1233,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Credit score impact on insurance premiums", "Loan-to-value (LTV) ratio", "Total loan principal amount", "Type of mortgage loan program"],
     tips: ["Check your lender's specific PMI cancellation policies, as some allow for early removal based on home appreciation.", "Consider making a slightly larger down payment to move closer to the 20% threshold and reduce your insurance rate.", "Use the calculator to determine if making extra principal payments will help you reach the 80% LTV mark faster."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "refinance-calculator", "amortization-schedule"],
+    citations: ["CFPB \u2014 Private Mortgage Insurance (PMI) and how to cancel it", "Federal Reserve \u2014 Mortgage Insurance and Homeownership Costs", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A PMI (Private Mortgage Insurance) calculator estimates the monthly cost of private mortgage insurance required on conventional loans with a down payment of less than 20%, based on loan amount, credit score, and down payment percentage.`,
+    keyTakeaways: ["PMI is typically required when a home buyer puts down less than 20% on a conventional mortgage.", "The annual PMI premium usually ranges from 0.3% to 1.5% of the original loan amount, depending on credit score and loan-to-value ratio.", "PMI can be canceled once the homeowner reaches 20% equity in the property, either through payments or appreciation.", "Using a PMI calculator helps borrowers compare total monthly costs when deciding between a smaller down payment with PMI or a larger down payment without it."],
   },
 
   "portfolio-allocator": {
@@ -983,6 +1247,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Investment time horizon", "Personal risk tolerance", "Expected rate of return", "Asset class correlation", "Current market conditions"],
     tips: ["Rebalance your portfolio at least once a year to ensure your actual allocation still matches your original target.", "Consider your tax situation when rebalancing, as selling assets in taxable accounts may trigger capital gains taxes.", "Use the calculator to stress-test your portfolio against different market scenarios to see how your balance holds up under pressure."],
     relatedCalculators: ["investment-return", "retirement-planning", "roi-calculator", "net-worth"],
+    citations: ["SEC \u2014 Investor.gov: Asset Allocation", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "CFPB \u2014 Investing Basics"],
+    definition: `The Portfolio Allocator calculator helps investors determine the optimal mix of asset classes—such as stocks, bonds, and cash—based on their risk tolerance, investment goals, and time horizon, to maximize returns while managing risk.`,
+    keyTakeaways: ["The Portfolio Allocator calculator uses your risk tolerance and time horizon to suggest a diversified mix of stocks, bonds, and cash.", "A well-diversified portfolio can reduce volatility and improve long-term returns by spreading risk across different asset classes.", "Regularly rebalancing your portfolio back to your target allocation helps maintain your desired risk level and can enhance performance.", "Your optimal allocation should be reviewed and adjusted as your financial goals, time horizon, or risk tolerance change over time."],
   },
 
   "position-sizing": {
@@ -994,6 +1261,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total Account Balance", "Risk Percentage per Trade", "Entry Price of the Asset", "Stop-Loss Price Level"],
     tips: ["Always define your stop-loss level before entering a trade rather than moving it after the fact.", "Stick to a consistent risk percentage, typically between 1% and 2%, to survive long losing streaks.", "Factor in commission costs or slippage if you are trading assets with low liquidity."],
     relatedCalculators: ["investment-return", "roi-calculator", "capital-gains-tax", "net-worth"],
+    citations: ["CFPB \u2014 Managing Investment Risk and Position Sizing", "Federal Reserve \u2014 Principles of Sound Risk Management in Financial Markets", "SEC \u2014 Investor Bulletin: An Introduction to Risk Management in Trading"],
+    definition: `A position sizing calculator helps investors determine the appropriate amount of capital to allocate to a single trade based on account size, risk tolerance, and stop-loss distance, aiming to manage portfolio risk effectively.`,
+    keyTakeaways: ["Position sizing calculators use account equity, risk percentage, and stop-loss distance to compute the number of shares or contracts to trade.", "Proper position sizing is a core component of risk management, helping to limit losses on any single trade to a predefined percentage of total capital.", "These calculators can be applied to stocks, options, futures, and forex to standardize risk across different asset classes.", "Using a position sizing calculator helps traders avoid emotional decision-making and maintain consistency in their trading approach."],
   },
 
   "present-value": {
@@ -1005,6 +1275,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Future Value (the amount you expect to receive later)", "Discount Rate (the expected annual rate of return or interest)", "Time Horizon (the number of years or periods until the payment is received)"],
     tips: ["Use a higher discount rate if you have many alternative high-yield investment opportunities.", "Consider using the inflation rate as your discount rate if you want to see the 'real' purchasing power of the future money.", "Run multiple scenarios with different interest rates to see how sensitive your investment's value is to market changes."],
     relatedCalculators: ["future-value", "npv-calculator", "irr-calculator", "investment-return"],
+    citations: ["Federal Reserve \u2014 The Discount Window and Discount Rate", "CFPB \u2014 What is the time value of money?", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `A present value calculator determines the current worth of a future sum of money or stream of cash flows, given a specified rate of return. It helps investors understand the time value of money by discounting future amounts to their present-day value.`,
+    keyTakeaways: ["The present value calculation is based on the principle that a dollar today is worth more than a dollar in the future due to its potential earning capacity.", "A higher discount rate results in a lower present value, while a lower discount rate increases the present value of future cash flows.", "Present value is crucial for comparing investment opportunities, evaluating bonds, and making informed financial decisions about annuities and retirement planning.", "The formula for present value is PV = FV / (1 + r)^n, where FV is future value, r is the discount rate, and n is the number of periods."],
   },
 
   "property-tax": {
@@ -1016,6 +1289,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Assessed property value", "Local government assessment rate", "Municipal and school district millage rates", "Available homestead exemptions or tax credits"],
     tips: ["Check your local county assessor's website to find the most current millage rates for your specific district.", "Remember to subtract any applicable homestead exemptions from your home's assessed value before applying the tax rate.", "Account for periodic property reassessments, as these can lead to significant changes in your tax liability over time."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "tax-calculator", "budget-planner"],
+    citations: ["IRS Publication 936 \u2014 Home Mortgage Interest Deduction", "CFPB \u2014 What is property tax and how is it calculated?", "Federal Reserve \u2014 Property Taxes and Homeownership"],
+    definition: `A property tax calculator estimates the annual property tax owed on a home based on its assessed value and the local tax rate, helping homeowners budget for this recurring expense.`,
+    keyTakeaways: ["Property tax is typically calculated by multiplying the assessed value of a property by the local millage rate.", "Assessed value may differ from market value, as it is determined by the local tax assessor for tax purposes.", "Property tax rates vary widely by location and are set by local governments to fund schools, infrastructure, and public services.", "Homeowners may be eligible for exemptions or deductions that reduce their taxable property value, such as homestead exemptions."],
   },
 
   "refinance-calculator": {
@@ -1027,6 +1303,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current interest rate vs. new interest rate", "Total closing costs and origination fees", "Remaining loan balance and term length", "Duration of time you plan to stay in the home"],
     tips: ["Always factor in the total closing costs, not just the interest rate reduction.", "Use the break-even point to decide if a refinance is suitable based on your future moving plans.", "Compare the total interest paid over the life of the loan rather than just focusing on lower monthly payments."],
     relatedCalculators: ["mortgage-calculator", "amortization-schedule", "loan-calculator", "mortgage-affordability"],
+    citations: ["CFPB \u2014 What is refinancing and how does it work?", "Federal Reserve \u2014 The Cost of Refinancing a Mortgage", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A refinance calculator estimates potential savings or costs from replacing your current mortgage with a new loan, factoring in interest rates, closing costs, and loan terms.`,
+    keyTakeaways: ["Refinancing can lower your monthly payment if you secure a lower interest rate, but closing costs may offset savings over time.", "The break-even point\u2014when savings exceed refinancing costs\u2014is a key metric for deciding if refinancing is worthwhile.", "Your credit score significantly affects the interest rate you qualify for, impacting potential savings from refinancing.", "Refinancing to a shorter loan term can increase monthly payments but reduce total interest paid over the life of the loan."],
   },
 
   "rent-vs-buy": {
@@ -1038,6 +1317,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Expected home appreciation rate", "Mortgage interest rate and loan term", "Maintenance, property tax, and insurance costs", "Opportunity cost of the down payment", "Duration of time spent in the home"],
     tips: ["Be realistic about maintenance costs, which are often overlooked by first-time buyers.", "Consider your 'time horizon'; buying is usually more cost-effective the longer you plan to live in the home.", "Account for tax deductions, such as mortgage interest, which can lower your effective monthly cost of buying.", "Don't forget to include the projected increase in rent costs over time when comparing against a fixed-rate mortgage."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "budget-planner", "amortization-schedule"],
+    citations: ["CFPB \u2014 Owning a Home: Rent vs. Buy", "Federal Reserve \u2014 Housing Market and Homeownership", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
+    definition: `A rent vs. buy calculator compares the total costs of renting a home versus buying one over a specific time period, factoring in mortgage payments, taxes, insurance, maintenance, and potential appreciation to help users determine which option is more financially advantageous.`,
+    keyTakeaways: ["Rent vs. buy calculators typically consider upfront costs like down payment and closing costs alongside ongoing expenses such as mortgage payments, property taxes, and maintenance.", "The break-even point is the time when buying becomes cheaper than renting, often influenced by home price appreciation and rental inflation rates.", "Tax benefits, including mortgage interest and property tax deductions, can significantly reduce the effective cost of homeownership for those who itemize.", "Renting offers more flexibility and lower short-term costs, while buying builds equity and may provide long-term financial gains."],
   },
 
   "required-minimum-distribution": {
@@ -1049,6 +1331,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Prior year-end account balance", "Current age of the account holder", "IRS Uniform Lifetime Table factors", "Marital status and spouse's age (if applicable)"],
     tips: ["Always use the account balance from December 31st of the previous calendar year.", "Be sure to check if you qualify for the Uniform Lifetime Table or the Joint Life and Last Survivor Expectancy Table.", "Schedule your RMD withdrawals early in the year to avoid the end-of-year rush and potential processing delays.", "Consult with a tax professional if you have multiple retirement accounts to ensure you are aggregating your distributions correctly."],
     relatedCalculators: ["retirement-planning", "traditional-ira", "401k-calculator", "tax-calculator"],
+    citations: ["IRS Publication 590-B \u2014 Distributions from Individual Retirement Arrangements (IRAs)", "IRS \u2014 Retirement Topics: Required Minimum Distributions (RMDs)", "CFPB \u2014 Retirement account distributions: What to know about Required Minimum Distributions"],
+    definition: `A Required Minimum Distribution (RMD) calculator estimates the minimum amount you must withdraw annually from tax-deferred retirement accounts like traditional IRAs and 401(k)s after age 73, based on IRS life expectancy tables.`,
+    keyTakeaways: ["RMDs must begin by April 1 following the year you turn 73, or age 72 if you reached that age before 2023.", "The RMD amount is calculated by dividing your account balance as of December 31 of the previous year by your life expectancy factor from the IRS Uniform Lifetime Table.", "Failure to take your full RMD by the deadline can result in a penalty of 25% of the amount not withdrawn, reduced to 10% if corrected promptly.", "Roth IRAs are not subject to RMDs during the original owner's lifetime, but beneficiaries may have to take them."],
   },
 
   "retirement-expenses": {
@@ -1060,6 +1345,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current annual cost of living", "Expected inflation rate over time", "Projected healthcare and medical insurance costs", "Lifestyle adjustments like travel or hobbies", "Housing costs including taxes and maintenance"],
     tips: ["Be honest about your current spending by checking your bank statements from the last twelve months.", "Factor in 'hidden' costs like increased travel budgets or potential long-term care insurance premiums.", "Run multiple scenarios with different inflation rates to see how sensitive your plan is to rising prices."],
     relatedCalculators: ["retirement-planning", "inflation-calculator", "budget-planner", "social-security"],
+    citations: ["CFPB \u2014 Planning for retirement income and expenses", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 590-B \u2014 Distributions from Individual Retirement Arrangements (IRAs)"],
+    definition: `The Retirement Expenses Calculator estimates your future spending needs in retirement by adjusting your current expenses for inflation and expected lifestyle changes, helping you determine a realistic retirement budget.`,
+    keyTakeaways: ["The calculator adjusts your current expenses for inflation to project future costs, helping you avoid underestimating retirement spending.", "Healthcare and housing are typically the largest expense categories in retirement, often requiring more budget than anticipated.", "Your retirement expenses may decrease in some areas like commuting but increase in others like travel or leisure activities.", "Using a retirement expenses calculator can help you set a more accurate savings goal and reduce the risk of outliving your money."],
   },
 
   "retirement-income": {
@@ -1071,6 +1359,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Expected annual withdrawal rate from investment portfolios", "Estimated Social Security benefit amounts based on your earnings history", "Pension payment schedules and inflation adjustments", "Additional passive income streams like rental properties or side hustles"],
     tips: ["Run multiple scenarios by adjusting your withdrawal rate to see how it impacts your long-term sustainability.", "Factor in the impact of inflation by using real dollars rather than nominal future dollars to keep your purchasing power in perspective.", "Revisit this calculator annually to adjust for changes in your account balances, tax law shifts, or changes in your expected retirement age."],
     relatedCalculators: ["retirement-planning", "social-security", "401k-calculator", "pension-calculator"],
+    citations: ["CFPB \u2014 Retirement savings and income planning", "Federal Reserve \u2014 Survey of Consumer Finances: Retirement planning", "IRS \u2014 Retirement plans and savings"],
+    definition: `The Retirement Income Calculator estimates the monthly income you can expect from your retirement savings, factoring in your current age, retirement age, savings balance, and expected rate of return.`,
+    keyTakeaways: ["This calculator helps you estimate how much monthly income your retirement savings will generate.", "Input your current savings, expected retirement age, and assumed rate of return for a personalized projection.", "The calculator assumes a constant rate of return and does not account for taxes or inflation.", "Use this tool as a starting point to gauge whether your savings are on track for retirement."],
   },
 
   "retirement-planning": {
@@ -1082,6 +1373,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Current age and planned retirement age", "Expected annual rate of return on investments", "Monthly or annual contribution amounts", "Current retirement account balance", "Estimated annual inflation rate"],
     tips: ["Run multiple scenarios by adjusting your rate of return to see how conservative vs. aggressive portfolios affect your outcome.", "Factor in inflation to ensure your future savings have the purchasing power you expect.", "Revisit this calculator annually to adjust your plan based on actual market performance and changes in your income."],
     relatedCalculators: ["compound-interest", "401k-calculator", "roth-ira", "inflation-calculator"],
+    citations: ["CFPB \u2014 Planning for Retirement: How to Estimate Your Needs", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS \u2014 Retirement Savings Contribution Credit (Saver's Credit)"],
+    definition: `A retirement planning calculator estimates how much you need to save each month to reach your retirement income goal, factoring in your current savings, expected Social Security benefits, and assumed rate of return.`,
+    keyTakeaways: ["Starting to save early significantly increases the total amount accumulated due to compound interest.", "Your retirement income goal should account for inflation and potential healthcare costs in later years.", "Social Security benefits are designed to replace only about 40% of pre-retirement earnings for average earners.", "Regularly reviewing and adjusting your retirement plan is essential as life circumstances and market conditions change."],
   },
 
   "retirement-withdrawal": {
@@ -1093,6 +1387,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total retirement savings balance", "Expected annual investment rate of return", "Target duration of retirement in years", "Inflation impact on purchasing power"],
     tips: ["Run multiple scenarios with different rates of return to account for market volatility.", "Factor in inflation by adjusting your annual withdrawal amount to maintain your standard of living.", "Consider using the 4% rule as a baseline benchmark for your initial withdrawal strategy.", "Update your calculation annually to reflect changes in your portfolio performance."],
     relatedCalculators: ["retirement-planning", "inflation-calculator", "social-security", "401k-calculator"],
+    citations: ["CFPB \u2014 Planning for retirement income and withdrawals", "Federal Reserve \u2014 Retirement savings and withdrawal strategies", "IRS \u2014 Required Minimum Distributions (RMDs) for retirement accounts"],
+    definition: `The Retirement Withdrawal Calculator estimates how long your retirement savings will last based on your current savings, annual withdrawals, expected investment return rate, and retirement duration, helping you determine a sustainable withdrawal strategy.`,
+    keyTakeaways: ["The calculator uses the 4% rule as a common baseline, suggesting you can withdraw 4% of your initial retirement savings annually adjusted for inflation.", "Your withdrawal rate should consider your life expectancy, investment returns, and inflation to avoid depleting savings too early.", "Adjusting your withdrawal rate by even 1% can significantly impact how long your funds last, especially in the first decade of retirement.", "Including Social Security and other income sources in the calculator provides a more accurate picture of sustainable withdrawals."],
   },
 
   "risk-reward": {
@@ -1104,6 +1401,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Entry Price: The cost at which you initiate the investment.", "Target Price: The projected price level where you intend to take profit.", "Stop-Loss Price: The predetermined price level where you will exit to limit losses.", "Market Volatility: Rapid price swings that may trigger stop-losses prematurely."],
     tips: ["Aim for a minimum ratio of 1:2 or 1:3 to ensure that profitable trades can cover occasional losses.", "Always set your stop-loss based on technical support levels or fundamental changes rather than just an arbitrary dollar amount.", "Re-evaluate your ratio periodically if market conditions shift to ensure your original thesis still holds.", "Use this calculator in conjunction with position sizing to manage overall portfolio exposure."],
     relatedCalculators: ["roi-calculator", "investment-return", "irr-calculator", "npv-calculator"],
+    citations: ["SEC \u2014 Investor.gov: Risk and Reward", "Federal Reserve \u2014 Consumer Compliance Handbook: Risk Management", "CFPB \u2014 Investment Risk and Return"],
+    definition: `A risk/reward calculator helps investors evaluate the potential return of an investment relative to its risk, typically by comparing the expected gain to the possible loss. It quantifies the trade-off between risk and reward to guide decision-making.`,
+    keyTakeaways: ["Risk/reward ratios are calculated by dividing the potential profit by the potential loss, with a common target being at least 1:3.", "Using a risk/reward calculator can help investors set stop-loss orders and take-profit levels more systematically.", "This tool is essential for managing portfolio risk and ensuring that potential gains justify the risks taken.", "Historical data and volatility measures are often inputs for accurate risk/reward calculations."],
   },
 
   "roi-calculator": {
@@ -1115,6 +1415,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial cost of investment", "Total current value or revenue generated", "Time duration of the investment", "Additional operational or maintenance expenses"],
     tips: ["Account for all hidden costs, such as maintenance or transaction fees, to get a truly accurate ROI.", "Use the annualized ROI feature if you are comparing investments with different holding periods.", "Remember that ROI does not account for risk; always pair this calculation with a risk assessment."],
     relatedCalculators: ["investment-return", "irr-calculator", "npv-calculator", "capital-gains-tax"],
+    citations: ["CFPB \u2014 Understanding return on investment for small businesses", "Federal Reserve \u2014 Measuring the return on business investments", "IRS Publication 535 \u2014 Business expenses and investment returns"],
+    definition: `An ROI calculator estimates the return on investment for a business expenditure by comparing the net profit or benefit gained to the initial cost, expressed as a percentage.`,
+    keyTakeaways: ["ROI is calculated by dividing the net profit of an investment by its total cost, then multiplying by 100 to get a percentage.", "A positive ROI indicates the investment generated more value than it cost, while a negative ROI signals a loss.", "ROI calculators can be used to compare the profitability of different business projects or marketing campaigns.", "Accurate ROI calculations require including all relevant costs and benefits, not just initial expenses."],
   },
 
   "roth-ira": {
@@ -1126,6 +1429,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual contribution amounts", "Expected annual rate of return", "Current account balance", "Time horizon until retirement", "IRS annual contribution limits"],
     tips: ["Always use conservative estimates for your rate of return to avoid overestimating your final balance.", "Try to maximize your annual contributions up to the current IRS limit to take full advantage of tax-free growth.", "Revisit this calculator annually to adjust for changes in your income or shifts in your investment strategy."],
     relatedCalculators: ["retirement-planning", "compound-interest", "traditional-ira", "401k-calculator"],
+    citations: ["IRS Publication 590-A \u2014 Contributions to Individual Retirement Arrangements (IRAs)", "IRS Publication 590-B \u2014 Distributions from Individual Retirement Arrangements (IRAs)", "CFPB \u2014 What is a Roth IRA?"],
+    definition: `A Roth IRA calculator estimates the future value of after-tax retirement contributions, projecting tax-free growth and withdrawals based on your age, income, contribution amount, and expected rate of return.`,
+    keyTakeaways: ["Roth IRA contributions are made with after-tax dollars, allowing for tax-free growth and tax-free withdrawals in retirement.", "Eligibility to contribute to a Roth IRA is phased out at higher income levels, with single filers in 2025 limited once modified AGI exceeds $150,000 and phased out completely at $165,000.", "Annual contribution limits for 2025 are $7,000 (or $8,000 if age 50 or older), and you can contribute up to the tax filing deadline without an extension.", "Withdrawals of contributions are always tax- and penalty-free, but earnings may be subject to taxes and penalties if withdrawn before age 59\u00bd and a five-year holding period."],
   },
 
   "rule-of-72": {
@@ -1137,6 +1443,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual interest rate or expected rate of return", "Consistency of the compounding frequency", "Impact of inflation on real purchasing power", "Market volatility and historical performance averages"],
     tips: ["Use this calculator for quick mental math, but remember it provides an estimate rather than an exact financial projection.", "Apply the rule to debt analysis to see how quickly interest charges can double your outstanding balance if left unpaid.", "Experiment with different interest rates to understand the dramatic impact of compounding over longer time horizons."],
     relatedCalculators: ["compound-interest", "investment-return", "savings-goal", "retirement-planning"],
+    citations: ["Federal Reserve \u2014 The Rule of 72 as a tool for estimating investment growth", "CFPB \u2014 Using the Rule of 72 to understand compound interest and savings", "IRS Publication 550 \u2014 Investment income and expenses, including compound interest calculations"],
+    definition: `The Rule of 72 calculator estimates the number of years required to double an investment at a fixed annual rate of return, using the formula 72 divided by the annual interest rate.`,
+    keyTakeaways: ["The Rule of 72 provides a quick way to estimate how long it will take for an investment to double given a fixed annual rate of return.", "For example, at a 6% annual return, an investment will double in approximately 12 years (72 \u00f7 6 = 12).", "This rule is most accurate for interest rates between 6% and 10%, with accuracy decreasing for very high or low rates.", "The Rule of 72 can also be used to estimate the effect of inflation on purchasing power by substituting the inflation rate for the interest rate."],
   },
 
   "salary-calculator": {
@@ -1148,6 +1457,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total hours worked per week", "Number of weeks worked per year", "Gross pay vs. net pay considerations", "Frequency of pay periods"],
     tips: ["Always use your gross income (before taxes and deductions) for the most accurate baseline comparison.", "Account for unpaid time off or vacation weeks when calculating your annual earnings to avoid overestimating your income.", "Use the calculator to determine your 'real' hourly rate if you are a salaried employee working significant overtime."],
     relatedCalculators: ["tax-calculator", "budget-planner", "retirement-planning", "savings-goal"],
+    citations: ["IRS Publication 15 \u2014 Employer's Tax Guide", "Social Security Administration \u2014 How Your Benefits Are Calculated", "CFPB \u2014 What is a salary and how is it calculated?"],
+    definition: `A salary calculator is a tool that estimates your net pay (take-home pay) after deductions such as federal and state taxes, Social Security, Medicare, and other withholdings, based on your gross salary and filing status.`,
+    keyTakeaways: ["A salary calculator provides an estimate of take-home pay by subtracting federal and state income taxes, Social Security, and Medicare from gross wages.", "Using a salary calculator helps you budget accurately by showing the impact of pre-tax deductions like 401(k) contributions and health insurance premiums.", "Salary calculators can compare different pay periods, such as hourly, weekly, biweekly, or monthly, to help you understand your annual earnings.", "Results from a salary calculator are estimates; actual net pay may vary based on specific employer withholdings and tax credits."],
   },
 
   "sales-tax": {
@@ -1159,6 +1471,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["State-level tax rates", "Local or municipal tax surcharges", "Tax-exempt status of specific goods", "Combined district tax rates"],
     tips: ["Always verify the combined tax rate, as many areas have separate state, county, and city taxes.", "Use the calculator to compare total costs when shopping online versus in-store.", "Keep a record of your calculated tax amounts for business expense reporting."],
     relatedCalculators: ["tax-calculator", "budget-planner", "capital-gains-tax", "roi-calculator"],
+    citations: ["IRS \u2014 Sales Tax Deduction", "Tax Foundation \u2014 State and Local Sales Tax Rates", "Sales Tax Institute \u2014 Sales Tax Basics"],
+    definition: `A sales tax calculator computes the amount of sales tax due on a purchase based on the item's price and the applicable sales tax rate for a specific state and locality in the United States.`,
+    keyTakeaways: ["Sales tax rates vary by state, county, and city, so it is important to use the correct combined rate for your location.", "The calculator multiplies the purchase price by the sales tax rate to determine the tax amount, then adds it to the original price for the total cost.", "Some states exempt certain items like groceries, prescription drugs, or clothing from sales tax, which can affect the calculation.", "Businesses often use sales tax calculators to accurately collect and remit taxes to state and local tax authorities."],
   },
 
   "savings-goal": {
@@ -1170,6 +1485,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial savings balance", "Total target amount", "Time horizon in years or months", "Annual interest rate or expected yield", "Frequency of compounding interest"],
     tips: ["Use a conservative interest rate estimate to avoid overestimating your future earnings.", "Revisit the calculator annually to adjust your contributions as your income or financial goals change.", "Automate your monthly savings amount once you have determined the necessary figure from the results."],
     relatedCalculators: ["compound-interest", "budget-planner", "em-fund", "inflation-calculator"],
+    citations: ["CFPB \u2014 Saving for a goal: how to set and reach your savings goals", "Federal Reserve \u2014 Consumer's Guide to Saving and Investing", "IRS Publication 590-A \u2014 Contributions to Individual Retirement Arrangements (IRAs)"],
+    definition: `A savings goal calculator helps you determine how much you need to save regularly to reach a specific financial target, such as an emergency fund or a down payment, by a certain date, considering factors like initial deposit, interest rate, and compounding frequency.`,
+    keyTakeaways: ["A savings goal calculator estimates the periodic savings needed to achieve a target amount within a set timeframe.", "It accounts for initial deposits, interest rates, and compounding to provide a realistic savings plan.", "Using this tool can help you set achievable financial goals and track progress toward them.", "Regular contributions, even small ones, can significantly grow savings over time due to compound interest."],
   },
 
   "self-employment-tax": {
@@ -1181,6 +1499,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Net annual self-employment income", "Current federal Social Security tax rate (12.4%)", "Current federal Medicare tax rate (2.9%)", "Applicable tax deductions and business expenses"],
     tips: ["Always use your net profit (gross income minus deductible business expenses) rather than your total revenue for the most accurate result.", "Remember that self-employment tax is separate from federal and state income tax, so plan your budget accordingly.", "Consider making quarterly estimated tax payments to avoid underpayment penalties from the IRS."],
     relatedCalculators: ["tax-calculator", "budget-planner", "retirement-planning", "capital-gains-tax"],
+    citations: ["IRS \u2014 Self-Employment Tax (SE Tax)", "IRS Publication 334 \u2014 Tax Guide for Small Business", "IRS Publication 535 \u2014 Business Expenses"],
+    definition: `The Self-Employment Tax Calculator estimates the Social Security and Medicare taxes owed by individuals who work for themselves, based on net earnings from self-employment.`,
+    keyTakeaways: ["Self-employment tax is calculated on net earnings, which is gross income minus allowable business expenses.", "The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare.", "You may deduct half of your self-employment tax when calculating your adjusted gross income on your tax return.", "If your net earnings are less than $400, you generally do not owe self-employment tax."],
   },
 
   "sharpe-ratio": {
@@ -1192,6 +1513,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Expected Portfolio Return", "Risk-Free Rate (usually based on Treasury yields)", "Portfolio Standard Deviation (Volatility)", "Time Horizon of the data"],
     tips: ["Always use consistent timeframes for your return and volatility data to ensure accuracy.", "Compare the Sharpe ratio of your investment against a benchmark, like the S&P 500, to see if you are being rewarded for taking extra risk.", "Remember that the Sharpe ratio assumes returns follow a normal distribution, which may not always be true in volatile market conditions."],
     relatedCalculators: ["investment-return", "roi-calculator", "irr-calculator", "future-value"],
+    citations: ["Federal Reserve \u2014 Historical data on risk-free rates (e.g., Treasury yields) used in Sharpe Ratio calculations", "CFPB \u2014 Understanding investment risk and return metrics", "IRS \u2014 Publication 550: Investment Income and Expenses (for context on investment returns)"],
+    definition: `The Sharpe Ratio Calculator measures the risk-adjusted return of an investment by comparing its excess return over a risk-free rate to its standard deviation of returns, helping investors evaluate performance relative to risk.`,
+    keyTakeaways: ["The Sharpe Ratio helps investors understand the return of an investment compared to its risk, with a higher ratio indicating better risk-adjusted performance.", "A Sharpe Ratio greater than 1 is generally considered good, above 2 is very good, and above 3 is excellent, though context and benchmark comparisons are important.", "The ratio is calculated by subtracting the risk-free rate from the investment's return and dividing by the standard deviation of the investment's excess return.", "Investors should use the Sharpe Ratio as one of several metrics when evaluating investments, as it does not account for all types of risk or non-normal return distributions."],
   },
 
   "side-hustle-calculator": {
@@ -1203,6 +1527,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total gross revenue from the gig", "Recurring operating expenses and equipment costs", "Estimated self-employment tax rate", "Total time spent including prep and administrative tasks"],
     tips: ["Include non-billable hours like invoicing, marketing, and travel to get an accurate picture of your time investment.", "Factor in the cost of software subscriptions or specialized tools even if they are used for multiple projects.", "Use a conservative tax estimate to ensure you aren't overestimating your take-home pay."],
     relatedCalculators: ["tax-calculator", "roi-calculator", "budget-planner", "net-worth"],
+    citations: ["IRS Publication 334 \u2014 Tax Guide for Small Business", "IRS Publication 535 \u2014 Business Expenses", "IRS Publication 505 \u2014 Tax Withholding and Estimated Tax"],
+    definition: `The Side Hustle Calculator helps you estimate the net profit from a freelance or gig economy venture by accounting for income, expenses, and self-employment taxes.`,
+    keyTakeaways: ["Self-employment tax is 15.3% on net earnings up to the Social Security wage base, plus 2.9% Medicare tax on all net earnings.", "You can deduct ordinary and necessary business expenses, including home office, supplies, and mileage, to lower your taxable income.", "Quarterly estimated tax payments may be required if you expect to owe at least $1,000 in tax from your side hustle.", "Tracking all income and expenses carefully is essential for accurate tax reporting and maximizing deductions."],
   },
 
   "simple-interest": {
@@ -1214,6 +1541,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Principal amount (initial investment or loan)", "Annual interest rate (expressed as a percentage)", "Time period (duration in years)", "Repayment or accrual frequency"],
     tips: ["Ensure your interest rate is entered as a decimal (e.g., 5% becomes 0.05) if the calculator requires it.", "Convert your time period into years if it is provided in months to ensure accuracy.", "Use this calculator to compare simple interest loans against compound interest options to understand the total cost of debt."],
     relatedCalculators: ["compound-interest", "loan-calculator", "savings-goal", "investment-return"],
+    citations: ["CFPB \u2014 What is simple interest?", "Federal Reserve \u2014 Consumer Handbook on Adjustable-Rate Mortgages (Simple Interest)", "IRS Publication 550 \u2014 Investment Income and Expenses (Interest Income)"],
+    definition: `A simple interest calculator determines the interest earned or owed on a principal amount using only the original principal, a fixed interest rate, and time, without compounding.`,
+    keyTakeaways: ["Simple interest is calculated only on the original principal, not on accumulated interest.", "The formula for simple interest is I = P * r * t, where I is interest, P is principal, r is annual rate, and t is time in years.", "Simple interest is commonly used for short-term loans, auto loans, and some bonds.", "Unlike compound interest, simple interest does not include interest on interest, resulting in lower total interest over time."],
   },
 
   "social-security": {
@@ -1225,6 +1555,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Lifetime earnings history", "Age at which you begin claiming benefits", "Full retirement age (FRA) based on birth year", "Number of years worked (up to 35 years)"],
     tips: ["Use your official Social Security Statement from ssa.gov for the most accurate earnings data input.", "Run multiple scenarios to see how delaying your claim until age 70 significantly increases your monthly check.", "Consider your overall health and family longevity when deciding the optimal age to begin receiving benefits."],
     relatedCalculators: ["retirement-planning", "401k-calculator", "pension-calculator", "inflation-calculator"],
+    citations: ["Social Security Administration \u2014 Benefit Calculation and Retirement Age Information", "CFPB \u2014 Social Security claiming strategies and retirement planning", "Federal Reserve \u2014 Research on Social Security and retirement income adequacy"],
+    definition: `A Social Security calculator estimates your retirement, disability, or survivor benefits based on your earnings history, age, and claiming strategy, helping you plan for financial security.`,
+    keyTakeaways: ["Your Social Security benefit amount is based on your highest 35 years of earnings, adjusted for inflation.", "Delaying claiming until age 70 can increase your monthly benefit by up to 8% per year beyond full retirement age.", "Spousal and survivor benefits allow married couples to maximize total household income from Social Security.", "Using a calculator can help you compare claiming ages and strategies to optimize lifetime benefits."],
   },
 
   "stock-return": {
@@ -1236,6 +1569,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Initial purchase price of the stock", "Current or final selling price", "Total dividends received over the holding period", "Duration of the investment"],
     tips: ["Include reinvested dividends to get a more accurate picture of your compound growth.", "Factor in brokerage commissions and transaction fees to see your 'net' return after costs.", "Use this tool periodically to rebalance your portfolio and prune underperforming assets."],
     relatedCalculators: ["investment-return", "roi-calculator", "compound-interest", "capital-gains-tax"],
+    citations: ["SEC \u2014 Investor.gov: Stock Return Calculator", "Federal Reserve \u2014 Economic Research: Stock Market Returns Data", "IRS Publication 550 \u2014 Investment Income and Expenses"],
+    definition: `A stock return calculator estimates the total return on a stock investment by factoring in the initial purchase price, selling price, dividends received, and the holding period, providing a percentage gain or loss.`,
+    keyTakeaways: ["Stock return calculators typically compute both absolute dollar returns and percentage returns, including the impact of dividends.", "The total return calculation often includes capital appreciation and dividend income, providing a comprehensive view of investment performance.", "Many stock return calculators allow users to adjust for the holding period to annualize returns, enabling comparison across different investments.", "Using a stock return calculator can help investors evaluate past performance and set realistic expectations for future investments."],
   },
 
   "student-loan": {
@@ -1247,6 +1583,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total principal loan balance", "Annual interest rate percentage", "Loan repayment term in years", "Frequency of compounding interest"],
     tips: ["Test different repayment terms to see how extending the life of the loan increases your total interest paid.", "Input your actual interest rates from your loan servicer for the most accurate projection.", "Use this calculator alongside a budget planner to ensure your loan payments fit within your monthly cash flow."],
     relatedCalculators: ["loan-calculator", "debt-snowball", "debt-avalanche", "budget-planner"],
+    citations: ["CFPB \u2014 Student loan repayment and calculator tools", "Federal Student Aid (U.S. Department of Education) \u2014 Loan repayment plans and calculators", "IRS Publication 970 \u2014 Tax benefits for education, including student loan interest deduction"],
+    definition: `A student loan calculator estimates your monthly payment and total interest cost based on loan amount, interest rate, and repayment term, helping you plan repayment under standard federal or private loan terms.`,
+    keyTakeaways: ["A student loan calculator uses your loan balance, interest rate, and repayment term to estimate monthly payments and total interest.", "Most federal student loans offer fixed interest rates and income-driven repayment plans that can lower monthly payments.", "Using a calculator can help you compare repayment options and understand how extra payments reduce total interest.", "Private student loans often have variable rates and fewer repayment options, so accurate calculation is essential."],
   },
 
   "tax-bracket": {
@@ -1258,6 +1597,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Filing status (Single, Married Filing Jointly, Head of Household)", "Total annual taxable income after deductions", "Current federal tax year thresholds", "Marginal vs. effective tax rates"],
     tips: ["Always use your taxable income (gross income minus standard or itemized deductions) for the most accurate results.", "Re-run the calculator whenever you experience a major life event, such as marriage, divorce, or the birth of a child, as these change your filing status.", "Use the results to determine if you should increase your pre-tax contributions to a 401(k) or traditional IRA to reduce your overall tax burden."],
     relatedCalculators: ["tax-calculator", "capital-gains-tax", "budget-planner", "retirement-planning"],
+    citations: ["IRS \u2014 Tax Brackets and Rates for 2023 and 2024", "IRS Publication 501 \u2014 Filing Status and Exemptions", "CFPB \u2014 Understanding Marginal and Effective Tax Rates"],
+    definition: `A tax bracket calculator determines your marginal tax rate and estimates your federal income tax liability based on your taxable income and filing status, using the IRS's progressive tax rate schedules.`,
+    keyTakeaways: ["The calculator uses the IRS's progressive tax system, where income is taxed at increasing rates as it rises above certain thresholds.", "Your marginal tax rate is the rate applied to your last dollar of income, while your effective tax rate is the average rate you pay on total income.", "Knowing your tax bracket helps with financial planning, such as deciding whether to contribute to a traditional or Roth retirement account.", "The calculator does not account for deductions, credits, or state taxes, so your actual tax bill may differ."],
   },
 
   "tax-calculator": {
@@ -1269,6 +1611,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Filing status (Single, Married Filing Jointly, Head of Household)", "Gross annual income from all sources", "Standard versus itemized deductions", "Applicable tax credits and exemptions"],
     tips: ["Update your inputs whenever you receive a raise or change your employment status to keep your projections accurate.", "Use the 'itemized deductions' option if you have significant mortgage interest, charitable donations, or medical expenses.", "Review your final tax bill at the end of the year to see how close your estimate was to reality."],
     relatedCalculators: ["budget-planner", "capital-gains-tax", "retirement-planning", "roth-ira"],
+    citations: ["IRS \u2014 Tax Withholding Estimator", "IRS Publication 17 \u2014 Your Federal Income Tax", "CFPB \u2014 What is a tax refund and how does it work?"],
+    definition: `A tax calculator estimates an individual's tax liability or refund based on income, deductions, credits, and filing status, helping users plan for tax season or adjust withholding.`,
+    keyTakeaways: ["Tax calculators use current tax brackets and rates to estimate federal income tax owed or refund due.", "Inputting accurate income, deductions, and credits is essential for a reliable tax estimate.", "Many tax calculators also estimate state taxes, self-employment tax, and alternative minimum tax.", "Using a tax calculator can help with quarterly estimated tax payments and year-end tax planning."],
   },
 
   "time-value-of-money": {
@@ -1280,6 +1625,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Present Value (PV)", "Future Value (FV)", "Annual Interest Rate (r)", "Compounding Frequency (n)", "Time Period (t)"],
     tips: ["Always ensure your interest rate matches the compounding frequency to avoid calculation errors.", "Use this tool to compare different interest-bearing accounts to see which offers the best long-term growth.", "Account for inflation when calculating future values to understand the true 'real' value of your money."],
     relatedCalculators: ["compound-interest", "future-value", "present-value", "inflation-calculator"],
+    citations: ["CFPB \u2014 Time value of money and compound interest", "Federal Reserve \u2014 The time value of money and discounting", "IRS Publication 550 \u2014 Investment income and expenses"],
+    definition: `The time value of money (TVM) calculator determines how the value of money changes over time due to interest or inflation, showing that a dollar today is worth more than a dollar in the future.`,
+    keyTakeaways: ["A dollar received today can be invested to earn interest, making it worth more than the same dollar received in the future.", "The time value of money principle is fundamental to understanding investments, loans, and savings decisions.", "Inflation reduces the purchasing power of money over time, so future dollars buy less than today's dollars.", "Using a TVM calculator helps compare the value of cash flows at different points in time for better financial planning."],
   },
 
   "tip-calculator": {
@@ -1291,6 +1639,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Service quality and experience", "Local customs and regional tipping standards", "Total bill amount before or after tax", "Number of individuals sharing the cost"],
     tips: ["Check if your bill already includes an automatic gratuity for large groups to avoid double-tipping.", "Always clarify if your tip percentage should be calculated based on the pre-tax or post-tax amount.", "Use the split feature to account for people who may have ordered significantly more or less than others."],
     relatedCalculators: ["budget-planner", "loan-calculator", "savings-goal"],
+    citations: ["CFPB \u2014 Consumer guide on understanding service charges and tips", "Federal Reserve \u2014 Consumer information on payment and tipping practices", "IRS Publication 15 \u2014 Employer's Tax Guide for reporting tips as income"],
+    definition: `A tip calculator is a tool that helps you quickly determine the appropriate gratuity amount for a service, typically based on a percentage of the total bill, and can also split the total among multiple people.`,
+    keyTakeaways: ["A tip calculator can automatically compute a gratuity based on a chosen percentage, such as 15%, 18%, or 20% of the pre-tax bill.", "Many tip calculators allow you to split the total bill, including the tip, evenly among multiple diners or service recipients.", "Using a tip calculator helps ensure accurate and fair tipping, reducing the mental math required at the end of a meal or service.", "Customizable tip percentages in a tip calculator can accommodate varying service quality or personal tipping preferences."],
   },
 
   "traditional-ira": {
@@ -1302,6 +1653,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Annual contribution amount", "Expected annual rate of return", "Time horizon until retirement", "Current age and planned retirement age"],
     tips: ["Run multiple scenarios with conservative and aggressive return rates to account for market volatility.", "Try increasing your annual contribution by just 5% each year to see the massive impact of incremental increases.", "Use this calculator alongside a tax calculator to understand the immediate tax-deduction benefits of your contributions."],
     relatedCalculators: ["roth-ira", "retirement-planning", "compound-interest", "401k-calculator"],
+    citations: ["IRS \u2014 Retirement Topics: IRA Contribution Limits", "CFPB \u2014 What is a Traditional IRA?", "Federal Reserve \u2014 Survey of Consumer Finances: Retirement Accounts"],
+    definition: `A Traditional IRA calculator estimates the potential future value of retirement savings in a Traditional Individual Retirement Account, factoring in tax-deductible contributions, investment growth, and taxes on withdrawals.`,
+    keyTakeaways: ["Contributions to a Traditional IRA may be tax-deductible in the year they are made, reducing current taxable income.", "Earnings in a Traditional IRA grow tax-deferred until withdrawal, typically in retirement.", "Withdrawals from a Traditional IRA are taxed as ordinary income, and early withdrawals before age 59\u00bd may incur a 10% penalty.", "Required minimum distributions (RMDs) must begin at age 73 for Traditional IRAs, as of 2024."],
   },
 
   "unit-converter": {
@@ -1313,6 +1667,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Precision of the conversion factor used", "Consistency between the source and target measurement systems", "Rounding requirements for the final output", "Base units of the specific category (length, mass, volume, etc.)"],
     tips: ["Always double-check your input values to ensure you haven't swapped the source and target units.", "Use the calculator to standardize your budget data if you are working with international suppliers.", "Consider the level of decimal precision required for your specific financial or construction application."],
     relatedCalculators: ["budget-planner", "roi-calculator", "net-worth"],
+    citations: ["National Institute of Standards and Technology (NIST) \u2014 Guide for the Use of the International System of Units (SI)", "Federal Reserve \u2014 Foreign Exchange Rates (for currency conversion)", "U.S. Metric Association \u2014 Metric Conversion Information"],
+    definition: `A unit converter is a tool that allows users to convert values between different units of measurement, such as length, mass, volume, temperature, and currency, by applying precise conversion factors.`,
+    keyTakeaways: ["Unit converters simplify the process of translating measurements between systems like metric and imperial.", "They are essential for ensuring accuracy in fields such as science, engineering, cooking, and international trade.", "Many unit converters include currency exchange rates, which must be updated regularly to reflect market fluctuations.", "Using a reliable unit converter helps avoid costly errors in calculations and data interpretation."],
   },
 
   "va-loan": {
@@ -1324,6 +1681,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Loan amount and down payment percentage", "Current VA funding fee percentage based on service usage", "Annual interest rate", "Loan term (usually 15 or 30 years)", "Property taxes and homeowners insurance estimates"],
     tips: ["Check your Certificate of Eligibility (COE) to see if you are exempt from the funding fee due to a service-connected disability.", "Experiment with different down payment amounts to see how they reduce both your monthly payment and the VA funding fee.", "Remember to include property tax and insurance estimates to get a more accurate 'all-in' monthly payment figure."],
     relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "refinance-calculator", "fha-loan"],
+    citations: ["CFPB \u2014 VA loans overview and eligibility requirements", "Federal Reserve \u2014 Mortgage loan comparison and VA loan features", "U.S. Department of Veterans Affairs \u2014 VA funding fee and loan limits"],
+    definition: `The VA Loan Calculator estimates monthly mortgage payments for eligible veterans, active-duty service members, and surviving spouses using a VA-backed loan, factoring in the VA funding fee, loan amount, interest rate, and term.`,
+    keyTakeaways: ["VA loans require no down payment and no private mortgage insurance, which can reduce monthly costs compared to conventional loans.", "The VA funding fee is a one-time charge that varies based on your down payment amount and whether it is your first or subsequent use of the benefit.", "Estimating your monthly payment with this calculator helps you budget for principal, interest, property taxes, homeowners insurance, and the VA funding fee.", "VA loans are issued by private lenders but guaranteed by the U.S. Department of Veterans Affairs, offering competitive interest rates and flexible credit requirements."],
   },
 
   "vacation-budget": {
@@ -1335,6 +1695,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Peak vs. off-peak travel season pricing", "Currency exchange rate fluctuations", "Number of travelers in your party", "Length of stay and daily spending limits", "Hidden costs like travel insurance and visas"],
     tips: ["Always include a contingency fund of at least 10% to cover unexpected emergencies or price hikes.", "Research local costs for food and transport rather than guessing to ensure your estimates are accurate.", "Use this calculator in conjunction with a dedicated savings account to track your progress toward your goal."],
     relatedCalculators: ["budget-planner", "savings-goal", "em-fund", "inflation-calculator"],
+    citations: ["CFPB \u2014 Tips for planning a vacation budget and avoiding debt", "Federal Reserve \u2014 Consumer spending trends on travel and recreation", "IRS Publication 463 \u2014 Travel, gift, and car expenses for business and personal trips"],
+    definition: `A vacation budget calculator helps you estimate total trip costs, including transportation, lodging, food, activities, and incidentals, so you can plan a financially manageable getaway.`,
+    keyTakeaways: ["A vacation budget calculator typically accounts for major expenses like flights, hotels, meals, and entertainment to give a realistic total cost.", "Using a budget calculator can prevent overspending by helping you allocate funds for unexpected costs and emergencies.", "Most calculators allow you to adjust inputs for different travel styles, from budget to luxury, to match your financial goals.", "Planning with a vacation budget calculator can reduce financial stress and help you save for future trips by tracking spending patterns."],
   },
 
   "w4-calculator": {
@@ -1346,6 +1709,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Filing status (Single, Married Filing Jointly, Head of Household)", "Number of jobs held by you and your spouse", "Total annual income and expected tax credits", "Amount of itemized or standard deductions"],
     tips: ["Update your W-4 whenever you experience a major life event like marriage, divorce, or the birth of a child.", "Keep your most recent pay stub handy to ensure you have accurate data regarding your year-to-date withholding.", "Aim for a balance where you neither owe a penalty for underpayment nor provide the government with an interest-free loan through a massive refund."],
     relatedCalculators: ["tax-calculator", "budget-planner", "capital-gains-tax", "retirement-planning"],
+    citations: ["IRS \u2014 Tax Withholding Estimator (W-4 Calculator)", "IRS Publication 505 \u2014 Tax Withholding and Estimated Tax", "IRS Form W-4 \u2014 Employee's Withholding Certificate"],
+    definition: `The W-4 Calculator is an IRS tool that helps you determine the correct amount of federal income tax to withhold from your paycheck by adjusting your Form W-4, ensuring you neither owe a large tax bill nor receive a large refund.`,
+    keyTakeaways: ["Using the W-4 Calculator can help you avoid a surprise tax bill or a large refund by fine-tuning your withholding throughout the year.", "The calculator considers your income, deductions, credits, and other factors to recommend the optimal number of allowances or additional withholding.", "You should rerun the calculator after major life changes, such as marriage, divorce, or a new job, to keep your withholding accurate.", "The tool is provided by the IRS and is free to use, helping you align your tax payments with your actual tax liability."],
   },
 
   "water-bill": {
@@ -1357,6 +1723,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total monthly water consumption in gallons", "Base service or meter fees charged by the utility provider", "Tiered pricing structures based on volume thresholds", "Sewer and wastewater treatment surcharges"],
     tips: ["Check your most recent physical or digital utility statement to find your exact rate per gallon.", "Monitor your water meter at the start and end of a 30-day period to get an accurate usage figure.", "Account for seasonal spikes, such as filling a swimming pool or watering a lawn, when projecting annual costs."],
     relatedCalculators: ["budget-planner", "em-fund", "inflation-calculator"],
+    citations: ["EPA \u2014 WaterSense: How to Save Water and Money", "AWWA \u2014 Water and Wastewater Rates Dashboard", "USDA Rural Development \u2014 Water and Waste Disposal Loan & Grant Program"],
+    definition: `A Water Bill Calculator estimates monthly water costs based on usage, local rates, and household size, helping users budget for utility expenses.`,
+    keyTakeaways: ["Water bills typically combine a fixed service charge with a variable usage charge based on gallons or cubic feet consumed.", "Average U.S. household water costs range from $30 to $70 per month, varying significantly by location and provider.", "Conservation efforts like fixing leaks and using efficient fixtures can reduce water bills by 20% or more.", "Many water utilities offer tiered pricing, where higher usage results in higher per-unit costs."],
   },
 
   "fire-calculator": {
@@ -1386,6 +1755,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     ],
 
     relatedCalculators: ["retirement-planning", "compound-interest", "investment-return", "savings-goal", "budget-planner", "net-worth", "401k-calculator", "retirement-withdrawal", "early-retirement"],
+    citations: ["Federal Reserve — Survey of Consumer Finances on retirement savings", "IRS Publication 590-B — Distributions from Individual Retirement Arrangements (IRAs)", "CFPB — Planning for retirement income"],
+    definition: `The FIRE (Financial Independence, Retire Early) Calculator estimates the savings rate and investment growth needed to reach financial independence, allowing users to retire early by accumulating enough assets to cover their living expenses indefinitely without relying on traditional employment.`,
+    keyTakeaways: ["The FIRE Calculator uses your current savings, annual expenses, and expected investment returns to project when you can retire early.", "A higher savings rate significantly reduces the time to financial independence, with rates above 50% potentially enabling retirement in under 20 years.", "The 4% rule suggests you can safely withdraw 4% of your portfolio annually in retirement, adjusted for inflation, without depleting funds for 30 years.", "Adjusting assumptions like investment returns, inflation, and withdrawal rates can dramatically change your FIRE timeline."],
   },
 
   "wedding-budget": {
@@ -1397,6 +1769,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     keyFactors: ["Total guest count", "Venue and catering prices", "Vendor service fees", "Contingency buffer for emergencies", "Allocation of savings vs. contributions"],
     tips: ["Always set aside at least 5-10% of your total budget as a contingency fund for last-minute price increases.", "Prioritize your 'must-haves' first, then allocate remaining funds to secondary categories like decor or favors.", "Update the calculator regularly as you receive actual quotes from vendors to keep your projections accurate."],
     relatedCalculators: ["budget-planner", "savings-goal", "personal-loan", "em-fund"],
+    citations: ["CFPB \u2014 Managing wedding expenses and financial planning", "Federal Reserve \u2014 Consumer spending trends on major life events", "IRS \u2014 Tax implications of wedding gifts and expenses"],
+    definition: `A wedding budget calculator helps couples estimate the total cost of their wedding by allocating funds across key categories like venue, catering, attire, and photography, ensuring expenses align with their financial limits.`,
+    keyTakeaways: ["A wedding budget calculator breaks down total costs into specific categories to prevent overspending.", "Using a calculator can help couples prioritize spending on what matters most to them.", "It provides a clear framework for tracking expenses and adjusting allocations as needed.", "Couples should set a realistic total budget before using the calculator to ensure accuracy."],
   },
 
 };
