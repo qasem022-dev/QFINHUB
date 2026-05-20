@@ -271,14 +271,14 @@ export default async function BlogPostPage({
   // Extract FAQ questions from content for JSON-LD schema
   const faqItems: { question: string; answer: string }[] = [];
   const faqMatch = post.content.match(/<h2>FAQ<\/h2>([\s\S]*?)(?:<h2>|$)/i);
-  if (faqMatch) {
-    const faqBlock = faqMatch[1];
+  const faqBlock = faqMatch?.[1];
+  if (faqBlock) {
     // Pattern 1: <h3>Question?</h3><p>Answer</p>
     const qaRegex1 = /<h3>([^<]+)<\/h3>\s*<p>([^<]+(?:<(?!\/p>)[^<]*)*)<\/p>/gi;
-    let m;
-    while ((m = qaRegex1.exec(faqBlock)) !== null) {
-      const question = m[1].replace(/<[^>]+>/g, '').trim();
-      const answer = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 300);
+    let match1: RegExpExecArray | null;
+    while ((match1 = qaRegex1.exec(faqBlock)) !== null) {
+      const question = match1[1]?.replace(/<[^>]+>/g, '').trim() ?? '';
+      const answer = match1[2]?.replace(/<[^>]+>/g, '').trim().substring(0, 300) ?? '';
       if (question && answer && question.endsWith('?')) {
         faqItems.push({ question, answer });
       }
@@ -286,9 +286,10 @@ export default async function BlogPostPage({
     // Pattern 2: <p><strong>Q: Question?</strong><br/>A: Answer</p>
     if (faqItems.length === 0) {
       const qaRegex2 = /<strong>Q:\s*([^<]+)<\/strong>\s*<br\s*\/?>\s*A:\s*([\s\S]*?)(?=<p>|$)/gi;
-      while ((m = qaRegex2.exec(faqBlock)) !== null) {
-        const question = m[1].trim();
-        const answer = m[2].replace(/<[^>]+>/g, '').trim().substring(0, 300);
+      let match2: RegExpExecArray | null;
+      while ((match2 = qaRegex2.exec(faqBlock)) !== null) {
+        const question = match2[1]?.trim() ?? '';
+        const answer = match2[2]?.replace(/<[^>]+>/g, '').trim().substring(0, 300) ?? '';
         if (question && answer) faqItems.push({ question, answer });
       }
     }
@@ -300,7 +301,7 @@ export default async function BlogPostPage({
       for (const h of allHeadings.slice(0, 4)) {
         const qMatch = h.match(/<h[23]>([^<]+)<\/h[23]>/);
         const aMatch = h.match(/<p>([\s\S]+?)<\/p>/);
-        if (qMatch && aMatch) {
+        if (qMatch?.[1] && aMatch?.[1]) {
           faqItems.push({ question: qMatch[1].trim(), answer: aMatch[1].replace(/<[^>]+>/g, '').trim().substring(0, 300) });
         }
       }
