@@ -270,6 +270,7 @@ export default function RootLayout({
               <script
                 async
                 src="https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js"
+                data-psid="93e6358fa4836a576dd463e0a148a834"
               />
               <script
                 dangerouslySetInnerHTML={{
