@@ -8,8 +8,21 @@
  */
 
 const https = require('https');
+const { readFileSync } = require('fs');
+const { resolve } = require('path');
 
-const API_KEY = 'REMOVED_GEMINI_KEY';
+// Load .env.local
+try {
+  const env = readFileSync(resolve(__dirname, '..', '.env.local'), 'utf-8');
+  env.split('\n').forEach(line => {
+    const m = line.match(/^([A-Z_]+)\s*=\s*(.+)/);
+    if (m) process.env[m[1].trim()] = m[2].trim().replace(/^["']|["']$/g, '');
+  });
+} catch (e) {
+  console.error("Could not load .env.local");
+}
+
+const API_KEY = process.env.GEMINI_API_KEY || '';
 const MODEL = 'gemini-3.1-flash-lite';
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/${MODEL}:generateContent?key=${API_KEY}`;
 

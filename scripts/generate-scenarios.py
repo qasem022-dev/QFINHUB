@@ -24,18 +24,34 @@ DATA_DIR = PROJECT_ROOT / "public" / "data" / "scenarios"
 STATE_FILE = Path("/home/admin1/.hermes/state/scenario-generator-state.json")
 LOG_FILE = Path("/home/admin1/.hermes/logs/scenario-generator.log")
 
-# Gemini API (leaked — needs renewal)
-GEMINI_API_KEY = "REMOVED_GEMINI_KEY"
-GEMINI_MODEL = "gemini-3.1-flash-lite"
+# API Keys — loaded from .env.local
+def _load_env():
+    """Load environment variables from .env.local"""
+    env_path = PROJECT_ROOT / ".env.local"
+    if env_path.exists():
+        for line in env_path.read_text().split("\n"):
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                key = key.strip()
+                val = val.strip().strip('"').strip("'")
+                if key not in os.environ:
+                    os.environ[key] = val
+
+_load_env()
+
+# Gemini API
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite")
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
 
 # Deepseek API (fallback — active)
-DEEPSEEK_API_KEY = "sk-2fa7707a2354486d9178e152ea6deac9"
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 DEEPSEEK_MODEL = "deepseek-v4-flash"
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 
-# Which API to use
-USE_API = "deepseek"  # "gemini" or "deepseek"
+# Which API to use — prefer Gemini, fall back to Deepseek
+USE_API = "gemini" if GEMINI_API_KEY else "deepseek"
 
 # Daily target
 DAILY_TARGET = 500
