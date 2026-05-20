@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png" }],
   },
   verification: {
-    google: "ca-pub-1102790706635466",
+    google: "31q5DZ8DIMa5Mq_3HtJt1VyPSj-KqkkvFEf_zo9aQ-k",
     other: {
       "p:domain_verify": "4756ee5e97724d0b2403293fe43f64c3",
     },
@@ -233,8 +233,6 @@ export default function RootLayout({
         />
         {/* Google AdSense site verification */}
         <meta name="google-adsense-account" content="ca-pub-1102790706635466" />
-        {/* Google Search Console site verification */}
-        <meta name="google-site-verification" content="31q5DZ8DIMa5Mq_3HtJt1VyPSj-KqkkvFEf_zo9aQ-k" />
         {/* Pinterest site verification — also set in metadata.other for SSR reliability */}
         <meta name="p:domain_verify" content="4756ee5e97724d0b2403293fe43f64c3" />
         {/* Hreflang tags for multi-language support */}
