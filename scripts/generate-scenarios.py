@@ -50,9 +50,6 @@ DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 DEEPSEEK_MODEL = "deepseek-v4-flash"
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 
-# Which API to use — prefer Gemini, fall back to Deepseek
-USE_API = "gemini" if GEMINI_API_KEY else "deepseek"
-
 # Daily target
 DAILY_TARGET = 500
 BATCH_SIZE = 20  # Generate 20 pages per Gemini API call
@@ -511,14 +508,27 @@ Return ONLY valid JSON. No markdown fences, no explanations."""
 
 
 def call_llm(prompt):
-    """Call LLM API for content generation. Supports Gemini and Deepseek."""
+    """Call LLM API for content generation. Auto-fallbacks on failure."""
     import urllib.request
     import urllib.error
     
-    if USE_API == "gemini":
-        return call_gemini_api(prompt)
-    else:
+    # Track Gemini status across calls
+    if not hasattr(call_llm, "gemini_down"):
+        call_llm.gemini_down = False
+    
+    # Try Gemini first (only if not known down)
+    if GEMINI_API_KEY and not call_llm.gemini_down:
+        result = call_gemini_api(prompt)
+        if result:
+            return result
+        call_llm.gemini_down = True  # Stop trying
+    
+    # Fall back to Deepseek
+    if DEEPSEEK_API_KEY:
         return call_deepseek_api(prompt)
+    
+    log("No API keys available!")
+    return None
 
 
 def call_gemini_api(prompt):
@@ -594,7 +604,30 @@ def clean_json_response(text):
         text = "\n".join(lines[1:]) if len(lines) > 1 else text[3:]
     if text.endswith("```"):
         text = text[:-3].strip()
-    return json.loads(text)
+    
+    # Try strict parse first
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    
+    # Try with control character fixes (Deepseek sometimes escapes unicode poorly)
+    try:
+        fixed = text.replace("\\u2014", "—").replace("\\u2013", "–").replace("\\u2019", "'").replace("\\u201c", '"').replace("\\u201d", '"')
+        return json.loads(fixed)
+    except json.JSONDecodeError:
+        pass
+    
+    # Last resort: find the outermost {...} and try to parse
+    start = text.find("{")
+    end = text.rfind("}")
+    if start >= 0 and end > start:
+        try:
+            return json.loads(text[start:end+1])
+        except json.JSONDecodeError:
+            pass
+    
+    raise ValueError(f"Could not parse JSON response")
 
 
 def generate_batch(calc_type, calc_config, params_list):
