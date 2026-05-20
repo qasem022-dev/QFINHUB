@@ -212,6 +212,26 @@ export default function Home() {
       {/* ── Navbar ── */}
       <Navbar />
 
+      {/* ── Global Search Bar ── */}
+      <section className="border-b border-gray-100 bg-white px-4 py-3 dark:border-gray-800 dark:bg-surface-dark">
+        <div className="mx-auto max-w-3xl">
+          <form action="/calculators" method="GET" className="flex items-center gap-2">
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+              <input
+                name="q"
+                type="search"
+                placeholder='Search all 124 calculators — "mortgage", "retirement", "compound interest"...'
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm text-gray-900 placeholder:text-gray-400 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-400/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-primary-500"
+              />
+            </div>
+            <Button type="submit" className="h-11 shrink-0 rounded-xl bg-primary-600 px-5 text-sm font-semibold text-white hover:bg-primary-700">
+              Search
+            </Button>
+          </form>
+        </div>
+      </section>
+
       {/* ── Hero Section ── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50 px-4 pb-20 pt-16 dark:from-surface-dark dark:via-surface-dark dark:to-primary-950/20">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
@@ -243,21 +263,21 @@ export default function Home() {
 
             {/* CTA Buttons — big, bold, action-oriented */}
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link href="/calculators">
+              <Link href="/calculators" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="h-14 min-w-[260px] rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 transition-all hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98]"
+                  className="min-h-[56px] w-full rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 transition-all hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] sm:w-auto"
                 >
                   <Calculator className="mr-2 h-5 w-5" />
                   Browse All 124 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/calculators?cat=mortgage">
+              <Link href="/calculators?cat=mortgage" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="h-14 min-w-[200px] rounded-xl border-gray-300 bg-white/80 px-8 text-base font-semibold text-gray-700 backdrop-blur-sm hover:bg-gray-50 hover:border-gray-400 dark:border-gray-600 dark:bg-white/5 dark:text-gray-300 dark:hover:bg-white/10"
+                  className="min-h-[56px] w-full rounded-xl border-gray-300 bg-white/80 px-8 text-base font-semibold text-gray-700 backdrop-blur-sm hover:bg-gray-50 hover:border-gray-400 dark:border-gray-600 dark:bg-white/5 dark:text-gray-300 dark:hover:bg-white/10 sm:w-auto"
                 >
                   <HomeIcon className="mr-2 h-5 w-5" />
                   Mortgage Calculators
@@ -265,20 +285,20 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Quick Search Bar - An entry point to find any calculator */}
-            <div className="mt-8">
-              <Link
-                href="/calculators"
-                className="mx-auto flex max-w-lg items-center gap-3 rounded-xl border border-gray-200 bg-white px-5 py-3.5 shadow-sm transition-all hover:border-primary-300 hover:shadow-md dark:border-gray-600 dark:bg-gray-800 dark:hover:border-primary-600"
-              >
-                <Search className="h-5 w-5 shrink-0 text-gray-400" />
-                <span className="text-sm text-gray-400">
-                  Search all 124 calculators — &quot;mortgage,&quot; &quot;retirement,&quot; &quot;compound interest&quot;...
-                </span>
-                <kbd className="ml-auto hidden rounded-md border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs text-gray-400 dark:border-gray-600 dark:bg-gray-700 sm:inline-block">
-                  ⌘K
-                </kbd>
-              </Link>
+            {/* Trust Signals */}
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 shadow-sm dark:bg-emerald-900/30 dark:text-emerald-400">
+                <Users className="h-3.5 w-3.5" />
+                Used by thousands monthly
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1.5 text-xs font-medium text-blue-700 shadow-sm dark:bg-blue-900/30 dark:text-blue-400">
+                <Sparkles className="h-3.5 w-3.5" />
+                Featured in AI Overviews
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700 shadow-sm dark:bg-purple-900/30 dark:text-purple-400">
+                <CheckCircle2 className="h-3.5 w-3.5" />
+                124 free tools, no account needed
+              </span>
             </div>
 
             {/* Stats Row */}
@@ -336,7 +356,7 @@ export default function Home() {
                 <Link
                   key={uc.title}
                   href={uc.link}
-                  className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 dark:border-gray-700 dark:bg-surface-dark-elevated"
+                  className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
                 >
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 text-white shadow-sm transition-transform group-hover:scale-110">
                     <Icon className="h-6 w-6" />
@@ -378,7 +398,7 @@ export default function Home() {
                 <Link
                   key={cat.slug}
                   href={`/calculators?cat=${cat.slug}`}
-                  className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 dark:border-gray-700 dark:bg-surface-dark-elevated"
+                  className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
                 >
                   <div className="flex items-start justify-between">
                     <div
@@ -421,7 +441,7 @@ export default function Home() {
               <Link
                 key={calc.href}
                 href={calc.href}
-                className="group flex items-center justify-between rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-primary-200 hover:shadow-md dark:border-gray-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700"
+                className="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition-all duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
               >
                 <div>
                   <span className="text-xs font-medium uppercase tracking-wider text-primary-600 dark:text-primary-400">
@@ -440,7 +460,7 @@ export default function Home() {
             <Link href="/calculators">
               <Button
                 variant="outline"
-                className="rounded-xl border-gray-300 px-6 dark:border-gray-600"
+                className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600"
               >
                 View All 124 Calculators
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -467,7 +487,7 @@ export default function Home() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-primary-200 hover:shadow-md dark:border-gray-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700"
+                className="group rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
               >
                 <div
                   className={`mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-to-br ${feature.color} text-white shadow-sm`}

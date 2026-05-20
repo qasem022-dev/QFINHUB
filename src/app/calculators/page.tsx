@@ -8,6 +8,7 @@ import {
 
 import { CalculatorListingClient } from "@/components/calculators/calculator-listing-client";
 import { getCalculatorComponent } from "@/components/calculators/registry";
+import { CATEGORY_LABELS, type CategoryType } from "@/types/calculator";
 
 interface CalculatorsPageProps {
   searchParams: Promise<{ q?: string; cat?: string }>;
@@ -71,6 +72,30 @@ export default async function CalculatorsPage({ searchParams }: CalculatorsPageP
           initialCategory={initialCategory}
         />
       </Suspense>
+
+      {/* Server-rendered cards for SEO/crawlers — hidden when JS is active */}
+      <noscript>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+          {allCalculators.map((calc) => (
+            <a
+              key={calc.slug}
+              href={`/calculators/${calc.slug}`}
+              className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">{calc.icon}</span>
+                <div>
+                  <h3 className="font-semibold text-zinc-900">{calc.title}</h3>
+                  <p className="mt-1 text-sm text-zinc-500 line-clamp-2">{calc.description}</p>
+                  <span className="mt-2 inline-block rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600">
+                    {CATEGORY_LABELS[calc.category as CategoryType] ?? calc.category}
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </noscript>
     </div>
   );
 }

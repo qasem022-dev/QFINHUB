@@ -50,7 +50,7 @@ function BlogCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:border-primary-200 dark:border-gray-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700"
+      className="group block rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.01] hover:border-primary-200 dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
     >
       <div className="flex flex-wrap items-center gap-3 mb-3">
         <span

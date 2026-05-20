@@ -111,8 +111,15 @@ export function CalculatorChart({
   className,
   height = 300,
 }: CalculatorChartProps) {
+  const [mounted, setMounted] = React.useState(false);
   const chartColors = colors ?? DEFAULT_COLORS;
   const keys = Array.isArray(yKey) ? yKey : [yKey];
+
+  // Recharts ResponsiveContainer needs a layout pass before it can measure.
+  // Defer rendering until after mount to avoid 0x0 flash.
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const renderChart = () => {
     switch (type) {
@@ -271,17 +278,23 @@ export function CalculatorChart({
       <CardContent>
         <div
           className="w-full"
-          style={{ height }}
+          style={{ height: mounted ? height : 0, minHeight: mounted ? undefined : height }}
           role="img"
           aria-label={title ?? `${type} chart`}
         >
-          <ResponsiveContainer width="100%" height="100%">
-            {renderChart() ?? (
-              <div className="flex h-full items-center justify-center text-sm text-gray-400">
-                No chart data available
-              </div>
-            )}
-          </ResponsiveContainer>
+          {mounted ? (
+            <ResponsiveContainer width="100%" height="100%">
+              {renderChart() ?? (
+                <div className="flex h-full items-center justify-center text-sm text-gray-400">
+                  No chart data available
+                </div>
+              )}
+            </ResponsiveContainer>
+          ) : (
+            <div className="flex items-center justify-center text-sm text-gray-400" style={{ height }}>
+              <div className="h-4 w-4 animate-spin rounded-full border-2 border-gray-300 border-t-primary-500" />
+            </div>
+          )}
         </div>
       </CardContent>
     </Card>

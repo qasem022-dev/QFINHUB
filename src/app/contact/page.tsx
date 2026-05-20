@@ -121,7 +121,7 @@ export default function ContactPage() {
             {contactMethods.map((method) => {
               const Icon = method.icon;
               const content = (
-                <div className="group rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-surface-dark-elevated">
+                <div className="group rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg">
                   <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
                     <Icon className="h-5 w-5" />
                   </div>

@@ -2,6 +2,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ─────────────────────────────────────────────
+   Theme Tokens
+   ───────────────────────────────────────────── */
 @theme inline {
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
@@ -58,14 +61,187 @@
   }
 }
 
+/* ─────────────────────────────────────────────
+   Premium Shadow Tokens (layered for depth)
+   ───────────────────────────────────────────── */
+:root {
+  --shadow-card-sm: 0 1px 2px 0 rgb(0 0 0 / 0.03), 0 1px 3px 0 rgb(0 0 0 / 0.06);
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.04), 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-card-hover: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+  --shadow-card-lg: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 12px 24px -6px rgb(0 0 0 / 0.08), 0 8px 12px -6px rgb(0 0 0 / 0.04);
+  --shadow-card-lg-hover: 0 8px 10px -3px rgb(0 0 0 / 0.07), 0 18px 28px -8px rgb(0 0 0 / 0.1), 0 10px 14px -8px rgb(0 0 0 / 0.05);
+}
+
+.dark {
+  --shadow-card-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2), 0 1px 3px 0 rgb(0 0 0 / 0.15);
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.25), 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.15);
+  --shadow-card-hover: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 10px 15px -3px rgb(0 0 0 / 0.25), 0 4px 6px -4px rgb(0 0 0 / 0.15);
+  --shadow-card-lg: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 12px 24px -6px rgb(0 0 0 / 0.25), 0 8px 12px -6px rgb(0 0 0 / 0.15);
+  --shadow-card-lg-hover: 0 8px 10px -3px rgb(0 0 0 / 0.35), 0 18px 28px -8px rgb(0 0 0 / 0.3), 0 10px 14px -8px rgb(0 0 0 / 0.2);
+}
+
+/* ─────────────────────────────────────────────
+   Premium Utilities (Tailwind v4 @utility)
+   ───────────────────────────────────────────── */
+
+/* Premium card — reusable across the site */
+@utility premium-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-zinc-200);
+  background-color: white;
+  color: var(--color-zinc-900);
+  box-shadow: var(--shadow-card-sm);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@utility premium-card-hover {
+  &:hover {
+    border-color: var(--color-zinc-300);
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-1px) scale(1.005);
+  }
+}
+
+@utility premium-card-dark {
+  &:is(.dark *) {
+    border-color: var(--color-zinc-700);
+    background-color: var(--color-surface-dark-elevated);
+    color: var(--color-zinc-100);
+  }
+
+  &:is(.dark *):hover {
+    border-color: var(--color-zinc-600);
+    box-shadow: var(--shadow-card-hover);
+  }
+}
+
+/* Elevated premium card (more depth, used for featured content) */
+@utility premium-card-elevated {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-zinc-200);
+  background-color: white;
+  color: var(--color-zinc-900);
+  box-shadow: var(--shadow-card);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@utility premium-card-elevated-hover {
+  &:hover {
+    border-color: var(--color-zinc-300);
+    box-shadow: var(--shadow-card-lg-hover);
+    transform: translateY(-2px) scale(1.01);
+  }
+}
+
+@utility premium-card-elevated-dark {
+  &:is(.dark *) {
+    border-color: var(--color-zinc-700);
+    background-color: var(--color-surface-dark-elevated);
+    color: var(--color-zinc-100);
+  }
+
+  &:is(.dark *):hover {
+    border-color: var(--color-zinc-600);
+    box-shadow: var(--shadow-card-lg-hover);
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Base Styles
+   ───────────────────────────────────────────── */
 @layer base {
   * {
-    @apply border-gray-200 dark:border-gray-700;
+    @apply border-zinc-200 dark:border-zinc-700;
   }
+
   body {
-    @apply bg-white text-gray-900 dark:bg-surface-dark dark:text-gray-100;
+    @apply bg-white text-zinc-900 dark:bg-surface-dark dark:text-zinc-100;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Typography Hierarchy ── */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.025em; }
+  h2 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; }
+  h3 { font-size: 1.375rem; font-weight: 600; letter-spacing: -0.015em; }
+  h4 { font-size: 1.125rem; font-weight: 600; }
+
+  p {
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+
+  /* ── Smooth transitions on all interactive elements ── */
+  a, button, [role="button"], input, select, textarea {
+    transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ── Button press feedback (active state) ── */
+  button:active:not(:disabled),
+  [role="button"]:active:not([aria-disabled="true"]),
+  a.btn:active {
+    transform: scale(0.97);
+  }
+
+  /* ── Card hover lift ── */
+  .card-hover-lift {
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12), 0 4px 8px -4px rgba(0, 0, 0, 0.06);
+  }
+
+  /* ── Premium card base with consistent border ── */
+  .card-premium {
+    border: 1px solid var(--color-zinc-200);
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  }
+  .card-premium:hover {
+    border-color: var(--color-zinc-300);
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .card-premium {
+    border-color: var(--color-zinc-700);
+    background: var(--color-surface-dark);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .dark .card-premium:hover {
+    border-color: var(--color-zinc-600);
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ── Adsterra layout shift protection ── */
+  [id^="container-"][id$="-skeleton"] {
+    will-change: auto;
+  }
+
+  /* ── Smooth page transitions ── */
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 0.4s ease-out forwards;
+  }
+
+  /* ── Focus ring refinement ── */
+  *:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 
   /* ── Mobile Touch + Performance ── */
@@ -87,5 +263,48 @@
   /* Prevent FOUT with Inter font */
   .font-sans {
     font-display: swap;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Component-level refinements
+   ───────────────────────────────────────────── */
+@layer components {
+  /* Smooth scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-zinc-300);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-zinc-400);
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: var(--color-zinc-600);
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-zinc-500);
+  }
+
+  /* Premium selection colors */
+  ::selection {
+    background: var(--color-primary-200);
+    color: var(--color-primary-900);
+  }
+
+  .dark ::selection {
+    background: var(--color-primary-800);
+    color: var(--color-primary-100);
   }
 }
