@@ -91,7 +91,7 @@ export default async function ComparisonPage({ params }: ComparePageProps) {
         </div>
 
         {/* FAQs */}
-        <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-surface-dark-elevated">
+        <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-surface-dark-elevated mb-8">
           <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {comp.faqs.map((faq, i) => (
@@ -101,6 +101,46 @@ export default async function ComparisonPage({ params }: ComparePageProps) {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* When to Use Each */}
+        <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-surface-dark-elevated mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">When to Use Each Calculator</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
+              <h3 className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-2">
+                Use {calcA?.title ?? comp.calculatorA} when:
+              </h3>
+              <ul className="space-y-1.5 text-sm text-blue-700 dark:text-blue-400">
+                <li>• You need a focused calculation for this specific scenario</li>
+                <li>• You want detailed breakdowns, charts, and export options</li>
+                <li>• You prefer a dedicated tool with full customization</li>
+                <li>• You need to save or share this specific result</li>
+              </ul>
+            </div>
+            <div className="rounded-lg bg-emerald-50 p-4 dark:bg-emerald-900/20">
+              <h3 className="text-sm font-semibold text-emerald-800 dark:text-emerald-300 mb-2">
+                Use {calcB?.title ?? comp.calculatorB} when:
+              </h3>
+              <ul className="space-y-1.5 text-sm text-emerald-700 dark:text-emerald-400">
+                <li>• Your situation matches this alternative approach</li>
+                <li>• You want to compare results side by side</li>
+                <li>• The assumptions in this calculator fit your needs better</li>
+                <li>• You're exploring different financial strategies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Line */}
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-800 dark:bg-amber-900/20">
+          <h2 className="text-lg font-semibold text-amber-900 dark:text-amber-300 mb-3">Bottom Line</h2>
+          <p className="text-sm text-amber-800 dark:text-amber-400 leading-relaxed">
+            Both calculators serve different purposes and the right choice depends on your specific financial situation. 
+            We recommend running both calculators with your actual numbers and comparing the results directly. 
+            Understanding both perspectives gives you a more complete picture for making informed financial decisions. 
+            All calculators on QFINHUB are 100% free, require no sign-up, and provide instant results with interactive charts.
+          </p>
         </div>
       </div>
     </div>
