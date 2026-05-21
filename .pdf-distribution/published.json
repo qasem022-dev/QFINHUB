@@ -82,5 +82,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/budgeting-101.md"
       }
     }
+  },
+  "rent-vs-buy-guide": {
+    "title": "Rent vs Buy: The Complete Decision Framework",
+    "category": "mortgage",
+    "generatedAt": "2026-05-21T15:10:50.802Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/rent-vs-buy-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/rent-vs-buy-guide.md"
+      }
+    }
   }
 }

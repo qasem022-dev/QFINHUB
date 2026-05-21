@@ -1138,5 +1138,47 @@
       "tweetId": null,
       "guid": "https://www.bloomberg.com/news/videos/2026-05-20/zaman-usd-near-term-driven-by-fed-hormuz-risks-video"
     }
+  },
+  {
+    "ts": "2026-05-21T14:56:36.953Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board requests public comment on a proposal to establish a &quot;payment account,&quot; which legally eligible financial institutions could use for the specific purpose of clearing and settling their payments",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260520a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-21T14:56:51.449Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-s-new-payment-account-proposal-what-it-means-for-your-mortgage-and-savings",
+      "title": "Fed’s New Payment Account Proposal: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260520a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-21T14:56:56.451Z",
+    "type": "news-match",
+    "details": {
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260520a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-21T14:57:12.052Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-minutes-april-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+      "title": "Fed Minutes April 2026: What the FOMC Decision Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260520a.htm]]>"
+    }
   }
 ]

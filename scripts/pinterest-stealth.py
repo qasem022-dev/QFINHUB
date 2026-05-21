@@ -181,7 +181,9 @@ async def pinterest_stealth_automation(mode='full'):
         await browser.random_action()
         
         content = await browser.get_content()
-        logged_in = 'login' not in content.lower() and 'log in' not in content.lower()
+        # Pinterest always shows "Log in" somewhere — check for logged-in indicators instead
+        logged_in = ('create-menu-button' in (await browser.get_html()) or 
+                     'profile' in content.lower()) and 'login/' not in (await browser.evaluate("window.location.href") or '')
         
         if not logged_in:
             print("⚠️ Not logged in. Attempting login...")
@@ -214,7 +216,7 @@ async def pinterest_stealth_automation(mode='full'):
                 return
         
         content = await browser.get_content()
-        if 'login' in content.lower():
+        if not ('create-menu-button' in (await browser.get_html()) or 'profile' in content.lower()):
             print("❌ Still not logged in. Manual login required (headless=False).")
             await browser.shutdown()
             return
