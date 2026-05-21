@@ -81,6 +81,22 @@ export function SiteFooter() {
                   Blog & Guides
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/for-ai-developers"
+                  className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  For AI Developers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/widgets"
+                  className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  Embeddable Widgets
+                </Link>
+              </li>
             </ul>
           </div>
 

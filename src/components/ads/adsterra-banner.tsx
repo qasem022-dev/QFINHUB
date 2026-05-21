@@ -44,9 +44,9 @@ export function AdsterraBanner() {
     script.src = `https://pl29448163.profitablecpmratenetwork.com/${placementKey}/invoke.js`;
     script.dataset.psid = placementKey;
 
-    // Create skeleton-hider script
+    // Create skeleton-hider script with timeout fallback
     const hideScript = document.createElement("script");
-    hideScript.textContent = `(function(){var c=setInterval(function(){var a=document.getElementById('container-${placementKey}');var b=document.getElementById('container-${placementKey}-skeleton');if(a&&a.children.length>1){if(b)b.style.display='none';clearInterval(c);}},500);setTimeout(function(){clearInterval(c);},10000);})();`;
+    hideScript.textContent = `(function(){var c=setInterval(function(){var a=document.getElementById('container-${placementKey}');var b=document.getElementById('container-${placementKey}-skeleton');if(a&&a.children.length>1){if(b)b.style.display='none';clearInterval(c);}},500);setTimeout(function(){clearInterval(c);var s=document.getElementById('container-${placementKey}-skeleton');if(s)s.style.display='none';},8000);})();`;
 
     // Append container to wrapper, scripts to document body for reliable execution
     wrapper.appendChild(container);

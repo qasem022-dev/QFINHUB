@@ -181,10 +181,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://pl29448163.profitablecpmratenetwork.com" />
-        {/* Inline critical CSS to prevent layout shift */}
+        <link rel="dns-prefetch" href="https://fizzyacerbitymellow.com" />
+        {/* iOS Safari viewport optimization — prevent zoom on input focus */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+        {/* Inline critical CSS to prevent layout shift + iOS optimizations */}
         <style dangerouslySetInnerHTML={{ __html: `
-          html { overflow-y: scroll; -webkit-text-size-adjust: 100%; }
-          body { margin: 0; }
+          html { overflow-y: scroll; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+          body { margin: 0; -webkit-tap-highlight-color: transparent; }
+          input, textarea, select { font-size: 16px; }
         `}} />
         {/* ════════════════════════════════════════════════
              Google Consent Mode v2 — MUST execute BEFORE
