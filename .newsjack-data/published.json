@@ -63,6 +63,14 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/19/fed-to-hike-when-traders-see-a-rate-increase-coming.html"
   },
+  "108309388": {
+    "slug": "prediction-markets-vs-regulators-what-it-means-for-your-mortgage-and-savings-goa",
+    "title": "Prediction Markets vs. Regulators: What It Means for Your Mortgage and Savings Goals",
+    "publishedAt": "2026-05-21T20:45:47.633Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/21/where-the-feds-are-fighting-states-over-prediction-markets.html"
+  },
   "108309720": {
     "slug": "jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for",
     "title": "Jeff Bezos Proposes Zero Income Tax for Bottom Half of Earners: What It Means for Your Mortgage and Savings",
@@ -414,5 +422,13 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260520a.htm]]>"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm]]>": {
+    "slug": "federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-",
+    "title": "Federal Reserve Enforcement Action Against Commerce Bank: What It Means for Your Mortgage and Personal Finance",
+    "publishedAt": "2026-05-21T20:45:30.175Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm]]>"
   }
 }

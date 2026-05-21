@@ -94,5 +94,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/rent-vs-buy-guide.md"
       }
     }
+  },
+  "student-loan-guide": {
+    "title": "Student Loan Repayment: Choose the Right Plan",
+    "category": "debt",
+    "generatedAt": "2026-05-21T20:44:57.467Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/student-loan-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/student-loan-guide.md"
+      }
+    }
   }
 }

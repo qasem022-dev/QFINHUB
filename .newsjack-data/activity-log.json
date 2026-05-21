@@ -1180,5 +1180,47 @@
       "tweetId": null,
       "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260520a.htm]]>"
     }
+  },
+  {
+    "ts": "2026-05-21T20:45:17.749Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-21T20:45:30.176Z",
+    "type": "news-published",
+    "details": {
+      "slug": "federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-",
+      "title": "Federal Reserve Enforcement Action Against Commerce Bank: What It Means for Your Mortgage and Personal Finance",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-21T20:45:35.178Z",
+    "type": "news-match",
+    "details": {
+      "title": "Prediction markets are fueling a high-stakes brawl between states and federal regulators",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108309388"
+    }
+  },
+  {
+    "ts": "2026-05-21T20:45:47.636Z",
+    "type": "news-published",
+    "details": {
+      "slug": "prediction-markets-vs-regulators-what-it-means-for-your-mortgage-and-savings-goa",
+      "title": "Prediction Markets vs. Regulators: What It Means for Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108309388"
+    }
   }
 ]
