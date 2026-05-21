@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   Calculator,
   TrendingUp,
@@ -199,6 +200,12 @@ const stats = [
   { value: "Instant", label: "No Account Required", icon: Zap },
   { value: "100%", label: "Free — Always", icon: Shield },
 ];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.qfinhub.com",
+  },
+};
 
 export default function Home() {
   return (

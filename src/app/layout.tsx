@@ -58,8 +58,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   alternates: {
     languages: Object.fromEntries(
-      locales.map((locale) => [locale, `/${locale}`])
+      locales.map((locale) => [locale, `/?lang=${locale}`])
     ),
+    canonical: "/",
   },
   openGraph: {
     type: "website",
