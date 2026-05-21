@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
@@ -27,9 +25,7 @@ import {
   Users,
   LineChart,
 } from "lucide-react";
-import { useLocale } from "./i18n-provider";
 import { Footer } from "@/components/layout/footer";
-import { getTranslation } from "@/lib/i18n";
 import { Navbar } from "@/components/layout/navbar";
 
 const categories = [
@@ -205,9 +201,6 @@ const stats = [
 ];
 
 export default function Home() {
-  const { locale } = useLocale();
-  const t = (path: string) => getTranslation(locale, path);
-
   return (
     <div className="flex min-h-screen flex-col">
       {/* ── Navbar ── */}
@@ -264,17 +257,17 @@ export default function Home() {
 
             {/* CTA Buttons — big, bold, action-oriented */}
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link href="/calculators" className="w-full sm:w-auto">
+              <Link href="/calculators" prefetch={true} className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="min-h-[56px] w-full rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 transition-all hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] sm:w-auto"
+                  className="min-h-[56px] w-full rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] sm:w-auto"
                 >
                   <Calculator className="mr-2 h-5 w-5" />
                   Browse All 124 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/calculators?cat=mortgage" className="w-full sm:w-auto">
+              <Link href="/calculators?cat=mortgage" prefetch={true} className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
@@ -462,7 +455,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 text-center">
-            <Link href="/calculators">
+            <Link href="/calculators" prefetch={true}>
               <Button
                 variant="outline"
                 className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600"
@@ -536,10 +529,10 @@ export default function Home() {
             </span>
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link href="/calculators">
+            <Link href="/calculators" prefetch={true}>
               <Button
                 size="lg"
-                className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 transition-all active:scale-[0.98]"
+                className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 active:scale-[0.98]"
               >
                 <Calculator className="mr-2 h-5 w-5" />
                 Find Your Calculator

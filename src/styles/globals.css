@@ -179,16 +179,17 @@
 
   /* ── Smooth transitions on all interactive elements ── */
   a, button, [role="button"], input, select, textarea {
-    transition-property: color, background-color, border-color, box-shadow, transform, opacity;
-    transition-duration: 200ms;
+    transition-property: color, background-color, border-color, box-shadow, transform;
+    transition-duration: 150ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* ── Button press feedback (active state) ── */
+  /* ── Button press feedback (instant, no transition delay) ── */
   button:active:not(:disabled),
   [role="button"]:active:not([aria-disabled="true"]),
   a.btn:active {
     transform: scale(0.97);
+    transition-duration: 50ms;
   }
 
   /* ── Card hover lift ── */
