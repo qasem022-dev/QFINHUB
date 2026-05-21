@@ -166,6 +166,30 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
             dangerouslySetInnerHTML={{ __html: renderMarkdownToHtml(variant.content) }}
           />
 
+          {/* How to Use */}
+          <div className="mt-8 rounded-xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-800 dark:bg-blue-900/20">
+            <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-2">How to Use This Calculator</h3>
+            <p className="text-sm leading-relaxed text-blue-700 dark:text-blue-400">
+              Enter your specific numbers in the input fields above. Adjust the key parameters — 
+              interest rate, loan term, down payment, or monthly contribution — to match your situation. 
+              The calculator updates instantly, showing your results with interactive charts. 
+              You can export your results as a PDF or image, or share them directly with your financial advisor. 
+              All calculations run in your browser — no sign-up required, and your data stays private.
+            </p>
+          </div>
+
+          {/* Key Benefits */}
+          <div className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 p-5 dark:border-emerald-800 dark:bg-emerald-900/20">
+            <h3 className="text-lg font-semibold text-emerald-800 dark:text-emerald-300 mb-2">Key Benefits</h3>
+            <ul className="space-y-1.5 text-sm text-emerald-700 dark:text-emerald-400 list-disc pl-5">
+              <li>Instant results — no waiting, no loading screens</li>
+              <li>Interactive charts that update as you adjust inputs</li>
+              <li>Export to PDF or image for your records</li>
+              <li>100% free — no account, no credit card, no limits</li>
+              <li>Privacy-first — your financial data never leaves your device</li>
+            </ul>
+          </div>
+
           {/* Related Variant Links */}
           {variant.relatedLinks.length > 0 && (
             <div className="mt-12 rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-surface-dark-elevated">

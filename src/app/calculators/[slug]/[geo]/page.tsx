@@ -184,6 +184,24 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
             {city.name} has its own unique real estate market conditions.
           </p>
 
+          <h2>Key Factors for {city.name} Homebuyers</h2>
+          <ul>
+            <li><strong>Median Home Price:</strong> At {medianFormatted}, {city.name}'s market is {city.medianHomePrice > 400000 ? 'above' : 'near or below'} the national median, affecting affordability calculations.</li>
+            <li><strong>Local Property Taxes:</strong> {city.stateAbbr} property tax rates impact your total monthly payment. Our calculator accounts for estimated taxes based on your location.</li>
+            <li><strong>Insurance Costs:</strong> Homeowners insurance varies by region — {city.region} properties may have different risk profiles that affect premiums.</li>
+            <li><strong>Market Conditions:</strong> With {(city.population / 1000).toFixed(0)}K residents, {city.name}'s housing supply and demand dynamics influence both prices and negotiation leverage.</li>
+            <li><strong>Down Payment Strategy:</strong> First-time buyers in {city.name} may qualify for local and state assistance programs. Our calculator lets you test different down payment scenarios.</li>
+          </ul>
+
+          <h2>How to Get the Most Accurate Results</h2>
+          <p>
+            For the most accurate estimate, replace the default values with your actual numbers. 
+            Enter your specific home price or loan amount, current interest rate from your lender, 
+            and your planned down payment percentage. The calculator will instantly update with 
+            your personalized monthly payment breakdown including principal, interest, taxes, and insurance.
+            All calculations run directly in your browser — your financial data never leaves your device.
+          </p>
+
           <h2>Nearby Cities</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 not-prose">
             {US_CITIES.filter(

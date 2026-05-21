@@ -59,6 +59,17 @@ export default async function GuidePage({ params }: GuidePageProps) {
           </Link>
         </div>
 
+        {/* Why This Matters */}
+        <div className="mb-8 rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-surface-dark-elevated">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Why This Calculator Matters</h2>
+          <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Understanding how to use this calculator correctly can save you time and help you make better financial decisions. 
+            Whether you're planning a major purchase, evaluating an investment, or budgeting for the future, 
+            getting accurate numbers is the first step. This guide walks you through each input field, explains what the results mean, 
+            and shows you how to avoid common pitfalls that could lead to incorrect calculations.
+          </p>
+        </div>
+
         {/* Step-by-step */}
         <div className="space-y-4 mb-8">
           {guide.steps.map((step) => (
@@ -77,6 +88,18 @@ export default async function GuidePage({ params }: GuidePageProps) {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Real-World Example */}
+        <div className="rounded-xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-800 dark:bg-blue-900/20 mb-4">
+          <h2 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-3">Real-World Example</h2>
+          <p className="text-sm leading-relaxed text-blue-700 dark:text-blue-400">
+            Let's walk through a practical example. Enter realistic numbers based on your situation, 
+            then adjust one variable at a time to see how it affects the outcome. For instance, 
+            try changing the interest rate by 0.5% or extending the term by 5 years — you'll immediately 
+            see how small changes can have significant financial impacts over time. 
+            Use the export feature to save or share your results with a financial advisor.
+          </p>
         </div>
 
         {/* Tips */}
