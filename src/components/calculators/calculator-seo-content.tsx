@@ -21,7 +21,7 @@ export function CalculatorSEOContent({
     .slice(0, 4);
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2000px" }}>
+    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="prose prose-gray max-w-4xl dark:prose-invert mx-auto">
         {/* Explanation */}
         <section className="mb-10">
