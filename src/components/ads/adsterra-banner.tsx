@@ -9,6 +9,10 @@ import { useEffect, useRef } from "react";
  * This component uses vanilla JS to create the container + script elements
  * outside React's reconciliation, allowing Adsterra's script to freely
  * manipulate the DOM and read data-psid from the script tag.
+ *
+ * iOS Safari note: Scripts appended to document.head are prioritized over
+ * document.body on Safari. A retry mechanism re-injects the script if ads
+ * don't appear within 6 seconds (Safari sometimes defers async script execution).
  */
 export function AdsterraBanner() {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -24,8 +28,7 @@ export function AdsterraBanner() {
     // Create container
     const container = document.createElement("div");
     container.id = `container-${placementKey}`;
-    container.style.cssText =
-      "min-height:120px;position:relative";
+    container.style.cssText = "min-height:120px;position:relative";
 
     // Create skeleton
     const skeleton = document.createElement("div");
@@ -38,20 +41,36 @@ export function AdsterraBanner() {
     skeleton.appendChild(skeletonText);
     container.appendChild(skeleton);
 
-    // Create invoke.js script
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://pl29448163.profitablecpmratenetwork.com/${placementKey}/invoke.js`;
-    script.dataset.psid = placementKey;
+    // Function to create and inject the Adsterra invoke script
+    const injectScript = () => {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = `https://pl29448163.profitablecpmratenetwork.com/${placementKey}/invoke.js`;
+      script.dataset.psid = placementKey;
+      // Safari prioritizes head scripts — more reliable than body
+      document.head.appendChild(script);
+      return script;
+    };
 
-    // Create skeleton-hider script with timeout fallback
+    // Inject the main Adsterra script
+    let adScript = injectScript();
+
+    // Skeleton-hider script with retry logic for Safari
     const hideScript = document.createElement("script");
-    hideScript.textContent = `(function(){var c=setInterval(function(){var a=document.getElementById('container-${placementKey}');var b=document.getElementById('container-${placementKey}-skeleton');if(a&&a.children.length>1){if(b)b.style.display='none';clearInterval(c);}},500);setTimeout(function(){clearInterval(c);var s=document.getElementById('container-${placementKey}-skeleton');if(s)s.style.display='none';},8000);})();`;
-
-    // Append container to wrapper, scripts to document body for reliable execution
-    wrapper.appendChild(container);
-    document.body.appendChild(script);
+    hideScript.textContent = `(function(){var c=setInterval(function(){var a=document.getElementById('container-${placementKey}');var b=document.getElementById('container-${placementKey}-skeleton');if(a&&a.children.length>1){if(b)b.style.display='none';clearInterval(c);}},500);setTimeout(function(){clearInterval(c);var s=document.getElementById('container-${placementKey}-skeleton');if(s){s.style.display='none';}})();})();`;
     document.body.appendChild(hideScript);
+
+    // Retry: if ads haven't loaded after 6s on Safari, re-inject the script
+    setTimeout(() => {
+      const c = document.getElementById(`container-${placementKey}`);
+      if (c && c.children.length <= 1) {
+        // Remove old script, inject fresh one
+        if (adScript.parentNode) adScript.parentNode.removeChild(adScript);
+        adScript = injectScript();
+      }
+    }, 6000);
+
+    wrapper.appendChild(container);
   }, []);
 
   return (
