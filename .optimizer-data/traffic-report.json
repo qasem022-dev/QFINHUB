@@ -1,0 +1,1022 @@
+{
+  "generated_at": "2026-05-22T12:44:51.465818",
+  "period_days": 7,
+  "search_console": {
+    "summary": {
+      "clicks": 1,
+      "impressions": 73,
+      "ctr": 1.37,
+      "position": 16.7,
+      "period_days": 7
+    },
+    "top_queries": [
+      {
+        "query": "20 000 loan calculator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 90
+      },
+      {
+        "query": "95000 loan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 86
+      },
+      {
+        "query": "formula for monthly mortgage payment and tax",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 64.5
+      },
+      {
+        "query": "how much mortgage can i afford on 100k",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 97
+      },
+      {
+        "query": "how to calculate your retirement income",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 92
+      },
+      {
+        "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "query": "philadelphia city income tax rate",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 61
+      },
+      {
+        "query": "philadelphia income tax rates",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 73
+      },
+      {
+        "query": "quick mortgage affordability calculator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 90
+      },
+      {
+        "query": "what mortgage can i afford on 40k",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 95.5
+      }
+    ],
+    "top_pages": [
+      {
+        "page": "https://www.qfinhub.com/",
+        "clicks": 1,
+        "impressions": 28,
+        "ctr": 3.57,
+        "position": 2.0
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/30-year-treasury-yield-hits-1999-levels-how-to-protect-your-savings-and-retireme",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/fed-chair-change-how-powell-s-pro-tempore-role-and-warsh-s-appointment-could-imp",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 6.8
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 6.9
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/how-to-calculate-monthly-mortgage-payment",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 13.8
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 10.7
+      },
+      {
+        "page": "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 8.5
+      },
+      {
+        "page": "https://www.qfinhub.com/calculators/loan/nashville-tn",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "page": "https://www.qfinhub.com/calculators/loan/reno-nv",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "page": "https://www.qfinhub.com/calculators/percentage-calculator",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 5.5
+      },
+      {
+        "page": "https://www.qfinhub.com/calculators/rent-vs-buy",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 3.6
+      },
+      {
+        "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 19
+      },
+      {
+        "page": "https://www.qfinhub.com/compare/compare-dollar-cost-average-vs-lump-sum",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 6.1
+      },
+      {
+        "page": "https://www.qfinhub.com/cookies",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 2.1
+      },
+      {
+        "page": "https://www.qfinhub.com/guides/how-to-use-child-care-cost",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 2.5
+      },
+      {
+        "page": "https://www.qfinhub.com/guides/how-to-use-loan-comparison",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 3.7
+      },
+      {
+        "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 21.6
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 96
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/afford-130k-40k-7pct",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/afford-400k-250k-6pct",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 90
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/afford-45k-10k-7pct",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 99
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/budget-150k-35-8-5",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/budget-70k-30-13-9",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      }
+    ],
+    "daily_trend": [
+      {
+        "date": "2026-05-18",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 4.7
+      },
+      {
+        "date": "2026-05-19",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 8.8
+      },
+      {
+        "date": "2026-05-20",
+        "clicks": 1,
+        "impressions": 53,
+        "ctr": 1.89,
+        "position": 20.8
+      }
+    ],
+    "queries_by_position": {
+      "top3": [],
+      "top10": [],
+      "top20": [
+        "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be"
+      ],
+      "top50": []
+    }
+  },
+  "analytics": {
+    "summary": {
+      "users": 8,
+      "sessions": 8,
+      "pageviews": 15,
+      "avg_session_duration_sec": 16.0,
+      "bounce_rate": 62.5,
+      "engaged_sessions": 3,
+      "period_days": 7
+    },
+    "sources": [
+      {
+        "source": "(direct) / (none)",
+        "sessions": 4,
+        "users": 4
+      },
+      {
+        "source": "google / cpc",
+        "sessions": 3,
+        "users": 3
+      },
+      {
+        "source": "google / organic",
+        "sessions": 1,
+        "users": 1
+      }
+    ],
+    "source_summary": {
+      "organic_search": 1,
+      "direct": 4,
+      "referral": 0,
+      "social": 0,
+      "other": 3
+    },
+    "top_pages": [
+      {
+        "path": "/",
+        "pageviews": 8,
+        "users": 8,
+        "avg_time_sec": 2.1
+      },
+      {
+        "path": "/calculators",
+        "pageviews": 4,
+        "users": 3,
+        "avg_time_sec": 22.3
+      },
+      {
+        "path": "/calculators/basic-calculator",
+        "pageviews": 1,
+        "users": 1,
+        "avg_time_sec": 0.0
+      },
+      {
+        "path": "/calculators/hourly-to-salary",
+        "pageviews": 1,
+        "users": 1,
+        "avg_time_sec": 20.2
+      },
+      {
+        "path": "/calculators/mortgage-calculator",
+        "pageviews": 1,
+        "users": 1,
+        "avg_time_sec": 24.0
+      }
+    ],
+    "devices": {
+      "desktop": 4,
+      "mobile": 4
+    },
+    "daily_trend": [
+      {
+        "date": "20260515",
+        "users": 2,
+        "sessions": 2,
+        "pageviews": 2
+      },
+      {
+        "date": "20260516",
+        "users": 3,
+        "sessions": 3,
+        "pageviews": 10
+      },
+      {
+        "date": "20260518",
+        "users": 3,
+        "sessions": 3,
+        "pageviews": 3
+      }
+    ]
+  },
+  "google_trends": {
+    "trending_searches": [],
+    "suggestions": {
+      "mortgage calculator": [
+        {
+          "title": "Mortgage calculator",
+          "type": "Topic",
+          "mid": "/m/0dfm1w"
+        },
+        {
+          "title": "Mortgage Calculator +",
+          "type": "Software",
+          "mid": "/g/11k6x029yd"
+        },
+        {
+          "title": "Mortgage Calculator",
+          "type": "Software",
+          "mid": "/g/11jp_gv2m2"
+        },
+        {
+          "title": "Mortgage Calculator",
+          "type": "Software",
+          "mid": "/g/11jpgd1m7t"
+        },
+        {
+          "title": "Karl's Mortgage Calculator",
+          "type": "Software",
+          "mid": "/g/11kzp_l0rk"
+        }
+      ],
+      "loan calculator": [
+        {
+          "title": "Loan Calculator",
+          "type": "Software",
+          "mid": "/g/11rf80mng6"
+        },
+        {
+          "title": "Finance",
+          "type": "Software",
+          "mid": "/g/11k0mnlx34"
+        },
+        {
+          "title": "Auto Loan Calculator",
+          "type": "Software",
+          "mid": "/g/11k6xh14gt"
+        },
+        {
+          "title": "Loan Calc - Payment Calculator",
+          "type": "Software",
+          "mid": "/g/11lgfc6qym"
+        },
+        {
+          "title": "Loan Calculator",
+          "type": "Software",
+          "mid": "/g/11jm8wf9gg"
+        }
+      ],
+      "tax calculator": [
+        {
+          "title": "Discount Calculator - SalesTax",
+          "type": "Software",
+          "mid": "/g/11jlh497qm"
+        },
+        {
+          "title": "Tax Calculator",
+          "type": "Software",
+          "mid": "/g/11k63gd6qm"
+        },
+        {
+          "title": "Tax Calc Aussie",
+          "type": "Software",
+          "mid": "/g/11k6wyqy6r"
+        },
+        {
+          "title": "Tax Calculator 2025",
+          "type": "Software",
+          "mid": "/g/11pl2_nw6r"
+        },
+        {
+          "title": "Crypto Tax Calculator Australia",
+          "type": "Tax preparation service in Australia",
+          "mid": "/g/11rd005ryn"
+        }
+      ],
+      "retirement calculator": [
+        {
+          "title": "Retirement calculator",
+          "type": "Software",
+          "mid": "/g/11rsgy176y"
+        },
+        {
+          "title": "Retirement Calculator",
+          "type": "Software",
+          "mid": "/g/11sb06v4bt"
+        },
+        {
+          "title": "Retirement Calculator, Planner",
+          "type": "Software",
+          "mid": "/g/11jrsl_cq0"
+        },
+        {
+          "title": "FFCalc - Retirement Calculator - Version 3.0.2 - iOS",
+          "type": "Topic",
+          "mid": "/g/11ywvykk3b"
+        },
+        {
+          "title": "FIRE and Retirement Calculator - Version 1.09 - iOS",
+          "type": "Topic",
+          "mid": "/g/11vj9ls79j"
+        }
+      ],
+      "investment calculator": [
+        {
+          "title": "Investment Calculator",
+          "type": "Software",
+          "mid": "/g/11qrs0ytlb"
+        },
+        {
+          "title": "Property investment calculator",
+          "type": "Topic",
+          "mid": "/m/0glpq2f"
+        },
+        {
+          "title": "Bank Asset and Liability Management: Strategy, Trading, Analysis",
+          "type": "Book by Moorad Choudhry",
+          "mid": "/g/12v_kt46m"
+        },
+        {
+          "title": "Property Fixer - Real Estate Investment Calculator - Version 5.6.3 - iOS",
+          "type": "Topic",
+          "mid": "/g/11k0mh9wqr"
+        },
+        {
+          "title": "Investment Calculator - Version 2 - Android",
+          "type": "Topic",
+          "mid": "/g/11mz064gnd"
+        }
+      ],
+      "savings calculator": [
+        {
+          "title": "Interest Calculator",
+          "type": "Software",
+          "mid": "/g/11kzp_pqys"
+        },
+        {
+          "title": "Term Deposit & Savings",
+          "type": "Software",
+          "mid": "/g/11k0mb5q79"
+        },
+        {
+          "title": "Save Money Challenge",
+          "type": "Software",
+          "mid": "/g/11ny2835_z"
+        },
+        {
+          "title": "Personal Monthly Budget Calculator",
+          "type": "Topic",
+          "mid": "/g/11dxqj96dt"
+        },
+        {
+          "title": "CashCash, Savings Calculator - Version 1.0 - iOS",
+          "type": "Topic",
+          "mid": "/g/11t7mfrpgb"
+        }
+      ],
+      "budget calculator": [
+        {
+          "title": "Personal Monthly Budget Calculator",
+          "type": "Topic",
+          "mid": "/g/11dxqj96dt"
+        },
+        {
+          "title": "Wedding Budget Calculator - Version 2 - Android",
+          "type": "Topic",
+          "mid": "/g/11k62ryv5y"
+        },
+        {
+          "title": "Budget Calculator: SmartBudget - Version 3.3.1 - iOS",
+          "type": "Topic",
+          "mid": "/g/11z9rp48j6"
+        },
+        {
+          "title": "AI Budget Calculator - Aisance - Version 1.2.33 - iOS",
+          "type": "Topic",
+          "mid": "/g/11nh_07mzh"
+        },
+        {
+          "title": "Car Loan Budget Calculator - Version 4.1.2 - iOS",
+          "type": "Topic",
+          "mid": "/g/11lcqmkjnk"
+        }
+      ],
+      "debt calculator": [
+        {
+          "title": "Essentials of Fixed Income Securities",
+          "type": "Book by Lingling Wang, Sankarshan Basu, and Sunil Parameswaran",
+          "mid": "/g/11ymz25fn2"
+        },
+        {
+          "title": "Bank Asset and Liability Management: Strategy, Trading, Analysis",
+          "type": "Book by Moorad Choudhry",
+          "mid": "/g/12v_kt46m"
+        },
+        {
+          "title": "Personal Monthly Budget Calculator",
+          "type": "Topic",
+          "mid": "/g/11dxqj96dt"
+        },
+        {
+          "title": "The P.I.L.L. Method: A Better Way To Eliminate Debt",
+          "type": "Book by Don Daniel",
+          "mid": "/g/11j0sk6_sf"
+        },
+        {
+          "title": "Financially Ever After: The Couples' Guide to Managing Money",
+          "type": "Book by Jeff D. Opdyke",
+          "mid": "/g/12byzjqtq"
+        }
+      ],
+      "credit calculator": [
+        {
+          "title": "Mortgage calculator",
+          "type": "Topic",
+          "mid": "/m/0dfm1w"
+        },
+        {
+          "title": "Essentials of Fixed Income Securities",
+          "type": "Book by Lingling Wang, Sankarshan Basu, and Sunil Parameswaran",
+          "mid": "/g/11ymz25fn2"
+        },
+        {
+          "title": "Bank Asset and Liability Management: Strategy, Trading, Analysis",
+          "type": "Book by Moorad Choudhry",
+          "mid": "/g/12v_kt46m"
+        },
+        {
+          "title": "Cost of Credit Calculator - Version 22 - Android",
+          "type": "Topic",
+          "mid": "/g/11pwb89v1h"
+        },
+        {
+          "title": "Super Credit Calculator - Version 2 - Android",
+          "type": "Topic",
+          "mid": "/g/11n3683vfl"
+        }
+      ],
+      "calculator for": [
+        {
+          "title": "Principles of Finance",
+          "type": "Book by Julie A. Dahlquist and Rainford Knight",
+          "mid": "/g/11q3x2wzwl"
+        },
+        {
+          "title": "Princeton Review Digital SAT Premium Prep, 2026: 6 Full-Length Practice Tests (3 in Book + 3 Adaptive Tests Online) + Online Flashcards + Review & Tools",
+          "type": "Book",
+          "mid": "/g/11whxtsll9"
+        },
+        {
+          "title": "Rocket Propulsion Elements",
+          "type": "Novel by George Paul Sutton and Oscar Biblarz",
+          "mid": "/g/11g_xzwftd"
+        },
+        {
+          "title": "Calculator for iPad - Free calc app",
+          "type": "Software",
+          "mid": "/g/11jp_m4kdl"
+        },
+        {
+          "title": "Engineering Mathematics Through Applications",
+          "type": "Book by Kuldeep Singh",
+          "mid": "/g/12v_w7pmf"
+        }
+      ]
+    },
+    "keyword_interest": {
+      "real estate": 79.6,
+      "home buying": 55.9,
+      "refinancing": 38.8,
+      "budget planning": 37.2,
+      "stock market": 35.7,
+      "budget planner": 31.2,
+      "credit cards": 20.6,
+      "retirement planning": 20.3,
+      "how to save money": 19.5,
+      "calculate interest": 13.5,
+      "how much house can I afford": 9.1,
+      "retirement planner": 7.2,
+      "cryptocurrency": 3.8,
+      "tax planning": 1.7,
+      "emergency fund calculator": 0.5,
+      "savings goal calculator": 0.1,
+      "debt payoff plan": 0.0
+    },
+    "keyword_interest_7d": {},
+    "keyword_interest_12m": {},
+    "rising_related": [
+      {
+        "seed": "investment calculator",
+        "query": "calculator.net investment calculator",
+        "value": 250
+      },
+      {
+        "seed": "investment calculator",
+        "query": "daveramsey investment calculator",
+        "value": 170
+      },
+      {
+        "seed": "investment calculator",
+        "query": "investment calculator with withdrawals",
+        "value": 100
+      },
+      {
+        "seed": "investment calculator",
+        "query": "ramsey solutions investment calculator",
+        "value": 70
+      },
+      {
+        "seed": "investment calculator",
+        "query": "ramit investment calculator",
+        "value": 60
+      }
+    ],
+    "top_related": [
+      {
+        "seed": "investment calculator",
+        "query": "investment calculator ramsey",
+        "value": 100
+      },
+      {
+        "seed": "investment calculator",
+        "query": "interest calculator",
+        "value": 66
+      },
+      {
+        "seed": "investment calculator",
+        "query": "stock calculator",
+        "value": 63
+      },
+      {
+        "seed": "investment calculator",
+        "query": "stock investment calculator",
+        "value": 63
+      },
+      {
+        "seed": "investment calculator",
+        "query": "investment calculator retirement",
+        "value": 57
+      },
+      {
+        "seed": "investment calculator",
+        "query": "retirement calculator",
+        "value": 56
+      },
+      {
+        "seed": "investment calculator",
+        "query": "dave ramsey",
+        "value": 55
+      },
+      {
+        "seed": "investment calculator",
+        "query": "mortgage calculator",
+        "value": 46
+      }
+    ],
+    "rising_broad": {
+      "personal finance": [
+        {
+          "query": "openai chatgpt personal finance feature",
+          "value": 17300
+        },
+        {
+          "query": "freelancing guide for beginners",
+          "value": 4250
+        },
+        {
+          "query": "what is chatgpt and how it works",
+          "value": 3900
+        },
+        {
+          "query": "dropshipping explained",
+          "value": 3550
+        },
+        {
+          "query": "passive income ideas",
+          "value": 450
+        },
+        {
+          "query": "seo optimization tips",
+          "value": 400
+        },
+        {
+          "query": "personal finance software for mac",
+          "value": 250
+        },
+        {
+          "query": "ap cybersecurity",
+          "value": 140
+        }
+      ],
+      "stock market": [
+        {
+          "query": "fitness workout plan",
+          "value": 19650
+        },
+        {
+          "query": "cook pasta",
+          "value": 12150
+        },
+        {
+          "query": "how to learn python",
+          "value": 11700
+        },
+        {
+          "query": "jerome powell stock market warning",
+          "value": 9000
+        },
+        {
+          "query": "warren buffett stock market warning",
+          "value": 7500
+        },
+        {
+          "query": "car insurance quotes",
+          "value": 6400
+        },
+        {
+          "query": "is the stock market closed on good friday",
+          "value": 5850
+        },
+        {
+          "query": "is stock market open on good friday",
+          "value": 5150
+        }
+      ]
+    },
+    "related_topics": {},
+    "opportunities": [
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "investment calculator",
+        "query": "calculator.net investment calculator",
+        "growth": 250,
+        "action": "Target rising query: \"calculator.net investment calculator\" (related to investment calculator, +250%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "investment calculator",
+        "query": "daveramsey investment calculator",
+        "growth": 170,
+        "action": "Target rising query: \"daveramsey investment calculator\" (related to investment calculator, +170%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "investment calculator",
+        "query": "investment calculator with withdrawals",
+        "growth": 100,
+        "action": "Target rising query: \"investment calculator with withdrawals\" (related to investment calculator, +100%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "investment calculator",
+        "query": "ramsey solutions investment calculator",
+        "growth": 70,
+        "action": "Target rising query: \"ramsey solutions investment calculator\" (related to investment calculator, +70%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "investment calculator",
+        "query": "ramit investment calculator",
+        "growth": 60,
+        "action": "Target rising query: \"ramit investment calculator\" (related to investment calculator, +60%)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "high",
+        "keyword": "real estate",
+        "interest_score": 79.6,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"real estate\" (score: 79.6, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "home buying",
+        "interest_score": 55.9,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"home buying\" (score: 55.9, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "refinancing",
+        "interest_score": 38.8,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"refinancing\" (score: 38.8, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "budget planning",
+        "interest_score": 37.2,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"budget planning\" (score: 37.2, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "stock market",
+        "interest_score": 35.7,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"stock market\" (score: 35.7, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "budget planner",
+        "interest_score": 31.2,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"budget planner\" (score: 31.2, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "credit cards",
+        "interest_score": 20.6,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"credit cards\" (score: 20.6, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "retirement planning",
+        "interest_score": 20.3,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"retirement planning\" (score: 20.3, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "how to save money",
+        "interest_score": 19.5,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"how to save money\" (score: 19.5, unknown 0% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "medium",
+        "keyword": "calculate interest",
+        "interest_score": 13.5,
+        "long_term_trend": "unknown",
+        "trend_pct": 0,
+        "action": "Target \"calculate interest\" (score: 13.5, unknown 0% over 12m)"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "mortgage calculator",
+        "from_seed": "mortgage calculator",
+        "action": "New keyword via autocomplete: \"mortgage calculator\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "mortgage calculator +",
+        "from_seed": "mortgage calculator",
+        "action": "New keyword via autocomplete: \"mortgage calculator +\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "loan calculator",
+        "from_seed": "loan calculator",
+        "action": "New keyword via autocomplete: \"loan calculator\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "auto loan calculator",
+        "from_seed": "loan calculator",
+        "action": "New keyword via autocomplete: \"auto loan calculator\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "discount calculator - salestax",
+        "from_seed": "tax calculator",
+        "action": "New keyword via autocomplete: \"discount calculator - salestax\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "tax calculator",
+        "from_seed": "tax calculator",
+        "action": "New keyword via autocomplete: \"tax calculator\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "retirement calculator",
+        "from_seed": "retirement calculator",
+        "action": "New keyword via autocomplete: \"retirement calculator\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "retirement calculator, planner",
+        "from_seed": "retirement calculator",
+        "action": "New keyword via autocomplete: \"retirement calculator, planner\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "investment calculator",
+        "from_seed": "investment calculator",
+        "action": "New keyword via autocomplete: \"investment calculator\" \u2014 consider content"
+      },
+      {
+        "type": "suggestion_discovery",
+        "priority": "medium",
+        "keyword": "property investment calculator",
+        "from_seed": "investment calculator",
+        "action": "New keyword via autocomplete: \"property investment calculator\" \u2014 consider content"
+      }
+    ]
+  }
+}

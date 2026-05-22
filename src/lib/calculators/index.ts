@@ -331,7 +331,7 @@ export const allCalculators: CalculatorConfig[] = [
     id: "rent-vs-buy",
     slug: "rent-vs-buy",
     title: "Rent vs. Buy Calculator",
-    description: "Compare the financial outcomes of renting versus buying a home over any time horizon.",
+    description: "Should you rent or buy a home? Compare total costs, equity growth, and breakeven horizon side by side to find out which saves you more money.",
     category: "mortgage",
     icon: "🏘️",
     color: "accent",

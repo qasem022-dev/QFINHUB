@@ -1,59 +1,155 @@
 {
   "date": "2026-05-21",
-  "timestamp": "2026-05-21T17:57:33.949Z",
-  "programmaticSEO": {
-    "status": "ok",
-    "issues": [],
-    "stats": {
-      "variantTemplates": 893,
-      "generatorLines": 377
+  "timestamp": "2026-05-21T22:38:17.351Z",
+  "traffic": {
+    "gsc": {
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "avgPosition": 5.7
+    },
+    "ga4": {
+      "users": 8,
+      "sessions": 8,
+      "pageviews": 15,
+      "bounceRate": 62.5,
+      "avgDuration": 16
+    },
+    "trends": {
+      "topKeywords": [
+        {
+          "keyword": "loan calculator",
+          "score": 88.6
+        },
+        {
+          "keyword": "payment calculator",
+          "score": 87.3
+        },
+        {
+          "keyword": "mortgage calculator",
+          "score": 86.9
+        },
+        {
+          "keyword": "credit score",
+          "score": 80.9
+        },
+        {
+          "keyword": "auto loan calculator",
+          "score": 79.3
+        },
+        {
+          "keyword": "real estate",
+          "score": 78.9
+        },
+        {
+          "keyword": "inflation calculator",
+          "score": 76
+        },
+        {
+          "keyword": "credit card calculator",
+          "score": 71.2
+        },
+        {
+          "keyword": "investing",
+          "score": 71
+        },
+        {
+          "keyword": "CD calculator",
+          "score": 57
+        }
+      ],
+      "spikes": [
+        {
+          "keyword": "amortization calculator",
+          "spike_pct": 13.3
+        },
+        {
+          "keyword": "auto loan calculator",
+          "spike_pct": 11.1
+        }
+      ],
+      "longTermUp": [
+        {
+          "keyword": "credit score",
+          "trend_pct": 15.5
+        },
+        {
+          "keyword": "real estate",
+          "trend_pct": 5.9
+        },
+        {
+          "keyword": "investing",
+          "trend_pct": 35.3
+        }
+      ],
+      "suggestionCount": 50,
+      "opportunities": [
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "loan calculator for cars",
+          "growth": 300,
+          "action": "Target rising query: \"loan calculator for cars\" (related to loan calculator, +300%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "mortgage calculator",
+          "query": "car mortgage calculator",
+          "growth": 250,
+          "action": "Target rising query: \"car mortgage calculator\" (related to mortgage calculator, +250%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "toyota",
+          "growth": 250,
+          "action": "Target rising query: \"toyota\" (related to loan calculator, +250%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "investment calculator",
+          "query": "calculator.net investment calculator",
+          "growth": 200,
+          "action": "Target rising query: \"calculator.net investment calculator\" (related to investment calculator, +200%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "tax calculator",
+          "query": "sale tax calculator",
+          "growth": 180,
+          "action": "Target rising query: \"sale tax calculator\" (related to tax calculator, +180%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "automotive loan calculator",
+          "growth": 160,
+          "action": "Target rising query: \"automotive loan calculator\" (related to loan calculator, +160%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "investment calculator",
+          "query": "daveramsey investment calculator",
+          "growth": 160,
+          "action": "Target rising query: \"daveramsey investment calculator\" (related to investment calculator, +160%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "motorcycle loan calculator",
+          "growth": 150,
+          "action": "Target rising query: \"motorcycle loan calculator\" (related to loan calculator, +150%)"
+        }
+      ]
     }
-  },
-  "keywordAnalysis": {
-    "topKeywords": [
-      {
-        "keyword": "rate",
-        "count": 741
-      },
-      {
-        "keyword": "monthly",
-        "count": 593
-      },
-      {
-        "keyword": "loan",
-        "count": 478
-      },
-      {
-        "keyword": "income",
-        "count": 422
-      },
-      {
-        "keyword": "tax",
-        "count": 351
-      },
-      {
-        "keyword": "mortgage",
-        "count": 322
-      },
-      {
-        "keyword": "payment",
-        "count": 306
-      },
-      {
-        "keyword": "savings",
-        "count": 292
-      },
-      {
-        "keyword": "retirement",
-        "count": 249
-      },
-      {
-        "keyword": "invest",
-        "count": 234
-      }
-    ],
-    "gaps": [],
-    "suggestions": []
   },
   "engineHealth": {
     "engines": {
@@ -61,36 +157,147 @@
         "status": "no-data"
       },
       "x": {
-        "status": "ok",
+        "status": "paused",
         "actionsToday": 0,
         "lastRun": "2026-05-19T11:36:59.538Z"
       },
+      "blog": {
+        "status": "ok",
+        "postsToday": 1,
+        "lastRun": "2026-05-21T17:55:12.726Z"
+      },
       "newsjack": {
         "status": "ok",
-        "totalPublished": 52
+        "totalPublished": 54
       },
       "widgetOutreach": {
         "status": "ok",
         "batchesSent": 15,
         "totalEmailsSent": 26
       },
-      "pdf": {
+      "scenarios": {
         "status": "ok",
-        "totalGenerated": 8
+        "totalPages": 917
       },
-      "pinterest": {
-        "status": "not-setup"
+      "indexing": {
+        "status": "ok",
+        "lastSubmitted": 24,
+        "lastFailed": 0,
+        "timestamp": "2026-05-21T00:40:41.949588"
       }
     },
     "issues": [
-      "HARO: No activity data yet"
+      "HARO: No activity data",
+      "X/Twitter: No posts today — cron may be paused"
     ]
   },
-  "suggestions": [
+  "insights": [
+    {
+      "priority": "high",
+      "action": "5 pages with impressions but ZERO clicks",
+      "details": ", how-to-calculate-monthly-mortgage-payment, percentage-calculator, rent-vs-buy, cookies"
+    },
+    {
+      "priority": "high",
+      "action": "🔥 Rising trend: \"loan calculator for cars\" (+300%)",
+      "details": "Create dedicated content targeting this query immediately"
+    },
+    {
+      "priority": "high",
+      "action": "🚨 Spike detected: \"amortization calculator\" (+13.3% in 7 days)",
+      "details": "This is surging NOW — create content today to capture the wave"
+    },
+    {
+      "priority": "medium",
+      "action": "📈 3 keywords trending up over 12 months",
+      "details": "credit score (+15.5%), real estate (+5.9%), investing (+35.3%)"
+    },
+    {
+      "priority": "low",
+      "action": "💡 50 keyword suggestions via autocomplete",
+      "details": "Review .optimizer-data/traffic-report.json → google_trends.suggestions for new content ideas"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"loan calculator\" (score: 88.6)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"payment calculator\" (score: 87.3)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"mortgage calculator\" (score: 86.9)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"credit score\" (score: 80.9)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"auto loan calculator\" (score: 79.3)",
+      "details": "Optimize existing content or create new page for this keyword"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "action": "📈 3 keywords trending up over 12 months",
+      "details": "credit score (+15.5%), real estate (+5.9%), investing (+35.3%)"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"loan calculator\" (score: 88.6)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"payment calculator\" (score: 87.3)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"mortgage calculator\" (score: 86.9)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"credit score\" (score: 80.9)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"auto loan calculator\" (score: 79.3)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "low",
+      "action": "💡 50 keyword suggestions via autocomplete",
+      "details": "Review .optimizer-data/traffic-report.json → google_trends.suggestions for new content ideas"
+    },
+    {
+      "priority": "high",
+      "action": "5 pages with impressions but ZERO clicks",
+      "details": ", how-to-calculate-monthly-mortgage-payment, percentage-calculator, rent-vs-buy, cookies"
+    },
+    {
+      "priority": "high",
+      "action": "🔥 Rising trend: \"loan calculator for cars\" (+300%)",
+      "details": "Create dedicated content targeting this query immediately"
+    },
+    {
+      "priority": "high",
+      "action": "🚨 Spike detected: \"amortization calculator\" (+13.3% in 7 days)",
+      "details": "This is surging NOW — create content today to capture the wave"
+    },
     {
       "priority": "high",
       "action": "Engine issues detected",
-      "details": "HARO: No activity data yet"
+      "details": "HARO: No activity data; X/Twitter: No posts today — cron may be paused"
     }
   ]
 }
