@@ -196,8 +196,13 @@ function extractQueries(body, subject) {
     }
     
     if (currentQuery) {
-      // Check for reply info
-      const replyMatch = line.match(/reply\s*(?:to|at)?:?\s*([\w.@-]+)/i);
+      // Check for reply info — handle multiple phrasings
+      // 1. "reply with your answer to email@domain.com"
+      let replyMatch = line.match(/reply\s+with\s+(?:your\s+)?(?:answer|response|pitch)\s+(?:to|at)\s+(\S+@\S+)/i);
+      // 2. "reply to: email@domain.com" or "reply at email@domain.com"
+      if (!replyMatch) replyMatch = line.match(/reply\s+(?:to|at):?\s*(\S+@\S+)/i);
+      // 3. "reply: email" (live .cjs runtime — @ optional but helps filter noise)
+      if (!replyMatch) replyMatch = line.match(/reply\s*:?\s*(\S+@\S+)/i);
       if (replyMatch) {
         currentQuery.replyTo = replyMatch[1];
         continue;

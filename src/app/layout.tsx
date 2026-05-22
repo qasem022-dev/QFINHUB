@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
@@ -10,13 +11,16 @@ import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
 import { ConsentBanner } from "@/components/ui/consent-banner";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { AdsterraBanner } from "@/components/ads/adsterra-banner";
-import { defaultLocale, locales, getLanguageCount } from "@/lib/i18n";
-import { ALL_LANGUAGES, getNativeName } from "@/lib/i18n/languages";
+import { defaultLocale, locales } from "@/lib/i18n";
+import { ALL_LANGUAGES } from "@/lib/i18n/languages";
 
+// Optimized font loading — swap ensures text is visible immediately
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
 const baseUrl = "https://www.qfinhub.com";
@@ -178,82 +182,31 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale} suppressHydrationWarning className={inter.variable}>
       <head>
-        {/* DNS Preconnect for third-party origins */}
+        {/* DNS Preconnect — only critical origins */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
-        <link rel="preconnect" href="https://pl29448163.profitablecpmratenetwork.com" />
-        <link rel="dns-prefetch" href="https://fizzyacerbitymellow.com" />
-        {/* iOS Safari viewport optimization — prevent zoom on input focus */}
+        {/* iOS viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-        {/* Inline critical CSS to prevent layout shift + iOS optimizations */}
+        {/* Critical inline CSS — minimal, prevents CLS */}
         <style dangerouslySetInnerHTML={{ __html: `
-          html { overflow-y: scroll; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-          body { margin: 0; -webkit-tap-highlight-color: transparent; }
-          input, textarea, select { font-size: 16px; }
+          html{overflow-y:scroll;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+          body{margin:0;-webkit-tap-highlight-color:transparent}
+          input,textarea,select{font-size:16px}
+          img{max-width:100%;height:auto}
         `}} />
-        {/* ════════════════════════════════════════════════
-             Google Consent Mode v2 — MUST execute BEFORE
-             gtag.js loads so that default consent signals
-             are in place when the tag library initializes.
-             ════════════════════════════════════════════════ */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-
-              // Consent defaults — denied for ads/analytics by default
-              gtag('consent', 'default', {
-                'ad_storage': 'denied',
-                'ad_user_data': 'denied',
-                'ad_personalization': 'denied',
-                'analytics_storage': 'denied',
-                'functionality_storage': 'granted',
-                'personalization_storage': 'denied',
-                'security_storage': 'granted',
-                'wait_for_update': 500,
-              });
-            `,
-          }}
-        />
-        {/* Google tag (gtag.js) — Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZL2W7KLRK8" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ZL2W7KLRK8');
-            `,
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
-        {/* Google AdSense site verification */}
+        {/* JSON-LD structured data — no JS needed */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        {/* Verification tags */}
         <meta name="google-adsense-account" content="ca-pub-1102790706635466" />
-        {/* Pinterest site verification — also set in metadata.other for SSR reliability */}
         <meta name="p:domain_verify" content="4756ee5e97724d0b2403293fe43f64c3" />
-        {/* Hreflang tags for multi-language support */}
-        {locales.map((locale) => (
-          <link
-            key={locale}
-            rel="alternate"
-            hrefLang={locale}
-            href={`${baseUrl}/${locale}`}
-          />
+        {/* Hreflang — only top 8 languages to reduce DOM size */}
+        {["en","es","fr","de","it","pt","hi","zh"].map((locale) => (
+          <link key={locale} rel="alternate" hrefLang={locale} href={`${baseUrl}/?lang=${locale}`} />
         ))}
         <link rel="alternate" hrefLang="x-default" href={baseUrl} />
-        {/* Dual manifest references for browser compatibility */}
+        {/* PWA manifest */}
         <link rel="manifest" href="/manifest.json" />
-        <link rel="manifest" href="/site.webmanifest" />
-        {/* iOS PWA / Add to Home Screen support */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="QFINHUB" />
@@ -266,7 +219,6 @@ export default function RootLayout({
             <AuthProvider>
               {children}
               <SiteFooter />
-              {/* Adsterra Native Banner — client component, inserted outside React DOM management */}
               <AdsterraBanner />
               <PWAInstallPrompt />
               <ConsentBanner />
@@ -274,23 +226,45 @@ export default function RootLayout({
           </LocaleProvider>
           <Toaster />
         </ThemeProvider>
+        {/* Analytics — afterInteractive: loads after page is interactive, doesn't block render */}
         <Analytics />
-        {/* Service Worker registration for PWA */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ("serviceWorker" in navigator) {
-                window.addEventListener("load", function() {
-                  navigator.serviceWorker.register("/sw.js").then(function(reg) {
-                    console.log("SW registered:", reg.scope);
-                  }).catch(function(err) {
-                    console.log("SW registration failed:", err);
-                  });
-                });
-              }
-            `,
-          }}
-        />
+        {/* Google Consent Mode — MUST run before gtag, but deferred to not block */}
+        <Script id="gtag-consent" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'granted',
+              'personalization_storage': 'denied',
+              'security_storage': 'granted',
+              'wait_for_update': 500,
+            });
+          `}
+        </Script>
+        {/* Google Analytics — deferred to not block rendering */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZL2W7KLRK8" strategy="afterInteractive" />
+        <Script id="gtag-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZL2W7KLRK8');
+          `}
+        </Script>
+        {/* Service Worker — lazy onload, zero render impact */}
+        <Script id="sw-register" strategy="lazyOnload">
+          {`
+            if ("serviceWorker" in navigator) {
+              window.addEventListener("load", function() {
+                navigator.serviceWorker.register("/sw.js").catch(function() {});
+              });
+            }
+          `}
+        </Script>
       </body>
     </html>
   );

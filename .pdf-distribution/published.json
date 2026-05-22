@@ -106,5 +106,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/student-loan-guide.md"
       }
     }
+  },
+  "emergency-fund-guide": {
+    "title": "Emergency Fund: How Much to Save and Where",
+    "category": "savings",
+    "generatedAt": "2026-05-22T15:11:25.966Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/emergency-fund-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/emergency-fund-guide.md"
+      }
+    }
   }
 }

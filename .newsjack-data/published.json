@@ -430,5 +430,21 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm]]>"
+  },
+  "https://www.housingwire.com/?p=583417": {
+    "slug": "florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to",
+    "title": "Florida Insurance Crisis: Why Homeowners Need R-PACE and Smart Financial Tools to Stay Afloat",
+    "publishedAt": "2026-05-22T14:31:17.834Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.housingwire.com/articles/r-pace-florida-home-resilience/"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-22/mexico-mid-may-inflation-slowed-after-banxico-ended-easing-cycle": {
+    "slug": "mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances",
+    "title": "Mexico Inflation Slows in May: What It Means for Your Mortgage and Finances",
+    "publishedAt": "2026-05-22T14:31:40.580Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-22/mexico-mid-may-inflation-slowed-after-banxico-ended-easing-cycle"
   }
 }

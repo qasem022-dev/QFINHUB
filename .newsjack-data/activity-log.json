@@ -1222,5 +1222,47 @@
       "tweetId": null,
       "guid": "108309388"
     }
+  },
+  {
+    "ts": "2026-05-22T14:30:58.913Z",
+    "type": "news-match",
+    "details": {
+      "title": "Homeowners need more than a mortgage — they need the tools to stay",
+      "category": "fed-rate",
+      "source": "Housing Wire",
+      "guid": "https://www.housingwire.com/?p=583417"
+    }
+  },
+  {
+    "ts": "2026-05-22T14:31:17.836Z",
+    "type": "news-published",
+    "details": {
+      "slug": "florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to",
+      "title": "Florida Insurance Crisis: Why Homeowners Need R-PACE and Smart Financial Tools to Stay Afloat",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.housingwire.com/?p=583417"
+    }
+  },
+  {
+    "ts": "2026-05-22T14:31:22.839Z",
+    "type": "news-match",
+    "details": {
+      "title": "Mexico Mid-May Inflation Slowed After Banxico Ended Easing Cycle",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-22/mexico-mid-may-inflation-slowed-after-banxico-ended-easing-cycle"
+    }
+  },
+  {
+    "ts": "2026-05-22T14:31:40.581Z",
+    "type": "news-published",
+    "details": {
+      "slug": "mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances",
+      "title": "Mexico Inflation Slows in May: What It Means for Your Mortgage and Finances",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-22/mexico-mid-may-inflation-slowed-after-banxico-ended-easing-cycle"
+    }
   }
 ]
