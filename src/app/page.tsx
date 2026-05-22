@@ -26,7 +26,6 @@ import {
   Users,
   LineChart,
 } from "lucide-react";
-import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 
 const categories = [
@@ -559,8 +558,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }
