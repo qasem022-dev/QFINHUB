@@ -5,11 +5,12 @@ import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
-import { SiteFooter } from "@/components/layout/site-footer";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
 import { ConsentBanner } from "@/components/ui/consent-banner";
+import { SiteFooter } from "@/components/layout/site-footer";
 import { AdsterraBanner } from "@/components/ads/adsterra-banner";
 import { defaultLocale, locales } from "@/lib/i18n";
+import { ALL_LANGUAGES } from "@/lib/i18n/languages";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -98,13 +99,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  viewportFit: "cover",
-};
-
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -135,6 +129,47 @@ const organizationJsonLd = {
     "Free online financial calculator platform with 124+ tools for loans, mortgages, investments, retirement, taxes, and personal finance.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "QFINHUB",
+  url: baseUrl,
+  description:
+    "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "All",
+  browserRequirements: "Requires JavaScript",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  author: {
+    "@type": "Person",
+    name: "Qasem Mohammed",
+    url: "https://qfinhub.com/about",
+    sameAs: [
+      "https://www.linkedin.com/in/qasem-mohammed",
+      "https://github.com/qasem-mohammed",
+    ],
+    jobTitle: "AI & Software Engineer, Founder & Lead Developer",
+    worksFor: {
+      "@type": "Organization",
+      name: "QFINHUB",
+      url: "https://www.qfinhub.com",
+    },
+  },
+  availableLanguage: ALL_LANGUAGES.map((l) => l.name),
+  featureList: [
+    "124 Financial Calculators",
+    "AI Custom Calculator",
+    "Multi-Language Support",
+    "Export to PDF & Image",
+    "Save & Dashboard",
+    "Embeddable Widgets",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -146,6 +181,8 @@ export default function RootLayout({
         {/* DNS Preconnect — critical origins only */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
+        {/* iOS viewport */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
         {/* Critical inline CSS — minimal, prevents CLS */}
         <style dangerouslySetInnerHTML={{ __html: `
           html{overflow-y:scroll;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
@@ -153,7 +190,7 @@ export default function RootLayout({
           input,textarea,select{font-size:16px}
           img{max-width:100%;height:auto}
         `}} />
-        {/* Google Consent Mode v2 — inline, before gtag */}
+        {/* Google Consent Mode — inline, before gtag */}
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer=window.dataLayer||[];
           function gtag(){dataLayer.push(arguments)}
@@ -171,7 +208,8 @@ export default function RootLayout({
           gtag('js',new Date());
           gtag('config','G-ZL2W7KLRK8');
         `}} />
-        {/* Organization JSON-LD */}
+        {/* JSON-LD */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         {/* Verification */}
         <meta name="google-adsense-account" content="ca-pub-1102790706635466" />
