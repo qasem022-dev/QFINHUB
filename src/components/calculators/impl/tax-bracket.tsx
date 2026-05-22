@@ -1,19 +1,12 @@
 "use client";
 
 import * as React from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip as RechartsTooltip,
-  ResponsiveContainer,
-  Legend,
-} from "recharts";
 import { CalculatorLayout, CalculatorInput, ResultCard } from "..";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatCurrency, formatPercentage } from "@/lib/utils";
+
+// Type-only — stripped at compile time, zero runtime cost.
+import type * as RechartsModule from "recharts";
 
 const BRACKETS_2024_SINGLE = [
   { rate: 0.10, from: 0, to: 11600 },
@@ -63,10 +56,22 @@ interface ChartDataItem {
 function HorizontalStackedBar({
   data,
   bracketKeys,
+  rc,
 }: {
   data: ChartDataItem;
   bracketKeys: string[];
+  rc: typeof RechartsModule;
 }) {
+  const {
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip: RechartsTooltip,
+    ResponsiveContainer,
+    Legend,
+  } = rc;
   const chartData = [data];
 
   return (
@@ -127,6 +132,17 @@ function HorizontalStackedBar({
 export default function TaxBracketCalculator() {
   const [annualIncome, setAnnualIncome] = React.useState(80000);
   const [filingStatus, setFilingStatus] = React.useState(0); // 0 = single, 1 = married
+
+  // Dynamic recharts import — defers ~150KB until the chart section is rendered.
+  const [R, setR] = React.useState<typeof RechartsModule | null>(null);
+  const [chartReady, setChartReady] = React.useState(false);
+
+  React.useEffect(() => {
+    import("recharts").then((mod) => {
+      setR(mod);
+      requestAnimationFrame(() => setChartReady(true));
+    });
+  }, []);
 
   const safeIncome = Math.max(0, isFinite(annualIncome) ? annualIncome : 0);
 
@@ -201,10 +217,17 @@ export default function TaxBracketCalculator() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <HorizontalStackedBar
-            data={{ name: "Income", ...bracketAmounts }}
-            bracketKeys={activeBracketKeys.length > 0 ? activeBracketKeys : BRACKET_LABELS}
-          />
+          {chartReady && R ? (
+            <HorizontalStackedBar
+              data={{ name: "Income", ...bracketAmounts }}
+              bracketKeys={activeBracketKeys.length > 0 ? activeBracketKeys : BRACKET_LABELS}
+              rc={R}
+            />
+          ) : (
+            <div className="flex items-center justify-center py-12">
+              <div className="h-5 w-5 animate-spin rounded-full border-2 border-gray-300 border-t-primary-500" />
+            </div>
+          )}
         </CardContent>
       </Card>
       <CalculatorInput

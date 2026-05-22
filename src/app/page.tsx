@@ -260,17 +260,17 @@ export default function Home() {
 
             {/* CTA Buttons — big, bold, action-oriented */}
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link href="/calculators" prefetch={true} className="w-full sm:w-auto">
+              <Link href="/calculators" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="min-h-[56px] w-full rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] sm:w-auto"
+                  className="min-h-[56px] w-full rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] touch-auto touch-manipulation sm:w-auto"
                 >
                   <Calculator className="mr-2 h-5 w-5" />
                   Browse All 124 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/calculators?cat=mortgage" prefetch={true} className="w-full sm:w-auto">
+              <Link href="/calculators?cat=mortgage" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
@@ -357,7 +357,7 @@ export default function Home() {
                 <Link
                   key={uc.title}
                   href={uc.link}
-                  className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
+                  className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-[transform,box-shadow] duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
                 >
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 text-white shadow-sm transition-transform group-hover:scale-110">
                     <Icon className="h-6 w-6" />
@@ -368,9 +368,9 @@ export default function Home() {
                   <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
                     {uc.desc}
                   </p>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary-600 transition-all group-hover:gap-2 dark:text-primary-400">
+                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary-600 transition-[gap] group-hover:gap-2 dark:text-primary-400">
                     {uc.linkText}
-                    <ArrowRight className="h-4 w-4 transition-all group-hover:translate-x-0.5" />
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                   </div>
                 </Link>
               );
@@ -399,7 +399,7 @@ export default function Home() {
                 <Link
                   key={cat.slug}
                   href={`/calculators?cat=${cat.slug}`}
-                  className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
+                  className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-[transform,box-shadow] duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
                 >
                   <div className="flex items-start justify-between">
                     <div
@@ -442,7 +442,7 @@ export default function Home() {
               <Link
                 key={calc.href}
                 href={calc.href}
-                className="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition-all duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
+                className="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
               >
                 <div>
                   <span className="text-xs font-medium uppercase tracking-wider text-primary-600 dark:text-primary-400">
@@ -452,13 +452,13 @@ export default function Home() {
                     {calc.name}
                   </h3>
                 </div>
-                <ArrowRight className="h-4 w-4 shrink-0 text-gray-300 transition-all group-hover:translate-x-0.5 group-hover:text-primary-600" />
+                <ArrowRight className="h-4 w-4 shrink-0 text-gray-300 transition-[transform,color] group-hover:translate-x-0.5 group-hover:text-primary-600" />
               </Link>
             ))}
           </div>
 
           <div className="mt-8 text-center">
-            <Link href="/calculators" prefetch={true}>
+            <Link href="/calculators">
               <Button
                 variant="outline"
                 className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600"
@@ -488,7 +488,7 @@ export default function Home() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
+                className="group rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
               >
                 <div
                   className={`mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-to-br ${feature.color} text-white shadow-sm`}
@@ -532,10 +532,10 @@ export default function Home() {
             </span>
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link href="/calculators" prefetch={true}>
+            <Link href="/calculators">
               <Button
                 size="lg"
-                className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 active:scale-[0.98]"
+                className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 active:scale-[0.98] touch-manipulation"
               >
                 <Calculator className="mr-2 h-5 w-5" />
                 Find Your Calculator

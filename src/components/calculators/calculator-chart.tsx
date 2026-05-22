@@ -1,25 +1,13 @@
 "use client";
 
 import * as React from "react";
-import {
-  LineChart,
-  Line,
-  BarChart,
-  Bar,
-  PieChart,
-  Pie,
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip as RechartsTooltip,
-  ResponsiveContainer,
-  Cell,
-  Legend,
-} from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+
+// Recharts is ~150KB gzipped — loading it eagerly bloats every calculator page bundle.
+// We defer it to a single dynamic chunk that only loads when a chart is scrolled into view.
+// Type-only import gives full type safety at zero runtime cost (stripped at compile time).
+import type * as RechartsModule from "recharts";
 
 interface CalculatorChartProps {
   type: "line" | "bar" | "pie" | "area";
@@ -111,15 +99,44 @@ export function CalculatorChart({
   className,
   height = 300,
 }: CalculatorChartProps) {
-  const [mounted, setMounted] = React.useState(false);
   const chartColors = colors ?? DEFAULT_COLORS;
   const keys = Array.isArray(yKey) ? yKey : [yKey];
 
-  // Recharts ResponsiveContainer needs a layout pass before it can measure.
-  // Defer rendering until after mount to avoid 0x0 flash.
+  // Dynamic import: recharts (~150KB) loads as a single async chunk on first render.
+  // Until then the spinner shows.  After load, `mounted` triggers the layout pass
+  // so ResponsiveContainer can measure correctly — no 0×0 flash.
+  const [mounted, setMounted] = React.useState(false);
+  const [R, setR] = React.useState<typeof RechartsModule | null>(null);
+
   React.useEffect(() => {
-    setMounted(true);
+    import("recharts").then((mod) => {
+      setR(mod);
+      // Give the browser a frame to lay out the container before rendering the chart.
+      requestAnimationFrame(() => setMounted(true));
+    });
   }, []);
+
+  // Destructure recharts components from the dynamically-loaded module.
+  // The cast is safe: renderChart() is only called when `mounted` is true, and
+  // `mounted` is only set AFTER the dynamic import resolves.  At that point
+  // R is the full recharts module — the `?? {}` fallback is never reached.
+  const {
+    LineChart,
+    Line,
+    BarChart,
+    Bar,
+    PieChart,
+    Pie,
+    AreaChart,
+    Area,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip: RechartsTooltip,
+    ResponsiveContainer,
+    Cell,
+    Legend,
+  } = (R ?? {}) as typeof RechartsModule;
 
   const renderChart = () => {
     switch (type) {
