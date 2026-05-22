@@ -6,7 +6,9 @@ import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { SiteFooter } from "@/components/layout/site-footer";
-import { LazyClientComponents } from "@/components/lazy-client-components";
+import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
+import { ConsentBanner } from "@/components/ui/consent-banner";
+import { AdsterraBanner } from "@/components/ads/adsterra-banner";
 import { defaultLocale, locales } from "@/lib/i18n";
 
 const inter = Inter({
@@ -94,6 +96,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
 };
 
 const organizationJsonLd = {
@@ -185,7 +194,9 @@ export default function RootLayout({
             <AuthProvider>
               {children}
               <SiteFooter />
-              <LazyClientComponents />
+              <AdsterraBanner />
+              <PWAInstallPrompt />
+              <ConsentBanner />
             </AuthProvider>
           </LocaleProvider>
           <Toaster />
