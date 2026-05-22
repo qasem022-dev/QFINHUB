@@ -178,9 +178,13 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale} suppressHydrationWarning className={inter.variable}>
       <head>
-        {/* DNS Preconnect — critical origins only */}
+        {/* DNS Preconnect — critical origins */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://pl29448163.profitablecpmratenetwork.com" />
+        <link rel="preconnect" href="https://pavdeyvpxqwrgdqervxt.supabase.co" />
+        {/* DNS Prefetch — secondary origins (cheaper than preconnect) */}
+        <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
         {/* iOS viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
         {/* Critical inline CSS — minimal, prevents CLS */}
