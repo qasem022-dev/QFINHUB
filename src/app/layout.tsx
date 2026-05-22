@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
@@ -240,7 +239,6 @@ export default function RootLayout({
           </LocaleProvider>
           <Toaster />
         </ThemeProvider>
-        <Analytics />
         <script dangerouslySetInnerHTML={{ __html: `
           if("serviceWorker" in navigator){
             window.addEventListener("load",function(){
