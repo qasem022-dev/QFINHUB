@@ -17,14 +17,10 @@ import {
   Shield,
   Star,
   Sparkles,
-  ChevronRight,
   Percent,
   Landmark,
   Search,
-  DollarSign,
-  Clock,
   Users,
-  LineChart,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 
