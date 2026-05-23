@@ -25,12 +25,14 @@ interface ScenarioData {
   computed: Record<string, unknown>;
   title: string;
   metaDescription: string;
+  directAnswer?: string;
   h1: string;
   intro: string;
   resultsSummary: string;
   keyFactors: string;
   comparison: string;
-  tips: string;
+  howToSteps?: Array<{ name: string; text: string }>;
+  tips?: string;
   faqs: Array<{ question: string; answer: string }>;
   disclaimer: string;
   generatedAt: string;
@@ -178,6 +180,17 @@ export default async function ScenarioPage({ params }: ScenarioPageProps) {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
             {scenario.h1}
           </h1>
+          {/* AI Overviews Direct Answer — Google scrapes this for featured snippets */}
+          {scenario.directAnswer && (
+            <div className="mb-6 rounded-xl border-2 border-blue-200 bg-blue-50/50 p-5 dark:border-blue-800 dark:bg-blue-900/10">
+              <p className="text-base font-semibold text-blue-900 dark:text-blue-100 mb-1">
+                📊 Quick Answer
+              </p>
+              <p className="text-gray-800 dark:text-gray-200 leading-relaxed">
+                {scenario.directAnswer}
+              </p>
+            </div>
+          )}
           <div
             className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: scenario.intro }}
@@ -264,16 +277,37 @@ export default async function ScenarioPage({ params }: ScenarioPageProps) {
           />
         </div>
 
-        {/* Tips */}
-        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 p-6 mb-8">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-            Actionable Tips for This Scenario
-          </h2>
-          <div
-            className="text-gray-600 dark:text-gray-300 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: scenario.tips }}
-          />
-        </div>
+        {/* How-To Steps (for Google HowTo rich results) */}
+        {scenario.howToSteps && scenario.howToSteps.length > 0 ? (
+          <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 p-6 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+              How to Use This Calculator — Step by Step
+            </h2>
+            <ol className="space-y-4">
+              {scenario.howToSteps.map((step, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 flex items-center justify-center text-sm font-bold">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <p className="font-semibold text-gray-900 dark:text-white">{step.name}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mt-0.5">{step.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ) : scenario.tips ? (
+          <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 p-6 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+              Actionable Tips for This Scenario
+            </h2>
+            <div
+              className="text-gray-600 dark:text-gray-300 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: scenario.tips }}
+            />
+          </div>
+        ) : null}
 
         {/* FAQs */}
         {scenario.faqs && scenario.faqs.length > 0 && (
@@ -383,15 +417,24 @@ function buildSchema(scenario: ScenarioData) {
     author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
   };
 
+  const howToSteps = scenario.howToSteps && scenario.howToSteps.length > 0
+    ? scenario.howToSteps.map((step, i) => ({
+        "@type": "HowToStep" as const,
+        position: i + 1,
+        name: step.name,
+        text: step.text,
+      }))
+    : [
+        { "@type": "HowToStep" as const, position: 1, name: "Review the pre-filled parameters", text: `The calculator above is pre-configured with the specific numbers for this scenario: ${scenario.title}.` },
+        { "@type": "HowToStep" as const, position: 2, name: "Review your results", text: "The calculator instantly shows your results including detailed breakdowns specific to your numbers." },
+        { "@type": "HowToStep" as const, position: 3, name: "Adjust and compare", text: "Modify any input field to compare different rates, amounts, or terms and find your optimal scenario." },
+      ];
+
   const howTo = {
     "@type": "HowTo",
     name: `How to Use the ${scenario.calculatorName}`,
     description: `Step-by-step guide to calculating your specific ${scenario.calculatorName.toLowerCase()} scenario.`,
-    step: [
-      { "@type": "HowToStep", position: 1, name: "Review the pre-filled parameters", text: `The calculator above is pre-configured with the specific numbers for this scenario: ${scenario.title}.` },
-      { "@type": "HowToStep", position: 2, name: "Review your results", text: "The calculator instantly shows your results including detailed breakdowns specific to your numbers." },
-      { "@type": "HowToStep", position: 3, name: "Adjust and compare", text: "Modify any input field to compare different rates, amounts, or terms and find your optimal scenario." },
-    ],
+    step: howToSteps,
   };
 
   const faqPage = scenario.faqs && scenario.faqs.length > 0

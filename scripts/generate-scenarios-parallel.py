@@ -29,75 +29,107 @@ DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 DEEPSEEK_MODEL = "deepseek-v4-flash"
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 
+# ═══════════════════════════════════════════════════════════════
+# PARAMETER GRIDS — Search-Volume-Driven (May 23, 2026)
+# Values reflect what people ACTUALLY search on Google, not random
+# combinations. Rounded numbers, common financial milestones, and
+# rates that match real-world market conditions.
+# ═══════════════════════════════════════════════════════════════
 CALCULATOR_GRIDS = {
     "mortgage-calculator": {
         "name": "Mortgage Calculator", "category": "mortgage", "priority": 10,
         "params": {
-            "homePrice": [100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000, 600000, 750000, 1000000],
-            "downPct": [3, 5, 10, 15, 20, 25, 30],
-            "rate": [5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0],
-            "term": [10, 15, 20, 30, 40],
+            # Top searched: "$300k mortgage", "$200k house", "$400k home"
+            "homePrice": [150000, 200000, 250000, 300000, 350000, 400000, 500000, 600000, 750000, 1000000],
+            # Common: 20% is standard, 10%/5% for first-time, 3% for FHA
+            "downPct": [3, 5, 10, 15, 20, 25],
+            # Current market rates (mid-2026): 6.0-7.5% range
+            "rate": [5.5, 6.0, 6.5, 7.0, 7.5, 8.0],
+            # 30yr standard, 15yr popular for refi
+            "term": [15, 30],
         },
     },
     "compound-interest": {
         "name": "Compound Interest Calculator", "category": "investing", "priority": 9,
         "params": {
-            "principal": [1000, 5000, 10000, 25000, 50000, 100000, 250000, 500000],
-            "monthly": [0, 100, 250, 500, 1000, 2000],
-            "rate": [3, 4, 5, 6, 7, 8, 9, 10],
+            # Top searched: "$10k at 5%", "$100k compound interest"
+            "principal": [1000, 5000, 10000, 25000, 50000, 100000, 250000, 500000, 1000000],
+            # Monthly contributions people actually make
+            "monthly": [0, 100, 250, 500, 1000, 2000, 5000],
+            # Common returns: 5% conservative, 7% historical S&P, 10% aggressive
+            "rate": [4, 5, 6, 7, 8, 10],
+            # Timeframes: 10yr milestone, 20yr mid-term, 30yr retirement
             "years": [5, 10, 15, 20, 25, 30, 40],
         },
     },
     "retirement-planning": {
         "name": "Retirement Calculator", "category": "retirement", "priority": 8,
         "params": {
-            "currentAge": [25, 30, 35, 40, 45, 50, 55],
-            "retireAge": [60, 62, 65, 67, 70],
-            "currentSavings": [0, 10000, 50000, 100000, 250000, 500000],
+            # Common retirement planning ages
+            "currentAge": [25, 30, 35, 40, 45, 50, 55, 60],
+            # Standard retirement ages: 62 early, 65 Medicare, 67 full SS
+            "retireAge": [62, 65, 67, 70],
+            # Real savings milestones
+            "currentSavings": [0, 10000, 50000, 100000, 250000, 500000, 1000000],
+            # Monthly contributions: $500 IRA max-ish, $1000 common, $2000 aggressive
             "monthlyContribution": [100, 250, 500, 1000, 2000, 5000],
+            # Conservative to aggressive returns
             "annualReturn": [4, 5, 6, 7, 8],
-            "desiredIncome": [30000, 50000, 75000, 100000, 150000],
+            # Income needs: $50k modest, $75k comfortable, $100k+ affluent
+            "desiredIncome": [40000, 50000, 60000, 75000, 100000, 150000],
         },
     },
     "401k-calculator": {
         "name": "401k Calculator", "category": "retirement", "priority": 8,
         "params": {
-            "salary": [30000, 50000, 75000, 100000, 150000, 200000],
+            # Common salary ranges
+            "salary": [40000, 50000, 60000, 75000, 100000, 150000, 200000],
+            # Contribution: 3% min for match, 6% common, 10-15% recommended
             "contributionPct": [3, 5, 6, 10, 15, 20],
+            # Match: 50% of 6% is most common, 100% of 3-5% is generous
             "employerMatch": [50, 100],
             "matchLimit": [3, 4, 5, 6],
-            "years": [10, 20, 30],
+            "years": [10, 20, 30, 40],
             "annualReturn": [5, 6, 7, 8],
         },
     },
     "auto-loan": {
         "name": "Auto Loan Calculator", "category": "auto", "priority": 7,
         "params": {
-            "loanAmount": [15000, 20000, 25000, 30000, 35000, 40000, 50000, 60000],
-            "rate": [3, 4, 5, 6, 7, 8, 9],
-            "term": [36, 48, 60, 72, 84],
+            # New car prices 2026: $25-50k range
+            "loanAmount": [15000, 20000, 25000, 30000, 35000, 40000, 50000],
+            # Current auto rates: 5-9% depending on credit
+            "rate": [4, 5, 6, 7, 8, 9],
+            # 60mo most common, 72mo growing, 36/48mo for low rates
+            "term": [36, 48, 60, 72],
         },
     },
     "debt-payoff": {
         "name": "Debt Payoff Calculator", "category": "debt", "priority": 6,
         "params": {
+            # Common debt amounts
             "balance": [1000, 5000, 10000, 15000, 25000, 50000, 100000],
-            "rate": [12, 15, 18, 20, 22, 25, 28, 30],
-            "monthlyPayment": [50, 100, 200, 300, 500, 1000],
+            # Credit card APR range (2026 rates)
+            "rate": [15, 18, 20, 22, 25, 28, 30],
+            # Realistic monthly payments
+            "monthlyPayment": [100, 200, 300, 500, 1000, 2000],
         },
     },
     "savings-goal": {
         "name": "Savings Goal Calculator", "category": "savings", "priority": 5,
         "params": {
+            # Common savings targets
             "goal": [5000, 10000, 25000, 50000, 100000, 250000, 500000],
-            "currentSavings": [0, 1000, 5000, 10000],
+            "currentSavings": [0, 1000, 5000, 10000, 25000],
             "monthlyContribution": [100, 250, 500, 1000, 2000],
-            "annualReturn": [1, 2, 3, 4, 5, 6],
+            # HYSA rates: 1-5% typical
+            "annualReturn": [1, 2, 3, 4, 5],
         },
     },
     "budget-planner": {
         "name": "Budget Calculator", "category": "budgeting", "priority": 5,
         "params": {
+            # Income ranges people actually earn
             "monthlyIncome": [2500, 3500, 5000, 7500, 10000, 15000, 20000],
             "scenario": ["single", "family-4", "couple", "student", "retiree"],
         },
@@ -252,19 +284,26 @@ COMPUTED RESULTS: {json.dumps(computed)}
 
 Generate a JSON object with these fields (use HTML tags, not markdown):
 {{
-  "title": "SEO title (50-60 chars) with specific numbers",
-  "metaDescription": "Meta description (140-155 chars) with key numbers",
-  "h1": "H1 heading specific to this scenario",
-  "intro": "3-4 sentence intro using <p> tags with specific numbers",
-  "resultsSummary": "2-3 paragraphs <p> tags explaining results with computed numbers",
-  "keyFactors": "<ul><li>...</li></ul> with 4-6 specific factors",
-  "comparison": "2 paragraphs comparing this scenario to alternatives with numbers",
-  "tips": "<ol><li>...</li></ol> with 3-5 actionable tips",
-  "faqs": [{{"question": "Q", "answer": "A using <p> tags"}}] x 4,
+  "title": "SEO title (50-60 chars) with specific numbers — e.g. '$300k Mortgage at 6.5%: Monthly Payment & Total Cost'",
+  "metaDescription": "Meta description (140-155 chars) with key numbers that compels clicks",
+  "directAnswer": "50-80 word direct answer at the TOP of the page, starting with the key number. Google scrapes this for AI Overviews. Example: 'A $300,000 mortgage at 6.5% for 30 years costs $1,896 per month (principal & interest). Over the full loan term, you pay $382,636 in total interest — nearly $83,000 more than the original loan amount. With a 20% down payment of $60,000, your total loan is $240,000.'",
+  "h1": "H1 heading specific to this scenario with the key numbers",
+  "intro": "3-4 sentence intro using <p> tags expanding on the direct answer with context",
+  "resultsSummary": "2-3 paragraphs <p> tags explaining results in detail with ALL computed numbers referenced",
+  "keyFactors": "<ul><li>...</li></ul> with 4-6 specific factors that affect this calculation",
+  "comparison": "2 paragraphs comparing this scenario to alternative rates/terms/amounts with numbers",
+  "howToSteps": [{{"name": "Step 1: Action description", "text": "Detailed step instruction"}}] x 4-5 steps for using this calculator. These power Google HowTo rich results.",
+  "faqs": [{{"question": "Q using natural search language", "answer": "A using <p> tags with specific numbers"}}] x 4,
   "disclaimer": "Educational estimate only — not financial advice."
 }}
 
-RULES: Be specific with numbers. Natural tone, no AI buzzwords. 800-1200 words total. Return ONLY valid JSON."""
+RULES:
+- Be specific with ALL computed numbers — reference them by exact value.
+- Natural tone, no AI buzzwords (avoid: 'delve', 'unlock', 'game-changer', 'revolutionize').
+- Minimum 900 words total (Google requires 500+ for indexing; we target 900+ for value).
+- directAnswer MUST be first visible content — this is what Google shows in AI Overviews.
+- howToSteps power Google HowTo rich results — each step must be actionable and specific.
+- Return ONLY valid JSON — no markdown fences, no trailing text."""
 
 def call_deepseek(prompt):
     payload = {
@@ -330,12 +369,13 @@ def generate_one_page(calc_type, calc_config, params):
             "computed": computed,
             "title": content.get("title", ""),
             "metaDescription": content.get("metaDescription", ""),
+            "directAnswer": content.get("directAnswer", ""),
             "h1": content.get("h1", ""),
             "intro": content.get("intro", ""),
             "resultsSummary": content.get("resultsSummary", ""),
             "keyFactors": content.get("keyFactors", ""),
             "comparison": content.get("comparison", ""),
-            "tips": content.get("tips", ""),
+            "howToSteps": content.get("howToSteps", []),
             "faqs": content.get("faqs", []),
             "disclaimer": content.get("disclaimer", "Educational estimate only — not financial advice."),
             "generatedAt": datetime.now(timezone.utc).isoformat(),
