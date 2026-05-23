@@ -389,7 +389,7 @@ export function generateMetaDescription(
       return desc;
     }
     default:
-      return `Use our free ${calculatorName} to calculate your financial scenario. Get accurate results instantly.`;
+      return `Use our free ${calculatorName} to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed — try it now.`;
   }
 }
 

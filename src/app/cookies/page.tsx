@@ -4,10 +4,9 @@ export const metadata: Metadata = {
   title: "Cookie Policy",
   description:
     "QFINHUB Cookie Policy — Learn about the cookies and similar tracking technologies used on our platform and how you can control them.",
-  openGraph: {
-    title: "Cookie Policy | QFINHUB",
-    description:
-      "Learn how QFINHUB uses cookies and similar tracking technologies to operate and improve our platform.",
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
