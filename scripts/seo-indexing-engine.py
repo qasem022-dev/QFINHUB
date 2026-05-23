@@ -150,6 +150,35 @@ def get_tool_variant_pages():
     urls = [f"https://www.qfinhub.com/tools/{s}" for s in slugs[:20]]
     return urls
 
+def get_recent_scenario_pages():
+    """Get the most recently generated scenario pages (last batch)"""
+    index_file = os.path.join(PROJECT_DIR, "public/data/scenarios/index.json")
+    if not os.path.exists(index_file):
+        return []
+    
+    with open(index_file) as f:
+        index = json.load(f)
+    
+    # Get the 10 most recently added slugs (index preserves insertion order in Python 3.7+)
+    recent_slugs = list(index.keys())[-15:]
+    urls = [f"https://www.qfinhub.com/scenario/{s}" for s in recent_slugs]
+    return urls
+
+def get_compare_pages():
+    """Get comparison/best-calculator pages"""
+    compare_dir = os.path.join(PROJECT_DIR, "src/lib/programmatic-seo")
+    comparisons_file = os.path.join(compare_dir, "comparisons.ts")
+    if not os.path.exists(comparisons_file):
+        return []
+    
+    with open(comparisons_file) as f:
+        content = f.read()
+    
+    import re
+    slugs = re.findall(r'slug:\s*"([^"]+)"', content)
+    urls = [f"https://www.qfinhub.com/compare/{s}" for s in slugs[:10]]
+    return urls
+
 def log_result(success, failed, errors):
     """Log results to JSON log file"""
     entry = {
@@ -186,7 +215,13 @@ def main():
     blog_urls = get_recent_blog_posts()
     urls.extend([u for u in blog_urls if u not in urls])
     tool_urls = get_tool_variant_pages()
-    urls.extend([u for u in tool_urls if u not in urls][:15])  # Cap tool pages at 15 to avoid rate limits
+    urls.extend([u for u in tool_urls if u not in urls][:15])
+    # Add newest scenario pages (highest-value new content)
+    scenario_urls = get_recent_scenario_pages()
+    urls.extend([u for u in scenario_urls if u not in urls][:10])
+    # Add comparison pages (low competition, high conversion)
+    compare_urls = get_compare_pages()
+    urls.extend([u for u in compare_urls if u not in urls][:5])
     
     print(f"\n📤 Submitting {len(urls)} URLs...")
     

@@ -55,16 +55,80 @@ const COMPARISON_PAIRS: { a: string; b: string; title: string; description: stri
   { a: "inflation-calculator", b: "future-value", title: "Inflation vs Future Value Calculator", description: "Compare how inflation erodes value against future investment growth" },
   { a: "dollar-cost-average", b: "lump-sum", title: "Dollar-Cost Average vs Lump Sum Calculator", description: "Compare DCA strategy against lump sum investing over time" },
   { a: "dividend-calculator", b: "stock-return", title: "Dividend vs Stock Return Calculator", description: "Compare dividend income against total stock market returns" },
-  { a: "present-value", b: "future-value", title: "Present Value vs Future Value Calculator", description: "Compare the time value of money with present and future value calculations" },
+  // Portfolio comparisons
   { a: "portfolio-allocator", b: "sharpe-ratio", title: "Portfolio Allocation vs Sharpe Ratio Calculator", description: "Compare asset allocation strategies with risk-adjusted returns" },
   { a: "capm-calculator", b: "sharpe-ratio", title: "CAPM vs Sharpe Ratio Calculator", description: "Compare expected returns from CAPM against risk-adjusted performance" },
 ];
 
+// ═══════════════════════════════════════════════════════════════
+// "Best Calculator" Pages — target high-volume search queries
+// People search "best mortgage calculator 2026" — these pages
+// compare QFINHUB's tool against top competitors.
+// ═══════════════════════════════════════════════════════════════
+const BEST_CALCULATOR_PAGES: { slug: string; title: string; description: string; calculatorSlug: string; competitors: string[] }[] = [
+  {
+    slug: "best-mortgage-calculator",
+    title: "Best Mortgage Calculator 2026 — Free, Fast & Accurate",
+    description: "Compare QFINHUB's free mortgage calculator vs Bankrate, NerdWallet, and Zillow. See side-by-side features, accuracy, and which is best for your home buying needs.",
+    calculatorSlug: "mortgage-calculator",
+    competitors: ["Bankrate Mortgage Calculator", "NerdWallet Mortgage Calculator", "Zillow Home Loan Calculator", "Calculator.net Mortgage Calculator"],
+  },
+  {
+    slug: "best-compound-interest-calculator",
+    title: "Best Compound Interest Calculator 2026 — See Your Money Grow",
+    description: "Compare QFINHUB's compound interest calculator vs Investor.gov, NerdWallet, and Bankrate. Interactive charts, monthly contributions, and export features compared.",
+    calculatorSlug: "compound-interest",
+    competitors: ["Investor.gov Compound Interest Calculator", "NerdWallet Compound Interest Calculator", "Bankrate Compound Interest Calculator"],
+  },
+  {
+    slug: "best-retirement-calculator",
+    title: "Best Retirement Calculator 2026 — Plan Your Future Free",
+    description: "Compare QFINHUB's retirement calculator vs Fidelity, Vanguard, and NerdWallet. Side-by-side comparison of features, assumptions, and accuracy for retirement planning.",
+    calculatorSlug: "retirement-planning",
+    competitors: ["Fidelity Retirement Calculator", "Vanguard Retirement Calculator", "NerdWallet Retirement Calculator", "AARP Retirement Calculator"],
+  },
+  {
+    slug: "best-loan-calculator",
+    title: "Best Loan Calculator 2026 — Free Amortization & Payment Tool",
+    description: "Compare QFINHUB's loan calculator vs Bankrate, Calculator.net, and NerdWallet. See which has the best amortization schedule, payment breakdown, and features.",
+    calculatorSlug: "loan-calculator",
+    competitors: ["Bankrate Loan Calculator", "Calculator.net Loan Calculator", "NerdWallet Loan Calculator"],
+  },
+  {
+    slug: "best-401k-calculator",
+    title: "Best 401(k) Calculator 2026 — Maximize Your Employer Match",
+    description: "Compare QFINHUB's 401(k) calculator vs Bankrate, NerdWallet, and SmartAsset. See which tool helps you maximize employer match and retirement savings.",
+    calculatorSlug: "401k-calculator",
+    competitors: ["Bankrate 401(k) Calculator", "NerdWallet 401(k) Calculator", "SmartAsset 401(k) Calculator"],
+  },
+  {
+    slug: "best-tax-calculator",
+    title: "Best Tax Calculator 2026 — Estimate Your Refund Free",
+    description: "Compare QFINHUB's tax calculator vs TurboTax, H&R Block, and SmartAsset. Free income tax estimation, bracket visualization, and deduction analysis.",
+    calculatorSlug: "tax-calculator",
+    competitors: ["TurboTax TaxCaster", "H&R Block Tax Calculator", "SmartAsset Tax Calculator", "eFile.com Tax Calculator"],
+  },
+  {
+    slug: "best-investment-calculator",
+    title: "Best Investment Calculator 2026 — ROI, CAGR & Portfolio Tools",
+    description: "Compare QFINHUB's investment calculator vs Bankrate, NerdWallet, and Calculator.net. See ROI, CAGR, dividend, and portfolio analysis features compared.",
+    calculatorSlug: "roi-calculator",
+    competitors: ["Bankrate Investment Calculator", "NerdWallet Investment Calculator", "Calculator.net Investment Calculator"],
+  },
+  {
+    slug: "best-budget-calculator",
+    title: "Best Budget Calculator 2026 — Free Monthly Budget Planner",
+    description: "Compare QFINHUB's budget calculator vs Mint, YNAB, and NerdWallet. Free budget planning with category breakdowns and savings goal tracking.",
+    calculatorSlug: "budget-planner",
+    competitors: ["Mint Budget Calculator", "NerdWallet Budget Calculator", "EveryDollar Budget Calculator"],
+  },
+];
+
 /**
- * Get all comparison page data.
+ * Get all comparison page data — both vs comparisons and best-calculator pages.
  */
 export function getAllComparisons(): CalculatorComparison[] {
-  return COMPARISON_PAIRS.map((pair) => ({
+  const vsPages = COMPARISON_PAIRS.map((pair) => ({
     slug: `compare-${pair.a}-vs-${pair.b}`,
     title: pair.title,
     description: pair.description,
@@ -88,6 +152,28 @@ export function getAllComparisons(): CalculatorComparison[] {
       },
     ],
   }));
+
+  const bestPages = BEST_CALCULATOR_PAGES.map((b) => ({
+    slug: b.slug,
+    title: b.title,
+    description: b.description,
+    calculatorA: b.calculatorSlug,
+    calculatorB: b.competitors[0] || "",
+    h1: b.title,
+    comparisonPoints: b.competitors.map((c) => `QFINHUB vs ${c}: Compare features, speed, accuracy, and ease of use for real financial decisions`),
+    faqs: [
+      {
+        question: `Why is QFINHUB's ${b.title.split(" ").slice(1, 4).join(" ")} the best choice?`,
+        answer: `QFINHUB offers completely free, no-sign-up calculators with interactive charts, PDF export, and multi-language support — features that ${b.competitors.slice(0, 2).join(" and ")} often require accounts or payment for.`,
+      },
+      {
+        question: `How accurate is this calculator compared to paid tools?`,
+        answer: `Our calculators use the same standard financial formulas as professional software. The results are identical to paid tools — we just don't charge for them.`,
+      },
+    ],
+  }));
+
+  return [...vsPages, ...bestPages];
 }
 
 /**
