@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
+import { ShareableResultCard } from "@/components/calculators/shareable-result-card";
 import { PeriodInput, toMonths } from "@/components/calculators/period-input";
 import { formatCurrency, formatNumber } from "@/lib/utils";
 
@@ -65,6 +66,21 @@ export default function MortgageCalculator() {
         </div>
       }
     >
+      <ShareableResultCard
+        calculatorName="Mortgage Calculator"
+        resultLabel="Monthly Payment"
+        resultValue={formatCurrency(totalMonthly)}
+        secondaryLabel="Principal + Interest"
+        secondaryValue={formatCurrency(pAndI)}
+        details={[
+          { label: "Home Price", value: formatCurrency(safePrice) },
+          { label: "Down Payment", value: formatCurrency(downPayment) + ` (${safeDownPct}%)` },
+          { label: "Interest Rate", value: `${safeRate}%` },
+          { label: "Loan Term", value: `${term} ${termUnit}` },
+          { label: "Total Interest", value: formatCurrency(totalInterest) },
+        ]}
+        url={typeof window !== "undefined" ? window.location.href : `https://www.qfinhub.com/calculators/mortgage-calculator`}
+      />
       <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Annual Payment Breakdown" />
       <CalculatorInput input={{ id: "homePrice", label: "Home Price", type: "number", defaultValue: 350000, suffix: "$", min: 0, tooltip: "The purchase price of the home." }} value={homePrice} onChange={setHomePrice} />
       <CalculatorInput input={{ id: "downPct", label: "Down Payment", type: "slider", defaultValue: 20, suffix: "%", min: 0, max: 100, step: 1, tooltip: "Percentage of home price paid upfront. Below 20% requires PMI." }} value={downPct} onChange={setDownPct} />
