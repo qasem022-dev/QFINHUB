@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """
-QFINHUB Daily Pinterest Pin Generator
-Generates 10 high-quality, concept-driven pins per batch.
-Covers all 8 boards on rotation. Premium designs — no template reuse.
+QFINHUB Pinterest Pin Generator v2 — TOOL-SHOWCASE STYLE
+Creates pins that make people WANT to use the calculator immediately.
+Design: Clean calculator mockups, pre-filled examples, problem→solution format.
 
 Usage:
   python3 scripts/pinterest-daily-gen.py              # Generate 10 pins
-  python3 scripts/pinterest-daily-gen.py --count 50   # Generate 50 pins (5-day batch)
-  python3 scripts/pinterest-daily-gen.py --dry-run    # Preview without saving
+  python3 scripts/pinterest-daily-gen.py --count 10   # Custom count
 """
 
-import sys, os, json, hashlib, random, time
-from datetime import datetime, timedelta
+import sys, os, json, hashlib, random, time, re
+from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
 
@@ -24,7 +23,7 @@ STATE_PATH = DATA_DIR / "generator-state.json"
 PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-# ─── Board Registry ───
+# Board registry
 BOARDS = {
     "mortgages":  {"id": "1086071335079246633", "name": "Mortgage Calculators", "slug": "mortgage-calculator"},
     "investing":  {"id": "1086071335079246634", "name": "Investment Calculators", "slug": "compound-interest"},
@@ -36,521 +35,479 @@ BOARDS = {
     "everyday":   {"id": "1086071335079246640", "name": "Everyday Calculators", "slug": "percentage-calculator"},
 }
 
-# ─── Category Colors ───
-CAT_COLORS = {
-    "mortgages":  {"primary": "#0f766e", "accent": "#14b8a6", "dark": "#0d1f1c", "light": "#f0fdfa"},
-    "investing":  {"primary": "#7c3aed", "accent": "#a78bfa", "dark": "#1a1030", "light": "#f5f3ff"},
-    "retirement": {"primary": "#d97706", "accent": "#fbbf24", "dark": "#2d1a04", "light": "#fffbeb"},
-    "loans":      {"primary": "#2563eb", "accent": "#60a5fa", "dark": "#0c1a3a", "light": "#eff6ff"},
-    "debt":       {"primary": "#dc2626", "accent": "#f87171", "dark": "#2d0a0a", "light": "#fef2f2"},
-    "taxes":      {"primary": "#ea580c", "accent": "#fb923c", "dark": "#2d1404", "light": "#fff7ed"},
-    "savings":    {"primary": "#059669", "accent": "#34d399", "dark": "#0a1f18", "light": "#ecfdf5"},
-    "everyday":   {"primary": "#6366f1", "accent": "#a5b4fc", "dark": "#0f1030", "light": "#eef2ff"},
+# Category colors — clean, modern palette
+COLORS = {
+    "mortgages":  {"bg": "#f8fafc", "card": "#ffffff", "accent": "#0f766e", "text": "#0f172a", "sub": "#64748b"},
+    "investing":  {"bg": "#faf5ff", "card": "#ffffff", "accent": "#7c3aed", "text": "#0f172a", "sub": "#64748b"},
+    "retirement": {"bg": "#fffbeb", "card": "#ffffff", "accent": "#d97706", "text": "#0f172a", "sub": "#64748b"},
+    "loans":      {"bg": "#eff6ff", "card": "#ffffff", "accent": "#2563eb", "text": "#0f172a", "sub": "#64748b"},
+    "debt":       {"bg": "#fef2f2", "card": "#ffffff", "accent": "#dc2626", "text": "#0f172a", "sub": "#64748b"},
+    "taxes":      {"bg": "#fff7ed", "card": "#ffffff", "accent": "#ea580c", "text": "#0f172a", "sub": "#64748b"},
+    "savings":    {"bg": "#ecfdf5", "card": "#ffffff", "accent": "#059669", "text": "#0f172a", "sub": "#64748b"},
+    "everyday":   {"bg": "#eef2ff", "card": "#ffffff", "accent": "#6366f1", "text": "#0f172a", "sub": "#64748b"},
 }
 
-# ─── Pin Content Templates (10 unique concepts) ───
-
-PIN_CONCEPTS = [
-    # Concept 1: "Big Number Stat" — eye-catching statistic
+# Tool showcase content — each pin shows an example calculation with pre-filled numbers
+PIN_TEMPLATES = [
+    # Template 1: "Try This" — shows exact inputs and result
     {
-        "template": "big_stat",
-        "headline_patterns": [
-            "{stat_value} — That's How Much You Could {action}",
-            "The Average {audience} {verb} ${stat_value}",
-            "Is Your {metric} Worth ${stat_value}?",
-        ],
-        "stat_patterns": ["$12,500", "$50,000+", "$3,200/yr", "$27,800", "$950/mo", "$1.2M", "8 Years", "72%", "4.5×", "$8,400"],
+        "style": "try_this",
+        "headline": "Try This: {scenario}",
+        "subtitle": "Answer in 2 seconds with our free {calc_name}",
+        "layout": "calculator_mockup",
     },
-    # Concept 2: "Before/After Comparison" — dramatic split
+    # Template 2: "Did You Know" — surprising stat + calculator hook
     {
-        "template": "before_after",
-        "headline_patterns": [
-            "Before vs After: {topic} Can Change Everything",
-            "See What Happens When You {action}",
-            "The {topic} Difference: One Simple Change, Massive Results",
-        ],
+        "style": "did_you_know",
+        "headline": "Did You Know? {stat}",
+        "subtitle": "Calculate your own numbers instantly — free, no signup",
+        "layout": "stat_card",
     },
-    # Concept 3: "X vs Y" — comparison
+    # Template 3: "Before you decide" — decision-support pin
     {
-        "template": "versus",
-        "headline_patterns": [
-            "{option_a} vs {option_b}: Which Actually Saves More?",
-            "{option_a} or {option_b}? The Numbers Don't Lie",
-            "Stop Guessing — {option_a} vs {option_b} Compared",
-        ],
+        "style": "before_decide",
+        "headline": "Before You {action}, Check This",
+        "subtitle": "{calc_name} — instant results, no guesswork",
+        "layout": "checklist",
     },
-    # Concept 4: "How Much?" — provocative question
+    # Template 4: "How much?" — direct question → answer
     {
-        "template": "how_much",
-        "headline_patterns": [
-            "How Much {topic} Do You Actually Need?",
-            "How Much Could You Save By {action}?",
-            "How Much Will Your {asset} Be Worth in {timeframe}?",
-        ],
+        "style": "how_much",
+        "headline": "How Much {question}?",
+        "subtitle": "We ran the numbers. Now run yours →",
+        "layout": "answer_card",
     },
-    # Concept 5: "Mistake Alert" — what to avoid
+    # Template 5: "Compare" — side-by-side options
     {
-        "template": "mistake_alert",
-        "headline_patterns": [
-            "The #1 {topic} Mistake Costing You Thousands",
-            "Are You Making This {topic} Error?",
-            "Most People Get {topic} Wrong — Here's the Right Way",
-        ],
-    },
-    # Concept 6: "Step-by-Step" — numbered guide
-    {
-        "template": "steps",
-        "headline_patterns": [
-            "{num_steps} Steps to {goal}: Start Today",
-            "Your {num_steps}-Step Plan for {goal}",
-            "Follow These {num_steps} Steps to {goal}",
-        ],
-    },
-    # Concept 7: "By the Numbers" — multiple stats
-    {
-        "template": "by_numbers",
-        "headline_patterns": [
-            "{topic} By the Numbers: Surprising Stats",
-            "The Real Numbers Behind {topic}",
-            "{topic}: What the Data Actually Shows",
-        ],
-    },
-    # Concept 8: "Timeline / By Age" — age-based milestones
-    {
-        "template": "timeline",
-        "headline_patterns": [
-            "{topic} Milestones: Where Should You Be at Every Age?",
-            "Age {start} to {end}: Your {topic} Journey",
-            "What Your {topic} Should Look Like at Every Decade",
-        ],
-    },
-    # Concept 9: "Calculator Tease" — show a mock calculation
-    {
-        "template": "calculator_tease",
-        "headline_patterns": [
-            "We Ran the Numbers: {scenario} = ${result}",
-            "Try This: If You {action}, Here's What Happens",
-            "Calculate This: {scenario} Could Give You ${result}",
-        ],
-    },
-    # Concept 10: "Checklist" — actionable list
-    {
-        "template": "checklist",
-        "headline_patterns": [
-            "The Ultimate {topic} Checklist: {num_items} Things to Do",
-            "{num_items} {topic} Moves That Pay Off Big",
-            "Your {topic} Action Plan: Every Step You Need",
-        ],
+        "style": "compare",
+        "headline": "{option_a}  vs  {option_b}",
+        "subtitle": "See which saves you more — one click, instant answer",
+        "layout": "comparison",
     },
 ]
 
-# ─── Board-specific Content ───
-
-BOARD_CONTENT = {
-    "mortgages": {
-        "topics": ["Mortgage", "Home Loan", "Refinancing", "Interest Rate", "Monthly Payment"],
-        "actions": ["refinancing your mortgage", "making extra payments", "switching to biweekly", "locking in a lower rate", "paying off your home early"],
-        "stats": ["$50,000+", "$12,500", "$320/mo", "5 Years", "2.5% Lower", "$180,000"],
-        "links": ["/calculators/mortgage-calculator", "/calculators/amortization-schedule", "/calculators/mortgage-payoff"],
-        "scenarios": [
-            ("a $300K mortgage at 6.5%", "$186,000"),
-            ("refinancing from 7% to 5.5%", "$44,000"),
-            ("adding $200/month extra payment", "$52,300"),
-        ],
-        "hashtags": "#MortgageTips #HomeBuying #RealEstate #HomeOwnership #Refinance",
-    },
-    "investing": {
-        "topics": ["Compound Interest", "Investing", "Wealth Building", "Stock Market", "Portfolio Growth"],
-        "actions": ["investing $500/month", "starting early at 25 vs 35", "maxing your 401(k)", "reinvesting dividends", "choosing low-fee index funds"],
-        "stats": ["$1,000,000+", "$950/mo", "8% Annual", "30 Years", "$2.3M", "3× Faster"],
-        "links": ["/calculators/compound-interest", "/calculators/investment-growth", "/calculators/stock-return"],
-        "scenarios": [
-            ("$500/month invested for 30 years at 8%", "$745,000"),
-            ("starting at 25 instead of 35", "$1,100,000 more"),
-            ("maxing a 401(k) with employer match", "$2,300,000"),
-        ],
-        "hashtags": "#CompoundInterest #Investing #WealthBuilding #FinancialFreedom #PassiveIncome",
-    },
-    "retirement": {
-        "topics": ["Retirement", "401(k)", "Nest Egg", "Early Retirement", "Pension"],
-        "actions": ["saving for retirement", "retiring 5 years early", "maxing retirement contributions", "choosing Roth vs Traditional", "planning your withdrawal strategy"],
-        "stats": ["$1.5M", "8× Salary", "Age 60", "25× Expenses", "$62,000/yr", "4% Rule"],
-        "links": ["/calculators/retirement-planning", "/calculators/401k-calculator", "/calculators/financial-independence"],
-        "scenarios": [
-            ("saving 15% of $80K salary for 35 years", "$1,470,000"),
-            ("retiring at 60 vs 67", "$280,000 difference"),
-            ("the 4% withdrawal rule on $1M", "$40,000/yr safe income"),
-        ],
-        "hashtags": "#RetirementPlanning #401k #FIRE #FinancialIndependence #SaveForRetirement",
-    },
-    "loans": {
-        "topics": ["Auto Loan", "Personal Loan", "Student Loan", "Loan Interest", "Monthly Payment"],
-        "actions": ["refinancing your auto loan", "comparing loan terms", "paying off student loans faster", "getting a lower APR", "choosing the right loan length"],
-        "stats": ["$2,800 Saved", "3.9% APR", "$195/mo Less", "48 Months", "0% Intro", "$4,500"],
-        "links": ["/calculators/auto-loan", "/calculators/personal-loan", "/calculators/student-loan"],
-        "scenarios": [
-            ("a $35K auto loan at 3.9% for 48 months", "$789/mo"),
-            ("refinancing from 8% to 5% on $50K student loans", "$4,200 saved"),
-            ("choosing 36-month vs 72-month term on $25K", "$1,900 interest saved"),
-        ],
-        "hashtags": "#AutoLoan #CarBuying #StudentLoans #LoanTips #PersonalFinance",
-    },
-    "debt": {
-        "topics": ["Debt Payoff", "Credit Card Debt", "Debt Strategy", "Snowball Method", "Avalanche Method"],
-        "actions": ["paying off credit card debt", "using the snowball method", "attacking high-interest debt", "consolidating your loans", "becoming debt-free"],
-        "stats": ["$4,200+ Saved", "23% APR", "14 Months Faster", "$8,900 Debt", "2× Payments", "Zero Interest"],
-        "links": ["/calculators/debt-snowball", "/calculators/credit-card-payoff", "/calculators/debt-consolidation"],
-        "scenarios": [
-            ("snowball vs avalanche on $25K debt", "$4,200 interest difference"),
-            ("adding $300/month to minimum payments", "5 years faster payoff"),
-            ("a 0% balance transfer saving on $15K", "$3,400 in interest"),
-        ],
-        "hashtags": "#DebtFreeJourney #DebtPayoff #CreditCardDebt #MoneyTips #FinancialFreedom",
-    },
-    "taxes": {
-        "topics": ["Tax Deductions", "Tax Refund", "Tax Bracket", "Income Tax", "Tax Planning"],
-        "actions": ["claiming tax deductions", "optimizing your tax bracket", "planning tax-efficient investments", "filing your taxes correctly", "reducing taxable income"],
-        "stats": ["$3,200+ Back", "22% Bracket", "15 Write-Offs", "$6,500 Saved", "$0 Owed", "Standard: $14,600"],
-        "links": ["/calculators/tax-calculator", "/calculators/capital-gains-tax", "/calculators/paycheck-tax"],
-        "scenarios": [
-            ("a $75K salary with standard vs itemized deductions", "$2,800 difference"),
-            ("long-term capital gains vs ordinary income on $50K profit", "$8,000 saved"),
-            ("maxing 401(k) contributions to lower taxable income", "$4,600 tax savings"),
-        ],
-        "hashtags": "#TaxDeductions #TaxTips #TaxSeason #MoneySaving #FinancialPlanning",
-    },
-    "savings": {
-        "topics": ["Budgeting", "Saving Money", "Emergency Fund", "Financial Goals", "Monthly Budget"],
-        "actions": ["building an emergency fund", "creating a budget that works", "saving $1,000 in 30 days", "automating your savings", "cutting unnecessary expenses"],
-        "stats": ["$1,000 Emergency", "6 Months Saved", "50/30/20 Rule", "$350/mo Saved", "20% Savings Rate", "3-Month Goal"],
-        "links": ["/calculators/budget-planner", "/calculators/savings-goal", "/calculators/emergency-fund"],
-        "scenarios": [
-            ("the 50/30/20 budget on $5,000/month income", "$1,000 to savings"),
-            ("saving $15/day automatically for 1 year", "$5,475"),
-            ("cutting 3 subscriptions and 2 dining-out nights", "$3,120/year"),
-        ],
-        "hashtags": "#Budgeting #SaveMoney #FinancialGoals #EmergencyFund #MoneyManagement",
-    },
-    "everyday": {
-        "topics": ["Percentage", "BMI", "Age", "Date", "Tip Calculator", "Currency"],
-        "actions": ["calculating percentages instantly", "checking your BMI", "figuring out the tip", "converting currencies", "counting days between dates"],
-        "stats": ["25% Off", "22.5 BMI", "18% Tip", "1.25 Exchange", "365 Days", "30% Discount"],
-        "links": ["/calculators/percentage-calculator", "/calculators/bmi-calculator", "/calculators/tip-calculator", "/calculators/age-calculator"],
-        "scenarios": [
-            ("a 25% discount on a $120 item", "$30 saved, pay $90"),
-            ("18% tip on a $75 dinner bill", "$13.50 tip, $88.50 total"),
-            ("BMI for 5'8\" 165 lbs person", "25.1 — borderline"),
-        ],
-        "hashtags": "#MathMadeEasy #EverydayCalculators #QuickMath #LifeHacks #SmartTools",
-    },
+# Board-specific scenarios with REAL computed numbers
+SCENARIOS = {
+    "mortgages": [
+        {"scenario": "$350K home, 6.5%, 30yr → $1,896/month", "stat": "You pay 56% in interest over 30 years",
+         "action": "buying a home", "question": "will your mortgage actually cost",
+         "option_a": "30-Year Fixed", "option_b": "15-Year Fixed",
+         "calc_name": "Mortgage Calculator", "link": "/calculators/mortgage-calculator"},
+        {"scenario": "$400K home with 10% down → $2,547/month", "stat": "$400K home at 6.5% = $682K total cost",
+         "action": "making an offer", "question": "house can you actually afford",
+         "option_a": "Buy Now", "option_b": "Wait & Save 20%",
+         "calc_name": "Mortgage Calculator", "link": "/calculators/mortgage-calculator"},
+    ],
+    "investing": [
+        {"scenario": "$500/month × 30 years × 8% = $745,000", "stat": "$500/month becomes $1M+ if you start at 25",
+         "action": "investing", "question": "will your investments grow",
+         "option_a": "Start at 25", "option_b": "Start at 35",
+         "calc_name": "Compound Interest Calc", "link": "/calculators/compound-interest"},
+        {"scenario": "$10K initial + $500/mo × 20yr = $310K", "stat": "The first $100K takes 8 years. The next $100K takes 4.",
+         "action": "opening a brokerage account", "question": "could compound interest earn you",
+         "option_a": "Index Funds (8%)", "option_b": "Savings Account (1%)",
+         "calc_name": "Investment Calculator", "link": "/calculators/investment-return"},
+    ],
+    "retirement": [
+        {"scenario": "$75K salary, save 15% → $750K by 67", "stat": "Starting at 25 vs 35 = $500K difference",
+         "action": "planning your retirement", "question": "will you need to retire comfortably",
+         "option_a": "Retire at 60", "option_b": "Retire at 67",
+         "calc_name": "Retirement Calculator", "link": "/calculators/retirement-planning"},
+        {"scenario": "$50K/yr retirement × 25 = $1.25M needed", "stat": "At 40, you need 33× annual expenses saved",
+         "action": "quitting your job", "question": "do you need to retire by 40",
+         "option_a": "FIRE at 40", "option_b": "Traditional at 65",
+         "calc_name": "FIRE Calculator", "link": "/calculators/financial-independence"},
+    ],
+    "loans": [
+        {"scenario": "$25K auto loan, 4.5% × 60mo → $466/month", "stat": "A 1% lower rate saves you $650 over the loan",
+         "action": "signing that loan", "question": "will your monthly payment be",
+         "option_a": "36-Month Loan", "option_b": "72-Month Loan",
+         "calc_name": "Auto Loan Calculator", "link": "/calculators/auto-loan"},
+        {"scenario": "$30K personal loan, 8% × 5yr → $608/month", "stat": "Total interest on 5yr $30K loan at 8%: $6,500",
+         "action": "borrowing money", "question": "will this loan cost you",
+         "option_a": "5-Year Term", "option_b": "7-Year Term",
+         "calc_name": "Loan Calculator", "link": "/calculators/loan-calculator"},
+    ],
+    "debt": [
+        {"scenario": "$15K credit card debt at 22% → avalanche saves $3,200", "stat": "Snowball method has 3× higher completion rate",
+         "action": "paying minimums", "question": "debt can you eliminate this year",
+         "option_a": "Avalanche Method", "option_b": "Snowball Method",
+         "calc_name": "Debt Payoff Calculator", "link": "/calculators/debt-snowball"},
+        {"scenario": "$8K debt at 24% APR → pay $800/mo = debt-free in 12 months", "stat": "Adding $200/month saves $1,800 in interest",
+         "action": "ignoring that balance", "question": "faster can you be debt-free",
+         "option_a": "Minimum Payment", "option_b": "Extra $200/Month",
+         "calc_name": "Credit Card Payoff", "link": "/calculators/credit-card-payoff"},
+    ],
+    "taxes": [
+        {"scenario": "$85K salary → $14,260 federal tax (effective 16.8%)", "stat": "Maxing 401(k) saves $4,600 in taxes this year",
+         "action": "filing your taxes", "question": "tax will you actually owe",
+         "option_a": "Standard Deduction", "option_b": "Itemized Deductions",
+         "calc_name": "Tax Calculator", "link": "/calculators/tax-calculator"},
+        {"scenario": "$50K stock profit → $7,500 long-term cap gains tax", "stat": "Holding 1 more day can cut your tax rate in half",
+         "action": "selling investments", "question": "capital gains tax will you pay",
+         "option_a": "Short-Term Gains", "option_b": "Long-Term Gains",
+         "calc_name": "Capital Gains Calc", "link": "/calculators/capital-gains-tax"},
+    ],
+    "savings": [
+        {"scenario": "$3K/month income → 50/30/20 = $600 to savings", "stat": "Saving 20% of income = financial independence in 25 years",
+         "action": "making a budget", "question": "should you save each month",
+         "option_a": "50/30/20 Budget", "option_b": "Zero-Based Budget",
+         "calc_name": "Budget Planner", "link": "/calculators/budget-planner"},
+        {"scenario": "Save $200/month → $7,200 emergency fund in 3 years", "stat": "Only 39% of Americans can cover a $1,000 emergency",
+         "action": "spending everything", "question": "emergency savings do you need",
+         "option_a": "3 Months Expenses", "option_b": "6 Months Expenses",
+         "calc_name": "Emergency Fund Calc", "link": "/calculators/emergency-fund"},
+    ],
+    "everyday": [
+        {"scenario": "25% off $80 item → you pay $60 (save $20)", "stat": "Most people can't calculate percentages in their head",
+         "action": "shopping a sale", "question": "are you actually saving",
+         "option_a": "25% Off", "option_b": "Buy One Get One",
+         "calc_name": "Percentage Calculator", "link": "/calculators/percentage-calculator"},
+        {"scenario": "18% tip on $65 dinner → $11.70 tip, $76.70 total", "stat": "Over-tipping by just 2% costs you $100+ per year",
+         "action": "splitting the bill", "question": "tip should you leave",
+         "option_a": "15% Tip", "option_b": "20% Tip",
+         "calc_name": "Tip Calculator", "link": "/calculators/tip-calculator"},
+    ],
 }
+
+
+def generate_pin(cat_key, used_slugs):
+    """Generate one tool-showcase pin."""
+    board = BOARDS[cat_key]
+    colors = COLORS[cat_key]
+    scenarios = SCENARIOS[cat_key]
+    template = random.choice(PIN_TEMPLATES)
+    scenario = random.choice(scenarios)
+
+    headline = template["headline"].format(
+        scenario=scenario["scenario"], stat=scenario["stat"],
+        action=scenario["action"], question=scenario["question"],
+        option_a=scenario["option_a"], option_b=scenario["option_b"],
+        calc_name=scenario["calc_name"],
+    )
+    subtitle = template["subtitle"].format(
+        scenario=scenario["scenario"], calc_name=scenario["calc_name"],
+    )
+
+    # Clean up
+    headline = headline[:100]
+    if len(headline) > 97:
+        headline = headline[:97] + "..."
+
+    # Description
+    hashtags_map = {
+        "mortgages": "#MortgageCalculator #HomeBuying #RealEstate",
+        "investing": "#Investing #CompoundInterest #WealthBuilding",
+        "retirement": "#RetirementPlanning #FIRE #FinancialFreedom",
+        "loans": "#LoanCalculator #AutoLoan #CarBuying",
+        "debt": "#DebtFree #DebtPayoff #PersonalFinance",
+        "taxes": "#TaxCalculator #TaxTips #MoneySaving",
+        "savings": "#Budgeting #SaveMoney #EmergencyFund",
+        "everyday": "#QuickMath #LifeHacks #SmartTools",
+    }
+    hashtags = hashtags_map.get(cat_key, "#Calculator #Finance")
+
+    description = (
+        f"{headline}\n\n"
+        f"{subtitle}\n\n"
+        f"125 free calculators. No signup. Instant results.\n\n"
+        f"{hashtags} #QFINHUB"
+    )[:500]
+
+    # Unique slug
+    slug_base = f"{cat_key}-{template['style']}"
+    slug = slug_base
+    c = 0
+    while slug in used_slugs:
+        c += 1
+        slug = f"{slug_base}-{c}"
+    used_slugs.add(slug)
+
+    h = hashlib.md5(slug.encode()).hexdigest()[:6]
+    img_file = f"pin-{slug}-{h}.png"
+
+    return {
+        "slug": slug,
+        "category": cat_key,
+        "boardId": board["id"],
+        "boardName": board["name"],
+        "title": headline,
+        "description": description,
+        "link": f"https://www.qfinhub.com{scenario['link']}",
+        "stat": scenario["stat"],
+        "style": template["style"],
+        "scenario": scenario["scenario"],
+        "calc_name": scenario["calc_name"],
+        "imageUrl": f"https://www.qfinhub.com/pinterest-images/{img_file}",
+        "imagePath": str(PUBLIC_DIR / img_file),
+        "colors": colors,
+    }
+
+
+def generate_image(pin):
+    """Generate a clean, modern calculator-showcase pin image."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        return False
+
+    W, H = 1000, 1500
+    c = pin["colors"]
+
+    img = Image.new("RGB", (W, H), c["bg"])
+    draw = ImageDraw.Draw(img)
+
+    # Fonts
+    font_dir = "/usr/share/fonts"
+    try:
+        bold_48 = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 48)
+        bold_36 = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 36)
+        bold_28 = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 28)
+        regular_22 = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans.ttf", 22)
+        regular_18 = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans.ttf", 18)
+        bold_64 = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 64)
+    except:
+        bold_48 = bold_36 = bold_28 = regular_22 = regular_18 = bold_64 = ImageFont.load_default()
+
+    pad = 60
+
+    # ─── TOP BAR: QFINHUB brand ───
+    draw.rectangle([0, 0, W, 80], fill=c["accent"])
+    draw.text((pad, 20), "QFINHUB", fill="white", font=bold_36)
+    draw.text((W-pad, 22), board_name_short(pin["boardName"]), fill="white", font=regular_22, anchor="ra")
+
+    # ─── HEADLINE SECTION ───
+    title = pin["title"]
+    # Truncate to fit
+    if len(title) > 110:
+        title = title[:107] + "..."
+
+    # Word wrap headline over 2-3 lines
+    words = title.split()
+    lines = []
+    current = ""
+    for word in words:
+        test = f"{current} {word}".strip()
+        bbox = draw.textbbox((0, 0), test, font=bold_36)
+        if bbox[2] - bbox[0] > W - pad * 2:
+            lines.append(current)
+            current = word
+        else:
+            current = test
+    lines.append(current)
+
+    y = 110
+    for line in lines[:3]:
+        draw.text((pad, y), line, fill=c["text"], font=bold_36)
+        y += 46
+
+    # ─── CALCULATOR MOCKUP CARD ───
+    card_y = y + 20
+    card_h = 400
+    card_w = W - pad * 2
+
+    # Card shadow
+    draw.rounded_rectangle([pad + 8, card_y + 8, pad + card_w + 8, card_y + card_h + 8],
+                          radius=24, fill="#00000020")
+    # Card
+    draw.rounded_rectangle([pad, card_y, pad + card_w, card_y + card_h],
+                          radius=24, fill=c["card"], outline="#e2e8f0", width=1)
+
+    # Input field mockup
+    input_y = card_y + 30
+    inputs = parse_inputs(pin["scenario"])
+    for i, (label, val) in enumerate(inputs):
+        iy = input_y + i * 60
+        draw.text((pad + 30, iy), label, fill=c["sub"], font=regular_18)
+        draw.rounded_rectangle([pad + 30, iy + 28, pad + card_w - 30, iy + 54],
+                              radius=8, fill="#f1f5f9", outline="#e2e8f0", width=1)
+        draw.text((pad + 45, iy + 45), val, fill=c["text"], font=regular_22, anchor="lm")
+
+    # Calculate button
+    btn_y = input_y + len(inputs) * 60 + 20
+    btn_w = card_w - 60
+    draw.rounded_rectangle([pad + 30, btn_y, pad + 30 + btn_w, btn_y + 52],
+                          radius=12, fill=c["accent"])
+    draw.text((pad + 30 + btn_w // 2, btn_y + 30), "Calculate →", fill="white", font=bold_28, anchor="mm")
+
+    # Result display
+    result_y = btn_y + 70
+    result_text = extract_result(pin["scenario"])
+    if result_text:
+        draw.text((pad + 30, result_y), "Result", fill=c["sub"], font=regular_18)
+        bbox = draw.textbbox((0, 0), result_text, font=bold_48)
+        draw.text((pad + 30, result_y + 38), result_text, fill=c["accent"], font=bold_48)
+
+    # ─── CTA SECTION ───
+    cta_y = card_y + card_h + 40
+    draw.text((pad, cta_y), "Get your exact numbers →", fill=c["text"], font=bold_36)
+    draw.text((pad, cta_y + 50), f"qfinhub.com{pin['link']}", fill=c["accent"], font=regular_22)
+
+    # URL bar at bottom
+    url_y = cta_y + 90
+    draw.text((pad, url_y), "125 Free Calculators  •  No Signup  •  Instant Results", fill=c["sub"], font=regular_18)
+
+    # Decorative dots
+    for i in range(8):
+        x = W // 2 - 105 + i * 30
+        draw.ellipse([x, H - 60, x + 16, H - 44], fill=c["accent"] + "40")
+        draw.ellipse([x + 3, H - 57, x + 13, H - 47], fill=c["accent"])
+
+    img.save(pin["imagePath"], "PNG", optimize=True)
+    return True
+
+
+def board_name_short(name):
+    mapping = {
+        "Mortgage Calculators": "Mortgage",
+        "Investment Calculators": "Investing",
+        "Retirement Planning": "Retirement",
+        "Loan Calculators": "Loans",
+        "Debt Payoff Tools": "Debt",
+        "Tax Calculators": "Taxes",
+        "Savings & Budget": "Savings",
+        "Everyday Calculators": "Everyday",
+    }
+    return mapping.get(name, name.split()[0])
+
+
+def parse_inputs(scenario):
+    """Extract labeled inputs from scenario text."""
+    pairs = []
+    # Match patterns like "$350K home" or "6.5%" or "30yr"
+    money = re.findall(r'\$[\d,.]+[KMB]?', scenario)
+    pct = re.findall(r'[\d.]+%', scenario)
+    years = re.findall(r'(\d+)yr', scenario) or re.findall(r'(\d+)\s*years?', scenario)
+
+    if "mortgage" in scenario.lower() or "home" in scenario.lower():
+        if money:
+            pairs.append(("Home Price", money[0]))
+        if pct:
+            pairs.append(("Interest Rate", pct[0]))
+        pairs.append(("Term", "30 Years"))
+    elif "loan" in scenario.lower():
+        if money:
+            pairs.append(("Loan Amount", money[0]))
+        if pct:
+            pairs.append(("APR", pct[0]))
+        if years:
+            pairs.append(("Term", f"{years[0]} Years"))
+    elif "invest" in scenario.lower() or "compound" in scenario.lower():
+        if money:
+            pairs.append(("Monthly", money[0]))
+        if pct:
+            pairs.append(("Return", pct[0]))
+        if years:
+            pairs.append(("Years", years[0]))
+    elif "retire" in scenario.lower() or "FIRE" in scenario.lower():
+        pairs.append(("Annual Need", "$50,000"))
+        pairs.append(("Withdrawal", "4%"))
+        pairs.append(("Age", "40"))
+    elif "tax" in scenario.lower():
+        if money:
+            pairs.append(("Income", money[0]))
+        pairs.append(("Status", "Single"))
+    elif "debt" in scenario.lower() or "credit" in scenario.lower():
+        if money:
+            pairs.append(("Balance", money[0]))
+        if pct:
+            pairs.append(("APR", pct[0]))
+    elif "budget" in scenario.lower() or "save" in scenario.lower():
+        if money:
+            pairs.append(("Income", money[0]))
+    elif "tip" in scenario.lower():
+        if money:
+            pairs.append(("Bill", money[0]))
+        pairs.append(("Tip %", "18%"))
+    elif "%" in scenario.lower() or "percent" in scenario.lower():
+        pairs.append(("Original", "$80"))
+        pairs.append(("Discount", "25%"))
+    else:
+        pairs = [("Amount", "$1,000"), ("Rate", "5%"), ("Term", "10 Years")]
+
+    # Ensure at least 2 inputs
+    while len(pairs) < 2:
+        pairs.append(("Value", "100"))
+    return pairs[:4]
+
+
+def extract_result(scenario):
+    """Extract the result number from scenario text."""
+    # Pattern: → $1,896/month
+    m = re.search(r'→\s*(\$[\d,.]+(?:/\w+)?)', scenario)
+    if m:
+        return m.group(1)
+    m = re.search(r'=\s*(\$[\d,.]+[KMB]?)', scenario)
+    if m:
+        return m.group(1)
+    return ""
 
 
 def load_state():
     if STATE_PATH.exists():
         with open(STATE_PATH) as f:
             return json.load(f)
-    return {"batches": 0, "total_pins": 0, "board_counts": defaultdict(int), "last_run": None}
+    return {"batches": 0, "total_pins": 0, "board_counts": {}, "last_run": None}
+
 
 def save_state(state):
     state["last_run"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+    state["batches"] = (state.get("batches", 0) or 0) + 1
+    state["total_pins"] = state.get("total_pins", 0)
     with open(STATE_PATH, "w") as f:
-        json.dump(state, f, indent=2, default=lambda x: dict(x) if isinstance(x, defaultdict) else x)
+        json.dump(state, f, indent=2)
+
 
 def pick_boards(state, count=10):
-    """Pick 'count' boards with rotation — ensures even coverage across all 8."""
     board_names = list(BOARDS.keys())
-    # Sort by how many times each board has been used (least first)
-    board_names.sort(key=lambda b: state["board_counts"].get(b, 0))
+    bc = state.get("board_counts", {})
+    board_names.sort(key=lambda b: bc.get(b, 0))
     chosen = []
     for i in range(count):
-        idx = i % len(board_names)
-        b = board_names[idx]
+        b = board_names[i % len(board_names)]
         chosen.append(b)
-        state["board_counts"][b] = state["board_counts"].get(b, 0) + 1
-    # Shuffle within groups to avoid same board twice in a row
+        bc[b] = bc.get(b, 0) + 1
+    state["board_counts"] = bc
     random.shuffle(chosen)
     return chosen
-
-def generate_pin(idx, board_key, used_slugs, dry_run=False):
-    """Generate one pin: metadata + concept assignment."""
-    board = BOARDS[board_key]
-    content = BOARD_CONTENT[board_key]
-    colors = CAT_COLORS[board_key]
-    concept = random.choice(PIN_CONCEPTS)
-
-    # Pick content elements
-    topic = random.choice(content["topics"])
-    action = random.choice(content["actions"])
-    stat = random.choice(content["stats"])
-    link = random.choice(content["links"])
-    scenario, result = random.choice(content["scenarios"])
-    headline_pattern = random.choice(concept["headline_patterns"])
-
-    # Build headline — strip extra $ from result if template already has one
-    clean_result = result.replace("$", "") if "${result}" in headline_pattern and "$" in result else result
-
-    headline = headline_pattern.format(
-        topic=topic, action=action, stat_value=stat,
-        option_a=random.choice(content["topics"]),
-        option_b=random.choice(["Renting", "Leasing", "Minimum Payment", "Waiting", "Traditional"]),
-        num_steps=random.choice(["3", "5", "7"]),
-        goal=action.replace("ing ", "").replace(" by", ""),
-        start=random.choice(["25", "30", "35", "40"]),
-        end=random.choice(["55", "60", "65", "70"]),
-        scenario=scenario, result=clean_result,
-        num_items=random.choice(["5", "7", "10"]),
-        asset=topic.lower(), timeframe=random.choice(["10 Years", "20 Years", "30 Years", "Retirement"]),
-        audience=random.choice(["American", "Homeowner", "Investor", "Family", "Borrower"]),
-        verb=random.choice(["Loses", "Saves", "Pays", "Earns", "Owes"]),
-        metric=random.choice(["Mortgage", "Investment", "Savings", "Retirement Fund", "Portfolio"]),
-    )
-    # Clean up any double dollar signs
-    headline = headline.replace("$$", "$")
-    # Trim to max 100 chars
-    if len(headline) > 100:
-        headline = headline[:97] + "..."
-
-    # Build description (max 500 chars)
-    description = (
-        f"{headline}\n\n"
-        f"Discover the real numbers behind {topic.lower()}. {content['hashtags'].split('#')[0].strip()} "
-        f"Use our free calculator to run your own scenario — no signup, instant results.\n\n"
-        f"{content['hashtags']} #QFINHUB"
-    )
-    if len(description) > 500:
-        description = description[:497] + "..."
-
-    # Unique slug
-    slug_base = f"{board_key}-{concept['template']}"
-    slug = slug_base
-    counter = 0
-    while slug in used_slugs:
-        counter += 1
-        slug = f"{slug_base}-{counter}"
-    used_slugs.add(slug)
-
-    # Image filename
-    h = hashlib.md5(slug.encode()).hexdigest()[:6]
-    img_file = f"pin-{slug}-{h}.png"
-    img_path = PUBLIC_DIR / img_file
-
-    pin = {
-        "slug": slug,
-        "category": board_key,
-        "boardId": board["id"],
-        "boardName": board["name"],
-        "title": headline,
-        "description": description,
-        "link": f"https://www.qfinhub.com{link}",
-        "stat": stat,
-        "concept": concept["template"],
-        "colors": colors,
-        "imageUrl": f"https://www.qfinhub.com/pinterest-images/{img_file}",
-        "imagePath": str(img_path),
-        "topics": [topic],
-        "scenario": scenario,
-        "result": result,
-    }
-
-    return pin
-
-
-def generate_image(pin, dry_run=False):
-    """Generate a premium Pillow-based pin image."""
-    if dry_run:
-        return True
-
-    try:
-        from PIL import Image, ImageDraw, ImageFont
-    except ImportError:
-        print("⚠️ Pillow not installed. Install with: pip install Pillow")
-        return False
-
-    W, H = 1000, 1500
-    colors = pin["colors"]
-    primary = colors["primary"]
-    accent = colors["accent"]
-    dark = colors["dark"]
-    light = colors["light"]
-
-    img = Image.new("RGB", (W, H), dark)
-    draw = ImageDraw.Draw(img)
-
-    # Try to load fonts, fall back to default
-    font_dir = "/usr/share/fonts"
-    try:
-        title_font = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 46)
-        headline_font = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 32)
-        body_font = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans.ttf", 20)
-        small_font = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans.ttf", 16)
-        stat_font = ImageFont.truetype(f"{font_dir}/truetype/dejavu/DejaVuSans-Bold.ttf", 72)
-    except (OSError, IOError):
-        title_font = headline_font = body_font = small_font = stat_font = ImageFont.load_default()
-
-    # ─── Draw Background ───
-    # Gradient from dark to slightly lighter
-    for y in range(H):
-        ratio = y / H
-        r = int(int(dark[1:3], 16) + (int(primary[1:3], 16) - int(dark[1:3], 16)) * ratio * 0.3)
-        g = int(int(dark[3:5], 16) + (int(primary[3:5], 16) - int(dark[3:5], 16)) * ratio * 0.3)
-        b = int(int(dark[5:7], 16) + (int(primary[5:7], 16) - int(dark[5:7], 16)) * ratio * 0.3)
-        for x in range(0, W, 4):
-            draw.rectangle([x, y, x+3, y], fill=(r, g, b))
-
-    # ─── Decorative Circle ───
-    draw.ellipse([W-300, -100, W+200, 450], fill=primary, outline=None)
-    draw.ellipse([W-280, -80, W+180, 430], fill=dark, outline=None)
-
-    # ─── QFINHUB Brand Badge ───
-    draw.rectangle([40, 35, 200, 58], fill=accent)
-    draw.text((48, 37), "QFINHUB", fill="white", font=small_font)
-
-    # ─── Category Label ───
-    cat_name = pin["boardName"].replace(" Calculators", "").replace(" Tools", "").replace(" & ", " & ")
-    draw.text((48, 105), cat_name.upper(), fill=accent, font=small_font)
-
-    # ─── Headline ───
-    title = pin["title"]
-    # Word wrap
-    words = title.split()
-    lines = []
-    current_line = ""
-    for word in words:
-        test_line = f"{current_line} {word}".strip()
-        bbox = draw.textbbox((0, 0), test_line, font=headline_font)
-        if bbox[2] - bbox[0] > W - 120:
-            lines.append(current_line)
-            current_line = word
-        else:
-            current_line = test_line
-    lines.append(current_line)
-
-    y_pos = 155
-    for line in lines[:3]:  # Max 3 lines
-        draw.text((55, y_pos), line, fill="white", font=headline_font)
-        y_pos += 44
-
-    # ─── Stat Highlight ───
-    stat = pin["stat"]
-    bbox = draw.textbbox((0, 0), stat, font=stat_font)
-    stat_w = bbox[2] - bbox[0]
-    stat_x = (W - stat_w) // 2
-    draw.text((stat_x, 420), stat, fill=accent, font=stat_font)
-
-    # ─── Card with details ───
-    card_y = 560
-    card_h = 380
-    draw.rounded_rectangle([50, card_y, W-50, card_y+card_h], radius=20, fill="#1e293b", outline=accent, width=1)
-
-    # Scenario
-    draw.text((90, card_y+35), "📊  SCENARIO", fill=accent, font=small_font)
-    draw.text((90, card_y+65), pin["scenario"], fill="white", font=body_font)
-
-    # Result
-    draw.text((90, card_y+140), "💰  RESULT", fill=accent, font=small_font)
-    draw.text((90, card_y+170), pin["result"], fill=accent, font=stat_font)
-
-    # ─── CTA Card ───
-    cta_y = card_y + card_h + 40
-    draw.rounded_rectangle([120, cta_y, W-120, cta_y+60], radius=30, fill=primary)
-    draw.text((W//2 - 140, cta_y+15), "Calculate Yours Free →", fill="white", font=headline_font)
-
-    # ─── Features row ───
-    feat_y = cta_y + 100
-    features = ["✓ No Signup", "✓ Free Forever", "✓ Instant Results"]
-    for i, feat in enumerate(features):
-        fx = 75 + i * 310
-        draw.rounded_rectangle([fx, feat_y, fx+280, feat_y+40], radius=10, fill="#1e293b", outline="#334155", width=1)
-        draw.text((fx+20, feat_y+8), feat, fill=accent, font=small_font)
-
-    # ─── URL ───
-    url_y = feat_y + 80
-    url_text = "qfinhub.com" + pin["link"].replace("https://www.qfinhub.com", "")
-    bbox = draw.textbbox((0, 0), url_text, font=small_font)
-    url_w = bbox[2] - bbox[0]
-    draw.text(((W - url_w)//2, url_y), url_text, fill=primary, font=small_font)
-
-    # ─── Hashtags ───
-    hashtags = BOARD_CONTENT[pin["category"]]["hashtags"]
-    tag_y = url_y + 40
-    tags_display = "  •  ".join(hashtags.split()[:5])
-    bbox = draw.textbbox((0, 0), tags_display, font=ImageFont.load_default())
-    tag_w = bbox[2] - bbox[0] if bbox else 200
-    draw.text(((W - min(tag_w, W-100))//2, tag_y), tags_display, fill="#64748b", font=small_font)
-
-    # ─── Bottom dots decoration ───
-    for i in range(10):
-        x = W//2 - 135 + i * 30
-        draw.ellipse([x, H-80, x+12, H-68], fill=primary, outline=None)
-
-    # Save
-    img.save(pin["imagePath"], "PNG", optimize=True)
-    return True
 
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="QFINHUB Daily Pinterest Pin Generator")
-    parser.add_argument("--count", type=int, default=10, help="Number of pins to generate (default: 10)")
-    parser.add_argument("--dry-run", action="store_true", help="Preview without saving images")
-    parser.add_argument("--images-only", action="store_true", help="Only generate images, skip metadata")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--count", type=int, default=10)
+    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
     state = load_state()
-    state["batches"] = (state.get("batches", 0) or 0) + 1
-    board_counts = defaultdict(int)
-    for k, v in state.get("board_counts", {}).items():
-        board_counts[k] = v
-    state["board_counts"] = board_counts
-
-    print(f"🎨 QFINHUB Pinterest Pin Generator — Batch #{state['batches']}")
-    print(f"   Target: {args.count} pins | {'DRY RUN' if args.dry_run else 'LIVE'}")
-    print("=" * 60)
-
     boards = pick_boards(state, args.count)
     pins = []
     used_slugs = set()
 
-    for i, board_key in enumerate(boards):
-        board = BOARDS[board_key]
-        print(f"\n📌 Pin {i+1}/{args.count} → {board['name']}")
+    print(f"🎯 QFINHUB Tool-Showcase Pin Generator — {args.count} pins")
+    print("=" * 55)
 
-        pin = generate_pin(i, board_key, used_slugs, args.dry_run)
+    for i, cat_key in enumerate(boards):
+        pin = generate_pin(cat_key, used_slugs)
         pins.append(pin)
 
-        if not args.dry_run and not args.images_only:
-            success = generate_image(pin, dry_run=False)
-            if success:
-                print(f"   ✅ Image: {pin['imagePath']}")
-                print(f"   📝 \"{pin['title'][:70]}...\"")
-            else:
-                print(f"   ❌ Failed to generate image")
-        elif args.dry_run:
-            print(f"   📝 \"{pin['title'][:80]}...\"")
-            print(f"   🎨 Concept: {pin['concept']}")
-            print(f"   🔗 {pin['link']}")
+        if not args.dry_run:
+            ok = generate_image(pin)
+            icon = "✅" if ok else "❌"
+            print(f"  {icon} Pin {i+1}: {pin['boardName']}")
+            print(f"      \"{pin['title'][:80]}\"")
+            print(f"      Style: {pin['style']} | {pin['calc_name']}")
+        else:
+            print(f"  📌 Pin {i+1}: {pin['boardName']}")
+            print(f"      \"{pin['title'][:80]}\"")
 
-    # Save queue
     if not args.dry_run:
-        queue = {
-            "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
-            "batch": state["batches"],
-            "count": len(pins),
-            "pins": pins,
-        }
+        queue = {"generated": time.strftime("%Y-%m-%dT%H:%M:%S"), "batch": state["batches"], "pins": pins}
         with open(QUEUE_PATH, "w") as f:
             json.dump(queue, f, indent=2)
-
         state["total_pins"] = state.get("total_pins", 0) + len(pins)
         save_state(state)
-
-        print(f"\n✅ {len(pins)} pins generated and queued at {QUEUE_PATH}")
-        print(f"   Total lifetime pins: {state['total_pins']}")
-        print(f"   Board distribution: {dict(board_counts)}")
-        print(f"\n   📋 To post: python3 scripts/pinterest-batch-schedule.py")
-    else:
-        print(f"\n🔍 DRY RUN complete — {len(pins)} pins previewed")
+        print(f"\n✅ {len(pins)} pins queued. Total lifetime: {state['total_pins']}")
 
 if __name__ == "__main__":
     main()
