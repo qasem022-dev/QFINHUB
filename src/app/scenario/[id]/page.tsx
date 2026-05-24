@@ -84,11 +84,10 @@ function getScenarioData(slug: string): ScenarioData | null {
 export const dynamicParams = true;
 export const revalidate = 604800; // 7 days
 
-// Pre-render the latest 500 pages for fast initial loads
+// Pre-render ALL scenarios for fast initial loads and SEO
 export function generateStaticParams() {
   const index = loadIndex();
-  // Get 500 most recently generated slugs (assuming index order matches)
-  const slugs = Object.keys(index).slice(-500);
+  const slugs = Object.keys(index);
   return slugs.map((slug) => ({ id: slug }));
 }
 

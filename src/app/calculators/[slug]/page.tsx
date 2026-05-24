@@ -12,6 +12,10 @@ import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
 import { calculatorContent } from "@/lib/calculators/calculator-content";
 import { getCalculatorComponent } from "@/components/calculators/registry";
 import { ShareDialog } from "@/components/calculators/share-dialog";
+import { BreadcrumbNav } from "@/components/calculators/breadcrumb-nav";
+import { RelatedCalculators } from "@/components/calculators/related-calculators";
+import { TryTheseScenarios } from "@/components/calculators/try-these-scenarios";
+import { getScenariosForCalculator } from "@/lib/scenarios";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
 import type { CategoryType } from "@/types/calculator";
 
@@ -268,6 +272,24 @@ export default async function CalculatorDetailPage({
         />
       )}
       <LastReviewedBy />
+      {/* ── Cross-linking for SEO crawl discovery ── */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12">
+        <BreadcrumbNav
+          items={[
+            { label: "Calculators", href: "/calculators" },
+            { label: calculator.title, href: `/calculators/${slug}` },
+          ]}
+        />
+        <TryTheseScenarios
+          calculatorSlug={slug}
+          scenarios={getScenariosForCalculator(slug, 5)}
+        />
+        <RelatedCalculators
+          currentSlug={slug}
+          calculators={allCalculators}
+          maxResults={6}
+        />
+      </div>
     </div>
   );
 }

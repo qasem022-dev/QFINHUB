@@ -507,6 +507,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Top Calculators Section ── */}
+      <section className="bg-white px-4 py-16 dark:bg-surface-dark">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
+              Top Financial Calculators
+            </h2>
+            <p className="mx-auto max-w-xl text-gray-500 dark:text-gray-400">
+              Our most popular tools — free, instant, no sign-up required.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { name: "Compound Interest", slug: "compound-interest", desc: "See how your money grows with compound returns over time", icon: "📈" },
+              { name: "Mortgage Calculator", slug: "mortgage-calculator", desc: "Calculate monthly payments, total interest, and amortization", icon: "🏠" },
+              { name: "Retirement Planning", slug: "retirement-planning", desc: "Plan your retirement with projections and withdrawal strategies", icon: "🏖️" },
+              { name: "Loan Calculator", slug: "loan-calculator", desc: "Calculate payments for any loan type with full schedule", icon: "💰" },
+              { name: "401(k) Calculator", slug: "401k-calculator", desc: "Estimate your 401(k) balance with employer match", icon: "🏦" },
+              { name: "Tax Calculator", slug: "tax-calculator", desc: "Estimate your tax liability with marginal rate brackets", icon: "📋" },
+              { name: "Debt Payoff", slug: "debt-payoff", desc: "Compare snowball vs avalanche strategies side by side", icon: "💳" },
+              { name: "Budget Planner", slug: "budget-planner", desc: "Create a 50/30/20 budget in seconds", icon: "📊" },
+              { name: "Investment Return", slug: "investment-return", desc: "Calculate CAGR, absolute return, and annualized performance", icon: "📉" },
+              { name: "ROI Calculator", slug: "roi-calculator", desc: "Measure return on investment for any project", icon: "🎯" },
+              { name: "FIRE Calculator", slug: "early-retirement", desc: "Calculate your path to financial independence", icon: "🔥" },
+              { name: "APR Calculator", slug: "apr-calculator", desc: "Compare loan offers with true annual percentage rate", icon: "💵" },
+            ].map((calc) => (
+              <Link
+                key={calc.slug}
+                href={`/calculators/${calc.slug}`}
+                className="group flex flex-col gap-2 p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900/50 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md hover:bg-white dark:hover:bg-zinc-800/80 transition-all duration-150"
+              >
+                <span className="text-2xl">{calc.icon}</span>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                  {calc.name}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+                  {calc.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/calculators">
+              <Button variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
+                View All 124 Calculators <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA Section ── */}
       <section className="bg-gradient-to-r from-primary-900 via-primary-800 to-primary-950 px-4 py-20">
         <div className="mx-auto max-w-3xl text-center">

@@ -19,6 +19,9 @@ const footerGroups = [
       { href: "/about", labelKey: "footer.about" },
       { href: "/blog", labelKey: "footer.blog" },
       { href: "/contact", labelKey: "footer.contact" },
+      { href: "/methodology", labelKey: "footer.methodology" },
+      { href: "/editorial-policy", labelKey: "footer.editorialPolicy" },
+      { href: "/sitemap", labelKey: "footer.sitemap" },
     ],
   },
   {

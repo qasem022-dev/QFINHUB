@@ -46,13 +46,13 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       url: `${BASE_URL}/auth/login`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.2,
     },
     {
       url: `${BASE_URL}/auth/signup`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.2,
     },
     {
       url: `${BASE_URL}/privacy`,
@@ -107,6 +107,24 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/methodology`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/editorial-policy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/sitemap`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
     },
   ];
 
