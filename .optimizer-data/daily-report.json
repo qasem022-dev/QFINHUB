@@ -1,128 +1,334 @@
 {
-  "generated_at": "2026-05-22T15:00:00Z",
-  "source": "growth-optimizer-v2-autonomous-cycle",
-  "gsc_7d": {
-    "clicks": 1,
-    "impressions": 73,
-    "ctr_pct": 1.37,
-    "avg_position": 16.7,
-    "daily_trend": [
-      {
-        "date": "2026-05-18",
-        "clicks": 0,
-        "impressions": 15,
-        "position": 4.7
-      },
-      {
-        "date": "2026-05-19",
-        "clicks": 0,
-        "impressions": 5,
-        "position": 8.8
-      },
-      {
-        "date": "2026-05-20",
-        "clicks": 1,
-        "impressions": 53,
-        "position": 20.8
-      }
-    ]
-  },
-  "ga4_7d": {
-    "users": 8,
-    "sessions": 8,
-    "pageviews": 15,
-    "sources": {
-      "direct": 4,
-      "google_cpc": 3,
-      "organic": 1
+  "date": "2026-05-24",
+  "timestamp": "2026-05-24T12:31:55.045Z",
+  "traffic": {
+    "gsc": {
+      "clicks": 1,
+      "impressions": 157,
+      "ctr": 0.64,
+      "avgPosition": 23.9
     },
-    "devices": {
-      "desktop": 4,
-      "mobile": 4
+    "ga4": {
+      "users": 6,
+      "sessions": 7,
+      "pageviews": 11,
+      "bounceRate": 100,
+      "avgDuration": 16.5
+    },
+    "trends": {
+      "topKeywords": [
+        {
+          "keyword": "loan calculator",
+          "score": 89.3
+        },
+        {
+          "keyword": "mortgage calculator",
+          "score": 87.1
+        },
+        {
+          "keyword": "payment calculator",
+          "score": 86
+        },
+        {
+          "keyword": "real estate",
+          "score": 80
+        },
+        {
+          "keyword": "inflation calculator",
+          "score": 79.8
+        },
+        {
+          "keyword": "credit score",
+          "score": 79.2
+        },
+        {
+          "keyword": "auto loan calculator",
+          "score": 78.9
+        },
+        {
+          "keyword": "credit card calculator",
+          "score": 71.7
+        },
+        {
+          "keyword": "investing",
+          "score": 70.6
+        },
+        {
+          "keyword": "CD calculator",
+          "score": 57.5
+        }
+      ],
+      "spikes": [
+        {
+          "keyword": "refinance calculator",
+          "spike_pct": 100
+        },
+        {
+          "keyword": "401k calculator",
+          "spike_pct": 65.9
+        },
+        {
+          "keyword": "refinancing",
+          "spike_pct": 58.3
+        },
+        {
+          "keyword": "free calculator",
+          "spike_pct": 35.7
+        },
+        {
+          "keyword": "investing",
+          "spike_pct": 35.4
+        }
+      ],
+      "longTermUp": [
+        {
+          "keyword": "real estate",
+          "trend_pct": 6.9
+        },
+        {
+          "keyword": "credit score",
+          "trend_pct": 13.4
+        },
+        {
+          "keyword": "credit card calculator",
+          "trend_pct": 17.5
+        },
+        {
+          "keyword": "investing",
+          "trend_pct": 34
+        }
+      ],
+      "suggestionCount": 50,
+      "opportunities": [
+        {
+          "type": "short_term_spike",
+          "priority": "urgent",
+          "keyword": "refinance calculator",
+          "spike_pct": 100,
+          "action": "🚨 100.0% spike on \"refinance calculator\" — create content TODAY"
+        },
+        {
+          "type": "short_term_spike",
+          "priority": "urgent",
+          "keyword": "401k calculator",
+          "spike_pct": 65.9,
+          "action": "🚨 65.9% spike on \"401k calculator\" — create content TODAY"
+        },
+        {
+          "type": "short_term_spike",
+          "priority": "urgent",
+          "keyword": "refinancing",
+          "spike_pct": 58.3,
+          "action": "🚨 58.3% spike on \"refinancing\" — create content TODAY"
+        },
+        {
+          "type": "short_term_spike",
+          "priority": "urgent",
+          "keyword": "free calculator",
+          "spike_pct": 35.7,
+          "action": "🚨 35.7% spike on \"free calculator\" — create content TODAY"
+        },
+        {
+          "type": "short_term_spike",
+          "priority": "urgent",
+          "keyword": "investing",
+          "spike_pct": 35.4,
+          "action": "🚨 35.4% spike on \"investing\" — create content TODAY"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "loan calculator for cars",
+          "growth": 300,
+          "action": "Target rising query: \"loan calculator for cars\" (related to loan calculator, +300%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "toyota",
+          "growth": 250,
+          "action": "Target rising query: \"toyota\" (related to loan calculator, +250%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "loan calculator",
+          "query": "car vehicle loan calculator",
+          "growth": 200,
+          "action": "Target rising query: \"car vehicle loan calculator\" (related to loan calculator, +200%)"
+        }
+      ]
     }
   },
-  "trends": {
-    "top_rising_queries": [
-      {
-        "query": "calculator.net investment calculator",
-        "growth_pct": 250,
-        "seed": "investment calculator"
+  "engineHealth": {
+    "engines": {
+      "haro": {
+        "status": "no-data"
       },
-      {
-        "query": "daveramsey investment calculator",
-        "growth_pct": 170,
-        "seed": "investment calculator"
+      "x": {
+        "status": "paused",
+        "actionsToday": 0,
+        "lastRun": "2026-05-19T11:36:59.538Z"
       },
-      {
-        "query": "investment calculator with withdrawals",
-        "growth_pct": 100,
-        "seed": "investment calculator"
+      "blog": {
+        "status": "ok",
+        "postsToday": 1,
+        "lastRun": "2026-05-23T12:56:34.545Z"
+      },
+      "newsjack": {
+        "status": "ok",
+        "totalPublished": 58
+      },
+      "widgetOutreach": {
+        "status": "ok",
+        "batchesSent": 15,
+        "totalEmailsSent": 26
+      },
+      "scenarios": {
+        "status": "ok",
+        "totalPages": 2591
+      },
+      "indexing": {
+        "status": "ok",
+        "lastSubmitted": 84,
+        "lastFailed": 1,
+        "timestamp": "2026-05-23T20:47:48.073557Z"
       }
-    ],
-    "high_demand_keywords": [
-      {
-        "keyword": "real estate",
-        "score": 79.6
-      },
-      {
-        "keyword": "home buying",
-        "score": 55.9
-      },
-      {
-        "keyword": "refinancing",
-        "score": 38.8
-      }
+    },
+    "issues": [
+      "HARO: No activity data",
+      "X/Twitter: No posts today — cron may be paused"
     ]
   },
-  "actions_taken": [
+  "insights": [
     {
-      "action": "blog_post_created",
-      "slug": "investment-calculator-withdrawals",
-      "target_query": "investment calculator with withdrawals (+100%)",
-      "description": "Created blog post targeting rising query for retirement income planning with withdrawals"
+      "priority": "high",
+      "action": "CRITICAL: CTR too low (0.64%)",
+      "details": "157 impressions but 1 clicks. Improve meta titles/descriptions for top pages."
     },
     {
-      "action": "meta_description_optimized",
-      "slug": "rent-vs-buy",
-      "target": "CTR improvement",
-      "old": "Compare the financial outcomes of renting versus buying a home over any time horizon.",
-      "new": "Should you rent or buy a home? Compare total costs, equity growth, and breakeven horizon side by side to find out which saves you more money."
+      "priority": "high",
+      "action": "5 pages with impressions but ZERO clicks",
+      "details": "fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person, gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you, how-to-calculate-monthly-mortgage-payment, jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for, stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin"
     },
     {
-      "action": "indexing_api_submitted",
-      "urls_submitted": [
-        "https://www.qfinhub.com/",
-        "https://www.qfinhub.com/calculators/rent-vs-buy",
-        "https://www.qfinhub.com/calculators/percentage-calculator",
-        "https://www.qfinhub.com/guides/how-to-use-loan-comparison",
-        "https://www.qfinhub.com/guides/how-to-use-child-care-cost",
-        "https://www.qfinhub.com/compare/compare-dollar-cost-average-vs-lump-sum",
-        "https://www.qfinhub.com/blog/investment-calculator-withdrawals"
-      ],
-      "count": 7
+      "priority": "medium",
+      "action": "Zero organic search traffic — site still in Google sandbox",
+      "details": "Keep submitting to Indexing API, generate more content"
     },
     {
-      "action": "engine_status_check",
-      "engines": {
-        "haro": "running",
-        "widget_outreach": "running",
-        "newsjack": "running",
-        "x_morning": "running",
-        "x_afternoon": "running",
-        "blog_agent": "running",
-        "pinterest": "paused (standard access pending)",
-        "growth_optimizer": "running"
-      }
+      "priority": "high",
+      "action": "🔥 Rising trend: \"loan calculator for cars\" (+300%)",
+      "details": "Create dedicated content targeting this query immediately"
     },
     {
-      "action": "build_verified",
-      "result": "PASS",
-      "output": "Next.js build completed with 0 errors"
+      "priority": "high",
+      "action": "🚨 Spike detected: \"refinance calculator\" (+100% in 7 days)",
+      "details": "This is surging NOW — create content today to capture the wave"
     },
     {
-      "action": "deployed",
-      "commit": "1a79e8c",
-      "result": "Pushed to main, Vercel auto-deploy triggered"
+      "priority": "medium",
+      "action": "📈 4 keywords trending up over 12 months",
+      "details": "real estate (+6.9%), credit score (+13.4%), credit card calculator (+17.5%)"
+    },
+    {
+      "priority": "low",
+      "action": "💡 50 keyword suggestions via autocomplete",
+      "details": "Review .optimizer-data/traffic-report.json → google_trends.suggestions for new content ideas"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"loan calculator\" (score: 89.3)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"mortgage calculator\" (score: 87.1)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"payment calculator\" (score: 86)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"real estate\" (score: 80)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"inflation calculator\" (score: 79.8)",
+      "details": "Optimize existing content or create new page for this keyword"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "action": "Zero organic search traffic — site still in Google sandbox",
+      "details": "Keep submitting to Indexing API, generate more content"
+    },
+    {
+      "priority": "medium",
+      "action": "📈 4 keywords trending up over 12 months",
+      "details": "real estate (+6.9%), credit score (+13.4%), credit card calculator (+17.5%)"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"loan calculator\" (score: 89.3)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"mortgage calculator\" (score: 87.1)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"payment calculator\" (score: 86)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"real estate\" (score: 80)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "medium",
+      "action": "High-demand keyword: \"inflation calculator\" (score: 79.8)",
+      "details": "Optimize existing content or create new page for this keyword"
+    },
+    {
+      "priority": "low",
+      "action": "💡 50 keyword suggestions via autocomplete",
+      "details": "Review .optimizer-data/traffic-report.json → google_trends.suggestions for new content ideas"
+    },
+    {
+      "priority": "high",
+      "action": "CRITICAL: CTR too low (0.64%)",
+      "details": "157 impressions but 1 clicks. Improve meta titles/descriptions for top pages."
+    },
+    {
+      "priority": "high",
+      "action": "5 pages with impressions but ZERO clicks",
+      "details": "fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person, gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you, how-to-calculate-monthly-mortgage-payment, jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for, stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin"
+    },
+    {
+      "priority": "high",
+      "action": "🔥 Rising trend: \"loan calculator for cars\" (+300%)",
+      "details": "Create dedicated content targeting this query immediately"
+    },
+    {
+      "priority": "high",
+      "action": "🚨 Spike detected: \"refinance calculator\" (+100% in 7 days)",
+      "details": "This is surging NOW — create content today to capture the wave"
+    },
+    {
+      "priority": "high",
+      "action": "Engine issues detected",
+      "details": "HARO: No activity data; X/Twitter: No posts today — cron may be paused"
     }
   ]
 }

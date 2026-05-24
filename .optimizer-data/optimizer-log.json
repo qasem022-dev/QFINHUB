@@ -101,5 +101,16 @@
       "enginesOk": 5,
       "recommendations": 11
     }
+  },
+  {
+    "ts": "2026-05-24T12:32:04.764Z",
+    "type": "daily-run-v2",
+    "details": {
+      "gscClicks": 1,
+      "gscImpressions": 157,
+      "gaUsers": 6,
+      "enginesOk": 5,
+      "recommendations": 13
+    }
   }
 ]

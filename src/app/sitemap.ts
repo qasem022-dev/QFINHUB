@@ -121,7 +121,7 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       priority: 0.6,
     },
     {
-      url: `${BASE_URL}/sitemap`,
+      url: `${BASE_URL}/all-pages`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,

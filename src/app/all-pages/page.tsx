@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sitemap — All QFINHUB Pages",
   description: "Complete list of all calculators, scenarios, tools, blog posts, and pages on QFINHUB.",
-  alternates: { canonical: "https://www.qfinhub.com/sitemap" },
+  alternates: { canonical: "https://www.qfinhub.com/all-pages" },
 };
 
 export default function SitemapPage() {
@@ -93,7 +93,7 @@ export default function SitemapPage() {
             {scenarios.length > 200 && (
               <p className="text-sm text-gray-400 mt-3">
                 + {scenarios.length - 200} more scenarios —{" "}
-                <Link href="/scenario/sitemap.xml" className="text-primary-600 hover:underline">
+                <Link href="/scenario/all-pages.xml" className="text-primary-600 hover:underline">
                   view full XML sitemap
                 </Link>
               </p>

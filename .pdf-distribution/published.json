@@ -118,5 +118,29 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/emergency-fund-guide.md"
       }
     }
+  },
+  "investing-beginners-guide": {
+    "title": "Investing for Beginners: Start with $100",
+    "category": "investing",
+    "generatedAt": "2026-05-23T15:11:02.905Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/investing-beginners-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/investing-beginners-guide.md"
+      }
+    }
+  },
+  "credit-card-debt-guide": {
+    "title": "Credit Card Debt: Escape the Interest Trap",
+    "category": "debt",
+    "generatedAt": "2026-05-24T15:10:31.710Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/credit-card-debt-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/credit-card-debt-guide.md"
+      }
+    }
   }
 }

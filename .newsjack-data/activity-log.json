@@ -1264,5 +1264,89 @@
       "tweetId": null,
       "guid": "https://www.bloomberg.com/news/articles/2026-05-22/mexico-mid-may-inflation-slowed-after-banxico-ended-easing-cycle"
     }
+  },
+  {
+    "ts": "2026-05-23T14:31:28.197Z",
+    "type": "news-match",
+    "details": {
+      "title": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-23T14:31:44.499Z",
+    "type": "news-published",
+    "details": {
+      "slug": "kevin-warsh-takes-oath-as-fed-chair-what-it-means-for-your-mortgage-and-savings-",
+      "title": "Kevin Warsh Takes Oath as Fed Chair: What It Means for Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-23T14:31:49.502Z",
+    "type": "news-match",
+    "details": {
+      "title": "New Fed Chair Warsh loses dove as Waller turns hawkish",
+      "category": "fed-rate",
+      "source": "Housing Wire",
+      "guid": "https://www.housingwire.com/?p=586869"
+    }
+  },
+  {
+    "ts": "2026-05-23T14:32:03.244Z",
+    "type": "news-published",
+    "details": {
+      "slug": "fed-s-warsh-and-waller-shift-what-rising-10-year-yields-mean-for-your-mortgage-i",
+      "title": "Fed’s Warsh and Waller Shift: What Rising 10-Year Yields Mean for Your Mortgage in 2025",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.housingwire.com/?p=586869"
+    }
+  },
+  {
+    "ts": "2026-05-24T14:31:22.941Z",
+    "type": "news-match",
+    "details": {
+      "title": "Kevin Warsh&apos;s real Fed &apos;regime change&apos; may happen deep inside Wall Street&apos;s plumbing",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108310760"
+    }
+  },
+  {
+    "ts": "2026-05-24T14:31:37.906Z",
+    "type": "news-published",
+    "details": {
+      "slug": "kevin-warsh-fed-regime-change-what-it-means-for-your-mortgage-and-personal-finan",
+      "title": "Kevin Warsh Fed Regime Change: What It Means for Your Mortgage and Personal Finance",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108310760"
+    }
+  },
+  {
+    "ts": "2026-05-24T14:31:42.908Z",
+    "type": "news-match",
+    "details": {
+      "title": "More War-Driven Inflation Seen in Fed’s Favored Gauge",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-23/more-war-driven-inflation-seen-in-fed-s-favored-gauge"
+    }
+  },
+  {
+    "ts": "2026-05-24T14:31:57.091Z",
+    "type": "news-published",
+    "details": {
+      "slug": "war-driven-inflation-at-4-how-to-protect-your-mortgage-and-savings",
+      "title": "War-Driven Inflation at 4%: How to Protect Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-23/more-war-driven-inflation-seen-in-fed-s-favored-gauge"
+    }
   }
 ]

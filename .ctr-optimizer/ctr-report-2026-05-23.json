@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-05-23T20:32:49.290870",
+  "targets_analyzed": 5,
+  "meta_fixes_applied": [
+    {
+      "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "old_impressions": 10,
+      "new_title": "Afford Calculator at 5% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate afford instantly. Example: how much mortgage can i afford on 100k. Free online tool with detailed breakdown, formula, and expert tips."
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+      "old_impressions": 7,
+      "new_title": "Loan Calculator at 8% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate loan instantly. Example: if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be. Free online tool with detail..."
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "old_impressions": 5,
+      "new_title": "Tax in Philadelphia Pa \u2014 Local Rates & Payments | QFINHUB",
+      "new_description": "Calculate tax specifically for Philadelphia Pa. Uses local market data for accurate results. Free instant calculator \u2014 no signup needed."
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "old_impressions": 3,
+      "new_title": "Free Online Calculator \u2014 Instant Results | QFINHUB",
+      "new_description": "Get instant, accurate calculations with detailed breakdowns. 100% free, no signup needed. Try it now."
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "old_impressions": 3,
+      "new_title": "Mortgage Calculator at 6% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate mortgage instantly. Example: $200 000 mortgage payment 30 years. Free online tool with detailed breakdown, formula, and expert tips."
+    }
+  ],
+  "scenarios_created": 1,
+  "urls_submitted": 6,
+  "scenarios": [
+    {
+      "slug": "loan-20000-5yr-8pct",
+      "title": "Borrowing $20000 for 5 Years at 8% \u2014 Monthly Payment Calculator",
+      "description": "See your exact monthly payment for a $20000 loan at 8% over 5 years. Free instant calculator with full amortization schedule. No signup needed.",
+      "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "calc_type": "loan",
+      "params": {
+        "amount": "20000",
+        "years": "5",
+        "rate": "8"
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "impressions": 10,
+      "best_pos": 95,
+      "top_query": "how much mortgage can i afford on 100k"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+      "impressions": 7,
+      "best_pos": 11.2,
+      "top_query": "20 000 loan calculator"
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "impressions": 5,
+      "best_pos": 61,
+      "top_query": "philadelphia city income tax rate"
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "impressions": 3,
+      "best_pos": 91.66666666666667,
+      "top_query": "how to calculate your retirement income"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "impressions": 3,
+      "best_pos": 32,
+      "top_query": "$200 000 mortgage payment 30 years"
+    }
+  ]
+}

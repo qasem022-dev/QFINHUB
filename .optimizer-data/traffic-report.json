@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T12:41:02.787280",
+  "generated_at": "2026-05-24T12:31:55.203510",
   "period_days": 7,
   "search_console": {
     "summary": {
@@ -412,49 +412,54 @@
   "analytics": {
     "summary": {
       "users": 6,
-      "sessions": 6,
-      "pageviews": 13,
-      "avg_session_duration_sec": 21.3,
-      "bounce_rate": 50.0,
-      "engaged_sessions": 3,
+      "sessions": 7,
+      "pageviews": 11,
+      "avg_session_duration_sec": 16.5,
+      "bounce_rate": 100.0,
+      "engaged_sessions": 0,
       "period_days": 7
     },
     "sources": [
+      {
+        "source": "(not set)",
+        "sessions": 4,
+        "users": 3
+      },
       {
         "source": "google / cpc",
         "sessions": 3,
         "users": 3
       },
       {
-        "source": "(direct) / (none)",
+        "source": "(data not available)",
         "sessions": 2,
         "users": 2
       },
       {
-        "source": "google / organic",
-        "sessions": 1,
+        "source": "(direct) / (none)",
+        "sessions": 2,
         "users": 1
       }
     ],
     "source_summary": {
-      "organic_search": 1,
+      "organic_search": 0,
       "direct": 2,
       "referral": 0,
       "social": 0,
-      "other": 3
+      "other": 5
     },
     "top_pages": [
       {
         "path": "/",
-        "pageviews": 6,
+        "pageviews": 7,
         "users": 6,
-        "avg_time_sec": 2.8
+        "avg_time_sec": 1.1
       },
       {
         "path": "/calculators",
-        "pageviews": 4,
-        "users": 3,
-        "avg_time_sec": 22.3
+        "pageviews": 2,
+        "users": 1,
+        "avg_time_sec": 23.5
       },
       {
         "path": "/calculators/basic-calculator",
@@ -463,34 +468,28 @@
         "avg_time_sec": 0.0
       },
       {
-        "path": "/calculators/hourly-to-salary",
+        "path": "/calculators/inflation-calculator",
         "pageviews": 1,
         "users": 1,
-        "avg_time_sec": 20.2
-      },
-      {
-        "path": "/calculators/mortgage-calculator",
-        "pageviews": 1,
-        "users": 1,
-        "avg_time_sec": 24.0
+        "avg_time_sec": 84.1
       }
     ],
     "devices": {
-      "desktop": 4,
+      "desktop": 5,
       "mobile": 2
     },
     "daily_trend": [
-      {
-        "date": "20260516",
-        "users": 3,
-        "sessions": 3,
-        "pageviews": 10
-      },
       {
         "date": "20260518",
         "users": 3,
         "sessions": 3,
         "pageviews": 3
+      },
+      {
+        "date": "20260523",
+        "users": 3,
+        "sessions": 4,
+        "pageviews": 8
       }
     ]
   },
@@ -769,111 +768,240 @@
       ]
     },
     "keyword_interest": {
-      "credit score": 84.2,
+      "loan calculator": 89.3,
+      "mortgage calculator": 87.1,
+      "payment calculator": 86.0,
       "real estate": 80.0,
-      "auto loan calculator": 78.8,
-      "inflation calculator": 78.0,
-      "investing": 70.1,
-      "401k calculator": 41.1,
-      "refinance calculator": 39.4,
-      "IRA calculator": 37.9,
-      "stock market": 36.0,
-      "amortization calculator": 35.4,
+      "inflation calculator": 79.8,
+      "credit score": 79.2,
+      "auto loan calculator": 78.9,
+      "credit card calculator": 71.7,
+      "investing": 70.6,
+      "CD calculator": 57.5,
+      "tax calculator": 56.2,
+      "free calculator": 56.1,
+      "home buying": 55.7,
+      "online calculator": 51.2,
+      "401k calculator": 41.9,
+      "refinance calculator": 40.7,
+      "refinancing": 38.8,
+      "IRA calculator": 38.6,
+      "budget planning": 37.4,
+      "stock market": 35.7,
+      "amortization calculator": 35.6,
+      "salary calculator": 31.9,
+      "budget planner": 31.8,
+      "retirement planning": 21.6,
+      "annuity calculator": 20.7,
+      "payoff calculator": 20.5,
       "credit cards": 20.5,
-      "payoff calculator": 20.4,
+      "how to save money": 20.1,
+      "dividend calculator": 19.3,
+      "financial calculator": 16.7,
+      "investment calculator": 15.7,
+      "retirement calculator": 15.2,
       "personal finance": 15.1,
-      "personal loan calculator": 14.5,
-      "student loan calculator": 11.4,
-      "ROI calculator": 6.8,
-      "compound interest calculator": 6.5,
-      "savings calculator": 4.9,
+      "net worth calculator": 15.0,
+      "calculator tool": 14.8,
+      "personal loan calculator": 14.3,
+      "calculate interest": 13.8,
+      "student loan calculator": 11.3,
+      "monthly payment calculator": 10.4,
+      "how much house can I afford": 9.3,
+      "retirement planner": 7.0,
+      "how to calculate mortgage": 6.6,
+      "ROI calculator": 6.3,
+      "compound interest calculator": 6.2,
+      "savings calculator": 4.6,
       "cryptocurrency": 3.8,
-      "debt calculator": 2.6,
-      "budget calculator": 2.1,
+      "calculate monthly payment": 3.3,
+      "debt calculator": 2.4,
+      "capital gains calculator": 2.4,
+      "budget calculator": 2.0,
       "tax planning": 1.7,
       "rent vs buy calculator": 1.6,
-      "mortgage affordability calculator": 0.7
+      "mortgage affordability calculator": 0.7,
+      "emergency fund calculator": 0.2,
+      "debt payoff plan": 0.0,
+      "savings goal calculator": 0.0,
+      "debt snowball calculator": 0.0
     },
     "keyword_interest_7d": {
       "refinance calculator": {
-        "avg": 3.7,
-        "spike_pct": 120.0
-      },
-      "cryptocurrency": {
-        "avg": 31.0,
-        "spike_pct": 97.9
-      },
-      "auto loan calculator": {
-        "avg": 1.3,
-        "spike_pct": 33.3
+        "avg": 4.7,
+        "spike_pct": 100.0
       },
       "401k calculator": {
-        "avg": 2.7,
-        "spike_pct": 33.3
+        "avg": 22.7,
+        "spike_pct": 65.9
       },
-      "savings calculator": {
-        "avg": 10.7,
-        "spike_pct": 23.1
+      "refinancing": {
+        "avg": 6.3,
+        "spike_pct": 58.3
+      },
+      "free calculator": {
+        "avg": 57.0,
+        "spike_pct": 35.7
       },
       "investing": {
-        "avg": 4.7,
+        "avg": 21.7,
+        "spike_pct": 35.4
+      },
+      "tax calculator": {
+        "avg": 64.7,
+        "spike_pct": 29.3
+      },
+      "online calculator": {
+        "avg": 44.0,
+        "spike_pct": 25.7
+      },
+      "credit card calculator": {
+        "avg": 1.7,
+        "spike_pct": 25.0
+      },
+      "home buying": {
+        "avg": 41.7,
+        "spike_pct": 23.8
+      },
+      "payment calculator": {
+        "avg": 3.7,
+        "spike_pct": 22.2
+      },
+      "auto loan calculator": {
+        "avg": 6.0,
+        "spike_pct": 20.0
+      },
+      "stock market": {
+        "avg": 38.0,
+        "spike_pct": 20.0
+      },
+      "IRA calculator": {
+        "avg": 2.3,
         "spike_pct": 16.7
-      },
-      "personal finance": {
-        "avg": 3.3,
-        "spike_pct": 11.1
-      },
-      "compound interest calculator": {
-        "avg": 20.3,
-        "spike_pct": 10.9
-      },
-      "credit cards": {
-        "avg": 45.0,
-        "spike_pct": 10.7
       }
     },
     "keyword_interest_12m": {
-      "credit score": {
-        "avg": 20.7,
-        "trend_pct": 15.8,
-        "direction": "up"
+      "loan calculator": {
+        "avg": 10.5,
+        "trend_pct": -5.8,
+        "direction": "down"
+      },
+      "mortgage calculator": {
+        "avg": 11.0,
+        "trend_pct": -13.5,
+        "direction": "down"
+      },
+      "payment calculator": {
+        "avg": 5.6,
+        "trend_pct": -0.7,
+        "direction": "flat"
       },
       "real estate": {
-        "avg": 86.4,
-        "trend_pct": 7.2,
-        "direction": "up"
-      },
-      "auto loan calculator": {
-        "avg": 2.3,
-        "trend_pct": 6.3,
+        "avg": 83.4,
+        "trend_pct": 6.9,
         "direction": "up"
       },
       "inflation calculator": {
-        "avg": 2.2,
-        "trend_pct": 3.1,
+        "avg": 2.1,
+        "trend_pct": 0.0,
         "direction": "flat"
       },
-      "investing": {
-        "avg": 10.1,
-        "trend_pct": 38.1,
+      "credit score": {
+        "avg": 76.6,
+        "trend_pct": 13.4,
         "direction": "up"
+      },
+      "auto loan calculator": {
+        "avg": 9.0,
+        "trend_pct": 1.2,
+        "direction": "flat"
+      },
+      "credit card calculator": {
+        "avg": 3.2,
+        "trend_pct": 17.5,
+        "direction": "up"
+      },
+      "investing": {
+        "avg": 37.1,
+        "trend_pct": 34.0,
+        "direction": "up"
+      },
+      "CD calculator": {
+        "avg": 3.4,
+        "trend_pct": -10.4,
+        "direction": "down"
       }
     },
     "rising_related": [
       {
-        "seed": "investment calculator",
-        "query": "calculator.net investment calculator",
-        "value": 750
+        "seed": "loan calculator",
+        "query": "loan calculator for cars",
+        "value": 300
+      },
+      {
+        "seed": "loan calculator",
+        "query": "toyota",
+        "value": 250
+      },
+      {
+        "seed": "loan calculator",
+        "query": "car vehicle loan calculator",
+        "value": 200
+      },
+      {
+        "seed": "loan calculator",
+        "query": "vehicle loan payment calculator",
+        "value": 190
       },
       {
         "seed": "tax calculator",
         "query": "sale tax calculator",
-        "value": 180
+        "value": 160
+      },
+      {
+        "seed": "loan calculator",
+        "query": "business loan calculator",
+        "value": 150
+      },
+      {
+        "seed": "loan calculator",
+        "query": "automotive loan calculator",
+        "value": 150
+      },
+      {
+        "seed": "retirement calculator",
+        "query": "ramsey solutions retirement calculator",
+        "value": 150
+      },
+      {
+        "seed": "loan calculator",
+        "query": "motorcycle loan calculator",
+        "value": 140
       },
       {
         "seed": "investment calculator",
-        "query": "daveramsey investment calculator",
+        "query": "ramsey solutions investment calculator",
+        "value": 140
+      },
+      {
+        "seed": "investment calculator",
+        "query": "calculator.net investment calculator",
+        "value": 140
+      },
+      {
+        "seed": "retirement calculator",
+        "query": "ramit sethi retirement calculator",
         "value": 130
+      },
+      {
+        "seed": "loan calculator",
+        "query": "vehicle loan calculator",
+        "value": 120
+      },
+      {
+        "seed": "savings calculator",
+        "query": "ev savings calculator",
+        "value": 120
       },
       {
         "seed": "tax calculator",
@@ -881,33 +1009,38 @@
         "value": 110
       },
       {
-        "seed": "retirement calculator",
-        "query": "ramit sethi retirement calculator",
-        "value": 110
+        "seed": "mortgage calculator",
+        "query": "online mortgage calculator",
+        "value": 100
       },
       {
-        "seed": "tax calculator",
-        "query": "loan calculator",
-        "value": 80
-      },
-      {
-        "seed": "tax calculator",
-        "query": "mortgage calculator",
-        "value": 70
+        "seed": "mortgage calculator",
+        "query": "free mortgage calculator",
+        "value": 90
       },
       {
         "seed": "tax calculator",
         "query": "reverse tax calculator",
-        "value": 70
+        "value": 80
       },
       {
         "seed": "investment calculator",
-        "query": "ramsey solutions investment calculator",
-        "value": 70
+        "query": "daveramsey investment calculator",
+        "value": 80
+      },
+      {
+        "seed": "savings calculator",
+        "query": "fico loan savings calculator",
+        "value": 80
       },
       {
         "seed": "tax calculator",
-        "query": "free tax calculator",
+        "query": "loan calculator",
+        "value": 70
+      },
+      {
+        "seed": "mortgage calculator",
+        "query": "reverse mortgage calculator",
         "value": 60
       },
       {
@@ -916,13 +1049,13 @@
         "value": 60
       },
       {
-        "seed": "retirement calculator",
-        "query": "ramsey solutions retirement calculator",
+        "seed": "tax calculator",
+        "query": "mortgage calculator",
         "value": 60
       },
       {
         "seed": "retirement calculator",
-        "query": "psers retirement calculator",
+        "query": "army reserve retirement calculator",
         "value": 60
       },
       {
@@ -936,13 +1069,13 @@
         "value": 50
       },
       {
-        "seed": "retirement calculator",
-        "query": "army reserve retirement calculator",
+        "seed": "tax calculator",
+        "query": "self-employment tax calculator",
         "value": 50
       },
       {
         "seed": "retirement calculator",
-        "query": "retirement calculator with pension and social security",
+        "query": "saving for retirement calculator",
         "value": 50
       },
       {
@@ -951,30 +1084,40 @@
         "value": 50
       },
       {
-        "seed": "savings calculator",
-        "query": "fico loan savings calculator",
+        "seed": "mortgage calculator",
+        "query": "home loan calculator",
         "value": 40
       },
       {
-        "seed": "savings calculator",
-        "query": "ev savings calculator",
+        "seed": "mortgage calculator",
+        "query": "mortgage calculator colorado",
         "value": 40
       }
     ],
     "top_related": [
       {
+        "seed": "mortgage calculator",
+        "query": "calculator for mortgage",
+        "value": 100
+      },
+      {
+        "seed": "loan calculator",
+        "query": "loan calculator car loan",
+        "value": 100
+      },
+      {
         "seed": "tax calculator",
-        "query": "income tax calculator",
+        "query": "income calculator",
         "value": 100
       },
       {
         "seed": "retirement calculator",
-        "query": "retirement calculator ramsey",
+        "query": "401k retirement calculator",
         "value": 100
       },
       {
         "seed": "investment calculator",
-        "query": "ramsey investment calculator",
+        "query": "investment calculator ramsey",
         "value": 100
       },
       {
@@ -983,39 +1126,84 @@
         "value": 100
       },
       {
-        "seed": "savings calculator",
-        "query": "savings account calculator",
-        "value": 93
+        "seed": "loan calculator",
+        "query": "loan car calculator",
+        "value": 99
+      },
+      {
+        "seed": "loan calculator",
+        "query": "car calculator loan calculator",
+        "value": 99
       },
       {
         "seed": "retirement calculator",
         "query": "401k calculator",
-        "value": 91
+        "value": 99
       },
       {
-        "seed": "retirement calculator",
-        "query": "retirement calculator 401k",
-        "value": 91
+        "seed": "savings calculator",
+        "query": "savings account calculator",
+        "value": 99
+      },
+      {
+        "seed": "loan calculator",
+        "query": "car loan calculator car",
+        "value": 98
+      },
+      {
+        "seed": "loan calculator",
+        "query": "car loan",
+        "value": 98
+      },
+      {
+        "seed": "tax calculator",
+        "query": "income tax calculator",
+        "value": 97
       },
       {
         "seed": "retirement calculator",
         "query": "social security retirement calculator",
-        "value": 89
+        "value": 96
       },
       {
         "seed": "retirement calculator",
         "query": "social security calculator",
-        "value": 88
+        "value": 96
       },
       {
         "seed": "retirement calculator",
         "query": "retirement income calculator",
-        "value": 81
+        "value": 86
       },
       {
         "seed": "retirement calculator",
         "query": "best retirement calculator",
-        "value": 80
+        "value": 86
+      },
+      {
+        "seed": "retirement calculator",
+        "query": "retirement age",
+        "value": 83
+      },
+      {
+        "seed": "retirement calculator",
+        "query": "retirement tax calculator",
+        "value": 83
+      },
+      {
+        "seed": "loan calculator",
+        "query": "auto loan calculator",
+        "value": 81
+      },
+      {
+        "seed": "mortgage calculator",
+        "query": "payment calculator",
+        "value": 79
+      },
+      {
+        "seed": "loan calculator",
+        "query": "auto loan",
+        "value": 79
       },
       {
         "seed": "tax calculator",
@@ -1023,49 +1211,69 @@
         "value": 79
       },
       {
-        "seed": "retirement calculator",
-        "query": "retirement age",
-        "value": 78
-      },
-      {
-        "seed": "savings calculator",
-        "query": "interest savings calculator",
-        "value": 78
-      },
-      {
         "seed": "investment calculator",
         "query": "interest calculator",
         "value": 67
       },
       {
-        "seed": "investment calculator",
-        "query": "stock calculator",
-        "value": 63
+        "seed": "mortgage calculator",
+        "query": "loan calculator",
+        "value": 65
       },
       {
         "seed": "investment calculator",
         "query": "stock investment calculator",
-        "value": 63
+        "value": 65
+      },
+      {
+        "seed": "investment calculator",
+        "query": "stock calculator",
+        "value": 65
+      },
+      {
+        "seed": "mortgage calculator",
+        "query": "loan calculator mortgage",
+        "value": 64
       },
       {
         "seed": "tax calculator",
-        "query": "sales tax calculator",
+        "query": "tax calculator sales",
+        "value": 60
+      },
+      {
+        "seed": "investment calculator",
+        "query": "investment calculator dave ramsey",
         "value": 59
       },
       {
         "seed": "tax calculator",
-        "query": "tax calculator 2025",
-        "value": 55
+        "query": "2025 tax calculator",
+        "value": 58
       },
       {
-        "seed": "investment calculator",
-        "query": "dave ramsey investment calculator",
-        "value": 55
+        "seed": "mortgage calculator",
+        "query": "home mortgage calculator",
+        "value": 57
+      },
+      {
+        "seed": "mortgage calculator",
+        "query": "mortgage rates",
+        "value": 57
       },
       {
         "seed": "investment calculator",
         "query": "retirement calculator",
-        "value": 55
+        "value": 57
+      },
+      {
+        "seed": "mortgage calculator",
+        "query": "mortgage rates calculator",
+        "value": 56
+      },
+      {
+        "seed": "investment calculator",
+        "query": "retirement investment calculator",
+        "value": 56
       },
       {
         "seed": "investment calculator",
@@ -1073,132 +1281,205 @@
         "value": 55
       },
       {
-        "seed": "investment calculator",
-        "query": "mortgage calculator",
-        "value": 45
+        "seed": "savings calculator",
+        "query": "high yield savings calculator",
+        "value": 46
       },
       {
         "seed": "tax calculator",
         "query": "tax rate calculator",
-        "value": 43
-      },
-      {
-        "seed": "savings calculator",
-        "query": "high yield savings calculator",
-        "value": 43
+        "value": 45
       },
       {
         "seed": "savings calculator",
         "query": "high yield savings",
-        "value": 43
+        "value": 45
       },
       {
         "seed": "tax calculator",
         "query": "state tax calculator",
-        "value": 39
+        "value": 38
+      },
+      {
+        "seed": "mortgage calculator",
+        "query": "mortgage rate calculator",
+        "value": 37
       },
       {
         "seed": "tax calculator",
         "query": "federal tax calculator",
-        "value": 36
-      },
-      {
-        "seed": "tax calculator",
-        "query": "property tax calculator",
-        "value": 32
+        "value": 37
       },
       {
         "seed": "savings calculator",
-        "query": "retirement savings calculator",
-        "value": 27
+        "query": "mortgage calculator",
+        "value": 18
       },
       {
         "seed": "savings calculator",
-        "query": "apy savings calculator",
+        "query": "monthly savings calculator",
         "value": 16
+      },
+      {
+        "seed": "savings calculator",
+        "query": "cd savings calculator",
+        "value": 13
+      },
+      {
+        "seed": "savings calculator",
+        "query": "compound savings calculator",
+        "value": 12
       }
     ],
     "rising_broad": {
       "personal finance": [
         {
-          "query": "passive income ideas",
-          "value": 6600
+          "query": "openai chatgpt personal finance feature",
+          "value": 650
         },
         {
-          "query": "openai chatgpt personal finance feature",
-          "value": 550
+          "query": "personal finance software for mac",
+          "value": 200
         },
         {
           "query": "personal finance tracker",
+          "value": 100
+        },
+        {
+          "query": "personal finance software",
+          "value": 40
+        }
+      ],
+      "investing": [
+        {
+          "query": "lidl near me",
+          "value": 2450
+        },
+        {
+          "query": "s&p 500 sell-off investing",
+          "value": 1000
+        },
+        {
+          "query": "gold ira investing",
+          "value": 250
+        },
+        {
+          "query": "stock investing for dummies",
+          "value": 250
+        },
+        {
+          "query": "investing for dummies",
+          "value": 200
+        },
+        {
+          "query": "rbc direct investing login",
           "value": 90
+        },
+        {
+          "query": "investing in mid-cap and large-cap companies means _________________________.",
+          "value": 70
+        }
+      ],
+      "real estate": [
+        {
+          "query": "fitness workout plan",
+          "value": 6950
+        },
+        {
+          "query": "how to learn python",
+          "value": 5850
+        },
+        {
+          "query": "car insurance quotes",
+          "value": 2250
+        },
+        {
+          "query": "buy laptop online",
+          "value": 1500
+        },
+        {
+          "query": "best restaurants near me",
+          "value": 1000
+        },
+        {
+          "query": "cheap flights 2024",
+          "value": 650
+        },
+        {
+          "query": "weather forecast today",
+          "value": 250
+        },
+        {
+          "query": "stock market news",
+          "value": 110
         }
       ],
       "cryptocurrency": [
         {
           "query": "ledger nano s cryptocurrency hardware wallet",
-          "value": 22150
+          "value": 25150
         },
         {
-          "query": "cryptocurrency adoption worldwide news",
-          "value": 3950
+          "query": "etrscrypto cryptocurrency updates from etherions",
+          "value": 7300
+        },
+        {
+          "query": "what is one potential risk associated with a cryptocurrency hot wallet?",
+          "value": 6800
+        },
+        {
+          "query": "what is the best description to explain the difference between public and private keys for accessing cryptocurrency?",
+          "value": 6400
         },
         {
           "query": "lidl near me",
-          "value": 2800
+          "value": 1600
         },
         {
-          "query": "etrscrypto cryptocurrency news by etherions",
-          "value": 950
-        },
-        {
-          "query": "cryptocurrency updates etrscrypto",
-          "value": 850
-        },
-        {
-          "query": "walmart near me",
-          "value": 700
-        },
-        {
-          "query": "cryptocurrency news etrscrypto",
-          "value": 550
+          "query": "kyron thought he successfully sent cryptocurrency to his friend. he has a confirmation that it was sent. but his friend showed him proof that she never received it. what did kyron most likely do wrong?",
+          "value": 750
         },
         {
           "query": "cryptocurrency market cap",
           "value": 50
+        },
+        {
+          "query": "cryptocurrency wallet",
+          "value": 40
         }
       ],
       "stock market": [
         {
           "query": "fitness workout plan",
-          "value": 15700
+          "value": 25400
         },
         {
           "query": "jerome powell stock market warning",
           "value": 8800
         },
         {
-          "query": "how to learn python",
-          "value": 8250
-        },
-        {
-          "query": "car insurance quotes",
-          "value": 5150
+          "query": "warren buffett stock market warning",
+          "value": 7550
         },
         {
           "query": "is the stock market closed on good friday",
-          "value": 4050
+          "value": 7500
         },
         {
-          "query": "iran war stock market",
-          "value": 3300
+          "query": "how to learn python",
+          "value": 6900
+        },
+        {
+          "query": "car insurance quotes",
+          "value": 5050
         },
         {
           "query": "cook pasta",
-          "value": 2950
+          "value": 4350
         },
         {
           "query": "is stock market open on good friday",
-          "value": 2900
+          "value": 4050
         }
       ]
     },
@@ -1208,109 +1489,127 @@
         "type": "short_term_spike",
         "priority": "urgent",
         "keyword": "refinance calculator",
-        "spike_pct": 120.0,
-        "action": "\ud83d\udea8 120.0% spike on \"refinance calculator\" \u2014 create content TODAY"
-      },
-      {
-        "type": "short_term_spike",
-        "priority": "urgent",
-        "keyword": "cryptocurrency",
-        "spike_pct": 97.9,
-        "action": "\ud83d\udea8 97.9% spike on \"cryptocurrency\" \u2014 create content TODAY"
-      },
-      {
-        "type": "short_term_spike",
-        "priority": "urgent",
-        "keyword": "auto loan calculator",
-        "spike_pct": 33.3,
-        "action": "\ud83d\udea8 33.3% spike on \"auto loan calculator\" \u2014 create content TODAY"
+        "spike_pct": 100.0,
+        "action": "\ud83d\udea8 100.0% spike on \"refinance calculator\" \u2014 create content TODAY"
       },
       {
         "type": "short_term_spike",
         "priority": "urgent",
         "keyword": "401k calculator",
-        "spike_pct": 33.3,
-        "action": "\ud83d\udea8 33.3% spike on \"401k calculator\" \u2014 create content TODAY"
+        "spike_pct": 65.9,
+        "action": "\ud83d\udea8 65.9% spike on \"401k calculator\" \u2014 create content TODAY"
       },
       {
         "type": "short_term_spike",
         "priority": "urgent",
-        "keyword": "savings calculator",
-        "spike_pct": 23.1,
-        "action": "\ud83d\udea8 23.1% spike on \"savings calculator\" \u2014 create content TODAY"
+        "keyword": "refinancing",
+        "spike_pct": 58.3,
+        "action": "\ud83d\udea8 58.3% spike on \"refinancing\" \u2014 create content TODAY"
+      },
+      {
+        "type": "short_term_spike",
+        "priority": "urgent",
+        "keyword": "free calculator",
+        "spike_pct": 35.7,
+        "action": "\ud83d\udea8 35.7% spike on \"free calculator\" \u2014 create content TODAY"
+      },
+      {
+        "type": "short_term_spike",
+        "priority": "urgent",
+        "keyword": "investing",
+        "spike_pct": 35.4,
+        "action": "\ud83d\udea8 35.4% spike on \"investing\" \u2014 create content TODAY"
       },
       {
         "type": "rising_related",
         "priority": "high",
-        "seed": "investment calculator",
-        "query": "calculator.net investment calculator",
-        "growth": 750,
-        "action": "Target rising query: \"calculator.net investment calculator\" (related to investment calculator, +750%)"
+        "seed": "loan calculator",
+        "query": "loan calculator for cars",
+        "growth": 300,
+        "action": "Target rising query: \"loan calculator for cars\" (related to loan calculator, +300%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "loan calculator",
+        "query": "toyota",
+        "growth": 250,
+        "action": "Target rising query: \"toyota\" (related to loan calculator, +250%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "loan calculator",
+        "query": "car vehicle loan calculator",
+        "growth": 200,
+        "action": "Target rising query: \"car vehicle loan calculator\" (related to loan calculator, +200%)"
+      },
+      {
+        "type": "rising_related",
+        "priority": "high",
+        "seed": "loan calculator",
+        "query": "vehicle loan payment calculator",
+        "growth": 190,
+        "action": "Target rising query: \"vehicle loan payment calculator\" (related to loan calculator, +190%)"
       },
       {
         "type": "rising_related",
         "priority": "high",
         "seed": "tax calculator",
         "query": "sale tax calculator",
-        "growth": 180,
-        "action": "Target rising query: \"sale tax calculator\" (related to tax calculator, +180%)"
+        "growth": 160,
+        "action": "Target rising query: \"sale tax calculator\" (related to tax calculator, +160%)"
       },
       {
         "type": "rising_related",
         "priority": "high",
-        "seed": "investment calculator",
-        "query": "daveramsey investment calculator",
-        "growth": 130,
-        "action": "Target rising query: \"daveramsey investment calculator\" (related to investment calculator, +130%)"
+        "seed": "loan calculator",
+        "query": "business loan calculator",
+        "growth": 150,
+        "action": "Target rising query: \"business loan calculator\" (related to loan calculator, +150%)"
       },
       {
         "type": "rising_related",
         "priority": "high",
-        "seed": "tax calculator",
-        "query": "car loan calculator",
-        "growth": 110,
-        "action": "Target rising query: \"car loan calculator\" (related to tax calculator, +110%)"
+        "seed": "loan calculator",
+        "query": "automotive loan calculator",
+        "growth": 150,
+        "action": "Target rising query: \"automotive loan calculator\" (related to loan calculator, +150%)"
       },
       {
         "type": "rising_related",
         "priority": "high",
         "seed": "retirement calculator",
-        "query": "ramit sethi retirement calculator",
-        "growth": 110,
-        "action": "Target rising query: \"ramit sethi retirement calculator\" (related to retirement calculator, +110%)"
-      },
-      {
-        "type": "rising_related",
-        "priority": "high",
-        "seed": "tax calculator",
-        "query": "loan calculator",
-        "growth": 80,
-        "action": "Target rising query: \"loan calculator\" (related to tax calculator, +80%)"
-      },
-      {
-        "type": "rising_related",
-        "priority": "high",
-        "seed": "tax calculator",
-        "query": "mortgage calculator",
-        "growth": 70,
-        "action": "Target rising query: \"mortgage calculator\" (related to tax calculator, +70%)"
-      },
-      {
-        "type": "rising_related",
-        "priority": "high",
-        "seed": "tax calculator",
-        "query": "reverse tax calculator",
-        "growth": 70,
-        "action": "Target rising query: \"reverse tax calculator\" (related to tax calculator, +70%)"
+        "query": "ramsey solutions retirement calculator",
+        "growth": 150,
+        "action": "Target rising query: \"ramsey solutions retirement calculator\" (related to retirement calculator, +150%)"
       },
       {
         "type": "high_demand",
         "priority": "high",
-        "keyword": "credit score",
-        "interest_score": 84.2,
-        "long_term_trend": "up",
-        "trend_pct": 15.8,
-        "action": "Target \"credit score\" (score: 84.2, up 15.8% over 12m)"
+        "keyword": "loan calculator",
+        "interest_score": 89.3,
+        "long_term_trend": "down",
+        "trend_pct": -5.8,
+        "action": "Target \"loan calculator\" (score: 89.3, down -5.8% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "high",
+        "keyword": "mortgage calculator",
+        "interest_score": 87.1,
+        "long_term_trend": "down",
+        "trend_pct": -13.5,
+        "action": "Target \"mortgage calculator\" (score: 87.1, down -13.5% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "high",
+        "keyword": "payment calculator",
+        "interest_score": 86.0,
+        "long_term_trend": "flat",
+        "trend_pct": -0.7,
+        "action": "Target \"payment calculator\" (score: 86.0, flat -0.7% over 12m)"
       },
       {
         "type": "high_demand",
@@ -1318,53 +1617,53 @@
         "keyword": "real estate",
         "interest_score": 80.0,
         "long_term_trend": "up",
-        "trend_pct": 7.2,
-        "action": "Target \"real estate\" (score: 80.0, up 7.2% over 12m)"
+        "trend_pct": 6.9,
+        "action": "Target \"real estate\" (score: 80.0, up 6.9% over 12m)"
       },
       {
         "type": "high_demand",
         "priority": "high",
         "keyword": "inflation calculator",
-        "interest_score": 78.0,
+        "interest_score": 79.8,
         "long_term_trend": "flat",
-        "trend_pct": 3.1,
-        "action": "Target \"inflation calculator\" (score: 78.0, flat 3.1% over 12m)"
+        "trend_pct": 0.0,
+        "action": "Target \"inflation calculator\" (score: 79.8, flat 0.0% over 12m)"
       },
       {
         "type": "high_demand",
         "priority": "high",
-        "keyword": "investing",
-        "interest_score": 70.1,
+        "keyword": "credit score",
+        "interest_score": 79.2,
         "long_term_trend": "up",
-        "trend_pct": 38.1,
-        "action": "Target \"investing\" (score: 70.1, up 38.1% over 12m)"
+        "trend_pct": 13.4,
+        "action": "Target \"credit score\" (score: 79.2, up 13.4% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "high",
+        "keyword": "auto loan calculator",
+        "interest_score": 78.9,
+        "long_term_trend": "flat",
+        "trend_pct": 1.2,
+        "action": "Target \"auto loan calculator\" (score: 78.9, flat 1.2% over 12m)"
+      },
+      {
+        "type": "high_demand",
+        "priority": "high",
+        "keyword": "credit card calculator",
+        "interest_score": 71.7,
+        "long_term_trend": "up",
+        "trend_pct": 17.5,
+        "action": "Target \"credit card calculator\" (score: 71.7, up 17.5% over 12m)"
       },
       {
         "type": "high_demand",
         "priority": "medium",
-        "keyword": "IRA calculator",
-        "interest_score": 37.9,
-        "long_term_trend": "unknown",
-        "trend_pct": 0,
-        "action": "Target \"IRA calculator\" (score: 37.9, unknown 0% over 12m)"
-      },
-      {
-        "type": "high_demand",
-        "priority": "medium",
-        "keyword": "stock market",
-        "interest_score": 36.0,
-        "long_term_trend": "unknown",
-        "trend_pct": 0,
-        "action": "Target \"stock market\" (score: 36.0, unknown 0% over 12m)"
-      },
-      {
-        "type": "high_demand",
-        "priority": "medium",
-        "keyword": "amortization calculator",
-        "interest_score": 35.4,
-        "long_term_trend": "unknown",
-        "trend_pct": 0,
-        "action": "Target \"amortization calculator\" (score: 35.4, unknown 0% over 12m)"
+        "keyword": "CD calculator",
+        "interest_score": 57.5,
+        "long_term_trend": "down",
+        "trend_pct": -10.4,
+        "action": "Target \"CD calculator\" (score: 57.5, down -10.4% over 12m)"
       },
       {
         "type": "suggestion_discovery",
@@ -1383,30 +1682,9 @@
       {
         "type": "suggestion_discovery",
         "priority": "medium",
-        "keyword": "tax calculator",
-        "from_seed": "tax calculator",
-        "action": "New keyword via autocomplete: \"tax calculator\" \u2014 consider content"
-      },
-      {
-        "type": "suggestion_discovery",
-        "priority": "medium",
-        "keyword": "retirement calculator",
-        "from_seed": "retirement calculator",
-        "action": "New keyword via autocomplete: \"retirement calculator\" \u2014 consider content"
-      },
-      {
-        "type": "suggestion_discovery",
-        "priority": "medium",
         "keyword": "retirement calculator, planner",
         "from_seed": "retirement calculator",
         "action": "New keyword via autocomplete: \"retirement calculator, planner\" \u2014 consider content"
-      },
-      {
-        "type": "suggestion_discovery",
-        "priority": "medium",
-        "keyword": "investment calculator",
-        "from_seed": "investment calculator",
-        "action": "New keyword via autocomplete: \"investment calculator\" \u2014 consider content"
       },
       {
         "type": "suggestion_discovery",

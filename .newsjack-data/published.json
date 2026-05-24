@@ -79,6 +79,14 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/20/jeff-bezos-income-taxes.html"
   },
+  "108310760": {
+    "slug": "kevin-warsh-fed-regime-change-what-it-means-for-your-mortgage-and-personal-finan",
+    "title": "Kevin Warsh Fed Regime Change: What It Means for Your Mortgage and Personal Finance",
+    "publishedAt": "2026-05-24T14:31:37.905Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/22/kevin-warshs-real-fed-regime-change-may-happen-deep-inside-wall-streets-plumbing.html"
+  },
   "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm]]>": {
     "slug": "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
     "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals",
@@ -446,5 +454,29 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-22/mexico-mid-may-inflation-slowed-after-banxico-ended-easing-cycle"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm]]>": {
+    "slug": "kevin-warsh-takes-oath-as-fed-chair-what-it-means-for-your-mortgage-and-savings-",
+    "title": "Kevin Warsh Takes Oath as Fed Chair: What It Means for Your Mortgage and Savings Goals",
+    "publishedAt": "2026-05-23T14:31:44.498Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm]]>"
+  },
+  "https://www.housingwire.com/?p=586869": {
+    "slug": "fed-s-warsh-and-waller-shift-what-rising-10-year-yields-mean-for-your-mortgage-i",
+    "title": "Fed’s Warsh and Waller Shift: What Rising 10-Year Yields Mean for Your Mortgage in 2025",
+    "publishedAt": "2026-05-23T14:32:03.243Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.housingwire.com/articles/new-fed-chair-warsh-loses-dove-as-waller-turns-hawkish/"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-23/more-war-driven-inflation-seen-in-fed-s-favored-gauge": {
+    "slug": "war-driven-inflation-at-4-how-to-protect-your-mortgage-and-savings",
+    "title": "War-Driven Inflation at 4%: How to Protect Your Mortgage and Savings",
+    "publishedAt": "2026-05-24T14:31:57.090Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-23/more-war-driven-inflation-seen-in-fed-s-favored-gauge"
   }
 }
