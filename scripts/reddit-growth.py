@@ -115,8 +115,8 @@ def login_reddit(context, visible=False):
     hs(5)
 
     html = page.content()
-    username = os.environ.get("REDDIT_USERNAME", "")
-    logged_in = username.lower() in html.lower()
+    saved_username = os.environ.get("REDDIT_USERNAME", "")
+    logged_in = saved_username.lower() in html.lower()
 
     if logged_in:
         print("  ✅ Already logged in to Reddit")
@@ -128,17 +128,21 @@ def login_reddit(context, visible=False):
     page.goto("https://www.reddit.com/login/", wait_until="domcontentloaded", timeout=30000)
     hs(4)
 
-    # Fill credentials via evaluate (most reliable)
-    password = os.environ.get("REDDIT_PASSWORD", "")
+    # Fill credentials via evaluate — try email first, fall back to username
+    reddit_email = os.environ.get("REDDIT_EMAIL", "")
+    reddit_username = os.environ.get("REDDIT_USERNAME", "")
+    reddit_password = os.environ.get("REDDIT_PASSWORD", "")
+    login_id = reddit_email if reddit_email else reddit_username
+    
     filled = page.evaluate(f"""
         (function() {{
             var uname = document.querySelector('input[name="username"], #loginUsername, input[type="text"]');
             var pword = document.querySelector('input[name="password"], #loginPassword, input[type="password"]');
             if (uname && pword) {{
-                uname.value = '{username}';
+                uname.value = '{login_id}';
                 uname.dispatchEvent(new Event('input', {{ bubbles: true }}));
                 uname.dispatchEvent(new Event('change', {{ bubbles: true }}));
-                pword.value = '{password}';
+                pword.value = '{reddit_password}';
                 pword.dispatchEvent(new Event('input', {{ bubbles: true }}));
                 pword.dispatchEvent(new Event('change', {{ bubbles: true }}));
                 return 'filled';
@@ -161,14 +165,14 @@ def login_reddit(context, visible=False):
             })()
         """)
         hs(5)
-        # Retry
+        # Retry with email
         page.evaluate(f"""
             (function() {{
                 var uname = document.querySelector('input[name="username"], #loginUsername, input[type="text"]');
                 var pword = document.querySelector('input[name="password"], #loginPassword, input[type="password"]');
                 if (uname && pword) {{
-                    uname.value = '{username}';
-                    pword.value = '{password}';
+                    uname.value = '{login_id}';
+                    pword.value = '{reddit_password}';
                     return 'filled';
                 }}
                 return 'still not found';
@@ -440,8 +444,8 @@ def daily_routine(visible=False):
             print(f"\n📅 Phase 1: Aging (Day {account_age_days}/7)")
             print("   Activities: browse + upvote + join + save + light comments")
 
-            # Browse feeds (10 min day 4-5, 5 min day 6-7)
-            browse_min = 10 if account_age_days <= 5 else 5
+            # Browse feeds (3 min day 4-5, 2 min day 6-7)
+            browse_min = 3 if account_age_days <= 5 else 2
             browse_feed(page, browse_min)
 
             # Upvote posts
