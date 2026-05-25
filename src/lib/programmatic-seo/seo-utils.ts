@@ -302,6 +302,17 @@ export function generateMetaTitle(
       return parts.filter(Boolean).join(" ") + " | Growth Projection";
     }
     default:
+      // Try to match by known calculator names
+      if (calculatorName === "Mortgage Affordability") {
+        const inc = params.income;
+        const dp = params.downPayment;
+        const rate = params.interestRate;
+        if (inc) parts.push(`$${formatAmountWithCommas(inc)} Income`);
+        if (dp) parts.push(`$${formatAmountWithCommas(dp)} Down`);
+        if (rate) parts.push(`${rate}% Rate`);
+        parts.push("Mortgage Affordability Calculator 2026");
+        return parts.filter(Boolean).join(" ") + " — Free Home Price Estimate";
+      }
       return `${calculatorName} - Free Online Calculator | QFINHUB`;
   }
 }
@@ -389,6 +400,19 @@ export function generateMetaDescription(
       return desc;
     }
     default:
+      if (calculatorName === "Mortgage Affordability") {
+        const inc = params.income;
+        const dp = params.downPayment;
+        const rate = params.interestRate;
+        const debts = params.debts;
+        let desc = `Free mortgage affordability calculator for`;
+        if (inc) desc += ` $${formatAmountWithCommas(inc)} income`;
+        if (dp) desc += ` with $${formatAmountWithCommas(dp)} down`;
+        if (rate) desc += ` at ${rate}% interest`;
+        if (debts) desc += ` and $${formatAmountWithCommas(debts)}/mo debts`;
+        desc += `. See how much house you can afford instantly — no email, no signup.`;
+        return desc;
+      }
       return `Use our free ${calculatorName} to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed — try it now.`;
   }
 }

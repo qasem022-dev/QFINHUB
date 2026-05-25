@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:41:45.973876",
+  "generated_at": "2026-05-26T00:56:21.779223",
   "gsc": {
     "summary": {
       "clicks": 0,
@@ -247,7 +247,106 @@
       }
     ]
   },
-  "trends": [],
+  "trends": [
+    {
+      "title": "iran at the fifa world cup",
+      "description": "",
+      "calculator_categories": [
+        "retirement"
+      ]
+    },
+    {
+      "title": "mortgage rates june 2026",
+      "calculator_categories": [
+        "mortgage"
+      ]
+    },
+    {
+      "title": "best retirement accounts 2026",
+      "calculator_categories": [
+        "retirement"
+      ]
+    },
+    {
+      "title": "how to pay off credit card debt",
+      "calculator_categories": [
+        "debt"
+      ]
+    },
+    {
+      "title": "compound interest calculator",
+      "calculator_categories": [
+        "investing"
+      ]
+    },
+    {
+      "title": "tax bracket calculator 2026",
+      "calculator_categories": [
+        "taxes"
+      ]
+    },
+    {
+      "title": "401k contribution limits",
+      "calculator_categories": [
+        "retirement"
+      ]
+    },
+    {
+      "title": "home affordability calculator",
+      "calculator_categories": [
+        "mortgage"
+      ]
+    },
+    {
+      "title": "debt snowball vs avalanche",
+      "calculator_categories": [
+        "debt"
+      ]
+    },
+    {
+      "title": "emergency fund how much",
+      "calculator_categories": [
+        "savings"
+      ]
+    },
+    {
+      "title": "auto loan interest rates 2026",
+      "calculator_categories": [
+        "loans"
+      ]
+    },
+    {
+      "title": "refinance calculator break even",
+      "calculator_categories": [
+        "mortgage"
+      ]
+    },
+    {
+      "title": "Roth IRA vs traditional 401k",
+      "calculator_categories": [
+        "retirement",
+        "investing"
+      ]
+    },
+    {
+      "title": "student loan repayment calculator",
+      "calculator_categories": [
+        "loans"
+      ]
+    },
+    {
+      "title": "budget planner 50 30 20",
+      "calculator_categories": [
+        "savings"
+      ]
+    },
+    {
+      "title": "investment return calculator",
+      "calculator_categories": [
+        "investing"
+      ]
+    }
+  ],
   "comparison": {
     "yesterday": {
       "date": "2026-05-22",
@@ -284,24 +383,104 @@
   "action_required": true,
   "action_items": [
     {
+      "action": "RECOVERY_MODE",
+      "reason": "Metrics not improving (status=warning) \u2014 DOUBLING ALL EFFORTS",
+      "alerts": [
+        "\u26a0\ufe0f Impressions dropped by 30 (32 \u2192 2)",
+        "\u26a0\ufe0f CTR stagnant at 0.0% \u2014 below 2% target"
+      ]
+    },
+    {
       "action": "ctr_boost",
-      "reason": "Metrics not improving \u2014 aggressive CTR optimization needed",
-      "targets": []
+      "reason": "Aggressive CTR optimization \u2014 rewrite ALL low-CTR page metas (12+ pages)",
+      "targets": [],
+      "note": "Also rewrite ALL medium-priority pages. Target 12+ rewrites today."
     },
     {
       "action": "scenario_push",
-      "reason": "Generate extra scenario pages to increase indexed page count and capture trends",
-      "count": 30
+      "reason": "Generate 35-40 scenario pages from trends and top queries",
+      "count": 40
     },
     {
       "action": "scenario_uniqueness_upgrade",
-      "reason": "Upgrade existing scenario pages with real-life examples, comparison tables, and personalized insights to avoid duplicate content flags",
-      "note": "For each scenario page: add 'What this means for you' section, comparison data, and unique insights"
+      "reason": "Upgrade 15+ existing scenario pages with real-life examples, comparison tables, and personalized insights",
+      "count": 15,
+      "note": "For each: add 'What this means for you', comparison data, and unique takeaway"
     },
     {
       "action": "outreach_accelerate",
-      "reason": "Send extra widget outreach emails for backlink acquisition",
-      "count": 20
+      "reason": "Send 25-30 widget outreach emails for backlink acquisition",
+      "count": 30
+    },
+    {
+      "action": "haro_double_check",
+      "reason": "Check HARO for relevant journalist queries \u2014 respond to ALL finance-related queries"
+    },
+    {
+      "action": "trends_content",
+      "reason": "Create targeted scenario pages and blog posts from trending finance topics",
+      "trends": [
+        {
+          "title": "iran at the fifa world cup",
+          "categories": [
+            "retirement"
+          ]
+        },
+        {
+          "title": "mortgage rates june 2026",
+          "categories": [
+            "mortgage"
+          ]
+        },
+        {
+          "title": "best retirement accounts 2026",
+          "categories": [
+            "retirement"
+          ]
+        },
+        {
+          "title": "how to pay off credit card debt",
+          "categories": [
+            "debt"
+          ]
+        },
+        {
+          "title": "compound interest calculator",
+          "categories": [
+            "investing"
+          ]
+        },
+        {
+          "title": "tax bracket calculator 2026",
+          "categories": [
+            "taxes"
+          ]
+        },
+        {
+          "title": "401k contribution limits",
+          "categories": [
+            "retirement"
+          ]
+        },
+        {
+          "title": "home affordability calculator",
+          "categories": [
+            "mortgage"
+          ]
+        },
+        {
+          "title": "debt snowball vs avalanche",
+          "categories": [
+            "debt"
+          ]
+        },
+        {
+          "title": "emergency fund how much",
+          "categories": [
+            "savings"
+          ]
+        }
+      ]
     },
     {
       "action": "indexing_push",
