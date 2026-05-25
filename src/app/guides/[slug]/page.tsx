@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Lightbulb, AlertTriangle, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
+import { getAllHowToGuides, generateGuideMetaTitle, generateGuideMetaDescription } from "@/lib/programmatic-seo/guides";
 import type { Metadata } from "next";
 
 interface GuidePageProps {
@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   if (!guide) return { title: "Not Found" };
 
   return {
-    title: guide.title,
-    description: guide.description,
+    title: generateGuideMetaTitle(guide.title),
+    description: generateGuideMetaDescription(guide.title),
   };
 }
 

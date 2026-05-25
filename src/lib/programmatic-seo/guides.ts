@@ -34,6 +34,16 @@ export function generateGuideSlug(calculatorSlug: string): string {
   return `how-to-use-${calculatorSlug}`;
 }
 
+/** Generate a search-friendly meta title for a guide page */
+export function generateGuideMetaTitle(calcTitle: string): string {
+  return `${calcTitle} — Free Step-by-Step Guide (2026)`;
+}
+
+/** Generate a search-friendly meta description for a guide page */
+export function generateGuideMetaDescription(calcTitle: string): string {
+  return `Master the ${calcTitle.toLowerCase()}. Free step-by-step instructions, expert tips, and common mistakes to avoid. Get accurate results in 30 seconds — no signup needed.`;
+}
+
 /**
  * Generate step-by-step instructions for each calculator type.
  * Steps are generated dynamically based on the calculator category.

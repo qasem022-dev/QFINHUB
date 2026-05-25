@@ -206,14 +206,14 @@ def fetch_google_trends():
 
     # Map trends to our calculator categories
     calculator_map = {
-        "mortgage": ["mortgage", "home loan", "housing", "real estate", "refinance"],
-        "investing": ["stock", "market", "invest", "crypto", "bitcoin", "bond", "dividend"],
-        "retirement": ["retire", "401k", "ira", "pension", "social security"],
-        "debt": ["debt", "credit card", "payoff", "snowball", "avalanche"],
-        "taxes": ["tax", "irs", "deduction", "bracket", "refund"],
-        "savings": ["save", "budget", "emergency fund", "saving"],
-        "loans": ["loan", "auto loan", "student loan", "personal loan", "car loan"],
-        "insurance": ["insurance", "pmi", "life insurance"],
+        "mortgage": ["mortgage", "home loan", "housing", "real estate", "refinance", "home", "house", "property"],
+        "investing": ["stock", "market", "invest", "crypto", "bitcoin", "bond", "dividend", "trading", "nasdaq", "dow", "sp500", "s&p"],
+        "retirement": ["retire", "401k", "ira", "pension", "social security", "ssi"],
+        "debt": ["debt", "credit card", "payoff", "snowball", "avalanche", "credit score"],
+        "taxes": ["tax", "irs", "deduction", "bracket", "refund", "write-off"],
+        "savings": ["save", "budget", "emergency fund", "saving", "frugal", "frugality"],
+        "loans": ["loan", "auto loan", "student loan", "personal loan", "car loan", "borrow", "lending"],
+        "insurance": ["insurance", "pmi", "life insurance", "health insurance"],
     }
 
     mapped = []
@@ -227,7 +227,31 @@ def fetch_google_trends():
             t["calculator_categories"] = matched
             mapped.append(t)
 
-    return mapped[:15]
+    # ALWAYS add curated high-value finance keywords (ensures we never have zero trends)
+    curated = [
+        {"title": "mortgage rates june 2026", "calculator_categories": ["mortgage"]},
+        {"title": "best retirement accounts 2026", "calculator_categories": ["retirement"]},
+        {"title": "how to pay off credit card debt", "calculator_categories": ["debt"]},
+        {"title": "compound interest calculator", "calculator_categories": ["investing"]},
+        {"title": "tax bracket calculator 2026", "calculator_categories": ["taxes"]},
+        {"title": "401k contribution limits", "calculator_categories": ["retirement"]},
+        {"title": "home affordability calculator", "calculator_categories": ["mortgage"]},
+        {"title": "debt snowball vs avalanche", "calculator_categories": ["debt"]},
+        {"title": "emergency fund how much", "calculator_categories": ["savings"]},
+        {"title": "auto loan interest rates 2026", "calculator_categories": ["loans"]},
+        {"title": "refinance calculator break even", "calculator_categories": ["mortgage"]},
+        {"title": "Roth IRA vs traditional 401k", "calculator_categories": ["retirement", "investing"]},
+        {"title": "student loan repayment calculator", "calculator_categories": ["loans"]},
+        {"title": "budget planner 50 30 20", "calculator_categories": ["savings"]},
+        {"title": "investment return calculator", "calculator_categories": ["investing"]},
+    ]
+    # Blend curated + real trends, deduplicate by title
+    seen = {m["title"].lower() for m in mapped}
+    for c in curated:
+        if c["title"].lower() not in seen:
+            mapped.append(c)
+
+    return mapped[:20]
 
 
 # ═══════════════════════════════════════

@@ -249,8 +249,8 @@ export function generateMetaTitle(
       if (hp) parts.push(`$${formatAmountWithCommas(hp)}`);
       if (term) parts.push(`${term}-Year`);
       if (rate) parts.push(`${rate}% Rate`);
-      parts.push("Mortgage Calculator");
-      return parts.filter(Boolean).join(" ") + " | Monthly Payment";
+      parts.push("Mortgage Calculator 2026");
+      return parts.filter(Boolean).join(" ") + " — Free Monthly Payment Estimate";
     }
     case "loan-calculator":
     case "Loan Calculator": {
@@ -260,8 +260,8 @@ export function generateMetaTitle(
       if (la) parts.push(`$${formatAmountWithCommas(la)}`);
       if (term) parts.push(`${term}-Year`);
       if (rate) parts.push(`${rate}% APR`);
-      parts.push("Loan Calculator");
-      return parts.filter(Boolean).join(" ") + " | Monthly Payment";
+      parts.push("Loan Calculator 2026");
+      return parts.filter(Boolean).join(" ") + " — Free Monthly Payment Tool";
     }
     case "investment-return":
     case "Investment Return": {
@@ -317,13 +317,13 @@ export function generateMetaDescription(
       const term = params.term;
       const rate = params.rate;
       const dp = params.downPct;
-      let desc = `Calculate the monthly payment for a`;
+      let desc = `Free mortgage calculator for a`;
       if (hp) desc += ` $${formatAmountWithCommas(hp)}`;
-      desc += ` mortgage`;
+      desc += ` home`;
       if (dp) desc += ` with ${dp}% down`;
       if (rate) desc += ` at ${rate}% interest`;
       if (term) desc += ` over ${term} years`;
-      desc += `. Get a complete amortization schedule, total interest costs, and monthly payment breakdown including taxes and insurance. Free mortgage calculator from QFINHUB.`;
+      desc += `. See your exact monthly payment, amortization schedule, and total interest. Instant results — no email, no signup.`;
       return desc;
     }
     case "loan-calculator":
@@ -331,12 +331,12 @@ export function generateMetaDescription(
       const la = params.loanAmount;
       const term = params.term;
       const rate = params.rate;
-      let desc = `Calculate your monthly payment for a`;
+      let desc = `Free loan payment calculator for a`;
       if (la) desc += ` $${formatAmountWithCommas(la)}`;
       desc += ` loan`;
       if (rate) desc += ` at ${rate}% APR`;
       if (term) desc += ` over ${term} years`;
-      desc += `. See the full amortization schedule, total interest paid, and total cost. Free online loan calculator.`;
+      desc += `. See your exact monthly payment, total interest, and amortization schedule. Instant results — 100% free, no signup.`;
       return desc;
     }
     case "investment-return":
