@@ -371,26 +371,39 @@ def main():
     }
 
     # Auto-generate action items
-    if comparison["status"] in ("warning", "critical"):
+    recovery_mode = comparison["status"] in ("warning", "critical")
+    
+    if recovery_mode:
+        briefing["action_items"].append({
+            "action": "RECOVERY_MODE",
+            "reason": f"Metrics not improving (status={comparison['status']}) — DOUBLING ALL EFFORTS",
+            "alerts": comparison["alerts"],
+        })
         briefing["action_items"].append({
             "action": "ctr_boost",
-            "reason": "Metrics not improving — aggressive CTR optimization needed",
-            "targets": [p["page"] for p in high_priority[:8]],
+            "reason": "Aggressive CTR optimization — rewrite ALL low-CTR page metas (12+ pages)",
+            "targets": [p["page"] for p in high_priority[:12]],
+            "note": "Also rewrite ALL medium-priority pages. Target 12+ rewrites today.",
         })
         briefing["action_items"].append({
             "action": "scenario_push",
-            "reason": "Generate extra scenario pages to increase indexed page count and capture trends",
-            "count": 30,
+            "reason": "Generate 35-40 scenario pages from trends and top queries",
+            "count": 40,
         })
         briefing["action_items"].append({
             "action": "scenario_uniqueness_upgrade",
-            "reason": "Upgrade existing scenario pages with real-life examples, comparison tables, and personalized insights to avoid duplicate content flags",
-            "note": "For each scenario page: add 'What this means for you' section, comparison data, and unique insights",
+            "reason": "Upgrade 15+ existing scenario pages with real-life examples, comparison tables, and personalized insights",
+            "count": 15,
+            "note": "For each: add 'What this means for you', comparison data, and unique takeaway",
         })
         briefing["action_items"].append({
             "action": "outreach_accelerate",
-            "reason": "Send extra widget outreach emails for backlink acquisition",
-            "count": 20,
+            "reason": "Send 25-30 widget outreach emails for backlink acquisition",
+            "count": 30,
+        })
+        briefing["action_items"].append({
+            "action": "haro_double_check",
+            "reason": "Check HARO for relevant journalist queries — respond to ALL finance-related queries",
         })
 
     if high_priority:
