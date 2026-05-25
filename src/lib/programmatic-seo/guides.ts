@@ -188,8 +188,8 @@ export function getAllHowToGuides(): HowToGuide[] {
 
     return {
       slug: generateGuideSlug(calc.slug),
-      title: `How to Use the ${calc.title}`,
-      description: `Learn how to use the ${calc.title} tool on QFINHUB. Step-by-step instructions, tips, and common mistakes to avoid.`,
+      title: `How to Use the ${calc.title} — Free Step-by-Step Guide (2026)`,
+      description: `Master the ${calc.title} on QFINHUB. Free step-by-step instructions, expert tips, and common mistakes to avoid. Calculate your numbers in 30 seconds — no signup.`,
       h1: `How to Use the ${calc.title} — Step by Step Guide`,
       calculatorId: calc.slug,
       steps,

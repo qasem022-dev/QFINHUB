@@ -153,7 +153,10 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:38:00.343901+00:00"
+    "generatedAt": "2026-05-20T12:38:00.343901+00:00",
+    "whatThisMeans": "<p><strong>What this means for you:</strong> With just 5% down, PMI is required, but at 5.5% rate this is still a great opportunity. Many first-time buyers are locked out of 20% down \u2014 this scenario shows it's possible to buy sooner.</p>",
+    "tryThisNext": "<a href=\"/calculators/refinance-calculator\" target=\"_blank\">See if refinancing saves you money \u2192</a>",
+    "uniqueDataPoint": "<p><strong>Market context:</strong> The national average rate for a 30-year fixed mortgage is approximately 6.8% as of May 2026. This scenario at the national average.</p>"
   },
   {
     "slug": "mortgage-100k-25dp-20yr-6-5pct",
@@ -361,7 +364,10 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:38:06.986390+00:00"
+    "generatedAt": "2026-05-20T12:38:06.986390+00:00",
+    "whatThisMeans": "<p><strong>What this means for you:</strong> A 40-year term keeps payments low but costs heavily long-term. Total interest nearly doubles vs a 30-year. Consider a 30-year with slightly higher payment.</p>",
+    "tryThisNext": "<a href=\"/calculators/refinance-calculator\" target=\"_blank\">See if refinancing saves you money \u2192</a>",
+    "uniqueDataPoint": "<p><strong>Market context:</strong> The national average rate for a 40-year fixed mortgage is approximately 6.8% as of May 2026. This scenario at the national average.</p>"
   },
   {
     "slug": "mortgage-750k-5dp-40yr-8-5pct",
@@ -517,7 +523,10 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Your actual mortgage costs may vary based on credit score, lender fees, taxes, insurance, and closing costs. Always consult a licensed mortgage professional.",
-    "generatedAt": "2026-05-20T12:38:17.367611+00:00"
+    "generatedAt": "2026-05-20T12:38:17.367611+00:00",
+    "whatThisMeans": "<p><strong>What this means for you:</strong> 15-year term at 6% is aggressive but smart. You'll build equity fast and save $200k+ in interest. This is ideal for established buyers with stable income.</p>",
+    "tryThisNext": "<a href=\"/calculators/refinance-calculator\" target=\"_blank\">See if refinancing saves you money \u2192</a>",
+    "uniqueDataPoint": "<p><strong>Market context:</strong> The national average rate for a 15-year fixed mortgage is approximately 6.8% as of May 2026. This scenario at the national average.</p>"
   },
   {
     "slug": "mortgage-300k-30dp-15yr-5-5pct",
@@ -1089,7 +1098,10 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. This calculation assumes a fixed 6% interest rate, 15-year term, and does not include property taxes, insurance, HOA fees, or mortgage insurance (which may apply with down payments under 20%). Actual loan terms and costs will vary.",
-    "generatedAt": "2026-05-20T12:38:38.415102+00:00"
+    "generatedAt": "2026-05-20T12:38:38.415102+00:00",
+    "whatThisMeans": "<p><strong>What this means for you:</strong> With 30% down on a $100k home, your monthly payment is only ~$423. That's less than most car payments. This is a minimalist's dream mortgage scenario.</p>",
+    "tryThisNext": "<a href=\"/calculators/refinance-calculator\" target=\"_blank\">See if refinancing saves you money \u2192</a>",
+    "uniqueDataPoint": "<p><strong>Market context:</strong> The national average rate for a 15-year fixed mortgage is approximately 6.8% as of May 2026. This scenario at the national average.</p>"
   },
   {
     "slug": "mortgage-400k-30dp-10yr-8-0pct",
@@ -1921,7 +1933,10 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:39:11.094089+00:00"
+    "generatedAt": "2026-05-20T12:39:11.094089+00:00",
+    "whatThisMeans": "<p><strong>What this means for you:</strong> 10-year term at 8.5% means high payments (~$2,100/mo) but zero mortgage in a decade. If you can swing it, this is the fastest path to full home equity.</p>",
+    "tryThisNext": "<a href=\"/calculators/refinance-calculator\" target=\"_blank\">See if refinancing saves you money \u2192</a>",
+    "uniqueDataPoint": "<p><strong>Market context:</strong> The national average rate for a 10-year fixed mortgage is approximately 6.8% as of May 2026. This scenario above the national average.</p>"
   },
   {
     "slug": "mortgage-150k-10dp-15yr-8-0pct",

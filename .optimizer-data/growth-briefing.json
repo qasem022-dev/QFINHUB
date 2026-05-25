@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-05-26T00:41:45.973876",
+  "gsc": {
+    "summary": {
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0.0,
+      "position": 65.0,
+      "pages_indexed": 23,
+      "period_days": 14
+    },
+    "daily_trend": [
+      {
+        "date": "2026-05-18",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 53.0,
+        "ctr": 0.0
+      },
+      {
+        "date": "2026-05-20",
+        "clicks": 0,
+        "impressions": 12,
+        "position": 79.2,
+        "ctr": 0.0
+      },
+      {
+        "date": "2026-05-21",
+        "clicks": 0,
+        "impressions": 32,
+        "position": 60.1,
+        "ctr": 0.0
+      },
+      {
+        "date": "2026-05-22",
+        "clicks": 0,
+        "impressions": 32,
+        "position": 64.9,
+        "ctr": 0.0
+      },
+      {
+        "date": "2026-05-23",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 45.5,
+        "ctr": 0.0
+      }
+    ],
+    "low_ctr_targets": [
+      {
+        "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+        "clicks": 0,
+        "impressions": 20,
+        "queries": [
+          {
+            "q": "how much mortgage can i afford on 100k",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 97
+          },
+          {
+            "q": "how much mortgage can i afford on 100k",
+            "clicks": 0,
+            "impr": 3,
+            "pos": 94.33333333333333
+          },
+          {
+            "q": "how much mortgage can i afford on 100k",
+            "clicks": 0,
+            "impr": 2,
+            "pos": 99
+          },
+          {
+            "q": "if i make 100k what mortgage can i afford",
+            "clicks": 0,
+            "impr": 2,
+            "pos": 97.5
+          },
+          {
+            "q": "if i make 100k what mortgage can i afford",
+            "clicks": 0,
+            "impr": 4,
+            "pos": 97.75
+          },
+          {
+            "q": "what mortgage can i afford on 40k",
+            "clicks": 0,
+            "impr": 2,
+            "pos": 95.5
+          },
+          {
+            "q": "what mortgage can i afford on 40k",
+            "clicks": 0,
+            "impr": 2,
+            "pos": 96.5
+          },
+          {
+            "q": "what mortgage can i afford on 40k",
+            "clicks": 0,
+            "impr": 4,
+            "pos": 98.75
+          }
+        ],
+        "ctr": 0.0,
+        "avg_position": 97.0,
+        "priority": "MEDIUM"
+      },
+      {
+        "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+        "clicks": 0,
+        "impressions": 13,
+        "queries": [
+          {
+            "q": "20 000 loan calculator",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 90
+          },
+          {
+            "q": "20000 loan over 5 years monthly payments",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 56
+          },
+          {
+            "q": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 12
+          },
+          {
+            "q": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+            "clicks": 0,
+            "impr": 4,
+            "pos": 11
+          },
+          {
+            "q": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+            "clicks": 0,
+            "impr": 6,
+            "pos": 11.333333333333334
+          }
+        ],
+        "ctr": 0.0,
+        "avg_position": 36.1,
+        "priority": "MEDIUM"
+      },
+      {
+        "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+        "clicks": 0,
+        "impressions": 7,
+        "queries": [
+          {
+            "q": "how to calculate your retirement income",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 92
+          },
+          {
+            "q": "how to calculate your retirement income",
+            "clicks": 0,
+            "impr": 2,
+            "pos": 91.5
+          },
+          {
+            "q": "how to calculate your retirement income",
+            "clicks": 0,
+            "impr": 4,
+            "pos": 90.25
+          }
+        ],
+        "ctr": 0.0,
+        "avg_position": 91.2,
+        "priority": "MEDIUM"
+      },
+      {
+        "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+        "clicks": 0,
+        "impressions": 5,
+        "queries": [
+          {
+            "q": "philadelphia city income tax rate",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 61
+          },
+          {
+            "q": "philadelphia income tax rates",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 73
+          },
+          {
+            "q": "philadelphia tax rate",
+            "clicks": 0,
+            "impr": 2,
+            "pos": 70.5
+          },
+          {
+            "q": "philadelphia transfer tax calculator",
+            "clicks": 0,
+            "impr": 1,
+            "pos": 66
+          }
+        ],
+        "ctr": 0.0,
+        "avg_position": 67.6,
+        "priority": "MEDIUM"
+      }
+    ],
+    "top_queries": [
+      {
+        "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+        "clicks": 0,
+        "impressions": 11,
+        "position": 11
+      },
+      {
+        "query": "what mortgage can i afford on 40k",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 95.5
+      },
+      {
+        "query": "how to calculate your retirement income",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 90.25
+      },
+      {
+        "query": "how much mortgage can i afford on 100k",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 94.33333333333333
+      },
+      {
+        "query": "if i make 100k what mortgage can i afford",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 97.5
+      },
+      {
+        "query": "emergency fund calculator",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 68.5
+      }
+    ]
+  },
+  "trends": [],
+  "comparison": {
+    "yesterday": {
+      "date": "2026-05-22",
+      "clicks": 0,
+      "impressions": 32,
+      "position": 64.9,
+      "ctr": 0.0
+    },
+    "today": {
+      "date": "2026-05-23",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 45.5,
+      "ctr": 0.0
+    },
+    "delta": {
+      "impressions": -30,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": -19.4
+    },
+    "alerts": [
+      "\u26a0\ufe0f Impressions dropped by 30 (32 \u2192 2)",
+      "\u26a0\ufe0f CTR stagnant at 0.0% \u2014 below 2% target"
+    ],
+    "status": "warning"
+  },
+  "previous_day_gsc": {
+    "clicks_7d": 1,
+    "impressions_7d": 223,
+    "ctr": 0.45,
+    "avg_position": 28.4
+  },
+  "action_required": true,
+  "action_items": [
+    {
+      "action": "ctr_boost",
+      "reason": "Metrics not improving \u2014 aggressive CTR optimization needed",
+      "targets": []
+    },
+    {
+      "action": "scenario_push",
+      "reason": "Generate extra scenario pages to increase indexed page count and capture trends",
+      "count": 30
+    },
+    {
+      "action": "scenario_uniqueness_upgrade",
+      "reason": "Upgrade existing scenario pages with real-life examples, comparison tables, and personalized insights to avoid duplicate content flags",
+      "note": "For each scenario page: add 'What this means for you' section, comparison data, and unique insights"
+    },
+    {
+      "action": "outreach_accelerate",
+      "reason": "Send extra widget outreach emails for backlink acquisition",
+      "count": 20
+    },
+    {
+      "action": "indexing_push",
+      "reason": "Submit new/updated URLs to Google Indexing API",
+      "note": "Run scripts/seo-indexing-engine.py"
+    }
+  ]
+}
