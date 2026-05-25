@@ -378,39 +378,56 @@ def main():
 
     # Auto-generate action items
     recovery_mode = comparison["status"] in ("warning", "critical")
+    escalation = comparison["status"] == "critical"
     
     if recovery_mode:
+        multiplier = "TRIPLE" if escalation else "DOUBLE"
         briefing["action_items"].append({
-            "action": "RECOVERY_MODE",
-            "reason": f"Metrics not improving (status={comparison['status']}) — DOUBLING ALL EFFORTS",
+            "action": "RECOVERY_MODE" if not escalation else "ESCALATION_MODE",
+            "reason": f"Metrics not improving (status={comparison['status']}) — {multiplier} ALL EFFORTS",
             "alerts": comparison["alerts"],
+            "multiplier": multiplier,
         })
+        ctr_target = 15 if escalation else 12
+        scenario_target = 50 if escalation else 40
+        outreach_target = 40 if escalation else 30
+        
         briefing["action_items"].append({
             "action": "ctr_boost",
-            "reason": "Aggressive CTR optimization — rewrite ALL low-CTR page metas (12+ pages)",
-            "targets": [p["page"] for p in high_priority[:12]],
-            "note": "Also rewrite ALL medium-priority pages. Target 12+ rewrites today.",
+            "reason": f"Aggressive CTR optimization — rewrite ALL low-CTR page metas ({ctr_target}+ pages)",
+            "targets": [p["page"] for p in high_priority[:ctr_target]],
+            "note": f"Rewrite every page in low_ctr_targets. Target {ctr_target}+ rewrites today.",
         })
         briefing["action_items"].append({
             "action": "scenario_push",
-            "reason": "Generate 35-40 scenario pages from trends and top queries",
-            "count": 40,
+            "reason": f"Generate {scenario_target} scenario pages from trends and top queries",
+            "count": scenario_target,
         })
         briefing["action_items"].append({
             "action": "scenario_uniqueness_upgrade",
-            "reason": "Upgrade 15+ existing scenario pages with real-life examples, comparison tables, and personalized insights",
-            "count": 15,
+            "reason": f"Upgrade 15-20 existing scenario pages with real-life examples, comparison tables, and personalized insights",
+            "count": 20 if escalation else 15,
             "note": "For each: add 'What this means for you', comparison data, and unique takeaway",
         })
         briefing["action_items"].append({
             "action": "outreach_accelerate",
-            "reason": "Send 25-30 widget outreach emails for backlink acquisition",
-            "count": 30,
+            "reason": f"Send {outreach_target} widget outreach emails for backlink acquisition",
+            "count": outreach_target,
         })
         briefing["action_items"].append({
             "action": "haro_double_check",
             "reason": "Check HARO for relevant journalist queries — respond to ALL finance-related queries",
         })
+        
+        if escalation:
+            briefing["action_items"].append({
+                "action": "emergency_blog",
+                "reason": "ESCALATION: Create emergency high-value blog post targeting the #1 GSC query",
+            })
+            briefing["action_items"].append({
+                "action": "indexing_double",
+                "reason": "ESCALATION: Run Indexing API submission TWICE",
+            })
 
     if high_priority:
         briefing["action_items"].append({
