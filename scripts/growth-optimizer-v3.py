@@ -139,12 +139,12 @@ def fetch_gsc_data(token, days=7):
         d["ctr"] = round(d["clicks"] / d["impressions"] * 100, 2) if d["impressions"] > 0 else 0
         del d["positions"]
 
-    # Low CTR targets: >=5 impressions, CTR < 1.5%, position 11-30 prioritized
+    # Low CTR targets: >=5 impressions, CTR < 2%, position 11-30 prioritized
     low_ctr = []
     for p in pages.values():
         p_ctr = (p["clicks"] / p["impressions"] * 100) if p["impressions"] > 0 else 0
         p_avg_pos = sum(p["positions"]) / len(p["positions"]) if p["positions"] else 99
-        if p["impressions"] >= 5 and p_ctr < 1.5:
+        if p["impressions"] >= 5 and p_ctr < 2.0:
             p["ctr"] = round(p_ctr, 2)
             p["avg_position"] = round(p_avg_pos, 1)
             p["priority"] = "HIGH" if 11 <= p_avg_pos <= 30 else "MEDIUM"
@@ -251,15 +251,23 @@ def compare_with_yesterday(current_trend):
     alerts = []
     if delta["impressions"] < 0:
         alerts.append(f"⚠️ Impressions dropped by {abs(delta['impressions'])} ({yesterday['impressions']} → {today['impressions']})")
+    elif delta["impressions"] == 0 and yesterday["impressions"] > 0:
+        alerts.append(f"⚠️ Impressions flat at {today['impressions']} — no growth")
     if delta["clicks"] < 0 and yesterday["clicks"] > 0:
         alerts.append(f"⚠️ Clicks dropped")
+    elif delta["clicks"] == 0 and yesterday["clicks"] > 0:
+        alerts.append(f"⚠️ Clicks flat at {today['clicks']} — no growth")
     if delta["position"] > 0:
         alerts.append(f"⚠️ Avg position worsened by {delta['position']:.1f} (higher = worse)")
+    elif delta["position"] == 0 and yesterday.get("position", 99) < 99:
+        alerts.append(f"⚠️ Position flat at {today.get('position', 99)} — no improvement")
+    if delta["ctr"] <= 0 and today.get("ctr", 0) < 2.0 and today["impressions"] > 0:
+        alerts.append(f"⚠️ CTR stagnant at {today.get('ctr', 0)}% — below 2% target")
 
     status = "ok"
-    if len(alerts) >= 2:
+    if len(alerts) >= 3:
         status = "critical"
-    elif len(alerts) == 1:
+    elif len(alerts) >= 1:
         status = "warning"
 
     return {
@@ -342,18 +350,23 @@ def main():
     if comparison["status"] in ("warning", "critical"):
         briefing["action_items"].append({
             "action": "ctr_boost",
-            "reason": "Metrics declining — aggressive CTR optimization needed",
-            "targets": [p["page"] for p in high_priority[:5]],
+            "reason": "Metrics not improving — aggressive CTR optimization needed",
+            "targets": [p["page"] for p in high_priority[:8]],
         })
         briefing["action_items"].append({
             "action": "scenario_push",
-            "reason": "Generate extra scenario pages to increase indexed page count",
-            "count": 20,
+            "reason": "Generate extra scenario pages to increase indexed page count and capture trends",
+            "count": 30,
+        })
+        briefing["action_items"].append({
+            "action": "scenario_uniqueness_upgrade",
+            "reason": "Upgrade existing scenario pages with real-life examples, comparison tables, and personalized insights to avoid duplicate content flags",
+            "note": "For each scenario page: add 'What this means for you' section, comparison data, and unique insights",
         })
         briefing["action_items"].append({
             "action": "outreach_accelerate",
-            "reason": "Send extra widget outreach emails for backlinks",
-            "count": 15,
+            "reason": "Send extra widget outreach emails for backlink acquisition",
+            "count": 20,
         })
 
     if high_priority:
