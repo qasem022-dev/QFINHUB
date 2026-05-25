@@ -1,71 +1,75 @@
 {
   "report_id": "2026-W21",
-  "generated_at": "2026-05-19T01:17:00Z",
+  "generated_at": "2026-05-25T16:00:00Z",
   "engines": {
     "haro": {
       "status": "healthy",
-      "count": 22,
-      "last_activity": "2026-05-19T00:01:30.241Z",
-      "details": "22 sent, 0 failed, 34 total processed. Running every 3 hours via cron."
+      "count": 51,
+      "last_activity": "2026-05-23T12:55:24.144Z",
+      "failed": 3,
+      "total_processed": 73,
+      "details": "51 sent, 3 failed (5.5% fail rate). Last activity 2 days ago. Healthy volume."
     },
     "widget_outreach": {
       "status": "healthy",
-      "count": 39,
-      "last_activity": "2026-05-18T21:05:16.599Z",
-      "details": "39 email targets with messageId. Last batch sent 1 email (29 remaining). Running every 6 hours. Low throughput in recent batch."
+      "count": 67,
+      "last_activity": "2026-05-24T21:27:24.628Z",
+      "with_message_id": 44,
+      "details": "67 unique email targets, 44 with messageId. Last batch (May 24) sent 23/23 successfully. Healthy."
     },
     "newsjack": {
       "status": "healthy",
-      "count": 34,
-      "last_activity": "2026-05-19T00:03:12.044Z",
-      "details": "77 total log entries, 34 published articles across 6 days. Running every 3 hours via cron."
+      "count": 64,
+      "last_activity": "2026-05-25T14:31:20.493Z",
+      "matches": 73,
+      "details": "64 published, 73 matched. Running today. Healthy."
     },
     "optimizer": {
       "status": "healthy",
-      "count": 1,
-      "last_activity": "2026-05-19T01:00:13.544Z",
-      "details": "Daily report generated. 1 stale suggestion (HARO no-data \u2014 HARO now has data). Engine health OK."
+      "count": 0,
+      "last_activity": "2026-05-25T12:50:46.001Z",
+      "details": "Daily report generated today. 2 issues flagged (HARO no-data, X paused). 0 suggestions pending."
     },
     "x_data": {
       "status": "stalled",
       "count": 1,
-      "last_activity": "2026-05-14T14:00:57.407Z",
-      "details": "Only 1 tweet in log. All 5 X/Twitter cron jobs PAUSED since May 14. Root cause: X.com anti-bot detection requires stealth browser rebuild. Active rebuild plan exists."
+      "last_activity": "2026-05-19T11:36:59.538Z",
+      "failed": 5,
+      "details": "1 tweet total (last May 19). 5 failed with 402 Payment Required. Viral engine active (19 replies, 1.34M impressions, last run today). Growth engine last ran May 24. Stealth posting broken (DOM selector stale). Activity-log.json stale (May 19) but engines are running \u2014 API billing issue blocks all posting/search."
     }
   },
   "build": {
-    "last_commit": "9ac1023954a2d1dceb9679aabaeedb44661adf9c",
-    "commit_message": "Mobile performance: preconnect, touch targets, z-index, ad skeleton",
+    "last_commit": "195d29719a545ff0783a27b1cc1b3bc33ac669f4",
+    "commit_message": "Blog: daily auto-post 2026-05-25",
     "author": "QFINHUB Dev",
-    "timestamp": "2026-05-18T23:23:12+03:00",
-    "build_status": "passed",
-    "build_timestamp": "2026-05-18T20:22:41Z"
+    "timestamp": "2026-05-25T15:58:00+03:00",
+    "build_status": "passed"
   },
   "bottlenecks": [
     {
       "rank": 1,
-      "issue": "X/Twitter engines all paused \u2014 5 days without tweets. All 5 X cron jobs disabled since May 14 due to X.com anti-bot detection. Stealth browser rebuild plan created (2026-05-19_011500) but not yet executed.",
+      "issue": "X/Twitter API returning 402 Payment Required for all search and post operations since May 19. This blocks ALL X cron jobs (morning, noon, afternoon, evening, night). Viral engine reads old state but can't post. 5 of 7 activity-log entries are failures.",
       "engine": "x_data",
       "priority": "HIGH",
       "auto_implemented": false,
-      "action_taken": "Not auto-implemented \u2014 requires code changes (stealth_browser.py rebuild). Recommend prioritizing the rebuild plan."
+      "action_taken": "Not auto-implementable. Requires human to check X API billing/plan at https://developer.x.com/portal/dashboard. Check if API plan expired, credits exhausted, or payment method needs update."
     },
     {
       "rank": 2,
-      "issue": "Gateway 39-hour outage (May 17 07:32 \u2192 May 18 22:13 EEST) caused 3 daily jobs to miss 1-2 runs (Blog Agent, PDF Distribution, Site Quality Check). Self-healing monitor detected and scheduler recovered. Jobs will catch up at next natural windows.",
-      "engine": "gateway",
-      "priority": "MEDIUM",
+      "issue": "Stealth browser posting broken: DOM selector '[data-testid=\"tweetTextarea_0\"]' no longer matches X's current UI. Login and engagement search work, but challenge/thread posting fails with 'Element not found'. 0 posts/replies through stealth since last run (May 23).",
+      "engine": "x_data",
+      "priority": "HIGH",
       "auto_implemented": false,
-      "action_taken": "Self-healed. Monitor Blog Agent (07:00), PDF (05:00), Site Quality (09:00) today for successful completion."
+      "action_taken": "Not auto-implementable. Requires code change in stealth browser script to update DOM selectors for X's new UI. Check .x-data-v2/stealth-cron.log for full error details."
     },
     {
       "rank": 3,
-      "issue": "Pinterest pin generator and stealth upload both paused. Last generator run May 17. Not critical \u2014 secondary channel.",
-      "engine": "pinterest",
-      "priority": "LOW",
-      "auto_implemented": false,
-      "action_taken": "Not auto-implemented \u2014 requires review of why Pinterest was paused."
+      "issue": "X Morning cron had 'node: command not found' \u2014 cron's minimal PATH didn't include /home/admin1/.local/bin/. PATH export added to x-daily-morning.sh at 16:44. Verified working with cron's minimal environment.",
+      "engine": "x_data",
+      "priority": "MEDIUM",
+      "auto_implemented": true,
+      "action_taken": "PATH export already added to /home/admin1/.hermes/scripts/x-daily-morning.sh. Verified via `PATH=/usr/bin:/bin /bin/bash x-daily-morning.sh` \u2014 node v22.22.2 found and script starts successfully. Next morning run will work (pending 402 billing resolution)."
     }
   ],
-  "summary": "QFInHub engines overall healthy: HARO (22 responses), Newsjack (34 published), and Widget Outreach (39 targets) all active and running on schedule. Build passed from last night's commit (Mobile performance improvements). Critical issue: all X/Twitter engines paused for 5 days due to anti-bot detection \u2014 a stealth browser rebuild plan exists but needs execution. A 39-hour gateway outage (May 17-18) was self-healed; monitor 3 daily jobs catching up today. Zero auto-fixes applied this week (the one HIGH issue requires code changes)."
+  "summary": "3 of 5 engines healthy (HARO 51 sent, Widget Outreach 67 targets/batch of 23, Newsjack 64 published). X/Twitter critically stalled by API billing issue (402 Payment Required on all operations since May 19) and stealth browser DOM breakage. X Morning PATH issue auto-resolved (export already in script). HARO has minor failure rate (3/54 = 5.5%). Build passed. No gateway outages detected. Pinterest Pin Generator intentionally paused (not flagged)."
 }

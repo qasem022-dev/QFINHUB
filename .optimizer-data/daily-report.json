@@ -1,101 +1,81 @@
 {
-  "date": "2026-05-24",
-  "timestamp": "2026-05-24T12:31:55.045Z",
+  "date": "2026-05-25",
+  "timestamp": "2026-05-25T12:50:46.001Z",
   "traffic": {
     "gsc": {
       "clicks": 1,
-      "impressions": 157,
-      "ctr": 0.64,
-      "avgPosition": 23.9
+      "impressions": 223,
+      "ctr": 0.45,
+      "avgPosition": 28.4
     },
     "ga4": {
       "users": 6,
       "sessions": 7,
       "pageviews": 11,
-      "bounceRate": 100,
-      "avgDuration": 16.5
+      "bounceRate": 71.4,
+      "avgDuration": 38.2
     },
     "trends": {
       "topKeywords": [
         {
           "keyword": "loan calculator",
-          "score": 89.3
-        },
-        {
-          "keyword": "mortgage calculator",
-          "score": 87.1
+          "score": 87.2
         },
         {
           "keyword": "payment calculator",
-          "score": 86
+          "score": 86.6
         },
         {
-          "keyword": "real estate",
-          "score": 80
-        },
-        {
-          "keyword": "inflation calculator",
-          "score": 79.8
+          "keyword": "mortgage calculator",
+          "score": 85.7
         },
         {
           "keyword": "credit score",
-          "score": 79.2
+          "score": 81.8
         },
         {
           "keyword": "auto loan calculator",
-          "score": 78.9
+          "score": 77.5
         },
         {
           "keyword": "credit card calculator",
-          "score": 71.7
+          "score": 71.9
+        },
+        {
+          "keyword": "real estate",
+          "score": 70.4
         },
         {
           "keyword": "investing",
-          "score": 70.6
+          "score": 69.9
         },
         {
-          "keyword": "CD calculator",
-          "score": 57.5
+          "keyword": "inflation calculator",
+          "score": 67.5
+        },
+        {
+          "keyword": "free calculator",
+          "score": 57.6
         }
       ],
       "spikes": [
         {
-          "keyword": "refinance calculator",
-          "spike_pct": 100
-        },
-        {
-          "keyword": "401k calculator",
-          "spike_pct": 65.9
-        },
-        {
           "keyword": "refinancing",
-          "spike_pct": 58.3
+          "spike_pct": 595.2
         },
         {
-          "keyword": "free calculator",
-          "spike_pct": 35.7
+          "keyword": "real estate",
+          "spike_pct": 235.2
         },
         {
-          "keyword": "investing",
-          "spike_pct": 35.4
+          "keyword": "home buying",
+          "spike_pct": 25
         }
       ],
       "longTermUp": [
         {
-          "keyword": "real estate",
-          "trend_pct": 6.9
-        },
-        {
           "keyword": "credit score",
-          "trend_pct": 13.4
-        },
-        {
-          "keyword": "credit card calculator",
-          "trend_pct": 17.5
-        },
-        {
-          "keyword": "investing",
-          "trend_pct": 34
+          "trend_pct": 15.2
         }
       ],
       "suggestionCount": 50,
@@ -103,37 +83,23 @@
         {
           "type": "short_term_spike",
           "priority": "urgent",
-          "keyword": "refinance calculator",
-          "spike_pct": 100,
-          "action": "🚨 100.0% spike on \"refinance calculator\" — create content TODAY"
-        },
-        {
-          "type": "short_term_spike",
-          "priority": "urgent",
-          "keyword": "401k calculator",
-          "spike_pct": 65.9,
-          "action": "🚨 65.9% spike on \"401k calculator\" — create content TODAY"
-        },
-        {
-          "type": "short_term_spike",
-          "priority": "urgent",
           "keyword": "refinancing",
-          "spike_pct": 58.3,
-          "action": "🚨 58.3% spike on \"refinancing\" — create content TODAY"
+          "spike_pct": 595.2,
+          "action": "🚨 595.2% spike on \"refinancing\" — create content TODAY"
         },
         {
           "type": "short_term_spike",
           "priority": "urgent",
-          "keyword": "free calculator",
-          "spike_pct": 35.7,
-          "action": "🚨 35.7% spike on \"free calculator\" — create content TODAY"
+          "keyword": "real estate",
+          "spike_pct": 235.2,
+          "action": "🚨 235.2% spike on \"real estate\" — create content TODAY"
         },
         {
           "type": "short_term_spike",
           "priority": "urgent",
-          "keyword": "investing",
-          "spike_pct": 35.4,
-          "action": "🚨 35.4% spike on \"investing\" — create content TODAY"
+          "keyword": "home buying",
+          "spike_pct": 25,
+          "action": "🚨 25.0% spike on \"home buying\" — create content TODAY"
         },
         {
           "type": "rising_related",
@@ -146,6 +112,14 @@
         {
           "type": "rising_related",
           "priority": "high",
+          "seed": "investment calculator",
+          "query": "daveramsey investment calculator",
+          "growth": 300,
+          "action": "Target rising query: \"daveramsey investment calculator\" (related to investment calculator, +300%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
           "seed": "loan calculator",
           "query": "toyota",
           "growth": 250,
@@ -154,10 +128,18 @@
         {
           "type": "rising_related",
           "priority": "high",
-          "seed": "loan calculator",
-          "query": "car vehicle loan calculator",
+          "seed": "retirement calculator",
+          "query": "ramit sethi retirement calculator",
+          "growth": 250,
+          "action": "Target rising query: \"ramit sethi retirement calculator\" (related to retirement calculator, +250%)"
+        },
+        {
+          "type": "rising_related",
+          "priority": "high",
+          "seed": "tax calculator",
+          "query": "sale tax calculator",
           "growth": 200,
-          "action": "Target rising query: \"car vehicle loan calculator\" (related to loan calculator, +200%)"
+          "action": "Target rising query: \"sale tax calculator\" (related to tax calculator, +200%)"
         }
       ]
     }
@@ -173,13 +155,13 @@
         "lastRun": "2026-05-19T11:36:59.538Z"
       },
       "blog": {
-        "status": "ok",
-        "postsToday": 1,
-        "lastRun": "2026-05-23T12:56:34.545Z"
+        "status": "stale",
+        "postsToday": 0,
+        "lastRun": "2026-05-24T12:35:49.285Z"
       },
       "newsjack": {
         "status": "ok",
-        "totalPublished": 58
+        "totalPublished": 60
       },
       "widgetOutreach": {
         "status": "ok",
@@ -192,9 +174,9 @@
       },
       "indexing": {
         "status": "ok",
-        "lastSubmitted": 84,
-        "lastFailed": 1,
-        "timestamp": "2026-05-23T20:47:48.073557Z"
+        "lastSubmitted": 85,
+        "lastFailed": 0,
+        "timestamp": "2026-05-24T12:36:28.343517Z"
       }
     },
     "issues": [
@@ -205,8 +187,8 @@
   "insights": [
     {
       "priority": "high",
-      "action": "CRITICAL: CTR too low (0.64%)",
-      "details": "157 impressions but 1 clicks. Improve meta titles/descriptions for top pages."
+      "action": "CRITICAL: CTR too low (0.45%)",
+      "details": "223 impressions but 1 clicks. Improve meta titles/descriptions for top pages."
     },
     {
       "priority": "high",
@@ -225,13 +207,13 @@
     },
     {
       "priority": "high",
-      "action": "🚨 Spike detected: \"refinance calculator\" (+100% in 7 days)",
+      "action": "🚨 Spike detected: \"refinancing\" (+595.2% in 7 days)",
       "details": "This is surging NOW — create content today to capture the wave"
     },
     {
       "priority": "medium",
-      "action": "📈 4 keywords trending up over 12 months",
-      "details": "real estate (+6.9%), credit score (+13.4%), credit card calculator (+17.5%)"
+      "action": "📈 1 keywords trending up over 12 months",
+      "details": "credit score (+15.2%)"
     },
     {
       "priority": "low",
@@ -240,27 +222,27 @@
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"loan calculator\" (score: 89.3)",
+      "action": "High-demand keyword: \"loan calculator\" (score: 87.2)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"mortgage calculator\" (score: 87.1)",
+      "action": "High-demand keyword: \"payment calculator\" (score: 86.6)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"payment calculator\" (score: 86)",
+      "action": "High-demand keyword: \"mortgage calculator\" (score: 85.7)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"real estate\" (score: 80)",
+      "action": "High-demand keyword: \"credit score\" (score: 81.8)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"inflation calculator\" (score: 79.8)",
+      "action": "High-demand keyword: \"auto loan calculator\" (score: 77.5)",
       "details": "Optimize existing content or create new page for this keyword"
     }
   ],
@@ -272,32 +254,32 @@
     },
     {
       "priority": "medium",
-      "action": "📈 4 keywords trending up over 12 months",
-      "details": "real estate (+6.9%), credit score (+13.4%), credit card calculator (+17.5%)"
+      "action": "📈 1 keywords trending up over 12 months",
+      "details": "credit score (+15.2%)"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"loan calculator\" (score: 89.3)",
+      "action": "High-demand keyword: \"loan calculator\" (score: 87.2)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"mortgage calculator\" (score: 87.1)",
+      "action": "High-demand keyword: \"payment calculator\" (score: 86.6)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"payment calculator\" (score: 86)",
+      "action": "High-demand keyword: \"mortgage calculator\" (score: 85.7)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"real estate\" (score: 80)",
+      "action": "High-demand keyword: \"credit score\" (score: 81.8)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
       "priority": "medium",
-      "action": "High-demand keyword: \"inflation calculator\" (score: 79.8)",
+      "action": "High-demand keyword: \"auto loan calculator\" (score: 77.5)",
       "details": "Optimize existing content or create new page for this keyword"
     },
     {
@@ -307,8 +289,8 @@
     },
     {
       "priority": "high",
-      "action": "CRITICAL: CTR too low (0.64%)",
-      "details": "157 impressions but 1 clicks. Improve meta titles/descriptions for top pages."
+      "action": "CRITICAL: CTR too low (0.45%)",
+      "details": "223 impressions but 1 clicks. Improve meta titles/descriptions for top pages."
     },
     {
       "priority": "high",
@@ -322,7 +304,7 @@
     },
     {
       "priority": "high",
-      "action": "🚨 Spike detected: \"refinance calculator\" (+100% in 7 days)",
+      "action": "🚨 Spike detected: \"refinancing\" (+595.2% in 7 days)",
       "details": "This is surging NOW — create content today to capture the wave"
     },
     {

@@ -478,5 +478,37 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-23/more-war-driven-inflation-seen-in-fed-s-favored-gauge"
+  },
+  "https://www.housingwire.com/?p=586916": {
+    "slug": "new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
+    "title": "New Federal Housing Funding: What It Means for Your Mortgage and Rental Budget",
+    "publishedAt": "2026-05-25T13:42:21.213Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.housingwire.com/articles/new-federal-funding-a-mixed-bag-for-housing-programs/"
+  },
+  "https://www.bloomberg.com/news/articles/2026-05-25/blackrock-says-there-are-sufficient-factors-to-justify-fed-cut-mpkxuynr": {
+    "slug": "blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
+    "title": "BlackRock’s Saigal Sees Fed Rate Cut Ahead: What It Means for Your Mortgage and Savings",
+    "publishedAt": "2026-05-25T13:42:40.747Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-25/blackrock-says-there-are-sufficient-factors-to-justify-fed-cut-mpkxuynr"
+  },
+  "http://www.zillow.com/research/?p=18722": {
+    "slug": "mortgage-rates-hit-9-month-high-how-to-protect-your-home-buying-power",
+    "title": "Mortgage Rates Hit 9-Month High: How to Protect Your Home Buying Power",
+    "publishedAt": "2026-05-25T14:30:59.440Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.zillow.com/research/mortgage-rates-18722/"
+  },
+  "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/": {
+    "slug": "90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+    "title": "‘90 Day Fiance’ Star’s Kentucky Home: A Lesson in Mortgage Affordability and Dead Animal Decor",
+    "publishedAt": "2026-05-25T14:31:20.492Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/"
   }
 }

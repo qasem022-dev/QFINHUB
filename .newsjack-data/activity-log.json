@@ -1348,5 +1348,89 @@
       "tweetId": null,
       "guid": "https://www.bloomberg.com/news/articles/2026-05-23/more-war-driven-inflation-seen-in-fed-s-favored-gauge"
     }
+  },
+  {
+    "ts": "2026-05-25T13:42:05.296Z",
+    "type": "news-match",
+    "details": {
+      "title": "New federal funding a mixed bag for housing programs",
+      "category": "fed-rate",
+      "source": "Housing Wire",
+      "guid": "https://www.housingwire.com/?p=586916"
+    }
+  },
+  {
+    "ts": "2026-05-25T13:42:21.214Z",
+    "type": "news-published",
+    "details": {
+      "slug": "new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
+      "title": "New Federal Housing Funding: What It Means for Your Mortgage and Rental Budget",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.housingwire.com/?p=586916"
+    }
+  },
+  {
+    "ts": "2026-05-25T13:42:26.217Z",
+    "type": "news-match",
+    "details": {
+      "title": "BlackRock’s Saigal Sees ‘Sufficient Factors’ to Justify Fed Cut",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-25/blackrock-says-there-are-sufficient-factors-to-justify-fed-cut-mpkxuynr"
+    }
+  },
+  {
+    "ts": "2026-05-25T13:42:40.748Z",
+    "type": "news-published",
+    "details": {
+      "slug": "blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
+      "title": "BlackRock’s Saigal Sees Fed Rate Cut Ahead: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-25/blackrock-says-there-are-sufficient-factors-to-justify-fed-cut-mpkxuynr"
+    }
+  },
+  {
+    "ts": "2026-05-25T14:30:41.533Z",
+    "type": "news-match",
+    "details": {
+      "title": "Rates Rise to 9-Month High as Inflation Concerns Build",
+      "category": "fed-rate",
+      "source": "Zillow Research",
+      "guid": "http://www.zillow.com/research/?p=18722"
+    }
+  },
+  {
+    "ts": "2026-05-25T14:30:59.440Z",
+    "type": "news-published",
+    "details": {
+      "slug": "mortgage-rates-hit-9-month-high-how-to-protect-your-home-buying-power",
+      "title": "Mortgage Rates Hit 9-Month High: How to Protect Your Home Buying Power",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "http://www.zillow.com/research/?p=18722"
+    }
+  },
+  {
+    "ts": "2026-05-25T14:31:04.443Z",
+    "type": "news-match",
+    "details": {
+      "title": "EXCLUSIVE: ’90 Day Fiance’ Star Is Left Stunned by Partner’s Kentucky Home That Is Stuffed With ‘Dead Animal’ Decor",
+      "category": "fed-rate",
+      "source": "Realtor.com",
+      "guid": "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/"
+    }
+  },
+  {
+    "ts": "2026-05-25T14:31:20.493Z",
+    "type": "news-published",
+    "details": {
+      "slug": "90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+      "title": "‘90 Day Fiance’ Star’s Kentucky Home: A Lesson in Mortgage Affordability and Dead Animal Decor",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/"
+    }
   }
 ]

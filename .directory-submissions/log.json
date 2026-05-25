@@ -1,0 +1,166 @@
+{
+  "submitted": [
+    {
+      "name": "Crunchbase",
+      "url": "https://www.crunchbase.com/organization/new",
+      "da": 80,
+      "fields_found": 1,
+      "has_form": false,
+      "time": "2026-05-25T01:56:40.167608",
+      "status": "form_filled"
+    },
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/posts/create",
+      "da": 89,
+      "fields_found": 1,
+      "has_form": false,
+      "time": "2026-05-25T01:56:51.104482",
+      "status": "form_filled"
+    },
+    {
+      "name": "G2",
+      "url": "https://www.g2.com/products/new",
+      "da": 85,
+      "fields_found": 20,
+      "has_form": true,
+      "time": "2026-05-25T01:57:08.894907",
+      "status": "form_filled"
+    },
+    {
+      "name": "Capterra",
+      "url": "https://www.capterra.com/p/0/0/product/new",
+      "da": 84,
+      "fields_found": 1,
+      "has_form": false,
+      "time": "2026-05-25T01:57:19.384718",
+      "status": "form_filled"
+    },
+    {
+      "name": "SourceForge",
+      "url": "https://sourceforge.net/software/new/",
+      "da": 92,
+      "fields_found": 5,
+      "has_form": true,
+      "time": "2026-05-25T01:57:34.732608",
+      "status": "form_filled"
+    },
+    {
+      "name": "SaaSHub",
+      "url": "https://www.saashub.com/submit/list",
+      "da": 65,
+      "fields_found": 2,
+      "has_form": true,
+      "time": "2026-05-25T01:58:12.567546",
+      "status": "form_filled"
+    },
+    {
+      "name": "GetApp",
+      "url": "https://www.getapp.com/add-product/",
+      "da": 76,
+      "fields_found": 1,
+      "has_form": false,
+      "time": "2026-05-25T01:58:26.222971",
+      "status": "form_filled"
+    },
+    {
+      "name": "Indie Hackers",
+      "url": "https://www.indiehackers.com/products/new",
+      "da": 78,
+      "fields_found": 12,
+      "has_form": true,
+      "time": "2026-05-25T01:58:47.824973",
+      "status": "form_filled"
+    },
+    {
+      "name": "AlternativeTo",
+      "url": "https://alternativeto.net/software/qfinhub/",
+      "da": 76,
+      "fields_found": 1,
+      "has_form": true,
+      "time": "2026-05-25T01:58:58.516307",
+      "status": "form_filled"
+    },
+    {
+      "name": "Brownbook",
+      "url": "https://www.brownbook.net/business/add/",
+      "da": 45,
+      "fields_found": 1,
+      "has_form": true,
+      "time": "2026-05-25T01:59:14.112703",
+      "status": "form_filled"
+    },
+    {
+      "name": "Trustpilot",
+      "url": "https://www.trustpilot.com/evaluate/qfinhub.com",
+      "da": 92,
+      "fields_found": 3,
+      "has_form": true,
+      "time": "2026-05-25T02:00:03.172492",
+      "status": "visited"
+    },
+    {
+      "name": "2FindLocal",
+      "url": "https://www.2findlocal.com/b/add",
+      "da": 40,
+      "fields_found": 0,
+      "has_form": false,
+      "time": "2026-05-25T02:00:12.472953",
+      "status": "visited"
+    },
+    {
+      "name": "Bizcommunity",
+      "url": "https://www.bizcommunity.com/company/create",
+      "da": 63,
+      "fields_found": 16,
+      "has_form": true,
+      "time": "2026-05-25T02:00:21.940895",
+      "status": "visited"
+    },
+    {
+      "name": "Foursquare",
+      "url": "https://www.foursquare.com/business/",
+      "da": 75,
+      "fields_found": 2,
+      "has_form": false,
+      "time": "2026-05-25T02:00:38.155206",
+      "status": "visited"
+    },
+    {
+      "name": "Yelp",
+      "url": "https://www.yelp.com/business",
+      "da": 91,
+      "fields_found": 7,
+      "has_form": false,
+      "time": "2026-05-25T02:00:54.223255",
+      "status": "visited"
+    },
+    {
+      "name": "BetaList",
+      "url": "https://betapage.co/submit",
+      "da": 72,
+      "fields_found": 1,
+      "has_form": false,
+      "time": "2026-05-25T02:01:06.157080",
+      "status": "visited"
+    },
+    {
+      "name": "Launching Next",
+      "url": "https://www.launchingnext.com/submit/",
+      "da": 58,
+      "fields_found": 24,
+      "has_form": true,
+      "time": "2026-05-25T02:01:16.125639",
+      "status": "visited"
+    }
+  ],
+  "failed": [
+    {
+      "name": "Trustpilot",
+      "url": "https://www.trustpilot.com/evaluate/qfinhub.com",
+      "error": "Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.trustpilot.com/evaluate/qfinhub.com\", waiting until \"domcontentloaded\"\n",
+      "time": "2026-05-25T01:57:59.468663"
+    }
+  ],
+  "last_run": "2026-05-25T01:59:19.370786"
+}

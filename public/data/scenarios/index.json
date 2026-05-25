@@ -15544,5 +15544,2765 @@
     "title": "$250k Goal at 1% Return: 223 Months (18.6 Years)",
     "calculatorSlug": "savings-goal",
     "category": "savings"
+  },
+  "mortgage-300k-25dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Home at 7% for 15 Years: $2,022/mo Payment & $139k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 5.5%: $908/mo Payment & $167k Interest Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-25dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "25% Down on $600k Home at 7.5%: $3,146 Monthly Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-10dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$400k Home, 10% Down: $2,395/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-10dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "150k Home at 5.5% for 15 Years: $1,103/mo Payment & More",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-3dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$150,000 Mortgage at 8%: $1,068 Monthly & $384,345 Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-15dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15% Down on $400k at 6%: $2,038/mo Payment & $394k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$150K Home at 7.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-15dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$127,500 Mortgage at 6%: $764 Monthly & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-25dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$262,500 Mortgage at 7.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-15dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 7.5%, 15% Down \u2013 $1,188/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-10dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Home at 6%: Monthly Payment $1,349, Total Cost $485,636",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-5dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15-Year $500k Mortgage at 5.5%: $3,881/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-15dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "30-Year Mortgage on $600k at 5.5%: $2,896/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-750k-15dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$750,000 Home at 5.5%: $3,620/mo, $1.3M Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-10dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$315k Mortgage at 7.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-10dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15-Year $450k Mortgage at 7.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200,000 Loan at 6.5%: Monthly Payment & Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-750k-10dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15-Year $675k Loan at 6.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-15dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "30-Year $510k Loan at 7%: $3,393 Payment, $1.22M Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-25dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$150k Home, 6.5% Rate, 25% Down: Monthly Payment & Costs",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-5dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 7% with 5% Down: 15-Year Payment $1,708",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Mortgage at 7.5%: $2,758/mo Payment & $199k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-3dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Home, 3% Down, 7.5% Rate: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-15dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "7% Mortgage on $250k Home: $1,414/mo, $296k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-3dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Home at 7%: $1,613 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-25dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$450k Mortgage at 8%: $3,302/mo Payment & $738,699 Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-15dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M Home at 7%: $5,655/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-10dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$600k Home: 7.5% 15-Year Mortgage Payment & Total Interest $361k",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-15dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 7.5%: 15-Year Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-15dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "8% Mortgage on $150k Home: $1,218/mo, $91.8k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-15dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$340k at 7% for 15 Years: $3,056/mo & $210k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "800K Mortgage at 7%: Monthly Payment & Total Cost for 15-Year Loan",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-5dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Home with 5% Down at 6.5%: 15-Year Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-5dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Mortgage at 6%: $1,709 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-15dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$425k Mortgage at 6.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-3dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15-Year $400k Mortgage at 6.5%: $3,379.90/mo Total $608k",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-5dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "7.5% Mortgage on $250k Home: $1,661/mo & $360k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-3dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Home at 7.5%: Monthly $2,248, Total $404,641",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$150k Home at 7%: $1,079 Monthly Payment & $74k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-10dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$450k Mortgage at 6%: Monthly Payment & Total Interest Over 30 Years",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-15dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 6.5%: $1,074/mo Payment, Total $386,826",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-10dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15-Year $250k Mortgage at 7.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-25dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$262.5k Mortgage at 5.5%: $1,490/mo & $274k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-15yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$320k Mortgage at 6.5%: Monthly Payment at $2,788",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-3dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Home at 6%: 15-Year Mortgage Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-3dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250K Home with 8% Interest: $2,317/mo Payment & $174K Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-3dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "30-Year $150k Mortgage at 6.5%: $919.66 Monthly Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-10dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M Home at 5.5%: 15-Year Mortgage Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-5dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 7.5%: $1,761/mo Payment & $127k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-5dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "30-Year $570k Mortgage at 6%: $3,417/mo Payment & $660k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-25dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Home at 6%: $1,349 Monthly Payment & $260k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-25dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "7% Mortgage on $375k: $2,495/mo & Total $898k",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-25dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Mortgage at 5.5%: Monthly Payment & Total Cost for 30 Years",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-3dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "15-Year $350k Mortgage at 8%: $3,244/mo Payment & $244k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-10dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Mortgage at 6%: $1,619/mo, Total $582,763",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-10dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M Home with 10% Down at 5.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "350k Mortgage at 6.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-3dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$600k Home at 5.5%: $3,305/mo with 3% Down Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-25dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200,000 Mortgage at 7.5%: Monthly Payment & Total Interest Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-15dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Home at 8% with 15% Down: $3,119/mo & $1.12M Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-3dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Mortgage on $500k at 7.5% for 15 Years: $4,496/mo, $324k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-3dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$150,000 Mortgage at 8%: $1,390/mo Payment Over 15 Years",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-5dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Mortgage at 8% for 15 Years: $2,724/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-3dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Home at 6.5% (15yr): $2,957/mo & $192,833 Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-25dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 5.5%: $1,226 Monthly, 15-Year Mortgage",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-15dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$425k Mortgage at 8%: $4,062/mo Payment & $306k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-25dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k at 7.5%: $2,098 Monthly Payment & $455k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Home at 7%: Monthly Payment & Total Interest Over 30 Years",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-15dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M Home at 6.5%: $5,373/mo Payment & $1.08M Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-15dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Mortgage at 6% for 15 Years: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-10dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$400k Home at 5.5%: 15-Year Mortgage Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-3dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Home at 8% with 3% Down: Monthly Payment $3,559",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-10dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M Home at 7%: Monthly Payment & Total Interest Breakdown",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-15dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Home at 7.5% for 15 Years: $1,970 Monthly Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Home at 8%: $1,911 Monthly, 15-Year Mortgage Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-10dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Mortgage at 5.5%: $1,533 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-30yr-6-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$400,000 Home at 6.5%: $2,023 Monthly, $408k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-25dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$750k Mortgage at 8%: Monthly Payment & Total Cost for 15 Years",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-750k-25dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$562,500 Mortgage at 5.5%: Monthly Payment & Total Cost Guide",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-15dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$510k Loan at 8%: $4,874 Monthly, $877k Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-3dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "200k Home with 3% Down at 6%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-15yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$400k Home 7.5% 15-Year: $2,966/mo & $213,959 Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-750k-10dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$675,000 Mortgage at 5.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-10dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Home at 5.5%: 15-Year Mortgage Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Mortgage at 8% for 15 Years: Monthly Payment & Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-5dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$400,000 Home at 6.0%: $3,207 Monthly Payment & $577k Total",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-15dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Mortgage at 7%: Monthly Payment & Total Cost for 15-Year Term",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-3dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Home at 7% with 3% Down: 15-Year Mortgage Costs",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-5dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "6% Mortgage on $150k Home: $854 Monthly, $165k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Mortgage at 6%: $1,679/mo & $324k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-25dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$300k Home at 7.5%: $1,573/mo Payment &amp; $341k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-10dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$315k Mortgage at 6%: Monthly $1,889, Total Cost $679,890",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-200k-10dp-30yr-7-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Mortgage at 7.5%: Monthly Payment $1,258.59 & Total Interest $273k",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Home at 5.5%: $1,689 Monthly Payment & $310k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-15yr-6-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k, 6%, 15-Yr Mortgage: $1,688 Monthly, $103,788 Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-10dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$350k Home, 8% Rate, 15-Year: $3,010/mo & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-25dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$450k Mortgage at 5.5% for 15 Years: $3,677/mo Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "compound-interest-1000000-5pct-25yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 5% for 25 Years: Compound Interest Growth to $3.48M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-10pct-20yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k to $3.98M: 20-Year Compound Interest at 10% with $5k Monthly",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-6pct-5yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k at 6% with $1k/month: Future Value $137,212",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-10pct-15yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10k at 10% for 15 Years: Compound Interest Growth to $44,539",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-10pct-30yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "500k at 10% for 30 Years: $10.1M Future Value with $100 Monthly",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-7pct-40yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Start with $1k and $250/month at 7%: $672k after 40 years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-4pct-40yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $250k at 4% for 40 Years with $100/mo",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-8pct-15yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 8% Interest Compounded Monthly: $3.3M After 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-6pct-20yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10k Initial, $2k Monthly at 6%: $957k After 20 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-6pct-5yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 at 6% with $500/month: Future Value in 5 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-5pct-25yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How $500,000 Grows at 5% Over 25 Years: $1.74M Future Value",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-4pct-15yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 at 4% for 15 Years: Future Value & Earnings",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-5pct-15yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $100k at 5% with $5k/month, 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-5000-10pct-25yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$5,000 + $250/Month at 10%: $391,993 in 25 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-8pct-40yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $100k + $2k/month for 40 Years = $9.4M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-6pct-15yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k + $1k/month: 15-Year Compound Interest at 6% to $352k",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-10pct-20yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k at 10% with $5k/mo: $7.46M After 20 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-10pct-20yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50,000 at 10% with $250/mo: 20-Year Compound Interest to $556k",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-7pct-40yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Start with $25k, Add $2k Monthly at 7%: $5.66M After 40 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-4pct-5yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100,000 at 4% with $1,000 Monthly: 5-Year Compound Growth Results",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-5pct-20yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k at 5% with $100/mo: $108,919 Future Value",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-10pct-15yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 at 10% for 15 Years: Compound Interest to $111,348",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-6pct-40yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50,000 Initial + $100 Monthly at 6% for 40 Years: $747k Future Value",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-6pct-10yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100,000 at 6% with $500/month Grows to $263,879 in 10 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-5pct-40yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50K to $1.13M: Compound Interest on $500 Monthly at 5% for 40 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-5000-8pct-25yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Invest $5k + $250/mo at 8%: $274k After 25 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-4pct-25yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10,000 at 4% for 25 Years: Compound Interest Grows to $27,138",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-8pct-30yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000,000 at 8% with $250 Monthly: $11.3M After 30 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-10pct-25yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "10% Return: $25k + $1k/mo Grows to $1.63M in 25 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-7pct-25yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 7% for 25 Years: Compound Interest Growth to $5.7M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-4pct-15yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "\u20b9250,000 at 4% with \u20b91,000 Monthly: Future Value \u20b97,01,166 After 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-10pct-30yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50K at 10% for 30 Years: Compound Interest to $991,870",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-6pct-5yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Investment at 6%: Monthly $5k Contribution, 5-Year Growth to $686k",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-5pct-15yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 + $250/month at 5%: $119,665 Future Value in 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-10pct-30yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10,000 at 10% with $250/Month: $763k After 30 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-8pct-5yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $500k at 8% for 5 Years Grows to $744,922",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-5pct-25yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Invested at 5% with $250/mo: $497k After 25 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-10pct-30yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k + $100/mo at 10%: $722k in 30 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-6pct-15yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Investment at 6%: 15-Year Compound Growth & Earnings",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-4pct-30yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "30-Year Compound Interest: $250 Monthly at 4% Yields $176,826",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-5pct-10yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250,000 at 5% with $250/Month: Future Value & Earnings",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-7pct-25yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 7% for 25 Years: Compound Interest Growth to $1.43M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-8pct-15yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $500k at 8% for 15 Years Grows to $1.65M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-10pct-30yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k + $5k/mo at 10% for 30 Years: Compound Interest Calculator",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-7pct-20yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k at 7% for 20 Years: Future Value $100,968.47",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-6pct-25yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $250K at 6% for 25 Years \u2013 $905,542 Earnings",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-4pct-5yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k at 4% with $100 Monthly: $37,155 After 5 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-7pct-5yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "1M at 7% with $5k Monthly: 5-Year Compound Growth to $1.78M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-8pct-30yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 8% for 30 Years: Compound Interest Growth & Total",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-5000-10pct-25yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $5,000 Initial + $100 Monthly at 10% for 25 Years = $192,968",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-5pct-20yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 at 5% with $100/month: 20-Year Growth to $43,816",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-10pct-15yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $10k at 10% for 15 Years +$2k/mo = $873k",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-6pct-10yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Investment at 6%: Compound Interest Growth Over 10 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-4pct-5yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 4% with $2k/month: 5-Year Compound Growth Calculator",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-6pct-25yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $10,000 at 6% for 25 Years Grows to $44,650",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-7pct-10yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 at 7% with $500 Monthly: 10-Year Compound Interest",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-4pct-40yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 4% for 40 Years: $2.42M Future Value with $1k Monthly",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-5000-10pct-25yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$2,000/Month at 10% for 25 Years: $2.7M Growth",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-6pct-15yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "From $100k to $318k: 6% Interest with $250/Month in 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-7pct-15yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k at 7% with $250/month: How Much in 15 Years?",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-7pct-10yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 at 7% with $100 Monthly \u2013 $19,318 in 10 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-6pct-10yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500,000 at 6% for 10 Years: Compound Interest to $909,698",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-5pct-15yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $100k + $2k/mo at 5% for 15 Years = $745,948",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-5000-5pct-15yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$5K Lump Sum + $1K/Month at 5% for 15 Years: $277,857",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-6pct-10yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 at 6% APR with $100 Monthly: Future Value $18,207 After 10 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-5pct-30yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 + $500/Month @ 5% for 30 Years: $420,597",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-7pct-10yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "7% Interest on $250k + $500 Monthly: $588,958 in 10 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-4pct-30yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $50k to $859k in 30 Years with $1k Monthly at 4%",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-6pct-5yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10,000 at 6% with $1,000/mo: $83,259 in 5 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-8pct-15yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 & $2,000 Monthly at 8%: Grows to $774,749 in 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-7pct-10yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $10k + $500/mo at 7% for 10 Years = $106,639",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-7pct-40yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Invested at 7% for 40 Years: Compound Growth to $9.47M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-6pct-15yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 to $147,863: 15-Year Compound Interest at 6%",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-5pct-5yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $10,000 at 5% with $250/month yields $29,835",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-5000-4pct-20yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Compound Interest: $5k + $250/mo = $102,806 in 20 Yrs",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-10pct-15yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 10% with $250/mo: Future Value $1,217,097 in 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-4pct-40yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "40-Year Compound Interest: $100k at 4% with $500/mo = $1.08M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-4pct-5yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 4% with $250/Month: $321,823 in 5 Years, Earn $56,824",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-5pct-10yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 5% + $5k/mo: 10-Year Future Value $2.42M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-4pct-40yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How $250k & $500 Monthly at 4% Become $1.83M in 40 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-8pct-10yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k at 8% with $1,000 Monthly: 10-Year Growth to $404,910",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-5pct-5yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k at 5%: $2k Monthly Adds $44k in 5 Years \u2013 Compound Interest",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-10000-8pct-15yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10k at 8% with $100/mo: $67,673 after 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-6pct-25yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How $1M + $5k/Month at 6% Grows to $7.9M in 25 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-6pct-15yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 6% with $500 Monthly: Future Value $758,933 in 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-5pct-15yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$587k After 15 Years: $25k Initial + $2k/mo at 5%",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-10pct-15yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 Initial, $250/month at 10% for 15 Years: $108,072",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-5pct-15yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k at 5% for 15 Years: Compound Interest Growth to $2.39M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-8pct-25yr-m100": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 8% APY with $100/mo for 25 Years: Future Value $7.4M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-250000-6pct-10yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Start with $250K, add $5K/month at 6%: $1.27M in 10 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-7pct-15yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Invest $100k + $1k/mo at 7%: 15-Year Growth to $601,857",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-10pct-15yr-m250": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k at 10% with $250 Monthly: $2.33M After 15 Years",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000-6pct-40yr-m1000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 Monthly for 40 Years at 6%: Grow to $2,002,448",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-7pct-20yr-m5000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 at 7% for 20 Years: $2,705,601 Future Value",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-1000000-6pct-10yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000,000 at 6% for 10 Years: Future Value $1,819,396.73",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-100000-10pct-25yr-m2000": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100,000 at 10% with $2,000 Monthly: Future Value $3.86M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-500000-8pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "500k Invested at 8% for 40 Years: Future Value $12.1M",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-50000-7pct-15yr-m500": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k at 7%: $300k in 15 Years with $500 Monthly Contributions",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "compound-interest-25000-5pct-15yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 at 5% for 15 Years Compounded to $52,842.60",
+    "calculatorSlug": "compound-interest",
+    "category": "investing"
+  },
+  "retirement-planning-546defa2": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $1M Savings: $500 Monthly, 4% Return",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-6d85a913": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $162k Savings, $6.5k Annual Income \u2013 Are You on Track?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-819fa139": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $1000/month: $100k saved, $36k income gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4a435442": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement Calculator: $250k at 45, $500/mo \u2192 $1.13M by 62",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-0a08dbb6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $130k Savings vs $150k Goal \u2014 Income Gap $144,793",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-c20525c6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "From $100K to $1.5M: Retirement at 62 with $1,000/Month",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-b8ff2f26": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $1.72M: $5k Monthly, 6% Return",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-3d4d4410": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62: $250k Savings, $2k Monthly, $46,786 Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-bb28e11c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62: $1.07M Savings, $42.8k Income \u2013 $32k Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-255d0ce4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $1M: $6.7M Savings & $269k Annual Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-296e22c9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70: $500k to $1.45M with $250 Monthly Contributions",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-71b43c50": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $1k Monthly: $565k vs $150k Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-b4b5be19": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70 with $13.45M: $75k Income from $50k Start",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-f0bdc522": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67: $747k Savings vs $150k Goal \u2013 Income Gap $120k",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-b2310b7c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70 with $5.7M: $5,000 Monthly Savings & 7% Return Guide",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-5990acea": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 65 with $100k Savings: $2.95M & $118k Annual Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-6d78c624": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $6.1M: $5k Monthly Contribution Analysis",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-75f3c580": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $500k: $36,270 Income vs $75k Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-5bcb57aa": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 from 50: $177k Savings vs $150k Annual Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-487ec13c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Savings at 55: $250/mo Contributions & 5% Return Analysis",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-06689d51": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $250K Savings: $40K Income Gap of $22,904",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-d51563e1": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $2k/month? $49,440 saved, $58K income gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-e80b830b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Age 55 Retirement at 67: $250k Savings, $100/Month \u2013 $468k Final, $41k Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1baf26c9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70 with $500k: $250/mo at 4% - $100k Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-d6dd04a4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$621K Retirement Savings at 67: $150K Income Gap Explained",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-e232499d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62: $50k Saved, $500/mo, Only $2,652/yr Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-9c2484fc": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62: $5.48M from $500k Savings & $2k Monthly",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-30b4f4cb": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$6.8M Retirement at 65: $5,000 Monthly, 8% Return, $50k Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1dc226d4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "With $1M at 30 and $500/month, retire with $11.2M at 70",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4a466006": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 65: $217k Savings vs $60k Goal \u2014 Income Gap Analysis",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a454b7b1": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $10k Savings & $2k/mo: Will It Be Enough?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4a178c95": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $1.35M: From $100k Savings & $250/mo at 8%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4533eaa3": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $321k Savings vs $60k Goal \u2013 Are You on Track?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-c49df9d2": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $1,000/month from 50: $258,943 at 65, but $49,642 gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-26012c07": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $50k Savings, $500/mo, 5% Return - $156,912 Nest Egg",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a5ddfdcc": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67: $250k Savings + $1k Monthly = $2M? Not Enough.",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-8d74fd89": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 40 + $500/mo to 67: $4.06M for $162K annual income?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-f8fc74e1": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $3.26M: $250k Savings + $1,000 Monthly at 6% Return",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-b8af6ab9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $1.6M: $5k/month from $50k at 7%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-5c856487": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 65: $1M Savings, $1k/Month, 5% Return - $71k Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-d72c0fca": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 62: $10,385 Saved, $39,585 Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-06454d4f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1.44M Retirement at 70: Can You Get $75k Income?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-ae199c3b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k at 60, Retire at 65: $60k Income Goal?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-6a9908af": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: Only $18,404 Saved \u2013 $92,638 Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-596decc8": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$43,988 at 62: $1,760/mo Retirement vs $40,000 Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-cec64d63": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 62: $1.52M Savings, $60,770 Annual Income \u2014 $39,230 Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-25fa96ce": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65: $100k Savings + $500/mo = $279k \u2013 $11k/yr Sustainable",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-ffe31bd7": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62: $40,218 Savings, $1,609 Monthly Income vs $60k Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a67109e7": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 65: $161k Savings, $54k Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-46d4efb9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "At 35, $50k Saved, $500/mo: Will $868k Cover $40k Retirement Income?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4696607b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $500k Savings: $3.3M vs $150k Goal",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-dc412359": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 67: $1.5M Savings for $60k Income Goal - On Track?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-01f1e3be": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $75k Need: Only $10,707 Saved",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-63d50382": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $500k Savings + $500/mo = $6.07M at 6% Return",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1648c48e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67 with $1M: $2,000/mo at 6% Return & 4% Rule Analysis",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-9a666233": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 40: $9M Retirement Nest Egg by 67 with $1k/mo",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-3e6aa2af": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 67: $833k Saved vs $40k Income Need - 4% Rule Shortfall",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-c8d62cab": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement Savings at 8%: $1.75M for $150k Income? Gap $79,818",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-356b14f7": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $1.33M Savings, $53k Income - Gap Analysis",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-72b33b76": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $100k Savings: $198,686 Projected, $7,947/yr Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4325695d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70: $1.87M Savings, $75k Income Gap? - Act Now",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-71b7986f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 62: $23,695 saved, but $149k income gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-b1e60642": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement Calculator: $5k/Month & $100k Start Yields $7.5M at 65",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-9e6297db": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70: $250k & $1k/mo \u2192 $6.1M at 7% return",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-47468a32": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65: $50k Savings, $2k/Month \u2014 $190k Nest Egg, $7,633/yr Income Gap $42,367",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1cd3a011": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $720k? $5k/month at 4% return analysis",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-5a749870": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62: $50k + $250/mo = $261k \u2013 $64,529 Shortfall",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-9e08183e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 67: $151,519 Saved, $68,939 Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-649ea5de": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $1,031,428 Savings, $41,257 Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-f6ddffc0": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $7.6M: $5k Monthly Contributions at 5%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a20012a5": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement: $250k to $760k by 67, Only $30k Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-d0d660ca": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70 with $5k/month: $3.99M Savings & $159k Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-6852a9df": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 65: $2.7M from $100k Savings & $2k Monthly at 5%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-e17b3756": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70 with $100/mo? $255k Savings Not Enough",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-938e56ac": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 62: $1M Savings, $100k Goal \u2013 $59,777 Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-45babddd": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $1M Savings: $2.5M Nest Egg & $100k Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-db9f93cf": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 65 with $500k: Only $88k Annual Income? Gap $61.5k",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-3a4cacdc": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $2.6M: 30-Year-Old Saving $2,000 Monthly at 7%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-04e98ad6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k at 25 to $2.3M by 62: $250/mo Retirement Plan",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-f47482a3": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $25,962: 7-Year Plan from $0 Savings?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a029de44": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70: $1M Savings + $5k Monthly = $19.6M at 6%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1d581b39": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $749k Savings, $30k Income vs $75k Goal \u2013 $45k Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-0c26a6be": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement: $1.25M at 67 vs $75k Income \u2014 $25k Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-e55d15d5": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70: $2k/Month & $75k Goal \u2013 $60,719 Sustainable Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-3f3b6001": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $250k Savings, $1k Monthly, $40k Income Shortfall",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-78abe160": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 65: $50k Savings, $100/mo, 8% Return \u2192 $946k",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-2c9a65a1": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $500k Savings, $500/month, 5% Return \u2014 $3.3M Projected",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-5b6e214e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 62: $70,675 Saved, $72,173 Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-5307034d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement Calculator: $1.5M from $100k at 55 with $5,000 Monthly Savings",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1733b4d8": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 67: $500 Monthly, $524k Savings, $39k Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a3775bc0": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70 with $2.8M: $50k Income from $1M at 7% Return",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1c7fc962": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$5k/Month to $1.79M at 65: 4% Return Retirement Plan",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-a9d2e377": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 35: $254k Annual Retirement Income with $2k Monthly Savings",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-fe6de3af": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 67: $550k Savings, $22k Annual Income Gap",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-503182e1": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 62 with $2,000/Month: $201k Savings & $8k Income",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-1f48b499": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement Calculator: $5M from $250k & $1k Monthly at 6%",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-4f03280b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retirement at 70: $500k Savings, $250/Month \u2013 Only $47k Annual Income?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-c32f7104": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1M at 50: Can $2k Monthly Savings Fund $100k Retirement?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "retirement-planning-d1381ed7": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Retire at 70: $2M Nest Egg but Only $80k Income?",
+    "calculatorSlug": "retirement-planning",
+    "category": "retirement"
+  },
+  "401k-200000-6pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$200k Salary, 6% 401k: $3.99M in 40 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-150000-20pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k Calculator: $150k Salary, 20% Contribution, 6% Return \u2013 $5.57M in 40 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-150000-5pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k at 5% Contribution with 50% Match: $2.5M After 40 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-3pct-20yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k at $40k Salary: How a 3% Match Grows to $79k in 20 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-100000-5pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Salary, 5% 401k: $1.39M After 40 Years at 6% Return",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-20pct-20yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$40k Salary, 20% 401k: $457,620 in 20 Years (8% Return)",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-75000-15pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$75k Salary 401k: 15% Contribution + 6% Match = $4.08M in 40 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-3pct-10yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k Calculator: $40k Salary, 3% Contribution, $30,187 After 10 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-20pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$40k Salary 401k: 20% Contribution, 5% Return = $1.26M",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-15pct-20yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k Calculator: $40k Salary, 15% Contribution, 7% Return - $295k After 20 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-150000-15pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k Calculator: $150k, 15% Contribution, 8% Return \u2013 $6.8M",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-60000-3pct-10yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$60k Salary, 3% 401k: $39,114 After 10 Years at 8% Return",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-75000-6pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$75k Salary, 6% 401k: $1.12M After 40 Years at 7%",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-10pct-30yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$40k Salary 401k: 10% Contribution + 4% Match = $634k After 30 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-15pct-10yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$40k Salary, 15% Contribution: 401k to $91,188 in 10 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-60000-6pct-30yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k Growth: $60k Salary, 6% Match, 6% Return, 30 Years = $521,784",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-60000-6pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k on $60k Salary: 6% Contribution + 50% Match = $1.4M",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-5pct-20yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$40k Salary, 5% 401k: $137k After 20 Years @8%",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-75000-20pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "401k Calculator: $75k Salary, 20% Contribution, 40 Years = $2.67M",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-6pct-20yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "6% 401k on $40k Salary: $105,811 After 20 Years",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "401k-40000-15pct-40yr": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$40k Salary, 15% 401k: $2.07M After 40 Years at 8%",
+    "calculatorSlug": "401k-calculator",
+    "category": "retirement"
+  },
+  "debt-payoff-4439451e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $1,000 at 28% APR: $100/Month Cost & Timeline",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-a8d30047": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $50k at 22% APR with $1,000/mo: Total Cost & Time",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-ee8a7805": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $5,000 Debt at 22% APR: 5.3 Months, $292 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-ceaf041e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $15,000 Debt in 6.2 Years: $200 Monthly Payment & $0 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-f6c3ea85": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $50k Debt at 22%: $2k/Month Costs & Timeline",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-7fae589c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $5,000 Debt at 20% APR: 32.6 Months, $1,522 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-67d761d6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Debt Payoff: $1,000 at 22% APR, $100/mo (11.1 Months)",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-bafaa434": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $10k at 28% APR with $500/Month: Cost & Time",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-ebbb5ced": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $5,000 at 30% APR: Monthly Payment & Total Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-47115ed2": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$5,000 Debt at 18%: Payoff in 10.9 Months? Total Cost?",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-9ee7487f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $5,000 at 18% APR: Monthly Payment & Total Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-cceaae3e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$15,000 at 15% APR: Payoff in 8 Months for $848 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-37096b7c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Debt Payoff Calculator: $50k at 25% APR, $2k Monthly \u2013 Total Cost & Payoff Date",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-b3df4ff9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$15,000 Debt at 18% APR: 7.8 Years & $12,933 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-dd7acb93": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k Debt at 18%: $100/Month Payoff \u2013 500 Months, 41.7 Years",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-2c0a4456": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $5,000 at 25% APR: $2,000/mo Plan Saves $188 in Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-b865c0b9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $15,000 at 22% APR: 8.1 Months & $1,284 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-1f784fab": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Debt at 25%: $100 Monthly Payment, 83-Year Term",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-c808d8b6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k Debt at 28%: Pay $100/Month? 41.7 Years & $0 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-ab7ae23c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10k Debt at 20%: Payoff in 11 Months with $1k/mo",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-4af2dc97": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $100k Debt at 30%: $300/mo, 27.8 Years Total $100k",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-c2a5204b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay off $25,000 Debt at 20%: $100/mo for 20.8 Years",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-966d803d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 Debt at 18%: Payoff in 0.5 Months - $11.28 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-e2b021b9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $1,000 at 25% APR: 2.1 Months & $32 Total Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-bc115959": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$15,000 Debt Payoff at 30% APR: $300 Monthly, 50 Months",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-626efb83": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$15,000 Debt at 28% APR: Payoff in 8.3 Months, $1,681 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-3354d3d1": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $15,000 at 25% APR in 4 Years: Monthly $500 Payment & Total $8,784 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-4ccc4f7d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 Debt at 18% APR: Payoff in 10.9 Months, $91.57 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-9a082ef4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $50,000 Debt at 18% in 100 Months: Total Cost $50,000",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-2c9a0246": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $10,000 Debt with $100/Month: Timeline & Total Cost",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-ac61624d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k Debt at 28%: Payoff in 100 Months? $500/mo Plan",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-1a737834": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $15,000 at 22% APR: $1,000 Monthly Plan & Total Cost",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-57228b4f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $1,000 at 20% APR in 0.5 Months - Total Interest $12.54",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-ba7fe927": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Debt at 22%: $100/mo for 83.3 Years, Total $100k",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-51853dd9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $50,000 Debt at 25% APR: $100/Month for 41.7 Years",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-92bffff3": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $50k at 20% APR: $2k/Month = 2.7 Years, $15.2k Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-cbabcc1e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $1,000 at 28% APR: $500/mo Saves $35.99 Interest",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-e423b3a4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 Debt at 22% APR: $300/Month Payoff in 3.5 Months & Total Interest of $41.29",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-fa3309c4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$5,000 at 15% APR: Payoff in 6.6 Years, Interest $2,896",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-e77c0d53": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$1,000 Debt at 25% APR: Pay $1,015.68 in 0.5 Months",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-698a0d69": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Debt Payoff: $100k at 20% APR \u2013 $300 Monthly for 27.8 Years",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-6a71fbc4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k Debt at 25%: $1k Monthly, Payoff in 3 Years",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-3a75e849": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Pay Off $5,000 Debt at 15% APR: $200/Month for 2.5 Years",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "debt-payoff-64851fc7": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Debt at 28%: Payoff in 200 Months with $500/mo Payment",
+    "calculatorSlug": "debt-payoff",
+    "category": "debt"
+  },
+  "savings-goal-99bb7561": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Savings Goal Reached: $5,000 Goal with $25,000 Already Saved",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-32fa7ff8": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Savings Goal: $10k Saved, $250/mo, 4% Return = 35.9 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-b9ce6ea5": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k Goal from $25k Savings: $2k Monthly at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-74f1d57a": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k Savings Goal Already Met: Next Steps & Strategies",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-a8902042": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 7.5 Months: $2,000 Monthly at 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-70ed082f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50,000 in 13.5 Years: Monthly $250 at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-074b2a33": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Already Saved $25,000? Reaching $5,000 Goal in 0 Months",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-286da1b3": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50k with $100/mo at 1%: 34.8 Years to Goal",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-36ae002b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Savings Goal: $500/mo, $5k Current, 2% Return - 13.8 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-38010ada": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $250,000 in 60.5 Years: Monthly $250 at 1% Return Calculator",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-46f87f55": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $250k in 31.9 Years with $500/mo at 1% Return: Calculator",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-b169c93b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Savings Goal Calculator: $5,000 Goal Already Saved at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-ec195a28": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 3.9 Years: $100/Month at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-aa0c9cee": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 5.7 Years: $25k Now + $1k/Month at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-14c408ee": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How to Save $10,000 in 8 Years: Monthly $100 at 1% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-af9f838e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k in 34.8 Years with $1,000 Monthly at 1%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-4009bdcd": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $250k with $250/Month at 2%: 49 Years to Goal",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-66e73466": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50,000 Goal: $10k savings, $250/mo at 5% = 10.2 years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-b4f7e737": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 7.4 Years: $1,000/Month at 3% Returns",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-b6ad4c9b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50,000 Savings Goal: $25k Current, $2k/mo at 3% \u2013 12.3 Months",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-e157ad07": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$500k Savings Goal: $250/mo at 2% \u2013 73.3 Years to Reach",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-8d2344e9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k Goal: $1k Monthly at 4% \u2013 24.4 Years to Reach",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-91e9ac6a": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500,000 with $250 Monthly at 2%: 72.6 Years to Goal",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-b9f07c9d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Savings Goal of $5,000 Already Met: Zero-Time Scenario Explained",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-3355ff99": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $10,000 in 1.6 Years: $500/Month at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-867a3788": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 4 Years: $2k Monthly at 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-97b103b4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500,000 in 35.7 Years: $500 Monthly at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-4d6bdf60": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100,000: 10.2 Years with $500 Monthly at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-eb3c87ed": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 6.7 Years: $250/Month at 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-11185eae": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How to Save $100k in 14.7 Years: $500/Month & $5k Initial at 1%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-f177a8d4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 10 Months: $500 Monthly at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-560617b8": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k: $1,000 Monthly at 3% \u2013 27-Year Timeline",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-eae5482b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k with $100/month at 5%: 61.8 Years to Goal",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-cdcd4a24": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25k in 14.7 Months: $10k Current, $1k Monthly at 3%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-f5e68ddd": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k with $250/mo at 1% Return: 95 Years to Goal",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-7e21c835": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 19.3 Months: $250/Month at 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-4c8abd86": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 5.4 Years: $1k Monthly with $25k Starting & 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-3e1c63ab": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $250,000: Monthly Contribution of $2,000 at 1% Return Takes 9.9 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-90b64424": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 2.4 Years: $10,000 Current, $500 Monthly, 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-6534f5ac": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 2.5 Months: $2,000 Monthly Contribution at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-7c46557f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Savings Goal: $100/mo at 3% Takes 64.9 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-e13bf61f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50,000 in 2 Years: $2,000 Monthly at 1% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-51a87239": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 Savings Goal: $250/Month at 2% Return \u2013 7.7 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-eb753200": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Goal at 2% Return: $100 Monthly Takes 82 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-160330f0": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500,000 in 24.6 Years: $1,000/Month at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-33f1008e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Savings Goal: $25k Current, $1k Monthly at 4% in 5.6 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-1295feec": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$250k Savings Goal with 5% Return: Reach It in 7.7 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-3b45501b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k in 18.9 Years: Monthly $2k at 1% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-139a5519": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Already Have $25k? Your $10k Goal Is Met \u2013 No Extra Saving Needed",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-89b90b89": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $250k in 27 Years with $500 Monthly at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-78f0cdfa": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10k Savings Exceeds $5k Goal: Already Achieved",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-95c053b4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Reach $500,000 Goal: $250 Monthly at 3% Return in 59 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-7d967c07": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$5,000 Goal Met: $25,000 Savings at 3% Return \u2013 What Now?",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-6e5d2d34": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How Long to Save $250K? $25K Saved, $250/Month at 5%: 31.2 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-10cb89a6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 7 Years: $1k Monthly, $10k Start, 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-59826ccc": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 9.9 Months: $2000/Month at 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-826390c4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "You've Already Surpassed Your $5,000 Savings Goal \u2013 What Now?",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-95fd42c6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50k in 3.3 Years: $1k Monthly at 1% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-3f74157a": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$50k Savings Goal: 3.5 Years with $1k Monthly & 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-dd676bc6": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50,000 in 3.1 Years: $1,000/Month with 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-0e1f6f5e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Already Have $10,000? Your Savings Goal Is Met in 0 Months",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-c2da6962": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $250k in 41.8 Years: $250/month at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-eb255ae8": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k in 14.2 Years: Monthly $2,000 at 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-481deb60": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k with $25k Now & $250/Month at 2%: 71.4-Year Path",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-c495ce1d": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 3.4 Years: Monthly $2k, $10k Start, 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-38db5588": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $10,000 in 1.5 Years: $500 Monthly with 1% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-51f13fcd": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 Savings Goal Met: Next Steps & Calculator Tips",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-9ff1a83a": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 2.4 Years: $10,000 Start, $500/Month, 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-c7ba24f4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 Savings Goal: 5.9 Years with $5k Initial & $250/mo at 4%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-3843b60a": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100,000 in 32.1 Years? $100 Monthly at 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-1faf7874": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How Long to Save $500,000 with $500 Monthly at 5%? 32.9 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-9108838f": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50,000 in 12 Years with $250 Monthly at 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-d174709e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 3.1 Years with $100 Monthly & 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-f5f8c4d9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25,000 Savings Goal: Already Met with $25,000 Current Savings at 1%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-92036eee": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How to Save $25,000 in 4.8 Years: $250/Month with 2% APY",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-74238f2e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 3.2 Years: $100 Monthly at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-b0272f4e": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$100k Savings Goal: $250/Month at 4% Return Takes 21.2 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-03d8bde4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k with $250/Month at 1%: Time & Total Contributions",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-92e9c438": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "How to Save $500k in 22.4 Years with $1,000 Monthly at 5%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-bb8a83bd": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10,000 Goal Already Saved: No Extra Money Needed",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-233ca18c": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k in 3.5 Years: $2k Monthly at 4% Return from $10k",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-a72e0daa": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25k in 58.6 Months: $250/mo at 1% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-92728676": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 4 Months: $1,000 Monthly, 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-49b4001b": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 4 Months: $1,000/mo Savings with 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-f33f8da3": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 11.7 Months: $2,000 Monthly at 5% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-15384530": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 3.2 Years: $100 Monthly at 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-6cc27d76": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k by Saving $500/Month at 3% Return: 13.5 Years",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-2a7ffd17": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $10,000 in 3.9 Years: Monthly Plan with $5k Savings & 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-629ac5db": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$10k Savings Goal in 2.8 Years: $250 Monthly at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-39ddab00": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50k in 1.9 Years: $2,000 Monthly at 5% Return Calculator",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-92024bb9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25k in 10 Months: $5k Saved, $2k Monthly at 3%",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-8ce535cd": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $10k in 1.6 Years: $5k Savings + $250 Monthly at 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-da065cb9": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Savings Goal Already Met: $5,000 Saved with 0 Months to Go",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-a0008c79": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $5,000 in 3.9 Years: $100/Month at 3% Return Calculator",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-f4c682b7": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $100k with $100/Month: 36.5-Year Goal at 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-762dfa37": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $25,000 in 1.6 Years: $1,000 Monthly, 2% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-796fe426": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "$25k Savings vs $10k Goal: Already Exceeded with 4% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-e4e04fc5": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $50,000 in 25.2 Years: Monthly $100 at 3% Return",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
+  },
+  "savings-goal-70e736d4": {
+    "batch": "batch-2026-05-25-537.json",
+    "title": "Save $500k with $100/month at 2%: 111.8 Years to Goal",
+    "calculatorSlug": "savings-goal",
+    "category": "savings"
   }
 }

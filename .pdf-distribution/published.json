@@ -142,5 +142,29 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/credit-card-debt-guide.md"
       }
     }
+  },
+  "home-buying-checklist": {
+    "title": "Home Buying Checklist: From Pre-Approval to Closing",
+    "category": "mortgage",
+    "generatedAt": "2026-05-25T13:41:42.569Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/home-buying-checklist.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/home-buying-checklist.md"
+      }
+    }
+  },
+  "net-worth-tracker-guide": {
+    "title": "Net Worth Tracker: Build Wealth Systematically",
+    "category": "general",
+    "generatedAt": "2026-05-25T15:11:22.580Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/net-worth-tracker-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/net-worth-tracker-guide.md"
+      }
+    }
   }
 }

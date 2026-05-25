@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-05-25T12:56:54.893Z",
+    "runType": "scheduled-cron",
+    "edition": "morning",
+    "emailsFound": 10,
+    "haroDigests": 0,
+    "queriesParsed": 0,
+    "relevant": 0,
+    "sent": 0,
+    "skipped": 0,
+    "failed": 0,
+    "notes": "No new HARO digests today (Monday May 25). Unread emails were 8 delivery-failure bounces + 1 Reddit notification + 1 old HARO (already processed). The May 22 evening edition already fully processed. Marked lingering HARO UID 181 as read."
+  },
+  {
+    "timestamp": "2026-05-25T16:12:18.720Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon",
+    "emailsFound": 10,
+    "haroDigests": 0,
+    "queriesParsed": 0,
+    "relevant": 0,
+    "sent": 0,
+    "skipped": 0,
+    "failed": 0,
+    "notes": "No HARO digests found. Inbox cleared: 40 unread messages (30 delivery-failure bounces + 10 non-HARO) marked as read. Last HARO digest received was May 13 evening edition (12 days ago). HARO email verification may be incomplete."
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "history": [
+    {
+      "date": "2026-05-25",
+      "timestamp": "2026-05-25T23:47:47.730912",
+      "x": {
+        "giant_replies": 33,
+        "threads": 4,
+        "challenges": 2,
+        "self_tweets": 0,
+        "followers": 4,
+        "impressions_est": 1478000
+      },
+      "pinterest": {
+        "total_pins": 90,
+        "monthly_views": "171",
+        "following": 13
+      },
+      "blog": {
+        "total_posts": 2
+      },
+      "gsc": {
+        "clicks_7d": 1,
+        "impressions_7d": 223,
+        "ctr": 0.45,
+        "avg_position": 28.4
+      },
+      "haro": {
+        "total_responses": 3
+      }
+    }
+  ]
+}

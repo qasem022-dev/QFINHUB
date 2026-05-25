@@ -11,6 +11,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { AdsterraBanner } from "@/components/ads/adsterra-banner";
 import { defaultLocale, locales } from "@/lib/i18n";
 import { ALL_LANGUAGES } from "@/lib/i18n/languages";
+import { HreflangTags } from "@/components/seo/hreflang-tags";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,9 +58,6 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(baseUrl),
   alternates: {
-    languages: Object.fromEntries(
-      locales.map((locale) => [locale, `/?lang=${locale}`])
-    ),
     canonical: "/",
   },
   openGraph: {
@@ -218,11 +216,8 @@ export default function RootLayout({
         {/* Verification */}
         <meta name="google-adsense-account" content="ca-pub-1102790706635466" />
         <meta name="p:domain_verify" content="4756ee5e97724d0b2403293fe43f64c3" />
-        {/* Hreflang — top 8 languages */}
-        {["en","es","fr","de","it","pt","hi","zh"].map((locale) => (
-          <link key={locale} rel="alternate" hrefLang={locale} href={`${baseUrl}/?lang=${locale}`} />
-        ))}
-        <link rel="alternate" hrefLang="x-default" href={baseUrl} />
+        {/* Hreflang — dynamic per-page language alternates */}
+        <HreflangTags />
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

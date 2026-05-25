@@ -51,7 +51,7 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f: return json.load(f)
     return {'giant_replies': 0, 'threads': 0, 'challenges': 0, 'followers': 0,
-            'total_impressions_est': 0, 'last_run': None}
+            'self_tweets': 0, 'total_impressions_est': 0, 'last_run': ''}
 
 def save_state(s):
     s['last_run'] = datetime.now().isoformat()
@@ -88,6 +88,22 @@ GIANT_ACCOUNTS = {
     'awealthofcs': {'followers_m': 0.3, 'posts_per_day': 4},
     'BrianFeroldi': {'followers_m': 0.4, 'posts_per_day': 8},
     'TheCompoundNews': {'followers_m': 0.2, 'posts_per_day': 10},
+    # Personal finance educators — high reply engagement
+    'thepennyhoarder': {'followers_m': 0.6, 'posts_per_day': 5},
+    'StackingBenjamins': {'followers_m': 0.1, 'posts_per_day': 3},
+    'Farnoosh': {'followers_m': 0.1, 'posts_per_day': 3},
+    'ErinLowry': {'followers_m': 0.05, 'posts_per_day': 2},
+    'ClarkHoward': {'followers_m': 0.3, 'posts_per_day': 4},
+    'SuzeOrmanShow': {'followers_m': 1.3, 'posts_per_day': 3},
+    # Real estate / mortgage
+    'Redfin': {'followers_m': 0.2, 'posts_per_day': 8},
+    'Zillow': {'followers_m': 0.6, 'posts_per_day': 5},
+    # Crypto/fintech (cross-audience)
+    'CoinDesk': {'followers_m': 3.2, 'posts_per_day': 25},
+    # Economics
+    'StephanieKelton': {'followers_m': 0.2, 'posts_per_day': 4},
+    'Noahpinion': {'followers_m': 0.3, 'posts_per_day': 6},
+    'KrugmanPaul': {'followers_m': 1.5, 'posts_per_day': 3},
 }
 
 # ─── REPLY TEMPLATES (value-first, not spam) ───
@@ -219,6 +235,41 @@ NEWSJACK_REPLIES = [
     "This just dropped. Here's how it affects YOUR wallet",
     "Breaking this down with real numbers",
     "What this actually means for your finances",
+]
+
+# ─── SELF-TWEETS — Native posts about calculators, widgets, and tools ───
+SELF_TWEETS = [
+    # Calculator highlights
+    "📊 I just ran my numbers through our compound interest calculator. $500/month at 25 = $1.2M at 65. Start at 35? Only $566K.\n\nThat 10-year delay costs $634,000. The math doesn't lie.\n\nRun YOUR numbers free → qfinhub.com/calculators/compound-interest",
+
+    "🏠 Most homeowners don't realize: on a $400K mortgage at 6.5%, you pay $512,000 in PURE INTEREST over 30 years.\n\nTotal cost of that $400K house? $912,000.\n\nSee YOUR exact numbers in 30 seconds → qfinhub.com/calculators/mortgage-calculator",
+
+    "💸 The average American pays $1,847/year in invisible fees. Between 401k fees, credit card interest, and expense ratios, it adds up to $92,350 over a career.\n\nAudit YOUR finances with our free calculators → qfinhub.com",
+
+    "📱 Did you know? You can add any of our 125 calculators to your phone's home screen. Works exactly like an app — no download, no signup.\n\n👉 qfinhub.com — tap Share → Add to Home Screen",
+
+    "🔢 The debt snowball vs avalanche debate is settled. Math says avalanche (highest interest first). Psychology says snowball (smallest balance first).\n\nOur free tool shows BOTH side-by-side with YOUR actual debts → qfinhub.com/calculators/debt-payoff",
+
+    "🧮 I calculated how much a $200/month extra mortgage payment saves: $98,000 in interest and 7 YEARS off your loan.\n\n$500/month extra? $184,000 saved + 12 years gone.\n\nFree calculator → qfinhub.com/calculators/mortgage-payoff",
+
+    "📉 Tax season isn't over. The average refund is $3,100 — but that means you gave the IRS an interest-free loan all year.\n\nFix your withholding + calculate your real tax bracket → qfinhub.com/calculators/tax-calculator",
+
+    "💰 Emergency fund math: experts say 3-6 months. But the REAL number depends on your job stability, dependents, and fixed costs.\n\nCalculate YOUR specific emergency fund target → qfinhub.com/calculators/emergency-fund",
+
+    # Widget promotions
+    "🚀 Bloggers & site owners: embed any of our 125 calculators directly on YOUR website. Free, no API key, instant setup.\n\nJust copy-paste one line of HTML. Your readers get interactive calculators, you get engagement.\n\nGrab a widget → qfinhub.com/widgets",
+
+    "⚡ Hot take: every personal finance blog should have a mortgage calculator, compound interest calculator, and retirement calculator embedded.\n\nWe built all 125 for you. Free embeds, no signup, instant load.\n\n→ qfinhub.com/widgets",
+
+    # Tool highlights
+    "🔄 The 50/30/20 budget rule sounds simple. But when you actually run YOUR numbers, the results are surprising.\n\nMost people discover they're spending 40%+ on wants without realizing it.\n\nFree budget planner → qfinhub.com/calculators/budget-planner",
+
+    "📊 Retirement planning is terrifying when you run real numbers. The average 401k balance at 65 is $255K — which generates only $850/month in retirement income.\n\nSee YOUR retirement gap → qfinhub.com/calculators/retirement-planning",
+
+    # Social proof
+    "✅ 125 free financial calculators. 0 signups. 0 ads. Just math.\n\nMortgage • Compound Interest • Retirement • Debt Payoff • Tax • Budget • 401k • Roth IRA • Auto Loan • Student Loan • Net Worth • And 115 more.\n\n→ qfinhub.com",
+
+    "🎯 Why I built QFInHub: every financial calculator online either requires an email, shows ads, or oversimplifies the math.\n\n125 calculators. Instant results. No data collected. No signup ever.\n\nTry any calculator → qfinhub.com",
 ]
 
 # ─── Login ───
@@ -450,7 +501,7 @@ def post_viral_thread(page, state):
     page.evaluate(f"""
         const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
                   document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{esc}';
+        if (el) {{ el.focus(); el.textContent = '{escaped}';
                   el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
     """)
     time.sleep(2)
@@ -484,7 +535,7 @@ def post_viral_thread(page, state):
         page.evaluate(f"""
             const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
                       document.querySelector('div[role="textbox"]');
-            if (el) {{ el.focus(); el.textContent = '{esc}';
+            if (el) {{ el.focus(); el.textContent = '{escaped}';
                       el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
         """)
         time.sleep(2)
@@ -510,11 +561,11 @@ def post_challenge(page, state):
 
     page.goto('https://x.com/compose/post', wait_until='domcontentloaded', timeout=20000)
     time.sleep(4)
-    escaped = challenge['tweet'].replace("'", "\\'").replace("$", "\\$")
+    escaped = challenge['tweet'].replace('\\', '\\\\').replace("'", "\\'").replace("\n", "\\n").replace("$", "\\$")
     page.evaluate(f"""
         const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
                   document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{esc}';
+        if (el) {{ el.focus(); el.textContent = '{escaped}';
                   el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
     """)
     time.sleep(2)
@@ -607,6 +658,36 @@ def engage(page, state):
     print(f'   Engaged with #{tag} content')
 
 
+# ═══════════════════════════════════════════
+#  6. SELF-TWEET: Native posts on our profile
+# ═══════════════════════════════════════════
+def self_tweet(page, state):
+    """Post attractive native tweets about our calculators, widgets, and tools."""
+    print('\n─── SELF-TWEET ───')
+    tweet = random.choice(SELF_TWEETS)
+
+    page.goto('https://x.com/compose/post', wait_until='domcontentloaded', timeout=20000)
+    time.sleep(4)
+    escaped = tweet.replace("'", "\\'").replace("$", "\\$").replace("\n", "\\n")
+    page.evaluate(f"""
+        const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                  document.querySelector('div[role="textbox"]');
+        if (el) {{ el.focus(); el.textContent = '{escaped}';
+                  el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
+    """)
+    time.sleep(2)
+    page.evaluate("""
+        const b = document.querySelector('[data-testid="tweetButton"]') ||
+                 document.querySelector('[data-testid="tweetButtonInline"]');
+        if (b) b.click();
+    """)
+    time.sleep(5)
+
+    state['self_tweets'] = state.get('self_tweets', 0) + 1
+    state['total_impressions_est'] += 2000
+    print(f'   Tweet posted: {tweet[:80]}...')
+
+
 def check_followers(page, state):
     try:
         page.goto('https://x.com/qfinhub', wait_until='domcontentloaded', timeout=15000)
@@ -626,7 +707,7 @@ def check_followers(page, state):
 def main():
     parser = argparse.ArgumentParser(description='X Viral Growth Engine v4')
     parser.add_argument('--mode', default='full',
-                       choices=['giant-reply', 'viral-thread', 'challenge', 'newsjack', 'engage', 'full'])
+                       choices=['giant-reply', 'viral-thread', 'challenge', 'newsjack', 'engage', 'self-tweet', 'full'])
     args = parser.parse_args()
 
     now = datetime.now()
@@ -646,6 +727,7 @@ def main():
 
     state = load_state()
     print(f'  State: {state["giant_replies"]} giant replies, {state["threads"]} threads, '
+          f'{state.get("self_tweets", 0)} self-tweets, '
           f'{state["followers"]} followers')
     print(f'  Est total impressions: {state["total_impressions_est"]:,}')
 
@@ -665,7 +747,7 @@ def main():
         mode = args.mode
 
         if mode in ('giant-reply', 'full'):
-            giant_reply_bot(page, state, max_replies=4 if mode == 'full' else 5)
+            giant_reply_bot(page, state, max_replies=8 if mode == 'full' else 10)
 
         if mode in ('viral-thread', 'full'):
             post_viral_thread(page, state)
@@ -679,6 +761,9 @@ def main():
         if mode in ('engage', 'full'):
             engage(page, state)
 
+        if mode in ('self-tweet', 'full'):
+            self_tweet(page, state)
+
         check_followers(page, state)
 
     except Exception as e:
@@ -690,6 +775,7 @@ def main():
         save_state(state)
         print(f'\nDONE. Giant replies: {state["giant_replies"]} | '
               f'Threads: {state["threads"]} | Challenges: {state["challenges"]} | '
+              f'Self-tweets: {state.get("self_tweets", 0)} | '
               f'Followers: {state["followers"]}')
         print(f'Est total impressions: {state["total_impressions_est"]:,}\n')
 
