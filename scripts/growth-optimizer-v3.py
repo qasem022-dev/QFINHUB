@@ -227,6 +227,12 @@ def fetch_google_trends():
             t["calculator_categories"] = matched
             mapped.append(t)
 
+    # Filter out obvious false positives (e.g., "iran" matching "ira" for retirement)
+    mapped = [m for m in mapped if not (
+        "iran" in m["title"].lower() and "retirement" in m.get("calculator_categories", []) and
+        "retire" not in m["title"].lower() and "401k" not in m["title"].lower()
+    )]
+
     # ALWAYS add curated high-value finance keywords (ensures we never have zero trends)
     curated = [
         {"title": "mortgage rates june 2026", "calculator_categories": ["mortgage"]},
