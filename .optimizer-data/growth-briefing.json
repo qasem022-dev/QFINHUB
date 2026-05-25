@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:56:21.779223",
+  "generated_at": "2026-05-26T01:08:30.209260",
   "gsc": {
     "summary": {
       "clicks": 0,
@@ -249,13 +249,6 @@
   },
   "trends": [
     {
-      "title": "iran at the fifa world cup",
-      "description": "",
-      "calculator_categories": [
-        "retirement"
-      ]
-    },
-    {
       "title": "mortgage rates june 2026",
       "calculator_categories": [
         "mortgage"
@@ -384,32 +377,33 @@
   "action_items": [
     {
       "action": "RECOVERY_MODE",
-      "reason": "Metrics not improving (status=warning) \u2014 DOUBLING ALL EFFORTS",
+      "reason": "Metrics not improving (status=warning) \u2014 DOUBLE ALL EFFORTS",
       "alerts": [
         "\u26a0\ufe0f Impressions dropped by 30 (32 \u2192 2)",
         "\u26a0\ufe0f CTR stagnant at 0.0% \u2014 below 2% target"
-      ]
+      ],
+      "multiplier": "DOUBLE"
     },
     {
       "action": "ctr_boost",
       "reason": "Aggressive CTR optimization \u2014 rewrite ALL low-CTR page metas (12+ pages)",
       "targets": [],
-      "note": "Also rewrite ALL medium-priority pages. Target 12+ rewrites today."
+      "note": "Rewrite every page in low_ctr_targets. Target 12+ rewrites today."
     },
     {
       "action": "scenario_push",
-      "reason": "Generate 35-40 scenario pages from trends and top queries",
+      "reason": "Generate 40 scenario pages from trends and top queries",
       "count": 40
     },
     {
       "action": "scenario_uniqueness_upgrade",
-      "reason": "Upgrade 15+ existing scenario pages with real-life examples, comparison tables, and personalized insights",
+      "reason": "Upgrade 15-20 existing scenario pages with real-life examples, comparison tables, and personalized insights",
       "count": 15,
       "note": "For each: add 'What this means for you', comparison data, and unique takeaway"
     },
     {
       "action": "outreach_accelerate",
-      "reason": "Send 25-30 widget outreach emails for backlink acquisition",
+      "reason": "Send 30 widget outreach emails for backlink acquisition",
       "count": 30
     },
     {
@@ -420,12 +414,6 @@
       "action": "trends_content",
       "reason": "Create targeted scenario pages and blog posts from trending finance topics",
       "trends": [
-        {
-          "title": "iran at the fifa world cup",
-          "categories": [
-            "retirement"
-          ]
-        },
         {
           "title": "mortgage rates june 2026",
           "categories": [
@@ -478,6 +466,12 @@
           "title": "emergency fund how much",
           "categories": [
             "savings"
+          ]
+        },
+        {
+          "title": "auto loan interest rates 2026",
+          "categories": [
+            "loans"
           ]
         }
       ]

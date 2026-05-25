@@ -36,12 +36,12 @@ export function generateGuideSlug(calculatorSlug: string): string {
 
 /** Generate a search-friendly meta title for a guide page */
 export function generateGuideMetaTitle(calcTitle: string): string {
-  return `${calcTitle} — Free Step-by-Step Guide (2026)`;
+  return `Free ${calcTitle} Guide 2026 — Calculate in 30 Seconds (No Signup)`;
 }
 
 /** Generate a search-friendly meta description for a guide page */
 export function generateGuideMetaDescription(calcTitle: string): string {
-  return `Master the ${calcTitle.toLowerCase()}. Free step-by-step instructions, expert tips, and common mistakes to avoid. Get accurate results in 30 seconds — no signup needed.`;
+  return `Master the ${calcTitle.toLowerCase()} in 3 easy steps. Free tool with instant results, expert tips, and common mistakes to avoid. Start calculating now — no email required.`;
 }
 
 /**
@@ -198,8 +198,8 @@ export function getAllHowToGuides(): HowToGuide[] {
 
     return {
       slug: generateGuideSlug(calc.slug),
-      title: `How to Use the ${calc.title} — Free Step-by-Step Guide (2026)`,
-      description: `Master the ${calc.title} on QFINHUB. Free step-by-step instructions, expert tips, and common mistakes to avoid. Calculate your numbers in 30 seconds — no signup.`,
+      title: `Free ${calc.title} Guide 2026 — Calculate in 30 Seconds (No Signup)`,
+      description: `Master the ${calc.title} on QFINHUB. Free step-by-step instructions with instant results, expert tips, and common mistakes to avoid. No signup or email required.`,
       h1: `How to Use the ${calc.title} — Step by Step Guide`,
       calculatorId: calc.slug,
       steps,
