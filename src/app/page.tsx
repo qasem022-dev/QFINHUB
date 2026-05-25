@@ -112,7 +112,7 @@ const quickCalcs = [
 ];
 
 const perks = [
-  { icon: Calculator, text: "124 Live Calculators", color: "text-primary-500" },
+  { icon: Calculator, text: "125 Live Calculators", color: "text-primary-500" },
   { icon: Zap, text: "Instant Results — No Wait", color: "text-amber-500" },
   { icon: BarChart3, text: "Interactive Charts on Every Tool", color: "text-blue-500" },
   { icon: Download, text: "Export as PDF or Image", color: "text-emerald-500" },
@@ -240,7 +240,7 @@ export default function Home() {
             {/* Badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-900/30 dark:text-primary-300">
               <span className="h-2 w-2 rounded-full bg-primary-500" />
-              <strong>124 Free Calculators</strong> — Instant, Accurate, No Sign-Up
+              <strong>125 Free Calculators</strong> — Instant, Accurate, No Sign-Up
             </div>
 
             {/* Headline with calculator emoji feel */}
@@ -260,26 +260,19 @@ export default function Home() {
 
             {/* CTA Buttons — big, bold, action-oriented */}
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link href="/calculators" className="w-full sm:w-auto">
-                <Button
-                  size="lg"
-                  className="min-h-[56px] w-full rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] touch-auto touch-manipulation sm:w-auto"
-                >
+              <Button asChild size="lg" className="min-h-[56px] w-full sm:w-auto rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] touch-manipulation">
+                <Link href="/calculators" prefetch={true}>
                   <Calculator className="mr-2 h-5 w-5" />
-                  Browse All 124 Calculators
+                  Browse All 125 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link href="/calculators?cat=mortgage" className="w-full sm:w-auto">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="min-h-[56px] w-full rounded-xl border-gray-300 bg-white/80 px-8 text-base font-semibold text-gray-700 backdrop-blur-sm hover:bg-gray-50 hover:border-gray-400 dark:border-gray-600 dark:bg-white/5 dark:text-gray-300 dark:hover:bg-white/10 sm:w-auto"
-                >
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="min-h-[56px] w-full sm:w-auto rounded-xl border-gray-300 bg-white/80 px-8 text-base font-semibold text-gray-700 backdrop-blur-sm hover:bg-gray-50 hover:border-gray-400 dark:border-gray-600 dark:bg-white/5 dark:text-gray-300 dark:hover:bg-white/10">
+                <Link href="/calculators?cat=mortgage" prefetch={true}>
                   <HomeIcon className="mr-2 h-5 w-5" />
                   Mortgage Calculators
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
 
             {/* Trust Signals */}
@@ -357,6 +350,7 @@ export default function Home() {
                 <Link
                   key={uc.title}
                   href={uc.link}
+                  prefetch={true}
                   className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-[transform,box-shadow] duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
                 >
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 text-white shadow-sm transition-transform group-hover:scale-110">
@@ -399,6 +393,7 @@ export default function Home() {
                 <Link
                   key={cat.slug}
                   href={`/calculators?cat=${cat.slug}`}
+                  prefetch={true}
                   className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-[transform,box-shadow] duration-200 hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:shadow-lg"
                 >
                   <div className="flex items-start justify-between">
@@ -442,6 +437,7 @@ export default function Home() {
               <Link
                 key={calc.href}
                 href={calc.href}
+                prefetch={true}
                 className="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition-[transform,box-shadow,border-color] duration-200 hover:border-primary-200 hover:shadow-md hover:scale-[1.01] dark:border-zinc-700 dark:bg-surface-dark-elevated dark:hover:border-primary-700 dark:hover:shadow-lg"
               >
                 <div>
@@ -458,15 +454,12 @@ export default function Home() {
           </div>
 
           <div className="mt-8 text-center">
-            <Link href="/calculators">
-              <Button
-                variant="outline"
-                className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600"
-              >
-                View All 124 Calculators
+            <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
+              <Link href="/calculators" prefetch={true}>
+                View All 125 Calculators
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -536,6 +529,7 @@ export default function Home() {
               <Link
                 key={calc.slug}
                 href={`/calculators/${calc.slug}`}
+                prefetch={true}
                 className="group flex flex-col gap-2 p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-gray-50 dark:bg-zinc-900/50 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md hover:bg-white dark:hover:bg-zinc-800/80 transition-all duration-150"
               >
                 <span className="text-2xl">{calc.icon}</span>
@@ -549,11 +543,11 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-8 text-center">
-            <Link href="/calculators">
-              <Button variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
-                View All 124 Calculators <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+            <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
+              <Link href="/calculators" prefetch={true}>
+                View All 125 Calculators <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -565,7 +559,7 @@ export default function Home() {
             <Calculator className="h-8 w-8 text-accent-400" />
           </div>
           <h2 className="mb-4 text-3xl font-bold text-white">
-            Start Using 124 Free Calculators
+            Start Using 125 Free Calculators
           </h2>
           <p className="mb-3 text-lg text-gray-300">
             No sign-up. No credit card. No limits. Just fast, accurate
@@ -583,25 +577,18 @@ export default function Home() {
             </span>
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link href="/calculators">
-              <Button
-                size="lg"
-                className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 active:scale-[0.98] touch-manipulation"
-              >
+            <Button asChild size="lg" className="h-14 min-w-[220px] rounded-xl bg-accent-600 px-8 text-base font-semibold text-white shadow-lg shadow-accent-600/25 hover:bg-accent-700 active:scale-[0.98] touch-manipulation">
+              <Link href="/calculators" prefetch={true}>
                 <Calculator className="mr-2 h-5 w-5" />
                 Find Your Calculator
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-            <Link href="/about">
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-14 min-w-[180px] rounded-xl border-white/20 bg-white/5 px-8 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/30"
-              >
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="h-14 min-w-[180px] rounded-xl border-white/20 bg-white/5 px-8 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/30">
+              <Link href="/about" prefetch={true}>
                 Learn More
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
