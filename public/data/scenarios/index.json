@@ -18834,5 +18834,245 @@
     "title": "$750k Home Loan at 5.5%: Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
     "category": "mortgage"
+  },
+  "mortgage-500k-15yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$500k Home with 20% Down at 5.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-5dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$500k Home at 6% with 5% Down: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-25dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$150k Home at 7%: $1,011 Monthly, $69.5k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-15dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$340k Mortgage at 5.5% for 15 Years: $2,778/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-750k-10dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$675,000 Mortgage at 7%: Monthly Payment & Total Cost (30-Year)",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-15dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$1M Home at 8% with 15% Down: $8,123 Monthly Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-25dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "15-Year $300k Mortgage at 6%: $1,899/mo, $117k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-25dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$150k Home, 7% Rate: $748/mo Payment & $157k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-3dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$600k Home at 7.5%: 15-Year Mortgage Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-15yr-7-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$200k Mortgage at 7.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-15yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$1M Home with 20% Down: $6,750/mo at 6% for 15 Years",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-5dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$400k Home at 6.5%: 15-Year Mortgage Payment of $3,310",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-30yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "1,000,000 Home at 6%: $4,796/mo Payment, $926k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-30yr-6-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$1M Home at 6.5%: $5,057/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-5dp-30yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$475k Mortgage at 6%: $2,848 Monthly Payment Breakdown",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-10dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$300k Home at 8%: 15-Year Mortgage Payments & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-150k-15yr-7-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "15-Year $150k Mortgage at 7.5%: $1,112 Monthly Payment",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-3dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$500k Home at 6.5%: $3,066/mo Payment & $618k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-10dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$250k Mortgage at 6%: $1,898 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15dp-15yr-7-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$350,000 Home, 15% Down, 7% Rate: 15-Year Mortgage Costs",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-30yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$280k Mortgage at 5.5%: $1,590/mo & $292k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-15dp-15yr-7-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$425k Mortgage at 7.5%: $3,940/mo, $284k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-750k-5dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "5.5% Mortgage for $750k Home: $4,046/mo, Total $1.46M",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-10dp-15yr-8-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "8% Mortgage on $250k Home: $2,150/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-30yr-7-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$800k Mortgage at 7%: $5,322 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-10dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "30-Year $900k Loan at 8%: $6,604/mo Payment & $1.48M Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-5dp-15yr-6-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$1M Home with 5% Down at 6.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-1000k-15yr-7-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$1M Home at 7.5%: $7,416/mo Payment & $535k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-15yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$300k Home at 5.5%: $1,961/mo, Total Interest $113k",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-3dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$388k Mortgage at 5.5%: $3,170 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-350k-15yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$350k Home at 6%: 15-Year Mortgage Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-400k-15dp-15yr-6-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$400k Mortgage at 6%: $2,869 Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-30yr-6-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$400,000 Mortgage at 6.5%: $2,528/mo & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-25dp-30yr-7-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "7% Mortgage on $250k Home: $1,247/mo, $262k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-600k-15yr-7-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$480k Mortgage at 7.5%: 15-Year Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-15dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$300k at 8%: $1,871 Monthly Payment, $419k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-10dp-30yr-6-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$250k Mortgage at 6.5%: Monthly Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-250k-25dp-30yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "Mortgage on $250k Home at 5.5%: $1,065/mo Payment & Total Cost",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-500k-25dp-30yr-8-0pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "$500k Mortgage at 8%: $2,752 Monthly Payment, $615k Total Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
+  },
+  "mortgage-300k-5dp-15yr-5-5pct": {
+    "batch": "batch-2026-05-26-40.json",
+    "title": "15-Year $300k Mortgage at 5.5%: $2,329/mo, $134k Interest",
+    "calculatorSlug": "mortgage-calculator",
+    "category": "mortgage"
   }
 }
