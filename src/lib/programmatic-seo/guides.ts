@@ -36,12 +36,12 @@ export function generateGuideSlug(calculatorSlug: string): string {
 
 /** Generate a search-friendly meta title for a guide page */
 export function generateGuideMetaTitle(calcTitle: string): string {
-  return `Free ${calcTitle} Guide 2026 — Calculate in 30 Seconds (No Signup)`;
+  return `${calcTitle}: How to Calculate & Plan in 2026 — Free Guide`;
 }
 
 /** Generate a search-friendly meta description for a guide page */
 export function generateGuideMetaDescription(calcTitle: string): string {
-  return `Master the ${calcTitle.toLowerCase()} in 3 easy steps. Free tool with instant results, expert tips, and common mistakes to avoid. Start calculating now — no email required.`;
+  return `Learn how to calculate your ${calcTitle.toLowerCase()} with our free 2026 guide. Step-by-step instructions, expert tips, and instant calculator. No signup needed — start now.`;
 }
 
 /**

@@ -1432,5 +1432,47 @@
       "tweetId": null,
       "guid": "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/"
     }
+  },
+  {
+    "ts": "2026-05-26T13:01:44.368Z",
+    "type": "news-match",
+    "details": {
+      "title": "UK gilt yields retreat from multi-decade highs as political drama mellows, rate hike expectations ease",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108311823"
+    }
+  },
+  {
+    "ts": "2026-05-26T13:01:58.271Z",
+    "type": "news-published",
+    "details": {
+      "slug": "uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+      "title": "UK Gilt Yields Retreat from Multi-Decade Highs: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108311823"
+    }
+  },
+  {
+    "ts": "2026-05-26T13:02:03.273Z",
+    "type": "news-match",
+    "details": {
+      "title": "Hungary Holds Its Key Interest Rate With June Cut Seen in Play",
+      "category": "fed-rate",
+      "source": "Bloomberg Markets",
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-26/hungary-holds-its-key-interest-rate-with-june-cut-seen-in-play"
+    }
+  },
+  {
+    "ts": "2026-05-26T13:02:17.414Z",
+    "type": "news-published",
+    "details": {
+      "slug": "hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+      "title": "Hungary Holds Key Interest Rate Steady: How June Cut Could Impact Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "https://www.bloomberg.com/news/articles/2026-05-26/hungary-holds-its-key-interest-rate-with-june-cut-seen-in-play"
+    }
   }
 ]

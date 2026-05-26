@@ -64,24 +64,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "QFINHUB",
-    title: "QFINHUB — Free Financial Calculators Online",
+    title: "QFINHUB — 125 Free Financial Calculators 2026",
     description:
-      "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+      "125 free financial calculators for mortgages, loans, retirement, investments, taxes, and personal finance. Get instant results, charts, and amortization schedules. No signup required.",
     url: baseUrl,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "QFINHUB — Free Financial Calculators Online",
+        alt: "QFINHUB — 125 Free Financial Calculators 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QFINHUB — Free Financial Calculators Online",
+    title: "QFINHUB — 125 Free Financial Calculators 2026",
     description:
-      "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+      "125 free financial calculators for mortgages, loans, retirement, investments, taxes, and personal finance. Get instant results, charts, and amortization schedules. No signup required.",
     images: ["/og-image.png"],
   },
   robots: {
