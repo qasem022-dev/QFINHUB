@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T15:59:57.610901",
+  "generated_at": "2026-05-26T01:08:30.209260",
   "gsc": {
     "summary": {
       "clicks": 0,
@@ -249,13 +249,6 @@
   },
   "trends": [
     {
-      "title": "mnts stock",
-      "description": "",
-      "calculator_categories": [
-        "investing"
-      ]
-    },
-    {
       "title": "mortgage rates june 2026",
       "calculator_categories": [
         "mortgage"
@@ -422,12 +415,6 @@
       "reason": "Create targeted scenario pages and blog posts from trending finance topics",
       "trends": [
         {
-          "title": "mnts stock",
-          "categories": [
-            "investing"
-          ]
-        },
-        {
           "title": "mortgage rates june 2026",
           "categories": [
             "mortgage"
@@ -479,6 +466,12 @@
           "title": "emergency fund how much",
           "categories": [
             "savings"
+          ]
+        },
+        {
+          "title": "auto loan interest rates 2026",
+          "categories": [
+            "loans"
           ]
         }
       ]

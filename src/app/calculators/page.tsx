@@ -15,13 +15,13 @@ interface CalculatorsPageProps {
 }
 
 export const metadata: Metadata = {
-  title: "125 Free Financial Calculators in 2026 — Instant Results, No Signup",
+  title: "All 124 Financial Calculators",
   description:
-    "Free access to 125 financial calculators covering mortgages, loans, retirement, investments, taxes, and more. Get instant results with full amortization schedules and charts. No email or signup required.",
+    "Browse all 124 free financial calculators across 8 categories — loans, mortgages, investments, retirement, taxes, business, personal finance, and basic calculators. Fast, accurate, and 100% free.",
   openGraph: {
-    title: "125 Free Financial Calculators | QFINHUB",
+    title: "All 124 Free Financial Calculators | QFINHUB",
     description:
-      "Access 125 professional financial calculators across 8 categories. Instant results, no signup.",
+      "Browse and use 124 professional financial calculators across 8 categories. No sign-up required.",
     images: ["/og-image.png"],
     url: "https://www.qfinhub.com/calculators",
   },
