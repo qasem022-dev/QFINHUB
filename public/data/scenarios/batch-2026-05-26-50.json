@@ -2957,7 +2957,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-25T22:11:29.112735+00:00"
+    "generatedAt": "2026-05-25T22:11:29.112735+00:00",
+    "whatThisMeans": "For a $190k Mortgage, your monthly payment of $1,328.51 adds up to $478,263 over the full term \u2014 with $288,263 going to interest alone. That means only 40% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461460",
+    "upgraded": true
   },
   {
     "slug": "mortgage-300k-30yr-7-5pct",

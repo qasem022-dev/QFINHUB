@@ -1621,7 +1621,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:39:00.207555+00:00"
+    "generatedAt": "2026-05-20T12:39:00.207555+00:00",
+    "whatThisMeans": "For a $1M Home, your monthly payment of $6,041.95 adds up to $1,450,068 over the full term \u2014 with $700,068 going to interest alone. That means only 52% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "That's like paying for your house twice \u2014 once for the bank, once for yourself.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461520",
+    "upgraded": true
   },
   {
     "slug": "mortgage-100k-15dp-30yr-8-5pct",
@@ -1829,7 +1838,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:39:03.179493+00:00"
+    "generatedAt": "2026-05-20T12:39:03.179493+00:00",
+    "whatThisMeans": "For a 20-Year $350K Mortgage, your monthly payment of $2,507.51 adds up to $601,802 over the full term \u2014 with $251,802 going to interest alone. That means only 58% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "A 1% rate drop would save you $2,508/month. It's worth shopping lenders every 2 years.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461431",
+    "upgraded": true
   },
   {
     "slug": "mortgage-350k-5dp-40yr-8-5pct",
@@ -2040,7 +2058,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:39:17.656699+00:00"
+    "generatedAt": "2026-05-20T12:39:17.656699+00:00",
+    "whatThisMeans": "For a 15-Year Mortgage on $450K, your monthly payment of $3,870.39 adds up to $696,670 over the full term \u2014 with $291,670 going to interest alone. That means only 58% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "At this rate, your total interest exceeds the home's original price \u2014 consider a 15-year term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461470",
+    "upgraded": true
   },
   {
     "slug": "mortgage-300k-30dp-40yr-6-0pct",
@@ -3964,7 +3991,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:40:42.950985+00:00"
+    "generatedAt": "2026-05-20T12:40:42.950985+00:00",
+    "whatThisMeans": "For a $1M Mortgage, your monthly payment of $10,787.06 adds up to $1,294,447 over the full term \u2014 with $344,447 going to interest alone. That means only 73% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "At this rate, your total interest exceeds the home's original price \u2014 consider a 15-year term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461486",
+    "upgraded": true
   },
   {
     "slug": "mortgage-300k-20yr-7-5pct",
@@ -5212,7 +5248,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:41:32.119531+00:00"
+    "generatedAt": "2026-05-20T12:41:32.119531+00:00",
+    "whatThisMeans": "For a this scenario, your monthly payment of $2,095.70 adds up to $754,453 over the full term \u2014 with $439,453 going to interest alone. That means only 42% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461439",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-100000-3pct-40yr-m100",
@@ -12887,7 +12932,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. This retirement calculator provides projections based on assumptions you provide. Actual investment returns, inflation, taxes, and personal circumstances vary. Consult a qualified financial advisor for personalized retirement planning.",
-    "generatedAt": "2026-05-20T12:47:08.759749+00:00"
+    "generatedAt": "2026-05-20T12:47:08.759749+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Healthcare in retirement costs $315,000 on average. Budget it separately.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461400",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-9b71c3ca",
@@ -19817,7 +19871,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:52:20.685145+00:00"
+    "generatedAt": "2026-05-20T12:52:20.685145+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Healthcare in retirement costs $315,000 on average. Budget it separately.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461339",
+    "upgraded": true
   },
   {
     "slug": "401k-200000-10pct-10yr",
@@ -21137,7 +21200,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:53:18.397094+00:00"
+    "generatedAt": "2026-05-20T12:53:18.397094+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Healthcare in retirement costs $315,000 on average. Budget it separately.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461368",
+    "upgraded": true
   },
   {
     "slug": "401k-30000-6pct-30yr",

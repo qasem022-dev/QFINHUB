@@ -16,6 +16,7 @@ export interface ScenarioLink {
   title: string;
   calculatorSlug: string;
   category: string;
+  upgraded?: boolean;
 }
 
 export function getScenariosForCalculator(calculatorSlug: string, maxResults = 8): ScenarioLink[] {
@@ -30,11 +31,17 @@ export function getScenariosForCalculator(calculatorSlug: string, maxResults = 8
         title: entry.title,
         calculatorSlug: entry.calculatorSlug,
         category: entry.category,
+        upgraded: (entry as any).upgraded === true,
       });
-      if (matches.length >= maxResults) break;
     }
   }
-  return matches;
+  // Sort: upgraded scenarios FIRST, then alphabetical
+  matches.sort((a, b) => {
+    if (a.upgraded && !b.upgraded) return -1;
+    if (!a.upgraded && b.upgraded) return 1;
+    return a.title.localeCompare(b.title);
+  });
+  return matches.slice(0, maxResults);
 }
 
 export function getAllScenarioLinks(): ScenarioLink[] {

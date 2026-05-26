@@ -3897,7 +3897,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:57:15.207647+00:00"
+    "generatedAt": "2026-05-21T17:57:15.207647+00:00",
+    "whatThisMeans": "For a this scenario, your monthly payment of $5,160.52 adds up to $928,894 over the full term \u2014 with $388,894 going to interest alone. That means only 58% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "That's like paying for your house twice \u2014 once for the bank, once for yourself.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461447",
+    "upgraded": true
   },
   {
     "slug": "mortgage-600k-15yr-5-5pct",
@@ -4313,7 +4322,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:57:29.760433+00:00"
+    "generatedAt": "2026-05-21T17:57:29.760433+00:00",
+    "whatThisMeans": "For a $150K Home, your monthly payment of $770.45 adds up to $277,363 over the full term \u2014 with $172,363 going to interest alone. That means only 38% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "At this rate, your total interest exceeds the home's original price \u2014 consider a 15-year term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461331",
+    "upgraded": true
   },
   {
     "slug": "mortgage-600k-15dp-40yr-8-0pct",
@@ -8161,7 +8179,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:00:17.272044+00:00"
+    "generatedAt": "2026-05-21T18:00:17.272044+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461516",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-10000-5pct-10yr-m250",
@@ -8993,7 +9020,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:00:52.770545+00:00"
+    "generatedAt": "2026-05-21T18:00:52.770545+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461442",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-1000-10pct-30yr-m500",
@@ -9513,7 +9549,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:01:17.541766+00:00"
+    "generatedAt": "2026-05-21T18:01:17.541766+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461473",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-100000-6pct-40yr",
@@ -10189,7 +10234,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:01:49.432669+00:00"
+    "generatedAt": "2026-05-21T18:01:49.432669+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461425",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-250000-3pct-30yr-m500",
@@ -10293,7 +10347,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:01:49.820371+00:00"
+    "generatedAt": "2026-05-21T18:01:49.820371+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Fees matter: a 1% fee on this portfolio costs $X in lost growth over the term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461415",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-500000-5pct-40yr-m250",
@@ -18922,7 +18985,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:08:09.134892+00:00"
+    "generatedAt": "2026-05-21T18:08:09.134892+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Delaying retirement by just 2 years can add $X to your nest egg through extra contributions + growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461422",
+    "upgraded": true
   },
   {
     "slug": "401k-200000-5pct-20yr",
@@ -19912,7 +19984,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:08:49.007553+00:00"
+    "generatedAt": "2026-05-21T18:08:49.007553+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461371",
+    "upgraded": true
   },
   {
     "slug": "401k-200000-5pct-10yr",

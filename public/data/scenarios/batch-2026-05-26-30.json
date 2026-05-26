@@ -1699,7 +1699,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-25T21:44:57.094490+00:00"
+    "generatedAt": "2026-05-25T21:44:57.094490+00:00",
+    "whatThisMeans": "For a this scenario, your monthly payment of $3,792.22 adds up to $1,365,201 over the full term \u2014 with $795,201 going to interest alone. That means only 42% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461412",
+    "upgraded": true
   },
   {
     "slug": "mortgage-1000k-5dp-15yr-7-0pct",

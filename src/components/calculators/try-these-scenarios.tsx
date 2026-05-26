@@ -4,6 +4,7 @@ import { ArrowRight, Calculator } from "lucide-react";
 interface ScenarioLink {
   slug: string;
   title: string;
+  upgraded?: boolean;
 }
 
 interface TryTheseScenariosProps {
@@ -42,7 +43,7 @@ export function TryTheseScenarios({
                 {scenario.title}
               </h3>
               <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-                Pre-calculated example
+                {scenario.upgraded ? "✨ Upgraded example" : "Pre-calculated example"}
               </p>
             </div>
             <ArrowRight className="h-4 w-4 flex-shrink-0 text-zinc-300 dark:text-zinc-600 group-hover:text-emerald-500 transition-colors" />

@@ -309,7 +309,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Actual loan costs may vary based on lender fees, taxes, insurance, PMI, and changing interest rates. Consult a licensed mortgage professional before making financial decisions.",
-    "generatedAt": "2026-05-22T22:54:33.112447+00:00"
+    "generatedAt": "2026-05-22T22:54:33.112447+00:00",
+    "whatThisMeans": "For a $200k Home, your monthly payment of $2,405.32 adds up to $288,639 over the full term \u2014 with $94,639 going to interest alone. That means only 67% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "A 1% rate drop would save you $2,405/month. It's worth shopping lenders every 2 years.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461397",
+    "upgraded": true
   },
   {
     "slug": "mortgage-300k-15dp-20yr-6-5pct",
@@ -985,7 +994,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:54:55.503130+00:00"
+    "generatedAt": "2026-05-22T22:54:55.503130+00:00",
+    "whatThisMeans": "For a 20-Year Mortgage on $150k Home, your monthly payment of $894.69 adds up to $214,725 over the full term \u2014 with $94,725 going to interest alone. That means only 56% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "That's like paying for your house twice \u2014 once for the bank, once for yourself.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461513",
+    "upgraded": true
   },
   {
     "slug": "mortgage-1000k-10dp-20yr-6-0pct",
@@ -3182,7 +3200,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:56:25.198067+00:00"
+    "generatedAt": "2026-05-22T22:56:25.198067+00:00",
+    "whatThisMeans": "For a 30% Down on $350k Home: $1,469 Monthly, your monthly payment of $1,468.90 adds up to $528,804 over the full term \u2014 with $283,804 going to interest alone. That means only 46% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461380",
+    "upgraded": true
   },
   {
     "slug": "mortgage-1000k-15yr-6-5pct",
@@ -3754,7 +3781,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Actual loan terms, rates, and costs vary by lender and borrower qualifications. The numbers shown are based on the calculator parameters provided and do not include taxes, insurance, PMI, or other fees.",
-    "generatedAt": "2026-05-22T22:56:44.727524+00:00"
+    "generatedAt": "2026-05-22T22:56:44.727524+00:00",
+    "whatThisMeans": "For a 40-Year Mortgage on $150k Home, your monthly payment of $1,044.66 adds up to $501,436 over the full term \u2014 with $358,936 going to interest alone. That means only 28% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461493",
+    "upgraded": true
   },
   {
     "slug": "mortgage-200k-20yr-6-0pct",
@@ -4534,7 +4570,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:57:12.938607+00:00"
+    "generatedAt": "2026-05-22T22:57:12.938607+00:00",
+    "whatThisMeans": "For a 40-Year Mortgage: $300K, your monthly payment of $1,398.22 adds up to $671,146 over the full term \u2014 with $446,146 going to interest alone. That means only 34% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461479",
+    "upgraded": true
   },
   {
     "slug": "mortgage-100k-25dp-40yr-6-5pct",
@@ -8330,7 +8375,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:59:51.357025+00:00"
+    "generatedAt": "2026-05-22T22:59:51.357025+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461275",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-1000-9pct-10yr-m2000",
@@ -16694,7 +16748,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:06:06.924757+00:00"
+    "generatedAt": "2026-05-22T23:06:06.924757+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "Every $100 extra toward your highest-interest debt saves $14,478 in total interest.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-26T00:12:37.461363",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-1a63f453",
