@@ -40,14 +40,14 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
   const content = calculatorContent[slug];
 
   return {
-    title: `${calculator.title}`,
-    description: content?.explanation?.slice(0, 160) || calculator.description,
+    title: `${calculator.title} (2026) — Free Online Tool`,
+    description: (content?.explanation?.slice(0, 160) || calculator.description) + " Get free instant results, no signup required.",
     alternates: {
       canonical: `https://www.qfinhub.com/calculators/${slug}`,
     },
     openGraph: {
-      title: `${calculator.title} | QFINHUB`,
-      description: content?.explanation?.slice(0, 160) || calculator.description,
+      title: `${calculator.title} (2026) | Free Financial Calculator`,
+      description: (content?.explanation?.slice(0, 150) || calculator.description) + " Try it free — no signup, instant results.",
     },
   };
 }

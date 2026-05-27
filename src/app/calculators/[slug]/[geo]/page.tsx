@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: GeoPageProps) {
   if (!city || !calcConfig) return { title: "Not Found" };
 
   const title = `${calcConfig.label} for ${city.name}, ${city.stateAbbr} (2026) — Free & Instant`;
-  const description = `Free ${calcConfig.label.toLowerCase()} for ${city.name}, ${city.stateAbbr}. Calculate payments based on ${city.name}'s median home price of $${(city.medianHomePrice / 1000).toFixed(0)}K. Get results in 30 seconds — no signup, no email required.`;
+  const description = `Free ${calcConfig.label.toLowerCase()} for ${city.name}, ${city.stateAbbr} (2026). Calculate payments based on ${city.name}'s median home price of $${(city.medianHomePrice / 1000).toFixed(0)}K. Get instant results in 30 seconds — no signup, no email required, 100% free.`;
 
   return {
     title,

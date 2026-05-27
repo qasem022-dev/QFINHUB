@@ -35,9 +35,9 @@ const footerGroups = [
 ];
 
 const socialLinks = [
-  { labelKey: "footer.social.github", href: "https://github.com" },
-  { labelKey: "footer.social.twitter", href: "https://twitter.com" },
-  { labelKey: "footer.social.linkedin", href: "https://linkedin.com" },
+  { labelKey: "footer.social.github", href: "https://github.com/qfinhub" },
+  { labelKey: "footer.social.twitter", href: "https://x.com/qfinhub" },
+  { labelKey: "footer.social.linkedin", href: "https://www.linkedin.com/company/qfinhub" },
 ];
 
 export function Footer() {
