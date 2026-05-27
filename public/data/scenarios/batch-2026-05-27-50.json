@@ -367,7 +367,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-27T15:39:11.402559+00:00"
+    "generatedAt": "2026-05-27T15:39:11.402559+00:00",
+    "whatThisMeans": "For a $262,500 Mortgage, your monthly payment of $2,215.12 adds up to $398,722 over the full term \u2014 with $136,222 going to interest alone. That means only 66% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "A 1% rate drop would save you $2,215/month. It's worth shopping lenders every 2 years.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754126",
+    "upgraded": true
   },
   {
     "slug": "mortgage-600k-10dp-30yr-7-5pct",
@@ -2517,7 +2526,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-27T15:43:09.475340+00:00"
+    "generatedAt": "2026-05-27T15:43:09.475340+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754717",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-50000-5pct-20yr-m500",
@@ -2739,7 +2757,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-27T15:43:11.556363+00:00"
+    "generatedAt": "2026-05-27T15:43:11.556363+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753363",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-250000-7pct-5yr-m500",

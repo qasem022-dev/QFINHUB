@@ -1141,7 +1141,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:55:29.648375+00:00"
+    "generatedAt": "2026-05-21T17:55:29.648375+00:00",
+    "whatThisMeans": "For a 20-Year Mortgage on $600K Home: $4,186.61/mo, your monthly payment of $4,186.61 adds up to $1,004,787 over the full term \u2014 with $464,787 going to interest alone. That means only 54% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753686",
+    "upgraded": true
   },
   {
     "slug": "mortgage-600k-15dp-15yr-7-0pct",
@@ -1505,7 +1514,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:55:42.065812+00:00"
+    "generatedAt": "2026-05-21T17:55:42.065812+00:00",
+    "whatThisMeans": "For a $450K Home with 15% Down: $2,517 Monthly, your monthly payment of $2,517.12 adds up to $1,208,218 over the full term \u2014 with $825,718 going to interest alone. That means only 32% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "That's like paying for your house twice \u2014 once for the bank, once for yourself.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754185",
+    "upgraded": true
   },
   {
     "slug": "mortgage-600k-5dp-30yr-7-5pct",
@@ -3230,7 +3248,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Taxes, insurance, and other costs are not included. Actual rates and terms vary by lender and credit profile.",
-    "generatedAt": "2026-05-21T17:56:49.199210+00:00"
+    "generatedAt": "2026-05-21T17:56:49.199210+00:00",
+    "whatThisMeans": "For a 10-Year Mortgage on $750k Home: $5,961/mo, your monthly payment of $5,961.27 adds up to $715,352 over the full term \u2014 with $190,352 going to interest alone. That means only 73% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754885",
+    "upgraded": true
   },
   {
     "slug": "mortgage-200k-10dp-10yr-7-5pct",
@@ -4227,7 +4254,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Actual loan terms, rates, and payments vary based on lender, credit score, property location, and market conditions. Consult a licensed mortgage professional for a personalized quote.",
-    "generatedAt": "2026-05-21T17:57:25.602669+00:00"
+    "generatedAt": "2026-05-21T17:57:25.602669+00:00",
+    "whatThisMeans": "For a this scenario, your monthly payment of $6,097.75 adds up to $1,097,595 over the full term \u2014 with $397,595 going to interest alone. That means only 64% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753869",
+    "upgraded": true
   },
   {
     "slug": "mortgage-100k-15yr-7-0pct",
@@ -4444,7 +4480,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Actual mortgage terms, rates, and costs vary by lender, credit score, location, and market conditions. Always consult a licensed mortgage professional before making a decision.",
-    "generatedAt": "2026-05-21T17:57:34.505971+00:00"
+    "generatedAt": "2026-05-21T17:57:34.505971+00:00",
+    "whatThisMeans": "For a 10-Year Mortgage on $350K, your monthly payment of $3,471.60 adds up to $416,592 over the full term \u2014 with $136,592 going to interest alone. That means only 67% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "That's like paying for your house twice \u2014 once for the bank, once for yourself.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753566",
+    "upgraded": true
   },
   {
     "slug": "mortgage-100k-10dp-40yr-8-5pct",
@@ -5484,7 +5529,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:58:23.602458+00:00"
+    "generatedAt": "2026-05-21T17:58:23.602458+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754961",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-5000-3pct-25yr-m100",
@@ -5796,7 +5850,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:58:38.407102+00:00"
+    "generatedAt": "2026-05-21T17:58:38.407102+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Fees matter: a 1% fee on this portfolio costs $X in lost growth over the term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754226",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-500000-9pct-40yr-m100",
@@ -6004,7 +6067,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:58:43.998827+00:00"
+    "generatedAt": "2026-05-21T17:58:43.998827+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754543",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-10000-7pct-5yr",
@@ -6264,7 +6336,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:59:01.817417+00:00"
+    "generatedAt": "2026-05-21T17:59:01.817417+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Time in the market beats timing the market \u2014 every year delayed costs you compound growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753340",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-25000-9pct-15yr-m1000",
@@ -7365,7 +7446,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Results assume a constant 7% annual return with monthly compounding. Actual investment returns vary, and past performance does not guarantee future results. Consult a qualified financial advisor for personalized guidance.",
-    "generatedAt": "2026-05-21T17:59:42.374940+00:00"
+    "generatedAt": "2026-05-21T17:59:42.374940+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Time in the market beats timing the market \u2014 every year delayed costs you compound growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754399",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-250000-8pct-25yr-m100",
@@ -8310,7 +8400,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:00:23.322705+00:00"
+    "generatedAt": "2026-05-21T18:00:23.322705+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753582",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-250000-5pct-5yr-m500",
@@ -8518,7 +8617,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:00:31.994772+00:00"
+    "generatedAt": "2026-05-21T18:00:31.994772+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754475",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-25000-9pct-40yr-m100",
@@ -11633,7 +11741,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:03:03.028726+00:00"
+    "generatedAt": "2026-05-21T18:03:03.028726+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Healthcare in retirement costs $315,000 on average. Budget it separately.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754048",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-cce0beaf",
@@ -12348,7 +12465,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:03:30.918813+00:00"
+    "generatedAt": "2026-05-21T18:03:30.918813+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754668",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-467cbcaf",
@@ -12788,7 +12914,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:03:50.294894+00:00"
+    "generatedAt": "2026-05-21T18:03:50.294894+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Delaying retirement by just 2 years can add $X to your nest egg through extra contributions + growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754603",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-01e8e56d",
@@ -12953,7 +13088,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:03:58.250769+00:00"
+    "generatedAt": "2026-05-21T18:03:58.250769+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754242",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-486d2257",
@@ -13778,7 +13922,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:04:31.659342+00:00"
+    "generatedAt": "2026-05-21T18:04:31.659342+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754168",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-e6e528b0",
@@ -15098,7 +15251,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:05:27.953720+00:00"
+    "generatedAt": "2026-05-21T18:05:27.953720+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753828",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-016fe08f",
@@ -16033,7 +16195,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:06:20.746652+00:00"
+    "generatedAt": "2026-05-21T18:06:20.746652+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753535",
+    "upgraded": true
   },
   {
     "slug": "401k-200000-3pct-30yr",
@@ -16482,7 +16653,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:06:37.302554+00:00"
+    "generatedAt": "2026-05-21T18:06:37.302554+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754684",
+    "upgraded": true
   },
   {
     "slug": "401k-150000-20pct-20yr",
@@ -18251,7 +18431,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:07:43.734828+00:00"
+    "generatedAt": "2026-05-21T18:07:43.734828+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753578",
+    "upgraded": true
   },
   {
     "slug": "401k-50000-10pct-30yr",
@@ -20359,7 +20548,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:09:05.509982+00:00"
+    "generatedAt": "2026-05-21T18:09:05.509982+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754546",
+    "upgraded": true
   },
   {
     "slug": "401k-200000-10pct-30yr",

@@ -40,7 +40,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "$250,000 Home with 20% Down at 6%: 20-Year Mortgage Guide",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-200k-5dp-30yr-5-5pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -94,7 +95,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "15-Year Mortgage on $300k: $90k Down, 5.5% Rate",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-600k-15dp-40yr-6-0pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -112,13 +114,15 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "20-Year $1M Mortgage at 6.5%: $5,219/mo & $552,563 Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-30yr-7-0pct": {
     "batch": "batch-2026-05-20-500.json",
     "title": "750k Mortgage 7% Rate: $3,992 Monthly with 20% Down",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-25dp-30yr-9-0pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -271,7 +275,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Mortgage on $300K Home: 30% Down, 6% Rate, 40-Year Term",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-5dp-40yr-5-5pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -307,7 +312,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "$450,000 Home with 10% Down: 20-Year Mortgage at 9%",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-1000k-20yr-7-5pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -386,7 +392,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "9% Rate Mortgage: $150k Home, 30% Down, 15-Year Term",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-500k-5dp-30yr-7-5pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -525,7 +532,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "9% Mortgage on $100K Home: $684 Monthly Payment & Total Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-450k-25dp-15yr-6-5pct": {
     "batch": "batch-2026-05-20-500.json",
@@ -713,7 +721,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Compound Interest: $250k Principal, $500/mo, 10%, 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-100000-10pct-5yr-m250": {
     "batch": "batch-2026-05-20-500.json",
@@ -731,7 +740,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Compound Interest Calculator: $500K + $250/mo at 10% for 30 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-3pct-30yr-m2000": {
     "batch": "batch-2026-05-20-500.json",
@@ -773,7 +783,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Compound Interest on $25k + $2k/mo at 5%: $168k in 5 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-500000-6pct-5yr": {
     "batch": "batch-2026-05-20-500.json",
@@ -815,13 +826,15 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "How $50,000 + $500/month at 8% Grows to $202,455 in 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-7pct-40yr-m1000": {
     "batch": "batch-2026-05-20-500.json",
     "title": "Compound Interest on $250K at 7%: $6.7M After 40 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-5000-8pct-5yr-m2000": {
     "batch": "batch-2026-05-20-500.json",
@@ -917,7 +930,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "$140,889 After 5 Years: $1000 + $2000 Monthly at 6% Compounded",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-50000-6pct-10yr-m100": {
     "batch": "batch-2026-05-20-500.json",
@@ -929,7 +943,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Compound Interest Calculator: $1K to $2M in 30 Years at 6%",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-7pct-25yr-m2000": {
     "batch": "batch-2026-05-20-500.json",
@@ -1285,7 +1300,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Retire at 60: $50k Savings + $5k/Month = $5.7M",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-c137f866": {
     "batch": "batch-2026-05-20-500.json",
@@ -2085,7 +2101,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "20% 401(k) Contribution on $100k Salary: $942,896 After 20 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-75000-20pct-30yr": {
     "batch": "batch-2026-05-20-500.json",
@@ -2103,7 +2120,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "401k Projection: $45,000 Saved, $4,500 Free Money in 10 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-50000-5pct-20yr": {
     "batch": "batch-2026-05-20-500.json",
@@ -2121,7 +2139,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Maximize Your 401k: $1.42M with 10% Contribution & 6% Return",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-200000-20pct-30yr": {
     "batch": "batch-2026-05-20-500.json",
@@ -2182,7 +2201,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "401k Calculator: $150k Salary, 3% Contribution, $90k Free Money",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-100000-15pct-30yr": {
     "batch": "batch-2026-05-20-500.json",
@@ -2866,7 +2886,8 @@
     "batch": "batch-2026-05-20-500.json",
     "title": "Debt Payoff Calculator: $15,000 at 15% Interest \u2013 18.6 Years on $200/Month",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-4560db09": {
     "batch": "batch-2026-05-20-500.json",
@@ -3016,7 +3037,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "20-Year Mortgage on $600K Home: $4,186.61/mo at 7%",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-600k-15dp-15yr-7-0pct": {
     "batch": "batch-2026-05-21-500.json",
@@ -3058,7 +3080,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "$450K Home with 15% Down: $2,517 Monthly at 7.5% for 40 Years",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-600k-5dp-30yr-7-5pct": {
     "batch": "batch-2026-05-21-500.json",
@@ -3257,7 +3280,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "10-Year Mortgage on $750k Home: $5,961/mo at 6.5% Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-200k-10dp-10yr-7-5pct": {
     "batch": "batch-2026-05-21-500.json",
@@ -3372,7 +3396,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "$1M Home, 30% Down, 6.5% Rate, 15-Year Mortgage: $6,098/mo",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-100k-15yr-7-0pct": {
     "batch": "batch-2026-05-21-500.json",
@@ -3397,7 +3422,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "10-Year Mortgage on $350K at 8.5%: $3,472 Monthly Payment",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-100k-10dp-40yr-8-5pct": {
     "batch": "batch-2026-05-21-500.json",
@@ -3517,7 +3543,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "How $500,000 Grows to $1.42M in 15 Years at 7% Compound Interest",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-5000-3pct-25yr-m100": {
     "batch": "batch-2026-05-21-500.json",
@@ -3553,7 +3580,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Compound Interest: $10,000 to $157,362 in 5 Years at 7%",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-500000-9pct-40yr-m100": {
     "batch": "batch-2026-05-21-500.json",
@@ -3577,7 +3605,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "$250K at 4% for 20 Years: $739K Future Value with $500 Monthly",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-10000-7pct-5yr": {
     "batch": "batch-2026-05-21-500.json",
@@ -3607,7 +3636,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "25k Principal, $1k Monthly: 3% Interest over 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-9pct-15yr-m1000": {
     "batch": "batch-2026-05-21-500.json",
@@ -3734,7 +3764,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Compound Interest Calculator: $50K + $1K/Month at 7% = $273,568 After 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-8pct-25yr-m100": {
     "batch": "batch-2026-05-21-500.json",
@@ -3843,7 +3874,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "From $10,000 to $37,405: 7% Compound Interest Over 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-5pct-5yr-m500": {
     "batch": "batch-2026-05-21-500.json",
@@ -3867,7 +3899,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Compound Interest: $10,000 + $100 Monthly at 6% for 15 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-9pct-40yr-m100": {
     "batch": "batch-2026-05-21-500.json",
@@ -4219,7 +4252,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Retirement Scenario: $10k Savings, $500/Month - Only $531k by 65?",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-cce0beaf": {
     "batch": "batch-2026-05-21-500.json",
@@ -4297,7 +4331,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Retire at 60: $119k Income Gap with $500k Savings and $2k Monthly",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-467cbcaf": {
     "batch": "batch-2026-05-21-500.json",
@@ -4345,7 +4380,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Retirement Calculator: Age 45, $50k Savings, $500/mo \u2014 $288k by 65",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-01e8e56d": {
     "batch": "batch-2026-05-21-500.json",
@@ -4363,7 +4399,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Retirement Calculator: $100K Savings at 40 \u2013 $70,700 Income Gap at 65",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-486d2257": {
     "batch": "batch-2026-05-21-500.json",
@@ -4453,7 +4490,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Retirement at 62: $1.26M Savings, $50.6k Annual Income Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-e6e528b0": {
     "batch": "batch-2026-05-21-500.json",
@@ -4597,7 +4635,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "Retirement at 62 with $100/month? See your $37,008 savings gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-016fe08f": {
     "batch": "batch-2026-05-21-500.json",
@@ -4699,7 +4738,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "401k Growth: $7,500/yr Contribution to $113,986 in 10 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-200000-3pct-30yr": {
     "batch": "batch-2026-05-21-500.json",
@@ -4748,7 +4788,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "401k Calculator: $30k Salary, 15% Contribution, 8% Return \u2013 $247k in 20 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-150000-20pct-20yr": {
     "batch": "batch-2026-05-21-500.json",
@@ -4779,7 +4820,8 @@
     "batch": "batch-2026-05-21-500.json",
     "title": "401k Calculator: $200k Salary, 5% Contribution, $188k in 10 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-75000-6pct-30yr": {
     "batch": "batch-2026-05-21-500.json",
@@ -5555,7 +5597,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "$200K Home Loan at 8.5%: $1,388/Month for 20 Years",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-100k-5dp-40yr-7-0pct": {
     "batch": "batch-2026-05-22-679.json",
@@ -5741,7 +5784,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "15-Year Mortgage at 8% for $450,000 Home: $4,171 Monthly Payment",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-200k-15dp-10yr-5-5pct": {
     "batch": "batch-2026-05-22-679.json",
@@ -5873,19 +5917,22 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "$600,000 Mortgage at 8%: 40-Year Term Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-20yr-7-0pct": {
     "batch": "batch-2026-05-22-679.json",
     "title": "$750k Home at 7%: 20-Year Mortgage Costs $4,652/Month",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-150k-25dp-20yr-8-5pct": {
     "batch": "batch-2026-05-22-679.json",
     "title": "$150,000 Mortgage at 8.5%: 20-Year Payment Breakdown",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-10dp-30yr-5-5pct": {
     "batch": "batch-2026-05-22-679.json",
@@ -5927,7 +5974,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "9% Mortgage: $340K Loan, 20-Yr Term - $3,059/mo",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-250k-10dp-40yr-5-5pct": {
     "batch": "batch-2026-05-22-679.json",
@@ -6005,7 +6053,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Mortgage Calculator: $100,000 Home with 5% Down at 5% for 20 Years",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-15yr-6-5pct": {
     "batch": "batch-2026-05-22-679.json",
@@ -6053,7 +6102,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "10-Year Mortgage for $1M Home: $11,159/mo at 8.5% APR",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-400k-3dp-40yr-9-0pct": {
     "batch": "batch-2026-05-22-679.json",
@@ -6125,7 +6175,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "$750,000 Mortgage with 3% Down at 5%: 20-Year Payment Guide",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "compound-interest-5000-9pct-20yr-m1000": {
     "batch": "batch-2026-05-22-679.json",
@@ -6180,13 +6231,15 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Compound Interest: $250k to $1.46M in 25 Years at 6%",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-9pct-40yr-m1000": {
     "batch": "batch-2026-05-22-679.json",
     "title": "$250,000 at 9% for 40 Years: $13.7 Million Compound Growth",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-100000-8pct-40yr-m500": {
     "batch": "batch-2026-05-22-679.json",
@@ -6198,7 +6251,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Turn $100,000 into $331,515 in 40 Years at 3% Interest",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-7pct-40yr-m250": {
     "batch": "batch-2026-05-22-679.json",
@@ -6210,7 +6264,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Compound Interest: $10,000 + $2,000/Month at 5% for 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-5pct-5yr": {
     "batch": "batch-2026-05-22-679.json",
@@ -6338,7 +6393,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "$50,000 at 4% for 25 Years: $650K Future Value with $1K Monthly",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-100000-8pct-40yr-m100": {
     "batch": "batch-2026-05-22-679.json",
@@ -6398,7 +6454,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Compound Interest: $100k + $500/mo at 7% for 40 Years - $2.94M",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-10000-3pct-40yr-m2000": {
     "batch": "batch-2026-05-22-679.json",
@@ -6524,7 +6581,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Compound Interest: $10,000 at 5% for 15 Years = $21,137.04",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-50000-4pct-40yr": {
     "batch": "batch-2026-05-22-679.json",
@@ -6742,7 +6800,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Retirement Calculator: 40-Year-Old Needs $150k, Faces $139,529 Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-a04612ab": {
     "batch": "batch-2026-05-22-679.json",
@@ -6996,7 +7055,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Retirement at 70: $3.5M Savings with Only $500 Monthly",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-a0b20f03": {
     "batch": "batch-2026-05-22-679.json",
@@ -7158,13 +7218,15 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Retire at 62: $500k Savings + $5k/Month = $6 Million",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-72236284": {
     "batch": "batch-2026-05-22-679.json",
     "title": "Retirement Savings at 50: $71K vs $100K Goal \u2013 Calculator",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-50032ac4": {
     "batch": "batch-2026-05-22-679.json",
@@ -7200,7 +7262,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Retire at 70 with $6.76M: Start at 35, $5,000 Monthly",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-b578d61f": {
     "batch": "batch-2026-05-22-679.json",
@@ -7850,7 +7913,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "How to Pay Off $15,000 at 12% APR with $200/Month \u2013 11.6 Years",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-cdeb5622": {
     "batch": "batch-2026-05-22-679.json",
@@ -7994,7 +8058,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Pay Off $5,000 Debt in 10.6 Months | $294 Total Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-f3b999f6": {
     "batch": "batch-2026-05-22-679.json",
@@ -8282,7 +8347,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Pay Off $5,000 Debt at 20% APR in 11 Months with $500/month",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-3ca4b544": {
     "batch": "batch-2026-05-22-679.json",
@@ -8354,7 +8420,8 @@
     "batch": "batch-2026-05-22-679.json",
     "title": "Debt Payoff: $1,000 at 12% APR \u2013 22.4 Months, $121 Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-98a5ef02": {
     "batch": "batch-2026-05-22-679.json",
@@ -9321,7 +9388,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Mortgage Calculator: $100k Home at 8% with 5% Down (15-Year Term)",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-30dp-10yr-8-0pct": {
     "batch": "batch-2026-05-23-500.json",
@@ -9406,7 +9474,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Mortgage Calculator: $600k at 6.5% for 20 Years | Monthly $3,579",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-600k-20yr-7-5pct": {
     "batch": "batch-2026-05-23-500.json",
@@ -9467,7 +9536,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "10-Year Mortgage on $200K Home: $1,930 Monthly at 6.5%",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-500k-20yr-7-0pct": {
     "batch": "batch-2026-05-23-500.json",
@@ -9697,7 +9767,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "$300,000 Mortgage at 6.5%: Costs & Payment Breakdown",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-250k-3dp-10yr-6-0pct": {
     "batch": "batch-2026-05-23-500.json",
@@ -9733,7 +9804,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Mortgage Calculator: $100k Home, 10% Down, 6% Rate, 15-Year Term",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-300k-15dp-30yr-8-5pct": {
     "batch": "batch-2026-05-23-500.json",
@@ -9896,7 +9968,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "From $25,000 to $1,096,103 in 25 Years with 4% APY",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-50000-4pct-5yr-m1000": {
     "batch": "batch-2026-05-23-500.json",
@@ -9920,7 +9993,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "4% Interest Compounded Monthly: $5,000 to $9,101.51 in 15 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-7pct-10yr": {
     "batch": "batch-2026-05-23-500.json",
@@ -9938,7 +10012,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Compound Interest Calculator: $100K at 3% for 30 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-10000-4pct-40yr-m1000": {
     "batch": "batch-2026-05-23-500.json",
@@ -9974,7 +10049,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "How $50K + $1K Monthly at 9% Grows to $153,708 in 5 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-8pct-25yr-m2000": {
     "batch": "batch-2026-05-23-500.json",
@@ -10022,7 +10098,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Compound Interest: $35,812 after 5 Years with $10k + $250/mo at 10%",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-500000-8pct-30yr-m250": {
     "batch": "batch-2026-05-23-500.json",
@@ -10124,7 +10201,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Compound Interest: $50,000 to $1.59M in 25 Years at 9%",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-5pct-20yr": {
     "batch": "batch-2026-05-23-500.json",
@@ -10263,7 +10341,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "$5,000 at 7% for 25 Years: Compound Interest Growth to $28,627",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-7pct-30yr-m1000": {
     "batch": "batch-2026-05-23-500.json",
@@ -10390,7 +10469,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "$100k at 10% for 40 Years: Compound Interest to $5.37M",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-10pct-5yr-m1000": {
     "batch": "batch-2026-05-23-500.json",
@@ -10426,7 +10506,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Compound Interest: $10K + $1K/mo at 7% \u2192 $345K in 15 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-10pct-40yr-m1000": {
     "batch": "batch-2026-05-23-500.json",
@@ -10468,7 +10549,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement at 65 with No Savings: $2k Monthly at 8% Leaves $124k Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-f9159da2": {
     "batch": "batch-2026-05-23-500.json",
@@ -10522,7 +10604,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement Calculator: $2M at 70 from $100k & $1k/Month",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-7dfc78c3": {
     "batch": "batch-2026-05-23-500.json",
@@ -10618,7 +10701,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement at 67: $500K Savings, $5K/Month, 8% Return",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-cf8d700b": {
     "batch": "batch-2026-05-23-500.json",
@@ -10684,7 +10768,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement Calculator: $100/Month at 45? See Your $58,806 Savings Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-6d2dca98": {
     "batch": "batch-2026-05-23-500.json",
@@ -10780,7 +10865,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement Gap: $250k + $100/mo Leaves $21k Shortfall by 65",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-441a18af": {
     "batch": "batch-2026-05-23-500.json",
@@ -10816,7 +10902,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement at 67: $50K Saved + $100/Month Yields $159,594",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-fdf7e8c5": {
     "batch": "batch-2026-05-23-500.json",
@@ -10972,7 +11059,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement Calculator: $100k Savings at 25 \u2013 Will You Reach $1.2M by 60?",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-eb5ee33f": {
     "batch": "batch-2026-05-23-500.json",
@@ -11032,7 +11120,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Retirement at 70 with $500k: $58k Income Gap \u2013 Are You on Track?",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-7b364281": {
     "batch": "batch-2026-05-23-500.json",
@@ -11070,7 +11159,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Debt Payoff: $50k at 12% APR, $200/Month for 20.8 Years",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-32a8c9ef": {
     "batch": "batch-2026-05-23-500.json",
@@ -11094,7 +11184,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Debt Payoff: $15,000 at 25% APR with $100 Monthly Payment - 12.5 Years",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-8a4195e2": {
     "batch": "batch-2026-05-23-500.json",
@@ -11264,7 +11355,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Debt Payoff Guide: $25,000 at 12% APR \u2013 2.4 Years with $1,000/Month",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-90c552cb": {
     "batch": "batch-2026-05-23-500.json",
@@ -11276,7 +11368,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Pay Off $10,000 Debt at 20% APR: $500/Month Plan \u2013 2 Years",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-f4faaa5c": {
     "batch": "batch-2026-05-23-500.json",
@@ -11306,7 +11399,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "Pay Off $100k Debt in 16.7 Years with $500/Month? No Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-d3c85c82": {
     "batch": "batch-2026-05-23-500.json",
@@ -11408,7 +11502,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "$50,000 Debt at 28% APR: Payoff in 50 Months with $1,000 Monthly",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-d4274ddb": {
     "batch": "batch-2026-05-23-500.json",
@@ -11576,7 +11671,8 @@
     "batch": "batch-2026-05-23-500.json",
     "title": "$5,000 Debt at 30% APR: Payoff in 4.2 Years with $100/Month",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-c65ec486": {
     "batch": "batch-2026-05-23-500.json",
@@ -12254,7 +12350,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "600k Home at 7%: $5,231 Monthly, $360k Interest in 15 Years",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-300k-25dp-15yr-6-5pct": {
     "batch": "batch-2026-05-24-600.json",
@@ -12320,7 +12417,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "7.5% Rate on $750k Mortgage: $5,087/mo Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-300k-30yr-6-5pct": {
     "batch": "batch-2026-05-24-600.json",
@@ -12900,7 +12998,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "From $10,000 to $3.01M: 5% Interest, $5k Monthly, 25 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-6pct-5yr-m500": {
     "batch": "batch-2026-05-24-600.json",
@@ -13189,7 +13288,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "Compound Interest: $250k at 10% for 40 Years Yields $13.43M",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-100000-5pct-25yr-m5000": {
     "batch": "batch-2026-05-24-600.json",
@@ -13225,7 +13325,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "$1,000,000 at 6% with $100/mo for 15 Years: $2.48M Compounded",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-10000-4pct-10yr-m1000": {
     "batch": "batch-2026-05-24-600.json",
@@ -13334,7 +13435,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "$1M at 6% for 20 Years: Future Value & Earnings (Compounded Monthly)",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-8pct-30yr-m5000": {
     "batch": "batch-2026-05-24-600.json",
@@ -13612,7 +13714,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "$250k Savings, $5k/month: $1.16M by 70 at 5% Return",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-ed3ba8f3": {
     "batch": "batch-2026-05-24-600.json",
@@ -13897,7 +14000,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "Retirement Gap: $742K Savings Yields $29,682 vs $40K Goal",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-9808df91": {
     "batch": "batch-2026-05-24-600.json",
@@ -13910,7 +14014,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "Retire at 70 with $2.77M: $5k Monthly Savings at 4% Return",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-e06b4ecf": {
     "batch": "batch-2026-05-24-600.json",
@@ -13940,7 +14045,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "Retire at 62 with $1M Savings: $5k Monthly Projects $6.2M",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-d1cb35a9": {
     "batch": "batch-2026-05-24-600.json",
@@ -14097,7 +14203,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "401k Growth: $60k Salary, 10% Contribution, 6% Return After 20 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-40000-5pct-30yr": {
     "batch": "batch-2026-05-24-600.json",
@@ -14139,13 +14246,15 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "$3.1M in 40 Years: 15% 401k Contribution & 100% Employer Match",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-40000-6pct-40yr": {
     "batch": "batch-2026-05-24-600.json",
     "title": "$40k Salary 401k: $828k Future Value with 8% Return",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-150000-10pct-40yr": {
     "batch": "batch-2026-05-24-600.json",
@@ -14182,7 +14291,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "401k Calculator: $10k/Year Savings Grows to $1.7M in 40 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-75000-5pct-40yr": {
     "batch": "batch-2026-05-24-600.json",
@@ -14243,7 +14353,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "$40k Salary, 20% 401k: $695k in 30 Years at 6% Return",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-40000-20pct-10yr": {
     "batch": "batch-2026-05-24-600.json",
@@ -14371,7 +14482,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "401k for $200k Salary: $20k/yr + 6% Growth = $3.56M in 40 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-40000-6pct-30yr": {
     "batch": "batch-2026-05-24-600.json",
@@ -14431,7 +14543,8 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "Pay Off $1,000 Debt at 30% APR: $2,000/Month Payment & Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-6e0e3225": {
     "batch": "batch-2026-05-24-600.json",
@@ -14871,13 +14984,15 @@
     "batch": "batch-2026-05-24-600.json",
     "title": "Pay Off $1,000 Debt at 15% APR: $300/mo = 3.4 Months, $28 Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-bae6fb44": {
     "batch": "batch-2026-05-24-600.json",
     "title": "$1,000 Debt at 18%: Pay off in 2 Months for $22.90 Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-f6881a13": {
     "batch": "batch-2026-05-24-600.json",
@@ -15633,7 +15748,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$400k Home, 10% Down: $2,395/mo Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-150k-10dp-15yr-5-5pct": {
     "batch": "batch-2026-05-25-537.json",
@@ -15831,7 +15947,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "15-Year $400k Mortgage at 6.5%: $3,379.90/mo Total $608k",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-250k-5dp-30yr-7-5pct": {
     "batch": "batch-2026-05-25-537.json",
@@ -15897,7 +16014,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "30-Year $150k Mortgage at 6.5%: $919.66 Monthly Payment",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-1000k-10dp-15yr-5-5pct": {
     "batch": "batch-2026-05-25-537.json",
@@ -15933,7 +16051,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$300k Mortgage at 5.5%: Monthly Payment & Total Cost for 30 Years",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-3dp-15yr-8-0pct": {
     "batch": "batch-2026-05-25-537.json",
@@ -16108,7 +16227,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$400k Home 7.5% 15-Year: $2,966/mo & $213,959 Total Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-10dp-15yr-5-5pct": {
     "batch": "batch-2026-05-25-537.json",
@@ -16193,7 +16313,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$350k Home, 8% Rate, 15-Year: $3,010/mo & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-600k-25dp-15yr-5-5pct": {
     "batch": "batch-2026-05-25-537.json",
@@ -16346,13 +16467,15 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$100,000 at 6% with $500/month Grows to $263,879 in 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-50000-5pct-40yr-m500": {
     "batch": "batch-2026-05-25-537.json",
     "title": "$50K to $1.13M: Compound Interest on $500 Monthly at 5% for 40 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-5000-8pct-25yr-m250": {
     "batch": "batch-2026-05-25-537.json",
@@ -16370,7 +16493,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$1,000,000 at 8% with $250 Monthly: $11.3M After 30 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-10pct-25yr-m1000": {
     "batch": "batch-2026-05-25-537.json",
@@ -16382,7 +16506,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$1M at 7% for 25 Years: Compound Interest Growth to $5.7M",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-4pct-15yr-m1000": {
     "batch": "batch-2026-05-25-537.json",
@@ -16594,7 +16719,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "$1,000 at 6% APR with $100 Monthly: Future Value $18,207 After 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-5pct-30yr-m500": {
     "batch": "batch-2026-05-25-537.json",
@@ -16895,7 +17021,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "Retirement at 65 with $100k Savings: $2.95M & $118k Annual Income",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-6d78c624": {
     "batch": "batch-2026-05-25-537.json",
@@ -17045,7 +17172,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "Retirement at 62: $10,385 Saved, $39,585 Income Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-06454d4f": {
     "batch": "batch-2026-05-25-537.json",
@@ -17063,7 +17191,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "Retirement at 70: Only $18,404 Saved \u2013 $92,638 Income Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-596decc8": {
     "batch": "batch-2026-05-25-537.json",
@@ -17147,7 +17276,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "Retirement Savings at 8%: $1.75M for $150k Income? Gap $79,818",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-356b14f7": {
     "batch": "batch-2026-05-25-537.json",
@@ -17377,7 +17507,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "Retirement Calculator: $5M from $250k & $1k Monthly at 6%",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-4f03280b": {
     "batch": "batch-2026-05-25-537.json",
@@ -17407,7 +17538,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "401k Calculator: $150k Salary, 20% Contribution, 6% Return \u2013 $5.57M in 40 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-150000-5pct-40yr": {
     "batch": "batch-2026-05-25-537.json",
@@ -17419,7 +17551,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "401k at $40k Salary: How a 3% Match Grows to $79k in 20 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-100000-5pct-40yr": {
     "batch": "batch-2026-05-25-537.json",
@@ -17443,7 +17576,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "401k Calculator: $40k Salary, 3% Contribution, $30,187 After 10 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-40000-20pct-40yr": {
     "batch": "batch-2026-05-25-537.json",
@@ -17515,7 +17649,8 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "6% 401k on $40k Salary: $105,811 After 20 Years",
     "calculatorSlug": "401k-calculator",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "401k-40000-15pct-40yr": {
     "batch": "batch-2026-05-25-537.json",
@@ -17551,13 +17686,15 @@
     "batch": "batch-2026-05-25-537.json",
     "title": "Pay Off $50k Debt at 22%: $2k/Month Costs & Timeline",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-7fae589c": {
     "batch": "batch-2026-05-25-537.json",
     "title": "Pay Off $5,000 Debt at 20% APR: 32.6 Months, $1,522 Interest",
     "calculatorSlug": "debt-payoff",
-    "category": "debt"
+    "category": "debt",
+    "upgraded": true
   },
   "debt-payoff-67d761d6": {
     "batch": "batch-2026-05-25-537.json",
@@ -18404,7 +18541,8 @@
     "batch": "batch-2026-05-26-30.json",
     "title": "$750,000 Home at 7.5%: Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-300k-15yr-6-0pct": {
     "batch": "batch-2026-05-26-30.json",
@@ -18760,7 +18898,8 @@
     "batch": "batch-2026-05-26-50.json",
     "title": "15-Year Mortgage at 7% on $350k Home: $3,052/mo, $549k Total",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-1000k-25dp-15yr-6-0pct": {
     "batch": "batch-2026-05-26-50.json",
@@ -18857,7 +18996,8 @@
     "batch": "batch-2026-05-26-50.json",
     "title": "$500k Home at 7.5%: 15-Year Mortgage Monthly Payment & Costs",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-3dp-15yr-5-5pct": {
     "batch": "batch-2026-05-26-50.json",
@@ -18966,7 +19106,8 @@
     "batch": "batch-2026-05-26-40.json",
     "title": "15-Year $150k Mortgage at 7.5%: $1,112 Monthly Payment",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-500k-3dp-30yr-6-5pct": {
     "batch": "batch-2026-05-26-40.json",
@@ -19002,7 +19143,8 @@
     "batch": "batch-2026-05-26-40.json",
     "title": "5.5% Mortgage for $750k Home: $4,046/mo, Total $1.46M",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-250k-10dp-15yr-8-0pct": {
     "batch": "batch-2026-05-26-40.json",
@@ -19014,7 +19156,8 @@
     "batch": "batch-2026-05-26-40.json",
     "title": "$800k Mortgage at 7%: $5,322 Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-1000k-10dp-30yr-8-0pct": {
     "batch": "batch-2026-05-26-40.json",
@@ -19026,7 +19169,8 @@
     "batch": "batch-2026-05-26-40.json",
     "title": "$1M Home with 5% Down at 6.5%: Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-1000k-15yr-7-5pct": {
     "batch": "batch-2026-05-26-40.json",
@@ -19062,7 +19206,8 @@
     "batch": "batch-2026-05-26-40.json",
     "title": "$400,000 Mortgage at 6.5%: $2,528/mo & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-250k-25dp-30yr-7-0pct": {
     "batch": "batch-2026-05-26-40.json",
@@ -19230,7 +19375,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "$400k Mortgage at 7.5%: 15-Year Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-750k-25dp-15yr-6-0pct": {
     "batch": "batch-2026-05-26-399.json",
@@ -19398,7 +19544,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "$250k Home at 6.5%: $1,960 Monthly Payment & $128k Interest (15-Year)",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-5dp-30yr-8-0pct": {
     "batch": "batch-2026-05-26-399.json",
@@ -19422,7 +19569,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "8% Mortgage on $600k Home: $5,562 Monthly, $419k Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-500k-25dp-15yr-7-5pct": {
     "batch": "batch-2026-05-26-399.json",
@@ -19813,7 +19961,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Invest $100k + $2k/month at 10%: $2.25M After 20 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-10pct-25yr-m250": {
     "batch": "batch-2026-05-26-399.json",
@@ -19891,7 +20040,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Compound Interest: $50k at 4% with $1k/mo for 10 Years \u2192 $221,791",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-6pct-10yr-m1000": {
     "batch": "batch-2026-05-26-399.json",
@@ -19963,7 +20113,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "How $25,000 + $2,000/month Grows to $477k at 10% (10 Years)",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-8pct-5yr-m1000": {
     "batch": "batch-2026-05-26-399.json",
@@ -20125,7 +20276,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "$250,000 at 4% for 15 Years: Compound Interest Results",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000-5pct-30yr": {
     "batch": "batch-2026-05-26-399.json",
@@ -20305,7 +20457,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "$1k Initial + $500/Month at 7% for 10 Years = $88,552",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "retirement-planning-1d248107": {
     "batch": "batch-2026-05-26-399.json",
@@ -20317,7 +20470,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retirement at 62: $500k Savings + $2k/mo = $4.19M",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-66d93bfd": {
     "batch": "batch-2026-05-26-399.json",
@@ -20347,7 +20501,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retire at 62? $196k Savings vs $100k Income \u2013 $92k Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-d6185735": {
     "batch": "batch-2026-05-26-399.json",
@@ -20420,7 +20575,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retirement at 67: $1M Savings + $500/mo - Are You on Track?",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-c20edd3a": {
     "batch": "batch-2026-05-26-399.json",
@@ -20498,7 +20654,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retirement at 65: $156k from $100/mo at 8% \u2013 $60k goal gap $53,751",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-917963ff": {
     "batch": "batch-2026-05-26-399.json",
@@ -20534,13 +20691,15 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retire at 62: $500k Saved, $5k/mo \u2013 $1.13M Nest Egg?",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-13858a72": {
     "batch": "batch-2026-05-26-399.json",
     "title": "Retire at 65: $1.09M from $500k & $5k/mo, $107k Income Gap",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-a711d244": {
     "batch": "batch-2026-05-26-399.json",
@@ -20606,7 +20765,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retirement Gap: $526k Savings Only Funds $21k/yr vs $150k Goal",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-f527dd4a": {
     "batch": "batch-2026-05-26-399.json",
@@ -20720,7 +20880,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retire at 70 with $4.16M: Monthly $1k & $250k Saved at 5%",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-211cbcae": {
     "batch": "batch-2026-05-26-399.json",
@@ -20792,7 +20953,8 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retirement Calculator: $100k Savings, $500/mo, 6% Return \u2014 Are You on Track?",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-fdaa0c0d": {
     "batch": "batch-2026-05-26-399.json",
@@ -20882,13 +21044,15 @@
     "batch": "batch-2026-05-26-399.json",
     "title": "Retirement Savings at 62: $47,954, Income Gap $38,082",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-c87d6e83": {
     "batch": "batch-2026-05-26-399.json",
     "title": "Retire at 67: $500k Savings + $5k/month = $7.58M",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-c125240a": {
     "batch": "batch-2026-05-26-399.json",
@@ -21536,7 +21700,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$500k Home at 8%: 15-Year Mortgage Payments & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-200k-15dp-30yr-6-0pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -21651,7 +21816,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$450,000 Mortgage at 7.5%: Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-200k-30yr-7-5pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -21663,7 +21829,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "7% Mortgage on $250k: 15-Year Monthly Payment & Total Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-200k-10dp-15yr-6-5pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -21699,7 +21866,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$300k Home with 10% Down at 7%: Monthly Cost & Total Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-1000k-25dp-30yr-6-0pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -21723,7 +21891,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$200k Mortgage at 6.5% for 15 Years: $1,655 Monthly Payment",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-3dp-30yr-8-0pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -21807,7 +21976,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$400k Home at 7%: Monthly Payment & Total Interest Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-30yr-7-0pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -22084,7 +22254,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$300k Home at 8%: $2,781/mo, $209.6k Total Interest",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-350k-10dp-15yr-7-0pct": {
     "batch": "batch-2026-05-27-397.json",
@@ -22132,7 +22303,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$1,000 at 10% for 10 Years: Compound Interest Growth to $2,707",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-10000-10pct-20yr-m2000": {
     "batch": "batch-2026-05-27-397.json",
@@ -22228,7 +22400,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$250k at 8% with $1k Monthly: $2.79M After 25 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-1000000-6pct-30yr-m5000": {
     "batch": "batch-2026-05-27-397.json",
@@ -22528,7 +22701,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$50,000 at 7% with $500/month: 10-Year Growth to $187K",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-25000-10pct-25yr-m2000": {
     "batch": "batch-2026-05-27-397.json",
@@ -22576,7 +22750,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$25,000 Initial, $5,000/Month at 5% for 30 Years: $4.27M Future Value",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-6pct-40yr": {
     "batch": "batch-2026-05-27-397.json",
@@ -22643,7 +22818,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "6% Compound: $25k + $5k/mo = $1.5M in 15 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-100000-5pct-20yr-m500": {
     "batch": "batch-2026-05-27-397.json",
@@ -22679,7 +22855,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "$5,000 Initial & $500/mo at 8%: $102,571 After 10 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-100000-8pct-25yr-m2000": {
     "batch": "batch-2026-05-27-397.json",
@@ -22889,7 +23066,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "Retire at 67: $250k Savings Grows to $4M with $500 Monthly",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-b1bc34bc": {
     "batch": "batch-2026-05-27-397.json",
@@ -22919,7 +23097,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "From $500k to $1.98M: Retirement Savings at 70 with $100/mo",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-4c39c5df": {
     "batch": "batch-2026-05-27-397.json",
@@ -22961,7 +23140,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "Retire at 67 with $2.18M: 30-Year-Old Saving $500/Month at 7%",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-65565bbc": {
     "batch": "batch-2026-05-27-397.json",
@@ -23057,7 +23237,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "Retire at 62 with $6.16M: $150k Income Goal & $5k Monthly Savings",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-90e433f5": {
     "batch": "batch-2026-05-27-397.json",
@@ -23201,7 +23382,8 @@
     "batch": "batch-2026-05-27-397.json",
     "title": "Retire at 65: $2.745M Savings, $109.8k Annual Income from $5k/month",
     "calculatorSlug": "retirement-planning",
-    "category": "retirement"
+    "category": "retirement",
+    "upgraded": true
   },
   "retirement-planning-8a6c0265": {
     "batch": "batch-2026-05-27-397.json",
@@ -24216,7 +24398,8 @@
     "batch": "batch-2026-05-27-50.json",
     "title": "$262,500 Mortgage at 6%: 15-Year Monthly Payment & Cost",
     "calculatorSlug": "mortgage-calculator",
-    "category": "mortgage"
+    "category": "mortgage",
+    "upgraded": true
   },
   "mortgage-600k-10dp-30yr-7-5pct": {
     "batch": "batch-2026-05-27-50.json",
@@ -24390,7 +24573,8 @@
     "batch": "batch-2026-05-27-50.json",
     "title": "$1M at 8% for 5 Years: Compound Interest With $1,000 Monthly",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-50000-5pct-20yr-m500": {
     "batch": "batch-2026-05-27-50.json",
@@ -24408,7 +24592,8 @@
     "batch": "batch-2026-05-27-50.json",
     "title": "Compound Interest: $100k + $2k/mo at 4% for 30 Years",
     "calculatorSlug": "compound-interest",
-    "category": "investing"
+    "category": "investing",
+    "upgraded": true
   },
   "compound-interest-250000-7pct-5yr-m500": {
     "batch": "batch-2026-05-27-50.json",

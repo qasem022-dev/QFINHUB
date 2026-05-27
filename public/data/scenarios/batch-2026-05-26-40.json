@@ -1260,7 +1260,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-26T01:22:19.117497+00:00"
+    "generatedAt": "2026-05-26T01:22:19.117497+00:00",
+    "whatThisMeans": "For a 15-Year $150k Mortgage, your monthly payment of $1,112.41 adds up to $200,235 over the full term \u2014 with $80,235 going to interest alone. That means only 60% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754396",
+    "upgraded": true
   },
   {
     "slug": "mortgage-500k-3dp-30yr-6-5pct",
@@ -1704,7 +1713,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-26T01:22:48.187719+00:00"
+    "generatedAt": "2026-05-26T01:22:48.187719+00:00",
+    "whatThisMeans": "For a this scenario, your monthly payment of $4,045.50 adds up to $1,456,379 over the full term \u2014 with $743,879 going to interest alone. That means only 49% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754147",
+    "upgraded": true
   },
   {
     "slug": "mortgage-250k-10dp-15yr-8-0pct",
@@ -1852,7 +1870,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-26T01:23:00.604829+00:00"
+    "generatedAt": "2026-05-26T01:23:00.604829+00:00",
+    "whatThisMeans": "For a $800k Mortgage, your monthly payment of $5,322.42 adds up to $1,916,071 over the full term \u2014 with $1,116,071 going to interest alone. That means only 42% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754554",
+    "upgraded": true
   },
   {
     "slug": "mortgage-1000k-10dp-30yr-8-0pct",
@@ -2000,7 +2027,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-26T01:23:03.762667+00:00"
+    "generatedAt": "2026-05-26T01:23:03.762667+00:00",
+    "whatThisMeans": "For a $1M Home with 5% Down, your monthly payment of $8,275.52 adds up to $1,489,594 over the full term \u2014 with $539,594 going to interest alone. That means only 64% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "At this rate, your total interest exceeds the home's original price \u2014 consider a 15-year term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753182",
+    "upgraded": true
   },
   {
     "slug": "mortgage-1000k-15yr-7-5pct",
@@ -2444,7 +2480,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-26T01:23:35.802822+00:00"
+    "generatedAt": "2026-05-26T01:23:35.802822+00:00",
+    "whatThisMeans": "For a $400,000 Mortgage, your monthly payment of $2,528.27 adds up to $910,178 over the full term \u2014 with $510,178 going to interest alone. That means only 44% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "A 1% rate drop would save you $2,528/month. It's worth shopping lenders every 2 years.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753154",
+    "upgraded": true
   },
   {
     "slug": "mortgage-250k-25dp-30yr-7-0pct",

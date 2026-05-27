@@ -734,7 +734,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:54:49.973021+00:00"
+    "generatedAt": "2026-05-22T22:54:49.973021+00:00",
+    "whatThisMeans": "For a Mortgage Calculator: $100k Home, your monthly payment of $907.87 adds up to $163,417 over the full term \u2014 with $68,417 going to interest alone. That means only 58% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754713",
+    "upgraded": true
   },
   {
     "slug": "mortgage-750k-30dp-10yr-8-0pct",
@@ -1484,7 +1493,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:55:13.644368+00:00"
+    "generatedAt": "2026-05-22T22:55:13.644368+00:00",
+    "whatThisMeans": "For a Mortgage Calculator: $600k, your monthly payment of $3,578.75 adds up to $858,900 over the full term \u2014 with $378,900 going to interest alone. That means only 56% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "A 1% rate drop would save you $3,579/month. It's worth shopping lenders every 2 years.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754950",
+    "upgraded": true
   },
   {
     "slug": "mortgage-600k-20yr-7-5pct",
@@ -2013,7 +2031,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. The numbers provided are based on the inputs and assume a fixed interest rate. Actual mortgage terms, taxes, insurance, and other costs may vary. Consult a qualified mortgage professional for personalized guidance.",
-    "generatedAt": "2026-05-22T22:55:35.894285+00:00"
+    "generatedAt": "2026-05-22T22:55:35.894285+00:00",
+    "whatThisMeans": "For a 10-Year Mortgage on $200K Home: $1,930 Monthly, your monthly payment of $1,930.32 adds up to $231,638 over the full term \u2014 with $61,638 going to interest alone. That means only 73% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754567",
+    "upgraded": true
   },
   {
     "slug": "mortgage-500k-20yr-7-0pct",
@@ -4007,7 +4034,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:56:52.467610+00:00"
+    "generatedAt": "2026-05-22T22:56:52.467610+00:00",
+    "whatThisMeans": "For a $300,000 Mortgage, your monthly payment of $1,706.58 adds up to $614,370 over the full term \u2014 with $344,370 going to interest alone. That means only 44% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "At this rate, your total interest exceeds the home's original price \u2014 consider a 15-year term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754239",
+    "upgraded": true
   },
   {
     "slug": "mortgage-250k-3dp-10yr-6-0pct",
@@ -4319,7 +4355,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:56:59.429835+00:00"
+    "generatedAt": "2026-05-22T22:56:59.429835+00:00",
+    "whatThisMeans": "For a this scenario, your monthly payment of $759.47 adds up to $136,705 over the full term \u2014 with $46,705 going to interest alone. That means only 66% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "The first 5 years of payments are 80%+ interest. Refinancing before year 5 saves the most.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753896",
+    "upgraded": true
   },
   {
     "slug": "mortgage-300k-15dp-30yr-8-5pct",
@@ -5732,7 +5777,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:58:01.030704+00:00"
+    "generatedAt": "2026-05-22T22:58:01.030704+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Fees matter: a 1% fee on this portfolio costs $X in lost growth over the term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754113",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-50000-4pct-5yr-m1000",
@@ -5940,7 +5994,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:58:10.706134+00:00"
+    "generatedAt": "2026-05-22T22:58:10.706134+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753351",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-1000-7pct-10yr",
@@ -6096,7 +6159,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:58:12.439620+00:00"
+    "generatedAt": "2026-05-22T22:58:12.439620+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Fees matter: a 1% fee on this portfolio costs $X in lost growth over the term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754379",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-10000-4pct-40yr-m1000",
@@ -6408,7 +6480,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Actual investment returns vary; past performance does not guarantee future results. Consult a qualified financial advisor for personalized guidance.",
-    "generatedAt": "2026-05-22T22:58:31.223632+00:00"
+    "generatedAt": "2026-05-22T22:58:31.223632+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753019",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-25000-8pct-25yr-m2000",
@@ -6824,7 +6905,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. Results assume consistent 10% annual return compounded monthly, which may not be achievable. Actual returns will vary. Consult a financial advisor for personalized guidance.",
-    "generatedAt": "2026-05-22T22:58:48.364319+00:00"
+    "generatedAt": "2026-05-22T22:58:48.364319+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Time in the market beats timing the market \u2014 every year delayed costs you compound growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753880",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-500000-8pct-30yr-m250",
@@ -7708,7 +7798,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T22:59:22.555451+00:00"
+    "generatedAt": "2026-05-22T22:59:22.555451+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754830",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-250000-5pct-20yr",
@@ -8913,7 +9012,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:00:11.513862+00:00"
+    "generatedAt": "2026-05-22T23:00:11.513862+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754644",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-25000-7pct-30yr-m1000",
@@ -10014,7 +10122,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:01:03.556409+00:00"
+    "generatedAt": "2026-05-22T23:01:03.556409+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Time in the market beats timing the market \u2014 every year delayed costs you compound growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753355",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-1000-10pct-5yr-m1000",
@@ -10326,7 +10443,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. This calculator provides hypothetical projections based on fixed inputs; actual investment returns vary. Consult a licensed financial advisor for personalized guidance.",
-    "generatedAt": "2026-05-22T23:01:10.682519+00:00"
+    "generatedAt": "2026-05-22T23:01:10.682519+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753249",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-25000-10pct-40yr-m1000",
@@ -10702,7 +10828,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:01:44.517684+00:00"
+    "generatedAt": "2026-05-22T23:01:44.517684+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753467",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-f9159da2",
@@ -11197,7 +11332,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:02:06.187439+00:00"
+    "generatedAt": "2026-05-22T23:02:06.187439+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Delaying retirement by just 2 years can add $X to your nest egg through extra contributions + growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754082",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-7dfc78c3",
@@ -12077,7 +12221,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:02:38.158357+00:00"
+    "generatedAt": "2026-05-22T23:02:38.158357+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754719",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-cf8d700b",
@@ -12682,7 +12835,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:03:08.468786+00:00"
+    "generatedAt": "2026-05-22T23:03:08.468786+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Delaying retirement by just 2 years can add $X to your nest egg through extra contributions + growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753834",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-6d2dca98",
@@ -13562,7 +13724,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. This guide provides simplified projections and does not account for inflation, taxes, fees, market volatility, or changes in personal circumstances. Consult a certified financial planner before making decisions.",
-    "generatedAt": "2026-05-22T23:03:42.583518+00:00"
+    "generatedAt": "2026-05-22T23:03:42.583518+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754540",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-441a18af",
@@ -13892,7 +14063,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:03:52.446495+00:00"
+    "generatedAt": "2026-05-22T23:03:52.446495+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753666",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-fdf7e8c5",
@@ -15322,7 +15502,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:04:55.752083+00:00"
+    "generatedAt": "2026-05-22T23:04:55.752083+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Delaying retirement by just 2 years can add $X to your nest egg through extra contributions + growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753171",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-eb5ee33f",
@@ -15872,7 +16061,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:05:17.361361+00:00"
+    "generatedAt": "2026-05-22T23:05:17.361361+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "The 4% rule says you need 25x annual expenses saved. Run that math with YOUR numbers.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754520",
+    "upgraded": true
   },
   {
     "slug": "retirement-planning-7b364281",
@@ -16196,7 +16394,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:05:39.809566+00:00"
+    "generatedAt": "2026-05-22T23:05:39.809566+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "The snowball method feels better. The avalanche method saves more money. This tool shows both.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754179",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-32a8c9ef",
@@ -16392,7 +16599,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. The computed results are based on simplified assumptions and may not reflect actual credit card interest calculation methods. Always review your card agreement and consult a financial professional for personalized debt strategies.",
-    "generatedAt": "2026-05-22T23:05:47.550245+00:00"
+    "generatedAt": "2026-05-22T23:05:47.550245+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "The snowball method feels better. The avalanche method saves more money. This tool shows both.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753239",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-8a4195e2",
@@ -17782,7 +17998,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:06:55.352401+00:00"
+    "generatedAt": "2026-05-22T23:06:55.352401+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "The snowball method feels better. The avalanche method saves more money. This tool shows both.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.753358",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-90c552cb",
@@ -17880,7 +18105,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:06:59.668212+00:00"
+    "generatedAt": "2026-05-22T23:06:59.668212+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "The average American carries $6,500 in credit card debt at 22% APR \u2014 that's $1,430/year in interest alone.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754027",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-f4faaa5c",
@@ -18125,7 +18359,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. The results are based on the inputs provided and may not reflect actual loan terms, interest compounding, or fees. Always consult a financial advisor for personalized debt management strategies.",
-    "generatedAt": "2026-05-22T23:07:11.403739+00:00"
+    "generatedAt": "2026-05-22T23:07:11.403739+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "Every $100 extra toward your highest-interest debt saves $0 in total interest.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754457",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-d3c85c82",
@@ -18958,7 +19201,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:07:48.600411+00:00"
+    "generatedAt": "2026-05-22T23:07:48.600411+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "The snowball method feels better. The avalanche method saves more money. This tool shows both.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754860",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-d4274ddb",
@@ -20343,7 +20595,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-22T23:08:54.902060+00:00"
+    "generatedAt": "2026-05-22T23:08:54.902060+00:00",
+    "whatThisMeans": "Debt payoff is a math problem AND a psychology problem. The avalanche method (highest interest first) saves the most money, but the snowball method (smallest balance first) keeps you motivated. Try both strategies.",
+    "uniqueInsight": "The snowball method feels better. The avalanche method saves more money. This tool shows both.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/debt-payoff",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T17:54:58.754157",
+    "upgraded": true
   },
   {
     "slug": "debt-payoff-c65ec486",
