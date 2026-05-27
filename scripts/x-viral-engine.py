@@ -239,37 +239,34 @@ NEWSJACK_REPLIES = [
 
 # ─── SELF-TWEETS — Native posts about calculators, widgets, and tools ───
 SELF_TWEETS = [
-    # Calculator highlights
-    "📊 I just ran my numbers through our compound interest calculator. $500/month at 25 = $1.2M at 65. Start at 35? Only $566K.\n\nThat 10-year delay costs $634,000. The math doesn't lie.\n\nRun YOUR numbers free → qfinhub.com/calculators/compound-interest",
+    # DIRECT CLICK CTAs — specific use case, immediate action
+    "\"How much will I actually pay?\" — the question everyone Googles before getting a mortgage.\n\nStop guessing. Our free calculator shows your exact payment, total interest, and amortization in 30 seconds.\n\n👉 Calculate yours now: qfinhub.com/calculators/mortgage-calculator",
 
-    "🏠 Most homeowners don't realize: on a $400K mortgage at 6.5%, you pay $512,000 in PURE INTEREST over 30 years.\n\nTotal cost of that $400K house? $912,000.\n\nSee YOUR exact numbers in 30 seconds → qfinhub.com/calculators/mortgage-calculator",
+    "$500 invested monthly from age 25 = $1,200,000 at retirement. Start at 35? Only $566,000.\n\nThat 10-year delay cost you $634,000. The math is brutal.\n\n👉 Calculate YOUR number free: qfinhub.com/calculators/compound-interest",
 
-    "💸 The average American pays $1,847/year in invisible fees. Between 401k fees, credit card interest, and expense ratios, it adds up to $92,350 over a career.\n\nAudit YOUR finances with our free calculators → qfinhub.com",
+    "If you owe $6,295 in credit card debt at 22% APR and only pay minimums: you'll be paying until 2049 and waste $10,000+ in interest.\n\nSee your EXACT debt-free date for free:\n👉 qfinhub.com/calculators/debt-payoff",
 
-    "📱 Did you know? You can add any of our 125 calculators to your phone's home screen. Works exactly like an app — no download, no signup.\n\n👉 qfinhub.com — tap Share → Add to Home Screen",
+    "Carrying a balance this month? A $3,000 balance at 24% APR costs you $60 in interest THIS MONTH alone.\n\nThat's $720/year just for holding debt. Calculate YOUR interest cost free:\n👉 qfinhub.com/calculators/credit-card-payoff",
 
-    "🔢 The debt snowball vs avalanche debate is settled. Math says avalanche (highest interest first). Psychology says snowball (smallest balance first).\n\nOur free tool shows BOTH side-by-side with YOUR actual debts → qfinhub.com/calculators/debt-payoff",
+    "The bank offering you 6.5% on a 30-year mortgage? They'll make $512,000 in interest on your $400,000 loan.\n\nEvery 0.5% rate drop saves you $40,000+. Run YOUR numbers:\n👉 qfinhub.com/calculators/mortgage-calculator",
 
-    "🧮 I calculated how much a $200/month extra mortgage payment saves: $98,000 in interest and 7 YEARS off your loan.\n\n$500/month extra? $184,000 saved + 12 years gone.\n\nFree calculator → qfinhub.com/calculators/mortgage-payoff",
+    "What's your FIRE number? Most people guess. Here's the real math: annual expenses × 25 = your target.\n\nSpend $50K/year? You need $1.25M invested. Free calculator:\n👉 qfinhub.com/calculators/fire-calculator",
 
-    "📉 Tax season isn't over. The average refund is $3,100 — but that means you gave the IRS an interest-free loan all year.\n\nFix your withholding + calculate your real tax bracket → qfinhub.com/calculators/tax-calculator",
+    "Emergency fund: 3 months or 6 months? If you're a single-income household in a volatile industry → 9-12 months.\n\nCalculate your EXACT emergency fund target in 30 seconds:\n👉 qfinhub.com/calculators/emergency-fund",
 
-    "💰 Emergency fund math: experts say 3-6 months. But the REAL number depends on your job stability, dependents, and fixed costs.\n\nCalculate YOUR specific emergency fund target → qfinhub.com/calculators/emergency-fund",
+    "401k match = free money. If your employer matches 50% up to 6% and you make $80K: that's $2,400/year FREE.\n\nNot contributing the match? You're leaving thousands on the table. Calculator:\n👉 qfinhub.com/calculators/401k-calculator",
 
-    # Widget promotions
-    "🚀 Bloggers & site owners: embed any of our 125 calculators directly on YOUR website. Free, no API key, instant setup.\n\nJust copy-paste one line of HTML. Your readers get interactive calculators, you get engagement.\n\nGrab a widget → qfinhub.com/widgets",
+    "Self-employed? You pay 15.3% self-employment tax BEFORE income tax. On $100K, that's $15,300 gone.\n\nBut deductions change everything. Calculate your real tax bill free:\n👉 qfinhub.com/calculators/self-employed-tax",
 
-    "⚡ Hot take: every personal finance blog should have a mortgage calculator, compound interest calculator, and retirement calculator embedded.\n\nWe built all 125 for you. Free embeds, no signup, instant load.\n\n→ qfinhub.com/widgets",
+    "Rent vs Buy: the calculator that settles the debate. Plug in rent ($2,000), home price ($400K), rate (6.5%), and timeframe (7 years).\n\nMost people are shocked by the result. Try it:\n👉 qfinhub.com/calculators/rent-vs-buy",
 
-    # Tool highlights
-    "🔄 The 50/30/20 budget rule sounds simple. But when you actually run YOUR numbers, the results are surprising.\n\nMost people discover they're spending 40%+ on wants without realizing it.\n\nFree budget planner → qfinhub.com/calculators/budget-planner",
+    "Student loan payment restarting? $35,000 at 6.5% = $397/month for 10 years OR pay $100 extra/month and save $3,100 in interest.\n\n👉 Calculate your exact payment: qfinhub.com/calculators/student-loan",
 
-    "📊 Retirement planning is terrifying when you run real numbers. The average 401k balance at 65 is $255K — which generates only $850/month in retirement income.\n\nSee YOUR retirement gap → qfinhub.com/calculators/retirement-planning",
+    "What's your net worth RIGHT NOW? Assets minus debts. Most people have no idea.\n\nTakes 2 minutes with our free calculator. You might be closer to your goals than you think:\n👉 qfinhub.com/calculators/net-worth",
 
-    # Social proof
-    "✅ 125 free financial calculators. 0 signups. 0 ads. Just math.\n\nMortgage • Compound Interest • Retirement • Debt Payoff • Tax • Budget • 401k • Roth IRA • Auto Loan • Student Loan • Net Worth • And 115 more.\n\n→ qfinhub.com",
+    "Refinancing? The 2% rule is outdated. If rates drop 0.75%+ and you'll stay 3+ years, it's usually worth it.\n\nBut run YOUR numbers. Every situation is different:\n👉 qfinhub.com/calculators/refinance-calculator",
 
-    "🎯 Why I built QFInHub: every financial calculator online either requires an email, shows ads, or oversimplifies the math.\n\n125 calculators. Instant results. No data collected. No signup ever.\n\nTry any calculator → qfinhub.com",
+    "The 50/30/20 budget: 50% needs, 30% wants, 20% savings. On $5,000/month take-home, that's $2,500/$1,500/$1,000.\n\nBut YOUR numbers might be different. Free budget planner:\n👉 qfinhub.com/calculators/budget-planner",
 ]
 
 # ─── Login ───
