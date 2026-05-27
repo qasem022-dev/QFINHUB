@@ -3055,7 +3055,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice. This calculator assumes a fixed rate and does not include property taxes, homeowners insurance, HOA fees, or mortgage insurance. Actual loan terms and rates vary by lender, credit score, and market conditions. Consult a licensed mortgage professional for personalized guidance.",
-    "generatedAt": "2026-05-20T12:39:58.726486+00:00"
+    "generatedAt": "2026-05-20T12:39:58.726486+00:00",
+    "whatThisMeans": "For a $600K Home, your monthly payment of $3,256.26 adds up to $781,501 over the full term \u2014 with $361,501 going to interest alone. That means only 54% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "At this rate, your total interest exceeds the home's original price \u2014 consider a 15-year term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T12:51:54.448829",
+    "upgraded": true
   },
   {
     "slug": "mortgage-150k-30dp-15yr-9-0pct",
@@ -5621,7 +5630,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:41:54.239060+00:00"
+    "generatedAt": "2026-05-20T12:41:54.239060+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Time in the market beats timing the market \u2014 every year delayed costs you compound growth.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T12:51:54.448899",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-10000-5pct-40yr-m250",
@@ -8169,7 +8187,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:43:43.608884+00:00"
+    "generatedAt": "2026-05-20T12:43:43.608884+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Fees matter: a 1% fee on this portfolio costs $X in lost growth over the term.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T12:51:54.448890",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-500000-10pct-10yr",
@@ -9989,7 +10016,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-20T12:44:59.505789+00:00"
+    "generatedAt": "2026-05-20T12:44:59.505789+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "Starting 5 years earlier would add $X to your final balance. Start today.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T15:38:40.605378",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-25000-3pct-15yr-m500",

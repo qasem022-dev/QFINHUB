@@ -3169,7 +3169,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:56:48.909511+00:00"
+    "generatedAt": "2026-05-21T17:56:48.909511+00:00",
+    "whatThisMeans": "For a 10-Year Mortgage on $500K Home, your monthly payment of $4,644.34 adds up to $557,321 over the full term \u2014 with $157,321 going to interest alone. That means only 72% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T12:51:54.448878",
+    "upgraded": true
   },
   {
     "slug": "mortgage-750k-30dp-10yr-6-5pct",
@@ -6411,7 +6420,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T17:59:05.839747+00:00"
+    "generatedAt": "2026-05-21T17:59:05.839747+00:00",
+    "whatThisMeans": "This calculation gives you a data point \u2014 but the real value comes from comparing multiple scenarios. Change one variable at a time to see what moves the needle most.",
+    "uniqueInsight": "The S&P 500 has never lost money over any 20-year period. Patience is the strategy.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/compound-interest",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T15:38:40.605642",
+    "upgraded": true
   },
   {
     "slug": "compound-interest-1000-6pct-40yr-m500",
@@ -16400,7 +16418,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:06:34.792889+00:00"
+    "generatedAt": "2026-05-21T18:06:34.792889+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Social Security replaces only ~40% of pre-retirement income. The rest is on you.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T12:51:54.448887",
+    "upgraded": true
   },
   {
     "slug": "401k-30000-15pct-20yr",
@@ -16730,7 +16757,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-21T18:06:45.152618+00:00"
+    "generatedAt": "2026-05-21T18:06:45.152618+00:00",
+    "whatThisMeans": "Retirement planning isn't about hitting a magic number \u2014 it's about understanding your monthly income in retirement. Use this scenario as a baseline, then test different contribution levels and retirement ages to find your sweet spot.",
+    "uniqueInsight": "Healthcare in retirement costs $315,000 on average. Budget it separately.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/401k-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T15:38:40.605534",
+    "upgraded": true
   },
   {
     "slug": "401k-200000-5pct-10yr",

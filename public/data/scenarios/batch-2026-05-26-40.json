@@ -145,7 +145,16 @@
       }
     ],
     "disclaimer": "Educational estimate only \u2014 not financial advice.",
-    "generatedAt": "2026-05-26T01:20:58.639440+00:00"
+    "generatedAt": "2026-05-26T01:20:58.639440+00:00",
+    "whatThisMeans": "For a $500k Home, your monthly payment of $4,008.32 adds up to $721,498 over the full term \u2014 with $246,498 going to interest alone. That means only 66% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "That's like paying for your house twice \u2014 once for the bank, once for yourself.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T12:51:54.448819",
+    "upgraded": true
   },
   {
     "slug": "mortgage-150k-25dp-15yr-7-0pct",

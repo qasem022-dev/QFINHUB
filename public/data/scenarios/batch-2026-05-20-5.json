@@ -101,7 +101,16 @@
       }
     ],
     "disclaimer": "This is an educational estimate only \u2014 not financial advice. Consult a qualified professional before making financial decisions.",
-    "generatedAt": "2026-05-20T00:31:21.090806+00:00"
+    "generatedAt": "2026-05-20T00:31:21.090806+00:00",
+    "whatThisMeans": "For a $150,000 Loan, your monthly payment of $618.92 adds up to $297,084 over the full term \u2014 with $177,084 going to interest alone. That means only 40% of your payments actually build equity. The rest is the cost of borrowing.",
+    "uniqueInsight": "Every extra $100/month toward principal saves you ~$25,000 over the life of the loan.",
+    "tryNext": {
+      "text": "Try this next calculation",
+      "link": "/calculators/refinance-calculator",
+      "reason": "Compare a different scenario to see how the numbers change"
+    },
+    "upgradedAt": "2026-05-27T15:38:40.605638",
+    "upgraded": true
   },
   {
     "slug": "mortgage-450k-3dp-15yr-5-5pct",
