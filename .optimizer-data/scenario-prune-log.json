@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-05-27T21:46:53.277524",
+  "total_before": 4067,
+  "formula_removed": 2006,
+  "kept": 2061,
+  "formula_samples": [
+    "mortgage-100k-10dp-20yr-6-0pct",
+    "mortgage-150k-40yr-5-5pct",
+    "mortgage-450k-3dp-15yr-5-5pct",
+    "mortgage-1000k-25dp-40yr-6-0pct",
+    "mortgage-300k-5dp-20yr-8-5pct",
+    "mortgage-1000k-10dp-15yr-7-0pct",
+    "mortgage-250k-20yr-6-0pct",
+    "mortgage-200k-5dp-30yr-5-5pct",
+    "mortgage-100k-25dp-20yr-6-5pct",
+    "mortgage-250k-30dp-40yr-6-0pct"
+  ],
+  "kept_samples": [
+    "retirement-planning-0a3c076a",
+    "retirement-planning-2eda6a26",
+    "retirement-planning-c8fe9007",
+    "retirement-planning-2c714802",
+    "retirement-planning-ce16b676",
+    "retirement-planning-0deb4c06",
+    "retirement-planning-0117c204",
+    "retirement-planning-2e129cf0",
+    "retirement-planning-c137f866",
+    "retirement-planning-b75f3317"
+  ]
+}
