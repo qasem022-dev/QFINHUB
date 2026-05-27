@@ -35,6 +35,11 @@ export async function generateMetadata({ params }: ToolsPageProps) {
     return { title: "Calculator Not Found" };
   }
 
+  // V2: Noindex formula-based parameter variants to reduce crawl waste
+  const isFormulaSlug = /^[a-z]+-\d/.test(slug) && slug.split('-').filter(p => 
+    /\d/.test(p) || p.includes('pct') || p.includes('yr') || p.includes('mo')
+  ).length >= 2;
+
   return {
     title: variant.meta.title,
     description: variant.meta.description,
@@ -45,6 +50,7 @@ export async function generateMetadata({ params }: ToolsPageProps) {
     alternates: {
       canonical: `https://www.qfinhub.com/tools/${slug}`,
     },
+    ...(isFormulaSlug ? { robots: { index: false, follow: true } } : {}),
   };
 }
 
