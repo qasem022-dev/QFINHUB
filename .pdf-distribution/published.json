@@ -166,5 +166,17 @@
         "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/net-worth-tracker-guide.md"
       }
     }
+  },
+  "fire-movement-guide": {
+    "title": "Financial Independence: The FIRE Movement Explained",
+    "category": "retirement",
+    "generatedAt": "2026-05-26T15:10:32.876Z",
+    "filePath": "/home/admin1/qfinhub/.pdf-distribution/pdfs/fire-movement-guide.md",
+    "uploadResults": {
+      "local": {
+        "status": "saved",
+        "path": "/home/admin1/qfinhub/.pdf-distribution/pdfs/fire-movement-guide.md"
+      }
+    }
   }
 }

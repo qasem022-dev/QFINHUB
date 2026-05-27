@@ -23,6 +23,16 @@ def save_tracking(data):
     with open(TRACKING_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
+def safe_load_json(filepath, default=None):
+    """Load JSON with error handling."""
+    try:
+        if filepath.exists():
+            with open(filepath) as f:
+                return json.load(f)
+    except (json.JSONDecodeError, PermissionError, OSError) as e:
+        print(f"⚠️ Warning: Could not read {filepath}: {e}", file=sys.stderr)
+    return default if default is not None else {}
+
 def collect_metrics():
     """Gather all current metrics from engine state files."""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -30,9 +40,8 @@ def collect_metrics():
 
     # X Growth
     x_state_file = PROJECT_ROOT / ".x-data-v2" / "viral-engine-state.json"
-    if x_state_file.exists():
-        with open(x_state_file) as f:
-            x = json.load(f)
+    x = safe_load_json(x_state_file)
+    if x:
         metrics["x"] = {
             "giant_replies": x.get("giant_replies", 0),
             "threads": x.get("threads", 0),
@@ -44,48 +53,39 @@ def collect_metrics():
 
     # Pinterest
     pin_state_file = PROJECT_ROOT / ".pinterest-data" / "growth-state.json"
-    if pin_state_file.exists():
-        with open(pin_state_file) as f:
-            p = json.load(f)
-    else:
-        p = {}
+    p = safe_load_json(pin_state_file)
     pin_gen_file = PROJECT_ROOT / ".pinterest-data" / "generator-state.json"
-    if pin_gen_file.exists():
-        with open(pin_gen_file) as f:
-            pg = json.load(f)
-    else:
-        pg = {}
+    pg = safe_load_json(pin_gen_file)
     metrics["pinterest"] = {
         "total_pins": pg.get("total_pins", 0),
         "monthly_views": p.get("monthly_views", "0"),
         "following": len(p.get("followed", [])),
     }
 
-    # Blog
-    blog_dir = PROJECT_ROOT / "content" / "blog"
-    if blog_dir.exists():
-        blog_posts = list(blog_dir.glob("*.mdx"))
-        metrics["blog"] = {"total_posts": len(blog_posts)}
+    # Blog (count lines in posts.ts)
+    blog_file = PROJECT_ROOT / "src" / "lib" / "blog" / "posts.ts"
+    try:
+        with open(blog_file) as f:
+            blog_posts = sum(1 for line in f if line.strip().startswith('slug:'))
+        metrics["blog"] = {"total_posts": blog_posts}
+    except (OSError, PermissionError):
+        metrics["blog"] = {"total_posts": 0}
 
     # GSC (from latest analytics report)
     gsc_file = PROJECT_ROOT / ".optimizer-data" / "traffic-report.json"
-    if gsc_file.exists():
-        with open(gsc_file) as f:
-            gsc = json.load(f)
-        summary = gsc.get("search_console", {}).get("summary", {})
-        metrics["gsc"] = {
-            "clicks_7d": summary.get("clicks", 0),
-            "impressions_7d": summary.get("impressions", 0),
-            "ctr": summary.get("ctr", 0),
-            "avg_position": summary.get("position", 0),
-        }
+    gsc = safe_load_json(gsc_file)
+    summary = gsc.get("search_console", {}).get("summary", {}) if gsc else {}
+    metrics["gsc"] = {
+        "clicks_7d": summary.get("clicks", 0),
+        "impressions_7d": summary.get("impressions", 0),
+        "ctr": summary.get("ctr", 0),
+        "avg_position": summary.get("position", 0),
+    }
 
     # HARO
     haro_file = PROJECT_ROOT / ".haro-data" / "sent-responses.json"
-    if haro_file.exists():
-        with open(haro_file) as f:
-            haro = json.load(f)
-        metrics["haro"] = {"total_responses": len(haro)}
+    haro = safe_load_json(haro_file, default=[])
+    metrics["haro"] = {"total_responses": len(haro) if isinstance(haro, list) else 0}
 
     return metrics
 
@@ -188,44 +188,47 @@ def compare_day_over_day(current, previous):
 
 
 def main():
-    tracking = load_tracking()
-    today_metrics = collect_metrics()
-    history = tracking.get("history", [])
+    try:
+        tracking = load_tracking()
+        today_metrics = collect_metrics()
+        history = tracking.get("history", [])
 
-    # Check if today already recorded
-    today = today_metrics["date"]
-    existing = [h for h in history if h["date"] == today]
+        # Check if today already recorded
+        today = today_metrics["date"]
+        existing = [h for h in history if h["date"] == today]
 
-    if existing:
-        # Update today's entry
+        if existing:
+            for h in history:
+                if h["date"] == today:
+                    h.update(today_metrics)
+                    break
+        else:
+            history.append(today_metrics)
+
+        # Keep last 90 days
+        history = history[-90:]
+        tracking["history"] = history
+        save_tracking(tracking)
+
+        # Compare with yesterday
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+        yesterday_entry = None
         for h in history:
-            if h["date"] == today:
-                h.update(today_metrics)
+            if h["date"] == yesterday:
+                yesterday_entry = h
                 break
-    else:
-        history.append(today_metrics)
+        if not yesterday_entry and len(history) >= 2:
+            yesterday_entry = history[-2]
 
-    # Keep last 90 days
-    history = history[-90:]
-    tracking["history"] = history
-    save_tracking(tracking)
+        comparison = compare_day_over_day(today_metrics, yesterday_entry)
+        print(comparison)
 
-    # Compare with yesterday
-    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    yesterday_entry = None
-    for h in history:
-        if h["date"] == yesterday:
-            yesterday_entry = h
-            break
-    if not yesterday_entry and len(history) >= 2:
-        yesterday_entry = history[-2]
-
-    comparison = compare_day_over_day(today_metrics, yesterday_entry)
-    print(comparison)
-
-    # Save comparison
-    with open(PROJECT_ROOT / ".optimizer-data" / "daily-comparison.txt", "w") as f:
-        f.write(comparison)
+        # Save comparison
+        with open(PROJECT_ROOT / ".optimizer-data" / "daily-comparison.txt", "w") as f:
+            f.write(comparison)
+    except Exception as e:
+        print(f"❌ Daily tracker error: {e}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-25T20:44:20.660354",
-  "period_days": 14,
+  "generated_at": "2026-05-26T20:05:36.852260",
+  "period_days": 7,
   "search_console": {
     "summary": {
       "clicks": 1,
-      "impressions": 223,
-      "ctr": 0.45,
-      "position": 28.4,
-      "period_days": 14
+      "impressions": 211,
+      "ctr": 0.47,
+      "position": 29.8,
+      "period_days": 7
     },
     "top_queries": [
       {
@@ -97,9 +97,9 @@
       {
         "query": "formula for monthly mortgage payment and tax",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": 0,
-        "position": 64.5
+        "position": 76
       },
       {
         "query": "how do i calculate my marginal tax rate",
@@ -190,9 +190,9 @@
       {
         "page": "https://www.qfinhub.com/",
         "clicks": 1,
-        "impressions": 28,
-        "ctr": 3.57,
-        "position": 2.0
+        "impressions": 17,
+        "ctr": 5.88,
+        "position": 1.9
       },
       {
         "page": "https://www.qfinhub.com/blog/30-year-treasury-yield-hits-1999-levels-how-to-protect-your-savings-and-retireme",
@@ -239,9 +239,9 @@
       {
         "page": "https://www.qfinhub.com/blog/how-to-calculate-monthly-mortgage-payment",
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 1,
         "ctr": 0,
-        "position": 13.8
+        "position": 76
       },
       {
         "page": "https://www.qfinhub.com/blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap",
@@ -260,9 +260,9 @@
       {
         "page": "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
         "clicks": 0,
-        "impressions": 10,
+        "impressions": 11,
         "ctr": 0,
-        "position": 7.9
+        "position": 7.7
       },
       {
         "page": "https://www.qfinhub.com/calculators/loan/nashville-tn",
@@ -281,16 +281,9 @@
       {
         "page": "https://www.qfinhub.com/calculators/percentage-calculator",
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 8,
         "ctr": 0,
-        "position": 5.5
-      },
-      {
-        "page": "https://www.qfinhub.com/calculators/rent-vs-buy",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 3.6
+        "position": 5
       },
       {
         "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
@@ -309,9 +302,9 @@
       {
         "page": "https://www.qfinhub.com/cookies",
         "clicks": 0,
-        "impressions": 28,
+        "impressions": 18,
         "ctr": 0,
-        "position": 2.1
+        "position": 1.9
       },
       {
         "page": "https://www.qfinhub.com/guides/how-to-use-child-care-cost",
@@ -342,6 +335,13 @@
         "position": 59.3
       },
       {
+        "page": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8.5
+      },
+      {
         "page": "https://www.qfinhub.com/scenario/retirement-planning-5c0e8e25",
         "clicks": 0,
         "impressions": 1,
@@ -364,13 +364,6 @@
       }
     ],
     "daily_trend": [
-      {
-        "date": "2026-05-18",
-        "clicks": 0,
-        "impressions": 15,
-        "ctr": 0,
-        "position": 4.7
-      },
       {
         "date": "2026-05-19",
         "clicks": 0,
@@ -405,6 +398,13 @@
         "impressions": 4,
         "ctr": 0,
         "position": 25.5
+      },
+      {
+        "date": "2026-05-24",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 7.7
       }
     ],
     "queries_by_position": {

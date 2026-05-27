@@ -1432,5 +1432,56 @@
       "tweetId": null,
       "guid": "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/"
     }
+  },
+  {
+    "ts": "2026-05-26T14:31:24.648Z",
+    "type": "news-match",
+    "details": {
+      "title": "ECB &apos;will do what is necessary&apos; to tame inflation, Bank of France governor tells CNBC",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108311755"
+    }
+  },
+  {
+    "ts": "2026-05-26T14:31:37.041Z",
+    "type": "news-published",
+    "details": {
+      "slug": "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+      "title": "ECB Rate Hike Impact on Mortgages: How to Protect Your Finances",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108311755"
+    }
+  },
+  {
+    "ts": "2026-05-26T14:31:42.043Z",
+    "type": "news-match",
+    "details": {
+      "title": "UK gilt yields retreat from multi-decade highs as political drama mellows, rate hike expectations ease",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108311823"
+    }
+  },
+  {
+    "ts": "2026-05-27T14:30:47.838Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal judge had sex in chambers with high-ranking police officer, panel says",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108312169"
+    }
+  },
+  {
+    "ts": "2026-05-27T14:30:48.682Z",
+    "type": "news-match",
+    "details": {
+      "title": "Democratic attorneys general snub Vance&apos;s anti-fraud roundtable at White House after late invite",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108312029"
+    }
   }
 ]

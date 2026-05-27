@@ -1,0 +1,54 @@
+[2026-05-27 16:57:44] X Agent v3 (CloakBrowser) started
+[2026-05-27 16:57:44] Mode: Daily Post
+[2026-05-27 16:57:44] ═══ X Agent v3 (CloakBrowser) — Daily Run ═══
+[2026-05-27 16:57:44] Date: 2026-05-27
+[2026-05-27 16:57:44] Generating content via DeepSeek...
+[2026-05-27 16:57:45] Content: How many people know their exact net worth off the top of their head? Only 1 in 3 can. Stop guessing...
+[2026-05-27 16:57:45] DRY RUN — content generated but not posted
+[2026-05-27 16:57:45] API cost: $0.00 (CloakBrowser + DeepSeek)
+[2026-05-27 16:57:45] 
+[2026-05-27 16:57:45] Done.
+[2026-05-27 17:00:01] X Agent v3 (CloakBrowser) started
+[2026-05-27 17:00:01] Mode: Daily Post
+[2026-05-27 17:00:01] ═══ X Agent v3 (CloakBrowser) — Daily Run ═══
+[2026-05-27 17:00:01] Date: 2026-05-27
+[2026-05-27 17:00:01] Generating content via DeepSeek...
+[2026-05-27 17:00:03] Content: Only 12% of Americans could pass a basic financial literacy test. Most people guess their mortgage, ...
+[2026-05-27 17:00:03] Posting via CloakBrowser...
+[2026-05-27 17:00:03] Viral engine error (self-tweet): usage: x-viral-engine.py [-h]
+                         [--mode {giant-reply,viral-thread,challenge,newsjack,engage,self-tweet,full}]
+x-viral-engine.py: error: unrecognized arguments: --content-file /h
+[2026-05-27 17:00:03] ✗ Post failed — check CloakBrowser/X login
+[2026-05-27 17:00:03] API cost: $0.00 (CloakBrowser + DeepSeek)
+[2026-05-27 17:00:03] 
+[2026-05-27 17:00:03] Done.
+[2026-05-27 17:01:31] X Agent v3 (CloakBrowser) started
+[2026-05-27 17:01:31] Mode: Content Generation
+[2026-05-27 17:01:31] ═══ X Agent v3 — Content Generation ═══
+[2026-05-27 17:01:33]   ✓ mortgage calculator
+[2026-05-27 17:01:35]   ✓ compound interest calculator
+[2026-05-27 17:01:37]   ✓ retirement planning calculator
+[2026-05-27 17:01:39]   ✓ debt snowball calculator
+[2026-05-27 17:01:41]   ✓ budget planner
+[2026-05-27 17:01:41] Generated 5 posts. Total library: 5
+[2026-05-27 17:01:41] Done.
+[2026-05-27 18:37:39] X Agent v3 (CloakBrowser) started
+[2026-05-27 18:37:39] Mode: Daily Post
+[2026-05-27 18:37:39] ═══ X Agent v3 (CloakBrowser) — Daily Run ═══
+[2026-05-27 18:37:39] Date: 2026-05-27
+[2026-05-27 18:37:39] Generating content via Gemini...
+[2026-05-27 18:37:42] Content: Are you *really* on...
+[2026-05-27 18:37:42] DRY RUN — content generated but not posted
+[2026-05-27 18:37:42] API cost: $0.00 (CloakBrowser + Gemini)
+[2026-05-27 18:37:42] 
+[2026-05-27 18:37:42] Done.
+[2026-05-27 20:31:29] X Agent v3 (CloakBrowser) started
+[2026-05-27 20:31:29] Mode: Content Generation
+[2026-05-27 20:31:29] ═══ X Agent v3 — Content Generation ═══
+[2026-05-27 20:31:31]   ✓ mortgage calculator
+[2026-05-27 20:31:33]   ✓ compound interest calculator
+[2026-05-27 20:31:35]   ✓ retirement planning calculator
+[2026-05-27 20:31:37]   ✓ debt snowball calculator
+[2026-05-27 20:31:39]   ✓ budget planner
+[2026-05-27 20:31:39] Generated 5 posts. Total library: 10
+[2026-05-27 20:31:39] Done.

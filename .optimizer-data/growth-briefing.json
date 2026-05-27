@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-26T01:08:30.209260",
+  "generated_at": "2026-05-27T15:43:25.084335",
   "gsc": {
     "summary": {
       "clicks": 0,
-      "impressions": 79,
+      "impressions": 80,
       "ctr": 0.0,
-      "position": 65.0,
-      "pages_indexed": 23,
+      "position": 65.4,
+      "pages_indexed": 24,
       "period_days": 14
     },
     "daily_trend": [
@@ -43,6 +43,13 @@
         "clicks": 0,
         "impressions": 2,
         "position": 45.5,
+        "ctr": 0.0
+      },
+      {
+        "date": "2026-05-25",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 84.0,
         "ctr": 0.0
       }
     ],
@@ -342,73 +349,78 @@
   ],
   "comparison": {
     "yesterday": {
-      "date": "2026-05-22",
-      "clicks": 0,
-      "impressions": 32,
-      "position": 64.9,
-      "ctr": 0.0
-    },
-    "today": {
       "date": "2026-05-23",
       "clicks": 0,
       "impressions": 2,
       "position": 45.5,
       "ctr": 0.0
     },
+    "today": {
+      "date": "2026-05-25",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 84.0,
+      "ctr": 0.0
+    },
     "delta": {
-      "impressions": -30,
+      "impressions": -1,
       "clicks": 0,
       "ctr": 0.0,
-      "position": -19.4
+      "position": 38.5
     },
     "alerts": [
-      "\u26a0\ufe0f Impressions dropped by 30 (32 \u2192 2)",
+      "\u26a0\ufe0f Impressions dropped by 1 (2 \u2192 1)",
+      "\u26a0\ufe0f Avg position worsened by 38.5 (higher = worse)",
       "\u26a0\ufe0f CTR stagnant at 0.0% \u2014 below 2% target"
     ],
-    "status": "warning"
+    "status": "critical"
   },
-  "previous_day_gsc": {
-    "clicks_7d": 1,
-    "impressions_7d": 223,
-    "ctr": 0.45,
-    "avg_position": 28.4
-  },
+  "previous_day_gsc": {},
   "action_required": true,
   "action_items": [
     {
-      "action": "RECOVERY_MODE",
-      "reason": "Metrics not improving (status=warning) \u2014 DOUBLE ALL EFFORTS",
+      "action": "ESCALATION_MODE",
+      "reason": "Metrics not improving (status=critical) \u2014 TRIPLE ALL EFFORTS",
       "alerts": [
-        "\u26a0\ufe0f Impressions dropped by 30 (32 \u2192 2)",
+        "\u26a0\ufe0f Impressions dropped by 1 (2 \u2192 1)",
+        "\u26a0\ufe0f Avg position worsened by 38.5 (higher = worse)",
         "\u26a0\ufe0f CTR stagnant at 0.0% \u2014 below 2% target"
       ],
-      "multiplier": "DOUBLE"
+      "multiplier": "TRIPLE"
     },
     {
       "action": "ctr_boost",
-      "reason": "Aggressive CTR optimization \u2014 rewrite ALL low-CTR page metas (12+ pages)",
+      "reason": "Aggressive CTR optimization \u2014 rewrite ALL low-CTR page metas (15+ pages)",
       "targets": [],
-      "note": "Rewrite every page in low_ctr_targets. Target 12+ rewrites today."
+      "note": "Rewrite every page in low_ctr_targets. Target 15+ rewrites today."
     },
     {
       "action": "scenario_push",
-      "reason": "Generate 40 scenario pages from trends and top queries",
-      "count": 40
+      "reason": "Generate 50 scenario pages from trends and top queries",
+      "count": 50
     },
     {
       "action": "scenario_uniqueness_upgrade",
       "reason": "Upgrade 15-20 existing scenario pages with real-life examples, comparison tables, and personalized insights",
-      "count": 15,
+      "count": 20,
       "note": "For each: add 'What this means for you', comparison data, and unique takeaway"
     },
     {
       "action": "outreach_accelerate",
-      "reason": "Send 30 widget outreach emails for backlink acquisition",
-      "count": 30
+      "reason": "Send 40 widget outreach emails for backlink acquisition",
+      "count": 40
     },
     {
       "action": "haro_double_check",
       "reason": "Check HARO for relevant journalist queries \u2014 respond to ALL finance-related queries"
+    },
+    {
+      "action": "emergency_blog",
+      "reason": "ESCALATION: Create emergency high-value blog post targeting the #1 GSC query"
+    },
+    {
+      "action": "indexing_double",
+      "reason": "ESCALATION: Run Indexing API submission TWICE"
     },
     {
       "action": "trends_content",

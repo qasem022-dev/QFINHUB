@@ -24,5 +24,44 @@
     "skipped": 0,
     "failed": 0,
     "notes": "No HARO digests found. Inbox cleared: 40 unread messages (30 delivery-failure bounces + 10 non-HARO) marked as read. Last HARO digest received was May 13 evening edition (12 days ago). HARO email verification may be incomplete."
+  },
+  {
+    "timestamp": "2026-05-26T13:15:51.129Z",
+    "runType": "scheduled-cron",
+    "edition": "morning",
+    "emailsFound": 5,
+    "haroDigests": 0,
+    "queriesParsed": 0,
+    "relevant": 0,
+    "sent": 0,
+    "skipped": 0,
+    "failed": 0,
+    "notes": "No HARO digests found. Last HARO digest: May 22 evening (UID 181) — 4 days w/o digests. 5 unread: 2x GSC, 1x Reddit, 1x delivery delay, 1x Supabase pause. 17 old HARO already processed/deduped. HARO delivery stopped after Fri May 22; no Sat/Sun/Mon/Tue editions. Verif may be silently revoked."
+  },
+  {
+    "timestamp": "2026-05-26T14:15:00.000Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon",
+    "emailsFound": 5,
+    "haroDigests": 0,
+    "queriesParsed": 0,
+    "relevant": 0,
+    "sent": 0,
+    "skipped": 0,
+    "failed": 0,
+    "notes": "No HARO digests. 5 unread non-HARO emails. Last HARO: May 22 evening (UID 181). Missing Fri May 23 (3 editions) + Tue May 26 (2 so far). 5 weekday editions missed. SILENT VERIFICATION REVOCATION — re-verify at helpareporter.com."
+  },
+  {
+    "timestamp": "2026-05-26T16:10:00.000Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon-2",
+    "emailsFound": 6,
+    "haroDigests": 6,
+    "queriesParsed": 52,
+    "relevant": 2,
+    "sent": 2,
+    "skipped": 0,
+    "failed": 0,
+    "notes": "HARO digests RESUMED after 4-day gap (May 22→May 26). 6 HARO digest emails with 52 total queries. 2 matched finance keywords: (1) Costly workplace conflicts — BORED PANDA, (2) Boss Moves: Powerful Women strategies. Both generated and sent successfully via SMTP to HARO reply addresses. 3 pre-existing log failures from May 22 (recipient parse bug, already fixed)."
   }
 ]

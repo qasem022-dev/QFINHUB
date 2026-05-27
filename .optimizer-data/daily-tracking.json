@@ -28,6 +28,35 @@
       "haro": {
         "total_responses": 3
       }
+    },
+    {
+      "date": "2026-05-27",
+      "timestamp": "2026-05-27T18:46:04.490906",
+      "x": {
+        "giant_replies": 42,
+        "threads": 5,
+        "challenges": 4,
+        "self_tweets": 5,
+        "followers": 4,
+        "impressions_est": 1643000
+      },
+      "pinterest": {
+        "total_pins": 100,
+        "monthly_views": "230",
+        "following": 19
+      },
+      "blog": {
+        "total_posts": 100
+      },
+      "gsc": {
+        "clicks_7d": 1,
+        "impressions_7d": 211,
+        "ctr": 0.47,
+        "avg_position": 29.8
+      },
+      "haro": {
+        "total_responses": 0
+      }
     }
   ]
 }

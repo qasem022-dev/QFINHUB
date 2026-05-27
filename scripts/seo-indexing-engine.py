@@ -205,6 +205,33 @@ def log_result(success, failed, errors, total_urls):
     except:
         pass
 
+def show_summary():
+    """Show all-time indexing summary."""
+    if not os.path.exists(LOG_FILE):
+        return
+    total_success = 0
+    total_failed = 0
+    total_runs = 0
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    today_success = 0
+    
+    try:
+        with open(LOG_FILE) as f:
+            for line in f:
+                if line.strip():
+                    entry = json.loads(line)
+                    total_success += entry.get("submitted", 0)
+                    total_failed += entry.get("failed", 0)
+                    total_runs += 1
+                    ts = entry.get("timestamp", "")[:10]
+                    if ts == today:
+                        today_success += entry.get("submitted", 0)
+    except:
+        pass
+    
+    print(f"\n📊 ALL-TIME: {total_success} URLs indexed in {total_runs} runs ({total_failed} failed)")
+    print(f"📆 TODAY: {today_success} URLs submitted")
+
 def main():
     print("=" * 55)
     print("🔍 QFINHUB Max-Throughput Indexing Engine")
@@ -274,6 +301,7 @@ def main():
         print(f"⛔ Hit rate limit — resume tomorrow for remaining URLs")
 
     log_result(success, failed, errors, len(urls))
+    show_summary()
 
 
 if __name__ == "__main__":
