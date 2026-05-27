@@ -41,7 +41,7 @@ export function generateGuideMetaTitle(calcTitle: string): string {
 
 /** Generate a search-friendly meta description for a guide page */
 export function generateGuideMetaDescription(calcTitle: string): string {
-  return `Master the ${calcTitle.toLowerCase()} in 3 easy steps. Free tool with instant results, expert tips, and common mistakes to avoid. Start calculating now — no email required.`;
+  return `Master the ${calcTitle.toLowerCase()} in 3 easy steps. Free tool with instant results, expert tips, and common mistakes to avoid. Start calculating now — no email required, 100% free.`;
 }
 
 /**
