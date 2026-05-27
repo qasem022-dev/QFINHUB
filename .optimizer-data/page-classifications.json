@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-05-27T21:49:35.583529",
+  "total_pages_scored": 4,
+  "classifications": {
+    "B_NEAR_WINNER": 1,
+    "C_WEAK": 1,
+    "D_REDUNDANT": 2
+  },
+  "pages": [
+    {
+      "url": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+      "slug": "tools/loan-20k-5yr-8pct",
+      "type": "tool_variant",
+      "score": 68,
+      "classification": "B_NEAR_WINNER",
+      "position": 11,
+      "impressions": 13,
+      "reasons": [
+        "pos_top20",
+        "high_impressions",
+        "exact_match_title",
+        "tool_variant_low_utility",
+        "generic_intent",
+        "authority_weak"
+      ]
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "slug": "tools/afford-100k-40k-6-5pct",
+      "type": "tool_variant",
+      "score": 48,
+      "classification": "C_WEAK",
+      "position": 94.33333333333333,
+      "impressions": 20,
+      "reasons": [
+        "pos_top100",
+        "high_impressions",
+        "exact_match_title",
+        "tool_variant_low_utility",
+        "generic_intent",
+        "authority_weak"
+      ]
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "slug": "guides/how-to-use-retirement-income",
+      "type": "guide",
+      "score": 35,
+      "classification": "D_REDUNDANT",
+      "position": 90.25,
+      "impressions": 7,
+      "reasons": [
+        "pos_top100",
+        "medium_impressions",
+        "exact_match_title",
+        "generic_intent",
+        "authority_weak"
+      ]
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "slug": "calculators/tax/philadelphia-pa",
+      "type": "other",
+      "score": 35,
+      "classification": "D_REDUNDANT",
+      "position": 61,
+      "impressions": 5,
+      "reasons": [
+        "pos_top100",
+        "medium_impressions",
+        "exact_match_title",
+        "generic_intent",
+        "authority_weak"
+      ]
+    }
+  ]
+}
