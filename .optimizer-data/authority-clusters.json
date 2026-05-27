@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-05-27T22:05:15.447896",
+  "total_clusters": 10,
+  "strong_clusters": 6,
+  "medium_clusters": 4,
+  "weak_clusters": 0,
+  "clusters": [
+    {
+      "hub": "mortgage-calculator",
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "supporting_blog_posts": 8,
+      "blog_links": [
+        {
+          "slug": "how-to-calculate-monthly-mortgage-payment",
+          "title": "How to Calculate Your Monthly Mortgage Payment"
+        },
+        {
+          "slug": "rent-vs-buy-which-is-better",
+          "title": "Rent vs Buy: Which Is Better for Your Financial Situation?"
+        },
+        {
+          "slug": "when-to-refinance-your-mortgage-complete-guide-2026",
+          "title": "When Should You Refinance Your Mortgage? Complete Guide (2026)"
+        },
+        {
+          "slug": "200k-mortgage-payment-30-years",
+          "title": "$200,000 Mortgage Payment for 30 Years: Exact Monthly Cost"
+        },
+        {
+          "slug": "monthly-mortgage-payment-formula-tax-insurance",
+          "title": "Monthly Mortgage Payment Formula With Tax and Insurance (PITI)"
+        }
+      ],
+      "strength": "STRONG"
+    },
+    {
+      "hub": "compound-interest",
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "supporting_blog_posts": 12,
+      "blog_links": [
+        {
+          "slug": "compound-interest-explained",
+          "title": "Compound Interest Explained: How Your Money Grows Over Time"
+        },
+        {
+          "slug": "how-inflation-affects-your-savings-and-investments",
+          "title": "How Inflation Affects Your Savings and Investments"
+        },
+        {
+          "slug": "why-britain-s-potential-next-pm-is-putting-investors-on-edge",
+          "title": "Why Britain\u2019s Potential Next PM Is Putting Investors on Edge"
+        },
+        {
+          "slug": "investing-europe-s-vc-market-is-splitting-ai-drives-the-gap",
+          "title": "Investing Europe's VC Market Is Splitting: AI Drives the Gap"
+        },
+        {
+          "slug": "investing-massive-options-bet-rattles-oil-market-amid-iran-war-fears",
+          "title": "Investing Massive Options Bet Rattles Oil Market Amid Iran War Fears"
+        }
+      ],
+      "strength": "STRONG"
+    },
+    {
+      "hub": "retirement-planning",
+      "url": "https://www.qfinhub.com/calculators/retirement-planning",
+      "supporting_blog_posts": 3,
+      "blog_links": [
+        {
+          "slug": "complete-guide-to-retirement-planning-2026",
+          "title": "The Complete Guide to Retirement Planning in 2026"
+        },
+        {
+          "slug": "investment-calculator-withdrawals",
+          "title": "Investment Calculator With Withdrawals: Plan Your Retirement Income"
+        },
+        {
+          "slug": "retire-by-40-calculator-how-much-needed",
+          "title": "Retire by 40 Calculator: How Much Do You Need Saved?"
+        }
+      ],
+      "strength": "STRONG"
+    },
+    {
+      "hub": "loan-calculator",
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "supporting_blog_posts": 4,
+      "blog_links": [
+        {
+          "slug": "20000-loan-5-years-8-percent-monthly-payment",
+          "title": "$20,000 Loan for 5 Years at 8%: Your Monthly Payment Is $405.53"
+        },
+        {
+          "slug": "if-you-borrow-20-000-for-5-years-at-8-apr-whats-your-monthly-payment",
+          "title": "If You Borrow $20,000 for 5 Years at 8% APR \u2014 What's Your Monthly Payment?"
+        },
+        {
+          "slug": "mortgage-rates-june-2026-current-rates-home-affordability-calculator",
+          "title": "Mortgage Rates June 2026 \u2014 Current Rates & Home Affordability Calculator"
+        },
+        {
+          "slug": "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+          "title": "How to Pay Off Credit Card Debt Fast in 2026 \u2014 Proven Strategies That Actually Work"
+        }
+      ],
+      "strength": "STRONG"
+    },
+    {
+      "hub": "tax-calculator",
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "supporting_blog_posts": 1,
+      "blog_links": [
+        {
+          "slug": "understanding-tax-brackets-what-rate-do-you-actually-pay",
+          "title": "Understanding Tax Brackets: What Rate Do You Actually Pay?"
+        }
+      ],
+      "strength": "MEDIUM"
+    },
+    {
+      "hub": "debt-payoff",
+      "url": "https://www.qfinhub.com/calculators/debt-payoff",
+      "supporting_blog_posts": 3,
+      "blog_links": [
+        {
+          "slug": "how-student-loan-payments-affect-monthly-budget",
+          "title": "How Student Loan Payments Affect Your Monthly Budget"
+        },
+        {
+          "slug": "debt-snowball-vs-debt-avalanche",
+          "title": "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?"
+        },
+        {
+          "slug": "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36",
+          "title": "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%"
+        }
+      ],
+      "strength": "STRONG"
+    },
+    {
+      "hub": "budget-planner",
+      "url": "https://www.qfinhub.com/calculators/budget-planner",
+      "supporting_blog_posts": 2,
+      "blog_links": [
+        {
+          "slug": "how-student-loan-payments-affect-monthly-budget",
+          "title": "How Student Loan Payments Affect Your Monthly Budget"
+        },
+        {
+          "slug": "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+          "title": "How to Pay Off Credit Card Debt Fast in 2026 \u2014 Proven Strategies That Actually Work"
+        }
+      ],
+      "strength": "MEDIUM"
+    },
+    {
+      "hub": "401k-calculator",
+      "url": "https://www.qfinhub.com/calculators/401k-calculator",
+      "supporting_blog_posts": 1,
+      "blog_links": [
+        {
+          "slug": "complete-guide-to-retirement-planning-2026",
+          "title": "The Complete Guide to Retirement Planning in 2026"
+        }
+      ],
+      "strength": "MEDIUM"
+    },
+    {
+      "hub": "investment-return",
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "supporting_blog_posts": 1,
+      "blog_links": [
+        {
+          "slug": "compound-interest-explained",
+          "title": "Compound Interest Explained: How Your Money Grows Over Time"
+        }
+      ],
+      "strength": "MEDIUM"
+    },
+    {
+      "hub": "credit-card-payoff",
+      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
+      "supporting_blog_posts": 3,
+      "blog_links": [
+        {
+          "slug": "debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you",
+          "title": "Debt Pentagon Federal Credit Union Review 2026: Is It Right for You?"
+        },
+        {
+          "slug": "banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+          "title": "Banks Start $6.2 Billion Warner Bros. Debt Cleanup Before Merger: What It Means for Your Finances"
+        },
+        {
+          "slug": "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+          "title": "How to Pay Off Credit Card Debt Fast in 2026 \u2014 Proven Strategies That Actually Work"
+        }
+      ],
+      "strength": "STRONG"
+    }
+  ]
+}
