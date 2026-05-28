@@ -1,7 +1,7 @@
 /**
  * V2: Calculator → Decision Page mappings for cross-linking.
  * Decision pages that support specific calculator hubs.
- * Updated: 2026-05-28 (15 decision pages)
+ * Updated: 2026-05-28 (15 decision pages, redeploy)
  */
 
 export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; title: string }>> = {
