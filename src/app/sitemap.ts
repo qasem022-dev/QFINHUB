@@ -143,33 +143,59 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // Programmatic SEO variant pages (thousands of targeted pages)
+  // V2 Correction Phase 3: Programmatic SEO variant pages — only clean + GSC-confirmed variants.
+  // Formula variants (loan-20k-5yr-8pct patterns) are noindexed + canonicalized → excluded.
+  const TOOL_GSC_SLUGS = new Set([
+    "afford-100k-40k-6-5pct",
+    "afford-130k-40k-7pct",
+  ]);
+
+  function isFormulaVariant(slug: string): boolean {
+    const parts = slug.split("-");
+    const hasPct = parts.some((p) => p.endsWith("pct"));
+    const hasYr = parts.some((p) => p.endsWith("yr"));
+    const numCount = parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length;
+    return (hasPct && hasYr) || (/^[a-z]+-\d/.test(slug) && numCount >= 2);
+  }
+
   let variantPages: SitemapEntry[] = [];
   try {
     const variants = getAllVariantPages();
-    variantPages = variants.map((v) => ({
-      url: `${BASE_URL}/tools/${v.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as ChangeFrequency,
-      priority: 0.7,
-    }));
+    variantPages = variants
+      .filter((v) => !isFormulaVariant(v.slug) || TOOL_GSC_SLUGS.has(v.slug))
+      .map((v) => ({
+        url: `${BASE_URL}/tools/${v.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as ChangeFrequency,
+        priority: 0.7,
+      }));
   } catch (e) {
     console.warn("Failed to generate variant pages:", e);
   }
 
-  // Geotargeted city pages (mortgage calculator houston, etc.)
+  // V2 Correction Phase 3: Geo pages — only keep the 3 with GSC impressions.
+  // All other geo pages are noindexed (doorway risk) → excluded from sitemap.
+  const GEO_GSC_PATHS = new Set([
+    "/calculators/loan/nashville-tn",
+    "/calculators/loan/reno-nv",
+    "/calculators/tax/philadelphia-pa",
+  ]);
+
   let geotargetedPages: SitemapEntry[] = [];
   try {
     const { US_CITIES, GEOTARGETED_CALCULATORS } = await import("@/lib/programmatic-seo/data/us-cities");
     for (const calc of GEOTARGETED_CALCULATORS) {
       for (const city of US_CITIES) {
         const citySlug = city.name.toLowerCase().replace(/\s+/g, "-").replace(/\./g, "");
-        geotargetedPages.push({
-          url: `${BASE_URL}/calculators/${calc.slug}/${citySlug}-${city.stateAbbr.toLowerCase()}`,
-          lastModified: new Date(),
-          changeFrequency: "monthly" as ChangeFrequency,
-          priority: 0.6,
-        });
+        const geoPath = `/calculators/${calc.slug}/${citySlug}-${city.stateAbbr.toLowerCase()}`;
+        if (GEO_GSC_PATHS.has(geoPath)) {
+          geotargetedPages.push({
+            url: `${BASE_URL}${geoPath}`,
+            lastModified: new Date(),
+            changeFrequency: "monthly" as ChangeFrequency,
+            priority: 0.6,
+          });
+        }
       }
     }
   } catch (e) {
