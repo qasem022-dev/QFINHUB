@@ -1033,4 +1033,457 @@ export const decisionPages: DecisionPage[] = [
     wordCount: 2300,
     schemaType: "Article",
   },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 11: How Much Emergency Fund Do I Need?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "how-much-emergency-fund-do-i-need",
+    title: "How Much Emergency Fund Do I Need? 3, 6, or 12 Months? (2026)",
+    description:
+      "Should you save 3, 6, or 12 months of expenses? Compare emergency fund sizes by job stability, dependents, and income sources. Free savings calculator included.",
+    cluster: "personal",
+    question: "How many months of living expenses should I save in my emergency fund?",
+    shortAnswer:
+      "The standard recommendation is 3-6 months of essential expenses. Single earners in volatile industries should target 6-12 months. Dual-income households with stable jobs can safely hold 3 months. The right number depends on your job security, number of dependents, health situation, and whether you own a home. At $4,000/month in essential expenses, a 6-month fund = $24,000.",
+    results: [
+      { label: "3-Month Fund (Dual Income, Stable Jobs)", value: "$12,000", detail: "Based on $4,000/month essential expenses. Covers job search for one earner while the other still works." },
+      { label: "6-Month Fund (Single Earner, Stable Job)", value: "$24,000", detail: "Standard recommendation. Covers 6 months of full expenses if you lose your job. $4,000 × 6." },
+      { label: "12-Month Fund (Freelancer / Commission-Based)", value: "$48,000", detail: "For variable income earners. Covers prolonged dry spells. $4,000 × 12." },
+      { label: "Minimum Starter Fund (Dave Ramsey Baby Step 1)", value: "$1,000", detail: "While paying off high-interest debt. Keeps small emergencies from derailing your debt payoff plan." },
+      { label: "Monthly Essential Expenses (Median US Household)", value: "$3,500-5,000/month", detail: "Housing, food, utilities, transportation, insurance, minimum debt payments. Not total spending — cut subscriptions and dining out." },
+    ],
+    assumptions: [
+      "Monthly essential expenses: $4,000 (housing, food, utilities, insurance, minimum debt payments, transportation)",
+      "Job search time: 3-6 months average for professional roles",
+      "No other income sources during emergency (conservative)",
+      "Fund held in high-yield savings account (4% APY, FDIC insured)",
+      "Health insurance maintained (COBRA or ACA during job loss)",
+      "Homeowners: budget extra for emergency repairs ($5,000-10,000 cushion)",
+    ],
+    methodology: "Emergency fund target = monthly essential expenses × months of coverage needed. Essential expenses are the bare minimum to survive (housing, food, utilities, insurance, minimum debt payments) — not your current lifestyle spending. Job security, income variability, number of dependents, and homeownership all increase the recommended months.",
+    table: {
+      caption: "Recommended Emergency Fund by Situation",
+      headers: ["Situation", "Recommended Months", "At $4,000/month", "At $3,000/month", "At $5,000/month"],
+      rows: [
+        ["Dual income, stable jobs, renting", "3 months", "$12,000", "$9,000", "$15,000"],
+        ["Single earner, stable job, renting", "6 months", "$24,000", "$18,000", "$30,000"],
+        ["Single earner, volatile industry", "9 months", "$36,000", "$27,000", "$45,000"],
+        ["Freelancer / commission-based", "12 months", "$48,000", "$36,000", "$60,000"],
+        ["Homeowner (any situation)", "+$5-10k", "Add to above", "For repairs", "& deductible"],
+        ["With dependents (kids/parents)", "+1-2 months", "Per dependent", "More risk", "= more cushion"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Roth IRA as Backup Emergency Fund",
+        outcome: "Keep 1-2 months in cash savings, and treat Roth IRA contributions (not earnings) as a secondary emergency fund. Contributions can be withdrawn penalty-free anytime.",
+        pros: ["Less cash drag — more money invested", "Roth contributions always accessible", "Tax-free growth while money sits"],
+        cons: ["Market could be down when you need it", "Harder to rebuild Roth after withdrawal", "Should only be a backup, not primary fund"],
+      },
+      {
+        name: "HELOC as Emergency Backstop (Homeowners Only)",
+        outcome: "Keep 3 months in cash, open a $30,000 HELOC for extended emergencies. Only pay interest if you draw from it. Lower cash drag but introduces debt risk.",
+        pros: ["No interest until you use it", "Lower cash requirement (3 vs 6 months)", "Interest may be tax-deductible"],
+        cons: ["Bank can freeze HELOC in a crisis", "Variable interest rate risk", "Puts your home at risk if you can't repay"],
+      },
+    ],
+    risks: [
+      "Under-saving: The #1 cause of financial stress is not having enough cash when an emergency hits — 37% of Americans can't cover a $400 emergency",
+      "Over-saving: Keeping $50,000+ in cash earning 4% while inflation is 3% and the market returns 7% means losing ~3% in real returns annually on excess cash",
+      "Lifestyle creep: 'Essential' expenses tend to grow over time — recalculate your emergency fund every year",
+      "Job market changes: The 'safe' industry today may not be safe tomorrow — tech layoffs of 2023-2024 showed even stable jobs disappear",
+      "Health emergencies: A serious illness can drain savings AND eliminate income simultaneously — consider disability insurance",
+    ],
+    whatThisMeans:
+      "An emergency fund is financial insulation — it prevents one bad month from becoming a years-long debt spiral. Start with $1,000 if you have high-interest debt, then build to 3 months once debt is cleared. Homeowners, single earners, and anyone with dependents should target 6+ months. The fund belongs in a high-yield savings account — not stocks, not crypto, not under the mattress. Liquidity and safety matter more than returns here.",
+    nextSteps: [
+      "Calculate your true essential monthly expenses (not your current lifestyle spending)",
+      "If you have high-interest debt (>8%): save $1,000 minimum, then attack debt",
+      "If debt-free or low-interest debt only: save 3-6 months of essential expenses",
+      "Keep the fund in a separate high-yield savings account — out of sight, out of spending temptation",
+      "Use our Budget Planner to calculate your exact monthly living costs",
+    ],
+    faqs: [
+      { question: "Should I invest my emergency fund?",
+        answer: "No. An emergency fund needs to be liquid, stable, and immediately accessible. The stock market can drop 20%+ in a crisis — the exact moment you'd need the money. A high-yield savings account (currently 4% APY) or money market fund is the right vehicle. You're buying insurance, not chasing returns." },
+      { question: "Is $1,000 really enough to start?",
+        answer: "Dave Ramsey's $1,000 Baby Step 1 is a starter fund while you're paying off high-interest debt. It covers small emergencies (car repair, medical copay) without derailing your debt snowball. Once consumer debt is cleared, immediately build to 3-6 months. $1,000 is not a permanent emergency fund." },
+      { question: "What counts as an 'emergency'?",
+        answer: "Job loss, medical emergency, major car repair needed for work, essential home repair (broken furnace in winter). NOT: vacations, new furniture, holiday gifts, or 'I deserve it' purchases. If you can plan for it, it's not an emergency — it's a sinking fund." },
+      { question: "How do I build an emergency fund on a tight budget?",
+        answer: "Start small: $25-50/paycheck automatically transferred to a separate savings account. Cut one subscription ($15/month), cook one more meal at home ($50/week), or pick up one extra shift. At $200/month, you'll have $2,400 in a year. Progress beats perfection." },
+    ],
+    calculatorLinks: ["budget-planner", "savings-goal", "debt-payoff"],
+    supportingLinks: [
+      { url: "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", label: "Pay Off Credit Card Debt Fast" },
+      { url: "/decision/pay-off-debt-or-invest", label: "Pay Off Debt or Invest?" },
+    ],
+    wordCount: 2300,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 12: Can I Retire With $500k at 55?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "can-i-retire-with-500k-at-55",
+    title: "Can I Retire at 55 with $500,000? The Real Math (2026)",
+    description:
+      "Is $500k enough to retire at 55? See the safe withdrawal, healthcare costs until Medicare, Social Security bridge, and long-term success rate. Free retirement calculator.",
+    cluster: "retirement",
+    question: "Is $500,000 enough to retire at age 55 and live comfortably until Medicare and Social Security kick in?",
+    shortAnswer:
+      "Retiring at 55 on $500k is lean but possible if you can live on $20,000/year (4% withdrawal). The biggest challenge is the 10-year gap until Medicare at 65 — healthcare will cost $500-800/month. At 62, you can claim early Social Security (~$1,600/month), which significantly reduces portfolio withdrawals. However, $20,000/year is poverty-level income in most of the US. For a comfortable retirement at 55, aim for $750,000-1,000,000. The math works better if you have a paid-off home, a working spouse, or part-time income.",
+    results: [
+      { label: "Safe Annual Withdrawal at 4%", value: "$20,000/year", detail: "$1,667/month. This is lean FIRE territory — below the federal poverty line for a 2-person household ($20,440 in 2026)." },
+      { label: "With Social Security at 62 ($1,600/month)", value: "$39,200/year combined", detail: "Wait 7 years, then portfolio withdrawal can drop from $20k to ~$8k/year. Social Security dramatically improves the math after 62." },
+      { label: "Healthcare Cost (55-65, ACA Plan)", value: "$500-800/month", detail: "10 years of healthcare before Medicare. At $40k income, you likely qualify for ACA subsidies, reducing cost to $200-400/month." },
+      { label: "30-Year Success Rate (4% withdrawal)", value: "~85-90%", detail: "Lower than the 95% standard because you need 40+ years of withdrawals from a smaller base." },
+      { label: "If You Can Earn $15,000/year Part-Time", value: "Near 100% success", detail: "Part-time income of $1,250/month bridges the gap. Your portfolio withdrawal drops to 3% ($15,000), which is extremely safe." },
+    ],
+    assumptions: [
+      "Portfolio: $500,000 in 60/40 stocks/bonds",
+      "4% safe withdrawal rate ($20,000/year year 1, inflation-adjusted)",
+      "Social Security: $1,600/month at 62 (reduced benefit for early claiming)",
+      "Healthcare: ACA plan with subsidy at $40k income level ($200-400/month after subsidy)",
+      "Life expectancy: 90 years (35-year retirement)",
+      "Medicare eligibility: age 65",
+      "Paid-off home (no mortgage/rent — critical for this budget)",
+      "No pension income",
+    ],
+    methodology: "We model three phases: (1) Age 55-62: live entirely off portfolio at 4% withdrawal ($20,000/year). (2) Age 62-65: Social Security kicks in, reducing portfolio withdrawal to ~$8,000/year. (3) Age 65+: Medicare reduces healthcare costs. Monte Carlo simulation tests portfolio survival across all three phases using historical market returns.",
+    table: {
+      caption: "Retirement Income Phases: Age 55-90 ($500k Portfolio)",
+      headers: ["Phase", "Age", "Portfolio Withdrawal", "Social Security", "Total Annual Income", "Healthcare"],
+      rows: [
+        ["Portfolio Only", "55-62", "$20,000", "$0", "$20,000/year", "ACA plan (~$300/mo)"],
+        ["SS Phase-In", "62-65", "$8,000", "$19,200", "$27,200/year", "ACA plan (~$300/mo)"],
+        ["Medicare", "65+", "$10,000", "$19,200", "$29,200/year", "Medicare (~$200/mo)"],
+        ["Part-Time Work", "55-62", "$5,000", "$0 + $15k earned", "$20,000/year", "ACA (~$200/mo)"],
+        ["Geo-Arbitrage", "55+", "$12,000", "$19,200 (at 62)", "$31,200/year", "Local (cheaper)"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Work 5 More Years, Retire at 60 with $650k+",
+        outcome: "Save $30,000/year for 5 more years at 7% return = $172,500 additional. Portfolio grows from $500k to ~$700k from growth alone. Retire at 60 with ~$870k = $34,800/year safe withdrawal.",
+        pros: ["$15k/year more spending money", "5 fewer years of healthcare costs", "Higher Social Security at 62+"],
+        cons: ["5 more years of working", "Health or layoff could disrupt plan"],
+      },
+      {
+        name: "Geo-Arbitrage: Retire to a Lower-Cost Country Now",
+        outcome: "In Mexico, Portugal, or Thailand, $20,000/year provides a middle-class lifestyle. Healthcare costs $50-150/month instead of $500-800. Your $500k effectively behaves like $800k in purchasing power.",
+        pros: ["Retire immediately", "Better lifestyle on less money", "Adventure and new experiences"],
+        cons: ["Far from family", "Language and cultural barriers", "Visa requirements"],
+      },
+    ],
+    risks: [
+      "Sequence of returns: A 20% market drop in years 1-3 of retirement is devastating at 4% withdrawal on a small portfolio — consider 3% withdrawal ($15,000) for the first 5 years",
+      "Healthcare cost inflation: Medical costs have risen 5%+ annually — your ACA premiums could double between 55 and 65",
+      "Longevity: Living to 95 means a 40-year retirement — the 4% rule was tested for 30 years, not 40",
+      "Social Security uncertainty: Early claiming at 62 locks in a permanently reduced benefit — waiting until 67 gives 30% more",
+      "Lifestyle inflation: $20,000/year leaves zero room for travel, hobbies, or helping family",
+    ],
+    whatThisMeans:
+      "Retiring at 55 on $500k is possible but extremely tight. You'll need a paid-off home, minimal expenses, ACA health insurance, and a willingness to live frugally for 7 years until Social Security. The math improves dramatically with even modest part-time income ($15,000/year), which turns a risky plan into a nearly bulletproof one. If you can push to 60 or save another $250k, retirement becomes genuinely comfortable. The difference between $500k and $750k is the difference between 'just surviving' and 'actually retiring.'",
+    nextSteps: [
+      "Track your actual expenses for 12 months — can you live on $1,667/month?",
+      "Get your Social Security statement at ssa.gov to see your projected benefit at 62, 67, and 70",
+      "Research ACA health insurance costs in your state at your expected retirement income",
+      "Consider a 'bridge job' — part-time work that covers basic expenses while your portfolio grows untouched",
+      "Use our Retirement Planning Calculator to model different retirement ages and spending levels",
+    ],
+    faqs: [
+      { question: "Is $500k enough to retire at 55 with a paid-off house?",
+        answer: "Yes, but barely. With no mortgage/rent, your $1,667/month covers food, utilities, insurance, property tax, and a small buffer. You'll need ACA health insurance ($200-400/month with subsidies). This is lean FIRE — comfortable for minimalists, stressful for most. Consider part-time work for the first 5-7 years." },
+      { question: "How does Social Security change the math?",
+        answer: "At 62, early Social Security (~$1,600/month) nearly doubles your income to ~$3,100/month. This is the game-changer that makes $500k viable. But claiming at 62 permanently reduces your benefit — waiting until 67 gives ~$2,200/month. Use our Retirement Calculator to compare early vs full retirement age claiming." },
+      { question: "What if I have a 401(k) and a taxable brokerage?",
+        answer: "Use taxable brokerage first (age 55-59½), then tap 401(k) via the Rule of 55 if you leave your job at 55+. Roth IRA contributions can be withdrawn anytime tax-free. A Roth conversion ladder (convert 401(k) to Roth IRA, wait 5 years, withdraw contributions) is the standard early retirement strategy." },
+      { question: "Can I retire at 55 with $500k and a pension?",
+        answer: "A pension dramatically improves the math. A $1,500/month pension = $18,000/year. Combined with $20,000 from your portfolio = $38,000/year — a comfortable retirement. Subtract pension income from your spending need, then multiply the remainder by 25 for your portfolio target." },
+    ],
+    calculatorLinks: ["retirement-planning", "fire-calculator", "compound-interest"],
+    supportingLinks: [
+      { url: "/blog/complete-guide-to-retirement-planning-2026", label: "Complete Guide to Retirement Planning" },
+      { url: "/decision/retire-at-45-with-1-million", label: "Retire at 45 With $1 Million?" },
+      { url: "/decision/how-much-do-i-need-to-retire", label: "How Much Do I Need to Retire?" },
+    ],
+    wordCount: 2400,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 13: What Tax Bracket Am I In?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "what-tax-bracket-am-i-in",
+    title: "What Tax Bracket Am I In? Marginal vs Effective Rate Explained (2026)",
+    description:
+      "Confused about tax brackets? Learn the difference between marginal and effective tax rates using real 2026 brackets. Free tax calculator — enter your income to see your exact rate.",
+    cluster: "tax",
+    question: "I earn $85,000 per year — what tax bracket am I actually in, and how much do I really pay?",
+    shortAnswer:
+      "At $85,000 taxable income (single filer, 2026), your marginal tax bracket is 22% — that's the rate on your last dollar earned. But your effective tax rate — what you actually pay overall — is approximately 14.5%. You pay 10% on the first $11,600, 12% on $11,601-$47,150, and 22% on $47,151-$85,000. Total federal tax: ~$12,300. The US has a progressive tax system — being in the 22% bracket doesn't mean you pay 22% on everything.",
+    results: [
+      { label: "Marginal Tax Bracket (Single, $85k)", value: "22%", detail: "The rate on your next dollar of income. If you earn $1 more, 22¢ goes to federal tax. This is the rate that matters for decisions like overtime, bonuses, and 401(k) contributions." },
+      { label: "Effective Tax Rate (Single, $85k)", value: "14.5%", detail: "Total federal income tax ($12,300) ÷ taxable income ($85,000). This is what you actually pay — much lower than the 22% 'bracket' most people quote." },
+      { label: "Take-Home Pay After Federal Tax", value: "$72,700/year ($6,058/month)", detail: "Before state tax, FICA (7.65% Social Security + Medicare), and any deductions for 401(k) or health insurance." },
+      { label: "Total Tax Burden Including FICA (7.65%)", value: "~22.15% effective", detail: "Federal income tax ($12,300) + FICA ($6,503) = $18,803. On $85,000 gross = 22.1% total tax." },
+      { label: "If You Put $10,000 in a Traditional 401(k)", value: "Save $2,200 in federal tax", detail: "Your $10,000 contribution avoids 22% marginal tax. Taxable income drops to $75,000, saving $2,200. This is why pre-tax retirement accounts are powerful." },
+    ],
+    assumptions: [
+      "Filing status: Single (2026 brackets)",
+      "Standard deduction: $14,600",
+      "No additional deductions or credits (simplified)",
+      "Taxable income = gross − standard deduction",
+      "2026 brackets: 10% ($0-$11,600), 12% ($11,601-$47,150), 22% ($47,151-$100,525), 24% ($100,526-$191,950), 32% ($191,951-$243,725), 35% ($243,726-$609,350), 37% ($609,351+)",
+      "FICA: 6.2% Social Security (up to $168,600 wage base) + 1.45% Medicare (no cap)",
+      "No state income tax (varies by state — add 0-13.3% depending on location)",
+    ],
+    methodology: "US federal income tax is progressive — different portions of your income are taxed at different rates. Marginal rate = tax bracket of your last dollar. Effective rate = total tax ÷ taxable income. Calculate tax by applying each bracket rate only to income within that bracket's range, then summing the results. Standard deduction reduces taxable income before brackets apply.",
+    table: {
+      caption: "2026 Federal Tax Brackets (Single Filer)",
+      headers: ["Taxable Income Range", "Tax Rate", "Tax Owed in Bracket", "Max Tax at Top"],
+      rows: [
+        ["$0 – $11,600", "10%", "$1,160", "$1,160"],
+        ["$11,601 – $47,150", "12%", "$4,266", "$5,426"],
+        ["$47,151 – $100,525", "22%", "$11,743", "$17,169"],
+        ["$100,526 – $191,950", "24%", "$21,942", "$39,111"],
+        ["$191,951 – $243,725", "32%", "$16,568", "$55,679"],
+        ["$243,726 – $609,350", "35%", "$127,969", "$183,648"],
+        ["$609,351+", "37%", "37% of excess", "No cap"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Married Filing Jointly (MFJ) vs Single",
+        outcome: "At $85,000 each ($170,000 combined), MFJ brackets are wider. The 22% bracket extends to $201,050 for MFJ vs $100,525 for single. You'd both stay in 12% if incomes are unequal (e.g., $120k + $50k).",
+        pros: ["Wider brackets — more income taxed at lower rates", "Can balance unequal incomes", "Higher standard deduction ($29,200 vs $14,600)"],
+        cons: ["Marriage penalty at high incomes ($609k+ single vs $731k+ MFJ)", "Both spouses liable for each other's tax issues"],
+      },
+      {
+        name: "Head of Household Filing Status",
+        outcome: "If you're single with dependents, HoH brackets are between Single and MFJ. The 12% bracket extends to $63,000 (vs $47,150 single). Standard deduction: $21,900. Saves ~$2,000/year vs filing single.",
+        pros: ["Lower tax rates than single", "Higher standard deduction", "More income in lower brackets"],
+        cons: ["Must pay >50% of household costs", "Must have qualifying dependent"],
+      },
+    ],
+    risks: [
+      "Bracket confusion: Many people think 'being in the 22% bracket' means 22% on ALL income — it doesn't. Only the portion above $47,150 is taxed at 22%.",
+      "Bonus and overtime tax myth: Bonuses are NOT taxed at a higher rate. They may be withheld at a higher rate (22% flat), but at tax time they're taxed at your marginal rate like any other income.",
+      "Tax bracket creep: As your income rises with inflation, you may drift into higher brackets even if your purchasing power stays the same — the IRS adjusts brackets annually for inflation",
+      "State tax ignored: CA, NY, NJ, and OR have top rates of 9-13%. Your combined marginal rate could be 35%+ (22% federal + 9.3% CA + 7.65% FICA). Always factor in state tax.",
+    ],
+    whatThisMeans:
+      "Your tax bracket matters for marginal decisions — should you work overtime? contribute to a 401(k)? take a bonus as cash or defer it? For these choices, use your marginal rate. Your effective rate matters for budgeting — it tells you what you actually keep. The gap between 'I'm in the 22% bracket' and 'I pay 14.5%' is why understanding progressive taxation saves you from overestimating your tax burden. Use our Tax Calculator to see your exact numbers.",
+    nextSteps: [
+      "Look at your last pay stub — find your taxable income (after 401(k), health insurance, etc.)",
+      "Calculate your effective rate: total federal tax paid ÷ taxable income",
+      "For financial decisions (overtime, bonus, 401(k) contributions), use your marginal rate",
+      "If you're near a bracket threshold, consider increasing 401(k) contributions to stay in the lower bracket",
+      "Use our Tax Calculator to model different income scenarios and deductions",
+    ],
+    faqs: [
+      { question: "What's the difference between marginal and effective tax rate?",
+        answer: "Marginal rate = the rate on your last dollar (your tax bracket). Effective rate = total tax ÷ total income (your average rate). At $85,000 single, your marginal rate is 22% but your effective rate is ~14.5%. Always use marginal rate for decisions (should I earn more?), effective rate for budgeting (how much do I keep?)." },
+      { question: "How do tax brackets actually work?",
+        answer: "Only the income within each bracket is taxed at that bracket's rate. At $85,000: first $11,600 at 10% ($1,160), next $35,550 at 12% ($4,266), remaining $37,850 at 22% ($8,327). Total: $13,753. You never pay 22% on the full $85,000 — only on the portion above $47,150." },
+      { question: "Does a raise push me into a higher tax bracket and make me lose money?",
+        answer: "No — this is the most persistent tax myth. Only the additional income above the bracket threshold is taxed at the higher rate. A raise from $47,000 to $52,000 moves just $4,850 into the 22% bracket — an extra $1,067 in tax, but you gained $5,000 in income. You're always better off earning more, even if it crosses a bracket." },
+      { question: "How do tax deductions and credits differ?",
+        answer: "Deductions reduce your taxable income (e.g., $10,000 401(k) contribution). At 22% marginal rate, that saves $2,200 in tax. Credits reduce your tax bill directly (e.g., $2,000 Child Tax Credit). A $2,000 credit is worth $2,000. Credits are more valuable than deductions — they're dollar-for-dollar reductions." },
+    ],
+    calculatorLinks: ["tax-calculator", "401k-calculator", "budget-planner"],
+    supportingLinks: [
+      { url: "/blog/understanding-tax-brackets-what-rate-do-you-actually-pay", label: "Understanding Tax Brackets" },
+      { url: "/decision/401k-vs-taxable-investing", label: "401(k) vs Taxable Investing" },
+      { url: "/decision/roth-vs-traditional-401k-decision", label: "Roth vs Traditional 401(k)" },
+    ],
+    wordCount: 2300,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 14: Pay Off Student Loans or Invest?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "pay-off-student-loans-or-invest",
+    title: "Pay Off Student Loans or Invest? The Math at Every Interest Rate (2026)",
+    description:
+      "Should you pay off student loans or invest your extra cash? Compare 4-8% loan rates vs 7% investment returns. See the break-even point and tax implications. Free calculators.",
+    cluster: "debt",
+    question: "I have $30,000 in student loans at 6.8% and $500/month extra. Should I pay off the loans faster or invest the money?",
+    shortAnswer:
+      "At 6.8% interest, paying off student loans gives a guaranteed, tax-free 6.8% return — roughly equal to the stock market's expected 7% return but with zero risk. The break-even depends on whether your student loan interest is tax-deductible (up to $2,500/year, phases out at $90k income). If you can deduct the interest, your effective rate drops to ~5.3% (at 22% bracket), making investing slightly more attractive. For most borrowers in the 5-8% range, a 50/50 split — half toward loans, half toward investing — balances mathematical optimization with psychological satisfaction.",
+    results: [
+      { label: "Pay $30,000 at 6.8% (Aggressive Payoff)", value: "Saves $13,100 in interest", detail: "Payoff in 4.2 years at $750/month. Total interest: $4,700 vs $17,800 if paying minimum for 10 years." },
+      { label: "Invest $500/month at 7% Return Instead", value: "Grows to $34,500 in 5 years", detail: "$500 × 60 months = $30,000 invested. Gains: $4,500. But loans accrue ~$8,800 in interest over the same period. Net difference: loans win by ~$4,300." },
+      { label: "With Student Loan Interest Deduction (22% bracket)", value: "Effective rate drops to 5.3%", detail: "Tax deduction saves 22% of up to $2,500 in interest ($550/year). At 5.3% effective, investing at 7% beats loan payoff by ~1.7%/year." },
+      { label: "50/50 Split: Pay $250 Extra + Invest $250", value: "Best of both worlds", detail: "Loans paid off in ~6 years instead of 10. Investments grow to ~$22,000. Psychologically satisfying — you see progress on both fronts." },
+      { label: "Federal Loan Forgiveness (PSLF) Scenario", value: "Pay minimum, invest the rest", detail: "If you're on track for PSLF (10-year forgiveness), paying extra toward loans is literally throwing money away. Invest aggressively instead." },
+    ],
+    assumptions: [
+      "Student loan balance: $30,000 at 6.8% (typical federal unsubsidized rate)",
+      "Standard repayment: 10 years at $345/month",
+      "Extra cash available: $500/month",
+      "Investment return: 7% annual (S&P 500 historical average)",
+      "Tax bracket: 22% federal (student loan interest deduction available)",
+      "Student loan interest deduction: up to $2,500/year (phases out at $75-90k MAGI single)",
+      "No prepayment penalties on student loans",
+      "Not pursuing PSLF (Public Service Loan Forgiveness)",
+    ],
+    methodology: "Compare three strategies: (1) Pay minimum on loans, invest all extra cash at 7%. (2) Pay all extra toward loans (avalanche method), no investing. (3) Split 50/50. Calculate net worth after 10 years for each strategy: investments + debt reduction. Adjust for tax deductibility of student loan interest when applicable.",
+    table: {
+      caption: "Student Loan Payoff vs Investing: 10-Year Outcomes ($30k at 6.8%)",
+      headers: ["Strategy", "Monthly to Loans", "Monthly to Investing", "Debt After 10yr", "Investments After 10yr", "Net Worth Impact"],
+      rows: [
+        ["Minimum Payment Only", "$345", "$500", "$0 (paid off)", "$86,500", "+$86,500"],
+        ["Aggressive Payoff", "$845", "$0", "$0 (paid in 3.5yr)", "$0 (but invest after)", "+$92,000"],
+        ["50/50 Split", "$595", "$250", "$0 (paid in 6yr)", "$43,200", "+$96,200"],
+        ["Income-Driven (IDR) + Invest", "$200 (IDR)", "$645", "$15,000 forgiven (tax?)", "$111,500", "+$96,500*"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Refinance Student Loans to a Lower Rate, Then Invest",
+        outcome: "Refinance 6.8% federal loans to 4.5% with a private lender. Monthly payment drops, and investing at 7% now beats the loan rate by 2.5%/year. This is the mathematically optimal strategy for high-rate loans.",
+        pros: ["Lower interest rate", "Clear investing advantage", "Faster wealth building"],
+        cons: ["Lose federal protections (IDR, PSLF, forbearance)", "Requires good credit (680+)", "No going back — can't re-federalize"],
+      },
+      {
+        name: "IDR + PSLF: Pay Minimum, Invest Maximum",
+        outcome: "If you work for a qualifying employer (government, non-profit), make 120 qualifying payments under IDR, and the remaining balance is forgiven tax-free. Pay the absolute minimum toward loans and invest every extra dollar.",
+        pros: ["Potentially massive loan forgiveness", "Tax-free forgiveness under PSLF", "Decade of compound investing"],
+        cons: ["Must work in public service for 10 years", "PSLF has historically had 98% rejection rate (improving)", "IDR payments may not cover interest — balance grows"],
+      },
+    ],
+    risks: [
+      "Federal protections loss: Refinancing federal loans to private means losing IDR, PSLF, forbearance, and death/disability discharge",
+      "Interest rate risk: Federal loan rates are fixed. If market returns underperform (2022: -19%), your 6.8% 'guaranteed return' from paying loans looks brilliant",
+      "Tax bomb risk: Non-PSLF loan forgiveness (after 20-25 years of IDR) is taxable as income. A $50,000 forgiven balance could trigger a $12,000 tax bill",
+      "Cash flow risk: Aggressive loan payoff leaves you cash-poor — can't access that money if you need it. Investments can be sold (at a loss, potentially)",
+    ],
+    whatThisMeans:
+      "For federal student loans at 5-8%, paying off vs investing is mathematically close. The guaranteed return of debt payoff (6.8% tax-free) is hard to beat on a risk-adjusted basis. However, don't sacrifice employer 401(k) match, emergency fund, or IRA contributions to pay low-interest student loans. The order of operations: 401(k) match → emergency fund → high-interest debt (>8%) → IRA → moderate-rate student loans (5-8%) → taxable investing. For most people, a 50/50 split provides the best balance of progress on both fronts.",
+    nextSteps: [
+      "Check your exact student loan interest rate(s) at studentaid.gov",
+      "Calculate whether your interest is tax-deductible (AGI < $90k single in 2026)",
+      "If pursuing PSLF: submit Employment Certification Form annually, pay minimum, invest the rest",
+      "If rate > 8%: pay aggressively. If 5-8%: consider 50/50. If <5%: invest first",
+      "Use our Debt Payoff Calculator to see your exact payoff timeline at different payment levels",
+    ],
+    faqs: [
+      { question: "Should I pay off student loans before buying a house?",
+        answer: "Not necessarily. Student loans at 5-7% don't disqualify you from a mortgage. Your debt-to-income ratio matters more than the loan balance. If paying off loans would deplete your down payment savings, it may be better to keep the loans and buy the house — home equity and appreciation often outweigh student loan interest costs." },
+      { question: "Are student loans considered 'good debt'?",
+        answer: "Student loans can be good debt if they increased your earning potential. The average college graduate earns $1.2 million more over a lifetime than a high school graduate. A $30,000 loan that enabled a $60,000 career is good debt. A $100,000 loan for a $35,000 career is bad debt. It's about ROI, not the existence of the debt." },
+      { question: "What about the student loan payment pause or forgiveness programs?",
+        answer: "The COVID-era payment pause has ended. Broad forgiveness ($10k-$20k) was struck down by the Supreme Court in 2023. Current forgiveness programs include PSLF, IDR forgiveness after 20-25 years, Borrower Defense, and Total & Permanent Disability discharge. Do not plan your finances around hypothetical future forgiveness." },
+      { question: "Should I use a 401(k) loan to pay off student loans?",
+        answer: "Almost never. A 401(k) loan must be repaid within 5 years with after-tax dollars, and you lose market growth during the loan period. If you leave your job, the loan becomes due immediately. The only scenario where this makes sense: 12%+ private student loans and you have a rock-solid job with no plans to leave." },
+    ],
+    calculatorLinks: ["debt-payoff", "loan-calculator", "investment-return", "compound-interest"],
+    supportingLinks: [
+      { url: "/decision/pay-off-debt-or-invest", label: "Pay Off Debt or Invest?" },
+      { url: "/decision/snowball-vs-avalanche-which-wins", label: "Snowball vs Avalanche Method" },
+    ],
+    wordCount: 2400,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 15: Should I Use a HELOC or Personal Loan?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "should-i-use-a-heloc-or-personal-loan",
+    title: "HELOC vs Personal Loan: Which Is Better for a $30,000 Renovation? (2026)",
+    description:
+      "Should you use a HELOC or personal loan for home improvements? Compare rates, tax benefits, risk, and monthly payments. Free loan calculator — see which saves more money.",
+    cluster: "mortgage",
+    question: "I need $30,000 for a home renovation. Should I use a HELOC at 8.5% or a personal loan at 12%?",
+    shortAnswer:
+      "A HELOC at 8.5% costs $213/month in interest (interest-only period), while a personal loan at 12% costs $668/month fully amortized over 5 years. The HELOC is cheaper monthly and the interest may be tax-deductible if used for home improvements. But the HELOC is variable-rate — if rates rise to 11%, the personal loan becomes cheaper. The biggest risk: a HELOC uses your home as collateral. If you can't repay, you could lose your house. A personal loan is unsecured — the worst case is damaged credit, not foreclosure.",
+    results: [
+      { label: "HELOC: Interest-Only Payment (10-year draw)", value: "$213/month", detail: "8.5% on $30,000 = $2,550/year ÷ 12 = $213/month. Principal is not reduced during draw period unless you pay extra." },
+      { label: "Personal Loan: Fixed Payment (5-year, 12%)", value: "$668/month", detail: "Fully amortized. Total interest: $10,080. Total cost: $40,080. Predictable payments, paid off in 5 years." },
+      { label: "HELOC Total Cost (if paid in 5 years)", value: "$7,200 in interest", detail: "Assuming 8.5% rate stays constant and you pay $600/month. Saves ~$2,880 vs personal loan. HELOC wins if rates don't spike." },
+      { label: "Tax Deduction: HELOC Interest (24% bracket)", value: "Save $612/year in taxes", detail: "If used for home improvements, up to $750k of mortgage + HELOC debt is deductible. $2,550 interest × 24% = $612 tax savings." },
+      { label: "Worst Case: HELOC Rate Rises to 12%", value: "$300/month interest", detail: "If the Fed raises rates, HELOC payments increase. At 12%, interest = $300/month. Personal loan stays fixed at $668/month regardless." },
+    ],
+    assumptions: [
+      "Loan amount: $30,000 for home renovation",
+      "HELOC rate: 8.5% variable (Prime + 1%, currently 7.5% Prime)",
+      "Personal loan rate: 12% fixed (good credit, 700+)",
+      "HELOC: 10-year draw period (interest-only), 20-year repayment",
+      "Personal loan: 5-year fixed term, fully amortized",
+      "Home value: $350,000, current mortgage: $200,000",
+      "HELOC max: 85% LTV = $297,500 total borrowing. Available equity: $97,500",
+      "Tax bracket: 24% (HELOC interest deductible for home improvements up to $750k total mortgage debt)",
+    ],
+    methodology: "Compare total cost over 5 years: HELOC (variable rate, interest-only draw period, tax-deductible interest) vs Personal Loan (fixed rate, amortized, non-deductible). Model best case (rates stable), moderate case (rates up 1.5%), and worst case (rates up 3.5%). Factor in tax savings for HELOC when qualifying improvements are made.",
+    table: {
+      caption: "HELOC vs Personal Loan: $30,000 Renovation, 5-Year Cost Comparison",
+      headers: ["", "HELOC (8.5% variable)", "Personal Loan (12% fixed)"],
+      rows: [
+        ["Monthly Payment", "$213 (interest-only)", "$668 (amortized)"],
+        ["Total Interest (5yr)", "$7,200 (if rate stays 8.5%)", "$10,080"],
+        ["Tax Savings (24% bracket)", "$1,728", "$0"],
+        ["Net Cost After Tax", "$5,472", "$10,080"],
+        ["Risk of Rate Increase", "High — payment rises with Prime", "None — fixed rate"],
+        ["Collateral", "Your home (foreclosure risk)", "None (unsecured)"],
+        ["Prepayment Penalty", "Usually none", "Check — some lenders charge"],
+        ["Best For", "Rate-stable environment, tax benefits", "Rate certainty, no home risk"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Cash-Out Refinance: One Mortgage, Lower Rate",
+        outcome: "Refinance your $200,000 mortgage at 6.5% + $30,000 extra = $230,000 at 6.5%. Monthly payment: $1,454 (vs old $1,264 + HELOC $213 = $1,477). Slightly cheaper, one payment, and rate is lower than HELOC.",
+        pros: ["Lower rate than HELOC (6.5% vs 8.5%)", "One monthly payment", "Fixed rate for life of loan"],
+        cons: ["Closing costs: $6,000-9,000", "Resets mortgage clock to 30 years", "Lose your current mortgage rate if it's lower"],
+      },
+      {
+        name: "Save Cash and Pay Over 12-18 Months",
+        outcome: "Save $2,000/month for 15 months. No interest, no loan applications, no credit checks. Total cost: $30,000 exactly. You delay the renovation but avoid $5,000-10,000 in interest.",
+        pros: ["Zero interest cost", "No credit impact", "No debt obligation", "No risk of foreclosure"],
+        cons: ["Renovation delayed 12-18 months", "Requires savings discipline", "Inflation may increase renovation costs"],
+      },
+    ],
+    risks: [
+      "HELOC is a variable rate — a 3% Fed rate hike pushes your 8.5% HELOC to 11.5%, raising interest payments from $213 to $288/month",
+      "HELOC foreclosure risk: if you can't make payments, the bank can foreclose on your home. Personal loans can't take your house",
+      "HELOC freeze risk: during the 2008 crisis, banks froze or reduced HELOC limits even for borrowers with perfect credit — your credit line can disappear when you need it most",
+      "Personal loan origination fees: some lenders charge 1-8% origination fees. On $30,000, an 8% fee adds $2,400 — making the effective rate much higher than 12%",
+      "Renovation cost overruns: $30,000 renovations routinely become $40,000. With a HELOC, you can draw more (up to limit). With a personal loan, you'd need a second loan",
+    ],
+    whatThisMeans:
+      "For a $30,000 renovation, a HELOC saves about $2,880-4,600 over 5 years compared to a personal loan — mostly from the lower rate and tax deduction. But this savings comes with real risk: variable rates, your home as collateral, and the possibility of the bank freezing your credit line. If you can comfortably afford $668/month and value certainty, the personal loan's higher cost buys peace of mind. If you have strong cash flow, equity cushion, and can handle potential rate increases, the HELOC is the smarter financial move.",
+    nextSteps: [
+      "Check your credit score (HELOC: 680+ preferred, Personal loan: 660+)",
+      "Get quotes from 3-5 lenders for both HELOC and personal loan — rates vary widely",
+      "Calculate your LTV: (current mortgage + potential HELOC) ÷ home value. Stay under 80-85%",
+      "If your current mortgage rate is under 5%, do NOT cash-out refinance — you'll lose that rate",
+      "Use our Loan Calculator to compare payment scenarios at different rates and terms",
+    ],
+    faqs: [
+      { question: "What credit score do I need for a HELOC?",
+        answer: "Most lenders require 680+ for a HELOC. The best rates go to 740+ credit scores. You'll also need sufficient home equity (at least 15-20% after the HELOC), stable income, and a low debt-to-income ratio (<43%). Some credit unions offer HELOCs at 640+ but with higher rates." },
+      { question: "Is HELOC interest tax-deductible?",
+        answer: "Yes, if the HELOC funds are used to 'buy, build, or substantially improve' the home securing the loan. Home renovation qualifies. The combined mortgage + HELOC debt limit for deductibility is $750,000 (or $375,000 if married filing separately). If you use a HELOC for a vacation or debt consolidation, the interest is NOT deductible." },
+      { question: "How fast can I get a HELOC vs personal loan?",
+        answer: "Personal loans: 1-7 days (online lenders can fund in 24 hours). HELOCs: 2-6 weeks (requires appraisal, title search, underwriting). If the renovation is urgent, a personal loan gets you cash faster. If you can plan ahead, the HELOC's lower rate is worth the wait." },
+      { question: "Can I pay off a HELOC early without penalty?",
+        answer: "Most HELOCs have no prepayment penalty, but some lenders charge a fee if you close the line within 2-3 years (typically $500 or 1% of the credit limit). Check the terms before signing. Even without penalties, closing a HELOC reduces your available credit, which can temporarily lower your credit score." },
+    ],
+    calculatorLinks: ["loan-calculator", "mortgage-calculator", "amortization-schedule"],
+    supportingLinks: [
+      { url: "/blog/when-to-refinance-your-mortgage-complete-guide-2026", label: "When to Refinance Your Mortgage" },
+      { url: "/decision/should-i-refinance-my-mortgage", label: "Should I Refinance My Mortgage?" },
+      { url: "/decision/pay-off-debt-or-invest", label: "Pay Off Debt or Invest?" },
+    ],
+    wordCount: 2300,
+    schemaType: "Article",
+  },
 ];

@@ -1,0 +1,140 @@
+{
+  "plan_version": "1.0",
+  "created_at": "2026-05-28T22:48:14.502904",
+  "philosophy": "Backlink-first growth. HARO/journalist responses + embeddable widgets + original data studies. No reliance on X/Pinterest/Reddit for SEO authority.",
+  "outreach_categories": [
+    {
+      "category": "HARO / Connectively",
+      "priority": "critical",
+      "status": "active_daily",
+      "notes": "3x daily queries. Qasem Mohammed personal identity.",
+      "next_action": "Continue daily automated responses."
+    },
+    {
+      "category": "Qwoted / SourceBottle",
+      "priority": "high",
+      "status": "not_started",
+      "notes": "Additional expert source platforms.",
+      "next_action": "Register Qasem Mohammed profile."
+    },
+    {
+      "category": "Personal Finance Bloggers",
+      "priority": "high",
+      "status": "pending",
+      "notes": "MoneyUnder30, BudgetsAreSexy, Frugalwoods style.",
+      "next_action": "Build widget embed before outreach."
+    },
+    {
+      "category": "Mortgage/Real Estate Blogs",
+      "priority": "high",
+      "status": "pending",
+      "notes": "BiggerPockets, TheMortgageReports. Widget embed target.",
+      "next_action": "Build mortgage affordability widget."
+    },
+    {
+      "category": "FIRE/Early Retirement Blogs",
+      "priority": "medium",
+      "status": "pending",
+      "notes": "MrMoneyMustache, ChooseFI. Calculator resource links.",
+      "next_action": "Pitch compound interest visualization."
+    },
+    {
+      "category": "Finance Tool Roundup Posts",
+      "priority": "medium",
+      "status": "pending",
+      "notes": "'Best mortgage calculators 2026' posts.",
+      "next_action": "Search for recent roundups to pitch."
+    },
+    {
+      "category": "Financial Advisor Directories",
+      "priority": "medium",
+      "status": "not_started",
+      "notes": "NAPFA, XYPlanningNetwork.",
+      "next_action": "Submit QFINHUB as recommended tool."
+    },
+    {
+      "category": "Credit Union Blogs",
+      "priority": "low",
+      "status": "not_started",
+      "notes": "Navy Federal, Alliant.",
+      "next_action": "Member resource page submissions."
+    },
+    {
+      "category": "YouTube Finance Creators",
+      "priority": "low",
+      "status": "not_started",
+      "notes": "Graham Stephan style.",
+      "next_action": "Calculator mention requests."
+    },
+    {
+      "category": ".edu Finance Resources",
+      "priority": "low",
+      "status": "not_started",
+      "notes": "University financial aid offices.",
+      "next_action": "Resource page link submissions."
+    }
+  ],
+  "pitch_angles": [
+    {
+      "angle": "Free Embeddable Calculator Widget",
+      "targets": "Mortgage/real estate blogs, personal finance bloggers",
+      "template": "pitch-widget-embed.md"
+    },
+    {
+      "angle": "HARO Expert Quote Response",
+      "targets": "Journalists on Connectively",
+      "template": "pitch-haro-response.md"
+    },
+    {
+      "angle": "Resource Page Link Addition",
+      "targets": "Finance resource pages, .edu pages",
+      "template": "pitch-resource-link.md"
+    },
+    {
+      "angle": "Original Research Data Study",
+      "targets": "Finance journalists, MarketWatch, CNET Money",
+      "template": "pitch-data-study.md"
+    },
+    {
+      "angle": "Guest Post Contribution",
+      "targets": "Personal finance blogs",
+      "template": "pitch-guest-post.md"
+    }
+  ],
+  "linkable_assets": [
+    {
+      "asset": "Mortgage Affordability Embed Widget",
+      "url": "/widgets/mortgage-affordability-embed",
+      "status": "planned",
+      "build_difficulty": "medium",
+      "seo_value": "high"
+    },
+    {
+      "asset": "US Home Affordability Data Study",
+      "url": "/research/us-home-affordability-2026",
+      "status": "planned",
+      "build_difficulty": "low",
+      "seo_value": "high"
+    },
+    {
+      "asset": "Compound Interest Visualization",
+      "url": "/tools/compound-interest-visualization",
+      "status": "planned",
+      "build_difficulty": "medium",
+      "seo_value": "medium-high"
+    }
+  ],
+  "status_fields": [
+    "not_started",
+    "pending",
+    "active_daily",
+    "completed",
+    "abandoned"
+  ],
+  "next_actions": [
+    "Build mortgage affordability embed widget (highest ROI)",
+    "Register on Qwoted/SourceBottle",
+    "Build US home affordability data study",
+    "Begin personalized blogger outreach after widget is ready"
+  ]
+}

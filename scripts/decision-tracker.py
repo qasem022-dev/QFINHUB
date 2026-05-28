@@ -25,6 +25,11 @@ DECISION_PAGES = [
     "/decision/snowball-vs-avalanche-which-wins",
     "/decision/how-much-do-i-need-to-retire",
     "/decision/roth-vs-traditional-401k-decision",
+    "/decision/how-much-emergency-fund-do-i-need",
+    "/decision/can-i-retire-with-500k-at-55",
+    "/decision/what-tax-bracket-am-i-in",
+    "/decision/pay-off-student-loans-or-invest",
+    "/decision/should-i-use-a-heloc-or-personal-loan",
 ]
 
 def load_gsc_data():

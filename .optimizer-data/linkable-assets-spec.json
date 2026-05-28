@@ -1,0 +1,77 @@
+{
+  "created_at": "2026-05-28T22:48:14.502904",
+  "assets": [
+    {
+      "slug": "mortgage-affordability-embed",
+      "url": "/widgets/mortgage-affordability-embed",
+      "purpose": "Let any finance/real estate blog embed a working mortgage affordability calculator. Each embed includes a 'Powered by QFINHUB' link creating natural backlinks.",
+      "target_backlinks": "Real estate agents, mortgage brokers, personal finance bloggers, first-time homebuyer guides",
+      "required_data": "Existing mortgage affordability calculator logic, responsive CSS for iframe",
+      "required_components": [
+        "iframe-compatible calculator with embed code generator",
+        "Responsive design (mobile + desktop)",
+        "Configurable default values (state, loan amount, rate)",
+        "Powered by QFINHUB attribution link",
+        "Embed documentation page"
+      ],
+      "build_steps": [
+        "Extract affordability calculator into standalone component",
+        "Create /widgets/[slug]/page.tsx route",
+        "Build embed code generator UI",
+        "Add responsive iframe wrapper",
+        "Test embed on external site",
+        "Create documentation page"
+      ],
+      "expected_seo_value": "High \u2014 one placement on DR50+ blog generates significant domain authority",
+      "risk_level": "Low"
+    },
+    {
+      "slug": "us-home-affordability-2026",
+      "url": "/research/us-home-affordability-2026",
+      "purpose": "Original research page with state-by-state affordability data. Journalists cite original data \u2014 each citation is a potential backlink.",
+      "target_backlinks": "CNET Money, NerdWallet, The Balance, MarketWatch, local news real estate sections",
+      "required_data": "Census median income data, Zillow median home price data, current mortgage rates (6.5%), property tax rates by state",
+      "required_components": [
+        "Data tables: state \u00d7 affordability metrics",
+        "Interactive US map (optional)",
+        "Methodology explanation",
+        "Downloadable CSV of raw data",
+        "Press-friendly summary for journalists"
+      ],
+      "build_steps": [
+        "Collect Census/Zillow data (public sources)",
+        "Calculate affordability by state using 28% rule",
+        "Build data tables page",
+        "Add visualizations",
+        "Publish with press-friendly formatting",
+        "Pitch to finance journalists"
+      ],
+      "expected_seo_value": "High \u2014 data studies are the #1 linkable asset type. A single MarketWatch citation can generate 50+ backlinks.",
+      "risk_level": "Low"
+    },
+    {
+      "slug": "compound-interest-visualization",
+      "url": "/tools/compound-interest-visualization",
+      "purpose": "Interactive chart demonstrating the power of starting early \u2014 $100/month from age 25 vs 35 vs 45. Highly shareable, education-focused.",
+      "target_backlinks": "Financial literacy educators, high school economics teachers, FIRE community, personal finance YouTubers",
+      "required_data": "Compound interest formula, historical S&P returns data",
+      "required_components": [
+        "Interactive chart (Chart.js or D3.js)",
+        "Side-by-side age comparison (25 vs 35 vs 45)",
+        "Customizable inputs (monthly contribution, rate, retirement age)",
+        "Shareable URL with pre-filled parameters",
+        "Embed option for educators"
+      ],
+      "build_steps": [
+        "Design chart UX with 3 stacked scenarios",
+        "Implement compound interest calculation logic",
+        "Build interactive visualization",
+        "Add share/embed functionality",
+        "Create educational context around the visualization",
+        "Pitch to financial literacy organizations"
+      ],
+      "expected_seo_value": "Medium-High \u2014 educational resources get .edu links and long-term passive backlinks.",
+      "risk_level": "Low"
+    }
+  ]
+}

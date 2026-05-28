@@ -1,14 +1,65 @@
 {
-  "generated_at": "2026-05-28T21:29:12.709478",
-  "data_source": "traffic-report.json (GSC 7-day)",
+  "generated_at": "2026-05-28T22:48:14.502904",
+  "data_source": "Placeholder (no GSC data for decision pages yet)",
   "summary": {
-    "total_decision_pages": 5,
+    "total_decision_pages": 15,
     "pages_with_data": 0,
     "total_impressions": 0,
     "total_clicks": 0,
-    "overall_ctr": 0
+    "overall_ctr": 0,
+    "note": "Qasem must run after sitemap submission + 7 days to populate real GSC data."
   },
   "pages": [
+    {
+      "path": "/decision/how-much-emergency-fund-do-i-need",
+      "url": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/can-i-retire-with-500k-at-55",
+      "url": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/what-tax-bracket-am-i-in",
+      "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/pay-off-student-loans-or-invest",
+      "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/should-i-use-a-heloc-or-personal-loan",
+      "url": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
     {
       "path": "/decision/can-i-afford-a-400k-home",
       "url": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
@@ -16,38 +67,8 @@
       "clicks": 0,
       "position": null,
       "index_status": "no_data",
-      "queries": [
-        {
-          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
-          "impressions": 11,
-          "clicks": 0,
-          "position": 11.3
-        },
-        {
-          "query": "how to calculate your retirement income",
-          "impressions": 7,
-          "clicks": 0,
-          "position": 90.9
-        },
-        {
-          "query": "how much mortgage can i afford on 100k",
-          "impressions": 6,
-          "clicks": 0,
-          "position": 96.3
-        },
-        {
-          "query": "if i make 100k what mortgage can i afford",
-          "impressions": 6,
-          "clicks": 0,
-          "position": 97.7
-        },
-        {
-          "query": "affordability calculator",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 85
-        }
-      ]
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
     },
     {
       "path": "/decision/pay-off-debt-or-invest",
@@ -56,38 +77,8 @@
       "clicks": 0,
       "position": null,
       "index_status": "no_data",
-      "queries": [
-        {
-          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
-          "impressions": 11,
-          "clicks": 0,
-          "position": 11.3
-        },
-        {
-          "query": "$200 000 mortgage payment 30 years",
-          "impressions": 2,
-          "clicks": 0,
-          "position": 30.5
-        },
-        {
-          "query": "$200,000 mortgage payment 30 years",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 33
-        },
-        {
-          "query": "$200000 mortgage payment 30 years",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 32
-        },
-        {
-          "query": "20000 loan over 5 years monthly payments",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 56
-        }
-      ]
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
     },
     {
       "path": "/decision/retire-at-45-with-1-million",
@@ -96,38 +87,8 @@
       "clicks": 0,
       "position": null,
       "index_status": "no_data",
-      "queries": [
-        {
-          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
-          "impressions": 11,
-          "clicks": 0,
-          "position": 11.3
-        },
-        {
-          "query": "how to calculate your retirement income",
-          "impressions": 7,
-          "clicks": 0,
-          "position": 90.9
-        },
-        {
-          "query": "if i make 100k what mortgage can i afford",
-          "impressions": 6,
-          "clicks": 0,
-          "position": 97.7
-        },
-        {
-          "query": "emergency fund calculator",
-          "impressions": 3,
-          "clicks": 0,
-          "position": 72.3
-        },
-        {
-          "query": "$900 000 mortgage calculator",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 23
-        }
-      ]
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
     },
     {
       "path": "/decision/rent-vs-buy-with-100k-income",
@@ -136,7 +97,8 @@
       "clicks": 0,
       "position": null,
       "index_status": "no_data",
-      "queries": []
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
     },
     {
       "path": "/decision/401k-vs-taxable-investing",
@@ -145,7 +107,58 @@
       "clicks": 0,
       "position": null,
       "index_status": "no_data",
-      "queries": []
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/how-much-house-can-i-afford",
+      "url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/should-i-refinance-my-mortgage",
+      "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/snowball-vs-avalanche-which-wins",
+      "url": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/how-much-do-i-need-to-retire",
+      "url": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
+    },
+    {
+      "path": "/decision/roth-vs-traditional-401k-decision",
+      "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [],
+      "note": "New page \u2014 no GSC data yet. Check after 7-14 days."
     }
   ]
 }
