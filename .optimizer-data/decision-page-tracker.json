@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-05-28T21:29:12.709478",
+  "data_source": "traffic-report.json (GSC 7-day)",
+  "summary": {
+    "total_decision_pages": 5,
+    "pages_with_data": 0,
+    "total_impressions": 0,
+    "total_clicks": 0,
+    "overall_ctr": 0
+  },
+  "pages": [
+    {
+      "path": "/decision/can-i-afford-a-400k-home",
+      "url": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 11,
+          "clicks": 0,
+          "position": 11.3
+        },
+        {
+          "query": "how to calculate your retirement income",
+          "impressions": 7,
+          "clicks": 0,
+          "position": 90.9
+        },
+        {
+          "query": "how much mortgage can i afford on 100k",
+          "impressions": 6,
+          "clicks": 0,
+          "position": 96.3
+        },
+        {
+          "query": "if i make 100k what mortgage can i afford",
+          "impressions": 6,
+          "clicks": 0,
+          "position": 97.7
+        },
+        {
+          "query": "affordability calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 85
+        }
+      ]
+    },
+    {
+      "path": "/decision/pay-off-debt-or-invest",
+      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 11,
+          "clicks": 0,
+          "position": 11.3
+        },
+        {
+          "query": "$200 000 mortgage payment 30 years",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 30.5
+        },
+        {
+          "query": "$200,000 mortgage payment 30 years",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 33
+        },
+        {
+          "query": "$200000 mortgage payment 30 years",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 32
+        },
+        {
+          "query": "20000 loan over 5 years monthly payments",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 56
+        }
+      ]
+    },
+    {
+      "path": "/decision/retire-at-45-with-1-million",
+      "url": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 11,
+          "clicks": 0,
+          "position": 11.3
+        },
+        {
+          "query": "how to calculate your retirement income",
+          "impressions": 7,
+          "clicks": 0,
+          "position": 90.9
+        },
+        {
+          "query": "if i make 100k what mortgage can i afford",
+          "impressions": 6,
+          "clicks": 0,
+          "position": 97.7
+        },
+        {
+          "query": "emergency fund calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "position": 72.3
+        },
+        {
+          "query": "$900 000 mortgage calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 23
+        }
+      ]
+    },
+    {
+      "path": "/decision/rent-vs-buy-with-100k-income",
+      "url": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": []
+    },
+    {
+      "path": "/decision/401k-vs-taxable-investing",
+      "url": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "impressions": 0,
+      "clicks": 0,
+      "position": null,
+      "index_status": "no_data",
+      "queries": []
+    }
+  ]
+}
