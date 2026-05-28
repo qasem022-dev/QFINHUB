@@ -1,0 +1,7112 @@
+{
+  "generated_at": "2026-05-28T17:58:22.159984",
+  "total_uncertain": 323,
+  "pages": [
+    {
+      "url": "https://www.qfinhub.com/terms",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/all-pages",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/dashboard/plans",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/blog",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/ai-specialist",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/login",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/dashboard/settings",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/about",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/methodology",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/editorial-policy",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/signup",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/dashboard",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/contact",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/privacy",
+      "type": "static",
+      "score": 51,
+      "dimensions": {
+        "intent": 5,
+        "depth": 6,
+        "slug_risk": 10,
+        "type_risk": 8,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 3,
+        "title_unique": 9,
+        "internal_links": 7,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-loan-comparison",
+      "type": "guide",
+      "score": 48,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 5,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 7,
+        "clicks": 0,
+        "position": 3.7
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-child-care-cost",
+      "type": "guide",
+      "score": 47,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 4,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 4,
+        "clicks": 0,
+        "position": 2.5
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "type": "guide",
+      "score": 46,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 3,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 11,
+        "clicks": 0,
+        "position": 59.3
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-marginal-tax-rate",
+      "type": "guide",
+      "score": 45,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 2,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 3,
+        "clicks": 0,
+        "position": 79.3
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-real-estate",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-fire-track",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-entrepreneur",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-empty-nester",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-high-income",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-minimalist",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-debt-heavy",
+      "type": "tool_variant",
+      "score": 44,
+      "dimensions": {
+        "intent": 10,
+        "depth": 5,
+        "slug_risk": 7,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-perpetuity-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-debt-payoff",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-early-retirement",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-gas-mileage",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-dividend-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-affordability",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-inventory-turnover",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-biweekly-mortgage",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-annuity-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-markup-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-break-even",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-tax-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-operating-margin",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-stock-return",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-inflation-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-lifetime-value",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-vacation-budget",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-home-equity",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-irr-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-roi-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-capm-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-closing-costs",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-amortization-schedule",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-currency-converter",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-roth-ira",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-savings-goal",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-beta-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-basic-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-refinance-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-home-renovation",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-credit-card-payoff",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-portfolio-allocator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-required-minimum-distribution",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-phone-plan-comparison",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-capital-gains-tax",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-bond-price",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-self-employment-tax",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-npv-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-net-profit-margin",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-401k-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-loan-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-debt-to-income",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-arm-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-fire-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-overtime-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-loan-refinancing",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-risk-reward",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-simple-interest",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-car-affordability",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-insurance-needs",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-percentage-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-1099-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-date-difference",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-va-loan",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-hourly-to-salary",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-debt-consolidation",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-college-savings",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-monte-carlo-simulation",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-payoff",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-bond-yield",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-water-bill",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-asset-correlation",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-fha-loan",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-fuel-cost",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-expenses",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-lease-vs-buy",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-moving-cost",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-margin-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-gross-margin",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-cash-flow",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-student-loan",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-rule-of-72",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-financial-ratios",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-side-hustle-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-dollar-cost-average",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-debt-avalanche",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-unit-converter",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-em-fund",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-personal-loan",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-salary-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-tip-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-wedding-budget",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-investment-return",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-fraction-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-traditional-ira",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-inheritance-tax",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-age-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-sharpe-ratio",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-time-value-of-money",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-withdrawal",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-fica-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-estate-tax",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-auto-loan",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-pension-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-customer-acquisition-cost",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-debt-snowball",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-dcf-analysis",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-budget-planner",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-social-security",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-calorie-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-future-value",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-net-worth",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-payback-period",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-rent-vs-buy",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-position-sizing",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-w4-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-bmi-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-sales-tax",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-property-tax",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-electricity-cost",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-option-profit",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-present-value",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-alpha-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-paycheck-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-pmi-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-discount-calculator",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-effective-tax-rate",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-tax-bracket",
+      "type": "guide",
+      "score": 43,
+      "dimensions": {
+        "intent": 8,
+        "depth": 8,
+        "slug_risk": 7,
+        "type_risk": 7,
+        "usefulness": 3,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 5,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-20k-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-25yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1k-6mo",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-25k-6mo",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-250k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500k-3yr-loss",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-55k-slow",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-30k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-600k-12yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-2M-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-30k-extreme",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-250k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-40k-lean-800k",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-15k-lean-extreme",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-30k-6yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-25k-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100-1yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-80k-8yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-750k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1M-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-50k-expenses-1M",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-3M-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-7yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-2k-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-25yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-150k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5M-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-50k-50pct-save",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-25k-van-life",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-80k-fat-fire-2M",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-60k-coast-500k",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-75k-12yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-70k-late-50pct",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-2M-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-55k-dual-55pct",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-200k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1k-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-25k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-7yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-40k-60pct-save",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-40k-7yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-5yr-loss",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-50k-dual-income",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-90k-late-start",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-0k-100k-starter",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-0k-50pct-fresh",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-150k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-7yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-400k-18yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-6mo",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-35k-geo-arb",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-120k-fat-60pct",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-300k-12yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-90k-executive",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-25k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-60k-40pct-save",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500k-7yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-200k-4yr-loss",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-45k-coast",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-250k-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-15k-4yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-30k-expenses-750k",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-2yr-loss",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-200k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-3yr-loss",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-80k-family-45pct",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-20yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1M-25yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-6mo",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-75k-15yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-45k-barista",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-35k-geo-arb",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-40k-military",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500k-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1M-10yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-8yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-200k-5yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-25k-minimal",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-100k-fire-55pct",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-150k-30yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1k-3yr",
+      "type": "tool_variant",
+      "score": 38,
+      "dimensions": {
+        "intent": 7,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-60k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-350k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-300k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-120k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-175k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-45k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-750k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-150k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-180k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-2M-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-110k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-150k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-400k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-140k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-100k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-225k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-750k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-80k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-60k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-100k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-500k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-250k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-1M-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-300k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-60k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-600k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-400k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-85k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-350k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-2M-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-5M-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-200k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-1M-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-15k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-150k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-100k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-200k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-30k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-30k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-95k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-250k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-35k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-160k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-125k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-80k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-500k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-65k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-275k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-75k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-350k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-40k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-400k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-250k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-40k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-30k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-3M-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-300k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-10k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-200k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-350k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-120k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-1-5M-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-100k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-250k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-500k-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-500k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-5M-married-joint",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-3M-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-50k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-200k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-20k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-80k-married-separate",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-25k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-150k-head-of-household",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-600k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-55k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-60k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-175k-single",
+      "type": "tool_variant",
+      "score": 37,
+      "dimensions": {
+        "intent": 6,
+        "depth": 5,
+        "slug_risk": 4,
+        "type_risk": 3,
+        "usefulness": 8,
+        "gsc": 0,
+        "eeat": 2,
+        "title_unique": 6,
+        "internal_links": 3,
+        "dup_penalty": 0
+      },
+      "gsc_data": {
+        "impressions": 0,
+        "clicks": 0,
+        "position": 999
+      }
+    }
+  ]
+}

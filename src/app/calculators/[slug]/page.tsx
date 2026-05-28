@@ -14,8 +14,8 @@ import { getCalculatorComponent } from "@/components/calculators/registry";
 import { ShareDialog } from "@/components/calculators/share-dialog";
 import { BreadcrumbNav } from "@/components/calculators/breadcrumb-nav";
 import { RelatedCalculators } from "@/components/calculators/related-calculators";
-import { TryTheseScenarios } from "@/components/calculators/try-these-scenarios";
-import { getScenariosForCalculator } from "@/lib/scenarios";
+import { RelatedArticles } from "@/components/calculators/related-articles";
+import { CALCULATOR_BLOG_LINKS } from "@/lib/calculator-blog-links";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
 import type { CategoryType } from "@/types/calculator";
 
@@ -280,9 +280,10 @@ export default async function CalculatorDetailPage({
             { label: calculator.title, href: `/calculators/${slug}` },
           ]}
         />
-        <TryTheseScenarios
+        <RelatedArticles
           calculatorSlug={slug}
-          scenarios={getScenariosForCalculator(slug, 5)}
+          articles={CALCULATOR_BLOG_LINKS[slug] || []}
+          maxResults={5}
         />
         <RelatedCalculators
           currentSlug={slug}
