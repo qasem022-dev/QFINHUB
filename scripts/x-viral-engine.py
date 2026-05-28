@@ -329,33 +329,64 @@ def x_login(page, email, username, password):
 
 # ─── Post Helpers ───
 def compose_and_post(page, text):
-    """Post a tweet. Returns True if successful."""
+    """Post a tweet. Returns True if successful.
+    
+    CRITICAL (May 27, 2026): X's React no longer detects textContent mutations.
+    Must use page.keyboard.type() with delay to trigger React synthetic events.
+    The old el.textContent + dispatchEvent('input') pattern leaves the Post
+    button permanently disabled — tweets silently fail.
+    """
     page.goto('https://x.com/compose/post', wait_until='domcontentloaded', timeout=20000)
-    time.sleep(4)
-    # Escape: backslashes first, then quotes, then newlines, then $
-    esc = text.replace('\\', '\\\\').replace("'", "\\'").replace("\n", "\\n").replace("$", "\\$")
-    page.evaluate(f"""
-        const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
-                  document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{esc}';
-                  el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
-    """)
-    time.sleep(2)
+    time.sleep(5)
+    
+    # Click + clear the textarea, then type via keyboard (triggers React properly)
     page.evaluate("""
-        const b = document.querySelector('[data-testid="tweetButton"]') ||
-                 document.querySelector('[data-testid="tweetButtonInline"]');
-        if (b) b.click();
+        (function() {
+            const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                      document.querySelector('div[role="textbox"]');
+            if (el) { el.click(); el.textContent = ''; }
+        })();
+    """)
+    time.sleep(1)
+    page.keyboard.type(text, delay=50)
+    time.sleep(2)
+    
+    # Verify button is enabled before clicking
+    btn_disabled = page.evaluate("""
+        (function() {
+            const b = document.querySelector('[data-testid="tweetButton"]') ||
+                     document.querySelector('[data-testid="tweetButtonInline"]');
+            return b ? b.disabled : null;
+        })();
+    """)
+    if btn_disabled:
+        print(f'   ⚠️  Post button still disabled — trying click anyway')
+    
+    page.evaluate("""
+        (function() {
+            const b = document.querySelector('[data-testid="tweetButton"]') ||
+                     document.querySelector('[data-testid="tweetButtonInline"]');
+            if (b && !b.disabled) b.click();
+        })();
     """)
     time.sleep(6)
     body = page.evaluate('document.body.innerText')
-    return 'Your Tweet was sent' in body or text[:30] in body
+    success = 'Your Tweet was sent' in body or text[:30] in body
+    if not success:
+        # Check if URL changed from compose (means it posted)
+        url = page.evaluate('window.location.href')
+        success = '/compose/post' not in url
+    return success
 
 def reply_to_tweet(page, tweet_url, reply_text):
-    """Reply to a specific tweet."""
+    """Reply to a specific tweet.
+    
+    Uses keyboard.type() to properly trigger React synthetic events.
+    """
     page.goto(tweet_url, wait_until='domcontentloaded', timeout=20000)
     time.sleep(4)
 
-    # Click reply
+    # Click reply button
     page.evaluate("""
         (function() {
             const b = document.querySelector('[data-testid="reply"]');
@@ -364,18 +395,24 @@ def reply_to_tweet(page, tweet_url, reply_text):
     """)
     time.sleep(3)
 
-    esc = reply_text.replace('\\', '\\\\').replace("'", "\\'").replace("\n", "\\n").replace("$", "\\$")
-    page.evaluate(f"""
-        const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
-                  document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{esc}';
-                  el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
-    """)
-    time.sleep(2)
+    # Type reply via keyboard (NOT textContent — React won't detect it)
     page.evaluate("""
-        const b = document.querySelector('[data-testid="tweetButton"]') ||
-                 document.querySelector('[data-testid="tweetButtonInline"]');
-        if (b) b.click();
+        (function() {
+            const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                      document.querySelector('div[role="textbox"]');
+            if (el) { el.click(); el.textContent = ''; }
+        })();
+    """)
+    time.sleep(1)
+    page.keyboard.type(reply_text, delay=50)
+    time.sleep(2)
+    
+    page.evaluate("""
+        (function() {
+            const b = document.querySelector('[data-testid="tweetButton"]') ||
+                     document.querySelector('[data-testid="tweetButtonInline"]');
+            if (b && !b.disabled) b.click();
+        })();
     """)
     time.sleep(5)
     print(f'   Replied to: {tweet_url[:60]}...')
@@ -493,19 +530,23 @@ def post_viral_thread(page, state):
     # Post hook
     print(f'   Hook: {hook[:70]}...')
     page.goto('https://x.com/compose/post', wait_until='domcontentloaded', timeout=20000)
-    time.sleep(4)
-    escaped = hook.replace("'", "\\'").replace("$", "\\$")
-    page.evaluate(f"""
-        const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
-                  document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{escaped}';
-                  el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
+    time.sleep(5)
+    page.evaluate("""
+        (function() {
+            const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                      document.querySelector('div[role="textbox"]');
+            if (el) { el.click(); el.textContent = ''; }
+        })();
     """)
+    time.sleep(1)
+    page.keyboard.type(hook, delay=50)
     time.sleep(2)
     page.evaluate("""
-        const b = document.querySelector('[data-testid="tweetButton"]') ||
-                 document.querySelector('[data-testid="tweetButtonInline"]');
-        if (b) b.click();
+        (function() {
+            const b = document.querySelector('[data-testid="tweetButton"]') ||
+                     document.querySelector('[data-testid="tweetButtonInline"]');
+            if (b && !b.disabled) b.click();
+        })();
     """)
     time.sleep(6)
 
@@ -523,23 +564,27 @@ def post_viral_thread(page, state):
         """)
         time.sleep(3)
 
-        escaped = tweet.replace("'", "\\'").replace("$", "\\$")
         # Last tweet = CTA with link
         if i == len(tweets) - 1:
             calc_name = random.choice(['qfinhub.com', 'qfinhub.com/calculators'])
-            escaped += f' \\n\\n{calc_name}'
+            tweet += f' \n\n{calc_name}'
 
-        page.evaluate(f"""
-            const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
-                      document.querySelector('div[role="textbox"]');
-            if (el) {{ el.focus(); el.textContent = '{escaped}';
-                      el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
+        page.evaluate("""
+            (function() {
+                const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                          document.querySelector('div[role="textbox"]');
+                if (el) { el.click(); el.textContent = ''; }
+            })();
         """)
+        time.sleep(1)
+        page.keyboard.type(tweet, delay=50)
         time.sleep(2)
         page.evaluate("""
-            const b = document.querySelector('[data-testid="tweetButton"]') ||
-                     document.querySelector('[data-testid="tweetButtonInline"]');
-            if (b) b.click();
+            (function() {
+                const b = document.querySelector('[data-testid="tweetButton"]') ||
+                         document.querySelector('[data-testid="tweetButtonInline"]');
+                if (b && !b.disabled) b.click();
+            })();
         """)
         time.sleep(5)
 
@@ -557,19 +602,23 @@ def post_challenge(page, state):
     challenge = random.choice(CHALLENGES)
 
     page.goto('https://x.com/compose/post', wait_until='domcontentloaded', timeout=20000)
-    time.sleep(4)
-    escaped = challenge['tweet'].replace('\\', '\\\\').replace("'", "\\'").replace("\n", "\\n").replace("$", "\\$")
-    page.evaluate(f"""
-        const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
-                  document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{escaped}';
-                  el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
+    time.sleep(5)
+    page.evaluate("""
+        (function() {
+            const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                      document.querySelector('div[role="textbox"]');
+            if (el) { el.click(); el.textContent = ''; }
+        })();
     """)
+    time.sleep(1)
+    page.keyboard.type(challenge['tweet'], delay=50)
     time.sleep(2)
     page.evaluate("""
-        const b = document.querySelector('[data-testid="tweetButton"]') ||
-                 document.querySelector('[data-testid="tweetButtonInline"]');
-        if (b) b.click();
+        (function() {
+            const b = document.querySelector('[data-testid="tweetButton"]') ||
+                     document.querySelector('[data-testid="tweetButtonInline"]');
+            if (b && !b.disabled) b.click();
+        })();
     """)
     time.sleep(6)
 
@@ -664,19 +713,23 @@ def self_tweet(page, state):
     tweet = random.choice(SELF_TWEETS)
 
     page.goto('https://x.com/compose/post', wait_until='domcontentloaded', timeout=20000)
-    time.sleep(4)
-    escaped = tweet.replace("'", "\\'").replace("$", "\\$").replace("\n", "\\n")
-    page.evaluate(f"""
-        const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
-                  document.querySelector('div[role="textbox"]');
-        if (el) {{ el.focus(); el.textContent = '{escaped}';
-                  el.dispatchEvent(new Event('input', {{ bubbles: true }})); }}
+    time.sleep(5)
+    page.evaluate("""
+        (function() {
+            const el = document.querySelector('[data-testid="tweetTextarea_0"]') ||
+                      document.querySelector('div[role="textbox"]');
+            if (el) { el.click(); el.textContent = ''; }
+        })();
     """)
+    time.sleep(1)
+    page.keyboard.type(tweet, delay=50)
     time.sleep(2)
     page.evaluate("""
-        const b = document.querySelector('[data-testid="tweetButton"]') ||
-                 document.querySelector('[data-testid="tweetButtonInline"]');
-        if (b) b.click();
+        (function() {
+            const b = document.querySelector('[data-testid="tweetButton"]') ||
+                     document.querySelector('[data-testid="tweetButtonInline"]');
+            if (b && !b.disabled) b.click();
+        })();
     """)
     time.sleep(5)
 
