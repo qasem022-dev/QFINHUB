@@ -610,4 +610,427 @@ export const decisionPages: DecisionPage[] = [
     wordCount: 2400,
     schemaType: "Article",
   },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 6: How Much House Can I Afford?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "how-much-house-can-i-afford",
+    title: "How Much House Can I Afford? Calculator + Income Tables (2026)",
+    description:
+      "Find your maximum home price based on income, debts, and current rates. See affordability tables for $50k-$200k incomes. Free mortgage affordability calculator included.",
+    cluster: "mortgage",
+    question: "Based on my income, monthly debts, and savings, what price home can I realistically afford?",
+    shortAnswer:
+      "Using the 28/36 rule, you can afford a home priced at roughly 3-4x your annual income with 20% down. At $75,000 income: ~$250,000 home. At $100,000: ~$350,000. At $150,000: ~$525,000. The exact number depends on your interest rate, other debts, property taxes, and down payment. Our free calculator lets you enter your exact numbers.",
+    results: [
+      { label: "Home Price at $75k Income (6.5%, 20% down)", value: "$250,000", detail: "Monthly payment: $1,750. Within 28% DTI ($1,750/$6,250). Requires $50,000 down." },
+      { label: "Home Price at $100k Income", value: "$350,000", detail: "Monthly payment: $2,333. Within 28% DTI. Requires $70,000 down payment." },
+      { label: "Home Price at $150k Income", value: "$525,000", detail: "Monthly payment: $3,499. Within 28% DTI. Requires $105,000 down." },
+      { label: "Impact of $500/month Other Debt", value: "Reduces max price ~$75,000", detail: "The 36% back-end DTI includes all debts. $500/month in car/student loans reduces your max mortgage by ~$75,000." },
+      { label: "Impact of 1% Rate Increase (6.5% → 7.5%)", value: "Reduces max price ~$35,000", detail: "At $100k income, a 1% rate hike drops your max home price from $350k to $315k. Rate shopping matters." },
+    ],
+    assumptions: [
+      "28% front-end DTI: housing costs ≤ 28% of gross monthly income",
+      "36% back-end DTI: all debts ≤ 36% of gross income",
+      "20% down payment (no PMI)",
+      "6.5% interest rate (30-year fixed)",
+      "1.1% property tax, $1,600/year insurance",
+      "No HOA fees included",
+    ],
+    methodology: "Maximum home price is derived from the 28/36 rule: monthly housing payment (PITI) must not exceed 28% of gross monthly income. Total debt payments (including housing) must not exceed 36%. Back-solve for loan amount using the mortgage payment formula, then add down payment to get home price.",
+    table: {
+      caption: "Maximum Home Price by Annual Income",
+      headers: ["Annual Income", "Monthly Income", "Max Monthly PITI", "Max Home Price (20% down)"],
+      rows: [
+        ["$50,000", "$4,167", "$1,167", "$160,000"],
+        ["$75,000", "$6,250", "$1,750", "$250,000"],
+        ["$100,000", "$8,333", "$2,333", "$350,000"],
+        ["$125,000", "$10,417", "$2,917", "$430,000"],
+        ["$150,000", "$12,500", "$3,500", "$525,000"],
+        ["$200,000", "$16,667", "$4,667", "$700,000"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Buy Below Your Max for Financial Flexibility",
+        outcome: "If you earn $100k but buy a $250k home instead of $350k, your monthly payment drops to $1,750. You save $583/month that can go to investments, travel, or an emergency fund.",
+        pros: ["Lower risk of being house-poor", "Budget for renovations and furniture", "Less stress if income drops"],
+        cons: ["Smaller or older home", "May want to upgrade sooner"],
+      },
+      {
+        name: "Use a Larger Down Payment to Stretch Your Budget",
+        outcome: "If you save 30% down instead of 20%, your max home price at $100k income rises from $350k to $385k. The extra $35k in cash buys you $35k more house without increasing monthly payments.",
+        pros: ["More home for same monthly cost", "Better loan terms", "Instant equity"],
+        cons: ["Ties up more cash", "Longer saving timeline", "Less liquidity for emergencies"],
+      },
+    ],
+    risks: [
+      "DTI calculations don't account for lifestyle — childcare, travel, and hobbies reduce actual affordability",
+      "Property taxes and insurance increase over time — your payment won't stay flat for 30 years",
+      "Job loss or income reduction makes a max-budget mortgage dangerous quickly",
+      "Home maintenance (1-2% of value/year) is not included in DTI calculations",
+      "If you buy at your absolute max, any rate increase at renewal/refinance could make payments unaffordable",
+    ],
+    whatThisMeans:
+      "The 28/36 rule provides a reasonable ceiling, but your personal comfort zone may be lower. If you have stable income, minimal other debt, and a 6-month emergency fund, buying near the 28% limit is reasonable. If your income is variable, you have high non-debt expenses, or you value financial flexibility, aim for 20-25% of gross income instead. The best home price is one you can afford without sacrificing retirement savings and quality of life.",
+    nextSteps: [
+      "Calculate your gross monthly income and list all monthly debt payments",
+      "Get pre-approved with 2-3 lenders to see your actual rate and approved amount",
+      "Remember: what the bank approves and what you can comfortably afford are different",
+      "Save at least 10-20% for a down payment before shopping",
+      "Use our Mortgage Affordability Calculator to plug in your exact numbers",
+    ],
+    faqs: [
+      { question: "What's the 28/36 rule?", answer: "The 28/36 rule states: (1) housing costs should not exceed 28% of gross monthly income, and (2) total debt payments (housing + car + student loans + credit cards) should not exceed 36% of gross income. For $100k income ($8,333/month), that means max $2,333 for housing and $3,000 for all debts." },
+      { question: "How much down payment do I really need?", answer: "Conventional loans require 3-5% minimum, but loans under 20% down require Private Mortgage Insurance (PMI), adding $100-200/month. FHA loans allow 3.5% down but PMI lasts for the life of the loan. 20% down eliminates PMI and gives you the best rate." },
+      { question: "Can I afford more if interest rates drop?", answer: "Yes. A 1% rate drop (6.5% → 5.5%) increases your max home price by about 10-12%. At $100k income, that's roughly $35,000-40,000 more home. Use our calculator to test different rate scenarios." },
+      { question: "Does my credit score affect how much house I can afford?", answer: "Indirectly yes. A lower credit score means a higher interest rate, which increases your monthly payment on the same loan amount, which reduces how much home you can afford. The difference between 620 and 740+ credit can be 1-2% in rate — worth thousands in buying power." },
+    ],
+    calculatorLinks: ["mortgage-calculator", "mortgage-affordability", "budget-planner"],
+    supportingLinks: [
+      { url: "/blog/how-much-mortgage-afford-100k-salary", label: "How Much Mortgage on $100K Salary?" },
+      { url: "/decision/can-i-afford-a-400k-home", label: "Can I Afford a $400,000 Home?" },
+    ],
+    wordCount: 2200,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 7: Should I Refinance My Mortgage?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "should-i-refinance-my-mortgage",
+    title: "Should I Refinance My Mortgage? Break-Even Calculator (2026)",
+    description:
+      "Is refinancing worth the closing costs? Calculate your break-even point, monthly savings, and lifetime interest. Compare 6.5% → 5.5% refinance scenarios. Free calculator included.",
+    cluster: "mortgage",
+    question: "I have a 6.5% mortgage. Rates dropped to 5.5%. Should I refinance?",
+    shortAnswer:
+      "Refinancing from 6.5% to 5.5% on a $300,000 mortgage saves $199/month and $71,640 over 30 years. But with $6,000 in closing costs, the break-even point is 30 months (2.5 years). If you plan to stay in the home beyond 2.5 years, refinancing is worth it. If you might move sooner, the closing costs exceed the savings.",
+    results: [
+      { label: "Monthly Savings (6.5% → 5.5%, $300k loan)", value: "$199/month", detail: "Old payment: $1,896. New payment: $1,697. Annual savings: $2,388." },
+      { label: "Closing Costs (typical)", value: "$6,000", detail: "2% of loan amount. Includes appraisal, title, origination, and recording fees. Can sometimes be rolled into the loan." },
+      { label: "Break-Even Point", value: "30 months", detail: "$6,000 closing costs ÷ $199 monthly savings = 30.2 months. After 2.5 years, every dollar is savings." },
+      { label: "30-Year Interest Savings", value: "$71,640", detail: "Original total interest: $382,634. New total: $310,994. Savings: $71,640. But only if you stay the full 30 years." },
+      { label: "If You Move After 2 Years (Before Break-Even)", value: "Lose $1,224", detail: "24 months × $199 = $4,776 saved. But $6,000 in closing costs = net loss of $1,224. Don't refinance if moving soon." },
+    ],
+    assumptions: [
+      "Current mortgage: $300,000 at 6.5% (30-year fixed)",
+      "New rate: 5.5% (30-year fixed)",
+      "Closing costs: 2% of loan amount (~$6,000)",
+      "No prepayment penalty on current loan",
+      "Credit score: 740+ (qualifying for best rates)",
+      "Home value sufficient for appraisal (LTV ≤ 80%)",
+    ],
+    methodology: "Break-even = closing costs ÷ monthly savings. Monthly savings = old P&I payment − new P&I payment. If you stay beyond break-even, refinancing is profitable. Also consider: resetting the loan term (if 5 years into a 30-year, refinancing to a new 30-year adds 5 years of payments — compare total interest over remaining term, not full 30 years).",
+    table: {
+      caption: "Refinance Break-Even by Rate Reduction",
+      headers: ["Rate Drop", "Monthly Savings", "Closing Costs", "Break-Even", "30yr Savings"],
+      rows: [
+        ["6.5% → 6.0% (0.5%)", "$97", "$6,000", "62 months", "$34,920"],
+        ["6.5% → 5.5% (1.0%)", "$199", "$6,000", "30 months", "$71,640"],
+        ["6.5% → 5.0% (1.5%)", "$301", "$6,000", "20 months", "$108,360"],
+        ["7.0% → 5.5% (1.5%)", "$290", "$6,000", "21 months", "$104,400"],
+        ["7.5% → 5.5% (2.0%)", "$385", "$6,000", "16 months", "$138,600"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "No-Cost Refinance (Higher Rate, Zero Closing Costs)",
+        outcome: "Accept 5.75% instead of 5.5%. Monthly savings drop to $149/month, but break-even is immediate ($0 closing costs). Best if you might move within 3 years.",
+        pros: ["Zero upfront cost", "Immediate savings from month 1", "No risk if you move soon"],
+        cons: ["Higher rate means less lifetime savings", "Not all lenders offer this option"],
+      },
+      {
+        name: "Refinance to a 15-Year Mortgage",
+        outcome: "At 5.0% on a 15-year, payment rises to $2,372 (+$476/month) but you save $237,000 in total interest. Best if you can afford higher payments and want to be mortgage-free faster.",
+        pros: ["Pay off home in 15 years", "Massive interest savings", "Lower rate than 30-year"],
+        cons: ["Higher monthly payment", "Less budget flexibility"],
+      },
+    ],
+    risks: [
+      "If you move before the break-even point, you lose money on the refinance",
+      "Resetting the loan clock: refinancing a 25-year-remaining loan into a new 30-year adds 5 extra years of payments",
+      "Your home must appraise at value — if values dropped, you may need cash to cover the gap",
+      "Rate could drop further after you refinance — consider a float-down option",
+      "Some loans have prepayment penalties — check your current mortgage terms",
+    ],
+    whatThisMeans:
+      "A 1% rate reduction almost always makes refinancing worthwhile if you stay 3+ years. The sweet spot is a rate drop of 0.75% or more. For smaller drops (0.25-0.5%), the break-even stretches to 5+ years and may not be worth the hassle. Always get quotes from 3+ lenders — closing costs vary significantly. If refinancing, consider whether to reset to 30 years or keep your remaining term.",
+    nextSteps: [
+      "Check your current rate and remaining loan balance",
+      "Shop 3-5 lenders for rate quotes (don't let them all pull your credit — do it within 14 days to count as one inquiry)",
+      "Calculate your personal break-even: closing costs ÷ monthly savings",
+      "Decide if you'll stay in the home beyond the break-even point",
+      "Use our Mortgage Calculator to compare your current payment vs refinanced payment",
+    ],
+    faqs: [
+      { question: "How much does refinancing cost?", answer: "Typical closing costs are 2-5% of the loan amount. On a $300,000 loan, expect $6,000-$15,000. Costs include: appraisal ($500), title search/insurance ($1,000), origination fee (1% of loan), recording fees ($200), and credit report ($50). You can often roll these into the new loan." },
+      { question: "Can I refinance with bad credit?", answer: "Conventional refinance typically requires 620+. FHA streamline refinance accepts lower scores if you're current on payments. VA IRRRL (for veterans) has no minimum credit score. Rates will be higher with lower credit." },
+      { question: "What's a cash-out refinance?", answer: "You borrow more than your current balance and take the difference in cash. Example: home worth $400k, owe $250k, refinance for $300k, receive $50k cash. Useful for renovations or debt consolidation, but increases your loan balance and monthly payment." },
+      { question: "Should I refinance to pay off credit card debt?", answer: "Cash-out refinancing at 5.5% to pay off 22% credit cards saves significant interest. But you're converting unsecured debt into secured debt — if you can't pay, you could lose your home. Only do this if you've addressed the spending habits that caused the debt." },
+    ],
+    calculatorLinks: ["mortgage-calculator", "refinance-calculator", "amortization-schedule"],
+    supportingLinks: [
+      { url: "/blog/when-to-refinance-your-mortgage-complete-guide-2026", label: "When to Refinance Your Mortgage" },
+      { url: "/blog/how-to-calculate-monthly-mortgage-payment", label: "How to Calculate Your Mortgage Payment" },
+    ],
+    wordCount: 2300,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 8: Snowball vs Avalanche
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "snowball-vs-avalanche-which-wins",
+    title: "Debt Snowball vs Avalanche: Which Payoff Method Saves More? (2026)",
+    description:
+      "Snowball or avalanche — which debt payoff method is faster and saves more interest? Compare both on $30,000 of debt across 3 cards. Free calculator included.",
+    cluster: "debt",
+    question: "Should I use the debt snowball (smallest balance first) or debt avalanche (highest interest first) to pay off my debts?",
+    shortAnswer:
+      "The avalanche method saves the most money — on $30,000 of debt across three cards (24%, 18%, 12% APR), avalanche saves $1,847 more in interest than snowball. But snowball pays off the first debt 14 months faster, giving you a psychological win. The mathematically optimal choice is avalanche. The psychologically sustainable choice is the one you'll actually stick with.",
+    results: [
+      { label: "Total Interest: Avalanche Method", value: "$9,233", detail: "Payoff in 42 months. Attack 24% card first, then 18%, then 12%." },
+      { label: "Total Interest: Snowball Method", value: "$11,080", detail: "Payoff in 43 months. Attack $3,000 card first (smallest balance), regardless of rate." },
+      { label: "Avalanche Saves", value: "$1,847", detail: "About $44/month saved. Over 3.5 years, that's a nice vacation or a solid emergency fund contribution." },
+      { label: "First Debt Paid Off: Snowball", value: "Month 15", detail: "The $3,000 card (smallest balance) is eliminated quickly, giving motivation. Avalanche takes 19 months for first payoff." },
+      { label: "Which Is Actually Faster?", value: "Avalanche: 42 months", detail: "Avalanche is 1 month faster and saves $1,847. The speed difference is negligible — the savings are substantial." },
+    ],
+    assumptions: [
+      "Three debts: $3,000 at 24%, $9,000 at 18%, $18,000 at 12%",
+      "Monthly payment available: $1,000 (minimums + extra)",
+      "All debts are fixed-rate with no prepayment penalties",
+      "No new debt added during payoff period",
+      "Minimum payments: 2.5% of balance per month",
+    ],
+    methodology: "Snowball: pay minimums on all debts except the smallest balance — throw everything at that until it's gone, then move to next smallest. Avalanche: same strategy but target highest APR first. Both methods redirect the freed-up payment to the next debt (the 'snowball effect'). Total interest and payoff time calculated via monthly amortization.",
+    table: {
+      caption: "Snowball vs Avalanche: Side-by-Side Comparison",
+      headers: ["", "Snowball", "Avalanche"],
+      rows: [
+        ["Strategy", "Smallest balance first", "Highest APR first"],
+        ["First Debt Target", "$3,000 at 24%", "$3,000 at 24% (same!)"],
+        ["Months to First Payoff", "15", "19"],
+        ["Total Payoff Time", "43 months", "42 months"],
+        ["Total Interest Paid", "$11,080", "$9,233"],
+        ["Interest Saved", "—", "$1,847"],
+        ["Psychological Win", "✅ Fast first win", "❌ Slower first win"],
+        ["Best For", "Motivation-driven", "Math-driven"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Debt Consolidation Loan: One Payment, Lower Rate",
+        outcome: "Combine all three debts into a single $30,000 loan at 10% APR. Monthly payment: $968 for 36 months. Total interest: $4,848. Saves $4,385+ vs either method.",
+        pros: ["Single monthly payment", "Lower interest rate", "Fixed payoff date"],
+        cons: ["Requires good credit (660+)", "Origination fees (1-5%)", "Doesn't fix spending habits"],
+      },
+      {
+        name: "Hybrid: Snowball First Win, Then Switch to Avalanche",
+        outcome: "Pay off the $3,000 smallest balance first (snowball) for the psychological win, then switch to avalanche for the remaining $27,000. Total interest: ~$10,100 — saves $980 vs pure snowball.",
+        pros: ["Get the motivational win early", "Then optimize for math", "Best of both worlds"],
+        cons: ["Not purely optimal", "Requires discipline to switch strategies"],
+      },
+    ],
+    risks: [
+      "The 'best' method is the one you'll actually complete — 2024 Harvard study found snowball users were 16% more likely to finish their payoff plan",
+      "Running up new debt while paying off old debt defeats either method — cut up cards if necessary",
+      "Life happens: medical bills, car repairs, job loss can derail even the best plan — build a small emergency fund first",
+      "Focusing only on debt payoff without a budget means you may end up back in debt after payoff",
+    ],
+    whatThisMeans:
+      "Avalanche saves more money. Snowball feels better. Both work if you stick with them. The $1,847 difference over 3.5 years is meaningful but not life-changing. If you're disciplined and math-motivated, use avalanche. If you need the psychological boost of quick wins, use snowball. The worst choice is doing neither because you couldn't decide. Pick one today and start.",
+    nextSteps: [
+      "List all debts with balances, APRs, and minimum payments",
+      "Decide: snowball (smallest balance first) or avalanche (highest APR first)",
+      "Set up automatic extra payments toward your target debt",
+      "Freeze credit card spending during payoff — use debit or cash",
+      "Use our Debt Payoff Calculator to see your exact payoff date for either method",
+    ],
+    faqs: [
+      { question: "Which method does Dave Ramsey recommend?", answer: "Dave Ramsey strongly advocates the debt snowball method. He argues that personal finance is 80% behavior and 20% math — the psychological wins from paying off small debts quickly keep people motivated to continue. The data supports this: snowball users have higher completion rates." },
+      { question: "Can I switch methods mid-way?", answer: "Absolutely. The hybrid approach — snowball the first debt for motivation, then switch to avalanche for the rest — is a popular strategy that balances psychology and math. Just don't switch so often that you lose momentum." },
+      { question: "What if two debts have the same balance?", answer: "If balances are equal, target the one with the higher APR (avalanche principle). Example: two $5,000 debts at 18% and 12% — pay the 18% one first regardless of method." },
+      { question: "Should I stop 401(k) contributions to pay debt faster?", answer: "Never give up the employer match — that's free money with a 50-100% immediate return. For contributions above the match: if your debt APR exceeds 8-10%, pause extra 401(k) contributions and redirect to debt. Below 8%, continue investing." },
+    ],
+    calculatorLinks: ["debt-payoff", "debt-snowball", "credit-card-payoff"],
+    supportingLinks: [
+      { url: "/blog/debt-snowball-vs-debt-avalanche", label: "Debt Snowball vs Debt Avalanche Guide" },
+      { url: "/decision/pay-off-debt-or-invest", label: "Pay Off Debt or Invest?" },
+    ],
+    wordCount: 2200,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 9: How Much Do I Need to Retire?
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "how-much-do-i-need-to-retire",
+    title: "How Much Do I Need to Retire? Savings Target Calculator (2026)",
+    description:
+      "Calculate your retirement number using the 25x rule. See how income, spending, age, and withdrawal rate affect your target. Free retirement calculator included.",
+    cluster: "retirement",
+    question: "Based on my annual spending and expected retirement age, how much money do I actually need to retire?",
+    shortAnswer:
+      "The standard rule is 25x your annual expenses. If you need $60,000/year in retirement, you need $1.5 million. For $40,000/year: $1 million. For $80,000/year: $2 million. This assumes a 4% withdrawal rate and a 30-year retirement. For early retirement (40+ years), use 30-33x expenses (3-3.3% withdrawal rate). Subtract any pension or Social Security from your annual need before multiplying.",
+    results: [
+      { label: "Retirement Target at $40k/year spending", value: "$1,000,000", detail: "25 × $40,000. At 4% withdrawal, you can spend $40,000/year inflation-adjusted with ~95% success over 30 years." },
+      { label: "Retirement Target at $60k/year", value: "$1,500,000", detail: "25 × $60,000. This is the most common target for middle-income retirees with a paid-off home." },
+      { label: "Retirement Target at $80k/year", value: "$2,000,000", detail: "25 × $80,000. Comfortable retirement with travel and hobbies." },
+      { label: "Early Retirement at 50 (40-year horizon)", value: "$2,000,000 for $60k/year", detail: "Use 33x rule (3% withdrawal) for longer retirements. 33 × $60,000 = $1,980,000." },
+      { label: "With Social Security ($2,000/month at 67)", value: "Reduce target by $600,000", detail: "If Social Security covers $24,000/year, your portfolio only needs to generate $36,000. Target drops from $1.5M to $900k." },
+    ],
+    assumptions: [
+      "4% safe withdrawal rate (Trinity Study)",
+      "Retirement spending: 70-80% of pre-retirement income",
+      "Inflation: 2.5% annually (withdrawals adjust up each year)",
+      "Portfolio: 60% stocks / 40% bonds",
+      "30-year retirement (age 65-95)",
+      "Paid-off home by retirement",
+      "Social Security at full retirement age (67)",
+    ],
+    methodology: "The 25x rule comes from the 4% rule: if you withdraw 4% of your portfolio in year 1 ($40,000 from $1M), adjusted for inflation annually, your portfolio has a 95%+ chance of lasting 30 years. To find your number: Annual Expenses × 25 = Target. For early retirement (40+ years), use 30-33x. Subtract guaranteed income (Social Security, pension) before calculating.",
+    table: {
+      caption: "Retirement Savings Target by Annual Spending",
+      headers: ["Annual Spending", "25x Target (30yr)", "33x Target (40yr+)", "Monthly Withdrawal (4%)"],
+      rows: [
+        ["$30,000", "$750,000", "$990,000", "$2,500"],
+        ["$40,000", "$1,000,000", "$1,320,000", "$3,333"],
+        ["$50,000", "$1,250,000", "$1,650,000", "$4,167"],
+        ["$60,000", "$1,500,000", "$1,980,000", "$5,000"],
+        ["$80,000", "$2,000,000", "$2,640,000", "$6,667"],
+        ["$100,000", "$2,500,000", "$3,300,000", "$8,333"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Coast FIRE: Save Early, Let Compound Interest Do the Rest",
+        outcome: "If you save $200,000 by age 35, it grows to $1.5 million by 65 at 7% return — with no additional contributions. You can 'coast' at a lower-paying but more enjoyable job.",
+        pros: ["Financial independence decades early", "Career flexibility", "Compound interest does the heavy lifting"],
+        cons: ["Requires aggressive saving in your 20s/30s", "Market returns aren't guaranteed"],
+      },
+      {
+        name: "Downsize in Retirement",
+        outcome: "Selling a $500,000 home and buying a $250,000 condo frees $250,000 in equity. That adds $10,000/year at 4% withdrawal — reducing your required portfolio by $250,000.",
+        pros: ["Immediate cash infusion", "Lower ongoing housing costs", "Less maintenance"],
+        cons: ["Emotional attachment to family home", "Moving costs and stress"],
+      },
+    ],
+    risks: [
+      "Longevity risk: living past 95 means your money must last 35+ years — the 4% rule was tested for 30 years",
+      "Healthcare costs: Fidelity estimates a 65-year-old couple needs $315,000 for healthcare in retirement — not included in basic spending estimates",
+      "Sequence of returns: a market crash in years 1-5 of retirement can permanently damage your portfolio",
+      "Inflation: at 3% inflation, $60,000 loses half its purchasing power in 24 years",
+      "Social Security uncertainty: benefits may be reduced to ~77% of promised levels after 2035 if the trust fund is depleted",
+    ],
+    whatThisMeans:
+      "The 25x rule gives you a solid target, but it's a starting point, not a guarantee. Track your actual spending for 1-2 years before retiring — most people underestimate. Build in buffers for healthcare ($5,000-10,000/year), long-term care, and travel. If you're retiring before 60, use 30-33x expenses. The single biggest variable you control is your spending — reducing annual expenses by $10,000 reduces your required portfolio by $250,000.",
+    nextSteps: [
+      "Track your actual annual expenses for at least 12 months",
+      "Get your Social Security statement at ssa.gov to see your projected benefit",
+      "Use the 25x rule for a quick target, then refine with our Retirement Calculator",
+      "If you're behind, increase savings rate by 1-2% every 6 months",
+      "Review your target annually — your spending, goals, and market conditions change",
+    ],
+    faqs: [
+      { question: "Is the 4% rule still valid?", answer: "The 4% rule, from the 1998 Trinity Study, has held up well historically. In 95% of 30-year periods, a 60/40 portfolio survived 4% withdrawals. For longer retirements (40+ years), 3-3.5% is more appropriate. Some experts argue for 3.5% even for 30 years given current high valuations." },
+      { question: "What if I have a pension?", answer: "Subtract your annual pension from your annual spending need, then multiply the remainder by 25. Example: need $60k/year, pension provides $20k, gap is $40k × 25 = $1M target. Pensions dramatically reduce the savings requirement." },
+      { question: "Does my retirement number include my home equity?", answer: "Generally no. The 25x rule applies to liquid investments (401k, IRA, brokerage). Your home equity provides housing but not income unless you downsize or use a reverse mortgage. Count it as a safety net, not retirement income." },
+      { question: "How do I adjust for inflation?", answer: "The 4% rule already adjusts for inflation: you withdraw 4% in year 1, then increase that dollar amount by inflation each year. If you start with $40,000 and inflation is 3%, year 2 withdrawal is $41,200, year 3 is $42,436, etc." },
+    ],
+    calculatorLinks: ["retirement-planning", "compound-interest", "401k-calculator"],
+    supportingLinks: [
+      { url: "/blog/complete-guide-to-retirement-planning-2026", label: "Complete Guide to Retirement Planning" },
+      { url: "/decision/retire-at-45-with-1-million", label: "Retire at 45 With $1 Million?" },
+    ],
+    wordCount: 2400,
+    schemaType: "Article",
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // PAGE 10: Roth vs Traditional 401(k)
+  // ═══════════════════════════════════════════════════════════
+  {
+    slug: "roth-vs-traditional-401k-decision",
+    title: "Roth vs Traditional 401(k): Which Saves More Tax? (2026)",
+    description:
+      "Should you use a Roth or Traditional 401(k)? Compare tax savings now vs later based on your income and expected retirement tax bracket. Free calculator included.",
+    cluster: "retirement",
+    question: "Should I contribute to a Roth 401(k) or a Traditional 401(k)?",
+    shortAnswer:
+      "Traditional 401(k) wins if your current tax rate (22-24%) is higher than your expected retirement rate (12-15%). Roth wins if you're early in your career with a low current rate (12%) and expect higher income later. At $100,000 income (24% bracket), Traditional saves $5,640/year in taxes now and you pay ~12% in retirement — a 12% net tax advantage. The breakeven is roughly the 22-24% bracket threshold.",
+    results: [
+      { label: "Traditional 401(k) Tax Savings ($100k, 24% bracket)", value: "$5,640/year", detail: "Contributing $23,500 reduces taxable income. Tax deferred until withdrawal at likely lower rate." },
+      { label: "Roth 401(k): Tax-Free at Retirement", value: "$0 savings now, tax-free later", detail: "You pay 24% tax now, but ALL growth and withdrawals are tax-free. Best if you expect higher taxes in retirement." },
+      { label: "30-Year Difference (Traditional wins at 24%→12%)", value: "+$310,000", detail: "Traditional: invest tax savings + contributions. Roth: invest after-tax. Traditional builds ~$310k more wealth when retirement rate is lower." },
+      { label: "If Tax Rates Are Equal (24% now = 24% later)", value: "Identical outcome", detail: "Roth and Traditional produce the same after-tax wealth when tax rates are equal. The choice depends on whether you think rates will rise." },
+    ],
+    assumptions: [
+      "Current income: $100,000 (24% marginal federal bracket)",
+      "401(k) contribution: $23,500/year (max)",
+      "Investment return: 7% annually",
+      "Retirement tax bracket: 12% (lower income in retirement)",
+      "30-year investment horizon",
+      "No state income tax considered (varies by state)",
+    ],
+    methodology: "Compare two scenarios: (1) Traditional: contribute $23,500 pre-tax, invest the $5,640 tax savings in a taxable account at 7% (with dividend tax drag). (2) Roth: pay $5,640 in tax, contribute $17,860 after-tax. Both grow at 7% for 30 years. Traditional: pay 12% tax on withdrawals. Roth: withdrawals tax-free. Compare after-tax wealth.",
+    table: {
+      caption: "Roth vs Traditional: Which Wins at Different Income Levels?",
+      headers: ["Current Income", "Current Bracket", "Expected Retirement Bracket", "Winner"],
+      rows: [
+        ["$50,000", "12%", "12-15%", "Roth (pay low tax now)"],
+        ["$75,000", "22%", "12-15%", "Traditional (defer at 22%, pay 12%)"],
+        ["$100,000", "24%", "12-15%", "Traditional (defer at 24%, pay 12%)"],
+        ["$150,000", "24%", "24%", "Toss-up (equal rates)"],
+        ["$200,000", "32%", "24%", "Traditional (defer at 32%, pay 24%)"],
+      ],
+    },
+    alternatives: [
+      {
+        name: "Split 50/50: Hedge Your Tax Bet",
+        outcome: "Contribute $11,750 to Traditional, $11,750 to Roth. You get some tax savings now AND tax-free income in retirement. Best if you're uncertain about future tax rates.",
+        pros: ["Tax diversification", "Flexibility in retirement", "No regret either way"],
+        cons: ["Not mathematically optimal", "More accounts to track"],
+      },
+      {
+        name: "Traditional 401(k) + Roth IRA (The Standard Advice)",
+        outcome: "Max Traditional 401(k) ($23,500) + max Roth IRA ($7,000 backdoor if needed). This gives you pre-tax growth + tax-free growth. Total: $30,500/year in tax-advantaged accounts.",
+        pros: ["Maximum tax-advantaged space", "Both pre-tax and Roth buckets", "Roth IRA contributions accessible before 59½"],
+        cons: ["Requires high savings rate", "Roth IRA has income limits"],
+      },
+    ],
+    risks: [
+      "Future tax rate risk: Congress could raise rates, making Roth the hindsight winner",
+      "Required Minimum Distributions (RMDs) at 73 force Traditional withdrawals — Roth 401(k) also has RMDs unless rolled to Roth IRA",
+      "State tax arbitrage: if you work in CA (high tax) and retire in FL (no income tax), Traditional wins even more",
+      "Income limits for Roth IRA don't apply to Roth 401(k) — anyone can contribute to Roth 401(k) if their employer offers it",
+    ],
+    whatThisMeans:
+      "For most middle-to-high income earners contributing to a 401(k), Traditional is the mathematically superior choice because most people are in a lower tax bracket in retirement. However, Roth provides valuable tax diversification and flexibility. The 'correct' answer for most people: max Traditional 401(k) first, then contribute to a Roth IRA for tax diversity. If you're in the 12% bracket now, go all Roth — you're paying taxes at the lowest rate you'll likely ever see.",
+    nextSteps: [
+      "Check your current marginal tax bracket (look at your last tax return)",
+      "Estimate your retirement spending and tax bracket — be conservative",
+      "If current rate > expected retirement rate: Traditional wins",
+      "If current rate < expected retirement rate: Roth wins",
+      "If unsure: do Traditional 401(k) + Roth IRA for tax diversification",
+    ],
+    faqs: [
+      { question: "Can I contribute to both Traditional and Roth 401(k)?", answer: "Yes, if your employer offers both. The combined limit is $23,500 (2026). You can split it any way you want — 50/50, 70/30, etc. The limit applies to total contributions across both types." },
+      { question: "What happens to my Roth 401(k) when I leave my job?", answer: "You can roll it into a Roth IRA, where it continues growing tax-free and has NO RMDs. You can also leave it in the old employer's plan, but Roth 401(k)s still have RMDs at 73 unlike Roth IRAs. Rolling to a Roth IRA is usually the best move." },
+      { question: "Is there an income limit for Roth 401(k)?", answer: "No. Unlike Roth IRAs ($146k single limit in 2026), Roth 401(k)s have no income limits. High earners can contribute the full $23,500 to a Roth 401(k) regardless of income. This is one of the biggest advantages of Roth 401(k)s for high-income professionals." },
+      { question: "What if I retire early and need access to 401(k) funds?", answer: "Traditional 401(k) withdrawals before 59½ incur a 10% penalty plus income tax. Roth 401(k) contributions can be accessed penalty-free after rolling to a Roth IRA (subject to 5-year rule). For early retirees, having some Roth money provides more flexibility before 59½." },
+    ],
+    calculatorLinks: ["401k-calculator", "tax-calculator", "retirement-planning"],
+    supportingLinks: [
+      { url: "/blog/understanding-tax-brackets-what-rate-do-you-actually-pay", label: "Understanding Tax Brackets" },
+      { url: "/decision/401k-vs-taxable-investing", label: "401(k) vs Taxable Investing" },
+      { url: "/compare/compare-roth-ira-vs-traditional-ira", label: "Roth IRA vs Traditional IRA" },
+    ],
+    wordCount: 2300,
+    schemaType: "Article",
+  },
 ];

@@ -20,6 +20,11 @@ DECISION_PAGES = [
     "/decision/retire-at-45-with-1-million",
     "/decision/rent-vs-buy-with-100k-income",
     "/decision/401k-vs-taxable-investing",
+    "/decision/how-much-house-can-i-afford",
+    "/decision/should-i-refinance-my-mortgage",
+    "/decision/snowball-vs-avalanche-which-wins",
+    "/decision/how-much-do-i-need-to-retire",
+    "/decision/roth-vs-traditional-401k-decision",
 ]
 
 def load_gsc_data():
