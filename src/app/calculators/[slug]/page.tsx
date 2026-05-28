@@ -15,7 +15,9 @@ import { ShareDialog } from "@/components/calculators/share-dialog";
 import { BreadcrumbNav } from "@/components/calculators/breadcrumb-nav";
 import { RelatedCalculators } from "@/components/calculators/related-calculators";
 import { RelatedArticles } from "@/components/calculators/related-articles";
+import { RelatedDecisions } from "@/components/calculators/related-decisions";
 import { CALCULATOR_BLOG_LINKS } from "@/lib/calculator-blog-links";
+import { CALCULATOR_DECISION_LINKS } from "@/lib/calculator-decision-links";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
 import type { CategoryType } from "@/types/calculator";
 
@@ -284,6 +286,11 @@ export default async function CalculatorDetailPage({
           calculatorSlug={slug}
           articles={CALCULATOR_BLOG_LINKS[slug] || []}
           maxResults={5}
+        />
+        <RelatedDecisions
+          calculatorSlug={slug}
+          decisions={CALCULATOR_DECISION_LINKS[slug] || []}
+          maxResults={4}
         />
         <RelatedCalculators
           currentSlug={slug}
