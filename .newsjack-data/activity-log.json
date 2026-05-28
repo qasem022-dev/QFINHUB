@@ -1483,5 +1483,47 @@
       "source": "CNBC Finance",
       "guid": "108312029"
     }
+  },
+  {
+    "ts": "2026-05-28T14:31:20.713Z",
+    "type": "news-match",
+    "details": {
+      "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108313054"
+    }
+  },
+  {
+    "ts": "2026-05-28T14:31:38.223Z",
+    "type": "news-published",
+    "details": {
+      "slug": "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+      "title": "Core Inflation Holds Steady at 3.3%: What It Means for Your Mortgage and Savings",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108313054"
+    }
+  },
+  {
+    "ts": "2026-05-28T14:31:43.225Z",
+    "type": "news-match",
+    "details": {
+      "title": "Energy inflation has been more persistent than expected, Fed&apos;s Goolsbee tells CNBC",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108312909"
+    }
+  },
+  {
+    "ts": "2026-05-28T14:31:59.164Z",
+    "type": "news-published",
+    "details": {
+      "slug": "energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
+      "title": "Energy Inflation Persists: How Higher Oil Prices Impact Your Mortgage and Savings Goals",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108312909"
+    }
   }
 ]
