@@ -19,7 +19,7 @@ interface RelatedDecisionsProps {
 export function RelatedDecisions({
   calculatorSlug,
   decisions,
-  maxResults = 4,
+  maxResults = 8,
 }: RelatedDecisionsProps) {
   if (!decisions || decisions.length === 0) return null;
 
