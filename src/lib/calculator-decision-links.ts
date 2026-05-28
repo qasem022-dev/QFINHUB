@@ -1,8 +1,10 @@
 /**
  * V2: Calculator → Decision Page mappings for cross-linking.
  * Decision pages that support specific calculator hubs.
- * Updated: 2026-05-28 (15 decision pages, redeploy)
+ * Updated: 2026-05-28 (15 decision pages, v4)
  */
+
+export const DECISION_LINKS_VERSION = "v4-61eaa48";
 
 export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; title: string }>> = {
   "mortgage-calculator": [
