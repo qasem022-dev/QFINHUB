@@ -143,7 +143,7 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // V2 Correction Phase 3: Programmatic SEO variant pages — only clean + GSC-confirmed variants.
+  // V2 Correction Phase 3: Sitemap cleanup — exclude noindexed pages.
   // Formula variants (loan-20k-5yr-8pct patterns) are noindexed + canonicalized → excluded.
   const TOOL_GSC_SLUGS = new Set([
     "afford-100k-40k-6-5pct",
