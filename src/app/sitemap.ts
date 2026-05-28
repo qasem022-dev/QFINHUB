@@ -1,5 +1,6 @@
 import { allCalculators } from "@/lib/calculators";
 import { blogPosts } from "@/lib/blog/posts";
+import { decisionPages } from "@/lib/decision-pages";
 import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
@@ -220,5 +221,13 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages];
+  // V2: Decision pages (quality-gated financial decision guides)
+  const decisionPageEntries: SitemapEntry[] = decisionPages.map((d) => ({
+    url: `${BASE_URL}/decision/${d.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...decisionPageEntries];
 }

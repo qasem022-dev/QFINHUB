@@ -607,6 +607,22 @@
       "replyTo": "+6f39f1f8-8a83-4af2-943e-b82e889c9d04@helpareporter.com",
       "quote": "Cryptocurrency is a volatile digital asset, and most mortgage lenders require it to be converted to fiat currency and seasoned in a bank account for 60+ days before using it as down payment funds. According to our analysis at QFINHUB, borrowers with crypto assets often face a 0.5% to 1% higher interest rate due to perceived risk, so plan to liquidate early and document every transaction to avoid underwriting delays.",
       "time": "2026-05-28T12:17:15.220Z"
+    },
+    {
+      "queryId": "1:+a1d1aa46-64c3-4399-9f3a-779e054ea5a7@helpareporter.com",
+      "headline": "Summary: Most popular licenses for global FinTech companies",
+      "category": "other",
+      "replyTo": "+a1d1aa46-64c3-4399-9f3a-779e054ea5a7@helpareporter.com",
+      "quote": "“From our work at QFINHUB, the EMI and VASP licenses in Lithuania and the UK remain the top picks for global FinTechs in 2026, with application costs ranging from €50,000 to €150,000 depending on jurisdiction. Speed is critical—Lithuania’s Bank of Lithuania now processes EMI applications in under six months, versus 12-18 months for a full banking license. Regulatory priorities are shifting toward stricter AML and travel rule compliance, so choose a jurisdiction that offers both efficient licensi",
+      "time": "2026-05-28T16:15:26.120Z"
+    },
+    {
+      "queryId": "22:+e0b180c9-34fe-4b98-b129-06512364a6b7@helpareporter.com",
+      "headline": "Summary: Why Quiet Luxury Brands Are Winning Consumer Trust Right Now",
+      "category": "other",
+      "replyTo": "+e0b180c9-34fe-4b98-b129-06512364a6b7@helpareporter.com",
+      "quote": "Quiet luxury brands are winning because they align with a shift in consumer values—over 65% of high-net-worth women now prioritize craftsmanship and longevity over logos, according to our wealth analytics at QFINHUB.com. This isn't about hiding wealth; it's about signaling discernment. When you strip away the noise, trust is built on what lasts, not what shouts.",
+      "time": "2026-05-28T16:16:01.868Z"
     }
   ],
   "failed": [
@@ -629,5 +645,5 @@
       "time": "2026-05-22T16:11:38.180Z"
     }
   ],
-  "totalProcessed": 98
+  "totalProcessed": 100
 }
