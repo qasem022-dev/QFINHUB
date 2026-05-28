@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"; // Phase 10.5
 import { Lightbulb } from "lucide-react";
 
 interface DecisionLink {

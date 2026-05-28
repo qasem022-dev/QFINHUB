@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense } from "react"; // Phase 10.5 redeploy
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Loader2, Code2 } from "lucide-react";
