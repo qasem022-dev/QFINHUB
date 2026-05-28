@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | QFINHUB",
   },
   description:
-    "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance. Fast, accurate, and 100% free — no sign-up required.",
+    "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance. Fast, accurate, and 100% free — no sign-up required.",
   keywords: [
     "financial calculator",
     "loan calculator",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "QFINHUB",
     title: "QFINHUB — Free Financial Calculators Online",
     description:
-      "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+      "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
     url: baseUrl,
     images: [
       {
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QFINHUB — Free Financial Calculators Online",
     description:
-      "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+      "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -130,7 +130,7 @@ const jsonLd = {
   name: "QFINHUB",
   url: baseUrl,
   description:
-    "124 free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+    "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "All",
   browserRequirements: "Requires JavaScript",
@@ -156,7 +156,7 @@ const jsonLd = {
   },
   availableLanguage: ALL_LANGUAGES.map((l) => l.name),
   featureList: [
-    "124 Financial Calculators",
+    "125+ Financial Calculators",
     "AI Custom Calculator",
     "Multi-Language Support",
     "Export to PDF & Image",

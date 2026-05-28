@@ -46,7 +46,7 @@ export function SiteFooter() {
               />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-              124 free financial calculators for loans, mortgages, investments, retirement, taxes,
+              125+ free financial calculators for loans, mortgages, investments, retirement, taxes,
               and personal finance. Fast, accurate, and 100% free.
             </p>
           </div>

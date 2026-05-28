@@ -35,17 +35,46 @@ export async function generateMetadata({ params }: ToolsPageProps) {
     return { title: "Calculator Not Found" };
   }
 
-  // V2: Quality index policy — no blanket noindex. Let Indexing API gate.
-  // Pages with proven impressions must remain indexable for Google ranking.
+  // V2 Correction: Classify tool variants by quality risk.
+  // FORMULA variants without GSC impressions → noindex + canonicalize to parent.
+  // Clean variants + variants with GSC impressions → keep indexable.
+  const toolPath = `/tools/${slug}`;
+  const TOOL_GSC_PAGES = new Set([
+    "/tools/afford-100k-40k-6-5pct",
+    "/tools/afford-130k-40k-7pct",
+  ]);
+  const hasGscImpressions = TOOL_GSC_PAGES.has(toolPath);
+
+  // Detect formula slug pattern (parameter combinations like loan-20k-5yr-8pct)
+  const formulaPattern = /^[a-z]+-\d/;
+  const parts = slug.split("-");
+  const hasPct = parts.some((p) => p.endsWith("pct"));
+  const hasYr = parts.some((p) => p.endsWith("yr"));
+  const hasNumParams =
+    parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 2;
+  const isFormulaVariant = (hasPct && hasYr) || (formulaPattern.test(slug) && hasNumParams);
+
+  // Determine canonical: formula variants → parent calculator
+  const parentCalcSlug = variant.calculatorId;
+  const canonicalUrl = isFormulaVariant && !hasGscImpressions
+    ? `https://www.qfinhub.com/calculators/${parentCalcSlug}`
+    : `https://www.qfinhub.com/tools/${slug}`;
+
+  // Determine indexability: keep only if GSC impressions or clean variant
+  const shouldIndex = hasGscImpressions || !isFormulaVariant;
+
   return {
     title: variant.meta.title,
     description: variant.meta.description,
+    robots: shouldIndex
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: {
       title: variant.meta.title,
       description: variant.meta.description,
     },
     alternates: {
-      canonical: `https://www.qfinhub.com/tools/${slug}`,
+      canonical: canonicalUrl,
     },
   };
 }

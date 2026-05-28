@@ -107,9 +107,29 @@ export async function generateMetadata({ params }: ScenarioPageProps) {
     return { title: "Scenario Not Found" };
   }
 
+  // V2 Correction: Conditional noindex for scenario pages.
+  // Only keep indexable if: (a) has GSC impressions, or (b) is a strong decision candidate.
+  // All hash-ID and formula scenarios without GSC data → noindex,follow.
+  const scenarioPath = `/scenario/${id}`;
+  const SCENARIO_GSC_PAGES = new Set([
+    "/scenario/401k-75000-10pct-10yr",
+    "/scenario/retirement-planning-5c0e8e25",
+  ]);
+  const hasGscImpressions = SCENARIO_GSC_PAGES.has(scenarioPath);
+
+  // Strong candidates: scenarios with deep content, FAQs, howToSteps, and computed data
+  const isStrongCandidate =
+    hasGscImpressions ||
+    (scenario.faqs && scenario.faqs.length >= 3 &&
+     scenario.howToSteps && scenario.howToSteps.length >= 2 &&
+     scenario.computed && Object.keys(scenario.computed).length >= 2);
+
   return {
     title: scenario.title,
     description: scenario.metaDescription,
+    robots: isStrongCandidate
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     alternates: {
       canonical: `https://www.qfinhub.com/scenario/${id}`,
     },

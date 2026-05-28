@@ -61,3 +61,19 @@ x-viral-engine.py: error: unrecognized arguments: --content-file /h
 [2026-05-27 17:00:03] API cost: $0.00 (CloakBrowser + DeepSeek)
 [2026-05-27 17:00:03] 
 [2026-05-27 17:00:03] Done.
+[2026-05-28 17:00:01] X Agent v3 (CloakBrowser) started
+[2026-05-28 17:00:01] Mode: Daily Post
+[2026-05-28 17:00:01] ═══ X Agent v3 (CloakBrowser) — Daily Run ═══
+[2026-05-28 17:00:01] Date: 2026-05-28
+[2026-05-28 17:00:01] Generating content via Gemini...
+[2026-05-28 17:00:04] Gemini API error: HTTP Error 503: Service Unavailable
+[2026-05-28 17:00:04] Content generation failed — using fallback content
+[2026-05-28 17:00:04] Content: Ever wondered how much you'll actually pay in interest? Calculate it free at qfinhub.com/calculators...
+[2026-05-28 17:00:04] Posting via CloakBrowser...
+[2026-05-28 17:00:04] Viral engine error (self-tweet): usage: x-viral-engine.py [-h]
+                         [--mode {giant-reply,viral-thread,challenge,newsjack,engage,self-tweet,full}]
+x-viral-engine.py: error: unrecognized arguments: --content-file /h
+[2026-05-28 17:00:04] ✗ Post failed — check CloakBrowser/X login
+[2026-05-28 17:00:04] API cost: $0.00 (CloakBrowser + Gemini)
+[2026-05-28 17:00:04] 
+[2026-05-28 17:00:04] Done.

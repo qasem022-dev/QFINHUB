@@ -64,9 +64,22 @@ export async function generateMetadata({ params }: GeoPageProps) {
   const title = `${calcConfig.label} for ${city.name}, ${city.stateAbbr} (2026) — Free & Instant`;
   const description = `Free ${calcConfig.label.toLowerCase()} for ${city.name}, ${city.stateAbbr} (2026). Calculate payments based on ${city.name}'s median home price of $${(city.medianHomePrice / 1000).toFixed(0)}K. Get instant results in 30 seconds — no signup, no email required, 100% free.`;
 
+  // V2: Geo pages are noindexed by default (doorway risk without real local data).
+  // Only keep indexable if this exact geo page has GSC impressions.
+  const geoPath = `/calculators/${slug}/${geo}`;
+  const GEO_GSC_PAGES = new Set([
+    "/calculators/loan/nashville-tn",
+    "/calculators/loan/reno-nv",
+    "/calculators/tax/philadelphia-pa",
+  ]);
+  const hasGscImpressions = GEO_GSC_PAGES.has(geoPath);
+
   return {
     title,
     description,
+    robots: hasGscImpressions
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     alternates: {
       canonical: `https://www.qfinhub.com/calculators/${slug}/${geo}`,
     },

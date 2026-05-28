@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-05-28T12:39:39.590980",
+  "targets_analyzed": 9,
+  "meta_fixes_applied": [
+    {
+      "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "old_impressions": 17,
+      "new_title": "Afford Calculator at 5% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate afford instantly. Example: if i make 100k what mortgage can i afford. Free online tool with detailed breakdown, formula, and expert tips."
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+      "old_impressions": 11,
+      "new_title": "Loan Calculator at 8% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate loan instantly. Example: if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be. Free online tool with detail..."
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "old_impressions": 9,
+      "new_title": "Monthly Mortgage Payment Formula Tax Insurance \u2014 Expert Analysis & ...",
+      "new_description": "Expert breakdown of monthly mortgage payment formula tax insurance. Answering: \"mortgage calculator piti\". Includes free calculators, real examples, and acti..."
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "old_impressions": 6,
+      "new_title": "Free Online Calculator \u2014 Instant Results | QFINHUB",
+      "new_description": "Get instant, accurate calculations with detailed breakdowns. 100% free, no signup needed. Try it now."
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/emergency-fund-4k-6mo",
+      "old_impressions": 4,
+      "new_title": "Free Emergency Fund Calculator \u2014 Instant Calculation | QFINHUB",
+      "new_description": "Calculate emergency fund instantly. Free online tool with detailed breakdown, formula, and expert tips."
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "old_impressions": 4,
+      "new_title": "Mortgage Calculator at 6% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate mortgage instantly. Example: $200 000 mortgage payment 30 years. Free online tool with detailed breakdown, formula, and expert tips."
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/retirement-55-0-8pct",
+      "old_impressions": 4,
+      "new_title": "Retirement Calculator at 8% \u2014 See Your Numbers | QFINHUB",
+      "new_description": "Calculate retirement instantly. Example: retire 55 calculator. Free online tool with detailed breakdown, formula, and expert tips."
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for",
+      "old_impressions": 3,
+      "new_title": "Jeff Bezos Proposes Zero Income Tax For Bottom Half Of Earners What...",
+      "new_description": "Expert breakdown of jeff bezos proposes zero income tax for bottom half of earners what it means for. Answering: \"bezos on zero federal income tax\". Includes..."
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "old_impressions": 3,
+      "new_title": "Tax in Philadelphia Pa \u2014 Local Rates & Payments | QFINHUB",
+      "new_description": "Calculate tax specifically for Philadelphia Pa. Uses local market data for accurate results. Free instant calculator \u2014 no signup needed."
+    }
+  ],
+  "scenarios_created": 1,
+  "urls_submitted": 10,
+  "scenarios": [
+    {
+      "slug": "loan-20000-5yr-8pct",
+      "title": "Borrowing $20000 for 5 Years at 8% \u2014 Monthly Payment Calculator",
+      "description": "See your exact monthly payment for a $20000 loan at 8% over 5 years. Free instant calculator with full amortization schedule. No signup needed.",
+      "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "calc_type": "loan",
+      "params": {
+        "amount": "20000",
+        "years": "5",
+        "rate": "8"
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "impressions": 17,
+      "best_pos": 96.2,
+      "top_query": "how much mortgage can i afford on 100k"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+      "impressions": 11,
+      "best_pos": 11.2,
+      "top_query": "20000 loan over 5 years monthly payments"
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "impressions": 9,
+      "best_pos": 65.5,
+      "top_query": "how to calculate piti"
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "impressions": 6,
+      "best_pos": 90.66666666666667,
+      "top_query": "how to calculate your retirement income"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/emergency-fund-4k-6mo",
+      "impressions": 4,
+      "best_pos": 72.33333333333333,
+      "top_query": "8 month emergency fund calculator"
+    }
+  ]
+}
