@@ -154,8 +154,10 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     const parts = slug.split("-");
     const hasPct = parts.some((p) => p.endsWith("pct"));
     const hasYr = parts.some((p) => p.endsWith("yr"));
+    const hasMo = parts.some((p) => p.endsWith("mo"));
     const numCount = parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length;
-    return (hasPct && hasYr) || (/^[a-z]+-\d/.test(slug) && numCount >= 2);
+    // Formula = percentage-based slug with year/month terms, or multi-parameter numeric slug
+    return (hasPct && (hasYr || hasMo)) || (/^[a-z]+-\d/.test(slug) && numCount >= 3);
   }
 
   let variantPages: SitemapEntry[] = [];

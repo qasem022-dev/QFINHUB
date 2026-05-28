@@ -50,9 +50,10 @@ export async function generateMetadata({ params }: ToolsPageProps) {
   const parts = slug.split("-");
   const hasPct = parts.some((p) => p.endsWith("pct"));
   const hasYr = parts.some((p) => p.endsWith("yr"));
+  const hasMo = parts.some((p) => p.endsWith("mo"));
   const hasNumParams =
-    parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 2;
-  const isFormulaVariant = (hasPct && hasYr) || (formulaPattern.test(slug) && hasNumParams);
+    parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 3;
+  const isFormulaVariant = (hasPct && (hasYr || hasMo)) || (formulaPattern.test(slug) && hasNumParams);
 
   // Determine canonical: formula variants → parent calculator
   const parentCalcSlug = variant.calculatorId;
