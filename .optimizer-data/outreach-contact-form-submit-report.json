@@ -1,0 +1,46 @@
+{
+  "phase": "12.7B \u2014 Safe Contact Form Automation Attempt",
+  "attempted_at": "2026-05-31T02:14:06.662680",
+  "summary": {
+    "forms_attempted": 3,
+    "successfully_submitted": 0,
+    "manual_required": 3,
+    "no_safe_submission_path": 3,
+    "blocked_by_cloudflare": 2,
+    "no_form_available": 1
+  },
+  "results": [
+    {
+      "target": "Dough Roller",
+      "url": "https://www.doughroller.net/contact/",
+      "status": "no_safe_submission_path",
+      "reason": "Cloudflare anti-bot protection \u2014 'Sorry, you have been blocked'. Cannot bypass. This site uses Cloudflare security that blocks automated browser access.",
+      "error": "Cloudflare challenge page with Ray ID",
+      "recommendation": "Qasem must submit manually from his personal browser"
+    },
+    {
+      "target": "NeighborWorks America",
+      "url": "https://www.neighborworks.org/About-Us/Contact-Us",
+      "status": "no_safe_submission_path",
+      "reason": "Cloudflare anti-bot protection \u2014 'Sorry, you have been blocked'. Cannot bypass. This .org nonprofit site uses Cloudflare security.",
+      "error": "Cloudflare challenge page with Ray ID",
+      "recommendation": "Qasem must submit manually from his personal browser"
+    },
+    {
+      "target": "The Mortgage Reports",
+      "url": "https://themortgagereports.com/contact",
+      "status": "no_safe_submission_path",
+      "reason": "Contact page returns 404 \u2014 no contact form exists. Main site loads fine but no contact form or public email found.",
+      "error": "HTTP 200 but page shows 404 content with no form elements",
+      "recommendation": "Qasem must find alternative contact method \u2014 try the 'Request Rates' link in the header, or search for an email on the site from a personal browser"
+    }
+  ],
+  "cloakbrowser_error": "CloakBrowser 0.3.30 fails to launch \u2014 missing libnspr4.so shared library. Cannot install without sudo. Used built-in StealthBrowser instead, which was blocked by Cloudflare on 2/3 sites.",
+  "confirmation": {
+    "duplicate_submissions": 0,
+    "extra_targets_contacted": 0,
+    "follow_ups_sent": 0,
+    "risky_automations_paused": true,
+    "cloakbrowser_not_available": true
+  }
+}

@@ -15,7 +15,7 @@
       "url": "https://themortgagereports.com",
       "category": "real_estate_mortgage",
       "contact_method": "contact form: themortgagereports.com (manual pending)",
-      "status": "manual_pending",
+      "status": "manual_required",
       "pitch_version": "v1",
       "date_prepared": "2026-05-31",
       "date_sent": null,
@@ -23,7 +23,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Batch 1 \u2014 Phase 12.7: waiting for Qasem manual submission",
+      "notes": "Phase 12.7B: 404 contact page \u2014 no form. Must submit manually from personal browser or find alternative contact.",
       "follow_up_due": null
     },
     {
@@ -48,7 +48,7 @@
       "url": "https://www.neighborworks.org",
       "category": "community_housing",
       "contact_method": "contact form: neighborworks.org (manual pending)",
-      "status": "manual_pending",
+      "status": "manual_required",
       "pitch_version": "v1",
       "date_prepared": "2026-05-31",
       "date_sent": null,
@@ -56,7 +56,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Batch 1 \u2014 Phase 12.7: waiting for Qasem manual submission",
+      "notes": "Phase 12.7B: Cloudflare blocked. Must submit manually from personal browser.",
       "follow_up_due": null
     },
     {
@@ -65,7 +65,7 @@
       "url": "https://www.doughroller.net",
       "category": "personal_finance_blog",
       "contact_method": "contact form: doughroller.net (manual pending)",
-      "status": "manual_pending",
+      "status": "manual_required",
       "pitch_version": "v1",
       "date_prepared": "2026-05-31",
       "date_sent": null,
@@ -73,7 +73,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Batch 1 \u2014 Phase 12.7: waiting for Qasem manual submission",
+      "notes": "Phase 12.7B: Cloudflare blocked. Must submit manually from personal browser.",
       "follow_up_due": null
     },
     {
