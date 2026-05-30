@@ -290,7 +290,7 @@ export default async function CalculatorDetailPage({
         <RelatedDecisions
           calculatorSlug={slug}
           decisions={CALCULATOR_DECISION_LINKS[slug] || []}
-          maxResults={4}
+          maxResults={8}
         />
         <RelatedCalculators
           currentSlug={slug}
