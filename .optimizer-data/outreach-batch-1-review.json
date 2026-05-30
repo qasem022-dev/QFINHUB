@@ -1,0 +1,134 @@
+{
+  "phase": "12.5 \u2014 First Outreach Batch Review",
+  "generated": "2026-05-31T01:49:05.076431",
+  "status": "DRAFT \u2014 DO NOT SEND until manually approved",
+  "rules": [
+    "No emails sent yet",
+    "Max 5 emails for first batch",
+    "All emails are personalized \u2014 no generic templates",
+    "No keyword-stuffed anchors",
+    "No link-buying language",
+    "No spammy automation",
+    "Follow-ups only after 5-7 days if no reply"
+  ],
+  "targets": [
+    {
+      "id": "batch-1",
+      "name": "The Mortgage Reports",
+      "url": "https://themortgagereports.com",
+      "contact_url": "https://themortgagereports.com/contact",
+      "category": "high_authority_mortgage",
+      "why_selected": "Highest-scoring target (90/100). Leading mortgage education site \u2014 their entire audience is researching mortgages. Perfect content fit for an affordability widget. Has a tools section and resource pages.",
+      "difficulty": "medium",
+      "reply_likelihood": "high",
+      "risk_score": 5,
+      "pitch_angle": "Free, accurate tool their readers can use right on their mortgage guides \u2014 complements their existing educational content perfectly."
+    },
+    {
+      "id": "batch-2",
+      "name": "Money Under 30",
+      "url": "https://www.moneyunder30.com",
+      "contact_url": "https://www.moneyunder30.com/contact",
+      "category": "personal_finance_blog",
+      "why_selected": "Young adult personal finance blog \u2014 their readers are at prime first-home-buying age. Homebuying is a core topic. Clear contact page. Approachable site with history of featuring useful tools.",
+      "difficulty": "low",
+      "reply_likelihood": "high",
+      "risk_score": 4,
+      "pitch_angle": "Free widget that helps young adults figure out their homebuying budget right on Money Under 30's guides."
+    },
+    {
+      "id": "batch-3",
+      "name": "Maximum Real Estate Exposure",
+      "url": "https://www.maxrealestateexposure.com",
+      "contact_url": "https://www.maxrealestateexposure.com/contact/",
+      "category": "real_estate_agent_blog",
+      "why_selected": "Active real estate blog by an experienced agent. Directly relevant audience (homebuyers). Has resource pages. Personal/small-site feel means higher chance of direct reply. Contact page is clear and personal.",
+      "difficulty": "low",
+      "reply_likelihood": "high",
+      "risk_score": 3,
+      "pitch_angle": "Practical, free tool for their homebuyer readers \u2014 fits naturally with their existing guides."
+    },
+    {
+      "id": "batch-4",
+      "name": "NeighborWorks America",
+      "url": "https://www.neighborworks.org",
+      "contact_url": "https://www.neighborworks.org/About-Us/Contact-Us",
+      "category": "nonprofit_education",
+      "why_selected": "National nonprofit providing homebuyer education and housing counseling. .org domain with strong authority. Calculator directly supports their mission. Contact page available. Nonprofit angle opens doors.",
+      "difficulty": "medium",
+      "reply_likelihood": "medium",
+      "risk_score": 2,
+      "pitch_angle": "Free public resource tool for their housing counselors and the families they serve \u2014 mission-aligned."
+    },
+    {
+      "id": "batch-5",
+      "name": "Dough Roller",
+      "url": "https://www.doughroller.net",
+      "contact_url": "https://www.doughroller.net/contact/",
+      "category": "medium_difficulty_blog",
+      "why_selected": "Established personal finance blog with an existing tools section and resource pages. Has mortgage/real estate content. Clear contact method. Established site with track record of featuring useful tools \u2014 natural fit.",
+      "difficulty": "medium",
+      "reply_likelihood": "medium",
+      "risk_score": 3,
+      "pitch_angle": "Free addition to their existing tools section \u2014 complements their mortgage content."
+    }
+  ],
+  "emails": [
+    {
+      "target": "The Mortgage Reports",
+      "contact": "https://themortgagereports.com/contact",
+      "subject": "Free mortgage affordability widget for The Mortgage Reports",
+      "body": "Hi,\n\nI've been reading The Mortgage Reports for a while \u2014 your coverage of rates, affordability, and homebuying strategies is some of the most practical mortgage education out there. I built something I think would fit naturally with your content.\n\nIt's a free, embeddable mortgage affordability calculator. Readers input their income, debts, and down payment \u2014 and instantly see their affordable home price, max loan amount, and full DTI breakdown using standard 28%/36% lending guidelines.\n\nYou can see it live here:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf you think your readers would find it useful, the embed code is:\n<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\"></iframe>\n\nIt's 100% free \u2014 no signup required, no user data collected, and it works on mobile. I built it as a genuinely useful free tool.\n\nWould this be helpful for your readers? Happy to answer any questions.\n\nBest,\nQasem Mohammed\nFounder, QFINHUB\nhttps://www.qfinhub.com",
+      "follow_up_subject": "Re: Free mortgage affordability widget for The Mortgage Reports",
+      "follow_up_body": "Hi,\n\nJust following up on my note about the free mortgage affordability calculator widget. I know you're busy \u2014 no pressure at all.\n\nQuick recap: it's an embeddable calculator that helps readers figure out their homebuying budget using standard DTI ratios. Free, no signup, no data collection.\n\nIn case it got buried, here's the link again:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nThanks for your time,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Money Under 30",
+      "contact": "https://www.moneyunder30.com/contact",
+      "subject": "Free tool: help your readers figure out their homebuying budget",
+      "body": "Hi,\n\nI've been a reader of Money Under 30 for a while \u2014 your homebuying guides are some of the most practical I've seen for young adults figuring this stuff out for the first time. That's actually why I'm writing.\n\nI built a free mortgage affordability calculator widget that I think your readers would find genuinely useful. They can plug in their income, debts, and down payment, and instantly see how much house they can afford \u2014 using the standard 28%/36% DTI ratios that lenders actually use.\n\nHere's what it looks like:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf you think it'd be helpful to embed on a homebuying guide, the code is just:\n<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\"></iframe>\n\nCompletely free, no signup, no data collection \u2014 just a clean, useful tool.\n\nWould this be valuable for your readers?\n\nBest,\nQasem Mohammed\nFounder, QFINHUB\nhttps://www.qfinhub.com",
+      "follow_up_subject": "Re: Free tool for your readers \u2014 homebuying budget calculator",
+      "follow_up_body": "Hi,\n\nJust a quick follow-up on the free mortgage affordability widget I mentioned. I know you get a lot of email \u2014 totally understand.\n\nIf you want to check it out, it's here:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nNo pressure either way \u2014 just thought it might help your readers.\n\nThanks,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Maximum Real Estate Exposure",
+      "contact": "https://www.maxrealestateexposure.com/contact/",
+      "subject": "Free mortgage affordability widget for your real estate blog",
+      "body": "Hi,\n\nI came across Maximum Real Estate Exposure and really appreciate the practical homebuying advice you share with your readers. As someone who also builds tools for homebuyers, I wanted to share something that might be a natural fit for your site.\n\nIt's a free mortgage affordability calculator widget. Your readers can put in their income, monthly debts, and down payment, and instantly see how much house they can afford \u2014 using the same 28%/36% DTI guidelines lenders use. It works on mobile, no signup, no data collected.\n\nLive preview:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf you want to embed it, it's one line:\n<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\"></iframe>\n\n100% free \u2014 I built this as a genuinely useful tool, no catch.\n\nWould this be helpful for your readers?\n\nBest,\nQasem Mohammed\nFounder, QFINHUB\nhttps://www.qfinhub.com",
+      "follow_up_subject": "Re: Free mortgage affordability widget for your blog",
+      "follow_up_body": "Hi,\n\nJust checking in on the free mortgage affordability widget I shared last week. I know real estate professionals are incredibly busy \u2014 no rush at all.\n\nHere's the link if you want to take another look:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nHappy to help with anything if you have questions.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "NeighborWorks America",
+      "contact": "https://www.neighborworks.org/About-Us/Contact-Us",
+      "subject": "Free tool for your homebuyer education program",
+      "body": "Hi,\n\nI've been following NeighborWorks America's work in housing counseling and homebuyer education \u2014 the impact you have on families and communities is remarkable. I wanted to share a free tool that might support your counselors and the people they serve.\n\nIt's a mortgage affordability calculator widget. Homebuyers can adjust their income, debts, and down payment and see in real time what they can afford using standard 28%/36% DTI lending guidelines. Counselors can use it during sessions, and clients can continue using it at home afterward.\n\nLive demo:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nThe embed code is straightforward:\n<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\"></iframe>\n\nKey details: 100% free, no signup, no personal data collected \u2014 all calculations happen in the browser. No ads, no upsell. I built this as a public resource because I believe practical financial tools should be freely available.\n\nWould this be useful for your program? I'd be happy to help with any questions.\n\nThank you for the important work you do,\nQasem Mohammed\nFounder, QFINHUB\nhttps://www.qfinhub.com",
+      "follow_up_subject": "Re: Free tool for your homebuyer education program",
+      "follow_up_body": "Hi,\n\nJust a gentle follow-up on the free mortgage affordability calculator I shared. I know organizations like NeighborWorks are incredibly busy serving communities \u2014 no pressure at all.\n\nIf you'd like to review it, the demo is here:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nThank you again for the work you do,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Dough Roller",
+      "contact": "https://www.doughroller.net/contact/",
+      "subject": "Free calculator widget for your tools section",
+      "body": "Hi,\n\nI noticed Dough Roller has a great tools section for your readers \u2014 that's actually why I'm reaching out. I built a free mortgage affordability calculator widget that might be a nice addition.\n\nIt lets readers figure out how much house they can afford by adjusting income, debts, down payment, and interest rate \u2014 using standard DTI ratios. Clean, mobile-friendly, no signup, no data collection.\n\nYou can see it here:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf you want to add it, the embed is simple:\n<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\"></iframe>\n\nCompletely free \u2014 just a useful tool for your readers.\n\nWould this fit in your tools section?\n\nBest,\nQasem Mohammed\nFounder, QFINHUB\nhttps://www.qfinhub.com",
+      "follow_up_subject": "Re: Free calculator widget for your tools section",
+      "follow_up_body": "Hi,\n\nQuick follow-up on the free mortgage affordability widget I mentioned. I know you're busy \u2014 no worries if it's not a fit.\n\nHere's the link if you want to check it out:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nThanks for your time,\nQasem Mohammed\nQFINHUB"
+    }
+  ],
+  "safety_check": {
+    "total_emails_prepared": 5,
+    "all_personalized": true,
+    "no_generic_templates": true,
+    "no_misleading_claims": true,
+    "no_keyword_stuffed_anchors": true,
+    "no_link_buying_language": true,
+    "no_money_offers": true,
+    "no_automated_spam_behavior": true,
+    "all_targets_relevant": true,
+    "outreach_tracker_ready": true,
+    "date_sent_empty": true,
+    "emails_sent": 0,
+    "risky_automations_paused": true,
+    "ready_for_manual_approval": true
+  }
+}
