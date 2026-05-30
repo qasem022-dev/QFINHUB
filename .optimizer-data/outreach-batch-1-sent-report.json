@@ -1,0 +1,45 @@
+{
+  "phase": "12.6 \u2014 Batch 1 Sent Report",
+  "sent_time": "2026-05-31T01:54:34.341619",
+  "results": [
+    {
+      "target": "The Mortgage Reports",
+      "email": null,
+      "status": "contact_form",
+      "contact_url": "https://themortgagereports.com \u2014 contact form (no public email found)",
+      "time": "2026-05-31T01:54:34.341619"
+    },
+    {
+      "target": "Money Under 30",
+      "email": "josh@moneyunder30.com",
+      "status": "sent",
+      "time": "2026-05-31T01:54:34.341619"
+    },
+    {
+      "target": "Maximum Real Estate Exposure",
+      "email": "bill@remaxexec.com",
+      "status": "sent",
+      "time": "2026-05-31T01:54:34.341619"
+    },
+    {
+      "target": "NeighborWorks America",
+      "email": null,
+      "status": "contact_form",
+      "contact_url": "https://www.neighborworks.org/About-Us/Contact-Us \u2014 contact form",
+      "time": "2026-05-31T01:54:34.341619"
+    },
+    {
+      "target": "Dough Roller",
+      "email": null,
+      "status": "contact_form",
+      "contact_url": "https://www.doughroller.net/contact/ \u2014 contact form",
+      "time": "2026-05-31T01:54:34.341619"
+    }
+  ],
+  "summary": {
+    "total_targets": 5,
+    "sent_via_email": 2,
+    "failed": 0,
+    "contact_form_only": 3
+  }
+}
