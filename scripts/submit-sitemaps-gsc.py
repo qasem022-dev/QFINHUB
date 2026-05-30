@@ -144,7 +144,12 @@ def gsc_request(access_token, site_url, endpoint, method="GET", data=None):
 
     try:
         resp = urlopen(req, timeout=15)
-        return resp.status, json.loads(resp.read().decode())
+        body = resp.read().decode()
+        if resp.status in (200, 204):
+            if body.strip():
+                return resp.status, json.loads(body)
+            return resp.status, {"status": "ok"}
+        return resp.status, json.loads(body) if body.strip() else {"status": "empty", "code": resp.status}
     except HTTPError as e:
         body = e.read().decode()[:500]
         return e.code, {"error": body}
@@ -171,8 +176,9 @@ def list_sitemaps(access_token, site_url):
 
 def submit_sitemap(access_token, site_url, sitemap_url, dry_run=False):
     """Submit a single sitemap to GSC."""
-    encoded_site = __import__("urllib.parse").quote(site_url, safe="")
-    encoded_sitemap = __import__("urllib.parse").quote(sitemap_url, safe="")
+    from urllib.parse import quote
+    encoded_site = quote(site_url, safe="")
+    encoded_sitemap = quote(sitemap_url, safe="")
 
     endpoint = f"sitemaps/{encoded_sitemap}"
 
