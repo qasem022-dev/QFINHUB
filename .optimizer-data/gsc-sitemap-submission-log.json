@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-05-31T01:14:57.648670",
+  "site": "https://www.qfinhub.com/",
+  "dry_run": false,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/sitemap.xml",
+      "success": true,
+      "data": {
+        "status": "ok"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/news-sitemap.xml",
+      "success": true,
+      "data": {
+        "status": "ok"
+      }
+    }
+  ]
+}

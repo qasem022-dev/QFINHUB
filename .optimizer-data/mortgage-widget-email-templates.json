@@ -1,0 +1,47 @@
+{
+  "description": "Phase 12 \u2014 Widget Outreach Email Templates (3 categories)",
+  "generated": "2026-05-31",
+  "widget_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "embed_code": "<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>",
+  "templates": [
+    {
+      "id": "personal-finance-blogger",
+      "name": "Personal Finance Blogger Pitch",
+      "use_for": "Personal finance blogs, FIRE blogs, budgeting sites \u2014 audience actively interested in homebuying",
+      "subject_lines": [
+        "Free mortgage affordability calculator for your readers",
+        "Quick question: do your readers know how much house they can afford?",
+        "Free embeddable tool for your homebuying guide"
+      ],
+      "short_version": "Hi [NAME],\n\nI came across [SITE] and thought your readers would find this useful \u2014 a free mortgage affordability calculator widget they can use right on your site. No signup, no data collection, just a clean, mobile-friendly tool.\n\nEmbed: [EMBED_CODE]\n\nLive preview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this be helpful for your readers?\n\nBest,\nQasem Mohammed\nQFINHUB",
+      "longer_version": "Hi [NAME],\n\nI've been reading [SITE] and really appreciate your [SPECIFIC_CONTENT_REFERENCE]. I wanted to share something that might complement your homebuying content.\n\nI built a free mortgage affordability calculator widget that helps readers figure out how much house they can afford. It uses standard 28%/36% DTI lending guidelines and updates in real time as readers adjust income, debts, and down payment.\n\nKey details:\n\u2022 100% free \u2014 no signup, no paid tiers\n\u2022 No user data collected \u2014 all calculations in-browser\n\u2022 Mobile responsive \u2014 works on any device\n\u2022 Clean design that blends with most sites\n\nEmbed code:\n[EMBED_CODE]\n\nYou can see it in action here: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nI built this as a genuinely useful free tool \u2014 no catch, no upsell. If you think it would add value for your readers, I'd be honored to have it on your site.\n\nThanks for your time,\nQasem Mohammed\nQFINHUB",
+      "follow_up": "Hi [NAME],\n\nJust following up on my note about the free mortgage affordability calculator widget. I know you're busy \u2014 no pressure at all. Just wanted to make sure it didn't get lost in your inbox.\n\nQuick recap: it's a free embeddable calculator that helps readers figure out their homebuying budget. No signup, no data collection, works on mobile.\n\nEmbed code if you want to check it out: [EMBED_CODE]\n\nThanks again,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "id": "real-estate-professional",
+      "name": "Real Estate / Mortgage Professional Pitch",
+      "use_for": "Real estate agent blogs, mortgage broker sites, homebuyer education \u2014 professional audience",
+      "subject_lines": [
+        "Free tool to help your clients figure out their budget",
+        "Mortgage affordability widget for your website \u2014 free",
+        "Help your homebuying clients qualify themselves with this free tool"
+      ],
+      "short_version": "Hi [NAME],\n\nI noticed [SITE] helps [homebuyers/clients] with [SPECIFIC_SERVICE]. I wanted to share a free tool that might save you and your clients time.\n\nIt's a mortgage affordability calculator widget that your visitors can use directly on your site. Input income, debts, down payment \u2014 instant affordable home price with DTI breakdown.\n\nEmbed: [EMBED_CODE]\n\nLive demo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\n100% free, no signup, no client data collected. Happy to help with any questions.\n\nBest,\nQasem Mohammed\nQFINHUB",
+      "longer_version": "Hi [NAME],\n\nI came across [SITE] and was impressed by [SPECIFIC_ASPECT]. I built something that I think could be a practical addition to your site.\n\nIt's a mortgage affordability calculator widget. Your visitors can input their income, debts, and down payment \u2014 and instantly see their affordable home price, max loan amount, and full DTI breakdown using standard 28%/36% lending guidelines.\n\nWhat makes this useful for your site:\n\u2022 Clients self-qualify before contacting you \u2014 saves time\n\u2022 Professional, clean design that fits your site\n\u2022 Works on mobile \u2014 clients can use it while browsing listings\n\u2022 No data collected \u2014 runs entirely in the browser\n\u2022 100% free, no signup\n\nEmbed code:\n[EMBED_CODE]\n\nSee it live: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf you think this would be valuable for your clients, I'd be happy to help with setup.\n\nBest,\nQasem Mohammed\nQFINHUB",
+      "follow_up": "Hi [NAME],\n\nQuick follow-up on the free mortgage affordability widget I mentioned. I know you're busy \u2014 just want to make sure you saw it.\n\nIt's a simple embed that helps your clients figure out their budget before they reach out. No cost, no data collection, one line of HTML.\n\n[EMBED_CODE]\n\nLet me know if you have any questions.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "id": "financial-literacy-resource",
+      "name": "Financial Literacy / Educational Resource Pitch",
+      "use_for": ".edu sites, nonprofits, government housing resources, financial literacy programs",
+      "subject_lines": [
+        "Free interactive DTI calculator for your financial literacy resources",
+        "Hands-on tool for teaching home affordability",
+        "Free widget: teach debt-to-income ratios with real numbers"
+      ],
+      "short_version": "Hi [NAME],\n\nI'm reaching out because of your work in [FINANCIAL_LITERACY / HOUSING_EDUCATION].\n\nI've built a free, interactive mortgage affordability calculator that could be a useful hands-on tool for your [STUDENTS / CLIENTS / COMMUNITY MEMBERS]. It lets people adjust income, debt, and down payment in real time and see exactly how lenders calculate affordability using standard DTI ratios.\n\nEmbed: [EMBED_CODE]\n\nLive demo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nBuilt as a public resource \u2014 no cost, no data collection, no catch.\n\nWould this be useful for your program?\n\nThank you,\nQasem Mohammed\nQFINHUB",
+      "longer_version": "Hi [NAME],\n\nI've been following [ORGANIZATION]'s work in [SPECIFIC_AREA] and wanted to share a free educational tool that might complement your resources.\n\nIt's a mortgage affordability calculator widget designed to teach debt-to-income (DTI) ratios hands-on. Students or clients can adjust income, debts, and down payment and see in real time how lenders calculate affordability using standard 28%/36% DTI guidelines.\n\nKey details for your context:\n\u2022 100% free \u2014 built as a public educational resource\n\u2022 No personal data collected \u2014 all calculations in the browser\n\u2022 Works on any device \u2014 phones, tablets, desktops\n\u2022 Clean, accessible design\n\u2022 No registration, no ads, no upsell\n\nEmbed code:\n[EMBED_CODE]\n\nYou can see it in action here: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nI built this because I believe practical financial tools should be freely available to everyone. If you think it would be valuable for the people you serve, I'd be honored to have it as part of your resources.\n\nThank you for the important work you do,\nQasem Mohammed\nQFINHUB",
+      "follow_up": "Hi [NAME],\n\nJust a gentle follow-up on the free mortgage affordability teaching tool I shared. I know organizations like yours are incredibly busy \u2014 no rush at all.\n\nQuick reminder: it's a free embeddable calculator that teaches DTI ratios interactively. No cost, no data collection, one line of HTML to add to your resource page.\n\n[EMBED_CODE]\n\nThank you again for your work,\nQasem Mohammed\nQFINHUB"
+    }
+  ]
+}
