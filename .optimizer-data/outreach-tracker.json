@@ -23,7 +23,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Phase 12.7B: 404 contact page \u2014 no form. Must submit manually from personal browser or find alternative contact.",
+      "notes": "Phase 12.7B: No contact form exists. /contact 404, /contact-us no form, /q/form is lead-gen. Must use LinkedIn or find editorial email.",
       "follow_up_due": null
     },
     {
@@ -56,7 +56,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Phase 12.7B: Cloudflare blocked. Must submit manually from personal browser.",
+      "notes": "Phase 12.7B: Cloudflare blocks datacenter IP even with CloakBrowser. Must submit from residential browser.",
       "follow_up_due": null
     },
     {
@@ -73,7 +73,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Phase 12.7B: Cloudflare blocked. Must submit manually from personal browser.",
+      "notes": "Phase 12.7B: Cloudflare blocks datacenter IP even with CloakBrowser. Must submit from residential browser.",
       "follow_up_due": null
     },
     {
