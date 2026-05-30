@@ -1,0 +1,130 @@
+{
+  "report": "Post-Deploy SEO Verification",
+  "generated": "2026-05-31T00:54:09.775838",
+  "timestamp": 1780178049.7758517,
+  "base_url": "https://www.qfinhub.com",
+  "results": {
+    "sitemap": {
+      "ok": true,
+      "urls": 649,
+      "decision_pages": 15,
+      "errors": []
+    },
+    "news_sitemap": {
+      "ok": true,
+      "urls": 95,
+      "errors": []
+    },
+    "scenario_sitemap": {
+      "ok": true,
+      "urls": 0,
+      "errors": []
+    },
+    "robots": {
+      "ok": true,
+      "errors": [],
+      "declared_sitemaps": 2
+    },
+    "pages": [
+      {
+        "name": "Widget Landing",
+        "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Embed Route",
+        "url": "https://www.qfinhub.com/embed/mortgage-affordability",
+        "ok": true,
+        "errors": [],
+        "robots": "noindex, follow"
+      },
+      {
+        "name": "Decision \u2014 400k Home",
+        "url": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Decision \u2014 Retire at 45",
+        "url": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Decision \u2014 Emergency Fund",
+        "url": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Decision \u2014 500k at 55",
+        "url": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Decision \u2014 Tax Bracket",
+        "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Calc \u2014 Mortgage",
+        "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Calc \u2014 Affordability",
+        "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Calc \u2014 Compound Interest",
+        "url": "https://www.qfinhub.com/calculators/compound-interest",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      },
+      {
+        "name": "Calc \u2014 401k",
+        "url": "https://www.qfinhub.com/calculators/401k-calculator",
+        "ok": true,
+        "errors": [],
+        "robots": "index, follow"
+      }
+    ],
+    "risky_automations": {
+      "verified_by": "manual",
+      "paused_cron_ids": [
+        "7edc3f28a918",
+        "291b8aa4f5d0",
+        "14d3d631f9ba",
+        "7ba22a836377",
+        "e3d7d3fcb7c9",
+        "defdde75ea1f"
+      ],
+      "note": "Verify with 'cronjob list' command or check Hermes dashboard",
+      "warning": "If any are active, PAUSE immediately"
+    }
+  },
+  "summary": {
+    "overall_ok": true,
+    "sitemap_ok": true,
+    "news_sitemap_ok": true,
+    "scenario_sitemap_ok": true,
+    "robots_ok": true,
+    "pages_ok": true,
+    "total_errors": 0
+  }
+}
