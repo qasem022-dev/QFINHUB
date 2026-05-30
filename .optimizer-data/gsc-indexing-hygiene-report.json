@@ -1,0 +1,109 @@
+{
+  "report": "GSC Indexing Hygiene Report",
+  "generated": "2026-05-30",
+  "phase": "Phase 11.5",
+  "data_source": "Google Search Console \u2014 Indexing \u2192 Pages",
+  "note": "User-provided GSC data. Trust live dashboard over cached reports.",
+  "summary": {
+    "total_pages_indexable": "~768 (125 calcs + 103 blogs + 3 geo + ~505 clean tools + 2 scenarios + 35 compare + 125 guides + 17 static + 15 decision + 1 widget)",
+    "total_pages_noindexed": "~3,036 (591 geo + ~386 formula tools + ~2,059 hash-ID scenarios)",
+    "total_sitemap_urls": "~650 (main: 649, news: varies, scenario: 0)",
+    "expected_indexed_by_Google": "~30-50 (young domain, < 6 months, still building authority)"
+  },
+  "issue_1": {
+    "name": "Discovered \u2014 currently not indexed",
+    "count": 3211,
+    "classification": {
+      "old_scenario_urls": {
+        "estimated": "~2,000-2,500",
+        "description": "Hash-ID scenario pages from V2 prune (2,006 removed May 27). ALL noindexed except 2 with GSC impressions. These were previously in the scenario sitemap (now at 0 URLs) so Google discovered them via sitemap crawl. Expected to linger in 'Discovered' for weeks.",
+        "action": "NONE \u2014 expected cleanup lag. Noindex tags + removal from sitemap will eventually clear these."
+      },
+      "noindexed_geo_urls": {
+        "estimated": "~591",
+        "description": "City-specific calculator pages (99 cities \u00d7 6 calcs). 591 noindexed except 3 with GSC impressions. Discovered during crawl of sitemap (before V2 Phase 3 cleanup).",
+        "action": "NONE \u2014 expected cleanup lag. Already noindexed and removed from sitemap."
+      },
+      "noindexed_formula_tool_variants": {
+        "estimated": "~386",
+        "description": "Formula tool variants (loan-20k-5yr-8pct patterns) that are noindexed + canonicalized to parent calculator. Excluded from sitemap since Phase 3.",
+        "action": "NONE \u2014 expected cleanup lag. Noindex + canonical tags will eventually signal Google."
+      },
+      "valuable_clean_sitemap_urls": {
+        "estimated": "~100-200",
+        "description": "Clean indexable pages in sitemap that Google hasn't crawled yet. Includes ~500+ clean tool variants, ~125 guides, ~35 comparisons, ~15 decision pages, widget page. Young domain \u2014 crawl budget is limited.",
+        "sample_urls": [
+          "Clean tool variants like /tools/compound-interest-1000-10yr-8pct",
+          "Guide pages like /guides/how-to-use-*",
+          "Comparison pages like /compare/*",
+          "Decision pages like /decision/* (15 pages, all index,follow)",
+          "/widgets/mortgage-affordability-embed (new Phase 11)"
+        ],
+        "action": "NONE urgent. Prioritize internal linking from high-authority calcs to valuable pages. Decision pages and widget page are well-linked from 16 calculator hubs. Natural crawl discovery will pick them up."
+      }
+    },
+    "verdict": "EXPECTED CLEANUP LAG. 90%+ are old noindexed URLs from V2 prune. Do not panic. Do not use Indexing API for normal pages. Continue internal linking strategy."
+  },
+  "issue_2": {
+    "name": "Crawled \u2014 currently not indexed",
+    "count": 15,
+    "note": "Cannot list exact URLs without GSC API access. User should export these from GSC dashboard.",
+    "likely_urls": [
+      "Scenarios with GSC impressions but thin content (e.g., retirement-planning-5c0e8e25 which IS noindexed)",
+      "Formula variants with GSC impressions (afford-100k-40k-6-5pct, afford-130k-40k-7pct \u2014 these are indexable, may need stronger internal links)",
+      "Geo pages with GSC impressions (loan/nashville-tn, loan/reno-nv, tax/philadelphia-pa)",
+      "Thin blog posts or automatically generated pages that Google crawled but deemed low quality"
+    ],
+    "recommended_actions": {
+      "valuable_pages_crawled_not_indexed": "Identify which of the 15 are valuable (in sitemap, index,follow, good content). Add more internal links from high-authority calculator hubs. Ensure no duplicate content issues.",
+      "low_value_pages_crawled_not_indexed": "If noindexed by V2 rules, this is correct behavior \u2014 Google crawled and honored noindex. No action needed.",
+      "borderline_pages": "If page has some GSC impressions but is thin, consider improving content or accept it won't index."
+    },
+    "verdict": "User should export the 15 URLs from GSC and classify each. ~5-8 likely valuable (decision pages, widget page, blog posts). ~7-10 likely V2-noindexed pages crawling through."
+  },
+  "issue_3": {
+    "name": "Alternative page with proper canonical tag",
+    "count": 4,
+    "description": "Google found pages with canonical tags pointing to a different URL, indicating the canonical target is the correct one.",
+    "likely_urls": [
+      "Formula tool variants canonicalized to parent calculator (e.g., /tools/loan-20k-5yr-8pct \u2192 /calculators/loan-calculator)",
+      "Tool variant pages where the parent-page canonical is working correctly"
+    ],
+    "action": "VERIFY canonical targets are correct. If the 4 URLs are formula variants pointing to parent calculators, this is EXPECTED and CORRECT behavior. If any are unexpected, investigate the canonical tag on that page.",
+    "verdict": "Probably correct \u2014 V2 canonical strategy working as designed."
+  },
+  "issue_4": {
+    "name": "Page with redirect",
+    "count": 1,
+    "description": "Google encountered a page that redirects to another URL.",
+    "action": "Identify the URL from GSC. Common causes: www\u2192non-www redirect, HTTP\u2192HTTPS, or a specific page-level redirect. If www\u2192HTTPS, this is normal. If an old page redirects to a new URL, confirm the redirect target is intentional.",
+    "verdict": "Likely normal redirect (www or HTTP\u2192HTTPS). Verify in GSC dashboard."
+  },
+  "issue_5": {
+    "name": "Duplicate, Google chose different canonical",
+    "count": 1,
+    "description": "Google found duplicate content and chose a different canonical URL than the one specified.",
+    "action": "Identify which URL from GSC. Likely a tool variant that has very similar content to another variant. If Google's chosen canonical is reasonable (e.g., pointing to parent calculator), accept it. If Google chose a wrong canonical, add stronger differentiation signals (unique FAQ, unique example, unique case study) to the page.",
+    "verdict": "One case \u2014 investigate in GSC. If Google's choice is acceptable, no action. If wrong, add content differentiation."
+  },
+  "risky_automations_status": {
+    "scenario_generator": "PAUSED (since May 27)",
+    "scenario_upgrades": "PAUSED (since May 27)",
+    "seo_indexing_engine": "PAUSED (since May 28)",
+    "sitemap_ping": "PAUSED (since May 28)",
+    "blog_agent": "PAUSED (since May 28)",
+    "pinterest_pin_generator": "PAUSED (since May 23)",
+    "status": "ALL CONFIRMED PAUSED \u2014 no risky automations active"
+  },
+  "next_steps_after_phase_11_5_deploy": [
+    "Wait 1-2 days for new news-sitemap.xml to be crawled by Google",
+    "Check GSC \u2192 Sitemaps \u2192 news-sitemap.xml for status change from 'Couldn't fetch' to 'Success'",
+    "Export the 15 'Crawled \u2014 currently not indexed' URLs from GSC for manual classification",
+    "Export the 4 'Alternative page with proper canonical' URLs to verify canonical targets",
+    "Export the 1 'Page with redirect' URL to confirm redirect target",
+    "Export the 1 'Duplicate, Google chose different canonical' URL to assess Google's choice",
+    "Monitor 'Discovered \u2014 currently not indexed' count over 2-4 weeks (should gradually decrease as Google processes noindex tags)",
+    "DO NOT re-enable any paused automations",
+    "DO NOT use Google Indexing API for normal QFINHUB pages"
+  ]
+}
