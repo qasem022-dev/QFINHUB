@@ -1,0 +1,48 @@
+{
+  "description": "3 pitch templates + 3 subject lines for mortgage affordability widget outreach",
+  "generated": "2026-05-30",
+  "phase": "Phase 11 \u2014 DO NOT SEND until approved",
+  "widget": "Mortgage Affordability Calculator Embed",
+  "widget_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "embed_code": "<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>",
+  "key_selling_points": [
+    "100% free \u2014 no signup, no paid tiers",
+    "No user data collected \u2014 all calculations in browser",
+    "Mobile responsive \u2014 works on all devices",
+    "Clean design that blends with any site",
+    "Uses standard 28%/36% DTI lending guidelines",
+    "Live preview available on the widget page"
+  ],
+  "pitches": [
+    {
+      "id": "pitch-1",
+      "name": "Value-Add Pitch (blogs, resource pages)",
+      "subject_lines": [
+        "Free mortgage affordability calculator for your readers",
+        "Quick question: do your readers know how much house they can afford?",
+        "Free embeddable tool for your homebuying guide"
+      ],
+      "body": "Hi [NAME],\n\nI came across your [article/page] on [TOPIC] and thought your readers would find this useful.\n\nI built a free mortgage affordability calculator widget that you can embed on your site. It helps readers instantly figure out how much house they can afford based on their income, debts, and down payment \u2014 using standard 28%/36% DTI lending guidelines.\n\nIt's 100% free, no signup required, and doesn't collect any user data. Just copy and paste one line of HTML:\n\n[EMBED CODE]\n\nLive preview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nLet me know if you have any questions or need help embedding it.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "id": "pitch-2",
+      "name": "Professional Tool Pitch (agents, brokers, lenders)",
+      "subject_lines": [
+        "Free tool to pre-qualify your homebuyer leads",
+        "Help your clients figure out their budget before they apply",
+        "Mortgage affordability widget for your website \u2014 free"
+      ],
+      "body": "Hi [NAME],\n\nI noticed your site helps [homebuyers/clients] with [mortgages/finding homes]. I wanted to share a free tool that might save you and your clients time.\n\nIt's a mortgage affordability calculator widget that your visitors can use directly on your site. They input their income, debts, and down payment \u2014 and it instantly shows their affordable home price, max loan amount, and DTI breakdown.\n\nKey details:\n\u2022 100% free, no signup\n\u2022 No client data collected (all in-browser)\n\u2022 Mobile responsive\n\u2022 Clean, professional design\n\nEmbed code:\n[EMBED CODE]\n\nLive demo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nHappy to help with any questions.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "id": "pitch-3",
+      "name": "Educational Resource Pitch (edu, gov, nonprofits)",
+      "subject_lines": [
+        "Free interactive DTI calculator for your financial literacy resources",
+        "Hands-on tool for teaching home affordability",
+        "Free widget: teach DTI ratios with real numbers"
+      ],
+      "body": "Hi [NAME],\n\nI'm reaching out because of your work in [financial literacy / housing education / community resources].\n\nI've built a free, interactive mortgage affordability calculator that could be a useful hands-on tool for your [students / clients / community members]. It lets people adjust income, debt, and down payment in real time and see exactly how lenders calculate affordability using standard DTI ratios.\n\nIt's entirely free, no registration, no data collection \u2014 just a clean embeddable widget:\n\n[EMBED CODE]\n\nYou can see it in action here: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nI built this as a public resource \u2014 no catch, no upsell. If you think it would be useful for your audience, I'd be honored to have it on your site.\n\nThanks for your time,\nQasem Mohammed\nQFINHUB"
+    }
+  ]
+}

@@ -273,6 +273,26 @@ export default async function CalculatorDetailPage({
           currentSlug={slug}
         />
       )}
+
+      {/* Widget embed callout — only for calculators with an embeddable widget */}
+      {(slug === "mortgage-affordability" || slug === "mortgage-calculator") && (
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pb-6">
+          <div className="rounded-xl border border-primary-200 bg-primary-50/50 p-5 dark:border-primary-900/30 dark:bg-primary-900/10">
+            <p className="text-sm font-medium text-primary-800 dark:text-primary-300">
+              📌 Have a website?{" "}
+              <Link
+                href="/widgets/mortgage-affordability-embed"
+                prefetch={true}
+                className="font-semibold underline underline-offset-2 hover:text-primary-900 dark:hover:text-primary-200"
+              >
+                Embed this mortgage affordability calculator
+              </Link>{" "}
+              on your site — free, no signup, no data collection.
+            </p>
+          </div>
+        </div>
+      )}
+
       <LastReviewedBy />
       {/* ── Cross-linking for SEO crawl discovery ── */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12">

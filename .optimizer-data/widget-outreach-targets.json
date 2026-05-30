@@ -1,0 +1,250 @@
+{
+  "description": "20 target categories/sites for mortgage affordability widget outreach",
+  "generated": "2026-05-30",
+  "phase": "Phase 11 \u2014 Widget Outreach (DO NOT SEND YET)",
+  "categories": [
+    {
+      "id": 1,
+      "category": "Personal Finance Blogs",
+      "examples": [
+        "The Penny Hoarder",
+        "Money Under 30",
+        "Budgets Are Sexy",
+        "Frugalwoods"
+      ],
+      "pitch_angle": "Help your readers figure out their homebuying budget with a free embeddable calculator",
+      "contact_method": "Contact form / email",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "category": "Real Estate Agent Blogs",
+      "examples": [
+        "Individual agent sites on Placester/RealGeeks",
+        "Real estate team blogs",
+        "Local market blogs"
+      ],
+      "pitch_angle": "Add a mortgage affordability tool to your listings page \u2014 helps buyers qualify themselves",
+      "contact_method": "Email or LinkedIn",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "category": "Mortgage Broker/Lender Sites",
+      "examples": [
+        "Local mortgage broker blogs",
+        "Lender education pages",
+        "Credit union mortgage resource centers"
+      ],
+      "pitch_angle": "Free widget that pre-qualifies borrowers before they apply \u2014 reduces time-wasting inquiries",
+      "contact_method": "Email",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "category": "First-Time Homebuyer Resources",
+      "examples": [
+        "FirstHomeBuyerBlog",
+        "Homebuyer education sites",
+        "HUD-approved counseling agency sites"
+      ],
+      "pitch_angle": "Interactive tool for first-time buyer education \u2014 helps them understand DTI ratios hands-on",
+      "contact_method": "Contact form",
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "category": "Credit Union Blogs",
+      "examples": [
+        "Navy Federal blog",
+        "Local credit union resource pages",
+        "Credit union financial literacy sections"
+      ],
+      "pitch_angle": "Free interactive tool for your members \u2014 no data collection, works on your site",
+      "contact_method": "Email or contact form",
+      "priority": "medium"
+    },
+    {
+      "id": 6,
+      "category": "Financial Literacy / Education Sites",
+      "examples": [
+        "Jump$tart Coalition partners",
+        "NFEC member sites",
+        "High school financial literacy program pages"
+      ],
+      "pitch_angle": "Practical DTI ratio teaching tool \u2014 students learn by adjusting real numbers",
+      "contact_method": "Email",
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "category": "Local Real Estate Websites",
+      "examples": [
+        "Neighborhood blogs",
+        "Local market report sites",
+        "Community real estate forums"
+      ],
+      "pitch_angle": "Local housing affordability tool \u2014 help your readers see what they can afford in your market",
+      "contact_method": "Email",
+      "priority": "medium"
+    },
+    {
+      "id": 8,
+      "category": "Housing Counseling Agencies",
+      "examples": [
+        "HUD-approved housing counseling agencies",
+        "NeighborWorks affiliates",
+        "Local housing nonprofits"
+      ],
+      "pitch_angle": "Free tool for your counseling sessions \u2014 clients can use it at home after their appointment",
+      "contact_method": "Email or phone",
+      "priority": "medium"
+    },
+    {
+      "id": 9,
+      "category": "University/College Personal Finance Centers",
+      "examples": [
+        ".edu personal finance resource pages",
+        "University extension housing resources"
+      ],
+      "pitch_angle": ".edu backlink opportunity \u2014 free educational widget for your personal finance resources page",
+      "contact_method": "Email",
+      "priority": "high"
+    },
+    {
+      "id": 10,
+      "category": "Government Housing Resources",
+      "examples": [
+        "State housing finance agency sites",
+        "City housing department pages",
+        ".gov homebuyer resource sections"
+      ],
+      "pitch_angle": "Free public-service tool for homebuyer education \u2014 .gov backlink potential",
+      "contact_method": "Email or contact form",
+      "priority": "medium"
+    },
+    {
+      "id": 11,
+      "category": "Realtor Association Sites",
+      "examples": [
+        "Local NAR association blogs",
+        "State realtor association resource pages"
+      ],
+      "pitch_angle": "Member resource \u2014 embed on your association site so agents can preview and recommend to clients",
+      "contact_method": "Email",
+      "priority": "medium"
+    },
+    {
+      "id": 12,
+      "category": "Homebuilder/Developer Sites",
+      "examples": [
+        "National builder blogs (Lennar, DR Horton)",
+        "Local custom home builder sites"
+      ],
+      "pitch_angle": "Help visitors figure out their budget before browsing your floor plans",
+      "contact_method": "Contact form",
+      "priority": "medium"
+    },
+    {
+      "id": 13,
+      "category": "Real Estate Investing Blogs",
+      "examples": [
+        "BiggerPockets (if contributor)",
+        "REI blog networks",
+        "Landlord resource sites"
+      ],
+      "pitch_angle": "Quick affordability calculator for analyzing potential rental property purchases",
+      "contact_method": "Email or forums",
+      "priority": "low"
+    },
+    {
+      "id": 14,
+      "category": "Military/Veteran Housing Resources",
+      "examples": [
+        "VA loan education sites",
+        "Military family housing blogs",
+        "Veteran transition resource pages"
+      ],
+      "pitch_angle": "Free VA loan affordability tool \u2014 helps veterans understand their homebuying power",
+      "contact_method": "Email",
+      "priority": "medium"
+    },
+    {
+      "id": 15,
+      "category": "Relocation/Moving Blogs",
+      "examples": [
+        "Moving company blogs",
+        "City relocation guides",
+        "Expat housing resource sites"
+      ],
+      "pitch_angle": "Help relocating families figure out their housing budget in a new city",
+      "contact_method": "Contact form",
+      "priority": "low"
+    },
+    {
+      "id": 16,
+      "category": "Mom/Parenting Blogs (Home & Finance)",
+      "examples": [
+        "Parenting finance sub-blogs",
+        "Family budget bloggers",
+        "SAHM finance sites"
+      ],
+      "pitch_angle": "Family-friendly tool \u2014 help parents figure out how much house they can afford on one or two incomes",
+      "contact_method": "Email or social DM",
+      "priority": "low"
+    },
+    {
+      "id": 17,
+      "category": "Side Hustle/Freelancer Finance Sites",
+      "examples": [
+        "Freelancer finance blogs",
+        "Gig economy resource sites",
+        "Creator economy finance pages"
+      ],
+      "pitch_angle": "Irregular income affordability \u2014 freelancers can test different income scenarios",
+      "contact_method": "Email",
+      "priority": "low"
+    },
+    {
+      "id": 18,
+      "category": "Mortgage Technology/Tech Blogs",
+      "examples": [
+        "Fintech mortgage blogs",
+        "PropTech resource pages",
+        "Mortgage SaaS company blogs"
+      ],
+      "pitch_angle": "Embeddable calculator for your mortgage tech stack \u2014 clean, modern, API-free",
+      "contact_method": "Email or LinkedIn",
+      "priority": "low"
+    },
+    {
+      "id": 19,
+      "category": "Personal Finance YouTube Channel Websites",
+      "examples": [
+        "Finance YouTuber resource pages",
+        "Creator link-in-bio tool pages"
+      ],
+      "pitch_angle": "Link your viewers to an interactive tool they can use while watching your homebuying videos",
+      "contact_method": "Email or social",
+      "priority": "low"
+    },
+    {
+      "id": 20,
+      "category": "Library/Community Resource Pages",
+      "examples": [
+        "Public library financial literacy pages",
+        "Community center resource lists"
+      ],
+      "pitch_angle": "Free public resource \u2014 add to your library's financial tools page",
+      "contact_method": "Email or contact form",
+      "priority": "low"
+    }
+  ],
+  "status": "prepared \u2014 DO NOT SEND until Phase 11 approved",
+  "tracking_fields": [
+    "status",
+    "date_contacted",
+    "response",
+    "link_acquired"
+  ]
+}
