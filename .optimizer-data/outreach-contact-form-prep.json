@@ -1,0 +1,57 @@
+{
+  "phase": "12.7 \u2014 Manual Contact Form Submission Prep",
+  "generated": "2026-05-31T02:02:01.923921",
+  "status": "READY FOR MANUAL SUBMISSION",
+  "instructions": "Qasem: visit each contact page, paste the message below, fill the fields as specified.",
+  "sender": {
+    "name": "Qasem Mohammed",
+    "email": "q.finhub@gmail.com",
+    "website": "https://www.qfinhub.com",
+    "widget_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+    "embed_code": "<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\"></iframe>"
+  },
+  "submissions": [
+    {
+      "target": "The Mortgage Reports",
+      "contact_page": "https://themortgagereports.com \u2014 use footer 'Request Rates' link or search for contact form",
+      "fields": {
+        "name": "Qasem Mohammed",
+        "email": "q.finhub@gmail.com",
+        "website": "https://www.qfinhub.com (if asked)",
+        "subject": "Free mortgage affordability widget for your readers",
+        "category": "Partnership / Tool Suggestion (if asked to categorize)"
+      },
+      "include_embed_code": false,
+      "note": "Keep message short \u2014 contact forms often truncate. Link to widget page instead of pasting iframe code. Include embed code only if the form has a large text area.",
+      "message": "Hi,\n\nI've been reading The Mortgage Reports \u2014 your coverage of mortgage rates, affordability, and homebuying strategies is excellent. I built a free mortgage affordability calculator widget that I think would fit naturally with your content.\n\nIt helps readers figure out how much house they can afford using standard DTI ratios. 100% free, no signup, no data collected.\n\nLive preview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this be useful for your readers? Happy to share the embed code.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "NeighborWorks America",
+      "contact_page": "https://www.neighborworks.org/About-Us/Contact-Us",
+      "fields": {
+        "name": "Qasem Mohammed",
+        "email": "q.finhub@gmail.com",
+        "website": "https://www.qfinhub.com (if asked)",
+        "subject": "Free tool for homebuyer education programs",
+        "category": "Partnership / Resource Sharing (if asked)"
+      },
+      "include_embed_code": false,
+      "note": "Nonprofit contact form \u2014 keep warm and mission-aligned. Link to widget page. Include embed code only if there's room.",
+      "message": "Hi,\n\nI've been following NeighborWorks America's work in housing counseling and homebuyer education \u2014 the impact you have on families is remarkable. I wanted to share a free tool that might support your counselors.\n\nIt's a mortgage affordability calculator widget. Homebuyers adjust income, debts, and down payment to see what they can afford using standard DTI ratios. 100% free, no signup, no data collected.\n\nDemo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nBuilt as a public resource \u2014 no cost, no catch. Would this be useful for your program?\n\nThank you for the work you do,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Dough Roller",
+      "contact_page": "https://www.doughroller.net/contact/",
+      "fields": {
+        "name": "Qasem Mohammed",
+        "email": "q.finhub@gmail.com",
+        "website": "https://www.qfinhub.com (if asked)",
+        "subject": "Free calculator widget for your tools section",
+        "category": "Tool Suggestion (if asked)"
+      },
+      "include_embed_code": false,
+      "note": "Blog contact form \u2014 short and direct. They have a tools section, so mention that. Link to widget page.",
+      "message": "Hi,\n\nI noticed Dough Roller has a great tools section. I built a free mortgage affordability calculator widget that might be a nice addition \u2014 readers can figure out how much house they can afford using standard DTI ratios.\n\nClean, mobile-friendly, no signup, no data collected.\n\nPreview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this fit in your tools section? Happy to share the embed code.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    }
+  ]
+}
