@@ -1,33 +1,43 @@
+/**
+ * /news-sitemap.xml — Recent blog posts sitemap
+ *
+ * V2 Correction (May 30): Was a Google News sitemap (xmlns:news) that was
+ * empty because no blog posts were published in the last 2 days (Blog Agent
+ * paused). GSC reported "Missing XML tag" for the empty news namespace.
+ *
+ * NOW: Normal XML sitemap of blog posts from the last 30 days.
+ * QFINHUB is not approved for Google News — no news namespace.
+ */
 import { blogPosts } from "@/lib/blog/posts";
 
 const BASE_URL = "https://www.qfinhub.com";
 
 export async function GET() {
-  const twoDaysAgo = new Date();
-  twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+  const thirtyDaysAgo = new Date();
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-  // Only articles from last 2 days (Google News requirement)
   const recentPosts = blogPosts.filter(
-    (post) => new Date(post.publishedAt) >= twoDaysAgo
+    (post) => new Date(post.publishedAt) >= thirtyDaysAgo
   );
 
+  // If no recent posts, include the 6 most recent posts as fallback
+  // so the sitemap is never completely empty
+  const posts =
+    recentPosts.length > 0
+      ? recentPosts
+      : blogPosts.slice(0, 6);
+
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-${recentPosts
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${posts
   .map(
     (post) => `  <url>
     <loc>${BASE_URL}/blog/${post.slug}</loc>
-    <news:news>
-      <news:publication>
-        <news:name>QFINHUB</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>${
-        new Date(post.publishedAt).toISOString().split("T")[0]
-      }</news:publication_date>
-      <news:title>${escapeXml(post.title)}</news:title>
-    </news:news>
+    <lastmod>${
+      new Date(post.publishedAt).toISOString().split("T")[0]
+    }</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>`
   )
   .join("\n")}
@@ -39,13 +49,4 @@ ${recentPosts
       "Cache-Control": "public, max-age=3600, s-maxage=3600",
     },
   });
-}
-
-function escapeXml(str: string): string {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
 }
