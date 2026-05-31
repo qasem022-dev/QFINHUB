@@ -101,13 +101,17 @@ const categories = [
 ];
 
 const quickCalcs = [
+  { name: "Mortgage Calculator", href: "/calculators/mortgage-calculator", category: "Mortgage" },
+  { name: "Mortgage Affordability", href: "/calculators/mortgage-affordability", category: "Mortgage" },
   { name: "Loan Calculator", href: "/calculators/loan-calculator", category: "Loan" },
   { name: "Compound Interest", href: "/calculators/compound-interest", category: "Investment" },
-  { name: "Mortgage Calculator", href: "/calculators/mortgage-calculator", category: "Mortgage" },
+  { name: "Investment Return", href: "/calculators/investment-return", category: "Investment" },
   { name: "Retirement Planning", href: "/calculators/retirement-planning", category: "Retirement" },
   { name: "Tax Calculator", href: "/calculators/tax-calculator", category: "Tax" },
   { name: "Budget Planner", href: "/calculators/budget-planner", category: "Personal" },
-  { name: "ROI Calculator", href: "/calculators/roi-calculator", category: "Business" },
+  { name: "Debt Payoff", href: "/calculators/debt-payoff", category: "Personal" },
+  { name: "Credit Card Payoff", href: "/calculators/credit-card-payoff", category: "Personal" },
+  { name: "401k Calculator", href: "/calculators/401k-calculator", category: "Retirement" },
   { name: "Amortization Schedule", href: "/calculators/amortization-schedule", category: "Loan" },
 ];
 

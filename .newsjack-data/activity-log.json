@@ -1525,5 +1525,47 @@
       "tweetId": null,
       "guid": "108312909"
     }
+  },
+  {
+    "ts": "2026-05-31T14:30:59.599Z",
+    "type": "news-match",
+    "details": {
+      "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
+      "category": "fed-rate",
+      "source": "Fed Press",
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-31T14:31:10.193Z",
+    "type": "news-published",
+    "details": {
+      "slug": "what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+      "title": "What the Fed’s Bank Employee Enforcement Actions Mean for Your Mortgage and Money",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm]]>"
+    }
+  },
+  {
+    "ts": "2026-05-31T14:31:15.196Z",
+    "type": "news-match",
+    "details": {
+      "title": "Student loan borrowers will have two new repayment options come July 1. Here&apos;s how to pick one",
+      "category": "fed-rate",
+      "source": "CNBC Finance",
+      "guid": "108312439"
+    }
+  },
+  {
+    "ts": "2026-05-31T14:31:27.367Z",
+    "type": "news-published",
+    "details": {
+      "slug": "student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
+      "title": "Student Loan Repayment Options 2025: How to Choose the Best Plan for Your Budget",
+      "category": "fed-rate",
+      "tweetId": null,
+      "guid": "108312439"
+    }
   }
 ]

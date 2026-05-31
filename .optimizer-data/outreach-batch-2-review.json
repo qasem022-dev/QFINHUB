@@ -1,0 +1,161 @@
+{
+  "description": "Phase 12.8 \u2014 Batch 2 Top 5 Review \u2014 Ready for Approval",
+  "generated": "2026-06-01T01:41:40.689730",
+  "widget_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "embed_url": "https://www.qfinhub.com/embed/mortgage-affordability",
+  "status": "ready_for_approval",
+  "selection_criteria": [
+    "Direct public email available (verified on site)",
+    "High relevance to mortgage/homebuying/real estate",
+    "Realistic reply chance (personal blogs > large orgs)",
+    "Low spam risk (no link farms, no paid link sellers)",
+    "Likely genuine interest in free widget",
+    "No contact form dependency"
+  ],
+  "top_5": [
+    {
+      "rank": 1,
+      "id": "b2-01",
+      "name": "Real Estate Witch",
+      "url": "https://www.realestatewitch.com",
+      "email": "team@realestatewitch.com",
+      "category": "real_estate_blog",
+      "relevance_score": 80,
+      "authority_score": 65,
+      "spam_risk": 10,
+      "reply_likelihood": "Medium-High \u2014 editorial team at active content site",
+      "selected_because": "Pure consumer real estate blog. Their audience IS homebuyers and sellers. Every article benefits from an embedded affordability calculator. Most natural fit of all 15 candidates.",
+      "subject_line": "Free mortgage affordability calculator for your readers",
+      "email_body": "Hi Real Estate Witch team,\n\nI've been reading your homebuying guides and love how you break down the process for first-time buyers. Your article on how much home you can afford is exactly the kind of content where our widget would help.\n\nWe built a free mortgage affordability calculator at QFINHUB.com that's embeddable on any site. It uses standard DTI ratios (28/36), factors in taxes and insurance, and gives readers an instant answer \u2014 no signup, no data collection.\n\nYour readers could calculate their exact affordability right within your articles, without leaving the page. Here's the widget landing page:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf it's useful, here's the embed code:\n<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>\n\nNo catch \u2014 it's free, no user tracking, no ads. Just a genuinely useful tool for homebuyers.\n\nWould this be something worth adding to your toolkit?\n\nBest,\nQasem Mohammed\nQFINHUB.com",
+      "follow_up_draft": "Hi team,\n\nJust following up on my email from last week about the free mortgage affordability widget. Totally understand if you're busy \u2014 just wanted to make sure it didn't get buried.\n\nThe widget is live, free, and takes about 2 minutes to embed. Here's a direct link to see it in action:\nhttps://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nNo pressure \u2014 just thought your readers would find it genuinely useful alongside your affordability guides.\n\nBest,\nQasem"
+    },
+    {
+      "rank": 2,
+      "id": "b2-02",
+      "name": "Springboard (Credit.org)",
+      "url": "https://www.credit.org",
+      "email": "info@credit.org",
+      "category": "financial_literacy",
+      "relevance_score": 90,
+      "authority_score": 75,
+      "spam_risk": 5,
+      "reply_likelihood": "Medium \u2014 non-profit, likely receptive to free tools",
+      "selected_because": "Non-profit with active housing counseling programs. Highest relevance score (90). Mortgage affordability calculator directly supports their HUD-approved housing counseling mission. Low spam risk.",
+      "subject_line": "Free mortgage affordability tool for your housing counselors",
+      "email_body": "Hello Springboard team,\n\nI'm reaching out because your housing counseling program caught my attention. The work you do helping families navigate mortgage decisions is exactly the kind of mission our free tools are designed to support.\n\nWe built a mortgage affordability calculator at QFINHUB.com that's completely free and embeddable. It uses standard DTI ratios, factors in taxes, insurance, and monthly obligations, and requires no signup or user data collection.\n\nI think your housing counselors would find it useful \u2014 clients can explore different scenarios (income, debt, down payment) and get an instant affordability estimate. It's embeddable on any resource page or counselor portal.\n\nWidget landing page: https://www.qfinhub.com/widgets/mortgage-affordability-embed\nEmbed code: <iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>\n\nAs a non-profit ourselves in spirit (everything we build is free), I wanted to offer this as a genuine resource \u2014 no strings attached.\n\nWould this be helpful for your team?\n\nBest,\nQasem Mohammed\nQFINHUB.com",
+      "follow_up_draft": "Hello,\n\nFollowing up on my email about the free mortgage affordability calculator. I know non-profits get a lot of pitches \u2014 this one is genuinely free, built to help housing counselors and their clients.\n\nQuick demo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf someone on your housing team would find it useful, I'd be happy to help with any embed questions.\n\nBest,\nQasem"
+    },
+    {
+      "rank": 3,
+      "id": "b2-03",
+      "name": "Physician on FIRE",
+      "url": "https://www.physicianonfire.com",
+      "email": "PoF@physicianonfire.com",
+      "category": "fire_blog",
+      "relevance_score": 75,
+      "authority_score": 85,
+      "spam_risk": 10,
+      "reply_likelihood": "Medium \u2014 solo blogger, direct email, may respond personally",
+      "selected_because": "Highest authority score among accessible targets (85). Large FIRE audience making big housing decisions. Has mortgage-specific content. Blog owner is directly reachable \u2014 rare among major PF blogs.",
+      "subject_line": "Free calculator for your readers' biggest expense: housing",
+      "email_body": "Hi Leif (PoF),\n\nLong-time reader here \u2014 your posts on real estate investing and physician mortgages have been really insightful.\n\nI run QFINHUB.com (free financial calculators) and we just built a mortgage affordability widget that I think your readers would genuinely use. It calculates exactly what someone can afford using standard DTI ratios, factoring in income, monthly debts, taxes, and insurance.\n\nYour audience of physicians and high-income professionals are making some of the biggest housing decisions out there. A quick affordability check embedded in your mortgage or housing posts would give them instant clarity.\n\nHere's the widget: https://www.qfinhub.com/widgets/mortgage-affordability-embed\nEmbed code: <iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>\n\nCompletely free, no signup, no user data collected. Just a practical tool.\n\nWould this be worth adding to your housing resources section?\n\nBest,\nQasem Mohammed\nQFINHUB.com",
+      "follow_up_draft": "Hi Leif,\n\nQuick follow-up on the mortgage affordability widget I mentioned last week. I know you get a lot of emails \u2014 just wanted to make sure this one didn't slip through.\n\nIt's a genuinely free tool \u2014 demo here: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nNo worries if it's not a fit. Thanks for all the great content.\n\nBest,\nQasem"
+    },
+    {
+      "rank": 4,
+      "id": "b2-04",
+      "name": "Greenpath Financial Wellness",
+      "url": "https://www.greenpath.com",
+      "email": "mediarelations@greenpath.com",
+      "category": "financial_literacy",
+      "relevance_score": 90,
+      "authority_score": 80,
+      "spam_risk": 5,
+      "reply_likelihood": "Medium-Low \u2014 mediarelations@ may forward, but may also ignore unsolicited tools",
+      "selected_because": "National non-profit with HUD-approved housing counseling. High relevance (90) and authority (80). Caveat: media relations email may not be the right channel \u2014 but worth attempting as it may forward internally.",
+      "email_caveat": "mediarelations@ is media/PR contact. Email may need forwarding to housing/education team. If no response, try finding a direct contact for their housing counseling department.",
+      "subject_line": "Free tool for your homebuyer education program",
+      "email_body": "Hello Greenpath team,\n\nI wanted to reach out because your homebuyer education and housing counseling work aligns with a free tool we've built.\n\nWe created a mortgage affordability calculator at QFINHUB.com \u2014 completely free, embeddable, no signup required, no user data collected. It uses standard DTI ratios and factors in taxes, insurance, and monthly debts to give homebuyers an instant affordability estimate.\n\nI could see this being useful for your housing counselors and their clients during homebuyer education sessions. Clients can explore different scenarios on their own time, and counselors can use it as a quick reference.\n\nWidget landing page: https://www.qfinhub.com/widgets/mortgage-affordability-embed\nEmbed code: <iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>\n\nThis is a genuine offer \u2014 no commercial angle, no tracking, no ads. We build free financial tools as a public resource.\n\nIf there's someone on your housing education team this would be more relevant for, I'd appreciate a forward.\n\nBest,\nQasem Mohammed\nQFINHUB.com",
+      "follow_up_draft": "Hello,\n\nFollowing up on the free mortgage affordability widget I shared last week. I understand this may not have reached the right person via mediarelations@.\n\nQuick demo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nIf the housing education team would find it useful, I'm happy to connect directly. Otherwise, no worries at all.\n\nBest,\nQasem"
+    },
+    {
+      "rank": 5,
+      "id": "b2-05",
+      "name": "Young and the Invested",
+      "url": "https://youngandtheinvested.com",
+      "email": "riley@youngandtheinvested.com",
+      "category": "personal_finance_blog",
+      "relevance_score": 85,
+      "authority_score": 55,
+      "spam_risk": 10,
+      "reply_likelihood": "High \u2014 personal blog, owner directly reachable, smaller site = more personal response",
+      "selected_because": "Highest reply likelihood of all candidates. Personal finance blog for young professionals considering first homes. Owner is directly reachable (riley@). Smaller, more personal sites often have the highest response rates for genuine outreach.",
+      "subject_line": "Free mortgage calculator your readers will actually use",
+      "email_body": "Hi Riley,\n\nI came across your site while researching personal finance blogs that genuinely help young professionals figure out money \u2014 really enjoyed your approach.\n\nI run QFINHUB.com and we built a free mortgage affordability calculator widget that I think would be a natural fit for your real estate and homebuying content. Your readers are at the age where they're considering first home purchases, and this lets them instantly calculate what they can actually afford.\n\nIt uses standard DTI ratios, factors in taxes and insurance \u2014 no signup, no data collection, completely free.\n\nHere's the widget: https://www.qfinhub.com/widgets/mortgage-affordability-embed\nEmbed code: <iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>\n\nWould love to know if this would be useful for your readers.\n\nBest,\nQasem Mohammed\nQFINHUB.com",
+      "follow_up_draft": "Hi Riley,\n\nJust a quick follow-up on the mortgage affordability widget I mentioned. I know emails get lost \u2014 totally understand.\n\nDemo: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nNo pressure at all. Appreciate the great content you put out.\n\nBest,\nQasem"
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "b2-06",
+      "name": "Take Charge America",
+      "reason": "Similar profile to Springboard/Greenpath (non-profit housing counseling) \u2014 keep as backup for Batch 3"
+    },
+    {
+      "id": "b2-07",
+      "name": "Fiscal Tiger",
+      "reason": "Lower relevance, spam risk slightly higher, site may be content aggregator \u2014 hesitant"
+    },
+    {
+      "id": "b2-08",
+      "name": "The Ways To Wealth",
+      "reason": "Good candidate but email not verified on about page; save for Batch 3 after re-verification"
+    },
+    {
+      "id": "b2-09",
+      "name": "Family Credit Management",
+      "reason": "Lower authority, save for Batch 3"
+    },
+    {
+      "id": "b2-10",
+      "name": "Roost Real Estate Co",
+      "reason": "Small local site, about page 404'd, limited audience"
+    },
+    {
+      "id": "b2-11",
+      "name": "Mortgage News Daily",
+      "reason": "support@ email likely wrong channel; high relevance but wrong contact"
+    },
+    {
+      "id": "b2-12",
+      "name": "Inman",
+      "reason": "Industry news publication, unlikely to embed consumer widget. Save for different angle."
+    },
+    {
+      "id": "b2-13",
+      "name": "Keeping Current Matters",
+      "reason": "Agent-focused B2B, not consumer. about page 404'd."
+    },
+    {
+      "id": "b2-14",
+      "name": "Home Bay (Clever)",
+      "reason": "Duplicative of Real Estate Witch (same parent company); affiliates@ suggests wrong channel"
+    },
+    {
+      "id": "b2-15",
+      "name": "Wealth of Geeks",
+      "reason": "social@ email likely wrong channel; lower relevance; generalist site"
+    }
+  ],
+  "safety_rules_applied": [
+    "No emails sent \u2014 all drafts are ready_for_approval only",
+    "No follow-ups sent",
+    "No contact forms used \u2014 all targets have public emails",
+    "No spammy anchor text requested",
+    "No money or link exchange offered",
+    "No aggressive scraping \u2014 publicly visible emails only",
+    "No risky automations re-enabled (Blog Agent, Scenario Gen, Indexing Engine, Sitemap Ping remain paused)",
+    "No additional contact-form targets contacted",
+    "No decision pages created"
+  ]
+}

@@ -95,6 +95,14 @@
     "tweetId": null,
     "sourceUrl": "https://www.cnbc.com/2026/05/26/ecb-villeroy-inflation-iran-war.html"
   },
+  "108312439": {
+    "slug": "student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
+    "title": "Student Loan Repayment Options 2025: How to Choose the Best Plan for Your Budget",
+    "publishedAt": "2026-05-31T14:31:27.367Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "https://www.cnbc.com/2026/05/29/student-loan-borrowers-new-repayment-plans.html"
+  },
   "108312909": {
     "slug": "energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
     "title": "Energy Inflation Persists: How Higher Oil Prices Impact Your Mortgage and Savings Goals",
@@ -534,5 +542,13 @@
     "category": "fed-rate",
     "tweetId": null,
     "sourceUrl": "https://www.realtor.com/news/reality-tv/90-day-fiance-annabelle-shea-house-tour-controversy/"
+  },
+  "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm]]>": {
+    "slug": "what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+    "title": "What the Fed’s Bank Employee Enforcement Actions Mean for Your Mortgage and Money",
+    "publishedAt": "2026-05-31T14:31:10.192Z",
+    "category": "fed-rate",
+    "tweetId": null,
+    "sourceUrl": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm]]>"
   }
 }

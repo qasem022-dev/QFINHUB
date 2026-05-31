@@ -1,0 +1,71 @@
+{
+  "description": "Phase 12.10 \u2014 GSC Indexing Action Plan (DRAFT \u2014 not executed)",
+  "generated": "2026-06-01T02:19:34.096111",
+  "status": "DRAFT \u2014 awaiting Qasem approval",
+  "safety": "NO ACTIONS EXECUTED \u2014 all items require manual approval",
+  "actions": [
+    {
+      "priority": 95,
+      "action": "Identify + fix the 1 'Duplicate Google chose different canonical' URL",
+      "category": "D \u2014 Technical error",
+      "steps": "1. Qasem identifies the URL in GSC. 2. Inspect page's canonical tag. 3. Compare content with the page Google chose. 4. Fix canonical OR make content more distinct.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 85,
+      "action": "Improve internal linking from hub pages to core calculators and important uncrawled pages",
+      "category": "A \u2014 Important pages need crawl",
+      "steps": "Add internal links from homepage to top calculators. Ensure blog posts link to relevant calculators. Add breadcrumb navigation. These signal crawl priority to Google.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 80,
+      "action": "Request recrawl of top 20 most important uncrawled pages via GSC URL Inspection",
+      "category": "A \u2014 Important pages need crawl",
+      "steps": "Qasem manually submits top 20 important pages (core calculators, key blog posts) in GSC URL Inspection tool and requests indexing.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 70,
+      "action": "Qasem exports 100+ 'Discovered not indexed' URLs from GSC for classification",
+      "category": "A/B \u2014 Mixed",
+      "steps": "From GSC web interface \u2192 Indexing \u2192 Pages \u2192 'Discovered \u2014 currently not indexed' \u2192 export sample. Identify which are important pages vs cleanup lag.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 60,
+      "action": "Verify sitemap.xml freshness \u2014 ensure lastmod dates are accurate for important pages",
+      "category": "A \u2014 Important pages need crawl",
+      "steps": "Check sitemap.xml generation code. Ensure important pages have recent lastmod dates to signal freshness to Google.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 40,
+      "action": "Monitor 'Crawled not indexed' \u2014 Qasem exports the 15 URLs from GSC",
+      "category": "B \u2014 Expected cleanup lag (but verify)",
+      "steps": "Qasem inspects the 15 URLs in GSC. If any are important pages, improve content. If all are thin/noindexed, no action needed.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 30,
+      "action": "Verify the 4 'Alternative page with proper canonical' URLs",
+      "category": "C \u2014 Correct behavior",
+      "steps": "Qasem exports the 4 URLs from GSC. Confirm they are formula variants with proper canonicals to parent calculators.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 10,
+      "action": "Verify the 1 'Page with redirect' URL",
+      "category": "C \u2014 Correct behavior",
+      "steps": "Qasem exports from GSC. Confirm the redirect destination is correct.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 5,
+      "action": "No action for cleanup lag URLs (~2,972)",
+      "category": "B \u2014 Expected cleanup lag",
+      "steps": "The 2,059 scenario pages, 588 geo pages, and 384 formula variants were intentionally noindexed. These will drop out of 'Discovered not indexed' over 2-4 weeks as Google re-crawls and confirms noindex.",
+      "status": "NO ACTION \u2014 natural attrition"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "description": "Phase 12.9 \u2014 Batch 2 Direct-Email Outreach \u2014 Sent Report",
+  "generated": "2026-06-01T01:56:48.738146",
+  "batch": "2",
+  "method": "Gmail SMTP (q.finhub@gmail.com)",
+  "total_sent": 5,
+  "total_failed": 0,
+  "bounces": 0,
+  "widget_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "embed_url": "https://www.qfinhub.com/embed/mortgage-affordability",
+  "follow_up_due": "2026-06-07",
+  "emails": [
+    {
+      "rank": 1,
+      "target": "Real Estate Witch",
+      "email": "team@realestatewitch.com",
+      "subject": "Free mortgage affordability calculator for your readers",
+      "status": "sent",
+      "date_sent": "2026-06-01",
+      "time_sent": "2026-05-31T22:56:10Z",
+      "follow_up_due": "2026-06-07",
+      "category": "real_estate_blog"
+    },
+    {
+      "rank": 2,
+      "target": "Springboard (Credit.org)",
+      "email": "info@credit.org",
+      "subject": "Free mortgage affordability tool for your housing counselors",
+      "status": "sent",
+      "date_sent": "2026-06-01",
+      "time_sent": "2026-05-31T22:56:10Z",
+      "follow_up_due": "2026-06-07",
+      "category": "financial_literacy"
+    },
+    {
+      "rank": 3,
+      "target": "Physician on FIRE",
+      "email": "PoF@physicianonfire.com",
+      "subject": "Free calculator for your readers' biggest expense: housing",
+      "status": "sent",
+      "date_sent": "2026-06-01",
+      "time_sent": "2026-05-31T22:56:10Z",
+      "follow_up_due": "2026-06-07",
+      "category": "fire_blog"
+    },
+    {
+      "rank": 4,
+      "target": "Greenpath Financial Wellness",
+      "email": "mediarelations@greenpath.com",
+      "subject": "Free tool for your homebuyer education program",
+      "status": "sent",
+      "date_sent": "2026-06-01",
+      "time_sent": "2026-05-31T22:56:10Z",
+      "follow_up_due": "2026-06-07",
+      "category": "financial_literacy"
+    },
+    {
+      "rank": 5,
+      "target": "Young and the Invested",
+      "email": "riley@youngandtheinvested.com",
+      "subject": "Free mortgage calculator your readers will actually use",
+      "status": "sent",
+      "date_sent": "2026-06-01",
+      "time_sent": "2026-05-31T22:56:10Z",
+      "follow_up_due": "2026-06-07",
+      "category": "personal_finance_blog"
+    }
+  ],
+  "safety_rules_applied": [
+    "All 5 emails personalized \u2014 no template spam",
+    "No exact-match anchor text requested",
+    "No money, paid links, link exchanges, or incentives offered",
+    "No spammy SEO language",
+    "All include widget landing page + free/no signup message",
+    "All signed by Qasem Mohammed / QFINHUB.com",
+    "Widget landing page verified live (HTTP 200)",
+    "Embed route verified live (HTTP 200)",
+    "No follow-ups sent",
+    "No extra targets contacted",
+    "No contact forms used",
+    "All risky automations remain paused"
+  ],
+  "notes": "Batch 2 sent successfully. Monitor for replies and bounces. Follow-ups due 2026-06-07. Do NOT send follow-ups until user approves."
+}

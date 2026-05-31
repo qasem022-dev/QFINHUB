@@ -76,5 +76,18 @@
     "skipped": 16,
     "failed": 0,
     "notes": "Sunday catch-up run. Found 13 unread emails (7 HARO digests from Thu May 28 eve + Fri May 29 editions accumulated over weekend). 50 total queries, 24 finance-relevant (mostly real estate/mortgage). 16 already sent from prior Thu/Fri runs. Sent 8 new pitches: bitcoin recovery (Bloomberg), Chicago brokerage comparison, Savannah GA buying/selling, NW Georgia brokerage review, agent-matching services, lender-affiliated matching services, virtual brokerages/eXp, Tucson brokers/Arizona attorneys. 3 phantom failures in count are pre-existing May 22 'No recipients defined' bugs (reply-to parser fix already applied)."
+  },
+  {
+    "timestamp": "2026-05-31T16:10:00.000Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon-weekend",
+    "emailsFound": 21,
+    "haroDigests": 7,
+    "queriesParsed": 50,
+    "relevant": 24,
+    "sent": 0,
+    "skipped": 24,
+    "failed": 3,
+    "notes": "Sunday afternoon run. 21 unread emails, 50 queries parsed, 24 finance-relevant — all 24 already sent (morning catch-up + prior weekday runs). Zero new sends. Failed: 3 = phantom May 22 'No recipients defined' errors (pre-existing, not from this run). Inbox still has unread HARO emails from Thu/Fri editions; dedup working correctly. Next real edition: Tue Jun 2 morning (~12:30 PM EEST)."
   }
 ]

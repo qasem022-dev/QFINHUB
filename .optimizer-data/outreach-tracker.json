@@ -2,11 +2,14 @@
   "description": "Phase 12 \u2014 Widget Outreach Tracker",
   "generated": "2026-05-31",
   "rules": [
-    "Max 5 emails/day when approved",
+    "No spammy automation",
+    "3 manual_required targets: The Mortgage Reports, NeighborWorks America, Dough Roller \u2014 do NOT retry",
     "No generic mass emails",
+    "Batch 2 sent 2026-06-01 \u2014 follow-ups due 2026-06-07",
     "No keyword-stuffed anchor text",
+    "Batch 2 targets: ready_for_approval \u2014 do NOT send until user approves",
     "No link buying or money offers",
-    "No spammy automation"
+    "Max 5 emails/day when approved"
   ],
   "entries": [
     {
@@ -15,7 +18,7 @@
       "url": "https://themortgagereports.com",
       "category": "real_estate_mortgage",
       "contact_method": "email: info@themortgagereports.com",
-      "status": "sent",
+      "status": "manual_required",
       "pitch_version": "v1",
       "date_prepared": "2026-05-31",
       "date_sent": "2026-05-31",
@@ -23,7 +26,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Phase 12.7B: Email found via Brave search \u2192 info@themortgagereports.com. Sent via Gmail SMTP.",
+      "notes": "Phase 12.7B: Email found via Brave search \u2192 info@themortgagereports.com. Sent via Gmail SMTP. | 2026-06-01: Marked manual_required per user instruction. Do NOT retry with CloakBrowser, proxies, or duplicate forms.",
       "follow_up_due": "2026-06-07"
     },
     {
@@ -48,7 +51,7 @@
       "url": "https://www.neighborworks.org",
       "category": "community_housing",
       "contact_method": "email: info@media@communications@contact@neighborworks.org",
-      "status": "sent",
+      "status": "manual_required",
       "pitch_version": "v1",
       "date_prepared": "2026-05-31",
       "date_sent": "2026-05-31",
@@ -56,7 +59,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Phase 12.7B: Cloudflare blocks all datacenter IPs. Sent to 4 common patterns via Gmail SMTP. Monitor for bounces.",
+      "notes": "Phase 12.7B: Cloudflare blocks all datacenter IPs. Sent to 4 common patterns via Gmail SMTP. Monitor for bounces. | 2026-06-01: Marked manual_required per user instruction. Do NOT retry with CloakBrowser, proxies, or duplicate forms.",
       "follow_up_due": "2026-06-07"
     },
     {
@@ -65,7 +68,7 @@
       "url": "https://www.doughroller.net",
       "category": "personal_finance_blog",
       "contact_method": "email: rob@doughroller.net + 3 backups (contact@, info@, admin@)",
-      "status": "sent",
+      "status": "manual_required",
       "pitch_version": "v1",
       "date_prepared": "2026-05-31",
       "date_sent": "2026-05-31",
@@ -73,7 +76,7 @@
       "link_acquired": false,
       "link_url": null,
       "follow_nofollow": null,
-      "notes": "Phase 12.7B: Cloudflare blocks all datacenter IPs. Sent to 4 common email patterns via Gmail SMTP. Monitor for bounces.",
+      "notes": "Phase 12.7B: Cloudflare blocks all datacenter IPs. Sent to 4 common email patterns via Gmail SMTP. Monitor for bounces. | 2026-06-01: Marked manual_required per user instruction. Do NOT retry with CloakBrowser, proxies, or duplicate forms.",
       "follow_up_due": "2026-06-07"
     },
     {
@@ -493,6 +496,96 @@
       "link_url": null,
       "follow_nofollow": null,
       "notes": ""
+    },
+    {
+      "target_id": "b2-01",
+      "target": "Real Estate Witch",
+      "url": "https://www.realestatewitch.com",
+      "category": "real_estate_blog",
+      "contact_method": "email: team@realestatewitch.com",
+      "status": "sent_email",
+      "pitch_version": "b2-v1",
+      "date_prepared": "2026-06-01",
+      "date_sent": "2026-06-01",
+      "response": "",
+      "link_acquired": false,
+      "link_url": null,
+      "follow_nofollow": null,
+      "notes": "Batch 2 \u2014 Phase 12.8. Consumer real estate blog, homebuyer audience. Top candidate.",
+      "follow_up_due": "2026-06-07",
+      "method": "email"
+    },
+    {
+      "target_id": "b2-02",
+      "target": "Springboard (Credit.org)",
+      "url": "https://www.credit.org",
+      "category": "financial_literacy",
+      "contact_method": "email: info@credit.org",
+      "status": "sent_email",
+      "pitch_version": "b2-v1",
+      "date_prepared": "2026-06-01",
+      "date_sent": "2026-06-01",
+      "response": "",
+      "link_acquired": false,
+      "link_url": null,
+      "follow_nofollow": null,
+      "notes": "Batch 2 \u2014 Phase 12.8. Non-profit housing counseling. HUD-approved. Highest relevance (90).",
+      "follow_up_due": "2026-06-07",
+      "method": "email"
+    },
+    {
+      "target_id": "b2-03",
+      "target": "Physician on FIRE",
+      "url": "https://www.physicianonfire.com",
+      "category": "fire_blog",
+      "contact_method": "email: PoF@physicianonfire.com",
+      "status": "sent_email",
+      "pitch_version": "b2-v1",
+      "date_prepared": "2026-06-01",
+      "date_sent": "2026-06-01",
+      "response": "",
+      "link_acquired": false,
+      "link_url": null,
+      "follow_nofollow": null,
+      "notes": "Batch 2 \u2014 Phase 12.8. Major FIRE blog (authority 85). Has mortgage content. Owner-direct email.",
+      "follow_up_due": "2026-06-07",
+      "method": "email"
+    },
+    {
+      "target_id": "b2-04",
+      "target": "Greenpath Financial Wellness",
+      "url": "https://www.greenpath.com",
+      "category": "financial_literacy",
+      "contact_method": "email: mediarelations@greenpath.com",
+      "status": "sent_email",
+      "pitch_version": "b2-v1",
+      "date_prepared": "2026-06-01",
+      "date_sent": "2026-06-01",
+      "response": "",
+      "link_acquired": false,
+      "link_url": null,
+      "follow_nofollow": null,
+      "notes": "Batch 2 \u2014 Phase 12.8. National non-profit, HUD-approved housing counseling. Caveat: mediarelations@ may need forwarding. Email drafted with forward request.",
+      "follow_up_due": "2026-06-07",
+      "method": "email"
+    },
+    {
+      "target_id": "b2-05",
+      "target": "Young and the Invested",
+      "url": "https://youngandtheinvested.com",
+      "category": "personal_finance_blog",
+      "contact_method": "email: riley@youngandtheinvested.com",
+      "status": "sent_email",
+      "pitch_version": "b2-v1",
+      "date_prepared": "2026-06-01",
+      "date_sent": "2026-06-01",
+      "response": "",
+      "link_acquired": false,
+      "link_url": null,
+      "follow_nofollow": null,
+      "notes": "Batch 2 \u2014 Phase 12.8. Personal blog, young professional audience at first-home-buying age. Highest reply likelihood. Owner-reachable email.",
+      "follow_up_due": "2026-06-07",
+      "method": "email"
     }
   ]
 }

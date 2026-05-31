@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-05-28T15:20:00.000000",
-  "v2_optimizer_run": "2026-05-28",
+  "generated_at": "2026-05-31T12:30:00.000000",
+  "v2_optimizer_run": "2026-05-31",
   "action_items": [
-    "FIXED: Removed blanket noindex on formula-based tools pages — called out in GSC data as self-inflicted wound. Pages with 33/80 impressions (41%) were blocked from ranking.",
-    "SUBMITTED_INDEX: 4 quality pages (loan-20k-5yr-8pct, afford-100k-40k-6-5pct, philadelphia-pa, retirement-income guide) with impressions > 3 to Indexing API.",
-    "SUBMITTED_INDEX: New blog post targeting #1 GSC query '20000 loan 5yr 8% monthly payment' (pos 11, 11 impressions).",
-    "SUBMITTED_INDEX: 85 bulk URLs via seo-indexing-engine.py (calculators + tools + blog). Total today: 133 URLs.",
-    "BLOG_CREATED: '20000-loan-at-8-percent-for-5-years-monthly-payment' targeting exact-match query. Content directly answers the query with the specific monthly payment ($405.53) and full amortization breakdown.",
-    "NOFIX: Guide pages (retirement-income) have template-driven thin content but are statically generated. Would need deep content rewrite that's beyond V2 scope — let user decide."
+    "CTR_REWRITE: BlackRock Saigal blog (15 imp, pos 8.1) — title now includes 'Fed Rate Cut Ahead?' + specific benefit language. Was generic 'Learn how...'.",
+    "CTR_REWRITE: Hungary interest rate blog (9 imp, pos 17.8) — now 'Will a June Cut Lower Your Mortgage Payment?' direct question format.",
+    "CTR_REWRITE: ECB rate hike blog (5 imp, pos 9) — now 'ECB Rate Hikes: How to Protect Your Mortgage and Savings Right Now' with urgency.",
+    "CTR_REWRITE: Stephen Calk blog (5 imp, pos 6.8) — now focuses on 'What It Means for Your Mortgage Rate' not the trust itself.",
+    "CTR_REWRITE: 90 Day Fiance blog (4 imp, pos 13.8) — cleaner title + description with 'how much house you can actually afford'.",
+    "CTR_REWRITE: PITI formula blog (13 imp, pos 75.2) — 'PITI Formula: Calculate Your Full Monthly Mortgage Payment' with example dollar amount.",
+    "CTR_REWRITE: Investing political risk blog (4 imp, pos 9) — fixed garbled title 'Investing Resurgent...' → clean 'Political Risk Derails Emerging Market Rallies'.",
+    "INTERNAL_LINKS: Added investment-return + refinance-calculator to investing blog's relatedCalculators for topical cross-linking.",
+    "INDEXED: 12 quality URLs with impressions > 3 submitted to Indexing API (all near-winners).",
+    "DEPLOYED: Meta changes committed and pushed to main (2 commits: 2873e05 + e0b2b5f). Vercel deploying."
   ],
-  "summary": "✅ V2 Optimizer — 2026-05-28. Winners: 0 (no clicks yet). Near-winners: 1 (loan-20k query at pos 11). CTR fixes: 0 (metas already strong — root cause was noindex). Indexed: 4 quality URLs + 1 blog post + 85 bulk = 133 total."
+  "summary": "✅ V2 Optimizer — 2026-05-31. Winners: 0 (no clicks yet). Near-winners: 5 (BlackRock 15imp, PITI 13imp, Hungary 9imp, $20K loan 6imp, ECB/Philly 5imp). CTR fixes: 7 page metas rewritten. Internal links added: 1 blog post (2 new calc links). Indexed: 12 quality URLs (all with confirmed GSC impressions). Next: these metas need ~48h to reflect in SERP — check for CTR improvement on June 2."
 }

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-05-31T12:28:19.210356",
+  "targets_analyzed": 2,
+  "meta_fixes_applied": [
+    {
+      "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "old_impressions": 11,
+      "new_title": "Monthly Mortgage Payment Formula Tax Insurance \u2014 Expert Analysis & ...",
+      "new_description": "Expert breakdown of monthly mortgage payment formula tax insurance. Answering: \"mortgage calculator piti\". Includes free calculators, real examples, and acti..."
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "old_impressions": 5,
+      "new_title": "20000 Loan At 8 Percent For 5 Years Monthly Payment \u2014 Expert Analys...",
+      "new_description": "Expert breakdown of 20000 loan at 8 percent for 5 years monthly payment. Answering: \"if you borrow $20,000 for 5 years at an annual rate of 8%, what would th..."
+    }
+  ],
+  "scenarios_created": 0,
+  "urls_submitted": 2,
+  "scenarios": [],
+  "top_targets": [
+    {
+      "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "impressions": 11,
+      "best_pos": 64,
+      "top_query": "calculating piti"
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 5,
+      "best_pos": 4.5,
+      "top_query": "20000 loan monthly payment"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "report": "Phase 12.10 \u2014 GSC Indexing Diagnosis Report",
+  "generated": "2026-06-01T02:19:34.096111",
+  "gsc_summary_from_user": {
+    "indexed": 189,
+    "not_indexed": 3230,
+    "alternative_page_with_proper_canonical": 4,
+    "page_with_redirect": 1,
+    "crawled_currently_not_indexed": 15,
+    "discovered_currently_not_indexed": 3211,
+    "duplicate_google_chose_different_canonical": 1,
+    "duplicate_without_user_selected_canonical": 0
+  },
+  "site_overview": {
+    "total_sitemap_urls": 649,
+    "news_sitemap_urls": 95,
+    "scenario_sitemap_urls": 0,
+    "total_indexable_pages_estimate": 768,
+    "total_pages_ever_generated": 3957,
+    "pages_pruned_noindexed": 3036,
+    "pages_still_indexable": 768
+  },
+  "url_inspection_results": {
+    "decision_pages": {
+      "total": 15,
+      "indexed_pass": 7,
+      "indexed_neutral": 8,
+      "not_indexed": 0,
+      "status": "HEALTHY \u2014 all 15 known to Google, 7 fully indexed, 8 awaiting crawl"
+    },
+    "core_calculators": {
+      "total": 10,
+      "indexed_pass": 0,
+      "indexed_neutral": 10,
+      "not_indexed": 0,
+      "status": "CONCERNING \u2014 all 10 NEUTRAL with crawl=never. Pages are indexable (HTTP 200, index,follow) but Google has not crawled them."
+    },
+    "widget_page": {
+      "url": "/widgets/mortgage-affordability-embed",
+      "verdict": "PASS",
+      "status": "INDEXED \u2014 fully crawled and indexed"
+    },
+    "homepage": {
+      "url": "/",
+      "verdict": "PASS",
+      "status": "INDEXED"
+    },
+    "sitemaps": {
+      "main_sitemap": "NEUTRAL (649 URLs, 0 indexed per sitemap report)",
+      "news_sitemap": "NEUTRAL (95 URLs, 0 indexed per sitemap report)",
+      "scenario_sitemap": "REMOVED from GSC"
+    }
+  },
+  "issue_analysis": [
+    {
+      "category": "Alternative page with proper canonical tag",
+      "count": 4,
+      "meaning": "Google found alternate URLs for the same content (e.g., www vs non-www, trailing slash variants, or URL parameters) but correctly identified the canonical version.",
+      "dangerous": false,
+      "caused_by_v2_cleanup": "Partially \u2014 formula tool variants have canonicals pointing to parent calculators. This is correct behavior.",
+      "likely_urls": [
+        "Formula tool variant canonicalized to parent calculator (e.g., /tools/mortgage-calculator/30yr-6pct \u2192 /calculators/mortgage-calculator)",
+        "Non-www variant redirecting to www",
+        "Trailing slash variant",
+        "URL parameter variant"
+      ],
+      "classification": "C \u2014 Correct canonical/redirect behavior",
+      "action_required": "NO ACTION \u2014 this is expected and correct. Google is correctly following our canonical tags.",
+      "priority": 5
+    },
+    {
+      "category": "Page with redirect",
+      "count": 1,
+      "meaning": "Google found a URL that redirects to another URL. This is a non-indexable URL that properly redirects.",
+      "dangerous": false,
+      "caused_by_v2_cleanup": "Possibly \u2014 may be an old URL path that now redirects.",
+      "likely_urls": [
+        "A single URL with a 301/302 redirect \u2014 possibly an old path, HTTP\u2192HTTPS, or a trailing slash redirect not properly handled"
+      ],
+      "classification": "C \u2014 Correct canonical/redirect behavior",
+      "action_required": "LOW \u2014 verify the 1 URL is intentionally redirected to the right destination. If it's a valuable old URL, ensure the redirect target is correct.",
+      "priority": 10
+    },
+    {
+      "category": "Crawled \u2014 currently not indexed",
+      "count": 15,
+      "meaning": "Google crawled these 15 pages but chose not to index them. This usually means Google assessed the content as low quality, thin, duplicate, or not valuable enough.",
+      "dangerous": "MODERATE \u2014 only if any of the 15 are important pages",
+      "caused_by_v2_cleanup": "Likely \u2014 these are probably some of the formula tool variants, geo pages, or thin scenarios that were crawled before noindex was applied",
+      "likely_urls": [
+        "Formula tool variants crawled before V2 noindex (Google saw them before the noindex tag)",
+        "Geo pages that got crawled before noindex",
+        "Thin scenario pages that Google crawled and rejected",
+        "Possibly 1-2 borderline quality pages that need content improvement"
+      ],
+      "classification": "B \u2014 Expected cleanup lag (Google crawled then rejected thin pages)",
+      "action_required": "MONITOR \u2014 verify none of the 15 are valuable pages. If any are important, improve content. Qasem should check these 15 URLs in GSC and report which ones are important.",
+      "priority": 25
+    },
+    {
+      "category": "Discovered \u2014 currently not indexed",
+      "count": 3211,
+      "meaning": "Google knows about these URLs (from sitemaps, internal links, or external links) but has NOT yet crawled them. This is the largest issue category.",
+      "dangerous": "MODERATE \u2014 represents the bulk of the indexing gap. Not dangerous per se, but indicates Google hasn't prioritized crawling these URLs.",
+      "caused_by_v2_cleanup": "MAJORLY \u2014 This is the direct result of V2 cleanup:",
+      "likely_urls_breakdown": {
+        "pruned_scenarios_noindexed": "~2,000 URLs \u2014 hash-ID scenario pages that were noindexed in V2. Google discovered them via old sitemap but sees noindex. These will eventually drop off.",
+        "geo_pages_noindexed": "~588 URLs \u2014 city-specific pages (99 cities \u00d7 6 calculators) that were noindexed. Expected cleanup lag.",
+        "formula_tool_variants_noindexed": "~384 URLs \u2014 parameter-based tool variants noindexed + canonicalized. Expected cleanup lag.",
+        "quality_pages_not_yet_crawled": "~200-240 URLs \u2014 this is the PROBLEM subset. These include calculator hubs, blog posts, guides, comparison pages, and static pages that are indexable but haven't been crawled.",
+        "other_pruned": "~50 URLs \u2014 removed pages, old redirects, etc."
+      },
+      "classification": "MIXED \u2014 ~2,972 are cleanup lag (B), ~240 are important pages needing crawl (A)",
+      "action_required": "PARTIAL \u2014 For the ~240 important uncrawled pages: improve internal linking from hub pages, ensure sitemap freshness, improve crawl budget efficiency. For the ~2,972 cleanup lag URLs: no action needed \u2014 they will naturally drop off as Google re-crawls and sees noindex.",
+      "priority": 70,
+      "sub_actions": [
+        "Qasem should export a sample of ~100 'Discovered not indexed' URLs from GSC and identify which are important pages vs. cleanup lag",
+        "For important pages stuck in this category: add internal links from high-authority hub pages",
+        "Verify sitemap lastmod dates are current for important pages",
+        "Consider requesting recrawl for top-20 most important uncrawled pages via URL Inspection tool in GSC"
+      ]
+    },
+    {
+      "category": "Duplicate, Google chose different canonical than user",
+      "count": 1,
+      "meaning": "Google found a page that it considers a duplicate of another page, and chose a DIFFERENT canonical than what you specified. THIS IS THE MOST DANGEROUS ISSUE.",
+      "dangerous": true,
+      "caused_by_v2_cleanup": "Possibly \u2014 this could be a valuable page competing with another page, or a formula variant with incorrect canonical.",
+      "likely_urls": [
+        "A valuable page (possibly a calculator, blog, or decision page) that Google thinks is a duplicate of another page on the site",
+        "Could be a page that's too similar to another page (thin content, similar topic)",
+        "Could be the PMI calculator issue from May 25 that was supposedly fixed"
+      ],
+      "classification": "D \u2014 Technical error, needs action",
+      "action_required": "CRITICAL \u2014 Qasem should identify the exact URL in GSC. Then: inspect the page's canonical tag, review content uniqueness vs the page Google chose, and fix the canonical or make content more distinct.",
+      "priority": 95
+    }
+  ],
+  "important_pages_status": {
+    "decision_pages": {
+      "total": 15,
+      "indexed": 7,
+      "awaiting_crawl": 8,
+      "not_indexed": 0,
+      "detail": {
+        "indexed_pages": [
+          "how-much-house-can-i-afford (PASS, crawled May 28)",
+          "should-i-refinance-my-mortgage (PASS, crawled May 28)",
+          "how-much-emergency-fund-do-i-need (PASS, crawled May 28)",
+          "can-i-retire-with-500k-at-55 (PASS, crawled May 28)",
+          "what-tax-bracket-am-i-in (PASS, crawled May 28)",
+          "pay-off-student-loans-or-invest (PASS, crawled May 28)",
+          "should-i-use-a-heloc-or-personal-loan (PASS, crawled May 28)"
+        ],
+        "awaiting_crawl": [
+          "fixed-vs-adjustable-rate-mortgage (NEUTRAL, never crawled)",
+          "15-vs-30-year-mortgage (NEUTRAL, never crawled)",
+          "buy-vs-rent (NEUTRAL, never crawled)",
+          "pay-off-mortgage-early-or-invest (NEUTRAL, never crawled)",
+          "how-much-down-payment (NEUTRAL, never crawled)",
+          "should-i-buy-mortgage-points (NEUTRAL, never crawled)",
+          "rent-vs-buy-calculator (NEUTRAL, never crawled)",
+          "is-now-a-good-time-to-buy-a-house (NEUTRAL, never crawled)"
+        ]
+      }
+    },
+    "widget_page": {
+      "url": "/widgets/mortgage-affordability-embed",
+      "status": "INDEXED \u2014 PASS verdict, fully crawled",
+      "health": "\u2705 Healthy"
+    },
+    "core_calculators": {
+      "total": 10,
+      "status": "ALL NEUTRAL \u2014 never crawled by Google",
+      "health": "\u26a0\ufe0f CONCERNING \u2014 These are the most important pages on the site. All are indexable (HTTP 200, index,follow, in sitemap, linked from homepage). Google has not crawled any of them. This is a crawl budget or crawl priority issue.",
+      "detail": {
+        "mortgage-calculator": "NEUTRAL crawl=never \u2014 HTTP 200, index,follow \u2705",
+        "mortgage-affordability": "NEUTRAL crawl=never \u2014 HTTP 200, index,follow \u2705",
+        "compound-interest": "NEUTRAL crawl=never \u2014 HTTP 200, index,follow \u2705",
+        "retirement-planning": "NEUTRAL crawl=never \u2014 HTTP 200, index,follow \u2705",
+        "loan-calculator": "NEUTRAL crawl=never \u2014 HTTP 200, index,follow \u2705",
+        "debt-payoff": "NEUTRAL crawl=never \u2014 HTTP 200, index,follow \u2705",
+        "tax-calculator": "NEUTRAL crawl=never",
+        "401k-calculator": "NEUTRAL crawl=never",
+        "investment-return": "NEUTRAL crawl=never",
+        "budget-planner": "NEUTRAL crawl=never"
+      },
+      "root_cause_theory": "Google discovered ~3,957 URLs from the original sitemaps (main + scenario). With a new domain (~4 weeks old), crawl budget is extremely limited. Google prioritized crawling the 2,000+ scenario pages (which were then noindexed) over the core calculator pages. Google MAY have also been turned off by the massive sitemap bloat and deprioritized the domain."
+    }
+  },
+  "classification_counts": {
+    "A_important_needs_action": {
+      "count": "~240 URLs",
+      "description": "Important indexable pages not yet crawled \u2014 calculator hubs, blog posts, guides, comparison pages stuck in 'Discovered not indexed'",
+      "example_urls": [
+        "/calculators/mortgage-calculator",
+        "/calculators/compound-interest",
+        "/blog/* (many of 103 blog posts)",
+        "/calculators/* (most of 125 calculators)",
+        "/guides/* (many of 125 guides)"
+      ]
+    },
+    "B_expected_cleanup_lag": {
+      "count": "~2,972 URLs",
+      "description": "Noindexed scenario pages, geo pages, and formula tool variants that Google discovered but won't index. Will naturally drop off over 2-4 weeks.",
+      "example_urls": [
+        "/scenario/* (2,059 noindexed scenarios)",
+        "/calculators/*/geo/* (588 noindexed geo pages)",
+        "/tools/* (384 noindexed formula variants)"
+      ]
+    },
+    "C_correct_behavior": {
+      "count": "5 URLs",
+      "description": "4 alternate URLs with proper canonical + 1 redirect \u2014 all correct behavior",
+      "example_urls": [
+        "Various formula variants canonicalized to parents",
+        "Single redirect URL"
+      ]
+    },
+    "D_technical_error": {
+      "count": "1 URL",
+      "description": "Duplicate Google chose different canonical \u2014 needs investigation",
+      "example_urls": [
+        "Unknown \u2014 Qasem must identify in GSC"
+      ]
+    }
+  },
+  "api_limitations": {
+    "search_analytics_api": "NOT ACCESSIBLE \u2014 returns 404. Cannot fetch impression/click data by URL.",
+    "url_inspection_api": "WORKING \u2014 individual page inspection works. Inspected 27 key pages successfully.",
+    "sitemap_api": "WORKING \u2014 sitemaps list accessible. Main sitemap: 649 URLs, news: 95 URLs.",
+    "bulk_url_export": "NOT POSSIBLE via API \u2014 GSC does not provide bulk export of 'Discovered not indexed' URL lists via API. Qasem must export from GSC web interface.",
+    "action_required_from_qasem": "Export 'Discovered not indexed' URL list (at least 100 sample URLs) from GSC web interface. Export the 1 'Duplicate Google chose different canonical' URL. Export the 15 'Crawled not indexed' URLs. Export the 4 'Alternative page with proper canonical' URLs."
+  },
+  "recommended_actions_draft": [
+    {
+      "priority": 95,
+      "action": "Identify + fix the 1 'Duplicate Google chose different canonical' URL",
+      "category": "D \u2014 Technical error",
+      "steps": "1. Qasem identifies the URL in GSC. 2. Inspect page's canonical tag. 3. Compare content with the page Google chose. 4. Fix canonical OR make content more distinct.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 85,
+      "action": "Improve internal linking from hub pages to core calculators and important uncrawled pages",
+      "category": "A \u2014 Important pages need crawl",
+      "steps": "Add internal links from homepage to top calculators. Ensure blog posts link to relevant calculators. Add breadcrumb navigation. These signal crawl priority to Google.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 80,
+      "action": "Request recrawl of top 20 most important uncrawled pages via GSC URL Inspection",
+      "category": "A \u2014 Important pages need crawl",
+      "steps": "Qasem manually submits top 20 important pages (core calculators, key blog posts) in GSC URL Inspection tool and requests indexing.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 70,
+      "action": "Qasem exports 100+ 'Discovered not indexed' URLs from GSC for classification",
+      "category": "A/B \u2014 Mixed",
+      "steps": "From GSC web interface \u2192 Indexing \u2192 Pages \u2192 'Discovered \u2014 currently not indexed' \u2192 export sample. Identify which are important pages vs cleanup lag.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 60,
+      "action": "Verify sitemap.xml freshness \u2014 ensure lastmod dates are accurate for important pages",
+      "category": "A \u2014 Important pages need crawl",
+      "steps": "Check sitemap.xml generation code. Ensure important pages have recent lastmod dates to signal freshness to Google.",
+      "status": "NOT YET EXECUTED"
+    },
+    {
+      "priority": 40,
+      "action": "Monitor 'Crawled not indexed' \u2014 Qasem exports the 15 URLs from GSC",
+      "category": "B \u2014 Expected cleanup lag (but verify)",
+      "steps": "Qasem inspects the 15 URLs in GSC. If any are important pages, improve content. If all are thin/noindexed, no action needed.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 30,
+      "action": "Verify the 4 'Alternative page with proper canonical' URLs",
+      "category": "C \u2014 Correct behavior",
+      "steps": "Qasem exports the 4 URLs from GSC. Confirm they are formula variants with proper canonicals to parent calculators.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 10,
+      "action": "Verify the 1 'Page with redirect' URL",
+      "category": "C \u2014 Correct behavior",
+      "steps": "Qasem exports from GSC. Confirm the redirect destination is correct.",
+      "status": "NOT YET EXECUTED \u2014 requires Qasem"
+    },
+    {
+      "priority": 5,
+      "action": "No action for cleanup lag URLs (~2,972)",
+      "category": "B \u2014 Expected cleanup lag",
+      "steps": "The 2,059 scenario pages, 588 geo pages, and 384 formula variants were intentionally noindexed. These will drop out of 'Discovered not indexed' over 2-4 weeks as Google re-crawls and confirms noindex.",
+      "status": "NO ACTION \u2014 natural attrition"
+    }
+  ],
+  "safety": {
+    "no_changes_executed": true,
+    "no_pages_noindexed": true,
+    "no_pages_canonicalized": true,
+    "no_pages_redirected": true,
+    "no_pages_deleted": true,
+    "no_indexing_api_used": true,
+    "no_risky_automations_reenabled": true,
+    "no_decision_pages_created": true,
+    "no_outreach_sent": true,
+    "report_is_diagnosis_only": true
+  }
+}
