@@ -1,0 +1,165 @@
+{
+  "description": "Phase 12.11 \u2014 GSC URL Inspection Priority List (for manual submission in GSC, NOT Indexing API)",
+  "generated": "2026-06-01T02:38:01.391810",
+  "instructions": "Qasem should submit these via GSC URL Inspection tool (one by one, max ~20). This is manual GSC inspection, NOT Google Indexing API.",
+  "total_urls": 27,
+  "priority_groups": [
+    {
+      "priority": "P0 \u2014 CRITICAL (submit first)",
+      "pages": [
+        {
+          "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/compound-interest",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/loan-calculator",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/debt-payoff",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/retirement-planning",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/tax-calculator",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/budget-planner",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/401k-calculator",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/investment-return",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "priority": "P1 \u2014 HIGH (submit after P0)",
+      "pages": [
+        {
+          "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
+          "reason": "Core calculator \u2014 never crawled (NEUTRAL)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/",
+          "reason": "Homepage \u2014 already PASS but worth refreshing with new links",
+          "gsc_verdict": "PASS"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators",
+          "reason": "Calculator directory \u2014 links to all calculators",
+          "gsc_verdict": "NOT CHECKED"
+        },
+        {
+          "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+          "reason": "Widget landing page \u2014 already PASS but verify",
+          "gsc_verdict": "PASS"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+          "reason": "Strongest decision page \u2014 already PASS, refresh",
+          "gsc_verdict": "PASS"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+          "reason": "Strong decision page \u2014 already PASS, refresh",
+          "gsc_verdict": "PASS"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
+          "reason": "Strong decision page \u2014 already PASS, refresh",
+          "gsc_verdict": "PASS"
+        }
+      ]
+    },
+    {
+      "priority": "P2 \u2014 MEDIUM (submit if P0/P1 done, ~5-8 more)",
+      "pages": [
+        {
+          "url": "https://www.qfinhub.com/decision/fixed-vs-adjustable-rate-mortgage",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/15-vs-30-year-mortgage",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/buy-vs-rent",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/pay-off-mortgage-early-or-invest",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/how-much-down-payment",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/should-i-buy-mortgage-points",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/rent-vs-buy-calculator",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/is-now-a-good-time-to-buy-a-house",
+          "reason": "Decision page awaiting crawl (NEUTRAL, never crawled)",
+          "gsc_verdict": "NEUTRAL"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+          "reason": "Decision page \u2014 PASS but low-priority refresh",
+          "gsc_verdict": "PASS"
+        },
+        {
+          "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+          "reason": "Decision page \u2014 PASS but low-priority refresh",
+          "gsc_verdict": "PASS"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Submit P0 first \u2014 these are the 10 core calculators that have NEVER been crawled",
+    "Only submit 10-15 URLs per day to avoid rate limiting",
+    "After submitting, wait 24-48 hours and re-inspect to verify crawl",
+    "Do NOT use Indexing API \u2014 this is manual GSC URL Inspection only",
+    "The homepage now links to all 11 core calculators \u2014 Google will discover them faster"
+  ]
+}

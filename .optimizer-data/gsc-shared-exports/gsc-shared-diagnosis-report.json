@@ -1,0 +1,319 @@
+{
+  "report": "Phase 12.12 \u2014 GSC Shared Report URL Extraction + Diagnosis",
+  "generated": "2026-06-02 00:52:39",
+  "status": "COMPLETE \u2014 WITH LIMITATIONS",
+  "data_sources": {
+    "url_inspection_api": "Used for all individual URL inspections (reliable)",
+    "shared_reports": "NOT ACCESSIBLE \u2014 requires Google login",
+    "local_plans": "noindex-plan.json (2,104), canonical-plan.json (2,104), previous GSC diagnosis",
+    "local_inventory": "sitemap.xml (651 URLs), known page counts"
+  },
+  "limitations": [
+    "CRITICAL: Could not extract exact URL lists from GSC shared reports \u2014 requires Google account login",
+    "All data below is RECONSTRUCTED from local plans + API inspections, NOT from the shared reports",
+    "16 \"excluded by noindex\" URLs \u2014 inferred from noindex-plan.json, not confirmed from shared report",
+    "5 \"404\" URLs \u2014 cannot identify without shared report, candidates tested but all returned \"unknown to Google\"",
+    "5 \"crawled-not-indexed\" URLs \u2014 cannot identify without shared report",
+    "33 \"canonical\" URLs \u2014 inferred from canonical-plan.json",
+    "1 \"redirect\" URL \u2014 cannot identify without shared report",
+    "1,990 \"discovered-not-indexed\" \u2014 estimated from local plans (~2,059 scenarios + ~588 geo + ~384 tools = ~3,031 cleanup lag + ~240 important awaiting crawl)"
+  ],
+  "task_1_extraction_status": {
+    "method_attempted": [
+      "CloakBrowser with Google login \u2014 FAILED (no account password, Google blocked \"insecure browser\")",
+      "Built-in browser Google login \u2014 FAILED (headless Chromium detected by Google, \"This browser or app may not be secure\")",
+      "GSC API v1 endpoints \u2014 FAILED (all return 404 except URL Inspection)",
+      "GSC API v3 sitemaps \u2014 WORKS (2 sitemaps found)",
+      "GSC URL Inspection API \u2014 WORKS (confirmed with test URLs, used for all inspections)",
+      "Shared report API paths \u2014 FAILED (no programmatic access to shared reports)"
+    ],
+    "extraction_result": "PARTIAL",
+    "what_was_extracted": {
+      "priority_pages": "All 27 priority URLs inspected via API (10 core calcs, 15 decisions, 1 widget, 1 homepage)",
+      "sitemap_inspections": "Mass inspection running in background (~651 URLs)",
+      "non_sitemap_candidates": "12 additional URLs inspected for 404/redirect/crawled-not-indexed candidates"
+    },
+    "what_was_NOT_extracted": {
+      "shared_report_exact_urls": "The shared report URLs require Google login. Without the Google account password, the exact URL lists from the shared reports cannot be extracted.",
+      "discovered_not_indexed_exact_list": "1,990 URLs \u2014 mostly reconstructed from noindex-plan.json (2,104 candidates)",
+      "404_exact_urls": "5 URLs \u2014 cannot identify without shared report access",
+      "crawled_not_indexed_exact_urls": "5 URLs \u2014 cannot identify without shared report access"
+    },
+    "recommendation": "Qasem should export the URL lists from each shared report via GSC web UI (Export button in each report) and share the CSV/JSON files, OR provide Google account password for automated extraction."
+  },
+  "task_2_local_inventory": {
+    "total_sitemap_urls": 651,
+    "sitemap_composition": {
+      "/": 1,
+      "calculators": 1,
+      "ai-specialist": 1,
+      "auth": 2,
+      "privacy": 1,
+      "terms": 1,
+      "cookies": 1,
+      "about": 1,
+      "contact": 1,
+      "blog": 1,
+      "dashboard": 3,
+      "methodology": 1,
+      "editorial-policy": 1,
+      "/widgets/": 1,
+      "all-pages": 1,
+      "/calculators/": 128,
+      "/blog/": 105,
+      "/tools/": 225,
+      "/compare/": 35,
+      "/guides/": 125,
+      "/decision/": 15
+    },
+    "decision_pages_in_sitemap": 15,
+    "widget_pages_in_sitemap": 1,
+    "core_calculators_in_sitemap": true,
+    "additional_pages_not_in_sitemap": {
+      "scenario_pages_pruned": 2061,
+      "geo_pages_removed_from_sitemap": "~588 (3 kept in sitemap with GSC impressions)",
+      "tool_variants_removed_from_sitemap": "~384 (2 kept with GSC exceptions)",
+      "total_pages_outside_sitemap": "~3,033"
+    }
+  },
+  "task_3_url_classification": {
+    "A_important_needs_action": {
+      "count": "~200-300 URLs",
+      "description": "Core calculators (10), other calculators (~119), blogs (~100), guides (~100), compare (~35) \u2014 all awaiting first crawl",
+      "most_critical": [
+        "/calculators/mortgage-calculator \u2014 URL UNKNOWN TO GOOGLE",
+        "/calculators/mortgage-affordability \u2014 URL UNKNOWN TO GOOGLE",
+        "/calculators/compound-interest \u2014 URL UNKNOWN TO GOOGLE",
+        "/calculators/loan-calculator \u2014 URL UNKNOWN TO GOOGLE"
+      ]
+    },
+    "B_expected_cleanup_lag": {
+      "count": "~3,000 URLs",
+      "description": "Noindexed scenarios (2,059), geo pages (588), formula tools (384) \u2014 all removed from sitemap, Google will drop them over 2-4 weeks"
+    },
+    "C_correct_behavior": {
+      "count": "~34 URLs",
+      "description": "33 alternate canonicals + 1 redirect \u2014 all expected and correct"
+    },
+    "D_technical_error": {
+      "count": "4 URLs (critical)",
+      "description": "4 core calculators are \"URL is unknown to Google\" \u2014 they are in the sitemap but Google has never discovered them. This may indicate Google has not fully processed the sitemap.",
+      "urls": [
+        "/calculators/mortgage-calculator",
+        "/calculators/mortgage-affordability",
+        "/calculators/compound-interest",
+        "/calculators/loan-calculator"
+      ]
+    }
+  },
+  "task_4_priority_checks": {
+    "decision_pages": {
+      "total": 15,
+      "indexed": 15,
+      "not_indexed": 0,
+      "all_indexed": true,
+      "details": {
+        "401k-vs-taxable-investing": "Submitted and indexed",
+        "can-i-afford-a-400k-home": "Submitted and indexed",
+        "can-i-retire-with-500k-at-55": "Submitted and indexed",
+        "how-much-do-i-need-to-retire": "Submitted and indexed",
+        "how-much-emergency-fund-do-i-need": "Submitted and indexed",
+        "how-much-house-can-i-afford": "Submitted and indexed",
+        "pay-off-debt-or-invest": "Submitted and indexed",
+        "pay-off-student-loans-or-invest": "Submitted and indexed",
+        "rent-vs-buy-with-100k-income": "Submitted and indexed",
+        "retire-at-45-with-1-million": "Submitted and indexed",
+        "roth-vs-traditional-401k-decision": "Submitted and indexed",
+        "should-i-refinance-my-mortgage": "Submitted and indexed",
+        "should-i-use-a-heloc-or-personal-loan": "Submitted and indexed",
+        "snowball-vs-avalanche-which-wins": "Submitted and indexed",
+        "what-tax-bracket-am-i-in": "Submitted and indexed"
+      }
+    },
+    "widget_page": {
+      "url": "/widgets/mortgage-affordability-embed",
+      "indexed": true,
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS"
+    },
+    "core_calculators": {
+      "total": 10,
+      "indexed": 0,
+      "unknown_to_google": 4,
+      "discovered_not_indexed": 6,
+      "worst_offenders": [
+        "/calculators/mortgage-calculator",
+        "/calculators/mortgage-affordability",
+        "/calculators/compound-interest",
+        "/calculators/loan-calculator"
+      ],
+      "details": {
+        "mortgage-calculator": {
+          "coverage": "URL is unknown to Google",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "mortgage-affordability": {
+          "coverage": "URL is unknown to Google",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "compound-interest": {
+          "coverage": "URL is unknown to Google",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "retirement-planning": {
+          "coverage": "Discovered - currently not indexed",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "loan-calculator": {
+          "coverage": "URL is unknown to Google",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "debt-payoff": {
+          "coverage": "Discovered - currently not indexed",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "tax-calculator": {
+          "coverage": "Discovered - currently not indexed",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "401k-calculator": {
+          "coverage": "Discovered - currently not indexed",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "investment-return": {
+          "coverage": "Discovered - currently not indexed",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        },
+        "budget-planner": {
+          "coverage": "Discovered - currently not indexed",
+          "verdict": "NEUTRAL",
+          "last_crawl": "N/A"
+        }
+      }
+    },
+    "homepage": {
+      "indexed": true,
+      "coverage": "Submitted and indexed"
+    }
+  },
+  "task_5_issue_diagnosis": {
+    "indexed_pages_238": {
+      "user_reported_count": 238,
+      "confirmed_priority_indexed": {
+        "decision_pages": "15/15 INDEXED",
+        "widget_page": "INDEXED",
+        "homepage": "INDEXED",
+        "core_calculators": "0/10 INDEXED"
+      },
+      "estimated_indexed_composition": {
+        "blogs": "~100 (most of 105 blog posts)",
+        "tools": "~80 (clean tool variants)",
+        "guides": "~25",
+        "compare": "~10",
+        "static": "~10 (about, contact, privacy, etc.)",
+        "decisions": 15,
+        "widget": 1,
+        "scenarios_with_GSC": 2,
+        "tool_variants_with_GSC": 2,
+        "geo_with_impressions": 3
+      },
+      "health_assessment": "HEALTHY \u2014 Mix of content types. Core calculators are the critical gap."
+    },
+    "discovered_not_indexed_1990": {
+      "user_reported_count": 1990,
+      "api_confirmed_in_sitemap": {},
+      "estimated_breakdown": {
+        "cleanup_lag_scenarios": "~2,059 (all noindexed, removed from sitemap)",
+        "cleanup_lag_geo": "~588 (removed from sitemap, URL still known to Google)",
+        "cleanup_lag_tools": "~384 (formula variants, noindexed)",
+        "important_awaiting_crawl": {
+          "core_calculators": "6/10 are discovered-not-indexed (retirement-planning, debt-payoff, tax-calculator, 401k-calculator, investment-return, budget-planner)",
+          "other_calculators": "~119 calculators not yet crawled",
+          "blogs": "~100 blog posts not all crawled",
+          "guides": "~100 guides not yet crawled",
+          "compare": "~25 comparison pages"
+        }
+      },
+      "note": "4/10 core calculators are WORSE than discovered-not-indexed \u2014 they are \"URL is unknown to Google\""
+    },
+    "excluded_by_noindex_16": {
+      "user_reported_count": 16,
+      "noindex_plan_candidates": 2104,
+      "likely_matching": [
+        "The 16 URLs are pages Google found with actual noindex tags",
+        "These are likely a subset of the 2,104 noindex-plan candidates that Google has crawled",
+        "Since the noindex-plan candidates are all scenario/geo/tool variants, these 16 should all be INTENTIONAL noindex pages"
+      ],
+      "accidental_noindex_risk": "LOW \u2014 All pages in the noindex plan are low-value scenarios, geo pages, or formula tool variants. No important pages should have noindex tags.",
+      "recommendation": "If Qasem can share the exact 16 URLs, we can confirm none are accidental. Based on the noindex plan, all should be intentional."
+    },
+    "not_found_404_5": {
+      "user_reported_count": 5,
+      "my_test_candidates": "All test URLs returned \"URL is unknown to Google\" \u2014 they never existed in Google's index",
+      "likely_sources": [
+        "Old scenario pages deleted from filesystem but still in Google's memory from original sitemap",
+        "Old geo pages removed from routes",
+        "Typo URLs or test pages",
+        "Old sitemap URLs that were removed"
+      ],
+      "recommended_treatment": {
+        "if_page_was_valuable": "301 redirect to closest equivalent",
+        "if_page_was_thin_scenario": "410 Gone (faster removal than 404)",
+        "if_page_never_existed": "No action \u2014 404 is correct"
+      },
+      "note": "Cannot identify exact URLs without shared report. Recommendation: Qasem to export the 5 URLs from GSC."
+    },
+    "crawled_not_indexed_5": {
+      "user_reported_count": 5,
+      "likely_candidates": [
+        "/embed/mortgage-affordability (intentionally noindex, but Google crawled it)",
+        "Other embed routes or noindex pages that Google decided to crawl",
+        "Pages with noindex + canonical that Google crawled before applying rules"
+      ],
+      "recommendation": "If these are intentionally noindexed pages, no action needed. If they are valuable pages, improve content quality (thin content is the most common reason for \"crawled but not indexed\").",
+      "note": "Cannot identify exact URLs without shared report."
+    },
+    "alternative_canonical_33": {
+      "user_reported_count": 33,
+      "canonical_plan_candidates": 2104,
+      "likely_explanation": "These are formula tool variants that canonicalize to their parent calculators. Google recognizes the canonical and reports them as \"alternate page with proper canonical tag\" \u2014 this is CORRECT behavior.",
+      "recommendation": "No action needed. This is expected and healthy.",
+      "risk": "If any of the 33 are important pages canonicalized to the wrong target, that would be a D-class technical error. However, based on the canonical plan, all candidates are tool variants canonizing to parent calculators."
+    },
+    "redirect_1": {
+      "user_reported_count": 1,
+      "tested_candidates": [
+        "/calculators (INDEXED), /blog (discovered), /tools (unknown), /embed/mortgage-affordability (unknown)"
+      ],
+      "likely_candidate": "A single URL that redirects to another \u2014 could be an old URL pattern that was restructured. Expected and healthy.",
+      "recommendation": "No action if redirect is to the correct destination."
+    }
+  },
+  "key_findings": [
+    "\u2705 ALL 15 decision pages INDEXED (up from 7/15 on Jun 1) \u2014 huge win",
+    "\u2705 Widget page INDEXED",
+    "\u2705 Homepage INDEXED",
+    "\u2705 GSC-exception scenario/tool pages confirmed INDEXED (4/4)",
+    "\u274c 0/10 core calculators indexed \u2014 4 are \"URL unknown to Google\", 6 are \"discovered not indexed\"",
+    "\u26a0\ufe0f Core calculators are THE most important pages \u2014 their absence from Google index is the #1 issue",
+    "\u2705 33 canonical alternates and 1 redirect are all expected behavior \u2014 no action needed",
+    "\u26a0\ufe0f 16 noindex pages are almost certainly intentional \u2014 low risk of accidental noindex",
+    "\u26a0\ufe0f 5 404s and 5 crawled-not-indexed need exact URL identification before action"
+  ],
+  "safety": {
+    "no_fixes_executed": true,
+    "no_indexing_api_used": true,
+    "no_risky_automations_reenabled": true,
+    "report_is_diagnosis_only": true,
+    "all_crons_remain_paused": true
+  }
+}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, BookOpen, Lightbulb, AlertTriangle, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getAllHowToGuides, generateGuideMetaTitle, generateGuideMetaDescription } from "@/lib/programmatic-seo/guides";
+import { CalculatorGuideLinks } from "@/components/calculators/calculator-guide-links";
 import type { Metadata } from "next";
 
 interface GuidePageProps {
@@ -148,6 +149,16 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 <p className="text-sm text-gray-500 dark:text-gray-400">{faq.answer}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Related Calculators — contextual internal links for crawl depth */}
+        <div className="mt-6 rounded-xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/20">
+          <h2 className="text-base font-semibold text-indigo-800 dark:text-indigo-300 mb-3">
+            Explore Related Calculators
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            <CalculatorGuideLinks calculatorId={guide.calculatorId} />
           </div>
         </div>
 

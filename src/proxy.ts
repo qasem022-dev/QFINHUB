@@ -5,6 +5,23 @@ const protectedPaths = ["/dashboard"];
 const authPaths = ["/auth/login", "/auth/signup"];
 
 export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // ── 410 Gone for confirmed obsolete pages (Phase 12.13) ────
+  const GONE_PATHS = new Set([
+    "/scenario/401k-50000-10pct-30yr",
+    "/calculators/refinance/las-vegas-nv",
+    "/scenario/mortgage-250k-30dp-40yr-6-5pct",
+    "/scenario/mortgage-350k-15dp-15yr-5-0pct",
+    "/calculators/refinance/phoenix-az",
+  ]);
+  if (GONE_PATHS.has(pathname)) {
+    return new NextResponse("Gone", {
+      status: 410,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
+
   let supabaseResponse = NextResponse.next({ request });
 
   const supabase = createServerClient(
@@ -32,8 +49,6 @@ export async function proxy(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const { pathname } = request.nextUrl;
-
   // ── Protect dashboard routes ──────────────────────────────
   // If not authenticated and trying to access /dashboard/*
   if (!user && protectedPaths.some((p) => pathname.startsWith(p))) {
@@ -56,7 +71,10 @@ export async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all /dashboard/* and /auth/* paths
+    // Phase 12.13: 410 Gone for obsolete scenario/geo pages
+    "/scenario/:path*",
+    "/calculators/refinance/:path*",
+    // Existing auth matchers
     "/dashboard/:path*",
     "/auth/:path*",
   ],

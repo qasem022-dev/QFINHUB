@@ -1,0 +1,115 @@
+{
+  "gsc_inspections": {
+    "/calculators/mortgage-calculator": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/mortgage-affordability": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/compound-interest": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/retirement-planning": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/loan-calculator": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/debt-payoff": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/tax-calculator": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/401k-calculator": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/investment-return": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/budget-planner": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": null,
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    }
+  },
+  "timestamp": "2026-06-02 01:48:56"
+}

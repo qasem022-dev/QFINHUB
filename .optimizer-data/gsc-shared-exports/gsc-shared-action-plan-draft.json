@@ -1,0 +1,65 @@
+{
+  "report": "Phase 12.12 \u2014 GSC Shared Action Plan Draft",
+  "generated": "2026-06-02 00:52:39",
+  "status": "DRAFT \u2014 DO NOT EXECUTE",
+  "warning": "No actions should be taken until Qasem reviews this report and provides approval.",
+  "proposed_actions": {
+    "no_action_cleanup_lag": {
+      "count": "~3,000",
+      "description": "All noindexed scenarios, geo pages, and formula tool variants \u2014 Google will naturally drop these"
+    },
+    "no_action_correct_canonical_or_redirect": {
+      "count": 34,
+      "description": "33 canonical alternates + 1 redirect \u2014 all expected behavior"
+    },
+    "internal_linking_improvement": {
+      "count": "~240 important pages",
+      "description": "Increase internal links FROM indexed pages (decision pages, blog posts) TO core calculators and other important pages",
+      "priority": [
+        "Add links from all 15 decision pages to their related calculators",
+        "Add inline contextual links from blog posts to calculators",
+        "Ensure homepage links to all 10 core calculators"
+      ]
+    },
+    "content_improvement": {
+      "count": "5 crawled-not-indexed (if valuable)",
+      "description": "If any of the 5 crawled-not-indexed pages are valuable, improve content depth, add calculations, add EEAT signals"
+    },
+    "canonical_fix": {
+      "count": "None identified",
+      "description": "No canonical issues detected. All 33 canonical alternates are expected."
+    },
+    "sitemap_fix": {
+      "count": "None identified",
+      "description": "All 651 sitemap URLs are appropriate. Core calculators are in sitemap."
+    },
+    "request_indexing_consideration": {
+      "count": 10,
+      "description": "10 core calculators need Google to crawl them. However, the GSC API Indexing endpoint is INVALID for normal pages (only for JobPosting/BroadcastEvent).",
+      "alternative": "Manual URL Inspection request in GSC web UI \u2014 Qasem can request indexing for these 10 URLs manually"
+    },
+    "sitemap_resubmission": {
+      "description": "Resubmit sitemap.xml to GSC to prompt Google to re-process it. The 4 \"URL unknown to Google\" calculators suggest Google may not have fully processed the current sitemap.",
+      "method": "GSC web UI \u2192 Sitemaps \u2192 Resubmit"
+    }
+  },
+  "priority_action_order": [
+    "1. Qasem to manually request indexing for 10 core calculators via GSC URL Inspection tool",
+    "2. Resubmit sitemap.xml in GSC",
+    "3. Improve internal linking from indexed decision pages to core calculators (code change)",
+    "4. Deploy internal linking changes to Vercel",
+    "5. Qasem to export 5 404 URLs + 5 crawled-not-indexed URLs from shared reports for investigation",
+    "6. Wait 7 days for Google to process changes and re-crawl"
+  ],
+  "safety": {
+    "no_fixes_executed": true,
+    "no_pages_noindexed": true,
+    "no_pages_canonicalized": true,
+    "no_pages_redirected": true,
+    "no_pages_deleted": true,
+    "no_indexing_api_used": true,
+    "no_risky_automations_reenabled": true,
+    "no_decision_pages_created": true,
+    "no_outreach_sent": true
+  }
+}

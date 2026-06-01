@@ -1,0 +1,303 @@
+{
+  "core_calculators": {
+    "/calculators/mortgage-calculator": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/mortgage-affordability": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/compound-interest": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/retirement-planning": {
+      "coverage": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/loan-calculator": {
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "?",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/debt-payoff": {
+      "coverage": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/tax-calculator": {
+      "coverage": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/401k-calculator": {
+      "coverage": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/investment-return": {
+      "coverage": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    },
+    "/calculators/budget-planner": {
+      "coverage": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "N/A",
+      "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": ""
+    }
+  },
+  "decision_pages": {
+    "/decision/401k-vs-taxable-investing": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T19:42:14Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "user_canonical": "https://www.qfinhub.com/decision/401k-vs-taxable-investing"
+    },
+    "/decision/can-i-afford-a-400k-home": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T20:10:23Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+      "user_canonical": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home"
+    },
+    "/decision/can-i-retire-with-500k-at-55": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:04:26Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
+      "user_canonical": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55"
+    },
+    "/decision/how-much-do-i-need-to-retire": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:03:53Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+      "user_canonical": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire"
+    },
+    "/decision/how-much-emergency-fund-do-i-need": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:17:37Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+      "user_canonical": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need"
+    },
+    "/decision/how-much-house-can-i-afford": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:02:38Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "user_canonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford"
+    },
+    "/decision/pay-off-debt-or-invest": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T19:43:18Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "user_canonical": "https://www.qfinhub.com/decision/pay-off-debt-or-invest"
+    },
+    "/decision/pay-off-student-loans-or-invest": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:04:23Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "user_canonical": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest"
+    },
+    "/decision/rent-vs-buy-with-100k-income": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T19:37:52Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "user_canonical": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income"
+    },
+    "/decision/retire-at-45-with-1-million": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T19:38:59Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+      "user_canonical": "https://www.qfinhub.com/decision/retire-at-45-with-1-million"
+    },
+    "/decision/roth-vs-traditional-401k-decision": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:15:38Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "user_canonical": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision"
+    },
+    "/decision/should-i-refinance-my-mortgage": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:02:36Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "user_canonical": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage"
+    },
+    "/decision/should-i-use-a-heloc-or-personal-loan": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:04:20Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan",
+      "user_canonical": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan"
+    },
+    "/decision/snowball-vs-avalanche-which-wins": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:02:41Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+      "user_canonical": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins"
+    },
+    "/decision/what-tax-bracket-am-i-in": {
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:15:42Z",
+      "crawled_as": "MOBILE",
+      "robots": "ALLOWED",
+      "page_fetch": "SUCCESSFUL",
+      "indexing": "INDEXING_ALLOWED",
+      "google_canonical": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "user_canonical": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in"
+    }
+  },
+  "widget": {
+    "coverage": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-05-30T23:42:39Z",
+    "crawled_as": "MOBILE",
+    "robots": "ALLOWED",
+    "page_fetch": "SUCCESSFUL",
+    "indexing": "INDEXING_ALLOWED",
+    "google_canonical": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+    "user_canonical": "https://www.qfinhub.com/widgets/mortgage-affordability-embed"
+  },
+  "homepage": {
+    "coverage": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-05-29T15:48:08Z",
+    "crawled_as": "MOBILE",
+    "robots": "ALLOWED",
+    "page_fetch": "SUCCESSFUL",
+    "indexing": "INDEXING_ALLOWED",
+    "google_canonical": "https://www.qfinhub.com/",
+    "user_canonical": "https://www.qfinhub.com/"
+  }
+}
