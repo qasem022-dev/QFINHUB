@@ -1,0 +1,96 @@
+{
+  "title": "Manual GSC Indexing Request Log \u2014 Phase 12.14",
+  "created": "2026-06-02T15:00:00+03:00",
+  "requested_by": "Qasem Mohammed (manual GSC UI)",
+  "total_requested": 10,
+  "expected_wait": "48 hours minimum before re-check",
+  "next_check": "2026-06-04T15:00:00+03:00",
+  "status_before_request": {
+    "discovered_not_indexed": [
+      "mortgage-calculator",
+      "mortgage-affordability",
+      "compound-interest",
+      "debt-payoff",
+      "401k-calculator",
+      "investment-return"
+    ],
+    "unknown_to_google": [
+      "retirement-planning",
+      "loan-calculator",
+      "tax-calculator",
+      "budget-planner"
+    ]
+  },
+  "urls": [
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "slug": "mortgage-calculator",
+      "prev_status": "Discovered - not indexed",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "slug": "mortgage-affordability",
+      "prev_status": "Discovered - not indexed",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "slug": "compound-interest",
+      "prev_status": "Discovered - not indexed",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/retirement-planning",
+      "slug": "retirement-planning",
+      "prev_status": "Unknown to Google",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "slug": "loan-calculator",
+      "prev_status": "Unknown to Google",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-payoff",
+      "slug": "debt-payoff",
+      "prev_status": "Discovered - not indexed",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "slug": "tax-calculator",
+      "prev_status": "Unknown to Google",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/401k-calculator",
+      "slug": "401k-calculator",
+      "prev_status": "Discovered - not indexed",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "slug": "investment-return",
+      "prev_status": "Discovered - not indexed",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/budget-planner",
+      "slug": "budget-planner",
+      "prev_status": "Unknown to Google",
+      "request_date": "2026-06-02T15:00:00+03:00",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    }
+  ]
+}

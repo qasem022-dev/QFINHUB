@@ -1,0 +1,45 @@
+{
+  "title": "Daily Growth Action Report",
+  "generated": "2026-06-02T16:00:00",
+  "phase": "13 \u2014 Day 0 (setup)",
+  "metrics": {
+    "impressions": {
+      "today": 0,
+      "yesterday": 0,
+      "change": 0,
+      "trend": "baseline_being_established"
+    },
+    "clicks": {
+      "today": 0,
+      "yesterday": 0,
+      "change": 0
+    },
+    "ctr": 0.0,
+    "avg_position": 0,
+    "pages_indexed": 189
+  },
+  "actions_today": {
+    "titles_metas_changed": 0,
+    "internal_links_added": 0,
+    "positions_improved": 0,
+    "ctr_rescues_applied": 0,
+    "pinterest_pins_posted": 0,
+    "pinterest_outbound_clicks": 0,
+    "core_calculators_status": "awaiting Google crawl (manual request submitted Jun 2)",
+    "indexing_monitor_updated": true
+  },
+  "tomorrow_plan": [
+    "Run GSC URL Inspection on 10 core calculators (48h elapsed)",
+    "Apply top 3 CTR rescue titles/metas",
+    "Apply top 2 position boost improvements",
+    "Generate first 5 Pinterest V2 pins",
+    "Check homepage for calculator link improvements"
+  ],
+  "blockers": [
+    "Core calculators not yet crawled \u2014 all improvements depend on Google picking up pages",
+    "GSC Search Analytics API returns 404 \u2014 cannot get query-level data programmatically",
+    "Google blocks headless browser login \u2014 cannot automate GSC 'Request indexing'",
+    "0 backlinks \u2014 domain authority effectively zero for CTR purposes",
+    "Vercel Analytics shows 0 visitors \u2014 confirming no organic traffic yet"
+  ]
+}

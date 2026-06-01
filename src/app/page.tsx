@@ -556,6 +556,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Smart Financial Decisions Section ── */}
+      <section className="bg-white px-4 py-16 dark:bg-surface-dark">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
+              Make a Smart Financial Decision
+            </h2>
+            <p className="mx-auto max-w-xl text-gray-500 dark:text-gray-400">
+              Answer tough money questions with data — not guesswork. Free interactive guides with calculated results.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { title: "Can I Afford a $400K Home?", slug: "can-i-afford-a-400k-home", desc: "Break down the monthly cost including taxes, insurance, and PMI", icon: "🏠" },
+              { title: "Rent vs Buy on $100K Income", slug: "rent-vs-buy-with-100k-income", desc: "See which option builds more wealth over 5, 10, and 30 years", icon: "⚖️" },
+              { title: "How Much Do I Need to Retire?", slug: "how-much-do-i-need-to-retire", desc: "Calculate your retirement number based on spending and lifestyle", icon: "🏖️" },
+              { title: "Pay Off Debt or Invest?", slug: "pay-off-debt-or-invest", desc: "Compare guaranteed savings vs potential market returns", icon: "📊" },
+              { title: "Should I Refinance My Mortgage?", slug: "should-i-refinance-my-mortgage", desc: "Calculate break-even point and total savings from refinancing", icon: "🔄" },
+              { title: "401(k) vs Taxable Investing", slug: "401k-vs-taxable-investing", desc: "See tax-advantaged vs flexible investing side by side", icon: "🏦" },
+            ].map((d) => (
+              <Link
+                key={d.slug}
+                href={`/decision/${d.slug}`}
+                prefetch={true}
+                className="group flex flex-col gap-2 p-5 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-950/20 hover:border-emerald-400 dark:hover:border-emerald-600 hover:shadow-md hover:bg-white dark:hover:bg-emerald-950/30 transition-all duration-150"
+              >
+                <span className="text-2xl">{d.icon}</span>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+                  {d.title}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+                  {d.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
+              <Link href="/decision/how-much-do-i-need-to-retire" prefetch={true}>
+                Explore All Decision Guides <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA Section ── */}
       <section className="bg-gradient-to-r from-primary-900 via-primary-800 to-primary-950 px-4 py-20">
         <div className="mx-auto max-w-3xl text-center">

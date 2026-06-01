@@ -1,0 +1,49 @@
+{
+  "title": "QFINHUB Daily Growth Scoreboard",
+  "generated": "2026-06-02T16:00:00",
+  "phase": "13 \u2014 Fast Growth Acceleration",
+  "today": {
+    "date": "2026-06-02",
+    "impressions": 128,
+    "clicks": 0,
+    "ctr": 0.0,
+    "avg_position": 63.1,
+    "pages_indexed": 189,
+    "vercel_visitors": 0
+  },
+  "periods": {
+    "yesterday": {
+      "impressions": 29,
+      "clicks": 0,
+      "ctr": 0.0,
+      "avg_position": 58.1
+    },
+    "last_3_days": {
+      "impressions": 38,
+      "clicks": 0,
+      "ctr": 0.0,
+      "avg_position": 55.5
+    },
+    "last_7_days": {
+      "impressions": 51,
+      "clicks": 0,
+      "ctr": 0.0,
+      "avg_position": 63.7
+    },
+    "last_14_days": {
+      "impressions": 128,
+      "clicks": 0,
+      "ctr": 0.0,
+      "avg_position": 63.1
+    }
+  },
+  "top_pages_by_impressions": [],
+  "top_queries_by_impressions": [],
+  "pages_zero_clicks": [],
+  "pages_position_8_to_30": [],
+  "pages_newly_indexed": [],
+  "pages_lost_impressions": [],
+  "pages_improved": [],
+  "pages_declined": [],
+  "daily_log": []
+}

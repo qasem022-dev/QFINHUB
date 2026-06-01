@@ -1,0 +1,87 @@
+{
+  "title": "QFINHUB Indexing Growth Tracker \u2014 Phase 13",
+  "created": "2026-06-02T15:00:00+03:00",
+  "phase": "13 \u2014 GSC Growth Engine",
+  "baseline_snapshot": "2026-06-02T03:00:00",
+  "metrics": {
+    "pages_indexed_gsc": 189,
+    "pages_with_impressions": 24,
+    "pages_not_indexed": 3230,
+    "core_calculators_stuck": 10,
+    "decision_pages_indexed": 7,
+    "decision_pages_awaiting": 8,
+    "widget_indexed": 1,
+    "total_sitemap_urls": 649
+  },
+  "tracked_categories": {
+    "core_calculators": {
+      "description": "10 P0 calculators \u2014 hand-requested indexing Jun 2",
+      "urls": [
+        "/calculators/mortgage-calculator",
+        "/calculators/mortgage-affordability",
+        "/calculators/compound-interest",
+        "/calculators/retirement-planning",
+        "/calculators/loan-calculator",
+        "/calculators/debt-payoff",
+        "/calculators/tax-calculator",
+        "/calculators/401k-calculator",
+        "/calculators/investment-return",
+        "/calculators/budget-planner"
+      ],
+      "baseline_status": "all NEUTRAL (6 discovered-not-indexed, 4 unknown-to-google)",
+      "goal": "all 10 indexed",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    "decision_pages": {
+      "description": "15 decision pages \u2014 7 indexed, 8 awaiting crawl",
+      "indexed": [
+        "can-i-afford-a-400k-home",
+        "pay-off-debt-or-invest",
+        "retire-at-45-with-1-million",
+        "rent-vs-buy-with-100k-income",
+        "401k-vs-taxable-investing",
+        "how-much-house-can-i-afford",
+        "should-i-refinance-my-mortgage"
+      ],
+      "awaiting": [
+        "snowball-vs-avalanche-which-wins",
+        "how-much-do-i-need-to-retire",
+        "roth-vs-traditional-401k-decision",
+        "how-much-emergency-fund-do-i-need",
+        "can-i-retire-with-500k-at-55",
+        "what-tax-bracket-am-i-in",
+        "pay-off-student-loans-or-invest",
+        "should-i-use-a-heloc-or-personal-loan"
+      ],
+      "goal": "all 15 indexed",
+      "next_check": "2026-06-04T15:00:00+03:00"
+    },
+    "widget": {
+      "description": "Mortgage affordability embed widget",
+      "indexed": true,
+      "goal": "maintain indexed status + earn backlinks"
+    }
+  },
+  "checkpoints": [
+    {
+      "date": "2026-06-02T15:00:00+03:00",
+      "description": "Phase 12.14 complete \u2014 10 core calculators hand-requested indexing via GSC UI",
+      "actions": [
+        "Manual GSC Request Indexing clicked for all 10",
+        "410 Gone verified for 5 dead URLs",
+        "Social Security guide links fixed",
+        "Decision links added to guide pages"
+      ],
+      "indexed_count": 189,
+      "core_calcs_indexed": 0,
+      "core_calcs_inspected": 10,
+      "waiting": "48 hours minimum before re-check"
+    }
+  ],
+  "recommended_checks": [
+    "Every 48h: Inspect core calculators via GSC API",
+    "Every 48h: Check decision pages crawl status",
+    "Weekly: Check total indexed count in GSC Indexing report",
+    "Weekly: Run growth optimizer for impressions/CTR trend"
+  ]
+}

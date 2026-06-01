@@ -1,0 +1,123 @@
+{
+  "title": "Pinterest V2 Content Calendar",
+  "generated": "2026-06-02T16:00:00",
+  "rules": {
+    "pins_per_day": 5,
+    "quality_over_quantity": true,
+    "utm_tracking": true,
+    "pin_sizes": "1000x1500 (standard) or 1080x1920 (tall)",
+    "design_rules": [
+      "Large readable headline (48px+ font)",
+      "High contrast background/text",
+      "One clear idea per pin",
+      "2-4 bullets max",
+      "Small QFINHUB branding (bottom corner)",
+      "Clear CTA: 'Calculate yours free', 'Try the free calculator', 'Compare your numbers'",
+      "No clutter, no tiny text, no ugly screenshots, no generic stock photos"
+    ]
+  },
+  "pin_types": {
+    "answer": {
+      "description": "Direct answer to a financial question",
+      "example": "How much house can you afford on $100K income? \u2192 $300K-$400K"
+    },
+    "comparison": {
+      "description": "Side-by-side financial comparison",
+      "example": "Debt Snowball vs Avalanche: Which saves $2,347 more?"
+    },
+    "checklist": {
+      "description": "Actionable checklist",
+      "example": "7 numbers to check before buying a home in 2026"
+    },
+    "mistake": {
+      "description": "Common mistakes to avoid",
+      "example": "5 mortgage mistakes that make a home $50K more expensive"
+    },
+    "calculator_result": {
+      "description": "Show example calculator output",
+      "example": "$400K home at 6.5% = $2,528/month. Calculate yours \u2192"
+    }
+  },
+  "first_10_pins": [
+    {
+      "day": 1,
+      "type": "answer",
+      "title": "How Much House Can You Afford on $100K Income?",
+      "subtitle": "Typically $300K-$400K depending on down payment",
+      "cta": "Calculate your exact number \u2192",
+      "url": "https://www.qfinhub.com/calculators/mortgage-affordability?utm_source=pinterest&utm_medium=social&utm_campaign=v2_answer_1"
+    },
+    {
+      "day": 1,
+      "type": "comparison",
+      "title": "Debt Snowball vs Avalanche: Which Saves More?",
+      "subtitle": "Avalanche saves $2,347 more on a $30K debt. But snowball wins psychologically.",
+      "cta": "Compare both methods free \u2192",
+      "url": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins?utm_source=pinterest&utm_medium=social&utm_campaign=v2_compare_1"
+    },
+    {
+      "day": 1,
+      "type": "checklist",
+      "title": "7 Numbers to Check Before Buying a Home",
+      "subtitle": "1. Credit score 2. DTI ratio 3. Down payment 4. Emergency fund 5. Interest rate 6. Property tax 7. Insurance",
+      "cta": "Run all 7 calculations free \u2192",
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator?utm_source=pinterest&utm_medium=social&utm_campaign=v2_checklist_1"
+    },
+    {
+      "day": 1,
+      "type": "mistake",
+      "title": "5 Mortgage Mistakes That Cost $50K+",
+      "subtitle": "1. Skipping rate shopping 2. Ignoring PMI 3. Not checking credit 4. Maxing budget 5. Forgetting closing costs",
+      "cta": "Avoid these \u2014 use our free calculator \u2192",
+      "url": "https://www.qfinhub.com/calculators/mortgage-affordability?utm_source=pinterest&utm_medium=social&utm_campaign=v2_mistake_1"
+    },
+    {
+      "day": 1,
+      "type": "calculator_result",
+      "title": "$400K Home at 6.5% = $2,528/Month",
+      "subtitle": "That's $910,080 over 30 years. A 1% rate drop saves $92,000.",
+      "cta": "Calculate your payment \u2192",
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator?utm_source=pinterest&utm_medium=social&utm_campaign=v2_result_1"
+    },
+    {
+      "day": 2,
+      "type": "answer",
+      "title": "Can You Retire at 55 with $500K?",
+      "subtitle": "With 4% withdrawal: $1,667/month. With part-time work: $3,000+/month.",
+      "cta": "Calculate your retirement number \u2192",
+      "url": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55?utm_source=pinterest&utm_medium=social&utm_campaign=v2_answer_2"
+    },
+    {
+      "day": 2,
+      "type": "calculator_result",
+      "title": "$20K Loan at 8% for 5 Years = $405/Month",
+      "subtitle": "Total cost: $24,332. Payoff in 3 years instead? \u2192 $627/month, save $1,759.",
+      "cta": "Try different amounts \u2192",
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment?utm_source=pinterest&utm_medium=social&utm_campaign=v2_result_2"
+    },
+    {
+      "day": 2,
+      "type": "comparison",
+      "title": "401(k) vs Roth IRA: Which Grows More?",
+      "subtitle": "$500/month \u00d7 30 years: 401(k) = $611K pre-tax | Roth IRA = $509K tax-free",
+      "cta": "Compare your options \u2192",
+      "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision?utm_source=pinterest&utm_medium=social&utm_campaign=v2_compare_2"
+    },
+    {
+      "day": 2,
+      "type": "checklist",
+      "title": "6 Numbers That Predict Your Financial Future",
+      "subtitle": "1. Net worth 2. Savings rate 3. Debt-to-income 4. Credit score 5. Emergency fund months 6. Retirement number",
+      "cta": "Calculate all 6 free \u2192",
+      "url": "https://www.qfinhub.com/calculators/net-worth?utm_source=pinterest&utm_medium=social&utm_campaign=v2_checklist_2"
+    },
+    {
+      "day": 2,
+      "type": "mistake",
+      "title": "4 Tax Mistakes Costing You Thousands",
+      "subtitle": "1. Wrong W-4 2. Missing deductions 3. Not using tax-advantaged accounts 4. Underpaying estimated tax",
+      "cta": "Estimate your 2026 taxes free \u2192",
+      "url": "https://www.qfinhub.com/calculators/tax-calculator?utm_source=pinterest&utm_medium=social&utm_campaign=v2_mistake_2"
+    }
+  ]
+}

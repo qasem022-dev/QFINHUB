@@ -1,0 +1,58 @@
+{
+  "title": "Pinterest V2 Quality Gate",
+  "generated": "2026-06-02T16:00:00",
+  "checks": {
+    "must_pass_all": [
+      "Title is a complete, compelling sentence or question (not just 'Mortgage Calculator')",
+      "Title is readable at small size (max 60 chars for headline, max 100 chars total)",
+      "One clear idea per pin \u2014 no information overload",
+      "CTA is specific and actionable (not just 'Click here')",
+      "URL includes UTM tracking (utm_source=pinterest, utm_medium=social, utm_campaign=v2_<type>_<n>)",
+      "Destination URL is correct and returns 200 (not 404/410/noindexed)",
+      "Design: high contrast, large fonts (48px+ headline), 2-4 bullets max",
+      "QFINHUB branding is visible but small (bottom corner, not dominating)",
+      "No misleading or clickbait claims",
+      "Pin passes the 'scroll test' \u2014 clear what it's about in 1 second"
+    ],
+    "auto_fail": [
+      "Generic stock photo or screenshot of a calculator",
+      "Destination is a noindexed page, 404, or 410",
+      "No UTM tracking on URL",
+      "Title over 100 characters",
+      "Multiple competing ideas on one pin",
+      "Tiny text (under 18px equivalent)"
+    ]
+  },
+  "template_quality_scores": {
+    "answer": {
+      "clarity": 9,
+      "actionability": 8,
+      "uniqueness": 7,
+      "overall": 8.0
+    },
+    "comparison": {
+      "clarity": 8,
+      "actionability": 9,
+      "uniqueness": 8,
+      "overall": 8.3
+    },
+    "checklist": {
+      "clarity": 9,
+      "actionability": 7,
+      "uniqueness": 7,
+      "overall": 7.7
+    },
+    "mistake": {
+      "clarity": 9,
+      "actionability": 8,
+      "uniqueness": 8,
+      "overall": 8.3
+    },
+    "calculator_result": {
+      "clarity": 10,
+      "actionability": 9,
+      "uniqueness": 7,
+      "overall": 8.7
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Pinterest V2 Performance Report",
+  "generated": "2026-06-02T16:00:00",
+  "baseline": {
+    "impressions": 350,
+    "engagements": 19,
+    "total_audience": 101,
+    "engaged_audience": 8,
+    "outbound_clicks": 1,
+    "note": "1 outbound click was manually generated. All others from organic Pinterest discovery."
+  },
+  "v2_goals": {
+    "day_7_outbound_clicks": "> 0 from non-Qasem users",
+    "day_14_outbound_clicks": "> 5 organic",
+    "day_30_impressions": "> 1,000",
+    "day_30_engaged_audience": "> 50"
+  },
+  "daily_log": [
+    {
+      "date": "2026-06-02",
+      "pins_posted": 0,
+      "pins_passed_gate": 0,
+      "outbound_clicks": 0,
+      "impressions": 0,
+      "note": "Pinterest V2 system created. Pins pending generation and posting."
+    }
+  ]
+}
