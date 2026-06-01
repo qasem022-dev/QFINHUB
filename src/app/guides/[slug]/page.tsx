@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, Lightbulb, AlertTriangle, ChevronRight } from "lucide-react";
+import { ArrowLeft, BookOpen, Lightbulb, AlertTriangle, ChevronRight, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getAllHowToGuides, generateGuideMetaTitle, generateGuideMetaDescription } from "@/lib/programmatic-seo/guides";
 import { CalculatorGuideLinks } from "@/components/calculators/calculator-guide-links";
+import { CALCULATOR_DECISION_LINKS } from "@/lib/calculator-decision-links";
 import type { Metadata } from "next";
 
 interface GuidePageProps {
@@ -161,6 +162,32 @@ export default async function GuidePage({ params }: GuidePageProps) {
             <CalculatorGuideLinks calculatorId={guide.calculatorId} />
           </div>
         </div>
+
+        {/* Related Financial Decisions */}
+        {(() => {
+          const decisions = CALCULATOR_DECISION_LINKS[guide.calculatorId];
+          if (!decisions?.length) return null;
+          return (
+            <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 dark:border-emerald-800 dark:bg-emerald-900/20">
+              <h2 className="text-base font-semibold text-emerald-800 dark:text-emerald-300 mb-3">
+                <Scale className="inline h-4 w-4 mr-1.5 -mt-0.5" />
+                Make a Smart Financial Decision
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {decisions.slice(0, 5).map((d) => (
+                  <Link
+                    key={d.slug}
+                    href={`/decision/${d.slug}`}
+                    className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm transition-colors hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50"
+                  >
+                    {d.title}
+                    <ChevronRight className="h-3 w-3 opacity-50" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Back */}
         <div className="mt-8">

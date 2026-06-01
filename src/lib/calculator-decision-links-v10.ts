@@ -85,4 +85,10 @@ export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; tit
   "savings-goal": [
     { slug: "how-much-emergency-fund-do-i-need", title: "How Much Emergency Fund?" },
   ],
+  "social-security": [
+    { slug: "how-much-do-i-need-to-retire", title: "How Much Do I Need to Retire?" },
+    { slug: "can-i-retire-with-500k-at-55", title: "Can I Retire at 55 with $500k?" },
+    { slug: "retire-at-45-with-1-million", title: "Retire at 45 With $1 Million?" },
+    { slug: "roth-vs-traditional-401k-decision", title: "Roth vs Traditional 401(k)" },
+  ],
 };

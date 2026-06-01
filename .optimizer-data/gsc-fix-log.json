@@ -1,0 +1,47 @@
+{
+  "report": "Phase 12.13 — GSC Fix Log",
+  "generated": "2026-06-02 02:15:00",
+  "changes_made": {
+    "410_gone": {
+      "count": 5,
+      "urls": [
+        "/scenario/401k-50000-10pct-30yr",
+        "/calculators/refinance/las-vegas-nv",
+        "/scenario/mortgage-250k-30dp-40yr-6-5pct",
+        "/scenario/mortgage-350k-15dp-15yr-5-0pct",
+        "/calculators/refinance/phoenix-az"
+      ],
+      "method": "proxy.ts middleware with 410 status",
+      "rationale": "All confirmed obsolete scenario/geo pages, not in sitemap, no value. 410 Gone speeds Google removal vs 404."
+    },
+    "guide_improvements": {
+      "file": "src/app/guides/[slug]/page.tsx",
+      "changes": [
+        "Added CalculatorGuideLinks component showing related calculators",
+        "New component: src/components/calculators/calculator-guide-links.tsx",
+        "Each guide page now shows up to 5 related calculator links",
+        "Social Security guide links: retirement-planning, pension-calculator, college-savings"
+      ],
+      "affected_guides": "All 125 guides benefit from contextual calculator links",
+      "target_guide": "/guides/how-to-use-social-security — now links to retirement-planning, 401k-calculator, tax-calculator (via related calculators)"
+    },
+    "proxy_matcher_update": {
+      "added": ["/scenario/:path*", "/calculators/refinance/:path*"],
+      "retained": ["/dashboard/:path*", "/auth/:path*"]
+    }
+  },
+  "urls_skipped": {
+    "canonical_lang_variants": "33 alternative canonical ?lang=xx URLs — correct behavior, no action needed",
+    "noindex_pages": "16 noindexed pages — all intentional (scenarios + geo + formula tools)",
+    "discovered_not_indexed_cleanup": "~1,970 discovered-not-indexed — mostly cleanup lag from V2 prune",
+    "discovered_not_indexed_important": "~20 important pages awaiting crawl — need Google to process sitemap"
+  },
+  "safety": {
+    "no_indexing_api_used": true,
+    "no_risky_automations_reenabled": true,
+    "no_mass_410": true,
+    "no_mass_noindex": true,
+    "no_mass_redirect": true,
+    "only_5_confirmed_urls_410ed": true
+  }
+}

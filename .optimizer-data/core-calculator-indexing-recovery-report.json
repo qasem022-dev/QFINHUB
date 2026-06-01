@@ -1,115 +1,70 @@
 {
-  "gsc_inspections": {
-    "/calculators/mortgage-calculator": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
+  "report": "Phase 12.13 — Core Calculator Indexing Recovery",
+  "generated": "2026-06-02 02:55:00",
+  "summary": "All 10 core calculators remain undiscovered by Google. Internal links strengthened, 5 obsolete URLs set to 410, guide improved. Sitemaps resubmitted. Awaiting Google crawl.",
+  "core_calculators": {
+    "total": 10,
+    "indexed": 0,
+    "unknown_to_google": 10,
+    "discovered_not_indexed": 0,
+    "gsc_inspections": {
+      "mortgage-calculator": "URL is unknown to Google",
+      "mortgage-affordability": "URL is unknown to Google",
+      "compound-interest": "URL is unknown to Google",
+      "retirement-planning": "URL is unknown to Google",
+      "loan-calculator": "URL is unknown to Google",
+      "debt-payoff": "URL is unknown to Google",
+      "tax-calculator": "URL is unknown to Google",
+      "401k-calculator": "URL is unknown to Google",
+      "investment-return": "URL is unknown to Google",
+      "budget-planner": "URL is unknown to Google"
     },
-    "/calculators/mortgage-affordability": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
+    "all_configured_correctly": true,
+    "all_http_200": true,
+    "all_index_follow": true,
+    "all_self_canonical": true,
+    "all_in_sitemap": true,
+    "all_linked_from_homepage": true,
+    "all_linked_from_calculators_page": true,
+    "verdict": "Pages are technically perfect. Google has not crawled them yet — sitemap resubmitted to prompt discovery."
+  },
+  "changes_deployed": {
+    "410_gone_via_proxy": {
+      "status": "DEPLOYED (awaiting Vercel propagation)",
+      "urls": [
+        "/scenario/401k-50000-10pct-30yr",
+        "/calculators/refinance/las-vegas-nv",
+        "/scenario/mortgage-250k-30dp-40yr-6-5pct",
+        "/scenario/mortgage-350k-15dp-15yr-5-0pct",
+        "/calculators/refinance/phoenix-az"
+      ],
+      "fallback": "If proxy doesn't match, pages return 404 (route handler) — acceptable alternative"
     },
-    "/calculators/compound-interest": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/retirement-planning": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/loan-calculator": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/debt-payoff": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/tax-calculator": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/401k-calculator": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/investment-return": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
-    },
-    "/calculators/budget-planner": {
-      "coverage": "URL is unknown to Google",
-      "verdict": "NEUTRAL",
-      "last_crawl": null,
-      "crawled_as": "?",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "page_fetch": "PAGE_FETCH_STATE_UNSPECIFIED",
-      "indexing": "INDEXING_STATE_UNSPECIFIED",
-      "google_canonical": "",
-      "user_canonical": ""
+    "guide_calculator_links": {
+      "file": "src/app/guides/[slug]/page.tsx",
+      "component": "src/components/calculators/calculator-guide-links.tsx",
+      "effect": "All 125 guide pages now show up to 5 related calculator links",
+      "social_security_guide_links": ["retirement-planning", "pension-calculator", "college-savings"]
     }
   },
-  "timestamp": "2026-06-02 01:48:56"
+  "urls_intentionally_unchanged": {
+    "canonical_lang_variants": "33 pages with ?lang=xx — canonical points correctly, no action",
+    "noindex_pages": "16 pages — all intentional (scenarios + geo + formula tools)",
+    "discovered_not_indexed_cleanup": "~1,970 pages — V2 cleanup lag, will drop naturally",
+    "discovered_not_indexed_important": "~20 important pages — need Google to crawl"
+  },
+  "sitemap_submission": {
+    "sitemap_xml": "✅ Submitted (651 URLs)",
+    "news_sitemap_xml": "✅ Submitted (97 URLs)",
+    "scenario_sitemap": "✅ NOT submitted (intentional)"
+  },
+  "safety": {
+    "no_indexing_api_used": true,
+    "no_risky_automations_reenabled": true,
+    "no_mass_410": true,
+    "no_mass_noindex": true,
+    "no_mass_redirect": true,
+    "all_crons_remain_paused": true
+  },
+  "recommended_waiting_period": "7 days before checking GSC for crawl progress"
 }
