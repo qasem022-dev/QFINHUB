@@ -1,28 +1,46 @@
 {
-  "title": "Pinterest V2 Performance Report",
-  "generated": "2026-06-02T16:00:00",
+  "title": "QFINHUB Pinterest Performance Report",
+  "generated": "2026-06-02T01:39:46Z",
+  "phase": "13B.8 \u2014 Test Pins Posted",
   "baseline": {
-    "impressions": 350,
-    "engagements": 19,
-    "total_audience": 101,
-    "engaged_audience": 8,
-    "outbound_clicks": 1,
-    "note": "1 outbound click was manually generated. All others from organic Pinterest discovery."
+    "impressions_30d": 350,
+    "engagements_30d": 19,
+    "outbound_clicks_30d": 1,
+    "note": "Pre-V4 baseline. Old pins were generic Canva-style designs."
   },
-  "v2_goals": {
-    "day_7_outbound_clicks": "> 0 from non-Qasem users",
-    "day_14_outbound_clicks": "> 5 organic",
-    "day_30_impressions": "> 1,000",
-    "day_30_engaged_audience": "> 50"
+  "test_pins": {
+    "posted": 2,
+    "date": "2026-06-02T01:39:46Z",
+    "pin1_slug": "100k_income_home_affordability",
+    "pin2_slug": "debt_snowball_vs_avalanche",
+    "expected_impressions": "Monitor after 48h",
+    "expected_clicks": "Monitor after 48h",
+    "next_check": "2026-06-04T15:00:00+03:00"
   },
-  "daily_log": [
-    {
-      "date": "2026-06-02",
-      "pins_posted": 0,
-      "pins_passed_gate": 0,
-      "outbound_clicks": 0,
-      "impressions": 0,
-      "note": "Pinterest V2 system created. Pins pending generation and posting."
-    }
-  ]
+  "crons": {
+    "posting_crons": "ALL PAUSED",
+    "generation_crons": "ALL PAUSED",
+    "growth_cron": "ACTIVE (follow/save only, no posting)",
+    "note": "Only manual test pins posted via Phase 13B.8"
+  },
+  "monitor_day2": {
+    "date": "2026-06-02T01:57:10.517009+00:00",
+    "hours_since_post": "~12h",
+    "status": "EARLY \u2014 wait 48h for meaningful data",
+    "pins": [
+      {
+        "slug": "100k_income_home_affordability",
+        "impressions": "unknown (too early)",
+        "saves": "unknown",
+        "clicks": "unknown"
+      },
+      {
+        "slug": "debt_snowball_vs_avalanche",
+        "impressions": "unknown (too early)",
+        "saves": "unknown",
+        "clicks": "unknown"
+      }
+    ],
+    "recommendation": "Wait until Jun 5 (48h) for performance evaluation"
+  }
 }

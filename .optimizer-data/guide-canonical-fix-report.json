@@ -1,0 +1,30 @@
+{
+  "title": "Guide Canonical Fix Report",
+  "generated": "2026-06-02T01:57:10.517009+00:00",
+  "phase": "13C.3 Day 2",
+  "total_guides": 125,
+  "fix_applied": "Added alternates.canonical + robots: index,follow to generateMetadata() in guides/[slug]/page.tsx",
+  "fix_details": {
+    "file": "src/app/guides/[slug]/page.tsx",
+    "change": "Added canonicalUrl = https://www.qfinhub.com/guides/{slug}, alternates.canonical, robots.index=true, robots.follow=true",
+    "before": "No canonical tag, no robots meta \u2014 pages served with no self-referencing canonical",
+    "after": "Every guide page now has self-referencing canonical + index,follow robots"
+  },
+  "verification_before_deploy": {
+    "status": "Code fix applied. Will verify 10 examples after Vercel deploy.",
+    "expected_canonical_format": "https://www.qfinhub.com/guides/{slug}",
+    "example_slugs": [
+      "how-to-use-retirement-income",
+      "how-to-use-mortgage-calculator",
+      "how-to-use-compound-interest",
+      "how-to-use-loan-calculator",
+      "how-to-use-debt-payoff",
+      "how-to-use-tax-calculator",
+      "how-to-use-401k-calculator",
+      "how-to-use-investment-return",
+      "how-to-use-budget-planner",
+      "how-to-use-credit-card-payoff"
+    ]
+  },
+  "verification_after_deploy": "PENDING \u2014 will check after deploy"
+}

@@ -20,9 +20,18 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const guide = getAllHowToGuides().find((g) => g.slug === slug);
   if (!guide) return { title: "Not Found" };
 
+  const canonicalUrl = `https://www.qfinhub.com/guides/${slug}`;
+
   return {
     title: generateGuideMetaTitle(guide.title),
     description: generateGuideMetaDescription(guide.title),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

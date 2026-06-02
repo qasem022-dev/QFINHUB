@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-02T01:47:31.553388+00:00",
+  "generated": "2026-06-02T01:57:10.517009+00:00",
   "matches": [
     {
       "query": "20000 loan 8 percent 5 years monthly payment",
@@ -36,6 +36,29 @@
       "current_page": "UNKNOWN",
       "better_page": "/decision/how-much-house-can-i-afford",
       "status": "UNTRACKED \u2014 decision page should rank"
+    }
+  ],
+  "day2_updates": [
+    {
+      "query": "debt snowball vs avalanche",
+      "current_page": "UNKNOWN (not tracked in GSC)",
+      "better_page": "/decision/snowball-vs-avalanche-which-wins",
+      "action": "Decision page title/meta optimized. Pinterest pin now linking to this page drives traffic.",
+      "internal_link": "Blog 'debt-snowball-vs-debt-avalanche' links to debt-payoff calculator"
+    },
+    {
+      "query": "how much house can i afford",
+      "current_page": "/tools/afford-100k-40k-6-5pct",
+      "better_page": "/decision/how-much-house-can-i-afford",
+      "action": "Strengthened afford tool title. Decision page is better long-term target.",
+      "internal_link": "Afford tool links to mortgage-affordability calculator"
+    },
+    {
+      "query": "retirement income calculator",
+      "current_page": "/guides/how-to-use-retirement-income",
+      "better_page": "/calculators/retirement-planning",
+      "action": "Guide now has 'How to Use' framing + self-canonical. Calculator page is destination.",
+      "note": "Google ranks guide for 'how to use' queries \u2014 correct match"
     }
   ]
 }

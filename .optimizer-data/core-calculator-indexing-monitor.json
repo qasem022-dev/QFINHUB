@@ -210,5 +210,102 @@
     "re_request_today": false,
     "re_request_reason": "48-hour waiting period \u2014 next check Jun 4. Do not use Indexing API.",
     "indexing_api_used": false
+  },
+  "gsc_recheck": {
+    "date": "2026-06-02T04:56:30",
+    "hours_since_request": "~24h (requested Jun 2, rechecked Jun 3)",
+    "results": [
+      {
+        "slug": "/calculators/mortgage-calculator",
+        "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:38:15Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/mortgage-calculator",
+        "user_canonical": "https://www.qfinhub.com/calculators/mortgage-calculator"
+      },
+      {
+        "slug": "/calculators/mortgage-affordability",
+        "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+        "error": "Remote end closed connection without response"
+      },
+      {
+        "slug": "/calculators/compound-interest",
+        "url": "https://www.qfinhub.com/calculators/compound-interest",
+        "error": "Remote end closed connection without response"
+      },
+      {
+        "slug": "/calculators/retirement-planning",
+        "url": "https://www.qfinhub.com/calculators/retirement-planning",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:36:13Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/retirement-planning",
+        "user_canonical": "https://www.qfinhub.com/calculators/retirement-planning"
+      },
+      {
+        "slug": "/calculators/loan-calculator",
+        "url": "https://www.qfinhub.com/calculators/loan-calculator",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:36:14Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/loan-calculator",
+        "user_canonical": "https://www.qfinhub.com/calculators/loan-calculator"
+      },
+      {
+        "slug": "/calculators/debt-payoff",
+        "url": "https://www.qfinhub.com/calculators/debt-payoff",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:44:43Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/debt-payoff",
+        "user_canonical": "https://www.qfinhub.com/calculators/debt-payoff"
+      },
+      {
+        "slug": "/calculators/tax-calculator",
+        "url": "https://www.qfinhub.com/calculators/tax-calculator",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:38:15Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/tax-calculator",
+        "user_canonical": "https://www.qfinhub.com/calculators/tax-calculator"
+      },
+      {
+        "slug": "/calculators/401k-calculator",
+        "url": "https://www.qfinhub.com/calculators/401k-calculator",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:44:43Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/401k-calculator",
+        "user_canonical": "https://www.qfinhub.com/calculators/401k-calculator"
+      },
+      {
+        "slug": "/calculators/investment-return",
+        "url": "https://www.qfinhub.com/calculators/investment-return",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:50:44Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/investment-return",
+        "user_canonical": "https://www.qfinhub.com/calculators/investment-return"
+      },
+      {
+        "slug": "/calculators/budget-planner",
+        "url": "https://www.qfinhub.com/calculators/budget-planner",
+        "coverage_state": "Submitted and indexed",
+        "indexing_state": "INDEXING_ALLOWED",
+        "verdict": "PASS",
+        "last_crawl": "2026-06-01T23:38:15Z",
+        "google_canonical": "https://www.qfinhub.com/calculators/budget-planner",
+        "user_canonical": "https://www.qfinhub.com/calculators/budget-planner"
+      }
+    ],
+    "summary": "0/10 indexed"
   }
 }
