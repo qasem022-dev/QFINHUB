@@ -203,5 +203,12 @@
     "status": "requested \u2014 waiting 48h for Google processing",
     "expected_wait": "48 hours minimum"
   },
-  "updated": "2026-06-02T16:00:00"
+  "updated": "2026-06-02T01:25:36.141302+00:00",
+  "day_1_status": {
+    "manual_request_done": true,
+    "request_date": "2026-06-02T15:00:00+03:00",
+    "re_request_today": false,
+    "re_request_reason": "48-hour waiting period \u2014 next check Jun 4. Do not use Indexing API.",
+    "indexing_api_used": false
+  }
 }

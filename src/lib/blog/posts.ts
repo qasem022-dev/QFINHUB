@@ -2124,8 +2124,8 @@ The best time to inflation-proof your finances was yesterday. The second best ti
   },
   {
     slug: "20000-loan-at-8-percent-for-5-years-monthly-payment",
-    title: "$20,000 Loan at 8% for 5 Years — Exact Monthly Payment + Full Amortization Schedule",
-    description: "Need to borrow $20,000? Here's exactly what your monthly payment will be at 8% APR over 5 years. See the full payment breakdown, total interest cost, and amortization schedule.",
+    title: "$20,000 Loan at 8% for 5 Years — Monthly Payment: $405.53 (Free Calculator)",
+    description: "A $20,000 loan at 8% APR for 5 years costs $405.53/month and $4,332 in total interest. Use our free calculator to adjust amount, rate, or term and see your exact payment instantly.",
     category: "loan",
     publishedAt: new Date("2026-05-28"),
     readingTime: 8,

@@ -36,7 +36,9 @@ export function generateGuideSlug(calculatorSlug: string): string {
 
 /** Generate a search-friendly meta title for a guide page */
 export function generateGuideMetaTitle(calcTitle: string): string {
-  return `Free ${calcTitle} Guide 2026 — Calculate in 30 Seconds (No Signup)`;
+  // Strip leading "Free " to avoid double "Free Free" in titles (pitfall #33)
+  const cleanTitle = calcTitle.replace(/^Free\s+/i, "");
+  return `How to Use ${cleanTitle} — Step-by-Step Guide 2026 (Free Calculator)`;
 }
 
 /** Generate a search-friendly meta description for a guide page */

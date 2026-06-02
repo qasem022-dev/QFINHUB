@@ -1,0 +1,418 @@
+{
+  "phase": "13B.7",
+  "timestamp": "2026-06-02T04:22:32.573478",
+  "creative_director_model": "gemini-3.1-flash-lite (generateContent)",
+  "image_generation_model": "gemini-3.1-flash-image (generateContent, responseModalities=['IMAGE','TEXT'])",
+  "qa_model": "gemini-3.1-flash-lite (vision review)",
+  "imagen_comparison": "gemini-3.1-flash-image: 10/10 PASSED vs Imagen 4: 2/8 PASSED. Flash-image is the clear winner for text-heavy pins.",
+  "pin1": [
+    {
+      "variation": 1,
+      "creative_brief": {
+        "variation": 1,
+        "headline": "$100K Income",
+        "subheadline": "How Much House Can You Afford?",
+        "main_result": "$300K – $400K",
+        "supporting_points": [
+          "Estimated mortgage capacity",
+          "Based on current rates",
+          "Includes tax & insurance"
+        ],
+        "cta": "Check Your Range",
+        "visual_direction": "Minimalist architectural line art of a house silhouette in the background with a frosted glass overlay card containing the data.",
+        "layout_direction": "Centered vertical alignment, bold typography for the hero range, negative space used to draw eyes downward.",
+        "color_direction": "Deep navy background with teal accents and crisp white typography.",
+        "must_include": [
+          "QFINHUB logo",
+          "High-contrast font",
+          "Subtle geometric shapes"
+        ],
+        "must_avoid": [
+          "Stock photos",
+          "Cluttered charts",
+          "Long sentences"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v1.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "1. **TEXT_READABLE**: YES\n2. **HEADLINE_MATCH**: YES\n3. **RESULT_CORRECT**: YES\n4. **CTA_MATCH**: YES\n5. **NO_PEOPLE**: YES\n6. **NO_GIBBERISH**: YES\n7. **PREMIUM**: YES\n8. **FULL_CANVAS**: YES\n9. **NO_FAKE_UI**: YES\n10. **FOOTER**: YES\n\n**OVERALL_VERDICT**: PASS\n\n**SHORT_SUMMARY**: The image perfectly adheres to all specified requirements, featuring clean typography, accurate data, and professional branding. It effectively utilizes the vertical space to present a clear, high-quality financial graphic.",
+      "status": "selected"
+    },
+    {
+      "variation": 2,
+      "creative_brief": {
+        "variation": 2,
+        "headline": "$100K Income",
+        "subheadline": "Real Estate Purchasing Power",
+        "main_result": "$300K–$400K",
+        "supporting_points": [
+          "Your estimated limit",
+          "Instant calculation",
+          "No signup required"
+        ],
+        "cta": "Get Your Number",
+        "visual_direction": "Abstract isometric 3D floor plan elements in a soft cream palette with bold navy text overlays.",
+        "layout_direction": "Top-heavy design with the hero number placed in the center within a soft glowing border.",
+        "color_direction": "Cream, slate gray, and muted teal.",
+        "must_include": [
+          "QFINHUB footer",
+          "Clean sans-serif fonts",
+          "Calculated range"
+        ],
+        "must_avoid": [
+          "Fake app interface",
+          "People",
+          "Generic icons"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v2.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "**QA Review:**\n\n1. **TEXT_READABLE:** YES\n2. **HEADLINE_MATCH:** YES\n3. **RESULT_CORRECT:** YES\n4. **CTA_MATCH:** YES\n5. **NO_PEOPLE:** YES\n6. **NO_GIBBERISH:** YES\n7. **PREMIUM:** YES\n8. **FULL_CANVAS:** YES\n9. **NO_FAKE_UI:** YES\n10. **FOOTER:** YES\n\n**OVERALL_VERDICT: PASS**\n\n**SHORT_SUMMARY:** The image meets all specified requirements, featuring clean typography, accurate data, and a professional aesthetic that aligns with the brand identity. The design effectively utilizes the vertical space without unnecessary clutter.",
+      "status": "selected"
+    },
+    {
+      "variation": 3,
+      "creative_brief": {
+        "variation": 3,
+        "headline": "Earning $100K?",
+        "subheadline": "Your Target Home Price",
+        "main_result": "$300K – $400K",
+        "supporting_points": [
+          "Based on 28% DTI",
+          "Current market data",
+          "Free assessment"
+        ],
+        "cta": "Calculate Now",
+        "visual_direction": "Modern, clean aesthetic using a large circular data visualization as the hero element.",
+        "layout_direction": "Vertical flow: Headline at top, Hero number in center, CTA at the bottom third.",
+        "color_direction": "Dark charcoal background, vibrant teal highlights, white text.",
+        "must_include": [
+          "QFINHUB branding",
+          "Clear CTA button",
+          "Estimated range"
+        ],
+        "must_avoid": [
+          "Stock imagery",
+          "Overcrowded text",
+          "Redundant labels"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v3.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "**QA Review:**\n\n1. **TEXT_READABLE:** YES\n2. **HEADLINE_MATCH:** YES\n3. **RESULT_CORRECT:** YES\n4. **CTA_MATCH:** YES\n5. **NO_PEOPLE:** YES\n6. **NO_GIBBERISH:** YES\n7. **PREMIUM:** YES\n8. **FULL_CANVAS:** YES\n9. **NO_FAKE_UI:** YES\n10. **FOOTER:** YES\n\n**OVERALL_VERDICT:** PASS\n\n**SHORT_SUMMARY:** The image perfectly aligns with all specified requirements, featuring clean typography, accurate data, and professional branding. It effectively utilizes the vertical canvas to present a clear, high-quality financial graphic.",
+      "status": "selected"
+    },
+    {
+      "variation": 4,
+      "creative_brief": {
+        "variation": 4,
+        "headline": "$100K Income",
+        "subheadline": "Home Buying Budget",
+        "main_result": "$300K–$400K",
+        "supporting_points": [
+          "Estimate your affordability",
+          "Banker-approved formula",
+          "Privacy-first tool"
+        ],
+        "cta": "View Your Budget",
+        "visual_direction": "Abstract architectural blueprint style. Clean lines, grid background, high-end fintech look.",
+        "layout_direction": "Asymmetrical layout with the budget range placed on a vibrant teal floating card.",
+        "color_direction": "Navy, white, and a sharp teal accent color.",
+        "must_include": [
+          "QFINHUB footer",
+          "Range clarity",
+          "Strong CTA"
+        ],
+        "must_avoid": [
+          "Fake screenshots",
+          "Complex graphs",
+          "People"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v4.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "**QA Review:**\n\n1. **TEXT_READABLE:** YES\n2. **HEADLINE_MATCH:** YES\n3. **RESULT_CORRECT:** YES\n4. **CTA_MATCH:** YES\n5. **NO_PEOPLE:** YES\n6. **NO_GIBBERISH:** YES\n7. **PREMIUM:** YES\n8. **FULL_CANVAS:** YES\n9. **NO_FAKE_UI:** YES\n10. **FOOTER:** YES\n\n**OVERALL_VERDICT:** PASS\n\n**SHORT_SUMMARY:** The image perfectly adheres to all specified content requirements and design constraints. It maintains a clean, professional aesthetic suitable for a fintech editorial style.",
+      "status": "selected"
+    },
+    {
+      "variation": 5,
+      "creative_brief": {
+        "variation": 5,
+        "headline": "What $100K Buys You",
+        "subheadline": "Mortgage Affordability Range",
+        "main_result": "$300K – $400K",
+        "supporting_points": [
+          "Instant estimate",
+          "Includes property tax",
+          "No login needed"
+        ],
+        "cta": "Calculate Yours",
+        "visual_direction": "Editorial design with high-quality typography and a single minimalist house icon.",
+        "layout_direction": "Vertical stack, keeping all text grouped in the center to optimize for Pinterest mobile feed.",
+        "color_direction": "Off-white background with navy text and deep teal call-to-action button.",
+        "must_include": [
+          "QFINHUB logo",
+          "Bold numbers",
+          "Direct CTA"
+        ],
+        "must_avoid": [
+          "Stock photos",
+          "Animated characters",
+          "Filler text"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v5.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "1. **TEXT_READABLE**: YES\n2. **HEADLINE_MATCH**: YES\n3. **RESULT_CORRECT**: YES\n4. **CTA_MATCH**: YES\n5. **NO_PEOPLE**: YES (Only a house icon is present)\n6. **NO_GIBBERISH**: YES\n7. **PREMIUM**: YES\n8. **FULL_CANVAS**: YES\n9. **NO_FAKE_UI**: YES\n10. **FOOTER**: YES\n\n**OVERALL_VERDICT**: PASS\n\n**SHORT_SUMMARY**: The image accurately reflects all required content and branding requirements. The design is clean, professional, and adheres to the specified constraints.",
+      "status": "selected"
+    }
+  ],
+  "pin2": [
+    {
+      "variation": 1,
+      "creative_brief": {
+        "variation": 1,
+        "headline": "Debt Snowball vs Avalanche",
+        "subheadline": "Which pays off faster?",
+        "main_result": "Avalanche saves $2,347 more interest",
+        "supporting_points": [
+          "Quick wins build momentum",
+          "Avalanche maximizes efficiency",
+          "Choose your path"
+        ],
+        "cta": "Compare Your Debt",
+        "visual_direction": "Minimalist split-screen layout with a sharp diagonal slash. High-contrast typography using deep navy and crisp white.",
+        "layout_direction": "Vertical orientation with the headline at the top and the 'Winner' badge anchored to the Avalanche side.",
+        "color_direction": "Deep Navy background, Mint Green accents for the winner, Slate Gray for the Snowball side.",
+        "must_include": [
+          "Winner badge on Avalanche side",
+          "Clear $2,347 savings figure",
+          "QFINHUB footer branding"
+        ],
+        "must_avoid": [
+          "Human imagery",
+          "App screenshots",
+          "Generic stock photography"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v1.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "1. **TEXT_READABLE**: YES\n2. **HEADLINE_MATCH**: YES\n3. **RESULT_CORRECT**: YES\n4. **CTA_MATCH**: YES\n5. **NO_PEOPLE**: YES\n6. **NO_GIBBERISH**: YES\n7. **PREMIUM**: YES\n8. **FULL_CANVAS**: YES\n9. **NO_FAKE_UI**: YES\n10. **FOOTER**: YES\n\n**OVERALL_VERDICT**: PASS\n\n**SHORT_SUMMARY**: The image accurately reflects all required content and branding requirements. It is well-designed, professional, and free of errors or prohibited elements.",
+      "status": "selected"
+    },
+    {
+      "variation": 2,
+      "creative_brief": {
+        "variation": 2,
+        "headline": "Debt Strategy Showdown",
+        "subheadline": "Snowball vs Avalanche",
+        "main_result": "$2,347 Interest Savings",
+        "supporting_points": [
+          "Snowball: Psychological wins",
+          "Avalanche: Mathematical advantage",
+          "The math favors Avalanche"
+        ],
+        "cta": "Compare Your Debt",
+        "visual_direction": "Editorial style with a golden 'Winner' glow surrounding the Avalanche card. Clean sans-serif typography.",
+        "layout_direction": "Stacked card design with the Avalanche card slightly overlapping and elevated for visual hierarchy.",
+        "color_direction": "Charcoal background, Gold and Emerald green highlights for the winner, cool White text.",
+        "must_include": [
+          "Clear $2,347 interest savings",
+          "QFINHUB branding",
+          "High-contrast text hierarchy"
+        ],
+        "must_avoid": [
+          "Too much text",
+          "Confusing icons",
+          "People"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v2.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "**QA Review:**\n\n1. **TEXT_READABLE:** YES\n2. **HEADLINE_MATCH:** YES\n3. **RESULT_CORRECT:** YES\n4. **CTA_MATCH:** YES\n5. **NO_PEOPLE:** YES\n6. **NO_GIBBERISH:** YES\n7. **PREMIUM:** YES\n8. **FULL_CANVAS:** YES\n9. **NO_FAKE_UI:** YES\n10. **FOOTER:** YES\n\n**OVERALL_VERDICT:** PASS\n\n**SHORT_SUMMARY:** The image accurately reflects all required content and branding requirements. The design is clean, professional, and adheres to the specified constraints.",
+      "status": "selected"
+    },
+    {
+      "variation": 3,
+      "creative_brief": {
+        "variation": 3,
+        "headline": "Debt Snowball vs Avalanche",
+        "subheadline": "The smarter choice for you",
+        "main_result": "Avalanche saves $2,347 in interest",
+        "supporting_points": [
+          "Snowball: Best for motivation",
+          "Avalanche: Best for speed",
+          "Compare both in 30 seconds"
+        ],
+        "cta": "Compare Your Debt",
+        "visual_direction": "Modern fintech layout using thin, elegant lines and a glassmorphism effect on the cards.",
+        "layout_direction": "Center-aligned vertical cards with the 'Winner' badge placed prominently in the bottom third.",
+        "color_direction": "Midnight blue to deep forest gradient background, electric teal for the saving metric.",
+        "must_include": [
+          "Clear $2,347 saving headline",
+          "QFINHUB logo",
+          "Bold CTA button"
+        ],
+        "must_avoid": [
+          "Stock photos",
+          "Cluttered background textures",
+          "Fake app UI"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v3.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "1. TEXT_READABLE: YES\n2. HEADLINE_MATCH: YES\n3. RESULT_CORRECT: YES\n4. CTA_MATCH: YES\n5. NO_PEOPLE: YES\n6. NO_GIBBERISH: YES\n7. PREMIUM: YES\n8. FULL_CANVAS: YES\n9. NO_FAKE_UI: YES\n10. FOOTER: YES\n\n**OVERALL_VERDICT: PASS**\n\n**SHORT_SUMMARY:** The image accurately reflects all required content and branding requirements. The design is clean, professional, and effectively utilizes the vertical space for a fintech-focused aesthetic.",
+      "status": "selected"
+    },
+    {
+      "variation": 4,
+      "creative_brief": {
+        "variation": 4,
+        "headline": "Snowball or Avalanche?",
+        "subheadline": "Stop wasting money on interest",
+        "main_result": "Avalanche saves $2,347",
+        "supporting_points": [
+          "Motivation vs Math",
+          "See which pays off faster",
+          "Free debt comparison tool"
+        ],
+        "cta": "Compare Your Debt",
+        "visual_direction": "Bold, punchy typography with a heavy emphasis on the dollar amount. Clean, structured geometric composition.",
+        "layout_direction": "Side-by-side comparison using a clean vertical divider line to separate the two strategies.",
+        "color_direction": "Black background, vibrant neon green text for interest savings, white for all other info.",
+        "must_include": [
+          "$2,347 saving impact",
+          "QFINHUB footer",
+          "Direct CTA"
+        ],
+        "must_avoid": [
+          "Human characters",
+          "Excessive bullet points",
+          "Blurred imagery"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v4.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "1. **TEXT_READABLE**: YES.\n2. **HEADLINE_MATCH**: YES.\n3. **RESULT_CORRECT**: YES.\n4. **CTA_MATCH**: YES.\n5. **NO_PEOPLE**: YES.\n6. **NO_GIBBERISH**: YES.\n7. **PREMIUM**: YES.\n8. **FULL_CANVAS**: YES.\n9. **NO_FAKE_UI**: YES.\n10. **FOOTER**: YES.\n\n**OVERALL_VERDICT**: PASS\n\n**SHORT_SUMMARY**: The image is clean, professional, and accurately reflects all required content elements. It effectively utilizes the vertical space to present the comparison clearly.",
+      "status": "selected"
+    },
+    {
+      "variation": 5,
+      "creative_brief": {
+        "variation": 5,
+        "headline": "Debt Strategy Comparison",
+        "subheadline": "Which pays off faster?",
+        "main_result": "Avalanche: $2,347 Interest Saved",
+        "supporting_points": [
+          "Snowball: Quick Wins",
+          "Avalanche: High Efficiency",
+          "Winner: Avalanche"
+        ],
+        "cta": "Compare Your Debt",
+        "visual_direction": "High-end editorial look. Premium typography with heavy white space to focus the eye.",
+        "layout_direction": "Top headline, middle comparison cards, bottom action block with QFINHUB branding.",
+        "color_direction": "Slate background, gold highlight on the '$2,347', clean white accents.",
+        "must_include": [
+          "Winner badge",
+          "$2,347 saving metric",
+          "QFINHUB trust badge"
+        ],
+        "must_avoid": [
+          "Stock photography",
+          "Animated elements",
+          "Long sentences"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v5.png",
+      "file_exists": true,
+      "verdict": "PASS",
+      "raw_review": "**QA Review:**\n\n1. **TEXT_READABLE:** YES\n2. **HEADLINE_MATCH:** YES\n3. **RESULT_CORRECT:** YES\n4. **CTA_MATCH:** YES\n5. **NO_PEOPLE:** YES\n6. **NO_GIBBERISH:** YES\n7. **PREMIUM:** YES\n8. **FULL_CANVAS:** YES\n9. **NO_FAKE_UI:** YES\n10. **FOOTER:** YES\n\n**OVERALL_VERDICT: PASS**\n\n**SHORT_SUMMARY:** The image accurately reflects all required content and branding elements. The design is clean, professional, and adheres to the specified requirements.",
+      "status": "selected"
+    }
+  ],
+  "pins_not_posted": true,
+  "pinterest_crons_paused": true,
+  "qa_summary": "gemini-3.1-flash-image: ALL 10/10 PASSED. Pin 1: 5/5, Pin 2: 5/5. No gibberish, no typos, no missing text, no characters. Dramatic improvement over Imagen 4 (2/8).",
+  "best_pin1": {
+    "variation": 1,
+    "path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v1.png",
+    "note": "Clean architectural house silhouette background, frosted glass card, navy+teal palette — strongest visual hierarchy"
+  },
+  "best_pin2": {
+    "variation": 1,
+    "path": "/home/admin1/qfinhub/.pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v1.png",
+    "note": "Split-screen with diagonal slash, winner badge prominent, navy+mint green — cleanest comparison layout"
+  },
+  "all_variations_passing": true,
+  "ready_for_qasem_review": true,
+  "ready_note": "All 10 passed automated QA. gemini-3.1-flash-image is the recommended model for Pinterest pins going forward."
+}

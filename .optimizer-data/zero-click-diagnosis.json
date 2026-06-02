@@ -1,83 +1,52 @@
 {
-  "title": "Zero-Click Problem Diagnosis",
-  "generated": "2026-06-02T16:00:00",
-  "summary": {
-    "impressions_14d": 128,
-    "clicks_14d": 0,
-    "ctr": 0.0,
-    "avg_position_14d": 63.1,
-    "primary_reasons": [
-      "Position too deep \u2014 avg 63.1, most queries beyond page 6",
-      "Brand trust low \u2014 5-week-old domain, no backlinks, no brand searches",
-      "Core calculators never crawled \u2014 10 main calcs stuck in discovery queue",
-      "Title/meta not optimized for click-through \u2014 generic 'Free X Calculator' titles",
-      "Google showing snippets for informational queries \u2014 user gets answer on SERP",
-      "Site has 189 indexed but only 24 with impressions \u2014 most pages invisible"
-    ]
-  },
-  "queries_with_zero_clicks": [
+  "title": "Zero-Click Diagnosis",
+  "generated": "2026-06-02T01:25:36.141302+00:00",
+  "summary": "5 pages with impressions and 0 clicks analyzed. Root causes: position depth (not yet page 1), title not matching query intent, formula-slug looking URLs. Fixes applied where indexable.",
+  "diagnoses": [
     {
       "query": "20000 loan 8 percent 5 years monthly payment",
       "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
       "position": 11,
       "impressions": 11,
-      "likely_reason": "Title doesn't include the answer ($405.53/month). Competitors may show result directly in snippet. Meta is generic.",
-      "fix": "Put exact dollar answer in title and meta. Add structured data for loan calculator."
+      "root_cause": "Title didn't include the exact answer ($405.53) \u2014 users couldn't confirm the page had their answer before clicking",
+      "fix": "Added $405.53 to title. Meta now includes exact monthly payment and total interest.",
+      "expected_impact": "Higher CTR from exact-answer match in SERP snippet"
     },
     {
-      "query": "how to use retirement income calculator",
+      "query": "retirement income calculator how to use",
       "page": "/guides/how-to-use-retirement-income",
       "position": 10,
       "impressions": 8,
-      "likely_reason": "Guide title is generic 'Free Guide 2026' \u2014 doesn't signal 'step-by-step tutorial'. Informational query may have low click intent.",
-      "fix": "Reframe title as 'Step-by-Step Guide' with practical value proposition. Add numbered steps snippet in meta."
+      "root_cause": "Title had 'Free Free' duplication (bug) and generic framing \u2014 didn't match 'how to use' query intent",
+      "fix": "Fixed double-Free bug. Changed to 'How to Use X \u2014 Step-by-Step Guide 2026' matching query intent.",
+      "expected_impact": "Better CTR from matching 'how to use' query framing"
     },
     {
-      "query": "mortgage calculator nashville tn",
-      "page": "/calculators/loan/nashville-tn",
-      "position": 10,
-      "impressions": 8,
-      "likely_reason": "Page is actually a loan calculator, not mortgage calculator \u2014 query mismatch. High position but wrong page type.",
-      "fix": "Page is indexed as loan calc \u2014 may need dedicated Nashville mortgage content. Link from mortgage-calculator hub."
-    },
-    {
-      "query": "affordability calculator 100k income",
+      "query": "mortgage affordability 100k income",
       "page": "/tools/afford-100k-40k-6-5pct",
       "position": 18,
       "impressions": 5,
-      "likely_reason": "URL is formula-looking ($100k-40k-6.5%) which appears auto-generated. Snippet shows formula not human answer.",
-      "fix": "Rewrite title and meta to be human-readable. Add concrete answer: 'You can afford ~$300K-$400K home.'"
+      "root_cause": "Title was brand-oriented ('$100k Salary...') rather than intent-matching ('how much house can I afford')",
+      "fix": "New title: 'How Much House Can I Afford on $100K Income?' directly matches query intent",
+      "expected_impact": "Moderate \u2014 position 18 is deep, title improvement helps but ranking needs to rise"
     },
     {
       "query": "philadelphia tax calculator",
       "page": "/calculators/tax/philadelphia-pa",
       "position": 12,
       "impressions": 4,
-      "likely_reason": "Good position (12), but meta doesn't include specific Philly tax rates or 2026 year \u2014 looks outdated.",
-      "fix": "Update meta with '2026 Philadelphia tax rates: 3.75% city wage tax + 3.07% PA state tax. Calculate your take-home pay.'"
+      "root_cause": "City name was buried mid-title \u2014 didn't stand out in SERP for 'philadelphia' queries",
+      "fix": "Moved 'Philadelphia, PA' to front of title. Meta now mentions local rates.",
+      "expected_impact": "Better click-through for local-intent searchers"
     },
     {
-      "query": "debt snowball vs avalanche calculator",
-      "page": "/decision/snowball-vs-avalanche-which-wins",
-      "position": 15,
-      "impressions": 3,
-      "likely_reason": "Informational comparison query \u2014 user may want explanation, not necessarily a calculator. Snippet not compelling.",
-      "fix": "Lead with result: 'Avalanche saves $X more. Snowball pays off first debt Y months faster. Try both methods free.'"
+      "query": "loan calculator 20k 5 years 8%",
+      "page": "/tools/loan-20k-5yr-8pct",
+      "position": 22,
+      "impressions": 5,
+      "root_cause": "Page is canonicalized to loan-calculator \u2014 Google may show the canonical target or the variant",
+      "fix": "Did NOT edit page (canonicalized). Improved blog post covering identical topic instead.",
+      "expected_impact": "Blog post improvement (position 11) should capture this traffic with better title"
     }
-  ],
-  "systemic_issues": [
-    "Brand authority: 0 backlinks, domain age <6 months, no brand searches = low CTR at any position",
-    "SERP feature cannibalization: Google showing answer boxes, knowledge panels, or featured snippets for finance queries",
-    "Title patterns too formulaic: 'Free X Calculator 2026 \u2014 No Signup' reads like AI-generated spam",
-    "No reviews/testimonials/social proof to build trust in search results",
-    "Core calculators not indexed = no chance to rank for high-volume 'mortgage calculator' type queries",
-    "Vercel Analytics shows 0 visitors = even test clicks aren't registering"
-  ],
-  "recommendations": [
-    "Priority 1: Get core calculators indexed (awaiting crawl from manual requests)",
-    "Priority 2: Fix top 5 zero-click pages with answer-in-title + compelling meta",
-    "Priority 3: Add social proof elements (number of calculations done, user count if available)",
-    "Priority 4: Target position 8-11 pages first \u2014 smallest gap to page 1",
-    "Priority 5: Build at least 1-2 quality backlinks to establish baseline domain authority"
   ]
 }

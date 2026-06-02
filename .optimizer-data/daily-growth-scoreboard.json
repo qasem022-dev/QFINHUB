@@ -1,7 +1,7 @@
 {
   "title": "QFINHUB Daily Growth Scoreboard",
-  "generated": "2026-06-02T16:00:00",
-  "phase": "13 \u2014 Fast Growth Acceleration",
+  "generated": "2026-06-02T01:25:36.141302+00:00",
+  "phase": "13C \u2014 Day 1 Google/GSC Growth Execution",
   "today": {
     "date": "2026-06-02",
     "impressions": 128,
@@ -9,7 +9,8 @@
     "ctr": 0.0,
     "avg_position": 63.1,
     "pages_indexed": 189,
-    "vercel_visitors": 0
+    "vercel_visitors": 0,
+    "note": "Data from Jun 2. Jun 3 data not yet available (GSC lags 2-3 days)."
   },
   "periods": {
     "yesterday": {
@@ -37,13 +38,66 @@
       "avg_position": 63.1
     }
   },
-  "top_pages_by_impressions": [],
-  "top_queries_by_impressions": [],
-  "pages_zero_clicks": [],
-  "pages_position_8_to_30": [],
+  "top_pages_by_impressions": [
+    {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 11,
+      "position": 11,
+      "clicks": 0
+    },
+    {
+      "url": "/guides/how-to-use-retirement-income",
+      "impressions": 8,
+      "position": 10,
+      "clicks": 0
+    },
+    {
+      "url": "/tools/afford-100k-40k-6-5pct",
+      "impressions": 5,
+      "position": 18,
+      "clicks": 0
+    },
+    {
+      "url": "/tools/loan-20k-5yr-8pct",
+      "impressions": 5,
+      "position": 22,
+      "clicks": 0
+    },
+    {
+      "url": "/calculators/tax/philadelphia-pa",
+      "impressions": 4,
+      "position": 12,
+      "clicks": 0
+    }
+  ],
+  "pages_zero_clicks": [
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "/guides/how-to-use-retirement-income",
+    "/tools/afford-100k-40k-6-5pct",
+    "/tools/loan-20k-5yr-8pct",
+    "/calculators/tax/philadelphia-pa"
+  ],
+  "pages_position_8_to_30": [
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (pos 11)",
+    "/guides/how-to-use-retirement-income (pos 10)",
+    "/tools/afford-100k-40k-6-5pct (pos 18)",
+    "/tools/loan-20k-5yr-8pct (pos 22)",
+    "/calculators/tax/philadelphia-pa (pos 12)"
+  ],
   "pages_newly_indexed": [],
   "pages_lost_impressions": [],
-  "pages_improved": [],
+  "pages_improved": [
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "/guides/how-to-use-retirement-income",
+    "/tools/afford-100k-40k-6-5pct",
+    "/calculators/tax/philadelphia-pa"
+  ],
   "pages_declined": [],
-  "daily_log": []
+  "daily_log": [
+    {
+      "date": "2026-06-02",
+      "phase": "13C Day 1",
+      "actions": "CTR rescue applied to 4 pages (1 skipped \u2014 canonicalized). Guide double-Free bug fixed. Geo title improved. Afford tool description fixed."
+    }
+  ]
 }

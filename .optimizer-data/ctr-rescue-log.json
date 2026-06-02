@@ -1,71 +1,59 @@
 {
   "title": "CTR Rescue Engine",
-  "generated": "2026-06-02T16:00:00",
+  "generated": "2026-06-02T01:25:36.141302+00:00",
   "rules": {
     "min_impressions": 3,
-    "max_impressions": null,
     "max_clicks": 0,
     "position_range": "1-30",
-    "daily_limit": 5,
-    "approach": "Analyze query intent \u2192 improve title/meta \u2192 add short answer \u2192 internal link"
+    "daily_limit": 5
   },
-  "candidates": [
+  "candidates": [],
+  "applied": [
+    {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "query": "20000 loan 8 percent 5 years monthly payment",
+      "old_title": "$20,000 Loan at 8% for 5 Years \u2014 Exact Monthly Payment + Full Amortization Schedule",
+      "new_title": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment: $405.53 (Free Calculator)",
+      "old_meta": "Need to borrow $20,000? Here's exactly what your monthly payment will be...",
+      "new_meta": "A $20,000 loan at 8% APR for 5 years costs $405.53/month and $4,332 in total interest. Use our free calculator...",
+      "indexable": true,
+      "reason": "Put exact monthly payment ($405.53) in title to match query intent at position 11 (near page 1)."
+    },
     {
       "url": "/guides/how-to-use-retirement-income",
       "query": "retirement income calculator how to use",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 10,
-      "diagnosis": "Title 'Free Retirement Income Guide 2026' is generic \u2014 doesn't answer query intent of 'how to calculate'",
-      "fix_title": "How to Calculate Retirement Income \u2014 Free Step-by-Step Guide 2026",
-      "fix_meta": "Learn exactly how to use a retirement income calculator: what inputs matter, how results work, and common mistakes. Free tool, instant results.",
-      "fix_content": "Add short answer block near top: 'To calculate retirement income, enter your current savings, monthly contributions, expected returns, and retirement age. The calculator projects how much monthly income you'll have.'"
+      "old_title_pattern": "Free {calcTitle} Guide 2026 \u2014 Calculate in 30 Seconds (No Signup)",
+      "new_title_pattern": "How to Use {calcTitle} \u2014 Step-by-Step Guide 2026 (Free Calculator)",
+      "indexable": true,
+      "bug_fixed": "Double 'Free Free' prefix bug (pitfall #33). Changed to 'How to Use' framing matching query intent.",
+      "canonical_fixed": false,
+      "note": "Canonical tag was missing \u2014 page still served at 200 but no self-canonical. Not fixed in this pass."
     },
     {
       "url": "/tools/afford-100k-40k-6-5pct",
       "query": "mortgage affordability 100k income",
-      "impressions": 5,
-      "clicks": 0,
-      "position": 18,
-      "diagnosis": "Title is formula-slug looking \u2014 doesn't look like a helpful page. Meta is auto-generated.",
-      "fix_title": "How Much House Can I Afford on $100K Income? \u2014 Free Calculator",
-      "fix_meta": "See exactly how much home you can afford on a $100K salary. Includes taxes, insurance, and PMI. Compare different down payments instantly.",
-      "fix_content": "Add short answer: 'On a $100K income, you can typically afford a home between $300K-$400K depending on your down payment and debt.'"
+      "old_title": "$100k Salary: How Much Mortgage Can I Afford in 2026? Free Calculator",
+      "new_title": "How Much House Can I Afford on $100K Income? \u2014 Free Calculator 2026",
+      "old_meta": "...monthly payment ($XXX)...",
+      "new_meta": "See exactly how much home you can afford on a $100K salary with $40K down at 6.5%...",
+      "indexable": true,
+      "reason": "Fixed placeholder ($XXX) in meta. Better title matching 'how much house' query intent."
     },
     {
       "url": "/calculators/tax/philadelphia-pa",
       "query": "philadelphia tax calculator",
-      "impressions": 4,
-      "clicks": 0,
-      "position": 12,
-      "diagnosis": "Geo calculator page \u2014 title works but meta may be generic. Page is one of only 3 geo pages kept indexable.",
-      "fix_title": "Philadelphia Tax Calculator 2026 \u2014 Estimate Your PA & Local Taxes",
-      "fix_meta": "Calculate your Philadelphia city wage tax, PA state income tax, and federal taxes in one free tool. Updated for 2026 rates.",
-      "fix_content": "Add Philadelphia-specific tax rate table near top: city wage tax (3.75% residents), PA flat tax (3.07%), and federal brackets."
-    },
-    {
-      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "query": "20000 loan 8 percent 5 years monthly payment",
-      "impressions": 11,
-      "clicks": 0,
-      "position": 11,
-      "diagnosis": "Position 11 \u2014 almost page 1! Title directly matches query but meta doesn't give answer.",
-      "fix_title": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment = $405.53 (Free Calculator)",
-      "fix_meta": "A $20,000 loan at 8% APR for 5 years costs $405.53/month and $4,332 in total interest. Use our free calculator to adjust loan amount, rate, or term.",
-      "fix_content": "Lead with exact answer: 'Your monthly payment is $405.53. Total interest over 5 years: $4,331.80. Try different amounts, rates, or terms below.'"
+      "old_title": "Tax Calculator for Philadelphia, PA (2026) \u2014 Free & Instant",
+      "new_title": "Philadelphia, PA Tax Calculator (2026) \u2014 Free & Instant",
+      "indexable": true,
+      "reason": "Moved city name to front for better SERP relevance. Improved meta for local tax specificity."
     },
     {
       "url": "/tools/loan-20k-5yr-8pct",
       "query": "loan calculator 20k 5 years 8%",
-      "impressions": 5,
-      "clicks": 0,
-      "position": 22,
-      "diagnosis": "Tool variant with formula slug. Needs human-friendly title and meta.",
-      "fix_title": "$20K Loan Calculator \u2014 5 Years at 8% APR (Monthly Payment Included)",
-      "fix_meta": "See your exact monthly payment for a $20,000 personal loan at 8% APR over 5 years. Adjust the amount, rate, or term and recalculate instantly.",
-      "fix_content": "Add short answer block: 'Estimated monthly payment: $405.53/month. Total cost: $24,332. Use the calculator below to change any number.'"
+      "indexable": false,
+      "canonical_target": "/calculators/loan-calculator",
+      "action": "SKIPPED \u2014 page is canonicalized to loan-calculator. Instead improved the blog post covering identical topic (/blog/20000-loan-at-8-percent-for-5-years-monthly-payment)."
     }
   ],
-  "applied": [],
   "pending": []
 }

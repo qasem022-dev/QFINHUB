@@ -1,0 +1,451 @@
+{
+  "phase": "13B.6",
+  "timestamp": "2026-06-02T04:10:42.057101",
+  "creative_director_model": "gemini-3.1-flash-lite (generateContent)",
+  "image_generation_model": "imagen-4.0-generate-001 (:predict, aspectRatio=9:16)",
+  "qa_model": "gemini-3.1-flash-lite (vision review)",
+  "overall_summary": "8 images generated via Imagen 4. Gemini QA review completed. 2/8 passed — Imagen text rendering unreliable (75% failure rate).",
+  "findings": {
+    "gemini_flash_lite_image_gen": "NOT available — returns DALL-E proxy text, not images",
+    "gemini_flash_image_native": "AVAILABLE (gemini-3.1-flash-image, field: inlineData.data) but NOT used per user directive for Imagen",
+    "imagen_4_text_reliability": "POOR — 6/8 images had garbled text, typos, missing CTA, or duplicate labels"
+  },
+  "pin1": [
+    {
+      "variation": 1,
+      "creative_brief": {
+        "variation": 1,
+        "headline": "$100K Income?",
+        "subheadline": "Your realistic home buying budget:",
+        "main_result": "$300K – $400K",
+        "supporting_points": [
+          "Based on 28% DTI",
+          "Instant calculation",
+          "No signup required"
+        ],
+        "cta": "Calculate Your Limit →",
+        "visual_direction": "Minimalist editorial aesthetic. Use a sophisticated deep navy background with crisp white typography. A subtle, elegant gold line accent separates the result from the supporting points.",
+        "layout_direction": "Vertical orientation. Headline at top, bold result in the center (large serif font), CTA at the bottom in a high-contrast button shape.",
+        "color_direction": "Deep Navy (#0A192F), Crisp White, and accents of Champagne Gold.",
+        "must_include": [
+          "Bold serif typography",
+          "High-contrast hero numbers",
+          "Trust chips"
+        ],
+        "must_avoid": [
+          "Stock imagery",
+          "Complex charts",
+          "Multiple font families"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin1-v1.png",
+      "image_exists": true,
+      "verdict": "PASS",
+      "summary": "This creative is excellent; it is clean, professional, and adheres strictly to all content and design requirements. It effectively uses high-contrast colors and clear typography to ensure readability on mobile platforms.",
+      "issues": [],
+      "raw_review": "1. **TEXT_READABLE**: YES. All text is clear, properly rendered, and free of misspellings or errors.\n2. **HEADLINE_MATCH**: YES. The headline \"$100K Income?\" matches the requirement perfectly.\n3. **RESULT_READABLE**: YES. The \"$300K – $400K\" range is the focal point and is highly legible.\n4. **CTA_READABLE**: YES. The CTA is clear and stands out well against the button background.\n5. **NO_PEOPLE**: YES. There are no people or human silhouettes present.\n6. **NO_GIBBERISH**: YES. All text is coherent and relevant to the financial topic.\n7. **PREMIUM_LOOK**: YES. The dark navy background with gold accents and clean typography gives it a professional, high-end fintech aesthetic.\n8. **FULL_CANVAS**: YES. The content is well-distributed, utilizing the vertical space effectively without feeling cluttered or empty.\n9. **NO_FAKE_UI**: YES. The design is a clean graphic and does not attempt to mimic a browser or app interface.\n10. **MOBILE_READABLE**: YES. The high contrast and large font sizes ensure it will be easily readable on mobile devices.\n\n**OVERALL_VERDICT**: PASS\n\n**SHORT_SUMMARY**: This creative is excellent; it is clean, professional, and adheres strictly to all content and design requirements. It effectively uses high-contrast colors and clear typography to ensure readability on mobile platforms.",
+      "status": "selected"
+    },
+    {
+      "variation": 2,
+      "creative_brief": {
+        "variation": 2,
+        "headline": "Earning $100K?",
+        "subheadline": "Here is exactly how much house you can afford.",
+        "main_result": "$300,000 – $400,000",
+        "supporting_points": [
+          "Updated for 2024 rates",
+          "Debt-to-income analysis",
+          "Free instant report"
+        ],
+        "cta": "Get Your Number",
+        "visual_direction": "Clean, architectural vibe. Use plenty of 'white space' (negative space) to let the numbers breathe. Incorporate a soft, architectural line drawing of a modern home outline in the background at 5% opacity.",
+        "layout_direction": "Top-aligned text hierarchy. Centered result card with a slight drop shadow for depth. CTA anchored at the bottom.",
+        "color_direction": "Soft Slate Grey, Matte Black text, and a vibrant 'Action Green' CTA button.",
+        "must_include": [
+          "Negative space",
+          "Clear price range",
+          "Mobile-first font sizing"
+        ],
+        "must_avoid": [
+          "Cluttered sidebars",
+          "Garish colors",
+          "Generic stock photography"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin1-v2.png",
+      "image_exists": true,
+      "verdict": "FAIL",
+      "summary": "The creative fails due to a significant rendering error on the main result text, where the numbers are overlapping and garbled. This makes the primary value proposition of the ad illegible and unprofessional.",
+      "issues": [],
+      "raw_review": "Here is the QA review for the provided creative:\n\n1. **TEXT_READABLE:** NO. The main result text is garbled and overlapping, making it illegible.\n2. **HEADLINE_MATCH:** YES.\n3. **RESULT_READABLE:** NO. The text \"$40,000\" is rendered with overlapping characters, creating a visual glitch.\n4. **CTA_READABLE:** YES.\n5. **NO_PEOPLE:** YES.\n6. **NO_GIBBERISH:** NO. The main result contains garbled/overlapping characters.\n7. **PREMIUM_LOOK:** NO. The rendering error makes the graphic look broken and unprofessional.\n8. **FULL_CANVAS:** YES.\n9. **NO_FAKE_UI:** YES.\n10. **MOBILE_READABLE:** NO. Due to the rendering error on the main result, it is not readable.\n\n**OVERALL_VERDICT:** FAIL\n\n**SHORT_SUMMARY:** The creative fails due to a significant rendering error on the main result text, where the numbers are overlapping and garbled. This makes the primary value proposition of the ad illegible and unprofessional.",
+      "status": "rejected"
+    },
+    {
+      "variation": 3,
+      "creative_brief": {
+        "variation": 3,
+        "headline": "Can you afford a home on $100K?",
+        "subheadline": "The quick math behind your buying power.",
+        "main_result": "$300K – $400K",
+        "supporting_points": [
+          "Free tool",
+          "No personal data needed",
+          "Instant result"
+        ],
+        "cta": "Calculate My Budget Now",
+        "visual_direction": "Premium fintech style. Use a gradient background that transitions from charcoal to dark charcoal. The focus is entirely on the typography and the hero number.",
+        "layout_direction": "Vertical stack. Headline > Subheadline > Hero Number (Extra bold) > Trust badges > Full-width CTA button.",
+        "color_direction": "Monochromatic palette (Charcoal/Slate) with a singular 'Electric Blue' accent color for the CTA.",
+        "must_include": [
+          "High-contrast typography",
+          "Punchy list of benefits",
+          "Strong, direct CTA"
+        ],
+        "must_avoid": [
+          "Too many icons",
+          "Confusing jargon",
+          "Blurred backgrounds"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin1-v3.png",
+      "image_exists": true,
+      "verdict": "FAIL",
+      "summary": "While the design aesthetic is professional and clean, the creative contains multiple spelling errors (\"buyigr\", \"Extaber\") and a significant numerical error in the main result ($40K instead of $400K), which undermines the credibility of the financial tool.",
+      "issues": [
+        {
+          "category": "TEXT_READABLE",
+          "detail": "There is a typo in the sub-headline: \"buyigr\" instead of \"buying\" and \"Extaber\" instead of \"Expected\"."
+        },
+        {
+          "category": "RESULT_READABLE",
+          "detail": "The main result is \"$300K – $40K\", which contradicts the expected \"$300K – $400K\" and appears to be a mathematical error/typo."
+        },
+        {
+          "category": "NO_GIBBERISH",
+          "detail": "As noted in question 1, there are typos (\"buyigr\", \"Extaber\") and a likely data error in the result."
+        }
+      ],
+      "raw_review": "1. **TEXT_READABLE**: NO. There is a typo in the sub-headline: \"buyigr\" instead of \"buying\" and \"Extaber\" instead of \"Expected\".\n2. **HEADLINE_MATCH**: YES.\n3. **RESULT_READABLE**: NO. The main result is \"$300K – $40K\", which contradicts the expected \"$300K – $400K\" and appears to be a mathematical error/typo.\n4. **CTA_READABLE**: YES.\n5. **NO_PEOPLE**: YES.\n6. **NO_GIBBERISH**: NO. As noted in question 1, there are typos (\"buyigr\", \"Extaber\") and a likely data error in the result.\n7. **PREMIUM_LOOK**: YES. The gradient background and clean typography look professional.\n8. **FULL_CANVAS**: YES.\n9. **NO_FAKE_UI**: YES.\n10. **MOBILE_READABLE**: YES.\n\n**OVERALL_VERDICT**: FAIL\n\n**SHORT_SUMMARY**: While the design aesthetic is professional and clean, the creative contains multiple spelling errors (\"buyigr\", \"Extaber\") and a significant numerical error in the main result ($40K instead of $400K), which undermines the credibility of the financial tool.",
+      "status": "rejected"
+    }
+  ],
+  "pin2": [
+    {
+      "variation": 1,
+      "creative_brief": {
+        "variation": 1,
+        "headline": "Debt Snowball vs. Avalanche",
+        "subheadline": "Which strategy pays off faster?",
+        "main_result": "Avalanche saves $2,347 more interest",
+        "supporting_points": [
+          "Snowball: Quick wins & motivation",
+          "Avalanche: Minimize interest paid",
+          "The math-backed winner: Avalanche"
+        ],
+        "cta": "Compare Your Strategy Now",
+        "visual_direction": "Split-screen vertical design with a dark matte background. Use a glowing 'Winner' badge overlay on the Avalanche side.",
+        "layout_direction": "Top-to-bottom hierarchy with clear separation between methods.",
+        "color_direction": "Deep charcoal, slate blue, and a vibrant 'money green' for the savings highlight.",
+        "must_include": [
+          "Winner badge on Avalanche",
+          "Clear interest savings figure",
+          "QFINHUB logo in footer"
+        ],
+        "must_avoid": [
+          "Stock photos of people",
+          "Excessive text",
+          "Confusing graphs"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin2-v1.png",
+      "image_exists": true,
+      "verdict": "FAIL",
+      "summary": "While the design is visually professional and readable, it fails to meet the content requirements. The image is missing the specific financial result (\"saves $2,347\") and the required call-to-action (\"Compare Your Strategy Now\").",
+      "issues": [],
+      "raw_review": "Here is the QA review for the provided image:\n\n1. **TEXT_READABLE:** YES. All text is clear and properly rendered.\n2. **HEADLINE_MATCH:** YES. The headline \"Debt Snowball vs. Avalanche\" matches the requirement.\n3. **RESULT_READABLE:** NO. The expected result (\"Avalanche saves $2,347 more interest\") is missing entirely; the image instead displays \"Support $1,000.\"\n4. **CTA_READABLE:** NO. There is no CTA present on the image.\n5. **NO_PEOPLE:** YES. There are no people or silhouettes.\n6. **NO_GIBBERISH:** YES. There is no nonsensical text.\n7. **PREMIUM_LOOK:** YES. The design uses a clean, modern dark-mode aesthetic consistent with fintech branding.\n8. **FULL_CANVAS:** YES. The design effectively utilizes the vertical space.\n9. **NO_FAKE_UI:** YES. There are no fake browser or app UI elements.\n10. **MOBILE_READABLE:** YES. The text size is large and legible for mobile users.\n\n**OVERALL_VERDICT:** FAIL\n\n**SHORT_SUMMARY:** While the design is visually professional and readable, it fails to meet the content requirements. The image is missing the specific financial result (\"saves $2,347\") and the required call-to-action (\"Compare Your Strategy Now\").",
+      "status": "rejected"
+    },
+    {
+      "variation": 2,
+      "creative_brief": {
+        "variation": 2,
+        "headline": "Debt Payoff Showdown",
+        "subheadline": "Snowball or Avalanche?",
+        "main_result": "Avalanche saves you $2,347",
+        "supporting_points": [
+          "Snowball = Behavioral motivation",
+          "Avalanche = Mathematical efficiency",
+          "Which path fits your budget?"
+        ],
+        "cta": "See Your Personal Result",
+        "visual_direction": "Minimalist typography-led design. Use bold, oversized sans-serif fonts for the savings amount.",
+        "layout_direction": "Centered alignment with a high-contrast 'VS' element separating the two columns.",
+        "color_direction": "High-contrast monochrome (white/black) with a gold accent for the savings figure.",
+        "must_include": [
+          "High-contrast font pairing",
+          "Bold savings number",
+          "Clear payoff comparison"
+        ],
+        "must_avoid": [
+          "Generic icons",
+          "Complex charts",
+          "Multiple fonts"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin2-v2.png",
+      "image_exists": true,
+      "verdict": "PASS",
+      "summary": "This creative is well-designed, visually engaging, and meets all content requirements. It effectively uses high-contrast colors and clear typography to highlight the value proposition for mobile users.",
+      "issues": [],
+      "raw_review": "1. **TEXT_READABLE**: YES. All text is clear, properly rendered, and free of misspellings.\n2. **HEADLINE_MATCH**: YES. The headline \"Debt Payoff Showdown\" is present.\n3. **RESULT_READABLE**: YES. The \"$2,347\" figure is the most prominent element on the graphic.\n4. **CTA_READABLE**: YES. The CTA button is clear and easy to read.\n5. **NO_PEOPLE**: YES. There are no people or human silhouettes; the graphic uses abstract character icons.\n6. **NO_GIBBERISH**: YES. All text is coherent and relevant to the topic.\n7. **PREMIUM_LOOK**: YES. The high-contrast black-and-white design with gold accents gives it a professional, modern fintech aesthetic.\n8. **FULL_CANVAS**: YES. The design effectively utilizes the vertical space without excessive dead space.\n9. **NO_FAKE_UI**: YES. There are no fake browser windows or app UI elements.\n10. **MOBILE_READABLE**: YES. The hierarchy is strong, and the font sizes are appropriate for mobile viewing.\n\n**OVERALL_VERDICT**: PASS\n\n**SHORT_SUMMARY**: This creative is well-designed, visually engaging, and meets all content requirements. It effectively uses high-contrast colors and clear typography to highlight the value proposition for mobile users.",
+      "status": "selected"
+    },
+    {
+      "variation": 3,
+      "creative_brief": {
+        "variation": 3,
+        "headline": "Stop Overpaying Debt",
+        "subheadline": "Snowball vs. Avalanche Comparison",
+        "main_result": "Avalanche strategy saves $2,347",
+        "supporting_points": [
+          "Snowball: Focuses on quick wins",
+          "Avalanche: Focuses on interest savings",
+          "Calculate your path to zero debt"
+        ],
+        "cta": "Try the Debt Calculator",
+        "visual_direction": "Premium editorial aesthetic with a 'split-card' feel. Use a subtle paper-texture overlay.",
+        "layout_direction": "Top section shows the winner, bottom section details the two approaches.",
+        "color_direction": "Emerald green and warm gray; sophisticated finance palette.",
+        "must_include": [
+          "Clear distinction of benefits",
+          "Large primary result",
+          "Call-to-action button shape"
+        ],
+        "must_avoid": [
+          "Stock photos",
+          "Cluttered layout",
+          "Low-contrast text"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin2-v3.png",
+      "image_exists": true,
+      "verdict": "FAIL",
+      "summary": "The creative fails due to a missing Call to Action, a typo in the footer text, and a design that lacks the professional, premium aesthetic required for high-performing Pinterest content. The layout also leaves too much unused vertical space.",
+      "issues": [],
+      "raw_review": "Here is the QA review for the provided Pinterest pin creative:\n\n1. **TEXT_READABLE:** YES. All text is clear and properly rendered with no spelling errors.\n2. **HEADLINE_MATCH:** YES. The headline \"Stop Overpaying Debt\" matches the requirement.\n3. **RESULT_READABLE:** YES. The result \"$2,347\" is the most prominent element on the graphic.\n4. **CTA_READABLE:** NO. The required CTA \"Try the Debt Calculator\" is completely missing from the image.\n5. **NO_PEOPLE:** YES. There are no people or silhouettes present.\n6. **NO_GIBBERISH:** NO. There is a typo at the bottom: \"Callt Action & Supporting Point\" (should be \"Call to Action\").\n7. **PREMIUM_LOOK:** NO. The design is very basic and resembles a standard PowerPoint slide rather than a premium fintech editorial graphic.\n8. **FULL_CANVAS:** NO. There is significant dead space at the bottom of the image, and the design does not utilize the vertical canvas effectively.\n9. **NO_FAKE_UI:** YES. There are no fake app screenshots or browser elements.\n10. **MOBILE_READABLE:** YES. The text is large and high-contrast, making it readable on mobile.\n\n**OVERALL_VERDICT: FAIL**\n\n**SHORT_SUMMARY:** The creative fails due to a missing Call to Action, a typo in the footer text, and a design that lacks the professional, premium aesthetic required for high-performing Pinterest content. The layout also leaves too much unused vertical space.",
+      "status": "rejected"
+    },
+    {
+      "variation": 4,
+      "creative_brief": {
+        "variation": 4,
+        "headline": "Debt Snowball or Avalanche?",
+        "subheadline": "The battle for faster repayment",
+        "main_result": "Save $2,347 with Avalanche",
+        "supporting_points": [
+          "Psychology (Snowball) vs. Logic (Avalanche)",
+          "Avalanche prioritizes high-interest rates",
+          "Find your fastest route to zero"
+        ],
+        "cta": "Compare Your Debt Plan",
+        "visual_direction": "Modern 'Fintech' grid layout. Use abstract geometric shapes to represent the debt reduction curve.",
+        "layout_direction": "Visual anchor on the left, supporting bullet points on the right.",
+        "color_direction": "Midnight blue, white, and a 'highlighter' neon orange for the key result.",
+        "must_include": [
+          "Visual representation of growth",
+          "Punchy headline",
+          "QFINHUB branding"
+        ],
+        "must_avoid": [
+          "Stock photos of pens/paper",
+          "Small text blocks",
+          "Redundant icons"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin2-v4.png",
+      "image_exists": true,
+      "verdict": "FAIL",
+      "summary": "While the design is visually appealing and professional, the creative contains a spelling error (\"prioirlizes\") and a significant logical error in the chart labeling (both lines are labeled \"Avalanche,\" contradicting the legend). These errors undermine the credibility of the financial advice being presented.",
+      "issues": [
+        {
+          "category": "TEXT_READABLE",
+          "detail": "There is a typo in the bullet points: \"prioirlizes\" should be \"prioritizes.\""
+        },
+        {
+          "category": "NO_GIBBERISH",
+          "detail": "Aside from the typo mentioned in Q1, the chart labels are confusing: the graph shows two lines, both labeled \"Avalanche,\" while the legend below labels one as \"Snowball.\" This is logically inconsisten"
+        }
+      ],
+      "raw_review": "1. **TEXT_READABLE**: NO. There is a typo in the bullet points: \"prioirlizes\" should be \"prioritizes.\"\n2. **HEADLINE_MATCH**: YES. The headline matches the requirement.\n3. **RESULT_READABLE**: YES. The main result is the most prominent element on the page.\n4. **CTA_READABLE**: YES. The CTA is clear and well-placed.\n5. **NO_PEOPLE**: YES. There are no people or silhouettes.\n6. **NO_GIBBERISH**: NO. Aside from the typo mentioned in Q1, the chart labels are confusing: the graph shows two lines, both labeled \"Avalanche,\" while the legend below labels one as \"Snowball.\" This is logically inconsistent and confusing.\n7. **PREMIUM_LOOK**: YES. The design aesthetic is clean, modern, and professional.\n8. **FULL_CANVAS**: YES. The layout effectively utilizes the vertical space.\n9. **NO_FAKE_UI**: YES. There are no fake browser or app UI elements.\n10. **MOBILE_READABLE**: YES. The font sizes are large and legible for mobile users.\n\n**OVERALL_VERDICT**: FAIL\n\n**SHORT_SUMMARY**: While the design is visually appealing and professional, the creative contains a spelling error (\"prioirlizes\") and a significant logical error in the chart labeling (both lines are labeled \"Avalanche,\" contradicting the legend). These errors undermine the credibility of the financial advice being presented.",
+      "status": "rejected"
+    },
+    {
+      "variation": 5,
+      "creative_brief": {
+        "variation": 5,
+        "headline": "Crush Debt Faster",
+        "subheadline": "Avalanche vs. Snowball Explained",
+        "main_result": "Avalanche saves $2,347",
+        "supporting_points": [
+          "Snowball: Best for motivation",
+          "Avalanche: Best for interest savings",
+          "Get your custom payoff timeline"
+        ],
+        "cta": "Use the Payoff Tool",
+        "visual_direction": "Clean, high-end editorial look. Use generous white space and bold, thin-stroke lines.",
+        "layout_direction": "Vertical flow with distinct 'Pros' labels for both strategies.",
+        "color_direction": "Charcoal text on soft white background with navy blue accents.",
+        "must_include": [
+          "Comparison of utility",
+          "Clear savings impact",
+          "Actionable CTA"
+        ],
+        "must_avoid": [
+          "Busy backgrounds",
+          "Stock photos",
+          "Blurred text"
+        ],
+        "quality_check": {
+          "clear_in_1_second": true,
+          "mobile_readable": true,
+          "cta_clear": true,
+          "not_cluttered": true
+        }
+      },
+      "image_path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin2-v5.png",
+      "image_exists": true,
+      "verdict": "FAIL",
+      "summary": "While the design is clean and professional, it fails the requirements because it lacks the specific mandatory CTA (\"Use the Payoff Tool\") and suffers from excessive dead space at the bottom of the canvas.",
+      "issues": [
+        {
+          "category": "CTA_READABLE",
+          "detail": "The expected CTA \"Use the Payoff Tool\" is missing; the image instead says \"Get your custom payoff timeline.\""
+        },
+        {
+          "category": "FULL_CANVAS",
+          "detail": "There is significant empty space at the bottom of the graphic, making it feel slightly unfinished or poorly balanced for a vertical pin."
+        }
+      ],
+      "raw_review": "1. **TEXT_READABLE**: YES. All text is clear, properly rendered, and free of misspellings.\n2. **HEADLINE_MATCH**: YES. The headline \"Crush Debt Faster\" matches the requirement.\n3. **RESULT_READABLE**: YES. The main result is prominently displayed in a high-contrast box.\n4. **CTA_READABLE**: NO. The expected CTA \"Use the Payoff Tool\" is missing; the image instead says \"Get your custom payoff timeline.\"\n5. **NO_PEOPLE**: YES. There are no people or human silhouettes in the graphic.\n6. **NO_GIBBERISH**: YES. All text is coherent and relevant to the topic.\n7. **PREMIUM_LOOK**: YES. The design uses a clean, professional color palette and layout consistent with fintech editorial content.\n8. **FULL_CANVAS**: NO. There is significant empty space at the bottom of the graphic, making it feel slightly unfinished or poorly balanced for a vertical pin.\n9. **NO_FAKE_UI**: YES. There are no fake browser windows or app interfaces.\n10. **MOBILE_READABLE**: YES. The font sizes are large and high-contrast, making them easily legible on mobile devices.\n\n**OVERALL_VERDICT**: FAIL\n\n**SHORT_SUMMARY**: While the design is clean and professional, it fails the requirements because it lacks the specific mandatory CTA (\"Use the Payoff Tool\") and suffers from excessive dead space at the bottom of the canvas.",
+      "status": "rejected"
+    }
+  ],
+  "pins_not_posted": true,
+  "pinterest_crons_paused": true,
+  "best_pin1": {
+    "variation": 1,
+    "path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin1-v1.png",
+    "headline": "$100K Income?",
+    "note": "Passed QA — clean typography, premium dark navy with gold accents, high contrast, mobile-readable."
+  },
+  "best_pin2": {
+    "variation": 2,
+    "path": "/home/admin1/qfinhub/.optimizer-data/pinterest-v4-previews/phase-13b6-pin2-v2.png",
+    "headline": "Debt Payoff Showdown",
+    "note": "Passed QA — clean monochrome with gold accents, strong $2,347 hero number. NOTE: has abstract character icons (not people but borderline)."
+  },
+  "qa_summary": "Pin 1: 1/3 passed. Pin 2: 1/5 passed. Total: 2/8.",
+  "rejection_reasons": {
+    "pin1_v2": {
+      "summary": "The creative fails due to a significant rendering error on the main result text, where the numbers are overlapping and garbled. This makes the primary value proposition of the ad illegible and unprofessional.",
+      "issues": []
+    },
+    "pin1_v3": {
+      "summary": "While the design aesthetic is professional and clean, the creative contains multiple spelling errors (\"buyigr\", \"Extaber\") and a significant numerical error in the main result ($40K instead of $400K), which undermines the credibility of the financial tool.",
+      "issues": [
+        {
+          "category": "TEXT_READABLE",
+          "detail": "There is a typo in the sub-headline: \"buyigr\" instead of \"buying\" and \"Extaber\" instead of \"Expected\"."
+        },
+        {
+          "category": "RESULT_READABLE",
+          "detail": "The main result is \"$300K – $40K\", which contradicts the expected \"$300K – $400K\" and appears to be a mathematical error/typo."
+        },
+        {
+          "category": "NO_GIBBERISH",
+          "detail": "As noted in question 1, there are typos (\"buyigr\", \"Extaber\") and a likely data error in the result."
+        }
+      ]
+    },
+    "pin2_v1": {
+      "summary": "While the design is visually professional and readable, it fails to meet the content requirements. The image is missing the specific financial result (\"saves $2,347\") and the required call-to-action (\"Compare Your Strategy Now\").",
+      "issues": []
+    },
+    "pin2_v3": {
+      "summary": "The creative fails due to a missing Call to Action, a typo in the footer text, and a design that lacks the professional, premium aesthetic required for high-performing Pinterest content. The layout also leaves too much unused vertical space.",
+      "issues": []
+    },
+    "pin2_v4": {
+      "summary": "While the design is visually appealing and professional, the creative contains a spelling error (\"prioirlizes\") and a significant logical error in the chart labeling (both lines are labeled \"Avalanche,\" contradicting the legend). These errors undermine the credibility of the financial advice being presented.",
+      "issues": [
+        {
+          "category": "TEXT_READABLE",
+          "detail": "There is a typo in the bullet points: \"prioirlizes\" should be \"prioritizes.\""
+        },
+        {
+          "category": "NO_GIBBERISH",
+          "detail": "Aside from the typo mentioned in Q1, the chart labels are confusing: the graph shows two lines, both labeled \"Avalanche,\" while the legend below labels one as \"Snowball.\" This is logically inconsisten"
+        }
+      ]
+    },
+    "pin2_v5": {
+      "summary": "While the design is clean and professional, it fails the requirements because it lacks the specific mandatory CTA (\"Use the Payoff Tool\") and suffers from excessive dead space at the bottom of the canvas.",
+      "issues": [
+        {
+          "category": "CTA_READABLE",
+          "detail": "The expected CTA \"Use the Payoff Tool\" is missing; the image instead says \"Get your custom payoff timeline.\""
+        },
+        {
+          "category": "FULL_CANVAS",
+          "detail": "There is significant empty space at the bottom of the graphic, making it feel slightly unfinished or poorly balanced for a vertical pin."
+        }
+      ]
+    }
+  },
+  "ready_for_qasem_review": false,
+  "ready_reason": "Only 2/8 passed Imagen QA. 6 failed due to garbled text, typos, or missing elements. Recommend trying gemini-3.1-flash-image (confirmed working) as alternative.",
+  "recommendation": "Regenerate FAILED variations using gemini-3.1-flash-image (native image generation, await Qasem approval)."
+}

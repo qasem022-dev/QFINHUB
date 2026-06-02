@@ -1,58 +1,47 @@
 {
   "title": "Position Boost Engine",
-  "generated": "2026-06-02T16:00:00",
+  "generated": "2026-06-02T01:25:36.141302+00:00",
   "rules": {
     "position_range": "8-30",
-    "prioritize": [
-      "rising impressions",
-      "calculators",
-      "decision pages",
-      "widget",
-      "comparison pages",
-      "blogs with calculator intent"
-    ],
     "daily_limit": 3,
-    "improvements": [
-      "intro clarity",
-      "short answer",
-      "table usefulness",
-      "FAQ relevance",
-      "calculator links",
-      "internal links",
-      "schema",
-      "title/meta",
-      "content uniqueness"
-    ]
+    "approach": "Improve content depth, add short answers, strengthen internal links"
   },
-  "candidates": [
+  "applied": [
     {
       "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "query": "20000 loan 8 percent 5 years monthly payment",
       "position": 11,
       "impressions": 11,
-      "priority": "HIGH \u2014 almost page 1 (position 11)",
-      "improve": "short answer block + schema markup + link to loan-calculator + FAQ matching query + link from personal-loan page",
-      "estimated_impact": "Position 11 \u2192 8-10 if snippet improved"
+      "boosts": [
+        "Title now includes exact answer ($405.53/mo) for instant SERP match",
+        "Blog already has strong TL;DR with exact answer, amortization table, and FAQ",
+        "Internal links to loan-calculator, amortization-schedule, debt-snowball calculators"
+      ]
     },
     {
       "url": "/calculators/tax/philadelphia-pa",
-      "query": "philadelphia tax calculator",
       "position": 12,
       "impressions": 4,
-      "priority": "MEDIUM \u2014 geo page with impressions, position 12",
-      "improve": "add Philadelphia tax rate table near top + link from tax-calculator hub + FAQ for local tax questions + better intro",
-      "estimated_impact": "Position 12 \u2192 8-10 with content depth"
+      "boosts": [
+        "Title improved with city name at front",
+        "Meta description now mentions local rates and state taxes",
+        "Page is one of only 3 geo pages kept indexable"
+      ]
     },
     {
       "url": "/tools/afford-100k-40k-6-5pct",
-      "query": "mortgage affordability 100k income",
       "position": 18,
       "impressions": 5,
-      "priority": "MEDIUM \u2014 tool variant with clean slug, rising impressions",
-      "improve": "humanize title + short answer near top + link from mortgage-affordability + AddSchema markup",
-      "estimated_impact": "Position 18 \u2192 12-14 with title/meta/content fix"
+      "boosts": [
+        "Title improved for 'how much house' query intent",
+        "Meta fixed (removed XXX placeholder)",
+        "Already linked from affordability decision page and mortgage calculator"
+      ]
     }
   ],
-  "applied": [],
-  "pending": []
+  "skipped": [
+    {
+      "url": "/tools/loan-20k-5yr-8pct",
+      "reason": "Canonicalized to /calculators/loan-calculator \u2014 redirected work to blog post"
+    }
+  ]
 }
