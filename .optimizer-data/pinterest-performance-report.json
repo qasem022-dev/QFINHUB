@@ -1,46 +1,15 @@
 {
-  "title": "QFINHUB Pinterest Performance Report",
-  "generated": "2026-06-02T01:39:46Z",
-  "phase": "13B.8 \u2014 Test Pins Posted",
-  "baseline": {
-    "impressions_30d": 350,
-    "engagements_30d": 19,
-    "outbound_clicks_30d": 1,
-    "note": "Pre-V4 baseline. Old pins were generic Canva-style designs."
-  },
-  "test_pins": {
-    "posted": 2,
-    "date": "2026-06-02T01:39:46Z",
-    "pin1_slug": "100k_income_home_affordability",
-    "pin2_slug": "debt_snowball_vs_avalanche",
-    "expected_impressions": "Monitor after 48h",
-    "expected_clicks": "Monitor after 48h",
-    "next_check": "2026-06-04T15:00:00+03:00"
-  },
-  "crons": {
-    "posting_crons": "ALL PAUSED",
-    "generation_crons": "ALL PAUSED",
-    "growth_cron": "ACTIVE (follow/save only, no posting)",
-    "note": "Only manual test pins posted via Phase 13B.8"
-  },
-  "monitor_day2": {
-    "date": "2026-06-02T01:57:10.517009+00:00",
-    "hours_since_post": "~12h",
-    "status": "EARLY \u2014 wait 48h for meaningful data",
-    "pins": [
-      {
-        "slug": "100k_income_home_affordability",
-        "impressions": "unknown (too early)",
-        "saves": "unknown",
-        "clicks": "unknown"
-      },
-      {
-        "slug": "debt_snowball_vs_avalanche",
-        "impressions": "unknown (too early)",
-        "saves": "unknown",
-        "clicks": "unknown"
-      }
-    ],
-    "recommendation": "Wait until Jun 5 (48h) for performance evaluation"
-  }
+  "title": "Pinterest Performance Report \u2014 48h Check",
+  "generated": "2026-06-02T21:39:19.899382+00:00",
+  "hours_since_post": "~48h",
+  "pins": [],
+  "error": "BrowserType.launch_persistent_context: Target page, context or browser has been closed\nBrowser logs:\n\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like you launched a headed browser without having a XServer running.                     \u2551\n",
+  "headless_limitation": "CloakBrowser requires X display for non-headless mode. Pinterest profile check requires Qasem to manually check the Pinterest app/web at https://www.pinterest.com/qfinhub/_created/",
+  "manual_check_instructions": [
+    "Go to https://www.pinterest.com/qfinhub/_created/",
+    "Look for: '$100K Income: How Much House Can You Afford?'",
+    "Look for: 'Debt Snowball vs Avalanche: Which Pays Off Faster?'",
+    "Check impressions, saves, outbound clicks per pin",
+    "Check UTM traffic in Google Analytics (utm_campaign=phase13_test)"
+  ]
 }

@@ -1,41 +1,20 @@
 {
-  "title": "QFINHUB Daily Growth Scoreboard \u2014 Day 3",
-  "generated": "2026-06-02T21:01:00.225252+00:00",
-  "phase": "13C.4 Day 3",
+  "title": "QFINHUB Daily Growth Scoreboard \u2014 Day 4",
+  "generated": "2026-06-02T21:39:19.899382+00:00",
   "today": {
     "impressions": 128,
     "clicks": 0,
     "ctr": 0.0,
     "avg_position": 63.1,
     "pages_indexed": 189,
-    "note": "Jun 2 data (GSC lags 2-3 days). Day 1/2 impact not yet visible."
+    "note": "GSC Jun 2 data \u2014 Day 1/2 impact not yet measurable"
   },
-  "trends": {
-    "yesterday": 29,
-    "3day_avg": 38,
-    "7day_avg": 51,
-    "14day_avg": 128
+  "core_calculators": {
+    "truth_checked": true,
+    "confirmed_indexed": 0,
+    "crawled_not_indexed": 10,
+    "status": "All INDEXING_ALLOWED \u2014 await Google"
   },
-  "top_pages": [
-    {
-      "url": "/blog/20000-loan...",
-      "imp": 11,
-      "pos": 11,
-      "fixed": true
-    },
-    {
-      "url": "/guides/how-to-use-retirement-income",
-      "imp": 8,
-      "pos": 10,
-      "fixed": true
-    },
-    {
-      "url": "/tools/afford-100k...",
-      "imp": 5,
-      "pos": 18,
-      "fixed": true
-    }
-  ],
-  "pages_improved_today": 0,
-  "vercel_visitors": "Not available via API"
+  "canonicals": "133 fixed (125 guides + 8 comparisons)",
+  "pinterest": "~48h \u2014 check profile for impressions"
 }

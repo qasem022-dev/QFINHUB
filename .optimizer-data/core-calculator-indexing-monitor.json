@@ -380,5 +380,12 @@
       }
     ],
     "summary": "0/10 indexed"
+  },
+  "day4_truth_check": {
+    "date": "2026-06-02T21:39:39.224060+00:00",
+    "contradiction_resolved": true,
+    "contradiction_explanation": "coverageState='Submitted and indexed' is a GSC report category label, NOT actual indexing status. indexingState='INDEXING_ALLOWED' is the real status (crawled, allowed, not yet indexed).",
+    "definitive_result": "0/10 indexed. 10/10 INDEXING_ALLOWED.",
+    "recommended_path": "PATH B \u2014 Improve content/value signals + internal links from indexed pages"
   }
 }

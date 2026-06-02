@@ -1,0 +1,27 @@
+{
+  "title": "Day 4 Action Decision",
+  "generated": "2026-06-02T21:39:19.899382+00:00",
+  "recommended_path": "PATH B \u2014 Core calculators crawled but not indexed",
+  "rationale": {
+    "truth": "All 10 core calculators are INDEXING_ALLOWED, crawled June 1. No technical issues. Google simply hasn't indexed them yet.",
+    "why_not_A": "No calculators confirmed indexed \u2014 cannot proceed with internal link push",
+    "why_not_C": "Already crawled \u2014 not a discovery issue",
+    "why_not_D": "No technical issues found \u2014 all pass canonical, robots, sitemap checks",
+    "why_B": "Content and value signals need strengthening. Best action: improve internal links from indexed pages (guides, blogs, decisions) to core calculators."
+  },
+  "recommended_actions": [
+    "Add 1 contextual link from each indexed guide page to its target calculator (already present via 'Open the calculator \u2192' link)",
+    "Add 1 link from each indexed blog post to relevant core calculators (already present via relatedCalculators)",
+    "Add core calculators to homepage 'Make a Smart Financial Decision' section if not already featured",
+    "Wait 72h for Google to process improved crawl paths",
+    "Re-check June 7 (one week after manual request)",
+    "Do NOT use Indexing API",
+    "Do NOT re-request indexing"
+  ],
+  "do_not_do": [
+    "Do not create new pages",
+    "Do not use Indexing API",
+    "Do not mass edit",
+    "Do not fake traffic"
+  ]
+}
