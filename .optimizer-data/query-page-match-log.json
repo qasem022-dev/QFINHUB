@@ -1,0 +1,41 @@
+{
+  "generated": "2026-06-02T01:47:31.553388+00:00",
+  "matches": [
+    {
+      "query": "20000 loan 8 percent 5 years monthly payment",
+      "current_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "better_page": null,
+      "status": "CORRECT \u2014 page directly answers query"
+    },
+    {
+      "query": "retirement income calculator how to use",
+      "current_page": "/guides/how-to-use-retirement-income",
+      "better_page": null,
+      "status": "CORRECT \u2014 guide page matches intent"
+    },
+    {
+      "query": "mortgage affordability 100k income",
+      "current_page": "/tools/afford-100k-40k-6-5pct",
+      "better_page": "/decision/how-much-house-can-i-afford",
+      "status": "MISMATCH \u2014 decision page is better target"
+    },
+    {
+      "query": "philadelphia tax calculator",
+      "current_page": "/calculators/tax/philadelphia-pa",
+      "better_page": null,
+      "status": "CORRECT"
+    },
+    {
+      "query": "debt snowball vs avalanche",
+      "current_page": "UNKNOWN",
+      "better_page": "/decision/snowball-vs-avalanche-which-wins",
+      "status": "UNTRACKED \u2014 decision page should rank"
+    },
+    {
+      "query": "how much house can i afford",
+      "current_page": "UNKNOWN",
+      "better_page": "/decision/how-much-house-can-i-afford",
+      "status": "UNTRACKED \u2014 decision page should rank"
+    }
+  ]
+}

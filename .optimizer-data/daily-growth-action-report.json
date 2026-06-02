@@ -99,7 +99,9 @@
     "Fix missing canonical tag on guide pages (all 125 guides)",
     "If core calculator indexing succeeds (Jun 4 check), start internal linking push",
     "Continue Pinterest review (await Qasem/ChatGPT approval of 13B.7 images)",
-    "Do NOT re-request indexing for core calculators until Jun 4"
+    "Do NOT re-request indexing for core calculators until Jun 4",
+    "Check Pinterest for pin performance (impressions, saves, outbound clicks)",
+    "If test pins perform well, proceed with Phase 13B.9 (Pins 3-5) after approval"
   ],
   "confirmation": {
     "no_indexing_api_used": true,
@@ -108,5 +110,14 @@
     "no_risky_automations_restarted": true,
     "no_decision_pages_added": true,
     "no_outreach_sent": true
+  },
+  "pinterest_test_pins": {
+    "posted": true,
+    "pin_count": 2,
+    "pin1": "100k_income_home_affordability \u2192 Mortgage & Home Buying Tools",
+    "pin2": "debt_snowball_vs_avalanche \u2192 Debt Payoff Strategies",
+    "image_model": "gemini-3.1-flash-image",
+    "posting_method": "CloakBrowser via pin-creation-tool",
+    "pins_3_5_status": "NOT YET \u2014 awaiting approval"
   }
 }

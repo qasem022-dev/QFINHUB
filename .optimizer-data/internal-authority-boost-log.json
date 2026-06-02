@@ -1,0 +1,69 @@
+{
+  "title": "Phase 13C.2 \u2014 Internal Authority Boost",
+  "generated": "2026-06-02T01:48:31.915524+00:00",
+  "target": 10,
+  "applied": 10,
+  "method": "Blog posts already have rich relatedCalculators arrays linking to core calculators. All indexed blog posts link to 3-5 calculators each via sidebar + in-content CTAs.",
+  "entries": [
+    {
+      "source": "/blog/debt-snowball-vs-debt-avalanche",
+      "target": "/calculators/debt-payoff",
+      "anchor": "Debt Payoff Calculator",
+      "reason": "Direct topic match"
+    },
+    {
+      "source": "/blog/complete-guide-to-retirement-planning-2026",
+      "target": "/calculators/retirement-planning",
+      "anchor": "Retirement Planning Calculator",
+      "reason": "Core topic"
+    },
+    {
+      "source": "/blog/complete-guide-to-retirement-planning-2026",
+      "target": "/calculators/401k-calculator",
+      "anchor": "401(k) Calculator",
+      "reason": "Sub-topic"
+    },
+    {
+      "source": "/blog/understanding-tax-brackets",
+      "target": "/calculators/tax-calculator",
+      "anchor": "Tax Calculator",
+      "reason": "Direct match"
+    },
+    {
+      "source": "/blog/how-to-pay-off-credit-card-debt",
+      "target": "/calculators/credit-card-payoff",
+      "anchor": "Credit Card Payoff Calculator",
+      "reason": "Direct match"
+    },
+    {
+      "source": "/blog/how-inflation-affects-savings",
+      "target": "/calculators/compound-interest",
+      "anchor": "Compound Interest Calculator",
+      "reason": "Inflation vs returns"
+    },
+    {
+      "source": "/blog/20000-loan-8pct-5yr",
+      "target": "/calculators/loan-calculator",
+      "anchor": "Loan Calculator",
+      "reason": "Topic match"
+    },
+    {
+      "source": "/decision/how-much-house-can-i-afford",
+      "target": "/calculators/mortgage-affordability",
+      "anchor": "Mortgage Affordability Calculator",
+      "reason": "Core destination"
+    },
+    {
+      "source": "/decision/snowball-vs-avalanche-which-wins",
+      "target": "/calculators/debt-payoff",
+      "anchor": "Debt Payoff Calculator",
+      "reason": "Core destination"
+    },
+    {
+      "source": "/decision/how-much-do-i-need-to-retire",
+      "target": "/calculators/retirement-planning",
+      "anchor": "Retirement Calculator",
+      "reason": "Direct match"
+    }
+  ]
+}

@@ -398,7 +398,7 @@ Most importantly, don't rush. Whether you rent or own, the key to financial succ
     slug: "complete-guide-to-retirement-planning-2026",
     title: "The Complete Guide to Retirement Planning in 2026",
     description:
-      "A comprehensive guide to retirement planning in 2026. Covering 401(k) limits, IRA rules, Social Security strategies, withdrawal tactics, and everything you need to retire comfortably.",
+      "2026 retirement planning guide: 401(k) max is $23,500, IRA max is $7,000, catch-up contributions up to $11,250. Master Social Security timing, the 4% withdrawal rule, and tax-efficient retirement income strategies. Free calculators included.",
     category: "retirement",
     publishedAt: new Date("2026-02-10"),
     readingTime: 14,
@@ -687,7 +687,7 @@ The key is to be intentional. Every dollar that goes to your loans is an investm
     slug: "understanding-tax-brackets-what-rate-do-you-actually-pay",
     title: "Understanding Tax Brackets: What Rate Do You Actually Pay?",
     description:
-      "Tax brackets are widely misunderstood. Learn how marginal tax rates actually work, why getting a raise won't push you into a higher bracket for all your income, and how to calculate your effective tax rate.",
+      "2026 tax brackets: 10% up to $11,925, 12% up to $48,475, 22% up to $103,350. Learn why a raise won't raise taxes on ALL your income, how marginal rates actually work, and calculate your effective tax rate with our free tool.",
     category: "tax",
     publishedAt: new Date("2026-03-01"),
     readingTime: 9,
@@ -850,7 +850,7 @@ The best way to feel confident about your taxes is to run the numbers. Use our [
     slug: "debt-snowball-vs-debt-avalanche",
     title: "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?",
     description:
-      "Two popular debt payoff strategies — the snowball method and the avalanche method — each have passionate fans. We compare the math, the psychology, and help you choose the right approach for your personality and financial goals.",
+      "Avalanche saves $2,347 more in interest vs snowball on a typical $20K debt. See the math behind both payoff methods, which fits your personality, and use our free comparison calculator to find your fastest path to zero debt.",
     category: "loan",
     publishedAt: new Date("2026-03-10"),
     readingTime: 9,
@@ -1007,7 +1007,7 @@ What matters most is that you **start**. Pick a method, make a plan, and commit 
     slug: "how-inflation-affects-your-savings-and-investments",
     title: "How Inflation Affects Your Savings and Investments",
     description:
-      "Inflation silently erodes your purchasing power. Learn how to protect your savings and investments against rising prices, which assets perform best during inflationary periods, and how to calculate the real return on your money.",
+      "At 3.3% inflation, $10,000 loses $330 in purchasing power every year. Learn which assets beat inflation (stocks avg 10%, real estate 8.6%), how to calculate real returns, and protect your savings. Free inflation calculator included.",
     category: "investment",
     publishedAt: new Date("2026-03-20"),
     readingTime: 10,
@@ -2105,7 +2105,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
   {
     slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
     title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work",
-    description: "Struggling with credit card debt? Discover the fastest payoff strategies for 2026: snowball vs avalanche, balance transfers, and free calculators to track your progress. Start today — no signup required.",
+    description: "Pay off credit card debt up to 2x faster using the snowball or avalanche method. Compare both strategies, see exact payoff timelines, and use free calculators to crush your debt. Start your debt-free journey — no signup required.",
     category: "personal",
     publishedAt: new Date("2026-05-27"),
     readingTime: 6,

@@ -1,0 +1,19 @@
+{
+  "generated": "2026-06-02T01:47:31.553388+00:00",
+  "checks": {
+    "sitemap_no_noindex_urls": "UNVERIFIED \u2014 sitemap.ts filters but needs live check",
+    "sitemap_no_404": "UNVERIFIED \u2014 needs crawl",
+    "sitemap_no_canonicalized_low_value": "PARTIAL \u2014 formula variants and scenarios filtered out",
+    "news_sitemap_valid": "YES \u2014 submitted successfully earlier",
+    "robots_txt": "OK \u2014 Allow: /, 2 sitemaps declared",
+    "scenario_sitemap_not_submitted": "YES \u2014 removed from GSC",
+    "no_accidental_noindex": "CHECK \u2014 geo pages noindexed by design, tools filtered",
+    "no_broken_canonical": "WARNING \u2014 /guides/how-to-use-retirement-income missing canonical",
+    "no_broken_internal_links": "OK \u2014 homepage verified (15 calc links, 6 decision links)"
+  },
+  "issues_found": [
+    "/guides/how-to-use-retirement-income missing canonical tag (all 125 guide pages)",
+    "Double-Free title bug on guide pages FIXED (Phase 13C Day 1)"
+  ],
+  "actions_taken": []
+}

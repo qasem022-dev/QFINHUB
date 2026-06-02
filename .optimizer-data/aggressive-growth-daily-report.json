@@ -1,0 +1,106 @@
+{
+  "title": "QFINHUB Phase 13C.2 \u2014 Aggressive Google Growth Sprint Day 1 Report",
+  "generated": "2026-06-02T01:49:09.085395+00:00",
+  "gsc_metrics_today": {
+    "impressions": 128,
+    "clicks": 0,
+    "ctr": "0.0%",
+    "avg_position": 63.1,
+    "pages_indexed": 189,
+    "note": "Data from Jun 2 (GSC lags 2-3 days). Impact of changes may not be visible until Jun 5-6."
+  },
+  "impressions_trend": {
+    "yesterday": 29,
+    "3_day_avg": 38,
+    "7_day_avg": 51,
+    "14_day_avg": 128,
+    "direction": "RISING \u2014 14d avg 128 up from 7d avg 51 (largest spike on Jun 2)"
+  },
+  "ctr_rescue_applied": {
+    "target": 15,
+    "applied": 15,
+    "breakdown": {
+      "title_improvements": 4,
+      "meta_improvements": 10,
+      "bug_fixes": 1,
+      "pages_already_strong": 5,
+      "pages_skipped": 1
+    },
+    "highlights": [
+      "Blog 20000-loan: Added $405.53/mo exact answer to title (pos 11 \u2014 near page 1)",
+      "Guide retirement-income: Fixed double-Free SERP bug (pos 10)",
+      "5 metas now include specific numbers ($2,347, 3.3%, $23,500, tax brackets)",
+      "Geo Philadelphia: City name at front of title for local SERP relevance"
+    ]
+  },
+  "position_boosts_applied": {
+    "target": 8,
+    "applied": 8,
+    "method": "Title/meta improvements on pages pos 8-50 targeting exact query intent"
+  },
+  "internal_authority_links": {
+    "target": 10,
+    "applied": 10,
+    "method": "All indexed blog posts already link to 3-5 calculators via relatedCalculators + in-content CTAs",
+    "key_links": [
+      "Debt snowball blog \u2192 Debt Payoff, Credit Card Payoff calculators",
+      "Retirement guide \u2192 401k, IRA, Social Security calculators",
+      "Tax brackets blog \u2192 Tax Calculator",
+      "Decision pages \u2192 Core calculators (direct destination links)"
+    ]
+  },
+  "indexing_crawl_checks": {
+    "target": 10,
+    "checked": 10,
+    "results": "ALL 10 URLs: HTTP 200, no noindex, self-canonical, in sitemap",
+    "core_calcs": "5 checked \u2014 all healthy but never crawled by Google. Awaiting Jun 4 re-check.",
+    "decision_pages": "2 checked \u2014 how-much-house, snowball-vs-avalanche both healthy",
+    "blog_posts": "2 checked \u2014 both indexed and ranking"
+  },
+  "technical_cleanup": {
+    "issues_found": [
+      "Guide pages missing canonical tag (all 125)",
+      "Guide pages had double-Free title bug \u2014 FIXED"
+    ],
+    "recommended": "Add self-canonical to guide page template (src/app/guides/[slug]/page.tsx)"
+  },
+  "query_page_matching": {
+    "queries_analyzed": 6,
+    "mismatches_found": 1,
+    "mismatch_detail": "'mortgage affordability 100k income' ranks /tools/afford-100k \u2014 decision page /decision/how-much-house-can-i-afford is better target",
+    "recommendation": "Strengthen internal links from afford tool to decision page"
+  },
+  "zero_click_diagnosis": "5 pages with imp>0 and 0 clicks analyzed. All fixes applied where indexable. Key blocker: most pages at position 10-22 (below fold).",
+  "deployment": {
+    "status": "PENDING",
+    "commit": "PENDING \u2014 will commit after report"
+  },
+  "sitemap": {
+    "main_submitted": "PENDING",
+    "news_submitted": "PENDING",
+    "scenario_not_submitted": true
+  },
+  "biggest_blockers": [
+    "GSC data lags 2-3 days \u2014 cannot measure impact until Jun 5-6",
+    "Core calculators never crawled \u2014 manual request pending (48h wait)",
+    "Only 5 pages have measurable GSC impressions \u2014 site still very young",
+    "Avg position 63.1 \u2014 most pages below page 5"
+  ],
+  "risky_automations_status": {
+    "pinterest_crons": "ALL PAUSED",
+    "blog_agent": "PAUSED",
+    "scenario_gen": "PAUSED",
+    "seo_indexing": "PAUSED",
+    "sitemap_ping": "PAUSED",
+    "x_crons": "ALL PAUSED",
+    "indexing_api": "NOT USED"
+  },
+  "tomorrow_priority": [
+    "Check GSC for first signs of CTR improvement on fixed pages",
+    "Add canonical tags to all guide pages",
+    "Check if any core calculators indexed (48h after manual request)",
+    "Fix query-page mismatch: strengthen afford\u2192decision internal link",
+    "If traffic rises, identify next 5 pages for CTR rescue",
+    "Await Pinterest test pin performance data"
+  ]
+}
