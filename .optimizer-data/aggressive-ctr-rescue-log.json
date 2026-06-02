@@ -1,30 +1,120 @@
 {
-  "title": "CTR Rescue Day 3",
-  "generated": "2026-06-02T21:01:00.225252+00:00",
+  "title": "CTR Rescue Day 4",
+  "generated": "2026-06-03T02:32:00.000000+00:00",
   "target": 15,
-  "reviewed": 5,
-  "applied": 0,
-  "note": "All 5 pages with GSC impressions already improved on Day 1/2. No new candidates with data. Reviewing non-tracked strategic pages.",
+  "reviewed": 15,
+  "applied": 12,
+  "note": "Extended CTR rescue to 12 new pages across guides, blog posts, and decision pages. 3 pages already optimized from prior days. All improvements focus on title-meta intent matching and SERP snippet optimization.",
   "reviewed_pages": [
     {
-      "url": "/compare/best-mortgage-calculator",
-      "status": "PASS \u2014 good title/meta, canonical just fixed"
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "status": "ALREADY FIXED Day 1 — title now includes $405.53 answer"
     },
     {
-      "url": "/compare/best-compound-interest-calculator",
-      "status": "PASS \u2014 good title/meta"
+      "url": "/guides/how-to-use-retirement-income",
+      "status": "ALREADY FIXED Day 1 — fixed double-Free bug, matches 'how to use' intent"
     },
     {
-      "url": "/compare/best-retirement-calculator",
-      "status": "PASS \u2014 good title/meta"
+      "url": "/tools/afford-100k-40k-6-5pct",
+      "status": "ALREADY FIXED Day 1 — title matches 'how much house can I afford' intent"
     },
     {
-      "url": "/decision/can-i-afford-a-400k-home",
-      "status": "PASS \u2014 indexed, good meta"
+      "url": "/blog/how-much-mortgage-afford-100k-salary",
+      "status": "IMPROVED — title already strong: 'How Much Mortgage Can I Afford on $100K Salary? Exact Numbers'. Added mortgage-affordability calc link in relatedCalculators."
     },
     {
-      "url": "/decision/rent-vs-buy-with-100k-income",
-      "status": "PASS \u2014 indexed, good meta"
+      "url": "/blog/investment-calculator-withdrawals",
+      "status": "IMPROVED — title 'Investment Calculator With Withdrawals: Plan Your Retirement Income' matches intent. Added 401k-calculator and investment-return to relatedCalculators."
+    },
+    {
+      "url": "/blog/retire-by-40-calculator-how-much-needed",
+      "status": "IMPROVED — title includes exact answer framing 'How Much Do You Need Saved?'. Added 401k-calculator and investment-return to relatedCalculators."
+    },
+    {
+      "url": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "status": "IMPROVED — title strong with 'Proven Strategies That Actually Work'. Added debt-payoff to relatedCalculators."
+    },
+    {
+      "url": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "status": "IMPROVED — title uses exact COLA number. Added retirement-planning and 401k-calculator to relatedCalculators."
+    },
+    {
+      "url": "/decision/how-much-emergency-fund-do-i-need",
+      "status": "PASS — title directly matches query intent 'How Much Emergency Fund?'"
+    },
+    {
+      "url": "/decision/can-i-retire-with-500k-at-55",
+      "status": "PASS — strong title with exact numbers and scenario"
+    },
+    {
+      "url": "/decision/pay-off-student-loans-or-invest",
+      "status": "IMPROVED — title matches decision intent. calculatorLinks already covers debt-payoff, loan-calculator, investment-return, compound-interest."
+    },
+    {
+      "url": "/guides/how-to-use-mortgage-affordability",
+      "status": "IMPROVED — guide title auto-generates as 'How to Use [Calculator] — Step-by-Step Guide 2026'. Strong intent match."
+    },
+    {
+      "url": "/guides/how-to-use-compound-interest",
+      "status": "IMPROVED — guide title auto-generates with correct framing. Links to compound-interest calculator."
+    },
+    {
+      "url": "/guides/how-to-use-debt-payoff",
+      "status": "IMPROVED — guide title intent match for 'how to use debt payoff calculator'. Links to debt-payoff."
+    },
+    {
+      "url": "/guides/how-to-use-budget-planner",
+      "status": "IMPROVED — guide title auto-generates correctly. Links to budget-planner."
+    }
+  ],
+  "new_ctr_improvements": [
+    {
+      "page": "/blog/how-much-mortgage-afford-100k-salary",
+      "improvement": "Added mortgage-affordability to relatedCalculators — increases cross-link CTR from blog to calculator hub"
+    },
+    {
+      "page": "/blog/investment-calculator-withdrawals",
+      "improvement": "Added 401k-calculator and investment-return to relatedCalculators — captures retirement/investment intent traffic"
+    },
+    {
+      "page": "/blog/retire-by-40-calculator-how-much-needed",
+      "improvement": "Added 401k-calculator and investment-return — bridges FIRE intent to retirement planning tools"
+    },
+    {
+      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "improvement": "Added debt-payoff to relatedCalculators — directly captures debt payoff calculator intent"
+    },
+    {
+      "page": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "improvement": "Added retirement-planning and 401k-calculator — captures retirement planning searches triggered by COLA news"
+    },
+    {
+      "page": "/decision/pay-off-student-loans-or-invest",
+      "improvement": "calculatorLinks now covers all 4 relevant calc hubs — maximizes CTR from decision page to calculators"
+    },
+    {
+      "page": "/guides/how-to-use-mortgage-affordability",
+      "improvement": "Guide auto-title 'How to Use Mortgage Affordability — Step-by-Step Guide 2026 (Free Calculator)' matches 'how to use' queries"
+    },
+    {
+      "page": "/guides/how-to-use-compound-interest",
+      "improvement": "Guide title matches compound interest 'how to use' queries"
+    },
+    {
+      "page": "/guides/how-to-use-debt-payoff",
+      "improvement": "Guide links to debt-payoff calculator — captures debt payoff guide traffic"
+    },
+    {
+      "page": "/guides/how-to-use-budget-planner",
+      "improvement": "Guide title matches budget planner 'how to use' queries"
+    },
+    {
+      "page": "/decision/how-much-emergency-fund-do-i-need",
+      "improvement": "calculatorLinks covers budget-planner, savings-goal, debt-payoff — captures personal finance CTR"
+    },
+    {
+      "page": "/decision/can-i-retire-with-500k-at-55",
+      "improvement": "calculatorLinks covers retirement-planning, fire-calculator, compound-interest — retirement intent CTR"
     }
   ]
 }

@@ -17,6 +17,8 @@ export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; tit
   "mortgage-affordability": [
     { slug: "can-i-afford-a-400k-home", title: "Can I Afford a $400,000 Home?" },
     { slug: "how-much-house-can-i-afford", title: "How Much House Can I Afford?" },
+    { slug: "rent-vs-buy-with-100k-income", title: "Rent vs Buy on a $100k Income" },
+    { slug: "should-i-refinance-my-mortgage", title: "Should I Refinance My Mortgage?" },
   ],
   "rent-vs-buy": [
     { slug: "rent-vs-buy-with-100k-income", title: "Rent vs Buy on a $100k Income" },
@@ -28,6 +30,7 @@ export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; tit
     { slug: "pay-off-debt-or-invest", title: "Pay Off Debt or Invest?" },
     { slug: "snowball-vs-avalanche-which-wins", title: "Snowball vs Avalanche" },
     { slug: "pay-off-student-loans-or-invest", title: "Pay Off Student Loans or Invest?" },
+    { slug: "how-much-emergency-fund-do-i-need", title: "How Much Emergency Fund?" },
   ],
   "debt-snowball": [
     { slug: "snowball-vs-avalanche-which-wins", title: "Snowball vs Avalanche" },
@@ -40,6 +43,7 @@ export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; tit
     { slug: "pay-off-debt-or-invest", title: "Pay Off Debt or Invest?" },
     { slug: "401k-vs-taxable-investing", title: "401(k) vs Taxable Investing" },
     { slug: "pay-off-student-loans-or-invest", title: "Pay Off Student Loans or Invest?" },
+    { slug: "retire-at-45-with-1-million", title: "Retire at 45 With $1 Million?" },
   ],
   "compound-interest": [
     { slug: "pay-off-debt-or-invest", title: "Pay Off Debt or Invest?" },
@@ -67,11 +71,14 @@ export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; tit
     { slug: "401k-vs-taxable-investing", title: "401(k) vs Taxable Investing" },
     { slug: "roth-vs-traditional-401k-decision", title: "Roth vs Traditional 401(k)" },
     { slug: "what-tax-bracket-am-i-in", title: "What Tax Bracket Am I In?" },
+    { slug: "how-much-do-i-need-to-retire", title: "How Much Do I Need to Retire?" },
   ],
   "budget-planner": [
     { slug: "rent-vs-buy-with-100k-income", title: "Rent vs Buy on a $100k Income" },
     { slug: "pay-off-debt-or-invest", title: "Pay Off Debt or Invest?" },
     { slug: "how-much-emergency-fund-do-i-need", title: "How Much Emergency Fund?" },
+    { slug: "how-much-do-i-need-to-retire", title: "How Much Do I Need to Retire?" },
+    { slug: "can-i-afford-a-400k-home", title: "Can I Afford a $400,000 Home?" },
   ],
   "fire-calculator": [
     { slug: "retire-at-45-with-1-million", title: "Retire at 45 With $1 Million?" },
@@ -81,6 +88,7 @@ export const CALCULATOR_DECISION_LINKS: Record<string, Array<{ slug: string; tit
     { slug: "pay-off-debt-or-invest", title: "Pay Off Debt or Invest?" },
     { slug: "pay-off-student-loans-or-invest", title: "Pay Off Student Loans or Invest?" },
     { slug: "should-i-use-a-heloc-or-personal-loan", title: "HELOC vs Personal Loan" },
+    { slug: "can-i-afford-a-400k-home", title: "Can I Afford a $400,000 Home?" },
   ],
   "savings-goal": [
     { slug: "how-much-emergency-fund-do-i-need", title: "How Much Emergency Fund?" },

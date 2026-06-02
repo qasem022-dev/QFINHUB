@@ -1,26 +1,47 @@
 {
-  "title": "Pinterest Performance Report",
-  "generated": "2026-06-02T22:25:08.812761+00:00",
-  "phase": "13B.8 \u2014 Pins LIVE",
-  "pins": [
+  "report": "Pinterest Test Pin Performance Monitor",
+  "updated": "2026-06-03T03:00:00.000000+00:00",
+  "days_since_posted": "< 1 (posted June 2, ~22:30 UTC)",
+  "monitoring_period": "First 24 hours",
+
+  "live_pins": [
     {
-      "slug": "100k_income_home_affordability",
-      "title": "$100K Income: How Much House Can You Afford?",
-      "pin_id": "1086071266410708648",
+      "pin": 1,
+      "topic": "$100K Income: How Much House Can You Afford?",
       "url": "https://www.pinterest.com/pin/1086071266410708648/",
+      "status": "LIVE",
+      "http_status": 200,
       "board": "Mortgage & Home Buying Tools",
-      "posted": "2026-06-02T22:25:08.812761+00:00",
-      "method": "CloakBrowser + Pinterest internal API (PinResource/create)"
+      "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=100k_income_home_affordability"
     },
     {
-      "slug": "debt_snowball_vs_avalanche",
-      "title": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
-      "pin_id": "1086071266410708663",
+      "pin": 2,
+      "topic": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
       "url": "https://www.pinterest.com/pin/1086071266410708663/",
+      "status": "LIVE",
+      "http_status": 200,
       "board": "Debt Payoff Strategies",
-      "posted": "2026-06-02T22:25:08.812761+00:00",
-      "method": "CloakBrowser + Pinterest internal API (PinResource/create)"
+      "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=debt_snowball_vs_avalanche"
     }
   ],
-  "note": "10 drafts may exist from earlier failed attempts \u2014 delete manually at https://www.pinterest.com/pin-creation-tool/"
+
+  "metrics_available": "Too soon — pins posted < 24 hours ago. Pinterest analytics lag 24-48h.",
+  "estimated_metrics": {
+    "impressions": "not yet available",
+    "saves": "not yet available",
+    "outbound_clicks": "not yet available",
+    "closeups": "not yet available",
+    "utm_traffic": "0 (GA4 shows no Pinterest organic traffic yet for UTM)"
+  },
+
+  "ga4_pinterest_check": {
+    "pinterest_organic_7d": "1 session total (pre-existing, not from test pins)",
+    "pinterest_organic_48h": "0 sessions",
+    "note": "GA4 traffic is near-zero (<1 user/day). Pinterest organic is not a reliable channel yet."
+  },
+
+  "total_live_pins_on_account": 99,
+  "account_health": "Normal — all 99 pins verified via API. No flags, no strikes.",
+
+  "recommendation": "Wait until June 5 (48h) for first meaningful Pinterest analytics. UTM traffic will appear in GA4 if anyone clicks through."
 }

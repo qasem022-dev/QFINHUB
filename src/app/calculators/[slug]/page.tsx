@@ -41,15 +41,51 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
 
   const content = calculatorContent[slug];
 
+  // CTR-optimized benefit-driven titles for top calculator hubs
+  const ctrTitles: Record<string, { title: string; ogTitle: string; metaDesc: string; ogDesc: string }> = {
+    "mortgage-affordability": {
+      title: "How Much House Can I Afford? Free Calculator (2026)",
+      ogTitle: "How Much House Can I Afford? | Free Calculator (2026)",
+      metaDesc: "Find your maximum home price in seconds. See what you can afford based on income, debt, and down payment — free instant results, no signup required.",
+      ogDesc: "Find your maximum home price instantly. See what you can afford based on income, debt, and down payment. Try it free — no signup, instant results.",
+    },
+    "compound-interest": {
+      title: "See Your Money Grow: Compound Interest Calculator (2026)",
+      ogTitle: "See Your Money Grow | Compound Interest Calculator (2026)",
+      metaDesc: "Watch your savings multiply over time. Calculate compound interest with regular contributions and see exactly how much your money will be worth. Free instant results, no signup.",
+      ogDesc: "Watch your savings multiply. Calculate compound interest with contributions and see your future wealth. Try it free — no signup, instant results.",
+    },
+    "mortgage-calculator": {
+      title: "Calculate Your Monthly Payment: Free Mortgage Calculator (2026)",
+      ogTitle: "Calculate Your Monthly Payment | Free Mortgage Calculator (2026)",
+      metaDesc: "See your exact monthly mortgage payment in seconds — principal, interest, taxes & insurance included. Compare 15 vs 30-year terms. Free instant results, no signup.",
+      ogDesc: "See your exact monthly mortgage payment instantly — PITI included. Compare loan terms side by side. Try it free — no signup, instant results.",
+    },
+    "loan-calculator": {
+      title: "Plan Any Loan: Free Monthly Payment Calculator (2026)",
+      ogTitle: "Plan Any Loan | Free Monthly Payment Calculator (2026)",
+      metaDesc: "Calculate monthly payments for any loan — auto, personal, student, or home. See full amortization and total interest cost. Free instant results, no signup.",
+      ogDesc: "Calculate monthly payments for any loan type. See full amortization and total interest. Try it free — no signup, instant results.",
+    },
+    "retirement-planning": {
+      title: "Will You Have Enough? Free Retirement Calculator (2026)",
+      ogTitle: "Will You Have Enough? | Free Retirement Calculator (2026)",
+      metaDesc: "Check if you're on track to retire comfortably. Project your nest egg with contributions, returns, and inflation. Free instant results, no signup required.",
+      ogDesc: "Check if you're on track to retire comfortably. Project your nest egg with contributions and returns. Try it free — no signup, instant results.",
+    },
+  };
+
+  const ctr = ctrTitles[slug];
+
   return {
-    title: `${calculator.title} (2026) — Free Online Tool`,
-    description: (content?.explanation?.slice(0, 160) || calculator.description) + " Get free instant results, no signup required.",
+    title: ctr?.title ?? `${calculator.title} (2026) — Free Online Tool`,
+    description: ctr?.metaDesc ?? ((content?.explanation?.slice(0, 160) || calculator.description) + " Get free instant results, no signup required."),
     alternates: {
       canonical: `https://www.qfinhub.com/calculators/${slug}`,
     },
     openGraph: {
-      title: `${calculator.title} (2026) | Free Financial Calculator`,
-      description: (content?.explanation?.slice(0, 150) || calculator.description) + " Try it free — no signup, instant results.",
+      title: ctr?.ogTitle ?? `${calculator.title} (2026) | Free Financial Calculator`,
+      description: ctr?.ogDesc ?? ((content?.explanation?.slice(0, 150) || calculator.description) + " Try it free — no signup, instant results."),
     },
   };
 }

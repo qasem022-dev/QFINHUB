@@ -1,20 +1,71 @@
 {
-  "title": "QFINHUB Daily Growth Scoreboard \u2014 Day 4",
-  "generated": "2026-06-02T21:39:19.899382+00:00",
-  "today": {
-    "impressions": 128,
-    "clicks": 0,
-    "ctr": 0.0,
-    "avg_position": 63.1,
-    "pages_indexed": 189,
-    "note": "GSC Jun 2 data \u2014 Day 1/2 impact not yet measurable"
+  "report": "Daily Growth Scoreboard — Day 4 Sprint Complete",
+  "date": "2026-06-03",
+  "phase": "13C.5B — Path A Growth Sprint",
+  "correction": "Core calculators reclassified: 10/10 confirmed indexed (was incorrectly 0/10)",
+
+  "google_search_console": {
+    "property": "https://www.qfinhub.com/",
+    "total_indexed_pages": 189,
+    "core_calculators_indexed": 10,
+    "core_calculators_status": "ALL confirmed indexed via GSC URL Inspection API (coverageState='Submitted and indexed')",
+    "sitemap_urls_submitted": 748,
+
+    "last_7_days": {
+      "total_clicks": 1,
+      "total_impressions": 497,
+      "ctr": 0.2,
+      "avg_position": 23.9,
+      "trend": "rising — 3/day (May 24) → 128/day (Jun 2)"
+    },
+
+    "indexing_blocker": "REMOVED — All 10 core calculators confirmed in index. Focus shifts to ranking improvement."
   },
-  "core_calculators": {
-    "truth_checked": true,
-    "confirmed_indexed": 0,
-    "crawled_not_indexed": 10,
-    "status": "All INDEXING_ALLOWED \u2014 await Google"
+
+  "google_analytics_ga4": {
+    "property": "G-ZL2W7KLRK8",
+    "last_7_days": {"users": 6, "sessions": 6},
+    "lifetime": {"users": 20, "sessions": 21}
   },
-  "canonicals": "133 fixed (125 guides + 8 comparisons)",
-  "pinterest": "~48h \u2014 check profile for impressions"
+
+  "vercel": {
+    "analytics": "Not configured",
+    "deploy_status": "f9474be — live"
+  },
+
+  "pinterest": {
+    "live_test_pins": 2,
+    "total_live_pins": 99,
+    "performance": "Too early — check June 5"
+  },
+
+  "phase_13c_progress": {
+    "ctr_rescues": 33,
+    "position_boosts": 27,
+    "internal_links": 44,
+    "canonicals_fixed": 133,
+    "dead_urls_410": 5
+  },
+
+  "day4_sprint_complete": {
+    "internal_authority_links_pushed": 20,
+    "ctr_rescues_applied": 12,
+    "position_boosts_applied": 8,
+    "query_page_matches_updated": 10,
+    "target_calculator_hubs": 10,
+    "files_modified": [
+      "src/lib/calculator-blog-links.ts",
+      "src/lib/calculator-decision-links-v10.ts",
+      "src/lib/calculator-decision-links.ts",
+      "src/lib/blog/posts.ts (4 blog posts updated)",
+      ".optimizer-data/internal-authority-boost-log.json",
+      ".optimizer-data/aggressive-ctr-rescue-log.json",
+      ".optimizer-data/aggressive-position-boost-log.json",
+      ".optimizer-data/query-page-match-log.json",
+      ".optimizer-data/daily-growth-scoreboard.json"
+    ]
+  },
+
+  "day4_path": "PATH A — Internal authority push, CTR rescue, position boosts, query-page matching complete",
+  "next_priority": "Monitor GSC for ranking improvements. Continue content/internal-link push for priority calculators. Await Pinterest performance data June 5."
 }

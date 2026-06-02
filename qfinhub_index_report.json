@@ -1,0 +1,200 @@
+{
+  "report": "QFINHUB Core Calculator URLs - Google Index and Technical Check",
+  "timestamp": "2026-06-03",
+  "total_urls": 10,
+  "index_summary": {
+    "in_index": 10,
+    "not_in_index": 0,
+    "blocked": 0,
+    "error": 0
+  },
+  "http_summary": {
+    "all_200_ok": true,
+    "robots_header_noindex": 0,
+    "robots_meta_allows": "Yes (index, follow on all pages)",
+    "canonical_header_present": 0,
+    "canonical_html_matches": "Yes (all self-canonical)"
+  },
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/mortgage-calculator",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/mortgage-affordability",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/compound-interest",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/retirement-planning",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/retirement-planning",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/loan-calculator",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-payoff",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/debt-payoff",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/tax-calculator",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/401k-calculator",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/401k-calculator",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/investment-return",
+        "canonical_match_html": "exact_match"
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/budget-planner",
+      "site_check": {
+        "status": "IN_INDEX",
+        "detail": "url_found_in_results"
+      },
+      "http_check": {
+        "status_code": "200",
+        "http_status": "OK",
+        "robots_header": "not_set",
+        "canonical_url": "not_in_link_header",
+        "canonical_match": "no_canonical_in_headers",
+        "robots_meta_html": "index, follow",
+        "googlebot_meta_html": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "canonical_link_html": "https://www.qfinhub.com/calculators/budget-planner",
+        "canonical_match_html": "exact_match"
+      }
+    }
+  ]
+}

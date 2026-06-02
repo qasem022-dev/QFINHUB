@@ -1,27 +1,54 @@
 {
-  "title": "Day 4 Action Decision",
-  "generated": "2026-06-02T21:39:19.899382+00:00",
-  "recommended_path": "PATH B \u2014 Core calculators crawled but not indexed",
+  "report": "Day 4 Action Decision (CORRECTED — Path A)",
+  "date": "2026-06-03",
+  "phase": "13C.5B — Core Calculator Index Status Correction",
+
+  "previous_decision": "PATH B — Core calculators crawled but not indexed (WRONG — based on INDEXING_ALLOWED misinterpretation)",
+  "corrected_decision": "PATH A — Core calculators confirmed indexed",
+
   "rationale": {
-    "truth": "All 10 core calculators are INDEXING_ALLOWED, crawled June 1. No technical issues. Google simply hasn't indexed them yet.",
-    "why_not_A": "No calculators confirmed indexed \u2014 cannot proceed with internal link push",
-    "why_not_C": "Already crawled \u2014 not a discovery issue",
-    "why_not_D": "No technical issues found \u2014 all pass canonical, robots, sitemap checks",
-    "why_B": "Content and value signals need strengthening. Best action: improve internal links from indexed pages (guides, blogs, decisions) to core calculators."
+    "finding": "ALL 10 core calculators have coverageState='Submitted and indexed' with INDEXING_ALLOWED and canonical match. This is the standard GSC signal for confirmed index presence.",
+    "blocker_removed": "No indexing blocker remains. The core calculators ARE in Google's index."
   },
-  "recommended_actions": [
-    "Add 1 contextual link from each indexed guide page to its target calculator (already present via 'Open the calculator \u2192' link)",
-    "Add 1 link from each indexed blog post to relevant core calculators (already present via relatedCalculators)",
-    "Add core calculators to homepage 'Make a Smart Financial Decision' section if not already featured",
-    "Wait 72h for Google to process improved crawl paths",
-    "Re-check June 7 (one week after manual request)",
-    "Do NOT use Indexing API",
-    "Do NOT re-request indexing"
+
+  "path_a_actions_recommended": {
+    "priority_1_content_push": [
+      "mortgage-affordability — highest-ROI calculator, strong US search demand",
+      "compound-interest — foundational finance concept, broad query match",
+      "mortgage-calculator — core home-buying tool",
+      "loan-calculator — universal need, high volume potential",
+      "retirement-planning — long-tail wealth of keywords"
+    ],
+    "priority_2_ctr_optimization": [
+      "Review meta descriptions for all 10 calculator hubs — front-load benefit/result numbers",
+      "Title tag audit — ensure each targets a primary query + includes power words",
+      "Add FAQ or intro content above calculator widgets to improve dwell time signals"
+    ],
+    "priority_3_internal_linking": [
+      "Add contextual internal links from indexed guides → relevant calculators",
+      "Add links from decision pages → calculator hubs",
+      "Add links from blog posts → calculator category pages",
+      "Strengthen /calculators landing page with hierarchical link structure"
+    ],
+    "monitor": [
+      "Track impressions per calculator in GSC (check daily for next 7 days)",
+      "Track average position — target top-10 movement within 14 days",
+      "Watch for first organic click from a calculator page"
+    ]
+  },
+
+  "do_not": [
+    "Create new pages",
+    "Use Indexing API",
+    "Re-submit sitemaps",
+    "Restart any paused automations",
+    "Post more Pinterest pins until approved"
   ],
-  "do_not_do": [
-    "Do not create new pages",
-    "Do not use Indexing API",
-    "Do not mass edit",
-    "Do not fake traffic"
-  ]
+
+  "confirmation": {
+    "indexing_api_used": false,
+    "risky_automations_restarted": false,
+    "pinterest_pins_posted": false,
+    "new_pages_created": false
+  }
 }

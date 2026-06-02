@@ -1,43 +1,132 @@
 {
-  "generated": "2026-06-02T01:57:10.517009+00:00",
+  "generated": "2026-06-03T02:32:00.000000+00:00",
+  "title": "Query-Page Match Log Day 4",
   "matches": [
     {
       "query": "20000 loan 8 percent 5 years monthly payment",
       "current_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
       "better_page": null,
-      "status": "CORRECT \u2014 page directly answers query"
+      "status": "CORRECT — page directly answers query. Title now includes $405.53."
     },
     {
       "query": "retirement income calculator how to use",
       "current_page": "/guides/how-to-use-retirement-income",
       "better_page": null,
-      "status": "CORRECT \u2014 guide page matches intent"
+      "status": "CORRECT — guide page matches intent. Retirement-planning hub now has +1 blog link."
     },
     {
       "query": "mortgage affordability 100k income",
       "current_page": "/tools/afford-100k-40k-6-5pct",
-      "better_page": "/decision/how-much-house-can-i-afford",
-      "status": "MISMATCH \u2014 decision page is better target"
+      "better_page": "/blog/how-much-mortgage-afford-100k-salary",
+      "status": "IMPROVED — blog post 'How Much Mortgage Can I Afford on $100K Salary? Exact Numbers' is now linked from mortgage-affordability hub. Better long-term target.",
+      "day4_action": "Blog post now linked from mortgage-affordability calculator hub (new blog link added). Decision page how-much-house-can-i-afford also available."
     },
     {
       "query": "philadelphia tax calculator",
       "current_page": "/calculators/tax/philadelphia-pa",
       "better_page": null,
-      "status": "CORRECT"
+      "status": "CORRECT — geo-specific calculator page"
     },
     {
       "query": "debt snowball vs avalanche",
       "current_page": "UNKNOWN",
       "better_page": "/decision/snowball-vs-avalanche-which-wins",
-      "status": "UNTRACKED \u2014 decision page should rank"
+      "status": "TRACKED — decision page optimized. Now linked from debt-payoff hub (new decision link: how-much-emergency-fund-do-i-need). Also linked from blog 'debt-snowball-vs-debt-avalanche'."
     },
     {
       "query": "how much house can i afford",
       "current_page": "UNKNOWN",
       "better_page": "/decision/how-much-house-can-i-afford",
-      "status": "UNTRACKED \u2014 decision page should rank"
+      "status": "TRACKED — decision page now linked from mortgage-affordability hub (4 blog links + 4 decision links). Also linked from budget-planner hub (new)."
+    },
+    {
+      "query": "mortgage payment formula with tax and insurance",
+      "current_page": "/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "better_page": null,
+      "status": "CORRECT — blog directly answers PITI formula query. Linked from mortgage-calculator hub."
+    },
+    {
+      "query": "retirement planning calculator",
+      "current_page": "/calculators/retirement-planning",
+      "better_page": null,
+      "status": "CORRECT — calculator hub page. Now has 4 blog links (up from 3) and 5 decision links for stronger internal authority."
+    },
+    {
+      "query": "compound interest calculator",
+      "current_page": "/calculators/compound-interest",
+      "better_page": null,
+      "status": "CORRECT — calculator hub page. 5 blog links + 6 decision links. Well-linked."
+    },
+    {
+      "query": "401k retirement calculator",
+      "current_page": "/calculators/401k-calculator",
+      "better_page": null,
+      "status": "CORRECT — calculator hub page. Now has 2 blog links (up from 1) and 5 decision links."
     }
   ],
+  "day4_updates": [
+    {
+      "query": "mortgage affordability 100k income",
+      "current_page": "/blog/how-much-mortgage-afford-100k-salary",
+      "better_page": null,
+      "action": "Blog post title 'How Much Mortgage Can I Afford on $100K Salary? Exact Numbers' directly matches query. Now featured as a blog link from mortgage-affordability calculator hub.",
+      "internal_link": "mortgage-affordability hub → how-much-mortgage-afford-100k-salary"
+    },
+    {
+      "query": "how much house can i afford",
+      "current_page": "/decision/how-much-house-can-i-afford",
+      "better_page": null,
+      "action": "Decision page now linked from mortgage-affordability (+2 new decision links) and budget-planner (+2 new decision links). Cross-hub internal authority increases ranking potential.",
+      "internal_link": "mortgage-affordability + budget-planner → how-much-house-can-i-afford"
+    },
+    {
+      "query": "debt snowball vs avalanche",
+      "current_page": "/decision/snowball-vs-avalanche-which-wins",
+      "better_page": null,
+      "action": "Decision page strengthened with debt-payoff hub link. Blog post also links to debt-payoff calculator.",
+      "internal_link": "debt-payoff hub → snowball-vs-avalanche-which-wins"
+    },
+    {
+      "query": "pay off debt or invest",
+      "current_page": "/decision/pay-off-debt-or-invest",
+      "better_page": null,
+      "action": "Decision page now has stronger internal link graph. Linked from debt-payoff, investment-return, and compound-interest hubs. All 3 hubs have expanded link sets.",
+      "internal_link": "3 calculator hubs → pay-off-debt-or-invest"
+    },
+    {
+      "query": "emergency fund amount",
+      "current_page": "/decision/how-much-emergency-fund-do-i-need",
+      "better_page": null,
+      "action": "Decision page now linked from debt-payoff hub (new). Also linked from budget-planner and savings-goal hubs.",
+      "internal_link": "debt-payoff + budget-planner + savings-goal → how-much-emergency-fund-do-i-need"
+    },
+    {
+      "query": "investment return calculator",
+      "current_page": "/calculators/investment-return",
+      "better_page": null,
+      "action": "Hub now has 2 blog links (up from 1) and 4 decision links (up from 3). Stronger internal authority from retire-at-45-with-1-million and investment-calculator-withdrawals.",
+      "internal_link": "investment-return hub now better linked"
+    },
+    {
+      "query": "budget planner calculator",
+      "current_page": "/calculators/budget-planner",
+      "better_page": null,
+      "action": "Hub now has 2 blog links (previously 0) and 5 decision links (up from 3). New blog links from how-student-loan-payments-affect-monthly-budget and how-to-pay-off-credit-card-debt-fast.",
+      "internal_link": "budget-planner hub now properly linked"
+    },
+    {
+      "query": "tax calculator",
+      "current_page": "/calculators/tax-calculator",
+      "better_page": null,
+      "action": "Hub now has 2 blog links (up from 1) and 4 decision links (up from 3). Added tax-tips blog and how-much-do-i-need-to-retire decision link.",
+      "internal_link": "tax-calculator hub strengthened"
+    }
+  ],
+  "day3": {
+    "date": "2026-06-02T21:01:00.225252+00:00",
+    "note": "No new GSC query data available (API 404). All known matches already aligned.",
+    "canonical_fix_impact": "Comparison pages now have self-referencing canonicals — Google will correctly attribute rankings"
+  },
   "day2_updates": [
     {
       "query": "debt snowball vs avalanche",
@@ -58,12 +147,8 @@
       "current_page": "/guides/how-to-use-retirement-income",
       "better_page": "/calculators/retirement-planning",
       "action": "Guide now has 'How to Use' framing + self-canonical. Calculator page is destination.",
-      "note": "Google ranks guide for 'how to use' queries \u2014 correct match"
+      "note": "Google ranks guide for 'how to use' queries — correct match"
     }
   ],
-  "day3": {
-    "date": "2026-06-02T21:01:00.225252+00:00",
-    "note": "No new GSC query data available (API 404). All known matches already aligned.",
-    "canonical_fix_impact": "Comparison pages now have self-referencing canonicals \u2014 Google will correctly attribute rankings"
-  }
+  "summary": "10 calculator hubs now have complete query-page matching. All target hubs covered with at least 2 blog links and 4 decision links. Priority hubs (mortgage-affordability, compound-interest, mortgage-calculator) have strongest coverage. 8 new query matches aligned in Day 4 update."
 }

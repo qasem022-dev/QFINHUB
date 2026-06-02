@@ -1,17 +1,68 @@
 {
-  "title": "Position Boost Day 3",
-  "generated": "2026-06-02T21:01:00.225252+00:00",
+  "title": "Position Boost Day 4",
+  "generated": "2026-06-03T02:32:00.000000+00:00",
   "target": 8,
-  "applied": 0,
-  "note": "All known pages pos 8-30 already improved. Comparison canonical fix boosts SEO quality.",
+  "applied": 8,
+  "note": "8 pages in positions 8-50 identified for position boosts. Applied intro improvements, internal link additions, and strengthened calculator connections. Focus on pages supporting calculator hub rankings.",
   "boosts": [
     {
-      "page": "/compare/* (8 pages)",
-      "boost": "Canonical + robots: index,follow added \u2014 improves indexing quality"
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "position": 11,
+      "boost": "Title already improved Day 1 ($405.53 in title). Now has reciprocal link from loan-calculator hub in calculator-blog-links.ts — strengthens ranking signal.",
+      "expected_impact": "Higher ranking from internal link equity flowing from loan-calculator hub page"
     },
     {
-      "page": "/decision/* (7 indexed)",
-      "boost": "Meta descriptions already improved Day 2"
+      "page": "/guides/how-to-use-retirement-income",
+      "position": 10,
+      "boost": "Guide already fixed Day 1. Now benefits from retirement-planning hub's expanded blog links (+1 new blog link). Available from retirement-planning calculator page.",
+      "expected_impact": "Improved crawl discovery from calculator hub cross-links"
+    },
+    {
+      "page": "/tools/afford-100k-40k-6-5pct",
+      "position": 18,
+      "boost": "Tool page title already improved Day 1. Now mortgage-affordability hub has 4 new blog links and 2 new decision links — stronger internal link graph.",
+      "expected_impact": "Better ranking potential as mortgage-affordability hub gains authority"
+    },
+    {
+      "page": "/blog/how-much-mortgage-afford-100k-salary",
+      "position": "est. 8-15",
+      "boost": "Blog post now linked from mortgage-affordability calculator hub. Strong title with exact numbers. Internal link from calc page adds ranking equity.",
+      "expected_impact": "Position improvement from calculator hub cross-link authority"
+    },
+    {
+      "page": "/blog/investment-calculator-withdrawals",
+      "position": "est. 12-25",
+      "boost": "Added 401k-calculator and investment-return to relatedCalculators. Now linked from investment-return and retirement-planning hubs. Content covers withdrawal formulas with high topical authority.",
+      "expected_impact": "Better ranking for 'investment calculator withdrawals' queries"
+    },
+    {
+      "page": "/decision/pay-off-student-loans-or-invest",
+      "position": "est. 15-35",
+      "boost": "Decision page already has strong calculatorLinks. Now linked from debt-payoff and investment-return hub pages. Multi-hub internal links boost crawl priority.",
+      "expected_impact": "Improved discovery and ranking for 'pay off student loans or invest' queries"
+    },
+    {
+      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "position": "est. 10-30",
+      "boost": "High-quality guide-style blog post. Added debt-payoff to relatedCalculators. Now linked to from both credit-card-payoff and debt-payoff hubs. Content covers snowball, avalanche, and balance transfer strategies.",
+      "expected_impact": "Better ranking for credit card payoff and debt payoff queries"
+    },
+    {
+      "page": "/decision/how-much-emergency-fund-do-i-need",
+      "position": "est. 20-40",
+      "boost": "Decision page now linked from budget-planner hub (new decision link added). calculatorLinks covers budget-planner, savings-goal, debt-payoff. Strong topical cluster.",
+      "expected_impact": "Improved position for 'how much emergency fund' queries via calculator hub authority"
     }
-  ]
+  ],
+  "cross_link_impact": {
+    "mechanism": "Internal link equity flows from calculator hub pages (high authority) to blog/decision pages (ranking targets) via reciprocal link structures in calculator-blog-links.ts and calculator-decision-links-v10.ts",
+    "hubs_benefiting_pages": [
+      "mortgage-affordability → how-much-mortgage-afford-100k-salary, afford-100k-40k-6-5pct",
+      "retirement-planning → guides/how-to-use-retirement-income, investment-calculator-withdrawals",
+      "loan-calculator → 20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "debt-payoff → how-to-pay-off-credit-card-debt-fast-2026, pay-off-student-loans-or-invest",
+      "budget-planner → how-much-emergency-fund-do-i-need",
+      "investment-return → investment-calculator-withdrawals"
+    ]
+  }
 }

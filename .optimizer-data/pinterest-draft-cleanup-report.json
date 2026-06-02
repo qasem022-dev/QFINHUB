@@ -1,0 +1,41 @@
+{
+  "report": "Pinterest Draft Cleanup Assessment",
+  "updated": "2026-06-03T03:00:00.000000+00:00",
+  "investigation_method": "Analyzed 69-entry post-log.json + Pinterest v5 API + draft creation timeline",
+
+  "draft_inventory": {
+    "realistic_estimate": "0-2 drafts",
+    "maximum_possible": "9 (counting all failed sessions)",
+    "breakdown": [
+      {"category": "set_input_files timeout (6)", "draft_risk": "NONE", "detail": "Failed before any image upload — no content reached Pinterest. No drafts created."},
+      {"category": "Page.goto timeout to pin-builder (1)", "draft_risk": "NONE", "detail": "Never reached the pin editor UI."},
+      {"category": "Mid-process crash / connection closed (2)", "draft_risk": "POSSIBLE", "detail": "Image uploaded (step 1), browser crashed during title/link entry (step 2). If Pinterest auto-saves after image upload, drafts may exist. From May 25."}
+    ]
+  },
+
+  "cleanup_options": {
+    "api_method": "NOT AVAILABLE — Pinterest v5 REST API has no drafts endpoint. Drafts are web-only.",
+    "bulk_method": "NOT AVAILABLE — Pinterest has no bulk draft management page.",
+    "manual_method": {
+      "safe": true,
+      "risk_to_live_pins": "NONE — drafts appear as unpublished cards on the pin-builder page, visually distinct from live pins. Live pins are never shown on the pin-builder/drafts page.",
+      "steps": [
+        "1. Open real browser (NOT headless/automated)",
+        "2. Go to https://www.pinterest.com/qfinhub/pin-builder/",
+        "3. Look for unpublished cards labeled 'Draft'",
+        "4. Click each draft → '...' menu → 'Delete' or 'Discard'",
+        "5. Repeat for each draft (must be one at a time)"
+      ],
+      "time_estimate": "2-3 minutes for 0-2 drafts"
+    },
+    "risky_methods_to_avoid": [
+      "CloakBrowser headless — reCAPTCHA triggers, account risk",
+      "Bulk delete scripts — these target LIVE pins, not drafts",
+      "Any API delete calls — also target live pins"
+    ]
+  },
+
+  "recommendation": "SAFE TO LEAVE. Only 0-2 drafts maximum, no urgent action needed. If Qasem wants them cleaned up, 2-minute manual task via real browser at https://www.pinterest.com/qfinhub/pin-builder/.",
+  "action_taken": "NONE — drafts left in place. No risk to live pins.",
+  "no_automated_cleanup_performed": true
+}

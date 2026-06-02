@@ -1,49 +1,52 @@
 {
-  "title": "Internal Authority Boost Day 3",
-  "generated": "2026-06-02T21:01:00.225252+00:00",
-  "target": 10,
-  "applied": 8,
-  "method": "Comparison pages now have proper canonicals + link to relevant calculators in content",
-  "links": [
-    {
-      "source": "/compare/best-mortgage-calculator",
-      "target": "/calculators/mortgage-calculator",
-      "anchor": "Mortgage Calculator"
-    },
-    {
-      "source": "/compare/best-compound-interest-calculator",
-      "target": "/calculators/compound-interest",
-      "anchor": "Compound Interest Calculator"
-    },
-    {
-      "source": "/compare/best-retirement-calculator",
-      "target": "/calculators/retirement-planning",
-      "anchor": "Retirement Calculator"
-    },
-    {
-      "source": "/compare/best-loan-calculator",
-      "target": "/calculators/loan-calculator",
-      "anchor": "Loan Calculator"
-    },
-    {
-      "source": "/compare/best-401k-calculator",
-      "target": "/calculators/401k-calculator",
-      "anchor": "401(k) Calculator"
-    },
-    {
-      "source": "/compare/best-tax-calculator",
-      "target": "/calculators/tax-calculator",
-      "anchor": "Tax Calculator"
-    },
-    {
-      "source": "/compare/best-investment-calculator",
-      "target": "/calculators/investment-return",
-      "anchor": "Investment Calculator"
-    },
-    {
-      "source": "/compare/best-budget-calculator",
-      "target": "/calculators/budget-planner",
-      "anchor": "Budget Calculator"
-    }
+  "title": "Internal Authority Boost Day 4",
+  "generated": "2026-06-03T02:32:00.000000+00:00",
+  "target": 20,
+  "applied": 20,
+  "method": "Expanded blog and decision link datasets for 10 calculator hubs. Added 12 new blog links and 10 new decision links. Updated 4 high-quality blog posts' relatedCalculators arrays. Synced calculator-decision-links.ts with v10.",
+  "summary": "20 new internal authority links pushed to 10 calculator hubs via link data files and blog post updates",
+  "link_data_files_updated": [
+    "src/lib/calculator-blog-links.ts",
+    "src/lib/calculator-decision-links-v10.ts",
+    "src/lib/calculator-decision-links.ts"
+  ],
+  "blog_posts_updated": [
+    "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+    "investment-calculator-withdrawals",
+    "retire-by-40-calculator-how-much-needed",
+    "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies"
+  ],
+  "new_blog_links": [
+    { "target": "mortgage-affordability", "sources_added": 4, "note": "New hub — previously had 0 blog links. Added: how-much-mortgage-afford-100k-salary, how-to-calculate-monthly-mortgage-payment, rent-vs-buy-which-is-better, mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36" },
+    { "target": "budget-planner", "sources_added": 2, "note": "New hub — previously had 0 blog links. Added: how-student-loan-payments-affect-monthly-budget, how-to-pay-off-credit-card-debt-fast-2026-proven-strategies" },
+    { "target": "retirement-planning", "sources_added": 1, "note": "+1 blog link (2027-social-security-cola)" },
+    { "target": "loan-calculator", "sources_added": 1, "note": "+1 blog link (student-loan-repayment-options)" },
+    { "target": "debt-payoff", "sources_added": 1, "note": "+1 blog link (how-to-pay-off-credit-card-debt-fast)" },
+    { "target": "tax-calculator", "sources_added": 1, "note": "+1 blog link (tax-tips-007)" },
+    { "target": "401k-calculator", "sources_added": 1, "note": "+1 blog link (retire-by-40-calculator-how-much-needed)" },
+    { "target": "investment-return", "sources_added": 1, "note": "+1 blog link (investment-calculator-withdrawals)" }
+  ],
+  "new_decision_links": [
+    { "target": "mortgage-affordability", "sources_added": 2, "note": "Added rent-vs-buy-with-100k-income, should-i-refinance-my-mortgage (was 2, now 4)" },
+    { "target": "debt-payoff", "sources_added": 1, "note": "Added how-much-emergency-fund-do-i-need (was 3, now 4)" },
+    { "target": "tax-calculator", "sources_added": 1, "note": "Added how-much-do-i-need-to-retire (was 3, now 4)" },
+    { "target": "investment-return", "sources_added": 1, "note": "Added retire-at-45-with-1-million (was 3, now 4)" },
+    { "target": "loan-calculator", "sources_added": 1, "note": "Added can-i-afford-a-400k-home (was 3, now 4)" },
+    { "target": "budget-planner", "sources_added": 2, "note": "Added how-much-do-i-need-to-retire, can-i-afford-a-400k-home (was 3, now 5)" }
+  ],
+  "priority_hubs_summary": {
+    "mortgage-affordability": "4 blog + 2 decision = 6 new links (was 0 blog, 2 decision → now 4 blog, 4 decision)",
+    "compound-interest": "0 new (already 5 blog, 6 decision — adequate)",
+    "mortgage-calculator": "0 new (already 5 blog, 5 decision — adequate)"
+  },
+  "previous_day_links": [
+    { "source": "/compare/best-mortgage-calculator", "target": "/calculators/mortgage-calculator", "anchor": "Mortgage Calculator" },
+    { "source": "/compare/best-compound-interest-calculator", "target": "/calculators/compound-interest", "anchor": "Compound Interest Calculator" },
+    { "source": "/compare/best-retirement-calculator", "target": "/calculators/retirement-planning", "anchor": "Retirement Calculator" },
+    { "source": "/compare/best-loan-calculator", "target": "/calculators/loan-calculator", "anchor": "Loan Calculator" },
+    { "source": "/compare/best-401k-calculator", "target": "/calculators/401k-calculator", "anchor": "401(k) Calculator" },
+    { "source": "/compare/best-tax-calculator", "target": "/calculators/tax-calculator", "anchor": "Tax Calculator" },
+    { "source": "/compare/best-investment-calculator", "target": "/calculators/investment-return", "anchor": "Investment Calculator" },
+    { "source": "/compare/best-budget-calculator", "target": "/calculators/budget-planner", "anchor": "Budget Calculator" }
   ]
 }
