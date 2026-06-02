@@ -1,15 +1,26 @@
 {
-  "title": "Pinterest Performance Report \u2014 48h Check",
-  "generated": "2026-06-02T21:39:19.899382+00:00",
-  "hours_since_post": "~48h",
-  "pins": [],
-  "error": "BrowserType.launch_persistent_context: Target page, context or browser has been closed\nBrowser logs:\n\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like you launched a headed browser without having a XServer running.                     \u2551\n",
-  "headless_limitation": "CloakBrowser requires X display for non-headless mode. Pinterest profile check requires Qasem to manually check the Pinterest app/web at https://www.pinterest.com/qfinhub/_created/",
-  "manual_check_instructions": [
-    "Go to https://www.pinterest.com/qfinhub/_created/",
-    "Look for: '$100K Income: How Much House Can You Afford?'",
-    "Look for: 'Debt Snowball vs Avalanche: Which Pays Off Faster?'",
-    "Check impressions, saves, outbound clicks per pin",
-    "Check UTM traffic in Google Analytics (utm_campaign=phase13_test)"
-  ]
+  "title": "Pinterest Performance Report",
+  "generated": "2026-06-02T22:25:08.812761+00:00",
+  "phase": "13B.8 \u2014 Pins LIVE",
+  "pins": [
+    {
+      "slug": "100k_income_home_affordability",
+      "title": "$100K Income: How Much House Can You Afford?",
+      "pin_id": "1086071266410708648",
+      "url": "https://www.pinterest.com/pin/1086071266410708648/",
+      "board": "Mortgage & Home Buying Tools",
+      "posted": "2026-06-02T22:25:08.812761+00:00",
+      "method": "CloakBrowser + Pinterest internal API (PinResource/create)"
+    },
+    {
+      "slug": "debt_snowball_vs_avalanche",
+      "title": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
+      "pin_id": "1086071266410708663",
+      "url": "https://www.pinterest.com/pin/1086071266410708663/",
+      "board": "Debt Payoff Strategies",
+      "posted": "2026-06-02T22:25:08.812761+00:00",
+      "method": "CloakBrowser + Pinterest internal API (PinResource/create)"
+    }
+  ],
+  "note": "10 drafts may exist from earlier failed attempts \u2014 delete manually at https://www.pinterest.com/pin-creation-tool/"
 }

@@ -1,39 +1,9 @@
 {
   "phase": "13B.8",
-  "generated": "2026-06-02T01:39:46Z",
+  "generated": "2026-06-02T22:25:08.812761+00:00",
   "pins_posted": 2,
-  "pins": [
-    {
-      "pin_number": 1,
-      "slug": "100k_income_home_affordability",
-      "title": "$100K Income: How Much House Can You Afford?",
-      "description": "See an estimated home affordability range for a $100K income and calculate your exact number with QFINHUB's free mortgage affordability calculator. No signup required.",
-      "destination_url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=100k_income_home_affordability",
-      "board": "Mortgage & Home Buying Tools",
-      "image_path": ".pinterest-data/gemini-flash-image-variations/phase-13b7-pin1-v1.png",
-      "pin_type": "home_affordability",
-      "keyword": "$100K income house affordability",
-      "post_time": "2026-06-02T01:39:46Z",
-      "status": "posted",
-      "pinterest_url": "Check Pinterest profile for exact URL",
-      "errors": null
-    },
-    {
-      "pin_number": 2,
-      "slug": "debt_snowball_vs_avalanche",
-      "title": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
-      "description": "Compare debt snowball vs avalanche and see which strategy may save more interest. Use QFINHUB's free debt payoff comparison tool. No signup required.",
-      "destination_url": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=debt_snowball_vs_avalanche",
-      "board": "Debt Payoff Strategies",
-      "image_path": ".pinterest-data/gemini-flash-image-variations/phase-13b7-pin2-v1.png",
-      "pin_type": "debt_comparison",
-      "keyword": "debt snowball vs avalanche",
-      "post_time": "2026-06-02T01:39:46Z",
-      "status": "posted",
-      "pinterest_url": "Check Pinterest profile for exact URL",
-      "errors": null
-    }
-  ],
-  "other_pins_posted": false,
-  "pins_3_5_status": "NOT POSTED \u2014 awaiting approval"
+  "pinterest_urls": [
+    "https://www.pinterest.com/pin/1086071266410708648/",
+    "https://www.pinterest.com/pin/1086071266410708663/"
+  ]
 }
