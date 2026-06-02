@@ -20,9 +20,18 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
   const comp = getAllComparisons().find((c) => c.slug === slug);
   if (!comp) return { title: "Not Found" };
 
+  const canonicalUrl = `https://www.qfinhub.com/compare/${slug}`;
+
   return {
     title: comp.title,
     description: comp.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

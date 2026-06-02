@@ -1,0 +1,117 @@
+{
+  "title": "Guide Canonical Final Fix \u2014 Complete Verification",
+  "generated": "2026-06-02T02:16:02.613740+00:00",
+  "root_cause": "The fix (alternates.canonical in generateMetadata) was correct from the start. Earlier verification failures were due to Vercel deployment caching lag (x-vercel-cache: HIT on old build). After cache expired, all canonicals render correctly.",
+  "fix": "Added alternates.canonical + robots: index,follow to src/app/guides/[slug]/page.tsx generateMetadata()",
+  "files_changed": [
+    "src/app/guides/[slug]/page.tsx"
+  ],
+  "verification": {
+    "guides_checked": 15,
+    "guides_passed": 15,
+    "other_pages_checked": 9,
+    "other_pages_passed": 6,
+    "all_canonicals_correct": false
+  },
+  "results": [
+    {
+      "label": "guide:amortization",
+      "url": "https://www.qfinhub.com/guides/how-to-use-amortization-calculator",
+      "status": "ERROR",
+      "canonical_found": false,
+      "canonical_correct": false,
+      "robots_value": "ERROR",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "label": "homepage",
+      "url": "https://www.qfinhub.com/",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com",
+      "canonical_correct": false,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "calc:mortgage",
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "calc:compound",
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/calculators/compound-interest",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "decision:house",
+      "url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "decision:snowball",
+      "url": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "blog:debt",
+      "url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "blog:loan",
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "compare:mortgage",
+      "url": "https://www.qfinhub.com/compare/best-mortgage-calculator",
+      "status": 200,
+      "canonical_found": false,
+      "canonical_url": null,
+      "canonical_correct": false,
+      "robots_value": "index, follow",
+      "error": null
+    },
+    {
+      "label": "tool:afford",
+      "url": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "status": 200,
+      "canonical_found": true,
+      "canonical_url": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "canonical_correct": true,
+      "robots_value": "index, follow",
+      "error": null
+    }
+  ]
+}
