@@ -618,7 +618,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "how-much-house-can-i-afford",
     title: "How Much House Can I Afford? Calculator + Income Tables (2026)",
     description:
-      "Find your maximum home price based on income, debts, and current rates. See affordability tables for $50k-$200k incomes. Free mortgage affordability calculator included.",
+      "On a $100K income, you can afford a $300K-$400K home with current rates. See income-based tables ($50K-$200K), monthly payment breakdowns, and DTI calculations. Free calculator — no signup.",
     cluster: "mortgage",
     question: "Based on my income, monthly debts, and savings, what price home can I realistically afford?",
     shortAnswer:
@@ -787,7 +787,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "snowball-vs-avalanche-which-wins",
     title: "Debt Snowball vs Avalanche: Which Payoff Method Saves More? (2026)",
     description:
-      "Snowball or avalanche — which debt payoff method is faster and saves more interest? Compare both on $30,000 of debt across 3 cards. Free calculator included.",
+      "Avalanche saves $2,347 more in interest vs snowball on $30K of debt. Compare both payoff methods side by side, see which is faster, and calculate your exact savings. Free debt payoff tool.",
     cluster: "debt",
     question: "Should I use the debt snowball (smallest balance first) or debt avalanche (highest interest first) to pay off my debts?",
     shortAnswer:
@@ -872,7 +872,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "how-much-do-i-need-to-retire",
     title: "How Much Do I Need to Retire? Savings Target Calculator (2026)",
     description:
-      "Calculate your retirement number using the 25x rule. See how income, spending, age, and withdrawal rate affect your target. Free retirement calculator included.",
+      "Retire with 25x your annual spending. If you need $60K/year, target $1.5M. See age-based tables, the 4% withdrawal rule, and how Social Security changes your number. Free retirement calculator.",
     cluster: "retirement",
     question: "Based on my annual spending and expected retirement age, how much money do I actually need to retire?",
     shortAnswer:

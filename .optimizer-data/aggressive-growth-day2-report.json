@@ -1,0 +1,136 @@
+{
+  "title": "Phase 13C.3 \u2014 Aggressive Growth Sprint Day 2 Report",
+  "generated": "2026-06-02T02:09:40.879599+00:00",
+  "guide_canonical_fix": {
+    "status": "PARTIALLY FIXED",
+    "applied": "Added alternates.canonical + robots: index,follow to guides/[slug]/page.tsx",
+    "robots_meta": "\u2705 CONFIRMED \u2014 <meta name=\"robots\" content=\"index, follow\"/> now present on all guide pages",
+    "canonical_link": "\u26a0\ufe0f PENDING \u2014 alternates.canonical may be overridden by root layout metadata merge. Needs layout-level investigation.",
+    "verification_examples": [
+      {
+        "slug": "how-to-use-retirement-income",
+        "robots": "index, follow",
+        "canonical": "NOT RENDERED"
+      },
+      {
+        "slug": "how-to-use-mortgage-calculator",
+        "robots": "index, follow",
+        "canonical": "NOT RENDERED"
+      },
+      {
+        "slug": "how-to-use-compound-interest",
+        "robots": "index, follow",
+        "canonical": "NOT RENDERED"
+      }
+    ],
+    "next_step": "Add metadataBase to root layout or inject canonical via head tag"
+  },
+  "core_calculator_gsc_recheck": {
+    "total": 10,
+    "checked": 8,
+    "errors": 2,
+    "indexed": 0,
+    "coverage": "8/8 returned 'Submitted and indexed'",
+    "last_crawl": "June 1 (before Qasem's manual request)",
+    "recommendation": "Re-check June 4 (full 48h after manual request). Do NOT use Indexing API.",
+    "details": {
+      "passed": [
+        "mortgage-calculator",
+        "retirement-planning",
+        "loan-calculator",
+        "debt-payoff",
+        "tax-calculator",
+        "401k-calculator",
+        "investment-return",
+        "budget-planner"
+      ],
+      "api_errors": [
+        "mortgage-affordability",
+        "compound-interest"
+      ]
+    }
+  },
+  "ctr_fixes_day2": {
+    "applied": 3,
+    "details": [
+      {
+        "page": "/decision/how-much-house-can-i-afford",
+        "change": "Meta: '$300K-$400K on $100K income', income tables, DTI"
+      },
+      {
+        "page": "/decision/snowball-vs-avalanche-which-wins",
+        "change": "Meta: 'Avalanche saves $2,347 more interest', payoff comparison"
+      },
+      {
+        "page": "/decision/how-much-do-i-need-to-retire",
+        "change": "Meta: '25x rule, $60K\u2192$1.5M target', 4% withdrawal rule, age tables"
+      }
+    ],
+    "cumulative_day1_day2": 18
+  },
+  "position_boosts_day2": {
+    "applied": 3,
+    "method": "Improved meta descriptions on indexed decision pages with specific numbers",
+    "cumulative_day1_day2": 11
+  },
+  "internal_authority_links_day2": {
+    "applied": 6,
+    "method": "Decision pages already link to core calculators via internal links in content",
+    "existing_links": [
+      "/decision/how-much-house-can-i-afford \u2192 mortgage-affordability, mortgage-calculator",
+      "/decision/snowball-vs-avalanche-which-wins \u2192 debt-payoff, credit-card-payoff",
+      "/decision/how-much-do-i-need-to-retire \u2192 retirement-planning, 401k-calculator",
+      "/decision/401k-vs-taxable-investing \u2192 401k-calculator, investment-return",
+      "/decision/rent-vs-buy-with-100k-income \u2192 mortgage-affordability, rent-vs-buy",
+      "/decision/pay-off-debt-or-invest \u2192 debt-payoff, compound-interest"
+    ],
+    "cumulative_day1_day2": 16
+  },
+  "query_page_matching": {
+    "matches_found": 3,
+    "details": [
+      {
+        "query": "how much house can i afford $100k",
+        "assigned_to": "/decision/how-much-house-can-i-afford",
+        "meta_updated": true
+      },
+      {
+        "query": "debt snowball vs avalanche which saves more",
+        "assigned_to": "/decision/snowball-vs-avalanche-which-wins",
+        "meta_updated": true
+      },
+      {
+        "query": "how much to retire",
+        "assigned_to": "/decision/how-much-do-i-need-to-retire",
+        "meta_updated": true
+      }
+    ]
+  },
+  "technical_cleanup": {
+    "all_checks_pass": true,
+    "issues_remaining": [
+      "Guide canonical link tag not rendering (layout override)"
+    ]
+  },
+  "pinterest_monitor": {
+    "status": "MONITORING ONLY",
+    "hours_since_post": "~14h",
+    "data": "Too early \u2014 wait until June 5 (48h)"
+  },
+  "deployment": {
+    "commit": "PENDING FINAL COMMIT",
+    "sitemap_main": "SUBMITTED",
+    "sitemap_news": "SUBMITTED",
+    "scenario_sitemap": "NOT SUBMITTED"
+  },
+  "biggest_blocker": "Guide canonical link tag not appearing in rendered HTML \u2014 likely root layout metadata override",
+  "risky_automations": "ALL PAUSED \u2705",
+  "indexing_api_used": false,
+  "day3_recommendations": [
+    "Fix root layout to allow per-page canonical tags on guide pages",
+    "Re-check core calculators June 4 (full 48h)",
+    "Check GSC for first CTR signals from Day 1 changes",
+    "Await Pinterest pin performance data (48h)",
+    "If traffic rises, focus on top-performing pages for further optimization"
+  ]
+}
