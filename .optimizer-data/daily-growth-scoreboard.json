@@ -1,14 +1,14 @@
 {
-  "title": "QFINHUB Phase 13C.2 \u2014 Aggressive Growth Scoreboard",
-  "generated": "2026-06-02T01:48:31.915524+00:00",
-  "phase": "13C.2 Day 1 Sprint",
+  "title": "QFINHUB Daily Growth Scoreboard \u2014 Day 3",
+  "generated": "2026-06-02T21:01:00.225252+00:00",
+  "phase": "13C.4 Day 3",
   "today": {
-    "date": "2026-06-02",
     "impressions": 128,
     "clicks": 0,
     "ctr": 0.0,
     "avg_position": 63.1,
-    "pages_indexed": 189
+    "pages_indexed": 189,
+    "note": "Jun 2 data (GSC lags 2-3 days). Day 1/2 impact not yet visible."
   },
   "trends": {
     "yesterday": 29,
@@ -18,45 +18,24 @@
   },
   "top_pages": [
     {
-      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "url": "/blog/20000-loan...",
       "imp": 11,
       "pos": 11,
-      "ctr_fixed": true
+      "fixed": true
     },
     {
       "url": "/guides/how-to-use-retirement-income",
       "imp": 8,
       "pos": 10,
-      "ctr_fixed": true
+      "fixed": true
     },
     {
-      "url": "/tools/afford-100k-40k-6-5pct",
+      "url": "/tools/afford-100k...",
       "imp": 5,
       "pos": 18,
-      "ctr_fixed": true
-    },
-    {
-      "url": "/tools/loan-20k-5yr-8pct",
-      "imp": 5,
-      "pos": 22,
-      "status": "CANONICALIZED \u2014 redirected to blog"
-    },
-    {
-      "url": "/calculators/tax/philadelphia-pa",
-      "imp": 4,
-      "pos": 12,
-      "ctr_fixed": true
+      "fixed": true
     }
   ],
-  "improvements_today": {
-    "ctr_fixes": 15,
-    "position_boosts": 8,
-    "internal_links_added": 10,
-    "indexing_checks": 10,
-    "meta_improvements": 5,
-    "title_fixes": 4,
-    "bug_fixes": 1,
-    "pages_skipped": 1
-  },
-  "core_calculator_status": "10 manually requested Jun 2, awaiting Google crawl. Next check: Jun 4."
+  "pages_improved_today": 0,
+  "vercel_visitors": "Not available via API"
 }

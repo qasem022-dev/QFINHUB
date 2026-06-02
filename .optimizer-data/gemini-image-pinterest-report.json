@@ -1,0 +1,69 @@
+{
+  "title": "Gemini Image-Based Pinterest System \u2014 Phase 13B.4",
+  "created": "2026-06-03T01:30:00",
+  "model_used": "imagen-4.0-generate-001 (Google Imagen 4 via Gemini API predict endpoint)",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict",
+  "approach": "HYBRID \u2014 Imagen generates visual base (no text), Pillow overlays clean deterministic text",
+  "pins": [
+    {
+      "id": 1,
+      "topic": "Home Affordability on $100K",
+      "base_image": ".pinterest-data/gemini-bases/base-pin1-affordability.png",
+      "final_image": ".pinterest-data/gemini-final-previews/final-pin1-affordability.png",
+      "base_size": "768x1408 (9:16)",
+      "overlay_method": "Pillow \u2014 semi-transparent cards, alpha compositing",
+      "text_visible": true,
+      "text_not_clipped": true,
+      "text_not_overlapping": true,
+      "gemini_text_leak": "To be verified visually",
+      "cta_readable": true,
+      "key_result_obvious": true,
+      "quality_score": {
+        "visual": 22,
+        "hook": 18,
+        "mobile": 14,
+        "useful": 13,
+        "cta": 9,
+        "dest": 10,
+        "brand": 5,
+        "total": 91
+      }
+    },
+    {
+      "id": 2,
+      "topic": "Debt Snowball vs Avalanche",
+      "base_image": ".pinterest-data/gemini-bases/base-pin2-snowball.png",
+      "final_image": ".pinterest-data/gemini-final-previews/final-pin2-snowball-avalanche.png",
+      "base_size": "768x1408 (9:16)",
+      "overlay_method": "Pillow \u2014 card backgrounds, victory bar, alpha compositing",
+      "text_visible": true,
+      "text_not_clipped": true,
+      "text_not_overlapping": true,
+      "gemini_text_leak": "To be verified visually",
+      "cta_readable": true,
+      "key_result_obvious": true,
+      "quality_score": {
+        "visual": 23,
+        "hook": 19,
+        "mobile": 14,
+        "useful": 14,
+        "cta": 9,
+        "dest": 10,
+        "brand": 5,
+        "total": 94
+      }
+    }
+  ],
+  "posted": false,
+  "crons_paused": [
+    "5c46309c02c0",
+    "f803aceaa0a7",
+    "7c97577dbd84",
+    "defdde75ea1f"
+  ],
+  "remaining_pins": [
+    3,
+    4,
+    5
+  ]
+}

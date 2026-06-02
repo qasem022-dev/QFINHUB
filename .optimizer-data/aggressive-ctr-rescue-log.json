@@ -1,83 +1,30 @@
 {
-  "title": "Phase 13C.2 \u2014 Aggressive CTR Rescue",
-  "generated": "2026-06-02T01:48:31.915524+00:00",
+  "title": "CTR Rescue Day 3",
+  "generated": "2026-06-02T21:01:00.225252+00:00",
   "target": 15,
-  "applied": 15,
-  "entries": [
+  "reviewed": 5,
+  "applied": 0,
+  "note": "All 5 pages with GSC impressions already improved on Day 1/2. No new candidates with data. Reviewing non-tracked strategic pages.",
+  "reviewed_pages": [
     {
-      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "change": "Title: added $405.53/mo",
-      "status": "Day 1"
+      "url": "/compare/best-mortgage-calculator",
+      "status": "PASS \u2014 good title/meta, canonical just fixed"
     },
     {
-      "page": "/guides/how-to-use-retirement-income",
-      "change": "Title: fixed double-Free bug, 'How to Use' framing",
-      "status": "Day 1"
+      "url": "/compare/best-compound-interest-calculator",
+      "status": "PASS \u2014 good title/meta"
     },
     {
-      "page": "/tools/afford-100k-40k-6-5pct",
-      "change": "Title: 'How Much House' framing, meta: fixed ($XXX) placeholder",
-      "status": "Day 1"
+      "url": "/compare/best-retirement-calculator",
+      "status": "PASS \u2014 good title/meta"
     },
     {
-      "page": "/calculators/tax/philadelphia-pa",
-      "change": "Title: city name at front, meta: local tax specificity",
-      "status": "Day 1"
+      "url": "/decision/can-i-afford-a-400k-home",
+      "status": "PASS \u2014 indexed, good meta"
     },
     {
-      "page": "/tools/loan-20k-5yr-8pct",
-      "change": "SKIPPED (canonicalized) \u2014 improved blog instead",
-      "status": "Day 1"
-    },
-    {
-      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "change": "Meta: '2x faster' claim, specific strategy names",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/debt-snowball-vs-debt-avalanche",
-      "change": "Meta: '$2,347 more interest' figure, comparison calculator CTA",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/complete-guide-to-retirement-planning-2026",
-      "change": "Meta: 2026 dollar limits ($23,500 401k, $7,000 IRA)",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/understanding-tax-brackets-what-rate-do-you-actually-pay",
-      "change": "Meta: exact 2026 bracket thresholds, effective rate CTA",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/how-inflation-affects-your-savings-and-investments",
-      "change": "Meta: 3.3% erosion rate, stock 10% vs RE 8.6% returns",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/how-to-calculate-monthly-mortgage-payment",
-      "change": "Meta: already strong \u2014 counted as review-pass",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/rent-vs-buy-which-is-better",
-      "change": "Meta: already strong \u2014 counted as review-pass",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/compound-interest-explained",
-      "change": "Meta: already strong \u2014 counted as review-pass",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/how-student-loan-payments-affect-monthly-budget",
-      "change": "Meta: already strong \u2014 counted as review-pass",
-      "status": "Day 1 Sprint"
-    },
-    {
-      "page": "/blog/mortgage-rates-june-2026-current-rates-home-affordability-calculator",
-      "change": "Meta: already strong \u2014 counted as review-pass",
-      "status": "Day 1 Sprint"
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "status": "PASS \u2014 indexed, good meta"
     }
   ]
 }

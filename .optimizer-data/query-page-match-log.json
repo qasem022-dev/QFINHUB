@@ -60,5 +60,10 @@
       "action": "Guide now has 'How to Use' framing + self-canonical. Calculator page is destination.",
       "note": "Google ranks guide for 'how to use' queries \u2014 correct match"
     }
-  ]
+  ],
+  "day3": {
+    "date": "2026-06-02T21:01:00.225252+00:00",
+    "note": "No new GSC query data available (API 404). All known matches already aligned.",
+    "canonical_fix_impact": "Comparison pages now have self-referencing canonicals \u2014 Google will correctly attribute rankings"
+  }
 }

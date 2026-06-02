@@ -1,0 +1,139 @@
+{
+  "title": "Pinterest V2 Day 1 \u2014 Image Review",
+  "created": "2026-06-02T17:30:00",
+  "version": "2.0",
+  "status": "AWAITING_APPROVAL \u2014 Do not post until reviewed",
+  "pins": [
+    {
+      "id": "v2_day1_pin1",
+      "type": "big-number-answer",
+      "hook": "$100K Income: How Much House Can You Afford?",
+      "title": "How Much House Can You Afford on $100K Income? \u2014 Free Calculator",
+      "description": "On a $100,000 annual income, you can typically afford a home between $300,000 and $400,000 depending on your down payment, debts, and interest rate. This free calculator factors in taxes, insurance, PMI, and HOA fees to give you your exact number \u2014 not a rough estimate.",
+      "destination": "https://www.qfinhub.com/decision/how-much-house-can-i-afford?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=calculator_growth&utm_content=v2_big_number_income_100k",
+      "board": "Mortgage Calculators",
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/v2-previews/pin1-big-number-100k-income.png",
+      "quality_score": {
+        "hook_strength": 18,
+        "visual_attractiveness": 17,
+        "mobile_readability": 14,
+        "usefulness_saveability": 14,
+        "destination_match": 10,
+        "keyword_title_quality": 9,
+        "cta_clarity": 9,
+        "total": 91,
+        "passed": true
+      },
+      "score_notes": "Clean white background, giant $300K-$400K number in teal on a white card with subtle shadow. 52px bold headline readable on mobile. CTA button 'Calculate Your Exact Number' is specific and personal. Only improvement: could use slightly more visual depth on the card.",
+      "approved": false,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin2",
+      "type": "split-decision",
+      "hook": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
+      "title": "Debt Snowball vs Avalanche Method \u2014 Which Pays Off Faster? Free Comparison",
+      "description": "The avalanche method saves $2,347 more in interest on a $30K debt, but the snowball method pays off the first debt 8 months sooner. Which is right for you? Compare both strategies side by side with your exact debts \u2014 free, instant results.",
+      "destination": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=calculator_growth&utm_content=v2_split_snowball_avalanche",
+      "board": "Debt Payoff Tools",
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/v2-previews/pin2-split-snowball-avalanche.png",
+      "quality_score": {
+        "hook_strength": 19,
+        "visual_attractiveness": 18,
+        "mobile_readability": 13,
+        "usefulness_saveability": 15,
+        "destination_match": 10,
+        "keyword_title_quality": 9,
+        "cta_clarity": 8,
+        "total": 92,
+        "passed": true
+      },
+      "score_notes": "Side-by-side cards with clear \u2605 winner badge on Avalanche. Green victory bar spans full width. Specific dollar amount ($2,347) and time (8 months) make it concrete. Two cards at 410px each may feel tight on phone but still readable.",
+      "approved": false,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin3",
+      "type": "checklist",
+      "hook": "Before You Buy a Home, Check These 7 Numbers",
+      "title": "7 Numbers to Check Before Buying a Home \u2014 Free Calculator Checklist",
+      "description": "Before you start house hunting, calculate these 7 numbers: 1) Credit score, 2) Debt-to-income ratio, 3) Down payment needed, 4) Monthly payment estimate, 5) Closing costs, 6) Emergency fund after purchase, 7) Total cost over 30 years. Use our free calculators for all 7 \u2014 instant results.",
+      "destination": "https://www.qfinhub.com/calculators/mortgage-affordability?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=calculator_growth&utm_content=v2_checklist_7_numbers",
+      "board": "Mortgage Calculators",
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/v2-previews/pin3-checklist-7-numbers.png",
+      "quality_score": {
+        "hook_strength": 17,
+        "visual_attractiveness": 17,
+        "mobile_readability": 14,
+        "usefulness_saveability": 15,
+        "destination_match": 9,
+        "keyword_title_quality": 9,
+        "cta_clarity": 9,
+        "total": 90,
+        "passed": true
+      },
+      "score_notes": "Warm cream background (#FFFBEB) feels approachable. 7 green numbered circles with specific benchmarks (620+ credit, 36% DTI). Clean vertical stack, good spacing. Most saveable format \u2014 checklists are Pinterest's top-performing pin type. Destination is mortgage-affordability which only covers some checklist items directly \u2014 minor mismatch.",
+      "approved": false,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin4",
+      "type": "mistake",
+      "hook": "5 Mortgage Mistakes That Make a Home Unaffordable",
+      "title": "5 Mortgage Mistakes That Make Your Home Unaffordable \u2014 Avoid These",
+      "description": "Most homebuyers make at least one of these costly mistakes: 1) Maxing out your budget, 2) Skipping rate shopping, 3) Ignoring PMI costs, 4) Forgetting closing costs, 5) Not checking your credit first. Use our free mortgage calculator to see your actual affordable number.",
+      "destination": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=calculator_growth&utm_content=v2_mistake_5_mortgage",
+      "board": "Mortgage Calculators",
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/v2-previews/pin4-mistake-5-mortgage.png",
+      "quality_score": {
+        "hook_strength": 18,
+        "visual_attractiveness": 16,
+        "mobile_readability": 13,
+        "usefulness_saveability": 14,
+        "destination_match": 10,
+        "keyword_title_quality": 9,
+        "cta_clarity": 9,
+        "total": 89,
+        "passed": true
+      },
+      "score_notes": "Light red tinted background creates urgency without fear. Red left borders on mistake cards. Specific dollar impacts ($30K+, $100-300/month) make warnings concrete. Lower visual score due to denser text \u2014 5 mistakes with dollar impacts is content-heavy for a pin. CTA 'Check Your Affordable Number' specific.",
+      "approved": false,
+      "issues": [
+        "Text density slightly high \u2014 consider reducing to 4 mistakes for cleaner layout"
+      ]
+    },
+    {
+      "id": "v2_day1_pin5",
+      "type": "calculator-result",
+      "hook": "$400K Home at 6.5%: What's the Monthly Payment?",
+      "title": "$400,000 Home at 6.5% Interest \u2014 Your Monthly Payment Breakdown",
+      "description": "A $400,000 home with 20% down at 6.5% APR equals approximately $2,022/month principal & interest. With taxes, insurance, and PMI, expect $2,500-2,800/month total. See your exact payment for any home price, rate, or down payment \u2014 free instant calculator.",
+      "destination": "https://www.qfinhub.com/calculators/mortgage-calculator?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=calculator_growth&utm_content=v2_result_400k_65pct",
+      "board": "Mortgage Calculators",
+      "image_path": "/home/admin1/qfinhub/.pinterest-data/v2-previews/pin5-calc-result-400k.png",
+      "quality_score": {
+        "hook_strength": 18,
+        "visual_attractiveness": 19,
+        "mobile_readability": 14,
+        "usefulness_saveability": 13,
+        "destination_match": 10,
+        "keyword_title_quality": 9,
+        "cta_clarity": 9,
+        "total": 92,
+        "passed": true
+      },
+      "score_notes": "Strongest visual \u2014 realistic calculator result card with Inputs \u2192 Result flow. 3 input rows, divider, giant $2,022 in teal. Alternative scenario tease (FHA at 3.5%) adds curiosity value. Clean white card on light gray background. Highest overall quality score.",
+      "approved": false,
+      "issues": []
+    }
+  ],
+  "summary": {
+    "total_pins": 5,
+    "all_passed_85": true,
+    "highest_score": 92,
+    "lowest_score": 89,
+    "average_score": 90.8,
+    "posted": 0,
+    "status": "ALL PINS AWAITING QASEM/CHATGPT REVIEW"
+  }
+}

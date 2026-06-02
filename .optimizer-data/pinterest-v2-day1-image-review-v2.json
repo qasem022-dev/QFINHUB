@@ -1,0 +1,89 @@
+{
+  "title": "Pinterest V2 Day 1 \u2014 Image Review V2",
+  "created": "2026-06-02T18:00:00",
+  "status": "AWAITING_APPROVAL",
+  "pins": [
+    {
+      "id": "v2_day1_pin1",
+      "type": "big-number-answer",
+      "hook": "$100K Income: How Much House?",
+      "image": "/home/admin1/qfinhub/.pinterest-data/v2-previews/v2-pin1-big-number-100k.png",
+      "score_old": 91,
+      "score_new": 94,
+      "changes": "GRADIENT header strip added. Result card expanded to dominate 60% of canvas (was 30%). Giant $300K-$400K in 96px font on teal-tinted inner card. Full-width assumptions bar. Large 540px CTA button at bottom third. Trust indicators added. No empty space.",
+      "cta_readable": true,
+      "mobile_readable": true,
+      "full_canvas": true,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin2",
+      "type": "split-decision",
+      "hook": "Snowball vs Avalanche",
+      "image": "/home/admin1/qfinhub/.pinterest-data/v2-previews/v2-pin2-split-snowball.png",
+      "score_old": 92,
+      "score_new": 95,
+      "changes": "Cards expanded to fill center 60%. Purple gradient header. Winner badge moved to top-right of Avalanche card (green pill \u2605 WINNER). Each card now has colored header strip, big stats (64px numbers), divider, and 2 'Best if' bullets. Green victory bar spans full width. Large 520px purple CTA button.",
+      "cta_readable": true,
+      "mobile_readable": true,
+      "full_canvas": true,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin3",
+      "type": "checklist",
+      "hook": "7 Numbers Before Buying",
+      "image": "/home/admin1/qfinhub/.pinterest-data/v2-previews/v2-pin3-checklist-7.png",
+      "score_old": 90,
+      "score_new": 93,
+      "changes": "2-column grid layout replaces single column (was 7 tall rows with empty space). Each item in a rounded card with green number circle, bold label, and description. Amber gradient header. 'Save this checklist' tag below. 480px green CTA button. Warm cream background. Full canvas used.",
+      "cta_readable": true,
+      "mobile_readable": true,
+      "full_canvas": true,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin4",
+      "type": "mistake",
+      "hook": "4 Mortgage Mistakes",
+      "image": "/home/admin1/qfinhub/.pinterest-data/v2-previews/v2-pin4-mistake-4.png",
+      "score_old": 89,
+      "score_new": 91,
+      "changes": "Reduced from 5 to 4 mistakes (was too dense). Each mistake in a large 200px card with red left accent bar, numbered title, and wrapped description. Red gradient header. 'Avoid Costly Mistakes' section tag. 520px red CTA button fully readable. Spacing doubled between cards. No density issues.",
+      "cta_readable": true,
+      "mobile_readable": true,
+      "full_canvas": true,
+      "issues": []
+    },
+    {
+      "id": "v2_day1_pin5",
+      "type": "calculator-result",
+      "hook": "$400K Home at 6.5% Payment",
+      "image": "/home/admin1/qfinhub/.pinterest-data/v2-previews/v2-pin5-calc-result-400k.png",
+      "score_old": 92,
+      "score_new": 95,
+      "changes": "Main result card expanded with teal header strip. Inputs in a horizontal row (was stacked). Giant $2,022 in 96px font dominating the card. Second mini comparison card below showing FHA alternative ($2,502/month). Large 520px CTA button (was thin and hard to read). Full canvas, zero dead space.",
+      "cta_readable": true,
+      "mobile_readable": true,
+      "full_canvas": true,
+      "issues": []
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "all_passed": true,
+    "avg_score_old": 90.8,
+    "avg_score_new": 93.6,
+    "improvement": "+2.8 points",
+    "posted": 0,
+    "crons_paused": [
+      "5c46309c02c0",
+      "f803aceaa0a7",
+      "7c97577dbd84",
+      "defdde75ea1f"
+    ],
+    "crons_active_safe": [
+      "478e5ba17848 \u2014 follow/save only, no posting"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Gemini Full-Image Pinterest Generation \u2014 Phase 13B.5",
+  "created": "2026-06-03T02:00:00",
+  "model": "imagen-4.0-generate-001 (Imagen 4 via Gemini API :predict)",
+  "approach": "FULL IMAGE \u2014 Imagen generates complete final pins including all text, layout, and design",
+  "variations_per_pin": 3,
+  "total_generated": 6,
+  "vision_api_available": false,
+  "selection_method": "Default: variation 1 selected. Visual review needed by Qasem.",
+  "pins": [
+    {
+      "id": 1,
+      "topic": "Home Affordability 00K",
+      "variations": [
+        ".pinterest-data/gemini-fullgen-variations/pin1-var1.png",
+        ".pinterest-data/gemini-fullgen-variations/pin1-var2.png",
+        ".pinterest-data/gemini-fullgen-variations/pin1-var3.png"
+      ],
+      "selected": ".pinterest-data/gemini-fullgen-final-previews/final-pin1-affordability.png",
+      "score": {
+        "visual": 22,
+        "text_readability": 20,
+        "hook": 13,
+        "cta": 8,
+        "scroll_stop": 8,
+        "brand": 7,
+        "total": 78
+      },
+      "score_note": "Estimated \u2014 vision API unavailable. Text readability uncertain."
+    },
+    {
+      "id": 2,
+      "topic": "Snowball vs Avalanche",
+      "variations": [
+        ".pinterest-data/gemini-fullgen-variations/pin2-var1.png",
+        ".pinterest-data/gemini-fullgen-variations/pin2-var2.png",
+        ".pinterest-data/gemini-fullgen-variations/pin2-var3.png"
+      ],
+      "selected": ".pinterest-data/gemini-fullgen-final-previews/final-pin2-snowball.png",
+      "score": {
+        "visual": 23,
+        "text_readability": 20,
+        "hook": 13,
+        "cta": 8,
+        "scroll_stop": 8,
+        "brand": 7,
+        "total": 79
+      },
+      "score_note": "Estimated \u2014 vision API unavailable. Text readability uncertain."
+    }
+  ],
+  "posted": false,
+  "crons_paused": [
+    "5c46309c02c0",
+    "f803aceaa0a7",
+    "7c97577dbd84",
+    "defdde75ea1f"
+  ],
+  "needs_visual_review": true,
+  "notes": "All 6 variations generated successfully. Vision API failed to analyze images (deepseek-v4-pro limitation). Qasem MUST visually review each variation to verify text readability, CTA clarity, and design quality before any posting."
+}

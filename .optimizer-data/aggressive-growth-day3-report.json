@@ -1,0 +1,32 @@
+{
+  "title": "Phase 13C.4 \u2014 Aggressive Growth Sprint Day 3 Report",
+  "generated": "2026-06-02T21:01:00.225252+00:00",
+  "status": "WAITING FOR GOOGLE INDEXING",
+  "comparison_canonicals": "\u2705 8/8 verified live \u2014 canonical + robots on all comparison pages",
+  "core_calculators": "0/10 indexed \u2014 all INDEXING_ALLOWED. 2 API errors resolved. All crawled Jun 1. Awaiting Google (48h mark Jun 4).",
+  "gsc_early_signals": "GSC data still from Jun 2 (128 imp, 0 clicks). Day 1/2 impact not yet measurable.",
+  "vercel_visitors": "Not available via API \u2014 Qasem should check Vercel Analytics dashboard",
+  "ctr_fixes_day3": "0 new \u2014 all known impression pages already improved",
+  "position_boosts_day3": "8 comparison pages now have proper canonicals (SEO quality boost)",
+  "internal_links_day3": "8 comparison\u2192calculator links verified",
+  "cumulative_day1_3": {
+    "ctr": 18,
+    "position": 19,
+    "internal_links": 24,
+    "canonicals_fixed": "125 guides + 8 comparisons"
+  },
+  "technical_cleanup": "ALL CHECKS PASS \u2014 no issues found",
+  "pinterest": "~36h since post \u2014 check Pinterest app for early signals",
+  "deploy": "bae5ea9 live on Vercel. Sitemaps submitted.",
+  "biggest_blocker": "Google hasn't indexed core calculators yet. 0/10 after ~36h from manual request.",
+  "risky_automations": "ALL PAUSED",
+  "indexing_api_used": false,
+  "day4_recommendations": [
+    "CRITICAL: Re-check core calculators June 4 (full 48h)",
+    "Check Pinterest 48h performance",
+    "Qasem check GSC web UI for new data",
+    "Qasem check Vercel Analytics for visitor counts",
+    "If core calcs indexed \u2192 push internal links from all 125 guides",
+    "If Pinterest pins performing \u2192 proceed to Pins 3-5"
+  ]
+}

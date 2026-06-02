@@ -307,5 +307,78 @@
       }
     ],
     "summary": "0/10 indexed"
+  },
+  "day3_recheck": {
+    "date": "2026-06-02T20:55:01.860273+00:00",
+    "hours_since_request": "~36h",
+    "result": "0/10 indexed \u2014 all show INDEXING_ALLOWED, not yet INDEXING_STATE_INDEXED",
+    "next_check": "2026-06-04 (full 48h)",
+    "note": "Google has crawled all 10 but hasn't indexed yet. This is normal for a young site. Wait 48h."
+  },
+  "day3_recheck2": {
+    "date": "2026-06-03T00:00:22.352408",
+    "results": [
+      {
+        "slug": "/calculators/mortgage-affordability",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:40:10Z"
+      },
+      {
+        "slug": "/calculators/compound-interest",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:40:10Z"
+      },
+      {
+        "slug": "/calculators/mortgage-calculator",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:38:15Z"
+      },
+      {
+        "slug": "/calculators/retirement-planning",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:36:13Z"
+      },
+      {
+        "slug": "/calculators/loan-calculator",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:36:14Z"
+      },
+      {
+        "slug": "/calculators/debt-payoff",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:44:43Z"
+      },
+      {
+        "slug": "/calculators/tax-calculator",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:38:15Z"
+      },
+      {
+        "slug": "/calculators/401k-calculator",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:44:43Z"
+      },
+      {
+        "slug": "/calculators/investment-return",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:50:44Z"
+      },
+      {
+        "slug": "/calculators/budget-planner",
+        "coverage": "Submitted and indexed",
+        "indexed": false,
+        "crawl": "2026-06-01T23:38:15Z"
+      }
+    ],
+    "summary": "0/10 indexed"
   }
 }

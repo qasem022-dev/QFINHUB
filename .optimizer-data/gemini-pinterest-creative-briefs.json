@@ -1,0 +1,156 @@
+[
+  {
+    "pt": "hero-answer-card",
+    "hk": "How much house on your income?",
+    "hl": "How Much House Can You Afford?",
+    "sh": "Your personalized home budget in 30 seconds",
+    "nr": "$300K\u2013$400K",
+    "sp": [
+      "Based on your income & debts",
+      "Includes taxes & insurance",
+      "Compare 15yr vs 30yr"
+    ],
+    "ct": "Calculate Your Max Budget \u2192",
+    "bg": "Clean white with teal gradient accent strip at top. Premium fintech dashboard feel.",
+    "cl": {
+      "accent": "#0F766E",
+      "bg": "#FAFBFC",
+      "card": "#FFFFFF",
+      "card_tint": "#F0FDFA",
+      "text": "#0F172A",
+      "sub": "#64748B"
+    },
+    "lo": "Vertical flow: gradient accent strip (top 8%), large headline (10-18%), giant hero answer card in center (20-60%) showing the price range in 96px bold teal on a tinted inner card with subtle shadow, 3 supporting assumption chips below (60-70%), large CTA pill button (75-82%), trust footer (bottom 8%).",
+    "ti": "How Much House Can You Afford on Your Income? Free Calculator",
+    "ds": "See exactly how much home you can afford based on your income, debts, and down payment. Our free calculator factors in property taxes, insurance, PMI, and HOA fees. Compare 15-year vs 30-year loans instantly. No signup required \u2014 get your number in 30 seconds.",
+    "kw": "how much house can i afford",
+    "br": "Mortgage Calculators",
+    "sr": "To get your exact home affordability number before house hunting \u2014 save it as your budget reference.",
+    "cr": "The calculator gives a personalized number, not a generic range. Click to see your specific maximum.",
+    "ut": "v4_hero_afford_income"
+  },
+  {
+    "pt": "split-winner-showdown",
+    "hk": "Snowball or Avalanche \u2014 which wins?",
+    "hl": "Debt Snowball vs Avalanche",
+    "sh": "One saves you thousands more in interest",
+    "nr": "$2,347",
+    "sp": [
+      "Snowball: quick wins, motivation first",
+      "Avalanche: minimum interest, maximum savings",
+      "\u2605 Winner depends on your debt mix"
+    ],
+    "ct": "Compare Your Strategy \u2192",
+    "bg": "Split-screen battle: left card slate-gray tint, right card green-tinted with gold winner badge. White background overall.",
+    "cl": {
+      "accent": "#059669",
+      "accent2": "#7C3AED",
+      "bg": "#FAFBFC",
+      "card_left": "#F1F5F9",
+      "card_right": "#F0FDFA",
+      "text": "#0F172A",
+      "winner": "#D97706"
+    },
+    "lo": "Vertical flow: purple gradient accent strip (top 6%), large headline + subhead (8-18%), TWO large side-by-side cards filling center (20-62%) \u2014 left card: Snowball stats with slate tint, right card: Avalanche with green tint + \u2605 WINNER badge + gold border highlight, victory bar spanning full width (63-68%) declaring the savings amount, large CTA button (72-80%), trust footer.",
+    "ti": "Debt Snowball vs Avalanche Calculator \u2014 Which Pays Off Faster?",
+    "ds": "The avalanche method saves $2,347 more in interest on a typical $30K debt. But snowball pays the first debt 8 months sooner. Which is right for you? Compare both strategies side by side with your exact debts. Free, instant results.",
+    "kw": "debt snowball vs avalanche calculator",
+    "br": "Debt Payoff Tools",
+    "sr": "To see the exact dollar difference between the two strategies for your specific debts.",
+    "cr": "The comparison calculator shows your personal savings \u2014 not just generic advice. Click to run your numbers.",
+    "ut": "v4_split_snowball_avalanche"
+  },
+  {
+    "pt": "calc-result-reveal",
+    "hk": "Your monthly payment, revealed.",
+    "hl": "What's Your Monthly Payment?",
+    "sh": "See principal, interest, taxes, and insurance",
+    "nr": "$2,528",
+    "sp": [
+      "Principal & Interest: $2,022",
+      "Taxes & Insurance: ~$506",
+      "Total monthly: $2,528"
+    ],
+    "ct": "See Your Exact Payment \u2192",
+    "bg": "Dark premium finance dashboard. Deep slate background with white calculator cards. Teal accent.",
+    "cl": {
+      "accent": "#0F766E",
+      "bg": "#0F172A",
+      "card": "#1E293B",
+      "card_light": "#FFFFFF",
+      "text": "#F8FAFC",
+      "sub": "#94A3B8",
+      "highlight": "#0F766E"
+    },
+    "lo": "Dark premium background. Top: teal accent bar. Headline in white (8-16%). LARGE calculator result card centered (18-65%): dark card with 3 input rows, divider, GIANT $2,528 in 96px white bold with teal underline, breakdown line below. Bottom: CTA pill on teal fill (72-80%). Trust footer. Dramatic, high-end fintech look.",
+    "ti": "Mortgage Payment Calculator \u2014 See Your Exact Monthly Cost | Free",
+    "ds": "A $400,000 home at 6.5% interest with 20% down equals roughly $2,528/month including taxes and insurance. Adjust the home price, rate, or down payment to see your exact number instantly. Free calculator, no signup.",
+    "kw": "mortgage calculator monthly payment",
+    "br": "Mortgage Calculators",
+    "sr": "To reference realistic payment numbers while house shopping \u2014 save as your budget cheat sheet.",
+    "cr": "Instantly see YOUR payment \u2014 not a generic estimate. Change any number and recalculate in real time.",
+    "ut": "v4_calc_result_payment"
+  },
+  {
+    "pt": "warning-cost-cards",
+    "hk": "This mistake costs $50K+ over 30 years.",
+    "hl": "Can You Really Afford This Home?",
+    "sh": "4 hidden costs most buyers forget",
+    "nr": "$50,000+",
+    "sp": [
+      "Forgetting PMI: $100\u2013$300/mo extra",
+      "Skipping rate shopping: 0.5% = $30K loss",
+      "Ignoring maintenance: 1% of home value/year",
+      "Maxing budget: no room for emergencies"
+    ],
+    "ct": "Check Your Real Budget \u2192",
+    "bg": "Warm ivory with subtle red-to-amber gradient accent strip at top. Warning card layout.",
+    "cl": {
+      "accent": "#DC2626",
+      "bg": "#FFFBEB",
+      "card": "#FFFFFF",
+      "text": "#0F172A",
+      "sub": "#64748B",
+      "warn_border": "#FECACA"
+    },
+    "lo": "Amber-red gradient strip (top 6%). Headline + subhead (8-18%). 4 WARNING CARDS stacked vertically (20-68%), each with red left accent bar, \u26a0 icon, bold title, and cost description. Each card 160px tall with generous spacing. CTA button in red fill (72-80%). Trust footer. Warm ivory background makes red warnings pop.",
+    "ti": "Home Affordability Mistakes \u2014 Are You Really Ready to Buy?",
+    "ds": "Most first-time buyers forget these 4 costs: PMI, rate shopping differences, annual maintenance, and emergency buffer. Combined, they can add $50,000+ to your home's true cost. Use our free calculator to see your real affordable number \u2014 not just the bank's maximum.",
+    "kw": "can i afford a 400k home hidden costs",
+    "br": "Mortgage Calculators",
+    "sr": "To avoid costly mistakes \u2014 save this as your pre-purchase checklist.",
+    "cr": "The calculator factors in ALL costs, not just principal and interest. See your true monthly number.",
+    "ut": "v4_warning_afford_mistakes"
+  },
+  {
+    "pt": "checklist-board",
+    "hk": "7 numbers to check before buying.",
+    "hl": "Before You Buy a Home",
+    "sh": "Calculate these 7 numbers first",
+    "nr": "",
+    "sp": [
+      "\u2460 Credit Score \u2014 620+ minimum",
+      "\u2461 DTI Ratio \u2014 keep under 36%",
+      "\u2462 Down Payment \u2014 3.5% to 20%",
+      "\u2463 Emergency Fund \u2014 3-6 months saved"
+    ],
+    "ct": "Calculate All 7 Free \u2192",
+    "bg": "Warm cream with soft amber glow. Saveable checklist aesthetic.",
+    "cl": {
+      "accent": "#D97706",
+      "bg": "#FFFBEB",
+      "card": "#FFFFFF",
+      "text": "#0F172A",
+      "sub": "#64748B",
+      "check": "#059669"
+    },
+    "lo": "Amber gradient strip (top 6%). Headline + subhead (8-18%). CHECKLIST GRID (20-70%): 6 cards in 2 columns \u00d7 3 rows. Each card: green circle with number, bold label, short description below. 'Save this checklist' tag below grid. Large CTA button (75-82%). Warm, inviting, saveable design.",
+    "ti": "7 Numbers to Calculate Before Buying a Home \u2014 Free Checklist",
+    "ds": "Before you start house hunting, run these 7 calculations: credit score, DTI ratio, down payment, monthly payment, closing costs, emergency fund, and 30-year total cost. Our free calculators handle all 7 \u2014 instant results, no signup.",
+    "kw": "what to calculate before buying a home",
+    "br": "Mortgage Calculators",
+    "sr": "The ultimate pre-homebuying checklist \u2014 save it and check off each number as you calculate it.",
+    "cr": "All 7 calculators in one place. Click to start with the most important: your affordability number.",
+    "ut": "v4_checklist_7_numbers"
+  }
+]

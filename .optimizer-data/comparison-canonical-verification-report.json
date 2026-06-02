@@ -1,0 +1,63 @@
+{
+  "title": "Comparison Canonical Verification",
+  "generated": "2026-06-02T23:58:57.838445",
+  "results": [
+    {
+      "label": "compare:best-mortgage-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-mortgage-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-compound-interest-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-compound-interest-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-retirement-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-retirement-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-loan-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-loan-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-401k-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-401k-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-tax-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-tax-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-investment-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-investment-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    },
+    {
+      "label": "compare:best-budget-calculator",
+      "status": 200,
+      "canonical": "https://www.qfinhub.com/compare/best-budget-calculator",
+      "canonical_correct": true,
+      "robots": "index, follow"
+    }
+  ],
+  "summary": "8/8 canonicals correct"
+}

@@ -1,69 +1,49 @@
 {
-  "title": "Phase 13C.2 \u2014 Internal Authority Boost",
-  "generated": "2026-06-02T01:48:31.915524+00:00",
+  "title": "Internal Authority Boost Day 3",
+  "generated": "2026-06-02T21:01:00.225252+00:00",
   "target": 10,
-  "applied": 10,
-  "method": "Blog posts already have rich relatedCalculators arrays linking to core calculators. All indexed blog posts link to 3-5 calculators each via sidebar + in-content CTAs.",
-  "entries": [
+  "applied": 8,
+  "method": "Comparison pages now have proper canonicals + link to relevant calculators in content",
+  "links": [
     {
-      "source": "/blog/debt-snowball-vs-debt-avalanche",
-      "target": "/calculators/debt-payoff",
-      "anchor": "Debt Payoff Calculator",
-      "reason": "Direct topic match"
+      "source": "/compare/best-mortgage-calculator",
+      "target": "/calculators/mortgage-calculator",
+      "anchor": "Mortgage Calculator"
     },
     {
-      "source": "/blog/complete-guide-to-retirement-planning-2026",
-      "target": "/calculators/retirement-planning",
-      "anchor": "Retirement Planning Calculator",
-      "reason": "Core topic"
-    },
-    {
-      "source": "/blog/complete-guide-to-retirement-planning-2026",
-      "target": "/calculators/401k-calculator",
-      "anchor": "401(k) Calculator",
-      "reason": "Sub-topic"
-    },
-    {
-      "source": "/blog/understanding-tax-brackets",
-      "target": "/calculators/tax-calculator",
-      "anchor": "Tax Calculator",
-      "reason": "Direct match"
-    },
-    {
-      "source": "/blog/how-to-pay-off-credit-card-debt",
-      "target": "/calculators/credit-card-payoff",
-      "anchor": "Credit Card Payoff Calculator",
-      "reason": "Direct match"
-    },
-    {
-      "source": "/blog/how-inflation-affects-savings",
+      "source": "/compare/best-compound-interest-calculator",
       "target": "/calculators/compound-interest",
-      "anchor": "Compound Interest Calculator",
-      "reason": "Inflation vs returns"
+      "anchor": "Compound Interest Calculator"
     },
     {
-      "source": "/blog/20000-loan-8pct-5yr",
-      "target": "/calculators/loan-calculator",
-      "anchor": "Loan Calculator",
-      "reason": "Topic match"
-    },
-    {
-      "source": "/decision/how-much-house-can-i-afford",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "Mortgage Affordability Calculator",
-      "reason": "Core destination"
-    },
-    {
-      "source": "/decision/snowball-vs-avalanche-which-wins",
-      "target": "/calculators/debt-payoff",
-      "anchor": "Debt Payoff Calculator",
-      "reason": "Core destination"
-    },
-    {
-      "source": "/decision/how-much-do-i-need-to-retire",
+      "source": "/compare/best-retirement-calculator",
       "target": "/calculators/retirement-planning",
-      "anchor": "Retirement Calculator",
-      "reason": "Direct match"
+      "anchor": "Retirement Calculator"
+    },
+    {
+      "source": "/compare/best-loan-calculator",
+      "target": "/calculators/loan-calculator",
+      "anchor": "Loan Calculator"
+    },
+    {
+      "source": "/compare/best-401k-calculator",
+      "target": "/calculators/401k-calculator",
+      "anchor": "401(k) Calculator"
+    },
+    {
+      "source": "/compare/best-tax-calculator",
+      "target": "/calculators/tax-calculator",
+      "anchor": "Tax Calculator"
+    },
+    {
+      "source": "/compare/best-investment-calculator",
+      "target": "/calculators/investment-return",
+      "anchor": "Investment Calculator"
+    },
+    {
+      "source": "/compare/best-budget-calculator",
+      "target": "/calculators/budget-planner",
+      "anchor": "Budget Calculator"
     }
   ]
 }

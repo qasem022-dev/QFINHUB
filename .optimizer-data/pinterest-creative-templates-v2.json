@@ -1,0 +1,165 @@
+{
+  "title": "Pinterest V2 Creative Templates",
+  "created": "2026-06-02T17:00:00",
+  "version": "2.0 \u2014 premium finance pins, scroll-stopping design",
+  "principles": {
+    "hook": "Headline must stop the scroll \u2014 specific number, bold claim, or urgent question",
+    "promise": "One pin = one clear idea. Don't overload.",
+    "visual_answer": "Pin should teach, compare, warn, or calculate \u2014 utility over decoration",
+    "mobile_first": "All text readable at 200px wide on phone screen",
+    "premium_look": "Clean fintech dashboard style \u2014 not Canva template, not AI slop",
+    "click_reason": "User must know exactly what clicking gives them \u2014 'Calculate yours free'"
+  },
+  "dimensions": "1000\u00d71500px (standard Pinterest), safe zone 80px margins top/bottom",
+  "templates": {
+    "big-number-answer": {
+      "name": "Big Number Answer Pin",
+      "purpose": "Give a direct, specific number-based answer to a financial question",
+      "layout": {
+        "top_20pct": "Section header: '\ud83c\udfe0 Home Affordability' or category label, small QFINHUB mark",
+        "middle_15pct": "BIG HEADLINE \u2014 48-56px bold, 2 lines max, high contrast",
+        "center_35pct": "GIANT NUMBER CARD \u2014 the answer, e.g. '$300K\u2013$400K' in 80-96px bold, centered on a clean card with subtle shadow, accent color for numbers",
+        "below_card": "2-3 assumptions in small text (16-18px): 'Based on 28% DTI, 20% down, 6.5% rate'",
+        "bottom_20pct": "CTA button: 'Calculate Yours Free \u2192' or 'Get Your Exact Number \u2192', rounded pill, accent color fill, white text, 28-32px",
+        "branding": "QFINHUB text/logo 14px bottom-right, subtle gray"
+      },
+      "colors": {
+        "background": "#FAFBFC (cool white) or #0F172A (dark premium)",
+        "card": "#FFFFFF with #E2E8F0 1px border, 16px radius",
+        "accent": "#0F766E (teal) or #2563EB (blue) or #059669 (emerald)",
+        "text_primary": "#0F172A (slate-900)",
+        "text_secondary": "#64748B (slate-500)"
+      },
+      "typography": "Sans-serif bold for headline, medium for assumptions, semibold for CTA, all 1.2 line-height",
+      "dos": [
+        "Giant readable number",
+        "2-3 assumptions max",
+        "Clean card with subtle shadow",
+        "One accent color only"
+      ],
+      "donts": [
+        "No tiny chart labels",
+        "No photos of houses/people",
+        "No AI-generated illustrations",
+        "No gradient backgrounds"
+      ]
+    },
+    "split-decision": {
+      "name": "Split Decision Pin",
+      "purpose": "Compare two financial options side-by-side with clear winner",
+      "layout": {
+        "top_15pct": "Section header + QFINHUB mark",
+        "middle_15pct": "HEADLINE: 'X vs Y: Which [saves more / pays off faster / costs less]?' \u2014 44-52px bold",
+        "center_45pct": "TWO CARDS SIDE BY SIDE (420px each with 20px gap): left card = Option A, right card = Option B. Each card: option name (20px), key stat (36px bold), 2 'Best if...' bullets (14px). Winner gets \u2605 badge and subtle glow border.",
+        "below_cards": "Victory bar: 'Winner: Avalanche saves $2,347 more' \u2014 18px, accent background strip",
+        "bottom_15pct": "CTA: 'Compare Your Numbers \u2192' or 'Try Both Free \u2192'",
+        "branding": "QFINHUB at bottom"
+      },
+      "colors": {
+        "background": "#FAFBFC",
+        "card_a": "#FFFFFF with border",
+        "card_b": "#FFFFFF with border",
+        "winner_border": "#059669 (emerald) 2px glow",
+        "accent": "#7C3AED (purple) or #2563EB (blue)"
+      },
+      "dos": [
+        "Clear winner label",
+        "2 'Best if' bullets per side",
+        "One key stat per side (not 10 numbers)",
+        "\u2605 badge on winner"
+      ],
+      "donts": [
+        "No 50/50 draw (pick a winner)",
+        "No spreadsheets or dense tables",
+        "No tiny comparison text"
+      ]
+    },
+    "checklist": {
+      "name": "Checklist Pin",
+      "purpose": "Make the pin saveable \u2014 users save checklists to reference later",
+      "layout": {
+        "top_15pct": "Section header + QFINHUB mark",
+        "middle_15pct": "HEADLINE: 'Before You [Action], Check These [N] Numbers' \u2014 44-52px bold",
+        "center_50pct": "CHECKLIST CARDS stacked vertically with 10px gaps. Each item: number (1-7 in circle), label (20-22px semibold), optional one-line explainer (14px gray). Items vertically spaced for readability.",
+        "bottom_15pct": "CTA: 'Use the Free Calculator \u2192' or 'Calculate All [N] Free \u2192'",
+        "branding": "QFINHUB at bottom"
+      },
+      "colors": {
+        "background": "#FFFBEB (warm cream) or #FAFBFC",
+        "check_circles": "#059669 (green) fill, white number inside",
+        "accent": "#059669"
+      },
+      "dos": [
+        "Numbers in circles (1-7)",
+        "Clean vertical stack",
+        "One-line explainers where helpful",
+        "Save-worthy content"
+      ],
+      "donts": [
+        "No tiny checkboxes",
+        "No 15+ items (stick to 5-7)",
+        "No wall of text",
+        "No generic 'budget better' advice"
+      ]
+    },
+    "mistake": {
+      "name": "Mistake Pin",
+      "purpose": "Create curiosity + saves by warning about costly errors",
+      "layout": {
+        "top_15pct": "Section header + QFINHUB mark",
+        "middle_15pct": "HEADLINE: '[N] [Topic] Mistakes That [Cost You / Make It Unaffordable]' \u2014 44-52px bold",
+        "center_50pct": "MISTAKE CARDS (vertical stack). Each: \u26a0 icon + mistake title (18-20px bold) + cost/solution (14px). Alternating slight background strips for visual rhythm. Red/amber accent border left side.",
+        "bottom_15pct": "CTA: 'Check Your Numbers \u2192' or 'Avoid These \u2192 Use Free Calculator'",
+        "branding": "QFINHUB at bottom"
+      },
+      "colors": {
+        "background": "#FEF2F2 (light red tint) or #FAFBFC",
+        "accent": "#DC2626 (red) or #EA580C (orange)",
+        "mistake_cards": "#FFFFFF with red left border accent"
+      },
+      "dos": [
+        "Numbered mistakes (3-5)",
+        "Specific cost/impact per mistake",
+        "Red accent for urgency",
+        "\u26a0 icon visual hooks"
+      ],
+      "donts": [
+        "No fear-mongering",
+        "No generic 'save money' advice",
+        "No stock photos of stressed people",
+        "No tiny text warnings"
+      ]
+    },
+    "calculator-result": {
+      "name": "Mini Calculator Result Pin",
+      "purpose": "Show a realistic calculator output \u2014 feels like a peek at the actual tool",
+      "layout": {
+        "top_15pct": "Section header + QFINHUB mark",
+        "middle_15pct": "HEADLINE: '[Scenario] \u2014 What's the [Result]?' \u2014 44-52px bold",
+        "center_40pct": "CALCULATOR RESULT CARD \u2014 clean white card with: INPUTS row (3 items, small 14px gray labels + 18px values), thin divider line, RESULT row (BIG number 64-72px bold in accent color), small 'per month' / 'total' label",
+        "below_result": "Alternative scenario tease: 'Pay off 3 years early? Save $1,759 \u2192' (16px, accent color link style)",
+        "bottom_15pct": "CTA: 'Calculate Yours \u2192' or 'Try Different Numbers \u2192'",
+        "branding": "QFINHUB at bottom"
+      },
+      "colors": {
+        "background": "#FAFBFC",
+        "card": "#FFFFFF with #E2E8F0 border, 16px radius",
+        "accent": "#0F766E (teal) or #2563EB (blue)",
+        "input_labels": "#94A3B8",
+        "result_number": "#0F766E (teal bold)"
+      },
+      "dos": [
+        "Realistic calculator look",
+        "3 inputs + 1 result",
+        "Clean input\u2192output flow",
+        "Tease for alternative scenario"
+      ],
+      "donts": [
+        "No actual screenshots",
+        "No complex multi-row tables",
+        "No formulas visible",
+        "No browser UI chrome"
+      ]
+    }
+  }
+}

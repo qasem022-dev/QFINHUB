@@ -1,123 +1,33 @@
 {
-  "title": "QFINHUB Phase 13C \u2014 Day 1 Google/GSC Growth Execution Report",
-  "generated": "2026-06-02T01:26:38.051753+00:00",
-  "phase": "13C",
-  "day": 1,
-  "ctr_changes_applied": {
-    "total_targeted": 5,
-    "applied": 4,
-    "skipped": 1,
-    "details": [
-      {
-        "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-        "old_title": "$20,000 Loan at 8% for 5 Years \u2014 Exact Monthly Payment + Full Amortization Schedule",
-        "new_title": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment: $405.53 (Free Calculator)",
-        "status": "APPLIED",
-        "reason": "Put exact payment in title for position 11 (near page 1)"
-      },
-      {
-        "page": "/guides/how-to-use-retirement-income",
-        "old_pattern": "Free {calcTitle} Guide 2026 \u2014 Calculate in 30 Seconds (No Signup)",
-        "new_pattern": "How to Use {calcTitle} \u2014 Step-by-Step Guide 2026 (Free Calculator)",
-        "status": "APPLIED",
-        "bug_fixed": "Double 'Free Free' prefix (pitfall #33)"
-      },
-      {
-        "page": "/tools/afford-100k-40k-6-5pct",
-        "old_title": "$100k Salary: How Much Mortgage Can I Afford in 2026? Free Calculator",
-        "new_title": "How Much House Can I Afford on $100K Income? \u2014 Free Calculator 2026",
-        "status": "APPLIED",
-        "also_fixed": "($XXX) placeholder in meta description"
-      },
-      {
-        "page": "/calculators/tax/philadelphia-pa",
-        "old_title": "Tax Calculator for Philadelphia, PA (2026) \u2014 Free & Instant",
-        "new_title": "Philadelphia, PA Tax Calculator (2026) \u2014 Free & Instant",
-        "status": "APPLIED",
-        "reason": "City name at front for SERP relevance"
-      },
-      {
-        "page": "/tools/loan-20k-5yr-8pct",
-        "status": "SKIPPED",
-        "reason": "Canonicalized to /calculators/loan-calculator. Redirected work to blog post.",
-        "alternative": "Improved /blog/20000-loan-at-8-percent-for-5-years-monthly-payment (covers identical query)"
-      }
-    ]
+  "title": "Phase 13C Day 3 \u2014 Light Monitoring Day",
+  "generated": "2026-06-02T20:55:01.860273+00:00",
+  "status": "WAITING FOR GOOGLE",
+  "core_calculators": {
+    "checked": 10,
+    "indexed": 0,
+    "status": "All INDEXING_ALLOWED \u2014 crawled but not indexed. Next check: Jun 4.",
+    "note": "Expected. Young site, manual request ~36h ago. 48h minimum."
   },
-  "position_boost_changes": {
-    "applied": 3,
-    "skipped": 0,
-    "details": [
-      "Blog 20000-loan: Content already strong (TL;DR, amortization table, FAQ, internal links). Title improvement is the main change.",
-      "Philadelphia tax: Title/meta improved. Page is one of 3 geo pages kept indexable.",
-      "Afford-100k: Title/meta improved. Already linked from decision page and mortgage calculator."
-    ]
+  "gsc_search_analytics": {
+    "status": "UNAVAILABLE via API (pitfall #28)",
+    "note": "Qasem should check GSC web UI for latest data"
   },
-  "core_calculator_indexing_monitor": {
-    "manual_request_done": true,
-    "request_date": "2026-06-02T15:00:00+03:00",
-    "next_check": "2026-06-04T15:00:00+03:00",
-    "re_requested_today": false,
-    "indexing_api_used": false,
-    "status": "Waiting for Google \u2014 48h minimum"
+  "pinterest": {
+    "status": "MONITORING \u2014 ~36h since post",
+    "note": "Check Pinterest app/web for impressions/saves/clicks. Full evaluation at 48h."
   },
-  "zero_click_diagnosis_summary": "5 pages analyzed. Root causes: position depth, title/intent mismatch, formula-slug perception. Fixes applied where indexable (4/5).",
-  "homepage_check": {
-    "status": 200,
-    "calculator_links": "15 unique (covering all 10 core calculators)",
-    "decision_page_links": "6 unique",
-    "verdict": "OK \u2014 homepage links are intact and functioning"
+  "technical_status": {
+    "guide_canonicals": "\u2705 14/14 verified",
+    "comparison_canonicals": "\u2705 Fix applied",
+    "all_other_pages": "\u2705 Canonicals present",
+    "deploy": "bae5ea9 on Vercel"
   },
-  "deploy": {
-    "method": "git push \u2192 GitHub integration auto-deploy",
-    "commit": "cf3f17e",
-    "files_changed": "4 source files + 7 JSON trackers",
-    "deploy_time_estimate": "60-120s via Vercel GitHub integration"
-  },
-  "sitemap": {
-    "submitted": true,
-    "note": "GSC sitemap submission requires webmasters scope (not readonly). Script may need Qasem to re-auth."
-  },
-  "errors_and_blockers": [
-    "/guides/how-to-use-retirement-income missing canonical tag \u2014 not fixed in this pass (needs page.tsx template change)",
-    "GSC data lags 2-3 days \u2014 impact of today's changes won't be visible until Jun 5-6",
-    "Sitemap submission may require Qasem to re-authorize GSC token (scope issue)"
-  ],
-  "risky_automations_status": {
-    "pinterest_crons": "ALL PAUSED (4 posting/generation crons)",
-    "blog_agent": "PAUSED",
-    "scenario_generator": "PAUSED",
-    "scenario_upgrades": "PAUSED",
-    "seo_indexing_engine": "PAUSED",
-    "sitemap_ping": "PAUSED",
-    "indexing_api": "NOT USED"
-  },
-  "recommended_day_2_actions": [
-    "Check GSC for any immediate CTR improvements (may be too early \u2014 data lags)",
-    "Check Vercel Analytics for visitor counts",
-    "Verify blog 20000-loan new title is showing in SERP",
-    "Fix missing canonical tag on guide pages (all 125 guides)",
-    "If core calculator indexing succeeds (Jun 4 check), start internal linking push",
-    "Continue Pinterest review (await Qasem/ChatGPT approval of 13B.7 images)",
-    "Do NOT re-request indexing for core calculators until Jun 4",
-    "Check Pinterest for pin performance (impressions, saves, outbound clicks)",
-    "If test pins perform well, proceed with Phase 13B.9 (Pins 3-5) after approval"
-  ],
-  "confirmation": {
-    "no_indexing_api_used": true,
-    "no_mass_seo_changes": true,
-    "no_new_pages_created": true,
-    "no_risky_automations_restarted": true,
-    "no_decision_pages_added": true,
-    "no_outreach_sent": true
-  },
-  "pinterest_test_pins": {
-    "posted": true,
-    "pin_count": 2,
-    "pin1": "100k_income_home_affordability \u2192 Mortgage & Home Buying Tools",
-    "pin2": "debt_snowball_vs_avalanche \u2192 Debt Payoff Strategies",
-    "image_model": "gemini-3.1-flash-image",
-    "posting_method": "CloakBrowser via pin-creation-tool",
-    "pins_3_5_status": "NOT YET \u2014 awaiting approval"
-  }
+  "risky_automations": "ALL PAUSED",
+  "indexing_api_used": false,
+  "tomorrow_priority": [
+    "Re-check core calculators (full 48h)",
+    "Check Pinterest for 48h performance data",
+    "Ask Qasem to check GSC web UI for impressions/clicks",
+    "If any calculators indexed \u2192 internal link push from all 125 guide pages"
+  ]
 }

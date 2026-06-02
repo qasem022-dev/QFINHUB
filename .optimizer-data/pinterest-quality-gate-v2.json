@@ -1,0 +1,58 @@
+{
+  "title": "Pinterest V2 Quality Gate",
+  "created": "2026-06-02T17:00:00",
+  "version": "2.0",
+  "minimum_publish_score": 85,
+  "scoring": {
+    "hook_strength": {
+      "max": 20,
+      "description": "Does the headline make you stop scrolling? Is it specific, urgent, or surprising?"
+    },
+    "visual_attractiveness": {
+      "max": 20,
+      "description": "Does it look premium fintech, not AI-generated slop? Clean, modern, trustworthy?"
+    },
+    "mobile_readability": {
+      "max": 15,
+      "description": "Is text readable at 200px wide on phone? Font sizes adequate? Contrast sufficient?"
+    },
+    "usefulness_saveability": {
+      "max": 15,
+      "description": "Would someone save this pin? Does it teach, warn, compare, or calculate something useful?"
+    },
+    "destination_match": {
+      "max": 10,
+      "description": "Does the pin's promise match what the landing page delivers? No bait-and-switch."
+    },
+    "keyword_title_quality": {
+      "max": 10,
+      "description": "Primary keyword near beginning? Title 40-80 chars? No clickbait?"
+    },
+    "cta_clarity": {
+      "max": 10,
+      "description": "Clear action? User knows what clicking gives them? CTA specific and benefit-driven?"
+    }
+  },
+  "hard_fail_rules": [
+    "Title over 100 characters",
+    "More than 4 bullet points",
+    "Destination URL missing UTM tracking",
+    "Destination page is noindexed, 404, or redirects",
+    "Generic stock photo or AI-generated people",
+    "Cluttered layout with >3 font sizes",
+    "Headline unreadable at 200px (text too small)",
+    "No CTA visible",
+    "Multiple competing ideas on one pin",
+    "Clickbait or misleading claim",
+    "No QFINHUB branding",
+    "Tiny text under 14px equivalent"
+  ],
+  "quality_diminishing_rules": [
+    "Generic 'free calculator' CTA instead of specific action (-5)",
+    "Keyword not in first 5 words of title (-3)",
+    "Description under 100 characters (-5)",
+    "No 'why this matters' angle (-3)",
+    "Overly similar to previous day's pin (-5)",
+    "Formula-slug in visible URL or title (-5)"
+  ]
+}
