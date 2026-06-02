@@ -1,6 +1,6 @@
 {
   "title": "Technical Cleanup Day 2",
-  "generated": "2026-06-02T01:57:10.517009+00:00",
+  "generated": "2026-06-02T02:21:07.173831+00:00",
   "checks": {
     "sitemap_no_noindex_urls": "PASS \u2014 sitemap.ts filters out noindexed variants",
     "sitemap_no_404": "PASS \u2014 no 404s detected in sitemap",
@@ -8,12 +8,13 @@
     "news_sitemap_valid": "PASS \u2014 submitted successfully",
     "robots_txt_correct": "PASS \u2014 Allow: /, 2 sitemaps declared",
     "scenario_sitemap_not_submitted": "PASS \u2014 removed from GSC",
-    "guide_canonicals_fixed": "FIXED \u2014 self-referencing canonical added to all 125 guide pages",
+    "guide_canonicals_fixed": "\u2705 FIXED \u2014 self-referencing canonical on all 125 guide pages",
     "no_accidental_noindex_priority": "PASS \u2014 decision pages, core calcs, blog all indexable",
     "no_broken_internal_links": "PASS \u2014 homepage verified (15 calc, 6 decision links)",
     "no_broken_canonical_core": "PASS \u2014 all 10 core calcs self-canonical",
     "no_duplicate_title_meta": "PASS \u2014 Day 1 changes were meta-only, no duplicate titles",
-    "sitemap_guide_pages_count": 125
+    "sitemap_guide_pages_count": 125,
+    "comparison_canonicals_fixed": "\u2705 FIXED \u2014 added canonical + robots to comparison pages"
   },
   "issues_resolved": [
     "Guide canonical tags: Added self-referencing canonical to all 125 guide pages",
