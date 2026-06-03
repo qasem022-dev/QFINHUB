@@ -1,120 +1,120 @@
 {
-  "title": "CTR Rescue Day 4",
-  "generated": "2026-06-03T02:32:00.000000+00:00",
+  "title": "CTR Rescue Day 3 (Phase 13C.4)",
+  "generated": "2026-06-03T01:49:57.826365Z",
   "target": 15,
   "reviewed": 15,
-  "applied": 12,
-  "note": "Extended CTR rescue to 12 new pages across guides, blog posts, and decision pages. 3 pages already optimized from prior days. All improvements focus on title-meta intent matching and SERP snippet optimization.",
+  "applied": 10,
+  "skipped": 5,
+  "note": "Day 3 CTR rescue. 10 pages improved across guides, comparison pages, and indexed tool variants. 5 pages skipped (3 geo pages noindexed, 2 scenarios noindexed). All improvements focus on title-meta intent matching and SERP snippet optimization.",
   "reviewed_pages": [
     {
-      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "status": "ALREADY FIXED Day 1 — title now includes $405.53 answer"
+      "url": "/compare/best-mortgage-calculator",
+      "impressions_est": "5-10",
+      "position_est": "15-25",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title already strong: 'Best Mortgage Calculator 2026 \u2014 Free, Fast & Accurate | QFINHUB'. Meta description optimized for click-through: added 'Side-by-side comparison vs Bankrate, NerdWallet, Zillow.' Added 'vs' comparison angle to meta for query intent match."
     },
     {
-      "url": "/guides/how-to-use-retirement-income",
-      "status": "ALREADY FIXED Day 1 — fixed double-Free bug, matches 'how to use' intent"
+      "url": "/compare/best-compound-interest-calculator",
+      "impressions_est": "3-8",
+      "position_est": "20-35",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title: 'Best Compound Interest Calculator 2026 \u2014 Free & Fast'. Meta now includes 'Compare top compound interest calculators side-by-side.'"
     },
     {
-      "url": "/tools/afford-100k-40k-6-5pct",
-      "status": "ALREADY FIXED Day 1 — title matches 'how much house can I afford' intent"
+      "url": "/compare/best-retirement-calculator",
+      "impressions_est": "3-8",
+      "position_est": "20-35",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title: 'Best Retirement Calculator 2026 \u2014 Plan Your Future Free.' Meta emphasizes 'Compare retirement planning tools \u2014 no signup required.'"
     },
     {
-      "url": "/blog/how-much-mortgage-afford-100k-salary",
-      "status": "IMPROVED — title already strong: 'How Much Mortgage Can I Afford on $100K Salary? Exact Numbers'. Added mortgage-affordability calc link in relatedCalculators."
+      "url": "/compare/best-loan-calculator",
+      "impressions_est": "3-8",
+      "position_est": "20-35",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title: 'Best Loan Calculator 2026 \u2014 Calculate Any Payment Free.' Meta adds 'Compare loan calculators with amortization schedules.'"
     },
     {
-      "url": "/blog/investment-calculator-withdrawals",
-      "status": "IMPROVED — title 'Investment Calculator With Withdrawals: Plan Your Retirement Income' matches intent. Added 401k-calculator and investment-return to relatedCalculators."
+      "url": "/tools/afford-130k-40k-7pct",
+      "impressions_est": "2-5",
+      "position_est": "20-40",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title now includes the answer: 'How Much House Can I Afford on $130K? At 7% Interest \u2014 Free Calculator.' Former generic title replaced with question+answer format."
     },
     {
-      "url": "/blog/retire-by-40-calculator-how-much-needed",
-      "status": "IMPROVED — title includes exact answer framing 'How Much Do You Need Saved?'. Added 401k-calculator and investment-return to relatedCalculators."
+      "url": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "impressions_est": "10-20",
+      "position_est": "8-15",
+      "ctr_est": "<0.5%",
+      "action": "IMPROVED",
+      "changes": "Title front-loaded: 'Fed 2025 Report: How the Economy Affects Your Mortgage & Savings.' Meta now summarizes key finding: 'The Federal Reserve's 2025 household economic well-being report reveals critical insights for mortgage borrowers and savers.'"
     },
     {
-      "url": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "status": "IMPROVED — title strong with 'Proven Strategies That Actually Work'. Added debt-payoff to relatedCalculators."
+      "url": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "impressions_est": "5-15",
+      "position_est": "10-20",
+      "ctr_est": "<0.5%",
+      "action": "IMPROVED",
+      "changes": "Title shortened for SERP: 'Mortgage Rates Hit 5-Week High: Why Homebuyers Aren't Worried (2025).' Meta: 'Despite rates climbing to a 5-week high, homebuyer demand remains resilient.'"
     },
     {
-      "url": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
-      "status": "IMPROVED — title uses exact COLA number. Added retirement-planning and 401k-calculator to relatedCalculators."
+      "url": "/guides/how-to-use-mortgage-affordability-calculator",
+      "impressions_est": "3-8",
+      "position_est": "20-40",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title: 'How to Use a Mortgage Affordability Calculator: Step-by-Step Guide (2026).' Added benefit hook in meta: 'Learn exactly what you can afford before you start house hunting.'"
     },
     {
-      "url": "/decision/how-much-emergency-fund-do-i-need",
-      "status": "PASS — title directly matches query intent 'How Much Emergency Fund?'"
+      "url": "/guides/how-to-use-compound-interest-calculator",
+      "impressions_est": "3-8",
+      "position_est": "20-40",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title: 'How to Use a Compound Interest Calculator: Grow Your Wealth (2026).' Meta: 'See how small investments compound into millions over time.'"
     },
     {
-      "url": "/decision/can-i-retire-with-500k-at-55",
-      "status": "PASS — strong title with exact numbers and scenario"
+      "url": "/guides/how-to-use-debt-payoff-calculator",
+      "impressions_est": "2-5",
+      "position_est": "25-45",
+      "ctr_est": "<1%",
+      "action": "IMPROVED",
+      "changes": "Title: 'How to Use a Debt Payoff Calculator: Get Out of Debt Faster (2026).' Meta: 'Choose between snowball and avalanche methods \u2014 see which saves you more.'"
     },
     {
-      "url": "/decision/pay-off-student-loans-or-invest",
-      "status": "IMPROVED — title matches decision intent. calculatorLinks already covers debt-payoff, loan-calculator, investment-return, compound-interest."
+      "url": "/calculators/loan-calculator/nashville-tn",
+      "status": "SKIPPED \u2014 Geo page, currently noindex. Redirect CTR work to parent /calculators/loan-calculator."
     },
     {
-      "url": "/guides/how-to-use-mortgage-affordability",
-      "status": "IMPROVED — guide title auto-generates as 'How to Use [Calculator] — Step-by-Step Guide 2026'. Strong intent match."
+      "url": "/calculators/loan-calculator/reno-nv",
+      "status": "SKIPPED \u2014 Geo page, currently noindex. Redirect CTR work to parent /calculators/loan-calculator."
     },
     {
-      "url": "/guides/how-to-use-compound-interest",
-      "status": "IMPROVED — guide title auto-generates with correct framing. Links to compound-interest calculator."
+      "url": "/calculators/tax-calculator/philadelphia-pa",
+      "status": "SKIPPED \u2014 Geo page, currently noindex. Redirect CTR work to parent /calculators/tax-calculator."
     },
     {
-      "url": "/guides/how-to-use-debt-payoff",
-      "status": "IMPROVED — guide title intent match for 'how to use debt payoff calculator'. Links to debt-payoff."
+      "url": "/scenario/401k-75000-10pct-10yr",
+      "status": "SKIPPED \u2014 Scenario page, noindex. Redirect to /calculators/401k-calculator."
     },
     {
-      "url": "/guides/how-to-use-budget-planner",
-      "status": "IMPROVED — guide title auto-generates correctly. Links to budget-planner."
+      "url": "/scenario/retirement-planning-5c0e8e25",
+      "status": "SKIPPED \u2014 Scenario page, noindex. Redirect to /calculators/retirement-planning."
     }
   ],
-  "new_ctr_improvements": [
-    {
-      "page": "/blog/how-much-mortgage-afford-100k-salary",
-      "improvement": "Added mortgage-affordability to relatedCalculators — increases cross-link CTR from blog to calculator hub"
-    },
-    {
-      "page": "/blog/investment-calculator-withdrawals",
-      "improvement": "Added 401k-calculator and investment-return to relatedCalculators — captures retirement/investment intent traffic"
-    },
-    {
-      "page": "/blog/retire-by-40-calculator-how-much-needed",
-      "improvement": "Added 401k-calculator and investment-return — bridges FIRE intent to retirement planning tools"
-    },
-    {
-      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "improvement": "Added debt-payoff to relatedCalculators — directly captures debt payoff calculator intent"
-    },
-    {
-      "page": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
-      "improvement": "Added retirement-planning and 401k-calculator — captures retirement planning searches triggered by COLA news"
-    },
-    {
-      "page": "/decision/pay-off-student-loans-or-invest",
-      "improvement": "calculatorLinks now covers all 4 relevant calc hubs — maximizes CTR from decision page to calculators"
-    },
-    {
-      "page": "/guides/how-to-use-mortgage-affordability",
-      "improvement": "Guide auto-title 'How to Use Mortgage Affordability — Step-by-Step Guide 2026 (Free Calculator)' matches 'how to use' queries"
-    },
-    {
-      "page": "/guides/how-to-use-compound-interest",
-      "improvement": "Guide title matches compound interest 'how to use' queries"
-    },
-    {
-      "page": "/guides/how-to-use-debt-payoff",
-      "improvement": "Guide links to debt-payoff calculator — captures debt payoff guide traffic"
-    },
-    {
-      "page": "/guides/how-to-use-budget-planner",
-      "improvement": "Guide title matches budget planner 'how to use' queries"
-    },
-    {
-      "page": "/decision/how-much-emergency-fund-do-i-need",
-      "improvement": "calculatorLinks covers budget-planner, savings-goal, debt-payoff — captures personal finance CTR"
-    },
-    {
-      "page": "/decision/can-i-retire-with-500k-at-55",
-      "improvement": "calculatorLinks covers retirement-planning, fire-calculator, compound-interest — retirement intent CTR"
-    }
-  ]
+  "daily_ctr_limit": 5,
+  "ctr_fixes_applied_today": 5,
+  "ctr_fixes_total": 10,
+  "improvement_types": {
+    "title_optimization": 7,
+    "meta_description": 8,
+    "content_restructure": 0,
+    "internal_linking": 0
+  }
 }

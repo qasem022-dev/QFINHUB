@@ -1,0 +1,157 @@
+{
+  "report": "Phase 13C.6 — Path A Core Calculator Growth Sprint Report",
+  "timestamp": "2026-06-03T03:00:00.000000+00:00",
+  "phase": "13C.6",
+  "path": "A — Core calculators confirmed indexed",
+  "deploy_commit": "ae9faba",
+  "deploy_status": "LIVE — all changes verified on production",
+
+  "executive_summary": "10/10 core calculators confirmed indexed. Applied CTR-optimized titles/metas to top 5 calculators. Added 20 internal authority links. Strengthened 5 tips and 1 example. Deployed and verified. All technical checks pass.",
+
+  "task_1_audit_summary": {
+    "file": ".optimizer-data/core-calculator-hub-audit.json",
+    "findings": {
+      "all_10_indexed": true,
+      "all_10_have_keyTakeaways": true,
+      "all_10_have_tips": true,
+      "all_10_have_examples": true,
+      "all_10_have_formulas": true,
+      "common_weakness": "Generic title pattern 'Name (2026) — Free Online Tool' used benefit-driven hook for CTR",
+      "blog_link_gaps": "mortgage-affordability (0→4), budget-planner (0→2) — both FIXED",
+      "weak_blog_links": "tax-calculator (1→2), 401k-calculator (1→2), investment-return (1→2) — STRENGTHENED"
+    }
+  },
+
+  "task_2_top5_improvements": {
+    "titles_updated": {
+      "mortgage-affordability": {"old": "Mortgage Affordability (2026) — Free Online Tool", "new": "How Much House Can I Afford? Free Calculator (2026)", "live": true},
+      "compound-interest": {"old": "Compound Interest (2026) — Free Online Tool", "new": "See Your Money Grow: Compound Interest Calculator (2026)", "live": true},
+      "mortgage-calculator": {"old": "Mortgage Calculator (2026) — Free Online Tool", "new": "Calculate Your Monthly Payment: Free Mortgage Calculator (2026)", "live": true},
+      "loan-calculator": {"old": "Loan Calculator (2026) — Free Online Tool", "new": "Plan Any Loan: Free Monthly Payment Calculator (2026)", "live": true},
+      "retirement-planning": {"old": "Retirement Planning (2026) — Free Online Tool", "new": "Will You Have Enough? Free Retirement Calculator (2026)", "live": true}
+    },
+    "meta_descriptions": "All 5 get custom benefit-front-loaded meta descriptions with specific value props",
+    "openGraph": "All 5 get matching OG titles and descriptions",
+    "tips_added": {
+      "mortgage-affordability": "+1 tip about pre-approval verification",
+      "compound-interest": "+1 tip about 'time in the market' comparison",
+      "mortgage-calculator": "+1 tip about PMI avoidance at 20% down",
+      "loan-calculator": "+1 tip about comparing total cost vs monthly payment",
+      "retirement-planning": "+1 tip about the 4% withdrawal rule"
+    },
+    "example_strengthened": "mortgage-affordability example now shows concrete $325,000 result from $6,000/month scenario",
+    "technical": "Backward-compatible: non-top-5 slugs fall through to original generic pattern via nullish coalescing (??)"
+  },
+
+  "task_3_internal_authority_links": {
+    "total_added": 20,
+    "blog_links_added": 12,
+    "decision_links_added": 8,
+    "breakdown": [
+      {"target": "mortgage-affordability", "source_type": "blog", "count": 4, "note": "Was 0, now 4 blog links"},
+      {"target": "budget-planner", "source_type": "blog", "count": 2, "note": "Was 0, now 2 blog links"},
+      {"target": "retirement-planning", "source_type": "blog", "count": 1},
+      {"target": "loan-calculator", "source_type": "blog", "count": 1},
+      {"target": "tax-calculator", "source_type": "blog", "count": 1, "note": "Strengthened from 1→2"},
+      {"target": "401k-calculator", "source_type": "blog", "count": 1, "note": "Strengthened from 1→2"},
+      {"target": "investment-return", "source_type": "blog", "count": 1, "note": "Strengthened from 1→2"},
+      {"target": "debt-payoff", "source_type": "blog", "count": 1, "note": "Strengthened from 2→3"},
+      {"target": "10 calculator hubs", "source_type": "decision", "count": 8, "note": "Added decision links to v10 and main files"}
+    ],
+    "files_modified": [
+      "src/lib/calculator-blog-links.ts",
+      "src/lib/calculator-decision-links-v10.ts",
+      "src/lib/calculator-decision-links.ts",
+      "src/lib/blog/posts.ts"
+    ]
+  },
+
+  "task_4_query_page_matching": {
+    "file": ".optimizer-data/query-page-match-log.json",
+    "status": "Updated — 10 calculator hubs matched against top GSC queries",
+    "mismatches_found": 0,
+    "action": "All calculator queries match the correct calculator pages. No redirects needed."
+  },
+
+  "task_5_ctr_rescue": {
+    "file": ".optimizer-data/aggressive-ctr-rescue-log.json",
+    "status": "Updated — applied to calculator-related pages with GSC impressions",
+    "total_rescued": 15,
+    "note": "Targeted blog posts and guide pages with impressions > 0, clicks = 0, CTR < 1%"
+  },
+
+  "task_6_position_boosts": {
+    "file": ".optimizer-data/aggressive-position-boost-log.json",
+    "status": "Updated — applied to pages supporting calculator rankings",
+    "total_boosted": 8,
+    "note": "Strengthened blog posts, guides, and decision pages that link to core calculators"
+  },
+
+  "task_7_technical_validation": {
+    "all_10_calculators_http_200": true,
+    "all_10_calculators_indexable": true,
+    "all_10_calculators_self_canonical": true,
+    "sitemap_valid": true,
+    "no_broken_links_added": true,
+    "no_accidental_noindex": true,
+    "homepage_200": true,
+    "widget_200": true,
+    "news_sitemap_valid": true,
+    "robots_txt_correct": true,
+    "verification_method": "Live curl checks against production URLs"
+  },
+
+  "task_8_pinterest_monitor": {
+    "pin_1_status": "LIVE — HTTP 200",
+    "pin_2_status": "LIVE — HTTP 200",
+    "pin_1_url": "https://www.pinterest.com/pin/1086071266410708648/",
+    "pin_2_url": "https://www.pinterest.com/pin/1086071266410708663/",
+    "performance_data": "Too early — posted <24h ago. First meaningful analytics ~June 5",
+    "no_new_pins_posted": true,
+    "crons_remain_paused": true
+  },
+
+  "task_9_deploy": {
+    "commit": "ae9faba",
+    "branch": "main",
+    "pushed_to_github": true,
+    "vercel_auto_deploy": "Triggered via GitHub integration",
+    "title_changes_live": true,
+    "all_10_calculators_verified": true,
+    "sitemap_urls": 649
+  },
+
+  "changes_summary": {
+    "files_changed": 27,
+    "insertions": 1713,
+    "deletions": 821,
+    "new_files": [
+      ".optimizer-data/core-calculator-hub-audit.json",
+      ".optimizer-data/pinterest-draft-cleanup-report.json",
+      ".optimizer-data/pinterest-phase-13b8-full-review.json",
+      ".optimizer-data/path-a-core-calculator-growth-report.json"
+    ]
+  },
+
+  "errors": "None — all changes verified live",
+
+  "biggest_blocker": "None — core calculators confirmed indexed, CTR titles live, authority links added. Next sprint: monitor ranking movement over 3-7 days.",
+
+  "recommended_next_sprint_actions": [
+    "Monitor GSC impressions + position for top 5 calculators (check in 48h)",
+    "If CTR improvement shows: extend benefit-driven titles to remaining 5 calculators",
+    "If impressions increase: strengthen intro content above calculator widgets",
+    "Consider adding structured data (WebApplication schema) to calculator pages",
+    "Continue daily CTR rescue + position boost cadence (5+3 per day)"
+  ],
+
+  "confirmations": {
+    "no_indexing_api_used": true,
+    "no_risky_automations_restarted": true,
+    "no_new_pages_created": true,
+    "no_pinterest_pins_posted": true,
+    "all_paused_crons_remain_paused": true,
+    "deploy_successful": true,
+    "technical_checks_pass": true
+  }
+}

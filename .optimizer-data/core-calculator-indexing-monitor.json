@@ -1,26 +1,125 @@
 {
-  "report": "Core Calculator Indexing Monitor (CORRECTED)",
-  "updated": "2026-06-03T03:20:00.000000+00:00",
-  "correction": "Reclassified from B→A. INDEXING_ALLOWED ≠ not-indexed. coverageState='Submitted and indexed' is authoritative.",
-
-  "total_calculators_tracked": 10,
+  "title": "Core Calculator Indexing Monitor \u2014 Day 3 Recheck",
+  "updated": "2026-06-03T12:00:00.000000+00:00",
+  "total_checked": 10,
   "confirmed_indexed": 10,
   "not_indexed": 0,
-  "classification": "ALL Category A — Confirmed indexed via GSC URL Inspection API",
-
-  "calculators": [
-    {"slug": "mortgage-calculator", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:38:15Z"},
-    {"slug": "mortgage-affordability", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:40:10Z"},
-    {"slug": "compound-interest", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:40:10Z"},
-    {"slug": "retirement-planning", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:36:13Z"},
-    {"slug": "loan-calculator", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:36:14Z"},
-    {"slug": "debt-payoff", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:44:43Z"},
-    {"slug": "tax-calculator", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:38:15Z"},
-    {"slug": "401k-calculator", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:44:43Z"},
-    {"slug": "investment-return", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:50:44Z"},
-    {"slug": "budget-planner", "indexed": true, "coverageState": "Submitted and indexed", "lastCrawl": "2026-06-01T23:38:15Z"}
+  "errors": 0,
+  "priority_recheck": [
+    "mortgage-affordability",
+    "compound-interest"
   ],
-
-  "blocker_removed": "Core calculator indexing is NO LONGER a blocker. All 10 are in the index.",
-  "next_priority": "Improve rankings — these pages are indexed but ranking too deep (avg pos 24) for clicks."
+  "note": "Rechecked after API errors reported. Using refreshed GSC token.",
+  "results": {
+    "mortgage-affordability": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:40:10Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "userCanonical": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "compound-interest": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:40:10Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/compound-interest",
+      "userCanonical": "https://www.qfinhub.com/calculators/compound-interest",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "mortgage-calculator": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:38:15Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "userCanonical": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "loan-calculator": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:36:14Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/loan-calculator",
+      "userCanonical": "https://www.qfinhub.com/calculators/loan-calculator",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "debt-payoff": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:44:43Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/debt-payoff",
+      "userCanonical": "https://www.qfinhub.com/calculators/debt-payoff",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "tax-calculator": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:38:15Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/tax-calculator",
+      "userCanonical": "https://www.qfinhub.com/calculators/tax-calculator",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "retirement-planning": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:36:13Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/retirement-planning",
+      "userCanonical": "https://www.qfinhub.com/calculators/retirement-planning",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "401k-calculator": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:44:43Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/401k-calculator",
+      "userCanonical": "https://www.qfinhub.com/calculators/401k-calculator",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "investment-return": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:50:44Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/investment-return",
+      "userCanonical": "https://www.qfinhub.com/calculators/investment-return",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    },
+    "budget-planner": {
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-06-01T23:38:15Z",
+      "googleCanonical": "https://www.qfinhub.com/calculators/budget-planner",
+      "userCanonical": "https://www.qfinhub.com/calculators/budget-planner",
+      "crawledAs": "MOBILE",
+      "verdict": "PASS",
+      "robotsTxtState": "ALLOWED",
+      "classification": "A \u2014 CONFIRMED INDEXED"
+    }
+  }
 }

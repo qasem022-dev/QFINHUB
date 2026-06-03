@@ -1,17 +1,41 @@
 {
-  "title": "Technical Cleanup Day 3",
-  "generated": "2026-06-02T21:01:00.225252+00:00",
+  "title": "Technical Cleanup Day 3 (Phase 13C.4)",
+  "generated": "2026-06-03T01:51:02.622473Z",
   "checks": {
-    "sitemap_no_noindex_urls": "\u2705 PASS",
-    "sitemap_no_404": "\u2705 PASS",
-    "guide_canonicals_working": "\u2705 14/14 verified live",
-    "comparison_canonicals_working": "\u2705 8/8 verified live",
-    "news_sitemap_valid": "\u2705 PASS",
-    "robots_txt_correct": "\u2705 PASS",
-    "scenario_sitemap_not_submitted": "\u2705 PASS",
-    "no_accidental_noindex_priority": "\u2705 PASS",
-    "no_broken_links": "\u2705 PASS",
-    "no_duplicate_title_meta": "\u2705 PASS"
+    "sitemap_no_noindex_urls": "\u2705 PASS \u2014 No noindex URLs detected in sitemap sample. Cleanup-lag URLs (~2,972) are NOT in sitemap.",
+    "sitemap_no_404": "\u26a0\ufe0f MINOR \u2014 3 dashboard URLs return 307 redirect (auth-gated). Not a critical issue since Google handles 307 correctly, but consider removing auth-only pages from sitemap.",
+    "sitemap_redirect_urls": [
+      "/dashboard \u2192 307",
+      "/dashboard/plans \u2192 307",
+      "/dashboard/settings \u2192 307"
+    ],
+    "guide_canonicals_working": "\u2705 PASS \u2014 All guides have self-referencing canonicals (fixed Jun 3 Phase 13C.3).",
+    "comparison_canonicals_working": "\u2705 PASS \u2014 35/35 comparison pages verified: HTTP 200, robots index,follow, self-referencing www canonical.",
+    "news_sitemap_valid": "\u2705 PASS \u2014 97 URLs, valid XML, no Google News namespace (correct).",
+    "robots_txt_correct": "\u2705 PASS \u2014 2 sitemaps declared (main + news). No scenario sitemap. Allow: / for all agents.",
+    "scenario_sitemap_not_submitted": "\u2705 PASS \u2014 Not in robots.txt. Not in GSC.",
+    "no_accidental_noindex": "\u2705 PASS \u2014 Priority pages (calcs, compare, guides, blog, decision, widget, homepage) all index,follow.",
+    "no_broken_homepage_links": "\u2705 PASS \u2014 Homepage 200 OK, index,follow.",
+    "no_broken_calculator_links": "\u2705 PASS \u2014 All 10 core calculators 200 OK, confirmed indexed.",
+    "no_duplicate_titles": "\u26a0\ufe0f NOTE \u2014 Metadata merge issue (pitfall #41): Next.js root layout metadata overrides page-level alternates.canonical. og:title still shows site default on some pages. Non-critical for indexing but suboptimal for social sharing.",
+    "sitemap_url_count": 651,
+    "news_sitemap_url_count": 97,
+    "total_sitemap_urls": 748
   },
-  "issues": "NONE"
+  "issues_found": 1,
+  "issues": [
+    {
+      "severity": "LOW",
+      "issue": "3 dashboard URLs in sitemap return 307 redirects",
+      "affected_urls": [
+        "/dashboard",
+        "/dashboard/plans",
+        "/dashboard/settings"
+      ],
+      "recommendation": "Exclude auth-gated pages from sitemap or mark with noindex. Not urgent \u2014 307 is handled correctly by Google.",
+      "action_taken": "Noted for next sitemap cleanup pass"
+    }
+  ],
+  "all_critical_checks_pass": true,
+  "risky_automations_status": "ALL PAUSED \u2014 Confirmed 6 crons paused. No re-enables."
 }

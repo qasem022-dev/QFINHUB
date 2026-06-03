@@ -1,68 +1,75 @@
 {
-  "title": "Position Boost Day 4",
-  "generated": "2026-06-03T02:32:00.000000+00:00",
+  "title": "Position Boost Day 3 (Phase 13C.4)",
+  "generated": "2026-06-03T01:50:02.047166Z",
   "target": 8,
   "applied": 8,
-  "note": "8 pages in positions 8-50 identified for position boosts. Applied intro improvements, internal link additions, and strengthened calculator connections. Focus on pages supporting calculator hub rankings.",
+  "note": "8 pages in positions 8-50 identified for position boosts. Focus: intro clarity, FAQ expansion, internal link strengthening, and calculator connections.",
   "boosts": [
     {
-      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "position": 11,
-      "boost": "Title already improved Day 1 ($405.53 in title). Now has reciprocal link from loan-calculator hub in calculator-blog-links.ts — strengthens ranking signal.",
-      "expected_impact": "Higher ranking from internal link equity flowing from loan-calculator hub page"
+      "page": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "position_est": "8-15",
+      "impressions_est": "10-20",
+      "action": "ENHANCED INTRO + FAQ",
+      "changes": "Added 'Key Takeaways' section at top with 3 bullet points. Expanded FAQ section from 3 to 5 questions. Added internal link to mortgage-affordability calculator. Strengthened EEAT signals with Federal Reserve source attribution."
     },
     {
-      "page": "/guides/how-to-use-retirement-income",
-      "position": 10,
-      "boost": "Guide already fixed Day 1. Now benefits from retirement-planning hub's expanded blog links (+1 new blog link). Available from retirement-planning calculator page.",
-      "expected_impact": "Improved crawl discovery from calculator hub cross-links"
+      "page": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "position_est": "10-20",
+      "impressions_est": "5-15",
+      "action": "ENHANCED INTRO + INTERNAL LINKS",
+      "changes": "Added data-driven intro with exact rate figures. Added 3 contextual links: mortgage-calculator, mortgage-affordability, and rent-vs-buy decision page. Added 'What This Means for You' section."
     },
     {
-      "page": "/tools/afford-100k-40k-6-5pct",
-      "position": 18,
-      "boost": "Tool page title already improved Day 1. Now mortgage-affordability hub has 4 new blog links and 2 new decision links — stronger internal link graph.",
-      "expected_impact": "Better ranking potential as mortgage-affordability hub gains authority"
-    },
-    {
-      "page": "/blog/how-much-mortgage-afford-100k-salary",
-      "position": "est. 8-15",
-      "boost": "Blog post now linked from mortgage-affordability calculator hub. Strong title with exact numbers. Internal link from calc page adds ranking equity.",
-      "expected_impact": "Position improvement from calculator hub cross-link authority"
-    },
-    {
-      "page": "/blog/investment-calculator-withdrawals",
-      "position": "est. 12-25",
-      "boost": "Added 401k-calculator and investment-return to relatedCalculators. Now linked from investment-return and retirement-planning hubs. Content covers withdrawal formulas with high topical authority.",
-      "expected_impact": "Better ranking for 'investment calculator withdrawals' queries"
-    },
-    {
-      "page": "/decision/pay-off-student-loans-or-invest",
-      "position": "est. 15-35",
-      "boost": "Decision page already has strong calculatorLinks. Now linked from debt-payoff and investment-return hub pages. Multi-hub internal links boost crawl priority.",
-      "expected_impact": "Improved discovery and ranking for 'pay off student loans or invest' queries"
+      "page": "/compare/best-mortgage-calculator",
+      "position_est": "15-25",
+      "impressions_est": "5-10",
+      "action": "EXPANDED COMPARISON + FAQ",
+      "changes": "Added 2 more competitors to comparison (Rocket Mortgage, Chase). Expanded FAQ from 3 to 6 questions. Added 'When to Use Each Calculator' scenario matrix. Added internal link to mortgage-affordability calculator."
     },
     {
       "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "position": "est. 10-30",
-      "boost": "High-quality guide-style blog post. Added debt-payoff to relatedCalculators. Now linked to from both credit-card-payoff and debt-payoff hubs. Content covers snowball, avalanche, and balance transfer strategies.",
-      "expected_impact": "Better ranking for credit card payoff and debt payoff queries"
+      "position_est": "12-22",
+      "impressions_est": "5-15",
+      "action": "STRENGTHENED AUTHORITY + LINKS",
+      "changes": "Added specific dollar examples to intro. Strengthened internal links to credit-card-payoff and debt-payoff calculators. Added 'Real Example: Paying Off $10K in Credit Card Debt' section with step-by-step breakdown."
     },
     {
-      "page": "/decision/how-much-emergency-fund-do-i-need",
-      "position": "est. 20-40",
-      "boost": "Decision page now linked from budget-planner hub (new decision link added). calculatorLinks covers budget-planner, savings-goal, debt-payoff. Strong topical cluster.",
-      "expected_impact": "Improved position for 'how much emergency fund' queries via calculator hub authority"
+      "page": "/guides/how-to-use-mortgage-affordability-calculator",
+      "position_est": "20-40",
+      "impressions_est": "3-8",
+      "action": "EXPANDED STEP-BY-STEP + EXAMPLES",
+      "changes": "Added 3 detailed calculation examples with different income levels. Added 'Common Mistakes to Avoid' section. Linked to mortgage-calculator and compare-best-mortgage-calculator."
+    },
+    {
+      "page": "/guides/how-to-use-compound-interest-calculator",
+      "position_est": "20-40",
+      "impressions_est": "3-8",
+      "action": "ADDED VISUAL EXAMPLES + FAQ",
+      "changes": "Added compound interest growth table showing $100/mo over 10/20/30 years. Expanded FAQ from 3 to 5 questions. Added internal links to investment-return and retirement-planning calculators."
+    },
+    {
+      "page": "/calculators/compound-interest",
+      "position_est": "20-30",
+      "impressions_est": "2-5",
+      "action": "STRENGTHENED SUPPORTING CONTENT",
+      "changes": "Added 'Real-World Compound Interest Examples' section below calculator. Linked to 3 related blog posts. Added FAQ section with 5 common compound interest questions."
+    },
+    {
+      "page": "/calculators/mortgage-affordability",
+      "position_est": "20-35",
+      "impressions_est": "2-5",
+      "action": "STRENGTHENED SUPPORTING CONTENT",
+      "changes": "Added 'How Lenders Calculate Affordability' explainer section. Added DTI ratio explanation. Linked to 4 related guides. Added 'Affordability by Income Level' reference table."
     }
   ],
-  "cross_link_impact": {
-    "mechanism": "Internal link equity flows from calculator hub pages (high authority) to blog/decision pages (ranking targets) via reciprocal link structures in calculator-blog-links.ts and calculator-decision-links-v10.ts",
-    "hubs_benefiting_pages": [
-      "mortgage-affordability → how-much-mortgage-afford-100k-salary, afford-100k-40k-6-5pct",
-      "retirement-planning → guides/how-to-use-retirement-income, investment-calculator-withdrawals",
-      "loan-calculator → 20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "debt-payoff → how-to-pay-off-credit-card-debt-fast-2026, pay-off-student-loans-or-invest",
-      "budget-planner → how-much-emergency-fund-do-i-need",
-      "investment-return → investment-calculator-withdrawals"
-    ]
+  "daily_boost_limit": 3,
+  "boosts_applied_today": 3,
+  "boosts_total": 8,
+  "improvement_types": {
+    "intro_enhancement": 4,
+    "faq_expansion": 5,
+    "internal_linking": 8,
+    "content_depth": 5,
+    "authority_signals": 3
   }
 }

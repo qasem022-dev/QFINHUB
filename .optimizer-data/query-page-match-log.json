@@ -1,154 +1,104 @@
 {
-  "generated": "2026-06-03T02:32:00.000000+00:00",
-  "title": "Query-Page Match Log Day 4",
+  "title": "Query-Page Match Log Day 3 (Phase 13C.4)",
+  "generated": "2026-06-03T01:50:10.483847Z",
   "matches": [
     {
-      "query": "20000 loan 8 percent 5 years monthly payment",
-      "current_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "query": "how much house can I afford",
+      "current_page": "/tools/afford-130k-40k-7pct",
+      "better_page": "/calculators/mortgage-affordability",
+      "fix": "ALIGNED \u2014 afford-130k title now answers specific variant but main mortgage-affordability targets the broader query. Internal link from tool variant \u2192 main calculator added.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
+    },
+    {
+      "query": "best mortgage calculator",
+      "current_page": "/compare/best-mortgage-calculator",
       "better_page": null,
-      "status": "CORRECT — page directly answers query. Title now includes $405.53."
+      "fix": "CORRECT \u2014 comparison page directly targets this query. Title/meta already optimized. Internal links to related calculators added.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
-      "query": "retirement income calculator how to use",
-      "current_page": "/guides/how-to-use-retirement-income",
+      "query": "mortgage rates 2025",
+      "current_page": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
       "better_page": null,
-      "status": "CORRECT — guide page matches intent. Retirement-planning hub now has +1 blog link."
-    },
-    {
-      "query": "mortgage affordability 100k income",
-      "current_page": "/tools/afford-100k-40k-6-5pct",
-      "better_page": "/blog/how-much-mortgage-afford-100k-salary",
-      "status": "IMPROVED — blog post 'How Much Mortgage Can I Afford on $100K Salary? Exact Numbers' is now linked from mortgage-affordability hub. Better long-term target.",
-      "day4_action": "Blog post now linked from mortgage-affordability calculator hub (new blog link added). Decision page how-much-house-can-i-afford also available."
-    },
-    {
-      "query": "philadelphia tax calculator",
-      "current_page": "/calculators/tax/philadelphia-pa",
-      "better_page": null,
-      "status": "CORRECT — geo-specific calculator page"
-    },
-    {
-      "query": "debt snowball vs avalanche",
-      "current_page": "UNKNOWN",
-      "better_page": "/decision/snowball-vs-avalanche-which-wins",
-      "status": "TRACKED — decision page optimized. Now linked from debt-payoff hub (new decision link: how-much-emergency-fund-do-i-need). Also linked from blog 'debt-snowball-vs-debt-avalanche'."
-    },
-    {
-      "query": "how much house can i afford",
-      "current_page": "UNKNOWN",
-      "better_page": "/decision/how-much-house-can-i-afford",
-      "status": "TRACKED — decision page now linked from mortgage-affordability hub (4 blog links + 4 decision links). Also linked from budget-planner hub (new)."
-    },
-    {
-      "query": "mortgage payment formula with tax and insurance",
-      "current_page": "/blog/monthly-mortgage-payment-formula-tax-insurance",
-      "better_page": null,
-      "status": "CORRECT — blog directly answers PITI formula query. Linked from mortgage-calculator hub."
-    },
-    {
-      "query": "retirement planning calculator",
-      "current_page": "/calculators/retirement-planning",
-      "better_page": null,
-      "status": "CORRECT — calculator hub page. Now has 4 blog links (up from 3) and 5 decision links for stronger internal authority."
+      "fix": "CORRECT \u2014 blog post directly addresses mortgage rate trends. Added internal links to mortgage calculators for searchers ready to act.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
       "query": "compound interest calculator",
       "current_page": "/calculators/compound-interest",
       "better_page": null,
-      "status": "CORRECT — calculator hub page. 5 blog links + 6 decision links. Well-linked."
+      "fix": "CORRECT \u2014 main calculator hub. Enhanced supporting content (examples, FAQ).",
+      "internal_link_fixed": false,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
-      "query": "401k retirement calculator",
-      "current_page": "/calculators/401k-calculator",
-      "better_page": null,
-      "status": "CORRECT — calculator hub page. Now has 2 blog links (up from 1) and 5 decision links."
-    }
-  ],
-  "day4_updates": [
-    {
-      "query": "mortgage affordability 100k income",
-      "current_page": "/blog/how-much-mortgage-afford-100k-salary",
-      "better_page": null,
-      "action": "Blog post title 'How Much Mortgage Can I Afford on $100K Salary? Exact Numbers' directly matches query. Now featured as a blog link from mortgage-affordability calculator hub.",
-      "internal_link": "mortgage-affordability hub → how-much-mortgage-afford-100k-salary"
+      "query": "retirement calculator",
+      "current_page": "/compare/best-retirement-calculator",
+      "better_page": "/calculators/retirement-planning",
+      "fix": "MISMATCH \u2014 'retirement calculator' query ranks the comparison page, but the main calculator hub is better suited for direct calculation intent. Added internal link from comparison \u2192 main calculator. Title alignment: comparison page title now includes 'Compare' prefix to signal intent.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
-      "query": "how much house can i afford",
-      "current_page": "/decision/how-much-house-can-i-afford",
-      "better_page": null,
-      "action": "Decision page now linked from mortgage-affordability (+2 new decision links) and budget-planner (+2 new decision links). Cross-hub internal authority increases ranking potential.",
-      "internal_link": "mortgage-affordability + budget-planner → how-much-house-can-i-afford"
+      "query": "loan calculator",
+      "current_page": "/compare/best-loan-calculator",
+      "better_page": "/calculators/loan-calculator",
+      "fix": "MISMATCH \u2014 'loan calculator' query ranks comparison page instead of main calculator. Internal link from comparison \u2192 main calculator added. Comparison page meta emphasizes it's for 'comparing' not 'calculating'.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
-      "query": "debt snowball vs avalanche",
-      "current_page": "/decision/snowball-vs-avalanche-which-wins",
-      "better_page": null,
-      "action": "Decision page strengthened with debt-payoff hub link. Blog post also links to debt-payoff calculator.",
-      "internal_link": "debt-payoff hub → snowball-vs-avalanche-which-wins"
+      "query": "debt payoff calculator",
+      "current_page": "/guides/how-to-use-debt-payoff-calculator",
+      "better_page": "/calculators/debt-payoff",
+      "fix": "MISMATCH \u2014 guide page ranks for 'debt payoff calculator' instead of main calculator hub. Added prominent CTA link from guide intro \u2192 main calculator.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
-      "query": "pay off debt or invest",
-      "current_page": "/decision/pay-off-debt-or-invest",
+      "query": "how to pay off credit card debt",
+      "current_page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
       "better_page": null,
-      "action": "Decision page now has stronger internal link graph. Linked from debt-payoff, investment-return, and compound-interest hubs. All 3 hubs have expanded link sets.",
-      "internal_link": "3 calculator hubs → pay-off-debt-or-invest"
+      "fix": "CORRECT \u2014 blog post matches informational intent. Strengthened internal links to credit-card-payoff and debt-payoff calculators.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
-      "query": "emergency fund amount",
-      "current_page": "/decision/how-much-emergency-fund-do-i-need",
+      "query": "federal reserve economic well-being 2025",
+      "current_page": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
       "better_page": null,
-      "action": "Decision page now linked from debt-payoff hub (new). Also linked from budget-planner and savings-goal hubs.",
-      "internal_link": "debt-payoff + budget-planner + savings-goal → how-much-emergency-fund-do-i-need"
+      "fix": "CORRECT \u2014 blog post targets this query. Added 'Key Takeaways' for snippet optimization. Title shortened for SERP visibility.",
+      "internal_link_fixed": false,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     },
     {
       "query": "investment return calculator",
-      "current_page": "/calculators/investment-return",
-      "better_page": null,
-      "action": "Hub now has 2 blog links (up from 1) and 4 decision links (up from 3). Stronger internal authority from retire-at-45-with-1-million and investment-calculator-withdrawals.",
-      "internal_link": "investment-return hub now better linked"
-    },
-    {
-      "query": "budget planner calculator",
-      "current_page": "/calculators/budget-planner",
-      "better_page": null,
-      "action": "Hub now has 2 blog links (previously 0) and 5 decision links (up from 3). New blog links from how-student-loan-payments-affect-monthly-budget and how-to-pay-off-credit-card-debt-fast.",
-      "internal_link": "budget-planner hub now properly linked"
-    },
-    {
-      "query": "tax calculator",
-      "current_page": "/calculators/tax-calculator",
-      "better_page": null,
-      "action": "Hub now has 2 blog links (up from 1) and 4 decision links (up from 3). Added tax-tips blog and how-much-do-i-need-to-retire decision link.",
-      "internal_link": "tax-calculator hub strengthened"
+      "current_page": "/compare/best-investment-calculator",
+      "better_page": "/calculators/investment-return",
+      "fix": "MISMATCH \u2014 'investment return calculator' query ranks comparison page. Internal link from comparison \u2192 main calculator added. Comparison meta updated to signal 'comparing' intent.",
+      "internal_link_fixed": true,
+      "title_meta_aligned": true,
+      "new_content_needed": false
     }
   ],
-  "day3": {
-    "date": "2026-06-02T21:01:00.225252+00:00",
-    "note": "No new GSC query data available (API 404). All known matches already aligned.",
-    "canonical_fix_impact": "Comparison pages now have self-referencing canonicals — Google will correctly attribute rankings"
-  },
-  "day2_updates": [
-    {
-      "query": "debt snowball vs avalanche",
-      "current_page": "UNKNOWN (not tracked in GSC)",
-      "better_page": "/decision/snowball-vs-avalanche-which-wins",
-      "action": "Decision page title/meta optimized. Pinterest pin now linking to this page drives traffic.",
-      "internal_link": "Blog 'debt-snowball-vs-debt-avalanche' links to debt-payoff calculator"
-    },
-    {
-      "query": "how much house can i afford",
-      "current_page": "/tools/afford-100k-40k-6-5pct",
-      "better_page": "/decision/how-much-house-can-i-afford",
-      "action": "Strengthened afford tool title. Decision page is better long-term target.",
-      "internal_link": "Afford tool links to mortgage-affordability calculator"
-    },
-    {
-      "query": "retirement income calculator",
-      "current_page": "/guides/how-to-use-retirement-income",
-      "better_page": "/calculators/retirement-planning",
-      "action": "Guide now has 'How to Use' framing + self-canonical. Calculator page is destination.",
-      "note": "Google ranks guide for 'how to use' queries — correct match"
-    }
-  ],
-  "summary": "10 calculator hubs now have complete query-page matching. All target hubs covered with at least 2 blog links and 4 decision links. Priority hubs (mortgage-affordability, compound-interest, mortgage-calculator) have strongest coverage. 8 new query matches aligned in Day 4 update."
+  "summary": {
+    "correct_matches": 6,
+    "mismatches_fixed": 4,
+    "new_content_created": 0,
+    "internal_links_aligned": 8,
+    "title_meta_aligned": 10,
+    "no_content_needed": true
+  }
 }

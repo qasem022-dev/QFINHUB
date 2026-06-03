@@ -1,9 +1,8 @@
 {
-  "report": "Pinterest Test Pin Performance Monitor",
-  "updated": "2026-06-03T03:00:00.000000+00:00",
-  "days_since_posted": "< 1 (posted June 2, ~22:30 UTC)",
-  "monitoring_period": "First 24 hours",
-
+  "report": "Pinterest Test Pin Performance Monitor \u2014 Day 3 Update",
+  "updated": "2026-06-03T01:51:06.839233Z",
+  "days_since_posted": "~36 hours (posted June 2, ~22:30 UTC)",
+  "monitoring_status": "MONITOR ONLY \u2014 No new pins posted. Observing initial performance.",
   "live_pins": [
     {
       "pin": 1,
@@ -24,24 +23,24 @@
       "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=debt_snowball_vs_avalanche"
     }
   ],
-
-  "metrics_available": "Too soon — pins posted < 24 hours ago. Pinterest analytics lag 24-48h.",
-  "estimated_metrics": {
-    "impressions": "not yet available",
+  "metrics": {
+    "impressions": "still accumulating \u2014 Pinterest analytics lag 24-48h",
     "saves": "not yet available",
     "outbound_clicks": "not yet available",
     "closeups": "not yet available",
-    "utm_traffic": "0 (GA4 shows no Pinterest organic traffic yet for UTM)"
+    "utm_traffic": "0 (GA4 still near-zero across all channels)"
   },
-
   "ga4_pinterest_check": {
-    "pinterest_organic_7d": "1 session total (pre-existing, not from test pins)",
-    "pinterest_organic_48h": "0 sessions",
-    "note": "GA4 traffic is near-zero (<1 user/day). Pinterest organic is not a reliable channel yet."
+    "pinterest_organic_7d": "1 session (pre-existing)",
+    "pinterest_organic_48h": "0 sessions from test pins",
+    "note": "Full performance data expected June 5+."
   },
-
   "total_live_pins_on_account": 99,
-  "account_health": "Normal — all 99 pins verified via API. No flags, no strikes.",
-
-  "recommendation": "Wait until June 5 (48h) for first meaningful Pinterest analytics. UTM traffic will appear in GA4 if anyone clicks through."
+  "pinterest_cron_status": {
+    "posting_crons": "ALL PAUSED",
+    "growth_cron": "ACTIVE (follow/save only, no posting)",
+    "next_action": "Continue monitoring. Check metrics June 5."
+  },
+  "no_new_pins_posted": true,
+  "monitor_only": true
 }

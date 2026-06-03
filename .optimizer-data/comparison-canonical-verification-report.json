@@ -1,63 +1,335 @@
 {
-  "title": "Comparison Canonical Verification",
-  "generated": "2026-06-02T23:58:57.838445",
+  "title": "Comparison Canonical Verification \u2014 Day 3 (Phase 13C.4)",
+  "generated": "2026-06-03T12:00:00.000000+00:00",
+  "total_pages": 35,
+  "passed": 0,
+  "failed": 25,
+  "errors": 10,
   "results": [
     {
-      "label": "compare:best-mortgage-calculator",
+      "slug": "best-401k-calculator",
+      "url": "https://www.qfinhub.com/compare/best-401k-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-mortgage-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-compound-interest-calculator",
+      "slug": "best-budget-calculator",
+      "url": "https://www.qfinhub.com/compare/best-budget-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-compound-interest-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-retirement-calculator",
+      "slug": "best-compound-interest-calculator",
+      "url": "https://www.qfinhub.com/compare/best-compound-interest-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-retirement-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-loan-calculator",
+      "slug": "best-investment-calculator",
+      "url": "https://www.qfinhub.com/compare/best-investment-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-loan-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-401k-calculator",
+      "slug": "best-loan-calculator",
+      "url": "https://www.qfinhub.com/compare/best-loan-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-401k-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-tax-calculator",
+      "slug": "best-mortgage-calculator",
+      "url": "https://www.qfinhub.com/compare/best-mortgage-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-tax-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-investment-calculator",
+      "slug": "best-retirement-calculator",
+      "url": "https://www.qfinhub.com/compare/best-retirement-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-investment-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
     },
     {
-      "label": "compare:best-budget-calculator",
+      "slug": "best-tax-calculator",
+      "url": "https://www.qfinhub.com/compare/best-tax-calculator",
       "status": 200,
-      "canonical": "https://www.qfinhub.com/compare/best-budget-calculator",
-      "canonical_correct": true,
-      "robots": "index, follow"
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-30yr-fixed-vs-15yr-fixed",
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-401k-calculator-vs-roth-ira",
+      "url": "https://www.qfinhub.com/compare/compare-401k-calculator-vs-roth-ira",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-auto-loan-vs-personal-loan",
+      "url": "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-break-even-vs-roi-calculator",
+      "url": "https://www.qfinhub.com/compare/compare-break-even-vs-roi-calculator",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-budget-planner-vs-savings-goal",
+      "url": "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-capital-gains-tax-vs-tax-calculator",
+      "url": "https://www.qfinhub.com/compare/compare-capital-gains-tax-vs-tax-calculator",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-capm-calculator-vs-sharpe-ratio",
+      "url": "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-compound-interest-vs-simple-interest",
+      "url": "https://www.qfinhub.com/compare/compare-compound-interest-vs-simple-interest",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-debt-consolidation-vs-loan-comparison",
+      "url": "https://www.qfinhub.com/compare/compare-debt-consolidation-vs-loan-comparison",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-debt-snowball-vs-debt-avalanche",
+      "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-dividend-calculator-vs-stock-return",
+      "url": "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-dollar-cost-average-vs-lump-sum",
+      "url": "https://www.qfinhub.com/compare/compare-dollar-cost-average-vs-lump-sum",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-inflation-calculator-vs-future-value",
+      "url": "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-investment-return-vs-compound-interest",
+      "url": "https://www.qfinhub.com/compare/compare-investment-return-vs-compound-interest",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-lease-vs-buy-vs-rent-vs-buy",
+      "url": "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-loan-calculator-vs-amortization-schedule",
+      "url": "https://www.qfinhub.com/compare/compare-loan-calculator-vs-amortization-schedule",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-mortgage-calculator-vs-mortgage-affordability",
+      "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability",
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "canonical_self": false,
+      "canonical_www": false,
+      "canonical_duplicated": true,
+      "pass": false
+    },
+    {
+      "slug": "compare-mortgage-calculator-vs-rent-vs-buy",
+      "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-net-worth-vs-budget-planner",
+      "url": "https://www.qfinhub.com/compare/compare-net-worth-vs-budget-planner",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-npv-calculator-vs-irr-calculator",
+      "url": "https://www.qfinhub.com/compare/compare-npv-calculator-vs-irr-calculator",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-portfolio-allocator-vs-sharpe-ratio",
+      "url": "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-retirement-planning-vs-early-retirement",
+      "url": "https://www.qfinhub.com/compare/compare-retirement-planning-vs-early-retirement",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-roth-ira-vs-traditional-ira",
+      "url": "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-social-security-vs-retirement-income",
+      "url": "https://www.qfinhub.com/compare/compare-social-security-vs-retirement-income",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-student-loan-vs-personal-loan",
+      "url": "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-tax-bracket-vs-effective-tax-rate",
+      "url": "https://www.qfinhub.com/compare/compare-tax-bracket-vs-effective-tax-rate",
+      "error": "'output'"
+    },
+    {
+      "slug": "compare-tax-calculator-vs-effective-tax-rate",
+      "url": "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate",
+      "error": "'output'"
     }
-  ],
-  "summary": "8/8 canonicals correct"
+  ]
 }
