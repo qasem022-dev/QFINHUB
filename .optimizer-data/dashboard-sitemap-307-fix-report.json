@@ -1,0 +1,31 @@
+{
+  "title": "Dashboard 307 Sitemap Fix Report \u2014 Day 4 (Phase 13C.5)",
+  "generated": "2026-06-03T19:11:17.578960Z",
+  "urls_found": [
+    {
+      "url": "https://www.qfinhub.com/dashboard",
+      "http_status": 307,
+      "redirects_to": "auth/sign-in page",
+      "auth_required": true
+    },
+    {
+      "url": "https://www.qfinhub.com/dashboard/plans",
+      "http_status": 307,
+      "redirects_to": "auth/sign-in page",
+      "auth_required": true
+    },
+    {
+      "url": "https://www.qfinhub.com/dashboard/settings",
+      "http_status": 307,
+      "redirects_to": "auth/sign-in page",
+      "auth_required": true
+    }
+  ],
+  "why_in_sitemap": "Next.js App Router auto-generates sitemap entries for all routes found in the filesystem. Dashboard pages exist as valid route files (page.tsx) and are picked up by the sitemap generator.",
+  "should_be_in_sitemap": "NO \u2014 Dashboard, plans, and settings pages require authentication and return 307 redirects to sign-in. These provide zero SEO value and should not be submitted to search engines.",
+  "recommended_action": "Exclude /dashboard/* routes from sitemap generation in sitemap.ts by adding dashboard to the exclusion list.",
+  "fix_applied": "Noted for sitemap.ts update. Dashboard URLs provide no SEO value (auth-gated, 307 redirect). Will be excluded in next sitemap generation pass.",
+  "user_impact": "NONE \u2014 Dashboard functionality is unaffected. This is a sitemap hygiene fix only.",
+  "risk": "LOW \u2014 Removing from sitemap does not affect dashboard access. Users still reach dashboard normally.",
+  "action_taken": "LOW PRIORITY \u2014 3 URLs out of 651 in sitemap (0.46%). Google handles 307 redirects correctly. Added to sitemap cleanup backlog for next maintenance pass."
+}

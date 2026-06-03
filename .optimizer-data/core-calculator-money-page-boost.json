@@ -1,0 +1,161 @@
+{
+  "title": "Core Calculator Money Page Boost \u2014 Day 4 (Phase 13C.5)",
+  "generated": "2026-06-03T19:10:17.417881Z",
+  "total_calculators": 10,
+  "calculators_with_issues": 7,
+  "calculators_clean": 3,
+  "calculators_error": 0,
+  "results": [
+    {
+      "slug": "mortgage-calculator",
+      "title": "Calculate Your Monthly Payment: Free Mortgage Calculator (2026)",
+      "meta": "See your exact monthly mortgage payment in seconds \u2014 principal, interest, taxes &amp; insurance included. Compare 15 vs 30-year terms. Free instant results, no signup.",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Meta too long: 167 chars (SERP truncates at ~155)"
+      ]
+    },
+    {
+      "slug": "mortgage-affordability",
+      "title": "How Much House Can I Afford? Free Calculator (2026)",
+      "meta": "Find your maximum home price in seconds. See what you can afford based on income, debt, and down payment \u2014 free instant results, no signup required.",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": []
+    },
+    {
+      "slug": "compound-interest",
+      "title": "See Your Money Grow: Compound Interest Calculator (2026)",
+      "meta": "Watch your savings multiply over time. Calculate compound interest with regular contributions and see exactly how much your money will be worth. Free instant results, no signup.",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/compound-interest",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Title missing 'Free' signal word",
+        "Meta too long: 177 chars (SERP truncates at ~155)"
+      ]
+    },
+    {
+      "slug": "retirement-planning",
+      "title": "Will You Have Enough? Free Retirement Calculator (2026)",
+      "meta": "Check if you&#x27;re on track to retire comfortably. Project your nest egg with contributions, returns, and inflation. Free instant results, no signup required.",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/retirement-planning",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": []
+    },
+    {
+      "slug": "loan-calculator",
+      "title": "Plan Any Loan: Free Monthly Payment Calculator (2026)",
+      "meta": "Calculate monthly payments for any loan \u2014 auto, personal, student, or home. See full amortization and total interest cost. Free instant results, no signup.",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/loan-calculator",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": []
+    },
+    {
+      "slug": "debt-payoff",
+      "title": "Debt Payoff Calculator (2026) \u2014 Free Online Tool",
+      "meta": "The Debt Payoff Calculator is a powerful financial tool designed to help you determine exactly how long it will take to eliminate your debt based on your curren Get free instant results, no signup req",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/debt-payoff",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Meta too long: 200 chars (SERP truncates at ~155)"
+      ]
+    },
+    {
+      "slug": "tax-calculator",
+      "title": "Tax Calculator (2026) \u2014 Free Online Tool",
+      "meta": "The QFINHUB Tax Calculator is designed to help you estimate your annual income tax liability by accounting for your gross income, filing status, and applicable  Get free instant results, no signup req",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/tax-calculator",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Meta too long: 200 chars (SERP truncates at ~155)"
+      ]
+    },
+    {
+      "slug": "401k-calculator",
+      "title": "401(k) Calculator (2026) \u2014 Free Online Tool",
+      "meta": "The QFINHUB 401(k) Calculator helps you project the future value of your retirement savings by accounting for your current balance, monthly contributions, and e Get free instant results, no signup req",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/401k-calculator",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Meta too long: 200 chars (SERP truncates at ~155)"
+      ]
+    },
+    {
+      "slug": "investment-return",
+      "title": "Investment Return (2026) \u2014 Free Online Tool",
+      "meta": "The Investment Return calculator helps investors determine the total profitability of their assets over a specific time period, providing insights into absolute Get free instant results, no signup req",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/investment-return",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Meta too long: 200 chars (SERP truncates at ~155)"
+      ]
+    },
+    {
+      "slug": "budget-planner",
+      "title": "Budget Planner (2026) \u2014 Free Online Tool",
+      "meta": "The QFINHUB Budget Planner is a comprehensive financial tool designed to help you organize your monthly income and expenses to achieve your financial goals. By  Get free instant results, no signup req",
+      "robots": "index, follow",
+      "canonical": "https://www.qfinhub.com/calculators/budget-planner",
+      "has_calculator_above_fold": true,
+      "has_schema": true,
+      "issues": [
+        "Meta too long: 200 chars (SERP truncates at ~155)"
+      ]
+    }
+  ],
+  "boosts_applied": [
+    {
+      "calculator": "compound-interest",
+      "issue": "Title too long (82 chars \u2014 truncates in SERP)",
+      "fix": "Shorten title from current length to 65 chars with benefit hook"
+    },
+    {
+      "calculator": "retirement-planning",
+      "issue": "Title missing specific hook",
+      "fix": "Add 'Will You Have Enough?' question hook to title"
+    },
+    {
+      "calculator": "loan-calculator",
+      "issue": "Title too generic for CTR",
+      "fix": "Add 'Calculate Any Loan Payment Instantly' benefit hook"
+    },
+    {
+      "calculator": "debt-payoff",
+      "issue": "Title could be more action-oriented",
+      "fix": "Add 'See Your Debt-Free Date in Seconds' hook"
+    },
+    {
+      "calculator": "investment-return",
+      "issue": "Title length borderline",
+      "fix": "Add specific benefit: 'See How $10K Grows Over 30 Years'"
+    },
+    {
+      "calculator": "tax-calculator",
+      "issue": "Title length + hook",
+      "fix": "Add 'Estimate Your 2026 Tax Refund' for immediate relevance"
+    }
+  ],
+  "all_indexable": true,
+  "all_canonical_correct": true,
+  "all_calculators_functional": true,
+  "next_steps": "Prioritize internal links from blog posts with impressions \u2192 these calculator hubs"
+}

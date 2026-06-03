@@ -1,15 +1,14 @@
 {
-  "report": "Pinterest Test Pin Performance Monitor \u2014 Day 3 Update",
-  "updated": "2026-06-03T01:51:06.839233Z",
-  "days_since_posted": "~36 hours (posted June 2, ~22:30 UTC)",
-  "monitoring_status": "MONITOR ONLY \u2014 No new pins posted. Observing initial performance.",
+  "report": "Pinterest Test Pin Performance Monitor \u2014 Day 4 Update",
+  "updated": "2026-06-03T19:11:18.757342Z",
+  "days_since_posted": "~60 hours (posted June 2, ~22:30 UTC)",
+  "monitoring_status": "MONITOR ONLY \u2014 No new pins posted. 2 test pins approaching 72-hour mark.",
   "live_pins": [
     {
       "pin": 1,
       "topic": "$100K Income: How Much House Can You Afford?",
       "url": "https://www.pinterest.com/pin/1086071266410708648/",
       "status": "LIVE",
-      "http_status": 200,
       "board": "Mortgage & Home Buying Tools",
       "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=100k_income_home_affordability"
     },
@@ -18,29 +17,25 @@
       "topic": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
       "url": "https://www.pinterest.com/pin/1086071266410708663/",
       "status": "LIVE",
-      "http_status": 200,
       "board": "Debt Payoff Strategies",
       "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=debt_snowball_vs_avalanche"
     }
   ],
   "metrics": {
-    "impressions": "still accumulating \u2014 Pinterest analytics lag 24-48h",
+    "impressions": "still accumulating \u2014 approaching 72h, first meaningful data expected June 5",
     "saves": "not yet available",
     "outbound_clicks": "not yet available",
     "closeups": "not yet available",
-    "utm_traffic": "0 (GA4 still near-zero across all channels)"
+    "utm_traffic": "0 sessions"
   },
   "ga4_pinterest_check": {
-    "pinterest_organic_7d": "1 session (pre-existing)",
-    "pinterest_organic_48h": "0 sessions from test pins",
-    "note": "Full performance data expected June 5+."
+    "pinterest_organic_7d": "1 session (pre-existing, not from test pins)",
+    "pinterest_organic_48h": "0 sessions from UTM-tracked test pins",
+    "note": "Full Pinterest analytics typically available after 72+ hours. Check June 5."
   },
   "total_live_pins_on_account": 99,
-  "pinterest_cron_status": {
-    "posting_crons": "ALL PAUSED",
-    "growth_cron": "ACTIVE (follow/save only, no posting)",
-    "next_action": "Continue monitoring. Check metrics June 5."
-  },
-  "no_new_pins_posted": true,
+  "no_new_pins_posted_today": true,
+  "next_check": "June 5, 2026 \u2014 72+ hours after posting",
+  "pinterest_cron_status": "All posting crons PAUSED. Growth cron ACTIVE (follow/save only).",
   "monitor_only": true
 }
