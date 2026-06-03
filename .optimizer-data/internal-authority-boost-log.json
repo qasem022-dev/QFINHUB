@@ -1,94 +1,25 @@
 {
-  "title": "Internal Authority Boost Day 3 (Phase 13C.4)",
-  "generated": "2026-06-03T01:50:06.266024Z",
-  "target": 10,
-  "applied": 10,
-  "method": "Added 10 new contextual internal links across blog posts, guide pages, and comparison pages. Priority targets: mortgage-affordability, compound-interest, core calculators, high-value guides.",
-  "summary": "10 new internal authority links reinforcing calculator hub rankings and topical relevance.",
-  "links_added": [
+  "title": "Internal Authority Boost \u2014 Day 5 (Phase 13C.6)",
+  "generated": "2026-06-03T19:45:01.357997Z",
+  "applied": 3,
+  "links": [
     {
-      "source": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "mortgage affordability calculator",
-      "context": "In 'How Rising Rates Affect Homebuyers' section \u2014 'Use our mortgage affordability calculator to see how rate changes impact your buying power.'",
-      "type": "blog\u2192calculator"
-    },
-    {
-      "source": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "source": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
       "target": "/calculators/mortgage-calculator",
-      "anchor": "mortgage calculator",
-      "context": "In 'What the Data Means for Borrowers' section \u2014 'Run the numbers with our free mortgage calculator to see your actual monthly payment.'",
+      "anchor": "calculate your monthly mortgage payment",
       "type": "blog\u2192calculator"
     },
     {
-      "source": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
-      "target": "/decision/rent-vs-buy-which-is-better",
-      "anchor": "rent vs buy calculator",
-      "context": "In 'Should You Buy Now or Wait?' section \u2014 'Still deciding? Our rent vs buy calculator helps you compare the true costs.'",
-      "type": "blog\u2192decision"
-    },
-    {
-      "source": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "how much house you can afford",
-      "context": "In intro paragraph \u2014 'Check how much house you can afford at today's rates.'",
-      "type": "blog\u2192calculator"
-    },
-    {
-      "source": "/guides/how-to-use-compound-interest-calculator",
-      "target": "/calculators/investment-return",
-      "anchor": "investment return calculator",
-      "context": "In 'Taking It Further' section \u2014 'Pair this with our investment return calculator to model a full portfolio.'",
-      "type": "guide\u2192calculator"
-    },
-    {
-      "source": "/guides/how-to-use-compound-interest-calculator",
-      "target": "/calculators/retirement-planning",
-      "anchor": "retirement planning calculator",
-      "context": "In 'Long-Term Planning' section \u2014 'See how compound growth impacts your retirement timeline with our retirement planning calculator.'",
-      "type": "guide\u2192calculator"
-    },
-    {
-      "source": "/guides/how-to-use-mortgage-affordability-calculator",
-      "target": "/decision/how-much-house-can-i-afford",
-      "anchor": "how much house can I afford",
-      "context": "In 'Next Steps' section \u2014 'Ready to decide? Use our how much house can I afford decision guide.'",
-      "type": "guide\u2192decision"
-    },
-    {
-      "source": "/guides/how-to-use-mortgage-affordability-calculator",
-      "target": "/compare/best-mortgage-calculator",
-      "anchor": "compare mortgage calculators",
-      "context": "In 'Other Tools to Consider' section \u2014 'Compare the best mortgage calculators to find the right one for your needs.'",
-      "type": "guide\u2192compare"
-    },
-    {
-      "source": "/compare/best-mortgage-calculator",
+      "source": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
       "target": "/calculators/mortgage-affordability",
       "anchor": "mortgage affordability calculator",
-      "context": "In comparison table \u2014 'Before choosing a calculator, determine your budget with our mortgage affordability calculator.'",
-      "type": "compare\u2192calculator"
+      "type": "blog\u2192calculator"
     },
     {
-      "source": "/compare/best-mortgage-calculator",
-      "target": "/decision/should-i-buy-or-rent",
-      "anchor": "buy vs rent decision",
-      "context": "In FAQ section \u2014 'If you're still unsure whether to buy, check our buy vs rent decision guide.'",
-      "type": "compare\u2192decision"
+      "source": "/decision/how-much-emergency-fund-do-i-need",
+      "target": "/calculators/budget-planner",
+      "anchor": "budget planner",
+      "type": "decision\u2192calculator"
     }
-  ],
-  "priority_calculator_hubs": [
-    "mortgage-affordability",
-    "compound-interest",
-    "mortgage-calculator"
-  ],
-  "link_types": {
-    "blog_to_calculator": 3,
-    "blog_to_decision": 1,
-    "guide_to_calculator": 2,
-    "guide_to_decision": 1,
-    "guide_to_compare": 1,
-    "compare_to_calculator": 1,
-    "compare_to_decision": 1
-  }
+  ]
 }

@@ -1,82 +1,13 @@
 {
-  "title": "Near-Winner Position Push \u2014 Day 4 (Phase 13C.5)",
-  "generated": "2026-06-03T19:09:57.603465Z",
-  "applied": 5,
-  "note": "5 pages in positions 8-20 with impressions identified for position push. Focus: internal links, short answers, FAQ, schema.",
-  "pushes": [
-    {
-      "page": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
-      "position_est": 9,
-      "impressions_est": 40,
-      "goal": "Push from position 9 to top 5. Compete with .gov results by offering better analysis.",
-      "actions": [
-        "Added FAQPage schema with 3 Q&A pairs from the report's key findings",
-        "Added 'Key Findings at a Glance' summary (targets featured snippet)",
-        "Added internal links to mortgage-affordability and mortgage-calculator",
-        "Added 'What This Means for Homebuyers' actionable section",
-        "Title now includes specific finding (72%) for click differentiation"
-      ],
-      "internal_links_added": 2,
-      "schema_improved": "FAQPage schema added"
-    },
-    {
-      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "position_est": 11,
-      "impressions_est": 55,
-      "goal": "Break into top 10 from position 11. This is the highest-impression page.",
-      "actions": [
-        "Title shortened to fit full SERP display (68 chars from 86)",
-        "Added FAQPage schema targeting 'What is the monthly payment...' featured snippet",
-        "Added internal link to loan-calculator for different loan amounts",
-        "Above-fold answer already strong ($405.53 in first paragraph)"
-      ],
-      "internal_links_added": 1,
-      "schema_improved": "FAQPage schema added"
-    },
-    {
-      "page": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
-      "position_est": 12,
-      "impressions_est": 30,
-      "goal": "Move toward position 8-10. Lead with rate data to compete with Bankrate/NerdWallet.",
-      "actions": [
-        "Title restructured to lead with rate number (6.87%)",
-        "Added rate snapshot table above the fold (30-yr, 15-yr, FHA rates)",
-        "Meta now includes specific rate % for snippet differentiation",
-        "Added internal links to mortgage-calculator and mortgage-affordability",
-        "Added 'What This Means for Your Mortgage' section with calculator CTAs"
-      ],
-      "internal_links_added": 2,
-      "schema_improved": "N/A \u2014 news/rate update format"
-    },
-    {
-      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "position_est": 14,
-      "impressions_est": 35,
-      "goal": "Move toward position 8-12. Differentiate from Bankrate/NerdWallet with specific timeline promise.",
-      "actions": [
-        "Title now includes specific timeline: '$10K in 12-24 Months'",
-        "Added above-fold summary: avalanche method as fastest path",
-        "Meta now names specific strategies for snippet optimization",
-        "Added 2 FAQ entries: 'Fastest way to pay off $10K?' and 'Avalanche vs snowball?'",
-        "Strengthened internal links to credit-card-payoff and debt-payoff calculators"
-      ],
-      "internal_links_added": 2,
-      "schema_improved": "FAQPage schema added"
-    },
-    {
-      "page": "/compare/best-mortgage-calculator",
-      "position_est": 18,
-      "impressions_est": 25,
-      "goal": "Move toward position 10-15. Add calculator element to satisfy dual intent (comparison + tool).",
-      "actions": [
-        "Added prominent 'Try Our Free Calculator' CTA above comparison table",
-        "Added inline calculator links next to each competitor",
-        "Meta updated to mention calculator is available on-page",
-        "Added internal link funnel to mortgage-calculator and mortgage-affordability",
-        "Comparison table now includes QFINHUB as first row (self-comparison)"
-      ],
-      "internal_links_added": 3,
-      "schema_improved": "N/A \u2014 comparison format"
-    }
+  "title": "Near-Winner Position Push \u2014 Day 5 (Phase 13C.6)",
+  "generated": "2026-06-03T19:45:01.357186Z",
+  "applied": 0,
+  "note": "No new position pushes Day 5. Day 4 pushes (5 pages) need re-crawl time. Monitor GSC for position movement over 7-14 days.",
+  "day4_pushes_monitoring": [
+    "/blog/fed-2025-report... (pos 9 \u2192 target 5)",
+    "/blog/20000-loan... (pos 11 \u2192 target 10)",
+    "/blog/mortgage-rates-2025... (pos 12 \u2192 target 8-10)",
+    "/blog/how-to-pay-off-credit-card-debt... (pos 14 \u2192 target 8-12)",
+    "/compare/best-mortgage-calculator (pos 18 \u2192 target 10-15)"
   ]
 }

@@ -1,39 +1,33 @@
 {
-  "title": "Technical Cleanup Day 4 (Phase 13C.5)",
-  "generated": "2026-06-03T19:11:34.354765Z",
+  "title": "Technical Cleanup Day 5 (Phase 13C.6)",
+  "generated": "2026-06-03T19:45:26.928621Z",
   "checks": {
-    "sitemap_no_noindex_urls": "\u2705 PASS \u2014 Verified no noindex in sample",
-    "sitemap_no_404": "\u2705 PASS \u2014 No 404s found in sample",
-    "sitemap_dashboard_307_urls": "\u26a0\ufe0f NOTE \u2014 3 dashboard URLs still present. Added to cleanup backlog (Task 6). Low priority (0.46% of sitemap).",
+    "sitemap_no_404_urls": "\u2705 PASS \u2014 Verified. 12 '404' URLs from tracker were NOT real 404s (see 404 emergency report).",
+    "sitemap_no_410_urls": "\u2705 PASS",
+    "sitemap_no_noindex_urls": "\u2705 PASS",
+    "sitemap_no_dashboard_307": "\u26a0\ufe0f NOTE \u2014 3 dashboard URLs still in sitemap. Final decision: REMOVE (deferred to next maintenance).",
+    "sitemap_no_404_tracker_urls": "\u2705 CORRECTED \u2014 All 12 tracked '404' URLs diagnosed: 8 tracking bugs (wrong slugs) + 4 intentional removals. Zero real 404s to fix.",
     "news_sitemap_valid": "\u2705 PASS \u2014 97 URLs, valid XML",
     "robots_txt_correct": "\u2705 PASS \u2014 Allow: /, 2 sitemaps (main + news)",
-    "scenario_sitemap_not_submitted": "\u2705 PASS \u2014 Not in robots.txt, not in GSC",
-    "guide_canonicals_working": "\u2705 PASS \u2014 Fixed Jun 3",
+    "scenario_sitemap_not_submitted": "\u2705 PASS",
+    "guide_canonicals_working": "\u2705 PASS \u2014 Verified 4 corrected guide URLs",
+    "corrected_guide_urls": [
+      "/guides/how-to-use-retirement-planning: HTTP 200",
+      "/guides/how-to-use-mortgage-affordability: HTTP 200",
+      "/guides/how-to-use-compound-interest: HTTP 200",
+      "/guides/how-to-use-debt-payoff: HTTP 200"
+    ],
     "comparison_canonicals_working": "\u2705 PASS \u2014 35/35 verified Day 3",
-    "core_calculator_canonicals_working": "\u2705 PASS \u2014 10/10 verified, all index,follow",
-    "no_accidental_noindex": "\u2705 PASS \u2014 Priority pages verified index,follow",
-    "no_duplicate_titles": "\u2705 PASS \u2014 No duplicates detected",
-    "no_broken_internal_links": "\u2705 PASS \u2014 Key pages verified 200",
-    "core_calculators_indexed": "\u2705 PASS \u2014 10/10 confirmed via GSC API",
-    "pages_404_from_known_list": "\u26a0\ufe0f NOTE \u2014 12 previously-tracked pages now return 404 (geo pages, guides, old blog posts). These were expected cleanup from Phase 2-4 pruning. Not critical.",
-    "risky_automations": "\u2705 PASS \u2014 All 6 paused crons confirmed paused"
+    "core_calculator_canonicals_working": "\u2705 PASS \u2014 10/10 verified",
+    "no_accidental_noindex": "\u2705 PASS",
+    "no_duplicate_titles": "\u2705 PASS",
+    "no_broken_internal_links": "\u2705 PASS \u2014 Key pages 200 OK",
+    "twelve_404_urls_diagnosed": "\u2705 COMPLETE \u2014 See .optimizer-data/tracked-404-emergency-report.json",
+    "risky_automations": "\u2705 PASS \u2014 All paused"
   },
-  "priority_page_status": [
-    "Homepage: HTTP 200",
-    "Mortgage Calc: HTTP 200",
-    "Affordability Calc: HTTP 200",
-    "Compound Interest Calc: HTTP 200",
-    "Best Mortgage Compare: HTTP 200",
-    "Widget Landing: HTTP 200",
-    "Decision page: HTTP 200"
-  ],
   "sitemap_counts": {
-    "main": 651,
-    "news": 97
+    "main": "651",
+    "news": "97"
   },
-  "all_critical_checks_pass": true,
-  "minor_issues": [
-    "3 dashboard URLs (307) in sitemap \u2014 backlog item",
-    "12 previously-tracked pages return 404 \u2014 expected cleanup"
-  ]
+  "all_critical_checks_pass": true
 }

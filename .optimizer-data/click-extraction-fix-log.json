@@ -1,120 +1,78 @@
 {
-  "title": "Click Extraction Fix Log \u2014 Day 4 (Phase 13C.5)",
-  "generated": "2026-06-03T19:09:53.388023Z",
-  "applied": 7,
-  "note": "Top 10 zero-click pages fixed. 3 pages skipped (already strong or low-priority D bucket). Fixes focus on title shorts fit SERP, meta differentiation, above-the-fold answers, and internal link funneling.",
-  "fixes": [
+  "title": "Click Extraction Continuation \u2014 Day 5 (Phase 13C.6)",
+  "generated": "2026-06-03T19:45:01.354727Z",
+  "applied": 5,
+  "note": "After 404 diagnosis: discovered 4 guide pages tracked under wrong slugs. Corrected tracker now uses proper URLs. 2 blog slugs fixed. These corrections enable accurate CTR tracking moving forward.",
+  "corrections_applied": [
     {
-      "rank": 1,
-      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "priority": 95,
-      "fix_type": "A (title shorten) + D (FAQ schema)",
-      "old_title": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment: $405.53 (Free Calculator) | QFINHUB",
-      "new_title": "$20K Loan at 8% APR: Monthly Payment = $405.53 (Free Calculator) | QFINHUB",
-      "title_change_reason": "Shortened from 86 to 68 chars \u2014 fits full SERP display without truncation. '$20K' reads faster than '$20,000'. Changed em dash to colon for better scannability.",
-      "meta_change": "NO CHANGE \u2014 already solid",
-      "above_fold_change": "Already has answer. Added FAQPage schema with Q: 'What is the monthly payment on a $20,000 loan at 8% for 5 years?' A: '$405.53 per month. Total interest: $4,331.80.' Targets featured snippet.",
-      "internal_links_added": "Added link to loan-calculator for users who want to try different loan amounts"
+      "action": "FIXED TRACKING \u2014 Guide slug corrected",
+      "old_slug": "/guides/how-to-use-retirement-income-calculator",
+      "correct_slug": "/guides/how-to-use-retirement-planning",
+      "note": "Calculator slug is 'retirement-planning', not 'retirement-income-calculator'"
     },
     {
-      "rank": 2,
-      "page": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
-      "priority": 90,
-      "fix_type": "B (meta rewrite) + C (key findings above fold)",
-      "old_title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings | QFINHUB",
-      "new_title": "Fed 2025 Report: 72% of Americans Are 'Doing Okay' \u2014 Here's What It Means for Mortgages | QFINHUB",
-      "title_change_reason": "Added the key finding (72%) to differentiate from Fed.gov and major news sites. Answers 'what does the report say?' in the title itself.",
-      "old_meta": "The Federal Reserve's 2025 household economic well-being report reveals critical insights for mortgage borrowers and savers.",
-      "new_meta": "The Fed's 2025 report shows 72% of households are financially stable, but 28% struggle with monthly bills. Our analysis breaks down what these findings mean for mortgage rates, home buying, and your savings strategy.",
-      "meta_change_reason": "Replaced generic 'critical insights' with specific stats. Shows this isn't just a summary \u2014 it's analysis with actionable takeaways.",
-      "above_fold_change": "Added 'Key Findings at a Glance' box with 3 bullet points: 72% doing okay, 28% struggling, mortgage impact summary",
-      "internal_links_added": "Added link to mortgage-calculator and mortgage-affordability"
+      "action": "FIXED TRACKING \u2014 Guide slug corrected",
+      "old_slug": "/guides/how-to-use-mortgage-affordability-calculator",
+      "correct_slug": "/guides/how-to-use-mortgage-affordability",
+      "note": "Calculator slug is 'mortgage-affordability'"
     },
     {
-      "rank": 3,
-      "page": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
-      "priority": 85,
-      "fix_type": "A (title restructure) + B (meta with rate number)",
-      "old_title": "Mortgage Rates 2025: Rates Move to Highest in 5 Weeks, But Homebuyers Shake It Off | QFINHUB",
-      "new_title": "Mortgage Rates Hit 5-Week High at 6.87% \u2014 Will They Drop? (June 2026) | QFINHUB",
-      "title_change_reason": "Lead with the actual rate number (6.87%) instead of the Taylor Swift reference. 'Will They Drop?' creates urgency. Added month/year for freshness signal. Fits SERP without truncation.",
-      "old_meta": "Despite rates climbing to a 5-week high, homebuyer demand remains resilient. Get the latest mortgage rate analysis and predictions.",
-      "new_meta": "30-year fixed rates reached 6.87% this week, the highest since April. Our analysis covers where rates are heading, what the Fed's next move means, and how homebuyers should respond.",
-      "meta_change_reason": "Includes the specific rate %, names '30-year fixed', and lists specific topics covered for snippet selection.",
-      "above_fold_change": "Added rate snapshot box: 'Current 30-Yr Fixed: 6.87% | 15-Yr Fixed: 6.12% | FHA: 6.25%' with data source attribution",
-      "internal_links_added": "Added links to mortgage-calculator, mortgage-affordability"
+      "action": "FIXED TRACKING \u2014 Guide slug corrected",
+      "old_slug": "/guides/how-to-use-compound-interest-calculator",
+      "correct_slug": "/guides/how-to-use-compound-interest",
+      "note": "Calculator slug is 'compound-interest'"
     },
     {
-      "rank": 4,
-      "page": "/blog/how-much-mortgage-afford-100k-salary",
-      "priority": 82,
-      "fix_type": "B (meta \u2014 remove answer to stop snippet cannibalization)",
-      "old_title": "How Much Mortgage Can I Afford on $100K Salary? Exact Numbers | QFINHUB",
-      "new_title": "NO CHANGE \u2014 title is strong",
-      "title_change_reason": "Title already includes question + 'Exact Numbers' hook",
-      "old_meta": "Wondering how much house you can afford on $100K? Our calculator shows $320K-$420K based on standard lending guidelines.",
-      "new_meta": "Find out YOUR exact home buying budget on a $100K salary. Our free calculator factors in your debt, down payment, credit score, and today's rates \u2014 get a personalized number in 30 seconds, no signup required.",
-      "meta_change_reason": "Removed $320K-$420K range from meta to stop snippet cannibalization (users getting answer from SERP without clicking). Replaced with personalized-value hook that requires clicking through to get the answer.",
-      "above_fold_change": "Added prominent CTA: 'Enter Your Details Below to See Your Exact Number \u2192' above calculator embed",
-      "internal_links_added": "Strengthened link to mortgage-affordability calculator"
+      "action": "FIXED TRACKING \u2014 Guide slug corrected",
+      "old_slug": "/guides/how-to-use-debt-payoff-calculator",
+      "correct_slug": "/guides/how-to-use-debt-payoff",
+      "note": "Calculator slug is 'debt-payoff'"
     },
     {
-      "rank": 5,
-      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "priority": 80,
-      "fix_type": "C (above-fold answer) + D (FAQ) + E (internal links)",
-      "old_title": "How to Pay Off Credit Card Debt Fast in 2026 \u2014 Proven Strategies That Actually Work | QFINHUB",
-      "new_title": "How to Pay Off Credit Card Debt Fast: 7 Strategies (Pay Off $10K in 12-24 Months) | QFINHUB",
-      "title_change_reason": "Added specific timeline ($10K in 12-24 months) for concrete click incentive. Removed '2026' year that may date the content. '7 Strategies' is specific.",
-      "meta_change": "Added specific strategy names: 'Compare avalanche vs snowball methods, balance transfers, debt consolidation, and negotiation \u2014 see which saves you the most money with real examples.'",
-      "above_fold_change": "Added 'Fastest Path to Debt Freedom' summary: 'Use the avalanche method to pay off $10,000 in credit card debt in 12-24 months. Here's exactly how...' in first 100 words",
-      "internal_links_added": "Strengthened links to credit-card-payoff and debt-payoff calculators with inline CTAs"
-    },
-    {
-      "rank": 6,
-      "page": "/compare/best-mortgage-calculator",
-      "priority": 75,
-      "fix_type": "C (add calculator CTA) + E (internal links)",
-      "old_title": "Best Mortgage Calculator 2026 \u2014 Free, Fast & Accurate | QFINHUB",
-      "new_title": "NO CHANGE \u2014 title is strong",
-      "title_change_reason": "Already includes 'Best Mortgage Calculator', 'Free, Fast & Accurate', year",
-      "meta_change": "Added: 'See our ranking of the top 5 mortgage calculators plus try QFINHUB's free calculator directly on this page.'",
-      "above_fold_change": "Added prominent 'Try It Now: Free Mortgage Calculator' CTA box above the comparison table with direct link to /calculators/mortgage-calculator",
-      "internal_links_added": "Added inline 'Open Calculator \u2192' links next to each competitor entry, plus strong CTA to mortgage-calculator and mortgage-affordability"
-    },
-    {
-      "rank": 7,
-      "page": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
-      "priority": 72,
-      "fix_type": "C (dollar impact above fold) + D (FAQ)",
-      "old_title": "2027 Social Security COLA Forecast Jumps to 3.9%: What Retirees Need to Know Now | QFINHUB",
-      "new_title": "NO CHANGE \u2014 title is strong with exact number",
-      "title_change_reason": "Already includes '3.9%', year, and 'What Retirees Need to Know'",
-      "meta_change": "Added dollar impact: 'The 2027 COLA increase of 3.9% would add ~$72/month to the average $1,850 Social Security check. See the full breakdown and what it means for your retirement plan.'",
-      "above_fold_change": "Added 'What This Means for Your Check' box: 'Average benefit increase: +$72/month. Maximum benefit: +$148/month. Here's the full math...'",
-      "internal_links_added": "Added link to retirement-planning calculator"
+      "action": "FIXED TRACKING \u2014 Blog slug corrected",
+      "old_slug": "/blog/mortgage-rates-today",
+      "correct_slug": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+      "note": "Full slug restored in tracker"
     }
   ],
-  "skipped_pages": [
+  "ctr_fixes_applied": 2,
+  "ctr_fix_details": [
     {
-      "page": "/blog/investment-calculator-withdrawals",
-      "reason": "Position 22 (C bucket), blog post about a calculator rather than the calculator itself. Better to prioritize getting /calculators/investment-return to rank for this query."
+      "page": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+      "priority": "MEDIUM \u2014 position 20-30, energy in mortgage rates topic",
+      "fix": "TITLE + META \u2014 Align with high-performing 'mortgage rates' query cluster. Existing title already includes 'May 18, 2026' date signal. Add rate numbers.",
+      "old_title": "Mortgage Rates Today, May 18, 2026: Will They Rise or Fall This Week? How to Prepare",
+      "new_title": "Mortgage Rates Today: 6.87% 30-Yr Fixed \u2014 Will They Drop This Week? (May 2026)",
+      "reason": "Include actual rate number for snippet differentiation. Remove old date from title to avoid staleness signal."
     },
     {
-      "page": "/blog/retire-by-40-calculator-how-much-needed",
-      "reason": "Position 25 (C bucket), competitive FIRE niche. Fix would require major content rewrite beyond Day 4 scope."
+      "page": "/decision/how-much-emergency-fund-do-i-need",
+      "priority": "HIGH \u2014 this page has GSC impressions but was tracked under wrong route. It's a decision page, not a blog post.",
+      "fix": "VERIFIED CORRECT ROUTE: /decision/how-much-emergency-fund-do-i-need is HTTP 200, index,follow, in sitemap. No changes needed \u2014 page is strong. Just tracking correction.",
+      "action": "ADD TO CORRECT TRACKING (was previously in wrong bucket as /blog/)"
+    }
+  ],
+  "near_winner_pushes": 0,
+  "near_winner_note": "No new near-winner pushes today. 5 pages pushed Day 4 \u2014 allow re-crawl before additional pushes. Monitor GSC for position changes.",
+  "internal_authority_links": 3,
+  "internal_links_added": [
+    {
+      "source": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+      "target": "/calculators/mortgage-calculator",
+      "anchor": "calculate your monthly mortgage payment",
+      "type": "blog\u2192calculator"
     },
     {
-      "page": "/tools/afford-100k-40k-6-5pct",
-      "reason": "Position 30 (C bucket), robotic title but better target is /calculators/mortgage-affordability. Fix: internal link funnel rather than title edit."
+      "source": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+      "target": "/calculators/mortgage-affordability",
+      "anchor": "mortgage affordability calculator",
+      "type": "blog\u2192calculator"
     },
     {
-      "page": "/tools/afford-130k-40k-7pct",
-      "reason": "D bucket \u2014 not enough impressions to justify Day 4 edit. Internal link funnel to main calculator added."
-    },
-    {
-      "page": "/scenario/retirement-planning-5c0e8e25",
-      "reason": "C bucket, legacy scenario page. Better to push users to /calculators/retirement-planning."
+      "source": "/decision/how-much-emergency-fund-do-i-need",
+      "target": "/calculators/budget-planner",
+      "anchor": "budget planner",
+      "type": "decision\u2192calculator"
     }
   ]
 }
