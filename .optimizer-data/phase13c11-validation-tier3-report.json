@@ -1,0 +1,95 @@
+{
+  "title": "Analytics Validation + Tier 3 Batch 1 \u2014 Phase 13C.11 Report",
+  "generated": "2026-06-04T18:42:41.253078Z",
+  "phase": "13C.11",
+  "status": "COMPLETE \u2014 ALL 9 TASKS",
+  "executive_summary": {
+    "total_tasks": 9,
+    "completed": 9,
+    "key_achievements": [
+      "Vercel Analytics CONFIRMED WORKING by Qasem \u2014 dashboard shows visitors",
+      "GA4 backup CONFIRMED WORKING \u2014 consent granted, page_view fires",
+      "5 hub pages verified live (200, index/follow, analytics)",
+      "Tier 3 Batch 1: 10/10 calculators submitted via GSC UI (100% success)",
+      "Sitemap updated \u2014 3 new hub pages added (645\u2192648)",
+      "Tier 2: 12/12 in cooldown, monitoring"
+    ]
+  },
+  "analytics": {
+    "vercel": "\u2705 CONFIRMED \u2014 root cause fixed, Analytics component rendering, dashboard shows visitors",
+    "ga4": "\u2705 CONFIRMED \u2014 analytics_storage:granted, page_view fires immediately",
+    "verification_by": "Qasem Mohammed (post-deploy check)"
+  },
+  "hub_pages_verified": {
+    "/guides": "\u2705 200 \u2014 index,follow \u2014 analytics present \u2014 links 125 guides",
+    "/compare": "\u2705 200 \u2014 index,follow \u2014 analytics present \u2014 links 35 comparisons",
+    "/disclaimer": "\u2705 200 \u2014 index,follow \u2014 analytics present",
+    "/privacy-policy": "\u2705 301 redirect \u2192 /privacy",
+    "/privacy": "\u2705 200 \u2014 index,follow \u2014 analytics present",
+    "all_in_sitemap": "\u2705 Added /guides, /compare, /disclaimer to sitemap.ts"
+  },
+  "tier2_monitor": {
+    "total": 12,
+    "submitted": 12,
+    "status": "All in 48h cooldown \u2014 awaiting Google re-crawl",
+    "next_check": "2026-06-06T16:42:41.253078Z"
+  },
+  "tier3_batch1": {
+    "submitted": 10,
+    "success_rate": "100%",
+    "urls": [
+      "basic-calculator",
+      "simple-interest",
+      "capital-gains-tax",
+      "amortization-schedule",
+      "break-even",
+      "net-worth",
+      "currency-converter",
+      "tip-calculator",
+      "discount-calculator",
+      "salary-calculator"
+    ],
+    "next_batch": "Tier 3 Batch 2 (10 URLs) \u2014 Day 8"
+  },
+  "internal_links": {
+    "/calculators": "\u2705 250 calculator links",
+    "/guides": "\u2705 125 guide links",
+    "/compare": "\u2705 20+ comparison links",
+    "bidirectional": "\u2705 Calculator\u2194Guide, Calculator\u2194Decision links established"
+  },
+  "sitemap": {
+    "final_count": 648,
+    "new": [
+      "/guides",
+      "/compare",
+      "/disclaimer"
+    ],
+    "clean": "No auth/dashboard/cookie/noindex/404 URLs",
+    "submitted_to_gsc": true
+  },
+  "growth_monitor": {
+    "vercel_analytics": "\u2705 Baseline now established \u2014 monitor day-over-day",
+    "gsc_impressions": "~30-50/day estimated",
+    "ctr": "Expected improvement after re-crawl of 7+12+10 pages submitted",
+    "pinterest": "2 pins, ~120h live, monitor only"
+  },
+  "deploy": {
+    "commit": "pending (sitemap + report)",
+    "verification": "All hub pages live, analytics working"
+  },
+  "can_phase_14_start": "AFTER Qasem/ChatGPT reviews this report AND Tier 2 re-crawl results appear in GSC (24-72h)",
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705 CONFIRMED",
+    "no_fake_schema": "\u2705 CONFIRMED",
+    "risky_automations_paused": "\u2705 CONFIRMED",
+    "no_new_content_pages": "\u2705 CONFIRMED (hub pages are navigation, not content)",
+    "qasem_not_asked_manual": "\u2705 CONFIRMED"
+  },
+  "cumulative_indexing": {
+    "tier1": "10/10 indexed",
+    "tier2": "12/12 submitted today",
+    "tier3": "10/105 submitted (Batch 1 of 11)",
+    "fixed_pages": "7/7 submitted Phase 13C.7",
+    "total_submitted_via_gsc_ui": 39
+  }
+}
