@@ -1,0 +1,134 @@
+{
+  "title": "Main Indexing Gap List \u2014 PHASE 13C.9",
+  "generated": "2026-06-04T17:54:27.070019Z",
+  "summary": {
+    "tier1_total": 10,
+    "tier1_indexed": 10,
+    "tier1_gaps": 0,
+    "tier2_total": 12,
+    "tier2_indexed": 0,
+    "tier2_gaps": 12,
+    "tier3_total": 103,
+    "tier3_indexed": 0,
+    "tier3_gaps": 103,
+    "guide_gaps": "125 guides \u2014 most likely not indexed (sample: /guides/how-to-use-compound-interest)",
+    "comparison_gaps": "35 comparisons \u2014 best-mortgage-calculator recently submitted",
+    "decision_gaps": "8/15 not indexed, recently submitted 7 pages may include some",
+    "static_gaps": [
+      "/guides returns 404",
+      "/compare returns 404"
+    ],
+    "blog_gaps": "~95 blog posts not indexed (only ~10 have impressions)"
+  },
+  "tier1_gaps": [],
+  "tier2_gaps": [
+    {
+      "slug": "auto-loan",
+      "url": "https://www.qfinhub.com/calculators/auto-loan",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "refinance-calculator",
+      "url": "https://www.qfinhub.com/calculators/refinance-calculator",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "emergency-fund",
+      "url": "https://www.qfinhub.com/calculators/emergency-fund",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "rent-vs-buy",
+      "url": "https://www.qfinhub.com/calculators/rent-vs-buy",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "roi-calculator",
+      "url": "https://www.qfinhub.com/calculators/roi-calculator",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "pension-calculator",
+      "url": "https://www.qfinhub.com/calculators/pension-calculator",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "credit-card-payoff",
+      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "debt-snowball",
+      "url": "https://www.qfinhub.com/calculators/debt-snowball",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "fire-calculator",
+      "url": "https://www.qfinhub.com/calculators/fire-calculator",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "amortization-calculator",
+      "url": "https://www.qfinhub.com/calculators/amortization-calculator",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "inflation-calculator",
+      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    },
+    {
+      "slug": "savings-goal",
+      "url": "https://www.qfinhub.com/calculators/savings-goal",
+      "status": "NOT INDEXED \u2014 needs GSC Request Indexing",
+      "priority": "HIGH"
+    }
+  ],
+  "tier3_gaps": "103 calculators \u2014 lower priority, natural crawl discovery via sitemap",
+  "static_gaps_detail": [
+    {
+      "url": "https://www.qfinhub.com/guides",
+      "issue": "HTTP 404",
+      "fix": "Remove from sitemap or create listing page"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare",
+      "issue": "HTTP 404",
+      "fix": "Remove from sitemap or create listing page"
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/login",
+      "issue": "Auth page in sitemap",
+      "fix": "Remove from sitemap"
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/signup",
+      "issue": "Auth page in sitemap",
+      "fix": "Remove from sitemap"
+    }
+  ],
+  "recommended_gsc_ui_batch": [
+    "https://www.qfinhub.com/calculators/auto-loan",
+    "https://www.qfinhub.com/calculators/refinance-calculator",
+    "https://www.qfinhub.com/calculators/emergency-fund",
+    "https://www.qfinhub.com/calculators/rent-vs-buy",
+    "https://www.qfinhub.com/calculators/roi-calculator",
+    "https://www.qfinhub.com/calculators/pension-calculator",
+    "https://www.qfinhub.com/calculators/credit-card-payoff",
+    "https://www.qfinhub.com/calculators/debt-snowball",
+    "https://www.qfinhub.com/calculators/fire-calculator",
+    "https://www.qfinhub.com/calculators/amortization-calculator"
+  ],
+  "recommended_gsc_ui_batch_count": 10
+}

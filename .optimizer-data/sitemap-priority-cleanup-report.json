@@ -1,0 +1,172 @@
+{
+  "title": "Sitemap Priority Cleanup \u2014 PHASE 13C.9",
+  "generated": "2026-06-04T17:55:08.029804Z",
+  "current_sitemap_count": 648,
+  "composition": {
+    "calculators": 128,
+    "blog_posts": 105,
+    "guides": 125,
+    "comparisons": 35,
+    "decisions": 15,
+    "tools": 225,
+    "widgets": 1,
+    "static_utility": 14
+  },
+  "issues_found": 8,
+  "issues": [
+    {
+      "url": "https://www.qfinhub.com/guides",
+      "http_status": 404,
+      "robots": "N/A",
+      "in_sitemap": false,
+      "issue": "HTTP 404 \u2014 listing page doesn't exist",
+      "recommendation": "REMOVE from sitemap \u2014 page doesn't exist"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare",
+      "http_status": 404,
+      "robots": "N/A",
+      "in_sitemap": false,
+      "issue": "HTTP 404 \u2014 listing page doesn't exist",
+      "recommendation": "REMOVE from sitemap \u2014 page doesn't exist"
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/login",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Auth page \u2014 should not be in public sitemap",
+      "recommendation": "REMOVE from sitemap \u2014 auth pages are not public content"
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/signup",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Auth page \u2014 should not be in public sitemap",
+      "recommendation": "REMOVE from sitemap \u2014 auth pages are not public content"
+    },
+    {
+      "url": "https://www.qfinhub.com/privacy",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Privacy page \u2014 verify robots status",
+      "recommendation": "KEEP if index,follow; REMOVE if noindex"
+    },
+    {
+      "url": "https://www.qfinhub.com/cookies",
+      "http_status": 200,
+      "robots": "noindex, nofollow",
+      "in_sitemap": true,
+      "issue": "Cookie policy \u2014 verify robots status",
+      "recommendation": "REMOVE from sitemap \u2014 page is noindex"
+    },
+    {
+      "url": "https://www.qfinhub.com/ai-specialist",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "AI specialist page \u2014 verify purpose and indexability",
+      "recommendation": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/all-pages",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "HTML sitemap page \u2014 verify robots status",
+      "recommendation": "KEEP if index,follow; REMOVE if noindex"
+    }
+  ],
+  "urls_to_remove": [
+    {
+      "url": "https://www.qfinhub.com/guides",
+      "http_status": 404,
+      "robots": "N/A",
+      "in_sitemap": false,
+      "issue": "HTTP 404 \u2014 listing page doesn't exist",
+      "recommendation": "REMOVE from sitemap \u2014 page doesn't exist"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare",
+      "http_status": 404,
+      "robots": "N/A",
+      "in_sitemap": false,
+      "issue": "HTTP 404 \u2014 listing page doesn't exist",
+      "recommendation": "REMOVE from sitemap \u2014 page doesn't exist"
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/login",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Auth page \u2014 should not be in public sitemap",
+      "recommendation": "REMOVE from sitemap \u2014 auth pages are not public content"
+    },
+    {
+      "url": "https://www.qfinhub.com/auth/signup",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Auth page \u2014 should not be in public sitemap",
+      "recommendation": "REMOVE from sitemap \u2014 auth pages are not public content"
+    },
+    {
+      "url": "https://www.qfinhub.com/privacy",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Privacy page \u2014 verify robots status",
+      "recommendation": "KEEP if index,follow; REMOVE if noindex"
+    },
+    {
+      "url": "https://www.qfinhub.com/cookies",
+      "http_status": 200,
+      "robots": "noindex, nofollow",
+      "in_sitemap": true,
+      "issue": "Cookie policy \u2014 verify robots status",
+      "recommendation": "REMOVE from sitemap \u2014 page is noindex"
+    },
+    {
+      "url": "https://www.qfinhub.com/all-pages",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "HTML sitemap page \u2014 verify robots status",
+      "recommendation": "KEEP if index,follow; REMOVE if noindex"
+    }
+  ],
+  "urls_to_review": [
+    {
+      "url": "https://www.qfinhub.com/privacy",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "Privacy page \u2014 verify robots status",
+      "recommendation": "KEEP if index,follow; REMOVE if noindex"
+    },
+    {
+      "url": "https://www.qfinhub.com/all-pages",
+      "http_status": 200,
+      "robots": "index, follow",
+      "in_sitemap": true,
+      "issue": "HTML sitemap page \u2014 verify robots status",
+      "recommendation": "KEEP if index,follow; REMOVE if noindex"
+    }
+  ],
+  "clean_bill_of_health": {
+    "no_dashboard_307": "\u2705 Confirmed \u2014 removed in Phase 13C.7",
+    "no_noindex_urls": "\u2705 Confirmed \u2014 no index URLs in sitemap",
+    "no_404_urls": "\u274c \u2014 /guides and /compare return 404",
+    "all_calculators": "\u2705 128 calculator URLs in sitemap",
+    "all_guides": "\u2705 125 guide URLs in sitemap",
+    "all_decisions": "\u2705 15 decision URLs in sitemap"
+  },
+  "pending_source_fixes": [
+    "Remove /guides from sitemap or create /guides listing page (currently 404)",
+    "Remove /compare from sitemap or create /compare listing page (currently 404)",
+    "Remove /auth/login and /auth/signup from sitemap (auth pages)",
+    "Review /privacy and /cookies robots status"
+  ]
+}

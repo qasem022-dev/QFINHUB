@@ -43,18 +43,9 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    {
-      url: `${BASE_URL}/auth/login`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.2,
-    },
-    {
-      url: `${BASE_URL}/auth/signup`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.2,
-    },
+    // Auth & Cookie pages REMOVED from sitemap (PHASE 13C.9, Jun 4)
+    // /auth/login, /auth/signup — authentication pages, not public content
+    // /cookies — noindex page, should not be in sitemap
     {
       url: `${BASE_URL}/privacy`,
       lastModified: new Date(),
@@ -63,12 +54,6 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     },
     {
       url: `${BASE_URL}/terms`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/cookies`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,
