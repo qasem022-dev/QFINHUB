@@ -1,0 +1,208 @@
+{
+  "title": "Tier 3 Calculator Indexing Batch Plan \u2014 PHASE 13C.10",
+  "generated": "2026-06-04T18:21:36.550590Z",
+  "total_tier3": 105,
+  "strategy": "Submit 10/day via GSC UI automation. All pass safety gates: HTTP 200, index/follow, self-canonical, in sitemap.",
+  "daily_batches": [
+    {
+      "batch": 1,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/basic-calculator",
+        "https://www.qfinhub.com/calculators/simple-interest",
+        "https://www.qfinhub.com/calculators/capital-gains-tax",
+        "https://www.qfinhub.com/calculators/amortization-schedule",
+        "https://www.qfinhub.com/calculators/break-even",
+        "https://www.qfinhub.com/calculators/net-worth",
+        "https://www.qfinhub.com/calculators/currency-converter",
+        "https://www.qfinhub.com/calculators/tip-calculator",
+        "https://www.qfinhub.com/calculators/discount-calculator",
+        "https://www.qfinhub.com/calculators/salary-calculator"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 2,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/stock-return",
+        "https://www.qfinhub.com/calculators/dividend-calculator",
+        "https://www.qfinhub.com/calculators/dollar-cost-average",
+        "https://www.qfinhub.com/calculators/student-loan",
+        "https://www.qfinhub.com/calculators/personal-loan",
+        "https://www.qfinhub.com/calculators/debt-consolidation",
+        "https://www.qfinhub.com/calculators/loan-comparison",
+        "https://www.qfinhub.com/calculators/debt-avalanche",
+        "https://www.qfinhub.com/calculators/loan-refinancing",
+        "https://www.qfinhub.com/calculators/lease-vs-buy"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 3,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/home-equity",
+        "https://www.qfinhub.com/calculators/closing-costs",
+        "https://www.qfinhub.com/calculators/mortgage-payoff",
+        "https://www.qfinhub.com/calculators/biweekly-mortgage",
+        "https://www.qfinhub.com/calculators/fha-loan",
+        "https://www.qfinhub.com/calculators/va-loan",
+        "https://www.qfinhub.com/calculators/arm-calculator",
+        "https://www.qfinhub.com/calculators/pmi-calculator",
+        "https://www.qfinhub.com/calculators/home-renovation",
+        "https://www.qfinhub.com/calculators/portfolio-allocator"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 4,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/risk-reward",
+        "https://www.qfinhub.com/calculators/position-sizing",
+        "https://www.qfinhub.com/calculators/option-profit",
+        "https://www.qfinhub.com/calculators/bond-yield",
+        "https://www.qfinhub.com/calculators/bond-price",
+        "https://www.qfinhub.com/calculators/capm-calculator",
+        "https://www.qfinhub.com/calculators/sharpe-ratio",
+        "https://www.qfinhub.com/calculators/alpha-calculator",
+        "https://www.qfinhub.com/calculators/beta-calculator",
+        "https://www.qfinhub.com/calculators/asset-correlation"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 5,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/monte-carlo-simulation",
+        "https://www.qfinhub.com/calculators/annuity-calculator",
+        "https://www.qfinhub.com/calculators/perpetuity-calculator",
+        "https://www.qfinhub.com/calculators/present-value",
+        "https://www.qfinhub.com/calculators/future-value",
+        "https://www.qfinhub.com/calculators/irr-calculator",
+        "https://www.qfinhub.com/calculators/npv-calculator",
+        "https://www.qfinhub.com/calculators/payback-period",
+        "https://www.qfinhub.com/calculators/financial-ratios",
+        "https://www.qfinhub.com/calculators/roth-ira"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 6,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/traditional-ira",
+        "https://www.qfinhub.com/calculators/social-security",
+        "https://www.qfinhub.com/calculators/retirement-withdrawal",
+        "https://www.qfinhub.com/calculators/required-minimum-distribution",
+        "https://www.qfinhub.com/calculators/retirement-income",
+        "https://www.qfinhub.com/calculators/early-retirement",
+        "https://www.qfinhub.com/calculators/retirement-expenses",
+        "https://www.qfinhub.com/calculators/sales-tax",
+        "https://www.qfinhub.com/calculators/property-tax",
+        "https://www.qfinhub.com/calculators/estate-tax"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 7,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/inheritance-tax",
+        "https://www.qfinhub.com/calculators/self-employment-tax",
+        "https://www.qfinhub.com/calculators/effective-tax-rate",
+        "https://www.qfinhub.com/calculators/marginal-tax-rate",
+        "https://www.qfinhub.com/calculators/tax-bracket",
+        "https://www.qfinhub.com/calculators/w4-calculator",
+        "https://www.qfinhub.com/calculators/1099-calculator",
+        "https://www.qfinhub.com/calculators/gross-margin",
+        "https://www.qfinhub.com/calculators/net-profit-margin",
+        "https://www.qfinhub.com/calculators/markup-calculator"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 8,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/margin-calculator",
+        "https://www.qfinhub.com/calculators/operating-margin",
+        "https://www.qfinhub.com/calculators/cash-flow",
+        "https://www.qfinhub.com/calculators/dcf-analysis",
+        "https://www.qfinhub.com/calculators/inventory-turnover",
+        "https://www.qfinhub.com/calculators/customer-acquisition-cost",
+        "https://www.qfinhub.com/calculators/lifetime-value",
+        "https://www.qfinhub.com/calculators/em-fund",
+        "https://www.qfinhub.com/calculators/debt-to-income",
+        "https://www.qfinhub.com/calculators/college-savings"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 9,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/car-affordability",
+        "https://www.qfinhub.com/calculators/insurance-needs",
+        "https://www.qfinhub.com/calculators/child-care-cost",
+        "https://www.qfinhub.com/calculators/moving-cost",
+        "https://www.qfinhub.com/calculators/wedding-budget",
+        "https://www.qfinhub.com/calculators/vacation-budget",
+        "https://www.qfinhub.com/calculators/side-hustle-calculator",
+        "https://www.qfinhub.com/calculators/fica-calculator",
+        "https://www.qfinhub.com/calculators/hourly-to-salary",
+        "https://www.qfinhub.com/calculators/overtime-calculator"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 10,
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/paycheck-calculator",
+        "https://www.qfinhub.com/calculators/percentage-calculator",
+        "https://www.qfinhub.com/calculators/bmi-calculator",
+        "https://www.qfinhub.com/calculators/calorie-calculator",
+        "https://www.qfinhub.com/calculators/date-difference",
+        "https://www.qfinhub.com/calculators/age-calculator",
+        "https://www.qfinhub.com/calculators/time-value-of-money",
+        "https://www.qfinhub.com/calculators/rule-of-72",
+        "https://www.qfinhub.com/calculators/fraction-calculator",
+        "https://www.qfinhub.com/calculators/unit-converter"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    },
+    {
+      "batch": 11,
+      "count": 5,
+      "urls": [
+        "https://www.qfinhub.com/calculators/gas-mileage",
+        "https://www.qfinhub.com/calculators/fuel-cost",
+        "https://www.qfinhub.com/calculators/electricity-cost",
+        "https://www.qfinhub.com/calculators/water-bill",
+        "https://www.qfinhub.com/calculators/phone-plan-comparison"
+      ],
+      "status": "pending",
+      "priority_note": "Submit 10/day via safe-gsc-ui-indexing-queue.py after Tier 2 complete"
+    }
+  ],
+  "estimated_completion": "11 days (10/day)",
+  "schedule": {
+    "day1": "Batch 1 (10 URLs) \u2014 after Tier 2 complete + analytics verified",
+    "day2": "Batch 2 (10 URLs)",
+    "remaining": "Batches 3-11 continue daily"
+  },
+  "safety_note": "All Tier 3 calcs use same template as Tier 1/2 \u2014 consistent quality. No thin content."
+}

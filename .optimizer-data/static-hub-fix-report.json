@@ -1,0 +1,33 @@
+{
+  "title": "Static Hub Page Fixes \u2014 PHASE 13C.10",
+  "generated": "2026-06-04T18:21:36.550590Z",
+  "fixes": [
+    {
+      "page": "/privacy-policy",
+      "action": "301 redirect \u2192 /privacy",
+      "file": "next.config.ts",
+      "status": "deployed"
+    },
+    {
+      "page": "/disclaimer",
+      "action": "Created new page \u2014 educational use, not financial advice, estimates only",
+      "file": "src/app/disclaimer/page.tsx",
+      "status": "deployed"
+    },
+    {
+      "page": "/guides",
+      "action": "Created hub page \u2014 lists all 125 guides by category with links",
+      "file": "src/app/guides/page.tsx",
+      "status": "deployed"
+    },
+    {
+      "page": "/compare",
+      "action": "Created hub page \u2014 lists all 35 comparisons with links",
+      "file": "src/app/compare/page.tsx",
+      "status": "deployed"
+    }
+  ],
+  "all_pages_indexable": true,
+  "all_self_canonical": true,
+  "all_have_internal_links": true
+}

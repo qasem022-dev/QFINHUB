@@ -1,0 +1,71 @@
+{
+  "title": "Tier 2 Calculator Indexing Monitor \u2014 PHASE 13C.10",
+  "generated": "2026-06-04T18:22:06.745953Z",
+  "total_tier2": 12,
+  "submitted_phase_13c9": 10,
+  "submitted_phase_13c10": 2,
+  "status": "AWAITING GSC UI RESULT for last 2 calculators",
+  "all_12_tier2_urls": [
+    {
+      "slug": "auto-loan",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "refinance-calculator",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "emergency-fund",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "rent-vs-buy",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "roi-calculator",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "pension-calculator",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "credit-card-payoff",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "debt-snowball",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "fire-calculator",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "amortization-calculator",
+      "submitted": "Phase 13C.9",
+      "status": "\u2705 submitted"
+    },
+    {
+      "slug": "inflation-calculator",
+      "submitted": "Phase 13C.10 (in progress)",
+      "status": "\ud83d\udd04 submitting"
+    },
+    {
+      "slug": "savings-goal",
+      "submitted": "Phase 13C.10 (in progress)",
+      "status": "\ud83d\udd04 submitting"
+    }
+  ],
+  "next_check": "48h after submission \u2014 verify GSC indexing status"
+}

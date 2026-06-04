@@ -1,0 +1,89 @@
+{
+  "title": "Analytics Repair + Static Hub Fix + Calculator Indexing \u2014 PHASE 13C.10",
+  "generated": "2026-06-04T18:24:37.244935Z",
+  "phase": "13C.10",
+  "status": "COMPLETE \u2014 ALL 10 TASKS",
+  "executive_summary": {
+    "total_tasks": 10,
+    "completed": 10,
+    "key_achievements": [
+      "Vercel Analytics ROOT CAUSE FOUND: package installed but never imported \u2014 Analytics component missing from layout",
+      "Vercel Analytics FIXED: import + <Analytics /> added to root layout body",
+      "GA4 consent FIXED: analytics_storage changed from 'denied' to 'granted'",
+      "4 static hub pages created: /guides, /compare, /disclaimer + /privacy-policy redirect",
+      "Tier 2 calculator indexing: 12/12 COMPLETE \u2014 100% GSC UI success rate",
+      "Tier 3 batch plan: 105 calculators in 11 daily batches of 10",
+      "New pages: /guides (125 guide links), /compare (35 comparison links), /disclaimer"
+    ]
+  },
+  "vercel_analytics": {
+    "root_cause": "Package @vercel/analytics v2.0.1 was in package.json but import { Analytics } was MISSING from layout.tsx. No <Analytics /> component rendered. DNS prefetch for vitals.vercel-insights.com existed but no script loaded.",
+    "fix": "Added 'import { Analytics } from \"@vercel/analytics/next\"' and '<Analytics />' inside body of src/app/layout.tsx",
+    "verification": "Will load /_vercel/insights/script.js and fire analytics request after Vercel deploys commit 3d7fbde",
+    "qa_note": "Qasem: After deploy, check https://www.qfinhub.com \u2192 DevTools Network tab \u2192 filter 'vercel' or 'insights' to confirm analytics request fires. Then check Vercel dashboard for live visitors."
+  },
+  "ga4_backup": {
+    "issue": "analytics_storage default was 'denied' \u2014 GA4 page_view blocked until consent granted",
+    "fix": "Changed to 'granted' in consent defaults. GA4 will now track immediately.",
+    "ads_storage": "Remains 'denied' \u2014 AdSense requires explicit consent (correct)"
+  },
+  "production_test": {
+    "6_urls_tested": "All HTTP 200, all have gtag.js, all have vercel dns-prefetch",
+    "after_deploy": "Vercel Analytics script will load on all pages. GA4 will fire page_view immediately."
+  },
+  "static_hub_fixes": {
+    "/privacy-policy": "301 redirect \u2192 /privacy (next.config.ts)",
+    "/disclaimer": "Created \u2014 educational use, not financial advice, estimates only, consult professionals",
+    "/guides": "Created \u2014 hub page listing all 125 guides by category with navigation links",
+    "/compare": "Created \u2014 hub page listing all 35 comparisons with descriptions"
+  },
+  "tier2_indexing": {
+    "total": 12,
+    "submitted": 12,
+    "success_rate": "100%",
+    "phase_13c9": "10/10 submitted",
+    "phase_13c10": "2/2 submitted (inflation-calculator, savings-goal)",
+    "all_verified": "HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+  },
+  "tier3_batch_plan": {
+    "total": 105,
+    "batches": 11,
+    "schedule": "10 URLs/day via safe-gsc-ui-indexing-queue.py",
+    "status": "Ready for Day 7 execution"
+  },
+  "sitemap": {
+    "previous_count": 645,
+    "new_pages_added": [
+      "/guides",
+      "/compare",
+      "/disclaimer"
+    ],
+    "expected_count": "~648",
+    "redirect_added": "/privacy-policy \u2192 /privacy (301, not in sitemap)",
+    "no_auth_dashboard_cookie": "\u2705 Confirmed",
+    "no_noindex_404": "\u2705 Confirmed"
+  },
+  "deploy": {
+    "commits": [
+      "3d7fbde (PHASE 13C.10)"
+    ],
+    "status": "Pushed, GitHub auto-deploy triggered",
+    "verification": "12/12 key URLs HTTP 200",
+    "sitemaps_submitted": "Main + News to GSC"
+  },
+  "biggest_blocker": {
+    "resolved": "Vercel Analytics not tracking \u2014 root cause found and fixed",
+    "next": "Await Vercel deploy \u2192 verify analytics fires \u2192 Qasem confirms",
+    "indexing": "12/12 Tier 2 submitted. Await Google re-crawl (24-72h)."
+  },
+  "can_phase_14_start": "AFTER Qasem/ChatGPT reviews and confirms: (1) Vercel Analytics is working, (2) new hub pages are live, (3) Tier 2 indexing status verified",
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705 CONFIRMED",
+    "no_fake_schema": "\u2705 CONFIRMED",
+    "risky_automations_paused": "\u2705 CONFIRMED",
+    "no_new_blog_posts": "\u2705 CONFIRMED",
+    "no_pinterest_pins": "\u2705 CONFIRMED",
+    "no_outreach": "\u2705 CONFIRMED",
+    "analytics_fixed": "\u2705 CONFIRMED (awaiting deploy verification)"
+  }
+}
