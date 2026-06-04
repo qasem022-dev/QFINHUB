@@ -1,12 +1,9 @@
 {
-  "title": "Click Extraction Engine \u2014 Phase 14B Day 1",
-  "generated": "2026-06-04T19:36:17.085058Z",
+  "title": "Non-Cooldown CTR Targets \u2014 Phase 14B Day 2",
+  "generated": "2026-06-04T19:59:12.664637Z",
   "applied": 0,
   "held": 10,
-  "reason": "All zero-click targets in 48h cooldown. Auditor correctly held all CTR actions.",
-  "daily_limits_remaining": {
-    "ctr_fixes": 10,
-    "position_boosts": 10,
-    "internal_links": 17
-  }
+  "honest_assessment": "Pages with known Google impressions are almost all in cooldown (7 fixed pages, 12 T2 calcs, 30 T3 calcs). Pages NOT in cooldown (T1 calcs, guides, decisions, comparisons) have no confirmed impression data because GSC Search Analytics API is unavailable.",
+  "alternative_action": "Instead of CTR fixes on unconfirmed targets, focus on: (1) Internal links to boost crawl priority, (2) Calculator strengthening to improve rankings, (3) GSC UI for fresh Tier 3 batches.",
+  "why_not_applying_ctr_blindly": "Editing titles/metas on pages with no impression data risks breaking existing rankings. Better to strengthen content and links, then measure."
 }

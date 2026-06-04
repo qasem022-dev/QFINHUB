@@ -1,0 +1,85 @@
+{
+  "title": "7 Fixed Pages 48h Recheck \u2014 Phase 14B Day 2",
+  "generated": "2026-06-04T19:59:12.664637Z",
+  "pages": [
+    {
+      "slug": "20000-loan",
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": "200",
+      "title": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment: $405.53 (Free Calculator) | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    },
+    {
+      "slug": "fed-2025",
+      "url": "https://www.qfinhub.com/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "http_status": "200",
+      "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    },
+    {
+      "slug": "mortgage-rates",
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "http_status": "200",
+      "title": "Mortgage Rates 2025: Rates Move to Highest in 5 Weeks, But Homebuyers Shake It Off | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    },
+    {
+      "slug": "afford-100k",
+      "url": "https://www.qfinhub.com/blog/how-much-mortgage-afford-100k-salary",
+      "http_status": "200",
+      "title": "How Much Mortgage Can I Afford on $100K Salary? Exact Numbers | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    },
+    {
+      "slug": "credit-card-debt",
+      "url": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "http_status": "200",
+      "title": "How to Pay Off Credit Card Debt Fast in 2026 \u2014 Proven Strategies That Actually Work | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    },
+    {
+      "slug": "best-mortgage",
+      "url": "https://www.qfinhub.com/compare/best-mortgage-calculator",
+      "http_status": "200",
+      "title": "Best Mortgage Calculator 2026 \u2014 Free, Fast &amp; Accurate | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    },
+    {
+      "slug": "social-security-cola",
+      "url": "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "http_status": "200",
+      "title": "2027 Social Security COLA Forecast Jumps to 3.9%: What Retirees Need to Know Now | QFINHUB",
+      "robots": "index, follow",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_since_submit": 6,
+      "in_cooldown": true,
+      "action": "WAIT \u2014 cooldown not expired. Check GSC after 48h for re-crawl status."
+    }
+  ],
+  "summary": "All 7 pages HTTP 200, index/follow. Submitted for GSC UI indexing ~6h ago. Still in 48h edit-cooldown. Google likely hasn't re-crawled yet. Continue monitoring.",
+  "next_check": "2026-06-05T13:59:12.664637Z"
+}

@@ -1,6 +1,7 @@
 {
-  "title": "Near-Winner Rank Push \u2014 Phase 14B Day 1",
-  "generated": "2026-06-04T19:36:17.085058Z",
+  "title": "Near-Winner Rank Push \u2014 Phase 14B Day 2",
+  "generated": "2026-06-04T19:59:12.664637Z",
   "applied": 0,
-  "reason": "All near-winner pages are the 7 fixed pages in 48h cooldown. Wait for re-crawl."
+  "reason": "All known near-winner pages (pos 8-20) are the 7 fixed pages \u2014 in cooldown. Non-cooldown pages have no confirmed position data.",
+  "alternative_action": "Internal links from indexed pages ARE the near-winner push. Google follows links and increases crawl priority. This is the best Google-only ranking signal right now."
 }

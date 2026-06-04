@@ -1,26 +1,81 @@
 {
-  "title": "Internal Authority Engine \u2014 Phase 14B Day 1",
-  "generated": "2026-06-04T19:36:17.085058Z",
-  "applied": 3,
+  "title": "Internal Authority Engine \u2014 Phase 14B Day 2",
+  "generated": "2026-06-04T19:59:12.664637Z",
+  "applied": 12,
+  "strategy": "Links from CONFIRMED INDEXED pages to pages needing crawl priority. Also cross-link Tier 1 calculators for topical authority.",
   "links": [
     {
       "source": "/calculators/mortgage-calculator",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "figure out how much house you can afford",
-      "type": "calc\u2192calc"
+      "target": "/calculators/refinance-calculator",
+      "anchor": "see if refinancing could lower your payment",
+      "type": "T1\u2192T2"
+    },
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/guides/how-to-use-mortgage-calculator",
+      "anchor": "learn exactly how to use the mortgage calculator",
+      "type": "calc\u2192guide"
     },
     {
       "source": "/calculators/compound-interest",
       "target": "/guides/how-to-use-compound-interest",
-      "anchor": "learn how compound interest works",
+      "anchor": "master compound interest in 30 seconds",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/retirement-planning",
+      "target": "/guides/how-to-use-retirement-planning",
+      "anchor": "plan your retirement step by step",
       "type": "calc\u2192guide"
     },
     {
       "source": "/calculators/debt-payoff",
-      "target": "/calculators/credit-card-payoff",
-      "anchor": "pay off your credit cards faster",
-      "type": "calc\u2192calc"
+      "target": "/guides/how-to-use-debt-payoff",
+      "anchor": "choose the fastest debt payoff strategy",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/loan-calculator",
+      "target": "/guides/how-to-use-loan-calculator",
+      "anchor": "calculate any loan payment instantly",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/mortgage-affordability",
+      "target": "/guides/how-to-use-mortgage-affordability",
+      "anchor": "find your maximum home buying budget",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/tax-calculator",
+      "target": "/guides/how-to-use-tax-calculator",
+      "anchor": "estimate your taxes in seconds",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/401k-calculator",
+      "target": "/guides/how-to-use-401k-calculator",
+      "anchor": "project your 401(k) growth with employer match",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/investment-return",
+      "target": "/guides/how-to-use-investment-return",
+      "anchor": "calculate your true investment performance",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/budget-planner",
+      "target": "/guides/how-to-use-budget-planner",
+      "anchor": "create a 50/30/20 budget that works",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/decision/can-i-afford-a-400k-home",
+      "anchor": "decide if you can afford a $400,000 home",
+      "type": "calc\u2192decision"
     }
   ],
-  "note": "Links from indexed Tier 1 calcs (mortgage-calculator, compound-interest, debt-payoff) to pages in Google's indexing queue. Boosts crawl priority naturally."
+  "note": "12 links from indexed T1 calcs to their guide pages + decisions. All sources CONFIRMED INDEXED. All targets are quality pages awaiting crawl. Links are contextual and useful."
 }

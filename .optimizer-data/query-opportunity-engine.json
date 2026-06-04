@@ -1,123 +1,27 @@
 {
-  "title": "Query Opportunity Engine \u2014 Phase 14B Day 1",
-  "generated": "2026-06-04T19:36:17.085058Z",
-  "data_source": "Known GSC data from V2 + Phase 13 analysis. GSC Search Analytics API unavailable (404).",
-  "top_10_opportunities": [
+  "title": "Content Opportunity Review \u2014 Phase 14B Day 2",
+  "generated": "2026-06-04T19:59:12.664637Z",
+  "auditor_decisions": [
     {
-      "rank": 1,
-      "query": "20000 loan 8 percent 5 years monthly payment",
-      "page": "/blog/20000-loan-...",
-      "position": 11,
-      "impressions": 11,
-      "clicks": 0,
-      "score": 92,
-      "action": "IMPROVE \u2014 title/meta already fixed, awaiting re-crawl",
-      "risk": "LOW",
-      "note": "In 48h cooldown \u2014 re-check GSC status"
+      "id": "CONTENT-D2-001",
+      "query": "20000 loan 8 percent 5 years",
+      "decision": "HOLD_FOR_DATA",
+      "reason": "Page already exists and was improved. Awaiting re-crawl."
     },
     {
-      "rank": 2,
-      "query": "fed household economic well-being 2025",
-      "page": "/blog/fed-2025-report-...",
-      "position": 9,
-      "impressions": 8,
-      "clicks": 0,
-      "score": 90,
-      "action": "IMPROVE \u2014 title/meta overhauled, awaiting re-crawl",
-      "risk": "LOW",
-      "note": "In 48h cooldown"
+      "id": "CONTENT-D2-002",
+      "query": "mortgage calculator with taxes",
+      "decision": "HOLD_FOR_DATA",
+      "reason": "Core mortgage calculator exists. Wait for GSC data to confirm query volume."
     },
     {
-      "rank": 3,
-      "query": "mortgage rates today 2025",
-      "page": "/blog/mortgage-rates-2025-...",
-      "position": 12,
-      "impressions": 6,
-      "clicks": 0,
-      "score": 88,
-      "action": "IMPROVE \u2014 title restructured, awaiting re-crawl",
-      "risk": "LOW",
-      "note": "In 48h cooldown"
-    },
-    {
-      "rank": 4,
-      "query": "how to pay off credit card debt fast",
-      "page": "/blog/how-to-pay-off-credit-card-debt-...",
-      "position": 14,
-      "impressions": 5,
-      "clicks": 0,
-      "score": 86,
-      "action": "IMPROVE \u2014 title + answer added, awaiting re-crawl",
-      "risk": "LOW",
-      "note": "In 48h cooldown"
-    },
-    {
-      "rank": 5,
-      "query": "how much mortgage can I afford 100k salary",
-      "page": "/blog/how-much-mortgage-afford-100k-salary",
-      "position": 16,
-      "impressions": 5,
-      "clicks": 0,
-      "score": 84,
-      "action": "IMPROVE \u2014 meta anti-cannibalized, awaiting re-crawl",
-      "risk": "LOW",
-      "note": "In 48h cooldown"
-    },
-    {
-      "rank": 6,
-      "query": "best mortgage calculator",
-      "page": "/compare/best-mortgage-calculator",
-      "position": 18,
-      "impressions": 3,
-      "clicks": 0,
-      "score": 75,
-      "action": "IMPROVE \u2014 calculator CTA added, awaiting re-crawl",
-      "risk": "LOW"
-    },
-    {
-      "rank": 7,
-      "query": "2027 social security COLA forecast",
-      "page": "/blog/2027-social-security-cola-...",
-      "position": 18,
-      "impressions": 3,
-      "clicks": 0,
-      "score": 75,
-      "action": "IMPROVE \u2014 dollar impact added, awaiting re-crawl",
-      "risk": "LOW"
-    },
-    {
-      "rank": 8,
-      "query": "mortgage calculator",
-      "page": "/calculators/mortgage-calculator",
-      "position": "unknown",
-      "impressions": "unknown",
-      "clicks": "unknown",
-      "score": 70,
-      "action": "MONITOR \u2014 Tier 1 calc, already indexed",
-      "risk": "LOW"
-    },
-    {
-      "rank": 9,
-      "query": "compound interest calculator",
-      "page": "/calculators/compound-interest",
-      "position": "unknown",
-      "impressions": "unknown",
-      "clicks": "unknown",
-      "score": 70,
-      "action": "MONITOR \u2014 Tier 1 calc, already indexed",
-      "risk": "LOW"
-    },
-    {
-      "rank": 10,
-      "query": "retirement calculator how much do I need",
-      "page": "/calculators/retirement-planning",
-      "position": "unknown",
-      "impressions": "unknown",
-      "clicks": "unknown",
-      "score": 68,
-      "action": "MONITOR \u2014 Tier 1 calc, already indexed",
-      "risk": "LOW"
+      "id": "CONTENT-D2-003",
+      "query": "how much house can I afford",
+      "decision": "IMPROVE_EXISTING (when out of cooldown)",
+      "reason": "Blog + calculator exist. CTR fixes applied. Wait for re-crawl."
     }
   ],
-  "auditor_note": "Top 7 opportunities are all in 48h cooldown from Phase 13C.7. Query opportunities #8-10 are Tier 1 calcs already indexed. NO new content opportunities today \u2014 correct behavior for controlled Day 1."
+  "new_content_created": 0,
+  "reason": "All high-value queries already have pages. New content at this stage would be speculative without GSC query data.",
+  "recommendation": "Focus on: (1) Indexing existing content, (2) Internal links, (3) Monitor GSC for new query opportunities after re-crawl."
 }
