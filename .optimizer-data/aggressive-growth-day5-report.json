@@ -1,0 +1,106 @@
+{
+  "title": "Aggressive Growth Sprint \u2014 Day 5 Report: 404 Emergency + Click Extraction (Phase 13C.6)",
+  "generated": "2026-06-03T19:46:28.356002Z",
+  "date": "2026-06-03",
+  "phase": "13C.6",
+  "sprint_theme": "404 Emergency Diagnosis + Click Extraction Continuation",
+  "status": "COMPLETE",
+  "executive_summary": {
+    "total_tasks": 9,
+    "completed": 9,
+    "critical_finding": "ZERO real 404 errors. All 12 tracked '404' URLs were either intentional Phase 2 removals (4) or tracking bugs with wrong slugs (8). No pages need restoration. No redirects needed.",
+    "manual_indexing": "7/7 Day-4 fixed pages VERIFIED and ready for Qasem to manually Request Indexing in GSC UI",
+    "tracking_fixes": "5 slug corrections applied to tracker (4 guide slugs, 1 blog slug)"
+  },
+  "task_results": {
+    "task1_404_emergency": {
+      "result": "\u2705 12 URLs investigated, 0 real 404s",
+      "classifications": {
+        "e_intentional_removal": 4,
+        "c_tracking_bug": 8,
+        "a_real_error": 0
+      },
+      "breakdown": {
+        "geo_pages_removed": "3 (nashville-tn, reno-nv, philadelphia-pa) \u2014 Phase 2 V2 geo prune",
+        "scenario_removed": "1 (401k-75000-10pct-10yr) \u2014 Phase 2 scenario prune",
+        "blog_slugs_wrong": "2 (best-compound-interest-calculator-guide never existed; how-much-emergency-fund is a DECISION page not blog)",
+        "blog_slug_truncated": "1 (mortgage-rates-today \u2192 actual slug is 104 chars)",
+        "guide_slugs_wrong_format": "4 (all had '-calculator' suffix; correct: how-to-use-{rawCalcSlug})",
+        "policy_page_noindex": "1 (cookies \u2014 intentionally noindex, should not be in tracker)"
+      },
+      "report": ".optimizer-data/tracked-404-emergency-report.json"
+    },
+    "task2_fix_404": {
+      "result": "NO-OP \u2014 zero real 404 errors to fix"
+    },
+    "task3_manual_indexing_verification": {
+      "result": "\u2705 7/7 pages PASSED verification",
+      "pages": [
+        "blog/20000-loan... \u2014 HTTP 200, index,follow, self-canonical, in sitemap \u2705",
+        "blog/fed-2025-report... \u2014 HTTP 200, index,follow, self-canonical, in sitemap \u2705",
+        "blog/mortgage-rates-2025... \u2014 HTTP 200, index,follow, self-canonical, in sitemap \u2705",
+        "blog/how-much-mortgage-afford-100k... \u2014 HTTP 200 \u2705",
+        "blog/how-to-pay-off-credit-card-debt... \u2014 HTTP 200 \u2705",
+        "compare/best-mortgage-calculator \u2014 HTTP 200 \u2705",
+        "blog/2027-social-security-cola... \u2014 HTTP 200 \u2705"
+      ],
+      "manual_indexing_instructions": "Qasem: Open GSC \u2192 URL Inspection \u2192 paste each URL \u2192 Request Indexing. Prioritize HIGHEST first (20000-loan). Do NOT use Indexing API.",
+      "report": ".optimizer-data/manual-indexing-candidates-day5.json"
+    },
+    "task4_pinterest": {
+      "result": "\u2705 MONITOR ONLY \u2014 84h since posting",
+      "details": "2 pins live. First meaningful analytics window (72h+). Qasem should check pinterest.com native analytics. GA4 UTM: 0 sessions.",
+      "report": ".optimizer-data/pinterest-performance-report.json"
+    },
+    "task5_ctr_continuation": {
+      "result": "\u2705 5 tracking corrections + 2 CTR fixes + 3 internal links",
+      "details": "Guide slugs corrected (4), blog slug corrected (1). CTR fixes on mortgage-rates-today full slug + emergency-fund decision page route fix. 3 internal links added."
+    },
+    "task6_dashboard_307": {
+      "result": "\u2705 FINAL DECISION: REMOVE FROM SITEMAP",
+      "details": "3 auth-gated dashboard URLs (307 redirect). Deferred to next sitemap maintenance \u2014 not urgent (0.46% of sitemap)."
+    },
+    "task7_technical_cleanup": {
+      "result": "\u2705 ALL CRITICAL CHECKS PASS",
+      "details": "4 corrected guide URLs verified HTTP 200. Sitemaps: 651 main + 97 news. All 12 '404' URLs diagnosed and resolved."
+    },
+    "task8_deploy": {
+      "result": "\u2705 DEPLOY + SITEMAPS SUBMITTED",
+      "details": "Git push \u2192 GitHub auto-deploy. 12/12 key URLs verified. Main + news sitemaps submitted."
+    }
+  },
+  "compliance_check": {
+    "no_indexing_api_used": "\u2705 CONFIRMED",
+    "no_risky_automations": "\u2705 CONFIRMED \u2014 All 6 paused",
+    "no_pinterest_pins_posted": "\u2705 CONFIRMED",
+    "no_outreach": "\u2705 CONFIRMED",
+    "no_new_pages": "\u2705 CONFIRMED",
+    "no_fake_traffic": "\u2705 CONFIRMED",
+    "no_cleanup_lag_touched": "\u2705 CONFIRMED",
+    "scenario_sitemap_not_submitted": "\u2705 CONFIRMED"
+  },
+  "biggest_blocker": {
+    "previous": "CTR at 0.2% \u2014 titles/metas not optimized for clicks",
+    "day5_resolution": "404 investigation complete \u2014 no real errors found. 7 pages cleared for manual indexing. Tracking corrected.",
+    "current_blocker": "Position depth \u2014 8/12 pages rank 11+. CTR improvements applied (Days 4-5) need re-crawl to take effect. Manual indexing will speed this up.",
+    "ctr_improvement_expected": "Within 7-14 days after Google re-crawls the 7 fixed pages"
+  },
+  "recommended_day6_actions": [
+    "Qasem: Manually Request Indexing for the 7 verified pages in GSC UI (priority order in manual-indexing-candidates-day5.json)",
+    "Monitor GSC for CTR changes over next 7 days (titles/metas need re-crawl)",
+    "Check Pinterest native analytics \u2014 84h milestone reached",
+    "No new page changes needed \u2014 let Day 4-5 fixes settle and get re-crawled",
+    "Consider 1 high-quality blog post only if a strong GSC query opportunity appears",
+    "Remove 3 dashboard URLs from sitemap.ts in next maintenance pass"
+  ],
+  "phase_13c_cumulative": {
+    "days_completed": 5,
+    "total_ctr_fixes": 52,
+    "total_position_boosts": 40,
+    "total_internal_links": 67,
+    "total_canonicals_fixed": 133,
+    "tracking_bugs_fixed": 8,
+    "manual_indexing_ready": 7,
+    "sprint_status": "Day 5 complete \u2014 404 emergency cleared. Click extraction deployed. Manual indexing queued."
+  }
+}

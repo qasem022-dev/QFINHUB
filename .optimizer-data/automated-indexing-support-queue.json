@@ -1,0 +1,245 @@
+{
+  "title": "Automated Indexing Support Queue \u2014 PHASE 13C.7",
+  "created": "2026-06-04T17:18:50.582996Z",
+  "phase": "13C.7",
+  "purpose": "Replace manual GSC 'Request Indexing' with automated indexing-support workflow",
+  "rules": {
+    "no_indexing_api": "Google Indexing API NOT used for calculators/blogs/guides/decisions",
+    "no_fake_schema": "No JobPosting or BroadcastEvent schema added",
+    "no_manual_unless_blocked": "Qasem only asked if ALL automated methods fail",
+    "automated_substitutes": [
+      "Verify URL is live (HTTP 200, index/follow, self-canonical, not blocked, in sitemap)",
+      "Update lastmod accurately if page changed",
+      "Add/confirm contextual internal links from indexed pages",
+      "Add page to high-priority crawl queue",
+      "Ensure in sitemap.xml",
+      "Resubmit sitemap.xml + news-sitemap.xml via GSC API",
+      "Use URL Inspection API only to monitor status (NOT to request indexing)",
+      "Schedule next recheck in 48 hours"
+    ]
+  },
+  "priority_pages": {
+    "core_calculators": {
+      "count": 10,
+      "status": "ALL CONFIRMED INDEXED as of Jun 3",
+      "urls": [
+        {
+          "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:38:15Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:40:10Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/compound-interest",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:40:10Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/loan-calculator",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:36:14Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/debt-payoff",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:44:43Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/tax-calculator",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:38:15Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/retirement-planning",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:36:13Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/401k-calculator",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:44:43Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/investment-return",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:50:44Z"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/budget-planner",
+          "status": "indexed",
+          "lastCrawl": "2026-06-01T23:38:15Z"
+        }
+      ]
+    },
+    "fixed_pages_seven": {
+      "count": 7,
+      "status": "ALL VERIFIED PASS \u2014 awaiting automated indexing support",
+      "urls": [
+        {
+          "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "type": "blog",
+          "priority": "HIGHEST",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 5,
+          "lastmod_updated": true,
+          "reason": "Title shortened + FAQ schema. Position 11 \u2192 target top 10",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        },
+        {
+          "url": "https://www.qfinhub.com/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+          "type": "blog",
+          "priority": "HIGH",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 4,
+          "lastmod_updated": true,
+          "reason": "Title + meta overhaul. Position 9 \u2192 target top 5",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        },
+        {
+          "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+          "type": "blog",
+          "priority": "HIGH",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 4,
+          "lastmod_updated": true,
+          "reason": "Title restructured with rate %. Position 12 \u2192 target 8-10",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        },
+        {
+          "url": "https://www.qfinhub.com/blog/how-much-mortgage-afford-100k-salary",
+          "type": "blog",
+          "priority": "MEDIUM",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 5,
+          "lastmod_updated": true,
+          "reason": "Meta rewritten to stop snippet cannibalization. Position 16",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        },
+        {
+          "url": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+          "type": "blog",
+          "priority": "HIGH",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 5,
+          "lastmod_updated": true,
+          "reason": "Title with timeline promise + above-fold answer. Position 14",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        },
+        {
+          "url": "https://www.qfinhub.com/compare/best-mortgage-calculator",
+          "type": "compare",
+          "priority": "MEDIUM",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 4,
+          "lastmod_updated": true,
+          "reason": "Calculator CTA added. Position 18 \u2192 target 10-15",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        },
+        {
+          "url": "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+          "type": "blog",
+          "priority": "MEDIUM",
+          "http_status": 200,
+          "robots": "index, follow",
+          "canonical": "self",
+          "sitemap_status": "in_sitemap",
+          "internal_links": 4,
+          "lastmod_updated": true,
+          "reason": "Dollar impact added above fold. Position 18",
+          "manual_would_recommend": true,
+          "automated_substitute": "sitemap_resubmit + internal_links"
+        }
+      ]
+    },
+    "top_zero_click_pages": {
+      "count": "from zero-click-query-map.json",
+      "status": "CTR fixes applied Days 4-5, awaiting re-crawl"
+    },
+    "near_winner_pages": {
+      "count": "from near-winner-position-push-log.json",
+      "status": "Position pushes applied, awaiting re-crawl"
+    },
+    "high_value_decision_pages": {
+      "count": 15,
+      "status": "7/15 indexed, 8/15 awaiting crawl",
+      "note": "All index,follow, self-canonical, in sitemap"
+    },
+    "widget_page": {
+      "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "status": "indexed",
+      "note": "PASS \u2014 in sitemap, index,follow"
+    },
+    "strong_comparison_pages": {
+      "count": 35,
+      "status": "In sitemap, index,follow"
+    }
+  },
+  "automated_actions_queue": [
+    {
+      "action": "sitemap_resubmit",
+      "targets": [
+        "/sitemap.xml",
+        "/news-sitemap.xml"
+      ],
+      "reason": "7 fixed pages need Google re-crawl. Sitemap resubmission signals changes.",
+      "status": "pending"
+    },
+    {
+      "action": "internal_link_boost",
+      "targets": "7 fixed pages",
+      "reason": "Add contextual internal links from indexed pages to boost crawl priority",
+      "status": "pending"
+    },
+    {
+      "action": "gsc_ui_request_indexing",
+      "targets": "7 fixed pages",
+      "reason": "Safe CloakBrowser UI attempt. Only if session active, no CAPTCHA/2FA.",
+      "status": "pending"
+    },
+    {
+      "action": "url_inspection_monitor",
+      "targets": "7 fixed pages",
+      "reason": "Monitor crawl status via API only (NOT request indexing)",
+      "status": "pending"
+    },
+    {
+      "action": "dashboard_sitemap_removal",
+      "targets": [
+        "/dashboard",
+        "/dashboard/plans",
+        "/dashboard/settings"
+      ],
+      "reason": "Auth-gated pages return 307, should not be in sitemap",
+      "status": "in_progress"
+    }
+  ],
+  "next_check_date": "2026-06-06T17:18:50.582996Z"
+}

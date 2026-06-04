@@ -2,7 +2,7 @@
 /**
  * QFINHUB HARO Auto-Responder Agent
  * 
- * 1. Connects to Gmail via IMAP
+ * 1. Connects to Gmail via IMAP (lightweight net/tls client)
  * 2. Finds unread HARO digest emails
  * 3. Parses journalist queries
  * 4. Classifies by topic relevance
@@ -18,8 +18,9 @@
 
 const { readFileSync, writeFileSync, existsSync, mkdirSync } = require("fs");
 const { resolve } = require("path");
+const net = require("net");
+const tls = require("tls");
 const { simpleParser } = require("mailparser");
-const Imap = require("imap");
 const nodemailer = require("nodemailer");
 
 // ─── Config ───
@@ -79,54 +80,281 @@ const EXPERT_IDENTITY = {
   bio: "Financial calculator expert. Founder of QFINHUB, a free platform with 124+ financial calculators covering mortgages, investing, retirement, taxes, and debt."
 };
 
-// ─── Gmail IMAP Connection ───
-function connectImap() {
-  return new Promise((resolve, reject) => {
-    const imap = new Imap({
-      user: GMAIL_USER,
-      password: GMAIL_PASS,
-      host: "imap.gmail.com",
-      port: 993,
-      tls: true,
-      tlsOptions: { rejectUnauthorized: false },
+// ─── Lightweight IMAP Client ───
+class IMAPClient {
+  constructor() {
+    this.sock = null;
+    this.tagCounter = 0;
+    this.pending = new Map();
+    this.buffer = "";
+    this.ready = false;
+    this.capabilities = [];
+  }
+
+  async connect(host, port) {
+    // TCP connect
+    const rawSocket = await new Promise((resolve, reject) => {
+      const s = net.createConnection({ host, port });
+      s.once("connect", () => resolve(s));
+      s.once("error", reject);
+      s.once("timeout", () => { s.destroy(); reject(new Error("TCP connect timeout")); });
+    });
+    rawSocket.setTimeout(30000);
+
+    // TLS upgrade
+    const tlsSocket = await new Promise((resolve, reject) => {
+      const ts = tls.connect({
+        socket: rawSocket,
+        host,
+        servername: host,
+        rejectUnauthorized: false,
+      }, () => resolve(ts));
+      ts.once("error", reject);
+    });
+    tlsSocket.setTimeout(30000);
+
+    this.sock = tlsSocket;
+
+    // Capture greeting BEFORE setting up the permanent _onData listener
+    const greeting = await new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error("IMAP greeting timeout")), 15000);
+      const onData = (chunk) => {
+        this.buffer += chunk.toString();
+        const idx = this.buffer.indexOf("\r\n");
+        if (idx !== -1) {
+          clearTimeout(timer);
+          tlsSocket.removeListener("data", onData);
+          const line = this.buffer.substring(0, idx);
+          this.buffer = this.buffer.substring(idx + 2);
+          resolve(line);
+        }
+      };
+      tlsSocket.on("data", onData);
     });
 
-    imap.once("ready", () => resolve(imap));
-    imap.once("error", (err) => reject(err));
-    imap.connect();
-  });
+    if (!greeting.startsWith("* OK")) {
+      throw new Error("IMAP greeting failure: " + greeting.substring(0, 100));
+    }
+
+    // Now set up permanent _onData listener for subsequent commands
+    // (any leftover data in this.buffer will be processed by _onData)
+    this.sock.on("data", (chunk) => this._onData(chunk.toString()));
+    this.sock.on("error", (err) => { /* swallow */ });
+    this.sock.on("close", () => { this.ready = false; });
+    this.ready = true;
+  }
+
+  async login(user, pass) {
+    // IMAP LOGIN requires quoting for passwords with spaces/special chars
+    const quotedPass = '"' + pass.replace(/\\/g, "\\\\").replace(/"/g, '\\"') + '"';
+    const resp = await this._command(`LOGIN ${user} ${quotedPass}`);
+    // Gmail responds with "OK ... authenticated (Success)" not "OK LOGIN"
+    if (!resp.some(l => l.includes("OK") && (l.includes("authenticated") || l.includes("LOGIN") || l.includes("Logged")))) {
+      throw new Error("LOGIN failed: " + resp.join(" ").substring(0, 100));
+    }
+  }
+
+  async select(mailbox) {
+    const resp = await this._command(`SELECT "${mailbox}"`);
+    const status = resp.find(l => l.includes("OK [READ-"));
+    return status || resp.join("\n");
+  }
+
+  async search(criteria) {
+    const resp = await this._command(`SEARCH ${criteria}`);
+    // Response looks like: * SEARCH 1 2 3
+    for (const line of resp) {
+      if (line.startsWith("* SEARCH")) {
+        const nums = line.replace("* SEARCH", "").trim();
+        return nums ? nums.split(/\s+/).map(Number) : [];
+      }
+    }
+    return [];
+  }
+
+  async fetchRaw(uid) {
+    const tag = this._nextTag();
+    // Use BODY.PEEK[] to fetch without marking emails as \Seen
+    const cmd = `${tag} UID FETCH ${uid} BODY.PEEK[]\r\n`;
+    
+    return new Promise((resolve, reject) => {
+      let state = "header"; // header → literal → trailer
+      let literalSize = 0;
+      let literalBuf = Buffer.alloc(0);
+      let rawAccum = Buffer.alloc(0); // accumulate raw bytes for header scanning
+      let trailerStr = "";
+
+      const timer = setTimeout(() => {
+        this.sock.removeListener("data", dataHandler);
+        reject(new Error("FETCH timeout after 30s"));
+      }, 30000);
+
+      const _resolve = (val) => { clearTimeout(timer); resolve(val); };
+      const _reject = (err) => { clearTimeout(timer); reject(err); };
+
+      const dataHandler = (chunk) => {
+        if (state === "header") {
+          rawAccum = Buffer.concat([rawAccum, chunk]);
+          // Search for the literal size marker {N}\r\n in the raw bytes
+          const str = rawAccum.toString("utf-8");
+          const litMatch = str.match(/\{(\d+)\}\r\n/);
+          if (litMatch) {
+            literalSize = parseInt(litMatch[1], 10);
+            state = "literal";
+            // Find the byte offset of the marker end
+            const markerEnd = rawAccum.indexOf("}\r\n") + 3;
+            if (markerEnd < rawAccum.length) {
+              literalBuf = rawAccum.slice(markerEnd);
+              if (literalBuf.length >= literalSize) {
+                const overflow = literalBuf.slice(literalSize);
+                trailerStr = overflow.toString("latin1");
+                literalBuf = literalBuf.slice(0, literalSize);
+                state = "trailer";
+                // Check immediately — the completion tag may be in this overflow
+                if (trailerStr.includes(`${tag} OK`)) {
+                  this.sock.removeListener("data", dataHandler);
+                  _resolve(literalBuf);
+                  return;
+                }
+              }
+            }
+            rawAccum = Buffer.alloc(0); // free memory
+          }
+          return;
+        }
+
+        if (state === "literal") {
+          literalBuf = Buffer.concat([literalBuf, chunk]);
+          if (literalBuf.length >= literalSize) {
+            const overflow = literalBuf.slice(literalSize);
+            trailerStr = overflow.toString("latin1");
+            literalBuf = literalBuf.slice(0, literalSize);
+            state = "trailer";
+            // Check immediately — the completion tag may be in this overflow
+            if (trailerStr.includes(`${tag} OK`)) {
+              this.sock.removeListener("data", dataHandler);
+              _resolve(literalBuf);
+              return;
+            }
+          }
+          return;
+        }
+
+        if (state === "trailer") {
+          trailerStr += chunk.toString("utf-8");
+          if (trailerStr.includes(`${tag} OK`)) {
+            this.sock.removeListener("data", dataHandler);
+            _resolve(literalBuf);
+          } else if (trailerStr.includes(`${tag} BAD`) || trailerStr.includes(`${tag} NO`)) {
+            this.sock.removeListener("data", dataHandler);
+            _reject(new Error("FETCH failed: " + trailerStr.substring(0, 100)));
+          }
+        }
+      };
+
+      this.sock.on("data", dataHandler);
+      this.sock.write(cmd);
+    });
+  }
+
+  async logout() {
+    try {
+      await this._command("LOGOUT");
+    } catch (e) {}
+    try { this.sock.end(); } catch (e) {}
+  }
+
+  _nextTag() {
+    return "A" + (++this.tagCounter);
+  }
+
+  _command(cmd) {
+    const tag = this._nextTag();
+    const line = `${tag} ${cmd}\r\n`;
+
+    return new Promise((resolve, reject) => {
+      const lines = [];
+      const handler = (respLine) => {
+        lines.push(respLine);
+        if (respLine.startsWith(tag + " OK")) {
+          this.pending.delete(tag);
+          resolve(lines);
+        } else if (respLine.startsWith(tag + " BAD") || respLine.startsWith(tag + " NO")) {
+          this.pending.delete(tag);
+          reject(new Error(cmd.split(" ")[0] + " failed: " + respLine.substring(0, 100)));
+        }
+      };
+      this.pending.set(tag, handler);
+      this.sock.write(line);
+    });
+  }
+
+  _onData(chunk) {
+    this.buffer += chunk;
+    // Process complete lines
+    let idx;
+    while ((idx = this.buffer.indexOf("\r\n")) !== -1) {
+      const line = this.buffer.substring(0, idx);
+      this.buffer = this.buffer.substring(idx + 2);
+
+      // Route to pending commands
+      for (const [tag, handler] of this.pending) {
+        if (line.startsWith(tag + " ") || line.startsWith("* ") || line.startsWith("+ ")) {
+          handler(line);
+        }
+      }
+    }
+  }
+
+  _readResponse() {
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error("IMAP greeting timeout")), 15000);
+      const onData = (chunk) => {
+        this.buffer += chunk.toString();
+        const idx = this.buffer.indexOf("\r\n");
+        if (idx !== -1) {
+          clearTimeout(timer);
+          this.sock.removeListener("data", onData);
+          const line = this.buffer.substring(0, idx);
+          this.buffer = this.buffer.substring(idx + 2);
+          resolve(line);
+        }
+      };
+      this.sock.on("data", onData);
+    });
+  }
 }
 
-function searchEmails(imap, daysBack) {
-  return new Promise((resolve, reject) => {
-    const since = new Date();
-    since.setDate(since.getDate() - (daysBack || 2));
-    
-    imap.openBox("INBOX", true, (err, box) => {
-      if (err) return reject(err);
-      
-      imap.search(["UNSEEN", ["SINCE", since.toISOString()]], (err2, results) => {
-        if (err2) return reject(err2);
-        resolve(results || []);
-      });
-    });
-  });
-}
-
-function fetchEmail(imap, uid) {
-  return new Promise((resolve, reject) => {
-    const f = imap.fetch(uid, { bodies: "" });
-    let buffer = "";
-    
-    f.on("message", (msg) => {
-      msg.on("body", (stream) => {
-        stream.on("data", (chunk) => (buffer += chunk.toString()));
-      });
-    });
-    
-    f.on("end", () => resolve(buffer));
-    f.on("error", (err) => reject(err));
-  });
+// ─── IMAP operations using lightweight client ───
+async function connectAndSearch(daysBack) {
+  const client = new IMAPClient();
+  await client.connect("imap.gmail.com", 993);
+  await client.login(GMAIL_USER, GMAIL_PASS);
+  
+  // Gmail requires SELECT before SEARCH
+  await client.select("INBOX");
+  
+  const since = new Date();
+  since.setDate(since.getDate() - (daysBack || 1));
+  // Format: DD-Mon-YYYY for IMAP SINCE
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const dateStr = `${String(since.getDate()).padStart(2,"0")}-${months[since.getMonth()]}-${since.getFullYear()}`;
+  
+  const uids = await client.search(`UNSEEN SINCE ${dateStr}`);
+  
+  console.log("   Search SINCE " + dateStr + " found " + uids.length + " candidates");
+  const rawEmails = [];
+  for (const uid of uids) {
+    try {
+      const raw = await client.fetchRaw(uid);
+      rawEmails.push(raw);
+    } catch (e) {
+      console.error(`  Fetch error for UID ${uid}:`, e.message.substring(0, 60));
+    }
+  }
+  
+  await client.logout();
+  return { uids, rawEmails };
 }
 
 // ─── Email Parser ───
@@ -160,14 +388,6 @@ async function parseHarEmails(rawEmails) {
 function extractQueries(body, subject) {
   const results = [];
   
-  // Try to find numbered queries (1. 2. 3. pattern)
-  // HARO emails typically list queries like:
-  // 1. HEADLINE
-  //    Description...
-  //    Reply to: email
-  // 2. NEXT HEADLINE
-  //    ...
-  
   const lines = body.split("\n");
   let currentQuery = null;
   
@@ -197,11 +417,8 @@ function extractQueries(body, subject) {
     
     if (currentQuery) {
       // Check for reply info — handle multiple phrasings
-      // 1. "reply with your answer to email@domain.com"
       let replyMatch = line.match(/reply\s+with\s+(?:your\s+)?(?:answer|response|pitch)\s+(?:to|at)\s+(\S+@\S+)/i);
-      // 2. "reply to: email@domain.com" or "reply at email@domain.com"
       if (!replyMatch) replyMatch = line.match(/reply\s+(?:to|at):?\s*(\S+@\S+)/i);
-      // 3. "reply: email" (live .cjs runtime — @ optional but helps filter noise)
       if (!replyMatch) replyMatch = line.match(/reply\s*:?\s*(\S+@\S+)/i);
       if (replyMatch) {
         currentQuery.replyTo = replyMatch[1];
@@ -219,7 +436,6 @@ function extractQueries(body, subject) {
         currentQuery.text += " " + line;
         currentQuery.sourceLines.push(line);
         
-        // Update headline context
         const lower = line.toLowerCase();
         if (lower.includes("need") || lower.includes("looking for") || 
             lower.includes("seeking") || lower.includes("want") ||
@@ -266,12 +482,10 @@ function guessCategory(text) {
 function isRelevant(query) {
   const text = (query.text + " " + query.headline + " " + (query.context || "")).toLowerCase();
   
-  // Check category exclusion
   for (const ex of EXCLUDED_CATEGORIES) {
     if (text.includes(ex)) return false;
   }
   
-  // Check keyword match
   for (const kw of FINANCE_KEYWORDS) {
     if (text.includes(kw)) return true;
   }
@@ -373,6 +587,15 @@ function saveLog(log) {
   writeFileSync(SENT_LOG, JSON.stringify(log, null, 2));
 }
 
+function saveRunLog(entry) {
+  let log = [];
+  try {
+    if (existsSync(LOG_FILE)) log = JSON.parse(readFileSync(LOG_FILE, "utf-8"));
+  } catch (e) {}
+  log.push(entry);
+  writeFileSync(LOG_FILE, JSON.stringify(log, null, 2));
+}
+
 // ─── Main ───
 async function main() {
   const args = process.argv.slice(2);
@@ -402,13 +625,9 @@ async function main() {
   if (isTest) {
     console.log("Testing IMAP connection...");
     try {
-      const imap = await connectImap();
+      const { uids, rawEmails } = await connectAndSearch(7);
       console.log("✅ IMAP connected successfully");
-      
-      const ids = await searchEmails(imap, 7);
-      console.log("📬 Unread emails in last 7 days: " + ids.length);
-      
-      imap.end();
+      console.log("📬 Unread emails in last 7 days: " + uids.length);
       console.log("✅ Connection closed");
     } catch (e) {
       console.error("❌ IMAP connection failed:", e.message);
@@ -418,138 +637,150 @@ async function main() {
   }
 
   // ── Normal run ──
+  const runEntry = {
+    timestamp: new Date().toISOString(),
+    runType: "scheduled-cron",
+    edition: "afternoon",
+    emailsFound: 0,
+    haroDigests: 0,
+    queriesParsed: 0,
+    relevant: 0,
+    sent: 0,
+    skipped: 0,
+    failed: 0,
+    notes: "",
+  };
+
   console.log("🔍 Connecting to Gmail IMAP...");
-  let imap;
+  let uids, rawEmails;
   try {
-    imap = await connectImap();
-    console.log("✅ Connected");
+    const result = await connectAndSearch(1); // 1 day window
+    uids = result.uids;
+    rawEmails = result.rawEmails;
+    console.log("✅ Connected — " + uids.length + " unread emails");
+    runEntry.emailsFound = uids.length;
   } catch (e) {
     console.error("❌ Connection failed:", e.message);
-    console.log("   Check that GMAIL_APP_PASSWORD is correct");
-    console.log("   Ensure 2-Step Verification is ON & App Password was generated");
+    runEntry.notes = "IMAP connection failed: " + e.message.substring(0, 200);
+    saveRunLog(runEntry);
     process.exit(1);
   }
 
-  try {
-    console.log("📬 Searching for unread HARO emails...");
-    const uids = await searchEmails(imap, 1);  // 1 day — runs 3x/day, avoids duplicates
-    console.log("   Found " + uids.length + " unread emails");
-
-    if (uids.length === 0) {
-      console.log("   No new emails to process.");
-      imap.end();
-      return;
-    }
-
-    // Fetch email content
-    const rawEmails = [];
-    for (const uid of uids) {
-      const raw = await fetchEmail(imap, uid);
-      rawEmails.push(raw);
-    }
-    console.log("   Fetched " + rawEmails.length + " emails");
-
-    // Parse emails
-    const allQueries = await parseHarEmails(rawEmails);
-    console.log("   Parsed " + allQueries.length + " total queries");
-
-    // Filter relevant
-    const relevant = allQueries.filter(isRelevant);
-    console.log("   Relevant finance queries: " + relevant.length);
-
-    if (relevant.length === 0) {
-      console.log("   No matching queries found this cycle.");
-      imap.end();
-      return;
-    }
-
-    // Show found queries
-    relevant.forEach((q, i) => {
-      console.log("");
-      console.log("  [" + (i + 1) + "/" + relevant.length + "] " + q.category.toUpperCase());
-      console.log("      " + q.headline.substring(0, 100));
-      if (q.replyTo) console.log("      Reply: " + q.replyTo);
-    });
-    console.log("");
-
-    // Load sent log to avoid duplicates
-    const log = loadLog();
-    const sentIds = new Set(log.sent.map((s) => s.queryId));
-
-    // ── Process each query ──
-    let sentCount = 0;
-    let skipCount = 0;
-
-    for (const query of relevant) {
-      const queryId = query.id + ":" + (query.replyTo || "unknown");
-
-      if (sentIds.has(queryId)) {
-        console.log("  ⏭ Skipping (already sent): " + query.headline.substring(0, 50));
-        skipCount++;
-        continue;
-      }
-
-      console.log("  🤖 Generating response for: " + query.headline.substring(0, 60));
-
-      const quote = await generateResponse(query);
-      if (!quote) {
-        console.log("     ❌ Failed to generate response");
-        log.failed.push({ queryId, headline: query.headline, error: "AI generation failed", time: new Date().toISOString() });
-        continue;
-      }
-
-      console.log("     💬 Quote: " + quote.substring(0, 100) + "...");
-
-      // Find reply address
-      const replyTo = query.replyTo || HARO_EMAIL;
-      
-      if (!isDryRun) {
-        try {
-          const transporter = createTransporter();
-          await sendReply(transporter, replyTo, query, quote);
-          console.log("     ✅ Sent to: " + replyTo);
-
-          log.sent.push({
-            queryId,
-            headline: query.headline.substring(0, 200),
-            category: query.category,
-            replyTo,
-            quote: quote.substring(0, 500),
-            time: new Date().toISOString(),
-          });
-          sentCount++;
-        } catch (e) {
-          console.log("     ❌ Send failed: " + e.message.substring(0, 80));
-          log.failed.push({ queryId, headline: query.headline, error: e.message.substring(0, 200), time: new Date().toISOString() });
-        }
-      } else {
-        console.log("     🔷 DRY RUN — would send to: " + replyTo);
-        sentCount++;
-      }
-
-      log.totalProcessed = (log.totalProcessed || 0) + 1;
-      saveLog(log);
-
-      // Rate limit between sends (30 seconds to avoid looking like spam)
-      if (!isDryRun && relevant.indexOf(query) < relevant.length - 1) {
-        console.log("     ⏳ Waiting 30s before next...");
-        await new Promise((r) => setTimeout(r, 30000));
-      }
-    }
-
-    console.log("");
-    console.log("=== Summary ===");
-    console.log("  Total queries: " + allQueries.length);
-    console.log("  Relevant: " + relevant.length);
-    console.log("  Sent: " + sentCount + (isDryRun ? " (dry run)" : ""));
-    console.log("  Skipped (already sent): " + skipCount);
-    console.log("  Failed: " + log.failed.length);
-
-  } catch (e) {
-    console.error("Error during processing:", e.message);
-  } finally {
-    try { imap.end(); } catch (e) {}
+  if (uids.length === 0) {
+    console.log("   No new emails to process.");
+    runEntry.notes = "No new unread emails.";
+    saveRunLog(runEntry);
+    return;
   }
+
+  // Parse emails
+  const allQueries = await parseHarEmails(rawEmails);
+  runEntry.queriesParsed = allQueries.length;
+  runEntry.haroDigests = allQueries.length > 0 ? 1 : 0;
+  console.log("   Parsed " + allQueries.length + " total queries from HARO digests");
+
+  // Filter relevant
+  const relevant = allQueries.filter(isRelevant);
+  runEntry.relevant = relevant.length;
+  console.log("   Relevant finance queries: " + relevant.length);
+
+  if (relevant.length === 0) {
+    console.log("   No matching queries found this cycle.");
+    runEntry.notes = "No finance-relevant queries in " + allQueries.length + " total.";
+    saveRunLog(runEntry);
+    return;
+  }
+
+  // Show found queries
+  relevant.forEach((q, i) => {
+    console.log("");
+    console.log("  [" + (i + 1) + "/" + relevant.length + "] " + q.category.toUpperCase());
+    console.log("      " + q.headline.substring(0, 100));
+    if (q.replyTo) console.log("      Reply: " + q.replyTo);
+  });
+  console.log("");
+
+  // Load sent log to avoid duplicates
+  const log = loadLog();
+  const sentIds = new Set(log.sent.map((s) => s.queryId));
+
+  // ── Process each query ──
+  let sentCount = 0;
+  let skipCount = 0;
+  let failCount = 0;
+
+  for (const query of relevant) {
+    const queryId = query.id + ":" + (query.replyTo || "unknown");
+
+    if (sentIds.has(queryId)) {
+      console.log("  ⏭ Skipping (already sent): " + query.headline.substring(0, 50));
+      skipCount++;
+      continue;
+    }
+
+    console.log("  🤖 Generating response for: " + query.headline.substring(0, 60));
+
+    const quote = await generateResponse(query);
+    if (!quote) {
+      console.log("     ❌ Failed to generate response");
+      log.failed.push({ queryId, headline: query.headline, error: "AI generation failed", time: new Date().toISOString() });
+      failCount++;
+      continue;
+    }
+
+    console.log("     💬 Quote: " + quote.substring(0, 100) + "...");
+
+    // Find reply address
+    const replyTo = query.replyTo || HARO_EMAIL;
+    
+    if (!isDryRun) {
+      try {
+        const transporter = createTransporter();
+        await sendReply(transporter, replyTo, query, quote);
+        console.log("     ✅ Sent to: " + replyTo);
+
+        log.sent.push({
+          queryId,
+          headline: query.headline.substring(0, 200),
+          category: query.category,
+          replyTo,
+          quote: quote.substring(0, 500),
+          time: new Date().toISOString(),
+        });
+        sentCount++;
+      } catch (e) {
+        console.log("     ❌ Send failed: " + e.message.substring(0, 80));
+        log.failed.push({ queryId, headline: query.headline, error: e.message.substring(0, 200), time: new Date().toISOString() });
+        failCount++;
+      }
+    } else {
+      console.log("     🔷 DRY RUN — would send to: " + replyTo);
+      sentCount++;
+    }
+
+    log.totalProcessed = (log.totalProcessed || 0) + 1;
+    saveLog(log);
+
+    // Rate limit between sends (30 seconds to avoid looking like spam)
+    if (!isDryRun && relevant.indexOf(query) < relevant.length - 1) {
+      console.log("     ⏳ Waiting 30s before next...");
+      await new Promise((r) => setTimeout(r, 30000));
+    }
+  }
+
+  console.log("");
+  console.log("=== Summary ===");
+  console.log("  Total queries: " + allQueries.length);
+  console.log("  Relevant: " + relevant.length);
+  console.log("  Sent: " + sentCount + (isDryRun ? " (dry run)" : ""));
+  console.log("  Skipped (already sent): " + skipCount);
+  console.log("  Failed: " + failCount);
+
+  runEntry.sent = sentCount;
+  runEntry.skipped = skipCount;
+  runEntry.failed = failCount;
+  runEntry.notes = `Sent ${sentCount}, skipped ${skipCount}, failed ${failCount} of ${relevant.length} relevant.`;
+  saveRunLog(runEntry);
 }
 
 main().catch((err) => {

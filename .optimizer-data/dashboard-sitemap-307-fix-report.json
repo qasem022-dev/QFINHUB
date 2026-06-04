@@ -1,16 +1,18 @@
 {
-  "title": "Dashboard 307 Sitemap Fix \u2014 FINAL DECISION (Day 5 Phase 13C.6)",
-  "generated": "2026-06-03T19:45:01.358863Z",
-  "decision": "REMOVE FROM SITEMAP",
-  "urls": [
+  "title": "Dashboard 307 Sitemap Fix \u2014 EXECUTED (PHASE 13C.7, Jun 4)",
+  "generated": "2026-06-04T17:19:49.875027Z",
+  "phase": "13C.7",
+  "decision": "REMOVED FROM SITEMAP \u2014 EXECUTED",
+  "previous_status": "Deferred in Phase 13C.6 (Jun 3) as low priority",
+  "action_taken": "Removed all 3 dashboard URLs from src/app/sitemap.ts",
+  "urls_removed": [
     {
       "url": "https://www.qfinhub.com/dashboard",
       "http_status": 307,
       "redirect_target": "/auth/login?redirectTo=%2Fdashboard",
       "auth_required": true,
       "public_accessible": "NO \u2014 requires authentication",
-      "should_be_indexed": "NO",
-      "should_be_in_sitemap": "NO"
+      "reason_removed": "Auth-gated, returns 307 to login. Not indexable public content."
     },
     {
       "url": "https://www.qfinhub.com/dashboard/plans",
@@ -18,8 +20,7 @@
       "redirect_target": "/auth/login?redirectTo=%2Fdashboard%2Fplans",
       "auth_required": true,
       "public_accessible": "NO",
-      "should_be_indexed": "NO",
-      "should_be_in_sitemap": "NO"
+      "reason_removed": "Auth-gated, returns 307 to login."
     },
     {
       "url": "https://www.qfinhub.com/dashboard/settings",
@@ -27,14 +28,17 @@
       "redirect_target": "/auth/login?redirectTo=%2Fdashboard%2Fsettings",
       "auth_required": true,
       "public_accessible": "NO",
-      "should_be_indexed": "NO",
-      "should_be_in_sitemap": "NO"
+      "reason_removed": "Auth-gated, returns 307 to login."
     }
   ],
-  "why_in_sitemap": "Next.js App Router auto-discovers routes. Dashboard pages exist as /src/app/dashboard/ route files and are picked up by sitemap generator.",
-  "fix_applied": false,
-  "fix_deferred_reason": "3 URLs out of 651 (0.46%). Google handles 307 redirects correctly. Fix requires modifying sitemap.ts to exclude /dashboard/* routes. LOW PRIORITY \u2014 not blocking growth. Added to sitemap cleanup backlog for next maintenance cycle.",
-  "risk_of_no_action": "NONE \u2014 Google ignores 307 redirect URLs in sitemap. This is a sitemap hygiene improvement, not a ranking or indexing issue.",
-  "user_impact": "NONE \u2014 Dashboard functionality is completely unaffected.",
-  "recommendation": "Exclude /dashboard/* in sitemap.ts when next doing sitemap maintenance. Not urgent."
+  "verification": {
+    "not_in_sitemap": "Will be confirmed after deploy (sitemap count drops from 651 to 648)",
+    "dashboard_working": "Dashboard functionality unaffected \u2014 routes still exist, just excluded from sitemap",
+    "user_impact": "NONE \u2014 dashboard is still fully functional"
+  },
+  "sitemap_count_change": {
+    "before": 651,
+    "after_expected": 648,
+    "urls_removed": 3
+  }
 }

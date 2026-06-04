@@ -1,0 +1,110 @@
+{
+  "title": "Tracker Slug Bug Fix Report \u2014 PHASE 13C.7",
+  "generated": "2026-06-04T17:19:49.875027Z",
+  "phase": "13C.7",
+  "summary": "8 tracking bugs identified in Phase 13C.6 Day 5. All 8 were tracker-level errors (wrong slugs in tracker), NOT actual 404 pages. 5 slug corrections applied to tracker logic.",
+  "bugs_found": 8,
+  "real_404s": 0,
+  "classifications": {
+    "guide_slug_format": {
+      "count": 4,
+      "root_cause": "Tracker used 'how-to-use-{calculatorSlug}-calculator' format instead of correct 'how-to-use-{rawCalculatorSlug}'",
+      "correct_format": "how-to-use-{rawCalculatorSlug} where rawCalculatorSlug is the calculator slug from allCalculators (e.g., 'compound-interest' not 'compound-interest-calculator')",
+      "incorrect_examples": [
+        {
+          "wrong": "how-to-use-compound-interest-calculator",
+          "correct": "how-to-use-compound-interest"
+        },
+        {
+          "wrong": "how-to-use-retirement-income-calculator",
+          "correct": "how-to-use-retirement-planning",
+          "note": "Calculator slug is 'retirement-planning', not 'retirement-income-calculator'"
+        },
+        {
+          "wrong": "how-to-use-mortgage-affordability-calculator",
+          "correct": "how-to-use-mortgage-affordability"
+        },
+        {
+          "wrong": "how-to-use-debt-payoff-calculator",
+          "correct": "how-to-use-debt-payoff"
+        }
+      ],
+      "fix_applied": "Tracker corrected to strip '-calculator' suffix from guide slugs",
+      "verification": "All 4 corrected slugs return HTTP 200 on live site",
+      "reference": "pitfall_46 in qfinhub-quick skill"
+    },
+    "truncated_blog_slugs": {
+      "count": 1,
+      "root_cause": "Tracker truncated long blog slug. Actual slug is 104 chars but tracker used shortened version.",
+      "example": {
+        "wrong": "mortgage-rates-today",
+        "correct": "mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off"
+      },
+      "fix_applied": "Full slug used in tracker",
+      "verification": "Corrected slug returns HTTP 200"
+    },
+    "decision_pages_tracked_as_blogs": {
+      "count": 1,
+      "root_cause": "Tracker used /blog/ prefix for a /decision/ page. 'how-much-emergency-fund' is a decision page, not a blog post.",
+      "example": {
+        "wrong": "/blog/how-much-emergency-fund",
+        "correct": "/decision/how-much-emergency-fund-do-i-need"
+      },
+      "fix_applied": "Route prefix corrected from /blog/ to /decision/",
+      "verification": "Corrected URL returns HTTP 200"
+    },
+    "policy_pages_wrongly_tracked": {
+      "count": 1,
+      "root_cause": "Tracker included /cookies page which is intentionally noindex (privacy policy page).",
+      "example": "/cookies",
+      "fix_applied": "Removed from tracker \u2014 noindex pages should not be tracked for indexing",
+      "verification": "Page correctly returns noindex, should stay out of tracker"
+    },
+    "intentional_removals_not_bugs": {
+      "count": 4,
+      "note": "These are NOT tracker bugs \u2014 they are correct Phase 2 V2 removals (geo pages, scenario page). Tracker just needed to be updated to stop tracking them.",
+      "urls": [
+        {
+          "url": "/geo/loan/nashville-tn",
+          "reason": "Phase 2 geo prune \u2014 noindexed"
+        },
+        {
+          "url": "/geo/loan/reno-nv",
+          "reason": "Phase 2 geo prune \u2014 noindexed"
+        },
+        {
+          "url": "/geo/tax/philadelphia-pa",
+          "reason": "Phase 2 geo prune \u2014 noindexed"
+        },
+        {
+          "url": "/scenario/401k-75000-10pct-10yr",
+          "reason": "Phase 2 scenario prune \u2014 noindexed"
+        }
+      ]
+    }
+  },
+  "tracker_corrections_applied": [
+    {
+      "type": "guide_slug",
+      "action": "Strip '-calculator' suffix from all guide slug entries in tracker"
+    },
+    {
+      "type": "blog_slug",
+      "action": "Use full exact slug from posts.ts, never truncate"
+    },
+    {
+      "type": "route_prefix",
+      "action": "Verify route type (/blog/, /decision/, /compare/, /guides/) matches actual page route"
+    },
+    {
+      "type": "noindex_filter",
+      "action": "Filter out noindex pages from tracker (cookies, privacy, terms)"
+    },
+    {
+      "type": "removed_page_filter",
+      "action": "Remove Phase 2 pruned pages from tracker (geo, scenarios)"
+    }
+  ],
+  "verification_result": "All 8 tracked '404' URLs resolved \u2014 0 real errors, 5 tracking bugs fixed, 3 pruning updates applied",
+  "reference": "pitfall_46 (guide slug format) and pitfall_47 (404 emergency diagnosis) in qfinhub-quick skill"
+}
