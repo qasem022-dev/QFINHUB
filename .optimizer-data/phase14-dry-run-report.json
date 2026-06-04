@@ -1,0 +1,135 @@
+{
+  "title": "Phase 14 Dry Run Report \u2014 NO CONTENT PUBLISHED",
+  "generated": "2026-06-04T19:01:00.545710Z",
+  "status": "DRY RUN ONLY \u2014 zero changes executed",
+  "data_pulled": {
+    "current_scoreboard": "daily-growth-scoreboard.json (Day 7)",
+    "tier_plans": "tier3-calculator-indexing-batch-plan.json",
+    "gsc_data": "GSC Search Analytics API unavailable (404). Using estimated data.",
+    "analytics": "Vercel Analytics confirmed working by Qasem",
+    "pinterest": "2 pins, ~120h live, monitor only"
+  },
+  "tier3_batch2_candidates": [
+    {
+      "url": "https://www.qfinhub.com/calculators/stock-return",
+      "slug": "stock-return",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/dividend-calculator",
+      "slug": "dividend-calculator",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/dollar-cost-average",
+      "slug": "dollar-cost-average",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/student-loan",
+      "slug": "student-loan",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/personal-loan",
+      "slug": "personal-loan",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-consolidation",
+      "slug": "debt-consolidation",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-comparison",
+      "slug": "loan-comparison",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-avalanche",
+      "slug": "debt-avalanche",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-refinancing",
+      "slug": "loan-refinancing",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/lease-vs-buy",
+      "slug": "lease-vs-buy",
+      "safety_gate_result": "PASS \u2014 all 10 URLs HTTP 200, index/follow, self-canonical, in sitemap, not recently requested"
+    }
+  ],
+  "query_opportunities": [
+    {
+      "query": "20000 loan 8 percent 5 years monthly payment",
+      "page": "/blog/20000-loan-...",
+      "position": 11,
+      "ctr": 0,
+      "opportunity": "Title/meta fix deployed \u2014 awaiting re-crawl"
+    },
+    {
+      "query": "mortgage rates today",
+      "page": "/blog/mortgage-rates-2025-...",
+      "position": 12,
+      "ctr": 0,
+      "opportunity": "Title restructured \u2014 awaiting re-crawl"
+    },
+    {
+      "query": "compound interest calculator",
+      "page": "/calculators/compound-interest",
+      "position": "unknown",
+      "ctr": "unknown",
+      "opportunity": "Core calc \u2014 already indexed"
+    }
+  ],
+  "ctr_targets": [
+    {
+      "page": "fed-2025-report blog",
+      "position": 9,
+      "clicks": 0,
+      "action": "Title+meta overhaul applied \u2014 awaiting re-crawl"
+    },
+    {
+      "page": "how-to-pay-off-credit-card-debt blog",
+      "position": 14,
+      "clicks": 0,
+      "action": "Title+above-fold answer applied"
+    }
+  ],
+  "near_winner_pages": [
+    {
+      "page": "20000-loan blog",
+      "position": 11,
+      "target": 10
+    },
+    {
+      "page": "mortgage-rates-2025 blog",
+      "position": 12,
+      "target": "8-10"
+    },
+    {
+      "page": "credit-card-debt blog",
+      "position": 14,
+      "target": "8-12"
+    }
+  ],
+  "internal_links_proposed": 3,
+  "auditor_simulation": {
+    "tier3_batch2": "ALL 10 WOULD BE APPROVED \u2014 pass all 8 safety gates",
+    "query_opportunities": "3 opportunities identified \u2014 all currently in re-crawl cooldown. HOLD_FOR_DATA.",
+    "ctr_targets": "3 targets identified \u2014 all in 48h cooldown. HOLD_FOR_DATA.",
+    "content_new": "0 new content candidates \u2014 no strong opportunities meeting 85/100 threshold. CORRECT.",
+    "outreach": "0 follow-ups due today. Next follow-ups due Jun 7."
+  },
+  "what_would_happen_if_activated": [
+    "\u2705 Tier 3 Batch 2: 10 calculators submitted via GSC UI",
+    "\u23f8\ufe0f CTR fixes: Held \u2014 pages in cooldown",
+    "\u23f8\ufe0f New content: None \u2014 no strong opportunity",
+    "\u23f8\ufe0f Outreach: None due today",
+    "\u23f8\ufe0f Pinterest: Monitor only",
+    "\ud83d\udcca Daily report compiled by Growth Director"
+  ],
+  "confirmation": "DRY RUN COMPLETE. Zero content published. Zero changes made. Zero indexing requests. Zero outreach. Zero pins posted."
+}

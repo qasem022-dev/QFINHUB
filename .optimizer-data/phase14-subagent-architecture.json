@@ -1,0 +1,504 @@
+{
+  "title": "Phase 14 Subagent Team Architecture",
+  "generated": "2026-06-04T19:00:09.949280Z",
+  "version": "1.0",
+  "principle": "Quality-first automation. Every action goes through Auditor before execution.",
+  "subagents": [
+    {
+      "id": "growth-director",
+      "name": "Growth Director Agent",
+      "mission": "Orchestrate daily growth operations. Compile reports. Decide priorities for next day.",
+      "tasks": [
+        "Load daily scoreboard",
+        "Check all subagent outputs",
+        "Compile daily report",
+        "Set next-day priorities",
+        "Flag blockers to Qasem"
+      ],
+      "allowed_actions": [
+        "Read all .optimizer-data files",
+        "Summarize metrics",
+        "Prioritize actions",
+        "Report to Qasem"
+      ],
+      "forbidden_actions": [
+        "Deploy code",
+        "Edit pages",
+        "Submit GSC indexing",
+        "Send outreach",
+        "Post Pinterest pins"
+      ],
+      "inputs": [
+        "daily-growth-scoreboard.json",
+        "All subagent output files"
+      ],
+      "outputs": [
+        "daily-growth-action-report.json"
+      ],
+      "dependencies": [
+        "All other subagents complete first"
+      ],
+      "runs": "Last in daily sequence (17:00)",
+      "hands_off_to": "None \u2014 reports to Qasem/ChatGPT"
+    },
+    {
+      "id": "auditor",
+      "name": "QFINHUB Quality Auditor",
+      "mission": "REVIEW and APPROVE/REJECT every proposed action before execution. Protect site quality.",
+      "tasks": [
+        "Review content proposals",
+        "Review CTR/meta changes",
+        "Review indexing requests",
+        "Review outreach",
+        "Review Pinterest pins",
+        "Review deploy readiness"
+      ],
+      "allowed_actions": [
+        "Read all proposal files",
+        "Score proposals",
+        "Output APPROVED/REJECTED/NEEDS_REVISION",
+        "Block unsafe actions"
+      ],
+      "forbidden_actions": [
+        "Make changes to code/pages/content directly",
+        "Override Qasem"
+      ],
+      "inputs": [
+        "All proposal files from subagents"
+      ],
+      "outputs": [
+        "phase14-auditor-decision-log.json"
+      ],
+      "dependencies": [
+        "Subagents submit proposals first"
+      ],
+      "runs": "Before any deploy/publish/indexing/outreach/send action",
+      "hands_off_to": "Growth Director (for daily report)"
+    },
+    {
+      "id": "analytics-monitor",
+      "name": "Analytics Monitor Agent",
+      "mission": "Pull Vercel + GA4 + GSC data. Update scoreboard. Detect changes.",
+      "tasks": [
+        "Check Vercel Analytics (live visitors)",
+        "Check GA4 (page views)",
+        "Check GSC (impressions/clicks/CTR/position)",
+        "Update daily-growth-scoreboard.json",
+        "Detect anomalies"
+      ],
+      "allowed_actions": [
+        "HTTP requests to analytics endpoints",
+        "Read/write scoreboard files",
+        "Calculate trends"
+      ],
+      "forbidden_actions": [
+        "Modify analytics code",
+        "Create content"
+      ],
+      "inputs": [
+        "vercel-analytics-production-test.json",
+        "ga4-backup-analytics-check.json",
+        "gsc data from API"
+      ],
+      "outputs": [
+        "daily-growth-scoreboard.json (updated)"
+      ],
+      "dependencies": [
+        "None \u2014 runs first"
+      ],
+      "runs": "09:00 daily"
+    },
+    {
+      "id": "gsc-intelligence",
+      "name": "GSC Intelligence Agent",
+      "mission": "Find query opportunities, zero-click pages, near-winners, wrong-page rankings.",
+      "tasks": [
+        "Analyze GSC queries",
+        "Score opportunities",
+        "Map queries to existing pages",
+        "Detect zero-click pages",
+        "Find near-winner ranking opportunities"
+      ],
+      "allowed_actions": [
+        "Read GSC data",
+        "Query analysis",
+        "Score and rank opportunities"
+      ],
+      "forbidden_actions": [
+        "Edit pages",
+        "Submit indexing requests"
+      ],
+      "inputs": [
+        "zero-click-query-map.json",
+        "daily-growth-scoreboard.json",
+        "GSC API data"
+      ],
+      "outputs": [
+        "query-opportunity-list.json",
+        "zero-click-diagnosis.json (updated)"
+      ],
+      "dependencies": [
+        "Analytics Monitor completes first"
+      ],
+      "runs": "09:15 daily"
+    },
+    {
+      "id": "calculator-indexing",
+      "name": "Calculator Indexing Agent",
+      "mission": "Continue Tier 3 calculator indexing in daily batches of 10.",
+      "tasks": [
+        "Check Tier 1/2/3 statuses",
+        "Prepare Tier 3 batch",
+        "Run safety gates",
+        "Queue for GSC UI indexing",
+        "Update monitor files"
+      ],
+      "allowed_actions": [
+        "Read tier plans",
+        "Run safety gate checks (HTTP, robots, canonical)",
+        "Prepare queue",
+        "Submit via safe-gsc-ui-indexing-queue.py"
+      ],
+      "forbidden_actions": [
+        "Use Google Indexing API",
+        "Re-request same URL within 7 days",
+        "Request cleanup-lag/noindex URLs"
+      ],
+      "inputs": [
+        "tier3-calculator-indexing-batch-plan.json",
+        "all-calculator-indexing-audit.json",
+        "safe-gsc-ui-indexing-run-log.json"
+      ],
+      "outputs": [
+        "safe-gsc-ui-indexing-run-log.json (updated)",
+        "tier2-calculator-indexing-monitor.json (updated)"
+      ],
+      "dependencies": [
+        "Auditor approves batch first"
+      ],
+      "runs": "After Auditor approval (12:00-13:00)",
+      "daily_limit": 10
+    },
+    {
+      "id": "query-opportunity",
+      "name": "Query Opportunity Agent",
+      "mission": "Score search opportunities. Select top candidates. Send to Auditor.",
+      "tasks": [
+        "Score opportunities from GSC data",
+        "Select top 3-5 candidates",
+        "Build opportunity briefs",
+        "Send to Auditor for approval"
+      ],
+      "allowed_actions": [
+        "Query analysis",
+        "Opportunity scoring",
+        "Build briefs"
+      ],
+      "forbidden_actions": [
+        "Create content without Auditor approval",
+        "Edit pages without Auditor approval"
+      ],
+      "inputs": [
+        "query-opportunity-list.json",
+        "GSC query data"
+      ],
+      "outputs": [
+        "query-opportunity-briefs.json"
+      ],
+      "dependencies": [
+        "GSC Intelligence completes first"
+      ],
+      "runs": "09:30 daily"
+    },
+    {
+      "id": "content-strategist",
+      "name": "Content Strategist Agent",
+      "mission": "Decide: improve existing page vs create new page. Build content briefs. Send to Auditor.",
+      "tasks": [
+        "Evaluate query-to-page match",
+        "Decide improve vs create",
+        "Build content brief",
+        "Check for duplicate risk"
+      ],
+      "allowed_actions": [
+        "Analyze existing pages",
+        "Build content briefs",
+        "Score opportunity fit"
+      ],
+      "forbidden_actions": [
+        "Create content without Auditor approval",
+        "Publish without Auditor approval"
+      ],
+      "inputs": [
+        "query-opportunity-briefs.json",
+        "main-page-indexing-inventory.json"
+      ],
+      "outputs": [
+        "content-briefs.json"
+      ],
+      "dependencies": [
+        "Query Opportunity Agent completes",
+        "Auditor approves opportunity first"
+      ],
+      "runs": "10:00 daily",
+      "daily_limit": "1-2 new pages max, 0 if no strong opportunity"
+    },
+    {
+      "id": "content-builder",
+      "name": "Content Builder Agent",
+      "mission": "Create/improve ONLY Auditor-approved content. Generate according to quality gate.",
+      "tasks": [
+        "Build new page or improve existing page",
+        "Generate content per brief",
+        "Apply SEO best practices",
+        "Send final to Auditor"
+      ],
+      "allowed_actions": [
+        "Write content",
+        "Add internal links",
+        "Apply schema",
+        "Build page metadata"
+      ],
+      "forbidden_actions": [
+        "Publish without Auditor final approval",
+        "Create thin/duplicate pages",
+        "Mass generate"
+      ],
+      "inputs": [
+        "content-briefs.json (Auditor-approved only)"
+      ],
+      "outputs": [
+        "New or improved page files in src/"
+      ],
+      "dependencies": [
+        "Content Strategist + Auditor approve first"
+      ],
+      "runs": "10:30 daily",
+      "daily_limit": "1-2 pages"
+    },
+    {
+      "id": "ctr-extraction",
+      "name": "CTR Extraction Agent",
+      "mission": "Propose title/meta improvements for zero-click pages. Send to Auditor.",
+      "tasks": [
+        "Identify zero-click pages",
+        "Diagnose root cause",
+        "Propose title/meta improvements",
+        "Check snippet cannibalization"
+      ],
+      "allowed_actions": [
+        "Analyze SERP data",
+        "Propose title/meta changes",
+        "Score clickability"
+      ],
+      "forbidden_actions": [
+        "Edit pages without Auditor approval",
+        "Touch pages changed in last 48h"
+      ],
+      "inputs": [
+        "zero-click-query-map.json",
+        "serp-clickability-audit.json"
+      ],
+      "outputs": [
+        "ctr-improvement-proposals.json"
+      ],
+      "dependencies": [
+        "GSC Intelligence completes first"
+      ],
+      "runs": "10:00 daily",
+      "daily_limit": 10
+    },
+    {
+      "id": "near-winner-ranking",
+      "name": "Near-Winner Ranking Agent",
+      "mission": "Propose on-page and internal-link pushes for pages ranking 8-30.",
+      "tasks": [
+        "Identify near-winner pages",
+        "Propose content improvements",
+        "Propose internal link boosts"
+      ],
+      "allowed_actions": [
+        "Analyze ranking data",
+        "Propose improvements",
+        "Score potential impact"
+      ],
+      "forbidden_actions": [
+        "Edit pages without Auditor approval",
+        "Add spammy links"
+      ],
+      "inputs": [
+        "near-winner-position-push-log.json",
+        "daily-growth-scoreboard.json"
+      ],
+      "outputs": [
+        "near-winner-proposals.json"
+      ],
+      "dependencies": [
+        "GSC Intelligence completes first"
+      ],
+      "runs": "10:00 daily",
+      "daily_limit": 10
+    },
+    {
+      "id": "internal-authority",
+      "name": "Internal Authority Agent",
+      "mission": "Add contextual internal links. No spammy link blocks.",
+      "tasks": [
+        "Plan internal links",
+        "Validate source/target pages",
+        "Check anchor safety",
+        "Send to Auditor"
+      ],
+      "allowed_actions": [
+        "Plan link architecture",
+        "Validate pages are indexable",
+        "Propose contextual links"
+      ],
+      "forbidden_actions": [
+        "Add links without Auditor approval",
+        "Link to noindex pages",
+        "Spammy/exact-match anchors",
+        "Link blocks"
+      ],
+      "inputs": [
+        "main-internal-link-completion-report.json",
+        "all-calculator-indexing-audit.json"
+      ],
+      "outputs": [
+        "internal-link-proposals.json"
+      ],
+      "dependencies": [
+        "Calculator Indexing + CTR agents complete"
+      ],
+      "runs": "11:00 daily",
+      "daily_limit": "10-20 contextual links"
+    },
+    {
+      "id": "technical-guardian",
+      "name": "Technical SEO Guardian Agent",
+      "mission": "Run sitemap/canonical/noindex/404 checks. Block deploy if critical issue found.",
+      "tasks": [
+        "Verify sitemap",
+        "Check canonicals",
+        "Detect noindex/404/redirect issues",
+        "Block deploy on critical issues"
+      ],
+      "allowed_actions": [
+        "Crawl live site",
+        "Validate sitemap",
+        "Check HTTP statuses",
+        "Block unsafe deploys"
+      ],
+      "forbidden_actions": [
+        "Deploy without clearance",
+        "Change SEO settings without Auditor approval"
+      ],
+      "inputs": [
+        "sitemap-priority-cleanup-report.json",
+        "technical-cleanup-log.json",
+        "Live site data"
+      ],
+      "outputs": [
+        "technical-guardian-report.json"
+      ],
+      "dependencies": [
+        "All content/CTR/link changes complete"
+      ],
+      "runs": "Before deploy (12:30)"
+    },
+    {
+      "id": "deploy-validation",
+      "name": "Deploy & Validation Agent",
+      "mission": "Build, deploy, live validate. Submit sitemaps. Verify analytics.",
+      "tasks": [
+        "Run post-deploy-ops.sh",
+        "Verify 12+ key URLs",
+        "Submit sitemaps to GSC",
+        "Verify analytics still works"
+      ],
+      "allowed_actions": [
+        "Git push if safe",
+        "Run deploy scripts",
+        "Verify endpoints",
+        "Submit sitemaps"
+      ],
+      "forbidden_actions": [
+        "Deploy without Auditor + Technical Guardian clearance"
+      ],
+      "inputs": [
+        "Technical Guardian report",
+        "Auditor decision log"
+      ],
+      "outputs": [
+        "post-deploy verification report"
+      ],
+      "dependencies": [
+        "Auditor approves + Technical Guardian clears"
+      ],
+      "runs": "After all changes approved (13:00)"
+    },
+    {
+      "id": "outreach-agent",
+      "name": "Outreach Agent",
+      "mission": "Only follow-ups due or approved new prospects. Sends to Auditor before sending.",
+      "tasks": [
+        "Check follow-up schedule",
+        "Propose new prospects if approved",
+        "Draft personalized emails",
+        "Send to Auditor"
+      ],
+      "allowed_actions": [
+        "Draft emails",
+        "Check outreach-tracker.json",
+        "Schedule follow-ups"
+      ],
+      "forbidden_actions": [
+        "Send without Auditor approval",
+        "Bulk/spam outreach",
+        "Paid link requests"
+      ],
+      "inputs": [
+        "outreach-tracker.json",
+        "outreach-batch-2-sent-report.json"
+      ],
+      "outputs": [
+        "outreach-proposals.json"
+      ],
+      "dependencies": [
+        "None urgent \u2014 runs independently"
+      ],
+      "runs": "15:00 (only if follow-ups due)",
+      "daily_limit": "5 follow-ups, 5 new max"
+    },
+    {
+      "id": "pinterest-monitor",
+      "name": "Pinterest Monitor Agent",
+      "mission": "Monitor only unless performance threshold met. Any new pin must go to Auditor.",
+      "tasks": [
+        "Check Pinterest analytics",
+        "Report impressions/engagement",
+        "Only propose new pins if 2 test pins show clicks"
+      ],
+      "allowed_actions": [
+        "Read analytics",
+        "Report metrics",
+        "Propose pins (to Auditor)"
+      ],
+      "forbidden_actions": [
+        "Post pins without Auditor approval",
+        "Restart old Pinterest crons"
+      ],
+      "inputs": [
+        "pinterest-performance-report.json",
+        "Pinterest analytics"
+      ],
+      "outputs": [
+        "pinterest-performance-report.json (updated)"
+      ],
+      "dependencies": [
+        "None \u2014 runs independently"
+      ],
+      "runs": "16:00 daily"
+    }
+  ]
+}

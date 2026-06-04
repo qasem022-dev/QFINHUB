@@ -1,0 +1,150 @@
+{
+  "title": "QFINHUB Quality Auditor \u2014 Rules & Scoring",
+  "generated": "2026-06-04T19:00:09.949280Z",
+  "name": "QFINHUB Quality Auditor",
+  "mission": "REVIEW every proposed action. APPROVE/REJECT/NEEDS_REVISION/HOLD_FOR_DATA before any execution.",
+  "outputs": [
+    "APPROVED",
+    "REJECTED",
+    "NEEDS_REVISION",
+    "HOLD_FOR_DATA"
+  ],
+  "scoring_categories": {
+    "content_new_page": {
+      "dimensions": {
+        "search_intent_match": {
+          "max": 20,
+          "description": "Does the page target a real search query with clear intent?"
+        },
+        "uniqueness": {
+          "max": 20,
+          "description": "Is this page unique? Not duplicating existing content?"
+        },
+        "usefulness_depth": {
+          "max": 20,
+          "description": "Is it genuinely useful? 2,000+ words? Specific examples?"
+        },
+        "calculator_integration": {
+          "max": 15,
+          "description": "Does it connect to a QFINHUB calculator? Show results?"
+        },
+        "internal_links": {
+          "max": 10,
+          "description": "Are internal links natural and useful?"
+        },
+        "eeat_safety": {
+          "max": 10,
+          "description": "No unsupported financial claims? Educational disclaimer?"
+        },
+        "technical_seo": {
+          "max": 5,
+          "description": "Title, meta, canonical, schema correct?"
+        }
+      },
+      "min_approval_score": 85,
+      "total_max": 100
+    },
+    "ctr_meta_change": {
+      "dimensions": {
+        "query_match": {
+          "max": 25,
+          "description": "Does the proposed title/meta match the target query?"
+        },
+        "clickability": {
+          "max": 25,
+          "description": "Will this make users click? Benefit-driven? Question hooks?"
+        },
+        "accuracy": {
+          "max": 25,
+          "description": "Is it accurate? No clickbait? No false claims?"
+        },
+        "non_clickbait": {
+          "max": 15,
+          "description": "Is it honest? Not misleading?"
+        },
+        "serp_readability": {
+          "max": 10,
+          "description": "Fits within SERP display limits? Clear and scannable?"
+        }
+      },
+      "min_approval_score": 85,
+      "total_max": 100
+    },
+    "indexing_request": {
+      "type": "HARD PASS/FAIL",
+      "gates": [
+        "HTTP 200 \u2014 must pass",
+        "Robots: index,follow \u2014 must pass",
+        "Self-canonical \u2014 must pass",
+        "In sitemap if intended \u2014 must pass",
+        "Not cleanup-lag \u2014 must pass",
+        "Not requested in last 7 days \u2014 must pass",
+        "Not noindex/404/410/redirect \u2014 must pass",
+        "Priority score >= threshold \u2014 must pass"
+      ],
+      "rule": "ALL gates must pass. Any single FAIL = REJECT"
+    },
+    "outreach": {
+      "dimensions": {
+        "personalization": {
+          "max": 25,
+          "description": "Does it mention their site/content specifically?"
+        },
+        "relevance": {
+          "max": 25,
+          "description": "Is QFINHUB widget/calculator relevant to their audience?"
+        },
+        "value_proposition": {
+          "max": 20,
+          "description": "Clear benefit for them to add the widget?"
+        },
+        "compliance": {
+          "max": 20,
+          "description": "No spam language? No paid link requests? No anchor demands?"
+        },
+        "clarity": {
+          "max": 10,
+          "description": "Clear, concise, professional?"
+        }
+      },
+      "min_approval_score": 90,
+      "total_max": 100
+    },
+    "pinterest_pin": {
+      "dimensions": {
+        "visual_attractiveness": {
+          "max": 25,
+          "description": "Does it look premium? Fintech quality?"
+        },
+        "readability": {
+          "max": 25,
+          "description": "Is text readable at Pinterest sizes? No garbled text?"
+        },
+        "cta_clarity": {
+          "max": 15,
+          "description": "Clear what user should do? Click? Save?"
+        },
+        "destination_match": {
+          "max": 15,
+          "description": "Does the link match the pin topic?"
+        },
+        "save_click_reason": {
+          "max": 10,
+          "description": "Why would someone save/click this?"
+        },
+        "brand_trust": {
+          "max": 10,
+          "description": "Builds trust? Not spammy?"
+        }
+      },
+      "min_approval_score": 90,
+      "total_max": 100
+    }
+  },
+  "risk_levels": {
+    "LOW": "Safe to proceed. Standard change.",
+    "MEDIUM": "Proceed with caution. Document reason.",
+    "HIGH": "Requires strong justification. May need Qasem review.",
+    "CRITICAL": "BLOCK. Do not proceed under any circumstances."
+  }
+}

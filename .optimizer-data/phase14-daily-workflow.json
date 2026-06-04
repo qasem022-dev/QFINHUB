@@ -1,0 +1,122 @@
+{
+  "title": "Phase 14 Daily Workflow \u2014 Autonomous Growth Operating System",
+  "generated": "2026-06-04T19:00:09.949280Z",
+  "schedule": [
+    {
+      "time": "09:00",
+      "agent": "Analytics Monitor",
+      "action": "Pull Vercel + GA4 + GSC data. Update scoreboard.",
+      "output": "daily-growth-scoreboard.json"
+    },
+    {
+      "time": "09:15",
+      "agent": "GSC Intelligence",
+      "action": "Find query opportunities, zero-click pages, near-winners.",
+      "output": "query-opportunity-list.json"
+    },
+    {
+      "time": "09:15",
+      "agent": "Calculator Indexing",
+      "action": "Check Tier 1/2/3 statuses. Prepare Tier 3 batch.",
+      "output": "Tier 3 batch queue"
+    },
+    {
+      "time": "09:30",
+      "agent": "Query Opportunity",
+      "action": "Score opportunities. Select top 3-5. Build briefs.",
+      "output": "query-opportunity-briefs.json"
+    },
+    {
+      "time": "10:00",
+      "agent": "AUDITOR",
+      "action": "Review query opportunities + Tier 3 batch + CTR proposals.",
+      "output": "Auditor decisions"
+    },
+    {
+      "time": "10:30",
+      "agent": "Content Strategist",
+      "action": "Decide improve vs create. Build content briefs.",
+      "output": "content-briefs.json"
+    },
+    {
+      "time": "10:30",
+      "agent": "CTR Extraction",
+      "action": "Propose title/meta improvements for approved pages.",
+      "output": "ctr-improvement-proposals.json"
+    },
+    {
+      "time": "10:30",
+      "agent": "Near-Winner Ranking",
+      "action": "Propose on-page and link pushes.",
+      "output": "near-winner-proposals.json"
+    },
+    {
+      "time": "11:00",
+      "agent": "Internal Authority",
+      "action": "Plan contextual internal links. Validate targets.",
+      "output": "internal-link-proposals.json"
+    },
+    {
+      "time": "11:00",
+      "agent": "AUDITOR",
+      "action": "Review all content + CTR + link proposals.",
+      "output": "Auditor decisions"
+    },
+    {
+      "time": "11:30",
+      "agent": "Content Builder",
+      "action": "Build ONLY Auditor-approved content.",
+      "output": "New/improved page files"
+    },
+    {
+      "time": "12:30",
+      "agent": "AUDITOR",
+      "action": "Final review of built content before deploy.",
+      "output": "Final APPROVE/REJECT"
+    },
+    {
+      "time": "12:30",
+      "agent": "Technical Guardian",
+      "action": "Sitemap/canonical/noindex/404 checks. Block if critical.",
+      "output": "technical-guardian-report.json"
+    },
+    {
+      "time": "13:00",
+      "agent": "Calculator Indexing",
+      "action": "Submit approved Tier 3 batch via GSC UI (max 10).",
+      "output": "safe-gsc-ui-indexing-run-log.json"
+    },
+    {
+      "time": "13:00",
+      "agent": "Deploy & Validation",
+      "action": "Deploy, validate, submit sitemaps. Verify analytics.",
+      "output": "Deploy verification"
+    },
+    {
+      "time": "15:00",
+      "agent": "Outreach Agent",
+      "action": "Check follow-ups. Draft if due. Send to Auditor.",
+      "output": "outreach-proposals.json"
+    },
+    {
+      "time": "15:30",
+      "agent": "AUDITOR",
+      "action": "Review outreach proposals.",
+      "output": "Auditor decisions"
+    },
+    {
+      "time": "16:00",
+      "agent": "Pinterest Monitor",
+      "action": "Check analytics. Only propose pins if clicks show.",
+      "output": "pinterest-performance-report.json"
+    },
+    {
+      "time": "17:00",
+      "agent": "Growth Director",
+      "action": "Compile daily report. Set next-day priorities.",
+      "output": "daily-growth-action-report.json"
+    }
+  ],
+  "auditor_gates": "AUDITOR reviews before: content publish, CTR change, indexing request, outreach send, Pinterest post, deploy. NO action proceeds without Auditor APPROVAL.",
+  "fallback": "If Auditor is unavailable or unclear, HOLD_FOR_DATA. Do not proceed. Flag to Qasem."
+}

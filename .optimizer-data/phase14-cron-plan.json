@@ -1,0 +1,122 @@
+{
+  "title": "Phase 14 Cron / Automation Plan \u2014 PROPOSAL ONLY (NOT ACTIVE)",
+  "generated": "2026-06-04T19:01:00.545710Z",
+  "status": "PLAN \u2014 do NOT activate until Qasem/ChatGPT approves",
+  "proposed_daily_sequence": [
+    {
+      "time": "09:00 EEST",
+      "cron_name": "Phase14-Analytics-Pull",
+      "action": "Analytics Monitor Agent \u2014 pull Vercel+GA4+GSC data"
+    },
+    {
+      "time": "09:15 EEST",
+      "cron_name": "Phase14-GSC-Intelligence",
+      "action": "GSC Intelligence + Calculator Indexing status check"
+    },
+    {
+      "time": "09:30 EEST",
+      "cron_name": "Phase14-Opportunity-Scoring",
+      "action": "Query Opportunity scoring + Tier 3 batch prep"
+    },
+    {
+      "time": "10:00 EEST",
+      "cron_name": "Phase14-Auditor-Morning",
+      "action": "Auditor reviews opportunities + CTR + Tier 3 batch"
+    },
+    {
+      "time": "10:30 EEST",
+      "cron_name": "Phase14-Content-CTR",
+      "action": "Content Strategist + CTR Extraction + Near-Winner"
+    },
+    {
+      "time": "11:00 EEST",
+      "cron_name": "Phase14-Auditor-Content",
+      "action": "Auditor reviews content/CTR/link proposals"
+    },
+    {
+      "time": "11:30 EEST",
+      "cron_name": "Phase14-Content-Build",
+      "action": "Content Builder builds approved content"
+    },
+    {
+      "time": "12:30 EEST",
+      "cron_name": "Phase14-Auditor-Final",
+      "action": "Auditor final review + Technical Guardian checks"
+    },
+    {
+      "time": "13:00 EEST",
+      "cron_name": "Phase14-Deploy",
+      "action": "Deploy + GSC UI indexing + sitemap submission"
+    },
+    {
+      "time": "15:00 EEST",
+      "cron_name": "Phase14-Outreach",
+      "action": "Outreach follow-up check + Auditor review"
+    },
+    {
+      "time": "16:00 EEST",
+      "cron_name": "Phase14-Pinterest",
+      "action": "Pinterest monitor only"
+    },
+    {
+      "time": "17:00 EEST",
+      "cron_name": "Phase14-Daily-Report",
+      "action": "Growth Director compiles report"
+    }
+  ],
+  "crons_to_pause_before_phase14_activation": [
+    {
+      "id": "43438e317a61",
+      "name": "Widget Outreach Engine",
+      "reason": "Auto-spam \u2014 replace with controlled Phase 14 outreach"
+    },
+    {
+      "id": "d006e3318401",
+      "name": "Newsjacking Bot",
+      "reason": "Auto-blog violates V2 quality rules"
+    }
+  ],
+  "crons_to_keep_active": [
+    {
+      "id": "fc9f8c7ce833",
+      "name": "Self-Healing Monitor"
+    },
+    {
+      "id": "2e59569e382e",
+      "name": "Site Quality Check"
+    },
+    {
+      "id": "2aac8129928f",
+      "name": "HARO Morning"
+    },
+    {
+      "id": "303f15ec269a",
+      "name": "HARO Mid"
+    },
+    {
+      "id": "c7c7a0ed6621",
+      "name": "HARO Afternoon"
+    },
+    {
+      "id": "478e5ba17848",
+      "name": "Pinterest Growth (follow/save)"
+    },
+    {
+      "id": "0a7e82602b9a",
+      "name": "Reddit Growth"
+    },
+    {
+      "id": "48cef8f10147",
+      "name": "Daily Tracker"
+    },
+    {
+      "id": "726b45fd51f0",
+      "name": "Weekly Review"
+    },
+    {
+      "id": "0981e2f88cf4",
+      "name": "PDF Distribution"
+    }
+  ],
+  "activation_requirement": "Qasem/ChatGPT must explicitly approve before any Phase 14 cron is created."
+}

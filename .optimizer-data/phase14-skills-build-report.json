@@ -1,0 +1,140 @@
+{
+  "title": "Phase 14 Skills Build Report",
+  "generated": "2026-06-04T19:01:00.545710Z",
+  "skills_already_exist": [
+    {
+      "name": "qfinhub-quick",
+      "status": "ACTIVE",
+      "covers": "Project paths, cron IDs, pitfalls \u2014 loaded by all agents"
+    },
+    {
+      "name": "qfinhub-deploy-gsc",
+      "status": "ACTIVE",
+      "covers": "Deploy + GSC sitemap submission"
+    },
+    {
+      "name": "cloakbrowser-automation",
+      "status": "ACTIVE",
+      "covers": "GSC UI indexing, Pinterest, browser tasks"
+    },
+    {
+      "name": "humanizer",
+      "status": "ACTIVE",
+      "covers": "Humanize AI-generated content"
+    },
+    {
+      "name": "seo-nextjs-app-router",
+      "status": "ACTIVE",
+      "covers": "Next.js SEO patterns (sitemap, metadata, schema)"
+    },
+    {
+      "name": "pinterest-creative-system",
+      "status": "PAUSED",
+      "covers": "Premium pin design (reactivate when pins produce clicks)"
+    },
+    {
+      "name": "haro-auto-responder",
+      "status": "ACTIVE",
+      "covers": "Journalist outreach \u2014 handled by existing HARO crons"
+    },
+    {
+      "name": "subagent-protocol",
+      "status": "ACTIVE",
+      "covers": "Task handoff protocol for all subagents"
+    },
+    {
+      "name": "learning-from-failure",
+      "status": "ACTIVE",
+      "covers": "Root cause capture and skill patching"
+    }
+  ],
+  "skills_newly_defined_in_phase14a": [
+    {
+      "name": "qfinhub-gsc-ui-indexing-skill",
+      "purpose": "Safe GSC UI request indexing with safety gates, cooldown logic, and logging",
+      "status": "DEFINED \u2014 implemented in safe-gsc-ui-indexing-queue.py + policy.json",
+      "key_files": [
+        "scripts/safe-gsc-ui-indexing-queue.py",
+        ".optimizer-data/safe-gsc-ui-indexing-policy.json"
+      ]
+    },
+    {
+      "name": "qfinhub-query-opportunity-skill",
+      "purpose": "GSC query analysis, opportunity scoring, query-page matching",
+      "status": "DEFINED \u2014 to be implemented by GSC Intelligence + Query Opportunity agents",
+      "key_files": [
+        ".optimizer-data/zero-click-query-map.json",
+        ".optimizer-data/serp-clickability-audit.json"
+      ]
+    },
+    {
+      "name": "qfinhub-content-quality-gate-skill",
+      "purpose": "New page quality scoring, duplicate detection, E-E-A-T checks, calculator connection check",
+      "status": "DEFINED \u2014 implemented in Auditor rules (85/100 minimum score)",
+      "key_files": [
+        ".optimizer-data/phase14-auditor-rules.json"
+      ]
+    },
+    {
+      "name": "qfinhub-ctr-extraction-skill",
+      "purpose": "Zero-click query diagnosis, SERP title/meta improvement, snippet cannibalization detection",
+      "status": "DEFINED \u2014 to be implemented by CTR Extraction Agent",
+      "key_files": [
+        ".optimizer-data/click-extraction-fix-log.json",
+        "pitfall_45 (snippet cannibalization)"
+      ]
+    },
+    {
+      "name": "qfinhub-internal-authority-skill",
+      "purpose": "Contextual internal link planning, source/target validation, anchor safety",
+      "status": "DEFINED \u2014 to be implemented by Internal Authority Agent",
+      "key_files": [
+        ".optimizer-data/internal-authority-boost-log.json"
+      ]
+    },
+    {
+      "name": "qfinhub-technical-seo-guardian-skill",
+      "purpose": "Sitemap/noindex/canonical/404/redirect validation, deploy blocking",
+      "status": "DEFINED \u2014 to be implemented by Technical Guardian Agent",
+      "key_files": [
+        ".optimizer-data/technical-cleanup-log.json",
+        ".optimizer-data/sitemap-priority-cleanup-report.json"
+      ]
+    },
+    {
+      "name": "qfinhub-outreach-quality-skill",
+      "purpose": "Personalized outreach/follow-up review, spam-risk detection",
+      "status": "DEFINED \u2014 implemented in Auditor outreach rules",
+      "key_files": [
+        ".optimizer-data/outreach-tracker.json"
+      ]
+    },
+    {
+      "name": "qfinhub-pinterest-quality-skill",
+      "purpose": "Image/copy quality review, pin approval/rejection",
+      "status": "DEFINED \u2014 implemented in Auditor Pinterest rules",
+      "key_files": [
+        ".optimizer-data/pinterest-performance-report.json"
+      ]
+    },
+    {
+      "name": "qfinhub-daily-reporting-skill",
+      "purpose": "Structured daily report, scorecard, blockers, next actions",
+      "status": "DEFINED \u2014 to be implemented by Growth Director Agent",
+      "key_files": [
+        ".optimizer-data/daily-growth-action-report.json"
+      ]
+    }
+  ],
+  "auditor_skill": {
+    "name": "qfinhub-auditor",
+    "purpose": "Master quality gate \u2014 reviews EVERY action before execution",
+    "status": "DEFINED \u2014 comprehensive rules in phase14-auditor-rules.json. 5 review categories with scoring."
+  },
+  "summary": {
+    "existing_skills_reused": 9,
+    "new_skills_defined": 10,
+    "total_phase14_skills": 19,
+    "missing_none": "All required skills are either already available or defined in Phase 14A architecture"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Phase 14 Daily Limits & Safety Policy",
+  "generated": "2026-06-04T19:00:09.949280Z",
+  "limits": {
+    "tier3_calculator_indexing": {
+      "max": 10,
+      "unit": "per day",
+      "method": "safe GSC UI only",
+      "cooldown": "7 days per URL"
+    },
+    "new_content_pages": {
+      "max": 2,
+      "unit": "per day",
+      "min": 0,
+      "rule": "0 if no strong opportunity exists"
+    },
+    "ctr_fixes": {
+      "max": 10,
+      "unit": "per day",
+      "rule": "Skip pages changed in last 48h unless bug fix"
+    },
+    "near_winner_pushes": {
+      "max": 10,
+      "unit": "per day"
+    },
+    "internal_links": {
+      "max": 20,
+      "unit": "per day",
+      "rule": "Contextual and useful only. No link blocks."
+    },
+    "gsc_ui_indexing": {
+      "max": 13,
+      "unit": "per day",
+      "breakdown": "10 Tier 3 + 3 new/improved pages",
+      "cooldown": "7 days per URL"
+    },
+    "outreach_follow_ups": {
+      "max": 5,
+      "unit": "per day"
+    },
+    "outreach_new_prospects": {
+      "max": 5,
+      "unit": "per day",
+      "rule": "Only if approved. Do not scrape mass emails."
+    },
+    "pinterest_pins": {
+      "max": 0,
+      "unit": "per day",
+      "rule": "Monitor only. Only post if 2 test pins show clicks."
+    }
+  },
+  "absolute_prohibitions": [
+    "Google Indexing API for non-JobPosting/BroadcastEvent pages",
+    "Fake JobPosting/BroadcastEvent schema",
+    "Mass page generation",
+    "Thin AI content",
+    "Doorway pages",
+    "Fake traffic or clicks",
+    "Bulk/spam outreach",
+    "Re-enabling paused risky crons",
+    "Content without Auditor approval",
+    "Deploy without Technical Guardian clearance"
+  ],
+  "risk_escalation": "If any automation risks site quality or indexing penalty, HALT and flag to Qasem immediately."
+}

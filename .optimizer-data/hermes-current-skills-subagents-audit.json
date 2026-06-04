@@ -1,0 +1,397 @@
+{
+  "title": "Hermes Current Skills, Subagents, Crons, Scripts Audit \u2014 PHASE 14A",
+  "generated": "2026-06-04T18:58:18.960872Z",
+  "summary": {
+    "total_skills": 109,
+    "qfinhub_relevant": 16,
+    "skills_to_keep": 13,
+    "skills_deprecated": 3,
+    "total_cron_jobs": 29,
+    "crons_paused_safe": 15,
+    "crons_active_problematic": 4,
+    "crons_active_safe": 10,
+    "crons_need_action": 4,
+    "total_scripts": "50+",
+    "key_active_scripts": 7,
+    "optimizer_data_files": "50+",
+    "subagents_defined": 0,
+    "skills_missing_for_phase14": [
+      "qfinhub-auditor (quality gate subagent)",
+      "qfinhub-daily-workflow (daily orchestrator)",
+      "qfinhub-query-opportunity (GSC query analysis)",
+      "qfinhub-content-builder (content generation)",
+      "qfinhub-internal-authority (link planning)",
+      "qfinhub-technical-guardian (sitemap/canonical checks)"
+    ]
+  },
+  "skills_detail": [
+    {
+      "name": "qfinhub-quick",
+      "category": "software-dev",
+      "purpose": "Essential project reference \u2014 paths, cron IDs, pitfalls",
+      "status": "ACTIVE",
+      "phase": "ALL",
+      "keep": true
+    },
+    {
+      "name": "qfinhub-project-context",
+      "category": "software-dev",
+      "purpose": "Full project context \u2014 architecture, engines, workflows",
+      "status": "ACTIVE",
+      "phase": "ALL",
+      "keep": true
+    },
+    {
+      "name": "qfinhub-deploy-gsc",
+      "category": "devops",
+      "purpose": "Automated Vercel deploy + GSC sitemap submission",
+      "status": "ACTIVE",
+      "phase": "DevOps",
+      "keep": true
+    },
+    {
+      "name": "cloakbrowser-automation",
+      "category": "stealth",
+      "purpose": "Undetectable browser for GSC UI, Pinterest, X",
+      "status": "ACTIVE",
+      "phase": "Browser",
+      "keep": true
+    },
+    {
+      "name": "pinterest-creative-system",
+      "category": "social",
+      "purpose": "Premium Pinterest pin design with Gemini",
+      "status": "PAUSED",
+      "phase": "Pinterest",
+      "keep": true,
+      "when": "after clicks"
+    },
+    {
+      "name": "haro-auto-responder",
+      "category": "social",
+      "purpose": "HARO journalist query auto-response",
+      "status": "ACTIVE",
+      "phase": "PR",
+      "keep": true
+    },
+    {
+      "name": "reddit-growth",
+      "category": "growth",
+      "purpose": "Reddit account aging and growth",
+      "status": "ACTIVE",
+      "phase": "Social",
+      "keep": true
+    },
+    {
+      "name": "indexing-acceleration",
+      "category": "growth",
+      "purpose": "Indexing acceleration playbook (deprecated by GSC UI automation)",
+      "status": "DEPRECATED",
+      "phase": "Obsolete",
+      "keep": false
+    },
+    {
+      "name": "traffic-gainers-team",
+      "category": "growth",
+      "purpose": "Mega multi-agent traffic system (too aggressive for V2)",
+      "status": "PAUSED",
+      "phase": "Obsolete",
+      "keep": false
+    },
+    {
+      "name": "mega-programmatic-seo",
+      "category": "software-dev",
+      "purpose": "Programmatic SEO at scale \u2014 scenario generation",
+      "status": "PAUSED",
+      "phase": "Obsolete",
+      "keep": false
+    },
+    {
+      "name": "self-healing-monitor",
+      "category": "devops",
+      "purpose": "Cron job health monitoring and auto-restart",
+      "status": "ACTIVE",
+      "phase": "DevOps",
+      "keep": true
+    },
+    {
+      "name": "continuous-optimization",
+      "category": "devops",
+      "purpose": "Weekly meta-analysis of all engines",
+      "status": "ACTIVE",
+      "phase": "DevOps",
+      "keep": true
+    },
+    {
+      "name": "learning-from-failure",
+      "category": "software-dev",
+      "purpose": "Capture root cause patterns from failures",
+      "status": "ACTIVE",
+      "phase": "Meta",
+      "keep": true
+    },
+    {
+      "name": "subagent-protocol",
+      "category": "software-dev",
+      "purpose": "Task handoff protocol for subagents",
+      "status": "ACTIVE",
+      "phase": "Meta",
+      "keep": true
+    },
+    {
+      "name": "humanizer",
+      "category": "creative",
+      "purpose": "Humanize AI text",
+      "status": "ACTIVE",
+      "phase": "Content",
+      "keep": true
+    },
+    {
+      "name": "seo-nextjs-app-router",
+      "category": "software-dev",
+      "purpose": "Next.js SEO patterns",
+      "status": "ACTIVE",
+      "phase": "SEO",
+      "keep": true
+    }
+  ],
+  "crons_detail": {
+    "paused_safe": [
+      {
+        "id": "e3d7d3fcb7c9",
+        "name": "Blog Agent",
+        "reason": "V2 quality gate needed",
+        "risk": "HIGH if re-enabled"
+      },
+      {
+        "id": "7edc3f28a918",
+        "name": "Scenario Generator",
+        "reason": "Mass content \u2014 V2 prohibits",
+        "risk": "CRITICAL"
+      },
+      {
+        "id": "291b8aa4f5d0",
+        "name": "Scenario Upgrades",
+        "reason": "Polishing thin content",
+        "risk": "HIGH"
+      },
+      {
+        "id": "14d3d631f9ba",
+        "name": "SEO Indexing Engine",
+        "reason": "Uses Indexing API",
+        "risk": "CRITICAL"
+      },
+      {
+        "id": "7ba22a836377",
+        "name": "Sitemap Ping",
+        "reason": "Deprecated endpoint",
+        "risk": "LOW"
+      },
+      {
+        "id": "defdde75ea1f",
+        "name": "Pinterest Pin Gen (3:30PM)",
+        "reason": "Replaced by V5 system",
+        "risk": "MEDIUM"
+      },
+      {
+        "id": "5c46309c02c0",
+        "name": "Pinterest Pin Gen (3AM)",
+        "reason": "V4 creative upgrade",
+        "risk": "MEDIUM"
+      },
+      {
+        "id": "f803aceaa0a7",
+        "name": "Pinterest Morning Post",
+        "reason": "Posting paused",
+        "risk": "MEDIUM"
+      },
+      {
+        "id": "7c97577dbd84",
+        "name": "Pinterest Evening Post",
+        "reason": "Posting paused",
+        "risk": "MEDIUM"
+      },
+      {
+        "id": "8a229e1e731b",
+        "name": "X Morning",
+        "reason": "Shadowban",
+        "risk": "HIGH \u2014 shadowban risk"
+      },
+      {
+        "id": "be62779e2dc0",
+        "name": "X Noon",
+        "reason": "Shadowban",
+        "risk": "HIGH"
+      },
+      {
+        "id": "2bd0d2e26dc8",
+        "name": "X Afternoon",
+        "reason": "Shadowban",
+        "risk": "HIGH"
+      },
+      {
+        "id": "2e55e62a79a8",
+        "name": "X Evening",
+        "reason": "Shadowban",
+        "risk": "HIGH"
+      },
+      {
+        "id": "6320859ceb69",
+        "name": "X Night",
+        "reason": "Shadowban",
+        "risk": "HIGH"
+      },
+      {
+        "id": "fb1ea44cc2dc",
+        "name": "X Self-Tweet",
+        "reason": "Shadowban",
+        "risk": "HIGH"
+      }
+    ],
+    "active_problematic": [
+      {
+        "id": "43438e317a61",
+        "name": "Widget Outreach",
+        "reason": "Auto-spam \u2014 should be controlled",
+        "risk": "MEDIUM"
+      },
+      {
+        "id": "d006e3318401",
+        "name": "Newsjacking Bot",
+        "reason": "Auto-blog \u2014 V2 prohibits",
+        "risk": "HIGH"
+      },
+      {
+        "id": "5ecc4b819cc5",
+        "name": "Growth Optimizer",
+        "reason": "Old V1 optimizer \u2014 superseded",
+        "risk": "MEDIUM"
+      },
+      {
+        "id": "6ae2bad29ba3",
+        "name": "CTR Optimizer",
+        "reason": "Old script \u2014 superseded by Phase 13",
+        "risk": "LOW"
+      }
+    ],
+    "active_safe": [
+      {
+        "id": "fc9f8c7ce833",
+        "name": "Self-Healing",
+        "status": "KEEP"
+      },
+      {
+        "id": "2e59569e382e",
+        "name": "Site Quality",
+        "status": "KEEP"
+      },
+      {
+        "id": "2aac8129928f",
+        "name": "HARO Morning",
+        "status": "KEEP"
+      },
+      {
+        "id": "303f15ec269a",
+        "name": "HARO Mid",
+        "status": "KEEP"
+      },
+      {
+        "id": "c7c7a0ed6621",
+        "name": "HARO Afternoon",
+        "status": "KEEP"
+      },
+      {
+        "id": "478e5ba17848",
+        "name": "Pinterest Growth (follow/save)",
+        "status": "KEEP \u2014 safe, no posting"
+      },
+      {
+        "id": "0a7e82602b9a",
+        "name": "Reddit Growth",
+        "status": "KEEP"
+      },
+      {
+        "id": "48cef8f10147",
+        "name": "Daily Tracker",
+        "status": "KEEP"
+      },
+      {
+        "id": "726b45fd51f0",
+        "name": "Weekly Review",
+        "status": "KEEP"
+      },
+      {
+        "id": "0981e2f88cf4",
+        "name": "PDF Distribution",
+        "status": "KEEP"
+      }
+    ],
+    "action_needed": [
+      "PAUSE: 43438e317a61 (Widget Outreach) \u2014 spam risk, replace with controlled Phase 14 outreach",
+      "PAUSE: d006e3318401 (Newsjacking Bot) \u2014 auto-blog violates V2 quality rules",
+      "REVIEW: 5ecc4b819cc5 (Growth Optimizer) \u2014 superseded by Phase 14 system",
+      "REVIEW: 6ae2bad29ba3 (CTR Optimizer) \u2014 superseded by Phase 13 CTR extraction"
+    ]
+  },
+  "scripts_detail": [
+    {
+      "name": "scripts/safe-gsc-ui-indexing-queue.py",
+      "purpose": "Daily GSC UI indexing queue with safety gates",
+      "status": "ACTIVE",
+      "phase": "13C.8"
+    },
+    {
+      "name": "scripts/phase-13c7-gsc-ui-automation.py",
+      "purpose": "One-shot GSC UI indexing (7 fixed pages)",
+      "status": "COMPLETE",
+      "phase": "13C.7"
+    },
+    {
+      "name": "scripts/phase-13c9-gsc-tier2.py",
+      "purpose": "Tier 2 calculator GSC submission",
+      "status": "COMPLETE",
+      "phase": "13C.9"
+    },
+    {
+      "name": "scripts/submit-sitemaps-gsc.py",
+      "purpose": "GSC sitemap submission via API",
+      "status": "ACTIVE",
+      "phase": "DevOps"
+    },
+    {
+      "name": "scripts/deploy-vercel-v2.py",
+      "purpose": "Vercel deploy trigger",
+      "status": "BROKEN \u2014 no creds",
+      "phase": "DevOps"
+    },
+    {
+      "name": "scripts/validate-seo-after-deploy.py",
+      "purpose": "Post-deploy SEO validation",
+      "status": "ACTIVE",
+      "phase": "DevOps"
+    },
+    {
+      "name": "scripts/post-deploy-ops.sh",
+      "purpose": "Orchestrator: deploy\u2192validate\u2192submit",
+      "status": "ACTIVE",
+      "phase": "DevOps"
+    }
+  ],
+  "risk_assessment": {
+    "critical_risks": [
+      "Blog Agent, Scenario Generator, SEO Indexing Engine \u2014 MUST stay paused",
+      "Google Indexing API \u2014 MUST NOT be used for normal pages",
+      "X/Twitter automation \u2014 account is shadowbanned, stay paused"
+    ],
+    "medium_risks": [
+      "Widget Outreach auto-cron \u2014 replace with controlled Phase 14 outreach",
+      "Newsjacking Bot \u2014 auto-publishing without quality gate"
+    ],
+    "safe_to_continue": [
+      "HARO auto-responders (journalist value, not spam)",
+      "Pinterest Growth (follow/save only)",
+      "Self-healing monitor",
+      "GSC UI indexing (strict safety gates)"
+    ]
+  }
+}
