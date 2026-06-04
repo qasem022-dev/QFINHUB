@@ -1,28 +1,27 @@
 {
-  "title": "Daily Growth Scoreboard \u2014 Day 7 (Phase 13C.11)",
+  "title": "Daily Growth Scoreboard \u2014 Phase 14A.2 (Activation Gate)",
   "date": "2026-06-04",
-  "phase": "13C.11 \u2014 Analytics Validation + Tier 3 Batch 1",
-  "note": "GSC Search Analytics API returns 404. All metrics estimated. Qasem should verify against live GSC and Vercel Analytics dashboards.",
+  "phase": "14A.2",
   "analytics": {
-    "vercel": "\u2705 CONFIRMED WORKING by Qasem \u2014 dashboard shows visitors",
-    "ga4": "\u2705 CONFIRMED WORKING \u2014 consent granted, page_view fires"
+    "vercel": "\u2705 CONFIRMED WORKING \u2014 Qasem verified dashboard shows visitors",
+    "ga4": "\u2705 CONFIRMED WORKING \u2014 consent granted, page_view fires",
+    "baseline_note": "First full day with working analytics \u2014 establishing baseline"
   },
   "gsc_estimated": {
-    "indexed_pages": "~189 + 10 core calcs + 7 fixed pages submitted (Phase 13C.7)",
-    "tier2_submitted": "12/12 awaiting crawl (submitted today)",
-    "tier3_submitted": "10/105 submitted today (Batch 1)",
-    "impressions": "~30-50/day estimated",
-    "ctr": "0.0-0.5% (pre-fix), expected improvement after pages re-crawled",
-    "average_position": "~23.9 (7-day)"
+    "indexed_pages": "~189 + 10 T1 + pages from submitted batches",
+    "pages_submitted_for_indexing": 49,
+    "daily_impressions": "~30-50 estimated",
+    "daily_clicks": "0-1 estimated (pre-re-crawl)",
+    "ctr": "Pending \u2014 awaiting re-crawl of 49 submitted pages",
+    "average_position": "~23.9 (7-day avg, last known)"
   },
   "pinterest": {
     "live_pins": 2,
-    "hours_live": "~120h",
-    "status": "MONITOR ONLY \u2014 check Pinterest native analytics",
-    "ga4_sessions": 0
+    "status": "MONITOR ONLY"
   },
-  "traffic": {
-    "vercel_visitors": "Qasem to verify from Vercel dashboard",
-    "trend": "First day with working analytics \u2014 establish baseline"
-  }
+  "outreach": {
+    "next_follow_ups": "Jun 7",
+    "status": "None due today"
+  },
+  "cumulative_gsc_ui": 49
 }

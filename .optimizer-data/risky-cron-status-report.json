@@ -1,163 +1,94 @@
 {
-  "title": "Risky Cron Status Report \u2014 Phase 14A.1",
-  "generated": "2026-06-04T19:09:30.848233Z",
-  "paused_today": [
+  "title": "Risky Cron Status \u2014 Phase 14A.2 Final",
+  "generated": "2026-06-04T19:31:52.239495Z",
+  "all_paused": true,
+  "paused_list": [
     {
-      "id": "43438e317a61",
-      "name": "Widget Outreach Engine",
-      "paused_at": "2026-06-04T22:08:19+03:00",
-      "reason": "Outreach must go through Outreach Agent + Auditor"
-    },
-    {
-      "id": "d006e3318401",
-      "name": "Newsjacking Bot",
-      "paused_at": "2026-06-04T22:08:20+03:00",
-      "reason": "Auto-news content violates V2 quality rules"
-    }
-  ],
-  "all_risky_paused": [
-    {
-      "id": "e3d7d3fcb7c9",
       "name": "Blog Agent",
+      "id": "e3d7d3fcb7c9",
       "status": "PAUSED \u2705"
     },
     {
-      "id": "7edc3f28a918",
       "name": "Scenario Generator",
+      "id": "7edc3f28a918",
       "status": "PAUSED \u2705"
     },
     {
-      "id": "291b8aa4f5d0",
       "name": "Scenario Upgrades",
+      "id": "291b8aa4f5d0",
       "status": "PAUSED \u2705"
     },
     {
-      "id": "14d3d631f9ba",
       "name": "SEO Indexing Engine",
+      "id": "14d3d631f9ba",
       "status": "PAUSED \u2705"
     },
     {
-      "id": "7ba22a836377",
       "name": "Sitemap Ping",
+      "id": "7ba22a836377",
       "status": "PAUSED \u2705"
     },
     {
-      "id": "defdde75ea1f",
-      "name": "Pinterest Pin Gen (3:30PM)",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "5c46309c02c0",
-      "name": "Pinterest Pin Gen (3AM)",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "f803aceaa0a7",
-      "name": "Pinterest Morning Post",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "7c97577dbd84",
-      "name": "Pinterest Evening Post",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "8a229e1e731b",
-      "name": "X Morning",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "be62779e2dc0",
-      "name": "X Noon",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "2bd0d2e26dc8",
-      "name": "X Afternoon",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "2e55e62a79a8",
-      "name": "X Evening",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "6320859ceb69",
-      "name": "X Night",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "fb1ea44cc2dc",
-      "name": "X Self-Tweet",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "id": "43438e317a61",
       "name": "Widget Outreach",
-      "status": "PAUSED TODAY \u2705"
+      "id": "43438e317a61",
+      "status": "PAUSED \u2705 (14A.1)"
     },
     {
-      "id": "d006e3318401",
       "name": "Newsjacking Bot",
-      "status": "PAUSED TODAY \u2705"
-    }
-  ],
-  "active_safe": [
-    {
-      "id": "fc9f8c7ce833",
-      "name": "Self-Healing"
+      "id": "d006e3318401",
+      "status": "PAUSED \u2705 (14A.1)"
     },
     {
-      "id": "2e59569e382e",
-      "name": "Site Quality"
+      "name": "Pinterest Pin Gen (3:30PM)",
+      "id": "defdde75ea1f",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "2aac8129928f",
-      "name": "HARO Morning"
+      "name": "Pinterest Pin Gen (3AM)",
+      "id": "5c46309c02c0",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "303f15ec269a",
-      "name": "HARO Mid"
+      "name": "Pinterest Morning Post",
+      "id": "f803aceaa0a7",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "c7c7a0ed6621",
-      "name": "HARO Afternoon"
+      "name": "Pinterest Evening Post",
+      "id": "7c97577dbd84",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "478e5ba17848",
-      "name": "Pinterest Growth (follow/save)"
+      "name": "X Morning",
+      "id": "8a229e1e731b",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "0a7e82602b9a",
-      "name": "Reddit Growth"
+      "name": "X Noon",
+      "id": "be62779e2dc0",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "48cef8f10147",
-      "name": "Daily Tracker"
+      "name": "X Afternoon",
+      "id": "2bd0d2e26dc8",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "726b45fd51f0",
-      "name": "Weekly Review"
+      "name": "X Evening",
+      "id": "2e55e62a79a8",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "0981e2f88cf4",
-      "name": "PDF Distribution"
-    }
-  ],
-  "still_active_legacy": [
-    {
-      "id": "5ecc4b819cc5",
-      "name": "Growth Optimizer",
-      "note": "Old V1 engine, superseded by Phase 14 \u2014 OK to keep until Phase 14 daily cron replaces it"
+      "name": "X Night",
+      "id": "6320859ceb69",
+      "status": "PAUSED \u2705"
     },
     {
-      "id": "6ae2bad29ba3",
-      "name": "CTR Optimizer",
-      "note": "Old engine, superseded by Phase 13 CTR \u2014 OK to keep as it uses Python scripts not content gen"
+      "name": "X Self-Tweet",
+      "id": "fb1ea44cc2dc",
+      "status": "PAUSED \u2705"
     }
   ],
   "total_paused": 17,
-  "total_active_safe": 10,
-  "total_active_legacy": 2,
-  "confirmation": "All 17 risky crons confirmed PAUSED. No emails sent. No posts created. No content published."
+  "confirmation": "All risky automations remain PAUSED. No re-enablements."
 }

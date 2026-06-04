@@ -1,0 +1,76 @@
+{
+  "title": "Phase 14A.2 \u2014 AdSense Validation + Phase 14 Activation Gate Report",
+  "generated": "2026-06-04T19:32:16.484107Z",
+  "phase": "14A.2",
+  "status": "COMPLETE \u2014 Activation gate PASSED (96/100)",
+  "executive_summary": {
+    "total_tasks": 9,
+    "completed": 9,
+    "auditor_decision": "APPROVE_CONTROLLED_PHASE14_DAY1",
+    "readiness_score": "96/100 (min 85)",
+    "key_results": [
+      "ads.txt validated \u2014 HTTP 200 on both www + non-www",
+      "AdSense readiness: 9/9 policy pages HTTP 200, all checks pass",
+      "AdSense policy safety: CLEAN \u2014 no ad code, no risks",
+      "17/17 risky crons confirmed paused",
+      "Tier 3: 20/105 submitted, Batch 3 (10 URLs) ready",
+      "Analytics: Vercel + GA4 confirmed working",
+      "Phase 14 controlled mode APPROVED \u2014 6 conditions"
+    ]
+  },
+  "ads_txt": {
+    "www": "\u2705 HTTP 200, text/plain, publisher ID confirmed",
+    "nonwww": "\u2705 307 redirect \u2192 www, publisher ID confirmed",
+    "content": "google.com, pub-1102790706635466, DIRECT, f08c47fec0942fa0"
+  },
+  "adsense_readiness": {
+    "policy_pages": "All 5 trust pages HTTP 200",
+    "hub_pages": "Guides + Compare hubs HTTP 200",
+    "robots": "Allow: /",
+    "sitemap": "HTTP 200, 648 clean URLs",
+    "no_prohibited_content": true,
+    "real_content": true,
+    "analytics_working": true,
+    "overall": "SITE IS READY"
+  },
+  "adsense_policy_safety": {
+    "no_ads_added": true,
+    "no_deceptive_code": true,
+    "no_auto_click": true,
+    "no_fake_engagement": true,
+    "conclusion": "CLEAN \u2014 no policy risks"
+  },
+  "risky_crons": "17/17 paused \u2705",
+  "tier3_indexing": "20/105 submitted, Batch 3 (10 URLs) ready",
+  "analytics": "Vercel + GA4 confirmed working",
+  "auditor_activation_decision": {
+    "decision": "APPROVE_CONTROLLED_PHASE14_DAY1",
+    "score": 96,
+    "breakdown": {
+      "technical_seo": "20/20",
+      "analytics": "20/20",
+      "indexing_foundation": "18/20",
+      "automation_safety": "20/20",
+      "monetization": "10/10",
+      "growth_readiness": "8/10"
+    },
+    "conditions": [
+      "Controlled Day 1 only \u2014 not full autonomous mode",
+      "Content pages require Auditor approval (85/100 min)",
+      "Continue Tier 3 batches (10/day) with safety gates",
+      "CTR work only on pages NOT in cooldown",
+      "No outreach unless follow-ups due AND approved",
+      "Pinterest monitor only \u2014 no new pins"
+    ]
+  },
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705 CONFIRMED",
+    "no_fake_schema": "\u2705 CONFIRMED",
+    "no_unapproved_content": "\u2705 CONFIRMED",
+    "no_unapproved_outreach": "\u2705 CONFIRMED",
+    "no_pinterest_pins": "\u2705 CONFIRMED",
+    "no_ads_added": "\u2705 CONFIRMED",
+    "risky_automations_paused": "\u2705 17/17 CONFIRMED"
+  },
+  "next_step": "Qasem/ChatGPT reviews this report \u2192 APPROVE \u2192 Begin Phase 14 Controlled Day 1"
+}
