@@ -1,93 +1,81 @@
 {
-  "title": "Tier 2 Calculator 48h Monitor \u2014 Phase 13C.11",
-  "generated": "2026-06-04T18:39:49.853565Z",
-  "note": "10/12 submitted ~2h ago (Phase 13C.9), 2/12 submitted ~10 min ago (Phase 13C.10). All within 48h cooldown \u2014 do NOT re-request indexing.",
-  "next_check": "2026-06-06T16:39:49.853565Z",
+  "title": "Tier 2 Calculator Monitor \u2014 Phase 14A.1 Safe Mode",
+  "generated": "2026-06-04T19:09:30.848233Z",
+  "status": "All 12 submitted. 10 submitted ~4h ago (13C.9), 2 submitted ~2h ago (13C.10). Within 48h cooldown.",
+  "next_check": "2026-06-06T15:09:30.848233Z",
   "calculators": [
     {
       "slug": "auto-loan",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "refinance-calculator",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "emergency-fund",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "rent-vs-buy",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "roi-calculator",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "pension-calculator",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "credit-card-payoff",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "debt-snowball",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "fire-calculator",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "amortization-calculator",
-      "submitted": "2026-06-04T18:00Z",
-      "hours_ago": 2,
+      "submitted_when": "~4h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 46h"
+      "action": "Wait until next check"
     },
     {
       "slug": "inflation-calculator",
-      "submitted": "2026-06-04T20:35Z",
-      "hours_ago": 0.1,
+      "submitted_when": "~2h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 48h"
+      "action": "Wait until next check"
     },
     {
       "slug": "savings-goal",
-      "submitted": "2026-06-04T20:35Z",
-      "hours_ago": 0.1,
+      "submitted_when": "~2h ago",
       "status": "\ud83d\udd04 awaiting re-crawl",
-      "action": "Wait 48h"
+      "action": "Wait until next check"
     }
   ],
-  "summary": "All 12 submitted, all within cooldown. Expected first crawl results in 24-72h."
+  "do_not_re_request": "All within 7-day cooldown per safe-gsc-ui-indexing-policy.json"
 }

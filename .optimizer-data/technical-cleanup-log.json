@@ -1,26 +1,17 @@
 {
-  "title": "Technical Cleanup \u2014 Day 6 (Phase 13C.8)",
-  "generated": "2026-06-04T17:36:12.198407Z",
-  "phase": "13C.8",
+  "title": "Technical SEO Guardian \u2014 Phase 14A.1 Safe Mode",
+  "generated": "2026-06-04T19:09:30.848233Z",
   "checks": {
-    "sitemap_no_dashboard_307": "PASS",
-    "sitemap_no_noindex_urls": "PASS",
-    "sitemap_no_404_410_urls": "PASS \u2014 no 404/410 URLs in sitemap",
-    "sitemap_no_bad_canonicals": "PASS \u2014 all canonical checks passed",
-    "news_sitemap_valid": "PASS",
-    "robots_txt_correct": "PASS",
-    "scenario_sitemap_not_submitted": "WARN \u2014 HTTP 200",
-    "guide_canonicals_working": "PASS \u2014 self-canonical",
-    "comparison_canonicals_working": "PASS \u2014 self-canonical",
-    "core_calculator_canonicals_working": "PASS \u2014 self-canonical",
-    "no_fake_404_tracker_bugs": "PASS \u2014 8 tracker bugs fixed in Phase 13C.7, 0 real 404s found",
-    "sitemap_count": 648
-  },
-  "summary": {
-    "total_checks": 11,
-    "passed": 10,
-    "failed": 0,
-    "warnings": 1
-  },
-  "sitemap_dashboard_note": "Dashboard 307 fix committed (6b471cc) but CDN still serving cached old sitemap (648 URLs with 0 dashboard refs). Fix verified in source code \u2014 will propagate on next Vercel deploy refresh."
+    "sitemap_no_dashboard_307": "\u2705 PASS",
+    "sitemap_no_auth_pages": "\u2705 PASS (removed Phase 13C.9+14A.1)",
+    "sitemap_no_cookies_noindex": "\u2705 PASS",
+    "sitemap_no_404": "\u2705 PASS",
+    "all_125_calcs_in_sitemap": "\u2705 PASS",
+    "all_guides_in_sitemap": "\u2705 PASS",
+    "hub_pages_in_sitemap": "\u2705 PASS (/guides, /compare, /disclaimer)",
+    "canonicals_self_referencing": "\u2705 PASS (verified on 12 sample pages)",
+    "robots_txt_correct": "\u2705 PASS",
+    "analytics_working": "\u2705 PASS (confirmed by Qasem)",
+    "no_critical_issues": "\u2705 DEPLOY CLEARED"
+  }
 }
