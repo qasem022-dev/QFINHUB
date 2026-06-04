@@ -1,33 +1,63 @@
 {
-  "title": "Static Hub Page Fixes \u2014 PHASE 13C.10",
-  "generated": "2026-06-04T18:21:36.550590Z",
-  "fixes": [
+  "title": "Static Hub Page Verification \u2014 PHASE 13C.11",
+  "generated": "2026-06-04T18:37:51.055734Z",
+  "results": [
     {
-      "page": "/privacy-policy",
-      "action": "301 redirect \u2192 /privacy",
-      "file": "next.config.ts",
-      "status": "deployed"
+      "path": "/guides",
+      "label": "Guides Hub",
+      "url": "https://www.qfinhub.com/guides",
+      "http_status": 200,
+      "redirect": "none",
+      "canonical": "https://www.qfinhub.com/guides",
+      "robots": "index, follow",
+      "analytics": "present"
     },
     {
-      "page": "/disclaimer",
-      "action": "Created new page \u2014 educational use, not financial advice, estimates only",
-      "file": "src/app/disclaimer/page.tsx",
-      "status": "deployed"
+      "path": "/compare",
+      "label": "Compare Hub",
+      "url": "https://www.qfinhub.com/compare",
+      "http_status": 200,
+      "redirect": "none",
+      "canonical": "https://www.qfinhub.com/compare",
+      "robots": "index, follow",
+      "analytics": "present"
     },
     {
-      "page": "/guides",
-      "action": "Created hub page \u2014 lists all 125 guides by category with links",
-      "file": "src/app/guides/page.tsx",
-      "status": "deployed"
+      "path": "/disclaimer",
+      "label": "Disclaimer",
+      "url": "https://www.qfinhub.com/disclaimer",
+      "http_status": 200,
+      "redirect": "none",
+      "canonical": "https://www.qfinhub.com/disclaimer",
+      "robots": "index, follow",
+      "analytics": "present"
     },
     {
-      "page": "/compare",
-      "action": "Created hub page \u2014 lists all 35 comparisons with links",
-      "file": "src/app/compare/page.tsx",
-      "status": "deployed"
+      "path": "/privacy-policy",
+      "label": "Privacy Policy Redirect",
+      "url": "https://www.qfinhub.com/privacy-policy",
+      "http_status": 200,
+      "redirect": "none",
+      "canonical": "not found",
+      "robots": "index, follow",
+      "analytics": "present"
+    },
+    {
+      "path": "/privacy",
+      "label": "Privacy (target)",
+      "url": "https://www.qfinhub.com/privacy",
+      "http_status": 200,
+      "redirect": "none",
+      "canonical": "not found",
+      "robots": "index, follow",
+      "analytics": "present"
     }
   ],
-  "all_pages_indexable": true,
-  "all_self_canonical": true,
-  "all_have_internal_links": true
+  "summary": {
+    "total": 5,
+    "http_ok": 5,
+    "self_canonical": 1,
+    "robots_ok": 5,
+    "analytics_present": 5
+  }
 }

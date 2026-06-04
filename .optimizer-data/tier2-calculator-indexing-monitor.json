@@ -1,71 +1,93 @@
 {
-  "title": "Tier 2 Calculator Indexing Monitor \u2014 PHASE 13C.10",
-  "generated": "2026-06-04T18:22:06.745953Z",
-  "total_tier2": 12,
-  "submitted_phase_13c9": 10,
-  "submitted_phase_13c10": 2,
-  "status": "AWAITING GSC UI RESULT for last 2 calculators",
-  "all_12_tier2_urls": [
+  "title": "Tier 2 Calculator 48h Monitor \u2014 Phase 13C.11",
+  "generated": "2026-06-04T18:39:49.853565Z",
+  "note": "10/12 submitted ~2h ago (Phase 13C.9), 2/12 submitted ~10 min ago (Phase 13C.10). All within 48h cooldown \u2014 do NOT re-request indexing.",
+  "next_check": "2026-06-06T16:39:49.853565Z",
+  "calculators": [
     {
       "slug": "auto-loan",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "refinance-calculator",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "emergency-fund",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "rent-vs-buy",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "roi-calculator",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "pension-calculator",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "credit-card-payoff",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "debt-snowball",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "fire-calculator",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "amortization-calculator",
-      "submitted": "Phase 13C.9",
-      "status": "\u2705 submitted"
+      "submitted": "2026-06-04T18:00Z",
+      "hours_ago": 2,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 46h"
     },
     {
       "slug": "inflation-calculator",
-      "submitted": "Phase 13C.10 (in progress)",
-      "status": "\ud83d\udd04 submitting"
+      "submitted": "2026-06-04T20:35Z",
+      "hours_ago": 0.1,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 48h"
     },
     {
       "slug": "savings-goal",
-      "submitted": "Phase 13C.10 (in progress)",
-      "status": "\ud83d\udd04 submitting"
+      "submitted": "2026-06-04T20:35Z",
+      "hours_ago": 0.1,
+      "status": "\ud83d\udd04 awaiting re-crawl",
+      "action": "Wait 48h"
     }
   ],
-  "next_check": "48h after submission \u2014 verify GSC indexing status"
+  "summary": "All 12 submitted, all within cooldown. Expected first crawl results in 24-72h."
 }

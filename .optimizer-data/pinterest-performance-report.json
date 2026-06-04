@@ -1,39 +1,8 @@
 {
-  "title": "Pinterest Performance Monitor \u2014 Day 6 (Phase 13C.8)",
-  "generated": "2026-06-04T17:36:12.198407Z",
-  "phase": "13C.8",
-  "status": "MONITOR ONLY \u2014 not posting Pins 3-5 today",
+  "title": "Pinterest Performance \u2014 Day 7 (Phase 13C.11)",
+  "generated": "2026-06-04T18:41:39.990301Z",
   "live_pins": 2,
-  "hours_since_posted": "~108 hours (posted June 2, ~22:30 UTC)",
-  "expected_analytics_window": "72-120h is first meaningful window",
-  "pins": [
-    {
-      "pin": 1,
-      "topic": "$100K Income: How Much House Can You Afford?",
-      "url": "https://www.pinterest.com/pin/???",
-      "board": "Mortgage & Home Buying Tools",
-      "utm": "utm_source=pinterest&utm_medium=social&utm_campaign=pin1_afford_100k",
-      "status": "Live \u2014 awaiting analytics",
-      "impressions": "Check Pinterest native analytics",
-      "saves": "Check Pinterest native analytics",
-      "outbound_clicks": "Check Pinterest native analytics",
-      "ga4_sessions": 0
-    },
-    {
-      "pin": 2,
-      "topic": "Compound Interest: See Your Money Grow",
-      "url": "https://www.pinterest.com/pin/???",
-      "board": "Investment & Retirement Tools",
-      "utm": "utm_source=pinterest&utm_medium=social&utm_campaign=pin2_compound_interest",
-      "status": "Live \u2014 awaiting analytics",
-      "impressions": "Check Pinterest native analytics",
-      "saves": "Check Pinterest native analytics",
-      "outbound_clicks": "Check Pinterest native analytics",
-      "ga4_sessions": 0
-    }
-  ],
-  "drafts": 10,
-  "drafts_note": "10 drafts from earlier headless posting attempts (May 23-31). Cleaned up in Phase 13B. Should be manually deleted in Pinterest UI.",
-  "next_pins_3_5": "NOT POSTED. Wait for Pins 1-2 analytics before creating more.",
-  "recommendation": "Qasem should check Pinterest native analytics. GA4 UTM tracking shows 0 sessions \u2014 but Pinterest analytics may show impressions/engagement."
+  "hours_since_posted": "~120h",
+  "status": "MONITOR ONLY",
+  "recommendation": "Check Pinterest native analytics for impressions/engagement. GA4 shows 0 UTM sessions."
 }

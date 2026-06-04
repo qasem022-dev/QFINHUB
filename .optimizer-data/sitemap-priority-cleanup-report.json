@@ -1,26 +1,18 @@
 {
-  "title": "Sitemap Priority Cleanup \u2014 PHASE 13C.10 Update",
-  "generated": "2026-06-04T18:21:36.550590Z",
-  "changes": {
-    "added_to_sitemap": [
-      "/guides \u2014 new hub page (index,follow, self-canonical)",
-      "/compare \u2014 new hub page (index,follow, self-canonical)",
-      "/disclaimer \u2014 new page (index,follow, self-canonical)"
-    ],
-    "redirected": [
-      "/privacy-policy \u2192 301 to /privacy"
-    ],
-    "removed_previously": [
-      "/auth/login, /auth/signup, /cookies (Phase 13C.9)",
-      "/dashboard, /dashboard/plans, /dashboard/settings (Phase 13C.7)"
-    ]
+  "title": "Sitemap Validation \u2014 Phase 13C.11",
+  "generated": "2026-06-04T18:39:49.853565Z",
+  "sitemap_count": 645,
+  "checks": {
+    "has_guides_hub": "FAIL",
+    "has_compare_hub": "FAIL",
+    "has_disclaimer": "FAIL",
+    "no_auth_pages": "PASS",
+    "no_cookies": "PASS",
+    "no_dashboard": "PASS",
+    "has_all_125_calcs": "PASS",
+    "has_guide_pages": "PASS",
+    "has_comparison_pages": "PASS",
+    "has_decision_pages": "PASS"
   },
-  "expected_sitemap_count": "~648 (original) + 3 new hub pages = ~651",
-  "verify_after_deploy": [
-    "Check /guides HTTP 200 with sitemap inclusion",
-    "Check /compare HTTP 200 with sitemap inclusion",
-    "Check /disclaimer HTTP 200 with sitemap inclusion",
-    "Check /privacy-policy returns 301 redirect",
-    "Check no auth/dashboard/cookie URLs in sitemap"
-  ]
+  "all_pass": false
 }

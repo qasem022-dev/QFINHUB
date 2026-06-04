@@ -76,6 +76,25 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    // New hub pages (PHASE 13C.10, Jun 4)
+    {
+      url: `${BASE_URL}/guides`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/compare`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/disclaimer`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
     // Dashboard URLs REMOVED from sitemap (PHASE 13C.7, Jun 4)
     // Reason: Auth-gated pages return 307 redirect, not public content
     // /dashboard, /dashboard/plans, /dashboard/settings → redirect to /auth/login
