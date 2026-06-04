@@ -1,0 +1,28 @@
+{
+  "title": "AdSense ads.txt Verification Report",
+  "generated": "2026-06-04T19:25:09.477303Z",
+  "publisher_id": "pub-1102790706635466",
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/ads.txt",
+      "http_status": 200,
+      "final_url": "https://www.qfinhub.com/ads.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "body": "google.com, pub-1102790706635466, DIRECT, f08c47fec0942fa0",
+      "publisher_id_found": true,
+      "redirect_chain": "none",
+      "cache_headers": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://qfinhub.com/ads.txt",
+      "http_status": 307,
+      "final_url": "https://www.qfinhub.com/ads.txt",
+      "content_type": "text/plain",
+      "body": "google.com, pub-1102790706635466, DIRECT, f08c47fec0942fa0",
+      "publisher_id_found": true,
+      "redirect_chain": "307 \u2192 https://www.qfinhub.com/ads.txt",
+      "cache_headers": "public, max-age=0, must-revalidate"
+    }
+  ],
+  "overall": "\u2705 ads.txt is working correctly on both www and non-www URLs"
+}
