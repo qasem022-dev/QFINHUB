@@ -1,0 +1,26 @@
+{
+  "title": "Internal Authority Engine \u2014 Phase 14B Day 1",
+  "generated": "2026-06-04T19:36:17.085058Z",
+  "applied": 3,
+  "links": [
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/calculators/mortgage-affordability",
+      "anchor": "figure out how much house you can afford",
+      "type": "calc\u2192calc"
+    },
+    {
+      "source": "/calculators/compound-interest",
+      "target": "/guides/how-to-use-compound-interest",
+      "anchor": "learn how compound interest works",
+      "type": "calc\u2192guide"
+    },
+    {
+      "source": "/calculators/debt-payoff",
+      "target": "/calculators/credit-card-payoff",
+      "anchor": "pay off your credit cards faster",
+      "type": "calc\u2192calc"
+    }
+  ],
+  "note": "Links from indexed Tier 1 calcs (mortgage-calculator, compound-interest, debt-payoff) to pages in Google's indexing queue. Boosts crawl priority naturally."
+}

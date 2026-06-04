@@ -1,95 +1,76 @@
 {
-  "title": "QFINHUB Quality Auditor \u2014 Decision Log \u2014 Safe Mode Day 1",
-  "generated": "2026-06-04T19:09:30.848233Z",
-  "phase": "14A.1 Safe Mode",
+  "title": "QFINHUB Quality Auditor \u2014 Phase 14B Day 1 Decisions",
+  "generated": "2026-06-04T19:36:17.085058Z",
   "decisions": [
     {
-      "id": "AUDIT-001",
-      "action_type": "cron_pause",
-      "target": "Widget Outreach Engine (43438e317a61)",
-      "score": "N/A (administrative)",
+      "id": "AUDIT-D1-001",
+      "type": "tier3_indexing",
+      "target": "Tier 3 Batch 3 (10 calcs)",
       "decision": "APPROVED",
-      "reason": "Outreach must go through Phase 14 Outreach Agent + Auditor approval. No auto-outreach outside quality gate.",
-      "risk": "LOW",
-      "executed": true
+      "score": "PASS (8/8 gates)",
+      "reason": "All safety gates pass",
+      "risk": "LOW"
     },
     {
-      "id": "AUDIT-002",
-      "action_type": "cron_pause",
-      "target": "Newsjacking Bot (d006e3318401)",
-      "score": "N/A (administrative)",
-      "decision": "APPROVED",
-      "reason": "Auto-news content without quality gate violates V2 rules. Must go through new query-driven Content Strategist.",
-      "risk": "LOW",
-      "executed": true
-    },
-    {
-      "id": "AUDIT-003",
-      "action_type": "tier3_indexing",
-      "target": "Tier 3 Batch 2 (10 calculators)",
-      "score": "PASS (8/8 safety gates)",
-      "decision": "APPROVED",
-      "reason": "All 10 URLs: HTTP 200, index/follow, self-canonical, in sitemap, not cleanup-lag, not recently requested, not noindex/404/redirect. Safe GSC UI submission.",
-      "risk": "LOW",
-      "executed": true,
-      "urls": "To be filled from GSC UI result"
-    },
-    {
-      "id": "AUDIT-004",
-      "action_type": "content_new",
-      "target": "No opportunities submitted",
+      "id": "AUDIT-D1-002",
+      "type": "content_new",
+      "target": "Query opp #1-7 (7 pages)",
+      "decision": "HOLD_FOR_DATA",
       "score": "N/A",
-      "decision": "HOLD_FOR_DATA",
-      "reason": "Safe Mode Day 1 \u2014 new content not allowed unless explicitly approved. No opportunities met 85/100 threshold.",
-      "risk": "N/A",
-      "executed": false
+      "reason": "All 7 pages in 48h cooldown from Phase 13C.7. Wait for re-crawl data before further edits.",
+      "risk": "LOW"
     },
     {
-      "id": "AUDIT-005",
-      "action_type": "ctr_extraction",
-      "target": "Zero-click pages (5 candidates)",
-      "score": "HOLD",
+      "id": "AUDIT-D1-003",
+      "type": "content_new",
+      "target": "Query opp #8-10 (Tier 1 calcs)",
       "decision": "HOLD_FOR_DATA",
-      "reason": "7 fixed pages submitted Phase 13C.7 are still in 48h cooldown. CTR edits before re-crawl wastes effort. Wait for GSC re-crawl data.",
-      "risk": "LOW",
-      "executed": false
+      "score": "N/A",
+      "reason": "Tier 1 calcs already indexed. No GSC impression data available. Wait for data.",
+      "risk": "LOW"
     },
     {
-      "id": "AUDIT-006",
-      "action_type": "internal_links",
-      "target": "3 contextual links from indexed pages",
+      "id": "AUDIT-D1-004",
+      "type": "ctr_extraction",
+      "target": "10 zero-click targets",
+      "decision": "HOLD_FOR_DATA",
+      "score": "N/A",
+      "reason": "All zero-click pages were edited in last 48h (Phase 13C.7). Do not re-edit during cooldown.",
+      "risk": "LOW"
+    },
+    {
+      "id": "AUDIT-D1-005",
+      "type": "internal_links",
+      "target": "10 contextual links from indexed pages",
+      "decision": "APPROVED",
       "score": "85/100",
-      "decision": "APPROVED",
-      "reason": "Links from indexed Tier 1 calcs to important pages. Natural anchor text. No spam blocks.",
-      "risk": "LOW",
-      "executed": true
+      "reason": "Links from indexed Tier 1 calcs to important pages. Natural anchors, no spam.",
+      "risk": "LOW"
     },
     {
-      "id": "AUDIT-007",
-      "action_type": "outreach",
+      "id": "AUDIT-D1-006",
+      "type": "outreach",
       "target": "Follow-up check",
-      "score": "N/A",
       "decision": "HOLD_FOR_DATA",
-      "reason": "Next follow-ups due Jun 7. No follow-ups due today.",
-      "risk": "N/A",
-      "executed": false
+      "score": "N/A",
+      "reason": "Next follow-ups due Jun 7. None due today.",
+      "risk": "N/A"
     },
     {
-      "id": "AUDIT-008",
-      "action_type": "pinterest",
-      "target": "2 test pins monitor",
+      "id": "AUDIT-D1-007",
+      "type": "pinterest",
+      "target": "Monitor only",
+      "decision": "APPROVED",
       "score": "N/A",
-      "decision": "APPROVED (monitor only)",
-      "reason": "Monitor only. Do not post Pins 3-5. 2 test pins ~120h live \u2014 check Pinterest analytics.",
-      "risk": "LOW",
-      "executed": true
+      "reason": "Monitor 2 test pins. Do not post Pins 3-5.",
+      "risk": "LOW"
     }
   ],
   "summary": {
-    "total": 8,
-    "approved": 5,
+    "total": 7,
+    "approved": 3,
     "rejected": 0,
     "needs_revision": 0,
-    "hold_for_data": 3
+    "hold_for_data": 4
   }
 }

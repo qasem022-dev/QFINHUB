@@ -1,15 +1,12 @@
 {
-  "title": "Click Extraction Engine \u2014 PHASE 13C.9",
-  "generated": "2026-06-04T17:59:24.800672Z",
-  "applied_today": 0,
-  "ctr_fixes": 0,
-  "position_boosts": 0,
-  "internal_links": 0,
-  "reason": "Day focused on indexing completion, not CTR optimization. 7 pages from Phase 13C.7 still in 48h cooldown. 10 Tier 2 calculators just submitted for indexing. CTR work deferred until pages are indexed.",
-  "next_ctr_batch": "After Tier 2 calcs are indexed (48h+) and 7 fixed pages are re-crawled",
+  "title": "Click Extraction Engine \u2014 Phase 14B Day 1",
+  "generated": "2026-06-04T19:36:17.085058Z",
+  "applied": 0,
+  "held": 10,
+  "reason": "All zero-click targets in 48h cooldown. Auditor correctly held all CTR actions.",
   "daily_limits_remaining": {
-    "ctr_fixes": 5,
-    "position_boosts": 3,
-    "internal_links": 5
+    "ctr_fixes": 10,
+    "position_boosts": 10,
+    "internal_links": 17
   }
 }

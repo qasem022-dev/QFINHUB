@@ -1,26 +1,11 @@
 {
-  "title": "AdSense Approval Readiness Audit \u2014 Phase 14A.2",
-  "generated": "2026-06-04T19:30:21.891275Z",
-  "publisher_id": "pub-1102790706635466",
-  "pages": {
-    "Privacy": "HTTP 200",
-    "Terms": "HTTP 200",
-    "Disclaimer": "HTTP 200",
-    "About": "HTTP 200",
-    "Contact": "HTTP 200",
-    "Homepage": "HTTP 200",
-    "Guides Hub": "HTTP 200",
-    "Compare Hub": "HTTP 200",
-    "Calculators": "HTTP 200"
-  },
-  "trust_pages": "All 5 trust pages (privacy, terms, disclaimer, about, contact) HTTP 200",
-  "hubs": "Guides + Compare hubs HTTP 200",
-  "robots": "Allow: / \u2014 Googlebot can crawl",
-  "sitemap": "HTTP 200",
-  "news_sitemap": "HTTP 200",
-  "ads_txt": "\u2705 HTTP 200, publisher ID confirmed",
-  "analytics": "\u2705 Vercel + GA4 working",
-  "real_content": "\u2705 Calculator pages have 154709 bytes",
-  "no_prohibited": "\u2705 Clean",
-  "overall": "SITE IS READY for AdSense approval"
+  "title": "AdSense Approval Readiness \u2014 Phase 14B Day 1",
+  "generated": "2026-06-04T19:36:17.085058Z",
+  "ads_txt_live": true,
+  "analytics_working": true,
+  "ga4_working": true,
+  "policy_pages_live": true,
+  "no_ad_code_policy_risk": true,
+  "no_fake_traffic": true,
+  "status": "SAFE \u2014 all checks pass"
 }

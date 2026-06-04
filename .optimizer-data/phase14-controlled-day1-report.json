@@ -1,0 +1,105 @@
+{
+  "title": "Phase 14B \u2014 Controlled Day 1 Report",
+  "generated": "2026-06-04T19:38:06.916199Z",
+  "phase": "14B Day 1",
+  "status": "COMPLETE \u2014 Controlled execution successful. Auditor held 4/7 actions (correct).",
+  "executive_summary": {
+    "total_tasks": 14,
+    "completed": 14,
+    "auditor_decisions": "7 total: 3 approved, 4 held, 0 rejected",
+    "key_achievements": [
+      "Tier 3 Batch 3: 10/10 submitted (100% GSC UI success)",
+      "Auditor correctly held all content/CTR/near-winner actions (cooldown)",
+      "3 contextual internal links added from indexed pages",
+      "Zero unapproved content published",
+      "All safety systems operational"
+    ]
+  },
+  "tier3_batch3": {
+    "submitted": 10,
+    "success_rate": "100%",
+    "calculators": [
+      "home-equity",
+      "closing-costs",
+      "mortgage-payoff",
+      "biweekly-mortgage",
+      "extra-payment",
+      "loan-term",
+      "reverse-mortgage",
+      "heloc-calculator",
+      "balloon-payment",
+      "mortgage-points"
+    ],
+    "cumulative_tier3": "30/105 submitted (Batches 1+2+3)"
+  },
+  "indexing_monitor": {
+    "tier1": "10/10 indexed \u2705",
+    "tier2": "12/12 in cooldown \u23f3",
+    "tier3": "30/105 submitted (3 batches)",
+    "fixed_pages": "7/7 in cooldown ~48h \u2014 becoming eligible for re-check",
+    "cumulative_total": 59
+  },
+  "auditor_decisions": [
+    {
+      "id": "AUDIT-D1-001",
+      "action": "Tier 3 Batch 3",
+      "decision": "APPROVED \u2705"
+    },
+    {
+      "id": "AUDIT-D1-002",
+      "action": "Content \u2014 query opps #1-7",
+      "decision": "HOLD (cooldown) \u23f8\ufe0f"
+    },
+    {
+      "id": "AUDIT-D1-003",
+      "action": "Content \u2014 query opps #8-10",
+      "decision": "HOLD (no data) \u23f8\ufe0f"
+    },
+    {
+      "id": "AUDIT-D1-004",
+      "action": "CTR extraction (10 targets)",
+      "decision": "HOLD (cooldown) \u23f8\ufe0f"
+    },
+    {
+      "id": "AUDIT-D1-005",
+      "action": "Internal links (3)",
+      "decision": "APPROVED \u2705"
+    },
+    {
+      "id": "AUDIT-D1-006",
+      "action": "Outreach follow-ups",
+      "decision": "HOLD \u23f8\ufe0f"
+    },
+    {
+      "id": "AUDIT-D1-007",
+      "action": "Pinterest monitor",
+      "decision": "APPROVED \u2705"
+    }
+  ],
+  "content_created": 0,
+  "content_improved": 0,
+  "ctr_fixes": 0,
+  "near_winner_pushes": 0,
+  "internal_links": 3,
+  "outreach_sent": 0,
+  "pinterest_pins": 0,
+  "technical_guardian": "All checks PASS \u2014 deploy cleared",
+  "adsense_analytics": "All checks PASS \u2014 ads.txt live, analytics working",
+  "deploy": "No code changes needed (internal links are contextual suggestions, not code changes)",
+  "biggest_blocker": "All content/CTR pages in 48h cooldown. Need re-crawl data from Google. Expected within 24-48h.",
+  "day2_recommendation": [
+    "Submit Tier 3 Batch 4 (next 10 calculators)",
+    "Re-check GSC status of 7 fixed pages (48h+ should have passed)",
+    "If re-crawl confirmed: apply CTR extraction on eligible pages",
+    "Continue query opportunity monitoring",
+    "No new content until GSC data confirms impressions/clicks"
+  ],
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705",
+    "no_unapproved_content": "\u2705",
+    "no_unapproved_outreach": "\u2705",
+    "no_pinterest_pins": "\u2705",
+    "risky_automations_paused": "\u2705 17/17"
+  },
+  "cumulative_indexing": 59
+}

@@ -1,8 +1,9 @@
 {
-  "title": "Pinterest Performance \u2014 Day 7 (Phase 13C.11)",
-  "generated": "2026-06-04T18:41:39.990301Z",
+  "title": "Pinterest Performance \u2014 Phase 14B Day 1",
+  "generated": "2026-06-04T19:36:17.085058Z",
   "live_pins": 2,
-  "hours_since_posted": "~120h",
+  "hours_since_posted": "~124h",
   "status": "MONITOR ONLY",
-  "recommendation": "Check Pinterest native analytics for impressions/engagement. GA4 shows 0 UTM sessions."
+  "new_pins": 0,
+  "recommendation": "Check Pinterest native analytics. Do not post Pins 3-5."
 }
