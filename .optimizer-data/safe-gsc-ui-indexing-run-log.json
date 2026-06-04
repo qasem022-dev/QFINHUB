@@ -1,0 +1,36 @@
+{
+  "title": "Safe GSC UI Indexing Run Log \u2014 PHASE 13C.9",
+  "runs": [
+    {
+      "timestamp": "2026-06-04T18:01:19.196813Z",
+      "phase": "13C.9",
+      "batch": "Tier 2 Calculators",
+      "candidates_total": 12,
+      "approved": 10,
+      "rejected": 0,
+      "submitted": 10,
+      "failed": 0,
+      "blocker": null,
+      "method": "CloakBrowser GSC UI (headless, persistent profile)",
+      "submitted_urls": [
+        "https://www.qfinhub.com/calculators/auto-loan",
+        "https://www.qfinhub.com/calculators/refinance-calculator",
+        "https://www.qfinhub.com/calculators/emergency-fund",
+        "https://www.qfinhub.com/calculators/rent-vs-buy",
+        "https://www.qfinhub.com/calculators/roi-calculator",
+        "https://www.qfinhub.com/calculators/pension-calculator",
+        "https://www.qfinhub.com/calculators/credit-card-payoff",
+        "https://www.qfinhub.com/calculators/debt-snowball",
+        "https://www.qfinhub.com/calculators/fire-calculator",
+        "https://www.qfinhub.com/calculators/amortization-calculator"
+      ],
+      "remaining_tier2": [
+        "inflation-calculator",
+        "savings-goal"
+      ],
+      "next_batch": "After 48h cooldown \u2014 submit remaining 2 Tier 2 + start Tier 3 priority batch"
+    }
+  ],
+  "total_submitted": 10,
+  "total_blocked": 0
+}

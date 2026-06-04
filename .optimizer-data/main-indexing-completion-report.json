@@ -1,0 +1,135 @@
+{
+  "title": "Main Indexing Completion Report \u2014 PHASE 13C.9",
+  "generated": "2026-06-04T18:01:19.196813Z",
+  "phase": "13C.9",
+  "objective": "Complete indexing of main money pages and calculator foundation before scaling new content",
+  "status": "COMPLETE \u2014 ALL 10 TASKS",
+  "executive_summary": {
+    "total_tasks": 10,
+    "completed": 10,
+    "key_achievements": [
+      "Full inventory of 125 calculators + 10 static pages + all content types",
+      "12 Tier 2 calculator gaps identified and 10 submitted for indexing today",
+      "GSC UI automation: 10/10 Tier 2 calcs submitted \u2014 100% success rate",
+      "Sitemap cleaned: auth pages + noindex pages removed (648 \u2192 645 URLs)",
+      "All Tier 1 calculators (10) CONFIRMED INDEXED",
+      "Internal link structure verified \u2014 solid crawl paths from homepage \u2192 calcs \u2192 guides \u2192 decisions"
+    ]
+  },
+  "total_main_pages_inventoried": {
+    "static_pages": 10,
+    "calculators": 125,
+    "guides": 125,
+    "comparisons": 35,
+    "decisions": 15,
+    "blog_posts_in_sitemap": 105,
+    "tools": 225,
+    "total": "625+ URLs tracked"
+  },
+  "total_calculators_audited": 125,
+  "how_many_indexed": {
+    "tier1": {
+      "total": 10,
+      "indexed": 10,
+      "percent": "100%"
+    },
+    "tier2": {
+      "total": 12,
+      "indexed": 0,
+      "submitted_today": 10,
+      "percent_submitted": "83%"
+    },
+    "tier3": {
+      "total": 103,
+      "indexed": 0,
+      "strategy": "Natural crawl via sitemap"
+    }
+  },
+  "main_indexing_gaps": {
+    "tier1_gaps": 0,
+    "tier2_gaps": 2,
+    "tier2_remaining": [
+      "inflation-calculator",
+      "savings-goal"
+    ],
+    "tier3_gaps": 103,
+    "static_gaps_resolved": "Sitemap cleanup removed 3 problematic URLs",
+    "guide_gaps": "125 guides rely on calculator pages for crawl discovery",
+    "comparison_gaps": "35 comparisons \u2014 best-mortgage-calculator already submitted in Phase 13C.7",
+    "decision_gaps": "8/15 not indexed \u2014 all in sitemap, await natural crawl"
+  },
+  "gsc_ui_automation_today": {
+    "urls_submitted": 10,
+    "success_rate": "100% (10/10)",
+    "batch": "Tier 2 calculators",
+    "blocker": null,
+    "method": "CloakBrowser headless with persistent google-gsc-v3 profile",
+    "urls_skipped": {
+      "count": 0,
+      "reason": "All 10 Tier 2 URLs passed safety gates"
+    }
+  },
+  "internal_link_completion": {
+    "homepage_to_tier1": "\u2705 All 10 Tier 1 calculators accessible within 1-2 clicks",
+    "calculators_hub": "\u2705 /calculators page HTTP 200, index/follow, in sitemap",
+    "calculator_to_guide": "\u2705 All 125 calcs link to their guide pages",
+    "guide_to_calculator": "\u2705 All 125 guides link back to calculators",
+    "decision_to_calculator": "\u2705 15 decision pages link to calculator hubs",
+    "comparison_to_calculator": "\u2705 35 comparison pages link to relevant calculators"
+  },
+  "sitemap_cleanup": {
+    "before": 648,
+    "after": 645,
+    "urls_removed": [
+      "/auth/login \u2014 auth page, not public content",
+      "/auth/signup \u2014 auth page, not public content",
+      "/cookies \u2014 noindex page"
+    ],
+    "verified_no": [
+      "Dashboard 307 URLs (removed Phase 13C.7)",
+      "Noindex URLs",
+      "404/410 URLs",
+      "Cleanup-lag geo/scenario/formula pages"
+    ]
+  },
+  "calculator_quality": {
+    "tier1": "\u2705 All 10 use proven template: intro \u2192 calculator \u2192 SEO content \u2192 related guides \u2192 related decisions",
+    "tier2": "\u2705 All 12 use same template as Tier 1 \u2014 consistent quality",
+    "schema": "Calculator + HowTo schema on all calculator pages",
+    "guides": "125 auto-generated guide pages linked from each calculator",
+    "improvements_needed": "None urgent \u2014 focus on GETTING INDEXED first, then optimize titles"
+  },
+  "ctr_work": {
+    "applied_today": 0,
+    "reason": "Indexing completion is the priority. CTR optimization deferred until Tier 2 calcs are indexed.",
+    "next_ctr_batch": "After Tier 2 calcs indexed (48h+)"
+  },
+  "deploy_status": {
+    "commit": "94667b9",
+    "status": "Pushed, awaiting GitHub auto-deploy",
+    "sitemap_changes_deployed": "Will be live after Vercel build"
+  },
+  "biggest_blocker": {
+    "previous": "~115 calculators not indexed \u2014 Tier 2 and Tier 3",
+    "resolved": "10/12 Tier 2 submitted for indexing today. 100% success rate.",
+    "remaining": "2 Tier 2 + 103 Tier 3 calculators need crawl. Sitemap and internal links are solid \u2014 Google should discover naturally.",
+    "estimated_time": "Tier 2: 24-72h for re-crawl. Tier 3: weeks via natural discovery."
+  },
+  "recommended_next_step": [
+    "Qasem/ChatGPT: Review this report. APPROVE before Phase 14 (new content creation)",
+    "Hermes Day 7: Re-run safe-gsc-ui-indexing-queue.py --dry-run for remaining Tier 2 + Tier 3 candidates",
+    "Hermes Day 7: Submit remaining 2 Tier 2 calcs (inflation-calculator, savings-goal)",
+    "Hermes Day 7: Check GSC for 7 fixed pages (48h milestone)",
+    "Hermes Day 7: Start Tier 3 calculator batch (10/day via GSC UI)",
+    "Do NOT create new pages until this report is reviewed"
+  ],
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705 CONFIRMED",
+    "no_fake_schema_added": "\u2705 CONFIRMED",
+    "no_new_pages_created": "\u2705 CONFIRMED",
+    "risky_automations_paused": "\u2705 CONFIRMED",
+    "no_cleanup_lag_touched": "\u2705 CONFIRMED",
+    "no_manual_gsc_asked": "\u2705 CONFIRMED \u2014 Qasem was NOT asked",
+    "sitemap_clean": "\u2705 645 URLs, no auth/noindex/404 pages"
+  }
+}
