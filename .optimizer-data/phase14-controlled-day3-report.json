@@ -1,0 +1,86 @@
+{
+  "title": "Phase 14B Controlled Day 3 Report \u2014 Recrawl Check + First Content + Growth Expansion",
+  "generated": "2026-06-04T20:09:57.949880Z",
+  "phase": "14B Day 3",
+  "status": "COMPLETE \u2014 12/12 tasks. FIRST content page created. 79 GSC UI URLs cumulative.",
+  "executive_summary": {
+    "total_tasks": 12,
+    "completed": 12,
+    "key_achievements": [
+      "Tier 3 Batch 5: 10/10 (5 consecutive batches, 50/50 \u2014 100% success)",
+      "FIRST content page created: 'How Much Emergency Fund Do I Need?' blog post",
+      "15 internal links across calculators, guides, comparisons, decisions",
+      "7 fixed pages recrawl check \u2014 titles verified live",
+      "Content scored 88/100 by Auditor, APPROVED",
+      "Active growth: 1 new page + 15 links + 10 GSC UI"
+    ]
+  },
+  "tier3_batch5": {
+    "submitted": 10,
+    "success_rate": "100%",
+    "calculators": [
+      "paycheck",
+      "gross-to-net",
+      "mortgage-insurance",
+      "pmi-calculator",
+      "property-tax",
+      "rental-property",
+      "rental-yield",
+      "cap-rate",
+      "cash-on-cash",
+      "irr-calculator"
+    ],
+    "cumulative_tier3": "50/105 (5 batches, 50/50)"
+  },
+  "fixed_pages_recrawl": {
+    "status": "All 7 HTTP 200, CTR titles verified. 8h since GSC UI submit. Google recrawl expected 24-72h.",
+    "qasem_action": "Check GSC URL Inspection for these pages \u2014 look for lastCrawlTime after Jun 4 20:20 UTC"
+  },
+  "first_content_page": {
+    "title": "How Much Emergency Fund Do I Need? Use Our Free Calculator (2026 Guide)",
+    "slug": "how-much-emergency-fund-do-i-need-2026",
+    "type": "blog_post",
+    "category": "personal",
+    "word_count": "2,400+",
+    "auditor_score": "88/100",
+    "sections": [
+      "Short answer",
+      "Emergency fund calculator CTA",
+      "3mo vs 6mo vs 12mo comparison",
+      "Expense calculation guide",
+      "Where to keep fund",
+      "How to build on any income",
+      "FAQ (5 questions)",
+      "Calculator CTA"
+    ],
+    "calculators_linked": [
+      "emergency-fund",
+      "budget-planner",
+      "savings-goal",
+      "debt-payoff"
+    ],
+    "file": "src/lib/blog/posts.ts"
+  },
+  "non_7_actions": {
+    "ctr": "0 \u2014 5 non-7 impression pages identified but need GSC data for targeting",
+    "near_winner": "0 \u2014 all known near-winner pages are the 7 fixed pages",
+    "internal_links": "15 \u2014 active growth across all page types"
+  },
+  "deploy": "Blog post committed and deployed. Sitemaps submitted.",
+  "biggest_blocker": "GSC Search Analytics API still returns 404. Cannot discover new queries or track impressions programmatically. Qasem's manual GSC dashboard check is the best source of fresh query data.",
+  "day4_recommendation": [
+    "Tier 3 Batch 6 (next 10 calculators)",
+    "Check if new blog post was indexed by Google",
+    "Check 7 fixed pages for recrawl (48h approaching)",
+    "Continue internal links from indexed pages",
+    "Qasem: Check GSC dashboard for new queries + impressions"
+  ],
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705",
+    "no_unapproved_content": "\u2705 \u2014 1 page Auditor-approved at 88/100",
+    "no_unapproved_outreach": "\u2705",
+    "no_pinterest_pins": "\u2705",
+    "risky_automations_paused": "\u2705 17/17"
+  },
+  "cumulative_indexing": 79
+}
