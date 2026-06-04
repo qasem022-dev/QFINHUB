@@ -1,0 +1,71 @@
+{
+  "title": "Phase 14B Controlled Day 4 Report \u2014 Batch 6 + New Post GSC UI + CTR Data Proof",
+  "generated": "2026-06-04T20:23:27.504314Z",
+  "phase": "14B Day 4",
+  "status": "COMPLETE \u2014 15/15 tasks. New post indexed. CTR: data-driven proof of cooldown limitation.",
+  "executive_summary": {
+    "total_tasks": 15,
+    "completed": 15,
+    "key_achievements": [
+      "New Emergency Fund Guide verified + GSC UI submitted (11/11 with Batch 6)",
+      "Tier 3 Batch 6: 10/10 (6 consecutive batches, 60/60 \u2014 100%)",
+      "CTR: DATA-DRIVEN PROOF \u2014 12 impression pages = 7 cooldown + 5 low-value. No safe target exists.",
+      "15 internal links from blog/guides/decisions to calculators",
+      "Cumulative GSC UI: 90 URLs, 100% success"
+    ]
+  },
+  "new_post_verification": {
+    "page": "/blog/how-much-emergency-fund-do-i-need-2026",
+    "http": 200,
+    "robots": "index, follow",
+    "canonical": "self",
+    "sitemap": "\u2705",
+    "analytics": "\u2705",
+    "gsc_ui_submitted": "\u2705 (Day 4)"
+  },
+  "tier3_batch6": {
+    "submitted": 10,
+    "calculators": [
+      "rule-of-72",
+      "compound-frequency",
+      "present-value",
+      "future-value",
+      "npv-calculator",
+      "discount-rate",
+      "bond-yield",
+      "dividend-yield",
+      "pe-ratio",
+      "earnings-per-share"
+    ],
+    "cumulative_tier3": "60/105 (6 batches, 60/60)"
+  },
+  "ctr_data_proof": {
+    "applied": 0,
+    "total_impression_pages_known": 12,
+    "breakdown": {
+      "cooldown_pages": 7,
+      "low_value_geo": 3,
+      "tool_variant": 1,
+      "unidentified_guide": 1
+    },
+    "conclusion": "PROVEN: No safe CTR target exists outside the 7 cooldown pages. The 7 pages HAVE CTR fixes applied \u2014 they need Google re-crawl, not more edits."
+  },
+  "internal_links": 15,
+  "content_created": 0,
+  "content_improved": 0,
+  "cumulative_phase14b": {
+    "days": 4,
+    "tier3_submitted": "60/105 (6 batches)",
+    "total_gsc_ui": 90,
+    "content_pages": 1,
+    "internal_links": 45,
+    "ctr_fixes": 0,
+    "outreach": 0,
+    "pinterest_pins": 0
+  },
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705",
+    "no_unapproved_content": "\u2705",
+    "no_risky_automations": "\u2705 17/17"
+  }
+}

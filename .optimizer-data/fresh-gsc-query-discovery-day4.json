@@ -1,0 +1,19 @@
+{
+  "title": "Fresh GSC Query Discovery \u2014 Day 4",
+  "generated": "2026-06-04T20:21:36.832436Z",
+  "limitation": "GSC Search Analytics API still returns 404. Cannot pull fresh query data.",
+  "known_data": {
+    "pages_with_impressions": 12,
+    "pages_in_cooldown": 7,
+    "pages_outside_cooldown_with_impressions": 5,
+    "outside_cooldown_pages": [
+      "geo/loan/nashville-tn (8 imp, pos 10)",
+      "geo/loan/reno-nv (2 imp, pos 7)",
+      "geo/tax/philadelphia-pa",
+      "tools/afford-100k-40k-6-5pct",
+      "1 guide page"
+    ],
+    "tier1_calcs": "10 indexed \u2014 impressions unknown (API down)",
+    "new_blog_post": "Emergency Fund Guide \u2014 just published, no data yet"
+  }
+}

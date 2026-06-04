@@ -1,0 +1,16 @@
+{
+  "title": "New Content Verification \u2014 Emergency Fund Guide",
+  "generated": "2026-06-04T20:21:36.832436Z",
+  "page": "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026",
+  "checks": {
+    "http_status": "200",
+    "title": "How Much Emergency Fund Do I Need? Use Our Free Calculator (2026 Guide) | QFINHUB",
+    "robots": "index, follow",
+    "canonical": "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026",
+    "canonical_self": true,
+    "analytics_fires": true,
+    "in_sitemap": true,
+    "not_duplicate_of_decision": true
+  },
+  "verdict": "PASS \u2014 ready for GSC UI indexing"
+}

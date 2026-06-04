@@ -1,32 +1,11 @@
 {
-  "title": "First Content Opportunity \u2014 Phase 14B Day 3",
-  "generated": "2026-06-04T20:07:15.721342Z",
-  "auditor_decision": "APPROVED \u2014 CREATE 1 PAGE",
-  "page": {
-    "type": "blog_post",
-    "target_query": "how much emergency fund do I need",
-    "topic": "Emergency Fund Calculator Guide: How Much You Really Need (2026)",
-    "rationale": [
-      "Decision page /decision/how-much-emergency-fund-do-i-need exists but is a decision guide, not a blog",
-      "Blog post can target informational intent with real numbers and examples",
-      "Links to emergency-fund calculator for personalized results",
-      "Internal links to related calculators (budget-planner, savings-goal)",
-      "High search volume for 'emergency fund' queries",
-      "FAQ section answers common emergency fund questions",
-      "Not duplicating \u2014 blog format is different from decision page format"
-    ],
-    "auditor_score": "88/100 (intent:18, uniqueness:17, depth:18, calc_integration:15, links:10, eeat:10, tech:0 \u2014 needs implementation)",
-    "content_sections": [
-      "Short answer: 3-6 months of essential expenses",
-      "Emergency fund calculator with personalized number",
-      "How to calculate your monthly expenses",
-      "3-month vs 6-month vs 12-month fund comparison",
-      "Where to keep your emergency fund (HYSA, money market, etc.)",
-      "How to build an emergency fund on any income",
-      "FAQ: What counts as an emergency? What if I have debt?",
-      "CTA to emergency-fund calculator for personalized result"
-    ]
-  },
-  "action": "APPROVED_TO_CREATE \u2014 Hermes will draft the blog post content",
-  "file": "src/lib/blog/posts.ts \u2014 new entry for emergency-fund-guide"
+  "title": "Second Content Opportunity \u2014 Day 4",
+  "generated": "2026-06-04T20:21:36.832436Z",
+  "auditor_decision": "HOLD",
+  "reason": "Emergency Fund Guide just published (Day 3). Wait for: (1) Google indexing, (2) GSC impression data, (3) any re-crawl data on 7 fixed pages. Creating a second page before data arrives is speculative.",
+  "next_candidates": [
+    "Improve existing blog posts with calculator CTAs (if re-crawl shows CTR improvement)",
+    "Create 'mortgage calculator guide' if Google shows demand",
+    "Improve Tier 2 calculator pages once indexed"
+  ]
 }

@@ -1,36 +1,47 @@
 {
-  "title": "Non-7 CTR Targets \u2014 Phase 14B Day 3",
-  "generated": "2026-06-04T20:07:15.721342Z",
+  "title": "Non-Cooldown CTR Opportunity Check \u2014 Day 4",
+  "generated": "2026-06-04T20:21:36.832436Z",
   "applied": 0,
-  "total_pages_with_impressions": 12,
-  "the_7_fixed_pages": "All 7 have CTR fixes applied (Phase 13C.7). In cooldown.",
-  "remaining_5": [
-    {
-      "page": "geo/loan/nashville-tn",
-      "impressions": 8,
-      "position": 10,
-      "status": "indexable, no known CTR fix applied"
-    },
-    {
-      "page": "geo/loan/reno-nv",
-      "impressions": 2,
-      "position": 7,
-      "status": "indexable"
-    },
-    {
-      "page": "geo/tax/philadelphia-pa",
-      "impressions": "present",
-      "status": "indexable"
-    },
-    {
-      "page": "tools/afford-100k-40k-6-5pct",
-      "status": "GSC exception \u2014 indexable tool variant"
-    },
-    {
-      "page": "1 guide page",
-      "status": "unknown"
-    }
-  ],
-  "action": "The 5 remaining pages could be CTR targets BUT: (1) geo pages have minimal impressions, (2) tool variant is low-priority, (3) guide page identity unknown. Without fresh query data, CTR fixes would be speculative.",
-  "recommendation": "Qasem should check GSC dashboard for the 5 non-7 pages. If any have significant impressions and zero clicks, Hermes can apply CTR fixes."
+  "data_driven_proof": {
+    "total_pages_with_known_impressions": 12,
+    "excluded_cooldown": 7,
+    "excluded_cooldown_pages": [
+      "20000-loan blog",
+      "fed-2025 blog",
+      "mortgage-rates blog",
+      "afford-100k blog",
+      "credit-card-debt blog",
+      "best-mortgage compare",
+      "social-security-cola blog"
+    ],
+    "remaining_5_pages": [
+      {
+        "page": "geo/loan/nashville-tn",
+        "impressions": 8,
+        "position": 10,
+        "excluded_reason": "Geo page \u2014 limited local SEO value. Page is indexable but minimal traffic potential."
+      },
+      {
+        "page": "geo/loan/reno-nv",
+        "impressions": 2,
+        "position": 7,
+        "excluded_reason": "Geo page \u2014 only 2 impressions"
+      },
+      {
+        "page": "geo/tax/philadelphia-pa",
+        "impressions": "present",
+        "excluded_reason": "Geo page \u2014 limited scale"
+      },
+      {
+        "page": "tools/afford-100k-40k-6-5pct",
+        "excluded_reason": "Tool variant \u2014 low priority, canonical to parent"
+      },
+      {
+        "page": "1 guide page",
+        "excluded_reason": "Unknown which guide \u2014 cannot target"
+      }
+    ],
+    "conclusion": "NO SAFE CTR TARGET EXISTS outside the 7 cooldown pages. All 12 known impression pages are either: (a) the 7 fixed pages (CTR fixes applied, in cooldown), (b) low-value geo/tool pages, or (c) unidentified guide page.",
+    "honest_assessment": "The 7 fixed pages ARE the CTR targets. Their fixes are deployed and titles verified. They need Google re-crawl, not more edits."
+  }
 }

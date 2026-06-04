@@ -1,98 +1,97 @@
 {
-  "title": "Internal Authority Engine \u2014 Phase 14B Day 3",
-  "generated": "2026-06-04T20:07:15.721342Z",
+  "title": "Internal Authority Engine \u2014 Day 4",
+  "generated": "2026-06-04T20:21:36.832436Z",
   "applied": 15,
   "links": [
     {
-      "source": "/calculators/mortgage-calculator",
-      "target": "/calculators/refinance-calculator",
-      "anchor": "check if refinancing could save you money",
-      "type": "T1\u2192T2"
+      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
+      "target": "/calculators/emergency-fund",
+      "anchor": "calculate your exact emergency fund number",
+      "type": "blog\u2192calc"
     },
     {
-      "source": "/calculators/compound-interest",
+      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
+      "target": "/calculators/budget-planner",
+      "anchor": "build a 50/30/20 budget to find savings",
+      "type": "blog\u2192calc"
+    },
+    {
+      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
       "target": "/calculators/savings-goal",
-      "anchor": "set a savings goal and watch compound interest work",
-      "type": "T1\u2192T2"
+      "anchor": "set a savings goal and track your progress",
+      "type": "blog\u2192calc"
     },
     {
-      "source": "/calculators/retirement-planning",
-      "target": "/calculators/pension-calculator",
-      "anchor": "calculate your pension alongside your retirement savings",
-      "type": "T1\u2192T2"
+      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
+      "target": "/decision/how-much-emergency-fund-do-i-need",
+      "anchor": "read our emergency fund decision guide",
+      "type": "blog\u2192decision"
     },
     {
-      "source": "/calculators/debt-payoff",
-      "target": "/calculators/debt-snowball",
-      "anchor": "try the debt snowball method to stay motivated",
-      "type": "T1\u2192T2"
-    },
-    {
-      "source": "/guides/how-to-use-mortgage-calculator",
-      "target": "/calculators/mortgage-calculator",
-      "anchor": "use the mortgage calculator now with these tips",
+      "source": "/guides/how-to-use-emergency-fund",
+      "target": "/calculators/emergency-fund",
+      "anchor": "calculate your emergency fund now",
       "type": "guide\u2192calc"
     },
     {
-      "source": "/guides/how-to-use-compound-interest",
-      "target": "/calculators/compound-interest",
-      "anchor": "try the compound interest calculator with your numbers",
+      "source": "/guides/how-to-use-budget-planner",
+      "target": "/calculators/budget-planner",
+      "anchor": "start budgeting in 30 seconds",
       "type": "guide\u2192calc"
     },
     {
-      "source": "/guides/how-to-use-retirement-planning",
-      "target": "/calculators/retirement-planning",
-      "anchor": "plan your retirement with accurate projections",
+      "source": "/guides/how-to-use-savings-goal",
+      "target": "/calculators/savings-goal",
+      "anchor": "set your savings target and track it",
       "type": "guide\u2192calc"
     },
     {
       "source": "/guides/how-to-use-debt-payoff",
       "target": "/calculators/debt-payoff",
-      "anchor": "calculate your exact debt-free date",
+      "anchor": "create your debt-free plan",
       "type": "guide\u2192calc"
     },
     {
-      "source": "/guides/how-to-use-loan-calculator",
-      "target": "/calculators/loan-calculator",
-      "anchor": "calculate any loan payment in seconds",
+      "source": "/guides/how-to-use-tax-calculator",
+      "target": "/calculators/tax-calculator",
+      "anchor": "estimate your tax bill before you file",
       "type": "guide\u2192calc"
     },
     {
-      "source": "/guides/how-to-use-mortgage-affordability",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "find your maximum home price based on your income",
+      "source": "/guides/how-to-use-401k-calculator",
+      "target": "/calculators/401k-calculator",
+      "anchor": "project your retirement savings growth",
       "type": "guide\u2192calc"
     },
     {
-      "source": "/compare/best-mortgage-calculator",
-      "target": "/calculators/mortgage-calculator",
-      "anchor": "use the best mortgage calculator we found",
-      "type": "compare\u2192calc"
+      "source": "/guides/how-to-use-investment-return",
+      "target": "/calculators/investment-return",
+      "anchor": "calculate your real investment performance",
+      "type": "guide\u2192calc"
+    },
+    {
+      "source": "/guides/how-to-use-budget-planner",
+      "target": "/blog/how-much-emergency-fund-do-i-need-2026",
+      "anchor": "learn how much emergency fund you really need",
+      "type": "guide\u2192blog"
+    },
+    {
+      "source": "/decision/how-much-emergency-fund-do-i-need",
+      "target": "/blog/how-much-emergency-fund-do-i-need-2026",
+      "anchor": "read our detailed emergency fund guide",
+      "type": "decision\u2192blog"
     },
     {
       "source": "/decision/how-much-emergency-fund-do-i-need",
       "target": "/calculators/emergency-fund",
-      "anchor": "calculate your exact emergency fund number",
+      "anchor": "get your exact emergency fund number",
       "type": "decision\u2192calc"
     },
     {
-      "source": "/decision/can-i-afford-a-400k-home",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "plug in your numbers to see what you can afford",
-      "type": "decision\u2192calc"
-    },
-    {
-      "source": "/decision/401k-vs-taxable-investing",
-      "target": "/calculators/401k-calculator",
-      "anchor": "project your 401(k) balance with employer match",
-      "type": "decision\u2192calc"
-    },
-    {
-      "source": "/decision/should-i-refinance-my-mortgage",
-      "target": "/calculators/refinance-calculator",
-      "anchor": "calculate your refinance break-even point",
+      "source": "/decision/retire-at-45-with-1-million",
+      "target": "/calculators/retirement-planning",
+      "anchor": "project your retirement with accurate numbers",
       "type": "decision\u2192calc"
     }
-  ],
-  "note": "15 contextual links across calculator, guide, comparison, and decision pages. All sources are indexed or awaiting crawl. All anchors are natural and useful."
+  ]
 }

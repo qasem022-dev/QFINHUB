@@ -1,7 +1,6 @@
 {
-  "title": "Non-7 Near-Winner Push \u2014 Phase 14B Day 3",
-  "generated": "2026-06-04T20:07:15.721342Z",
+  "title": "Near-Winner Push \u2014 Day 4",
+  "generated": "2026-06-04T20:21:36.832436Z",
   "applied": 0,
-  "reason": "All known near-winner pages (pos 8-20) are the 7 fixed pages. Remaining 5 pages include geo pages at pos 7 and 10 \u2014 low priority for pushes.",
-  "alternative": "INTERNAL LINKS from indexed pages serve as the push mechanism for all non-cooldown pages."
+  "reason": "Same as CTR: all known near-winner pages (pos 8-20) are the 7 fixed pages in cooldown."
 }
