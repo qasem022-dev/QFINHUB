@@ -1,0 +1,137 @@
+{
+  "title": "Phase 14 Safe Mode Day 1 Report \u2014 14A.1",
+  "generated": "2026-06-04T19:11:48.527888Z",
+  "phase": "14A.1 Safe Mode",
+  "status": "COMPLETE \u2014 All safe mode actions executed. No unapproved content.",
+  "executive_summary": {
+    "widget_outreach_paused": true,
+    "newsjacking_bot_paused": true,
+    "all_risky_crons_paused": "17/17 confirmed paused",
+    "tier3_batch2_submitted": "10/10 \u2014 100% success",
+    "total_tier3_indexed": "20/105 (Batch 1 + 2)",
+    "new_content_created": 0,
+    "outreach_sent": 0,
+    "pinterest_pins_posted": 0,
+    "auditor_decisions": "8 total: 5 approved, 3 held, 0 rejected"
+  },
+  "cron_status": {
+    "paused_today": [
+      "Widget Outreach (43438e317a61)",
+      "Newsjacking Bot (d006e3318401)"
+    ],
+    "all_risky_paused": 17,
+    "active_safe": 12,
+    "confirmation": "No emails sent. No posts created. No content published."
+  },
+  "tier3_batch2_result": {
+    "submitted": 10,
+    "success_rate": "100%",
+    "calculators": [
+      "stock-return",
+      "dividend-calculator",
+      "dollar-cost-average",
+      "student-loan",
+      "personal-loan",
+      "debt-consolidation",
+      "loan-comparison",
+      "debt-avalanche",
+      "loan-refinancing",
+      "lease-vs-buy"
+    ],
+    "method": "CloakBrowser GSC UI (headless, persistent profile)",
+    "safety_gates": "All 10 passed: HTTP 200, index/follow, self-canonical, in sitemap, not cleanup-lag, not recently requested"
+  },
+  "tier2_monitor": {
+    "submitted": 12,
+    "in_cooldown": 12,
+    "next_check": "2026-06-06T15:11:48.527888Z",
+    "do_not_re_request": true
+  },
+  "query_opportunities": {
+    "identified": 3,
+    "status": "All in 48h re-crawl cooldown from Phase 13C.7",
+    "auditor_decision": "HOLD_FOR_DATA \u2014 wait for re-crawl results"
+  },
+  "auditor_decisions": [
+    {
+      "id": "AUDIT-001",
+      "action": "Pause Widget Outreach",
+      "decision": "APPROVED",
+      "executed": true
+    },
+    {
+      "id": "AUDIT-002",
+      "action": "Pause Newsjacking Bot",
+      "decision": "APPROVED",
+      "executed": true
+    },
+    {
+      "id": "AUDIT-003",
+      "action": "Tier 3 Batch 2 (10 calcs)",
+      "decision": "APPROVED",
+      "executed": true
+    },
+    {
+      "id": "AUDIT-004",
+      "action": "New content pages",
+      "decision": "HOLD_FOR_DATA",
+      "executed": false
+    },
+    {
+      "id": "AUDIT-005",
+      "action": "CTR extraction (5 targets)",
+      "decision": "HOLD_FOR_DATA",
+      "executed": false
+    },
+    {
+      "id": "AUDIT-006",
+      "action": "Internal links (3 links)",
+      "decision": "APPROVED",
+      "executed": true
+    },
+    {
+      "id": "AUDIT-007",
+      "action": "Outreach follow-ups",
+      "decision": "HOLD_FOR_DATA",
+      "executed": false
+    },
+    {
+      "id": "AUDIT-008",
+      "action": "Pinterest monitor only",
+      "decision": "APPROVED",
+      "executed": true
+    }
+  ],
+  "technical_guardian": {
+    "all_checks_pass": true,
+    "deploy_cleared": true,
+    "no_critical_issues": true
+  },
+  "pinterest": "Monitor only \u2014 2 pins ~120h live. No new pins posted.",
+  "outreach": "No follow-ups due today. Next: Jun 7.",
+  "deploy": {
+    "commit": "46030ec",
+    "status": "Pushed, GitHub auto-deploy triggered",
+    "sitemaps": "Submitted to GSC"
+  },
+  "biggest_blocker": {
+    "current": "Awaiting Google re-crawl of 7 fixed pages (Phase 13C.7), 12 Tier 2 (13C.9), and 20 Tier 3 (13C.11 + 14A.1). Total 39 pages in Google's queue.",
+    "resolution": "24-72h for first re-crawl results. Continue Tier 3 batches daily."
+  },
+  "full_phase14_activation_safe": "NOT YET \u2014 wait for: (1) re-crawl data on submitted pages, (2) first query opportunities to exit cooldown, (3) Qasem/ChatGPT review of Safe Mode Day 1",
+  "compliance": {
+    "google_indexing_api_not_used": "\u2705 CONFIRMED",
+    "no_unapproved_content": "\u2705 CONFIRMED \u2014 Auditor held all content actions",
+    "no_unapproved_outreach": "\u2705 CONFIRMED",
+    "no_pinterest_pins": "\u2705 CONFIRMED",
+    "no_fake_schema": "\u2705 CONFIRMED",
+    "risky_automations_paused": "\u2705 17/17 CONFIRMED"
+  },
+  "cumulative_indexing": {
+    "tier1": "10/10 indexed",
+    "tier2": "12/12 submitted",
+    "tier3": "20/105 submitted (Batches 1+2)",
+    "fixed_pages": "7/7 submitted",
+    "total_submitted": 49
+  }
+}
