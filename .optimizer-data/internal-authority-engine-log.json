@@ -1,81 +1,98 @@
 {
-  "title": "Internal Authority Engine \u2014 Phase 14B Day 2",
-  "generated": "2026-06-04T19:59:12.664637Z",
-  "applied": 12,
-  "strategy": "Links from CONFIRMED INDEXED pages to pages needing crawl priority. Also cross-link Tier 1 calculators for topical authority.",
+  "title": "Internal Authority Engine \u2014 Phase 14B Day 3",
+  "generated": "2026-06-04T20:07:15.721342Z",
+  "applied": 15,
   "links": [
     {
       "source": "/calculators/mortgage-calculator",
       "target": "/calculators/refinance-calculator",
-      "anchor": "see if refinancing could lower your payment",
+      "anchor": "check if refinancing could save you money",
       "type": "T1\u2192T2"
     },
     {
-      "source": "/calculators/mortgage-calculator",
-      "target": "/guides/how-to-use-mortgage-calculator",
-      "anchor": "learn exactly how to use the mortgage calculator",
-      "type": "calc\u2192guide"
-    },
-    {
       "source": "/calculators/compound-interest",
-      "target": "/guides/how-to-use-compound-interest",
-      "anchor": "master compound interest in 30 seconds",
-      "type": "calc\u2192guide"
+      "target": "/calculators/savings-goal",
+      "anchor": "set a savings goal and watch compound interest work",
+      "type": "T1\u2192T2"
     },
     {
       "source": "/calculators/retirement-planning",
-      "target": "/guides/how-to-use-retirement-planning",
-      "anchor": "plan your retirement step by step",
-      "type": "calc\u2192guide"
+      "target": "/calculators/pension-calculator",
+      "anchor": "calculate your pension alongside your retirement savings",
+      "type": "T1\u2192T2"
     },
     {
       "source": "/calculators/debt-payoff",
-      "target": "/guides/how-to-use-debt-payoff",
-      "anchor": "choose the fastest debt payoff strategy",
-      "type": "calc\u2192guide"
+      "target": "/calculators/debt-snowball",
+      "anchor": "try the debt snowball method to stay motivated",
+      "type": "T1\u2192T2"
     },
     {
-      "source": "/calculators/loan-calculator",
-      "target": "/guides/how-to-use-loan-calculator",
-      "anchor": "calculate any loan payment instantly",
-      "type": "calc\u2192guide"
+      "source": "/guides/how-to-use-mortgage-calculator",
+      "target": "/calculators/mortgage-calculator",
+      "anchor": "use the mortgage calculator now with these tips",
+      "type": "guide\u2192calc"
     },
     {
-      "source": "/calculators/mortgage-affordability",
-      "target": "/guides/how-to-use-mortgage-affordability",
-      "anchor": "find your maximum home buying budget",
-      "type": "calc\u2192guide"
+      "source": "/guides/how-to-use-compound-interest",
+      "target": "/calculators/compound-interest",
+      "anchor": "try the compound interest calculator with your numbers",
+      "type": "guide\u2192calc"
     },
     {
-      "source": "/calculators/tax-calculator",
-      "target": "/guides/how-to-use-tax-calculator",
-      "anchor": "estimate your taxes in seconds",
-      "type": "calc\u2192guide"
+      "source": "/guides/how-to-use-retirement-planning",
+      "target": "/calculators/retirement-planning",
+      "anchor": "plan your retirement with accurate projections",
+      "type": "guide\u2192calc"
     },
     {
-      "source": "/calculators/401k-calculator",
-      "target": "/guides/how-to-use-401k-calculator",
-      "anchor": "project your 401(k) growth with employer match",
-      "type": "calc\u2192guide"
+      "source": "/guides/how-to-use-debt-payoff",
+      "target": "/calculators/debt-payoff",
+      "anchor": "calculate your exact debt-free date",
+      "type": "guide\u2192calc"
     },
     {
-      "source": "/calculators/investment-return",
-      "target": "/guides/how-to-use-investment-return",
-      "anchor": "calculate your true investment performance",
-      "type": "calc\u2192guide"
+      "source": "/guides/how-to-use-loan-calculator",
+      "target": "/calculators/loan-calculator",
+      "anchor": "calculate any loan payment in seconds",
+      "type": "guide\u2192calc"
     },
     {
-      "source": "/calculators/budget-planner",
-      "target": "/guides/how-to-use-budget-planner",
-      "anchor": "create a 50/30/20 budget that works",
-      "type": "calc\u2192guide"
+      "source": "/guides/how-to-use-mortgage-affordability",
+      "target": "/calculators/mortgage-affordability",
+      "anchor": "find your maximum home price based on your income",
+      "type": "guide\u2192calc"
     },
     {
-      "source": "/calculators/mortgage-calculator",
-      "target": "/decision/can-i-afford-a-400k-home",
-      "anchor": "decide if you can afford a $400,000 home",
-      "type": "calc\u2192decision"
+      "source": "/compare/best-mortgage-calculator",
+      "target": "/calculators/mortgage-calculator",
+      "anchor": "use the best mortgage calculator we found",
+      "type": "compare\u2192calc"
+    },
+    {
+      "source": "/decision/how-much-emergency-fund-do-i-need",
+      "target": "/calculators/emergency-fund",
+      "anchor": "calculate your exact emergency fund number",
+      "type": "decision\u2192calc"
+    },
+    {
+      "source": "/decision/can-i-afford-a-400k-home",
+      "target": "/calculators/mortgage-affordability",
+      "anchor": "plug in your numbers to see what you can afford",
+      "type": "decision\u2192calc"
+    },
+    {
+      "source": "/decision/401k-vs-taxable-investing",
+      "target": "/calculators/401k-calculator",
+      "anchor": "project your 401(k) balance with employer match",
+      "type": "decision\u2192calc"
+    },
+    {
+      "source": "/decision/should-i-refinance-my-mortgage",
+      "target": "/calculators/refinance-calculator",
+      "anchor": "calculate your refinance break-even point",
+      "type": "decision\u2192calc"
     }
   ],
-  "note": "12 links from indexed T1 calcs to their guide pages + decisions. All sources CONFIRMED INDEXED. All targets are quality pages awaiting crawl. Links are contextual and useful."
+  "note": "15 contextual links across calculator, guide, comparison, and decision pages. All sources are indexed or awaiting crawl. All anchors are natural and useful."
 }

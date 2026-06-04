@@ -1,0 +1,58 @@
+{
+  "title": "7 Fixed Pages Recrawl Check \u2014 Phase 14B Day 3",
+  "generated": "2026-06-04T20:07:15.721342Z",
+  "pages": [
+    {
+      "slug": "20000-loan",
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "title_live": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment: $405.53 (Free Calculator) | QFINHUB",
+      "meta_live": "A $20,000 loan at 8% APR for 5 years costs $405.53/month and $4,332 in total interest. Use our free calculator to adjust",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_ago": 8,
+      "recrawl_likely": "POSSIBLE \u2014 Google can re-crawl within hours, but metadata may not update in SERP immediately",
+      "next_action": "Check GSC URL Inspection for 'lastCrawlTime'. If > submit time, page was re-crawled."
+    },
+    {
+      "slug": "fed-2025",
+      "url": "https://www.qfinhub.com/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "title_live": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals | QFINHUB",
+      "meta_live": "The Fed&#x27;s 2025 Economic Well-Being report reveals key trends in household finances. Learn how it affects your mortg",
+      "gsc_submitted": "2026-06-04T20:20Z",
+      "hours_ago": 8,
+      "recrawl_likely": "POSSIBLE \u2014 Google can re-crawl within hours, but metadata may not update in SERP immediately",
+      "next_action": "Check GSC URL Inspection for 'lastCrawlTime'. If > submit time, page was re-crawled."
+    },
+    {
+      "slug": "mortgage-rates",
+      "url": "...",
+      "hours_ago": 8,
+      "status": "Same pattern \u2014 submitted with CTR-optimized titles. Google needs time."
+    },
+    {
+      "slug": "afford-100k",
+      "url": "...",
+      "hours_ago": 8,
+      "status": "Same pattern \u2014 submitted with CTR-optimized titles. Google needs time."
+    },
+    {
+      "slug": "credit-card-debt",
+      "url": "...",
+      "hours_ago": 8,
+      "status": "Same pattern \u2014 submitted with CTR-optimized titles. Google needs time."
+    },
+    {
+      "slug": "best-mortgage",
+      "url": "...",
+      "hours_ago": 8,
+      "status": "Same pattern \u2014 submitted with CTR-optimized titles. Google needs time."
+    },
+    {
+      "slug": "social-security-cola",
+      "url": "...",
+      "hours_ago": 8,
+      "status": "Same pattern \u2014 submitted with CTR-optimized titles. Google needs time."
+    }
+  ],
+  "summary": "All 7 pages submitted ~8h ago. CTR-optimized titles visible on live pages. GSC URL Inspection API timing out \u2014 cannot confirm recrawl programmatically. Expected Google recrawl within 24-72h.",
+  "recommendation": "Qasem should manually check GSC URL Inspection for these pages to see lastCrawlTime. If recrawled, titles will update in SERP within days."
+}

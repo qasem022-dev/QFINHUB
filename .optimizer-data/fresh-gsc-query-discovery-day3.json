@@ -1,0 +1,14 @@
+{
+  "title": "Fresh GSC Query Discovery \u2014 Phase 14B Day 3",
+  "generated": "2026-06-04T20:07:15.721342Z",
+  "data_source": "zero-click-query-map.json + known GSC data. GSC Search Analytics API unavailable (404 \u2014 pitfall #28).",
+  "limitation": "CANNOT pull fresh GSC query data programmatically. Google's Search Analytics API v3 does not expose this data via REST. Only URL Inspection API works (individual URLs).",
+  "known_impression_pages": {
+    "total_with_impressions": 12,
+    "the_7_fixed_pages": "blog/20000-loan, blog/fed-2025, blog/mortgage-rates, blog/afford-100k, blog/credit-card-debt, compare/best-mortgage, blog/social-security-cola",
+    "remaining_5": "From prior GSC data: 3 geo pages (loan/nashville-tn, loan/reno-nv, tax/philadelphia-pa \u2014 indexable), 1 tool variant (afford-100k-40k-6-5pct), 1 guide page",
+    "tier1_calculators": "10 indexed but no confirmed impression data (GSC API inaccessible)",
+    "other_blog_posts": "~95 blog posts \u2014 no confirmed impression data"
+  },
+  "honest_conclusion": "Pages WITH confirmed impressions are almost exclusively the 7 fixed pages + a few others. Without GSC Search Analytics API access, we cannot discover new queries. Qasem should manually check GSC dashboard for new queries."
+}
