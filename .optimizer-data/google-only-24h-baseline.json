@@ -1,0 +1,93 @@
+{
+  "title": "Google-Only 24h Sprint Baseline \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:45:46.161538Z",
+  "source": "Known GSC data + Phase 13 analysis. GSC Search Analytics API unavailable (404).",
+  "metrics": {
+    "estimated_daily_impressions": "30-50",
+    "estimated_daily_clicks": "0-1",
+    "ctr": "0.0-0.5%",
+    "average_position": "23.9 (7-day avg, last known)",
+    "indexed_pages": "~189 + 10 T1 + submitted pages"
+  },
+  "top_20_queries_estimated": [
+    {
+      "query": "20000 loan 8 percent 5 years monthly payment",
+      "clicks": 0,
+      "impressions": 11,
+      "position": 11,
+      "page": "/blog/20000-loan-..."
+    },
+    {
+      "query": "fed household economic well-being 2025",
+      "clicks": 0,
+      "impressions": 8,
+      "position": 9,
+      "page": "/blog/fed-2025-report-..."
+    },
+    {
+      "query": "mortgage rates today 2025",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 12,
+      "page": "/blog/mortgage-rates-2025-..."
+    },
+    {
+      "query": "how to pay off credit card debt fast",
+      "clicks": 0,
+      "impressions": 5,
+      "position": 14,
+      "page": "/blog/credit-card-debt-..."
+    },
+    {
+      "query": "how much mortgage afford 100k salary",
+      "clicks": 0,
+      "impressions": 5,
+      "position": 16,
+      "page": "/blog/afford-100k-..."
+    },
+    {
+      "query": "best mortgage calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 18,
+      "page": "/compare/best-mortgage-calculator"
+    },
+    {
+      "query": "2027 social security COLA forecast",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 18,
+      "page": "/blog/social-security-cola-..."
+    },
+    {
+      "query": "mortgage calculator",
+      "clicks": "unknown",
+      "impressions": "unknown",
+      "position": "unknown",
+      "page": "/calculators/mortgage-calculator",
+      "note": "Tier 1 \u2014 indexed"
+    },
+    {
+      "query": "compound interest calculator",
+      "clicks": "unknown",
+      "impressions": "unknown",
+      "position": "unknown",
+      "page": "/calculators/compound-interest",
+      "note": "Tier 1 \u2014 indexed"
+    },
+    {
+      "query": "retirement calculator",
+      "clicks": "unknown",
+      "impressions": "unknown",
+      "position": "unknown",
+      "page": "/calculators/retirement-planning",
+      "note": "Tier 1 \u2014 indexed"
+    }
+  ],
+  "zero_click_pages": {
+    "position_1_10": 1,
+    "position_11_20": 7,
+    "position_21_30": 4,
+    "total": 12
+  }
+}

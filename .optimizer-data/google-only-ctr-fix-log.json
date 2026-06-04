@@ -1,0 +1,26 @@
+{
+  "title": "Google-Only CTR Fix Log \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:45:46.161538Z",
+  "applied": 0,
+  "held": 10,
+  "reason": "All top 10 targets had CTR fixes applied in Phase 13C.7 (~6h ago). Further edits before Google re-crawl wastes effort.",
+  "current_title_check": [
+    {
+      "page": "20000-loan blog",
+      "title": "$20,000 Loan at 8% for 5 Years \u2014 Monthly Payment: $405.53 (Free Calculator) | QFINHUB"
+    },
+    {
+      "page": "fed-2025 blog",
+      "title": "Fed 2025 Report: How Household Economic Well-Being Impacts Your Mortgage and Savings Goals | QFINHUB"
+    },
+    {
+      "page": "best-mortgage compare",
+      "title": "Best Mortgage Calculator 2026 \u2014 Free, Fast &amp; Accurate | QFINHUB"
+    }
+  ],
+  "auditor_decision": "HOLD \u2014 Pages in cooldown. Titles/metas were optimized and GSC UI submitted. Best Google-only action: internal links from indexed pages to boost crawl priority.",
+  "daily_limits_remaining": {
+    "ctr_fixes": 10,
+    "position_boosts": 10
+  }
+}

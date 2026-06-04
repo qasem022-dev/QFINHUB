@@ -1,0 +1,69 @@
+{
+  "title": "Google-Only Internal Link Boost \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:45:46.161538Z",
+  "applied": 10,
+  "strategy": "Links from CONFIRMED INDEXED Tier 1 calculators to near-winner/impression pages. Google follows these links and increases crawl priority.",
+  "links": [
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "anchor": "$20,000 loan at 8% \u2014 see your monthly payment",
+      "type": "calc\u2192blog"
+    },
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "anchor": "latest mortgage rates and what they mean for you",
+      "type": "calc\u2192blog"
+    },
+    {
+      "source": "/calculators/mortgage-affordability",
+      "target": "/blog/how-much-mortgage-afford-100k-salary",
+      "anchor": "how much house can you afford on $100k",
+      "type": "calc\u2192blog"
+    },
+    {
+      "source": "/calculators/compound-interest",
+      "target": "/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "anchor": "how Fed policy affects your savings and mortgage",
+      "type": "calc\u2192blog"
+    },
+    {
+      "source": "/calculators/debt-payoff",
+      "target": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "anchor": "proven strategies to pay off credit card debt fast",
+      "type": "calc\u2192blog"
+    },
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/compare/best-mortgage-calculator",
+      "anchor": "compare the best mortgage calculators side by side",
+      "type": "calc\u2192compare"
+    },
+    {
+      "source": "/calculators/retirement-planning",
+      "target": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "anchor": "2027 Social Security COLA \u2014 what retirees need to know",
+      "type": "calc\u2192blog"
+    },
+    {
+      "source": "/calculators/mortgage-calculator",
+      "target": "/calculators/mortgage-affordability",
+      "anchor": "figure out your home buying budget first",
+      "type": "calc\u2192calc"
+    },
+    {
+      "source": "/calculators/compound-interest",
+      "target": "/calculators/investment-return",
+      "anchor": "compare compound interest to total investment return",
+      "type": "calc\u2192calc"
+    },
+    {
+      "source": "/calculators/debt-payoff",
+      "target": "/calculators/credit-card-payoff",
+      "anchor": "pay off specific credit cards with a targeted plan",
+      "type": "calc\u2192calc"
+    }
+  ],
+  "auditor_approval": "APPROVED \u2014 All sources are CONFIRMED INDEXED Tier 1 calculators. All targets have Google impressions. All anchors are contextual, natural, and useful."
+}

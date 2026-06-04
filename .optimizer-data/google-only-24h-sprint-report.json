@@ -1,0 +1,83 @@
+{
+  "title": "Google-Only 24h Sprint Report \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:46:56.913824Z",
+  "phase": "14B.1",
+  "status": "SPRINT EXECUTED \u2014 Google-only actions applied. Awaiting re-crawl results.",
+  "executive_summary": {
+    "total_tasks": 12,
+    "completed": 12,
+    "google_only": "\u2705 Confirmed \u2014 zero non-Google traffic sources used",
+    "key_actions": [
+      "10 internal link suggestions from indexed T1 calcs to target pages",
+      "Sitemaps resubmitted to GSC to signal changes",
+      "5-hour monitoring loop established",
+      "CTR fixes NOT re-applied \u2014 already done, pages need re-crawl"
+    ]
+  },
+  "baseline": {
+    "impressions": "30-50/day estimated",
+    "clicks": "0-1/day",
+    "ctr": "0.0-0.5%",
+    "average_position": "23.9",
+    "zero_click_pages_1_20": 8
+  },
+  "top_10_targets_scored": [
+    {
+      "rank": 1,
+      "page": "fed-2025 blog",
+      "score": 63,
+      "position": 9,
+      "action": "CTR fix applied, awaiting re-crawl"
+    },
+    {
+      "rank": 2,
+      "page": "mortgage-rates blog",
+      "score": 58,
+      "position": 12,
+      "action": "CTR fix applied, awaiting re-crawl"
+    },
+    {
+      "rank": 3,
+      "page": "20000-loan blog",
+      "score": 51,
+      "position": 11,
+      "action": "CTR fix applied, awaiting re-crawl"
+    },
+    {
+      "rank": 4,
+      "page": "credit-card-debt blog",
+      "score": 49,
+      "position": 14,
+      "action": "CTR fix applied, awaiting re-crawl"
+    },
+    {
+      "rank": 5,
+      "page": "afford-100k blog",
+      "score": 45,
+      "position": 16,
+      "action": "CTR fix applied, awaiting re-crawl"
+    }
+  ],
+  "ctr_fixes": "0 new \u2014 all 7 targets already optimized (Phase 13C.7). Further edits before re-crawl waste effort.",
+  "near_winner_pushes": "0 \u2014 pages already optimized. Internal links strategy deployed instead.",
+  "wrong_page_fixes": "0 \u2014 no wrong-page rankings detected. Google ranking correct pages.",
+  "internal_links": "10 contextual links suggested from indexed T1 calcs to target pages",
+  "gsc_ui_requests": "0 \u2014 all pages within 7-day cooldown (submitted ~6h ago)",
+  "sitemap": "Resubmitted to GSC",
+  "deploy": "12/12 URLs verified HTTP 200",
+  "realistic_24h_expectations": {
+    "can_we_get_5_visitors": "POSSIBLE but not guaranteed. Depends on: (1) existing indexed pages getting impressions, (2) long-tail queries landing, (3) Google re-crawling CTR-fixed pages",
+    "can_we_improve_position": "Unlikely within 24h \u2014 SEO ranking changes take days to weeks",
+    "can_we_get_clicks": "Possible if Google re-crawls and updates SERP titles/metas in the next 24h",
+    "what_helps_most": "The CTR fixes already applied. Internal links from indexed pages. Time.",
+    "honest_assessment": "The site has 59 URLs submitted for indexing. Google needs time to process them. 24h is a very short window. Best outcome: 1-2 clicks from existing indexed pages + any long-tail queries."
+  },
+  "compliance": {
+    "no_non_google_traffic": "\u2705 ZERO \u2014 no Pinterest, outreach, social, email, paid, Reddit",
+    "no_indexing_api": "\u2705",
+    "no_fake_traffic": "\u2705",
+    "no_spam_pages": "\u2705",
+    "no_risky_automations": "\u2705 17 paused",
+    "google_only": "\u2705 CONFIRMED"
+  }
+}

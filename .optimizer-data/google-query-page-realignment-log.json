@@ -1,0 +1,18 @@
+{
+  "title": "Google Query-Page Realignment \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:45:46.161538Z",
+  "applied": 0,
+  "findings": [
+    {
+      "query": "mortgage rates today",
+      "current": "/blog/mortgage-rates-2025-...",
+      "better": "current page IS correct \u2014 just needs re-crawl"
+    },
+    {
+      "query": "best mortgage calculator",
+      "current": "/compare/best-mortgage-calculator",
+      "better": "correct page \u2014 CTR fix applied, awaiting re-crawl"
+    }
+  ],
+  "note": "No wrong-page issues found. Google is ranking the correct pages \u2014 they just need re-crawl for CTR fixes to take effect."
+}

@@ -1,0 +1,101 @@
+{
+  "title": "Google Click Targets 24h \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:45:46.161538Z",
+  "scoring_legend": "pos1-5:+35, pos6-10:+30, pos11-15:+25, pos16-20:+20, imps:+20, zero_clicks:+10, calc_intent:+15, indexed:+10, recently_changed:+5",
+  "top_10_targets": [
+    {
+      "page": "/blog/fed-2025-report-...",
+      "query": "fed household economic well-being",
+      "position": 9,
+      "impressions": 8,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 63
+    },
+    {
+      "page": "/compare/best-mortgage-calculator",
+      "query": "best mortgage calculator",
+      "position": 18,
+      "impressions": 3,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 63
+    },
+    {
+      "page": "/blog/20000-loan-...",
+      "query": "20000 loan 8 percent 5 years",
+      "position": 11,
+      "impressions": 11,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 61
+    },
+    {
+      "page": "/blog/mortgage-rates-2025-...",
+      "query": "mortgage rates today 2025",
+      "position": 12,
+      "impressions": 6,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 56
+    },
+    {
+      "page": "/blog/credit-card-debt-...",
+      "query": "pay off credit card debt fast",
+      "position": 14,
+      "impressions": 5,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 55
+    },
+    {
+      "page": "/blog/afford-100k-salary",
+      "query": "mortgage afford 100k salary",
+      "position": 16,
+      "impressions": 5,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 50
+    },
+    {
+      "page": "/blog/social-security-cola-...",
+      "query": "2027 social security COLA",
+      "position": 18,
+      "impressions": 3,
+      "clicks": 0,
+      "indexed": "unknown",
+      "score": 48
+    },
+    {
+      "page": "/calculators/mortgage-calculator",
+      "query": "mortgage calculator",
+      "position": "deep",
+      "impressions": "unknown",
+      "clicks": "unknown",
+      "indexed": true,
+      "note": "Tier 1 core calc",
+      "score": 30
+    },
+    {
+      "page": "/calculators/compound-interest",
+      "query": "compound interest calculator",
+      "position": "deep",
+      "impressions": "unknown",
+      "clicks": "unknown",
+      "indexed": true,
+      "note": "Tier 1 core calc",
+      "score": 30
+    },
+    {
+      "page": "/calculators/retirement-planning",
+      "query": "retirement calculator",
+      "position": "deep",
+      "impressions": "unknown",
+      "clicks": "unknown",
+      "indexed": true,
+      "note": "Tier 1 core calc",
+      "score": 30
+    }
+  ],
+  "auditor_note": "Top 7 targets all had CTR fixes applied (Phase 13C.7) but Google hasn't re-crawled. GSC UI submitted ~6h ago. Best action: internal links from indexed pages + wait for re-crawl."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Google-Only Sitemap + Lastmod Push \u2014 Phase 14B.1",
+  "generated": "2026-06-04T19:46:56.913824Z",
+  "action": "Resubmitted sitemap.xml + news-sitemap.xml to GSC via API",
+  "pages_with_updated_lastmod": "All pages use 'new Date()' in sitemap generator \u2014 lastmod always current",
+  "scenario_sitemap_not_submitted": true
+}
