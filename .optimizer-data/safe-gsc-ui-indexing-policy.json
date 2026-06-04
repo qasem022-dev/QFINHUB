@@ -1,0 +1,123 @@
+{
+  "title": "Safe GSC UI Indexing Automation Policy \u2014 PHASE 13C.8",
+  "created": "2026-06-04T17:32:22.429025Z",
+  "phase": "13C.8",
+  "version": "1.0",
+  "purpose": "Define strict rules for automated GSC UI 'Request Indexing' via CloakBrowser",
+  "absolute_prohibitions": {
+    "no_indexing_api": "Google Indexing API must NOT be used for calculators/blogs/guides/decisions/tools \u2014 ONLY valid for JobPosting/BroadcastEvent",
+    "no_fake_schema": "Must NOT add JobPosting or BroadcastEvent schema to non-eligible pages",
+    "no_mass_requests": "Max 10 URLs per day total across ALL indexing methods",
+    "no_duplicate_requests": "Same URL must NOT be requested again within 7 days unless a major technical fix changed the page",
+    "no_risky_automations": "SEO Indexing Engine, Sitemap Ping, Blog Agent, Scenario Generator/Upgrades \u2014 ALL STAY PAUSED"
+  },
+  "url_eligibility_gates": {
+    "must_pass_all": [
+      {
+        "gate": "http_200",
+        "rule": "URL must return HTTP 200",
+        "fail_action": "Skip \u2014 investigate if non-200 persists"
+      },
+      {
+        "gate": "robots_indexable",
+        "rule": "Robots meta must be 'index, follow' or equivalent. NOT 'noindex'.",
+        "fail_action": "Skip \u2014 noindex pages should not be requested for indexing"
+      },
+      {
+        "gate": "self_canonical",
+        "rule": "Canonical must point to SELF, not to a different page",
+        "fail_action": "Skip \u2014 canonicalized pages confuse Google if individually requested"
+      },
+      {
+        "gate": "in_sitemap",
+        "rule": "URL should be in sitemap.xml if intended for indexing",
+        "fail_action": "Warn \u2014 add to sitemap if intended to be indexed"
+      },
+      {
+        "gate": "not_cleanup_lag",
+        "rule": "URL must NOT be a Phase 2 cleanup-lag URL (geo/scenario/formula pruned pages)",
+        "fail_action": "Skip \u2014 these were intentionally de-indexed"
+      },
+      {
+        "gate": "not_recently_requested",
+        "rule": "URL must NOT have been requested for indexing in the last 7 days",
+        "fail_action": "Skip \u2014 wait for Google to process previous request"
+      },
+      {
+        "gate": "priority_score",
+        "rule": "URL must score above minimum priority threshold",
+        "fail_action": "Queue for lower-priority sitemap/internal-link approach"
+      }
+    ]
+  },
+  "priority_order": [
+    {
+      "rank": 1,
+      "category": "fixed_pages_recent_changes",
+      "description": "Pages with recent content/title/meta changes that need Google re-crawl"
+    },
+    {
+      "rank": 2,
+      "category": "core_calculators",
+      "description": "10 core calculators \u2014 highest-value pages on site"
+    },
+    {
+      "rank": 3,
+      "category": "high_value_decisions",
+      "description": "Decision pages with strong content and internal links"
+    },
+    {
+      "rank": 4,
+      "category": "high_value_comparisons",
+      "description": "Top comparison pages with unique value"
+    },
+    {
+      "rank": 5,
+      "category": "near_winners_1_30",
+      "description": "Pages ranking 1-30 with impressions but 0 clicks"
+    },
+    {
+      "rank": 6,
+      "category": "zero_click_pages",
+      "description": "Pages with GSC impressions and 0 clicks"
+    },
+    {
+      "rank": 7,
+      "category": "newly_repaired_technical",
+      "description": "Pages with recently fixed technical issues (canonical, robots, etc.)"
+    }
+  ],
+  "safety_limits": {
+    "max_urls_per_day": 10,
+    "min_days_between_requests": 7,
+    "stop_on_captcha": true,
+    "stop_on_2fa": true,
+    "stop_on_block": true,
+    "stop_on_unexpected_redirect": true,
+    "log_every_url": true,
+    "log_every_result": true
+  },
+  "fallback_actions": {
+    "if_blocked": {
+      "action": "FALLBACK \u2014 do NOT ask Qasem immediately",
+      "alternatives": [
+        "Submit sitemap.xml + news-sitemap.xml to GSC via API",
+        "Add new internal links from indexed pages to target URL",
+        "Update lastmod in sitemap if page has changed",
+        "Wait 24h and retry GSC UI session",
+        "Report blocker to Qasem only if session remains blocked for 48h+"
+      ]
+    },
+    "if_quota_exceeded": {
+      "action": "Queue remaining URLs for next day",
+      "note": "Google limits ~10-20 manual requests per day"
+    }
+  },
+  "session_management": {
+    "profile": "~/.hermes/cloak-profiles/google-gsc-v3",
+    "launch": "launch_persistent_context(user_data_dir=..., headless=True, humanize=True)",
+    "auth_check_url": "Inspect page URL for qfinhub property",
+    "re_auth_required_if": "accounts.google.com appears in URL or challenge/verify in URL",
+    "session_reuse": "Works in headless mode \u2014 PROVEN Jun 4 (7/7 success)"
+  }
+}

@@ -1,42 +1,39 @@
 {
-  "report": "Pinterest Test Pin Performance Monitor \u2014 Day 5 (72h Check)",
-  "updated": "2026-06-03T19:44:57.133457Z",
-  "hours_since_posted": "~84 hours (posted June 2, ~22:30 UTC)",
-  "monitoring_status": "MONITOR ONLY \u2014 72h milestone reached. First meaningful data window.",
-  "live_pins": [
+  "title": "Pinterest Performance Monitor \u2014 Day 6 (Phase 13C.8)",
+  "generated": "2026-06-04T17:36:12.198407Z",
+  "phase": "13C.8",
+  "status": "MONITOR ONLY \u2014 not posting Pins 3-5 today",
+  "live_pins": 2,
+  "hours_since_posted": "~108 hours (posted June 2, ~22:30 UTC)",
+  "expected_analytics_window": "72-120h is first meaningful window",
+  "pins": [
     {
       "pin": 1,
       "topic": "$100K Income: How Much House Can You Afford?",
-      "url": "https://www.pinterest.com/pin/1086071266410708648/",
-      "status": "LIVE",
+      "url": "https://www.pinterest.com/pin/???",
       "board": "Mortgage & Home Buying Tools",
-      "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=100k_income_home_affordability"
+      "utm": "utm_source=pinterest&utm_medium=social&utm_campaign=pin1_afford_100k",
+      "status": "Live \u2014 awaiting analytics",
+      "impressions": "Check Pinterest native analytics",
+      "saves": "Check Pinterest native analytics",
+      "outbound_clicks": "Check Pinterest native analytics",
+      "ga4_sessions": 0
     },
     {
       "pin": 2,
-      "topic": "Debt Snowball vs Avalanche: Which Pays Off Faster?",
-      "url": "https://www.pinterest.com/pin/1086071266410708663/",
-      "status": "LIVE",
-      "board": "Debt Payoff Strategies",
-      "utm": "utm_source=pinterest&utm_medium=organic_pin&utm_campaign=phase13_test&utm_content=debt_snowball_vs_avalanche"
+      "topic": "Compound Interest: See Your Money Grow",
+      "url": "https://www.pinterest.com/pin/???",
+      "board": "Investment & Retirement Tools",
+      "utm": "utm_source=pinterest&utm_medium=social&utm_campaign=pin2_compound_interest",
+      "status": "Live \u2014 awaiting analytics",
+      "impressions": "Check Pinterest native analytics",
+      "saves": "Check Pinterest native analytics",
+      "outbound_clicks": "Check Pinterest native analytics",
+      "ga4_sessions": 0
     }
   ],
-  "metrics_at_72h": {
-    "impressions": "Pending \u2014 Pinterest native analytics require manual check by Qasem on pinterest.com",
-    "saves": "Pending",
-    "outbound_clicks": "Pending",
-    "closeups": "Pending",
-    "utm_traffic_ga4": "0 sessions (GA4 shows no Pinterest organic traffic for UTM parameters yet)",
-    "note": "Pinterest analytics are NOT accessible via API without Pinterest Business API token. Qasem should check pinterest.com \u2192 Analytics \u2192 Overview for pin-level metrics."
-  },
-  "ga4_pinterest_check": {
-    "pinterest_organic_7d": "1 session (pre-existing, not from test pins)",
-    "pinterest_utm_84h": "0 sessions",
-    "note": "GA4 session count is near-zero (<1 user/day total). Pinterest organic traffic is not yet a measurable channel at this scale."
-  },
-  "total_live_pins": 99,
-  "no_new_pins_posted": true,
-  "monitor_only": true,
-  "next_action": "Qasem should check native Pinterest analytics. If pins show 0 impressions after 72h, consider whether boards are set up correctly or account needs more engagement before organic reach kicks in.",
-  "do_not_post_more_pins": true
+  "drafts": 10,
+  "drafts_note": "10 drafts from earlier headless posting attempts (May 23-31). Cleaned up in Phase 13B. Should be manually deleted in Pinterest UI.",
+  "next_pins_3_5": "NOT POSTED. Wait for Pins 1-2 analytics before creating more.",
+  "recommendation": "Qasem should check Pinterest native analytics. GA4 UTM tracking shows 0 sessions \u2014 but Pinterest analytics may show impressions/engagement."
 }

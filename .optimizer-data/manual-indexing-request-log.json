@@ -1,27 +1,55 @@
 {
-  "title": "Manual GSC Indexing Request Log \u2014 Phase 12.14",
-  "created": "2026-06-02T15:00:00+03:00",
-  "requested_by": "Qasem Mohammed (manual GSC UI)",
-  "total_requested": 10,
-  "expected_wait": "48 hours minimum before re-check",
-  "next_check": "2026-06-04T15:00:00+03:00",
-  "status_before_request": {
-    "discovered_not_indexed": [
-      "mortgage-calculator",
-      "mortgage-affordability",
-      "compound-interest",
-      "debt-payoff",
-      "401k-calculator",
-      "investment-return"
-    ],
-    "unknown_to_google": [
-      "retirement-planning",
-      "loan-calculator",
-      "tax-calculator",
-      "budget-planner"
-    ]
+  "title": "Manual & Automated GSC Indexing Request Log \u2014 Phase 13C.8",
+  "updated": "2026-06-04T17:35:10.361265Z",
+  "phase": "13C.8 \u2014 Day 6",
+  "automated_requests": {
+    "phase_13c7_jun4": {
+      "date": "2026-06-04",
+      "method": "CloakBrowser GSC UI (automated)",
+      "urls_submitted": 7,
+      "success_rate": "100% (7/7)",
+      "blocker": null,
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    }
   },
-  "urls": [
+  "seven_submitted_urls": [
+    {
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-much-mortgage-afford-100k-salary",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/best-mortgage-calculator",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "requested": "2026-06-04T20:20Z",
+      "next_check": "2026-06-06T17:35:10.361265Z"
+    }
+  ],
+  "manual_requests": [
     {
       "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
       "slug": "mortgage-calculator",
@@ -92,5 +120,6 @@
       "request_date": "2026-06-02T15:00:00+03:00",
       "next_check": "2026-06-04T15:00:00+03:00"
     }
-  ]
+  ],
+  "next_check_date": "2026-06-06T17:35:10.361265Z"
 }

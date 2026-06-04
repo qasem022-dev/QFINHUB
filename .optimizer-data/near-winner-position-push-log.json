@@ -1,13 +1,14 @@
 {
-  "title": "Near-Winner Position Push \u2014 Day 5 (Phase 13C.6)",
-  "generated": "2026-06-03T19:45:01.357186Z",
+  "title": "Near-Winner Position Push \u2014 Day 6 (Phase 13C.8)",
+  "generated": "2026-06-04T17:35:10.361265Z",
   "applied": 0,
-  "note": "No new position pushes Day 5. Day 4 pushes (5 pages) need re-crawl time. Monitor GSC for position movement over 7-14 days.",
-  "day4_pushes_monitoring": [
-    "/blog/fed-2025-report... (pos 9 \u2192 target 5)",
-    "/blog/20000-loan... (pos 11 \u2192 target 10)",
-    "/blog/mortgage-rates-2025... (pos 12 \u2192 target 8-10)",
-    "/blog/how-to-pay-off-credit-card-debt... (pos 14 \u2192 target 8-12)",
-    "/compare/best-mortgage-calculator (pos 18 \u2192 target 10-15)"
-  ]
+  "note": "No position pushes today. All 7 target pages were just submitted for indexing. Wait 48h for Google re-crawl before editing.",
+  "day5_pushes_monitoring": [
+    "/blog/fed-2025-report... (pos 9 \u2192 target 5) \u2014 indexing requested Jun 4",
+    "/blog/20000-loan... (pos 11 \u2192 target 10) \u2014 indexing requested Jun 4",
+    "/blog/mortgage-rates-2025... (pos 12 \u2192 target 8-10) \u2014 indexing requested Jun 4",
+    "/blog/how-to-pay-off-credit-card-debt... (pos 14 \u2192 target 8-12) \u2014 indexing requested Jun 4",
+    "/blog/how-much-mortgage-afford-100k... (pos 16) \u2014 indexing requested Jun 4"
+  ],
+  "day6_recommendation": "MONITOR ONLY \u2014 re-check positions after 48h re-crawl"
 }

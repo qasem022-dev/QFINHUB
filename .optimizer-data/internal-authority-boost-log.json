@@ -1,25 +1,27 @@
 {
-  "title": "Internal Authority Boost \u2014 Day 5 (Phase 13C.6)",
-  "generated": "2026-06-03T19:45:01.357997Z",
+  "title": "Internal Authority Boost \u2014 Day 6 (Phase 13C.8)",
+  "generated": "2026-06-04T17:35:10.361265Z",
   "applied": 3,
   "links": [
     {
-      "source": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
-      "target": "/calculators/mortgage-calculator",
-      "anchor": "calculate your monthly mortgage payment",
-      "type": "blog\u2192calculator"
+      "source": "/calculators/mortgage-calculator",
+      "target": "/decision/can-i-afford-a-400k-home",
+      "anchor": "can I afford a $400k home",
+      "type": "calculator\u2192decision"
     },
     {
-      "source": "/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
-      "target": "/calculators/mortgage-affordability",
-      "anchor": "mortgage affordability calculator",
-      "type": "blog\u2192calculator"
+      "source": "/calculators/compound-interest",
+      "target": "/guides/how-to-use-compound-interest",
+      "anchor": "master compound interest calculations",
+      "type": "calculator\u2192guide"
     },
     {
-      "source": "/decision/how-much-emergency-fund-do-i-need",
-      "target": "/calculators/budget-planner",
-      "anchor": "budget planner",
-      "type": "decision\u2192calculator"
+      "source": "/calculators/retirement-planning",
+      "target": "/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "anchor": "2027 Social Security COLA forecast",
+      "type": "calculator\u2192blog"
     }
-  ]
+  ],
+  "strategy": "Use indexed core calculator hubs to boost crawl priority of newly-submitted pages. Each link creates a crawl path Google is already following.",
+  "cumulative_links": 70
 }

@@ -1,33 +1,26 @@
 {
-  "title": "Technical Cleanup Day 5 (Phase 13C.6)",
-  "generated": "2026-06-03T19:45:26.928621Z",
+  "title": "Technical Cleanup \u2014 Day 6 (Phase 13C.8)",
+  "generated": "2026-06-04T17:36:12.198407Z",
+  "phase": "13C.8",
   "checks": {
-    "sitemap_no_404_urls": "\u2705 PASS \u2014 Verified. 12 '404' URLs from tracker were NOT real 404s (see 404 emergency report).",
-    "sitemap_no_410_urls": "\u2705 PASS",
-    "sitemap_no_noindex_urls": "\u2705 PASS",
-    "sitemap_no_dashboard_307": "\u26a0\ufe0f NOTE \u2014 3 dashboard URLs still in sitemap. Final decision: REMOVE (deferred to next maintenance).",
-    "sitemap_no_404_tracker_urls": "\u2705 CORRECTED \u2014 All 12 tracked '404' URLs diagnosed: 8 tracking bugs (wrong slugs) + 4 intentional removals. Zero real 404s to fix.",
-    "news_sitemap_valid": "\u2705 PASS \u2014 97 URLs, valid XML",
-    "robots_txt_correct": "\u2705 PASS \u2014 Allow: /, 2 sitemaps (main + news)",
-    "scenario_sitemap_not_submitted": "\u2705 PASS",
-    "guide_canonicals_working": "\u2705 PASS \u2014 Verified 4 corrected guide URLs",
-    "corrected_guide_urls": [
-      "/guides/how-to-use-retirement-planning: HTTP 200",
-      "/guides/how-to-use-mortgage-affordability: HTTP 200",
-      "/guides/how-to-use-compound-interest: HTTP 200",
-      "/guides/how-to-use-debt-payoff: HTTP 200"
-    ],
-    "comparison_canonicals_working": "\u2705 PASS \u2014 35/35 verified Day 3",
-    "core_calculator_canonicals_working": "\u2705 PASS \u2014 10/10 verified",
-    "no_accidental_noindex": "\u2705 PASS",
-    "no_duplicate_titles": "\u2705 PASS",
-    "no_broken_internal_links": "\u2705 PASS \u2014 Key pages 200 OK",
-    "twelve_404_urls_diagnosed": "\u2705 COMPLETE \u2014 See .optimizer-data/tracked-404-emergency-report.json",
-    "risky_automations": "\u2705 PASS \u2014 All paused"
+    "sitemap_no_dashboard_307": "PASS",
+    "sitemap_no_noindex_urls": "PASS",
+    "sitemap_no_404_410_urls": "PASS \u2014 no 404/410 URLs in sitemap",
+    "sitemap_no_bad_canonicals": "PASS \u2014 all canonical checks passed",
+    "news_sitemap_valid": "PASS",
+    "robots_txt_correct": "PASS",
+    "scenario_sitemap_not_submitted": "WARN \u2014 HTTP 200",
+    "guide_canonicals_working": "PASS \u2014 self-canonical",
+    "comparison_canonicals_working": "PASS \u2014 self-canonical",
+    "core_calculator_canonicals_working": "PASS \u2014 self-canonical",
+    "no_fake_404_tracker_bugs": "PASS \u2014 8 tracker bugs fixed in Phase 13C.7, 0 real 404s found",
+    "sitemap_count": 648
   },
-  "sitemap_counts": {
-    "main": "651",
-    "news": "97"
+  "summary": {
+    "total_checks": 11,
+    "passed": 10,
+    "failed": 0,
+    "warnings": 1
   },
-  "all_critical_checks_pass": true
+  "sitemap_dashboard_note": "Dashboard 307 fix committed (6b471cc) but CDN still serving cached old sitemap (648 URLs with 0 dashboard refs). Fix verified in source code \u2014 will propagate on next Vercel deploy refresh."
 }
