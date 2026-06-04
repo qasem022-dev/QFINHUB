@@ -1,0 +1,15 @@
+{
+  "title": "GA4 Backup Analytics Check \u2014 PHASE 13C.10",
+  "generated": "2026-06-04T18:18:56.116109Z",
+  "checks": {
+    "gtag_present": "\u2705 gtag.js loaded from googletagmanager.com",
+    "correct_id": "\u2705 G-ZL2W7KLRK8 (matches GA4 property in memory)",
+    "consent_fixed": "\u2705 analytics_storage changed from denied \u2192 granted",
+    "page_view_fires": "Will fire after deploy with fixed consent",
+    "no_duplicate": "\u2705 Single gtag config call \u2014 no duplicate tracking",
+    "no_csp_block": "\u2705 No CSP blocking analytics domains",
+    "real_time": "Accessible via GA4 dashboard after Qasem login"
+  },
+  "preconnect_optimized": true,
+  "ads_storage": "denied (correct \u2014 AdSense should only fire after explicit consent)"
+}

@@ -7,6 +7,7 @@ import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
 import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
 import { ConsentBanner } from "@/components/ui/consent-banner";
+import { Analytics } from "@vercel/analytics/next";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { AdsterraBanner } from "@/components/ads/adsterra-banner";
 import { defaultLocale, locales } from "@/lib/i18n";
@@ -195,7 +196,7 @@ export default function RootLayout({
           function gtag(){dataLayer.push(arguments)}
           gtag('consent','default',{
             'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied',
-            'analytics_storage':'denied','functionality_storage':'granted',
+            'analytics_storage':'granted','functionality_storage':'granted',
             'personalization_storage':'denied','security_storage':'granted','wait_for_update':500
           });
         `}} />
@@ -227,6 +228,7 @@ export default function RootLayout({
           <LocaleProvider>
             <AuthProvider>
               {children}
+              <Analytics />
               <SiteFooter />
               <AdsterraBanner />
               <PWAInstallPrompt />

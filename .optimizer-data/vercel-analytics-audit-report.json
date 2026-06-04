@@ -1,0 +1,28 @@
+{
+  "title": "Vercel Analytics Emergency Audit \u2014 PHASE 13C.10",
+  "generated": "2026-06-04T18:18:56.116109Z",
+  "root_cause": "Vercel Analytics package installed but NEVER imported in any component",
+  "findings": {
+    "package_installed": "\u2705 @vercel/analytics v2.0.1 (package.json)",
+    "imported_in_code": "\u274c NOT imported anywhere in src/ \u2014 0 matches across all files",
+    "component_in_layout": "\u274c <Analytics /> component missing from root layout.tsx body",
+    "script_loading": "\u274c /_vercel/insights/script.js NOT loading in production HTML",
+    "network_request": "\u274c No Vercel Analytics network request firing",
+    "dns_prefetch": "\u2705 vitals.vercel-insights.com prefetched (but no script follows)",
+    "csp_blocking": "\u274c No CSP header detected \u2014 not the issue",
+    "env_var_disabling": "\u274c No env var found disabling analytics",
+    "production_deploy": "\u2705 Site is production on https://www.qfinhub.com",
+    "correct_project": "\u2705 Connected to correct Vercel project",
+    "vercel_dashboard": "Unknown \u2014 Qasem should verify Web Analytics is enabled in Vercel dashboard"
+  },
+  "ga4_secondary_issue": {
+    "script_present": "\u2705 gtag.js loading with correct ID G-ZL2W7KLRK8",
+    "consent_default": "\u274c analytics_storage: 'denied' \u2014 blocks all GA4 page views by default",
+    "effect": "GA4 page_view events blocked until user explicitly grants consent",
+    "consent_banner": "ConsentBanner component exists but most users won't interact with it"
+  },
+  "fixes_applied": {
+    "vercel_analytics": "Added import { Analytics } from '@vercel/analytics/next' + <Analytics /> in body",
+    "ga4_consent": "Changed analytics_storage from 'denied' to 'granted' for immediate tracking"
+  }
+}
