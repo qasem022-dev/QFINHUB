@@ -136,7 +136,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "pay-off-debt-or-invest",
     title: "Pay Off Debt or Invest? The Math That Decides (2026 Guide)",
     description:
-      "Should you pay off debt or invest your extra cash? Compare the real returns: 22% credit card interest vs 7% investment returns. Our calculator shows which path builds more wealth.",
+      "Paying off debt vs investing — which actually builds more wealth for YOU? The answer depends on your interest rates and tax bracket. See the exact math with our free calculator.",
     cluster: "debt",
     question:
       "If I have extra cash each month, should I use it to pay down debt faster or invest it for the future?",
