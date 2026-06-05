@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | QFINHUB",
   },
   description:
-    "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance. Fast, accurate, and 100% free — no sign-up required.",
+    "Calculate your loan payments, mortgage affordability, retirement savings, tax estimates, and more — 125+ free financial calculators, instant results, no sign-up.",
   keywords: [
     "financial calculator",
     "loan calculator",

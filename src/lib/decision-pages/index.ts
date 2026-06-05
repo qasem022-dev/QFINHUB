@@ -1041,7 +1041,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "how-much-emergency-fund-do-i-need",
     title: "How Much Emergency Fund Do I Need? 3, 6, or 12 Months? (2026)",
     description:
-      "Should you save 3, 6, or 12 months of expenses? Compare emergency fund sizes by job stability, dependents, and income sources. Free savings calculator included.",
+      "Not sure how much to save? See what 3, 6, or 12 months of expenses looks like for YOUR situation. Compare emergency fund sizes by job type, income, and dependents — with a free calculator.",
     cluster: "personal",
     question: "How many months of living expenses should I save in my emergency fund?",
     shortAnswer:
