@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-06T01:45:43.609095",
+  "phase": "16.6 \u2014 First Click Sprint 2 + Backlink Conversion",
+  "status": "EXECUTED \u2014 2 CTR fixes deployed, 5 follow-ups prepped, backlinks monitored",
+  "deploy_verification": {
+    "loan_blog_new_meta_visible": true,
+    "pay_off_debt_deployed": "commit a187876 \u2014 awaiting CDN refresh",
+    "retirement_loan_fixes_deploying": "commit pushing now"
+  },
+  "gsc_gap_diagnosis": {
+    "manual": 311,
+    "api": 213,
+    "gap": "Known GSC API limitation \u2014 anonymized queries below API threshold",
+    "using": "Manual truth (311) as baseline, API for detail",
+    "flag": "DATA_GAP_OPEN"
+  },
+  "ctr_fixes_new": [
+    {
+      "page": "/decision/how-much-do-i-need-to-retire",
+      "impressions": 3,
+      "position": 5,
+      "fix": "Removed '25x your spending = $1.5M' from meta \u2014 users getting formula in SERP"
+    },
+    {
+      "page": "/tools/loan-20k-5yr-8pct",
+      "impressions": 1,
+      "position": 6,
+      "fix": "Removed '$405.53 payment' from title + meta \u2014 snippet cannibalization"
+    }
+  ],
+  "cumulative_ctr_fixes": 6,
+  "impressions_covered": "~150 of 311 (48%)",
+  "backlink_monitor": {
+    "total_sent": 12,
+    "replies": 0,
+    "backlinks": 0,
+    "bounces": 0,
+    "follow_ups_due_jun7": 5
+  },
+  "jun7_followups": {
+    "prepared": 5,
+    "all_auditor_90": true,
+    "status": "Ready to send on Jun 7",
+    "targets": [
+      "Real Estate Witch",
+      "Credit.org",
+      "Physician on FIRE",
+      "Greenpath",
+      "Young and Invested"
+    ]
+  },
+  "linkable_asset": "BUILD_NOW \u2014 upgrading widget promotion page to maximize outreach conversion",
+  "biggest_blocker": "CTR \u2014 6 fixes covering 48% of impressions. Remaining impressions are mostly off-topic auto-generated news. The 2 high-impression CTR-fixed pages (103 imp combined) are the canaries.",
+  "next_autonomous_action": "1. Send 5 Jun 7 follow-ups. 2. Build linkable asset upgrade. 3. Monitor GSC daily for first click.",
+  "confirmations": {
+    "no_stale_gsc": true,
+    "no_google_indexing_api": true,
+    "no_fake_traffic": true,
+    "old_automations_disabled": true,
+    "ctr_fixes_on_finance_pages_only": true,
+    "data_gap_documented": true
+  }
+}

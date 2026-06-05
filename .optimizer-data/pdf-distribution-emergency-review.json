@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "total_topics": 15,
+  "topics": [
+    "10 Essential Financial Calculators Everyone Should Use",
+    "The Complete Guide to Mortgage Affordability",
+    "Retirement Planning: How Much Do You Really Need?",
+    "Debt Payoff Strategies: Snowball vs Avalanche",
+    "Compound Interest: The 8th Wonder of the World",
+    "Tax Planning Guide: Save Money on Your Taxes",
+    "Budgeting 101: Build a Budget That Actually Works",
+    "Rent vs Buy: The Complete Decision Framework",
+    "Student Loan Repayment: Choose the Right Plan",
+    "Emergency Fund: How Much to Save and Where",
+    "Investing for Beginners: Start with $100",
+    "Credit Card Debt: Escape the Interest Trap",
+    "Home Buying Checklist: From Pre-Approval to Closing",
+    "Net Worth Tracker: Build Wealth Systematically",
+    "Financial Independence: The FIRE Movement Explained"
+  ],
+  "actual_status": {
+    "generated_html": 15,
+    "generated_markdown": 15,
+    "published_to_external_platforms": 0,
+    "published_to_qfinhub_site": false,
+    "in_sitemap": false,
+    "indexable": false,
+    "current_location": "/home/admin1/qfinhub/.pdf-distribution/pdfs/ (local only)",
+    "upload_targets_in_code": [
+      "SlideShare API",
+      "Scribd",
+      "Issuu",
+      "DocDroid",
+      "Archive.org"
+    ],
+    "uploads_actually_performed": [
+      "local only \u2014 uploads to platforms FAILED or were never attempted"
+    ]
+  },
+  "content_quality": {
+    "generation_method": "DeepSeek API (AI-generated)",
+    "auditor_reviewed": false,
+    "thin_content_risk": "MODERATE \u2014 AI-generated 800-1200 word guides are decent but not unique",
+    "duplicate_risk": "HIGH \u2014 generic finance topics, likely similar to thousands of existing guides",
+    "adsense_risk": "LOW (not indexed, not on site)",
+    "seo_risk": "LOW (not on site, not in sitemap)"
+  },
+  "recommendation": "DELETE all PDFs. These are AI-generated content that was never reviewed, never uploaded to real platforms, and exist only as local files. If PDF content is desired, it should be created through the Auditor pipeline and published as proper blog posts, not .md files in a hidden directory."
+}

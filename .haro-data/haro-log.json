@@ -193,5 +193,44 @@
     "skipped": 9,
     "failed": 0,
     "notes": "Sent 9, skipped 9, failed 0 of 18 relevant."
+  },
+  {
+    "timestamp": "2026-06-05T15:14:17.206Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon",
+    "emailsFound": 0,
+    "haroDigests": 0,
+    "queriesParsed": 0,
+    "relevant": 0,
+    "sent": 0,
+    "skipped": 0,
+    "failed": 0,
+    "notes": "IMAP connection failed: "
+  },
+  {
+    "timestamp": "2026-06-05T15:17:03.290Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon",
+    "emailsFound": 18,
+    "haroDigests": 1,
+    "queriesParsed": 219,
+    "relevant": 17,
+    "sent": 4,
+    "skipped": 13,
+    "failed": 0,
+    "notes": "Sent 4, skipped 13, failed 0 of 17 relevant."
+  },
+  {
+    "timestamp": "2026-06-05T16:11:57.687Z",
+    "runType": "scheduled-cron",
+    "edition": "afternoon",
+    "emailsFound": 23,
+    "haroDigests": 1,
+    "queriesParsed": 259,
+    "relevant": 21,
+    "sent": 4,
+    "skipped": 17,
+    "failed": 0,
+    "notes": "Sent 4, skipped 17, failed 0 of 21 relevant."
   }
 ]

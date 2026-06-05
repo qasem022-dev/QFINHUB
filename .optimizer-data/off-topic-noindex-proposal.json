@@ -1,0 +1,80 @@
+{
+  "title": "QFINHUB Off-Topic Noindex Proposal — Formal Review for Auditor + Technical Guardian",
+  "generated": "2026-06-06T23:45:00Z",
+  "status": "PROPOSAL — AWAITING AUDITOR + TECHNICAL GUARDIAN APPROVAL",
+  "policy": "Do NOT execute noindex until explicitly approved by Auditor AND Technical Guardian.",
+  "pages_proposed": [
+    {
+      "url": "/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+      "impressions_7d": 6,
+      "position": 8.5,
+      "clicks": 0,
+      "topic": "Reality TV (90 Day Fiance) — pop culture with forced mortgage angle",
+      "off_brand_assessment": "A financial calculator platform ranking for reality TV gossip. This dilutes Google's understanding of QFINHUB as a finance authority.",
+      "can_reframe_financially": "NO — The core topic is entertainment, not finance. The mortgage connection is tangential.",
+      "seo_risk_of_keeping": "HIGH — Each impression for unrelated queries teaches Google that QFINHUB is an entertainment site. This directly harms ranking potential for finance calculator queries.",
+      "seo_risk_of_noindexing": "LOW — 6 impressions is negligible traffic. No backlinks to this page. No linked pages depend on it for internal link equity.",
+      "adsense_risk": "MEDIUM — AdSense reviewers may flag this as low-quality/off-topic content and reject the application.",
+      "recommendation": "NOINDEX — Remove from Google index. Keep page accessible on site but add <meta name='robots' content='noindex'>.",
+      "priority": "HIGH",
+      "trigger": "Currently 6 imp, pos 8.5. Already meets threshold for noindex consideration."
+    },
+    {
+      "url": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+      "impressions_7d": 23,
+      "position": 10.1,
+      "clicks": 0,
+      "topic": "Hungary central bank + mortgage angle",
+      "off_brand_assessment": "Hungary-specific financial news with forced mortgage connection. QFINHUB targets US audience. This page ranks for Hungary-specific queries that won't convert.",
+      "can_reframe_financially": "PARTIALLY — Could be rewritten as a general 'How Central Bank Rates Affect Your Mortgage' guide, but the existing content is timeliness-dependent (June cut).",
+      "seo_risk_of_keeping": "MEDIUM — 23 impressions is significant (10.8% of all API traffic). These impressions train Google on Hungary geo relevance, diluting US-focus.",
+      "seo_risk_of_noindexing": "MEDIUM — 23 impressions is meaningful for a new site. Losing this traffic during domain sandbox could slow overall discovery. But these impressions aren't converting to clicks.",
+      "adsense_risk": "LOW",
+      "recommendation": "HOLD — Do NOT noindex yet. Monitor. If >50 imp or position reaches top 5, escalate to noindex review. Consider rewriting as evergreen 'central bank rate + mortgage' content.",
+      "priority": "MEDIUM"
+    },
+    {
+      "url": "/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+      "impressions_7d": 3,
+      "position": 5.0,
+      "clicks": 0,
+      "topic": "UK financial news + mortgage",
+      "off_brand_assessment": "UK-specific content on US-focused site. Low impressions but position 5 is notable.",
+      "can_reframe_financially": "PARTIALLY",
+      "seo_risk_of_keeping": "LOW — 3 impressions is minimal.",
+      "seo_risk_of_noindexing": "LOW",
+      "recommendation": "HOLD — Monitor. Low risk due to low impression volume.",
+      "priority": "LOW"
+    },
+    {
+      "url": "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+      "impressions_7d": 1,
+      "position": 6.0,
+      "clicks": 0,
+      "topic": "Stock picking / market speculation",
+      "off_brand_assessment": "Not educational finance — this is market commentary/tip. Doesn't align with calculator platform.",
+      "can_reframe_financially": "NO",
+      "seo_risk_of_keeping": "LOW — 1 impression.",
+      "recommendation": "HOLD — Low risk. Monitor quarterly. If group of stock-picking pages grows, batch-noindex.",
+      "priority": "LOW"
+    },
+    {
+      "url": "/blog/investing-resurgent-political-risk-derails-emerging-market-rallies",
+      "impressions_7d": 1,
+      "position": 9.0,
+      "clicks": 0,
+      "topic": "Emerging market commentary",
+      "off_brand_assessment": "Geopolitical/market commentary, not calculator or educational finance.",
+      "recommendation": "HOLD — Low risk. Same as above.",
+      "priority": "LOW"
+    }
+  ],
+  "summary": {
+    "pages_proposed_for_noindex": 1,
+    "pages_held_for_monitoring": 4,
+    "total_off_topic_impressions": 34,
+    "percent_of_total": "16.0% (34/213 API)",
+    "primary_risk": "90 Day Fiance — entertainment ranking on finance site, highest brand/SEO toxicity",
+    "execution_blocked_by": "AWAITING AUDITOR + TECHNICAL GUARDIAN APPROVAL"
+  }
+}

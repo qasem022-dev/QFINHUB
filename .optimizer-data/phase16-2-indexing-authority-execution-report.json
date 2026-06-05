@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-06-06T00:43:07.559754",
+  "phase": "16.2 \u2014 Execute Proof-Based Indexing + Fix Authority Sending",
+  "status": "PARTIALLY COMPLETE \u2014 authority sending FIXED, GSC UI executed but all URLs already indexed",
+  "gsc_ui_indexing": {
+    "executed": true,
+    "method": "direct_terminal (safe-gsc-ui-indexing-queue.py via CloakBrowser)",
+    "result": "PARTIAL SUCCESS \u2014 CloakBrowser session active, 7 URLs inspected, all 'already indexed / no button needed'",
+    "urls_checked": 7,
+    "urls_newly_submitted": 0,
+    "reason_no_submissions": "The 7 queued URLs were blog posts that already had GSC impressions and were already in Google's index. The 'Request Indexing' button only appears for URLs not yet indexed.",
+    "batch9_status": "NOT IN QUEUE \u2014 T3 calculators (amortization-schedule, auto-loan, etc.) were not in the safe queue. Queue is auto-populated from priority URLs which are currently blog posts with impressions.",
+    "script_bug": "safe-gsc-ui-indexing-queue.py crashed with KeyError: 'runs' after checking URLs. Run log JSON expects 'runs' key but file format differs.",
+    "gsc_profile_working": true,
+    "next_action": "Repopulate queue with T3 Batch 9 URLs OR use manual GSC UI inspection URLs"
+  },
+  "gmail_smtp": {
+    "diagnosed": true,
+    "result": "\u2705 WORKING \u2014 credentials valid, SMTP test passed",
+    "previous_failure_reason": "Not a technical failure. Hermes deferred sending in prior sessions."
+  },
+  "follow_ups": {
+    "re_audited": true,
+    "money_under_30_score": 94,
+    "max_real_estate_score": 94,
+    "both_approved": true,
+    "sent": 2,
+    "sent_at": "2026-06-06T00:43:07.559754",
+    "method": "Gmail SMTP (q.finhub@gmail.com)"
+  },
+  "prospect_drafts": {
+    "created": 5,
+    "ready_for_approval": 3,
+    "needs_revision": 2,
+    "ready": [
+      "The Balance (92)",
+      "Financial Samurai (91)",
+      "Mortgage Calculator .org (90)"
+    ],
+    "needs_work": [
+      "HousingWire (85)",
+      "Credit Karma (80)"
+    ]
+  },
+  "linkable_asset": {
+    "decision": "BUILD_LATER",
+    "reason": "Build after first backlink or first organic click. Current page is functional for outreach."
+  },
+  "authority_rules": {
+    "updated": true,
+    "key_rule": "Outreach follow-ups must be sent if due + SMTP works + Auditor >=90. No more 'checked but did nothing.'"
+  },
+  "scoreboard": {
+    "follow_ups_sent_today": 2,
+    "outreach_total": 9,
+    "prospects_researched": 5,
+    "gsc_ui_running": "Executed \u2014 7 checked, 0 newly submitted (all already indexed)"
+  },
+  "what_phase16_2_delivered": [
+    "\u2705 GSC UI indexing EXECUTED via direct terminal (not subagent timeout)",
+    "\u2705 CloakBrowser session confirmed working",
+    "\u2705 Gmail SMTP diagnosed + verified working",
+    "\u2705 2 follow-ups SENT (Money Under 30, Max Real Estate Exposure) with Auditor scores 94",
+    "\u2705 5 prospect drafts created (3 ready, 2 need revision)",
+    "\u2705 Authority execution rules updated (no more silent skipping)",
+    "\u2705 Linkable asset decision: BUILD_LATER (after first backlink)",
+    "\u26a0\ufe0f GSC UI submitted 0 new URLs \u2014 all 7 were already indexed. Batch 9 T3 calculators NOT in queue."
+  ],
+  "biggest_blocker": "DOMAIN AUTHORITY \u2014 0 backlinks. Follow-ups sent today are the first real authority actions. GSC UI indexing of T3 calculators still needs queue repopulation.",
+  "next_autonomous_action": "1. Repopulate GSC UI queue with T3 Batch 9 calculators. 2. Run GSC UI for Batch 9. 3. Send 5 follow-ups tomorrow (Jun 7). 4. Fix safe-gsc-ui-indexing-queue.py 'runs' KeyError bug.",
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_unproven_submissions_counted": true,
+    "no_risky_old_automations": true,
+    "no_haro_sent": true,
+    "no_pinterest_actions": true,
+    "no_x_posts": true,
+    "no_mass_content": true,
+    "gsc_executed_via_direct_terminal": true,
+    "follow_ups_sent_with_proof": true
+  }
+}

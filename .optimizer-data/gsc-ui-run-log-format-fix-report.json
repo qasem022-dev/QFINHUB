@@ -1,0 +1,8 @@
+{
+  "fixed": true,
+  "bugs": [
+    "load_run_log() now migrates old 'results' format to 'runs' format",
+    "was_recently_requested() now uses 'submitted_urls' key not 'submitted' (integer)",
+    "Added isinstance check for dict entries to skip integer count fields"
+  ]
+}

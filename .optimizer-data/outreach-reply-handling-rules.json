@@ -1,0 +1,87 @@
+{
+  "title": "QFINHUB Outreach Reply Handling Rules",
+  "generated": "2026-06-06T22:00:00Z",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "scenario": "POSITIVE REPLY — Prospect wants the widget",
+      "action": [
+        "Respond within 24 hours",
+        "Provide the iframe embed code (copy from widget page)",
+        "Offer custom sizing if needed (width/height adjustments)",
+        "Give short explanation: free, no signup, no data collection",
+        "Mention the attribution link is built into the widget",
+        "DO NOT push SEO anchor text or exact-match links",
+        "DO NOT ask for dofollow links",
+        "If they ask about attribution: 'The widget includes a small QFINHUB link — it helps others discover our free calculators too'"
+      ]
+    },
+    {
+      "scenario": "POSITIVE REPLY — Prospect wants more details",
+      "action": [
+        "Reply with publisher benefits: keep visitors on site, 100% free, mobile responsive",
+        "Include privacy/safety details: no data collected, all calculations client-side",
+        "Mention it works with WordPress, Squarespace, Wix, Webflow, custom HTML",
+        "Link to widget page for full FAQ"
+      ]
+    },
+    {
+      "scenario": "NEGATIVE REPLY — Prospect says no",
+      "action": [
+        "Thank them politely for considering",
+        "Mark CLOSED in tracker",
+        "Do NOT continue follow-ups",
+        "Do NOT pitch again"
+      ]
+    },
+    {
+      "scenario": "NO REPLY — After initial email + 1 follow-up",
+      "action": [
+        "Wait 7 days from last send",
+        "Send ONE final follow-up: brief, polite, 2-3 sentences max",
+        "If still no reply after final follow-up: mark CLOSED",
+        "Do NOT send more than 3 total emails per prospect"
+      ]
+    },
+    {
+      "scenario": "BOUNCE — Email undeliverable",
+      "action": [
+        "Mark BOUNCED in tracker",
+        "Try alternate contact method if available (contact form, Twitter DM)",
+        "If no alternate: mark CLOSED",
+        "Do NOT retry the same email"
+      ]
+    },
+    {
+      "scenario": "PROSPECT ASKS — 'What's the catch?' or 'How do you make money?'",
+      "action": [
+        "Reply: 'No catch. We're building QFINHUB as a free calculator platform. The widget attribution link helps people discover our other free tools. We may add non-intrusive ads on QFINHUB.com in the future, but the widget itself will remain ad-free and free forever.'"
+      ]
+    },
+    {
+      "scenario": "PROSPECT WANTS — Different calculator/widget",
+      "action": [
+        "Check if we have it (125+ calculators available)",
+        "If yes: provide that widget's embed code",
+        "If no: offer to build it, ask for specifications",
+        "Do NOT promise features we don't have"
+      ]
+    }
+  ],
+  "general_principles": [
+    "Always respond within 24 hours — speed matters for conversion",
+    "Be authentic: Qasem Mohammed, founder of QFINHUB",
+    "Never use SEO jargon or 'link building' language",
+    "Never offer payment for links",
+    "Widget embed is genuinely free — lead with that",
+    "If they embed it and link back, that's organic — don't demand it",
+    "Every reply should add value, not pressure"
+  ],
+  "followup_schedule": {
+    "initial_email": "Day 0",
+    "followup_1": "Day +6 (if no reply)",
+    "followup_2_final": "Day +13 (if still no reply)",
+    "max_total_emails_per_prospect": 3,
+    "stop_condition": "No reply after final follow-up OR negative reply at any point"
+  }
+}

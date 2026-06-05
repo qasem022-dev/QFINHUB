@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-06T00:42:20.897980",
+  "asset": "Mortgage Affordability Widget Upgrade",
+  "current_page": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "auditor_decision": "BUILD_LATER",
+  "reason": "Current widget page exists and is functional. Priority now is GSC UI indexing (proven submissions) and authority follow-ups. Building the upgrade before we have backlinks is cart-before-horse. Build when: (a) at least 1 backlink acquired, or (b) GSC shows clicks exist (proving traffic potential).",
+  "scheduled": "After first backlink or first organic click",
+  "build_tasks_deferred": [
+    "Upgrade landing page with embed instructions + screenshots",
+    "Add social proof / 'used by X sites' counter",
+    "Create 'How to embed' guide",
+    "Add UTM tracking",
+    "SEO: target 'free mortgage affordability calculator widget'",
+    "Add schema markup (SoftwareApplication)"
+  ],
+  "current_page_usable_for_outreach": true,
+  "current_page_has_embed_code": "Yes \u2014 iframe already at /embed/mortgage-affordability",
+  "verdict": "Build later. Focus on proven indexing + authority sending now."
+}

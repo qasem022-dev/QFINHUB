@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-06T01:35:55.112023",
+  "phase": "16.4 update",
+  "primary_data_source": ".optimizer-data/gsc-live-data-corrected.json",
+  "pull_procedure": [
+    "1. python3 scripts/refresh-gsc-token.py",
+    "2. Pull query dimension (rowLimit=250, 7-day window)",
+    "3. Pull page dimension (rowLimit=250, 7-day window)",
+    "4. Save to gsc-live-data-corrected.json",
+    "5. Compare API page total with Qasem manual UI if available",
+    "6. Flag DATA_MISMATCH if difference >10%",
+    "7. Update all scoreboards from gsc-live-data-corrected.json"
+  ],
+  "baseline_metrics": {
+    "impressions_7d": 311,
+    "clicks_7d": 0,
+    "avg_position": 19.3,
+    "source": "Qasem manual GSC UI Jun 6",
+    "api_page_impressions": 213
+  },
+  "data_quality_rules": [
+    "Never use cached GSC files older than 6 hours",
+    "Always refresh token before pull",
+    "Always pull BOTH query and page dimensions",
+    "Always compare with Qasem UI before reporting",
+    "Flag DATA_MISMATCH in report if API != UI by >10%"
+  ],
+  "post_deploy_verification": "After deploy, verify sitemap + analytics + ads.txt"
+}

@@ -1,11 +1,12 @@
 {
-  "title": "Second Content Opportunity \u2014 Day 4",
-  "generated": "2026-06-04T20:21:36.832436Z",
-  "auditor_decision": "HOLD",
-  "reason": "Emergency Fund Guide just published (Day 3). Wait for: (1) Google indexing, (2) GSC impression data, (3) any re-crawl data on 7 fixed pages. Creating a second page before data arrives is speculative.",
-  "next_candidates": [
-    "Improve existing blog posts with calculator CTAs (if re-crawl shows CTR improvement)",
-    "Create 'mortgage calculator guide' if Google shows demand",
-    "Improve Tier 2 calculator pages once indexed"
+  "title": "Content Opportunity Decision — Day 5",
+  "generated": "2026-06-04T20:47:00Z",
+  "decision": "HOLD_FOR_DATA",
+  "reason": "No new GSC queries with meaningful volume. All 25 queries are low-impression (1-2 each) and heavily skewed toward 20000-loan queries. The Emergency Fund Guide was just created on Day 3 — needs time to get indexed and generate data before deciding on a second page.",
+  "auditor_recommendation": "Improve EXISTING pages when cooldown expires (Day 7). Create second page no earlier than Day 7-8, targeting a query with proven demand (10+ impressions).",
+  "candidates_for_day7": [
+    "Roth IRA calculator guide (roth-ira got submitted GSC UI, awaiting data)",
+    "Retirement withdrawal guide (retirement-withdrawal — submitted GSC UI)",
+    "Budget planner deep dive (budget-planner is T1 indexed — strong hub for content)"
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "policy": "HARO DRAFT-ONLY",
+  "effective": "2026-06-05T19:57:41.239322",
+  "rules": [
+    "NO auto-sending to any HARO query",
+    "All responses must be saved as local drafts",
+    "Drafts reviewed by human before any send",
+    "Only finance-calculator-relevant topics allowed",
+    "QFINHUB must only be cited for domains it has actual expertise in (calculators, mortgage, retirement, budgeting, debt, investing basics, tax estimation)",
+    "No fabricated statistics or 'our data shows' claims",
+    "No responding to topics outside finance calculator domain",
+    "If in doubt, skip the query"
+  ],
+  "blacklisted_categories": [
+    "education",
+    "cybersecurity",
+    "AI/tech infrastructure",
+    "workplace/HR/DEI",
+    "legal/eDiscovery",
+    "psychology/speech",
+    "real estate neighborhood safety",
+    "IPO speculation",
+    "women-in-business statistics",
+    "podcast interviews",
+    "author interviews",
+    "product reviews"
+  ]
+}

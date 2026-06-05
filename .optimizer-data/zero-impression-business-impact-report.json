@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-06-06T00:14:29.841647",
+  "current_metrics": {
+    "visitors_daily": "~0 (GA4 shows 6 users in 7 days)",
+    "impressions_7d": 77,
+    "impressions_24h": "0 (GSC reporting lag \u2014 last data point is Jun 5)",
+    "clicks_7d": 0,
+    "clicks_24h": 0,
+    "avg_position": "20-100 (varies by query)",
+    "bounce_rate": "100%",
+    "avg_session_duration": "1 second"
+  },
+  "month2_target": {
+    "visitors_needed": "5,000-25,000",
+    "current_daily": 0,
+    "daily_needed": "167-833",
+    "gap": "INFINITE \u2014 need visitors to exist first"
+  },
+  "month5_target": {
+    "visitors_target": "1,000,000/month",
+    "daily_needed": "33,333",
+    "gap": "Impossible at current trajectory without exponential growth"
+  },
+  "revenue_target": {
+    "monthly_target_mo14": "$50,000",
+    "current": "$0.00",
+    "prerequisite": "AdSense approval + meaningful traffic"
+  },
+  "on_track": false,
+  "root_bottleneck": "DOMAIN AUTHORITY. 33-day-old domain with 0 backlinks is in Google's sandbox. Pages are crawled but not trusted enough to rank. No amount of internal optimization can overcome the backlink gap.",
+  "corrective_action_plan": [
+    "1. Execute ALL planned GSC UI indexing (70+ remaining T3 calcs not yet clicked in GSC)",
+    "2. Fix GSC token refresh for daily automated pulls",
+    "3. Aggressive internal linking from indexed pages to all T3 calcs",
+    "4. Follow-up outreach to 7 sent targets \u2014 2 overdue today (Jun 6)",
+    "5. Create 1 high-confidence content page when any query reaches 10+ impressions",
+    "6. Resubmit sitemaps weekly",
+    "7. Monitor GSC daily for first click \u2014 that's the canary"
+  ],
+  "honest_assessment": "The site is 33 days old. Google sandbox for new domains typically lasts 2-6 months. Without backlinks, the sandbox could extend indefinitely. Internal optimization (indexing, links, content) is necessary but not sufficient \u2014 the backlink gap is the #1 blocker."
+}

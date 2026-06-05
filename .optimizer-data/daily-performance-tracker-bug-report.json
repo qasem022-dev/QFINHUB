@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "script": "/home/admin1/qfinhub/scripts/daily-tracker.py",
+  "symptoms_reported": "GSC clicks 0, impressions 0, position 0, Pinterest pins 0, HARO 0",
+  "root_causes": [
+    {
+      "metric": "GSC clicks/impressions/position",
+      "issue": "Reads from .optimizer-data/traffic-report.json",
+      "detail": "Last updated 2026-05-31 (5+ days stale). Shows 0 clicks, 120 impressions (7-day). Position shows as 0 because the script reads 'position' but JSON uses 'avg_position'. The report is simply old.",
+      "fix": "Not a bug in tracker \u2014 traffic-report.json needs to be regenerated daily. Phase 15 cron should handle this."
+    },
+    {
+      "metric": "Pinterest pins = 0",
+      "issue": "Reads from .pinterest-data/generator-state.json",
+      "detail": "File last modified Jun 2. Generator crons paused since Jun 2. Data is accurate \u2014 no pins being generated.",
+      "fix": "Expected behavior. If Pinterest pins resume via Phase 15, this will update."
+    },
+    {
+      "metric": "HARO = 0",
+      "issue": "Counts total entries in .haro-data/sent-responses.json",
+      "detail": "File has 78 entries but the tracker may have read it before today's 8 responses were added (ran at 18:19, HARO ran at 18:17 and 19:11). Also, the tracker reads 'total_responses' as len() of the sent array \u2014 if JSON parsing failed, defaults to 0.",
+      "fix": "Timing issue + fragile JSON parsing. Tracker should count today's responses specifically, not all-time."
+    },
+    {
+      "metric": "X/Twitter metrics",
+      "issue": "Reads from .x-data-v2/viral-engine-state.json",
+      "detail": "File last modified May 31. X crons have been paused since May 31. Shows stale data.",
+      "fix": "Expected \u2014 X crons are paused. Remove X tracking from this script."
+    }
+  ],
+  "diagnosis": "The tracker is NOT broken per se \u2014 it's reading stale data files that aren't being updated because the engines that update them are all paused. The only real bug is the GSC 'position' field mismatch (code reads 'position', JSON has 'avg_position'). The tracker should be replaced by Phase 15's scoreboard, which is designed to work with live data.",
+  "recommendation": "DELETE daily-tracker.py cron. Phase 15 cron output should serve as the daily performance report."
+}

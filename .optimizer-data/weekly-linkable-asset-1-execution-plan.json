@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-06-06T00:35:09.099970",
+  "asset_name": "Free Mortgage Affordability Calculator Widget",
+  "asset_type": "embeddable_calculator_widget",
+  "existing_page": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "landing_page": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "embed_route": "https://www.qfinhub.com/embed/mortgage-affordability",
+  "why_people_would_link": [
+    "Free, no-signup mortgage affordability tool for their readers",
+    "Unique: shows affordability range based on income/debts, not just payment",
+    "Embeddable iframe \u2014 no technical work for site owners",
+    "Better than static mortgage calculators \u2014 interactive and personalized",
+    "Complements existing mortgage content on real estate/PF blogs"
+  ],
+  "calculators_used": [
+    "mortgage-affordability",
+    "mortgage-calculator",
+    "debt-to-income"
+  ],
+  "content_sections_to_add": [
+    "Hero section: 'How Much House Can You Afford? Free Calculator'",
+    "Embed code section with copy-paste iframe snippet",
+    "Example results showing affordability range",
+    "How it works: income \u2192 DTI \u2192 loan amount \u2192 home price",
+    "FAQ: What is DTI? What down payment do I need?",
+    "Comparison table: widget vs Zillow vs NerdWallet calculators",
+    "Testimonials/social proof section (to be added later)",
+    "Call-to-action: 'Add this free calculator to your site'"
+  ],
+  "outreach_targets_for_this_asset": [
+    "Real estate blogs (Max Real Estate Exposure, The Mortgage Reports)",
+    "Personal finance blogs (Money Under 30, Financial Samurai)",
+    "Mortgage resource pages (Mortgage Calculator .org)",
+    "First-time homebuyer guides",
+    "Realtor resource pages"
+  ],
+  "build_tasks": [
+    "Upgrade widget landing page with embed instructions",
+    "Add social proof / 'used by X sites' counter",
+    "Create 'How to embed' guide with screenshots",
+    "Add UTM tracking to widget links",
+    "SEO: target 'free mortgage affordability calculator widget' + 'embed mortgage calculator'",
+    "Add schema markup (SoftwareApplication)"
+  ],
+  "expected_completion": "2-3 days (mostly content + design, already have the widget)",
+  "auditor_risk_score": 85,
+  "status": "PLANNED_NOT_BUILT",
+  "rule": "Do NOT build unless Auditor approves and Qasem confirms"
+}

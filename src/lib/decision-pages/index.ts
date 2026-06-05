@@ -136,7 +136,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "pay-off-debt-or-invest",
     title: "Pay Off Debt or Invest? The Math That Decides (2026 Guide)",
     description:
-      "Paying off debt vs investing — which actually builds more wealth for YOU? The answer depends on your interest rates and tax bracket. See the exact math with our free calculator.",
+      "Pay off your debt or invest in the market? The math changes with every interest rate and your tax bracket. Run YOUR exact numbers — see which path builds wealth faster. Free calculator.",
     cluster: "debt",
     question:
       "If I have extra cash each month, should I use it to pay down debt faster or invest it for the future?",
@@ -250,7 +250,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "retire-at-45-with-1-million",
     title: "Can You Retire at 45 With $1 Million? The Real Math",
     description:
-      "Is $1 million enough to retire at 45? See the safe withdrawal rate, tax implications, healthcare costs, and how long your money will last. Free calculator included.",
+      "Can YOU retire at 45 with $1 million? It depends on your spending, not just the number. Run your own numbers — see exactly how long your money lasts. Free calculator, instant results.",
     cluster: "retirement",
     question:
       "Is $1,000,000 enough to retire at age 45 and never work again?",
@@ -787,7 +787,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "snowball-vs-avalanche-which-wins",
     title: "Debt Snowball vs Avalanche: Which Payoff Method Saves More? (2026)",
     description:
-      "Avalanche saves $2,347 more in interest vs snowball on $30K of debt. Compare both payoff methods side by side, see which is faster, and calculate your exact savings. Free debt payoff tool.",
+      "Which debt payoff strategy will save YOU more — snowball or avalanche? The answer is different for everyone. Plug in your own debts and see the exact math. Free calculator, instant results.",
     cluster: "debt",
     question: "Should I use the debt snowball (smallest balance first) or debt avalanche (highest interest first) to pay off my debts?",
     shortAnswer:

@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-06-06T00:41:43.271996",
+  "day": 1,
+  "status": "DRAFTS_CREATED_NOT_SENT",
+  "prospects": [
+    {
+      "target": "The Balance",
+      "email": "contact@thebalancemoney.com",
+      "personalized_line": "Your mortgage and homebuying guides are some of the most comprehensive I've seen for first-time buyers.",
+      "value_prop": "Our free embeddable affordability widget would give your readers an instant, interactive answer to 'how much house can I afford?' \u2014 complementing your excellent written guides with a practical tool.",
+      "asset_offered": "Mortgage Affordability Calculator Widget (free, no-signup, iframe embed)",
+      "auditor_score": 92,
+      "decision": "READY_FOR_APPROVAL"
+    },
+    {
+      "target": "Financial Samurai",
+      "email": "sam@financialsamurai.com",
+      "personalized_line": "I've been following your writing on financial independence and housing decisions \u2014 your '30/30/3 rule' for home buying is a great framework.",
+      "value_prop": "Our mortgage affordability widget helps readers apply frameworks like yours with real numbers \u2014 instantly showing what they can afford based on income, debts, and location.",
+      "asset_offered": "Mortgage Affordability Calculator Widget (free, no-signup, iframe embed)",
+      "auditor_score": 91,
+      "decision": "READY_FOR_APPROVAL"
+    },
+    {
+      "target": "Mortgage Calculator (.org)",
+      "email": "info@mortgagecalculator.org",
+      "personalized_line": "Your mortgage calculator is one of the most-used tools online \u2014 we've built a complementary affordability widget that adds a 'how much can I afford' layer.",
+      "value_prop": "While users calculate specific mortgage payments on your site, our widget helps them determine the right price range upfront. The two tools work together perfectly.",
+      "asset_offered": "Mortgage Affordability Calculator Widget (free, no-signup, iframe embed)",
+      "auditor_score": 90,
+      "decision": "READY_FOR_APPROVAL"
+    },
+    {
+      "target": "HousingWire",
+      "email": "editorial@housingwire.com",
+      "personalized_line": "Your coverage of mortgage industry trends is essential reading \u2014 we'd love to offer your audience a practical tool that complements your analysis.",
+      "value_prop": "For mortgage professionals reading HousingWire, our widget provides a reliable, accurate affordability calculator they can reference or embed in client-facing content.",
+      "asset_offered": "Mortgage Affordability Calculator Widget",
+      "auditor_score": 85,
+      "decision": "NEEDS_REVISION \u2014 Score <90. Need more B2B angle for mortgage professional audience."
+    },
+    {
+      "target": "Credit Karma",
+      "email": "press@creditkarma.com",
+      "personalized_line": "Credit Karma's mortgage marketplace helps millions find the right loan \u2014 our widget could add an affordability-first step to that journey.",
+      "value_prop": "Before users compare mortgage offers, they need to know their price range. Our widget provides that instantly, with no signup required.",
+      "asset_offered": "Mortgage Affordability Calculator Widget",
+      "auditor_score": 80,
+      "decision": "NEEDS_REVISION \u2014 Score <90. Large corp, low response probability. Need stronger angle or different asset."
+    }
+  ],
+  "ready_count": 3,
+  "needs_revision_count": 0,
+  "rule": "Do NOT send until Auditor gives final approval. Only >=90 can be sent."
+}

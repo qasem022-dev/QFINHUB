@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "total_sent_today": 8,
+  "total_sent_all_time": 78,
+  "today_responses": [
+    {
+      "time": "2026-06-05T15:17 UTC",
+      "topic": "Women Building Businesses Their Daughters Can Look Up To",
+      "category": "other",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '78% more revenue per dollar invested' \u2014 no source",
+      "identity_risk": "HIGH \u2014 QFINHUB cited as authority on women-led business metrics",
+      "recommendation": "No follow-up needed; claim cannot be substantiated"
+    },
+    {
+      "time": "2026-06-05T15:17 UTC",
+      "topic": "Graduates with a master's in education",
+      "category": "other",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '$12,000 salary bump' based on personal experience, then cites QFINHUB ROI calculator",
+      "identity_risk": "HIGH \u2014 QFINHUB has no education ROI calculator",
+      "recommendation": "No follow-up; fabricated calculator reference"
+    },
+    {
+      "time": "2026-06-05T15:18 UTC",
+      "topic": "Universities as AI computing hubs",
+      "category": "other",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '$15 million' cluster cost and '60% research timeline reduction'",
+      "identity_risk": "HIGH \u2014 QFINHUB has no AI infrastructure expertise",
+      "recommendation": "No follow-up"
+    },
+    {
+      "time": "2026-06-05T15:18 UTC",
+      "topic": "Iran's Cyber Operations",
+      "category": "investing",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '$1.2 billion in losses' and '$4.3 million recovery cost'",
+      "identity_risk": "CRITICAL \u2014 QFINHUB cited as tracking cyber threats; geopolitical risk",
+      "recommendation": "No follow-up; high reputation risk"
+    },
+    {
+      "time": "2026-06-05T16:12 UTC",
+      "topic": "Communication and Workplace Culture Specialists",
+      "category": "other",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '$62.4 million in lost productivity' from 'our internal data'",
+      "identity_risk": "CRITICAL \u2014 QFINHUB portrayed as having workplace consulting data",
+      "recommendation": "No follow-up; fabricated data claim"
+    },
+    {
+      "time": "2026-06-05T16:12 UTC",
+      "topic": "Elementary education master's degree ROI",
+      "category": "other",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '$5,000-$10,000 salary boost' and '$200,000+ return'",
+      "identity_risk": "HIGH \u2014 QFINHUB ROI calculator cited for education",
+      "recommendation": "No follow-up"
+    },
+    {
+      "time": "2026-06-05T16:13 UTC",
+      "topic": "Seniors facing higher refinancing costs",
+      "category": "other",
+      "relevant_to_qfinhub": true,
+      "unsupported_claims": "Claims '$12,000 in extra costs over 5 years' for $250k loan",
+      "identity_risk": "MEDIUM \u2014 at least finance-adjacent but unverified numbers",
+      "recommendation": "Monitor for reply; could be legitimate if numbers checked"
+    },
+    {
+      "time": "2026-06-05T16:13 UTC",
+      "topic": "SpaceX IPO hype",
+      "category": "other",
+      "relevant_to_qfinhub": false,
+      "unsupported_claims": "Claims '40% spike in retail sign-ups' based on Rivian IPO",
+      "identity_risk": "MEDIUM \u2014 investment topic but irrelevant to QFINHUB calculators",
+      "recommendation": "No follow-up"
+    }
+  ],
+  "overall_assessment": {
+    "genuinely_finance_relevant": "1/8 (12.5%)",
+    "contains_unsupported_claims": "8/8 (100%)",
+    "cites_qfinhub_inappropriately": "7/8 (87.5%)",
+    "brand_reputation_risk": "CRITICAL \u2014 QFINHUB is being positioned as an authority on education, cybersecurity, workplace culture, and AI infrastructure \u2014 NONE of which it does",
+    "identity_confusion": "CRITICAL \u2014 responses cite 'our data', 'our analysis', 'our internal data' for fabricated statistics",
+    "journalist_trust_risk": "HIGH \u2014 if any journalist follows up, QFINHUB will be exposed as having no real data"
+  },
+  "recommendation": "DISABLE HARO AUTO-SEND PERMANENTLY. If HARO is desired, change to draft-only mode where responses are saved for human review before sending.",
+  "previous_runs_concern": "Jun 3 had 18 responses sent in one run. Jun 4 had 9. The system has been aggressively auto-responding for weeks."
+}

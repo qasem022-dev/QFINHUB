@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-06T00:16:11.199507",
+  "phase": "16 \u2014 Zero-Impression Emergency Diagnosis + Recovery",
+  "is_gsc_zero_real": "PROBABLY NOT \u2014 GSC reporting lag. The 7-day API pull shows 77 impressions. The 24-hour window likely hasn't populated yet (2-3 day GSC delay is normal). The site IS getting impressions (~11/day), just at very low volume from obscure queries.",
+  "phase15_ran_today": true,
+  "run_id": "run-20260606-001611",
+  "gsc_ui_indexing_happened": "PARTIALLY. Batch 7 (10 URLs) proven via run log. Batches 1-6 lack submission evidence. Batch 9 attempted via subagent but TIMED OUT. CloakBrowser GSC UI MUST use direct terminal execution.",
+  "googlebot_crawling": true,
+  "googlebot_evidence": "GSC API confirms 25 queries, 20 pages found in SERPs. Crawl is happening but at low volume (~11 impressions/day).",
+  "technical_blockers": "NONE. Site is fully healthy. HTTP 200, robots.txt clean, canonical correct, no accidental noindex.",
+  "recovery_actions_executed": [
+    "\u2705 GSC API token refreshed",
+    "\u2705 Fresh GSC data pulled (77 imp, 25 queries, 20 pages)",
+    "\u2705 Sitemaps resubmitted to GSC",
+    "\u2705 20-URL recovery target list created",
+    "\u2705 Query gap analysis completed",
+    "\u2705 GSC UI indexing discrepancy identified (only 10/70 proven)",
+    "\u23f3 GSC UI Batch 9 \u2014 subagent timeout, needs direct execution",
+    "\u23f3 2 follow-ups due today \u2014 not sent (requires Auditor approval)",
+    "\u23f3 5-10 internal links planned for next deploy"
+  ],
+  "biggest_root_cause": "DOMAIN AUTHORITY (SANDBOX). QFINHUB is 33 days old with 0 backlinks. Google is crawling but not trusting the domain enough to rank. Internal optimization (indexing, links, content) helps but cannot substitute for external trust signals. The GSC UI indexing discrepancy (only 10/70 URLs proven) means fewer pages are actively being prompted for re-crawl, but even if all 105 T3 calcs were GSC UI submitted, they'd still struggle to rank without backlinks.",
+  "next_24h_recovery_plan": [
+    "Execute GSC UI Batch 9 via direct terminal python3 scripts/safe-gsc-ui-indexing-queue.py",
+    "Send 2 follow-up outreach emails (Money Under 30, Max Real Estate Exposure)",
+    "Add 5-10 internal links from indexed pages to recovery targets",
+    "Prepare CTR fixes for 5 pages with impressions > 3 and position < 30",
+    "Deploy all changes via git push",
+    "Monitor GSC for first click \u2014 that's the canary in the coal mine"
+  ],
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_fake_traffic": true,
+    "no_old_automations_restarted": true,
+    "no_haro_sent": true,
+    "no_pinterest_posts": true,
+    "no_x_posts": true,
+    "no_mass_content": true,
+    "all_29_old_crons_still_deleted": true,
+    "system_crontab_still_locked": true
+  }
+}

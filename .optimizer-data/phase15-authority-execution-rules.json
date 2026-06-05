@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-06-06T00:42:20.897980",
+  "phase": "15.3B \u2192 16.2 update",
+  "rules": [
+    {
+      "id": "AUTH-001",
+      "rule": "If outreach follow-up is due AND SMTP works AND Auditor >=90 \u2192 SEND immediately.",
+      "escalation": "If not sent within 24h of due date, mark SEND_BLOCKED and report reason."
+    },
+    {
+      "id": "AUTH-002",
+      "rule": "If SMTP is broken \u2192 diagnose and fix. If cannot fix \u2192 escalate SEND_BLOCKED_AUTH to Qasem.",
+      "escalation": "Do not silently skip outreach for multiple days."
+    },
+    {
+      "id": "AUTH-003",
+      "rule": "If Auditor score <90 \u2192 revise until >=90 or HOLD with reason.",
+      "escalation": "Maximum 2 revision attempts. If still <90, mark REJECTED and move to next prospect."
+    },
+    {
+      "id": "AUTH-004",
+      "rule": "New prospects: research 5/day, create drafts, Auditor review. Only send if >=90.",
+      "escalation": "Max 5 new sends per day. Cold outreach + follow-ups combined max 10/day."
+    },
+    {
+      "id": "AUTH-005",
+      "rule": "Do NOT mark authority step complete unless: follow-up sent, new prospect researched, draft created, or blocked with documented reason.",
+      "escalation": "No 'checked but did nothing' as completion."
+    },
+    {
+      "id": "AUTH-006",
+      "rule": "All outreach must go through Auditor before sending. No auto-sending without audit.",
+      "escalation": "Permanent rule. HARO auto-send was the lesson."
+    }
+  ],
+  "gmail_smtp_status": "\u2705 WORKING \u2014 tested and verified",
+  "today_summary": {
+    "follow_ups_due": 2,
+    "follow_ups_audited": 2,
+    "follow_ups_sent": 2,
+    "prospects_researched": 5,
+    "prospect_drafts_created": 5,
+    "prospects_ready": 3,
+    "prospects_needs_revision": 2
+  }
+}

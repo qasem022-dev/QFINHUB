@@ -1,0 +1,126 @@
+{
+  "title": "QFINHUB Business Goal Tracker — Phase 15 Autonomous OS",
+  "generated": "2026-06-04T21:00:00Z",
+  "version": "1.0.0",
+
+  "timeline": {
+    "site_launch": "2026-05-03",
+    "month_1_end": "2026-06-03",
+    "month_2_end": "2026-07-03",
+    "month_3_end": "2026-08-03",
+    "month_4_end": "2026-09-03",
+    "month_5_end": "2026-10-03",
+    "month_14_end": "2026-07-03",
+    "today": "2026-06-04",
+    "current_month": 2,
+    "days_in_month_2": 29,
+    "days_elapsed_month_2": 1
+  },
+
+  "target_a_traffic": {
+    "goal": "1,000,000 monthly visitors by Month 5 (Oct 3, 2026)",
+    "milestones": {
+      "month_1": {"target": "Foundation complete, indexing started", "actual": "COMPLETE — 125 calcs audited, 100 GSC UI URLs, 7 Tier 3 batches (70/105), 1 content page, 45 internal links"},
+      "month_2": {"target": "5,000–25,000 visitors/month", "current": 0, "gap": "5,000–25,000", "status": "CRITICALLY OFF-TRACK"},
+      "month_3": {"target": "50,000–150,000 visitors/month", "current": 0, "status": "PENDING"},
+      "month_4": {"target": "250,000–500,000 visitors/month", "current": 0, "status": "PENDING"},
+      "month_5": {"target": "1,000,000 visitors/month", "current": 0, "status": "PENDING"}
+    },
+    "honest_assessment": "OFF-TRACK. Current traffic is ~0. GSC shows 100 impressions/week across 20 pages, ALL 0 clicks. To reach 5,000 visitors by Jul 3, we need to go from 0→167 visitors/day in 29 days. This requires ranking core calculators in top 10 for high-volume finance terms — not just long-tail blog queries."
+  },
+
+  "target_b_revenue": {
+    "goal": "$50,000/month by Month 14 (Jul 3, 2027)",
+    "milestones": {
+      "month_1_2": {"target": "AdSense approval + analytics + first revenue", "status": "IN PROGRESS — ads.txt live, awaiting AdSense review"},
+      "month_3": {"target": "$100–$1,000/month", "status": "PENDING"},
+      "month_4_5": {"target": "$1,000–$5,000/month", "status": "PENDING"},
+      "month_6_8": {"target": "$5,000–$15,000/month", "status": "PENDING"},
+      "month_9_11": {"target": "$15,000–$30,000/month", "status": "PENDING"},
+      "month_12_14": {"target": "$30,000–$50,000/month", "status": "PENDING"}
+    },
+    "revenue_formula": "Revenue = pageviews / 1000 × RPM",
+    "conservative_rpm": 10,
+    "optimistic_rpm": 25,
+    "best_case_rpm": 50,
+    "required_traffic_at_10_rpm": "5,000,000 pageviews/month for $50k",
+    "required_traffic_at_25_rpm": "2,000,000 pageviews/month for $50k",
+    "required_traffic_at_50_rpm": "1,000,000 pageviews/month for $50k",
+    "honest_assessment": "OFF-TRACK. 0 revenue, 0 traffic, AdSense not yet approved. Need both traffic AND AdSense approval to generate first dollar."
+  },
+
+  "primary_kpis_baseline": {
+    "date": "2026-06-04",
+    "google_search": {
+      "impressions_7d": "~100",
+      "clicks_7d": 0,
+      "ctr": "0.0%",
+      "avg_position": "~20-90",
+      "pages_with_impressions": 20,
+      "pages_with_clicks": 0,
+      "indexed_pages": "unknown (T1 10/10 confirmed)",
+      "top_query": "\"20000 loan at 8 percent for 5 years\" — 59 imp, 0 clicks"
+    },
+    "traffic": {
+      "vercel_visitors_daily": "~0",
+      "ga4_users_daily": "~0",
+      "pageviews_daily": "~0",
+      "pages_per_session": "N/A",
+      "google_organic": "~0"
+    },
+    "indexing": {
+      "tier1_indexed": "10/10 ✅",
+      "tier2_submitted": "12/12 ✅",
+      "tier3_submitted": "70/105 (67%)",
+      "tier3_remaining": 35,
+      "total_gsc_ui_urls": 100
+    },
+    "revenue": {
+      "adsense_status": "ads.txt LIVE, awaiting approval",
+      "estimated_daily_pageviews": 0,
+      "estimated_monthly_revenue": "$0",
+      "rpm_estimate": "N/A (no AdSense data)"
+    },
+    "authority": {
+      "outreach_sent": 7,
+      "follow_ups_sent": 0,
+      "replies": 0,
+      "backlinks_won": 0,
+      "widget_embeds": 0,
+      "referring_domains": "unknown"
+    }
+  },
+
+  "bottleneck_analysis": {
+    "biggest_blocker": "NO TRAFFIC — pages exist and are indexed (10 T1 confirmed), but ranking positions are too deep (pos 86+ for core terms)",
+    "root_causes": [
+      "DOMAIN AGE — site is 32 days old. Google sandbox likely in effect",
+      "AUTHORITY — 0 backlinks, 0 referring domains. No external trust signals",
+      "COMPETITION — finance niche is extremely competitive. Mortgage calculator has established players (nerdwallet, bankrate, zillow)",
+      "CONTENT DEPTH — 125 calc pages exist but may lack sufficient supporting content for topical authority",
+      "CTR — Pages at pos 86+ get zero clicks even if indexed"
+    ],
+    "remedies": [
+      "BACKLINKS — Outreach for at least 10-20 referring domains in Month 2",
+      "CONTENT CLUSTERS — Build supporting blog/guide/decision content around top 5 calculators",
+      "INTERNAL LINKS — Maximize internal link flow to T1/T2 calculators",
+      "SOCIAL SIGNALS — Pinterest pins (when safe) or other social platforms for brand signals",
+      "TECHNICAL — Ensure all pages have schema markup, fast LCP, mobile-friendly"
+    ]
+  },
+
+  "daily_actions_default": [
+    "Tier 3 calculator GSC UI indexing (10/day until all 125 complete)",
+    "GSC data pull (search analytics API)",
+    "Business scoreboard update",
+    "Technical health check (ads.txt, analytics, sitemap, hubs)",
+    "Query opportunity engine (find zero-click, near-winner pages)",
+    "CTR fixes (up to 10/day on non-cooldown pages)",
+    "Near-winner pushes (up to 10/day)",
+    "Internal authority links (10-20/day)",
+    "Content engine (1 page/day max)",
+    "Outreach follow-ups (when due)",
+    "Monetization check",
+    "Daily report generation"
+  ]
+}

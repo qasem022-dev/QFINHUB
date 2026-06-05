@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-06-05T19:57:41.239322",
+  "status": "FULLY DISABLED",
+  "actions_taken": [
+    "All 3 HARO crons DELETED (303f15ec269a, c7c7a0ed6621, 2aac8129928f)",
+    "haro-agent.cjs renamed to haro-agent.cjs.DISABLED",
+    "haro-send-batch.cjs renamed to haro-send-batch.cjs.DISABLED",
+    "All HARO logs preserved for audit in .haro-data/"
+  ],
+  "today_responses_8": [
+    {
+      "queryId": "4:+c8712ccc",
+      "topic": "Women Building Businesses",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "HIGH"
+    },
+    {
+      "queryId": "7:+18d5b371",
+      "topic": "Master's in Education",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "HIGH"
+    },
+    {
+      "queryId": "12:+52823836",
+      "topic": "Universities as AI hubs",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "HIGH"
+    },
+    {
+      "queryId": "13:+25744918",
+      "topic": "Iran's Cyber Operations",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "CRITICAL"
+    },
+    {
+      "queryId": "10:+963901bc",
+      "topic": "Workplace Culture",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "CRITICAL"
+    },
+    {
+      "queryId": "13:+f858129a",
+      "topic": "Elementary Education ROI",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "HIGH"
+    },
+    {
+      "queryId": "15:+e9332a60",
+      "topic": "Senior Refinancing Costs",
+      "relevant": true,
+      "fabricated_claims": "PARTIAL",
+      "risk": "MEDIUM"
+    },
+    {
+      "queryId": "18:+489d64f2",
+      "topic": "SpaceX IPO Hype",
+      "relevant": false,
+      "fabricated_claims": true,
+      "risk": "MEDIUM"
+    }
+  ],
+  "reputation_risk": "CRITICAL \u2014 QFINHUB cited as authority on cybersecurity, education, AI, workplace consulting, and IPO analysis. None of these are QFINHUB's domain.",
+  "follow_up_recommended": "NO \u2014 do not draw attention. If journalist replies, escalate to Qasem immediately.",
+  "new_policy": "HARO DRAFT-ONLY. All responses must be saved as drafts for human review. No auto-sending.",
+  "blacklist": [
+    "education degrees",
+    "cybersecurity",
+    "AI computing",
+    "workplace culture",
+    "women-led business metrics",
+    "IPO hype",
+    "Crown Heights safety",
+    "DEI metrics",
+    "legal eDiscovery",
+    "speech psychology",
+    "voice deepfakes"
+  ]
+}

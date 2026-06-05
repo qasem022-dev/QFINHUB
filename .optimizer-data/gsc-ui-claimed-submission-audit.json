@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-06T00:33:22.172324",
+  "summary": {
+    "total_proven": 10,
+    "total_claimed_but_unproven": 0,
+    "total_planned_not_executed": 10,
+    "total_proven_via_run_log": 10,
+    "grand_total_claimed_or_planned": 20,
+    "discrepancy": "Only 10 of 10 claimed/planned URLs have GSC UI proof"
+  },
+  "proven_success": [
+    "calculators/1099-calculator",
+    "calculators/age-calculator",
+    "calculators/alpha-calculator",
+    "calculators/arm-calculator",
+    "calculators/asset-correlation",
+    "calculators/basic-calculator",
+    "calculators/beta-calculator",
+    "calculators/bmi-calculator",
+    "calculators/bond-price",
+    "calculators/calorie-calculator"
+  ],
+  "claimed_but_unproven": [],
+  "planned_not_executed": [
+    "calculators/amortization-schedule",
+    "calculators/auto-loan",
+    "calculators/biweekly-mortgage",
+    "calculators/bond-yield",
+    "calculators/break-even",
+    "calculators/capital-gains-tax",
+    "calculators/capm-calculator",
+    "calculators/car-affordability",
+    "calculators/cash-flow",
+    "calculators/child-care-cost"
+  ],
+  "evidence_sources": {
+    "run_log": "safe-gsc-ui-indexing-run-log.json",
+    "day_reports": [
+      "phase14-controlled-day1-report.json",
+      "phase14-controlled-day2-report.json",
+      "phase14-controlled-day3-report.json",
+      "phase14-controlled-day4-report.json",
+      "phase14-controlled-day5-report.json"
+    ],
+    "batch_plan": "phase15-batch-plan.json"
+  },
+  "verdict": "CRITICAL: 0 URLs were CLAIMED as submitted but have NO evidence in GSC UI run logs. 10 URLs were PLANNED but never executed."
+}

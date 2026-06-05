@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-06T00:52:18.030675",
+  "phase": "16.3 \u2014 Tier 3 Queue Repair + Batch 9 Proof Execution",
+  "status": "COMPLETE",
+  "queue_logic_fix": {
+    "new_feature": "--source tier3 --limit N --execute",
+    "fixed": "Queue now supports Tier 3 calculator source from sitemap, not just blog impression pages",
+    "file": "scripts/safe-gsc-ui-indexing-queue.py",
+    "changes": [
+      "Added build_tier3_candidates() \u2014 extracts T3 calculators from sitemap, excludes T1/T2, excludes already-submitted",
+      "Added --source CLI flag for source selection",
+      "Added --limit CLI flag for batch size",
+      "Added --execute flag to force non-dry-run",
+      "Tier 3 mode skips automated-indexing-support-queue.json entirely"
+    ]
+  },
+  "keyerror_fix": {
+    "bugs_fixed": [
+      "load_run_log() now migrates old 'results' format to 'runs' format",
+      "was_recently_requested() now uses 'submitted_urls' key not 'submitted' (integer)",
+      "Added isinstance check for dict entries to skip integer count fields"
+    ],
+    "file": "scripts/safe-gsc-ui-indexing-queue.py"
+  },
+  "batch9_execution": {
+    "executed": true,
+    "method": "python3 scripts/safe-gsc-ui-indexing-queue.py --source tier3 --limit 10 --execute",
+    "urls_checked": 10,
+    "urls_found_in_index": 10,
+    "result": "All 10 T3 calculators are already in Google's index. The 'Request Indexing' button was not available because Google already has them indexed.",
+    "conclusion": "T3 calculators ARE being discovered by Google via sitemap. They're indexed but not ranking for competitive terms due to domain authority (0 backlinks). GSC UI Request Indexing is unnecessary for already-indexed pages \u2014 it only helps for newly discovered pages."
+  },
+  "phase15_integration": {
+    "daily_rule": "Step 3 uses: python3 scripts/safe-gsc-ui-indexing-queue.py --source tier3 --limit 10 --execute",
+    "proof_required": true,
+    "file": ".optimizer-data/phase15-tier3-queue-integration-report.json"
+  },
+  "authority": {
+    "follow_ups_sent_today": 2,
+    "follow_ups_pending_jun7": 5,
+    "prospects_ready": 3,
+    "prospects_needs_revision": 2,
+    "review_packet": ".optimizer-data/authority-prospect-send-review-packet.json"
+  },
+  "scoreboard_updated": true,
+  "what_this_phase_fixed": [
+    "\u2705 Queue now supports Tier 3 calculator source (not just blog pages)",
+    "\u2705 KeyError 'runs' fixed with old-format migration",
+    "\u2705 TypeError 'int object not iterable' fixed",
+    "\u2705 Batch 9 executed via direct terminal (not subagent)",
+    "\u2705 10 T3 calculators confirmed in Google's index",
+    "\u2705 Phase 15 daily rule updated to use --source tier3",
+    "\u2705 Proof ledger updated with Batch 9 results",
+    "\u2705 2 follow-ups sent, 3 prospects ready for Jun 7"
+  ],
+  "biggest_insight": "T3 calculators ARE indexed by Google. The problem is NOT indexing \u2014 it's ranking. Google has discovered and indexed the pages via sitemap but doesn't rank them because the domain has 0 backlinks and is 34 days old. GSC UI 'Request Indexing' helps for newly published pages, not for pages already in the index.",
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_unproven_submissions_counted": true,
+    "no_risky_old_automations": true,
+    "batch9_executed_via_direct_terminal": true,
+    "all_10_urls_logged_with_proof": true,
+    "queue_fix_deployed": true
+  }
+}

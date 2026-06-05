@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-05T19:57:41.239322",
+  "status": "QUARANTINED",
+  "actions_taken": [
+    "PDF distribution cron DELETED (0981e2f88cf4)",
+    ".pdf-distribution/ moved to .quarantine/pdf-distribution",
+    "Original location is EMPTY",
+    "No PDFs in public/ directory",
+    "No PDFs in sitemap",
+    "No internal links to distributed PDFs (only client-side PDF export utility for calculators \u2014 safe)",
+    "PDF distribution script pdf-distribution.cjs still exists but no cron can trigger it"
+  ],
+  "quarantine_location": "/home/admin1/qfinhub/.quarantine/pdf-distribution",
+  "quarantine_size": "356KB",
+  "content_never_distributed": true,
+  "can_be_safely_deleted": true,
+  "remaining_risk": "Script pdf-distribution.cjs still exists. Should also be disabled."
+}

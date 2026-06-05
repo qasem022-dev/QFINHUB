@@ -1,0 +1,60 @@
+{
+  "title": "QFINHUB Backlink Gap Report",
+  "generated": "2026-06-04T21:24:00Z",
+  "version": "1.0.0",
+
+  "current_state": {
+    "referring_domains": 0,
+    "backlinks": 0,
+    "domain_age_days": 32,
+    "competitive_benchmark": "Top-ranking finance calculators typically have 500-5,000+ referring domains"
+  },
+
+  "gap_analysis": {
+    "minimum_viable_month_2": 10,
+    "current_gap": 10,
+    "honest_assessment": "At 0 referring domains, QFINHUB has ZERO external trust signals. Google treats the site as unproven. Even if all 125 calculators are technically perfect with perfect internal linking, they will stay at position 50-100+ without backlinks. This is the single biggest growth constraint."
+  },
+
+  "acquisition_channels": [
+    {
+      "channel": "email_outreach",
+      "sent": 7,
+      "replied": 0,
+      "won": 0,
+      "conversion_rate": "0%",
+      "bottleneck": "Low volume — only 7 emails in 32 days. Need 50+ emails/month for statistically meaningful conversion."
+    },
+    {
+      "channel": "widget_embeds",
+      "built": 1,
+      "embeds_won": 0,
+      "bottleneck": "1 widget asset (mortgage affordability). Need more widget types for different audiences."
+    },
+    {
+      "channel": "haro_journalist_queries",
+      "status": "Active via crons (3x daily)",
+      "bottleneck": "Low response rate to HARO queries. May need better targeting."
+    },
+    {
+      "channel": "pinterest",
+      "status": "Paused (posting crons off)",
+      "bottleneck": "Pinterest can generate social signals but doesn't directly produce backlinks."
+    },
+    {
+      "channel": "reddit",
+      "status": "Active (daily, account aging)",
+      "bottleneck": "Reddit links are nofollow but can drive referral traffic and brand awareness."
+    }
+  ],
+
+  "month_2_targets": {
+    "referring_domains_needed": 10,
+    "emails_needed_to_send": "50-100 (assuming 5-10% reply rate, 10-20% of replies become links)",
+    "weekly_prospect_target": 25,
+    "weekly_follow_up_target": 7,
+    "linkable_assets_needed": "1 more widget + 1 resource page"
+  },
+
+  "recovery_strategy": "Scale outreach volume from 7 emails to 100+ emails per month. Build 1 more embeddable widget. Create 1 data/resource page that blogs will naturally cite. Diversify from mortgage-only to multi-calculator pitches. Improve personalization to increase reply rate from 0%."
+}

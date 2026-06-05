@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-06-06T00:03:27.135436",
+  "diagnosis": {
+    "root_cause": "Combination of GSC reporting lag (24h window) + domain sandbox (33d old, 0 backlinks) + under-executed GSC UI indexing (only 10/70 URLs proven)",
+    "gsc_data_real": true,
+    "gsc_api_working": true,
+    "gsc_token_refreshed": true,
+    "total_impressions_7d": 77,
+    "total_clicks_7d": 0,
+    "pages_with_impressions": 20,
+    "queries_found": 25,
+    "technical_blockers": 0,
+    "phase15_run_today": false,
+    "gsc_ui_batches_proven": 1,
+    "gsc_ui_batches_claimed": 7,
+    "gsc_ui_batches_discrepancy": "6 batches (60 URLs) claimed but not found in run logs"
+  },
+  "actions": [
+    {
+      "action": "sitemap_resubmit",
+      "status": "warning",
+      "detail": "\ud83d\udd0d GSC Sitemap Submitter\n   Site: https://www.qfinhub.com/\n   Token: /home/admin1/.hermes/google-indexing-token.json\n\ud83d\udd04 Refreshing Google OAuth token...\n   \u2705 Token refreshed (expires in 3599s)\n\n\ud83d\ude80 Submit"
+    },
+    {
+      "action": "lastmod_check",
+      "status": "ok",
+      "detail": "Dynamic sitemap, auto-updated on deploy"
+    },
+    {
+      "action": "internal_links",
+      "status": "partial",
+      "detail": "10 added yesterday, 5-10 more planned today"
+    },
+    {
+      "action": "gsc_ui_batch9",
+      "status": "planned",
+      "detail": "10 URLs, requires CloakBrowser"
+    },
+    {
+      "action": "technical_check",
+      "status": "ok",
+      "detail": "No blockers found"
+    },
+    {
+      "action": "content_decision",
+      "status": "hold",
+      "detail": "No query meets 10+ imp threshold"
+    }
+  ]
+}

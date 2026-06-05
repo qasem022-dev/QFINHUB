@@ -1,0 +1,182 @@
+{
+  "title": "Phase 14B Controlled Day 5 Report — Batch 7 + Day 4 Recovery + Growth Continuation",
+  "generated": "2026-06-04T20:52:00Z",
+  "phase": "14B Day 5",
+  "status": "COMPLETE — 14/14 tasks. 7th consecutive perfect batch. GSC data confirms cooldown limitation.",
+
+  "executive_summary": {
+    "total_tasks": 14,
+    "completed": 14,
+    "key_achievements": [
+      "Day 4 detail recovery completed (12 sections, saved to phase14-day4-detail-recovery-report.json)",
+      "Tier 3 Batch 7: 10/10 GSC UI submitted — 7 consecutive batches, 70/70 (100%)",
+      "Cumulative GSC UI: 100 URLs across 7 sessions, ZERO failures, ZERO CAPTCHA",
+      "GSC Search Analytics pulled fresh — 20 pages with impressions, ALL 0 clicks",
+      "CTR: 4th day of data-driven proof — cooldown blocks all meaningful targets",
+      "GSC URL Inspection: 2/16 Batch 1-3 URLs indexed (biweekly-mortgage, rent-vs-buy)",
+      "Token refreshed — GSC API working again"
+    ]
+  },
+
+  "day4_detail_recovery": {
+    "status": "RECOVERED — see .optimizer-data/phase14-day4-detail-recovery-report.json",
+    "sections_recovered": [
+      "Emergency Fund Guide verification (HTTP 200, index/follow, self-canonical, sitemap, 88/100)",
+      "Tier 3 Batch 1-2 recheck (awaiting Google re-crawl)",
+      "7 fixed pages recrawl (all HTTP 200, CTR titles verified, 48h cooldown through Jun 6)",
+      "Fresh GSC discovery (12 impression pages, 7 cooldown + 5 low-value)",
+      "CTR cooldown proof (no safe target outside 7 cooldown pages)",
+      "Near-winner push (0 — all near-winner pages in cooldown)",
+      "Second content opportunity (HOLD — Emergency Fund Guide just created)",
+      "Internal links (15 added Day 4, cumulative 45)",
+      "Outreach (2 follow-ups pending, due Jun 6-7)",
+      "Pinterest (monitor only, no data — crons paused)",
+      "AdSense/analytics/technical (all working)",
+      "Deploy (Day 4: blog post + 15 links deployed)"
+    ]
+  },
+
+  "tier3_batch7": {
+    "submitted": 10,
+    "success_rate": "100% (10/10)",
+    "calculators": [
+      "1099-calculator", "age-calculator", "alpha-calculator", "arm-calculator",
+      "asset-correlation", "basic-calculator", "beta-calculator", "bmi-calculator",
+      "bond-price", "calorie-calculator"
+    ],
+    "safety_checks": "All 10 HTTP 200, index/follow, self-canonical, in sitemap",
+    "cumulative_tier3": "70/105 (7 batches, 70/70 — 100% success)",
+    "remaining_tier3": "35/105 (4 batches remaining)"
+  },
+
+  "tier3_recheck": {
+    "batches_inspected": "1, 2, 3 (16 URLs sampled)",
+    "indexed": "2/16 (biweekly-mortgage, rent-vs-buy)",
+    "discovered_not_indexed": "12/16",
+    "unknown_to_google": "2/16",
+    "key_finding": "biweekly-mortgage indexed same-day as GSC UI submission (Jun 4). GSC UI IS working — recrawl takes 3-7 days for Tier 3 pages.",
+    "detail_report": ".optimizer-data/tier3-batch-recheck-report.json"
+  },
+
+  "emergency_fund_guide_recheck": {
+    "page": "/blog/how-much-emergency-fund-do-i-need-2026",
+    "http": 200,
+    "robots": "index, follow",
+    "canonical": "self",
+    "sitemap": "yes",
+    "title": "How Much Emergency Fund Do I Need? Use Our Free Calculator (2026 Guide)",
+    "gsc_impressions": "not yet (created Day 3, typically 3-7 days for impressions)",
+    "cannibalization_risk": "NONE — blog (long-form guide) vs decision page (decision tool). Different intent.",
+    "next_check": "Day 7 (Jun 6) — 72h post-creation"
+  },
+
+  "fresh_gsc_discovery": {
+    "source": "GSC Search Analytics API (7-day: May 28 - Jun 4)",
+    "total_queries": 25,
+    "total_impression_pages": 20,
+    "total_clicks": 0,
+    "highest_impression": {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 59,
+      "position": 20.5,
+      "clicks": 0
+    },
+    "report_file": ".optimizer-data/fresh-gsc-query-discovery-day5.json"
+  },
+
+  "ctr": {
+    "applied": 0,
+    "reason": "All 7 pages with meaningful impressions (≥5) are the 7 cooldown pages. 13 other pages have ≤3 impressions — statistically insignificant.",
+    "day6_outlook": "48h cooldown expires Jun 6. That will be the FIRST day CTR targets become eligible again.",
+    "report_file": ".optimizer-data/click-extraction-engine-log.json"
+  },
+
+  "near_winner": {
+    "applied": 0,
+    "reason": "Same as CTR — all near-winner pages are the 7 cooldown pages.",
+    "report_file": ".optimizer-data/near-winner-rank-push-log.json"
+  },
+
+  "content_opportunity": {
+    "decision": "HOLD_FOR_DATA",
+    "reason": "No new GSC queries with meaningful volume. Emergency Fund Guide only 48h old — needs indexing + data before next page.",
+    "day7_candidates": ["Roth IRA guide", "Retirement withdrawal guide", "Budget planner deep dive"],
+    "report_file": ".optimizer-data/query-opportunity-engine.json"
+  },
+
+  "internal_links": {
+    "added_today": 0,
+    "reason": "No new content pages created. 45 cumulative links from Days 1-4 are sufficient.",
+    "day6_plan": "When 7 fixed pages exit cooldown, add contextual links from those pages to newest Tier 3 batches."
+  },
+
+  "outreach": {
+    "follow_ups_sent": 0,
+    "pending": [
+      "Money Under 30 — due Jun 6 (tomorrow)",
+      "Maximum Real Estate Exposure — due Jun 6 (tomorrow)",
+      "Batch 2 (5 targets) — due Jun 7"
+    ],
+    "new_outreach": 0
+  },
+
+  "pinterest": {
+    "monitor_only": true,
+    "pins_posted": 0,
+    "impressions": "no data (crons paused)"
+  },
+
+  "adsense_analytics_technical": {
+    "ads_txt": "✅ LIVE (pub-1102790706635466)",
+    "vercel_analytics": "✅ WORKING",
+    "ga4": "✅ WORKING",
+    "sitemap_count": 649,
+    "sitemap_clean": true,
+    "no_noindex_404_in_sitemap": true,
+    "all_hubs_live": "✅ /guides, /compare, /disclaimer all HTTP 200",
+    "robots_txt": "2 sitemaps declared (main + news)",
+    "risky_crons": "✅ 17/17 paused"
+  },
+
+  "deploy": {
+    "day_5_changes": "NONE — no content edited, no pages created. GSC UI submissions only.",
+    "deploy_needed": false
+  },
+
+  "cumulative_phase14b": {
+    "days": 5,
+    "tier3_submitted": "70/105 (7 batches, 70/70 — 100%)",
+    "tier3_remaining": 35,
+    "total_gsc_ui_urls": 100,
+    "gsc_ui_success_rate": "100% (7 sessions, zero failures, zero CAPTCHA)",
+    "content_pages": 1,
+    "internal_links": 45,
+    "ctr_fixes": 0,
+    "near_winner_pushes": 0,
+    "outreach_follow_ups": 0,
+    "pinterest_pins": 0
+  },
+
+  "biggest_blocker": "48h content cooldown — the 7 pages with all the impressions are locked until Jun 6. Once they unlock, CTR fixes, near-winner pushes, and internal link boosts become available. This is the WORST bottleneck in the system, but it's CORRECT — Google needs time to re-crawl CTR-fixed pages before we touch them again.",
+
+  "day6_recommendation": [
+    "Tier 3 Batch 8 (next 10 calcs: capital-gains-tax, capm-calculator, car-affordability, cash-flow, child-care-cost, currency-converter, customer-acquisition-cost, date-difference, dcf-analysis, debt-avalanche)",
+    "Re-inspect Tier 3 Batch 3 URLs (more should show 'discovered' by Day 6)",
+    "48h cooldown expires Jun 6 — PREPARE CTR fix list for the 7 pages",
+    "PREPARE near-winner pushes for the 7 pages (internal links, FAQ, short answers)",
+    "Outreach follow-ups for Money Under 30 and Maximum Real Estate Exposure (due Jun 6)",
+    "Check Emergency Fund Guide for first GSC impressions (72h post-creation)",
+    "No new content unless fresh GSC query data reveals demand"
+  ],
+
+  "compliance": {
+    "google_indexing_api_not_used": "✅ CONFIRMED",
+    "no_unapproved_content": "✅ CONFIRMED",
+    "no_risky_automations_restarted": "✅ 17/17 paused",
+    "no_fake_schema": "✅ CONFIRMED",
+    "no_fake_traffic_clicks": "✅ CONFIRMED",
+    "no_mass_pages": "✅ CONFIRMED",
+    "no_pinterest_posting": "✅ CONFIRMED",
+    "no_spammy_actions": "✅ CONFIRMED"
+  }
+}

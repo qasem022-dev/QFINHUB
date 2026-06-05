@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-06-06T01:55:17.414015",
+  "phase": "16.7 \u2014 Linkable Asset Build + Follow-Up Execution",
+  "status": "EXECUTED \u2014 Linkable asset built, 5 follow-ups sent",
+  "linkable_asset": {
+    "built": true,
+    "upgrades": [
+      "DTI explanation section",
+      "Publisher contact CTA (email + form)"
+    ],
+    "existing_features": [
+      "Live preview",
+      "Embed code",
+      "6 use cases",
+      "FAQ",
+      "Privacy notice",
+      "Schema markup",
+      "6 internal links"
+    ],
+    "url": "widgets/mortgage-affordability-embed",
+    "auditor_score": 90,
+    "deployed": "commit pushing now"
+  },
+  "follow_ups_sent": {
+    "count": 5,
+    "targets": [
+      "Real Estate Witch",
+      "Credit.org",
+      "Physician on FIRE",
+      "Greenpath",
+      "Young and Invested"
+    ],
+    "all_smtp_success": true
+  },
+  "new_prospects": {
+    "researched": 5,
+    "ready": 3,
+    "needs_revision": 2,
+    "not_sent": true
+  },
+  "outreach_cumulative": {
+    "total_sent": 17,
+    "replies": 0,
+    "backlinks": 0,
+    "follow_ups_done": "All 7 follow-ups sent (2 Jun 6 + 5 Jun 7)"
+  },
+  "off_topic_review": "No immediate noindex actions. Monitor 90-day-fiance page.",
+  "first_click_watchlist": "6 CTR-fixed pages being monitored",
+  "biggest_blocker": "CTR \u2014 6 fixes deployed covering 48% of impressions. Awaiting Google re-crawl. 17 outreach emails sent, 0 replies \u2014 backlinks remain at 0.",
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_fake_traffic": true,
+    "old_automations_disabled": true,
+    "linkable_asset_built": true,
+    "follow_ups_sent": true,
+    "all_auditor_90": true
+  }
+}

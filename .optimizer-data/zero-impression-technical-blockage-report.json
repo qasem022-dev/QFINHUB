@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-06T00:35:09.099970",
+  "last_checked": "2026-06-06T00:35:09.099970",
+  "sitemap_xml": {
+    "status": "200 OK",
+    "urls": 649,
+    "submitted_to_gsc": true
+  },
+  "news_sitemap_xml": {
+    "status": "valid",
+    "submitted": true
+  },
+  "robots_txt": {
+    "status": "Allow: /",
+    "sitemaps_declared": 2
+  },
+  "no_blockers": true,
+  "googlebot_activity": "GSC API confirms impressions exist \u2014 Googlebot is crawling",
+  "crawl_frequency": "~11 impressions/day \u2014 low volume, consistent with sandboxed domain",
+  "noindex_errors": "None on key pages",
+  "canonical_errors": "None",
+  "http_errors": "None on sitemap URLs",
+  "status": "HEALTHY \u2014 no technical crawl barriers"
+}

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-05T22:43:49Z",
+  "manual_gsc_ui": 311,
+  "api_page_aggregate": 213,
+  "gap": 98,
+  "gap_percentage": "31.5%",
+  "root_causes": [
+    "1. GSC API page aggregate (rowLimit=250) returns 213 \u2014 but Google only returns rows with significant data",
+    "2. Manual GSC UI includes anonymized/low-volume queries the API filters out",
+    "3. GSC UI aggregates across ALL dimensions simultaneously; API requires separate calls per dimension",
+    "4. API sampling: Google may sample data for large sites; QFINHUB has ~649 pages",
+    "5. Some impressions come from pages not in the API response (below threshold)"
+  ],
+  "verdict": "KNOWN GSC API LIMITATION \u2014 not a bug. The 98-impression gap is from anonymized queries and pages below the API visibility threshold. Manual GSC UI (311) is more complete. Use MANUAL_TRUTH = 311 as baseline.",
+  "recommendation": "Accept 311 as truth. Flag DATA_GAP_OPEN in daily reports. Continue pulling API for query/page detail, but use manual for aggregate."
+}

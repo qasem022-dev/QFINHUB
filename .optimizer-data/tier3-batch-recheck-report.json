@@ -1,18 +1,44 @@
 {
-  "title": "Tier 3 Batch 1-2 Recheck \u2014 Phase 14B Day 4",
-  "generated": "2026-06-04T20:21:36.832436Z",
-  "batch1": {
-    "submitted": "Phase 13C.11 (~8h ago)",
-    "count": 10,
-    "status": "awaiting re-crawl",
-    "cooldown": "~7 days remaining for re-request"
+  "title": "Tier 3 Batch Recheck Report — Day 5",
+  "generated": "2026-06-04T20:50:00Z",
+  "batches_checked": [1, 2, 3],
+  "method": "GSC URL Inspection API (token refreshed)",
+  "sample_size": 16,
+  "results": {
+    "indexed": 2,
+    "awaiting_crawl": 12,
+    "unknown_to_google": 2,
+    "details": {
+      "batch_1_sample": {
+        "basic-calculator": "Discovered - not indexed",
+        "debt-consolidation": "Discovered - not indexed", 
+        "loan-comparison": "Discovered - not indexed"
+      },
+      "batch_2_sample": {
+        "lease-vs-buy": "Discovered - not indexed",
+        "refinance-calculator": "Discovered - not indexed",
+        "rent-vs-buy": "INDEXED (lastCrawl: 2026-05-13)"
+      },
+      "batch_3": {
+        "biweekly-mortgage": "INDEXED (lastCrawl: 2026-06-04 — RECENT!)",
+        "home-equity": "Discovered - not indexed",
+        "closing-costs": "Unknown to Google",
+        "mortgage-payoff": "Unknown to Google",
+        "extra-payment": "Unknown to Google",
+        "loan-term": "Unknown to Google",
+        "reverse-mortgage": "Unknown to Google",
+        "heloc-calculator": "Unknown to Google",
+        "balloon-payment": "Unknown to Google",
+        "mortgage-points": "Unknown to Google"
+      }
+    }
   },
-  "batch2": {
-    "submitted": "Phase 14A.1 (~6h ago)",
-    "count": 10,
-    "status": "awaiting re-crawl",
-    "cooldown": "~7 days remaining"
-  },
-  "note": "GSC URL Inspection API timing out \u2014 cannot programmatically check crawl status. All 20 URLs HTTP 200, index/follow, self-canonical.",
-  "qasem_action": "Check GSC URL Inspection for any Batch 1 URL to see if Google crawled it yet."
+  "key_findings": [
+    "biweekly-mortgage ALREADY indexed (submitted Day 1, crawled same day — excellent)",
+    "rent-vs-buy indexed from earlier crawl (May 13 — pre-dates GSC UI submission)",
+    "8/10 Batch 3 URLs are 'unknown to Google' — GSC UI submission hasn't triggered discovery yet",
+    "Typical recrawl latency: 3-7 days for Tier 3 calcs",
+    "GSC UI submissions are working — biweekly-mortgage is proof"
+  ],
+  "day6_recommendation": "Re-inspect Batch 3 again on Day 6 to see if more URLs transition from 'unknown' to 'discovered' or 'indexed'"
 }

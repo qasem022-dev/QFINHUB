@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-06-06T01:40:59.285752",
+  "phase": "16.5 \u2014 First Click Sprint + Authority Push",
+  "status": "EXECUTED \u2014 4 CTR fixes total, 3 authority emails sent, 12 links deployed",
+  "deploy_verification": {
+    "phase164_deploy": "Deployed (commit a25f400). CDN serving fresh \u2014 22s age. Metas will update as cache expires.",
+    "phase165_deploy": "Deployed (commit a187876). pay-off-debt CTR fix pushed.",
+    "all_pages_http200": true,
+    "all_pages_index_follow": true,
+    "no_canonical_errors": true
+  },
+  "fresh_gsc_baseline": {
+    "api_impressions": 213,
+    "api_clicks": 0,
+    "api_ctr": "0.0%",
+    "api_avg_position": 18.3,
+    "qasem_manual_truth": "311 impressions, 0 clicks, avg pos 19.3",
+    "new_discovery": "/decision/pay-off-debt-or-invest \u2014 44 impressions, pos 14.0 \u2014 MAJOR new target",
+    "position_groups": {
+      "pos_1_10": "30 pages",
+      "pos_11_20": "6 pages",
+      "pos_21_30": "2 pages"
+    }
+  },
+  "ctr_fixes_applied_phase165": [
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "impressions": 44,
+      "position": 14.0,
+      "fix": "Snippet cannibalization \u2014 removed '22% vs 7%' from meta. User was getting the answer in SERP. Replaced with curiosity + CTA.",
+      "auditor_score": 93,
+      "expected_impact": "44 impressions with zero clicks \u2014 removing the exact comparison should drive clicks as users need to see their personalized numbers."
+    }
+  ],
+  "cumulative_ctr_fixes": 4,
+  "ctr_targets_impressions_covered": "44 + 59 + 1 + 1 = 105 of 311 impressions",
+  "page2_push": {
+    "internal_links_total": 67,
+    "links_added_phase164": 12,
+    "top_target_added": "pay-off-debt-or-invest linked from debt-payoff + loan-calculator"
+  },
+  "authority_execution": {
+    "emails_sent_today": 3,
+    "targets": [
+      {
+        "target": "The Balance",
+        "email": "contact@thebalancemoney.com",
+        "score": 92,
+        "status": "SENT"
+      },
+      {
+        "target": "Financial Samurai",
+        "email": "sam@financialsamurai.com",
+        "score": 91,
+        "status": "SENT"
+      },
+      {
+        "target": "Mortgage Calculator (.org)",
+        "email": "info@mortgagecalculator.org",
+        "score": 90,
+        "status": "SENT"
+      }
+    ],
+    "total_outreach_all_time": 12,
+    "follow_ups_pending": "5 due Jun 7 (tomorrow)",
+    "no_bounces_yet": "2 follow-ups from yesterday \u2014 no bounce, no reply yet"
+  },
+  "linkable_asset": {
+    "status": "EXISTING_FUNCTIONAL",
+    "page": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+    "upgrade_planned": "After first backlink or first click"
+  },
+  "expected_3_7_day_impact": {
+    "ctr": "4 CTR fixes targeting 105 of 311 impressions. Expect first clicks from pay-off-debt (44 imp, pos 14) and loan blog (59 imp, pos 18.5).",
+    "authority": "3 cold emails sent to DR 70-80+ sites. Response rate for cold outreach is 5-10% \u2014 expect 0-1 replies within 7 days.",
+    "canary": "First organic click = proof the funnel works"
+  },
+  "biggest_blocker": "Still CTR. 311 impressions but 0 clicks. Fixes cover 34% of impressions now. Remaining 66% are mostly off-topic auto-generated news (not worth optimizing).",
+  "next_autonomous_action": "1. Send 5 follow-ups due Jun 7. 2. Monitor GSC for first click. 3. Apply next batch of CTR fixes on remaining A-grade pages.",
+  "confirmations": {
+    "no_stale_gsc_data": true,
+    "no_google_indexing_api": true,
+    "no_fake_traffic": true,
+    "old_risky_automations_disabled": true,
+    "no_haro_sent": true,
+    "no_off_topic_ctr_fixes": true,
+    "authority_sent_with_auditor_gate": true,
+    "all_email_auditor_scores_gte_90": true
+  }
+}

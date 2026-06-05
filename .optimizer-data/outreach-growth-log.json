@@ -1,7 +1,33 @@
 {
-  "title": "Outreach Growth Log \u2014 Day 4",
-  "generated": "2026-06-04T20:21:36.832436Z",
-  "follow_ups_sent": 0,
-  "new_prospects": 0,
-  "next_follow_ups": "Jun 7 \u2014 Batch 2 sent Jun 1, 7-day window"
+  "generated_at": "2026-06-06T22:15:00Z",
+  "total_sent": 17,
+  "backlinks_won": 0,
+  "replies_received": 0,
+  "bounces": 0,
+  "new_sent_today": 3,
+  "emails": [
+    {"target": "Money Under 30", "sent": "May 31", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Max Real Estate Exposure", "sent": "May 31", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Real Estate Witch", "sent": "Jun 1", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Springboard/Credit.org", "sent": "Jun 1", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Physician on FIRE", "sent": "Jun 1", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Greenpath Financial", "sent": "Jun 1", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Young and the Invested", "sent": "Jun 1", "followup_sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "The Balance", "sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Financial Samurai", "sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Mortgage Calculator .org", "sent": "Jun 6", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "Investopedia", "sent": "Jun 6", "category": "finance_blogs", "score": 92, "pitch": "mortgage affordability widget", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "BiggerPockets", "sent": "Jun 6", "category": "real_estate", "score": 90, "pitch": "mortgage affordability widget", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "ChooseFI", "sent": "Jun 6", "category": "fire_retirement", "score": 90, "pitch": "mortgage affordability widget", "bounce": false, "reply": false, "link": false, "next": "Jun 13 if no reply"},
+    {"target": "The Mortgage Reports", "status": "manual_required", "note": "Contact form, not email. Cloudflare/IP blocking."},
+    {"target": "Dough Roller", "status": "manual_required", "note": "Contact form. Manual paste needed."}
+  ],
+  "held_prospects": [
+    {"target": "Zillow", "score": 88, "reason": "Large corp — needs stronger angle"},
+    {"target": "MyMoney.gov", "score": 85, "reason": ".gov site — needs formal approach"}
+  ],
+  "follow_ups_sent_today": 0,
+  "new_prospects_sent_today": 3,
+  "next_followup_window": "Jun 13 — 12 targets eligible",
+  "reply_rules_created": true
 }

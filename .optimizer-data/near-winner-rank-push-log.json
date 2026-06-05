@@ -1,6 +1,68 @@
 {
-  "title": "Near-Winner Push \u2014 Day 4",
-  "generated": "2026-06-04T20:21:36.832436Z",
-  "applied": 0,
-  "reason": "Same as CTR: all known near-winner pages (pos 8-20) are the 7 fixed pages in cooldown."
+  "generated_at": "2026-06-06T01:01:27.297452",
+  "near_winners_found": 16,
+  "targets": [
+    {
+      "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 53,
+      "position": 18.5,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "impressions": 44,
+      "position": 14.0,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "impressions": 8,
+      "position": 9.2,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "impressions": 7,
+      "position": 9.1,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/all-pages",
+      "impressions": 4,
+      "position": 8,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+      "impressions": 4,
+      "position": 8,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "impressions": 4,
+      "position": 12,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "impressions": 3,
+      "position": 18,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "impressions": 3,
+      "position": 12.3,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "impressions": 2,
+      "position": 22,
+      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+    }
+  ],
+  "internal_links_planned": "Add from mortgage-calculator, compound-interest, retirement-planning to top 10 near-winners",
+  "status": "PLANNED \u2014 will execute in next deploy cycle"
 }

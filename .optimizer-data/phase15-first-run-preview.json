@@ -1,0 +1,93 @@
+{
+  "title": "Phase 15.1 — First Autonomous Run Preview (June 5, 2026)",
+  "generated": "2026-06-04T21:32:00Z",
+  "date": "2026-06-05",
+
+  "tier3_batch8": {
+    "batch_number": 8,
+    "count": 10,
+    "calculator_urls": [
+      "https://www.qfinhub.com/calculators/capital-gains-tax",
+      "https://www.qfinhub.com/calculators/capm-calculator",
+      "https://www.qfinhub.com/calculators/car-affordability",
+      "https://www.qfinhub.com/calculators/cash-flow",
+      "https://www.qfinhub.com/calculators/child-care-cost",
+      "https://www.qfinhub.com/calculators/currency-converter",
+      "https://www.qfinhub.com/calculators/customer-acquisition-cost",
+      "https://www.qfinhub.com/calculators/date-difference",
+      "https://www.qfinhub.com/calculators/dcf-analysis",
+      "https://www.qfinhub.com/calculators/debt-avalanche"
+    ],
+    "method": "safe-gsc-ui-indexing-queue.py (CloakBrowser, headless, persistent google-gsc-v3 profile)",
+    "expected_result": "10/10 submitted, 100% success (8th consecutive perfect batch)",
+    "cumulative_after": "80/105 Tier 3 (76% complete)"
+  },
+
+  "gsc_ui_indexing_actions": [
+    "Refresh Google OAuth token (scripts/refresh-gsc-token.py)",
+    "Pull fresh GSC search analytics (scripts/gsc-search-analytics-pull.py)",
+    "Run safe-gsc-ui-indexing-queue.py with 7-10 approved candidates",
+    "Submit each via CloakBrowser GSC UI Request Indexing",
+    "Log results to safe-gsc-ui-indexing-run-log.json"
+  ],
+
+  "top_query_opportunities": [
+    {"query": "\"if you borrow $20,000 for 5 years at 8%, what would the monthly payment be\"", "impressions": 43, "page": "20000-loan blog", "status": "COOLDOWN — no action"},
+    {"query": "\"how do personal loans compare to home equity loans\"", "impressions": 3, "opportunity": "Create /compare/personal-loan-vs-heloc page? — held: only 3 impressions"},
+    {"query": "\"avalanche vs snowball method\"", "impressions": 3, "opportunity": "Existing debt-payoff content may already cover this"},
+    {"query": "\"can i retire at 45 with 1 million\"", "impressions": 2, "position": 15, "opportunity": "Decision page exists — improve CTR if pos 15 with 0 clicks"}
+  ],
+
+  "ctr_near_winner_candidates": {
+    "eligible": 0,
+    "reason": "All pages with ≥5 impressions are in 48h cooldown. The 'can i retire at 45 with 1 million' query at pos 15 has only 2 impressions — too low.",
+    "next_eligible_date": "2026-06-06 (Day 7)"
+  },
+
+  "internal_links_planned": [
+    "T1 mortgage-calculator → T3 capital-gains-tax (wealth-building connection)",
+    "T1 compound-interest → T3 dcf-analysis (time value of money)",
+    "T1 retirement-planning → T3 car-affordability (retirement budgeting)",
+    "T1 budget-planner → T3 child-care-cost (family budgeting)",
+    "T1 investment-return → T3 capm-calculator (investment analysis)",
+    "T2 debt-payoff → T3 debt-avalanche (debt strategy)",
+    "/guides hub → newly indexed T3 guides",
+    "/compare hub → newly indexed comparisons",
+    "Emergency Fund Guide → T3 cash-flow (emergency fund = cash flow management)",
+    "Blog posts with relatedCalculators → T3 calculators"
+  ],
+  "internal_links_count": "10-15",
+
+  "outreach_follow_ups": {
+    "due_today": 0,
+    "next_due": "2026-06-06",
+    "targets_due_tomorrow": ["Money Under 30", "Maximum Real Estate Exposure"],
+    "action": "PREPARE follow-up drafts for tomorrow, but DO NOT send today."
+  },
+
+  "new_prospects_to_research": {
+    "status": "Ready — 5 new prospects via authority-acquisition-engine.json categories",
+    "method": "Search Brave/Google for 'best financial calculators for homebuyers', 'free mortgage tools resource', 'debt counseling free calculators', 'personal finance blog tools', 'FIRE calculator resources'. Extract 10 results each → filter → score → top 5 → find contact emails.",
+    "max": 5,
+    "auditor_requirement": "90+ score",
+    "note": "New prospect research is MEDIUM priority. Do AFTER indexing + internal links + follow-ups."
+  },
+
+  "linkable_asset_week": {
+    "week": 1,
+    "asset": "Mortgage Affordability Embed Widget (ALREADY BUILT)",
+    "action": "Focus outreach on widget embed prospects. No new build needed.",
+    "target_prospect_categories": ["real_estate_mortgage", "homebuyer_education"]
+  },
+
+  "expected_deploy": "YES — if internal links are added (source file changes → git commit → push → Vercel auto-deploy)",
+  "deploy_triggers": "Modification of calculator-content.ts, calculator-blog-links.ts, or related files",
+
+  "what_would_trigger_escalation": [
+    "GSC UI session expired (redirect to accounts.google.com) → escalate: Qasem re-auth needed",
+    "AdSense status changes (approval or rejection) → escalate",
+    "Sitewide technical failure (sitemap broken, analytics down) → escalate"
+  ],
+
+  "expected_daily_report_summary": "📊 QFINHUB Daily Report — Jun 5\n- GSC: ~15 imp, 0 clicks, CTR 0%, pos ~50\n- Indexing: Batch 8 (10/10), 80/105 Tier 3\n- Traffic: ~0 visitors (🔴 OFF-TRACK: gap 5,000)\n- Revenue: $0 (AdSense: pending)\n- Content: 0 created\n- Links: 10-15 internal links added\n- Authority: 0 follow-ups (due Jun 6), 0-5 new prospects\n- Tech: all clear\n- Next: Follow-ups + Batch 9 + CTR check (cooldown expires)"
+}

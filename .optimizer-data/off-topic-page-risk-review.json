@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-06-06T01:30:55.924124",
+  "pages_reviewed": 3,
+  "decision_framework": {
+    "KEEP": "Still finance-relevant enough to keep indexed",
+    "REVIEW_LATER": "Weak content \u2014 improve when resources allow",
+    "NOINDEX_CONSIDER": "Brand-damaging or irrelevant \u2014 consider noindex",
+    "LOW_PRIORITY": "Don't optimize for CTR \u2014 not worth the effort"
+  },
+  "decisions": [
+    {
+      "page": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+      "impressions": 18,
+      "decision": "LOW_PRIORITY",
+      "note": "Auto-generated macroeconomic news. Has impressions but weak brand fit. Keep indexed (not harmful enough to noindex), but do NOT optimize for CTR."
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+      "impressions": 4,
+      "decision": "LOW_PRIORITY",
+      "note": "Auto-generated macroeconomic news. Has impressions but weak brand fit. Keep indexed (not harmful enough to noindex), but do NOT optimize for CTR."
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+      "impressions": 3,
+      "decision": "NOINDEX_CONSIDER",
+      "note": "Pop culture/TV show content. Weakest brand association. Consider noindex if it continues to rank over finance content."
+    }
+  ]
+}

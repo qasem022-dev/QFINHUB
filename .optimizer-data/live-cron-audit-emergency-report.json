@@ -1,0 +1,360 @@
+{
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "total_crons": 30,
+  "active_crons_before_emergency": 12,
+  "active_crons_after_emergency": 1,
+  "paused_during_emergency": 11,
+  "crons": [
+    {
+      "id": "303f15ec269a",
+      "name": "HARO Auto-Responder (5:10 PM)",
+      "schedule": "10 17 * * *",
+      "status": "paused",
+      "last_run": "2026-06-05T18:19 EEST",
+      "action": "sends HARO emails",
+      "risk": "CRITICAL \u2014 auto-sends to journalists",
+      "recommendation": "DELETE \u2014 HARO must be draft-only",
+      "phase15": "NO"
+    },
+    {
+      "id": "c7c7a0ed6621",
+      "name": "HARO Auto-Responder (7:10 PM)",
+      "schedule": "10 19 * * *",
+      "status": "paused",
+      "last_run": "2026-06-05T19:14 EEST",
+      "action": "sends HARO emails",
+      "risk": "CRITICAL \u2014 sent 4 responses today",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "2aac8129928f",
+      "name": "HARO Auto-Responder (3:10 PM Morning)",
+      "schedule": "10 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T15:16 EEST",
+      "action": "sends HARO emails",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "0981e2f88cf4",
+      "name": "PDF Distribution (6:10 PM)",
+      "schedule": "10 18 * * *",
+      "status": "paused",
+      "last_run": "2026-06-05T18:19 EEST",
+      "action": "generates + publishes PDFs",
+      "risk": "HIGH \u2014 AI-generated content, no Auditor",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "478e5ba17848",
+      "name": "Pinterest Daily Growth",
+      "schedule": "30 16 * * *",
+      "status": "paused",
+      "last_run": "2026-06-05T18:19 EEST",
+      "action": "follows/saves on Pinterest via CloakBrowser",
+      "risk": "HIGH \u2014 platform ToS violation",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "48cef8f10147",
+      "name": "Daily Performance Tracker (5 PM)",
+      "schedule": "0 17 * * *",
+      "status": "paused",
+      "last_run": "2026-06-05T18:19 EEST",
+      "action": "reports broken/zero metrics",
+      "risk": "LOW \u2014 but reports false data",
+      "recommendation": "DELETE (broken, unfixable)",
+      "phase15": "NO"
+    },
+    {
+      "id": "fc9f8c7ce833",
+      "name": "Self-Healing Monitor (3 PM)",
+      "schedule": "0 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T15:07 EEST",
+      "action": "restarts failed crons",
+      "risk": "EXTREME \u2014 can unpause risky crons",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "5ecc4b819cc5",
+      "name": "Growth Optimizer (3:15 PM)",
+      "schedule": "15 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T15:27 EEST",
+      "action": "SERP intelligence + content changes",
+      "risk": "HIGH \u2014 modifies site content",
+      "recommendation": "DELETE (replaced by Phase 15)",
+      "phase15": "NO"
+    },
+    {
+      "id": "6ae2bad29ba3",
+      "name": "CTR Optimization Engine (3:25 PM)",
+      "schedule": "25 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T15:28 EEST",
+      "action": "modifies page titles/meta",
+      "risk": "HIGH \u2014 unapproved content changes",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "0a7e82602b9a",
+      "name": "Reddit Growth Engine (Daily 4 PM)",
+      "schedule": "0 16 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T16:08 EEST",
+      "action": "posts to Reddit as u/QASEMQH",
+      "risk": "HIGH \u2014 personal account risk",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "726b45fd51f0",
+      "name": "Weekly Optimization Review (Mon 7 PM)",
+      "schedule": "0 19 * * 1",
+      "status": "paused",
+      "last_run": "2026-05-25T19:06 EEST",
+      "action": "analyzes all engine logs",
+      "risk": "MEDIUM \u2014 analysis only, but stale",
+      "recommendation": "DELETE (fold into Phase 15)",
+      "phase15": "NO"
+    },
+    {
+      "id": "2e59569e382e",
+      "name": "Site Quality Check (3:20 PM)",
+      "schedule": "20 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T15:30 EEST",
+      "action": "checks site health",
+      "risk": "LOW \u2014 analysis only",
+      "recommendation": "DELETE (fold into Phase 15)",
+      "phase15": "NO"
+    },
+    {
+      "id": "43438e317a61",
+      "name": "Widget Outreach Engine (6 PM)",
+      "schedule": "0 18 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T18:00 EEST",
+      "action": "sends outreach emails",
+      "risk": "HIGH",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "d006e3318401",
+      "name": "Newsjacking Bot (5:30 PM)",
+      "schedule": "30 17 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T17:31 EEST",
+      "action": "generates + publishes blog posts",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "e3d7d3fcb7c9",
+      "name": "Blog Agent (3:10 PM)",
+      "schedule": "10 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-28T15:19 EEST",
+      "action": "auto-deploys blog posts",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "14d3d631f9ba",
+      "name": "SEO Indexing Engine (3:05 PM)",
+      "schedule": "5 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-28T15:11 EEST",
+      "action": "submits URLs to indexing",
+      "risk": "HIGH",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "7edc3f28a918",
+      "name": "Scenario Page Generator (Daily 3PM)",
+      "schedule": "0 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-27T15:42 EEST",
+      "action": "generates 750+ pages",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "defdde75ea1f",
+      "name": "Pinterest Pin Generator (3:30 PM)",
+      "schedule": "30 15 * * *",
+      "status": "paused",
+      "last_run": "2026-05-23T15:56 EEST",
+      "action": "generates Pinterest pins",
+      "risk": "MEDIUM",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "5c46309c02c0",
+      "name": "Pinterest Daily Pin Generator",
+      "schedule": "0 3 * * *",
+      "status": "paused",
+      "last_run": "2026-06-02T03:06 EEST",
+      "action": "generates 10 pins/day",
+      "risk": "MEDIUM",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "f803aceaa0a7",
+      "name": "Pinterest Morning Post (5 pins)",
+      "schedule": "0 10 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T10:03 EEST",
+      "action": "posts to Pinterest",
+      "risk": "HIGH",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "7c97577dbd84",
+      "name": "Pinterest Evening Post (5 pins)",
+      "schedule": "0 18 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T18:00 EEST",
+      "action": "posts to Pinterest",
+      "risk": "HIGH",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "8a229e1e731b",
+      "name": "X Morning (9AM EST)",
+      "schedule": "0 16 * * *",
+      "status": "paused",
+      "last_run": "2026-05-28T16:14 EEST",
+      "action": "posts/replies on X",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "be62779e2dc0",
+      "name": "X Noon (12PM EST)",
+      "schedule": "0 19 * * *",
+      "status": "paused",
+      "last_run": "2026-05-28T19:13 EEST",
+      "action": "posts/replies on X",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "2bd0d2e26dc8",
+      "name": "X Afternoon (3PM EST)",
+      "schedule": "0 22 * * *",
+      "status": "paused",
+      "last_run": "2026-05-30T23:46 EEST",
+      "action": "posts/replies on X",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "2e55e62a79a8",
+      "name": "X Evening (6PM EST)",
+      "schedule": "0 1 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T01:17 EEST",
+      "action": "posts/replies on X",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "6320859ceb69",
+      "name": "X Night (9PM EST)",
+      "schedule": "0 4 * * *",
+      "status": "paused",
+      "last_run": "2026-05-31T04:09 EEST",
+      "action": "posts/replies on X",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "fb1ea44cc2dc",
+      "name": "X Self-Tweet (3x daily)",
+      "schedule": "0 12,17,21 * * *",
+      "status": "paused",
+      "last_run": "2026-05-30T21:02 EEST",
+      "action": "posts calculator content to X",
+      "risk": "CRITICAL",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "7ba22a836377",
+      "name": "Daily Sitemap Ping (4:00 AM)",
+      "schedule": "0 4 * * *",
+      "status": "paused",
+      "last_run": "2026-05-28T15:09 EEST",
+      "action": "pings Google sitemaps",
+      "risk": "MEDIUM",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "291b8aa4f5d0",
+      "name": "Scenario Uniqueness Upgrades",
+      "schedule": "30 15 * * *",
+      "status": "paused",
+      "last_run": "never",
+      "action": "upgrades scenario pages",
+      "risk": "HIGH",
+      "recommendation": "DELETE",
+      "phase15": "NO"
+    },
+    {
+      "id": "dcba952b4c45",
+      "name": "QFINHUB Autonomous Daily Business OS",
+      "schedule": "0 15 * * *",
+      "status": "ACTIVE",
+      "last_run": "NEVER RAN",
+      "action": "Phase 15 14-step workflow",
+      "risk": "LOW (if properly scoped)",
+      "recommendation": "KEEP \u2014 but verify it works",
+      "phase15": "YES (THE Phase 15 cron)"
+    }
+  ],
+  "system_crontab_risks": [
+    {
+      "entry": "0 13 * * * /bin/bash .../x-daily-morning.sh",
+      "risk": "CRITICAL \u2014 posts to X OUTSIDE Hermes control",
+      "action": "X agent v3 daily posting at 4 PM EEST"
+    },
+    {
+      "entry": "0 17 * * * /bin/bash .../x-daily-afternoon.sh",
+      "risk": "CRITICAL \u2014 posts to X OUTSIDE Hermes control",
+      "action": "X agent v3 daily posting at 8 PM EEST"
+    }
+  ],
+  "critical_findings": [
+    "11 crons were ACTIVE when claimed 'all paused' \u2014 I was WRONG",
+    "HARO sent 8 responses TODAY despite 'no HARO sending' policy",
+    "Self-Healing Monitor could restart paused crons \u2014 DANGEROUS",
+    "Phase 15 cron (dcba952b4c45) NEVER RAN \u2014 scheduler failure",
+    "System crontab has X/Twitter scripts OUTSIDE Hermes control",
+    "PDF Distribution publishes AI-generated content with NO Auditor review",
+    "Pinterest Growth uses CloakBrowser automation \u2014 ToS violation risk"
+  ]
+}

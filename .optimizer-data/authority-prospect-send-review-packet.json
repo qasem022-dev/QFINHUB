@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-06-06T00:48:58.550258",
+  "status": "SENT_3_OF_3",
+  "ready_prospects": [
+    {
+      "target": "The Balance",
+      "email": "contact@thebalancemoney.com",
+      "auditor_score": 92,
+      "value_prop": "Free embeddable affordability widget complements their mortgage guides",
+      "asset": "Mortgage Affordability Calculator Widget (free, no-signup, iframe)",
+      "risk": "LOW \u2014 reputable media site, editorial decision",
+      "recommended_send_date": "2026-06-07",
+      "wait_for_widget_upgrade": false,
+      "note": "Current widget page is functional. No upgrade needed before outreach."
+    },
+    {
+      "target": "Financial Samurai",
+      "email": "sam@financialsamurai.com",
+      "auditor_score": 91,
+      "value_prop": "Interactive affordability tool for readers applying 30/30/3 rule",
+      "asset": "Mortgage Affordability Calculator Widget",
+      "risk": "LOW \u2014 individual blogger, easier to reach",
+      "recommended_send_date": "2026-06-07",
+      "wait_for_widget_upgrade": false
+    },
+    {
+      "target": "Mortgage Calculator (.org)",
+      "email": "info@mortgagecalculator.org",
+      "auditor_score": 90,
+      "value_prop": "Complementary widget \u2014 users get affordability range BEFORE calculating specific payments",
+      "asset": "Mortgage Affordability Calculator Widget",
+      "risk": "MEDIUM \u2014 competitor overlap but widget is complementary",
+      "recommended_send_date": "2026-06-07",
+      "wait_for_widget_upgrade": false
+    }
+  ],
+  "needs_revision": [
+    {
+      "target": "HousingWire",
+      "score": 85,
+      "issue": "B2B audience \u2014 need stronger angle for mortgage professionals",
+      "revision_needed": "Reframe as industry tool for loan officers to share with clients"
+    },
+    {
+      "target": "Credit Karma",
+      "score": 80,
+      "issue": "Large corporate \u2014 low response probability. Need differentiated angle.",
+      "revision_needed": "Position as complementary pre-qualification tool before their mortgage marketplace"
+    }
+  ],
+  "send_rule": "Do NOT send until Qasem approves. Max 3 new cold sends per day. Auditor >=90 required.",
+  "sent_at": "2026-06-06T01:40:15.096310"
+}

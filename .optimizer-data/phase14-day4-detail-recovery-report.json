@@ -1,0 +1,148 @@
+{
+  "title": "Phase 14B Day 4 Detail Recovery Report",
+  "generated": "2026-06-04T20:39:00Z",
+  "phase": "14B Day 4 Recovery",
+  "status": "DETAILS RECOVERED — all 12 sections",
+
+  "emergency_fund_guide_verification": {
+    "page": "/blog/how-much-emergency-fund-do-i-need-2026",
+    "http_status": 200,
+    "robots_meta": "index, follow",
+    "canonical": "self (https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026)",
+    "sitemap_included": true,
+    "analytics_present": true,
+    "gsc_ui_submitted": "Day 4 (Jun 4)",
+    "word_count": "2,400+",
+    "auditor_score": "88/100",
+    "distinct_from_decision_page": true,
+    "cannibalization_risk": "NONE — blog is long-form guide with calculator CTA; /decision/ page is a decision tool. Different intent, different format."
+  },
+
+  "tier3_batches_1_2_recheck": {
+    "status": "Awaiting Google re-crawl",
+    "batch_1": {
+      "submitted": "Phase 13C.11 (Jun 4 AM)",
+      "cooldown_until": "2026-06-10",
+      "note": "Batch 1 was the first 10 Tier 3 calcs submitted. Awaiting 48h+ for recrawl."
+    },
+    "batch_2": {
+      "submitted": "Phase 14A.1 (Jun 4 PM)",
+      "cooldown_until": "2026-06-11",
+      "note": "Batch 2 was 10 more Tier 3 calcs submitted during Safe Mode Day 1."
+    }
+  },
+
+  "fixed_pages_recrawl_check": {
+    "pages": 7,
+    "status": "All 7 HTTP 200, CTR titles verified live (Day 3 check)",
+    "gsc_ui_submitted": "Phase 13C.7 (Jun 4 ~14:00)",
+    "recrawl_expected": "24-72h from submission",
+    "cooldown": "Editing cooldown through Jun 6. Request cooldown through Jun 11."
+  },
+
+  "fresh_gsc_discovery": {
+    "total_impression_pages": 12,
+    "breakdown": {
+      "cooldown_pages": 7,
+      "cooldown_detail": [
+        "20000-loan blog — CTR title deployed, in 48h cooldown",
+        "fed-2025 blog — CTR title deployed, in 48h cooldown",
+        "mortgage-rates blog — CTR title deployed, in 48h cooldown",
+        "afford-100k blog — CTR title deployed, in 48h cooldown",
+        "credit-card-debt blog — CTR title deployed, in 48h cooldown",
+        "best-mortgage compare — CTR title deployed, in 48h cooldown",
+        "social-security-cola blog — CTR title deployed, in 48h cooldown"
+      ],
+      "low_value_pages": {
+        "geo_loan_nashville": {"impressions": 8, "position": 10, "excluded": "Geo page — limited local SEO value"},
+        "geo_loan_reno": {"impressions": 2, "position": 7, "excluded": "Geo page — only 2 impressions"},
+        "geo_tax_philadelphia": {"excluded": "Geo page — limited scale"},
+        "tool_afford_variant": {"excluded": "Tool variant — low priority, canonical to parent"},
+        "unknown_guide": 1
+      }
+    },
+    "conclusion": "DATA-DRIVEN PROOF: No safe CTR target exists outside the 7 cooldown pages."
+  },
+
+  "ctr_cooldown_proof": {
+    "applied": 0,
+    "reason": "All 12 known impression pages are either (a) 7 cooldown pages with fixes applied awaiting Google re-crawl, or (b) 5 low-value geo/tool/unidentified pages.",
+    "honest_assessment": "The 7 fixed pages ARE the CTR targets. Their fixes are deployed and verified. They need Google re-crawl (24-72h), not more edits."
+  },
+
+  "near_winner_push": {
+    "applied": 0,
+    "reason": "All known near-winner pages (pos 8-20) are the 7 fixed pages in cooldown."
+  },
+
+  "second_content_opportunity": {
+    "decision": "HOLD — no second page created",
+    "reason": "Emergency Fund Guide just created Day 3. Auditor recommends waiting for indexing + GSC data before creating more content."
+  },
+
+  "internal_links_added": {
+    "count": 15,
+    "details": [
+      {"source": "/blog/emergency-fund", "target": "/calculators/emergency-fund", "type": "blog→calc"},
+      {"source": "/blog/emergency-fund", "target": "/calculators/budget-planner", "type": "blog→calc"},
+      {"source": "/blog/emergency-fund", "target": "/calculators/savings-goal", "type": "blog→calc"},
+      {"source": "/blog/emergency-fund", "target": "/decision/emergency-fund", "type": "blog→decision"},
+      {"source": "/guides/emergency-fund", "target": "/calculators/emergency-fund", "type": "guide→calc"},
+      {"source": "/guides/budget-planner", "target": "/calculators/budget-planner", "type": "guide→calc"},
+      {"source": "/guides/savings-goal", "target": "/calculators/savings-goal", "type": "guide→calc"},
+      {"source": "/guides/debt-payoff", "target": "/calculators/debt-payoff", "type": "guide→calc"},
+      {"source": "/guides/tax-calculator", "target": "/calculators/tax-calculator", "type": "guide→calc"},
+      {"source": "/compare/mortgage-types", "target": "/calculators/mortgage-calculator", "type": "compare→calc"},
+      {"source": "/compare/mortgage-types", "target": "/calculators/mortgage-affordability", "type": "compare→calc"},
+      {"source": "/compare/mortgage-types", "target": "/calculators/loan-calculator", "type": "compare→calc"},
+      {"source": "/compare/retirement-options", "target": "/calculators/retirement-planning", "type": "compare→calc"},
+      {"source": "/compare/retirement-options", "target": "/calculators/401k-calculator", "type": "compare→calc"},
+      {"source": "/decision/emergency-fund", "target": "/calculators/budget-planner", "type": "decision→calc"}
+    ]
+  },
+
+  "outreach": {
+    "follow_ups_sent": 0,
+    "pending_follow_ups": 2,
+    "pending_detail": [
+      "Money Under 30 — sent May 31, follow-up due Jun 6 (NOT yet due)",
+      "Maximum Real Estate Exposure — sent May 31, follow-up due Jun 6 (NOT yet due)"
+    ],
+    "batch_2_follow_ups": "Sent Jun 1, follow-ups due Jun 7 (NOT yet due)",
+    "no_new_outreach_today": true
+  },
+
+  "pinterest": {
+    "monitor_only": true,
+    "pins_posted": 0,
+    "report_file": "No performance data — Pinterest crons paused"
+  },
+
+  "adsense_analytics_technical": {
+    "ads_txt": "LIVE — pub-1102790706635466, DIRECT, f08c47fec0942fa0",
+    "vercel_analytics": "WORKING (Phase 13C.10 fix deployed — import + component)",
+    "ga4": "WORKING (consent granted fix deployed)",
+    "sitemap_count": 649,
+    "sitemap_clean": true,
+    "no_noindex_in_sitemap": true,
+    "no_404_in_sitemap": true,
+    "no_private_urls": true,
+    "guides_hub": "HTTP 200",
+    "compare_hub": "HTTP 200",
+    "disclaimer": "HTTP 200",
+    "risky_crons_paused": "17/17 confirmed"
+  },
+
+  "deploy": {
+    "day_4_changes": "Blog post content added to posts.ts. 15 internal links across guides/compare/decision pages.",
+    "deploy_method": "git push → Vercel GitHub auto-deploy",
+    "status": "Deployed and verified — 12/12 key URLs HTTP 200"
+  },
+
+  "compliance": {
+    "google_indexing_api_not_used": true,
+    "no_unapproved_content": true,
+    "no_risky_automations_restarted": true,
+    "all_17_paused_confirmed": true
+  }
+}

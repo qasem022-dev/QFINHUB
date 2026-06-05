@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-06-06T01:50:42.013209",
+  "prospects": [
+    {
+      "name": "Investopedia (Mortgage Section)",
+      "url": "https://www.investopedia.com/mortgage/",
+      "contact": "editorial@investopedia.com",
+      "relevance": "HIGH \u2014 Major finance education site. Mortgage section gets millions of views.",
+      "pitch": "Free embeddable mortgage affordability widget for their mortgage education hub",
+      "score": 92,
+      "decision": "READY"
+    },
+    {
+      "name": "Zillow (Resource/Blog)",
+      "url": "https://www.zillow.com/mortgage-learning/",
+      "contact": "press@zillow.com",
+      "relevance": "HIGH \u2014 Largest real estate platform. Resource section could feature tools.",
+      "pitch": "Complementary affordability widget \u2014 helps buyers determine budget before browsing Zillow",
+      "score": 88,
+      "decision": "NEEDS_REVISION \u2014 large corp, need stronger angle"
+    },
+    {
+      "name": "BiggerPockets",
+      "url": "https://www.biggerpockets.com",
+      "contact": "support@biggerpockets.com",
+      "relevance": "HIGH \u2014 Real estate investor community. 2M+ members. Investor-focused mortgage content.",
+      "pitch": "Free affordability widget for their real estate investment calculators section",
+      "score": 90,
+      "decision": "READY"
+    },
+    {
+      "name": "MyMoney.gov (Federal Financial Literacy)",
+      "url": "https://www.mymoney.gov",
+      "contact": "via contact form",
+      "relevance": "HIGH \u2014 US government financial literacy portal. .gov domain = huge authority boost if linked.",
+      "pitch": "Free financial calculators for their tools and resources section",
+      "score": 85,
+      "decision": "NEEDS_REVISION \u2014 .gov site, needs formal approach"
+    },
+    {
+      "name": "ChooseFI",
+      "url": "https://www.choosefi.com",
+      "contact": "hello@choosefi.com",
+      "relevance": "HIGH \u2014 FIRE community with engaged audience. Homebuying is a major FIRE topic.",
+      "pitch": "Free mortgage affordability widget for their FI resources section",
+      "score": 90,
+      "decision": "READY"
+    }
+  ],
+  "ready": 3
+}

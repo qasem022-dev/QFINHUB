@@ -1,0 +1,70 @@
+{
+  "title": "QFINHUB Weekly Linkable Asset Plan — Phase 15.1",
+  "generated": "2026-06-04T21:26:00Z",
+  "version": "1.0.0",
+
+  "strategy": "Create one high-quality linkable asset per week that finance blogs, resource pages, and nonprofits will naturally want to link to or embed.",
+
+  "assets": [
+    {
+      "week": 1,
+      "date": "2026-06-04 to 2026-06-10",
+      "name": "Mortgage Affordability Embed Widget (IMPROVE)",
+      "status": "ALREADY BUILT — needs outreach only",
+      "target_audience": "Real estate blogs, mortgage sites, homebuyer education orgs",
+      "target_prospects": "100 real estate/mortgage blogs (new prospect research needed)",
+      "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "why_link": "Free interactive calculator that keeps visitors on their site. No redirect, no ads, fast embed.",
+      "calculator_connection": "mortgage-affordability calculator",
+      "estimated_authority_value": "HIGH — embeddable widgets are the strongest backlink asset type",
+      "build_effort": "NONE — already built. Focus entirely on outreach.",
+      "auditor_risk": "LOW — established widget, proven pattern",
+      "pitch_template": "I noticed your article on [specific topic]. Our free mortgage affordability calculator embeds directly on your page — your visitors get an instant result without leaving your site. Would you be interested in trying it?"
+    },
+    {
+      "week": 2,
+      "date": "2026-06-11 to 2026-06-17",
+      "name": "Compound Interest Calculator Embed Widget",
+      "status": "TO BUILD",
+      "target_audience": "FIRE blogs, investing sites, financial literacy educators",
+      "target_prospects": "50 investing/FIRE/personal finance blogs",
+      "url": "https://www.qfinhub.com/widgets/compound-interest-embed (to build)",
+      "why_link": "Compound interest is universally relevant. Every personal finance blog covers it. An embeddable calculator adds interactive value.",
+      "calculator_connection": "compound-interest calculator",
+      "estimated_authority_value": "HIGH — second widget doubles embeddable asset portfolio",
+      "build_effort": "MEDIUM — replicate mortgage widget pattern with compound interest calc",
+      "auditor_risk": "LOW — proven widget pattern, different calculator"
+    },
+    {
+      "week": 3,
+      "date": "2026-06-18 to 2026-06-24",
+      "name": "\"Free Financial Tools for Homebuyers\" Resource Page",
+      "status": "TO BUILD",
+      "target_audience": "Homebuyer education orgs, real estate agents, housing counselors",
+      "target_prospects": "50 HUD-approved housing counseling agencies + homebuyer education sites",
+      "url": "https://www.qfinhub.com/resources/homebuyer-tools (to build)",
+      "why_link": "Curated resource pages get linked by nonprofits and government sites as 'helpful resources.' Authoritative, non-commercial.",
+      "calculator_connection": "mortgage-calculator, mortgage-affordability, closing-costs, rent-vs-buy, property-tax",
+      "estimated_authority_value": "HIGH — .gov/.org backlinks are the strongest trust signals",
+      "build_effort": "LOW — single static page curating existing calculators",
+      "auditor_risk": "LOW — informational, non-commercial"
+    },
+    {
+      "week": 4,
+      "date": "2026-06-25 to 2026-07-01",
+      "name": "Debt Payoff Strategy Comparison + Calculator Resource",
+      "status": "TO BUILD",
+      "target_audience": "Debt counseling nonprofits, credit unions, financial literacy orgs",
+      "target_prospects": "50 debt counseling + credit union + financial literacy sites",
+      "url": "https://www.qfinhub.com/resources/debt-payoff-tools (to build)",
+      "why_link": "Debt nonprofits need free tools for their clients. A comparison page with interactive calculators is directly useful.",
+      "calculator_connection": "debt-payoff, debt-snowball, debt-avalanche, credit-card-payoff, debt-consolidation",
+      "estimated_authority_value": "HIGH — nonprofit links carry strong trust",
+      "build_effort": "MEDIUM — new page + potential interactive comparison tool",
+      "auditor_risk": "LOW — educational, mission-aligned"
+    }
+  ],
+
+  "total_planned_assets": 4,
+  "estimated_authority_impact": "4 linkable assets × 25 outreach emails each = 100 touchpoints. At 5% reply rate and 20% link conversion = ~1-2 backlinks from this pipeline. Combined with existing outreach, targets 5-10 backlinks by end of Month 2."
+}

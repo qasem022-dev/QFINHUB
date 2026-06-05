@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-06-06T01:35:55.112023",
+  "phase": "16.4 \u2014 Execute CTR Fixes + Page 2 Push",
+  "status": "EXECUTED \u2014 3 CTR fixes + 12 internal links deployed",
+  "relevance_classification": {
+    "A_core_finance": 11,
+    "B_finance_adjacent": 11,
+    "C_off_topic": 3,
+    "file": ".optimizer-data/zero-click-page-relevance-classification.json"
+  },
+  "ctr_fixes_executed": [
+    {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 59,
+      "position": 20.5,
+      "fix": "Snippet cannibalization \u2014 removed exact $405.53 answer from meta. Replaced with curiosity-driven question + CTA.",
+      "expected_impact": "Removing the exact payment amount from the SERP snippet should force users to click to see their personalized number."
+    },
+    {
+      "page": "/ (homepage)",
+      "impressions": 1,
+      "position": 1,
+      "fix": "Meta rewritten from generic '125+ calculators' to action-oriented 'Calculate your loan payments, mortgage affordability...'",
+      "expected_impact": "More compelling snippet for branded searches \u2014 should improve CTR on position 1 impressions."
+    },
+    {
+      "page": "/decision/how-much-emergency-fund-do-i-need",
+      "impressions": 1,
+      "position": 4,
+      "fix": "Meta rewritten from passive 'Should you save?' to active 'Not sure how much? See what... looks like for YOUR situation'",
+      "expected_impact": "Personalization hook should improve click-through from position 4."
+    }
+  ],
+  "off_topic_handling": {
+    "3_pages_identified": [
+      "hungary-rate",
+      "ecb-rate",
+      "90-day-fiance"
+    ],
+    "action": "LOW_PRIORITY \u2014 kept indexed but NOT optimized for CTR",
+    "90_day_fiance": "NOINDEX_CONSIDER \u2014 pop culture content, weakest brand fit",
+    "file": ".optimizer-data/off-topic-page-risk-review.json"
+  },
+  "page2_push": {
+    "internal_links_added": 12,
+    "source_pages": [
+      "mortgage-calculator",
+      "retirement-planning",
+      "investment-return",
+      "debt-payoff",
+      "compound-interest",
+      "budget-planner"
+    ],
+    "targets_added": [
+      "home-affordability",
+      "em-fund",
+      "savings-goal",
+      "break-even",
+      "net-worth",
+      "student-loan",
+      "personal-loan"
+    ],
+    "cumulative_internal_links": 67
+  },
+  "gsc_ui_indexing": "NOT executed for changed pages \u2014 CloakBrowser GSC UI requires separate session. Changed pages will be re-crawled naturally via sitemap.",
+  "deploy": {
+    "status": "PUSHED \u2014 Vercel auto-deploying",
+    "commit_message": "Phase 16.4: 3 CTR fixes + 12 internal links",
+    "files_changed": 4
+  },
+  "corrected_baseline": {
+    "impressions_7d": 311,
+    "clicks_7d": 0,
+    "avg_position": 19.3,
+    "ctr_fix_pages_impressions": 61,
+    "expected_3_7_day_impact": "CTR should improve from 0% to 2-5% on fixed pages. First clicks expected within 3-7 days as Google re-crawls changed metas."
+  },
+  "biggest_blocker": "CTR \u2014 311 impressions with 0 clicks. Fixes applied today target the highest-impression pages. Monitor GSC daily for first click.",
+  "next_autonomous_action": "1. Monitor GSC for first click. 2. Follow-ups due Jun 7 (5 targets). 3. Continue Tier 3 indexing. 4. Apply more CTR fixes if 7-day data shows no improvement.",
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_stale_gsc_data": true,
+    "no_fake_traffic": true,
+    "old_risky_automations_disabled": true,
+    "no_haro_sent": true,
+    "no_pinterest_posting": true,
+    "no_mass_content": true,
+    "ctr_fixes_executed_not_planned": true,
+    "internal_links_deployed": true
+  }
+}

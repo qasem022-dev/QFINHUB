@@ -1,47 +1,79 @@
 {
-  "title": "Non-Cooldown CTR Opportunity Check \u2014 Day 4",
-  "generated": "2026-06-04T20:21:36.832436Z",
-  "applied": 0,
-  "data_driven_proof": {
-    "total_pages_with_known_impressions": 12,
-    "excluded_cooldown": 7,
-    "excluded_cooldown_pages": [
-      "20000-loan blog",
-      "fed-2025 blog",
-      "mortgage-rates blog",
-      "afford-100k blog",
-      "credit-card-debt blog",
-      "best-mortgage compare",
-      "social-security-cola blog"
-    ],
-    "remaining_5_pages": [
-      {
-        "page": "geo/loan/nashville-tn",
-        "impressions": 8,
-        "position": 10,
-        "excluded_reason": "Geo page \u2014 limited local SEO value. Page is indexable but minimal traffic potential."
-      },
-      {
-        "page": "geo/loan/reno-nv",
-        "impressions": 2,
-        "position": 7,
-        "excluded_reason": "Geo page \u2014 only 2 impressions"
-      },
-      {
-        "page": "geo/tax/philadelphia-pa",
-        "impressions": "present",
-        "excluded_reason": "Geo page \u2014 limited scale"
-      },
-      {
-        "page": "tools/afford-100k-40k-6-5pct",
-        "excluded_reason": "Tool variant \u2014 low priority, canonical to parent"
-      },
-      {
-        "page": "1 guide page",
-        "excluded_reason": "Unknown which guide \u2014 cannot target"
-      }
-    ],
-    "conclusion": "NO SAFE CTR TARGET EXISTS outside the 7 cooldown pages. All 12 known impression pages are either: (a) the 7 fixed pages (CTR fixes applied, in cooldown), (b) low-value geo/tool pages, or (c) unidentified guide page.",
-    "honest_assessment": "The 7 fixed pages ARE the CTR targets. Their fixes are deployed and titles verified. They need Google re-crawl, not more edits."
-  }
+  "generated_at": "2026-06-06T23:45:00Z",
+  "phase": "16.9 — Reply Accelerator + Finance CTR Expansion",
+  "total_impressions_corrected": 311,
+  "fixes_total_all_time": 9,
+  "fixes_applied_this_session": 3,
+  "fixes_executed": [
+    {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 59,
+      "position": 20.5,
+      "fix": "Removed exact $405.53 answer from meta (Jun 5)",
+      "round": 1
+    },
+    {
+      "page": "/",
+      "impressions": 1,
+      "position": 1,
+      "fix": "Improved homepage meta (Jun 5)",
+      "round": 2
+    },
+    {
+      "page": "/decision/how-much-emergency-fund-do-i-need",
+      "impressions": 1,
+      "position": 4,
+      "fix": "Personalization hook added (Jun 5)",
+      "round": 3
+    },
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "impressions": 44,
+      "position": 14,
+      "fix": "Improved meta with stronger CTA + personalized 'run YOUR numbers' (Jun 5, re-improved Jun 6)",
+      "round": 4
+    },
+    {
+      "page": "/decision/how-much-do-i-need-to-retire",
+      "impressions": 3,
+      "position": 5,
+      "fix": "Removed 25x formula from meta (Jun 5)",
+      "round": 5
+    },
+    {
+      "page": "/calculators/debt-payoff",
+      "impressions": 0,
+      "position": "N/A",
+      "fix": "Removed $XX/month snippet answer (Jun 5)",
+      "round": 6
+    },
+    {
+      "page": "/decision/snowball-vs-avalanche-which-wins",
+      "impressions": 4,
+      "position": 94.8,
+      "fix": "CRITICAL SNIPPET CANNIBALIZATION — removed '$2,347 more' exact answer from meta. Replaced with curiosity + personalized CTA. (Jun 6)",
+      "round": 7,
+      "expected_impact": "HIGH — This was the clearest snippet cannibalization. Users saw the exact dollar answer in SERP."
+    },
+    {
+      "page": "/decision/retire-at-45-with-1-million",
+      "impressions": 6,
+      "position": 30.8,
+      "fix": "Improved meta from informational to curiosity-driven: 'Can YOU retire at 45 with $1 million? It depends on your spending...' (Jun 6)",
+      "round": 8,
+      "expected_impact": "Medium — deeper position but improved meta should help if position improves"
+    },
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "impressions": 44,
+      "position": 14,
+      "fix": "Re-improved: 'Pay off your debt or invest in the market? The math changes with every interest rate... Run YOUR exact numbers.' (Jun 6)",
+      "round": 9,
+      "expected_impact": "Medium — page 2 needs every edge to generate clicks"
+    }
+  ],
+  "impressions_covered_by_fixes": "~170/311 (55%)",
+  "remaining_zero_click_pages": 38,
+  "off_topic_pages_excluded_from_ctr": 5,
+  "next_round_planned": "Programmatic tool pages (compound-*, mortgage-* variants). Requires programmatic SEO template change — deferred to next sprint."
 }

@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-06-06T00:15:12.441861",
+  "discrepancy_found": true,
+  "batches_claimed": 7,
+  "batches_proven_with_logs": 1,
+  "total_urls_claimed": 70,
+  "total_urls_proven": 10,
+  "batch9_attempted": true,
+  "batch9_result": "SUBAGENT TIMED OUT \u2014 CloakBrowser GSC UI requires direct terminal execution, not subagent delegation",
+  "proven_batches": [
+    {
+      "batch": 7,
+      "session": "Phase 14B Day 5",
+      "date": "2026-06-04T20:52",
+      "urls": 10,
+      "success": 10,
+      "log": ".optimizer-data/safe-gsc-ui-indexing-run-log.json"
+    }
+  ],
+  "unproven_batches": [
+    "Batch 1-6: Claimed in Phase 14 day reports but no GSC UI run log evidence found. Day reports list batch plans but no submission confirmation."
+  ],
+  "batch9_status": {
+    "planned": 10,
+    "submitted": 0,
+    "reason": "CloakBrowser subagent timing out. GSC UI indexing requires direct execution with pty=True terminal or the standalone safe-gsc-ui-indexing-queue.py script.",
+    "fix": "Run python3 scripts/safe-gsc-ui-indexing-queue.py with CloakBrowser profile google-gsc-v3"
+  },
+  "action_required": "GSC UI indexing MUST be executed via direct terminal/python, not subagent delegation. Use scripts/safe-gsc-ui-indexing-queue.py or the Phase 14B manual approach."
+}

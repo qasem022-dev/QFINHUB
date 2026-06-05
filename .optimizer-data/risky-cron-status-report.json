@@ -1,94 +1,32 @@
 {
-  "title": "Risky Cron Status \u2014 Phase 14A.2 Final",
-  "generated": "2026-06-04T19:31:52.239495Z",
-  "all_paused": true,
-  "paused_list": [
-    {
-      "name": "Blog Agent",
-      "id": "e3d7d3fcb7c9",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Scenario Generator",
-      "id": "7edc3f28a918",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Scenario Upgrades",
-      "id": "291b8aa4f5d0",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "SEO Indexing Engine",
-      "id": "14d3d631f9ba",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Sitemap Ping",
-      "id": "7ba22a836377",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Widget Outreach",
-      "id": "43438e317a61",
-      "status": "PAUSED \u2705 (14A.1)"
-    },
-    {
-      "name": "Newsjacking Bot",
-      "id": "d006e3318401",
-      "status": "PAUSED \u2705 (14A.1)"
-    },
-    {
-      "name": "Pinterest Pin Gen (3:30PM)",
-      "id": "defdde75ea1f",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Pinterest Pin Gen (3AM)",
-      "id": "5c46309c02c0",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Pinterest Morning Post",
-      "id": "f803aceaa0a7",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "Pinterest Evening Post",
-      "id": "7c97577dbd84",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "X Morning",
-      "id": "8a229e1e731b",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "X Noon",
-      "id": "be62779e2dc0",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "X Afternoon",
-      "id": "2bd0d2e26dc8",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "X Evening",
-      "id": "2e55e62a79a8",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "X Night",
-      "id": "6320859ceb69",
-      "status": "PAUSED \u2705"
-    },
-    {
-      "name": "X Self-Tweet",
-      "id": "fb1ea44cc2dc",
-      "status": "PAUSED \u2705"
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "verified_by": "live cronjob list at 2026-06-05T19:48:06.991413",
+  "previous_claim": "17/17 risky crons paused",
+  "previous_claim_was": "FALSE \u2014 11 crons were still active",
+  "current_status": {
+    "total_crons": 30,
+    "active": 1,
+    "paused": 29,
+    "active_cron": {
+      "id": "dcba952b4c45",
+      "name": "QFINHUB Autonomous Daily Business OS",
+      "note": "Never actually ran. Scheduler may have issue."
     }
+  },
+  "paused_today_emergency": [
+    "303f15ec269a \u2014 HARO 5:10 PM",
+    "c7c7a0ed6621 \u2014 HARO 7:10 PM",
+    "0981e2f88cf4 \u2014 PDF Distribution",
+    "478e5ba17848 \u2014 Pinterest Daily Growth",
+    "48cef8f10147 \u2014 Daily Performance Tracker",
+    "fc9f8c7ce833 \u2014 Self-Healing Monitor",
+    "5ecc4b819cc5 \u2014 Growth Optimizer",
+    "2aac8129928f \u2014 HARO 3:10 PM",
+    "6ae2bad29ba3 \u2014 CTR Optimization Engine",
+    "0a7e82602b9a \u2014 Reddit Growth Engine",
+    "726b45fd51f0 \u2014 Weekly Optimization Review",
+    "2e59569e382e \u2014 Site Quality Check"
   ],
-  "total_paused": 17,
-  "confirmation": "All risky automations remain PAUSED. No re-enablements."
+  "unresolved_risk": "System crontab has X/Twitter posting scripts OUTSIDE Hermes control \u2014 these must be removed from system crontab",
+  "status": "NOW VERIFIED: 29 paused, 1 active (dcba952b4c45)"
 }

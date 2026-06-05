@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-06-06T00:36:10.804929",
+  "phase": "16.1 \u2014 Indexing Proof Repair + Authority Execution Sprint",
+  "status": "COMPLETE",
+  "gsc_ui_proof_system": {
+    "ledger_created": true,
+    "path": ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+    "total_entries": 20,
+    "proven_success": 10,
+    "claimed_but_unproven": 0,
+    "planned_not_executed": 10,
+    "dry_run_today": "7 URLs passed safety gates, ready for actual submission",
+    "key_finding": "Day reports stored integer counts, not URLs. Only 10 URLs have GSC UI proof via run log. 60 URLs were summary numbers from day reports \u2014 they may or may not have been submitted. From now on, every submission must have proof."
+  },
+  "submission_audit": {
+    "completed": true,
+    "path": ".optimizer-data/gsc-ui-claimed-submission-audit.json",
+    "verdict": "Only 10/70 claimed submissions have run log evidence. Day report summary counts are not trackable per-URL."
+  },
+  "gsc_ui_re_run": {
+    "dry_run_completed": true,
+    "dry_run_result": "7 URLs approved by safety gates",
+    "actual_execution": "PENDING \u2014 requires CloakBrowser with google-gsc-v3 profile. Script is scripts/safe-gsc-ui-indexing-queue.py"
+  },
+  "phase15_proof_integration": {
+    "completed": true,
+    "path": ".optimizer-data/phase15-indexing-proof-integration-report.json",
+    "key_change": "Daily reports now cite proof source. No proof = not counted."
+  },
+  "authority_follow_ups": {
+    "due_today": 2,
+    "approved": 2,
+    "sent": 0,
+    "reason": "Hermes cannot send SMTP emails directly. Drafts prepared. Requires GMAIL_ADDRESS + GMAIL_APP_PASSWORD from .env.local.",
+    "targets": [
+      "Money Under 30 (josh@moneyunder30.com) \u2014 Auditor 90/100",
+      "Max Real Estate Exposure (bill@remaxexec.com) \u2014 Auditor 88/100"
+    ]
+  },
+  "new_prospects": {
+    "researched": 5,
+    "path": ".optimizer-data/authority-new-prospects-day1.json",
+    "status": "RESEARCHED_NOT_CONTACTED",
+    "top_pick": "The Balance (DR 80+, millions of visitors) \u2014 Auditor 92/100"
+  },
+  "linkable_asset": {
+    "planned": "Mortgage Affordability Widget Upgrade",
+    "path": ".optimizer-data/weekly-linkable-asset-1-execution-plan.json",
+    "status": "PLANNED_NOT_BUILT"
+  },
+  "googlebot_sitemap": {
+    "status": "HEALTHY \u2014 no technical crawl barriers",
+    "sitemap_resubmitted": true
+  },
+  "scoreboard": {
+    "updated": true,
+    "status": "OFF_TRACK",
+    "gsc_7d": "77 impressions, 0 clicks",
+    "backlinks": 0,
+    "gap_1M_visitors": "1,000,000",
+    "gap_50k_revenue": "$50,000"
+  },
+  "biggest_blocker": "DOMAIN AUTHORITY \u2014 0 backlinks after 34 days. Internal optimization helps but cannot substitute for external trust signals.",
+  "next_autonomous_action": "1. Execute GSC UI Batch 9 via scripts/safe-gsc-ui-indexing-queue.py (non-dry-run). 2. Send 2 follow-ups via Gmail SMTP. 3. Add 5-10 internal links. 4. Deploy.",
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_unproven_submissions_counted": true,
+    "no_risky_automations_restarted": true,
+    "no_haro_sent": true,
+    "no_pinterest_actions": true,
+    "no_x_posts": true,
+    "no_mass_content": true,
+    "all_29_crons_still_deleted": true,
+    "system_crontab_still_locked": true,
+    "proof_ledger_active": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-06T00:36:10.804929",
+  "phase": "15.3B \u2192 16.1 integration",
+  "changes": [
+    {
+      "component": "Daily run lock",
+      "change": "Added gsc_ui_proven_count and gsc_ui_claimed_count fields",
+      "rule": "Daily report must show proven count, not claimed count"
+    },
+    {
+      "component": "Gateway startup trigger",
+      "change": "Before running, check gsc-ui-indexing-proof-ledger.json for today's proven submissions",
+      "rule": "If today has 0 proven submissions and CloakBrowser is available, prioritize indexing"
+    },
+    {
+      "component": "Manual trigger",
+      "change": "--status-only now shows proven vs claimed vs planned counts",
+      "rule": "Never claim success without proof"
+    },
+    {
+      "component": "Cron dcba952b4c45",
+      "change": "Step 3 (calculator indexing) now reads proof ledger, not day report summaries",
+      "rule": "Only count PROVEN_SUCCESS entries as submitted. CLAIMED_BUT_UNPROVEN are treated as unsubmitted."
+    },
+    {
+      "component": "Reporting",
+      "change": "All daily reports must cite proof source (run log, terminal log, or screenshot path)",
+      "rule": "No proof = not counted"
+    }
+  ],
+  "proof_ledger_path": ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+  "run_log_path": ".optimizer-data/safe-gsc-ui-indexing-run-log.json",
+  "dry_run_result": "Just completed \u2014 7 URLs passed safety gates, ready for actual GSC UI submission"
+}

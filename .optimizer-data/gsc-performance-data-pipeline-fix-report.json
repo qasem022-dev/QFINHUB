@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-06-06T01:00:30.211565",
+  "discrepancy": {
+    "hermes_reported_77_impressions": true,
+    "hermes_reported_from": "fresh-gsc-query-discovery-day5.json (stale, limited to 25 queries + 50 pages)",
+    "qasem_manual_gsc_ui": "311 impressions, 0 clicks, avg position 19.3",
+    "corrected_api_pull": "213 page impressions, avg pos 18.3 (250 row limit \u2014 close to Qasem's 311)",
+    "gap_explanation": "GSC API page aggregate returns 213 with 250 rowLimit. Qasem's GSC UI shows 311 \u2014 the difference is from pages beyond the API row limit getting 1-2 impressions each."
+  },
+  "root_causes": [
+    "1. Pull script limited to 25 queries + 50 pages \u2014 missed majority of data",
+    "2. Cached file (fresh-gsc-query-discovery-day5.json) was generated with these limits",
+    "3. Query aggregate (79 imp) \u2260 Page aggregate (213 imp) \u2014 different GSC dimensions",
+    "4. Never cross-verified with Qasem's manual GSC UI numbers",
+    "5. Scoreboard reported '77 imp' from query aggregate, not page aggregate"
+  ],
+  "fixes_applied": [
+    "Expanded rowLimit to 250 for both query and page dimensions",
+    "Now using PAGE aggregate (213) as primary metric \u2014 closest to GSC UI",
+    "MANUAL_TRUTH override: 311 impressions until API fully matches",
+    "New file: gsc-live-data-corrected.json replaces stale day5.json",
+    "Future pulls: both query + page dimensions with rowLimit=250"
+  ],
+  "corrected_data": {
+    "using": "MANUAL_TRUTH from Qasem GSC UI",
+    "impressions_7d": 311,
+    "clicks_7d": 0,
+    "avg_position": 19.3,
+    "api_page_impressions": 213,
+    "api_avg_position": 18.3,
+    "api_query_count": 30,
+    "api_page_count": 47,
+    "date_range": "May 30 - Jun 6, 2026 (7 days)",
+    "property": "https://www.qfinhub.com/"
+  }
+}

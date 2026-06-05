@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-06-05T20:04:58.629680",
+  "mode": "DRY-RUN \u2014 no publishing, no posting, no sending, no indexing",
+  "cron_id": "dcba952b4c45",
+  "step1_business_scoreboard": {
+    "status": "\ud83d\udd34 OFF-TRACK",
+    "traffic": {
+      "monthly": "~0",
+      "daily": "~0",
+      "target": "5,000-25,000 (Month 2)",
+      "gap": "5,000 visitors"
+    },
+    "revenue": {
+      "monthly": "$0.00",
+      "target": "$100-$1,000 (Month 3)",
+      "adsense": "ads.txt LIVE, awaiting AdSense review"
+    },
+    "indexing": {
+      "t1": "10/10 \u2705",
+      "t2": "12/12 submitted \u2705",
+      "t3": "70/105 (67%) submitted",
+      "remaining": 35
+    },
+    "authority": {
+      "backlinks": 0,
+      "referring_domains": "~0",
+      "outreach_sent": 7,
+      "follow_ups_due": 7
+    },
+    "gsc_7d": {
+      "clicks": 0,
+      "impressions": "~120",
+      "ctr": "0%",
+      "avg_position": "~50"
+    },
+    "ga4_7d": {
+      "users": 6,
+      "sessions": 6,
+      "bounce_rate": "100%",
+      "avg_duration": "1s"
+    },
+    "verdict": "ZERO traffic after 33 days. Domain in Google sandbox or authority too low."
+  },
+  "step2_technical_health": {
+    "site_online": true,
+    "vercel_analytics": "\u2705 Working (fixed Jun 4)",
+    "ga4": "\u2705 Working",
+    "ads_txt": "\u2705 Live HTTP 200",
+    "sitemap": "649 URLs, 2 sitemaps in GSC",
+    "robots": "Allow: / for all agents",
+    "gsc_token": "Valid, full webmasters scope",
+    "cloakbrowser_profile": "google-gsc-v3 persistent, 7/7 sessions",
+    "no_critical_errors": true
+  },
+  "step3_calculator_indexing_plan": {
+    "t3_remaining": 35,
+    "next_batch": "Batch 8 (10 calculators)",
+    "plan": "Continue 10/day via safe-gsc-ui-indexing-queue.py. Finish in ~4 days.",
+    "method": "CloakBrowser GSC UI Request Indexing \u2014 PROVEN 100/100, zero CAPTCHA",
+    "cooldown_check": "No recently-edited pages in batch",
+    "gsc_inspect": "Optional: pre-inspect 10 candidates via URL Inspection API"
+  },
+  "step4_query_discovery": {
+    "method": "gsc-search-analytics-pull.py (7-day window)",
+    "current_data": "~25 queries, 20 pages with impressions (from Jun 5 pull)",
+    "top_queries": [
+      "if you borrow $20,000 for 5 years at 8%... (pos 4.5, 2 imp)",
+      "mortgage calculator piti (pos 74.7, 3 imp)",
+      "budget on housing (pos 62, 1 imp)",
+      "piti calculator (pos 85.5, 2 imp)"
+    ],
+    "assessment": "No high-volume queries yet. Long-tail Q&A pattern. Domain authority too low for competitive terms."
+  },
+  "step5_ctr_near_winner_check": {
+    "cooldown_status": "All 7 fixed pages still in 48h cooldown (edited Jun 3-4). Cooldown expires Jun 5-6.",
+    "eligible_pages": 0,
+    "ctr_candidates": [
+      "blog/20000-loan-at-8-percent (59 imp, pos 20.5 \u2014 cooldown)",
+      "blog/hungary-holds-key-interest-rate (26 imp, pos 11.1 \u2014 auto-generated, low quality)",
+      "blog/blackrock-saigal-fed-rate-cut (15 imp, pos 8.1 \u2014 cooldown)",
+      "blog/monthly-mortgage-payment-formula (13 imp, pos 75.2 \u2014 too deep)"
+    ],
+    "recommendation": "WAIT. Cooldown expires soon. Prepare CTR fixes for when cooldown lifts \u2014 target the 7 pages with title/meta improvements."
+  },
+  "step6_internal_links": {
+    "added_to_date": 45,
+    "plan": "Add 5-10 internal links from indexed T1 calculator pages to Tier 3 batch candidates. This is the one growth vector that ALWAYS works (no cooldown, no API needed).",
+    "target_pages": "10 T3 calculators from next batch",
+    "source_pages": "mortgage-calculator, compound-interest, retirement-planning (all T1, all indexed)",
+    "method": "Manual link insertion in calculator-content.ts"
+  },
+  "step7_content_decision": {
+    "auditor_verdict": "HOLD",
+    "reason": "No single query with 10+ impressions yet. Creating a new page targeting zero-volume queries wastes effort. Wait for GSC data to identify a clear query opportunity.",
+    "backlog": [
+      "Roth IRA guide",
+      "Retirement withdrawal guide",
+      "Budget planner deep dive"
+    ],
+    "when_to_create": "When a single query reaches 10+ impressions in 7-day window"
+  },
+  "step8_authority_backlink_actions": {
+    "outreach_sent": 7,
+    "follow_ups_due": 7,
+    "follow_ups_due_today": [
+      "Money Under 30 (May 31)",
+      "Maximum Real Estate Exposure (May 31)"
+    ],
+    "follow_ups_due_jun7": [
+      "Real Estate Witch",
+      "Credit.org",
+      "Physician on FIRE",
+      "Greenpath",
+      "Young and Invested"
+    ],
+    "backlinks_acquired": 0,
+    "plan": "Send follow-ups to overdue targets. 5 new prospects/day per Phase 15 rules.",
+    "note": "Follow-ups ONLY \u2014 no new outreach batch until backlog cleared."
+  },
+  "step9_outreach_status": {
+    "status": "DRY-RUN \u2014 follow-ups logged but NOT sent",
+    "due_now": [
+      "Money Under 30",
+      "Maximum Real Estate Exposure"
+    ],
+    "due_soon": [
+      "Real Estate Witch",
+      "Credit.org",
+      "Physician on FIRE",
+      "Greenpath",
+      "Young and Invested (Jun 7)"
+    ],
+    "method": "Gmail SMTP (same as HARO). Only for email-verified targets. Contact-form targets require manual paste."
+  },
+  "step10_pinterest_monitor": {
+    "status": "MONITOR-ONLY",
+    "monthly_views": 315,
+    "site_traffic": "1 session in 7 days",
+    "recommendation": "Continue monitor-only. Pinterest generates negligible traffic. Not worth reactivating."
+  },
+  "step11_monetization_adsense": {
+    "ads_txt": "\u2705 Live",
+    "adsense_status": "Application submitted, awaiting review",
+    "revenue": "$0.00",
+    "monetization_ready": "NOT YET \u2014 need traffic first. AdSense won't approve with zero traffic.",
+    "estimated_first_dollar": "Unknown \u2014 requires AdSense approval + meaningful traffic"
+  },
+  "step12_deploy_validation": {
+    "deploy_needed": false,
+    "reason": "No code changes in dry-run. Site is live and functioning.",
+    "last_deploy": "Jun 4 (Phase 14B Day 5)",
+    "verification": "All hub pages HTTP 200, sitemap clean, robots.txt correct"
+  },
+  "step13_gap_analysis": {
+    "traffic_gap": "5,000 visitors to Month 2 minimum \u2014 need 167/day starting now. Currently 0/day.",
+    "revenue_gap": "$100 to first dollar. AdSense required first.",
+    "authority_gap": "0 backlinks, 0 referring domains. Domain has no external trust signals.",
+    "indexing_gap": "35 T3 calculators not yet submitted. Content pages not ranking.",
+    "biggest_blocker": "Domain authority. Google sandbox for new domains can last 2-6 months. No backlinks = no escape velocity."
+  },
+  "step14_escalations": {
+    "needs_escalation": true,
+    "items": [
+      "GSC shows 0 clicks after 33 days \u2014 domain may be sandboxed. Consider manual backlink building.",
+      "AdSense application pending with zero traffic \u2014 may be rejected. Prepare backup monetization plan.",
+      "Phase 15 cron never ran today \u2014 scheduler needs monitoring tomorrow at 3 PM."
+    ],
+    "no_action_without_qasem": true
+  }
+}

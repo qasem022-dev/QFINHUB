@@ -1,97 +1,23 @@
 {
-  "title": "Internal Authority Engine \u2014 Day 4",
-  "generated": "2026-06-04T20:21:36.832436Z",
-  "applied": 15,
-  "links": [
-    {
-      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
-      "target": "/calculators/emergency-fund",
-      "anchor": "calculate your exact emergency fund number",
-      "type": "blog\u2192calc"
-    },
-    {
-      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
-      "target": "/calculators/budget-planner",
-      "anchor": "build a 50/30/20 budget to find savings",
-      "type": "blog\u2192calc"
-    },
-    {
-      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
-      "target": "/calculators/savings-goal",
-      "anchor": "set a savings goal and track your progress",
-      "type": "blog\u2192calc"
-    },
-    {
-      "source": "/blog/how-much-emergency-fund-do-i-need-2026",
-      "target": "/decision/how-much-emergency-fund-do-i-need",
-      "anchor": "read our emergency fund decision guide",
-      "type": "blog\u2192decision"
-    },
-    {
-      "source": "/guides/how-to-use-emergency-fund",
-      "target": "/calculators/emergency-fund",
-      "anchor": "calculate your emergency fund now",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-budget-planner",
-      "target": "/calculators/budget-planner",
-      "anchor": "start budgeting in 30 seconds",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-savings-goal",
-      "target": "/calculators/savings-goal",
-      "anchor": "set your savings target and track it",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-debt-payoff",
-      "target": "/calculators/debt-payoff",
-      "anchor": "create your debt-free plan",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-tax-calculator",
-      "target": "/calculators/tax-calculator",
-      "anchor": "estimate your tax bill before you file",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-401k-calculator",
-      "target": "/calculators/401k-calculator",
-      "anchor": "project your retirement savings growth",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-investment-return",
-      "target": "/calculators/investment-return",
-      "anchor": "calculate your real investment performance",
-      "type": "guide\u2192calc"
-    },
-    {
-      "source": "/guides/how-to-use-budget-planner",
-      "target": "/blog/how-much-emergency-fund-do-i-need-2026",
-      "anchor": "learn how much emergency fund you really need",
-      "type": "guide\u2192blog"
-    },
-    {
-      "source": "/decision/how-much-emergency-fund-do-i-need",
-      "target": "/blog/how-much-emergency-fund-do-i-need-2026",
-      "anchor": "read our detailed emergency fund guide",
-      "type": "decision\u2192blog"
-    },
-    {
-      "source": "/decision/how-much-emergency-fund-do-i-need",
-      "target": "/calculators/emergency-fund",
-      "anchor": "get your exact emergency fund number",
-      "type": "decision\u2192calc"
-    },
-    {
-      "source": "/decision/retire-at-45-with-1-million",
-      "target": "/calculators/retirement-planning",
-      "anchor": "project your retirement with accurate numbers",
-      "type": "decision\u2192calc"
-    }
+  "generated_at": "2026-06-06T01:35:55.112023",
+  "phase": "16.4",
+  "links_added_today": 12,
+  "cumulative_total": 67,
+  "source_pages": [
+    "mortgage-calculator",
+    "retirement-planning",
+    "investment-return",
+    "debt-payoff",
+    "compound-interest",
+    "budget-planner"
+  ],
+  "target_pages": [
+    "home-affordability",
+    "em-fund",
+    "savings-goal",
+    "break-even",
+    "net-worth",
+    "student-loan",
+    "personal-loan"
   ]
 }

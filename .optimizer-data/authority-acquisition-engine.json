@@ -1,0 +1,153 @@
+{
+  "title": "QFINHUB Authority Acquisition Engine — Phase 15.1",
+  "generated": "2026-06-04T21:20:00Z",
+  "version": "2.0.0",
+  "status": "ACTIVE — replaces Phase 12 outreach tracker",
+
+  "why_this_exists": "QFINHUB has 0 backlinks and 0 referring domains after 32 days. Google will not rank a finance site without external trust signals. Every other optimization is secondary until backlinks arrive. This engine runs daily to systematically acquire authority.",
+
+  "authority_gap": {
+    "current_referring_domains": 0,
+    "current_backlinks": 0,
+    "target_month_2_referring_domains": 10,
+    "target_month_3_referring_domains": 30,
+    "target_month_4_referring_domains": 75,
+    "target_month_5_referring_domains": 150,
+    "gap_to_month_2_minimum": 10,
+    "gap_severity": "🔴 CRITICAL — 0 of 10 minimum. This is the single biggest growth blocker."
+  },
+
+  "daily_workflow": {
+    "step_a_follow_ups": {
+      "description": "Check all previously contacted prospects. Send follow-ups only when due date has arrived AND no reply received.",
+      "max_per_day": 5,
+      "auditor_minimum": 90,
+      "rules": [
+        "Only send if follow_up_due date ≤ today",
+        "Only send if no reply received",
+        "Only send if status is 'sent' or 'sent_email'",
+        "NEVER follow up on manual_required targets",
+        "Personalize each follow-up — reference the original pitch",
+        "No exact-match anchor text requests",
+        "No paid link offers",
+        "No spammy templates"
+      ],
+      "gmail_config": {
+        "from_address": "GMAIL_ADDRESS from .env.local",
+        "app_password": "GMAIL_APP_PASSWORD from .env.local",
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587
+      }
+    },
+    "step_b_new_prospects": {
+      "description": "Find 5 new link/embed prospects per day from high-quality finance and adjacent sites. Research their content to find natural link opportunities.",
+      "max_per_day": 5,
+      "auditor_minimum": 90,
+      "prospect_categories": [
+        {
+          "category": "finance_blogs",
+          "priority": "HIGH",
+          "search_terms": ["personal finance blog tools", "best financial calculators", "free budgeting tools", "finance resources page"],
+          "pitch_angle": "Your readers would find our free [calculator] tool useful. We'd be honored to be included in your resources."
+        },
+        {
+          "category": "real_estate_mortgage",
+          "priority": "HIGH",
+          "search_terms": ["mortgage calculator tool resource", "home buying tools blog", "real estate investor resources", "mortgage affordability guide"],
+          "pitch_angle": "We built a free mortgage affordability calculator that gives homebuyers their exact budget in 30 seconds. Happy to share if it helps your audience."
+        },
+        {
+          "category": "debt_nonprofits",
+          "priority": "HIGH",
+          "search_terms": ["debt counseling resources", "credit counseling nonprofit tools", "debt payoff calculator free", "financial literacy resources nonprofit"],
+          "pitch_angle": "We created free debt payoff and budgeting tools that align with your mission of helping people achieve financial wellness. No cost, no ads, just helpful tools."
+        },
+        {
+          "category": "fire_retirement",
+          "priority": "MEDIUM",
+          "search_terms": ["FIRE calculator tools", "retirement planning resources", "early retirement blog tools", "financial independence calculator"],
+          "pitch_angle": "Your FIRE community would appreciate our free compound interest and retirement calculators — fast, no-signup tools for planning financial independence."
+        },
+        {
+          "category": "calculator_tool_pages",
+          "priority": "MEDIUM",
+          "search_terms": ["free online calculators", "financial calculator tools", "best calculator websites", "useful finance tools"],
+          "pitch_angle": "We noticed your calculator resource page. We have 125 free financial calculators that might complement your existing tools."
+        },
+        {
+          "category": "homebuyer_education",
+          "priority": "HIGH",
+          "search_terms": ["homebuyer education resources", "first time home buyer tools", "HUD approved housing counseling", "homebuyer workshop resources"],
+          "pitch_angle": "Our free mortgage affordability calculator helps first-time homebuyers understand what they can afford — a perfect fit for your education materials."
+        },
+        {
+          "category": "college_financial_literacy",
+          "priority": "MEDIUM",
+          "search_terms": ["college financial literacy resources", "student money management tools", "university financial wellness", "student loan calculator resources"],
+          "pitch_angle": "Our student loan and budget calculators help college students make smarter financial decisions. Free, no-signup tools for your financial literacy program."
+        }
+      ],
+      "discovery_method": "Python script: search Brave/Google for each search_term → extract 10 results → filter for blogs/resource pages (not competitors) → score by domain authority → select top 5 → find contact email on contact/about page"
+    },
+    "step_c_linkable_assets": {
+      "description": "Every week, create or improve one linkable asset that other sites will naturally want to link to.",
+      "frequency": "weekly",
+      "current_assets": [
+        {
+          "name": "Mortgage Affordability Embed Widget",
+          "status": "BUILT — /widgets/mortgage-affordability-embed",
+          "type": "interactive embed",
+          "target_audience": "real estate blogs, mortgage sites, homebuyer resources",
+          "pitch": "Embed our free mortgage affordability calculator on your site — your visitors calculate their budget without leaving your page."
+        }
+      ],
+      "next_4_weeks_plan": "See weekly-linkable-asset-plan.json"
+    }
+  },
+
+  "outreach_quality_rules": {
+    "personalization": "Reference a specific article or resource on their site. Show you actually read their content.",
+    "value_first": "Explain what their audience gets — a useful free tool/resource. Never lead with 'we want a backlink.'",
+    "identity": "Sign as Qasem Mohammed / QFINHUB. Use real identity, not 'The QFINHUB Team.'",
+    "forbidden": [
+      "SEO benefit as primary reason",
+      "Exact anchor text requests",
+      "Money offers / paid links",
+      "Automated-sounding templates",
+      "Mass BCC emails",
+      "More than one follow-up (one follow-up max per prospect)",
+      "Contact form automation if site has Cloudflare (blocked)"
+    ],
+    "template_structure": "Personalized greeting → reference their specific content → explain our tool → how it helps their audience → gentle ask → real signature"
+  },
+
+  "tracking": {
+    "files": {
+      "prospect_tracker": ".optimizer-data/authority-outreach-tracker.json",
+      "followup_log": ".optimizer-data/authority-followup-log.json",
+      "backlink_gap": ".optimizer-data/backlink-gap-report.json"
+    },
+    "metrics": [
+      "prospects_discovered_total",
+      "emails_sent_total", 
+      "follow_ups_sent_total",
+      "replies_received",
+      "backlinks_won",
+      "widget_embeds_won",
+      "referring_domains",
+      "reply_rate",
+      "conversion_rate"
+    ]
+  },
+
+  "current_pipeline": {
+    "total_prospects_contacted": 7,
+    "awaiting_reply": 7,
+    "replies_received": 0,
+    "backlinks_won": 0,
+    "follow_ups_due_today": 0,
+    "follow_ups_due_tomorrow": 2,
+    "follow_ups_due_jun7": 5,
+    "next_new_prospect_batch": "Ready to run — 5/day when Auditor approves"
+  }
+}

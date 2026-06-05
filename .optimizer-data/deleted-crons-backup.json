@@ -1,0 +1,209 @@
+{
+  "generated_at": "2026-06-05T19:54:27.382917",
+  "action": "PERMANENTLY DELETED",
+  "crons": [
+    {
+      "id": "303f15ec269a",
+      "name": "HARO Auto-Responder (5:10 PM)",
+      "schedule": "10 17 * * *",
+      "risk": "CRITICAL \u2014 auto-sends HARO emails",
+      "reason": "Auto-sends fabricated authority claims to journalists"
+    },
+    {
+      "id": "43438e317a61",
+      "name": "Widget Outreach Engine (6 PM)",
+      "schedule": "0 18 * * *",
+      "risk": "HIGH \u2014 sends outreach emails",
+      "reason": "Uncontrolled email outreach"
+    },
+    {
+      "id": "d006e3318401",
+      "name": "Newsjacking Bot (5:30 PM)",
+      "schedule": "30 17 * * *",
+      "risk": "CRITICAL \u2014 auto-publishes blog posts",
+      "reason": "Auto-publishes without Auditor review"
+    },
+    {
+      "id": "0981e2f88cf4",
+      "name": "PDF Distribution (6:10 PM)",
+      "schedule": "10 18 * * *",
+      "risk": "HIGH \u2014 generates AI PDFs",
+      "reason": "Unreviewed AI content generation"
+    },
+    {
+      "id": "5ecc4b819cc5",
+      "name": "Growth Optimizer (3:15 PM)",
+      "schedule": "15 15 * * *",
+      "risk": "HIGH \u2014 modifies site content",
+      "reason": "Replaced by Phase 15 OS"
+    },
+    {
+      "id": "e3d7d3fcb7c9",
+      "name": "Blog Agent (3:10 PM) \u2014 Auto-deploy",
+      "schedule": "10 15 * * *",
+      "risk": "CRITICAL \u2014 auto-deploys blog posts",
+      "reason": "Auto-publishes content without review"
+    },
+    {
+      "id": "fc9f8c7ce833",
+      "name": "Self-Healing Monitor (3 PM)",
+      "schedule": "0 15 * * *",
+      "risk": "EXTREME \u2014 can unpause deleted crons",
+      "reason": "Could restart paused/risky crons automatically"
+    },
+    {
+      "id": "726b45fd51f0",
+      "name": "Weekly Optimization Review (Mon 7 PM)",
+      "schedule": "0 19 * * 1",
+      "risk": "MEDIUM \u2014 analysis only",
+      "reason": "Stale, replaced by Phase 15"
+    },
+    {
+      "id": "2e59569e382e",
+      "name": "Site Quality Check (3:20 PM)",
+      "schedule": "20 15 * * *",
+      "risk": "LOW \u2014 analysis only",
+      "reason": "Replaced by Phase 15"
+    },
+    {
+      "id": "defdde75ea1f",
+      "name": "Pinterest Pin Generator (3:30 PM)",
+      "schedule": "30 15 * * *",
+      "risk": "MEDIUM \u2014 generates pins",
+      "reason": "Pinterest locked to monitor-only"
+    },
+    {
+      "id": "14d3d631f9ba",
+      "name": "SEO Indexing Engine (3:05 PM)",
+      "schedule": "5 15 * * *",
+      "risk": "HIGH \u2014 submits URLs to indexing",
+      "reason": "Uncontrolled indexing submissions"
+    },
+    {
+      "id": "7edc3f28a918",
+      "name": "Scenario Page Generator (Daily 3PM)",
+      "schedule": "0 15 * * *",
+      "risk": "CRITICAL \u2014 generates 750+ pages",
+      "reason": "Mass page generation without Auditor"
+    },
+    {
+      "id": "2aac8129928f",
+      "name": "HARO Auto-Responder (3:10 PM Morning)",
+      "schedule": "10 15 * * *",
+      "risk": "CRITICAL \u2014 auto-sends HARO",
+      "reason": "Auto-sends HARO responses"
+    },
+    {
+      "id": "c7c7a0ed6621",
+      "name": "HARO Auto-Responder (7:10 PM Afternoon)",
+      "schedule": "10 19 * * *",
+      "risk": "CRITICAL \u2014 auto-sends HARO",
+      "reason": "Auto-sends HARO responses"
+    },
+    {
+      "id": "478e5ba17848",
+      "name": "Pinterest Daily Growth",
+      "schedule": "30 16 * * *",
+      "risk": "HIGH \u2014 follows/saves on Pinterest",
+      "reason": "Pinterest ToS violation, zero ROI"
+    },
+    {
+      "id": "5c46309c02c0",
+      "name": "Pinterest Daily Pin Generator",
+      "schedule": "0 3 * * *",
+      "risk": "MEDIUM \u2014 generates pins",
+      "reason": "Pinterest locked to monitor-only"
+    },
+    {
+      "id": "f803aceaa0a7",
+      "name": "Pinterest Morning Post (5 pins)",
+      "schedule": "0 10 * * *",
+      "risk": "HIGH \u2014 posts to Pinterest",
+      "reason": "Pinterest locked to monitor-only"
+    },
+    {
+      "id": "7c97577dbd84",
+      "name": "Pinterest Evening Post (5 pins)",
+      "schedule": "0 18 * * *",
+      "risk": "HIGH \u2014 posts to Pinterest",
+      "reason": "Pinterest locked to monitor-only"
+    },
+    {
+      "id": "6ae2bad29ba3",
+      "name": "CTR Optimization Engine (3:25 PM)",
+      "schedule": "25 15 * * *",
+      "risk": "HIGH \u2014 modifies page titles/meta",
+      "reason": "Unapproved content changes"
+    },
+    {
+      "id": "0a7e82602b9a",
+      "name": "Reddit Growth Engine (Daily 4 PM)",
+      "schedule": "0 16 * * *",
+      "risk": "HIGH \u2014 personal account risk",
+      "reason": "Reddit account risk, no Auditor"
+    },
+    {
+      "id": "8a229e1e731b",
+      "name": "X Morning (9AM EST)",
+      "schedule": "0 16 * * *",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "reason": "X account shadowbanned, recovery mode"
+    },
+    {
+      "id": "be62779e2dc0",
+      "name": "X Noon (12PM EST)",
+      "schedule": "0 19 * * *",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "reason": "X account shadowbanned, recovery mode"
+    },
+    {
+      "id": "2bd0d2e26dc8",
+      "name": "X Afternoon (3PM EST)",
+      "schedule": "0 22 * * *",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "reason": "X account shadowbanned, recovery mode"
+    },
+    {
+      "id": "2e55e62a79a8",
+      "name": "X Evening (6PM EST)",
+      "schedule": "0 1 * * *",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "reason": "X account shadowbanned, recovery mode"
+    },
+    {
+      "id": "6320859ceb69",
+      "name": "X Night (9PM EST)",
+      "schedule": "0 4 * * *",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "reason": "X account shadowbanned, recovery mode"
+    },
+    {
+      "id": "fb1ea44cc2dc",
+      "name": "X Self-Tweet (3x daily)",
+      "schedule": "0 12,17,21 * * *",
+      "risk": "CRITICAL \u2014 shadowban risk",
+      "reason": "X account shadowbanned, recovery mode"
+    },
+    {
+      "id": "7ba22a836377",
+      "name": "Daily Sitemap Ping (4:00 AM)",
+      "schedule": "0 4 * * *",
+      "risk": "MEDIUM \u2014 pings Google",
+      "reason": "Replaced by Phase 15 deploy step"
+    },
+    {
+      "id": "48cef8f10147",
+      "name": "Daily Performance Tracker (5 PM)",
+      "schedule": "0 17 * * *",
+      "risk": "LOW \u2014 reports broken metrics",
+      "reason": "Reports stale/false data, replaced by Phase 15 scoreboard"
+    },
+    {
+      "id": "291b8aa4f5d0",
+      "name": "Scenario Uniqueness Upgrades",
+      "schedule": "30 15 * * *",
+      "risk": "HIGH \u2014 upgrades scenario pages",
+      "reason": "Unapproved page modifications"
+    }
+  ]
+}

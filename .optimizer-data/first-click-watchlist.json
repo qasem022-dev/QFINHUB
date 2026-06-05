@@ -1,0 +1,105 @@
+{
+  "title": "QFINHUB First-Click Watchlist",
+  "generated": "2026-06-06T22:00:00Z",
+  "data_source": "GSC API (7-day: 2026-05-29 to 2026-06-05)",
+  "manual_baseline": 311,
+  "api_total": 213,
+  "total_clicks": 0,
+  "status": "AWAITING_FIRST_CLICK",
+  "watch_pages": [
+    {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 59,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "position": 20.5,
+      "ctr_fix_status": "FIXED — removed $405 answer from meta, replaced with curiosity CTA (Jun 5)",
+      "last_changed": "2026-06-05",
+      "next_action": "Wait for Google re-crawl. Monitor daily. Highest impression page — most likely first-click candidate."
+    },
+    {
+      "url": "/decision/pay-off-debt-or-invest",
+      "impressions": 44,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "position": 14.0,
+      "ctr_fix_status": "FIXED — improved meta (Jun 5)",
+      "last_changed": "2026-06-05",
+      "next_action": "Wait for Google re-crawl. Second highest impressions."
+    },
+    {
+      "url": "/decision/how-much-do-i-need-to-retire",
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "position": 5.0,
+      "ctr_fix_status": "FIXED — removed 25x formula from meta (Jun 5)",
+      "last_changed": "2026-06-05",
+      "next_action": "Position 5 with improved meta — strong first-click potential after re-crawl."
+    },
+    {
+      "url": "/",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "position": 1.0,
+      "ctr_fix_status": "FIXED — improved homepage meta (Jun 5)",
+      "last_changed": "2026-06-05",
+      "next_action": "Low impressions but position 1. Monitor for branded search growth."
+    },
+    {
+      "url": "/decision/how-much-emergency-fund-do-i-need",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "position": 4.0,
+      "ctr_fix_status": "FIXED — improved meta with personalization hook (Jun 5)",
+      "last_changed": "2026-06-05",
+      "next_action": "Position 4, improved meta. Monitor."
+    },
+    {
+      "url": "/widgets/mortgage-affordability-embed",
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": "N/A",
+      "position": "N/A",
+      "ctr_fix_status": "NEW — deployed Jun 6, not yet in GSC data",
+      "last_changed": "2026-06-06",
+      "next_action": "Just deployed. Request GSC UI indexing. Monitor for first impressions."
+    },
+    {
+      "url": "/calculators/mortgage-affordability",
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": "N/A",
+      "position": "N/A",
+      "ctr_fix_status": "EXISTING — core calculator page",
+      "last_changed": null,
+      "next_action": "Monitor for impressions as widget page gains backlinks."
+    },
+    {
+      "url": "/calculators/mortgage-calculator",
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": "N/A",
+      "position": "N/A",
+      "ctr_fix_status": "EXISTING — core calculator page",
+      "last_changed": null,
+      "next_action": "Monitor."
+    }
+  ],
+  "first_click_prediction": {
+    "most_likely_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "reason": "Highest impressions (59), CTR fixed (snippet cannibalization removed), position 20.5 (page 2)",
+    "second_most_likely": "/decision/pay-off-debt-or-invest",
+    "reason": "44 impressions, position 14, CTR fixed",
+    "dark_horse": "/decision/how-much-do-i-need-to-retire",
+    "reason": "Position 5 but only 3 impressions — if queries increase, could click first"
+  },
+  "recrawl_status": {
+    "pages_changed_jun5": 6,
+    "recently_deployed": true,
+    "estimated_recrawl": "3-14 days for Google to re-process meta changes",
+    "monitoring_frequency": "Check GSC daily for click changes on watch pages"
+  }
+}

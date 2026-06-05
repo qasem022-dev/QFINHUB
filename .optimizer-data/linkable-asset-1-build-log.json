@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-06T22:00:00Z",
+  "asset": "Mortgage Affordability Widget Upgrade",
+  "decision": "BUILD_NOW",
+  "status": "DEPLOYED",
+  "live_verification": {
+    "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+    "http_status": 200,
+    "title": "Free Mortgage Affordability Calculator Widget — Embed on Your Site | QFINHUB",
+    "meta_description": "Embed a free, mobile-responsive mortgage affordability calculator on your website. Help your readers figure out how much house they can afford — no signup, no data collection, 100% free.",
+    "canonical": "https://www.qfinhub.com/widgets/mortgage-affordability-embed (self-canonical ✓)",
+    "robots": "index, follow",
+    "page_size": "83 KB",
+    "features_verified": [
+      "Live widget preview (iframe to /embed/mortgage-affordability)",
+      "Embed code block with copy button",
+      "6 publisher use cases (bloggers, agents, brokers, banks, homebuyer blogs, financial literacy)",
+      "5 FAQ items with FAQPage schema markup",
+      "DTI explanation (28/36 rule with examples)",
+      "Privacy statement section",
+      "6 related calculator internal links",
+      "Contact CTA (email + contact form)",
+      "BreadcrumbList schema",
+      "Organization schema",
+      "WebApplication schema",
+      "GA4 analytics firing",
+      "Mobile responsive layout",
+      "Pinterest domain verify",
+      "AdSense account meta tag"
+    ],
+    "verdict": "PASS — Fully operational, all features verified live"
+  },
+  "gsc_ui_indexing": {
+    "status": "PENDING — Not yet requested today",
+    "recommendation": "Request via safe-gsc-ui-indexing-queue.py --source manual"
+  },
+  "build_tasks_completed": [
+    "Add clear 'How to Embed' section with copy-paste iframe code ✓",
+    "Add publisher use cases (blogs, real estate sites, housing counselors) ✓",
+    "Add 'Free, No Signup, No Data Collection' messaging ✓",
+    "Add FAQ for publishers ✓",
+    "Add contact CTA ✓",
+    "Add DTI explanation (28/36 rule) ✓",
+    "Ensure self-canonical, index/follow ✓",
+    "Deploy ✓"
+  ]
+}

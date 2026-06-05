@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-06T00:14:29.841647",
+  "method": "Analyzed GSC query data for low-competition gaps",
+  "current_queries_found": 25,
+  "query_types": {
+    "loan_payment_queries": [
+      "20k loan 5 years",
+      "20000 loan monthly payment",
+      "20k loan monthly payment"
+    ],
+    "mortgage_affordability": [
+      "can i afford a 400k house",
+      "down payment needed for 400k house"
+    ],
+    "retirement": [
+      "can i retire at 45 with 1 million",
+      "can i retire at 45 with 2 million"
+    ],
+    "debt_strategy": [
+      "avalanche vs snowball method",
+      "credit card debt strategy pay off"
+    ],
+    "tax": [
+      "effective tax brackets",
+      "philadelphia tax"
+    ]
+  },
+  "pages_already_have": [
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (targets loan queries)",
+    "/decision/can-i-afford-a-400k-home (targets affordability)",
+    "/decision/can-i-retire-at-45-with-1-million (targets retirement)",
+    "/calculators/tax/philadelphia-pa (targets Philly tax)"
+  ],
+  "pages_missing": [
+    "Dedicated '20k loan 5 years' calculator page (query has 43 impressions, pos 7.5)",
+    "'How much down payment for 400k house' decision page",
+    "'Avalanche vs Snowball' comparison page"
+  ],
+  "auditor_decision": {
+    "improve_existing": [
+      "Improve /blog/20000-loan... meta and content for 20k loan queries",
+      "Improve /decision/can-i-afford-a-400k-home for down payment queries"
+    ],
+    "create_new": "HOLD \u2014 no single query has 10+ impressions in 7-day window yet. The 43-impression query spans 7 days (~6/day). Wait for more volume.",
+    "hold": "All new content held until a query reaches 10+ impressions in 7-day window with clear intent."
+  }
+}

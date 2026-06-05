@@ -1,43 +1,30 @@
 {
-  "title": "Tier 3 Calculator Indexing Status \u2014 Phase 14A.2",
-  "generated": "2026-06-04T19:31:52.239495Z",
+  "title": "Tier 3 Calculator Indexing Batch Plan — Phase 14B Day 5",
+  "generated": "2026-06-04T20:53:00Z",
   "total": 105,
-  "submitted": 20,
-  "remaining": 85,
-  "batches": [
-    {
-      "batch": 1,
-      "submitted": "Phase 13C.11",
-      "count": 10,
-      "status": "awaiting re-crawl",
-      "cooldown_until": "2026-06-10T15:31:52.239495Z"
-    },
-    {
-      "batch": 2,
-      "submitted": "Phase 14A.1",
-      "count": 10,
-      "status": "awaiting re-crawl",
-      "cooldown_until": "2026-06-11T15:31:52.239495Z"
-    },
-    {
-      "batch": 3,
-      "status": "pending \u2014 next batch",
-      "count": 10,
-      "candidates": [
-        "home-equity",
-        "closing-costs",
-        "mortgage-payoff",
-        "biweekly-mortgage",
-        "extra-payment",
-        "loan-term",
-        "reverse-mortgage",
-        "heloc-calculator",
-        "balloon-payment",
-        "mortgage-points"
-      ]
-    }
+  "submitted": 70,
+  "remaining": 35,
+  "batches_completed": [
+    {"batch": 1, "phase": "13C.11", "count": 10, "status": "awaiting re-crawl"},
+    {"batch": 2, "phase": "14A.1", "count": 10, "status": "awaiting re-crawl"},
+    {"batch": 3, "phase": "14B Day 1", "count": 10, "status": "awaiting re-crawl (1/10 indexed: biweekly-mortgage)"},
+    {"batch": 4, "phase": "14B Day 2", "count": 10, "status": "awaiting re-crawl"},
+    {"batch": 5, "phase": "14B Day 3", "count": 10, "status": "awaiting re-crawl"},
+    {"batch": 6, "phase": "14B Day 4", "count": 10, "status": "awaiting re-crawl"},
+    {"batch": 7, "phase": "14B Day 5", "count": 10, "status": "submitted (10/10)"}
   ],
-  "next_batch": "Batch 3 \u2014 ready when Phase 14 controlled mode activated",
-  "gsc_ui_status": "\u2705 Working \u2014 0 errors in 4 sessions (29 URLs total)",
-  "note": "Do NOT submit Batch 3 until Phase 14 controlled mode is approved"
+  "next_batch": {
+    "batch": 8,
+    "count": 10,
+    "planned_day": "Day 6",
+    "candidates": [
+      "capital-gains-tax", "capm-calculator", "car-affordability", "cash-flow",
+      "child-care-cost", "currency-converter", "customer-acquisition-cost",
+      "date-difference", "dcf-analysis", "debt-avalanche"
+    ]
+  },
+  "cumulative_success": "70/70 (7 batches, 100%)",
+  "gsc_ui_sessions": 7,
+  "zero_errors": true,
+  "zero_captcha": true
 }

@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-06T00:48:58.550258",
+  "phase": "15.3B \u2192 16.3 integration",
+  "key_change": "Phase 15 daily indexing now uses: python3 scripts/safe-gsc-ui-indexing-queue.py --source tier3 --limit 10 --execute",
+  "queue_priority": {
+    "priority1": "tier3 \u2014 all 105 Tier 3 calculators until PROVEN_SUCCESS",
+    "priority2": "changed_high_value \u2014 pages edited in last 48h needing re-indexing",
+    "priority3": "recovery \u2014 high-impression pages with 0 clicks (CTR rescue)",
+    "fallback": "If tier3 blocked, report blocker then process priority2/3"
+  },
+  "cli_usage": {
+    "tier3_execute": "python3 scripts/safe-gsc-ui-indexing-queue.py --source tier3 --limit 10 --execute",
+    "tier3_dry_run": "python3 scripts/safe-gsc-ui-indexing-queue.py --source tier3 --limit 10 --dry-run",
+    "check_session": "python3 scripts/safe-gsc-ui-indexing-queue.py --check-session",
+    "default_mode": "python3 scripts/safe-gsc-ui-indexing-queue.py (uses queue file, not tier3)"
+  },
+  "phase15_daily_rule": "Step 3 (Calculator Indexing) MUST use --source tier3 until all 105 T3 calculators have PROVEN_SUCCESS status in proof ledger. Blog impression pages do NOT replace T3 calculator indexing.",
+  "proof_requirement": "Every submission logged to gsc-ui-indexing-proof-ledger.json with status. No proof = not counted."
+}

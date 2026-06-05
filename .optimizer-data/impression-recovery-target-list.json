@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-06-06T00:14:29.841647",
+  "total_targets": 20,
+  "prioritization": "By impressions + position. T1 calcs with 0 impressions are highest priority.",
+  "targets": [
+    {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 59,
+      "position": 20.5,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "CTR fix: better meta description + add FAQ section"
+    },
+    {
+      "url": "/blog/hungary-holds-key-interest-rate-steady",
+      "impressions": 23,
+      "position": 10.1,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Improve title + meta for mortgage-related intent. This is auto-generated news \u2014 may need rewrite"
+    },
+    {
+      "url": "/blog/blackrock-s-saigal-sees-fed-rate-cut-ahead",
+      "impressions": 15,
+      "position": 8.1,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "CTR fix: meta teases mortgage impact. Page already has good position"
+    },
+    {
+      "url": "/blog/ecb-rate-hike-impact-on-mortgages",
+      "impressions": 9,
+      "position": 8.6,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Good position. Needs better meta to convert impressions to clicks"
+    },
+    {
+      "url": "/blog/90-day-fiance-star-s-kentucky-home",
+      "impressions": 6,
+      "position": 8.5,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Improve title to target '90 day fiance paducah' query (pos 5)"
+    },
+    {
+      "url": "/calculators/tax/philadelphia-pa",
+      "impressions": 7,
+      "position": 11.4,
+      "type": "geo",
+      "indexed": "yes",
+      "action": "Add Philadelphia-specific tax content. Currently thin geo page"
+    },
+    {
+      "url": "/all-pages",
+      "impressions": 6,
+      "position": 7.8,
+      "type": "static",
+      "indexed": "yes",
+      "action": "Not a priority. Index page should not rank. No action needed"
+    },
+    {
+      "url": "/calculators/retirement-planning",
+      "impressions": 1,
+      "position": 86,
+      "type": "T1 calc",
+      "indexed": "yes",
+      "action": "Position too deep. Needs GSC UI re-indexing + internal links from indexed pages"
+    },
+    {
+      "url": "/decision/can-i-afford-a-400k-home",
+      "impressions": 2,
+      "position": 38,
+      "type": "decision",
+      "indexed": "yes",
+      "action": "Add internal links from mortgage-calculator. Improve title for 'can i afford a 400k house' query"
+    },
+    {
+      "url": "/decision/can-i-retire-at-45-with-1-million",
+      "impressions": 2,
+      "position": 15,
+      "type": "decision",
+      "indexed": "yes",
+      "action": "Good position. Improve snippet. Add internal links from retirement-planning"
+    },
+    {
+      "url": "/blog/how-to-pay-off-credit-card-debt-fast-2026",
+      "impressions": 3,
+      "position": 18,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Good position. Meta needs to tease a specific strategy outcome"
+    },
+    {
+      "url": "/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "impressions": 13,
+      "position": 75.2,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Position too deep. Needs GSC UI + internal links"
+    },
+    {
+      "url": "/calculators/mortgage-calculator",
+      "impressions": 0,
+      "position": "N/A",
+      "type": "T1 calc",
+      "indexed": "yes",
+      "action": "CRITICAL: T1 calc has 0 impressions. Verify index status. GSC UI immediately."
+    },
+    {
+      "url": "/calculators/compound-interest",
+      "impressions": 0,
+      "position": "N/A",
+      "type": "T1 calc",
+      "indexed": "yes",
+      "action": "CRITICAL: T1 calc has 0 impressions. Verify index status. GSC UI immediately."
+    },
+    {
+      "url": "/calculators/loan-calculator",
+      "impressions": 0,
+      "position": "N/A",
+      "type": "T1 calc",
+      "indexed": "yes",
+      "action": "CRITICAL: T1 calc has 0 impressions. Verify index status."
+    },
+    {
+      "url": "/guides",
+      "impressions": 0,
+      "position": "N/A",
+      "type": "hub",
+      "indexed": "yes",
+      "action": "New hub page. Needs GSC UI + internal links from homepage"
+    },
+    {
+      "url": "/compare",
+      "impressions": 0,
+      "position": "N/A",
+      "type": "hub",
+      "indexed": "yes",
+      "action": "New hub page. Needs GSC UI + internal links"
+    },
+    {
+      "url": "/blog/how-much-emergency-fund-do-i-need-2026",
+      "impressions": 0,
+      "position": "N/A",
+      "type": "blog",
+      "indexed": "yes",
+      "action": "New content page. Needs GSC UI. Only 1 day old \u2014 may need time"
+    },
+    {
+      "url": "/blog/uk-gilt-yields-retreat",
+      "impressions": 3,
+      "position": 5,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Good position (5). CTR fix: better meta + internal links from investing calcs"
+    },
+    {
+      "url": "/blog/stephen-m-calk-2025-trust-fed-approval",
+      "impressions": 5,
+      "position": 6.8,
+      "type": "blog",
+      "indexed": "yes",
+      "action": "Good position. CTR fix needed"
+    }
+  ],
+  "top_actions": [
+    "GSC UI for T1 calcs with 0 impressions (mortgage-calculator, compound-interest, loan-calculator)",
+    "CTR fixes for pages with position < 20 and > 3 impressions",
+    "Internal links from indexed T1 pages to recovery targets",
+    "GSC UI for all T3 Batch 9 calculators",
+    "Resubmit sitemaps"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "title": "QFINHUB Autonomous Escalation Rules — Phase 15.1",
+  "generated": "2026-06-04T21:30:00Z",
+  "version": "2.0.0",
+
+  "principle": "Hermes MUST continue autonomous operations without Qasem input UNLESS a critical escalation trigger fires. Qasem should only see daily reports and exceptions.",
+
+  "escalate_immediately": [
+    {
+      "trigger": "TRAFFIC_OFF_TRACK_7DAYS",
+      "description": "Traffic has been marked OFF-TRACK for 7 consecutive days with no improvement trend",
+      "action": "Alert Qasem with full gap analysis and proposed strategy pivot"
+    },
+    {
+      "trigger": "ADSENSE_REJECTED",
+      "description": "Google AdSense rejects the site or issues a policy warning",
+      "action": "Alert Qasem immediately — monetization pathway blocked"
+    },
+    {
+      "trigger": "ADSENSE_FLAGGED",
+      "description": "AdSense issues a warning about content, traffic quality, or policy violation",
+      "action": "Alert Qasem immediately — potential account risk"
+    },
+    {
+      "trigger": "GSC_MANUAL_ACTION",
+      "description": "Google Search Console shows a manual action or security issue",
+      "action": "Alert Qasem immediately — site at risk of deindexing"
+    },
+    {
+      "trigger": "GSC_UI_BLOCKED",
+      "description": "Safe GSC UI automation blocked by CAPTCHA, 2FA, or session expiry that cannot be resolved",
+      "action": "Alert Qasem — re-authentication needed. Provide exact instructions."
+    },
+    {
+      "trigger": "OUTREACH_OWNER_DECISION",
+      "description": "A prospect replies and requires Qasem's personal decision (e.g., they want to negotiate, offer paid placement, or have questions only the owner can answer)",
+      "action": "Forward the reply to Qasem with context and recommended response"
+    },
+    {
+      "trigger": "PAID_SERVICE_NEEDED",
+      "description": "A critical action requires a paid API, tool, or service not currently available",
+      "action": "Alert Qasem with cost/benefit analysis and recommendation"
+    },
+    {
+      "trigger": "HIGH_RISK_CONTENT",
+      "description": "Content proposal involves financial advice, legal claims, tax advice, or regulated topics that could create liability",
+      "action": "Alert Qasem before publishing — owner must review"
+    },
+    {
+      "trigger": "SITEWIDE_TECHNICAL",
+      "description": "Major sitewide technical issue: sitemap broken (>10% URLs), canonical bug affects multiple pages, analytics completely down >1 day, build failures >2 consecutive days",
+      "action": "Alert Qasem with diagnosis and proposed fix"
+    },
+    {
+      "trigger": "BACKLINK_NEGOTIATION",
+      "description": "A high-value backlink opportunity requires negotiation (terms, guest post, partnership, widget placement agreement)",
+      "action": "Alert Qasem with the opportunity details and recommended approach"
+    }
+  ],
+
+  "do_not_escalate": [
+    "Routine daily Tier 3 calculator GSC UI indexing (10/day)",
+    "Routine internal link additions (10-20/day)",
+    "Routine outreach follow-ups (when due, max 5/day)",
+    "Routine content creation (1 page/day, Auditor 85+)",
+    "Routine CTR fixes (on non-cooldown pages, max 10/day)",
+    "Routine near-winner pushes (max 10/day)",
+    "Routine technical health checks",
+    "Routine GSC data pulls",
+    "Routine sitemap submissions",
+    "Routine deploy operations",
+    "Routine daily/weekly/monthly report generation",
+    "Token refresh operations",
+    "New prospect research (max 5/day, Auditor approved)"
+  ],
+
+  "escalation_communication_format": {
+    "title": "🚨 [ESCALATION TYPE]",
+    "sections": ["What happened", "Why it matters", "Recommended action", "What happens if we don't act"],
+    "delivery": "Telegram Home channel"
+  }
+}

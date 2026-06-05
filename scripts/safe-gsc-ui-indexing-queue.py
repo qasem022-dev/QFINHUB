@@ -46,15 +46,29 @@ def save_json(path, data):
 
 def load_run_log():
     if RUN_LOG.exists():
-        return load_json(RUN_LOG)
+        data = load_json(RUN_LOG)
+        # Migrate old format (uses 'results' key) to new format (uses 'runs' key)
+        if "runs" not in data:
+            old_results = data.get("results", [])
+            data["runs"] = [{
+                "timestamp": data.get("started", data.get("completed", datetime.utcnow().isoformat() + "Z")),
+                "phase": "migrated",
+                "submitted_urls": old_results,
+                "submitted": len(old_results),
+                "failed": 0,
+                "blocker": None,
+            }] if old_results else []
+            data["total_submitted"] = data.get("success_count", len(old_results))
+            data["total_blocked"] = data.get("blocked_count", 0)
+        return data
     return {"runs": [], "total_submitted": 0, "total_blocked": 0}
 
 
 def was_recently_requested(url, run_log, days=MIN_DAYS_REPEAT):
     cutoff = datetime.utcnow() - timedelta(days=days)
     for run in run_log.get("runs", []):
-        for entry in run.get("submitted", []):
-            if entry.get("url") == url:
+        for entry in run.get("submitted_urls", run.get("submitted", [])):
+            if isinstance(entry, dict) and entry.get("url") == url:
                 try:
                     run_time = datetime.fromisoformat(run["timestamp"].replace("Z", "+00:00"))
                     if run_time > cutoff:
@@ -294,9 +308,74 @@ def submit_via_cloakbrowser(urls, dry_run=False):
     return succeeded, failed, blocker
 
 
+def build_tier3_candidates(target_batch=None, limit=10, run_log=None):
+    """Build Tier 3 calculator candidates from sitemap, excluding already-submitted URLs."""
+    import glob, urllib.request, ssl
+
+    # Get already-submitted URLs from run log
+    submitted_urls = set()
+    if run_log:
+        for run in run_log.get("runs", []):
+            for entry in run.get("submitted_urls", []):
+                submitted_urls.add(entry.get("url", ""))
+        # Also check old 'results' format
+        for entry in run_log.get("results", []):
+            submitted_urls.add(entry.get("url", ""))
+
+    # Get all calculator URLs from sitemap
+    sitemap_url = "https://www.qfinhub.com/sitemap.xml"
+    ctx = ssl.create_default_context()
+    all_calc_urls = []
+    try:
+        req = urllib.request.Request(sitemap_url, headers={"User-Agent": "QFINHUB/1.0"})
+        resp = urllib.request.urlopen(req, timeout=15)
+        sitemap_content = resp.read().decode("utf-8", errors="ignore")
+        calc_pattern = re.findall(r'(https://www\.qfinhub\.com/calculators/[^<\s]+)', sitemap_content)
+        all_calc_urls = [u for u in calc_pattern if u not in submitted_urls]
+    except Exception as e:
+        print(f"  ⚠️ Sitemap fetch warning: {e}")
+
+    # T1 + T2 slugs (already indexed or submitted)
+    t1_t2 = [
+        "mortgage-calculator", "compound-interest", "retirement-planning", "loan-calculator",
+        "debt-payoff", "tax-calculator", "401k-calculator", "investment-return", "budget-planner",
+        "mortgage-affordability", "inflation-calculator", "savings-goal", "credit-card-payoff",
+        "auto-loan-calculator", "student-loan-calculator", "net-worth-calculator",
+        "paycheck-tax-calculator", "rent-vs-buy-calculator", "fire-calculator",
+        "annuity-calculator", "heloc-calculator", "car-loan-calculator"
+    ]
+
+    # Filter to only T3 calculators
+    t3_urls = [u for u in all_calc_urls
+               if not any(f"calculators/{t}" == u.split("https://www.qfinhub.com/")[1] for t in t1_t2)]
+
+    # Sort and limit
+    t3_urls.sort()
+    candidates = [{"url": u, "reason": f"Tier 3 calculator batch", "priority": "HIGH", "type": "tier3_calculator"}
+                  for u in t3_urls[:limit]]
+
+    return candidates
+
+
 def main():
     dry_run = "--dry-run" in sys.argv
     check_session = "--check-session" in sys.argv
+    source_tier3 = "--source" in sys.argv and "tier3" in sys.argv
+    cli_batch = None
+    cli_limit = MAX_PER_DAY
+    for i, arg in enumerate(sys.argv):
+        if arg == "--batch" and i + 1 < len(sys.argv):
+            try:
+                cli_batch = int(sys.argv[i + 1])
+            except:
+                pass
+        if arg == "--limit" and i + 1 < len(sys.argv):
+            try:
+                cli_limit = int(sys.argv[i + 1])
+            except:
+                pass
+        if arg == "--execute":
+            dry_run = False  # Force execution mode
 
     print("=" * 60)
     print("Safe GSC UI Indexing Queue — PHASE 13C.8")
@@ -311,22 +390,30 @@ def main():
     queue = load_json(QUEUE_FILE)
     run_log = load_run_log()
 
-    # Collect candidates from priority pages
+    # Collect candidates
     candidates = []
-    priority_pages = queue.get("priority_pages", {})
 
-    # Fixed pages (7 recently fixed)
-    for page in priority_pages.get("fixed_pages_seven", {}).get("urls", []):
-        candidates.append({"url": page["url"], "reason": page.get("reason", "Recent fix"),
-                           "priority": page.get("priority", "MEDIUM"), "type": "fixed_page"})
+    if source_tier3:
+        # -- TIER 3 MODE: Build from tier3 batch plans --
+        print(f"\n📋 TIER 3 MODE — building batch {cli_batch or 'next'}...")
+        tier3_candidates = build_tier3_candidates(cli_batch, cli_limit, run_log)
+        candidates = tier3_candidates
+        print(f"   Tier 3 candidates: {len(candidates)}")
+    else:
+        # -- DEFAULT MODE: Load from automated-indexing-support-queue.json --
+        queue = load_json(QUEUE_FILE)
+        priority_pages = queue.get("priority_pages", {})
 
-    # Core calculators if any not yet indexed
-    for page in priority_pages.get("core_calculators", {}).get("urls", []):
-        if page.get("status") != "indexed":
-            candidates.append({"url": page["url"], "reason": "Core calculator not yet indexed",
-                               "priority": "HIGHEST", "type": "core_calculator"})
+        for page in priority_pages.get("fixed_pages_seven", {}).get("urls", []):
+            candidates.append({"url": page["url"], "reason": page.get("reason", "Recent fix"),
+                               "priority": page.get("priority", "MEDIUM"), "type": "fixed_page"})
 
-    print(f"\n📋 Loaded {len(candidates)} candidate URLs from queue")
+        for page in priority_pages.get("core_calculators", {}).get("urls", []):
+            if page.get("status") != "indexed":
+                candidates.append({"url": page["url"], "reason": "Core calculator not yet indexed",
+                                   "priority": "HIGHEST", "type": "core_calculator"})
+
+        print(f"\n📋 Loaded {len(candidates)} candidate URLs from queue")
 
     # Filter through safety gates
     approved, rejected = filter_candidates(candidates, run_log)

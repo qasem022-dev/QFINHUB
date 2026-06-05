@@ -1,0 +1,11 @@
+{
+  "fixed": true,
+  "new_cli": "--source tier3 --limit 10 --execute",
+  "changes": [
+    "Added build_tier3_candidates() \u2014 extracts T3 calculators from sitemap, excludes T1/T2, excludes already-submitted",
+    "Added --source CLI flag for source selection",
+    "Added --limit CLI flag for batch size",
+    "Added --execute flag to force non-dry-run",
+    "Tier 3 mode skips automated-indexing-support-queue.json entirely"
+  ]
+}

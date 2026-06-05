@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-05T19:57:41.239322",
+  "status": "LOCKED",
+  "original_entries_found": 2,
+  "entries": [
+    {
+      "original": "0 13 * * * /bin/bash /home/admin1/.hermes/scripts/x-daily-morning.sh >> /home/admin1/qfinhub/.x-data-v2/cron-morning.log 2>&1",
+      "disabled": "# DISABLED BY EMERGENCY: 0 13 * * * /bin/bash /home/admin1/.hermes/scripts/x-daily-morning.sh >> /home/admin1/qfinhub/.x-data-v2/cron-morning.log 2>&1",
+      "risk": "X/Twitter morning post via CloakBrowser \u2014 shadowban risk",
+      "status": "COMMENTED OUT"
+    },
+    {
+      "original": "0 17 * * * /bin/bash /home/admin1/.hermes/scripts/x-daily-afternoon.sh >> /home/admin1/qfinhub/.x-data-v2/cron-afternoon.log 2>&1",
+      "disabled": "# DISABLED BY EMERGENCY: 0 17 * * * /bin/bash /home/admin1/.hermes/scripts/x-daily-afternoon.sh >> /home/admin1/qfinhub/.x-data-v2/cron-afternoon.log 2>&1",
+      "risk": "X/Twitter afternoon post via CloakBrowser \u2014 shadowban risk",
+      "status": "COMMENTED OUT"
+    }
+  ],
+  "remaining_active_entries": [
+    "0 4 1 * * /home/admin1/.hermes/scripts/rotate-healing-log.sh (monthly log rotation \u2014 SAFE)"
+  ],
+  "/etc/cron.d/": "CLEAN \u2014 no QFINHUB entries",
+  "/var/spool/cron/crontabs/": "CLEAN \u2014 no QFINHUB entries",
+  "verification": "System crontab has NO uncontrolled QFINHUB/Pinterest/HARO/Twitter/PDF/blog/scenario/indexing/sitemap jobs"
+}

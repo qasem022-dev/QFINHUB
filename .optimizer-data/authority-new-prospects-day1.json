@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-06T00:34:24.821753",
+  "day": 1,
+  "total_prospects": 5,
+  "status": "RESEARCHED_NOT_CONTACTED",
+  "prospects": [
+    {
+      "name": "The Balance (Personal Finance)",
+      "url": "https://www.thebalancemoney.com",
+      "contact": "contact@thebalancemoney.com",
+      "category": "personal_finance_media",
+      "relevance": "HIGH \u2014 Major PF site covering mortgages, budgeting, retirement. Widget would complement their calculator section.",
+      "authority": "DR 80+, millions of monthly visitors",
+      "pitch_angle": "Complement your existing mortgage calculators with our free embeddable affordability widget",
+      "risk": "LOW \u2014 reputable media site, editorial decision likely",
+      "auditor_preliminary": 92
+    },
+    {
+      "name": "Mortgage Calculator (.org)",
+      "url": "https://www.mortgagecalculator.org",
+      "contact": "info@mortgagecalculator.org",
+      "category": "calculator_directory",
+      "relevance": "HIGH \u2014 Dedicated mortgage calculator site. Widget would be a natural fit.",
+      "authority": "DR 70+, ranks for competitive mortgage terms",
+      "pitch_angle": "Your users already calculate mortgages \u2014 our widget adds affordability analysis without leaving your page",
+      "risk": "MEDIUM \u2014 competitor overlap, but widget is complementary",
+      "auditor_preliminary": 88
+    },
+    {
+      "name": "Credit Karma (Resource Section)",
+      "url": "https://www.creditkarma.com",
+      "contact": "press@creditkarma.com",
+      "category": "fintech_platform",
+      "relevance": "MEDIUM-HIGH \u2014 Massive audience. Their mortgage section could feature our widget.",
+      "authority": "DR 85+, 30M+ monthly visitors",
+      "pitch_angle": "Your mortgage education section would benefit from an interactive affordability calculator \u2014 free, no signup, embeddable",
+      "risk": "HIGH \u2014 large corp, may ignore cold outreach",
+      "auditor_preliminary": 75
+    },
+    {
+      "name": "Financial Samurai",
+      "url": "https://www.financialsamurai.com",
+      "contact": "sam@financialsamurai.com",
+      "category": "personal_finance_blog",
+      "relevance": "HIGH \u2014 Well-known PF blog with engaged audience. Already pinned on Pinterest.",
+      "authority": "DR 70+, 1M+ monthly visitors",
+      "pitch_angle": "Your readers care about financial independence \u2014 our mortgage affordability widget helps them make smarter housing decisions",
+      "risk": "LOW \u2014 individual blogger, easier to reach",
+      "auditor_preliminary": 90
+    },
+    {
+      "name": "HousingWire",
+      "url": "https://www.housingwire.com",
+      "contact": "editorial@housingwire.com",
+      "category": "real_estate_news",
+      "relevance": "HIGH \u2014 Mortgage/real estate industry news. Resource pages could feature tools.",
+      "authority": "DR 75+, 2M+ monthly visitors",
+      "pitch_angle": "Your mortgage professional audience needs reliable calculators \u2014 our widget is free, accurate, and embeddable",
+      "risk": "MEDIUM \u2014 B2B audience, widget is B2C. May prefer industry tools.",
+      "auditor_preliminary": 82
+    }
+  ],
+  "next_step": "Auditor final review \u2192 draft personalized emails \u2192 send via Gmail SMTP if approved"
+}

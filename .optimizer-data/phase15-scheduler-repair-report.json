@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-05T19:57:41.239322",
+  "cron_id": "dcba952b4c45",
+  "problem": "Cron was scheduled for 3 PM EEST today but never ran (last_run_at: null)",
+  "diagnosis": {
+    "timezone": "Asia/Riyadh (UTC+3) \u2014 CORRECT",
+    "schedule_format": "0 15 * * * \u2014 CORRECT (3 PM daily)",
+    "enabled_status": true,
+    "state": "scheduled",
+    "next_run_at": "2026-06-06T15:00:00+03:00 \u2014 CORRECT",
+    "scheduler_process": "Hermes gateway (PID 501, started at 18:13 today)",
+    "root_cause": "Hermes gateway process was restarted at 18:13 today. The 15:00 execution window was likely missed because: (1) gateway may have been down or restarting during the 15:00-15:05 window, or (2) the cron was created at ~00:08 today and the scheduler may have needed a full cycle to register it. The cron's next_run_at correctly shows tomorrow 15:00."
+  },
+  "repair_actions": [
+    "Verified schedule is correct: 0 15 * * * = 3 PM EEST daily",
+    "Verified timezone matches: Asia/Riyadh = UTC+3",
+    "Verified cron is enabled and in 'scheduled' state",
+    "Verified Telegram delivery: telegram:8752503993 (Home channel)",
+    "Verified skills load: qfinhub-quick, cloakbrowser-automation, qfinhub-deploy-gsc",
+    "Gateway is running \u2014 scheduler should fire tomorrow at 15:00"
+  ],
+  "test_plan": "Will verify by running a dry-run manually (TASK 9). If dry-run works, the cron should fire automatically tomorrow.",
+  "recommendation": "Monitor tomorrow at 15:00 EEST. If cron fires, scheduler is healthy. If not, the Hermes gateway may need a configuration fix."
+}

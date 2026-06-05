@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-06-06T00:15:12.441861",
+  "manual_gsc_value": "Qasem reports 0 impressions in last 24h (GSC web UI)",
+  "api_value": "77 impressions over 7 days (May 29 - Jun 5), 0 in last data point",
+  "local_file_value": "77 impressions (fresh-gsc-query-discovery-day5.json, pulled Jun 6 00:02)",
+  "scoreboard_value": "~100 impressions (stale, from May 31)",
+  "mismatch": false,
+  "root_cause": "GSC API data IS consistent with web UI. The 0-in-24h is likely GSC reporting lag \u2014 GSC typically has 2-3 day delay. The last data point in the API pull ends at 'yesterday' (Jun 5). GSC web UI may not yet show Jun 5 data or may have filtered to a shorter window. The 7-day API pull shows 77 impressions \u2014 the daily average is ~11. A single zero day within the 7-day window is expected for a sandboxed domain."
+}

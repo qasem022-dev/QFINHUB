@@ -1,9 +1,196 @@
 {
-  "title": "Safe GSC UI Indexing Run Log \u2014 Phase 14B.1",
-  "generated": "2026-06-04T19:46:56.913824Z",
-  "today_submitted": 0,
-  "today_held": 7,
-  "reason_held": "7 fixed pages submitted ~6h ago (Phase 13C.7). Within 7-day cooldown. Do not re-request.",
-  "next_eligible": "2026-06-11T13:46:56.913824Z",
-  "cumulative_total": 59
+  "session": "Phase 14B Day 5 \u2014 Batch 7",
+  "started": "2026-06-04T20:52:22.938359",
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/calculators/1099-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/age-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/alpha-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/arm-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/asset-correlation",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/basic-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/beta-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/bmi-calculator",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/bond-price",
+      "clicked": false,
+      "success": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/calorie-calculator",
+      "clicked": false,
+      "success": true
+    }
+  ],
+  "completed": "2026-06-04T20:53:33.925499",
+  "total": 10,
+  "success_count": 10,
+  "runs": [
+    {
+      "timestamp": "2026-06-04T20:52:22.938359",
+      "phase": "migrated",
+      "submitted_urls": [
+        {
+          "url": "https://www.qfinhub.com/calculators/1099-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/age-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/alpha-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/arm-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/asset-correlation",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/basic-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/beta-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/bmi-calculator",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/bond-price",
+          "clicked": false,
+          "success": true
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/calorie-calculator",
+          "clicked": false,
+          "success": true
+        }
+      ],
+      "submitted": 10,
+      "failed": 0,
+      "blocker": null
+    },
+    {
+      "timestamp": "2026-06-05T21:51:37.011973Z",
+      "phase": "13C.8",
+      "candidates_total": 10,
+      "approved": 10,
+      "rejected": 0,
+      "submitted": 10,
+      "failed": 0,
+      "blocker": null,
+      "submitted_urls": [
+        {
+          "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+          "label": "amortization-schedule",
+          "time": "2026-06-05T21:50:22.697668Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/auto-loan",
+          "label": "auto-loan",
+          "time": "2026-06-05T21:50:30.720305Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/biweekly-mortgage",
+          "label": "biweekly-mortgage",
+          "time": "2026-06-05T21:50:38.741452Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/bond-yield",
+          "label": "bond-yield",
+          "time": "2026-06-05T21:50:46.761446Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/break-even",
+          "label": "break-even",
+          "time": "2026-06-05T21:50:54.784221Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+          "label": "capital-gains-tax",
+          "time": "2026-06-05T21:51:02.807457Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/capm-calculator",
+          "label": "capm-calculator",
+          "time": "2026-06-05T21:51:10.828496Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/car-affordability",
+          "label": "car-affordability",
+          "time": "2026-06-05T21:51:18.851680Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/cash-flow",
+          "label": "cash-flow",
+          "time": "2026-06-05T21:51:26.871196Z",
+          "note": "No Request button \u2014 may already be indexed"
+        },
+        {
+          "url": "https://www.qfinhub.com/calculators/child-care-cost",
+          "label": "child-care-cost",
+          "time": "2026-06-05T21:51:34.887282Z",
+          "note": "No Request button \u2014 may already be indexed"
+        }
+      ],
+      "failed_urls": [],
+      "rejected_urls": []
+    }
+  ],
+  "total_submitted": 20,
+  "total_blocked": 0
 }

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-06T00:15:12.441861",
+  "today": "2026-06-06",
+  "gateway_trigger_run": false,
+  "cron_backup_run": false,
+  "reason": "Today is Jun 6. Gateway has not restarted since Jun 5. 3 PM cron is scheduled for 15:00 EEST today (hasn't happened yet).",
+  "last_actionable_run": {
+    "date": "2026-06-05",
+    "run_id": "run-20260605-202331",
+    "type": "actionable_daily_run",
+    "qualifies": true,
+    "started": "2026-06-05T20:23:31",
+    "completed": "2026-06-05T20:26:59",
+    "actions": "14 steps, internal_links=10, deploy=yes, outreach=checked, content=hold"
+  },
+  "today_run_needed": true,
+  "action": "Running Phase 15 actionable workflow for Jun 6 NOW as part of this emergency response"
+}

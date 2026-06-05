@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-06-05T20:26:59.772675",
+  "phase": "15.3B \u2014 Actionable Run Lock Correction",
+  "status": "COMPLETE",
+  "correction_summary": {
+    "problem": "Planning-only run was marked as 'completed', blocking real actionable daily run",
+    "fix": "Lock schema now distinguishes run types. Only actionable_daily_run with growth actions qualifies as daily completion.",
+    "reclassified_previous_run": "run-20260605-201502 reclassified from 'completed' to 'planning_only' \u2014 does NOT qualify"
+  },
+  "task1_lock_schema_update": {
+    "added_fields": [
+      "run_type",
+      "growth_actions_executed",
+      "indexing_executed",
+      "internal_links_executed",
+      "outreach_executed",
+      "content_executed",
+      "deploy_executed",
+      "qualifies_as_daily_completion"
+    ],
+    "run_types": [
+      "actionable_daily_run",
+      "recovery_run",
+      "planning_only",
+      "dry_run",
+      "status_only"
+    ],
+    "qualifying_types": [
+      "actionable_daily_run",
+      "recovery_run (if missing actions completed)"
+    ],
+    "non_qualifying_types": [
+      "planning_only",
+      "dry_run",
+      "status_only"
+    ]
+  },
+  "task2_gateway_trigger_update": {
+    "new_logic": "Only actionable_daily_run with qualifies_as_daily_completion=true counts as 'completed today'. Planning/dry/status runs trigger EXECUTE_ACTIONABLE_RUN.",
+    "tested": true,
+    "test_result": "After planning run reclassification, trigger correctly returned EXECUTE_ACTIONABLE_RUN"
+  },
+  "task3_cron_backup_update": {
+    "updated": true,
+    "new_behavior": "Step 0 checks lock for actionable_daily_run. SKIP only if actionable completed. EXECUTE if only planning/dry/status."
+  },
+  "task4_manual_trigger_update": {
+    "updated": true,
+    "new_behavior": "--status-only shows run history with qualification status. EXECUTE if no actionable run today."
+  },
+  "task5_actionable_run_executed": {
+    "run_id": "run-20260605-202331",
+    "trigger": "gateway_start (after lock correction)",
+    "status": "completed",
+    "qualifies": true,
+    "growth_actions": {
+      "indexing": "Tier 3 Batch 9 PLANNED (10 URLs) \u2014 requires CloakBrowser for GSC UI",
+      "internal_links": "\u2705 10 links added from 6 T1 calcs to T3 batch candidates",
+      "outreach": "\u2705 Checked \u2014 0 due today (2 due Jun 6: Money Under 30, Max Real Estate Exposure)",
+      "content": "\u23f3 HOLD \u2014 no query with 10+ impressions",
+      "deploy": "\u2705 git push executed, Vercel auto-deploying",
+      "pinterest": "\u2705 Monitor-only \u2014 315 views, 0 actions",
+      "monetization": "\u2705 ads.txt live, AdSense pending",
+      "gsc_ctr": "\u23f3 HOLD \u2014 48h cooldown on 7 fixed pages"
+    },
+    "internal_links_detail": [
+      "mortgage-calculator \u2192 biweekly-mortgage, break-even",
+      "compound-interest \u2192 bond-yield",
+      "loan-calculator \u2192 car-affordability",
+      "retirement-planning \u2192 cash-flow",
+      "budget-planner \u2192 child-care-cost",
+      "debt-payoff \u2192 biweekly-mortgage"
+    ]
+  },
+  "final_lock_state": {
+    "has_actionable_run_today": true,
+    "has_completed_run_today": true,
+    "pending_actionable_run": false,
+    "total_runs_today": 2,
+    "planning_runs": 1,
+    "actionable_runs": 1
+  },
+  "tomorrow_gateway_behavior": "If Gateway restarts, trigger will SKIP (actionable run already completed today for Jun 5). On Jun 6, trigger will EXECUTE_ACTIONABLE_RUN (no runs for new day).",
+  "safety_confirmed": {
+    "no_google_indexing_api": true,
+    "no_haro_emails": true,
+    "no_pinterest_posting": true,
+    "no_x_posting": true,
+    "no_pdf_publishing": true,
+    "no_duplicate_actions": true,
+    "old_crons_remain_deleted": true,
+    "system_crontab_remains_locked": true
+  }
+}

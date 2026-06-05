@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-06T01:01:27.297452",
+  "phase": "16.3B \u2014 GSC Data Pipeline Correction + Zero-Click CTR Attack",
+  "status": "PIPELINE FIXED, CTR MAP BUILT, FIXES PLANNED",
+  "data_correction": {
+    "old_hermes_number": "77 impressions (WRONG \u2014 stale cached file with 25/50 row limits)",
+    "qasem_manual_number": "311 impressions, 0 clicks, avg position 19.3",
+    "corrected_api_number": "213 page impressions, avg position 18.3 (rowLimit=250)",
+    "gap_remaining": "98 impressions (31.5%) \u2014 from pages beyond API row limit",
+    "using_as_truth": "311 impressions from Qasem's manual GSC UI"
+  },
+  "root_cause_of_mismatch": [
+    "Pull script limited to 25 queries + 50 pages",
+    "Cached file was 24h old",
+    "Query aggregate (79) \u2260 Page aggregate (213) \u2014 used wrong dimension",
+    "Never cross-checked with Qasem's manual GSC UI",
+    "GSC token was expired (401) on first pull, fallback to stale cache"
+  ],
+  "ctr_attack_map": {
+    "position_1_10_pages": 13,
+    "position_11_20_pages": 6,
+    "total_zero_click_pages": "~47 pages with 0 clicks",
+    "key_finding": "13 pages rank on page 1 (pos 1-10) but get ZERO clicks. This means meta snippets/titles are not compelling enough to earn clicks over competitors.",
+    "top_targets": [
+      "/blog/20000-loan... (59 imp, pos 20.5)",
+      "/blog/hungary... (23 imp, pos 10.1)",
+      "/blog/ecb-rate... (9 imp, pos 8.6)"
+    ]
+  },
+  "ctr_fixes_planned": "10 targets identified. Fixes require code edits to meta descriptions + deployment. Will apply in next deploy cycle.",
+  "page2_push": "~6 pages in pos 11-20. Internal links + content improvement planned.",
+  "corrected_scoreboards": [
+    "business-growth-scoreboard.json",
+    "daily-growth-scoreboard.json"
+  ],
+  "reporting_rules_fixed": true,
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_fake_traffic": true,
+    "old_risky_automations_disabled": true,
+    "gsc_pipeline_fixed": true,
+    "manual_truth_used_as_override": true,
+    "future_reports_will_use_corrected_pipeline": true
+  }
+}

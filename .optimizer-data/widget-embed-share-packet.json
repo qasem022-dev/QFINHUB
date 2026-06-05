@@ -1,0 +1,37 @@
+{
+  "title": "QFINHUB Widget Embed Share Packet",
+  "generated": "2026-06-06T23:30:00Z",
+  "version": "1.0.0",
+  "purpose": "Ready-to-paste response when a prospect replies positively or asks for more details.",
+  "widget_name": "Mortgage Affordability Calculator Widget",
+  "short_description": "A free, embeddable mortgage affordability calculator that helps website visitors determine how much house they can afford. Uses standard 28%/36% DTI lending guidelines. 100% free, no signup, no data collection — all calculations happen in the visitor's browser.",
+  "live_preview_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+  "embed_code": "<iframe src=\"https://www.qfinhub.com/embed/mortgage-affordability\" width=\"100%\" height=\"650\" style=\"border:0;max-width:100%;\" loading=\"lazy\" title=\"Mortgage Affordability Calculator\"></iframe>",
+  "privacy_statement": "This widget does not collect, store, or transmit any personal data. All calculations happen entirely in the visitor's browser. No cookies set by the widget. No tracking. No signup required.",
+  "free_statement": "The widget is 100% free with no paid tiers, no usage limits, and no hidden fees. It will remain free forever.",
+  "suggested_placement": [
+    "Blog post about homebuying / mortgage affordability",
+    "Resource / tools page alongside other calculators",
+    "Mortgage education landing page",
+    "Sidebar or footer of real estate blog",
+    "First-time homebuyer guide page"
+  ],
+  "custom_sizing": "Adjust the height attribute if needed — we recommend 650px minimum. Contact q.finhub@gmail.com for custom sizing or white-label options.",
+  "quick_faq": [
+    {"q": "Is it really free?", "a": "Yes, 100% free. No paid tiers, no limits, no catch."},
+    {"q": "Does it collect data?", "a": "No. All calculations happen in the user's browser. We never collect, store, or share data."},
+    {"q": "Does it work on WordPress?", "a": "Yes — add a Custom HTML block and paste the iframe code. Works with WordPress, Squarespace, Wix, Webflow, and any platform that supports custom HTML."},
+    {"q": "Is it mobile-friendly?", "a": "Yes, fully responsive. Works on phones, tablets, and desktops."},
+    {"q": "Can I change colors or styling?", "a": "The widget uses neutral colors and supports light/dark mode. For custom styling, contact us."}
+  ],
+  "contact": {
+    "email": "q.finhub@gmail.com",
+    "contact_form": "https://www.qfinhub.com/contact",
+    "response_promise": "We reply within 24 hours"
+  },
+  "reply_templates": {
+    "positive_reply": "Great to hear from you! Here's the embed code:\n\n[PASTE EMBED CODE]\n\nIt's completely free and won't collect any data from your visitors. Just paste that one line of HTML where you want the calculator to appear. Let me know if you need any adjustments — happy to help.\n\nBest,\nQasem\nQFINHUB.com",
+    "wants_more_info": "Thanks for your interest! Here's the full details:\n\n• It's 100% free — no paid tiers, no catch\n• No data collection — all calculations happen in the user's browser\n• Mobile responsive — works on all devices\n• Works with WordPress, Squarespace, Wix, Webflow, and custom HTML\n• Uses standard 28%/36% DTI lending guidelines\n\nFull widget page with FAQ: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nLet me know if you have any other questions!\n\nBest,\nQasem\nQFINHUB.com",
+    "whats_the_catch": "No catch! We're building QFINHUB as a free calculator platform. The widget attribution link helps people discover our other free tools. We may add non-intrusive ads on QFINHUB.com itself in the future, but the widget will remain ad-free and free forever."
+  }
+}

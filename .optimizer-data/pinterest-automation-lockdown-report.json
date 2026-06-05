@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-05T19:57:41.239322",
+  "status": "MONITOR-ONLY",
+  "actions_taken": [
+    "Pinterest Daily Growth cron DELETED (478e5ba17848)",
+    "Pinterest Daily Pin Generator cron DELETED (5c46309c02c0)",
+    "Pinterest Morning Post cron DELETED (f803aceaa0a7)",
+    "Pinterest Evening Post cron DELETED (7c97577dbd84)",
+    "Pinterest Pin Generator cron DELETED (defdde75ea1f)",
+    "15 Pinterest scripts DISABLED (.DISABLED suffix): batch-schedule, batch, cloak-post, content, daily-gen, daily-post, generator-v2, growth, keepalive, login-once, post-now, premium, rss-csv, screenshots, stealth",
+    ".pinterest-data/ preserved for analytics reference only",
+    "No scheduled Pinterest actions remain"
+  ],
+  "monitor_only_remaining": ".pinterest-data/growth-state.json can be read for analytics (315 monthly views, 21 follows)",
+  "pinterest_is_useful": "NEGLIGIBLE \u2014 1 session in 7 days, 315 views, 0 pins generating traffic",
+  "recommendation": "Keep monitor-only. If Pinterest is ever reactivated, use manual authentic posting only."
+}

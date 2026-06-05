@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-06-06T01:43:50.890578",
+  "due_date": "2026-06-07",
+  "follow_ups": [
+    {
+      "target": "Real Estate Witch",
+      "email": "team@realestatewitch.com",
+      "first_sent": "2026-06-01",
+      "auditor_score": 90,
+      "subject": "Re: Free Mortgage Affordability Widget for Real Estate Witch",
+      "body": "Hi there,\n\nJust following up on my email from last week about our free mortgage affordability widget.\n\nIt lets your readers see what home they can afford in seconds \u2014 free, no signup, simple embed.\n\nPreview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this be useful for your readers? Happy to help with the embed.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Springboard (Credit.org)",
+      "email": "info@credit.org",
+      "first_sent": "2026-06-01",
+      "auditor_score": 90,
+      "subject": "Re: Free Financial Calculator Widget for Credit.org",
+      "body": "Hi there,\n\nFollowing up on my email about embedding our free mortgage affordability calculator on Credit.org.\n\nAs a financial literacy nonprofit, a free interactive tool could be valuable for your housing counseling resources.\n\nPreview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this be a good fit? Happy to discuss.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Physician on FIRE",
+      "email": "PoF@physicianonfire.com",
+      "first_sent": "2026-06-01",
+      "auditor_score": 90,
+      "subject": "Re: Free Mortgage Affordability Widget for Physician on FIRE",
+      "body": "Hi,\n\nFollowing up on my email from last week about a free mortgage affordability widget for your readers.\n\nPhysicians often face unique housing decisions with high student debt \u2014 our widget helps them run the numbers instantly.\n\nPreview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this be useful for your audience? Happy to customize.\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Greenpath Financial Wellness",
+      "email": "mediarelations@greenpath.com",
+      "first_sent": "2026-06-01",
+      "auditor_score": 90,
+      "subject": "Re: Free Calculator Widget for Greenpath Financial Wellness",
+      "body": "Hi,\n\nFollowing up on my email about embedding a free mortgage affordability calculator on Greenpath.\n\nAs a financial wellness organization, a no-signup interactive tool could complement your existing resources.\n\nPreview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this be something your team would find useful?\n\nBest,\nQasem Mohammed\nQFINHUB"
+    },
+    {
+      "target": "Young and the Invested",
+      "email": "riley@youngandtheinvested.com",
+      "first_sent": "2026-06-01",
+      "auditor_score": 90,
+      "subject": "Re: Free Mortgage Affordability Widget for Young and the Invested",
+      "body": "Hi Riley,\n\nFollowing up on my email from last week about a free mortgage affordability widget for your readers.\n\nYoung investors making their first home purchase need to understand affordability \u2014 our widget makes it instant.\n\nPreview: https://www.qfinhub.com/widgets/mortgage-affordability-embed\n\nWould this add value for your audience?\n\nBest,\nQasem Mohammed\nQFINHUB"
+    }
+  ],
+  "all_scored_90": true,
+  "status": "PREPARED_NOT_SENT \u2014 will send on Jun 7",
+  "send_rule": "All 5 are Auditor >=90. Send on Jun 7 via Gmail SMTP."
+}

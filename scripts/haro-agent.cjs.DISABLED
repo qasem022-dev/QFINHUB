@@ -94,7 +94,7 @@ class IMAPClient {
   async connect(host, port) {
     // TCP connect
     const rawSocket = await new Promise((resolve, reject) => {
-      const s = net.createConnection({ host, port });
+      const s = net.createConnection({ host, port, family: 4 });
       s.once("connect", () => resolve(s));
       s.once("error", reject);
       s.once("timeout", () => { s.destroy(); reject(new Error("TCP connect timeout")); });

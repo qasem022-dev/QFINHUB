@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "last_run": "2026-06-05T18:19:47 EEST",
+  "accounts_followed_total": 21,
+  "accounts_followed": [
+    "daveramsey",
+    "realtordotcom",
+    "seekingalpha",
+    "thebudgetmom",
+    "financialsamurai",
+    "themotleyfool",
+    "clarkdeals",
+    "morningstarinc",
+    "redfin",
+    "affordanything",
+    "budgetsaresexy",
+    "mrmoneymustache",
+    "thepennyhoarder",
+    "nerdwallet",
+    "frugalwoods",
+    "vanguard",
+    "investopedia",
+    "bankrate",
+    "millennialmoney",
+    "kiplingerfinance",
+    "zillow"
+  ],
+  "actions_today": "Followed 3 new accounts (exact accounts unknown, script rotates through list)",
+  "pins_saved": "Unknown \u2014 script includes save functionality",
+  "automation_method": "CloakBrowser (stealth browser) with headless mode",
+  "platform_safety": {
+    "tos_violation": "YES \u2014 Pinterest prohibits automated following/saving",
+    "detection_risk": "MODERATE-HIGH \u2014 CloakBrowser reduces fingerprinting but behavior pattern (3 follows/day at same time) is detectable",
+    "account_ban_risk": "HIGH \u2014 automated engagement is explicitly prohibited",
+    "ip_risk": "Datacenter IP used \u2014 easy for Pinterest to flag"
+  },
+  "usefulness": {
+    "actual_growth": "21 follows total, no evidence of reciprocal follows",
+    "monthly_views": "315 (from growth-state.json)",
+    "traffic_to_qfinhub": "1 Pinterest session in 7 days (from GA4)",
+    "assessment": "NEGLIGIBLE \u2014 315 monthly views with 1 click-through is not worth the account ban risk"
+  },
+  "recommendation": "PERMANENTLY DELETE. Pinterest should be monitor-only with manual, authentic pinning if desired. Automated following/saving creates account risk with zero demonstrated ROI."
+}

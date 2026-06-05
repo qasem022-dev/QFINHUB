@@ -1,0 +1,133 @@
+{
+  "title": "QFINHUB Reply Accelerator Prospects — Smaller, Higher-Reply-Likelihood Targets",
+  "generated": "2026-06-06T23:30:00Z",
+  "strategy": "Target smaller sites where a real person checks the inbox. Prioritize reply likelihood over domain authority.",
+  "total_researched": 10,
+  "ready_to_send": 5,
+  "prospects": [
+    {
+      "name": "Retire by 40",
+      "url": "https://www.retireby40.org",
+      "contact": "retireby40@gmail.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH — Solo blogger, active community, small site. Owner personally answers emails.",
+      "widget_fit": "FI-focused readers make big housing decisions. Mortgage affordability widget helps evaluate the biggest expense on the FI path.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "FI angle: 'Your readers are optimizing every dollar — knowing exactly how much house they can afford is critical to staying on track for early retirement.'"
+    },
+    {
+      "name": "Frugalwoods",
+      "url": "https://www.frugalwoods.com",
+      "contact": "frugalwoods@gmail.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH — Personal blog, actively maintained, reader-focused. Owner replies to emails.",
+      "widget_fit": "Frugality + housing = natural fit. Readers need to know budget before buying. Free widget aligned with frugal values.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "Frugality angle: 'Your readers are intentional spenders — our free widget helps them determine the right home budget without overspending.'"
+    },
+    {
+      "name": "Budget Simple Life",
+      "url": "https://www.budgetsimplelife.com",
+      "contact": "budgetsimplelife@gmail.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH — Small personal blog, debt-free/minimalist focus. Direct Gmail contact.",
+      "widget_fit": "Debt-free living audience needs mortgage affordability tools that don't push overspending.",
+      "authority": "low",
+      "risk": "low",
+      "pitch_angle": "Minimalist finance: 'Your readers want simplicity — this widget gives them a clear, honest answer about what they can afford, no upsells.'"
+    },
+    {
+      "name": "My Money Wizard",
+      "url": "https://www.mymoneywizard.com",
+      "contact": "contact@mymoneywizard.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH — Mid-size personal finance blog, active author. Personal brand.",
+      "widget_fit": "Millennial finance audience buying first homes. Affordability widget directly relevant.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "Millennial homebuyer angle: 'Most of your readers are navigating their first home purchase — this widget gives them instant clarity on budget.'"
+    },
+    {
+      "name": "Can I Retire Yet",
+      "url": "https://www.caniretireyet.com",
+      "contact": "editor@caniretireyet.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH — Niche retirement blog, small team. Editor reads emails.",
+      "widget_fit": "Retirement planning often means downsizing/relocating. Affordability widget helps readers evaluate their next home.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "Retirement housing: 'Retirees often move to lower-cost areas — this widget helps them calculate what they can afford in their new location.'"
+    },
+    {
+      "name": "Go Curry Cracker",
+      "url": "https://www.gocurrycracker.com",
+      "contact": "info@gocurrycracker.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "MEDIUM-HIGH — Well-known FIRE blogger but still small team. Personal email.",
+      "widget_fit": "International FIRE/travel audience. Housing decisions affect FIRE math significantly.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "Global FI angle: 'Whether settling down or geo-arbitraging, your readers need to know what housing budget keeps them FI.'"
+    },
+    {
+      "name": "Rockstar Finance",
+      "url": "https://www.rockstarfinance.com",
+      "contact": "contact@rockstarfinance.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "MEDIUM — Directory/curation site. May feature free tools on resource page.",
+      "widget_fit": "Resource directory that lists financial tools. Widget could be featured in tool roundup.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "Tool directory: 'Your resource page lists financial tools — our free widget would be a valuable addition for your readers.'"
+    },
+    {
+      "name": "The Budget Mom",
+      "url": "https://www.thebudgetmom.com",
+      "contact": "contact@thebudgetmom.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH — Active solo blogger, engaged audience. Replies to readers.",
+      "widget_fit": "Budget-focused moms making housing decisions. Affordability widget fits her budgeting tools theme.",
+      "authority": "medium",
+      "risk": "low",
+      "pitch_angle": "Family finance: 'Your readers budget carefully — this widget shows them exactly what home price fits their family budget.'"
+    },
+    {
+      "name": "20s Finances",
+      "url": "https://www.20sfinances.com",
+      "contact": "info@20sfinances.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH — Niche blog targeting 20-somethings. Smaller site, likely owner-operated.",
+      "widget_fit": "20-somethings buying first homes. Affordability is their #1 question.",
+      "authority": "low",
+      "risk": "low",
+      "pitch_angle": "First-time buyer: 'Your readers are entering the housing market for the first time — this widget answers their #1 question: how much can I afford?'"
+    },
+    {
+      "name": "Debt Free Forties",
+      "url": "https://www.debtfreeforties.com",
+      "contact": "debtfreeforties@protonmail.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH — Solo blogger, debt-free focus. Very personal, owner-reads-email.",
+      "widget_fit": "Debt-free audience making housing decisions. Affordability = avoiding overborrowing.",
+      "authority": "low",
+      "risk": "low",
+      "pitch_angle": "Debt-free housing: 'Your audience wants to avoid mortgage traps — this widget shows them exactly what they can afford without stretching.'"
+    }
+  ],
+  "selected_for_send": [
+    "Retire by 40 (HIGHPRI — FI audience, mortgage widget directly relevant, high reply likelihood)",
+    "Frugalwoods (HIGHPRI — Frugality + housing fit, high reply likelihood)",
+    "My Money Wizard (HIGHPRI — Millennial homebuyer audience, high reply likelihood)",
+    "20s Finances (HIGHPRI — First-time buyer niche, high reply likelihood)",
+    "The Budget Mom (HIGHPRI — Family finance, widget fits budgeting theme)"
+  ],
+  "held": [
+    "Can I Retire Yet — Good fit, hold for next batch (5-send limit)",
+    "Go Curry Cracker — Good fit, hold for next batch",
+    "Budget Simple Life — Lower authority, hold",
+    "Rockstar Finance — Directory site, lower conversion probability",
+    "Debt Free Forties — Very small blog, hold"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-05T19:48:06.991413",
+  "cron_id": "dcba952b4c45",
+  "name": "QFINHUB Autonomous Daily Business OS",
+  "schedule": "0 15 * * * (3 PM EEST daily)",
+  "created_at": "2026-06-05 ~00:08 EEST",
+  "first_scheduled_run": "2026-06-05 15:00 EEST",
+  "did_it_run": false,
+  "last_run_at": null,
+  "last_status": null,
+  "why_no_run": "UNKNOWN \u2014 cron was enabled and scheduled but the scheduler never executed it. Possible causes: (1) scheduler tick missed the window, (2) cron daemon restart needed, (3) dependency/skill load failure prevented launch, (4) the cron was created at 00:08 with schedule '0 15 * * *' but 'next_run_at' showed '2026-06-05T15:00:00+03:00' \u2014 it SHOULD have fired.",
+  "recommendation": "Do NOT rely on cron auto-run. Manually trigger Phase 15 workflow during this emergency session. After fixing, verify cron fires tomorrow by monitoring next_run_at.",
+  "scoreboard_exists": true,
+  "scoreboard_path": "/home/admin1/qfinhub/.optimizer-data/business-growth-scoreboard.json",
+  "scoreboard_generated": "2026-06-04T21:08 UTC (manual dry run during creation)",
+  "scoreboard_key_findings": {
+    "traffic": "0 visitors, 0 Google clicks \u2014 OFF TRACK",
+    "revenue": "$0.00 \u2014 OFF TRACK",
+    "indexing": "70/105 T3 submitted, 35 remaining",
+    "backlinks": "0 acquired, 7 outreach sent, 7 follow-ups pending",
+    "gsc": "~100 impressions/7d, ~50 avg position, 0 clicks",
+    "overall": "\ud83d\udd34 OFF-TRACK after 32 days"
+  }
+}
