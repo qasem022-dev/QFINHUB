@@ -370,6 +370,47 @@ export default function MortgageAffordabilityWidgetPage() {
           required. No cookies set by the widget. No tracking.
         </p>
       </div>
+
+      {/* Understanding DTI */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          Understanding Debt-to-Income (DTI) Ratios
+        </h2>
+        <div className="prose prose-gray max-w-none dark:prose-invert">
+          <p>
+            This widget uses the standard 28/36 rule that most mortgage lenders follow:
+          </p>
+          <ul>
+            <li><strong>Front-end DTI (28%):</strong> Your total monthly housing costs (mortgage, taxes, insurance) should not exceed 28% of your gross monthly income.</li>
+            <li><strong>Back-end DTI (36%):</strong> Your total monthly debt payments (housing + credit cards + car loans + student loans) should not exceed 36% of your gross monthly income.</li>
+          </ul>
+          <p>
+            For example, if you earn $5,000/month: 28% = $1,400 max housing payment. 36% = $1,800 max for all debt payments combined.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact CTA for Publishers */}
+      <section className="mt-12 rounded-xl bg-primary-600 p-8 text-center text-white dark:bg-primary-700">
+        <h2 className="text-2xl font-bold">Want This Widget on Your Site?</h2>
+        <p className="mt-2 text-primary-100">
+          Copy the embed code above or contact us for help with customization, placement, or bulk embedding across multiple pages.
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-4">
+          <a
+            href="mailto:q.finhub@gmail.com?subject=Mortgage%20Affordability%20Widget%20for%20My%20Site"
+            className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-primary-700 shadow-sm transition hover:bg-primary-50"
+          >
+            Email Us About Embedding →
+          </a>
+          <Link
+            href="/contact"
+            className="rounded-lg border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Contact Form →
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
