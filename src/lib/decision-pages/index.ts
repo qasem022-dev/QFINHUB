@@ -872,7 +872,7 @@ export const decisionPages: DecisionPage[] = [
     slug: "how-much-do-i-need-to-retire",
     title: "How Much Do I Need to Retire? Savings Target Calculator (2026)",
     description:
-      "Retire with 25x your annual spending. If you need $60K/year, target $1.5M. See age-based tables, the 4% withdrawal rule, and how Social Security changes your number. Free retirement calculator.",
+      "How much do YOU need to retire comfortably? The answer depends on your spending, age, and Social Security. See your personalized number with our free retirement calculator — instant results.",
     cluster: "retirement",
     question: "Based on my annual spending and expected retirement age, how much money do I actually need to retire?",
     shortAnswer:
