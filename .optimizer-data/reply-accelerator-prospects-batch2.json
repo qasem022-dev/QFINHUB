@@ -1,0 +1,101 @@
+{
+  "title": "QFINHUB Reply Accelerator Prospects \u2014 Batch 2",
+  "generated": "2026-06-06T23:42:58Z",
+  "strategy": "Smaller blogs, resource pages, real estate/housing blogs, credit unions with education pages. Prioritize reply likelihood over domain authority.",
+  "total_researched": 5,
+  "ready_to_send": 5,
+  "prospects_from_held_batch1": [
+    {
+      "name": "Can I Retire Yet",
+      "status": "HELD_FROM_B1",
+      "contact": "editor@caniretireyet.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH",
+      "note": "Good fit for retirement content if pitched differently. Retirement-focused audience = natural retirement calculator embed fit."
+    },
+    {
+      "name": "Go Curry Cracker",
+      "status": "HELD_FROM_B1",
+      "contact": "info@gocurrycracker.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "MEDIUM-HIGH",
+      "note": "International FIRE audience. Global housing angle relevant."
+    },
+    {
+      "name": "Budget Simple Life",
+      "status": "HELD_FROM_B1",
+      "contact": "budgetsimplelife@gmail.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH",
+      "note": "Debt-free minimalist finance \u2014 widget fits their budget-conscious audience."
+    }
+  ],
+  "new_prospects": [
+    {
+      "name": "Afford Anything",
+      "url": "https://affordanything.com",
+      "contact": "hello@affordanything.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH \u2014 Paula Pant's blog, active community. Small team, owner-operated feel.",
+      "widget_fit": "Afford Anything's thesis is 'you can afford anything but not everything' \u2014 mortgage affordability widget is PERFECTLY aligned with her content philosophy.",
+      "pitch_angle": "Philosophical alignment: 'Your core message is about making intentional choices \u2014 our widget helps readers make the biggest financial choice of their lives with clarity.'",
+      "priority": 1
+    },
+    {
+      "name": "The College Investor",
+      "url": "https://thecollegeinvestor.com",
+      "contact": "robert@thecollegeinvestor.com",
+      "niche": "finance_blog",
+      "reply_likelihood": "HIGH \u2014 Robert Farrington's blog, active community. Frequently features financial tools.",
+      "widget_fit": "Millennial/Gen Z audience making first home purchases. Budget planner + mortgage affordability combo pitch.",
+      "pitch_angle": "First-time homebuyer angle: 'Your audience is entering peak homebuying years \u2014 our free widget gives them a real number, not a guess.'",
+      "priority": 2
+    },
+    {
+      "name": "ESI Money",
+      "url": "https://esimoney.com",
+      "contact": "esi@esimoney.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH \u2014 Solo blogger, millionaire interviews, actively responds to emails.",
+      "widget_fit": "High-net-worth audience making strategic housing decisions. Compound interest + retirement calculators combo pitch.",
+      "pitch_angle": "Wealth building angle: 'Your readers are building wealth intentionally \u2014 our free calculators help them optimize their biggest expense: housing.'",
+      "priority": 3
+    },
+    {
+      "name": "Millennial Revolution",
+      "url": "https://www.millennial-revolution.com",
+      "contact": "kristy@millennial-revolution.com",
+      "niche": "fire_blog",
+      "reply_likelihood": "HIGH \u2014 Kristy and Bryce, FIRE bloggers, active community. Personal brand.",
+      "widget_fit": "FIRE audience making housing decisions that affect FIRE timeline. Mortgage affordability directly relevant.",
+      "pitch_angle": "FIRE math angle: 'Housing is the #1 variable in FIRE math \u2014 our widget shows readers exactly what home price keeps them on track.'",
+      "priority": 4
+    },
+    {
+      "name": "PenFed Credit Union \u2014 Financial Education",
+      "url": "https://www.penfed.org/learn",
+      "contact": "content@penfed.org",
+      "niche": "credit_union",
+      "reply_likelihood": "MEDIUM \u2014 Credit union education center. Formal but may feature tools.",
+      "widget_fit": "Credit union members making mortgage decisions. Affordability + mortgage calculator combo.",
+      "pitch_angle": "Member education angle: 'Your education center helps members make informed decisions \u2014 our free widget is a natural fit for your mortgage resources page.'",
+      "priority": 5
+    }
+  ],
+  "total_batch2": 8,
+  "send_priority": [
+    "Afford Anything (new, highest reply likelihood + perfect widget alignment)",
+    "The College Investor (new, features tools frequently)",
+    "Can I Retire Yet (held from B1, retirement audience fit)",
+    "ESI Money (new, high reply likelihood)",
+    "Millennial Revolution (new, FIRE housing fit)"
+  ],
+  "held": [
+    "Go Curry Cracker \u2014 hold for batch 3",
+    "Budget Simple Life \u2014 hold for batch 3",
+    "PenFed \u2014 hold for batch 3 (credit union needs more formal pitch)"
+  ],
+  "auditor_minimum": 90,
+  "daily_send_limit": 5,
+  "do_not_send_until": "Phase 16.10 deploy complete + Auditor >=90 on all"
+}

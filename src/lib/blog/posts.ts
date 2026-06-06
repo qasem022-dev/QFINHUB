@@ -2074,8 +2074,8 @@ The best time to inflation-proof your finances was yesterday. The second best ti
   },
   {
     slug: "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
-    title: "ECB Rate Hikes: How to Protect Your Mortgage and Savings Right Now",
-    description: "The ECB is hiking rates to tame inflation. See exactly how much higher your mortgage payment could go and how to protect your savings — with free calculators.",
+    title: "ECB Rate Hike 2026: What It Means for YOUR Mortgage — Free Payment Calculator Inside",
+    description: "ECB just raised rates again — see exactly how much YOUR monthly payment changes. Free mortgage calculator shows the impact in real numbers, personalized to your loan.",
     category: "mortgage",
     publishedAt: new Date("2026-05-26"),
     readingTime: 5,
@@ -2115,8 +2115,8 @@ The best time to inflation-proof your finances was yesterday. The second best ti
   },
   {
     slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-    title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work",
-    description: "Pay off credit card debt up to 2x faster using the snowball or avalanche method. Compare both strategies, see exact payoff timelines, and use free calculators to crush your debt. Start your debt-free journey — no signup required.",
+    title: "Crush Your Credit Card Debt in 2026: Free Payoff Calculator + 5 Proven Strategies That Work",
+    description: "Stop paying 20%+ interest. Use our free debt payoff calculator to see YOUR exact payoff date — then apply 5 proven strategies to get debt-free months faster. No signup needed.",
     category: "personal",
     publishedAt: new Date("2026-05-27"),
     readingTime: 6,

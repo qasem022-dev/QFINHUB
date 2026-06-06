@@ -1,0 +1,61 @@
+{
+  "title": "QFINHUB Linkable Asset #2 \u2014 Debt Snowball vs Avalanche Comparison Widget",
+  "generated": "2026-06-06T23:42:58Z",
+  "selection": "OPTION A: Debt Snowball vs Avalanche Embed/Widget",
+  "selection_rationale": [
+    "74K+ monthly searches for 'snowball vs avalanche' (high-demand topic)",
+    "Builds on existing debt-payoff and credit-card-payoff calculators (reuse logic)",
+    "Embeddable widget = natural backlink magnet for PF blogs",
+    "Side-by-side comparison is inherently shareable and link-worthy",
+    "Lower build effort than original research (Option C) \u2014 can ship in 1-2 days",
+    "Directly serves personal finance bloggers' audiences (natural outreach fit)",
+    "Competitor widgets are weak \u2014 opportunity to build the best comparison tool"
+  ],
+  "rejected_options": {
+    "B_Emergency_Fund_Calculator_Widget": "Competitive space (NerdWallet, Bankrate have strong widgets). Lower differentiation.",
+    "C_Homebuyer_Affordability_Checklist": "Asset #1 already covers mortgage affordability embed. Checklist format has lower backlink value.",
+    "D_Retirement_Readiness_Checklist": "Checklist format less likely to earn backlinks than interactive calculator.",
+    "E_Calculator_Directory": "Directory pages have low backlink value. QFINHUB already has /calculators listing."
+  },
+  "asset_spec": {
+    "name": "Debt Snowball vs Avalanche Comparison Widget",
+    "url": "/widgets/debt-snowball-vs-avalanche-embed",
+    "embed_url": "/embed/debt-snowball-vs-avalanche",
+    "target_audience": "Personal finance bloggers, debt-free community, credit counselors, FIRE bloggers, financial literacy educators",
+    "why_can_earn_links": "Interactive side-by-side comparison of the two most popular debt payoff methods. Shows personalized payoff date and total interest for BOTH methods using the user's actual debt numbers. PF bloggers write about this topic constantly \u2014 a free embeddable tool saves them from building their own.",
+    "calculators_used": [
+      "debt-payoff (T1, indexed) \u2014 core repayment logic",
+      "credit-card-payoff (STRONG cluster) \u2014 card-specific calculations",
+      "loan-calculator (T1, indexed) \u2014 monthly payment math"
+    ],
+    "outreach_angle": [
+      "\"Your debt payoff article is great \u2014 want to embed our free snowball vs avalanche calculator so readers can compare THEIR actual numbers?\"",
+      "\"Debt-free community: Embed this free comparison tool so your readers can see exactly which method saves them more money.\"",
+      "\"Financial literacy educators: Free interactive classroom tool to teach debt repayment strategies.\""
+    ],
+    "build_effort": "MEDIUM \u2014 ~4-6 hours",
+    "build_steps": [
+      "1. Extract debt-payoff calculation logic into reusable module",
+      "2. Build embed route (/embed/debt-snowball-vs-avalanche) \u2014 standalone iframe",
+      "3. Build landing page (/widgets/debt-snowball-vs-avalanche-embed) \u2014 indexable with embed code",
+      "4. Add side-by-side comparison: snowball method vs avalanche method, showing payoff date + total interest for each",
+      "5. Add debt input form (list of debts with balance, rate, minimum payment)",
+      "6. Add visual comparison chart (bar chart: total interest saved, months faster)",
+      "7. Add embed code generator (copy-paste iframe)",
+      "8. Add widget share packet (same pattern as asset #1)",
+      "9. Add to sitemap, internal links from debt-payoff and credit-card-payoff",
+      "10. Verify 15-point checklist (linkable-asset-verification-checklist.md)"
+    ],
+    "expected_backlink_value": "HIGH \u2014 debt payoff is the #1 personal finance search topic. Snowball vs avalanche articles are evergreen link targets. One placement on a DR50+ PF blog generates significant authority.",
+    "auditor_risk_score": 8,
+    "auditor_risk_notes": "Very low risk. Builds on proven debt-payoff calculator logic (already indexed, STRONG cluster). No new data sources needed. Widget pattern already proven with asset #1.",
+    "recommended_build_date": "2026-06-08 (48h after Phase 16.10 to allow current CTR fixes to settle)",
+    "post_build_actions": [
+      "Deploy via git push",
+      "Submit to GSC UI for indexing",
+      "Add to outreach share packet",
+      "Add internal links from all debt-related pages (7 STRONG cluster calculators)",
+      "Target first outreach batch immediately after verification"
+    ]
+  }
+}

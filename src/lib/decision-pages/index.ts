@@ -956,9 +956,9 @@ export const decisionPages: DecisionPage[] = [
   // ═══════════════════════════════════════════════════════════
   {
     slug: "roth-vs-traditional-401k-decision",
-    title: "Roth vs Traditional 401(k): Which Saves More Tax? (2026)",
+    title: "Roth or Traditional 401(k)? Free Tax Savings Calculator — See Your Difference in 30 Seconds",
     description:
-      "Should you use a Roth or Traditional 401(k)? Compare tax savings now vs later based on your income and expected retirement tax bracket. Free calculator included.",
+      "Roth or Traditional? Run the numbers YOURSELF. Free calculator shows exactly how much tax you'd save with each option — personalized result in 30 seconds, no signup.",
     cluster: "retirement",
     question: "Should I contribute to a Roth 401(k) or a Traditional 401(k)?",
     shortAnswer:

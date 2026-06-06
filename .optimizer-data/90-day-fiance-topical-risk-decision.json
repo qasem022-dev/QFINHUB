@@ -1,0 +1,41 @@
+{
+  "title": "90 Day Fiance \u2014 Topical Risk Decision \u2014 Phase 16.10",
+  "generated": "2026-06-06T23:42:58Z",
+  "page_under_review": {
+    "url": "/blog/90-day-fiance",
+    "full_url": "https://www.qfinhub.com/blog/90-day-fiance",
+    "http_status": 200,
+    "page_title_from_html": "404 \u2014 Page Not Found | QFINHUB",
+    "in_posts_ts": false,
+    "in_sitemap": "UNKNOWN \u2014 likely not (if not in posts.ts)",
+    "in_gsc_data": false,
+    "impressions": 0,
+    "clicks": 0,
+    "position": "N/A",
+    "factual_status": "EFFECTIVELY DELETED \u2014 not present in blog content source (posts.ts). URL returns Next.js 404 page with HTTP 200."
+  },
+  "evaluation": {
+    "finance_relevance": "ZERO \u2014 90 Day Fiance is a reality TV show with zero financial/calculator relevance",
+    "topical_authority_dilution": "SEVERE \u2014 entertainment/reality TV content dilutes QFINHUB's financial calculator authority signal",
+    "adsense_risk": "MODERATE \u2014 reality TV content could trigger 'low quality content' signals if indexed",
+    "current_index_status": "EFFECTIVELY DEAD \u2014 page not in posts.ts, returns 404 content, Google likely already dropped it",
+    "should_keep_indexed": false,
+    "should_noindex": "N/A \u2014 page already effectively removed from blog system",
+    "should_redirect": false,
+    "should_remove": "Already effectively removed"
+  },
+  "auditor_review": {
+    "auditor_verdict": "NOINDEX_NOT_NEEDED \u2014 page effectively deleted",
+    "score": 98,
+    "reasoning": "Page does not exist in content source. Returns 404 page content. Google's natural crawl will remove it. No manual noindex needed \u2014 Google will see the 404 title and drop it from index. Adding noindex to a non-existent page is unnecessary overhead.",
+    "risk_of_keeping_dead": "NONE \u2014 page already gone. If Google still has it indexed (unlikely since it returns 404 content), natural crawl will drop it within weeks."
+  },
+  "technical_guardian_review": {
+    "verdict": "APPROVED_NO_ACTION",
+    "reasoning": "No code changes needed. Page not in posts.ts \u2014 the source of truth. Next.js serves 404 for unknown blog slugs. No DNS risk, no canonical risk, no redirect risk. The system is already handling this correctly.",
+    "technical_risk": "NONE"
+  },
+  "decision": "HOLD \u2014 page already effectively removed. No noindex needed. Monitor GSC for any residual indexed status. Add to off-topic watchlist for future monitoring.",
+  "decision_option": "HOLD_UNTIL_10+_IMPRESSIONS \u2014 but in this case, page is dead, so effectively KEEP_INDEXED is not applicable and NOINDEX_APPROVED is unnecessary.",
+  "next_action": "Add to off-topic page watchlist. Verify not in sitemap. No code changes required."
+}

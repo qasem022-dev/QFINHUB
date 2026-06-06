@@ -1,68 +1,101 @@
 {
-  "generated_at": "2026-06-06T01:01:27.297452",
-  "near_winners_found": 16,
-  "targets": [
+  "title": "QFINHUB Near-Winner Rank Push Log \u2014 Phase 16.10 (Round 6)",
+  "generated": "2026-06-06T23:41:34Z",
+  "pushes_this_round": 10,
+  "strategy": "15-25 contextual internal links from indexed T1 calculators + stronger short answers + FAQ + calculator CTAs",
+  "source_calculators": [
+    "mortgage-calculator (T1, indexed)",
+    "mortgage-affordability (T1, indexed)",
+    "compound-interest (T1, indexed)",
+    "retirement-planning (T1, indexed)",
+    "loan-calculator (T1, indexed)",
+    "debt-payoff (T1, indexed)",
+    "investment-return (T1, indexed)",
+    "budget-planner (T1, indexed)",
+    "401k-calculator (T1, indexed)"
+  ],
+  "pushes": [
     {
-      "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "impressions": 53,
-      "position": 18.5,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+      "priority": 1,
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 59,
+      "position": 20.5,
+      "action": "15 internal links from loan-calculator, debt-payoff, budget-planner. Add FAQ section: 'What's the monthly payment?' 'Is 8% a good rate?'",
+      "finance_relevant": true
     },
     {
-      "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "priority": 2,
+      "page": "/decision/pay-off-debt-or-invest",
       "impressions": 44,
       "position": 14.0,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+      "action": "15 internal links from debt-payoff, investment-return, compound-interest. Strengthen short answer section. Add calculator CTA.",
+      "finance_relevant": true
     },
     {
-      "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
-      "impressions": 8,
-      "position": 9.2,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
-    },
-    {
-      "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
-      "impressions": 7,
-      "position": 9.1,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
-    },
-    {
-      "page": "https://www.qfinhub.com/all-pages",
-      "impressions": 4,
-      "position": 8,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
-    },
-    {
-      "page": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
-      "impressions": 4,
-      "position": 8,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
-    },
-    {
-      "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
-      "impressions": 4,
-      "position": 12,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
-    },
-    {
-      "page": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "priority": 3,
+      "page": "/decision/how-much-do-i-need-to-retire",
       "impressions": 3,
-      "position": 18,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+      "position": 5.0,
+      "action": "15 internal links from retirement-planning, 401k-calculator, compound-interest. Add retirement calculator CTA.",
+      "finance_relevant": true
     },
     {
-      "page": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "priority": 4,
+      "page": "/decision/how-much-emergency-fund-do-i-need",
+      "impressions": 1,
+      "position": 4.0,
+      "action": "15 internal links from budget-planner, savings-goal. Strengthen FAQ. Add emergency fund calculator CTA.",
+      "finance_relevant": true
+    },
+    {
+      "priority": 5,
+      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "impressions": 3,
+      "position": 18.0,
+      "action": "15 internal links from debt-payoff, credit-card-payoff, budget-planner. Add debt snowball vs avalanche link.",
+      "finance_relevant": true
+    },
+    {
+      "priority": 6,
+      "page": "/decision/can-i-retire-at-45",
+      "impressions": 0,
+      "position": "N/A",
+      "action": "20 internal links from retirement-planning, compound-interest, fire-calculator, investment-return. Add FIRE-specific FAQ. Link to retire-at-55 page.",
+      "finance_relevant": true
+    },
+    {
+      "priority": 7,
+      "page": "/decision/snowball-vs-avalanche-debt-repayment",
+      "impressions": 0,
+      "position": "N/A",
+      "action": "20 internal links from debt-payoff, credit-card-payoff, loan-calculator. Add side-by-side comparison. Calculator CTA: 'Try both methods with your real numbers.'",
+      "finance_relevant": true
+    },
+    {
+      "priority": 8,
+      "page": "/decision/roth-vs-traditional-401k-decision",
       "impressions": 3,
       "position": 12.3,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+      "action": "15 internal links from 401k-calculator, retirement-planning, tax-calculator. Strengthen short answer. Add tax bracket table.",
+      "finance_relevant": true
     },
     {
-      "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
-      "impressions": 2,
-      "position": 22,
-      "push_action": "Add internal links from indexed T1 calcs, improve short answer section, add FAQ"
+      "priority": 9,
+      "page": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+      "impressions": 4,
+      "position": 8.0,
+      "action": "15 internal links from mortgage-calculator, mortgage-affordability, refinance-calculator. Add FAQ. Add mortgage calculator CTA.",
+      "finance_relevant": true
+    },
+    {
+      "priority": 10,
+      "page": "/decision/should-i-use-a-heloc-or-personal-loan",
+      "impressions": 0,
+      "position": "N/A",
+      "action": "20 internal links from loan-calculator, debt-payoff, mortgage-calculator. Strengthen comparison table. Add loan calculator CTA.",
+      "finance_relevant": true
     }
   ],
-  "internal_links_planned": "Add from mortgage-calculator, compound-interest, retirement-planning to top 10 near-winners",
-  "status": "PLANNED \u2014 will execute in next deploy cycle"
+  "internal_links_total_planned": "~170 (10 pushes \u00d7 15-20 links each)",
+  "execution": "Links added via patch() to src/lib/calculator-decision-links.ts and src/lib/calculator-decision-links-v10.ts (BOTH must be updated per pitfall #21)"
 }

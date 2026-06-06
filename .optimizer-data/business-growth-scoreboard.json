@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-06T22:05:00Z",
+  "generated_at": "2026-06-06T23:50:00Z",
   "title": "QFINHUB Autonomous Business Growth Scoreboard",
   "current_date": "2026-06-06",
   "days_since_launch": 34,
-  "phase": "16.8 — Outreach Conversion + First Click Monitoring",
+  "phase": "16.9 — Reply Accelerator + Finance CTR Expansion",
   "traffic": {
     "daily_visitors": 0,
     "monthly_visitors": "~0",
@@ -11,69 +11,40 @@
     "gap_to_target": "INFINITE — need first click first",
     "ga4_users_7d": 6,
     "ga4_sessions_7d": 6,
-    "ga4_bounce_rate": "100%",
     "status": "🔴 OFF-TRACK"
   },
   "gsc_performance": {
     "impressions_7d_manual": 311,
     "impressions_7d_api": 213,
-    "impressions_daily_avg": 44,
     "clicks_7d": 0,
     "ctr": "0.0%",
     "avg_position": 19.3,
-    "ctr_fixes_total": 6,
-    "impressions_covered_by_fixes": "~150/311 (48%)",
-    "data_source": "Manual GSC UI (311) + API (213 — gap from anonymized queries)",
-    "data_gap": "OPEN — API=213, Manual=311"
-  },
-  "first_click_watch": {
-    "status": "AWAITING_FIRST_CLICK",
-    "most_likely": "/blog/20000-loan... (59 imp, pos 20.5, CTR FIXED)",
-    "second_likely": "/decision/pay-off-debt-or-invest (44 imp, pos 14, CTR FIXED)",
-    "dark_horse": "/decision/how-much-do-i-need-to-retire (3 imp, pos 5, CTR FIXED)",
-    "pages_watching": 8,
-    "recrawl_estimate": "3-14 days for Google to process meta changes"
+    "ctr_fixes_total": 9,
+    "impressions_covered_by_fixes": "~170/311 (55%)",
+    "remaining_zero_click_pages": 38,
+    "off_topic_impressions": "34/213 (16.0%)",
+    "data_gap": "OPEN — API=213, Manual=311",
+    "first_click_watch": "8 pages monitored, 0 clicks"
   },
   "revenue": {
     "monthly": "$0.00",
-    "adsense_status": "ads.txt LIVE, application submitted, awaiting review",
-    "first_dollar_eta": "Unknown — requires AdSense approval + meaningful traffic"
+    "adsense_status": "ads.txt LIVE, application submitted, awaiting review"
   },
   "authority": {
-    "outreach_total_sent": 20,
+    "outreach_total_sent": 25,
     "follow_ups_sent": 7,
     "replies_received": 0,
     "backlinks_won": 0,
     "referring_domains": 0,
-    "new_prospects_sent_today": 3,
-    "new_prospects_held": 2,
-    "next_followup_date": "2026-06-13 (12 targets eligible)",
-    "linkable_asset": "BUILT + DEPLOYED + VERIFIED LIVE",
-    "linkable_asset_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
-    "status": "🔴 OFF-TRACK — 0 backlinks after 34 days",
-    "bottleneck": "DOMAIN AUTHORITY — 34-day-old domain with 0 external trust signals"
-  },
-  "content": {
-    "ctr_fixes_applied": 6,
-    "ctr_fixes_round": "Round 4 — 5 planned (positions 1-10 compound tool pages)",
-    "page2_push_round": "Round 4 — 10 pushes planned (contextual internal links + FAQ)",
-    "off_topic_hold": "6 pages under monitor. 90 Day Fiance flagged for noindex if growth >10 imp.",
-    "off_topic_impressions": "35/213 (16.4%)",
-    "internal_links_total": 67
-  },
-  "operations": {
-    "autonomous_os_active": true,
-    "cron_jobs_active": 1,
-    "google_indexing_api": "NEVER USED",
-    "haro": "DISABLED",
-    "pinterest": "MONITOR-ONLY",
-    "pdf_distribution": "DISABLED",
-    "risky_automations": "ALL DISABLED",
-    "gmail_smtp": "Working",
-    "outreach_reply_rules": "CREATED — 7 scenarios defined"
+    "reply_accelerator_sent_today": 5,
+    "linkable_asset": "BUILT + DEPLOYED + VERIFIED + SHARE PACKET READY",
+    "widget_share_packet": "CREATED — ready for prospect replies",
+    "next_followup_date": "2026-06-13",
+    "status": "🔴 OFF-TRACK — 0 backlinks",
+    "bottleneck": "DOMAIN SANDOX — 34-day-old domain, 0 trust signals"
   },
   "overall_status": "🔴 OFF-TRACK",
-  "biggest_blocker": "0 clicks / 0 backlinks — domain sandbox + zero trust signals",
-  "gap_to_1M_monthly_mo5": "1,000,000 visitors — currently 0",
-  "gap_to_50k_monthly_mo14": "$50,000/month — currently $0.00"
+  "biggest_blocker": "0 clicks + 0 backlinks — awaiting Google recrawl of 9 CTR fixes + prospect replies",
+  "gap_to_1M_monthly_mo5": "1,000,000 — currently 0",
+  "gap_to_50k_monthly_mo14": "$50,000 — currently $0.00"
 }

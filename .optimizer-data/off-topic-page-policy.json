@@ -1,0 +1,73 @@
+{
+  "title": "QFINHUB Off-Topic Page Policy \u2014 Autonomous Decision Framework",
+  "generated": "2026-06-06T23:42:58Z",
+  "version": "1.0.0",
+  "purpose": "Enable Hermes to autonomously classify and handle off-topic pages without Qasem's daily input. Protects QFINHUB's financial calculator topical authority.",
+  "definitions": {
+    "finance_relevant": "Any page that directly relates to financial calculations, personal finance decisions, mortgage, debt, retirement, investing, budgeting, taxes, credit, loans, insurance, savings, or financial education. Must connect to at least one QFINHUB calculator or decision tool.",
+    "off_topic": "Pages with ZERO financial/calculator relevance. Entertainment, TV shows, celebrity news, politics, sports, recipes, travel without finance angle, product reviews not finance-related, general life advice without money angle.",
+    "borderline": "Pages with tangential finance connection but weak calculator integration. Example: 'best cities for remote workers' (cost of living angle = borderline), 'how to negotiate anything' (could include salary = borderline). These need individual review.",
+    "content_type_exception": "Pages classified as 'about', 'privacy', 'disclaimer', 'terms', 'contact' are ADMIN pages \u2014 never flagged as off-topic regardless of finance relevance."
+  },
+  "decision_matrix": {
+    "HOLD": {
+      "criteria": "Page has 0-9 impressions AND is borderline OR has potential finance angle with improvement. Most common action.",
+      "what_to_do": "Do nothing. Monitor via GSC. Re-evaluate at 10 impressions. If borderline, consider adding finance angle/calculator link.",
+      "when_to_use": "Default for borderline pages and low-impression off-topic pages."
+    },
+    "IMPROVE": {
+      "criteria": "Page is borderline (has tangential finance angle) AND has impressions > 3 AND has a calculator that could be connected.",
+      "what_to_do": "Add internal link to relevant calculator, reframe intro to include finance angle, add a 'what this means for your money' section.",
+      "when_to_use": "When the page CAN be made finance-relevant with reasonable effort.",
+      "max_attempts": 1
+    },
+    "PROPOSE_NOINDEX": {
+      "criteria": "Page is clearly off-topic (zero finance relevance) AND has >10 impressions OR is creating topical authority dilution risk.",
+      "what_to_do": "Present to Auditor + Technical Guardian. If BOTH approve, apply noindex. Never auto-noindex without dual approval.",
+      "when_to_use": "For unequivocally off-topic pages gaining traction.",
+      "dual_approval_required": true
+    },
+    "ESCALATE": {
+      "criteria": "Page is borderline but high traffic, OR noindex proposal was rejected by Auditor/TG, OR page has unique edge case not covered by policy.",
+      "what_to_do": "Flag to Qasem with full evaluation: URL, impressions, position, relevance score, recommendation with reasoning.",
+      "when_to_use": "When automated decision is uncertain or dual approval fails."
+    },
+    "DO_NOT_TOUCH": {
+      "criteria": "Page is admin/structural (about, privacy, disclaimer, terms, contact, ads.txt, sitemap, robots), OR page was explicitly approved by Qasem, OR page is a core calculator/decision/blog that was mistakenly flagged.",
+      "what_to_do": "Remove from off-topic watchlist. Do not propose any changes.",
+      "when_to_use": "Always check content type before flagging."
+    }
+  },
+  "safeguards": {
+    "never_noindex_without_dual_approval": "Both Auditor AND Technical Guardian must approve before noindex is applied",
+    "never_delete_finance_pages": "Pages that have ANY finance relevance, calculator connection, or decision tool link must not be proposed for noindex/removal",
+    "never_touch_admin_pages": "about, privacy, disclaimer, terms, contact pages are ADMIN STRUCTURE \u2014 never flagged",
+    "never_touch_core_calculators": "125 calculator pages are CORE \u2014 never flagged even if GSC shows 0 impressions",
+    "always_check_content_type_first": "Before classifying as off-topic, verify the page type: calculator, blog, decision, guide, comparison, tool, static, admin",
+    "monitor_before_acting": "Pages with <10 impressions get HOLD only \u2014 no structural changes until they prove they matter"
+  },
+  "off_topic_watchlist": {
+    "current_pages": [],
+    "recently_cleared": [
+      "/blog/90-day-fiance \u2014 effectively deleted (not in posts.ts, returns 404)"
+    ],
+    "future_additions": "Any page discovered via GSC with zero finance relevance will be added here"
+  },
+  "topical_authority_protection": {
+    "principle": "QFINHUB's topical authority comes from being a financial calculator and decision tool site. Every indexed page should reinforce this signal to Google.",
+    "dilution_vectors": [
+      "Entertainment/reality TV content",
+      "Non-finance lifestyle advice",
+      "Celebrity/gossip content",
+      "Politics without finance angle",
+      "Product reviews for non-financial products"
+    ],
+    "reinforcement_vectors": [
+      "Calculator pages with real functionality",
+      "Decision pages with calculated results",
+      "Finance blogs with calculator CTAs",
+      "Guide pages with step-by-step financial calculations",
+      "Widget pages with embeddable financial tools"
+    ]
+  }
+}

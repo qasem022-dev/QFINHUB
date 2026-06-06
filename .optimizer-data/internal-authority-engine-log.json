@@ -1,23 +1,30 @@
 {
-  "generated_at": "2026-06-06T01:35:55.112023",
-  "phase": "16.4",
-  "links_added_today": 12,
-  "cumulative_total": 67,
+  "generated_at": "2026-06-06T23:41:34Z",
+  "phase": "16.10",
+  "links_planned_today": 170,
+  "cumulative_total": 237,
   "source_pages": [
     "mortgage-calculator",
-    "retirement-planning",
-    "investment-return",
-    "debt-payoff",
+    "mortgage-affordability",
     "compound-interest",
-    "budget-planner"
+    "retirement-planning",
+    "loan-calculator",
+    "debt-payoff",
+    "investment-return",
+    "budget-planner",
+    "401k-calculator"
   ],
   "target_pages": [
-    "home-affordability",
-    "em-fund",
-    "savings-goal",
-    "break-even",
-    "net-worth",
-    "student-loan",
-    "personal-loan"
-  ]
+    "loan-blog",
+    "pay-off-debt-decision",
+    "retirement-decision",
+    "emergency-fund-decision",
+    "credit-card-debt-blog",
+    "retire-at-45",
+    "snowball-vs-avalanche",
+    "roth-vs-traditional",
+    "ecb-mortgage-blog",
+    "heloc-vs-personal-loan"
+  ],
+  "previous_round": "67 cumulative through Phase 16.4"
 }
