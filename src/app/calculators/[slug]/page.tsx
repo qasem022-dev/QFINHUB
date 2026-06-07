@@ -73,6 +73,18 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
       metaDesc: "Check if you're on track to retire comfortably. Project your nest egg with contributions, returns, and inflation. Free instant results, no signup required.",
       ogDesc: "Check if you're on track to retire comfortably. Project your nest egg with contributions and returns. Try it free — no signup, instant results.",
     },
+    "investment-return": {
+      title: "See Your Money Grow: Free Investment Return Calculator (2026)",
+      ogTitle: "See Your Money Grow | Free Investment Return Calculator (2026)",
+      metaDesc: "Calculate your exact investment returns with compound growth. See how much your portfolio could be worth over time. Free instant results, no signup.",
+      ogDesc: "Calculate your exact investment returns with compound growth. See your portfolio's future value. Try it free — no signup, instant results.",
+    },
+    "tax-calculator": {
+      title: "Estimate Your Tax Bill: Free 2026 Tax Calculator",
+      ogTitle: "Estimate Your Tax Bill | Free 2026 Tax Calculator",
+      metaDesc: "Calculate your federal income tax for 2026. Enter your income and filing status for an instant estimate of what you owe. Free, no signup required.",
+      ogDesc: "Calculate your federal income tax for 2026 instantly. Enter your income and filing status. Try it free — no signup, instant results.",
+    },
   };
 
   const ctr = ctrTitles[slug];
