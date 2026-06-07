@@ -1,0 +1,152 @@
+{
+  "title": "GSC Validate Fix Decision Audit \u2014 Phase 16.11",
+  "generated": "2026-06-06T23:59:12Z",
+  "data_source": "Reconstructed from known V2 prune + site architecture (no GSC API access \u2014 token dead)",
+  "property": "https://www.qfinhub.com/",
+  "last_updated": "2026-05-29 (stale \u2014 not updated since V2 prune)",
+  "issue_groups": [
+    {
+      "group": "Discovered \u2014 currently not indexed",
+      "estimated_count": "~2,000+ (V2 cleanup lag from pruned scenarios, geo pages, formula tools)",
+      "sample_urls": [
+        "Scenario hash-ID pages (2,061 noindexed)",
+        "Geo pages (591 noindexed, 3 exceptions)",
+        "Formula tool variants (~386 noindexed)"
+      ],
+      "root_cause": "V2 correction (May 28): mass noindex of low-quality pages. Google DISCOVERED these URLs from old sitemaps/internal links before they were noindexed. They are now blocked by noindex tags.",
+      "is_intentional": true,
+      "root_cause_fixed": "YES \u2014 May 28: noindex tags applied. Sitemaps cleaned. Scenario sitemap removed from GSC.",
+      "are_urls_important": false,
+      "is_cleanup_lag": true,
+      "should_validate_fix": false,
+      "reason": "These are INTENTIONAL noindex pages. Google will naturally drop them from the index over time. Clicking 'Validate Fix' on intentional noindex pages is WRONG \u2014 it tells Google to re-check pages that are SUPPOSED to be excluded. Let the natural cleanup process run.",
+      "risk_of_validating": "MEDIUM \u2014 Google may recrawl noindexed pages, consuming crawl budget on pages we want excluded",
+      "risk_of_not_validating": "NONE \u2014 Google naturally drops discovered-not-indexed URLs over 3-6 months. This is normal cleanup lag.",
+      "action": "DO NOT VALIDATE. Monitor counts monthly \u2014 should decrease over time."
+    },
+    {
+      "group": "Crawled \u2014 currently not indexed",
+      "estimated_count": "~500-800 (lower-priority pages Google crawled but chose not to index)",
+      "sample_urls": [
+        "Some tool variants that Google crawled but deemed thin",
+        "Some guide pages crawled before canonical fix (Jun 3)",
+        "Old scenario pages that were crawled before noindex applied"
+      ],
+      "root_cause": "Google crawled these pages but chose not to index them. Likely reasons: low quality signal at time of crawl, thin content, or crawled before improvements were made.",
+      "is_intentional": false,
+      "root_cause_fixed": "PARTIALLY \u2014 Guide pages fixed (canonical added Jun 3). Tool variants mixed (some indexable, some formula-variant noindexed).",
+      "are_urls_important": "MAYBE \u2014 some could be important tool variants or improved guide pages",
+      "is_cleanup_lag": "MIXED \u2014 some cleanup, some genuine quality issues",
+      "should_validate_fix": "HOLD \u2014 NOT YET",
+      "reason": "Without GSC access to see which specific URLs are in this group, we cannot distinguish cleaned-up pages from genuinely low-quality ones. Some URLs may have been improved (guide canonical fixes, new content) but we don't know WHICH are in the group. Blind validation risks re-requesting indexing on thin pages.",
+      "risk_of_validating": "HIGH \u2014 Google re-crawls thin pages, waste crawl budget, potentially hurts site quality score",
+      "risk_of_not_validating": "LOW \u2014 improved pages will naturally be recrawled via sitemap + internal links",
+      "action": "HOLD until GSC token is fixed and specific URL list can be audited. Then: validate ONLY if >80% of URLs are now improved and indexable. Otherwise let natural recrawl handle it.",
+      "when_to_revisit": "After GSC token fixed + CloakBrowser GSC UI access restored"
+    },
+    {
+      "group": "Excluded by noindex tag",
+      "estimated_count": "~3,036 (all intentional noindex from V2 prune)",
+      "sample_urls": [
+        "Geo pages: /calculators/mortgage/*-tx, /calculators/loan/*-ca, etc. (591 pages)",
+        "Formula tool variants: /tools/compound-500k-15yr-5pct, etc. (~386 pages)",
+        "Hash-ID scenarios: /scenario/* (~2,059 pages)"
+      ],
+      "root_cause": "V2 quality control \u2014 mass noindex of low-quality, non-localized, and thin-content pages",
+      "is_intentional": true,
+      "root_cause_fixed": "YES \u2014 these pages are SUPPOSED to be noindexed",
+      "are_urls_important": false,
+      "is_cleanup_lag": false,
+      "should_validate_fix": false,
+      "reason": "These pages are INTENTIONALLY noindexed. 'Validate Fix' is for pages where the noindex was a MISTAKE that has been corrected. These noindex tags are correct and intentional.",
+      "risk_of_validating": "CRITICAL \u2014 would tell Google the noindex was wrong, potentially re-indexing 3,000+ low-quality pages and severely damaging site quality",
+      "risk_of_not_validating": "NONE \u2014 intentional noindex pages SHOULD remain excluded",
+      "action": "DO NOT VALIDATE. Never. These pages are correctly excluded."
+    },
+    {
+      "group": "Not found (404)",
+      "estimated_count": "~10-20 (old URLs that no longer exist)",
+      "sample_urls": [
+        "/dashboard (removed from sitemap Phase 13C.7)",
+        "/dashboard/plans (removed)",
+        "/dashboard/settings (removed)",
+        "/auth/login (removed Phase 13C.9)",
+        "/auth/signup (removed Phase 13C.9)",
+        "/cookies (removed Phase 13C.9)",
+        "/blog/90-day-fiance (effectively dead \u2014 returns 404 title)",
+        "Old scenario slugs that were pruned and not redirected"
+      ],
+      "root_cause": "Pages removed during V2 cleanup. Dashboard/auth pages intentionally removed. Old scenarios pruned.",
+      "is_intentional": true,
+      "root_cause_fixed": "YES \u2014 pages removed from sitemap, not linked internally",
+      "are_urls_important": false,
+      "is_cleanup_lag": true,
+      "should_validate_fix": "YES \u2014 for pages we're SURE are permanently removed and not linked",
+      "reason": "404 pages that are permanently gone and have no internal links SHOULD be validated. Google will confirm the 404 and drop them from reporting. This cleans up the GSC dashboard.",
+      "risk_of_validating": "LOW \u2014 Google checks, confirms 404, removes from report. Only risk is if we accidentally include a page that exists but was temporarily misconfigured.",
+      "risk_of_not_validating": "LOW \u2014 cosmetic. 404s naturally drop from reports over time.",
+      "action": "SAFE TO VALIDATE if we can confirm the specific URLs are genuinely dead. WITHOUT GSC ACCESS to see the exact list, hold until token fixed.",
+      "when_to_validate": "After GSC token + CloakBrowser GSC UI restored \u2192 verify specific 404 URLs \u2192 click Validate Fix on confirmed dead pages only"
+    },
+    {
+      "group": "Alternative page with proper canonical tag",
+      "estimated_count": "~400+ (tool variants and other pages canonicalized to parent calculators)",
+      "sample_urls": [
+        "/tools/loan-20k-5yr-8pct \u2192 canonical to /calculators/loan-calculator",
+        "/tools/compound-500k-15yr-5pct \u2192 canonical to /calculators/compound-interest",
+        "Other tool variants canonicalized to parent calculators"
+      ],
+      "root_cause": "V2 canonicalization \u2014 tool variants point to parent calculators as canonical",
+      "is_intentional": true,
+      "root_cause_fixed": "YES \u2014 canonical tags are correct",
+      "are_urls_important": false,
+      "is_cleanup_lag": "NORMAL \u2014 this is expected canonical behavior, not an issue",
+      "should_validate_fix": false,
+      "reason": "Alternative page with canonical is NORMAL and CORRECT behavior. These are not errors \u2014 Google is correctly identifying that the canonical version is the parent calculator. Do not validate.",
+      "risk_of_validating": "MEDIUM \u2014 may cause Google to reconsider the canonical relationship",
+      "risk_of_not_validating": "NONE \u2014 this is expected state",
+      "action": "DO NOT VALIDATE. This is correct canonical behavior."
+    },
+    {
+      "group": "Page with redirect",
+      "estimated_count": "~5-10",
+      "sample_urls": [
+        "/privacy-policy \u2192 301 to /privacy (next.config.ts)",
+        "/auth \u2192 307 to /auth/login (if configured)",
+        "Possible old URL redirects"
+      ],
+      "root_cause": "Intentional redirects set up during site cleanup",
+      "is_intentional": true,
+      "root_cause_fixed": "YES \u2014 redirects are correct",
+      "are_urls_important": false,
+      "is_cleanup_lag": "NORMAL",
+      "should_validate_fix": false,
+      "reason": "Redirects are intentional. These are not errors.",
+      "risk_of_validating": "LOW \u2014 Google will confirm the redirect",
+      "risk_of_not_validating": "NONE",
+      "action": "DO NOT VALIDATE unless count is abnormally high (>100). Redirects are normal."
+    }
+  ],
+  "overall_recommendation": {
+    "validate_now": [],
+    "validate_after_token_fix": [
+      "Not found (404) \u2014 only confirmed dead pages"
+    ],
+    "never_validate": [
+      "Discovered \u2014 currently not indexed (intentional noindex cleanup lag)",
+      "Excluded by noindex tag (intentional, correct)",
+      "Alternative page with proper canonical tag (correct behavior)",
+      "Page with redirect (normal)"
+    ],
+    "hold_until_audited": [
+      "Crawled \u2014 currently not indexed (need URL-level audit before deciding)"
+    ],
+    "blocker": "GSC TOKEN DEAD \u2014 cannot see specific URLs in each group. Blind validation is DANGEROUS. Wait for token fix.",
+    "cosmetic_note": "The 'last updated 29/05' date on these groups is cosmetic. GSC reports lag behind actual crawl state. The V2 prune was May 28 \u2014 the 29/05 date likely reflects the last time GSC ran its batch processing, not the last time pages changed."
+  },
+  "qaesm_action_required": [
+    "Fix GSC token (see gsc-token-recovery-report.json)",
+    "After token fixed, Hermes can use CloakBrowser to inspect 'Not found (404)' group and safely Validate Fix on confirmed dead pages",
+    "DO NOT click Validate Fix blindly on any group before Hermes reviews specific URLs"
+  ]
+}

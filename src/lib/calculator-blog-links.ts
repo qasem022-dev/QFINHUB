@@ -11,12 +11,14 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "when-to-refinance-your-mortgage-complete-guide-2026", title: "When Should You Refinance Your Mortgage? Complete Guide (2026)" },
     { slug: "200k-mortgage-payment-30-years", title: "$200,000 Mortgage Payment for 30 Years: Exact Monthly Cost" },
     { slug: "monthly-mortgage-payment-formula-tax-insurance", title: "Monthly Mortgage Payment Formula With Tax and Insurance (PITI)" },
+    { slug: "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", title: "ECB Rate Hike 2026: What It Means for YOUR Mortgage" },
   ],
   "mortgage-affordability": [
     { slug: "how-much-mortgage-afford-100k-salary", title: "How Much Mortgage Can I Afford on a $100k Salary?" },
     { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment" },
     { slug: "rent-vs-buy-which-is-better", title: "Rent vs Buy: Which Is Better for Your Financial Situation?" },
     { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
+    { slug: "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", title: "ECB Rate Hike 2026: What It Means for YOUR Mortgage" },
   ],
   "compound-interest": [
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
@@ -41,7 +43,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
   "debt-payoff": [
     { slug: "debt-snowball-vs-debt-avalanche", title: "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?" },
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
-    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work" },
+    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+    { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
   ],
   "credit-card-payoff": [
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work" },
@@ -63,6 +66,7 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
   ],
   "budget-planner": [
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
-    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work" },
+    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+    { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
   ],
 };
