@@ -2105,7 +2105,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
 
   {
     slug: "investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
-    title: "Investing Cybersecurity Stocks Are Surging: One Looks Promising Into Earnings",
+    title: "Cybersecurity Stocks Are Surging — One Stock to Watch Before Earnings (With Return Calculator)",
     description: "Cybersecurity stocks are surging as threats rise. Discover why one stands out into earnings and how to use our Compound Interest Calculator to project gains.",
     category: "investment",
     publishedAt: new Date("2026-05-27"),
@@ -2125,7 +2125,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
   },
   {
     slug: "mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
-    title: "Mortgage Rates 2025: ‘Borderline Desperate’ Buyers Winning Bidding Wars",
+    title: "Mortgage Rates 2026: How 'Borderline Desperate' Buyers Are Winning Bidding Wars (Use Our Calculator)",
     description: "Learn how ‘borderline desperate’ buyers are winning bidding wars but risking deals over low appraisals. Mortgage rates 2025 insights and affordability tips inside.",
     category: "mortgage",
     publishedAt: new Date("2026-05-28"),
