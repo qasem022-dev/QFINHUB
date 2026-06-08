@@ -153,6 +153,15 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     "afford-130k-40k-7pct",
   ]);
 
+  // Phase 16.12F: Blocklist — variant pages that are noindexed by the scenario page logic.
+  // These have hex-suffixed slugs (auto-generated) and are noindex,follow at /scenario/[id].
+  // They should NOT be in the main sitemap — Google crawls them but won't index them anyway.
+  const NOINDEXED_VARIANT_SLUGS = new Set([
+    "auto-loan-717d83b1",
+    "auto-loan-92918ea9",
+    "retirement-planning-eb1dd78b",
+  ]);
+
   function isFormulaVariant(slug: string): boolean {
     const parts = slug.split("-");
     const hasPct = parts.some((p) => p.endsWith("pct"));
@@ -168,6 +177,7 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     const variants = getAllVariantPages();
     variantPages = variants
       .filter((v) => !isFormulaVariant(v.slug) || TOOL_GSC_SLUGS.has(v.slug))
+      .filter((v) => !NOINDEXED_VARIANT_SLUGS.has(v.slug))
       .map((v) => ({
         url: `${BASE_URL}/tools/${v.slug}`,
         lastModified: new Date(),
