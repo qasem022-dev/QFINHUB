@@ -37,8 +37,14 @@ export function generateGuideSlug(calculatorSlug: string): string {
 /** Generate a search-friendly meta title for a guide page */
 export function generateGuideMetaTitle(calcTitle: string): string {
   // Strip leading "Free " to avoid double "Free Free" in titles (pitfall #33)
-  const cleanTitle = calcTitle.replace(/^Free\s+/i, "");
-  return `How to Use ${cleanTitle} — Step-by-Step Guide 2026 (Free Calculator)`;
+  let clean = calcTitle.replace(/^Free\s+/i, "");
+  // Phase 16.12G: Strip redundant "Guide [Year]", "[Year]", and "Calculator" suffixes
+  // that clash with the generator's own "Step-by-Step Guide [Year]" suffix
+  clean = clean.replace(/\s*—\s*Calculate in \d+ Seconds.*$/i, "");
+  clean = clean.replace(/\s+Guide\s+\d{4}\s*$/i, "");
+  clean = clean.replace(/\s+\d{4}\s*$/i, "");
+  clean = clean.replace(/\s+Calculator\s*$/i, "");
+  return `How to Use ${clean} — Step-by-Step Guide 2026 (Free Calculator)`;
 }
 
 /** Generate a search-friendly meta description for a guide page */

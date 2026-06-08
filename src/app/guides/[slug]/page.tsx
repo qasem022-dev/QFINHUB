@@ -41,8 +41,35 @@ export default async function GuidePage({ params }: GuidePageProps) {
 
   if (!guide) notFound();
 
+  const canonicalUrl = `https://www.qfinhub.com/guides/${slug}`;
+
+  // Phase 16.12G: Article schema for guide pages (overrides layout's generic WebApplication)
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": guide.h1,
+    "description": guide.description,
+    "url": canonicalUrl,
+    "datePublished": "2025-01-01",
+    "dateModified": new Date().toISOString().split("T")[0],
+    "author": {
+      "@type": "Organization",
+      "name": "QFINHUB"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "QFINHUB",
+      "url": "https://www.qfinhub.com"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-surface-dark">
+      {/* Article Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="mb-6 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
