@@ -201,8 +201,102 @@ export function generateHowToSteps(calculator: CalculatorConfig): HowToStep[] {
  * Generate all "how to use" guide data for all calculators.
  */
 export function getAllHowToGuides(): HowToGuide[] {
+  // Phase 18.2: Calculator-specific unique content for high-value guides
+  const UNIQUE_CONTENT: Record<string, {
+    tips: string[];
+    commonMistakes: string[];
+    faqs: { question: string; answer: string }[];
+  }> = {
+    "emergency-fund": {
+      tips: [
+        "Aim for 3-6 months of essential expenses — but if you're a freelancer or have variable income, target 9-12 months",
+        "Keep your emergency fund in a high-yield savings account (HYSA) so it earns ~4% interest while staying liquid",
+        "Start small: $1,000 is a solid first milestone before you tackle 3-month coverage"
+      ],
+      commonMistakes: [
+        "Keeping too much cash: anything beyond 12 months of expenses could be invested for better returns",
+        "Not adjusting for life changes: marriage, kids, or a mortgage should trigger a recalculation of your emergency fund target",
+        "Using the fund for non-emergencies: a vacation or new TV is not an emergency — replenish immediately if you dip in"
+      ],
+      faqs: [
+        { question: "How much emergency fund do I need?", answer: "Most experts recommend 3-6 months of essential living expenses. For example, if your monthly essentials (rent, food, utilities, minimum debt payments) are $3,500, aim for $10,500-$21,000. Freelancers and single-income households should target 9-12 months." },
+        { question: "Where should I keep my emergency fund?", answer: "A high-yield savings account (HYSA) is ideal — currently earning ~4% APY with FDIC insurance. Avoid stocks or bonds for emergency funds; the money must be accessible within 1-2 business days without risk of loss." },
+        { question: "Should I pay off debt or build an emergency fund first?", answer: "Build a small $1,000 emergency fund first, then aggressively pay down high-interest debt (credit cards, payday loans). Once high-interest debt is gone, build your full 3-6 month emergency fund before investing." }
+      ]
+    },
+    "debt-to-income": {
+      tips: [
+        "Lenders typically want your front-end DTI (housing only) under 28% and back-end DTI (all debts) under 36%",
+        "Before applying for a mortgage, pay down credit cards and auto loans to lower your DTI — even a $200/month reduction can qualify you for $30,000 more home",
+        "Use the 50/30/20 budget alongside your DTI: 50% needs, 30% wants, 20% savings/debt payoff"
+      ],
+      commonMistakes: [
+        "Only looking at front-end DTI: lenders care more about back-end DTI, which includes student loans, car payments, credit cards, and personal loans",
+        "Forgetting irregular debts: child support, alimony, and tax payment plans all count toward DTI",
+        "Using gross income for your personal budget: always use net (take-home) pay for actual affordability decisions"
+      ],
+      faqs: [
+        { question: "What is a good debt-to-income ratio?", answer: "A DTI under 36% is considered good by most lenders. Under 28% for housing alone (front-end) is ideal. For example, at $75,000 income ($6,250/month), keep housing under $1,750 and total debt payments under $2,250." },
+        { question: "How do I lower my DTI ratio?", answer: "Three ways: (1) Increase income — a side gig or raise helps. (2) Pay down debt — focus on the highest monthly payment first for maximum DTI impact. (3) Refinance high-interest loans to lower monthly payments. Reducing a $400/month car payment to $300 saves $100/month in DTI." },
+        { question: "Does rent count toward DTI?", answer: "Current rent does NOT count toward DTI for mortgage applications — only the projected future mortgage payment counts. However, lenders look at your rental payment history as evidence you can handle housing costs." }
+      ]
+    },
+    "mortgage-affordability": {
+      tips: [
+        "The 28/36 rule is a lender guideline, not your personal budget: many homeowners are comfortable at 25% or even 20% of income",
+        "Don't forget closing costs: budget 2-5% of the home price for closing, separate from your down payment",
+        "Get pre-approved with 2-3 lenders — rates can vary by 0.5% or more, which means thousands in buying power"
+      ],
+      commonMistakes: [
+        "Buying at the max the bank approves: banks lend based on gross income, not your actual lifestyle expenses like childcare, travel, or hobbies",
+        "Forgetting property taxes and insurance: these typically add 25-35% to your principal+interest payment",
+        "Underestimating maintenance: budget 1-2% of the home's value per year for repairs and upkeep"
+      ],
+      faqs: [
+        { question: "How much house can I afford with a $100,000 salary?", answer: "At $100,000 income ($8,333/month), the 28% rule allows ~$2,333/month for housing (PITI). With 20% down at 6.5% interest, you can afford roughly a $325,000-$375,000 home. With 5% down, this drops to ~$275,000 because of PMI and a larger loan amount." },
+        { question: "What down payment do I need?", answer: "Conventional loans accept 3-5% down, but under 20% requires PMI (~$100-200/month). FHA loans allow 3.5% down but PMI lasts the life of the loan. 20% down eliminates PMI and gives you the best rate. First-time homebuyer programs may offer down payment assistance." },
+        { question: "How do interest rates affect what I can afford?", answer: "A 1% rate increase (6.5% → 7.5%) reduces your buying power by ~10%. At $100K income, that's roughly $35,000 less home. This is why rate shopping with multiple lenders is critical — even 0.25% difference matters." }
+      ]
+    },
+    "compound-interest": {
+      tips: [
+        "Time is your biggest advantage: $10,000 invested at 8% for 30 years becomes $100,627 — but if you wait 10 years, it only grows to $46,610",
+        "Small monthly additions add up: adding just $200/month to that $10,000 over 30 years at 8% grows your total to over $370,000",
+        "Use annual compounding for long-term projections and monthly compounding for savings accounts to get the most accurate estimate"
+      ],
+      commonMistakes: [
+        "Confusing APY with APR: APY includes compounding, APR does not. Always use APY for savings and CD comparisons",
+        "Forgetting about inflation: a 8% return with 3% inflation means your real return is only ~5%",
+        "Using unrealistic return assumptions: the S&P 500 averages ~10% nominally but ~7% after inflation — don't plan retirement on 12% returns"
+      ],
+      faqs: [
+        { question: "What's the difference between simple and compound interest?", answer: "Simple interest earns only on the principal. Compound interest earns on principal PLUS accumulated interest. Example: $10,000 at 5% simple interest for 10 years = $15,000. With annual compounding = $16,289. The difference grows exponentially over time." },
+        { question: "How often is interest compounded?", answer: "It depends on the account. Savings accounts typically compound daily or monthly. CDs may compound quarterly or annually. Bonds compound semi-annually. The more frequent the compounding, the more you earn — but the difference between daily and monthly is small." },
+        { question: "How can I double my money with compound interest?", answer: "Use the Rule of 72: divide 72 by your interest rate to find years to double. At 8%, money doubles in ~9 years (72/8). At 6%, it takes 12 years. This rule works for any compound growth rate." }
+      ]
+    },
+    "retirement-planning": {
+      tips: [
+        "The 4% rule: you can safely withdraw 4% of your retirement savings annually. So if you need $50,000/year, aim for $1.25 million saved",
+        "Catch-up contributions after age 50 can accelerate your savings: $7,500 extra for 401(k) and $1,000 extra for IRA annually",
+        "Social Security replaces about 40% of pre-retirement income for average earners — plan for the other 60% from savings and investments"
+      ],
+      commonMistakes: [
+        "Starting too late: every decade you delay retirement saving roughly doubles the monthly contribution needed to catch up",
+        "Being too conservative near retirement: you may need 20-30 years of growth in retirement — keeping everything in bonds at 60 may leave you short",
+        "Forgetting healthcare costs: the average 65-year-old couple needs ~$315,000 for healthcare in retirement (not including long-term care)"
+      ],
+      faqs: [
+        { question: "How much do I need to retire?", answer: "A common rule: multiply your desired annual retirement income by 25 (the inverse of the 4% rule). If you want $60,000/year from savings, aim for $1.5 million. Subtract any pension or Social Security from the target. Our retirement calculator lets you enter your exact numbers." },
+        { question: "What's the best age to retire?", answer: "Full Social Security retirement age is 67 for those born after 1960. Claiming at 62 reduces benefits by ~30%. Waiting until 70 increases benefits by ~24% (8% per year after full retirement age). The 'best' age depends on your health, savings, and desired lifestyle." },
+        { question: "Should I use a Roth or Traditional 401(k)/IRA?", answer: "Traditional: tax deduction now, pay taxes in retirement. Roth: pay taxes now, tax-free withdrawals later. Generally: if you expect to be in a higher tax bracket in retirement, use Roth. If lower, use Traditional. Many people split contributions to hedge. See our Roth vs Traditional decision tool." }
+      ]
+    }
+  };
+
   return allCalculators.map((calc) => {
     const steps = generateHowToSteps(calc);
+    const unique = UNIQUE_CONTENT[calc.slug];
 
     return {
       slug: generateGuideSlug(calc.slug),
@@ -211,17 +305,17 @@ export function getAllHowToGuides(): HowToGuide[] {
       h1: `How to Use the ${calc.title} — Step by Step Guide`,
       calculatorId: calc.slug,
       steps,
-      tips: [
+      tips: unique?.tips || [
         "Start with the default values to see how the calculator works before entering your own numbers",
         "Try different scenarios by changing one input at a time to understand its impact",
         "Use the sharing feature to save your results as an image or PDF for record keeping",
       ],
-      commonMistakes: [
+      commonMistakes: unique?.commonMistakes || [
         "Using nominal rates instead of effective annual rates for investment calculations",
         "Forgetting to account for inflation when projecting long-term savings",
         "Not considering taxes on investment gains or retirement withdrawals",
       ],
-      faqs: [
+      faqs: unique?.faqs || [
         {
           question: `Is the ${calc.title} free to use?`,
           answer: `Yes, absolutely. All QFINHUB calculators are 100% free with no sign-up required. No limits on usage.`,
