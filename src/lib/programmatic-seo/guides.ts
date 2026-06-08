@@ -291,6 +291,91 @@ export function getAllHowToGuides(): HowToGuide[] {
         { question: "What's the best age to retire?", answer: "Full Social Security retirement age is 67 for those born after 1960. Claiming at 62 reduces benefits by ~30%. Waiting until 70 increases benefits by ~24% (8% per year after full retirement age). The 'best' age depends on your health, savings, and desired lifestyle." },
         { question: "Should I use a Roth or Traditional 401(k)/IRA?", answer: "Traditional: tax deduction now, pay taxes in retirement. Roth: pay taxes now, tax-free withdrawals later. Generally: if you expect to be in a higher tax bracket in retirement, use Roth. If lower, use Traditional. Many people split contributions to hedge. See our Roth vs Traditional decision tool." }
       ]
+    },
+    "401k-calculator": {
+      tips: [
+        "Max out your 401(k) to at least the employer match — that's free money. The 2026 contribution limit is $23,500 (under 50) or $31,000 (50+)",
+        "Check your fund fees: a 1% fee difference over 30 years can cost you hundreds of thousands in lost compound growth",
+        "Use target-date funds if you want a hands-off approach — they automatically rebalance as you near retirement"
+      ],
+      commonMistakes: [
+        "Cashing out when changing jobs: a $50,000 401(k) cashed out at 30 costs ~$15,000 in taxes/penalties AND loses ~$500,000 in future compound growth",
+        "Only contributing enough to get the match: the match is the minimum, not the goal. Aim for 15% of income",
+        "Forgetting about Required Minimum Distributions (RMDs): starting at age 73, you must withdraw from traditional 401(k)s or face 25% penalties"
+      ],
+      faqs: [
+        { question: "How much should I contribute to my 401(k)?", answer: "At minimum, contribute enough to get the full employer match. Beyond that, aim for 15% of your gross income. At $75,000 salary, that's $11,250/year or ~$938/month. Use our 401(k) calculator to see your projected balance at retirement." },
+        { question: "Traditional 401(k) vs Roth 401(k) — which is better?", answer: "Traditional: pre-tax contributions, taxed in retirement. Roth: after-tax contributions, tax-free withdrawals. If you expect to be in a higher tax bracket later, Roth wins. If lower later, Traditional wins. Many employers now offer both — you can split contributions." },
+        { question: "What happens to my 401(k) when I leave my job?", answer: "Four options: (1) Leave it with your old employer, (2) Roll it into your new employer's plan, (3) Roll it into an IRA, (4) Cash out (NOT recommended — taxes + 10% penalty if under 59½). Rolling into an IRA usually gives you the most investment options and lowest fees." }
+      ]
+    },
+    "credit-card-payoff": {
+      tips: [
+        "The avalanche method (highest APR first) saves the most money. The snowball method (smallest balance first) builds momentum. Both work — pick the one you'll stick with",
+        "A balance transfer to a 0% APR card can save you hundreds in interest, but watch for the 3-5% transfer fee and make sure you can pay it off before the intro period ends",
+        "Even an extra $50/month toward your credit card debt can cut your payoff time by months and save hundreds in interest"
+      ],
+      commonMistakes: [
+        "Only paying the minimum: a $5,000 balance at 22% APR with minimum payments takes 15+ years to pay off and costs $6,000+ in interest",
+        "Closing cards after paying them off: this can hurt your credit score by reducing your available credit and average account age",
+        "Consolidating debt then running up new balances: consolidation only works if you stop using the cards you paid off"
+      ],
+      faqs: [
+        { question: "What's the fastest way to pay off credit card debt?", answer: "The avalanche method: list all cards by APR (highest first), pay minimums on all, and throw every extra dollar at the highest-rate card. Mathematically, this saves the most interest. Use our credit card payoff calculator to see exactly when you'll be debt-free." },
+        { question: "Should I use a personal loan to pay off credit cards?", answer: "If you can get a personal loan at 8-12% APR vs 22%+ on credit cards, yes — you'll save significantly. But close the paid-off cards or freeze them so you don't run up new balances. A $10,000 consolidation at 10% saves ~$6,000 in interest vs 22% over 3 years." },
+        { question: "How does a balance transfer work?", answer: "You transfer existing credit card balances to a new card with a 0% introductory APR (typically 12-18 months). You pay a 3-5% transfer fee upfront. Then you have the intro period to pay off the balance interest-free. Key: have a plan to pay it off before the intro rate expires and the regular APR kicks in." }
+      ]
+    },
+    "loan-calculator": {
+      tips: [
+        "Always compare APR, not just the interest rate — APR includes fees and gives you the true cost of borrowing",
+        "A shorter loan term means higher monthly payments but dramatically less total interest. A 3-year $20,000 loan at 8% costs $2,566 in interest vs $9,038 over 6 years",
+        "Use the loan calculator to test different down payment amounts — a larger down payment reduces your loan amount and monthly payment"
+      ],
+      commonMistakes: [
+        "Focusing only on the monthly payment: dealers and lenders often extend the term to lower the payment, but you pay much more in total interest",
+        "Not checking for prepayment penalties: some loans charge a fee if you pay them off early — always ask before signing",
+        "Forgetting about fees: origination fees (1-6%), late payment fees, and documentation fees can add hundreds to your loan cost"
+      ],
+      faqs: [
+        { question: "How do I calculate my monthly loan payment?", answer: "Use the formula: M = P[r(1+r)^n]/[(1+r)^n-1] where P=principal, r=monthly interest rate, n=number of payments. Example: $20,000 at 8% for 5 years = $405/month. Our loan calculator does this instantly — just enter your amount, rate, and term." },
+        { question: "What's a good interest rate for a personal loan?", answer: "As of 2026, excellent credit (720+) can get rates around 7-12%. Good credit (660-719): 12-18%. Fair credit (600-659): 18-25%. Anything above 25% is predatory — avoid payday loans and title loans at all costs." },
+        { question: "Should I get a fixed or variable rate loan?", answer: "Fixed rate: your payment stays the same for the life of the loan. Best for most borrowers. Variable rate: starts lower but can increase based on market rates. Only choose variable if you can afford the maximum possible payment and plan to pay off the loan quickly." }
+      ]
+    },
+    "budget-planner": {
+      tips: [
+        "The 50/30/20 rule: 50% needs, 30% wants, 20% savings/debt payoff. This is a starting point — adjust based on your goals",
+        "Track every expense for 30 days before setting your budget. Most people underestimate spending by 20-30% when guessing",
+        "Use the budget planner monthly — your expenses change with seasons, life events, and inflation"
+      ],
+      commonMistakes: [
+        "Setting an unrealistically tight budget: if you cut too much too fast, you'll abandon the budget within weeks. Start with small changes",
+        "Forgetting irregular expenses: car repairs, medical bills, gifts, and annual subscriptions need to be budgeted monthly (divide annual cost by 12)",
+        "Not giving yourself any fun money: a budget that has zero room for entertainment or hobbies is unsustainable. Budget for joy, not just survival"
+      ],
+      faqs: [
+        { question: "How do I create a budget that I'll actually stick to?", answer: "Start with the 50/30/20 framework. Track your actual spending for 30 days first. Then set realistic limits — if you currently spend $600/month on dining out, don't cut to $100 overnight. Reduce by $100/month until you hit your target. Use our budget planner to visualize where your money goes." },
+        { question: "What's the difference between fixed and variable expenses?", answer: "Fixed: rent, mortgage, car payment, insurance, subscriptions — same amount every month. Variable: groceries, gas, dining out, entertainment — changes monthly. Budget fixed expenses first, then set realistic caps for variable categories." },
+        { question: "How much should I save each month?", answer: "Aim for 20% of gross income following the 50/30/20 rule. At $60,000 salary, that's $1,000/month. If 20% is too much, start with 10% and increase 1% every 3 months. Priority order: $1,000 emergency fund → employer 401(k) match → high-interest debt → full emergency fund → max retirement accounts." }
+      ]
+    },
+    "investment-return": {
+      tips: [
+        "The S&P 500 has returned ~10% annually before inflation (~7% after) over the long term, but any single year can be -30% or +30%",
+        "Fees matter enormously: a 2% annual fee vs 0.1% on $100,000 invested for 30 years at 7% costs you $190,000 in lost growth",
+        "Dollar-cost averaging (investing the same amount regularly) reduces the risk of buying at market peaks"
+      ],
+      commonMistakes: [
+        "Chasing past performance: last year's top fund is rarely this year's top fund. Past returns don't predict future results",
+        "Panic-selling during market drops: investors who stayed invested through the 2008 crash recovered all losses within 3 years. Those who sold at the bottom locked in permanent losses",
+        "Ignoring taxes: capital gains taxes can take 15-20% of your investment profits. Use tax-advantaged accounts (IRA, 401k) when possible"
+      ],
+      faqs: [
+        { question: "What's a good annual return on investment?", answer: "The historical average for the S&P 500 is ~10% nominal (7% after inflation). A 'good' return depends on your risk tolerance. Conservative portfolios (bonds) may earn 3-5%. Aggressive portfolios (stocks) may earn 8-12% long-term. Use our investment return calculator to model different scenarios." },
+        { question: "How do I calculate my investment return?", answer: "ROI = (Current Value - Initial Investment) / Initial Investment × 100. Example: $10,000 grows to $13,000 = 30% total return. For annualized return: use CAGR = (Ending Value / Starting Value)^(1/years) - 1. Our calculator does both instantly." },
+        { question: "What's the difference between nominal and real return?", answer: "Nominal return is the raw percentage gain. Real return adjusts for inflation. Example: 8% nominal return with 3% inflation = ~5% real return. Always plan retirement using real (inflation-adjusted) returns — your future expenses will be in future dollars." }
+      ]
     }
   };
 
