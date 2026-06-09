@@ -22,6 +22,7 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "rent-vs-buy-which-is-better", title: "Rent vs Buy: Which Is Better for Your Financial Situation?" },
     { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
     { slug: "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", title: "ECB Rate Hike 2026: What It Means for YOUR Mortgage" },
+    { slug: "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings", title: "Core Inflation at 3.3%: What It Means for Mortgage and Savings" },
   ],
   "compound-interest": [
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
@@ -72,6 +73,7 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "tax-tips-007-first-light-metacritic-smart-financial-planning", title: "Tax Tips: Smart Financial Planning Strategies for 2026" },
     { slug: "capital-gains-tax-explained-rates-and-strategies", title: "Capital Gains Tax Explained: Rates and Strategies for 2026" },
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
+    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
   ],
   "401k-calculator": [
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
@@ -103,5 +105,24 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
+  ],
+  "debt-snowball": [
+    { slug: "debt-snowball-vs-debt-avalanche", title: "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?" },
+    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+  ],
+  "savings-goal": [
+    { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
+    { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
+    { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+  ],
+  "refinance-calculator": [
+    { slug: "when-to-refinance-your-mortgage-complete-guide-2026", title: "When Should You Refinance Your Mortgage? Complete Guide (2026)" },
+    { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment (2026 Guide)" },
+    { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
+  ],
+  "social-security": [
+    { slug: "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now", title: "2027 Social Security COLA Forecast Jumps to 3.9%" },
+    { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
+    { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
   ],
 };
