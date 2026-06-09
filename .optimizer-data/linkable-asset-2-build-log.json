@@ -1,0 +1,34 @@
+{
+  "title": "Linkable Asset #2 Build Log \u2014 Debt Snowball vs Avalanche Widget",
+  "generated": "2026-06-07T00:08:35Z",
+  "asset": "debt-snowball-vs-avalanche-embed",
+  "url": "/widgets/debt-snowball-vs-avalanche-embed",
+  "status": "BUILT + DEPLOYED",
+  "build_steps_completed": [
+    "Created widget landing page (src/app/widgets/debt-snowball-vs-avalanche-embed/page.tsx)",
+    "Added to sitemap.ts (priority 0.7, weekly)",
+    "Build verified (Next.js static route confirmed)",
+    "Git pushed (commit 4e512c4)",
+    "Live preview: side-by-side iframe comparison",
+    "Embed code: 2 options (side-by-side + single calculator)",
+    "Comparison table: Snowball vs Avalanche at a glance",
+    "Use cases: 6 audience types (PF bloggers, debt communities, credit counselors, educators, FIRE, credit unions)",
+    "FAQ: 6 items with schema markup",
+    "Internal links: 6 (debt-payoff, debt-snowball, snowball-vs-avalanche decision, credit-card-payoff, pay-off-debt-or-invest decision, calculators hub)",
+    "Privacy notice: no data collection assurance",
+    "Contact CTA: email + contact form",
+    "Schema: WebApplication + FAQPage + BreadcrumbList"
+  ],
+  "verification_pending": [
+    "15-point checklist (linkable-asset-verification-checklist.md)",
+    "Confirm index,follow meta in deployed HTML",
+    "Confirm self-canonical",
+    "Confirm in sitemap",
+    "Confirm live preview iframes work",
+    "Confirm analytics tracking",
+    "Confirm mobile responsiveness"
+  ],
+  "auditor_score": 90,
+  "auditor_notes": "Strong content: comparison table, 6 use cases, 6 FAQ items. Good internal link network to debt calculators. Two embed options increases adoption flexibility. Following proven widget pattern from asset #1.",
+  "deploy_commit": "4e512c4"
+}

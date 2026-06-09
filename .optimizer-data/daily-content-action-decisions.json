@@ -1,0 +1,411 @@
+{
+  "report": "Daily Content Action Decisions",
+  "generated": "2026-06-08T02:08:04.903702Z",
+  "top_actions": [
+    {
+      "query": "how much house can i afford",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford calculator",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford with 100k salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford with 150k salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford with 200k salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford with 80k salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford based on salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford with 60k salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much house can i afford with 120k salary",
+      "score": 83,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/decision/how-much-house-can-i-afford",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator mortgage",
+      "score": 82,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "debt snowball vs avalanche",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/debt-snowball-vs-avalanche",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional ira",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional 401k",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional tsp",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional ira reddit",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional ira vs 401k",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "roth vs traditional 401k reddit",
+      "score": 76,
+      "action": "ADD_FAQ_SECTION",
+      "match_page": "/calculators/roth-vs-traditional",
+      "intent": "decision",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator",
+      "score": 75,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator car",
+      "score": 75,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator house",
+      "score": 75,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator canada",
+      "score": 75,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator philippines",
+      "score": 75,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "down payment calculator for mobile",
+      "score": 75,
+      "action": "TITLE_META_CTR_FIX",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "calculator",
+      "source": "google_suggest"
+    },
+    {
+      "query": "how much mortgage calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "should i mortgage calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "can i mortgage calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "when to mortgage calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "is it worth mortgage calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "how much mortgage affordability",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-affordability",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "should i mortgage affordability",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-affordability",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "can i mortgage affordability",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-affordability",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "when to mortgage affordability",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-affordability",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "is it worth mortgage affordability",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/mortgage-affordability",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "how much debt payoff calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/debt-payoff",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "should i debt payoff calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/debt-payoff",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "can i debt payoff calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/debt-payoff",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "when to debt payoff calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/debt-payoff",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "is it worth debt payoff calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/debt-payoff",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "how much 401k calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/401k-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "should i 401k calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/401k-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "can i 401k calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/401k-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "when to 401k calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/401k-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "is it worth 401k calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/401k-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "how much ira calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/ira-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "should i ira calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/ira-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "can i ira calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/ira-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "when to ira calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/ira-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "is it worth ira calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/ira-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    },
+    {
+      "query": "how much tax calculator",
+      "score": 74,
+      "action": "INTERNAL_LINK_PUSH",
+      "match_page": "/calculators/tax-calculator",
+      "intent": "decision",
+      "source": "question_variation"
+    }
+  ],
+  "action_counts": {
+    "TITLE_META_CTR_FIX": 7,
+    "INTERNAL_LINK_PUSH": 26,
+    "ADD_FAQ_SECTION": 17
+  }
+}

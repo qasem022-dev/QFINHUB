@@ -1,0 +1,9 @@
+{
+  "source": "Qasem manual GSC UI check — Jun 7, 2026",
+  "last_calibrated": "2026-06-07",
+  "api_at_calibration": {"impressions": 304, "clicks": 0, "position": 33.2},
+  "ui_at_calibration": {"impressions": 436, "clicks": 0, "position": 29.4, "indexed_pages": 238},
+  "factor_impressions": 1.434,
+  "factor_position": 0.886,
+  "note": "API underreports impressions by 30.3%. Apply 1.434x for corrected estimate. Position is OVER-estimated by API (33.2 vs 29.4 actual) — apply 0.886x."
+}

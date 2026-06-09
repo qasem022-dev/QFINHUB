@@ -1,0 +1,41 @@
+{
+  "title": "GSC API Failure Reporting Rules",
+  "version": "1.0.0",
+  "effective": "2026-06-07T06:00:00+03:00",
+  "rules": {
+    "on_token_expired": {
+      "action": "Run scripts/refresh-gsc-token.py. If fails, mark GSC_API_UNAVAILABLE.",
+      "report": "GSC_API_UNAVAILABLE — token refresh failed.",
+      "do_not": "Use cached data as live. Report impressions/clicks as current."
+    },
+    "on_auth_error_401_403": {
+      "action": "Refresh token. If refresh fails, alert Qasem for re-auth.",
+      "report": "GSC_API_UNAVAILABLE — authentication failed. Qasem re-auth needed.",
+      "do_not": "Fall back to cached/manual data as automated source."
+    },
+    "on_rate_limit_429": {
+      "action": "Wait 60s, retry once. If still 429, mark GSC_API_UNAVAILABLE.",
+      "report": "GSC_API_UNAVAILABLE — rate limited."
+    },
+    "on_api_delayed": {
+      "action": "Report API_AVAILABLE_THROUGH_DATE with the last date that has complete data.",
+      "report": "API_AVAILABLE_THROUGH_DATE: {date}. Latest available date.",
+      "do_not": "Claim data is 'live' if it's delayed."
+    },
+    "on_cache_fallback": {
+      "rule": "NEVER use cached files as live data. If cache is the only source, mark STALE_AND_NOT_TRUSTED. Do not report as current.",
+      "allowed": "Historical comparison only."
+    },
+    "on_success": {
+      "status": "LIVE_API_OK",
+      "report": "Use gsc-api-truth-current.json as the single source of truth."
+    },
+    "performance_claims_without_api": {
+      "rule": "If GSC API is unavailable, do NOT report impressions, clicks, CTR, or position as current data. Say GSC_API_UNAVAILABLE.",
+      "allowed_tasks": "Continue non-GSC tasks (indexing, internal links, outreach, deploys). Only block tasks that require fresh GSC data."
+    },
+    "manual_ui_values": {
+      "rule": "Qasem's manual checks are USER-OBSERVED COMPARISONS. They are NOT pipeline truth. Mention only as comparison, never as replacement."
+    }
+  }
+}

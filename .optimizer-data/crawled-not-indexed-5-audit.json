@@ -1,0 +1,142 @@
+{
+  "report": "Crawled - Currently Not Indexed — 5 URL Audit",
+  "generated": "2026-06-08",
+  "group": "Crawled - currently not indexed",
+  "validation_status": "Failed",
+  "source": "Google systems",
+  "total_urls": 5,
+  "note": "1 URL is favicon.ico (Google artifact, ignore). 3 are noindexed scenario pages. 1 is a guide page at quality risk.",
+
+  "diagnosis": [
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-social-security",
+      "http_status": 200,
+      "canonical": "https://www.qfinhub.com/guides/how-to-use-social-security (self)",
+      "robots": "index, follow",
+      "has_noindex": false,
+      "word_count": 7590,
+      "in_sitemap": true,
+      "last_crawled": "30 May 2026",
+      "page_type": "guide",
+      "classification": "IMPORTANT_IMPROVE",
+      "rationale": "Page is indexable (index,follow), in sitemap, 7,590 words — but Google crawled and rejected. Quality/content gap. Guide needs: better short answer, real examples, FAQ section, calculator CTA, schema markup.",
+      "is_important": true,
+      "impressions_clicks": "Unknown (no GSC performance data for this URL separately)",
+      "duplicate_risk": "Low — unique guide topic",
+      "internal_links": "Linked from /guides listing page, has CalculatorGuideLinks component",
+
+      "recommended_improvements": [
+        "Add concise 'Key Takeaway' summary at top (50-80 words) — Google's short-answer extraction",
+        "Add real-world example: 'Meet Sarah, age 62, earning $85K...' with specific numbers",
+        "Add FAQ section with schema markup (FAQPage structured data)",
+        "Add calculator CTA: 'Try our Retirement & Social Security Calculator →'",
+        "Add 2-3 related internal links to calculators (retirement-planning, 401k-calculator, tax-calculator)",
+        "Improve readability: shorter paragraphs, bullet points, key terms bolded",
+        "Add author/expertise signals (author bio, last reviewed date)",
+        "Add table/chart: 'Social Security Benefits by Age (62 vs 67 vs 70)'"
+      ]
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/auto-loan-717d83b1",
+      "http_status": 200,
+      "canonical": "https://www.qfinhub.com/scenario/auto-loan-717d83b1 (self)",
+      "robots": "noindex, follow",
+      "has_noindex": true,
+      "word_count": 7486,
+      "in_sitemap": true,
+      "last_crawled": "28 May 2026",
+      "page_type": "scenario",
+      "classification": "LOW_VALUE_NO_ACTION",
+      "rationale": "Already noindexed. Google crawled it, saw noindex tag, and correctly didn't index. Listed under 'crawled not indexed' because Google crawled before/after noindex was deployed. Page is 7,486 words of auto-generated scenario content — low unique value. Should be removed from sitemap to stop Google from discovering/crawling it.",
+      "is_important": false,
+      "recommended_action": "Remove from sitemap"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/auto-loan-92918ea9",
+      "http_status": 200,
+      "canonical": "https://www.qfinhub.com/scenario/auto-loan-92918ea9 (self)",
+      "robots": "noindex, follow",
+      "has_noindex": true,
+      "word_count": 7458,
+      "in_sitemap": true,
+      "last_crawled": "28 May 2026",
+      "page_type": "scenario",
+      "classification": "LOW_VALUE_NO_ACTION",
+      "rationale": "Same as above — auto-generated scenario, noindexed, should be removed from sitemap.",
+      "is_important": false,
+      "recommended_action": "Remove from sitemap"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b",
+      "http_status": 200,
+      "canonical": "https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b (self)",
+      "robots": "noindex, follow",
+      "has_noindex": true,
+      "word_count": 7376,
+      "in_sitemap": true,
+      "last_crawled": "28 May 2026",
+      "page_type": "scenario",
+      "classification": "LOW_VALUE_NO_ACTION",
+      "rationale": "Same as above — auto-generated scenario, noindexed, should be removed from sitemap.",
+      "is_important": false,
+      "recommended_action": "Remove from sitemap"
+    },
+    {
+      "url": "https://www.qfinhub.com/favicon.ico",
+      "http_status": 200,
+      "page_type": "static asset",
+      "classification": "GOOGLE_ARTIFACT_IGNORE",
+      "rationale": "favicon.ico is a browser asset, not a page. Google shouldn't be trying to index it. Artifact of Google's crawler being overly thorough. No action needed — Google will naturally drop it.",
+      "is_important": false,
+      "recommended_action": "Ignore. If persistent, add X-Robots-Tag: noindex to favicon.ico responses."
+    }
+  ],
+
+  "classification_summary": {
+    "IMPORTANT_IMPROVE": 1,
+    "LOW_VALUE_NO_ACTION": 3,
+    "GOOGLE_ARTIFACT_IGNORE": 1,
+    "DUPLICATE_CONSOLIDATE": 0,
+    "OFF_TOPIC_NO_INDEX_REVIEW": 0,
+    "TECHNICAL_FIX_NEEDED": 0
+  },
+
+  "why_validation_failed": "Google's validation 'Failed' for crawled-not-indexed because: (a) 3 scenario pages are still noindexed but in sitemap — Google crawled, saw noindex, didn't index — correct; (b) 1 guide page was crawled but Google's quality assessment rejected it; (c) 1 is favicon.ico artifact.",
+
+  "decision": "HOLD — DO NOT VALIDATE until improvements deployed",
+  "decision_rationale": [
+    "3/5 are already noindexed — validating would be pointless (google already confirmed noindex)",
+    "1/5 is favicon.ico — Google artifact, ignore",
+    "1/5 is guide page needing quality improvements — validate ONLY after improvements deployed + 7 days",
+    "Remove 3 scenario pages from sitemap to stop Google from discovering them",
+    "Improve Social Security guide content before considering validation"
+  ],
+
+  "fix_priority": [
+    {
+      "priority": 1,
+      "action": "Remove 3 noindexed scenario pages from sitemap.xml",
+      "urls": [
+        "/scenario/auto-loan-717d83b1",
+        "/scenario/auto-loan-92918ea9",
+        "/scenario/retirement-planning-eb1dd78b"
+      ],
+      "effort": "Low",
+      "safe": true
+    },
+    {
+      "priority": 2,
+      "action": "Improve Social Security guide content quality",
+      "url": "/guides/how-to-use-social-security",
+      "effort": "Medium",
+      "safe": true,
+      "improvements": [
+        "Add concise Key Takeaway (50-80 words)",
+        "Add real-world example with specific numbers",
+        "Add FAQ structured data (FAQPage schema)",
+        "Add calculator CTA",
+        "Improve paragraph structure and readability"
+      ]
+    }
+  ]
+}

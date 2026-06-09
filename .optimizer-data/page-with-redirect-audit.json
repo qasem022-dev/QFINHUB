@@ -1,0 +1,42 @@
+{
+  "report": "Page with Redirect — 1 URL Audit",
+  "generated": "2026-06-08",
+  "group": "Page with redirect",
+  "validation_status": "Failed",
+  "source": "Website",
+  "total_urls": 1,
+
+  "finding": "KEEP_REDIRECT — The /hi route returns HTTP 307 Temporary Redirect to /?lang=hi. This is correct and intentional. No fix needed.",
+
+  "diagnosis": {
+    "url": "https://www.qfinhub.com/hi",
+    "http_status": 307,
+    "redirect_type": "Temporary Redirect (307)",
+    "redirect_chain": ["/hi → (307) → /?lang=hi"],
+    "final_destination": "https://www.qfinhub.com/?lang=hi (HTTP 200)",
+    "final_destination_canonical": "https://www.qfinhub.com/",
+    "in_sitemap": false,
+    "internal_links_to_source": "None found",
+    "nextjs_route_exists": false,
+    "handled_by": "Likely Next.js redirect config or proxy.ts rewrite",
+    "is_intentional": true,
+    "redirect_target_correct": true
+  },
+
+  "classification": "KEEP_REDIRECT_NO_VALIDATE",
+
+  "why_validation_failed": "Google's validation 'Failed' because the page STILL redirects — which is correct behavior. Google confirmed the redirect exists and is working. Since redirected pages don't get indexed, GSC reports it as an issue group, but the redirect itself is working as intended.",
+
+  "decision": "HOLD — DO NOT VALIDATE",
+  "decision_rationale": [
+    "Redirect is intentional (likely legacy Hindi language route)",
+    "Target /?lang=hi is correct",
+    "Not in sitemap — no discovery issue",
+    "No internal links point to /hi — no user impact",
+    "307 Temporary Redirect is appropriate for language variants",
+    "Re-validating would waste Google's recrawl quota and fail again (redirect still exists)",
+    "This is not a bug — it's expected behavior for a redirect route"
+  ],
+
+  "recommended_action": "No action needed. The redirect is working correctly. If you want GSC to stop reporting it, the only option is to remove the redirect entirely (not recommended — might break legacy links). Alternatively, change to 301 Permanent Redirect if the route truly won't come back, but 307 is fine for language variants."
+}

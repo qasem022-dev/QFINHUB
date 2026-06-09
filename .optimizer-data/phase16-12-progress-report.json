@@ -1,0 +1,81 @@
+{
+  "title": "Phase 16.12 — Full Sitemap URL Inspection + T1 Ranking Failure Diagnosis — PROGRESS REPORT",
+  "generated": "2026-06-07T05:10:00+03:00",
+  "phase": "16.12",
+  "status": "IN PROGRESS — Inspection running (76/649). T1 diagnosis COMPLETE. Quick wins APPLIED.",
+  
+  "task_status": {
+    "task1_inventory": {"status": "✅ COMPLETE", "file": ".optimizer-data/full-sitemap-url-inventory.json", "result": "649 URLs classified across 21 page types"},
+    "task2_inspection": {"status": "🔄 RUNNING", "file": ".optimizer-data/full-url-inspection-results.json", "result": "76/649 inspected, 0 errors. ETA ~53 min remaining.", "current_coverage": {"indexed": 19, "discovered_not_indexed": 36, "unknown_to_google": 20, "duplicate_canonical": 1}},
+    "task3_grouping": {"status": "⏳ PENDING — waits for Task 2 completion"},
+    "task4_gap_analysis": {"status": "⏳ PENDING — waits for Task 2 completion"},
+    "task5_t1_diagnosis": {"status": "✅ COMPLETE", "file": ".optimizer-data/tier1-calculator-ranking-failure-diagnosis.json"},
+    "task6_serp_snapshot": {"status": "✅ COMPLETE", "file": ".optimizer-data/tier1-serp-competitor-snapshot.json"},
+    "task7_fix_plan": {"status": "⏳ PENDING"},
+    "task8_quick_wins": {"status": "✅ 2 CTR TITLES APPLIED", "result": "investment-return + tax-calculator now have CTR-optimized titles in page.tsx ctrTitles map"},
+    "task9_validate_fix": {"status": "⏳ PENDING"},
+    "task10_scoreboard": {"status": "⏳ PENDING"},
+    "task11_deploy": {"status": "⏳ PENDING — code changed but not deployed"},
+    "task12_final_report": {"status": "⏳ PENDING"}
+  },
+
+  "partial_inspection_findings_76_urls": {
+    "total_inspected": 76,
+    "coverage_breakdown": {
+      "indexed_submitted": {"count": 19, "pct": 25.0, "description": "Pages confirmed indexed by Google"},
+      "discovered_not_indexed": {"count": 36, "pct": 47.4, "description": "Google knows about these URLs but hasn't indexed them yet — normal for a young site"},
+      "unknown_to_google": {"count": 20, "pct": 26.3, "description": "Google doesn't even know these URLs exist — they're in sitemap but not discovered"},
+      "duplicate_canonical": {"count": 1, "pct": 1.3, "description": "Google chose a different canonical than we declared"}
+    },
+    "early_warning": "47.4% of inspected URLs are 'Discovered - not indexed'. For a 6-month-old site this is high but explainable by low domain authority — Google crawls but doesn't index without trust signals."
+  },
+  
+  "tier1_diagnosis_summary": {
+    "finding": "All 3 buried T1 calculators (retirement-planning, investment-return, tax-calculator) are INDEXED but rank at positions 71-99 due to DOMAIN AUTHORITY CEILING, not on-page issues.",
+    "primary_root_cause": "6-month-old domain with 0 backlinks cannot compete for head terms against DR 70-100 competitors (NerdWallet, Bankrate, Calculator.net, IRS.gov, SmartAsset)",
+    "secondary_causes": {
+      "investment_return": "Generic title + self-promotional meta",
+      "tax_calculator": "Generic title + query-year mismatch (getting 2022/2023 traffic on 2026 page)",
+      "retirement_planning": "Well-optimized but ceiling is domain authority"
+    },
+    "fixes_applied": [
+      "Added CTR-optimized title for investment-return: 'See Your Money Grow: Free Investment Return Calculator (2026)'",
+      "Added CTR-optimized title for tax-calculator: 'Estimate Your Tax Bill: Free 2026 Tax Calculator'"
+    ],
+    "expected_impact": "Marginal — titles help CTR but won't overcome domain authority gap. Real ranking improvement requires backlinks over 3-12 months."
+  },
+  
+  "serp_competitor_summary": {
+    "finding": "All 3 head terms are dominated by DR 70-100 sites with 250-5,000+ backlinks. QFINHUB (DR ~0-5) cannot compete directly for 12-24 months.",
+    "strategy_recommendation": "Target long-tail informational queries with supporting content. Build domain authority through backlinks. Revisit head terms when DR reaches 40+."
+  },
+
+  "quick_wins_executed": {
+    "ctr_titles": {
+      "file": "src/app/calculators/[slug]/page.tsx",
+      "changes": [
+        "Added investment-return CTR-optimized title + meta",
+        "Added tax-calculator CTR-optimized title + meta"
+      ],
+      "deployed": false,
+      "note": "Code change applied but NOT yet deployed. Requires git commit + push."
+    }
+  },
+
+  "next_steps": {
+    "immediate": "Wait for inspection to complete → run Tasks 3-4 (grouping + gap analysis)",
+    "deploy": "git commit CTR title fixes + push to deploy",
+    "phase_16_13": "Based on inspection results: prioritize indexing improvements for discovered-not-indexed pages, apply FAQ schema, build content for query-mismatch pages"
+  },
+
+  "compliance": {
+    "no_indexing_api": true,
+    "no_mass_gsc_ui_request": true,
+    "no_stale_data": true,
+    "no_old_automations": true,
+    "no_haro": true,
+    "no_pdfs": true,
+    "no_pinterest": true,
+    "no_mass_content": true
+  }
+}

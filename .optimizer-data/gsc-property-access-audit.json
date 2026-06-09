@@ -1,0 +1,11 @@
+{
+  "title": "GSC Property Access Audit",
+  "generated": "2026-06-07T02:54:27Z",
+  "total_properties": 1,
+  "properties": [
+    {
+      "siteUrl": "https://www.qfinhub.com/",
+      "permissionLevel": "siteOwner"
+    }
+  ]
+}

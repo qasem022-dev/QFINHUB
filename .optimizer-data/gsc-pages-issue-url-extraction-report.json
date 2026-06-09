@@ -1,0 +1,91 @@
+{
+  "generated": "2026-06-08T03:49:22.536177",
+  "groups": [
+    {
+      "issue_group": "Discovered - currently not indexed",
+      "gsc_category": "not_indexed",
+      "gsc_count": 162,
+      "urls_extracted": 162,
+      "extraction_method": "URL Inspection API via urlInspection/index:inspect",
+      "extraction_completeness": "PARTIAL",
+      "reason": "Extracted from 368 real inspections out of 647 sitemap URLs. 162 URLs have this coverage state.",
+      "page_types": {
+        "calculator-T3": 60,
+        "blog": 43,
+        "tool": 36,
+        "guide": 13,
+        "calculator-T2": 4,
+        "privacy": 1,
+        "terms": 1,
+        "about": 1,
+        "contact": 1,
+        "compare-hub": 1
+      }
+    },
+    {
+      "issue_group": "URL is unknown to Google",
+      "gsc_category": "not_indexed",
+      "gsc_count": 111,
+      "urls_extracted": 111,
+      "extraction_method": "URL Inspection API via urlInspection/index:inspect",
+      "extraction_completeness": "PARTIAL",
+      "reason": "Extracted from 368 real inspections out of 647 sitemap URLs. 111 URLs have this coverage state.",
+      "page_types": {
+        "calculator-T3": 39,
+        "tool": 37,
+        "blog": 23,
+        "guide": 7,
+        "unknown": 2,
+        "guides-hub": 1,
+        "widget": 1,
+        "calculator-T2": 1
+      }
+    },
+    {
+      "issue_group": "Submitted and indexed",
+      "gsc_category": "indexed",
+      "gsc_count": 93,
+      "urls_extracted": 93,
+      "extraction_method": "URL Inspection API via urlInspection/index:inspect",
+      "extraction_completeness": "PARTIAL",
+      "reason": "Extracted from 368 real inspections out of 647 sitemap URLs. 93 URLs have this coverage state.",
+      "page_types": {
+        "blog": 40,
+        "decision": 15,
+        "calculator-T1": 10,
+        "tool": 10,
+        "calculator-T3": 8,
+        "guide": 4,
+        "calculators-hub": 1,
+        "disclaimer": 1,
+        "unknown": 1,
+        "widget": 1
+      }
+    },
+    {
+      "issue_group": "Duplicate, Google chose different canonical than user",
+      "gsc_category": "not_indexed",
+      "gsc_count": 1,
+      "urls_extracted": 1,
+      "extraction_method": "URL Inspection API via urlInspection/index:inspect",
+      "extraction_completeness": "PARTIAL",
+      "reason": "Extracted from 368 real inspections out of 647 sitemap URLs. 1 URLs have this coverage state.",
+      "page_types": {
+        "calculator-T3": 1
+      }
+    },
+    {
+      "issue_group": "Alternate page with proper canonical tag",
+      "gsc_category": "not_indexed",
+      "gsc_count": 1,
+      "urls_extracted": 1,
+      "extraction_method": "URL Inspection API via urlInspection/index:inspect",
+      "extraction_completeness": "PARTIAL",
+      "reason": "Extracted from 368 real inspections out of 647 sitemap URLs. 1 URLs have this coverage state.",
+      "page_types": {
+        "calculator-T3": 1
+      }
+    }
+  ],
+  "total_extracted": 368
+}

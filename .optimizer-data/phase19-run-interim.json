@@ -1,0 +1,37 @@
+{
+  "health_Homepage": "200",
+  "health_Sitemap": "200",
+  "health_Robots": "200",
+  "health_Scenario Sitemap": "200",
+  "ads_txt": true,
+  "gsc": {
+    "impressions": 193,
+    "clicks": 0,
+    "ctr": 0.0,
+    "avg_position": 53.6,
+    "queries": 60
+  },
+  "zero_click_pages": 10,
+  "zero_click_top5": [
+    {
+      "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 75
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/retirement-planning",
+      "impressions": 41
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/investment-return",
+      "impressions": 32
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax-calculator",
+      "impressions": 27
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "impressions": 5
+    }
+  ]
+}

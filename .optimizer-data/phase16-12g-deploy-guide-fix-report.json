@@ -1,0 +1,97 @@
+{
+  "report": "Phase 16.12G — Deploy Verification + Crawled-Not-Indexed Guide Fix",
+  "generated": "2026-06-08 05:00 UTC",
+  "phase": "16.12G",
+  "status": "COMPLETE",
+  "previous_phase": "16.12F (Failed Groups Root Cause Fix)",
+
+  "summary": "Verified GitHub → Vercel auto-deploy is working perfectly (no deploy hook needed). Confirmed sitemap fix from 16.12F is live. Fixed Social Security guide: cleaned keyword-stuffed meta title + added Article schema. Both fixes affect all 125 guides site-wide.",
+
+  "tasks": {
+    "TASK_1_vercel_deploy": {
+      "status": "COMPLETE",
+      "finding": "GitHub auto-deploy IS configured and working",
+      "deploy_hook_needed": false,
+      "latest_deploy": {
+        "commit": "fda6ba7 (Phase 16.12G)",
+        "state": "READY",
+        "substate": "PROMOTED",
+        "deploy_time": "~100 seconds from push",
+        "production": "https://www.qfinhub.com"
+      },
+      "verification": "Vercel API v6 confirmed deployment matching latest commit SHA"
+    },
+    "TASK_2_sitemap_verification": {
+      "status": "COMPLETE",
+      "sitemap_fix_live": true,
+      "excluded_urls_verified": [
+        "auto-loan-717d83b1 — excluded ✓",
+        "auto-loan-92918ea9 — excluded ✓",
+        "retirement-planning-eb1dd78b — excluded ✓"
+      ],
+      "scenario_sitemap": "Empty (0 URLs) — V2 correction confirmed",
+      "internal_links": "None found to excluded pages",
+      "live_page_status": {
+        "/tools/auto-loan-*": "HTTP 404 + noindex — correctly excluded",
+        "/scenario/auto-loan-*": "HTTP 200 + noindex,follow — correctly noindexed"
+      }
+    },
+    "TASK_3_guide_fix": {
+      "status": "COMPLETE",
+      "guide_url": "/guides/how-to-use-social-security",
+      "fixes": [
+        "Meta title: 'Social Security Calculator Guide 2026 — Calculate in 30 Seconds...' → 'Social Security — Step-by-Step Guide 2026 (Free Calculator)'",
+        "Schema: Added Article type (alongside existing WebApplication)"
+      ],
+      "deployed_live": true,
+      "verified_title": true,
+      "verified_schema": true,
+      "validate_fix": "HOLD — wait 7+ days for Google recrawl"
+    },
+    "TASK_4_validate_monitor": {
+      "status": "COMPLETE",
+      "groups_tracked": 7,
+      "validated": 1,
+      "held": 5,
+      "never_validate": 2,
+      "in_progress": 0
+    },
+    "TASK_5_post_deploy": {
+      "status": "COMPLETE",
+      "all_12_urls": "HTTP 200",
+      "auto_deploy": "Working (no hook needed)",
+      "sitemap_live": true,
+      "risky_automations": "All confirmed disabled"
+    }
+  },
+
+  "gsc_pages_report_final_status": {
+    "indexed": 238,
+    "not_indexed": 2052,
+    "groups": {
+      "404s": {"pages": 5, "validation": "Started", "action": "Monitor — should resolve ~Jun 15-22"},
+      "alt_canonical": {"pages": 33, "validation": "Failed", "action": "HOLD — correct behavior"},
+      "redirect": {"pages": 1, "validation": "Failed", "action": "HOLD — correct behavior"},
+      "crawled_not_indexed": {"pages": 5, "validation": "Failed", "action": "HOLD — 3 sitemap FIXED, 1 guide IMPROVED, 1 favicon"},
+      "noindex": {"pages": 16, "validation": "Not Started", "action": "NEVER — intentional"},
+      "discovered": {"pages": 1991, "validation": "Not Started", "action": "NEVER — quality gate"},
+      "duplicate_canonical": {"pages": 1, "validation": "Started", "action": "Monitor — Google processing"}
+    }
+  },
+
+  "code_changes_this_phase": [
+    "src/lib/programmatic-seo/guides.ts — Clean meta title generation (commit fda6ba7)",
+    "src/app/guides/[slug]/page.tsx — Add Article structured data (commit fda6ba7)"
+  ],
+
+  "safety_confirmations": {
+    "no_google_indexing_api": true,
+    "no_blind_validation": true,
+    "no_risky_automations": true,
+    "no_deploy_hook_created": true,
+    "github_auto_deploy_confirmed": true,
+    "all_fixes_safe": true
+  },
+
+  "key_discovery": "GitHub → Vercel auto-deploy works perfectly. Push to main = automatic deploy in ~100 seconds. No deploy hook needed — previous deploy failures were from missing hook config, not broken integration."
+}

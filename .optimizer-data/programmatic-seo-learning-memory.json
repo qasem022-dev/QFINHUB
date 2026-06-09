@@ -1,0 +1,43 @@
+{
+  "report": "Programmatic SEO Learning Memory",
+  "generated": "2026-06-08",
+  "phase": "18",
+  "updated": "2026-06-08T06:40:00Z",
+
+  "patterns": {
+    "guides_discovered_not_indexed": {
+      "count": 13,
+      "likely_cause": "Guides have decent content but Google hasn't crawled them. Phase 16.12G fixes (title + schema) should help.",
+      "fix_deployed": "Phase 16.12G — meta title cleanup + Article schema for all 125 guides",
+      "measurement_due": "Check GSC in 14 days for guide indexation changes"
+    },
+    "tools_no_demand": {
+      "count": 225,
+      "classification": "Tier 2/3 programmatic tools with no search demand",
+      "action": "Consolidation review — do NOT mass-delete. Review individually."
+    },
+    "blogs_ctr_zero": {
+      "count": 8,
+      "likely_cause": "Blogs have impressions but no clicks — weak title/meta or answer cannibalization",
+      "action": "CTR fix via Phase 17 daily execution"
+    }
+  },
+
+  "templates_working_well": [
+    "Decision pages — strong content, good FAQ, indexed",
+    "Core calculators — indexed, well-linked",
+    "Guide template — good structure (FAQ, examples, links) but needs crawl"
+  ],
+
+  "templates_needing_rework": [
+    "Tool variant template — low unique value, mass-generated",
+    "Comparison template — moderate value, needs FAQ + examples"
+  ],
+
+  "keywords_justifying_new_pages": [],
+  "pages_to_never_create_again": [
+    "Geo-swapped city pages without unique value",
+    "Formula variant tools without demand",
+    "Scenario pages with hex-IDs"
+  ]
+}

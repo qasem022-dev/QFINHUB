@@ -1,0 +1,375 @@
+{
+  "generated": "2026-06-08T03:49:22.539187",
+  "total_samples": 368,
+  "sampling_complete": true,
+  "summary": {
+    "indexed_pages": 93,
+    "discovered_not_indexed": 162,
+    "unknown_to_google": 0,
+    "canonical_issues": 2
+  },
+  "samples": {
+    "Submitted and indexed": [
+      {
+        "url": "https://www.qfinhub.com/calculators",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-24T01:22:32",
+        "google_canonical": "https://www.qfinhub.com/calculators",
+        "page_type": "calculators-hub",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/disclaimer",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-06T22:16:07",
+        "google_canonical": "https://www.qfinhub.com/disclaimer",
+        "page_type": "disclaimer",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/methodology",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-27T02:13:14",
+        "google_canonical": "https://www.qfinhub.com/methodology",
+        "page_type": "unknown",
+        "priority_tier": "P5",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-30T23:42:39",
+        "google_canonical": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+        "page_type": "widget",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/all-pages",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-27T02:13:12",
+        "google_canonical": "https://www.qfinhub.com/all-pages",
+        "page_type": "listing",
+        "priority_tier": "P5",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/compound-interest",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-01T23:40:10",
+        "google_canonical": "https://www.qfinhub.com/calculators/compound-interest",
+        "page_type": "calculator-T1",
+        "priority_tier": "P0",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/investment-return",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-01T23:50:44",
+        "google_canonical": "https://www.qfinhub.com/calculators/investment-return",
+        "page_type": "calculator-T1",
+        "priority_tier": "P0",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/retirement-planning",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-01T23:36:13",
+        "google_canonical": "https://www.qfinhub.com/calculators/retirement-planning",
+        "page_type": "calculator-T1",
+        "priority_tier": "P0",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/401k-calculator",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-01T23:44:43",
+        "google_canonical": "https://www.qfinhub.com/calculators/401k-calculator",
+        "page_type": "calculator-T1",
+        "priority_tier": "P0",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/tax-calculator",
+        "gsc_issue_group": "Submitted and indexed",
+        "url_inspection_verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-01T23:38:15",
+        "google_canonical": "https://www.qfinhub.com/calculators/tax-calculator",
+        "page_type": "calculator-T1",
+        "priority_tier": "P0",
+        "important": true
+      }
+    ],
+    "URL is unknown to Google": [
+      {
+        "url": "https://www.qfinhub.com/ai-specialist",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "unknown",
+        "priority_tier": "P5",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/blog",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "unknown",
+        "priority_tier": "P5",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/guides",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "guides-hub",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "widget",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/break-even",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T2",
+        "priority_tier": "P1",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/currency-converter",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/tip-calculator",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/salary-calculator",
+        "gsc_issue_group": "URL is unknown to Google",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      }
+    ],
+    "Discovered - currently not indexed": [
+      {
+        "url": "https://www.qfinhub.com/privacy",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "privacy",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/terms",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "terms",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/about",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "about",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/contact",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "contact",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/compare",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "compare-hub",
+        "priority_tier": "P2",
+        "important": true
+      },
+      {
+        "url": "https://www.qfinhub.com/editorial-policy",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "unknown",
+        "priority_tier": "P5",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/basic-calculator",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/simple-interest",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/roi-calculator",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      }
+    ],
+    "Duplicate, Google chose different canonical than user": [
+      {
+        "url": "https://www.qfinhub.com/calculators/pmi-calculator",
+        "gsc_issue_group": "Duplicate, Google chose different canonical than user",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Duplicate, Google chose different canonical than user",
+        "last_crawl": "2026-05-23T00:41:39",
+        "google_canonical": "https://qfinhub.com/calculators/pmi-calculator",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      }
+    ],
+    "Alternate page with proper canonical tag": [
+      {
+        "url": "https://www.qfinhub.com/calculators/rule-of-72",
+        "gsc_issue_group": "Alternate page with proper canonical tag",
+        "url_inspection_verdict": "NEUTRAL",
+        "coverage_state": "Alternate page with proper canonical tag",
+        "last_crawl": "2026-05-13T02:34:40",
+        "google_canonical": "",
+        "page_type": "calculator-T3",
+        "priority_tier": "P2",
+        "important": false
+      }
+    ]
+  }
+}

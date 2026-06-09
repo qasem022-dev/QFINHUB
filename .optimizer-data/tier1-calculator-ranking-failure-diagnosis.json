@@ -1,0 +1,39 @@
+{
+  "title": "Tier 1 Calculator Ranking Failure Diagnosis \u2014 EVIDENCE ONLY",
+  "generated": "2026-06-07T02:51:07Z",
+  "data_sources": {
+    "index_status": "URL Inspection API (verified for 10/10 T1 calcs)",
+    "gsc_performance": "gsc-api-truth-current.json",
+    "serp_data": "tier1-serp-competitor-snapshot.json (subagent web research)"
+  },
+  "calculators": {
+    "retirement-planning": {
+      "indexed": true,
+      "impressions_7d": 38,
+      "position": 89.1,
+      "ctr_optimized": true
+    },
+    "investment-return": {
+      "indexed": true,
+      "impressions_7d": 18,
+      "position": 84.6,
+      "ctr_optimized": true,
+      "fixed_jun7": true
+    },
+    "tax-calculator": {
+      "indexed": true,
+      "impressions_7d": 17,
+      "position": 87.5,
+      "ctr_optimized": true,
+      "fixed_jun7": true
+    }
+  },
+  "root_causes": {
+    "proven_technical_issue": "None \u2014 all 10 T1 calcs: canonical=self, robots=index,follow, HTTP 200, schema present",
+    "proven_content_issue": "Generic titles on 2/3 (FIXED Jun 7). Query-year mismatch on tax-calculator (getting 2022/2023 traffic).",
+    "proven_internal_authority_issue": "T1 calcs have 2-4 internal blog links + decision links. Internal linking is functional but not exceptional.",
+    "likely_external_authority_issue": "0 backlinks confirmed. SERP competitors have DR 70-100 with 250-5,000+ backlinks. 38 queries rank uniformly at positions 71-99 \u2014 pattern consistent with domain-level ceiling.",
+    "unknown": "Exact contribution of content quality gap vs backlink gap cannot be isolated without controlled experiment."
+  },
+  "confidence": "MEDIUM-HIGH \u2014 evidence is circumstantial but highly consistent across multiple data sources"
+}

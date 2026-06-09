@@ -1,0 +1,79 @@
+{
+  "report": "Phase 17 — Search Demand Capture Engine — Dry Run",
+  "generated": "2026-06-08 05:45 UTC",
+  "phase": "17",
+  "mode": "DRY_RUN",
+  "changes_executed": false,
+
+  "mining_results": {
+    "total_keywords": 680,
+    "sources": {
+      "google_suggest": 420,
+      "question_variation": 189,
+      "year_variation": 39,
+      "comparison_variation": 32,
+      "gsc_api": 0
+    },
+    "note": "GSC API token expired during mining — will be included in next run with fresh token"
+  },
+
+  "classification": {
+    "total": 680,
+    "rejected_off_topic": 15,
+    "calculator_intent": 448,
+    "decision_intent": 136,
+    "comparison_intent": 26,
+    "guide_intent": 7,
+    "core_finance": "~85%",
+    "weak_relevance": "~10%",
+    "off_topic": "~5%"
+  },
+
+  "scoring": {
+    "distribution": {
+      "75-84": 24,
+      "65-74": 360,
+      "50-64": 161,
+      "below_50": 120
+    },
+    "top_opportunities": [
+      {"score": 83, "query": "how much house can i afford", "action": "ADD_FAQ_SECTION", "page": "/decision/how-much-house-can-i-afford"},
+      {"score": 83, "query": "how much house can i afford with 100k salary", "action": "ADD_FAQ_SECTION"},
+      {"score": 76, "query": "debt snowball vs avalanche", "action": "ADD_FAQ_SECTION", "page": "/calculators/debt-snowball-vs-avalanche"},
+      {"score": 76, "query": "roth vs traditional ira", "action": "ADD_FAQ_SECTION", "page": "/calculators/roth-vs-traditional"},
+      {"score": 82, "query": "down payment calculator mortgage", "action": "TITLE_META_CTR_FIX", "page": "/calculators/mortgage-calculator"}
+    ]
+  },
+
+  "auditor_results": {
+    "reviewed": 50,
+    "approved": 15,
+    "rejected": 35,
+    "rejection_reasons": {
+      "score_threshold": 20,
+      "low_value_navigational": 10,
+      "mismatched_page": 5
+    }
+  },
+
+  "execution_plan": {
+    "approved_actions": 15,
+    "within_daily_limits": 5,
+    "actions": [
+      {"action": "ADD_FAQ_SECTION", "target": "/decision/how-much-house-can-i-afford", "variations": 9},
+      {"action": "ADD_FAQ_SECTION", "target": "/calculators/debt-snowball-vs-avalanche", "query": "debt snowball vs avalanche"}
+    ],
+    "held_actions": [
+      {"reason": "Below threshold", "queries": ["down payment calculator", "down payment calculator mortgage"]},
+      {"reason": "Navigational/reddit", "queries": ["roth vs traditional 401k reddit", "roth vs traditional ira reddit"]}
+    ]
+  },
+
+  "expected_impact": {
+    "improved_pages": 2,
+    "targeted_queries": 10,
+    "estimated_impression_gain": "100-500/month (conservative)",
+    "risk_level": "Low — FAQ additions to existing pages",
+    "note": "Actual impact measurable in 7-14 days via GSC API"
+  }
+}

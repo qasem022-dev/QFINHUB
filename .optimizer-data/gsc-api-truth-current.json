@@ -1,0 +1,44 @@
+{
+  "status": "LIVE_API_OK",
+  "generated": "2026-06-07T02:42:21Z",
+  "property": "https://www.qfinhub.com",
+  "search_type": "web",
+  "date_range": {
+    "start": "2026-05-31",
+    "end": "2026-06-07"
+  },
+  "latest_available_gsc_date": "2026-06-05",
+  "api_pull_timestamp": "2026-06-07T02:42:21Z",
+  "metrics_7d": {
+    "impressions": 304,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 33.2,
+    "pages_with_impressions": 45
+  },
+  "previous_7d": {
+    "start": "2026-05-24",
+    "end": "2026-05-31",
+    "impressions": 291,
+    "clicks": 0,
+    "avg_position": 19.7
+  },
+  "change": {
+    "impressions": "+13 (+4.5%)",
+    "position": "+13.5 (worse \u2014 was 19.7 now 33.2)",
+    "note": "Impressions growing slightly (+4.5%) but avg position worsened significantly from 19.7 to 33.2. Google is ranking us for MORE queries but at WORSE positions. This is concerning."
+  },
+  "comparison": {
+    "query_dimension_impressions": 156,
+    "page_dimension_impressions": 304,
+    "query_page_dimension_impressions": 156,
+    "note": "Query dimension undercounts by 48.7% vs page dimension due to anonymization. Page dimension is correct aggregate."
+  },
+  "data_completeness": {
+    "pagination_completed": true,
+    "cache_used": false,
+    "token_status": "FRESH",
+    "row_limit_used": 500,
+    "rows_returned": 45
+  }
+}

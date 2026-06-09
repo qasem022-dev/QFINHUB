@@ -1,0 +1,54 @@
+{
+  "report": "Vercel Deploy Verification",
+  "generated": "2026-06-08 04:50 UTC",
+  "phase": "16.12G",
+
+  "deploy_verified": true,
+  "auto_deploy_working": true,
+
+  "latest_deployment": {
+    "uid": "dpl_5S8ADrKPrB4y2dwEnMXtigTmaXXT",
+    "state": "READY",
+    "ready_state": "READY",
+    "ready_substate": "PROMOTED",
+    "source": "git (GitHub auto-deploy)",
+    "commit_sha": "69e2407da345c8cbd58bcefd0cd4543295f5c1f9",
+    "commit_message": "Phase 16.12F: Remove 3 noindexed scenario pages from sitemap",
+    "branch": "main",
+    "repo": "qasem022-dev/QFINHUB",
+    "created_ts_ms": 1780882781123,
+    "created_iso": "2026-06-08T01:39:41Z",
+    "production_url": "https://www.qfinhub.com"
+  },
+
+  "deploy_timeline": {
+    "git_push": "2026-06-08T01:39:38Z",
+    "vercel_triggered": "2026-06-08T01:39:41Z (+3s from push)",
+    "sitemap_rebuilt": "2026-06-08T01:41:21Z (lastmod in sitemap.xml)",
+    "total_deploy_time": "~100 seconds (push to live)"
+  },
+
+  "previous_deployments": [
+    {
+      "uid": "dpl_FeRmMLwe",
+      "commit": "073861da28bc61cddfe04a5c68997f784c868264",
+      "state": "READY",
+      "note": "Pre-16.12F — previous state"
+    },
+    {
+      "uid": "dpl_FeSXNDfC",
+      "commit": "4e512c4b72dff997873b79cad75b7bd4e09097e9",
+      "state": "READY",
+      "note": "Earlier deploy"
+    }
+  ],
+
+  "deploy_hook_needed": false,
+  "deploy_hook_reason": "GitHub → Vercel auto-deploy is configured and working. Push to main triggers deploy automatically. No additional hook needed.",
+
+  "vercel_headers_live": {
+    "server": "Vercel",
+    "x-vercel-cache": "PRERENDER",
+    "x-vercel-id": "bom1::dpc6t-1780883115015-7817fbee3fe6"
+  }
+}

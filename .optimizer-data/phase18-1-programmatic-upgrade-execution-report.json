@@ -1,0 +1,59 @@
+{
+  "report": "Phase 18.1 — Programmatic SEO Upgrade Execution — Batch 1 Complete",
+  "generated": "2026-06-08 07:00 UTC",
+  "phase": "18.1",
+  "status": "EXECUTED — 2 CTR fixes deployed, remainder held for Phase 15/17 daily flow",
+
+  "executed": {
+    "ctr_fixes_deployed": 2,
+    "commit": "06616da",
+    "blogs_improved": [
+      "Cybersecurity Stocks — clearer title + calculator hook",
+      "Mortgage Rates 2026 — updated year + actionable CTA"
+    ],
+    "credit_card_debt_blog_held": "Title already strong"
+  },
+
+  "previously_deployed_benefits": {
+    "phase_16_12g": "Title cleanup + Article schema for all 125 guides — directly addresses the 13 UPGRADE_NOW guides' indexation issue",
+    "phase_17_ctr_fix": "Added salary-specific FAQs to How Much House Can I Afford decision page",
+    "phase_16_12f": "Sitemap fix — 3 noindexed scenarios excluded"
+  },
+
+  "held_for_daily_workflow": [
+    "Internal links from indexed blogs to 5 discovered guides",
+    "GSC UI indexing requests after recrawl (wait 7 days)",
+    "Consolidation review of 225 tools (review 25/week)"
+  ],
+
+  "consolidation_review": {
+    "reviewed": 5,
+    "finding": "All 5 investment tools are parameterized duplicates of the compound interest calculator",
+    "recommendation": "Remove from sitemap after confirming they add no unique value",
+    "executed": "NO — requires Auditor + Guardian approval"
+  },
+
+  "discovery_plan": {
+    "no_gsc_data_pages": 499,
+    "phase_1": "20 highest-value guides get internal links from indexed pages",
+    "phase_2": "35 comparisons get FAQ + examples",
+    "phase_3": "225 tools reviewed for consolidation"
+  },
+
+  "expected_impact": {
+    "short_term_7_14_days": "CTR improvements on 2 blogs + Phase 16.12G guide schema/title benefits",
+    "medium_term_14_28_days": "Guide indexation improvement as Google recrawls with Article schema",
+    "long_term": "Consolidation of tool pages reduces index bloat and improves crawl budget allocation"
+  },
+
+  "biggest_blocker": "Google crawl budget — 499/649 pages undiscovered. Internal links from indexed pages are the solution. Mass tool consolidation will free crawl budget for important pages.",
+
+  "safety_confirmations": {
+    "no_mass_pages": true,
+    "no_noindex_delete": true,
+    "no_google_indexing_api": true,
+    "no_risky_automations": true,
+    "ctr_fixes_safe": true,
+    "existing_page_first": true
+  }
+}

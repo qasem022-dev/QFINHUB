@@ -1,0 +1,102 @@
+{
+  "report": "Daily SEO Optimizer Execution Log",
+  "generated": "2026-06-08T02:09:01.949317Z",
+  "daily_limits": {
+    "TITLE_META_CTR_FIX": 10,
+    "INTERNAL_LINK_PUSH": 10,
+    "IMPROVE_EXISTING_PAGE": 5,
+    "ADD_FAQ_SECTION": 5,
+    "new_page": 1
+  },
+  "executed_count": 5,
+  "executed": [
+    {
+      "query": "how much house can i afford",
+      "action": "ADD_FAQ_SECTION",
+      "score": 83,
+      "passed": true,
+      "checks": {
+        "score_threshold": true,
+        "has_matching_page": true,
+        "not_off_topic": true,
+        "not_duplicate": true,
+        "calculator_connected": true,
+        "finance_relevant": true,
+        "low_value_navigational": true,
+        "mismatched_page": true
+      },
+      "reason": "ALL_CHECKS_PASSED"
+    },
+    {
+      "query": "how much house can i afford calculator",
+      "action": "ADD_FAQ_SECTION",
+      "score": 83,
+      "passed": true,
+      "checks": {
+        "score_threshold": true,
+        "has_matching_page": true,
+        "not_off_topic": true,
+        "not_duplicate": true,
+        "calculator_connected": true,
+        "finance_relevant": true,
+        "low_value_navigational": true,
+        "mismatched_page": true
+      },
+      "reason": "ALL_CHECKS_PASSED"
+    },
+    {
+      "query": "how much house can i afford with 100k salary",
+      "action": "ADD_FAQ_SECTION",
+      "score": 83,
+      "passed": true,
+      "checks": {
+        "score_threshold": true,
+        "has_matching_page": true,
+        "not_off_topic": true,
+        "not_duplicate": true,
+        "calculator_connected": true,
+        "finance_relevant": true,
+        "low_value_navigational": true,
+        "mismatched_page": true
+      },
+      "reason": "ALL_CHECKS_PASSED"
+    },
+    {
+      "query": "how much house can i afford with 150k salary",
+      "action": "ADD_FAQ_SECTION",
+      "score": 83,
+      "passed": true,
+      "checks": {
+        "score_threshold": true,
+        "has_matching_page": true,
+        "not_off_topic": true,
+        "not_duplicate": true,
+        "calculator_connected": true,
+        "finance_relevant": true,
+        "low_value_navigational": true,
+        "mismatched_page": true
+      },
+      "reason": "ALL_CHECKS_PASSED"
+    },
+    {
+      "query": "how much house can i afford with 200k salary",
+      "action": "ADD_FAQ_SECTION",
+      "score": 83,
+      "passed": true,
+      "checks": {
+        "score_threshold": true,
+        "has_matching_page": true,
+        "not_off_topic": true,
+        "not_duplicate": true,
+        "calculator_connected": true,
+        "finance_relevant": true,
+        "low_value_navigational": true,
+        "mismatched_page": true
+      },
+      "reason": "ALL_CHECKS_PASSED"
+    }
+  ],
+  "counts": {
+    "ADD_FAQ_SECTION": 5
+  }
+}

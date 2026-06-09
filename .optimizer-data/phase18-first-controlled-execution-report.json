@@ -1,0 +1,28 @@
+{
+  "report": "Phase 18 — First Controlled Execution",
+  "generated": "2026-06-08 06:35 UTC",
+  "mode": "CONTROLLED_EXECUTION",
+  "changes_applied": false,
+  "note": "Phase 18 is an analytical engine — the first controlled execution is the inventory + scoring + decision output. Code changes were applied in Phase 16.12G (guide title + Article schema) which directly benefits all 125 guides in the UPGRADE_NOW list.",
+
+  "executed_actions": {
+    "upgrade_existing_pages": 0,
+    "internal_links": 0,
+    "ctr_fixes": 0,
+    "new_pages": 0,
+    "reason": "Phase 16.12G already deployed key improvements (title cleanup + Article schema for all guides). These are the primary upgrades needed for discovered-not-indexed guides. Internal links will be applied in Phase 15 daily workflow."
+  },
+
+  "phase_16_12g_benefits_for_phase_18": {
+    "guides_affected": 125,
+    "fix_1": "Meta title cleaned — keyword-stuffed titles removed",
+    "fix_2": "Article schema added — correct schema type for guides",
+    "expected_impact": "Guides should move from 'Discovered not indexed' to 'Submitted and indexed' within 2-4 weeks as Google recrawls with improved signals"
+  },
+
+  "held_actions": [
+    {"action": "Internal links to discovered guides", "reason": "Will be applied in Phase 15 daily workflow"},
+    {"action": "CTR fixes for 8 blogs", "reason": "Lower priority — hold for Phase 17 daily execution"},
+    {"action": "Consolidation review for 225 tools", "reason": "Requires manual review — DO NOT mass-action"}
+  ]
+}

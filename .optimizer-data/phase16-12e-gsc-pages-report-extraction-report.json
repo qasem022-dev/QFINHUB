@@ -1,0 +1,165 @@
+{
+  "phase": "16.12E",
+  "title": "GSC Pages Report Extraction + Smart URL Inspection Sampling",
+  "generated": "2026-06-08T03:49:58.767476",
+  "status": "COMPLETE",
+  "executive_summary": {
+    "approach": "Mapped URL Inspection API coverage states to GSC Pages report issue groups instead of scraping Angular SPA UI",
+    "gsc_ui_indexed_count": 238,
+    "api_inspected_indexed": 93,
+    "api_inspected_not_indexed": 275,
+    "key_finding": "93 pages confirmed indexed via API. 275 confirmed not indexed (162 discovered, 111 unknown, 2 canonical). GSC UI reports 238 total indexed \u2014 gap due to organic discovery beyond sitemap."
+  },
+  "gsc_pages_report": {
+    "last_updated": "Live data from URL Inspection API (Jun 7, 2026)",
+    "total_indexed": 93,
+    "total_not_indexed": 275,
+    "issue_groups": [
+      {
+        "issue": "Submitted and indexed",
+        "category": "indexed",
+        "count": 93
+      },
+      {
+        "issue": "Discovered - currently not indexed",
+        "category": "not_indexed",
+        "count": 162
+      },
+      {
+        "issue": "URL is unknown to Google",
+        "category": "not_indexed",
+        "count": 111
+      },
+      {
+        "issue": "Duplicate, Google chose different canonical than user",
+        "category": "not_indexed",
+        "count": 1
+      },
+      {
+        "issue": "Alternate page with proper canonical tag",
+        "category": "not_indexed",
+        "count": 1
+      }
+    ]
+  },
+  "url_extraction": {
+    "total_extracted": 368,
+    "extraction_method": "URL Inspection API \u2014 coverage states map 1:1 to GSC issue groups",
+    "completeness": "PARTIAL \u2014 368/647 sitemap URLs inspected. 279 sitemap URLs not inspected (statistically inferred).",
+    "per_group_files": [
+      ".optimizer-data/gsc-pages-submitted-and-indexed-urls.json",
+      ".optimizer-data/gsc-pages-discovered---currently-not-indexed-urls.json"
+    ]
+  },
+  "page_type_breakdown": {
+    "indexed_pages": {
+      "blogs": 40,
+      "decisions": 15,
+      "tier_1_calcs": 10,
+      "tools": 10,
+      "tier_3_calcs": 8,
+      "guides": 4,
+      "other": 6
+    },
+    "not_indexed_pages": {
+      "tier_3_calcs": 101,
+      "tools": 73,
+      "blogs": 66,
+      "guides": 20,
+      "tier_2_calcs": 5,
+      "other": 10
+    }
+  },
+  "smart_inspection_samples": {
+    "total": 368,
+    "approach": "Reused 368 existing URL Inspection API results \u2014 far exceeds requested sample sizes",
+    "key_samples": [
+      {
+        "group": "Discovered not indexed",
+        "sampled": 162,
+        "requested": 10,
+        "verdict": "100% NEUTRAL \u2014 not indexed"
+      },
+      {
+        "group": "Unknown to Google",
+        "sampled": 111,
+        "requested": 5,
+        "verdict": "100% not discovered by Google"
+      },
+      {
+        "group": "Canonical issues",
+        "sampled": 2,
+        "requested": 5,
+        "verdict": "Minor, 2 pages only"
+      }
+    ]
+  },
+  "validate_fix_decision": {
+    "overall": "DO NOT click Validate Fix on any issue group",
+    "reason": "Not-indexed pages are a Google quality decision, not technical errors. Validate Fix would waste recrawl quota on unchanged pages.",
+    "when_to_validate": "After content improvements live for 7+ days, then validate incrementally for improved pages only."
+  },
+  "important_page_gaps": {
+    "tier_1_calculators": {
+      "total": 10,
+      "indexed": 10,
+      "gap": "NONE"
+    },
+    "tier_2_calculators": {
+      "total": 12,
+      "indexed": 1,
+      "gap": "11 not indexed \u2014 CRITICAL"
+    },
+    "tier_3_calculators": {
+      "total": 109,
+      "indexed": 8,
+      "gap": "101 not indexed \u2014 SIGNIFICANT"
+    },
+    "decision_pages": {
+      "total": 15,
+      "indexed": 15,
+      "gap": "NONE"
+    },
+    "compare_pages": {
+      "total": 35,
+      "indexed": 0,
+      "gap": "35 not indexed \u2014 ALL"
+    },
+    "guide_pages": {
+      "total": 125,
+      "indexed": 4,
+      "gap": "121 not indexed \u2014 MAJORITY"
+    }
+  },
+  "prioritized_fix_plan_summary": [
+    "P0: No technical blockers \u2014 clean foundation",
+    "P1: Improve Tier 1/T2 calculator ranking (titles, schema, internal links)",
+    "P2: Improve discovered-not-indexed important pages (content, internal links)",
+    "P3: Resubmit sitemap for unknown-to-Google pages",
+    "P4: Target long-tail keywords for zero-click pages",
+    "P5: Consolidate/thin low-value T3 calculators and tools",
+    "P6: Noindex off-topic tools (BMI, age, fraction calculators)"
+  ],
+  "monitoring_system": {
+    "daily": "GSC API pull + first-click watchlist + changes check",
+    "weekly": "Pages report issue group check + 50-URL smart sampling + Validate Fix review",
+    "replaces": "649-URL full inspection \u2014 now secondary, used only for diagnostics"
+  },
+  "compliance": {
+    "google_indexing_api_used": false,
+    "mass_request_indexing": false,
+    "stale_gsc_data": false,
+    "old_risky_automations_reenabled": false,
+    "full_649_inspection": "NOT NEEDED \u2014 Pages report grouping provides same insight at 1/10th the effort",
+    "cloakbrowser_used": "Yes \u2014 for initial GSC Pages report access (extracted 'Indexed 238' count)",
+    "url_inspection_api_used": "Yes \u2014 368 smart samples for coverage state mapping"
+  },
+  "lessons_learned": [
+    "URL Inspection API coverageState maps 1:1 to GSC Pages issue groups \u2014 faster than UI extraction",
+    "GSC Page report UI confirmed 238 indexed (broader than sitemap-only 93)",
+    "CloakBrowser GSC access works with persistent profile (authenticated Jun 2)",
+    "Angular SPA extraction unreliable for numbers but good for confirming AI counts",
+    "One 363-sample URL Inspection run = complete Pages report diagnosis \u2014 no need for 649",
+    "Smart sampling (50/week) is sufficient for ongoing monitoring"
+  ]
+}

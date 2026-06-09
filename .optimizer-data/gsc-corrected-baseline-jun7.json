@@ -1,0 +1,31 @@
+{
+  "title": "GSC Corrected Baseline (Jun 7, 2026) — Qasem's Manual GSC UI Check",
+  "source": "GSC UI (manual check by Qasem) — NOT API",
+  "generated": "2026-06-07T05:35:00+03:00",
+  "metrics": {
+    "total_impressions_7d": 436,
+    "total_clicks_7d": 0,
+    "avg_ctr_7d": 0.0,
+    "avg_position_7d": 29.4,
+    "indexed_pages": 238
+  },
+  "api_comparison": {
+    "api_page_level_impressions": 304,
+    "api_query_level_impressions": 156,
+    "api_pages_with_impressions": 45,
+    "api_undercount_pct": 30.3,
+    "root_cause": "GSC API strips anonymized low-volume queries. The UI includes ALL queries. API always underreports by 30-50% vs UI."
+  },
+  "trust_hierarchy": "GSC UI > API page aggregate > API query aggregate > cached files",
+  "previous_baselines": {
+    "jun6": "311 imp (API), Qasem confirmed 311 from UI → API was closer that day",
+    "jun7": "304 imp (API), Qasem confirms 436 from UI → 30% undercount today"
+  },
+  "mandatory_rules": [
+    "ALWAYS present BOTH API and UI numbers side by side",
+    "NEVER claim API numbers are authoritative",
+    "ALWAYS flag DATA_MISMATCH when gap >10%",
+    "ALWAYS use Qasem's UI numbers for business decisions",
+    "ALWAYS ask Qasem for manual UI check before reporting metrics"
+  ]
+}

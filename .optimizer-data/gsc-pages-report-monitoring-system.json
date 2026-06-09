@@ -1,0 +1,74 @@
+{
+  "generated": "2026-06-08T03:49:58.766127",
+  "goal": "Replace 649-URL full inspection with smart weekly Pages report + daily API checks",
+  "daily_checks": {
+    "schedule": "TBD",
+    "checks": [
+      {
+        "name": "GSC Search Analytics API Pull",
+        "method": "API: searchanalytics.query",
+        "purpose": "Track impressions, clicks, CTR, position trends",
+        "script": "scripts/refresh-gsc-token.py then Python API query",
+        "output": ".optimizer-data/gsc-api-truth-current.json",
+        "correction_factor": 1.434,
+        "alert_if": "Clicks drop to 0 for 7+ days OR avg position drops >5 spots"
+      },
+      {
+        "name": "First-Click Watchlist",
+        "method": "Check gsc-api-truth-current.json for pages with impressions >10 and clicks = 0",
+        "purpose": "Identify pages close to getting first click \u2014 highest ROI for title/description improvements",
+        "output": ".optimizer-data/first-click-watchlist.json",
+        "alert_if": "New pages enter watchlist with >50 impressions"
+      },
+      {
+        "name": "Changed Pages Check",
+        "method": "Compare today's API data with yesterday's \u2014 flag pages with large impression/position changes",
+        "purpose": "Detect ranking movements early",
+        "output": ".optimizer-data/gsc-daily-changes.json",
+        "alert_if": ">20% position change on Tier 1 calculator pages"
+      }
+    ]
+  },
+  "weekly_checks": {
+    "schedule": "Every Monday 10 AM EEST",
+    "checks": [
+      {
+        "name": "GSC Pages Report Issue Groups",
+        "method": "CloakBrowser \u2192 GSC \u2192 Indexing \u2192 Pages (if session alive) OR URL Inspection API sampling",
+        "purpose": "Track issue group counts week-over-week",
+        "actions": [
+          "Capture total indexed count",
+          "Capture total not indexed count",
+          "Capture each issue group count",
+          "Compare to previous week",
+          "Flag new issues or growing groups"
+        ],
+        "output": ".optimizer-data/gsc-pages-weekly-{date}.json",
+        "alert_if": "Indexed count drops >5% OR new issue group appears"
+      },
+      {
+        "name": "Smart URL Inspection Sampling",
+        "method": "URL Inspection API: 10 URLs from each issue group (max 50 total)",
+        "purpose": "Verify issue groups still accurate, detect changes",
+        "output": ".optimizer-data/gsc-weekly-smart-samples-{date}.json",
+        "alert_if": "Previously indexed page becomes not-indexed"
+      },
+      {
+        "name": "Validate Fix Decision Review",
+        "method": "Check if any content improvements were deployed in past week",
+        "purpose": "Determine if any issue groups now qualify for Validate Fix",
+        "output": "Update .optimizer-data/gsc-validate-fix-decision-report.json",
+        "rule": "Only validate AFTER content improvements live for 7+ days"
+      }
+    ]
+  },
+  "what_not_to_do": [
+    "Do NOT inspect all 649 URLs weekly \u2014 50 smart samples is sufficient",
+    "Do NOT click Validate Fix without 7+ days of live content improvements",
+    "Do NOT use Google Indexing API for bulk indexing",
+    "Do NOT scrape GSC Performance dashboard \u2014 use API + correction factor",
+    "Do NOT re-enable old risky automations",
+    "Do NOT send HARO/outreach based solely on indexing status"
+  ],
+  "cron_recommendation": "Create: (a) daily API pull at 10 AM EEST, (b) weekly Pages report check Monday 10 AM EEST"
+}

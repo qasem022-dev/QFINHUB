@@ -1,0 +1,15 @@
+{
+  "title": "GSC API Truth Integration Report",
+  "generated": "2026-06-07T02:43:00Z",
+  "files_updated": [
+    "business-growth-scoreboard.json",
+    "first-click-watchlist.json"
+  ],
+  "old_sources_removed": [
+    "gsc-live-data-corrected.json (correction-based, replaced by raw API)",
+    "fresh-gsc-query-discovery-day5.json (stale cached file)",
+    "gsc-live-data.json (CloakBrowser extraction, unreliable)"
+  ],
+  "new_source": "gsc-api-truth-current.json \u2014 single canonical truth file",
+  "remaining_stale_dependency": "daily-growth-scoreboard.json not updated (need to check if it exists and its format)"
+}

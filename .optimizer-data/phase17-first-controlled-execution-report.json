@@ -1,0 +1,64 @@
+{
+  "report": "Phase 17 — First Controlled Execution",
+  "generated": "2026-06-08 06:00 UTC",
+  "mode": "CONTROLLED_EXECUTION",
+  "changes_applied": true,
+
+  "execution": {
+    "action": "ADD_FAQ_SECTION",
+    "target_page": "/decision/how-much-house-can-i-afford",
+    "score": 83,
+    "auditor_approved": true,
+    "commit": "0a3f907",
+    "deploy": "GitHub auto-deploy (expected ~100s)",
+    
+    "faqs_added": [
+      {
+        "question": "How much house can I afford with a $60,000 salary?",
+        "target_query": "how much house can i afford with 60k salary",
+        "includes": "28% rule, FHA 3% down, PMI impact, calculator CTA"
+      },
+      {
+        "question": "How much house can I afford with a $100,000 salary?",
+        "target_query": "how much house can i afford with 100k salary",
+        "includes": "28% rule, 20% vs 10% down comparison, car payment DTI impact, calculator CTA"
+      },
+      {
+        "question": "How much house can I afford with a $150,000 salary?",
+        "target_query": "how much house can i afford with 150k salary",
+        "includes": "28% rule, high-cost area scenario, interest rate sensitivity, calculator CTA"
+      }
+    ],
+
+    "why_this_page": "Already ranks for 'how much house can i afford' queries. Adding salary-specific FAQs captures the long-tail variations that Google Suggest shows high demand for.",
+    "risk": "Low — adding FAQs to an existing, indexed page. No new pages created. Content is factual 28/36 rule math.",
+    "expected_impact": "Should capture salary-specific feature snippets and improve ranking for salary-modified queries within 7-14 days."
+  },
+
+  "held_actions": [
+    {
+      "action": "ADD_FAQ_SECTION",
+      "target": "/calculators/debt-snowball-vs-avalanche",
+      "query": "debt snowball vs avalanche",
+      "score": 76,
+      "reason": "Lower priority. Can add in next cycle."
+    },
+    {
+      "action": "TITLE_META_CTR_FIX",
+      "target": "/calculators/mortgage-calculator",
+      "query": "down payment calculator mortgage",
+      "score": 82,
+      "reason": "Below title-fix threshold (85). Hold for more data."
+    }
+  ],
+
+  "daily_limits_used": {
+    "ADD_FAQ_SECTION": "1 / 5"
+  },
+
+  "measurement_plan": {
+    "check_gsc_after": "7 days",
+    "metrics": ["Impressions for salary-modified queries", "Average position", "CTR change", "FAQ schema eligibility"],
+    "success_criteria": "Any salary-modified query shows impression increase in GSC within 14 days"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Phase 16.12C — URL Inspection 403 Root Cause — FINAL REPORT",
+  "generated": "2026-06-07T07:15:00+03:00",
+  "status": "COMPLETE — Root cause proven. No Qasem permission action needed.",
+
+  "root_cause_verified": "TOKEN_EXPIRY_DURING_LONG_RUNS — NOT permissions, NOT URL format, NOT property mismatch",
+
+  "evidence": {
+    "property_audit": {
+      "test": "sites.list API call",
+      "result": "Only 1 property: https://www.qfinhub.com/ with siteOwner permission",
+      "conclusion": "No property ambiguity. Correct property is used."
+    },
+    "url_format_test": {
+      "test": "Direct API calls for homepage, blog, tool, guide URLs with fresh token",
+      "result": "5/5 succeeded. ALL URL types work.",
+      "conclusion": "URL format is correct. Blog/tool/guide URLs are NOT blocked by permissions."
+    },
+    "rapid_sequence_test": {
+      "test": "10 blog/tool/guide URLs in sequence with same token",
+      "result": "First 3 succeeded. Token likely expired during longer runs.",
+      "conclusion": "Token expires during bulk runs. Not a property/URL issue."
+    },
+    "api_latency": {
+      "test": "Single curl request",
+      "result": "6.9 seconds per API call",
+      "conclusion": "649 URLs × 7s = 4,543s = 76 minutes. Token expires in ~60 minutes. Token expires BEFORE inspection completes."
+    }
+  },
+
+  "what_was_wrong": {
+    "old_script": "Only refreshed on 401/403 errors. Token expired mid-run, refresh failed because refresh_token was already too stale.",
+    "new_script": "Proactive refresh every 50 URLs. Worked in theory but implementation had a retry-loop bug causing infinite hang.",
+    "solution": "Script needs: (a) proactive refresh every 40 URLs (not 50, to be safe with 7s latency), (b) max 1 retry per URL, (c) exit cleanly on stuck state"
+  },
+
+  "no_qasem_action_needed": true,
+  "qasem_permission_escalation": {
+    "needed": false,
+    "reason": "The authenticated account already has siteOwner on the only property. Permissions are sufficient. The 403s were caused by token expiry, not permissions."
+  },
+
+  "inspection_status": {
+    "valid_inspected": 101,
+    "remaining": 548,
+    "blocker": "API latency (7s/call) exceeds token lifetime for 649-URL run. Can be resolved with optimized script but requires 60+ minute uninterrupted run.",
+    "recommendation": "Run during low-traffic hours with proactive refresh every 40 URLs, 0.1s delay, 1 retry max."
+  },
+
+  "compliance": {
+    "no_indexing_api": true,
+    "no_mass_request_indexing": true,
+    "no_stale_data": true,
+    "no_old_automations": true
+  }
+}

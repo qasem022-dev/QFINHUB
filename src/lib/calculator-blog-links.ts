@@ -12,6 +12,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "200k-mortgage-payment-30-years", title: "$200,000 Mortgage Payment for 30 Years: Exact Monthly Cost" },
     { slug: "monthly-mortgage-payment-formula-tax-insurance", title: "Monthly Mortgage Payment Formula With Tax and Insurance (PITI)" },
     { slug: "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", title: "ECB Rate Hike 2026: What It Means for YOUR Mortgage" },
+    { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
+    { slug: "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings", title: "Core Inflation at 3.3%: What It Means for Mortgage and Savings" },
   ],
   "mortgage-affordability": [
     { slug: "how-much-mortgage-afford-100k-salary", title: "How Much Mortgage Can I Afford on a $100k Salary?" },
@@ -26,12 +28,15 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "investment-calculator-withdrawals", title: "Investment Calculator With Withdrawals: Plan Your Retirement Income" },
     { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40 Calculator: How Much Do You Need Saved?" },
     { slug: "investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings", title: "Investing: Cybersecurity Stocks Are Surging — One Looks Promising Into Earnings" },
+    { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
   ],
   "retirement-planning": [
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
     { slug: "investment-calculator-withdrawals", title: "Investment Calculator With Withdrawals: Plan Your Retirement Income" },
-    { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40 Calculator: How Much Do You Need Saved?" },
+    { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
     { slug: "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now", title: "2027 Social Security COLA Forecast Jumps to 3.9% — What Retirees Need to Know Now" },
+    { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
+    { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
   ],
   "loan-calculator": [
     { slug: "20000-loan-5-years-8-percent-monthly-payment", title: "$20,000 Loan for 5 Years at 8%: Your Monthly Payment Is $405.53" },
@@ -39,12 +44,14 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "20000-loan-at-8-percent-for-5-years-monthly-payment", title: "$20,000 Loan at 8% for 5 Years — Exact Monthly Payment + Full Amortization Schedule" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work" },
     { slug: "student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget", title: "Student Loan Repayment Options 2025: How to Choose the Best Plan for Your Budget" },
+    { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment (2026 Guide)" },
   ],
   "debt-payoff": [
     { slug: "debt-snowball-vs-debt-avalanche", title: "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?" },
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
+    { slug: "20000-loan-at-8-percent-for-5-years-monthly-payment", title: "$20,000 Loan at 8% for 5 Years: Calculate Your Exact Monthly Payment" },
   ],
   "credit-card-payoff": [
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work" },
@@ -55,6 +62,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
   "tax-calculator": [
     { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
     { slug: "tax-tips-007-first-light-metacritic-smart-financial-planning", title: "Tax Tips: Smart Financial Planning Strategies for 2026" },
+    { slug: "capital-gains-tax-explained-rates-and-strategies", title: "Capital Gains Tax Explained: Rates and Strategies for 2026" },
+    { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
   ],
   "401k-calculator": [
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
@@ -63,6 +72,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
   "investment-return": [
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
     { slug: "investment-calculator-withdrawals", title: "Investment Calculator With Withdrawals: Plan Your Retirement Income" },
+    { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
+    { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
   ],
   "budget-planner": [
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },

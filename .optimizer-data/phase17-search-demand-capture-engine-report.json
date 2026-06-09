@@ -1,0 +1,127 @@
+{
+  "report": "Phase 17 — Search Demand Capture Engine — Complete",
+  "generated": "2026-06-08 05:50 UTC",
+  "phase": "17",
+  "status": "ENGINE BUILT — READY FOR DAILY USE",
+
+  "engine_components": {
+    "keyword_miner": {
+      "script": "scripts/phase17-keyword-miner.py",
+      "sources": ["Google Suggest autocomplete", "GSC Search Analytics API", "Question/comparison/year variations"],
+      "output": ".optimizer-data/search-demand-keyword-mining.json",
+      "status": "WORKING — 680 keywords mined in first run"
+    },
+    "keyword_classifier": {
+      "script": "scripts/phase17-keyword-classifier.py",
+      "classifies": ["intent", "relevance", "risk", "action_fit", "matching_page"],
+      "output": ".optimizer-data/search-demand-keyword-classification.json",
+      "status": "WORKING — 680 classified, 15 rejected"
+    },
+    "page_matcher": {
+      "script": "scripts/phase17-matcher-scorer-decider.py",
+      "matches": "Keywords → existing QFINHUB pages (calculators, decisions, guides, blogs)",
+      "output": ".optimizer-data/search-demand-existing-page-match.json",
+      "status": "WORKING"
+    },
+    "opportunity_scorer": {
+      "script": "scripts/phase17-smart-scorer.py",
+      "factors": ["Demand signal", "Intent value", "Match quality", "Topic value", "Execution ease", "Risk penalties"],
+      "output": ".optimizer-data/search-demand-opportunity-scoreboard.json",
+      "status": "WORKING"
+    },
+    "action_decider": {
+      "script": "scripts/phase17-smart-scorer.py (integrated)",
+      "actions": ["IMPROVE_EXISTING_PAGE", "ADD_FAQ_SECTION", "TITLE_META_CTR_FIX", "INTERNAL_LINK_PUSH", "HOLD_FOR_DATA", "REJECT_OFF_TOPIC"],
+      "output": ".optimizer-data/daily-content-action-decisions.json",
+      "status": "WORKING"
+    },
+    "auditor": {
+      "script": "scripts/phase17-daily-optimizer.py",
+      "checks": ["Score threshold", "Matching page exists", "Not off-topic", "Not navigational", "Calculator connected", "Not mismatched"],
+      "output": ".optimizer-data/phase17-auditor-decision-log.json",
+      "status": "WORKING — 15/50 approved in dry run"
+    },
+    "execution_logger": {
+      "script": "scripts/phase17-daily-optimizer.py (integrated)",
+      "limits": {"TITLE_META_CTR_FIX": 10, "ADD_FAQ_SECTION": 5, "IMPROVE_EXISTING_PAGE": 5, "INTERNAL_LINK_PUSH": 10},
+      "output": ".optimizer-data/daily-seo-optimizer-execution-log.json",
+      "status": "WORKING"
+    },
+    "deploy_logger": {
+      "output": ".optimizer-data/daily-deploy-measurement-log.json",
+      "status": "WORKING"
+    },
+    "learning_memory": {
+      "output": ".optimizer-data/search-demand-learning-memory.json",
+      "status": "WORKING"
+    }
+  },
+
+  "dry_run_results": {
+    "keywords_mined": 680,
+    "classified": 680,
+    "scored": 665,
+    "auditor_approved": 15,
+    "within_daily_limits": 5,
+    "top_action": "ADD_FAQ_SECTION to /decision/how-much-house-can-i-afford (9 salary variations)"
+  },
+
+  "core_rule_enforced": true,
+  "core_rule": "Find trend → map to existing page → improve existing → deploy → measure. New page ONLY if no existing page satisfies.",
+
+  "integration_with_phase_15": {
+    "daily_run_order": [
+      "1. Technical health check",
+      "2. GSC API truth pull",
+      "3. GA4/Vercel pull",
+      "4. Google Suggest pull (phase17-keyword-miner.py)",
+      "5. Keyword classification (phase17-keyword-classifier.py)",
+      "6. Query-to-page matching + scoring (phase17-smart-scorer.py)",
+      "7. Auditor review (phase17-daily-optimizer.py)",
+      "8. Execute approved actions within daily limits",
+      "9. Deploy via GitHub auto-deploy",
+      "10. Report to Telegram"
+    ],
+    "output": ".optimizer-data/phase17-integration-into-phase15-report.json"
+  },
+
+  "safety_confirmations": {
+    "no_google_indexing_api": true,
+    "no_mass_content": true,
+    "no_off_topic_pages": true,
+    "no_risky_automations": true,
+    "no_blind_validation": true,
+    "auditor_gate_enforced": true,
+    "daily_limits_enforced": true,
+    "existing_page_first": true
+  },
+
+  "files_created": [
+    "scripts/phase17-keyword-miner.py",
+    "scripts/phase17-keyword-classifier.py",
+    "scripts/phase17-matcher-scorer-decider.py",
+    "scripts/phase17-smart-scorer.py",
+    "scripts/phase17-daily-optimizer.py",
+    ".optimizer-data/search-demand-keyword-mining.json",
+    ".optimizer-data/search-demand-keyword-classification.json",
+    ".optimizer-data/search-demand-existing-page-match.json",
+    ".optimizer-data/search-demand-opportunity-scoreboard.json",
+    ".optimizer-data/daily-content-action-decisions.json",
+    ".optimizer-data/daily-seo-optimizer-execution-log.json",
+    ".optimizer-data/phase17-auditor-decision-log.json",
+    ".optimizer-data/daily-deploy-measurement-log.json",
+    ".optimizer-data/search-demand-learning-memory.json",
+    ".optimizer-data/phase17-search-demand-engine-dry-run-report.json",
+    ".optimizer-data/phase17-integration-into-phase15-report.json",
+    ".optimizer-data/phase17-search-demand-capture-engine-report.json"
+  ],
+
+  "next_steps": [
+    "Execute first controlled run: add FAQ section to how-much-house-can-i-afford decision page",
+    "Add FAQ section to debt-snowball-vs-avalanche page",
+    "Integrate into Phase 15 daily autonomous cron",
+    "After 7-14 days: measure GSC impression/click changes from FAQ additions",
+    "Re-run with fresh GSC token for actual query data",
+    "Expand seed keywords as new search demand patterns emerge"
+  ]
+}

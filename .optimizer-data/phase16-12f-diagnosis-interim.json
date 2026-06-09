@@ -1,0 +1,93 @@
+{
+  "alternative_canonical_sample": [
+    {
+      "url": "https://www.qfinhub.com/?lang=hi",
+      "http_code": "",
+      "redirect_url": "200",
+      "header_canonical": "",
+      "body_canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com\"/>",
+      "robots": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home?lang=es",
+      "http_code": "",
+      "redirect_url": "200",
+      "header_canonical": "",
+      "body_canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/decision/can-i-afford-a-400k-home\"/>",
+      "robots": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire?lang=de",
+      "http_code": "",
+      "redirect_url": "200",
+      "header_canonical": "",
+      "body_canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/decision/how-much-do-i-need-to-retire\"/>",
+      "robots": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/rule-of-72",
+      "http_code": "",
+      "redirect_url": "200",
+      "header_canonical": "",
+      "body_canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/calculators/rule-of-72\"/>",
+      "robots": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a?lang=en",
+      "http_code": "",
+      "redirect_url": "200",
+      "header_canonical": "",
+      "body_canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a\"/>",
+      "robots": ""
+    }
+  ],
+  "redirect": {
+    "url": "https://www.qfinhub.com/hi",
+    "chain": "HTTP/200 -> https://www.qfinhub.com/?lang=hi",
+    "final": "200 https://www.qfinhub.com/?lang=hi",
+    "in_sitemap": true,
+    "internal_link_files": ""
+  },
+  "crawled_not_indexed": [
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-social-security",
+      "http_code": "200",
+      "canonical": "https://www.qfinhub.com/guides/how-to-use-social-security",
+      "robots": "index, follow",
+      "has_noindex": false,
+      "word_count": 7590,
+      "in_sitemap": true,
+      "page_type": "guide"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/auto-loan-717d83b1",
+      "http_code": "200",
+      "canonical": "https://www.qfinhub.com/scenario/auto-loan-717d83b1",
+      "robots": "noindex, follow",
+      "has_noindex": true,
+      "word_count": 7486,
+      "in_sitemap": true,
+      "page_type": "scenario"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/auto-loan-92918ea9",
+      "http_code": "200",
+      "canonical": "https://www.qfinhub.com/scenario/auto-loan-92918ea9",
+      "robots": "noindex, follow",
+      "has_noindex": true,
+      "word_count": 7458,
+      "in_sitemap": true,
+      "page_type": "scenario"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b",
+      "http_code": "200",
+      "canonical": "https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b",
+      "robots": "noindex, follow",
+      "has_noindex": true,
+      "word_count": 7376,
+      "in_sitemap": true,
+      "page_type": "scenario"
+    }
+  ]
+}

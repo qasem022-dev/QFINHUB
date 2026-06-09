@@ -1,0 +1,13 @@
+{
+  "issue_group": "Alternate page with proper canonical tag",
+  "gsc_count": 1,
+  "urls": [
+    "https://www.qfinhub.com/calculators/rule-of-72"
+  ],
+  "extracted_count": 1,
+  "extraction_method": "URL Inspection API",
+  "extraction_completeness": "PARTIAL",
+  "page_types": {
+    "calculator-T3": 1
+  }
+}

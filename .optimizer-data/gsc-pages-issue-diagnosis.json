@@ -1,0 +1,70 @@
+{
+  "generated": "2026-06-08T03:49:22.539049",
+  "diagnoses": [
+    {
+      "issue_group": "Discovered - currently not indexed",
+      "count": 162,
+      "what_google_means": "Google found these URLs (via sitemap or links) but chose not to crawl/index them yet. This is Google's quality/crawl budget decision.",
+      "is_real_problem": true,
+      "expected_behavior": false,
+      "cleanup_lag": false,
+      "affects_important": 9,
+      "affects_low_value": 153,
+      "root_cause": "quality/authority",
+      "should_validate_fix": false,
+      "explanation": "Do NOT click Validate Fix. These pages need CONTENT IMPROVEMENT first. 9 important pages affected (T1/T2 calculators, guides). Google is deprioritizing these due to thin content or low authority."
+    },
+    {
+      "issue_group": "URL is unknown to Google",
+      "count": 111,
+      "what_google_means": "Google has not discovered these URLs at all \u2014 not in sitemap processing, not via internal links, not via backlinks.",
+      "is_real_problem": true,
+      "expected_behavior": false,
+      "cleanup_lag": false,
+      "affects_important": 3,
+      "affects_low_value": 108,
+      "root_cause": "sitemap/internal linking",
+      "should_validate_fix": false,
+      "explanation": "Check if these URLs are in the sitemap. If yes, resubmit sitemap. If no, add them. Also add internal links from indexed pages to these URLs. 3 important pages affected."
+    },
+    {
+      "issue_group": "Submitted and indexed",
+      "count": 93,
+      "what_google_means": "Pages successfully crawled and indexed by Google",
+      "is_real_problem": false,
+      "expected_behavior": true,
+      "cleanup_lag": false,
+      "affects_important": 29,
+      "affects_low_value": 64,
+      "root_cause": "technical",
+      "should_validate_fix": false,
+      "explanation": "These pages are working correctly. No action needed for indexing. Focus on ranking improvement."
+    },
+    {
+      "issue_group": "Duplicate, Google chose different canonical than user",
+      "count": 1,
+      "what_google_means": "Google found a different canonical URL for this page than what the page declares.",
+      "is_real_problem": false,
+      "expected_behavior": false,
+      "cleanup_lag": false,
+      "affects_important": 0,
+      "affects_low_value": 1,
+      "root_cause": "canonical",
+      "should_validate_fix": false,
+      "explanation": "Minor canonical issue affecting 2 pages. Expected for some URL variants. Review self-referencing canonicals on these pages."
+    },
+    {
+      "issue_group": "Alternate page with proper canonical tag",
+      "count": 1,
+      "what_google_means": "Google found a different canonical URL for this page than what the page declares.",
+      "is_real_problem": false,
+      "expected_behavior": true,
+      "cleanup_lag": false,
+      "affects_important": 0,
+      "affects_low_value": 1,
+      "root_cause": "canonical",
+      "should_validate_fix": false,
+      "explanation": "Minor canonical issue affecting 2 pages. Expected for some URL variants. Review self-referencing canonicals on these pages."
+    }
+  ]
+}

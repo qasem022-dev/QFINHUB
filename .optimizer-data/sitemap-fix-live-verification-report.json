@@ -1,0 +1,42 @@
+{
+  "sitemap_has_auto-loan-717d83b1": false,
+  "sitemap_has_auto-loan-92918ea9": false,
+  "sitemap_has_retirement-planning-eb1dd78b": false,
+  "sitemap_fix_verified": true,
+  "sitemap_total_urls": 650,
+  "scenario_sitemap_urls": 0,
+  "scenario_sitemap_empty": true,
+  "/tools/auto-loan-717d83b1": {
+    "http_code": "404",
+    "robots": "<meta name=\"robots\" content=\"noindex\"",
+    "canonical": ""
+  },
+  "/scenario/auto-loan-717d83b1": {
+    "http_code": "200",
+    "robots": "<meta name=\"robots\" content=\"noindex, follow\"",
+    "canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/scenario/auto-loan-717d83b1\""
+  },
+  "/tools/auto-loan-92918ea9": {
+    "http_code": "404",
+    "robots": "<meta name=\"robots\" content=\"noindex\"",
+    "canonical": ""
+  },
+  "/scenario/auto-loan-92918ea9": {
+    "http_code": "200",
+    "robots": "<meta name=\"robots\" content=\"noindex, follow\"",
+    "canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/scenario/auto-loan-92918ea9\""
+  },
+  "/tools/retirement-planning-eb1dd78b": {
+    "http_code": "404",
+    "robots": "<meta name=\"robots\" content=\"noindex\"",
+    "canonical": ""
+  },
+  "/scenario/retirement-planning-eb1dd78b": {
+    "http_code": "200",
+    "robots": "<meta name=\"robots\" content=\"noindex, follow\"",
+    "canonical": "<link rel=\"canonical\" href=\"https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b\""
+  },
+  "internal_links_auto-loan-717d83b1": false,
+  "internal_links_auto-loan-92918ea9": false,
+  "internal_links_retirement-planning-eb1dd78b": false
+}

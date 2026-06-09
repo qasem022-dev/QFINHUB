@@ -1,70 +1,25 @@
 {
-  "generated_at": "2026-06-06T23:46:09Z",
-  "title": "QFINHUB Autonomous Business Growth Scoreboard \u2014 Phase 16.10",
-  "current_date": "2026-06-07",
-  "days_since_launch": 35,
-  "phase": "16.10 \u2014 First Reply + First Click + Topical Cleanup",
-  "traffic": {
-    "daily_visitors": 0,
-    "monthly_visitors": "~0",
-    "monthly_target": "5,000-25,000 (Month 2)",
-    "gap_to_target": "INFINITE \u2014 need first click",
-    "ga4_users_7d": 6,
-    "ga4_sessions_7d": 6,
-    "status": "\ud83d\udd34 OFF-TRACK"
-  },
-  "gsc_performance": {
-    "impressions_7d_manual": 311,
-    "impressions_7d_api": 213,
+  "title": "QFINHUB Business Growth Scoreboard",
+  "generated": "2026-06-07T02:43:00Z",
+  "data_source": "gsc-api-truth-current.json (GSC Search Analytics API \u2014 page dimension, rowLimit=250)",
+  "gsc_data_status": "LIVE_API_OK",
+  "gsc_latest_date": "2026-06-05",
+  "metrics": {
+    "impressions_7d": 304,
     "clicks_7d": 0,
-    "ctr": "0.0%",
-    "avg_position": 19.3,
-    "ctr_fixes_total": 14,
-    "ctr_fixes_applied_to_code": 12,
-    "ctr_planned_not_applied": 2,
-    "impressions_covered_by_fixes": "~195/311 (62.7%)",
-    "ctr_round_6_fixes": 5,
-    "ctr_round_6_applied_to_code": 3,
-    "remaining_zero_click_pages": 33,
-    "off_topic_impressions": "34/213 (16.0%)",
-    "data_freshness": "STALE \u2014 GSC token DEAD (refresh_token expired). Using Jun 6 cached baseline.",
-    "first_click_watch": "10 pages monitored, 0 clicks",
-    "first_click_status": "AWAITING_FIRST_CLICK"
+    "ctr_7d_pct": 0.0,
+    "avg_position_7d": 33.2,
+    "pages_with_impressions_7d": 45,
+    "previous_7d_impressions": 291,
+    "previous_7d_clicks": 0,
+    "week_over_week_impressions_change_pct": "+13 (+4.5%)"
   },
-  "revenue": {
-    "monthly": "$0.00",
-    "adsense_status": "ads.txt LIVE, application submitted, awaiting review"
+  "manual_ui_comparison_jun7": {
+    "impressions": 436,
+    "api_vs_ui_gap_pct": 30.3,
+    "note": "API undercounts by 30.3% vs Qasem's manual UI check. API is the pipeline truth; UI is user-observed comparison."
   },
-  "authority": {
-    "outreach_total_all_time": 25,
-    "outreach_sent": 20,
-    "outreach_held": 5,
-    "follow_ups_sent": 7,
-    "replies_received": 0,
-    "backlinks_won": 0,
-    "referring_domains": 0,
-    "reply_accelerator_batch1_sent": 5,
-    "reply_accelerator_batch2_planned": 5,
-    "widget_share_packet": "READY",
-    "linkable_asset_1": "BUILT + DEPLOYED + VERIFIED",
-    "linkable_asset_2": "PLANNED (Debt Snowball vs Avalanche Widget)",
-    "next_followup_date": "2026-06-13",
-    "status": "\ud83d\udd34 OFF-TRACK \u2014 0 backlinks"
-  },
-  "topical_authority": {
-    "off_topic_policy": "CREATED",
-    "90_day_fiance_decision": "HOLD \u2014 page effectively deleted (not in posts.ts, returns 404)",
-    "off_topic_watchlist": [],
-    "status": "CLEAN \u2014 no active off-topic pages draining authority"
-  },
-  "overall_status": "\ud83d\udd34 OFF-TRACK",
-  "biggest_blocker": "GSC token DEAD \u2014 cannot detect first click. 0 clicks + 0 backlinks. Awaiting Google recrawl of 12 CTR fixes.",
-  "gap_to_1M_monthly_mo5": "1,000,000 \u2014 currently 0",
-  "gap_to_50k_monthly_mo14": "$50,000 \u2014 currently $0.00",
-  "urgent_actions": [
-    "Qasem must re-authenticate Google OAuth token to resume live GSC monitoring",
-    "Wait 3-10 days for Google recrawl of CTR fixes (12 applied to code)",
-    "Build Linkable Asset #2 (Debt Snowball vs Avalanche Widget) \u2014 target Jun 8-9",
-    "Send Reply Accelerator Batch 2 when daily limit allows (Jun 8)"
-  ]
+  "indexed_pages_ui": 238,
+  "off_track": true,
+  "off_track_reason": "0 clicks, avg position worsening (19.7\u219233.2), 0 backlinks"
 }

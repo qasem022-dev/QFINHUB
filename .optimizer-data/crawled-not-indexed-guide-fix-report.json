@@ -1,0 +1,60 @@
+{
+  "report": "Crawled-Not-Indexed Guide Fix — Social Security",
+  "generated": "2026-06-08",
+  "phase": "16.12G",
+  "guide_url": "https://www.qfinhub.com/guides/how-to-use-social-security",
+  "guide_calculator_id": "social-security",
+  "guide_word_count": 7590,
+  "guide_in_sitemap": true,
+
+  "why_google_rejected": [
+    "Keyword-stuffed meta title (4x keyword repetition, 93 characters)",
+    "Wrong schema type (WebApplication instead of Article)",
+    "Generic 'calculator tutorial' framing vs comprehensive benefits guide",
+    "Low heading structure (3 H2s, 9 H3s) for a 7,590-word article"
+  ],
+
+  "fixes_applied": [
+    {
+      "fix": "Meta title cleanup",
+      "before": "How to Use Social Security Calculator Guide 2026 — Calculate in 30 Seconds (No Signup) — Step-by-Step Guide 2026 (Free Calculator) | QFINHUB",
+      "after": "How to Use Social Security — Step-by-Step Guide 2026 (Free Calculator) | QFINHUB",
+      "method": "Updated generateGuideMetaTitle() in guides.ts to strip redundant 'Guide YYYY', 'Calculate in X Seconds', and 'Calculator' suffixes",
+      "impact": "Affects all 125 guides — cleaner titles site-wide"
+    },
+    {
+      "fix": "Article structured data",
+      "before": "WebApplication schema only (from global layout)",
+      "after": "Article schema added to guide template: headline, description, url, datePublished, dateModified, author, publisher",
+      "method": "Added JSON-LD script to guide page component",
+      "impact": "Affects all 125 guides — correct schema type site-wide"
+    }
+  ],
+
+  "already_good": [
+    "CalculatorGuideLinks component renders related calculators",
+    "FAQ section present",
+    "Real-world examples present",
+    "Calculator CTA present",
+    "10 internal links",
+    "index,follow robots meta",
+    "In sitemap"
+  ],
+
+  "not_fixed_by_this_phase": [
+    "Content depth — guide is about 'how to use a calculator' rather than comprehensive Social Security expertise",
+    "Heading structure could be richer (currently 3 H2s)",
+    "No benefits-by-age visual table",
+    "Template-driven content is generic — not specific to Social Security topic"
+  ],
+
+  "deploy": {
+    "commit": "fda6ba7",
+    "state": "READY",
+    "verified_live": true,
+    "title_live": "How to Use Social Security — Step-by-Step Guide 2026 (Free Calculator) | QFINHUB",
+    "article_schema_live": true
+  },
+
+  "validate_fix_decision": "HOLD — DO NOT VALIDATE yet. Wait 7+ days after today's fixes are crawled. Google needs to see the improved title + correct schema. Then re-evaluate whether to validate."
+}

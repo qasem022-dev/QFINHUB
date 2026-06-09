@@ -1,0 +1,45 @@
+[0;34m[04:40:06][0m 🚀 QFINHUB Post-Deploy Operations
+[0;34m[04:40:06][0m    Project: /home/admin1/qfinhub
+[0;34m[04:40:06][0m    Mode: FULL DEPLOY
+[0;34m[04:40:06][0m    Log: /home/admin1/qfinhub/.optimizer-data/post-deploy-ops_2026-06-08_04-40-06.log
+[0;34m[04:40:06][0m 
+[0;34m[04:40:06][0m 📋 Phase 1: Safety Check — Paused Automations
+[0;34m[04:40:06][0m    Confirm these are ALL paused before proceeding:
+[0;34m[04:40:06][0m    - Blog Agent
+[0;34m[04:40:06][0m    - Scenario Generator
+[0;34m[04:40:06][0m    - Scenario Upgrades
+[0;34m[04:40:06][0m    - SEO Indexing Engine
+[0;34m[04:40:06][0m    - Sitemap Ping
+[0;32m   ✅ Safety check passed[0m
+[0;34m[04:40:06][0m 
+[0;34m[04:40:06][0m 📋 Phase 2: Git Status
+[0;34m[04:40:06][0m    Branch: main
+[0;34m[04:40:06][0m    Commit: 69e2407
+[1;33m   ⚠️  Uncommitted changes detected. These will NOT be deployed.[0m
+[0;34m[04:40:06][0m 
+[0;34m[04:40:06][0m 📋 Phase 3: Deploy to Vercel
+📦 Deploy Verifier v2 — commit: 69e2407
+   Base URL: https://www.qfinhub.com
+❌ VERCEL_DEPLOY_HOOK_URL not set
+
+   Falling back to Vercel API...
+❌ VERCEL_TOKEN and VERCEL_PROJECT_ID required for API deploy
+
+❌ Cannot trigger deployment. Check credentials.
+   Set VERCEL_DEPLOY_HOOK_URL (preferred) or VERCEL_TOKEN + VERCEL_PROJECT_ID
+
+🔍 Verifying key URLs...
+   ✅ Homepage: https://www.qfinhub.com/ → 200
+   ✅ Sitemap: https://www.qfinhub.com/sitemap.xml → 200
+   ✅ News Sitemap: https://www.qfinhub.com/news-sitemap.xml → 200
+   ✅ Robots.txt: https://www.qfinhub.com/robots.txt → 200
+   ✅ Widget Landing: https://www.qfinhub.com/widgets/mortgage-affordability-embed → 200
+   ✅ Embed Route: https://www.qfinhub.com/embed/mortgage-affordability → 200
+   ✅ Decision — 400k Home: https://www.qfinhub.com/decision/can-i-afford-a-400k-home → 200
+   ✅ Decision — Retire at 45: https://www.qfinhub.com/decision/retire-at-45-with-1-million → 200
+   ✅ Decision — Emergency Fund: https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need → 200
+   ✅ Calc — Mortgage: https://www.qfinhub.com/calculators/mortgage-calculator → 200
+   ✅ Calc — Compound Interest: https://www.qfinhub.com/calculators/compound-interest → 200
+   ✅ Calc — 401k: https://www.qfinhub.com/calculators/401k-calculator → 200
+
+❌ Some checks failed

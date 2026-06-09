@@ -1,0 +1,23 @@
+{
+  "title": "URL Inspection API 403 Root Cause Report",
+  "generated": "2026-06-07T06:50:00+03:00",
+  "root_cause": "TOKEN_EXPIRY_DURING_LONG_RUNS",
+  "evidence": {
+    "property_test": "Only 1 property: https://www.qfinhub.com/ with siteOwner permission. No property ambiguity.",
+    "direct_test": "Blog, tool, and guide URLs ALL succeed when tested directly with fresh token. 5/5 passed.",
+    "bulk_script_issue": "Old script only refreshed on 401/403 error. During long runs (649 URLs), token expires silently and the refresh mechanism failed because the token refresh endpoint also received 403 when the refresh_token was too stale.",
+    "fixes_applied": [
+      "Proactive token refresh every 50 URLs (not just on error)",
+      "Timeout increased from 10s to 20s",
+      "3-retry loop with backoff",
+      "Token refreshed before starting run"
+    ]
+  },
+  "not_the_cause": [
+    "Property mismatch (only 1 property, correct format)",
+    "URL normalization (all URLs use correct https://www.qfinhub.com/ format)",
+    "Path-level permissions (GSC permissions are property-level, not path-level)",
+    "Canonical mismatch (all URLs resolve to their declared URLs)"
+  ],
+  "status": "FIXED — new script launched with proactive refresh. Awaiting results."
+}

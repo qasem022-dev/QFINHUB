@@ -1,0 +1,16 @@
+{
+  "local_commit": "69e2407da345c8cbd58bcefd0cd4543295f5c1f9 Phase 16.12F: Remove 3 noindexed scenario pages from sitemap 2026-06-08 04:39:38 +0300",
+  "vercel_id": "x-vercel-id: bom1::dpc6t-1780883115015-7817fbee3fe6",
+  "vercel_cache": "x-vercel-cache: PRERENDER",
+  "vercel_api_deployments": {
+    "error": {
+      "code": "bad_request",
+      "message": "Invalid API version"
+    }
+  },
+  "git_remote": "origin\thttps://github.com/qasem022-dev/QFINHUB.git (fetch)\norigin\thttps://github.com/qasem022-dev/QFINHUB.git (push)",
+  "sitemap_auto-loan-717d83b1": "not found",
+  "sitemap_auto-loan-92918ea9": "not found",
+  "sitemap_retirement-planning-eb1dd78b": "not found",
+  "next_build_id": ""
+}

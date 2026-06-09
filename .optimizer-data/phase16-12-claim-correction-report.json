@@ -1,0 +1,69 @@
+{
+  "title": "Phase 16.12B Claim Correction Report",
+  "generated": "2026-06-07T06:15:00+03:00",
+  
+  "corrected_claims": {
+    "inspected_urls": {
+      "value": 101,
+      "label": "EXACT",
+      "note": "101 URLs inspected via GSC URL Inspection API with 0 errors. Confirmed by full-url-inspection-results.json."
+    },
+    "total_sitemap_urls": {
+      "value": 649,
+      "label": "EXACT",
+      "note": "Counted from live .next/server/app/sitemap.xml.body"
+    },
+    "indexed_pages": {
+      "original_claim": "~129 (20% projected)",
+      "corrected": "SAMPLE_BASED — 20/101 inspected were indexed. Extrapolating to 649 gives ~129. This is an ESTIMATE, not a count.",
+      "gsc_ui_value": "238 indexed pages (Qasem's manual check)",
+      "resolution": "We cannot claim '20% indexed' as fact. We can say: 'In a 101-URL sample, 19.8% were indexed. GSC UI reports 238 total indexed pages.'"
+    },
+    "discovered_not_indexed": {
+      "original_claim": "~347 (53%)",
+      "corrected": "SAMPLE_BASED — 54/101 inspected were discovered-not-indexed. Extrapolation only."
+    },
+    "unknown_to_google": {
+      "original_claim": "~167 (26%)",
+      "corrected": "SAMPLE_BASED — 26/101 inspected were unknown. Extrapolation only."
+    },
+    "duplicate_canonical": {
+      "original_claim": "~6 (1%)",
+      "corrected": "SAMPLE_BASED — 1/101 inspected had duplicate canonical issue. Only one confirmed case."
+    },
+    "domain_age_claim": {
+      "original_claim": "6-month-old domain",
+      "verification_needed": "NEEDS_VERIFICATION — not independently verified. Based on creation date in Google OAuth client (May 19, 2026) which may not reflect actual domain registration date.",
+      "label": "UNVERIFIED"
+    },
+    "domain_authority_ceiling": {
+      "original_claim": "Domain authority is the single biggest blocker",
+      "corrected": "INFERRED — supported by (a) SERP competitor analysis showing DR 70-100 competitors, (b) all 38 T1 queries ranking at positions 71-99, (c) 0 backlinks confirmed. However, this is a correlation, not a controlled experiment. Other factors (content quality, site structure, crawl budget) may also contribute.",
+      "label": "INFERRED_WITH_STRONG_EVIDENCE"
+    },
+    "backlinks_count": {
+      "value": 0,
+      "label": "EXACT",
+      "note": "Confirmed — 30 outreach sent, 0 replies received."
+    },
+    "gsc_impressions": {
+      "value": 304,
+      "label": "EXACT",
+      "source": "GSC Search Analytics API, page dimension, rowLimit=250, 2026-05-31 to 2026-06-07"
+    },
+    "gsc_clicks": {
+      "value": 0,
+      "label": "EXACT",
+      "source": "GSC Search Analytics API"
+    }
+  },
+  
+  "measurement_taxonomy": {
+    "EXACT": "Verified count from API or file — no estimation.",
+    "ESTIMATED": "Extrapolated from sample or corrected via factor. Should be flagged.",
+    "SAMPLE_BASED": "Based on partial inspection (101/649). Cannot be claimed as site-wide fact.",
+    "UNVERIFIED": "Claim not independently verified. Needs additional check.",
+    "INFERRED_WITH_STRONG_EVIDENCE": "Supported by multiple data points but not experimentally proven.",
+    "NEEDS_FULL_INSPECTION": "Requires completing the full 649 URL inspection to become EXACT."
+  }
+}

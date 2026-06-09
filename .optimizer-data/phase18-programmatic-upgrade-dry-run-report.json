@@ -1,0 +1,53 @@
+{
+  "report": "Phase 18 — Programmatic SEO Quality Upgrade Engine — Dry Run",
+  "generated": "2026-06-08 06:30 UTC",
+  "mode": "DRY_RUN",
+  "changes_executed": false,
+
+  "inventory": {
+    "total_pages": 649,
+    "programmatic": 491,
+    "core_pages": 158,
+    "by_type": {"calculator": 128, "guide": 125, "tool": 225, "blog": 106, "compare": 35, "decision": 15, "widget": 2, "static": 13}
+  },
+
+  "gsc_coverage": {
+    "submitted_and_indexed": 38,
+    "discovered_not_indexed": 55,
+    "url_unknown_to_google": 57,
+    "no_gsc_data": 499
+  },
+
+  "upgrade_targets": {
+    "upgrade_now": 13,
+    "upgrade_later": 4,
+    "ctr_fix": 8,
+    "internal_link_push": 241,
+    "consolidation_review": 225,
+    "hold_core": 145
+  },
+
+  "top_upgrade_targets": [
+    {"path": "/guides/how-to-use-cash-flow", "score": 62, "reason": "Discovered not indexed — needs internal links from indexed pages"},
+    {"path": "/guides/how-to-use-dcf-analysis", "score": 62},
+    {"path": "/guides/how-to-use-inventory-turnover", "score": 62},
+    {"path": "/guides/how-to-use-em-fund", "score": 62},
+    {"path": "/guides/how-to-use-debt-to-income", "score": 62}
+  ],
+
+  "top_ctr_fix_targets": [
+    {"path": "/blog/investing-cybersecurity-stocks-are-surging-as-threats-grow", "score": 60},
+    {"path": "/blog/how-to-pay-off-credit-card-debt-fast-2026-complete-guide", "score": 60},
+    {"path": "/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars", "score": 60}
+  ],
+
+  "consolidation_review_note": "225 tools flagged — these are Tier 2/3 programmatic tools with no GSC demand. Review individually before any action. DO NOT mass-delete.",
+
+  "expected_impact": {
+    "guide_upgrades": "13 guides → better internal linking + Phase 16.12G fixes should improve indexation",
+    "ctr_fixes": "8 blogs → title/meta improvements could generate first clicks",
+    "internal_links": "241 pages → systematic link building from indexed pages"
+  },
+
+  "risk_assessment": "Low. All actions are improvements to existing pages. No new pages created. No mass changes."
+}

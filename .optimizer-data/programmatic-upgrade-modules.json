@@ -1,0 +1,100 @@
+{
+  "report": "Programmatic SEO Upgrade Modules + Execution Rules + New Page Rules + Index Bloat Control",
+  "generated": "2026-06-08",
+  "phase": "18",
+
+  "upgrade_modules": {
+    "A_short_answer": {
+      "description": "Direct answer block (50-80 words) targeting main query",
+      "applies_to": ["guides", "blog", "decision", "compare"],
+      "priority": 1,
+      "example": "For a mortgage affordability guide: 'The 28/36 rule means your housing should cost ≤28% of gross income. At $100K income, you can afford ~$350K home with 20% down at 6.5%. Use our calculator for your exact numbers.'"
+    },
+    "B_real_example": {
+      "description": "Realistic example with specific numbers showing input → result",
+      "applies_to": ["guides", "blog", "decision", "compare"],
+      "priority": 2,
+      "example": "Meet Sarah, earning $85K with $500/month in student loans. With 20% down at 6.5%, she qualifies for a $275K home. Monthly payment: $1,983."
+    },
+    "C_comparison_table": {
+      "description": "Useful for vs/best/compare queries. No fake rankings.",
+      "applies_to": ["compare", "guides"],
+      "priority": 2
+    },
+    "D_faq_expansion": {
+      "description": "3-6 FAQs based on Google Suggest/PAA/GSC queries",
+      "applies_to": ["guides", "blog", "decision", "compare"],
+      "priority": 3,
+      "faq_schema": "FAQPage schema only when FAQs are visibly rendered on page"
+    },
+    "E_calculator_cta": {
+      "description": "Clear call to use related calculator. No answer cannibalization.",
+      "applies_to": ["guides", "blog", "compare"],
+      "priority": 1,
+      "template": "Try our free {calculator_name} Calculator → Enter your numbers for personalized results."
+    },
+    "F_related_calculators": {
+      "description": "3-6 contextual links to relevant calculators",
+      "applies_to": ["guides", "blog", "compare", "decision"],
+      "priority": 3
+    },
+    "I_schema_fix": {
+      "description": "Ensure correct schema type per page",
+      "mapping": {
+        "calculator": "WebApplication + FAQPage",
+        "guide": "Article",
+        "blog": "Article",
+        "decision": "Article",
+        "compare": "Article",
+        "widget": "WebApplication"
+      },
+      "priority": 2
+    }
+  },
+
+  "daily_execution_limits": {
+    "upgrade_existing_pages": 3,
+    "internal_links": 15,
+    "ctr_fixes": 3,
+    "faq_additions": 3,
+    "new_pages_max": 1,
+    "new_pages_min_score": 90,
+    "mass_generation": false
+  },
+
+  "execution_priority_order": [
+    "P0: Technical fixes (canonical, schema, robots, sitemap)",
+    "P1: Pages with impressions and 0 clicks (CTR fix)",
+    "P2: Indexed but ranking 11-50 (internal links + content)",
+    "P3: Discovered/crawled not indexed with demand (upgrade to indexable)",
+    "P4: Tier 2/3 calculators with business value",
+    "P5: Compare/guide pages with demand",
+    "P6: Linkable asset/widget pages",
+    "P7: Noindex/consolidation review (Auditor + Technical Guardian required)"
+  ],
+
+  "new_page_rules": {
+    "conditions": [
+      "Query has evidence from GSC, Google Suggest, or Trends",
+      "No existing page can satisfy intent",
+      "Page has calculator/financial decision connection",
+      "Not off-topic or duplicate/cannibalizing",
+      "Expected quality score ≥88",
+      "Auditor approved"
+    ],
+    "required_elements": [
+      "Unique title/meta", "Short answer", "Calculator/tool CTA",
+      "Real example", "FAQ", "Related calculators/decisions",
+      "Schema", "Self-canonical", "index,follow", "Sitemap inclusion"
+    ]
+  },
+
+  "index_bloat_control": {
+    "classifications": ["KEEP", "IMPROVE", "CONSOLIDATE", "NOINDEX_REVIEW", "REMOVE_FROM_SITEMAP", "HOLD"],
+    "approval_required_for": ["noindex", "deletion", "canonical changes", "redirects", "consolidation"],
+    "approval_gate": "Auditor + Technical Guardian",
+    "current_noindex_review_count": 0,
+    "current_consolidation_review_count": 225,
+    "note": "225 tools flagged for consolidation review — most are Tier 2/3 programmatic tools with no demand. Do NOT delete. Review individually."
+  }
+}

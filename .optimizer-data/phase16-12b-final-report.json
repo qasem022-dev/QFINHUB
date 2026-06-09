@@ -1,0 +1,42 @@
+{
+  "title": "Phase 16.12B \u2014 API Data Fix + Full Inspection + Evidence-Based Diagnosis \u2014 FINAL REPORT",
+  "generated": "2026-06-07T02:51:07Z",
+  "part_a_api_fix": {
+    "status": "COMPLETE",
+    "gsc_auth": "HEALTHY \u2014 token refresh working, Search Analytics accessible",
+    "api_truth": {
+      "impressions_7d": 304,
+      "clicks_7d": 0,
+      "avg_position_7d": 33.2,
+      "week_over_week": "+4.5% imp, position worsened from 19.7 to 33.2"
+    },
+    "policy": "API is the only accepted source for current data. Cache/manual values are comparison only.",
+    "scoreboards_updated": [
+      "business-growth-scoreboard.json",
+      "first-click-watchlist.json"
+    ]
+  },
+  "part_b_inspection": {
+    "status": "BLOCKED \u2014 101 valid + 149 errors (403 PERMISSION_DENIED)",
+    "valid_inspected": 101,
+    "blocked_by_type": {
+      "blog": 106,
+      "calculator-T3": 39,
+      "tool": 4
+    },
+    "blocker": "GSC URL Inspection API returns 403 for blog/tool/guide/decision/compare URLs. Only calculators and static pages are inspectable with current permissions."
+  },
+  "what_changed_from_original_phase16_12": {
+    "gsc_data": "Now based on API-only (304 imp) with documented undercount vs UI. Not using cached files or manual values as pipeline truth.",
+    "claims": "All claims now labeled EXACT/ESTIMATED/SAMPLE_BASED. '20% indexed' \u2192 '19.8% in 101-URL sample, 238 indexed per GSC UI'.",
+    "diagnosis": "Authority ceiling is now labeled INFERRED_WITH_STRONG_EVIDENCE, not stated as fact. All contributing factors documented separately.",
+    "coverage": "Exact counts from 101 valid inspections. Full extrapolation removed. 149-URL blockage documented with exact error."
+  },
+  "compliance": {
+    "no_indexing_api": true,
+    "no_mass_request_indexing": true,
+    "no_stale_gsc_data_as_live": true,
+    "no_old_automatons": true,
+    "all_claims_labeled": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "issue_group": "Duplicate, Google chose different canonical than user",
+  "gsc_count": 1,
+  "urls": [
+    "https://www.qfinhub.com/calculators/pmi-calculator"
+  ],
+  "extracted_count": 1,
+  "extraction_method": "URL Inspection API",
+  "extraction_completeness": "PARTIAL",
+  "page_types": {
+    "calculator-T3": 1
+  }
+}

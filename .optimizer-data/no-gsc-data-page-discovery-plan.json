@@ -1,0 +1,65 @@
+{
+  "report": "No-GSC-Data Page Discovery Plan",
+  "generated": "2026-06-08",
+  "phase": "18.1",
+  "total_no_gsc_data": 499,
+  "breakdown": {
+    "tools_without_demand": 225,
+    "guides_undiscovered": "~110",
+    "blog_posts": "~90",
+    "comparisons": "~35",
+    "other": "~39"
+  },
+
+  "classification": {
+    "important_but_undiscovered": "110 guides + 35 comparisons — good templates, no crawl",
+    "low_priority": "225 tools — duplicate calculator parameterizations",
+    "thin_duplicate_risk": "225 tools — high risk of diluting authority",
+    "cleanup_lag": "~10 — old pages that should be removed from sitemap",
+    "needs_internal_links": "~150 — guides and comparisons that need links from indexed pages"
+  },
+
+  "discovery_plan": {
+    "phase_1_internal_links": {
+      "target": "20 highest-value undiscovered guides",
+      "source_pages": "Indexed blog posts + calculator pages + decision pages",
+      "action": "Add 2-3 contextual links per guide from indexed, relevant pages",
+      "pages": [
+        "/guides/how-to-use-cash-flow",
+        "/guides/how-to-use-dcf-analysis",
+        "/guides/how-to-use-inventory-turnover",
+        "/guides/how-to-use-em-fund",
+        "/guides/how-to-use-debt-to-income",
+        "/guides/how-to-use-car-affordability",
+        "/guides/how-to-use-college-savings",
+        "/guides/how-to-use-credit-card-payoff",
+        "/guides/how-to-use-insurance-needs",
+        "/guides/how-to-use-fica-calculator",
+        "/guides/how-to-use-auto-loan",
+        "/guides/how-to-use-roi-calculator",
+        "/guides/how-to-use-break-even",
+        "/guides/how-to-use-net-worth",
+        "/guides/how-to-use-savings-goal",
+        "/guides/how-to-use-inflation-calculator",
+        "/guides/how-to-use-currency-converter",
+        "/guides/how-to-use-tip-calculator",
+        "/guides/how-to-use-basic-calculator",
+        "/guides/how-to-use-compound-interest"
+      ]
+    },
+    "phase_2_quality_upgrades": {
+      "target": "35 comparisons",
+      "action": "Add FAQ sections, real examples, and calculator CTAs to comparison pages"
+    },
+    "phase_3_consolidation_review": {
+      "target": "225 tools",
+      "action": "Review 25/week. Remove from sitemap if confirmed duplicates. Hold otherwise."
+    },
+    "phase_4_hold": {
+      "target": "~90 blogs",
+      "action": "Blogs already have content. Focus on CTR fixes and internal links to guides."
+    }
+  },
+
+  "note": "Phase 16.12G (title + Article schema) and Phase 17 CTR fixes address the quality issues. Internal links from indexed pages are the primary discovery accelerator."
+}

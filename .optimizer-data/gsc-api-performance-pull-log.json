@@ -1,0 +1,59 @@
+{
+  "title": "GSC API Performance Pull Log",
+  "generated": "2026-06-07T02:41:36Z",
+  "property": "https://www.qfinhub.com",
+  "date_range_7d": {
+    "start": "2026-05-31",
+    "end": "2026-06-07"
+  },
+  "api_calls": [
+    {
+      "label": "7d_query_r250",
+      "dimensions": [
+        "query"
+      ],
+      "rowLimit": 250,
+      "startRow": 0,
+      "rows_returned": 59,
+      "impressions": 156,
+      "clicks": 0,
+      "avg_position": 52.6
+    },
+    {
+      "label": "7d_page_r250",
+      "dimensions": [
+        "page"
+      ],
+      "rowLimit": 250,
+      "startRow": 0,
+      "rows_returned": 45,
+      "impressions": 304,
+      "clicks": 0,
+      "avg_position": 33.2
+    },
+    {
+      "label": "7d_query_page_r250",
+      "dimensions": [
+        "query",
+        "page"
+      ],
+      "rowLimit": 250,
+      "startRow": 0,
+      "rows_returned": 59,
+      "impressions": 156,
+      "clicks": 0,
+      "avg_position": 52.6
+    },
+    {
+      "label": "28d_page_r250",
+      "impressions": 899,
+      "rows": 112
+    },
+    {
+      "label": "7d_page_r500",
+      "impressions": 304,
+      "rows": 45
+    }
+  ],
+  "note": "API truth for 7d impressions is the PAGE dimension with rowLimit=250. Query dimension undercounts due to anonymization."
+}

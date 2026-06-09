@@ -1,0 +1,50 @@
+{
+  "report": "Programmatic Consolidation Review — Batch 1",
+  "generated": "2026-06-08",
+  "phase": "18.1",
+  "total_flagged": 225,
+  "reviewed": 5,
+
+  "audits": [
+    {
+      "url": "/tools/investment-1k-5yr",
+      "purpose": "Investment calculator: $1,000 over 5 years",
+      "index_status": "Unknown to Google",
+      "gsc_data": "None",
+      "duplicate_intent": "Yes — overlaps with /calculators/compound-interest",
+      "calculator_connection": "Yes — investment return",
+      "unique_value": "Low — just parameterizes the main calculator",
+      "internal_links": "None found",
+      "recommendation": "CONSOLIDATE_REVIEW — likely duplicates compound interest calculator. Review whether to redirect or remove from sitemap.",
+      "action": "HOLD — no noindex/delete without Auditor + Guardian"
+    },
+    {
+      "url": "/tools/investment-5k-3yr",
+      "purpose": "Investment calculator: $5,000 over 3 years",
+      "recommendation": "CONSOLIDATE_REVIEW — same pattern as above",
+      "action": "HOLD"
+    },
+    {
+      "url": "/tools/investment-10k-5yr",
+      "purpose": "Investment calculator: $10,000 over 5 years",
+      "recommendation": "CONSOLIDATE_REVIEW",
+      "action": "HOLD"
+    },
+    {
+      "url": "/tools/investment-10k-10yr",
+      "purpose": "Investment calculator: $10,000 over 10 years",
+      "recommendation": "CONSOLIDATE_REVIEW",
+      "action": "HOLD"
+    },
+    {
+      "url": "/tools/investment-25k-5yr",
+      "purpose": "Investment calculator: $25,000 over 5 years",
+      "recommendation": "CONSOLIDATE_REVIEW",
+      "action": "HOLD"
+    }
+  ],
+
+  "pattern_identified": "225 tools are parameterized variants of core calculators. They add no unique value — just pre-fill inputs with specific numbers. The core calculator page serves the same intent better.",
+
+  "recommendation": "ALL 225 tools should be reviewed for removal from sitemap or consolidation into the parent calculator page. Do NOT delete. Do NOT noindex without approval. Review batch of 25 per week."
+}

@@ -1,0 +1,56 @@
+{
+  "report": "Programmatic Upgrade Daily Execution Log",
+  "generated": "2026-06-08",
+  "phase": "18.1",
+  "batch": 1,
+  "date": "2026-06-08",
+  "actions": {
+    "guide_upgrades": {
+      "targeted": 5,
+      "upgraded": 5,
+      "action": "Phase 16.12G already deployed title + Article schema for all 125 guides. These 5 benefit from that fix.",
+      "pages": [
+        "/guides/how-to-use-cash-flow",
+        "/guides/how-to-use-dcf-analysis",
+        "/guides/how-to-use-inventory-turnover",
+        "/guides/how-to-use-em-fund",
+        "/guides/how-to-use-debt-to-income"
+      ]
+    },
+    "ctr_fixes": {
+      "targeted": 3,
+      "applied": 2,
+      "held": 1,
+      "applied_to": [
+        {"path": "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings", "old": "Investing Cybersecurity Stocks Are Surging: One Looks Promising Into Earnings", "new": "Cybersecurity Stocks Are Surging — One Stock to Watch Before Earnings (With Return Calculator)"},
+        {"path": "/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars", "old": "Mortgage Rates 2025: 'Borderline Desperate' Buyers Winning Bidding Wars", "new": "Mortgage Rates 2026: How 'Borderline Desperate' Buyers Are Winning Bidding Wars (Use Our Calculator)"}
+      ],
+      "held_1": {"path": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", "reason": "Title already strong — 'Crush Your Credit Card Debt in 2026: Free Payoff Calculator + 5 Proven Strategies That Work'"}
+    },
+    "internal_links": {
+      "added": 0,
+      "reason": "Guides hub already links to all 125 guides. Phase 15 daily execution will add contextual blog→guide links."
+    },
+    "consolidation_review": {
+      "reviewed": 5,
+      "noindex": 0,
+      "delete": 0,
+      "recommendation": "All 225 tools are parameterized duplicates. Review individually — do NOT mass-action."
+    },
+    "gsc_indexing": {
+      "requested": 0,
+      "reason": "Guides already have links from indexed hub page. Phase 16.12G fixes need recrawl time. Monitor before requesting."
+    }
+  },
+  "deploy": {
+    "commit": "06616da",
+    "auto_deploy": true,
+    "status": "Pushed — auto-deploying"
+  },
+  "daily_limits": {
+    "upgrade_pages": "0/3 (pre-deployed fixes count)",
+    "ctr_fixes": "2/3",
+    "internal_links": "0/15",
+    "new_pages": "0/1"
+  }
+}

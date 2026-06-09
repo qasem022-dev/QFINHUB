@@ -1,0 +1,50 @@
+{
+  "report": "GSC Failed Groups — Fix Log",
+  "generated": "2026-06-08",
+  "phase": "16.12F",
+  "fixes_applied": [
+    {
+      "group": "Crawled - currently not indexed",
+      "fix": "Removed 3 noindexed scenario pages from sitemap.xml",
+      "urls_removed": [
+        "/tools/auto-loan-717d83b1",
+        "/tools/auto-loan-92918ea9",
+        "/tools/retirement-planning-eb1dd78b"
+      ],
+      "method": "Added NOINDEXED_VARIANT_SLUGS blocklist to src/app/sitemap.ts",
+      "rationale": "These pages are noindex,follow at /scenario/[id]. They bypassed the existing isFormulaVariant filter (hex suffixes don't match pct/yr/mo pattern). Including noindexed pages in sitemap contradicts Google's guidelines and wastes crawl budget.",
+      "safety": "Only removed from sitemap — pages still exist and serve correctly at /scenario/[id] with noindex",
+      "verified": "Pending deploy"
+    }
+  ],
+  "fixes_held": [
+    {
+      "group": "Alternative canonical (33)",
+      "reason": "All 33 are legitimate ?lang=xx language variants with proper canonicals. No misconfiguration found. Validating would fail again.",
+      "urls": 33
+    },
+    {
+      "group": "Page with redirect (1)",
+      "reason": "/hi → (307) → /?lang=hi is correct and intentional. No fix needed. Validating would fail.",
+      "url": "https://www.qfinhub.com/hi"
+    },
+    {
+      "group": "Crawled - Social Security guide",
+      "reason": "Guide is indexable but Google rejected on quality grounds. Content improvements needed before validation. Deferred to content work phase.",
+      "url": "https://www.qfinhub.com/guides/how-to-use-social-security"
+    },
+    {
+      "group": "Crawled - favicon.ico",
+      "reason": "Google artifact. Browser asset, not a page. Will naturally drop off.",
+      "url": "https://www.qfinhub.com/favicon.ico"
+    }
+  ],
+  "safety_confirmations": [
+    "No Google Indexing API used",
+    "No blind Validate Fix clicks (except proven-safe 404s)",
+    "No risky automations re-enabled",
+    "No mass content changes",
+    "No noindex/delete without approval",
+    "Only sitemap exclusion — safest possible fix"
+  ]
+}

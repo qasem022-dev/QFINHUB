@@ -1,0 +1,694 @@
+{
+  "tier_1_calculators": {
+    "total": 10,
+    "indexed": 10,
+    "not_indexed": 0,
+    "uninspected": 0,
+    "index_rate": "100.0%",
+    "key_finding": "\u2705 ALL 10 indexed \u2014 excellent foundation. Focus on ranking improvement.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/calculators/compound-interest",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/investment-return",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/retirement-planning",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/401k-calculator",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/tax-calculator",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/loan-calculator",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/budget-planner",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/debt-payoff",
+        "page_type": "calculator-T1",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      }
+    ]
+  },
+  "tier_2_calculators": {
+    "total": 12,
+    "indexed": 1,
+    "not_indexed": 5,
+    "uninspected": 0,
+    "index_rate": "8.3%",
+    "key_finding": "\u26a0\ufe0f Only 1/12 indexed \u2014 5 discovered, 6 uninspected. Needs content improvement + internal links.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/calculators/savings-goal",
+        "page_type": "calculator-T2",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+        "page_type": "calculator-T2",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/home-equity",
+        "page_type": "calculator-T2",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/closing-costs",
+        "page_type": "calculator-T2",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/mortgage-payoff",
+        "page_type": "calculator-T2",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/biweekly-mortgage",
+        "page_type": "calculator-T2",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      }
+    ]
+  },
+  "tier_3_calculators": {
+    "total": 109,
+    "indexed": 8,
+    "not_indexed": 101,
+    "uninspected": 0,
+    "index_rate": "7.3%",
+    "key_finding": "\u26a0\ufe0f 8/109 indexed \u2014 101 not indexed. Bulk thin content problem. Consolidate or improve.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/calculators/basic-calculator",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/simple-interest",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/roi-calculator",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/break-even",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/net-worth",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/currency-converter",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/tip-calculator",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/discount-calculator",
+        "page_type": "calculator-T3",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      }
+    ]
+  },
+  "decision_pages": {
+    "total": 15,
+    "indexed": 15,
+    "not_indexed": 0,
+    "uninspected": 0,
+    "index_rate": "100.0%",
+    "key_finding": "\u2705 ALL 15 indexed \u2014 strong performer. No indexing action needed.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T20:10:23Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T19:43:18Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T19:38:59Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T19:37:52Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T19:42:14Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T22:02:38Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T22:02:36Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T22:02:41Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T22:03:53Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+        "page_type": "decision",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T22:15:38Z"
+      }
+    ]
+  },
+  "compare_pages": {
+    "total": 35,
+    "indexed": 0,
+    "not_indexed": 0,
+    "uninspected": 35,
+    "index_rate": "0.0%",
+    "key_finding": "\u274c 0/35 indexed (all uninspected). Likely thin programmatic content. Needs review.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-loan-calculator-vs-amortization-schedule",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-compound-interest-vs-simple-interest",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-investment-return-vs-compound-interest",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira",
+        "page_type": "compare",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      }
+    ]
+  },
+  "guide_pages": {
+    "total": 125,
+    "indexed": 4,
+    "not_indexed": 20,
+    "uninspected": 101,
+    "index_rate": "3.2%",
+    "key_finding": "\u26a0\ufe0f 4/125 indexed \u2014 20 not indexed, 101 uninspected. Improve top guides first.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-basic-calculator",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-simple-interest",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-investment-return",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-401k-calculator",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-tax-calculator",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-capital-gains-tax",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-loan-calculator",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-amortization-schedule",
+        "page_type": "guide",
+        "gsc_issue_group": "not_inspected",
+        "inspected_sample": false,
+        "indexed": false,
+        "coverage_state": "unknown",
+        "last_crawl": "N/A"
+      }
+    ]
+  },
+  "tool_pages": {
+    "total": 223,
+    "indexed": 10,
+    "not_indexed": 73,
+    "uninspected": 140,
+    "index_rate": "4.5%",
+    "key_finding": "\u26a0\ufe0f 10 indexed, 73 not indexed \u2014 bulk thin content. Consider noindex for off-topic tools.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/tools/investment-1k-5yr",
+        "page_type": "tool",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-19T18:54:16Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-5k-3yr",
+        "page_type": "tool",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-10k-5yr",
+        "page_type": "tool",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-10k-10yr",
+        "page_type": "tool",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-25k-5yr",
+        "page_type": "tool",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-05-28T22:19:27Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-25k-10yr",
+        "page_type": "tool",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "2026-06-04T07:58:17Z"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-50k-7yr",
+        "page_type": "tool",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-50k-10yr",
+        "page_type": "tool",
+        "gsc_issue_group": "Discovered - currently not indexed",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "Discovered - currently not indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-100k-10yr",
+        "page_type": "tool",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/tools/investment-100k-15yr",
+        "page_type": "tool",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      }
+    ]
+  },
+  "widget_pages": {
+    "total": 2,
+    "indexed": 1,
+    "not_indexed": 1,
+    "uninspected": 0,
+    "index_rate": "50.0%",
+    "key_finding": "Mixed \u2014 1 indexed, 1 not indexed. Review widget page quality.",
+    "pages": [
+      {
+        "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+        "page_type": "widget",
+        "gsc_issue_group": "Submitted and indexed",
+        "inspected_sample": true,
+        "indexed": true,
+        "coverage_state": "Submitted and indexed",
+        "last_crawl": "N/A"
+      },
+      {
+        "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+        "page_type": "widget",
+        "gsc_issue_group": "URL is unknown to Google",
+        "inspected_sample": true,
+        "indexed": false,
+        "coverage_state": "URL is unknown to Google",
+        "last_crawl": "N/A"
+      }
+    ]
+  }
+}

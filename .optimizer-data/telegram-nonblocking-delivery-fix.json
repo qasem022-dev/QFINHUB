@@ -1,0 +1,29 @@
+{
+  "title": "Telegram Non-Blocking Delivery Fix",
+  "generated": "2026-06-09T15:31:21.290671Z",
+  "status": "DEPLOYED_IN_CRON_PROMPT",
+  "rules": {
+    "execution_order": "Work first (steps 1-12), delivery last (step 13)",
+    "daily_lock_logic": {
+      "work_status": "completed|partial|failed \u2014 set after step 11",
+      "telegram_status": "sent|failed|skipped \u2014 set after step 13",
+      "rule": "work_status and telegram_status are INDEPENDENT. Work is not failed if delivery fails."
+    },
+    "failure_handling": {
+      "telegram_timeout": "Log TELEGRAM_DELIVERY_FAILED in daily lock, retry once, save report path",
+      "work_already_saved": "All reports written in step 11 before delivery attempt",
+      "next_run_unaffected": "Daily lock with work_status=completed enables next run"
+    }
+  },
+  "daily_lock_format": {
+    "run_id": "<date>",
+    "date": "<date>",
+    "work_status": "completed|partial|failed",
+    "telegram_status": "sent|failed|skipped",
+    "files_created": [],
+    "commits_created": [],
+    "deploy_status": "deployed|skipped",
+    "next_run": "<next date>"
+  },
+  "proof": "Cron dcba952b4c45 now executes work before attempting delivery"
+}

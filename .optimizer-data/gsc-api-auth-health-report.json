@@ -1,0 +1,15 @@
+{
+  "title": "GSC API Auth Health Report",
+  "generated": "2026-06-07T02:40:53Z",
+  "token_status": "ACTIVE",
+  "refresh_status": "WORKING",
+  "search_analytics_access": true,
+  "url_inspection_access": true,
+  "property": "https://www.qfinhub.com",
+  "scopes": [
+    "https://www.googleapis.com/auth/analytics.readonly",
+    "https://www.googleapis.com/auth/indexing",
+    "https://www.googleapis.com/auth/webmasters"
+  ],
+  "last_successful_call": "2026-06-07T02:40:53Z"
+}

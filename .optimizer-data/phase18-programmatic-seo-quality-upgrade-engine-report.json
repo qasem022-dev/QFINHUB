@@ -1,0 +1,81 @@
+{
+  "report": "Phase 18 — Programmatic SEO Quality Upgrade Engine — Complete",
+  "generated": "2026-06-08 06:45 UTC",
+  "phase": "18",
+  "status": "ENGINE BUILT — READY FOR DAILY USE",
+
+  "core_principle": "IMPROVE_EXISTING_PAGE > CREATE_NEW_PAGE. Goal: make existing pages indexable, not create more pages.",
+
+  "engine_components": {
+    "inventory": {"file": ".optimizer-data/programmatic-page-inventory.json", "pages": 649, "programmatic": 491},
+    "quality_scoring": {"file": ".optimizer-data/programmatic-page-quality-scores.json", "distribution": {"75-89": 145, "60-74": 231, "45-59": 48, "<45": 225}},
+    "demand_matching": {"file": ".optimizer-data/programmatic-demand-to-page-match.json", "matched_pages": "25 with Phase 17 demand signals"},
+    "upgrade_decisions": {"file": ".optimizer-data/programmatic-upgrade-decisions.json", "upgrade_now": 13, "ctr_fix": 8, "link_push": 241, "consolidation_review": 225},
+    "upgrade_modules": {"file": ".optimizer-data/programmatic-upgrade-modules.json", "modules": 9},
+    "index_bloat_control": {"consolidation_review": 225, "approval_required": true},
+    "new_page_rules": {"min_score": 90, "conditions": 5, "required_elements": 9}
+  },
+
+  "dry_run_results": {
+    "upgrade_now": 13,
+    "ctr_fix": 8,
+    "internal_link_push": 241,
+    "consolidation_review": 225,
+    "new_pages_recommended": 0,
+    "note": "All 13 UPGRADE_NOW are discovered-not-indexed guides — Phase 16.12G fixes already deployed to address this."
+  },
+
+  "first_controlled_execution": {
+    "code_changes": 0,
+    "reason": "Phase 16.12G (guide title + Article schema) already deployed the key upgrade. Phase 18 is the analytical engine that identifies what needs upgrading.",
+    "held_actions": ["Internal links for guides", "CTR fixes for blogs", "Consolidation review for tools"]
+  },
+
+  "integration_with_phase_17": {
+    "status": "Integrated",
+    "flow": "Phase 17 finds demand → Phase 18 matches to pages → combined scoring → upgrade decision → auditor → execute → deploy → measure"
+  },
+
+  "gsc_coverage_insight": {
+    "submitted_and_indexed": 38,
+    "discovered_not_indexed": 55,
+    "url_unknown": 57,
+    "no_data": 499,
+    "insight": "499/649 pages have no GSC inspection data — most are Tier 2/3 tools that Google hasn't discovered. The 55 discovered-not-indexed are primarily guides that need upgrade."
+  },
+
+  "biggest_blocker": "Most programmatic pages (499/649) have no GSC data — Google hasn't discovered them. Internal linking from indexed pages is the primary solution. Upgrade modules will improve quality when Google does crawl them.",
+
+  "safety_confirmations": {
+    "no_google_indexing_api": true,
+    "no_mass_page_generation": true,
+    "no_stale_gsc_data": true,
+    "no_risky_automations": true,
+    "no_noindex_delete_without_approval": true,
+    "auditor_gate_enforced": true,
+    "existing_page_first": true
+  },
+
+  "files_created": [
+    "scripts/phase18-upgrade-engine.py",
+    ".optimizer-data/live-sitemap-urls.json",
+    ".optimizer-data/programmatic-page-inventory.json",
+    ".optimizer-data/programmatic-page-quality-scores.json",
+    ".optimizer-data/programmatic-demand-to-page-match.json",
+    ".optimizer-data/programmatic-upgrade-decisions.json",
+    ".optimizer-data/programmatic-upgrade-modules.json",
+    ".optimizer-data/phase18-programmatic-upgrade-dry-run-report.json",
+    ".optimizer-data/phase18-first-controlled-execution-report.json",
+    ".optimizer-data/phase18-integration-with-phase17-report.json",
+    ".optimizer-data/programmatic-seo-learning-memory.json",
+    ".optimizer-data/phase18-programmatic-seo-quality-upgrade-engine-report.json"
+  ],
+
+  "next_steps": [
+    "Phase 15 daily workflow: apply internal links from indexed pages to discovered guides",
+    "Phase 17 daily workflow: execute CTR fixes on blogs with 0 clicks",
+    "Review 225 consolidation tools individually — do NOT mass-action",
+    "Monitor GSC in 14 days for Phase 16.12G impact on guide indexation",
+    "Rerun Phase 18 inventory weekly to track coverage state changes"
+  ]
+}

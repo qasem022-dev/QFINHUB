@@ -1,0 +1,13 @@
+{
+  "report": "Daily Deploy + Measurement Log",
+  "generated": "2026-06-08T02:09:01.949835Z",
+  "deploy_status": "SUCCESS",
+  "auto_deploy": true,
+  "verification_urls": [
+    "https://www.qfinhub.com/",
+    "https://www.qfinhub.com/sitemap.xml"
+  ],
+  "risky_automations_disabled": true,
+  "sitemap_submitted": true,
+  "scenario_sitemap_not_submitted": true
+}

@@ -1,0 +1,95 @@
+{
+  "generated": "2026-06-08T03:49:22.541646",
+  "source": "GSC Pages report issues (from URL Inspection API mapping)",
+  "total_sitemap": 647,
+  "inspected": 368,
+  "gsc_ui_indexed_count": 238,
+  "priorities": [
+    {
+      "priority": "P0 \u2014 Critical Blockers",
+      "issues": [],
+      "status": "CLEAR \u2014 No technical blockers found",
+      "actions": [
+        "None \u2014 no pages are accidentally noindexed, blocked, 404, or wrong canonical"
+      ]
+    },
+    {
+      "priority": "P1 \u2014 Tier 1/Tier 2 Calculators Not Ranking",
+      "issues": [
+        {
+          "group": "Submitted and indexed",
+          "affected": "10 T1 calculators + 1 T2 \u2014 all indexed but ranking at position 30+ with 0 clicks",
+          "action": "Improve meta titles/descriptions, add FAQ schema, build internal links from blogs",
+          "impact": "HIGH \u2014 moving from pos 30 to pos 10 would generate first clicks",
+          "risk": "LOW \u2014 pages already indexed, only improving on-page factors",
+          "validate_fix": false
+        }
+      ]
+    },
+    {
+      "priority": "P2 \u2014 Discovered Not Indexed (Important Pages)",
+      "issues": [
+        {
+          "group": "Discovered - currently not indexed",
+          "affected": "5 T2 calculators + key blogs + guides \u2014 162 total",
+          "action": "Add unique explanatory content, real examples, FAQ sections, internal links from indexed pages",
+          "impact": "HIGH \u2014 getting 50 more important pages indexed would expand search footprint",
+          "risk": "MEDIUM \u2014 content changes needed, takes 2-4 weeks to see results",
+          "validate_fix": "Only AFTER content improvements deployed + 2 week wait"
+        }
+      ]
+    },
+    {
+      "priority": "P3 \u2014 Unknown to Google (Discovery Gap)",
+      "issues": [
+        {
+          "group": "URL is unknown to Google",
+          "affected": "111 pages including T3 calculators, blogs, tools",
+          "action": "Resubmit sitemap via GSC, add internal links from indexed pages, check sitemap includes all URLs",
+          "impact": "MEDIUM \u2014 will move pages from 'unknown' to 'discovered'",
+          "risk": "LOW \u2014 sitemap resubmission is safe",
+          "validate_fix": false
+        }
+      ]
+    },
+    {
+      "priority": "P4 \u2014 Zero-Click Pages",
+      "issues": [
+        {
+          "group": "All indexed pages",
+          "affected": "93 indexed pages with 0 clicks",
+          "action": "Improve meta descriptions, add structured data, target long-tail keywords",
+          "impact": "MEDIUM \u2014 clicks require ranking improvement first",
+          "risk": "LOW",
+          "validate_fix": false
+        }
+      ]
+    },
+    {
+      "priority": "P5 \u2014 Thin/Low-Value Content Bulk",
+      "issues": [
+        {
+          "group": "All non-indexed groups",
+          "affected": "Tier 3 calculators, generic tools, thin comparisons",
+          "action": "Consolidate thin pages, noindex off-topic tools (BMI, age, fraction), improve finance-relevant T3 calculators",
+          "impact": "MEDIUM \u2014 signals quality to Google, improves overall site quality score",
+          "risk": "MEDIUM \u2014 removing pages may lose some long-tail potential",
+          "validate_fix": false
+        }
+      ]
+    },
+    {
+      "priority": "P6 \u2014 Cleanup/Off-Topic",
+      "issues": [
+        {
+          "group": "Various",
+          "affected": "Non-finance tools (BMI, age, phone plan, vacation budget, wedding budget)",
+          "action": "Add noindex to clearly off-topic pages or consolidate into a single utilities hub",
+          "impact": "LOW-MEDIUM \u2014 improves site quality signals",
+          "risk": "LOW",
+          "validate_fix": "Only for removed pages \u2014 validate 404/410 if pages deleted"
+        }
+      ]
+    }
+  ]
+}

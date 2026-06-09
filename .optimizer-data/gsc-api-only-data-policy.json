@@ -1,0 +1,44 @@
+{
+  "title": "GSC API-Only Data Policy",
+  "version": "1.0.0",
+  "effective": "2026-06-07T06:00:00+03:00",
+  "rules": {
+    "1_data_source": {
+      "rule": "Google Search Console Search Analytics API is the ONLY accepted source for current GSC performance data (impressions, clicks, CTR, position).",
+      "property": "https://www.qfinhub.com/",
+      "search_type": "web",
+      "endpoint": "webmasters/v3/sites/{site}/searchAnalytics/query"
+    },
+    "2_cached_files": {
+      "rule": "Cached files are allowed ONLY for historical comparison and trend analysis. They must NEVER be reported as current/live data.",
+      "allowed_use": "Historical comparison, trend direction, change-over-time analysis",
+      "forbidden_use": "Reporting as current metrics, first-click claims, scoreboard updates, Phase reports"
+    },
+    "3_manual_ui_values": {
+      "rule": "Manual GSC UI values provided by Qasem are USER-OBSERVED COMPARISON only. They are NOT the pipeline source of truth.",
+      "allowed_use": "Calibrating correction factors, validating API data freshness, confirming trend direction",
+      "forbidden_use": "Replacing API data in automated scoreboards, using as primary data source in reports"
+    },
+    "4_api_unavailability": {
+      "rule": "If GSC API is unavailable (auth failure, 401, 403, 429, timeout, property access denied), report GSC_API_UNAVAILABLE. STOP all metric claims. Do NOT fall back to cached/manual data.",
+      "status_values": ["GSC_API_UNAVAILABLE", "API_AVAILABLE_THROUGH_DATE", "LIVE_API_OK"],
+      "on_failure": "Continue non-GSC tasks. Alert Qasem only if auth action is needed."
+    },
+    "5_api_delay": {
+      "rule": "GSC is NOT real-time. If the API has a data delay, report the latest API-available date clearly. Do not call delayed data 'live.'",
+      "typical_delay": "2-3 days for complete data",
+      "reporting": "API_AVAILABLE_THROUGH_DATE: {date}"
+    },
+    "6_never_invent": {
+      "rule": "Never invent, estimate, or extrapolate live GSC data from any source other than the API.",
+      "forbidden": ["Extrapolating from samples", "Using cached files as current", "Projecting trends onto missing days", "Reporting manual UI as API"]
+    },
+    "7_row_limits": {
+      "rule": "Use rowLimit=250 minimum. If API returns exactly 250 rows, paginate with startRow until fewer than 250 rows returned.",
+      "required_dimensions": ["query", "page", "query+page"]
+    },
+    "8_date_ranges": {
+      "required": ["Last complete 7 days", "Previous 7 days", "Last 28 days", "Yesterday (if available)", "Latest available day (if delayed)"]
+    }
+  }
+}

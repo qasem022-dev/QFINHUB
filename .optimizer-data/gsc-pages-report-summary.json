@@ -1,0 +1,99 @@
+{
+  "source": "URL Inspection API (363 real inspections)",
+  "total_indexed": 93,
+  "total_not_indexed": 275,
+  "issue_groups": [
+    {
+      "issue": "Submitted and indexed",
+      "category": "indexed",
+      "count": 93,
+      "page_types": {
+        "blog": 40,
+        "decision": 15,
+        "calculator-T1": 10,
+        "tool": 10,
+        "calculator-T3": 8,
+        "guide": 4,
+        "calculators-hub": 1,
+        "disclaimer": 1,
+        "unknown": 1,
+        "widget": 1
+      },
+      "url_sample": [
+        "https://www.qfinhub.com/calculators",
+        "https://www.qfinhub.com/disclaimer",
+        "https://www.qfinhub.com/methodology",
+        "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+        "https://www.qfinhub.com/all-pages"
+      ]
+    },
+    {
+      "issue": "Discovered - currently not indexed",
+      "category": "not_indexed",
+      "count": 162,
+      "page_types": {
+        "calculator-T3": 60,
+        "blog": 43,
+        "tool": 36,
+        "guide": 13,
+        "calculator-T2": 4,
+        "privacy": 1,
+        "terms": 1,
+        "about": 1,
+        "contact": 1,
+        "compare-hub": 1
+      },
+      "url_sample": [
+        "https://www.qfinhub.com/privacy",
+        "https://www.qfinhub.com/terms",
+        "https://www.qfinhub.com/about",
+        "https://www.qfinhub.com/contact",
+        "https://www.qfinhub.com/compare"
+      ]
+    },
+    {
+      "issue": "URL is unknown to Google",
+      "category": "not_indexed",
+      "count": 111,
+      "page_types": {
+        "calculator-T3": 39,
+        "tool": 37,
+        "blog": 23,
+        "guide": 7,
+        "unknown": 2,
+        "guides-hub": 1,
+        "widget": 1,
+        "calculator-T2": 1
+      },
+      "url_sample": [
+        "https://www.qfinhub.com/ai-specialist",
+        "https://www.qfinhub.com/blog",
+        "https://www.qfinhub.com/guides",
+        "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+        "https://www.qfinhub.com/calculators/capital-gains-tax"
+      ]
+    },
+    {
+      "issue": "Duplicate, Google chose different canonical than user",
+      "category": "not_indexed",
+      "count": 1,
+      "page_types": {
+        "calculator-T3": 1
+      },
+      "url_sample": [
+        "https://www.qfinhub.com/calculators/pmi-calculator"
+      ]
+    },
+    {
+      "issue": "Alternate page with proper canonical tag",
+      "category": "not_indexed",
+      "count": 1,
+      "page_types": {
+        "calculator-T3": 1
+      },
+      "url_sample": [
+        "https://www.qfinhub.com/calculators/rule-of-72"
+      ]
+    }
+  ]
+}

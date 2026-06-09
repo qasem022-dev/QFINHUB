@@ -1,0 +1,38 @@
+{
+  "report": "Phase 18 Integration with Phase 17",
+  "generated": "2026-06-08 06:40 UTC",
+
+  "integrated_daily_flow": [
+    "1. Pull GSC API truth (daily data)",
+    "2. Pull Google Suggest/Trends demand (Phase 17 miner)",
+    "3. Update programmatic page inventory (Phase 18 engine)",
+    "4. Match demand to existing pages (Phase 17 classifier + Phase 18 matcher)",
+    "5. Score pages and opportunities (Phase 17 scorer + Phase 18 quality scorer)",
+    "6. Select upgrade actions (Phase 18 decision engine)",
+    "7. Auditor approval (Phase 17 auditor)",
+    "8. Execute: upgrade existing pages FIRST (Phase 18 priority)",
+    "9. Execute: create new page ONLY if score 90+ and no existing match",
+    "10. Deploy via GitHub auto-deploy",
+    "11. Request GSC UI indexing for changed high-value pages if eligible",
+    "12. Measure next day (GSC API + Phase 17 keyword miner)"
+  ],
+
+  "phase_17_provides": [
+    "Keyword demand signals (Suggest, GSC queries)",
+    "Intent classification",
+    "Opportunity scoring",
+    "Auditor quality gate",
+    "Daily execution limits"
+  ],
+
+  "phase_18_provides": [
+    "Programmatic page inventory",
+    "Page quality scoring",
+    "Coverage state tracking",
+    "Upgrade vs consolidate vs noindex decisions",
+    "Upgrade modules (short answer, FAQ, examples, schema)",
+    "Index bloat prevention"
+  ],
+
+  "combined_output": "Phase 17 finds demand signals → Phase 18 matches them to programmatic pages → combined scoring decides: upgrade existing page OR (rarely) create new page → Auditor approves → execute → deploy → measure"
+}

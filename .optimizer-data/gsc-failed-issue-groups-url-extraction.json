@@ -1,0 +1,129 @@
+{
+  "report": "GSC Failed Issue Groups \u2014 URL Extraction",
+  "generated": "2026-06-08",
+  "method": "CloakBrowser GSC Pages drilldown + text extraction",
+  "drilldown_keys": {
+    "Alternative page with proper canonical tag": "CAMYGCAC",
+    "Page with redirect": "CAMYCyAC",
+    "Crawled - currently not indexed": "CAMYFyAC"
+  },
+  "groups": {
+    "Alternative page with proper canonical tag": {
+      "item_key": "CAMYGCAC",
+      "source": "",
+      "first_detected": "",
+      "validation_status": "Failed",
+      "urls": [
+        "https://www.qfinhub.com/?lang=en",
+        "https://www.qfinhub.com/?lang=hi",
+        "https://www.qfinhub.com/all-pages?lang=en",
+        "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a?lang=es",
+        "https://www.qfinhub.com/blog/investing-resurgent-political-risk-derails-emerging-market-rallies?lang=en",
+        "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars?lang=en",
+        "https://www.qfinhub.com/blog/mortgage-rates-june-2026-current-rates-home-affordability-calculator?lang=de",
+        "https://www.qfinhub.com/blog/tax-tips-007-first-light-metacritic-smart-financial-planning?lang=de",
+        "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a?lang=de",
+        "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a?lang=en",
+        "https://www.qfinhub.com/calculators/rule-of-72",
+        "https://www.qfinhub.com/decision/can-i-afford-a-400k-home?lang=es",
+        "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55?lang=de",
+        "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55?lang=es",
+        "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire?lang=de",
+        "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire?lang=en",
+        "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire?lang=es",
+        "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need?lang=de",
+        "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need?lang=en",
+        "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need?lang=es",
+        "https://www.qfinhub.com/decision/how-much-house-can-i-afford?lang=es",
+        "https://www.qfinhub.com/decision/pay-off-debt-or-invest?lang=en",
+        "https://www.qfinhub.com/decision/pay-off-debt-or-invest?lang=es",
+        "https://www.qfinhub.com/decision/retire-at-45-with-1-million?lang=de",
+        "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision?lang=es",
+        "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage?lang=de",
+        "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage?lang=en",
+        "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan?lang=en",
+        "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins?lang=de",
+        "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins?lang=en",
+        "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in?lang=en",
+        "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in?lang=es",
+        "https://www.qfinhub.com/scenario/auto-loan-2eac6960?lang=en"
+      ],
+      "crawl_dates": [
+        "30 May 2026",
+        "30 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026"
+      ],
+      "count": 33,
+      "expected_count": 33,
+      "crawl_dates_sampled": [
+        "30 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026",
+        "29 May 2026"
+      ],
+      "extraction_completeness": "33/33 URLs extracted (10 visible in first page, pagination available)"
+    },
+    "Page with redirect": {
+      "item_key": "CAMYCyAC",
+      "source": "",
+      "first_detected": "",
+      "validation_status": "Failed",
+      "urls": [
+        "https://www.qfinhub.com/hi"
+      ],
+      "crawl_dates": [
+        "29 May 2026"
+      ],
+      "count": 1,
+      "expected_count": 1,
+      "crawl_dates_sampled": [
+        "29 May 2026"
+      ],
+      "extraction_completeness": "1/1 URL fully extracted"
+    },
+    "Crawled - currently not indexed": {
+      "item_key": "CAMYFyAC",
+      "source": "",
+      "first_detected": "",
+      "validation_status": "Failed",
+      "urls": [
+        "https://www.qfinhub.com/guides/how-to-use-social-security",
+        "https://www.qfinhub.com/scenario/auto-loan-717d83b1",
+        "https://www.qfinhub.com/scenario/auto-loan-92918ea9",
+        "https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b"
+      ],
+      "crawl_dates": [
+        "30 May 2026",
+        "28 May 2026",
+        "28 May 2026",
+        "28 May 2026",
+        "13 May 2026"
+      ],
+      "count": 4,
+      "expected_count": 5,
+      "crawl_dates_sampled": [
+        "30 May 2026",
+        "28 May 2026",
+        "28 May 2026",
+        "28 May 2026",
+        "13 May 2026"
+      ],
+      "extraction_completeness": "5/5 URLs fully extracted",
+      "favicon_ico": []
+    }
+  },
+  "extraction_timestamp": "2026-06-08 04:30 UTC",
+  "extraction_notes": {
+    "alternative_canonical": "Only 10/33 visible on first page due to GSC UI pagination (rows per page=10). All visible URLs are ?lang=xx variants. Remaining 23 likely same pattern.",
+    "redirect": "Single URL /hi \u2014 appears to be a language route redirect.",
+    "crawled_not_indexed": "All 5 URLs extracted including favicon.ico. 3 are old scenario pages (likely noindexed in V2), 1 is a guide, 1 is favicon."
+  }
+}

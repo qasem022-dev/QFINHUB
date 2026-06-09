@@ -1,0 +1,17 @@
+{
+  "title": "GSC Daily Pipeline Cron Repair Report",
+  "generated": "2026-06-09T15:31:21.290671Z",
+  "cron_id": "ae8940265cb8",
+  "status": "KEPT_AS_BACKUP",
+  "decision": "Phase 19 daily run (3 PM) now pulls GSC at step 2. Pipeline cron (10 AM) kept as early backup.",
+  "details": {
+    "enabled": true,
+    "schedule": "0 10 * * * (10 AM EEST)",
+    "last_run": "2026-06-07T05:35 UTC (manual trigger suspected)",
+    "next_run": "2026-06-10T10:00:00+03:00",
+    "output": ".optimizer-data/gsc-live-data-corrected.json",
+    "note": "Pipeline provides early-morning GSC data. Phase 19 always pulls fresh at step 2 regardless."
+  },
+  "no_duplication": "Phase 19 reads gsc-live-data-corrected.json but runs pipeline again for freshness. Pipeline cron is a convenience, not a dependency.",
+  "token_status": "FRESH (webmasters + analytics.readonly + indexing scopes)"
+}

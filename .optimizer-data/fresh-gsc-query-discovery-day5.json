@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-05T23:11:30.267926",
-  "startDate": "2026-05-29",
-  "endDate": "2026-06-05",
+  "generated": "2026-06-07T01:27:58.199022",
+  "startDate": "2026-05-31",
+  "endDate": "2026-06-07",
   "queries": [
     {
       "query": "20 000 loan for 5 years",
@@ -11,25 +11,18 @@
       "position": 99
     },
     {
-      "query": "20000 loan 5 years",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 70
-    },
-    {
       "query": "20000 loan monthly payment",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 93
+      "position": 73
     },
     {
-      "query": "20000 loan over 5 years",
+      "query": "2022 tax calculator",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 90
+      "position": 92
     },
     {
       "query": "20k loan 5 years",
@@ -37,20 +30,6 @@
       "clicks": 0,
       "ctr": 0,
       "position": 72
-    },
-    {
-      "query": "20k loan monthly payment",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 86
-    },
-    {
-      "query": "20k over 5 years",
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 55.5
     },
     {
       "query": "90 day fiance paducah",
@@ -67,18 +46,53 @@
       "position": 100
     },
     {
-      "query": "can i afford a 400k house",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 41
-    },
-    {
-      "query": "can i retire at 45 with 1 million",
+      "query": "calculate investment income",
       "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "position": 15
+      "position": 79
+    },
+    {
+      "query": "calculate investment return",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "query": "calculate return",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "calculate tax liability",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "calculating investment returns",
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "calculating retirement savings growth",
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "can i retire at 45 with 1 million",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 17
     },
     {
       "query": "can i retire at 45 with 2 million",
@@ -88,39 +102,67 @@
       "position": 26
     },
     {
-      "query": "credit card debt strategy pay off",
+      "query": "comprehensive retirement calculator",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 42
+      "position": 86
     },
     {
-      "query": "down payment needed for 400k house",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 35
-    },
-    {
-      "query": "effective tax brackets",
-      "impressions": 1,
+      "query": "debt vs investment calculator",
+      "impressions": 2,
       "clicks": 0,
       "ctr": 0,
       "position": 76
     },
     {
-      "query": "effective tax rate brackets",
+      "query": "dividend tax calculator",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 72
+      "position": 77
     },
     {
-      "query": "how do personal loans compare to home equity loans or helocs for financing renovations",
+      "query": "estimated tax calculator 2023",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "factor investing for political risk",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "factor investing political risk",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "financial retirement planner",
       "impressions": 3,
       "clicks": 0,
       "ctr": 0,
-      "position": 89.66666666666667
+      "position": 86.33333333333333
+    },
+    {
+      "query": "free tax calculator 2023",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "how do personal loans compare to home equity loans or helocs for financing renovations",
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 91
     },
     {
       "query": "how much to retire at 45 in us",
@@ -130,83 +172,34 @@
       "position": 100
     },
     {
-      "query": "how to pay off debt faster (avalanche vs. snowball methods)",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 93
-    },
-    {
-      "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 6.333333333333333
-    },
-    {
-      "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
-      "impressions": 43,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 7.558139534883721
-    },
-    {
-      "query": "invest or pay off debt calculator",
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 60
-    },
-    {
-      "query": "loan interest saved vs investment gains",
+      "query": "how much will i be taxed calculator",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 74
-    },
-    {
-      "query": "pay down debt or invest calculator",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 76
-    },
-    {
-      "query": "paying down debt is equivalent to earning a risk-free return equal to the interest rate",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 10.333333333333334
+      "position": 92
     }
   ],
   "pages": [
     {
-      "page": "/",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 1
-    },
-    {
       "page": "/all-pages",
-      "impressions": 6,
+      "impressions": 5,
       "clicks": 0,
       "ctr": 0,
-      "position": 7.833333333333333
+      "position": 10
     },
     {
       "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "impressions": 59,
+      "impressions": 67,
       "clicks": 0,
       "ctr": 0,
-      "position": 20.52542372881356
+      "position": 12.880597014925373
     },
     {
       "page": "/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
-      "impressions": 6,
+      "impressions": 4,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.5
+      "position": 9.75
     },
     {
       "page": "/blog/blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
@@ -217,10 +210,10 @@
     },
     {
       "page": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
-      "impressions": 9,
+      "impressions": 4,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.555555555555555
+      "position": 8
     },
     {
       "page": "/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
@@ -230,25 +223,11 @@
       "position": 8
     },
     {
-      "page": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 18
-    },
-    {
       "page": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
-      "impressions": 23,
+      "impressions": 19,
       "clicks": 0,
       "ctr": 0,
-      "position": 10.08695652173913
-    },
-    {
-      "page": "/blog/if-you-borrow-20-000-for-5-years-at-8-apr-whats-your-monthly-payment",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 51
+      "position": 18.789473684210527
     },
     {
       "page": "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
@@ -259,38 +238,24 @@
     },
     {
       "page": "/blog/investing-resurgent-political-risk-derails-emerging-market-rallies",
-      "impressions": 1,
+      "impressions": 5,
       "clicks": 0,
       "ctr": 0,
-      "position": 9
+      "position": 55.8
     },
     {
-      "page": "/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
-      "impressions": 1,
+      "page": "/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+      "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "position": 8
+      "position": 10
     },
     {
-      "page": "/blog/new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
-      "impressions": 1,
+      "page": "/calculators/investment-return",
+      "impressions": 18,
       "clicks": 0,
       "ctr": 0,
-      "position": 3
-    },
-    {
-      "page": "/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "page": "/calculators",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 3
+      "position": 84.55555555555556
     },
     {
       "page": "/calculators/rent-vs-buy/orlando-fl",
@@ -301,129 +266,108 @@
     },
     {
       "page": "/calculators/retirement-planning",
-      "impressions": 1,
+      "impressions": 38,
       "clicks": 0,
       "ctr": 0,
-      "position": 86
+      "position": 89.07894736842105
+    },
+    {
+      "page": "/calculators/tax-calculator",
+      "impressions": 17,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 87.47058823529412
     },
     {
       "page": "/calculators/tax/philadelphia-pa",
-      "impressions": 7,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 11.428571428571429
-    },
-    {
-      "page": "/decision/can-i-afford-a-400k-home",
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 38
-    },
-    {
-      "page": "/decision/how-much-do-i-need-to-retire",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "page": "/decision/how-much-emergency-fund-do-i-need",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 4
-    },
-    {
-      "page": "/decision/pay-off-debt-or-invest",
-      "impressions": 46,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 13.869565217391305
-    },
-    {
-      "page": "/decision/pay-off-student-loans-or-invest",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 74
-    },
-    {
-      "page": "/decision/retire-at-45-with-1-million",
-      "impressions": 8,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 26.125
-    },
-    {
-      "page": "/decision/roth-vs-traditional-401k-decision",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 12.333333333333334
-    },
-    {
-      "page": "/decision/should-i-use-a-heloc-or-personal-loan",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 89.66666666666667
-    },
-    {
-      "page": "/decision/snowball-vs-avalanche-which-wins",
       "impressions": 4,
       "clicks": 0,
       "ctr": 0,
-      "position": 94.75
+      "position": 12
     },
     {
-      "page": "/decision/what-tax-bracket-am-i-in",
-      "impressions": 5,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 82
-    },
-    {
-      "page": "/methodology",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 5
-    },
-    {
-      "page": "/scenario/compound-interest-100000-10pct-15yr-m250",
+      "page": "/decision/how-much-do-i-need-to-retire",
       "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "position": 5
+      "position": 2.5
     },
     {
-      "page": "/scenario/compound-interest-250000-6pct-20yr-m2000",
+      "page": "/decision/how-much-house-can-i-afford",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "impressions": 38,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 15.394736842105264
+    },
+    {
+      "page": "/decision/retire-at-45-with-1-million",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 28.11111111111111
+    },
+    {
+      "page": "/decision/should-i-use-a-heloc-or-personal-loan",
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "page": "/decision/snowball-vs-avalanche-which-wins",
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 95.66666666666667
+    },
+    {
+      "page": "/scenario/auto-loan-bc834ee2",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "/scenario/compound-interest-100000-10pct-15yr-m250",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
       "position": 7
     },
     {
-      "page": "/tools/compound-100k-20yr-5pct",
-      "impressions": 10,
+      "page": "/scenario/retirement-planning-5c0e8e25",
+      "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.5
+      "position": 7.5
+    },
+    {
+      "page": "/tools/compound-100k-20yr-5pct",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 9.153846153846153
     },
     {
       "page": "/tools/compound-150k-10yr-5pct",
-      "impressions": 6,
+      "impressions": 3,
       "clicks": 0,
       "ctr": 0,
-      "position": 9
+      "position": 8
     },
     {
       "page": "/tools/compound-1k-30yr-6pct",
-      "impressions": 4,
+      "impressions": 3,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.25
+      "position": 7.333333333333333
     },
     {
       "page": "/tools/compound-1k-5yr-5pct-daily",
@@ -434,17 +378,24 @@
     },
     {
       "page": "/tools/compound-500k-15yr-5pct",
-      "impressions": 9,
+      "impressions": 8,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.444444444444445
+      "position": 10.125
+    },
+    {
+      "page": "/tools/investment-100k-7yr",
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.5
     },
     {
       "page": "/tools/investment-1k-5yr",
-      "impressions": 1,
+      "impressions": 3,
       "clicks": 0,
       "ctr": 0,
-      "position": 30
+      "position": 16.666666666666664
     },
     {
       "page": "/tools/investment-25k-5yr",
@@ -461,11 +412,11 @@
       "position": 5
     },
     {
-      "page": "/tools/loan-175k-20yr-6pct",
-      "impressions": 2,
+      "page": "/tools/investment-5k-20yr",
+      "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 10
+      "position": 12
     },
     {
       "page": "/tools/loan-20k-5yr-8pct",
@@ -482,32 +433,25 @@
       "position": 50
     },
     {
-      "page": "/tools/loan-500k-20yr-6pct",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 4
-    },
-    {
       "page": "/tools/mortgage-150k-3dp-30yr-7-5pct",
       "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "position": 5.5
+      "position": 4.5
     },
     {
       "page": "/tools/mortgage-200k-15yr-5-5pct",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 4
+      "position": 11
     },
     {
       "page": "/tools/mortgage-200k-30yr-6pct",
-      "impressions": 2,
+      "impressions": 7,
       "clicks": 0,
       "ctr": 0,
-      "position": 22
+      "position": 8.142857142857142
     },
     {
       "page": "/tools/mortgage-450k-30yr-6-5pct",
@@ -517,11 +461,18 @@
       "position": 7
     },
     {
-      "page": "/tools/mortgage-900k-30yr-7pct",
-      "impressions": 3,
+      "page": "/tools/mortgage-650k-15dp-30yr-6-5pct",
+      "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "position": 5.666666666666667
+      "position": 10.5
+    },
+    {
+      "page": "/tools/mortgage-900k-30yr-7pct",
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.25
     },
     {
       "page": "/tools/tax-125k-head-of-household",
@@ -529,6 +480,20 @@
       "clicks": 0,
       "ctr": 0,
       "position": 7
+    },
+    {
+      "page": "/tools/tax-150k-married-separate",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "/widgets/mortgage-affordability-embed",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 98
     }
   ]
 }
