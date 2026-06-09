@@ -57,8 +57,12 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "How to Pay Off Credit Card Debt Fast in 2026 — Proven Strategies That Actually Work" },
     { slug: "debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you", title: "Debt: Pentagon Federal Credit Union Review 2026 — Is It Right for You?" },
     { slug: "banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for", title: "Banks Start $6.2 Billion Warner Bros. Debt Cleanup Before Merger: What It Means" },
+    { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
   ],
-  "percentage-calculator": [],
+  "percentage-calculator": [
+    { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment (2026 Guide)" },
+    { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
+  ],
   "tax-calculator": [
     { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
     { slug: "tax-tips-007-first-light-metacritic-smart-financial-planning", title: "Tax Tips: Smart Financial Planning Strategies for 2026" },
@@ -79,5 +83,15 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
+  ],
+  "amortization-schedule": [
+    { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment" },
+    { slug: "200k-mortgage-payment-30-years", title: "$200,000 Mortgage Payment for 30 Years: Exact Monthly Cost" },
+    { slug: "20000-loan-at-8-percent-for-5-years-monthly-payment", title: "$20,000 Loan at 8% for 5 Years: Calculate Your Exact Monthly Payment" },
+  ],
+  "fire-calculator": [
+    { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
+    { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
+    { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
   ],
 };

@@ -616,9 +616,9 @@ export const decisionPages: DecisionPage[] = [
   // ═══════════════════════════════════════════════════════════
   {
     slug: "how-much-house-can-i-afford",
-    title: "How Much House Can I Afford? Calculator + Income Tables (2026)",
+    title: "How Much House Can I Afford? Get Your Max Budget — Free Calculator (2026)",
     description:
-      "On a $100K income, you can afford a $300K-$400K home with current rates. See income-based tables ($50K-$200K), monthly payment breakdowns, and DTI calculations. Free calculator — no signup.",
+      "Enter your income and debts to find your max home price in 30 seconds. Income-based tables ($50K-$200K), DTI breakdown, and free calculator — no signup required. See exactly what you can afford.",
     cluster: "mortgage",
     question: "Based on my income, monthly debts, and savings, what price home can I realistically afford?",
     shortAnswer:
