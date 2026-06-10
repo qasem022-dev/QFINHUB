@@ -1,0 +1,55 @@
+{
+  "title": "Phase 20.5 \u2014 First Click Baseline + Risky Index Audit + Cron Gate",
+  "generated": "2026-06-09T21:40:07.884248Z",
+  "status": "COMPLETED \u2014 FRAMEWORKS BUILT, AWAITING CRON",
+  "cron_proof": {
+    "status": "AWAITING",
+    "expected": "June 10 3 PM EEST",
+    "report": ".optimizer-data/phase20-5-cron-proof-report.json"
+  },
+  "first_click_baseline": {
+    "achieved_28d": true,
+    "achieved_7d": false,
+    "clicks_28d": 1,
+    "impressions_28d": 915,
+    "ctr": "0.1%",
+    "page_unknown": true,
+    "report": ".optimizer-data/first-click-baseline-report.json"
+  },
+  "kpi_update": {
+    "FIRST_CLICK_STATUS": "ACHIEVED_28D (NOT_ACHIEVED_7D)",
+    "CTR_STATUS": "CRITICAL",
+    "BACKLINK_STATUS": "ZERO",
+    "OVERALL": "OFF_TRACK"
+  },
+  "risk_audits": {
+    "noindex_70": {
+      "status": "URL_EXTRACTION_PENDING",
+      "likely_intentional": true,
+      "report": ".optimizer-data/noindex-increase-70-url-audit.json"
+    },
+    "crawled_15": {
+      "status": "URL_EXTRACTION_PENDING",
+      "report": ".optimizer-data/crawled-not-indexed-15-url-audit.json"
+    },
+    "404_7": {
+      "status": "URL_EXTRACTION_PENDING",
+      "report": ".optimizer-data/404-increase-7-url-audit.json"
+    }
+  },
+  "cleanup_test": {
+    "status": "BLOCKED_PENDING_RISKY_INDEX_AUDITS",
+    "report": ".optimizer-data/tiny-cleanup-test-status.json"
+  },
+  "first_click_sprint": "CONTINUING \u2014 but no manual work until cron passes",
+  "outreach": "HELD \u2014 follow up Jun 13",
+  "safety": {
+    "noindex": 0,
+    "canonical": 0,
+    "redirect": 0,
+    "delete": 0,
+    "indexing_api": "NOT USED",
+    "mass_pages": "NONE",
+    "automations": "DISABLED"
+  }
+}

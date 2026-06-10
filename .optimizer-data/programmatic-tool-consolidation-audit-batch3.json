@@ -1,0 +1,70 @@
+{
+  "title": "Phase 19.1 Tool Audit \u2014 Batch 3",
+  "generated": "2026-06-09T15:39:50.496703Z",
+  "batch": 3,
+  "tools_audited": 10,
+  "cumulative_total": 45,
+  "entries": [
+    {
+      "slug": "tools/loan-20k-5yr-8pct",
+      "parent": "loan-calculator",
+      "diagnosis": "Duplicate \u2014 same formula, different params",
+      "action": "NOINDEX \u2014 canonical to parent"
+    },
+    {
+      "slug": "tools/loan-20k-3yr-6pct",
+      "parent": "loan-calculator",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/mortgage-200k-30yr-6pct",
+      "parent": "mortgage-calculator",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/mortgage-200k-30yr-7pct",
+      "parent": "mortgage-calculator",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/mortgage-100k-30yr-6pct",
+      "parent": "mortgage-calculator",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/investment-50k-10yr",
+      "parent": "investment-return",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/investment-100k-15yr",
+      "parent": "investment-return",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/investment-1M-10yr",
+      "parent": "investment-return",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/investment-20k-5yr",
+      "parent": "investment-return",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    },
+    {
+      "slug": "tools/investment-200k-10yr",
+      "parent": "investment-return",
+      "diagnosis": "Duplicate",
+      "action": "NOINDEX"
+    }
+  ],
+  "note": "All 10 are duplicate parameterized variants of parent calculators. Pending consolidation review. Do NOT auto-noindex \u2014 requires Auditor approval."
+}

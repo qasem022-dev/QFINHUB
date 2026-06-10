@@ -1,0 +1,7 @@
+{
+  "title": "404 7 Audit",
+  "generated": "2026-06-09T21:39:52.240502Z",
+  "status": "URL_EXTRACTION_PENDING",
+  "new_404s": 2,
+  "rule": "Fix or 410. Only Validate Fix if exact URLs identified and fix live."
+}

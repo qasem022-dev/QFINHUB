@@ -1,0 +1,246 @@
+{
+  "generated": "2026-06-09T19:40:17.519142Z",
+  "total_thin": 24,
+  "classification": {
+    "auto-loan-bc834ee2": {
+      "url": "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+      "slug": "/scenario/auto-loan-bc834ee2",
+      "type": "scenario",
+      "parent": "loan-calculator",
+      "impressions": 1,
+      "position": 1,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "mortgage-900k-30yr-7pct": {
+      "url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "slug": "/tools/mortgage-900k-30yr-7pct",
+      "type": "tool",
+      "parent": "mortgage-calculator",
+      "impressions": 8,
+      "position": 2.6,
+      "classification": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "reason": "Parameterized duplicate of mortgage-calculator \u2014 consolidate authority"
+    },
+    "401k-75000-10pct-10yr": {
+      "url": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+      "slug": "/scenario/401k-75000-10pct-10yr",
+      "type": "scenario",
+      "parent": "401k-calculator",
+      "impressions": 1,
+      "position": 4,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "loan-30k-5yr-6pct": {
+      "url": "https://www.qfinhub.com/tools/loan-30k-5yr-6pct",
+      "slug": "/tools/loan-30k-5yr-6pct",
+      "type": "tool",
+      "parent": "loan-calculator",
+      "impressions": 1,
+      "position": 4,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "compound-1k-5yr-5pct-daily": {
+      "url": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+      "slug": "/tools/compound-1k-5yr-5pct-daily",
+      "type": "tool",
+      "parent": "compound-interest",
+      "impressions": 1,
+      "position": 5,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "mortgage-150k-3dp-30yr-7-5pct": {
+      "url": "https://www.qfinhub.com/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "slug": "/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "type": "tool",
+      "parent": "mortgage-calculator",
+      "impressions": 1,
+      "position": 5,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "loan-3k-2yr-24pct": {
+      "url": "https://www.qfinhub.com/tools/loan-3k-2yr-24pct",
+      "slug": "/tools/loan-3k-2yr-24pct",
+      "type": "tool",
+      "parent": "loan-calculator",
+      "impressions": 3,
+      "position": 5.3,
+      "classification": "C_REMOVE_FROM_SITEMAP_REVIEW",
+      "reason": "Low-value duplicate, keep accessible but remove from sitemap"
+    },
+    "mortgage-200k-30yr-6pct": {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "slug": "/tools/mortgage-200k-30yr-6pct",
+      "type": "tool",
+      "parent": "mortgage-calculator",
+      "impressions": 13,
+      "position": 6.4,
+      "classification": "F_HOLD_FOR_DATA",
+      "reason": "Moderate impressions, need more data"
+    },
+    "retirement-planning-5c0e8e25": {
+      "url": "https://www.qfinhub.com/scenario/retirement-planning-5c0e8e25",
+      "slug": "/scenario/retirement-planning-5c0e8e25",
+      "type": "scenario",
+      "parent": "retirement-planning",
+      "impressions": 2,
+      "position": 7.5,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (2) \u2014 pure duplicate, no unique demand"
+    },
+    "investment-1k-5yr": {
+      "url": "https://www.qfinhub.com/tools/investment-1k-5yr",
+      "slug": "/tools/investment-1k-5yr",
+      "type": "tool",
+      "parent": "investment-return",
+      "impressions": 4,
+      "position": 7.8,
+      "classification": "C_REMOVE_FROM_SITEMAP_REVIEW",
+      "reason": "Low-value duplicate, keep accessible but remove from sitemap"
+    },
+    "investment-100k-7yr": {
+      "url": "https://www.qfinhub.com/tools/investment-100k-7yr",
+      "slug": "/tools/investment-100k-7yr",
+      "type": "tool",
+      "parent": "investment-return",
+      "impressions": 2,
+      "position": 8.5,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (2) \u2014 pure duplicate, no unique demand"
+    },
+    "mortgage-200k-15yr-5-5pct": {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+      "slug": "/tools/mortgage-200k-15yr-5-5pct",
+      "type": "tool",
+      "parent": "mortgage-calculator",
+      "impressions": 3,
+      "position": 8.7,
+      "classification": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "reason": "Parameterized duplicate of mortgage-calculator \u2014 consolidate authority"
+    },
+    "mortgage-750k-25dp-20yr-8-0pct": {
+      "url": "https://www.qfinhub.com/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "slug": "/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "type": "scenario",
+      "parent": "mortgage-calculator",
+      "impressions": 1,
+      "position": 9,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "compound-1k-30yr-6pct": {
+      "url": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+      "slug": "/tools/compound-1k-30yr-6pct",
+      "type": "tool",
+      "parent": "compound-interest",
+      "impressions": 1,
+      "position": 9,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "compound-100k-20yr-5pct": {
+      "url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "slug": "/tools/compound-100k-20yr-5pct",
+      "type": "tool",
+      "parent": "compound-interest",
+      "impressions": 15,
+      "position": 9.5,
+      "classification": "A_KEEP_AND_IMPROVE",
+      "reason": "Significant impressions \u2014 may have real demand"
+    },
+    "compound-150k-10yr-5pct": {
+      "url": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+      "slug": "/tools/compound-150k-10yr-5pct",
+      "type": "tool",
+      "parent": "compound-interest",
+      "impressions": 4,
+      "position": 9.5,
+      "classification": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "reason": "Parameterized duplicate of compound-interest \u2014 consolidate authority"
+    },
+    "mortgage-450k-30yr-6-5pct": {
+      "url": "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct",
+      "slug": "/tools/mortgage-450k-30yr-6-5pct",
+      "type": "tool",
+      "parent": "mortgage-calculator",
+      "impressions": 2,
+      "position": 9.5,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (2) \u2014 pure duplicate, no unique demand"
+    },
+    "compound-500k-15yr-5pct": {
+      "url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "slug": "/tools/compound-500k-15yr-5pct",
+      "type": "tool",
+      "parent": "compound-interest",
+      "impressions": 11,
+      "position": 9.9,
+      "classification": "F_HOLD_FOR_DATA",
+      "reason": "Moderate impressions, need more data"
+    },
+    "compound-interest-1000-10pct-15yr-m1000": {
+      "url": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "slug": "/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "type": "scenario",
+      "parent": "compound-interest",
+      "impressions": 1,
+      "position": 10,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "tax-125k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-125k-head-of-household",
+      "slug": "/tools/tax-125k-head-of-household",
+      "type": "tool",
+      "parent": "tax-calculator",
+      "impressions": 1,
+      "position": 10,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "compound-interest-10000-5pct-15yr": {
+      "url": "https://www.qfinhub.com/scenario/compound-interest-10000-5pct-15yr",
+      "slug": "/scenario/compound-interest-10000-5pct-15yr",
+      "type": "scenario",
+      "parent": "compound-interest",
+      "impressions": 2,
+      "position": 10.5,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (2) \u2014 pure duplicate, no unique demand"
+    },
+    "mortgage-650k-15dp-30yr-6-5pct": {
+      "url": "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct",
+      "slug": "/tools/mortgage-650k-15dp-30yr-6-5pct",
+      "type": "tool",
+      "parent": "mortgage-calculator",
+      "impressions": 3,
+      "position": 11,
+      "classification": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "reason": "Parameterized duplicate of mortgage-calculator \u2014 consolidate authority"
+    },
+    "tax-150k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-150k-married-separate",
+      "slug": "/tools/tax-150k-married-separate",
+      "type": "tool",
+      "parent": "tax-calculator",
+      "impressions": 1,
+      "position": 11,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    },
+    "investment-5k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "slug": "/tools/investment-5k-20yr",
+      "type": "tool",
+      "parent": "investment-return",
+      "impressions": 1,
+      "position": 12,
+      "classification": "D_NOINDEX_REVIEW",
+      "reason": "Very low impressions (1) \u2014 pure duplicate, no unique demand"
+    }
+  }
+}

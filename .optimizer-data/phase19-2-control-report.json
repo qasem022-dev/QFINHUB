@@ -1,0 +1,56 @@
+{
+  "title": "Phase 19.2 \u2014 Control Report",
+  "generated": "2026-06-09T17:12:23.998374Z",
+  "phase": "19.2",
+  "status": "COMPLETED",
+  "task_1_raw_gsc_normalization": {
+    "status": "COMPLETED",
+    "files_updated": 4,
+    "policy": "All KPIs now raw GSC API only. Correction factor disabled.",
+    "current_raw": {
+      "impressions": 499,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "position": 33.8,
+      "pages": 52
+    },
+    "report": ".optimizer-data/raw-gsc-truth-normalization-report.json"
+  },
+  "task_2_cron_verification_plan": {
+    "status": "COMPLETED",
+    "next_run": "2026-06-10T15:00:00+03:00",
+    "checklist_items": 8,
+    "report": ".optimizer-data/phase19-next-cron-verification-plan.json"
+  },
+  "task_3_daily_lock_integrity": {
+    "status": "PASSED",
+    "current_lock_valid": true,
+    "report": ".optimizer-data/phase19-daily-lock-integrity-test.json"
+  },
+  "task_4_action_queue": {
+    "status": "COMPLETED",
+    "priorities": "P1\u2192P6",
+    "report": ".optimizer-data/phase19-next-run-action-queue.json"
+  },
+  "task_5_outreach": {
+    "status": "SYSTEM_HEALTHY_BUT_NO_TRACTION",
+    "sent": 20,
+    "replies": 0,
+    "backlinks": 0,
+    "recommendation": "Hold new outreach, shorter pitch, follow up Jun 13",
+    "report": ".optimizer-data/outreach-growth-log.json"
+  },
+  "task_6_autonomous_wait": {
+    "status": "READY",
+    "instruction": "Do NOT manually run before cron unless failure or Qasem request",
+    "report": ".optimizer-data/phase19-2-autonomous-run-verification-report.json"
+  },
+  "safety": {
+    "google_indexing_api": "NOT USED",
+    "mass_page_creation": "NONE",
+    "risky_automations": "ALL DISABLED",
+    "telegram_blocking": "FIXED \u2014 non-blocking",
+    "noindex_without_approval": "NONE",
+    "scenario_sitemap": "NOT SUBMITTED"
+  }
+}

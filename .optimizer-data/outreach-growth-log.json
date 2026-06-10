@@ -1,20 +1,75 @@
 {
-  "generated_at": "2026-06-06T23:41:34Z",
-  "total_sent": 20,
-  "total_all_time": 25,
-  "backlinks_won": 0,
-  "replies_received": 0,
-  "bounces": 0,
-  "new_sent_today": 0,
-  "follow_ups_sent_today": 0,
-  "next_followup_window": "Jun 13 \u2014 12 targets eligible",
-  "reply_accelerator_batch": {
-    "sent": 5,
-    "held": 3,
-    "strategy": "Owner-operated, smaller blogs with high reply likelihood",
-    "file": ".optimizer-data/reply-accelerator-prospects.json"
+  "title": "Outreach Pressure Check \u2014 Phase 19.2",
+  "generated": "2026-06-09T17:11:38.182310Z",
+  "status": "SYSTEM_HEALTHY_BUT_NO_TRACTION",
+  "metrics": {
+    "total_sent": 20,
+    "replies_received": 0,
+    "backlinks_won": 0,
+    "embeds_won": 0,
+    "bounces": 0,
+    "followups_sent": 5,
+    "followups_due_next": 12,
+    "next_followup_date": "2026-06-13",
+    "held_prospects": 5,
+    "manual_required": 2
   },
-  "status": "AWAITING_FIRST_REPLY",
-  "widget_share_packet_ready": true,
-  "reply_rules_created": true
+  "diagnosis": {
+    "bounce_rate": "0% \u2014 email deliverability is good",
+    "reply_rate": "0% \u2014 messaging or targeting may need adjustment",
+    "best_performing_angle": "Unknown \u2014 0 replies, insufficient data",
+    "potential_issues": [
+      "Widget embed pitch may be too technical for cold outreach",
+      "Prospects may not see immediate value in embedding a calculator",
+      "Email subject lines may not be compelling enough",
+      "QFINHUB brand is unknown \u2014 trust barrier for cold outreach"
+    ]
+  },
+  "next_5_smaller_prospects": [
+    {
+      "target": "Financial Samurai",
+      "reason": "Personal finance blog, high engagement, calculator-friendly",
+      "score": 85,
+      "note": "Below 90 threshold \u2014 needs Qasem review"
+    },
+    {
+      "target": "Mr. Money Mustache",
+      "reason": "FIRE community, calculator-friendly, high trust",
+      "score": 85,
+      "note": "Below 90 threshold"
+    },
+    {
+      "target": "The College Investor",
+      "reason": "Student loan/debt focus, matches debt calculators",
+      "score": 82,
+      "note": "Below 90 threshold"
+    },
+    {
+      "target": "Physician on FIRE",
+      "reason": "High-income professional audience, calculator-friendly",
+      "score": 80,
+      "note": "Below 90 threshold"
+    },
+    {
+      "target": "Budgets Are Sexy",
+      "reason": "Personal finance blog, casual tone, budget calculator fit",
+      "score": 78,
+      "note": "Below 90 threshold"
+    }
+  ],
+  "widget_pitch_adjustment_recommended": true,
+  "pitch_suggestions": [
+    "Lead with the BENEFIT to their readers, not the widget features",
+    "Mention specific numbers their readers care about (e.g., 'Your readers could calculate their exact mortgage payment in 30 seconds')",
+    "Offer custom branding/sizing for their site",
+    "Include a live example link they can click immediately",
+    "Shorter emails \u2014 current outreach may be too detailed for cold prospects"
+  ],
+  "recommendation": "Hold on new outreach until at least 1 reply received. Follow up on existing 20 on Jun 13. Test shorter pitch format on next batch.",
+  "existing_prospects_status": {
+    "AWAITING_REPLY": 7,
+    "HELD": 5,
+    "MANUAL_REQUIRED": 2,
+    "SENT_FRESH": 11
+  }
 }

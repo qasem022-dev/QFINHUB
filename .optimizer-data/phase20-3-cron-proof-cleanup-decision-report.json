@@ -1,0 +1,62 @@
+{
+  "title": "Phase 20.3 \u2014 Cron Proof Gate + Tiny Cleanup Test Decision",
+  "generated": "2026-06-09T20:50:15.497693Z",
+  "status": "GATE_CLOSED \u2014 AWAITING_JUNE_10_CRON",
+  "cron_proof_gate": {
+    "status": "AWAITING",
+    "next_run": "June 10, 3 PM EEST (~15 hours)",
+    "rule": "NO cleanup action allowed until cron passes all 8 checks",
+    "report": ".optimizer-data/phase20-3-cron-proof-gate-report.json"
+  },
+  "tiny_cleanup_plan": {
+    "candidates": 3,
+    "pre_selected": [
+      {
+        "slug": "/scenario/auto-loan-bc834ee2",
+        "action": "REMOVE_FROM_SITEMAP_TEST",
+        "risk": 5
+      },
+      {
+        "slug": "/tools/loan-30k-5yr-6pct",
+        "action": "REMOVE_FROM_SITEMAP_TEST",
+        "risk": 5
+      },
+      {
+        "slug": "/tools/compound-1k-5yr-5pct-daily",
+        "action": "NOINDEX_TEST",
+        "risk": 5
+      }
+    ],
+    "all_blocked": true,
+    "blocked_reason": "Cron gate not yet passed"
+  },
+  "action_hierarchy": {
+    "least_risky": "REMOVE_FROM_SITEMAP (pages stay accessible)",
+    "low_risk": "CANONICALIZE_TO_PARENT (Google signal, may ignore)",
+    "moderate": "NOINDEX (prevents indexing, page stays)",
+    "high_risk": "REDIRECT (only if parent perfectly matches)",
+    "never": "DELETE"
+  },
+  "approval_requirements": {
+    "auditor_required": true,
+    "guardian_required": true,
+    "parent_strength": "Must pass 9 checks before cleanup",
+    "max_risk": 10,
+    "max_urls": 3
+  },
+  "monitoring": {
+    "24h": "Verify cleanup behavior",
+    "7d": "Check parent impressions",
+    "14d": "Check ranking shifts",
+    "rollback": "Instant if parent drops or errors"
+  },
+  "safety": {
+    "cleanup_executed_today": 0,
+    "bulk_actions": "NONE",
+    "indexing_api": "NOT USED",
+    "mass_pages": "NONE",
+    "automations": "ALL DISABLED",
+    "growth_cycle_manual": "NOT RUN (per gate rule)"
+  },
+  "next_step": "Wait for June 10 3 PM EEST cron. Verify. If pass \u2192 proceed with tiny 3-URL cleanup test. If fail \u2192 STOP and fix automation."
+}

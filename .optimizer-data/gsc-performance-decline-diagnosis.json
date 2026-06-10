@@ -1,0 +1,38 @@
+{
+  "title": "GSC Performance Decline Diagnosis",
+  "generated": "2026-06-09T21:29:54.052138Z",
+  "symptoms": {
+    "impressions": "499\u2192368 API (7-day), declining trend confirmed in UI",
+    "position": "33.8\u219240.1 (worsening)",
+    "clicks": "0 in 7d, but 1 in 28d",
+    "ctr": "0.0% 7d, 0.1% 28d"
+  },
+  "diagnosis": [
+    {
+      "factor": "Honeymoon exit",
+      "evidence": "New site impressions typically peak then normalize. QFINHUB launched ~2 months ago. Peak ~436 UI impressions. Now settling to 300-400.",
+      "impact": "HIGH \u2014 natural and expected"
+    },
+    {
+      "factor": "Discovered-not-indexed purge",
+      "evidence": "1,991\u2192526 drop. Google stopped discovering low-value parameterized pages. Fewer pages in discovery = fewer ranking opportunities.",
+      "impact": "MEDIUM \u2014 net positive (better quality over quantity)"
+    },
+    {
+      "factor": "Thin pages ranking instead of real pages",
+      "evidence": "24 of 34 near-winner pages (pos 1-30) are thin /tools/ and /scenario/ dupes. Google ranks them but they have 0 clicks.",
+      "impact": "HIGH \u2014 real content pages buried behind thin dupes"
+    },
+    {
+      "factor": "Low authority / 0 backlinks",
+      "evidence": "20 outreach sent, 0 replies. 0 backlinks. Google uses backlinks as trust signal.",
+      "impact": "HIGH \u2014 no external trust signals"
+    },
+    {
+      "factor": "Recent changes not recrawled",
+      "evidence": "CTR fixes deployed Jun 9 (3 days ago). Title/meta changes on 5+ pages. Google may not have recrawled yet.",
+      "impact": "MEDIUM \u2014 temporary, should improve in 3-10 days"
+    }
+  ],
+  "recommendation": "Do NOT panic-change strategy. Continue Phase 20 first-click sprint. CTR fixes need more time. Indexing improvements are happening. The 1 click in 28d proves clicks ARE possible."
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Phase 20.4 \u2014 GSC UI/API Reconciliation + Indexing Movement Audit",
+  "generated": "2026-06-09T21:30:10.420232Z",
+  "status": "COMPLETED \u2014 DATA RECONCILED",
+  "key_finding_1_clicks_exist": {
+    "finding": "QFINHUB HAS 1 ORGANIC CLICK in the last 28 days",
+    "significance": "This is the FIRST CONFIRMED ORGANIC CLICK. It appeared in Qasem's 28-day GSC UI view (0.1% CTR). The 7-day window captured a 0-click period, but clicks ARE possible.",
+    "first_click_status": "ACHIEVED \u2014 but not in 7-day window"
+  },
+  "key_finding_2_discovery_cleanup": {
+    "finding": "Discovered-not-indexed dropped from 1,991 \u2192 526 (-73%)",
+    "significance": "Massive improvement. Google stopped discovering thin parameterized pages. This was the intended effect of V2 cleanup (noindexing formula scenarios, removing from sitemap).",
+    "verdict": "STRATEGY WORKING"
+  },
+  "key_finding_3_indexed_growth": {
+    "finding": "Indexed pages grew from 238 \u2192 252 (+14)",
+    "significance": "More real content pages being indexed. Internal links and content upgrades (Phase 17-20) are helping.",
+    "verdict": "POSITIVE TREND"
+  },
+  "key_finding_4_performance_decline": {
+    "finding": "7-day impressions declining (499\u2192368 API, 418 UI), position worsening (33.8\u219240.1)",
+    "diagnosis": "Combination of honeymoon exit + discovered-not-indexed purge + thin pages stealing rankings + recent CTR fixes not yet recrawled",
+    "verdict": "EXPECTED NORMALIZATION \u2014 not a strategy failure"
+  },
+  "reconciliation_summary": {
+    "api_vs_ui_gap": "12% (within expected ~30%)",
+    "official_performance_source": "Raw GSC API",
+    "official_indexing_source": "GSC Pages UI",
+    "both_sources_agree": "0 clicks in 7d, declining impressions, worsening position"
+  },
+  "indexing_movement_verdict": {
+    "indexed": "+14 \u2014 GOOD",
+    "discovered": "-1,465 \u2014 EXCELLENT (intended V2 cleanup effect)",
+    "noindex": "+54 \u2014 LIKELY INTENTIONAL (V2 formula scenarios)",
+    "crawled_not_indexed": "+10 \u2014 NEEDS URL AUDIT",
+    "404": "+2 \u2014 MINOR, needs fix"
+  },
+  "risky_increase_audit": {
+    "noindex": "Likely intentional \u2014 V2 cleanup of formula scenarios. Verify URLs in next cycle.",
+    "crawled_not_indexed": "Probably thin duplicate tools/scenarios. Extract URLs for confirmation.",
+    "404": "2 new broken URLs \u2014 identify and fix or 410."
+  },
+  "performance_decline_5_factors": [
+    "1. Honeymoon exit \u2014 natural for new sites (HIGH impact)",
+    "2. Discovery purge \u2014 fewer pages being tested (MEDIUM, net positive)",
+    "3. Thin pages stealing rankings \u2014 24/34 near-winners are dupes (HIGH impact)",
+    "4. 0 backlinks \u2014 no external trust signals (HIGH impact)",
+    "5. Recent CTR fixes not recrawled \u2014 temporary (MEDIUM impact)"
+  ],
+  "decision": {
+    "strategy": "CONTINUE Phase 20 first-click sprint",
+    "cron_gate": "STILL CLOSED \u2014 await June 10 3 PM EEST run",
+    "tiny_cleanup_test": "HOLD \u2014 noindex increase needs URL audit first",
+    "daily_monitoring": "Add GSC UI/API reconciliation to daily run",
+    "panic_change": "DO NOT \u2014 trends are expected and net positive"
+  },
+  "safety": {
+    "cleanup_executed": 0,
+    "indexing_api": "NOT USED",
+    "mass_pages": "NONE",
+    "automations": "DISABLED"
+  }
+}

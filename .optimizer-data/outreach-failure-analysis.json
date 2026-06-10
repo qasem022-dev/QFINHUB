@@ -1,0 +1,18 @@
+{
+  "title": "Outreach Failure Analysis \u2014 Why 20 Sent, 0 Replies",
+  "generated": "2026-06-09T18:14:51.627034Z",
+  "diagnosis": {
+    "deliverability": "Good \u2014 0 bounces from 20 sent",
+    "likely_failure_reasons": [
+      "Emails too long and detailed \u2014 prospects may not read past first paragraph",
+      "Widget embed pitch is technical and unfamiliar \u2014 readers don't know what an 'embeddable calculator' is",
+      "Cold outreach from unknown brand (QFINHUB) \u2014 no trust established",
+      "Subject lines may not convey immediate value",
+      "No social proof or examples of other sites using the widget"
+    ]
+  },
+  "target_analysis": {
+    "large_finance_sites": "MoneyUnder30, Investopedia, BiggerPockets \u2014 likely get many pitches, harder to break through",
+    "recommendation": "Shift to smaller, niche blogs where QFINHUB calculators are genuinely useful"
+  }
+}

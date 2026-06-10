@@ -1,0 +1,21 @@
+{
+  "title": "GSC Risky Indexing Increase Audit",
+  "generated": "2026-06-09T21:29:54.052138Z",
+  "a_noindex_16_to_70": {
+    "status": "LIKELY_INTENTIONAL",
+    "likely_source": "Phase 12-14 V2 cleanup \u2014 ~2,000 formula scenario pages were noindexed. Google is now reporting these in the Pages dashboard.",
+    "verification_needed": true,
+    "verification_method": "Check GSC Pages drilldown for noindex group. Extract URLs. Verify they are formula/tool variants, not important calculators/guides/decisions.",
+    "risk_if_unintentional": "LOW \u2014 even if some are real pages, noindex is easily reversible",
+    "action": "Audit URLs in next cycle. Hold cleanup test until verified."
+  },
+  "b_crawled_not_indexed_5_to_15": {
+    "status": "NEEDS_URL_IDENTIFICATION",
+    "likely_candidates": "Tool/scenario duplicate pages that Google crawled but deemed low quality",
+    "action": "Extract 15 URLs via GSC Pages drilldown. Classify by type. If all are thin dupes \u2192 no action (expected). If real content pages \u2192 improve content and request indexing."
+  },
+  "c_404_5_to_7": {
+    "status": "MINOR",
+    "action": "Identify 2 new 404 URLs. Check if broken internal links or deleted pages. Fix or 410."
+  }
+}

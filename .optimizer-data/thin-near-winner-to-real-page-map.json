@@ -1,0 +1,222 @@
+{
+  "generated": "2026-06-09T19:40:17.519142Z",
+  "total": 24,
+  "mappings": {
+    "auto-loan-bc834ee2": {
+      "thin_url": "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+      "impressions": 1,
+      "position": 1,
+      "best_destination": "/calculators/loan-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-900k-30yr-7pct": {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "impressions": 8,
+      "position": 2.6,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "401k-75000-10pct-10yr": {
+      "thin_url": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+      "impressions": 1,
+      "position": 4,
+      "best_destination": "/calculators/401k-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "loan-30k-5yr-6pct": {
+      "thin_url": "https://www.qfinhub.com/tools/loan-30k-5yr-6pct",
+      "impressions": 1,
+      "position": 4,
+      "best_destination": "/calculators/loan-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-1k-5yr-5pct-daily": {
+      "thin_url": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+      "impressions": 1,
+      "position": 5,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-150k-3dp-30yr-7-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "impressions": 1,
+      "position": 5,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "loan-3k-2yr-24pct": {
+      "thin_url": "https://www.qfinhub.com/tools/loan-3k-2yr-24pct",
+      "impressions": 3,
+      "position": 5.3,
+      "best_destination": "/calculators/loan-calculator",
+      "destination_type": "calculator",
+      "action": "C_REMOVE_FROM_SITEMAP_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-200k-30yr-6pct": {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "impressions": 13,
+      "position": 6.4,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "F_HOLD_FOR_DATA",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "retirement-planning-5c0e8e25": {
+      "thin_url": "https://www.qfinhub.com/scenario/retirement-planning-5c0e8e25",
+      "impressions": 2,
+      "position": 7.5,
+      "best_destination": "/calculators/retirement-planning",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "investment-1k-5yr": {
+      "thin_url": "https://www.qfinhub.com/tools/investment-1k-5yr",
+      "impressions": 4,
+      "position": 7.8,
+      "best_destination": "/calculators/investment-return",
+      "destination_type": "calculator",
+      "action": "C_REMOVE_FROM_SITEMAP_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "investment-100k-7yr": {
+      "thin_url": "https://www.qfinhub.com/tools/investment-100k-7yr",
+      "impressions": 2,
+      "position": 8.5,
+      "best_destination": "/calculators/investment-return",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-200k-15yr-5-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+      "impressions": 3,
+      "position": 8.7,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-750k-25dp-20yr-8-0pct": {
+      "thin_url": "https://www.qfinhub.com/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "impressions": 1,
+      "position": 9,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-1k-30yr-6pct": {
+      "thin_url": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+      "impressions": 1,
+      "position": 9,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-100k-20yr-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "impressions": 15,
+      "position": 9.5,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "A_KEEP_AND_IMPROVE",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-150k-10yr-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+      "impressions": 4,
+      "position": 9.5,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-450k-30yr-6-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct",
+      "impressions": 2,
+      "position": 9.5,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-500k-15yr-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "impressions": 11,
+      "position": 9.9,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "F_HOLD_FOR_DATA",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-interest-1000-10pct-15yr-m1000": {
+      "thin_url": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "impressions": 1,
+      "position": 10,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "tax-125k-head-of-household": {
+      "thin_url": "https://www.qfinhub.com/tools/tax-125k-head-of-household",
+      "impressions": 1,
+      "position": 10,
+      "best_destination": "/calculators/tax-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "compound-interest-10000-5pct-15yr": {
+      "thin_url": "https://www.qfinhub.com/scenario/compound-interest-10000-5pct-15yr",
+      "impressions": 2,
+      "position": 10.5,
+      "best_destination": "/calculators/compound-interest",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "mortgage-650k-15dp-30yr-6-5pct": {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct",
+      "impressions": 3,
+      "position": 11,
+      "best_destination": "/calculators/mortgage-calculator",
+      "destination_type": "calculator",
+      "action": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "tax-150k-married-separate": {
+      "thin_url": "https://www.qfinhub.com/tools/tax-150k-married-separate",
+      "impressions": 1,
+      "position": 11,
+      "best_destination": "/calculators/tax-calculator",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    },
+    "investment-5k-20yr": {
+      "thin_url": "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "impressions": 1,
+      "position": 12,
+      "best_destination": "/calculators/investment-return",
+      "destination_type": "calculator",
+      "action": "D_NOINDEX_REVIEW",
+      "safe_action": "Add CTA from thin page \u2192 destination. Add internal links to destination from indexed pages."
+    }
+  }
+}

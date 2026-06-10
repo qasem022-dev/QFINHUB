@@ -1,0 +1,34 @@
+{
+  "title": "Phase 20.5 First Click Attack Log",
+  "generated": "2026-06-09T21:40:07.884248Z",
+  "status": "CONTINUING_SPRINT \u2014 CRON_PENDING",
+  "first_click_achieved_28d": true,
+  "active_targets": [
+    {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "pos": 11.3,
+      "imp": 94,
+      "status": "CTR fix deployed Jun 9. Cooldown day 2."
+    },
+    {
+      "page": "/decision/how-much-house-can-i-afford",
+      "pos": 8.8,
+      "imp": 4,
+      "status": "Title+meta upgraded Jun 9. Cooldown day 2."
+    },
+    {
+      "page": "/calculators/tax/philadelphia-pa",
+      "pos": 15.2,
+      "imp": 11,
+      "status": "Queued for next cycle"
+    },
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "pos": 22.6,
+      "imp": 18,
+      "status": "Prior CTR fixes deployed. Monitoring."
+    }
+  ],
+  "today_actions": "NONE \u2014 cron gate not passed. No manual growth work per Phase 20.3+ rules.",
+  "rule": "Do not manually run growth cycle before scheduled cron unless cron fails."
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Phase 20 Weekly Breakthrough Review",
+  "generated": "2026-06-09T18:14:51.627034Z",
+  "review_date": "2026-06-16 (7 days from now)",
+  "search": {
+    "raw_gsc_impressions": {
+      "start": 499,
+      "current": null,
+      "delta": null
+    },
+    "clicks": {
+      "start": 0,
+      "current": null,
+      "first_click": false
+    },
+    "ctr_pct": {
+      "start": 0.0,
+      "current": null
+    },
+    "avg_position": {
+      "start": 33.8,
+      "current": null
+    },
+    "pages_with_impressions": {
+      "start": 52,
+      "current": null
+    },
+    "pages_moved_to_top10": [],
+    "pages_moved_30plus_to_11_30": []
+  },
+  "indexing": {
+    "indexed": 238,
+    "discovered_not_indexed": null,
+    "guides_indexed": null
+  },
+  "authority": {
+    "outreach_sent": 20,
+    "replies": 0,
+    "backlinks": 0,
+    "embeds": 0
+  },
+  "execution": {
+    "pages_improved": 0,
+    "internal_links": 0,
+    "ctr_fixes": 0,
+    "deploys": 0,
+    "cron_success_rate": null
+  },
+  "decision": null
+}

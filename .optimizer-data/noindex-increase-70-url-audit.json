@@ -1,0 +1,8 @@
+{
+  "title": "Noindex 70 Audit",
+  "generated": "2026-06-09T21:39:52.240502Z",
+  "status": "URL_EXTRACTION_PENDING",
+  "likely_source": "V2 formula scenario cleanup (~50-55) + tool duplicate noindex (~10-15)",
+  "risk": "LOW \u2014 likely intentional",
+  "emergency_check": "Verify no important calculator/guide/decision accidentally noindexed"
+}

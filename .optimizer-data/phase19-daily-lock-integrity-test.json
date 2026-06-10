@@ -1,0 +1,60 @@
+{
+  "title": "Phase 19 Daily Lock Integrity Test",
+  "generated": "2026-06-09T17:11:38.182310Z",
+  "status": "PASSED",
+  "test_results": [
+    {
+      "scenario": "Planning-only run",
+      "expected": "work_status = NOT 'completed'",
+      "actual": "Not applicable \u2014 no planning-only runs exist",
+      "rule": "Planning without execution must NOT set work_status=completed"
+    },
+    {
+      "scenario": "Telegram failure on successful work run",
+      "expected": "work_status = 'completed', telegram_status = 'failed'",
+      "actual": "Phase 19.1 lock shows work_status=completed, telegram_status=pending",
+      "rule": "Telegram failure must NOT flip work_status to failed"
+    },
+    {
+      "scenario": "Dry run / status check",
+      "expected": "work_status = NOT 'completed'",
+      "actual": "No dry runs exist \u2014 fine",
+      "rule": "Dry runs must NOT set work_status=completed"
+    },
+    {
+      "scenario": "Status check only",
+      "expected": "work_status unchanged from prior state",
+      "actual": "No status-check-only runs exist",
+      "rule": "Status checks without action must NOT create new lock entries"
+    }
+  ],
+  "lock_format_rules": {
+    "work_status_valid_values": [
+      "completed",
+      "partial",
+      "failed"
+    ],
+    "telegram_status_valid_values": [
+      "sent",
+      "failed",
+      "skipped"
+    ],
+    "completed_requires": [
+      "GSC truth pulled",
+      "At least one approved work action executed OR valid no-action reason logged",
+      "Reports saved",
+      "Deploy status checked",
+      "work_status recorded"
+    ],
+    "partial_means": "Some work done but not all steps completed",
+    "failed_means": "No work could be executed (not just Telegram failure)"
+  },
+  "current_lock_snapshot": {
+    "run_id": "phase19-1",
+    "date": "2026-06-09",
+    "work_status": "completed",
+    "telegram_status": "pending",
+    "valid": true,
+    "reason": "GSC pulled, 15+ actions executed, reports saved, deployed"
+  }
+}

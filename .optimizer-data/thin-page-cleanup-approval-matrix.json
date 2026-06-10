@@ -1,0 +1,103 @@
+{
+  "generated": "2026-06-09T20:26:44.533878Z",
+  "total": 8,
+  "all_held": true,
+  "matrix": [
+    {
+      "url": "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/loan-calculator must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/401k-calculator must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/loan-30k-5yr-6pct",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/loan-calculator must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/compound-interest must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/mortgage-calculator must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/mortgage-calculator must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/compound-interest must be strengthened before cleanup"
+    },
+    {
+      "url": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "recommended_action": "D_NOINDEX_TEST",
+      "expected_benefit": "Reduce index bloat, consolidate authority to parent calculator",
+      "expected_risk": "5/100 \u2014 very low (1 impressions)",
+      "rollback_method": "Remove noindex tag / re-add to sitemap \u2014 instant reversal",
+      "auditor_approval_needed": true,
+      "tech_guardian_approval_needed": true,
+      "execute_today": false,
+      "reason_held": "Held \u2014 awaiting Auditor + Technical Guardian approval per Phase 20.2 rules",
+      "prerequisite": "Parent page /calculators/compound-interest must be strengthened before cleanup"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Phase 20 Linkable Asset Growth Log",
+  "generated": "2026-06-09T18:14:51.627034Z",
+  "assets": [
+    {
+      "name": "Mortgage Affordability Widget",
+      "slug": "/widgets/mortgage-affordability-embed",
+      "status": "LIVE",
+      "improvements_today": [
+        "Already verified live (15/15 checks passed Jun 8)"
+      ],
+      "use_cases": [
+        "Homebuyer guides",
+        "Mortgage broker sites",
+        "Real estate blogs"
+      ],
+      "pitch": "Help your readers find their max home price in 30 seconds \u2014 free embeddable calculator"
+    },
+    {
+      "name": "Debt Snowball vs Avalanche Widget",
+      "slug": "/widgets/debt-snowball-vs-avalanche-embed",
+      "status": "LIVE",
+      "improvements_today": [
+        "Built and deployed Phase 16.11"
+      ],
+      "use_cases": [
+        "Debt payoff articles",
+        "Credit counseling blogs",
+        "Personal finance newsletters"
+      ],
+      "pitch": "Show your readers which debt payoff method saves them more \u2014 free interactive widget"
+    }
+  ],
+  "rule": "Do NOT build more assets until these two get outreach traction"
+}

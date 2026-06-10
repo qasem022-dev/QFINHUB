@@ -1,0 +1,86 @@
+{
+  "generated": "2026-06-09T20:26:44.533878Z",
+  "selected": 8,
+  "candidates": [
+    {
+      "slug": "/scenario/auto-loan-bc834ee2",
+      "url": "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+      "type": "scenario",
+      "impressions": 1,
+      "position": 1,
+      "parent": "loan-calculator",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/scenario/401k-75000-10pct-10yr",
+      "url": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+      "type": "scenario",
+      "impressions": 1,
+      "position": 4,
+      "parent": "401k-calculator",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/tools/loan-30k-5yr-6pct",
+      "url": "https://www.qfinhub.com/tools/loan-30k-5yr-6pct",
+      "type": "tool",
+      "impressions": 1,
+      "position": 4,
+      "parent": "loan-calculator",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/tools/compound-1k-5yr-5pct-daily",
+      "url": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+      "type": "tool",
+      "impressions": 1,
+      "position": 5,
+      "parent": "compound-interest",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "url": "https://www.qfinhub.com/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "type": "tool",
+      "impressions": 1,
+      "position": 5,
+      "parent": "mortgage-calculator",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "url": "https://www.qfinhub.com/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "type": "scenario",
+      "impressions": 1,
+      "position": 9,
+      "parent": "mortgage-calculator",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/tools/compound-1k-30yr-6pct",
+      "url": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+      "type": "tool",
+      "impressions": 1,
+      "position": 9,
+      "parent": "compound-interest",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    },
+    {
+      "slug": "/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "url": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "type": "scenario",
+      "impressions": 1,
+      "position": 10,
+      "parent": "compound-interest",
+      "classification": "D_NOINDEX_REVIEW",
+      "risk_score": 5
+    }
+  ]
+}

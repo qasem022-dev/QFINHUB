@@ -1,0 +1,33 @@
+{
+  "title": "Tiny Cleanup Action Type Decision",
+  "generated": "2026-06-09T20:50:02.525380Z",
+  "status": "FRAMEWORK_READY",
+  "action_hierarchy": {
+    "1_LEAST_RISKY": "REMOVE_FROM_SITEMAP \u2014 page stays accessible, Google stops pushing it",
+    "2_LOW_RISK": "CANONICALIZE_TO_PARENT \u2014 suggests Google consolidate to parent",
+    "3_MODERATE_RISK": "NOINDEX \u2014 prevents indexing, page stays for users",
+    "4_HIGH_RISK": "REDIRECT \u2014 only if parent fully satisfies intent",
+    "5_AVOID": "DELETE \u2014 never without explicit approval"
+  },
+  "rules": [
+    "Default: try sitemap removal first",
+    "Noindex is stronger than sitemap removal \u2014 use only if sitemap removal insufficient",
+    "Canonical is a signal, not a command \u2014 Google may ignore",
+    "Redirect only if parent page fully satisfies the exact query intent",
+    "Never delete pages"
+  ],
+  "per_url_decisions": {
+    "/scenario/auto-loan-bc834ee2": {
+      "recommended": "REMOVE_FROM_SITEMAP_TEST",
+      "reason": "Lowest risk, page stays accessible"
+    },
+    "/tools/loan-30k-5yr-6pct": {
+      "recommended": "REMOVE_FROM_SITEMAP_TEST",
+      "reason": "Lowest risk, parent is strong"
+    },
+    "/tools/compound-1k-5yr-5pct-daily": {
+      "recommended": "NOINDEX_TEST",
+      "reason": "Compound interest has many dupes \u2014 noindex prevents future dupes being crawled"
+    }
+  }
+}

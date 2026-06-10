@@ -1,0 +1,24 @@
+{
+  "title": "Phase 20 Tier 1 Calculator Trust Push Log",
+  "generated": "2026-06-09T18:14:03.348307Z",
+  "calculators": [
+    {
+      "page": "/calculators/tax-calculator",
+      "pos": 87.6,
+      "imp": 45,
+      "action": "Meta upgraded Phase 19.1. Next: FAQ + internal links from tax decisions"
+    },
+    {
+      "page": "/calculators/retirement-planning",
+      "pos": 89.2,
+      "imp": 42,
+      "action": "Meta upgraded Phase 19.1. Next: FAQ + internal links"
+    },
+    {
+      "page": "/calculators/investment-return",
+      "pos": 83.1,
+      "imp": 42,
+      "action": "Meta upgraded Phase 19.1. Next: short-answer + links"
+    }
+  ]
+}

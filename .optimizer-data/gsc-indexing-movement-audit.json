@@ -1,0 +1,55 @@
+{
+  "title": "GSC Indexing Movement Audit",
+  "generated": "2026-06-09T21:29:54.052138Z",
+  "movements": [
+    {
+      "metric": "Indexed",
+      "from": 238,
+      "to": 252,
+      "delta": "+14",
+      "classification": "IMPROVEMENT",
+      "explanation": "More pages moved from discovered\u2192indexed. Internal links + content upgrades (Phase 17-20) helping Google trust pages."
+    },
+    {
+      "metric": "Discovered not indexed",
+      "from": 1991,
+      "to": 526,
+      "delta": "-1,465",
+      "classification": "MAJOR_IMPROVEMENT",
+      "explanation": "Huge 73% drop. Likely causes: (1) Thin tool/scenario pages being de-prioritized by Google after they were removed from sitemap or noindexed in prior cleanup. (2) Google stopped discovering low-value parameterized pages. (3) Discovery queue purged stale URLs."
+    },
+    {
+      "metric": "Noindex",
+      "from": 16,
+      "to": 70,
+      "delta": "+54",
+      "classification": "NEEDS_AUDIT",
+      "explanation": "54 new noindexed pages. Most likely: ~2,000 formula scenario pages were noindexed during Phase 12-14 V2 cleanup. Google is now reporting them. Needs verification that all 70 are intentional."
+    },
+    {
+      "metric": "Crawled not indexed",
+      "from": 5,
+      "to": 15,
+      "delta": "+10",
+      "classification": "NEEDS_AUDIT",
+      "explanation": "10 more pages crawled but Google decided not to index. Could be tool/scenario dupes or low-quality pages. Need URL identification."
+    },
+    {
+      "metric": "404",
+      "from": 5,
+      "to": 7,
+      "delta": "+2",
+      "classification": "MINOR",
+      "explanation": "2 new 404s. Could be deleted pages or broken links. Verify and fix or 410."
+    },
+    {
+      "metric": "Alt canonical",
+      "from": 33,
+      "to": 40,
+      "delta": "+7",
+      "classification": "EXPECTED",
+      "explanation": "Normal growth as more pages reference parent calculators. Not a concern."
+    }
+  ],
+  "overall_verdict": "NET_POSITIVE \u2014 indexed pages growing (+14), discovered bloat dropping (-73%), noindex increase looks intentional (V2 cleanup). Minor crawled/404 increases need audit."
+}

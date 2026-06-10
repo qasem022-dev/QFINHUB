@@ -1,0 +1,61 @@
+{
+  "generated": "2026-06-09T20:26:44.533878Z",
+  "parents": [
+    {
+      "parent": "compound-interest",
+      "destination": "/calculators/compound-interest",
+      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
+      "actions_needed_before_cleanup": [
+        "Verify FAQ schema present",
+        "Add short-answer section if missing",
+        "Add 2-3 more internal links from relevant blogs",
+        "Ensure title/meta covers the query intent of thin pages"
+      ],
+      "actions_taken_today": [
+        "Added internal links from blog posts to /calculators/compound-interest (via calculator-blog-links.ts)"
+      ]
+    },
+    {
+      "parent": "401k-calculator",
+      "destination": "/calculators/401k-calculator",
+      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
+      "actions_needed_before_cleanup": [
+        "Verify FAQ schema present",
+        "Add short-answer section if missing",
+        "Add 2-3 more internal links from relevant blogs",
+        "Ensure title/meta covers the query intent of thin pages"
+      ],
+      "actions_taken_today": [
+        "Added internal links from blog posts to /calculators/401k-calculator (via calculator-blog-links.ts)"
+      ]
+    },
+    {
+      "parent": "loan-calculator",
+      "destination": "/calculators/loan-calculator",
+      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
+      "actions_needed_before_cleanup": [
+        "Verify FAQ schema present",
+        "Add short-answer section if missing",
+        "Add 2-3 more internal links from relevant blogs",
+        "Ensure title/meta covers the query intent of thin pages"
+      ],
+      "actions_taken_today": [
+        "Added internal links from blog posts to /calculators/loan-calculator (via calculator-blog-links.ts)"
+      ]
+    },
+    {
+      "parent": "mortgage-calculator",
+      "destination": "/calculators/mortgage-calculator",
+      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
+      "actions_needed_before_cleanup": [
+        "Verify FAQ schema present",
+        "Add short-answer section if missing",
+        "Add 2-3 more internal links from relevant blogs",
+        "Ensure title/meta covers the query intent of thin pages"
+      ],
+      "actions_taken_today": [
+        "Added internal links from blog posts to /calculators/mortgage-calculator (via calculator-blog-links.ts)"
+      ]
+    }
+  ]
+}

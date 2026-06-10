@@ -1,0 +1,84 @@
+{
+  "title": "Phase 19 Next Run Action Queue",
+  "generated": "2026-06-09T17:11:38.182310Z",
+  "target_date": "2026-06-10",
+  "daily_limits": {
+    "page_upgrades": "3-5",
+    "internal_links": "15-30",
+    "ctr_fixes": "up to 5",
+    "outreach_new": "up to 5",
+    "tool_audits": "10-20",
+    "new_pages": "0-1 (score 90+ only)"
+  },
+  "priority_queue": {
+    "P1_first_click": [
+      {
+        "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "impressions": 94,
+        "position": 11.3,
+        "action": "Monitor post-CTR-fix. Check if position improved. If still 0 clicks, consider additional internal links or snippet optimization.",
+        "trigger": "Always"
+      },
+      {
+        "page": "/decision/how-much-house-can-i-afford",
+        "impressions": 4,
+        "position": 8.8,
+        "action": "Monitor \u2014 already page 1. Add internal links from mortgage blog posts. Check title for CTR.",
+        "trigger": "If position is 1-20"
+      },
+      {
+        "page": "/calculators/tax/philadelphia-pa",
+        "impressions": 11,
+        "position": 15.2,
+        "action": "Check on-page content. Add internal links from tax-related pages. Verify schema.",
+        "trigger": "If position is 1-20"
+      }
+    ],
+    "P2_deep_ranking": [
+      {
+        "page": "/calculators/tax-calculator",
+        "impressions": 45,
+        "position": 87.6,
+        "action": "Add more internal links. Check for competing pages cannibalizing. Review schema completeness."
+      },
+      {
+        "page": "/calculators/retirement-planning",
+        "impressions": 42,
+        "position": 89.2,
+        "action": "Add internal links from retirement/401k blogs. Add FAQ schema if missing."
+      },
+      {
+        "page": "/calculators/investment-return",
+        "impressions": 42,
+        "position": 83.1,
+        "action": "Add internal links from investment/compound-interest pages. Add short-answer section."
+      }
+    ],
+    "P3_internal_links": {
+      "target": "15-30 links",
+      "sources": "Indexed blogs with impressions, decision pages, upgraded guides, Tier 1 calculators",
+      "targets": "$20K loan blog, tax calculator, retirement calculator, investment-return calculator, pay-off-debt decision, upgraded guides"
+    },
+    "P4_upgrades": {
+      "target": "3-5 pages",
+      "focus": "Pages with impressions > 0, clicks = 0, position 11-30. Also discovered-not-indexed guides."
+    },
+    "P5_tool_audit": {
+      "target": "10-20 tools",
+      "note": "Audit only \u2014 no noindex/delete without approval"
+    },
+    "P6_outreach": {
+      "check_replies": true,
+      "send_followups": "If due (next: Jun 13)",
+      "send_new": "Up to 5 if high-quality prospects found",
+      "minimum_score": 90
+    }
+  },
+  "safety_checks_before_execution": [
+    "Google Indexing API: NOT USED",
+    "Mass pages: NOT CREATED",
+    "Risky automations: REMAIN DISABLED",
+    "Sitemap submissions: scenario sitemap NOT submitted",
+    "noindex/delete: NONE without approval"
+  ]
+}

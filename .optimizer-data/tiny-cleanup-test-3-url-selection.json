@@ -1,0 +1,47 @@
+{
+  "title": "Tiny Cleanup Test \u2014 3 URL Selection",
+  "generated": "2026-06-09T20:50:02.525380Z",
+  "status": "CONDITIONAL \u2014 AWAITING_CRON_SUCCESS",
+  "selection_rules": {
+    "from_pool": "8 candidates from Phase 20.2",
+    "criteria": [
+      "Lowest impressions (all have 1)",
+      "Pure duplicates",
+      "Strong parent page exists",
+      "No backlinks",
+      "No clicks",
+      "Clear rollback path"
+    ],
+    "avoid": [
+      "Moderate impressions",
+      "Unclear intent",
+      "Weak parent page",
+      "Pages that satisfy long-tail queries better than parent"
+    ]
+  },
+  "pre_selected_top_3": [
+    {
+      "slug": "/scenario/auto-loan-bc834ee2",
+      "imp": 1,
+      "pos": 1.0,
+      "parent": "loan-calculator",
+      "risk": 5
+    },
+    {
+      "slug": "/tools/loan-30k-5yr-6pct",
+      "imp": 1,
+      "pos": 4.0,
+      "parent": "loan-calculator",
+      "risk": 5
+    },
+    {
+      "slug": "/tools/compound-1k-5yr-5pct-daily",
+      "imp": 1,
+      "pos": 5.0,
+      "parent": "compound-interest",
+      "risk": 5
+    }
+  ],
+  "selected": [],
+  "note": "Selection confirmed ONLY after cron passes AND parent strength verified"
+}

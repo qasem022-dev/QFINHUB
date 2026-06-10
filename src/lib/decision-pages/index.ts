@@ -134,9 +134,9 @@ export const decisionPages: DecisionPage[] = [
   // ═══════════════════════════════════════════════════════════
   {
     slug: "pay-off-debt-or-invest",
-    title: "Pay Off Debt or Invest? The Math That Decides (2026 Guide)",
+    title: "Pay Off Debt or Invest? Let YOUR Numbers Decide (2026 Guide)",
     description:
-      "Pay off your debt or invest in the market? The math changes with every interest rate and your tax bracket. Run YOUR exact numbers — see which path builds wealth faster. Free calculator.",
+      "Should you pay off debt or invest? The answer depends on YOUR interest rate, tax bracket, and expected returns — not generic advice. Run your exact numbers in 30 seconds. No signup. See which path builds YOUR wealth faster.",
     cluster: "debt",
     question:
       "If I have extra cash each month, should I use it to pay down debt faster or invest it for the future?",

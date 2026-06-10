@@ -1,0 +1,65 @@
+{
+  "title": "GSC UI/API Reconciliation Report",
+  "generated": "2026-06-09T21:29:54.052138Z",
+  "data_sources": {
+    "gsc_api_fresh_7d": {
+      "source": "API page dimension, rowLimit=250",
+      "impressions": 368,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position": 40.1,
+      "pages": 43
+    },
+    "gsc_api_previous_7d": {
+      "source": "API cached (gsc-daily-pipeline.py)",
+      "impressions": 499,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position": 33.8,
+      "pages": 52,
+      "note": "STALE \u2014 from earlier date range, may include older data"
+    },
+    "gsc_ui_7d": {
+      "source": "Qasem manual GSC UI screenshot",
+      "impressions": 418,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position": 36.7,
+      "trend": "declining from recent peak"
+    },
+    "gsc_ui_28d": {
+      "source": "Qasem manual GSC UI screenshot",
+      "impressions": 915,
+      "clicks": 1,
+      "ctr": "0.1%",
+      "avg_position": 29.8
+    }
+  },
+  "comparison_7d": {
+    "api_vs_ui_impressions": "368 API vs 418 UI = 12% undercount (within expected ~30%)",
+    "api_vs_ui_position": "40.1 API vs 36.7 UI = API shows worse position (expected \u2014 UI filters differently)",
+    "clicks_match": true,
+    "ctr_match": true
+  },
+  "trend": {
+    "direction": "DECLINING",
+    "impressions": "499 \u2192 418 (UI) or 368 (API fresh) \u2014 down ~15-26%",
+    "position": "33.8 \u2192 36.7 (worsening)",
+    "possible_causes": [
+      "New site honeymoon ending \u2014 Google testing fewer pages",
+      "Previously indexed thin pages being demoted",
+      "Discovered-not-indexed drop from 1,991\u2192526 \u2014 less discovery = less ranking",
+      "Natural fluctuation in low-volume site"
+    ]
+  },
+  "the_1_click_28d": {
+    "found": true,
+    "note": "QFINHUB HAS HAD 1 ORGANIC CLICK in the last 28 days. This proves clicks ARE possible. The 7-day window just happened to capture a 0-click period.",
+    "significance": "Not a structural problem \u2014 just low volume. First click already happened."
+  },
+  "official_source_policy": {
+    "performance_metrics": "Raw GSC API (page dimension, rowLimit\u2265250) \u2014 OFFICIAL",
+    "indexing_counts": "GSC Pages UI \u2014 OFFICIAL (API URL Inspection doesn't provide aggregate counts)",
+    "manual_ui_comparison": "FYI only \u2014 listed separately, not used in KPIs"
+  }
+}

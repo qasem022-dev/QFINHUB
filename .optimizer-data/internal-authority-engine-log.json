@@ -1,30 +1,32 @@
 {
-  "generated_at": "2026-06-06T23:41:34Z",
-  "phase": "16.10",
-  "links_planned_today": 170,
-  "cumulative_total": 237,
-  "source_pages": [
-    "mortgage-calculator",
-    "mortgage-affordability",
-    "compound-interest",
-    "retirement-planning",
-    "loan-calculator",
-    "debt-payoff",
-    "investment-return",
-    "budget-planner",
-    "401k-calculator"
-  ],
-  "target_pages": [
-    "loan-blog",
-    "pay-off-debt-decision",
-    "retirement-decision",
-    "emergency-fund-decision",
-    "credit-card-debt-blog",
-    "retire-at-45",
-    "snowball-vs-avalanche",
-    "roth-vs-traditional",
-    "ecb-mortgage-blog",
-    "heloc-vs-personal-loan"
-  ],
-  "previous_round": "67 cumulative through Phase 16.4"
+  "title": "Internal Authority Engine Log \u2014 Phase 20.2",
+  "generated": "2026-06-09T20:32:37.103487Z",
+  "phase20_2_added": 13,
+  "cumulative_total": 67,
+  "details": {
+    "mortgage-affordability": [
+      "+1 core-inflation"
+    ],
+    "tax-calculator": [
+      "+1 credit-card-debt"
+    ],
+    "debt-snowball_NEW": [
+      "+2 blogs \u2014 new calculator key"
+    ],
+    "savings-goal_NEW": [
+      "+3 blogs \u2014 new calculator key"
+    ],
+    "refinance-calculator_NEW": [
+      "+3 blogs \u2014 new calculator key"
+    ],
+    "social-security_NEW": [
+      "+3 blogs \u2014 new calculator key"
+    ]
+  },
+  "new_calculator_keys_added": [
+    "debt-snowball",
+    "savings-goal",
+    "refinance-calculator",
+    "social-security"
+  ]
 }

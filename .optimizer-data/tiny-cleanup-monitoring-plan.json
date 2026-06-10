@@ -1,0 +1,16 @@
+{
+  "title": "Tiny Cleanup Monitoring Plan",
+  "generated": "2026-06-09T20:50:02.525380Z",
+  "status": "AWAITING_EXECUTION",
+  "checkpoints": {
+    "24h": "Verify thin URLs behave as intended (sitemap removed / noindex active / canonical set)",
+    "7d": "Check parent page impressions in GSC \u2014 should not drop",
+    "14d": "Check if thin URLs dropped from GSC rankings, parent pages gained visibility",
+    "14d_rollback_check": "If parent visibility drops or errors appear \u2192 ROLLBACK"
+  },
+  "rollback_procedure": {
+    "sitemap_removal": "Re-add URL to sitemap",
+    "noindex": "Remove noindex meta tag",
+    "canonical": "Remove canonical tag, restore self-canonical"
+  }
+}

@@ -1,44 +1,41 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-06-07T02:42:21Z",
+  "generated": "2026-06-09T17:10:34.840720Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "date_range": {
-    "start": "2026-05-31",
-    "end": "2026-06-07"
+    "start": "2026-06-02",
+    "end": "2026-06-08"
   },
-  "latest_available_gsc_date": "2026-06-05",
-  "api_pull_timestamp": "2026-06-07T02:42:21Z",
+  "latest_available_gsc_date": "2026-06-07",
   "metrics_7d": {
-    "impressions": 304,
+    "impressions": 499,
     "clicks": 0,
     "ctr_pct": 0.0,
-    "avg_position": 33.2,
-    "pages_with_impressions": 45
+    "avg_position": 33.8,
+    "pages_with_impressions": 52
   },
   "previous_7d": {
-    "start": "2026-05-24",
-    "end": "2026-05-31",
-    "impressions": 291,
+    "start": "2026-05-31",
+    "end": "2026-06-07",
+    "impressions": 304,
     "clicks": 0,
-    "avg_position": 19.7
+    "avg_position": 33.2
   },
   "change": {
-    "impressions": "+13 (+4.5%)",
-    "position": "+13.5 (worse \u2014 was 19.7 now 33.2)",
-    "note": "Impressions growing slightly (+4.5%) but avg position worsened significantly from 19.7 to 33.2. Google is ranking us for MORE queries but at WORSE positions. This is concerning."
+    "impressions": "+195 (+64%)",
+    "clicks": "0 (unchanged)",
+    "position": "+0.6 (slightly worse)",
+    "pages": "+7"
   },
-  "comparison": {
-    "query_dimension_impressions": 156,
-    "page_dimension_impressions": 304,
-    "query_page_dimension_impressions": 156,
-    "note": "Query dimension undercounts by 48.7% vs page dimension due to anonymization. Page dimension is correct aggregate."
+  "manual_ui_comparison": {
+    "available": true,
+    "last_check": "2026-06-07 (Qasem)",
+    "ui_impressions": 436,
+    "ui_indexed": 238,
+    "api_undercount_pct": "~30%",
+    "note": "API permanently undercounts vs UI due to anonymized query stripping. UI comparison is FYI only \u2014 NOT used in official KPIs."
   },
-  "data_completeness": {
-    "pagination_completed": true,
-    "cache_used": false,
-    "token_status": "FRESH",
-    "row_limit_used": 500,
-    "rows_returned": 45
-  }
+  "data_source_policy": "RAW_GSC_API_ONLY",
+  "correction_factor": "DISABLED \u2014 not applied to official metrics per Phase 19.2 normalization"
 }

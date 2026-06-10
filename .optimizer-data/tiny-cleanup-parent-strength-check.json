@@ -1,0 +1,38 @@
+{
+  "title": "Tiny Cleanup Parent Strength Check",
+  "generated": "2026-06-09T20:50:02.525380Z",
+  "status": "AWAITING_CRON_AND_SELECTION",
+  "parents_to_check": [
+    {
+      "parent": "loan-calculator",
+      "url": "/calculators/loan-calculator",
+      "checks": {
+        "http_200": null,
+        "index_follow": null,
+        "self_canonical": null,
+        "in_sitemap": null,
+        "title_covers_intent": null,
+        "short_answer": null,
+        "faq": null,
+        "internal_links": null,
+        "calculator_cta": null
+      }
+    },
+    {
+      "parent": "compound-interest",
+      "url": "/calculators/compound-interest",
+      "checks": {
+        "http_200": null,
+        "index_follow": null,
+        "self_canonical": null,
+        "in_sitemap": null,
+        "title_covers_intent": null,
+        "short_answer": null,
+        "faq": null,
+        "internal_links": null,
+        "calculator_cta": null
+      }
+    }
+  ],
+  "rule": "If any parent page is weak, improve parent first and HOLD cleanup."
+}

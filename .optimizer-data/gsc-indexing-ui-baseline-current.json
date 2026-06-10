@@ -1,0 +1,41 @@
+{
+  "title": "GSC Indexing UI Baseline \u2014 Current",
+  "generated": "2026-06-09T21:29:54.052138Z",
+  "source": "Qasem manual GSC UI screenshot (Page Indexing dashboard)",
+  "last_updated_ui": "01/06/2026 (displayed), data appears freshly refreshed vs 07/06 check",
+  "counts": {
+    "indexed": 252,
+    "not_indexed": 660,
+    "total": 912,
+    "indexed_pct": "27.6%"
+  },
+  "not_indexed_breakdown": {
+    "alternative_canonical": 40,
+    "page_with_redirect": 1,
+    "crawled_currently_not_indexed": 15,
+    "excluded_by_noindex": 70,
+    "discovered_currently_not_indexed": 526,
+    "not_found_404": 7,
+    "duplicate_google_chose_different_canonical": 1,
+    "duplicate_without_user_selected_canonical": 0
+  },
+  "comparison_previous": {
+    "previous_date": "2026-06-07",
+    "previous_counts": {
+      "indexed": 238,
+      "discovered": 1991,
+      "noindex": 16,
+      "crawled_not_indexed": 5,
+      "404": 5,
+      "alt_canonical": 33
+    },
+    "changes": {
+      "indexed": "+14",
+      "discovered": "-1,465",
+      "noindex": "+54",
+      "crawled_not_indexed": "+10",
+      "404": "+2",
+      "alt_canonical": "+7"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Cleanup Test Status",
+  "generated": "2026-06-09T21:39:52.240502Z",
+  "status": "BLOCKED_PENDING_RISKY_INDEX_AUDITS",
+  "blockers": [
+    "Cron proof pending",
+    "Noindex audit pending",
+    "CNI audit pending",
+    "404 audit pending",
+    "Parent strength check pending",
+    "Auditor + Guardian approval pending"
+  ]
+}

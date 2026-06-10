@@ -1,0 +1,36 @@
+{
+  "title": "Tier 1 Deep-Ranking Push Log",
+  "generated": "2026-06-09T15:39:50.496703Z",
+  "pages": [
+    {
+      "page": "/calculators/tax-calculator",
+      "position": 87.6,
+      "impressions": 45,
+      "actions": [
+        "Upgraded title: 'Estimate Your Tax Bill' \u2192 '2026 Tax Calculator: See Exactly What You'll Owe (Free Estimate)'",
+        "Upgraded meta description with more keyword intent",
+        "Added 2 blog connections: capital-gains-tax, emergency-fund"
+      ]
+    },
+    {
+      "page": "/calculators/retirement-planning",
+      "position": 89.2,
+      "impressions": 42,
+      "actions": [
+        "Upgraded title: 'Will You Have Enough?' \u2192 'Retirement Calculator: Will You Have Enough to Retire? (Free 2026)'",
+        "Upgraded meta description",
+        "Added 2 blog connections: compound-interest, emergency-fund"
+      ]
+    },
+    {
+      "page": "/calculators/investment-return",
+      "position": 83.1,
+      "impressions": 42,
+      "actions": [
+        "Upgraded title: 'See Your Money Grow' \u2192 'Investment Return Calculator: See How Much Your Money Can Grow (Free)'",
+        "Upgraded meta description",
+        "Added 2 blog connections: retirement-planning guide, retire-by-40"
+      ]
+    }
+  ]
+}

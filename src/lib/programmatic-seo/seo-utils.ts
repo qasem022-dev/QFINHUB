@@ -247,10 +247,11 @@ export function generateMetaTitle(
       const term = params.term;
       const rate = params.rate;
       if (hp) parts.push(`$${formatAmountWithCommas(hp)}`);
+      parts.push("Mortgage:");
+      if (rate) parts.push(`${rate}%`);
       if (term) parts.push(`${term}-Year`);
-      if (rate) parts.push(`${rate}% Rate`);
-      parts.push("Mortgage Calculator 2026");
-      return parts.filter(Boolean).join(" ") + " — Free Monthly Payment Estimate";
+      parts.push("— Calculate YOUR Payment");
+      return parts.filter(Boolean).join(" ");
     }
     case "loan-calculator":
     case "Loan Calculator": {
@@ -268,8 +269,8 @@ export function generateMetaTitle(
       const inv = params.initial;
       const yrs = params.timeValue;
       if (inv) parts.push(`$${formatAmountWithCommas(inv)}`);
-      parts.push("Investment Return Calculator");
-      if (yrs) parts.push(`(${yrs} Year)`);
+      if (yrs) parts.push(`for ${yrs} Years:`);
+      parts.push("See YOUR Investment Returns");
       return parts.filter(Boolean).join(" ") + " | ROI & CAGR";
     }
     case "retirement-planning":
@@ -296,10 +297,10 @@ export function generateMetaTitle(
       const yrs = params.years;
       const rate = params.rate;
       if (p) parts.push(`$${formatAmountWithCommas(p)}`);
-      parts.push("Compound Interest Calculator");
-      if (rate) parts.push(`(${rate}% APY)`);
-      if (yrs) parts.push(`- ${yrs} Year`);
-      return parts.filter(Boolean).join(" ") + " | Growth Projection";
+      if (rate) parts.push(`at ${rate}%`);
+      if (yrs) parts.push(`for ${yrs} Years?`);
+      parts.push("See YOUR Compound Growth");
+      return parts.filter(Boolean).join(" ");
     }
     default:
       // Try to match by known calculator names

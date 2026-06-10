@@ -1,0 +1,11 @@
+{
+  "title": "First Click Baseline",
+  "generated": "2026-06-09T21:39:52.240502Z",
+  "first_click_28d": true,
+  "first_click_7d": false,
+  "clicks_28d": 1,
+  "impressions_28d": 915,
+  "ctr_28d": "0.1%",
+  "page_unknown": true,
+  "note": "GSC 28d aggregate doesn't reveal page/query without drilldown. Click occurred in 8-28 day window."
+}

@@ -1,0 +1,75 @@
+{
+  "generated": "2026-06-09T19:40:17.519142Z",
+  "safe_transfers": [
+    {
+      "thin_url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "impressions": 15,
+      "position": 9.5,
+      "destination": "/calculators/compound-interest",
+      "safe_actions": [
+        "Add contextual internal link from thin page compound-100k-20yr-5pct to /calculators/compound-interest",
+        "Add internal links from indexed blog/decision pages to /calculators/compound-interest",
+        "Improve /calculators/compound-interest content: add FAQ, short answer, or calculator CTA",
+        "Add 'Use the full calculator' CTA on thin page pointing to destination"
+      ],
+      "classification": "A_KEEP_AND_IMPROVE",
+      "note": "NO canonical, NO noindex, NO redirect executed. Safe improvements only."
+    },
+    {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "impressions": 13,
+      "position": 6.4,
+      "destination": "/calculators/mortgage-calculator",
+      "safe_actions": [
+        "Add contextual internal link from thin page mortgage-200k-30yr-6pct to /calculators/mortgage-calculator",
+        "Add internal links from indexed blog/decision pages to /calculators/mortgage-calculator",
+        "Improve /calculators/mortgage-calculator content: add FAQ, short answer, or calculator CTA",
+        "Add 'Use the full calculator' CTA on thin page pointing to destination"
+      ],
+      "classification": "F_HOLD_FOR_DATA",
+      "note": "NO canonical, NO noindex, NO redirect executed. Safe improvements only."
+    },
+    {
+      "thin_url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "impressions": 11,
+      "position": 9.9,
+      "destination": "/calculators/compound-interest",
+      "safe_actions": [
+        "Add contextual internal link from thin page compound-500k-15yr-5pct to /calculators/compound-interest",
+        "Add internal links from indexed blog/decision pages to /calculators/compound-interest",
+        "Improve /calculators/compound-interest content: add FAQ, short answer, or calculator CTA",
+        "Add 'Use the full calculator' CTA on thin page pointing to destination"
+      ],
+      "classification": "F_HOLD_FOR_DATA",
+      "note": "NO canonical, NO noindex, NO redirect executed. Safe improvements only."
+    },
+    {
+      "thin_url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "impressions": 8,
+      "position": 2.6,
+      "destination": "/calculators/mortgage-calculator",
+      "safe_actions": [
+        "Add contextual internal link from thin page mortgage-900k-30yr-7pct to /calculators/mortgage-calculator",
+        "Add internal links from indexed blog/decision pages to /calculators/mortgage-calculator",
+        "Improve /calculators/mortgage-calculator content: add FAQ, short answer, or calculator CTA",
+        "Add 'Use the full calculator' CTA on thin page pointing to destination"
+      ],
+      "classification": "B_CANONICALIZE_TO_PARENT_REVIEW",
+      "note": "NO canonical, NO noindex, NO redirect executed. Safe improvements only."
+    },
+    {
+      "thin_url": "https://www.qfinhub.com/tools/investment-1k-5yr",
+      "impressions": 4,
+      "position": 7.8,
+      "destination": "/calculators/investment-return",
+      "safe_actions": [
+        "Add contextual internal link from thin page investment-1k-5yr to /calculators/investment-return",
+        "Add internal links from indexed blog/decision pages to /calculators/investment-return",
+        "Improve /calculators/investment-return content: add FAQ, short answer, or calculator CTA",
+        "Add 'Use the full calculator' CTA on thin page pointing to destination"
+      ],
+      "classification": "C_REMOVE_FROM_SITEMAP_REVIEW",
+      "note": "NO canonical, NO noindex, NO redirect executed. Safe improvements only."
+    }
+  ]
+}

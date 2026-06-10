@@ -1,0 +1,40 @@
+{
+  "title": "Tiny Cleanup Auditor + Guardian Approval",
+  "generated": "2026-06-09T20:50:02.525380Z",
+  "status": "AWAITING_CRON_AND_SELECTION",
+  "urls": [
+    {
+      "url": "/scenario/auto-loan-bc834ee2",
+      "action": "REMOVE_FROM_SITEMAP_TEST",
+      "risk": 5,
+      "benefit": "Reduce index bloat",
+      "rollback": "Re-add to sitemap",
+      "auditor": null,
+      "guardian": null
+    },
+    {
+      "url": "/tools/loan-30k-5yr-6pct",
+      "action": "REMOVE_FROM_SITEMAP_TEST",
+      "risk": 5,
+      "benefit": "Reduce index bloat",
+      "rollback": "Re-add to sitemap",
+      "auditor": null,
+      "guardian": null
+    },
+    {
+      "url": "/tools/compound-1k-5yr-5pct-daily",
+      "action": "NOINDEX_TEST",
+      "risk": 5,
+      "benefit": "Prevent future duplicate indexing",
+      "rollback": "Remove noindex tag",
+      "auditor": null,
+      "guardian": null
+    }
+  ],
+  "rules": {
+    "auditor_required": true,
+    "guardian_required": true,
+    "if_either_rejects": "HOLD \u2014 do not execute",
+    "minimum_risk_allowed": 10
+  }
+}

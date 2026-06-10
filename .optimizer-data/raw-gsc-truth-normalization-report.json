@@ -1,0 +1,38 @@
+{
+  "title": "Raw GSC Truth Normalization Report",
+  "generated": "2026-06-09T17:10:34.840720Z",
+  "phase": "19.2",
+  "status": "COMPLETED",
+  "policy": {
+    "rule": "All official KPIs use RAW GSC API data only. No multiplication, correction, or estimation in official metrics.",
+    "source": "GSC Search Analytics API \u2014 page dimension, rowLimit=500",
+    "files_updated": [
+      ".optimizer-data/gsc-api-truth-current.json",
+      ".optimizer-data/business-growth-scoreboard.json",
+      ".optimizer-data/phase19-kpi-scoreboard.json",
+      ".optimizer-data/first-click-watchlist.json"
+    ],
+    "what_changed": {
+      "before": "KPIs used 1.43x corrected estimates (~716 impressions)",
+      "after": "KPIs use raw API numbers (499 impressions)",
+      "comparison_note": "Manual GSC UI comparison (e.g., Qasem's 436 check) listed separately as FYI only"
+    }
+  },
+  "current_raw_metrics": {
+    "impressions": 499,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 33.8,
+    "pages_with_impressions": 52
+  },
+  "allowed_displays": [
+    "GSC API raw impressions/clicks/CTR/position/pages \u2014 OFFICIAL KPI",
+    "Manual GSC UI comparison \u2014 FYI only, clearly separated",
+    "Correction factor reference \u2014 documentation only, not applied"
+  ],
+  "prohibited": [
+    "1.43x corrected metrics as official KPI",
+    "Mixing API and UI values in same KPI field",
+    "Estimation/extrapolation as official truth"
+  ]
+}

@@ -1,25 +1,51 @@
 {
-  "title": "First Click Watchlist",
-  "generated": "2026-06-07T02:43:00Z",
-  "data_source": "gsc-api-truth-current.json",
-  "clicks_7d": 0,
-  "first_click_won": false,
-  "top_contenders": [
+  "title": "Phase 20.2 First Click Watchlist",
+  "generated": "2026-06-09T20:32:22.324168Z",
+  "data_source": "GSC_API_RAW",
+  "p1_pages_1_10": [
     {
-      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "impressions": 67,
-      "position": 12.9
-    },
-    {
-      "page": "/decision/pay-off-debt-or-invest",
-      "impressions": 38,
-      "position": 15.4
-    },
-    {
-      "page": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage",
-      "impressions": 19,
-      "position": 18.8
+      "page": "/decision/how-much-house-can-i-afford",
+      "pos": 8.8,
+      "imp": 4,
+      "clicks": 0,
+      "status": "Title+meta upgraded Jun 9. Cooldown active."
     }
   ],
-  "estimated_first_click_window": "3-10 days (CTR fixes deployed Jun 6, awaiting Google recrawl)"
+  "p2_pages_11_20": [
+    {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "pos": 11.3,
+      "imp": 94,
+      "status": "CTR fix Jun 9. Cooldown active."
+    },
+    {
+      "page": "/calculators/tax/philadelphia-pa",
+      "pos": 15.2,
+      "imp": 11,
+      "status": "Queued for next cycle \u2014 internal links + FAQ"
+    }
+  ],
+  "p3_pages_21_30": [
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "pos": 22.6,
+      "imp": 18,
+      "status": "Prior CTR fixes. Monitoring."
+    },
+    {
+      "page": "/decision/retire-at-45-with-1-million",
+      "pos": 22.7,
+      "imp": 3,
+      "status": "Low volume. Pending audit."
+    }
+  ],
+  "cooldown_active": [
+    "20000-loan-blog",
+    "how-much-house-can-i-afford"
+  ],
+  "next_ctr_candidates": [
+    "tax/philadelphia-pa",
+    "pay-off-debt-or-invest"
+  ],
+  "thin_page_warning": "24 thin /tools/ and /scenario/ pages ranking pos 1-30. 8 selected for cleanup test. All HELD pending approval."
 }

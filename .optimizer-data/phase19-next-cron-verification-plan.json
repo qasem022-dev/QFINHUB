@@ -1,0 +1,70 @@
+{
+  "title": "Phase 19 Next Cron Verification Plan",
+  "generated": "2026-06-09T17:11:38.182310Z",
+  "cron_id": "dcba952b4c45",
+  "next_run": "2026-06-10T15:00:00+03:00",
+  "verification_checklist": [
+    {
+      "step": 1,
+      "check": "Cron started automatically at 15:00 EEST",
+      "how_to_verify": "Check ~/.hermes/cron/output/dcba952b4c45/ for new .md file",
+      "pass": null
+    },
+    {
+      "step": 2,
+      "check": "Used Phase 19 rules (13-step sequence)",
+      "how_to_verify": "Read output file \u2014 should show 'Phase 19 \u2014 Autonomous Daily Growth Production Loop' header",
+      "pass": null
+    },
+    {
+      "step": 3,
+      "check": "Pulled fresh GSC API truth",
+      "how_to_verify": "Check .optimizer-data/gsc-api-truth-current.json 'generated' timestamp > 2026-06-10T12:00:00Z",
+      "pass": null
+    },
+    {
+      "step": 4,
+      "check": "Executed work BEFORE Telegram delivery",
+      "how_to_verify": "Work reports saved with timestamps before delivery attempt",
+      "pass": null
+    },
+    {
+      "step": 5,
+      "check": "Saved local reports",
+      "how_to_verify": "Check .optimizer-data/phase19-execution-log.json for Jun 10 entry",
+      "pass": null
+    },
+    {
+      "step": 6,
+      "check": "Deployed if changes made",
+      "how_to_verify": "git log --since='2026-06-10' shows Phase 19 commit",
+      "pass": null
+    },
+    {
+      "step": 7,
+      "check": "Attempted Telegram delivery last",
+      "how_to_verify": "Delivery should be last step logged, not blocking earlier steps",
+      "pass": null
+    },
+    {
+      "step": 8,
+      "check": "Recorded work_status and telegram_status separately",
+      "how_to_verify": "Check .optimizer-data/phase19-daily-lock.json \u2014 both fields populated independently",
+      "pass": null
+    }
+  ],
+  "failure_modes": {
+    "cron_does_not_start": "Check crontab -l and systemctl status cron. Verify dcba952b4c45 enabled=true.",
+    "wrong_prompt": "Check output header \u2014 should say Phase 19 not Phase 15.",
+    "telegram_timeout_blocks_work": "This is FIXED \u2014 work saves first. If still blocked, recheck prompt.",
+    "no_gsc_data": "Run python3 scripts/gsc-daily-pipeline.py manually. Check token.",
+    "zero_work_done": "Check output for 'no safe actions identified' vs actual execution."
+  },
+  "post_run_verification_commands": [
+    "ls -la ~/.hermes/cron/output/dcba952b4c45/ | tail -3",
+    "git log --oneline --since='2026-06-10' | head -5",
+    "cat .optimizer-data/gsc-api-truth-current.json | python3 -c \"import sys,json; d=json.load(sys.stdin); print(d['generated'], d['metrics_7d']['impressions'])\"",
+    "cat .optimizer-data/phase19-daily-lock.json | python3 -c \"import sys,json; d=json.load(sys.stdin); print(d['work_status'], d['telegram_status'])\"",
+    "cat .optimizer-data/phase19-execution-log.json | python3 -c \"import sys,json; d=json.load(sys.stdin); print(len(d['runs']), 'runs, last:', d['runs'][-1]['date'])\""
+  ]
+}

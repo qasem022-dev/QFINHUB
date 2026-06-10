@@ -1,0 +1,17 @@
+{
+  "title": "Outreach Pitch v2 \u2014 Shorter, Value-First, Non-Salesy",
+  "generated": "2026-06-09T18:14:51.627034Z",
+  "principles": [
+    "3 sentences max",
+    "Lead with specific value to THEIR readers",
+    "No 'I'd love to get a backlink' language",
+    "Offer a custom example for their article topic",
+    "Close with a simple yes/no question"
+  ],
+  "template": "Hi [name] \u2014 I built a free [calculator type] that your readers might find useful for [specific article/post]. Example: [specific scenario with numbers]. Want me to create a custom version for your [article topic]? No cost, no signup, no data collection.",
+  "new_prospects": {
+    "strategy": "Target smaller finance/credit/mortgage bloggers with 1K-50K monthly visitors",
+    "hold_new_outreach": true,
+    "reason": "Follow up existing 20 on Jun 13 before sending new batch"
+  }
+}

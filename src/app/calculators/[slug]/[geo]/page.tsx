@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: GeoPageProps) {
   // Build geo-specific title with city name near the front for SERP relevance
   const geoTitle = `${city.name}, ${city.stateAbbr} ${calcConfig.label} (2026) — Free & Instant`;
   const title = geoTitle;
-  const description = `Free ${calcConfig.label.toLowerCase()} for ${city.name}, ${city.stateAbbr} residents. Calculate your ${city.name} ${calcConfig.label.toLowerCase()} including local rates, state taxes, and federal obligations. Get instant results in 30 seconds — no signup, no email required, 100% free.`;
+  const description = `${calcConfig.label} for ${city.name}, ${city.stateAbbr} — get a personalized estimate in 30 seconds. Free tool tailored for ${city.name} residents. No signup, no email required, 100% free.`;
 
   // V2 Correction Phase 2: Geo pages are noindexed by default (doorway risk without real local data).
   // Only keep indexable if this exact geo page has GSC impressions.

@@ -1,0 +1,16 @@
+{
+  "title": "Tiny Cleanup Execution Log",
+  "generated": "2026-06-09T20:50:02.525380Z",
+  "status": "AWAITING_CRON_AND_APPROVAL",
+  "executions": [],
+  "rules": [
+    "Max 3 URLs",
+    "Only after cron success",
+    "Only after Auditor + Guardian approval",
+    "Only if risk <=10",
+    "Only least-risky action",
+    "No bulk cleanup",
+    "No delete",
+    "No redirect"
+  ]
+}
