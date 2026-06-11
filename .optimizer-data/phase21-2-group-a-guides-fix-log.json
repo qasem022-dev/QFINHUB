@@ -1,0 +1,21 @@
+{
+  "title": "Phase 21.2 \u2014 A \u2014 Discovered Guides Fix Log",
+  "generated": "2026-06-11T23:16:27.535722+00:00",
+  "fixes": [
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+      "action": "Add internal links + FAQ. Request indexing via GSC UI.",
+      "status": "PLANNED"
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+      "action": "Add internal links. Request indexing via GSC UI.",
+      "status": "PLANNED"
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+      "action": "Add internal links. Request indexing via GSC UI.",
+      "status": "PLANNED"
+    }
+  ]
+}

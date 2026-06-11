@@ -1,0 +1,38 @@
+{
+  "title": "Phase 21.2 \u2014 Push Recovery Report",
+  "generated": "2026-06-11T23:15:10.956188+00:00",
+  "diagnosis": {
+    "local_branch": "main",
+    "local_head": "9b056b9",
+    "remote_head": "425a910",
+    "commits_ahead": 1,
+    "local_unpushed": [
+      "9b056b9 \u2014 Phase 21.1 commit"
+    ],
+    "push_error": "Invalid username or token. Password authentication is not supported for Git operations.",
+    "root_cause": "GitHub deprecated password-based HTTPS authentication. The stored credential at ~/.git-credentials uses a password, not a Personal Access Token (PAT). GitHub rejects password auth for git push operations.",
+    "credential_helper": "store (~/.git-credentials)",
+    "ssh_keys": "None found",
+    "gh_cli": "Not installed",
+    "github_token_env": "Not set"
+  },
+  "recovery_options": [
+    {
+      "method": "GitHub PAT",
+      "status": "REQUIRES_QASEM \u2014 Generate a Personal Access Token at https://github.com/settings/tokens with repo scope. Update ~/.git-credentials with https://USERNAME:TOKEN@github.com"
+    },
+    {
+      "method": "SSH keys",
+      "status": "REQUIRES_QASEM \u2014 Set up SSH key pair and add public key to GitHub"
+    },
+    {
+      "method": "gh CLI",
+      "status": "REQUIRES_QASEM \u2014 Install gh CLI and run gh auth login"
+    }
+  ],
+  "workaround_attempted": "None \u2014 all recovery methods require Qasem's GitHub credentials.",
+  "production_status": "Local only \u2014 commit 9b056b9 has NOT been deployed to production. Vercel deployed commit 425a910 (Phase 21).",
+  "next_step": "Qasem must provide a GitHub PAT or set up SSH. Once auth is fixed, push can proceed.",
+  "was_token_exposed": false,
+  "was_any_credential_logged": false
+}

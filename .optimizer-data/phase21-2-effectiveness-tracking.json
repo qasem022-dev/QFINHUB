@@ -1,0 +1,38 @@
+{
+  "title": "Phase 21.2 \u2014 Effectiveness Tracking Rules",
+  "generated": "2026-06-11T23:16:27.535722+00:00",
+  "tests": [
+    {
+      "action": "Group A guides (3 discovered-NI pages) \u2014 internal links + GSC UI indexing request",
+      "expected_effect": "At least 2 of 3 pages become indexed within 7-21 days",
+      "kpi": "URL Inspection coverageState changes from 'Discovered - currently not indexed' to 'Submitted and indexed'",
+      "delay": "7-21 days",
+      "failure_threshold": "0 of 3 indexed after 21 days",
+      "correction_if_fail": "Improve guide content quality. Add more internal links from higher-authority pages."
+    },
+    {
+      "action": "Group B unknown pages (4) \u2014 sitemap verification + internal links + GSC UI indexing",
+      "expected_effect": "At least 2 of 4 pages become discovered or indexed within 7-14 days",
+      "kpi": "URL Inspection coverageState changes from 'URL is unknown to Google' to 'Discovered' or 'Submitted and indexed'",
+      "delay": "7-14 days",
+      "failure_threshold": "0 of 4 discovered/indexed after 14 days",
+      "correction_if_fail": "Verify pages are truly in sitemap. Check robots.txt. Resubmit sitemap."
+    },
+    {
+      "action": "Group C indexed-invisible (8) \u2014 internal links from indexed pages",
+      "expected_effect": "At least 2 of 8 pages show impressions in GSC API within 14-28 days",
+      "kpi": "GSC page-level impressions > 0",
+      "delay": "14-28 days",
+      "failure_threshold": "0 of 8 get impressions after 28 days",
+      "correction_if_fail": "Pages need content improvement, not just links. Investigate why thin variants rank instead of parents."
+    },
+    {
+      "action": "40 internal links total across all 15 targets",
+      "expected_effect": "Crawl depth reduced. Google discovers and crawls target pages faster.",
+      "kpi": "URL Inspection lastCrawlTime advances for target pages",
+      "delay": "7-21 days",
+      "failure_threshold": "No crawl advancement on any target page after 21 days",
+      "correction_if_fail": "Source pages may not be crawled frequently. Request indexing for source pages via GSC UI."
+    }
+  ]
+}

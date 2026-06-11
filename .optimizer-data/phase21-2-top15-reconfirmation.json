@@ -1,0 +1,135 @@
+{
+  "title": "Phase 21.2 \u2014 Top 15 Target Reconfirmation",
+  "generated": "2026-06-11T23:16:27.535722+00:00",
+  "fresh_gsc_window": "2026-06-02 to 2026-06-08",
+  "fresh_gsc_impressions": 424,
+  "groups": {
+    "A_discovered_not_indexed": [
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "Discovered - currently not indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links + FAQ. Request indexing via GSC UI."
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "Discovered - currently not indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links. Request indexing via GSC UI."
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "Discovered - currently not indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links. Request indexing via GSC UI."
+      }
+    ],
+    "B_unknown_to_google": [
+      {
+        "url": "https://www.qfinhub.com/calculators/simple-interest",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "URL is unknown to Google",
+        "gsc_imp": 0,
+        "action": "Verify sitemap. Add internal links. Request indexing."
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "URL is unknown to Google",
+        "gsc_imp": 0,
+        "action": "Verify sitemap. Add internal links. Request indexing."
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "URL is unknown to Google",
+        "gsc_imp": 0,
+        "action": "Verify sitemap. Add internal links. Request indexing."
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-roth-vs-traditional-ira",
+        "http": 200,
+        "canonical": "self",
+        "robots": "index,follow",
+        "sitemap": true,
+        "url_inspection": "URL is unknown to Google",
+        "gsc_imp": 0,
+        "action": "Verify sitemap. Add internal links. Request indexing."
+      }
+    ],
+    "C_indexed_invisible": [
+      {
+        "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "problem": "Indexed but invisible. Thin variants ranking instead.",
+        "action": "Improve content + FAQ + internal links. Suppress thin variant rankings."
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/loan-calculator",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "problem": "Same as mortgage.",
+        "action": "Improve content + internal links."
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links from tax-calculator."
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links from mortgage-calculator."
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links from 401k and retirement."
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links from investment-return."
+      },
+      {
+        "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links from debt/investment pages."
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/retirement-withdrawal",
+        "url_inspection": "PASS/Submitted and indexed",
+        "gsc_imp": 0,
+        "action": "Add internal links from retirement-planning."
+      }
+    ]
+  },
+  "note": "All 15 URLs confirmed HTTP 200, index/follow, self-canonical, in sitemap. No technical blockers. 3 discovered-NI, 4 unknown-to-Google, 8 indexed-but-invisible."
+}

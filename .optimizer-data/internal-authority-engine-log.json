@@ -1,247 +1,254 @@
 {
-  "title": "Internal Authority Push to Top 15 \u2014 Phase 21.1",
-  "generated": "2026-06-11T22:45:32.225299+00:00",
+  "title": "Internal Authority Push \u2014 Phase 21.2 Execution",
+  "generated": "2026-06-11T23:16:27.535722+00:00",
   "total_links": 40,
   "links": [
     {
-      "from": "/calculators/mortgage-calculator",
-      "to": "/guides/how-to-use-mortgage-calculator",
-      "anchor": "How to use this mortgage calculator",
-      "context": "guide"
+      "source": "mortgage-calculator",
+      "target": "guides/how-to-use-mortgage-calculator",
+      "anchor": "Mortgage Calculator Guide",
+      "group": "A"
     },
     {
-      "from": "/calculators/mortgage-calculator",
-      "to": "/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "anchor": "Compare 30-year vs 15-year mortgages",
-      "context": "comparison"
+      "source": "mortgage-affordability",
+      "target": "guides/how-to-use-mortgage-calculator",
+      "anchor": "How to Use the Mortgage Calculator",
+      "group": "A"
     },
     {
-      "from": "/calculators/mortgage-calculator",
-      "to": "/decision/should-i-refinance-my-mortgage",
-      "anchor": "Should you refinance your mortgage?",
-      "context": "decision"
+      "source": "compound-interest",
+      "target": "guides/how-to-use-compound-interest",
+      "anchor": "Compound Interest Guide",
+      "group": "A"
     },
     {
-      "from": "/calculators/loan-calculator",
-      "to": "/guides/how-to-use-loan-calculator",
-      "anchor": "Loan calculator guide",
-      "context": "guide"
+      "source": "retirement-planning",
+      "target": "guides/how-to-use-retirement-planning",
+      "anchor": "Retirement Planning Guide",
+      "group": "A"
     },
     {
-      "from": "/calculators/compound-interest",
-      "to": "/calculators/simple-interest",
-      "anchor": "Simple interest calculator",
-      "context": "related calculator"
+      "source": "401k-calculator",
+      "target": "guides/how-to-use-retirement-planning",
+      "anchor": "Complete Retirement Guide",
+      "group": "A"
     },
     {
-      "from": "/calculators/compound-interest",
-      "to": "/guides/how-to-use-compound-interest",
-      "anchor": "Compound interest guide",
-      "context": "guide"
+      "source": "compound-interest",
+      "target": "calculators/simple-interest",
+      "anchor": "Simple Interest Calculator",
+      "group": "B"
     },
     {
-      "from": "/calculators/tax-calculator",
-      "to": "/calculators/capital-gains-tax",
-      "anchor": "Capital gains tax calculator",
-      "context": "related"
+      "source": "tax-calculator",
+      "target": "calculators/capital-gains-tax",
+      "anchor": "Capital Gains Tax Calculator",
+      "group": "B"
     },
     {
-      "from": "/calculators/tax-calculator",
-      "to": "/decision/what-tax-bracket-am-i-in",
-      "anchor": "What tax bracket am I in?",
-      "context": "decision"
+      "source": "mortgage-calculator",
+      "target": "compare/compare-30yr-fixed-vs-15yr-fixed",
+      "anchor": "30-Year vs 15-Year Mortgage",
+      "group": "B"
     },
     {
-      "from": "/calculators/retirement-planning",
-      "to": "/guides/how-to-use-retirement-planning",
-      "anchor": "Retirement planning guide",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/retirement-planning",
-      "to": "/decision/roth-vs-traditional-401k-decision",
-      "anchor": "Roth vs Traditional 401(k)",
-      "context": "decision"
-    },
-    {
-      "from": "/calculators/retirement-planning",
-      "to": "/compare/compare-roth-vs-traditional-ira",
-      "anchor": "Compare Roth vs Traditional IRA",
-      "context": "comparison"
-    },
-    {
-      "from": "/calculators/retirement-planning",
-      "to": "/calculators/retirement-withdrawal",
-      "anchor": "Retirement withdrawal calculator",
-      "context": "related"
-    },
-    {
-      "from": "/calculators/401k-calculator",
-      "to": "/decision/roth-vs-traditional-401k-decision",
-      "anchor": "Roth vs Traditional 401(k) decision",
-      "context": "decision"
-    },
-    {
-      "from": "/calculators/401k-calculator",
-      "to": "/decision/401k-vs-taxable-investing",
-      "anchor": "401(k) vs taxable investing",
-      "context": "decision"
-    },
-    {
-      "from": "/calculators/investment-return",
-      "to": "/decision/401k-vs-taxable-investing",
-      "anchor": "Taxable investing comparison",
-      "context": "decision"
-    },
-    {
-      "from": "/calculators/investment-return",
-      "to": "/decision/pay-off-student-loans-or-invest",
-      "anchor": "Pay off loans or invest?",
-      "context": "decision"
-    },
-    {
-      "from": "/calculators/mortgage-affordability",
-      "to": "/guides/how-to-use-mortgage-calculator",
-      "anchor": "Mortgage calculator guide",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/mortgage-affordability",
-      "to": "/decision/should-i-refinance-my-mortgage",
-      "anchor": "Mortgage refinance decision",
-      "context": "decision"
-    },
-    {
-      "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "to": "/guides/how-to-use-loan-calculator",
-      "anchor": "Loan calculator guide",
-      "context": "guide"
-    },
-    {
-      "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "to": "/decision/pay-off-student-loans-or-invest",
-      "anchor": "Should you invest instead of paying off loans?",
-      "context": "decision"
-    },
-    {
-      "from": "/decision/pay-off-debt-or-invest",
-      "to": "/decision/pay-off-student-loans-or-invest",
-      "anchor": "Student loans vs investing",
-      "context": "decision"
-    },
-    {
-      "from": "/decision/how-much-house-can-i-afford",
-      "to": "/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "anchor": "30-year vs 15-year mortgages",
-      "context": "comparison"
-    },
-    {
-      "from": "/decision/how-much-house-can-i-afford",
-      "to": "/decision/should-i-refinance-my-mortgage",
-      "anchor": "Should you refinance?",
-      "context": "decision"
-    },
-    {
-      "from": "/calculators/budget-planner",
-      "to": "/guides/how-to-budget-with-50-30-20-rule",
-      "anchor": "50/30/20 budgeting method",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/tax-calculator",
-      "to": "/guides/how-to-calculate-debt-to-income-ratio",
-      "anchor": "Debt-to-income ratio guide",
-      "context": "guide"
-    },
-    {
-      "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "to": "/calculators/simple-interest",
-      "anchor": "Simple interest calculator",
-      "context": "related"
-    },
-    {
-      "from": "/calculators/mortgage-calculator",
-      "to": "/guides/how-to-calculate-debt-to-income-ratio",
-      "anchor": "Debt-to-income ratio explained",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/loan-calculator",
-      "to": "/calculators/simple-interest",
-      "anchor": "Simple vs compound interest",
-      "context": "related"
-    },
-    {
-      "from": "/calculators/tax-calculator",
-      "to": "/calculators/simple-interest",
-      "anchor": "Interest income tax implications",
-      "context": "related"
-    },
-    {
-      "from": "/calculators/compound-interest",
-      "to": "/decision/401k-vs-taxable-investing",
-      "anchor": "Tax-advantaged vs taxable growth",
-      "context": "decision"
-    },
-    {
-      "from": "/decision/how-much-house-can-i-afford",
-      "to": "/guides/how-to-use-mortgage-calculator",
-      "anchor": "Mortgage calculator tutorial",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/retirement-planning",
-      "to": "/guides/how-to-use-compound-interest",
-      "anchor": "The power of compound interest",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/401k-calculator",
-      "to": "/guides/how-to-use-retirement-planning",
-      "anchor": "Complete retirement planning guide",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/investment-return",
-      "to": "/guides/how-to-use-compound-interest",
-      "anchor": "How compounding grows your investments",
-      "context": "guide"
-    },
-    {
-      "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "to": "/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "anchor": "Compare mortgage terms",
-      "context": "comparison"
-    },
-    {
-      "from": "/decision/pay-off-debt-or-invest",
-      "to": "/calculators/capital-gains-tax",
-      "anchor": "Capital gains tax impact",
-      "context": "related"
-    },
-    {
-      "from": "/calculators/mortgage-affordability",
-      "to": "/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "anchor": "Fixed-rate mortgage options",
-      "context": "comparison"
-    },
-    {
-      "from": "/calculators/budget-planner",
-      "to": "/guides/how-to-use-compound-interest",
-      "anchor": "Compound interest and long-term savings",
-      "context": "guide"
-    },
-    {
-      "from": "/calculators/tax-calculator",
-      "to": "/compare/compare-roth-vs-traditional-ira",
+      "source": "retirement-planning",
+      "target": "compare/compare-roth-vs-traditional-ira",
       "anchor": "Roth vs Traditional IRA",
-      "context": "comparison"
+      "group": "B"
     },
     {
-      "from": "/calculators/investment-return",
-      "to": "/compare/compare-roth-vs-traditional-ira",
-      "anchor": "Tax-efficient investing comparison",
-      "context": "comparison"
+      "source": "401k-calculator",
+      "target": "compare/compare-roth-vs-traditional-ira",
+      "anchor": "IRA Comparison",
+      "group": "B"
+    },
+    {
+      "source": "tax-calculator",
+      "target": "decision/what-tax-bracket-am-i-in",
+      "anchor": "What Tax Bracket Am I In?",
+      "group": "C"
+    },
+    {
+      "source": "mortgage-calculator",
+      "target": "decision/should-i-refinance-my-mortgage",
+      "anchor": "Should You Refinance?",
+      "group": "C"
+    },
+    {
+      "source": "mortgage-affordability",
+      "target": "decision/should-i-refinance-my-mortgage",
+      "anchor": "Refinance Decision Guide",
+      "group": "C"
+    },
+    {
+      "source": "401k-calculator",
+      "target": "decision/roth-vs-traditional-401k-decision",
+      "anchor": "Roth vs Traditional 401(k)",
+      "group": "C"
+    },
+    {
+      "source": "retirement-planning",
+      "target": "decision/roth-vs-traditional-401k-decision",
+      "anchor": "401(k) Type Decision",
+      "group": "C"
+    },
+    {
+      "source": "investment-return",
+      "target": "decision/401k-vs-taxable-investing",
+      "anchor": "Taxable vs Tax-Advantaged Investing",
+      "group": "C"
+    },
+    {
+      "source": "401k-calculator",
+      "target": "decision/401k-vs-taxable-investing",
+      "anchor": "401(k) vs Regular Investing",
+      "group": "C"
+    },
+    {
+      "source": "retirement-planning",
+      "target": "calculators/retirement-withdrawal",
+      "anchor": "Retirement Withdrawal Calculator",
+      "group": "C"
+    },
+    {
+      "source": "investment-return",
+      "target": "decision/pay-off-student-loans-or-invest",
+      "anchor": "Pay Off Loans or Invest?",
+      "group": "C"
+    },
+    {
+      "source": "loan-calculator",
+      "target": "guides/how-to-use-loan-calculator",
+      "anchor": "Loan Calculator Guide",
+      "group": "A"
+    },
+    {
+      "source": "budget-planner",
+      "target": "guides/how-to-budget-with-50-30-20-rule",
+      "anchor": "50/30/20 Budget Method",
+      "group": "A"
+    },
+    {
+      "source": "compound-interest",
+      "target": "decision/401k-vs-taxable-investing",
+      "anchor": "Compound Growth: Taxable vs Tax-Advantaged",
+      "group": "C"
+    },
+    {
+      "source": "tax-calculator",
+      "target": "compare/compare-roth-vs-traditional-ira",
+      "anchor": "IRA Tax Implications",
+      "group": "B"
+    },
+    {
+      "source": "investment-return",
+      "target": "compare/compare-roth-vs-traditional-ira",
+      "anchor": "Tax-Efficient Investing",
+      "group": "B"
+    },
+    {
+      "source": "mortgage-calculator",
+      "target": "guides/how-to-calculate-debt-to-income-ratio",
+      "anchor": "Debt-to-Income Ratio Guide",
+      "group": "A"
+    },
+    {
+      "source": "retirement-planning",
+      "target": "guides/how-to-use-compound-interest",
+      "anchor": "Compound Interest & Retirement",
+      "group": "A"
+    },
+    {
+      "source": "loan-calculator",
+      "target": "calculators/simple-interest",
+      "anchor": "Simple vs Compound Interest",
+      "group": "B"
+    },
+    {
+      "source": "tax-calculator",
+      "target": "calculators/simple-interest",
+      "anchor": "Interest Income & Taxes",
+      "group": "B"
+    },
+    {
+      "source": "budget-planner",
+      "target": "calculators/simple-interest",
+      "anchor": "Simple Interest Savings Calculator",
+      "group": "B"
+    },
+    {
+      "source": "mortgage-affordability",
+      "target": "compare/compare-30yr-fixed-vs-15yr-fixed",
+      "anchor": "Compare Fixed-Rate Terms",
+      "group": "B"
+    },
+    {
+      "source": "investment-return",
+      "target": "guides/how-to-use-compound-interest",
+      "anchor": "How Compounding Works",
+      "group": "A"
+    },
+    {
+      "source": "mortgage-calculator",
+      "target": "guides/how-to-calculate-monthly-mortgage-payment",
+      "anchor": "Monthly Payment Calculation Guide",
+      "group": "A"
+    },
+    {
+      "source": "retirement-planning",
+      "target": "decision/401k-vs-taxable-investing",
+      "anchor": "Retirement Account vs Taxable",
+      "group": "C"
+    },
+    {
+      "source": "compound-interest",
+      "target": "guides/how-to-use-retirement-planning",
+      "anchor": "Compound Growth in Retirement",
+      "group": "A"
+    },
+    {
+      "source": "loan-calculator",
+      "target": "decision/pay-off-student-loans-or-invest",
+      "anchor": "Student Loans: Pay Off or Invest?",
+      "group": "C"
+    },
+    {
+      "source": "401k-calculator",
+      "target": "calculators/retirement-withdrawal",
+      "anchor": "Withdrawal Planning",
+      "group": "C"
+    },
+    {
+      "source": "tax-calculator",
+      "target": "decision/pay-off-student-loans-or-invest",
+      "anchor": "Tax Impact of Student Loan Decisions",
+      "group": "C"
+    },
+    {
+      "source": "mortgage-affordability",
+      "target": "guides/how-to-use-mortgage-calculator",
+      "anchor": "Mortgage Calculator Tutorial",
+      "group": "A"
+    },
+    {
+      "source": "budget-planner",
+      "target": "guides/how-to-use-compound-interest",
+      "anchor": "Compound Interest for Savers",
+      "group": "A"
+    },
+    {
+      "source": "investment-return",
+      "target": "calculators/retirement-withdrawal",
+      "anchor": "Retirement Withdrawal Calculator",
+      "group": "C"
     }
-  ]
+  ],
+  "implementation": {
+    "file": "src/lib/calculator-decision-links.ts",
+    "method": "Add entries to CALCULATOR_DECISION_LINKS and CALCULATOR_BLOG_LINKS maps",
+    "group_a_links": 14,
+    "group_b_links": 11,
+    "group_c_links": 15
+  }
 }

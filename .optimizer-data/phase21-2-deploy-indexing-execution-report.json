@@ -1,0 +1,114 @@
+{
+  "title": "Phase 21.2 \u2014 Deploy Recovery + Top 15 Indexing Execution",
+  "phase": "21.2",
+  "generated": "2026-06-11T23:18:53.571874+00:00",
+  "executive_summary": "Phase 21.2 addressed the git push failure (GitHub PAT required for HTTPS auth) and executed the Top 15 indexing plan. 40 internal links documented and partially implemented in calculator-blog-links.ts. 7 GSC UI indexing requests eligible for Group A+B pages. Validate Fix remains DO_NOT_VALIDATE_YET. SEO engine continues in RESTRICTED_EFFECTIVENESS mode.",
+  "overall_status": "OFF_TRACK \u2014 0 clicks 7d, 424 imp, 0 backlinks. Push blocked by GitHub auth.",
+  "section_1_push_recovery": {
+    "title": "1. Push Recovery",
+    "file": ".optimizer-data/phase21-2-push-recovery-report.json",
+    "status": "BLOCKED \u2014 GitHub PAT or SSH required from Qasem",
+    "local_commit": "9b056b9 + new Phase 21.2 changes (unstaged)",
+    "remote_head": "425a910 (Phase 21)",
+    "production_deployed": "425a910 (Phase 21) \u2014 Phase 21.1 and 21.2 changes NOT in production",
+    "root_cause": "GitHub deprecated password auth. ~/.git-credentials has password, not PAT.",
+    "fix_required": "Qasem must provide GitHub PAT or set up SSH keys."
+  },
+  "section_2_vercel": {
+    "title": "2. Vercel Deploy",
+    "status": "BLOCKED_BY_PUSH \u2014 No deploy until push succeeds",
+    "currently_deployed": "425a910 (Phase 21)"
+  },
+  "section_3_top15_reconfirmed": {
+    "title": "3. Top 15 Reconfirmation",
+    "file": ".optimizer-data/phase21-2-top15-reconfirmation.json",
+    "all_15_http200": true,
+    "all_index_follow": true,
+    "all_self_canonical": true,
+    "all_in_sitemap": true,
+    "groups": {
+      "A_discovered_guides": 3,
+      "B_unknown_to_google": 4,
+      "C_indexed_invisible": 8
+    }
+  },
+  "section_4_group_fixes": {
+    "title": "4-6. Group Fix Plans",
+    "files": [
+      ".optimizer-data/phase21-2-group-a-guides-fix-log.json",
+      ".optimizer-data/phase21-2-group-b-unknown-fix-log.json",
+      ".optimizer-data/phase21-2-group-c-indexed-invisible-fix-log.json"
+    ],
+    "group_a_actions": "Internal links + GSC UI indexing request for 3 discovered guides",
+    "group_b_actions": "Sitemap verification + internal links + GSC UI indexing for 4 unknown pages",
+    "group_c_actions": "Content improvement + internal links for 8 indexed-but-invisible pages"
+  },
+  "section_7_internal_links": {
+    "title": "7. Internal Link Execution",
+    "file": ".optimizer-data/internal-authority-engine-log.json",
+    "total_planned": 40,
+    "implemented_in_code": "Partially \u2014 calculator-blog-links.ts modified with guide/decision links",
+    "code_changes": ".../discovered-validate-fix-decision-report.json   |  12 +-\n .optimizer-data/gsc-api-truth-current.json         |   4 +-\n .optimizer-data/gsc-live-data-corrected.json       |   2 +-\n .optimizer-data/gsc-ui-indexing-proof-ledger.json  |  38 ++-\n .optimizer-data/internal-authority-engine-log.json | 33",
+    "note": "Full 40-link implementation requires careful string matching in TypeScript file. Partial implementation done. Remaining links documented for next daily execution."
+  },
+  "section_8_gsc_indexing": {
+    "title": "8. GSC UI Indexing Requests",
+    "file": ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+    "eligible": 7,
+    "executed": 0,
+    "note": "Execute via CloakBrowser after code changes are deployed (post-push)"
+  },
+  "section_9_validate_fix": {
+    "title": "9. Validate Fix",
+    "decision": "DO_NOT_VALIDATE_YET",
+    "fixed": "7 of 526 (1.3%)"
+  },
+  "section_10_tracking": {
+    "title": "10. Effectiveness Tracking",
+    "file": ".optimizer-data/phase21-2-effectiveness-tracking.json",
+    "tests": 4,
+    "windows": "7-28 days"
+  },
+  "section_11_post_deploy": {
+    "title": "11. Post-Deploy Ops",
+    "status": "BLOCKED \u2014 No deploy yet (push failure)",
+    "health_checks_pending": [
+      "homepage",
+      "sitemap",
+      "robots",
+      "ads.txt"
+    ]
+  },
+  "compliance": {
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_mass_pages": true,
+    "risky_automations_disabled": true,
+    "no_thin_tool_seo": true,
+    "engine_restricted": true,
+    "no_local_only_counted_as_deployed": true
+  },
+  "current_gsc": {
+    "impressions_7d": 424,
+    "clicks_7d": 0,
+    "first_content_click": "NOT_ACHIEVED",
+    "indexed": "252 (GSC UI, Jun 9)",
+    "discovered": 526,
+    "backlinks": 0
+  },
+  "action_required_from_qasem": "Provide GitHub Personal Access Token (PAT) with repo scope OR set up SSH key. Push blocked until auth fixed. All Phase 21.1 and 21.2 work is local-only and NOT in production.",
+  "files_created_updated": [
+    ".optimizer-data/phase21-2-push-recovery-report.json (NEW)",
+    ".optimizer-data/phase21-2-vercel-deploy-verification.json (NEW)",
+    ".optimizer-data/phase21-2-top15-reconfirmation.json (NEW)",
+    ".optimizer-data/phase21-2-group-a-guides-fix-log.json (NEW)",
+    ".optimizer-data/phase21-2-group-b-unknown-fix-log.json (NEW)",
+    ".optimizer-data/phase21-2-group-c-indexed-invisible-fix-log.json (NEW)",
+    ".optimizer-data/internal-authority-engine-log.json (UPDATED)",
+    ".optimizer-data/gsc-ui-indexing-proof-ledger.json (UPDATED)",
+    ".optimizer-data/discovered-validate-fix-decision-report.json (UPDATED)",
+    ".optimizer-data/phase21-2-effectiveness-tracking.json (NEW)",
+    ".optimizer-data/phase21-2-deploy-indexing-execution-report.json (NEW \u2014 this file)",
+    "src/lib/calculator-blog-links.ts (MODIFIED \u2014 internal links added)"
+  ]
+}
