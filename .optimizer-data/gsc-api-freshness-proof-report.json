@@ -1,0 +1,89 @@
+{
+  "title": "GSC API Freshness Proof Report \u2014 Jun 10-11, 2026",
+  "generated": "2026-06-11T20:58:52.775270+00:00",
+  "methodology": "Independent GSC Search Analytics API pulls with fresh token refresh before each call.",
+  "freshness_verdict": "DATA_WAS_STALE_BOTH_DAYS",
+  "daily_analysis": [
+    {
+      "date": "2026-06-10",
+      "api_pull_timestamp": "2026-06-10T15:00:00+03:00 (cron \u2014 no independent fresh pull)",
+      "date_range_used": "2026-05-31 to 2026-06-07",
+      "date_range_actual_available": "2026-06-03 to 2026-06-09 (GSC API 3-day delay typical)",
+      "search_type": "web",
+      "dimensions_used": [
+        "page"
+      ],
+      "row_count_returned": 52,
+      "pages_with_impressions": 52,
+      "query_count": "Not pulled (query dimension skipped)",
+      "impressions_reported": 499,
+      "clicks_reported": 0,
+      "api_response_file": ".optimizer-data/gsc-live-data-corrected.json",
+      "data_equals_previous_day": true,
+      "equal_reason": "Same stale baseline from June 9. No new API pull was performed.",
+      "cached_file_used": true,
+      "cached_file_source": "June 9 API pull (gsc-api-truth-current.json, generated 2026-06-09T17:10:34Z)",
+      "fresh_reality_check": {
+        "fresh_pull_range": "2026-06-03 to 2026-06-09",
+        "fresh_pull_impressions": 415,
+        "fresh_pull_pages": 48,
+        "fresh_pull_clicks": 0,
+        "staleness_gap": "Reported 499 vs actual 415 = 84 impression overstatement (20%)"
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "api_pull_timestamp": "2026-06-11T10:03:40+03:00 (backup cron ae8940265cb8) and 2026-06-11T15:14:02+03:00 (main cron dcba952b4c45)",
+      "date_range_used": "2026-05-31 to 2026-06-07",
+      "date_range_actual_available": "2026-06-04 to 2026-06-10 (GSC API 3-day delay typical)",
+      "search_type": "web",
+      "dimensions_used": [
+        "page"
+      ],
+      "row_count_returned": 52,
+      "pages_with_impressions": 52,
+      "query_count": "Not pulled (query dimension skipped)",
+      "impressions_reported": 499,
+      "clicks_reported": 0,
+      "api_response_file": ".optimizer-data/gsc-live-data-corrected.json",
+      "data_equals_previous_day": true,
+      "equal_reason": "Same stale baseline from June 9 reused for third straight day. Backup cron (ae8940265cb8) and main cron both used the same stale data.",
+      "cached_file_used": true,
+      "fresh_reality_check": {
+        "fresh_pull_range": "2026-06-05 to 2026-06-11",
+        "fresh_pull_impressions": 242,
+        "fresh_pull_pages": 40,
+        "fresh_pull_clicks": 0,
+        "fresh_pull_queries": 37,
+        "fresh_pull_query_impressions": 128,
+        "staleness_gap": "Reported 499 vs actual 242 = 257 impression overstatement (106%) \u2014 CRITICAL"
+      }
+    }
+  ],
+  "stale_data_impact": {
+    "false_confidence": "Cron operated under assumption of stable 499 impressions. Reality: impressions declined from 415 (Jun 3-9) to 303 (Jun 4-10) to 242 (Jun 5-11). That's a 42% decline over the 3 latest windows.",
+    "misallocated_resources": "CTR fixes targeted tool variants with 'high' impressions (e.g. mortgage-200k at 14 imp) based on stale data. Fresh data shows these pages are losing impressions.",
+    "correction_factor_violation": "gsc-live-data-corrected.json still contains 'corrected_estimate.impressions: 716' \u2014 the 1.434x correction factor applied as if it were live data. This violates Phase 19.2 normalization policy."
+  },
+  "28_day_window": {
+    "range": "2026-05-15 to 2026-06-11",
+    "impressions": 1202,
+    "clicks": 1,
+    "pages_with_impressions": 124,
+    "pages_with_clicks": 1,
+    "clicked_page": "https://www.qfinhub.com/ (homepage)",
+    "clicked_page_position": 1.9,
+    "clicked_page_impressions": 31,
+    "click_nature": "Likely branded/navigational search \u2014 someone searched 'qfinhub'. NOT an organic content conversion.",
+    "first_click_7d": "NOT_ACHIEVED (0 clicks in last 7 days)"
+  },
+  "going_forward_rules": {
+    "rule_1": "Every daily run MUST pull fresh GSC API data with date range ending yesterday (accounting for 2-3 day GSC delay = end date = today - 3 days).",
+    "rule_2": "If API pull fails, report GSC_API_UNAVAILABLE \u2014 do NOT use cached data as live.",
+    "rule_3": "Manual UI comparison is FYI ONLY, separate field. NEVER in main KPI line.",
+    "rule_4": "Correction factors (1.434x) are DOCUMENTATION ONLY. Never applied to official metrics.",
+    "rule_5": "Save fresh API response with timestamp to .optimizer-data/gsc-api-fresh-{YYYY-MM-DD}.json for audit trail.",
+    "rule_6": "Compare current pull to previous day's pull \u2014 if identical, flag DATA_STALE and investigate.",
+    "rule_7": "Page dimension (aggregated) is the official KPI source. Query dimension undercounts due to anonymization."
+  }
+}

@@ -1,32 +1,30 @@
 {
-  "source": "GSC_API_WITH_CORRECTION",
-  "generated": "2026-06-11T12:01:20Z",
+  "source": "GSC_API_RAW \u2014 CORRECTION DISABLED PER PHASE 19.2",
+  "generated": "2026-06-11T21:18:27Z",
   "date_range": {
-    "start": "2026-05-31",
-    "end": "2026-06-07"
+    "start": "2026-06-02",
+    "end": "2026-06-08"
   },
+  "checksum": "dfd0d4d55880",
   "api_raw": {
-    "impressions": 499,
+    "impressions": 424,
     "clicks": 0,
-    "pages_with_impressions": 52,
-    "avg_position": 33.8,
-    "query_level_impressions": 269
+    "pages_with_impressions": 51,
+    "avg_position": 38.3,
+    "query_level_impressions": 247
   },
   "correction": {
     "factor_impressions": 1.434,
     "factor_position": 0.886,
     "last_calibrated": "2026-06-07",
-    "calibration_source": "Qasem manual GSC UI check \u2014 Jun 7, 2026"
+    "calibration_source": "Qasem manual GSC UI check \u2014 Jun 7, 2026",
+    "applied_to_official_kpi": false,
+    "note": "Correction factor is DOCUMENTATION ONLY. Not applied to official metrics per Phase 19.2."
   },
-  "corrected_estimate": {
-    "impressions": 716,
+  "corrected_estimate_fyi": {
+    "impressions": 608,
     "clicks": 0,
-    "avg_position": 29.9,
-    "note": "API underreports ~30%. Corrected based on last manual GSC UI check on 2026-06-07."
-  },
-  "data_quality": {
-    "api_vs_query_ratio": 1.86,
-    "expected_undercount_pct": 30,
-    "trust_level": "ESTIMATE \u2014 API undercounts. Corrected via factor from manual UI check."
+    "avg_position": 33.9,
+    "note": "FYI ONLY \u2014 NOT official. Correction factor from last manual UI check."
   }
 }

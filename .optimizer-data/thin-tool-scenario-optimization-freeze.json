@@ -1,0 +1,45 @@
+{
+  "title": "Thin Tool/Scenario Independent Optimization Freeze",
+  "effective": "2026-06-12T00:00:00+03:00",
+  "generated": "2026-06-11T20:59:43.382976+00:00",
+  "status": "IMMEDIATE_FREEZE",
+  "scope": "All /tools/ and /scenario/ variant pages that are thin parameterized duplicates of parent calculators.",
+  "reason": "Jun 10 and Jun 11 autonomous runs applied CTR/title/meta template improvements to ~150+ thin tool variants (loan, mortgage, compound, investment-return). These improvements were designed to make thin variants rank independently \u2014 directly contradicting Phase 20 cannibalization review which identified 28 of 34 near-winner pages as thin tools/scenario duplicates stealing rankings from parent calculators.",
+  "violations_documented": [
+    {
+      "date": "2026-06-10",
+      "commit": "f88a235",
+      "action": "3 tool variant title improvements",
+      "affected": "mortgage, compound, investment-return tool variant templates",
+      "estimated_urls_affected": "~150+"
+    },
+    {
+      "date": "2026-06-11",
+      "commit": "f5dc2b0",
+      "action": "5 CTR template fixes on tool variants",
+      "affected": "loan, mortgage, investment-return, compound tool variant templates",
+      "estimated_urls_affected": "~150+"
+    }
+  ],
+  "allowed_actions": {
+    "audit": "Allowed \u2014 classify thin pages, check health, verify parent relationship",
+    "classify": "Allowed \u2014 categorize as duplicate/cannibalizing/hold",
+    "link_to_parent": "Allowed \u2014 add internal links pointing thin variants \u2192 parent calculator",
+    "remove_from_sitemap": "Allowed ONLY if Auditor + Technical Guardian approve (Tiny Cleanup Test)",
+    "canonical_noindex_review": "Allowed \u2014 document recommendations, hold for approval",
+    "keep_accessible_for_users": "Allowed \u2014 if page serves user value, keep live but do not optimize for SEO"
+  },
+  "prohibited_actions": {
+    "broad_ctr_title_template_improvements": "PROHIBITED \u2014 do not improve meta/title/CTR templates designed to make thin variants rank independently",
+    "treat_as_primary_landing": "PROHIBITED \u2014 thin variants are NOT primary landing pages. Parent calculators are.",
+    "push_internal_links_to_thin_variants": "PROHIBITED \u2014 internal links point to parent calculators, not thin variants",
+    "create_new_variants": "PROHIBITED \u2014 no new /tools/ or /scenario/ parameterized pages",
+    "improve_as_standalone_seo": "PROHIBITED \u2014 no independent SEO optimization of thin variant pages",
+    "bulk_noindex_canonical_redirect_delete": "PROHIBITED \u2014 held for Auditor + Technical Guardian approval"
+  },
+  "governance": {
+    "approval_required": "Auditor + Technical Guardian",
+    "override_process": "Any exception to this freeze requires explicit approval documented in thin-tool-scenario-optimization-freeze.json",
+    "review_frequency": "Reviewed daily by Phase 19 autonomous loop \u2014 must check freeze policy before modifying seo-utils.ts tool templates"
+  }
+}

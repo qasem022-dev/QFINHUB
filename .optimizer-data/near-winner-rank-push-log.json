@@ -1,17 +1,34 @@
 {
-  "title": "Phase 20.5 Near-Winner Rank Push Log",
-  "generated": "2026-06-09T21:40:07.884248Z",
-  "status": "MONITORING_COOLDOWNS",
-  "active_pushes": [
+  "title": "Near-Winner Rank Push Log \u2014 Phase 20.6 (Real Pages Only)",
+  "generated": "2026-06-11T21:06:09.079492+00:00",
+  "policy": "Per Real Page Focus Rule, near-winner rank pushes target real pages only. Thin duplicates are not pushed for ranking improvement.",
+  "real_page_near_winners_from_fresh_data": "PENDING \u2014 Fresh GSC page-level data needed to identify current near-winners (positions 1-30, 0 clicks).",
+  "known_candidates_from_stale_data": [
     {
       "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "pos": 11.3,
-      "cooldown": "Day 2/7"
+      "position": 11.9,
+      "impressions": 130,
+      "clicks": 0,
+      "type": "real_blog",
+      "priority": "HIGHEST"
     },
     {
       "page": "/decision/how-much-house-can-i-afford",
-      "pos": 8.8,
-      "cooldown": "Day 2/7"
+      "position": 8.8,
+      "impressions": "stale",
+      "clicks": 0,
+      "type": "real_decision",
+      "priority": "HIGH"
+    },
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "position": "stale data",
+      "impressions": "stale",
+      "clicks": 0,
+      "type": "real_decision",
+      "priority": "HIGH"
     }
-  ]
+  ],
+  "note": "34 near-winner list from Phase 20.1 identified 28 thin tool/scenario pages and only 6 real pages. First-click sprint must focus on the 6 real pages, not the 28 thin duplicates.",
+  "thin_pages_excluded_from_push": "28 thin tool/scenario near-winners (positions 1-30, 0 clicks) are EXCLUDED from rank push. They will be addressed via parent transfer, not independent SEO."
 }

@@ -1,34 +1,74 @@
 {
-  "title": "Phase 20.5 First Click Attack Log",
-  "generated": "2026-06-09T21:40:07.884248Z",
-  "status": "CONTINUING_SPRINT \u2014 CRON_PENDING",
-  "first_click_achieved_28d": true,
-  "active_targets": [
+  "title": "First-Click Attack Log \u2014 Phase 20.6 (Real Pages Only)",
+  "generated": "2026-06-11T21:06:09.079492+00:00",
+  "policy": "Per Real Page Focus Rule (Task 5), first-click sprint targets real pages ONLY (priorities 1-4). Thin tool/scenario variants are NOT targeted for CTR/SEO improvements.",
+  "real_pages_focused": [
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "type": "real_decision",
+      "indexing": "PASS / Submitted and indexed",
+      "last_crawl": "2026-05-28",
+      "recent_action": "CTR fix applied Jun 10 (commit f88a235)",
+      "cooldown_status": "IN_COOLDOWN \u2014 edited Jun 10, next edit earliest Jun 12",
+      "recommended_actions": "Cooldown expires Jun 12. Then: add internal links FROM blog posts TO this decision page, add FAQ schema, verify title is click-optimized."
+    },
     {
       "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "pos": 11.3,
-      "imp": 94,
-      "status": "CTR fix deployed Jun 9. Cooldown day 2."
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "type": "real_blog",
+      "indexing": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-04",
+      "gsc_data": "130 impressions, position 11.9, 0 clicks (from stale baseline \u2014 fresh data needed)",
+      "recent_action": "CTR fix applied Jun 9 (title: removed answer from title)",
+      "cooldown_status": "COOLDOWN_EXPIRING \u2014 Jun 9 edit, can be re-edited Jun 11+",
+      "recommended_actions": "Add internal links TO loan-calculator and other calculators. Add FAQ schema. Monitor for first click (page 1 position, highest impressions)."
     },
     {
       "page": "/decision/how-much-house-can-i-afford",
-      "pos": 8.8,
-      "imp": 4,
-      "status": "Title+meta upgraded Jun 9. Cooldown day 2."
+      "url": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "type": "real_decision",
+      "indexing": "PASS / Submitted and indexed",
+      "last_crawl": "2026-05-28",
+      "recent_action": "CTR fix applied ~Jun 9 (title changed to benefit-driven hook)",
+      "cooldown_status": "IN_COOLDOWN \u2014 edited ~Jun 9, next edit ~Jun 11+",
+      "recommended_actions": "Add internal links, verify title matches searcher intent, add FAQ."
     },
     {
-      "page": "/calculators/tax/philadelphia-pa",
-      "pos": 15.2,
-      "imp": 11,
-      "status": "Queued for next cycle"
+      "page": "/calculators/tax-calculator",
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "type": "real_calculator",
+      "indexing": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-01",
+      "recent_action": "Internal links added Jun 11 (+1: bezos zero income tax)",
+      "cooldown_status": "Can be edited (no recent title/meta changes)",
+      "recommended_actions": "Review title/meta for CTR. Add FAQ schema. Add related calculator links."
     },
     {
-      "page": "/decision/pay-off-debt-or-invest",
-      "pos": 22.6,
-      "imp": 18,
-      "status": "Prior CTR fixes deployed. Monitoring."
+      "page": "/calculators/retirement-planning",
+      "url": "https://www.qfinhub.com/calculators/retirement-planning",
+      "type": "real_calculator",
+      "indexing": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-01",
+      "recent_action": "None recently",
+      "cooldown_status": "Available for edit",
+      "recommended_actions": "Review title/meta. Add short answer/FAQ. Add internal links FROM blog posts."
+    },
+    {
+      "page": "/calculators/investment-return",
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "type": "real_calculator",
+      "indexing": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-01",
+      "recent_action": "Internal links added Jun 11 (+2: political risk, lowes stock)",
+      "cooldown_status": "Can be edited",
+      "recommended_actions": "Review title/meta. Parent calculator needs to be stronger than thin investment variants."
     }
   ],
-  "today_actions": "NONE \u2014 cron gate not passed. No manual growth work per Phase 20.3+ rules.",
-  "rule": "Do not manually run growth cycle before scheduled cron unless cron fails."
+  "thin_pages_excluded": "Per Real Page Focus Rule, the following thin tool/scenario pages are EXCLUDED from first-click sprint CTR/SEO improvements: mortgage-900k, mortgage-200k, compound-500k, compound-100k, loan-3k, loan-30k, investment variants, and all other thin parameterized tools/scenarios.",
+  "deferred_real_pages": [
+    "/calculators/tax/philadelphia-pa (geo page \u2014 needs review)",
+    "/calculators/401k-calculator (indexed, no recent edits)",
+    "/calculators/amortization-schedule (discovered not indexed \u2014 needs indexing diagnosis first)"
+  ]
 }

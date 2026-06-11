@@ -1,40 +1,63 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-06-09T17:10:34.840720Z",
+  "generated": "2026-06-11T21:18:27.183020+00:00",
+  "pulled_at": "2026-06-11T21:18:27Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "date_range": {
     "start": "2026-06-02",
     "end": "2026-06-08"
   },
-  "latest_available_gsc_date": "2026-06-07",
+  "previous_7d_range": {
+    "start": "2026-05-26",
+    "end": "2026-06-01"
+  },
+  "dimensions_pulled": [
+    "page",
+    "query",
+    "query+page"
+  ],
+  "row_limits": 500,
   "metrics_7d": {
-    "impressions": 499,
+    "impressions": 424,
     "clicks": 0,
     "ctr_pct": 0.0,
-    "avg_position": 33.8,
-    "pages_with_impressions": 52
+    "avg_position": 38.3,
+    "pages_with_impressions": 51,
+    "query_count": 68,
+    "query_impressions": 247,
+    "query_page_rows": 68
+  },
+  "metrics_28d": {
+    "impressions": 1150,
+    "clicks": 1,
+    "pages_with_impressions": 122,
+    "pages_with_clicks": 1,
+    "clicked_pages": [
+      "https://www.qfinhub.com/"
+    ]
   },
   "previous_7d": {
-    "start": "2026-05-31",
-    "end": "2026-06-07",
-    "impressions": 304,
-    "clicks": 0,
-    "avg_position": 33.2
+    "start": "2026-05-26",
+    "end": "2026-06-01",
+    "impressions": 321
   },
-  "change": {
-    "impressions": "+195 (+64%)",
-    "clicks": "0 (unchanged)",
-    "position": "+0.6 (slightly worse)",
-    "pages": "+7"
+  "change_7d": {
+    "impressions": 103,
+    "impressions_pct": 32.1
+  },
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "dfd0d4d55880",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
   },
   "manual_ui_comparison": {
     "available": true,
     "last_check": "2026-06-07 (Qasem)",
-    "ui_impressions": 436,
-    "ui_indexed": 238,
-    "api_undercount_pct": "~30%",
-    "note": "API permanently undercounts vs UI due to anonymized query stripping. UI comparison is FYI only \u2014 NOT used in official KPIs."
+    "note": "FYI ONLY \u2014 NOT used in official KPIs"
   },
   "data_source_policy": "RAW_GSC_API_ONLY",
   "correction_factor": "DISABLED \u2014 not applied to official metrics per Phase 19.2 normalization"

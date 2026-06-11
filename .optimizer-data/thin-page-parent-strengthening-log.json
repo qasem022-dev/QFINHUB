@@ -1,61 +1,81 @@
 {
-  "generated": "2026-06-09T20:26:44.533878Z",
-  "parents": [
+  "title": "Thin Page Parent Strengthening Log \u2014 Phase 20.6",
+  "generated": "2026-06-11T21:06:09.079492+00:00",
+  "principle": "Before or alongside any sitemap removal of thin variants, the parent calculator pages must be fully strengthened to absorb the authority transfer.",
+  "parents_audited": [
     {
-      "parent": "compound-interest",
-      "destination": "/calculators/compound-interest",
-      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
-      "actions_needed_before_cleanup": [
-        "Verify FAQ schema present",
-        "Add short-answer section if missing",
-        "Add 2-3 more internal links from relevant blogs",
-        "Ensure title/meta covers the query intent of thin pages"
+      "parent_page": "/calculators/loan-calculator",
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "indexing_status": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-01",
+      "thin_children": [
+        "/tools/loan-30k-5yr-6pct",
+        "/tools/loan-3k-2yr-24pct"
       ],
-      "actions_taken_today": [
-        "Added internal links from blog posts to /calculators/compound-interest (via calculator-blog-links.ts)"
-      ]
+      "checks": {
+        "title_meta": "PENDING \u2014 needs review for CTR optimization (parent calculator should have strongest title)",
+        "short_answer": "PENDING \u2014 add schema FAQ/short answer for 'what is my monthly payment' queries",
+        "faq": "PENDING \u2014 add FAQ section",
+        "calculator_cta": "PENDING \u2014 verify calculator is prominent above the fold",
+        "index_follow": "PENDING \u2014 verify robots meta",
+        "self_canonical": "PENDING \u2014 verify canonical tag",
+        "in_sitemap": "PENDING \u2014 verify presence in sitemap.xml"
+      },
+      "internal_links_needed": [
+        "From thin loan variants \u2192 loan-calculator (contextual link: 'Try the full loan calculator')"
+      ],
+      "status": "PENDING_STRENGTHENING"
     },
     {
-      "parent": "401k-calculator",
-      "destination": "/calculators/401k-calculator",
-      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
-      "actions_needed_before_cleanup": [
-        "Verify FAQ schema present",
-        "Add short-answer section if missing",
-        "Add 2-3 more internal links from relevant blogs",
-        "Ensure title/meta covers the query intent of thin pages"
+      "parent_page": "/calculators/mortgage-calculator",
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "indexing_status": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-01",
+      "thin_children": [
+        "/tools/mortgage-900k-30yr-7pct",
+        "/tools/mortgage-200k-30yr-6pct"
       ],
-      "actions_taken_today": [
-        "Added internal links from blog posts to /calculators/401k-calculator (via calculator-blog-links.ts)"
-      ]
+      "checks": {
+        "title_meta": "REVIEW_NEEDED \u2014 parent must have stronger title than thin variants. Current thin variant titles use aggressive hooks that may outcompete parent.",
+        "short_answer": "PENDING",
+        "faq": "PENDING",
+        "calculator_cta": "PENDING",
+        "index_follow": "PENDING",
+        "self_canonical": "PENDING",
+        "in_sitemap": "PENDING"
+      },
+      "internal_links_status": "12 internal links added Jun 11 (mortgage rates, hungary rate cut, new federal housing). Good \u2014 additional contextual links from thin variants \u2192 parent recommended.",
+      "status": "PARTIALLY_STRENGTHENED"
     },
     {
-      "parent": "loan-calculator",
-      "destination": "/calculators/loan-calculator",
-      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
-      "actions_needed_before_cleanup": [
-        "Verify FAQ schema present",
-        "Add short-answer section if missing",
-        "Add 2-3 more internal links from relevant blogs",
-        "Ensure title/meta covers the query intent of thin pages"
+      "parent_page": "/calculators/compound-interest",
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "canonical_note": "CANONICAL URL is /calculators/compound-interest (NOT compound-interest-calculator \u2014 that URL is unknown to Google)",
+      "indexing_status": "PASS / Submitted and indexed",
+      "last_crawl": "2026-06-01",
+      "thin_children": [
+        "/tools/compound-100k-20yr-5pct",
+        "/tools/compound-500k-15yr-5pct",
+        "/tools/compound-1k-5yr-5pct-daily"
       ],
-      "actions_taken_today": [
-        "Added internal links from blog posts to /calculators/loan-calculator (via calculator-blog-links.ts)"
-      ]
-    },
-    {
-      "parent": "mortgage-calculator",
-      "destination": "/calculators/mortgage-calculator",
-      "current_status": "Metadata upgraded Phase 19.1. Internal links: strong. Content: adequate.",
-      "actions_needed_before_cleanup": [
-        "Verify FAQ schema present",
-        "Add short-answer section if missing",
-        "Add 2-3 more internal links from relevant blogs",
-        "Ensure title/meta covers the query intent of thin pages"
-      ],
-      "actions_taken_today": [
-        "Added internal links from blog posts to /calculators/mortgage-calculator (via calculator-blog-links.ts)"
-      ]
+      "checks": {
+        "title_meta": "REVIEW_NEEDED \u2014 parent must have strongest title. Thin compound variants currently have aggressive 'See YOUR Compound Growth' hooks.",
+        "canonical_issue": "URL Inspection API shows /calculators/compound-interest-calculator is UNKNOWN to Google. The live URL is /calculators/compound-interest. Verify all internal links point to /calculators/compound-interest.",
+        "short_answer": "PENDING",
+        "faq": "PENDING",
+        "calculator_cta": "PENDING",
+        "index_follow": "PENDING",
+        "in_sitemap": "PENDING"
+      },
+      "internal_links_status": "Existing safe transfer plan (Phase 20.1) mapped compound-100k, compound-500k to compound-interest. Internal links need verification.",
+      "status": "NEEDS_ATTENTION \u2014 canonical URL mismatch discovered"
     }
-  ]
+  ],
+  "next_actions": {
+    "immediate": "Verify compound-interest-calculator vs compound-interest canonical URL. Update all internal links to point to the correct canonical /calculators/compound-interest.",
+    "priority": "Strengthen all 3 parent calculators with title/meta review, FAQ, short answer, and calculator CTA before any sitemap removal.",
+    "internal_links": "Add contextual internal links from thin variants to parent calculators (e.g., 'Use the full [Loan Calculator] for custom terms')."
+  },
+  "important_discovery": "compound-interest-calculator URL is UNKNOWN to Google. The correct canonical URL is /calculators/compound-interest. This means any internal links pointing to compound-interest-calculator are pointing to a URL Google doesn't know about \u2014 wasting link equity.",
+  "rule": "Parent page strengthening MUST be completed before sitemap removal of thin variants."
 }

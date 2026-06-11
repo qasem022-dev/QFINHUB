@@ -1,12 +1,44 @@
 {
-  "title": "CTR Fixes Round 7 \u2014 BLOCKED",
-  "generated": "2026-06-07T00:08:35Z",
-  "status": "BLOCKED \u2014 no fresh GSC data to identify new fix candidates",
-  "reason": "GSC token dead. Cannot pull current impressions/clicks/CTR data to find pages needing fixes.",
-  "fallback_actions": [
-    "3 CTR fixes deployed in Phase 16.10+16.11 (credit card debt blog, ECB mortgage blog, Roth vs Traditional 401k)",
-    "Page 2 Push executed: 5 new blog links added to calculator-blog-links.ts",
-    "2 tool variant CTR fixes deferred (ctr-013, ctr-014) \u2014 require generator-level refactor"
+  "title": "Click Extraction Engine Log — Phase 19 Daily Jun 11",
+  "generated": "2026-06-11T15:12:00+03:00",
+  "today_fixes": 5,
+  "cumulative_fixes": 11,
+  "fixes": [
+    {
+      "type": "template_title",
+      "target": "ALL loan-calculator tool variants (~150+ pages)",
+      "old": "$3,000 2-Year 24% APR Loan Calculator 2026 — Free Monthly Payment Tool",
+      "new": "$3,000 Loan: 24% APR 2-Year — What's YOUR Payment?",
+      "rationale": "Curiosity hook. Removes 'Free Monthly Payment Tool' which gives away value prop. Forces click to see actual payment."
+    },
+    {
+      "type": "template_meta",
+      "target": "ALL loan-calculator tool variants",
+      "old": "See your exact monthly payment, total interest, and amortization schedule.",
+      "new": "Find out YOUR exact monthly payment... See amortization schedule, total interest, and compare different terms.",
+      "rationale": "Curiosity hook. Removes 'see your exact' which implies answer is in snippet."
+    },
+    {
+      "type": "template_meta",
+      "target": "ALL mortgage-calculator tool variants (~225+ pages)",
+      "old": "Free mortgage calculator for a $X home. See your exact monthly payment...",
+      "new": "What's YOUR monthly payment for a $X home? Get a personalized calculation in 30 seconds.",
+      "rationale": "Question format forces click. 'Free mortgage calculator' too generic."
+    },
+    {
+      "type": "template_meta",
+      "target": "ALL investment-return tool variants",
+      "old": "Calculate the total return... with a final value of $X. See CAGR...",
+      "new": "Calculate YOUR exact investment return... See CAGR, absolute return, annualized performance, and compare against benchmarks.",
+      "rationale": "Removed finalValue reveal which kills click intent."
+    },
+    {
+      "type": "template_meta",
+      "target": "ALL compound-interest tool variants",
+      "old": "Calculate compound interest on $X at Y% APY over Z years. See the power of compound growth...",
+      "new": "How much will $X grow at Y% APY over Z years? See YOUR personalized compound growth projection...",
+      "rationale": "Question format. 'See YOUR' personalized vs generic 'See the power'."
+    }
   ],
-  "next_steps_after_token_fix": "Pull fresh GSC \u2192 identify pages with imp>0, clicks=0, CTR<1% \u2192 apply up to 5 fixes"
+  "note": "All 5 fixes are TEMPLATE-LEVEL — they apply to all 500+ tool variant pages at once. This is the Phase 19 pattern (Phase 19 applied same pattern for mortgage, compound, and investment titles on Jun 10). Today completes the fix for loan templates."
 }

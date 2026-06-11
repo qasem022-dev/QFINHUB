@@ -1,0 +1,74 @@
+{
+  "title": "GSC Data Pipeline Emergency Fix \u2014 Phase 20.7",
+  "generated": "2026-06-11T21:19:04.763555+00:00",
+  "status": "FIXED_AND_TESTED",
+  "root_cause": "gsc-daily-pipeline.py had HARDCODED date ranges (startDate=2026-05-31, endDate=2026-06-07). This is why every daily run since June 7 returned the same stale 499-impression baseline.",
+  "fixes_applied": {
+    "dynamic_date_ranges": {
+      "before": "Hardcoded: startDate='2026-05-31', endDate='2026-06-07' on lines 33-34 and 67-68",
+      "after": "Dynamic: end_date = today - 3 days (GSC delay). start_date = end_date - 6 days. Updated every run.",
+      "current_computed_window": "2026-06-02 to 2026-06-08"
+    },
+    "row_limit": {
+      "before": "250 (risk of silent data loss per pitfall #63)",
+      "after": "500 (safe \u2014 no truncation risk)"
+    },
+    "dimensions_pulled": {
+      "before": "page, query only",
+      "after": "page, query, query+page (all 3 dimensions)"
+    },
+    "checksum_tracking": {
+      "before": "None \u2014 no way to detect staleness",
+      "after": "MD5 checksum computed and saved: dfd0d4d55880"
+    },
+    "correction_factor": {
+      "before": "Applied 1.434x to official output (violated Phase 19.2)",
+      "after": "DISABLED \u2014 correction factor stored as documentation only. Corrected estimate labeled FYI only."
+    },
+    "freshness_proof": {
+      "before": "No freshness tracking",
+      "after": "freshness field: {fp['freshness']}. Compares date range and checksum to previous pull."
+    },
+    "previous_window_comparison": {
+      "before": "No comparison",
+      "after": "Previous 7d pulled and compared. Change: +103 (+32.1%)"
+    },
+    "pull_timestamp": {
+      "before": "Missing \u2014 only 'generated' field",
+      "after": "pulled_at: 2026-06-11T21:18:27Z"
+    },
+    "28_day_window": {
+      "before": "Not pulled",
+      "after": "28-day metrics included: 1150 imp, 1 clicks, 1 pages with clicks"
+    }
+  },
+  "test_result": {
+    "script": "scripts/gsc-daily-pipeline.py",
+    "exit_code": 0,
+    "output": "API RAW: 424 imp, 0 clicks, 51 pages, pos 38.3",
+    "freshness": "FRESH",
+    "checksum": "dfd0d4d55880",
+    "files_written": [
+      ".optimizer-data/gsc-api-truth-current.json",
+      ".optimizer-data/gsc-live-data-corrected.json"
+    ]
+  },
+  "daily_report_format": {
+    "gsc_api_raw": {
+      "date_range": "2026-06-02 to 2026-06-08",
+      "pulled_at": "2026-06-11T21:18:27Z",
+      "impressions": 424,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position": 38.3,
+      "pages_with_impressions": 51,
+      "queries": 68,
+      "freshness_proof": "FRESH",
+      "cache_used": false
+    },
+    "manual_ui_data": {
+      "section": "FYI ONLY \u2014 separate from official KPIs",
+      "not_applied_to_official": true
+    }
+  }
+}

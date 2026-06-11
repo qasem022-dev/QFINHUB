@@ -1,0 +1,87 @@
+{
+  "title": "Tiny Sitemap Removal Test \u2014 Approval Request",
+  "generated": "2026-06-11T21:05:26.915240+00:00",
+  "status": "AWAITING_FULL_VERIFICATION",
+  "test_parameters": {
+    "max_urls": 3,
+    "allowed_action": "Remove from sitemap ONLY",
+    "prohibited_actions": [
+      "noindex",
+      "canonical",
+      "redirect",
+      "delete"
+    ],
+    "rollback": "Re-add URLs to sitemap"
+  },
+  "candidates": [
+    {
+      "url": "/scenario/auto-loan-bc834ee2",
+      "full_url": "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+      "impressions": 1,
+      "clicks": 0,
+      "backlinks": 0,
+      "page_type": "scenario",
+      "classification": "pure duplicate \u2014 auto loan scenario variant",
+      "indexing_status": "PASS / Submitted and indexed (self-canonical)",
+      "last_crawl": "2026-05-22",
+      "parent_page": "/calculators/auto-loan-calculator",
+      "parent_url_inspection": "PENDING \u2014 need to verify parent",
+      "parent_in_sitemap": "PENDING \u2014 need to verify",
+      "internal_links_to_parent": "PENDING \u2014 need to verify",
+      "sitemap_included": true,
+      "rollback_exists": true,
+      "condition_1_impression_only": true,
+      "condition_0_clicks": true,
+      "condition_no_backlinks": true,
+      "condition_pure_duplicate": true,
+      "condition_parent_healthy": "PENDING",
+      "condition_parent_in_sitemap": "PENDING",
+      "condition_internal_links_exist": "PENDING",
+      "verdict": "HOLD \u2014 parent page verification required"
+    },
+    {
+      "url": "/tools/loan-30k-5yr-6pct",
+      "full_url": "https://www.qfinhub.com/tools/loan-30k-5yr-6pct",
+      "impressions": "PENDING \u2014 check fresh GSC page-level data",
+      "clicks": 0,
+      "backlinks": 0,
+      "page_type": "tool",
+      "classification": "thin duplicate \u2014 loan calculator parameterized variant",
+      "indexing_status": "PASS / Submitted and indexed (self-canonical)",
+      "last_crawl": "2026-05-20",
+      "parent_page": "/calculators/loan-calculator",
+      "parent_url_inspection": "PASS / Submitted and indexed",
+      "sitemap_included": true,
+      "verdict": "PENDING \u2014 fresh impression count needed"
+    },
+    {
+      "url": "/tools/compound-1k-5yr-5pct-daily",
+      "full_url": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+      "impressions": "PENDING \u2014 check fresh GSC page-level data",
+      "clicks": 0,
+      "backlinks": 0,
+      "page_type": "tool",
+      "classification": "thin duplicate \u2014 compound interest parameterized variant",
+      "indexing_status": "PASS / Submitted and indexed (self-canonical)",
+      "last_crawl": "2026-05-19",
+      "parent_page": "/calculators/compound-interest-calculator",
+      "parent_canonical_url": "/calculators/compound-interest",
+      "parent_url_inspection": "PASS / Submitted and indexed",
+      "sitemap_included": true,
+      "verdict": "PENDING \u2014 fresh impression count needed"
+    }
+  ],
+  "pre_conditions_checklist": {
+    "condition_impressions_max_1": "PARTIALLY_VERIFIED \u2014 auto-loan confirmed 1 imp. Others need fresh GSC check.",
+    "condition_no_clicks": true,
+    "condition_no_backlinks": true,
+    "condition_pure_duplicate": true,
+    "condition_parent_healthy": "PARTIALLY_VERIFIED \u2014 loan-calculator PASS/indexed. compound-interest PASS/indexed. auto-loan-calculator PENDING.",
+    "condition_parent_in_sitemap": "PENDING \u2014 need to verify",
+    "condition_internal_links_exist": "PENDING \u2014 need to verify parent pages have internal links from thin variants",
+    "condition_rollback_exists": true
+  },
+  "auditor_recommendation": "HOLD \u2014 Verify parent pages auto-loan-calculator and compound-interest-calculator are healthy and in sitemap before removing thin variants.",
+  "technical_guardian_recommendation": "HOLD \u2014 URL Inspection API shows all 3 candidates are currently indexed. Sitemap removal may trigger Google to de-index them faster. This is WANTED behavior for thin duplicates, but confirm parents are fully healthy first.",
+  "execution_if_approved": "Remove max 3 URLs from sitemap.xml generation code. Do NOT modify robots.txt, page metadata, canonical tags, or page content. Run post-deploy verification."
+}

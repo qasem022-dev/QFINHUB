@@ -1,0 +1,16 @@
+{
+  "title": "Phase 19 Cron Safety Gates \u2014 Overview",
+  "generated": "2026-06-11T21:19:04.763555+00:00",
+  "cron_id": "dcba952b4c45",
+  "gates_count": 5,
+  "gates": [
+    "GSC_FRESHNESS",
+    "STALE_GUARDRAIL",
+    "REAL_PAGE_FOCUS",
+    "THIN_TOOL_FREEZE",
+    "COOLDOWN_CHECK"
+  ],
+  "all_must_pass": true,
+  "any_fail": "NO SEO CHANGES, NO DEPLOY, CREATE BLOCKER REPORT",
+  "gate_order": "Sequential \u2014 gates checked in order. If any fails, subsequent gates not checked."
+}

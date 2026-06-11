@@ -1,13 +1,36 @@
 {
-  "title": "Cleanup Test Status",
-  "generated": "2026-06-09T21:39:52.240502Z",
-  "status": "BLOCKED_PENDING_RISKY_INDEX_AUDITS",
-  "blockers": [
-    "Cron proof pending",
-    "Noindex audit pending",
-    "CNI audit pending",
-    "404 audit pending",
-    "Parent strength check pending",
-    "Auditor + Guardian approval pending"
-  ]
+  "title": "Tiny Cleanup Test Status \u2014 Phase 20.7",
+  "generated": "2026-06-11T21:27:44.545846+00:00",
+  "status": "BLOCKED_PENDING_DATA_PIPELINE_AND_TEMPLATE_FIX",
+  "blocked_by": [
+    {
+      "condition": "GSC pipeline fixed",
+      "status": "DONE \u2014 scripts/gsc-daily-pipeline.py rewritten with dynamic dates"
+    },
+    {
+      "condition": "Stale guardrail passes",
+      "status": "DONE \u2014 guardrail created at .optimizer-data/gsc-stale-data-guardrail.json"
+    },
+    {
+      "condition": "Tool template rollback/softening done",
+      "status": "DONE \u2014 seo-utils.ts softened, all 4 templates fixed"
+    },
+    {
+      "condition": "Compound canonical URL fixed",
+      "status": "DONE \u2014 verified correct, no fix needed"
+    },
+    {
+      "condition": "Risky indexing URL audits complete",
+      "status": "PENDING \u2014 full URL extraction needs GSC drilldown"
+    },
+    {
+      "condition": "Parent pages strengthened",
+      "status": "IN_PROGRESS \u2014 meta CTAs added, full strengthening TBD"
+    },
+    {
+      "condition": "Auditor + Technical Guardian approve",
+      "status": "PENDING"
+    }
+  ],
+  "next_step": "Complete parent page strengthening (Task 7), then request approval for max 3 sitemap removals."
 }

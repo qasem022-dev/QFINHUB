@@ -1,0 +1,80 @@
+{
+  "title": "Tool Template Change Risk Audit \u2014 FINAL (Phase 20.7)",
+  "generated": "2026-06-11T21:25:59.143302+00:00",
+  "commits_audited": [
+    {
+      "commit": "f88a235",
+      "date": "2026-06-10",
+      "changes": "3 tool variant title improvements + 1 CTR fix + geo meta"
+    },
+    {
+      "commit": "f5dc2b0",
+      "date": "2026-06-11",
+      "changes": "5 CTR template fixes + 12 internal links"
+    }
+  ],
+  "file": "src/lib/programmatic-seo/seo-utils.ts",
+  "templates": [
+    {
+      "template": "Mortgage Calculator Tool Variants (generateMetaTitle)",
+      "affected_url_pattern": "/tools/mortgage-*-*-*",
+      "estimated_urls": "~50-60",
+      "thin_duplicates": true,
+      "parent_calculator": "/calculators/mortgage-calculator",
+      "changes_applied": [
+        "Jun 10: Title 'Mortgage: Y% Z-Year \u2014 Calculate YOUR Payment' (aggressive CTA hook)",
+        "Jun 11: Meta 'What's YOUR monthly payment? Get personalized...' (Q&A hook)"
+      ],
+      "encourages_thin_ctr": true,
+      "risk_level": "HIGH",
+      "recommendation": "SOFTENED \u2014 Applied Jun 11",
+      "action_taken": "Title: '\u2014 Monthly Payment Example'. Meta: 'Monthly payment example for a... Example calculation for a fixed scenario. For your exact numbers, use the full Mortgage Calculator.'"
+    },
+    {
+      "template": "Loan Calculator Tool Variants (generateMetaTitle)",
+      "affected_url_pattern": "/tools/loan-*-*-*",
+      "estimated_urls": "~50-60",
+      "thin_duplicates": true,
+      "parent_calculator": "/calculators/loan-calculator",
+      "changes_applied": [
+        "Jun 11: Title 'Loan: Y% APR Z-Year \u2014 What's YOUR Payment?' (aggressive Q&A hook)",
+        "Jun 11: Meta 'Find out YOUR exact monthly payment...' (urgency hook)"
+      ],
+      "encourages_thin_ctr": true,
+      "risk_level": "HIGH",
+      "recommendation": "SOFTENED \u2014 Applied Jun 11",
+      "action_taken": "Title: '\u2014 Monthly Payment Example'. Meta: 'Monthly payment example for a... Example payment breakdown for a fixed scenario. For your exact numbers, use the full Loan Calculator.'"
+    },
+    {
+      "template": "Investment Return Tool Variants (generateMetaTitle)",
+      "affected_url_pattern": "/tools/investment-*-*-*",
+      "estimated_urls": "~30-40",
+      "thin_duplicates": true,
+      "parent_calculator": "/calculators/investment-return",
+      "changes_applied": [
+        "Jun 10: Title 'See YOUR Investment Returns | ROI & CAGR' (aggressive)",
+        "Jun 11: Meta removed final value reveal (ANTI-CANNIBALIZATION \u2014 good change, KEPT)"
+      ],
+      "encourages_thin_ctr": "Title: YES. Meta: NO (reduces snippet cannibalization).",
+      "risk_level": "MEDIUM",
+      "recommendation": "SOFTEN title, KEEP meta",
+      "action_taken": "Title: 'Investment Performance Example'. Meta KEPT (removing final value = anti-cannibalization)."
+    },
+    {
+      "template": "Compound Interest Tool Variants (generateMetaTitle)",
+      "affected_url_pattern": "/tools/compound-*-*-*",
+      "estimated_urls": "~40-50",
+      "thin_duplicates": true,
+      "parent_calculator": "/calculators/compound-interest",
+      "changes_applied": [
+        "Jun 10: Title 'See YOUR Compound Growth' + 'for Y Years?' (aggressive Q&A hook)",
+        "Jun 11: Meta 'How much will $X grow? See YOUR personalized...' (aggressive Q&A hook)"
+      ],
+      "encourages_thin_ctr": true,
+      "risk_level": "HIGHEST \u2014 5 compound variants in near-winner list at positions 9.5-22.3",
+      "recommendation": "ROLLBACK \u2014 Full softening applied",
+      "action_taken": "Title: 'Compound Growth Example' (removed '?' hook). Meta: 'Compound interest example for... Example growth projection for a fixed scenario. For your exact numbers, use the full Compound Interest Calculator.'"
+    }
+  ],
+  "summary": "All 4 aggressive click-bait title/meta patterns have been SOFTENED to descriptive 'Example' format with parent calculator CTA. Investment-return meta (final value removal) KEPT as anti-cannibalization improvement."
+}

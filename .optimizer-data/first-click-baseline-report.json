@@ -1,11 +1,25 @@
 {
-  "title": "First Click Baseline",
-  "generated": "2026-06-09T21:39:52.240502Z",
-  "first_click_28d": true,
-  "first_click_7d": false,
-  "clicks_28d": 1,
-  "impressions_28d": 915,
-  "ctr_28d": "0.1%",
-  "page_unknown": true,
-  "note": "GSC 28d aggregate doesn't reveal page/query without drilldown. Click occurred in 8-28 day window."
+  "title": "Branded Click Classification \u2014 Phase 20.7",
+  "generated": "2026-06-11T21:27:44.545846+00:00",
+  "update": "KPI logic updated to distinguish branded homepage click from organic content conversion.",
+  "first_click_status": {
+    "FIRST_CLICK_28D": "ACHIEVED \u2014 1 click on homepage in 28-day window (May 15 - Jun 11)",
+    "FIRST_CONTENT_CLICK": "NOT_ACHIEVED \u2014 no click on any calculator, blog, guide, or decision page",
+    "FIRST_NON_BRANDED_CLICK": "NOT_ACHIEVED \u2014 the only click is on homepage at position 1.9, characteristic of branded 'qfinhub' search",
+    "FIRST_7D_CLICK": "NOT_ACHIEVED \u2014 0 clicks in last 7 days"
+  },
+  "homepage_click_detail": {
+    "page": "https://www.qfinhub.com/",
+    "impressions_28d": 31,
+    "clicks_28d": 1,
+    "position": 1.9,
+    "nature": "BRANDED_NAVIGATIONAL \u2014 someone searched 'qfinhub' and clicked the homepage. NOT a content conversion from an informational search.",
+    "ctr": "3.2% (expected for position 1-2 branded search)"
+  },
+  "rules": {
+    "homepage_click_does_not_count_as_content_conversion": true,
+    "first_content_click_requires": "Click on calculator, blog, guide, decision, or tool page from non-branded search query",
+    "branded_click_tracking": "Track separately as brand awareness signal, not content success metric",
+    "official_status": "FIRST_CLICK_28D = achieved (factual). FIRST_CONTENT_CLICK = not achieved (quality distinction)."
+  }
 }

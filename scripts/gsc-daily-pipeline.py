@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
-GSC Daily Data Pipeline — API-based with self-updating correction factor
-Solves: API undercounts (30-50% vs UI). Solution: API for trends + correction factor.
-Run: python3 scripts/gsc-daily-pipeline.py
+GSC Daily Data Pipeline V2 — Dynamic date ranges, freshness proofs, no silent fallback.
+Phase 20.7: Hardcoded dates removed. Correction factor DISABLED (documentation only).
+Raw API is the ONLY official KPI source per Phase 19.2 normalization.
 """
-import urllib.request, urllib.parse, json, os, time, sys
+import urllib.request, urllib.parse, json, os, sys, hashlib
+from datetime import datetime, timedelta, timezone
 
 TOKEN_PATH = os.path.expanduser("~/.hermes/google-indexing-token.json")
-BASELINE = ".optimizer-data/gsc-correction-baseline.json"
-OUTPUT = ".optimizer-data/gsc-live-data-corrected.json"
+TRUTH_FILE = ".optimizer-data/gsc-api-truth-current.json"
+CORRECTED_OUTPUT = ".optimizer-data/gsc-live-data-corrected.json"
 SITE = "https://www.qfinhub.com"
+SITE_ENC = urllib.parse.quote(SITE, safe='')
 
-# Step 1: Refresh token
+# ── Step 1: Refresh token ──────────────────────────────────────────
 with open(TOKEN_PATH) as f:
     tok = json.load(f)
 body = urllib.parse.urlencode({
@@ -26,94 +28,189 @@ tok["access_token"] = json.loads(resp.read())["access_token"]
 with open(TOKEN_PATH, "w") as f:
     json.dump(tok, f)
 access = tok["access_token"]
+pull_timestamp = datetime.now(timezone.utc)
 
-# Step 2: Pull page-level data
-site_enc = urllib.parse.quote(SITE, safe='')
-sa_body = json.dumps({
-    "startDate": "2026-05-31",
-    "endDate": "2026-06-07",
-    "dimensions": ["page"],
-    "rowLimit": 250
-}).encode()
-sa_req = urllib.request.Request(
-    f"https://searchconsole.googleapis.com/webmasters/v3/sites/{site_enc}/searchAnalytics/query",
-    data=sa_body,
-    headers={"Authorization": f"Bearer {access}", "Content-Type": "application/json"}
-)
-sa_resp = urllib.request.urlopen(sa_req, timeout=15)
-sa_data = json.loads(sa_resp.read())
-rows = sa_data.get("rows", [])
+# ── Step 2: Compute DYNAMIC date range ─────────────────────────────
+# GSC API has ~3 day reporting delay. End = yesterday - 2 = 3 days ago.
+# Start = end - 6 days = 7-day window.
+end_date = (pull_timestamp - timedelta(days=3)).date()
+start_date = end_date - timedelta(days=6)
+prev_end = start_date - timedelta(days=1)
+prev_start = prev_end - timedelta(days=6)
 
-api_imp = sum(r["impressions"] for r in rows)
-api_clicks = sum(r.get("clicks", 0) for r in rows)
-api_pages = len(rows)
+def gsc_pull(dims, start, end, rowLimit=500, timeout=15):
+    """Pull GSC Search Analytics data. Returns (json_response, checksum)."""
+    body = json.dumps({
+        "startDate": str(start), "endDate": str(end),
+        "dimensions": dims,
+        "rowLimit": rowLimit,
+        "searchType": "web"
+    }).encode()
+    req = urllib.request.Request(
+        f"https://searchconsole.googleapis.com/webmasters/v3/sites/{SITE_ENC}/searchAnalytics/query",
+        data=body,
+        headers={"Authorization": f"Bearer {access}", "Content-Type": "application/json"}
+    )
+    resp = urllib.request.urlopen(req, timeout=timeout)
+    data = json.loads(resp.read())
+    rows = data.get("rows", [])
+    chk = hashlib.md5(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:12]
+    return data, chk
 
-# Weighted avg position
-total_w = sum(r["impressions"] * r.get("position", 0) for r in rows)
-api_pos = total_w / api_imp if api_imp > 0 else 0
+# ── Pull ALL dimensions ────────────────────────────────────────────
+page_data, page_checksum = gsc_pull(["page"], str(start_date), str(end_date))
+page_rows = page_data.get("rows", [])
+page_imp = sum(r.get("impressions", 0) for r in page_rows)
+page_clicks = sum(r.get("clicks", 0) for r in page_rows)
+page_count = len(page_rows)
+if page_imp > 0:
+    wsum = sum(r.get("impressions", 0) * r.get("position", 0) for r in page_rows)
+    page_pos = round(wsum / page_imp, 1)
+else:
+    page_pos = 0.0
 
-# Step 3: Load correction baseline
-correction = {"factor_impressions": 1.0, "factor_position": 1.0, "last_calibrated": "never"}
-if os.path.exists(BASELINE):
-    with open(BASELINE) as f:
-        correction = json.load(f)
+query_data, query_checksum = gsc_pull(["query"], str(start_date), str(end_date))
+query_rows = query_data.get("rows", [])
+query_count = len(query_rows)
+query_imp = sum(r.get("impressions", 0) for r in query_rows)
 
-# Step 4: Apply correction
-corrected_imp = round(api_imp * correction["factor_impressions"])
-corrected_pos = round(api_pos * correction["factor_position"], 1) if correction["factor_position"] != 1.0 else round(api_pos, 1)
+qp_data, qp_checksum = gsc_pull(["query", "page"], str(start_date), str(end_date))
+qp_rows = qp_data.get("rows", [])
+qp_count = len(qp_rows)
 
-# Step 5: Also pull query-level for comparison
-q_body = json.dumps({
-    "startDate": "2026-05-31",
-    "endDate": "2026-06-07",
-    "dimensions": ["query"],
-    "rowLimit": 250
-}).encode()
-q_req = urllib.request.Request(
-    f"https://searchconsole.googleapis.com/webmasters/v3/sites/{site_enc}/searchAnalytics/query",
-    data=q_body,
-    headers={"Authorization": f"Bearer {access}", "Content-Type": "application/json"}
-)
-q_resp = urllib.request.urlopen(q_req, timeout=15)
-q_data = json.loads(q_resp.read())
-q_imp = sum(r["impressions"] for r in q_data.get("rows", []))
+# Previous 7-day window
+prev_data, prev_checksum = gsc_pull(["page"], str(prev_start), str(prev_end))
+prev_rows = prev_data.get("rows", [])
+prev_imp = sum(r.get("impressions", 0) for r in prev_rows)
 
-# Step 6: Save
-corrected_factor = round(api_imp / max(q_imp, 1), 2) if q_imp > 0 else 0
-result = {
-    "source": "GSC_API_WITH_CORRECTION",
-    "generated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-    "date_range": {"start": "2026-05-31", "end": "2026-06-07"},
+# 28-day window
+t28_end = end_date
+t28_start = t28_end - timedelta(days=27)
+t28_data, t28_checksum = gsc_pull(["page"], str(t28_start), str(t28_end))
+t28_rows = t28_data.get("rows", [])
+t28_imp = sum(r.get("impressions", 0) for r in t28_rows)
+t28_clicks = sum(r.get("clicks", 0) for r in t28_rows)
+pages_with_clicks = [r for r in t28_rows if r.get("clicks", 0) > 0]
+
+# ── Freshness proof ────────────────────────────────────────────────
+# Load previous truth to check staleness
+prev_truth_checksum = None
+if os.path.exists(TRUTH_FILE):
+    with open(TRUTH_FILE) as f:
+        pt = json.load(f)
+        prev_truth_checksum = pt.get("checksum")
+
+freshness = "FRESH"
+if prev_truth_checksum == page_checksum:
+    freshness = "SAME_CHECKSUM_AS_PREVIOUS_PULL"
+if str(start_date) == pt.get("date_range", {}).get("start") and str(end_date) == pt.get("date_range", {}).get("end"):
+    freshness = "STALE_SAME_DATE_RANGE" if freshness == "SAME_CHECKSUM_AS_PREVIOUS_PULL" else freshness
+
+# ── Save canonical truth ───────────────────────────────────────────
+truth = {
+    "status": "LIVE_API_OK" if page_imp > 0 else "GSC_API_UNAVAILABLE",
+    "generated": pull_timestamp.isoformat(),
+    "pulled_at": pull_timestamp.strftime("%Y-%m-%dT%H:%M:%SZ"),
+    "property": SITE,
+    "search_type": "web",
+    "date_range": {
+        "start": str(start_date),
+        "end": str(end_date)
+    },
+    "previous_7d_range": {
+        "start": str(prev_start),
+        "end": str(prev_end)
+    },
+    "dimensions_pulled": ["page", "query", "query+page"],
+    "row_limits": 500,
+    "metrics_7d": {
+        "impressions": page_imp,
+        "clicks": page_clicks,
+        "ctr_pct": round(page_clicks / max(page_imp, 1) * 100, 1),
+        "avg_position": page_pos,
+        "pages_with_impressions": page_count,
+        "query_count": query_count,
+        "query_impressions": query_imp,
+        "query_page_rows": qp_count
+    },
+    "metrics_28d": {
+        "impressions": t28_imp,
+        "clicks": t28_clicks,
+        "pages_with_impressions": len(t28_rows),
+        "pages_with_clicks": len(pages_with_clicks),
+        "clicked_pages": [r["keys"][0] for r in pages_with_clicks]
+    },
+    "previous_7d": {
+        "start": str(prev_start),
+        "end": str(prev_end),
+        "impressions": prev_imp
+    },
+    "change_7d": {
+        "impressions": page_imp - prev_imp,
+        "impressions_pct": round((page_imp - prev_imp) / max(prev_imp, 1) * 100, 1)
+    },
+    "freshness_proof": {
+        "freshness": freshness,
+        "checksum": page_checksum,
+        "previous_checksum": prev_truth_checksum,
+        "date_range_advanced": str(start_date) != (pt.get("date_range", {}).get("start") if os.path.exists(TRUTH_FILE) else ""),
+        "cache_used": False,
+        "source_file": TRUTH_FILE
+    },
+    "manual_ui_comparison": {
+        "available": True,
+        "last_check": pt.get("manual_ui_comparison", {}).get("last_check", "never") if os.path.exists(TRUTH_FILE) else "never",
+        "note": "FYI ONLY — NOT used in official KPIs"
+    },
+    "data_source_policy": "RAW_GSC_API_ONLY",
+    "correction_factor": "DISABLED — not applied to official metrics per Phase 19.2 normalization"
+}
+
+with open(TRUTH_FILE, "w") as f:
+    json.dump(truth, f, indent=2)
+
+# ── Save corrected output (correction as documentation only) ─────────
+correction_baseline = {"factor_impressions": 1.0, "factor_position": 1.0, "last_calibrated": "never", "source": "disabled"}
+baseline_path = ".optimizer-data/gsc-correction-baseline.json"
+if os.path.exists(baseline_path):
+    with open(baseline_path) as f:
+        correction_baseline = json.load(f)
+
+corrected = {
+    "source": "GSC_API_RAW — CORRECTION DISABLED PER PHASE 19.2",
+    "generated": pull_timestamp.strftime("%Y-%m-%dT%H:%M:%SZ"),
+    "date_range": {"start": str(start_date), "end": str(end_date)},
+    "checksum": page_checksum,
     "api_raw": {
-        "impressions": api_imp,
-        "clicks": api_clicks,
-        "pages_with_impressions": api_pages,
-        "avg_position": round(api_pos, 1),
-        "query_level_impressions": q_imp
+        "impressions": page_imp,
+        "clicks": page_clicks,
+        "pages_with_impressions": page_count,
+        "avg_position": page_pos,
+        "query_level_impressions": query_imp
     },
     "correction": {
-        "factor_impressions": correction["factor_impressions"],
-        "factor_position": correction.get("factor_position", 1.0),
-        "last_calibrated": correction["last_calibrated"],
-        "calibration_source": correction.get("source", "unknown")
+        "factor_impressions": correction_baseline.get("factor_impressions", 1.0),
+        "factor_position": correction_baseline.get("factor_position", 1.0),
+        "last_calibrated": correction_baseline.get("last_calibrated", "never"),
+        "calibration_source": correction_baseline.get("source", "unknown"),
+        "applied_to_official_kpi": False,
+        "note": "Correction factor is DOCUMENTATION ONLY. Not applied to official metrics per Phase 19.2."
     },
-    "corrected_estimate": {
-        "impressions": corrected_imp,
-        "clicks": api_clicks,
-        "avg_position": corrected_pos,
-        "note": f"API underreports ~{round((1-1/correction['factor_impressions'])*100) if correction['factor_impressions'] > 1 else 0}%. Corrected based on last manual GSC UI check on {correction['last_calibrated']}."
-    },
-    "data_quality": {
-        "api_vs_query_ratio": corrected_factor,
-        "expected_undercount_pct": round((1 - 1/correction["factor_impressions"]) * 100) if correction["factor_impressions"] > 1 else 0,
-        "trust_level": "ESTIMATE — API undercounts. Corrected via factor from manual UI check."
+    "corrected_estimate_fyi": {
+        "impressions": round(page_imp * correction_baseline.get("factor_impressions", 1.0)),
+        "clicks": page_clicks,
+        "avg_position": round(page_pos * correction_baseline.get("factor_position", 1.0), 1),
+        "note": "FYI ONLY — NOT official. Correction factor from last manual UI check."
     }
 }
 
-with open(OUTPUT, "w") as f:
-    json.dump(result, f, indent=2)
+with open(CORRECTED_OUTPUT, "w") as f:
+    json.dump(corrected, f, indent=2)
 
-print(f"API raw: {api_imp} imp, {api_clicks} clicks, {api_pages} pages, pos {api_pos:.1f}")
-print(f"Corrected: ~{corrected_imp} imp, pos {corrected_pos}")
-print(f"Correction factor: {correction['factor_impressions']}x (last calibrated: {correction['last_calibrated']})")
-print(f"Saved: {OUTPUT}")
+print(f"GSC Pipeline V2 — {pull_timestamp.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+print(f"Date range: {start_date} to {end_date}")
+print(f"API RAW: {page_imp} imp, {page_clicks} clicks, {page_count} pages, pos {page_pos}")
+print(f"Queries: {query_count} ({query_imp} query-imp)")
+print(f"Freshness: {freshness}")
+print(f"Checksum: {page_checksum}")
+print(f"Files: {TRUTH_FILE}, {CORRECTED_OUTPUT}")

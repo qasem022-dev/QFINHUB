@@ -1,0 +1,114 @@
+{
+  "title": "Tool Template Change Risk Audit \u2014 Jun 10-11, 2026",
+  "generated": "2026-06-11T21:00:06.375300+00:00",
+  "commits_audited": [
+    "f88a235 (Jun 10)",
+    "f5dc2b0 (Jun 11)"
+  ],
+  "file_modified": "src/lib/programmatic-seo/seo-utils.ts",
+  "templates_audited": [
+    {
+      "template": "Mortgage Calculator Tool Variants",
+      "changes": {
+        "jun_10": {
+          "title_change": "Old: '$X Mortgage Calculator 2026 \u2014 Free Monthly Payment Estimate' \u2192 New: '$X Mortgage: Y% Z-Year \u2014 Calculate YOUR Payment'",
+          "meta_change": "None on Jun 10",
+          "commit": "f88a235"
+        },
+        "jun_11": {
+          "meta_change": "Old: 'Free mortgage calculator for a $X home... See your exact monthly payment' \u2192 New: 'What's YOUR monthly payment for a $X home? Get a personalized calculation...'",
+          "commit": "f5dc2b0"
+        }
+      },
+      "urls_affected": "~50+ mortgage tool variants (e.g., /tools/mortgage-900k-30yr-7pct, /tools/mortgage-200k-30yr-6pct)",
+      "thin_duplicate_status": "CONFIRMED_THIN_DUPLICATE",
+      "parent_calculator": "/calculators/mortgage-calculator",
+      "parent_is_stronger": "UNKNOWN \u2014 parent calculator needs audit",
+      "cannibalization_risk": "HIGH",
+      "auditor_recommendation": "ROLLBACK",
+      "technical_guardian_recommendation": "SOFTEN",
+      "final_recommendation": "SOFTEN \u2014 Revert question-based title hooks to descriptive format. Keep meta description improvements for user experience."
+    },
+    {
+      "template": "Loan Calculator Tool Variants",
+      "changes": {
+        "jun_10": {
+          "title_change": "Not changed on Jun 10",
+          "commit": "none"
+        },
+        "jun_11": {
+          "title_change": "Old: '$X Loan: Y% APR Z-Year Loan Calculator 2026 \u2014 Free Monthly Payment Tool' \u2192 New: '$X Loan: Y% APR Z-Year \u2014 What's YOUR Payment?'",
+          "meta_change": "Old: 'Free loan payment calculator...' \u2192 New: 'Find out YOUR exact monthly payment...'",
+          "commit": "f5dc2b0"
+        }
+      },
+      "urls_affected": "~50+ loan tool variants",
+      "thin_duplicate_status": "CONFIRMED_THIN_DUPLICATE",
+      "parent_calculator": "/calculators/loan-calculator",
+      "parent_is_stronger": "UNKNOWN \u2014 parent needs audit",
+      "cannibalization_risk": "HIGH",
+      "auditor_recommendation": "ROLLBACK",
+      "technical_guardian_recommendation": "SOFTEN",
+      "final_recommendation": "SOFTEN \u2014 Revert 'What's YOUR Payment?' to 'Loan Calculator \u2014 Free Monthly Payment Tool'. Keep improved meta description."
+    },
+    {
+      "template": "Investment Return Tool Variants",
+      "changes": {
+        "jun_10": {
+          "title_change": "Old: '$X Investment Return Calculator (Z Year) | ROI & CAGR' \u2192 New: '$X for Z Years: See YOUR Investment Returns | ROI & CAGR'",
+          "commit": "f88a235"
+        },
+        "jun_11": {
+          "meta_change": "Removed final value from meta. Old: '...with a final value of $Y' \u2192 New: 'Calculate YOUR exact investment return... See CAGR, absolute return, annualized performance, and compare against benchmarks'",
+          "commit": "f5dc2b0"
+        }
+      },
+      "urls_affected": "~30+ investment tool variants",
+      "thin_duplicate_status": "CONFIRMED_THIN_DUPLICATE",
+      "parent_calculator": "/calculators/investment-return",
+      "parent_is_stronger": "UNKNOWN \u2014 parent needs audit",
+      "cannibalization_risk": "MEDIUM-HIGH",
+      "auditor_recommendation": "SOFTEN title, KEEP meta",
+      "technical_guardian_recommendation": "KEEP_META_REVERT_TITLE",
+      "final_recommendation": "SELECTIVE \u2014 Revert title to descriptive. KEEP meta (removing final value from snippet is anti-cannibalization \u2014 correct approach)."
+    },
+    {
+      "template": "Compound Interest Tool Variants",
+      "changes": {
+        "jun_10": {
+          "title_change": "Old: '$X Compound Interest Calculator (Y% APY) - Z Year | Growth Projection' \u2192 New: '$X at Y% for Z Years? See YOUR Compound Growth'",
+          "commit": "f88a235"
+        },
+        "jun_11": {
+          "meta_change": "Old: 'Calculate compound interest on $X at Y% APY' \u2192 New: 'How much will $X grow at Y% APY over Z years? Get a personalized compound interest schedule...'",
+          "commit": "f5dc2b0"
+        }
+      },
+      "urls_affected": "~40+ compound tool variants",
+      "thin_duplicate_status": "CONFIRMED_THIN_DUPLICATE \u2014 5 near-winners, worst cannibalization offenders",
+      "parent_calculator": "/calculators/compound-interest-calculator",
+      "parent_is_stronger": "UNKNOWN \u2014 parent needs audit",
+      "cannibalization_risk": "HIGHEST \u2014 5 variants in near-winner list at positions 9.5-22.3",
+      "auditor_recommendation": "ROLLBACK \u2014 Full rollback",
+      "technical_guardian_recommendation": "ROLLBACK",
+      "final_recommendation": "ROLLBACK \u2014 Full rollback to pre-Jun 10 templates. Compound variants have strongest cannibalization evidence."
+    },
+    {
+      "template": "Meta Description Templates (Global)",
+      "changes": {
+        "jun_10": "No meta changes",
+        "jun_11": "All 4 variant types got question-based meta descriptions with Q&A hooks"
+      },
+      "urls_affected": "ALL ~200+ tool/scenario variant pages",
+      "thin_duplicate_status": "Most are thin duplicates",
+      "cannibalization_risk": "HIGH \u2014 Global CTR improvements across all thin variants worsen cannibalization",
+      "auditor_recommendation": "SELECTIVE \u2014 Keep only anti-cannibalization changes (investment-return removing final value). Revert Q&A hooks.",
+      "technical_guardian_recommendation": "SELECTIVE_KEEP",
+      "final_recommendation": "SELECTIVE \u2014 KEEP investment-return meta (anti-cannibalization). REVERT Q&A hooks on mortgage, loan, compound variants."
+    }
+  ],
+  "overall_verdict": "TEMPLATE_CHANGES_INCREASED_CANNIBALIZATION_RISK",
+  "executive_summary": "Both days applied CTR/title/meta improvements to ~150-200+ thin tool variant templates. These make thin variants MORE competitive against parent calculators, worsening Phase 20.1 cannibalization problem.",
+  "action_required": "Rollback/soften tool variant title templates. Keep ONLY the investment-return meta change (removing final value from snippet is genuinely anti-cannibalization).",
+  "rollback_status": "PENDING \u2014 Waiting for Auditor + Technical Guardian agreement"
+}

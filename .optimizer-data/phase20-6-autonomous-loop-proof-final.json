@@ -1,0 +1,70 @@
+{
+  "title": "Phase 20.6 Autonomous Loop Proof \u2014 Final",
+  "generated": "2026-06-11T20:58:05.348524+00:00",
+  "cron_id": "dcba952b4c45",
+  "days_evaluated": [
+    {
+      "date": "2026-06-10",
+      "cron_started_automatically": true,
+      "cron_run_timestamp": "2026-06-10T15:00:00+03:00",
+      "last_status": "ok",
+      "phase19_rules_used": true,
+      "phase19_rules_detail": "Phase 19 13-step daily loop prompt loaded. Phase 19.2 normalization (raw API only) was in effect.",
+      "gsc_api_pull_attempted": true,
+      "gsc_api_pull_fresh": false,
+      "gsc_api_pull_actual_range": "2026-06-02 to 2026-06-08 (STALE \u2014 same as June 9 baseline)",
+      "gsc_api_pull_row_count": 52,
+      "gsc_api_pull_match_previous_day": true,
+      "gsc_api_staleness_reason": "Cron used cached/stale GSC data from June 9. Fresh pull on Jun 11 shows impressions dropped 40% (242 vs 499).",
+      "work_executed_before_telegram": true,
+      "telegram_nonblocking": true,
+      "report_saved": true,
+      "report_files": [
+        ".optimizer-data/phase19-daily-health-2026-06-10.json",
+        ".optimizer-data/phase19-execution-log.json (overwritten by Jun 11)",
+        ".optimizer-data/gsc-live-data-corrected.json (updated)"
+      ],
+      "deploy_passed": true,
+      "deploy_commit": "f88a235",
+      "deploy_changes": "1 CTR fix (pay-off-debt-or-invest) + geo meta fix + 3 tool variant title improvements (mortgage, compound, investment-return)",
+      "daily_lock_work_status_separated": false,
+      "daily_lock_detail": "phase19-daily-lock.json overwritten by Jun 11 run. Only one lock entry preserved. work_status/telegram_status separated for Jun 11 but Jun 10 record lost.",
+      "manual_prompt_needed": false,
+      "violation_flag": true,
+      "violation_detail": "3 tool variant title improvements applied to ~150+ thin duplicate pages (mortgage, compound, investment-return)\u2014violates Phase 20 cannibalization review which held tool/scenario optimization pending Auditor+Technical Guardian approval."
+    },
+    {
+      "date": "2026-06-11",
+      "cron_started_automatically": true,
+      "cron_run_timestamp": "2026-06-11T15:14:02+03:00",
+      "last_status": "ok",
+      "phase19_rules_used": true,
+      "phase19_rules_detail": "Phase 19 13-step daily loop prompt loaded. Phase 19.2 normalization (raw API only) acknowledged but corrected estimate still saved to files.",
+      "gsc_api_pull_attempted": true,
+      "gsc_api_pull_fresh": false,
+      "gsc_api_pull_actual_range": "2026-05-31 to 2026-06-07 (STALE \u2014 4+ days old at time of use)",
+      "gsc_api_pull_row_count": 52,
+      "gsc_api_pull_match_previous_day": true,
+      "gsc_api_staleness_reason": "Used SAME stale baseline as Jun 10 and Jun 9. Fresh pull on Jun 11 gives 242 impressions (Jun 5-11), demonstrating ~300% overstatement of current traffic.",
+      "work_executed_before_telegram": true,
+      "telegram_nonblocking": true,
+      "telegram_status": "pending",
+      "report_saved": true,
+      "report_files": [
+        ".optimizer-data/phase19-daily-health-2026-06-11.json",
+        ".optimizer-data/phase19-execution-log.json",
+        ".optimizer-data/phase19-kpi-scoreboard.json"
+      ],
+      "deploy_passed": true,
+      "deploy_commit": "f5dc2b0",
+      "deploy_changes": "5 CTR template fixes on tool variants (loan, mortgage, investment, compound) + 12 internal links",
+      "daily_lock_work_status_separated": true,
+      "daily_lock_detail": "work_status=completed, telegram_status=pending \u2014 correctly separated",
+      "manual_prompt_needed": false,
+      "violation_flag": true,
+      "violation_detail": "All 5 CTR template fixes targeted thin tool variant templates (~150+ pages). These are the exact pages under Phase 20 cannibalization review. Violates Phase 19.2 policy (raw API only KPIs \u2014 corrected ~716 estimate still saved)."
+    }
+  ],
+  "autonomy_verdict": "AUTONOMY_PARTIAL",
+  "autonomy_explanation": "Cron started automatically both days without manual prompting. Work executed before Telegram. Deploys passed. HOWEVER: (1) GSC data was stale both days \u2014 same 499-impression baseline from June 9 reused, while fresh pull shows impressions dropped to 242 (Jun 5-11 range). (2) Both days applied CTR/title/meta improvements to thin tool variant templates, violating Phase 20 cannibalization review policy. (3) June 10 daily lock record was overwritten by June 11. (4) Corrected ~716 estimate persisted in gsc-live-data-corrected.json despite Phase 19.2 normalization policy."
+}

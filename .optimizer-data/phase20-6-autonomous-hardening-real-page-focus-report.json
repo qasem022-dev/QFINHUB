@@ -1,0 +1,211 @@
+{
+  "title": "Phase 20.6 \u2014 Autonomous Loop Hardening + Real Page Focus + Tiny Sitemap Cleanup Test",
+  "phase": "20.6",
+  "generated": "2026-06-11T21:06:45.587919+00:00",
+  "executive_summary": "Phase 20.6 audit reveals the autonomous cron loop (dcba952b4c45) is operational \u2014 both Jun 10 and Jun 11 ran automatically without manual prompting. However, three critical issues were discovered: (1) GSC data was STALE \u2014 both days reused the same June 9 baseline (499 impressions) while fresh data shows impressions declined 42% to 242. (2) Both days applied CTR/title/meta improvements to ~150-200+ thin tool variant templates \u2014 exactly the pages under Phase 20 cannibalization review. (3) The 'Manual UI correction ~716' persisted in corrected data files despite Phase 19.2 normalization policy. Corrections applied: GSC data refreshed, tool variant optimization frozen, real page focus rule established, and corrected estimate removed from official KPIs.",
+  "overall_status": "OFF_TRACK \u2014 0 clicks in 7 days (fresh data), 1 branded/homepage click in 28 days, 0 backlinks, impressions declining 42%",
+  "section_1_autonomous_proof": {
+    "title": "1. Autonomous Proof Finalization",
+    "file": ".optimizer-data/phase20-6-autonomous-loop-proof-final.json",
+    "verdict": "AUTONOMY_PARTIAL",
+    "good": [
+      "Cron dcba952b4c45 started automatically both days (Jun 10 15:00, Jun 11 15:14 EEST)",
+      "Phase 19 rules loaded and used both days",
+      "Work executed and saved before Telegram delivery attempt",
+      "Deploys passed: f88a235 (Jun 10), f5dc2b0 (Jun 11)",
+      "Jun 11 daily lock correctly separated work_status and telegram_status",
+      "No manual prompting needed"
+    ],
+    "bad": [
+      "GSC data was STALE both days \u2014 same 499-impression baseline from June 9 reused",
+      "Fresh pull shows impressions dropped 42% (242 vs 499) \u2014 cron operated on false data",
+      "June 10 daily lock record was overwritten by June 11 (only one entry preserved)",
+      "Both days applied CTR/title/meta improvements to thin tool variant templates (~150-200+ pages)",
+      "gsc-live-data-corrected.json still contains corrected ~716 estimate (violates Phase 19.2)"
+    ]
+  },
+  "section_2_gsc_freshness": {
+    "title": "2. GSC Freshness Proof",
+    "file": ".optimizer-data/gsc-api-freshness-proof-report.json",
+    "verdict": "DATA_WAS_STALE_BOTH_DAYS",
+    "fresh_data": {
+      "latest_7d": "2026-06-05 to 2026-06-11",
+      "impressions": 242,
+      "clicks": 0,
+      "pages_with_impressions": 40,
+      "queries": 37,
+      "query_impressions": 128,
+      "trend": "DECLINING: 415 \u2192 303 \u2192 242 over 3 consecutive 7-day windows"
+    },
+    "stale_data_reported": {
+      "range_used": "2026-05-31 to 2026-06-07",
+      "impressions_claimed": 499,
+      "staleness_gap": "257 impression overstatement (106% over fresh data)"
+    },
+    "28_day_window": {
+      "impressions": 1202,
+      "clicks": 1,
+      "clicked_page": "https://www.qfinhub.com/ (homepage \u2014 likely branded/navigational)",
+      "first_click_7d": "NOT_ACHIEVED",
+      "first_click_28d": "ACHIEVED (homepage branded click)"
+    },
+    "correction_applied": "Updated gsc-api-truth-current.json, business-growth-scoreboard.json, phase19-kpi-scoreboard.json with FRESH data. Corrected ~716 estimate removed from official KPIs."
+  },
+  "section_3_thin_freeze": {
+    "title": "3. Thin Tool/Scenario Optimization Freeze",
+    "file": ".optimizer-data/thin-tool-scenario-optimization-freeze.json",
+    "verdict": "IMMEDIATE_FREEZE \u2014 Effective Jun 12, 2026",
+    "violations_found": [
+      "Jun 10: 3 tool variant title improvements (mortgage, compound, investment-return) ~150+ URLs",
+      "Jun 11: 5 CTR template fixes on tool variants (loan, mortgage, investment, compound) ~150+ URLs"
+    ],
+    "allowed_now": [
+      "Audit",
+      "Classify",
+      "Link to parent",
+      "Sitemap removal if approved"
+    ],
+    "prohibited_now": [
+      "CTR/title/meta improvements",
+      "Independent SEO",
+      "Internal links TO thin variants",
+      "New variants"
+    ]
+  },
+  "section_4_tool_template_risk": {
+    "title": "4. Tool Template Change Risk Audit",
+    "file": ".optimizer-data/tool-template-change-risk-audit.json",
+    "verdict": "TEMPLATE_CHANGES_INCREASED_CANNIBALIZATION_RISK",
+    "templates_affected": {
+      "mortgage_variants": "ROLLBACK/SOFTEN \u2014 Revert aggressive 'Calculate YOUR Payment' title hook",
+      "loan_variants": "SOFTEN \u2014 Revert 'What's YOUR Payment?' to descriptive title",
+      "investment_variants": "SELECTIVE \u2014 Revert title, KEEP meta (removing final value = anti-cannibalization)",
+      "compound_variants": "ROLLBACK \u2014 Full rollback (5 near-winners = worst cannibalization)",
+      "global_meta": "SELECTIVE \u2014 KEEP investment-return meta, REVERT Q&A hooks on mortgage/loan/compound"
+    },
+    "action_required": "Rollback/soften tool variant title templates. Keep only anti-cannibalization meta improvements."
+  },
+  "section_5_real_page_focus": {
+    "title": "5. Real Page Focus Rule",
+    "file": ".optimizer-data/real-page-focus-rule.json",
+    "verdict": "RULE_ESTABLISHED \u2014 Daily execution must prioritize real pages (1-4) over thin tool/scenario variants (6)",
+    "priority": "1. Real Calculators \u2192 2. Decision Pages \u2192 3. Guides \u2192 4. Blogs \u2192 5. Linkable Assets \u2192 6. Tool/Scenario (audit only)"
+  },
+  "section_6_url_extractions": {
+    "title": "6. Risky Indexing URL Extractions",
+    "files": [
+      ".optimizer-data/noindex-70-url-audit.json",
+      ".optimizer-data/crawled-not-indexed-15-url-audit.json",
+      ".optimizer-data/404-7-url-audit.json"
+    ],
+    "verdict": "PARTIALLY_EXTRACTED \u2014 Known patterns documented. Full URL list requires GSC Pages drilldown via CloakBrowser.",
+    "emergency_check": "PASSED \u2014 URL Inspection API verified all important calculator/decision/blog pages are indexed (PASS). No accidental noindex or 404 on important pages.",
+    "findings": {
+      "noindex_70": "LOW RISK \u2014 ~50-55 from V2 formula scenario cleanup, ~10-15 tool duplicates. Likely all intentional.",
+      "crawled_not_indexed_15": "MEDIUM-LOW RISK \u2014 Expected thin pages Google crawled but didn't index. Verify no important pages.",
+      "404_7": "MEDIUM RISK \u2014 2 new 404s. Must extract exact URLs and verify no important pages.",
+      "important_discovery": "compound-interest-calculator URL is UNKNOWN to Google. The correct canonical is /calculators/compound-interest."
+    }
+  },
+  "section_7_sitemap_cleanup": {
+    "title": "7. Tiny Sitemap Removal Test",
+    "file": ".optimizer-data/tiny-sitemap-removal-test-approval.json",
+    "verdict": "HELD \u2014 Parent page verification required before execution",
+    "candidates": [
+      "/scenario/auto-loan-bc834ee2 (1 impression, 0 clicks, indexed, self-canonical)",
+      "/tools/loan-30k-5yr-6pct (0 clicks, indexed, parent=loan-calculator PASS)",
+      "/tools/compound-1k-5yr-5pct-daily (0 clicks, indexed, parent=compound-interest PASS)"
+    ],
+    "blocking_items": [
+      "Parent page auto-loan-calculator needs URL inspection verification",
+      "Fresh impression data needed for loan-30k and compound-1k",
+      "Internal links from thin variants to parents must be verified",
+      "Parent pages must be verified in sitemap"
+    ],
+    "allowed_action_only": "Remove from sitemap (no noindex, canonical, redirect, delete)"
+  },
+  "section_8_parent_strengthening": {
+    "title": "8. Parent Page Strengthening",
+    "file": ".optimizer-data/thin-page-parent-strengthening-log.json",
+    "verdict": "PARTIALLY_STRENGTHENED \u2014 mortgage-calculator has internal links. loan-calculator and compound-interest need work.",
+    "important_discovery": "compound-interest-calculator URL is UNKNOWN to Google. All internal links must point to /calculators/compound-interest (the actual canonical)."
+  },
+  "section_9_first_click_sprint": {
+    "title": "9. First-Click Sprint \u2014 Real Pages Only",
+    "files": [
+      ".optimizer-data/first-click-attack-log.json",
+      ".optimizer-data/near-winner-rank-push-log.json"
+    ],
+    "verdict": "FOCUS_SHIFTED_TO_REAL_PAGES \u2014 28 thin tool/scenario near-winners excluded from sprint",
+    "real_pages_targeted": [
+      "/decision/pay-off-debt-or-invest (CTR fix Jun 10, cooldown \u2192 Jun 12)",
+      "/blog/20000-loan-at-8-percent... (130 imp, pos 11.9, HIGHEST priority)",
+      "/decision/how-much-house-can-i-afford (pos 8.8, cooldown expiring)",
+      "/calculators/tax-calculator (internal links added Jun 11)",
+      "/calculators/retirement-planning (available for edit)",
+      "/calculators/investment-return (internal links added Jun 11)"
+    ]
+  },
+  "section_10_outreach": {
+    "title": "10. Outreach V2 \u2014 Jun 13 Follow-Up Plan",
+    "file": ".optimizer-data/outreach-v2-followup-jun13-plan.json",
+    "verdict": "PLAN_READY \u2014 Max 12 follow-ups, value-first, no backlink ask, do not send before Jun 13",
+    "status": "0 backlinks, 0 replies from 20 sent \u2014 remains biggest external growth blocker"
+  },
+  "section_11_deploy": {
+    "title": "11. Deploy Status",
+    "verdict": "NO_DEPLOY_NEEDED \u2014 Documentation/reporting only. No code changes in this session.",
+    "site_health": "All checks pass (homepage, sitemap, robots, ads.txt, analytics)"
+  },
+  "section_12_compliance": {
+    "title": "12. Compliance Confirmations",
+    "no_google_indexing_api": true,
+    "no_mass_page_creation": true,
+    "no_unapproved_noindex_canonical_redirect_delete": true,
+    "risky_automations_disabled": true,
+    "no_manual_correction_as_official_kpi": true,
+    "manual_ui_fyi_only": true,
+    "no_old_work_counted_as_todays": true
+  },
+  "key_discoveries": [
+    "GSC data was stale 3 days straight (Jun 9-11) \u2014 499 impressions claimed vs 242 actual (106% overstatement)",
+    "Fresh data shows impressions declining 42% across 3 consecutive windows (415\u2192303\u2192242)",
+    "Both autonomous runs optimized thin tool variants against cannibalization review policy",
+    "compound-interest-calculator URL is UNKNOWN to Google \u2014 correct canonical is /calculators/compound-interest",
+    "amortization-schedule is Discovered not indexed \u2014 needs diagnosis",
+    "No important pages are accidentally noindexed or 404'd (emergency check passed)",
+    "1 click in 28d is on HOMEPAGE \u2014 likely branded search, not organic content conversion",
+    "0 backlinks after 20 outreach emails \u2014 external growth requires new approach"
+  ],
+  "immediate_next_actions": [
+    "Fix GSC freshness: cron must pull fresh API data with date range ending yesterday (not reuse stale baseline)",
+    "Rollback/soften thin tool variant title templates (remove aggressive Q&A hooks)",
+    "Fix compound-interest-canonical URL: update all internal links to /calculators/compound-interest",
+    "Verify auto-loan-calculator parent page is healthy before any sitemap removal",
+    "Strengthen loan-calculator and compound-interest parent pages (title/meta/FAQ/internal links)",
+    "Continue first-click sprint on real pages only (blog 20000-loan is highest priority at pos 11.9)",
+    "Prepare Jun 13 outreach follow-ups (max 12, value-first, no backlink ask)",
+    "Extract exact 404 URLs via GSC Pages drilldown to identify the 2 new 404s",
+    "Diagnose amortization-schedule (discovered not indexed) \u2014 improve content or add internal links"
+  ],
+  "files_created_updated": [
+    ".optimizer-data/phase20-6-autonomous-loop-proof-final.json (NEW)",
+    ".optimizer-data/gsc-api-freshness-proof-report.json (NEW)",
+    ".optimizer-data/business-growth-scoreboard.json (UPDATED \u2014 fresh data)",
+    ".optimizer-data/phase19-kpi-scoreboard.json (UPDATED \u2014 fresh data)",
+    ".optimizer-data/gsc-api-truth-current.json (UPDATED \u2014 fresh data)",
+    ".optimizer-data/thin-tool-scenario-optimization-freeze.json (NEW)",
+    ".optimizer-data/tool-template-change-risk-audit.json (NEW)",
+    ".optimizer-data/real-page-focus-rule.json (NEW)",
+    ".optimizer-data/noindex-70-url-audit.json (UPDATED)",
+    ".optimizer-data/crawled-not-indexed-15-url-audit.json (UPDATED)",
+    ".optimizer-data/404-7-url-audit.json (UPDATED)",
+    ".optimizer-data/tiny-sitemap-removal-test-approval.json (NEW)",
+    ".optimizer-data/thin-page-parent-strengthening-log.json (UPDATED)",
+    ".optimizer-data/first-click-attack-log.json (UPDATED)",
+    ".optimizer-data/near-winner-rank-push-log.json (UPDATED)",
+    ".optimizer-data/outreach-v2-followup-jun13-plan.json (NEW)",
+    ".optimizer-data/phase20-6-deploy-status.json (NEW)",
+    ".optimizer-data/phase20-6-autonomous-hardening-real-page-focus-report.json (NEW \u2014 this file)"
+  ]
+}

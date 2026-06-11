@@ -1,9 +1,33 @@
 {
-  "title": "KPI Status \u2014 Updated",
-  "generated": "2026-06-09T21:39:52.240502Z",
-  "first_click_28d": "ACHIEVED",
-  "first_click_7d": "NOT_ACHIEVED",
-  "ctr_status": "CRITICAL",
-  "backlink_status": "ZERO",
-  "overall": "OFF_TRACK"
+  "title": "KPI Status \u2014 Phase 20.6 Fresh Data Update",
+  "generated": "2026-06-11T20:58:52.775270+00:00",
+  "first_click_28d": "ACHIEVED (1 click on homepage \u2014 branded/navigational, not content conversion)",
+  "first_click_7d": "NOT_ACHIEVED (0 clicks in 7 days)",
+  "gsc_7d_raw_api": {
+    "latest_window": "2026-06-05 to 2026-06-11",
+    "impressions": 242,
+    "clicks": 0,
+    "pages_with_impressions": 40,
+    "avg_position_approx": 33.3,
+    "trend": "DECLINING \u2014 242 from 415 (Jun 3-9) and 303 (Jun 4-10)"
+  },
+  "gsc_28d_raw_api": {
+    "range": "2026-05-15 to 2026-06-11",
+    "impressions": 1202,
+    "clicks": 1,
+    "pages_with_impressions": 124,
+    "pages_with_clicks": 1,
+    "clicked_page": "https://www.qfinhub.com/ (homepage)"
+  },
+  "manual_ui_comparison": {
+    "available": true,
+    "last_check": "2026-06-07 (Qasem)",
+    "ui_impressions": 436,
+    "ui_indexed": 238,
+    "field_status": "FYI ONLY \u2014 NOT in KPI line"
+  },
+  "ctr_status": "CRITICAL \u2014 0 clicks in fresh 7d data",
+  "backlink_status": "ZERO (0 backlinks, 0 outreach replies from 20 sent)",
+  "overall": "OFF_TRACK \u2014 0 clicks in 7 days, impressions declining, 0 backlinks",
+  "staleness_correction": "Previous scoreboard used stale 499-impression baseline from June 9. Fresh data shows 242 impressions (52% lower)."
 }

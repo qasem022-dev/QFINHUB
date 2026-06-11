@@ -1,9 +1,39 @@
 {
-  "title": "KPI Status \u2014 Updated",
-  "generated": "2026-06-09T21:39:52.240502Z",
-  "first_click_28d": "ACHIEVED",
-  "first_click_7d": "NOT_ACHIEVED",
-  "ctr_status": "CRITICAL",
-  "backlink_status": "ZERO",
-  "overall": "OFF_TRACK"
+  "date": "2026-06-11",
+  "generated": "2026-06-11T20:58:52.775270+00:00",
+  "data_freshness": "FRESH_API_PULL \u2014 2026-06-05 to 2026-06-11",
+  "kpi": {
+    "gsc_impressions_api_raw": 242,
+    "gsc_clicks_api_raw": 0,
+    "gsc_ctr_api_raw": 0.0,
+    "gsc_avg_position_approx": 33.3,
+    "pages_with_impressions": 40,
+    "queries": 37,
+    "query_level_impressions": 128,
+    "deployments": 2,
+    "deploy_commits": [
+      "f88a235 (Jun 10)",
+      "f5dc2b0 (Jun 11)"
+    ],
+    "ctr_fixes_cumulative": 16,
+    "internal_links_cumulative": 91,
+    "backlinks": 0,
+    "outreach_sent_total": 20,
+    "outreach_replies": 0
+  },
+  "manual_ui_comparison_fyi": {
+    "available": true,
+    "last_manual_check": "2026-06-07",
+    "ui_impressions": 436,
+    "api_vs_ui_gap": "~44% undercount (242 API vs ~436 UI estimated)",
+    "note": "FYI ONLY \u2014 not used in official KPIs"
+  },
+  "first_click_watch": {
+    "contender": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "impressions": "Check fresh page-level data",
+    "status": "0 clicks in 7-day fresh window"
+  },
+  "status": "OFF_TRACK (0 clicks in 7 days, impressions declining 42% over 3 windows)",
+  "note": "RAW_GSC_API_ONLY is official KPI source per Phase 19.2 normalization.",
+  "stale_data_warning": "Previous scoreboards (Jun 10, Jun 11) used stale 499-impression baseline. This update uses FRESH API pull."
 }

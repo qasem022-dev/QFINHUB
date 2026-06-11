@@ -1,32 +1,14 @@
 {
-  "title": "Internal Authority Engine Log \u2014 Phase 20.2",
-  "generated": "2026-06-09T20:32:37.103487Z",
-  "phase20_2_added": 13,
-  "cumulative_total": 67,
+  "title": "Internal Authority Engine Log — Phase 19 Daily Jun 11",
+  "generated": "2026-06-11T15:12:00+03:00",
+  "phase19_daily_added": 12,
+  "cumulative_total": 79,
   "details": {
-    "mortgage-affordability": [
-      "+1 core-inflation"
-    ],
-    "tax-calculator": [
-      "+1 credit-card-debt"
-    ],
-    "debt-snowball_NEW": [
-      "+2 blogs \u2014 new calculator key"
-    ],
-    "savings-goal_NEW": [
-      "+3 blogs \u2014 new calculator key"
-    ],
-    "refinance-calculator_NEW": [
-      "+3 blogs \u2014 new calculator key"
-    ],
-    "social-security_NEW": [
-      "+3 blogs \u2014 new calculator key"
-    ]
-  },
-  "new_calculator_keys_added": [
-    "debt-snowball",
-    "savings-goal",
-    "refinance-calculator",
-    "social-security"
-  ]
+    "tax-calculator": ["+1 bezos-zero-income-tax (6 total)"],
+    "401k-calculator": ["+2 retirement-cost-2.5M, social-security-cola (7 total)"],
+    "investment-return": ["+2 political-risk, lowes-stock (7 total)"],
+    "budget-planner": ["+2 gas-tax-holiday, florida-insurance (7 total)"],
+    "mortgage-calculator": ["+3 mortgage-rates-june, hungary-rate-cut, new-federal-housing (12 total)"],
+    "mortgage-affordability": ["+2 housing-affordability, mortgage-rates-9m-high (8 total)"]
+  }
 }

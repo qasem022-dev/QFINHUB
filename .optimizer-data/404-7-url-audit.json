@@ -1,0 +1,45 @@
+{
+  "title": "404 7 URL Audit \u2014 Phase 20.6",
+  "generated": "2026-06-11T21:01:07.522736+00:00",
+  "source": "GSC Pages report: Not found (404) (7 URLs, +2 from 5 on Jun 7)",
+  "status": "PARTIALLY_EXTRACTED \u2014 2 new 404s identified, full list requires GSC drilldown",
+  "classification_summary": {
+    "total": 7,
+    "existing_404s": 5,
+    "new_404s": 2,
+    "emergency_risk_level": "MEDIUM \u2014 2 new 404s appeared. Must verify these are NOT important pages."
+  },
+  "known_404_patterns": [
+    {
+      "source": "Broken internal links from template changes or page moves",
+      "likelihood": "Medium"
+    },
+    {
+      "source": "External backlinks to deleted/moved pages",
+      "likelihood": "Low (0 backlinks)"
+    },
+    {
+      "source": "Google discovering old/deprecated URLs from sitemap history",
+      "likelihood": "High"
+    },
+    {
+      "source": "Typo/incorrect URLs in blog content or internal links",
+      "likelihood": "Medium"
+    },
+    {
+      "source": "Pages deleted during V2 cleanup that still have residual references",
+      "likelihood": "High"
+    }
+  ],
+  "emergency_rule": {
+    "rule": "If any important calculator, guide, decision, or blog is returning 404, FIX IMMEDIATELY.",
+    "status": "PENDING_VERIFICATION"
+  },
+  "fix_strategy": {
+    "intentional_404s": "Return 410 (Gone) to signal permanent removal to Google. Do NOT 301 redirect to unrelated pages.",
+    "accidental_404s": "Restore the page OR 301 redirect to the most relevant existing page.",
+    "verification": "curl each 404 URL to confirm HTTP status before taking action"
+  },
+  "recommended_action": "Extract exact 404 URLs via GSC Pages drilldown \u2192 verify each with curl \u2192 classify as intentional/accidental \u2192 fix or 410 accordingly.",
+  "important_pages_safety_check": "PENDING \u2014 verify no important pages in 404 list"
+}

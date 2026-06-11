@@ -1,0 +1,74 @@
+{
+  "title": "Noindex 70 URL Audit \u2014 Phase 20.6",
+  "generated": "2026-06-11T21:01:07.522736+00:00",
+  "source": "GSC Pages report: Excluded by noindex tag (70 URLs, +54 from 16 on Jun 7)",
+  "status": "PARTIALLY_EXTRACTED \u2014 known patterns documented, full URL list requires GSC Pages drilldown",
+  "classification_summary": {
+    "total": 70,
+    "highly_likely_formula_scenario_cleanup": "~50-55 URLs \u2014 V2 formula scenario pruned pages (~2,000 removed, these were noindexed)",
+    "highly_likely_tool_duplicates": "~10-15 URLs \u2014 tool parameter duplicates intentionally noindexed",
+    "unknown_other": "~0-5 URLs \u2014 possible accidental noindex",
+    "emergency_risk_level": "LOW \u2014 most are intentional noindex from V2 cleanup and tool management"
+  },
+  "known_patterns": [
+    {
+      "group": "V2 Formula Scenario Cleanup",
+      "count_estimate": "50-55",
+      "pattern": "Formula scenario pages with parameterized URLs pruned during V2 cleanup (~2,000 removed). These were noindexed en masse.",
+      "examples_likely": [
+        "/scenario/auto-loan-bc834ee2",
+        "/scenario/mortgage-refinance-*",
+        "/scenario/* (hex-suffixed slugs)",
+        "/formula/* (deprecated)"
+      ],
+      "page_type": "scenario",
+      "intentional": true,
+      "emergency": false,
+      "recommended_action": "NO ACTION \u2014 intentional cleanup. Monitor for important pages accidentally included."
+    },
+    {
+      "group": "Tool Duplicate Noindex",
+      "count_estimate": "10-15",
+      "pattern": "Thin tool variant pages intentionally noindexed to reduce cannibalization. May include some formula variants with hex-suffixed slugs.",
+      "examples_likely": [
+        "/tools/compound-*-*-* (formula variants with hex suffixes)",
+        "/tools/mortgage-*-*-* (cannibalization duplicates)"
+      ],
+      "page_type": "tool",
+      "intentional": true,
+      "emergency": false,
+      "recommended_action": "NO ACTION \u2014 intentional cannibalization management. Verify no parent calculators accidentally noindexed."
+    },
+    {
+      "group": "Possible Accidental Noindex",
+      "count_estimate": "0-5",
+      "pattern": "Pages that may have been accidentally noindexed. REQUIRES VERIFICATION.",
+      "page_type": "unknown",
+      "intentional": "UNKNOWN",
+      "emergency": true,
+      "recommended_action": "URGENT \u2014 Verify no important calculator, guide, decision, or blog pages are accidentally noindexed.",
+      "verification_method": "Cross-reference sitemap URLs with known important pages. Use URL Inspection API to spot-check key pages."
+    }
+  ],
+  "important_pages_safety_check": {
+    "status": "PENDING_VERIFICATION",
+    "pages_to_verify": [
+      "/calculators/loan-calculator",
+      "/calculators/mortgage-calculator",
+      "/calculators/compound-interest-calculator",
+      "/calculators/tax-calculator",
+      "/calculators/retirement-planning",
+      "/calculators/investment-return",
+      "/decision/pay-off-debt-or-invest",
+      "/decision/how-much-house-can-i-afford",
+      "/calculators/401k-calculator",
+      "/calculators/amortization-schedule",
+      "/calculators/mortgage-affordability",
+      "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment"
+    ],
+    "verification_method": "Use URL Inspection API to check coverageState for each important page",
+    "rule": "If ANY important page shows 'Excluded by noindex tag', stop and fix IMMEDIATELY"
+  },
+  "full_extraction_method": "Use GSC Pages drilldown via CloakBrowser: navigate to https://search.google.com/search-console/index/drilldown?resource_id=https%3A%2F%2Fwww.qfinhub.com%2F&item_key=CAMY... (noindex item_key needed)",
+  "extraction_status": "AWAITING_CLOAKBROWSER_EXTRACTION"
+}

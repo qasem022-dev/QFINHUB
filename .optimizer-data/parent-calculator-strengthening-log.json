@@ -1,0 +1,80 @@
+{
+  "title": "Parent Calculator Strengthening Log \u2014 Phase 20.7",
+  "generated": "2026-06-11T21:27:44.545846+00:00",
+  "principle": "Strengthen real parent calculators instead of thin variants. Thin variants now include parent CTA in their meta descriptions.",
+  "parents": [
+    {
+      "calculator": "Loan Calculator",
+      "url": "/calculators/loan-calculator",
+      "indexing": "PASS / Submitted and indexed",
+      "thin_children_count": "~50-60",
+      "thin_children_cta_added": "Meta descriptions on thin loan variants now include: 'For your exact numbers, use the full Loan Calculator.'",
+      "strengthening_actions": {
+        "title_meta": "PENDING \u2014 Audit parent title/meta for CTR optimization",
+        "short_answer": "PENDING \u2014 Add schema FAQ/short answer",
+        "faq": "PENDING \u2014 Add FAQ section",
+        "real_example": "PENDING \u2014 Add real-world example",
+        "related_guides": "PENDING \u2014 Link from parent to related guides",
+        "related_decisions": "PENDING \u2014 Link from parent to related decisions",
+        "internal_links_from_indexed": "12 internal links added Jun 11 (tax-calculator, 401k, etc.)",
+        "schema": "PENDING \u2014 Verify schema markup",
+        "gsc_query_fit": "PENDING \u2014 Match parent title to top GSC queries"
+      }
+    },
+    {
+      "calculator": "Mortgage Calculator",
+      "url": "/calculators/mortgage-calculator",
+      "indexing": "PASS / Submitted and indexed",
+      "thin_children_count": "~50-60",
+      "thin_children_cta_added": "Meta descriptions on thin mortgage variants now include: 'For your exact numbers, use the full Mortgage Calculator.'",
+      "strengthening_actions": {
+        "title_meta": "PENDING \u2014 Must have stronger title than thin variants (now softened to 'Example')",
+        "internal_links_from_indexed": "12 internal links added Jun 11 (mortgage rates, housing news)",
+        "needs": "Title audit, FAQ, short answer, schema check"
+      }
+    },
+    {
+      "calculator": "Compound Interest Calculator",
+      "url": "/calculators/compound-interest",
+      "indexing": "PASS / Submitted and indexed",
+      "thin_children_count": "~40-50",
+      "thin_children_cta_added": "Meta descriptions on thin compound variants now include: 'For your exact numbers, use the full Compound Interest Calculator.'",
+      "strengthening_actions": {
+        "canonical_verified": "PASS \u2014 /calculators/compound-interest is the correct canonical. compound-interest-calculator is a 404.",
+        "needs": "Title audit, FAQ, short answer, schema check"
+      }
+    },
+    {
+      "calculator": "Investment Return Calculator",
+      "url": "/calculators/investment-return",
+      "indexing": "PASS / Submitted and indexed",
+      "thin_children_count": "~30-40",
+      "thin_children_cta_added": "Investment meta kept (anti-cannibalization \u2014 final value removed from snippet). Title softened to 'Investment Performance Example'.",
+      "strengthening_actions": {
+        "needs": "Title audit, FAQ, short answer"
+      }
+    },
+    {
+      "calculator": "Tax Calculator",
+      "url": "/calculators/tax-calculator",
+      "indexing": "PASS / Submitted and indexed",
+      "strengthening_actions": {
+        "needs": "Title audit, FAQ, internal links"
+      }
+    },
+    {
+      "calculator": "Retirement Planning Calculator",
+      "url": "/calculators/retirement-planning",
+      "indexing": "PASS / Submitted and indexed",
+      "strengthening_actions": {
+        "needs": "Title audit, FAQ, short answer"
+      }
+    }
+  ],
+  "immediate_actions_completed": [
+    "Thin variant meta descriptions now include parent calculator CTA (loan, mortgage, compound)",
+    "Thin variant titles softened from click-bait to descriptive 'Example' format",
+    "Compound interest canonical URL verified correct"
+  ],
+  "next_actions": "Parent calculator title/meta audit, FAQ sections, short answer additions, schema verification \u2014 safe improvements only. Execute in next daily run after cooldown gates pass."
+}

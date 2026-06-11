@@ -1,0 +1,94 @@
+{
+  "title": "Thin Template Softening Execution Log \u2014 Phase 20.7",
+  "generated": "2026-06-11T21:25:59.143302+00:00",
+  "status": "EXECUTED",
+  "file_modified": "src/lib/programmatic-seo/seo-utils.ts",
+  "principle": "Converted thin tool/scenario templates from 'win this SERP independently' into 'calculation result example + full calculator CTA' format.",
+  "changes": [
+    {
+      "template": "generateMetaTitle \u2014 Mortgage",
+      "line": 253,
+      "before": "parts.push(\"\u2014 Calculate YOUR Payment\");",
+      "after": "parts.push(\"\u2014 Monthly Payment Example\");",
+      "rationale": "Removed aggressive CTA. Thin variant now reads as 'example', not 'personal calculator'."
+    },
+    {
+      "template": "generateMetaTitle \u2014 Loan",
+      "line": 265,
+      "before": "parts.push(\"\u2014 What's YOUR Payment?\");",
+      "after": "parts.push(\"\u2014 Monthly Payment Example\");",
+      "rationale": "Removed Q&A hook. Descriptive example label."
+    },
+    {
+      "template": "generateMetaTitle \u2014 Investment Return",
+      "line": 274,
+      "before": "parts.push(\"See YOUR Investment Returns\");",
+      "after": "parts.push(\"Investment Performance Example\");",
+      "rationale": "Removed 'See YOUR' hook. Descriptive label."
+    },
+    {
+      "template": "generateMetaTitle \u2014 Compound Interest",
+      "lines": "301-303",
+      "before": "if (yrs) parts.push(`for ${yrs} Years?`); parts.push(\"See YOUR Compound Growth\");",
+      "after": "if (yrs) parts.push(`for ${yrs} Years`); parts.push(\"Compound Growth Example\");",
+      "rationale": "Removed '?' question hook and 'See YOUR' hook."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Mortgage",
+      "line": 333,
+      "before": "let desc = `What's YOUR monthly payment for a`;",
+      "after": "let desc = `Monthly payment example for a`;",
+      "rationale": "Removed Q&A hook."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Mortgage (end)",
+      "line": 339,
+      "before": "desc += `? Get a personalized calculation in 30 seconds...`;",
+      "after": "desc += `. Example calculation for a fixed scenario. For your exact numbers, use the full Mortgage Calculator.`;",
+      "rationale": "Removed urgency/claim, added parent calculator CTA."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Loan",
+      "line": 347,
+      "before": "let desc = `Find out YOUR exact monthly payment for a`;",
+      "after": "let desc = `Monthly payment example for a`;",
+      "rationale": "Removed urgency/claim hook."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Loan (end)",
+      "line": 352,
+      "before": "desc += `. See amortization schedule... Instant results \u2014 100% free, no signup.`;",
+      "after": "desc += `. Example payment breakdown for a fixed scenario. For your exact numbers, use the full Loan Calculator.`;",
+      "rationale": "Replaced benefit claims with example framing + parent CTA."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Compound",
+      "line": 394,
+      "before": "let desc = `How much will`;",
+      "after": "let desc = `Compound interest example for`;",
+      "rationale": "Removed Q&A hook."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Compound (end)",
+      "line": 400,
+      "before": "desc += `? See YOUR personalized compound growth projection...`;",
+      "after": "desc += `? Example growth projection for a fixed scenario. For your exact numbers, use the full Compound Interest Calculator.`;",
+      "rationale": "Replaced personalization claim with example framing + parent CTA."
+    },
+    {
+      "template": "generateMetaDescription \u2014 Investment Return",
+      "status": "KEPT",
+      "rationale": "Investment-return meta description (removing final value from snippet) was the ONE anti-cannibalization improvement. KEPT as is. This change reduces zero-click snippet cannibalization by not revealing the answer in the meta."
+    }
+  ],
+  "what_was_not_changed": [
+    "No URL changes",
+    "No noindex added",
+    "No canonical changes",
+    "No page content changes",
+    "No usability removals",
+    "No redirects"
+  ],
+  "estimated_urls_affected": "~150-200 thin tool variants",
+  "verification": "Titles now use descriptive 'Example' language. Meta descriptions point users to parent calculators for custom calculations."
+}

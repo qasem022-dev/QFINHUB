@@ -1,0 +1,58 @@
+{
+  "title": "GSC Stale Data Guardrail \u2014 Phase 20.7",
+  "generated": "2026-06-11T21:19:04.763555+00:00",
+  "effective": "2026-06-12T00:00:00+03:00",
+  "principle": "If GSC data is stale, the daily run MUST NOT execute SEO changes. Block, report, do not deploy.",
+  "staleness_checks": [
+    {
+      "check": "same_date_range",
+      "description": "Date range (startDate, endDate) is identical to the previous production day's pull",
+      "action_if_fail": "BLOCK \u2014 report STALE_SAME_DATE_RANGE"
+    },
+    {
+      "check": "same_checksum",
+      "description": "MD5 checksum of page-level rows matches previous day without documented explanation (e.g., weekend/holiday with genuinely no change)",
+      "action_if_fail": "BLOCK \u2014 report STALE_SAME_CHECKSUM"
+    },
+    {
+      "check": "missing_pull_timestamp",
+      "description": "pulled_at field is missing or empty",
+      "action_if_fail": "BLOCK \u2014 report STALE_MISSING_TIMESTAMP"
+    },
+    {
+      "check": "cache_used_true",
+      "description": "cache_used field is true or truth file source is not from a fresh API call",
+      "action_if_fail": "BLOCK \u2014 report STALE_USED_CACHE"
+    },
+    {
+      "check": "api_response_missing",
+      "description": "gsc-api-truth-current.json does not exist or was created >24 hours ago",
+      "action_if_fail": "BLOCK \u2014 report STALE_MISSING_FILE"
+    },
+    {
+      "check": "zero_rows_without_error",
+      "description": "row count is 0 but status is not GSC_API_UNAVAILABLE",
+      "action_if_fail": "BLOCK \u2014 report STALE_ZERO_ROWS"
+    },
+    {
+      "check": "date_range_not_advanced",
+      "description": "startDate has not advanced vs previous production day (should advance by ~1 day per day, accounting for GSC delay)",
+      "action_if_fail": "BLOCK \u2014 report STALE_DATE_NOT_ADVANCED"
+    }
+  ],
+  "block_actions": {
+    "no_seo_changes": true,
+    "no_deploy": true,
+    "create_emergency_report": true,
+    "report_file": ".optimizer-data/gsc-stale-emergency-{date}.json",
+    "notify_telegram": true,
+    "mark_work_status": "blocked_gsc_stale",
+    "do_not_proceed_to_phase19_steps": true
+  },
+  "exception_process": {
+    "weekend_holiday": "If date range and checksum are identical because GSC has no new data on weekends/holidays, this is ALLOWED but must be documented with explanation.",
+    "documentation_required": "Explain WHY data hasn't changed (e.g., 'Saturday \u2014 GSC does not update on weekends').",
+    "max_consecutive_stale_days_with_explanation": 2
+  },
+  "integration": "This guardrail runs as STEP 0 in Phase 19 daily loop, BEFORE any SEO action."
+}

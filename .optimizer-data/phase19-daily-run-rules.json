@@ -1,0 +1,71 @@
+{
+  "title": "Phase 19 Daily Run Rules V2 \u2014 Safety-Gated",
+  "version": "2.0",
+  "generated": "2026-06-11T21:19:04.763555+00:00",
+  "effective": "2026-06-12T00:00:00+03:00",
+  "principle": "No SEO action happens until all safety gates pass. GSC data freshness is the first and most critical gate.",
+  "safety_gates": [
+    {
+      "step": 0,
+      "gate": "GSC_FRESHNESS",
+      "check": "Run scripts/gsc-daily-pipeline.py (V2, dynamic dates). Verify freshness != STALE_*.",
+      "reference": ".optimizer-data/gsc-stale-data-guardrail.json",
+      "block_if_fail": true,
+      "block_action": "Save emergency report. Mark work_status=blocked_gsc_stale. Do not proceed."
+    },
+    {
+      "step": 1,
+      "gate": "STALE_GUARDRAIL",
+      "check": "Run all 7 staleness checks. All must PASS.",
+      "reference": ".optimizer-data/gsc-stale-data-guardrail.json",
+      "block_if_fail": true,
+      "block_action": "No SEO changes. No deploy. Create blocker report."
+    },
+    {
+      "step": 2,
+      "gate": "REAL_PAGE_FOCUS",
+      "check": "Verify real-page-focus-rule.json is loaded. Confirm today's targets are priorities 1-4 (real pages).",
+      "reference": ".optimizer-data/real-page-focus-rule.json",
+      "block_if_fail": true,
+      "block_action": "Redirect all actions to real pages only."
+    },
+    {
+      "step": 3,
+      "gate": "THIN_TOOL_FREEZE",
+      "check": "Verify thin-tool-scenario-optimization-freeze.json is loaded. Confirm NO tool/scenario variant improvements planned.",
+      "reference": ".optimizer-data/thin-tool-scenario-optimization-freeze.json",
+      "block_if_fail": true,
+      "block_action": "Remove any tool/scenario variant optimization from today's queue."
+    },
+    {
+      "step": 4,
+      "gate": "COOLDOWN_CHECK",
+      "check": "Verify target pages are not in cooldown (48h since last edit).",
+      "reference": ".optimizer-data/first-click-attack-log.json",
+      "block_if_fail": true,
+      "block_action": "Skip pages in cooldown. Target next eligible real page."
+    }
+  ],
+  "post_gate_workflow": [
+    "Identify real pages (priorities 1-4) with highest click potential",
+    "Select up to 5 CTR fixes (real pages only)",
+    "Select up to 10 internal links (pointing TO parent calculators/guides/decisions)",
+    "Select up to 3 position-boost edits (real pages only)",
+    "Audit thin tool/scenario pages (audit only \u2014 no SEO improvements)",
+    "Check outreach pipeline (no sending unless scheduled)",
+    "Save all work to .optimizer-data/ files",
+    "Deploy if changes made",
+    "Send Telegram report (non-blocking, last step)"
+  ],
+  "prohibited_always": [
+    "CTR/title/meta improvements on /tools/ or /scenario/ variant pages",
+    "Internal links pointing TO thin tool/scenario variants",
+    "Using cached GSC data as live",
+    "Using corrected/multiplied GSC KPIs as official",
+    "Creating new tool/scenario variants",
+    "Noindex/canonical/redirect/delete without Auditor + Technical Guardian approval",
+    "Bulk sitemap changes",
+    "Google Indexing API (disabled for normal pages)",
+    "Mass page creation"
+  ]
+}

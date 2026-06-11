@@ -250,7 +250,7 @@ export function generateMetaTitle(
       parts.push("Mortgage:");
       if (rate) parts.push(`${rate}%`);
       if (term) parts.push(`${term}-Year`);
-      parts.push("— Calculate YOUR Payment");
+      parts.push("— Monthly Payment Example");
       return parts.filter(Boolean).join(" ");
     }
     case "loan-calculator":
@@ -262,7 +262,7 @@ export function generateMetaTitle(
       parts.push("Loan:");
       if (rate) parts.push(`${rate}% APR`);
       if (term) parts.push(`${term}-Year`);
-      parts.push("— What's YOUR Payment?");
+      parts.push("— Monthly Payment Example");
       return parts.filter(Boolean).join(" ");
     }
     case "investment-return":
@@ -271,7 +271,7 @@ export function generateMetaTitle(
       const yrs = params.timeValue;
       if (inv) parts.push(`$${formatAmountWithCommas(inv)}`);
       if (yrs) parts.push(`for ${yrs} Years:`);
-      parts.push("See YOUR Investment Returns");
+      parts.push("Investment Performance Example");
       return parts.filter(Boolean).join(" ") + " | ROI & CAGR";
     }
     case "retirement-planning":
@@ -299,8 +299,8 @@ export function generateMetaTitle(
       const rate = params.rate;
       if (p) parts.push(`$${formatAmountWithCommas(p)}`);
       if (rate) parts.push(`at ${rate}%`);
-      if (yrs) parts.push(`for ${yrs} Years?`);
-      parts.push("See YOUR Compound Growth");
+      if (yrs) parts.push(`for ${yrs} Years`);
+      parts.push("Compound Growth Example");
       return parts.filter(Boolean).join(" ");
     }
     default:
@@ -330,13 +330,13 @@ export function generateMetaDescription(
       const term = params.term;
       const rate = params.rate;
       const dp = params.downPct;
-      let desc = `What's YOUR monthly payment for a`;
+      let desc = `Monthly payment example for a`;
       if (hp) desc += ` $${formatAmountWithCommas(hp)}`;
       desc += ` home`;
       if (dp) desc += ` with ${dp}% down`;
       if (rate) desc += ` at ${rate}% interest`;
       if (term) desc += ` over ${term} years`;
-      desc += `? Get a personalized calculation in 30 seconds. Includes amortization, taxes, and insurance. No signup required.`;
+      desc += `. Example calculation for a fixed scenario. For your exact numbers, use the full Mortgage Calculator.`;
       return desc;
     }
     case "loan-calculator":
@@ -344,12 +344,12 @@ export function generateMetaDescription(
       const la = params.loanAmount;
       const term = params.term;
       const rate = params.rate;
-      let desc = `Find out YOUR exact monthly payment for a`;
+      let desc = `Monthly payment example for a`;
       if (la) desc += ` $${formatAmountWithCommas(la)}`;
       desc += ` loan`;
       if (rate) desc += ` at ${rate}% APR`;
       if (term) desc += ` over ${term} years`;
-      desc += `. See amortization schedule, total interest, and compare different terms. Instant results — 100% free, no signup.`;
+      desc += `. Example payment breakdown for a fixed scenario. For your exact numbers, use the full Loan Calculator.`;
       return desc;
     }
     case "investment-return":
@@ -391,13 +391,13 @@ export function generateMetaDescription(
       const rate = params.rate;
       const yrs = params.years;
       const add = params.monthlyAdd;
-      let desc = `How much will`;
+      let desc = `Compound interest example for`;
       if (p) desc += ` $${formatAmountWithCommas(p)}`;
       desc += ` grow`;
       if (rate) desc += ` at ${rate}% APY`;
       if (yrs) desc += ` over ${yrs} years`;
       if (add) desc += ` with $${formatAmountWithCommas(add)} monthly contributions`;
-      desc += `? See YOUR personalized compound growth projection with year-by-year breakdown. Instant results — 100% free.`;
+      desc += `? Example growth projection for a fixed scenario. For your exact numbers, use the full Compound Interest Calculator.`;
       return desc;
     }
     default:

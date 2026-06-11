@@ -1,0 +1,91 @@
+{
+  "title": "Real Page Focus Rule \u2014 Phase 20.6",
+  "effective": "2026-06-12T00:00:00+03:00",
+  "generated": "2026-06-11T21:00:06.375300+00:00",
+  "principle": "Phase 19/20 daily execution MUST prioritize real content pages over thin tool/scenario parameterized variants.",
+  "priority_order": {
+    "1_real_calculators": {
+      "type": "Real Calculators",
+      "examples": [
+        "/calculators/loan-calculator",
+        "/calculators/mortgage-calculator",
+        "/calculators/compound-interest-calculator",
+        "/calculators/tax-calculator"
+      ],
+      "allowed": [
+        "CTR fixes",
+        "title/meta",
+        "internal links TO these",
+        "schema",
+        "FAQ",
+        "short answer"
+      ]
+    },
+    "2_real_decisions": {
+      "type": "Real Decision Pages",
+      "examples": [
+        "/decision/pay-off-debt-or-invest",
+        "/decision/how-much-house-can-i-afford"
+      ],
+      "allowed": [
+        "CTR fixes",
+        "title/meta",
+        "internal links TO these"
+      ]
+    },
+    "3_real_guides": {
+      "type": "Real Guides",
+      "allowed": [
+        "CTR fixes",
+        "internal links TO these"
+      ]
+    },
+    "4_real_blogs": {
+      "type": "Real Blogs With Impressions",
+      "examples": [
+        "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment"
+      ],
+      "allowed": [
+        "CTR fixes",
+        "internal links TO these"
+      ]
+    },
+    "5_linkable_assets": {
+      "type": "Linkable Asset Pages",
+      "examples": [
+        "/widgets/mortgage-affordability"
+      ],
+      "allowed": [
+        "Improve for sharing",
+        "outreach promotion"
+      ]
+    },
+    "6_tool_scenario": {
+      "type": "Tool/Scenario Pages \u2014 LAST PRIORITY",
+      "allowed": [
+        "Audit",
+        "Classify",
+        "Link to parent",
+        "Sitemap removal if approved"
+      ],
+      "prohibited": [
+        "CTR/title/meta improvements",
+        "Independent SEO",
+        "Internal links TO these",
+        "New variants"
+      ]
+    }
+  },
+  "daily_execution_rules": {
+    "first_click_attacks": "Target priorities 1-4 first. Tool/scenario (6) only if no real pages qualify.",
+    "near_winner_rank_pushes": "Target priorities 1-4 first. Parent calculators before thin variants.",
+    "internal_links": "Point to parent calculators/guides/decisions (1-5). NEVER to thin variants (6).",
+    "ctr_fixes": "Apply to real pages (1-4) and parent calculators only. NO broad template CTR fixes on thin variants (6).",
+    "meta_template_changes": "Only modify seo-utils.ts templates for parent calculators. NO click-optimized templates for thin variant generators."
+  },
+  "tool_scenario_governance": {
+    "rule": "Tool/scenario pages are NOT upgraded as standalone SEO pages.",
+    "title_standard": "DESCRIPTIVE only (e.g., 'Mortgage Calculator: $900K, 30-Year, 7%') NOT click-bait (e.g., 'Calculate YOUR Payment!')",
+    "meta_standard": "Describe what the page calculates. No Q&A hooks, urgency, or click-bait."
+  }
+}

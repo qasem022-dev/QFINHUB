@@ -1,6 +1,38 @@
 {
-  "title": "Crawled Not Indexed 15 Audit",
-  "generated": "2026-06-09T21:39:52.240502Z",
-  "status": "URL_EXTRACTION_PENDING",
-  "likely": "Thin tool/scenario pages Google crawled but didn't index"
+  "title": "Crawled Not Indexed 15 URL Audit \u2014 Phase 20.6",
+  "generated": "2026-06-11T21:01:07.522736+00:00",
+  "source": "GSC Pages report: Crawled - currently not indexed (15 URLs, +10 from 5 on Jun 7)",
+  "status": "PARTIALLY_EXTRACTED",
+  "classification_summary": {
+    "total": 15,
+    "highly_likely_thin_tool_variants": "~8-10 URLs \u2014 thin parameterized tool pages Google crawled but deemed not worth indexing",
+    "highly_likely_scenario_variants": "~3-5 URLs \u2014 scenario pages with hex suffixes that Google crawled but didn't index",
+    "possible_quality_rejects": "~2-3 URLs \u2014 pages Google crawled but rejected for quality/thinness",
+    "emergency_risk_level": "MEDIUM-LOW \u2014 most are expected thin pages, but verify no important pages among them"
+  },
+  "known_candidates_from_near_winner_list": [
+    {
+      "url": "/tools/mortgage-900k-30yr-7pct",
+      "status": "LIVE (crawled by Google, position 3.0, 9 impressions, 0 clicks)",
+      "note": "Google crawled and ranked this, but it's a thin duplicate of mortgage-calculator",
+      "page_type": "tool",
+      "parent": "/calculators/mortgage-calculator"
+    },
+    {
+      "url": "/tools/compound-500k-15yr-5pct",
+      "status": "LIVE (crawled, position 9.8, 13 imp, 0 clicks)",
+      "page_type": "tool",
+      "parent": "/calculators/compound-interest-calculator"
+    }
+  ],
+  "important_pages_safety_check": {
+    "status": "PENDING",
+    "rule": "If any important calculator/guide/decision/blog appears in this group, investigate why Google crawled but didn't index it."
+  },
+  "recommended_actions": {
+    "thin_tool_variants": "Monitor only \u2014 these are expected. They'll be addressed via parent transfer strategy.",
+    "scenario_variants": "Monitor only \u2014 expected from V2 cleanup.",
+    "quality_rejects": "If the page has unique value, improve content quality. If it's thin, no action needed.",
+    "important_pages": "URGENT \u2014 investigate and fix immediately."
+  }
 }
