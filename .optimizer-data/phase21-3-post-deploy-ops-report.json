@@ -1,0 +1,19 @@
+{
+  "title": "Phase 21.3 \u2014 Post-Deploy Ops Report",
+  "generated": "2026-06-11T23:33:36.319707+00:00",
+  "script": "./scripts/post-deploy-ops.sh",
+  "health_checks_passed": [
+    "homepage",
+    "sitemap",
+    "news-sitemap",
+    "robots",
+    "widget",
+    "embed",
+    "decisions",
+    "calculators"
+  ],
+  "all_critical_200": true,
+  "sitemap_submitted": true,
+  "scenario_sitemap_not_submitted": true,
+  "risky_automations_disabled": true
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Phase 21.3 \u2014 GitHub SSH Auth Recovery + Deploy Pending SEO Work",
+  "phase": "21.3",
+  "generated": "2026-06-11T23:33:36.319707+00:00",
+  "executive_summary": "Phase 21.3 resolved the GitHub authentication blocker by switching from HTTPS password auth to SSH key authentication. Ed25519 key generated, added to GitHub by Qasem, remote switched to SSH. 3 commits pushed successfully (Phase 21.1 + 21.2 + 21.3). Vercel deployed. All health checks pass. GSC UI indexing attempted (needs CloakBrowser timing adjustment). Validate Fix still blocked. SEO engine remains in RESTRICTED_EFFECTIVENESS mode.",
+  "overall_status": "OFF_TRACK \u2014 424 imp, 0 clicks, 0 backlinks. But DEPLOYED now.",
+  "ssh_auth_status": {
+    "key_type": "ed25519",
+    "key_added_to_github": true,
+    "auth_test": "Successfully authenticated as qasem022-dev",
+    "remote": "git@github.com:qasem022-dev/QFINHUB.git (SSH)",
+    "secrets_exposed": false,
+    "private_key_printed": false
+  },
+  "push_result": {
+    "status": "SUCCESS",
+    "pushed_commits": [
+      "9b056b9",
+      "cf6749e",
+      "766034a"
+    ],
+    "files_changed": "~40 files across 3 phases"
+  },
+  "deploy": {
+    "status": "DEPLOYED",
+    "health_checks": "All 200",
+    "vercel_auto_deploy": "Confirmed"
+  },
+  "gsc_indexing": {
+    "attempted": 7,
+    "requested": 0,
+    "note": "CloakBrowser timing issue \u2014 need 8-10s wait after URL inspection before button appears"
+  },
+  "validate_fix": "DO_NOT_VALIDATE_YET (7/526 = 1.3%)",
+  "compliance": {
+    "no_secrets_exposed": true,
+    "no_google_indexing_api": true,
+    "no_mass_pages": true,
+    "risky_automations_disabled": true,
+    "no_thin_tool_seo": true,
+    "engine_restricted": true,
+    "ssh_only_auth": true,
+    "no_github_pat_stored": true
+  },
+  "current_gsc": {
+    "impressions_7d": 424,
+    "clicks_7d": 0,
+    "first_content_click": "NOT_ACHIEVED",
+    "backlinks": 0
+  },
+  "files_created_updated": [
+    ".optimizer-data/github-ssh-auth-recovery-report.json (NEW)",
+    ".optimizer-data/phase21-3-vercel-deploy-verification.json (NEW)",
+    ".optimizer-data/phase21-3-post-deploy-ops-report.json (NEW)",
+    ".optimizer-data/gsc-ui-indexing-proof-ledger.json (UPDATED)",
+    ".optimizer-data/discovered-validate-fix-decision-report.json (UPDATED)",
+    ".optimizer-data/phase21-3-github-auth-deploy-indexing-report.json (NEW \u2014 this file)"
+  ]
+}
