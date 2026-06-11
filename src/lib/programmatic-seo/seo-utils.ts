@@ -259,10 +259,11 @@ export function generateMetaTitle(
       const term = params.term;
       const rate = params.rate;
       if (la) parts.push(`$${formatAmountWithCommas(la)}`);
-      if (term) parts.push(`${term}-Year`);
+      parts.push("Loan:");
       if (rate) parts.push(`${rate}% APR`);
-      parts.push("Loan Calculator 2026");
-      return parts.filter(Boolean).join(" ") + " — Free Monthly Payment Tool";
+      if (term) parts.push(`${term}-Year`);
+      parts.push("— What's YOUR Payment?");
+      return parts.filter(Boolean).join(" ");
     }
     case "investment-return":
     case "Investment Return": {
@@ -329,13 +330,13 @@ export function generateMetaDescription(
       const term = params.term;
       const rate = params.rate;
       const dp = params.downPct;
-      let desc = `Free mortgage calculator for a`;
+      let desc = `What's YOUR monthly payment for a`;
       if (hp) desc += ` $${formatAmountWithCommas(hp)}`;
       desc += ` home`;
       if (dp) desc += ` with ${dp}% down`;
       if (rate) desc += ` at ${rate}% interest`;
       if (term) desc += ` over ${term} years`;
-      desc += `. See your exact monthly payment, amortization schedule, and total interest. Instant results — no email, no signup.`;
+      desc += `? Get a personalized calculation in 30 seconds. Includes amortization, taxes, and insurance. No signup required.`;
       return desc;
     }
     case "loan-calculator":
@@ -343,25 +344,23 @@ export function generateMetaDescription(
       const la = params.loanAmount;
       const term = params.term;
       const rate = params.rate;
-      let desc = `Free loan payment calculator for a`;
+      let desc = `Find out YOUR exact monthly payment for a`;
       if (la) desc += ` $${formatAmountWithCommas(la)}`;
       desc += ` loan`;
       if (rate) desc += ` at ${rate}% APR`;
       if (term) desc += ` over ${term} years`;
-      desc += `. See your exact monthly payment, total interest, and amortization schedule. Instant results — 100% free, no signup.`;
+      desc += `. See amortization schedule, total interest, and compare different terms. Instant results — 100% free, no signup.`;
       return desc;
     }
     case "investment-return":
     case "Investment Return": {
       const inv = params.initial;
-      const finalVal = params.finalVal;
       const yrs = params.timeValue;
-      let desc = `Calculate the total return on a`;
+      let desc = `Calculate YOUR exact investment return for a`;
       if (inv) desc += ` $${formatAmountWithCommas(inv)}`;
       desc += ` investment`;
       if (yrs) desc += ` over ${yrs} years`;
-      if (finalVal) desc += ` with a final value of $${formatAmountWithCommas(finalVal)}`;
-      desc += `. See CAGR, absolute return, and annualized performance. Free investment return calculator.`;
+      desc += `. See CAGR, absolute return, annualized performance, and compare against benchmarks. Free investment return calculator — instant results.`;
       return desc;
     }
     case "retirement-planning":
@@ -392,12 +391,13 @@ export function generateMetaDescription(
       const rate = params.rate;
       const yrs = params.years;
       const add = params.monthlyAdd;
-      let desc = `Calculate compound interest on`;
+      let desc = `How much will`;
       if (p) desc += ` $${formatAmountWithCommas(p)}`;
-      desc += ` at ${rate || "a fixed"}% APY`;
+      desc += ` grow`;
+      if (rate) desc += ` at ${rate}% APY`;
       if (yrs) desc += ` over ${yrs} years`;
       if (add) desc += ` with $${formatAmountWithCommas(add)} monthly contributions`;
-      desc += `. See the power of compound growth with detailed year-by-year projections.`;
+      desc += `? See YOUR personalized compound growth projection with year-by-year breakdown. Instant results — 100% free.`;
       return desc;
     }
     default:

@@ -15,6 +15,9 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
     { slug: "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings", title: "Core Inflation at 3.3%: What It Means for Mortgage and Savings" },
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
+    { slug: "mortgage-rates-june-2026-current-rates-home-affordability-calculator", title: "Mortgage Rates June 2026 — Current Rates & Home Affordability Calculator" },
+    { slug: "hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a", title: "Hungary Holds Rate at 6.5% — Will a June Cut Lower Your Mortgage Payment?" },
+    { slug: "new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget", title: "New Federal Housing Funding: What It Means for Your Mortgage and Rental Budget" },
   ],
   "mortgage-affordability": [
     { slug: "how-much-mortgage-afford-100k-salary", title: "How Much Mortgage Can I Afford on a $100k Salary?" },
@@ -23,6 +26,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
     { slug: "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", title: "ECB Rate Hike 2026: What It Means for YOUR Mortgage" },
     { slug: "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings", title: "Core Inflation at 3.3%: What It Means for Mortgage and Savings" },
+    { slug: "housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc", title: "Housing Affordability Breakthrough: How New Policies Could Make Homeownership Accessible" },
+    { slug: "mortgage-rates-hit-9-month-high-how-to-protect-your-home-buying-power", title: "Mortgage Rates Hit 9-Month High: How to Protect Your Home Buying Power" },
   ],
   "compound-interest": [
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
@@ -74,6 +79,7 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "capital-gains-tax-explained-rates-and-strategies", title: "Capital Gains Tax Explained: Rates and Strategies for 2026" },
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+    { slug: "jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for", title: "Bezos on Zero Federal Income Tax: How It Affects Your Mortgage, Savings & Loans" },
   ],
   "401k-calculator": [
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
@@ -81,6 +87,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
     { slug: "how-inflation-affects-your-savings-and-investments", title: "How Inflation Affects Your Savings and Investments" },
     { slug: "retire-at-45-with-1-million", title: "Retire at 45 With $1 Million?" },
+    { slug: "retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net", title: "Retirement Could Cost $2.5M by 2043 — Is Your Home Your Safety Net?" },
+    { slug: "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now", title: "2027 Social Security COLA Forecast Jumps to 3.9%" },
   ],
   "investment-return": [
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
@@ -88,6 +96,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
     { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
     { slug: "how-inflation-affects-your-savings-and-investments", title: "How Inflation Affects Your Savings and Investments" },
+    { slug: "investing-resurgent-political-risk-derails-emerging-market-rallies", title: "Political Risk Derails Emerging Market Rallies: Protect Your Investments" },
+    { slug: "investing-in-lowe-s-stock-a-comprehensive-guide-for-2025", title: "Investing in Lowe's Stock: A Comprehensive Guide for 2025" },
   ],
   "budget-planner": [
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
@@ -95,6 +105,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
     { slug: "rent-vs-buy-which-is-better", title: "Rent vs Buy: Which Is Better for Your Financial Situation?" },
     { slug: "debt-snowball-vs-debt-avalanche", title: "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?" },
+    { slug: "trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget", title: "Trump Gas Tax Holiday: How Lower Fuel Costs Impact Your Mortgage and Budget" },
+    { slug: "florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to", title: "Florida Insurance Crisis: Smart Financial Tools to Protect Your Budget" },
   ],
   "amortization-schedule": [
     { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment" },

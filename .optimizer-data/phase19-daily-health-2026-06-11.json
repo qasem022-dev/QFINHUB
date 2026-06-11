@@ -1,0 +1,9 @@
+{
+  "date": "2026-06-11",
+  "checks": {
+    "homepage": {"url": "https://www.qfinhub.com", "status": 200, "ok": true},
+    "sitemap": {"url": "https://www.qfinhub.com/sitemap.xml", "status": 200, "ok": true},
+    "robots": {"url": "https://www.qfinhub.com/robots.txt", "status": 200, "ok": true}
+  },
+  "all_passing": true
+}
