@@ -1,7 +1,7 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-06-11T21:18:27.183020+00:00",
-  "pulled_at": "2026-06-11T21:18:27Z",
+  "generated": "2026-06-11T22:02:39.080042+00:00",
+  "pulled_at": "2026-06-11T22:02:39Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "date_range": {
@@ -50,7 +50,7 @@
     "freshness": "FRESH",
     "checksum": "dfd0d4d55880",
     "previous_checksum": null,
-    "date_range_advanced": true,
+    "date_range_advanced": false,
     "cache_used": false,
     "source_file": ".optimizer-data/gsc-api-truth-current.json"
   },

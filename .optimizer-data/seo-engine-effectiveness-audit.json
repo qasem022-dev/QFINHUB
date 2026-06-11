@@ -1,0 +1,88 @@
+{
+  "title": "SEO Engine Effectiveness Audit \u2014 Phase 21",
+  "generated": "2026-06-11T22:12:30.437410+00:00",
+  "period": "2026-06-04 to 2026-06-11 (7 days)",
+  "verdict": "ENGINE_IS_ACTIVE_BUT_NOT_YET_EFFECTIVE",
+  "summary": "In 7 days, the autonomous SEO engine executed 3 deployments with measurable changes (CTR fixes, internal links, template changes). However, 0 clicks resulted, impressions declined from peak, and the single 28-day click was a branded homepage search. The engine was active but its actions did not yet produce measurable ranking/click improvements.",
+  "kpi_at_end_of_period": {
+    "impressions_7d": 424,
+    "impressions_trend": "+32.1% WoW (but still down from 499 peak Jun 2-8 window)",
+    "clicks_7d": 0,
+    "clicks_28d": 1,
+    "first_content_click": "NOT_ACHIEVED",
+    "backlinks": 0,
+    "indexed": "252 (stable)"
+  },
+  "actions_audited": [
+    {
+      "date": "2026-06-09",
+      "commit": "cd0fa8e / 9ed845a",
+      "action_type": "CTR fixes + internal links",
+      "urls_changed": [
+        "/decision/how-much-house-can-i-afford (title)",
+        "/blog/20000-loan... (title)"
+      ],
+      "expected_kpi": "Improved CTR \u2192 clicks on near-winner pages",
+      "expected_delay": "3-7 days for recrawl",
+      "actual_change": "No clicks yet. Both pages still ranking (pos 8.8, 11.9) but 0 clicks.",
+      "good_neutral_bad": "NEUTRAL \u2014 Titles improved but no click-through yet. Cooldown expiring.",
+      "continue_stop_change": "CONTINUE \u2014 Add internal links and FAQ to these pages."
+    },
+    {
+      "date": "2026-06-10",
+      "commit": "f88a235",
+      "action_type": "Tool variant title improvements + 1 real CTR fix",
+      "urls_changed": [
+        "Mortgage, compound, investment thin tool variant templates (~150 URLs)",
+        "/decision/pay-off-debt-or-invest (CTR fix)"
+      ],
+      "expected_kpi": "Improved CTR on thin variants",
+      "expected_delay": "3-7 days",
+      "actual_change": "No clicks. Thin variant improvements WERE WRONG \u2014 they strengthen cannibalization against parent calculators.",
+      "good_neutral_bad": "BAD \u2014 Optimizing thin variants as independent ranking targets is counterproductive.",
+      "continue_stop_change": "STOP \u2014 Thin variant optimization frozen in Phase 20.7. Rollback applied."
+    },
+    {
+      "date": "2026-06-11",
+      "commit": "f5dc2b0",
+      "action_type": "5 CTR template fixes + 12 internal links",
+      "urls_changed": [
+        "Loan, mortgage, investment, compound thin variant templates (~150 URLs)",
+        "12 internal links to real calculators"
+      ],
+      "expected_kpi": "Better internal authority flow to parent calculators",
+      "expected_delay": "2-4 weeks for internal link authority transfer",
+      "actual_change": "Too early to measure. Internal links are a long-term play.",
+      "good_neutral_bad": "NEUTRAL \u2014 Internal links are good but thin template CTR fixes were bad. Rollback applied.",
+      "continue_stop_change": "CONTINUE internal links. STOP thin variant SEO."
+    },
+    {
+      "date": "2026-06-11 (Phase 20.7)",
+      "commit": "1d88706",
+      "action_type": "Template softening (rollback) + GSC pipeline fix",
+      "urls_changed": [
+        "seo-utils.ts: 10 template changes (reverting click-bait to descriptive)"
+      ],
+      "expected_kpi": "Reduce cannibalization. Parent calculators should strengthen.",
+      "expected_delay": "3-7 days for recrawl of changed pages",
+      "actual_change": "Just deployed. Too early to measure.",
+      "good_neutral_bad": "GOOD \u2014 Corrects previous mistake.",
+      "continue_stop_change": "CONTINUE \u2014 This is the right direction."
+    },
+    {
+      "date": "2026-06-07 to 2026-06-11",
+      "action_type": "Outreach (20 emails sent, phases 16-20)",
+      "expected_kpi": "Backlinks, replies",
+      "expected_delay": "1-3 weeks",
+      "actual_change": "0 replies, 0 backlinks. 20 sent, 0 acknowledged.",
+      "good_neutral_bad": "BAD \u2014 Zero response rate after 20 emails.",
+      "continue_stop_change": "CHANGE \u2014 Jun 13 follow-up with shorter value-first pitch. If still 0 replies, pause outreach entirely."
+    }
+  ],
+  "engine_scorecard": {
+    "activity_level": 5,
+    "correct_direction": 2,
+    "measurable_impact": 0,
+    "overall_grade": "D \u2014 Active but not yet effective. Requires correction before resuming normal execution."
+  }
+}

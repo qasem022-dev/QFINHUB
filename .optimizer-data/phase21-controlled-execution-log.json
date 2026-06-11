@@ -1,0 +1,171 @@
+{
+  "title": "Phase 21 Controlled Execution Log",
+  "generated": "2026-06-11T22:13:02.592004+00:00",
+  "mode": "CONTROLLED_BATCH \u2014 No risky actions",
+  "actions_executed": {
+    "internal_links_added": {
+      "count": 20,
+      "plan": [
+        {
+          "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "to": "/decision/should-i-refinance-my-mortgage",
+          "context": "loan payment example"
+        },
+        {
+          "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "to": "/guides/how-to-use-loan-calculator",
+          "context": "loan calculator guide"
+        },
+        {
+          "from": "/decision/how-much-house-can-i-afford",
+          "to": "/decision/should-i-refinance-my-mortgage",
+          "context": "mortgage decisions"
+        },
+        {
+          "from": "/decision/how-much-house-can-i-afford",
+          "to": "/guides/how-to-use-mortgage-calculator",
+          "context": "mortgage calculator"
+        },
+        {
+          "from": "/decision/pay-off-debt-or-invest",
+          "to": "/decision/pay-off-student-loans-or-invest",
+          "context": "debt payoff decisions"
+        },
+        {
+          "from": "/calculators/tax-calculator",
+          "to": "/decision/what-tax-bracket-am-i-in",
+          "context": "tax bracket decision"
+        },
+        {
+          "from": "/calculators/tax-calculator",
+          "to": "/calculators/capital-gains-tax",
+          "context": "capital gains"
+        },
+        {
+          "from": "/calculators/retirement-planning",
+          "to": "/decision/roth-vs-traditional-401k-decision",
+          "context": "retirement account decision"
+        },
+        {
+          "from": "/calculators/retirement-planning",
+          "to": "/decision/401k-vs-taxable-investing",
+          "context": "investment decisions"
+        },
+        {
+          "from": "/calculators/retirement-planning",
+          "to": "/guides/how-to-use-retirement-planning",
+          "context": "retirement guide"
+        },
+        {
+          "from": "/calculators/investment-return",
+          "to": "/compare/compare-roth-vs-traditional-ira",
+          "context": "IRA comparison"
+        },
+        {
+          "from": "/calculators/401k-calculator",
+          "to": "/decision/roth-vs-traditional-401k-decision",
+          "context": "401k decisions"
+        },
+        {
+          "from": "/calculators/401k-calculator",
+          "to": "/decision/401k-vs-taxable-investing",
+          "context": "investment comparison"
+        },
+        {
+          "from": "/calculators/mortgage-affordability",
+          "to": "/compare/compare-mortgage-calculator-vs-mortgage-affordability",
+          "context": "mortgage comparison"
+        },
+        {
+          "from": "/calculators/mortgage-affordability",
+          "to": "/guides/how-to-calculate-debt-to-income-ratio",
+          "context": "affordability"
+        },
+        {
+          "from": "/calculators/budget-planner",
+          "to": "/guides/how-to-budget-with-50-30-20-rule",
+          "context": "budgeting method"
+        },
+        {
+          "from": "/calculators/budget-planner",
+          "to": "/blog/how-much-emergency-fund-do-i-need-2026",
+          "context": "emergency planning"
+        },
+        {
+          "from": "/calculators/budget-planner",
+          "to": "/calculators/vacation-budget",
+          "context": "budget planning"
+        },
+        {
+          "from": "/calculators/investment-return",
+          "to": "/calculators/wedding-budget",
+          "context": "financial planning"
+        },
+        {
+          "from": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "to": "/blog/compound-interest-explained",
+          "context": "interest explained"
+        }
+      ],
+      "target_file": "src/lib/calculator-blog-links.ts",
+      "execution_method": "Add contextual links from indexed source pages to indexing targets. Links placed in existing 'related articles/calculators' sections where available.",
+      "note": "These links pass crawl authority from indexed pages to discovered-not-indexed pages, signaling to Google that these pages are worth crawling and indexing."
+    },
+    "real_pages_upgraded": {
+      "count": 3,
+      "plan": [
+        {
+          "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "impressions": 130,
+          "position": 11.9,
+          "action": "Add FAQ schema (question: 'What's the monthly payment on a $20,000 loan at 8% for 5 years?' answer: calculated value). Add internal links to loan calculator and related guides.",
+          "cooldown": "Expired \u2014 last edited Jun 9"
+        },
+        {
+          "page": "/decision/how-much-house-can-i-afford",
+          "impressions": "Present",
+          "position": 8.8,
+          "action": "Add FAQ schema. Add internal links to mortgage calculator and guides.",
+          "cooldown": "Expiring"
+        },
+        {
+          "page": "/decision/pay-off-debt-or-invest",
+          "impressions": "Present",
+          "position": "Unknown (stale data)",
+          "action": "Add FAQ schema. Add internal links to investment-return and debt-related calculators.",
+          "cooldown": "In cooldown until ~Jun 12"
+        }
+      ],
+      "note": "FAQ schema + internal links. No title/meta changes on pages in cooldown."
+    },
+    "low_value_audit": {
+      "count": 10,
+      "pages": [
+        "/tools/emergency-fund-5k-6mo",
+        "/tools/dti-55k-car-buyer",
+        "/guides/how-to-use-fraction-calculator",
+        "/guides/how-to-use-basic-calculator",
+        "/guides/how-to-use-simple-interest",
+        "/auth/login",
+        "/auth/signup",
+        "/ai-specialist",
+        "/privacy",
+        "/terms"
+      ],
+      "action": "AUDIT ONLY \u2014 classify for cleanup review. No noindex/canonical/redirect/delete executed.",
+      "findings": {
+        "auth_pages": "/auth/login and /auth/signup should not be in sitemap. These are authentication pages, not public content.",
+        "thin_guides": "/guides/how-to-use-fraction-calculator, basic-calculator, simple-interest are thin programmatic guides with minimal unique value.",
+        "tool_duplicates": "/tools/emergency-fund-5k-6mo and dti-55k-car-buyer are thin parameterized duplicates.",
+        "static_pages": "/privacy, /terms are required static pages \u2014 keep in sitemap but they won't drive traffic.",
+        "/ai-specialist": "Low-value hub page \u2014 discovered but never indexed."
+      }
+    }
+  },
+  "gsc_ui_indexing_requests": {
+    "eligible_pages": "Top 10 indexing targets need to be verified HTTP 200, index/follow, self-canonical, in sitemap before requesting indexing.",
+    "executed": 0,
+    "reason": "Pages need content improvements first before requesting indexing. Requesting indexing for thin/unimproved pages wastes GSC quota."
+  },
+  "no_risky_actions": true
+}

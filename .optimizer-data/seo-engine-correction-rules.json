@@ -1,0 +1,41 @@
+{
+  "title": "SEO Engine Correction Rules \u2014 Phase 21",
+  "generated": "2026-06-11T22:12:30.437410+00:00",
+  "rules": [
+    {
+      "failure": "CTR fixes do not generate clicks after recrawl (7-14 days)",
+      "correction": "Stop title-only fixes. Improve page intent match, above-fold CTA, short answer, and FAQ instead.",
+      "status": "ACTIVE"
+    },
+    {
+      "failure": "Internal links do not move parent calculators up in rankings (14-21 days)",
+      "correction": "Strengthen source pages (add more relevant context around links). Add links from higher-authority indexed pages. Reduce links to thin variants.",
+      "status": "ACTIVE"
+    },
+    {
+      "failure": "Tool/scenario variants rank but parent pages do not",
+      "correction": "FREEZE variant optimization. Strengthen parents with content, internal links, and better titles. Add parent CTA to variant meta descriptions (DONE in Phase 20.7).",
+      "status": "ACTIVE"
+    },
+    {
+      "failure": "Guides remain discovered-not-indexed after 14 days",
+      "correction": "Add stronger unique examples and original content. Add contextual internal links from indexed pages (blogs, calculators).",
+      "status": "ACTIVE"
+    },
+    {
+      "failure": "Blogs get impressions but no clicks",
+      "correction": "Improve title/snippet intent match. Stop writing similar blogs in low-demand topics. Focus on high-search-demand finance topics only.",
+      "status": "ACTIVE"
+    },
+    {
+      "failure": "Outreach gets 0 replies after 32 emails (20 initial + 12 follow-ups)",
+      "correction": "Pause outreach. Rewrite pitch with shorter format and more specific value prop. Target smaller sites and personal finance bloggers only.",
+      "status": "PENDING \u2014 Evaluate after Jun 13 follow-ups"
+    },
+    {
+      "failure": "GSC data is stale 2+ days in a row",
+      "correction": "BLOCK daily run. Fix pipeline. Do not resume until fresh pull succeeds.",
+      "status": "FIXED \u2014 Dynamic pipeline deployed in Phase 20.7"
+    }
+  ]
+}

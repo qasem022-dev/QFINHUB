@@ -1,0 +1,136 @@
+{
+  "title": "Top 10 Indexing Target Fix Plan",
+  "generated": "2026-06-11T22:11:57.056454+00:00",
+  "targets": [
+    {
+      "rank": 1,
+      "score": 110,
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "page_type": "calculator",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 2,
+      "score": 110,
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "page_type": "calculator",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 3,
+      "score": 100,
+      "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "page_type": "decision",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 4,
+      "score": 100,
+      "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "page_type": "decision",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 5,
+      "score": 100,
+      "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "page_type": "decision",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 6,
+      "score": 100,
+      "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "page_type": "decision",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 7,
+      "score": 100,
+      "url": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "page_type": "decision",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 8,
+      "score": 100,
+      "url": "https://www.qfinhub.com/calculators/wedding-budget",
+      "page_type": "calculator",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 9,
+      "score": 100,
+      "url": "https://www.qfinhub.com/calculators/vacation-budget",
+      "page_type": "calculator",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "rank": 10,
+      "score": 100,
+      "url": "https://www.qfinhub.com/calculators/va-loan",
+      "page_type": "calculator",
+      "why_not_indexed": "Discovered but not indexed \u2014 likely thin content, insufficient internal links, or Google deprioritized crawl.",
+      "fixes": [
+        "Verify HTTP 200, index/follow, self-canonical, in sitemap",
+        "Add contextual internal links from indexed pages",
+        "Improve content: unique intro, FAQ, calculator CTA, real example"
+      ],
+      "status": "PENDING"
+    }
+  ]
+}

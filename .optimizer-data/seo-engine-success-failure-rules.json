@@ -1,0 +1,24 @@
+{
+  "title": "SEO Engine Success/Failure Rules \u2014 Phase 21",
+  "generated": "2026-06-11T22:12:30.437410+00:00",
+  "principle": "The engine is judged by measurable results, not activity volume.",
+  "positive_signals": {
+    "impressions_up_real": "Impressions increase on changed real pages (7-14 day window after change)",
+    "position_improves": "Average position improves on changed real pages",
+    "near_winners_move_up": "Pages ranking 8-30 move toward positions 1-7",
+    "pages_get_clicks": "Any page gets an organic click from search",
+    "pages_newly_indexed": "Important discovered-not-indexed pages appear in indexed count",
+    "backlinks_appear": "Backlinks or outreach replies appear",
+    "cannibalization_reduces": "Thin tool/scenario pages lose rankings while parent calculators gain"
+  },
+  "negative_signals": {
+    "impressions_decline": "Changed pages lose impressions after 7-14 days",
+    "position_worsens": "Average position worsens because wrong (thin) pages rank instead of parents",
+    "no_indexing_progress": "No pages get indexed after upgrades are deployed for 7+ days",
+    "ctr_stays_zero": "CTR = 0 after titles/CTR fixes are recrawled on pages with impressions",
+    "engine_activity_without_reason": "Engine keeps changing pages without measurable reason or improvement signal",
+    "thin_variants_as_winners": "Engine optimizes thin variants as if they were primary landing pages"
+  },
+  "measurement_window": "7-14 days after each change. Changes evaluated in weekly batches.",
+  "judgment_rule": "If positive signals > negative signals after 14 days, engine is effective. If equal or negative, engine needs correction."
+}
