@@ -1,0 +1,90 @@
+{
+  "title": "Phase 21.4 \u2014 Indexing Target Eligibility Check",
+  "generated": "2026-06-11T23:49:30.472189+00:00",
+  "total_checked": 7,
+  "http_200": 7,
+  "http_not_200": 0,
+  "eligible": 7,
+  "not_eligible": 0,
+  "targets": [
+    {
+      "full_url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+      "group": "A",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true
+    },
+    {
+      "full_url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+      "group": "A",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true
+    },
+    {
+      "full_url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+      "group": "A",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true
+    },
+    {
+      "full_url": "https://www.qfinhub.com/calculators/simple-interest",
+      "group": "B",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true
+    },
+    {
+      "full_url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+      "group": "B",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true
+    },
+    {
+      "full_url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "group": "B",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true
+    },
+    {
+      "full_url": "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira",
+      "group": "B",
+      "http_status": 200,
+      "robots": "index,follow",
+      "canonical": "self",
+      "sitemap": true,
+      "internal_links_added": true,
+      "changed_live": true,
+      "eligible": true,
+      "note": "Corrected slug \u2014 was /compare/compare-roth-vs-traditional-ira (404). Correct URL from sitemap."
+    }
+  ],
+  "slug_correction": "compare-roth-vs-traditional-ira returns 404. Correct URL is compare-roth-ira-vs-traditional-ira from sitemap."
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Phase 21 Effectiveness Test Registry",
+  "generated": "2026-06-11T23:58:04.573071+00:00",
+  "tests": [
+    {
+      "test": 1,
+      "name": "Group A \u2014 Discovered Guides Indexing",
+      "pages": [
+        "how-to-use-mortgage-calculator",
+        "how-to-use-compound-interest",
+        "how-to-use-retirement-planning"
+      ],
+      "action": "Internal links added from parent calculators. GSC indexing attempted.",
+      "baseline": "All 3: Discovered - currently not indexed, 0 impressions, 0 clicks",
+      "success": ">= 2 of 3 indexed within 21 days",
+      "failure": "0 of 3 indexed after 21 days",
+      "correction": "Improve guide content quality. Add more internal links from higher-authority indexed pages."
+    },
+    {
+      "test": 2,
+      "name": "Group B \u2014 Unknown Pages Discovery",
+      "pages": [
+        "simple-interest",
+        "capital-gains-tax",
+        "compare-30yr-fixed-vs-15yr-fixed",
+        "compare-roth-ira-vs-traditional-ira"
+      ],
+      "action": "Sitemap verified. Internal links added. GSC indexing attempted.",
+      "baseline": "All 4: URL is unknown to Google",
+      "success": ">= 2 of 4 discovered or indexed within 14 days",
+      "failure": "0 of 4 discovered after 14 days",
+      "correction": "Verify sitemap ping. Check robots.txt. Add more internal links."
+    },
+    {
+      "test": 3,
+      "name": "Group C \u2014 Indexed Pages Gaining Impressions",
+      "pages": [
+        "mortgage-calculator",
+        "loan-calculator",
+        "5 decisions",
+        "retirement-withdrawal"
+      ],
+      "action": "Content improvement planned. Internal links documented.",
+      "baseline": "All 8: Indexed but 0 impressions",
+      "success": ">= 2 of 8 get impressions within 28 days",
+      "failure": "0 of 8 get impressions after 28 days",
+      "correction": "Content improvement needed beyond links. Investigate thin variant cannibalization."
+    },
+    {
+      "test": 4,
+      "name": "Internal Authority Transfer",
+      "pages": "All 15 targets + parent calculators",
+      "action": "6 internal links added to calculator-blog-links.ts",
+      "baseline": "Parents indexed but invisible. Thin variants ranking.",
+      "success": ">= 1 parent calculator gains impressions/position improvement within 28 days",
+      "failure": "No improvement after 28 days",
+      "correction": "Source pages may need stronger link context. Increase link count. Improve parent content."
+    }
+  ]
+}

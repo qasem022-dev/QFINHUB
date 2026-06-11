@@ -1,0 +1,12 @@
+{
+  "title": "GSC UI Indexing Script Fix Report \u2014 Phase 21.4",
+  "generated": "2026-06-11T23:58:04.573071+00:00",
+  "root_cause": "GSC persistent profile (google-gsc-v3) has LOST PROPERTY VERIFICATION. The inspect page redirects to /not-verified. URL Inspection is unavailable for unverified properties.",
+  "fix_attempted": [
+    "Updated wait logic: poll up to 45 seconds for 'Request indexing' button",
+    "Debugged URL entry: tried evaluate() native setter and keyboard.type()",
+    "Discovered: session redirects to /not-verified \u2014 property verification expired"
+  ],
+  "conclusion": "GSC UI indexing via CloakBrowser requires Qasem to re-verify the property in a non-headless browser session. The persistent profile has lost verification status.",
+  "alternative": "Pages ARE in sitemap.xml with index/follow. Internal links added. Google will discover them through normal crawl + sitemap. GSC UI indexing request is a speed optimization, not a requirement."
+}
