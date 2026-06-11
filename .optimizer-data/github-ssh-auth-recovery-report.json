@@ -1,0 +1,31 @@
+{
+  "title": "GitHub SSH Auth Recovery \u2014 Phase 21.3",
+  "generated": "2026-06-11T23:24:35.988233+00:00",
+  "status": "AWAITING_QASEM \u2014 Public key generated, needs to be added to GitHub",
+  "steps_completed": {
+    "1_check_existing_keys": "No existing SSH keys found (~/.ssh was empty)",
+    "2_generate_key": {
+      "type": "ed25519",
+      "filename": "~/.ssh/qfinhub_github_ed25519",
+      "comment": "qfinhub-hermes-github",
+      "passphrase": "none (required for unattended cron automation)",
+      "fingerprint": "256 SHA256:MYCjjnzYUzuliUJ1GIGQ9tlLv1yBz7mWUQwJhLmDA9c qfinhub-hermes-github (ED25519)",
+      "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDD0QPJ5JKDYisdun/oT/HSc1YQlV/IuhEShAKhmsj7c qfinhub-hermes-github"
+    },
+    "3_ssh_setup": {
+      "ssh_agent": "started",
+      "key_added": true,
+      "ssh_config": "Host github.com configured with IdentityFile",
+      "known_hosts": "github.com host key added",
+      "test_result": "Permission denied (publickey) \u2014 EXPECTED. Key not yet on GitHub."
+    }
+  },
+  "action_required": {
+    "what": "Add the public key to GitHub SSH keys",
+    "where": "https://github.com/settings/keys \u2192 New SSH Key",
+    "public_key_to_add": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDD0QPJ5JKDYisdun/oT/HSc1YQlV/IuhEShAKhmsj7c qfinhub-hermes-github",
+    "title_suggestion": "QFINHUB Hermes Agent (WSL)"
+  },
+  "secrets_exposed": false,
+  "private_key_printed": false
+}
