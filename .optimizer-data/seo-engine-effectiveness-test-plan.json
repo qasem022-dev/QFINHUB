@@ -1,0 +1,42 @@
+{
+  "title": "SEO Engine Effectiveness Test Plan \u2014 Phase 21.1",
+  "generated": "2026-06-11T22:45:32.225299+00:00",
+  "tests": [
+    {
+      "action": "Indexing target fix (7 pages: guides + unknown-to-Google calculators/comparisons)",
+      "expected_kpi": "At least 3 of 7 pages appear in indexed count or get impressions within 7-21 days",
+      "measurement": "URL Inspection API check + GSC API page-level impressions",
+      "delay_window": "7-21 days",
+      "success_threshold": ">= 3 pages (43%) indexed or with impressions",
+      "failure_threshold": "0 pages indexed after 21 days",
+      "correction_if_fail": "Investigate sitemap, robots, canonical issues. Improve content quality. Add more internal links from higher-authority pages."
+    },
+    {
+      "action": "Internal authority push (40 links across 15 targets)",
+      "expected_kpi": "At least 3 parent/guide pages show improved impressions or position within 14-21 days",
+      "measurement": "GSC API page-level position/impression change",
+      "delay_window": "14-21 days",
+      "success_threshold": ">= 3 pages with measurable improvement",
+      "failure_threshold": "0 pages improved after 21 days",
+      "correction_if_fail": "Links may not be in crawler-visible sections. Strengthen source page context. Use higher-authority source pages."
+    },
+    {
+      "action": "GSC UI indexing requests (7 eligible pages)",
+      "expected_kpi": "At least 3 of 7 pages become indexed or crawled within 3-7 days",
+      "measurement": "URL Inspection API re-check",
+      "delay_window": "3-7 days",
+      "success_threshold": ">= 3 pages indexed",
+      "failure_threshold": "0 pages indexed after 7 days",
+      "correction_if_fail": "Pages may have quality issues. Improve content before re-requesting."
+    },
+    {
+      "action": "Outreach V2 follow-ups (Jun 13, up to 12)",
+      "expected_kpi": "At least 1 reply or backlink from 12 follow-ups (beats old 0/20 rate)",
+      "measurement": "Email reply tracking",
+      "delay_window": "7-14 days",
+      "success_threshold": ">= 1 reply",
+      "failure_threshold": "0 replies (0/32 total)",
+      "correction_if_fail": "Pause outreach. Rewrite pitch entirely. Target smaller sites only."
+    }
+  ]
+}

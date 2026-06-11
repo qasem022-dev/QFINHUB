@@ -1,0 +1,163 @@
+{
+  "title": "Top 15 High-Priority Indexing Targets \u2014 Phase 21.1",
+  "generated": "2026-06-11T22:44:51.257657+00:00",
+  "selection_method": "URL Inspection API verified coverage states. 15 URLs checked: 7 indexed (0 imp), 3 discovered-NI, 4 unknown-to-Google, 1 already indexed.",
+  "targets": [
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+      "path": "/guides/how-to-use-mortgage-calculator",
+      "coverage": "Discovered - currently not indexed",
+      "page_type": "guide",
+      "why": "Mortgage calculator guide \u2014 directly supports the most valuable calculator. Google discovered it but hasn't indexed it. Add internal links from mortgage-calculator to trigger indexing.",
+      "search_demand": "Moderate \u2014 mortgage calculator has impressions",
+      "fix_plan": "Add content: real example, step-by-step. Add internal links from mortgage-calculator, mortgage-affordability, and mortgage blogs.",
+      "score": 95
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+      "path": "/guides/how-to-use-compound-interest",
+      "coverage": "Discovered - currently not indexed",
+      "page_type": "guide",
+      "why": "Compound interest guide \u2014 high-value topic. Discovered but not indexed.",
+      "search_demand": "Moderate",
+      "fix_plan": "Add real compound example. Internal links from compound-interest calculator and investment blogs.",
+      "score": 90
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+      "path": "/guides/how-to-use-retirement-planning",
+      "coverage": "Discovered - currently not indexed",
+      "page_type": "guide",
+      "why": "Retirement planning guide \u2014 evergreen high-value topic.",
+      "search_demand": "Moderate",
+      "fix_plan": "Add retirement scenario example. Internal links from retirement-planning and 401k calculator.",
+      "score": 90
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/simple-interest",
+      "path": "/calculators/simple-interest",
+      "coverage": "URL is unknown to Google",
+      "page_type": "calculator",
+      "why": "Core calculator \u2014 simple interest is a fundamental financial concept. Google doesn't know this page exists.",
+      "search_demand": "Low-medium",
+      "fix_plan": "Verify in sitemap. Add internal links from compound-interest. Add FAQ. Request indexing via GSC UI.",
+      "score": 85
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+      "path": "/calculators/capital-gains-tax",
+      "coverage": "URL is unknown to Google",
+      "page_type": "calculator",
+      "why": "Capital gains tax \u2014 high-value tax topic. Unknown to Google.",
+      "search_demand": "Moderate-high (tax season)",
+      "fix_plan": "Verify in sitemap. Add internal links from tax-calculator. Add FAQ.",
+      "score": 85
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "path": "/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "coverage": "URL is unknown to Google",
+      "page_type": "compare",
+      "why": "Mortgage comparison \u2014 directly supports mortgage-calculator. Unknown to Google.",
+      "search_demand": "Moderate (mortgage shoppers)",
+      "fix_plan": "Verify in sitemap. Internal links from mortgage-calculator and mortgage blogs.",
+      "score": 80
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-roth-vs-traditional-ira",
+      "path": "/compare/compare-roth-vs-traditional-ira",
+      "coverage": "URL is unknown to Google",
+      "page_type": "compare",
+      "why": "IRA comparison \u2014 high-value retirement topic. Unknown to Google.",
+      "search_demand": "Moderate",
+      "fix_plan": "Verify in sitemap. Internal links from retirement-planning and 401k calculator.",
+      "score": 80
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "path": "/calculators/mortgage-calculator",
+      "coverage": "Submitted and indexed",
+      "page_type": "calculator",
+      "why": "MOST IMPORTANT calculator. Indexed but 0 impressions \u2014 severe ranking/content/authority problem. Thin tool variants (mortgage-900k, mortgage-200k) are ranking instead at pos 3.0 and 6.6.",
+      "search_demand": "HIGH",
+      "fix_plan": "Improve content: FAQ, short answer, unique intro. Strengthen internal links. Suppress thin variant rankings via parent CTA strategy (done).",
+      "score": 100
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "path": "/calculators/loan-calculator",
+      "coverage": "Submitted and indexed",
+      "page_type": "calculator",
+      "why": "Core loan calculator. Indexed but 0 impressions. Thin variants (loan-3k, loan-30k) are ranking instead.",
+      "search_demand": "HIGH",
+      "fix_plan": "Same as mortgage \u2014 improve content, FAQ, internal links.",
+      "score": 100
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "path": "/decision/what-tax-bracket-am-i-in",
+      "coverage": "Submitted and indexed",
+      "page_type": "decision",
+      "why": "Tax bracket decision page. Indexed but 0 impressions. High-value tax topic.",
+      "search_demand": "High (tax season)",
+      "fix_plan": "Improve content. Internal links from tax-calculator.",
+      "score": 85
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "path": "/decision/should-i-refinance-my-mortgage",
+      "coverage": "Submitted and indexed",
+      "page_type": "decision",
+      "why": "Mortgage refinance decision. Indexed but 0 impressions.",
+      "search_demand": "Moderate-high",
+      "fix_plan": "Improve content. Internal links from mortgage-calculator.",
+      "score": 80
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "path": "/decision/roth-vs-traditional-401k-decision",
+      "coverage": "Submitted and indexed",
+      "page_type": "decision",
+      "why": "401k decision \u2014 high-value retirement topic. Indexed but no impressions.",
+      "search_demand": "Moderate",
+      "fix_plan": "Internal links from 401k-calculator and retirement-planning.",
+      "score": 80
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "path": "/decision/401k-vs-taxable-investing",
+      "coverage": "Submitted and indexed",
+      "page_type": "decision",
+      "why": "Investment account comparison. Indexed but no impressions.",
+      "search_demand": "Moderate",
+      "fix_plan": "Internal links from investment-return and 401k-calculator.",
+      "score": 80
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "path": "/decision/pay-off-student-loans-or-invest",
+      "coverage": "Submitted and indexed",
+      "page_type": "decision",
+      "why": "Student loans vs investing decision. Unique content.",
+      "search_demand": "Moderate",
+      "fix_plan": "Internal links from investment-return and pay-off-debt-or-invest.",
+      "score": 75
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/retirement-withdrawal",
+      "path": "/calculators/retirement-withdrawal",
+      "coverage": "Submitted and indexed",
+      "page_type": "calculator",
+      "why": "Retirement withdrawal calculator. Indexed but 0 impressions.",
+      "search_demand": "Moderate",
+      "fix_plan": "Internal links from retirement-planning.",
+      "score": 75
+    }
+  ],
+  "category_counts": {
+    "discovered_not_indexed_guides": 3,
+    "unknown_to_google_calculators_comparisons": 4,
+    "indexed_but_zero_impressions": 8,
+    "total": 15
+  }
+}

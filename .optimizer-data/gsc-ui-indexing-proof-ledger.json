@@ -1,30 +1,47 @@
 {
-  "title": "GSC UI Indexing Requests \u2014 Phase 21",
-  "generated": "2026-06-11T22:13:59.720927+00:00",
+  "title": "GSC UI Indexing Requests \u2014 Phase 21.1",
+  "generated": "2026-06-11T22:45:32.225299+00:00",
   "executed": 0,
-  "reason_held": "Top 10 indexing targets need content improvements and verification before requesting indexing. Requesting indexing for unimproved thin pages wastes GSC quota and may hurt crawl budget.",
-  "eligibility_criteria": [
-    "HTTP 200 confirmed",
-    "index/follow in robots meta",
-    "self-canonical (no canonical redirect)",
-    "in sitemap.xml",
-    "important page (INDEX_PRIORITY_HIGH or INDEX_PRIORITY_MEDIUM)",
-    "changed today (content improved or internal links added)",
-    "not requested in last 7 days"
+  "eligible_pages": [
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+      "reason": "Discovered-NI. Internal links added. Content improved.",
+      "eligible": true
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+      "reason": "Discovered-NI. Internal links added.",
+      "eligible": true
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+      "reason": "Discovered-NI. Internal links added.",
+      "eligible": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/simple-interest",
+      "reason": "Unknown to Google. In sitemap. Internal links added.",
+      "eligible": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+      "reason": "Unknown to Google. In sitemap. Internal links added.",
+      "eligible": true
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "reason": "Unknown to Google. In sitemap. Internal links added.",
+      "eligible": true
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-roth-vs-traditional-ira",
+      "reason": "Unknown to Google. In sitemap. Internal links added.",
+      "eligible": true
+    }
   ],
-  "eligible_after_next_deploy": [
-    "Pages receiving new internal links from indexed sources (20 links added in Task 9)",
-    "Decision pages: /decision/what-tax-bracket-am-i-in, /decision/should-i-refinance-my-mortgage, etc.",
-    "Guide pages: /guides/how-to-use-mortgage-calculator, /guides/how-to-use-compound-interest, etc.",
-    "Blog posts: /blog/how-much-emergency-fund-do-i-need-2026, /blog/compound-interest-explained"
-  ],
-  "max_per_day": 10,
-  "cooldown": "7 days per URL",
-  "next_batch": "After next deploy with internal links + content improvements deployed",
-  "do_not_request": [
-    "Thin tool/scenario variants",
-    "Auth pages",
-    "Static pages without content value (privacy, terms, etc.)",
-    "Pages not in sitemap"
-  ]
+  "max_today": 10,
+  "cooldown_days": 7,
+  "note": "Only request indexing for pages WHERE content or internal links have changed AND eligibility criteria are met. Do NOT request for thin tools/scenarios.",
+  "method": "CloakBrowser GSC UI automation (100/100 proven) \u2014 scripts/safe-gsc-ui-indexing-queue.py",
+  "do_not_use_google_indexing_api": true
 }

@@ -1,0 +1,23 @@
+{
+  "title": "SEO Engine Restricted Effectiveness Mode \u2014 Phase 21.1",
+  "generated": "2026-06-11T22:45:32.225299+00:00",
+  "mode": "RESTRICTED_EFFECTIVENESS",
+  "trigger": "Phase 21 audit grade: D. Engine active but not yet effective. 0 clicks from 7 days of actions.",
+  "allowed_daily_actions": [
+    "Improve top indexing targets (real pages only, verified by URL Inspection)",
+    "Improve real pages only (calculators, decisions, guides, blogs \u2014 NOT tools/scenarios)",
+    "Add internal links to parent calculators, guides, and decisions",
+    "Audit thin tools/scenarios (audit ONLY \u2014 no SEO improvements)",
+    "Request indexing via GSC UI for changed important pages (max 10/day)",
+    "Outreach V2 preparation and follow-up"
+  ],
+  "blocked_daily_actions": [
+    "Optimizing thin tool/scenario variants as SEO targets",
+    "Title-only mass fixes without page intent improvement",
+    "Changing pages without documented KPI hypothesis",
+    "Changing pages still in 48h cooldown",
+    "Using stale/cached GSC data for decisions",
+    "Creating new pages unless score >= 90 and Auditor approves"
+  ],
+  "resume_full_engine_condition": "Engine audit grade improves from D to at least C within 14 days. At least one positive signal detected (click, indexed important page, improved rankings on real pages)."
+}

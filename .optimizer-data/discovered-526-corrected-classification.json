@@ -1,0 +1,34 @@
+{
+  "title": "Discovered 526 \u2014 Corrected Classification (Phase 21.1)",
+  "generated": "2026-06-11T22:38:53.634567+00:00",
+  "gsc_reported_count": 526,
+  "verified_sample_size": 10,
+  "verification_method": "URL Inspection API per-URL coverage state check",
+  "sample_findings": {
+    "truly_discovered_not_indexed": {
+      "count": 1,
+      "pct": "10%"
+    },
+    "already_indexed_mistakenly_in_extraction": {
+      "count": 5,
+      "pct": "50%"
+    },
+    "unknown_to_google_not_in_gsc": {
+      "count": 4,
+      "pct": "40%"
+    },
+    "note": "The 5 'URL unknown to Google' URLs (about, auth/login, auth/signup, blog) are in the sitemap but Google has never discovered them. The homepage /blog hub page is a unique case \u2014 it's the blog index page."
+  },
+  "corrected_category_counts_verified_only": {
+    "A_HIGH_PRIORITY_INDEX": 0,
+    "B_MEDIUM_PRIORITY_INDEX": 1,
+    "C_PARENT_TRANSFER": 0,
+    "D_LOW_VALUE_HOLD": 1,
+    "E_CLEANUP_REVIEW": 0,
+    "F_TECHNICAL_BLOCKER": 4,
+    "ALREADY_INDEXED_NOT_DISCOVERED": 5,
+    "total_verified": 10
+  },
+  "confidence": "MEDIUM \u2014 Verified sample is only 10 of 526 (1.9%). Extrapolation to full 526 is NOT reliable without larger sample.",
+  "recommendation": "Use URL Inspection API to sample at least 30 more URLs from the 619 sitemap pool to identify the true discovered ratio. Until then, treat the full 526 list as partially verified."
+}

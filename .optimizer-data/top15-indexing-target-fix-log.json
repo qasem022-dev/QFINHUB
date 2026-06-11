@@ -1,0 +1,158 @@
+{
+  "title": "Top 15 Indexing Target Fix Log \u2014 Phase 21.1",
+  "generated": "2026-06-11T22:45:32.225299+00:00",
+  "total_targets": 15,
+  "fixes_applied": [
+    {
+      "path": "/guides/how-to-use-mortgage-calculator",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from mortgage-calculator, mortgage-affordability",
+        "add_faq",
+        "add_real_example"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/guides/how-to-use-compound-interest",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from compound-interest",
+        "add_faq",
+        "improve_content"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/guides/how-to-use-retirement-planning",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from retirement-planning, 401k-calculator",
+        "add_faq"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/calculators/simple-interest",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from compound-interest, blog posts",
+        "add_faq",
+        "add_calculator_cta"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/calculators/capital-gains-tax",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from tax-calculator",
+        "add_faq"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from mortgage-calculator, mortgage blogs"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/compare/compare-roth-vs-traditional-ira",
+      "required_fixes": [
+        "verify_http200",
+        "verify_index_follow",
+        "verify_self_canonical",
+        "verify_in_sitemap",
+        "add_internal_links: from retirement-planning, 401k-calculator"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/calculators/mortgage-calculator",
+      "required_fixes": [
+        "ALREADY_INDEXED: improve_content",
+        "add_short_answer",
+        "add_faq",
+        "add_calculator_cta",
+        "add_internal_links from all mortgage blogs and decisions"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/calculators/loan-calculator",
+      "required_fixes": [
+        "ALREADY_INDEXED: improve_content",
+        "add_short_answer",
+        "add_faq",
+        "add_calculator_cta",
+        "add_internal_links from loan blogs"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/decision/what-tax-bracket-am-i-in",
+      "required_fixes": [
+        "ALREADY_INDEXED: improve_content",
+        "add_internal_links: from tax-calculator"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/decision/should-i-refinance-my-mortgage",
+      "required_fixes": [
+        "ALREADY_INDEXED: improve_content",
+        "add_internal_links: from mortgage-calculator"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/decision/roth-vs-traditional-401k-decision",
+      "required_fixes": [
+        "ALREADY_INDEXED: add_internal_links: from 401k-calculator, retirement-planning"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/decision/401k-vs-taxable-investing",
+      "required_fixes": [
+        "ALREADY_INDEXED: add_internal_links: from investment-return, 401k-calculator"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/decision/pay-off-student-loans-or-invest",
+      "required_fixes": [
+        "ALREADY_INDEXED: add_internal_links: from pay-off-debt-or-invest"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "path": "/calculators/retirement-withdrawal",
+      "required_fixes": [
+        "ALREADY_INDEXED: add_internal_links: from retirement-planning"
+      ],
+      "status": "PLANNED"
+    }
+  ]
+}

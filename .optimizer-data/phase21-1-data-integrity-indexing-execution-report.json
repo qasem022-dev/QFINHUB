@@ -1,0 +1,111 @@
+{
+  "title": "Phase 21.1 \u2014 Data Integrity Correction + Top 15 Indexing Execution",
+  "phase": "21.1",
+  "generated": "2026-06-11T22:45:54.434966+00:00",
+  "executive_summary": "Phase 21.1 corrected a critical data integrity error (619 vs 526 discovered URLs) and established a verified indexing execution framework. Root cause: Phase 21 used sitemap-minus-impressions (619 URLs) instead of the GSC discovered-not-indexed group (526). URL Inspection API verification revealed only 1 of 10 drilldown-extracted URLs was truly discovered. 15 high-priority indexing targets were identified across 3 categories: 3 discovered guides, 4 unknown-to-Google pages, and 8 indexed-but-zero-impression pages. 40 internal links planned. 7 GSC UI indexing requests eligible. Validate Fix remains blocked. SEO engine restricted to effectiveness mode until audit grade improves.",
+  "overall_status": "OFF_TRACK \u2014 0 clicks, 424 imp 7d, 0 backlinks. Engine grade: D. Restricted mode active.",
+  "section_1_data_integrity": {
+    "title": "1. Data Integrity Correction",
+    "file": ".optimizer-data/phase21-1-discovered-data-integrity-audit.json",
+    "error": "619 URLs classified vs GSC 526 \u2014 used wrong data source (sitemap minus GSC impressions = 619, not discovered-not-indexed = 526)",
+    "root_causes": [
+      "Mixed sitemap inventory with GSC discovered group",
+      "CloakBrowser text extraction captured entire page (nav + table), not just drilldown rows",
+      "URL Inspection verified 5 of 10 drilldown URLs were already indexed (PASS)"
+    ],
+    "corrected": "Used URL Inspection API to verify coverage states. Built verified master with 10 confirmed URLs."
+  },
+  "section_2_master_file": {
+    "title": "2. Verified Discovered Master",
+    "file": ".optimizer-data/discovered-526-master-verified.json",
+    "verified_urls": 10,
+    "truly_discovered": 1,
+    "already_indexed_mistake": 5,
+    "unknown_to_google": 4,
+    "confidence": "MEDIUM \u2014 only 1.9% sample verified"
+  },
+  "section_3_corrected_classification": {
+    "title": "3. Corrected Classification",
+    "file": ".optimizer-data/discovered-526-corrected-classification.json",
+    "verified_counts": "10 URLs: 1 discovered-NI, 5 indexed, 4 unknown"
+  },
+  "section_4_top15_targets": {
+    "title": "4. Top 15 Indexing Targets",
+    "file": ".optimizer-data/top15-indexing-execution-targets.json",
+    "discovered_guides": 3,
+    "unknown_to_google": 4,
+    "indexed_zero_impressions": 8,
+    "selection_method": "URL Inspection API verified"
+  },
+  "section_5_fix_log": {
+    "title": "5. Fix Plan",
+    "file": ".optimizer-data/top15-indexing-target-fix-log.json",
+    "total_targets": 15,
+    "fixes_planned": "HTTP 200 verification, index/follow, canonical, sitemap, internal links, FAQ, content improvements"
+  },
+  "section_6_internal_links": {
+    "title": "6. Internal Authority Push",
+    "file": ".optimizer-data/internal-authority-engine-log.json",
+    "links_planned": 40,
+    "source_pages": "indexed pages with impressions + Tier 1 calculators + indexed blogs",
+    "target_pages": "Top 15 indexing targets"
+  },
+  "section_7_gsc_indexing": {
+    "title": "7. GSC UI Indexing Requests",
+    "file": ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+    "eligible": 7,
+    "executed": 0,
+    "note": "Execute via CloakBrowser GSC UI automation after deploy"
+  },
+  "section_8_validate_fix": {
+    "title": "8. Validate Fix",
+    "decision": "DO_NOT_VALIDATE_YET \u2014 3 of 526 fixed (0.6%)"
+  },
+  "section_9_restricted_mode": {
+    "title": "9. SEO Engine Restricted Mode",
+    "file": ".optimizer-data/seo-engine-restricted-mode-rules.json",
+    "mode": "RESTRICTED_EFFECTIVENESS",
+    "reason": "Engine audit grade D"
+  },
+  "section_10_test_plan": {
+    "title": "10. Effectiveness Test Plan",
+    "file": ".optimizer-data/seo-engine-effectiveness-test-plan.json",
+    "tests": 4,
+    "measurement_windows": "3-21 days"
+  },
+  "section_11_deploy": {
+    "title": "11. Deploy",
+    "commit": "pending",
+    "note": "Documentation/reports committed. Code implementation (internal links) scheduled for next daily execution."
+  },
+  "compliance": {
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_mass_pages": true,
+    "risky_automations_disabled": true,
+    "engine_restricted": true,
+    "no_thin_tool_seo": true
+  },
+  "current_gsc": {
+    "impressions_7d": 424,
+    "clicks_7d": 0,
+    "first_content_click": "NOT_ACHIEVED",
+    "indexed": "252 (GSC UI)",
+    "discovered": 526,
+    "backlinks": 0
+  },
+  "key_insight": "The biggest indexing problem is NOT that pages aren't indexed \u2014 it's that indexed pages have 0 impressions. 8 of 15 top targets are already indexed but don't rank. The 7 truly undiscovered/unindexed pages (3 guides + 4 unknown) need indexing + ranking. The 8 indexed pages need CONTENT and AUTHORITY improvement.",
+  "files_created_updated": [
+    ".optimizer-data/phase21-1-discovered-data-integrity-audit.json (NEW)",
+    ".optimizer-data/discovered-526-master-verified.json (NEW)",
+    ".optimizer-data/discovered-526-corrected-classification.json (NEW)",
+    ".optimizer-data/top15-indexing-execution-targets.json (NEW)",
+    ".optimizer-data/top15-indexing-target-fix-log.json (NEW)",
+    ".optimizer-data/internal-authority-engine-log.json (UPDATED)",
+    ".optimizer-data/gsc-ui-indexing-proof-ledger.json (UPDATED)",
+    ".optimizer-data/discovered-validate-fix-decision-report.json (UPDATED)",
+    ".optimizer-data/seo-engine-restricted-mode-rules.json (NEW)",
+    ".optimizer-data/seo-engine-effectiveness-test-plan.json (NEW)",
+    ".optimizer-data/phase21-1-data-integrity-indexing-execution-report.json (NEW \u2014 this file)"
+  ]
+}

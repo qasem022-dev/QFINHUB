@@ -1,0 +1,26 @@
+{
+  "title": "Phase 21.1 \u2014 Discovered Data Integrity Audit",
+  "generated": "2026-06-11T22:38:53.634567+00:00",
+  "root_cause_found": true,
+  "error_explanation": {
+    "what_happened": "Phase 21 reported 619 URLs classified across categories (A-F), but GSC Pages report shows exactly 526 pages in 'Discovered - currently not indexed' group (item_key CAMYFiAC).",
+    "root_cause_1": "The 619 number came from: 649 sitemap URLs MINUS 51 pages with GSC API 7-day impressions = 619. This is ALL sitemap pages without recent impressions, NOT just discovered-not-indexed pages.",
+    "root_cause_2": "URL Inspection API verification of 10 drilldown-extracted URLs revealed that 5 of 10 are actually PASS/Submitted and indexed (they just have 0 impressions). Only 1 is truly 'Discovered - currently not indexed'. 5 are 'URL is unknown to Google'.",
+    "root_cause_3": "The CloakBrowser text extraction used document.body.innerText regex, capturing ALL qfinhub.com URLs visible on the page \u2014 including GSC sidebar navigation, breadcrumbs, and indexed pages that appeared in the drilldown for other reasons.",
+    "conclusion": "The 619 count is WRONG for the discovered-not-indexed group. It includes ~93 indexed-but-zero-impression pages and other non-discovered URLs."
+  },
+  "corrected_understanding": {
+    "gsc_discovered_group_count": 526,
+    "sitemap_urls_total": 649,
+    "pages_with_gsc_impressions_7d": 51,
+    "pages_indexed_but_zero_impressions_estimated": "~93 (649 - 51 - 526 + other groups)",
+    "other_gsc_groups_estimated": "~70 noindex + 15 crawled-not-indexed + 7 404 + 40 alt-canonical + 1 redirect + 1 dup-canonical = ~134",
+    "total_gsc_known_pages": "252 indexed + 526 discovered + 70 noindex + 15 crawled-NI + 7 404 + 40 alt-canon + 2 other = ~912"
+  },
+  "verification_methods": {
+    "url_inspection_10_sample": "5 PASS/indexed, 1 discovered-NI, 5 unknown-to-Google. Confirms drilldown text extraction captured mixed URLs.",
+    "gsc_api_pull": "51 pages have impressions. ~93 indexed pages have 0 impressions.",
+    "conclusion": "The Phase 21 classification used the WRONG data source (sitemap minus impressions). Must rebuild from verified data."
+  },
+  "confidence": "HIGH \u2014 root cause confirmed by URL Inspection API cross-referencing. The 526 GSC count is authoritative."
+}

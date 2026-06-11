@@ -1,17 +1,10 @@
 {
-  "title": "Discovered \u2014 Validate Fix Decision",
-  "generated": "2026-06-11T22:11:57.056454+00:00",
-  "group": "Discovered - currently not indexed",
-  "item_key": "CAMYFiAC",
-  "count": 526,
-  "source": "Google systems",
+  "title": "Discovered Validate Fix Decision \u2014 Phase 21.1",
+  "generated": "2026-06-11T22:45:32.225299+00:00",
+  "group": "Discovered - currently not indexed (CAMYFiAC, 526 URLs)",
   "decision": "DO_NOT_VALIDATE_YET",
-  "reason": [
-    "Only ~10 URLs extracted from GSC drilldown. Full 526 extraction requires pagination automation.",
-    "0 of 526 URLs have been fixed today. Top 10 fix plan is just created.",
-    "Per Phase 16.12F: NEVER validate quality/discovery groups. 'Failed' = Google confirmed behavior is correct."
-  ],
-  "when_to_validate": "After 50+ discovered pages improved with content + internal links + deployed 7+ days",
-  "current_fixed": 0,
-  "min_fixed_for_validation": 50
+  "reason": "Only 3 of 526 discovered URLs are being addressed today (3 guides). This is 0.6% of the group. The group-level issue is not resolved. Validate Fix would waste recrawl quota on 99.4% unchanged pages.",
+  "future_validation_condition": "At least 50 high/medium priority URLs fixed with verified content improvements + internal links + deployed 7+ days + URL Inspection sample confirms improvements.",
+  "current_fixed": 3,
+  "min_for_validation": 50
 }

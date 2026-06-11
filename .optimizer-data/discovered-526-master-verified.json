@@ -1,0 +1,105 @@
+{
+  "title": "Discovered 526 Master File \u2014 Verified (Phase 21.1)",
+  "generated": "2026-06-11T22:38:53.634567+00:00",
+  "gsc_reported_count": 526,
+  "gsc_item_key": "CAMYFiAC",
+  "urls_verified_via_url_inspection": 10,
+  "urls_truly_discovered_not_indexed": 1,
+  "urls_already_indexed_mistakenly_extracted": 5,
+  "urls_unknown_to_google": 4,
+  "data_integrity_note": "Of 10 URLs extracted from GSC drilldown page (via document.body.innerText), only 1 (10%) was truly 'Discovered - currently not indexed'. 5 were already indexed (PASS), 5 were unknown to Google. The text extraction method captured URLs from the entire page including GSC navigation, not just the drilldown table. Full 526-URL extraction requires proper table-row-scoped extraction with pagination handling (impractical at ~8s per page \u00d7 53 pages = ~7 min, but feasible).",
+  "verified_master_urls": [
+    {
+      "normalized_url": "https://www.qfinhub.com/about",
+      "coverage_state": "URL is unknown to Google",
+      "page_type": "static_hub",
+      "category": "F_TECHNICAL_BLOCKER",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/ai-specialist",
+      "coverage_state": "Discovered - currently not indexed",
+      "page_type": "static_hub",
+      "category": "D_LOW_VALUE_HOLD",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/auth/login",
+      "coverage_state": "URL is unknown to Google",
+      "page_type": "auth",
+      "category": "F_TECHNICAL_BLOCKER",
+      "in_sitemap": false,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/auth/signup",
+      "coverage_state": "URL is unknown to Google",
+      "page_type": "auth",
+      "category": "F_TECHNICAL_BLOCKER",
+      "in_sitemap": false,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/blog",
+      "coverage_state": "URL is unknown to Google",
+      "page_type": "static_hub",
+      "category": "F_TECHNICAL_BLOCKER",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/guides/how-to-use-fraction-calculator",
+      "coverage_state": "Submitted and indexed",
+      "page_type": "guide",
+      "category": "ALREADY_INDEXED",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/tools/tax-100k-married-separate",
+      "coverage_state": "Submitted and indexed",
+      "page_type": "tool",
+      "category": "ALREADY_INDEXED",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/calculators/retirement-withdrawal",
+      "coverage_state": "Submitted and indexed",
+      "page_type": "calculator",
+      "category": "ALREADY_INDEXED",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/tools/emergency-fund-5k-6mo",
+      "coverage_state": "Submitted and indexed",
+      "page_type": "tool",
+      "category": "ALREADY_INDEXED",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    },
+    {
+      "normalized_url": "https://www.qfinhub.com/tools/dti-55k-car-buyer",
+      "coverage_state": "Submitted and indexed",
+      "page_type": "tool",
+      "category": "ALREADY_INDEXED",
+      "in_sitemap": true,
+      "has_gsc_impressions": false,
+      "note": "URL Inspection API verified"
+    }
+  ],
+  "extraction_status": "PARTIAL \u2014 10 of 526 verified. Full extraction requires proper CloakBrowser table-row extraction with pagination.",
+  "confidence": "LOW for full list, HIGH for verified subset"
+}
