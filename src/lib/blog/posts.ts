@@ -158,7 +158,7 @@ Ready to take the next step? Try the [Mortgage Affordability Calculator](/calcul
 - Compound interest means you earn interest on both your original money **and** the interest it has already earned.
 - The three key factors are: **principal, interest rate, and time**. Time is the most powerful.
 - Starting just 10 years earlier can more than double your retirement savings.
-- **Use our [Compound Interest Calculator](/calculators/compound-interest) to see your own growth projections.**
+- **Use our [Compound Interest Calculator](/calculators/compound-interest) to see your own growth projections.** For stock market scenarios, try our [Investment Return Calculator](/calculators/investment-return).
 
 ---
 
@@ -420,7 +420,7 @@ Most importantly, don't rush. Whether you rent or own, the key to financial succ
 - 2026 401(k) contribution limit is $23,500 ($31,000 if age 50+). IRA limit is $7,000 ($8,000 if 50+).
 - A safe withdrawal rate in 2026 is roughly 3.5-4%, adjusted for current market conditions.
 - Delaying Social Security from 62 to 70 increases your benefit by up to 77%.
-- **Use our [Retirement Planning Calculator](/calculators/retirement-planning) to build your personalized plan.**
+- **Use our [Retirement Planning Calculator](/calculators/retirement-planning) to build your personalized plan.** For a quick retirement target, see our [How Much Do I Need to Retire?](/decision/how-much-do-i-need-to-retire) guide.
 
 ---
 
@@ -710,7 +710,7 @@ The key is to be intentional. Every dollar that goes to your loans is an investm
 - The U.S. uses a progressive tax system: higher income is taxed at higher rates, but only the portion above each threshold.
 - Your **effective tax rate** (total tax ÷ total income) is always lower than your marginal tax rate.
 - A raise that pushes you into a higher bracket **never** reduces your take-home pay.
-- **Use our [Tax Calculator](/calculators/tax-calculator) to see exactly how your income is taxed.**
+- **Use our [Tax Calculator](/calculators/tax-calculator) to see exactly how your income is taxed.** Or try our [What Tax Bracket Am I In?](/decision/what-tax-bracket-am-i-in) quick estimator.
 
 ---
 
@@ -936,7 +936,7 @@ In this case, Credit Card A is still first — but for a different reason (highe
 **Total time to debt freedom:** About 2 years 10 months (faster than snowball, but only by 2 months).
 **Total interest paid:** ~$2,800 ($300 less than snowball).
 
-> 🔄 **Compare both for yourself:** Use our [Debt Payoff Calculator](/calculators/debt-payoff) to run both strategies with your own debt amounts and see the difference.
+> 🔄 **Compare both for yourself:** Use our [Debt Payoff Calculator](/calculators/debt-payoff) to run both strategies with your own debt amounts. **Want to share this tool?** Grab our free [debt snowball vs avalanche embed widget](/widgets/debt-snowball-vs-avalanche-embed) for your own site. and see the difference.
 
 ## The Research: Which Works Better?
 
@@ -1235,7 +1235,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
 <h2>Take Action Today</h2>
 <p>Don’t wait for the next Fed announcement. Use QFINHUB’s calculators to take control of your home-buying journey:</p>
 <ul>
-  <li><a href='https://www.qfinhub.com/calculators/mortgage-affordability'>Mortgage Affordability Calculator</a> – Find your price range.</li>
+  <li><a href='https://www.qfinhub.com/calculators/mortgage-affordability'>Mortgage Affordability Calculator</a> – Find your price range. <strong>Want this on your site?</strong> Grab our free <a href='https://www.qfinhub.com/widgets/mortgage-affordability-embed'>embed widget</a>.</li>
   <li><a href='https://www.qfinhub.com/calculators/loan'>Loan Calculator</a> – Compare loan terms and rates.</li>
   <li><a href='https://www.qfinhub.com/calculators/savings-goal'>Savings Goal Calculator</a> – Plan your down payment.</li>
 </ul>
