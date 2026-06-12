@@ -1,0 +1,56 @@
+{
+  "title": "Phase 23 \u2014 Results-Only Daily Loop Rules",
+  "generated": "2026-06-12T01:30:00Z",
+  "effective": "Immediately",
+  "supersedes": "All previous daily loop rules",
+  "mode": "RESULTS_ONLY",
+  "allowed_daily_actions": {
+    "first_content_click_attacks": {
+      "max_per_day": 3,
+      "target": "Real pages with pos <=20, impressions >0, 0 clicks",
+      "rule": "Only improve CTA, FAQ, or internal links. Do not change title/meta unless cooldown expired."
+    },
+    "internal_links_to_real_pages": {
+      "min_per_day": 15,
+      "max_per_day": 30,
+      "source": "Pages with GSC impressions",
+      "target": "Real parent calculators, decisions, guides, blogs",
+      "rule": "No thin tools/scenarios. Contextual only. Log every link."
+    },
+    "group_c_parent_strengthening": {
+      "max_per_day": 4,
+      "target": "Indexed-but-invisible parent calculators and decisions",
+      "rule": "Internal links from indexed pages only. Do not touch thin variants."
+    },
+    "authority_sprint_preparation": {
+      "allowed": true,
+      "rule": "Prepare outreach materials, prospect lists, widget pitches. Do not send before due date."
+    },
+    "outreach_followups_when_due": {
+      "allowed": true,
+      "rule": "Send only on scheduled date. Max 12 per batch. Track replies."
+    },
+    "indexing_monitoring": {
+      "allowed": true,
+      "rule": "Check URL Inspection on scheduled recheck days only. Do not re-request."
+    }
+  },
+  "blocked_daily_actions": {
+    "thin_variant_seo": "PERMANENTLY BLOCKED \u2014 no CTR/title/meta for /tools/ or /scenario/",
+    "generic_title_changes": "BLOCKED \u2014 must have measurable reason and cooldown expired",
+    "new_pages": "BLOCKED \u2014 no new page creation",
+    "repeat_indexing_requests": "BLOCKED \u2014 7-day cooldown minimum. Monitor only.",
+    "cleanup_tests": "BLOCKED \u2014 until data pipeline, template fix, and monitoring complete",
+    "activity_only_reports": "BLOCKED \u2014 reports must include measured results, not just actions taken",
+    "indexing_api": "PERMANENTLY BLOCKED",
+    "validate_fix_clicks": "BLOCKED \u2014 DO_NOT_VALIDATE_YET",
+    "mass_pages": "PERMANENTLY BLOCKED",
+    "stale_gsc_data": "BLOCKED \u2014 3-window freshness required"
+  },
+  "deploy_rules": {
+    "allowed": true,
+    "condition": "Only deploy if real page code changes made",
+    "post_deploy": "./scripts/post-deploy-ops.sh",
+    "no_scenario_sitemap": true
+  }
+}

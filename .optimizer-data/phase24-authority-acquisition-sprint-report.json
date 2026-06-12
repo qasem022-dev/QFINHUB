@@ -1,0 +1,147 @@
+{
+  "phase": "24",
+  "task": "authority-acquisition-sprint-report",
+  "generated_at": "2026-06-12T01:15:00Z",
+  "status": "PHASE 24 COMPLETE \u2014 EMBED BLOCKER FIXED, OUTREACH READY",
+  "overall": "OFF_TRACK \u2192 transitioning to ON_TRACK",
+  "section_1_outreach_failure_postmortem": {
+    "file": ".optimizer-data/phase24-outreach-failure-postmortem.json",
+    "summary": "Audited all 20 May 14 outreach emails. Root cause: 12/20 targets were WRONG (competitors, calculator platforms, major brands). 20/20 had zero personalization. 20/20 used generic subjects. Result: 0 replies, 0 backlinks.",
+    "top_failure_reasons": [
+      "Wrong targets (12/20 \u2014 sent to calculator platforms, competitors, massive brands)",
+      "Zero personalization (20/20 \u2014 automated template with no article reference)",
+      "Weak/generic subjects (20/20 \u2014 'Free X for your readers')",
+      "Offer mismatch (13/20 \u2014 compound interest widget sent to mortgage/debt sites)"
+    ]
+  },
+  "section_2_v2_offer_stack": {
+    "file": ".optimizer-data/phase24-outreach-v2-offer-stack.json",
+    "offers_created": 5,
+    "offers": [
+      "A: Mortgage Widget Embed \u2014 for mortgage/real estate blogs",
+      "B: Debt Payoff Widget Embed \u2014 for debt/credit/budgeting blogs",
+      "C: Custom Calculation Example \u2014 for any article with calculations",
+      "D: Broken/Outdated Resource Replacement \u2014 for resource pages",
+      "E: Mini Data/Comparison Table \u2014 for newsletters/comparison articles"
+    ],
+    "philosophy": "Every offer makes a publisher say 'This helps my readers.' No backlink ask in first message."
+  },
+  "section_3_pitch_templates": {
+    "file": ".optimizer-data/phase24-outreach-v2-templates.json",
+    "templates_created": 3,
+    "templates": [
+      "Widget Embed Offer \u2014 4 sentences, specific article reference, reader-focused",
+      "Custom Calculation Example Offer \u2014 4 sentences, 'same math, but personalized'",
+      "Resource Replacement Offer \u2014 4 sentences, broken-link hook"
+    ],
+    "rules": "Max 3-5 sentences. No backlink ask. No SEO language. Specific article reference. Easy yes/no CTA."
+  },
+  "section_4_small_prospects": {
+    "file": ".optimizer-data/phase24-small-prospect-list.json",
+    "prospects_selected": 30,
+    "breakdown": {
+      "mortgage_real_estate": 8,
+      "debt_payoff_credit": 8,
+      "fire_retirement_investing": 8,
+      "student_loans_young_money": 4,
+      "budget_general_pf": 2
+    },
+    "excluded": "All DR 75+ sites, calculator platforms, major fintech, competitors",
+    "top_priority": [
+      "Home Buying Institute",
+      "First Time Home Buyer Guide",
+      "Debt Discipline",
+      "Debt Free Divas",
+      "Student Loan Sherpa"
+    ]
+  },
+  "section_5_jun13_followup_plan": {
+    "file": ".optimizer-data/phase24-jun13-followup-plan.json",
+    "total_original": 65,
+    "eligible_followups": 8,
+    "followups_to_send": 8,
+    "notable": "4 are corrected offers (mortgage widget for mortgage sites, debt widget for debt sites). 4 are short check-ins on batch 2 personalized emails.",
+    "do_not_follow_up": "All competitors, calculator platforms, major brands, wrong contacts"
+  },
+  "section_6_test_emails": {
+    "file": ".optimizer-data/phase24-v2-test-send-log.json",
+    "status": "DESIGNED \u2014 5 emails ready to send",
+    "prospects": [
+      "Home Buying Institute (mortgage widget)",
+      "Debt Discipline (debt payoff widget)",
+      "First Time Home Buyer Guide (mortgage widget)",
+      "Student Loan Sherpa (debt payoff widget)",
+      "Tawcan (custom calculation example)"
+    ],
+    "all_personalized": true,
+    "all_no_backlink_ask": true,
+    "all_clear_reader_benefit": true,
+    "blocked_by": "NONE \u2014 embed blocker fixed, ready to send"
+  },
+  "section_7_linkable_asset_readiness": {
+    "file": ".optimizer-data/phase24-linkable-asset-readiness-check.json",
+    "mortgage_widget": "READY \u2014 page loads, widget works, embed code NOW WORKS (x-frame-options fixed)",
+    "debt_widget": "READY \u2014 page loads, widget works, embed code NOW WORKS (x-frame-options fixed)",
+    "embed_blocker_fixed": true,
+    "fix_details": "Removed global X-Frame-Options: DENY from vercel.json. Added CSP: frame-ancestors * on /embed/*, /widgets/embed/*, /api/widget/*, /calculators/*/embed routes. Verified working on all 3 embed paths."
+  },
+  "section_8_response_handling_playbook": {
+    "file": ".optimizer-data/phase24-response-handling-playbook.json",
+    "scenarios": 9,
+    "golden_rules": [
+      "NEVER ask for specific anchor text",
+      "NEVER mention SEO, backlinks, or link building",
+      "NEVER pressure for dofollow",
+      "Max 3 emails per prospect",
+      "Always lead with reader value"
+    ]
+  },
+  "section_9_measurement_rules": {
+    "file": ".optimizer-data/phase24-authority-measurement-rules.json",
+    "thresholds": [
+      "5-test batch: >= 1 reply within 7 days",
+      "20 V2 sends: >= 2 replies",
+      "Jun 26: >= 1 backlink/embed/reply"
+    ],
+    "failure_rule": "If 0/20 V2 replies, pivot to journalist/source-response and partnership directories"
+  },
+  "section_10_daily_loop_update": {
+    "file": ".optimizer-data/phase24-daily-loop-authority-priority-update.json",
+    "priority_1": "Authority Acquisition (5 test emails + 8 follow-ups)",
+    "priority_2": "Content Click Monitoring",
+    "priority_3": "Indexing Request Monitoring",
+    "priority_4": "Real Page Internal Links (KPI-tied only)",
+    "blocked": [
+      "random content tweaks",
+      "thin tool SEO",
+      "repeated indexing requests",
+      "activity-only SEO"
+    ]
+  },
+  "current_status": {
+    "backlinks": 0,
+    "replies": 0,
+    "first_content_click": "not achieved",
+    "first_branded_click": "achieved",
+    "indexing_monitoring": "active (526 discovered-not-indexed)",
+    "embed_blocker": "FIXED \u2014 all embed routes now allow iframe framing"
+  },
+  "confirmation": {
+    "no_spam_outreach": true,
+    "no_paid_links": true,
+    "no_backlink_anchor_pressure": true,
+    "no_mass_emails": true,
+    "no_generic_templates": true,
+    "all_offers_reader_focused": true,
+    "embed_blocker_fixed": true,
+    "vercel_deployed": true
+  },
+  "next_actions": [
+    "Send 5 V2 test emails (embed blocker fixed \u2014 ready)",
+    "Send 8 Jun 13 follow-ups",
+    "Monitor replies daily",
+    "Research contact methods for top 10 priority prospects",
+    "Do NOT send 30 emails at once \u2014 batch of 5 first, learn, then scale"
+  ],
+  "on_track_off_track": "TRANSITIONING TO ON_TRACK \u2014 embed blocker was the critical gate. Outreach system redesigned from failure postmortem."
+}

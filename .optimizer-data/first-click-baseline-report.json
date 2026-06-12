@@ -1,25 +1,41 @@
 {
-  "title": "Branded Click Classification \u2014 Phase 20.7",
-  "generated": "2026-06-11T21:27:44.545846+00:00",
-  "update": "KPI logic updated to distinguish branded homepage click from organic content conversion.",
-  "first_click_status": {
-    "FIRST_CLICK_28D": "ACHIEVED \u2014 1 click on homepage in 28-day window (May 15 - Jun 11)",
-    "FIRST_CONTENT_CLICK": "NOT_ACHIEVED \u2014 no click on any calculator, blog, guide, or decision page",
-    "FIRST_NON_BRANDED_CLICK": "NOT_ACHIEVED \u2014 the only click is on homepage at position 1.9, characteristic of branded 'qfinhub' search",
-    "FIRST_7D_CLICK": "NOT_ACHIEVED \u2014 0 clicks in last 7 days"
+  "title": "First Click Baseline Report",
+  "updated": "2026-06-12T00:15:00Z",
+  "phase": "21.6",
+  "data_source": "GSC API RAW",
+  "first_click_28d": {
+    "status": "ACHIEVED",
+    "date_detected": "2026-06-07",
+    "url": "https://www.qfinhub.com/",
+    "query_type": "BRANDED_NAVIGATION",
+    "evidence": "Homepage at position 1.9 with 31 impressions — consistent with 'qfinhub' branded search query",
+    "impressions": 31,
+    "clicks": 1,
+    "avg_position": 1.9,
+    "is_content_conversion": false,
+    "is_organic_success": false
   },
-  "homepage_click_detail": {
-    "page": "https://www.qfinhub.com/",
-    "impressions_28d": 31,
-    "clicks_28d": 1,
-    "position": 1.9,
-    "nature": "BRANDED_NAVIGATIONAL \u2014 someone searched 'qfinhub' and clicked the homepage. NOT a content conversion from an informational search.",
-    "ctr": "3.2% (expected for position 1-2 branded search)"
+  "first_content_click": {
+    "status": "NOT ACHIEVED",
+    "note": "The single 28-day click is homepage branded navigation. Zero clicks on any content page (calculators, guides, blogs, decisions) in 28 days."
   },
-  "rules": {
-    "homepage_click_does_not_count_as_content_conversion": true,
-    "first_content_click_requires": "Click on calculator, blog, guide, decision, or tool page from non-branded search query",
-    "branded_click_tracking": "Track separately as brand awareness signal, not content success metric",
-    "official_status": "FIRST_CLICK_28D = achieved (factual). FIRST_CONTENT_CLICK = not achieved (quality distinction)."
-  }
+  "first_non_branded_click": {
+    "status": "NOT ACHIEVED",
+    "note": "No evidence of non-branded search clicks. All impressions are from organic non-branded queries, but 0 conversions."
+  },
+  "first_7d_click": {
+    "status": "NOT ACHIEVED",
+    "note": "0 clicks in last 7 days (Jun 4-11)."
+  },
+  "near_winners": [
+    {"url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment", "impressions_7d": 1, "position": "varies", "type": "real_blog"},
+    {"url": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", "impressions_7d": 1, "position": "varies", "type": "real_blog"},
+    {"url": "/decision/pay-off-debt-or-invest", "impressions_7d": 1, "position": "varies", "type": "real_decision"},
+    {"url": "/decision/how-much-house-can-i-afford", "impressions_7d": 1, "position": "varies", "type": "real_decision"},
+    {"url": "/calculators/tax/philadelphia-pa", "impressions_7d": 1, "position": "varies", "type": "real_calculator_geo"},
+    {"url": "/calculators/tax-calculator", "impressions_7d": 1, "position": "varies", "type": "real_calculator"},
+    {"url": "/calculators/compound-interest", "impressions_7d": 1, "position": "varies", "type": "real_calculator"},
+    {"url": "/calculators/retirement-planning", "impressions_7d": 1, "position": "varies", "type": "real_calculator"}
+  ],
+  "note": "First-click sprint continues on real pages only. Thin tool/scenario pages excluded from near-winner tracking per real-page-focus rule."
 }

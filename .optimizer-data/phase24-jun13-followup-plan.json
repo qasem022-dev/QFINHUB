@@ -1,0 +1,114 @@
+{
+  "phase": "24",
+  "task": "jun13-followup-plan",
+  "date": "2026-06-13",
+  "total_original_outreach": 65,
+  "eligible_for_followup": 8,
+  "rules": "Only follow up where: original email was relevant, no bounce, no reply, enough time passed (30+ days for May 14 batch, 14+ days for later), follow-up adds new value",
+  "entries": [
+    {
+      "original_target": "Money Under 30",
+      "original_email": "info@moneyunder30.com",
+      "original_date": "2026-05-14",
+      "original_offer": "Compound interest widget",
+      "original_failure": "Generic, no personalization",
+      "revised_followup": "Hi, I reached out last month about a calculator widget. I've now built a specific debt snowball vs avalanche tool that would pair well with your debt payoff content \u2014 readers can compare both methods with their actual numbers. Want me to send the embed?",
+      "send": "yes",
+      "reason": "30+ days passed. New, more relevant offer. Site is appropriate target (PF blog, DR ~65)."
+    },
+    {
+      "original_target": "Making Sense of Cents",
+      "original_email": "info@makingsenseofcents.com",
+      "original_date": "2026-05-14",
+      "original_offer": "Compound interest widget",
+      "original_failure": "Generic, offer mismatch (blog focuses on saving/budgeting)",
+      "revised_followup": "Hi Michelle, I reached out last month. I've built a debt snowball vs avalanche calculator that might help your readers who are working through debt \u2014 side-by-side comparison with their real numbers. Free, no signup. Want me to send the one-line embed?",
+      "send": "yes",
+      "reason": "30+ days. Better offer match. Smaller site, genuine PF blogger."
+    },
+    {
+      "original_target": "Personal Finance Club",
+      "original_email": "contact@personalfinanceclub.com",
+      "original_date": "2026-05-14",
+      "original_offer": "Compound interest widget",
+      "original_failure": "No personalization, generic subject",
+      "revised_followup": "Hi Jeremy, I emailed in May. I noticed your investing content uses specific return calculations \u2014 I can create an interactive version where readers plug in their own numbers instead of reading static examples. Would that be useful for any of your articles? No cost, no signup.",
+      "send": "yes",
+      "reason": "30+ days. Better personalized angle \u2014 custom calculation offer. Good target."
+    },
+    {
+      "original_target": "The Mortgage Reports",
+      "original_email": "contact@themortgagereports.com",
+      "original_date": "2026-05-14",
+      "original_offer": "Compound interest widget",
+      "original_failure": "Wrong offer for mortgage site",
+      "revised_followup": "Hi, I reached out in May about a calculator. I realize I sent the wrong tool \u2014 I actually have a mortgage affordability calculator that's a much better fit for your readers. Shows exact home price based on income, debts, and down payment. Free embed, no signup. Want me to send the code?",
+      "send": "yes",
+      "reason": "30+ days. Corrected offer \u2014 mortgage widget for mortgage site. Strong fit."
+    },
+    {
+      "original_target": "Afford Anything (Paula Pant)",
+      "original_email": "hello@affordanything.com",
+      "original_date": "2026-06-01 (approx)",
+      "original_offer": "Mortgage affordability widget (batch 2 personalized)",
+      "original_failure": "Good email but no reply \u2014 may have been missed",
+      "revised_followup": "Hi Paula, checking in on the mortgage affordability widget I shared \u2014 no pressure, just wanted to make sure it didn't get buried. Happy to answer any questions or adjust sizing. Let me know either way!",
+      "send": "yes",
+      "reason": "~12 days passed. Good original email. Worth one short check-in."
+    },
+    {
+      "original_target": "The College Investor (Robert Farrington)",
+      "original_email": "robert@thecollegeinvestor.com",
+      "original_date": "2026-06-01 (approx)",
+      "original_offer": "Mortgage affordability widget (personalized)",
+      "original_failure": "No reply \u2014 may have been missed",
+      "revised_followup": "Hi Robert, just checking if the mortgage affordability widget I shared would be useful for your readers. Happy to answer questions. Let me know either way!",
+      "send": "yes",
+      "reason": "~12 days. Personalized original. Worth one short follow-up."
+    },
+    {
+      "original_target": "ESI Money",
+      "original_email": "esi@esimoney.com",
+      "original_date": "2026-06-01 (approx)",
+      "original_offer": "Debt payoff widget (personalized)",
+      "original_failure": "No reply",
+      "revised_followup": "Hi ESI, following up on the debt snowball vs avalanche widget \u2014 no worries if it's not a fit, just wanted to check it didn't get lost. Let me know!",
+      "send": "yes",
+      "reason": "~12 days. Good original pitch. One short follow-up."
+    },
+    {
+      "original_target": "Millennial Revolution (Kristy Shen)",
+      "original_email": "kristy@millennial-revolution.com",
+      "original_date": "2026-06-01 (approx)",
+      "original_offer": "Mortgage widget for FIRE (personalized)",
+      "original_failure": "No reply",
+      "revised_followup": "Hi Kristy, quick follow-up on the FIRE-friendly mortgage calculator widget \u2014 just checking it didn't get buried. Happy to answer questions!",
+      "send": "yes",
+      "reason": "~12 days. Good personalized pitch. Short check-in."
+    }
+  ],
+  "do_not_follow_up": [
+    "NerdWallet \u2014 wrong target, too large, own calculators",
+    "Dave Ramsey \u2014 proprietary calculators, too large",
+    "Calculator.net \u2014 competitor",
+    "Bankrate \u2014 own calculator suite",
+    "CalcXML \u2014 competitor (sells embeddable calculators)",
+    "SmartAsset \u2014 direct competitor",
+    "MortgageCalculator.org \u2014 competitor",
+    "Credit Karma \u2014 too large, own tools",
+    "Omni Calculator \u2014 world's largest calculator platform",
+    "Mortgage News Daily \u2014 wrong offer (compound interest for mortgage site)",
+    "HSH.com \u2014 own calculators, wrong offer",
+    "Money.com \u2014 too large, own calculators",
+    "Rocket Homes \u2014 lead-gen calculators, wrong target",
+    "Mint/Intuit \u2014 too large, corporate",
+    "YNAB \u2014 SaaS company, wrong contact",
+    "Investopedia \u2014 DR 92, own calculators, already contacted twice",
+    "BiggerPockets \u2014 DR 80+, contacted twice, support@ not editorial",
+    "ChooseFI \u2014 already contacted, no reply",
+    "All batch 2 mass sends to credit card/debt sites \u2014 too generic, no personalization",
+    "Can I Retire Yet \u2014 already contacted in batch 2, no reply, wait longer"
+  ],
+  "total_followups_to_send": 8,
+  "send_date": "2026-06-13"
+}

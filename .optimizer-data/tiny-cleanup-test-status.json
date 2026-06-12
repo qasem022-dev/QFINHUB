@@ -1,36 +1,29 @@
 {
-  "title": "Tiny Cleanup Test Status \u2014 Phase 20.7",
-  "generated": "2026-06-11T21:27:44.545846+00:00",
-  "status": "BLOCKED_PENDING_DATA_PIPELINE_AND_TEMPLATE_FIX",
-  "blocked_by": [
-    {
-      "condition": "GSC pipeline fixed",
-      "status": "DONE \u2014 scripts/gsc-daily-pipeline.py rewritten with dynamic dates"
-    },
-    {
-      "condition": "Stale guardrail passes",
-      "status": "DONE \u2014 guardrail created at .optimizer-data/gsc-stale-data-guardrail.json"
-    },
-    {
-      "condition": "Tool template rollback/softening done",
-      "status": "DONE \u2014 seo-utils.ts softened, all 4 templates fixed"
-    },
-    {
-      "condition": "Compound canonical URL fixed",
-      "status": "DONE \u2014 verified correct, no fix needed"
-    },
-    {
-      "condition": "Risky indexing URL audits complete",
-      "status": "PENDING \u2014 full URL extraction needs GSC drilldown"
-    },
-    {
-      "condition": "Parent pages strengthened",
-      "status": "IN_PROGRESS \u2014 meta CTAs added, full strengthening TBD"
-    },
-    {
-      "condition": "Auditor + Technical Guardian approve",
-      "status": "PENDING"
-    }
+  "title": "Tiny Cleanup Test Status",
+  "updated": "2026-06-12T00:15:00Z",
+  "phase": "21.6",
+  "status": "BLOCKED_PENDING_COMPLETION_OF_PHASE21_MONITORING",
+  "reason": "Cleanup test paused for data pipeline fix, template fix, and indexing monitoring to complete. GSC pipeline is now fixed (3-window freshness verified Jun 12), thin template softening was completed (Phase 20.7), but indexing monitoring (Phase 21.6) is now in Day 0 with 7 requests pending.",
+  "blockers_remaining": [
+    "Indexing monitoring Day 3-21 window must complete (by Jul 3)",
+    "Risky indexing URL audits (noindex 70, crawled-NI 15, 404 7) must be extracted",
+    "Parent page strengthening must be verified",
+    "Compound-interest canonical URL fix must be confirmed"
   ],
-  "next_step": "Complete parent page strengthening (Task 7), then request approval for max 3 sitemap removals."
+  "candidate_urls_held": [
+    {"url": "/scenario/auto-loan-bc834ee2", "impressions": 1, "clicks": 0, "type": "thin_scenario"},
+    {"url": "/tools/loan-30k-5yr-6pct", "impressions": 1, "clicks": 0, "type": "thin_tool"},
+    {"url": "/tools/compound-1k-5yr-5pct-daily", "impressions": 1, "clicks": 0, "type": "thin_tool"}
+  ],
+  "test_constraints": {
+    "max_urls": 3,
+    "allowed_action": "SITEMAP_REMOVAL_ONLY",
+    "no_noindex": true,
+    "no_canonical": true,
+    "no_redirect": true,
+    "no_delete": true,
+    "requires_approval": true,
+    "approvers": ["Auditor", "Technical Guardian"]
+  },
+  "estimated_unblock_date": "2026-07-03 (after Day 21 monitoring completion)"
 }

@@ -1,0 +1,72 @@
+{
+  "title": "Phase 22.1 \u2014 Content Click Watchlist (Refreshed)",
+  "generated": "2026-06-12T01:00:00Z",
+  "data_source": "GSC API RAW \u2014 current 7d window (Jun 4-11)",
+  "tiers": {
+    "TIER_1_GOLDEN": "Pos 1-10, 0 clicks",
+    "TIER_2_HIGH": "Pos 11-20, 0 clicks",
+    "TIER_3_MEDIUM": "Pos 21-30, 0 clicks"
+  },
+  "candidates": [
+    {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "query": "if you borrow $20,000 for 5 years at an annual rate of 8%",
+      "impressions_7d": 69,
+      "clicks": 0,
+      "position": 7.2,
+      "tier": "TIER_1_GOLDEN",
+      "cooldown": "UNTIL_JUN_26",
+      "note": "FIXED in Phase 22 \u2014 thin tool CTA replaced with real loan calculator. Above-fold CTA upgraded. Monitor for click."
+    },
+    {
+      "url": "/decision/pay-off-debt-or-invest",
+      "query": "should i pay off debt or invest calculator",
+      "impressions_7d": 2,
+      "clicks": 0,
+      "position": 52,
+      "tier": "TIER_4_DEEP",
+      "cooldown": "READY",
+      "note": "Strong intent match but deep position. Needs FAQ + example."
+    },
+    {
+      "url": "/calculators/investment-return",
+      "query": "investment returns",
+      "impressions_7d": 17,
+      "clicks": 0,
+      "position": 76.8,
+      "tier": "TIER_4_DEEP",
+      "cooldown": "READY",
+      "note": "Highest query volume calculator. Deep position suggests authority gap."
+    },
+    {
+      "url": "/calculators/tax-calculator",
+      "query": "free tax calculator 2023",
+      "impressions_7d": 6,
+      "clicks": 0,
+      "position": 91.3,
+      "tier": "TIER_4_DEEP",
+      "cooldown": "READY",
+      "note": "Multiple tax queries. Needs above-fold example + FAQ."
+    },
+    {
+      "url": "/calculators/retirement-planning",
+      "query": "retirement planning calculator",
+      "impressions_7d": 3,
+      "clicks": 0,
+      "position": 82.3,
+      "tier": "TIER_4_DEEP",
+      "cooldown": "READY",
+      "note": "Needs FAQ + internal links."
+    },
+    {
+      "url": "/decision/snowball-vs-avalanche-which-wins",
+      "query": "how to pay off debt faster",
+      "impressions_7d": 2,
+      "clicks": 0,
+      "position": 89,
+      "tier": "TIER_4_DEEP",
+      "cooldown": "READY",
+      "note": "Good query match. Needs FAQ."
+    }
+  ]
+}

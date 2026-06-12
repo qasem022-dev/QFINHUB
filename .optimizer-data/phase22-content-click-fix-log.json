@@ -1,0 +1,78 @@
+{
+  "title": "Phase 22 — Content Click Fix Log",
+  "generated": "2026-06-12T00:45:00Z",
+  "pages_fixed": [
+    {
+      "rank": 1,
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "gsc_position": 7.2,
+      "gsc_impressions_7d": 69,
+      "fix_type": "ABOVE_FOLD_CTA_UPGRADE",
+      "changes": [
+        "Replaced TL;DR heading with result-first heading: 'Monthly Payment: $405.53 — Here's the Full Breakdown'",
+        "Removed thin tool link (tools/loan-20k-5yr-8pct) → replaced with real calculator (calculators/loan-calculator)",
+        "Added prominent CTA callout box: 'Try it yourself: Open the QFINHUB Loan Calculator'",
+        "Fixed FAQ thin tool link → real loan calculator",
+        "Above-fold answer now matches exact query: 'if you borrow $20,000 for 5 years at 8%'"
+      ],
+      "not_changed": ["Full calculation breakdown", "Amortization explanation", "Factors section", "Comparison table"],
+      "cooldown_until": "2026-06-26"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "gsc_position_28d": 16.3,
+      "gsc_impressions_28d": 64,
+      "fix_type": "INTERNAL_LINKS",
+      "changes": [
+        "Connected to loan-calculator and investment-return calculator via contextual linking system",
+        "Decision page already has embedded calculator CTAs"
+      ],
+      "cooldown_until": "2026-06-26"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "gsc_position_28d": 20.1,
+      "gsc_impressions_28d": 35,
+      "fix_type": "INTERNAL_LINKS",
+      "changes": [
+        "Added reciprocal link from tax-calculator parent",
+        "Geo page well-positioned — maintain current content"
+      ],
+      "cooldown_until": "2026-06-26"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "gsc_impressions_28d": 58,
+      "gsc_position_28d": 87.6,
+      "fix_type": "INTERNAL_LINKS",
+      "changes": [
+        "Added internal links from blog posts via calculator-blog-links system",
+        "Added cross-links to decision pages (what-tax-bracket-am-i-in) and geo pages (philadelphia-pa)"
+      ],
+      "cooldown_until": "2026-06-26"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "gsc_impressions_28d": 57,
+      "gsc_position_28d": 82.2,
+      "fix_type": "INTERNAL_LINKS",
+      "changes": [
+        "Added cross-links to retirement-planning and compound-interest calculators",
+        "Connected to decision pages (401k-vs-taxable-investing, pay-off-student-loans-or-invest)"
+      ],
+      "cooldown_until": "2026-06-26"
+    }
+  ],
+  "summary": {
+    "pages_fixed": 5,
+    "primary_fix": "Blog 20000-loan CTA upgrade (thin tool → real calculator) — highest conversion potential on site",
+    "secondary_fixes": "Internal links for 4 real calculator/decision pages to improve crawl depth and authority flow",
+    "no_thin_tool_scenario_edited": true,
+    "all_real_pages": true,
+    "commit_ready": true
+  }
+}

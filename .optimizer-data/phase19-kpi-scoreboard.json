@@ -1,39 +1,37 @@
 {
-  "date": "2026-06-11",
-  "generated": "2026-06-11T20:58:52.775270+00:00",
-  "data_freshness": "FRESH_API_PULL \u2014 2026-06-05 to 2026-06-11",
-  "kpi": {
-    "gsc_impressions_api_raw": 242,
-    "gsc_clicks_api_raw": 0,
-    "gsc_ctr_api_raw": 0.0,
-    "gsc_avg_position_approx": 33.3,
-    "pages_with_impressions": 40,
-    "queries": 37,
-    "query_level_impressions": 128,
-    "deployments": 2,
-    "deploy_commits": [
-      "f88a235 (Jun 10)",
-      "f5dc2b0 (Jun 11)"
+  "date": "2026-06-12",
+  "generated": "2026-06-12T17:36:35.879934+00:00",
+  "gsc_api_raw": {
+    "impressions_7d": 415,
+    "clicks_7d": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 38.3,
+    "pages_with_impressions": 48,
+    "queries": 66,
+    "impressions_28d": 1202,
+    "clicks_28d": 1,
+    "clicked_pages_28d": [
+      "homepage (branded)"
     ],
-    "ctr_fixes_cumulative": 16,
-    "internal_links_cumulative": 91,
+    "trend_7d": "+17.6% (vs prev 7d: 353)",
+    "freshness": "FRESH (3-window verified: 415/424/418)"
+  },
+  "business_metrics": {
+    "status": "OFF-TRACK",
+    "target_monthly_visitors_m5": "1,000,000",
+    "current_daily_impressions": 59,
+    "estimated_monthly_impressions": 1779,
+    "gap_to_target": "MASSIVE",
     "backlinks": 0,
-    "outreach_sent_total": 20,
-    "outreach_replies": 0
+    "domain_age_months": 2,
+    "note": "Domain too young for competitive rankings. Authority building needed."
   },
-  "manual_ui_comparison_fyi": {
-    "available": true,
-    "last_manual_check": "2026-06-07",
-    "ui_impressions": 436,
-    "api_vs_ui_gap": "~44% undercount (242 API vs ~436 UI estimated)",
-    "note": "FYI ONLY \u2014 not used in official KPIs"
-  },
-  "first_click_watch": {
-    "contender": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-    "impressions": "Check fresh page-level data",
-    "status": "0 clicks in 7-day fresh window"
-  },
-  "status": "OFF_TRACK (0 clicks in 7 days, impressions declining 42% over 3 windows)",
-  "note": "RAW_GSC_API_ONLY is official KPI source per Phase 19.2 normalization.",
-  "stale_data_warning": "Previous scoreboards (Jun 10, Jun 11) used stale 499-impression baseline. This update uses FRESH API pull."
+  "first_click_watchlist": {
+    "top_candidate": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "impressions": 117,
+    "position": 10.8,
+    "target_query": "if you borrow $20,000 for 5 years at 8% annual rate",
+    "near_page1": true,
+    "ctr_fix_applied": "Phase 22 - replaced thin tool CTAs with real loan calculator"
+  }
 }

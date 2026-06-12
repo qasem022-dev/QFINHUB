@@ -1,0 +1,76 @@
+{
+  "title": "Phase 22.1 \u2014 7 URL Status Confirmation (No Re-Request)",
+  "generated": "2026-06-12T01:00:00Z",
+  "rule": "NO repeat indexing requests. Status recorded from existing ledger. Next recheck: Day 3 (Jun 15).",
+  "urls": [
+    {
+      "url": "/guides/how-to-use-mortgage-calculator",
+      "group": "A",
+      "request_status": "LIKELY_REQUESTED",
+      "confirmed_requested": false,
+      "likely_requested": true,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    },
+    {
+      "url": "/guides/how-to-use-compound-interest",
+      "group": "A",
+      "request_status": "LIKELY_REQUESTED",
+      "confirmed_requested": false,
+      "likely_requested": true,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    },
+    {
+      "url": "/guides/how-to-use-retirement-planning",
+      "group": "A",
+      "request_status": "CONFIRMED_REQUESTED",
+      "confirmed_requested": true,
+      "likely_requested": false,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    },
+    {
+      "url": "/calculators/simple-interest",
+      "group": "B",
+      "request_status": "CONFIRMED_REQUESTED",
+      "confirmed_requested": true,
+      "likely_requested": false,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    },
+    {
+      "url": "/calculators/capital-gains-tax",
+      "group": "B",
+      "request_status": "LIKELY_REQUESTED",
+      "confirmed_requested": false,
+      "likely_requested": true,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    },
+    {
+      "url": "/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "group": "B",
+      "request_status": "CONFIRMED_REQUESTED",
+      "confirmed_requested": true,
+      "likely_requested": false,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    },
+    {
+      "url": "/compare/compare-roth-ira-vs-traditional-ira",
+      "group": "B",
+      "request_status": "CONFIRMED_REQUESTED",
+      "confirmed_requested": true,
+      "likely_requested": false,
+      "newly_indexed_confirmed": false,
+      "next_recheck": "2026-06-15"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "confirmed_requested": 4,
+    "likely_requested": 3,
+    "newly_indexed_confirmed": 0
+  }
+}

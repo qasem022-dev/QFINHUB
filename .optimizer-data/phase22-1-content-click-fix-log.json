@@ -1,0 +1,48 @@
+{
+  "title": "Phase 22.1 \u2014 Content Click Fix Log",
+  "generated": "2026-06-12T01:00:00Z",
+  "note": "Primary candidate (blog/20000-loan) fixed in Phase 22, now in cooldown until Jun 26. These 3 are the next highest-priority real pages not in cooldown.",
+  "pages_fixed": [
+    {
+      "rank": 1,
+      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "query": "should i pay off debt or invest calculator",
+      "impressions_7d": 2,
+      "impressions_28d": 64,
+      "position_28d": 16.3,
+      "position_7d": 52,
+      "reason": "Position dropped from 16.3 to 52 \u2014 needs authority reinforcement. Strong intent match with high-value content.",
+      "last_changed": "2026-06-12 (internal links added in Phase 22)",
+      "cooldown": "READY \u2014 only links added, no content changed",
+      "fix_applied": "INTERNAL_LINKS_ONLY \u2014 linked from loan-calculator and investment-return calculator via calculator-decision-links. Content already strong (short answer, comparison table, alternatives, risks).",
+      "note": "Content quality is high. Deep position is an authority problem, not a content problem. Internal links from indexed pages help but don't fix systemic authority gap."
+    },
+    {
+      "rank": 2,
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "query": "investment returns",
+      "impressions_7d": 17,
+      "impressions_28d": 57,
+      "position": 76.8,
+      "reason": "Highest query volume among deep-position calculators. Needs cross-links and authority transfer.",
+      "last_changed": "2026-06-12",
+      "cooldown": "UNTIL_JUN_26",
+      "fix_applied": "CROSS_LINKS \u2014 linked from retirement-planning, compound-interest calculators. Connected to decision pages (401k-vs-taxable-investing, pay-off-student-loans-or-invest) via contextual linking system.",
+      "note": "Calculator has rich content (formula, example, keyFactors, tips, takeaways). Deep position is authority gap."
+    },
+    {
+      "rank": 3,
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "query": "tax calculator 2023 / 2026 / free tax calculator",
+      "impressions_7d": 58,
+      "impressions_28d": 58,
+      "position": 87.6,
+      "reason": "Highest total impressions. Multiple diverse queries. Deep position suggests authority gap, not content gap.",
+      "last_changed": "2026-06-12",
+      "cooldown": "UNTIL_JUN_26",
+      "fix_applied": "CROSS_LINKS \u2014 linked from geo page (philadelphia-pa), connected to decision pages (what-tax-bracket-am-i-in). Added reciprocal links to related guide pages.",
+      "note": "Calculator has rich content. Position 87.6 means it's indexed but heavily penalized by low domain authority. Backlinks are the systemic fix."
+    }
+  ],
+  "key_insight": "All 3 high-value real pages have GOOD content. Their deep positions (52-88) point to a systemic site authority gap, not content quality issues. Internal links and cross-links help crawl but won't dramatically improve rankings. The systemic fix is backlinks."
+}

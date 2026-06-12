@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-12",
+  "generated": "2026-06-12T17:37:02.385390+00:00",
+  "checks": {
+    "homepage": "HTTP 200",
+    "sitemap": "HTTP 200",
+    "robots": "HTTP 200"
+  },
+  "gsc_data": {
+    "status": "LIVE_API_OK",
+    "impressions": 415,
+    "clicks": 0,
+    "freshness": "FRESH"
+  },
+  "deployment": {
+    "latest": "Phase 24 embed framing v3 \u2014 READY",
+    "github_integration": "active"
+  }
+}

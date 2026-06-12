@@ -1,92 +1,37 @@
 {
-  "run_id": "phase19-2026-06-11",
-  "date": "2026-06-11",
-  "generated": "2026-06-11T15:12:00+03:00",
+  "run_id": "phase19-2026-06-12",
+  "date": "2026-06-12",
+  "generated": "2026-06-12T17:35:55.818903+00:00",
   "work_status": "completed",
   "gsc_api_raw": {
-    "impressions": 499,
+    "impressions": 415,
     "clicks": 0,
-    "pages_with_impressions": 52,
-    "avg_position": 33.8,
-    "date_range": "2026-05-31 to 2026-06-07"
+    "pages_with_impressions": 48,
+    "avg_position": 38.3,
+    "date_range": "2026-06-03 to 2026-06-09",
+    "freshness": "FRESH (3-window verified)"
   },
   "actions_taken": {
-    "ctr_fixes": 5,
-    "template_meta_fixes": 4,
-    "internal_links_added": 12,
+    "ctr_fixes": 0,
+    "template_meta_fixes": 0,
+    "internal_links_added": 0,
     "new_pages": 0,
     "outreach_sent": 0,
     "outreach_replies": 0,
-    "tool_audits": 4,
-    "deploy": "deployed"
+    "tool_audits": 1,
+    "deploy": "pending"
   },
-  "ctr_fixes": [
-    {
-      "type": "template",
-      "page_type": "loan-calculator tool variants",
-      "file": "src/lib/programmatic-seo/seo-utils.ts",
-      "change": "Title: '$3,000 Loan: 24% APR 2-Year — What's YOUR Payment?' (was 'Loan Calculator 2026 — Free Monthly Payment Tool'). Applied to ALL loan tool variants.",
-      "affected_pages_count": "~150+ tool variants"
-    },
-    {
-      "type": "meta",
-      "page_type": "loan-calculator tool variants",
-      "file": "src/lib/programmatic-seo/seo-utils.ts",
-      "change": "Meta: 'Find out YOUR exact monthly payment...' (was 'See your exact monthly payment...'). Curiosity hook replaces answer-giving pattern."
-    },
-    {
-      "type": "meta",
-      "page_type": "mortgage-calculator tool variants",
-      "file": "src/lib/programmatic-seo/seo-utils.ts",
-      "change": "Meta: 'What's YOUR monthly payment for a $X home?' (was 'Free mortgage calculator for a $X home'). Question format forces click."
-    },
-    {
-      "type": "meta",
-      "page_type": "investment-return tool variants",
-      "file": "src/lib/programmatic-seo/seo-utils.ts",
-      "change": "Meta: Removed finalValue reveal. 'Calculate YOUR exact investment return' (was 'Calculate the total return... with a final value of $X')."
-    },
-    {
-      "type": "meta",
-      "page_type": "compound-interest tool variants",
-      "file": "src/lib/programmatic-seo/seo-utils.ts",
-      "change": "Meta: 'How much will $X grow at Y%?' (was 'Calculate compound interest on $X at Y%'). Question format forces click."
-    }
-  ],
-  "internal_links_added": {
-    "tax-calculator": ["+1 (bezos zero income tax)"],
-    "401k-calculator": ["+2 (retirement cost 2.5M, social security COLA)"],
-    "investment-return": ["+2 (political risk, lowes stock)"],
-    "budget-planner": ["+2 (trump gas tax, florida insurance)"],
-    "mortgage-calculator": ["+3 (mortgage rates june, hungary rate cut, new federal housing)"],
-    "mortgage-affordability": ["+2 (housing affordability, mortgage rates 9-month high)"],
-    "total": 12
+  "freeze_compliance": {
+    "thin_template_freeze": "RESPECTED - No template-level tool/scenario CTR changes",
+    "real_page_focus": "RESPECTED - Only real pages (calculators, decisions) reviewed",
+    "compound_interest_canonical": "VERIFIED_CLEAN - All internal links use /calculators/compound-interest"
   },
-  "tool_audits": [
-    {"url": "/tools/mortgage-900k-30yr-7pct", "status": 200, "pos": 3.0, "imp": 9, "clicks": 0, "note": "P1 position, zero clicks — snippet cannibalization. Fixed via mortgage meta template."},
-    {"url": "/tools/mortgage-200k-30yr-6pct", "status": 200, "pos": 6.6, "imp": 14, "clicks": 0, "note": "Page 1, zero clicks. Fixed via mortgage meta template."},
-    {"url": "/tools/compound-500k-15yr-5pct", "status": 200, "pos": 9.8, "imp": 13, "clicks": 0, "note": "Near page 1, zero clicks. Fixed via compound meta template."},
-    {"url": "/tools/loan-3k-2yr-24pct", "status": 200, "pos": 5.3, "imp": 3, "clicks": 0, "note": "Page 1, zero clicks. Fixed via loan title + meta template."}
-  ],
-  "first_click_watchlist": {
-    "top_contender": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-    "impressions": 130,
-    "position": 11.9,
-    "clicks": 0,
-    "status": "Cooldown expires today (Jun 9 fix). Monitoring for click."
-  },
-  "outreach_status": {
-    "total_sent": 20,
-    "replies": 0,
-    "backlinks": 0,
-    "next_followups_due": "Jun 13",
-    "action_today": "None — no replies to handle, next follow-ups in 2 days."
-  },
-  "files_modified": [
-    "src/lib/programmatic-seo/seo-utils.ts",
-    "src/lib/calculator-blog-links.ts",
-    ".optimizer-data/phase19-daily-health-2026-06-11.json"
-  ],
-  "commits": ["f5dc2b0 — Phase 19: Daily run — 2026-06-11 — 5 CTR template fixes + 12 internal links"],
-  "deploy_status": "deployed (GitHub integration auto-deploy)"
+  "observations": {
+    "top_impression_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (117 imp, pos 10.8)",
+    "best_decision_page": "/decision/pay-off-debt-or-invest (14 imp, pos 9.9)",
+    "ctr_titles_verified": "pay-off-debt-or-invest and how-much-house-can-i-afford titles/metas are strong",
+    "calculator_rankings": "investment-return (pos 82), tax-calculator (pos 88), retirement-planning (pos 87) - deep rankings",
+    "outreach_follow_ups": "8 follow-ups due Jun 13",
+    "phase_24_deploy": "Embed framing v3 fix live"
+  }
 }

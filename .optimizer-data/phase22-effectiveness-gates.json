@@ -1,0 +1,39 @@
+{
+  "title": "Phase 22.1 \u2014 Effectiveness Gates",
+  "generated": "2026-06-12T01:00:00Z",
+  "gates": [
+    {
+      "action": "Blog 20000-loan CTA upgrade (Phase 22 deploy)",
+      "expected_effect": "CTR improvement on position 7.2 query within 7-14 days",
+      "expected_window": "7-14 days (by Jun 26)",
+      "success": ">=1 click on blog/20000-loan in GSC",
+      "failure": "0 clicks after 21 days",
+      "correction": "Improve meta description to better match query intent"
+    },
+    {
+      "action": "Internal authority concentration (15 new links today, 38 cumulative)",
+      "expected_effect": "Crawl depth improvement. Position improvement on linked calculators within 14-28 days.",
+      "expected_window": "14-28 days",
+      "success": "Avg position improvement >= 5 points on at least 2 target calculators",
+      "failure": "No position improvement after 28 days",
+      "correction": "Internal links insufficient \u2014 need external authority (backlinks). Accelerate outreach."
+    },
+    {
+      "action": "Decision pay-off-debt-or-invest authority reinforcement",
+      "expected_effect": "Position recovery from 52 toward prior 16.3 within 14 days",
+      "expected_window": "14 days",
+      "success": "Position improves to <30",
+      "failure": "Position stays >50 after 14 days",
+      "correction": "Page needs external links. Include in outreach pitch."
+    },
+    {
+      "action": "Outreach V2 follow-up (Jun 13, max 12)",
+      "expected_effect": ">=1 reply or backlink within 14 days",
+      "expected_window": "7-21 days",
+      "success": ">=1 reply OR backlink",
+      "failure": "0 replies AND 0 backlinks after 21 days",
+      "correction": "Revise pitch. Try widget/embed value angle. Different prospect types."
+    }
+  ],
+  "phase_success_condition": "FIRST_CONTENT_CLICK achieved (not branded homepage click)"
+}

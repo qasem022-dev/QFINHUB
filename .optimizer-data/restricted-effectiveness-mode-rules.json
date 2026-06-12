@@ -1,0 +1,74 @@
+{
+  "title": "Phase 21.6 — Restricted Effectiveness Mode Rules",
+  "generated": "2026-06-12T00:15:00Z",
+  "effective": "2026-06-12",
+  "reason": "With 7 indexing requests pending and effectiveness measurement beginning, daily loop must operate in RESTRICTED_EFFECTIVENESS mode. This prevents actions that interfere with measurement or violate indexing request policy.",
+  "mode": "RESTRICTED_EFFECTIVENESS",
+  "duration": "Until Phase 21.6 monitoring completes OR Qasem lifts restriction",
+  "allowed_actions": {
+    "improve_real_calculators": {
+      "examples": ["mortgage-calculator", "loan-calculator", "compound-interest", "investment-return", "tax-calculator", "retirement-planning"],
+      "allowed_changes": ["title/meta improvement", "FAQ addition", "short answer", "real example", "schema check", "internal links to/from"],
+      "constraint": "Must target real value for users, not keyword-stuffing"
+    },
+    "improve_real_guides": {
+      "examples": ["how-to-use-*", "any /guides/ page with unique content"],
+      "allowed_changes": ["content depth", "FAQ", "related calculator links", "internal links"],
+      "constraint": "Must NOT be thin/formula pages"
+    },
+    "improve_real_decision_pages": {
+      "examples": ["how-much-house-can-i-afford", "pay-off-debt-or-invest", "rent-vs-buy-*"],
+      "allowed_changes": ["title/meta improvement", "FAQ", "calculator CTA", "example scenario", "internal links"],
+      "constraint": "Must NOT be thin/formula pages"
+    },
+    "add_internal_links_to_real_pages": {
+      "source_pages": "Any indexed page with impressions",
+      "target_pages": "Real calculators, real guides, real decisions, real blogs",
+      "constraint": "Do NOT link to thin tools/scenarios as primary destinations"
+    },
+    "monitor_first_click_candidates": {
+      "allowed": ["Check GSC for new clicked pages daily", "Update first-click-watchlist.json", "Identify near-winner pages (pos ≤15, 0 clicks)"],
+      "constraint": "Focus on real pages, not thin variants"
+    },
+    "prepare_outreach_v2_followups": {
+      "allowed": ["Review prospect list", "Draft follow-up templates", "Prepare Jun 13 material"],
+      "constraint": "Do NOT send before Jun 13. Do NOT ask for backlinks in first contact."
+    },
+    "audit_thin_tools_scenarios": {
+      "allowed": ["Classify", "Document", "Audit canonical/internal links", "Identify parent pages"],
+      "constraint": "Audit only — no optimization, no SEO changes"
+    },
+    "parent_strengthening": {
+      "allowed": ["Add internal links from thin variants to parent", "Improve parent content", "Verify parent canonical/sitemap/robots"],
+      "constraint": "Strengthen parents, NOT thin variants"
+    }
+  },
+  "blocked_actions": {
+    "thin_tool_seo_as_standalone": "Prohibited. No CTR/title/meta improvements for /tools/ or /scenario/ variant pages.",
+    "mass_new_pages": "Prohibited. No batch page creation.",
+    "title_only_changes_without_measurement_reason": "Prohibited. Title changes must have a measurement hypothesis and expected effect.",
+    "repeated_indexing_requests": "Prohibited. Follow daily-indexing-request-rules.json. 7-day minimum cooldown.",
+    "unapproved_cleanup": "Prohibited. No noindex, canonical, redirect, delete, or sitemap removal without Auditor + Technical Guardian approval.",
+    "indexing_api": "Prohibited. Never use Google Indexing API.",
+    "validate_fix": "Prohibited. DO_NOT_VALIDATE_YET.",
+    "cached_gsc_data": "Prohibited. Only fresh API pulls with 3-window verification.",
+    "corrected_multiplied_kpis": "Prohibited. RAW_GSC_API_ONLY."
+  },
+  "daily_execution_gates": {
+    "gate_1_gsc_freshness": "3-window GSC pull must show variation. If identical across 3 windows: BLOCKED.",
+    "gate_2_real_page_focus": "All SEO changes must target real pages (calculators, guides, decisions, blogs). If only thin tool changes: BLOCKED.",
+    "gate_3_thin_tool_freeze": "No thin tool/scenario SEO changes. If detected: BLOCKED and ROLLBACK.",
+    "gate_4_cooldown_check": "Pages changed within last 14 days not eligible for re-edit unless emergency.",
+    "gate_5_indexing_request_rules": "No repeat indexing requests within 7 days."
+  },
+  "deploy_rules": {
+    "deploy_allowed": true,
+    "post_deploy_ops": "./scripts/post-deploy-ops.sh",
+    "constraints": [
+      "Only deploy if build passes",
+      "Only deploy if at least 1 gate 1-4 action completed",
+      "Scenario sitemap must NOT be submitted",
+      "Risky automations must remain DISABLED"
+    ]
+  }
+}

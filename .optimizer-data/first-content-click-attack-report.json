@@ -1,0 +1,56 @@
+{
+  "title": "Phase 23 \u2014 First Content Click Attack (3 Pages Only)",
+  "generated": "2026-06-12T01:30:00Z",
+  "rule": "3 real pages max. Position <=20 preferred. Impressions >0. No click. Not edited in last 48h unless emergency. No thin tools/scenarios.",
+  "pages": [
+    {
+      "rank": 1,
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "impressions_7d": 69,
+      "position": 7.2,
+      "clicks": 0,
+      "why_not_clicking": "Above-fold CTA was pointing to a thin tool page (tools/loan-20k-5yr-8pct). User saw a thin preset calculator instead of the real loan calculator.",
+      "fix_applied": "Phase 22: Replaced thin tool CTA with real loan calculator. Added result-first heading: 'Monthly Payment: $405.53'. Added prominent callout box. Fixed FAQ links.",
+      "last_changed": "2026-06-12 (today \u2014 Phase 22 commit 818b205)",
+      "cooldown": "UNTIL_JUN_26",
+      "expected_result_window": "7-14 days (by Jun 26)",
+      "expected_effect": "CTR improvement from 0% to >0% within 7 days of Google re-crawling",
+      "next_action_if_fail": "Improve meta description to better match query intent. Add FAQ schema."
+    },
+    {
+      "rank": 2,
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "query": "(multiple compound interest queries)",
+      "impressions_7d": 1,
+      "impressions_28d": 1,
+      "position_28d": 8,
+      "clicks": 0,
+      "why_not_clicking": "Position 8 is good but 1 impression means very low query volume for this page. May be competing with thin compound tool variants that have higher impressions.",
+      "fix_applied": "Phase 22: Cross-links from investment-return, retirement-planning, guides. Parent strengthening via internal links.",
+      "last_changed": "2026-06-12",
+      "cooldown": "UNTIL_JUN_26",
+      "expected_result_window": "14-21 days",
+      "expected_effect": "Minor \u2014 1 impression makes this a low-volume test. Parent authority transfer may help long-term.",
+      "next_action_if_fail": "Accept this page has low search volume. Focus on higher-volume parents."
+    },
+    {
+      "rank": 3,
+      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "query": "should i pay off debt or invest calculator",
+      "impressions_7d": 2,
+      "impressions_28d": 64,
+      "position_7d": 52,
+      "position_28d": 16.3,
+      "clicks": 0,
+      "why_not_clicking": "Position dropped from 16.3 to 52 \u2014 page lost visibility. At pos 16.3 with 64 impressions it had click potential. Now at pos 52 it's invisible.",
+      "fix_applied": "Phase 22.1: Internal links from loan-calculator, investment-return, compound-interest.",
+      "last_changed": "2026-06-12",
+      "cooldown": "UNTIL_JUN_26 (only links added, no content change)",
+      "expected_result_window": "14-28 days",
+      "expected_effect": "Position recovery from 52 toward 16.3 range. Internal links may help but authority gap is the real issue.",
+      "next_action_if_fail": "Decision pages need backlinks. Include pay-off-debt-or-invest in outreach pitch as linkable asset."
+    }
+  ],
+  "honest_assessment": "Only 1 of 3 pages (blog/20000-loan) has both high impressions AND reasonable position. The other 2 are deep-position pages where the fix is authority (backlinks), not content. The 3-page limit forces focus: other pages should NOT be tweaked unless they become position 1-20 with impressions."
+}

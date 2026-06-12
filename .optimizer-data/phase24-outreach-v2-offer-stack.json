@@ -1,0 +1,139 @@
+{
+  "phase": "24",
+  "task": "outreach-v2-offer-stack",
+  "version": "2.0",
+  "philosophy": "Every offer must make a small publisher say 'This helps my readers.' No backlink ask in first message.",
+  "offers": [
+    {
+      "id": "offer-A",
+      "name": "Mortgage Widget Embed",
+      "target_site_types": [
+        "mortgage blogs",
+        "real estate education sites",
+        "first-time homebuyer blogs",
+        "real estate agent blogs",
+        "mortgage broker blogs",
+        "housing counseling nonprofits"
+      ],
+      "best_page_type_to_pitch": [
+        "mortgage affordability articles",
+        "how much house can I afford guides",
+        "first-time homebuyer checklists",
+        "mortgage rate comparison pages",
+        "home buying step-by-step guides"
+      ],
+      "offer_text": "Free embeddable mortgage affordability calculator \u2014 your readers enter income/debts/down payment, see exactly what home price fits their budget. No signup, no data collection, mobile-friendly.",
+      "example_cta": "Would this be useful for your readers? I can send the embed code \u2014 takes 30 seconds to add.",
+      "asset_url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "embed_url": "https://www.qfinhub.com/embed/mortgage-affordability",
+      "risk": "low \u2014 non-competitive, genuinely useful for real estate audience",
+      "expected_reply_rate": "8-15% if targeted correctly (small mortgage blogs)",
+      "tracking_field": "offer_mortgage_widget"
+    },
+    {
+      "id": "offer-B",
+      "name": "Debt Payoff Widget Embed",
+      "target_site_types": [
+        "debt payoff blogs",
+        "credit counseling sites",
+        "budgeting blogs",
+        "student loan blogs",
+        "FIRE/debt-free journey blogs",
+        "personal finance coaching sites"
+      ],
+      "best_page_type_to_pitch": [
+        "debt snowball vs avalanche articles",
+        "how to pay off debt fast guides",
+        "credit card payoff calculators",
+        "student loan repayment strategies",
+        "debt-free journey updates"
+      ],
+      "offer_text": "Free snowball vs avalanche debt payoff calculator \u2014 your readers input their actual debts and see side-by-side which method saves more money and gets them debt-free faster. No signup, no data collection.",
+      "example_cta": "Would your readers find this useful? I can send the one-line embed code.",
+      "asset_url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "embed_url": "https://www.qfinhub.com/embed/debt-payoff",
+      "risk": "low \u2014 strong fit for debt-focused blogs",
+      "expected_reply_rate": "10-18% for debt-focused small blogs",
+      "tracking_field": "offer_debt_widget"
+    },
+    {
+      "id": "offer-C",
+      "name": "Custom Calculation Example",
+      "target_site_types": [
+        "any finance blog with a specific article that uses numbers/calculations",
+        "retirement blogs",
+        "investing education sites",
+        "tax planning blogs",
+        "student loan blogs"
+      ],
+      "best_page_type_to_pitch": [
+        "articles that say 'if you save X at Y% for Z years...'",
+        "retirement withdrawal rate articles",
+        "compound interest explainers",
+        "tax bracket articles",
+        "how much to save for college articles"
+      ],
+      "offer_text": "I noticed your article about [specific topic] uses [specific calculation]. I can create a custom interactive version of that calculation \u2014 readers can plug in their own numbers instead of just reading a static example. No signup, completely free.",
+      "example_cta": "Would a custom interactive version of that calculation be useful for your article? Happy to build one for you.",
+      "asset_url": "custom \u2014 built per request",
+      "embed_url": "custom",
+      "risk": "medium \u2014 requires manual work per prospect, but highest conversion potential",
+      "expected_reply_rate": "15-25% for well-matched articles",
+      "tracking_field": "offer_custom_calc"
+    },
+    {
+      "id": "offer-D",
+      "name": "Broken/Outdated Resource Replacement",
+      "target_site_types": [
+        "resource pages with old/broken calculator links",
+        "blog roundup posts listing calculators",
+        "financial advisor sites with tool pages",
+        "nonprofit financial education pages"
+      ],
+      "best_page_type_to_pitch": [
+        "resource pages with 404 calculator links",
+        "pages referencing calculators that no longer exist",
+        "outdated Flash/Java calculators",
+        "pages with calculators that don't work on mobile"
+      ],
+      "offer_text": "I noticed your [resource page / article] links to [broken/outdated calculator]. I have an updated, mobile-friendly version that does the same thing \u2014 your readers would get a working tool instead of a dead link. Free, no signup.",
+      "example_cta": "Would you like the updated link/embed to replace the broken one?",
+      "asset_url": "https://www.qfinhub.com/calculators/[relevant-slug]",
+      "embed_url": "https://www.qfinhub.com/embed/[relevant-slug]",
+      "risk": "low \u2014 fixing a broken resource is genuinely helpful",
+      "expected_reply_rate": "12-20% \u2014 site owners hate broken links",
+      "tracking_field": "offer_resource_replacement"
+    },
+    {
+      "id": "offer-E",
+      "name": "Mini Data/Comparison Table",
+      "target_site_types": [
+        "finance newsletters",
+        "data-driven personal finance blogs",
+        "mortgage rate comparison sites",
+        "investing education blogs"
+      ],
+      "best_page_type_to_pitch": [
+        "articles comparing financial products",
+        "market overview posts",
+        "'X vs Y' comparison articles",
+        "rate trend articles"
+      ],
+      "offer_text": "I can give you a small calculation table for your article about [topic] \u2014 showing [specific comparison] at different [variables]. Your readers get real numbers instead of general advice. No signup, I'll create it specifically for your article.",
+      "example_cta": "Would a comparison table with real numbers help your article? I can put one together.",
+      "asset_url": "custom",
+      "embed_url": "custom",
+      "risk": "medium \u2014 manual creation needed",
+      "expected_reply_rate": "10-15%",
+      "tracking_field": "offer_data_table"
+    }
+  ],
+  "do_not_offer": [
+    "guest posts (until authority established)",
+    "link exchanges",
+    "paid placements",
+    "sponsored content",
+    "infographics (not built yet)",
+    "original data studies (not built yet)"
+  ]
+}

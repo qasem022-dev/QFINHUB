@@ -1,0 +1,77 @@
+{
+  "title": "Phase 22 — Group C Indexed-Invisible Push Log",
+  "generated": "2026-06-12T00:45:00Z",
+  "pages_improved": [
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "status": "INDEXED_0_IMPRESSIONS",
+      "action": "Already has 11 blog entry links via calculator-blog-links.ts. Parent well-linked.",
+      "links_added": 0,
+      "parent_strengthened": true
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "status": "INDEXED_0_IMPRESSIONS",
+      "action": "Blog 20000-loan CTA now points to this calculator instead of thin tool. 7 blog links already active.",
+      "links_added": 1,
+      "parent_strengthened": true,
+      "thin_tool_fix": "Blog 20000-loan CTA changed from /tools/loan-20k-5yr-8pct to /calculators/loan-calculator"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "status": "INDEXED_0_IMPRESSIONS",
+      "action": "Already has 7 blog links. Cross-linked to investment-return calculator.",
+      "links_added": 0,
+      "parent_strengthened": false
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "status": "INDEXED_5_IMPRESSIONS_28D",
+      "action": "Has 5 impressions. Connected from tax-calculator parent. Needs FAQ.",
+      "links_added": 1,
+      "parent_strengthened": false
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "status": "INDEXED_0_IMPRESSIONS",
+      "action": "No impressions. Connected from mortgage-calculator parent.",
+      "links_added": 1,
+      "parent_strengthened": false
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "status": "INDEXED_3_IMPRESSIONS_28D",
+      "action": "Has 3 impressions at pos 12.3 — good ranking. Connected from 401k-calculator.",
+      "links_added": 1,
+      "parent_strengthened": false
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "status": "INDEXED_1_IMPRESSION",
+      "action": "Minimal impressions. Connected from investment-return calculator.",
+      "links_added": 1,
+      "parent_strengthened": false
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "status": "INDEXED_1_IMPRESSION",
+      "action": "Minimal impressions. Connected from loan-calculator parent.",
+      "links_added": 1,
+      "parent_strengthened": false
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/retirement-withdrawal",
+      "status": "INDEXED_0_IMPRESSIONS",
+      "action": "Connected from retirement-planning parent. Already linked.",
+      "links_added": 0,
+      "parent_strengthened": false
+    }
+  ],
+  "summary": {
+    "total_pages": 9,
+    "pages_with_new_links": 6,
+    "total_new_links": 6,
+    "thin_tool_fixes": 1,
+    "note": "Group C pages are indexed but 0-7 impressions. Primary gap is site authority (backlinks), not internal linking. Internal links help crawl but won't fix ranking alone. Outreach is the systemic fix."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Phase 21 — Next Daily Priority Queue",
+  "generated": "2026-06-12T00:15:00Z",
+  "applies_to": "Next autonomous daily run (dcba952b4c45 or manual)",
+  "mode": "RESTRICTED_EFFECTIVENESS",
+  "gsc_live_baseline": {
+    "pulled_at": "2026-06-12T00:12:21Z",
+    "current_7d": {"impressions": 303, "clicks": 0, "pages": 43},
+    "trend": "DECLINING (-36% over 3 windows)",
+    "first_content_click": "NOT ACHIEVED",
+    "first_7d_click": "NOT ACHIEVED",
+    "branded_only_click": true
+  },
+  "priority_queue": [
+    {
+      "priority": 1,
+      "action": "Check whether any first content click occurred",
+      "details": "Pull fresh GSC 7d + 28d page dimension. Check for clicks on any page EXCEPT homepage. Update first-click files.",
+      "files_to_update": [".optimizer-data/first-click-baseline-report.json", ".optimizer-data/first-click-watchlist.json"],
+      "blocking": false
+    },
+    {
+      "priority": 2,
+      "action": "Monitor the 7 indexing request URLs",
+      "details": "NO — do not re-request. Day 0 is today (Jun 12). Next monitoring window is Day 3 (Jun 15). Just document current status.",
+      "files_to_check": [".optimizer-data/phase21-effectiveness-dashboard.json"],
+      "blocking": false
+    },
+    {
+      "priority": 3,
+      "action": "Strengthen Group C indexed-but-invisible pages",
+      "details": "For each of the 8 indexed-invisible pages: check if content is adequate. Add FAQ section where missing. Add internal links from pages with impressions. Improve meta description. Pages: mortgage-calculator, loan-calculator, 6 decision pages, retirement-withdrawal.",
+      "max_pages": 4,
+      "files_to_update": [".optimizer-data/parent-calculator-strengthening-log.json"],
+      "blocking": false
+    },
+    {
+      "priority": 4,
+      "action": "Add 15–30 internal links to real parent pages",
+      "details": "From pages with current GSC impressions → to real parent calculators and guides. Priority targets: compound-interest, mortgage-calculator, loan-calculator, investment-return, tax-calculator, retirement-planning.",
+      "min_links": 15,
+      "max_links": 30,
+      "source_pages": "Any of the 43 pages currently getting impressions (real pages only, NOT thin tools/scenarios)",
+      "files_to_update": [".optimizer-data/internal-linking-log.json"],
+      "blocking": false
+    },
+    {
+      "priority": 5,
+      "action": "Audit 10 discovered low-value pages",
+      "details": "From the 43 pages with impressions, identify thin/near-duplicate pages. Classify: KEEP / CANONICALIZE / SOFTEN. Do NOT execute canonical/noindex.",
+      "files_to_update": [".optimizer-data/discovered-low-value-audit.json"],
+      "blocking": false
+    },
+    {
+      "priority": 6,
+      "action": "Prepare Jun 13 outreach follow-ups",
+      "details": "Review outreach-v2-followup-jun13-plan.json. Update templates. Do NOT send before Jun 13.",
+      "files_to_update": [".optimizer-data/outreach-v2-followup-jun13-plan.json"],
+      "blocking": false
+    },
+    {
+      "priority": 7,
+      "action": "DO NOT perform cleanup",
+      "details": "No sitemap removal, no noindex, no canonical, no redirect, no delete. Cleanup test remains BLOCKED_PENDING_DATA_PIPELINE_AND_TEMPLATE_FIX.",
+      "blocking": true
+    }
+  ],
+  "do_not_execute": [
+    "Index indexing requests for same 7 URLs",
+    "Click Validate Fix",
+    "Use Google Indexing API",
+    "Create mass pages",
+    "Optimize thin tools/scenarios as standalone SEO targets",
+    "Bulk noindex/canonical/redirect/delete",
+    "Bulk sitemap removal",
+    "Use stale/cached GSC data",
+    "Count LIKELY_REQUESTED as confirmed",
+    "Count branded homepage click as content success",
+    "Restart risky automations"
+  ],
+  "deploy_decision": "Deploy only if priority 3 or 4 produces code changes."
+}

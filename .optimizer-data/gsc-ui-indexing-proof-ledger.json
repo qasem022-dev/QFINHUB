@@ -1,42 +1,59 @@
 {
-  "title": "GSC UI Indexing Requests \u2014 Phase 21.5 Complete",
+  "title": "GSC UI Indexing Requests \u2014 Phase 22.1 Semantics Correction",
   "executed_at": "2026-06-12T00:04:47Z",
+  "updated_at": "2026-06-12T01:00:00Z",
   "total": 7,
+  "phase": "22.1 \u2014 Metrics Semantics Fix",
   "results": [
     {
       "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
-      "status": "CLICKED_NO_CONFIRMATION"
+      "group": "A_discovered_not_indexed",
+      "status": "LIKELY_REQUESTED",
+      "indexed_confirmed": false
     },
     {
       "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
-      "status": "CLICKED_NO_CONFIRMATION"
+      "group": "A_discovered_not_indexed",
+      "status": "LIKELY_REQUESTED",
+      "indexed_confirmed": false
     },
     {
       "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
-      "status": "REQUESTED"
+      "group": "A_discovered_not_indexed",
+      "status": "CONFIRMED_REQUESTED",
+      "indexed_confirmed": false
     },
     {
       "url": "https://www.qfinhub.com/calculators/simple-interest",
-      "status": "REQUESTED"
+      "group": "B_unknown_to_google",
+      "status": "CONFIRMED_REQUESTED",
+      "indexed_confirmed": false
     },
     {
       "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
-      "status": "CLICKED_NO_CONFIRMATION"
+      "group": "B_unknown_to_google",
+      "status": "LIKELY_REQUESTED",
+      "indexed_confirmed": false
     },
     {
       "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "status": "REQUESTED"
+      "group": "B_unknown_to_google",
+      "status": "CONFIRMED_REQUESTED",
+      "indexed_confirmed": false
     },
     {
       "url": "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira",
-      "status": "REQUESTED"
+      "group": "B_unknown_to_google",
+      "status": "CONFIRMED_REQUESTED",
+      "indexed_confirmed": false
     }
   ],
   "summary": {
-    "requested": 4,
+    "confirmed_requested": 4,
+    "likely_requested": 3,
+    "newly_indexed_confirmed": 0,
     "already_indexed": 0,
-    "already_requested": 0,
-    "no_result": 0,
-    "not_found": 0
+    "repeat_blocked_until": "2026-06-15",
+    "critical_note": "REQUESTED \u2260 INDEXED. 0 of 7 URLs have been confirmed as newly indexed. Day 3 recheck required."
   }
 }

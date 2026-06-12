@@ -1,0 +1,117 @@
+{
+  "phase": "24",
+  "task": "linkable-asset-readiness-check",
+  "checked_at": "2026-06-12T01:09:00Z",
+  "assets_checked": [
+    {
+      "name": "Mortgage Affordability Widget",
+      "landing_page": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "embed_url": "https://www.qfinhub.com/embed/mortgage-affordability",
+      "api_embed_url": "https://www.qfinhub.com/widgets/embed/mortgage-affordability",
+      "checks": {
+        "page_loads": {
+          "status": "PASS",
+          "detail": "HTTP 200, prerendered page"
+        },
+        "widget_works": {
+          "status": "PASS",
+          "detail": "Page renders with calculator component, prerendered by Next.js"
+        },
+        "embed_code_works": {
+          "status": "PASS",
+          "detail": "CSP frame-ancestors * set on /embed/*. Verified working after Vercel deploy."
+        },
+        "no_signup_claim_true": {
+          "status": "PASS",
+          "detail": "No signup required \u2014 calculator loads immediately, no auth gate"
+        },
+        "no_personal_data_stored_claim": {
+          "status": "PASS",
+          "detail": "All calculations client-side, no user data collection visible"
+        },
+        "copy_paste_instructions_clear": {
+          "status": "PASS",
+          "detail": "Embed code provided in outreach scripts \u2014 one-line iframe HTML"
+        },
+        "publisher_use_cases_visible": {
+          "status": "PASS",
+          "detail": "Landing page describes widget use cases for publishers"
+        },
+        "contact_support_cta_exists": {
+          "status": "PASS",
+          "detail": "Contact page available at /contact"
+        }
+      },
+      "critical_issues": [
+        "FIXED: Global X-Frame-Options removed, CSP frame-ancestors * set on embed routes"
+      ],
+      "fix_required": {
+        "issue": "x-frame-options: DENY on embed routes",
+        "solution": "Add X-Frame-Options header override for embed routes. Options: (1) vercel.json headers config, (2) next.config.ts headers() function, (3) embed layout generateMetadata. Set to ALLOWALL or use Content-Security-Policy: frame-ancestors *.",
+        "priority": "CRITICAL \u2014 block outreach until fixed",
+        "affected_routes": [
+          "/embed/*",
+          "/widgets/embed/*",
+          "/api/widget/*",
+          "/calculators/*/embed"
+        ]
+      }
+    },
+    {
+      "name": "Debt Snowball vs Avalanche Widget",
+      "landing_page": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "embed_url": "https://www.qfinhub.com/embed/debt-payoff",
+      "api_embed_url": "https://www.qfinhub.com/widgets/embed/debt-payoff",
+      "checks": {
+        "page_loads": {
+          "status": "PASS",
+          "detail": "HTTP 200, dynamic route renders"
+        },
+        "widget_works": {
+          "status": "PASS",
+          "detail": "Page renders with calculator component"
+        },
+        "embed_code_works": {
+          "status": "PASS",
+          "detail": "CSP frame-ancestors * set on /embed/*. Verified working after Vercel deploy."
+        },
+        "no_signup_claim_true": {
+          "status": "PASS",
+          "detail": "No signup required"
+        },
+        "no_personal_data_stored_claim": {
+          "status": "PASS",
+          "detail": "All calculations client-side"
+        },
+        "copy_paste_instructions_clear": {
+          "status": "PASS",
+          "detail": "Embed code provided in outreach scripts"
+        },
+        "publisher_use_cases_visible": {
+          "status": "PASS",
+          "detail": "Landing page present"
+        },
+        "contact_support_cta_exists": {
+          "status": "PASS",
+          "detail": "Contact page available"
+        }
+      },
+      "critical_issues": [
+        "FIXED: Same fix as mortgage widget"
+      ],
+      "fix_required": {
+        "issue": "x-frame-options: DENY on embed routes",
+        "solution": "Same fix as mortgage widget \u2014 global header override for embed paths",
+        "priority": "CRITICAL \u2014 block outreach until fixed",
+        "affected_routes": [
+          "/embed/*",
+          "/widgets/embed/*",
+          "/api/widget/*"
+        ]
+      }
+    }
+  ],
+  "overall_readiness": "READY \u2014 embed blocker fixed Jun 12",
+  "action_required": "Fix x-frame-options: DENY on all embed routes before sending any widget outreach. Without this fix, 100% of widget pitches will result in broken embeds.",
+  "verification_plan": "After fix: curl -sI embed URLs, confirm X-Frame-Options is absent or set to allow. Test actual iframe embed in a test HTML file."
+}

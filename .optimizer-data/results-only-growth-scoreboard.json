@@ -1,0 +1,118 @@
+{
+  "title": "Phase 23 \u2014 Results-Only Growth Scoreboard",
+  "generated": "2026-06-12T01:30:00Z",
+  "rule": "Every action must tie to one measurable KPI. If an action type does not move metrics, it must be stopped or changed.",
+  "metrics": [
+    {
+      "metric": "first_content_click",
+      "current_value": "NOT ACHIEVED",
+      "target_value": ">=1 click on any content page (not homepage)",
+      "deadline": "2026-06-26 (14 days)",
+      "owner_engine": "Content Click Engine",
+      "action_being_tested": "Blog 20000-loan above-fold CTA upgrade (pos 7.2, 69 imp)",
+      "success_threshold": ">=1 content click in GSC 7d",
+      "failure_threshold": "0 content clicks by Jun 26",
+      "correction_rule": "If 0 clicks: improve meta description. If still 0: accept page needs external authority (backlinks) to convert."
+    },
+    {
+      "metric": "weekly_content_clicks",
+      "current_value": 0,
+      "target_value": ">=1 per week",
+      "deadline": "2026-07-03 (21 days)",
+      "owner_engine": "Content Click Engine + Internal Link Engine",
+      "action_being_tested": "Above-fold CTA upgrades + internal link concentration",
+      "success_threshold": ">=1 click in any 7d window",
+      "failure_threshold": "0 clicks across 3 consecutive 7d windows",
+      "correction_rule": "Stop content tweaks. Focus 100% on backlinks. Content quality is not the blocker \u2014 authority is."
+    },
+    {
+      "metric": "impressions_on_real_pages",
+      "current_value": "~180 (estimated from 303 total minus thin tools/homepage)",
+      "target_value": ">250 real page impressions per 7d",
+      "deadline": "2026-07-03",
+      "owner_engine": "Internal Link Engine + Indexing Engine",
+      "action_being_tested": "Internal links from indexed pages \u2192 real calculators",
+      "success_threshold": "Real page impressions grow >20% in 21 days",
+      "failure_threshold": "Real page impressions decline or flat for 21 days",
+      "correction_rule": "Internal links are crawl improvement only. Need external authority (backlinks) for ranking improvement."
+    },
+    {
+      "metric": "avg_position_on_real_pages",
+      "current_value": "~75 (real calculators cluster at pos 70-95)",
+      "target_value": "<50 average",
+      "deadline": "2026-07-10 (28 days)",
+      "owner_engine": "Authority Engine (outreach)",
+      "action_being_tested": "Outreach V2 follow-ups \u2192 backlinks",
+      "success_threshold": "Avg position improves >=10 points",
+      "failure_threshold": "No position improvement",
+      "correction_rule": "Without backlinks, internal-only SEO cannot move real calculator positions. Must get external links."
+    },
+    {
+      "metric": "indexed_high_value_pages",
+      "current_value": "~238 indexed total, but 8 real parents at 0 impressions",
+      "target_value": ">=10 real parent calculators/decisions with >0 impressions",
+      "deadline": "2026-07-10",
+      "owner_engine": "Indexing Engine (GSC UI) + Internal Link Engine",
+      "action_being_tested": "7 GSC UI indexing requests + internal link additions",
+      "success_threshold": ">=2 of 7 requested pages become indexed AND show impressions",
+      "failure_threshold": "0 of 7 requested pages indexed OR indexed but 0 impressions",
+      "correction_rule": "Indexing alone is insufficient. Indexed-but-invisible = authority gap. Need backlinks."
+    },
+    {
+      "metric": "group_ab_indexing_movement",
+      "current_value": "Day 0 \u2014 0 movement",
+      "target_value": ">=3 of 7 URLs change status by Day 14",
+      "deadline": "2026-06-26 (Day 14)",
+      "owner_engine": "Indexing Engine (GSC UI)",
+      "action_being_tested": "GSC UI indexing requests (one-time, no repeat)",
+      "success_threshold": ">=3 URLs show coverageState change",
+      "failure_threshold": "0 coverageState changes by Day 21",
+      "correction_rule": "If 0 movement: pages may have quality or crawl issues beyond indexing request. Investigate content quality + crawl budget."
+    },
+    {
+      "metric": "group_c_indexed_invisible_impressions",
+      "current_value": "0 of 8 Group C pages have impressions",
+      "target_value": ">=2 of 8 gain impressions",
+      "deadline": "2026-07-10 (28 days)",
+      "owner_engine": "Internal Link Engine + Content Upgrade Engine",
+      "action_being_tested": "Internal links from indexed pages + cross-calculator links",
+      "success_threshold": ">=2 Group C pages show >0 impressions",
+      "failure_threshold": "0 Group C pages gain impressions",
+      "correction_rule": "Indexed-but-invisible = Google sees pages but ranks them below page 10. Authority gap. Backlinks needed."
+    },
+    {
+      "metric": "backlinks",
+      "current_value": 0,
+      "target_value": ">=1",
+      "deadline": "2026-06-26 (14 days from outreach follow-up)",
+      "owner_engine": "Outreach Engine",
+      "action_being_tested": "Jun 13 follow-ups (max 12) + widget/embed offers",
+      "success_threshold": ">=1 backlink OR embed usage by Jun 26",
+      "failure_threshold": "0 backlinks AND 0 embed uses by Jun 26",
+      "correction_rule": "Revise pitch. Try different value angle. Consider HARO/journalist outreach for editorial links."
+    },
+    {
+      "metric": "outreach_reply_rate",
+      "current_value": "0/20 (0%)",
+      "target_value": ">=1/12 (8.3%) for follow-ups",
+      "deadline": "2026-06-26",
+      "owner_engine": "Outreach Engine",
+      "action_being_tested": "Shorter value-first follow-up pitch (widget/embed offer, no backlink ask)",
+      "success_threshold": ">=1 reply to 12 follow-ups",
+      "failure_threshold": "0 replies",
+      "correction_rule": "Cold outreach may not work for this niche. Try HARO/journalist outreach or guest posting."
+    },
+    {
+      "metric": "internal_link_impact",
+      "current_value": "38 cumulative links added. 0 measurable ranking change yet.",
+      "target_value": ">=1 linked page shows position improvement >5 points",
+      "deadline": "2026-06-26 (14 days)",
+      "owner_engine": "Internal Link Engine",
+      "action_being_tested": "Contextual links from pages with impressions \u2192 real calculators and decisions",
+      "success_threshold": ">=1 target page position improves >=5 points",
+      "failure_threshold": "0 position movement after 38 links",
+      "correction_rule": "Internal links from 0-authority pages (QFINHUB) to 0-authority pages don't transfer meaningful authority. Need external links."
+    }
+  ],
+  "overall_verdict": "QFINHUB is stuck in a 0-authority trap. Every metric points to the same root cause: NO BACKLINKS. Internal SEO (links, content, indexing requests) has been executed well but cannot overcome the authority gap. The ONLY path to measurable results is external links."
+}

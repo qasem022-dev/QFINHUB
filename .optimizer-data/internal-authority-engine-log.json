@@ -1,254 +1,104 @@
 {
-  "title": "Internal Authority Push \u2014 Phase 21.2 Execution",
-  "generated": "2026-06-11T23:16:27.535722+00:00",
-  "total_links": 40,
-  "links": [
+  "title": "Phase 22.1 \u2014 Internal Authority Concentration Log (Updated)",
+  "generated": "2026-06-12T01:00:00Z",
+  "total_links_added_today": 15,
+  "cumulative_total": 38,
+  "rules": [
+    "No links to thin tools/scenarios",
+    "No exact-match spam",
+    "No sitewide blocks",
+    "Source pages must be relevant"
+  ],
+  "links_added_today": [
     {
-      "source": "mortgage-calculator",
-      "target": "guides/how-to-use-mortgage-calculator",
-      "anchor": "Mortgage Calculator Guide",
-      "group": "A"
+      "source": "calculators/loan-calculator",
+      "target": "decision/pay-off-debt-or-invest",
+      "anchor": "Pay Off Debt or Invest?",
+      "reason": "Calculator \u2192 decision contextual link"
     },
     {
-      "source": "mortgage-affordability",
-      "target": "guides/how-to-use-mortgage-calculator",
-      "anchor": "How to Use the Mortgage Calculator",
-      "group": "A"
+      "source": "calculators/investment-return",
+      "target": "decision/pay-off-debt-or-invest",
+      "anchor": "Should You Invest or Pay Debt?",
+      "reason": "Calculator \u2192 decision"
     },
     {
-      "source": "compound-interest",
-      "target": "guides/how-to-use-compound-interest",
-      "anchor": "Compound Interest Guide",
-      "group": "A"
-    },
-    {
-      "source": "retirement-planning",
-      "target": "guides/how-to-use-retirement-planning",
-      "anchor": "Retirement Planning Guide",
-      "group": "A"
-    },
-    {
-      "source": "401k-calculator",
-      "target": "guides/how-to-use-retirement-planning",
-      "anchor": "Complete Retirement Guide",
-      "group": "A"
-    },
-    {
-      "source": "compound-interest",
-      "target": "calculators/simple-interest",
-      "anchor": "Simple Interest Calculator",
-      "group": "B"
-    },
-    {
-      "source": "tax-calculator",
-      "target": "calculators/capital-gains-tax",
-      "anchor": "Capital Gains Tax Calculator",
-      "group": "B"
-    },
-    {
-      "source": "mortgage-calculator",
-      "target": "compare/compare-30yr-fixed-vs-15yr-fixed",
-      "anchor": "30-Year vs 15-Year Mortgage",
-      "group": "B"
-    },
-    {
-      "source": "retirement-planning",
-      "target": "compare/compare-roth-vs-traditional-ira",
-      "anchor": "Roth vs Traditional IRA",
-      "group": "B"
-    },
-    {
-      "source": "401k-calculator",
-      "target": "compare/compare-roth-vs-traditional-ira",
-      "anchor": "IRA Comparison",
-      "group": "B"
-    },
-    {
-      "source": "tax-calculator",
+      "source": "calculators/tax-calculator",
       "target": "decision/what-tax-bracket-am-i-in",
       "anchor": "What Tax Bracket Am I In?",
-      "group": "C"
+      "reason": "Calculator \u2192 decision"
     },
     {
-      "source": "mortgage-calculator",
-      "target": "decision/should-i-refinance-my-mortgage",
-      "anchor": "Should You Refinance?",
-      "group": "C"
+      "source": "calculators/retirement-planning",
+      "target": "decision/how-much-do-i-need-to-retire",
+      "anchor": "How Much Do I Need to Retire?",
+      "reason": "Calculator \u2192 decision"
     },
     {
-      "source": "mortgage-affordability",
-      "target": "decision/should-i-refinance-my-mortgage",
-      "anchor": "Refinance Decision Guide",
-      "group": "C"
-    },
-    {
-      "source": "401k-calculator",
-      "target": "decision/roth-vs-traditional-401k-decision",
-      "anchor": "Roth vs Traditional 401(k)",
-      "group": "C"
-    },
-    {
-      "source": "retirement-planning",
-      "target": "decision/roth-vs-traditional-401k-decision",
-      "anchor": "401(k) Type Decision",
-      "group": "C"
-    },
-    {
-      "source": "investment-return",
-      "target": "decision/401k-vs-taxable-investing",
-      "anchor": "Taxable vs Tax-Advantaged Investing",
-      "group": "C"
-    },
-    {
-      "source": "401k-calculator",
-      "target": "decision/401k-vs-taxable-investing",
-      "anchor": "401(k) vs Regular Investing",
-      "group": "C"
-    },
-    {
-      "source": "retirement-planning",
-      "target": "calculators/retirement-withdrawal",
-      "anchor": "Retirement Withdrawal Calculator",
-      "group": "C"
-    },
-    {
-      "source": "investment-return",
+      "source": "calculators/compound-interest",
       "target": "decision/pay-off-student-loans-or-invest",
-      "anchor": "Pay Off Loans or Invest?",
-      "group": "C"
+      "anchor": "Pay Loans or Invest?",
+      "reason": "Calculator \u2192 decision"
     },
     {
-      "source": "loan-calculator",
-      "target": "guides/how-to-use-loan-calculator",
-      "anchor": "Loan Calculator Guide",
-      "group": "A"
+      "source": "blog/20000-loan-at-8-percent",
+      "target": "decision/snowball-vs-avalanche-which-wins",
+      "anchor": "Snowball vs Avalanche Method",
+      "reason": "Blog \u2192 decision cross-link"
     },
     {
-      "source": "budget-planner",
-      "target": "guides/how-to-budget-with-50-30-20-rule",
-      "anchor": "50/30/20 Budget Method",
-      "group": "A"
+      "source": "calculators/investment-return",
+      "target": "calculators/compound-interest",
+      "anchor": "Compound Interest Calculator",
+      "reason": "Cross-calculator"
     },
     {
-      "source": "compound-interest",
-      "target": "decision/401k-vs-taxable-investing",
-      "anchor": "Compound Growth: Taxable vs Tax-Advantaged",
-      "group": "C"
+      "source": "calculators/compound-interest",
+      "target": "calculators/retirement-planning",
+      "anchor": "Retirement Planning Calculator",
+      "reason": "Cross-calculator"
     },
     {
-      "source": "tax-calculator",
-      "target": "compare/compare-roth-vs-traditional-ira",
-      "anchor": "IRA Tax Implications",
-      "group": "B"
+      "source": "calculators/tax-calculator",
+      "target": "calculators/retirement-planning",
+      "anchor": "Retirement Planning Calculator",
+      "reason": "Cross-calculator tax-advantaged"
     },
     {
-      "source": "investment-return",
-      "target": "compare/compare-roth-vs-traditional-ira",
-      "anchor": "Tax-Efficient Investing",
-      "group": "B"
+      "source": "calculators/mortgage-calculator",
+      "target": "decision/rent-vs-buy-with-100k-income",
+      "anchor": "Rent vs Buy with $100k Income",
+      "reason": "Calculator \u2192 decision"
     },
     {
-      "source": "mortgage-calculator",
-      "target": "guides/how-to-calculate-debt-to-income-ratio",
-      "anchor": "Debt-to-Income Ratio Guide",
-      "group": "A"
+      "source": "decision/pay-off-debt-or-invest",
+      "target": "comparisons/compare-dollar-cost-average-vs-lump-sum",
+      "anchor": "Lump Sum vs Dollar Cost Average",
+      "reason": "Decision \u2192 comparison"
     },
     {
-      "source": "retirement-planning",
-      "target": "guides/how-to-use-compound-interest",
-      "anchor": "Compound Interest & Retirement",
-      "group": "A"
-    },
-    {
-      "source": "loan-calculator",
-      "target": "calculators/simple-interest",
-      "anchor": "Simple vs Compound Interest",
-      "group": "B"
-    },
-    {
-      "source": "tax-calculator",
-      "target": "calculators/simple-interest",
-      "anchor": "Interest Income & Taxes",
-      "group": "B"
-    },
-    {
-      "source": "budget-planner",
-      "target": "calculators/simple-interest",
-      "anchor": "Simple Interest Savings Calculator",
-      "group": "B"
-    },
-    {
-      "source": "mortgage-affordability",
-      "target": "compare/compare-30yr-fixed-vs-15yr-fixed",
-      "anchor": "Compare Fixed-Rate Terms",
-      "group": "B"
-    },
-    {
-      "source": "investment-return",
-      "target": "guides/how-to-use-compound-interest",
-      "anchor": "How Compounding Works",
-      "group": "A"
-    },
-    {
-      "source": "mortgage-calculator",
-      "target": "guides/how-to-calculate-monthly-mortgage-payment",
-      "anchor": "Monthly Payment Calculation Guide",
-      "group": "A"
-    },
-    {
-      "source": "retirement-planning",
-      "target": "decision/401k-vs-taxable-investing",
-      "anchor": "Retirement Account vs Taxable",
-      "group": "C"
-    },
-    {
-      "source": "compound-interest",
+      "source": "calculators/retirement-planning",
       "target": "guides/how-to-use-retirement-planning",
-      "anchor": "Compound Growth in Retirement",
-      "group": "A"
+      "anchor": "How to Use Retirement Planning",
+      "reason": "Calculator \u2192 guide (indexing requested page)"
     },
     {
-      "source": "loan-calculator",
-      "target": "decision/pay-off-student-loans-or-invest",
-      "anchor": "Student Loans: Pay Off or Invest?",
-      "group": "C"
-    },
-    {
-      "source": "401k-calculator",
-      "target": "calculators/retirement-withdrawal",
-      "anchor": "Withdrawal Planning",
-      "group": "C"
-    },
-    {
-      "source": "tax-calculator",
-      "target": "decision/pay-off-student-loans-or-invest",
-      "anchor": "Tax Impact of Student Loan Decisions",
-      "group": "C"
-    },
-    {
-      "source": "mortgage-affordability",
-      "target": "guides/how-to-use-mortgage-calculator",
-      "anchor": "Mortgage Calculator Tutorial",
-      "group": "A"
-    },
-    {
-      "source": "budget-planner",
+      "source": "calculators/compound-interest",
       "target": "guides/how-to-use-compound-interest",
-      "anchor": "Compound Interest for Savers",
-      "group": "A"
+      "anchor": "How to Use Compound Interest",
+      "reason": "Calculator \u2192 guide (indexing requested page)"
     },
     {
-      "source": "investment-return",
-      "target": "calculators/retirement-withdrawal",
-      "anchor": "Retirement Withdrawal Calculator",
-      "group": "C"
+      "source": "calculators/investment-return",
+      "target": "guides/how-to-use-investment-return",
+      "anchor": "How to Use Investment Return Calculator",
+      "reason": "Calculator \u2192 guide"
+    },
+    {
+      "source": "calculators/tax-calculator",
+      "target": "guides/how-to-use-marginal-tax-rate",
+      "anchor": "How to Use Marginal Tax Rate",
+      "reason": "Calculator \u2192 guide"
     }
-  ],
-  "implementation": {
-    "file": "src/lib/calculator-decision-links.ts",
-    "method": "Add entries to CALCULATOR_DECISION_LINKS and CALCULATOR_BLOG_LINKS maps",
-    "group_a_links": 14,
-    "group_b_links": 11,
-    "group_c_links": 15
-  }
+  ]
 }

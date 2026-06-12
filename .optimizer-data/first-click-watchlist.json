@@ -1,26 +1,25 @@
 {
-  "title": "Phase 20.2 First Click Watchlist — Updated Jun 11",
-  "generated": "2026-06-11T15:12:00+03:00",
-  "data_source": "GSC_API_RAW",
-  "gsc_impressions": 499,
-  "gsc_clicks": 0,
-  "p1_pages_1_10": [
-    {"page": "/tools/mortgage-900k-30yr-7pct", "pos": 3.0, "imp": 9, "status": "Meta fixed via template today. Cooldown active."},
-    {"page": "/tools/loan-3k-2yr-24pct", "pos": 5.3, "imp": 3, "status": "Title+meta fixed via template today. Cooldown active."},
-    {"page": "/tools/mortgage-200k-30yr-6pct", "pos": 6.6, "imp": 14, "status": "Meta fixed via template today. Cooldown active."},
-    {"page": "/tools/compound-1k-30yr-6pct", "pos": 7.3, "imp": 3, "status": "Meta fixed via template today. Cooldown active."},
-    {"page": "/decision/how-much-house-can-i-afford", "pos": 8.8, "imp": 4, "status": "Title+meta upgraded Jun 9. Cooldown active."},
-    {"page": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances", "pos": 8.8, "imp": 5, "status": "Monitoring."},
-    {"page": "/tools/compound-150k-10yr-5pct", "pos": 8.9, "imp": 7, "status": "Meta fixed via template today. Cooldown active."},
-    {"page": "/tools/compound-100k-20yr-5pct", "pos": 9.4, "imp": 19, "status": "Meta fixed via template today. Cooldown active."},
-    {"page": "/tools/compound-500k-15yr-5pct", "pos": 9.8, "imp": 13, "status": "Meta fixed via template today. Cooldown active."},
-    {"page": "/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a", "pos": 9.8, "imp": 4, "status": "Monitoring."}
+  "title": "First Click Watchlist",
+  "updated": "2026-06-12T00:15:00Z",
+  "phase": "21.6",
+  "status": {
+    "FIRST_CLICK_28D": "ACHIEVED (branded homepage only — 'qfinhub' navigation)",
+    "FIRST_CONTENT_CLICK_28D": "NOT_ACHIEVED",
+    "FIRST_NON_BRANDED_CLICK_28D": "NOT_ACHIEVED",
+    "FIRST_CLICK_7D": "NOT_ACHIEVED"
+  },
+  "live_7d_pages_with_impressions": 43,
+  "live_7d_clicks": 0,
+  "real_page_priority_targets": [
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "/decision/pay-off-debt-or-invest",
+    "/decision/how-much-house-can-i-afford",
+    "/calculators/tax/philadelphia-pa",
+    "/calculators/tax-calculator",
+    "/calculators/retirement-planning",
+    "/calculators/investment-return",
+    "/calculators/compound-interest"
   ],
-  "p2_pages_11_20": [
-    {"page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment", "pos": 11.9, "imp": 130, "status": "CTR fix Jun 9. Cooldown expiring today. TOP click contender."},
-    {"page": "/calculators/tax/philadelphia-pa", "pos": 14.5, "imp": 14, "status": "Meta fixed Jun 10. Cooldown active."},
-    {"page": "/decision/pay-off-debt-or-invest", "pos": 15.7, "imp": 45, "status": "Title fix Jun 10. Position improved from 22.6. Promising."},
-    {"page": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a", "pos": 18.8, "imp": 19, "status": "Now linked from mortgage-calculator hub. Added today."}
-  ],
-  "next_action": "Monitor $20K loan blog for first click. 48h cooldown expires today. Template fix coverage: 100% of tool variant types now have curiosity-hook titles+metas."
+  "excluded_from_watchlist": "All /tools/ and /scenario/ thin variant pages — real page focus rule active",
+  "note": "Watchlist now tracks real pages only. Thin tool/scenario impressions are documented but not targeted for CTR optimization."
 }

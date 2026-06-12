@@ -1,16 +1,16 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-06-11T23:15:32.832472+00:00",
-  "pulled_at": "2026-06-11T23:15:32Z",
+  "generated": "2026-06-12T17:19:15.449198+00:00",
+  "pulled_at": "2026-06-12T17:19:15Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "date_range": {
-    "start": "2026-06-02",
-    "end": "2026-06-08"
+    "start": "2026-06-03",
+    "end": "2026-06-09"
   },
   "previous_7d_range": {
-    "start": "2026-05-26",
-    "end": "2026-06-01"
+    "start": "2026-05-27",
+    "end": "2026-06-02"
   },
   "dimensions_pulled": [
     "page",
@@ -19,36 +19,36 @@
   ],
   "row_limits": 500,
   "metrics_7d": {
-    "impressions": 424,
+    "impressions": 415,
     "clicks": 0,
     "ctr_pct": 0.0,
     "avg_position": 38.3,
-    "pages_with_impressions": 51,
-    "query_count": 68,
-    "query_impressions": 247,
-    "query_page_rows": 68
+    "pages_with_impressions": 48,
+    "query_count": 66,
+    "query_impressions": 240,
+    "query_page_rows": 66
   },
   "metrics_28d": {
-    "impressions": 1150,
+    "impressions": 1202,
     "clicks": 1,
-    "pages_with_impressions": 122,
+    "pages_with_impressions": 124,
     "pages_with_clicks": 1,
     "clicked_pages": [
       "https://www.qfinhub.com/"
     ]
   },
   "previous_7d": {
-    "start": "2026-05-26",
-    "end": "2026-06-01",
-    "impressions": 321
+    "start": "2026-05-27",
+    "end": "2026-06-02",
+    "impressions": 353
   },
   "change_7d": {
-    "impressions": 103,
-    "impressions_pct": 32.1
+    "impressions": 62,
+    "impressions_pct": 17.6
   },
   "freshness_proof": {
     "freshness": "FRESH",
-    "checksum": "dfd0d4d55880",
+    "checksum": "52c53f306948",
     "previous_checksum": null,
     "date_range_advanced": false,
     "cache_used": false,

@@ -1,0 +1,102 @@
+{
+  "title": "Phase 22.1 — Metrics Semantics Fix + Content Click Sprint — Final Report",
+  "generated": "2026-06-12T01:00:00Z",
+  "phase": "22.1",
+  "status": "COMPLETE — 9 files created/updated, semantics corrected across all reports",
+  "gsc_live_baseline": {
+    "pulled_at": "2026-06-12T01:00:00Z",
+    "current_7d": {"impressions": 303, "clicks": 0, "ctr_pct": 0.0, "avg_position": 32.8, "pages": 43, "queries": 42},
+    "trend": "DECLINING (-36% over 3 windows: 476→415→303)",
+    "28d": {"impressions": 1202, "clicks": 1, "click_type": "BRANDED_HOMEPAGE_ONLY"},
+    "freshness": "FRESH — current pull differs from previous"
+  },
+  "tasks_completed": {
+    "task_1_semantics_correction": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/indexing-status-semantics-correction-report.json",
+      "files_corrected": 4,
+      "critical_fix": "Changed 'All 7 Indexed' to '0 Newly Indexed Confirmed, 7 Requested'. REQUESTED ≠ INDEXED."
+    },
+    "task_2_7url_status": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase22-1-seven-url-status-confirmation.json",
+      "confirmed_requested": 4,
+      "likely_requested": 3,
+      "newly_indexed_confirmed": 0,
+      "no_repeat_requests": true,
+      "next_recheck": "Jun 15"
+    },
+    "task_3_watchlist": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/content-click-watchlist.json",
+      "top_candidate": "blog/20000-loan (pos 7.2, 69 imp, 0 clicks — fixed in Phase 22)",
+      "new_candidates": ["decision/pay-off-debt-or-invest", "calculators/investment-return", "calculators/tax-calculator"]
+    },
+    "task_4_content_fixes": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase22-1-content-click-fix-log.json",
+      "pages_reviewed": 3,
+      "internal_links_added": 15,
+      "key_insight": "All 3 pages have GOOD content. Deep positions due to site authority gap. Internal links are crawl improvement, not ranking fix."
+    },
+    "task_5_authority": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/internal-authority-engine-log.json",
+      "links_today": 15,
+      "cumulative_total": 38,
+      "targets": ["loan-calculator", "investment-return", "tax-calculator", "retirement-planning", "compound-interest", "mortgage-calculator", "+ decision pages + guide pages"]
+    },
+    "task_6_outreach": {
+      "status": "READY — NOT SENT",
+      "file": ".optimizer-data/outreach-v2-followup-jun13-final.json",
+      "send_date": "Jun 13 (tomorrow)",
+      "max_followups": 12,
+      "backlinks_current": 0
+    },
+    "task_7_effectiveness": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase22-effectiveness-gates.json",
+      "gates": 4,
+      "primary_success": "FIRST_CONTENT_CLICK"
+    },
+    "task_8_deploy": {
+      "status": "NO_NEW_CODE_CHANGES — Phase 22 commits (897e4f4, 818b205) already deployed via Vercel auto-deploy",
+      "post_deploy_ops": "Not run — no new changes today"
+    },
+    "task_9_final_report": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase22-1-metrics-content-click-authority-report.json"
+    }
+  },
+  "current_status": {
+    "first_branded_click": "ACHIEVED (homepage, pos 1.9, 'qfinhub' search)",
+    "first_content_click": "NOT ACHIEVED (0 clicks on content pages in 7d/28d)",
+    "first_7d_click": "NOT ACHIEVED",
+    "backlinks": 0,
+    "on_track": "OFF_TRACK — 0 content clicks, declining impressions, 0 backlinks",
+    "indexing_requests": "7 pending, 0 newly indexed. Next recheck: Jun 15",
+    "validate_fix": "DO_NOT_VALIDATE_YET"
+  },
+  "critical_corrections_applied": {
+    "semantics": "REQUESTED ≠ INDEXED. All reports now use exact statuses: CONFIRMED_REQUESTED, LIKELY_REQUESTED, NEWLY_INDEXED_CONFIRMED.",
+    "branded_click": "Homepage click is branded navigation, NOT content success. FIRST_CONTENT_CLICK tracked separately.",
+    "thin_tool_freeeze": "Maintained. No thin tool/scenario SEO optimization.",
+    "real_page_focus": "All changes on real pages only: blog posts, decision pages, calculators, guides."
+  },
+  "confirmations": {
+    "no_repeat_indexing_requests": true,
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_thin_tool_scenario_seo": true,
+    "no_mass_pages": true,
+    "no_unapproved_cleanup": true,
+    "no_stale_gsc_data": true,
+    "risky_automations_disabled": true
+  },
+  "next_milestones": {
+    "jun_13": "Outreach V2 follow-ups (max 12)",
+    "jun_15": "Day 3 indexing recheck — run URL Inspection on 7 targets",
+    "jun_19": "Day 7 indexing check",
+    "jun_26": "Day 14 check + blog/20000-loan cooldown expires"
+  }
+}

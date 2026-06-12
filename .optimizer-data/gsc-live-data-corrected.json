@@ -1,17 +1,17 @@
 {
   "source": "GSC_API_RAW \u2014 CORRECTION DISABLED PER PHASE 19.2",
-  "generated": "2026-06-11T23:15:32Z",
+  "generated": "2026-06-12T17:19:15Z",
   "date_range": {
-    "start": "2026-06-02",
-    "end": "2026-06-08"
+    "start": "2026-06-03",
+    "end": "2026-06-09"
   },
-  "checksum": "dfd0d4d55880",
+  "checksum": "52c53f306948",
   "api_raw": {
-    "impressions": 424,
+    "impressions": 415,
     "clicks": 0,
-    "pages_with_impressions": 51,
+    "pages_with_impressions": 48,
     "avg_position": 38.3,
-    "query_level_impressions": 247
+    "query_level_impressions": 240
   },
   "correction": {
     "factor_impressions": 1.434,
@@ -22,7 +22,7 @@
     "note": "Correction factor is DOCUMENTATION ONLY. Not applied to official metrics per Phase 19.2."
   },
   "corrected_estimate_fyi": {
-    "impressions": 608,
+    "impressions": 595,
     "clicks": 0,
     "avg_position": 33.9,
     "note": "FYI ONLY \u2014 NOT official. Correction factor from last manual UI check."

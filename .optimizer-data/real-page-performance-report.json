@@ -1,0 +1,121 @@
+{
+  "title": "Phase 23 \u2014 Real Page Performance Report (Thin Tools Excluded)",
+  "generated": "2026-06-12T01:30:00Z",
+  "data_source": "GSC API RAW \u2014 current 7d window (Jun 4-11). Thin tools, scenarios, homepage, branded queries excluded.",
+  "filtering": {
+    "excluded": [
+      "homepage (branded)",
+      "all /tools/ pages (thin variants)",
+      "all /scenario/ pages (hash-ID scenarios)",
+      "branded 'qfinhub' queries",
+      "noindex/404/redirect/canonical variants"
+    ],
+    "included": [
+      "real calculators",
+      "real decisions",
+      "real guides",
+      "real blogs",
+      "real compare pages",
+      "real widgets"
+    ]
+  },
+  "real_pages_with_impressions_7d": [
+    {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "type": "blog",
+      "impressions_7d": 69,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 7.2,
+      "prev_7d_impressions": 89,
+      "movement": "\u2193 -20 imp",
+      "action_taken": "Phase 22: Above-fold CTA upgrade (thin tool \u2192 real calculator)",
+      "next_action": "Monitor for click. If 0 clicks by Jun 26: improve meta."
+    },
+    {
+      "url": "/calculators/investment-return",
+      "type": "calculator",
+      "impressions_7d": 17,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 76.8,
+      "prev_7d_impressions": 38,
+      "movement": "\u2193 -21 imp",
+      "action_taken": "Phase 22: Cross-links from retirement-planning, compound-interest",
+      "next_action": "Authority gap. Backlinks needed."
+    },
+    {
+      "url": "/calculators/tax-calculator",
+      "type": "calculator",
+      "impressions_7d": 44,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 87.6,
+      "prev_7d_impressions": 49,
+      "movement": "\u2193 -5 imp",
+      "action_taken": "Phase 22: Cross-links from geo/decision pages",
+      "next_action": "Authority gap. Backlinks needed."
+    },
+    {
+      "url": "/calculators/retirement-planning",
+      "type": "calculator",
+      "impressions_7d": 6,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 82.3,
+      "prev_7d_impressions": 20,
+      "movement": "\u2193 -14 imp",
+      "action_taken": "Phase 22: Cross-links from investment-return, compound-interest",
+      "next_action": "Authority gap. Backlinks needed."
+    },
+    {
+      "url": "/decision/pay-off-debt-or-invest",
+      "type": "decision",
+      "impressions_7d": 2,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 52,
+      "prev_7d_impressions": 2,
+      "movement": "\u2192 flat",
+      "action_taken": "Phase 22.1: Internal links from loan-calculator, investment-return",
+      "next_action": "Authority gap. Backlinks needed."
+    },
+    {
+      "url": "/decision/snowball-vs-avalanche-which-wins",
+      "type": "decision",
+      "impressions_7d": 2,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 89,
+      "action_taken": "None yet",
+      "next_action": "Add FAQ. Internal links from blog/20000-loan."
+    },
+    {
+      "url": "/calculators/compound-interest",
+      "type": "calculator",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 8,
+      "action_taken": "Phase 22: Cross-links to investment-return, retirement-planning",
+      "next_action": "Good position (8). Needs CTA improvement to convert."
+    },
+    {
+      "url": "/decision/how-much-do-i-need-to-retire",
+      "type": "decision",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "ctr": 0.0,
+      "position": 89,
+      "action_taken": "None yet",
+      "next_action": "Internal links from retirement-planning."
+    }
+  ],
+  "summary": {
+    "total_real_page_impressions_7d": 142,
+    "total_real_page_clicks_7d": 0,
+    "avg_position_real_pages": "~60 (ranging 7.2 to 95)",
+    "trend": "Declining across most real pages. News blogs losing impressions normally. Calculator pages declining due to authority gap.",
+    "key_insight": "Blog/20000-loan at pos 7.2 with 69 imp and 0 clicks is the single highest-leverage opportunity on the site. The CTA upgrade (Phase 22) is the most important test running."
+  }
+}

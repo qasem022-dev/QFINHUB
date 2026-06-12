@@ -1,0 +1,68 @@
+{
+  "phase": "24",
+  "task": "daily-loop-authority-priority-update",
+  "effective_date": "2026-06-12",
+  "priority_stack": {
+    "priority_1": {
+      "name": "Authority Acquisition",
+      "actions": [
+        "Send 5 V2 test emails (only after embed X-Frame-Options fix deployed)",
+        "Send 8 Jun 13 follow-ups to previous outreach targets",
+        "Monitor replies daily \u2014 respond within 24 hours per playbook",
+        "Track embeds, backlinks, and referral traffic",
+        "Research 5 new prospects daily (not send \u2014 just research)"
+      ],
+      "kpi": "First reply, first backlink, or first embed by Jun 26",
+      "blocked_by": "x-frame-options: DENY on embed routes (CRITICAL)"
+    },
+    "priority_2": {
+      "name": "Content Click Monitoring",
+      "actions": [
+        "Weekly GSC performance check for existing indexed pages",
+        "Monitor first content click status",
+        "No new content creation unless tied to specific outreach offer"
+      ],
+      "kpi": "First content click from organic search",
+      "blocked_by": null
+    },
+    "priority_3": {
+      "name": "Indexing Request Monitoring",
+      "actions": [
+        "Weekly check of discovered-not-indexed pages",
+        "No repeated indexing requests",
+        "No Indexing API usage",
+        "Manual GSC URL inspection only for high-priority pages"
+      ],
+      "kpi": "Natural indexation rate improvement",
+      "blocked_by": null
+    },
+    "priority_4": {
+      "name": "Real Page Internal Links",
+      "actions": [
+        "Only add internal links tied to specific KPI pages",
+        "No bulk internal linking without Auditor review",
+        "Link from relevant blog posts to calculator/decision pages naturally"
+      ],
+      "kpi": "Improved crawl depth for target pages",
+      "blocked_by": null
+    }
+  },
+  "blocked_activities": [
+    "random content tweaks",
+    "thin tool SEO",
+    "repeated indexing requests",
+    "activity-only SEO (changes that don't drive measurable results)",
+    "mass page creation",
+    "automated outreach without personalization",
+    "Google Indexing API usage",
+    "risky automation restarts",
+    "bulk sitemap submissions"
+  ],
+  "daily_checklist": [
+    "Check outreach replies \u2192 respond per playbook",
+    "Log any embeds/backlinks discovered",
+    "Check GSC for new backlink appearances (weekly)",
+    "Monitor content click status",
+    "No content tweaks unless triggered by specific KPI opportunity"
+  ]
+}

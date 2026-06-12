@@ -1,0 +1,37 @@
+{
+  "title": "Phase 22.1 \u2014 Indexing Status Semantics Correction",
+  "generated": "2026-06-12T01:00:00Z",
+  "reason": "Phase 21.5 report incorrectly stated 'All 7 Indexed'. Requesting indexing is not the same as confirmed indexing. This correction aligns all reports with exact URL Inspection / GSC semantics.",
+  "allowed_statuses": {
+    "ELIGIBLE": "Page meets all criteria for indexing request but has not been inspected yet",
+    "INSPECTED": "URL Inspection API call completed \u2014 status pending classification",
+    "CONFIRMED_REQUESTED": "GSC UI showed 'indexing requested' confirmation text after clicking Request Indexing",
+    "LIKELY_REQUESTED": "Request Indexing button was clicked but confirmation text did not appear in wait window. Request likely processed.",
+    "ALREADY_INDEXED": "URL Inspection coverageState = 'Submitted and indexed' \u2014 page was already indexed before this request",
+    "NEWLY_INDEXED_CONFIRMED": "URL Inspection confirms coverageState changed to 'Submitted and indexed' AFTER our indexing request",
+    "NOT_INDEXED": "URL Inspection confirms page is not indexed (various non-indexed coverage states)",
+    "UNKNOWN_TO_GOOGLE": "URL Inspection coverageState = 'URL is unknown to Google'",
+    "DEFERRED": "Indexing request intentionally deferred to future recheck window",
+    "ERROR": "URL Inspection or indexing request failed with an error"
+  },
+  "prohibited_statuses": [
+    "'indexed' for pages that were only requested",
+    "'all indexed' unless URL Inspection or GSC confirms",
+    "'successfully indexed' without URL Inspection evidence",
+    "Any status that conflates requesting with indexing"
+  ],
+  "files_corrected": [
+    ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+    ".optimizer-data/phase21-effectiveness-dashboard.json",
+    ".optimizer-data/business-growth-scoreboard.json",
+    ".optimizer-data/phase21-6-indexing-monitoring-effectiveness-report.json"
+  ],
+  "current_7_url_reality": {
+    "confirmed_requested": 4,
+    "likely_requested": 3,
+    "newly_indexed_confirmed": 0,
+    "already_indexed": 0,
+    "not_indexed": 7,
+    "note": "All 7 URLs were requested but NONE have been confirmed as newly indexed yet. Day 3 recheck (Jun 15) will determine first indexing movement."
+  }
+}

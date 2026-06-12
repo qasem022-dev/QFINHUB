@@ -1,0 +1,49 @@
+{
+  "phase": "24",
+  "task": "authority-measurement-rules",
+  "tracking_fields": {
+    "sent_count": "Total outreach emails sent in V2",
+    "opens_available": "Gmail doesn't provide read receipts \u2014 track replies only",
+    "replies_total": "Any reply (yes, no, questions)",
+    "positive_replies": "Replies indicating interest or yes",
+    "embeds": "Confirmed widget embeds on publisher sites",
+    "backlinks": "Confirmed backlinks (dofollow or nofollow)",
+    "referring_domains": "Unique domains linking to QFINHUB",
+    "link_type": "dofollow / nofollow / ugc / sponsored",
+    "page_linked": "Which QFINHUB URL received the link",
+    "anchor_context": "Anchor text used (if any) and surrounding context",
+    "traffic_from_referral": "Visits from referral sources (GA4 or Vercel Analytics)",
+    "gsc_movement": "Any GSC impression/click changes after backlink acquisition"
+  },
+  "success_thresholds": [
+    {
+      "threshold": "5-test-batch-reply",
+      "metric": "At least 1 reply within 7 days of sending 5 test emails",
+      "pass_condition": ">= 1 reply by Jun 19",
+      "fail_action": "Review targeting, subject lines, and offers. If offers are strong but no replies, test different contact methods (contact forms vs email)."
+    },
+    {
+      "threshold": "20-total-replies",
+      "metric": "At least 2 replies from first 20 V2 sends",
+      "pass_condition": ">= 2 replies by Jun 26",
+      "fail_action": "Pause email outreach. Pivot to journalist/source-response and partnership directories."
+    },
+    {
+      "threshold": "first-backlink-by-jun26",
+      "metric": "At least 1 backlink OR embed OR positive reply by Jun 26",
+      "pass_condition": ">= 1 backlink/embed/reply by Jun 26",
+      "fail_action": "Full strategy review. Consider content-driven authority (data studies, original research) instead of outreach."
+    }
+  ],
+  "failure_rule": "If V2 gets 0/20 replies, STOP email outreach and pivot to journalist/source-response and partnership directories.",
+  "tracking_files": [
+    ".optimizer-data/authority-outreach-tracker.json",
+    ".optimizer-data/phase24-v2-test-send-log.json",
+    ".optimizer-data/phase24-outreach-failure-postmortem.json"
+  ],
+  "gsc_monitoring": {
+    "watch_for": "New referring domains appearing in GSC links report",
+    "check_frequency": "Weekly (manual GSC check or via gsc-live-data skill)",
+    "alert_if": "Any new backlink appears \u2014 investigate source and quality"
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "phase": "24",
+  "task": "outreach-failure-postmortem",
+  "batch_audited": "First 20 (May 14, 2026 \u2014 automated widget-outreach.cjs batch)",
+  "total_sent": 20,
+  "total_replies": 0,
+  "total_backlinks": 0,
+  "common_subject": "Free compound interest calculator/widget for your readers",
+  "common_offer": "Free embeddable compound interest calculator via iframe",
+  "common_cta": "Implicit \u2014 embed code included, no explicit ask",
+  "template_used": "widget-outreach.cjs template \u2014 generic 2-sentence intro + embed code + 'No obligation' close",
+  "overall_verdict": "MASS FAILURE \u2014 0/20 replies. Wrong targets, weak offer match, generic subject, no personalization.",
+  "entries": [
+    {
+      "prospect": "NerdWallet",
+      "email": "creditcards@nerdwallet.com",
+      "url": "https://www.nerdwallet.com/blog/",
+      "site_type": "Major personal finance media company (DR 90+)",
+      "authority_relevance": "HIGH site authority, but they BUILD their own calculators \u2014 no need for external widget",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit \u2014 no follow-up ask",
+      "personalization_level": "NONE \u2014 generic template, wrong contact (creditcards@ not editorial)",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "weak offer",
+        "not personalized",
+        "wrong contact"
+      ],
+      "likely_failure_reason": "NerdWallet builds proprietary calculators and has no incentive to embed external widgets. Wrong contact (credit cards team, not editorial)."
+    },
+    {
+      "prospect": "Money Under 30",
+      "email": "info@moneyunder30.com",
+      "url": "https://www.moneyunder30.com/",
+      "site_type": "Personal finance blog (DR ~65)",
+      "authority_relevance": "Medium \u2014 relevant audience, but generic contact",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak subject",
+        "not personalized",
+        "no clear reader benefit"
+      ],
+      "likely_failure_reason": "Generic subject with no article/page reference. Compound interest is too broad \u2014 no specific angle for their audience."
+    },
+    {
+      "prospect": "Dave Ramsey",
+      "email": "feedback@daveramsey.com",
+      "url": "https://www.daveramsey.com/blog",
+      "site_type": "Major financial media/education (DR 85+)",
+      "authority_relevance": "HIGH authority but STRONG brand calculator ecosystem (EveryDollar, mortgage payoff, investment)",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large",
+        "weak offer"
+      ],
+      "likely_failure_reason": "Dave Ramsey has a proprietary calculator ecosystem and branded tools. Would never embed a third-party calculator. Wrong target entirely."
+    },
+    {
+      "prospect": "Making Sense of Cents",
+      "email": "info@makingsenseofcents.com",
+      "url": "https://www.makingsenseofcents.com/",
+      "site_type": "Personal finance blog (DR ~50)",
+      "authority_relevance": "Medium \u2014 relevant audience, smaller site more likely to engage",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak subject",
+        "not personalized",
+        "no clear reader benefit"
+      ],
+      "likely_failure_reason": "Generic outreach with no reference to any specific article. Offer mismatched \u2014 blog is about saving/budgeting, not compound interest."
+    },
+    {
+      "prospect": "Money Crashers",
+      "email": "contact@moneycrashers.com",
+      "url": "https://www.moneycrashers.com/",
+      "site_type": "Personal finance education (DR ~60)",
+      "authority_relevance": "Medium \u2014 financial literacy focus",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak subject",
+        "not personalized"
+      ],
+      "likely_failure_reason": "No specific article reference. Generic template doesn't show you've read their content."
+    },
+    {
+      "prospect": "Calculator.net",
+      "email": "contact@calculator.net",
+      "url": "https://www.calculator.net/",
+      "site_type": "Calculator DIRECTOR (DR ~75). They ARE the calculator.",
+      "authority_relevance": "ZERO \u2014 they are a competitor, not a publisher",
+      "subject": "Free embeddable compound interest calculator",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large"
+      ],
+      "likely_failure_reason": "Calculator.net IS a calculator website. They make their own. Pitching them to embed someone else's calculator is nonsensical."
+    },
+    {
+      "prospect": "Bankrate",
+      "email": "editor@bankrate.com",
+      "url": "https://www.bankrate.com/calculators/",
+      "site_type": "Major financial media (DR 90+)",
+      "authority_relevance": "HIGH but they have their own calculator suite",
+      "subject": "Free Compound Interest Widget for Your Readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large",
+        "weak offer"
+      ],
+      "likely_failure_reason": "Bankrate has an extensive proprietary calculator suite. Would never embed third-party. Wrong target."
+    },
+    {
+      "prospect": "CalcXML",
+      "email": "support@calcxml.com",
+      "url": "https://www.calcxml.com/",
+      "site_type": "Calculator builder/platform (DR ~60)",
+      "authority_relevance": "ZERO \u2014 they BUILD calculators for businesses",
+      "subject": "Free compound interest widget for your blog",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target"
+      ],
+      "likely_failure_reason": "CalcXML sells embeddable calculators to enterprises. Pitching them to embed ours is like asking Coca-Cola to serve Pepsi."
+    },
+    {
+      "prospect": "SmartAsset",
+      "email": "editor@smartasset.com",
+      "url": "https://www.smartasset.com/calculators/",
+      "site_type": "Major fintech/calculator platform (DR 85+)",
+      "authority_relevance": "ZERO \u2014 direct competitor with own calculator suite",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large"
+      ],
+      "likely_failure_reason": "SmartAsset has its own calculator business. Direct competitor. Completely wrong target."
+    },
+    {
+      "prospect": "MortgageCalculator.org",
+      "email": "info@mortgagecalculator.org",
+      "url": "https://www.mortgagecalculator.org/",
+      "site_type": "Calculator website (DR ~65). Their ENTIRE product IS calculators.",
+      "authority_relevance": "ZERO \u2014 competitor",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target"
+      ],
+      "likely_failure_reason": "Another calculator website. They ARE the calculator, not a publisher looking for tools."
+    },
+    {
+      "prospect": "Credit Karma",
+      "email": "feedback@creditkarma.com",
+      "url": "https://www.creditkarma.com/calculators/",
+      "site_type": "Major fintech (DR 90+)",
+      "authority_relevance": "ZERO \u2014 large fintech with own tools",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large",
+        "weak offer"
+      ],
+      "likely_failure_reason": "Credit Karma has its own integrated calculator suite. Massive company. Wrong target and wrong contact (feedback@, not content/editorial)."
+    },
+    {
+      "prospect": "Omni Calculator",
+      "email": "support@omnicalculator.com",
+      "url": "https://www.omnicalculator.com/finance",
+      "site_type": "Calculator platform (DR ~75). They ARE the calculator industry.",
+      "authority_relevance": "ZERO \u2014 direct competitor",
+      "subject": "Free compound interest widget for your blog",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target"
+      ],
+      "likely_failure_reason": "Omni Calculator is the world's largest embeddable calculator platform. Asking them to embed ours is absurd."
+    },
+    {
+      "prospect": "Mortgage News Daily",
+      "email": "editor@mortgagenewsdaily.com",
+      "url": "https://www.mortgagenewsdaily.com/",
+      "site_type": "Mortgage news/rates media (DR ~75)",
+      "authority_relevance": "Medium-High \u2014 mortgage-focused publisher, BUT they have their own calculators",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget (NOT mortgage, despite being mortgage site)",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak offer",
+        "not personalized"
+      ],
+      "likely_failure_reason": "Mortgage site was offered a compound interest widget, not a mortgage calculator. Complete offer mismatch. Should have pitched mortgage affordability."
+    },
+    {
+      "prospect": "The Mortgage Reports",
+      "email": "contact@themortgagereports.com",
+      "url": "https://www.themortgagereports.com/",
+      "site_type": "Mortgage education media (DR ~70)",
+      "authority_relevance": "High \u2014 perfect audience for mortgage calculator, BUT wrong offer",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator (mismatched)",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak offer",
+        "not personalized"
+      ],
+      "likely_failure_reason": "Mortgage site offered a compound interest widget. Should have offered mortgage affordability widget. Offer mismatch killed relevance."
+    },
+    {
+      "prospect": "HSH.com",
+      "email": "editor@hsh.com",
+      "url": "https://www.hsh.com/",
+      "site_type": "Mortgage rates/calculators (DR ~65)",
+      "authority_relevance": "Medium \u2014 mortgage focused, but has own calculators",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak offer",
+        "not personalized"
+      ],
+      "likely_failure_reason": "Mortgage site, compound interest offer. Plus they have their own calculators. Wrong offer."
+    },
+    {
+      "prospect": "Money.com",
+      "email": "calculatorhelp@money.com",
+      "url": "https://www.money.com/calculators/",
+      "site_type": "Major financial media (DR 85+)",
+      "authority_relevance": "LOW \u2014 has own calculator section",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large"
+      ],
+      "likely_failure_reason": "Money.com has its own calculators section. Large media brand unlikely to embed third-party widgets."
+    },
+    {
+      "prospect": "Rocket Homes",
+      "email": "info@rockethomes.com",
+      "url": "https://www.rockethomes.com/calculators",
+      "site_type": "Major real estate/mortgage company (DR 80+)",
+      "authority_relevance": "ZERO \u2014 Rocket Mortgage ecosystem. Their calculators drive leads.",
+      "subject": "Free compound interest widget for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest widget",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large"
+      ],
+      "likely_failure_reason": "Rocket Homes calculators are lead-generation funnels. Embedding third-party would cannibalize their business model."
+    },
+    {
+      "prospect": "Mint (Intuit)",
+      "email": "mintblog@mint.com",
+      "url": "https://www.mint.com/blog/",
+      "site_type": "Major fintech blog (DR 90+)",
+      "authority_relevance": "LOW \u2014 Intuit ecosystem",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "site too large",
+        "not personalized"
+      ],
+      "likely_failure_reason": "Intuit ecosystem. Corporate blog. Generic outreach to a trillion-dollar company. Never getting a reply."
+    },
+    {
+      "prospect": "YNAB (You Need A Budget)",
+      "email": "support@ynab.com",
+      "url": "https://www.youneedabudget.com/blog/",
+      "site_type": "Budgeting SaaS company blog (DR ~75)",
+      "authority_relevance": "LOW \u2014 SaaS company, not a content publisher",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "wrong target",
+        "not personalized",
+        "weak offer"
+      ],
+      "likely_failure_reason": "YNAB is budgeting software. Compound interest calculator is not relevant to their core value prop. Support@ contact, not editorial."
+    },
+    {
+      "prospect": "Personal Finance Club",
+      "email": "contact@personalfinanceclub.com",
+      "url": "https://www.personalfinanceclub.com/",
+      "site_type": "Personal finance education / investing blog (DR ~45)",
+      "authority_relevance": "Medium-High \u2014 this was one of the better targets",
+      "subject": "Free compound interest calculator for your readers",
+      "message_length": "~150 words (template)",
+      "offer": "Embeddable compound interest calculator",
+      "cta": "Implicit",
+      "personalization_level": "NONE",
+      "reply": "no",
+      "failure_reasons": [
+        "weak subject",
+        "not personalized"
+      ],
+      "likely_failure_reason": "Decent target but zero personalization. No article reference. No specific value prop. Lost in inbox noise."
+    }
+  ],
+  "failure_classification_summary": {
+    "wrong_target": 12,
+    "site_too_large": 9,
+    "weak_subject": 20,
+    "too_long": 0,
+    "weak_offer": 13,
+    "too_much_backlink_implication": 2,
+    "not_personalized": 20,
+    "wrong_contact": 4,
+    "no_clear_reader_benefit": 15
+  },
+  "key_insights": [
+    "12/20 targets were WRONG \u2014 competitors, calculator platforms, or massive brands that would never embed",
+    "20/20 emails had ZERO personalization \u2014 all used the same template from widget-outreach.cjs",
+    "20/20 subjects were generic variations of 'Free [widget] for your readers'",
+    "13/20 offers were mismatched to the site's actual content focus",
+    "9/20 targets were too large (DR 75+ major media/fintech) \u2014 these should have been excluded",
+    "Only ~3-4 targets were actually appropriate (Money Under 30, Making Sense of Cents, Personal Finance Club, maybe Mortgage Reports)",
+    "The automated widget-outreach.cjs engine treated ALL domains equally \u2014 no competitor filtering",
+    "Compound interest was the wrong primary offer \u2014 too generic for mortgage/debt sites"
+  ]
+}

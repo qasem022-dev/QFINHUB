@@ -1,0 +1,47 @@
+{
+  "title": "Phase 23 \u2014 Linkable Asset Conversion Check",
+  "generated": "2026-06-12T01:30:00Z",
+  "assets": [
+    {
+      "name": "Mortgage Affordability Widget",
+      "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "current_page_quality": "Functional. Widget renders correctly. Embed iframe code visible.",
+      "embed_code_clarity": "GOOD \u2014 copy-paste iframe provided. Clear instructions.",
+      "publisher_use_cases": "ADDED in Phase 22: 3 use cases (real estate agent blog, mortgage broker, personal finance blogger).",
+      "privacy_no_signup_messaging": "Implied by no-form design but NOT explicitly stated on page. FIX: add 'No signup. No personal data stored. Your readers' privacy is protected.'",
+      "internal_links": "Linked from mortgage-calculator and mortgage-affordability calculator pages.",
+      "pitch_angle": "Free mortgage affordability calculator your readers can use without leaving your site.",
+      "why_publisher_would_care": "Saves readers from leaving their site. Adds interactive value to mortgage/home-buying content. Increases time-on-page.",
+      "missing_conversion_elements": [
+        "Explicit no-signup/no-data-collected statement on widget page",
+        "Preview/screenshot of the widget on a real blog post",
+        "Testimonial or social proof (even 'used by X finance bloggers')",
+        "Clear 'How to add this to your site' step-by-step with screenshots"
+      ]
+    },
+    {
+      "name": "Debt Snowball vs Avalanche Widget",
+      "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "current_page_quality": "Functional. Widget renders. Embed code available.",
+      "embed_code_clarity": "GOOD \u2014 copy-paste iframe.",
+      "publisher_use_cases": "ADDED in Phase 22: 3 use cases (debt payoff blog, credit counseling site, personal finance YouTuber).",
+      "privacy_no_signup_messaging": "Same gap as mortgage widget \u2014 not explicitly stated.",
+      "internal_links": "Linked from debt-snowball and debt-payoff calculators.",
+      "pitch_angle": "Free debt payoff comparison tool \u2014 snowball vs avalanche. No signup. Embed in 30 seconds.",
+      "why_publisher_would_care": "Debt payoff is a high-engagement topic. Interactive calculator keeps readers on-page. Readers can personalize the strategy.",
+      "missing_conversion_elements": [
+        "Explicit no-signup/no-data-collected statement",
+        "Side-by-side preview showing snowball vs avalanche on the same page",
+        "Publisher testimonials or usage examples",
+        "Customizable colors/branding option (even basic: 'we can match your site colors')"
+      ]
+    }
+  ],
+  "fixes_needed": [
+    "Add 'No signup. No personal data stored.' messaging to both widget pages",
+    "Add a screenshot preview section showing how the widget looks embedded",
+    "Add step-by-step embed instructions with visual cues",
+    "Offer basic color customization as outreach differentiator"
+  ],
+  "priority": "MEDIUM \u2014 widgets are good but no publisher has used them yet. Conversion elements (trust messaging, previews) may help when combined with outreach."
+}

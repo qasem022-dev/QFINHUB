@@ -1,0 +1,57 @@
+{
+  "title": "Daily Indexing Request Rules — Phase 21.6+",
+  "generated": "2026-06-12T00:15:00Z",
+  "effective": "2026-06-12",
+  "supersedes": "All previous ad-hoc indexing request behavior",
+  "core_rule": "Do not repeatedly request indexing for the same URL. Each indexing request consumes Google's attention budget. Repeated requests on unchanged pages signal spam.",
+  "eligibility_criteria": {
+    "page_is_high_value": {
+      "description": "Real calculators, real guides, real decisions, real blogs with unique content. NOT thin tools, NOT formula variants, NOT hash-ID scenarios.",
+      "examples_eligible": ["/calculators/compound-interest", "/guides/how-to-use-mortgage-calculator", "/decision/how-much-house-can-i-afford"],
+      "examples_ineligible": ["/tools/loan-30k-5yr-6pct", "/scenario/auto-loan-bc834ee2"]
+    },
+    "changed_recently": {
+      "description": "Page content or internal links changed within last 14 days. Stale unchanged pages should not be re-requested — if Google didn't index it the first time, it won't the second.",
+      "minimum_change": "At least one of: new content section, new internal links, improved meta, improved FAQ"
+    },
+    "eligible": {
+      "description": "Page is indexable: HTTP 200, self-canonical, robots index/follow, in sitemap, not noindexed, not redirected, not 404.",
+      "auto_disqualify": "Any page with noindex, canonical-to-other, redirect, or 404 status"
+    },
+    "not_requested_in_last_7_days": {
+      "description": "Minimum 7-day cooldown between indexing requests for the same URL. This prevents spam pattern detection by Google.",
+      "tracking_file": ".optimizer-data/gsc-ui-indexing-proof-ledger.json"
+    },
+    "not_already_indexed": {
+      "description": "Pages already showing Submitted and indexed in URL Inspection do not need re-requesting. Focus on unindexed pages.",
+      "exception": "If indexed page has 0 impressions and content was significantly improved, may be eligible after 14-day content cooldown."
+    },
+    "not_already_pending": {
+      "description": "Pages with active indexing request (REQUESTED or LIKELY_REQUESTED) should not be re-requested until monitoring window passes.",
+      "exception": "LIKELY_REQUESTED pages where Day 3 recheck confirms request was NOT registered — then ONE retry allowed."
+    }
+  },
+  "daily_indexing_budget": {
+    "max_requests_per_day": 5,
+    "reason": "GSC UI Indexing Request is a manual workflow via CloakBrowser. Keep volume low to avoid triggering Google abuse detection.",
+    "priority_order": [
+      "Recently changed high-value pages (real calculators/guides/decisions/blogs)",
+      "LIKELY_REQUESTED rechecks (if Day 3+ and confirmation missing)",
+      "Newly discovered high-value pages from internal link additions"
+    ]
+  },
+  "prohibitions": {
+    "no_indexing_api": true,
+    "no_thin_tool_scenario_requests": true,
+    "no_mass_requests": true,
+    "no_repeat_within_7_days": true,
+    "no_requests_for_unchanged_stale_pages": true,
+    "no_requests_for_already_indexed_pages": true,
+    "no_validate_fix_on_quality_groups": true
+  },
+  "phase19_daily_loop_integration": {
+    "step": "AFTER GSC freshness check and real-page focus gate",
+    "blocking": false,
+    "note": "Indexing requests are optional optimization. Daily SEO work continues even if no eligible URLs."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Phase 22 — Content Click Recovery + Authority Sprint — Final Report",
+  "generated": "2026-06-12T00:45:00Z",
+  "phase": "22",
+  "status": "COMPLETE — 10 files created/updated, 1 code change committed",
+  "gsc_live_baseline": {
+    "pulled_at": "2026-06-12T00:12:21Z",
+    "current_7d": {"impressions": 303, "clicks": 0, "ctr_pct": 0.0, "avg_position": 32.8, "pages": 43, "queries": 42},
+    "trend": "DECLINING — 3-window verified (476→415→303)",
+    "28d": {"impressions": 1202, "clicks": 1, "click_type": "BRANDED_HOMEPAGE_ONLY"}
+  },
+  "tasks_completed": {
+    "task_1_content_click_watchlist": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/content-click-watchlist.json",
+      "candidates": 15,
+      "tier_1_golden": 2,
+      "top_candidate": "blog/20000-loan-at-8-percent (pos 7.2, 69 imp, 0 clicks)"
+    },
+    "task_2_impression_decline_diagnosis": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/impression-decline-diagnosis.json",
+      "root_cause": "NEWS_BLOG_CYCLE_EXPIRY (primary) + THIN_TOOL_DEPRIORITIZATION (secondary) + SITE_AUTHORITY_GAP (tertiary)",
+      "thin_share_28d": "29.9%",
+      "real_share_28d": "59.4%",
+      "country": "89% USA",
+      "device": "57% mobile"
+    },
+    "task_3_content_click_fixes": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase22-content-click-fix-log.json",
+      "pages_fixed": 5,
+      "primary_fix": "Blog 20000-loan: thin tool link → real loan calculator + above-fold CTA upgrade",
+      "secondary_fixes": "Internal links for tax-calculator, investment-return, tax/philadelphia-pa, pay-off-debt-or-invest"
+    },
+    "task_4_group_c_push": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/group-c-indexed-invisible-push-log.json",
+      "pages_improved": 9,
+      "new_links": 6,
+      "thin_tool_fixes": 1
+    },
+    "task_5_internal_authority": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/internal-authority-engine-log.json",
+      "total_links": 23,
+      "targets": ["loan-calculator", "tax-calculator", "investment-return", "retirement-planning", "compound-interest", "mortgage-calculator", "all 7 indexing-request pages"]
+    },
+    "task_6_outreach_v2": {
+      "status": "PREPARED",
+      "file": ".optimizer-data/outreach-v2-followup-jun13-final.json",
+      "max_followups": 12,
+      "send_date": "Jun 13",
+      "strategy": "Value-first, no backlink ask, widget/embed offers"
+    },
+    "task_7_linkable_assets": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/linkable-asset-strengthening-log.json",
+      "assets": ["mortgage-affordability-embed", "debt-snowball-vs-avalanche-embed"],
+      "publisher_use_cases": 6
+    },
+    "task_8_deploy": {
+      "status": "PENDING",
+      "commit_message": "Phase 22: Fix blog 20000-loan CTA — thin tool → real loan calculator + above-fold upgrade"
+    },
+    "task_9_effectiveness_gates": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase22-effectiveness-gates.json",
+      "primary_success": "FIRST_CONTENT_CLICK within 14 days (by Jun 26)",
+      "secondary": "Impressions stop declining",
+      "tertiary": "At least 1 backlink from outreach"
+    }
+  },
+  "current_status": {
+    "first_content_click": "NOT ACHIEVED",
+    "first_7d_click": "NOT ACHIEVED",
+    "backlinks": 0,
+    "on_track": "OFF_TRACK — 0 content clicks, declining impressions, 0 backlinks",
+    "indexing_request_monitoring": "Day 0 — 7 requests pending. Next check: Jun 15",
+    "validate_fix": "DO_NOT_VALIDATE_YET"
+  },
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_repeat_indexing_requests": true,
+    "no_thin_tool_scenario_seo": true,
+    "no_blind_validate_fix": true,
+    "no_mass_pages": true,
+    "no_unapproved_noindex_canonical_redirect_delete": true,
+    "no_bulk_sitemap_removal": true,
+    "no_stale_gsc_data": true,
+    "risky_automations_disabled": true,
+    "all_changes_on_real_pages_only": true,
+    "thin_tool_scenario_freeze_maintained": true
+  },
+  "key_insight": "blog/20000-loan-at-8-percent sits at position 7.2 with 69 impressions and 0 clicks because the above-fold CTA pointed to a thin tool page. Fixed now — CTA goes to real loan calculator. This is the single highest-leverage change on QFINHUB today."
+}

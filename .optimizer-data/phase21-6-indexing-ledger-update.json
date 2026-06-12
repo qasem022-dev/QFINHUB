@@ -1,0 +1,87 @@
+{
+  "title": "Phase 21.6 — Indexing Proof Ledger Update",
+  "generated": "2026-06-12T00:15:00Z",
+  "previous_phase": "Phase 21.5 (all 7 URLs clicked — 4 confirmed, 3 likely)",
+  "status_per_url": {
+    "CONFIRMED_REQUESTED": [
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-retirement-planning",
+        "group": "A_discovered_not_indexed",
+        "requested_at": "2026-06-12T00:04:00Z",
+        "recheck_day": "Day 3 (Jun 15)",
+        "recheck_action": "Check URL Inspection for coverageState change"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/simple-interest",
+        "group": "B_unknown_to_google",
+        "requested_at": "2026-06-12T00:04:00Z",
+        "recheck_day": "Day 3 (Jun 15)",
+        "recheck_action": "Check URL Inspection for discovery status"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+        "group": "B_unknown_to_google",
+        "requested_at": "2026-06-12T00:04:00Z",
+        "recheck_day": "Day 3 (Jun 15)",
+        "recheck_action": "Check URL Inspection for discovery status"
+      },
+      {
+        "url": "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira",
+        "group": "B_unknown_to_google",
+        "requested_at": "2026-06-12T00:04:00Z",
+        "recheck_day": "Day 3 (Jun 15)",
+        "recheck_action": "Check URL Inspection for discovery status"
+      }
+    ],
+    "LIKELY_REQUESTED": [
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+        "group": "A_discovered_not_indexed",
+        "status_reason": "Button clicked but confirmation text did not appear within wait window. GSC Angular SPA confirmation toast may have appeared after DOM snapshot.",
+        "policy": "DO NOT RETRY until Day 3 recheck (Jun 15). If still 'Discovered - currently not indexed' and not REQUESTED, request ONCE.",
+        "recheck_day": "Day 3 (Jun 15)"
+      },
+      {
+        "url": "https://www.qfinhub.com/guides/how-to-use-compound-interest",
+        "group": "A_discovered_not_indexed",
+        "status_reason": "Same as mortgage guide — clicked but no confirmation captured.",
+        "policy": "DO NOT RETRY until Day 3 recheck (Jun 15). If still 'Discovered - currently not indexed' and not REQUESTED, request ONCE.",
+        "recheck_day": "Day 3 (Jun 15)"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+        "group": "B_unknown_to_google",
+        "status_reason": "Same — clicked but no confirmation captured.",
+        "policy": "DO NOT RETRY until Day 3 recheck (Jun 15). If still 'URL is unknown to Google', request ONCE.",
+        "recheck_day": "Day 3 (Jun 15)"
+      }
+    ]
+  },
+  "global_rules": {
+    "no_retry_today": true,
+    "no_repeat_requests_within_7_days": true,
+    "check_inspection_status_before_repeating": true,
+    "do_not_use_indexing_api": true,
+    "do_not_request_thin_tool_scenario_urls": true,
+    "validate_fix": "DO_NOT_VALIDATE_YET"
+  },
+  "summary": {
+    "total_urls": 7,
+    "confirmed_requested": 4,
+    "likely_requested": 3,
+    "already_indexed": 0,
+    "not_found": 0,
+    "retry_blocked_until": "2026-06-15 (Day 3)"
+  },
+  "gsc_live_baseline": {
+    "pulled_at": "2026-06-12T00:12:21Z",
+    "date_range": "2026-06-04 to 2026-06-11",
+    "impressions": 303,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 32.8,
+    "pages_with_impressions": 43,
+    "query_count": 42,
+    "freshness": "FRESH — 3-window variation confirmed (476→415→303)"
+  }
+}

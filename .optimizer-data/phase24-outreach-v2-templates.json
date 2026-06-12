@@ -1,0 +1,48 @@
+{
+  "phase": "24",
+  "task": "outreach-v2-templates",
+  "rules": [
+    "max 3-5 sentences",
+    "no backlink ask",
+    "no anchor request",
+    "no SEO language",
+    "no generic compliment ('I found your article amazing')",
+    "specific article/page reference REQUIRED",
+    "clear useful offer",
+    "easy yes/no CTA"
+  ],
+  "templates": [
+    {
+      "id": "template-widget-embed",
+      "name": "Widget Embed Offer",
+      "use_with": [
+        "offer-A",
+        "offer-B"
+      ],
+      "subject_format": "Quick tool idea for your [article title]",
+      "template": "Hi [Name],\n\nI read your article \"[Article Title]\" \u2014 the section about [specific point] is exactly what people need to hear.\n\nI built a free [mortgage affordability / debt payoff] calculator that lets readers plug in their own numbers instead of just reading a static example. No signup, no data collection \u2014 just a clean calculator they can use right on the page.\n\nWould this be useful for your readers? Happy to send the embed code.",
+      "notes": "Reference a SPECIFIC section/paragraph from their article. The 'instead of just reading a static example' line is the key value prop."
+    },
+    {
+      "id": "template-custom-example",
+      "name": "Custom Calculation Example Offer",
+      "use_with": [
+        "offer-C",
+        "offer-E"
+      ],
+      "subject_format": "Idea for your [article title]",
+      "template": "Hi [Name],\n\nYour article \"[Article Title]\" walks through [specific calculation] \u2014 really clear explanation.\n\nI can create an interactive version where your readers enter their own numbers and see their personal result. Same math, but personalized. No signup, completely free.\n\nWould that be useful for the article? Happy to build it.",
+      "notes": "The key phrase is 'same math, but personalized' \u2014 it shows you understand their content."
+    },
+    {
+      "id": "template-resource-replacement",
+      "name": "Broken/Outdated Resource Replacement Offer",
+      "use_with": [
+        "offer-D"
+      ],
+      "subject_format": "Quick note: broken calculator link on your [page name]",
+      "template": "Hi [Name],\n\nI noticed your [resource page / article] at [URL] links to a [calculator/tool] that [is broken / no longer works / isn't mobile-friendly].\n\nI have a working, updated version that does the same thing \u2014 free, no signup, mobile-friendly. Your readers would get a working tool instead of a dead link.\n\nWould you like me to send the updated link? Takes 30 seconds to swap.",
+      "notes": "Lead with the broken link \u2014 that's the hook. Site owners hate 404s and broken tools."
+    }
+  ]
+}

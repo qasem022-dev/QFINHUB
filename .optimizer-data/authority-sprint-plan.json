@@ -1,0 +1,106 @@
+{
+  "title": "Phase 23 \u2014 Authority Sprint: Backlinks Are The Main Blocker",
+  "generated": "2026-06-12T01:30:00Z",
+  "backlinks_current": 0,
+  "outreach_sent": 20,
+  "outreach_replies": 0,
+  "diagnosis": "QFINHUB has executed internal SEO well (content, links, indexing requests, sitemaps). But every real calculator ranks at position 70-95. This is a textbook 0-authority pattern. Google will not rank pages from a domain with 0 backlinks, regardless of content quality.",
+  "follow_ups_jun13": {
+    "count": 12,
+    "pitch": "Shorter. Value-first. Widget/embed offer. No backlink ask. No anchor request.",
+    "template": "Hi [name],\n\nI reached out last week about a free [calculator type] \u2014 no signup, works on any device.\n\nI built an embed version your readers could use directly on your site: [widget URL]\n\nWould this be useful for your readers? I can customize the numbers to match your content.\n\n\u2014 Qasem",
+    "prospect_breakdown": [
+      {
+        "type": "personal_finance_bloggers",
+        "count": 4,
+        "widget": "mortgage_affordability_embed"
+      },
+      {
+        "type": "mortgage_brokers",
+        "count": 3,
+        "widget": "mortgage_affordability_embed"
+      },
+      {
+        "type": "tax_professionals",
+        "count": 2,
+        "widget": "tax_calculator (custom)"
+      },
+      {
+        "type": "real_estate_agents",
+        "count": 3,
+        "widget": "rent_vs_buy_calculator (custom)"
+      }
+    ]
+  },
+  "new_high_reply_prospects": {
+    "count": 20,
+    "strategy": "Target smaller sites with higher reply rates. Large sites (NerdWallet, Bankrate) won't respond to cold outreach.",
+    "prospect_types": [
+      {
+        "type": "small_finance_bloggers",
+        "count": 5,
+        "rationale": "Personal blogs with 1k-10k monthly visitors. Higher reply rate."
+      },
+      {
+        "type": "mortgage_brokers_with_resource_pages",
+        "count": 4,
+        "rationale": "Independent brokers who maintain blog/resource sections."
+      },
+      {
+        "type": "credit_counseling_blogs",
+        "count": 3,
+        "rationale": "Non-profit and independent credit counselors."
+      },
+      {
+        "type": "fire_blogs",
+        "count": 3,
+        "rationale": "Financial Independence/Retire Early bloggers \u2014 value calculators."
+      },
+      {
+        "type": "personal_finance_newsletters",
+        "count": 3,
+        "rationale": "Substack/convertkit finance writers who link to tools."
+      },
+      {
+        "type": "college_student_loan_blogs",
+        "count": 2,
+        "rationale": "Student loan repayment calculators are useful for this audience."
+      }
+    ]
+  },
+  "custom_widget_offers": [
+    {
+      "widget": "mortgage affordability",
+      "pitch": "Custom affordability calculator branded for your site"
+    },
+    {
+      "widget": "debt snowball vs avalanche",
+      "pitch": "Side-by-side comparison tool \u2014 readers choose their strategy"
+    },
+    {
+      "widget": "compound interest",
+      "pitch": "Show your readers exactly how their money grows over time"
+    },
+    {
+      "widget": "tax bracket estimator",
+      "pitch": "Quick tax bracket check \u2014 no signup, instant result"
+    },
+    {
+      "widget": "rent vs buy",
+      "pitch": "Help your readers decide rent vs buy based on REAL numbers"
+    }
+  ],
+  "ultra_short_pitches": [
+    "Free embeddable mortgage calculator for your readers \u2014 no signup, 30 second setup.",
+    "Your readers want to know 'can I afford this?' Give them the answer in one click.",
+    "I built a free debt payoff tool your readers will actually use. Want to see it?"
+  ],
+  "rules": [
+    "Do NOT send before scheduled due date unless workflow explicitly says due",
+    "No backlink ask in first follow-up",
+    "No anchor text request",
+    "Value-first: offer useful widget/embed/custom example",
+    "Personalize by prospect type",
+    "Track every send and reply"
+  ]
+}

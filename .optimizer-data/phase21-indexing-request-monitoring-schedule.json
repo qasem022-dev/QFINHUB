@@ -1,0 +1,79 @@
+{
+  "title": "Phase 21 — Indexing Request Monitoring Schedule",
+  "generated": "2026-06-12T00:15:00Z",
+  "request_date": "2026-06-12 (Day 0)",
+  "targets": 7,
+  "gsc_live_baseline_7d": {
+    "impressions": 303,
+    "clicks": 0,
+    "pages": 43,
+    "queries": 42
+  },
+  "monitoring_windows": {
+    "day_3": {
+      "date": "2026-06-15",
+      "actions": [
+        "Run URL Inspection API on all 7 target URLs",
+        "Check coverageState for each",
+        "LIKELY_REQUESTED pages: confirm request status appeared",
+        "Check whether any unknown-to-Google pages moved to Discovered",
+        "Check whether any Discovered pages moved to indexing",
+        "Record all coverageState changes"
+      ],
+      "success_gate": "At least 1/4 previously unknown pages now discovered. At least 1/3 LIKELY_REQUESTED pages confirmed requested.",
+      "failure_response": "Wait 4 more days. Do not retry requests."
+    },
+    "day_7": {
+      "date": "2026-06-19",
+      "actions": [
+        "Run URL Inspection API on all 7 target URLs",
+        "Check index status for all 7",
+        "Pull fresh GSC Search Analytics for impressions on target URLs",
+        "Check GSC Pages UI for category movement",
+        "Document any pages that achieved Submitted and indexed",
+        "Flag pages still stuck in Discovered/Unknown"
+      ],
+      "success_gate": "At least 3/7 pages indexed (Submitted and indexed) OR discovered (for previously unknown)",
+      "failure_response": "Consider internal link additions from higher-authority pages. Do not retry indexing requests."
+    },
+    "day_14": {
+      "date": "2026-06-26",
+      "actions": [
+        "Run URL Inspection API on all 7 target URLs",
+        "Pull fresh GSC Search Analytics with page dimension for targets",
+        "Classify each URL: SUCCESS / PROGRESS / STUCK",
+        "For SUCCESS pages: check impressions trend",
+        "For STUCK pages: identify root cause (content quality, authority, crawl)"
+      ],
+      "success_gate": "At least 5/7 pages indexed. At least 2/7 pages showing impressions.",
+      "failure_response": "Escalate to content quality investigation. Pages may need deeper improvements."
+    },
+    "day_21": {
+      "date": "2026-07-03",
+      "actions": [
+        "Final classification for all 7 targets",
+        "Mark each as: SUCCESSFUL / NEEDS_MORE_INTERNAL_LINKS / NEEDS_CONTENT_UPGRADE / NEEDS_PARENT_AUTHORITY / STILL_BLOCKED",
+        "Document lessons learned for Phase 22 indexing strategy",
+        "If 0/7 indexed: investigate systemic blocking (sandbox, quality, penalty)"
+      ],
+      "success_gate": "At least 5/7 pages indexed. At least 3/7 pages showing impressions.",
+      "failure_response": "Phase 22 indexing strategy revision required. May need backlinks or content overhaul."
+    }
+  },
+  "target_urls_with_tracking": [
+    {"url": "how-to-use-mortgage-calculator", "group": "A", "initial": "Discovered-not-indexed", "request_status": "LIKELY_REQUESTED"},
+    {"url": "how-to-use-compound-interest", "group": "A", "initial": "Discovered-not-indexed", "request_status": "LIKELY_REQUESTED"},
+    {"url": "how-to-use-retirement-planning", "group": "A", "initial": "Discovered-not-indexed", "request_status": "CONFIRMED_REQUESTED"},
+    {"url": "simple-interest", "group": "B", "initial": "Unknown", "request_status": "CONFIRMED_REQUESTED"},
+    {"url": "capital-gains-tax", "group": "B", "initial": "Unknown", "request_status": "LIKELY_REQUESTED"},
+    {"url": "compare-30yr-fixed-vs-15yr-fixed", "group": "B", "initial": "Unknown", "request_status": "CONFIRMED_REQUESTED"},
+    {"url": "compare-roth-ira-vs-traditional-ira", "group": "B", "initial": "Unknown", "request_status": "CONFIRMED_REQUESTED"}
+  ],
+  "rules": {
+    "do_not_repeat_indexing_requests_before_day_3_recheck": true,
+    "do_not_use_indexing_api": true,
+    "do_not_click_validate_fix": true,
+    "do_not_request_thin_tool_scenario_urls": true,
+    "only_high_value_changed_pages_eligible_for_repeat": true
+  }
+}

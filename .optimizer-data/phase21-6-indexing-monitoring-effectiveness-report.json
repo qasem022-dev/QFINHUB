@@ -1,0 +1,111 @@
+{
+  "title": "Phase 21.6 — Indexing Monitoring & Effectiveness — Final Report",
+  "generated": "2026-06-12T00:15:00Z",
+  "phase": "21.6",
+  "status": "COMPLETE — 7 files created, 3 updated, measurement baseline established",
+  "gsc_live_baseline": {
+    "pulled_at": "2026-06-12T00:12:21Z",
+    "freshness": "FRESH — 3-window variation confirmed (476→415→303, -36%)",
+    "current_7d_impressions": 303,
+    "current_7d_clicks": 0,
+    "trend": "DECLINING",
+    "28d_impressions": 1202,
+    "28d_clicks": 1,
+    "28d_click_type": "BRANDED_HOMEPAGE_ONLY"
+  },
+  "tasks_completed": {
+    "task_1_indexing_proof_ledger": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase21-6-indexing-ledger-update.json",
+      "confirmed_requested": 4,
+      "likely_requested": 3,
+      "repeat_blocked_until": "2026-06-15"
+    },
+    "task_2_monitoring_schedule": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase21-indexing-request-monitoring-schedule.json",
+      "windows": ["Day 3 (Jun 15)", "Day 7 (Jun 19)", "Day 14 (Jun 26)", "Day 21 (Jul 3)"],
+      "success_gate_day_3": "≥1/4 unknown pages discovered",
+      "success_gate_day_7": "≥3/7 pages indexed",
+      "success_gate_day_14": "≥5/7 indexed, ≥2/7 with impressions",
+      "success_gate_day_21": "≥5/7 indexed, ≥3/7 with impressions"
+    },
+    "task_3_indexing_request_rules": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/daily-indexing-request-rules.json",
+      "core_rule": "No repeat indexing requests within 7 days",
+      "max_daily_budget": 5,
+      "eligibility": "High-value + recently changed + indexable + not requested in 7 days + not already indexed + not pending"
+    },
+    "task_4_effectiveness_dashboard": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase21-effectiveness-dashboard.json",
+      "targets_tracked": 15,
+      "indexed": 8,
+      "indexing_requested": 7,
+      "with_impressions": 0,
+      "with_clicks": 0
+    },
+    "task_5_restricted_effectiveness_mode": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/restricted-effectiveness-mode-rules.json",
+      "mode": "RESTRICTED_EFFECTIVENESS",
+      "allowed": ["improve real calculators", "improve real guides", "improve real decisions", "add internal links to real pages", "monitor first-click", "prepare outreach", "audit thin tools", "parent strengthening"],
+      "blocked": ["thin tool SEO", "mass pages", "title-only changes", "repeated indexing requests", "unapproved cleanup", "indexing API", "validate fix", "cached GSC", "corrected KPIs"]
+    },
+    "task_6_next_daily_priority_queue": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase21-next-daily-priority-queue.json",
+      "priorities": [
+        "Check first content click",
+        "Monitor 7 indexing URLs (DO NOT re-request)",
+        "Strengthen Group C indexed-invisible (max 4 pages)",
+        "Add 15-30 internal links to real parents",
+        "Audit 10 discovered low-value pages",
+        "Prepare Jun 13 outreach follow-ups",
+        "DO NOT perform cleanup"
+      ]
+    },
+    "task_7_final_report": {
+      "status": "COMPLETE",
+      "file": ".optimizer-data/phase21-6-indexing-monitoring-effectiveness-report.json"
+    }
+  },
+  "files_updated": [
+    ".optimizer-data/gsc-api-truth-current.json",
+    ".optimizer-data/business-growth-scoreboard.json",
+    ".optimizer-data/phase19-kpi-scoreboard.json",
+    ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+    ".optimizer-data/first-click-baseline-report.json"
+  ],
+  "files_created": [
+    ".optimizer-data/phase21-6-indexing-ledger-update.json",
+    ".optimizer-data/phase21-indexing-request-monitoring-schedule.json",
+    ".optimizer-data/daily-indexing-request-rules.json",
+    ".optimizer-data/phase21-effectiveness-dashboard.json",
+    ".optimizer-data/restricted-effectiveness-mode-rules.json",
+    ".optimizer-data/phase21-next-daily-priority-queue.json"
+  ],
+  "current_status": {
+    "validate_fix": "DO_NOT_VALIDATE_YET",
+    "first_content_click": "NOT ACHIEVED",
+    "first_7d_click": "NOT ACHIEVED",
+    "backlinks": 0,
+    "on_track": "OFF_TRACK — declining impressions, 0 clicks, 0 backlinks",
+    "gsc_api": "OPERATIONAL — fresh pull with 3-window verification"
+  },
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_repeat_indexing_requests_today": true,
+    "no_thin_tool_scenario_seo_push": true,
+    "no_mass_pages": true,
+    "no_unapproved_noindex_canonical_redirect_delete": true,
+    "no_cached_data_as_live": true,
+    "no_corrected_multiplied_kpis": true,
+    "risky_automations_disabled": true,
+    "real_page_focus_rule_active": true,
+    "thin_tool_scenario_freeze_active": true
+  },
+  "next_milestone": "Day 3 monitoring (Jun 15) — recheck 7 indexing request URLs via URL Inspection API"
+}

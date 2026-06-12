@@ -1,0 +1,80 @@
+{
+  "phase": "24",
+  "task": "response-handling-playbook",
+  "version": "1.0",
+  "max_emails_per_prospect": 3,
+  "scenarios": [
+    {
+      "scenario": "Prospect says YES \u2014 wants the embed/widget",
+      "response": "Immediately send the embed code with simple instructions. Offer to help with sizing or placement. NO anchor text suggestions unless they ask. End with: 'Let me know if you need a short description for the tool \u2014 happy to provide one.'",
+      "anchor_pressure": "NONE \u2014 do not suggest anchor text even if they embed",
+      "follow_up_allowed": true,
+      "notes": "The embed code itself includes a subtle 'Powered by QFINHUB' link. That's sufficient."
+    },
+    {
+      "scenario": "Prospect says YES \u2014 wants a custom example",
+      "response": "Ask clarifying questions: what specific calculation, what variables should readers adjust, any specific formatting needs. Build and deliver within 48 hours. Follow up to confirm it works.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": true,
+      "notes": "Custom examples earn natural links when the publisher credits the source. Don't push."
+    },
+    {
+      "scenario": "Prospect asks 'how much does it cost' or implies payment expected",
+      "response": "Clarify it's completely free with no catch. If they explicitly ask for payment in exchange for placement: LOG AS PAID INQUIRY. Politely decline unless it's clearly marked as sponsored/nofollow per Google guidelines. Do NOT pay for dofollow links.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": false,
+      "notes": "Paid links = toxic. Reject all paid dofollow requests."
+    },
+    {
+      "scenario": "Prospect asks for reciprocal link exchange",
+      "response": "Hold for review. Do not agree immediately. Link exchanges are low-value and risk penalty. Respond: 'I appreciate the offer \u2014 let me review and get back to you.' Escalate to manual decision.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": false,
+      "notes": "Reciprocal links have near-zero SEO value in 2026. Only accept if the other site is genuinely high-quality and the link is editorially relevant."
+    },
+    {
+      "scenario": "Prospect wants customization (specific parameters, colors, sizing)",
+      "response": "Accommodate simple requests (sizing, default values). For complex requests: offer to create a custom version. Delight them \u2014 custom work builds relationships that lead to natural links.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": true,
+      "notes": "Customization = stickiness. A publisher who invests time customizing is more likely to link."
+    },
+    {
+      "scenario": "Prospect ignores (no reply after 7 days)",
+      "response": "Send ONE short follow-up: 'Hi [Name], just checking if the [widget/calculator] would be useful for your readers. No worries if not \u2014 let me know either way!' Do NOT send a third email.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": false,
+      "notes": "Maximum 2 touches per prospect. Respect the silence."
+    },
+    {
+      "scenario": "Prospect replies with 'not interested' or 'we don't accept external tools'",
+      "response": "Thank them for responding. Do not argue or pitch again. Move on.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": false,
+      "notes": "A 'no' is a gift \u2014 saves you time. Log and move on."
+    },
+    {
+      "scenario": "Prospect embeds the widget but doesn't link or uses nofollow",
+      "response": "Do NOT complain or ask for dofollow. The embed is free. The 'Powered by QFINHUB' link provides some value. A nofollow link from a real site still drives traffic and brand awareness.",
+      "anchor_pressure": "ZERO \u2014 do not request anchor changes",
+      "follow_up_allowed": false,
+      "notes": "Nofollow links have indirect SEO value (traffic, brand signals). Don't be greedy."
+    },
+    {
+      "scenario": "Prospect replies positively but doesn't follow through (embeds or links)",
+      "response": "One gentle follow-up after 10-14 days: 'Hi [Name], just checking if you had a chance to add the calculator \u2014 happy to help if you ran into any issues!' Then stop.",
+      "anchor_pressure": "NONE",
+      "follow_up_allowed": false,
+      "notes": "Some publishers mean well but get busy. One reminder, then move on."
+    }
+  ],
+  "golden_rules": [
+    "NEVER ask for specific anchor text",
+    "NEVER mention SEO, backlinks, or link building",
+    "NEVER pressure for dofollow",
+    "NEVER send more than 3 emails to a single prospect",
+    "ALWAYS lead with reader value, not QFINHUB value",
+    "ALWAYS log every interaction (reply, embed, link, rejection)",
+    "ALWAYS be genuinely helpful \u2014 the link is a side effect"
+  ]
+}
