@@ -1,84 +1,56 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs",
-  "buildCommand": "next build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "regions": ["iad1"],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/embed/(.*)",
       "headers": [
         {
           "key": "X-Frame-Options",
-          "value": "DENY"
+          "value": ""
         },
         {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors *"
+        }
+      ]
+    },
+    {
+      "source": "/widgets/embed/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": ""
         },
         {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors *"
+        }
+      ]
+    },
+    {
+      "source": "/api/widget/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": ""
         },
         {
-          "key": "X-DNS-Prefetch-Control",
-          "value": "on"
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors *"
         }
       ]
     },
     {
-      "source": "/(.*)\\.(png|jpg|jpeg|gif|webp|avif|svg|ico)",
+      "source": "/calculators/(.*)/embed",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)\\.(js|css|woff2?|ttf|eot)",
-      "headers": [
+          "key": "X-Frame-Options",
+          "value": ""
+        },
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors *"
         }
       ]
-    },
-    {
-      "source": "/og-image.png",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    },
-    {
-      "source": "/favicon.ico",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/en",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/es",
-      "destination": "/?lang=es",
-      "permanent": false
-    },
-    {
-      "source": "/hi",
-      "destination": "/?lang=hi",
-      "permanent": false
     }
   ]
 }
