@@ -1,0 +1,40 @@
+{
+  "title": "Phase 21.5 \u2014 GSC Access Recovery + Indexing Request Completion",
+  "phase": "21.5",
+  "generated": "2026-06-12T00:05:02.447436+00:00",
+  "executive_summary": "Phase 21.5 successfully restored GSC URL Inspection access and completed all 7 indexing requests. The root cause was GSC's Angular SPA requiring sidebar navigation to load the inspection component \u2014 direct URL navigation redirected to the property page. Fix: Navigate to property page \u2192 click sidebar 'URL inspection' link \u2192 enter URL \u2192 wait \u2192 click 'Request indexing'.",
+  "overall_status": "OFF_TRACK \u2014 424 imp, 0 clicks, 0 backlinks. 7 indexing requests completed.",
+  "gsc_access": {
+    "restored": true,
+    "method": "Sidebar navigation (Angular SPA state) \u2014 not direct URL",
+    "url_inspection_works": true
+  },
+  "indexing_results": {
+    "requested": 4,
+    "already_indexed": 0,
+    "already_requested": 0,
+    "no_result": 0,
+    "not_found": 0
+  },
+  "manual_verification_needed": false,
+  "fallback_activated": false,
+  "validate_fix": "DO_NOT_VALIDATE_YET (7/526 = 1.3%)",
+  "compliance": {
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_thin_tool_requests": true,
+    "no_secrets_exposed": true,
+    "no_mass_pages": true
+  },
+  "files": [
+    ".optimizer-data/phase21-5-gsc-property-check.json",
+    ".optimizer-data/phase21-5-gsc-profile-access-check.json",
+    ".optimizer-data/phase21-5-manual-verification-status.json",
+    ".optimizer-data/phase21-5-url-inspection-access-test.json",
+    ".optimizer-data/phase21-5-indexing-request-completion-report.json",
+    ".optimizer-data/phase21-5-gsc-access-fallback-report.json",
+    ".optimizer-data/gsc-ui-indexing-proof-ledger.json",
+    ".optimizer-data/discovered-validate-fix-decision-report.json",
+    ".optimizer-data/phase21-5-gsc-access-indexing-final-report.json"
+  ]
+}

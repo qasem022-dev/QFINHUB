@@ -1,0 +1,7 @@
+{
+  "title": "Phase 21.5 \u2014 URL Inspection Access Test",
+  "generated": "2026-06-12T00:05:02.447436+00:00",
+  "test_url": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+  "result": "SUCCESS \u2014 Request indexing button found and clicked",
+  "method": "Sidebar URL Inspection link click \u2192 enter URL \u2192 wait \u2192 click Request Indexing"
+}
