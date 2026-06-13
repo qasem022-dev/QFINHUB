@@ -1,104 +1,38 @@
 {
-  "title": "Phase 22.1 \u2014 Internal Authority Concentration Log (Updated)",
-  "generated": "2026-06-12T01:00:00Z",
-  "total_links_added_today": 15,
-  "cumulative_total": 38,
-  "rules": [
-    "No links to thin tools/scenarios",
-    "No exact-match spam",
-    "No sitewide blocks",
-    "Source pages must be relevant"
-  ],
-  "links_added_today": [
+  "phase": "26",
+  "updated": "2026-06-12T21:41:13.187379Z",
+  "links_added_today": 5,
+  "cumulative_total": 43,
+  "links": [
     {
-      "source": "calculators/loan-calculator",
-      "target": "decision/pay-off-debt-or-invest",
-      "anchor": "Pay Off Debt or Invest?",
-      "reason": "Calculator \u2192 decision contextual link"
+      "source": "blog/debt-snowball-vs-debt-avalanche",
+      "target": "widgets/debt-snowball-vs-avalanche-embed",
+      "anchor": "debt snowball vs avalanche embed widget",
+      "reason": "Blog \u2192 widget embed (authority concentration)"
     },
     {
-      "source": "calculators/investment-return",
-      "target": "decision/pay-off-debt-or-invest",
-      "anchor": "Should You Invest or Pay Debt?",
-      "reason": "Calculator \u2192 decision"
-    },
-    {
-      "source": "calculators/tax-calculator",
-      "target": "decision/what-tax-bracket-am-i-in",
-      "anchor": "What Tax Bracket Am I In?",
-      "reason": "Calculator \u2192 decision"
-    },
-    {
-      "source": "calculators/retirement-planning",
+      "source": "blog/complete-guide-to-retirement-planning-2026",
       "target": "decision/how-much-do-i-need-to-retire",
       "anchor": "How Much Do I Need to Retire?",
-      "reason": "Calculator \u2192 decision"
+      "reason": "Blog \u2192 decision"
     },
     {
-      "source": "calculators/compound-interest",
-      "target": "decision/pay-off-student-loans-or-invest",
-      "anchor": "Pay Loans or Invest?",
-      "reason": "Calculator \u2192 decision"
+      "source": "blog/understanding-tax-brackets",
+      "target": "decision/what-tax-bracket-am-i-in",
+      "anchor": "What Tax Bracket Am I In?",
+      "reason": "Blog \u2192 decision"
     },
     {
-      "source": "blog/20000-loan-at-8-percent",
-      "target": "decision/snowball-vs-avalanche-which-wins",
-      "anchor": "Snowball vs Avalanche Method",
-      "reason": "Blog \u2192 decision cross-link"
+      "source": "blog/compound-interest-explained",
+      "target": "calculators/investment-return",
+      "anchor": "Investment Return Calculator",
+      "reason": "Blog \u2192 cross-calculator"
     },
     {
-      "source": "calculators/investment-return",
-      "target": "calculators/compound-interest",
-      "anchor": "Compound Interest Calculator",
-      "reason": "Cross-calculator"
-    },
-    {
-      "source": "calculators/compound-interest",
-      "target": "calculators/retirement-planning",
-      "anchor": "Retirement Planning Calculator",
-      "reason": "Cross-calculator"
-    },
-    {
-      "source": "calculators/tax-calculator",
-      "target": "calculators/retirement-planning",
-      "anchor": "Retirement Planning Calculator",
-      "reason": "Cross-calculator tax-advantaged"
-    },
-    {
-      "source": "calculators/mortgage-calculator",
-      "target": "decision/rent-vs-buy-with-100k-income",
-      "anchor": "Rent vs Buy with $100k Income",
-      "reason": "Calculator \u2192 decision"
-    },
-    {
-      "source": "decision/pay-off-debt-or-invest",
-      "target": "comparisons/compare-dollar-cost-average-vs-lump-sum",
-      "anchor": "Lump Sum vs Dollar Cost Average",
-      "reason": "Decision \u2192 comparison"
-    },
-    {
-      "source": "calculators/retirement-planning",
-      "target": "guides/how-to-use-retirement-planning",
-      "anchor": "How to Use Retirement Planning",
-      "reason": "Calculator \u2192 guide (indexing requested page)"
-    },
-    {
-      "source": "calculators/compound-interest",
-      "target": "guides/how-to-use-compound-interest",
-      "anchor": "How to Use Compound Interest",
-      "reason": "Calculator \u2192 guide (indexing requested page)"
-    },
-    {
-      "source": "calculators/investment-return",
-      "target": "guides/how-to-use-investment-return",
-      "anchor": "How to Use Investment Return Calculator",
-      "reason": "Calculator \u2192 guide"
-    },
-    {
-      "source": "calculators/tax-calculator",
-      "target": "guides/how-to-use-marginal-tax-rate",
-      "anchor": "How to Use Marginal Tax Rate",
-      "reason": "Calculator \u2192 guide"
+      "source": "blog/mortgage-rates-2025 (Fed blog)",
+      "target": "widgets/mortgage-affordability-embed",
+      "anchor": "embed widget",
+      "reason": "Blog \u2192 widget embed with CTA"
     }
   ]
 }

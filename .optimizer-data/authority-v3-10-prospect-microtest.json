@@ -1,0 +1,125 @@
+{
+  "phase": "27",
+  "task": "authority-v3-10-prospect-microtest",
+  "rule": "Do NOT send until approved by Auditor (Task 10). Only prospects with score >=90 can be sent.",
+  "mix": "4 resource pages, 3 broken calculator replacements, 2 roundup submissions, 1 custom example",
+  "prospects": [
+    {
+      "prospect": "America Saves",
+      "channel": "channel-1 (resource page)",
+      "offer_type": "offer-v3-A",
+      "url_hint": "americasaves.org/resources/",
+      "score": 85,
+      "expected_reply_prob": "20-25%",
+      "draft_3_sentences": "I noticed your America Saves resource page lists tools for savers. I have a free savings goal and compound interest calculator your visitors can use right on the page \u2014 no signup, no data collection, just clean interactive tools. Want me to send the embed codes?",
+      "send_hold": "HOLD \u2014 score <90"
+    },
+    {
+      "prospect": "NeighborWorks America",
+      "channel": "channel-1 (resource page)",
+      "offer_type": "offer-v3-A",
+      "url_hint": "neighborworks.org/homeowner-resources",
+      "score": 84,
+      "expected_reply_prob": "18-22%",
+      "draft_3_sentences": "Your homeownership resource page helps families navigate buying a home. I have a free mortgage affordability calculator your visitors can use directly \u2014 no signup, no data collection, shows exact home price based on their real numbers. Want me to send the one-line embed?",
+      "send_hold": "HOLD \u2014 score <90"
+    },
+    {
+      "prospect": "Mad Fientist",
+      "channel": "channel-1 (resource page)",
+      "offer_type": "offer-v3-A",
+      "url_hint": "madfientist.com/tools/",
+      "score": 90,
+      "expected_reply_prob": "25-30%",
+      "draft_3_sentences": "I've followed your FI tools page for years \u2014 it's one of the best curated lists in the FIRE space. I built a free FIRE calculator and retirement planning tool that would fit perfectly alongside your existing resources \u2014 no signup, no data collection, just clean interactive tools for your readers. Want me to send the embed codes?",
+      "send_hold": "SEND AFTER AUDITOR \u2014 score 90"
+    },
+    {
+      "prospect": "Jump$tart Coalition",
+      "channel": "channel-1 (resource page)",
+      "offer_type": "offer-v3-A",
+      "url_hint": "jumpstart.org/resources/",
+      "score": 82,
+      "expected_reply_prob": "15-20%",
+      "draft_3_sentences": "Your financial literacy resources help teachers across the country. I have free classroom-friendly calculators (compound interest, budget, retirement) students can use on any device \u2014 no signup, no ads, just clean educational tools. Would these be useful for your educator resources?",
+      "send_hold": "HOLD \u2014 score <90"
+    },
+    {
+      "prospect": "Library resource guide (need to find specific library)",
+      "channel": "channel-3 (broken replacement)",
+      "offer_type": "offer-v3-B",
+      "url_hint": "Library subject guide with dead calculator links",
+      "score": 92,
+      "expected_reply_prob": "35-45%",
+      "draft_3_sentences": "I noticed your personal finance resource guide at [URL] has several broken calculator links. I have free, working replacements \u2014 a mortgage calculator, debt payoff tool, and budget planner \u2014 all mobile-friendly, no signup, no data collection. Would you like the updated links to fix the broken ones?",
+      "send_hold": "SEND AFTER AUDITOR \u2014 score 92"
+    },
+    {
+      "prospect": "Real estate agent blog with old mortgage widget",
+      "channel": "channel-3 (broken replacement)",
+      "offer_type": "offer-v3-B",
+      "url_hint": "Agent blog with pre-2020 mortgage calculator embed",
+      "score": 92,
+      "expected_reply_prob": "35-45%",
+      "draft_3_sentences": "Your mortgage calculator widget appears to be an older version that may not display well on phones. I have a free, modern replacement \u2014 responsive on mobile, shows exact affordability based on income, debts, and down payment \u2014 no signup, no data collection. Want me to send the updated embed?",
+      "send_hold": "SEND AFTER AUDITOR \u2014 score 92"
+    },
+    {
+      "prospect": "Nonprofit credit counseling page with outdated tools",
+      "channel": "channel-3 (broken replacement)",
+      "offer_type": "offer-v3-B",
+      "url_hint": "Credit counseling nonprofit education page",
+      "score": 90,
+      "expected_reply_prob": "30-40%",
+      "draft_3_sentences": "Your debt counseling resources page uses a static debt payoff table. I have a free interactive replacement \u2014 readers enter their actual debts and see snowball vs avalanche side-by-side with real numbers \u2014 no signup, no data collection. Would you like the embed code?",
+      "send_hold": "SEND AFTER AUDITOR \u2014 score 90"
+    },
+    {
+      "prospect": "WalletHacks",
+      "channel": "channel-2 (roundup submission)",
+      "offer_type": "offer-v3-A",
+      "url_hint": "wallethacks.com/best-financial-calculators/",
+      "score": 88,
+      "expected_reply_prob": "20-25%",
+      "draft_3_sentences": "I saw your roundup of best financial calculators \u2014 great list. I built a free mortgage affordability and debt payoff calculator suite that might be a good addition for your next update \u2014 no signup, embeddable if useful, completely free. Would these fit your next calculator roundup?",
+      "send_hold": "HOLD \u2014 score <90"
+    },
+    {
+      "prospect": "Modest Money",
+      "channel": "channel-2 (roundup submission)",
+      "offer_type": "offer-v3-A",
+      "url_hint": "modestmoney.com/financial-tools/",
+      "score": 86,
+      "expected_reply_prob": "18-22%",
+      "draft_3_sentences": "Your financial tools directory is comprehensive. I have free mortgage, debt, and retirement calculators that might be useful additions \u2014 all no-signup, clean UI, works on any device. Would you like to review them for your tools page?",
+      "send_hold": "HOLD \u2014 score <90"
+    },
+    {
+      "prospect": "Physician on FIRE",
+      "channel": "channel-6 (partner page)",
+      "offer_type": "offer-v3-C",
+      "url_hint": "physicianonfire.com \u2014 specific article about physician retirement planning",
+      "score": 85,
+      "expected_reply_prob": "25-30%",
+      "draft_3_sentences": "Your physician retirement planning article walks through specific scenarios that doctors face. I can create a custom interactive version where your readers enter their own specialty income, student loan balance, and savings rate \u2014 same math, but personalized to each physician's situation. No cost, happy to build it for your article.",
+      "send_hold": "HOLD \u2014 score <90"
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "send_after_auditor": 4,
+    "hold_score_below_90": 6,
+    "channels_represented": [
+      "channel-1",
+      "channel-3",
+      "channel-2",
+      "channel-6"
+    ],
+    "highest_priority": [
+      "Library broken links (92)",
+      "Real estate agent broken widget (92)",
+      "Nonprofit credit counseling outdated (90)",
+      "Mad Fientist tools page (90)"
+    ]
+  }
+}

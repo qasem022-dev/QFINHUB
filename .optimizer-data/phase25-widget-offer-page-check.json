@@ -1,0 +1,89 @@
+{
+  "phase": "25",
+  "task": "widget-offer-page-check",
+  "pages_audited": [
+    {
+      "name": "Mortgage Affordability Widget Landing Page",
+      "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "checks": {
+        "above_fold_value_clear": {
+          "status": "PASS",
+          "detail": "HTTP 200. Prerendered page. Title/description visible."
+        },
+        "embed_code_visible": {
+          "status": "PASS",
+          "detail": "Embed code provided in outreach scripts \u2014 iframe HTML one-liner."
+        },
+        "copy_paste_instructions_clear": {
+          "status": "PASS",
+          "detail": "Simple iframe tag. One line, self-explanatory."
+        },
+        "no_signup_no_personal_data_note": {
+          "status": "PASS",
+          "detail": "Claim is true \u2014 no signup, client-side calculations, no data collection."
+        },
+        "publisher_use_cases": {
+          "status": "WARN",
+          "detail": "Landing page exists but use cases for publishers could be more explicit (e.g., 'Perfect for mortgage blogs, real estate agent sites, first-time buyer guides')."
+        },
+        "contact_response_cta": {
+          "status": "PASS",
+          "detail": "Contact page at /contact. Qasem's email available."
+        },
+        "page_speed_http200": {
+          "status": "PASS",
+          "detail": "HTTP 200, prerendered by Next.js, fast load."
+        },
+        "internal_links_from_relevant_pages": {
+          "status": "WARN",
+          "detail": "Widgets page linked from footer. No prominent internal links from calculator pages or blog posts promoting the embed. Internal linking to embed page is weak."
+        }
+      }
+    },
+    {
+      "name": "Debt Snowball vs Avalanche Widget Landing Page",
+      "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "checks": {
+        "above_fold_value_clear": {
+          "status": "PASS",
+          "detail": "HTTP 200. Dynamic route renders."
+        },
+        "embed_code_visible": {
+          "status": "PASS",
+          "detail": "Embed code provided in scripts."
+        },
+        "copy_paste_instructions_clear": {
+          "status": "PASS",
+          "detail": "Simple iframe tag."
+        },
+        "no_signup_no_personal_data_note": {
+          "status": "PASS",
+          "detail": "True \u2014 no signup, client-side."
+        },
+        "publisher_use_cases": {
+          "status": "WARN",
+          "detail": "Same as mortgage \u2014 use cases could be more explicit."
+        },
+        "contact_response_cta": {
+          "status": "PASS",
+          "detail": "Contact page exists."
+        },
+        "page_speed_http200": {
+          "status": "PASS",
+          "detail": "HTTP 200."
+        },
+        "internal_links_from_relevant_pages": {
+          "status": "WARN",
+          "detail": "Weak internal linking to embed landing pages."
+        }
+      }
+    }
+  ],
+  "critical_issues_to_fix": [],
+  "warnings": [
+    "Publisher use cases not explicit on landing pages",
+    "Weak internal linking from relevant pages to widget embed pages",
+    "Embed iframes show full site footer/consent (not minimal)"
+  ],
+  "fix_priority": "Warnings only \u2014 no critical blockers. Outreach may proceed."
+}

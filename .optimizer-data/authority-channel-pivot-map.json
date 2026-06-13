@@ -1,0 +1,153 @@
+{
+  "phase": "27",
+  "task": "authority-channel-pivot-map",
+  "philosophy": "Stop cold-emailing finance bloggers. Find channels where QFINHUB's free calculators/widgets are genuinely useful additions, not unsolicited pitches.",
+  "channels": [
+    {
+      "id": "channel-1",
+      "name": "Resource Pages",
+      "description": "Pages that already list mortgage calculators, debt payoff calculators, retirement calculators, financial tools, budgeting tools, personal finance resources",
+      "target_type": "Curated resource/link pages on .edu, .org, personal finance sites, library sites, nonprofit financial education pages",
+      "offer": "Add QFINHUB's free calculator to their existing list of tools. Offer: 'Here's a free, no-signup [calculator type] your readers might find useful for your resources page.'",
+      "risk": "LOW \u2014 resource pages WANT good tools to list. You're helping them curate.",
+      "effort": "MEDIUM \u2014 need to find pages, verify they link to external tools, find contact, personalize pitch",
+      "probability_of_reply": "15-25% \u2014 resource page owners are actively curating and receptive to quality additions",
+      "automation_suitability": "LOW \u2014 each pitch must be manually reviewed for page relevance",
+      "first_10_prospects_examples": [
+        "University financial literacy resource pages (.edu/financial-literacy/resources)",
+        "Public library personal finance resource pages",
+        "Nonprofit credit counseling resource pages (NFCC member sites)",
+        "HUD-approved housing counselor resource pages",
+        "FIRE blogger resource/start-here pages",
+        "Financial advisor blog tool pages",
+        "Real estate agent resource pages",
+        "Mortgage broker education pages",
+        "Debt relief nonprofit resource pages",
+        "Personal finance wiki/curated lists"
+      ]
+    },
+    {
+      "id": "channel-2",
+      "name": "Tool Roundup Submissions",
+      "description": "Blogs, newsletters, and directories that regularly feature/roundup free financial tools and calculators",
+      "target_type": "Finance bloggers who write 'best free financial calculators' posts, newsletter curators, tool directories, 'X best tools for Y' articles",
+      "offer": "Submit QFINHUB calculator for inclusion in their next roundup. Offer: 'I saw your roundup of [topic] tools \u2014 here's a free [calculator] that might be a good addition for your next update.'",
+      "risk": "LOW-MEDIUM \u2014 roundup authors are looking for tools to feature",
+      "effort": "LOW-MEDIUM \u2014 find roundup posts, pitch relevant calculator replacement/addition",
+      "probability_of_reply": "20-30% \u2014 roundup authors actively seek new tools to keep content fresh",
+      "automation_suitability": "LOW \u2014 must match specific calculator to specific roundup topic",
+      "first_10_prospects_examples": [
+        "'Best free mortgage calculators' blog posts",
+        "'Top debt payoff tools' roundups",
+        "'Best retirement planning calculators' lists",
+        "'Free budgeting tools worth using' articles",
+        "Finance newsletter 'tool of the week' features",
+        "Product Hunt-style finance tool directories",
+        "'Best financial calculators for [year]' annual roundups",
+        "'X free tools every homebuyer needs' posts",
+        "Reddit r/personalfinance wiki tool list (if allowed)",
+        "Bogleheads wiki tool recommendations"
+      ]
+    },
+    {
+      "id": "channel-3",
+      "name": "Broken/Outdated Calculator Replacement",
+      "description": "Find pages linking to dead, broken, outdated, or poor-quality calculators that QFINHUB can replace",
+      "target_type": "Any page with a broken calculator link or reference to an outdated/Flash/non-mobile calculator",
+      "offer": "Alert them to the broken link AND offer QFINHUB's working replacement. Offer: 'I noticed your page links to [broken calculator] \u2014 I have an updated, mobile-friendly version that does the same thing. Want the link?'",
+      "risk": "VERY LOW \u2014 you're helping them fix a broken page. Site owners hate broken links.",
+      "effort": "HIGH \u2014 requires prospecting for broken links (search for known dead calculator domains, check Wayback Machine)",
+      "probability_of_reply": "30-50% \u2014 broken link outreach has the highest reply rate of any cold outreach method",
+      "automation_suitability": "MEDIUM \u2014 broken link detection can be semi-automated, but pitch must be personalized",
+      "first_10_prospects_examples": [
+        "Pages linking to defunct calculator sites (dinkytown.net calculators, old bankrate URLs)",
+        "Pages with Flash-based mortgage calculators (defunct since 2020)",
+        "Pages referencing calculators from shutdown fintech startups",
+        "Government/nonprofit pages with broken tool links",
+        "Old blog posts using calculators that no longer exist",
+        "University pages with dead financial tool links",
+        "Credit union education pages with broken calculators",
+        "Real estate school pages with outdated mortgage tools",
+        "Financial literacy curriculum pages with dead links",
+        "Library resource guides with broken calculator URLs"
+      ]
+    },
+    {
+      "id": "channel-4",
+      "name": "Journalist/Source Channels",
+      "description": "Respond to journalist requests for financial expertise, tools, or data on platforms like HARO (Connectively), Qwoted, Help a B2B Writer, SourceBottle",
+      "target_type": "Journalists, finance writers, newsletter authors seeking expert sources, tools, or data for articles",
+      "offer": "Respond to specific queries with QFINHUB's calculator as a resource. Offer: 'For your article on [topic], here's a free [calculator] your readers can use to run their own numbers. No signup, embeddable if useful.'",
+      "risk": "LOW \u2014 journalists are actively seeking resources. You're responding to a request.",
+      "effort": "MEDIUM \u2014 requires monitoring query platforms and responding quickly with relevant offers",
+      "probability_of_reply": "15-25% \u2014 journalists reply when your resource matches their need",
+      "automation_suitability": "MEDIUM \u2014 HARO auto-responder can draft, but must be reviewed for relevance",
+      "first_10_prospects_examples": [
+        "HARO/Connectively queries about mortgage affordability",
+        "Qwoted requests for personal finance tools",
+        "Journalist Twitter/X posts seeking calculator resources",
+        "Newsletter writers asking for tool recommendations",
+        "Finance podcast hosts seeking guest resources",
+        "Bloggers posting 'send me your tools' calls",
+        "Help a Reporter Out finance category queries",
+        "SourceBottle finance/business requests",
+        "Substack finance writers seeking data/tools",
+        "Local news finance segment producers seeking resources"
+      ]
+    },
+    {
+      "id": "channel-5",
+      "name": "Small Niche Communities",
+      "description": "Non-spammy, value-first participation in communities where QFINHUB calculators are genuinely useful",
+      "target_type": "Reddit r/personalfinance, r/FIRE, r/realestate, r/debtfree, Bogleheads forum, Mr. Money Mustache forum, ChooseFI Facebook group, financial independence Discord servers",
+      "offer": "Share calculator as a HELPFUL response to specific questions. NOT promotional posts. 'For your question about [specific problem], try this free calculator \u2014 it shows [specific result].'",
+      "risk": "HIGH \u2014 communities are sensitive to self-promotion. Must be genuinely helpful, not spammy.",
+      "effort": "HIGH \u2014 requires active participation, building reputation, only sharing when truly relevant",
+      "probability_of_reply": "N/A \u2014 not reply-based. Measure by embeds/visits/traffic from community links.",
+      "automation_suitability": "ZERO \u2014 must be manual, authentic participation. Automation = instant ban.",
+      "first_10_prospects_examples": [
+        "Reddit r/personalfinance \u2014 respond to 'how much house can I afford' posts",
+        "Reddit r/debtfree \u2014 share debt payoff calculator for 'snowball vs avalanche' questions",
+        "Bogleheads forum \u2014 share investment return calculator for portfolio questions",
+        "Mr. Money Mustache forum \u2014 share FIRE calculator for retirement planning threads",
+        "ChooseFI Facebook group \u2014 share mortgage calculator for homebuying discussions",
+        "r/FirstTimeHomeBuyer \u2014 share affordability calculator",
+        "r/StudentLoans \u2014 share debt payoff calculator for repayment strategy questions",
+        "FI Discord servers \u2014 share tools when members ask for calculator recommendations",
+        "BiggerPockets forums (if allowed) \u2014 share mortgage calculator for deal analysis threads",
+        "Stack Exchange Personal Finance & Money \u2014 answer questions with calculator reference"
+      ]
+    },
+    {
+      "id": "channel-6",
+      "name": "Partner Pages",
+      "description": "Small finance sites where QFINHUB can offer a custom embed or co-branded calculator example",
+      "target_type": "Small personal finance coaches, financial literacy nonprofits, credit counselors, real estate agents with blogs, mortgage broker education sites",
+      "offer": "Create a custom embed or example matching their content. Offer: 'I can create a custom version of this calculator with your branding/parameters for your [specific page]. Free, no catch \u2014 I want to make sure your readers get a useful tool.'",
+      "risk": "MEDIUM \u2014 requires custom work per partner. But relationship building has highest long-term value.",
+      "effort": "HIGH \u2014 custom embeds require development work",
+      "probability_of_reply": "25-35% \u2014 'custom version for YOU' is the most compelling offer type",
+      "automation_suitability": "ZERO \u2014 each partnership is unique",
+      "first_10_prospects_examples": [
+        "Financial coaches with active blogs",
+        "Nonprofit credit counseling agencies with education pages",
+        "HUD-approved housing counseling agencies",
+        "Small real estate brokerages with buyer education content",
+        "Independent mortgage brokers with blog/resources",
+        "Financial literacy nonprofits (Jump$tart coalition members)",
+        "Community development financial institutions (CDFIs)",
+        "Debt relief education nonprofits",
+        "Small accounting firms with client resource pages",
+        "University financial wellness program pages"
+      ]
+    }
+  ],
+  "channel_priority_order": [
+    "Channel 3 \u2014 Broken/outdated calculator replacement (highest reply rate, lowest risk)",
+    "Channel 1 \u2014 Resource pages (natural fit, receptive audience)",
+    "Channel 2 \u2014 Tool roundup submissions (active demand for tools)",
+    "Channel 4 \u2014 Journalist/source channels (responding to requests, not cold pitching)",
+    "Channel 6 \u2014 Partner pages (highest long-term value, highest effort)",
+    "Channel 5 \u2014 Niche communities (supplementary, high risk of spam perception)"
+  ]
+}

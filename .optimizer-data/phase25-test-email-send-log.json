@@ -1,0 +1,48 @@
+{
+  "phase": "25",
+  "total_sent": 5,
+  "total_failed": 0,
+  "emails": [
+    {
+      "prospect": "Debt Free Forties",
+      "email": "debtfreeforties@protonmail.com",
+      "subject": "Quick tool idea for your debt payoff content",
+      "offer": "offer-B",
+      "sent_at": "2026-06-12T21:19:12.002671Z",
+      "status": "SENT"
+    },
+    {
+      "prospect": "Debt Roundup",
+      "email": "contact@debtroundup.com",
+      "subject": "Quick tool idea for your debt consolidation guide",
+      "offer": "offer-B",
+      "sent_at": "2026-06-12T21:19:14.732235Z",
+      "status": "SENT"
+    },
+    {
+      "prospect": "Frugalwoods",
+      "email": "frugalwoods@gmail.com",
+      "subject": "Idea for your frugal living content",
+      "offer": "offer-A",
+      "sent_at": "2026-06-12T21:19:17.416104Z",
+      "status": "SENT"
+    },
+    {
+      "prospect": "Miss Elvane",
+      "email": "elva@misselvane.com",
+      "subject": "Quick idea for your budgeting content",
+      "offer": "offer-B",
+      "sent_at": "2026-06-12T21:19:20.066807Z",
+      "status": "SENT"
+    },
+    {
+      "prospect": "Simplify and Enjoy",
+      "email": "simplifyandenjoy@gmail.com",
+      "subject": "Idea for your budgeting content",
+      "offer": "offer-B",
+      "sent_at": "2026-06-12T21:19:22.721361Z",
+      "status": "SENT"
+    }
+  ],
+  "failed": []
+}

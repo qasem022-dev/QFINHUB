@@ -1,0 +1,32 @@
+{
+  "phase": "27",
+  "task": "outreach-freeze-policy",
+  "effective": "2026-06-12T21:50:57.686647Z",
+  "reason": "70 cold emails, 0 replies. Channel not proven. Pivot to alternative channels.",
+  "allowed": [
+    "Send scheduled Jun 13 follow-ups to 8 existing prospects (already prepared, audited, low spam risk)",
+    "Reply to any incoming emails within 24h per playbook",
+    "Prepare new prospect lists for alternative channels (research only)",
+    "Prepare new pitch formats for alternative channels",
+    "Submit to high-quality tool/resource directories ONLY if manually reviewed and score \u226590",
+    "Monitor q.finhub@gmail.com inbox for replies to existing outreach"
+  ],
+  "blocked": [
+    "New generic cold email batches to finance bloggers",
+    "More finance blogger emails without new targeting logic (resource pages, broken links, roundups)",
+    "Mass sending of any kind",
+    "Automated outreach without manual review",
+    "Contact form spam",
+    "Any outreach using generic templates"
+  ],
+  "review_required_for": [
+    "Any new outreach to a prospect not in existing lists",
+    "Any submission to directories or roundups",
+    "Any journalist/source platform response"
+  ],
+  "unfreeze_conditions": [
+    "At least 1 positive reply/embed/backlink from ANY channel",
+    "New channel strategy validated by Auditor",
+    "Offer type proven with response data"
+  ]
+}

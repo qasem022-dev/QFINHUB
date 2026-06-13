@@ -1,0 +1,66 @@
+{
+  "phase": "19",
+  "batch": "jun13-followups",
+  "sent_at": "2026-06-13T17:47:07.960208Z",
+  "total": 8,
+  "sent": 8,
+  "failed": 0,
+  "entries": [
+    {
+      "prospect": "Money Under 30",
+      "email": "info@moneyunder30.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:46:51.795099Z",
+      "spam_risk": 2
+    },
+    {
+      "prospect": "Making Sense of Cents",
+      "email": "info@makingsenseofcents.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:46:54.172931Z",
+      "spam_risk": 2
+    },
+    {
+      "prospect": "Personal Finance Club",
+      "email": "contact@personalfinanceclub.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:46:56.248751Z",
+      "spam_risk": 1
+    },
+    {
+      "prospect": "The Mortgage Reports",
+      "email": "contact@themortgagereports.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:46:58.890165Z",
+      "spam_risk": 2
+    },
+    {
+      "prospect": "Afford Anything",
+      "email": "hello@affordanything.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:47:01.013250Z",
+      "spam_risk": 1
+    },
+    {
+      "prospect": "The College Investor",
+      "email": "robert@thecollegeinvestor.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:47:03.643464Z",
+      "spam_risk": 2
+    },
+    {
+      "prospect": "ESI Money",
+      "email": "esi@esimoney.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:47:05.813864Z",
+      "spam_risk": 2
+    },
+    {
+      "prospect": "Millennial Revolution",
+      "email": "kristy@millennial-revolution.com",
+      "status": "SENT",
+      "sent_at": "2026-06-13T17:47:07.960187Z",
+      "spam_risk": 1
+    }
+  ]
+}

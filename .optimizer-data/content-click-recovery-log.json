@@ -1,0 +1,21 @@
+{
+  "phase": "28",
+  "updated": "2026-06-12T22:08:44.753370Z",
+  "status": "Monitoring only. No new actions taken.",
+  "first_content_click": "NOT ACHIEVED",
+  "gsc_7d": {
+    "impressions": 415,
+    "clicks": 0,
+    "ctr": "0.0%",
+    "avg_position": 38.3
+  },
+  "best_candidate": "blog/20000-loan (pos 7.2, 69 imp) \u2014 awaiting recrawl",
+  "indexing": {
+    "requests_made": 7,
+    "confirmed": 4,
+    "likely": 3,
+    "newly_indexed": 0,
+    "next_check": "2026-06-15 (Day 3)",
+    "rule": "MONITOR ONLY. Do not re-request."
+  }
+}

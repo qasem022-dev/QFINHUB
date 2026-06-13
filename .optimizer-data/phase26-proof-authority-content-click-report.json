@@ -1,0 +1,117 @@
+{
+  "phase": "26",
+  "task": "proof-authority-content-click-report",
+  "generated_at": "2026-06-12T01:45:00Z",
+  "status": "OFF_TRACK",
+
+  "section_1_authority_offer_validation": {
+    "file": ".optimizer-data/authority-offer-validation-dashboard.json",
+    "status": "5 V2 test emails sent Jun 12. 0 replies. 0/70 all-time.",
+    "thresholds": [
+      ">=1 positive reply by Jun 19 → VALIDATED_SMALL_SIGNAL",
+      "0/5 replies by Jun 19 → continue with follow-ups",
+      "0/20 after follow-ups → NOT_PROVEN, pivot to journalist channels",
+      "Any embed-broken report → emergency audit"
+    ],
+    "current_state": "WAITING — emails sent ~3h ago, too early for replies"
+  },
+
+  "section_2_jun13_followup_readiness": {
+    "file": ".optimizer-data/jun13-followup-readiness-check.json",
+    "followups_ready": 8,
+    "all_send": true,
+    "all_no_backlink_ask": true,
+    "all_no_anchor_ask": true,
+    "avg_spam_risk": "1.75/5 (low)",
+    "best_prospects": ["The Mortgage Reports (corrected offer)", "Afford Anything", "Millennial Revolution"]
+  },
+
+  "section_3_reply_handling": {
+    "file": ".optimizer-data/authority-reply-handling-log.json",
+    "replies": 0,
+    "status": "Initialized — ready to log any incoming reply within 24h"
+  },
+
+  "section_4_content_click_recovery": {
+    "file": ".optimizer-data/content-click-recovery-log.json",
+    "first_content_click": "NOT ACHIEVED",
+    "best_candidate": "blog/20000-loan (pos 7.2, 69 imp) — Phase 22 fix deployed, awaiting Google recrawl",
+    "blocker": "Authority gap. Most candidates are position 50+ and won't click without backlinks.",
+    "gsc_7d": {"impressions": 415, "clicks": 0, "ctr": "0.0%", "avg_position": 38.3}
+  },
+
+  "section_5_phase21_indexing": {
+    "file": ".optimizer-data/indexing-request-monitoring-status.json",
+    "status": "Day 0 — 7 requests made. Next check Jun 15 (Day 3).",
+    "confirmed_requested": 4,
+    "likely_requested": 3,
+    "newly_indexed": 0
+  },
+
+  "section_6_real_page_authority": {
+    "file": ".optimizer-data/internal-authority-engine-log.json",
+    "links_added_today": 5,
+    "cumulative_total": 43,
+    "links_added": [
+      "blog/debt-snowball → widgets/debt-snowball-vs-avalanche-embed",
+      "blog/retirement-planning → decision/how-much-do-i-need-to-retire",
+      "blog/tax-brackets → decision/what-tax-bracket-am-i-in",
+      "blog/compound-interest → calculators/investment-return",
+      "blog/mortgage-rates → widgets/mortgage-affordability-embed (with CTA)"
+    ]
+  },
+
+  "section_7_engine_effectiveness": {
+    "file": ".optimizer-data/engine-effectiveness-verdict.json",
+    "verdicts": {
+      "CTR Engine": "STILL WAITING",
+      "Internal Link Engine": "NEUTRAL",
+      "Content Upgrade Engine": "CHANGED — stop content-only upgrades",
+      "Indexing Engine": "STILL WAITING (Day 0)",
+      "Outreach Engine": "STILL WAITING (V2 just launched)",
+      "Linkable Asset Engine": "POSITIVE (embed blocker fixed, verified working)"
+    },
+    "dominant_blocker": "AUTHORITY GAP — 0 backlinks"
+  },
+
+  "section_8_deploy": {
+    "commit": "e47d638",
+    "pushed": true,
+    "vercel_auto_deploy": true,
+    "verified_live": ["/blog/debt-snowball-vs-debt-avalanche (200)", "/blog/complete-guide-to-retirement-planning-2026 (200)", "/ (200)"]
+  },
+
+  "raw_gsc_truth": {
+    "7d_impressions": 415,
+    "7d_clicks": 0,
+    "7d_ctr": "0.0%",
+    "7d_avg_position": 38.3,
+    "7d_pages_with_impressions": 48,
+    "28d_clicks": 1,
+    "28d_clicked_pages": ["homepage only"],
+    "impressions_trend": "+17.6% vs prior 7d"
+  },
+
+  "current_status": {
+    "backlinks": 0,
+    "first_content_click": "NOT ACHIEVED",
+    "outreach_replies": "0/70",
+    "outreach_v2_test": "5 sent, 0 replies (too early)",
+    "embed_blocker": "FIXED AND VERIFIED",
+    "followups_ready": "8 for Jun 13",
+    "internal_links": "43 cumulative"
+  },
+
+  "on_track_off_track": "OFF_TRACK",
+
+  "confirmations": {
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_thin_tool_scenario_seo": true,
+    "no_mass_outreach": true,
+    "no_link_spam_patterns": true,
+    "no_paid_links": true,
+    "no_exact_match_anchors": true,
+    "no_generic_templates": true
+  }
+}

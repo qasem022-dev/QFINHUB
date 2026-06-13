@@ -1,0 +1,107 @@
+{
+  "phase": "25",
+  "task": "authority-offer-validation-report",
+  "generated_at": "2026-06-12T21:20:33.633600Z",
+  "status": "OFF_TRACK",
+  "status_rule": "Do not say ON_TRACK until: first content click OR first outreach reply OR first backlink OR first live embed OR clear indexed-page movement from Phase 21 targets",
+  "section_1_external_embed_verification": {
+    "file": ".optimizer-data/phase25-external-embed-verification.json",
+    "result": "PASS \u2014 All embed routes work in external iframes",
+    "details": [
+      "Mortgage affordability: \u2705 Loads with interactive calculator, chart, and inputs",
+      "Debt snowball: \u2705 Loads with interactive calculator and chart",
+      "Widget API embed: \u2705 Loads but shows placeholder (non-interactive)",
+      "Zero X-Frame-Options errors in browser console",
+      "Zero CSP frame-ancestors errors",
+      "Previous blocker (X-Frame-Options: DENY) fully resolved \u2014 vercel.json updated, deployed, verified"
+    ],
+    "known_cosmetic_issue": "Embed iframes include full site footer/consent banner. Not minimal but functional."
+  },
+  "section_2_widget_offer_page_check": {
+    "file": ".optimizer-data/phase25-widget-offer-page-check.json",
+    "result": "PASS \u2014 No critical issues",
+    "mortgage_landing": {
+      "status": "PASS",
+      "url": "https://www.qfinhub.com/widgets/mortgage-affordability-embed"
+    },
+    "debt_landing": {
+      "status": "PASS",
+      "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed"
+    },
+    "warnings": [
+      "Publisher use cases could be more explicit on landing pages",
+      "Weak internal linking from relevant pages to widget pages",
+      "Embed clutter (footer/consent in iframe)"
+    ]
+  },
+  "section_3_test_emails_sent": {
+    "file": ".optimizer-data/phase25-test-email-send-log.json",
+    "total_sent": 5,
+    "sent_to": [
+      "Debt Free Forties (debtfreeforties@protonmail.com) \u2014 offer B, debt widget",
+      "Debt Roundup (contact@debtroundup.com) \u2014 offer B, debt widget",
+      "Frugalwoods (frugalwoods@gmail.com) \u2014 offer A, mortgage widget + debt option",
+      "Miss Elvane (elva@misselvane.com) \u2014 offer B, debt widget",
+      "Simplify and Enjoy (simplifyandenjoy@gmail.com) \u2014 offer B, debt widget"
+    ],
+    "all_personalized": true,
+    "all_no_backlink_ask": true,
+    "all_embed_verified": true,
+    "all_short": true
+  },
+  "section_4_jun13_followup_plan": {
+    "file": ".optimizer-data/phase25-jun13-followup-final-plan.json",
+    "followups_planned": 8,
+    "types": [
+      "4 corrected-offer follow-ups (mortgage widget for mortgage sites, debt for debt sites)",
+      "4 short check-ins on batch 2 personalized emails"
+    ],
+    "send_date": "2026-06-13"
+  },
+  "section_5_validation_dashboard": {
+    "file": ".optimizer-data/phase25-authority-offer-validation-dashboard.json",
+    "tracking_period": "Jun 12 \u2014 Jun 26",
+    "thresholds": [
+      "5-test batch: >=1 reply by Jun 19",
+      "20 V2 sends: >=2 replies by Jun 26",
+      ">=1 backlink/embed/reply by Jun 26"
+    ],
+    "failure_rule": "0/20 replies \u2192 pivot to journalist/source-response/partnership channels"
+  },
+  "section_6_daily_loop_update": {
+    "file": ".optimizer-data/results-only-daily-loop-rules.json",
+    "priority_1": "Authority outreach \u2014 controlled send mode",
+    "priority_2": "Content click monitoring",
+    "priority_3": "Indexing monitoring",
+    "priority_4": "Internal links \u2014 KPI-tied only",
+    "blocked": "Mass outreach, generic templates, competitors, giant brands, broken embeds"
+  },
+  "current_status": {
+    "backlinks": 0,
+    "outreach_replies": 0,
+    "test_emails_sent": 5,
+    "content_click": "NOT ACHIEVED",
+    "embed_blocker": "FIXED AND VERIFIED",
+    "embed_works_externally": true,
+    "indexing_movement": "pending \u2014 baseline Jun 12"
+  },
+  "confirmations": {
+    "no_mass_outreach": true,
+    "no_broken_embeds_used": true,
+    "no_google_indexing_api": true,
+    "risky_automations_disabled": true,
+    "no_generic_templates": true,
+    "no_backlink_anchor_pressure": true,
+    "no_paid_links": true,
+    "embed_verified_before_send": true,
+    "external_verification_complete": true
+  },
+  "on_track_off_track": "OFF_TRACK \u2014 pending first reply, backlink, or content click. System is now CORRECT (embed blocker fixed, V2 outreach sent) but not yet PROVEN. Status changes only with measurable results.",
+  "next_actions": [
+    "Monitor q.finhub@gmail.com inbox daily for replies",
+    "Send 8 Jun 13 follow-ups on schedule",
+    "Do NOT send additional outreach until at least 1 reply received",
+    "If 0 replies by Jun 19 from test batch, review targeting before sending more",
+    "Weekly GSC check for backlink signals and content click"
+  ]
+}

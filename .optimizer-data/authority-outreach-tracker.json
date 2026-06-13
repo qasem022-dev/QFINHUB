@@ -2,16 +2,17 @@
   "phase": "24",
   "version": "v2",
   "status": "Authority Acquisition Sprint active",
-  "total_outreach_sent_all_time": 65,
+  "total_outreach_sent_all_time": 70,
   "total_replies_all_time": 0,
   "total_backlinks_all_time": 0,
   "v2_test_batch": {
     "designed": 5,
-    "sent": 0,
+    "sent": 5,
     "replies": 0,
     "positive_replies": 0,
     "embeds": 0,
-    "backlinks": 0
+    "backlinks": 0,
+    "sent_at": "2026-06-12T21:19:51.134830Z"
   },
   "followups_planned_jun13": 8,
   "success_thresholds": {

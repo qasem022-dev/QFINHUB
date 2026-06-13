@@ -1,120 +1,57 @@
 {
-  "title": "Phase 23 \u2014 Engine Effectiveness Verdict",
-  "generated": "2026-06-12T01:30:00Z",
-  "rule": "Grade engines by whether they move measurable KPIs. Stop or change engines graded D or F.",
-  "last_10_actions_audit": [
+  "phase": "26",
+  "task": "engine-effectiveness-verdict",
+  "updated": "2026-06-12T21:41:13.187379Z",
+  "engines": [
     {
-      "action": "Blog 20000-loan above-fold CTA upgrade",
-      "page": "blog/20000-loan",
-      "expected_kpi": "CTR on pos 7.2 query",
-      "expected_delay": "7-14 days",
-      "current_result": "STILL WAITING \u2014 deployed minutes ago",
-      "verdict": "STILL_WAITING"
+      "engine": "CTR Engine",
+      "action_taken": "Blog 20000-loan CTA upgrade (Phase 22). Above-fold real calculator link.",
+      "metric_expected": "Click from pos 7.2 page within 1-3 weeks",
+      "current_result": "0 clicks. 69 impressions at pos 7.2 as of Jun 9.",
+      "verdict": "STILL WAITING \u2014 Google recrawl pending. Content fix deployed Jun 11.",
+      "decision": "CONTINUE monitoring. If 0 clicks by Jun 26, optimize meta description."
     },
     {
-      "action": "Blog duplicate thin tool link fix (4 links)",
-      "page": "blog/if-you-borrow-20-000",
-      "expected_kpi": "Indirect \u2014 authority flow to loan-calculator",
-      "expected_delay": "14-28 days",
-      "current_result": "STILL WAITING",
-      "verdict": "STILL_WAITING"
+      "engine": "Internal Link Engine",
+      "action_taken": "43 cumulative contextual links. 5 added Phase 26 (blog\u2192widget, blog\u2192decision, cross-calculator).",
+      "metric_expected": ">=1 target page position improvement >5 points",
+      "current_result": "0 measurable position improvement from 38 prior links. 5 new links awaiting crawl.",
+      "verdict": "NEUTRAL \u2014 Internal links from 0-authority domain don't transfer meaningful authority. Crawl improvement only.",
+      "decision": "CONTINUE at low volume (5-10/day). Value is crawl path creation, not ranking improvement."
     },
     {
-      "action": "Internal links: 23 contextual links to parent calculators",
-      "template": "cross-calculator + decision links",
-      "expected_kpi": "Position improvement on target calculators",
-      "expected_delay": "14-28 days",
-      "current_result": "STILL WAITING",
-      "verdict": "STILL_WAITING"
+      "engine": "Content Upgrade Engine",
+      "action_taken": "Phase 22 blog CTA fix. Prior phases: FAQ additions, above-fold improvements.",
+      "metric_expected": "Content click from upgraded pages",
+      "current_result": "0 content clicks. Pos 7.2 page unchanged in clicks.",
+      "verdict": "NEGATIVE \u2014 Content quality alone insufficient. Authority gap dominates.",
+      "decision": "CHANGE \u2014 Stop content-only upgrades. Content upgrades only as side effect of outreach (custom examples for publishers)."
     },
     {
-      "action": "GSC UI indexing requests (7 URLs)",
-      "page": "7 guides/calculators/compares",
-      "expected_kpi": "Newly indexed pages",
-      "expected_delay": "7-21 days",
-      "current_result": "STILL WAITING \u2014 Day 0",
-      "verdict": "STILL_WAITING"
+      "engine": "Indexing Engine",
+      "action_taken": "7 GSC UI indexing requests (4 confirmed, 3 likely). 526 discovered-not-indexed classified.",
+      "metric_expected": ">=3 of 7 URLs change status by Day 14 (Jun 26)",
+      "current_result": "Day 0 \u2014 baseline set. Next check Jun 15 (Day 3).",
+      "verdict": "STILL WAITING \u2014 Monitoring active. No results expected before Day 3.",
+      "decision": "CONTINUE monitoring. Do NOT re-request indexing before checkpoints."
     },
     {
-      "action": "Thin template softening (Phase 20.7)",
-      "template": "all thin tool pages",
-      "expected_kpi": "Reduce cannibalization",
-      "expected_delay": "14 days",
-      "current_result": "NEUTRAL \u2014 thin tools still get impressions. Parent calculators still 0 impressions.",
-      "verdict": "NEUTRAL"
+      "engine": "Outreach Engine",
+      "action_taken": "Phase 25: 5 V2 test emails sent (personalized, embed-verified, no backlink ask). Phase 24: embed blocker fixed.",
+      "metric_expected": ">=1 reply from 5 test emails by Jun 19",
+      "current_result": "0 replies. 0/70 all-time.",
+      "verdict": "STILL WAITING \u2014 V2 system just launched. Prior 65 emails were worthless (broken embeds + wrong targets).",
+      "decision": "CONTINUE. Wait for replies. If 0/5 by Jun 19, send Jun 13 follow-ups. If 0/20 by Jun 26, pivot."
     },
     {
-      "action": "Compound-interest canonical URL fix",
-      "page": "compound-interest routes",
-      "expected_kpi": "Correct canonical signal",
-      "expected_delay": "14 days",
-      "current_result": "POSITIVE \u2014 canonical now consistent. But 0 impressions on parent.",
-      "verdict": "POSITIVE (technical fix, not ranking fix)"
-    },
-    {
-      "action": "Real page focus rule (Phase 20.6)",
-      "rule": "All future SEO",
-      "expected_kpi": "Prevent thin page optimization",
-      "expected_delay": "Immediate",
-      "current_result": "POSITIVE \u2014 no thin tool optimization since freeze.",
-      "verdict": "POSITIVE (guardrail, not growth driver)"
-    },
-    {
-      "action": "Internal links: 15 more contextual links (Phase 22.1)",
-      "template": "cross-calculator + guide links",
-      "expected_kpi": "Position improvement",
-      "expected_delay": "14-28 days",
-      "current_result": "STILL WAITING",
-      "verdict": "STILL_WAITING"
-    },
-    {
-      "action": "Outreach V2 initial send (20 prospects)",
-      "engine": "outreach",
-      "expected_kpi": "Replies or backlinks",
-      "expected_delay": "7-14 days",
-      "current_result": "NEGATIVE \u2014 0/20 replies. 0 backlinks.",
-      "verdict": "NEGATIVE"
-    },
-    {
-      "action": "GSC data pipeline fix (3-window freshness)",
-      "engine": "data",
-      "expected_kpi": "Fresh accurate data",
-      "expected_delay": "Immediate",
-      "current_result": "POSITIVE \u2014 GSC data now fresh and verified daily.",
-      "verdict": "POSITIVE (infrastructure)"
+      "engine": "Linkable Asset Engine",
+      "action_taken": "Embed blocker fixed (X-Frame-Options removed, CSP frame-ancestors * on embed routes). External embed verification passed.",
+      "metric_expected": ">=1 embed or backlink by Jun 26",
+      "current_result": "0 embeds, 0 backlinks. Embeds now verifiably WORK.",
+      "verdict": "POSITIVE \u2014 Technical blocker resolved. Embed infrastructure proven working. Awaiting publisher adoption.",
+      "decision": "CONTINUE. Emphasize embed offer in outreach. Add widget CTAs to blog posts (Phase 26)."
     }
   ],
-  "engine_grades": {
-    "ctr_engine": {
-      "grade": "D",
-      "reason": "Blog/20000-loan CTA upgrade is the only CTR test running. 0 clicks so far (just deployed). All other CTR work was on thin tools (Phase 20) and was frozen. VERDICT: Active but not proven. Keep the one test running. Stop all other CTR tweaks until this test proves or disproves CTR can be moved without authority.",
-      "action": "KEEP_ONE_TEST \u2014 monitor blog/20000-loan. Stop all other CTR work."
-    },
-    "internal_link_engine": {
-      "grade": "C",
-      "reason": "38 contextual links added across 2 days. All to real pages. Well-structured. But 0 measurable ranking impact yet. Internal links from 0-authority pages to 0-authority pages don't transfer meaningful PageRank. VERDICT: Well-executed but limited by domain authority. Keep adding but don't expect ranking miracles.",
-      "action": "CONTINUE but downgrade expectations. Internal links help crawl and discovery, not ranking."
-    },
-    "indexing_engine": {
-      "grade": "C",
-      "reason": "7 GSC UI indexing requests made. 4 confirmed, 3 likely. 0 confirmed newly indexed. Monitoring schedule active. VERDICT: Request execution is good. But indexing alone doesn't produce traffic \u2014 indexed pages with 0 impressions (Group C) prove this.",
-      "action": "MONITOR_ONLY. No more requests. Let Day 3-21 schedule run."
-    },
-    "content_upgrade_engine": {
-      "grade": "D",
-      "reason": "Blog 20000-loan CTA upgrade is the only content change recently deployed. Decision pages have good content already. Calculator pages have rich auto-generated content. The problem is NOT content quality \u2014 it's authority. VERDICT: Content is adequate. More content tweaks won't change rankings without backlinks.",
-      "action": "STOP content tweaks. Content is adequate. Focus on authority."
-    },
-    "outreach_engine": {
-      "grade": "F",
-      "reason": "20 initial outreach emails sent. 0 replies. 0 backlinks. VERDICT: Current approach is failing. Must change pitch, prospects, or channel.",
-      "action": "CHANGE \u2014 Try Jun 13 follow-ups with value-first widget pitch. If 0/12 replies: pivot to HARO/journalist outreach or guest posting."
-    },
-    "tool_scenario_cleanup_engine": {
-      "grade": "C",
-      "reason": "Thin template softening completed. Thin tool/scenario SEO frozen. Cannibalization review in progress. VERDICT: Guardrail is working. Cleanup test remains blocked. This is a quality-control engine, not a growth engine.",
-      "action": "HOLD \u2014 cleanup test blocked until data pipeline + template fixes complete + monitoring done."
-    }
-  },
-  "overall_engine_verdict": "QFINHUB's SEO engine is structurally sound but fundamentally limited by 0 domain authority. Internal SEO (links, content, indexing, data) is well-executed. The outreach engine (the only path to authority) is failing. UNTIL BACKLINKS ARRIVE, no engine can produce measurable ranking results."
+  "overall": "4 STILL WAITING, 1 NEUTRAL, 1 POSITIVE, 0 NEGATIVE (Content Upgrade changed to stop). System is CORRECT but not yet PROVEN.",
+  "dominant_blocker": "AUTHORITY GAP \u2014 0 backlinks, 0 external links. Every engine that's 'still waiting' is waiting for authority signals."
 }

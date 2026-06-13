@@ -1,0 +1,145 @@
+{
+  "phase": "27",
+  "task": "authority-channel-pivot-report",
+  "generated_at": "2026-06-12T02:00:00Z",
+  "status": "OFF_TRACK",
+
+  "section_1_outreach_70_failure_audit": {
+    "file": ".optimizer-data/outreach-70-failure-deep-audit.json",
+    "total_sent": 70,
+    "total_replies": 0,
+    "total_backlinks": 0,
+    "total_embeds": 0,
+    "batches": 6,
+    "verdict": "COLD EMAIL OUTREACH FAILED. 0/70 replies.",
+    "top_failure_reasons": [
+      "No clear reader benefit (50/70)",
+      "Too generic / no personalization (42/70)",
+      "Weak offer mismatch (35/70)",
+      "Wrong prospects — competitors, massive brands (17/70)",
+      "Hidden blocker: 65/70 had broken embed codes (X-Frame-Options: DENY)"
+    ],
+    "only_working_batch": "Phase 25 V2 test (5 emails, Jun 12) — first with working embeds. Too early for results."
+  },
+
+  "section_2_outreach_freeze": {
+    "file": ".optimizer-data/outreach-freeze-policy.json",
+    "policy": "NO NEW COLD BLOGGER OUTREACH until alternative channel validated.",
+    "allowed": "Jun 13 follow-ups, reply to incoming, research new channels, directory submissions (score ≥90 only)",
+    "blocked": "New generic batches, mass sending, finance blogger cold emails without new logic"
+  },
+
+  "section_3_jun13_followup_status": {
+    "file": ".optimizer-data/jun13-followup-send-log.json",
+    "followups_ready": 8,
+    "send_date": "2026-06-13",
+    "status": "READY — not yet sent"
+  },
+
+  "section_4_authority_channel_map": {
+    "file": ".optimizer-data/authority-channel-pivot-map.json",
+    "channels": 6,
+    "priority_order": [
+      "1. Broken/outdated calculator replacement (30-50% reply rate)",
+      "2. Resource page additions (15-25% reply rate)",
+      "3. Tool roundup submissions (20-30% reply rate)",
+      "4. Journalist/source channels (15-25% reply rate)",
+      "5. Partner/custom pages (25-35% reply rate, high effort)",
+      "6. Niche community participation (supplementary only)"
+    ]
+  },
+
+  "section_5_resource_page_prospects": {
+    "file": ".optimizer-data/resource-page-authority-prospects.json",
+    "total": 30,
+    "categories": [
+      "5 university extension pages",
+      "5 nonprofit financial education orgs",
+      "5 public library resource guides",
+      "5 FIRE/PF blog resource pages",
+      "5 government/quasi-government pages",
+      "5 real estate/mortgage resource pages"
+    ]
+  },
+
+  "section_6_broken_calculator_prospects": {
+    "file": ".optimizer-data/broken-calculator-replacement-prospects.json",
+    "total": 20,
+    "known_dead_domains": ["dinkytown.net", "old bankrate URLs", "Flash-based tools", "defunct fintech embeds"],
+    "highest_scores": ["Library broken links (92)", "Real estate agent broken widget (92)", "Nonprofit credit counseling (90)"]
+  },
+
+  "section_7_tool_roundup_prospects": {
+    "file": ".optimizer-data/tool-roundup-submission-prospects.json",
+    "total": 20,
+    "types": "Personal finance blogs, tool directories, newsletter 'tool of the week' candidates",
+    "none_submitted_yet": true
+  },
+
+  "section_8_offer_v3_design": {
+    "file": ".optimizer-data/authority-offer-v3-test-design.json",
+    "offers": [
+      "V3-A: Free embeddable calculator for resource pages",
+      "V3-B: Replace broken/outdated calculator",
+      "V3-C: Custom example for content"
+    ],
+    "all_3_sentences": true,
+    "all_no_backlink_ask": true,
+    "all_no_anchor_request": true,
+    "all_low_friction_cta": true
+  },
+
+  "section_9_microtest": {
+    "file": ".optimizer-data/authority-v3-10-prospect-microtest.json",
+    "mix": "4 resource + 3 broken + 2 roundup + 1 custom",
+    "approved_to_send": 4,
+    "held": 6,
+    "approved": ["Mad Fientist (90)", "Library broken links (92)", "RE agent broken widget (92)", "Nonprofit outdated tools (90)"]
+  },
+
+  "section_10_auditor_review": {
+    "file": ".optimizer-data/authority-v3-auditor-review.json",
+    "verdict": "CONDITIONAL PASS — 4 of 10 approved. All pass spam/value/personalization checks.",
+    "approvals": 4,
+    "holds": 6
+  },
+
+  "section_11_content_click": {
+    "file": ".optimizer-data/content-click-recovery-log.json",
+    "status": "CONTINUING",
+    "first_content_click": "NOT ACHIEVED",
+    "best_candidate": "blog/20000-loan (pos 7.2, 69 imp) — Phase 22 fix awaiting recrawl",
+    "gsc_7d": "415 imp, 0 clicks"
+  },
+
+  "current_status": {
+    "first_reply": "0/70 — NONE",
+    "first_backlink": 0,
+    "first_embed": 0,
+    "first_content_click": "NOT ACHIEVED",
+    "outreach_channel": "PIVOTING from cold email to resource/broken/roundup channels",
+    "embed_blocker": "FIXED AND VERIFIED"
+  },
+
+  "on_track_off_track": "OFF_TRACK",
+
+  "confirmations": {
+    "no_link_spam_patterns": true,
+    "no_mass_outreach": true,
+    "no_google_indexing_api": true,
+    "no_thin_tool_scenario_seo": true,
+    "no_paid_links": true,
+    "no_exact_anchor_requests": true,
+    "outreach_freeze_active": true,
+    "new_channels_researched_not_spammed": true
+  },
+
+  "next_actions": [
+    "Jun 13: Send 8 follow-ups to existing prospects",
+    "Auditor-approved: Send 4 microtest prospects (broken link replacements + Mad Fientist)",
+    "Research contact paths for 6 held prospects",
+    "Continue content click monitoring",
+    "Do NOT send more cold blogger emails",
+    "Indexing Day 3 check on Jun 15"
+  ]
+}

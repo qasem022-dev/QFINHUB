@@ -1,0 +1,196 @@
+{
+  "phase": "27",
+  "task": "broken-calculator-replacement-prospects",
+  "total": 20,
+  "rule": "Do not send yet. Must verify broken links before outreach.",
+  "prospecting_method": "Search for sites linking to known dead/defunct calculator domains, outdated Flash calculators, and broken fintech embeds",
+  "known_dead_calculator_domains": [
+    "dinkytown.net (many old calculators \u2014 site changed domain structure)",
+    "bankrate.com/calculators/old-urls (old Bankrate calculator URLs redirected/404)",
+    "calcxml.com (still live but many old embed refs broken)",
+    "math.com/calculators (defunct financial section)",
+    "finance.yahoo.com/calculators (old Yahoo Finance calculator section deprecated)"
+  ],
+  "prospects": [
+    {
+      "page_url_hint": "University financial literacy pages linking to dinkytown.net mortgage calculator",
+      "broken_tool": "Dinkytown mortgage calculator (old domain)",
+      "qfh_replacement": "Mortgage affordability calculator",
+      "contact_path": "Page author or webmaster",
+      "evidence": "dinkytown.net structure changed \u2014 old embedded tools 404",
+      "outreach_angle": "Your page links to a calculator that no longer works \u2014 here's a free replacement",
+      "score": 88
+    },
+    {
+      "page_url_hint": "Nonprofit budget counseling pages with broken Bankrate calculator embeds",
+      "broken_tool": "Old Bankrate budget calculator (redirected/404)",
+      "qfh_replacement": "Budget planner",
+      "contact_path": "Contact form",
+      "evidence": "Bankrate changed URL structure \u2014 many old embeds broken",
+      "outreach_angle": "I noticed your budget calculator link is broken \u2014 here's a working replacement",
+      "score": 90
+    },
+    {
+      "page_url_hint": "Real estate agent blogs with old mortgage calculator widgets",
+      "broken_tool": "Outdated mortgage widget (often Flash-based or non-responsive)",
+      "qfh_replacement": "Mortgage affordability widget (responsive iframe)",
+      "contact_path": "Agent email or contact form",
+      "evidence": "Many real estate sites still embed pre-2020 mortgage widgets that don't work on mobile",
+      "outreach_angle": "Your mortgage calculator doesn't work on phones \u2014 here's a mobile-friendly replacement",
+      "score": 92
+    },
+    {
+      "page_url_hint": "Credit union education pages with defunct loan calculator links",
+      "broken_tool": "Old loan amortization calculator",
+      "qfh_replacement": "Loan calculator",
+      "contact_path": "Marketing or education dept contact",
+      "evidence": "Many small credit unions link to calculators from defunct providers",
+      "outreach_angle": "Your loan calculator link appears to be broken \u2014 here's a free updated version",
+      "score": 85
+    },
+    {
+      "page_url_hint": "Government HUD counseling pages with outdated affordability tools",
+      "broken_tool": "Old HUD affordability worksheet (non-interactive)",
+      "qfh_replacement": "Mortgage affordability widget",
+      "contact_path": "Agency contact form",
+      "evidence": "Some HUD partner pages still link to static worksheets instead of interactive tools",
+      "outreach_angle": "Your affordability tool is a static worksheet \u2014 here's an interactive replacement",
+      "score": 88
+    },
+    {
+      "page_url_hint": "Library resource guides with dead financial calculator links",
+      "broken_tool": "Various dead calculator links",
+      "qfh_replacement": "Full calculator suite",
+      "contact_path": "Subject librarian",
+      "evidence": "Library guides accumulate broken links over time \u2014 common problem",
+      "outreach_angle": "Several calculator links on your personal finance guide appear broken \u2014 here are working replacements",
+      "score": 92
+    },
+    {
+      "page_url_hint": "FIRE blogger resource pages with outdated retirement calculators",
+      "broken_tool": "Old retirement calculator (not updated for current tax law)",
+      "qfh_replacement": "Retirement planning calculator",
+      "contact_path": "Blogger contact",
+      "evidence": "2026 tax law changes made many retirement calculators outdated",
+      "outreach_angle": "Your retirement calculator uses old tax brackets \u2014 here's an updated version",
+      "score": 86
+    },
+    {
+      "page_url_hint": "Debt counseling nonprofit pages with basic/non-interactive payoff calculators",
+      "broken_tool": "Simple/static debt payoff table",
+      "qfh_replacement": "Debt snowball vs avalanche widget",
+      "contact_path": "Contact form",
+      "evidence": "Many nonprofits use basic HTML tables instead of interactive calculators",
+      "outreach_angle": "Your debt payoff tool is static \u2014 here's an interactive snowball vs avalanche replacement",
+      "score": 88
+    },
+    {
+      "page_url_hint": "Small mortgage broker sites with old rate calculator embeds",
+      "broken_tool": "Old rate comparison calculator (non-responsive)",
+      "qfh_replacement": "Mortgage calculator",
+      "contact_path": "Broker email",
+      "evidence": "Independent brokers often have outdated embedded tools from defunct providers",
+      "outreach_angle": "Your rate calculator embed appears broken \u2014 here's a free working replacement",
+      "score": 90
+    },
+    {
+      "page_url_hint": "Financial advisor blogs with broken compound interest embeds",
+      "broken_tool": "Old compound interest visualizer (Flash-based)",
+      "qfh_replacement": "Compound interest calculator",
+      "contact_path": "Advisor contact",
+      "evidence": "Flash-based financial tools stopped working in 2020",
+      "outreach_angle": "Your compound interest tool (Flash-based) no longer works \u2014 here's a modern replacement",
+      "score": 87
+    },
+    {
+      "page_url_hint": "Military family support sites with outdated financial calculators",
+      "broken_tool": "Old military financial planning tools",
+      "qfh_replacement": "Full suite: budget, debt, retirement",
+      "contact_path": "Program coordinator",
+      "evidence": "Military family support programs often have outdated or broken financial tools",
+      "outreach_angle": "Your financial tools page has several broken calculators \u2014 here are working replacements",
+      "score": 89
+    },
+    {
+      "page_url_hint": "Community college financial literacy pages with dead links",
+      "broken_tool": "Various dead calculator links from old providers",
+      "qfh_replacement": "Full calculator suite",
+      "contact_path": "Department contact",
+      "evidence": "Community college resource pages frequently accumulate broken external links",
+      "outreach_angle": "Several financial calculator links on your page are broken \u2014 here are free replacements",
+      "score": 90
+    },
+    {
+      "page_url_hint": "State housing authority first-time buyer pages",
+      "broken_tool": "Outdated affordability estimator",
+      "qfh_replacement": "Mortgage affordability widget",
+      "contact_path": "Agency webmaster or program contact",
+      "evidence": "State housing agencies often have outdated/non-interactive tools",
+      "outreach_angle": "Your affordability estimator is dated \u2014 here's an interactive, mobile-friendly replacement",
+      "score": 87
+    },
+    {
+      "page_url_hint": "NACo (county) extension financial resource pages",
+      "broken_tool": "Various county-level financial tool links",
+      "qfh_replacement": "Budget + debt + mortgage calculators",
+      "contact_path": "Extension office contact",
+      "evidence": "County extension pages often link to tools that have moved or been deprecated",
+      "outreach_angle": "Your financial tools page has several broken links \u2014 here are updated free replacements",
+      "score": 84
+    },
+    {
+      "page_url_hint": "Women's financial empowerment nonprofit pages",
+      "broken_tool": "Outdated savings and debt calculators",
+      "qfh_replacement": "Savings goal + debt payoff + budget planner",
+      "contact_path": "Program director contact",
+      "evidence": "Many women's finance nonprofits use dated or non-interactive tools",
+      "outreach_angle": "Your financial tools could be more interactive \u2014 here are free embeddable replacements",
+      "score": 88
+    },
+    {
+      "page_url_hint": "Senior citizen financial education pages (AARP, NCOA affiliates)",
+      "broken_tool": "Outdated retirement income calculators",
+      "qfh_replacement": "Retirement planning + Social Security timing calculator",
+      "contact_path": "Program contact",
+      "evidence": "Senior-focused pages often use outdated retirement calculators",
+      "outreach_angle": "Your retirement calculator uses old Social Security rules \u2014 here's an updated version",
+      "score": 86
+    },
+    {
+      "page_url_hint": "Small business development center financial resource pages",
+      "broken_tool": "Old business loan/ROI calculators",
+      "qfh_replacement": "Loan + investment return calculators",
+      "contact_path": "SBDC office contact",
+      "evidence": "SBDC pages sometimes link to defunct small business finance tools",
+      "outreach_angle": "Your business finance calculator links appear broken \u2014 here are free replacements",
+      "score": 82
+    },
+    {
+      "page_url_hint": "Immigrant financial literacy resource pages",
+      "broken_tool": "Various broken or non-multilingual financial tools",
+      "qfh_replacement": "Full calculator suite (multi-language)",
+      "contact_path": "Program coordinator",
+      "evidence": "Immigrant resource orgs often have outdated tools and value multilingual options",
+      "outreach_angle": "Your financial tools page has broken links \u2014 here are free replacements available in multiple languages",
+      "score": 90
+    },
+    {
+      "page_url_hint": "Disability financial planning resource pages",
+      "broken_tool": "Outdated benefits and budget calculators",
+      "qfh_replacement": "Budget planner + savings goal calculators",
+      "contact_path": "Organization contact",
+      "evidence": "Disability advocacy orgs often have dated financial planning tools",
+      "outreach_angle": "Your financial planning calculator is out of date \u2014 here's a free replacement that works for benefits calculations too",
+      "score": 85
+    },
+    {
+      "page_url_hint": "Veterans financial education resource pages",
+      "broken_tool": "Old VA financial planning tools",
+      "qfh_replacement": "Budget + debt + mortgage + retirement calculators",
+      "contact_path": "Program contact",
+      "evidence": "Veterans service orgs often link to defunct financial tools",
+      "outreach_angle": "Several financial tool links on your veterans resource page are broken \u2014 here are free replacements",
+      "score": 88
+    }
+  ]
+}

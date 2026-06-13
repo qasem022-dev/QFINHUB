@@ -1,0 +1,308 @@
+{
+  "phase": "27",
+  "task": "resource-page-authority-prospects",
+  "total": 30,
+  "rule": "Do not send yet. Must be manually reviewed before outreach.",
+  "prospects": [
+    {
+      "site": "University of Illinois Extension",
+      "url": "https://extension.illinois.edu/",
+      "resource_page_url": "/global/financial-tools or /money",
+      "topic": "Financial literacy resources",
+      "contact_method": "Contact form or unit directory",
+      "relevant_asset": "Mortgage affordability + debt payoff widgets",
+      "personalized_angle": "Free interactive calculators for their financial education resources page",
+      "score": 75
+    },
+    {
+      "site": "Iowa State University Extension",
+      "url": "https://www.extension.iastate.edu/",
+      "resource_page_url": "/humansciences/family-finance",
+      "topic": "Family finance education",
+      "contact_method": "Contact form",
+      "relevant_asset": "Budget planner + debt payoff",
+      "personalized_angle": "Free no-signup tools for their family finance programs",
+      "score": 72
+    },
+    {
+      "site": "Rutgers Cooperative Extension",
+      "url": "https://njaes.rutgers.edu/",
+      "resource_page_url": "/money/",
+      "topic": "Personal finance resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage calculator + retirement planning",
+      "personalized_angle": "Interactive calculators for their community financial education",
+      "score": 70
+    },
+    {
+      "site": "University of Florida IFAS Extension",
+      "url": "https://sfyl.ifas.ufl.edu/",
+      "resource_page_url": "/archive/hot_topics/families_and_consumers/money_matters.shtml",
+      "topic": "Money matters resources",
+      "contact_method": "County office contact",
+      "relevant_asset": "Compound interest + savings goal",
+      "personalized_angle": "Free tools for their Money Matters program",
+      "score": 68
+    },
+    {
+      "site": "Utah State University Extension",
+      "url": "https://extension.usu.edu/",
+      "resource_page_url": "/finance/",
+      "topic": "Personal finance resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Debt payoff + budget planner",
+      "personalized_angle": "Free embeddable tools for their finance education portal",
+      "score": 70
+    },
+    {
+      "site": "National Foundation for Credit Counseling (NFCC)",
+      "url": "https://www.nfcc.org/",
+      "resource_page_url": "/resources/",
+      "topic": "Credit counseling resources",
+      "contact_method": "Contact form or partner inquiry",
+      "relevant_asset": "Debt payoff + credit card payoff calculators",
+      "personalized_angle": "Free member resources \u2014 calculators their counselors can share with clients",
+      "score": 80
+    },
+    {
+      "site": "Jump$tart Coalition",
+      "url": "https://www.jumpstart.org/",
+      "resource_page_url": "/resources/",
+      "topic": "Financial literacy resources for teachers",
+      "contact_method": "Contact form",
+      "relevant_asset": "Compound interest + budget planner + retirement",
+      "personalized_angle": "Free classroom-friendly calculators for financial literacy educators",
+      "score": 82
+    },
+    {
+      "site": "Consumer Action",
+      "url": "https://www.consumer-action.org/",
+      "resource_page_url": "/modules/",
+      "topic": "Financial education modules",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage + debt + budget calculators",
+      "personalized_angle": "Free multilingual calculators for their education modules",
+      "score": 78
+    },
+    {
+      "site": "America Saves",
+      "url": "https://americasaves.org/",
+      "resource_page_url": "/resources/",
+      "topic": "Savings and budgeting resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Savings goal + compound interest calculators",
+      "personalized_angle": "Free savings calculators for their America Saves campaigns",
+      "score": 85
+    },
+    {
+      "site": "Money Management International",
+      "url": "https://www.moneymanagement.org/",
+      "resource_page_url": "/resources/",
+      "topic": "Debt and credit resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Debt snowball + credit card payoff",
+      "personalized_angle": "Free calculators for their credit counseling resource library",
+      "score": 80
+    },
+    {
+      "site": "New York Public Library",
+      "url": "https://www.nypl.org/",
+      "resource_page_url": "/help/community-outreach/personal-finance",
+      "topic": "Personal finance resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Full suite of calculators",
+      "personalized_angle": "Free financial calculators for NYPL's personal finance resource guides",
+      "score": 76
+    },
+    {
+      "site": "San Francisco Public Library",
+      "url": "https://sfpl.org/",
+      "resource_page_url": "/resources/personal-finance",
+      "topic": "Personal finance tools",
+      "contact_method": "Contact form or librarian",
+      "relevant_asset": "Budget + retirement + tax calculators",
+      "personalized_angle": "Free no-signup tools for library patrons",
+      "score": 74
+    },
+    {
+      "site": "Seattle Public Library",
+      "url": "https://www.spl.org/",
+      "resource_page_url": "/resources-subject/personal-finance",
+      "topic": "Personal finance subject guide",
+      "contact_method": "Subject librarian contact",
+      "relevant_asset": "Mortgage + debt + investment calculators",
+      "personalized_angle": "Free tools for their personal finance subject guide",
+      "score": 75
+    },
+    {
+      "site": "Chicago Public Library",
+      "url": "https://www.chipublib.org/",
+      "resource_page_url": "/resources-personal-finance/",
+      "topic": "Financial resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Compound interest + retirement + budget",
+      "personalized_angle": "Free calculators for CPL's Money Smart resources",
+      "score": 72
+    },
+    {
+      "site": "Los Angeles Public Library",
+      "url": "https://www.lapl.org/",
+      "resource_page_url": "/collections-resources/research-guides/money",
+      "topic": "Money research guide",
+      "contact_method": "Contact form",
+      "relevant_asset": "Full calculator suite",
+      "personalized_angle": "Free interactive tools for LAPL's money research guides",
+      "score": 76
+    },
+    {
+      "site": "ChooseFI",
+      "url": "https://www.choosefi.com/",
+      "resource_page_url": "/resources/ or /start-here/",
+      "topic": "FI resources toolkit",
+      "contact_method": "Contact form (previously contacted)",
+      "relevant_asset": "Compound interest + FIRE + mortgage calculators",
+      "personalized_angle": "Free calculators for their FI resource toolkit \u2014 perfect for their 'start here' page",
+      "score": 88
+    },
+    {
+      "site": "Mad Fientist",
+      "url": "https://www.madfientist.com/",
+      "resource_page_url": "/tools/",
+      "topic": "FI tools and calculators",
+      "contact_method": "Contact form",
+      "relevant_asset": "FIRE calculator + compound interest + investment return",
+      "personalized_angle": "Free embeddable FI calculator for his tools page",
+      "score": 90
+    },
+    {
+      "site": "Physician on FIRE",
+      "url": "https://www.physicianonfire.com/",
+      "resource_page_url": "/resources/",
+      "topic": "Financial resources for physicians",
+      "contact_method": "Contact form",
+      "relevant_asset": "Retirement planning + tax + investment calculators",
+      "personalized_angle": "Free calculators tailored for physician financial planning",
+      "score": 85
+    },
+    {
+      "site": "Our Next Life",
+      "url": "https://www.ournextlife.com/",
+      "resource_page_url": "/resources/",
+      "topic": "FIRE resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Retirement + mortgage affordability",
+      "personalized_angle": "Free tools for their FIRE resource page",
+      "score": 82
+    },
+    {
+      "site": "Retire By 40",
+      "url": "https://www.retireby40.org/",
+      "resource_page_url": "/resources/ or /tools/",
+      "topic": "Early retirement resources",
+      "contact_method": "Contact form (previously contacted)",
+      "relevant_asset": "Retirement planning + compound interest",
+      "personalized_angle": "Free retirement calculator for his resource page",
+      "score": 78
+    },
+    {
+      "site": "HUD Housing Counseling",
+      "url": "https://www.hud.gov/",
+      "resource_page_url": "/topics/buying_a_home",
+      "topic": "Homebuying resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage affordability widget",
+      "personalized_angle": "Free mortgage calculator for HUD's homebuying education resources",
+      "score": 75
+    },
+    {
+      "site": "CFPB (Consumer Financial Protection Bureau)",
+      "url": "https://www.consumerfinance.gov/",
+      "resource_page_url": "/consumer-tools/",
+      "topic": "Consumer financial tools",
+      "contact_method": "Contact form",
+      "relevant_asset": "Debt payoff + mortgage calculators",
+      "personalized_angle": "Free calculators for CFPB's consumer tools directory",
+      "score": 72
+    },
+    {
+      "site": "MyMoney.gov (Federal Financial Literacy)",
+      "url": "https://www.mymoney.gov/",
+      "resource_page_url": "/Tools/Pages/tools.aspx",
+      "topic": "Federal financial tools directory",
+      "contact_method": "Contact form",
+      "relevant_asset": "Full calculator suite",
+      "personalized_angle": "Free no-signup calculators for the federal financial literacy tool directory",
+      "score": 78
+    },
+    {
+      "site": "FINRA Investor Education",
+      "url": "https://www.finra.org/",
+      "resource_page_url": "/investors/learn-to-invest",
+      "topic": "Investor education",
+      "contact_method": "Contact form",
+      "relevant_asset": "Compound interest + investment return + retirement",
+      "personalized_angle": "Free investment calculators for FINRA's investor education",
+      "score": 76
+    },
+    {
+      "site": "Federal Reserve Education",
+      "url": "https://www.federalreserveeducation.org/",
+      "resource_page_url": "/resources/",
+      "topic": "Economics and personal finance education",
+      "contact_method": "Contact form",
+      "relevant_asset": "Compound interest + inflation + mortgage calculators",
+      "personalized_angle": "Free interactive calculators for Fed education resources",
+      "score": 78
+    },
+    {
+      "site": "Mortgage Bankers Association Education",
+      "url": "https://www.mba.org/",
+      "resource_page_url": "/consumer-resources",
+      "topic": "Consumer mortgage resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage affordability + loan calculators",
+      "personalized_angle": "Free consumer calculators for MBA's consumer education portal",
+      "score": 82
+    },
+    {
+      "site": "National Association of Realtors",
+      "url": "https://www.nar.realtor/",
+      "resource_page_url": "/for-homeowners",
+      "topic": "Homeowner resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage affordability + rent vs buy",
+      "personalized_angle": "Free calculators for NAR's homeowner resource center",
+      "score": 80
+    },
+    {
+      "site": "NeighborWorks America",
+      "url": "https://www.neighborworks.org/",
+      "resource_page_url": "/homeowner-resources",
+      "topic": "Homeownership resources",
+      "contact_method": "Contact form (previously tracked)",
+      "relevant_asset": "Mortgage affordability + budget planner",
+      "personalized_angle": "Free homebuyer calculators for their homeowner education resources",
+      "score": 84
+    },
+    {
+      "site": "Habitat for Humanity Education",
+      "url": "https://www.habitat.org/",
+      "resource_page_url": "/financial-education",
+      "topic": "Financial education for homebuyers",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage affordability + budget + loan calculators",
+      "personalized_angle": "Free calculators for Habitat's homebuyer financial education program",
+      "score": 86
+    },
+    {
+      "site": "National Housing Conference",
+      "url": "https://nhc.org/",
+      "resource_page_url": "/resources/",
+      "topic": "Housing policy and resources",
+      "contact_method": "Contact form",
+      "relevant_asset": "Mortgage affordability + rent vs buy",
+      "personalized_angle": "Free housing calculators for their resource center",
+      "score": 74
+    }
+  ]
+}

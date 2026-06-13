@@ -1,0 +1,81 @@
+{
+  "phase": "27",
+  "task": "authority-v3-auditor-review",
+  "reviewed_at": "2026-06-12T21:57:21.769319Z",
+  "auditor": "Phase 27 Auditor (automated quality gate)",
+  "overall_verdict": "CONDITIONAL PASS \u2014 4 of 10 microtest prospects score >=90 and may be sent. 6 are held for score <90.",
+  "review_criteria": {
+    "spam_risk": "ALL 10 PASS \u2014 no spam patterns. 3-sentence personalized emails. No mass templates. No generic subjects.",
+    "value_clarity": "ALL 10 PASS \u2014 each email clearly states what the recipient gets (working embed, fixed link, custom tool).",
+    "personalization": "ALL 10 PASS \u2014 each email references specific page/resource/tool relevant to that recipient.",
+    "channel_fit": "ALL 10 PASS \u2014 each prospect matches channel criteria (resource page, broken link, roundup, or partner).",
+    "no_link_spam_pattern": "ALL 10 PASS \u2014 no exact-match anchors, no reciprocal link offers, no paid link implications.",
+    "no_exact_anchor_request": "ALL 10 PASS \u2014 no anchor text requested in any draft.",
+    "no_paid_exchange_implication": "ALL 10 PASS \u2014 all offers are free with no strings attached."
+  },
+  "send_decision": [
+    {
+      "prospect": "Mad Fientist tools page",
+      "score": 90,
+      "decision": "SEND",
+      "reason": "High score, perfect channel fit, personalized to known FI blogger"
+    },
+    {
+      "prospect": "Library broken links replacement",
+      "score": 92,
+      "decision": "SEND",
+      "reason": "Highest score, broken-link outreach has best reply rate, genuine value"
+    },
+    {
+      "prospect": "Real estate agent broken widget",
+      "score": 92,
+      "decision": "SEND",
+      "reason": "Highest score, broken widget replacement is genuinely helpful"
+    },
+    {
+      "prospect": "Nonprofit credit counseling outdated",
+      "score": 90,
+      "decision": "SEND",
+      "reason": "Meets threshold, strong value proposition for nonprofits"
+    },
+    {
+      "prospect": "America Saves",
+      "score": 85,
+      "decision": "HOLD",
+      "reason": "Score <90. Good prospect but needs more research on contact path."
+    },
+    {
+      "prospect": "NeighborWorks America",
+      "score": 84,
+      "decision": "HOLD",
+      "reason": "Score <90. Previously tracked, need better contact path."
+    },
+    {
+      "prospect": "Jump$tart Coalition",
+      "score": 82,
+      "decision": "HOLD",
+      "reason": "Score <90. Good organization but need clearer contact."
+    },
+    {
+      "prospect": "WalletHacks roundup",
+      "score": 88,
+      "decision": "HOLD",
+      "reason": "Score <90. Close \u2014 research specific roundup article first."
+    },
+    {
+      "prospect": "Modest Money roundup",
+      "score": 86,
+      "decision": "HOLD",
+      "reason": "Score <90. Research their tools page acceptance criteria."
+    },
+    {
+      "prospect": "Physician on FIRE custom",
+      "score": 85,
+      "decision": "HOLD",
+      "reason": "Score <90. Custom offer requires identifying specific article first."
+    }
+  ],
+  "sends_approved": 4,
+  "holds": 6,
+  "conditions_for_held_prospects": "Research contact paths, identify specific pages/articles, resubmit for review when score >=90"
+}

@@ -1,0 +1,43 @@
+{
+  "phase": "27",
+  "task": "authority-offer-v3-test-design",
+  "version": "3.0",
+  "design_principle": "Every offer is 3 sentences, no backlink ask, no anchor request, exact value proposition, low-friction CTA. Designed for resource pages, broken link replacement, and roundup submissions \u2014 not cold blogger outreach.",
+  "offers": [
+    {
+      "id": "offer-v3-A",
+      "name": "Free embeddable calculator for your resource page",
+      "use_for": "Resource pages, tool directories, library guides, .edu financial literacy pages",
+      "email_3_sentences": "I noticed your [resource page name] at [URL] lists financial tools for [audience]. I have a free [calculator type] your visitors can use directly on the page \u2014 no signup, no data collection, just a clean interactive tool that works on any device. Want me to send the one-line embed code?",
+      "no_backlink_ask": true,
+      "no_anchor_request": true,
+      "exact_value": "Free interactive calculator to improve their resource page \u2014 reduces their maintenance burden",
+      "low_friction_cta": "Want me to send the one-line embed code?",
+      "privacy_note": "No signup, no data collection \u2014 all calculations client-side",
+      "embed_optional": "Embed code sent on request"
+    },
+    {
+      "id": "offer-v3-B",
+      "name": "Replace broken/outdated calculator",
+      "use_for": "Pages with broken calculator links, outdated Flash tools, non-mobile calculators",
+      "email_3_sentences": "Your [page name] at [URL] links to a [broken/outdated] [calculator type]. I have an updated, mobile-friendly version that does the same thing and actually works \u2014 no signup, no ads, just a clean replacement your readers can use. Would you like the updated link?",
+      "no_backlink_ask": true,
+      "no_anchor_request": true,
+      "exact_value": "Fix a broken page with zero effort on their part \u2014 site owners hate broken links",
+      "low_friction_cta": "Would you like the updated link?",
+      "privacy_note": "No signup, no data collection"
+    },
+    {
+      "id": "offer-v3-C",
+      "name": "Custom example for your content",
+      "use_for": "Bloggers, newsletter writers, journalists who have articles with calculations",
+      "email_3_sentences": "I read your [article about specific topic with calculations]. I can create a custom interactive version where your readers plug in their own numbers and see personalized results \u2014 same math, but actually usable. No cost, no catch \u2014 happy to build it for your article.",
+      "no_backlink_ask": true,
+      "no_anchor_request": true,
+      "exact_value": "Custom interactive tool built specifically for THEIR content \u2014 highest value offer",
+      "low_friction_cta": "Would that be useful for the article?",
+      "privacy_note": "No signup, no data collection",
+      "custom_work_required": true
+    }
+  ]
+}

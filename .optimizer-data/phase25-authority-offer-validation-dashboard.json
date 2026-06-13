@@ -1,0 +1,75 @@
+{
+  "phase": "25",
+  "task": "authority-offer-validation-dashboard",
+  "created": "2026-06-12T21:19:52.920879Z",
+  "tracking_period": "Jun 12 \u2014 Jun 26 (14 days)",
+  "outreach_summary": {
+    "v1_total_sent": 65,
+    "v1_replies": 0,
+    "v1_embeds": 0,
+    "v1_backlinks": 0,
+    "v2_test_sent": 5,
+    "v2_test_sent_at": "2026-06-12T21:19:52.920906Z",
+    "v2_followups_planned": 8,
+    "v2_followups_date": "2026-06-13"
+  },
+  "tracking_fields": {
+    "opens": "N/A \u2014 Gmail SMTP does not provide read receipts",
+    "replies_total": {
+      "current": 0,
+      "target": ">=1 by Jun 19 from test batch"
+    },
+    "positive_replies": {
+      "current": 0,
+      "target": ">=1 by Jun 26"
+    },
+    "negative_replies": {
+      "current": 0
+    },
+    "bounces": {
+      "current": 0
+    },
+    "embeds": {
+      "current": 0,
+      "target": ">=1 by Jun 26"
+    },
+    "backlinks": {
+      "current": 0,
+      "target": ">=1 by Jun 26"
+    },
+    "custom_widget_requests": {
+      "current": 0
+    },
+    "paid_placement_requests": {
+      "current": 0
+    },
+    "unsubscribes_no_response": {
+      "current": 0,
+      "threshold": "if 0/20 replies, pivot away from blogger outreach"
+    }
+  },
+  "success_thresholds": [
+    {
+      "threshold": "5-test-reply",
+      "metric": ">=1 reply by Jun 19",
+      "pass": null
+    },
+    {
+      "threshold": "20-v2-replies",
+      "metric": ">=2 replies by Jun 26",
+      "pass": null
+    },
+    {
+      "threshold": "first-backlink",
+      "metric": ">=1 backlink/embed/reply by Jun 26",
+      "pass": null
+    }
+  ],
+  "failure_rule": "If V2 gets 0/20 replies, STOP email outreach and pivot to journalist/source-response and partnership directories.",
+  "daily_checks": [
+    "Check q.finhub@gmail.com inbox for replies",
+    "Log any reply in this dashboard",
+    "Respond to replies within 24 hours per playbook",
+    "Monitor no new bounces"
+  ]
+}

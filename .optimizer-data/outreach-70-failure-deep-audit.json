@@ -1,0 +1,163 @@
+{
+  "phase": "27",
+  "task": "outreach-70-failure-deep-audit",
+  "total_sent": 70,
+  "total_replies": 0,
+  "total_backlinks": 0,
+  "total_embeds": 0,
+  "overall_verdict": "COLD EMAIL OUTREACH HAS FAILED. 70 emails, 0 replies. Channel is NOT_PROVEN. Root causes: wrong targets (competitors, massive platforms), generic templates, broken embeds (65 emails had X-Frame-Options: DENY), no personalization.",
+  "batches": [
+    {
+      "batch": "Batch 1 \u2014 Automated Widget Outreach (May 14)",
+      "count": 20,
+      "prospect_type": "Mix of major media (NerdWallet, Bankrate, SmartAsset, Credit Karma, Dave Ramsey), calculator platforms (Calculator.net, CalcXML, Omni Calculator, MortgageCalculator.org), mortgage media (Mortgage News Daily, Mortgage Reports, HSH), fintech (Mint, Rocket Homes, YNAB), and a few actual PF blogs (Money Under 30, Making Sense of Cents, Money Crashers, Personal Finance Club)",
+      "subject_line": "All variations of \"Free compound interest calculator/widget for your readers\"",
+      "offer_type": "Embeddable compound interest calculator via iframe",
+      "email_length": "~150 words (template-generated)",
+      "personalization_level": "ZERO \u2014 all used the same widget-outreach.cjs template",
+      "cta": "Implicit \u2014 embed code included, 'No obligation \u2014 just a useful tool' close",
+      "deliverability": "All sent via Gmail SMTP, no bounces detected in logs",
+      "reply_result": "0/20",
+      "likely_failure_reasons": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ],
+      "classification_detail": {
+        "A_wrong_prospect": "12/20 were WRONG targets \u2014 calculator platforms, competitors, massive fintech brands that would never embed third-party widgets",
+        "B_weak_offer": "13/20 had offer mismatch \u2014 compound interest widget sent to mortgage sites, debt sites, budget sites",
+        "D_too_generic": "20/20 \u2014 zero personalization, no article reference, no site-specific value prop",
+        "F_no_clear_benefit": "15/20 \u2014 no articulation of specific reader benefit for that site's audience"
+      }
+    },
+    {
+      "batch": "Batch 2 \u2014 Extended Automated Run (May 15-20)",
+      "count": 22,
+      "prospect_type": "Mix of FIRE/retirement bloggers (Early Retirement Extreme, Go Curry Cracker, Retire By 40, My Money Wizard, Retirement Manifesto, Can I Retire Yet, Financial Samurai, Wealthy Retirement, Radical PF), investing sites (Investopedia, Young and Invested, Rule One, Tradeciety, Simply Investing, Investing for Beginners, Millionaire Mobs), and debt blogs (Debt Princess, Debt Free Forties, Debt Roundup)",
+      "subject_line": "Minor variations \u2014 some personalized (\"Free Debt Payoff Calculator for Budget Simple Life\") but most generic",
+      "offer_type": "Same compound interest widget (mismatched for most)",
+      "email_length": "~150 words (template)",
+      "personalization_level": "MINIMAL \u2014 subject lines got site names but body remained template",
+      "cta": "Implicit",
+      "deliverability": "Sent via Gmail SMTP",
+      "reply_result": "0/22",
+      "likely_failure_reasons": [
+        "B",
+        "D",
+        "F"
+      ],
+      "classification_detail": {
+        "B_weak_offer": "Compound interest widget sent to retirement/FIRE/debt blogs \u2014 wrong tool for their audience",
+        "D_too_generic": "Template body with no article reference",
+        "F_no_clear_benefit": "No specific reader benefit articulated"
+      }
+    },
+    {
+      "batch": "Batch 3 \u2014 Targeted Widget Offers (May 24)",
+      "count": 20,
+      "prospect_type": "Budget blogs (Budget Simple Life, Frugalwoods, Practical by Default, Miss Elvane, Money Bliss, Financially Empowered, Simplify and Enjoy, Jordan Towns), debt sites (20s Finances, National Debt Relief, Debt.org, Freedom Debt Relief, CreditRepair.com), credit card sites (The Points Guy, CreditCards.com, Ask Sebby, Doctor of Credit, CardRatings), real estate (Realtor.com, HomeLight, BiggerPockets, Rockstar Finance), and LendingTree",
+      "subject_line": "Site-specific (\"Free Debt Payoff Calculator for [Site Name]\", \"Free Budget Planner for [Site]\", \"Free Mortgage Affordability Calculator for [Site]\")",
+      "offer_type": "Varied \u2014 debt payoff, budget planner, mortgage affordability, compound interest",
+      "email_length": "~150 words (template with site-name variable)",
+      "personalization_level": "LOW \u2014 subject had site name, body still generic template",
+      "cta": "Implicit",
+      "deliverability": "Sent via Gmail SMTP",
+      "reply_result": "0/20",
+      "likely_failure_reasons": [
+        "D",
+        "F",
+        "I"
+      ],
+      "classification_detail": {
+        "D_too_generic": "Template body despite personalized subject \u2014 recipients smell automation",
+        "F_no_clear_benefit": "Generic 'free calculator for your readers' without specific article/use case match",
+        "I_email_likely_ignored": "Template format with no personalization gets skipped even with relevant subject"
+      }
+    },
+    {
+      "batch": "Batch 4 \u2014 Phase 16.11 V2 Personalized (Jun 1)",
+      "count": 5,
+      "prospect_type": "Small-to-medium finance/FIRE bloggers (Afford Anything/Paula Pant, The College Investor/Robert, ESI Money, Millennial Revolution/Kristy, Can I Retire Yet)",
+      "subject_line": "Personalized (\"Free tool for your readers: Mortgage Affordability Calculator widget\", \"Free widget: Mortgage Affordability Calculator for your readers\", \"Free debt payoff widget for your readers\")",
+      "offer_type": "Mortgage affordability widget or debt payoff widget \u2014 MATCHED to site niche",
+      "email_length": "~120 words (personalized template)",
+      "personalization_level": "MEDIUM \u2014 used first names, referenced site philosophy/content, specific offer match",
+      "cta": "Clear \u2014 'Would this be useful for your readers?'",
+      "deliverability": "Sent via Gmail SMTP from phase16-11-outreach-batch2.py",
+      "reply_result": "0/5",
+      "likely_failure_reasons": [
+        "F",
+        "I"
+      ],
+      "classification_detail": {
+        "F_no_clear_benefit": "Offer was good but CTA was 'would this be useful?' \u2014 passive, no urgency",
+        "I_email_likely_ignored": "These are busy bloggers getting dozens of pitches. Even a good cold email gets lost in noise. But see EMBED BLOCKER below."
+      },
+      "critical_note": "ALL 5 emails included embed codes that were BROKEN (X-Frame-Options: DENY on all embed routes). If any recipient tried the embed, they'd see a blank frame. This alone could explain zero replies \u2014 the offer appeared broken."
+    },
+    {
+      "batch": "Batch 5 \u2014 Phase 16.8 Large Targets (Jun 5)",
+      "count": 3,
+      "prospect_type": "Major platforms (Investopedia editorial, BiggerPockets, ChooseFI)",
+      "subject_line": "Personalized (\"Free Mortgage Affordability Widget for Investopedias Mortgage Section\", etc.)",
+      "offer_type": "Mortgage affordability widget",
+      "email_length": "~200 words (detailed, professional)",
+      "personalization_level": "HIGH \u2014 site-specific, referenced their content, explained why widget fits their audience",
+      "cta": "Clear \u2014 'Let me know if you have any questions'",
+      "deliverability": "Sent via outreach-send-3-now.py",
+      "reply_result": "0/3",
+      "likely_failure_reasons": [
+        "A",
+        "G",
+        "I"
+      ],
+      "classification_detail": {
+        "A_wrong_prospect": "Investopedia (DR 92) and BiggerPockets (DR 80+) are too large for cold widget offers. ChooseFI is medium but gets flooded with pitches.",
+        "G_site_inactive": "Investopedia/BiggerPockets don't respond to cold outreach at editorial@/support@ \u2014 need direct editor contacts",
+        "I_email_likely_ignored": "Large platforms ignore unsolicited widget offers"
+      },
+      "critical_note": "Same embed blocker issue \u2014 included broken embed codes."
+    },
+    {
+      "batch": "Batch 6 \u2014 Phase 25 V2 Test (Jun 12)",
+      "count": 5,
+      "prospect_type": "Small debt/budget bloggers (Debt Free Forties, Debt Roundup, Frugalwoods/Liz, Miss Elvane/Elva, Simplify and Enjoy)",
+      "subject_line": "Short, benefit-focused (\"Quick tool idea for your debt payoff content\", \"Idea for your frugal living content\", etc.)",
+      "offer_type": "Debt payoff widget (4) + mortgage widget with debt option (1)",
+      "email_length": "~80 words (4-5 sentences max)",
+      "personalization_level": "HIGH \u2014 named (where known), referenced blog content/philosophy, short and direct",
+      "cta": "Clear \u2014 'Would this be useful for your readers? Happy to send the one-line embed code.'",
+      "deliverability": "Sent Jun 12 via Phase 25 script",
+      "reply_result": "0/5 (sent ~3h ago, too early)",
+      "likely_failure_reasons": [
+        "I",
+        "J"
+      ],
+      "classification_detail": {
+        "I_email_likely_ignored": "Only sent 3h ago \u2014 too early for conclusions",
+        "J_offer_not_urgent": "No time pressure. 'Would this be useful?' = easy to postpone indefinitely"
+      },
+      "critical_note": "THIS BATCH IS THE FIRST WITH WORKING EMBEDS. Prior 65 emails had broken iframes. These 5 are the first test of corrected infrastructure."
+    }
+  ],
+  "failure_classification_totals": {
+    "A_wrong_prospect": "17 of 70 (competitors, calculator platforms, massive brands)",
+    "B_weak_offer": "35 of 70 (compound interest widget sent to non-compound-interest sites)",
+    "C_too_long": "0 (all under 200 words)",
+    "D_too_generic": "42 of 70 (template with no personalization)",
+    "E_wrong_inbox": "8 of 70 (support@/feedback@ for editorial pitches)",
+    "F_no_clear_benefit": "50 of 70 (no specific article/page reference or reader value articulation)",
+    "G_site_inactive": "15 of 70 (massive brands that don't reply to cold outreach)",
+    "H_authority_mismatch": "12 of 70 (QFINHUB DR ~5 pitching DR 80+ sites)",
+    "I_email_likely_ignored": "55 of 70 (generic pitches buried in busy inboxes)",
+    "J_offer_not_urgent": "65 of 70 (no time pressure, easy to ignore)"
+  },
+  "hidden_blocker": {
+    "issue": "EMBED CODE WAS BROKEN FOR 65 OF 70 EMAILS",
+    "detail": "X-Frame-Options: DENY on all embed routes until Jun 12 Phase 24 fix. Any recipient who tested the iframe embed would see a BLANK FRAME. The offer appeared broken.",
+    "impact": "The first 65 emails were offering a product that didn't work. Only the last 5 (Phase 25) had working embeds.",
+    "fixed": "Jun 12 \u2014 verified working externally"
+  },
+  "conclusion": "Cold email outreach to finance bloggers has produced 0/70 replies. Channel is NOT_PROVEN. Multiple root causes compound: wrong targets, generic templates, broken embeds, weak offers, and the fundamental challenge of cold outreach to busy bloggers. Must pivot to alternative channels."
+}

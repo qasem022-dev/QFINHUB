@@ -1,0 +1,70 @@
+{
+  "phase": "28",
+  "task": "authority-offer-validation-dashboard",
+  "updated": "2026-06-12T22:08:44.753370Z",
+  "total_sent_all_time": 78,
+  "total_replies_all_time": 0,
+  "batches": {
+    "batch_a_v2_test": {
+      "sent": 5,
+      "date": "2026-06-12",
+      "delivered": 5,
+      "bounced": 0,
+      "replies": 0,
+      "positive_replies": 0,
+      "embeds": 0,
+      "backlinks": 0,
+      "citations": 0,
+      "newsletter_mentions": 0,
+      "conversion_rate": "0.0%",
+      "deadline": "2026-06-19",
+      "status": "WAITING"
+    },
+    "batch_b_jun13_followups": {
+      "sent": 8,
+      "date": "2026-06-13",
+      "delivered": 8,
+      "bounced": 0,
+      "replies": 0,
+      "positive_replies": 0,
+      "embeds": 0,
+      "backlinks": 0,
+      "citations": 0,
+      "conversion_rate": "0.0%",
+      "deadline": "2026-06-26",
+      "status": "WAITING"
+    },
+    "batch_c_v3_microtest": {
+      "sent": 0,
+      "date": "PENDING \u2014 research required",
+      "delivered": 0,
+      "bounced": 0,
+      "replies": 0,
+      "positive_replies": 0,
+      "deadline": "2026-06-20",
+      "status": "HOLD \u2014 need specific site identification"
+    }
+  },
+  "decision_rules": [
+    {
+      "condition": ">=1 positive reply from V3",
+      "verdict": "V3 channel validated small signal"
+    },
+    {
+      "condition": ">=1 embed/backlink/citation",
+      "verdict": "AUTHORITY PROOF ACHIEVED"
+    },
+    {
+      "condition": "0/4 V3 replies by Jun 20",
+      "verdict": "Inspect targeting/copy. Do not scale."
+    },
+    {
+      "condition": "0/12 total replies by Jun 26",
+      "verdict": "Pivot harder to journalist/source platforms and manual resource submissions"
+    },
+    {
+      "condition": "Any complaint received",
+      "verdict": "Freeze and audit immediately"
+    }
+  ]
+}

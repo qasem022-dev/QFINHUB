@@ -1,56 +1,56 @@
 {
-  "title": "Phase 23 \u2014 Results-Only Daily Loop Rules",
-  "generated": "2026-06-12T01:30:00Z",
-  "effective": "Immediately",
-  "supersedes": "All previous daily loop rules",
-  "mode": "RESULTS_ONLY",
-  "allowed_daily_actions": {
-    "first_content_click_attacks": {
-      "max_per_day": 3,
-      "target": "Real pages with pos <=20, impressions >0, 0 clicks",
-      "rule": "Only improve CTA, FAQ, or internal links. Do not change title/meta unless cooldown expired."
-    },
-    "internal_links_to_real_pages": {
-      "min_per_day": 15,
-      "max_per_day": 30,
-      "source": "Pages with GSC impressions",
-      "target": "Real parent calculators, decisions, guides, blogs",
-      "rule": "No thin tools/scenarios. Contextual only. Log every link."
-    },
-    "group_c_parent_strengthening": {
-      "max_per_day": 4,
-      "target": "Indexed-but-invisible parent calculators and decisions",
-      "rule": "Internal links from indexed pages only. Do not touch thin variants."
-    },
-    "authority_sprint_preparation": {
-      "allowed": true,
-      "rule": "Prepare outreach materials, prospect lists, widget pitches. Do not send before due date."
-    },
-    "outreach_followups_when_due": {
-      "allowed": true,
-      "rule": "Send only on scheduled date. Max 12 per batch. Track replies."
-    },
-    "indexing_monitoring": {
-      "allowed": true,
-      "rule": "Check URL Inspection on scheduled recheck days only. Do not re-request."
-    }
+  "phase": "25",
+  "title": "Results-Only Daily Loop Rules \u2014 Authority Offer Validation",
+  "updated": "2026-06-12T21:19:53.810315Z",
+  "priority_1_authority_outreach": {
+    "status": "ACTIVE \u2014 controlled send mode",
+    "allowed": [
+      "Check replies daily (q.finhub@gmail.com inbox)",
+      "Send due follow-ups on schedule (Jun 13: 8 follow-ups)",
+      "Send small batches only after embed verification (verified Jun 12)",
+      "Prepare personalized prospects (research only, not send)",
+      "Improve linkable asset offer pages",
+      "Monitor GSC for new backlinks (weekly)"
+    ],
+    "blocked": [
+      "Mass outreach (>5 per batch)",
+      "Generic templates (must be personalized, article-specific)",
+      "Competitor targets (calculator platforms, major brands)",
+      "Huge brand targets (DR 75+)",
+      "Irrelevant offer-topic mismatch",
+      "Outreach using broken/unverified embeds"
+    ]
   },
-  "blocked_daily_actions": {
-    "thin_variant_seo": "PERMANENTLY BLOCKED \u2014 no CTR/title/meta for /tools/ or /scenario/",
-    "generic_title_changes": "BLOCKED \u2014 must have measurable reason and cooldown expired",
-    "new_pages": "BLOCKED \u2014 no new page creation",
-    "repeat_indexing_requests": "BLOCKED \u2014 7-day cooldown minimum. Monitor only.",
-    "cleanup_tests": "BLOCKED \u2014 until data pipeline, template fix, and monitoring complete",
-    "activity_only_reports": "BLOCKED \u2014 reports must include measured results, not just actions taken",
-    "indexing_api": "PERMANENTLY BLOCKED",
-    "validate_fix_clicks": "BLOCKED \u2014 DO_NOT_VALIDATE_YET",
-    "mass_pages": "PERMANENTLY BLOCKED",
-    "stale_gsc_data": "BLOCKED \u2014 3-window freshness required"
+  "priority_2_content_click": {
+    "status": "Monitoring only",
+    "actions": [
+      "Weekly GSC check for first content click",
+      "No new content creation unless tied to specific outreach offer"
+    ]
   },
-  "deploy_rules": {
-    "allowed": true,
-    "condition": "Only deploy if real page code changes made",
-    "post_deploy": "./scripts/post-deploy-ops.sh",
-    "no_scenario_sitemap": true
-  }
+  "priority_3_indexing": {
+    "status": "Monitoring only",
+    "actions": [
+      "Weekly check of discovered-not-indexed movement",
+      "No repeated indexing requests",
+      "No Google Indexing API"
+    ]
+  },
+  "priority_4_internal_links": {
+    "status": "KPI-tied only",
+    "actions": [
+      "Only add links tied to specific KPI pages",
+      "No bulk internal linking without review"
+    ]
+  },
+  "permanently_blocked": [
+    "Random content tweaks",
+    "Thin tool SEO",
+    "Repeated indexing requests",
+    "Activity-only SEO",
+    "Mass page creation",
+    "Google Indexing API",
+    "Risky automation restarts",
+    "Validate Fix clicks"
+  ]
 }

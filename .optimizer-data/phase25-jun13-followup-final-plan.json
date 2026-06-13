@@ -1,0 +1,74 @@
+{
+  "phase": "25",
+  "task": "jun13-followup-final-plan",
+  "send_date": "2026-06-13",
+  "total_followups": 8,
+  "rule": "Each must: acknowledge previous note lightly, give clearer value offer, be shorter than first email, no backlink ask, no pressure",
+  "followups": [
+    {
+      "prospect": "Money Under 30",
+      "email": "info@moneyunder30.com",
+      "subject": "Re: Free calculator idea (debt version)",
+      "body": "Hi, reaching back about the calculator widget. I've built a debt snowball vs avalanche tool that would pair well with your debt payoff content \u2014 readers compare both methods with their actual numbers. Free embed, no signup. Want me to send the code?",
+      "send": "yes",
+      "offer": "offer-B"
+    },
+    {
+      "prospect": "Making Sense of Cents",
+      "email": "info@makingsenseofcents.com",
+      "subject": "Re: Free tool for your readers (updated)",
+      "body": "Hi Michelle, following up from last month. I now have a debt snowball vs avalanche calculator that might help your readers working through debt \u2014 side-by-side comparison with their real numbers. Free, no signup. Want me to send the one-line embed?",
+      "send": "yes",
+      "offer": "offer-B"
+    },
+    {
+      "prospect": "Personal Finance Club",
+      "email": "contact@personalfinanceclub.com",
+      "subject": "Re: Interactive calculator idea",
+      "body": "Hi Jeremy, checking in on the custom calculator idea \u2014 I can create an interactive version where your readers plug in their own investing numbers instead of reading static examples. No cost, no signup. Would that be useful for any of your articles?",
+      "send": "yes",
+      "offer": "offer-C"
+    },
+    {
+      "prospect": "The Mortgage Reports",
+      "email": "contact@themortgagereports.com",
+      "subject": "Re: Mortgage calculator (corrected offer)",
+      "body": "Hi, reaching out again \u2014 my earlier email sent the wrong calculator. I actually have a mortgage affordability calculator that's a much better fit for your readers. Shows exact home price based on income, debts, and down payment. Free embed, no signup. Want the code?",
+      "send": "yes",
+      "offer": "offer-A"
+    },
+    {
+      "prospect": "Afford Anything",
+      "email": "hello@affordanything.com",
+      "subject": "Re: Mortgage affordability widget \u2014 quick check",
+      "body": "Hi Paula, just checking the mortgage affordability widget I shared didn't get buried. No pressure \u2014 happy to answer questions or adjust sizing. Let me know either way!",
+      "send": "yes",
+      "offer": "offer-A"
+    },
+    {
+      "prospect": "The College Investor",
+      "email": "robert@thecollegeinvestor.com",
+      "subject": "Re: Mortgage calculator widget \u2014 quick check",
+      "body": "Hi Robert, just checking if the mortgage affordability widget would be useful for your readers. Happy to answer questions. Let me know either way!",
+      "send": "yes",
+      "offer": "offer-A"
+    },
+    {
+      "prospect": "ESI Money",
+      "email": "esi@esimoney.com",
+      "subject": "Re: Debt payoff widget \u2014 quick check",
+      "body": "Hi ESI, following up on the debt snowball vs avalanche widget \u2014 no worries if it's not a fit, just wanted to check it didn't get lost. Let me know!",
+      "send": "yes",
+      "offer": "offer-B"
+    },
+    {
+      "prospect": "Millennial Revolution",
+      "email": "kristy@millennial-revolution.com",
+      "subject": "Re: FIRE-friendly mortgage widget \u2014 quick check",
+      "body": "Hi Kristy, quick follow-up on the FIRE-friendly mortgage calculator widget \u2014 just checking it didn't get buried. Happy to answer questions!",
+      "send": "yes",
+      "offer": "offer-A"
+    }
+  ],
+  "do_not_follow_up_reasons": "All competitor/calculator-platform/massive-brand targets from first 20 excluded"
+}

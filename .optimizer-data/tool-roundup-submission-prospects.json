@@ -1,0 +1,208 @@
+{
+  "phase": "27",
+  "task": "tool-roundup-submission-prospects",
+  "total": 20,
+  "rule": "Do not submit unless score >=90 and low risk. Manual review required.",
+  "prospects": [
+    {
+      "site": "Dough Roller",
+      "url": "https://www.doughroller.net/",
+      "submission_url": "/contact or roundup article",
+      "topic_fit": "Personal finance tools and calculators",
+      "allowed_submissions": "Likely yes \u2014 they feature tools",
+      "risk": "LOW",
+      "asset_fit": "Full calculator suite",
+      "score": 85
+    },
+    {
+      "site": "The College Investor",
+      "url": "https://thecollegeinvestor.com/",
+      "submission_url": "/tools/ or roundup contact",
+      "topic_fit": "Student loan, investing, money tools",
+      "allowed_submissions": "Yes \u2014 previously contacted, roundup fit",
+      "risk": "LOW",
+      "asset_fit": "Loan, investment, debt calculators",
+      "score": 82
+    },
+    {
+      "site": "Money Under 30",
+      "url": "https://www.moneyunder30.com/",
+      "submission_url": "/resources/ or contact",
+      "topic_fit": "Young adult finance tools",
+      "allowed_submissions": "Likely \u2014 previously contacted",
+      "risk": "LOW",
+      "asset_fit": "Budget, debt, mortgage calculators",
+      "score": 80
+    },
+    {
+      "site": "Good Financial Cents",
+      "url": "https://www.goodfinancialcents.com/",
+      "submission_url": "/resources/",
+      "topic_fit": "Financial tools and resources",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Investment, retirement, insurance calculators",
+      "score": 84
+    },
+    {
+      "site": "The Balance Money",
+      "url": "https://www.thebalancemoney.com/",
+      "submission_url": "Editorial contact",
+      "topic_fit": "Comprehensive PF resource hub",
+      "allowed_submissions": "Possibly \u2014 large site, needs editorial review",
+      "risk": "MEDIUM \u2014 large site, may ignore",
+      "asset_fit": "Full calculator suite",
+      "score": 72
+    },
+    {
+      "site": "Investopedia Tool Directory",
+      "url": "https://www.investopedia.com/",
+      "submission_url": "Editorial via contact page",
+      "topic_fit": "Investing, mortgage, PF tools",
+      "allowed_submissions": "Possibly \u2014 previously contacted editorial@",
+      "risk": "HIGH \u2014 massive site, low response rate",
+      "asset_fit": "Investment, mortgage, compound interest",
+      "score": 65
+    },
+    {
+      "site": "WalletHacks",
+      "url": "https://wallethacks.com/",
+      "submission_url": "/best-financial-calculators/ or contact",
+      "topic_fit": "Best financial calculators roundups",
+      "allowed_submissions": "Yes \u2014 they do calculator roundups",
+      "risk": "LOW",
+      "asset_fit": "Mortgage, debt, retirement calculators",
+      "score": 88
+    },
+    {
+      "site": "20 Something Finance",
+      "url": "https://20somethingfinance.com/",
+      "submission_url": "/tools/ or contact",
+      "topic_fit": "Young adult finance tools",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Budget, debt, investment calculators",
+      "score": 82
+    },
+    {
+      "site": "Modest Money",
+      "url": "https://www.modestmoney.com/",
+      "submission_url": "/financial-tools/ or contact",
+      "topic_fit": "Financial tools and reviews",
+      "allowed_submissions": "Yes \u2014 reviews tools",
+      "risk": "LOW",
+      "asset_fit": "Full calculator suite",
+      "score": 86
+    },
+    {
+      "site": "Wealth of Geeks",
+      "url": "https://wealthofgeeks.com/",
+      "submission_url": "/contact",
+      "topic_fit": "Money tools and resources",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Budget, savings, debt calculators",
+      "score": 78
+    },
+    {
+      "site": "The Ways to Wealth",
+      "url": "https://www.thewaystowealth.com/",
+      "submission_url": "/resources/",
+      "topic_fit": "Wealth building tools",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Investment, retirement, compound interest",
+      "score": 84
+    },
+    {
+      "site": "Frugal Rules",
+      "url": "https://www.frugalrules.com/",
+      "submission_url": "/tools/ or contact",
+      "topic_fit": "Frugal living and money tools",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Budget, debt, savings calculators",
+      "score": 82
+    },
+    {
+      "site": "Marriage Kids and Money",
+      "url": "https://marriagekidsandmoney.com/",
+      "submission_url": "/resources/",
+      "topic_fit": "Family finance tools",
+      "allowed_submissions": "Yes \u2014 family-focused finance",
+      "risk": "LOW",
+      "asset_fit": "Budget, mortgage, college savings calculators",
+      "score": 85
+    },
+    {
+      "site": "Bread Savings Blog",
+      "url": "https://www.breadfinancial.com/",
+      "submission_url": "/blog/ contact",
+      "topic_fit": "Savings and credit tools",
+      "allowed_submissions": "Possibly \u2014 corporate blog",
+      "risk": "MEDIUM",
+      "asset_fit": "Savings goal, CD, interest calculators",
+      "score": 70
+    },
+    {
+      "site": "Clever Girl Finance",
+      "url": "https://www.clevergirlfinance.com/",
+      "submission_url": "/resources/ (previously contacted)",
+      "topic_fit": "Women's finance tools",
+      "allowed_submissions": "Likely \u2014 previously contacted",
+      "risk": "LOW",
+      "asset_fit": "Budget, debt, savings calculators",
+      "score": 80
+    },
+    {
+      "site": "Millennial Money",
+      "url": "https://millennialmoney.com/",
+      "submission_url": "/tools/ or contact",
+      "topic_fit": "Millennial finance tools",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW-MEDIUM",
+      "asset_fit": "Investment, FIRE, debt calculators",
+      "score": 82
+    },
+    {
+      "site": "Side Hustle Nation",
+      "url": "https://www.sidehustlenation.com/",
+      "submission_url": "/tools/",
+      "topic_fit": "Entrepreneur and side hustle tools",
+      "allowed_submissions": "Yes \u2014 features tools",
+      "risk": "LOW",
+      "asset_fit": "Tax, investment, business loan calculators",
+      "score": 84
+    },
+    {
+      "site": "The Penny Hoarder",
+      "url": "https://www.thepennyhoarder.com/",
+      "submission_url": "/contact",
+      "topic_fit": "Money-saving tools and resources",
+      "allowed_submissions": "Possibly \u2014 large site",
+      "risk": "MEDIUM \u2014 large audience site",
+      "asset_fit": "Budget, debt, savings calculators",
+      "score": 72
+    },
+    {
+      "site": "Club Thrifty",
+      "url": "https://clubthrifty.com/",
+      "submission_url": "/resources/ or contact",
+      "topic_fit": "Thrifty living and money tools",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Budget, debt, savings calculators",
+      "score": 80
+    },
+    {
+      "site": "MapleMoney",
+      "url": "https://maplemoney.com/",
+      "submission_url": "/tools/ or contact",
+      "topic_fit": "Canadian personal finance tools (QFINHUB works for Canadian users too)",
+      "allowed_submissions": "Likely yes",
+      "risk": "LOW",
+      "asset_fit": "Mortgage, debt, retirement, tax calculators",
+      "score": 84
+    }
+  ]
+}

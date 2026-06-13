@@ -1,0 +1,121 @@
+{
+  "phase": "25",
+  "task": "external-embed-verification",
+  "verified_at": "2026-06-12T01:30:00Z",
+  "method": "External HTML test page (file:///tmp/qfinhub-embed-verification.html) + direct browser navigation verification",
+  "overall_result": "PASS \u2014 All embed routes load in external iframes. No X-Frame-Options or CSP blocking errors.",
+  "embeds_tested": [
+    {
+      "name": "Mortgage Affordability Widget Embed",
+      "url": "https://www.qfinhub.com/embed/mortgage-affordability",
+      "checks": {
+        "iframe_loads": {
+          "status": "PASS",
+          "detail": "Iframe loads in external test page (origin null). No load error event."
+        },
+        "no_blank_frame": {
+          "status": "PASS",
+          "detail": "Calculator UI renders: heading 'Mortgage Affordability \ud83c\udfe0', income allocation chart, input fields (income $85k, debt $500, down 20%, rate 7%, term 30yr)"
+        },
+        "no_x_frame_options_error": {
+          "status": "PASS",
+          "detail": "Zero console errors. No X-Frame-Options: DENY messages."
+        },
+        "no_csp_frame_ancestors_error": {
+          "status": "PASS",
+          "detail": "CSP: frame-ancestors * confirmed via curl headers. No CSP errors in console."
+        },
+        "responsive_display": {
+          "status": "PASS",
+          "detail": "Calculator renders with full input fields, chart, and Powered by QFINHUB link."
+        },
+        "calculator_interaction": {
+          "status": "PASS",
+          "detail": "Interactive inputs visible: textboxes for income/debts, slider for down payment, spinbutton for term. Chart renders."
+        },
+        "no_signup_data_issue": {
+          "status": "PASS",
+          "detail": "No signup gate. Calculator loads immediately. Client-side only."
+        },
+        "embed_code_copy_paste_works": {
+          "status": "PASS",
+          "detail": "Standard iframe HTML tag works. Copy/paste from Phase 24 verified."
+        }
+      },
+      "notes": "Embed includes full site footer + consent banner (not minimal). Calculator is functional but iframe is cluttered with footer/consent/PWA prompt. Medium priority cosmetic issue \u2014 does not block outreach."
+    },
+    {
+      "name": "Debt Snowball vs Avalanche Widget Embed",
+      "url": "https://www.qfinhub.com/embed/debt-payoff",
+      "checks": {
+        "iframe_loads": {
+          "status": "PASS",
+          "detail": "Iframe loads in external test page. No load error."
+        },
+        "no_blank_frame": {
+          "status": "PASS",
+          "detail": "Calculator UI renders: 'Debt Payoff Calculator \ud83d\udcaa', debt balance chart, inputs (Total Debt $15k, Rate 18%, Payment $500, Extra $0)."
+        },
+        "no_x_frame_options_error": {
+          "status": "PASS",
+          "detail": "Zero console errors."
+        },
+        "no_csp_frame_ancestors_error": {
+          "status": "PASS",
+          "detail": "CSP frame-ancestors * confirmed."
+        },
+        "responsive_display": {
+          "status": "PASS",
+          "detail": "Full calculator with chart and inputs renders."
+        },
+        "calculator_interaction": {
+          "status": "PASS",
+          "detail": "Inputs: Total Debt, Interest Rate, Monthly Payment, Extra Monthly Payment. All interactive."
+        },
+        "no_signup_data_issue": {
+          "status": "PASS",
+          "detail": "No signup gate. Client-side only."
+        },
+        "embed_code_copy_paste_works": {
+          "status": "PASS",
+          "detail": "Standard iframe HTML works."
+        }
+      },
+      "notes": "Same footer/consent clutter as mortgage embed. Functional but not minimal."
+    },
+    {
+      "name": "Widget API Embed (Mortgage)",
+      "url": "https://www.qfinhub.com/widgets/embed/mortgage-affordability",
+      "checks": {
+        "iframe_loads": {
+          "status": "PASS",
+          "detail": "Loads successfully."
+        },
+        "no_blank_frame": {
+          "status": "PASS",
+          "detail": "Title and links visible."
+        },
+        "no_x_frame_options_error": {
+          "status": "PASS",
+          "detail": "No errors."
+        },
+        "calculator_interaction": {
+          "status": "WARN",
+          "detail": "Shows placeholder text only \u2014 'Interactive calculator loading or available on qfinhub.com/calculators/...'. No interactive calculator component. This is a static HTML page without React components."
+        },
+        "embed_code_copy_paste_works": {
+          "status": "PASS",
+          "detail": "Works but shows non-interactive placeholder"
+        }
+      },
+      "notes": "Clean minimal embed (no footer/consent) but NO interactive calculator. Use /embed/[slug] routes for outreach \u2014 they have functional calculators."
+    }
+  ],
+  "recommended_for_outreach": "/embed/mortgage-affordability and /embed/debt-payoff (interactive calculators, verified working in external iframes)",
+  "known_issues": [
+    "Embed pages include full site footer, consent banner, PWA prompt \u2014 not the minimal embed layout intended. Cosmetic, not blocking.",
+    "/widgets/embed/[slug] route is clean but non-interactive (placeholder only).",
+    "Consider stripping footer/consent from /embed/* pages for cleaner publisher experience."
+  ],
+  "gate_decision": "PASS \u2014 embeds work. Outreach may proceed."
+}

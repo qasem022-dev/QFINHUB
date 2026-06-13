@@ -1,37 +1,45 @@
 {
-  "run_id": "phase19-2026-06-12",
-  "date": "2026-06-12",
-  "generated": "2026-06-12T17:35:55.818903+00:00",
+  "run_id": "phase19-2026-06-13",
+  "date": "2026-06-13",
+  "generated": "2026-06-13T17:45:00Z",
   "work_status": "completed",
   "gsc_api_raw": {
-    "impressions": 415,
+    "impressions": 411,
     "clicks": 0,
-    "pages_with_impressions": 48,
-    "avg_position": 38.3,
-    "date_range": "2026-06-03 to 2026-06-09",
-    "freshness": "FRESH (3-window verified)"
+    "pages_with_impressions": 46,
+    "avg_position": 37.3,
+    "date_range": "2026-06-04 to 2026-06-10",
+    "freshness": "FRESH (checksum 897a26fe5ee4)",
+    "trend_7d": "-35 impressions (-7.8% vs prior 7d)"
   },
   "actions_taken": {
+    "outreach_followups_sent": 8,
+    "outreach_followups_failed": 0,
+    "tool_audits": 8,
     "ctr_fixes": 0,
-    "template_meta_fixes": 0,
     "internal_links_added": 0,
     "new_pages": 0,
-    "outreach_sent": 0,
-    "outreach_replies": 0,
-    "tool_audits": 1,
-    "deploy": "pending"
+    "page_upgrades": 0,
+    "deploy": "data-only (no source changes)"
   },
   "freeze_compliance": {
     "thin_template_freeze": "RESPECTED - No template-level tool/scenario CTR changes",
-    "real_page_focus": "RESPECTED - Only real pages (calculators, decisions) reviewed",
-    "compound_interest_canonical": "VERIFIED_CLEAN - All internal links use /calculators/compound-interest"
+    "real_page_focus": "RESPECTED - Only real pages reviewed",
+    "compound_interest_canonical": "VERIFIED_CLEAN",
+    "outreach_freeze": "RESPECTED - Only sent audited Jun 13 follow-ups per policy"
   },
   "observations": {
-    "top_impression_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (117 imp, pos 10.8)",
-    "best_decision_page": "/decision/pay-off-debt-or-invest (14 imp, pos 9.9)",
-    "ctr_titles_verified": "pay-off-debt-or-invest and how-much-house-can-i-afford titles/metas are strong",
-    "calculator_rankings": "investment-return (pos 82), tax-calculator (pos 88), retirement-planning (pos 87) - deep rankings",
-    "outreach_follow_ups": "8 follow-ups due Jun 13",
-    "phase_24_deploy": "Embed framing v3 fix live"
-  }
+    "top_impression_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (124 imp, pos 10.9)",
+    "deep_ranking_calcs": "tax-calculator (81 imp, pos 88), investment-return (47 imp, pos 82.5), retirement-planning (11 imp, pos 81.5) — DA-limited",
+    "near_page1_tools_but_noindexed": "compound-500k-15yr-5pct (pos 9.7), compound-100k-20yr-5pct (pos 10.2), compound-150k-10yr-5pct (pos 9.3) — Google still serving from old index despite noindex tags",
+    "snippet_cannibalization_suspected": "$20K blog h2='Monthly Payment: $405.53' likely extracted as featured snippet for 87-imp query 'if you borrow $20,000 for 5 years at 8%, what would the monthly payment be'",
+    "outreach_followups": "8/8 sent. 70 total, 0 replies, 0 backlinks all-time. Channel NOT_PROVEN.",
+    "first_click_still_zero": "Day T+25 (May 19 launch). 0 clicks on any content page. Homepage has 1 click (28d)."
+  },
+  "next_run_priorities": [
+    "Fix $20K blog snippet cannibalization — move exact answer out of h2",
+    "Monitor 8 follow-ups for replies",
+    "Continue internal link building from indexed blogs",
+    "Check GSC for new indexed pages"
+  ]
 }

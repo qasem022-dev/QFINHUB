@@ -1,0 +1,25 @@
+{
+  "phase": "26",
+  "deployed": true,
+  "commit": "e47d638",
+  "message": "Phase 26: Add 5 contextual internal links",
+  "files_changed": "src/lib/blog/posts.ts (5 insertions, 5 deletions)",
+  "verified_pages": [
+    {
+      "url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
+      "status": 200
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026",
+      "status": "PENDING Vercel deploy"
+    },
+    {
+      "url": "https://www.qfinhub.com",
+      "status": 200
+    }
+  ],
+  "sitemap_submitted": "AUTO \u2014 Vercel auto-deploy",
+  "scenario_sitemap_not_submitted": true,
+  "risky_automations_disabled": true,
+  "google_indexing_api_not_used": true
+}

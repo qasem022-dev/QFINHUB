@@ -1,66 +1,8 @@
 {
-  "title": "Phase 23 \u2014 Indexing Request Monitoring Status",
-  "generated": "2026-06-12T01:30:00Z",
-  "rule": "MONITOR ONLY. Do NOT request indexing again before recheck window.",
-  "requests_made": 7,
-  "confirmed_requested": 4,
-  "likely_requested": 3,
-  "newly_indexed_confirmed": 0,
-  "schedule": {
-    "day_0": {
-      "date": "2026-06-12",
-      "status": "REQUESTS MADE. Monitoring begins.",
-      "action": "Recorded 4 CONFIRMED + 3 LIKELY"
-    },
-    "day_3": {
-      "date": "2026-06-15",
-      "status": "PENDING",
-      "action": "Run URL Inspection API on all 7. Check coverageState changes. Do NOT re-request."
-    },
-    "day_7": {
-      "date": "2026-06-19",
-      "status": "PENDING",
-      "action": "Check index status. Pull GSC impressions for targets. Classify SUCCESS/PROGRESS/STUCK."
-    },
-    "day_14": {
-      "date": "2026-06-26",
-      "status": "PENDING",
-      "action": "Classify each URL. Document which moved and which didn't."
-    },
-    "day_21": {
-      "date": "2026-07-03",
-      "status": "PENDING",
-      "action": "Final verdict. SUCCESSFUL / NEEDS_LINKS / NEEDS_CONTENT / NEEDS_AUTHORITY / STILL_BLOCKED."
-    }
-  },
-  "current_7_url_status": [
-    {
-      "url": "/guides/how-to-use-mortgage-calculator",
-      "status": "LIKELY_REQUESTED \u2014 NOT YET INDEXED"
-    },
-    {
-      "url": "/guides/how-to-use-compound-interest",
-      "status": "LIKELY_REQUESTED \u2014 NOT YET INDEXED"
-    },
-    {
-      "url": "/guides/how-to-use-retirement-planning",
-      "status": "CONFIRMED_REQUESTED \u2014 NOT YET INDEXED"
-    },
-    {
-      "url": "/calculators/simple-interest",
-      "status": "CONFIRMED_REQUESTED \u2014 NOT YET INDEXED"
-    },
-    {
-      "url": "/calculators/capital-gains-tax",
-      "status": "LIKELY_REQUESTED \u2014 NOT YET INDEXED"
-    },
-    {
-      "url": "/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "status": "CONFIRMED_REQUESTED \u2014 NOT YET INDEXED"
-    },
-    {
-      "url": "/compare/compare-roth-ira-vs-traditional-ira",
-      "status": "CONFIRMED_REQUESTED \u2014 NOT YET INDEXED"
-    }
-  ]
+  "phase": "28",
+  "updated": "2026-06-12T22:08:44.753370Z",
+  "day_counter": "Day 1 \u2014 requests made Jun 12",
+  "next_checkpoint": "2026-06-15 (Day 3) \u2014 URL Inspection API on all 7",
+  "status": "MONITORING. 0 newly indexed confirmed.",
+  "rule": "Do NOT request indexing again before Day 3 checkpoint."
 }
