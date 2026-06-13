@@ -1,0 +1,100 @@
+{
+  "run_id": "phase19-2026-06-13",
+  "date": "2026-06-13",
+  "generated": "2026-06-13T17:50:00Z",
+  "work_status": "completed",
+  "gsc_api_raw": {
+    "impressions_7d": 411,
+    "clicks_7d": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 37.3,
+    "pages_with_impressions": 46,
+    "queries": 54,
+    "impressions_28d": 1310,
+    "clicks_28d": 1,
+    "clicked_pages_28d": ["homepage (branded)"],
+    "trend_7d": "-7.8% (vs prev 7d: 446)",
+    "freshness": "FRESH (pulled 2026-06-13T17:45Z, date range 2026-06-04 to 2026-06-10)"
+  },
+  "page_classification": {
+    "real_pages": 21,
+    "real_page_impressions": 310,
+    "thin_pages": 24,
+    "thin_page_impressions": 100,
+    "homepage": 1,
+    "homepage_impressions": 1
+  },
+  "first_click_candidates": {
+    "primary": {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 124,
+      "position": 10.9,
+      "clicks": 0,
+      "status": "IMPROVED_TODAY (added internal links to decision + tax-calculator, expanded relatedCalcs)"
+    },
+    "secondary": [
+      {
+        "page": "/decision/how-much-house-can-i-afford",
+        "impressions": 4,
+        "position": 7.5
+      },
+      {
+        "page": "/decision/rent-vs-buy-with-100k-income",
+        "impressions": 2,
+        "position": 4.0
+      }
+    ],
+    "note": "All thin tool/scenario pages in position 4-15 excluded per real-page-focus rule"
+  },
+  "deep_ranking_improvement_targets": [
+    {
+      "page": "/calculators/tax-calculator",
+      "impressions": 81,
+      "position": 88.0,
+      "action": "CTR title EXISTS in code. Internal link added from blog loan post. Linked from 3 blog articles."
+    },
+    {
+      "page": "/calculators/investment-return",
+      "impressions": 47,
+      "position": 82.5,
+      "action": "CTR title EXISTS in code. Added to blog loan post relatedCalcs. Linked from 3 blog articles."
+    },
+    {
+      "page": "/calculators/retirement-planning",
+      "impressions": 11,
+      "position": 81.5,
+      "action": "CTR title EXISTS in code. Linked from 4 blog articles."
+    },
+    {
+      "page": "/decision/pay-off-debt-or-invest",
+      "impressions": 10,
+      "position": 31.7,
+      "action": "Internal link added from blog loan post (124 imp). Strong title existed."
+    }
+  ],
+  "internal_links_added": 4,
+  "metadata_upgrades": 0,
+  "new_pages": 0,
+  "outreach_sent": 0,
+  "tool_audits": 0,
+  "deploy": "pending",
+  "changes_made": [
+    "Blog post /blog/20000-loan-at-8-percent-for-5-years-monthly-payment: Added investment-return and tax-calculator to relatedCalculators array",
+    "Blog post: Added 'Should You Pay Extra or Invest the Difference?' section linking to /decision/pay-off-debt-or-invest and /calculators/tax-calculator",
+    "Blog post conclusion: Added link to pay-off-debt-or-invest decision tool"
+  ],
+  "freeze_compliance": {
+    "outreach_frozen": "RESPECTED - Zero outreach sent",
+    "thin_template_freeze": "RESPECTED - No thin tool/scenario changes",
+    "real_page_focus": "RESPECTED - Only real pages (blog, decision, calculator) modified",
+    "improve_existing": "RESPECTED - No new pages created"
+  },
+  "observations": {
+    "top_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (124 imp, pos 10.9) - best first-click candidate",
+    "impression_concentration": "Top 3 real pages account for 252 of 310 real-page impressions (81%)",
+    "ctr_problem": "0 clicks on 411 impressions. Branded homepage click only in 28d. CTR optimization needed.",
+    "deep_calculators": "tax-calculator, investment-return, retirement-planning all rank 80+ despite CTR titles - domain authority likely the bottleneck",
+    "domain_age": "~2 months - too young for competitive rankings. Authority building critical.",
+    "outreach_status": "FROZEN per Phase 27. 0 emails sent."
+  }
+}

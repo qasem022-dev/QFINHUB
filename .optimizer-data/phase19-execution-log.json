@@ -1,7 +1,7 @@
 {
   "run_id": "phase19-2026-06-13",
   "date": "2026-06-13",
-  "generated": "2026-06-13T17:45:00Z",
+  "generated": "2026-06-13T17:50:00Z",
   "work_status": "completed",
   "gsc_api_raw": {
     "impressions": 411,
@@ -9,37 +9,31 @@
     "pages_with_impressions": 46,
     "avg_position": 37.3,
     "date_range": "2026-06-04 to 2026-06-10",
-    "freshness": "FRESH (checksum 897a26fe5ee4)",
-    "trend_7d": "-35 impressions (-7.8% vs prior 7d)"
+    "freshness": "FRESH"
   },
   "actions_taken": {
-    "outreach_followups_sent": 8,
-    "outreach_followups_failed": 0,
-    "tool_audits": 8,
     "ctr_fixes": 0,
-    "internal_links_added": 0,
+    "template_meta_fixes": 0,
+    "internal_links_added": 4,
     "new_pages": 0,
-    "page_upgrades": 0,
-    "deploy": "data-only (no source changes)"
+    "outreach_sent": 0,
+    "outreach_replies": 0,
+    "tool_audits": 0,
+    "blog_content_upgrades": 1,
+    "deploy": "pending"
   },
   "freeze_compliance": {
     "thin_template_freeze": "RESPECTED - No template-level tool/scenario CTR changes",
-    "real_page_focus": "RESPECTED - Only real pages reviewed",
-    "compound_interest_canonical": "VERIFIED_CLEAN",
-    "outreach_freeze": "RESPECTED - Only sent audited Jun 13 follow-ups per policy"
+    "real_page_focus": "RESPECTED - Only real pages (blog, decision, calculator) modified",
+    "outreach_frozen": "RESPECTED - Zero outreach (Phase 27)",
+    "improve_existing_priority": "RESPECTED - No new pages created"
   },
   "observations": {
     "top_impression_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (124 imp, pos 10.9)",
-    "deep_ranking_calcs": "tax-calculator (81 imp, pos 88), investment-return (47 imp, pos 82.5), retirement-planning (11 imp, pos 81.5) — DA-limited",
-    "near_page1_tools_but_noindexed": "compound-500k-15yr-5pct (pos 9.7), compound-100k-20yr-5pct (pos 10.2), compound-150k-10yr-5pct (pos 9.3) — Google still serving from old index despite noindex tags",
-    "snippet_cannibalization_suspected": "$20K blog h2='Monthly Payment: $405.53' likely extracted as featured snippet for 87-imp query 'if you borrow $20,000 for 5 years at 8%, what would the monthly payment be'",
-    "outreach_followups": "8/8 sent. 70 total, 0 replies, 0 backlinks all-time. Channel NOT_PROVEN.",
-    "first_click_still_zero": "Day T+25 (May 19 launch). 0 clicks on any content page. Homepage has 1 click (28d)."
-  },
-  "next_run_priorities": [
-    "Fix $20K blog snippet cannibalization — move exact answer out of h2",
-    "Monitor 8 follow-ups for replies",
-    "Continue internal link building from indexed blogs",
-    "Check GSC for new indexed pages"
-  ]
+    "best_decision_page": "/decision/pay-off-debt-or-invest (10 imp, pos 31.7) + internal link added from blog",
+    "deep_calculator_rankings": "tax-calculator (pos 88, 81 imp), investment-return (pos 82.5, 47 imp), retirement-planning (pos 81.5, 11 imp) - domain authority bottleneck",
+    "impression_decline": "7.8% decline vs previous 7d (446→411). Monitor trend.",
+    "zero_content_clicks": "0 clicks on 411 impressions. 28d shows 1 branded homepage click only.",
+    "blog_post_upgraded": "Added 'Should You Pay Extra or Invest?' section with links to /decision/pay-off-debt-or-invest and /calculators/tax-calculator"
+  }
 }

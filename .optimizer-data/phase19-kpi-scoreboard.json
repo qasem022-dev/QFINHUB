@@ -1,37 +1,35 @@
 {
-  "date": "2026-06-12",
-  "generated": "2026-06-12T17:36:35.879934+00:00",
+  "date": "2026-06-13",
+  "generated": "2026-06-13T17:50:00Z",
   "gsc_api_raw": {
-    "impressions_7d": 415,
+    "impressions_7d": 411,
     "clicks_7d": 0,
     "ctr_pct": 0.0,
-    "avg_position": 38.3,
-    "pages_with_impressions": 48,
-    "queries": 66,
-    "impressions_28d": 1202,
+    "avg_position": 37.3,
+    "pages_with_impressions": 46,
+    "queries": 54,
+    "impressions_28d": 1310,
     "clicks_28d": 1,
-    "clicked_pages_28d": [
-      "homepage (branded)"
-    ],
-    "trend_7d": "+17.6% (vs prev 7d: 353)",
-    "freshness": "FRESH (3-window verified: 415/424/418)"
+    "clicked_pages_28d": ["homepage (branded)"],
+    "trend_7d": "-7.8% (vs prev 7d: 446)",
+    "freshness": "FRESH (pulled 2026-06-13T17:45Z)"
   },
   "business_metrics": {
     "status": "OFF-TRACK",
     "target_monthly_visitors_m5": "1,000,000",
     "current_daily_impressions": 59,
-    "estimated_monthly_impressions": 1779,
+    "estimated_monthly_impressions": 1770,
     "gap_to_target": "MASSIVE",
     "backlinks": 0,
     "domain_age_months": 2,
-    "note": "Domain too young for competitive rankings. Authority building needed."
+    "note": "Domain too young for competitive rankings. 0 content clicks in 7d. Authority building needed."
   },
   "first_click_watchlist": {
     "top_candidate": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-    "impressions": 117,
-    "position": 10.8,
+    "impressions": 124,
+    "position": 10.9,
     "target_query": "if you borrow $20,000 for 5 years at 8% annual rate",
     "near_page1": true,
-    "ctr_fix_applied": "Phase 22 - replaced thin tool CTAs with real loan calculator"
+    "improvement_today": "Added internal links to decision tool + tax-calculator, expanded relatedCalcs"
   }
 }
