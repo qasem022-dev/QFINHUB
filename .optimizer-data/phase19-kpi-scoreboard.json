@@ -1,35 +1,18 @@
 {
-  "date": "2026-06-13",
-  "generated": "2026-06-13T17:50:00Z",
-  "gsc_api_raw": {
-    "impressions_7d": 411,
-    "clicks_7d": 0,
-    "ctr_pct": 0.0,
-    "avg_position": 37.3,
-    "pages_with_impressions": 46,
-    "queries": 54,
-    "impressions_28d": 1310,
-    "clicks_28d": 1,
-    "clicked_pages_28d": ["homepage (branded)"],
-    "trend_7d": "-7.8% (vs prev 7d: 446)",
-    "freshness": "FRESH (pulled 2026-06-13T17:45Z)"
-  },
-  "business_metrics": {
-    "status": "OFF-TRACK",
-    "target_monthly_visitors_m5": "1,000,000",
-    "current_daily_impressions": 59,
-    "estimated_monthly_impressions": 1770,
-    "gap_to_target": "MASSIVE",
-    "backlinks": 0,
-    "domain_age_months": 2,
-    "note": "Domain too young for competitive rankings. 0 content clicks in 7d. Authority building needed."
-  },
-  "first_click_watchlist": {
-    "top_candidate": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-    "impressions": 124,
-    "position": 10.9,
-    "target_query": "if you borrow $20,000 for 5 years at 8% annual rate",
-    "near_page1": true,
-    "improvement_today": "Added internal links to decision tool + tax-calculator, expanded relatedCalcs"
-  }
+  "date": "2026-06-15",
+  "impressions_7d": 411,
+  "clicks_7d": 0,
+  "clicks_28d": 1,
+  "branded_only": true,
+  "avg_position": 37.3,
+  "pages_with_impressions": 46,
+  "backlinks": 0,
+  "outreach_sent_all_time": 70,
+  "outreach_replies": 0,
+  "ctr_fixes_all_time": 16,
+  "internal_links_all_time": 49,
+  "gsc_data_status": "STALE_TOKEN_DEAD",
+  "gsc_data_as_of": "2026-06-10",
+  "trend": "DECLINING (446\u2192446\u2192415\u2192411 over last 4 pulls)",
+  "status": "OFF-TRACK (0 clicks, 0 backlinks, 46 pages with impressions)"
 }

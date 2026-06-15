@@ -1,9 +1,8 @@
 {
   "title": "First Click Watchlist",
-  "updated": "2026-06-13T17:50:00Z",
-  "phase": "Phase 19",
+  "updated": "2026-06-15T12:33:48.600934",
   "status": {
-    "FIRST_CLICK_28D": "ACHIEVED (branded homepage only — 'qfinhub' navigation)",
+    "FIRST_CLICK_28D": "ACHIEVED (branded homepage only \u2014 'qfinhub' navigation)",
     "FIRST_CONTENT_CLICK_28D": "NOT_ACHIEVED",
     "FIRST_NON_BRANDED_CLICK_28D": "NOT_ACHIEVED",
     "FIRST_CLICK_7D": "NOT_ACHIEVED"
@@ -15,28 +14,45 @@
       "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
       "impressions": 124,
       "position": 10.9,
-      "target_query": "if you borrow $20,000 for 5 years at 8% annual rate",
-      "near_page1": true,
-      "improvement_today": "Added 'Should You Pay Extra or Invest?' section linking to /decision/pay-off-debt-or-invest and /calculators/tax-calculator. Added investment-return + tax-calculator to relatedCalcs."
+      "status": "IMPROVED Jun 13 + Jun 15 links added"
+    },
+    {
+      "page": "/calculators/tax/philadelphia-pa",
+      "impressions": 13,
+      "position": 18.3,
+      "status": "ADDED internal link from tax brackets blog"
     },
     {
       "page": "/decision/how-much-house-can-i-afford",
       "impressions": 4,
       "position": 7.5,
-      "near_page1": true
+      "status": "ADDED internal link from mortgage afford blog"
     },
     {
       "page": "/decision/rent-vs-buy-with-100k-income",
       "impressions": 2,
       "position": 4.0,
-      "near_page1": true
+      "status": "ADDED internal link from rent-vs-buy blog"
     },
-    "/decision/pay-off-debt-or-invest",
-    "/calculators/tax/philadelphia-pa",
-    "/calculators/tax-calculator",
-    "/calculators/investment-return",
-    "/calculators/retirement-planning"
+    {
+      "page": "/calculators/tax-calculator",
+      "impressions": 81,
+      "position": 88.0,
+      "status": "DA bottleneck \u2014 already has blog links"
+    },
+    {
+      "page": "/calculators/investment-return",
+      "impressions": 47,
+      "position": 82.5,
+      "status": "ADDED 2 blog links to calculator-blog-links"
+    },
+    {
+      "page": "/calculators/retirement-planning",
+      "impressions": 11,
+      "position": 81.5,
+      "status": "FIXED wrong URL + added link from compound-interest blog"
+    }
   ],
-  "excluded_from_watchlist": "All /tools/ and /scenario/ thin variant pages — real page focus rule active",
-  "note": "Watchlist tracks real pages only. Thin tool/scenario impressions documented but not targeted for CTR optimization. Today improved the #1 candidate with internal links to decision tool and tax calculator."
+  "today_improvements": "8 internal links across 5 blog posts + 1 URL fix. No CTR fixes (cooldown on top pages).",
+  "gsc_warning": "GSC TOKEN DEAD \u2014 data is 5 days stale. Cannot detect new clicks or ranking changes."
 }

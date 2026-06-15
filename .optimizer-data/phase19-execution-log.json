@@ -1,39 +1,48 @@
 {
-  "run_id": "phase19-2026-06-13",
-  "date": "2026-06-13",
-  "generated": "2026-06-13T17:50:00Z",
-  "work_status": "completed",
-  "gsc_api_raw": {
+  "run_id": "phase19-2026-06-15",
+  "date": "2026-06-15",
+  "timestamp": "2026-06-15T12:33:48.600934",
+  "gsc_data": {
+    "source": "CACHED \u2014 token dead since Jun 13",
     "impressions": 411,
     "clicks": 0,
-    "pages_with_impressions": 46,
     "avg_position": 37.3,
+    "pages_with_impressions": 46,
     "date_range": "2026-06-04 to 2026-06-10",
-    "freshness": "FRESH"
+    "freshness": "STALE_48HRS \u2014 last fresh pull Jun 13, token dead"
   },
   "actions_taken": {
     "ctr_fixes": 0,
     "template_meta_fixes": 0,
-    "internal_links_added": 4,
+    "internal_links_added": 8,
     "new_pages": 0,
     "outreach_sent": 0,
     "outreach_replies": 0,
     "tool_audits": 0,
-    "blog_content_upgrades": 1,
-    "deploy": "pending"
+    "blog_content_upgrades": 5,
+    "blog_url_fixes": 1,
+    "deploy": "deployed"
   },
   "freeze_compliance": {
-    "thin_template_freeze": "RESPECTED - No template-level tool/scenario CTR changes",
-    "real_page_focus": "RESPECTED - Only real pages (blog, decision, calculator) modified",
-    "outreach_frozen": "RESPECTED - Zero outreach (Phase 27)",
-    "improve_existing_priority": "RESPECTED - No new pages created"
+    "thin_template_freeze": "RESPECTED",
+    "real_page_focus": "RESPECTED",
+    "outreach_frozen": "RESPECTED",
+    "improve_existing_priority": "RESPECTED"
   },
   "observations": {
     "top_impression_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (124 imp, pos 10.9)",
-    "best_decision_page": "/decision/pay-off-debt-or-invest (10 imp, pos 31.7) + internal link added from blog",
-    "deep_calculator_rankings": "tax-calculator (pos 88, 81 imp), investment-return (pos 82.5, 47 imp), retirement-planning (pos 81.5, 11 imp) - domain authority bottleneck",
-    "impression_decline": "7.8% decline vs previous 7d (446→411). Monitor trend.",
-    "zero_content_clicks": "0 clicks on 411 impressions. 28d shows 1 branded homepage click only.",
-    "blog_post_upgraded": "Added 'Should You Pay Extra or Invest?' section with links to /decision/pay-off-debt-or-invest and /calculators/tax-calculator"
-  }
+    "internal_links_added_to": [
+      "understanding-tax-brackets \u2192 tax/philadelphia-pa (13 imp, pos 18.3)",
+      "rent-vs-buy \u2192 rent-vs-buy-with-100k-income (2 imp, pos 4.0)",
+      "how-much-mortgage-afford \u2192 how-much-house-can-i-afford (4 imp, pos 7.5)",
+      "compound-interest-explained \u2192 retirement-planning (11 imp, pos 81.5)",
+      "retirement-planning-could-cost \u2192 retirement-planning URL fix",
+      "calculator-blog-links: +2 blogs to investment-return"
+    ],
+    "deep_calculator_rankings": "tax-calculator (pos 88), investment-return (pos 82.5), retirement-planning (pos 81.5) \u2014 DA bottleneck persists",
+    "impression_decline": "7.8% decline vs previous 7d (446\u2192411) \u2014 need fresh GSC pull to confirm trend",
+    "zero_content_clicks": "0 clicks on 411 impressions. Token dead \u2014 cannot verify if any clicks appeared since Jun 10.",
+    "gsc_token_dead": "TOKEN DEAD since ~Jun 13. Qasem must re-auth via desktop-oauth-refresh.py"
+  },
+  "commit": "4e23609"
 }

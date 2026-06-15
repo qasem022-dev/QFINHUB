@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-15",
+  "timestamp": "2026-06-15T12:33:48.600934",
+  "checks": {
+    "homepage_200": true,
+    "sitemap_200": true,
+    "robots_200": true
+  },
+  "gsc_status": "TOKEN_DEAD",
+  "ga4_status": "TOKEN_EXPIRED",
+  "vercel_deploy": "github_auto_deploy"
+}
