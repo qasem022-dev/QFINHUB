@@ -1,0 +1,156 @@
+{
+  "report": "Phase 29 — Real V3 Prospect Discovery Report",
+  "date": "2026-06-13",
+  "time": "20:45 EEST",
+  "executed_by": "Hermes Agent (deepseek-v4-pro)",
+  
+  "hold_status_confirmation": {
+    "file": ".optimizer-data/phase29-v3-held-items-status.json",
+    "all_4_held": true,
+    "library_broken_links": "HOLD — needs exact library page + broken tool link + contact path",
+    "re_agent_broken_widget": "HOLD — needs exact real estate site + broken widget evidence + contact path",
+    "nonprofit_credit_counseling": "HOLD — needs exact nonprofit page + outdated tool + contact path",
+    "mad_fientist": "HOLD — contact form only (no form, just email). Replaced with Budgets Are Sexy for contact-form channel.",
+    "no_placeholder_sends": true,
+    "no_generic_categories": true
+  },
+
+  "real_v3_prospects": {
+    "file": ".optimizer-data/phase29-real-v3-prospects.json",
+    "total_found": 12,
+    "by_channel": {
+      "broken_outdated_replacement": 6,
+      "resource_page_addition": 3,
+      "tool_roundup_submission": 2,
+      "contact_form_custom": 1
+    },
+    "all_have_exact_urls": true,
+    "all_have_contact_paths": true,
+    "research_challenges": "VPS IP blocked by Google, Bing, DuckDuckGo. 45+ direct URL tests. Tool roundup articles hardest to find — most old blog roundup posts deleted/moved. No verified broken calculator links found (dinkytown.net is alive).",
+    "prospect_pipeline": [
+      {"id": "v3-p12", "site": "Budgets Are Sexy", "channel": "Contact Form", "score": 87, "verdict": "APPROVED"},
+      {"id": "v3-p1", "site": "GreenPath", "channel": "Broken/Outdated", "score": 85, "verdict": "APPROVED"},
+      {"id": "v3-p2", "site": "Credit.org", "channel": "Broken/Outdated", "score": 82, "verdict": "APPROVED"},
+      {"id": "v3-p6", "site": "UW Extension", "channel": "Broken/Outdated", "score": 79, "verdict": "APPROVED"},
+      {"id": "v3-p3", "site": "Debt.org", "channel": "Broken/Outdated", "score": 80, "verdict": "BACKUP"},
+      {"id": "v3-p5", "site": "MoneyFit.org", "channel": "Broken/Outdated", "score": 78, "verdict": "BACKUP"},
+      {"id": "v3-p8", "site": "SavingForCollege", "channel": "Resource Page", "score": 77, "verdict": "HELD"},
+      {"id": "v3-p11", "site": "MoneyFit (Roundup)", "channel": "Tool Roundup", "score": 79, "verdict": "HELD (dup)"},
+      {"id": "v3-p4", "site": "Alliant CU", "channel": "Broken/Outdated", "score": 65, "verdict": "HELD"},
+      {"id": "v3-p7", "site": "Motley Fool (Resource)", "channel": "Resource Page", "score": 58, "verdict": "REJECTED"},
+      {"id": "v3-p10", "site": "Motley Fool (Roundup)", "channel": "Tool Roundup", "score": 57, "verdict": "REJECTED"},
+      {"id": "v3-p9", "site": "Calculator.net", "channel": "Resource Page", "score": 30, "verdict": "REJECTED"}
+    ]
+  },
+
+  "asset_match_review": {
+    "file": ".optimizer-data/phase29-prospect-asset-match.json",
+    "all_matched": true,
+    "assets_used": ["debt-snowball-widget", "mortgage-calculator", "simple-interest-calculator", "retirement-planning-calculator", "investment-return-calculator", "capital-gains-tax-calculator"],
+    "assets_not_used": ["mortgage-affordability-widget", "loan-calculator"],
+    "custom_examples": 1,
+    "embed_needed_count": 7,
+    "link_only_count": 3
+  },
+
+  "send_ready_messages": {
+    "file": ".optimizer-data/phase29-v3-send-ready-messages.json",
+    "messages_written": 4,
+    "all_3_sentences_max": true,
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_seo_language": true,
+    "all_value_first": true,
+    "ready_to_send": 4
+  },
+
+  "auditor_review": {
+    "file": ".optimizer-data/phase29-v3-auditor-review.json",
+    "total_reviewed": 12,
+    "approved": 4,
+    "approved_backup": 2,
+    "held": 3,
+    "rejected": 3,
+    "highest_scoring": "Budgets Are Sexy (87)",
+    "lowest_scoring": "Calculator.net (30)"
+  },
+
+  "send_batch": {
+    "file": ".optimizer-data/phase29-v3-4-prospect-send-batch.json",
+    "selected": 4,
+    "mix": "3 broken/outdated replacement + 1 contact form custom example",
+    "status": "NOT SENT — awaiting pre-send contact verification",
+    "prospects": [
+      {"rank": 1, "id": "v3-p12", "site": "Budgets Are Sexy", "score": 87},
+      {"rank": 2, "id": "v3-p1", "site": "GreenPath", "score": 85},
+      {"rank": 3, "id": "v3-p2", "site": "Credit.org", "score": 82},
+      {"rank": 4, "id": "v3-p6", "site": "UW Extension", "score": 79}
+    ]
+  },
+
+  "existing_batch_status": {
+    "v2_test_5_emails": {"sent": "Jun 12", "replies": 0, "bounces": 0, "deadline": "Jun 19", "days_remaining": 6},
+    "jun13_followups_8": {"sent": "Jun 13", "replies": 0, "bounces": 0, "deadline": "Jun 26", "days_remaining": 13},
+    "v3_microtest_4": {"status": "NOT YET SENT"}
+  },
+
+  "content_click_status": {
+    "all_time_clicks": 0,
+    "gsc_28d_clicks": 1,
+    "gsc_28d_clicks_note": "1 click is branded homepage only — 0 content clicks from organic search",
+    "first_click_candidates": ["blog/20000-loan (pos 10.9, 124 imp)", "decision/how-much-house (pos 7.5, 4 imp)", "decision/rent-vs-buy (pos 4.0, 2 imp)"],
+    "status": "OFF_TRACK — 0 content clicks after ~78 emails and ~2 months"
+  },
+
+  "indexing_monitoring": {
+    "file": ".optimizer-data/indexing-request-monitoring-status.json",
+    "day": 1,
+    "requests_made": "Jun 12",
+    "next_checkpoint": "Jun 15 (Day 3)",
+    "newly_indexed_confirmed": 0,
+    "status": "MONITORING — no action until Day 3"
+  },
+
+  "backlinks_embeds_citations": {
+    "backlinks": 0,
+    "embeds": 0,
+    "citations": 0,
+    "newsletter_mentions": 0,
+    "status": "OFF_TRACK"
+  },
+
+  "compliance_confirmations": {
+    "no_placeholder_sends": true,
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_followed_link_requirement": true,
+    "no_mass_outreach": true,
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_paid_exchange_language": true,
+    "no_buy_links": true,
+    "no_spammy_directories": true,
+    "no_mass_form_submissions": true,
+    "no_thin_tool_optimization": true
+  },
+
+  "overall_status": "OFF_TRACK",
+  "off_track_reasons": [
+    "0 replies from 78 total emails",
+    "0 backlinks, 0 embeds, 0 citations",
+    "0 content clicks from organic search",
+    "V3 microtest not yet sent (4 approved, pre-send pending)",
+    "Tool roundup channel coverage weak (no verified roundup articles)"
+  ],
+
+  "success_condition_status": "PENDING — Phase 29 succeeds only if it produces real verified V3 prospects AND sends a tiny approved proof batch. Prospects are identified and approved. Send is next step.",
+  "next_actions": [
+    "Complete pre-send contact verification on all 4 prospects",
+    "Auditor re-approves final send batch",
+    "Send max 4 V3 messages",
+    "Jun 15: Day 3 indexing check",
+    "Jun 19: V2 test batch deadline",
+    "Jun 26: Jun 13 follow-ups deadline",
+    "Daily: monitor q.finhub@gmail.com for replies"
+  ]
+}

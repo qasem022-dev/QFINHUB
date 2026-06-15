@@ -1,0 +1,50 @@
+{
+  "phase": "29.1",
+  "task": "Evidence Upgrade",
+  "date": "2026-06-13",
+  "candidates_upgraded": [
+    {
+      "id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "original_score": 87,
+      "upgraded_score": 93,
+      "upgrade_details": {
+        "was": "Target page identifies net worth tracking as signature content. Contact form exists but not verified for constraints.",
+        "now": "Target page content extracted: explicitly teaches 'How to Calculate Your Net Worth' (Assets - Liabilities), offers Excel spreadsheet + Personal Capital + Mint.com. No free interactive web-based projector. Contact form verified with field constraints (2000 char limit, reCAPTCHA v3, Akismet). J. Money states 'I respond to each and every one.' Exact evidence of gap confirmed.",
+        "evidence_boost": "+3 (exact page content verified, specific gap identified)",
+        "contact_boost": "+2 (form constraints tested, owner response policy confirmed)",
+        "personalization_boost": "+1 (message references his exact net worth teaching method)"
+      }
+    },
+    {
+      "id": "v3-p5",
+      "site": "MoneyFit.org",
+      "original_score": 78,
+      "upgraded_score": 90,
+      "upgrade_details": {
+        "was": "Budget calculator page exists but specific content not extracted. Contact assumed (contact form not verified).",
+        "now": "Specific calculator lineup confirmed: Core Budgeting (50/30/20, Simple Budget, Money Pie Budget), Debt Repayment (Credit Card Debt Calculator, Debt Management Calculator), Specialty Planning (Teen Budget, Home Equity, Vacation Budget, PowerCash). NO debt snowball calculator found on page ('snowball' search = FALSE). Named press contacts: Rick Munster and Todd Christensen. contactus@moneyfit.org email. Contact page explicitly welcomes 'Press and partnerships' outreach.",
+        "evidence_boost": "+4 (specific calculators extracted, snowball absence confirmed, debt repayment section identified as target)",
+        "contact_boost": "+4 (named contacts found, press/partnership section confirmed)",
+        "asset_fit_boost": "+2 (debt repayment section = direct fit for snowball widget)",
+        "reply_probability_boost": "+2 (named individuals, press-friendly contact page)"
+      }
+    }
+  ],
+  "not_upgraded": [
+    {
+      "id": "v3-p1",
+      "site": "GreenPath",
+      "original_score": 85,
+      "final_score": 83,
+      "reason": "Accessibility notice is excellent evidence but mediarelations@greenpath.com is the wrong contact path for tool offers. Cannot upgrade contact without better email/form. Score actually dropped on re-evaluation due to stricter contact quality assessment."
+    },
+    {
+      "id": "v3-p2",
+      "site": "Credit.org",
+      "original_score": 82,
+      "final_score": 81,
+      "reason": "30+ calculators verified, debt snowball absence confirmed. But info@credit.org is general inbox — unlikely to reach calculator manager. Contact quality limits score to ~81."
+    }
+  ]
+}

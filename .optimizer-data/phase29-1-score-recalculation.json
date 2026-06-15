@@ -1,0 +1,104 @@
+{
+  "phase": "29.1",
+  "task": "Evidence Upgrade + Score Recalculation",
+  "date": "2026-06-13",
+  "scoring_rubric": {
+    "exact_page_evidence": 25,
+    "contact_path_quality": 20,
+    "asset_fit": 20,
+    "personalization_quality": 15,
+    "low_spam_risk": 10,
+    "reply_probability": 10
+  },
+  "send_threshold": 90,
+  "candidates": [
+    {
+      "id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "evidence_type": "Missing interactive tool — net worth page teaches calculation but offers only spreadsheet + paid service",
+      "evidence_text": "J. Money's cornerstone net worth tracking page explicitly teaches 'How to Calculate Your Net Worth' (Assets - Liabilities). He offers a manual Excel spreadsheet ('J's Financial Snapshot') and recommends Personal Capital (automated but requires account linking and signup). He also mentions Mint.com. NO free, interactive, web-based net worth projector with visual growth trajectory exists on the page or as an option. QFINHUB's Net Worth Projector would be a THIRD option: free, interactive, visual, no signup, no account linking — a natural companion for readers who want a quick visual check between monthly spreadsheet updates.",
+      "evidence_quality": "HIGH — page content directly extracted via browser, specific quotes and links verified",
+      "why_qfinhub_better": "QFINHUB's Net Worth Projector is (1) free and requires no signup/account linking (unlike Personal Capital), (2) interactive and visual with compound growth trajectory (unlike the static spreadsheet), (3) instant — no manual monthly update needed for projections. It complements both existing options without competing.",
+      "confidence": 10,
+      "scores": {
+        "exact_page_evidence": 24,
+        "contact_path_quality": 19,
+        "asset_fit": 19,
+        "personalization_quality": 14,
+        "low_spam_risk": 9,
+        "reply_probability": 8
+      },
+      "total_score": 93,
+      "meets_threshold": true,
+      "score_explanation": "Strongest prospect by far. Perfect target page match (net worth tracking = J. Money's signature content). Contact form verified with J. Money explicitly stating he responds to everyone. Evidence is clear: he teaches net worth calculation, offers spreadsheet + Personal Capital, but no free interactive visual tool. QFINHUB fills a genuine gap. -1 on contact because it's a general contact form (not a direct email), -1 on reply probability because he gets high volume."
+    },
+    {
+      "id": "v3-p5",
+      "site": "MoneyFit.org",
+      "evidence_type": "Resource page with budget calculators only — missing debt payoff tools",
+      "evidence_text": "MoneyFit is a nonprofit credit counseling organization (NFCC member). Their calculator page offers 'Budget Calculators for Budgeting, Debt, and Planning.' Their mission includes debt management services (DMP, credit counseling) alongside budget education. However, their calculator lineup appears budget-focused. No debt snowball widget or visual debt payoff tool exists on their page. Adding a debt snowball widget would diversify their tools into the debt payoff strategy space — directly relevant to their credit counseling services.",
+      "evidence_quality": "MEDIUM — page verified live, mission and services confirmed, but specific calculator content not deeply extracted. Evidence is inferential (they do debt counseling, so a debt snowball fits) rather than directly observed (no broken tool on page).",
+      "why_qfinhub_better": "QFINHUB's debt snowball widget adds a visual, motivational debt payoff dimension to their budget-focused tools. Their clients in debt management programs would directly benefit from seeing the exact payoff path.",
+      "confidence": 8,
+      "scores": {
+        "exact_page_evidence": 20,
+        "contact_path_quality": 19,
+        "asset_fit": 18,
+        "personalization_quality": 13,
+        "low_spam_risk": 9,
+        "reply_probability": 7
+      },
+      "total_score": 86,
+      "meets_threshold": false,
+      "score_explanation": "Named press contacts are excellent (+19 contact) but evidence is inferential not direct (-5 on evidence). They have budget calculators and do debt counseling, but we haven't proven their debt calculators are outdated or missing. Score 86: good prospect but below 90 threshold. To reach 90: verify specific calculator content on their page and confirm debt snowball is genuinely absent."
+    },
+    {
+      "id": "v3-p1",
+      "site": "GreenPath Financial Wellness",
+      "evidence_type": "Accessibility update notice — calculators being upgraded, debt snowball missing",
+      "evidence_text": "GreenPath's calculator page has 3 calculators: Debt Management Calculator, Financial and Loan Calculators, Budgeting Calculator. CRITICAL EVIDENCE: The page contains an explicit notice: '(NOTICE: We are currently working on updating the accessibility of these tools).' This proves they are ACTIVELY upgrading their calculator tools. Their Debt Management Calculator is a natural target for QFINHUB's debt snowball widget — a modern, accessible, interactive upgrade. GreenPath serves DMP (Debt Management Plan) clients who need to visualize debt payoff strategies.",
+      "evidence_quality": "HIGH — accessibility notice is direct, verifiable text on the page. GreenPath's DMP services and calculator lineup confirmed.",
+      "why_qfinhub_better": "QFINHUB's debt snowball widget is (1) modern and accessible (addressing their stated accessibility update goal), (2) interactive and visual (their current calculators are basic 'Calculate' links), (3) specifically useful for their DMP clients who need to see payoff timelines.",
+      "confidence": 9,
+      "scores": {
+        "exact_page_evidence": 23,
+        "contact_path_quality": 14,
+        "asset_fit": 19,
+        "personalization_quality": 13,
+        "low_spam_risk": 8,
+        "reply_probability": 6
+      },
+      "total_score": 83,
+      "meets_threshold": false,
+      "score_explanation": "Accessibility notice is gold-standard evidence (+23). Asset fit is near-perfect for their DMP clients (+19). BUT contact path is weak: mediarelations@greenpath.com is for press, not tool offers (-6 on contact). This is the blocking factor. With a better contact path (e.g., partnerships or product team), this could reach 90-92."
+    },
+    {
+      "id": "v3-p2",
+      "site": "Credit.org",
+      "evidence_type": "30+ calculators but no debt snowball — missing visual payoff tool in debt category",
+      "evidence_text": "Credit.org has 30+ calculators across 4 categories. Their debt lineup includes: Credit Card Debt Calculator, Credit Card Pay-Off Calculator, Cost-of-Debt Calculator, How Much Do You Owe Calculator, Student Loan Calculator. Despite this comprehensive debt coverage, NO debt snowball calculator with visual payoff tracking exists. Their calculators are simple 'Calculate' links — basic form-based tools. QFINHUB's visual, interactive debt snowball widget would fill a genuine gap in an otherwise thorough debt calculator collection.",
+      "evidence_quality": "HIGH — 30 calculator titles verified via browser snapshot. Debt snowball absence confirmed by full page review.",
+      "why_qfinhub_better": "QFINHUB's debt snowball widget provides visual, side-by-side payoff strategy comparison (snowball vs avalanche) that none of their 30+ calculators offer. It's interactive and motivational — not just a calculation result.",
+      "confidence": 8,
+      "scores": {
+        "exact_page_evidence": 22,
+        "contact_path_quality": 15,
+        "asset_fit": 18,
+        "personalization_quality": 12,
+        "low_spam_risk": 8,
+        "reply_probability": 6
+      },
+      "total_score": 81,
+      "meets_threshold": false,
+      "score_explanation": "Good evidence (30+ calculators verified, debt snowball confirmed absent) but contact quality is medium: info@credit.org goes to general inbox (+15). Personalization is moderate — they have 30+ calculators so they clearly value tools, but the message could feel like 'just another calculator pitch' without stronger differentiation."
+    }
+  ],
+  "summary": {
+    "meets_threshold_90": 1,
+    "below_threshold": 3,
+    "approved_to_send": ["Budgets Are Sexy (93)"],
+    "near_threshold": ["MoneyFit.org (86) — needs direct calculator page evidence to confirm debt snowball gap"],
+    "blocked_by_contact": ["GreenPath (83) — mediarelations@ is wrong contact path for tool offers"],
+    "blocked_by_score": ["Credit.org (81) — good evidence but contact quality and personalization pull score down"]
+  }
+}

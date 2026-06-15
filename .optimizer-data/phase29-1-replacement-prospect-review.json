@@ -1,0 +1,22 @@
+{
+  "phase": "29.1",
+  "task": "Replacement Prospect Review",
+  "date": "2026-06-13",
+  "replacements_needed": false,
+  "explanation": "2 of 4 candidates reached >=90 threshold (Budgets Are Sexy: 93, MoneyFit.org: 90). No replacements needed. 2 sends is a valid microtest batch.",
+  "original_candidates": {
+    "budgets_are_sexy": {"score": 93, "status": "APPROVED"},
+    "moneyfit_org": {"score": 90, "status": "APPROVED"},
+    "greenpath": {"score": 83, "status": "HELD — contact path unsuitable"},
+    "credit_org": {"score": 81, "status": "HELD — below threshold"}
+  },
+  "replaced_candidates": [
+    {
+      "id": "v3-p6",
+      "site": "UW-Madison Extension",
+      "reason": "Target calculator page redirected to homepage. Contact is generic info@extension.wisc.edu. Replaced with MoneyFit.org which has named press contacts and a verified calculator page."
+    }
+  ],
+  "backup_prospects_available": ["Debt.org (score 80)", "SavingForCollege.com (score 77)", "Alliant CU (score 65)"],
+  "none_reach_90": "Backup prospects also below 90 threshold due to weak contact paths. If more qualified prospects needed, expand search to journalist platforms (HARO/Qwoted) or resource submission forms."
+}

@@ -1,0 +1,114 @@
+{
+  "report": "Phase 29.1 — Pre-Send Contact Verification + Score Upgrade Report",
+  "date": "2026-06-13",
+  "time": "21:00 EEST",
+  "executed_by": "Hermes Agent (deepseek-v4-pro)",
+  
+  "executive_summary": "4 candidates verified via browser + HTTP. 1 candidate replaced (UW Extension → MoneyFit.org). Strict >=90 scoring applied. 2 candidates qualified (Budgets Are Sexy: 93, MoneyFit.org: 90). 2 held (GreenPath: 83, Credit.org: 81). 0 sent — awaiting user approval.",
+  
+  "contact_verification_result": {
+    "file": ".optimizer-data/phase29-1-contact-verification.json",
+    "verified_contact_paths": 4,
+    "excellent": ["Budgets Are Sexy — contact form + J. Money responds to all", "MoneyFit.org — contactus@ + named press contacts (Rick Munster, Todd Christensen)"],
+    "medium": ["GreenPath — mediarelations@greenpath.com (press email, not tool offers)"],
+    "good_but_not_excellent": ["Credit.org — info@credit.org + contact form (general inbox)"],
+    "replaced": ["UW Extension — target page redirected, generic info@ contact"]
+  },
+  
+  "evidence_upgrade_result": {
+    "file": ".optimizer-data/phase29-1-evidence-upgrade.json",
+    "upgraded": 2,
+    "not_upgraded": 2,
+    "key_evidence_findings": [
+      "Budgets Are Sexy: Page teaches Assets-Liabilities net worth method, offers spreadsheet + Personal Capital + Mint.com, NO free interactive visual projector. Gap confirmed.",
+      "MoneyFit.org: Has 'Debt Repayment Calculators' section with Credit Card Debt and Debt Management calculators. NO debt snowball calculator anywhere on page ('snowball' search = FALSE). 19 calculator headings, 50 calc-related links — comprehensive but missing snowball.",
+      "GreenPath: '(NOTICE: We are currently working on updating the accessibility of these tools)' — gold-standard evidence of active tool upgrades",
+      "Credit.org: 30+ calculators verified, debt snowball absent — good evidence but contact quality caps score"
+    ]
+  },
+  
+  "score_recalculation": {
+    "file": ".optimizer-data/phase29-1-score-recalculation.json",
+    "threshold": 90,
+    "results": [
+      {"site": "Budgets Are Sexy", "score": 93, "meets": true, "breakdown": "evidence:24 contact:19 asset:19 personalization:14 spam_risk:9 reply:8"},
+      {"site": "MoneyFit.org", "score": 90, "meets": true, "breakdown": "evidence:23 contact:19 asset:18 personalization:13 spam_risk:9 reply:8"},
+      {"site": "GreenPath", "score": 83, "meets": false, "breakdown": "evidence:23 contact:14 asset:19 personalization:13 spam_risk:8 reply:6"},
+      {"site": "Credit.org", "score": 81, "meets": false, "breakdown": "evidence:22 contact:15 asset:18 personalization:12 spam_risk:8 reply:6"}
+    ]
+  },
+  
+  "final_messages": {
+    "file": ".optimizer-data/phase29-1-final-send-messages.json",
+    "qualified_count": 2,
+    "all_3_sentences": true,
+    "all_page_specific": true,
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_seo_language": true,
+    "all_value_first": true,
+    "all_low_friction_cta": true
+  },
+  
+  "send_result": {
+    "file": ".optimizer-data/phase29-1-qualified-send-log.json",
+    "status": "NOT SENT — awaiting user approval",
+    "qualified_count": 2,
+    "sent_count": 0
+  },
+  
+  "replacements": {
+    "file": ".optimizer-data/phase29-1-replacement-prospect-review.json",
+    "needed": false,
+    "replacements_made": 1,
+    "uw_extension_replaced_with": "MoneyFit.org"
+  },
+  
+  "dashboard_update": {
+    "file": ".optimizer-data/authority-offer-validation-dashboard.json",
+    "total_sent_all_time": 78,
+    "total_replies": 0,
+    "total_backlinks": 0,
+    "total_embeds": 0,
+    "total_content_clicks": 0,
+    "v3_microtest_status": "2 approved (93, 90), awaiting send approval",
+    "v2_test_batch": "5 sent Jun 12, 0 replies, deadline Jun 19",
+    "jun13_followups": "8 sent Jun 13, 0 replies, deadline Jun 26"
+  },
+  
+  "current_status": {
+    "overall": "OFF_TRACK",
+    "positives": "2 real prospects qualified at >=90 with verified contacts and evidence",
+    "negatives": "78 emails sent, 0 replies, 0 backlinks, 0 embeds, 0 content clicks"
+  },
+  
+  "compliance_confirmations": {
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_followed_link_request": true,
+    "no_paid_exchange_language": true,
+    "no_mass_outreach": true,
+    "no_placeholder_sends": true,
+    "no_google_indexing_api": true,
+    "no_blind_validate_fix": true,
+    "no_thin_tool_optimization": true
+  },
+  
+  "next_actions": [
+    "Await user approval to send 2 qualified messages",
+    "Monitor q.finhub@gmail.com for replies",
+    "Jun 15: Day 3 indexing check",
+    "Jun 19: V2 test batch reply deadline",
+    "Jun 26: Jun 13 follow-ups reply deadline",
+    "After 7 days from send: evaluate V3 microtest reply rate"
+  ],
+  
+  "success_condition_status": "PARTIAL — Phase 29.1 produced 2 real evidence-backed prospects at >=90. Sending them would complete Phase 29.1. If these 2 produce >=1 reply, Phase 29 succeeds. If 0 replies, the channel remains unvalidated and further pivot is needed.",
+  
+  "lessons_learned": [
+    "Contact path quality is the #1 score blocker. GreenPath has the best evidence (accessibility notice) but worst contact (mediarelations@). Evidence can't compensate for weak contact.",
+    "Named individuals (Rick Munster, Todd Christensen, J. Money) dramatically improve reply probability scores vs generic inboxes.",
+    "Specific page content extraction (exact calculator names, exact section names) is critical for evidence quality scoring. Generic 'has calculators' is not enough.",
+    "VPS search engine blocks prevent finding new prospects via web search. Direct URL testing and browser navigation are the only reliable methods from this IP."
+  ]
+}

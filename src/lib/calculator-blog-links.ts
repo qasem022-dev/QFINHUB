@@ -102,6 +102,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "how-inflation-affects-your-savings-and-investments", title: "How Inflation Affects Your Savings and Investments" },
     { slug: "investing-resurgent-political-risk-derails-emerging-market-rallies", title: "Political Risk Derails Emerging Market Rallies: Protect Your Investments" },
     { slug: "investing-in-lowe-s-stock-a-comprehensive-guide-for-2025", title: "Investing in Lowe's Stock: A Comprehensive Guide for 2025" },
+    { slug: "retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net", title: "Retirement Could Cost $2.5M by 2043 — Is Your Home Your Safety Net?" },
+    { slug: "20000-loan-at-8-percent-for-5-years-monthly-payment", title: "$20,000 Loan at 8%: Should You Pay Extra or Invest the Difference?" },
   ],
   "budget-planner": [
     { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },

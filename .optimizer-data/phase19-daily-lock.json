@@ -12,8 +12,8 @@
     ".optimizer-data/phase19-kpi-scoreboard.json (updated)",
     ".optimizer-data/first-click-watchlist.json (updated)"
   ],
-  "commits_created": ["pending"],
-  "deploy_status": "pending git push",
+  "commits_created": ["b90c9fa"],
+  "deploy_status": "deployed (GitHub integration auto-deploy via git push to main)",
   "next_run": "2026-06-14",
   "freeze_compliance": "RESPECTED — no outreach, no thin tool/scenario changes, no new pages"
 }

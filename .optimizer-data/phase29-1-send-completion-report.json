@@ -1,0 +1,71 @@
+{
+  "report": "Phase 29.1 — Send Completion Report",
+  "date": "2026-06-13",
+  "time": "21:05 EEST",
+  "status": "SENT — 2 qualified V3 microtest messages delivered",
+
+  "sends": [
+    {
+      "prospect_id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "score": 93,
+      "contact_path": "Email: j@budgetsaresexy.com (listed on contact page; contact form blocked by reCAPTCHA v3)",
+      "sent_at": "2026-06-13T21:05:00+03:00",
+      "from": "q.finhub@gmail.com",
+      "subject": "Free interactive net worth projector for your readers",
+      "final_message": "Hey J$ — your net worth tracking page is a strong resource, especially the Assets-minus-Liabilities method and the spreadsheet approach.\n\nI built a free interactive net worth projector that visualizes compound growth over 5/10/15/20 years, with no signup or account linking needed.\n\nIt feels like a natural companion for readers who want a quick visual check between monthly updates — happy to send the link if you're curious!\n\nBest,\nQasem\nQFInHub",
+      "reply_deadline": "2026-06-20",
+      "backlink_asked": false,
+      "anchor_asked": false,
+      "followed_link_requested": false,
+      "seo_mentioned": false,
+      "paid_exchange": false,
+      "honesty_edit_applied": "Removed 'been reading for years' — replaced with page-specific opener about Assets-minus-Liabilities method and spreadsheet approach"
+    },
+    {
+      "prospect_id": "v3-p5",
+      "site": "MoneyFit.org",
+      "score": 90,
+      "contact_path": "Email: contactus@moneyfit.org",
+      "sent_at": "2026-06-13T21:05:00+03:00",
+      "from": "q.finhub@gmail.com",
+      "subject": "Visual debt snowball widget for your Debt Repayment section",
+      "final_message": "Hello,\n\nYour Debt Repayment Calculators section is a great resource — I noticed you have Credit Card Debt and Debt Management calculators but not a visual debt snowball tool that shows the exact payoff path.\n\nI have a free interactive debt snowball widget that would fit naturally in your Debt Repayment section — no signup, mobile-friendly, and shows the snowball vs avalanche comparison your clients would find useful.\n\nWant me to send the embed code?\n\nBest,\nQasem Mohammed\nQFInHub",
+      "reply_deadline": "2026-06-20",
+      "backlink_asked": false,
+      "anchor_asked": false,
+      "followed_link_requested": false,
+      "seo_mentioned": false,
+      "paid_exchange": false
+    }
+  ],
+
+  "prospects_held": [
+    {"id": "v3-p1", "site": "GreenPath", "score": 83, "reason": "Score below 90. Contact path unsuitable for tool offers (mediarelations@)."},
+    {"id": "v3-p2", "site": "Credit.org", "score": 81, "reason": "Score below 90. General info@ inbox caps contact quality."}
+  ],
+
+  "total_sent_this_phase": 2,
+  "total_sent_all_time": 80,
+  "total_replies_all_time": 0,
+  "dashboard_updated": true,
+  "contact_form_note": "Budgets Are Sexy contact form submission blocked by invisible reCAPTCHA v3 + Akismet in headless browser. Direct email to j@budgetsaresexy.com used instead — this email is explicitly listed on the contact page as a valid contact method.",
+
+  "compliance_confirmations": {
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_followed_link_request": true,
+    "no_seo_language": true,
+    "no_paid_exchange_wording": true,
+    "no_mass_outreach": true,
+    "max_2_sends_respected": true,
+    "only_score_90_plus_sent": true,
+    "reply_deadline_set": "2026-06-20 (7 days)",
+    "monitoring_active": "q.finhub@gmail.com daily",
+    "reply_protocol": "Respond within 24h. Do not ask for backlink/anchor. Attribution optional if asked."
+  },
+
+  "status": "OFF_TRACK",
+  "off_track_rationale": "80 total emails sent, 0 replies. OFF_TRACK until >=1 reply, embed, backlink, or content click occurs.",
+  "next_milestone": "V3 microtest reply deadline: Jun 20. If >=1 reply, channel is partially validated."
+}

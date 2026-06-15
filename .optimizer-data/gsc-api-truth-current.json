@@ -1,7 +1,7 @@
 {
-  "status": "LIVE_API_OK",
-  "generated": "2026-06-13T17:45:01.648729+00:00",
-  "pulled_at": "2026-06-13T17:45:01Z",
+  "status": "STALE_TOKEN_DEAD",
+  "generated": "2026-06-15T12:20:00Z",
+  "pulled_at": null,
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "date_range": {
@@ -12,12 +12,6 @@
     "start": "2026-05-28",
     "end": "2026-06-03"
   },
-  "dimensions_pulled": [
-    "page",
-    "query",
-    "query+page"
-  ],
-  "row_limits": 500,
   "metrics_7d": {
     "impressions": 411,
     "clicks": 0,
@@ -47,18 +41,22 @@
     "impressions_pct": -7.8
   },
   "freshness_proof": {
-    "freshness": "FRESH",
+    "freshness": "STALE_TOKEN_DEAD",
     "checksum": "897a26fe5ee4",
-    "previous_checksum": null,
+    "previous_checksum": "897a26fe5ee4",
     "date_range_advanced": false,
-    "cache_used": false,
-    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+    "cache_used": true,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json",
+    "token_error": "invalid_grant — Token has been expired or revoked. HTTP 400 from oauth2.googleapis.com/token"
   },
   "manual_ui_comparison": {
     "available": true,
     "last_check": "2026-06-07 (Qasem)",
-    "note": "FYI ONLY \u2014 NOT used in official KPIs"
+    "note": "FYI ONLY — NOT used in official KPIs"
   },
   "data_source_policy": "RAW_GSC_API_ONLY",
-  "correction_factor": "DISABLED \u2014 not applied to official metrics per Phase 19.2 normalization"
+  "correction_factor": "DISABLED — not applied to official metrics per Phase 19.2 normalization",
+  "token_recovery_required": true,
+  "token_recovery_method": "Desktop OAuth OOB flow via scripts/desktop-oauth-refresh.py",
+  "token_recovery_doc": "references/gsc-token-death-recovery.md"
 }

@@ -1,0 +1,88 @@
+{
+  "phase": "29",
+  "date": "2026-06-13",
+  "status": "HOLD — do not send until all pre-send checks pass and Auditor re-approves",
+  "selected_prospects": [
+    {
+      "rank": 1,
+      "id": "v3-p12",
+      "channel": "D — Contact-Form Custom Example",
+      "site": "Budgets Are Sexy (J. Money)",
+      "target_page": "https://budgetsaresexy.com/net-worth/",
+      "contact": "https://budgetsaresexy.com/contact/",
+      "asset": "Net Worth Projector (adapted Retirement Planning Calculator)",
+      "message": "Hey J$ — been reading for years and your net worth tracking page is epic. I built a free interactive net worth projector that visualizes compound growth trajectories over time — feels like a natural companion to your spreadsheet for readers who want a quick visual check between monthly updates. Happy to send the link if you're curious!",
+      "score": 87,
+      "pre_send_checks": [
+        "Verify contact form still active (navigate to budgetsaresexy.com/contact/)",
+        "Confirm net worth page URL still valid",
+        "Test form message fits within 2000 char limit (current: ~340 chars — PASS)",
+        "Do not mention backlink, anchor text, or SEO"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "v3-p1",
+      "channel": "A — Broken/Outdated Calculator Replacement",
+      "site": "GreenPath Financial Wellness",
+      "target_page": "https://www.greenpath.com/financial-wellness/calculators/",
+      "contact": "https://www.greenpath.com/contact-us/",
+      "asset": "Debt Snowball Widget",
+      "message": "I noticed your financial wellness page offers calculators for debt management and budgeting. I have a free interactive debt snowball widget that visualizes payoff strategies for each client — would be a great addition for your DMP participants. No signup needed — want me to send the embed code?",
+      "score": 85,
+      "pre_send_checks": [
+        "Verify greenpath.com/contact-us/ page loads",
+        "Mention DMP (Debt Management Plan) relevance in follow-up",
+        "No backlink ask"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "v3-p2",
+      "channel": "A — Broken/Outdated Calculator Replacement",
+      "site": "Credit.org",
+      "target_page": "https://www.credit.org/calculators/",
+      "contact": "https://www.credit.org/contact/",
+      "asset": "Debt Snowball Widget",
+      "message": "Your calculator page covers a lot of ground — I built a free interactive debt snowball widget that makes the payoff journey visual, which might resonate better than a static form for your audience. No signup, mobile-friendly. Interested in the embed code?",
+      "score": 82,
+      "pre_send_checks": [
+        "Verify credit.org/contact/ page loads",
+        "Emphasize visual debt payoff over static forms",
+        "No backlink ask"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "v3-p6",
+      "channel": "A — Broken/Outdated Calculator Replacement",
+      "site": "UW-Madison Extension",
+      "target_page": "https://fyi.extension.wisc.edu/familyfinances/calculators/",
+      "contact": "info@extension.wisc.edu",
+      "asset": "Retirement Planning Calculator",
+      "message": "Your family finances resource page is a valuable community tool. I have two free interactive calculators for retirement planning and investment returns — mobile-friendly, no signup — that might complement your existing tools. Interested?",
+      "score": 79,
+      "pre_send_checks": [
+        "Test info@extension.wisc.edu deliverability (send test ping first)",
+        "Identify specific contact person if possible before sending",
+        "Retirement and investment calculators match their family finances focus"
+      ]
+    }
+  ],
+  "mix_verification": {
+    "broken_outdated_replacement": 3,
+    "resource_page": 0,
+    "roundup_custom": 0,
+    "contact_form_custom": 1,
+    "note": "Mix is heavy on broken/outdated + 1 contact form. No resource page or roundup in top 4 — those prospects scored lower (Motley Fool rejected, SavingForCollege held on weak contact). Best available mix given scores."
+  },
+  "do_not_send_without": [
+    "Re-running pre-send checks on all 4 prospects",
+    "Auditor re-approval with updated scores",
+    "Verified contact paths working"
+  ],
+  "no_backlink_ask": true,
+  "no_anchor_ask": true,
+  "no_mass_outreach": true,
+  "max_4_sends": true
+}

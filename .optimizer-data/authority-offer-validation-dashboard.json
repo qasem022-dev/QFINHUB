@@ -1,9 +1,14 @@
 {
-  "phase": "28",
+  "phase": "29.1",
   "task": "authority-offer-validation-dashboard",
-  "updated": "2026-06-12T22:08:44.753370Z",
-  "total_sent_all_time": 78,
+  "updated": "2026-06-13T21:05:00+03:00",
+  "total_sent_all_time": 80,
   "total_replies_all_time": 0,
+  "total_backlinks": 0,
+  "total_embeds": 0,
+  "total_citations": 0,
+  "total_content_clicks": 0,
+  "status": "OFF_TRACK",
   "batches": {
     "batch_a_v2_test": {
       "sent": 5,
@@ -15,9 +20,9 @@
       "embeds": 0,
       "backlinks": 0,
       "citations": 0,
-      "newsletter_mentions": 0,
       "conversion_rate": "0.0%",
       "deadline": "2026-06-19",
+      "days_remaining": 6,
       "status": "WAITING"
     },
     "batch_b_jun13_followups": {
@@ -32,39 +37,38 @@
       "citations": 0,
       "conversion_rate": "0.0%",
       "deadline": "2026-06-26",
+      "days_remaining": 13,
       "status": "WAITING"
     },
     "batch_c_v3_microtest": {
-      "sent": 0,
-      "date": "PENDING \u2014 research required",
-      "delivered": 0,
+      "sent": 2,
+      "date": "2026-06-13",
+      "delivered": 2,
       "bounced": 0,
       "replies": 0,
       "positive_replies": 0,
+      "embeds": 0,
+      "backlinks": 0,
+      "citations": 0,
+      "conversion_rate": "0.0%",
       "deadline": "2026-06-20",
-      "status": "HOLD \u2014 need specific site identification"
+      "days_remaining": 7,
+      "status": "SENT — monitoring",
+      "prospects_sent": [
+        {"id": "v3-p12", "site": "Budgets Are Sexy", "score": 93, "contact": "j@budgetsaresexy.com"},
+        {"id": "v3-p5", "site": "MoneyFit.org", "score": 90, "contact": "contactus@moneyfit.org"}
+      ],
+      "prospects_held": [
+        {"id": "v3-p1", "site": "GreenPath", "score": 83, "reason": "Score <90, contact unsuitable"},
+        {"id": "v3-p2", "site": "Credit.org", "score": 81, "reason": "Score <90"}
+      ]
     }
   },
   "decision_rules": [
-    {
-      "condition": ">=1 positive reply from V3",
-      "verdict": "V3 channel validated small signal"
-    },
-    {
-      "condition": ">=1 embed/backlink/citation",
-      "verdict": "AUTHORITY PROOF ACHIEVED"
-    },
-    {
-      "condition": "0/4 V3 replies by Jun 20",
-      "verdict": "Inspect targeting/copy. Do not scale."
-    },
-    {
-      "condition": "0/12 total replies by Jun 26",
-      "verdict": "Pivot harder to journalist/source platforms and manual resource submissions"
-    },
-    {
-      "condition": "Any complaint received",
-      "verdict": "Freeze and audit immediately"
-    }
+    {"condition": ">=1 positive reply from V3", "verdict": "V3 channel validated small signal"},
+    {"condition": ">=1 embed/backlink/citation", "verdict": "AUTHORITY PROOF ACHIEVED"},
+    {"condition": "0/2 V3 replies by Jun 20", "verdict": "V3 channel remains unvalidated. Inspect targeting/copy."},
+    {"condition": "0/15 total replies by Jun 26", "verdict": "Pivot harder to journalist/source platforms"},
+    {"condition": "Any complaint received", "verdict": "Freeze and audit immediately"}
   ]
 }

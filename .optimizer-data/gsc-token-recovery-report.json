@@ -1,93 +1,41 @@
 {
-  "title": "GSC Token Recovery Report \u2014 Phase 16.11",
-  "generated": "2026-06-06T23:58:21Z",
-  "status": "GSC_AUTH_BLOCKED",
-  "token_file": "~/.hermes/google-indexing-token.json",
-  "token_contents": {
-    "has_client_id": true,
-    "has_client_secret": true,
-    "has_refresh_token": true,
-    "refresh_token_length": 103,
-    "scopes": "analytics.readonly, indexing, webmasters",
-    "last_known_working": "2026-06-06 (previous access_token expired naturally)"
-  },
-  "refresh_attempts": {
-    "phase_16_10_attempt": "2026-06-07 ~02:30 UTC \u2014 HTTP 400: invalid_grant",
-    "phase_16_11_attempt": "2026-06-06T23:58:21Z \u2014 HTTP 400: invalid_grant (confirmed)",
-    "error_body": "{\"error\": \"invalid_grant\", \"error_description\": \"Token has been expired or revoked.\"}",
-    "root_cause": "Google OAuth refresh_token has been EXPIRED or REVOKED. This is a permanent state \u2014 the refresh token is dead. No automated recovery possible.",
-    "why_not_recoverable": "The refresh_token is the permanent credential used to obtain new access_tokens. When it expires (Google revokes refresh tokens after 6 months of non-use, or if user revokes app access), the OAuth grant is severed. No amount of retrying with client_id/secret will revive it \u2014 a new authorization code must be exchanged for a new refresh_token."
+  "incident": "GSC_TOKEN_DEATH",
+  "detected": "2026-06-15T12:20:00Z",
+  "last_successful_pull": "2026-06-13T17:45:01Z",
+  "error": {
+    "endpoint": "https://oauth2.googleapis.com/token",
+    "http_code": 400,
+    "error_type": "invalid_grant",
+    "error_description": "Token has been expired or revoked.",
+    "cause": "Likely: GCP project is in 'testing' publishing status (refresh tokens expire every 7 days). OR: token was manually revoked. Last re-auth was ~Jun 7 (8 days ago)."
   },
   "impact": {
-    "gsc_search_analytics": "BLOCKED \u2014 cannot pull impressions, clicks, CTR, position data",
-    "gsc_url_inspection": "LIKELY BLOCKED \u2014 requires valid access_token",
-    "first_click_detection": "BLIND \u2014 cannot detect first click without live GSC data",
-    "ctr_fix_monitoring": "BLIND \u2014 cannot verify if CTR fixes are working",
-    "data_quality": "STALE \u2014 all GSC reports frozen at Jun 6 cached baseline (311 imp, 0 clicks)"
+    "gsc_data_freshness": "STALE — cannot pull fresh Search Analytics, URL Inspection, or sitemap data",
+    "first_click_detection": "BLIND — no way to detect first clicks without manual GSC UI check",
+    "ranking_monitoring": "BLIND — last data from Jun 4-10 window",
+    "pipeline_scripts_affected": [
+      "scripts/gsc-daily-pipeline.py",
+      "scripts/gsc-search-analytics-pull.py",
+      "scripts/gsc-inspect-batches.py",
+      "scripts/refresh-gsc-token.py"
+    ]
   },
-  "qaesem_recovery_steps": [
-    {
-      "step": 1,
-      "action": "Open Google OAuth 2.0 Playground",
-      "url": "https://developers.google.com/oauthplayground",
-      "note": "Use the same Google account that owns the GSC property (qfinhub.com)"
-    },
-    {
-      "step": 2,
-      "action": "Click the gear icon (\u2699\ufe0f) \u2192 'Use your own OAuth credentials'",
-      "note": "Enter Client ID and Client Secret from ~/.hermes/google-indexing-token.json"
-    },
-    {
-      "step": 3,
-      "action": "Step 1: Select & authorize APIs",
-      "scopes": [
-        "https://www.googleapis.com/auth/webmasters",
-        "https://www.googleapis.com/auth/indexing",
-        "https://www.googleapis.com/auth/analytics.readonly"
-      ],
-      "note": "Enter these scopes one per line in the input field, then click 'Authorize APIs'"
-    },
-    {
-      "step": 4,
-      "action": "Complete Google sign-in. Grant permissions. You'll be redirected back with an authorization code."
-    },
-    {
-      "step": 5,
-      "action": "Step 2: Exchange authorization code for tokens",
-      "note": "Click 'Exchange authorization code for tokens'. You'll get a new access_token AND refresh_token."
-    },
-    {
-      "step": 6,
-      "action": "Copy the NEW refresh_token from the response",
-      "note": "Look for '\"refresh_token\": \"1//...\"' in the response. This is the NEW permanent credential."
-    },
-    {
-      "step": 7,
-      "action": "Update ~/.hermes/google-indexing-token.json with the new refresh_token",
-      "command": "nano ~/.hermes/google-indexing-token.json",
-      "note": "Replace the 'refresh_token' value with the new one. Keep everything else."
-    },
-    {
-      "step": 8,
-      "action": "Verify token refresh works",
-      "command": "cd /home/admin1/qfinhub && python3 scripts/refresh-gsc-token.py",
-      "expected": "Token refreshed OK"
-    },
-    {
-      "step": 9,
-      "action": "Verify GSC data pull works",
-      "command": "cd /home/admin1/qfinhub && python3 scripts/gsc-search-analytics-pull.py",
-      "expected": "Query and Page data pulled successfully"
-    }
+  "recovery_steps_for_qasem": [
+    "1. python3 scripts/desktop-oauth-refresh.py  (prints auth URL)",
+    "2. Open the URL in Windows browser (Chrome with QFINHUB Google account logged in)",
+    "3. Google shows an authorization code — copy it",
+    "4. python3 scripts/desktop-oauth-refresh.py '<PASTE_CODE_HERE>'",
+    "5. Script exchanges code for tokens, saves to ~/.hermes/google-indexing-token.json",
+    "6. Verify: python3 scripts/refresh-gsc-token.py",
+    "7. If GCP project is in testing mode → go to GCP Console → OAuth consent screen → Publish App",
+    "8. After publishing, re-auth one more time for indefinite-lifetime refresh token"
   ],
-  "alternate_recovery": "If OAuth Playground doesn't work, create new OAuth credentials at https://console.cloud.google.com/apis/credentials \u2192 Create OAuth client ID \u2192 Desktop app type \u2192 use in Playground.",
-  "while_blocked": {
-    "gsc_data_status": "STALE \u2014 Jun 6 cached baseline (311 imp, 0 clicks, avg pos 19.3)",
-    "first_click_detection": "RELY ON QASEM MANUAL GSC UI CHECKS",
-    "reporting": "ALL reports must show GSC_DATA_STATUS = STALE_OR_AUTH_BLOCKED",
-    "ctr_fixes": "Continue applying to code, CANNOT verify impact until token fixed",
-    "page_2_push": "Continue executing \u2014 internal links don't require GSC data",
-    "outreach": "Continue sending \u2014 outreach doesn't require GSC data",
-    "linkable_assets": "Continue building \u2014 code deployment doesn't require GSC data"
+  "docs": "references/gsc-token-death-recovery.md",
+  "cached_baseline_available": true,
+  "cached_baseline": {
+    "impressions": 411,
+    "clicks": 0,
+    "pages_with_impressions": 46,
+    "avg_position": 37.3
   }
 }

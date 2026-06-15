@@ -1,0 +1,53 @@
+{
+  "phase": "29.1",
+  "task": "Final Send Messages",
+  "date": "2026-06-13",
+  "status": "NOT SENT YET — awaiting user send approval",
+  "rules": {
+    "max_sentences": 3,
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_followed_link": true,
+    "no_seo_language": true,
+    "no_pressure": true,
+    "no_fake_praise": true,
+    "no_paid_exchange": true,
+    "value_first": true,
+    "low_friction_cta": true,
+    "attribution_optional": true
+  },
+  "qualified_messages": [
+    {
+      "prospect_id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "score": 93,
+      "channel": "Contact form (budgetsaresexy.com/contact/)",
+      "target_page": "https://budgetsaresexy.com/net-worth/",
+      "message": "Hey J$ — been reading for years and your net worth tracking page is epic. I noticed you teach the Assets-minus-Liabilities method and offer your spreadsheet plus Personal Capital — I built a free interactive net worth projector that visualizes compound growth over 5/10/15/20 years, no signup or account linking needed. Feels like a natural companion for readers who want a quick visual check between monthly updates — happy to send the link if you're curious!",
+      "char_count": 450,
+      "fits_2000_char_limit": true,
+      "sentence_count": 3,
+      "references_exact_page_content": true,
+      "references_his_method": "Assets-minus-Liabilities",
+      "references_his_tools": "spreadsheet plus Personal Capital",
+      "value_proposition": "free interactive visual projector — no signup, no account linking — quick check between manual monthly updates",
+      "cta": "happy to send the link if you're curious"
+    },
+    {
+      "prospect_id": "v3-p5",
+      "site": "MoneyFit.org",
+      "score": 90,
+      "channel": "Email (contactus@moneyfit.org) — cc Rick Munster or Todd Christensen",
+      "target_page": "https://www.moneyfit.org/calculators/",
+      "message": "Your Debt Repayment Calculators section is a great resource — I noticed you have Credit Card Debt and Debt Management calculators but not a visual debt snowball tool that shows the exact payoff path. I have a free interactive debt snowball widget that would fit naturally in your Debt Repayment section — no signup, mobile-friendly, and shows the snowball vs avalanche comparison your clients would find useful. Want me to send the embed code?",
+      "char_count": 449,
+      "sentence_count": 3,
+      "references_exact_page_content": true,
+      "references_specific_section": "Debt Repayment Calculators section",
+      "references_specific_calculators": "Credit Card Debt and Debt Management calculators",
+      "gap_identified": "no visual debt snowball tool — snowball vs avalanche comparison",
+      "value_proposition": "free interactive widget — shows exact payoff path, snowball vs avalanche comparison",
+      "cta": "Want me to send the embed code?"
+    }
+  ]
+}

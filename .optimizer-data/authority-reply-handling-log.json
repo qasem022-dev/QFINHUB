@@ -1,44 +1,20 @@
 {
-  "phase": "28",
+  "phase": "29.1",
   "task": "authority-reply-handling-log",
-  "updated": "2026-06-12T22:08:44.753370Z",
-  "monitoring": "Check q.finhub@gmail.com daily for replies",
-  "replies_received": 0,
-  "reply_rules": {
-    "classification": [
-      "positive",
-      "neutral",
-      "question",
-      "negative",
-      "unsubscribe/no",
-      "bounce/auto-reply"
-    ],
-    "response_time": "Within 24 hours",
-    "tone": "Helpful, short, no pressure",
-    "embed_code": "Provide only if relevant to their question",
-    "customization": "Offer if they show interest",
-    "backlink_pressure": "NEVER",
-    "anchor_request": "NEVER",
-    "followed_link_request": "NEVER",
-    "if_they_embed": "Thank them. Do not ask for dofollow.",
-    "if_they_ask_attribution": "Attribution is optional. Nofollow is fine. QFINHUB is free with no strings."
+  "updated": "2026-06-13T21:05:00+03:00",
+  "monitoring_active": true,
+  "monitored_inboxes": ["q.finhub@gmail.com"],
+  "batches_under_monitoring": [
+    {"batch": "V2 Test (5 emails)", "sent_date": "2026-06-12", "deadline": "2026-06-19", "replies": 0, "status": "daily check active"},
+    {"batch": "Jun 13 Follow-ups (8 emails)", "sent_date": "2026-06-13", "deadline": "2026-06-26", "replies": 0, "status": "daily check active"},
+    {"batch": "V3 Microtest (2 emails)", "sent_date": "2026-06-13", "deadline": "2026-06-20", "replies": 0, "status": "daily check active — SENT TODAY"}
+  ],
+  "reply_protocol": {
+    "positive_reply": "Thank sender, provide asset, do NOT ask for backlink/anchor",
+    "negative_reply": "Acknowledge, don't argue, log reason",
+    "question": "Answer honestly, keep brief, no upselling",
+    "complaint": "Apologize, remove any link if asked, freeze channel",
+    "no_reply_by_deadline": "Archive batch, analyze failure pattern"
   },
-  "active_batches": {
-    "batch_a_v2_test": {
-      "sent": 5,
-      "date": "2026-06-12",
-      "replies": 0
-    },
-    "batch_b_jun13_followups": {
-      "sent": 8,
-      "date": "2026-06-13",
-      "replies": 0
-    },
-    "batch_c_v3_microtest": {
-      "sent": 0,
-      "date": "pending research",
-      "replies": 0
-    }
-  },
-  "replies": []
+  "last_inbox_check": "2026-06-13T21:05:00+03:00 (post-V3 send)"
 }

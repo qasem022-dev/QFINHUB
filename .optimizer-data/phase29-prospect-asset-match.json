@@ -1,0 +1,120 @@
+{
+  "phase": "29",
+  "date": "2026-06-13",
+  "assets": [
+    "debt snowball widget",
+    "mortgage affordability widget",
+    "simple interest calculator",
+    "capital gains tax calculator",
+    "retirement planning calculator",
+    "investment return calculator",
+    "loan calculator",
+    "mortgage calculator"
+  ],
+  "prospect_asset_matches": [
+    {
+      "prospect_id": "v3-p1",
+      "site": "GreenPath Financial Wellness",
+      "asset": "debt-snowball-widget",
+      "why": "GreenPath provides DMP services. Debt snowball widget shows exact payoff order, interest savings, and timeline — directly relevant to their core debt management counseling.",
+      "embed_needed": true,
+      "link_better": false,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p2",
+      "site": "Credit.org",
+      "asset": "debt-snowball-widget",
+      "why": "30+ calculator titles but all appear to be basic static forms. Debt snowball widget with visual payoff tracking is a genuine upgrade for their debt-stressed audience.",
+      "embed_needed": true,
+      "link_better": false,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p3",
+      "site": "Debt.org",
+      "asset": "debt-snowball-widget",
+      "why": "Debt-focused site needs a visual 'snowball vs avalanche' comparison tool. Complements their debt consolidation articles with actionable decision support.",
+      "embed_needed": true,
+      "link_better": false,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p4",
+      "site": "Alliant Credit Union",
+      "asset": "mortgage-calculator",
+      "why": "Credit union members use mortgage calculators during home buying. QFINHUB's interactive version with visual amortization is a member experience upgrade.",
+      "embed_needed": false,
+      "link_better": true,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p5",
+      "site": "MoneyFit.org",
+      "asset": "simple-interest-calculator",
+      "why": "Budget planning audience needs savings projections. Simple interest calculator shows 'what if I save X?' scenarios — natural companion to their budgeting tools.",
+      "embed_needed": true,
+      "link_better": false,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p6",
+      "site": "UW-Madison Extension",
+      "asset": "retirement-planning-calculator",
+      "why": "University extension serves families planning for retirement. Interactive calculator with visual projections fits their educational mission better than static forms.",
+      "embed_needed": true,
+      "link_better": false,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p7",
+      "site": "Motley Fool",
+      "asset": "capital-gains-tax-calculator",
+      "why": "Investor audience actively manages capital gains. This calculator fills a gap in their 'Foolish Calculators' collection — they have loans, retirement, mortgages, but no capital gains tax tool.",
+      "embed_needed": false,
+      "link_better": true,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p8",
+      "site": "SavingForCollege.com",
+      "asset": "investment-return-calculator",
+      "why": "Parents saving for college also invest for retirement. This calculator complements their 529 tools — 'save for college AND retirement' is the natural cross-sell.",
+      "embed_needed": false,
+      "link_better": true,
+      "custom_example_needed": false,
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    },
+    {
+      "prospect_id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "asset": "retirement-planning-calculator",
+      "why": "Adapted as 'Net Worth Projector' — readers input assets/liabilities, see compound growth trajectory. Complements J. Money's spreadsheet with a visual snapshot between monthly updates. No login, instant results.",
+      "embed_needed": true,
+      "link_better": false,
+      "custom_example_needed": true,
+      "custom_example_idea": "Net Worth Projector: input current assets/liabilities → see compound growth trajectory over 5/10/15/20 years with dynamic chart. Complements his spreadsheet template with quick visual checks.",
+      "attribution_optional": true,
+      "nofollow_mention": "Only if asked"
+    }
+  ],
+  "no_backlink_ask": true,
+  "no_anchor_ask": true,
+  "no_followed_link_requirement": true,
+  "attribution_always_optional": true
+}

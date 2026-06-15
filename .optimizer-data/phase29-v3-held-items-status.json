@@ -1,0 +1,61 @@
+{
+  "report": "Phase 29 V3 Held Items Status Confirmation",
+  "date": "2026-06-13",
+  "decision": "ALL 4 HELD — no sends until real targets verified",
+  "items": [
+    {
+      "id": "v3-held-1",
+      "channel": "Library broken links",
+      "status": "HOLD",
+      "reason": "Needs exact library page + broken calculator/tool link + contact path",
+      "requirements_not_met": [
+        "No specific library identified",
+        "No broken link evidence on target page",
+        "No contact person/path",
+        "No QFINHUB asset mapped to the specific broken tool"
+      ],
+      "unblock_conditions": "Find real library page with broken financial calculator link, identify contact, match QFINHUB replacement asset"
+    },
+    {
+      "id": "v3-held-2",
+      "channel": "RE agent broken widget",
+      "status": "HOLD",
+      "reason": "Needs exact real estate agent/site page + broken/mobile-broken widget evidence + contact path",
+      "requirements_not_met": [
+        "No specific real estate agent or site identified",
+        "No broken widget evidence (screenshot or URL)",
+        "No contact person/path",
+        "No QFINHUB embed asset matched to the broken widget context"
+      ],
+      "unblock_conditions": "Find real estate site with broken calculator widget, capture evidence, identify contact, match QFINHUB embed asset"
+    },
+    {
+      "id": "v3-held-3",
+      "channel": "Nonprofit credit counseling",
+      "status": "HOLD",
+      "reason": "Needs exact nonprofit page + static/outdated tool/table + contact path",
+      "requirements_not_met": [
+        "No specific nonprofit identified",
+        "No evidence of static/outdated tool or table",
+        "No contact person/path",
+        "No QFINHUB asset mapped"
+      ],
+      "unblock_conditions": "Find nonprofit with outdated credit/debt tool, capture evidence, identify contact, match QFINHUB replacement"
+    },
+    {
+      "id": "v3-held-4",
+      "channel": "Mad Fientist",
+      "status": "HOLD",
+      "reason": "Contact form only; needs form suitability check and final value-first form message",
+      "requirements_not_met": [
+        "Contact form not yet tested for suitability (character limits, spam filters, field requirements)",
+        "No finalized value-first message drafted",
+        "No specific Mad Fientist page identified where QFINHUB asset adds value"
+      ],
+      "unblock_conditions": "Check Mad Fientist contact form constraints, identify target page/asset match, draft form-suitable message, verify form still active"
+    }
+  ],
+  "no_placeholder_sends": true,
+  "no_generic_categories": true,
+  "all_require_real_evidence": true
+}

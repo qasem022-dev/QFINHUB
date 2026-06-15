@@ -1,0 +1,22 @@
+{
+  "phase": "29.1",
+  "date": "2026-06-14",
+  "time": "00:03:03 ",
+  "reply_deadline": "2026-06-21",
+  "sends": [
+    {
+      "prospect_id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "to": "j@budgetsaresexy.com",
+      "status": "SENT",
+      "sent_at": "2026-06-14T00:03:01.294869"
+    },
+    {
+      "prospect_id": "v3-p5",
+      "site": "MoneyFit.org",
+      "to": "contactus@moneyfit.org",
+      "status": "SENT",
+      "sent_at": "2026-06-14T00:03:03.378342"
+    }
+  ]
+}

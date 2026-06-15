@@ -1,0 +1,65 @@
+{
+  "phase": "29",
+  "date": "2026-06-13",
+  "message_rules": {
+    "max_sentences": 3,
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_followed_link_request": true,
+    "no_seo_language": true,
+    "no_pressure": true,
+    "no_fake_flattery": true,
+    "clear_value": true,
+    "low_friction_cta": true,
+    "mention_optional_embed_only_if_relevant": true,
+    "mention_no_signup_only_if_true": true
+  },
+  "messages": [
+    {
+      "prospect_id": "v3-p12",
+      "site": "Budgets Are Sexy",
+      "channel": "Contact Form",
+      "status": "READY — pre-send checks pending",
+      "message": "Hey J$ — been reading for years and your net worth tracking page is epic. I built a free interactive net worth projector that visualizes compound growth trajectories over time — feels like a natural companion to your spreadsheet for readers who want a quick visual check between monthly updates. Happy to send the link if you're curious!",
+      "char_count": 339,
+      "mentions_embed": false,
+      "mentions_no_signup": false,
+      "mentions_no_personal_data": false
+    },
+    {
+      "prospect_id": "v3-p1",
+      "site": "GreenPath Financial Wellness",
+      "channel": "Email/Contact Form",
+      "status": "READY — pre-send checks pending",
+      "message": "I noticed your financial wellness page offers calculators for debt management and budgeting. I have a free interactive debt snowball widget that visualizes payoff strategies for each client — would be a great addition for your DMP participants. No signup needed — want me to send the embed code?",
+      "char_count": 314,
+      "mentions_embed": true,
+      "mentions_no_signup": true,
+      "mentions_no_personal_data": false
+    },
+    {
+      "prospect_id": "v3-p2",
+      "site": "Credit.org",
+      "channel": "Email/Contact Form",
+      "status": "READY — pre-send checks pending",
+      "message": "Your calculator page covers a lot of ground — I built a free interactive debt snowball widget that makes the payoff journey visual, which might resonate better than a static form for your audience. No signup, mobile-friendly. Interested in the embed code?",
+      "char_count": 255,
+      "mentions_embed": true,
+      "mentions_no_signup": true,
+      "mentions_no_personal_data": false
+    },
+    {
+      "prospect_id": "v3-p6",
+      "site": "UW-Madison Extension",
+      "channel": "Email",
+      "status": "READY — pre-send checks pending",
+      "message": "Your family finances resource page is a valuable community tool. I have two free interactive calculators for retirement planning and investment returns — mobile-friendly, no signup — that might complement your existing tools. Interested?",
+      "char_count": 246,
+      "mentions_embed": false,
+      "mentions_no_signup": true,
+      "mentions_no_personal_data": false
+    }
+  ],
+  "do_not_send_yet": true,
+  "next_step": "Complete pre-send checks on all 4 contact paths, then Auditor re-approves before sending"
+}

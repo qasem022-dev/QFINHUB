@@ -1,30 +1,33 @@
 {
-  "source": "GSC_API_RAW \u2014 CORRECTION DISABLED PER PHASE 19.2",
-  "generated": "2026-06-13T17:45:01Z",
-  "date_range": {
-    "start": "2026-06-04",
-    "end": "2026-06-10"
-  },
-  "checksum": "897a26fe5ee4",
-  "api_raw": {
-    "impressions": 411,
-    "clicks": 0,
-    "pages_with_impressions": 46,
-    "avg_position": 37.3,
-    "query_level_impressions": 206
-  },
-  "correction": {
-    "factor_impressions": 1.434,
-    "factor_position": 0.886,
+  "source": "GSC_API_STALE — TOKEN DEAD",
+  "generated": "2026-06-15T12:20:00Z",
+  "pipeline_status": "FAILED",
+  "failure_reason": "OAuth refresh token expired/revoked (invalid_grant). Token refresh returned HTTP 400: 'Token has been expired or revoked.'",
+  "last_successful_pull": "2026-06-13T17:45:01Z",
+  "cached_data_as_of_last_pull": {
+    "date_range": {
+      "start": "2026-06-04",
+      "end": "2026-06-10"
+    },
+    "api_raw": {
+      "impressions": 411,
+      "clicks": 0,
+      "pages_with_impressions": 46,
+      "avg_position": 37.3,
+      "query_level_impressions": 206
+    },
+    "correction_factor_impressions": 1.434,
+    "correction_factor_position": 0.886,
     "last_calibrated": "2026-06-07",
-    "calibration_source": "Qasem manual GSC UI check \u2014 Jun 7, 2026",
-    "applied_to_official_kpi": false,
-    "note": "Correction factor is DOCUMENTATION ONLY. Not applied to official metrics per Phase 19.2."
+    "corrected_estimate_fyi": {
+      "impressions": 589,
+      "clicks": 0,
+      "avg_position": 33.0
+    }
   },
-  "corrected_estimate_fyi": {
-    "impressions": 589,
-    "clicks": 0,
-    "avg_position": 33.0,
-    "note": "FYI ONLY \u2014 NOT official. Correction factor from last manual UI check."
-  }
+  "data_age_hours": "~43 hours stale (last pull Jun 13 17:45 UTC → now Jun 15 ~12:20 UTC)",
+  "gsc_data_status": "STALE_TOKEN_DEAD",
+  "recovery_required": "Qasem must re-authenticate via Desktop OAuth flow. Run: python3 scripts/desktop-oauth-refresh.py (get auth URL → open in Windows browser → Google shows code → run: python3 scripts/desktop-oauth-refresh.py '<CODE>')",
+  "recovery_doc": "references/gsc-token-death-recovery.md",
+  "note": "ALL data below this line is CACHED from the last successful pull. No fresh API data is available."
 }
