@@ -1,0 +1,118 @@
+{
+  "phase": "31.2",
+  "title": "Quality Indexation Map \u2014 Full URL Classification",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:25:47.441824",
+  "total_known_urls": "~3,800+ (including all tools, scenarios, geo, etc.)",
+  "classes": {
+    "A_MONEY_CORE": {
+      "description": "High-value pages we want indexed and ranked \u2014 the 8 primary money pages",
+      "count": 8,
+      "examples": [
+        "/calculators/mortgage-calculator",
+        "/calculators/compound-interest",
+        "/decision/pay-off-debt-or-invest"
+      ],
+      "sitemap_status": "ALL IN",
+      "internal_links": "Growing \u2014 7-12 blog links each from calculator-blog-links.ts",
+      "index_status": "ALL INDEXED (Tier 1 confirmed)",
+      "impressions": "Mixed \u2014 investment-return 47, retirement 11, tax-calc 81, most unknown at page level",
+      "action": "BOOST \u2014 add support-ring links, improve trust/UX elements, concentrate all authority here"
+    },
+    "B_SUPPORTING_REAL_PAGE": {
+      "description": "Useful guides, blogs, and decision pages that support money pages",
+      "count": "~275",
+      "breakdown": {
+        "blogs": 106,
+        "guides": 125,
+        "decisions": 15,
+        "comparisons": "~21",
+        "other_real": "~8"
+      },
+      "sitemap_status": "MOST IN (blogs/guides/decisions/comparisons)",
+      "internal_links": "Varies \u2014 some well-linked, some under-linked",
+      "index_status": "Most should be indexed (quality varies)",
+      "impressions": "Varies \u2014 top blog has 124 imp, most have <20",
+      "action": "LINK TO MONEY PAGES \u2014 add contextual links upward, improve quality of top performers"
+    },
+    "C_LINKABLE_ASSET": {
+      "description": "Widgets and data assets that can earn external citations",
+      "count": 2,
+      "examples": [
+        "/widgets/mortgage-affordability-embed",
+        "/widgets/debt-snowball-vs-avalanche-embed"
+      ],
+      "sitemap_status": "IN",
+      "internal_links": "Linked from parent calculator pages",
+      "index_status": "INDEXED",
+      "impressions": "Minimal (widget pages not search targets)",
+      "action": "MAINTAIN \u2014 keep in sitemap, promote from money pages, data assets TBD"
+    },
+    "D_INDEXED_LOW_VALUE": {
+      "description": "Indexed but weak pages with low impressions, thin content, or minimal unique value",
+      "estimated_count": "100-200",
+      "likely_sources": [
+        "thin tool variants (225 in sitemap, many may be thin)",
+        "older blog posts with no impressions",
+        "comparison pages with no demand"
+      ],
+      "sitemap_status": "PARTIALLY IN",
+      "internal_links": "Some linked from lists and navigation",
+      "index_status": "INDEXED",
+      "impressions": "0 or very low",
+      "action": "REDUCE INTERNAL LINKS \u2014 stop promoting, link upward to money pages, do not noindex yet"
+    },
+    "E_DISCOVERED_LOW_VALUE": {
+      "description": "Discovered by Google but not indexed \u2014 likely low-value or duplicate",
+      "count": 503,
+      "sitemap_status": "SOME IN (thin tools), MOST NOT",
+      "internal_links": "Varies",
+      "index_status": "DISCOVERED NOT INDEXED",
+      "impressions": "0 or near zero",
+      "action": "SAMPLE FIRST \u2014 then reduce links to D/E/F, do not promote"
+    },
+    "F_HISTORICAL_404": {
+      "description": "Old URLs Google remembers but no longer exist \u2014 not in current sitemap",
+      "count": 125,
+      "sitemap_status": "NOT IN (confirmed clean)",
+      "internal_links": "NONE (confirmed clean)",
+      "index_status": "404",
+      "impressions": "0",
+      "action": "IGNORE \u2014 will naturally decay, no action needed"
+    },
+    "G_INTENTIONAL_NOINDEX": {
+      "description": "Pages intentionally blocked from indexing",
+      "count": 205,
+      "breakdown": {
+        "geo_pages": 591,
+        "formula_tools": "~386",
+        "thin_scenarios": "~2,059"
+      },
+      "sitemap_status": "NOT IN (confirmed excluded)",
+      "internal_links": "MINIMAL",
+      "index_status": "NOINDEX",
+      "action": "KEEP \u2014 intentional and correct, verify no accidental money page noindex"
+    },
+    "H_DUPLICATE_OR_CANONICALIZED": {
+      "description": "Pages with canonical handling to parent page",
+      "count": 43,
+      "breakdown": {
+        "alternative_canonical": 41,
+        "redirect": 1,
+        "duplicate_canonical": 1
+      },
+      "sitemap_status": "NOT IN",
+      "internal_links": "MINIMAL",
+      "index_status": "VARIES",
+      "action": "KEEP \u2014 canonical working correctly, no action needed"
+    }
+  },
+  "key_insight": "QFINHUB has ~3,800+ known URLs but Google only trusts 286. The site needs to look like a focused finance calculator authority, not a broad programmatic SEO site. Concentrate everything into A/B pages, reduce promotion of D/E pages.",
+  "execution_priority": [
+    "1. BOOST A (money pages) \u2014 add support-ring links, trust elements",
+    "2. LINK B\u2192A (supporting \u2192 money) \u2014 add upward contextual links",
+    "3. REDUCE D/E \u2014 stop adding links to weak pages, link them upward",
+    "4. MAINTAIN C (widgets) \u2014 keep in sitemap",
+    "5. IGNORE F/G/H \u2014 historical/blocked, no action needed"
+  ]
+}

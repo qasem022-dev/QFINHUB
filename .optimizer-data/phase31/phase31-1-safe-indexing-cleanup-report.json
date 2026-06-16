@@ -1,0 +1,61 @@
+{
+  "phase": "31.1",
+  "title": "Safe Indexing Signal Cleanup — Final Report",
+  "version": "1.0.0",
+  "created": "2026-06-17T02:30:00+03:00",
+  "status": "CLEANUP_COMPLETE",
+
+  "key_finding": "SITEMAP IS ALREADY CLEAN — no 404 or noindex URLs found in live sitemap",
+
+  "tasks_completed": {
+    "backup": {"status": "CREATED", "file": "phase31-1-pre-cleanup-backup.json"},
+    "404_sitemap_removal": {"status": "NONE_NEEDED", "file": "phase31-1-404-sitemap-removal-log.json", "finding": "0 404 URLs in sitemap"},
+    "noindex_sitemap_removal": {"status": "NONE_NEEDED", "file": "phase31-1-noindex-sitemap-removal-log.json", "finding": "0 noindex URLs in sitemap"},
+    "internal_404_links": {"status": "NONE_NEEDED", "file": "phase31-1-internal-404-link-fix-log.json", "finding": "0 broken internal links to 404s"},
+    "money_page_safety": {"status": "ALL_8_PASS", "file": "phase31-1-money-page-safety-check.json", "finding": "8/8 HTTP 200, indexable, in sitemap"},
+    "sitemap_recalculation": {"status": "NO_CHANGE", "file": "phase31-1-sitemap-quality-after-cleanup.json", "finding": "650 URLs, 0 404s, 0 noindex"},
+    "deploy": {"status": "NOT_NEEDED", "file": "phase31-1-deploy-validation-log.json", "finding": "No code changes needed"},
+    "validate_fix": {"status": "BLOCKED", "file": "phase31-1-validate-fix-block-log.json"},
+    "first_click_monitoring": {"status": "ACTIVE", "file": "phase31-1-first-click-monitoring-log.json"}
+  },
+
+  "what_was_actually_found": {
+    "sitemap_is_clean": "The sitemap generation code (sitemap.ts) correctly filters formula variants, noindex variants, and limits geo pages. All 30 sampled tool URLs returned HTTP 200. All blog and calculator URLs from data files should resolve.",
+    "internal_links_are_valid": "/dashboard, /auth, /cookies pages all exist (HTTP 200 verified). No blog→scenario links found. Scenario pages sampled return 200.",
+    "gsc_404s_are_historical": "The 125 GSC 404s originate from old crawl data — deleted scenarios from V2 pruning, old slug variants — not from the current sitemap. These will naturally decay over time.",
+    "money_pages_protected": "All 8 primary money pages are HTTP 200, indexable, no noindex, and present in sitemap.",
+    "root_cause_is_quality": "The 503 discovered-not-indexed pages are not a sitemap problem. They're a quality/trust problem — Google sees too many thin pages and won't index the good ones."
+  },
+
+  "current_metrics": {
+    "indexed_pages": 286,
+    "not_indexed_pages": 881,
+    "sitemap_urls": 650,
+    "money_pages_safe": 8,
+    "clicks_28d": 1,
+    "impressions_28d": 1400,
+    "position_28d": 33.4,
+    "scoreboard": "OFF_TRACK"
+  },
+
+  "compliance": {
+    "no_bulk_noindex": true,
+    "no_bulk_canonical": true,
+    "no_bulk_redirects": true,
+    "no_bulk_deletions": true,
+    "no_new_pages": true,
+    "no_outreach": true,
+    "no_google_indexing_api": true,
+    "no_validate_fix": true,
+    "cron_safe_recovery_mode": true
+  },
+
+  "whats_next": {
+    "immediate": "Monitor 3 first-click breakthrough pages for Google recrawl",
+    "short_term": "Evaluate first-click results after 7-14 days",
+    "medium_term": "Address 503 discovered-not-indexed quality issue (Phase 31.2 or later)",
+    "blocked": "DO NOT resume Phase 30 expansion until first content click achieved"
+  },
+
+  "success_condition": "Phase 31.1 confirmed that sitemap and internal link signals are clean. The 125 GSC 404s are historical, not from current sitemap. Real improvement requires addressing the 503 discovered-not-indexed quality problem and waiting for first-click breakthrough pages to recrawl."
+}

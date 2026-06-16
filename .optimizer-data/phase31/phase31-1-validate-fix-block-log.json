@@ -1,0 +1,16 @@
+{
+  "phase": "31.1",
+  "title": "Validate Fix Block Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:20:32.707361",
+  "status": "DO_NOT_VALIDATE_YET",
+  "reasons": [
+    "Phase 31.1 only cleaned sitemap/internal-link signals (no sitemap changes were needed)",
+    "503 discovered-not-indexed pages not yet classified \u2014 root cause not fully addressed",
+    "125 historical 404s still present in GSC (from old crawl data, not current sitemap)",
+    "205 noindex pages verified intentional but not yet fully audited",
+    "First-click breakthrough pages not yet recrawled \u2014 no CTR data yet",
+    "Validate Fix should only be used after: all issue groups addressed, changes deployed, and specific URLs identified for validation"
+  ],
+  "when_to_validate": "After Phase 31.2 or later, when all issue groups have been addressed and specific URLs identified"
+}

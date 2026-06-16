@@ -1,0 +1,43 @@
+{
+  "phase": "31.1",
+  "title": "First Click Breakthrough Monitoring Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:20:32.707361",
+  "monitoring_start": "2026-06-17",
+  "pages": {
+    "page_1": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "current_impressions": 124,
+      "current_position": 10.9,
+      "current_clicks": 0,
+      "ctr": "0%",
+      "last_modified": "2026-06-16 (title/H2/CTA fix)",
+      "expected_recrawl_days": "3-10",
+      "next_check_date": "2026-06-20",
+      "fix_summary": "H2 changed from answer\u2192question (snippet fix), title personalized, CTA strengthened"
+    },
+    "page_2": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "current_impressions": 2,
+      "current_position": 4.0,
+      "current_clicks": 0,
+      "ctr": "0%",
+      "last_modified": "2026-06-16 (title broadened)",
+      "expected_recrawl_days": "7-21",
+      "next_check_date": "2026-06-24",
+      "fix_summary": "Title broadened from $100k-specific to 'Rent vs Buy Calculator'"
+    },
+    "page_3": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "current_impressions": 4,
+      "current_position": 7.5,
+      "current_clicks": 0,
+      "ctr": "0%",
+      "last_modified": "2026-06-16 (title improved)",
+      "expected_recrawl_days": "7-21",
+      "next_check_date": "2026-06-24",
+      "fix_summary": "Title more action-oriented + privacy signal"
+    }
+  },
+  "no_further_edits_until": "Measurement window complete or technical issue detected"
+}

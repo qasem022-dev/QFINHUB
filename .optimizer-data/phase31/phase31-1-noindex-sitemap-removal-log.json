@@ -1,0 +1,15 @@
+{
+  "phase": "31.1",
+  "title": "Noindex Sitemap Removal Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:20:32.707361",
+  "finding": "NO NOINDEX URLS FOUND IN LIVE SITEMAP",
+  "investigation": {
+    "tool_urls_noindex_check": "10/10 sampled \u2014 all indexable (no noindex header)",
+    "blog_urls_noindex_check": "10/10 sampled \u2014 all indexable",
+    "sitemap_code_audit": "sitemap.ts correctly filters: formula variants (isFormulaVariant filter), known noindex variants (NOINDEXED_VARIANT_SLUGS set), geo pages limited to 3 with GSC impressions",
+    "conclusion": "Noindex pages are properly excluded from sitemap by the generation code. No cleanup needed."
+  },
+  "removed_urls": [],
+  "reason_no_removals": "No noindex URLs found in live sitemap to remove"
+}

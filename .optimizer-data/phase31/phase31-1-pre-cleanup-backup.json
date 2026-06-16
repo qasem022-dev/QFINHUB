@@ -1,0 +1,46 @@
+{
+  "phase": "31.1",
+  "title": "Pre-Cleanup Backup \u2014 Phase 31.1 Safe Indexing Signal Cleanup",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:19:35.895769",
+  "current_state": {
+    "commit_hash": "4bbd5a1",
+    "commit_message": "Phase 31: Emergency first-click fixes \u2014 3 breakthrough pages improved",
+    "sitemap_urls_total": 650,
+    "sitemap_composition": {
+      "static": 14,
+      "calculators": "~97",
+      "blogs": 106,
+      "tools": 225,
+      "geo": 3,
+      "comparisons": "~21",
+      "guides": 125,
+      "decisions": 15,
+      "widgets": 2
+    },
+    "sitemap_file": "src/app/sitemap.ts",
+    "robots_txt_declared_sitemaps": [
+      "/sitemap.xml",
+      "/news-sitemap.xml"
+    ],
+    "robots_file": "src/app/robots.ts",
+    "gsc_indexed": 286,
+    "gsc_not_indexed": 881,
+    "gsc_404s": 125,
+    "gsc_noindex": 205,
+    "gsc_discovered_not_indexed": 503
+  },
+  "sitemap_integrity_check": {
+    "tool_urls_sampled": "30/30 all HTTP 200",
+    "formula_variants_filtered": true,
+    "noindex_variants_excluded": true,
+    "geo_pages_limited_to_3": true,
+    "blogs_in_sitemap": 106,
+    "finding": "Sitemap generation code appears correct. 404 URLs in GSC likely from historical crawl data, not current sitemap."
+  },
+  "rollback_instructions": {
+    "git_revert": "git revert <cleanup_commit_hash>",
+    "restore_sitemap": "sitemap.ts is unchanged during cleanup \u2014 no rollback needed for sitemap",
+    "restore_internal_links": "git checkout <pre-cleanup_hash> -- <changed_files>"
+  }
+}

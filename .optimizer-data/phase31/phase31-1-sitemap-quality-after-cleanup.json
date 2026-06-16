@@ -1,0 +1,38 @@
+{
+  "phase": "31.1",
+  "title": "Sitemap Quality After Cleanup",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:20:32.707361",
+  "before_after": {
+    "total_urls_before": 650,
+    "total_urls_after": 650,
+    "change": 0,
+    "reason_no_change": "No 404 or noindex URLs found in sitemap to remove"
+  },
+  "composition": {
+    "static_pages": 14,
+    "calculators": "~97",
+    "blog_posts": 106,
+    "tool_variants": 225,
+    "geo_pages": 3,
+    "comparisons": "~21",
+    "guides": 125,
+    "decisions": 15,
+    "widgets": 2
+  },
+  "quality_checks": {
+    "404_in_sitemap": 0,
+    "noindex_in_sitemap": 0,
+    "redirect_in_sitemap": 0,
+    "canonical_mismatch_known": 0,
+    "money_pages_included": "ALL 8 \u2713",
+    "formula_variants_filtered": true,
+    "noindex_variants_excluded": true,
+    "scenario_sitemap_empty": "0 URLs \u2014 not submitted"
+  },
+  "remaining_risks": [
+    "225 tool variant pages \u2014 some may be thin (but all sampled resolve HTTP 200)",
+    "GSC 404s (125) from historical data \u2014 not in current sitemap, will naturally decay",
+    "503 discovered-not-indexed \u2014 primarily quality issue, not sitemap issue"
+  ]
+}

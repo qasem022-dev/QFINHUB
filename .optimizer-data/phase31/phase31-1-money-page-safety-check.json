@@ -1,0 +1,82 @@
+{
+  "phase": "31.1",
+  "title": "Money Page Safety Check \u2014 All 8 Primary Pages",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:20:01.985241",
+  "all_pass": true,
+  "pages": [
+    {
+      "name": "Mortgage Calculator",
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Mortgage Affordability",
+      "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Loan Calculator",
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Compound Interest",
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Investment Return",
+      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Retirement Planning",
+      "url": "https://www.qfinhub.com/calculators/retirement-planning",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Pay Off Debt or Invest",
+      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    },
+    {
+      "name": "Rent vs Buy",
+      "url": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "http_200": true,
+      "no_noindex": true,
+      "has_canonical_header": false,
+      "pass": true,
+      "in_sitemap": true
+    }
+  ],
+  "action_if_failed": "STOP and report \u2014 do not proceed with cleanup"
+}

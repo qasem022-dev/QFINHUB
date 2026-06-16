@@ -1,0 +1,135 @@
+{
+  "phase": "31.2",
+  "title": "8 Money Page Signal Boost Plan",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:25:47.441824",
+  "pages": {
+    "mortgage-calculator": {
+      "current_impressions": "unknown (aggregate only for /calculators/* path)",
+      "current_position": "unknown",
+      "current_internal_links": "12 from calculator-blog-links.ts + inline blog links",
+      "supporting_pages": [
+        "how-to-calculate-monthly-mortgage-payment blog",
+        "200k-mortgage blog",
+        "PITI blog",
+        "rent-vs-buy blog",
+        "mortgage-rates blogs"
+      ],
+      "closest_query": "mortgage calculator (head term \u2014 do not attack yet)",
+      "competitor_serp": "Dominated by Bankrate, NerdWallet, Calculator.net \u2014 very high DA",
+      "missing_trust": "No author/editor block, no methodology citation on page",
+      "missing_ux": "Calculator may not be prominent enough above fold",
+      "missing_faq": "FAQ section needs real query-based questions",
+      "support_ring_pages_to_link": [
+        "/blog/how-to-calculate-monthly-mortgage-payment",
+        "/blog/200k-mortgage-payment-30-years",
+        "/blog/monthly-mortgage-payment-formula-tax-insurance",
+        "/guides/how-to-use-mortgage-calculator"
+      ],
+      "weak_pages_to_link_back": "Any thin mortgage tool variants \u2014 link them upward to this page",
+      "next_action": "Add FAQ section + trust block + ensure calculator prominent above fold"
+    },
+    "mortgage-affordability": {
+      "current_impressions": "unknown",
+      "current_position": "unknown",
+      "current_internal_links": 8,
+      "supporting_pages": [
+        "100k salary blog",
+        "housing affordability blog",
+        "widget embed page"
+      ],
+      "closest_query": "how much mortgage can i afford",
+      "missing_trust": "No methodology explanation for DTI calculation",
+      "missing_faq": "FAQ needs 'how much house can I afford on X salary' questions",
+      "support_ring_pages_to_link": [
+        "/blog/how-much-mortgage-afford-100k-salary",
+        "/decision/how-much-house-can-i-afford",
+        "/widgets/mortgage-affordability-embed"
+      ],
+      "next_action": "Add DTI methodology + real salary examples in FAQ"
+    },
+    "loan-calculator": {
+      "current_impressions": "unknown",
+      "current_position": "unknown",
+      "current_internal_links": 7,
+      "supporting_pages": [
+        "$20K loan blog (124 imp!)",
+        "student loan blog",
+        "debt snowball blog"
+      ],
+      "closest_query": "loan calculator (head term)",
+      "missing_trust": "No loan type comparison, no rate explanation",
+      "support_ring_pages_to_link": [
+        "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "/blog/how-student-loan-payments-affect-monthly-budget",
+        "/blog/debt-snowball-vs-debt-avalanche"
+      ],
+      "next_action": "Add loan type examples (personal, auto, student) + FAQ"
+    },
+    "compound-interest": {
+      "current_impressions": "unknown",
+      "current_position": "unknown",
+      "current_internal_links": 8,
+      "supporting_pages": [
+        "compound-interest-explained blog",
+        "inflation blog",
+        "investment withdrawals blog"
+      ],
+      "missing_trust": "Formula not prominently displayed",
+      "support_ring_pages_to_link": [
+        "/blog/compound-interest-explained",
+        "/blog/how-inflation-affects-your-savings-and-investments",
+        "/guides/how-to-use-compound-interest"
+      ],
+      "next_action": "Add formula display + worked example with real numbers"
+    },
+    "investment-return": {
+      "current_impressions": 47,
+      "current_position": 82.5,
+      "current_internal_links": 9,
+      "note": "DEEP DA bottleneck \u2014 needs sustained internal links",
+      "support_ring_pages_to_link": [
+        "/blog/investment-calculator-withdrawals",
+        "/blog/compound-interest-explained",
+        "/blog/complete-guide-to-retirement-planning-2026"
+      ],
+      "next_action": "Continue internal links, add FAQ, long-term play"
+    },
+    "retirement-planning": {
+      "current_impressions": 11,
+      "current_position": 81.5,
+      "current_internal_links": 7,
+      "note": "DEEP DA bottleneck \u2014 URL recently fixed",
+      "support_ring_pages_to_link": [
+        "/blog/complete-guide-to-retirement-planning-2026",
+        "/blog/2027-social-security-cola-forecast",
+        "/blog/retirement-planning-could-cost-2-5-mil"
+      ],
+      "next_action": "Continue internal links, add trust/methodology"
+    },
+    "pay-off-debt-or-invest": {
+      "current_impressions": "unknown",
+      "current_position": "unknown",
+      "current_internal_links": "unknown (decision page)",
+      "closest_query": "pay off debt or invest calculator",
+      "support_ring_pages_to_link": [
+        "/blog/debt-snowball-vs-debt-avalanche",
+        "/blog/how-to-pay-off-credit-card-debt-fast-2026",
+        "/blog/compound-interest-explained"
+      ],
+      "next_action": "Strengthen decision\u2192calculator links, improve intro clarity"
+    },
+    "rent-vs-buy": {
+      "current_impressions": 2,
+      "current_position": 4.0,
+      "current_internal_links": "has link from rent-vs-buy blog",
+      "note": "Position 4.0 but only 2 imp \u2014 expanded title Jun 16",
+      "support_ring_pages_to_link": [
+        "/blog/rent-vs-buy-which-is-better",
+        "/calculators/mortgage-affordability",
+        "/decision/how-much-house-can-i-afford"
+      ],
+      "next_action": "Monitor title change impact, expand query coverage if no improvement"
+    }
+  }
+}
