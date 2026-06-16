@@ -1,0 +1,23 @@
+{
+  "phase": "31.2",
+  "title": "Cron Safe Recovery Status",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:31:25.748295",
+  "job_id": "dcba952b4c45",
+  "mode": "SAFE_RECOVERY_MODE",
+  "allowed": [
+    "monitoring",
+    "audits",
+    "limited support-ring links",
+    "first-click measurement",
+    "quality sampling"
+  ],
+  "blocked": [
+    "expansion",
+    "outreach",
+    "indexing requests",
+    "new pages",
+    "bulk cleanup",
+    "Validate Fix"
+  ]
+}

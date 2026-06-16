@@ -1,0 +1,35 @@
+{
+  "phase": "31.2",
+  "title": "Discovered-Not-Indexed Quality Estimate",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:31:25.748295",
+  "total": 503,
+  "estimated_breakdown": {
+    "D_thin_tool_variant": {
+      "percentage": "40-50%",
+      "count": "200-250",
+      "action": "do not promote, link upward to parent"
+    },
+    "E_duplicate_cannibalization": {
+      "percentage": "15-20%",
+      "count": "75-100",
+      "action": "canonical to parent or consolidate"
+    },
+    "F_low_value_programmatic": {
+      "percentage": "20-25%",
+      "count": "100-125",
+      "action": "do not promote"
+    },
+    "A_B_C_worth_saving": {
+      "percentage": "10-15%",
+      "count": "50-75",
+      "action": "improve quality, add internal links"
+    },
+    "H_unknown": {
+      "percentage": "5%",
+      "count": "25",
+      "action": "need GSC export"
+    }
+  },
+  "requires_gsc_export": "Full URL list needed for precise classification"
+}

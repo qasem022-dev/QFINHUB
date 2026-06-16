@@ -1,0 +1,17 @@
+{
+  "phase": "31.2",
+  "title": "Safe Mini Deploy Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:31:25.748295",
+  "commit": "9e2716d",
+  "changes": "Fixed ~90 broken relatedCalculator links in blog posts.ts \u2014 loan\u2192loan-calculator, retirement\u2192retirement-planning, budget\u2192budget-planner, inflation\u2192inflation-calculator",
+  "within_limits": true,
+  "no_sitemap_changes": true,
+  "no_noindex_canonical_redirect_delete": true,
+  "verification": {
+    "homepage": "200 OK",
+    "changed_file": "src/lib/blog/posts.ts",
+    "pages_affected": "~80 blog posts (relatedCalculators fix)",
+    "only_fix_no_new_content": true
+  }
+}

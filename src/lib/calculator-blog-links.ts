@@ -18,7 +18,6 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "mortgage-rates-june-2026-current-rates-home-affordability-calculator", title: "Mortgage Rates June 2026 — Current Rates & Home Affordability Calculator" },
     { slug: "hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a", title: "Hungary Holds Rate at 6.5% — Will a June Cut Lower Your Mortgage Payment?" },
     { slug: "new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget", title: "New Federal Housing Funding: What It Means for Your Mortgage and Rental Budget" },
-    { slug: "how-to-use-mortgage-calculator", title: "How to Use the Mortgage Calculator" },
   ],
   "mortgage-affordability": [
     { slug: "how-much-mortgage-afford-100k-salary", title: "How Much Mortgage Can I Afford on a $100k Salary?" },
@@ -73,28 +72,22 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
   "percentage-calculator": [
     { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment (2026 Guide)" },
     { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
-    { slug: "capital-gains-tax-explained-rates-and-strategies", title: "Capital Gains Tax Explained: Rates and Strategies for 2026" },
-    { slug: "how-to-calculate-debt-to-income-ratio", title: "Debt-to-Income Ratio Guide" },
   ],
   "tax-calculator": [
     { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
     { slug: "tax-tips-007-first-light-metacritic-smart-financial-planning", title: "Tax Tips: Smart Financial Planning Strategies for 2026" },
-    { slug: "capital-gains-tax-explained-rates-and-strategies", title: "Capital Gains Tax Explained: Rates and Strategies for 2026" },
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
     { slug: "jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for", title: "Bezos on Zero Federal Income Tax: How It Affects Your Mortgage, Savings & Loans" },
-    { slug: "how-to-calculate-debt-to-income-ratio", title: "Debt-to-Income Ratio Guide" },
-    { slug: "how-to-use-retirement-planning", title: "Retirement Planning Guide" },
+    { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
   ],
   "401k-calculator": [
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
     { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
     { slug: "how-inflation-affects-your-savings-and-investments", title: "How Inflation Affects Your Savings and Investments" },
-    { slug: "retire-at-45-with-1-million", title: "Retire at 45 With $1 Million?" },
     { slug: "retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net", title: "Retirement Could Cost $2.5M by 2043 — Is Your Home Your Safety Net?" },
     { slug: "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now", title: "2027 Social Security COLA Forecast Jumps to 3.9%" },
-    { slug: "how-to-use-retirement-planning", title: "Retirement Planning Guide" },
   ],
   "investment-return": [
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },

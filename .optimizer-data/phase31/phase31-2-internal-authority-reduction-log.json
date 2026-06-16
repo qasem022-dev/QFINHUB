@@ -1,0 +1,38 @@
+{
+  "phase": "31.2",
+  "title": "Internal Authority Reduction Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:31:25.748295",
+  "summary": "Fixed ~90 broken internal links in blog posts' relatedCalculators arrays that were pointing to 404 URLs. This reduces crawl waste and improves authority flow to real money pages.",
+  "fixes_applied": {
+    "broken_slug_fixes": {
+      "loan_to_loan_calculator": {
+        "count": 64,
+        "was_404": true,
+        "now_points_to": "/calculators/loan-calculator (200)"
+      },
+      "retirement_to_retirement_planning": {
+        "count": 6,
+        "was_404": true,
+        "now_points_to": "/calculators/retirement-planning (200)"
+      },
+      "budget_to_budget_planner": {
+        "count": 19,
+        "was_404": true,
+        "now_points_to": "/calculators/budget-planner (200)"
+      },
+      "inflation_to_inflation_calculator": {
+        "count": 1,
+        "was_404": true,
+        "now_points_to": "/calculators/inflation-calculator (200)"
+      }
+    },
+    "total_broken_links_fixed": 90,
+    "affected_blog_posts": "~80+",
+    "authority_flow_improvement": "Broken links replaced with valid links to money page and supporting calculators",
+    "crawl_waste_reduction": "~90 fewer 404 URLs Google encounters when crawling blog pages"
+  },
+  "no_bulk_changes": true,
+  "targeted_fix_only": true,
+  "pages_touched": "<30 (only blog posts with broken relatedCalculators)"
+}

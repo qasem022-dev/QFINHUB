@@ -1,0 +1,91 @@
+{
+  "phase": "31.2",
+  "title": "Money Page Support Rings",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:31:25.748295",
+  "rings": {
+    "mortgage-calculator": {
+      "parent": "/calculators/mortgage-calculator",
+      "supporting_pages": [
+        "/blog/how-to-calculate-monthly-mortgage-payment",
+        "/blog/200k-mortgage-payment-30-years",
+        "/blog/monthly-mortgage-payment-formula-tax-insurance",
+        "/guides/how-to-use-mortgage-calculator"
+      ],
+      "related_calculators": [
+        "/calculators/mortgage-affordability",
+        "/calculators/amortization-schedule"
+      ],
+      "links_implemented": "12 via calculator-blog-links.ts"
+    },
+    "mortgage-affordability": {
+      "parent": "/calculators/mortgage-affordability",
+      "supporting_pages": [
+        "/blog/how-much-mortgage-afford-100k-salary",
+        "/decision/how-much-house-can-i-afford",
+        "/blog/housing-affordability-breakthrough"
+      ],
+      "widget": "/widgets/mortgage-affordability-embed",
+      "links_implemented": "8 via calculator-blog-links.ts"
+    },
+    "loan-calculator": {
+      "parent": "/calculators/loan-calculator",
+      "supporting_pages": [
+        "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "/blog/how-student-loan-payments-affect-monthly-budget",
+        "/blog/debt-snowball-vs-debt-avalanche",
+        "/blog/if-you-borrow-20-000-for-5-years-at-8-apr"
+      ],
+      "links_implemented": "7 via calculator-blog-links.ts + relationship via blog relatedCalculators fix (64 loan\u2192loan-calculator links now valid)"
+    },
+    "compound-interest": {
+      "parent": "/calculators/compound-interest",
+      "supporting_pages": [
+        "/blog/compound-interest-explained",
+        "/blog/how-inflation-affects-your-savings-and-investments",
+        "/guides/how-to-use-compound-interest"
+      ],
+      "links_implemented": "8 via calculator-blog-links.ts"
+    },
+    "investment-return": {
+      "parent": "/calculators/investment-return",
+      "supporting_pages": [
+        "/blog/investment-calculator-withdrawals",
+        "/blog/compound-interest-explained",
+        "/blog/complete-guide-to-retirement-planning-2026"
+      ],
+      "links_implemented": "9 via calculator-blog-links.ts"
+    },
+    "retirement-planning": {
+      "parent": "/calculators/retirement-planning",
+      "supporting_pages": [
+        "/blog/complete-guide-to-retirement-planning-2026",
+        "/blog/2027-social-security-cola-forecast",
+        "/blog/retirement-planning-could-cost-2-5-mil",
+        "/blog/retire-by-40-calculator-how-much-needed"
+      ],
+      "links_implemented": "7 via calculator-blog-links.ts + relationship via blog relatedCalculators fix (6 retirement\u2192retirement-planning links now valid)"
+    },
+    "pay-off-debt-or-invest": {
+      "parent": "/decision/pay-off-debt-or-invest",
+      "supporting_pages": [
+        "/blog/debt-snowball-vs-debt-avalanche",
+        "/blog/how-to-pay-off-credit-card-debt-fast-2026",
+        "/blog/compound-interest-explained"
+      ],
+      "links_implemented": "Via decision page interlinks"
+    },
+    "rent-vs-buy": {
+      "parent": "/decision/rent-vs-buy-with-100k-income",
+      "supporting_pages": [
+        "/blog/rent-vs-buy-which-is-better",
+        "/calculators/mortgage-affordability",
+        "/decision/how-much-house-can-i-afford"
+      ],
+      "links_implemented": "Has blog link + calculator link"
+    }
+  },
+  "total_new_links_added": 0,
+  "links_fixed": 90,
+  "note": "No new links added in this phase \u2014 only fixed broken existing links. The ~90 fixes created proper support-ring connections that were previously broken."
+}

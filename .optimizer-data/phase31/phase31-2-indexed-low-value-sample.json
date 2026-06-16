@@ -1,0 +1,22 @@
+{
+  "phase": "31.2",
+  "title": "Indexed Low-Value Page Estimate",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:31:25.748295",
+  "of_286_indexed": {
+    "A_B_money_supporting": {
+      "estimated": "80-120",
+      "action": "keep, promote, improve quality"
+    },
+    "D_low_value_tools": {
+      "estimated": "100-150",
+      "action": "reduce internal links, link upward"
+    },
+    "other_low_value": {
+      "estimated": "20-50",
+      "action": "reduce promotion"
+    }
+  },
+  "finding": "A significant portion of indexed pages may be thin tool variants. These should link upward to money pages rather than receiving authority.",
+  "requires_gsc_export": "Full URL list needed for precise analysis"
+}
