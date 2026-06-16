@@ -73,6 +73,8 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
   "percentage-calculator": [
     { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment (2026 Guide)" },
     { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
+    { slug: "capital-gains-tax-explained-rates-and-strategies", title: "Capital Gains Tax Explained: Rates and Strategies for 2026" },
+    { slug: "how-to-calculate-debt-to-income-ratio", title: "Debt-to-Income Ratio Guide" },
   ],
   "tax-calculator": [
     { slug: "understanding-tax-brackets-what-rate-do-you-actually-pay", title: "Understanding Tax Brackets: What Rate Do You Actually Pay?" },
@@ -118,29 +120,41 @@ export const CALCULATOR_BLOG_LINKS: Record<string, Array<{ slug: string; title: 
     { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment" },
     { slug: "200k-mortgage-payment-30-years", title: "$200,000 Mortgage Payment for 30 Years: Exact Monthly Cost" },
     { slug: "20000-loan-at-8-percent-for-5-years-monthly-payment", title: "$20,000 Loan at 8% for 5 Years: Calculate Your Exact Monthly Payment" },
+    { slug: "monthly-mortgage-payment-formula-tax-insurance", title: "PITI Formula: Calculate Your Full Monthly Mortgage Payment" },
+    { slug: "if-you-borrow-20-000-for-5-years-at-8-apr-whats-your-monthly-payment", title: "If You Borrow $20,000 for 5 Years at 8% APR — What's Your Monthly Payment?" },
   ],
   "fire-calculator": [
     { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
+    { slug: "retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net", title: "Retirement Could Cost $2.5M by 2043 — Is Your Home Your Safety Net?" },
+    { slug: "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now", title: "2027 Social Security COLA Forecast Jumps to 3.9%" },
   ],
   "debt-snowball": [
     { slug: "debt-snowball-vs-debt-avalanche", title: "Debt Snowball vs Debt Avalanche: Which Payoff Method Works Best?" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+    { slug: "how-student-loan-payments-affect-monthly-budget", title: "How Student Loan Payments Affect Your Monthly Budget" },
+    { slug: "debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you", title: "Pentagon Federal Credit Union Review 2026 — Is It Right for You?" },
   ],
   "savings-goal": [
     { slug: "how-much-emergency-fund-do-i-need-2026", title: "How Much Emergency Fund Do I Need? (2026 Guide)" },
     { slug: "compound-interest-explained", title: "Compound Interest Explained: How Your Money Grows Over Time" },
     { slug: "how-to-pay-off-credit-card-debt-fast-2026-proven-strategies", title: "Crush Your Credit Card Debt in 2026" },
+    { slug: "30-year-treasury-yield-hits-1999-levels-how-to-protect-your-savings-and-retireme", title: "30-Year Treasury Yield Hits 1999 Levels: Protect Your Savings" },
+    { slug: "retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net", title: "Retirement Could Cost $2.5M by 2043 — Is Your Home Your Safety Net?" },
   ],
   "refinance-calculator": [
     { slug: "when-to-refinance-your-mortgage-complete-guide-2026", title: "When Should You Refinance Your Mortgage? Complete Guide (2026)" },
     { slug: "how-to-calculate-monthly-mortgage-payment", title: "How to Calculate Your Monthly Mortgage Payment (2026 Guide)" },
     { slug: "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36", title: "Mortgage Rates 2025: How to Buy a $415K Home at 6.36%" },
+    { slug: "mortgage-rates-hit-9-month-high-how-to-protect-your-home-buying-power", title: "Mortgage Rates Hit 9-Month High: Protect Your Home Buying Power" },
+    { slug: "mortgage-rates-june-2026-current-rates-home-affordability-calculator", title: "Mortgage Rates June 2026 — Current Rates & Home Affordability Calculator" },
   ],
   "social-security": [
     { slug: "2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now", title: "2027 Social Security COLA Forecast Jumps to 3.9%" },
     { slug: "complete-guide-to-retirement-planning-2026", title: "The Complete Guide to Retirement Planning in 2026" },
     { slug: "retire-by-40-calculator-how-much-needed", title: "Retire by 40: How Much Do You Need Saved?" },
+    { slug: "retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net", title: "Retirement Could Cost $2.5M by 2043 — Is Your Home Your Safety Net?" },
+    { slug: "trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y", title: "Trump's Proposed SCSEP Cuts: What It Means for Older Workers" },
   ],
 };

@@ -1,17 +1,23 @@
 {
-  "status": "FRESH",
-  "generated": "2026-06-15T22:41:32.384184Z",
-  "pulled_at": "2026-06-15T22:41:32.384208Z",
+  "status": "LIVE_API_OK",
+  "generated": "2026-06-16T21:12:35.146931+00:00",
+  "pulled_at": "2026-06-16T21:12:35Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "date_range": {
     "start": "2026-06-07",
-    "end": "2026-06-14"
+    "end": "2026-06-13"
   },
   "previous_7d_range": {
     "start": "2026-05-31",
-    "end": "2026-06-07"
+    "end": "2026-06-06"
   },
+  "dimensions_pulled": [
+    "page",
+    "query",
+    "query+page"
+  ],
+  "row_limits": 500,
   "metrics_7d": {
     "impressions": 530,
     "clicks": 0,
@@ -33,81 +39,26 @@
   },
   "previous_7d": {
     "start": "2026-05-31",
-    "end": "2026-06-07",
-    "impressions": 499
+    "end": "2026-06-06",
+    "impressions": 466
   },
   "change_7d": {
-    "impressions": 31,
-    "impressions_pct": 6.2
+    "impressions": 64,
+    "impressions_pct": 13.7
   },
-  "top_pages": [
-    {
-      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-      "impressions": 123,
-      "clicks": 0,
-      "position": 10.5
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/tax-calculator",
-      "impressions": 99,
-      "clicks": 0,
-      "position": 85.2
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/investment-return",
-      "impressions": 66,
-      "clicks": 0,
-      "position": 76.8
-    },
-    {
-      "url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
-      "impressions": 24,
-      "clicks": 0,
-      "position": 9.9
-    },
-    {
-      "url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
-      "impressions": 18,
-      "clicks": 0,
-      "position": 9.7
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/retirement-planning",
-      "impressions": 16,
-      "clicks": 0,
-      "position": 74.1
-    },
-    {
-      "url": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
-      "impressions": 12,
-      "clicks": 0,
-      "position": 47.8
-    },
-    {
-      "url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
-      "impressions": 10,
-      "clicks": 0,
-      "position": 5.2
-    },
-    {
-      "url": "https://www.qfinhub.com/all-pages",
-      "impressions": 9,
-      "clicks": 0,
-      "position": 4.2
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
-      "impressions": 9,
-      "clicks": 0,
-      "position": 11.6
-    }
-  ],
   "freshness_proof": {
-    "freshness": "FRESH_LIVE",
-    "checksum": "6758014662547458636",
-    "previous_checksum": "897a26fe5ee4",
-    "date_range_advanced": true,
+    "freshness": "FRESH",
+    "checksum": "ec036193cf09",
+    "previous_checksum": null,
+    "date_range_advanced": false,
     "cache_used": false,
-    "token_status": "LIVE"
-  }
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "manual_ui_comparison": {
+    "available": true,
+    "last_check": "never",
+    "note": "FYI ONLY \u2014 NOT used in official KPIs"
+  },
+  "data_source_policy": "RAW_GSC_API_ONLY",
+  "correction_factor": "DISABLED \u2014 not applied to official metrics per Phase 19.2 normalization"
 }
