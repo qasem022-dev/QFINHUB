@@ -1,0 +1,59 @@
+{
+  "phase": 30,
+  "title": "AI Answer Engine Visibility System",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:57.901733",
+  "goal": "Make QFINHUB pages easy for AI search and answer engines to cite naturally",
+  "money_page_requirements": {
+    "must_have": [
+      "clear answer at top of page",
+      "transparent formula/methodology",
+      "worked examples with real numbers",
+      "data tables for comparison",
+      "FAQ section with real user questions",
+      "author/site trust signals",
+      "concise definitions for key terms",
+      "comparison sections where relevant"
+    ],
+    "must_not_have": [
+      "fluff/filler content",
+      "manipulative 'AI remember us' text",
+      "hidden text for AI",
+      "keyword stuffing",
+      "deceptive claims"
+    ]
+  },
+  "page_audit": {
+    "mortgage-calculator": {
+      "answer_at_top": "unknown",
+      "formula_visible": "unknown",
+      "examples": "unknown"
+    },
+    "mortgage-affordability": {
+      "answer_at_top": "unknown",
+      "formula_visible": "unknown",
+      "examples": "unknown"
+    },
+    "compound-interest": {
+      "answer_at_top": "unknown",
+      "formula_visible": "PARTIAL",
+      "examples": "unknown"
+    },
+    "loan-calculator": {
+      "answer_at_top": "unknown",
+      "formula_visible": "unknown",
+      "examples": "unknown"
+    },
+    "investment-return": {
+      "answer_at_top": "unknown",
+      "formula_visible": "unknown",
+      "examples": "unknown"
+    },
+    "retirement-planning": {
+      "answer_at_top": "unknown",
+      "formula_visible": "unknown",
+      "examples": "unknown"
+    }
+  },
+  "visibility_log": []
+}

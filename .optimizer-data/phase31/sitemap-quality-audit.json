@@ -1,0 +1,58 @@
+{
+  "phase": 31,
+  "title": "Sitemap Quality Audit",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:54:01.610389",
+  "sitemaps": {
+    "main_sitemap": {
+      "url": "/sitemap.xml",
+      "url_count": 649,
+      "composition": "125 calcs + 105 blogs + 125 guides + 35 compare + 15 decisions + 225 tools + 3 geo + 10 static + 1 widget + misc",
+      "issues_suspected": [
+        "May contain 404 URLs (deleted scenarios/pages not cleaned)",
+        "May contain URLs that are discovered-not-indexed (wasting sitemap slots)",
+        "May contain canonicalized variants",
+        "Tool variants (225) may include thin pages"
+      ],
+      "recommendations": [
+        "Cross-reference with 404 list \u2192 remove matches",
+        "Verify all 649 URLs are HTTP 200, indexable, self-canonical",
+        "Consider reducing tool variant count to only clean variants"
+      ]
+    },
+    "news_sitemap": {
+      "url": "/news-sitemap.xml",
+      "url_count": "~30",
+      "composition": "Blog posts within 30-day window",
+      "issues_suspected": [
+        "Minor \u2014 verify only recent posts included"
+      ],
+      "recommendations": [
+        "Verify 30-day window filter working"
+      ]
+    },
+    "scenario_sitemap": {
+      "url": "/scenario/sitemap.xml",
+      "url_count": 0,
+      "status": "Empty valid <urlset> \u2014 NOT submitted to GSC",
+      "recommendations": [
+        "REMOVE from robots.txt to avoid confusion"
+      ]
+    }
+  },
+  "robots_txt": {
+    "declared_sitemaps": [
+      "/sitemap.xml",
+      "/news-sitemap.xml"
+    ],
+    "issue": "Scenario sitemap removed from robots.txt (Phase 13C.9) \u2014 verify this is still true",
+    "recommendation": "Only declare sitemaps with indexable valuable pages"
+  },
+  "priority_actions": [
+    "Verify all 649 main sitemap URLs are HTTP 200",
+    "Remove any 404 URLs from sitemap",
+    "Remove any noindex URLs from sitemap",
+    "Consider reducing tool variant count",
+    "Verify robots.txt only declares 2 sitemaps"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "phase": 30,
+  "title": "Weekly Strategic Workflow \u2014 Phase 30",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:33:18.444465",
+  "weekly_review_actions": [
+    "review money page performance (impressions, clicks, position changes)",
+    "review first content clicks (any non-brand clicks?)",
+    "review indexing movement (new indexed high-value pages?)",
+    "review authority replies (any positive responses?)",
+    "review data asset performance (any citations/views?)",
+    "review monetization status (any progress toward approval?)",
+    "kill actions that failed (0 results after measurement window)",
+    "double down on actions that moved metrics",
+    "choose next 8-page priority set only if current set improves"
+  ],
+  "thresholds_and_escalations": {
+    "zero_content_clicks_14_days": {
+      "trigger": "0 non-brand content clicks after 14 days",
+      "action": "rewrite top 3 page titles/intros, tighten query targeting, check snippet alignment"
+    },
+    "zero_replies_20_sends": {
+      "trigger": "0 replies after 20 verified email-only sends",
+      "action": "kill that channel, pivot to next free PR channel, document learnings"
+    },
+    "zero_indexing_movement_21_days": {
+      "trigger": "0 high-value page indexing movement after 21 days",
+      "action": "strengthen internal links to those pages, reduce low-value sitemap noise, verify no technical blocks"
+    },
+    "impression_decline_2_weeks": {
+      "trigger": "impressions decline 2 consecutive weeks",
+      "action": "run full content quality + indexing + technical audit, identify root cause"
+    },
+    "no_ad_approval": {
+      "trigger": "no ad network approval despite readiness",
+      "action": "run monetization compliance audit, fix gaps, reapply"
+    }
+  },
+  "reporting": {
+    "weekly_report_format": [
+      "money page performance table",
+      "content click count (7d)",
+      "indexing status changes",
+      "internal links added (7d total)",
+      "data assets published",
+      "outreach sends + replies + citations",
+      "monetization readiness score",
+      "cost spent: $0 (must always be $0)",
+      "manual involvement: 0 unless escalated",
+      "OFF_TRACK/ON_TRACK status",
+      "blocked risks",
+      "next week priorities"
+    ]
+  }
+}

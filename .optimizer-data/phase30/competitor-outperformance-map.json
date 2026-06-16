@@ -1,0 +1,311 @@
+{
+  "phase": 30,
+  "title": "Competitor Outperformance Map \u2014 Zero-Budget Attack Strategy",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:02.297930",
+  "strategy": "Do not fight giants on head terms. Attack where they are structurally weak: exact-number long-tail, decision-calculator mixed intent, embeddable widgets, original micro-data, deeper internal architecture, faster specific answers.",
+  "competitor_groups": {
+    "A_giant_finance_publishers": {
+      "competitors": {
+        "bankrate": {
+          "strengths": [
+            "massive DA/backlinks (decades)",
+            "trusted brand",
+            "editorial authority",
+            "comprehensive coverage",
+            "news integration"
+          ],
+          "weaknesses": [
+            "slow to cover exact-number queries",
+            "generic calculator UX",
+            "no embeddable widgets",
+            "thin on decision-calculator mixed pages",
+            "ad-heavy"
+          ],
+          "avoid": [
+            "mortgage rates",
+            "savings rates",
+            "CD rates",
+            "broad category pages"
+          ],
+          "attack": [
+            "exact-number mortgage scenarios (e.g. '$900k 30yr 7%')",
+            "decision+calculator combo pages",
+            "privacy-first no-ads UX",
+            "widget embeds"
+          ]
+        },
+        "nerdwallet": {
+          "strengths": [
+            "massive DA",
+            "comparison tools",
+            "partnership links (revenue)",
+            "broad coverage",
+            "mobile app"
+          ],
+          "weaknesses": [
+            "calculators are secondary to affiliate revenue",
+            "not deep on scenario-specific answers",
+            "no embeddable widgets",
+            "form-heavy lead gen"
+          ],
+          "avoid": [
+            "credit card comparisons",
+            "bank reviews",
+            "mortgage lender reviews"
+          ],
+          "attack": [
+            "pure calculator utility (no affiliate conflict)",
+            "specific long-tail scenarios",
+            "privacy-first angle",
+            "widgets for other sites"
+          ]
+        },
+        "investopedia": {
+          "strengths": [
+            "highest DA in finance",
+            "definition/education authority",
+            "encyclopedic coverage",
+            "trusted by Google"
+          ],
+          "weaknesses": [
+            "calculators are basic/simple",
+            "not optimized for exact-number queries",
+            "no decision tools",
+            "slow publishing"
+          ],
+          "avoid": [
+            "financial definitions",
+            "broad education topics",
+            "trading/investing concepts"
+          ],
+          "attack": [
+            "calculator+definition combo pages",
+            "exact-number worked examples",
+            "decision pages with calculator integration"
+          ]
+        },
+        "smartasset": {
+          "strengths": [
+            "lead-gen optimized",
+            "geo-specific calculators",
+            "financial advisor matching",
+            "tax focus"
+          ],
+          "weaknesses": [
+            "lead-gen first (not utility-first)",
+            "form-gated results",
+            "no embeddable widgets",
+            "thin on pure self-serve calculators"
+          ],
+          "avoid": [
+            "financial advisor matching",
+            "geo-specific lead gen",
+            "tax filing partnerships"
+          ],
+          "attack": [
+            "no-form-required calculator UX",
+            "privacy-first angle",
+            "same calculation without signup wall"
+          ]
+        },
+        "ramsey_solutions": {
+          "strengths": [
+            "massive brand/trust",
+            "loyal audience",
+            "simple message",
+            "clear methodology"
+          ],
+          "weaknesses": [
+            "limited calculator depth",
+            "premium upsell focus",
+            "specific methodology not for everyone",
+            "no embeddable calculators"
+          ],
+          "avoid": [
+            "debt snowball (their core IP)",
+            "baby steps",
+            "ramsey-specific methodology"
+          ],
+          "attack": [
+            "alternative debt payoff methods (avalanche)",
+            "flexible retirement planning",
+            "methodology-agnostic tools"
+          ]
+        }
+      }
+    },
+    "B_calculator_giants": {
+      "competitors": {
+        "calculator_net": {
+          "strengths": [
+            "massive keyword coverage",
+            "fast/clean UX",
+            "hundreds of calculators",
+            "high indexed count"
+          ],
+          "weaknesses": [
+            "thin content per page",
+            "no blog/guide integration",
+            "no embeddable widgets",
+            "no methodology/trust blocks",
+            "ad-heavy"
+          ],
+          "avoid": [
+            "head calculator terms where they rank #1-3"
+          ],
+          "attack": [
+            "calculator+guide combo pages",
+            "decision-integrated calculators",
+            "trust/methodology blocks",
+            "widget embeds"
+          ]
+        },
+        "omni_calculator": {
+          "strengths": [
+            "beautiful UX",
+            "wide calculator range",
+            "academic/science/niche calculators",
+            "social sharing"
+          ],
+          "weaknesses": [
+            "thin on finance-specific depth",
+            "no authority in finance niche",
+            "no blog/educational content",
+            "no embeddable finance widgets"
+          ],
+          "avoid": [
+            "STEM/science calculators",
+            "their niche calculator types"
+          ],
+          "attack": [
+            "finance-only depth",
+            "educational blog+calculator integration",
+            "finance-specific trust signals"
+          ]
+        },
+        "mortgagecalculator_org": {
+          "strengths": [
+            "domain authority for mortgage",
+            "focused niche"
+          ],
+          "weaknesses": [
+            "mortgage-only",
+            "no other finance calculators",
+            "no decision tools",
+            "no widget embedding"
+          ],
+          "avoid": [
+            "head mortgage calculator terms"
+          ],
+          "attack": [
+            "cross-calculator integration (mortgage\u2192affordability\u2192decision)",
+            "broader finance coverage",
+            "widget embedding"
+          ]
+        }
+      }
+    },
+    "C_product_led_planners": {
+      "competitors": {
+        "boldin": {
+          "strengths": [
+            "comprehensive retirement planning",
+            "professional UX",
+            "subscription revenue"
+          ],
+          "weaknesses": [
+            "premium/subscription model",
+            "not free for full features",
+            "no embeddable calculators",
+            "product-first not utility-first"
+          ],
+          "avoid": [
+            "full retirement planning software"
+          ],
+          "attack": [
+            "free instant calculator alternatives",
+            "specific retirement scenarios",
+            "quick answers without signup"
+          ]
+        },
+        "projectionlab": {
+          "strengths": [
+            "beautiful visualization",
+            "scenario modeling",
+            "modern UX"
+          ],
+          "weaknesses": [
+            "premium only",
+            "complex (not for quick answers)",
+            "no embeddable widgets",
+            "niche audience"
+          ],
+          "avoid": [
+            "visual scenario modeling",
+            "premium financial planning"
+          ],
+          "attack": [
+            "simple free alternatives",
+            "embeddable calculator components",
+            "quick specific answers"
+          ]
+        }
+      }
+    }
+  },
+  "keyword_strategy": {
+    "DO_NOT_ATTACK_YET": [
+      "mortgage calculator",
+      "mortgage rates",
+      "compound interest calculator",
+      "retirement calculator",
+      "loan calculator",
+      "investment calculator",
+      "401k calculator",
+      "debt payoff calculator",
+      "budget calculator",
+      "refinance calculator",
+      "savings calculator",
+      "tax calculator"
+    ],
+    "ATTACK_NOW": [
+      "exact-number long-tail (e.g. '$900k mortgage 30yr 7%', '$20k loan 5yr 8%')",
+      "decision+calculator combo queries (e.g. 'should i pay off debt or invest calculator')",
+      "how much house can i afford [with specific numbers]",
+      "rent vs buy [specific income] calculator",
+      "compound interest [specific amount/rate/years]",
+      "emergency fund [specific amount]",
+      "mortgage payment [with tax and insurance]",
+      "retirement withdrawal [specific rate] calculator"
+    ],
+    "BUILD_AUTHORITY_FIRST": [
+      "mortgage affordability by income level",
+      "investment return over time",
+      "retirement planning by age",
+      "debt payoff comparison methods",
+      "tax bracket optimization",
+      "compound interest education"
+    ],
+    "LOW_COMPETITION_LONG_TAIL": [
+      "exact monthly payment scenarios",
+      "specific salary-to-house-price ratios",
+      "debt snowball vs avalanche by amount",
+      "retirement by age and savings rate",
+      "emergency fund by monthly expense",
+      "capital gains tax by bracket",
+      "simple interest by rate and term",
+      "fire number by savings rate"
+    ]
+  },
+  "qfinhub_advantages": [
+    "free, no signup, no ads",
+    "privacy-first (no personal data collected)",
+    "embeddable widgets for other sites",
+    "decision+calculator integrated pages",
+    "exact-number scenario coverage",
+    "original methodology/calculations",
+    "clean, fast UX",
+    "blog+calculator deep integration"
+  ]
+}

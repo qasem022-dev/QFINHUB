@@ -1,0 +1,38 @@
+{
+  "phase": 30,
+  "title": "No-Form Autonomous Policy",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:33:16.754507",
+  "policy": {
+    "core_rule": "Contact forms are not part of the core autonomous workflow. Prefer email, RSS, public editorial contact, direct submission email, or inbound data assets.",
+    "form_decisions": {
+      "captcha_present": "SKIP \u2014 find email alternative",
+      "anti_bot_detected": "SKIP \u2014 not safe for automation",
+      "no_anti_bot": "HOLD \u2014 evaluate legal/safety before any action",
+      "uncertain": "HOLD",
+      "email_alternative_found": "EMAIL_ALTERNATIVE \u2014 proceed via email",
+      "safe_form_confirmed": "SAFE_FORM \u2014 only if legally allowed and no restrictions bypassed"
+    },
+    "preferred_contact_methods": [
+      "public editorial email addresses",
+      "direct submission email",
+      "RSS feed monitoring for journalist requests",
+      "newsletter submission email",
+      "resource page email contacts",
+      "broken link replacement email",
+      "open-submission email channels"
+    ],
+    "blocked_channels": [
+      "forms with captcha",
+      "anti-bot-protected forms",
+      "paid submission forms",
+      "guest post fee forms",
+      "link exchange forms",
+      "write for us pages asking payment",
+      "forms requiring fake accounts",
+      "Reddit/Quora automated posting"
+    ]
+  },
+  "opportunity_log": [],
+  "decision_log": []
+}

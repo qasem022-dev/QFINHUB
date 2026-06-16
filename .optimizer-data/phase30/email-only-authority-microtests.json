@@ -1,0 +1,36 @@
+{
+  "phase": 30,
+  "title": "Email-Only Authority Microtests \u2014 V3 Contact Strategy",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:29.133876",
+  "prospect_types": [
+    "broken/outdated calculator page with email contact",
+    "resource page that already lists calculators/tools",
+    "newsletter/tool roundup accepting email submissions",
+    "journalist/source request asking for finance data",
+    "nonprofit/education page where calculator fills real gap"
+  ],
+  "email_rules": {
+    "max_sentences": 3,
+    "no_backlink_ask": true,
+    "no_anchor_ask": true,
+    "no_followed_link_request": true,
+    "no_seo_wording": true,
+    "no_pressure": true,
+    "no_fake_praise": true,
+    "no_paid_exchange_language": true,
+    "must_have_clear_value": true,
+    "must_be_page_specific": true,
+    "offer_direct_link_first": true,
+    "embed_code_only_if_useful": true
+  },
+  "batch_rules": {
+    "max_sends_per_day": 5,
+    "max_sends_per_channel_before_verdict": 20,
+    "reply_deadline_days": 7,
+    "reply_answer_window_hours": 24,
+    "if_ask_for_payment": "REJECT and log"
+  },
+  "send_log": [],
+  "status": "NOT_STARTED \u2014 wait for Phase 27 pivot evaluation"
+}

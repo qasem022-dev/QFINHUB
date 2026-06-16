@@ -1,0 +1,115 @@
+{
+  "phase": 30,
+  "title": "Phase 30 Dry Run Report \u2014 Pre-Activation Verification",
+  "timestamp": "2026-06-17T00:39:49.029681",
+  "type": "DRY_RUN_READ_ONLY",
+  "destructive_ops_disabled": true,
+  "checks": {
+    "config_loadability": {
+      "pass": true,
+      "files_checked": 19,
+      "files_failed": 0,
+      "errors": []
+    },
+    "no_spend_lock": {
+      "pass": true,
+      "status": "ACTIVE"
+    },
+    "no_form_policy": {
+      "pass": true
+    },
+    "gsc_connection": {
+      "pass": true,
+      "impressions": 530,
+      "date_range": {
+        "start": "2026-06-07",
+        "end": "2026-06-13"
+      }
+    },
+    "github_vercel": {
+      "pass": true,
+      "git_ok": true,
+      "vercel_ok": true,
+      "last_commit": "09bb71c Phase 19: Daily run 2026-06-16 \u2014 14 internal links across 7 under-linked calculators + 22 page tool audit (all 200)"
+    },
+    "money_pages": {
+      "pass": true,
+      "count": 8
+    },
+    "mode_decision": {
+      "pass": true,
+      "modes_available": [
+        "CONTENT_CLICK_MODE",
+        "INDEXING_MODE",
+        "MONEY_PAGE_MODE",
+        "DATA_ASSET_MODE",
+        "FREE_PR_MODE",
+        "MONETIZATION_READINESS_MODE",
+        "HOLD_MODE"
+      ],
+      "count": 7
+    },
+    "action_queue": {
+      "pass": true,
+      "queue_size": 6,
+      "queue": [
+        {
+          "action": "refresh_gsc_data",
+          "reason": "daily data refresh"
+        },
+        {
+          "action": "add_internal_links",
+          "limit": 10,
+          "target": "money_pages",
+          "reason": "first run limit"
+        },
+        {
+          "action": "monitor_indexing",
+          "reason": "check high-value pages"
+        },
+        {
+          "action": "check_outreach_replies",
+          "reason": "check inbox"
+        },
+        {
+          "action": "prepare_authority_emails",
+          "limit": 2,
+          "min_score": 90,
+          "reason": "first run limit"
+        },
+        {
+          "action": "generate_daily_report",
+          "reason": "required output"
+        }
+      ]
+    },
+    "blocked_ops": {
+      "pass": true,
+      "blocked": [
+        "deploy",
+        "send_emails_over_limit",
+        "request_indexing",
+        "modify_pages",
+        "change_sitemap",
+        "validate_fix",
+        "spend_money",
+        "google_indexing_api"
+      ]
+    },
+    "report_writeable": {
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "destructive_ops_confirmed_disabled": [
+    "NO deploy",
+    "NO emails sent",
+    "NO indexing requests",
+    "NO page modifications",
+    "NO sitemap changes",
+    "NO Validate Fix",
+    "NO money spent",
+    "NO Google Indexing API"
+  ],
+  "ready_for_activation": true
+}

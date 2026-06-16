@@ -1,0 +1,46 @@
+{
+  "phase": 30,
+  "title": "Passive Digital PR Engine \u2014 Email-Only Free Citation Strategy",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:29.133876",
+  "goal": "Earn links/citations without paid placements and without manual forms",
+  "allowed_channels": [
+    "email-only journalist/source requests",
+    "public editorial emails",
+    "newsletter/tool roundup submission emails",
+    "resource pages with direct email contact",
+    "broken calculator replacement via email pitch",
+    "open-submission by email",
+    "passive data asset publishing (inbound citations)",
+    "RSS-monitored journalist opportunities"
+  ],
+  "blocked_channels": [
+    "forms with captcha",
+    "anti-bot forms",
+    "paid submissions",
+    "guest post fees",
+    "link exchanges",
+    "write for us asking payment",
+    "fake accounts",
+    "mass automated comments",
+    "Reddit/Quora automation spam"
+  ],
+  "daily_process": [
+    "find email-only opportunities",
+    "score each opportunity 0-100",
+    "send only if score >=90",
+    "maximum 2-5 sends/day",
+    "max 20 sends/channel before evaluation",
+    "track replies, bounces, placements",
+    "if 0 replies after 20 verified sends: pivot channel"
+  ],
+  "opportunity_scoring": {
+    "page_relevance": 25,
+    "contact_quality": 20,
+    "asset_fit": 20,
+    "evidence_problem": 15,
+    "low_spam_risk": 10,
+    "reply_probability": 10
+  },
+  "opportunity_log": []
+}

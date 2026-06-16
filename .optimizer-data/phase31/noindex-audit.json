@@ -1,0 +1,46 @@
+{
+  "phase": 31,
+  "title": "Noindex Audit \u2014 205 Pages With Noindex Tag",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:54:01.610389",
+  "total_noindex": 205,
+  "known_noindex_groups": {
+    "geo_pages": {
+      "total": 594,
+      "noindexed": 591,
+      "kept_indexable": 3,
+      "reason": "No local data \u2014 99 cities \u00d7 6 calcs, only 3 have GSC impressions (loan/nashville-tn, loan/reno-nv, tax/philadelphia-pa)",
+      "in_sitemap": "NO (removed Phase 13C.9)",
+      "internal_links": "MINIMAL",
+      "decision": "KEEP_NOINDEX \u2014 intentional, correct"
+    },
+    "formula_tool_variants": {
+      "total": "~386",
+      "noindexed": "~386",
+      "kept_indexable": 2,
+      "reason": "Formula-based variants (pct+yr, pct+mo patterns) \u2014 thin duplicate content, canonical to parent",
+      "in_sitemap": "NO (filtered in sitemap.ts)",
+      "internal_links": "SOME \u2014 from related calculators",
+      "decision": "KEEP_NOINDEX \u2014 intentional, but verify no internal links promote them"
+    },
+    "thin_scenarios": {
+      "total": "~2,059",
+      "noindexed": "~2,059",
+      "kept_indexable": 2,
+      "reason": "Hash-ID scenarios pruned in V2 \u2014 no unique value, noindexed",
+      "in_sitemap": "NO (scenario sitemap has 0 URLs)",
+      "internal_links": "MINIMAL",
+      "decision": "KEEP_NOINDEX \u2014 intentional"
+    }
+  },
+  "verification_needed": {
+    "sitemap_check": "Verify NO noindex pages appear in any sitemap",
+    "internal_link_check": "Verify indexed pages don't heavily link to noindex pages (wasting link equity)",
+    "count_accuracy": "205 + 591(geo) + 386(tools) + 2059(scenarios) > 205 \u2014 some overlap or count mismatch in GSC UI"
+  },
+  "action": {
+    "immediate": "Verify sitemap has zero noindex URLs",
+    "short_term": "Reduce internal links from indexed pages to noindex pages",
+    "blocked": "DO NOT change noindex to index without Qasem approval"
+  }
+}

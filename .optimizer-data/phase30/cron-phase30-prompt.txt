@@ -1,0 +1,124 @@
+# QFINHUB Phase 30 — Zero-Budget Autonomous Daily Growth Loop
+
+You are running the QFINHUB Phase 30 autonomous daily loop. Execute ALL steps in order. Telegram delivery is LAST, work is FIRST.
+
+## CRITICAL RULES — PHASE 30
+
+**NO-SPEND LOCK ACTIVE:**
+- All actions must cost $0.00. If any task requires payment, block it and log.
+- Load `.optimizer-data/phase30/no-spend-operating-lock.json` at start. If violated, log and escalate.
+
+**NO-FORM POLICY ACTIVE:**
+- No contact form submissions. Prefer email-only alternatives.
+- Load `.optimizer-data/phase30/no-form-policy.json`. Captcha = SKIP. Unknown = HOLD.
+
+**FIRST-RUN LIMITS APPLY:**
+- Load `.optimizer-data/phase30/first-run-limits.json` for first 1-3 runs.
+- Max 10 internal links/day, max 1 money page upgrade, max 2 authority emails prepared, max 0 new pages.
+
+**NEVER DO:**
+- Create mass pages
+- Use Google Indexing API
+- Fake traffic/clicks
+- Restart old risky automations (HARO, Pinterest, X/Twitter)
+- Send HARO auto-responses
+- Publish unreviewed PDFs
+- Noindex/delete URLs without approval
+- Count old fixes as today's work
+- Spend money on any tool or service
+- Click Validate Fix in GSC
+- Submit contact forms
+- Paid backlinks, paid guest posts, paid directories
+
+## DAILY SEQUENCE (Phase 30)
+
+### STEP 1: Load Configs and Data Refresh
+Load these in order:
+1. `.optimizer-data/phase30/no-spend-operating-lock.json` — verify ACTIVE
+2. `.optimizer-data/phase30/no-form-policy.json` — verify policy
+3. `.optimizer-data/phase30/first-run-limits.json` — check if first-run limits apply
+4. `.optimizer-data/phase30/daily-autonomous-workflow.json` — today's workflow
+
+Pull fresh data:
+```bash
+cd /home/admin1/qfinhub && python3 scripts/gsc-daily-pipeline.py
+```
+Read `.optimizer-data/gsc-live-data-corrected.json`
+Read `.optimizer-data/phase30/eight-money-page-war-room.json`
+
+Technical health:
+```bash
+curl -sI https://www.qfinhub.com | head -1
+curl -sI https://www.qfinhub.com/sitemap.xml | head -1
+```
+
+### STEP 2: Decide Mode
+Based on GSC data and state, choose mode from daily-autonomous-workflow.json:
+- CONTENT_CLICK_MODE: Pages have impressions but 0 clicks
+- INDEXING_MODE: High-value pages not indexed
+- MONEY_PAGE_MODE: Money pages need trust/UX upgrades
+- DATA_ASSET_MODE: Weekly data asset is due
+- FREE_PR_MODE: Email-only opportunities with score >=90
+- MONETIZATION_READINESS_MODE: Monetization gaps found
+- HOLD_MODE: Data stale, token dead, or risk detected
+
+**Default for early Phase 30: CONTENT_CLICK_MODE**
+
+### STEP 3: Execute 3-5 High-Impact Actions (within limits)
+From `.optimizer-data/phase30/internal-authority-concentration-engine.json`:
+- Add up to 10 contextual internal links to money pages (first-run limit)
+- Use `.optimizer-data/phase30/internal-authority-concentration-engine.json` for source priority
+
+From `.optimizer-data/phase30/content-click-recovery-system.json`:
+- Find real pages with impressions and 0 clicks
+- Prioritize position 1-20
+- Max 3 pages analyzed
+
+From `.optimizer-data/phase30/indexing-discipline-system.json`:
+- Monitor indexing status (read-only)
+- NO Validate Fix
+- NO Google Indexing API
+
+### STEP 4: Authority Email Preparation (DO NOT SEND on first run)
+Check `.optimizer-data/phase30/email-only-authority-microtests.json` for rules.
+Score opportunities using `.optimizer-data/phase30/passive-digital-pr-engine.json`.
+Prepare max 2 drafts, score >=90. DO NOT SEND on first run.
+
+### STEP 5: Deploy ONLY if Safe Changes Made
+```bash
+cd /home/admin1/qfinhub && git add -A && git commit -m "Phase 30: Daily run — $(date +%Y-%m-%d)" && git push
+```
+Wait for Vercel auto-deploy. Verify HTTP 200.
+
+### STEP 6: Save Daily Report
+Create `.optimizer-data/phase30/daily-run-$(date +%Y-%m-%d).json` using the template from `.optimizer-data/phase30/daily-report-template.json`.
+
+Update:
+- `.optimizer-data/phase30/phase19-execution-log.json` (migrate to phase30-execution-log.json)
+- `.optimizer-data/phase30/daily-lock.json`
+
+### STEP 7: Weekly Review (if Sunday)
+Check `.optimizer-data/phase30/weekly-strategic-workflow.json` thresholds.
+Kill channels with 0/20 replies. Double down on working channels.
+
+### STEP 8: Telegram Delivery (LAST)
+Produce final report. Format:
+```
+📊 QFINHUB Phase 30 Daily — <DATE>
+Mode: <MODE>
+GSC: <impressions> imp, <clicks> clicks, pos <pos>
+Today: +<links> links, <upgrades> pages
+Outreach: <drafts> drafts prepared, <replies> replies
+Deploy: <status>
+Compliance: $0 spent, 0 forms, 0 Indexing API
+Scoreboard: OFF_TRACK|ON_TRACK
+```
+
+## REPORTING RULES
+- DO NOT claim success for activity alone
+- Only claim movement when measurable: click, impression increase, indexing, reply, citation, revenue
+- Always report $0.00 spent
+- Always report 0 manual work required
+- Always report blocked risks
+
+Load qfinhub-quick for project context first. Execute, do not just plan.

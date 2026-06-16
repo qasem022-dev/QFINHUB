@@ -1,0 +1,66 @@
+{
+  "phase": 31,
+  "title": "Discovered Currently Not Indexed \u2014 503 Pages Classification",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:54:01.610389",
+  "severity": "CRITICAL \u2014 largest not-indexed group, core of the problem",
+  "total": 503,
+  "problem": "Google knows about these pages (discovered via sitemap, internal links, or crawling) but is choosing not to index them. This is the primary signal that Google doesn't trust QFINHUB's page quality.",
+  "classification": {
+    "A_real_money_page": {
+      "estimated_count": "5-15",
+      "description": "Calculator, decision, or blog pages that SHOULD be indexed",
+      "examples": "Some deep calculators may be here",
+      "action": "IMPROVE quality + strengthen internal links + ensure in sitemap"
+    },
+    "B_real_guide_blog_decision": {
+      "estimated_count": "10-25",
+      "description": "Blog posts, guides, decisions that should be indexed",
+      "examples": "Older blog posts, guide pages",
+      "action": "Verify quality, update if thin, add internal links"
+    },
+    "C_useful_support_page": {
+      "estimated_count": "10-20",
+      "description": "Support pages that help users",
+      "examples": "About, contact, methodology pages",
+      "action": "Ensure in sitemap, improve if thin"
+    },
+    "D_thin_scenario_tool_variant": {
+      "estimated_count": "200-300",
+      "description": "Tool variants, scenarios with little unique content",
+      "examples": "Most of the 503 are likely here",
+      "action": "DO NOT promote \u2014 reduce internal links, do not index"
+    },
+    "E_duplicate_cannibalization": {
+      "estimated_count": "30-50",
+      "description": "Pages too similar to other indexed pages",
+      "examples": "Multiple pages targeting same query",
+      "action": "Canonical to best version or consolidate"
+    },
+    "F_low_value_programmatic": {
+      "estimated_count": "100-150",
+      "description": "Auto-generated pages with no unique insight",
+      "examples": "Number-swapped variants, empty pages",
+      "action": "Noindex + remove from sitemap"
+    },
+    "G_old_obsolete": {
+      "estimated_count": "20-40",
+      "description": "Pages no longer relevant or replaced",
+      "examples": "Old slug patterns, removed content",
+      "action": "301 redirect if replaced, 410 if truly gone"
+    },
+    "H_unknown": {
+      "estimated_count": "10-20",
+      "description": "Cannot classify without full URL list",
+      "examples": "Need GSC export",
+      "action": "Export full list from GSC for classification"
+    }
+  },
+  "key_insight": "~300-450 of 503 are likely D/E/F \u2014 low-value pages that should NOT receive internal authority or sitemap promotion. The remaining ~50-150 are real pages worth improving.",
+  "action_plan": {
+    "immediate": "Export full 503 URL list from GSC",
+    "priority": "Identify all A/B/C pages and move them into index via quality improvements + internal links",
+    "medium": "Reduce internal links to D/E/F pages",
+    "blocked": "DO NOT mass noindex or delete without Qasem approval"
+  }
+}

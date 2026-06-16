@@ -1,0 +1,62 @@
+{
+  "phase": 30,
+  "title": "Content Click Recovery System \u2014 First Non-Brand Click Attack",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:57.901733",
+  "current_status": "OFF_TRACK \u2014 0 non-brand content clicks on 530 impressions",
+  "daily_process": [
+    "pull GSC fresh data",
+    "exclude branded homepage query ('qfinhub')",
+    "exclude tools/scenarios as standalone targets",
+    "find real pages (blogs, decisions, guides, calculators) with impressions and 0 clicks",
+    "prioritize position 1-20 first (highest CTR potential)",
+    "pick maximum 3 pages/day",
+    "improve: snippet alignment, above-fold answer, CTA, internal links"
+  ],
+  "priority_targets": [
+    {
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 124,
+      "position": 10.9,
+      "reason_no_click": "snippet may give away answer, no CTA urgency",
+      "action": "check snippet, add curiosity hook, improve CTA above fold",
+      "status": "MONITORING"
+    },
+    {
+      "page": "/decision/rent-vs-buy-with-100k-income",
+      "impressions": 2,
+      "position": 4.0,
+      "reason_no_click": "very low volume \u2014 query is niche or position is for rare query",
+      "action": "expand query coverage, check if position 4 is real",
+      "status": "INVESTIGATE"
+    },
+    {
+      "page": "/decision/how-much-house-can-i-afford",
+      "impressions": 4,
+      "position": 7.5,
+      "reason_no_click": "low impressions despite good position",
+      "action": "verify SERP visibility for actual queries",
+      "status": "MONITORING"
+    },
+    {
+      "page": "/calculators/tax/philadelphia-pa",
+      "impressions": 13,
+      "position": 18.3,
+      "reason_no_click": "position outside top 5, geo-specific",
+      "action": "check if other geo pages have similar pattern",
+      "status": "MONITORING"
+    }
+  ],
+  "correction_rules": {
+    "if_impressions_but_no_click_after_14_days": "rewrite title/meta, improve above-fold answer, add stronger CTA",
+    "if_position_improves_but_no_click": "snippet is giving away answer \u2014 add curiosity hook",
+    "if_impressions_decline": "check indexing status, check for competitor ranking changes"
+  },
+  "success_milestones": [
+    "first non-brand content click",
+    "3 weekly content clicks",
+    "10 weekly content clicks",
+    "50 weekly content clicks"
+  ],
+  "daily_log": []
+}

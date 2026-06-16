@@ -1,0 +1,53 @@
+{
+  "phase": 30,
+  "title": "Phase 30 First Real Run Limits \u2014 Safety Gate",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:40:17.573531",
+  "applies_to": "First 1-3 Phase 30 cron runs",
+  "allowed_actions": {
+    "data_ops": [
+      "refresh GSC data via scripts/gsc-daily-pipeline.py",
+      "monitor indexing status (read-only)",
+      "check outreach reply inbox (read-only)",
+      "read GA4 data if available"
+    ],
+    "content_ops": [
+      "add up to 10 contextual internal links (only if safe, no bulk edits)",
+      "improve only 1 money page (only if clear GSC/competitor reason exists)",
+      "prepare but DO NOT SEND authority emails (score >=90, email-only)"
+    ],
+    "reporting_ops": [
+      "create daily action report",
+      "update execution log",
+      "update daily lock"
+    ]
+  },
+  "blocked_actions": {
+    "hard_blocks": [
+      "sending more than 2 authority emails",
+      "creating more than 1 new page",
+      "bulk edits to any file",
+      "bulk internal links (>10)",
+      "any noindex/canonical/delete/redirect",
+      "Validate Fix in GSC",
+      "Google Indexing API",
+      "contact form submission",
+      "paid tools or services",
+      "paid links",
+      "fake traffic"
+    ],
+    "soft_blocks": [
+      "deploying (allowed only if safe changes made)",
+      "modifying sitemap",
+      "GSC UI Request Indexing (allowed max 5 high-value pages only)"
+    ]
+  },
+  "mode_override": "CONTENT_CLICK_MODE (first runs focus on getting first click)",
+  "escalation_triggers": [
+    "any blocked action attempted",
+    "error in config reading",
+    "GSC token dead",
+    "deploy failure",
+    "any action requiring Qasem input"
+  ]
+}

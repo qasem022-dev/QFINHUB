@@ -1,0 +1,70 @@
+{
+  "phase": 31,
+  "title": "Emergency Expansion Freeze Lock",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:53:32.136268",
+  "status": "ACTIVE \u2014 ALL EXPANSION FROZEN",
+  "reason": "PROJECT OFF_TRACK: 1 click/28d, 881 pages not indexed, indexed pages only +1 from recent work. Activity producing no measurable growth.",
+  "frozen_operations": {
+    "new_pages": {
+      "status": "FROZEN",
+      "includes": [
+        "blog posts",
+        "scenarios",
+        "programmatic pages",
+        "tool variants",
+        "decision pages",
+        "guide pages"
+      ]
+    },
+    "outreach": {
+      "status": "FROZEN",
+      "includes": [
+        "email pitches",
+        "contact forms",
+        "journalist responses",
+        "broken link outreach"
+      ]
+    },
+    "bulk_internal_links": {
+      "status": "FROZEN",
+      "max_allowed": 3,
+      "only_for": "3 first-click breakthrough pages"
+    },
+    "indexing_requests": {
+      "status": "FROZEN",
+      "includes": [
+        "GSC UI Request Indexing",
+        "sitemap pings"
+      ]
+    },
+    "title_meta_churn": {
+      "status": "FROZEN",
+      "only_for": "3 first-click breakthrough pages"
+    },
+    "data_asset_publishing": {
+      "status": "FROZEN"
+    },
+    "normal_daily_automation": {
+      "status": "FROZEN",
+      "replaced_by": "SAFE_RECOVERY_MODE"
+    }
+  },
+  "allowed_only": [
+    "GSC data monitoring (read-only)",
+    "indexing status audits",
+    "404 audits",
+    "noindex audits",
+    "discovered-not-indexed classification",
+    "sitemap quality audit",
+    "real page performance analysis",
+    "fixing ONLY 3 first-click breakthrough pages",
+    "cleanup planning (DO NOT execute)",
+    "reporting"
+  ],
+  "unfreeze_conditions": [
+    "first non-brand content click achieved",
+    "OR measurable indexing improvement (real pages)",
+    "OR Qasem approval to resume expansion"
+  ]
+}

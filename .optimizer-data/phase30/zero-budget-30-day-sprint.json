@@ -1,0 +1,82 @@
+{
+  "phase": 30,
+  "title": "Zero-Budget 30-Day Autonomous Sprint Plan",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:33:19.287365",
+  "sprint_start": "2026-06-17",
+  "total_budget": "$0.00",
+  "phases": {
+    "days_1_3": {
+      "name": "Foundation Lock-In",
+      "tasks": [
+        "lock no-spend workflow (DONE)",
+        "finalize 8 money page list and audit",
+        "build real-page performance dashboard",
+        "start internal authority concentration",
+        "check monetization readiness baseline"
+      ],
+      "kpi_target": "system locked, 8 money pages audited, 20-30 internal links added"
+    },
+    "days_4_7": {
+      "name": "First Production Sprint",
+      "tasks": [
+        "upgrade 4 money pages (trust/UX/intro/title)",
+        "publish or improve 1 data asset",
+        "send 5 verified email-only pitches",
+        "continue indexing monitoring",
+        "add 40-80 total internal links"
+      ],
+      "kpi_target": "4 money pages upgraded, 1 data asset live, 5 pitches sent"
+    },
+    "days_8_14": {
+      "name": "Full Deployment",
+      "tasks": [
+        "upgrade remaining 4 money pages",
+        "create 1 more data asset",
+        "send 10-15 verified email-only pitches",
+        "first content click attack (CTR fixes on pages with impressions)",
+        "thin page classification (no delete/noindex)"
+      ],
+      "kpi_target": "8 money pages fully upgraded, 2 data assets, first content click targeted"
+    },
+    "days_15_21": {
+      "name": "First Evaluation Gate",
+      "tasks": [
+        "evaluate first results (any clicks? replies? indexing movement?)",
+        "kill failed outreach channel if 0/20 replies",
+        "intensify working channel",
+        "improve snippets for pages with impressions but 0 clicks",
+        "prepare AdSense/Adsterra readiness fixes"
+      ],
+      "kpi_target": "data-driven decisions: kill or intensify based on real outcomes"
+    },
+    "days_22_30": {
+      "name": "Monthly Review + Next Cycle",
+      "tasks": [
+        "produce monthly win/loss report",
+        "identify first revenue path (monetization or traffic-first)",
+        "select next money page cluster",
+        "decide if cleanup test is safe",
+        "decide if authority channel is working (keep/kill)"
+      ],
+      "kpi_target": "clear monthly report, next money page cluster chosen, revenue path identified"
+    }
+  },
+  "success_criteria": {
+    "by_day_30": [
+      "at least 1 non-brand content click",
+      "at least 1 positive authority reply",
+      "at least 1 money page indexing improvement",
+      "impressions above baseline (530+)",
+      "monetization readiness audit complete",
+      "0 manual work requests from Qasem",
+      "$0.00 spent"
+    ],
+    "minimum_acceptable": [
+      "system running autonomously",
+      "daily workflow executing without Qasem input",
+      "measurable movement in at least 1 KPI",
+      "no spend, no risky SEO, no manual dependency"
+    ]
+  }
+}

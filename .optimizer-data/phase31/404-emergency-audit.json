@@ -1,0 +1,60 @@
+{
+  "phase": 31,
+  "title": "404 Emergency Audit \u2014 125 Not Found Pages",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:54:01.610389",
+  "severity": "EMERGENCY",
+  "total_404s": 125,
+  "data_source": "GSC UI \u2014 Pages report, Not found (404) filter",
+  "requires_export": "Full URL list needed from GSC export for precise fixes",
+  "known_404_sources": [
+    "Scenario pages deleted in V2 pruning (~2,000 removed)",
+    "Old calculator slug variants that were renamed",
+    "Programmatic pages that changed URL pattern",
+    "Deleted blog posts or drafts",
+    "Typo URLs from internal links or external sources",
+    "Old sitemap entries not cleaned up"
+  ],
+  "audit_checklist": {
+    "sitemap_contamination": {
+      "check": "Cross-reference 404 URLs against sitemap.xml",
+      "expected": "Some 404 URLs may still be in sitemap",
+      "action_if_found": "REMOVE from sitemap immediately"
+    },
+    "internal_link_contamination": {
+      "check": "Search codebase for 404 URL patterns",
+      "expected": "Residual links to deleted scenarios/tools",
+      "action_if_found": "REMOVE or update internal links"
+    },
+    "valuable_page_lost": {
+      "check": "Was any 404 a valuable page that should exist?",
+      "action_if_yes": "RECREATE page or set up 301 redirect",
+      "action_if_no": "Ensure no internal/external links point to it"
+    }
+  },
+  "priority_fixes": {
+    "urgent_sitemap": "Any 404 URL in sitemap.xml \u2192 remove immediately",
+    "urgent_internal_links": "Any 404 URL linked from indexed pages \u2192 fix links",
+    "high_impressions": "Any 404 URL with GSC impressions \u2192 recreate or redirect",
+    "low_priority": "404s with no impressions, no links, no sitemap \u2192 leave as 404"
+  },
+  "estimated_breakdown": {
+    "deleted_scenarios": "~100 (bulk of V2 pruning)",
+    "renamed_slugs": "~10-15",
+    "other_deleted_content": "~10",
+    "unknown_origin": "~5"
+  },
+  "action_plan": {
+    "step_1": "Export full 404 URL list from GSC",
+    "step_2": "Cross-reference with sitemap.xml \u2192 remove matches",
+    "step_3": "Search codebase for internal links to 404 URLs \u2192 fix",
+    "step_4": "Identify any high-impression 404s \u2192 recreate or redirect",
+    "step_5": "Update sitemap and redeploy",
+    "step_6": "Resubmit sitemap to GSC after fixes"
+  },
+  "do_not": [
+    "bulk 301 redirect everything (creates redirect chains)",
+    "ignore 404s in sitemap (confuses Google)",
+    "recreate pages without audit (may recreate thin content)"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "phase": 30,
+  "title": "Original Data Asset Engine \u2014 Zero-Budget Backlink Replacement",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:29.133876",
+  "goal": "Generate original, citeable finance micro-reports from QFINHUB calculators that earn passive citations",
+  "weekly_data_assets": [
+    {
+      "id": "mortgage-affordability-by-income",
+      "title": "Mortgage Affordability by Income Level",
+      "target_calculator": "mortgage-affordability",
+      "status": "planned"
+    },
+    {
+      "id": "debt-snowball-vs-avalanche",
+      "title": "Debt Snowball vs Avalanche Payoff Comparison",
+      "target_calculator": "debt-snowball + debt-payoff",
+      "status": "planned"
+    },
+    {
+      "id": "rent-vs-buy-scenarios",
+      "title": "Rent vs Buy Break-Even Scenarios by City",
+      "target_calculator": "rent-vs-buy decision",
+      "status": "planned"
+    },
+    {
+      "id": "compound-interest-by-contribution",
+      "title": "Compound Interest Growth by Monthly Contribution",
+      "target_calculator": "compound-interest",
+      "status": "planned"
+    },
+    {
+      "id": "retirement-gap-by-age",
+      "title": "Retirement Gap by Age and Savings Rate",
+      "target_calculator": "retirement-planning",
+      "status": "planned"
+    },
+    {
+      "id": "emergency-fund-by-expense",
+      "title": "Emergency Fund Targets by Household Expense Level",
+      "target_calculator": "emergency-fund",
+      "status": "planned"
+    },
+    {
+      "id": "loan-payment-by-apr",
+      "title": "Loan Payment Sensitivity by APR",
+      "target_calculator": "loan-calculator",
+      "status": "planned"
+    },
+    {
+      "id": "investment-return-scenarios",
+      "title": "Investment Return Scenarios Over 10/20/30 Years",
+      "target_calculator": "investment-return",
+      "status": "planned"
+    }
+  ],
+  "asset_requirements": {
+    "must_include": [
+      "original calculations from QFINHUB calculators",
+      "methodology section explaining how numbers were derived",
+      "table with clear comparison data",
+      "chart or simple visualization if possible",
+      "plain-language insight section",
+      "journalist summary (2-3 sentences for quick citation)",
+      "embed/share snippet",
+      "link to related calculator"
+    ],
+    "must_not_include": [
+      "exaggerated claims",
+      "unsupported financial advice",
+      "predictions or guarantees",
+      "paid/sponsored content"
+    ]
+  },
+  "publish_rules": {
+    "publish_only_if": "useful, original, clear methodology, no unsupported advice, connects to money page",
+    "frequency": "one data asset per week minimum",
+    "format": "blog post with data + standalone data page"
+  },
+  "weekly_plan": [],
+  "published_assets": []
+}

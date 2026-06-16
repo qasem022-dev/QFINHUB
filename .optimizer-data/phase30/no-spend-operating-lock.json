@@ -1,0 +1,116 @@
+{
+  "phase": 30,
+  "title": "No-Spend Autonomous Operating Lock \u2014 Zero-Budget Competitor Outperformance System",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:33:15.907147",
+  "status": "ACTIVE",
+  "non_negotiable_rules": {
+    "no_spend": {
+      "rule": "QFINHUB must grow through owned authority, original data, internal authority concentration, indexing discipline, free digital PR, and high-intent long-tail search",
+      "blocked_expenditures": [
+        "paid backlinks",
+        "paid guest posts",
+        "paid sponsored placements",
+        "paid directories",
+        "paid traffic",
+        "paid ads",
+        "paid SEO tools",
+        "paid API subscriptions not already prepaid",
+        "paid placements of any kind"
+      ],
+      "current_spend": "$0.00",
+      "spend_cap_forever": "$0.00",
+      "approved_free_resources": [
+        "Google Search Console (free)",
+        "Google Analytics 4 (free)",
+        "Vercel Analytics (free tier)",
+        "Vercel hosting (free tier)",
+        "GitHub (free)",
+        "Gmail SMTP (existing account)",
+        "Python stdlib",
+        "CloakBrowser (already installed)",
+        "curl/HTTP for verification",
+        "RSS feeds (free monitoring)",
+        "Google autocomplete (free)",
+        "Browser-based research (no paid tools)"
+      ]
+    },
+    "no_manual_dependency": {
+      "rule": "Do not design workflows requiring Qasem to manually fill forms, solve captchas, post in communities, or review daily tasks",
+      "blocked_manual_actions": [
+        "manual form-filling on anti-bot sites",
+        "manual captcha solving",
+        "manual community posting",
+        "daily task review by Qasem",
+        "contact-form-only opportunities without automation-safe alternative"
+      ],
+      "hold_rules": {
+        "contact_form_with_captcha": "HOLD \u2014 find email/RSS/API/public-contact alternative",
+        "contact_form_without_anti_bot": "HOLD unless legally allowed and safe",
+        "uncertain_opportunity": "HOLD \u2014 do not proceed"
+      },
+      "escalation_rules": {
+        "money_required": "ESCALATE to Qasem",
+        "legal_risk": "ESCALATE to Qasem",
+        "account_ownership_auth": "ESCALATE to Qasem",
+        "major_delete_noindex_canonical": "ESCALATE to Qasem"
+      }
+    },
+    "no_risky_seo": {
+      "blocked": [
+        "Google Indexing API for normal pages",
+        "fake traffic/clicks",
+        "link exchanges",
+        "exact-match anchor requests",
+        "followed-link requests",
+        "spam directories",
+        "mass outreach",
+        "thin tool/scenario as standalone SEO targets",
+        "bulk noindex/canonical/redirect/delete without approval",
+        "blind Validate Fix in GSC",
+        "generic AI content flood",
+        "activity=success reporting"
+      ]
+    }
+  },
+  "success_metrics": {
+    "primary": [
+      "first non-brand content click",
+      "weekly content clicks (>0)",
+      "high-value page indexing movement",
+      "real-page impressions increase",
+      "real-page average position improvement",
+      "first unpaid reply",
+      "first unpaid citation/backlink/embed",
+      "ad network approval readiness",
+      "first $1 revenue",
+      "first $10 revenue"
+    ],
+    "current_status": "OFF_TRACK \u2014 0 content clicks, 0 backlinks, 0 replies, 0 revenue"
+  },
+  "autonomous_decisions_allowed": [
+    "add contextual internal links to money pages",
+    "improve page title/meta for CTR within template rules",
+    "create/update data assets from QFINHUB calculators",
+    "send verified email-only authority pitches (max 5/day, score >=90)",
+    "classify thin pages (no delete/noindex)",
+    "update existing pages for query fit",
+    "deploy approved changes",
+    "pull GSC/GA4 data",
+    "monitor indexing status",
+    "run monetization readiness audits"
+  ],
+  "autonomous_decisions_blocked": [
+    "any action requiring payment",
+    "mass page creation",
+    "bulk noindex/delete",
+    "Google Indexing API usage",
+    "form-based outreach to anti-bot sites",
+    "paid-link requests",
+    "fake traffic/clicks",
+    "HARO auto-send",
+    "Pinterest posting",
+    "X/Twitter automated posting",
+    "PDF distribution without Auditor review"
+  ]
+}

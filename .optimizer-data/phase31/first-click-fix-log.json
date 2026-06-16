@@ -1,0 +1,43 @@
+{
+  "phase": 31,
+  "title": "First Click Breakthrough Fix Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:56:11.508659",
+  "pages_fixed": 3,
+  "fixes": {
+    "page_1": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "file": "src/lib/blog/posts.ts",
+      "changes": [
+        "TITLE: '$20,000 Loan at 8% for 5 Years: Calculate Your Exact Monthly Payment (Free Tool)' \u2192 '$20,000 Loan at 8% for 5 Years \u2014 See YOUR Monthly Payment & Full Schedule'",
+        "DESCRIPTION: Updated with 'See your personalized monthly payment' and 'YOUR exact loan' language",
+        "H2: 'Monthly Payment: $405.53 \u2014 Here's the Full Breakdown' \u2192 'What's the Monthly Payment on a $20,000 Loan at 8% for 5 Years?' (question format \u2014 Google can't snippet the answer)",
+        "CTA: 'Try it yourself' \u2192 'See YOUR exact payment' with stronger personalized language"
+      ],
+      "reason": "H2 was giving away $405.53 as snippet in SERP \u2014 users got answer without clicking. Changed to question to force click for answer.",
+      "expected_effect": "CTR from 0% to 1-3% at pos 10.9 = 1-4 clicks/week"
+    },
+    "page_2": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "file": "src/lib/decision-pages/index.ts",
+      "changes": [
+        "TITLE: 'Rent vs Buy on a $100,000 Income: The 2026 Break-Even Analysis' \u2192 'Rent vs Buy Calculator: Should You Rent or Buy a Home in 2026? (Free Tool)'",
+        "DESCRIPTION: Broadened from $100k-specific to general rent-vs-buy with personalized angle"
+      ],
+      "reason": "Only 2 impressions at pos 4.0 \u2014 title was too narrow ($100k income only). Broadened to capture 'rent vs buy calculator' queries while keeping unique value.",
+      "expected_effect": "Impressions increase 10-50x as page matches broader queries; clicks follow at pos 4"
+    },
+    "page_3": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "file": "src/lib/decision-pages/index.ts",
+      "changes": [
+        "TITLE: 'How Much House Can I Afford? Get Your Max Budget \u2014 Free Calculator (2026)' \u2192 'How Much House Can I Afford? Free Calculator \u2014 See Your Max Budget (2026)'",
+        "DESCRIPTION: Stronger action language 'instantly see', 'YOUR exact number', 'no personal data required'"
+      ],
+      "reason": "4 impressions at pos 7.5 \u2014 title was passive ('Get Your Max Budget'). Made more action-oriented ('See Your Max Budget') and added privacy signal.",
+      "expected_effect": "Small CTR improvement at pos 7.5; impressions may grow with stronger title match"
+    }
+  },
+  "deploy_status": "PENDING",
+  "measurement_start": "After Google recrawls (est. 3-10 days for blog, 7-21 days for decision pages)"
+}

@@ -1,0 +1,31 @@
+{
+  "phase": 30,
+  "title": "Indexing Discipline System \u2014 Natural Crawl Optimization",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:57.901733",
+  "core_rules": {
+    "do_not_blindly_validate_fix": true,
+    "do_not_repeatedly_request_indexing": true,
+    "do_not_use_google_indexing_api": true,
+    "focus_only_on_important_pages": true,
+    "reduce_discovery_confusion": true,
+    "improve_internal_links_to_important_pages": true,
+    "ensure_sitemap_has_only_valuable_indexable_pages": true,
+    "keep_thin_pages_from_stealing_crawl_priority": true
+  },
+  "daily_monitoring": [
+    "monitor indexed count",
+    "monitor discovered-not-indexed count",
+    "monitor crawled-not-indexed count",
+    "monitor GSC URL Inspection for 7 requested URLs",
+    "check only high-value pages for issues",
+    "record any movement"
+  ],
+  "validate_fix_policy": "DO_NOT_VALIDATE_YET \u2014 only validate when fix deployed, verified, and URLs identified",
+  "current_baseline": {
+    "indexed_pages": "~238 (GSC UI last confirmed)",
+    "discovered_not_indexed": "~1,991 (GSC UI last confirmed)",
+    "sitemap_urls": 649
+  },
+  "discipline_log": []
+}

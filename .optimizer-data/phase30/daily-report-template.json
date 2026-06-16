@@ -1,0 +1,84 @@
+{
+  "phase": 30,
+  "title": "Phase 30 Daily Run Report Template",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:40:17.573531",
+  "template": {
+    "run_id": "phase30-YYYY-MM-DD",
+    "date": "YYYY-MM-DD",
+    "timestamp": "ISO_TIMESTAMP",
+    "run_type": "AUTONOMOUS_CRON",
+    "status": {
+      "on_track_off_track": "OFF_TRACK",
+      "mode_selected": "CONTENT_CLICK_MODE|INDEXING_MODE|...",
+      "first_run": true
+    },
+    "gsc_data": {
+      "impressions_7d": 0,
+      "clicks_7d": 0,
+      "content_clicks_7d": 0,
+      "avg_position_7d": 0,
+      "pages_with_impressions": 0,
+      "data_freshness": "FRESH|STALE",
+      "date_range": "YYYY-MM-DD to YYYY-MM-DD"
+    },
+    "money_pages_touched": [],
+    "internal_links_added": 0,
+    "data_assets_updated": [],
+    "authority_emails": {
+      "prepared": 0,
+      "sent": 0,
+      "score_minimum_met": false,
+      "email_only": true
+    },
+    "outreach": {
+      "replies_checked": false,
+      "new_replies": 0,
+      "backlinks": 0,
+      "citations": 0,
+      "embeds": 0
+    },
+    "indexing": {
+      "indexed_high_value_pages": "no change",
+      "discovered_not_indexed_movement": "no change",
+      "validate_fix_used": false,
+      "indexing_api_used": false
+    },
+    "monetization": {
+      "ad_approval_status": "NOT_APPLIED",
+      "revenue": "$0.00"
+    },
+    "compliance": {
+      "cost_spent": "$0.00",
+      "manual_work_required": 0,
+      "paid_tools_used": 0,
+      "google_indexing_api_used": false,
+      "contact_forms_used": 0,
+      "risky_seo_detected": false,
+      "no_spend_lock_violated": false,
+      "no_form_policy_violated": false
+    },
+    "risks_blocked": [],
+    "stopped_or_killed": [],
+    "measurable_movement": {
+      "non_brand_click": false,
+      "impressions_increase": false,
+      "high_value_page_indexed": false,
+      "positive_reply": false,
+      "unpaid_citation": false,
+      "ad_approval": false,
+      "first_revenue": false
+    },
+    "next_run_action_queue": [],
+    "notes": ""
+  },
+  "success_cannot_be_claimed_unless": [
+    "non-brand content click occurred",
+    "real-page impressions increased",
+    "high-value page became indexed",
+    "positive outreach reply received",
+    "unpaid backlink/citation/embed obtained",
+    "ad approval achieved",
+    "first $1 revenue earned"
+  ]
+}

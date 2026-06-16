@@ -1,0 +1,38 @@
+{
+  "backup_type": "PHASE_19_TO_PHASE_30_TRANSITION",
+  "backup_timestamp": "2026-06-17T00:39:24.777633",
+  "cron_job": {
+    "job_id": "dcba952b4c45",
+    "name": "QFINHUB Phase 19 Autonomous Daily Growth Loop (BACKUP)",
+    "skills": [
+      "qfinhub-quick",
+      "gsc-live-data",
+      "qfinhub-deploy-gsc"
+    ],
+    "schedule": "0 15 * * *",
+    "repeat": "forever",
+    "deliver": "telegram:8752503993",
+    "model_provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "enabled_toolsets": [
+      "web",
+      "terminal",
+      "file",
+      "cronjob",
+      "skills",
+      "session_search"
+    ],
+    "last_run_at": "2026-06-15T15:35:52.351580+03:00",
+    "last_status": "ok",
+    "state": "scheduled"
+  },
+  "environment_note": "No custom environment variables. Secrets excluded per policy.",
+  "workflow_entrypoint": "Phase 19 prompt loaded via qfinhub-quick skill \u2192 13-step daily growth loop",
+  "log_path": "~/.hermes/cron/output/dcba952b4c45/",
+  "rollback_instructions": {
+    "method_1_cronjob_api": "cronjob action=update job_id=dcba952b4c45 prompt='<original Phase 19 prompt>' skills=['qfinhub-quick','gsc-live-data','qfinhub-deploy-gsc']",
+    "method_2_manual": "hermes cron update dcba952b4c45 --restore-from-backup .optimizer-data/phase30/cron-backup-before-phase30.json",
+    "verify_after_rollback": "cronjob action=list \u2192 confirm job_id=dcba952b4c45 has skills=['qfinhub-quick','gsc-live-data','qfinhub-deploy-gsc']",
+    "rollback_triggers": "failed deploy, accidental paid action, contact-form automation, risky SEO, indexing API usage, sitemap damage, mass page creation, manual intervention requirement"
+  }
+}

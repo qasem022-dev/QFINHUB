@@ -1,0 +1,107 @@
+{
+  "phase": 31,
+  "title": "Indexing Cleanup Plan \u2014 DO NOT EXECUTE WITHOUT APPROVAL",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:56:11.508659",
+  "status": "PLAN_ONLY \u2014 awaiting Qasem approval for execution",
+  "categories": {
+    "urgent_safe_now": [
+      {
+        "action": "Remove 404 URLs from sitemap.xml",
+        "estimated_count": "20-50",
+        "risk": "LOW",
+        "effect": "Reduce crawl waste, improve Google trust"
+      },
+      {
+        "action": "Verify noindex pages NOT in sitemap",
+        "estimated_count": "need audit",
+        "risk": "LOW",
+        "effect": "Eliminate conflicting signals"
+      },
+      {
+        "action": "Fix any 404 URL with active internal links",
+        "estimated_count": "5-15",
+        "risk": "LOW",
+        "effect": "Better user experience, less crawl waste"
+      }
+    ],
+    "fixes_needing_approval": [
+      {
+        "action": "Recreate high-value 404 pages that should exist",
+        "estimated_count": "3-10",
+        "risk": "MEDIUM",
+        "reason": "Need to verify page was valuable before recreating"
+      },
+      {
+        "action": "Reduce tool variant count in sitemap (225\u2192clean only)",
+        "estimated_count": "~100 reduction",
+        "risk": "MEDIUM",
+        "reason": "May reduce discovery of some useful variants"
+      }
+    ],
+    "cleanup_candidates": [
+      {
+        "action": "Noindex remaining thin discovered-not-indexed pages (D/E/F class)",
+        "estimated_count": "300-400",
+        "risk": "MEDIUM",
+        "reason": "Mass noindex requires careful audit"
+      },
+      {
+        "action": "Remove empty scenario sitemap from robots.txt",
+        "estimated_count": 1,
+        "risk": "LOW",
+        "reason": "Empty sitemap declared but not needed"
+      }
+    ],
+    "noindex_intended": [
+      {
+        "action": "KEEP noindex on geo pages (591), formula tools (~386), thin scenarios (~2,059)",
+        "reason": "Intentional \u2014 these are thin pages"
+      }
+    ],
+    "sitemap_removal_candidates": [
+      {
+        "action": "404 URLs currently in sitemap",
+        "estimated_count": "20-50"
+      },
+      {
+        "action": "Noindex pages accidentally in sitemap",
+        "estimated_count": "0 (verify)"
+      },
+      {
+        "action": "Thin tool variants with no impressions",
+        "estimated_count": "100-150"
+      }
+    ],
+    "redirect_candidates": [
+      {
+        "action": "301 redirect valuable 404 pages to closest live page",
+        "estimated_count": "3-10"
+      },
+      {
+        "action": "Canonical non-canonical variant URLs",
+        "estimated_count": 41
+      }
+    ],
+    "leave_as_is": [
+      {
+        "action": "Alternative canonical pages (41) \u2014 canonical is working",
+        "reason": "Google handling correctly"
+      },
+      {
+        "action": "Crawled not indexed (5) \u2014 too few to matter",
+        "reason": "Low priority"
+      },
+      {
+        "action": "Redirect page (1) \u2014 verify correct then leave",
+        "reason": "Low priority"
+      },
+      {
+        "action": "Duplicate canonical (1) \u2014 verify then leave",
+        "reason": "Low priority"
+      }
+    ]
+  },
+  "execution_gate": "Qasem must approve ANY cleanup execution. This plan is for review only.",
+  "estimated_impact": "After cleanup: crawl waste reduced ~30-50%, clearer indexing signals, Google trust should improve over 14-30 days"
+}

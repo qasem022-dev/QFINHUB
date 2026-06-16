@@ -1,0 +1,62 @@
+{
+  "phase": 30,
+  "title": "Internal Authority Concentration Engine",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:29.133876",
+  "goal": "Move internal authority from scattered pages into the 8 money pages",
+  "daily_actions": {
+    "target_range": "10-25 contextual internal links to money pages",
+    "rules": [
+      "use only relevant source pages",
+      "do not link to thin tool/scenario variants as SEO targets",
+      "use natural anchors (no exact-match spam)",
+      "avoid footer/sidebar/sitewide spam",
+      "prefer indexed source pages with impressions",
+      "every link must have: source URL, target URL, anchor, context, reason"
+    ],
+    "source_priority": [
+      "Homepage",
+      "Calculator hub",
+      "Indexed guides",
+      "Indexed blogs",
+      "Decision pages",
+      "Scenario pages (support only, not authority targets)",
+      "Widget pages"
+    ]
+  },
+  "daily_log": [],
+  "concentration_targets": {
+    "mortgage-calculator": {
+      "current_links": "12 from calculator-blog-links.ts + inline blog links",
+      "target_total": "25+"
+    },
+    "mortgage-affordability": {
+      "current_links": "8",
+      "target_total": "20+"
+    },
+    "loan-calculator": {
+      "current_links": "7",
+      "target_total": "18+"
+    },
+    "compound-interest": {
+      "current_links": "8",
+      "target_total": "20+"
+    },
+    "investment-return": {
+      "current_links": "9",
+      "target_total": "22+"
+    },
+    "retirement-planning": {
+      "current_links": "7",
+      "target_total": "18+"
+    },
+    "pay-off-debt-or-invest": {
+      "current_links": "unknown",
+      "target_total": "15+"
+    },
+    "rent-vs-buy": {
+      "current_links": "unknown",
+      "target_total": "15+"
+    }
+  }
+}

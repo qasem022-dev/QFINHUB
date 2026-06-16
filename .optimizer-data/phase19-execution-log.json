@@ -1,26 +1,25 @@
 {
-  "run_id": "phase19-2026-06-15",
-  "date": "2026-06-15",
-  "timestamp": "2026-06-15T12:33:48.600934",
+  "run_id": "phase19-2026-06-17",
+  "date": "2026-06-17",
+  "timestamp": "2026-06-17T00:29:00.865160",
   "gsc_data": {
-    "source": "CACHED \u2014 token dead since Jun 13",
-    "impressions": 411,
+    "source": "API_FRESH",
+    "impressions": 530,
     "clicks": 0,
-    "avg_position": 37.3,
-    "pages_with_impressions": 46,
-    "date_range": "2026-06-04 to 2026-06-10",
-    "freshness": "STALE_48HRS \u2014 last fresh pull Jun 13, token dead"
+    "avg_position": 34.9,
+    "pages_with_impressions": 69,
+    "date_range": "2026-06-07 to 2026-06-13",
+    "freshness": "FRESH \u2014 pulled Jun 16 21:12 UTC by cron ae8940265cb8"
   },
   "actions_taken": {
     "ctr_fixes": 0,
     "template_meta_fixes": 0,
-    "internal_links_added": 8,
+    "internal_links_added": 14,
     "new_pages": 0,
     "outreach_sent": 0,
     "outreach_replies": 0,
-    "tool_audits": 0,
-    "blog_content_upgrades": 5,
-    "blog_url_fixes": 1,
+    "tool_audits": 22,
+    "blog_content_upgrades": 0,
     "deploy": "deployed"
   },
   "freeze_compliance": {
@@ -29,20 +28,23 @@
     "outreach_frozen": "RESPECTED",
     "improve_existing_priority": "RESPECTED"
   },
-  "observations": {
-    "top_impression_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (124 imp, pos 10.9)",
-    "internal_links_added_to": [
-      "understanding-tax-brackets \u2192 tax/philadelphia-pa (13 imp, pos 18.3)",
-      "rent-vs-buy \u2192 rent-vs-buy-with-100k-income (2 imp, pos 4.0)",
-      "how-much-mortgage-afford \u2192 how-much-house-can-i-afford (4 imp, pos 7.5)",
-      "compound-interest-explained \u2192 retirement-planning (11 imp, pos 81.5)",
-      "retirement-planning-could-cost \u2192 retirement-planning URL fix",
-      "calculator-blog-links: +2 blogs to investment-return"
-    ],
-    "deep_calculator_rankings": "tax-calculator (pos 88), investment-return (pos 82.5), retirement-planning (pos 81.5) \u2014 DA bottleneck persists",
-    "impression_decline": "7.8% decline vs previous 7d (446\u2192411) \u2014 need fresh GSC pull to confirm trend",
-    "zero_content_clicks": "0 clicks on 411 impressions. Token dead \u2014 cannot verify if any clicks appeared since Jun 10.",
-    "gsc_token_dead": "TOKEN DEAD since ~Jun 13. Qasem must re-auth via desktop-oauth-refresh.py"
+  "internal_links_detail": {
+    "debt-snowball": "+2 (4 total)",
+    "savings-goal": "+2 (5 total)",
+    "fire-calculator": "+2 (5 total)",
+    "amortization-schedule": "+2 (5 total)",
+    "percentage-calculator": "+2 (4 total)",
+    "refinance-calculator": "+2 (5 total)",
+    "social-security": "+2 (5 total)"
   },
-  "commit": "4e23609"
+  "observations": {
+    "impression_growth": "+119 (411\u2192530, +29% vs Jun 15 cached data)",
+    "pages_growth": "+23 pages w/ imp (46\u219269)",
+    "position_improvement": "37.3\u219234.9 (-2.4 points)",
+    "top_page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment (124 imp, pos 10.9 \u2014 STILL NEAR PAGE 1)",
+    "zero_clicks": "0 clicks on 530 impressions across 69 pages",
+    "outreach": "FROZEN \u2014 70 sent, 0 replies, 0 backlinks"
+  },
+  "commit": "09bb71c",
+  "vercel_deployment": "Verified HTTP 200"
 }

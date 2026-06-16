@@ -369,9 +369,9 @@ export const decisionPages: DecisionPage[] = [
   // ═══════════════════════════════════════════════════════════
   {
     slug: "rent-vs-buy-with-100k-income",
-    title: "Rent vs Buy on a $100,000 Income: The 2026 Break-Even Analysis",
+    title: "Rent vs Buy Calculator: Should You Rent or Buy a Home in 2026? (Free Tool)",
     description:
-      "Should you rent or buy a home on a $100k salary? Compare monthly costs, 5-year net worth impact, tax benefits, and opportunity costs. Free rent vs buy calculator included.",
+      "Is renting or buying better for you? Compare monthly costs, 5-year net worth, and break-even point — with numbers personalized for your income. Free rent vs buy calculator, no signup.",
     cluster: "mortgage",
     question:
       "I earn $100,000 per year. Should I continue renting or buy a home?",
@@ -616,9 +616,9 @@ export const decisionPages: DecisionPage[] = [
   // ═══════════════════════════════════════════════════════════
   {
     slug: "how-much-house-can-i-afford",
-    title: "How Much House Can I Afford? Get Your Max Budget — Free Calculator (2026)",
+    title: "How Much House Can I Afford? Free Calculator — See Your Max Budget (2026)",
     description:
-      "Enter your income and debts to find your max home price in 30 seconds. Income-based tables ($50K-$200K), DTI breakdown, and free calculator — no signup required. See exactly what you can afford.",
+      "Enter your income to instantly see your max home price. Tables for $50K-$200K incomes, DTI breakdown, and free calculator showing YOUR exact number — no signup, no personal data required.",
     cluster: "mortgage",
     question: "Based on my income, monthly debts, and savings, what price home can I realistically afford?",
     shortAnswer:

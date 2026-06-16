@@ -1,0 +1,37 @@
+{
+  "phase": 30,
+  "title": "Thin Page / Scenario Control System \u2014 Authority Dilution Prevention",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:57.901733",
+  "goal": "Stop thin pages from diluting authority without bulk deletion",
+  "rules": {
+    "do_not_delete_noindex_in_bulk_yet": true,
+    "classification_system": {
+      "A_supports_money_page": "Scenario/tool that directly supports a money page \u2014 keep, link to parent",
+      "B_has_impressions": "Has GSC impressions \u2014 keep indexable, monitor",
+      "C_duplicate_thin": "Duplicate or thin content \u2014 reduce internal links, noindex candidate",
+      "D_cannibalizes_parent": "Competes with parent page for same queries \u2014 canonical to parent",
+      "E_no_value_no_demand": "No impressions, no demand, no unique value \u2014 cleanup candidate",
+      "F_cleanup_candidate": "Ready for noindex/removal when safe"
+    }
+  },
+  "allowed_actions": [
+    "reduce internal links pointing to thin variants",
+    "add links from useful scenarios to parent calculators",
+    "keep parent pages as authority targets",
+    "prepare cleanup candidates (classification only)"
+  ],
+  "blocked_actions": [
+    "mass noindex",
+    "mass canonical",
+    "mass deletion",
+    "mass sitemap removal",
+    "optimizing thin variants as winners"
+  ],
+  "page_counts": {
+    "tools_total": "~891 (503 clean + 386 formula + 2 with GSC)",
+    "scenarios_total": "2,061 (all hash-ID, all noindexed except 2 with GSC impressions)",
+    "geo_pages": "594 (591 noindexed, 3 with GSC kept)"
+  },
+  "control_log": []
+}

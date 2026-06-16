@@ -1,0 +1,196 @@
+{
+  "phase": 30,
+  "title": "Eight Money Page War Room \u2014 Authority Concentration Targets",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:03.143936",
+  "gsc_baseline": {
+    "total_impressions_7d": 530,
+    "total_clicks_7d": 0,
+    "avg_position_7d": 34.9,
+    "pages_with_impressions": 69,
+    "data_range": "Jun 7-13, 2026"
+  },
+  "primary_money_pages": {
+    "mortgage-calculator": {
+      "url": "/calculators/mortgage-calculator",
+      "index_status": "INDEXED (confirmed Tier 1)",
+      "gsc_impressions": "unknown (aggregate only)",
+      "gsc_clicks": 0,
+      "gsc_position": "unknown",
+      "internal_links_from_blog": 12,
+      "supporting_pages": [
+        "monthly-payment blog",
+        "200k mortgage blog",
+        "PITI blog",
+        "rent-vs-buy blog"
+      ],
+      "quality_issues": [
+        "title may not be curiosity-hook optimized",
+        "intro length check needed"
+      ],
+      "immediate_action": "verify title/meta CTR alignment, add FAQ schema if missing, strengthen trust block",
+      "expected_kpi": "position improvement for mortgage queries",
+      "measurement_window": "14-21 days"
+    },
+    "mortgage-affordability": {
+      "url": "/calculators/mortgage-affordability",
+      "index_status": "INDEXED (confirmed Tier 1)",
+      "gsc_impressions": "unknown",
+      "gsc_clicks": 0,
+      "gsc_position": "unknown",
+      "internal_links_from_blog": 8,
+      "supporting_pages": [
+        "100k salary blog",
+        "housing affordability blog",
+        "widget embed page"
+      ],
+      "quality_issues": [
+        "widget embed CTA present but could be more prominent"
+      ],
+      "immediate_action": "add FAQ from real queries, improve above-fold answer visibility",
+      "expected_kpi": "impressions increase for affordability long-tail",
+      "measurement_window": "14-21 days"
+    },
+    "loan-calculator": {
+      "url": "/calculators/loan-calculator",
+      "index_status": "INDEXED (confirmed Tier 1)",
+      "gsc_impressions": "unknown",
+      "gsc_clicks": 0,
+      "gsc_position": "unknown",
+      "internal_links_from_blog": 7,
+      "supporting_pages": [
+        "$20K loan blogs (3 variants)",
+        "student loan blog"
+      ],
+      "quality_issues": [
+        "could benefit from more loan-type examples"
+      ],
+      "immediate_action": "add worked examples for different loan types, FAQ section",
+      "expected_kpi": "impressions for specific loan queries",
+      "measurement_window": "14-21 days"
+    },
+    "compound-interest": {
+      "url": "/calculators/compound-interest",
+      "index_status": "INDEXED (confirmed Tier 1)",
+      "gsc_impressions": "unknown",
+      "gsc_clicks": 0,
+      "gsc_position": "unknown",
+      "internal_links_from_blog": 8,
+      "supporting_pages": [
+        "compound interest explained blog",
+        "inflation blog",
+        "investment withdrawals blog"
+      ],
+      "quality_issues": [
+        "formula not prominently displayed",
+        "real-world example could be stronger"
+      ],
+      "immediate_action": "add formula section, improve worked example with real numbers",
+      "expected_kpi": "better engagement, potential impressions",
+      "measurement_window": "14-21 days"
+    },
+    "investment-return": {
+      "url": "/calculators/investment-return",
+      "index_status": "INDEXED (confirmed Tier 1)",
+      "gsc_impressions": 47,
+      "gsc_clicks": 0,
+      "gsc_position": 82.5,
+      "internal_links_from_blog": 9,
+      "supporting_pages": [
+        "compound interest blog",
+        "inflation blog",
+        "retirement planning blog"
+      ],
+      "quality_issues": [
+        "DA bottleneck (pos 82.5)",
+        "blog links added but not enough to overcome DA gap"
+      ],
+      "immediate_action": "continue internal link building, add FAQ section",
+      "expected_kpi": "position improvement toward page 3-4",
+      "measurement_window": "21-28 days (deep page)"
+    },
+    "retirement-planning": {
+      "url": "/calculators/retirement-planning",
+      "index_status": "INDEXED (confirmed Tier 1)",
+      "gsc_impressions": 11,
+      "gsc_clicks": 0,
+      "gsc_position": 81.5,
+      "internal_links_from_blog": 7,
+      "supporting_pages": [
+        "retirement planning guide",
+        "SS COLA blog",
+        "retirement cost blog"
+      ],
+      "quality_issues": [
+        "DA bottleneck (pos 81.5)",
+        "URL was wrong and recently fixed"
+      ],
+      "immediate_action": "add more internal links, improve trust/methodology section",
+      "expected_kpi": "position improvement",
+      "measurement_window": "21-28 days"
+    },
+    "pay-off-debt-or-invest": {
+      "url": "/decision/pay-off-debt-or-invest",
+      "index_status": "INDEXED",
+      "gsc_impressions": "unknown",
+      "gsc_clicks": 0,
+      "gsc_position": "unknown",
+      "internal_links_from_blog": "unknown (decision page)",
+      "supporting_pages": [
+        "debt snowball blog",
+        "credit card debt blog",
+        "investment blog"
+      ],
+      "quality_issues": [
+        "decision page may not be deeply integrated with calculators"
+      ],
+      "immediate_action": "strengthen decision-to-calculator links, improve intro clarity",
+      "expected_kpi": "impressions for 'pay off debt or invest' queries",
+      "measurement_window": "14-21 days"
+    },
+    "rent-vs-buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "index_status": "INDEXED",
+      "gsc_impressions": 2,
+      "gsc_clicks": 0,
+      "gsc_position": 4.0,
+      "internal_links_from_blog": "has link from rent-vs-buy blog",
+      "supporting_pages": [
+        "rent-vs-buy blog",
+        "mortgage affordability calc"
+      ],
+      "quality_issues": [
+        "position 4.0 but only 2 impressions \u2014 very low volume or query mismatch"
+      ],
+      "immediate_action": "check if position 4.0 is for a very low-volume query, expand query coverage",
+      "expected_kpi": "more impressions if query coverage expanded",
+      "measurement_window": "14-21 days"
+    }
+  },
+  "secondary_money_pages": {
+    "simple-interest-calculator": {
+      "priority": "medium",
+      "action": "audit and add internal links"
+    },
+    "capital-gains-tax-calculator": {
+      "priority": "medium",
+      "action": "audit and add internal links"
+    },
+    "debt-snowball-calculator": {
+      "priority": "medium",
+      "action": "audit, links added today (+2)"
+    },
+    "mortgage-affordability-widget": {
+      "priority": "high",
+      "action": "promote embed CTA on calculator page"
+    },
+    "emergency-fund-decision": {
+      "priority": "medium",
+      "action": "audit decision page integration"
+    },
+    "retirement-withdrawal-calculator": {
+      "priority": "medium",
+      "action": "audit and add internal links"
+    }
+  }
+}

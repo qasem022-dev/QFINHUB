@@ -1,0 +1,30 @@
+{
+  "phase": 31,
+  "title": "Phase 30 Cron \u2192 Safe Recovery Mode Transition",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:53:32.136268",
+  "cron_job_id": "dcba952b4c45",
+  "cron_name": "QFINHUB Phase 31 \u2014 SAFE RECOVERY MODE",
+  "status": "ACTIVE",
+  "allowed_in_safe_recovery": [
+    "run audits (read GSC data, analyze indexing, classify pages)",
+    "monitor GSC data (read-only, no requests)",
+    "produce reports to .optimizer-data/phase31/",
+    "fix ONLY 3 approved first-click breakthrough pages",
+    "verify HTTP 200 on key pages",
+    "report measurable results"
+  ],
+  "blocked_in_safe_recovery": [
+    "new page creation",
+    "outreach sends",
+    "bulk internal links (>3/run)",
+    "indexing requests",
+    "Validate Fix",
+    "Google Indexing API",
+    "cleanup execution",
+    "title/meta churn",
+    "data asset publishing",
+    "deploy unless fixing approved pages"
+  ],
+  "exit_safe_recovery": "Requires Qasem approval"
+}

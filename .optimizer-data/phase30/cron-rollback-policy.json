@@ -1,0 +1,45 @@
+{
+  "phase": 30,
+  "title": "Phase 30 Cron Rollback Policy",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:39:24.777633",
+  "active_cron": {
+    "job_id": "dcba952b4c45",
+    "phase": 30,
+    "backup_file": ".optimizer-data/phase30/cron-backup-before-phase30.json"
+  },
+  "rollback_triggers": {
+    "immediate_rollback": [
+      "failed deploy that breaks site",
+      "accidental paid action (any tool requesting payment)",
+      "contact-form automation detected",
+      "Google Indexing API usage detected",
+      "sitemap damage (invalid XML, mass URL removal)",
+      "mass page creation (>3 new pages in one run)",
+      "bulk noindex/canonical/delete/redirect without approval"
+    ],
+    "pause_and_review": [
+      "2 consecutive runs with no measurable movement",
+      "unexpected error in daily lock or config read",
+      "any action blocked by no-spend lock being attempted",
+      "manual intervention required by Qasem"
+    ]
+  },
+  "rollback_procedure": {
+    "step_1": "STOP: cronjob action=pause job_id=dcba952b4c45",
+    "step_2": "RESTORE: cronjob action=update job_id=dcba952b4c45 with Phase 19 prompt and skills",
+    "step_3": "VERIFY: cronjob action=list \u2192 confirm skills=['qfinhub-quick','gsc-live-data','qfinhub-deploy-gsc']",
+    "step_4": "RESUME: cronjob action=resume job_id=dcba952b4c45",
+    "step_5": "REPORT: create .optimizer-data/phase30/cron-rollback-incident-YYYY-MM-DD.json",
+    "step_6": "WAIT: do not re-enable Phase 30 without Qasem approval"
+  },
+  "incident_report_template": {
+    "incident_date": "",
+    "trigger": "",
+    "actions_taken": "",
+    "damage_assessment": "",
+    "root_cause": "",
+    "prevention": "",
+    "qasem_approval_required": true
+  }
+}

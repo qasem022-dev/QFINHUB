@@ -1,0 +1,67 @@
+{
+  "phase": 31,
+  "title": "First Click Breakthrough \u2014 3 Pages Selected for Emergency Fix",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:54:29.914273",
+  "selection_criteria": "real pages, indexed, impressions > 0, position 5-30, clear user intent, fixable quickly",
+  "pages": {
+    "page_1": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "page_type": "blog",
+      "primary_query": "20000 loan 8 percent 5 years monthly payment",
+      "current_position": 10.9,
+      "current_impressions_7d": 124,
+      "current_clicks": 0,
+      "why_no_click": "Position 10.9 \u2014 near bottom of page 1. Snippet may be giving away the payment amount ($405.53) so users don't need to click. Title is descriptive not curiosity-driven. Calculator CTA may not be prominent enough.",
+      "competitor_weakness": "Competitors give answer in snippet too \u2014 opportunity to differentiate with 'See YOUR exact payment with amortization schedule' hook",
+      "fix_plan": [
+        "Improve title: from descriptive to curiosity hook (e.g. '$20,000 Loan at 8%: See YOUR Exact Monthly Payment & Full Schedule')",
+        "Add stronger calculator CTA above the fold",
+        "Ensure the answer ($405.53) is visible but requires click for full schedule",
+        "Add FAQ schema with 'What is the monthly payment for a $20,000 loan at 8%?'",
+        "Add 2-3 internal links from this page to loan-calculator (money page)"
+      ],
+      "expected_effect": "CTR improvement from 0% to 1-3% at position 10.9 = 1-4 clicks/week",
+      "measurement_window": "7-14 days after Google recrawls"
+    },
+    "page_2": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "page_type": "decision",
+      "primary_query": "rent vs buy with 100k income",
+      "current_position": 4.0,
+      "current_impressions_7d": 2,
+      "current_clicks": 0,
+      "why_no_click": "Only 2 impressions despite position 4.0 \u2014 the query is very low volume OR position 4 is for an ultra-specific query. Page may not match broader 'rent vs buy' queries.",
+      "competitor_weakness": "Most rent vs buy pages are generic \u2014 QFINHUB can capture specific-income scenarios",
+      "fix_plan": [
+        "Check if page title matches the actual query driving position 4",
+        "Expand page to cover 'rent vs buy calculator' queries (not just 100k income)",
+        "Add a rent-vs-buy calculator CTA prominently",
+        "Add FAQ: 'Is it better to rent or buy on a $100k salary?'",
+        "Add internal links to mortgage affordability calculator"
+      ],
+      "expected_effect": "If query coverage expands, impressions could grow 10-50x, clicks likely at position 4",
+      "measurement_window": "14-21 days"
+    },
+    "page_3": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "page_type": "decision",
+      "primary_query": "how much house can i afford",
+      "current_position": 7.5,
+      "current_impressions_7d": 4,
+      "current_clicks": 0,
+      "why_no_click": "4 impressions at position 7.5 \u2014 very low volume. Either the query is niche or the page isn't ranking for the broader 'how much house can i afford' query.",
+      "competitor_weakness": "Big sites have mortgage calculators but often lead-gen focused \u2014 QFINHUB's free/no-signup angle can differentiate",
+      "fix_plan": [
+        "Improve title for broader 'how much house can i afford' query",
+        "Add interactive affordability calculator inline (not just link)",
+        "Add example: '$100k salary can afford ~$XXX house at 7%'",
+        "Add FAQ: 'How much house can I afford on my salary?'",
+        "Add internal links to mortgage-affordability calculator (money page)"
+      ],
+      "expected_effect": "Impressions increase if page matches broader query, clicks follow at position 7.5",
+      "measurement_window": "14-21 days"
+    }
+  },
+  "note": "These 3 pages are the best candidates based on available data. THE $20K LOAN BLOG AT POSITION 10.9 WITH 124 IMPRESSIONS IS THE #1 PRIORITY for first click."
+}

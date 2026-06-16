@@ -1,0 +1,102 @@
+{
+  "phase": 31,
+  "title": "GSC Indexing Root Cause Audit \u2014 881 Not Indexed Pages",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:53:32.136268",
+  "baseline_data": {
+    "source": "Qasem GSC UI screenshot \u2014 Jun 17, 2026",
+    "indexed_pages": 286,
+    "not_indexed_pages": 881,
+    "newly_indexed_from_recent_work": 1,
+    "total_known_pages": 1167
+  },
+  "breakdown_by_reason": {
+    "404_not_found": {
+      "count": 125,
+      "severity": "HIGH \u2014 sitemap/internal link contamination likely",
+      "sample_urls": "need GSC export",
+      "url_types_expected": [
+        "deleted scenarios",
+        "old slug variants",
+        "programmatic pages removed",
+        "typo URLs"
+      ],
+      "likely_source": "sitemap containing deleted pages + residual internal links",
+      "in_sitemap_likely": "some \u2014 needs verification",
+      "waste_crawl_budget": "YES \u2014 Google spends resources on dead URLs",
+      "decision": "FIX \u2014 remove from sitemap + fix internal links + recreate if valuable"
+    },
+    "noindex_tag": {
+      "count": 205,
+      "severity": "MEDIUM \u2014 may be intentional but verify",
+      "sample_urls": "need GSC export",
+      "url_types_expected": [
+        "geo pages (591 noindexed, 3 kept)",
+        "formula tool variants (386 noindexed)",
+        "thin scenarios (2059+ noindexed)"
+      ],
+      "likely_source": "Phase 2 noindex rules + V2 correction",
+      "in_sitemap_likely": "should NOT be \u2014 verify",
+      "waste_crawl_budget": "YES if in sitemap \u2014 confuses Google",
+      "decision": "AUDIT \u2014 verify intentional, remove from sitemap if present"
+    },
+    "discovered_currently_not_indexed": {
+      "count": 503,
+      "severity": "CRITICAL \u2014 largest group, Google knows but refuses to index",
+      "sample_urls": "need GSC export",
+      "url_types_expected": [
+        "thin tool variants",
+        "low-value scenarios",
+        "duplicate content",
+        "low-quality programmatic pages",
+        "some real pages buried in noise"
+      ],
+      "likely_source": "sitemap + internal links to low-value pages",
+      "in_sitemap_likely": "partially \u2014 sitemap has ~649 URLs but some may be these",
+      "waste_crawl_budget": "CRITICAL \u2014 Google's crawl budget going to unworthy pages",
+      "decision": "CLASSIFY \u2014 only A/B/C pages worth improving, reduce internal links to D/E/F"
+    },
+    "alternative_page_with_proper_canonical": {
+      "count": 41,
+      "severity": "LOW-MEDIUM \u2014 canonical working but variants exist",
+      "sample_urls": "need GSC export",
+      "url_types_expected": [
+        "tool variants with canonical to parent",
+        "scenario pages canonicalized",
+        "parameter URLs"
+      ],
+      "likely_source": "canonical tags pointing variants to parent pages",
+      "in_sitemap_likely": "should NOT be",
+      "waste_crawl_budget": "MINIMAL if canonical correct",
+      "decision": "KEEP \u2014 canonical is working, verify no internal links point to non-canonical versions"
+    },
+    "page_with_redirect": {
+      "count": 1,
+      "severity": "LOW",
+      "decision": "VERIFY redirect is correct"
+    },
+    "crawled_currently_not_indexed": {
+      "count": 5,
+      "severity": "LOW \u2014 Google crawled but chose not to index",
+      "decision": "INVESTIGATE \u2014 check quality of these 5 pages"
+    },
+    "duplicate_google_chose_different_canonical": {
+      "count": 1,
+      "severity": "LOW",
+      "decision": "VERIFY canonical choice is correct or fix"
+    }
+  },
+  "root_cause_summary": {
+    "primary_problem": "503 discovered-not-indexed pages \u2014 Google sees too many low-value pages and is reluctant to index anything",
+    "secondary_problem": "125 404s \u2014 wasting crawl budget on dead URLs, possibly in sitemap",
+    "tertiary_problem": "205 noindex pages may be in sitemap \u2014 confusing Google's indexing signals",
+    "bottom_line": "QFINHUB is telling Google 'index these 1,167 pages' but 75% are low-value, dead, or intentionally blocked. Google has lost trust."
+  },
+  "immediate_recommendations": [
+    "Classify all 503 discovered-not-indexed pages into A-H categories",
+    "Remove 404 URLs from sitemap immediately",
+    "Verify noindex pages are NOT in sitemap",
+    "Reduce internal links to D/E/F pages",
+    "Focus crawl budget on money pages, blogs, guides, decisions"
+  ]
+}

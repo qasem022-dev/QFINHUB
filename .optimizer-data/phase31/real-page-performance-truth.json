@@ -1,0 +1,135 @@
+{
+  "phase": 31,
+  "title": "Real Page Performance Truth \u2014 GSC Data Excluding Noise",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:54:29.914273",
+  "data_sources": [
+    "GSC API (Jun 7-13: 530 imp, 0 clicks)",
+    "Qasem GSC UI (Jun 17: 485 imp 7d, 1.4K imp 28d)",
+    "Previous watchlists and logs"
+  ],
+  "filters_applied": [
+    "exclude branded query 'qfinhub'",
+    "exclude homepage",
+    "exclude noindex pages",
+    "exclude tools/scenarios as standalone targets",
+    "exclude 404/redirect/canonical pages"
+  ],
+  "live_7d_performance": {
+    "total_real_page_impressions": "estimated 350-400 of 485 (rest are tools/scenarios/noise)",
+    "total_real_page_clicks": 0,
+    "ctr": "0.0%",
+    "avg_position": "estimated 25-35 for real pages"
+  },
+  "live_28d_performance": {
+    "total_impressions": 1400,
+    "total_clicks": 1,
+    "ctr": "0.1%",
+    "avg_position": 33.4,
+    "note": "THE 1 CLICK IS CRITICAL \u2014 need to identify which page/query got it"
+  },
+  "known_real_pages_performance": {
+    "blog_pages": {
+      "top_performer": {
+        "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "estimated_impressions_7d": 124,
+        "estimated_clicks": 0,
+        "estimated_position": 10.9,
+        "trend": "stable near page 1",
+        "page_type": "blog",
+        "status": "IMPROVED Jun 13 + Jun 15 \u2014 awaiting recrawl",
+        "action": "MONITOR \u2014 is it the 1-click page? Check if position improved since Jun 15"
+      },
+      "tax_brackets_blog": {
+        "url": "/blog/understanding-tax-brackets-what-rate-do-you-actually-pay",
+        "impressions": "~50-80 estimated",
+        "clicks": 0,
+        "position": "unknown",
+        "page_type": "blog",
+        "status": "has internal link to tax/philadelphia-pa",
+        "action": "check GSC for query-level data"
+      },
+      "compound_interest_explained": {
+        "url": "/blog/compound-interest-explained",
+        "impressions": "~30-50 estimated",
+        "clicks": 0,
+        "position": "unknown",
+        "page_type": "blog",
+        "action": "check GSC for query-level data"
+      },
+      "retirement_planning_guide": {
+        "url": "/blog/complete-guide-to-retirement-planning-2026",
+        "impressions": "~20-40 estimated",
+        "clicks": 0,
+        "position": "unknown",
+        "page_type": "blog",
+        "action": "check GSC for query-level data"
+      }
+    },
+    "decision_pages": {
+      "how_much_house": {
+        "url": "/decision/how-much-house-can-i-afford",
+        "impressions": 4,
+        "clicks": 0,
+        "position": 7.5,
+        "page_type": "decision",
+        "status": "GOOD position but low impressions \u2014 niche query",
+        "action": "expand query coverage via related keywords"
+      },
+      "rent_vs_buy": {
+        "url": "/decision/rent-vs-buy-with-100k-income",
+        "impressions": 2,
+        "clicks": 0,
+        "position": 4.0,
+        "page_type": "decision",
+        "status": "VERY GOOD position but only 2 imp \u2014 ultra-niche query",
+        "action": "check if position 4 is real, consider broader rent-vs-buy page"
+      }
+    },
+    "calculator_pages": {
+      "tax_philadelphia": {
+        "url": "/calculators/tax/philadelphia-pa",
+        "impressions": 13,
+        "clicks": 0,
+        "position": 18.3,
+        "page_type": "geo_calculator",
+        "action": "check if other geo pages show similar pattern"
+      },
+      "investment_return": {
+        "url": "/calculators/investment-return",
+        "impressions": 47,
+        "clicks": 0,
+        "position": 82.5,
+        "page_type": "calculator",
+        "status": "DEEP \u2014 DA bottleneck",
+        "action": "continue internal links, long-term play"
+      },
+      "retirement_planning": {
+        "url": "/calculators/retirement-planning",
+        "impressions": 11,
+        "clicks": 0,
+        "position": 81.5,
+        "page_type": "calculator",
+        "status": "DEEP \u2014 DA bottleneck",
+        "action": "continue internal links"
+      },
+      "tax_calculator": {
+        "url": "/calculators/tax-calculator",
+        "impressions": 81,
+        "clicks": 0,
+        "position": 88.0,
+        "page_type": "calculator",
+        "status": "DEEP \u2014 DA bottleneck",
+        "action": "continue internal links"
+      }
+    }
+  },
+  "key_questions_unanswered": [
+    "WHICH page got the 1 click in 28 days?",
+    "What queries are driving the 485 impressions in 7 days?",
+    "Are real-page impressions growing or declining? (7d vs previous 7d)",
+    "Are there any pages in positions 1-5 that just need a CTR tweak?",
+    "How many of the 503 discovered-not-indexed are real A/B/C pages?"
+  ],
+  "next_step": "Pull GSC query-level data + page-level data for the 7d window to populate this fully"
+}

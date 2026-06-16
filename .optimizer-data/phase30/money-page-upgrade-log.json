@@ -1,0 +1,85 @@
+{
+  "phase": 30,
+  "title": "Money Page Trust + UX Upgrade Log",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:34:29.133876",
+  "upgrade_standards": {
+    "required_components": [
+      "calculator visible above fold or very easy to reach",
+      "plain-language answer section",
+      "formula/methodology source section",
+      "example calculation with real numbers",
+      "common mistake warning",
+      "FAQ based on real GSC queries",
+      "internal links to related decision pages",
+      "internal links from related guides/blogs",
+      "updated date only if content materially updated",
+      "author/editor/trust block",
+      "no signup, no personal data required message if true",
+      "widget/embed CTA if relevant"
+    ],
+    "quality_rules": [
+      "every edit must have a reason tied to GSC query, competitor gap, user intent, indexing improvement, CTR improvement, or trust improvement",
+      "no generic word-count changes",
+      "no thin filler content"
+    ]
+  },
+  "upgrade_log": [],
+  "status_per_page": {
+    "mortgage-calculator": {
+      "upgraded": false,
+      "issues": [
+        "FAQ schema check",
+        "trust block position"
+      ]
+    },
+    "mortgage-affordability": {
+      "upgraded": false,
+      "issues": [
+        "embed CTA prominence",
+        "FAQ section"
+      ]
+    },
+    "loan-calculator": {
+      "upgraded": false,
+      "issues": [
+        "loan-type examples",
+        "FAQ section"
+      ]
+    },
+    "compound-interest": {
+      "upgraded": false,
+      "issues": [
+        "formula display",
+        "worked example"
+      ]
+    },
+    "investment-return": {
+      "upgraded": false,
+      "issues": [
+        "deep DA page - links priority over content"
+      ]
+    },
+    "retirement-planning": {
+      "upgraded": false,
+      "issues": [
+        "trust/methodology section",
+        "fixed URL verification"
+      ]
+    },
+    "pay-off-debt-or-invest": {
+      "upgraded": false,
+      "issues": [
+        "decision-calc integration",
+        "intro clarity"
+      ]
+    },
+    "rent-vs-buy": {
+      "upgraded": false,
+      "issues": [
+        "query coverage expansion",
+        "position 4.0 optimization"
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "phase": 30,
+  "title": "Daily Autonomous Workflow \u2014 Phase 30",
+  "version": "1.0.0",
+  "created": "2026-06-17T00:33:17.599989",
+  "schedule": "0 15 * * * EEST (same as Phase 19 cron)",
+  "steps": [
+    {
+      "step": 1,
+      "name": "Data Refresh",
+      "actions": [
+        "pull GSC fresh data via scripts/gsc-daily-pipeline.py",
+        "check GA4 if available",
+        "check indexing status (indexed, discovered-not-indexed, crawled-not-indexed)",
+        "check outreach reply inbox",
+        "check deploy health (HTTP 200 on homepage/sitemap/robots)",
+        "check Phase 30 daily lock (prevent duplicate runs)"
+      ]
+    },
+    {
+      "step": 2,
+      "name": "Decide Mode",
+      "modes": {
+        "CONTENT_CLICK_MODE": "Active when real pages have impressions but 0 clicks \u2014 fix snippets, CTAs, above-fold answers",
+        "INDEXING_MODE": "Active when high-value pages not indexed \u2014 improve internal links, reduce crawl noise",
+        "MONEY_PAGE_MODE": "Active when money pages need trust/UX upgrades",
+        "DATA_ASSET_MODE": "Active when data asset is due (weekly cycle)",
+        "FREE_PR_MODE": "Active when email-only opportunities exist with score >=90",
+        "MONETIZATION_READINESS_MODE": "Active when monetization gaps found",
+        "HOLD_MODE": "Active when data stale, GSC token dead, or risk detected"
+      }
+    },
+    {
+      "step": 3,
+      "name": "Execute 3-5 High-Impact Actions",
+      "allowed_daily_actions": [
+        "improve 1 money page (max 1/day)",
+        "add 10-25 contextual internal links to money pages",
+        "create or update 1 original data asset (weekly)",
+        "send 0-5 verified email-only authority pitches (score >=90)",
+        "monitor indexing requests",
+        "fix technical issues",
+        "improve monetization readiness item"
+      ],
+      "hard_caps": {
+        "page_upgrades": "3-5 total (across all types)",
+        "internal_links": "10-25/day",
+        "new_pages": "0-3/day (only if no existing page matches)",
+        "outreach_sends": "0-5/day (score >=90 required)",
+        "default_action": "IMPROVE_EXISTING_PAGE over CREATE_NEW_PAGE"
+      }
+    },
+    {
+      "step": 4,
+      "name": "Deploy If Changes Made",
+      "actions": [
+        "git add -A && git commit -m 'Phase 30: Daily run \u2014 $(date +%Y-%m-%d)' && git push",
+        "wait for Vercel auto-deploy (~100s)",
+        "verify changed pages: HTTP 200",
+        "run post-deploy-ops.sh if exists"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "Report Only Measurable Outputs",
+      "rules": [
+        "report actions taken",
+        "report KPI targeted",
+        "report expected measurement window",
+        "report success/failure rule",
+        "report current OFF_TRACK/ON_TRACK status",
+        "DO NOT report success for activity alone",
+        "DO NOT claim improvement without data"
+      ]
+    }
+  ],
+  "never_do": [
+    "create mass pages",
+    "use Google Indexing API",
+    "fake traffic/clicks",
+    "restart old risky automations (HARO, Pinterest, X/Twitter)",
+    "send HARO auto-responses",
+    "publish unreviewed PDFs",
+    "noindex/delete URLs without approval",
+    "count old fixes as today's work",
+    "submit scenario sitemap to GSC",
+    "spend money on any tool or service"
+  ]
+}
