@@ -1,0 +1,39 @@
+{
+  "pulled_at": "2026-06-18T22:03:40.659080Z",
+  "windows": {
+    "w3": {
+      "pages": 75,
+      "impressions": 616,
+      "clicks": 0,
+      "position": 14.8,
+      "phase32_pages": 0,
+      "start": "2026-06-09",
+      "end": "2026-06-16"
+    },
+    "w2": {
+      "pages": 70,
+      "impressions": 564,
+      "clicks": 0,
+      "position": 15.1,
+      "phase32_pages": 0,
+      "start": "2026-06-10",
+      "end": "2026-06-17"
+    },
+    "w1": {
+      "pages": 68,
+      "impressions": 456,
+      "clicks": 0,
+      "position": 14.8,
+      "phase32_pages": 0,
+      "start": "2026-06-11",
+      "end": "2026-06-18"
+    }
+  },
+  "28d": {
+    "pages": 150,
+    "impressions": 1722,
+    "clicks": 1,
+    "start": "2026-05-20",
+    "end": "2026-06-16"
+  }
+}

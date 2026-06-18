@@ -1,0 +1,64 @@
+{
+  "phase": "32.4E",
+  "title": "Batch 2 Prep Only \u2014 Staging Review",
+  "prepared_at": "2026-06-19T01:05:00+03:00",
+  "status": "BLOCKED \u2014 no deployment. Staging review only.",
+  "candidates": [
+    {
+      "slug": "auto-large-purchase-loan-30000-7-percent",
+      "use_case": "Auto / Large Purchase $30K at 7%",
+      "quality_score": 91,
+      "doorway_risk": "EXPECTED_SAFE",
+      "cannibalization_risk": "LOW",
+      "unique_value": "Dealer financing vs personal loan comparison",
+      "demand": "Autocomplete: '30000 loan 7 percent'",
+      "status": "READY_STAGED"
+    },
+    {
+      "slug": "medical-dental-loan-10000-12-percent",
+      "use_case": "Medical/Dental $10K at 12%",
+      "quality_score": "NOT_SCORED",
+      "doorway_risk": "UNKNOWN",
+      "cannibalization_risk": "UNKNOWN",
+      "unique_value": "HSA/FSA vs loan comparison",
+      "demand": "Autocomplete: 'medical loan 10000'",
+      "status": "NEEDS_WORK \u2014 score before staging"
+    },
+    {
+      "slug": "home-improvement-loan-15000-9-percent",
+      "use_case": "Home Improvement $15K at 9%",
+      "quality_score": "NOT_SCORED",
+      "doorway_risk": "UNKNOWN",
+      "cannibalization_risk": "UNKNOWN",
+      "unique_value": "HELOC vs personal loan comparison",
+      "demand": "Moderate",
+      "status": "NEEDS_WORK"
+    },
+    {
+      "slug": "wedding-event-loan-10000-14-percent",
+      "use_case": "Wedding/Event $10K at 14%",
+      "quality_score": "NOT_SCORED",
+      "doorway_risk": "MODERATE",
+      "cannibalization_risk": "HIGH \u2014 wedding loan pages are common SEO spam",
+      "unique_value": "Budget alternatives vs loan analysis",
+      "demand": "Seasonal, moderate",
+      "status": "REJECT \u2014 highest kill risk. Consider replacing."
+    },
+    {
+      "slug": "high-apr-warning-loan-5000-29-percent",
+      "use_case": "High APR Warning $5K at 29%",
+      "quality_score": "NOT_SCORED",
+      "doorway_risk": "LOW \u2014 warning pages are anti-doorway",
+      "cannibalization_risk": "LOW",
+      "unique_value": "Predatory lending warning, 'when to walk away'",
+      "demand": "Niche but high-value",
+      "status": "NEEDS_WORK \u2014 score before staging"
+    }
+  ],
+  "summary": {
+    "ready": 1,
+    "needs_work": 3,
+    "reject": 1
+  },
+  "note": "Only Auto Purchase (score 91) is ready. Wedding/Event flagged for replacement. Other 3 need quality scoring before staging."
+}

@@ -1,0 +1,101 @@
+{
+  "phase": "32.4E",
+  "title": "Six-URL Watch \u2014 2026-06-19",
+  "verified_at": "2026-06-19T01:05:00+03:00",
+  "page_age_hours": 20.6,
+  "urls": [
+    {
+      "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "discovered": false,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_position": "N/A",
+      "top_query": "None",
+      "bing_indexnow": "202 Accepted",
+      "crawler_evidence": "None",
+      "coverage_state": "URL is unknown to Google",
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "discovered": false,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_position": "N/A",
+      "top_query": "None",
+      "bing_indexnow": "202 Accepted",
+      "crawler_evidence": "None",
+      "coverage_state": "URL is unknown to Google",
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "discovered": false,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_position": "N/A",
+      "top_query": "None",
+      "bing_indexnow": "202 Accepted",
+      "crawler_evidence": "None",
+      "coverage_state": "URL is unknown to Google",
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "discovered": false,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_position": "N/A",
+      "top_query": "None",
+      "bing_indexnow": "202 Accepted",
+      "crawler_evidence": "None",
+      "coverage_state": "URL is unknown to Google",
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/loan-payment-table",
+      "discovered": false,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_position": "N/A",
+      "top_query": "None",
+      "bing_indexnow": "202 Accepted",
+      "crawler_evidence": "None",
+      "coverage_state": "URL is unknown to Google",
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/data",
+      "discovered": false,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "avg_position": "N/A",
+      "top_query": "None",
+      "bing_indexnow": "202 Accepted",
+      "crawler_evidence": "None",
+      "coverage_state": "URL is unknown to Google",
+      "status": "PUBLISHED_ONLY"
+    }
+  ],
+  "summary": {
+    "published": 6,
+    "discovered": 0,
+    "crawled": 0,
+    "indexed": 0,
+    "impressions": 0,
+    "clicks": 0
+  },
+  "note": "Discovery state reverted to unknown for all 6 URLs. Possible cause: sitemap was regenerated ~3 hours ago (Phase 32.4C removed 3 polluted URLs, URL count changed from 656\u2192654). Google may be re-processing the sitemap. This is NORMAL and expected to resolve within 24-48 hours."
+}

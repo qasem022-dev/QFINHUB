@@ -1,0 +1,30 @@
+{
+  "phase": "32.4E",
+  "title": "Sitewide Health Watch \u2014 2026-06-19",
+  "verified_at": "2026-06-19T01:05:00+03:00",
+  "gsc_data_freshness": "2026-06-18T22:03Z (GSC API, 3-window verified)",
+  "metrics": {
+    "7d_impressions": {
+      "windows": [
+        616,
+        564,
+        456
+      ],
+      "trend": "DECLINING (-26% over 3 windows)",
+      "latest": 456
+    },
+    "28d_impressions": 1722,
+    "7d_clicks": 0,
+    "28d_clicks": 1,
+    "click_source": "Homepage (branded) \u2014 0 content clicks",
+    "average_position_7d": 14.8,
+    "indexed_pages": 238,
+    "discovered_not_indexed": 503,
+    "sitemap_urls": 654,
+    "sitemap_polluted": 0,
+    "broken_links": "0 (verified Phase 31.3)",
+    "build_deploy_status": "STABLE \u2014 last deploy: Phase 32.4C (3-URL sitemap fix)"
+  },
+  "phase32_impressions": "0 \u2014 no Phase 32 URLs appear in any GSC window",
+  "note": "Sitewide health is STABLE but DECLINING in impressions. No Phase 32 impact yet (too new)."
+}

@@ -1,0 +1,43 @@
+{
+  "phase": "32.4E",
+  "title": "Pruning Execution Package \u2014 PREP ONLY, DO NOT EXECUTE",
+  "prepared_at": "2026-06-19T01:05:00+03:00",
+  "status": "PREPARED \u2014 awaiting Day 7 (Jun 25) execution decision",
+  "candidates": {
+    "guides": {
+      "count": 125,
+      "28d_impressions": "~7 total",
+      "28d_clicks": 0,
+      "internal_links": "LOW",
+      "money_page_support": "MARGINAL",
+      "reason": "Thin 'how to use X' templated pages. 0 unique value."
+    },
+    "zero_impression_tools": {
+      "count": 58,
+      "28d_impressions": 0,
+      "28d_clicks": 0,
+      "internal_links": "LOW",
+      "money_page_support": "VARIES",
+      "reason": "Pre-calculated investment scenarios with 0 GSC presence."
+    },
+    "total": 183
+  },
+  "execution_options": {
+    "option_a_full_183": {
+      "description": "Remove all 183 URLs from sitemap generation",
+      "method": "Add guide + thin-tool slug lists to sitemap.ts exclusion filter",
+      "post_removal_sitemap_count": 471,
+      "rollback": "Remove exclusion lists from sitemap.ts, redeploy. ~5 minutes.",
+      "pages_remain_live": true,
+      "risk": "NEAR-ZERO \u2014 0 impressions, 0 clicks to lose"
+    },
+    "option_b_small_test": {
+      "description": "Remove only 25 lowest-value URLs first",
+      "selection": "20 lowest-value guides + 5 tools with 0 internal links",
+      "post_removal_sitemap_count": 629,
+      "measurement_window": "7 days",
+      "rollback": "Same as Option A"
+    }
+  },
+  "recommendation": "WAIT_UNTIL_DAY_7 \u2014 Do not execute either option until Jun 25. Pruning now would add noise to the crawl/indexing observation window for the 6 Phase 32 URLs."
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "32.4E",
+  "title": "Day 7 Decision Rules \u2014 Jun 25, 2026",
+  "prepared_at": "2026-06-19T01:05:00+03:00",
+  "decision_date": "2026-06-25T04:27:00+03:00 (exactly 7 days after publish)",
+  "decision_a_pruning": {
+    "options": [
+      "APPROVE_FULL_183_PRUNING",
+      "APPROVE_25_URL_TEST_PRUNING",
+      "HOLD_PRUNING"
+    ],
+    "rules": {
+      "APPROVE_FULL_183_PRUNING_if": "sitemap is technically safe AND at least 2 Phase 32 URLs are crawled or indexed AND DNI is stable or decreasing",
+      "APPROVE_25_URL_TEST_PRUNING_if": "sitemap is technically safe BUT 0-1 Phase 32 URLs crawled AND DNI is stable",
+      "HOLD_PRUNING_if": "sitemap has regressed OR DNI is increasing sharply OR Google reports new errors"
+    }
+  },
+  "decision_b_batch2": {
+    "options": [
+      "BLOCK_BATCH_2",
+      "ALLOW_BATCH_2_STAGING_ONLY",
+      "APPROVE_MAX_5_DEPLOY"
+    ],
+    "rules": {
+      "APPROVE_MAX_5_DEPLOY_if": "at least 1 Phase 32 URL is crawled or indexed AND sitemap is technically safe AND DNI is stable or decreasing AND no Phase 31 traffic harm AND all Batch 2 pages score 90+ with SAFE doorway classification",
+      "ALLOW_BATCH_2_STAGING_ONLY_if": "some progress but not all conditions met (e.g., 1 URL discovered but none crawled)",
+      "BLOCK_BATCH_2_if": "0 Phase 32 URLs crawled or indexed OR sitemap regression OR DNI increasing"
+    },
+    "maximum_deployment": 5
+  },
+  "current_assessment": "At ~21 hours: 0 crawled, 0 indexed. If this holds until Day 7, both pruning and Batch 2 will be HELD/BLOCKED. If 2+ URLs are crawled by Day 7, pruning can proceed. If 1+ indexed + impressions appear, Batch 2 staging can be approved."
+}

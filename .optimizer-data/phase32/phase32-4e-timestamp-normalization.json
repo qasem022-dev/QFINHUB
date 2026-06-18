@@ -1,0 +1,110 @@
+{
+  "phase": "32.4E",
+  "title": "Timestamp Normalization",
+  "created_at": "2026-06-19T01:05:00+03:00",
+  "report_timestamp": "2026-06-19T01:05:00+03:00",
+  "report_timestamp_utc": "2026-06-18T22:05:00Z",
+  "gsc_data_freshness_timestamp": "2026-06-18T22:03:00Z",
+  "urls": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "publish_timestamp": "2026-06-18T04:27:00+03:00",
+      "sitemap_first_inclusion_timestamp": "2026-06-18T06:00:00+03:00",
+      "sitemap_latest_fix_timestamp": "2026-06-19T00:10:00+03:00",
+      "rss_feed_inclusion_timestamp": "2026-06-18T06:05:00+03:00",
+      "indexnow_submission_timestamp": "2026-06-18T06:10:00+03:00",
+      "first_discovered_timestamp": "2026-06-18T22:00:00+03:00",
+      "true_page_age_hours": 20.6,
+      "true_checkpoint_label": "Day 0 (~21 hours \u2014 NOT Day 3)",
+      "gsc_status": "URL is unknown to Google (was discovered earlier, fluctuated back)",
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "publish_timestamp": "2026-06-18T04:27:00+03:00",
+      "sitemap_first_inclusion_timestamp": "2026-06-18T06:00:00+03:00",
+      "sitemap_latest_fix_timestamp": "2026-06-19T00:10:00+03:00",
+      "rss_feed_inclusion_timestamp": "2026-06-18T06:05:00+03:00",
+      "indexnow_submission_timestamp": "2026-06-18T06:10:00+03:00",
+      "first_discovered_timestamp": "2026-06-18T22:00:00+03:00",
+      "true_page_age_hours": 20.6,
+      "true_checkpoint_label": "Day 0 (~21 hours)",
+      "gsc_status": "URL is unknown to Google",
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "publish_timestamp": "2026-06-18T04:27:00+03:00",
+      "sitemap_first_inclusion_timestamp": "2026-06-18T06:00:00+03:00",
+      "sitemap_latest_fix_timestamp": "2026-06-19T00:10:00+03:00",
+      "rss_feed_inclusion_timestamp": "2026-06-18T06:05:00+03:00",
+      "indexnow_submission_timestamp": "2026-06-18T06:10:00+03:00",
+      "first_discovered_timestamp": "2026-06-18T22:00:00+03:00",
+      "true_page_age_hours": 20.6,
+      "true_checkpoint_label": "Day 0 (~21 hours)",
+      "gsc_status": "URL is unknown to Google",
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "publish_timestamp": "2026-06-18T04:27:00+03:00",
+      "sitemap_first_inclusion_timestamp": "2026-06-18T06:00:00+03:00",
+      "sitemap_latest_fix_timestamp": "2026-06-19T00:10:00+03:00",
+      "rss_feed_inclusion_timestamp": "2026-06-18T06:05:00+03:00",
+      "indexnow_submission_timestamp": "2026-06-18T06:10:00+03:00",
+      "first_discovered_timestamp": "2026-06-18T22:00:00+03:00",
+      "true_page_age_hours": 20.6,
+      "true_checkpoint_label": "Day 0 (~21 hours)",
+      "gsc_status": "URL is unknown to Google",
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0
+    },
+    "/loan-payment-table": {
+      "publish_timestamp": "2026-06-18T04:27:00+03:00",
+      "sitemap_first_inclusion_timestamp": "2026-06-18T06:00:00+03:00",
+      "sitemap_latest_fix_timestamp": "2026-06-19T00:10:00+03:00",
+      "rss_feed_inclusion_timestamp": "2026-06-18T06:05:00+03:00",
+      "indexnow_submission_timestamp": "2026-06-18T06:10:00+03:00",
+      "first_discovered_timestamp": "2026-06-18T22:00:00+03:00",
+      "true_page_age_hours": 20.6,
+      "true_checkpoint_label": "Day 0 (~21 hours)",
+      "gsc_status": "URL is unknown to Google",
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0
+    },
+    "/data": {
+      "publish_timestamp": "2026-06-18T04:27:00+03:00",
+      "sitemap_first_inclusion_timestamp": "2026-06-18T06:00:00+03:00",
+      "sitemap_latest_fix_timestamp": "2026-06-19T00:10:00+03:00",
+      "rss_feed_inclusion_timestamp": "2026-06-18T06:05:00+03:00",
+      "indexnow_submission_timestamp": "2026-06-18T06:10:00+03:00",
+      "first_discovered_timestamp": "2026-06-18T22:00:00+03:00",
+      "true_page_age_hours": 20.6,
+      "true_checkpoint_label": "Day 0 (~21 hours)",
+      "gsc_status": "URL is unknown to Google",
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0
+    }
+  },
+  "summary": {
+    "true_page_age_hours": 20.6,
+    "true_checkpoint": "Day 0 (~21 hours)",
+    "next_valid_checkpoints": {
+      "Day_1": "Jun 19 04:27 EEST",
+      "Day_3": "Jun 21 04:27 EEST",
+      "Day_7": "Jun 25 04:27 EEST"
+    },
+    "discovery_note": "Discovery state fluctuated: 3 discovered at ~18h, all 6 discovered at ~20h, all unknown at ~21h. This is NORMAL for pages <24h old \u2014 Google's discovery index is volatile for fresh URLs."
+  }
+}
