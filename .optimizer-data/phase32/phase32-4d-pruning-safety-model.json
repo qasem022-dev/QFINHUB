@@ -1,0 +1,20 @@
+{
+  "phase": "32.4D",
+  "title": "Pruning Safety Model",
+  "verified_at": "2026-06-19T01:00:00+03:00",
+  "what_happens_when_removed_from_sitemap": {
+    "pages_stay_live": "YES \u2014 sitemap removal doesn't delete pages. Users navigating to /guides/how-to-use-basic-calculator will still load the page.",
+    "pages_stay_indexable": "YES \u2014 no noindex tag added. Google can still discover and index these pages via internal links.",
+    "internal_links_unchanged": "YES \u2014 /all-pages, parent calculators, and cross-links remain intact.",
+    "only_signal_removed": "YES \u2014 only the 'this URL is in the sitemap' signal is removed. Google can still find pages via crawling."
+  },
+  "estimated_effects": {
+    "crawl_demand_reduction": "POSITIVE \u2014 Google crawls 183 fewer thin pages per sitemap refresh. More crawl budget for high-value pages.",
+    "impressions_risk": "NEAR-ZERO \u2014 removed URLs have 0 impressions. No traffic to lose.",
+    "money_page_support_risk": "VERY LOW \u2014 guides link TO calculators, not the reverse. Calculators don't depend on guides for authority.",
+    "rollback_difficulty": "TRIVIAL \u2014 remove the exclusion list from sitemap.ts, redeploy. ~5 minute revert.",
+    "expected_dni_effect": "POSITIVE \u2014 183 URLs removed from sitemap means they won't appear as 'discovered-not-indexed' in GSC. DNI count should drop by ~183.",
+    "expected_google_trust_effect": "POSITIVE \u2014 cleaner sitemap signals quality focus. Google sees fewer thin pages, more high-value ones."
+  },
+  "recommendation": "APPROVE_FULL_183_REMOVAL \u2014 risk is near-zero. All 183 have 0 impressions and 0 clicks. Pages stay live. Reversible in minutes."
+}

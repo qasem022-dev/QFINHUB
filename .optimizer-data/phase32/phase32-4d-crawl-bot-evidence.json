@@ -1,0 +1,16 @@
+{
+  "phase": "32.4D",
+  "title": "Crawl Bot Evidence Check",
+  "verified_at": "2026-06-19T01:00:00+03:00",
+  "server_logs_available": false,
+  "vercel_logs": "Not accessible \u2014 Vercel does not expose raw access logs via filesystem. Vercel Analytics/Logs require paid plan or dashboard access.",
+  "nginx_logs": "Not available \u2014 Vercel is serverless, no nginx logs on disk.",
+  "local_logs": "Old ops logs from Jun 3-6 exist but predate Phase 32 deployment by 12+ days.",
+  "alternative_evidence": {
+    "gsc_url_inspection": "lastCrawlTime: never for all 6 URLs \u2014 confirms zero Googlebot visits",
+    "gsc_search_analytics": "0 impressions for all 6 URLs \u2014 confirms zero Google impressions",
+    "indexnow_202": "Bing accepted submission but no crawl evidence available (Bing doesn't expose crawl API)",
+    "vercel_analytics": "Not configured for bot-level logging"
+  },
+  "conclusion": "No crawl bot evidence available. GSC data is the only reliable source. GSC confirms: 0 Googlebot crawls for any Phase 32 URL as of Jun 19 01:00 EEST."
+}

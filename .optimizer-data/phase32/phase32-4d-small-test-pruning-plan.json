@@ -1,0 +1,36 @@
+{
+  "phase": "32.4D",
+  "title": "Small Test Pruning Option",
+  "verified_at": "2026-06-19T01:00:00+03:00",
+  "status": "PLAN_ONLY \u2014 not executed",
+  "option": "If full 183 removal is considered too aggressive, test with 25 lowest-value URLs first.",
+  "test_urls_25": {
+    "selection_criteria": "0 impressions in 90 days, lowest unique value score, least internal links, no money-page support",
+    "categories": "20 guides + 5 tools",
+    "exact_urls_sample": [
+      "/guides/how-to-use-basic-calculator",
+      "/guides/how-to-use-age-calculator",
+      "/guides/how-to-use-cash-flow",
+      "/guides/how-to-use-present-value",
+      "/guides/how-to-use-fuel-cost",
+      "/tools/investment-500-5yr",
+      "/tools/investment-2k-3yr",
+      "/tools/budget-40k-zero-based"
+    ],
+    "note": "Full 25-URL list would be generated at execution time from the 183 candidate pool, sorted by lowest value."
+  },
+  "rollback_plan": "Remove 25-URL exclusion from sitemap.ts filter, redeploy. Pages re-enter sitemap within ~100 seconds.",
+  "measurement_window": "7 days after removal",
+  "success_criteria": [
+    "No traffic loss on any money page",
+    "DNI count decreases (or stays flat)",
+    "No Google penalty or ranking drop on remaining pages",
+    "No broken internal links"
+  ],
+  "failure_criteria": [
+    "Any money page loses impressions",
+    "DNI count increases sharply",
+    "Google reports new errors"
+  ],
+  "recommendation": "SKIP_TEST \u2014 full 183 removal is equally reversible and provides clearer signal. A 25-URL test adds a week of waiting for no additional safety benefit."
+}

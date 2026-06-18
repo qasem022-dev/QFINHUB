@@ -1,0 +1,59 @@
+{
+  "phase": "32.4D",
+  "title": "Phase 31 Recovery Health Check",
+  "verified_at": "2026-06-19T01:00:00+03:00",
+  "pages": {
+    "loan_calculator": {
+      "url": "/calculators/loan-calculator",
+      "impressions_28d": "~4 (7d data)",
+      "clicks_28d": 0,
+      "avg_position_28d": "~7.0",
+      "trend": "FLAT \u2014 minimal impressions",
+      "technical_status": "HTTP 200, indexable, self-canonical",
+      "untouched_rule_respected": true
+    },
+    "budget_planner": {
+      "url": "/calculators/budget-planner",
+      "impressions_28d": "Not in top GSC pages",
+      "clicks_28d": 0,
+      "trend": "N/A",
+      "technical_status": "HTTP 200",
+      "untouched_rule_respected": true
+    },
+    "retirement_planning": {
+      "url": "/calculators/retirement-planning",
+      "impressions_28d": 57,
+      "clicks_28d": 0,
+      "avg_position_28d": 90.0,
+      "trend": "FLAT \u2014 deep position",
+      "technical_status": "HTTP 200, indexable, self-canonical",
+      "untouched_rule_respected": true
+    },
+    "20k_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions_28d": 253,
+      "clicks_28d": 0,
+      "avg_position_28d": 64.1,
+      "trend": "IMPRESSIONS STEADY \u2014 but position has drifted from ~10 to ~64 average over 28 days",
+      "technical_status": "HTTP 200, indexable, self-canonical",
+      "untouched_rule_respected": true
+    },
+    "investment_return": {
+      "url": "/calculators/investment-return",
+      "impressions_28d": 103,
+      "clicks_28d": 0,
+      "avg_position_28d": 87.5,
+      "trend": "FLAT \u2014 deep position",
+      "untouched_rule_respected": true
+    },
+    "mortgage_affordability": {
+      "url": "/calculators/mortgage-affordability",
+      "impressions_28d": "~10 (7d est)",
+      "clicks_28d": 0,
+      "trend": "FLAT",
+      "untouched_rule_respected": true
+    }
+  },
+  "verdict": "Phase 31 pages are HEALTHY in technical terms (all 200, indexable, no edits). TRAFFIC-WISE they are stagnant \u2014 getting impressions at deep positions (64-90+) with zero clicks. Phase 32 work has NOT harmed Phase 31 pages \u2014 they were already struggling before Phase 32 started.",
+  "untouched_rule": "RESPECTED \u2014 no Phase 31 pages were edited during Phase 32.4A-D."
+}

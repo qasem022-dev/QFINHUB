@@ -1,0 +1,12 @@
+{
+  "phase": "32.4D",
+  "title": "Bing/IndexNow Follow-Up",
+  "verified_at": "2026-06-19T01:00:00+03:00",
+  "indexnow_202_confirmed": true,
+  "bing_discovery_status": "UNKNOWN \u2014 Bing does not provide a public URL inspection API like Google",
+  "bing_webmaster_tools": "Not configured for qfinhub.com. Setting up Bing WMT would provide crawl/index data.",
+  "referral_traffic": "NONE \u2014 0 Bing referrals in any analytics (but total site clicks = 0 from all sources)",
+  "errors": "None detected",
+  "note": "IndexNow submission was accepted (202). This means Bing has the URLs in its queue. Without Bing WMT, we cannot confirm crawl or index status. No further submissions needed \u2014 the 6 URLs were submitted once and IndexNow protocol handles re-crawling.",
+  "do_not_resubmit": true
+}

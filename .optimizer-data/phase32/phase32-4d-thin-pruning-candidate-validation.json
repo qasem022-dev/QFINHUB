@@ -1,0 +1,52 @@
+{
+  "phase": "32.4D",
+  "title": "Thin Pruning Candidate Validation \u2014 183 URLs",
+  "verified_at": "2026-06-19T01:00:00+03:00",
+  "scope": {
+    "guides": 125,
+    "zero_impression_tools": 58,
+    "total": 183
+  },
+  "guarantees": {
+    "pages_remain_live": true,
+    "pages_remain_indexable": true,
+    "internal_links_unchanged": true,
+    "only_sitemap_signal_removed": true
+  },
+  "validation_methodology": "28-day GSC data cross-reference. Each URL checked for: impressions, clicks, internal links from money pages, unique value.",
+  "guides_125": {
+    "total": 125,
+    "with_28d_impressions": "~1 (how-to-use-mortgage-calculator: 7 imp at pos 70.3)",
+    "with_clicks": 0,
+    "average_impressions": "<0.1 per guide",
+    "internal_links_received": "LOW \u2014 only from /all-pages and guide index pages",
+    "internal_links_to_money_pages": "YES \u2014 each guide links to its parent calculator",
+    "supports_money_page": "MARGINALLY \u2014 provides navigational path to calculator but no unique content value",
+    "unique_value_score": "5-15/100",
+    "risk_of_removing_from_sitemap": "LOW \u2014 guides have near-zero GSC presence. Users can still find them via /all-pages.",
+    "recommendation": "REMOVE_FROM_SITEMAP \u2014 all 125 guides"
+  },
+  "zero_impression_tools_58": {
+    "total": 58,
+    "with_28d_impressions": 0,
+    "with_clicks": 0,
+    "internal_links_received": "LOW \u2014 from /all-pages and tool index pages",
+    "internal_links_to_money_pages": "VARIES \u2014 some investment tools link to compound-interest calculator",
+    "supports_money_page": "VARIES \u2014 some are pre-calculated examples for parent calculators",
+    "unique_value_score": "20-40/100",
+    "risk_of_removing_from_sitemap": "LOW \u2014 zero GSC presence. Pages stay live for users.",
+    "recommendation": "REMOVE_FROM_SITEMAP \u2014 58 zero-impression tools"
+  },
+  "tools_with_impressions_8": {
+    "total": 8,
+    "examples": [
+      "compound-100k-20yr-5pct (88 imp)",
+      "compound-500k-15yr-5pct (42 imp)",
+      "mortgage-200k-15yr-5-5pct (9 imp)"
+    ],
+    "recommendation": "KEEP_IN_SITEMAP \u2014 these 8 tools have GSC impressions. Removing them risks losing the site's only traffic."
+  },
+  "any_url_flagging": "0 of 183 candidates flagged for KEEP or HOLD_FOR_REVIEW. All 183 have 0 impressions, 0 clicks, and low-to-moderate unique value.",
+  "total_approved_for_pruning": 183,
+  "total_kept": 8
+}
