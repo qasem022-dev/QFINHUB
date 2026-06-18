@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Free Financial Data Tables — Loan Payments, Mortgage Affordability & More | QFINHUB",
   description:
     "Free financial reference data: loan payment tables, mortgage affordability tables, compound interest growth. Downloadable CSV files. No signup required. Cite our data in your research.",
-  alternates: { canonical: "https://qfinhub.com/data" },
+  alternates: { canonical: "https://www.qfinhub.com/data" },
   robots: { index: true, follow: true },
 };
 

@@ -1,0 +1,181 @@
+{
+  "phase": "32.3A",
+  "title": "Phase 32.3A \u2014 Exact Discovery Status for 6 Live URLs",
+  "verified_at": "2026-06-18T06:15:00+03:00",
+  "method": "Live curl to www.qfinhub.com + source code inspection + sitemap analysis",
+  "urls": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "in_sitemap": false,
+      "in_all_pages": true,
+      "linked_from_data": false,
+      "linked_from_loan_payment_table": true,
+      "linked_from_at_least_one_scenario_page": false,
+      "rss_feed": false,
+      "bing_indexnow_submitted": false,
+      "production_http_200": true,
+      "self_canonical": "https://qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "self_canonical_matches_live_domain": "MISMATCH \u2014 canonical uses qfinhub.com, live serves from www.qfinhub.com (redirect 307\u2192200 works but canonical should match)",
+      "indexable": true,
+      "noindex_absent": true,
+      "robots_meta": "index, follow",
+      "internal_outlinks": [
+        "/loan-payment-table",
+        "/loan-scenarios/fair-credit-loan-20000-20-percent",
+        "/calculators/loan-calculator"
+      ],
+      "internal_outlink_count": 3,
+      "backlinks_from_other_live_urls": [
+        "/loan-payment-table",
+        "/all-pages"
+      ],
+      "gsc_indexed": "pending \u2014 Day 3 check Jun 21",
+      "gsc_discovered": "pending \u2014 Day 3 check Jun 21"
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "in_sitemap": false,
+      "in_all_pages": true,
+      "linked_from_data": false,
+      "linked_from_loan_payment_table": true,
+      "linked_from_at_least_one_scenario_page": true,
+      "rss_feed": false,
+      "bing_indexnow_submitted": false,
+      "production_http_200": true,
+      "self_canonical": "https://qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+      "self_canonical_matches_live_domain": "MISMATCH",
+      "indexable": true,
+      "noindex_absent": true,
+      "robots_meta": "index, follow",
+      "internal_outlinks": [
+        "/loan-payment-table",
+        "/loan-scenarios/fair-credit-loan-20000-20-percent",
+        "/calculators/loan-calculator"
+      ],
+      "internal_outlink_count": 3,
+      "backlinks_from_other_live_urls": [
+        "/loan-payment-table",
+        "/all-pages",
+        "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+        "/loan-scenarios/fair-credit-loan-20000-20-percent"
+      ],
+      "gsc_indexed": "pending",
+      "gsc_discovered": "pending"
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "in_sitemap": false,
+      "in_all_pages": true,
+      "linked_from_data": false,
+      "linked_from_loan_payment_table": true,
+      "linked_from_at_least_one_scenario_page": true,
+      "rss_feed": false,
+      "bing_indexnow_submitted": false,
+      "production_http_200": true,
+      "self_canonical": "https://qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "self_canonical_matches_live_domain": "MISMATCH",
+      "indexable": true,
+      "noindex_absent": true,
+      "robots_meta": "index, follow",
+      "internal_outlinks": [
+        "/loan-payment-table",
+        "/loan-scenarios/good-credit-loan-20000-8-percent",
+        "/calculators/loan-calculator"
+      ],
+      "internal_outlink_count": 3,
+      "backlinks_from_other_live_urls": [
+        "/loan-payment-table",
+        "/all-pages"
+      ],
+      "gsc_indexed": "pending",
+      "gsc_discovered": "pending"
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "in_sitemap": false,
+      "in_all_pages": true,
+      "linked_from_data": false,
+      "linked_from_loan_payment_table": true,
+      "linked_from_at_least_one_scenario_page": true,
+      "rss_feed": false,
+      "bing_indexnow_submitted": false,
+      "production_http_200": true,
+      "self_canonical": "https://qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "self_canonical_matches_live_domain": "MISMATCH",
+      "indexable": true,
+      "noindex_absent": true,
+      "robots_meta": "index, follow",
+      "internal_outlinks": [
+        "/loan-payment-table",
+        "/loan-scenarios/good-credit-loan-20000-8-percent",
+        "/calculators/loan-calculator"
+      ],
+      "internal_outlink_count": 3,
+      "backlinks_from_other_live_urls": [
+        "/loan-payment-table",
+        "/all-pages",
+        "/loan-scenarios/small-emergency-loan-5000-15-percent",
+        "/loan-scenarios/good-credit-loan-20000-8-percent"
+      ],
+      "gsc_indexed": "pending",
+      "gsc_discovered": "pending"
+    },
+    "/loan-payment-table": {
+      "in_sitemap": false,
+      "in_all_pages": true,
+      "linked_from_data": true,
+      "linked_from_loan_payment_table": "SELF \u2014 is this page",
+      "linked_from_at_least_one_scenario_page": true,
+      "rss_feed": false,
+      "bing_indexnow_submitted": false,
+      "production_http_200": true,
+      "self_canonical": "https://qfinhub.com/loan-payment-table",
+      "self_canonical_matches_live_domain": "MISMATCH",
+      "indexable": true,
+      "noindex_absent": true,
+      "robots_meta": "index, follow",
+      "internal_outlinks": [
+        "/data",
+        "/loan-scenarios/* (4 scenario pages)",
+        "/calculators/loan-calculator"
+      ],
+      "internal_outlink_count": 5,
+      "backlinks_from_other_live_urls": [
+        "/data",
+        "/all-pages",
+        "all 4 scenario pages"
+      ],
+      "gsc_indexed": "pending",
+      "gsc_discovered": "pending"
+    },
+    "/data": {
+      "in_sitemap": false,
+      "in_all_pages": true,
+      "linked_from_data": "SELF \u2014 is this page",
+      "linked_from_loan_payment_table": true,
+      "linked_from_at_least_one_scenario_page": false,
+      "rss_feed": false,
+      "bing_indexnow_submitted": false,
+      "production_http_200": true,
+      "self_canonical": "https://qfinhub.com/data",
+      "self_canonical_matches_live_domain": "MISMATCH",
+      "indexable": true,
+      "noindex_absent": true,
+      "robots_meta": "index, follow",
+      "internal_outlinks": [
+        "/loan-payment-table",
+        "/calculators/loan-calculator"
+      ],
+      "internal_outlink_count": 2,
+      "backlinks_from_other_live_urls": [
+        "/loan-payment-table",
+        "/all-pages"
+      ],
+      "gsc_indexed": "pending",
+      "gsc_discovered": "pending"
+    }
+  },
+  "critical_findings": {
+    "sitemap_omission": "ALL 6 URLs are absent from sitemap.xml (275 URLs total, none are Phase 32 pages). This is CRITICAL \u2014 Google cannot discover these pages via sitemap.",
+    "canonical_mismatch": "All 6 URLs use canonical https://qfinhub.com/* but live site redirects to https://www.qfinhub.com/*. Google sees www version but canonical says non-www. This is a canonicalization conflict.",
+    "cross_linking_gaps": "/data does not link to any loan-scenario pages. Scenario pages only link to 1 other scenario each (not all 3 others). Internal link mesh is sparse.",
+    "sitemap_fix_needed": "src/app/sitemap.ts must be updated to include: /loan-scenarios/*, /loan-payment-table, /data"
+  },
+  "actions_taken": "None \u2014 assessment only. Sitemap and canonical fixes require code changes + deploy."
+}

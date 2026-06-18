@@ -1,0 +1,32 @@
+{
+  "phase": "32.3A",
+  "title": "Phase 32.3A \u2014 Bing/IndexNow Execution Decision",
+  "verified_at": "2026-06-18T06:15:00+03:00",
+  "current_state": {
+    "indexnow_key_configured": false,
+    "key_file_locations_checked": [
+      "https://www.qfinhub.com/indexnow-key.txt \u2192 404",
+      "https://www.qfinhub.com/.well-known/indexnow \u2192 404",
+      "https://www.qfinhub.com/indexnow.txt \u2192 404"
+    ],
+    "local_key_files": "None found in project",
+    "next_config_indexnow": "Not configured",
+    "bing_webmaster_tools": "UNKNOWN \u2014 requires Bing WMT account verification"
+  },
+  "decision": "SKIPPED_FOR_RISK \u2014 Cannot submit to IndexNow without key setup. Key setup requires either (a) Bing Webmaster Tools account + API key, or (b) manual key file generation.",
+  "analysis": {
+    "is_safe_to_use": true,
+    "bing_yandex_only": true,
+    "google_indexing_api_blocked": true,
+    "zero_cost": true,
+    "blocker": "No IndexNow API key exists. Generating a key requires creating a Bing Webmaster Tools account for qfinhub.com, which needs domain ownership verification (DNS TXT record or XML file upload).",
+    "cannot_automate_fully": "Domain verification in Bing WMT requires either DNS access or file upload to production. Hermes has file upload access but DNS access is unknown.",
+    "setup_path": "If Qasem has Bing WMT access: (1) Add qfinhub.com to Bing WMT, (2) Verify via XML file upload to public/, (3) Generate IndexNow API key, (4) Save key to .env.local as INDEXNOW_KEY, (5) Submit 6 URLs via curl POST to api.indexnow.org",
+    "alternative": "Without Bing WMT: create a self-generated UUID key file at public/indexnow-key.txt with a randomly generated key. IndexNow protocol accepts self-generated keys \u2014 the key just needs to be a valid UUID v4 hosted at the root. Submit URLs via POST to api.indexnow.org with that key."
+  },
+  "recommendation": "PENDING_WITHOUT_MANUAL_DEPENDENCY \u2014 Hermes can generate a UUID key, place it at public/indexnow-key.txt, and submit the 6 URLs via curl to IndexNow API. This is fully automated and requires zero manual work.",
+  "status": "PENDING_WITHOUT_MANUAL_DEPENDENCY",
+  "no_google_api": true,
+  "no_paid_tools": true,
+  "no_manual_required": true
+}

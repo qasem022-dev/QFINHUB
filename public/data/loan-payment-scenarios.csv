@@ -1,0 +1,5 @@
+scenario,loan_amount,apr,term_years,monthly_payment,total_interest,total_repayment,use_case,page_url
+"$5K Emergency Loan",5000,15,3,173.00,1228.00,6228.00,"Small emergency expense — car repair, medical bill, urgent need",https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent
+"$20K Good Credit Loan",20000,8,5,405.53,4331.80,24331.80,"Debt consolidation or major purchase with good credit (680+)",https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent
+"$25K Debt Consolidation",25000,10,7,415.19,9876.00,34876.00,"Consolidating high-interest credit card debt at 25% APR",https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent
+"$20K Fair Credit Loan",20000,20,5,529.88,11792.80,31792.80,"Fair credit borrower (620-679) — see true cost of higher rates",https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent

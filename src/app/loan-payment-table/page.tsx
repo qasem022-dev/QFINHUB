@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Personal Loan Payment Table — Compare Monthly Payments by Amount & Rate | QFINHUB",
   description:
     "Quick-reference loan payment tables for personal loans from $5,000 to $30,000. Compare monthly payments across different rates and terms. Free, no signup required.",
-  alternates: { canonical: "https://qfinhub.com/loan-payment-table" },
+  alternates: { canonical: "https://www.qfinhub.com/loan-payment-table" },
   robots: { index: true, follow: true },
 };
 

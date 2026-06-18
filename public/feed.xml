@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QFINHUB — New Loan Scenarios &amp; Data</title>
+    <link>https://www.qfinhub.com</link>
+    <description>New personal finance data, loan scenarios, and calculator updates from QFINHUB. Free financial reference tools.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.qfinhub.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>$5,000 Emergency Loan at 15% APR — Monthly Payment Calculator</title>
+      <link>https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent</link>
+      <guid isPermaLink="true">https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent</guid>
+      <description>$5K emergency loan at 15% APR costs $173/month. See why small loans have higher rates and how to borrow less.</description>
+      <pubDate>Wed, 18 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>$20,000 Personal Loan at 8% APR — Good Credit Monthly Payment Calculator</title>
+      <link>https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent</link>
+      <guid isPermaLink="true">https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent</guid>
+      <description>$20K personal loan at 8% APR = $405/month. Good credit saves you $7,461 vs fair credit. See the math.</description>
+      <pubDate>Wed, 18 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Consolidate $25,000 Debt at 10% APR — Monthly Payment &amp; Savings Calculator</title>
+      <link>https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent</link>
+      <guid isPermaLink="true">https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent</guid>
+      <description>Consolidating $25K credit card debt at 10% saves ~$24,000 vs keeping it on cards at 25% APR.</description>
+      <pubDate>Wed, 18 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>$20,000 Personal Loan at 20% APR — Fair Credit Cost Calculator &amp; Warning</title>
+      <link>https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent</link>
+      <guid isPermaLink="true">https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent</guid>
+      <description>$20K at 20% APR = $530/month. You'll pay 60% of the loan in interest. Is this loan worth it?</description>
+      <pubDate>Wed, 18 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Personal Loan Payment Table — Compare Monthly Payments by Amount &amp; Rate</title>
+      <link>https://www.qfinhub.com/loan-payment-table</link>
+      <guid isPermaLink="true">https://www.qfinhub.com/loan-payment-table</guid>
+      <description>Quick-reference loan payment table: compare $5K-$30K loans at rates from 8% to 20%. Free, no signup.</description>
+      <pubDate>Wed, 18 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Free Financial Data Tables — Loan Payments, Mortgage Affordability &amp; More</title>
+      <link>https://www.qfinhub.com/data</link>
+      <guid isPermaLink="true">https://www.qfinhub.com/data</guid>
+      <description>Free financial reference data: loan payment tables, mortgage affordability tables. Downloadable CSV. Cite our data.</description>
+      <pubDate>Wed, 18 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+
+  </channel>
+</rss>

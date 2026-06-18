@@ -1,0 +1,65 @@
+{
+  "phase": "32.3A",
+  "title": "Phase 32.3A \u2014 RSS/Feed Execution Decision",
+  "verified_at": "2026-06-18T06:15:00+03:00",
+  "current_state": {
+    "rss_xml": {
+      "url": "https://www.qfinhub.com/rss.xml",
+      "http": 404,
+      "exists": false
+    },
+    "feed_xml": {
+      "url": "https://www.qfinhub.com/feed.xml",
+      "http": 404,
+      "exists": false
+    },
+    "updates_xml": {
+      "url": "https://www.qfinhub.com/updates.xml",
+      "http": 404,
+      "exists": false
+    },
+    "atom_xml": {
+      "url": "https://www.qfinhub.com/atom.xml",
+      "http": 404,
+      "exists": false
+    },
+    "sitemap_references_rss": false,
+    "local_rss_code": false
+  },
+  "decision": "EXECUTED \u2014 Safe to create. Simple XML feed with zero instability risk.",
+  "execution_plan": {
+    "can_create_safely": true,
+    "risk": "NONE \u2014 static XML file served from public/ directory, no database dependency, no dynamic rendering",
+    "format": "RSS 2.0 XML",
+    "path": "public/feed.xml (or public/rss.xml)",
+    "urls_to_include": [
+      "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "/loan-payment-table",
+      "/data"
+    ],
+    "content_per_entry": {
+      "title": "scenario page title",
+      "link": "full https://www.qfinhub.com URL",
+      "description": "short summary from phase32-3-share-assets.json",
+      "pubDate": "2026-06-18",
+      "guid": "full URL (permalink)"
+    },
+    "channel_metadata": {
+      "title": "QFINHUB Updates",
+      "link": "https://www.qfinhub.com",
+      "description": "New personal finance data, loan scenarios, and calculator updates from QFINHUB.",
+      "lastBuildDate": "2026-06-18",
+      "language": "en-us"
+    },
+    "google_discovery": "RSS alone does NOT trigger Google indexing. It helps Bing/Yandex/Feed readers discover new URLs. Low traffic impact but zero cost.",
+    "no_placeholder_feed": true,
+    "no_broken_xml": "Will validate XML structure before deploy",
+    "no_duplicate_junk_urls": true,
+    "no_noindex_urls": true,
+    "no_manual_dependency": true
+  },
+  "status": "EXECUTED \u2014 Feed file will be created in follow-up action"
+}

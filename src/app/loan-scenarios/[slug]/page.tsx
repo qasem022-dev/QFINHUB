@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: scenario.title,
     description: scenario.metaDescription,
-    alternates: { canonical: `https://qfinhub.com/loan-scenarios/${slug}` },
+    alternates: { canonical: `https://www.qfinhub.com/loan-scenarios/${slug}` },
     robots: { index: true, follow: true },
   };
 }

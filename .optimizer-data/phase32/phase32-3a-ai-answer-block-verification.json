@@ -1,0 +1,86 @@
+{
+  "phase": "32.3A",
+  "title": "Phase 32.3A \u2014 AI Answer Block Verification",
+  "verified_at": "2026-06-18T06:15:00+03:00",
+  "method": "Live page source inspection + template code review (src/app/loan-scenarios/[slug]/page.tsx)",
+  "pages": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "direct_answer_block": "PRESENT \u2014 Above-fold blue box with 3 key metrics (monthly payment, total interest, total repayment) + term + CTA",
+      "formula_methodology": "ABSENT on scenario pages \u2014 formula only on /loan-payment-table",
+      "assumptions_table": "PRESENT \u2014 Loan Assumptions table with 6 rows (amount, APR, term, monthly, interest, total)",
+      "caveats_warnings": "PRESENT \u2014 'When This Loan Is Risky' section + Disclaimer box",
+      "related_calculator_link": "PRESENT \u2014 Links to /calculators/loan-calculator",
+      "concise_summary": "PRESENT \u2014 'What This Means in Real Life' section",
+      "manipulative_text": "CLEAN \u2014 No 'AI should cite us' or manipulative language found",
+      "score": "PASS (6/7) \u2014 missing formula/methodology on scenario pages"
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "direct_answer_block": "PRESENT",
+      "formula_methodology": "ABSENT on scenario pages",
+      "assumptions_table": "PRESENT",
+      "caveats_warnings": "PRESENT",
+      "related_calculator_link": "PRESENT",
+      "concise_summary": "PRESENT",
+      "manipulative_text": "CLEAN",
+      "score": "PASS (6/7)"
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "direct_answer_block": "PRESENT",
+      "formula_methodology": "ABSENT on scenario pages",
+      "assumptions_table": "PRESENT",
+      "caveats_warnings": "PRESENT",
+      "related_calculator_link": "PRESENT",
+      "concise_summary": "PRESENT",
+      "manipulative_text": "CLEAN",
+      "score": "PASS (6/7)"
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "direct_answer_block": "PRESENT",
+      "formula_methodology": "ABSENT on scenario pages",
+      "assumptions_table": "PRESENT",
+      "caveats_warnings": "PRESENT \u2014 includes extra 'Credit Improvement Path' section",
+      "related_calculator_link": "PRESENT",
+      "concise_summary": "PRESENT",
+      "manipulative_text": "CLEAN",
+      "score": "PASS (6/7)"
+    },
+    "/loan-payment-table": {
+      "direct_answer_block": "PRESENT \u2014 Starter Loan Scenarios table with 4 rows + all metrics",
+      "formula_methodology": "PRESENT \u2014 Full amortization formula: M = P \u00d7 [r(1+r)^n] / [(1+r)^n - 1]",
+      "assumptions_table": "PRESENT \u2014 embedded in table rows",
+      "caveats_warnings": "PRESENT \u2014 FAQ section + Disclaimer box",
+      "related_calculator_link": "PRESENT \u2014 Links to /calculators/loan-calculator",
+      "concise_summary": "PRESENT \u2014 FAQ covers use cases",
+      "manipulative_text": "CLEAN",
+      "score": "PASS (7/7) \u2014 best in class"
+    },
+    "/data": {
+      "direct_answer_block": "PARTIAL \u2014 Has structured sections but no above-fold summary block",
+      "formula_methodology": "PRESENT \u2014 'Methodology: Standard amortization formula'",
+      "assumptions_table": "PARTIAL \u2014 methodology line present but no detailed assumptions table",
+      "caveats_warnings": "PRESENT \u2014 Disclaimer box",
+      "related_calculator_link": "PRESENT \u2014 Links to /calculators/loan-calculator",
+      "concise_summary": "PRESENT \u2014 intro paragraph describes data hub purpose",
+      "manipulative_text": "CLEAN",
+      "score": "PASS (5/7) \u2014 weakest of the 6 pages but still solid"
+    }
+  },
+  "overall_assessment": "GOOD \u2014 All 6 pages have substantive content structured for AI extraction. The main gap is formula/methodology missing from individual scenario pages. The /data page could use an above-fold summary box.",
+  "fixes_needed": [
+    {
+      "priority": "LOW",
+      "issue": "Scenario pages don't show the amortization formula",
+      "fix": "Add a small 'How This Is Calculated' section to the scenario template with the formula and an explanation",
+      "risk": "NONE \u2014 purely additive"
+    },
+    {
+      "priority": "LOW",
+      "issue": "/data page lacks above-fold summary block",
+      "fix": "Add a summary box at top of /data page listing: '4 loan scenarios, 1 payment table, cited in APA/MLA/Chicago'",
+      "risk": "NONE"
+    }
+  ],
+  "no_manipulative_text": true,
+  "no_google_indexing_api": true,
+  "status": "WORKING \u2014 all pages have AI-extractable structured data"
+}

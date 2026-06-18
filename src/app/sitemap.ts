@@ -129,6 +129,43 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    // Phase 32: Loan scenario pages + hubs
+    {
+      url: `${BASE_URL}/loan-payment-table`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/data`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/loan-scenarios/small-emergency-loan-5000-15-percent`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/loan-scenarios/good-credit-loan-20000-8-percent`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/loan-scenarios/debt-consolidation-loan-25000-10-percent`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/loan-scenarios/fair-credit-loan-20000-20-percent`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   const calculatorPages: SitemapEntry[] = allCalculators.map((calc) => ({
