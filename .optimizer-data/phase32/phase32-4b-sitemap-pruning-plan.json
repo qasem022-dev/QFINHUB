@@ -1,0 +1,53 @@
+{
+  "phase": "32.4B",
+  "title": "Sitemap Pruning Plan \u2014 PLAN ONLY, DO NOT EXECUTE",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "status": "PLAN_ONLY",
+  "do_not_execute_until": "Phase 32.5 approval",
+  "removals": [
+    {
+      "category": "404 URL",
+      "urls": [
+        "/tools/retirement-1M-30yr"
+      ],
+      "count": 1,
+      "reason": "HTTP 404. Dead page.",
+      "risk": "NONE",
+      "expected_benefit": "Remove dead URL from sitemap",
+      "rollback": "Re-add if page is restored"
+    },
+    {
+      "category": "GSC-exempted noindex contradictions",
+      "urls": [
+        "/tools/afford-100k-40k-6-5pct",
+        "/tools/afford-130k-40k-7pct"
+      ],
+      "count": 2,
+      "reason": "Pages have noindex meta but are in sitemap. Either make indexable or remove.",
+      "risk": "LOW \u2014 these have GSC impressions. Removing from sitemap may lose that traffic.",
+      "expected_benefit": "Eliminate sitemap/noindex contradiction",
+      "rollback": "Re-add to sitemap if GSC impressions justify"
+    },
+    {
+      "category": "Thin guides (125 URLs)",
+      "urls": "125 guide pages (how-to-use-*)",
+      "count": 125,
+      "reason": "Thin 'how to use X' pages. 0 GSC impressions for most. Dilute sitemap quality.",
+      "risk": "LOW \u2014 these have near-zero traffic. Removing from sitemap doesn't remove them from site.",
+      "expected_benefit": "Reduce sitemap by 19%. Improve quality signal. Reduce DNI noise.",
+      "rollback": "Re-add all guides to sitemap via git revert"
+    },
+    {
+      "category": "Thin investment tools (66 URLs with yr pattern)",
+      "urls": "66 investment-Xk-Yyr tool pages",
+      "count": 66,
+      "reason": "Pre-calculated investment scenarios. Indexable but thin. Similar to formula variants but cleaner.",
+      "risk": "LOW-MEDIUM \u2014 some may have GSC impressions. Audit before removal.",
+      "expected_benefit": "Reduce sitemap by 10%. Focus on high-demand scenarios only.",
+      "rollback": "Re-add to sitemap"
+    }
+  ],
+  "total_potential_pruning": "194 URLs (3 critical + 125 guides + 66 thin tools)",
+  "post_pruning_sitemap_size": "462 URLs (down from 656)",
+  "note": "PLAN ONLY. No sitemap changes executed. Awaiting Phase 32.5 approval."
+}

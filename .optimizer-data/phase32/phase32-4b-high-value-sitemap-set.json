@@ -1,0 +1,78 @@
+{
+  "phase": "32.4B",
+  "title": "High-Value Sitemap Set",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "ideal_sitemap": {
+    "KEEP": {
+      "calculators": {
+        "count": 125,
+        "reason": "Core site content. Primary traffic and authority pages."
+      },
+      "blogs": {
+        "count": 106,
+        "reason": "Top impression driver (149 imp for $20K loan blog). Authority content."
+      },
+      "decisions": {
+        "count": 15,
+        "reason": "Financial decision guides. High E-E-A-T potential."
+      },
+      "scenarios": {
+        "count": 4,
+        "reason": "Phase 32 hand-crafted content. Future growth engine."
+      },
+      "hubs": {
+        "count": 3,
+        "reason": "Data hub, loan payment table, all-pages. Discovery infrastructure."
+      },
+      "comparisons": {
+        "count": 35,
+        "reason": "Moderate value comparison pages."
+      },
+      "static_pages": {
+        "count": 12,
+        "reason": "Privacy, terms, about, contact, methodology, etc."
+      },
+      "widgets": {
+        "count": 2,
+        "reason": "Embed widgets. Minor but valid."
+      },
+      "geo_calculators": {
+        "count": 3,
+        "reason": "Only 3 GSC-approved geo pages. Fine."
+      },
+      "homepage": {
+        "count": 1,
+        "reason": "Home page."
+      }
+    },
+    "HOLD_FOR_REVIEW": {
+      "tools_clean": {
+        "count": 223,
+        "reason": "Investment/tax/budget pre-calculated scenarios. Indexable but thin. Consider reducing to top 50 by search demand.",
+        "action": "Audit for quality, reduce to high-demand scenarios only"
+      },
+      "guides": {
+        "count": 125,
+        "reason": "'How to use X' guides. Thin templated content. Most have 0 GSC impressions.",
+        "action": "Consider noindexing or consolidating into parent calculator pages"
+      }
+    },
+    "REMOVE": {
+      "tools_404": {
+        "count": 1,
+        "url": "/tools/retirement-1M-30yr",
+        "reason": "HTTP 404"
+      },
+      "tools_gsc_exempted_noindex": {
+        "count": 2,
+        "urls": [
+          "/tools/afford-100k-40k-6-5pct",
+          "/tools/afford-130k-40k-7pct"
+        ],
+        "reason": "In sitemap but pages have noindex meta. Contradiction."
+      }
+    }
+  },
+  "ideal_sitemap_size": "306-656 URLs depending on tool/guide retention decision",
+  "note": "No execution. This is a plan only."
+}

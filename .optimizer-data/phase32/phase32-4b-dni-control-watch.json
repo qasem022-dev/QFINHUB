@@ -1,0 +1,15 @@
+{
+  "phase": "32.4B",
+  "title": "Discovered-Not-Indexed Control Watch",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "current_dni_count": 503,
+  "previous_dni_count": 503,
+  "change": 0,
+  "new_urls_entering_dni": "UNKNOWN \u2014 too early to measure. 3 of 6 Phase 32 URLs are already DNI (discovered within hours of sitemap addition)",
+  "categories_entering_dni": "Phase 32 scenario pages (3 URLs discovered-not-indexed within 24 hours)",
+  "sitemap_expansion_increasing_dni": "UNCLEAR \u2014 sitemap was just updated. Monitor Day 3 (Jun 21) and Day 7 (Jun 25)",
+  "batch_1_stuck_in_dni": "TOO_EARLY \u2014 pages are <24 hours old. DNI is expected at this stage. Stuck = 14+ days in DNI without crawling",
+  "risk_assessment": "LOW \u2014 sitemap is technically clean. New URLs entering DNI is NORMAL for fresh pages. Concern only if still DNI at Day 14.",
+  "SCALE_BLOCKED": false,
+  "SCALE_BLOCKED_reason": "DNI count is stable at 503. No sharp increase triggered by sitemap expansion."
+}

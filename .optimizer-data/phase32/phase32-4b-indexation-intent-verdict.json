@@ -1,0 +1,44 @@
+{
+  "phase": "32.4B",
+  "title": "Intentional Indexation Verdict",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "question": "Would we intentionally want every one of the 656 sitemap URLs indexed?",
+  "answer": "NO_PARTIAL_BLOAT_FOUND",
+  "verdict_detail": "The sitemap is technically clean (99.8% HTTP 200, 0% noindex pollution, all self-canonical) but contains ~350 LOW-VALUE pages (125 guides + 225 tools) that are thin templated content. These are indexable but dilute the sitemap quality signal. They should not necessarily be REMOVED, but their presence explains why discovered-not-indexed count is high \u2014 Google sees 350 templated pages and deprioritizes them.",
+  "categories_that_should_NOT_be_in_sitemap": [
+    {
+      "category": "GSC-exempted noindex tools (2 URLs)",
+      "reason": "afford-100k-40k-6-5pct and afford-130k-40k-7pct are noindexed but in sitemap. Contradiction \u2014 either make them indexable or remove from sitemap."
+    },
+    {
+      "category": "404 URLs (1 known)",
+      "reason": "retirement-1M-30yr returns 404. Should be removed."
+    }
+  ],
+  "categories_flagged_for_review": [
+    {
+      "category": "Guides (125 URLs)",
+      "reason": "Thin 'how to use X calculator' pages. Indexable but low value. Google may consider them doorway-like. Consider noindexing or consolidating.",
+      "action": "HOLD_FOR_REVIEW"
+    },
+    {
+      "category": "Investment tools (66 URLs with 'yr' pattern)",
+      "reason": "Pre-calculated investment scenarios. Indexable but thin. Similar to formula variants but cleaner slugs. Value unclear.",
+      "action": "HOLD_FOR_REVIEW"
+    }
+  ],
+  "categories_that_SHOULD_stay": [
+    "Calculators (125)",
+    "Blogs (106)",
+    "Decisions (15)",
+    "Scenarios (4)",
+    "Hubs (3)",
+    "Comparisons (35)",
+    "Static pages (12)",
+    "Widgets (2)",
+    "Geo calculators (3)",
+    "Homepage (1)",
+    "Non-formula tools without yr pattern (157)"
+  ],
+  "note": "The sitemap is TECHNICALLY clean but CONTENT-WISE inflated. The 350 thin tool/guide pages are not spam \u2014 they're pre-calculated financial scenarios. But they may harm Google's perception of site quality."
+}

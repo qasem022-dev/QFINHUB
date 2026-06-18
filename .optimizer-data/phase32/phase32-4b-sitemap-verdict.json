@@ -1,0 +1,51 @@
+{
+  "phase": "32.4B",
+  "title": "Sitemap Safe/Unsafe Verdict",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "verdict": "SITEMAP_NEEDS_PRUNING",
+  "reason": "Technically the sitemap is SITEMAP_SAFE (97.5% clean). But content-wise, 350+ thin tool/guide pages dilute the quality signal. The sitemap is SAFE from a technical perspective but NEEDS_PRUNING from a content quality perspective.",
+  "rules_check": {
+    "95pct_http_200": {
+      "threshold": "\u226595%",
+      "actual": "97.5%",
+      "pass": true
+    },
+    "95pct_indexable": {
+      "threshold": "\u226595%",
+      "actual": "99.7% (only 2 noindex GSC-exempted URLs)",
+      "pass": true
+    },
+    "95pct_self_canonical": {
+      "threshold": "\u226595%",
+      "actual": "100%",
+      "pass": true
+    },
+    "0_noindex_urls": {
+      "threshold": "0",
+      "actual": "2 (GSC-exempted)",
+      "pass": false
+    },
+    "0_known_404_urls": {
+      "threshold": "0",
+      "actual": "1 (retirement-1M-30yr)",
+      "pass": false
+    },
+    "0_dashboard_auth_internal_junk": {
+      "threshold": "0",
+      "actual": "0",
+      "pass": true
+    },
+    "categories_intentionally_indexable": {
+      "threshold": "YES",
+      "actual": "PARTIAL \u2014 guides and tools are thin but indexable",
+      "pass": "BORDERLINE"
+    },
+    "no_major_bloat": {
+      "threshold": "YES",
+      "actual": "PARTIAL \u2014 350 thin pages constitute content bloat, not technical bloat",
+      "pass": "BORDERLINE"
+    }
+  },
+  "if_we_remove_3_polluted_urls": "SITEMAP_SAFE for technical checks. Content bloat is a strategic decision, not a safety issue.",
+  "recommendation": "Fix 3 polluted URLs (1 404 + 2 noindex contradictions), then the sitemap is TECHNICALLY safe. Content bloat (guides + tools) requires a strategic decision about page value, not an emergency fix."
+}

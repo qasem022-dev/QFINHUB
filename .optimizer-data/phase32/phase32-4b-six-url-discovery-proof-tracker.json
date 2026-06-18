@@ -1,0 +1,100 @@
+{
+  "phase": "32.4B",
+  "title": "Six-URL Discovery Proof Tracker",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "urls": [
+    {
+      "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "in_sitemap": true,
+      "in_rss_feed": true,
+      "in_data_or_hub": true,
+      "indexnow_submitted": true,
+      "discovered_by_google": true,
+      "crawled_by_google": false,
+      "indexed_by_google": false,
+      "bing_indexed": "UNKNOWN",
+      "impressions": 0,
+      "clicks": 0,
+      "status": "DISCOVERED"
+    },
+    {
+      "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "in_sitemap": true,
+      "in_rss_feed": true,
+      "in_data_or_hub": true,
+      "indexnow_submitted": true,
+      "discovered_by_google": false,
+      "crawled_by_google": false,
+      "indexed_by_google": false,
+      "bing_indexed": "UNKNOWN",
+      "impressions": 0,
+      "clicks": 0,
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "in_sitemap": true,
+      "in_rss_feed": true,
+      "in_data_or_hub": true,
+      "indexnow_submitted": true,
+      "discovered_by_google": true,
+      "crawled_by_google": false,
+      "indexed_by_google": false,
+      "bing_indexed": "UNKNOWN",
+      "impressions": 0,
+      "clicks": 0,
+      "status": "DISCOVERED"
+    },
+    {
+      "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "in_sitemap": true,
+      "in_rss_feed": true,
+      "in_data_or_hub": true,
+      "indexnow_submitted": true,
+      "discovered_by_google": true,
+      "crawled_by_google": false,
+      "indexed_by_google": false,
+      "bing_indexed": "UNKNOWN",
+      "impressions": 0,
+      "clicks": 0,
+      "status": "DISCOVERED"
+    },
+    {
+      "url": "/loan-payment-table",
+      "in_sitemap": true,
+      "in_rss_feed": true,
+      "in_data_or_hub": true,
+      "indexnow_submitted": true,
+      "discovered_by_google": false,
+      "crawled_by_google": false,
+      "indexed_by_google": false,
+      "bing_indexed": "UNKNOWN",
+      "impressions": 0,
+      "clicks": 0,
+      "status": "PUBLISHED_ONLY"
+    },
+    {
+      "url": "/data",
+      "in_sitemap": true,
+      "in_rss_feed": true,
+      "in_data_or_hub": "SELF",
+      "indexnow_submitted": true,
+      "discovered_by_google": false,
+      "crawled_by_google": false,
+      "indexed_by_google": false,
+      "bing_indexed": "UNKNOWN",
+      "impressions": 0,
+      "clicks": 0,
+      "status": "PUBLISHED_ONLY"
+    }
+  ],
+  "summary": {
+    "published": 6,
+    "discovered": 3,
+    "crawled": 0,
+    "indexed": 0,
+    "impressions": 0,
+    "clicked": 0
+  },
+  "note": "3 URLs show as 'URL is unknown to Google' despite being in sitemap + /all-pages + IndexNow submitted. Google may not have re-crawled since sitemap update (~3 hours ago). Expect discovery to improve by Day 3 check (Jun 21)."
+}

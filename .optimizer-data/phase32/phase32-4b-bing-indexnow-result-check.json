@@ -1,0 +1,21 @@
+{
+  "phase": "32.4B",
+  "title": "Bing/IndexNow Result Check",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "submission": {
+    "submitted_at": "2026-06-18T06:00:00+03:00",
+    "urls_submitted": 6,
+    "api_indexnow_org_response": "202 Accepted",
+    "bing_indexnow_response": "202 Accepted",
+    "accepted_confirmed": true
+  },
+  "key_hosting": {
+    "url": "https://www.qfinhub.com/indexnow-key.txt",
+    "http_status": 200,
+    "hosted_correctly": true
+  },
+  "bing_discovery_status": "UNKNOWN \u2014 Bing does not expose a public index check API like Google's URL Inspection",
+  "traffic_referral_signs": "NONE \u2014 no Bing referral traffic detected (but site has 0 total clicks from all sources)",
+  "errors": "NONE",
+  "next_action": "Monitor for Bing referrals in analytics. No further IndexNow submissions needed for these 6 URLs."
+}

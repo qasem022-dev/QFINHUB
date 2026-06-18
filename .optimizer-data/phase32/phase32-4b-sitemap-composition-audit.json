@@ -1,0 +1,156 @@
+{
+  "phase": "32.4B",
+  "title": "Sitemap Composition Audit \u2014 656 URLs",
+  "verified_at": "2026-06-18T23:00:00+03:00",
+  "total_urls": 656,
+  "methodology": "Full sitemap curl + source code inspection + live sampling (50 random URLs + 30 tool/guide URLs)",
+  "categories": {
+    "tool": {
+      "count": 225,
+      "pct": 34.3,
+      "indexable": "YES \u2014 all sampled indexable (index,follow, self-canonical, HTTP 200)",
+      "noindex": "NO \u2014 0 of 10 sampled show noindex. Noindexed formula variants are correctly EXCLUDED from sitemap",
+      "canonical": "SELF \u2014 self-canonical for clean variants",
+      "http": "200 (1 known 404: retirement-1M-30yr)",
+      "gsc_impressions": "10 in top 30 pages by impression (positions 5-9)",
+      "index_status": "SOME \u2014 GSC-approved tools have impressions. Most are discovered-not-indexed",
+      "intentional_in_sitemap": "YES for clean variants. NO for GSC-exempted noindex variants (2 URLs)",
+      "risk": "LOW-MEDIUM \u2014 Clean variants are thin but indexable. 2 GSC-exempted URLs are noindexed (contradiction)",
+      "sample_urls": [
+        "investment-1k-5yr",
+        "investment-100k-20yr",
+        "tax-100k-single",
+        "dti-75k-28pct",
+        "budget-40k-zero-based"
+      ]
+    },
+    "calculator": {
+      "count": 125,
+      "pct": 19.1,
+      "indexable": "YES \u2014 all calculators are indexable core pages",
+      "noindex": "NO",
+      "canonical": "SELF",
+      "http": "200",
+      "gsc_impressions": "9 in top 30 (positions 7-85, mostly deep)",
+      "index_status": "MOST \u2014 core site pages, some indexed",
+      "intentional_in_sitemap": "YES",
+      "risk": "NONE",
+      "sample_urls": [
+        "compound-interest",
+        "loan-calculator",
+        "tax-calculator",
+        "mortgage-affordability"
+      ]
+    },
+    "guide": {
+      "count": 125,
+      "pct": 19.1,
+      "indexable": "YES \u2014 all guides are indexable (index,follow, HTTP 200)",
+      "noindex": "NO \u2014 guide template has no noindex logic",
+      "canonical": "SELF",
+      "http": "200 (all 5 sampled)",
+      "gsc_impressions": "1 in top 30 (pos 39, 7 imp)",
+      "index_status": "MOSTLY discovered-not-indexed \u2014 thin 'how to use X' pages",
+      "intentional_in_sitemap": "DEBATABLE \u2014 indexable but thin. Low value but not spam",
+      "risk": "MEDIUM \u2014 125 thin pages dilute sitemap quality signal",
+      "sample_urls": [
+        "how-to-use-basic-calculator",
+        "how-to-use-compound-interest",
+        "how-to-use-mortgage-calculator"
+      ]
+    },
+    "blog": {
+      "count": 106,
+      "pct": 16.2,
+      "indexable": "YES",
+      "noindex": "NO",
+      "canonical": "SELF",
+      "http": "200",
+      "gsc_impressions": "2 in top 30 (149 imp at pos 10.6 \u2014 TOP IMPRESSION DRIVER)",
+      "index_status": "MIXED \u2014 some indexed, some discovered-not-indexed",
+      "intentional_in_sitemap": "YES",
+      "risk": "NONE"
+    },
+    "comparison": {
+      "count": 35,
+      "pct": 5.3,
+      "indexable": "YES",
+      "noindex": "NO",
+      "canonical": "SELF",
+      "http": "200",
+      "gsc_impressions": "0 in top 30",
+      "intentional_in_sitemap": "YES",
+      "risk": "LOW"
+    },
+    "decision": {
+      "count": 15,
+      "pct": 2.3,
+      "indexable": "YES",
+      "noindex": "NO",
+      "canonical": "SELF",
+      "http": "200",
+      "gsc_impressions": "2 in top 30 (pos 50-53)",
+      "intentional_in_sitemap": "YES",
+      "risk": "NONE"
+    },
+    "scenario": {
+      "count": 4,
+      "pct": 0.6,
+      "indexable": "YES \u2014 Phase 32 hand-crafted pages",
+      "noindex": "NO",
+      "canonical": "SELF (www.qfinhub.com fixed)",
+      "http": "200",
+      "gsc_impressions": "0 \u2014 too new",
+      "intentional_in_sitemap": "YES",
+      "risk": "NONE"
+    },
+    "hub": {
+      "count": 3,
+      "pct": 0.5,
+      "indexable": "YES",
+      "noindex": "NO",
+      "canonical": "SELF",
+      "http": "200",
+      "intentional_in_sitemap": "YES",
+      "risk": "NONE"
+    },
+    "geo_calculator": {
+      "count": 3,
+      "pct": 0.5,
+      "indexable": "YES \u2014 only GSC-approved geo pages kept",
+      "noindex": "NO",
+      "intentional_in_sitemap": "YES",
+      "risk": "NONE"
+    },
+    "widget": {
+      "count": 2,
+      "pct": 0.3,
+      "indexable": "YES",
+      "intentional_in_sitemap": "YES"
+    },
+    "homepage": {
+      "count": 1,
+      "pct": 0.2
+    },
+    "other": {
+      "count": 12,
+      "pct": 1.8,
+      "description": "Static pages: privacy, terms, about, contact, methodology, etc."
+    }
+  },
+  "phase32_4_correction": "Phase 32.4 claimed '353 tools + guides are noindexed and create 53.8% sitemap bloat.' This was WRONG. The sitemap filter (isFormulaVariant) correctly excludes noindexed formula variants. The 225 tools and 125 guides in the sitemap are ALL indexable (index,follow, self-canonical, HTTP 200). The bloat concern is about page VALUE (thin content), not technical noindex pollution.",
+  "known_issues": [
+    {
+      "url": "/tools/retirement-1M-30yr",
+      "issue": "HTTP 404 \u2014 should be removed from sitemap"
+    },
+    {
+      "url": "/tools/afford-100k-40k-6-5pct",
+      "issue": "GSC-exempted but noindexed on page \u2014 contradiction"
+    },
+    {
+      "url": "/tools/afford-130k-40k-7pct",
+      "issue": "GSC-exempted but noindexed on page \u2014 contradiction"
+    }
+  ]
+}
