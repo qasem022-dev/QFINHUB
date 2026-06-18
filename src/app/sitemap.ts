@@ -185,18 +185,18 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
 
   // V2 Correction Phase 3: Sitemap cleanup — exclude noindexed pages.
   // Formula variants (loan-20k-5yr-8pct patterns) are noindexed + canonicalized → excluded.
-  const TOOL_GSC_SLUGS = new Set([
-    "afford-100k-40k-6-5pct",
-    "afford-130k-40k-7pct",
-  ]);
+  // Phase 32.4C: TOOL_GSC_SLUGS emptied — afford-100k/130k are noindexed, should NOT be in sitemap.
+  const TOOL_GSC_SLUGS = new Set<string>([]);
 
   // Phase 16.12F: Blocklist — variant pages that are noindexed by the scenario page logic.
   // These have hex-suffixed slugs (auto-generated) and are noindex,follow at /scenario/[id].
   // They should NOT be in the main sitemap — Google crawls them but won't index them anyway.
+  // Phase 32.4C: Added retirement-1M-30yr — HTTP 404, must not be in sitemap.
   const NOINDEXED_VARIANT_SLUGS = new Set([
     "auto-loan-717d83b1",
     "auto-loan-92918ea9",
     "retirement-planning-eb1dd78b",
+    "retirement-1M-30yr",
   ]);
 
   function isFormulaVariant(slug: string): boolean {
