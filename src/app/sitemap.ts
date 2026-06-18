@@ -192,11 +192,14 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
   // These have hex-suffixed slugs (auto-generated) and are noindex,follow at /scenario/[id].
   // They should NOT be in the main sitemap — Google crawls them but won't index them anyway.
   // Phase 32.4C: Added retirement-1M-30yr — HTTP 404, must not be in sitemap.
+  // Phase 32.4C: Added afford-100k/130k — noindexed, isFormulaVariant misses them (no yr/mo in slug).
   const NOINDEXED_VARIANT_SLUGS = new Set([
     "auto-loan-717d83b1",
     "auto-loan-92918ea9",
     "retirement-planning-eb1dd78b",
     "retirement-1M-30yr",
+    "afford-100k-40k-6-5pct",
+    "afford-130k-40k-7pct",
   ]);
 
   function isFormulaVariant(slug: string): boolean {
