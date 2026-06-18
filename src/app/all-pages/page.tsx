@@ -40,7 +40,7 @@ export default function SitemapPage() {
       <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Sitemap</h1>
         <p className="text-gray-500 dark:text-gray-400 mb-10">
-          Complete index of all {calculators.length + scenarios.length + variantPages.length + comparisons.length + blog.length}+ pages on QFINHUB.
+          Complete index of all {calculators.length + scenarios.length + variantPages.length + comparisons.length + blog.length + 6}+ pages on QFINHUB.
         </p>
 
         {/* Calculators by Category */}
@@ -141,6 +141,30 @@ export default function SitemapPage() {
           </section>
         )}
 
+        {/* Loan Scenarios — Phase 32 */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+            Loan Scenarios (4)
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            {[
+              { href: "/loan-scenarios/small-emergency-loan-5000-15-percent", label: "$5K Emergency Loan (15%)" },
+              { href: "/loan-scenarios/good-credit-loan-20000-8-percent", label: "$20K Good Credit (8%)" },
+              { href: "/loan-scenarios/debt-consolidation-loan-25000-10-percent", label: "$25K Debt Consolidation (10%)" },
+              { href: "/loan-scenarios/fair-credit-loan-20000-20-percent", label: "$20K Fair Credit (20%)" },
+            ].map((page) => (
+              <Link
+                key={page.href}
+                href={page.href}
+                className="text-sm text-gray-600 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors truncate"
+                title={page.label}
+              >
+                {page.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Blog */}
         {blog.length > 0 && (
           <section className="mb-10">
@@ -174,6 +198,8 @@ export default function SitemapPage() {
               { href: "/editorial-policy", label: "Editorial Policy" },
               { href: "/privacy", label: "Privacy Policy" },
               { href: "/terms", label: "Terms of Service" },
+              { href: "/loan-payment-table", label: "Loan Payment Table" },
+              { href: "/data", label: "Data Hub" },
             ].map((page) => (
               <Link
                 key={page.href}
