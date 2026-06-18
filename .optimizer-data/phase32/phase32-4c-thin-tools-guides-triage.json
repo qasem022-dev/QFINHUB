@@ -1,0 +1,84 @@
+{
+  "phase": "32.4C",
+  "title": "Thin Tools/Guides Triage \u2014 Audit Only, No Pruning",
+  "audited_at": "2026-06-19T00:15:00+03:00",
+  "scope": {
+    "guides": 125,
+    "thin_tools": 66,
+    "total": 191
+  },
+  "methodology": "28-day GSC data cross-referenced with sitemap URL list. Content depth assessed by type pattern.",
+  "guides_125": {
+    "description": "'How to use X calculator' pages. Auto-generated from calculator list. Same template structure.",
+    "gsc_impressions_28d": "~7 total across all 125 guides (only 'how-to-use-mortgage-calculator' has 7 imp)",
+    "gsc_clicks_28d": 0,
+    "average_word_count_estimate": "200-400 words \u2014 thin templated content",
+    "calculator_present": true,
+    "unique_value_score": "5-15/100 \u2014 purely navigational, no unique insight",
+    "supports_money_page": "MARGINALLY \u2014 links to parent calculator but provides no new value",
+    "duplication_risk": "HIGH \u2014 125 pages with identical structure, only calculator name differs",
+    "action_recommendation": "REMOVE_FROM_SITEMAP \u2014 keep pages live but exclude from sitemap. These are user-facing but not search-engine-valuable."
+  },
+  "thin_tools_66": {
+    "description": "Investment/tax/budget pre-calculated scenarios with 'yr' pattern (investment-Xk-Yyr, tax-Xk-single, etc.)",
+    "gsc_impressions_28d": "8 tools have impressions (compound-100k-20yr has 88 imp, compound-500k-15yr has 42 imp). 58 of 66 have 0 impressions.",
+    "gsc_clicks_28d": 0,
+    "average_word_count_estimate": "300-600 words \u2014 pre-calculated result + brief explanation",
+    "calculator_present": true,
+    "unique_value_score": "20-40/100 \u2014 shows specific calculation result. Some have user value for specific scenarios.",
+    "supports_money_page": "YES \u2014 investment scenarios link to compound-interest calculator",
+    "duplication_risk": "MODERATE \u2014 similar structure but different inputs make each page distinct",
+    "action_recommendation": "HOLD_FOR_REVIEW \u2014 8 tools have GSC impressions (88+42+etc). Removing all 66 risks losing what little traffic the site has. Consider keeping tools with impressions, removing tools with 0 impressions."
+  },
+  "sample_audit": [
+    {
+      "url": "/guides/how-to-use-basic-calculator",
+      "type": "guide",
+      "impressions_28d": 0,
+      "clicks_28d": 0,
+      "unique_value": 10,
+      "action": "REMOVE_FROM_SITEMAP"
+    },
+    {
+      "url": "/guides/how-to-use-mortgage-calculator",
+      "type": "guide",
+      "impressions_28d": 7,
+      "clicks_28d": 0,
+      "unique_value": 10,
+      "action": "REMOVE_FROM_SITEMAP"
+    },
+    {
+      "url": "/tools/investment-1k-5yr",
+      "type": "tool",
+      "impressions_28d": 0,
+      "clicks_28d": 0,
+      "unique_value": 25,
+      "action": "REMOVE_FROM_SITEMAP"
+    },
+    {
+      "url": "/tools/investment-100k-20yr",
+      "type": "tool",
+      "impressions_28d": 0,
+      "clicks_28d": 0,
+      "unique_value": 30,
+      "action": "REMOVE_FROM_SITEMAP"
+    },
+    {
+      "url": "/tools/tax-100k-single",
+      "type": "tool",
+      "impressions_28d": 0,
+      "clicks_28d": 0,
+      "unique_value": 25,
+      "action": "REMOVE_FROM_SITEMAP"
+    },
+    {
+      "url": "/tools/dti-75k-28pct",
+      "type": "tool",
+      "impressions_28d": 0,
+      "clicks_28d": 0,
+      "unique_value": 25,
+      "action": "REMOVE_FROM_SITEMAP"
+    }
+  ],
+  "note": "AUDIT ONLY. No URLs removed from sitemap beyond the 3 polluted fixes. Full pruning decision deferred to Phase 32.5."
+}

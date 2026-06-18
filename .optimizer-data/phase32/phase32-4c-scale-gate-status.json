@@ -1,0 +1,36 @@
+{
+  "phase": "32.4C",
+  "title": "Scale Gate Status",
+  "verified_at": "2026-06-19T00:20:00+03:00",
+  "SCALE_READY": false,
+  "Batch_2": "BLOCKED",
+  "conditions": {
+    "sitemap_technically_safe": {
+      "required": true,
+      "actual": true,
+      "pass": true
+    },
+    "at_least_1_crawled_or_indexed": {
+      "required": "\u22651",
+      "actual": 0,
+      "pass": false
+    },
+    "dni_stable_or_decreasing": {
+      "required": "Stable or \u2193",
+      "actual": 503,
+      "pass": true
+    },
+    "no_technical_regression": {
+      "required": true,
+      "actual": true,
+      "pass": true
+    },
+    "phase_31_unharmed": {
+      "required": true,
+      "actual": true,
+      "pass": true
+    }
+  },
+  "reason": "4 of 5 conditions met. Blocked ONLY by crawl/indexing \u2014 0 of 6 Phase 32 URLs crawled. Pages are ~30 hours old. Expected to crawl within 3-7 days.",
+  "next_milestone": "Batch 2 moves to STAGED_ONLY when \u22651 URL crawled. Moves to APPROVED_FOR_5_MAX when \u22652 indexed + impressions appear."
+}

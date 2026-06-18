@@ -1,0 +1,100 @@
+{
+  "phase": "32.4C",
+  "title": "Six URL Discovery Watch \u2014 Updated",
+  "verified_at": "2026-06-19T00:20:00+03:00",
+  "urls": [
+    {
+      "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "coverage_state": "Discovered - currently not indexed",
+      "discovered": true,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "bing_indexnow": "202 Accepted",
+      "sitemap": true,
+      "rss": true,
+      "internal_links": 3,
+      "backlinks": 2
+    },
+    {
+      "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "coverage_state": "Discovered - currently not indexed",
+      "discovered": true,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "bing_indexnow": "202 Accepted",
+      "sitemap": true,
+      "rss": true,
+      "internal_links": 3,
+      "backlinks": 4
+    },
+    {
+      "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "coverage_state": "Discovered - currently not indexed",
+      "discovered": true,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "bing_indexnow": "202 Accepted",
+      "sitemap": true,
+      "rss": true,
+      "internal_links": 3,
+      "backlinks": 2
+    },
+    {
+      "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "coverage_state": "Discovered - currently not indexed",
+      "discovered": true,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "bing_indexnow": "202 Accepted",
+      "sitemap": true,
+      "rss": true,
+      "internal_links": 3,
+      "backlinks": 4
+    },
+    {
+      "url": "/loan-payment-table",
+      "coverage_state": "Discovered - currently not indexed",
+      "discovered": true,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "bing_indexnow": "202 Accepted",
+      "sitemap": true,
+      "rss": true,
+      "internal_links": 5,
+      "backlinks": 6
+    },
+    {
+      "url": "/data",
+      "coverage_state": "Discovered - currently not indexed",
+      "discovered": true,
+      "crawled": false,
+      "indexed": false,
+      "impressions": 0,
+      "clicks": 0,
+      "bing_indexnow": "202 Accepted",
+      "sitemap": true,
+      "rss": true,
+      "internal_links": 2,
+      "backlinks": 2
+    }
+  ],
+  "summary": {
+    "published": 6,
+    "discovered": 6,
+    "crawled": 0,
+    "indexed": 0,
+    "impressions": 0,
+    "clicked": 0
+  },
+  "progress": "IMPROVED \u2014 6/6 discovered (was 3/6). Sitemap + /all-pages + IndexNow are working. Still 0 crawled \u2014 pages need time."
+}

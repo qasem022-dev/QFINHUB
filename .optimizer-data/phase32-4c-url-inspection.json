@@ -1,0 +1,32 @@
+{
+  "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "lastCrawlTime": ""
+  },
+  "/loan-scenarios/good-credit-loan-20000-8-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "lastCrawlTime": ""
+  },
+  "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "lastCrawlTime": ""
+  },
+  "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "lastCrawlTime": ""
+  },
+  "/loan-payment-table": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "lastCrawlTime": ""
+  },
+  "/data": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "lastCrawlTime": ""
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "phase": "32.4C",
+  "title": "Pruning Risk Model \u2014 Three Options Compared",
+  "created_at": "2026-06-19T00:15:00+03:00",
+  "options": {
+    "option_a_keep_all": {
+      "description": "Keep all 654 technically clean URLs in sitemap. No pruning.",
+      "pros": [
+        "Zero implementation risk",
+        "No traffic loss risk",
+        "No rollback needed",
+        "All pages discoverable by Google"
+      ],
+      "cons": [
+        "350 thin pages dilute sitemap quality signal",
+        "DNI count stays high (503)",
+        "Google may perceive site as low-quality",
+        "Crawl budget diluted across thin pages"
+      ],
+      "risk": "LOW \u2014 status quo. But DNI stagnation may continue.",
+      "indexing_trust_impact": "NEUTRAL \u2014 same as current state",
+      "crawl_demand_impact": "NEUTRAL",
+      "traffic_loss_risk": "NONE",
+      "implementation_risk": "NONE",
+      "rollback_difficulty": "N/A"
+    },
+    "option_b_remove_zero_impression_thin": {
+      "description": "Remove from sitemap: all 125 guides + 58 tools with 0 impressions in 28 days. Keep 8 tools with GSC impressions. Sitemap reduces to ~471 URLs.",
+      "pros": [
+        "Sitemap quality signal improves immediately",
+        "DNI count drops by ~183",
+        "Crawl budget focuses on proven pages",
+        "Pages remain live for users who navigate to them",
+        "Reversible \u2014 just add back to sitemap"
+      ],
+      "cons": [
+        "58 removed tool pages might have future GSC potential",
+        "Guides provide some user navigation value",
+        "Requires sitemap generation change"
+      ],
+      "risk": "LOW-MEDIUM \u2014 removing from sitemap doesn't delete pages. Users can still find them via /all-pages navigation.",
+      "indexing_trust_impact": "POSITIVE \u2014 cleaner sitemap signals quality focus",
+      "crawl_demand_impact": "POSITIVE \u2014 Google crawls fewer thin pages, more budget for high-value pages",
+      "traffic_loss_risk": "VERY LOW \u2014 removed URLs have 0 clicks and <10 total impressions",
+      "implementation_risk": "LOW \u2014 add guide and thin-tool lists to sitemap exclusion filter",
+      "rollback_difficulty": "EASY \u2014 remove exclusion lists, re-add to sitemap",
+      "recommendation": "RECOMMENDED \u2014 best balance of quality improvement and risk minimization"
+    },
+    "option_c_noindex_consolidate_delete": {
+      "description": "Aggressive: noindex guides, consolidate thin tools into parent calculators via 301 redirects, delete dead pages.",
+      "pros": [
+        "Most thorough cleanup",
+        "Strongest quality signal to Google",
+        "Eliminates all thin content from Google's view"
+      ],
+      "cons": [
+        "High implementation risk \u2014 301 redirects need careful mapping",
+        "Irreversible if pages deleted",
+        "May break internal links",
+        "User experience impact if guides are useful to some visitors",
+        "Overkill for the current problem \u2014 technical sitemap is already clean"
+      ],
+      "risk": "HIGH \u2014 bulk noindex/redirect/delete can cause unintended consequences",
+      "indexing_trust_impact": "POSITIVE but risky",
+      "crawl_demand_impact": "POSITIVE",
+      "traffic_loss_risk": "LOW but permanent",
+      "implementation_risk": "HIGH",
+      "rollback_difficulty": "DIFFICULT \u2014 301s and deletions are hard to reverse",
+      "recommendation": "NOT RECOMMENDED \u2014 too aggressive for the current situation. Sitemap is already technically clean. Option B achieves 90% of the benefit with 10% of the risk."
+    }
+  },
+  "recommendation": "Option B \u2014 Remove 183 thin URLs (125 guides + 58 zero-impression tools) from sitemap. Keep 8 tools with GSC impressions. Execute in Phase 32.5 after approval."
+}

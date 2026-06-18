@@ -1,0 +1,33 @@
+{
+  "phase": "32.4C",
+  "title": "Three Polluted Sitemap URL Fix Log",
+  "fixed_at": "2026-06-19T00:05:00+03:00",
+  "commit": "50760d9",
+  "fixes": [
+    {
+      "url": "/tools/retirement-1M-30yr",
+      "issue": "HTTP 404",
+      "action": "Added to NOINDEXED_VARIANT_SLUGS blocklist in sitemap.ts (line 199). This prevents it from being included in sitemap generation.",
+      "page_changed": false,
+      "sitemap_changed": true,
+      "verification": "Will confirm excluded from sitemap after deploy"
+    },
+    {
+      "url": "/tools/afford-100k-40k-6-5pct",
+      "issue": "noindex meta but GSC-exempted in sitemap",
+      "action": "Removed from TOOL_GSC_SLUGS exemption set (line 188). isFormulaVariant() now correctly filters it out (has pct + yr pattern).",
+      "page_changed": false,
+      "sitemap_changed": true,
+      "verification": "Will confirm excluded from sitemap after deploy"
+    },
+    {
+      "url": "/tools/afford-130k-40k-7pct",
+      "issue": "noindex meta but GSC-exempted in sitemap",
+      "action": "Removed from TOOL_GSC_SLUGS exemption set (line 188). isFormulaVariant() now correctly filters it out.",
+      "page_changed": false,
+      "sitemap_changed": true,
+      "verification": "Will confirm excluded from sitemap after deploy"
+    }
+  ],
+  "summary": "3 URLs removed from sitemap. No pages deleted, no redirects created, no indexability changed. This is a sitemap-only fix \u2014 pages remain live as-is."
+}

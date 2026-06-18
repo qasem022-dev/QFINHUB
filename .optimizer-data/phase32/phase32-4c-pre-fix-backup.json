@@ -1,0 +1,33 @@
+{
+  "phase": "32.4C",
+  "title": "Pre-Fix Backup",
+  "created_at": "2026-06-19T00:00:00+03:00",
+  "commit_hash": "297ee2d75cc399e3ccf80beeb21569451c07b88e",
+  "sitemap_url_count": 656,
+  "sitemap_generation_rules": "src/app/sitemap.ts \u2014 static pages + calculators + blogs + variants (filtered by isFormulaVariant) + geo (GSC-approved only) + comparisons + guides + decisions + Phase 32 pages",
+  "polluted_urls": [
+    {
+      "url": "/tools/retirement-1M-30yr",
+      "issue": "HTTP 404",
+      "in_sitemap": true,
+      "fix": "Remove from sitemap by removing from variant generator or adding to NOINDEXED_VARIANT_SLUGS"
+    },
+    {
+      "url": "/tools/afford-100k-40k-6-5pct",
+      "issue": "noindex meta but GSC-exempted in sitemap",
+      "in_sitemap": true,
+      "fix": "Remove TOOL_GSC_SLUGS exemption \u2014 these are noindexed, should not be in sitemap"
+    },
+    {
+      "url": "/tools/afford-130k-40k-7pct",
+      "issue": "noindex meta but GSC-exempted in sitemap",
+      "in_sitemap": true,
+      "fix": "Remove TOOL_GSC_SLUGS exemption"
+    }
+  ],
+  "rollback_instructions": [
+    "git revert <commit_hash> \u2014 reverts all Phase 32.4C changes",
+    "Or manually: restore TOOL_GSC_SLUGS set to ['afford-100k-40k-6-5pct', 'afford-130k-40k-7pct'] in sitemap.ts",
+    "Or manually: restore retirement-1M-30yr variant if page is restored"
+  ]
+}
