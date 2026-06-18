@@ -1,0 +1,59 @@
+{
+  "phase": "32.4F",
+  "title": "True Day 3 Timestamp Check",
+  "created_at": "2026-06-19T01:15:00+03:00",
+  "gsc_data_freshness_utc": "2026-06-18T22:15:00Z",
+  "TRUE_DAY_3": false,
+  "reason": "Page age is 20.8 hours. True Day 3 is Jun 21 04:27 EEST (51 hours from now). This is an EARLY CHECK \u2014 decisions deferred to true Day 3.",
+  "earliest_valid_decision_time": "2026-06-21T04:27:00+03:00",
+  "urls": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "publish_ts": "2026-06-18T04:27:00+03:00",
+      "age_hours": 20.8,
+      "sitemap_ts": "2026-06-18T06:00:00+03:00",
+      "feed_ts": "2026-06-18T06:05:00+03:00",
+      "indexnow_ts": "2026-06-18T06:10:00+03:00",
+      "gsc_status": "Discovered - currently not indexed"
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "publish_ts": "2026-06-18T04:27:00+03:00",
+      "age_hours": 20.8,
+      "sitemap_ts": "2026-06-18T06:00:00+03:00",
+      "feed_ts": "2026-06-18T06:05:00+03:00",
+      "indexnow_ts": "2026-06-18T06:10:00+03:00",
+      "gsc_status": "Discovered - currently not indexed"
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "publish_ts": "2026-06-18T04:27:00+03:00",
+      "age_hours": 20.8,
+      "sitemap_ts": "2026-06-18T06:00:00+03:00",
+      "feed_ts": "2026-06-18T06:05:00+03:00",
+      "indexnow_ts": "2026-06-18T06:10:00+03:00",
+      "gsc_status": "URL is unknown to Google"
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "publish_ts": "2026-06-18T04:27:00+03:00",
+      "age_hours": 20.8,
+      "sitemap_ts": "2026-06-18T06:00:00+03:00",
+      "feed_ts": "2026-06-18T06:05:00+03:00",
+      "indexnow_ts": "2026-06-18T06:10:00+03:00",
+      "gsc_status": "Discovered - currently not indexed"
+    },
+    "/loan-payment-table": {
+      "publish_ts": "2026-06-18T04:27:00+03:00",
+      "age_hours": 20.8,
+      "sitemap_ts": "2026-06-18T06:00:00+03:00",
+      "feed_ts": "2026-06-18T06:05:00+03:00",
+      "indexnow_ts": "2026-06-18T06:10:00+03:00",
+      "gsc_status": "URL is unknown to Google"
+    },
+    "/data": {
+      "publish_ts": "2026-06-18T04:27:00+03:00",
+      "age_hours": 20.8,
+      "sitemap_ts": "2026-06-18T06:00:00+03:00",
+      "feed_ts": "2026-06-18T06:05:00+03:00",
+      "indexnow_ts": "2026-06-18T06:10:00+03:00",
+      "gsc_status": "Discovered - currently not indexed"
+    }
+  }
+}

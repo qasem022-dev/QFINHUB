@@ -1,0 +1,106 @@
+{
+  "phase": "32.4F",
+  "title": "First Click War Room Refresh",
+  "verified_at": "2026-06-19T01:15:00+03:00",
+  "top_10_click_candidates": [
+    {
+      "rank": 1,
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions_28d": 253,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position_28d": 64.1,
+      "trend_28d": "POSITION WORSENING \u2014 was ~10 in 7d window, now 64.1 average over 28d",
+      "indexable": true,
+      "real_content": true,
+      "note": "Still the #1 impression driver but position is drifting deeper. No longer in clickable range.",
+      "post_jun25_action": "Audit snippet + title. Consider content refresh to recover position."
+    },
+    {
+      "rank": 2,
+      "url": "/calculators/investment-return",
+      "impressions_28d": 103,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position_28d": 87.5,
+      "real_content": true,
+      "note": "Deep position. Page needs SEO optimization.",
+      "post_jun25_action": "On-page SEO audit"
+    },
+    {
+      "rank": 3,
+      "url": "/calculators/tax-calculator",
+      "impressions_28d": 150,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position_28d": 85.9,
+      "real_content": true,
+      "post_jun25_action": "On-page SEO audit"
+    },
+    {
+      "rank": 4,
+      "url": "/calculators/retirement-planning",
+      "impressions_28d": 57,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position_28d": 90.0,
+      "real_content": true,
+      "post_jun25_action": "On-page SEO audit"
+    },
+    {
+      "rank": 5,
+      "url": "/calculators/loan-calculator",
+      "impressions_28d": "~4 (low volume)",
+      "clicks": 0,
+      "avg_position_28d": 7.0,
+      "real_content": true,
+      "note": "Best position but near-zero query volume. Needs long-tail content support.",
+      "post_jun25_action": "Add Phase 32 scenario links for long-tail queries"
+    },
+    {
+      "rank": 6,
+      "url": "/loan-scenarios/* (6 Phase 32 pages)",
+      "impressions_28d": 0,
+      "clicks": 0,
+      "note": "Pages are ~21 hours old. No data yet. Highest potential for first click \u2014 these target high-intent 'monthly payment' queries.",
+      "post_jun25_action": "WAIT \u2014 let Google crawl and index first"
+    },
+    {
+      "rank": 7,
+      "url": "/decision/pay-off-debt-or-invest",
+      "impressions_28d": 78,
+      "clicks": 0,
+      "ctr": "0.0%",
+      "avg_position_28d": 22.4,
+      "real_content": true,
+      "post_jun25_action": "Improve meta description click appeal"
+    },
+    {
+      "rank": 8,
+      "url": "/calculators/mortgage-affordability",
+      "impressions_28d": "~10 (7d est)",
+      "clicks": 0,
+      "real_content": true,
+      "post_jun25_action": "Add rich content above calculator"
+    },
+    {
+      "rank": 9,
+      "url": "/calculators/compound-interest",
+      "impressions_28d": "~5 (7d est)",
+      "clicks": 0,
+      "avg_position_28d": 7.0,
+      "real_content": true,
+      "post_jun25_action": "On-page SEO"
+    },
+    {
+      "rank": 10,
+      "url": "/calculators/mortgage-calculator",
+      "impressions_28d": "~5 (7d est)",
+      "clicks": 0,
+      "avg_position_28d": 7.0,
+      "real_content": true,
+      "post_jun25_action": "On-page SEO"
+    }
+  ],
+  "note": "First content click is most likely to come from: (1) $20K Loan Blog if position recovers to <10, (2) Phase 32 scenario pages once indexed (target high-intent queries), (3) Loan Calculator with long-tail scenario support. No edits now \u2014 all actions deferred to Jun 25+."
+}

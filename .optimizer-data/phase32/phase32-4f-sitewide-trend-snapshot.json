@@ -1,0 +1,66 @@
+{
+  "phase": "32.4F",
+  "title": "Sitewide Trend Snapshot",
+  "verified_at": "2026-06-19T01:15:00+03:00",
+  "gsc_data_freshness": "2026-06-18T22:13Z (GSC API, page dimension, 3-window verified)",
+  "metrics": {
+    "7d_impressions": {
+      "windows": [
+        616,
+        564,
+        456
+      ],
+      "trend": "DECLINING (-26%)",
+      "latest": 456,
+      "label": "EXACT"
+    },
+    "28d_impressions": {
+      "value": 1722,
+      "label": "EXACT"
+    },
+    "7d_clicks": {
+      "value": 0,
+      "label": "EXACT"
+    },
+    "28d_clicks": {
+      "value": 1,
+      "source": "Homepage branded only",
+      "content_clicks": 0,
+      "label": "EXACT"
+    },
+    "average_position_7d": {
+      "value": 14.8,
+      "label": "EXACT"
+    },
+    "indexed_count": {
+      "value": 238,
+      "label": "EXACT"
+    },
+    "not_indexed_count": {
+      "value": "~1,991",
+      "label": "ESTIMATED (GSC UI total - indexed)"
+    },
+    "discovered_not_indexed": {
+      "value": 503,
+      "label": "EXACT"
+    },
+    "404_count": {
+      "value": 0,
+      "note": "No known 404s in sitemap. 1 historical (retirement-1M-30yr) fixed in Phase 32.4C.",
+      "label": "EXACT"
+    },
+    "sitemap_url_count": {
+      "value": 654,
+      "label": "EXACT"
+    },
+    "broken_link_test": {
+      "status": "PASS \u2014 0 broken links (Phase 31.3 verified 109 links)",
+      "label": "EXACT"
+    },
+    "build_status": {
+      "status": "STABLE",
+      "last_deploy": "d9479ac (Phase 32.4E)",
+      "label": "EXACT"
+    }
+  }
+}

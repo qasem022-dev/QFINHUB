@@ -1,0 +1,72 @@
+{
+  "phase": "32.4F",
+  "title": "Bing/IndexNow Status Check",
+  "verified_at": "2026-06-19T01:15:00+03:00",
+  "indexnow_key_hosted": true,
+  "key_url": "https://www.qfinhub.com/indexnow-key.txt",
+  "key_http": 200,
+  "submission": {
+    "submitted_at": "2026-06-18T06:10:00+03:00",
+    "urls": 6,
+    "api_response": "202 Accepted",
+    "bing_response": "202 Accepted"
+  },
+  "urls": [
+    {
+      "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "submitted": true,
+      "accepted": true,
+      "bing_discovered": "UNKNOWN",
+      "bing_indexed": "UNKNOWN",
+      "traffic": "NONE",
+      "errors": "NONE"
+    },
+    {
+      "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "submitted": true,
+      "accepted": true,
+      "bing_discovered": "UNKNOWN",
+      "bing_indexed": "UNKNOWN",
+      "traffic": "NONE",
+      "errors": "NONE"
+    },
+    {
+      "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "submitted": true,
+      "accepted": true,
+      "bing_discovered": "UNKNOWN",
+      "bing_indexed": "UNKNOWN",
+      "traffic": "NONE",
+      "errors": "NONE"
+    },
+    {
+      "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "submitted": true,
+      "accepted": true,
+      "bing_discovered": "UNKNOWN",
+      "bing_indexed": "UNKNOWN",
+      "traffic": "NONE",
+      "errors": "NONE"
+    },
+    {
+      "url": "/loan-payment-table",
+      "submitted": true,
+      "accepted": true,
+      "bing_discovered": "UNKNOWN",
+      "bing_indexed": "UNKNOWN",
+      "traffic": "NONE",
+      "errors": "NONE"
+    },
+    {
+      "url": "/data",
+      "submitted": true,
+      "accepted": true,
+      "bing_discovered": "UNKNOWN",
+      "bing_indexed": "UNKNOWN",
+      "traffic": "NONE",
+      "errors": "NONE"
+    }
+  ],
+  "do_not_resubmit": true,
+  "note": "Bing does not expose a public crawl/index API. Bing Webmaster Tools would provide this data but is not configured for qfinhub.com."
+}

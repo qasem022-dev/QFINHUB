@@ -1,0 +1,22 @@
+{
+  "phase": "32.4F",
+  "title": "Batch 2 and Pruning Gates",
+  "verified_at": "2026-06-19T01:15:00+03:00",
+  "batch_2": {
+    "status": "BLOCKED",
+    "reason": "0 of 6 Phase 32 URLs crawled or indexed. Minimum: \u22651 crawled or indexed.",
+    "next_review": "Jun 25 true Day 7"
+  },
+  "pruning": {
+    "status": "HELD",
+    "reason": "True Day 3 is Jun 21 \u2014 pruning decisions deferred. Sitemap is technically safe (654 URLs, 0 polluted). No regression.",
+    "next_review": "Jun 25 true Day 7"
+  },
+  "allowed_outputs": [
+    "BLOCKED",
+    "STAGED_ONLY",
+    "APPROVE_ON_DAY7",
+    "HOLD"
+  ],
+  "no_execution": true
+}
