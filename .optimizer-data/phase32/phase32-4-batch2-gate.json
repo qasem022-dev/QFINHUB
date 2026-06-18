@@ -1,0 +1,11 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Batch 2 Gate",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "scale_ready": false,
+  "batch_2_status": "BLOCKED",
+  "reason": "Scale readiness conditions not met: 0 of 6 Phase 32 URLs indexed, impressions declining, discovered-not-indexed flat. Batch 2 deployment would be premature \u2014 it would add 5 more undiscovered URLs to a system that hasn't proven it can get the first 6 indexed.",
+  "next_evaluation": "Jun 25 (Day 7 after Phase 32.2 deploy) \u2014 reassess after 7 days of Google having the fixed sitemap and canonical URLs",
+  "maximum_deployment_if_approved": 5,
+  "note": "If scale ready on Jun 25, deploy maximum 5 pages from Batch 2 (NOT 25, 50, or 100). The 5-page cap is hard."
+}

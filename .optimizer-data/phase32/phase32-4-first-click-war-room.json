@@ -1,0 +1,106 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 First Content Click War Room",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "context": "QFINHUB has 0 content clicks. The only click in 28 days was on the homepage (branded). This war room identifies the pages most likely to generate the first organic content click.",
+  "top_10_click_candidates": [
+    {
+      "rank": 1,
+      "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions_7d": 149,
+      "position": 10.6,
+      "ctr_estimate": "0.0% (actual)",
+      "expected_ctr_at_position": "1.5-2.5%",
+      "estimated_click_probability": "MEDIUM \u2014 149 impressions at pos 10.6 should generate 2-4 clicks/month at normal CTR",
+      "why_no_clicks": "Possible snippet issue, or query is answer-boxed by Google. Investigate snippet quality.",
+      "recommended_action": "Audit SERP snippet. Is the meta description compelling? Is there a featured snippet above? Add a more click-enticing title tag."
+    },
+    {
+      "rank": 2,
+      "page": "/blog/ecb-rate-hike-impact-on-mortgages",
+      "impressions_7d": 11,
+      "position": 11.4,
+      "ctr_estimate": "0.0%",
+      "expected_ctr_at_position": "1-2%",
+      "estimated_click_probability": "LOW \u2014 low impression volume. Even at normal CTR, expects <1 click/month.",
+      "recommended_action": "Low priority. Monitor."
+    },
+    {
+      "rank": 3,
+      "page": "/all-pages",
+      "impressions_7d": 13,
+      "position": 5.3,
+      "ctr_estimate": "0.0%",
+      "expected_ctr_at_position": "3-5%",
+      "estimated_click_probability": "LOW \u2014 sitemap page, not content. Clicks here don't count as content wins.",
+      "recommended_action": "Ignore \u2014 this is a navigation/discovery page, not a content page."
+    },
+    {
+      "rank": 4,
+      "page": "/calculators/loan-calculator",
+      "impressions_7d": 4,
+      "position": 7.0,
+      "ctr_estimate": "0.0%",
+      "expected_ctr_at_position": "3-5%",
+      "estimated_click_probability": "LOW \u2014 only 4 impressions. Needs more query coverage.",
+      "recommended_action": "Enhance page with more long-tail query targeting. Add 'try these scenarios' with Phase 32 scenario links."
+    },
+    {
+      "rank": 5,
+      "page": "/calculators/mortgage-affordability",
+      "impressions_7d": 4,
+      "position": 5.5,
+      "ctr_estimate": "0.0%",
+      "estimated_click_probability": "LOW",
+      "recommended_action": "Add more content above the calculator. Position 5.5 is good but 4 impressions means very low query volume."
+    },
+    {
+      "rank": 6,
+      "page": "/lesson-scenarios/* (Phase 32 \u2014 future potential)",
+      "impressions_7d": 0,
+      "position": "N/A",
+      "ctr_estimate": "N/A",
+      "estimated_click_probability": "UNKNOWN \u2014 pages too new. Zero data.",
+      "recommended_action": "Wait 7-14 days for Google discovery and crawling. These are the best candidate for first click once indexed."
+    },
+    {
+      "rank": 7,
+      "page": "/calculators/tax-calculator",
+      "impressions_7d": 105,
+      "position": 85.2,
+      "ctr_estimate": "0.0%",
+      "estimated_click_probability": "ZERO \u2014 position 85 is beyond click range (page 9 of SERP).",
+      "recommended_action": "Impressive impression volume but position is hopeless. Need SEO optimization or different keyword targeting."
+    },
+    {
+      "rank": 8,
+      "page": "/calculators/investment-return",
+      "impressions_7d": 85,
+      "position": 79.4,
+      "ctr_estimate": "0.0%",
+      "estimated_click_probability": "ZERO \u2014 position 79.",
+      "recommended_action": "Same as tax calculator \u2014 volume is there but position is too deep."
+    },
+    {
+      "rank": 9,
+      "page": "/calculators/retirement-planning",
+      "impressions_7d": 17,
+      "position": 74.2,
+      "ctr_estimate": "0.0%",
+      "estimated_click_probability": "ZERO \u2014 position 74.",
+      "recommended_action": "Same pattern \u2014 calculators get impressions but at hopeless positions."
+    },
+    {
+      "rank": 10,
+      "page": "/decision/pay-off-debt-or-invest",
+      "impressions_7d": 14,
+      "position": 50.4,
+      "ctr_estimate": "0.0%",
+      "estimated_click_probability": "ZERO \u2014 position 50.",
+      "recommended_action": "Decision pages are a content type Google doesn't rank well yet."
+    }
+  ],
+  "most_likely_first_click_page": "/blog/20000-loan-at-8-percent \u2014 149 impressions at position 10.6 is the ONLY page with meaningful volume AND borderline-clickable position",
+  "why_no_clicks": "The site has a fundamental click problem: pages either have (a) good position but no volume, or (b) high volume but hopeless position. The $20K loan blog at pos 10.6 with 149 impressions is the ONLY exception, and it has 0 clicks \u2014 suggesting a snippet/serp feature problem.",
+  "root_cause_hypothesis": "Google is serving featured snippets or answer boxes for the queries that QFINHUB pages rank for, extracting the answer directly in the SERP and eliminating the need to click. This is common for 'how much is X' and 'what is the payment for Y' queries."
+}

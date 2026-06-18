@@ -1,0 +1,45 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Recovery Scorecard",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "data_quality": "API-only, 3-window freshness verified",
+  "metrics": {
+    "indexed_pages": {
+      "jun_1": "~230 (estimate \u2014 Phase 31 baseline)",
+      "jun_8": "~235 (estimate)",
+      "jun_15": 238,
+      "current": 238,
+      "trend": "FLAT \u2014 no meaningful change in 18 days"
+    },
+    "discovered_not_indexed": {
+      "jun_1": "~500 (estimate)",
+      "jun_8": "~500 (estimate)",
+      "jun_15": 503,
+      "current": 503,
+      "trend": "FLAT \u2014 discovered-not-indexed count unchanged"
+    },
+    "impressions_7d": {
+      "jun_2_8": 424,
+      "jun_9_15": 569,
+      "jun_10_17": 564,
+      "trend": "STAGNATING \u2014 +34% jump Jun 2-8 to Jun 9-15, then -0.9% decline Jun 9-15 to Jun 10-17"
+    },
+    "clicks_7d": {
+      "all_periods": 0,
+      "trend": "STAGNATING \u2014 persistent zero clicks"
+    },
+    "average_position_7d": {
+      "jun_9_15": 35.9,
+      "jun_10_17": 15.1,
+      "trend": "IMPROVING \u2014 average position improved from 35.9 to 15.1. This is likely due to fewer deep-position pages in the latest window, not better individual page rankings."
+    },
+    "pages_with_impressions": {
+      "jun_9_15": 71,
+      "jun_10_17": 70,
+      "trend": "FLAT"
+    }
+  },
+  "overall_verdict": "STAGNATING",
+  "detail": "Impressions rose 34% then flattened. Indexed pages unchanged. Discovered-not-indexed unchanged. Clicks remain at zero. Average position improvement is misleading \u2014 driven by window composition, not ranking gains. Site is not recovering \u2014 it is stable but clickless.",
+  "recovery_signal": "NONE \u2014 no metric shows meaningful positive momentum"
+}

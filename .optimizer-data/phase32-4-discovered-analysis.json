@@ -1,0 +1,52 @@
+{
+  "sitemap_total": 656,
+  "pages_with_impressions": 70,
+  "discovered_not_indexed_estimate": 615,
+  "category_breakdown": {
+    "tool": 31,
+    "guide": 27,
+    "calculator": 21,
+    "blog": 14,
+    "other": 1,
+    "comparison": 5,
+    "decision": 1
+  },
+  "value_classification": {
+    "C": 232,
+    "B": 255,
+    "A": 128
+  },
+  "samples": {
+    "tool": [
+      "https://www.qfinhub.com/tools/investment-500-5yr",
+      "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "https://www.qfinhub.com/tools/tax-100k-single"
+    ],
+    "guide": [
+      "https://www.qfinhub.com/guides/how-to-use-present-value",
+      "https://www.qfinhub.com/guides/how-to-use-age-calculator",
+      "https://www.qfinhub.com/guides/how-to-use-cash-flow"
+    ],
+    "calculator": [
+      "https://www.qfinhub.com/calculators/net-profit-margin",
+      "https://www.qfinhub.com/calculators/fuel-cost",
+      "https://www.qfinhub.com/calculators/gas-mileage"
+    ],
+    "blog": [
+      "https://www.qfinhub.com/blog/kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+      "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals",
+      "https://www.qfinhub.com/blog/mortgage-rates-2025-can-the-housing-market-weather-the-storm"
+    ],
+    "other": [
+      "https://www.qfinhub.com/terms"
+    ],
+    "comparison": [
+      "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy",
+      "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate",
+      "https://www.qfinhub.com/compare/best-investment-calculator"
+    ],
+    "decision": [
+      "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in"
+    ]
+  }
+}

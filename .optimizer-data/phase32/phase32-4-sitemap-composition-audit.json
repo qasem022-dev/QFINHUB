@@ -1,0 +1,82 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Sitemap Composition Audit",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "total_urls": 656,
+  "composition": {
+    "tools": {
+      "count": 225,
+      "pct": 34.3,
+      "value": "LOW",
+      "description": "Noindexed compound-interest, mortgage, and loan variant pages. Should NOT be in sitemap."
+    },
+    "calculators": {
+      "count": 125,
+      "pct": 19.1,
+      "value": "HIGH",
+      "description": "Core calculator pages \u2014 these are the site's primary content engine"
+    },
+    "guides": {
+      "count": 125,
+      "pct": 19.1,
+      "value": "LOW",
+      "description": "'How to use X' guide pages. Thin, templated, noindexed."
+    },
+    "blog": {
+      "count": 106,
+      "pct": 16.2,
+      "value": "HIGH",
+      "description": "Blog posts \u2014 top impression driver (149 imp for $20K loan blog)"
+    },
+    "comparisons": {
+      "count": 35,
+      "pct": 5.3,
+      "value": "MEDIUM",
+      "description": "Comparison pages (lease vs buy, etc.)"
+    },
+    "decisions": {
+      "count": 15,
+      "pct": 2.3,
+      "value": "HIGH",
+      "description": "Financial decision guides (pay off debt or invest, etc.)"
+    },
+    "scenarios": {
+      "count": 4,
+      "pct": 0.6,
+      "value": "HIGH",
+      "description": "Phase 32 hand-crafted loan scenario pages \u2014 the future growth engine"
+    },
+    "hubs": {
+      "count": 3,
+      "pct": 0.5,
+      "value": "HIGH",
+      "description": "/data, /loan-payment-table, /all-pages"
+    },
+    "geo_calculators": {
+      "count": 3,
+      "pct": 0.5,
+      "value": "MEDIUM",
+      "description": "Geo-targeted calculator pages (Nashville, Reno, Philadelphia)"
+    },
+    "other": {
+      "count": 15,
+      "pct": 2.3,
+      "value": "MEDIUM",
+      "description": "Static pages (privacy, terms, about, etc.), homepage"
+    }
+  },
+  "bloat_analysis": {
+    "total_bloat": 353,
+    "bloat_pct": 53.8,
+    "bloat_categories": [
+      "tools (225)",
+      "guides (125)",
+      "geo_calculators (3)"
+    ],
+    "high_value": 268,
+    "high_value_pct": 40.9,
+    "would_we_want_every_url_indexed": "NO",
+    "reason": "53.8% of sitemap URLs are low-value or noindexed programmatic pages (tools, guides). These dilute crawl budget, create noise in GSC reports, and potentially signal low-quality to Google. The sitemap should be pruned to only include intentionally indexable, quality-gated pages."
+  },
+  "recommendation": "Prune sitemap to exclude tools and guides that are noindexed. This will reduce sitemap bloat by ~53%, focus crawl budget on high-value pages, and clean up GSC reporting."
+}

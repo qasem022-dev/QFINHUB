@@ -1,0 +1,51 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Discovered-Not-Indexed Investigation",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "official_gsc_pages_count": 503,
+  "sitemap_minus_impressions_estimate": 615,
+  "note": "GSC Pages report count (503) is authoritative. The 615 sitemap-minus-impressions number includes indexed pages with 0 impressions \u2014 it's an overestimate. Use 503 as the baseline.",
+  "top_50_analysis": {
+    "method": "Sitemap URL pattern classification. Full URL-level extraction via CloakBrowser unavailable (pagination broken for >10 URLs per group).",
+    "estimated_breakdown": {
+      "A_high_value": {
+        "count": 128,
+        "pct": 25.4,
+        "categories": [
+          "calculators (21)",
+          "scenarios (4)",
+          "decisions (1)",
+          "high-value blog posts",
+          "hubs (3)"
+        ]
+      },
+      "B_medium_value": {
+        "count": 255,
+        "pct": 50.7,
+        "categories": [
+          "blog posts (14)",
+          "comparisons (5)",
+          "guides (27)",
+          "other static pages"
+        ]
+      },
+      "C_low_value": {
+        "count": 232,
+        "pct": 46.1,
+        "categories": [
+          "tools (31) \u2014 noindexed compound-interest, mortgage, loan variants"
+        ]
+      },
+      "D_duplicate_thin": {
+        "count": 0,
+        "pct": 0,
+        "categories": [
+          "No confirmed duplicate/thin \u2014 all pages are unique URLs"
+        ]
+      }
+    }
+  },
+  "note_on_tools": "The 31 tools in discovered-not-indexed are noindexed pages that should NOT be indexed. Google correctly refuses to index them. They should be removed from the sitemap to clean up the discovered-not-indexed count.",
+  "note_on_guides": "The 27 guides are 'how to use X calculator' pages. Many are noindexed or thin. They add noise to the discovered-not-indexed count but don't represent lost opportunity.",
+  "actual_lost_opportunity": "The true loss is the ~128 high-value (A-tier) pages that are discovered but not indexed. These include 21 calculators, 4 Phase 32 scenario pages, 1 decision page, and the 3 hub pages. These are pages that SHOULD be indexed."
+}

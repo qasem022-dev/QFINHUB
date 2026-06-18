@@ -1,0 +1,56 @@
+{
+  "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
+  },
+  "/loan-scenarios/good-credit-loan-20000-8-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
+  },
+  "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
+  },
+  "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
+  },
+  "/loan-payment-table": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
+  },
+  "/data": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Scale Readiness Verdict",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "rules_applied": {
+    "rule_1_3_of_6_discovered": {
+      "threshold": "\u22653 of 6 URLs discovered",
+      "actual": 3,
+      "pass": true
+    },
+    "rule_2_2_indexed": {
+      "threshold": "\u22652 indexed",
+      "actual": 0,
+      "pass": false
+    },
+    "rule_3_impressions_increasing": {
+      "threshold": "impressions increasing",
+      "actual": "625\u2192616\u2192564 (declining)",
+      "pass": false
+    },
+    "rule_4_discovered_not_indexed_decreasing": {
+      "threshold": "discovered-not-indexed decreasing",
+      "actual": "503 (unchanged)",
+      "pass": false
+    }
+  },
+  "scale_ready": false,
+  "reason": "3 of 4 rules FAIL. Only discovery rule passes (3 of 6 URLs discovered). Zero indexed. Impressions declining. Discovered-not-indexed flat.",
+  "verdict": "SCALE_READY = FALSE \u2014 Cannot scale until \u22652 of 6 Phase 32 URLs are indexed AND impressions show positive trajectory."
+}

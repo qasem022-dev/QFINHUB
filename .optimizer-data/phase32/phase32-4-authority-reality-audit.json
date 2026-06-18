@@ -1,0 +1,47 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Authority Reality Audit: What Google Rewards on QFINHUB",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "top_20_impression_pages_breakdown": {
+    "blog": {
+      "count": 2,
+      "impressions": 160,
+      "pct_of_impressions": 28.4,
+      "top_page": "/blog/20000-loan-at-8-percent (149 imp)"
+    },
+    "tool": {
+      "count": 10,
+      "impressions": 125,
+      "pct_of_impressions": 22.2,
+      "top_page": "/tools/compound-100k-20yr-5pct (38 imp)"
+    },
+    "calculator": {
+      "count": 5,
+      "impressions": 117,
+      "pct_of_impressions": 20.7,
+      "top_page": "/calculators/tax-calculator (105 imp)"
+    },
+    "decision": {
+      "count": 1,
+      "impressions": 14,
+      "pct_of_impressions": 2.5,
+      "top_page": "/decision/pay-off-debt-or-invest (14 imp)"
+    },
+    "other": {
+      "count": 2,
+      "impressions": 17,
+      "pct_of_impressions": 3.0,
+      "top_page": "/all-pages (13 imp)"
+    }
+  },
+  "content_type_google_rewards": "BLOG \u2014 Despite having only 2 blogs in top 20, the $20K loan blog dominates with 149 impressions (26.4% of all top-20 impressions). The blog is the ONLY content type generating meaningful impression volume.",
+  "what_is_NOT_rewarded": [
+    "Calculators \u2014 5 in top 20 but all at positions 74-85 (far beyond click range). Tax calculator has 105 imp at pos 85 \u2014 irrelevant.",
+    "Tools \u2014 10 in top 20 but all are noindexed variant pages at positions 5-9. They get impressions but CANNOT be clicked (noindex).",
+    "Decisions \u2014 Only 1 in top 20 at pos 50.4. Too deep to matter.",
+    "Scenarios \u2014 ZERO Phase 32 scenario pages have impressions. 0% presence.",
+    "Hubs \u2014 /all-pages has 13 imp at pos 5.3 but it's a sitemap page, not a content page."
+  ],
+  "the_real_question": "The blog generates impressions. But it generates ZERO clicks. 149 impressions at position 10.6 with 0 clicks means either (a) the snippet is not compelling, or (b) the query is informational and users get answers from featured snippets without clicking.",
+  "verdict": "Google currently rewards the blog for impressions but NOT for clicks. No other content type has proven click-generation capability. Phase 32 scenario pages have zero data \u2014 they are too new to evaluate."
+}

@@ -1,0 +1,49 @@
+{
+  "phase": "32.4",
+  "title": "Phase 32.4 \u2014 Indexing Funnel: Official Scale KPI",
+  "verified_at": "2026-06-18T07:00:00+03:00",
+  "funnel": {
+    "stage_1_published": {
+      "count": 6,
+      "description": "All 6 URLs deployed and live at www.qfinhub.com"
+    },
+    "stage_2_discovered": {
+      "count": 3,
+      "description": "3 of 6 discovered by Google (coverageState: Discovered - currently not indexed)"
+    },
+    "stage_3_crawled": {
+      "count": 0,
+      "description": "0 of 6 crawled by Googlebot (lastCrawlTime: Never for all)"
+    },
+    "stage_4_indexed": {
+      "count": 0,
+      "description": "0 of 6 in Google index"
+    },
+    "stage_5_impressions": {
+      "count": 0,
+      "description": "0 impressions for any Phase 32 URL"
+    },
+    "stage_6_clicks": {
+      "count": 0,
+      "description": "No clicks possible without impressions"
+    }
+  },
+  "funnel_visual": "6 \u2192 3 \u2192 0 \u2192 0 \u2192 0 \u2192 0",
+  "conversion_rates": {
+    "published_to_discovered": "50.0%",
+    "discovered_to_crawled": "0.0%",
+    "crawled_to_indexed": "N/A (none crawled)",
+    "indexed_to_impressions": "N/A (none indexed)",
+    "impressions_to_clicks": "N/A (no impressions)"
+  },
+  "baseline_context": {
+    "total_site_impressions_7d": 564,
+    "total_site_clicks_7d": 0,
+    "total_site_pages_with_impressions": 70,
+    "total_site_indexed_pages": 238,
+    "total_site_discovered_not_indexed": 503,
+    "note": "Entire site has 0 clicks. This is not a Phase 32 problem \u2014 it's a site-wide click problem."
+  },
+  "scale_kpi_status": "BELOW_THRESHOLD \u2014 0 of 6 indexed. Minimum for scale readiness: \u22652 indexed.",
+  "next_checkpoint": "Jun 21 (Day 3) \u2014 re-measure funnel"
+}
