@@ -24,6 +24,10 @@ import {
 } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 
+// Phase 34.4: Force dynamic rendering to prevent Vercel edge cache staleness
+// The static build is cached aggressively by Vercel edge. Dynamic ensures AdSense sees fixed content.
+export const dynamic = 'force-dynamic';
+
 const categories = [
   {
     slug: "loan",
