@@ -67,14 +67,6 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/ai-specialist"
-                  className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                >
-                  AI Financial Specialist
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/blog"
                   className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
@@ -83,18 +75,18 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/for-ai-developers"
+                  href="/data"
                   className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
-                  For AI Developers
+                  Data Hub
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/widgets"
+                  href="/loan-payment-table"
                   className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
-                  Embeddable Widgets
+                  Loan Payment Tables
                 </Link>
               </li>
             </ul>

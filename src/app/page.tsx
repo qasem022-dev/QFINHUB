@@ -22,7 +22,6 @@ import {
   Search,
   Users,
 } from "lucide-react";
-import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 
 const categories = [
@@ -287,7 +286,7 @@ export default function Home() {
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700 shadow-sm dark:bg-purple-900/30 dark:text-purple-400">
                 <CheckCircle2 className="h-3.5 w-3.5" />
-                124 free tools, no account needed
+                125 free tools, no account needed
               </span>
             </div>
 
@@ -635,8 +634,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer />
+      {/* Footer provided by layout SiteFooter */}
     </div>
   );
 }

@@ -148,7 +148,7 @@ export function getAllComparisons(): CalculatorComparison[] {
       },
       {
         question: `Are the calculations accurate?`,
-        answer: `Yes. Both calculators use standard financial formulas and provide professional-grade results. You can verify by running the same inputs through both tools.`,
+        answer: `Yes. Both calculators use standard financial formulas. You can verify by running the same inputs through both tools.`,
       },
     ],
   }));

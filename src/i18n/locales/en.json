@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Free Financial Calculators",
-    "subtitle": "124 professional-grade calculators for loans, mortgages, investments, retirement, taxes & more. Fast, accurate, and 100% free.",
+    "subtitle": "125 reliable calculators for loans, mortgages, investments, retirement, taxes & more. Fast, accurate, and 100% free.",
     "cta": "Explore All Calculators",
     "ctaAlt": "AI Custom Calculator",
     "categories": "Popular Categories",
@@ -317,10 +317,13 @@
     "about": "About",
     "blog": "Blog",
     "contact": "Contact",
+    "methodology": "Methodology",
+    "editorialPolicy": "Editorial Policy",
+    "sitemap": "All Pages",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
-    "brandDesc": "Free, fast, and professional-grade financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+    "brandDesc": "Free, fast, and reliable financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
     "rights": "All rights reserved.",
     "social": {
       "github": "GitHub",

@@ -52,7 +52,7 @@ export default async function CalculatorsPage({ searchParams }: CalculatorsPageP
           Financial Calculators
         </h1>
         <p className="mt-2 text-gray-500 dark:text-gray-400">
-          {implementedSlugs.size} professional financial calculators across{" "}
+          {implementedSlugs.size} reliable financial calculators across{" "}
           {categories.length} categories. Browse, calculate, and export
           your results.
         </p>
