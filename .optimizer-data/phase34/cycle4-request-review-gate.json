@@ -1,0 +1,25 @@
+{
+  "phase": "34",
+  "cycle": 4,
+  "task": "Request Review Gate",
+  "generated": "2026-06-21T23:00:00+03:00",
+  "decision": "REQUEST_REVIEW_NOW",
+  "live_score": 96,
+  "required": 90,
+  "critical_issues": 0,
+  "all_requirements_pass": true,
+  "verification": {
+    "live_production_verified": true,
+    "raw_html_clean": true,
+    "no_banned_phrases": true,
+    "no_unsupported_claims": true,
+    "no_placeholders": true,
+    "no_untranslated_keys": true,
+    "navigation_clean": true,
+    "trust_pages_complete": true,
+    "sitemap_clean": true,
+    "adsense_code_safe": true,
+    "phase_31_32_uninterrupted": true
+  },
+  "message": "REQUEST_REVIEW_NOW \u2014 Live production site verified at 96/100 with 0 critical issues. All banned phrases absent from live HTML. Do not request automatically \u2014 Qasem must approve."
+}

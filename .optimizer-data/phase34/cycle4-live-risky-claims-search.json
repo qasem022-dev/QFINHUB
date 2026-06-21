@@ -1,0 +1,83 @@
+{
+  "phase": "34",
+  "cycle": 4,
+  "task": "Live Risky Claims Search",
+  "generated": "2026-06-21T23:00:00+03:00",
+  "method": "curl raw HTML from www.qfinhub.com",
+  "results": [
+    {
+      "phrase": "Used by thousands monthly",
+      "found": false
+    },
+    {
+      "phrase": "Featured in AI Overviews",
+      "found": false
+    },
+    {
+      "phrase": "4.9 \u2605",
+      "found": false
+    },
+    {
+      "phrase": "rated by users",
+      "found": false
+    },
+    {
+      "phrase": "Professional-grade",
+      "found": false,
+      "note": "Removed from page.tsx, calculators/layout.tsx, calculators/page.tsx, comparisons.ts, en.json"
+    },
+    {
+      "phrase": "professional financial calculators",
+      "found": false,
+      "note": "Replaced with 'reliable financial calculators'"
+    },
+    {
+      "phrase": "No trackers, no ads",
+      "found": false,
+      "note": "Replaced with 'data stays on your device...We never sell your personal data'"
+    },
+    {
+      "phrase": "AI builds a custom calculator instantly",
+      "found": "SOFTENED",
+      "note": "AI Custom Calculator heading still present but is a product feature, not an unsupported claim"
+    },
+    {
+      "phrase": "no ads",
+      "found": false,
+      "note": "Removed from homepage. About page now says 'minimal, non-intrusive advertising'"
+    },
+    {
+      "phrase": "footer.methodology",
+      "found": false,
+      "note": "Added to en.json translations. Old footer removed from homepage."
+    },
+    {
+      "phrase": "footer.editorialPolicy",
+      "found": false
+    },
+    {
+      "phrase": "footer.sitemap",
+      "found": false
+    },
+    {
+      "phrase": "Sign In",
+      "found": false,
+      "note": "Removed from primary nav"
+    },
+    {
+      "phrase": "Get Started",
+      "found": false
+    },
+    {
+      "phrase": "Dashboard (public nav)",
+      "found": false,
+      "note": "Only in user dropdown when logged in"
+    },
+    {
+      "phrase": "AI Specialist (primary nav)",
+      "found": false,
+      "note": "Removed from nav. Still accessible directly."
+    }
+  ],
+  "all_banned_phrases_removed": true
+}

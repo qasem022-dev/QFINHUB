@@ -1,0 +1,21 @@
+{
+  "phase": "34",
+  "cycle": 4,
+  "task": "Deploy Purge Verify Log",
+  "generated": "2026-06-21T23:00:00+03:00",
+  "fixes_deployed": [
+    "Removed duplicate Footer from homepage (old footer.tsx rendered alongside SiteFooter)",
+    "Fixed '124 free tools' to '125 free tools' in trust pill",
+    "Replaced 'professional-grade' with 'reliable' in 4 locations (page, calculators, comparisons, en.json)",
+    "Added missing i18n keys (footer.methodology, editorialPolicy, sitemap) to en.json",
+    "Replaced SiteFooter links: removed AI Specialist/Dashboard/Widgets, added Data/Loan Tables",
+    "Fixed en.json subtitle: 124\u2192125, professional-grade\u2192reliable",
+    "Added 'export const dynamic = force-dynamic' to bypass Vercel edge cache",
+    "Fixed calculators/layout.tsx metadata: professional\u2192reliable"
+  ],
+  "verification": {
+    "curl_raw_html": "PASS \u2014 0 professional-grade, 0 untranslated keys, 125 count correct",
+    "sitemap_xml": "PASS \u2014 0 guides in sitemap (Cycle 3 fix confirmed deployed)",
+    "cache": "PRERENDER (age: 0) \u2014 dynamic rendering active"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "phase": "34",
+  "cycle": 4,
+  "task": "Live Production Domain Verification",
+  "generated": "2026-06-21T23:00:00+03:00",
+  "domains_checked": {
+    "qfinhub.com": "Redirects to www.qfinhub.com (301)",
+    "www.qfinhub.com": "Primary canonical domain",
+    "canonical_url": "https://www.qfinhub.com",
+    "adsense_property_domain": "www.qfinhub.com",
+    "sitemap_domain": "https://www.qfinhub.com/sitemap.xml",
+    "same_content_on_both": true
+  },
+  "deploy_status": {
+    "last_deploy": "Commit 52b3c10 (force-dynamic homepage)",
+    "cache_status": "PRERENDER (age: 0) \u2014 fresh SSR, no stale cache",
+    "vercel_cache": "Bypassed via export const dynamic = 'force-dynamic'"
+  }
+}

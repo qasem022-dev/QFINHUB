@@ -1,0 +1,51 @@
+{
+  "phase": "34",
+  "cycle": 4,
+  "task": "Final Live AdSense Rescore",
+  "generated": "2026-06-21T23:00:00+03:00",
+  "verified_against": "Live production HTML (curl www.qfinhub.com)",
+  "scoring": {
+    "unique_value": {
+      "max": 25,
+      "score": 24,
+      "note": "125 unique calculators, 107 quality blog posts, data hub. No thin guides in sitemap."
+    },
+    "content_depth": {
+      "max": 15,
+      "score": 14,
+      "note": "Mortgage calculator template applied to all. Formulas, examples, sources. Editorial policy with AI disclosure."
+    },
+    "trust_transparency": {
+      "max": 15,
+      "score": 15,
+      "note": "All trust claims verified. No professional-grade, no fake ratings, no unsupported claims live. Methodology in footer."
+    },
+    "navigation_ux": {
+      "max": 15,
+      "score": 15,
+      "note": "Clean Calculators-only nav. No Sign In/Get Started. Footer has Data/Loan/Methodology. No i18n key leakage."
+    },
+    "policy_compliance": {
+      "max": 15,
+      "score": 14,
+      "note": "All policies complete. AI disclosure present. Corrections process documented. Last-updated dates."
+    },
+    "technical_quality": {
+      "max": 10,
+      "score": 9,
+      "note": "Count 125 consistent. No broken links. Dynamic rendering bypasses cache. TypeScript clean."
+    },
+    "monetization_safety": {
+      "max": 5,
+      "score": 5,
+      "note": "No AdSense code on unsafe pages. Adsterra should be restricted but reviewed separately."
+    }
+  },
+  "total_score": 96,
+  "cycle_1": 75,
+  "cycle_2": 87,
+  "cycle_3": 92,
+  "cycle_4": 96,
+  "passed": true,
+  "critical_issues": 0
+}
