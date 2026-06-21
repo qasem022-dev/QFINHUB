@@ -47,7 +47,7 @@ export default function MethodologyPage() {
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   Based on current IRS tax brackets, standard deductions, and applicable credits 
                   as published in IRS Publication 17 and annual revenue procedures. Updated within 
-                  48 hours of IRS announcements.
+                  48 hours of IRS announcements when possible.
                 </p>
               </div>
               <div className="bg-white dark:bg-zinc-900 rounded-xl p-5 border border-zinc-200 dark:border-zinc-800">
@@ -66,7 +66,7 @@ export default function MethodologyPage() {
             <ul className="space-y-2 text-gray-600 dark:text-gray-300">
               <li>• All calculators are tested against known benchmark scenarios before publication</li>
               <li>• Edge cases (zero values, extreme rates, long timeframes) are validated programmatically</li>
-              <li>• Tax brackets and limits are updated within 48 hours of official changes</li>
+              <li>• Tax brackets and limits are updated as quickly as possible after official changes</li>
               <li>• Each calculator includes rounding to 2 decimal places for monetary values</li>
               <li>• Results are validated against Excel/Google Sheets using the same formulas</li>
             </ul>

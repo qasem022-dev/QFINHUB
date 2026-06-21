@@ -1,0 +1,58 @@
+{
+  "phase": "34",
+  "cycle": 2,
+  "task": "AdSense Readiness Rescore",
+  "generated": "2026-06-21T21:30:00+03:00",
+  "previous_score": 75,
+  "scoring": {
+    "unique_value": {
+      "max": 25,
+      "score": 20,
+      "change": "+5",
+      "note": "Placeholders removed. Calculator pages are deep and unique. Thin guides held for Phase 32."
+    },
+    "content_depth": {
+      "max": 15,
+      "score": 13,
+      "change": "+3",
+      "note": "All 8 money calculators audited and pass. Editorial Policy upgraded with AI disclosure."
+    },
+    "trust_transparency": {
+      "max": 15,
+      "score": 13,
+      "change": "+3",
+      "note": "AI disclosure added. '48 hours' claims softened. Methodology added to footer. 'No ads' fixed."
+    },
+    "navigation_ux": {
+      "max": 15,
+      "score": 13,
+      "change": "+2",
+      "note": "Sign In/Get Started removed. AI Specialist removed from nav. Clean content-only header."
+    },
+    "policy_compliance": {
+      "max": 15,
+      "score": 14,
+      "change": "+2",
+      "note": "Editorial Policy now complete with AI disclosure. Corrections policy present. Methodology proof-checked."
+    },
+    "technical_quality": {
+      "max": 10,
+      "score": 9,
+      "change": "+1",
+      "note": "Calculator count standardized to 125. TypeScript clean. Consistent across all pages."
+    },
+    "monetization_safety": {
+      "max": 5,
+      "score": 5,
+      "change": "0",
+      "note": "No AdSense code yet. Adsterra should be restricted to safe pages but no AdSense policy issue."
+    }
+  },
+  "total_score": 87,
+  "improvement": 12,
+  "required_for_review": 90,
+  "gap_remaining": 3,
+  "passed": false,
+  "critical_issues_remaining": 0,
+  "note": "87/100 \u2014 3 points short of 90. Primary gap: thin blog guides (held for Phase 32 Day 7). If even 10 of 125 guides prove quality, score reaches 90+."
+}

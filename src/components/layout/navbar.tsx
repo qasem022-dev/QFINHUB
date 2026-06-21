@@ -45,7 +45,6 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/calculators", label: t("nav.calculators") },
-    { href: "/ai-specialist", label: t("nav.aiSpecialist"), highlight: true },
   ];
 
   React.useEffect(() => {
@@ -99,13 +98,7 @@ export function Navbar() {
                   : "text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white",
               )}
             >
-              {link.highlight ? (
-                <span className="inline-flex items-center gap-1.5 rounded-md bg-gradient-to-r from-accent-500 to-accent-600 px-3 py-1 text-white shadow-sm">
-                  {link.label}
-                </span>
-              ) : (
-                link.label
-              )}
+              {link.label}
             </Link>
           ))}
         </nav>
@@ -189,19 +182,7 @@ export function Navbar() {
             </DropdownMenu>
           ) : (
             <>
-              <Link href="/auth/login">
-                <Button variant="ghost" size="sm">
-                  {t("nav.signIn")}
-                </Button>
-              </Link>
-              <Link href="/auth/signup">
-                <Button
-                  size="sm"
-                  className="bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-sm hover:from-primary-700 hover:to-accent-600"
-                >
-                  {t("nav.getStarted")}
-                </Button>
-              </Link>
+              {/* Sign In / Get Started hidden for AdSense review (Phase 34 Cycle 2) — auth still works at /auth/* */}
             </>
           )}
         </div>
@@ -287,18 +268,7 @@ export function Navbar() {
               </>
             ) : (
               <>
-                <Link
-                  href="/auth/login"
-                  className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
-                >
-                  <User className="h-4 w-4" />
-                  {t("nav.signIn")}
-                </Link>
-                <Link href="/auth/signup">
-                  <Button className="mt-1 w-full bg-gradient-to-r from-primary-600 to-accent-500 text-white shadow-sm hover:from-primary-700 hover:to-accent-600">
-                    {t("nav.getStarted")}
-                  </Button>
-                </Link>
+                {/* Sign In / Get Started hidden for AdSense review (Phase 34 Cycle 2) */}
               </>
             )}
           </div>

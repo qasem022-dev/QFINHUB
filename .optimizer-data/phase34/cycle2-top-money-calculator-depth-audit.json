@@ -1,0 +1,98 @@
+{
+  "phase": "34",
+  "cycle": 2,
+  "task": "Top Money Calculator Depth Audit",
+  "generated": "2026-06-21T21:30:00+03:00",
+  "template": "All 8 calculators use a consistent structure: interactive tool, chart, What Is This, Definition, Key Takeaways, Formula, Why This Matters, Practical Example, Key Factors, Tips, Related Calculators, Related Guides, Sources & References, Last Updated, Author",
+  "calculators": [
+    {
+      "name": "Mortgage Calculator",
+      "slug": "mortgage-calculator",
+      "depth": 90,
+      "unique": 85,
+      "trust": 90,
+      "ux": 85,
+      "adsense_pass": true,
+      "notes": "Gold standard. Full formula, amortization detail, PITI breakdown."
+    },
+    {
+      "name": "Mortgage Affordability",
+      "slug": "mortgage-affordability",
+      "depth": 80,
+      "unique": 80,
+      "trust": 85,
+      "ux": 80,
+      "adsense_pass": true,
+      "notes": "Same template. DTI ratio explained. Good."
+    },
+    {
+      "name": "Loan Calculator",
+      "slug": "loan-calculator",
+      "depth": 85,
+      "unique": 80,
+      "trust": 85,
+      "ux": 85,
+      "adsense_pass": true,
+      "notes": "Amortization schedule. Strong."
+    },
+    {
+      "name": "Compound Interest",
+      "slug": "compound-interest",
+      "depth": 90,
+      "unique": 85,
+      "trust": 90,
+      "ux": 85,
+      "adsense_pass": true,
+      "notes": "Excellent. Monthly contribution, compounding frequency, growth chart."
+    },
+    {
+      "name": "Investment Return",
+      "slug": "investment-return",
+      "depth": 80,
+      "unique": 80,
+      "trust": 85,
+      "ux": 80,
+      "adsense_pass": true,
+      "notes": "CAGR calculator. Good content."
+    },
+    {
+      "name": "Retirement Planning",
+      "slug": "retirement-planning",
+      "depth": 90,
+      "unique": 85,
+      "trust": 90,
+      "ux": 85,
+      "adsense_pass": true,
+      "notes": "YMYL gold standard. CFPB sources, 4% rule, Social Security context. Last updated today."
+    },
+    {
+      "name": "Budget Planner",
+      "slug": "budget-planner",
+      "depth": 75,
+      "unique": 75,
+      "trust": 80,
+      "ux": 75,
+      "adsense_pass": true,
+      "notes": "50/30/20 method. Good."
+    },
+    {
+      "name": "Debt Payoff / Credit Card Payoff",
+      "slug": "debt-payoff",
+      "depth": 80,
+      "unique": 80,
+      "trust": 85,
+      "ux": 80,
+      "adsense_pass": true,
+      "notes": "Snowball vs avalanche comparison. Strong."
+    }
+  ],
+  "average_scores": {
+    "depth": 84,
+    "unique": 81,
+    "trust": 86,
+    "ux": 82
+  },
+  "overall_verdict": "ALL 8 MONEY CALCULATORS PASS. Consistent template with excellent depth. Highest risk (Retirement) has CFPB sources and today's date.",
+  "issues_found": 0,
+  "no_edits_to_phase_31_held_pages": true
+}

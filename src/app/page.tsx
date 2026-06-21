@@ -157,7 +157,7 @@ const useCases = [
 
 const features = [
   {
-    title: "124 Calculators — All Free",
+    title: "125 Calculators — All Free",
     desc: "Reliable calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance. Every single one is 100% free.",
     icon: Calculator,
     color: "from-blue-500 to-blue-600",
@@ -195,7 +195,7 @@ const features = [
 ];
 
 const stats = [
-  { value: "124", label: "Live Calculators", icon: Calculator },
+  { value: "125", label: "Live Calculators", icon: Calculator },
   { value: "8", label: "Categories", icon: BarChart3 },
   { value: "Instant", label: "No Account Required", icon: Zap },
   { value: "100%", label: "Free — Always", icon: Shield },
@@ -222,7 +222,7 @@ export default function Home() {
               <input
                 name="q"
                 type="search"
-                placeholder='Search all 124 calculators — "mortgage", "retirement", "compound interest"...'
+                placeholder='Search all 125 calculators — "mortgage", "retirement", "compound interest"...'
                 className="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm text-gray-900 placeholder:text-gray-400 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-400/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-primary-500"
               />
             </div>

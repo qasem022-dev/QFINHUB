@@ -1,0 +1,36 @@
+{
+  "phase": "34",
+  "cycle": 2,
+  "task": "AdSense Safe Page Eligibility Map",
+  "generated": "2026-06-21T21:30:00+03:00",
+  "ADSENSE_SAFE": [
+    "/ (homepage) \u2014 fixed trust claims, clean nav",
+    "/calculators \u2014 calculator index",
+    "/calculators/* \u2014 all 125 individual calculators",
+    "/about \u2014 fixed ad language",
+    "/contact \u2014 functional",
+    "/methodology \u2014 fixed claims",
+    "/editorial-policy \u2014 upgraded with AI disclosure",
+    "/privacy \u2014 standard",
+    "/terms \u2014 standard",
+    "/disclaimer \u2014 standard",
+    "/cookies \u2014 noindex but safe",
+    "/data \u2014 placeholder content removed",
+    "/loan-payment-table \u2014 content-rich",
+    "/blog \u2014 blog index",
+    "/blog/* \u2014 quality blog posts",
+    "/guides/* \u2014 quality guides",
+    "/decision/* \u2014 decision pages",
+    "/compare/* \u2014 comparison pages"
+  ],
+  "ADSENSE_BLOCKED": [
+    "/auth/* \u2014 auth pages",
+    "/dashboard/* \u2014 behind auth",
+    "/ai-specialist \u2014 removed from nav, thin for public",
+    "noindex pages",
+    "lab pages",
+    "error pages"
+  ],
+  "implementation": "AdSense code should check ADSENSE_SAFE flag before rendering. Currently NO AdSense code deployed \u2014 safe by default.",
+  "adsterra_note": "Adsterra is currently global. Should be restricted to ADSENSE_SAFE pages as well."
+}

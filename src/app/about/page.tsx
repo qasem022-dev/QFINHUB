@@ -32,7 +32,7 @@ export default function AboutPage() {
               url: "https://www.qfinhub.com",
             },
             description:
-              "AI and Software Engineer, Founder and Developer of QFINHUB — a free financial calculator platform with 124+ tools serving users worldwide.",
+              "AI and Software Engineer, Founder and Developer of QFINHUB — a free financial calculator platform with 125+ tools serving users worldwide.",
             image: "https://www.qfinhub.com/images/author/qasem-mohammed.jpg",
             knowsAbout: [
               "Financial Modeling",
@@ -131,7 +131,7 @@ export default function AboutPage() {
               I&apos;m an <strong>AI and Software Engineer</strong> with over 8
               years of experience building data-driven applications,
               financial modeling tools, and AI-powered content systems. As the{" "}
-              <strong>Founder and Developer of QFINHUB</strong>, I built all 124+
+              <strong>Founder and Developer of QFINHUB</strong>, I built all 125+
               financial calculators from the ground up — designing the
               algorithms, implementing the user interfaces, and developing the
               automated content generation systems that power the platform.
@@ -299,7 +299,7 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { value: "124+", label: "Calculators" },
+              { value: "125+", label: "Calculators" },
               { value: "1,700+", label: "Pages Indexed" },
               { value: "33", label: "Languages" },
               { value: "100%", label: "Free Forever" },

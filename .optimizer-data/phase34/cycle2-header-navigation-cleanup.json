@@ -1,0 +1,37 @@
+{
+  "phase": "34",
+  "cycle": 2,
+  "task": "Header Navigation Cleanup",
+  "generated": "2026-06-21T21:30:00+03:00",
+  "changes": [
+    {
+      "item": "Sign In button",
+      "action": "REMOVED",
+      "detail": "Hidden from desktop and mobile nav. Auth still works at /auth/* directly."
+    },
+    {
+      "item": "Get Started button",
+      "action": "REMOVED",
+      "detail": "Hidden from desktop and mobile nav. Gradient CTA button removed."
+    },
+    {
+      "item": "AI Specialist nav link",
+      "action": "REMOVED",
+      "detail": "Removed from primary nav entirely. Page still accessible directly."
+    },
+    {
+      "item": "Dashboard link",
+      "action": "UNCHANGED",
+      "detail": "Only visible in logged-in user dropdown. Not in primary nav."
+    }
+  ],
+  "remaining_nav": [
+    "QFINHUB logo (\u2192 /)",
+    "Calculators (\u2192 /calculators)",
+    "Theme toggle",
+    "Language switcher",
+    "PWA install button (conditional)"
+  ],
+  "rationale": "AdSense reviewers now see a clean, content-first website with no SaaS conversion CTAs, no gated features in primary nav.",
+  "restore_after_review": "Uncomment Sign In/Get Started code and re-add AI Specialist to navLinks array."
+}

@@ -51,8 +51,44 @@ export default function EditorialPolicyPage() {
               <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
                 <h3 className="font-semibold text-gray-800 dark:text-gray-200">4. Regular Updates</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Tax brackets, contribution limits, and rate data are updated within 48 hours of 
-                  official announcements. Each page displays a &quot;Last Reviewed&quot; date.
+                  Tax brackets, contribution limits, and rate data are updated as quickly as possible after
+                  official announcements.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">AI & Automation Disclosure</h2>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
+              QFINHUB uses artificial intelligence and automation to assist with content creation, formula
+              verification, and calculator testing. Here's how we use AI:
+            </p>
+            <div className="space-y-3">
+              <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200">Where AI May Assist</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  AI tools may help draft educational content, generate calculator descriptions, and suggest
+                  formula implementations. AI also powers the AI Specialist chat feature to help users explore
+                  financial scenarios interactively.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200">Human Responsibility</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  All AI-assisted content is reviewed and approved by Qasem Mohammed, the owner and developer
+                  of QFINHUB, before publication. Final responsibility for accuracy, formula correctness, and
+                  editorial standards rests with the human reviewer. No content is published solely by AI
+                  without human oversight.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200">Questions About Our Process</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  If you have questions about how specific content was created or reviewed, contact us at{" "}
+                  <a href="mailto:q.finhub@gmail.com" className="text-primary-600 hover:underline">
+                    q.finhub@gmail.com
+                  </a>.
                 </p>
               </div>
             </div>

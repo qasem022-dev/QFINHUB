@@ -1,0 +1,63 @@
+{
+  "phase": "34",
+  "cycle": 2,
+  "task": "Methodology Page Proof Check",
+  "generated": "2026-06-21T21:30:00+03:00",
+  "claims_audited": [
+    {
+      "claim": "IRS sourced",
+      "location": "Tax Calculators section",
+      "verdict": "KEEP",
+      "detail": "References IRS Publication 17 and annual revenue procedures. Legitimate and verifiable."
+    },
+    {
+      "claim": "CFPB sourced",
+      "location": "Mortgage & Loan section",
+      "verdict": "KEEP",
+      "detail": "References CFPB Regulation Z (Truth in Lending Act). Standard industry reference."
+    },
+    {
+      "claim": "Federal Reserve sourced",
+      "location": "Investment & Retirement sections",
+      "verdict": "KEEP",
+      "detail": "References FRED (Federal Reserve Economic Database). Legitimate source."
+    },
+    {
+      "claim": "GAAP",
+      "location": "How Our Calculators Work section",
+      "verdict": "KEEP",
+      "detail": "Generally Accepted Accounting Principles \u2014 standard reference. Not claiming GAAP certification."
+    },
+    {
+      "claim": "Excel/Sheets validation",
+      "location": "Data Accuracy section",
+      "verdict": "KEEP",
+      "detail": "States results are validated against Excel/Google Sheets. Reasonable verification method."
+    },
+    {
+      "claim": "Updated within 48 hours",
+      "location": "Tax section + Data Accuracy",
+      "verdict": "SOFTENED",
+      "detail": "Changed to 'as quickly as possible after official changes' and 'when possible'. Removes hard SLA."
+    },
+    {
+      "claim": "professional-grade accuracy",
+      "location": "Methodology intro",
+      "verdict": "PASS",
+      "detail": "Methodology page uses 'industry-standard' and 'standard financial formulas' \u2014 no 'professional-grade' claim found here."
+    }
+  ],
+  "changes": [
+    "Softened '48 hours' claim \u2014 changed to 'as quickly as possible after official changes'",
+    "Softened '48 hours of IRS announcements' \u2014 added 'when possible' qualifier"
+  ],
+  "sections_verified": [
+    "How Our Calculators Work \u2014 YES",
+    "Formula Sources by category \u2014 YES (Mortgage, Investment, Tax, Retirement)",
+    "Assumptions \u2014 IMPLIED in formula descriptions",
+    "Limitations \u2014 YES (separate section)",
+    "Update schedule \u2014 SOFTENED (was '48 hours', now 'as quickly as possible')",
+    "Data source examples \u2014 YES (IRS Pub 17, CFPB Reg Z, FRED)",
+    "User responsibility \u2014 YES (Limitations section: 'not financial advice, consult advisor')"
+  ]
+}

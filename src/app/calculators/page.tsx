@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "All 125+ Free Financial Calculators | QFINHUB",
     description:
-      "Browse and use 125+ professional financial calculators across 8 categories. No sign-up required.",
+      "Browse and use 125+ reliable financial calculators across 8 categories. No sign-up required.",
     images: ["/og-image.png"],
     url: "https://www.qfinhub.com/calculators",
   },

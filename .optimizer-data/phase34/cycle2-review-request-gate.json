@@ -1,0 +1,22 @@
+{
+  "phase": "34",
+  "cycle": 2,
+  "task": "Review Request Gate",
+  "generated": "2026-06-21T21:30:00+03:00",
+  "decision": "HOLD_FOR_THIN_GUIDE_DECISION",
+  "readiness_score": 87,
+  "required_score": 90,
+  "gap": 3,
+  "critical_issues": 0,
+  "status_detail": "Site is nearly review-ready. All critical issues fixed. Remaining 3-point gap is from thin blog guides which are held pending Phase 32 Day 7 (Jun 25).",
+  "blockers": [
+    {
+      "issue": "125 thin blog guides still indexed",
+      "status": "HELD_FOR_PHASE32_DAY7",
+      "eta": "Jun 25, 2026"
+    }
+  ],
+  "what_would_reach_90": "If top 10-15 guides prove quality (Phase 32 Day 7 data) and remaining thin guides are removed from sitemap, score reaches 90+.",
+  "can_request_review": false,
+  "reason": "Score 87/100. Do NOT request review until \u226590 and thin guide decision is resolved."
+}
