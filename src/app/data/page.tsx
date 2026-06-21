@@ -56,43 +56,7 @@ export default function DataHubPage() {
           </p>
         </section>
 
-        {/* Section 2: Mortgage (Planned) */}
-        <section className="mb-10 rounded-lg border border-dashed border-gray-300 p-6 bg-gray-50">
-          <h2 className="text-2xl font-semibold text-gray-500 mb-3">
-            Mortgage Affordability Tables
-          </h2>
-          <p className="text-gray-500 mb-4">
-            How much house you can afford at salary levels from $40K to $200K. Based on the 28% front-end debt-to-income ratio.
-          </p>
-          <p className="text-sm text-gray-400 italic mb-3">
-            Coming soon — this section will be added when the Mortgage Affordability Database is activated.
-          </p>
-          <Link
-            href="/calculators/mortgage-affordability"
-            className="text-sm text-blue-500 hover:text-blue-700 hover:underline"
-          >
-            Try the Mortgage Affordability Calculator in the meantime →
-          </Link>
-        </section>
-
-        {/* Future Sections */}
-        <section className="mb-10">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Planned Data Sections</h2>
-          <ul className="space-y-3 text-gray-600">
-            <li className="flex items-start gap-2">
-              <span className="text-gray-400 mt-1">•</span>
-              <span><strong className="text-gray-700">Compound Interest Growth Tables</strong> — How monthly investments grow over time. Coming after compound interest database activates.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-gray-400 mt-1">•</span>
-              <span><strong className="text-gray-700">Retirement Savings Reality Check</strong> — How long savings last at different withdrawal rates. Coming after retirement database activates.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-gray-400 mt-1">•</span>
-              <span><strong className="text-gray-700">Debt Payoff Strategy Comparison</strong> — Snowball vs avalanche by debt size. Coming after debt payoff database activates.</span>
-            </li>
-          </ul>
-        </section>
+        {/* Additional data sections will be added as they become available. */}
 
         {/* Cite This Data */}
         <section className="mb-8 rounded-lg border border-green-200 bg-green-50 p-6">

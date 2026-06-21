@@ -1,0 +1,108 @@
+{
+  "phase": "34",
+  "task": "Calculator Page Value Template + Top 8 Money Calculator Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "adsense_quality_template": {
+    "required_sections": [
+      "1. What this calculator does \u2014 clear purpose statement",
+      "2. Who it's for \u2014 target audience",
+      "3. How to use it \u2014 input explanations",
+      "4. Formula/Methodology \u2014 with source citations",
+      "5. Worked example \u2014 real numbers showing calculation",
+      "6. Assumptions \u2014 what the calculator assumes",
+      "7. Limitations \u2014 what the calculator cannot do",
+      "8. Related calculators \u2014 internal linking",
+      "9. FAQ \u2014 common questions",
+      "10. Disclaimer \u2014 financial advice warning",
+      "11. Last reviewed/updated date",
+      "12. Author/Reviewer attribution"
+    ],
+    "minimum_word_count": "250+ words of unique explanatory content per calculator",
+    "no": [
+      "Empty sections",
+      "Generic boilerplate only",
+      "Repeated content across calculators",
+      "Unsupported claims",
+      "Misleading 'guaranteed' results language"
+    ]
+  },
+  "top_8_audited": [
+    {
+      "calculator": "Mortgage Calculator",
+      "slug": "mortgage-calculator",
+      "status": "PASS",
+      "score": 90,
+      "has_interactive": true,
+      "sections_present": [
+        "purpose",
+        "definition",
+        "key_takeaways",
+        "formula",
+        "real_world_app",
+        "example",
+        "factors",
+        "tips",
+        "related_calcs",
+        "related_guides",
+        "sources",
+        "last_updated",
+        "author"
+      ],
+      "missing": [
+        "FAQ",
+        "worked_example_with_numbers"
+      ],
+      "notes": "STRONG template. Slight thinness in worked example."
+    },
+    {
+      "calculator": "Mortgage Affordability",
+      "slug": "mortgage-affordability",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "Second most important mortgage tool. Must meet same standard."
+    },
+    {
+      "calculator": "Loan Calculator",
+      "slug": "loan-calculator",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "Core money calculator. Amortization schedule included in 'Most Used' list."
+    },
+    {
+      "calculator": "Compound Interest",
+      "slug": "compound-interest",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "Top investment calculator. Must show compounding visualization."
+    },
+    {
+      "calculator": "Investment Return",
+      "slug": "investment-return",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "CAGR calculator. Needs clear methodology."
+    },
+    {
+      "calculator": "Retirement Planning",
+      "slug": "retirement-planning",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "YMYL content. Highest scrutiny for AdSense. Must have strong disclaimers."
+    },
+    {
+      "calculator": "Budget Planner",
+      "slug": "budget-planner",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "50/30/20 budget tool. Needs clear explanation."
+    },
+    {
+      "calculator": "Debt Payoff / Credit Card Payoff",
+      "slug": "debt-payoff",
+      "status": "NEEDS_AUDIT",
+      "score": null,
+      "notes": "Snowball vs avalanche comparison. Both listed in 'Most Used'."
+    }
+  ],
+  "action": "Audit remaining 7 calculators using mortgage-calculator as benchmark. Improve any below 70/100 before AdSense review."
+}

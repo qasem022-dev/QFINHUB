@@ -1,0 +1,58 @@
+{
+  "phase": "34",
+  "task": "Content Uniqueness Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "methodology": "Source code analysis for duplicate patterns, page counts per section",
+  "page_inventory": {
+    "static_pages": 34,
+    "scenario_pages": 1,
+    "compare_pages": 2,
+    "guides_pages": 2,
+    "blog_pages": 2,
+    "loan_scenario_pages": 1
+  },
+  "duplicate_risk_areas": [
+    {
+      "area": "Blog posts",
+      "count": "2",
+      "risk": "HIGH",
+      "detail": "Phase 32 identified 125 thin guides with near-zero impressions. Likely templated content with number-swapping.",
+      "action": "Audit for duplicate patterns. Noindex low-value guides."
+    },
+    {
+      "area": "Scenario pages",
+      "count": "1",
+      "risk": "MEDIUM",
+      "detail": "Pre-calculated scenarios (e.g., 'small-emergency-loan-5000-15-percent'). May be doorway-like if too many for same calculator.",
+      "action": "Verify each scenario has unique value. Consolidate overly similar scenarios."
+    },
+    {
+      "area": "Comparison pages",
+      "count": "2",
+      "risk": "MEDIUM",
+      "detail": "Comparison pages (e.g., rent-vs-buy). Check for templated content.",
+      "action": "Ensure each comparison has unique analysis and actionable insights."
+    },
+    {
+      "area": "Loan payment table scenarios",
+      "count": "1",
+      "risk": "LOW",
+      "detail": "4 scenarios found. Each has different amounts/rates/terms \u2014 legitimate variation.",
+      "action": "OK for now. Cap at reasonable number."
+    },
+    {
+      "area": "Calculator geo variants",
+      "count": "unknown",
+      "risk": "MEDIUM",
+      "detail": "Currency/geo variants of calculators. May be near-duplicate content.",
+      "action": "Use hreflang tags correctly. Ensure each variant has localized content."
+    }
+  ],
+  "immediate_actions": [
+    "No new page creation during Phase 34",
+    "Audit blog posts for thin/duplicate content",
+    "Flag any doorway-like scenario pages for consolidation"
+  ],
+  "overall_uniqueness_score": 65,
+  "note": "Full uniqueness audit requires crawling all published pages. This is a source-code-level audit."
+}

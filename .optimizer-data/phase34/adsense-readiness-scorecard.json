@@ -1,0 +1,60 @@
+{
+  "phase": "34",
+  "task": "AdSense Readiness Scorecard",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "scoring": {
+    "unique_value": {
+      "max": 25,
+      "score": 15,
+      "note": "Strong calculator tools. Thin blog content (125 guides). Placeholder content on /data. -10 for thin footprint."
+    },
+    "content_depth": {
+      "max": 15,
+      "score": 10,
+      "note": "Mortgage calculator is excellent template. Other 7 money calculators unchecked. /data is thin. -5 for inconsistent depth."
+    },
+    "trust_transparency": {
+      "max": 15,
+      "score": 7,
+      "note": "Good trust pages exist but: missing Methodology from footer, no AI disclosure, 'no ads' contradiction, unprovable homepage claims. -8 for trust gaps."
+    },
+    "navigation_ux": {
+      "max": 15,
+      "score": 9,
+      "note": "Clean design but Sign In/Get Started in primary nav signals SaaS over content. AI Specialist thin for public. -6 for nav issues."
+    },
+    "policy_compliance": {
+      "max": 15,
+      "score": 12,
+      "note": "Privacy, Terms, Cookies, Disclaimer all present and mostly correct. Privacy needs ad partner update. -3 for missing ad disclosures."
+    },
+    "technical_quality": {
+      "max": 10,
+      "score": 8,
+      "note": "TypeScript clean. Responsive design. No broken nav links. Minor count inconsistencies. -2 for polish."
+    },
+    "monetization_safety": {
+      "max": 5,
+      "score": 5,
+      "note": "No AdSense code deployed yet. Adsterra is global but AdSense review focuses on Google ad policies. Safe for now."
+    }
+  },
+  "total_score": 66,
+  "max_score": 100,
+  "pass_threshold": 90,
+  "passed": false,
+  "critical_issues": 8,
+  "critical_issues_list": [
+    "Homepage: 4 unprovable trust claims (Used by thousands, AI Overviews, 4.9\u2605, No ads)",
+    "/data: 'Coming soon' and 'Planned Data Sections' visible on indexable page",
+    "Footer: Methodology page not linked in navigation",
+    "Editorial Policy: No AI-use disclosure",
+    "Editorial Policy: No corrections/updates policy",
+    "About: 'No ads' language contradicts active Adsterra",
+    "Homepage: Calculator count inconsistent (124 vs 125 vs 125+)",
+    "Header nav: Sign In/Get Started signal SaaS, not content site"
+  ],
+  "gap_to_pass": 24,
+  "projected_score_after_fixes": 85,
+  "note": "Even with all fixes, may not reach 90 without addressing thin blog content and auditing remaining calculators. Projected 85 is borderline."
+}

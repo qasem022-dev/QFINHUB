@@ -1,0 +1,138 @@
+{
+  "phase": "34",
+  "task": "Trust Page Upgrade",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "pages": [
+    {
+      "page": "About (/about)",
+      "current_status": "Good \u2014 structured data, professional summary, education, technical expertise sections",
+      "gaps": [
+        "Claims '8+ years of software engineering experience' without verifiable link",
+        "States 'no ads that compromise the user experience' \u2014 misleading with Adsterra active",
+        "No last-reviewed date",
+        "No link to Methodology page",
+        "credentials listed but no verification links (DeepLearning.AI cert not linked)"
+      ],
+      "fixes": [
+        "Add verifiable LinkedIn/GitHub links for credential claims",
+        "Remove 'no ads' language \u2014 replace with 'minimal, non-intrusive advertising'",
+        "Add 'Last reviewed: [date]' line",
+        "Add link to Methodology page",
+        "Add explicit YMYL disclaimer about limitations"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "page": "Contact (/contact)",
+      "current_status": "Functional \u2014 email, form, FAQ, response time stated",
+      "gaps": [
+        "No physical/business address (acceptable for pure digital product)",
+        "Form functionality not verified",
+        "Response time '24 hours' stated \u2014 verify this is actually met"
+      ],
+      "fixes": [
+        "Add business email prominently: q.finhub@gmail.com",
+        "Verify contact form sends successfully",
+        "Add operating hours or timezone context"
+      ],
+      "priority": "MEDIUM"
+    },
+    {
+      "page": "Methodology (/methodology)",
+      "current_status": "Good \u2014 formula sources cited (IRS, CFPB, Federal Reserve), specific formulas, limitations section",
+      "gaps": [
+        "Not linked in site footer (CRITICAL)",
+        "No last-reviewed/updated date",
+        "Could use more specific source URLs/links",
+        "No AI-use disclosure for AI Specialist feature"
+      ],
+      "fixes": [
+        "ADD to site-footer Company section immediately",
+        "Add 'Last reviewed: [date]' to each formula section",
+        "Add hyperlinks to IRS Publication 936, CFPB guidelines, Federal Reserve data",
+        "Add section on AI tool methodology and limitations"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "page": "Editorial Policy (/editorial-policy)",
+      "current_status": "Good \u2014 review process documented, formula verification, expert review",
+      "gaps": [
+        "No AI-use disclosure (AI Specialist creates content dynamically)",
+        "No corrections/updates policy",
+        "No last-reviewed date",
+        "Single-person review (Qasem Mohammed) \u2014 AdSense may want editorial team evidence",
+        "Claims 'every calculator reviewed' \u2014 verify this is true for 124+ tools"
+      ],
+      "fixes": [
+        "Add AI-use disclosure: which content is AI-assisted, human review process",
+        "Add corrections policy with contact method",
+        "Add last-reviewed date",
+        "Consider adding external reviewer or advisory board (even if volunteer)"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "page": "Privacy Policy (/privacy)",
+      "current_status": "Standard \u2014 data collection, use, storage disclosed",
+      "gaps": [
+        "No mention of ad technology partners (will be needed for AdSense)",
+        "Vercel Analytics not explicitly mentioned",
+        "Cookie consent banner present but policy may need updating"
+      ],
+      "fixes": [
+        "Add section on advertising partners (AdSense, Adsterra)",
+        "Mention Vercel Analytics explicitly",
+        "Ensure cookie banner aligns with privacy policy"
+      ],
+      "priority": "MEDIUM"
+    },
+    {
+      "page": "Terms of Service (/terms)",
+      "current_status": "Standard \u2014 usage terms, disclaimers, limitation of liability",
+      "gaps": [
+        "No mention of advertising/monetization terms",
+        "No modification date visible in browser snapshot"
+      ],
+      "fixes": [
+        "Add advertising and monetization disclosures",
+        "Add effective date prominently"
+      ],
+      "priority": "LOW"
+    },
+    {
+      "page": "Disclaimer (/disclaimer)",
+      "current_status": "Good \u2014 financial advice disclaimer, educational use only, last updated June 4, 2026",
+      "gaps": [
+        "Indexable (robots: index, follow) \u2014 should probably be indexable for transparency",
+        "Could be more prominent \u2014 small link in footer"
+      ],
+      "fixes": [
+        "Make disclaimer more visible on calculator pages",
+        "Keep indexable \u2014 transparency is good for AdSense"
+      ],
+      "priority": "LOW"
+    },
+    {
+      "page": "Cookie Policy (/cookies)",
+      "current_status": "Good \u2014 correctly noindexed, detailed sections on cookie types",
+      "gaps": [
+        "No issues \u2014 correctly configured"
+      ],
+      "fixes": [],
+      "priority": "NONE"
+    }
+  ],
+  "missing_trust_pages": [
+    "Financial Disclaimer (exists as /disclaimer but should be more prominent)",
+    "Corrections/Updates Policy (can be added to Editorial Policy)",
+    "Data Sources page (could be standalone or merged with Methodology)"
+  ],
+  "overall_trust_score": 65,
+  "critical_actions": [
+    "Add Methodology to site-footer navigation",
+    "Add AI-use disclosure to Editorial Policy",
+    "Remove 'no ads' language from About page",
+    "Add last-reviewed dates to all trust pages"
+  ]
+}

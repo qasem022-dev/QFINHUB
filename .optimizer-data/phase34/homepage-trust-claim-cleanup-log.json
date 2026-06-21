@@ -1,0 +1,124 @@
+{
+  "phase": "34",
+  "task": "Homepage Trust Claim Cleanup",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "file": "src/app/page.tsx",
+  "claims_audited": [
+    {
+      "claim": "Used by thousands monthly",
+      "location": "line 286, trust signals pill",
+      "current_text": "Used by thousands monthly",
+      "verifiable": false,
+      "has_proof_on_page": false,
+      "adsense_risk": "MISLEADING_CLAIM",
+      "action": "REMOVE",
+      "replacement": "Free tools for everyday financial decisions"
+    },
+    {
+      "claim": "Featured in AI Overviews",
+      "location": "line 290, trust signals pill",
+      "current_text": "Featured in AI Overviews",
+      "verifiable": false,
+      "has_proof_on_page": false,
+      "adsense_risk": "MISLEADING_CLAIM",
+      "action": "REMOVE",
+      "replacement": null,
+      "note": "Appearing in AI Overviews is not a human endorsement. Google may view this as misleading."
+    },
+    {
+      "claim": "4.9 \u2605 \u2014 rated by users",
+      "location": "line 298, trust signals pill",
+      "current_text": "4.9 \u2605 \u2014 rated by users",
+      "verifiable": false,
+      "has_proof_on_page": false,
+      "adsense_risk": "MISLEADING_CLAIM",
+      "action": "REMOVE",
+      "replacement": null,
+      "note": "No rating system exists on the site. No external review platform linked. This is a fabricated rating."
+    },
+    {
+      "claim": "No trackers, no ads, no data selling",
+      "location": "line 191, Privacy-First Design feature card",
+      "current_text": "Calculations run in your browser \u2014 your data never touches our servers unless you choose to save it. No trackers, no ads, no data selling.",
+      "verifiable": false,
+      "has_proof_on_page": false,
+      "adsense_risk": "MISLEADING_CLAIM",
+      "action": "REWORD",
+      "replacement": "Calculations run in your browser \u2014 your data stays on your device unless you choose to save it. We never sell your personal data.",
+      "note": "Adsterra banner loads in layout.tsx. Vercel Analytics is active. Site is applying for AdSense. Remove 'no ads' and 'no trackers' claims. Keep data-selling claim if true."
+    },
+    {
+      "claim": "Professional-grade calculators",
+      "location": "line 160-161, features section",
+      "current_text": "Professional-grade calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance.",
+      "verifiable": false,
+      "has_proof_on_page": false,
+      "adsense_risk": "TRUST_WEAK",
+      "action": "SOFTEN",
+      "replacement": "Reliable calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance."
+    },
+    {
+      "claim": "AI builds a custom calculator instantly",
+      "location": "line 185, AI Custom Calculator feature card",
+      "current_text": "Describe what you need in plain language and our AI builds a custom calculator with inputs, charts, and a personalized financial plan \u2014 instantly.",
+      "verifiable": "needs_testing",
+      "has_proof_on_page": false,
+      "adsense_risk": "TRUST_WEAK",
+      "action": "SOFTEN_IF_UNRELIABLE",
+      "replacement": "Describe what you need and our AI can help build a custom calculator with inputs and charts to explore your scenario.",
+      "note": "Remove 'instantly' and 'personalized financial plan' if AI output is generic. Test the AI Specialist feature."
+    },
+    {
+      "claim": "125 Live Calculators / 124 free tools / 125+ free",
+      "location": "multiple lines (119, 160, 198, 225, 247, 270, 294)",
+      "current_text": "Inconsistent: 125 Live Calculators, 124 Calculators, 125 Free Calculators, 124 free tools, 125+ in footer",
+      "verifiable": true,
+      "has_proof_on_page": false,
+      "adsense_risk": "LOW_VALUE",
+      "action": "STANDARDIZE",
+      "replacement": "Use consistent count throughout. Audit actual calculator count.",
+      "note": "Count fluctuates between 124, 125, and 125+. This looks sloppy to reviewers."
+    },
+    {
+      "claim": "100% free / 100% Free \u00b7 No Sign-Up Needed",
+      "location": "lines 124, 161, 247, footer",
+      "current_text": "Multiple '100% free' claims across page and footer",
+      "verifiable": true,
+      "has_proof_on_page": true,
+      "adsense_risk": "PASS",
+      "action": "KEEP",
+      "replacement": null,
+      "note": "Site IS free. But if AdSense ads are added, the '100% free' claim becomes technically true but the site will have ads."
+    },
+    {
+      "claim": "Instant Results \u2014 No Wait",
+      "location": "line 120, perks bar",
+      "current_text": "Instant Results \u2014 No Wait",
+      "verifiable": "needs_testing",
+      "has_proof_on_page": false,
+      "adsense_risk": "LOW_VALUE",
+      "action": "SOFTEN",
+      "replacement": "Fast Results",
+      "note": "Minor. 'Instant' is marketing hyperbole but not egregious."
+    }
+  ],
+  "stats_row_claims": [
+    {
+      "label": "Live Calculators",
+      "value": "124",
+      "verifiable": true,
+      "issue": "Count inconsistent with '125 Live Calculators' in perks bar"
+    }
+  ],
+  "deployment_status": "NOT_DEPLOYED",
+  "action_plan": [
+    "1. Remove 'Used by thousands monthly' pill \u2014 replace with factual benefit",
+    "2. Remove 'Featured in AI Overviews' pill entirely",
+    "3. Remove '4.9 \u2605 \u2014 rated by users' pill entirely",
+    "4. Reword 'No trackers, no ads, no data selling' to remove ad/tracker claims",
+    "5. Change 'Professional-grade' to 'Reliable'",
+    "6. Soften AI claim \u2014 remove 'instantly' and 'personalized financial plan'",
+    "7. Standardize calculator count to single verified number",
+    "8. Run build and verify homepage renders correctly"
+  ]
+}

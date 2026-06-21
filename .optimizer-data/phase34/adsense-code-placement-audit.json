@@ -1,0 +1,52 @@
+{
+  "phase": "34",
+  "task": "AdSense Code Placement Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "current_status": "NO ADSENSE CODE DEPLOYED",
+  "finding": "Google AdSense code (ca-pub, adsbygoogle) NOT FOUND anywhere in the codebase.",
+  "active_ad_technology": {
+    "type": "Adsterra Native Banner",
+    "component": "src/components/ads/adsterra-banner.tsx",
+    "loaded_in": "src/app/layout.tsx (global, all pages)",
+    "placement": "Deferred loading via requestIdleCallback, below hero content",
+    "placement_key": "93e6358fa4836a576dd463e0a148a834"
+  },
+  "other_tracking": {
+    "vercel_analytics": "Loaded globally in layout.tsx via <Analytics />",
+    "consent_banner": "Cookie consent banner present (ConsentBanner component)"
+  },
+  "adsense_safe_rendering_plan": {
+    "rule": "AdSense code must ONLY load on pages where ADSENSE_APPROVED_PAGE = true",
+    "excluded_surfaces": [
+      "/auth/* (login, signup)",
+      "/dashboard/*",
+      "/ai-specialist (until fixed or removed)",
+      "/data (until placeholders removed)",
+      "noindex pages",
+      "lab pages",
+      "error pages",
+      "empty/placeholder pages",
+      "thin tools below quality threshold",
+      "/cookies",
+      "any page with robots noindex"
+    ],
+    "implementation": "Create ADSENSE_APPROVED_PAGE logic. By default, exclude from: noindex, auth, dashboard, lab, placeholder pages. Only load on indexable, quality pages.",
+    "current_safe": true,
+    "note": "When AdSense code is added, must NOT be global like Adsterra currently is. Must be conditional."
+  },
+  "adsterra_issue": {
+    "current_state": "Adsterra banner loads on ALL pages including noindex/auth",
+    "adsense_risk": "MEDIUM",
+    "detail": "While not AdSense, having ads on auth/noindex pages signals poor ad placement practices to reviewers.",
+    "fix": "Add same conditional logic to Adsterra: only show on ADSENSE_APPROVED_PAGE pages."
+  },
+  "adsense_code_placement_audit": {
+    "global_ad_code": false,
+    "ad_code_on_noindex": "N/A (no AdSense code yet)",
+    "ad_code_on_auth": "N/A",
+    "ad_code_on_dashboard": "N/A",
+    "ad_code_on_placeholders": "N/A",
+    "ad_code_on_error_pages": "N/A",
+    "overall_status": "READY \u2014 no AdSense code to clean up. But Adsterra is global."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "phase": "34",
+  "task": "Placeholder / Coming-Soon Removal Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "pages_audited": [
+    {
+      "url": "/data",
+      "status": "FAIL",
+      "placeholder_content": [
+        "Section 2: Mortgage \u2014 'Coming soon \u2014 this section will be added when the Mortgage Affordability Database is activated.'",
+        "'Planned Data Sections' heading with list of future sections"
+      ],
+      "action": "REMOVE_IMMEDIATELY",
+      "fix": "Remove 'Coming soon' text and 'Planned Data Sections' heading. Only show live content (Loan Payment Table). If Mortgage section is not ready, hide it entirely.",
+      "adsense_risk": "AdSense explicitly rejects sites with 'coming soon' or 'under construction' content."
+    },
+    {
+      "url": "/ai-specialist",
+      "status": "WARNING",
+      "placeholder_content": [
+        "Empty state for unauthenticated users \u2014 shows no content, just chat prompt"
+      ],
+      "action": "ADD_CONTENT_OR_REMOVE_FROM_NAV",
+      "fix": "Add substantial public-facing content (explanation, examples, sample outputs) OR remove from primary navigation. Currently signals unfinished product.",
+      "adsense_risk": "MEDIUM \u2014 page exists and is functional but appears thin/unfinished to public users"
+    },
+    {
+      "url": "/dashboard/settings",
+      "status": "LOW",
+      "placeholder_content": [
+        "'Additional languages coming soon' in language selector"
+      ],
+      "action": "ACCEPTABLE",
+      "fix": "Dashboard is behind auth, not indexed, not in sitemap. Minor issue.",
+      "adsense_risk": "NONE \u2014 not public-facing"
+    }
+  ],
+  "searched_terms": [
+    "coming soon",
+    "coming later",
+    "placeholder",
+    "planned",
+    "lorem ipsum",
+    "under construction",
+    "work in progress"
+  ],
+  "matches_found": 3,
+  "critical_fix": "REMOVE all 'coming soon' and 'planned' content from /data page. This is the single most actionable fix for AdSense approval.",
+  "broader_audit_needed": [
+    "Blog posts \u2014 check for thin/placeholder content",
+    "Embeddable Widgets pages",
+    "For AI Developers page"
+  ]
+}

@@ -158,7 +158,7 @@ const useCases = [
 const features = [
   {
     title: "124 Calculators — All Free",
-    desc: "Professional-grade calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance. Every single one is 100% free.",
+    desc: "Reliable calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance. Every single one is 100% free.",
     icon: Calculator,
     color: "from-blue-500 to-blue-600",
   },
@@ -188,7 +188,7 @@ const features = [
   },
   {
     title: "Privacy-First Design",
-    desc: "Calculations run in your browser — your data never touches our servers unless you choose to save it. No trackers, no ads, no data selling.",
+    desc: "Calculations run in your browser — your data stays on your device unless you choose to save it. We never sell your personal data.",
     icon: Shield,
     color: "from-cyan-500 to-cyan-600",
   },
@@ -279,23 +279,15 @@ export default function Home() {
               </Button>
             </div>
 
-            {/* Trust Signals */}
+            {/* Trust Signals — Phase 34: factual claims only, no unprovable ratings */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 shadow-sm dark:bg-emerald-900/30 dark:text-emerald-400">
                 <Users className="h-3.5 w-3.5" />
-                Used by thousands monthly
-              </span>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1.5 text-xs font-medium text-blue-700 shadow-sm dark:bg-blue-900/30 dark:text-blue-400">
-                <Sparkles className="h-3.5 w-3.5" />
-                Featured in AI Overviews
+                Free tools for everyday financial decisions
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700 shadow-sm dark:bg-purple-900/30 dark:text-purple-400">
                 <CheckCircle2 className="h-3.5 w-3.5" />
                 124 free tools, no account needed
-              </span>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 shadow-sm dark:bg-amber-900/30 dark:text-amber-400">
-                <Star className="h-3.5 w-3.5 fill-amber-500" />
-                4.9 ★ — rated by users
               </span>
             </div>
 

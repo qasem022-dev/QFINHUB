@@ -1,0 +1,67 @@
+{
+  "phase": "34",
+  "task": "AdSense Recovery Deploy Log",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "changes_made": [
+    {
+      "file": "src/app/page.tsx",
+      "changes": [
+        "Removed 'Used by thousands monthly' trust pill \u2014 replaced with 'Free tools for everyday financial decisions'",
+        "Removed 'Featured in AI Overviews' trust pill entirely",
+        "Removed '4.9 \u2605 \u2014 rated by users' trust pill entirely",
+        "Changed 'No trackers, no ads, no data selling' to 'data stays on device... We never sell your personal data'",
+        "Changed 'Professional-grade calculators' to 'Reliable calculators'"
+      ],
+      "risk": "LOW \u2014 cosmetic text changes only"
+    },
+    {
+      "file": "src/app/data/page.tsx",
+      "changes": [
+        "Removed 'Coming soon' Mortgage Affordability Tables section",
+        "Removed 'Planned Data Sections' with 3 future sections",
+        "Replaced with brief comment placeholder"
+      ],
+      "risk": "LOW \u2014 removing placeholder content only"
+    },
+    {
+      "file": "src/components/layout/site-footer.tsx",
+      "changes": [
+        "Added 'Methodology' link to Company section in footer"
+      ],
+      "risk": "LOW \u2014 adding existing page to navigation"
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "changes": [
+        "Changed 'no ads that compromise the user experience' to 'minimal, non-intrusive advertising'"
+      ],
+      "risk": "LOW \u2014 softening claim to be truthful"
+    }
+  ],
+  "build_status": "TypeScript compiles cleanly",
+  "pre_deploy_checks": {
+    "typecheck": "PASS",
+    "lint": "N/A (no linter configured for .tsx)",
+    "breaking_changes": null,
+    "pages_affected": [
+      "/ (homepage)",
+      "/data",
+      "/about",
+      "All pages (footer)"
+    ]
+  },
+  "post_deploy_verify": [
+    "Homepage 200 \u2014 verify trust pills changed",
+    "/data 200 \u2014 verify no 'coming soon' text",
+    "/about 200 \u2014 verify 'no ads' language changed",
+    "Footer \u2014 verify Methodology link present on all pages",
+    "Sitemap 200",
+    "Robots.txt 200",
+    "Top 8 calculators 200"
+  ],
+  "deployment": {
+    "method": "Git push to main \u2192 Vercel auto-deploy (GitHub integration confirmed)",
+    "estimated_deploy_time": "~100 seconds",
+    "status": "NOT_DEPLOYED \u2014 awaiting push"
+  }
+}

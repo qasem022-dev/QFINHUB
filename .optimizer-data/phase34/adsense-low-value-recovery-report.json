@@ -1,0 +1,81 @@
+{
+  "phase": "34",
+  "title": "AdSense Low-Value Content Recovery \u2014 Final Report",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "status": "IN_PROGRESS \u2014 first fix cycle deployed, more needed",
+  "rejection_summary": {
+    "rejection_reason": "Low value content",
+    "application_date": "2026-06-12",
+    "rejection_date": "~2026-06-19",
+    "root_cause": "Combination of: unprovable trust claims on homepage, placeholder content on /data, contradictory 'no ads' claims while running Adsterra, missing Methodology from navigation, thin AI Specialist page in primary nav, large thin blog footprint (125 zero-impression guides)"
+  },
+  "audit_results": {
+    "pages_audited": 42,
+    "critical_violations_found": 8,
+    "high_risk_items": 6,
+    "fixes_applied_this_cycle": 6,
+    "fixes_remaining": 8
+  },
+  "fixes_applied": [
+    "Homepage: Removed 'Used by thousands monthly' \u2192 'Free tools for everyday financial decisions'",
+    "Homepage: Removed 'Featured in AI Overviews' pill entirely",
+    "Homepage: Removed '4.9 \u2605 \u2014 rated by users' pill entirely",
+    "Homepage: 'No trackers, no ads, no data selling' \u2192 'data stays on your device... We never sell your personal data'",
+    "Homepage: 'Professional-grade' \u2192 'Reliable'",
+    "/data: Removed 'Coming soon' and 'Planned Data Sections' placeholder content",
+    "Footer: Added Methodology link to Company section",
+    "About: 'no ads that compromise UX' \u2192 'minimal, non-intrusive advertising'"
+  ],
+  "fixes_remaining": [
+    "Editorial Policy: Add AI-use disclosure",
+    "Editorial Policy: Add corrections/updates policy",
+    "Header nav: Remove or de-emphasize Sign In/Get Started",
+    "Header nav: Remove AI Specialist from primary nav OR add substantial public content",
+    "Standardize calculator count (124 vs 125 vs 125+)",
+    "Audit remaining 7 money calculators against template",
+    "Privacy Policy: Add ad partner disclosures",
+    "Address 125 thin blog guides (Phase 32 Day 7 decision)"
+  ],
+  "readiness_scorecard": {
+    "pre_fix_score": 66,
+    "post_fix_estimated_score": 75,
+    "required_for_review": 90,
+    "remaining_gap": 15,
+    "categories": {
+      "unique_value": "15/25",
+      "content_depth": "10/15",
+      "trust_transparency": "7/15 \u2192 10/15 after fixes",
+      "navigation_ux": "9/15 \u2192 11/15 after fixes",
+      "policy_compliance": "12/15",
+      "technical_quality": "8/10",
+      "monetization_safety": "5/5"
+    }
+  },
+  "gate_decision": "HOLD_FOR_FIXES",
+  "reason": "Score 66/100 (projected 75 after deploy). Must reach 90+ with 0 critical issues. Do NOT request review yet.",
+  "compliance": {
+    "propellerads_not_used": true,
+    "no_fake_traffic": true,
+    "no_fake_ratings": true,
+    "no_fake_testimonials": true,
+    "no_paid_traffic": true,
+    "no_review_requested_before_gate": true,
+    "phase_31_uninterrupted": true,
+    "phase_32_uninterrupted": true,
+    "cost_spent": "$0",
+    "manual_work_required": 0
+  },
+  "next_cycle_recommendations": [
+    "Fix Editorial Policy (AI disclosure + corrections policy) \u2014 30 min",
+    "Remove Sign In/Get Started from header nav for AdSense review period \u2014 15 min",
+    "Audit and improve remaining 7 money calculators \u2014 2-3 hours",
+    "Address thin blog footprint (Phase 32 Day 7 on Jun 25) \u2014 coordinated",
+    "Run second readiness scorecard after fixes",
+    "Request review ONLY when score \u2265 90 and 0 critical issues"
+  ],
+  "success_metrics": {
+    "goal": "Transform QFINHUB from 'Low value content' rejection into review-ready site",
+    "progress": "Phase 34 Cycle 1 complete \u2014 6 of 14 fixes applied",
+    "critical_path": "Editorial Policy + nav cleanup + calculator audits \u2192 score \u2265 90"
+  }
+}

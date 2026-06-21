@@ -1,0 +1,103 @@
+{
+  "phase": "34",
+  "task": "Navigation & Finished-Site Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "header_nav": {
+    "component": "src/components/layout/navbar.tsx",
+    "items": [
+      {
+        "label": "QFINHUB (logo)",
+        "href": "/",
+        "status": "OK",
+        "issue": null
+      },
+      {
+        "label": "Calculators",
+        "href": "/calculators",
+        "status": "OK",
+        "issue": null
+      },
+      {
+        "label": "AI Specialist",
+        "href": "/ai-specialist",
+        "status": "ISSUE",
+        "issue": "In primary nav with highlight. Page is thin for unauthenticated users. Requires auth for saving."
+      },
+      {
+        "label": "Sign In",
+        "href": "/auth/login",
+        "status": "ISSUE",
+        "issue": "Gated nav item in primary header. AdSense reviewers may view this as unfinished SaaS, not content site."
+      },
+      {
+        "label": "Get Started",
+        "href": "/auth/signup",
+        "status": "ISSUE",
+        "issue": "CTA for SaaS conversion. Signals non-content-first design to AdSense reviewers."
+      }
+    ],
+    "overall_risk": "BROKEN_NAV",
+    "fix": "Move Sign In/Get Started to utility area or hide during AdSense review. Remove AI Specialist from primary nav OR add substantial public content."
+  },
+  "footer_nav": {
+    "component": "src/components/layout/site-footer.tsx",
+    "note": "This is the LIVE footer (imported in layout.tsx). Old footer.tsx with i18n is unused.",
+    "language": "Hardcoded English (no i18n)",
+    "sections": {
+      "brand": {
+        "content": "125+ free financial calculators... Fast, accurate, and 100% free.",
+        "issue": "Claims '100% free' \u2014 OK. Claims '125+' \u2014 verify count."
+      },
+      "calculators_links": {
+        "title": "Calculators",
+        "links": [
+          "All Calculators",
+          "AI Financial Specialist",
+          "Blog & Guides",
+          "For AI Developers",
+          "Embeddable Widgets"
+        ],
+        "issue": "Missing direct calculator category links. 'Embeddable Widgets' page quality unknown."
+      },
+      "company_links": {
+        "title": "Company",
+        "links": [
+          "About Us",
+          "Contact Us",
+          "Privacy Policy",
+          "Terms of Service",
+          "Cookie Policy",
+          "Editorial Policy"
+        ],
+        "issue": "CRITICAL: Methodology page is MISSING from footer. It exists at /methodology and is in sitemap, but not linked in main footer."
+      }
+    },
+    "ymyl_banner": {
+      "present": true,
+      "content": "Correct disclaimer about financial advice. Links to Terms and Privacy.",
+      "status": "OK"
+    }
+  },
+  "sitemap_coverage": {
+    "total_pages": "654 URLs (per Phase 32 audit)",
+    "methodology_included": true,
+    "editorial_policy_included": true,
+    "missing_from_sitemap": [
+      "/cookies (correctly excluded)",
+      "auth pages (correctly excluded)"
+    ],
+    "issue": null
+  },
+  "broken_links": {
+    "checked": "header + footer nav links",
+    "broken_found": 0,
+    "note": "All nav links resolve to 200 pages. Need full crawl for blog/calculator internal links."
+  },
+  "overall_finished_site_score": 55,
+  "critical_fixes": [
+    "Add Methodology link to footer Company section",
+    "Remove or de-emphasize Sign In/Get Started from header",
+    "Evaluate AI Specialist nav placement \u2014 remove from primary nav if thin",
+    "Add 'For AI Developers' and 'Embeddable Widgets' to audit if they're public"
+  ]
+}

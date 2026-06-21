@@ -141,7 +141,7 @@ export default function AboutPage() {
               <strong>software engineering, quantitative finance, and artificial
               intelligence</strong>. I specialize in building systems that make
               complex financial calculations accessible to everyone — no sign-up,
-              no paywalls, no ads that compromise the user experience.
+              no paywalls, with minimal, non-intrusive advertising.
             </p>
           </div>
         </section>

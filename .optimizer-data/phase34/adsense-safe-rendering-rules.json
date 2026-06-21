@@ -1,0 +1,29 @@
+{
+  "phase": "34",
+  "task": "AdSense Safe Rendering Rules",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "rules": {
+    "ADSENSE_APPROVED_PAGE": {
+      "description": "Boolean flag determining if AdSense code can render on a page",
+      "criteria": [
+        "Page is indexable (robots index, no noindex)",
+        "Page is in sitemap (public content)",
+        "Page is not auth/dashboard/lab",
+        "Page has no placeholder/coming-soon content",
+        "Page has 200+ words of unique content",
+        "Page passes quality score >= 60",
+        "Page has disclaimer where appropriate (YMYL)"
+      ],
+      "default": false
+    },
+    "implementation_path": "src/lib/adsense/safe-render.ts",
+    "usage": "import { canShowAdsense } from '@/lib/adsense/safe-render'; // Check before rendering ad components",
+    "excluded_routes": [
+      "/auth/*",
+      "/dashboard/*",
+      "/cookies",
+      "/api/*",
+      "/_next/*"
+    ]
+  }
+}

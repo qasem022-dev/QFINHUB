@@ -1,0 +1,72 @@
+{
+  "phase": "34",
+  "task": "AdSense Review Request Gate",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "decision": "HOLD_FOR_FIXES",
+  "readiness_score": 66,
+  "required_score": 90,
+  "gap": 24,
+  "critical_issues_remaining_after_deploy": [
+    {
+      "issue": "Editorial Policy: No AI-use disclosure",
+      "status": "NOT_FIXED",
+      "priority": "HIGH"
+    },
+    {
+      "issue": "Editorial Policy: No corrections/updates policy",
+      "status": "NOT_FIXED",
+      "priority": "HIGH"
+    },
+    {
+      "issue": "Homepage: Calculator count inconsistent (124 vs 125 vs 125+)",
+      "status": "PARTIALLY_FIXED",
+      "priority": "MEDIUM"
+    },
+    {
+      "issue": "Header nav: Sign In/Get Started still present",
+      "status": "NOT_FIXED",
+      "priority": "HIGH"
+    },
+    {
+      "issue": "AI Specialist in primary nav \u2014 thin for public",
+      "status": "NOT_FIXED",
+      "priority": "MEDIUM"
+    },
+    {
+      "issue": "125 thin blog guides (Phase 32 data) \u2014 still indexed",
+      "status": "NOT_FIXED",
+      "priority": "MEDIUM"
+    },
+    {
+      "issue": "7 remaining money calculators not audited",
+      "status": "NOT_FIXED",
+      "priority": "MEDIUM"
+    },
+    {
+      "issue": "Privacy Policy needs ad partner disclosure",
+      "status": "NOT_FIXED",
+      "priority": "LOW"
+    }
+  ],
+  "fixed_in_this_deploy": [
+    "Homepage trust claims (4 unprovable pills removed)",
+    "Homepage 'no ads' contradiction fixed",
+    "Homepage 'professional-grade' softened to 'reliable'",
+    "/data 'coming soon' and 'planned' content removed",
+    "Footer Methodology link added",
+    "About page 'no ads' language fixed"
+  ],
+  "estimated_score_after_deploy": 75,
+  "remaining_gap": 15,
+  "next_steps": [
+    "Deploy current fixes",
+    "Fix Editorial Policy (AI disclosure + corrections policy)",
+    "Remove Sign In/Get Started from header nav",
+    "Standardize calculator count across site",
+    "Audit remaining 7 money calculators",
+    "Consider no-indexing thin blog guides (Phase 32 Day 7 decision)"
+  ],
+  "review_request_possible_after": "All HIGH priority items fixed. Estimated: 1-2 more fix cycles.",
+  "do_not_request_review_yet": true,
+  "reason": "Score 66/100, 8 critical issues remain. Must reach 90+ before requesting review."
+}

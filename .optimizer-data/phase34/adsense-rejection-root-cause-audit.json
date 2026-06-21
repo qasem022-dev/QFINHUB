@@ -1,0 +1,227 @@
+{
+  "phase": "34",
+  "task": "AdSense Rejection Root-Cause Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "methodology": "Crawled live site + audited source code for AdSense policy violations",
+  "rejection_reason": "Low value content",
+  "rejection_date": "~2026-06-19",
+  "application_date": "2026-06-12",
+  "audit_summary": {
+    "total_pages_audited": 42,
+    "critical_violations": 8,
+    "high_risk_items": 6,
+    "medium_risk_items": 4,
+    "low_risk_items": 3
+  },
+  "pages": [
+    {
+      "url": "/",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "rich",
+      "unique_value_score": 65,
+      "adsense_risk": "MISLEADING_CLAIM",
+      "risk_detail": "4 unprovable claims: 'Used by thousands monthly', 'Featured in AI Overviews', '4.9 \u2605 rated by users', 'No trackers, no ads, no data selling' (Adsterra active). Calculator count inconsistent (124 vs 125).",
+      "fix_needed": "Remove/reword trust signal pills. Remove 'no ads' claim. Fix 124/125 count. Add verifiable proof or soften claims."
+    },
+    {
+      "url": "/calculators",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "moderate",
+      "unique_value_score": 70,
+      "adsense_risk": "PASS",
+      "risk_detail": "Categories + search listing. Functional. '125+' claim appears. Professional-grade claim in meta.",
+      "fix_needed": "Verify 125+ count accuracy. Soften 'professional-grade' to 'reliable' if unprovable."
+    },
+    {
+      "url": "/about",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "rich",
+      "unique_value_score": 75,
+      "adsense_risk": "TRUST_WEAK",
+      "risk_detail": "Good content + structured data. Claims '8+ years experience' and lists credentials without verifiable links. States 'no ads that compromise UX' \u2014 misleading with active Adsterra.",
+      "fix_needed": "Add verifiable credential links. Fix 'no ads' language. Add last-reviewed date. Add Methodology link."
+    },
+    {
+      "url": "/contact",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "moderate",
+      "unique_value_score": 60,
+      "adsense_risk": "PASS",
+      "risk_detail": "Email, form, response time (24h), FAQ. No physical address. Contact form present.",
+      "fix_needed": "Add expected response time prominently. Verify form submission works."
+    },
+    {
+      "url": "/methodology",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "rich",
+      "unique_value_score": 80,
+      "adsense_risk": "PASS",
+      "risk_detail": "Good formula sources (IRS, CFPB, Federal Reserve). Specific formulas cited. Limitations section. Last-reviewed date present.",
+      "fix_needed": "Add this page to site-footer navigation (currently missing). Add more formula-specific sources."
+    },
+    {
+      "url": "/editorial-policy",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "good",
+      "unique_value_score": 70,
+      "adsense_risk": "PASS",
+      "risk_detail": "Review process documented. Formula verification steps. Expert review claim (single person). AI disclosure needed.",
+      "fix_needed": "Add AI-use disclosure. Add corrections policy. Add last-reviewed date."
+    },
+    {
+      "url": "/privacy",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "good",
+      "unique_value_score": 60,
+      "adsense_risk": "PASS",
+      "risk_detail": "Standard privacy policy. Cookie consent banner present. Data collection disclosed.",
+      "fix_needed": "Update to mention ad technology providers if AdSense is added."
+    },
+    {
+      "url": "/terms",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "good",
+      "unique_value_score": 60,
+      "adsense_risk": "PASS",
+      "risk_detail": "Standard terms. Disclaimer of financial advice present.",
+      "fix_needed": "None critical."
+    },
+    {
+      "url": "/disclaimer",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "good",
+      "unique_value_score": 65,
+      "adsense_risk": "PASS",
+      "risk_detail": "Financial disclaimer. Last updated June 4, 2026. Indexable (robots: index, follow).",
+      "fix_needed": "None critical."
+    },
+    {
+      "url": "/cookies",
+      "http_status": 200,
+      "indexable": false,
+      "in_sitemap": false,
+      "content_depth": "good",
+      "unique_value_score": 50,
+      "adsense_risk": "PASS",
+      "risk_detail": "Correctly noindexed. Not in sitemap. Good content.",
+      "fix_needed": "None."
+    },
+    {
+      "url": "/data",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "thin",
+      "unique_value_score": 30,
+      "adsense_risk": "PLACEHOLDER",
+      "risk_detail": "CRITICAL: 'Coming soon' text for Mortgage section. 'Planned Data Sections' header. Only Loan Payment Table is live. Indexable = YES despite placeholder content.",
+      "fix_needed": "Remove 'Coming soon' and 'Planned' sections. Either build content or noindex until ready."
+    },
+    {
+      "url": "/loan-payment-table",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "good",
+      "unique_value_score": 65,
+      "adsense_risk": "PASS",
+      "risk_detail": "4 scenarios, FAQ, methodology note. Good reference data.",
+      "fix_needed": "Expand to more scenarios. Add visual table/chart."
+    },
+    {
+      "url": "/ai-specialist",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "thin_for_public",
+      "unique_value_score": 25,
+      "adsense_risk": "SHOULD_NOINDEX",
+      "risk_detail": "Client-side AI chat requiring auth for saving. Empty state shows no content. Thin for unauthenticated users. Uses Supabase auth. In primary nav with 'highlight' styling.",
+      "fix_needed": "Remove from primary nav OR add substantial public content. Noindex if non-functional for public."
+    },
+    {
+      "url": "/blog",
+      "http_status": 200,
+      "indexable": true,
+      "in_sitemap": true,
+      "content_depth": "moderate",
+      "unique_value_score": 50,
+      "adsense_risk": "LOW_VALUE",
+      "risk_detail": "Blog index exists. Phase 32 flagged 125 thin guides with near-zero impressions. Blog content quality needs audit.",
+      "fix_needed": "Audit blog posts for thin content. Noindex low-value guides."
+    },
+    {
+      "url": "/auth/login",
+      "http_status": 200,
+      "indexable": false,
+      "in_sitemap": false,
+      "content_depth": "thin",
+      "unique_value_score": 10,
+      "adsense_risk": "SHOULD_NOINDEX",
+      "risk_detail": "Auth page. Correctly not in sitemap. 193 lines. Should remain noindex.",
+      "fix_needed": "Verify robots noindex is set."
+    },
+    {
+      "url": "/auth/signup",
+      "http_status": 200,
+      "indexable": false,
+      "in_sitemap": false,
+      "content_depth": "thin",
+      "unique_value_score": 10,
+      "adsense_risk": "SHOULD_NOINDEX",
+      "risk_detail": "Auth page. Correctly not in sitemap. 257 lines. Should remain noindex.",
+      "fix_needed": "Verify robots noindex is set."
+    },
+    {
+      "url": "/dashboard",
+      "http_status": 200,
+      "indexable": "unknown",
+      "in_sitemap": false,
+      "content_depth": "thin_for_public",
+      "unique_value_score": 15,
+      "adsense_risk": "SHOULD_NOINDEX",
+      "risk_detail": "Dashboard requires auth. Not in public sitemap. Good.",
+      "fix_needed": "Verify noindex for dashboard routes."
+    },
+    {
+      "url": "/signin (nav link)",
+      "http_status": "redirects to /auth/login",
+      "indexable": false,
+      "in_sitemap": false,
+      "content_depth": "n/a",
+      "unique_value_score": 0,
+      "adsense_risk": "BROKEN_NAV",
+      "risk_detail": "Sign In link in header nav. For AdSense reviewers, gated nav items signal unfinished site.",
+      "fix_needed": "Remove from primary header or move to utility area."
+    },
+    {
+      "url": "/get-started (nav link)",
+      "http_status": "redirects to /auth/signup",
+      "indexable": false,
+      "in_sitemap": false,
+      "content_depth": "n/a",
+      "unique_value_score": 10,
+      "adsense_risk": "BROKEN_NAV",
+      "risk_detail": "Get Started link in header nav. Signals SaaS conversion, not content-first site.",
+      "fix_needed": "Remove from primary header for AdSense review."
+    }
+  ]
+}

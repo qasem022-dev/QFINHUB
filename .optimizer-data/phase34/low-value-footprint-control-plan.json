@@ -1,0 +1,95 @@
+{
+  "phase": "34",
+  "task": "Thin / Low-Value Footprint Control Plan",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "based_on": "Phase 32 thin triage data + live site audit",
+  "categories": [
+    {
+      "category": "Thin guides (blog)",
+      "count": "125 guides with near-zero impressions (Phase 32 data)",
+      "current_status": "Indexed and in sitemap",
+      "adsense_risk": "LOW_VALUE",
+      "action": "NOINDEX",
+      "reason": "Zero traffic, zero value to users. Keep live for Phase 32 experiment but exclude from sitemap and noindex until proven.",
+      "timing": "After Phase 32 Day 7 (Jun 25) if still no traffic"
+    },
+    {
+      "category": "Zero-impression thin tools",
+      "count": "58 tools (Phase 32 data)",
+      "current_status": "Indexed, variable sitemap status",
+      "adsense_risk": "THIN",
+      "action": "AUDIT_FIRST",
+      "reason": "Some may be good tools with poor SEO. Don't bulk noindex. Review individually.",
+      "timing": "Phase 34 audit cycle"
+    },
+    {
+      "category": "AI Specialist page (/ai-specialist)",
+      "count": 1,
+      "current_status": "In primary nav, in sitemap, thin for unauthenticated users",
+      "adsense_risk": "SHOULD_NOINDEX",
+      "action": "REMOVE_FROM_NAV_OR_ADD_CONTENT",
+      "reason": "Empty state for public users. AI chat requires auth. Signals unfinished product.",
+      "timing": "IMMEDIATE \u2014 before AdSense review"
+    },
+    {
+      "category": "/data page placeholder sections",
+      "count": 1,
+      "current_status": "'Coming soon' and 'Planned Data Sections' visible, indexable",
+      "adsense_risk": "PLACEHOLDER",
+      "action": "REMOVE_PLACEHOLDERS",
+      "reason": "AdSense explicitly rejects sites with 'coming soon' content.",
+      "timing": "IMMEDIATE"
+    },
+    {
+      "category": "Auth/Dashboard pages",
+      "count": "~10 pages",
+      "current_status": "Not in sitemap, not indexable",
+      "adsense_risk": "PASS (if noindexed)",
+      "action": "VERIFY_NOINDEX",
+      "reason": "Should remain noindexed and excluded from sitemap.",
+      "timing": "Verify before review"
+    },
+    {
+      "category": "Sign In / Get Started nav items",
+      "count": 2,
+      "current_status": "In primary header nav",
+      "adsense_risk": "BROKEN_NAV",
+      "action": "REMOVE_FROM_PRIMARY_NAV",
+      "reason": "Signal SaaS/conversion site instead of content site. AdSense favors content-first.",
+      "timing": "IMMEDIATE \u2014 before AdSense review"
+    },
+    {
+      "category": "Embeddable Widgets (/widgets)",
+      "count": "~3 pages",
+      "current_status": "In footer nav, linked",
+      "adsense_risk": "NEEDS_AUDIT",
+      "action": "AUDIT",
+      "reason": "If these are thin wrapper pages, noindex or improve.",
+      "timing": "Phase 34 audit"
+    },
+    {
+      "category": "For AI Developers (/for-ai-developers)",
+      "count": 1,
+      "current_status": "In footer nav",
+      "adsense_risk": "NEEDS_AUDIT",
+      "action": "AUDIT",
+      "reason": "Unknown content quality. May be thin developer landing page.",
+      "timing": "Phase 34 audit"
+    }
+  ],
+  "immediate_actions": [
+    "Remove 'Coming soon' and 'Planned Data Sections' from /data",
+    "Remove Sign In/Get Started from primary header nav",
+    "Noindex /ai-specialist OR add substantial public content",
+    "Verify all auth/dashboard pages are noindexed"
+  ],
+  "sitemap_cleanup": [
+    "Do NOT bulk-remove pages during Phase 32 experiment",
+    "Remove placeholders from sitemap (Phase 32 sitemap has 654 URLs, no polluted URLs per Phase 31.1)",
+    "Hold thin guide noindexing until Phase 32 Day 7 (Jun 25)"
+  ],
+  "adsense_code_safety": [
+    "No AdSense code currently deployed (only Adsterra)",
+    "When AdSense is added: EXCLUDE from noindex, auth, dashboard, /data (until fixed), /ai-specialist (unless fixed), lab pages"
+  ]
+}

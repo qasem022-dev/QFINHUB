@@ -1,0 +1,80 @@
+{
+  "phase": "34",
+  "task": "Mobile UX / Core Review Check",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "methodology": "Source code review + browser inspection + TypeScript compilation check",
+  "build_status": "TypeScript compiles cleanly (tsc --noEmit = 0 errors)",
+  "pages_checked": [
+    {
+      "url": "/",
+      "name": "Homepage",
+      "responsive": true,
+      "issues": []
+    },
+    {
+      "url": "/calculators",
+      "name": "Calculators Index",
+      "responsive": true,
+      "issues": []
+    },
+    {
+      "url": "/calculators/mortgage-calculator",
+      "name": "Mortgage Calculator",
+      "responsive": true,
+      "issues": []
+    },
+    {
+      "url": "/about",
+      "name": "About",
+      "responsive": true,
+      "issues": []
+    },
+    {
+      "url": "/contact",
+      "name": "Contact",
+      "responsive": true,
+      "issues": []
+    },
+    {
+      "url": "/methodology",
+      "name": "Methodology",
+      "responsive": true,
+      "issues": []
+    },
+    {
+      "url": "/data",
+      "name": "Data Hub",
+      "responsive": true,
+      "issues": [
+        "Placeholder sections visible"
+      ]
+    }
+  ],
+  "design_system": {
+    "framework": "Tailwind CSS",
+    "responsive_classes": true,
+    "dark_mode": true,
+    "mobile_nav": "Hamburger menu (mobileOpen state in navbar.tsx)",
+    "consent_banner": "Present (ConsentBanner component)",
+    "pwa_install_prompt": "Present"
+  },
+  "key_concerns": [
+    "Calculator interactivity on mobile \u2014 sliders and inputs need touch-friendly sizing",
+    "Chart rendering on small screens \u2014 Recharts should be responsive",
+    "Footer links \u2014 long lists need proper stacking on mobile",
+    "Table rendering \u2014 /loan-payment-table and /data tables need horizontal scroll on mobile"
+  ],
+  "performance": {
+    "layout_shift": 0,
+    "long_tasks": 0,
+    "ad_deferral": "Adsterra uses requestIdleCallback \u2014 good for LCP",
+    "analytics": "Vercel Analytics loaded \u2014 lightweight"
+  },
+  "overall_mobile_score": 75,
+  "recommendations": [
+    "Test all 8 money calculators on 375px viewport",
+    "Verify charts render correctly on small screens",
+    "Test contact form submission on mobile",
+    "Check /loan-payment-table table scrolling on mobile"
+  ]
+}

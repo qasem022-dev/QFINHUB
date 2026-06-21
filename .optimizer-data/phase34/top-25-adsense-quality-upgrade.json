@@ -1,0 +1,221 @@
+{
+  "phase": "34",
+  "task": "Top 25 AdSense Quality Upgrade Audit",
+  "generated": "2026-06-21T21:00:00+03:00",
+  "pages": [
+    {
+      "url": "/",
+      "name": "Homepage",
+      "type": "landing",
+      "passes": false,
+      "issues": "4 unprovable trust claims, 'no ads' contradiction, inconsistent calculator count"
+    },
+    {
+      "url": "/calculators",
+      "name": "Calculators Index",
+      "type": "listing",
+      "passes": true,
+      "issues": "Minor: 125+ claim verification needed"
+    },
+    {
+      "url": "/about",
+      "name": "About",
+      "type": "trust",
+      "passes": false,
+      "issues": "'No ads' claim contradiction, no last-reviewed date, credentials not linked"
+    },
+    {
+      "url": "/contact",
+      "name": "Contact",
+      "type": "trust",
+      "passes": true,
+      "issues": "Minor: verify form works"
+    },
+    {
+      "url": "/methodology",
+      "name": "Methodology",
+      "type": "trust",
+      "passes": true,
+      "issues": "Missing from footer navigation"
+    },
+    {
+      "url": "/editorial-policy",
+      "name": "Editorial Policy",
+      "type": "trust",
+      "passes": false,
+      "issues": "No AI disclosure, no corrections policy, no last-reviewed date"
+    },
+    {
+      "url": "/privacy",
+      "name": "Privacy Policy",
+      "type": "trust",
+      "passes": true,
+      "issues": "Needs ad partner disclosure for AdSense"
+    },
+    {
+      "url": "/terms",
+      "name": "Terms of Service",
+      "type": "trust",
+      "passes": true,
+      "issues": "Minor: add effective date"
+    },
+    {
+      "url": "/cookies",
+      "name": "Cookie Policy",
+      "type": "trust",
+      "passes": true,
+      "issues": "None"
+    },
+    {
+      "url": "/disclaimer",
+      "name": "Disclaimer",
+      "type": "trust",
+      "passes": true,
+      "issues": "Minor: more prominent placement"
+    },
+    {
+      "url": "/calculators/mortgage-calculator",
+      "name": "Mortgage Calculator",
+      "type": "money_calc",
+      "passes": true,
+      "issues": "EXCELLENT. Full content, formula, examples, sources, last-updated, author. Template for others."
+    },
+    {
+      "url": "/calculators/mortgage-affordability",
+      "name": "Mortgage Affordability",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/loan-calculator",
+      "name": "Loan Calculator",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/compound-interest",
+      "name": "Compound Interest",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/investment-return",
+      "name": "Investment Return",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/retirement-planning",
+      "name": "Retirement Planning",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/tax-calculator",
+      "name": "Tax Calculator",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/budget-planner",
+      "name": "Budget Planner",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/calculators/debt-payoff",
+      "name": "Debt Payoff",
+      "type": "money_calc",
+      "passes": "needs_audit",
+      "issues": "Not yet audited"
+    },
+    {
+      "url": "/data",
+      "name": "Data Hub",
+      "type": "reference",
+      "passes": false,
+      "issues": "CRITICAL: 'Coming soon' and 'Planned Data Sections' visible"
+    },
+    {
+      "url": "/loan-payment-table",
+      "name": "Loan Payment Table",
+      "type": "reference",
+      "passes": true,
+      "issues": "Good. Expand with more scenarios."
+    },
+    {
+      "url": "/blog",
+      "name": "Blog Index",
+      "type": "content",
+      "passes": "needs_audit",
+      "issues": "125 thin guides per Phase 32 data"
+    },
+    {
+      "url": "/guides/mortgage-monthly-payment",
+      "name": "Mortgage Payment Guide",
+      "type": "content",
+      "passes": "needs_audit",
+      "issues": "Sample blog post listed on mortgage calculator. Quality unknown."
+    },
+    {
+      "url": "/decision/can-i-afford-400k-home",
+      "name": "Decision: $400K Home",
+      "type": "content",
+      "passes": "needs_audit",
+      "issues": "Decision pages not yet audited"
+    },
+    {
+      "url": "/compare/rent-vs-buy",
+      "name": "Compare: Rent vs Buy",
+      "type": "content",
+      "passes": "needs_audit",
+      "issues": "Comparison pages not yet audited"
+    }
+  ],
+  "passing_count": 10,
+  "failing_count": 3,
+  "needs_audit_count": 12,
+  "critical_gaps": [
+    "Homepage claims: 4 unprovable trust signals must be removed",
+    "/data page: placeholder content visible on indexable page",
+    "Editorial Policy: missing AI disclosure and corrections policy",
+    "Remaining 7 money calculators need quality audit",
+    "125 thin blog guides from Phase 32"
+  ],
+  "mortgage_calculator_as_template": {
+    "has": [
+      "Interactive calculator",
+      "What Is This Calculator",
+      "Definition",
+      "Key Takeaways",
+      "The Formula",
+      "Why This Matters",
+      "Practical Example",
+      "Key Factors",
+      "Tips",
+      "Related Calculators",
+      "Related Guides",
+      "Sources & References",
+      "Last updated date",
+      "Author attribution"
+    ],
+    "missing": [
+      "FAQ section",
+      "Worked example with numbers"
+    ]
+  },
+  "action_plan": [
+    "Fix homepage claims (T2)",
+    "Fix /data placeholders (T9)",
+    "Fix Editorial Policy (T4)",
+    "Audit remaining 7 money calculators against mortgage calculator template",
+    "Hold blog cleanup until Phase 32 Day 7"
+  ]
+}
