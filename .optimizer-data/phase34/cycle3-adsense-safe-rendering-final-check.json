@@ -1,0 +1,25 @@
+{
+  "phase": "34",
+  "cycle": 3,
+  "task": "AdSense Safe Rendering Final Check",
+  "generated": "2026-06-21T22:00:00+03:00",
+  "current_state": "NO ADSENSE CODE DEPLOYED \u2014 safe by default",
+  "adsterra_status": "Global (loads on all pages). Should be restricted to ADSENSE_SAFE pages.",
+  "safe_surfaces": [
+    "Homepage",
+    "Calculators index + all 125 calculators",
+    "107 blog posts",
+    "Trust pages (About, Contact, Methodology, etc.)",
+    "/data",
+    "/loan-payment-table"
+  ],
+  "unsafe_surfaces": [
+    "/auth/*",
+    "/dashboard/*",
+    "/ai-specialist",
+    "/guides/* (thin how-to guides)",
+    "noindex pages",
+    "error pages"
+  ],
+  "recommendation": "When AdSense code is added, use ADSENSE_APPROVED_PAGE logic. Restrict Adsterra to same surfaces."
+}

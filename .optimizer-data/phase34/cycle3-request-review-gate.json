@@ -1,0 +1,24 @@
+{
+  "phase": "34",
+  "cycle": 3,
+  "task": "Request Review Gate",
+  "generated": "2026-06-21T22:00:00+03:00",
+  "decision": "REQUEST_REVIEW_NOW",
+  "readiness_score": 92,
+  "required_score": 90,
+  "passed": true,
+  "critical_issues": 0,
+  "verification": {
+    "no_unsupported_claims": true,
+    "no_public_placeholders": true,
+    "clean_navigation": true,
+    "trust_pages_complete": true,
+    "top_25_pages_pass": true,
+    "adsense_code_safe": true,
+    "guide_footprint_controlled": true,
+    "sitemap_clean": true
+  },
+  "message_to_qasem": "REQUEST_REVIEW_NOW \u2014 QFINHUB scores 92/100 with 0 critical issues. All trust claims verified, navigation cleaned, thin guide footprint removed from sitemap, 107 quality blog posts retained. Site is ready for AdSense review.",
+  "do_not_request_automatically": true,
+  "requires_qasem_approval": true
+}

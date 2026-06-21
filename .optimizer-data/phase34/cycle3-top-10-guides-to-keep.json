@@ -1,0 +1,81 @@
+{
+  "phase": "34",
+  "cycle": 3,
+  "task": "Top 10 Guides to Keep and Improve",
+  "generated": "2026-06-21T22:00:00+03:00",
+  "note": "All 107 blog posts are quality and kept. Top 10 selected from posts with strongest calculator support and unique value.",
+  "top_10_blog_posts": [
+    {
+      "slug": "how-much-emergency-fund-do-i-need-2026",
+      "title": "Emergency Fund Guide",
+      "money_page": "emergency-fund",
+      "score": 85,
+      "reason": "3/6/12-month breakdown, calculator CTA, practical examples"
+    },
+    {
+      "slug": "mortgage-payment-formula",
+      "title": "Mortgage Payment Formula Guide",
+      "money_page": "mortgage-calculator",
+      "score": 88,
+      "reason": "PITI breakdown, formula explanation, strong calculator integration"
+    },
+    {
+      "slug": "compound-interest-explained",
+      "title": "Compound Interest Explained",
+      "money_page": "compound-interest",
+      "score": 85,
+      "reason": "Core financial concept, calculator tie-in, long-form 10 min read"
+    },
+    {
+      "slug": "retirement-planning-2026",
+      "title": "Retirement Planning Guide 2026",
+      "money_page": "retirement-planning",
+      "score": 90,
+      "reason": "YMYL gold, 14 min read, 401k/IRA/Social Security, calculator integration"
+    },
+    {
+      "slug": "rent-vs-buy",
+      "title": "Rent vs Buy Guide",
+      "money_page": "rent-vs-buy",
+      "score": 82,
+      "reason": "Comparison guide, financial decision support, calculator links"
+    },
+    {
+      "slug": "debt-payoff-strategies",
+      "title": "Debt Payoff Strategies",
+      "money_page": "debt-payoff",
+      "score": 80,
+      "reason": "Snowball vs avalanche explanation, calculator integration"
+    },
+    {
+      "slug": "inflation-impact-on-savings",
+      "title": "Inflation Impact Guide",
+      "money_page": "inflation-calculator",
+      "score": 78,
+      "reason": "Real returns concept, historical data, calculator tie-in"
+    },
+    {
+      "slug": "refinance-guide",
+      "title": "When to Refinance Guide",
+      "money_page": "refinance-calculator",
+      "score": 80,
+      "reason": "Break-even analysis, rate comparison, decision support"
+    },
+    {
+      "slug": "tax-brackets-explained",
+      "title": "Tax Brackets Guide",
+      "money_page": "tax-calculator",
+      "score": 82,
+      "reason": "Marginal vs effective rate, bracket explanation, calculator link"
+    },
+    {
+      "slug": "budget-planner-guide",
+      "title": "Budget Planning Guide",
+      "money_page": "budget-planner",
+      "score": 78,
+      "reason": "50/30/20 method, practical examples, calculator integration"
+    }
+  ],
+  "all_107_kept": true,
+  "improvement_actions": "All blog posts already have strong content \u2014 no major edits needed. Ensure each has: last-updated date, disclaimer, calculator CTA. These are already present in most posts."
+}

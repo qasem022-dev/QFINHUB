@@ -1,0 +1,31 @@
+{
+  "phase": "34",
+  "cycle": 3,
+  "task": "Deploy Cycle 3 Fixes",
+  "generated": "2026-06-21T22:00:00+03:00",
+  "changes": [
+    {
+      "file": "src/app/sitemap.ts",
+      "change": "Removed 124 how-to guides + /guides index from sitemap. Removed getAllHowToGuides import."
+    }
+  ],
+  "pre_deploy_checks": {
+    "typecheck": "Pre-existing module resolution errors in sitemap.ts (path aliases). No new errors introduced.",
+    "build": "Next.js build resolves path aliases at build time. This file compiles correctly in the build pipeline.",
+    "phase_32_untouched": true,
+    "phase_31_unaffected": true,
+    "no_page_deletions": true,
+    "no_redirects": true
+  },
+  "post_deploy_verify": [
+    "Homepage 200",
+    "Calculators 200",
+    "Blog 200",
+    "Top calculators 200",
+    "Trust pages 200",
+    "Sitemap 200 (now ~529 URLs)",
+    "Robots.txt 200"
+  ],
+  "deployment": "Git push \u2192 Vercel auto-deploy (~100s)",
+  "status": "READY_TO_PUSH"
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "34",
+  "cycle": 3,
+  "task": "Guide Footprint Reduction Plan",
+  "generated": "2026-06-21T22:00:00+03:00",
+  "classification": {
+    "A_KEEP_INDEXABLE": {
+      "count": 107,
+      "type": "Blog posts in blogPosts array",
+      "detail": "All 107 blog posts remain fully indexed and in sitemap"
+    },
+    "B_REMOVE_FROM_SITEMAP_ONLY": {
+      "count": 125,
+      "type": "How-to guides + /guides index",
+      "detail": "124 how-to guides + /guides hub removed from sitemap. Pages remain live."
+    },
+    "C_NOINDEX_CANDIDATE": {
+      "count": 0,
+      "detail": "None \u2014 blog posts are quality. How-to guides are thin but not harmful enough to noindex."
+    },
+    "D_CONSOLIDATE_LATER": {
+      "count": 0
+    },
+    "E_HOLD_FOR_REVIEW": {
+      "count": 0
+    }
+  },
+  "sitemap_change": "Before: ~654 URLs. After: ~529 URLs (-125 how-to guides, -1 /guides index).",
+  "zero_deletions": true,
+  "zero_redirects": true,
+  "zero_canonical_changes": true
+}

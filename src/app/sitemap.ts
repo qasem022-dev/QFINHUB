@@ -3,7 +3,7 @@ import { blogPosts } from "@/lib/blog/posts";
 import { decisionPages } from "@/lib/decision-pages";
 import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
-import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
+// Phase 34 Cycle 3: getAllHowToGuides removed — thin programmatic content excluded from sitemap
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -76,13 +76,18 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    // New hub pages (PHASE 13C.10, Jun 4)
+    // Phase 34 Cycle 3: How-to-use guides removed from sitemap — programmatic thin content
+    // /guides hub removed from sitemap — massive listing of thin guide pages
+    // Guides pages remain accessible but won't be promoted to search engines
+    // Blog posts (107 quality articles) remain in sitemap
+    /* Guides removed — Phase 34 Cycle 3
     {
       url: `${BASE_URL}/guides`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    */
     {
       url: `${BASE_URL}/compare`,
       lastModified: new Date(),
@@ -265,13 +270,12 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // How-to-use guide pages
-  const guidePages: SitemapEntry[] = getAllHowToGuides().map((g) => ({
-    url: `${BASE_URL}/guides/${g.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as ChangeFrequency,
-    priority: 0.6,
-  }));
+  // Phase 34 Cycle 3: How-to-use guide pages REMOVED from sitemap.
+  // These are programmatic thin content (~124 pages, near-zero impressions/0 clicks per Phase 32).
+  // Each guide follows identical template: generic steps for each calculator.
+  // Pages remain live/accessible but won't pollute sitemap or AdSense perception.
+  // Blog posts (107 quality articles in blogPosts) remain in sitemap — these are NOT thin.
+  const guidePages: SitemapEntry[] = [];
 
   // V2: Decision pages (quality-gated financial decision guides)
   const decisionPageEntries: SitemapEntry[] = decisionPages.map((d) => ({

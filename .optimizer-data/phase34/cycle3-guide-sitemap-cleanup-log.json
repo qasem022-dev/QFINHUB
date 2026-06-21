@@ -1,0 +1,27 @@
+{
+  "phase": "34",
+  "cycle": 3,
+  "task": "Guide Sitemap Cleanup Log",
+  "generated": "2026-06-21T22:00:00+03:00",
+  "before": {
+    "guides_in_sitemap": 125,
+    "total_sitemap_urls": "~654"
+  },
+  "after": {
+    "guides_in_sitemap": 0,
+    "total_sitemap_urls": "~529"
+  },
+  "removed": [
+    "/guides (index page)",
+    "124 how-to-use guide pages (/guides/*)"
+  ],
+  "kept": [
+    "107 blog posts (/blog/*)",
+    "/blog (index)",
+    "12 comparison pages",
+    "Decision pages",
+    "All calculators",
+    "All static/trust pages"
+  ],
+  "rollback": "Uncomment the guide pages block in sitemap.ts and restore the /guides hub entry. All pages remain live \u2014 only sitemap changed."
+}
