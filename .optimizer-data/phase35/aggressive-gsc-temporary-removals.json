@@ -1,0 +1,67 @@
+{
+  "phase": 35,
+  "action": "aggressive-gsc-temporary-removals",
+  "execution_time": "2026-06-25T04:26:00+03:00",
+  "status": "PENDING_CLOAKBROWSER",
+  "note": "GSC Temporary Removals require CloakBrowser automation. All 6 variant URLs already have noindex live. /all-pages noindex deployed now. After deploy verified, execute GSC removals.",
+  "rules": [
+    "Use 'Temporarily remove URL' only for exact cannibalizing static tool variant URLs.",
+    "Do NOT use prefix removal.",
+    "Do NOT remove parent calculators, blogs, /data, /loan-payment-table, or any useful indexed page.",
+    "Pair every temporary removal with permanent noindex/follow (DONE).",
+    "If GSC asks for CAPTCHA: pause and ask Qasem. Do NOT bypass CAPTCHA."
+  ],
+  "removal_targets": [
+    {
+      "url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "type": "exact URL",
+      "noindex_status": "LIVE",
+      "reason": "Cannibalizing compound interest calculator — 81 impressions, 0 clicks"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "type": "exact URL",
+      "noindex_status": "LIVE",
+      "reason": "Cannibalizing compound interest calculator — 58 impressions, 0 clicks"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+      "type": "exact URL",
+      "noindex_status": "LIVE",
+      "reason": "Cannibalizing mortgage calculator — 32 impressions, 0 clicks"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+      "type": "exact URL",
+      "noindex_status": "LIVE",
+      "reason": "Cannibalizing compound interest calculator — 29 impressions, 0 clicks"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "type": "exact URL",
+      "noindex_status": "LIVE",
+      "reason": "Cannibalizing mortgage calculator — 25 impressions, 0 clicks"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "type": "exact URL",
+      "noindex_status": "LIVE",
+      "reason": "Cannibalizing mortgage calculator — 21 impressions, 0 clicks"
+    },
+    {
+      "url": "https://www.qfinhub.com/all-pages",
+      "type": "exact URL",
+      "noindex_status": "DEPLOYED (awaiting verification)",
+      "reason": "Admin utility page — 26 impressions, 0 clicks, no search intent"
+    }
+  ],
+  "total_targets": 7,
+  "not_removing": [
+    "Parent calculators (compound-interest, mortgage-calculator, loan-calculator)",
+    "Blog posts (including 20k loan blog)",
+    "/data, /loan-payment-table",
+    "Phase 32 loan scenarios",
+    "Any indexable useful page"
+  ],
+  "cloanbrowser_navigation_target": "https://search.google.com/search-console/removals?resource_id=https%3A%2F%2Fwww.qfinhub.com%2F"
+}

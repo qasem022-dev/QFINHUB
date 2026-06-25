@@ -1,0 +1,67 @@
+{
+  "phase": 35,
+  "action": "aggressive-measurement-dashboard",
+  "executed": "2026-06-25T04:36:00+03:00",
+  "status": "INITIALIZED",
+  "baseline_metrics": {
+    "gsc_data_freshness": "2026-06-25T00:36:08Z",
+    "gsc_date_range": "2026-06-16 to 2026-06-22 (3-day reporting lag)",
+    "sitewide_impressions_7d": 391,
+    "sitewide_clicks_7d": 1,
+    "sitewide_ctr_pct_7d": 0.3,
+    "sitewide_avg_position_7d": 34.8,
+    "pages_with_impressions": 70,
+    "sitewide_impressions_28d": 1705,
+    "sitewide_clicks_28d": 1,
+    "content_clicks_all_time": 1
+  },
+  "baseline_page_metrics": {
+    "parent_compound_interest_impressions_28d": 4,
+    "parent_compound_interest_clicks_28d": 0,
+    "parent_mortgage_calculator_impressions_28d": 5,
+    "parent_mortgage_calculator_clicks_28d": 0,
+    "parent_loan_calculator_impressions_28d": 4,
+    "parent_loan_calculator_clicks_28d": 0,
+    "noindexed_variant_compound_impressions_28d": 168,
+    "noindexed_variant_mortgage_impressions_28d": 78,
+    "all_pages_impressions_28d": 26,
+    "all_pages_clicks_28d": 0,
+    "blog_20k_impressions_28d": 344,
+    "blog_20k_clicks_28d": 0,
+    "blog_20k_ctr_28d": 0
+  },
+  "actions_deployed_today": [
+    "Noindex meta on /all-pages (previously indexed)",
+    "Removed /all-pages from sitemap.xml",
+    "20k loan blog snippet repair — moved answer below calculator CTA, curiosity hook H2",
+    "Parent calculator titles strengthened: compound, mortgage, loan",
+    "Above-fold parent calculator links on formula variant pages",
+    "Phase 31 freeze lifted"
+  ],
+  "daily_tracking_fields": [
+    "sitewide_impressions",
+    "sitewide_clicks", 
+    "content_clicks_only",
+    "parent_calculator_impressions",
+    "parent_calculator_clicks",
+    "noindexed_variant_impressions",
+    "noindexed_variant_index_status",
+    "all_pages_impressions_index_status",
+    "blog_20k_impressions",
+    "blog_20k_clicks",
+    "blog_20k_ctr",
+    "gsc_removal_request_status",
+    "url_inspection_latest_crawl_status",
+    "phase32_url_crawl_index_status",
+    "adsense_status"
+  ],
+  "decision_thresholds": {
+    "day_7": "If no recrawl and no movement, intensify internal links and submit URL Inspection once if not done.",
+    "day_7_variants": "If variants still showing but removal not processed, check GSC removal status.",
+    "day_7_parents": "If parent pages not improving, review title/internal link signals.",
+    "day_14": "If no parent impression lift, start parent calculator content upgrade.",
+    "day_14_content": "If no content clicks, prepare Phase 36 aggressive content/CTR rescue.",
+    "day_30": "If no improvement, declare Phase 35 failed and pivot to a stronger strategy."
+  },
+  "daily_entries": []
+}

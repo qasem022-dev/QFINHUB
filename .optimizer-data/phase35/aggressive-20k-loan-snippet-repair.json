@@ -1,0 +1,46 @@
+{
+  "phase": 35,
+  "action": "aggressive-20k-loan-snippet-repair",
+  "executed": "2026-06-25T04:26:00+03:00",
+  "status": "CODE_DEPLOYED",
+  "blog_url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+  "current_state": {
+    "primary_query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+    "query_impressions_28d": 234,
+    "query_avg_position": 7.2,
+    "total_page_impressions_28d": 344,
+    "total_clicks": 0,
+    "ctr": "0%"
+  },
+  "fix_details": {
+    "old_title": "$20,000 Loan for 5 Years at 8%: Your Monthly Payment Is $405.53",
+    "new_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+    "old_description": "Borrowing $20,000 for 5 years at 8% APR? Your monthly payment is $405.53...",
+    "new_description": "Borrowing $20,000 at 8% for 5 years? See your personalized monthly payment in seconds...",
+    "old_first_h2": "Your Monthly Payment: $405.53",
+    "new_first_h2": "Borrowing $20,000 at 8%? Here's What Your Bank Won't Tell You",
+    "old_first_paragraph": "If you borrow $20,000 for 5 years at an annual interest rate of 8%, your monthly payment is $405.53. Over the 60-month term, you will pay a total of $24,331.80...",
+    "new_first_paragraph": "A $20,000 loan at 8% for 5 years sounds straightforward — but the total interest, hidden fees, and amortization schedule can surprise you. Before you sign, see YOUR exact numbers...",
+    "calculator_cta_added": "👉 Calculate YOUR exact monthly payment now: Free Loan Payment Calculator — pre-loaded with $20,000 at 8% for 5 years. Instant results, no signup.",
+    "answer_new_location": "BELOW calculator CTA — under H2 'The Exact Numbers: Your Monthly Payment Is $405.53' — still on page for relevance but NOT in snippet-scrapable position"
+  },
+  "snippet_strategy": "Curiosity hook H2 + compelling first paragraph + prominent calculator CTA → Google snippet grabs hook, not answer. User must click to see personalized number.",
+  "no_data_nosnippet": "Did NOT use data-nosnippet — would kill snippet entirely for 344-impression page. Better to show a compelling hook snippet that invites click.",
+  "page_status": {
+    "indexable": true,
+    "in_sitemap": true,
+    "lastmod_updated": false,
+    "lastmod_note": "Not updated — content changed but lastmod auto-computes from publishedAt. True last-mod update only if Google shows old snippet after recrawl."
+  },
+  "gsc_clear_snippet": {
+    "status": "HOLDING",
+    "condition": "Use GSC Clear Snippet ONLY if old snippet still shows after Google recrawl. Do NOT temporarily remove the blog URL.",
+    "timing": "Wait 7-14 days after deploy for Google to recrawl page naturally."
+  },
+  "risk_assessment": {
+    "risk_of_losing_impressions": "MODERATE — removing exact answer from above-fold could reduce keyword relevance. Mitigation: query terms remain in title/meta.",
+    "risk_of_snippet_going_blank": "LOW — new first paragraph provides rich, compelling text for Google's snippet.",
+    "monitoring": "Check GSC daily for 7 days. If impressions drop >20%, consider re-adjusting answer position."
+  },
+  "expected_ctr_gain": "Conservative: 2% CTR = 7 clicks/month. Optimistic: 5% = 17 clicks/month."
+}

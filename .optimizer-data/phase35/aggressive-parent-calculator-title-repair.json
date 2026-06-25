@@ -1,0 +1,41 @@
+{
+  "phase": 35,
+  "action": "aggressive-parent-calculator-title-repair",
+  "executed": "2026-06-25T04:26:00+03:00",
+  "status": "CODE_DEPLOYED",
+  "parent_pages_updated": [
+    {
+      "url": "/calculators/compound-interest",
+      "current_title": "See Your Money Grow: Compound Interest Calculator (2026)",
+      "new_title": "Compound Interest Calculator — See How $100K Grows to $265K in 20 Years",
+      "current_impressions_28d": 4,
+      "rationale": "Uses specific example numbers that match common queries. Promise of seeing growth compels a click.",
+      "code_location": "src/app/calculators/[slug]/page.tsx — ctrTitles['compound-interest']"
+    },
+    {
+      "url": "/calculators/mortgage-calculator",
+      "current_title": "Calculate Your Monthly Payment: Free Mortgage Calculator (2026)",
+      "new_title": "Mortgage Calculator — See Your Monthly Payment on Any Home ($200K, $500K, $900K)",
+      "current_impressions_28d": 5,
+      "rationale": "Covers the three most-impressed tool variant price points. Shows calculator can handle any amount.",
+      "code_location": "src/app/calculators/[slug]/page.tsx — ctrTitles['mortgage-calculator']"
+    },
+    {
+      "url": "/calculators/loan-calculator",
+      "current_title": "Plan Any Loan: Free Monthly Payment Calculator (2026)",
+      "new_title": "Loan Calculator — Calculate Any Monthly Payment: Personal, Auto, Student Loans",
+      "current_impressions_28d": 4,
+      "rationale": "Shows breadth of use cases. Differentiates from mortgage-only calculators.",
+      "code_location": "src/app/calculators/[slug]/page.tsx — ctrTitles['loan-calculator']"
+    }
+  ],
+  "note": "Titles strengthened per Qasem's exact specifications from Phase 35 execution instructions. Calculator above fold, no answer-giveaway in title, no fake claims, no keyword stuffing.",
+  "internal_rule": "Parent calculator must become the best page for interactive calculation intent.",
+  "risk": "LOW — these pages currently have almost no impressions. Title changes can only help.",
+  "expected_benefit": "When combined with tool variant noindexing (already live), improved titles should capture recaptured impressions with higher CTR.",
+  "post_deploy_verification_required": [
+    "curl -s https://www.qfinhub.com/calculators/compound-interest | grep '<title>' should show new title",
+    "curl -s https://www.qfinhub.com/calculators/mortgage-calculator | grep '<title>' should show new title",
+    "curl -s https://www.qfinhub.com/calculators/loan-calculator | grep '<title>' should show new title"
+  ]
+}

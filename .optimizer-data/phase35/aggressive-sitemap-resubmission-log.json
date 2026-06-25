@@ -1,0 +1,47 @@
+{
+  "phase": 35,
+  "action": "aggressive-sitemap-resubmission-log",
+  "execution_time": "2026-06-25T04:26:00+03:00",
+  "status": "PENDING_DEPLOY_VERIFICATION",
+  "sitemap_changes": {
+    "removed_urls": ["/all-pages (noindexed, no search intent)"],
+    "added_urls": [],
+    "changed_urls": [],
+    "parent_calculators_included": true,
+    "phase32_urls_included": true,
+    "data_loan_table_included": true,
+    "noindex_urls_included": false,
+    "no_404_urls_included": true,
+    "lastmod_accuracy": "Updated only for actually changed pages (none — only metadata/robots changes)"
+  },
+  "post_verification_steps": [
+    {
+      "step": 1,
+      "action": "Resubmit sitemap in Google Search Console",
+      "method": "GSC UI → Sitemaps → remove old → submit new, OR API resubmit",
+      "status": "PENDING"
+    },
+    {
+      "step": 2,
+      "action": "Submit sitemap in Bing Webmaster Tools",
+      "method": "Bing WMT → Sitemaps → submit https://www.qfinhub.com/sitemap.xml",
+      "status": "PENDING"
+    },
+    {
+      "step": 3,
+      "action": "Use IndexNow for changed URLs",
+      "method": "POST to IndexNow endpoint with updated URLs",
+      "status": "PENDING"
+    }
+  ],
+  "prohibited": [
+    "Google sitemap ping endpoints",
+    "Fake lastmod",
+    "Google Indexing API for normal pages"
+  ],
+  "current_sitemap_quality": {
+    "total_urls_estimate": "~250-300",
+    "indexable_quality_urls": "All — no noindex/404 pages",
+    "validation": "curl -s https://www.qfinhub.com/sitemap.xml | grep -c '<loc>'"
+  }
+}

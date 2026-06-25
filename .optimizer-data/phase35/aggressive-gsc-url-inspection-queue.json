@@ -1,0 +1,87 @@
+{
+  "phase": 35,
+  "action": "aggressive-gsc-url-inspection-queue",
+  "execution_time": "2026-06-25T04:26:00+03:00",
+  "status": "PENDING_CLOAKBROWSER",
+  "priority_urls": [
+    {
+      "url": "https://www.qfinhub.com/calculators/compound-interest",
+      "type": "parent calculator",
+      "reason": "Title strengthened, needs recrawl to capture recaptured impressions from noindexed variants",
+      "current_impressions": 4
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "type": "parent calculator",
+      "reason": "Title strengthened, needs recrawl to capture recaptured impressions",
+      "current_impressions": 5
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/loan-calculator",
+      "type": "parent calculator",
+      "reason": "Title strengthened",
+      "current_impressions": 4
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+      "type": "blog",
+      "reason": "Snippet fix deployed — moved answer below calculator CTA. Needs recrawl for new snippet.",
+      "current_impressions": 344
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-payment-table",
+      "type": "data tool",
+      "reason": "Phase 32 page, quality indexable",
+      "current_impressions": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/data",
+      "type": "data hub",
+      "reason": "Quality indexable page",
+      "current_impressions": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+      "type": "Phase 32",
+      "reason": "Phase 32 URL, quality page",
+      "current_impressions": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "type": "Phase 32",
+      "reason": "Phase 32 URL, quality page",
+      "current_impressions": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "type": "Phase 32",
+      "reason": "Phase 32 URL, quality page",
+      "current_impressions": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "type": "Phase 32",
+      "reason": "Phase 32 URL, quality page",
+      "current_impressions": "unknown"
+    }
+  ],
+  "actions_per_url": [
+    "inspect URL in GSC",
+    "confirm live URL returns HTTP 200",
+    "request indexing/recrawl if option available",
+    "do NOT repeat request for same URL if already requested recently",
+    "obey GSC quotas"
+  ],
+  "excluded_from_inspection": [
+    "Noindexed variant URLs (6 tool variants — already noindexed)",
+    "/all-pages (noindexed)",
+    "Removed URLs"
+  ],
+  "rules": [
+    "Do NOT request indexing for noindexed URLs",
+    "Do NOT request indexing for removed URLs",
+    "Do NOT request indexing repeatedly",
+    "If CAPTCHA appears: pause and ask Qasem"
+  ],
+  "cloakbrowser_base_url": "https://search.google.com/search-console/index?resource_id=https%3A%2F%2Fwww.qfinhub.com%2F"
+}

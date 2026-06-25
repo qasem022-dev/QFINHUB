@@ -1,0 +1,91 @@
+{
+  "phase": 35,
+  "action": "aggressive-noindex-tool-variants",
+  "executed": "2026-06-25T04:26:00+03:00",
+  "status": "NOINDEX_ALREADY_LIVE_VERIFIED",
+  "summary": "All 6 tool variants ALREADY had noindex on production. Verified via curl. Sitemap already excludes them via isFormulaVariant() filter. No code changes needed for these 6 pages — they were correctly noindexed by existing V2 correction logic.",
+  "variants": [
+    {
+      "url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "parent_calculator": "/calculators/compound-interest",
+      "current_impressions_28d": 81,
+      "current_avg_position": 9.3,
+      "in_sitemap_before": false,
+      "in_sitemap_after": false,
+      "live_noindex_detected": true,
+      "gsc_status_before": "Crawled - currently not indexed (NEUTRAL)",
+      "gsc_action_taken": "none — noindex already live",
+      "expected_result": "Google recrawl will de-index. GSC Temporary Removal requested separately to accelerate.",
+      "verification_method": "curl -sI | grep noindex = FOUND"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "parent_calculator": "/calculators/compound-interest",
+      "current_impressions_28d": 58,
+      "current_avg_position": 9.6,
+      "in_sitemap_before": false,
+      "in_sitemap_after": false,
+      "live_noindex_detected": true,
+      "gsc_status_before": "Crawled - currently not indexed (NEUTRAL)",
+      "gsc_action_taken": "none — noindex already live",
+      "expected_result": "Recapture 58 impressions for parent",
+      "verification_method": "curl -sI | grep noindex = FOUND"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+      "parent_calculator": "/calculators/mortgage-calculator",
+      "current_impressions_28d": 32,
+      "current_avg_position": 7.8,
+      "in_sitemap_before": false,
+      "in_sitemap_after": false,
+      "live_noindex_detected": true,
+      "gsc_status_before": "Submitted and indexed (PASS)",
+      "gsc_action_taken": "none — noindex already live. GSC Temporary Removal to accelerate de-indexing.",
+      "expected_result": "Recapture 32 impressions for parent. De-index upon recrawl.",
+      "verification_method": "curl -sI | grep noindex = FOUND"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+      "parent_calculator": "/calculators/compound-interest",
+      "current_impressions_28d": 29,
+      "current_avg_position": 9.0,
+      "in_sitemap_before": false,
+      "in_sitemap_after": false,
+      "live_noindex_detected": true,
+      "gsc_status_before": "Submitted and indexed (PASS)",
+      "gsc_action_taken": "none — noindex already live. GSC Temporary Removal to accelerate de-indexing.",
+      "expected_result": "Recapture 29 impressions",
+      "verification_method": "curl -sI | grep noindex = FOUND"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "parent_calculator": "/calculators/mortgage-calculator",
+      "current_impressions_28d": 25,
+      "current_avg_position": 6.0,
+      "in_sitemap_before": false,
+      "in_sitemap_after": false,
+      "live_noindex_detected": true,
+      "gsc_status_before": "Submitted and indexed (PASS)",
+      "gsc_action_taken": "none — noindex already live. GSC Temporary Removal to accelerate de-indexing.",
+      "expected_result": "Recapture 25 impressions",
+      "verification_method": "curl -sI | grep noindex = FOUND"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "parent_calculator": "/calculators/mortgage-calculator",
+      "current_impressions_28d": 21,
+      "current_avg_position": 8.1,
+      "in_sitemap_before": false,
+      "in_sitemap_after": false,
+      "live_noindex_detected": true,
+      "gsc_status_before": "Crawled - currently not indexed (NEUTRAL)",
+      "gsc_action_taken": "none — noindex already live. GSC Temporary Removal to accelerate de-indexing.",
+      "expected_result": "Recapture 21 impressions",
+      "verification_method": "curl -sI | grep noindex = FOUND"
+    }
+  ],
+  "total_impressions_to_recover": 246,
+  "noindex_mechanism": "Existing isFormulaVariant() detection in src/app/tools/[slug]/page.tsx sets robots: { index: false, follow: true } for formula variants without GSC impressions. These 6 are correctly classified.",
+  "sitemap_exclusion_mechanism": "Existing isFormulaVariant() filter in src/app/sitemap.ts excludes them from sitemap.xml. Verified: 0 matches for these URLs in live sitemap.",
+  "new_code_added": "Added above-fold 'Try the full calculator' link from each formula variant to parent calculator in VariantContentPage component."
+}

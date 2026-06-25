@@ -1,0 +1,30 @@
+{
+  "phase": 35,
+  "updated": "2026-06-25T04:38:00+03:00",
+  "gsc_removals": {
+    "status": "FAILED_7_7 — New Request button found but form submission failed",
+    "root_cause": "After clicking New Request, the modal/form DOM structure differs from expected selectors. GSC UI varies by account state and Angular version.",
+    "mitigation": "All 7 URLs already have noindex live. Google will de-index naturally on recrawl. Temporary removals are an accelerator, not a blocker.",
+    "next_step": "Separate debug session needed — either non-headless CloakBrowser to see the form, or manual submission by Qasem in 30 seconds."
+  },
+  "url_inspection": {
+    "status": "10/10 SUCCESS — ALL priority URLs had Request Indexing clicked",
+    "results": [
+      {"url": "compound-interest", "status": "INDEXING_REQUESTED"},
+      {"url": "mortgage-calculator", "status": "INDEXING_REQUESTED"},
+      {"url": "loan-calculator", "status": "INDEXING_REQUESTED"},
+      {"url": "20k-loan-blog", "status": "INDEXING_REQUESTED"},
+      {"url": "loan-payment-table", "status": "INDEXING_REQUESTED"},
+      {"url": "data", "status": "INDEXING_REQUESTED"},
+      {"url": "good-credit-loan", "status": "INDEXING_REQUESTED"},
+      {"url": "small-emergency-loan", "status": "INDEXING_REQUESTED"},
+      {"url": "debt-consolidation-loan", "status": "INDEXING_REQUESTED"},
+      {"url": "fair-credit-loan", "status": "INDEXING_REQUESTED"}
+    ]
+  },
+  "sitemap": {
+    "status": "SUBMITTED via API — HTTP 204",
+    "method": "GSC Webmasters API PUT request",
+    "url": "https://www.qfinhub.com/sitemap.xml"
+  }
+}
