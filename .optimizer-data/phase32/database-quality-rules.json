@@ -1,0 +1,76 @@
+{
+  "phase": "32-PATCH",
+  "title": "Database Quality Rules V2 \u2014 Tightened 90/100 Gate",
+  "version": "2.0.0",
+  "created": "2026-06-18T02:00:00+03:00",
+  "replaces": "database-quality-rules.json (v1.0.0 \u2014 85/100 threshold)",
+  "change": "Minimum raised from 85 to 90. Draft zone 80-89. Reject below 80.",
+  "minimum_publish_score": 90,
+  "draft_staging_score": "80-89 \u2014 draft or noindex staging only, do NOT publish indexable",
+  "reject_score": "below 80 \u2014 REJECT, do not build",
+  "scoring_rubric": {
+    "verified_search_demand": {
+      "max": 20,
+      "weight": "HIGHEST",
+      "criteria": "Must have documented demand evidence from allowed sources. 20: exact GSC query match. 15: autocomplete trigger. 12: competitor ranking page exists. 10: GSC template pattern. 8: related searches. 5: inferred only. 0: no evidence \u2014 AUTO REJECT."
+    },
+    "unique_calculated_result": {
+      "max": 20,
+      "weight": "HIGHEST",
+      "criteria": "Calculation must produce a result unique to these inputs. Not generic. 20: full unique calc with formula + step-by-step. 15: correct unique calc with formula. 10: correct calc but presentation generic. 5: formula shown but no worked numbers. 0: no real calculation."
+    },
+    "unique_explanation": {
+      "max": 15,
+      "weight": "HIGH",
+      "criteria": "Explanation must reference the specific calculation. Not copy-paste template. 15: explanation ties directly to these numbers with real-world context. 12: good explanation with some specificity. 8: partially templated but has unique elements. 4: mostly generic. 0: pure template."
+    },
+    "non_duplicate_title_meta_body": {
+      "max": 15,
+      "weight": "CRITICAL",
+      "criteria": "Title, meta, and body must be meaningfully different from all other pages. 15: completely unique title + meta + body. 12: unique title and meta, body has some overlap. 8: title unique but meta/body similar to siblings. 4: title and meta are number-swapped variants. 0: near-duplicate \u2014 AUTO REJECT."
+    },
+    "parent_money_page_support": {
+      "max": 10,
+      "weight": "MEDIUM",
+      "criteria": "Links to parent calculator contextually. Supports money page authority. Does not compete. 10: strong contextual parent link that adds value. 7: parent link present and relevant. 4: weak or forced parent link. 0: no parent link or competes with parent."
+    },
+    "user_usefulness_beyond_answer": {
+      "max": 10,
+      "weight": "MEDIUM",
+      "criteria": "Does the page help the user beyond just showing a number? Comparisons, warnings, context, next steps. 10: rich context \u2014 comparisons, warnings, related scenarios, actionable next steps. 7: good context \u2014 some comparisons and warnings. 4: basic context \u2014 minimal beyond the answer. 0: just the answer \u2014 doorway risk."
+    },
+    "trust_disclaimer_methodology": {
+      "max": 5,
+      "weight": "REQUIRED",
+      "criteria": "Has disclaimer, assumptions table, methodology. 5: all three present + clear methodology. 3: disclaimer + assumptions. 1: disclaimer only. 0: none \u2014 AUTO REJECT."
+    },
+    "internal_link_architecture": {
+      "max": 5,
+      "weight": "REQUIRED",
+      "criteria": "Proper internal linking: to parent, to 2-3 sibling scenarios. No orphan pages. 5: parent + 2-3 relevant siblings linked contextually. 3: parent linked. 1: minimal linking. 0: orphan page \u2014 AUTO REJECT."
+    }
+  },
+  "auto_reject_triggers": [
+    "demand_evidence score = 0 (no demand evidence)",
+    "non_duplicate_title_meta_body score = 0 (near-duplicate)",
+    "trust_disclaimer_methodology score = 0 (no disclaimer)",
+    "internal_link_architecture score = 0 (orphan page)",
+    "doorway_risk flag = HIGH (from doorway audit)"
+  ],
+  "scoring_examples": {
+    "perfect_97": "Exact GSC match(20) + full unique calc(20) + specific explanation(15) + completely unique(15) + strong parent link(10) + rich context(10) + full trust(5) + perfect linking(5)",
+    "pass_at_92": "Autocomplete match(15) + correct unique calc(15) + good specific explanation(12) + unique title/meta(12) + parent link(7) + good context(7) + disclaimer+assumptions(3) + parent+siblings linked(3) = 74... FAILS at 74!",
+    "note": "The 90 threshold is HARD to reach. Most pages will need all 20-point categories scoring 15+ to pass. This is intentional \u2014 we'd rather have 50 excellent pages than 500 mediocre ones.",
+    "reality_check": "Many proposed pages will likely score 70-85 and fall into draft/staging. This is CORRECT behavior. Only truly unique, demand-validated, well-explained pages should be indexable."
+  },
+  "quality_gate_process": [
+    "Auto-score all proposed pages against 8-category rubric",
+    "Flag any auto-reject triggers (demand=0, duplicate=0, trust=0, orphan=0, doorway=HIGH)",
+    "Flag any scores below 80 \u2192 REJECT",
+    "Flag scores 80-89 \u2192 DRAFT/STAGING (noindex, do not publish indexable)",
+    "Only scores >= 90 proceed to publish consideration",
+    "Manual Auditor review of 20% sample from passing pages",
+    "Auditor can override: APPROVE, DOWNGRADE, or REJECT any page",
+    "Final publish list = Auditor-approved pages scoring >= 90"
+  ]
+}

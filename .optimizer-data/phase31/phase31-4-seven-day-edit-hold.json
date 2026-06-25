@@ -1,0 +1,20 @@
+{
+  "phase": "31.4",
+  "title": "7-Day Edit Hold \u2014 Fixed Pages",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:48:27.605450",
+  "hold_period": {
+    "start": "2026-06-17",
+    "end": "2026-06-24"
+  },
+  "pages_on_hold": [
+    "/calculators/loan-calculator",
+    "/calculators/budget-planner",
+    "/calculators/retirement-planning",
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "/decision/rent-vs-buy-with-100k-income",
+    "/decision/how-much-house-can-i-afford"
+  ],
+  "reason": "Google needs time to recrawl and process fixed internal links (~90) and recent title/H2 changes (Jun 16). Editing now would reset recrawl clock.",
+  "exception": "Only fix if technical error, broken page, or wrong canonical found"
+}

@@ -128,12 +128,8 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    {
-      url: `${BASE_URL}/all-pages`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
+    // /all-pages REMOVED from sitemap — Phase 35: admin utility page, no search intent value.
+    // Noindexed via page metadata (robots: { index: false }). See phase35/aggressive-all-pages-removal.json
     // Phase 32: Loan scenario pages + hubs
     {
       url: `${BASE_URL}/loan-payment-table`,

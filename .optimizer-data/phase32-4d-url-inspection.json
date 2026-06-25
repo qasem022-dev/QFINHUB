@@ -9,7 +9,13 @@
     "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
   },
   "/loan-scenarios/good-credit-loan-20000-8-percent": {
-    "error": "The read operation timed out"
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
   },
   "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
     "verdict": "NEUTRAL",
@@ -40,11 +46,11 @@
   },
   "/data": {
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
+    "coverageState": "Discovered - currently not indexed",
     "indexingState": "INDEXING_STATE_UNSPECIFIED",
     "lastCrawlTime": "",
     "googleCanonical": "",
-    "crawledAs": "",
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED",
     "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED"
   }
 }

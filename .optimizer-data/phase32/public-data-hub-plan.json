@@ -1,0 +1,60 @@
+{
+  "phase": "32-PATCH",
+  "title": "Public Data Hub Plan V2 \u2014 Required Infrastructure",
+  "version": "2.0.0",
+  "created": "2026-06-18T02:30:00+03:00",
+  "replaces": "public-data-hub-plan.json (v1.0.0)",
+  "status": "REQUIRED \u2014 not optional. Must be built before first batch deploy.",
+  "url": "/data",
+  "purpose": "The no-budget authority asset. Gives journalists, bloggers, and AI systems something to cite. Builds domain authority without backlinks.",
+  "required_first_sections": {
+    "section_1_loan_payment_tables": {
+      "title": "Personal Loan Payment Tables",
+      "subtitle": "Monthly payments for personal loans from $1,000 to $100,000 at rates from 5% to 30%",
+      "must_include": [
+        "HTML data table with loan amounts \u00d7 interest rates = monthly payment",
+        "Methodology: standard amortization formula used",
+        "Assumptions: fixed rate, no fees, standard amortization",
+        "Link to loan calculator: 'Calculate your exact payment'",
+        "CSV download: loan-payment-table.csv",
+        "Cite this data box with preformatted APA/MLA citations",
+        "Related pages: link to top 5 loan scenario pages",
+        "Last updated date",
+        "Financial disclaimer"
+      ]
+    },
+    "section_2_mortgage_affordability_tables": {
+      "title": "Mortgage Affordability Tables",
+      "subtitle": "How much house you can afford at every salary level from $40K to $200K",
+      "must_include": [
+        "HTML data table with salary \u00d7 home price = affordable? (28% DTI rule)",
+        "Methodology: 28% front-end DTI, 6.5% rate, 20% down (or variable assumptions)",
+        "Assumptions: standard DTI ratio, fixed interest rate scenario, property tax estimate",
+        "Link to mortgage affordability calculator",
+        "CSV download: mortgage-affordability-table.csv",
+        "Cite this data box",
+        "Related pages: link to top 5 mortgage scenario pages",
+        "Last updated date",
+        "Financial disclaimer"
+      ]
+    }
+  },
+  "future_sections_add_when_ready": [
+    "Compound Interest Growth Tables (after backup database activates)",
+    "Debt Payoff Strategy Comparison Tables (after held database activates)",
+    "Salary After Tax Tables (after held database activates, requires tax data verification)",
+    "Retirement Savings Reality Tables (after held database activates)"
+  ],
+  "hub_page_structure": {
+    "h1": "Free Financial Data Tables",
+    "subtitle": "Original data and reference tables for journalists, researchers, and personal finance readers. No signup required. All data calculated using standard financial formulas.",
+    "sections": "2 active sections (loan + mortgage). Future sections added as databases activate.",
+    "cite_section": "How to cite QFINHUB data \u2014 preformatted APA, MLA, and Chicago citations for each table",
+    "methodology_page": "Link to /data/methodology explaining all formulas and assumptions used",
+    "csv_downloads": "Each table has a downloadable CSV file",
+    "last_updated": "Auto-updated with each data asset publication"
+  },
+  "build_priority": "BEFORE Batch 1 page deployment. The data hub establishes credibility BEFORE Google crawls database pages.",
+  "do_not_wait_for_backlinks": "The data hub IS the authority signal. Build it now. Citations will come later if the data is useful.",
+  "verification": "After build: verify HTTP 200, verify CSV downloads work, verify citations display correctly, verify mobile responsive."
+}

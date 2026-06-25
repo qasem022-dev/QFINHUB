@@ -1,0 +1,165 @@
+{
+  "phase": 31,
+  "title": "Phase 31 Recovery Status — Jun 19, 2026",
+  "generated": "2026-06-19T12:15:41Z",
+  "expansion_freeze": "ACTIVE — ALL EXPANSION FROZEN (Phase 32.3/.4 activity observed as separate Qasem-approved initiative)",
+  "gsc_data": {
+    "source": "GSC API — FRESH pull Jun 19 12:15 UTC",
+    "date_range": "2026-06-10 to 2026-06-16",
+    "metrics_7d": {
+      "impressions": 564,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "avg_position": 35.5,
+      "pages_with_impressions": 70,
+      "query_count": 81
+    },
+    "metrics_28d": {
+      "impressions": 1722,
+      "clicks": 1,
+      "click_source": "homepage (brand click only)",
+      "content_clicks": 0,
+      "pages_with_impressions": 150,
+      "pages_with_clicks": 1
+    },
+    "week_over_week": {
+      "previous_7d_impressions": 415,
+      "current_7d_impressions": 564,
+      "change": 149,
+      "change_pct": 35.9,
+      "trend": "POSITIVE — strong WoW growth sustained"
+    },
+    "day_over_day_vs_yesterday": {
+      "yesterday_impressions": 569,
+      "today_impressions": 564,
+      "change": -5,
+      "change_pct": -0.9,
+      "note": "Minor dip — normal daily fluctuation, not concerning. WoW trend still +35.9%"
+    },
+    "corrected_estimate_fyi": {
+      "impressions": 809,
+      "avg_position": 31.5,
+      "note": "FYI ONLY — correction factor DISABLED per Phase 19.2"
+    }
+  },
+  "top_query": {
+    "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+    "impressions_7d": 81,
+    "position": 6.7,
+    "clicks": 0,
+    "diagnosis": "Position IMPROVED from 7.6→6.7 (near top of page 1). SNIPPET CANNIBALIZATION — Google likely showing $405.53 directly. Fix deployed Jun 17 changes H2 from answer-giveaway to curiosity question. Google has NOT recrawled (last known crawl Jun 4).",
+    "note": "Variant query 'if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be' at pos 8.0 with 7 imp — same cannibalization pattern"
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions_7d": 125,
+      "clicks": 0,
+      "position": 11.1,
+      "phase31_fix_deployed": true,
+      "fix_verified_live": true,
+      "live_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+      "live_meta": "Borrowing $20,000 at 8% for 5 years? See your personalized monthly payment in seconds...",
+      "google_last_crawl": "UNKNOWN — GSC URL Inspection API returned 403 (unavailable). Last known: Jun 4.",
+      "recrawl_status": "LIKELY NOT RECRAWLED — fix deployed Jun 17, last known crawl Jun 4. GSC Inspection API blocked so cannot confirm.",
+      "impression_change": "-6 from yesterday (131→125), position stable (11.0→11.1)",
+      "trend": "STABLE — holding near page 1 but 0 clicks. Fix invisible until recrawl.",
+      "status": "MONITORING — awaiting Google recrawl. Position 6.7 for top query suggests SERP visibility is good."
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "position": 2.0,
+      "phase31_fix_deployed": true,
+      "trend": "UNCHANGED — ultra-low volume. Position 2.0 is excellent but query volume negligible.",
+      "status": "MONITORING — not a priority (volume too low to produce first click)"
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "impressions_7d": "<4 (not in top 70 pages)",
+      "clicks": 0,
+      "position": "unknown",
+      "phase31_fix_deployed": true,
+      "trend": "IMPRESSIONS DROPPED — was 1 imp at pos 6.0 yesterday, now <4 imp and not in top 70. Query volume appears to have dried up.",
+      "status": "MONITORING — ultra-low volume page. Not a candidate for first click under current conditions."
+    }
+  },
+  "other_notable_pages": {
+    "compound_tool_variants_near_page1": {
+      "note": "Thin tool variants ranking well — Phase 20 freeze applies. OBSERVATION ONLY.",
+      "variants": [
+        { "url": "/tools/compound-100k-20yr-5pct", "impressions": 34, "position": 9.1 },
+        { "url": "/tools/compound-500k-15yr-5pct", "impressions": 20, "position": 9.2 },
+        { "url": "/tools/compound-150k-10yr-5pct", "impressions": 8, "position": 8.5 },
+        { "url": "/tools/compound-1k-30yr-6pct", "impressions": 6, "position": 6.2 }
+      ],
+      "diagnosis": "Compound interest tool variants are the highest-ranking page type after the $20k blog. Position 6-9 with 0 clicks — likely snippet cannibalization (Google showing final amounts). Phase 20 freezes all thin variant optimization. If Phase 31 transitions to recovery mode, these are prime CTR targets."
+    },
+    "tax_calculator": {
+      "url": "/calculators/tax-calculator",
+      "impressions_7d": 97,
+      "position": 85.0,
+      "note": "DEEP ranking — DA bottleneck. Long-term play."
+    },
+    "investment_return": {
+      "url": "/calculators/investment-return",
+      "impressions_7d": 72,
+      "position": 79.3,
+      "note": "DEEP ranking — DA bottleneck. Long-term play."
+    }
+  },
+  "recent_git_activity": {
+    "note": "Phase 32.4 commits observed (Jun 18-19) — sitemap micro-fix, thin asset triage, passive verification. This is Qasem-approved Phase 32 activity separate from Phase 31 safe recovery. No action needed from this cron.",
+    "last_5_commits": [
+      "6c2ae0f Phase 32.4F: Day 3 passive verification (4/6 discovered recovering, 0 crawled)",
+      "d9479ac Phase 32.4E: Quiet monitoring, Day 0 watch",
+      "19847fd Phase 32.4D: Day 3 crawl proof (183 pruning candidates validated)",
+      "88baa3c Phase 32.4C: Sitemap micro-fix (3 URLs removed) + thin asset triage",
+      "b83be64 Phase 32.4C fix: afford-100k/130k blocklist"
+    ]
+  },
+  "duplicate_content_flag": {
+    "issue": "Two blog posts covering identical $20k loan topic — both in sitemap",
+    "post_1_slug": "20000-loan-at-8-percent-for-5-years-monthly-payment (INDEXED, 125 imp)",
+    "post_2_slug": "20000-loan-5-years-8-percent-monthly-payment (Discovered-not-indexed)",
+    "action": "Cleanup PLAN only — remove duplicate from sitemap or redirect. NOT executed under Phase 31 freeze."
+  },
+  "gsc_url_inspection_api": {
+    "status": "UNAVAILABLE — 403 after token refresh. Cannot verify recrawl status for first-click pages.",
+    "impact": "Unable to confirm whether Google has recrawled $20k loan blog since Jun 17 fix.",
+    "workaround": "Monitor position/click changes via Search Analytics API + wait for natural recrawl signal."
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_churn": "0 — only Phase 31 approved pages previously fixed",
+    "deploy_made": false,
+    "cleanup_planning_only": "Duplicate blog post removal plan prepared, not executed",
+    "notes": "Phase 32.4 git activity observed — this is Qasem-approved manual work, not a Phase 31 violation"
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "positive_signs": [
+      "Impressions growing +35.9% WoW (415→564) — strong sustained growth trend",
+      "Top query position IMPROVED from 7.6→6.7 — now near top of page 1",
+      "$20k loan blog fix LIVE and verified (title, meta both updated)",
+      "Compound tool variants ranking at pos 6-9 — SERP visibility exists at page-1 level",
+      "70 pages with impressions (stable, up from ~52 baseline)",
+      "Phase 32.3 hand-crafted pages deployed — quality-over-volume approach"
+    ],
+    "blockers": [
+      "Google has NOT recrawled $20k loan blog since Jun 4 — fix deployed Jun 17 still invisible to SERP",
+      "0 content clicks in 28 days (1 brand click only) — the fundamental problem",
+      "GSC URL Inspection API unavailable — blind to recrawl status",
+      "Low domain authority — calculator pages at pos 70-100",
+      "Duplicate blog post in sitemap leaching crawl budget (cleanup PLAN only)",
+      "Cannot request indexing or do anything to accelerate recrawl under Phase 31 freeze"
+    ],
+    "next_natural_step": "Wait for Google recrawl of $20k loan blog. Position 6.7 for top query + curiosity-driven title should convert to first content click once Google sees the new page. No action possible under Phase 31 rules — monitoring only."
+  }
+}

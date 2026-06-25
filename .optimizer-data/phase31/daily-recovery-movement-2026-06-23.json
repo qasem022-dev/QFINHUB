@@ -1,0 +1,97 @@
+{
+  "phase": "31.4",
+  "date": "2026-06-23",
+  "report_timestamp": "2026-06-23T20:49:00+03:00",
+  "gsc_data_source": "CACHED — GSC API TOKEN DEAD since Jun 23 08:50 UTC. Last pull: Jun 22 14:54 UTC",
+  "gsc_data_freshness_timestamp": "2026-06-22T14:54:52Z",
+  "gsc_7d": {
+    "date_range": "2026-06-13 to 2026-06-19",
+    "clicks": 1,
+    "impressions": 502,
+    "ctr": 0.2,
+    "avg_position": 25.7,
+    "pages_with_impressions": 81,
+    "query_count": 74,
+    "note": "SAME AS JUN 22 — no new data since token expired"
+  },
+  "gsc_28d": {
+    "impressions": 1577,
+    "clicks": 1,
+    "pages_with_impressions": 124,
+    "clicked_page": "https://www.qfinhub.com/tools/investment-25k-10yr"
+  },
+  "token_status": "DEAD — Qasem must re-auth via Desktop OAuth",
+  "site_health": {
+    "homepage": "HTTP 200",
+    "loan_payment_table": "HTTP 200",
+    "data_hub": "HTTP 200",
+    "sitemap": "HTTP 200, 528 URLs",
+    "loan_scenario_pages": {
+      "small-emergency-loan-5000-15-percent": "HTTP 200",
+      "good-credit-loan-20000-8-percent": "HTTP 200",
+      "debt-consolidation-loan-25000-10-percent": "HTTP 200",
+      "fair-credit-loan-20000-20-percent": "HTTP 200"
+    }
+  },
+  "phase32_status": {
+    "pages_live": 4,
+    "publish_timestamp": "2026-06-18T04:27:00+03:00",
+    "true_page_age_hours": 136.4,
+    "true_page_age_days": 5.7,
+    "true_checkpoint_label": "~Day 5 (between Day 3 and Day 7)",
+    "next_checkpoint": "Day 7 — 2026-06-25T04:27:00+03:00 (~31.6h from now)",
+    "gsc_visibility": "UNKNOWN — token dead, cannot verify crawl/index/impression status"
+  },
+  "first_click_breakthrough_pages": {
+    "20k_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "cached_impressions_7d": 59,
+      "cached_position": 10.1,
+      "cached_clicks": 0,
+      "last_recrawl": "2026-06-04 (19 days ago)",
+      "status": "NOT RECRAWLED — fix deployed Jun 17 invisible"
+    },
+    "retirement_decision": {
+      "url": "/decision/how-much-do-i-need-to-retire",
+      "cached_position": 4.8,
+      "cached_impressions": 24,
+      "last_recrawl": "2026-05-28 (26 days ago)",
+      "note": "BEST position on entire site, cannot modify under Phase 31"
+    },
+    "actual_first_click": {
+      "page": "/tools/investment-25k-10yr",
+      "detected": "Jun 22",
+      "note": "First real content click — no new data to confirm more"
+    }
+  },
+  "recrawl_gap": {
+    "worst_offenders": [
+      "26 days: retirement-decision, rent-vs-buy, how-much-house",
+      "19 days: 20k-loan-blog (fix deployed Jun 17 still invisible)"
+    ],
+    "note": "Google natural recrawl crawl budget is slow for small sites. No intervention allowed under Phase 31."
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_churn": 0,
+    "deploys_since_jun_21": 0,
+    "freeze_intact": true
+  },
+  "discovery_fluctuation_check": {
+    "note": "GSC data stale. Cannot check Phase 32 page discovery fluctuation. Last known state: pages ~5.7 days old — fluctuation is NORMAL at this stage (<7 days). Only worry if pages unknown at Day 7 (Jun 25)."
+  },
+  "4_axis_compound_status": {
+    "tech_discovery_infrastructure": "ON_TRACK",
+    "million_visitor_traffic_goal": "OFF_TRACK",
+    "phase32_content_model": "UNPROVEN",
+    "batch_2": "BLOCKED",
+    "note": "Content model UNPROVEN until >=1 Phase 32 page shows impressions. Batch 2 gated on Batch 1 proving discovery."
+  },
+  "scoreboard": "OFF_TRACK",
+  "blocker": "GSC TOKEN DEAD — all monitoring is BLIND. Qasem must re-auth via Desktop OAuth."
+}

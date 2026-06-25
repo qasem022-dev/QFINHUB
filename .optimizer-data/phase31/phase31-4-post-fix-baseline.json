@@ -1,0 +1,74 @@
+{
+  "phase": "31.4",
+  "title": "Post-Fix Baseline Snapshot \u2014 Pre-Measurement",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:48:27.605450",
+  "snapshot": {
+    "date": "2026-06-17",
+    "commit": "2a4b41a",
+    "total_broken_links_fixed": "~96",
+    "gsc_7d": {
+      "clicks": 0,
+      "impressions": 530,
+      "ctr": "0.0%",
+      "avg_position": 34.9,
+      "pages_with_impressions": 69
+    },
+    "gsc_28d": {
+      "clicks": 1,
+      "impressions": 1400,
+      "ctr": "0.1%",
+      "avg_position": 33.4,
+      "source": "Qasem GSC UI Jun 17"
+    },
+    "indexing": {
+      "indexed": 286,
+      "not_indexed": 881,
+      "404s": 125,
+      "discovered_not_indexed": 503,
+      "noindex": 205,
+      "source": "Qasem GSC UI Jun 17"
+    },
+    "first_content_click": "NOT_ACHIEVED"
+  },
+  "affected_pages_baseline": {
+    "loan_calculator": {
+      "links_gained": 64,
+      "impressions": "unknown (aggregate)",
+      "clicks": 0,
+      "position": "unknown"
+    },
+    "budget_planner": {
+      "links_gained": 19,
+      "impressions": "unknown",
+      "clicks": 0,
+      "position": "unknown"
+    },
+    "retirement_planning": {
+      "links_gained": 6,
+      "impressions": 11,
+      "clicks": 0,
+      "position": 81.5
+    },
+    "20000_loan_blog": {
+      "impressions": 124,
+      "clicks": 0,
+      "position": 10.9,
+      "last_edit": "Jun 16"
+    },
+    "rent_vs_buy": {
+      "impressions": 2,
+      "clicks": 0,
+      "position": 4.0,
+      "last_edit": "Jun 16"
+    },
+    "how_much_house": {
+      "impressions": 4,
+      "clicks": 0,
+      "position": 7.5,
+      "last_edit": "Jun 16"
+    }
+  },
+  "measurement_start": "2026-06-17",
+  "measurement_end": "2026-07-15"
+}

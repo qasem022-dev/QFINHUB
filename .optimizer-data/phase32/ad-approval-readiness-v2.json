@@ -1,0 +1,35 @@
+{
+  "phase": 32,
+  "title": "Ad Approval Readiness V2",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:45:00+03:00",
+  "checklist": {
+    "privacy_policy": "CHECK /privacy",
+    "terms": "CHECK /terms",
+    "contact": "CHECK /contact",
+    "about": "CHECK /about",
+    "disclaimers": "CHECK all calculator pages",
+    "broken_links": "PASS (Jun 17)",
+    "mobile_performance": "CHECK - Lighthouse audit needed",
+    "thin_content": "WARNING - 503 discovered-not-indexed may include thin pages",
+    "unique_pages": "WARNING - must avoid near-duplicate content at scale",
+    "no_fake_traffic": "COMPLIANT",
+    "no_ad_click_encouragement": "COMPLIANT"
+  },
+  "adsense_requirements": [
+    "Substantial original content on every page",
+    "Clear navigation, About and Contact pages linked from footer",
+    "Privacy policy linked from every page",
+    "Organic search traffic preferred",
+    "Max 3 ads per page, ads above fold must not dominate content"
+  ],
+  "action_items": [
+    "Verify all footer pages live and linked",
+    "Run Lighthouse on top 5 calculator pages",
+    "Add author/editorial info to data assets",
+    "Audit top 50 indexed pages for thin content",
+    "Apply for AdSense once 100+ organic visits/day",
+    "Set up ad placement zones in template (don't activate until approved)"
+  ],
+  "monetization_target": "At $15-25 RPM (finance niche): 1M visitors \u00d7 2-3 pageviews = 2M-3M pageviews \u00d7 $15-25 = $30K-$75K/month. Target $50K/month achievable."
+}

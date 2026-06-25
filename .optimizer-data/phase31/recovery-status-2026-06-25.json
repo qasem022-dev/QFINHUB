@@ -1,0 +1,152 @@
+{
+  "phase": 31,
+  "title": "Phase 31 Recovery Status — Jun 25, 2026",
+  "generated": "2026-06-25T00:40:00Z",
+  "expansion_freeze": "ACTIVE — ALL EXPANSION FROZEN",
+  "gsc_data": {
+    "source": "FRESH — Service Account auth (permanent)",
+    "status": "LIVE_API_OK",
+    "date_range_7d": "2026-06-18 to 2026-06-24",
+    "metrics_7d": {
+      "impressions": 391,
+      "clicks": 1,
+      "ctr_pct": 0.3,
+      "avg_position": 34.8,
+      "pages_with_impressions": 70,
+      "query_count": 78
+    },
+    "metrics_28d": {
+      "impressions": 1657,
+      "clicks": 1,
+      "pages_with_impressions": 119,
+      "clicked_page": "https://www.qfinhub.com/tools/investment-25k-10yr"
+    },
+    "change_vs_previous_7d": {
+      "impressions": -178,
+      "pct": -31.3,
+      "previous_impressions": 569,
+      "assessment": "SIGNIFICANT DECLINE — 31% drop. Consistent multi-week downward trend."
+    }
+  },
+  "token_status": {
+    "status": "LIVE — Service Account auth (permanent, no expiry)",
+    "auth_method": "service_account"
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "impressions_7d": 27,
+      "clicks": 0,
+      "avg_position": 7.1,
+      "main_query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "main_query_position": 7.0,
+      "main_query_impressions": 20,
+      "action_today": "FIX DEPLOYED — Removed exact answer ($405.53) from FAQ schema. Replaced with CTA-driven responses requiring calculator click. Root cause: FAQ schema showing '$405.53' directly in SERP rich snippet at position 7 — users get answer without clicking.",
+      "expected_effect": "Google rich snippet will now show 'Use Loan Calculator to see YOUR payment' instead of '$405.53'. Should improve CTR from 0% to 3-5% at position 7.",
+      "assessment": "Position IMPROVED (10.1→7.1). Impressions declined (59→27) — likely Google testing. FIX JUST DEPLOYED — needs recrawl to take effect."
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "avg_position": 10.0,
+      "assessment": "Volume collapsed (3→1 imp). Position dropped (5.7→10.0). Ultra-low volume — not actionable under freeze."
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "impressions_7d": "<4 (below detection threshold)",
+      "clicks": 0,
+      "assessment": "Below detection threshold. No change."
+    }
+  },
+  "other_notable_pages": {
+    "retirement_decision": {
+      "url": "/decision/how-much-do-i-need-to-retire",
+      "http_status": 200,
+      "impressions_7d": 1,
+      "avg_position": 9.0,
+      "assessment": "DRAMATIC DROP — Was 24 imp at pos 4.8 (best-positioned page on site). Now 1 imp at pos 9.0. Cause unknown — possibly Google test cycle or query shift."
+    },
+    "compound_tool_variants": {
+      "compound-100k-20yr-5pct": "15 imp, 0 clicks, pos 9.8",
+      "compound-500k-15yr-5pct": "13 imp, 0 clicks, pos 9.9",
+      "assessment": "Tool variants at page 1 position with 0 clicks — likely same snippet cannibalization issue (calculator giving answer in SERP). NOT on approved breakthrough list — cannot fix under freeze."
+    },
+    "the_actual_first_click": {
+      "page": "/tools/investment-25k-10yr",
+      "impressions_7d": 2,
+      "clicks_7d": 1,
+      "avg_position": 14.0,
+      "note": "STILL the only page with a click. Very low volume but consistent — click came from 7d window too."
+    }
+  },
+  "top_pages_by_impression_7d": [
+    {"url": "/calculators/401k-calculator", "imp": 42, "clicks": 0, "pos": 71.3},
+    {"url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment", "imp": 27, "clicks": 0, "pos": 7.1},
+    {"url": "/calculators/investment-return", "imp": 26, "clicks": 0, "pos": 83.2},
+    {"url": "/calculators/tax-calculator", "imp": 16, "clicks": 0, "pos": 77.4},
+    {"url": "/tools/compound-100k-20yr-5pct", "imp": 15, "clicks": 0, "pos": 9.8}
+  ],
+  "top_queries_7d": [
+    {"query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly...", "imp": 20, "pos": 7.0},
+    {"query": "401k calculator", "imp": 12, "pos": 71.8},
+    {"query": "how to use a mortgage calculator", "imp": 7, "pos": 74.4}
+  ],
+  "fix_deployed_today": {
+    "file": "src/lib/blog/posts.ts",
+    "page": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "change": "FAQ schema answers changed from exact-answer ('$405.53') to CTA-driven ('Use Loan Calculator to see YOUR payment')",
+    "commit": "bf65594",
+    "deployed": true,
+    "deploy_method": "git push → Vercel GitHub integration auto-deploy",
+    "rationale": "SERP position 7.0 with 0 clicks = snippet cannibalization. FAQ schema feeding Google the exact answer ($405.53) as rich snippet. Users don't need to click. Fix removes exact answer from schema, forces click for personalized result."
+  },
+  "key_observations": {
+    "positive": [
+      "GSC Service Account auth PERMANENT — no more 7-day token expiry",
+      "$20k loan blog position IMPROVED from 10.1 to 7.1 — now firmly page 1",
+      "FAQ snippet cannibalization ROOT CAUSE IDENTIFIED AND FIXED — deployed today",
+      "Actual first click confirmed (investment-25k-10yr) — still clicking in 7d window",
+      "All monitored pages HTTP 200, index/follow, self-canonical — zero technical issues",
+      "Only 1 approved fix deployed — fully compliant with Phase 31 freeze"
+    ],
+    "negative": [
+      "31.3% impression DECLINE (569→391) — accelerating downward trend",
+      "Retirement decision COLLAPSED from 24 imp/pos 4.8 to 1 imp/pos 9.0 — unexplained",
+      "Tool variants at page 1 (pos 9.2-9.9) with 0 clicks — same snippet cannibalization, cannot fix under freeze",
+      "All calculator money pages at positions 71-89 — domain authority ceiling",
+      "1 click across 1,657 impressions in 28 days — 0.06% CTR"
+    ],
+    "blockers": [
+      "DOMAIN AUTHORITY CEILING — 0 backlinks, 6-month-old domain vs DR 70-100 competitors",
+      "IMPRESSION DECLINE — 31% drop suggests Google reducing visibility",
+      "RECRAWL GAP — fix deployed today, Google won't see it for days/weeks",
+      "NON-BREAKTHROUGH PAGES — tool variants at page 1 with 0 clicks need same FAQ fix but NOT on approved list"
+    ]
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "fixes_deployed": 1,
+    "fix_target": "Approved breakthrough page #1 (20k loan blog FAQ snippet cannibalization)",
+    "deploy_made": true,
+    "notes": "Fully compliant with Phase 31 SAFE RECOVERY MODE. Only 1 approved fix deployed — FAQ schema change on page_1 of the breakthrough list. All other work is read-only monitoring."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "summary": "CRITICAL FIX DEPLOYED. The $20k loan blog sits at position 7.0 for its main query with 20 impressions and 0 clicks — a textbook snippet cannibalization case. Google was showing $405.53 directly in the SERP via FAQ rich snippet. Fixed by replacing FAQ answers with CTA-driven responses. However, impressions continue declining (-31% vs previous period) and the retirement decision page collapsed. The fix needs a Google recrawl to take effect — expect 3-14 day lag before measurable CTR improvement. Until then, the project remains OFF_TRACK with 1 click in 28 days."
+  }
+}

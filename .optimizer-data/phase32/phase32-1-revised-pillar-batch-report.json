@@ -1,0 +1,96 @@
+{
+  "phase": "32.1",
+  "title": "Revised Phase 32.1 \u2014 Hand-Crafted Pillar Scenario Batch: Final Report",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:50:00+03:00",
+  "status": "PHASE_32.1_COMPLETE (PLANNING & AUDIT) \u2014 AWAITING CODE BUILD",
+  "what_was_built_in_planning": {
+    "task_1_page_briefs": {
+      "status": "DONE",
+      "file": "phase32-1-five-page-briefs.json",
+      "detail": "5 pages briefed with target queries, use cases, calculations, comparison angles, and doorway defenses."
+    },
+    "task_2_page_build_log": {
+      "status": "DONE",
+      "file": "phase32-1-five-page-build-log.json",
+      "detail": "Full content for all 5 scenario pages specified \u2014 H1s, above-fold answers, explanations, comparisons, FAQs, and disclaimers."
+    },
+    "task_3_loan_hub": {
+      "status": "DONE",
+      "file": "phase32-1-loan-payment-hub-log.json",
+      "detail": "/loan-payment-table hub page content specified with starter scenarios table, methodology, and FAQ."
+    },
+    "task_4_data_hub": {
+      "status": "DONE",
+      "file": "phase32-1-data-hub-mvp-log.json",
+      "detail": "/data hub MVP content specified. 1 active section (loan payments), mortgage section clearly marked as planned future content."
+    },
+    "task_5_quality_scorecard": {
+      "status": "DONE",
+      "file": "phase32-1-quality-scorecard.json",
+      "detail": "4/5 scenarios pass 90+. 2/2 hubs pass (adjusted scoring). Auto purchase at 87 needs improvement."
+    },
+    "task_6_doorway_audit": {
+      "status": "DONE",
+      "file": "phase32-1-doorway-risk-audit.json",
+      "detail": "6 SAFE. 1 NEEDS_MORE_UNIQUE_VALUE. 0 DOORWAY_RISK. Hand-crafted approach eliminates doorway risk."
+    },
+    "task_7_duplication_audit": {
+      "status": "DONE",
+      "file": "phase32-1-duplication-cannibalization-audit.json",
+      "detail": "NO duplication. NO cannibalization. $20K blog and scenario page have complementary intent."
+    },
+    "task_8_link_plan": {
+      "status": "DONE",
+      "file": "phase32-1-internal-link-plan.json",
+      "detail": "Clean contextual linking. No spam. Parent calculator supported."
+    },
+    "task_9_technical_validation": {
+      "status": "DONE",
+      "file": "phase32-1-technical-validation.json",
+      "detail": "13 validation checks defined. All pending actual build."
+    },
+    "task_10_auditor_verdict": {
+      "status": "DONE",
+      "file": "phase32-1-auditor-verdict.json",
+      "detail": "VERDICT: APPROVE_DEPLOY_PARTIAL. 6 URLs approved. 1 held for fixes (auto purchase at 87)."
+    },
+    "task_12_monitoring_plan": {
+      "status": "DONE",
+      "file": "phase32-1-monitoring-plan.json",
+      "detail": "5 checkpoints (Day 0 to Day 30). Success/failure criteria defined. Decision gates at Day 21 and Day 30."
+    },
+    "task_13_final_report": {
+      "status": "DONE",
+      "file": "THIS FILE"
+    }
+  },
+  "deploy_status": "NOT DEPLOYED \u2014 Auditor approved 6 URLs for deployment. Code generation (Next.js pages) is the next step.",
+  "approved_for_deployment": 6,
+  "held_for_fixes": 1,
+  "rejected": 0,
+  "current_metrics": {
+    "indexed_pages": 286,
+    "not_indexed": 881,
+    "discovered_not_indexed": 503,
+    "impressions_7d": 562,
+    "clicks_7d": 0,
+    "avg_position": 35.4,
+    "phase_31_edit_hold": "Active until Jun 24",
+    "cron": "Phase 31 SAFE_RECOVERY (primary)"
+  },
+  "on_track_off_track": "OFF_TRACK (Phase 31 baseline unchanged). Phase 32.1 planning complete \u2014 metrics will change only after deploy and indexing.",
+  "cost_spent": "USD 0",
+  "manual_work_required": "0 (all planning, auditing, and content creation done by Hermes)",
+  "next_action": "Build the Next.js pages for the 6 approved URLs. Do NOT deploy the auto purchase page. Fix auto purchase to 90+. Run all 13 technical validation checks before deploy.",
+  "risks_blocked": [
+    "Mass thin page deployment \u2014 BLOCKED (only 5 hand-crafted pages, not 100)",
+    "Number-swap doorway pages \u2014 BLOCKED (each page has unique use case)",
+    "Cannibalization of Loan Calculator \u2014 BLOCKED (scenarios target long-tail, complement parent)",
+    "Cannibalization of $20K blog \u2014 BLOCKED (different intent, cross-linked)",
+    "Thin placeholder content on /data \u2014 BLOCKED (mortgage section clearly marked as planned)",
+    "Deployment without approval \u2014 BLOCKED (Auditor verdict required before deploy)",
+    "Phase 31 cron replacement \u2014 BLOCKED (Phase 31 remains primary)"
+  ],
+  "success_condition_met": "YES \u2014 Phase 32.1 succeeded in planning and auditing 5 high-quality, non-doorway, non-duplicative scenario pages + 2 hub pages. 6 of 7 approved for deployment."
+}

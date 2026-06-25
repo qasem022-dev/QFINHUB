@@ -1,0 +1,46 @@
+{
+  "phase": "32.2",
+  "title": "Pre-Build Backup \u2014 Before Code Generation",
+  "version": "1.0.0",
+  "created": "2026-06-18T04:00:00+03:00",
+  "commit": "2a4b41ad11d47c886db5d07ff580ce6d19c84878",
+  "branch": "main",
+  "build_id": "kMgpUHD5F9Ft6Md_wSMnZ",
+  "sitemap_body_size_bytes": 121442,
+  "sitemap_url_count_approx": "~649 (from Phase 13C.10 docs)",
+  "phase_31_held_pages": [
+    "/calculators/loan-calculator",
+    "/calculators/budget-planner",
+    "/calculators/retirement-planning",
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "/decision/rent-vs-buy",
+    "/decision/how-much-house"
+  ],
+  "existing_routes_checked": {
+    "/loan-scenarios": "DOES NOT EXIST \u2014 safe to create",
+    "/loan-payment-table": "DOES NOT EXIST \u2014 safe to create",
+    "/data": "DOES NOT EXIST \u2014 safe to create"
+  },
+  "files_to_create": [
+    "src/data/loan-scenarios.ts",
+    "src/app/loan-scenarios/[slug]/page.tsx",
+    "src/app/loan-payment-table/page.tsx",
+    "src/app/data/page.tsx"
+  ],
+  "files_modified": [
+    "sitemap.ts (add 6 new URLs)",
+    "possibly verify-internal-links.js (update URL list if needed)"
+  ],
+  "rollback_instructions": [
+    "git checkout 2a4b41a -- src/app/loan-scenarios/ src/app/loan-payment-table/ src/app/data/ src/data/loan-scenarios.ts",
+    "If sitemap modified: git checkout 2a4b41a -- src/app/sitemap.ts",
+    "git checkout 2a4b41a -- src/data/loan-scenarios.ts",
+    "npm run build to verify rollback"
+  ],
+  "warnings": [
+    "DO NOT edit any Phase 31 held pages",
+    "DO NOT touch the blog post",
+    "DO NOT touch calculator pages",
+    "New pages only \u2014 no modifications to existing"
+  ]
+}

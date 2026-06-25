@@ -1,0 +1,87 @@
+{
+  "phase": "32-PATCH",
+  "title": "Database Priority Refinement \u2014 2 Primary, 1 Backup, 3 Held",
+  "version": "2.0.0",
+  "created": "2026-06-18T02:05:00+03:00",
+  "replaces": "Phase 32 v1 plan to run all 6 databases",
+  "change": "Only 2 databases active initially. Reason: QFINHUB has 0 clicks, 503 discovered-not-indexed. Must prove quality indexing before expanding.",
+  "databases": {
+    "PRIMARY_1": {
+      "name": "Loan Payment Database (DB3)",
+      "status": "ACTIVE \u2014 first to build",
+      "parent_calculator": "/calculators/loan-calculator",
+      "reason_selected": [
+        "Clearest query templates \u2014 '$X loan at Y% for Z years'",
+        "Already has GSC impression signal for '$20 000 loan monthly payment'",
+        "Lowest tax/legal complexity \u2014 just payment math",
+        "No state-specific tax rules needed",
+        "Parent calculator is one of few pages with impressions (4 imp, pos 7.0)"
+      ],
+      "page_count_target": "60 pages in first 100 batch",
+      "variables": "loan amount \u00d7 rate \u00d7 term",
+      "risk_level": "LOW"
+    },
+    "PRIMARY_2": {
+      "name": "Mortgage Affordability Database (DB2)",
+      "status": "ACTIVE \u2014 second to build",
+      "parent_calculator": "/calculators/mortgage-affordability",
+      "reason_selected": [
+        "Strong query template \u2014 'can I afford $X house on $Y salary'",
+        "High user intent \u2014 people actively researching affordability",
+        "Parent calculator has impressions (3 imp, pos 4.3)",
+        "Clear formula: 28% DTI rule is standard",
+        "Natural link to mortgage calculator for deeper exploration"
+      ],
+      "page_count_target": "40 pages in first 100 batch",
+      "variables": "home price \u00d7 salary \u00d7 down payment \u00d7 rate",
+      "risk_level": "LOW-MEDIUM"
+    },
+    "BACKUP": {
+      "name": "Compound Interest Scenario Database (DB5)",
+      "status": "HOLD \u2014 activate only if PRIMARY databases prove indexing works",
+      "parent_calculator": "/calculators/compound-interest",
+      "activation_criteria": "PRIMARY databases show >= 40% indexing rate AND >= 1 content click within 30 days",
+      "reason_held": [
+        "Competes with government sites (Investor.gov) and authority calculators",
+        "Parent calculator ranks pos 6.7 but 0 clicks \u2014 needs CTR fix first",
+        "Many existing compound interest calculators on the web"
+      ]
+    },
+    "HELD_1": {
+      "name": "Salary Reality Database (DB1)",
+      "status": "HELD \u2014 requires tax data infrastructure",
+      "reason_held": [
+        "Requires state-specific tax brackets for all 50 states",
+        "High tax/legal complexity \u2014 wrong numbers have real consequences",
+        "Must verify tax data accuracy before publishing",
+        "Build after PRIMARY databases prove the model works"
+      ]
+    },
+    "HELD_2": {
+      "name": "FIRE / Retirement Reality Database (DB4)",
+      "status": "HELD \u2014 requires retirement-specific infrastructure",
+      "reason_held": [
+        "Complex multi-variable calculations (savings + contributions + withdrawal rate + lifespan)",
+        "High YMYL sensitivity \u2014 retirement advice is heavily scrutinized",
+        "Parent calculator has improving impressions (14 imp) but pos 77.8 still deep",
+        "Build after domain authority improves"
+      ]
+    },
+    "HELD_3": {
+      "name": "Debt Payoff Database (DB6)",
+      "status": "HELD \u2014 lower priority than loan/mortgage",
+      "reason_held": [
+        "Query volume likely lower than loan/mortgage",
+        "Strategy comparison (snowball vs avalanche) adds complexity",
+        "Can be built after loan database validates the template approach",
+        "Good candidate for Month 2 if gates pass"
+      ]
+    }
+  },
+  "activation_rules": {
+    "PRIMARY_only_now": "Only Loan Payment and Mortgage Affordability databases are active",
+    "BACKUP_activation": "Compound Interest activates only after: PRIMARY shows 40%+ indexing + 1+ content click",
+    "HELD_activation": "Salary, FIRE, Debt Payoff activate only after: PRIMARY databases prove 40%+ indexing + 5+ content clicks + Auditor approval",
+    "never_activate_all_at_once": "At most 3 databases active simultaneously. Must kill underperformers before adding new ones."
+  }
+}

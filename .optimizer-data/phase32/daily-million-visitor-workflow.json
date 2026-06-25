@@ -1,0 +1,40 @@
+{
+  "phase": 32,
+  "title": "Daily Million-Visitor Autonomous Workflow",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:45:00+03:00",
+  "schedule": "Daily cron replacing Phase 31 SAFE_RECOVERY",
+  "daily_steps": [
+    "1. Pull fresh GSC data (token + pipeline)",
+    "2. Check link regression (0 broken)",
+    "3. Check indexing status and discovered-not-indexed trend",
+    "4. Identify CTR candidates (pos 5-20, 0 clicks, max 3/day)",
+    "5. Check production queue (how many pages allowed today?)",
+    "6. Build database pages (quality >= 85, demand validated)",
+    "7. Improve existing pages (max 3/day, skip Phase 31 hold pages until Jun 24)",
+    "8. Add internal links (new pages \u2192 parent, parent \u2192 top children)",
+    "9. Update data hub (if new data asset this week)",
+    "10. Update sitemap and RSS",
+    "11. Deploy safely (git push, verify Vercel)",
+    "12. Monitor ad readiness (monthly audit)",
+    "13. Report measurable movement (actual numbers, not activity)"
+  ],
+  "daily_report_file": ".optimizer-data/phase32/daily-million-visitor-report-YYYY-MM-DD.json",
+  "report_fields": [
+    "pages_created",
+    "pages_updated",
+    "quality_scores",
+    "indexed_count",
+    "impressions_7d",
+    "clicks_7d",
+    "position",
+    "top_queries",
+    "database_performance",
+    "ctr_tests",
+    "errors",
+    "cost_spent",
+    "manual_work",
+    "on_track_off_track"
+  ],
+  "cost": "USD 0 \u2014 all tools free and open-source"
+}

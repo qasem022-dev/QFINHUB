@@ -1,0 +1,92 @@
+{
+  "phase": 32,
+  "title": "Search Template Page System \u2014 Answer Pages, Not Blogs",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:40:00+03:00",
+  "page_type": "search_answer_page",
+  "not_a_blog_post": true,
+  "structure": {
+    "h1": "Exact query-style title matching search intent (e.g., '$20,000 Loan at 8% for 5 Years: Monthly Payment Breakdown')",
+    "above_fold": [
+      "Direct answer (the number the user searched for)",
+      "Calculator result displayed prominently",
+      "Input assumptions summary (loan amount, rate, term used)",
+      "CTA button: 'Adjust Numbers' linking to parent calculator"
+    ],
+    "body_sections": {
+      "how_we_calculated_this": "Formula explained in plain language. Show the actual math with the user's numbers plugged in.",
+      "monthly_payment_table": "Amortization or payment schedule table with key numbers",
+      "comparison_context": "How this compares to common scenarios (if relevant)",
+      "common_mistakes": "Warnings about misunderstanding the calculation (e.g., 'This doesn't include taxes and insurance')",
+      "faq": "3-5 questions based on query type, with concise answers",
+      "related_calculations": "Links to 2-3 similar scenarios (different amounts/rates)",
+      "try_it_yourself": "Embed or link to parent calculator with instructions"
+    },
+    "schema": {
+      "required": [
+        "BreadcrumbList",
+        "SoftwareApplication or WebApplication"
+      ],
+      "optional": [
+        "FAQ (only if unique and useful)",
+        "Article (only if editorial page)"
+      ],
+      "not_required": "Product, Review, Recipe \u2014 not applicable"
+    },
+    "internal_linking": {
+      "page_to_parent": "Strong contextual link to parent money page calculator",
+      "page_to_siblings": "2 related scenario pages (different amounts/rates)",
+      "parent_to_children": "Parent money page links to selected high-value scenarios only",
+      "rule": "Scenarios should not become stronger than parent money page"
+    }
+  },
+  "example_page_loan_20000_8pct_5yr": {
+    "url": "/calculators/loan-payment/20000-8-percent-5-years",
+    "h1": "$20,000 Loan at 8% for 5 Years: Monthly Payment Breakdown",
+    "above_fold_answer": "Your monthly payment: $405.53",
+    "assumptions_table": {
+      "Loan Amount": "$20,000",
+      "Annual Interest Rate": "8%",
+      "Loan Term": "5 years (60 months)",
+      "Total Interest Paid": "$4,331.80",
+      "Total Repayment": "$24,331.80"
+    },
+    "formula": "Monthly Payment = P \u00d7 [r(1+r)^n] / [(1+r)^n - 1] where P=$20,000, r=0.08/12=0.00667, n=60",
+    "worked_example": "Step 1: Convert 8% to monthly rate \u2192 0.00667. Step 2: Calculate (1+r)^60 = 1.4898. Step 3: Numerator = 20000 \u00d7 0.00667 \u00d7 1.4898 = 198.77. Step 4: Denominator = 1.4898 - 1 = 0.4898. Step 5: Payment = 198.77 / 0.4898 = $405.53.",
+    "what_this_means": "If you borrow $20,000 at 8% APR for 5 years, you'll pay $405.53 each month. Over the life of the loan, you'll pay $4,331.80 in interest \u2014 about 22% of the original loan amount.",
+    "comparison": {
+      "10k_loan": "$202.76/mo",
+      "30k_loan": "$608.29/mo",
+      "3yr_term": "$626.73/mo (higher payment, less interest)",
+      "7yr_term": "$311.76/mo (lower payment, more interest)"
+    },
+    "common_mistakes": "This assumes a fixed rate for the entire term. Variable-rate loans will change. This also doesn't include origination fees, prepayment penalties, or late fees.",
+    "faq": [
+      {
+        "q": "Is 8% a good rate for a $20,000 personal loan?",
+        "a": "As of 2026, personal loan rates range from 6% to 36%. 8% is excellent for borrowers with good to excellent credit (670+). The average rate is around 12%."
+      },
+      {
+        "q": "Can I pay off a $20,000 loan early?",
+        "a": "Most personal loans allow early repayment without penalty, but check your loan agreement. Paying extra each month can save hundreds in interest."
+      },
+      {
+        "q": "What credit score do I need for an 8% loan?",
+        "a": "Generally 670-720+ for rates around 8%. Below 670, expect rates of 12-20% or higher."
+      }
+    ],
+    "parent_link": "Use our [Loan Calculator](/calculators/loan-calculator) to try different amounts, rates, and terms.",
+    "related_scenarios": [
+      "/calculators/loan-payment/20000-12-percent-5-years",
+      "/calculators/loan-payment/30000-8-percent-5-years"
+    ]
+  },
+  "anti_patterns": [
+    "DO NOT make these blog posts \u2014 they are calculator answer pages",
+    "DO NOT stuff keywords \u2014 the number IS the keyword",
+    "DO NOT add fluff paragraphs before the answer \u2014 give the number first",
+    "DO NOT make the calculator hard to find \u2014 embed or prominently link it",
+    "DO NOT use generic titles like 'Loan Payment Guide' \u2014 use the exact query",
+    "DO NOT copy-paste explanations \u2014 each page has unique numbers so explanations should reference them"
+  ]
+}

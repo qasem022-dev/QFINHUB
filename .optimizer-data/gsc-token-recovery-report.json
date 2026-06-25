@@ -1,41 +1,29 @@
 {
-  "incident": "GSC_TOKEN_DEATH",
-  "detected": "2026-06-15T12:20:00Z",
-  "last_successful_pull": "2026-06-13T17:45:01Z",
-  "error": {
-    "endpoint": "https://oauth2.googleapis.com/token",
-    "http_code": 400,
-    "error_type": "invalid_grant",
-    "error_description": "Token has been expired or revoked.",
-    "cause": "Likely: GCP project is in 'testing' publishing status (refresh tokens expire every 7 days). OR: token was manually revoked. Last re-auth was ~Jun 7 (8 days ago)."
-  },
-  "impact": {
-    "gsc_data_freshness": "STALE — cannot pull fresh Search Analytics, URL Inspection, or sitemap data",
-    "first_click_detection": "BLIND — no way to detect first clicks without manual GSC UI check",
-    "ranking_monitoring": "BLIND — last data from Jun 4-10 window",
-    "pipeline_scripts_affected": [
-      "scripts/gsc-daily-pipeline.py",
-      "scripts/gsc-search-analytics-pull.py",
-      "scripts/gsc-inspect-batches.py",
-      "scripts/refresh-gsc-token.py"
-    ]
-  },
-  "recovery_steps_for_qasem": [
-    "1. python3 scripts/desktop-oauth-refresh.py  (prints auth URL)",
-    "2. Open the URL in Windows browser (Chrome with QFINHUB Google account logged in)",
-    "3. Google shows an authorization code — copy it",
-    "4. python3 scripts/desktop-oauth-refresh.py '<PASTE_CODE_HERE>'",
-    "5. Script exchanges code for tokens, saves to ~/.hermes/google-indexing-token.json",
-    "6. Verify: python3 scripts/refresh-gsc-token.py",
-    "7. If GCP project is in testing mode → go to GCP Console → OAuth consent screen → Publish App",
-    "8. After publishing, re-auth one more time for indefinite-lifetime refresh token"
+  "status": "TOKEN_DEAD",
+  "detected_at": "2026-06-23T08:50:00Z",
+  "rechecked_at": "2026-06-23T17:55:00Z",
+  "still_dead": true,
+  "error": "invalid_grant — Token has been expired or revoked.",
+  "recovery_required": "MANUAL — Qasem must re-authorize via Desktop OAuth.",
+  "recovery_steps": [
+    "1. Open this link in YOUR Windows browser: https://accounts.google.com/o/oauth2/v2/auth?client_id=1000146166272-4810vk7h7rii9vkukn6a49pb03nnqqgd.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fwebmasters+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Findexing+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly&access_type=offline&prompt=consent",
+    "2. Sign in with q.finhub@gmail.com",
+    "3. Google will show an authorization CODE — copy it",
+    "4. Run: cd /home/admin1/qfinhub && python3 scripts/desktop-oauth-refresh.py '<PASTE_THE_CODE_HERE>'",
+    "5. Verify with: python3 scripts/refresh-gsc-token.py",
+    "6. If GCP project is in testing mode, publish it: GCP → OAuth consent screen → Publish App"
   ],
-  "docs": "references/gsc-token-death-recovery.md",
-  "cached_baseline_available": true,
+  "current_data_status": "STALE_OR_AUTH_BLOCKED",
+  "last_successful_pull": "2026-06-22T14:54:52Z",
   "cached_baseline": {
-    "impressions": 411,
-    "clicks": 0,
-    "pages_with_impressions": 46,
-    "avg_position": 37.3
-  }
+    "file": ".optimizer-data/gsc-live-data-corrected.json",
+    "impressions_7d": 502,
+    "clicks_7d": 1,
+    "pages_with_impressions": 81,
+    "avg_position": 25.7,
+    "date_range": "2026-06-13 to 2026-06-19"
+  },
+  "impact": "GSC daily pipeline BLOCKED. All first-click detection is BLIND. Rely on Qasem's manual GSC UI checks until token recovered.",
+  "full_recovery_guide": "references/gsc-token-death-recovery.md",
+  "desktop_oauth_url": "https://accounts.google.com/o/oauth2/v2/auth?client_id=1000146166272-4810vk7h7rii9vkukn6a49pb03nnqqgd.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fwebmasters+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Findexing+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly&access_type=offline&prompt=consent"
 }

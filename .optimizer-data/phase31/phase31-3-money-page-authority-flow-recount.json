@@ -1,0 +1,51 @@
+{
+  "phase": "31.3",
+  "title": "Money Page Authority Flow Recount",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:42:38.422815",
+  "pages": {
+    "loan_calculator": {
+      "links_before_fix": "7 (calculator-blog-links) + 64 broken blog links",
+      "links_after_fix": "7 (calculator-blog-links) + 64 valid blog links (loan\u2192loan-calculator)",
+      "gained": 64,
+      "status": "MASSIVE IMPROVEMENT"
+    },
+    "retirement_planning": {
+      "links_before_fix": "7 + 6 broken blog links",
+      "links_after_fix": "7 + 6 valid blog links",
+      "gained": 6,
+      "status": "IMPROVED"
+    },
+    "budget_planner": {
+      "links_before_fix": "7 + 19 broken blog links",
+      "links_after_fix": "7 + 19 valid blog links",
+      "gained": 19,
+      "status": "IMPROVED"
+    },
+    "mortgage_calculator": {
+      "links": 11,
+      "status": "unchanged (already correct)"
+    },
+    "mortgage_affordability": {
+      "links": 8,
+      "status": "unchanged (already correct)"
+    },
+    "compound_interest": {
+      "links": 8,
+      "status": "unchanged (already correct)"
+    },
+    "investment_return": {
+      "links": 9,
+      "status": "unchanged (already correct)"
+    },
+    "pay_off_debt_or_invest": {
+      "links": "via decision page",
+      "status": "needs improvement"
+    },
+    "rent_vs_buy": {
+      "links": "has blog link",
+      "status": "monitoring title change"
+    }
+  },
+  "total_valid_links_restored": "~96 (90 in Phase 31.2 + 6 in Phase 31.3)"
+}

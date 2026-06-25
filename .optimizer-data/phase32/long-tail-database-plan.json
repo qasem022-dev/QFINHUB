@@ -1,0 +1,386 @@
+{
+  "phase": "32-PATCH",
+  "title": "6 High-Scale Long-Tail Calculator Databases",
+  "version": "2.0.0",
+  "created": "2026-06-17T18:35:00+03:00",
+  "databases": {
+    "DB1_salary_reality": {
+      "name": "Salary Reality Database",
+      "parent_calculator": "/calculators/salary-calculator or tax-calculator",
+      "query_patterns": [
+        "{amount} salary after tax {state}",
+        "{amount} salary take home pay {state}",
+        "how much house can I afford on {amount} salary",
+        "{amount} salary after tax {state} monthly budget"
+      ],
+      "page_template": "salary-{amount}-after-tax-{state}",
+      "variables": {
+        "salary_amounts": [
+          30000,
+          40000,
+          50000,
+          60000,
+          70000,
+          80000,
+          90000,
+          100000,
+          120000,
+          150000,
+          200000,
+          250000,
+          300000
+        ],
+        "states": [
+          "alabama",
+          "alaska",
+          "arizona",
+          "arkansas",
+          "california",
+          "colorado",
+          "connecticut",
+          "delaware",
+          "florida",
+          "georgia",
+          "hawaii",
+          "idaho",
+          "illinois",
+          "indiana",
+          "iowa",
+          "kansas",
+          "kentucky",
+          "louisiana",
+          "maine",
+          "maryland",
+          "massachusetts",
+          "michigan",
+          "minnesota",
+          "mississippi",
+          "missouri",
+          "montana",
+          "nebraska",
+          "nevada",
+          "new-hampshire",
+          "new-jersey",
+          "new-mexico",
+          "new-york",
+          "north-carolina",
+          "north-dakota",
+          "ohio",
+          "oklahoma",
+          "oregon",
+          "pennsylvania",
+          "rhode-island",
+          "south-carolina",
+          "south-dakota",
+          "tennessee",
+          "texas",
+          "utah",
+          "vermont",
+          "virginia",
+          "washington",
+          "west-virginia",
+          "wisconsin",
+          "wyoming"
+        ]
+      },
+      "total_combinations": "13 salaries \u00d7 50 states = 650 core",
+      "priority_combinations": "Top 5 states (CA, TX, FL, NY, IL) \u00d7 top 10 salaries = 50 pages first",
+      "demand_evidence": "Autocomplete: '100k salary after tax [state]' triggers for every state.",
+      "estimated_search_volume_per_page": "50-500/mo",
+      "total_estimated_traffic_potential": "100K-500K impressions/mo at scale"
+    },
+    "DB2_mortgage_affordability": {
+      "name": "Mortgage Affordability Database",
+      "parent_calculator": "/calculators/mortgage-affordability",
+      "query_patterns": [
+        "can I afford a {price} house on {salary} salary",
+        "how much house can I afford with {salary} income",
+        "{price} house with {salary} income {rate} interest"
+      ],
+      "page_template": "afford-{price}-house-on-{salary}-salary",
+      "variables": {
+        "home_prices": [
+          150000,
+          200000,
+          250000,
+          300000,
+          350000,
+          400000,
+          450000,
+          500000,
+          600000,
+          750000,
+          1000000
+        ],
+        "salaries": [
+          40000,
+          50000,
+          60000,
+          70000,
+          80000,
+          90000,
+          100000,
+          120000,
+          150000,
+          200000
+        ],
+        "down_payment_pct": [
+          3.5,
+          5,
+          10,
+          15,
+          20
+        ],
+        "interest_rates": [
+          5.5,
+          6.0,
+          6.5,
+          7.0,
+          7.5,
+          8.0
+        ]
+      },
+      "total_combinations": "11 prices \u00d7 10 salaries = 110 core. + variations = 3,300",
+      "priority_combinations": "50 most common salary+price combinations",
+      "demand_evidence": "Autocomplete: 'can I afford a [price] house on [salary]' triggers.",
+      "estimated_search_volume_per_page": "100-500/mo",
+      "total_estimated_traffic_potential": "200K-1M impressions/mo at scale"
+    },
+    "DB3_loan_payment": {
+      "name": "Loan Payment Database",
+      "parent_calculator": "/calculators/loan-calculator",
+      "query_patterns": [
+        "{amount} loan at {rate} percent",
+        "{amount} loan monthly payment {years} years",
+        "monthly payment on {amount} loan {rate} interest"
+      ],
+      "page_template": "loan-{amount}-at-{rate}-percent-{years}-years",
+      "variables": {
+        "loan_amounts": [
+          1000,
+          2000,
+          3000,
+          5000,
+          7500,
+          10000,
+          15000,
+          20000,
+          25000,
+          30000,
+          35000,
+          40000,
+          50000,
+          75000,
+          100000
+        ],
+        "apr_rates": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          15,
+          18,
+          20,
+          25,
+          30
+        ],
+        "terms_years": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          15,
+          20
+        ]
+      },
+      "total_combinations": "15 amounts \u00d7 12 rates \u00d7 9 terms = 1,620",
+      "priority_combinations": "100 most common (5K-50K \u00d7 6-15% \u00d7 3-7yr)",
+      "demand_evidence": "GSC: already getting impressions for '$20 000 loan monthly payment'",
+      "estimated_search_volume_per_page": "30-200/mo",
+      "total_estimated_traffic_potential": "300K-1.5M impressions/mo at scale"
+    },
+    "DB4_fire_retirement": {
+      "name": "FIRE / Retirement Reality Database",
+      "parent_calculator": "/calculators/retirement-planning",
+      "query_patterns": [
+        "retire at {age} with {amount}",
+        "how long will {amount} last in retirement",
+        "can I retire at {age} with {amount}"
+      ],
+      "page_template": "retire-at-{age}-with-{amount}",
+      "variables": {
+        "current_age": [
+          30,
+          35,
+          40,
+          45,
+          50,
+          55,
+          60
+        ],
+        "savings_amounts": [
+          100000,
+          200000,
+          300000,
+          400000,
+          500000,
+          750000,
+          1000000,
+          1500000,
+          2000000,
+          3000000,
+          5000000
+        ],
+        "monthly_contributions": [
+          0,
+          500,
+          1000,
+          2000,
+          3000,
+          5000
+        ],
+        "withdrawal_rates": [
+          3,
+          3.5,
+          4,
+          4.5,
+          5
+        ]
+      },
+      "total_combinations": "77 core + variations = 2,310",
+      "priority_combinations": "50 (retire at 45/50/55/60 with 500K-2M)",
+      "demand_evidence": "Reddit r/FIRE: extremely active community. Common query pattern.",
+      "estimated_search_volume_per_page": "50-300/mo",
+      "total_estimated_traffic_potential": "150K-600K impressions/mo at scale"
+    },
+    "DB5_compound_interest": {
+      "name": "Compound Interest Scenario Database",
+      "parent_calculator": "/calculators/compound-interest",
+      "query_patterns": [
+        "invest {amount} a month for {years} years",
+        "{amount} invested at {rate} percent for {years} years",
+        "how much will I have if I invest {amount} per month"
+      ],
+      "page_template": "invest-{amount}-monthly-for-{years}-years-at-{rate}-percent",
+      "variables": {
+        "starting_amounts": [
+          0,
+          1000,
+          5000,
+          10000,
+          25000,
+          50000,
+          100000
+        ],
+        "monthly_contributions": [
+          100,
+          250,
+          500,
+          1000,
+          2000,
+          3000,
+          5000,
+          10000
+        ],
+        "annual_returns": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "years": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      "total_combinations": "8 \u00d7 7 \u00d7 8 = 448 core. + starting = 3,136",
+      "priority_combinations": "100 ($500-2K/mo \u00d7 7-10% \u00d7 10-30yr)",
+      "demand_evidence": "Extremely popular calculator query. Autocomplete triggers widely.",
+      "estimated_search_volume_per_page": "50-400/mo",
+      "total_estimated_traffic_potential": "250K-1M impressions/mo at scale"
+    },
+    "DB6_debt_payoff": {
+      "name": "Debt Payoff Database",
+      "parent_calculator": "/calculators/debt-payoff",
+      "query_patterns": [
+        "pay off {amount} credit card debt",
+        "how long to pay off {amount} debt at {rate} apr",
+        "debt snowball vs avalanche {amount}"
+      ],
+      "page_template": "pay-off-{amount}-debt-at-{rate}-apr",
+      "variables": {
+        "debt_amounts": [
+          1000,
+          2000,
+          3000,
+          5000,
+          7500,
+          10000,
+          15000,
+          20000,
+          25000,
+          30000,
+          50000
+        ],
+        "apr_rates": [
+          15,
+          18,
+          20,
+          22,
+          24,
+          25,
+          28,
+          30,
+          35
+        ],
+        "monthly_payments": [
+          100,
+          200,
+          250,
+          300,
+          400,
+          500,
+          750,
+          1000,
+          1500,
+          2000
+        ]
+      },
+      "total_combinations": "11 \u00d7 9 = 99 core. + variations = 1,980",
+      "priority_combinations": "50 (5K-30K \u00d7 18-28% \u2014 typical credit card debt)",
+      "demand_evidence": "Credit card debt is top financial concern. High query volume.",
+      "estimated_search_volume_per_page": "30-200/mo",
+      "total_estimated_traffic_potential": "100K-500K impressions/mo at scale"
+    }
+  },
+  "total_pages_possible": "~20,000 unique calculator-generated pages",
+  "priority_first_100": "60 loan payment + 40 mortgage affordability (changed from 40/30/15/15 mix)",
+  "estimated_total_impressions_at_scale": "1M-5M impressions/month",
+  "estimated_total_visits_at_scale": "20K-150K visits/month (at 1-3% CTR)",
+  "updated": "2026-06-18T02:05:00+03:00",
+  "priority_status": {
+    "DB3_loan_payment": "PRIMARY_1 \u2014 ACTIVE",
+    "DB2_mortgage_affordability": "PRIMARY_2 \u2014 ACTIVE",
+    "DB5_compound_interest": "BACKUP \u2014 HOLD",
+    "DB1_salary_reality": "HELD",
+    "DB4_fire_retirement": "HELD",
+    "DB6_debt_payoff": "HELD"
+  },
+  "priority_rules": "Only DB2 and DB3 active initially. Backup activates after 40% indexing + 1 click. Held databases require Auditor approval.",
+  "note": "Updated by Phase 32-PATCH Task 2. See phase32-patch-database-priority.json for full details."
+}

@@ -1,0 +1,78 @@
+{
+  "phase": "32.1",
+  "title": "Technical Validation \u2014 Pre-Deploy Checklist",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:35:00+03:00",
+  "status": "PENDING BUILD \u2014 validation checks defined, awaiting actual build",
+  "checks": {
+    "build_passes": {
+      "status": "PENDING",
+      "action": "npm run build must succeed with new loan-scenarios route + /loan-payment-table + /data"
+    },
+    "all_urls_200_locally": {
+      "status": "PENDING",
+      "action": "curl -I localhost:3000/loan-scenarios/* for all 5 slugs. Verify HTTP 200."
+    },
+    "canonical_correct": {
+      "status": "PENDING",
+      "action": "Each page must have self-canonical <link rel='canonical' href='https://qfinhub.com/loan-scenarios/[slug]'>"
+    },
+    "sitemap_correct": {
+      "status": "PENDING",
+      "action": "6 deployable URLs must appear in sitemap.xml. Verify after build."
+    },
+    "no_noindex_on_approved": {
+      "status": "PENDING",
+      "action": "Verify no <meta name='robots' content='noindex'> on any of the 7 URLs"
+    },
+    "no_broken_links": {
+      "status": "PENDING",
+      "action": "node scripts/verify-internal-links.js after build"
+    },
+    "mobile_rendering": {
+      "status": "PENDING",
+      "action": "Manual check or screenshot test. Tables must be responsive."
+    },
+    "schema_valid": {
+      "status": "PENDING",
+      "action": "Rich Results Test or manual validation of BreadcrumbList + SoftwareApplication schema"
+    },
+    "no_placeholder_content": {
+      "status": "PENDING",
+      "action": "Grep for 'coming soon', 'under construction', 'TBD', 'lorem ipsum' \u2014 must return 0 results on deployable pages"
+    },
+    "no_empty_sections": {
+      "status": "PENDING",
+      "action": "Verify all content sections have actual content on deployable pages. /data mortgage section OK to be marked as planned."
+    },
+    "no_duplicate_metadata": {
+      "status": "PENDING",
+      "action": "Check all 7 titles and metas are unique. Already validated in duplication audit."
+    },
+    "loan_calculator_still_safe": {
+      "status": "PENDING",
+      "action": "Verify /calculators/loan-calculator renders correctly after build. No regression."
+    },
+    "blog_20k_still_safe": {
+      "status": "PENDING",
+      "action": "Verify /blog/20000-loan... renders correctly. Only change is optional contextual link addition."
+    }
+  },
+  "build_risks": {
+    "new_route_conflict": "Adding /loan-scenarios/[slug] may conflict with existing routes. Check no other route uses this prefix.",
+    "data_hub_conflict": "Adding /data route may conflict. Verify no existing /data route.",
+    "build_time": "Adding 7 new pages should not significantly increase build time \u2014 they're content pages, not heavy compute.",
+    "sitemap_integration": "New pages must be added to sitemap generation. Check sitemap.ts or equivalent."
+  },
+  "recommended_build_order": [
+    "1. Create /loan-scenarios/[slug]/page.tsx (dynamic route, reads from content data)",
+    "2. Create content data file: src/data/loan-scenarios.ts (all 5 page contents)",
+    "3. Create /loan-payment-table/page.tsx",
+    "4. Create /data/page.tsx",
+    "5. npm run build \u2192 fix any errors",
+    "6. Run verify-internal-links.js",
+    "7. Manual HTTP 200 check on all 7 URLs",
+    "8. Deploy only if ALL checks pass"
+  ],
+  "note": "Full validation requires actual build. These checks are defined and ready \u2014 execute them after code generation."
+}

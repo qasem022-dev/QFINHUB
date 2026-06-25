@@ -1,45 +1,47 @@
 #!/usr/bin/env python3
 """
-GSC Daily Data Pipeline V2 — Dynamic date ranges, freshness proofs, no silent fallback.
-Phase 20.7: Hardcoded dates removed. Correction factor DISABLED (documentation only).
-Raw API is the ONLY official KPI source per Phase 19.2 normalization.
+GSC Daily Data Pipeline V3 — Service Account Auth
+Phase 35: Switched from OAuth (7-day refresh token death) to Service Account (permanent).
+Uses gsc-service-account-auth.py for token management.
+No more refresh_token expiry. No more Testing mode 7-day limit.
 """
-import urllib.request, urllib.parse, json, os, sys, hashlib
+import urllib.request, urllib.parse, json, os, sys, hashlib, time
 from datetime import datetime, timedelta, timezone
 
-TOKEN_PATH = os.path.expanduser("~/.hermes/google-indexing-token.json")
+# Add scripts dir to path for local import
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Import service account auth (filename has hyphens, use importlib)
+import importlib.util
+_spec = importlib.util.spec_from_file_location(
+    "gsc_sa_auth",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "gsc-service-account-auth.py")
+)
+_sa_auth = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_sa_auth)
+get_access_token = _sa_auth.get_access_token
+
 TRUTH_FILE = ".optimizer-data/gsc-api-truth-current.json"
 CORRECTED_OUTPUT = ".optimizer-data/gsc-live-data-corrected.json"
 SITE = "https://www.qfinhub.com"
 SITE_ENC = urllib.parse.quote(SITE, safe='')
 
-# ── Step 1: Refresh token ──────────────────────────────────────────
-with open(TOKEN_PATH) as f:
-    tok = json.load(f)
-body = urllib.parse.urlencode({
-    "client_id": tok["client_id"],
-    "client_secret": tok["client_secret"],
-    "refresh_token": tok["refresh_token"],
-    "grant_type": "refresh_token"
-}).encode()
-req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body)
-resp = urllib.request.urlopen(req)
-tok["access_token"] = json.loads(resp.read())["access_token"]
-with open(TOKEN_PATH, "w") as f:
-    json.dump(tok, f)
-access = tok["access_token"]
-pull_timestamp = datetime.now(timezone.utc)
+# ── Step 1: Get access token via service account ──────────────────
+try:
+    access = get_access_token()
+    pull_timestamp = datetime.now(timezone.utc)
+    print(f"Token: Service Account (no refresh needed)")
+except Exception as e:
+    print(f"❌ Service account auth failed: {e}")
+    sys.exit(1)
 
-# ── Step 2: Compute DYNAMIC date range ─────────────────────────────
-# GSC API has ~3 day reporting delay. End = yesterday - 2 = 3 days ago.
-# Start = end - 6 days = 7-day window.
+# ── Step 2: Compute DYNAMIC date range ────────────────────────────
 end_date = (pull_timestamp - timedelta(days=3)).date()
 start_date = end_date - timedelta(days=6)
 prev_end = start_date - timedelta(days=1)
 prev_start = prev_end - timedelta(days=6)
 
 def gsc_pull(dims, start, end, rowLimit=500, timeout=15):
-    """Pull GSC Search Analytics data. Returns (json_response, checksum)."""
+    """Pull GSC Search Analytics data."""
     body = json.dumps({
         "startDate": str(start), "endDate": str(end),
         "dimensions": dims,
@@ -57,7 +59,7 @@ def gsc_pull(dims, start, end, rowLimit=500, timeout=15):
     chk = hashlib.md5(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:12]
     return data, chk
 
-# ── Pull ALL dimensions ────────────────────────────────────────────
+# ── Pull ALL dimensions ───────────────────────────────────────────
 page_data, page_checksum = gsc_pull(["page"], str(start_date), str(end_date))
 page_rows = page_data.get("rows", [])
 page_imp = sum(r.get("impressions", 0) for r in page_rows)
@@ -78,12 +80,10 @@ qp_data, qp_checksum = gsc_pull(["query", "page"], str(start_date), str(end_date
 qp_rows = qp_data.get("rows", [])
 qp_count = len(qp_rows)
 
-# Previous 7-day window
 prev_data, prev_checksum = gsc_pull(["page"], str(prev_start), str(prev_end))
 prev_rows = prev_data.get("rows", [])
 prev_imp = sum(r.get("impressions", 0) for r in prev_rows)
 
-# 28-day window
 t28_end = end_date
 t28_start = t28_end - timedelta(days=27)
 t28_data, t28_checksum = gsc_pull(["page"], str(t28_start), str(t28_end))
@@ -92,8 +92,7 @@ t28_imp = sum(r.get("impressions", 0) for r in t28_rows)
 t28_clicks = sum(r.get("clicks", 0) for r in t28_rows)
 pages_with_clicks = [r for r in t28_rows if r.get("clicks", 0) > 0]
 
-# ── Freshness proof ────────────────────────────────────────────────
-# Load previous truth to check staleness
+# ── Freshness proof ───────────────────────────────────────────────
 prev_truth_checksum = None
 if os.path.exists(TRUTH_FILE):
     with open(TRUTH_FILE) as f:
@@ -103,16 +102,23 @@ if os.path.exists(TRUTH_FILE):
 freshness = "FRESH"
 if prev_truth_checksum == page_checksum:
     freshness = "SAME_CHECKSUM_AS_PREVIOUS_PULL"
-if str(start_date) == pt.get("date_range", {}).get("start") and str(end_date) == pt.get("date_range", {}).get("end"):
+if os.path.exists(TRUTH_FILE) and str(start_date) == pt.get("date_range", {}).get("start") and str(end_date) == pt.get("date_range", {}).get("end"):
     freshness = "STALE_SAME_DATE_RANGE" if freshness == "SAME_CHECKSUM_AS_PREVIOUS_PULL" else freshness
 
-# ── Save canonical truth ───────────────────────────────────────────
+# ── Save canonical truth ──────────────────────────────────────────
+try:
+    prev_truth = json.load(open(TRUTH_FILE)) if os.path.exists(TRUTH_FILE) else {}
+except:
+    prev_truth = {}
+
 truth = {
     "status": "LIVE_API_OK" if page_imp > 0 else "GSC_API_UNAVAILABLE",
     "generated": pull_timestamp.isoformat(),
     "pulled_at": pull_timestamp.strftime("%Y-%m-%dT%H:%M:%SZ"),
     "property": SITE,
     "search_type": "web",
+    "auth_method": "service_account",
+    "service_account_email": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
     "date_range": {
         "start": str(start_date),
         "end": str(end_date)
@@ -153,13 +159,13 @@ truth = {
         "freshness": freshness,
         "checksum": page_checksum,
         "previous_checksum": prev_truth_checksum,
-        "date_range_advanced": str(start_date) != (pt.get("date_range", {}).get("start") if os.path.exists(TRUTH_FILE) else ""),
+        "date_range_advanced": str(start_date) != prev_truth.get("date_range", {}).get("start", ""),
         "cache_used": False,
         "source_file": TRUTH_FILE
     },
     "manual_ui_comparison": {
         "available": True,
-        "last_check": pt.get("manual_ui_comparison", {}).get("last_check", "never") if os.path.exists(TRUTH_FILE) else "never",
+        "last_check": prev_truth.get("manual_ui_comparison", {}).get("last_check", "never"),
         "note": "FYI ONLY — NOT used in official KPIs"
     },
     "data_source_policy": "RAW_GSC_API_ONLY",
@@ -169,7 +175,7 @@ truth = {
 with open(TRUTH_FILE, "w") as f:
     json.dump(truth, f, indent=2)
 
-# ── Save corrected output (correction as documentation only) ─────────
+# ── Save corrected output (correction as documentation only) ──────
 correction_baseline = {"factor_impressions": 1.0, "factor_position": 1.0, "last_calibrated": "never", "source": "disabled"}
 baseline_path = ".optimizer-data/gsc-correction-baseline.json"
 if os.path.exists(baseline_path):
@@ -181,6 +187,7 @@ corrected = {
     "generated": pull_timestamp.strftime("%Y-%m-%dT%H:%M:%SZ"),
     "date_range": {"start": str(start_date), "end": str(end_date)},
     "checksum": page_checksum,
+    "auth_method": "service_account",
     "api_raw": {
         "impressions": page_imp,
         "clicks": page_clicks,
@@ -194,23 +201,23 @@ corrected = {
         "last_calibrated": correction_baseline.get("last_calibrated", "never"),
         "calibration_source": correction_baseline.get("source", "unknown"),
         "applied_to_official_kpi": False,
-        "note": "Correction factor is DOCUMENTATION ONLY. Not applied to official metrics per Phase 19.2."
+        "note": "Correction factor is DOCUMENTATION ONLY."
     },
     "corrected_estimate_fyi": {
         "impressions": round(page_imp * correction_baseline.get("factor_impressions", 1.0)),
         "clicks": page_clicks,
         "avg_position": round(page_pos * correction_baseline.get("factor_position", 1.0), 1),
-        "note": "FYI ONLY — NOT official. Correction factor from last manual UI check."
+        "note": "FYI ONLY — NOT official."
     }
 }
 
 with open(CORRECTED_OUTPUT, "w") as f:
     json.dump(corrected, f, indent=2)
 
-print(f"GSC Pipeline V2 — {pull_timestamp.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+print(f"GSC Pipeline V3 (Service Account) — {pull_timestamp.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+print(f"Auth: Service Account (permanent — no refresh_token expiry)")
 print(f"Date range: {start_date} to {end_date}")
 print(f"API RAW: {page_imp} imp, {page_clicks} clicks, {page_count} pages, pos {page_pos}")
 print(f"Queries: {query_count} ({query_imp} query-imp)")
 print(f"Freshness: {freshness}")
-print(f"Checksum: {page_checksum}")
 print(f"Files: {TRUTH_FILE}, {CORRECTED_OUTPUT}")

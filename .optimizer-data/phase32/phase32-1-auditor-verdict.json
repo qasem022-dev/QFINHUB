@@ -1,0 +1,55 @@
+{
+  "phase": "32.1",
+  "title": "Auditor Verdict \u2014 7 URLs for Phase 32.1 Deployment",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:45:00+03:00",
+  "auditor": "Hermes (Phase 32.1 Auditor)",
+  "verdict": "APPROVE_DEPLOY_PARTIAL",
+  "verdict_explanation": "6 of 7 URLs pass all quality, doorway, duplication, and technical gates. 1 URL (auto/large purchase scenario) needs quality improvement from 87 to 90+. Deploy the 6 approved URLs now. Fix and resubmit the auto purchase page.",
+  "quality_score_summary": {
+    "passing_90_plus": [
+      "good-credit-loan-20000-8-percent (96)",
+      "fair-credit-loan-20000-20-percent (91)",
+      "small-emergency-loan-5000-15-percent (90)",
+      "debt-consolidation-loan-25000-10-percent (90)"
+    ],
+    "passing_hub_adjusted": [
+      "/loan-payment-table (70/80)",
+      "/data (58/70)"
+    ],
+    "below_threshold": [
+      "auto-large-purchase-loan-30000-7-percent (87) \u2014 needs 90+"
+    ]
+  },
+  "doorway_risk_summary": "6 SAFE. 1 NEEDS_MORE_UNIQUE_VALUE (auto purchase). 0 DOORWAY_RISK. Hand-crafted approach successfully eliminated doorway risk.",
+  "duplication_cannibalization_summary": "NO duplication. NO cannibalization. Pages target distinct intents. $20K blog and $20K scenario page have complementary intent \u2014 cross-links planned.",
+  "technical_risk": "LOW \u2014 7 new content pages, 1 new dynamic route. No database changes. Existing pages untouched (except optional blog link addition).",
+  "indexing_risk": "LOW \u2014 6 quality pages targeting distinct long-tail queries. No spam signals. Proper schema. Self-canonical. Should index cleanly given current baseline (286 indexed).",
+  "monetization_risk": "NONE \u2014 pages are educational calculator content. No ad policy violations. Proper disclaimers.",
+  "probability_impact": "POSITIVE \u2014 deploying 6 high-quality pages increases indexing rate visibility and provides real data on whether Google indexes quality loan scenario pages. This data feeds the scale/no-scale decision.",
+  "approved_urls": [
+    "/loan-scenarios/small-emergency-loan-5000-15-percent",
+    "/loan-scenarios/good-credit-loan-20000-8-percent",
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+    "/loan-scenarios/fair-credit-loan-20000-20-percent",
+    "/loan-payment-table",
+    "/data"
+  ],
+  "held_urls": [
+    "/loan-scenarios/auto-large-purchase-loan-30000-7-percent"
+  ],
+  "required_fixes_for_held_url": {
+    "page": "auto-large-purchase-loan-30000-7-percent",
+    "current_score": 87,
+    "target_score": 90,
+    "fixes": [
+      "Strengthen demand evidence: search for '30000 auto loan 7 percent' in GSC or verify autocomplete pattern",
+      "Deepen secured vs unsecured explanation with specific examples (e.g., 'If you default on an unsecured $30K loan, the lender can sue you. If you default on a secured auto loan, they repossess the car.')",
+      "Add dealer financing negotiation tips (unique value not on other pages)",
+      "Improve FAQ specificity \u2014 add question about GAP insurance for auto loans"
+    ],
+    "resubmit": "After fixes, re-score. Must reach 90+ before deployment."
+  },
+  "deploy_instructions": "Deploy ONLY the 6 approved URLs. Do NOT deploy the auto purchase page. Do NOT modify Phase 31 edit hold pages. Optional: add contextual link from $20K blog to good-credit scenario page (if it fits naturally).",
+  "do_not_deploy_if": "Build fails, any approved URL returns non-200, sitemap excludes approved URLs, verify-internal-links.js finds broken links, or any quality/doorway audit flag fires on deployed pages."
+}

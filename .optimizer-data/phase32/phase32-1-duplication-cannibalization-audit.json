@@ -1,0 +1,51 @@
+{
+  "phase": "32.1",
+  "title": "Duplication & Cannibalization Audit \u2014 All 7 URLs",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:30:00+03:00",
+  "checks": {
+    "duplicate_titles": {
+      "result": "PASS",
+      "detail": "All 7 pages have unique titles. No title duplication detected."
+    },
+    "duplicate_meta": {
+      "result": "PASS",
+      "detail": "All meta descriptions are unique and page-specific."
+    },
+    "duplicate_h1": {
+      "result": "PASS",
+      "detail": "All H1s are unique. Each references specific use case and numbers."
+    },
+    "repeated_body_blocks": {
+      "result": "PASS",
+      "detail": "Zero shared template blocks. Each page has unique 'what this means', 'when it makes sense', 'when it's risky', comparison table, and FAQ content."
+    },
+    "same_intent_overlap": {
+      "result": "PASS \u2014 MINIMAL",
+      "detail": "Each page targets a DIFFERENT search intent: emergency loan, good-credit benchmark, consolidation decision, auto/large purchase, fair-credit warning. No two pages target the same query intent."
+    }
+  },
+  "cannibalization_checks": {
+    "vs_parent_loan_calculator": {
+      "risk": "NONE",
+      "detail": "Scenario pages target specific long-tail queries ('$5K at 15%'). Parent calculator targets head term ('loan calculator'). Different intent tiers. Scenario pages LINK to parent calculator \u2014 supporting, not competing.",
+      "verdict": "SAFE \u2014 supporting relationship"
+    },
+    "vs_20k_loan_blog_post": {
+      "urls_in_conflict": [
+        "/loan-scenarios/good-credit-loan-20000-8-percent",
+        "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment"
+      ],
+      "risk": "LOW \u2014 different intent",
+      "detail": "Scenario page serves CALCULATOR intent (user wants the payment number). Blog serves EXPLANATORY intent (user wants to understand loan mechanics). Google typically shows BOTH for informational queries \u2014 a calculator result AND an article. They complement, not compete.",
+      "mitigation": "Cross-link them: scenario page \u2192 'Read our detailed guide on $20K loans' linking to blog. Blog \u2192 'Calculate your exact $20K loan payment' linking to scenario page. This signals Google they're different content types.",
+      "verdict": "SAFE \u2014 different intent, cross-linked"
+    },
+    "scenario_pages_vs_each_other": {
+      "risk": "NONE",
+      "detail": "No two pages target the same query. $20K at 8% (good credit) and $20K at 20% (fair credit) use the same amount but target DIFFERENT audiences and intents \u2014 one is aspirational (what you can get with good credit), the other is a warning (what you'll pay with fair credit).",
+      "verdict": "SAFE"
+    }
+  },
+  "summary": "NO duplication detected. NO cannibalization risk. The 5 hand-crafted pages target distinct intents and audiences. Cross-linking plan strengthens rather than dilutes."
+}

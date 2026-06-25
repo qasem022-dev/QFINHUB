@@ -1,0 +1,59 @@
+{
+  "phase": 32,
+  "title": "Demand Validation System",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:35:00+03:00",
+  "golden_rule": "If no demand evidence: DO NOT CREATE PAGE.",
+  "evidence_required": "ONE of: exact GSC query | autocomplete pattern | competitor ranking page | repeated query template | clear calculator demand",
+  "allowed_sources": {
+    "gsc_query_data": {
+      "method": "Search existing GSC query data",
+      "evidence": "EXACT or TEMPLATE",
+      "score": 20
+    },
+    "google_autocomplete": {
+      "method": "Check autocomplete suggestions",
+      "evidence": "PATTERN",
+      "score": 15
+    },
+    "people_also_ask": {
+      "method": "Check PAA box for related questions",
+      "evidence": "RELATED",
+      "score": 12
+    },
+    "competitor_serp": {
+      "method": "Search and observe competitor rankings",
+      "evidence": "COMPETITOR",
+      "score": 10
+    },
+    "related_searches": {
+      "method": "Google related searches at SERP bottom",
+      "evidence": "RELATED",
+      "score": 10
+    },
+    "internal_query_pattern": {
+      "method": "Mine GSC data for query templates",
+      "evidence": "TEMPLATE",
+      "score": 8
+    },
+    "keyword_tools": {
+      "method": "Free keyword tools if available",
+      "evidence": "TOOL",
+      "score": 8
+    },
+    "reddit_forum_pattern": {
+      "method": "Search forums for repeated questions",
+      "evidence": "COMMUNITY",
+      "score": 7
+    }
+  },
+  "minimum_score": 7,
+  "validation_process": [
+    "Check GSC query data for exact or template match",
+    "Check autocomplete via browser if needed",
+    "Check if competitors rank for this query",
+    "Assign demand score",
+    "Only proceed if score >= 7",
+    "Record evidence source in page metadata"
+  ]
+}

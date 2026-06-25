@@ -1,0 +1,76 @@
+{
+  "phase": "32-PATCH",
+  "title": "Batch 1 Auditor Pre-Approval \u2014 25 Proposed Loan Pages",
+  "version": "1.0.0",
+  "created": "2026-06-18T02:40:00+03:00",
+  "auditor": "Hermes (Phase 32-PATCH Auditor)",
+  "batch_reviewed": "Original Batch 1: 25 loan payment pages from first-100-page-test-batch.json",
+  "audit_summary": {
+    "total_pages_audited": 25,
+    "pass_90_quality": 0,
+    "draft_80_89": 1,
+    "reject_below_80": 24,
+    "doorway_risk_flagged": 24,
+    "cannibalization_risk": "LOW \u2014 loan database targets specific long-tail, not head term 'loan calculator'",
+    "template_uniqueness": "FAIL \u2014 all 25 pages use identical template with swapped numbers",
+    "demand_evidence_quality": "MIXED \u2014 1 page has exact GSC match (20K at 8%), others have autocomplete or generic patterns",
+    "build_complexity": "LOW \u2014 single template, parameterized. Easy to build technically.",
+    "internal_link_safety": "PASS \u2014 all pages link to parent loan-calculator. No orphan risk.",
+    "expected_indexing_probability": "LOW \u2014 near-duplicate pages with thin differentiation unlikely to index well"
+  },
+  "verdict": "HOLD_FOR_FIXES",
+  "verdict_explanation": "Batch 1 as proposed (25 near-identical loan pages) CANNOT be built. 24/25 pages fail quality gate and show doorway/duplication risk. The batch must be significantly restructured before any build or deploy.",
+  "what_must_change": [
+    "REDUCE VARIANT COUNT: Select 3-5 strongest loan variants instead of 25. Choose those with highest demand evidence and most differentiation potential.",
+    "ADD UNIQUE CONTENT PER PAGE: Each page must have 3+ unique content blocks not shared with siblings. Real-world scenarios, credit score guidance, comparison tables specific to each variant.",
+    "DIFFERENTIATE BY USE CASE: Rather than number-swapping, create pages for specific USE CASES: 'Small Personal Loan ($5K at 15%)', 'Debt Consolidation Loan ($25K at 10%)', 'Auto Loan ($20K at 7%)', 'Home Improvement Loan ($30K at 8%)'",
+    "RICH CONTEXT REQUIRED: Each page needs: real-world scenario, comparison table, credit score context, total cost breakdown, actionable next steps.",
+    "HAND-CRAFT DON'T MASS-PRODUCE: At 90/100 quality, we cannot template our way to volume. Each page must be individually crafted."
+  ],
+  "recommended_restructured_batch": {
+    "size": "5 pages (down from 25)",
+    "pages": [
+      {
+        "slug": "loan-5000-at-15-percent-3-years",
+        "use_case": "Small Emergency Loan",
+        "differentiation": "Focus on small loans with higher rates. Compare to payday loan alternatives. Explain why rates are higher for small amounts."
+      },
+      {
+        "slug": "loan-20000-at-8-percent-5-years",
+        "use_case": "Good Credit Personal Loan",
+        "differentiation": "GSC-validated demand. Focus on what 'good credit' means. Compare 8% to average 12% rate. Show savings from good credit."
+      },
+      {
+        "slug": "loan-25000-at-10-percent-7-years",
+        "use_case": "Debt Consolidation Loan",
+        "differentiation": "Focus on debt consolidation scenario. Compare to credit card APR. Show how consolidation saves money. Include snowball vs consolidation comparison."
+      },
+      {
+        "slug": "loan-30000-at-7-percent-5-years",
+        "use_case": "Auto Loan / Large Purchase",
+        "differentiation": "Focus on auto loan or large purchase context. Compare to dealer financing. Show total vehicle cost including interest."
+      },
+      {
+        "slug": "loan-20000-at-20-percent-5-years",
+        "use_case": "Fair/Poor Credit Loan",
+        "differentiation": "Focus on what happens with lower credit scores. Compare 20% to 8% \u2014 show the $6,000+ difference. Credit improvement tips."
+      }
+    ],
+    "quality_target": "90+ on all 5 pages",
+    "doorway_risk_target": "0 pages flagged as DOORWAY_RISK",
+    "each_page_must_have": [
+      "Unique use case and real-world scenario",
+      "Comparison table with at least 2 alternative scenarios",
+      "Credit score or rate context specific to this tier",
+      "Total cost breakdown with interest as percentage of principal",
+      "At least 1 unique warning or tip",
+      "Distinct title, meta, and H1 from all siblings"
+    ]
+  },
+  "what_happens_next": {
+    "if_restructured_batch_approved": "Build 5 pages. Score each. If all pass 90+, deploy as controlled test batch.",
+    "if_restructured_batch_rejected": "Further refine. Do not deploy until approved.",
+    "after_batch_deploy": "Monitor indexing for 14-21 days. Measure: indexed rate, impressions, clicks. Decision: scale (add more pages) or hold (fix quality)."
+  },
+  "do_not_deploy_until": "All 5 restructured pages pass 90/100 quality gate + doorway audit = SAFE + Auditor final approval."
+}

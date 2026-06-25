@@ -1,0 +1,212 @@
+{
+  "phase": 31,
+  "title": "Phase 31 Recovery Status — Jun 22, 2026",
+  "generated": "2026-06-22T14:55:00Z",
+  "expansion_freeze": "ACTIVE — ALL EXPANSION FROZEN",
+  "gsc_data": {
+    "source": "GSC API — FRESH pull Jun 22 14:54 UTC",
+    "date_range": "2026-06-13 to 2026-06-19",
+    "metrics_7d": {
+      "impressions": 502,
+      "clicks": 1,
+      "ctr_pct": 0.2,
+      "avg_position": 25.7,
+      "pages_with_impressions": 81,
+      "query_count": 74,
+      "query_impressions": 181
+    },
+    "metrics_28d": {
+      "impressions": 1577,
+      "clicks": 1,
+      "pages_with_impressions": 124,
+      "pages_with_clicks": 1,
+      "clicked_pages": [
+        "https://www.qfinhub.com/tools/investment-25k-10yr"
+      ]
+    },
+    "week_over_week": {
+      "previous_7d_impressions": 498,
+      "current_7d_impressions": 502,
+      "change": 4,
+      "change_pct": 0.8,
+      "previous_7d_clicks": 0,
+      "current_7d_clicks": 1,
+      "trend": "POSITIVE — first click achieved, steady impression + position growth"
+    },
+    "vs_previous_report_jun21": {
+      "jun21_7d_impressions": 498,
+      "jun22_7d_impressions": 502,
+      "jun21_clicks": 0,
+      "jun22_clicks": 1,
+      "jun21_avg_position": 26.9,
+      "jun22_avg_position": 25.7,
+      "position_change": -1.2,
+      "trend": "POSITIVE — position improved, click achieved"
+    },
+    "vs_jun19": {
+      "jun19_7d_impressions": 564,
+      "jun22_7d_impressions": 502,
+      "jun19_avg_position": 35.5,
+      "jun22_avg_position": 25.7,
+      "position_change": -9.8,
+      "note": "Impressions down 11% but position improved 9.8 points (35.5→25.7). Rolling window artifact — high-impression days dropped out."
+    }
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-06-04T17:23:57Z",
+      "days_since_recrawl": 18,
+      "impressions_7d": 59,
+      "position": 10.1,
+      "clicks": 0,
+      "http_status": 200,
+      "live_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+      "phase31_fix_deployed": "Jun 17",
+      "recrawl_status": "NOT RECRAWLED — 18 days since last crawl. Fix deployed Jun 17 is INVISIBLE to Google.",
+      "status": "BLOCKED — awaiting natural recrawl. #1 obstacle to first click."
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-05-28T19:37:52Z",
+      "days_since_recrawl": 25,
+      "impressions_7d": 3,
+      "position": 5.7,
+      "clicks": 0,
+      "status": "MONITORING — ultra-low volume (3 imp). Unlikely to produce first click even with fix."
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-05-28T22:02:38Z",
+      "days_since_recrawl": 25,
+      "impressions_7d": "NOT in top 50 pages — ultra-low volume",
+      "clicks": 0,
+      "status": "MONITORING — volume too low to appear in top 50 pages"
+    }
+  },
+  "the_actual_first_click": {
+    "page": "/tools/investment-25k-10yr",
+    "page_type": "tool_variant (investment return calculator variant)",
+    "http_status": 200,
+    "robots": "index, follow",
+    "canonical": "self-canonical",
+    "live_title": "$25,000 for 10 Years: Investment Performance Example | ROI & CAGR | QFINHUB",
+    "impressions_7d": 3,
+    "clicks_7d": 1,
+    "ctr": "33.3%",
+    "position": 12.7,
+    "last_crawl": "2026-06-04T07:58:17Z",
+    "verdict": "REAL CONTENT CLICK — not brand, not homepage, not navigational. User clicked from SERP to use the investment calculator variant. THIS IS THE FIRST REAL CLICK.",
+    "significance": "MAJOR MILESTONE — breaks the 0-click streak. However, it's on a thin tool variant (not a substantive blog/calculator/decision page). The core pages ($20k loan blog at pos 10.1, retirement decision at pos 4.8) still have 0 clicks."
+  },
+  "new_discovery_retirement_decision": {
+    "url": "/decision/how-much-do-i-need-to-retire",
+    "page_type": "decision",
+    "http_status": 200,
+    "robots": "index, follow",
+    "live_title": "How Much Do I Need to Retire? Savings Target Calculator (2026) | QFINHUB",
+    "impressions_7d": 24,
+    "position": 4.8,
+    "clicks": 0,
+    "last_crawl": "2026-05-28T22:03:53Z",
+    "days_since_recrawl": 25,
+    "significance": "BEST POSITION OF ANY QFINHUB PAGE (4.8). NOT on the first-click breakthrough list. At position 4.8 with 24 impressions, this page should be getting clicks. Possible issues: generic title, stale content (25 days since recrawl), query mismatch. This page is a STRONGER first-click candidate than breakthrough pages 2 and 3.",
+    "action": "REPORT ONLY — not on approved first-click breakthrough list. Cannot modify under Phase 31 freeze."
+  },
+  "other_notable_pages": {
+    "all_pages": {
+      "url": "/all-pages",
+      "impressions": 7,
+      "position": 8.1,
+      "clicks": 0,
+      "note": "Sitemap/crawl page — ignore"
+    },
+    "tax_calculator": {
+      "url": "/calculators/tax-calculator",
+      "impressions_7d": 25,
+      "position": 83.7,
+      "clicks": 0,
+      "note": "DEEP — DA bottleneck. 0 clicks expected at this position."
+    },
+    "investment_return": {
+      "url": "/calculators/investment-return",
+      "impressions_7d": 39,
+      "position": 85.5,
+      "clicks": 0,
+      "note": "DEEP — DA bottleneck. Interestingly, its tool variant (/tools/investment-25k-10yr) got the click."
+    },
+    "401k_calculator": {
+      "url": "/calculators/401k-calculator",
+      "impressions_7d": 28,
+      "position": 68.4,
+      "clicks": 0,
+      "note": "DEEP — DA bottleneck"
+    },
+    "compound_tool_variants": {
+      "note": "Thin tool variants ranking page 1. OBSERVATION ONLY per Phase 20 freeze.",
+      "variants": [
+        {"url": "/tools/compound-100k-20yr-5pct", "impressions": 34, "position": 9.1},
+        {"url": "/tools/compound-500k-15yr-5pct", "impressions": 20, "position": 9.2},
+        {"url": "/tools/compound-150k-10yr-5pct", "impressions": 8, "position": 8.5},
+        {"url": "/tools/compound-1k-30yr-6pct", "impressions": 6, "position": 6.2}
+      ]
+    },
+    "retirement_decision_page": {
+      "url": "/decision/how-much-do-i-need-to-retire",
+      "impressions": 24,
+      "position": 4.8,
+      "clicks": 0,
+      "note": "BEST POSITION ON SITE — see new_discovery section"
+    }
+  },
+  "duplicate_blog_posts": {
+    "issue": "Two blog posts covering identical $20k loan topic — both in sitemap",
+    "post_1_slug": "20000-loan-at-8-percent-for-5-years-monthly-payment (INDEXED, 59 imp, pos 10.1)",
+    "post_2_slug": "20000-loan-5-years-8-percent-monthly-payment (Discovered-not-indexed)",
+    "risk": "Crawl budget waste, cannibalization",
+    "action": "Cleanup PLAN only — remove duplicate from sitemap. NOT executed under Phase 31 freeze."
+  },
+  "key_observations": {
+    "positive": [
+      "⭐ FIRST REAL CLICK ACHIEVED — /tools/investment-25k-10yr (33.3% CTR at pos 12.7). Breaks the 0-click streak.",
+      "Position improving consistently: 35.5 → 26.9 → 25.7 (3 consecutive reports, net -9.8 points)",
+      "Impressions stable WoW: 498 → 502 (+0.8%) — not declining",
+      "New discovery: /decision/how-much-do-i-need-to-retire at position 4.8 — BEST position on the entire site",
+      "GSC URL Inspection API working — recrawl verification operational",
+      "Pages with impressions steady at 81-83 range"
+    ],
+    "negative": [
+      "CRITICAL: $20k loan blog NOT recrawled since Jun 4 — 18 days. Fix deployed Jun 17 is invisible.",
+      "$20k loan blog has 59 imp at position 10.1 but 0 clicks — title fix is live on the page but Google can't see it",
+      "Retirement decision page at position 4.8 has 0 clicks — 25 days since last crawl, stale content",
+      "The actual click is on a THIN TOOL VARIANT, not a substantive blog/calculator/decision page",
+      "rent-vs-buy and how-much-house decision pages have negligible volume (3 imp / <4 imp)",
+      "Duplicate blog posts still in sitemap — crawl budget being wasted"
+    ],
+    "blockers": [
+      "RECRAWL GAP — Google's crawl budget for a 6-month domain is painfully slow (18-25 days since last crawl on key pages)",
+      "DA CEILING — calculator money pages at positions 68-86 due to 0 backlinks. No fix possible under Phase 31.",
+      "The $20k loan blog's new title is invisible to Google until recrawl. Under Phase 31, no way to accelerate recrawl."
+    ]
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_churn": 0,
+    "deploy_made": false,
+    "cleanup_planning_only": "Duplicate blog post + retirement decision page opportunity documented. No execution.",
+    "notes": "Fully compliant with Phase 31 SAFE RECOVERY MODE. All work is read-only monitoring and reporting."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "summary": "BREAKTHROUGH: First real click achieved on /tools/investment-25k-10yr (investment tool variant, pos 12.7, 33.3% CTR). This breaks the 28-day 0-click drought. However, it's a thin tool variant — the core pages ($20k loan blog at pos 10.1, retirement decision at pos 4.8) still have 0 clicks. Position improvement continues (25.7, +9.8pts from Jun 19 low of 35.5). The #1 obstacle remains recrawl lag: key pages haven't been crawled in 18-25 days, making deployed fixes invisible. New discovery: /decision/how-much-do-i-need-to-retire at position 4.8 is the site's best-positioned page and a stronger first-click candidate than 2 of the 3 approved breakthrough pages.",
+    "next_natural_step": "Wait for Google natural recrawl of $20k loan blog. Consider adding /decision/how-much-do-i-need-to-retire to the breakthrough page list — it has 6x the impressions and a better position (4.8 vs 7.5/5.7) than pages 2/3. No action possible under Phase 31 freeze."
+  }
+}

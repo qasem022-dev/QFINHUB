@@ -1,0 +1,56 @@
+{
+  "phase": "31.3",
+  "title": "Related Module Audit",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:42:38.422815",
+  "modules": {
+    "blog_relatedCalculators": {
+      "file": "src/lib/blog/posts.ts",
+      "slug_count": 39,
+      "invalid_found_phase_31_2": "loan,retirement,budget,inflation (all fixed)",
+      "status": "CLEAN"
+    },
+    "CALCULATOR_BLOG_LINKS": {
+      "file": "src/lib/calculator-blog-links.ts",
+      "slug_count": 109,
+      "invalid_removed_phase_31_3": [
+        "how-to-use-mortgage-calculator",
+        "how-to-use-retirement-planning (x2)",
+        "retire-at-45-with-1-million",
+        "capital-gains-tax-explained-rates-and-strategies",
+        "how-to-calculate-debt-to-income-ratio"
+      ],
+      "status": "CLEAN"
+    },
+    "footer_links": {
+      "file": "footer.tsx + site-footer.tsx",
+      "link_count": 23,
+      "invalid": 0,
+      "status": "CLEAN"
+    },
+    "navbar_links": {
+      "file": "navbar.tsx",
+      "link_count": 4,
+      "invalid": 0,
+      "status": "CLEAN"
+    },
+    "try_these_scenarios": {
+      "file": "try-these-scenarios.tsx",
+      "link_count": 0,
+      "status": "CLEAN"
+    },
+    "decision_related_tools": {
+      "file": "decision-pages/index.ts",
+      "status": "NOT A SEPARATE LINK MODULE"
+    }
+  },
+  "automated_test": {
+    "script": "scripts/verify-internal-links.js",
+    "checks": [
+      "blog relatedCalculators",
+      "calculator-blog-links",
+      "footer links"
+    ],
+    "result": "PASS \u2014 109 links, 0 broken"
+  }
+}

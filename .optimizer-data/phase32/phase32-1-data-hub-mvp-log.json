@@ -1,0 +1,57 @@
+{
+  "phase": "32.1",
+  "title": "Free Financial Data Tables \u2014 Loan Payments, Mortgage Affordability & More | QFINHUB",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:20:00+03:00",
+  "url": "/data",
+  "h1": "Free Financial Data Tables \u2014 QFINHUB Data Hub",
+  "meta_description": "Free financial reference data: loan payment tables, mortgage affordability tables, compound interest growth. Downloadable CSV files. No signup required. Cite our data in your research.",
+  "content": {
+    "intro": "QFINHUB Data Hub provides free, original financial data tables calculated using standard formulas. Journalists, researchers, and personal finance readers can reference, download, and cite our data. All calculations are transparent \u2014 methodology published for each table.",
+    "active_sections": {
+      "section_1_loan_payments": {
+        "title": "Personal Loan Payment Tables",
+        "description": "Monthly payments for personal loans from $5,000 to $30,000 across different rates and terms. Includes real-world scenarios: emergency loans, debt consolidation, auto loans, and fair-credit borrowing.",
+        "table_preview": "5 starter scenarios shown",
+        "full_table_link": "/loan-payment-table",
+        "csv_download": "loan-payment-scenarios.csv (planned \u2014 available when data hub is built)",
+        "methodology": "Standard amortization formula. Fixed rate assumption. See full methodology at /loan-payment-table.",
+        "calculator_link": "/calculators/loan-calculator"
+      },
+      "section_2_mortgage_affordability": {
+        "title": "Mortgage Affordability Tables",
+        "description": "How much house you can afford at salary levels from $40K to $200K. Based on the 28% front-end debt-to-income ratio.",
+        "status": "COMING SOON \u2014 this section will be added when the Mortgage Affordability Database is activated (Phase 32.3+)",
+        "note": "Not a placeholder \u2014 clearly marked as planned future content. Not indexable until content exists.",
+        "no_thin_content": "This section is intentionally empty. Will be built with full data tables, CSV, and methodology when ready."
+      }
+    },
+    "future_sections": {
+      "compound_interest": "Coming after backup database activates (Phase 32.2+)",
+      "retirement_data": "Coming after held database activates (Phase 32.4+)",
+      "debt_payoff": "Coming after held database activates (Phase 32.4+)"
+    },
+    "cite_this_data": {
+      "text": "You're welcome to cite QFINHUB data in your research, articles, or analysis. Use the citation formats below.",
+      "apa": "QFINHUB. (2026). [Table name]. Retrieved [date], from https://qfinhub.com/data",
+      "mla": "\"[Table Name].\" QFINHUB, 2026, qfinhub.com/data. Accessed [date].",
+      "chicago": "\"[Table Name].\" QFINHUB. Accessed [date]. https://qfinhub.com/data."
+    },
+    "methodology_link": "Full calculation methodology available at /data/methodology (to be built with data hub)",
+    "disclaimer": "All data is calculated using standard financial formulas and publicly available information (tax brackets, interest rate assumptions, etc.). This is educational reference data, not financial advice. Always verify calculations for your specific situation."
+  },
+  "schema": "BreadcrumbList + Dataset",
+  "internal_links_out": [
+    "/loan-payment-table",
+    "/calculators/loan-calculator",
+    "/calculators/mortgage-affordability"
+  ],
+  "quality_target": 90,
+  "anti_patterns_avoided": [
+    "NO thin placeholder sections pretending to have data",
+    "NO empty tables with 'coming soon' in table cells",
+    "NO keyword-stuffed 'future' sections",
+    "Mortgage section clearly labeled as planned future content",
+    "Only indexable content is the loan section (which has real data)"
+  ]
+}

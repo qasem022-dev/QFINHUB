@@ -1,0 +1,25 @@
+{
+  "phase": "32.2",
+  "title": "Auto Purchase Page Fix Log",
+  "status": "HELD_FOR_NEXT_BATCH",
+  "current_score": 87,
+  "target_score": 90,
+  "fixes_applied_in_content": [
+    "Added deeper secured vs unsecured loan explanation with default/repossession comparison",
+    "Added dealer financing negotiation tips (unique value)",
+    "Added GAP insurance FAQ for auto loans",
+    "Strengthened demand evidence with autocomplete verification",
+    "Added APR sensitivity table"
+  ],
+  "new_content_added": {
+    "secured_vs_unsecured_deep_dive": "If you default on an unsecured $30K personal loan, the lender can sue you and garnish wages. If you default on a secured auto loan, they repossess the car \u2014 but you still owe the deficiency balance if the car sells for less than the loan. This is why secured loans have lower rates.",
+    "dealer_financing_tips": "Dealerships profit from financing. They may offer you 9% when you qualify for 7% elsewhere. Always get pre-approved from a credit union or bank BEFORE visiting the dealer. Use the pre-approval as leverage \u2014 tell the dealer: 'I'm pre-approved at 7%. Can you beat that?'",
+    "gap_insurance_faq": "If you finance a $30K car and it's totaled in year 1, your insurance pays market value (~$24K) but you still owe ~$28K on the loan. GAP insurance covers the $4K difference. It costs $500-700 \u2014 worth it for loans over 80% of the car's value.",
+    "apr_sensitivity_table": "Table showing $30K at 5%, 6%, 7%, 8%, 9%, 10% \u2014 monthly payment and total cost differences"
+  },
+  "new_estimated_score": 91,
+  "quality_rescore_needed": true,
+  "doorway_risk_rescore": "Expected SAFE after fixes",
+  "deployment": "NOT in this batch \u2014 held for Phase 32.3 or later",
+  "note": "Content fixes applied to the page brief. Will be built as a Next.js route in the next batch."
+}

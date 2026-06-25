@@ -1,0 +1,101 @@
+{
+  "phase": 32,
+  "title": "Head-Term Avoidance List",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:35:00+03:00",
+  "rule": "These terms remain as money pages but are NOT the main 6-month traffic plan. QFINHUB cannot win these yet.",
+  "blocked_head_terms": {
+    "mortgage_calculator": {
+      "search_volume": "50K-200K+/mo",
+      "competition": "Bankrate, NerdWallet, Zillow, Calculator.net \u2014 all DR 70-90",
+      "current_pos": "not in top 100",
+      "can_win_6mo": false,
+      "keep_as_money_page": true,
+      "note": "Essential page to have, but zero chance of meaningful traffic in 6 months"
+    },
+    "loan_calculator": {
+      "search_volume": "30K-100K+/mo",
+      "competition": "Bankrate, NerdWallet, Calculator.net \u2014 DR 70-90",
+      "current_pos": "pos 7 (4 imp/7d)",
+      "can_win_6mo": false,
+      "keep_as_money_page": true,
+      "note": "Already getting impressions but competing against giants"
+    },
+    "retirement_calculator": {
+      "search_volume": "20K-80K+/mo",
+      "competition": "Fidelity, Vanguard, Bankrate, NerdWallet",
+      "current_pos": "not in top 100",
+      "can_win_6mo": false,
+      "keep_as_money_page": true,
+      "note": "Financial institutions dominate \u2014 can't beat them"
+    },
+    "compound_interest_calculator": {
+      "search_volume": "15K-60K+/mo",
+      "competition": "Investor.gov, NerdWallet, Calculator.net",
+      "current_pos": "pos 6.7 (3 imp/7d)",
+      "can_win_6mo": false,
+      "keep_as_money_page": true,
+      "note": "Government + authority sites dominate top 3"
+    },
+    "tax_calculator": {
+      "search_volume": "30K-100K+/mo",
+      "competition": "TurboTax, H&R Block, IRS.gov, SmartAsset",
+      "current_pos": "not in top 100",
+      "can_win_6mo": false,
+      "keep_as_money_page": true,
+      "note": "IRS + tax software giants \u2014 unwinnable"
+    },
+    "investment_calculator": {
+      "search_volume": "10K-40K+/mo",
+      "competition": "NerdWallet, Bankrate, SmartAsset",
+      "current_pos": "pos 79.3 (70 imp/7d)",
+      "can_win_6mo": false,
+      "keep_as_money_page": true,
+      "note": "Getting impressions but ranking deep. Not primary target."
+    },
+    "best_credit_cards": {
+      "search_volume": "50K-200K+/mo",
+      "competition": "NerdWallet, Bankrate, Credit Karma, Forbes",
+      "current_pos": "not ranking",
+      "can_win_6mo": false,
+      "keep_as_money_page": false
+    },
+    "high_yield_savings": {
+      "search_volume": "20K-80K+/mo",
+      "competition": "Bankrate, NerdWallet, Forbes, CNBC",
+      "current_pos": "not ranking",
+      "can_win_6mo": false,
+      "keep_as_money_page": false
+    },
+    "personal_loan": {
+      "search_volume": "30K-100K+/mo",
+      "competition": "LendingTree, Bankrate, NerdWallet, SoFi",
+      "current_pos": "not ranking",
+      "can_win_6mo": false,
+      "keep_as_money_page": false
+    },
+    "refinance_rates": {
+      "search_volume": "10K-50K+/mo",
+      "competition": "Bankrate, NerdWallet, Zillow, Rocket Mortgage",
+      "current_pos": "not ranking",
+      "can_win_6mo": false,
+      "keep_as_money_page": false
+    },
+    "auto_loan_calculator": {
+      "search_volume": "5K-20K+/mo",
+      "competition": "Bankrate, NerdWallet, Cars.com, Edmunds",
+      "current_pos": "not in top 100",
+      "can_win_6mo": false,
+      "keep_as_money_page": true
+    }
+  },
+  "what_to_attack_instead": [
+    "Long-tail salary + location queries: '100k salary after tax Texas'",
+    "Specific loan amount queries: '20000 loan at 8 percent monthly payment'",
+    "Mortgage affordability by salary: 'can I afford 400k house on 80k'",
+    "Retirement by age/savings: 'retire at 45 with 1 million'",
+    "Compound interest with specific numbers: 'invest 500 month for 20 years'",
+    "Debt payoff specific amounts: 'pay off 10000 credit card debt snowball'"
+  ],
+  "money_page_strategy": "Keep head-term money pages as hub/authority pages. They link to long-tail database pages. They may eventually rank if domain authority grows, but they are NOT the traffic plan for months 1-6."
+}

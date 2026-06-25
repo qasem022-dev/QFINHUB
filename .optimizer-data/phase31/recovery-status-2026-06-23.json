@@ -1,0 +1,132 @@
+{
+  "phase": 31,
+  "title": "Phase 31 Recovery Status — Jun 23, 2026",
+  "generated": "2026-06-23T17:55:00Z",
+  "expansion_freeze": "ACTIVE — ALL EXPANSION FROZEN",
+  "gsc_data": {
+    "source": "CACHED — GSC API TOKEN DEAD. Last successful pull Jun 22 14:54 UTC.",
+    "status": "STALE_OR_AUTH_BLOCKED",
+    "last_fresh_date_range": "2026-06-13 to 2026-06-19",
+    "cached_metrics_7d": {
+      "impressions": 502,
+      "clicks": 1,
+      "ctr_pct": 0.2,
+      "avg_position": 25.7,
+      "pages_with_impressions": 81,
+      "query_count": 74,
+      "note": "SAME AS JUN 22 REPORT — no new data available since token expired"
+    },
+    "cached_metrics_28d": {
+      "impressions": 1577,
+      "clicks": 1,
+      "pages_with_impressions": 124,
+      "clicked_page": "https://www.qfinhub.com/tools/investment-25k-10yr"
+    }
+  },
+  "token_status": {
+    "status": "DEAD — refresh_token expired or revoked",
+    "detected": "2026-06-23T08:50:00Z",
+    "still_dead": true,
+    "recovery_attempted": "Desktop OAuth URL generated at 17:55 UTC",
+    "auth_url_generated": true,
+    "action_needed": "Qasem must open auth URL in Windows browser, copy the code, and run: python3 scripts/desktop-oauth-refresh.py '<AUTH_CODE>'",
+    "recovery_report": ".optimizer-data/gsc-token-recovery-report.json"
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "live_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+      "cached_impressions_7d": 59,
+      "cached_position": 10.1,
+      "cached_clicks": 0,
+      "last_recrawl": "2026-06-04T17:23:57Z (19 days ago)",
+      "recrawl_status": "NOT RECRAWLED — fix deployed Jun 17 still invisible to Google",
+      "status": "BLOCKED — awaiting natural recrawl"
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "live_title": "Rent vs Buy Calculator: Should You Rent or Buy a Home in 2026? (Free Tool) | QFINHUB",
+      "cached_impressions_7d": 3,
+      "cached_position": 5.7,
+      "cached_clicks": 0,
+      "last_recrawl": "2026-05-28T19:37:52Z (26 days ago)",
+      "status": "MONITORING — ultra-low volume, 26 days since recrawl"
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "live_title": "How Much House Can I Afford? Free Calculator — See Your Max Budget (2026) | QFINHUB",
+      "cached_impressions_7d": "<4 (not in top 50 pages)",
+      "cached_clicks": 0,
+      "last_recrawl": "2026-05-28T22:02:38Z (26 days ago)",
+      "status": "MONITORING — volume too low to appear in top 50 pages"
+    }
+  },
+  "the_actual_first_click": {
+    "page": "/tools/investment-25k-10yr",
+    "http_status": 200,
+    "robots": "index, follow",
+    "canonical": "self",
+    "live_title": "$25,000 for 10 Years: Investment Performance Example | ROI & CAGR | QFINHUB",
+    "click_confirmed": true,
+    "note": "First real content click — detected Jun 22. No new data to confirm if more clicks followed."
+  },
+  "new_discovery_retirement_decision": {
+    "url": "/decision/how-much-do-i-need-to-retire",
+    "http_status": 200,
+    "robots": "index, follow",
+    "canonical": "self",
+    "live_title": "How Much Do I Need to Retire? Savings Target Calculator (2026) | QFINHUB",
+    "cached_position": 4.8,
+    "cached_impressions": 24,
+    "last_recrawl": "2026-05-28T22:03:53Z (26 days ago)",
+    "note": "BEST POSITION ON SITE. NOT on approved breakthrough list. Cannot modify under freeze."
+  },
+  "deploy_activity": {
+    "last_deploy": "2026-06-21 (Phase 34.4)",
+    "deploys_since_last_report": 0,
+    "no_new_changes": true
+  },
+  "key_observations": {
+    "positive": [
+      "First real click confirmed on /tools/investment-25k-10yr (detected Jun 22)",
+      "Cached metrics show 502 imp, 25.7 avg pos — steady improvement from low of 35.5 on Jun 19",
+      "All 6 key pages return HTTP 200, index/follow, self-canonical — zero technical issues",
+      "No accidental changes — 0 deploys since Jun 21"
+    ],
+    "negative": [
+      "GSC TOKEN DEAD — no fresh data since Jun 22. All monitoring is BLIND.",
+      "$20k loan blog NOT recrawled in 19 days. Fix deployed Jun 17 is invisible to Google.",
+      "Retirement decision page at position 4.8 not recrawled in 26 days",
+      "Rent-vs-buy and how-much-house decision pages negligible volume (3-4 imp), 26 days since recrawl"
+    ],
+    "blockers": [
+      "GSC TOKEN DEAD — blocks all data pulls. Qasem must re-authenticate.",
+      "RECRAWL GAP — key pages 19-26 days since last crawl. Fixes invisible.",
+      "DA CEILING — calculator money pages at positions 68-86 due to 0 backlinks. No fix possible under Phase 31."
+    ]
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_churn": 0,
+    "deploy_made": false,
+    "notes": "Fully compliant with Phase 31 SAFE RECOVERY MODE. All work is read-only monitoring. GSC token dead — cannot pull fresh data."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "summary": "NO-CHANGE DAY. GSC token dead — all monitoring is blind since Jun 22. Cached metrics: 502 imp, 1 click, 25.7 avg pos. The $20k loan blog at position 10.1 with improved title is the #1 candidate for the next click but has NOT been recrawled since Jun 4 (19 days). Retirement decision page at position 4.8 is the best-positioned page on the site but cannot be modified under Phase 31 freeze. ALL pages healthy (HTTP 200, index/follow, self-canonical). No deploys since Jun 21."
+  }
+}

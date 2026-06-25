@@ -84,6 +84,14 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
   const calculator = getCalculatorBySlug(variant.calculatorId);
   const category = calculator?.category ?? "basic";
 
+  // Phase 35: Show parent calculator link for formula variants (pre-filled pages)
+  const slug = variant.slug;
+  const parts = slug.split("-");
+  const hasPct = parts.some((p) => p.endsWith("pct"));
+  const hasYr = parts.some((p) => p.endsWith("yr"));
+  const isFormula = (hasPct && (hasYr || parts.some((p) => p.endsWith("mo"))))
+    || (parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 3 && /^[a-z]+-\d/.test(slug));
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-surface-dark">
       {/* Structured Data */}
@@ -152,6 +160,17 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
             calculatorTitle={variant.meta.title}
           />
         </div>
+        {/* Phase 35: Above-fold link to parent calculator from noindexed variant */}
+        {isFormula && (
+          <div className="mt-3 text-center">
+            <Link
+              href={`/calculators/${variant.calculatorId}`}
+              className="inline-flex items-center gap-1.5 rounded-full bg-primary-50 px-4 py-2 text-sm font-medium text-primary-700 hover:bg-primary-100 dark:bg-primary-900/20 dark:text-primary-300 dark:hover:bg-primary-900/40 transition-colors"
+            >
+              Try the full {calculator?.title ?? variant.calculatorId.replace(/-/g, " ")} with your own numbers →
+            </Link>
+          </div>
+        )}
       </div>
 
       {/* Calculator with Pre-filled Values */}

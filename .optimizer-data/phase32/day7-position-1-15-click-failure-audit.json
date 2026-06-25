@@ -1,0 +1,236 @@
+{
+  "audit": "PHASE 32 DAY 7 ADD-ON — Position 1–15 Click Failure Audit",
+  "prepared": "2026-06-24T00:15:00+03:00",
+  "gsc_data": {
+    "source": "Service Account — Fresh pull Jun 23",
+    "date_range": "2026-05-24 to 2026-06-20 (28 days)",
+    "gsc_reporting_lag_days": 3,
+    "note": "Latest available GSC data. Query+page dimension, rowLimit=500."
+  },
+
+  "executive_summary": {
+    "total_pages_position_1_to_15": 92,
+    "total_pages_with_clicks_at_any_position": 1,
+    "only_clicked_page": "/tools/investment-25k-10yr (pos 11.2, 4 imp, 1 click)",
+    "core_finding": "The 'position 1-15 with 0 clicks' problem is MOSTLY A MIRAGE. Of 92 pages ranking position 1–15, 78 have 1–3 impressions over 28 days — statistical noise from obscure long-tail queries. Only ~8 pages have real volume (>20 imp/28d) at these positions, and the click failure has clear, fixable root causes.",
+    "impression_distribution_by_position_bracket": {
+      "pos_1_to_3": {"pages": 10, "total_impressions": 24, "clicks": 0},
+      "pos_3_to_6": {"pages": 24, "total_impressions": 44, "clicks": 0},
+      "pos_6_to_10": {"pages": 46, "total_impressions": 436, "clicks": 0},
+      "pos_10_to_15": {"pages": 12, "total_impressions": 413, "clicks": 1},
+      "pos_15_to_20": {"pages": 7, "total_impressions": 122, "clicks": 0},
+      "pos_20_to_30": {"pages": 3, "total_impressions": 100, "clicks": 0}
+    },
+    "key_insight": "The only bracket with meaningful volume is pos 6-10 (436 imp). The ONLY click in the entire pos 1-15 range came from /tools/investment-25k-10yr at pos 11.2. The zero-click problem is concentrated in 3 root causes: (1) snippet gives answer away, (2) noindexed tool variants ranking against intent, (3) statistical noise from low-volume queries."
+  },
+
+  "top_candidates_audited": [
+    {
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "slug": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "primary_query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "impressions_primary_query": 234,
+      "position_primary_query": 7.2,
+      "total_impressions_28d": 344,
+      "average_position_28d": 12.3,
+      "clicks": 0,
+      "current_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+      "current_meta": "Borrowing $20,000 at 8% for 5 years? See your personalized monthly payment in seconds — adjust the amount, rate, or term to match YOUR exact loan. Free calculator with full amortization schedule, no sign-up.",
+      "indexable": true,
+      "page_type": "Blog post with embedded calculator",
+      "gives_answer_in_snippet": true,
+      "snippet_problem_detail": "The user's query is a MATH PROBLEM. Google likely scrapes the monthly payment answer ($368.11/month) from the page content and displays it directly in the search snippet or a featured answer box. User gets the answer without clicking. This is the #1 canonical example of SNIPPET PROBLEM.",
+      "query_intent": "INFORMATIONAL — user wants to know the monthly payment, not explore calculator options",
+      "serp_intent_match": "MISMATCHED — page is optimized for 'explore different loan scenarios' but query is a direct math question",
+      "classification": "SNIPPET_PROBLEM",
+      "ctr_rescue_recommendation": "Move the exact answer ($368.11/month) OFF the H1/first paragraph. Replace H1 with a curiosity hook: 'What's YOUR $20,000 Loan Really Costing You? — See the Truth' or 'Borrowing $20,000? Here's Why Your Monthly Payment Isn't What You Think.' Put the calculator ABOVE the fold so users must interact to get their number. The key: do NOT give Google the answer to scrape. Make the user click to discover.",
+      "should_improve_hold_noindex_remove": "IMPROVE — deploy after Jun 25 Day 7 decision if AdSense review allows. This page has 344 impressions at good positions. Fixing the snippet could unlock the second click on the entire site.",
+      "deploy_blocked_by": "AdSense review stability (Phase 34) — this is a blog page, not review-critical, but any deploy carries risk during review"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "slug": "/tools/compound-100k-20yr-5pct",
+      "primary_query": "UNKNOWN — page-level data only (query+page dimension has too many low-volume queries)",
+      "impressions_28d": 81,
+      "average_position_28d": 9.3,
+      "clicks": 0,
+      "current_title": "$100,000 at 5% for 20 Years Compound Growth Example | QFINHUB",
+      "current_meta": "Compound interest example for $100,000 grow at 5% APY over 20 years with $1,000 monthly contributions? Example growth projection for a fixed scenario. For your exact numbers, use the full Compound Interest Calculator.",
+      "indexable": "UNKNOWN — likely noindexed by template but Google may still rank",
+      "page_type": "TOOL_VARIANT — static formula page, not interactive calculator",
+      "gives_answer_in_snippet": true,
+      "snippet_problem_detail": "Title IS the answer: '$100,000 at 5% for 20 Years' tells the user exactly what this is. The H1 likely shows the final amount too. No reason to click.",
+      "query_intent": "MIXED — some users want the answer, others want a calculator",
+      "serp_intent_match": "MISMATCHED — this is a static example page ranking for queries where users want an interactive calculator",
+      "classification": "NOINDEX_TOOL_VARIANT",
+      "ctr_rescue_recommendation": "This page should be NOINDEXED. It's a formula variant — a static page showing ONE specific example. Users searching for 'compound interest 100k 5%' want either: (a) the answer (which Google can show in a snippet) or (b) an interactive calculator to change the numbers. This page gives the answer in the title AND isn't interactive. It cannibalizes the real /calculators/compound-interest page. Remove from sitemap. Noindex via template.",
+      "should_improve_hold_noindex_remove": "NOINDEX — this is a thin-content formula variant. It should never have been in the sitemap. The 81 impressions it gets should go to the real calculator page.",
+      "deploy_blocked_by": "Phase 31 freeze — no pruning allowed. Add to cleanup list for post-freeze execution."
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "slug": "/tools/compound-500k-15yr-5pct",
+      "impressions_28d": 58,
+      "average_position_28d": 9.6,
+      "clicks": 0,
+      "current_title": "$500,000 at 5% for 15 Years Compound Growth Example | QFINHUB",
+      "current_meta": "Compound interest example for $500,000 grow at 5% APY over 15 years with $2,000 monthly contributions?",
+      "page_type": "TOOL_VARIANT — static formula page",
+      "gives_answer_in_snippet": true,
+      "classification": "NOINDEX_TOOL_VARIANT",
+      "ctr_rescue_recommendation": "NOINDEX. Same pattern as compound-100k-20yr-5pct above.",
+      "should_improve_hold_noindex_remove": "NOINDEX"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+      "slug": "/tools/mortgage-200k-15yr-5-5pct",
+      "impressions_28d": 32,
+      "average_position_28d": 7.8,
+      "clicks": 0,
+      "current_title": "$200,000 Mortgage: 5.5% 15-Year — Monthly Payment Example | QFINHUB",
+      "page_type": "TOOL_VARIANT — static formula page",
+      "gives_answer_in_snippet": true,
+      "classification": "NOINDEX_TOOL_VARIANT",
+      "ctr_rescue_recommendation": "NOINDEX. Static mortgage example page gives answer in title. Should redirect impressions to /calculators/mortgage-calculator.",
+      "should_improve_hold_noindex_remove": "NOINDEX"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+      "slug": "/tools/compound-150k-10yr-5pct",
+      "impressions_28d": 29,
+      "average_position_28d": 9.0,
+      "clicks": 0,
+      "page_type": "TOOL_VARIANT",
+      "classification": "NOINDEX_TOOL_VARIANT",
+      "should_improve_hold_noindex_remove": "NOINDEX"
+    },
+    {
+      "url": "https://www.qfinhub.com/all-pages",
+      "slug": "/all-pages",
+      "impressions_28d": 26,
+      "average_position_28d": 6.5,
+      "clicks": 0,
+      "current_title": "Sitemap — All QFINHUB Pages | QFINHUB",
+      "current_meta": "Complete list of all calculators, scenarios, tools, blog posts, and pages on QFINHUB.",
+      "indexable": "UNKNOWN — should NOT be indexable. This is an admin/utility page.",
+      "page_type": "ADMIN PAGE — sitemap HTML listing",
+      "gives_answer_in_snippet": false,
+      "query_intent": "UNKNOWN — what queries rank this page?",
+      "classification": "WRONG_PAGE_RANKING",
+      "ctr_rescue_recommendation": "NOINDEX immediately. This is an internal utility page ranking in search results. It serves zero user value as a landing page. Add to robots noindex and remove from sitemap.",
+      "should_improve_hold_noindex_remove": "NOINDEX — this should never have been indexable",
+      "note": "Ranks at position 6.5 with 26 impressions. Whatever query this ranks for should go to a real page."
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "slug": "/tools/mortgage-900k-30yr-7pct",
+      "impressions_28d": 25,
+      "average_position_28d": 6.0,
+      "clicks": 0,
+      "page_type": "TOOL_VARIANT",
+      "classification": "NOINDEX_TOOL_VARIANT",
+      "should_improve_hold_noindex_remove": "NOINDEX"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "slug": "/tools/mortgage-200k-30yr-6pct",
+      "impressions_28d": 21,
+      "average_position_28d": 8.1,
+      "clicks": 0,
+      "page_type": "TOOL_VARIANT",
+      "classification": "NOINDEX_TOOL_VARIANT",
+      "should_improve_hold_noindex_remove": "NOINDEX"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+      "slug": "/blog/ecb-rate-hike-impact-on-mortgages",
+      "impressions_28d": 21,
+      "average_position_28d": 10.2,
+      "clicks": 0,
+      "current_title": "ECB Rate Hike 2026: What It Means for YOUR Mortgage — Free Payment Calculator Inside | QFINHUB",
+      "current_meta": "ECB just raised rates again — see exactly how much YOUR monthly payment changes. Free mortgage calculator shows the impact in real numbers, personalized to your loan.",
+      "page_type": "Blog post",
+      "classification": "LOW_VOLUME_ONLY",
+      "ctr_rescue_recommendation": "HOLD. 21 impressions is too few to diagnose. Title and meta are actually good — specific, benefit-driven, calculator hook. Could be a REAL_FIRST_CLICK_CANDIDATE if volume increases. The ECB query may be dying as the news gets stale.",
+      "should_improve_hold_noindex_remove": "HOLD"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "slug": "/calculators/mortgage-calculator",
+      "impressions_28d": 5,
+      "average_position_28d": 7.0,
+      "clicks": 0,
+      "current_title": "Calculate Your Monthly Payment: Free Mortgage Calculator (2026)",
+      "page_type": "REAL CALCULATOR — interactive tool, flagship page",
+      "classification": "REAL_FIRST_CLICK_CANDIDATE",
+      "ctr_rescue_recommendation": "HOLD. Only 5 impressions — too few to mean anything. Title is decent ('Calculate Your Monthly Payment: Free Mortgage Calculator'). This is the REAL calculator page — it SHOULD be ranking. The problem is the tool variant pages (mortgage-200k-15yr-5-5pct etc.) are stealing its impressions. Once tool variants are noindexed, this page will get more volume.",
+      "should_improve_hold_noindex_remove": "HOLD — will improve naturally when tool variants are noindexed"
+    }
+  ],
+
+  "classification_summary": {
+    "NOINDEX_TOOL_VARIANT": {
+      "count": 6,
+      "total_impressions": 246,
+      "pages": ["compound-100k-20yr-5pct", "compound-500k-15yr-5pct", "mortgage-200k-15yr-5-5pct", "compound-150k-10yr-5pct", "mortgage-900k-30yr-7pct", "mortgage-200k-30yr-6pct"],
+      "recommendation": "Noindex all. These steal impressions from real calculator pages. Remove from sitemap. Can be done in bulk post-Phase 31 freeze. Combined, they waste 246 impressions that should go to real calculators.",
+      "blocked_by": "Phase 31 freeze — no pruning. AdSense review stability.",
+      "earliest_execution": "After Phase 31 freeze lift AND AdSense approval"
+    },
+    "SNIPPET_PROBLEM": {
+      "count": 1,
+      "total_impressions": 344,
+      "page": "20k loan blog",
+      "recommendation": "Fix H1 and above-fold content to hide the exact answer. Replace with curiosity hook. Move calculator above fold. This is the #1 priority — 344 impressions at pos 7-12 is the best opportunity on the site for a second click.",
+      "blocked_by": "AdSense review stability (blog page — not review-critical but any deploy carries risk)",
+      "earliest_execution": "Jun 25 after Day 7 decision, if AdSense allows"
+    },
+    "WRONG_PAGE_RANKING": {
+      "count": 1,
+      "total_impressions": 26,
+      "page": "/all-pages",
+      "recommendation": "Noindex immediately. Admin page ranking in SERP has zero value."
+    },
+    "LOW_VOLUME_ONLY": {
+      "count": "~80",
+      "total_impressions": "~68 (1-3 imp each)",
+      "description": "Pages with 1-3 impressions at position 1-15. These are statistical noise — Google tested the page against an obscure query 1-2 times. No diagnosis possible at this volume. Do not optimize for these queries."
+    },
+    "REAL_FIRST_CLICK_CANDIDATE": {
+      "count": "~4",
+      "total_impressions": "~15",
+      "pages": ["mortgage-calculator", "loan-calculator", "compound-interest", "pay-off-debt-or-invest"],
+      "description": "Real pages at decent positions but too-low volume to matter yet. Will improve naturally when tool variants stop cannibalizing their queries."
+    }
+  },
+
+  "root_cause_analysis": {
+    "the_real_problem": "QFINHUB's zero-click problem is NOT a CTR optimization issue — it's a CONTENT ARCHITECTURE problem. The site has dozens of auto-generated tool variant pages (compound-100k-20yr-5pct, mortgage-200k-15yr-5-5pct, etc.) that rank for specific-number queries. These pages: (a) give the answer away in the title/snippet, (b) are NOT interactive calculators that users want, and (c) cannibalize traffic that should go to real calculator pages (mortgage-calculator, compound-interest). Every impression a tool variant gets is a wasted opportunity.",
+    "why_users_dont_click": [
+      "Tool variants give the answer in the title/H1 — Google scrapes it, user gets answer without clicking",
+      "Tool variants are static pages — users searching for 'mortgage 200k 15yr 5.5%' want an interactive calculator, not a static example",
+      "The 20k loan blog's primary query is a math problem — Google likely shows the answer ($368/month) directly in the snippet",
+      "/all-pages ranks for something — whatever it is, it shouldn't be ranking",
+      "Real calculator pages have too-low volume because tool variants steal their queries"
+    ],
+    "what_would_fix_this": [
+      "Noindex ALL tool variant pages — they serve no organic search purpose (users want interactive calculators, not static examples)",
+      "Fix the 20k loan blog to hide the answer from snippet scraping",
+      "Remove /all-pages from indexing",
+      "Let real calculator pages (mortgage, loan, compound-interest) capture the traffic that tool variants currently waste"
+    ],
+    "estimated_impact": "If tool variant noindexing reclaims ~250 impressions/month and the 20k loan blog fix converts even 2% of its 344 impressions, QFINHUB would have ~7-8 clicks/month instead of 1. This is still very low — the traffic goal remains OFF_TRACK — but it would be a meaningful improvement from the current baseline."
+  },
+
+  "do_not": [
+    "Do NOT edit pages during AdSense review (Phase 34 stability)",
+    "Do NOT deploy changes — Jun 25 Day 7 decision first",
+    "Do NOT prune tool variants now — Phase 31 freeze active",
+    "Do NOT request indexing",
+    "Do NOT use Google Indexing API",
+    "Do NOT click Validate Fix in GSC",
+    "Do NOT optimize pages with <5 impressions — statistical noise, not real rankings"
+  ],
+
+  "next_steps": "This audit is PREP ONLY. All actionable recommendations (noindex tool variants, fix 20k loan blog snippet) are BLOCKED until: (1) AdSense review completes OR Qasem approves deploy risk, (2) Phase 31 freeze lifts (earliest Jun 24), (3) Jun 25 Day 7 decision confirms holding pattern. The audit finding — 'positions 1-15 are mostly statistical noise, real volume is in tool variant cannibalization' — should inform the Day 7 decision."
+}

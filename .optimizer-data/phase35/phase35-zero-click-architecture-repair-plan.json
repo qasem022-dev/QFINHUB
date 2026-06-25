@@ -1,0 +1,243 @@
+{
+  "phase": 35,
+  "title": "PHASE 35 — Zero-Click Architecture Repair Plan",
+  "prepared": "2026-06-24T01:30:00+03:00",
+  "status": "PREP ONLY — DO NOT EXECUTE",
+  "blocked_by": ["Phase 31 freeze (earliest lift: Jun 24)", "AdSense review (submitted Jun 21, 2 days in review)", "Jun 25 Day 7 checkpoint decision"],
+  "gsc_data": {
+    "source": "Service Account — Fresh pull Jun 23",
+    "date_range": "2026-05-24 to 2026-06-20 (28 days)",
+    "gsc_reporting_lag_days": 3
+  },
+
+  "root_cause_discovery": {
+    "finding": "QFINHUB's zero-click problem is a CONTENT ARCHITECTURE FAILURE, not a CTR optimization issue.",
+    "smoking_gun": "Tool variant pages OUTRANK parent calculator pages by 15-42x because they have exact keyword-match titles ('$100,000 at 5% for 20 Years') while parent calculators have generic titles ('Compound Interest'). Google ranks variants for high-volume specific-number queries, scrapes the answer from the variant's H1, and the user never clicks.",
+    "cannibalization_data": {
+      "compound_interest": {
+        "parent_impressions_28d": 4,
+        "tool_variant_impressions_stolen": 168,
+        "ratio": "42:1",
+        "parent_title": "Compound Interest",
+        "variant_titles": "e.g., '$100,000 at 5% for 20 Years Compound Growth Example'"
+      },
+      "mortgage": {
+        "parent_impressions_28d": 5,
+        "tool_variant_impressions_stolen": 78,
+        "ratio": "15.6:1",
+        "parent_title": "Mortgage Calculator 🏠",
+        "variant_titles": "e.g., '$200,000 Mortgage: 5.5% 15-Year — Monthly Payment Example'"
+      },
+      "loan": {
+        "parent_impressions_28d": 4,
+        "tool_variant_impressions_stolen": 0,
+        "ratio": "N/A",
+        "parent_title": "Loan Calculator 🏦"
+      }
+    }
+  },
+
+  "repair_actions": {
+    "action_1_tool_variant_noindex": {
+      "name": "Noindex 6 High-Volume Tool Variant Pages",
+      "priority": "HIGHEST — fixes 246 wasted impressions immediately",
+      "pages": [
+        {
+          "url": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+          "query_impressions_28d": 81,
+          "position": 9.3,
+          "current_index_status": "Crawled - currently not indexed (NEUTRAL)",
+          "robots_allowed": true,
+          "parent_calculator": "/calculators/compound-interest",
+          "parent_current_impressions": 4,
+          "has_link_to_parent": true,
+          "recommended_action": "ADD TO NOINDEX_TEMPLATE — mark robots: noindex in page metadata. Remove from sitemap filter exemption list. DO NOT 301 redirect (tool variants serve different content than parent).",
+          "risk": "LOW — these pages generate 0 clicks. They only waste impressions. Noindexing cannot reduce existing traffic (there is none to lose).",
+          "expected_benefit": "Recapture 81 impressions for /calculators/compound-interest. With improved parent title, estimated CTR improvement: 2-3% on recaptured impressions."
+        },
+        {
+          "url": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+          "query_impressions_28d": 58,
+          "position": 9.6,
+          "current_index_status": "Crawled - currently not indexed (NEUTRAL)",
+          "parent_calculator": "/calculators/compound-interest",
+          "recommended_action": "NOINDEX",
+          "risk": "LOW",
+          "expected_benefit": "Recapture 58 impressions for parent"
+        },
+        {
+          "url": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+          "query_impressions_28d": 32,
+          "position": 7.8,
+          "current_index_status": "Submitted and indexed (PASS)",
+          "parent_calculator": "/calculators/mortgage-calculator",
+          "recommended_action": "NOINDEX — currently INDEXED. Removing from index requires: (1) set noindex in template, (2) remove from sitemap, (3) wait for Google recrawl (7-21 days). Do NOT use Remove URLs tool — natural de-indexing is cleaner.",
+          "risk": "LOW — 0 clicks currently. Noindex means Google eventually drops it from index and parent calculator gets the impressions instead.",
+          "expected_benefit": "Recapture 32 impressions for mortgage calculator"
+        },
+        {
+          "url": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+          "query_impressions_28d": 29,
+          "position": 9.0,
+          "current_index_status": "Submitted and indexed (PASS)",
+          "parent_calculator": "/calculators/compound-interest",
+          "recommended_action": "NOINDEX — currently INDEXED",
+          "risk": "LOW",
+          "expected_benefit": "Recapture 29 impressions"
+        },
+        {
+          "url": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+          "query_impressions_28d": 25,
+          "position": 6.0,
+          "current_index_status": "Submitted and indexed (PASS)",
+          "parent_calculator": "/calculators/mortgage-calculator",
+          "recommended_action": "NOINDEX — currently INDEXED",
+          "risk": "LOW",
+          "expected_benefit": "Recapture 25 impressions"
+        },
+        {
+          "url": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+          "query_impressions_28d": 21,
+          "position": 8.1,
+          "current_index_status": "Crawled - currently not indexed (NEUTRAL)",
+          "parent_calculator": "/calculators/mortgage-calculator",
+          "recommended_action": "NOINDEX",
+          "risk": "LOW",
+          "expected_benefit": "Recapture 21 impressions"
+        }
+      ],
+      "total_impressions_to_recover": 246,
+      "implementation": "Update the NOINDEXED_VARIANT_SLUGS blocklist in src/app/sitemap.ts to include these 6 slugs. Update the tool template to set robots: { index: false } for these slugs. One-time code change, applies to all future runs. Git push → Vercel deploy → wait for Google recrawl.",
+      "verification": "After deploy: curl -sL <url> | grep -i 'noindex' should show robots: noindex for all 6 pages. GSC URL Inspection should transition from PASS → noindex within 7-21 days."
+    },
+
+    "action_2_all_pages_noindex": {
+      "name": "Noindex /all-pages Admin Page",
+      "priority": "HIGH — admin utility page ranking in SERP is embarrassing and valueless",
+      "url": "https://www.qfinhub.com/all-pages",
+      "current_impressions_28d": 26,
+      "current_position": 6.5,
+      "current_index_status": "Submitted and indexed (PASS)",
+      "sitemap_status": "IN SITEMAP (1 entry found)",
+      "page_type": "Admin/utility — HTML sitemap listing all pages. Zero user value as landing page.",
+      "recommended_action": "REMOVE FROM SITEMAP + NOINDEX. Delete the staticPages entry from src/app/sitemap.ts. Add robots: { index: false } to page metadata.",
+      "risk": "ZERO — this page serves no organic search purpose. Removing it cannot hurt anything.",
+      "expected_benefit": "26 impressions redirected to real pages. No more admin page appearing in SERP for whatever obscure query it ranks for.",
+      "implementation": "2-line code change: remove from sitemap.ts staticPages, add noindex to page metadata.",
+      "verification": "curl -sL https://www.qfinhub.com/sitemap.xml | grep -c 'all-pages' should return 0. curl -sL https://www.qfinhub.com/all-pages | grep 'noindex' should confirm."
+    },
+
+    "action_3_20k_loan_blog_snippet_fix": {
+      "name": "Fix $20K Loan Blog Snippet Scraping",
+      "priority": "CRITICAL — 344 impressions at pos 7-12, 0 clicks. Highest-volume page on site.",
+      "current_state": {
+        "primary_query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+        "query_impressions": 234,
+        "query_position": 7.2,
+        "current_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+        "current_h1": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule",
+        "current_meta": "Borrowing $20,000 at 8% for 5 years? See your personalized monthly payment in seconds...",
+        "current_first_paragraph": "If you borrow $20,000 for 5 years at 8%, your fixed monthly payment is $405.53."
+      },
+      "snippet_scraping_point": "FIRST PARAGRAPH — the exact answer ($405.53) is stated in the opening sentence, with the query text echoed verbatim: 'This is the precise answer to the question if you borrow $20,000 for 5 years at an annual rate of 8% what would the monthly payment be.' Google extracts this answer directly and shows it in the snippet or featured answer box. User gets answer without clicking.",
+      "fix_strategy": "CONTENT REPOSITIONING — NOT data-nosnippet.",
+      "why_not_data_nosnippet": "data-nosnippet tells Google to hide your entire snippet. For a page with 344 impressions, a blank snippet would KILL CTR to 0%. Better to show a compelling hook snippet that invites a click, not an empty one.",
+      "recommended_fix": {
+        "h1_change": "From: '$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule'\nTo: 'Borrowing $20,000 at 8%? Here's What Banks Won't Tell You About Your Monthly Payment'",
+        "first_paragraph_change": "MOVE the exact answer ($405.53) from the first paragraph to BELOW the calculator CTA (paragraph 3 or later). Replace first paragraph with a curiosity hook:\n\nNEW FIRST PARAGRAPH: 'A $20,000 loan at 8% for 5 years sounds straightforward — but the total interest, hidden fees, and amortization schedule can surprise you. Before you sign, see YOUR exact numbers — including total cost, month-by-month breakdown, and what happens if you pay just $50 more per month. The difference could save you thousands.'",
+        "calculator_above_fold": "Move the interactive loan calculator ABOVE the first paragraph. User sees: H1 → curiosity hook → CALCULATOR (pre-loaded with $20,000, 8%, 5 years) → scroll for answer. User MUST interact to see their number.",
+        "answer_location": "Keep the exact answer ($405.53/month) on the page — it's valuable content. Just place it BELOW the calculator, after the user has scrolled past the interactive tool. Google can still index it for relevance, but it won't appear in the snippet."
+      },
+      "risk_assessment": {
+        "risk_of_losing_impressions": "MODERATE — removing the exact-match query echo from the first paragraph COULD reduce keyword relevance. Mitigation: keep the query terms in the title and meta, just not the exact answer. The page still clearly addresses the query.",
+        "risk_of_snippet_going_blank": "LOW — the new first paragraph provides rich, compelling text for Google's snippet. The curiosity hook is designed to be snippet-worthy.",
+        "mitigation_strategy": "Monitor GSC daily for 7 days after deploy. If impressions drop >20%, the fix is too aggressive and the answer needs to be moved back up (but still below the calculator)."
+      },
+      "expected_ctr_gain": "Currently 0% CTR on 344 impressions. Conservative estimate: 2% CTR = 7 clicks/month. Optimistic: 5% = 17 clicks/month. Either way, this would be the site's SECOND organic click ever and would more than 7x the current click baseline.",
+      "implementation": "Edit the blog post content in src/data/ or wherever blog content is stored. Reposition text blocks. Move calculator component above content. Git push → Vercel deploy.",
+      "blocked_by": "AdSense review stability (Phase 34). This is a blog post — NOT on the review-critical pages list (homepage, calculators, trust pages, /data, /loan-payment-table, footer, nav, editorial policy, methodology, en.json, sitemap). However, ANY deploy during AdSense review carries theoretical risk. Qasem decision needed."
+    },
+
+    "action_4_parent_calculator_title_strengthening": {
+      "name": "Strengthen Parent Calculator Titles for CTR",
+      "priority": "MEDIUM — unlocks value after tool variants are noindexed",
+      "rationale": "Once tool variants stop cannibalizing specific-number queries, the parent calculators need to capture those queries with better titles. Currently generic titles ('Compound Interest') won't match queries like 'compound interest 100k 20 years'. The parent pages need example-rich titles that compete.",
+      "parent_pages": [
+        {
+          "url": "/calculators/compound-interest",
+          "current_title": "Compound Interest",
+          "current_impressions": 4,
+          "proposed_title": "Compound Interest Calculator: See How $100K Grows to $265K in 20 Years",
+          "rationale": "Uses specific example numbers that match common queries. The promise of seeing growth compels a click."
+        },
+        {
+          "url": "/calculators/mortgage-calculator",
+          "current_title": "Mortgage Calculator 🏠",
+          "current_impressions": 5,
+          "proposed_title": "Mortgage Calculator: See Your Monthly Payment on Any Home — $200K, $500K, $900K",
+          "rationale": "Covers the three most-impressed tool variant price points. Shows the calculator can handle any amount."
+        },
+        {
+          "url": "/calculators/loan-calculator",
+          "current_title": "Loan Calculator 🏦",
+          "current_impressions": 4,
+          "proposed_title": "Loan Calculator: Calculate ANY Monthly Payment — Personal, Auto, Student Loans",
+          "rationale": "Shows breadth of use cases. Differentiates from mortgage-only calculators."
+        }
+      ],
+      "risk": "LOW — these pages currently have almost no impressions. Title changes can only help. Worst case: no change in traffic.",
+      "expected_benefit": "When combined with tool variant noindexing, the improved titles should capture the recaptured impressions with higher CTR.",
+      "implementation": "Update page metadata in src/app/calculators/[slug]/page.tsx or wherever calculator page titles are defined.",
+      "blocked_by": "AdSense review — these ARE review-critical pages (calculators). Do NOT touch during AdSense review without Qasem explicit approval."
+    }
+  },
+
+  "execution_rules": {
+    "blocked_until": [
+      "Jun 25 Day 7 checkpoint decision",
+      "AdSense review completes OR Qasem approves deploy risk during review",
+      "Phase 31 freeze lifts (earliest Jun 24)"
+    ],
+    "prohibited": [
+      "NO Google Indexing API",
+      "NO GSC UI Validate Fix",
+      "NO GSC UI Request Indexing",
+      "NO Batch 2 deploy",
+      "NO mass page changes",
+      "NO 301 redirects from tool variants to parents (different content, not a replacement)",
+      "NO Remove URLs tool in GSC (natural de-indexing is cleaner)",
+      "NO data-nosnippet on 20k loan blog (kills snippet entirely)"
+    ],
+    "allowed_when_unblocked": [
+      "Add slugs to NOINDEXED_VARIANT_SLUGS blocklist in sitemap.ts",
+      "Set robots: { index: false } for tool variant pages",
+      "Remove /all-pages from sitemap staticPages + add noindex",
+      "Reposition 20k loan blog content — move answer below calculator",
+      "Update parent calculator titles (ONLY after tool variants are noindexed)",
+      "Deploy via git push → Vercel"
+    ],
+    "execution_order": "1. /all-pages removal (lowest risk, immediate benefit). 2. Tool variant noindex (246 imp recovery, requires Google recrawl). 3. Parent calculator title strengthening (depends on step 2). 4. 20k loan blog snippet fix (highest risk/reward, requires careful monitoring)."
+  },
+
+  "expected_success_metrics": {
+    "primary_goals": [
+      "First non-brand content click beyond /tools/investment-25k-10yr",
+      "Compound interest calculator impressions rise from 4 to 30+ within 21 days",
+      "Mortgage calculator impressions rise from 5 to 20+ within 21 days",
+      "$20K loan blog achieves >0% CTR (any click is a win at current baseline)",
+      "No DNI spike after tool variant noindexing"
+    ],
+    "secondary_goals": [
+      "Total site clicks increase from 1/month to 5-10/month",
+      "Average position improves as Google re-ranks real pages instead of variants",
+      "/all-pages disappears from search results entirely"
+    ],
+    "failure_indicators": [
+      "Parent calculator impressions DON'T rise after tool variant noindex (impressions leak elsewhere)",
+      "Impressions decline site-wide >30% (tool variants were holding traffic that real pages can't capture)",
+      "20k loan blog CTR remains 0% after fix (snippet still scrapes answer from deeper content)",
+      "DNI spike on parent calculator pages (noindex cascade affects entire path)"
+    ],
+    "monitoring_schedule": "Day 3, 7, 14, 21 after each action deploy. Check: GSC impressions by page, CTR, DNI count, site-wide impression trend."
+  }
+}

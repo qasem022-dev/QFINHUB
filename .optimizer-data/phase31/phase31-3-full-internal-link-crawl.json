@@ -1,0 +1,45 @@
+{
+  "phase": "31.3",
+  "title": "Full Internal Link Crawl Results",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:42:38.422815",
+  "summary": "All internal link systems verified. 0 internal 404 links remaining.",
+  "systems_checked": {
+    "blog_relatedCalculators": {
+      "total_refs": 362,
+      "unique_slugs": 39,
+      "broken": 0,
+      "status": "PASS"
+    },
+    "calculator_blog_links": {
+      "total_refs": 109,
+      "unique_slugs": "~46",
+      "broken": 0,
+      "status": "PASS (4 removed in this phase: 2 guide-slug misplacements, 1 non-existent blog, 1 duplicate)"
+    },
+    "footer_site_footer": {
+      "total_links": 12,
+      "broken": 0,
+      "status": "PASS"
+    },
+    "footer_main": {
+      "total_links": 11,
+      "broken": 0,
+      "status": "PASS"
+    },
+    "navbar": {
+      "total_links": 4,
+      "broken": 0,
+      "status": "PASS"
+    },
+    "try_these_scenarios": {
+      "scenario_links": 0,
+      "status": "NOT APPLICABLE"
+    }
+  },
+  "total_broken_found_phase_31": {
+    "phase_31_2": "~90 (wrong calculator slugs in blog relatedCalculators)",
+    "phase_31_3": "6 (4 nonexistent blog refs + 2 guide slugs misplaced in blog-only module)",
+    "all_fixed": true
+  }
+}

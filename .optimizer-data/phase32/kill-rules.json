@@ -1,0 +1,30 @@
+{
+  "phase": 32,
+  "title": "Database Kill Rules",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:45:00+03:00",
+  "kill_if": {
+    "indexing_fail": "<10 of 100 indexed in 21 days \u2192 KILL",
+    "discovered_not_indexed_worsens": "Ratio worsens significantly \u2192 PAUSE, fix, KILL if no improvement in 14 days",
+    "no_impressions": "0 impressions 30 days after indexing \u2192 KILL (no demand)",
+    "near_duplicate": "Google treats as duplicate \u2192 KILL low performers",
+    "gsc_quality_decline": "Quality signals drop \u2192 PAUSE all, audit",
+    "cannibalization": "Money pages lose traffic \u2192 KILL cannibalizers",
+    "build_instability": "Deployments fail \u2192 HALT production"
+  },
+  "double_down_if": {
+    "fast_indexing": "Pages index within 7-14 days",
+    "impressions_appear": "Any impressions within 14-30 days",
+    "clicks_appear": "Any click is a scale signal",
+    "position_improves": "Avg position improves over time",
+    "parent_pages_gain": "Money pages gain from database support",
+    "data_assets_cited": "Data asset gets external citation"
+  },
+  "zero_tolerance": [
+    "No demand validation",
+    "Score <85",
+    "Duplicate titles",
+    "Cannibalizing money pages",
+    "Deploying without verification"
+  ]
+}

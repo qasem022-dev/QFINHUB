@@ -1,0 +1,49 @@
+{
+  "phase": "32.2",
+  "title": "Quality Rescore After Coding \u2014 6 Deployable URLs",
+  "version": "1.0.0",
+  "created": "2026-06-18T04:35:00+03:00",
+  "urls_rescored": {
+    "small_emergency": {
+      "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "original": 90,
+      "after_code": 90,
+      "change": "unchanged",
+      "verdict": "PASS"
+    },
+    "good_credit": {
+      "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "original": 96,
+      "after_code": 96,
+      "change": "unchanged",
+      "verdict": "PASS"
+    },
+    "debt_consolidation": {
+      "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "original": 90,
+      "after_code": 90,
+      "change": "unchanged",
+      "verdict": "PASS"
+    },
+    "fair_credit": {
+      "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "original": 91,
+      "after_code": 91,
+      "change": "unchanged",
+      "verdict": "PASS"
+    },
+    "loan_hub": {
+      "url": "/loan-payment-table",
+      "original": "PASS (adjusted)",
+      "after_code": "PASS",
+      "verdict": "PASS"
+    },
+    "data_hub": {
+      "url": "/data",
+      "original": "PASS (adjusted)",
+      "after_code": "PASS",
+      "verdict": "PASS"
+    }
+  },
+  "summary": "All 6 URLs maintain or exceed original quality scores after coding. No degradation. 6/6 deployable."
+}

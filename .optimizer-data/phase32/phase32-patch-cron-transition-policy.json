@@ -1,0 +1,56 @@
+{
+  "phase": "32-PATCH",
+  "title": "Cron Transition Policy \u2014 Phase 31 Stays Primary",
+  "version": "1.0.0",
+  "created": "2026-06-18T02:20:00+03:00",
+  "current_status": "PHASE_31_SAFE_RECOVERY_REMAINS_PRIMARY",
+  "rule": "Phase 32 does NOT replace Phase 31 cron until ALL gates are met.",
+  "phase_31_cron": {
+    "job_id": "dcba952b4c45",
+    "mode": "SAFE_RECOVERY",
+    "actions": "Monitor only \u2014 pull GSC data, check link regression, report movement",
+    "remains_active_until": "Phase 32.1 batch is APPROVED and PROVEN"
+  },
+  "phase_32_role_during_patch": {
+    "mode": "PLANNING_AND_STAGING_ONLY",
+    "allowed_actions": [
+      "Generate candidate pages (quality scored, doorway audited)",
+      "Build templates",
+      "Stage pages for review",
+      "Document systems and plans",
+      "Run audits"
+    ],
+    "prohibited_actions": [
+      "Deploy new long-tail pages to production",
+      "Replace Phase 31 safe recovery cron",
+      "Create pages below 90/100 quality",
+      "Publish pages without Auditor pre-approval",
+      "Scale production beyond planning"
+    ]
+  },
+  "transition_gates": {
+    "gate_1_batch1_approved": {
+      "description": "Batch 1 (15-25 pages) passes all quality gates (90+), doorway audit (SAFE), and Auditor pre-approval",
+      "status": "NOT MET"
+    },
+    "gate_2_no_broken_links": {
+      "description": "0 broken internal links confirmed by verify-internal-links.js",
+      "status": "MET \u2014 current status PASS"
+    },
+    "gate_3_no_build_failures": {
+      "description": "Build succeeds with new pages integrated. Vercel deploys cleanly.",
+      "status": "NOT TESTED \u2014 no new pages built yet"
+    },
+    "gate_4_phase31_day7_measurement": {
+      "description": "Phase 31 affected pages have at least 7 days of measurement (Jun 24 earliest)",
+      "status": "NOT MET \u2014 Day 1 of measurement (Jun 17). Day 7 = Jun 24."
+    },
+    "gate_5_batch1_quality_proven": {
+      "description": "First batch of pages passes all quality gates (scoring, doorway, pre-approval, deploy verification)",
+      "status": "NOT MET \u2014 pages not yet built to 90+ standard"
+    }
+  },
+  "transition_timeline_earliest": "Jun 24 (Phase 31 Day 7 measurement + batch 1 gates)",
+  "transition_timeline_realistic": "Jun 25-28 (allowing time for batch 1 build + review)",
+  "do_not_rush": "Cron transition is a safety gate, not a calendar target. Missing gates = stay in Phase 31 SAFE_RECOVERY."
+}

@@ -1,17 +1,18 @@
 {
   "source": "GSC_API_RAW \u2014 CORRECTION DISABLED PER PHASE 19.2",
-  "generated": "2026-06-16T21:12:35Z",
+  "generated": "2026-06-25T00:36:08Z",
   "date_range": {
-    "start": "2026-06-07",
-    "end": "2026-06-13"
+    "start": "2026-06-16",
+    "end": "2026-06-22"
   },
-  "checksum": "ec036193cf09",
+  "checksum": "b167784d9444",
+  "auth_method": "service_account",
   "api_raw": {
-    "impressions": 530,
-    "clicks": 0,
-    "pages_with_impressions": 69,
-    "avg_position": 34.9,
-    "query_level_impressions": 208
+    "impressions": 391,
+    "clicks": 1,
+    "pages_with_impressions": 70,
+    "avg_position": 34.8,
+    "query_level_impressions": 174
   },
   "correction": {
     "factor_impressions": 1.434,
@@ -19,12 +20,12 @@
     "last_calibrated": "2026-06-07",
     "calibration_source": "Qasem manual GSC UI check \u2014 Jun 7, 2026",
     "applied_to_official_kpi": false,
-    "note": "Correction factor is DOCUMENTATION ONLY. Not applied to official metrics per Phase 19.2."
+    "note": "Correction factor is DOCUMENTATION ONLY."
   },
   "corrected_estimate_fyi": {
-    "impressions": 760,
-    "clicks": 0,
-    "avg_position": 30.9,
-    "note": "FYI ONLY \u2014 NOT official. Correction factor from last manual UI check."
+    "impressions": 561,
+    "clicks": 1,
+    "avg_position": 30.8,
+    "note": "FYI ONLY \u2014 NOT official."
   }
 }

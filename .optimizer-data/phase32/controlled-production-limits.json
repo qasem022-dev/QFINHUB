@@ -1,0 +1,59 @@
+{
+  "phase": 32,
+  "title": "Controlled Production Limits",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:35:00+03:00",
+  "hard_rule": "Never exceed 50 pages/day without explicit approval. 0 pages/day acceptable if demand weak.",
+  "schedule": {
+    "week_1": {
+      "max_per_day": 10,
+      "databases": [
+        "DB3_loan_payment",
+        "DB2_mortgage_affordability"
+      ],
+      "stop_if": "pages not indexed after 7 days \u2192 improve quality"
+    },
+    "week_2": {
+      "max_per_day": 20,
+      "databases": [
+        "DB5_compound_interest",
+        "DB6_debt_payoff"
+      ],
+      "stop_if": "discovered-not-indexed ratio worsens OR no impressions after 14 days"
+    },
+    "week_3_4": {
+      "max_per_day": 30,
+      "databases": [
+        "DB1_salary_reality",
+        "DB4_fire_retirement"
+      ],
+      "required": "indexed pages increasing, impressions increasing, 0 errors"
+    },
+    "month_2": {
+      "max_per_day": 50,
+      "required": "indexing rate >= 40%, impressions growing, data assets published"
+    },
+    "month_3_6": {
+      "max_per_day": 50,
+      "strategy": "Scale winning DBs only. Kill losing DBs."
+    }
+  },
+  "deployment_rules": {
+    "batch_size": 25,
+    "frequency": "Every 2-3 days (gives Google time to process)",
+    "pre_checks": [
+      "quality >= 85",
+      "demand validated",
+      "self-canonical",
+      "no duplicate title/meta",
+      "parent link present"
+    ],
+    "post_checks": [
+      "HTTP 200 on all new pages",
+      "sitemap updated",
+      "no accidental noindex",
+      "verify indexable"
+    ]
+  },
+  "kill_rules": "Any DB with <10 indexed after 100 pages in 21 days = KILL. Any batch with quality issues = halt to 0."
+}

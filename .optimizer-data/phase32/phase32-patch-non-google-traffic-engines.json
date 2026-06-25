@@ -1,0 +1,161 @@
+{
+  "phase": "32-PATCH",
+  "title": "Non-Google Traffic Engines \u2014 Zero-Budget Distribution Layer",
+  "version": "1.0.0",
+  "created": "2026-06-18T02:30:00+03:00",
+  "principle": "Google alone may not be fast enough with 503 discovered-not-indexed. Build alternative traffic sources that cost $0 and require 0 manual work from Qasem.",
+  "engines": {
+    "bing_webmaster_indexnow": {
+      "setup_status": "UNKNOWN \u2014 needs verification",
+      "cost": "$0",
+      "manual_dependency": "One-time setup only",
+      "automation_safety": "SAFE \u2014 sitemap submission is standard practice",
+      "traffic_potential": "5-15% of Google traffic (Bing has ~7% US search share for finance queries)",
+      "risk": "VERY LOW",
+      "action": "Check if Bing Webmaster Tools account exists. If yes, submit sitemap. If no, create account (free) and submit."
+    },
+    "rss_feed": {
+      "setup_status": "CHECK \u2014 need to verify if RSS feed exists",
+      "cost": "$0",
+      "manual_dependency": "None \u2014 auto-update with new pages",
+      "automation_safety": "SAFE \u2014 standard web feature",
+      "traffic_potential": "LOW (feeds primarily for discovery, not direct traffic)",
+      "risk": "NONE",
+      "action": "Build or verify RSS feed for new pages. Include in site header for auto-discovery."
+    },
+    "public_data_hub": {
+      "setup_status": "PLANNED \u2014 /data hub in Phase 32 plan",
+      "cost": "$0",
+      "manual_dependency": "None \u2014 auto-updated with data assets",
+      "automation_safety": "SAFE \u2014 internal page, no external dependency",
+      "traffic_potential": "MEDIUM \u2014 data pages can rank independently for 'mortgage affordability table', 'loan payment table', etc.",
+      "risk": "NONE",
+      "action": "Build /data hub as required infrastructure (Task 8). Include CSV downloads for journalists."
+    },
+    "public_csv_downloads": {
+      "setup_status": "PLANNED \u2014 part of /data hub",
+      "cost": "$0",
+      "manual_dependency": "None \u2014 auto-generated from database calculations",
+      "automation_safety": "SAFE \u2014 static file serving",
+      "traffic_potential": "LOW-MEDIUM \u2014 CSV files can be indexed and linked by data aggregators",
+      "risk": "NONE",
+      "action": "Generate CSV for each data asset. Link from /data hub pages."
+    },
+    "pinterest_pins": {
+      "setup_status": "CHECK \u2014 previous Pinterest system was deleted (Phase 15.2). Verify if account still exists.",
+      "cost": "$0",
+      "manual_dependency": "None if API workflow works. Manual if account needs setup.",
+      "automation_safety": "CAUTION \u2014 previous Pinterest crons were deleted for safety. Only re-enable if clean.",
+      "traffic_potential": "LOW \u2014 previous Pinterest generated 1 session/7d, 315 views. Not a meaningful traffic source for calculators.",
+      "risk": "LOW if safe. DO NOT automate posting at scale.",
+      "action": "If account exists and is safe: manually pin top 5 data assets with good images. Max 5 pins/week. Do NOT build automated Pinterest cron."
+    },
+    "ai_answer_formatting": {
+      "setup_status": "PLANNED \u2014 AI answer engine plan (Task 12) defines page structure",
+      "cost": "$0",
+      "manual_dependency": "None \u2014 built into page template",
+      "automation_safety": "SAFE \u2014 just HTML structure, no external service",
+      "traffic_potential": "MEDIUM-HIGH \u2014 AI platforms (ChatGPT, Perplexity, etc.) increasingly cite web sources. Well-structured data pages are more likely to be referenced.",
+      "risk": "NONE",
+      "action": "Ensure all pages follow AI answer structure: direct answer block, formula block, assumptions table, worked example, caveats. This is already in the template."
+    },
+    "internal_popular_calculations_hub": {
+      "setup_status": "NOT BUILT \u2014 new idea",
+      "cost": "$0",
+      "manual_dependency": "None \u2014 auto-populated from database pages",
+      "automation_safety": "SAFE \u2014 internal page",
+      "traffic_potential": "LOW-MEDIUM \u2014 internal navigation pages can rank for broad queries like 'loan payment examples'",
+      "risk": "NONE",
+      "action": "Build /popular-calculations or /examples page that links to top database pages. Auto-update with most-viewed pages."
+    },
+    "programmatic_share_images": {
+      "setup_status": "NOT BUILT",
+      "cost": "$0 (can use simple HTML-to-image or SVG approach)",
+      "manual_dependency": "One-time template setup",
+      "automation_safety": "SAFE \u2014 local image generation",
+      "traffic_potential": "LOW \u2014 social shares of calculator pages are rare. More useful for data assets.",
+      "risk": "VERY LOW",
+      "action": "Generate simple share images for data assets only (not every database page). Include key number + QFINHUB branding."
+    },
+    "github_public_data_repo": {
+      "setup_status": "NOT BUILT",
+      "cost": "$0",
+      "manual_dependency": "One-time repo creation. Auto-update via git.",
+      "automation_safety": "SAFE \u2014 standard GitHub usage",
+      "traffic_potential": "LOW \u2014 primarily for credibility, not direct traffic",
+      "risk": "LOW \u2014 verify GitHub ToS allows data publishing",
+      "action": "Create public GitHub repo 'qfinhub-financial-data' with CSVs from data assets. Link from /data hub. Only if safe per GitHub terms."
+    },
+    "newsletter_archive_page": {
+      "setup_status": "NOT BUILT",
+      "cost": "$0 (no email sending \u2014 just a public page)",
+      "manual_dependency": "None \u2014 auto-update with data assets",
+      "automation_safety": "SAFE \u2014 static page, no email infrastructure needed",
+      "traffic_potential": "LOW \u2014 primarily an archive, not a traffic driver",
+      "risk": "NONE",
+      "action": "Build /data/archive page listing all data assets chronologically. No email collection, no sending. Just an archive page."
+    }
+  },
+  "prioritized_action_list": [
+    {
+      "priority": 1,
+      "engine": "data_hub",
+      "action": "Build /data hub with loan + mortgage tables. HIGHEST PRIORITY."
+    },
+    {
+      "priority": 2,
+      "engine": "rss_feed",
+      "action": "Verify RSS feed exists. Build if not."
+    },
+    {
+      "priority": 3,
+      "engine": "ai_answer_formatting",
+      "action": "Ensure all database pages follow AI answer template."
+    },
+    {
+      "priority": 4,
+      "engine": "bing_webmaster",
+      "action": "Check if Bing account exists. Submit sitemap."
+    },
+    {
+      "priority": 5,
+      "engine": "internal_hub",
+      "action": "Build /popular-calculations page."
+    },
+    {
+      "priority": 6,
+      "engine": "public_csv",
+      "action": "Add CSV downloads to /data hub."
+    },
+    {
+      "priority": 7,
+      "engine": "share_images",
+      "action": "Generate share images for data assets."
+    },
+    {
+      "priority": 8,
+      "engine": "github_repo",
+      "action": "Create data repo if safe."
+    },
+    {
+      "priority": 9,
+      "engine": "newsletter_archive",
+      "action": "Build /data/archive page."
+    },
+    {
+      "priority": 10,
+      "engine": "pinterest",
+      "action": "Manual pin only. No automation."
+    }
+  ],
+  "blocked_channels": [
+    "Fake social engagement",
+    "Bot traffic",
+    "Paid ads",
+    "Paid submissions",
+    "Reddit/Quora automation spam",
+    "Manual form filling",
+    "Fake accounts",
+    "Email outreach (failed \u2014 70 sent, 0 replies)"
+  ]
+}

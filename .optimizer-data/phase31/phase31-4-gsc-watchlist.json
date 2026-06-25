@@ -1,0 +1,71 @@
+{
+  "phase": "31.4",
+  "title": "GSC Watchlist \u2014 Pages Expected to Benefit from Fix",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:48:27.605450",
+  "measurement_windows": {
+    "day_3": "Jun 20",
+    "day_7": "Jun 24",
+    "day_14": "Jul 1",
+    "day_28": "Jul 15"
+  },
+  "pages": {
+    "loan_calculator": {
+      "url": "/calculators/loan-calculator",
+      "links_fixed": 64,
+      "clicks": 0,
+      "impressions": "unknown",
+      "position": "unknown",
+      "expected_movement": "impressions increase as authority flows",
+      "success": "any impression increase",
+      "failure": "no change after 28 days"
+    },
+    "budget_planner": {
+      "url": "/calculators/budget-planner",
+      "links_fixed": 19,
+      "clicks": 0,
+      "impressions": "unknown",
+      "position": "unknown",
+      "expected_movement": "impressions increase",
+      "success": "any impression increase",
+      "failure": "no change after 28 days"
+    },
+    "retirement_planning": {
+      "url": "/calculators/retirement-planning",
+      "links_fixed": 6,
+      "clicks": 0,
+      "impressions": 11,
+      "position": 81.5,
+      "expected_movement": "position improvement toward 60-70",
+      "success": "position <75 or impressions +5",
+      "failure": "no change after 28 days"
+    },
+    "20000_loan_blog": {
+      "url": "/blog/20000-loan",
+      "clicks": 0,
+      "impressions": 124,
+      "position": 10.9,
+      "expected_movement": "first content click",
+      "success": "any click",
+      "failure": "0 clicks after 14 days at position 10.9"
+    },
+    "rent_vs_buy": {
+      "url": "/decision/rent-vs-buy",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 4.0,
+      "expected_movement": "impressions increase from title broadening",
+      "success": "impressions >10",
+      "failure": "impressions still 2 after 21 days"
+    },
+    "how_much_house": {
+      "url": "/decision/how-much-house",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 7.5,
+      "expected_movement": "impressions increase",
+      "success": "impressions >10",
+      "failure": "no change after 21 days"
+    }
+  }
+}

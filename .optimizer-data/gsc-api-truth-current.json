@@ -1,16 +1,18 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-06-16T21:12:35.146931+00:00",
-  "pulled_at": "2026-06-16T21:12:35Z",
+  "generated": "2026-06-25T00:36:08.602593+00:00",
+  "pulled_at": "2026-06-25T00:36:08Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
+  "auth_method": "service_account",
+  "service_account_email": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
   "date_range": {
-    "start": "2026-06-07",
-    "end": "2026-06-13"
+    "start": "2026-06-16",
+    "end": "2026-06-22"
   },
   "previous_7d_range": {
-    "start": "2026-05-31",
-    "end": "2026-06-06"
+    "start": "2026-06-09",
+    "end": "2026-06-15"
   },
   "dimensions_pulled": [
     "page",
@@ -19,36 +21,36 @@
   ],
   "row_limits": 500,
   "metrics_7d": {
-    "impressions": 530,
-    "clicks": 0,
-    "ctr_pct": 0.0,
-    "avg_position": 34.9,
-    "pages_with_impressions": 69,
-    "query_count": 68,
-    "query_impressions": 208,
-    "query_page_rows": 68
+    "impressions": 391,
+    "clicks": 1,
+    "ctr_pct": 0.3,
+    "avg_position": 34.8,
+    "pages_with_impressions": 70,
+    "query_count": 78,
+    "query_impressions": 174,
+    "query_page_rows": 79
   },
   "metrics_28d": {
-    "impressions": 1591,
+    "impressions": 1705,
     "clicks": 1,
-    "pages_with_impressions": 147,
+    "pages_with_impressions": 124,
     "pages_with_clicks": 1,
     "clicked_pages": [
-      "https://www.qfinhub.com/"
+      "https://www.qfinhub.com/tools/investment-25k-10yr"
     ]
   },
   "previous_7d": {
-    "start": "2026-05-31",
-    "end": "2026-06-06",
-    "impressions": 466
+    "start": "2026-06-09",
+    "end": "2026-06-15",
+    "impressions": 569
   },
   "change_7d": {
-    "impressions": 64,
-    "impressions_pct": 13.7
+    "impressions": -178,
+    "impressions_pct": -31.3
   },
   "freshness_proof": {
     "freshness": "FRESH",
-    "checksum": "ec036193cf09",
+    "checksum": "b167784d9444",
     "previous_checksum": null,
     "date_range_advanced": false,
     "cache_used": false,

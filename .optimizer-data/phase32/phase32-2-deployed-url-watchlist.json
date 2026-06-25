@@ -1,0 +1,77 @@
+{
+  "phase": "32.3",
+  "title": "Batch 1 Watchlist \u2014 6 Live URLs (Updated)",
+  "updated": "2026-06-18T05:30:00+03:00",
+  "urls": [
+    {
+      "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "deployed": "2026-06-18",
+      "day_0_http": 200,
+      "sitemap": "pending verify",
+      "discovered": "pending",
+      "indexed": "pending",
+      "impressions": 0,
+      "clicks": 0
+    },
+    {
+      "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+      "deployed": "2026-06-18",
+      "day_0_http": 200,
+      "sitemap": "pending verify",
+      "discovered": "pending",
+      "indexed": "pending",
+      "impressions": 0,
+      "clicks": 0
+    },
+    {
+      "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "deployed": "2026-06-18",
+      "day_0_http": 200,
+      "sitemap": "pending verify",
+      "discovered": "pending",
+      "indexed": "pending",
+      "impressions": 0,
+      "clicks": 0
+    },
+    {
+      "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "deployed": "2026-06-18",
+      "day_0_http": 200,
+      "sitemap": "pending verify",
+      "discovered": "pending",
+      "indexed": "pending",
+      "impressions": 0,
+      "clicks": 0
+    },
+    {
+      "url": "/loan-payment-table",
+      "deployed": "2026-06-18",
+      "day_0_http": 200,
+      "sitemap": "pending verify",
+      "discovered": "pending",
+      "indexed": "pending",
+      "impressions": 0,
+      "clicks": 0
+    },
+    {
+      "url": "/data",
+      "deployed": "2026-06-18",
+      "day_0_http": 200,
+      "sitemap": "pending verify",
+      "discovered": "pending",
+      "indexed": "pending",
+      "impressions": 0,
+      "clicks": 0
+    }
+  ],
+  "internal_links_added": "6 links from /all-pages to new URLs",
+  "parent_loan_calculator_status": "Stable \u2014 impressions unchanged (562 imp/7d baseline)",
+  "discovered_not_indexed_baseline": 503,
+  "checkpoints": {
+    "day_3": "Jun 21",
+    "day_7": "Jun 25",
+    "day_14": "Jul 2",
+    "day_21": "Jul 9",
+    "day_30": "Jul 18"
+  }
+}

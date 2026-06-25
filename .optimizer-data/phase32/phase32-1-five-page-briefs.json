@@ -1,0 +1,216 @@
+{
+  "phase": "32.1",
+  "title": "Five Hand-Crafted Pillar Scenario Pages \u2014 Page Briefs",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:00:00+03:00",
+  "parent_money_page": "/calculators/loan-calculator",
+  "principle": "Each page must answer: What does this page provide that the generic Loan Calculator page does not?",
+  "pages": {
+    "page_1_small_emergency_loan": {
+      "slug": "small-emergency-loan-5000-15-percent",
+      "url": "/calculators/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "target_query": "$5,000 loan at 15 percent monthly payment",
+      "secondary_queries": [
+        "small personal loan 5000",
+        "emergency loan 5000 monthly payment",
+        "5000 loan 3 years at 15 percent",
+        "small loan high interest"
+      ],
+      "search_intent": "CALCULATOR \u2014 user wants to know the monthly payment for a small loan at a higher rate",
+      "unique_use_case": "Small emergency loans ($1K-$5K) carry higher rates because lenders have fixed costs. This page explains WHY small loans cost more and provides alternatives to high-rate small loans.",
+      "why_this_page_deserves_to_exist": "The generic Loan Calculator shows any payment, but it doesn't explain that $5K loans have higher APRs than $20K loans due to lender economics. This page provides context the parent calculator cannot: why small loans cost more, alternatives to high-rate lending, and when a small loan actually makes sense.",
+      "calculation_variables": {
+        "loan_amount": 5000,
+        "apr": 15,
+        "term_years": 3,
+        "term_months": 36
+      },
+      "expected_monthly_payment": "$173.00",
+      "total_interest": "$1,228.00",
+      "total_repayment": "$6,228.00",
+      "interest_as_pct_of_principal": "24.6%",
+      "alternative_scenario": "Same $5,000 at 8% (excellent credit) = $156.68/mo, saving $588 in interest",
+      "risk_warning": "At 15% APR, you're paying nearly 25% extra on top of the principal. For small amounts, consider a credit union personal loan (often 8-12%) or a 0% APR credit card if eligible.",
+      "comparison_angle": "Compare 15% (fair credit) vs 8% (good credit) vs 25% (poor credit) for the same $5K amount. Show the real dollar cost of your credit score.",
+      "internal_links": [
+        "Parent: /calculators/loan-calculator",
+        "Sibling: /calculators/loan-scenarios/good-credit-loan-20000-8-percent (compare small vs large)",
+        "Hub: /loan-payment-table"
+      ],
+      "schema_plan": [
+        "BreadcrumbList",
+        "SoftwareApplication (Calculator)",
+        "FAQ"
+      ],
+      "quality_target": 92,
+      "doorway_defense": "This is NOT a number-swap variant. It teaches WHY small loans cost more \u2014 unique educational content not found on generic calculator pages or other scenario pages."
+    },
+    "page_2_good_credit_loan": {
+      "slug": "good-credit-loan-20000-8-percent",
+      "url": "/calculators/loan-scenarios/good-credit-loan-20000-8-percent",
+      "target_query": "$20,000 loan at 8 percent",
+      "secondary_queries": [
+        "20000 personal loan good credit",
+        "20000 loan monthly payment",
+        "20000 loan at 8 percent for 5 years",
+        "what credit score for 8 percent loan"
+      ],
+      "search_intent": "CALCULATOR \u2014 user wants to know the monthly payment for a $20K loan at a good rate",
+      "unique_use_case": "The 'ideal' personal loan scenario \u2014 good credit, reasonable rate, medium amount. This is the benchmark page that other scenarios compare against.",
+      "why_this_page_deserves_to_exist": "This is the GSC-validated query (114 impressions, pos 10.8). The existing $20K blog post ranks for this query but is an educational article, not a calculator-result page. This page serves the CALCULATOR intent, while the blog serves the EXPLANATORY intent. They are complementary, not competing.",
+      "calculation_variables": {
+        "loan_amount": 20000,
+        "apr": 8,
+        "term_years": 5,
+        "term_months": 60
+      },
+      "expected_monthly_payment": "$405.53",
+      "total_interest": "$4,331.80",
+      "total_repayment": "$24,331.80",
+      "interest_as_pct_of_principal": "21.7%",
+      "alternative_scenario": "Same $20,000 at 12% (average credit) = $444.89/mo \u2014 $2,362 more in interest over 5 years",
+      "risk_warning": "Even at a 'good' 8% rate, you pay $4,332 in interest \u2014 that's 22% of the loan amount. Consider a shorter term (3 years) to reduce total interest, though monthly payments will be higher.",
+      "comparison_angle": "Compare 8% vs 12% vs 20% for the same $20K amount. Show how much good credit saves you \u2014 $2,362 vs average credit, $7,134 vs poor credit.",
+      "internal_links": [
+        "Parent: /calculators/loan-calculator",
+        "Sibling: fair-credit-loan-20000-20-percent (compare good vs poor credit)",
+        "Related: /blog/20000-loan-at-8-percent... (educational context)",
+        "Hub: /loan-payment-table"
+      ],
+      "schema_plan": [
+        "BreadcrumbList",
+        "SoftwareApplication (Calculator)",
+        "FAQ"
+      ],
+      "quality_target": 95,
+      "doorway_defense": "GSC-validated demand (114 imp). Serves calculator intent distinct from blog. Rich credit education content. Not a template \u2014 the benchmark page with unique comparisons."
+    },
+    "page_3_debt_consolidation_loan": {
+      "slug": "debt-consolidation-loan-25000-10-percent",
+      "url": "/calculators/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "target_query": "$25,000 debt consolidation loan monthly payment",
+      "secondary_queries": [
+        "25000 loan at 10 percent",
+        "debt consolidation 25000",
+        "consolidate 25000 debt monthly payment",
+        "personal loan to pay off credit cards 25000"
+      ],
+      "search_intent": "CALCULATOR + COMPARISON \u2014 user wants to know if consolidating debt with a personal loan saves money vs credit cards",
+      "unique_use_case": "Debt consolidation is the #1 reason people take personal loans. This page directly addresses the 'should I consolidate?' question with a comparison to credit card APR.",
+      "why_this_page_deserves_to_exist": "The generic Loan Calculator doesn't compare loan rates to credit card rates. This page shows: 'If you're paying 25% APR on credit cards, a 10% consolidation loan saves you $X,XXX.' This is a decision-support page, not just a payment calculator.",
+      "calculation_variables": {
+        "loan_amount": 25000,
+        "apr": 10,
+        "term_years": 7,
+        "term_months": 84
+      },
+      "expected_monthly_payment": "$415.19",
+      "total_interest": "$9,876.00",
+      "total_repayment": "$34,876.00",
+      "interest_as_pct_of_principal": "39.5%",
+      "alternative_scenario": "If you kept $25K on credit cards at 25% APR and paid $415/mo: it would take 11+ years and cost $34,000+ in interest. The consolidation loan saves ~$24,000.",
+      "risk_warning": "Consolidating debt only works if you stop using the credit cards. Many people consolidate, then run up new credit card balances \u2014 ending up with DOUBLE the debt. This page must include this warning prominently.",
+      "comparison_angle": "Consolidation loan (10%, 7yr) vs credit cards (25%, minimum payments) vs avalanche method. Show the math of each.",
+      "internal_links": [
+        "Parent: /calculators/loan-calculator",
+        "Sibling: good-credit-loan-20000-8-percent",
+        "Related: /calculators/debt-payoff (when available)",
+        "Hub: /loan-payment-table"
+      ],
+      "schema_plan": [
+        "BreadcrumbList",
+        "SoftwareApplication (Calculator)",
+        "FAQ"
+      ],
+      "quality_target": 93,
+      "doorway_defense": "Unique consolidation comparison content. Addresses a specific financial decision (consolidate vs don't). Not replicable by just changing the numbers \u2014 the comparison to credit card debt is the core unique value."
+    },
+    "page_4_auto_large_purchase_loan": {
+      "slug": "auto-large-purchase-loan-30000-7-percent",
+      "url": "/calculators/loan-scenarios/auto-large-purchase-loan-30000-7-percent",
+      "target_query": "$30,000 loan at 7 percent monthly payment",
+      "secondary_queries": [
+        "30000 auto loan 7 percent",
+        "30000 personal loan 5 years",
+        "car loan 30000 at 7 percent",
+        "large purchase loan 30000"
+      ],
+      "search_intent": "CALCULATOR \u2014 user wants to know the monthly payment for a $30K auto or large purchase loan at a competitive rate",
+      "unique_use_case": "Auto loans and large purchase loans typically have lower rates than general personal loans because they may be secured. This page explains the difference between secured and unsecured loans for large purchases.",
+      "why_this_page_deserves_to_exist": "Someone buying a $30K car at a dealership will be offered dealer financing (often 5-9%). This page gives them a benchmark to compare against. It also explains secured vs unsecured loan rates \u2014 content not on the generic calculator.",
+      "calculation_variables": {
+        "loan_amount": 30000,
+        "apr": 7,
+        "term_years": 5,
+        "term_months": 60
+      },
+      "expected_monthly_payment": "$594.04",
+      "total_interest": "$5,642.40",
+      "total_repayment": "$35,642.40",
+      "interest_as_pct_of_principal": "18.8%",
+      "alternative_scenario": "Dealer financing at 9% = $622.75/mo \u2014 $1,723 more over 5 years. 3-year term at 7% = $926.33/mo \u2014 saves $2,307 in interest but higher monthly.",
+      "risk_warning": "A $30K car loan means you're paying $35,642 total \u2014 the car must be worth it. Also: if this is an unsecured personal loan at 7%, verify it's not a secured loan disguised as personal (some lenders require collateral for this amount).",
+      "comparison_angle": "Dealer financing (9%) vs personal loan (7%) vs shorter term (3yr at 7%). Also compare to lease payments for same vehicle.",
+      "internal_links": [
+        "Parent: /calculators/loan-calculator",
+        "Sibling: good-credit-loan-20000-8-percent",
+        "Related: /calculators/auto-loan-calculator (if exists)",
+        "Hub: /loan-payment-table"
+      ],
+      "schema_plan": [
+        "BreadcrumbList",
+        "SoftwareApplication (Calculator)",
+        "FAQ"
+      ],
+      "quality_target": 91,
+      "doorway_defense": "Auto/large purchase context is unique. Secured vs unsecured education is unique content. Dealer financing comparison is actionable value not found elsewhere."
+    },
+    "page_5_fair_credit_reality": {
+      "slug": "fair-credit-loan-20000-20-percent",
+      "url": "/calculators/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "target_query": "$20,000 loan at 20 percent interest",
+      "secondary_queries": [
+        "20000 loan bad credit",
+        "20000 personal loan high interest",
+        "20000 loan fair credit monthly payment",
+        "is 20 percent apr high for personal loan"
+      ],
+      "search_intent": "CALCULATOR + REALITY CHECK \u2014 user likely has fair/poor credit and wants to know what they'll actually pay",
+      "unique_use_case": "The reality check page. Shows what happens when you have lower credit \u2014 the same $20K loan costs $7,000+ more in interest than at 8%. This is the 'should I even take this loan?' page.",
+      "why_this_page_deserves_to_exist": "Many people with fair credit don't realize how much more they pay. This page doesn't just calculate \u2014 it EDUCATES and WARNS. It shows the cost of borrowing with lower credit and offers alternatives (credit improvement, smaller loan, secured options).",
+      "calculation_variables": {
+        "loan_amount": 20000,
+        "apr": 20,
+        "term_years": 5,
+        "term_months": 60
+      },
+      "expected_monthly_payment": "$529.88",
+      "total_interest": "$11,792.80",
+      "total_repayment": "$31,792.80",
+      "interest_as_pct_of_principal": "59.0%",
+      "alternative_scenario": "Same $20K at 8% (good credit) = $405.53/mo \u2014 saves $7,461. If you improve credit from 620 to 680, you might qualify for 12-15% instead of 20%.",
+      "risk_warning": "At 20% APR, you'll pay nearly 60% of the loan amount in interest alone. This is expensive money. Consider: (1) Can you borrow less? $10K at 20% costs $264.94/mo. (2) Can you improve credit first? 6 months of credit building could save thousands. (3) Is there a secured alternative? A secured loan or co-signer may offer lower rates.",
+      "comparison_angle": "Same $20K: 8% (excellent) vs 12% (good) vs 20% (fair) vs 30% (poor). Show the brutal math \u2014 credit score affects total cost by $10,000+ on the same loan.",
+      "internal_links": [
+        "Parent: /calculators/loan-calculator",
+        "Sibling: good-credit-loan-20000-8-percent (direct comparison)",
+        "Hub: /loan-payment-table"
+      ],
+      "schema_plan": [
+        "BreadcrumbList",
+        "SoftwareApplication (Calculator)",
+        "FAQ"
+      ],
+      "quality_target": 94,
+      "doorway_defense": "Not a number-swap \u2014 the entire page narrative changes for high-rate scenarios. It becomes a credit education and warning page, not just a calculator. This intent shift is unique and defensible."
+    }
+  },
+  "cross_page_rules": [
+    "Each page targets a DIFFERENT use case, intent, and audience",
+    "Page 2 ($20K at 8%) and Page 5 ($20K at 20%) use the same loan amount but TOTALLY DIFFERENT narratives \u2014 good credit benchmark vs fair credit warning",
+    "All pages link to each other contextually (not auto-generated link blocks)",
+    "No two pages share the same comparison table \u2014 each comparison is tailored to the use case",
+    "FAQs are unique per page \u2014 not templated",
+    "Titles and metas are descriptive and unique \u2014 no 'X Loan at Y%' pattern reuse"
+  ]
+}

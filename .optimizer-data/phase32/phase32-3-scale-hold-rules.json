@@ -1,0 +1,26 @@
+{
+  "phase": "32.3",
+  "title": "Scale / Hold Decision Rules \u2014 Jun 25 Checkpoint",
+  "decision_date": "2026-06-25 (Day 7 after deploy)",
+  "scale_and_deploy_batch2_if": {
+    "discovery": "At least 3 of 6 URLs discovered by Google (visible in GSC URL Inspection)",
+    "technical": "No technical issues \u2014 all URLs 200, 0 broken links, sitemap correct",
+    "indexing_signal": "No discovered-not-indexed spike (>50 increase from 503 baseline)",
+    "parent_safety": "Loan Calculator impressions stable or improving (within 20% of 562 baseline)",
+    "crawl_signs": "At least 1 URL indexed OR GSC shows crawl activity on new URLs"
+  },
+  "hold_batch2_if": {
+    "no_discovery": "0 URLs discovered by Day 7",
+    "indexing_issue": "New URLs enter discovered-not-indexed immediately without crawl (quality signal problem)",
+    "technical_issues": "Broken links or errors appear on new URLs",
+    "cannibalization": "Loan Calculator impressions drop >20%",
+    "broken_links": "Any broken links detected on new URLs"
+  },
+  "deploy_batch2_requirements": [
+    "All 5 Batch 2 pages score 90+",
+    "All 5 Batch 2 pages pass doorway audit = SAFE",
+    "Auditor approves Batch 2 for deployment",
+    "At least discovery/crawl progress from Batch 1"
+  ],
+  "current_assessment": "Day 0 \u2014 too early to assess. Reassess Jun 21 (Day 3) and Jun 25 (Day 7)."
+}

@@ -1,0 +1,170 @@
+{
+  "phase": "32.1",
+  "title": "Internal Link Plan \u2014 7 New URLs",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:30:00+03:00",
+  "rules": [
+    "No footer/sidebar spam",
+    "No exact-match anchor abuse",
+    "Contextual links only \u2014 mentioned where relevant in body text",
+    "Maximum 5 contextual outbound links per page",
+    "Parent calculator linked once in body + once in CTA (max 2)"
+  ],
+  "link_map": {
+    "scenario_page_1_small_emergency": {
+      "links_out": [
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "Try different amounts \u2014 free Loan Calculator",
+          "context": "CTA at bottom of page"
+        },
+        {
+          "to": "/loan-payment-table",
+          "anchor": "See all loan scenarios compared",
+          "context": "After comparison table"
+        },
+        {
+          "to": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+          "anchor": "See what bad credit costs on a $20K loan",
+          "context": "In 'when this loan is risky' section"
+        }
+      ]
+    },
+    "scenario_page_2_good_credit": {
+      "links_out": [
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "Calculate your exact loan payment",
+          "context": "CTA at bottom"
+        },
+        {
+          "to": "/loan-payment-table",
+          "anchor": "Compare all loan scenarios",
+          "context": "After comparison table"
+        },
+        {
+          "to": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+          "anchor": "Same $20,000 at 20% \u2014 see the difference",
+          "context": "In comparison table"
+        },
+        {
+          "to": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "anchor": "Read our guide on how $20K loans work",
+          "context": "Before FAQ section"
+        }
+      ]
+    },
+    "scenario_page_3_debt_consolidation": {
+      "links_out": [
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "Calculate your consolidation payment",
+          "context": "CTA"
+        },
+        {
+          "to": "/loan-payment-table",
+          "anchor": "See all loan scenarios",
+          "context": "After comparison"
+        },
+        {
+          "to": "/calculators/debt-payoff",
+          "anchor": "Compare debt payoff strategies",
+          "context": "In 'when this loan makes sense' section (if debt-payoff page exists)"
+        }
+      ]
+    },
+    "scenario_page_4_auto_large_purchase": {
+      "links_out": [
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "Calculate any loan payment",
+          "context": "CTA"
+        },
+        {
+          "to": "/loan-payment-table",
+          "anchor": "See all loan scenarios",
+          "context": "After comparison"
+        },
+        {
+          "to": "/loan-scenarios/good-credit-loan-20000-8-percent",
+          "anchor": "See what 8% looks like on $20K",
+          "context": "In rate comparison"
+        }
+      ]
+    },
+    "scenario_page_5_fair_credit": {
+      "links_out": [
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "See what you'd pay with better credit",
+          "context": "CTA"
+        },
+        {
+          "to": "/loan-payment-table",
+          "anchor": "Compare all loan scenarios",
+          "context": "After comparison"
+        },
+        {
+          "to": "/loan-scenarios/good-credit-loan-20000-8-percent",
+          "anchor": "Same $20K with excellent credit \u2014 $405/month",
+          "context": "In comparison table (highlighted link)"
+        }
+      ]
+    },
+    "loan_payment_hub": {
+      "links_out": [
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "Calculate your exact loan payment",
+          "context": "Top of page"
+        },
+        {
+          "to": "/loan-scenarios/*",
+          "anchor": "Each scenario row links to its detail page",
+          "context": "Table rows"
+        }
+      ]
+    },
+    "data_hub": {
+      "links_out": [
+        {
+          "to": "/loan-payment-table",
+          "anchor": "View full loan payment table",
+          "context": "Loan section"
+        },
+        {
+          "to": "/calculators/loan-calculator",
+          "anchor": "Try the loan calculator",
+          "context": "Loan section"
+        },
+        {
+          "to": "/calculators/mortgage-affordability",
+          "anchor": "Try the mortgage affordability calculator",
+          "context": "Mortgage section"
+        }
+      ]
+    }
+  },
+  "existing_pages_updated": {
+    "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment": {
+      "add_links_to": [
+        "/loan-scenarios/good-credit-loan-20000-8-percent"
+      ],
+      "anchor": "Calculate your exact $20K loan payment \u2014 see what you'd pay at different rates",
+      "note": "Only add this link if it fits naturally in the blog content. Do NOT force it. The blog already has good content \u2014 don't disrupt it."
+    },
+    "/calculators/loan-calculator": {
+      "add_links_to": [
+        "/loan-payment-table"
+      ],
+      "anchor": "See common loan scenarios and payment examples",
+      "note": "Optional \u2014 only add if it enhances the calculator page. Many calculators have 'see examples' links."
+    }
+  },
+  "no_link_changes_to": [
+    "Phase 31 edit hold pages (6 pages, until Jun 24)",
+    "The $20K loan blog if link feels forced",
+    "Footer or navigation \u2014 no global changes"
+  ],
+  "summary": "Clean internal link architecture. No spam. Contextual links only. Parent calculator supported, not cannibalized."
+}

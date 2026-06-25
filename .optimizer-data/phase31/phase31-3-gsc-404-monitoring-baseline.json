@@ -1,0 +1,18 @@
+{
+  "phase": "31.3",
+  "title": "GSC 404 Monitoring Baseline",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:42:38.422815",
+  "baseline": {
+    "current_404_count": 125,
+    "date": "Jun 17, 2026",
+    "source": "Qasem GSC UI"
+  },
+  "expected_impact": "~90 of 125 404s were from broken blog relatedCalculators (loan/retirement/budget/inflation). These should decay within 2-4 weeks as Google recrawls blog pages.",
+  "check_dates": {
+    "day_7": "Jun 24",
+    "day_14": "Jul 1",
+    "day_28": "Jul 15"
+  },
+  "validate_fix": "DO_NOT_VALIDATE_YET"
+}

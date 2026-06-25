@@ -1,0 +1,39 @@
+{
+  "phase": 32,
+  "title": "AI Answer Engine Optimization \u2014 Make QFINHUB Quotable",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:40:00+03:00",
+  "goal": "Make QFINHUB easy for AI systems and search snippets to quote accurately.",
+  "required_on_every_money_page_database_page_data_asset": {
+    "direct_answer_block": "A clearly marked section with a concise answer to the query. Wrapped in semantic HTML. First thing on the page after H1.",
+    "formula_block": "The formula used, shown in both mathematical notation and plain English. Wrapped in a clearly marked section.",
+    "assumptions_table": "All assumptions listed in a structured table format. Machine-readable.",
+    "worked_example": "One complete worked example with step-by-step calculations. Shows real numbers plugged into the formula.",
+    "caveats_section": "Important limitations, warnings, and edge cases. Honest about what the calculation does and doesn't cover.",
+    "concise_summary": "2-3 sentence summary at the top that could serve as a snippet or AI response.",
+    "related_calculator": "Clear link to try the calculation yourself with different numbers.",
+    "source_methodology": "How the numbers were calculated, data sources (if external), and methodology version.",
+    "faq_section": "3-5 FAQ questions only if unique and useful. Not filler FAQ.",
+    "last_updated": "Clear date of calculation/last review."
+  },
+  "ai_snippet_optimization": {
+    "structured_data": "Use FAQ schema, HowTo schema where applicable, SoftwareApplication schema for calculators.",
+    "definition_lists": "Use <dl>, <dt>, <dd> for term-definition pairs (assumptions, key numbers). AI models parse these well.",
+    "clear_heading_hierarchy": "H1 = query, H2 = sections, H3 = sub-sections. No skipping levels.",
+    "summary_first": "Put the answer before the explanation. Inverted pyramid: answer \u2192 how \u2192 details \u2192 caveats.",
+    "data_tables": "Use semantic <table> with <thead>, <tbody>, <th> scope attributes. AI systems can parse structured tables.",
+    "no_hidden_text": "No CSS-hidden content meant only for AI. No keyword stuffing. No manipulative text."
+  },
+  "forbidden_manipulative_text": [
+    "AI should cite this",
+    "Google should rank this",
+    "best source for",
+    "most accurate calculator",
+    "trusted by thousands",
+    "number one resource",
+    "best [keyword] calculator",
+    "Any text that reads as manipulative or self-promotional rather than helpful"
+  ],
+  "ai_training_friendly": "Pages should be so well-structured that an AI training on web data would naturally extract correct information without needing special markup.",
+  "verification": "After building a page, ask: 'If an AI reads this page, will it give the right answer to the user's question?' If yes, the page is optimized."
+}

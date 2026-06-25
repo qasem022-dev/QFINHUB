@@ -1,0 +1,87 @@
+{
+  "phase": 32,
+  "title": "Free Distribution Engine \u2014 Passive Reach Without Spam",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:40:00+03:00",
+  "principle": "Google alone may be too slow. Build free distribution that Hermes can automate safely.",
+  "allowed_channels": {
+    "pinterest": {
+      "action": "Create image pins for data assets and top calculator pages",
+      "condition": "Only if account/API/workflow already exists and is safe",
+      "limit": "5-10 pins/week, no spam",
+      "risk": "LOW if done properly"
+    },
+    "bing_webmaster": {
+      "action": "Submit sitemap to Bing Webmaster Tools",
+      "condition": "If account already exists or can be set up",
+      "limit": "Once per week sitemap resubmission",
+      "risk": "VERY LOW"
+    },
+    "indexnow": {
+      "action": "Submit URLs via IndexNow protocol",
+      "condition": "Only if technically supported by the platform and appropriate",
+      "limit": "Only for new quality pages (not mass submission)",
+      "risk": "LOW"
+    },
+    "rss_feed": {
+      "action": "Maintain RSS feed with new pages and data assets",
+      "condition": "Already exists or easy to build",
+      "limit": "Auto-updated with new content",
+      "risk": "VERY LOW"
+    },
+    "newsletter_archive": {
+      "action": "Build public archive page of data publications",
+      "condition": "No email sending \u2014 just a public page",
+      "limit": "Updated with each data asset",
+      "risk": "VERY LOW"
+    },
+    "public_dataset_pages": {
+      "action": "List datasets on /data hub page",
+      "condition": "Already planned (Task 11)",
+      "limit": "Each data asset gets a page",
+      "risk": "VERY LOW"
+    },
+    "github_csv_repo": {
+      "action": "Publish CSVs as public GitHub repo",
+      "condition": "Only if safe and already available",
+      "limit": "One repo, updated with each data asset",
+      "risk": "LOW \u2014 check terms"
+    },
+    "sitemap_freshness": {
+      "action": "Keep sitemap updated, lastmod dates current",
+      "condition": "Already done",
+      "limit": "Auto with each deploy",
+      "risk": "NONE"
+    },
+    "internal_hub_links": {
+      "action": "Link new pages from hub pages (/calculators, /blog, /data)",
+      "condition": "Already exists",
+      "limit": "Auto with each batch",
+      "risk": "NONE"
+    },
+    "ai_answer_formatting": {
+      "action": "Structure pages for AI snippet extraction",
+      "condition": "Done via template system (Task 12)",
+      "limit": "Built into page template",
+      "risk": "NONE"
+    }
+  },
+  "blocked_channels": [
+    "Fake social engagement (bots, purchased likes/shares)",
+    "Auto-posting spam to Reddit/Quora/forums",
+    "CAPTCHA or form bypassing",
+    "Paid traffic or paid submissions",
+    "Aggressive Reddit/Quora automation",
+    "Email outreach spam",
+    "Comment spam on other sites",
+    "Link exchanges or link schemes"
+  ],
+  "for_each_new_content": [
+    "Create share image if useful (for data assets)",
+    "Add to RSS feed",
+    "Add to internal hub page",
+    "Create short summary snippet",
+    "Create optional Pinterest pin if safe",
+    "Create dataset reference if it's a data asset"
+  ]
+}

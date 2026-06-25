@@ -1,0 +1,61 @@
+{
+  "phase": 32,
+  "title": "Six-Month 1M Milestones",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:45:00+03:00",
+  "milestones": {
+    "month_1": {
+      "pages": "100-250",
+      "indexed": "350-450",
+      "impressions": "2.5K-5K/mo",
+      "clicks": "5-25/mo",
+      "ctr": "0.2-0.5%",
+      "goal": "First content click. Prove indexing works."
+    },
+    "month_2": {
+      "pages": "500-1K",
+      "indexed": "600-1K",
+      "impressions": "10K-25K/mo",
+      "clicks": "50-250/mo",
+      "ctr": "0.5-1%",
+      "goal": "Scale winner DB. First data assets."
+    },
+    "month_3": {
+      "pages": "1.5K-3K",
+      "indexed": "1.5K-3K",
+      "impressions": "50K-150K/mo",
+      "clicks": "500-2.5K/mo",
+      "ctr": "1-2%",
+      "goal": "Double down. Kill losers. First citations."
+    },
+    "month_4": {
+      "pages": "3K-5K",
+      "indexed": "3K-6K",
+      "impressions": "200K-600K/mo",
+      "clicks": "3K-15K/mo",
+      "ctr": "1.5-2.5%",
+      "goal": "DA compounding. Data hub cited."
+    },
+    "month_5": {
+      "pages": "5K-8K",
+      "indexed": "5K-10K",
+      "impressions": "750K-2.5M/mo",
+      "clicks": "15K-75K/mo",
+      "ctr": "2-3%",
+      "goal": "100K+ visits or 1M is dead."
+    },
+    "month_6": {
+      "pages": "10K-20K",
+      "indexed": "8K-18K",
+      "impressions": "3M-10M/mo",
+      "clicks": "75K-300K/mo",
+      "ctr": "2.5-3.5%",
+      "goal": "1M visitors if M5 hit 150K+."
+    }
+  },
+  "go_no_go": {
+    "month_1": "No first click = reassess approach",
+    "month_3": "<50K impressions = pivot",
+    "month_5": "<100K visits = 1M impossible, extend timeline"
+  }
+}

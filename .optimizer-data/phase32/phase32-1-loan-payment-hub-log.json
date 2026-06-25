@@ -1,0 +1,109 @@
+{
+  "phase": "32.1",
+  "title": "Personal Loan Payment Table \u2014 Compare Monthly Payments by Amount & Rate | QFINHUB",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:20:00+03:00",
+  "url": "/loan-payment-table",
+  "h1": "Personal Loan Payment Tables \u2014 Monthly Payments at a Glance",
+  "meta_description": "Quick-reference loan payment tables for personal loans from $5,000 to $30,000. Compare monthly payments across different rates and terms. Free, no signup required.",
+  "content": {
+    "intro": "These tables show estimated monthly payments for common personal loan amounts, rates, and terms. Use these as a quick reference \u2014 for your exact numbers, try our free Loan Calculator with your specific amount, rate, and term.",
+    "parent_link": {
+      "text": "Calculate your exact loan payment",
+      "url": "/calculators/loan-calculator"
+    },
+    "starter_scenarios_table": {
+      "title": "Starter Loan Scenarios \u2014 Real-World Examples",
+      "columns": [
+        "Use Case",
+        "Loan Amount",
+        "APR",
+        "Term",
+        "Monthly Payment",
+        "Total Interest",
+        "Total Cost",
+        "Detail Page"
+      ],
+      "rows": [
+        {
+          "use_case": "Small Emergency Loan",
+          "amount": "$5,000",
+          "apr": "15%",
+          "term": "3 years",
+          "payment": "$173.00",
+          "interest": "$1,228",
+          "total": "$6,228",
+          "link": "/loan-scenarios/small-emergency-loan-5000-15-percent"
+        },
+        {
+          "use_case": "Good Credit Personal Loan",
+          "amount": "$20,000",
+          "apr": "8%",
+          "term": "5 years",
+          "payment": "$405.53",
+          "interest": "$4,332",
+          "total": "$24,332",
+          "link": "/loan-scenarios/good-credit-loan-20000-8-percent"
+        },
+        {
+          "use_case": "Debt Consolidation",
+          "amount": "$25,000",
+          "apr": "10%",
+          "term": "7 years",
+          "payment": "$415.19",
+          "interest": "$9,876",
+          "total": "$34,876",
+          "link": "/loan-scenarios/debt-consolidation-loan-25000-10-percent"
+        },
+        {
+          "use_case": "Auto / Large Purchase",
+          "amount": "$30,000",
+          "apr": "7%",
+          "term": "5 years",
+          "payment": "$594.04",
+          "interest": "$5,642",
+          "total": "$35,642",
+          "link": "/loan-scenarios/auto-large-purchase-loan-30000-7-percent"
+        },
+        {
+          "use_case": "Fair Credit Reality Check",
+          "amount": "$20,000",
+          "apr": "20%",
+          "term": "5 years",
+          "payment": "$529.88",
+          "interest": "$11,793",
+          "total": "$31,793",
+          "link": "/loan-scenarios/fair-credit-loan-20000-20-percent"
+        }
+      ]
+    },
+    "methodology": "All payments calculated using the standard amortization formula: Monthly Payment = P \u00d7 [r(1+r)^n] / [(1+r)^n - 1], where P = principal, r = monthly interest rate (APR/12), n = total number of payments (term \u00d7 12). Assumes fixed rate, no fees, no prepayment penalties. Actual loan terms may differ.",
+    "faq": [
+      {
+        "q": "Why do different loan amounts have different rates?",
+        "a": "Smaller loans (under $10K) often carry higher rates because lenders have minimum processing costs. Larger loans ($20K+) can offer lower rates because the lender earns more total interest. Your credit score is the biggest factor \u2014 excellent credit can get 7-10%, while fair credit may see 15-25%."
+      },
+      {
+        "q": "How accurate are these payment estimates?",
+        "a": "These use standard amortization math and are mathematically correct for the stated inputs. However, your actual loan may include origination fees (1-8% of the loan), prepayment penalties, or variable rates \u2014 none of which are reflected here. Always get the full APR (which includes fees) from your lender."
+      },
+      {
+        "q": "Which loan scenario is right for me?",
+        "a": "Click through to each scenario page for detailed guidance. Generally: (1) Emergency loans \u2014 borrow only what you need, (2) Good credit \u2014 you have the most options and lowest rates, (3) Consolidation \u2014 only if you'll save vs current debt, (4) Fair credit \u2014 consider improving credit first if possible."
+      }
+    ],
+    "disclaimer": "These are educational estimates, not loan offers. Actual rates depend on your credit profile, income, and lender. APR shown is interest rate only and may not include origination fees. Always compare the full APR from multiple lenders before borrowing."
+  },
+  "schema": "BreadcrumbList + FAQ",
+  "internal_links_out": [
+    "/calculators/loan-calculator",
+    "/loan-scenarios/* (all 5)",
+    "/data"
+  ],
+  "internal_links_in": [
+    "All 5 scenario pages link here",
+    "/data links here",
+    "Loan Calculator may link here"
+  ],
+  "quality_target": 90
+}

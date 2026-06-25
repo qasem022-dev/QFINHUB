@@ -1,0 +1,27 @@
+{
+  "phase": "31.4",
+  "date": "2026-06-20",
+  "gsc_7d": {
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": "0%",
+    "avg_position": 0
+  },
+  "affected_pages": {
+    "loan_calc": {},
+    "budget_planner": {},
+    "retirement": {},
+    "loan_blog": {},
+    "rent_vs_buy": {},
+    "how_much_house": {}
+  },
+  "indexing": {
+    "indexed": 286,
+    "not_indexed": 881,
+    "404s": 125
+  },
+  "link_test": "PASS",
+  "first_content_click": "NOT_ACHIEVED",
+  "scoreboard": "OFF_TRACK",
+  "note": "Template - populate with fresh GSC data"
+}

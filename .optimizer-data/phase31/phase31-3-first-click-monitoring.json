@@ -1,0 +1,41 @@
+{
+  "phase": "31.3",
+  "title": "First-Click Monitoring (Updated)",
+  "version": "3.0.0",
+  "created": "2026-06-17T01:42:38.422815",
+  "pages": {
+    "20000_loan_blog": {
+      "impressions": 124,
+      "position": 10.9,
+      "clicks": 0,
+      "last_edit": "Jun 16",
+      "check_dates": [
+        "Jun 20",
+        "Jun 24",
+        "Jul 1"
+      ]
+    },
+    "rent_vs_buy": {
+      "impressions": 2,
+      "position": 4.0,
+      "clicks": 0,
+      "last_edit": "Jun 16",
+      "check_dates": [
+        "Jun 24",
+        "Jul 1",
+        "Jul 8"
+      ]
+    },
+    "how_much_house": {
+      "impressions": 4,
+      "position": 7.5,
+      "clicks": 0,
+      "last_edit": "Jun 16",
+      "check_dates": [
+        "Jun 24",
+        "Jul 1",
+        "Jul 8"
+      ]
+    }
+  }
+}

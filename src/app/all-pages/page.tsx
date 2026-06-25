@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Sitemap — All QFINHUB Pages",
   description: "Complete list of all calculators, scenarios, tools, blog posts, and pages on QFINHUB.",
   alternates: { canonical: "https://www.qfinhub.com/all-pages" },
+  robots: { index: false, follow: true },
 };
 
 export default function SitemapPage() {

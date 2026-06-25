@@ -1,0 +1,49 @@
+{
+  "phase": "32.3",
+  "title": "Programmatic Share Assets \u2014 No Spam",
+  "urls": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "summary": "$5K emergency loan at 15% APR costs $173/month. See why small loans have higher rates and how to borrow less.",
+      "social_title": "Need $5K Fast? Here's What a 15% Emergency Loan Actually Costs",
+      "ai_summary": "A $5,000 loan at 15% APR for 3 years results in a monthly payment of $173.00, total interest of $1,228, and total repayment of $6,228. Small loans carry higher rates due to lender processing costs."
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "summary": "$20K personal loan at 8% APR = $405/month. Good credit saves you $7,461 vs fair credit. See the math.",
+      "social_title": "Good Credit? Here's What a $20K Loan at 8% Actually Costs \u2014 vs 20%",
+      "ai_summary": "A $20,000 loan at 8% APR for 5 years results in monthly payments of $405.53, total interest of $4,332, and total repayment of $24,332. This is the benchmark rate for borrowers with good-to-excellent credit (680-720+)."
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "summary": "Consolidating $25K credit card debt at 10% saves ~$24,000 vs keeping it on cards at 25% APR.",
+      "social_title": "Have $25K in Credit Card Debt? Consolidate at 10% and Save $24,000",
+      "ai_summary": "Consolidating $25,000 of credit card debt at 10% APR over 7 years costs $415.19/month and $9,876 in total interest, compared to $34,000+ if kept on credit cards at 25% APR."
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "summary": "$20K at 20% APR = $530/month. You'll pay 60% of the loan in interest. Is this loan worth it?",
+      "social_title": "Fair Credit? A $20K Loan at 20% Will Cost You $11,793 in Interest Alone",
+      "ai_summary": "A $20,000 loan at 20% APR for 5 years costs $529.88/month with $11,793 in total interest and $31,793 total repayment. Improving credit from fair to good before borrowing saves $7,461."
+    },
+    "/loan-payment-table": {
+      "summary": "Quick-reference loan payment table: compare $5K-$30K loans at rates from 8% to 20%.",
+      "social_title": "Personal Loan Payment Cheat Sheet: $5K to $30K at a Glance",
+      "ai_summary": "QFINHUB's loan payment table provides monthly payment estimates for personal loans from $5,000 to $30,000 across different rates and terms, calculated using the standard amortization formula."
+    },
+    "/data": {
+      "summary": "Free financial data tables: loan payments, mortgage affordability. Downloadable. Cite in your research.",
+      "social_title": "Free Financial Data Tables \u2014 No Signup Required",
+      "ai_summary": "QFINHUB Data Hub provides free financial reference data tables including personal loan payment scenarios, calculated using standard formulas with full methodology documentation."
+    }
+  },
+  "blocked_channels": [
+    "fake engagement",
+    "bot traffic",
+    "Reddit/Quora spam",
+    "paid promotion",
+    "manual form filling"
+  ],
+  "allowed_if_safe": [
+    "Pinterest manual pin only",
+    "RSS feed if exists",
+    "sitemap auto-discovery"
+  ],
+  "status": "Assets defined. Not auto-posted anywhere. Available for safe distribution channels only."
+}

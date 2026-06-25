@@ -1,0 +1,7 @@
+{
+  "phase": "31.3",
+  "commit": "2a4b41a",
+  "changes": "Removed 4+2 broken blog references + added verify-internal-links.js",
+  "test_result": "PASS \u2014 109 links, 0 broken",
+  "deploy_verified": true
+}

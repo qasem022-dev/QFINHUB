@@ -1,0 +1,21 @@
+{
+  "phase": "32.3",
+  "title": "RSS / Sitemap / Feed Discovery Check",
+  "checked_at": "2026-06-18T05:15:00+03:00",
+  "sitemap": {
+    "url": "https://www.qfinhub.com/sitemap.xml",
+    "status": "200",
+    "new_urls_in_sitemap_count": "0\n0"
+  },
+  "rss": {
+    "url": "https://www.qfinhub.com/rss.xml",
+    "status": "404",
+    "exists": false
+  },
+  "actions": {
+    "sitemap": "Next.js auto-generates sitemap from SSG routes. New URLs should appear in next build.",
+    "rss": "Check if RSS exists. If not, building a simple updates feed is low-risk.",
+    "no_google_ping": true,
+    "no_manual_indexing": true
+  }
+}

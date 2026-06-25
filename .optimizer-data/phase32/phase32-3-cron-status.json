@@ -1,0 +1,28 @@
+{
+  "phase": "32.3",
+  "status": "PHASE_31_SAFE_RECOVERY_REMAINS_PRIMARY",
+  "phase_31_cron": {
+    "job_id": "dcba952b4c45",
+    "mode": "SAFE_RECOVERY",
+    "actions": "Monitor only \u2014 GSC data, link regression, watchlist updates",
+    "runs_at": "15:00 EEST daily"
+  },
+  "phase_32_cron": {
+    "status": "NOT ACTIVE \u2014 planning/staging mode",
+    "allowed": [
+      "monitoring",
+      "staging",
+      "distribution checks",
+      "safe feed updates",
+      "data hub enhancement",
+      "report generation"
+    ],
+    "prohibited": [
+      "deploying pages without approval",
+      "replacing Phase 31 cron",
+      "indexing requests",
+      "editing Phase 31 held pages"
+    ]
+  },
+  "transition_gates": "Phase 32 replaces Phase 31 cron only when: Batch 2 deployed + indexed + first clicks from scenario pages"
+}

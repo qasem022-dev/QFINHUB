@@ -1,0 +1,217 @@
+{
+  "phase": 32,
+  "title": "First 100-Page Test Batch",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:40:00+03:00",
+  "strategy": "40 loan payment + 30 mortgage affordability + 15 compound interest + 15 debt payoff",
+  "batches": {
+    "batch_1": {
+      "size": 25,
+      "type": "loan_payment",
+      "pages": [
+        {
+          "slug": "loan-5000-at-8-percent-3-years",
+          "amount": 5000,
+          "rate": 8,
+          "years": 3,
+          "demand": "autocomplete triggers for '5000 loan 3 years'"
+        },
+        {
+          "slug": "loan-10000-at-8-percent-5-years",
+          "amount": 10000,
+          "rate": 8,
+          "years": 5,
+          "demand": "common personal loan scenario"
+        },
+        {
+          "slug": "loan-15000-at-10-percent-5-years",
+          "amount": 15000,
+          "rate": 10,
+          "years": 5,
+          "demand": "autocomplete for '15000 personal loan'"
+        },
+        {
+          "slug": "loan-20000-at-8-percent-5-years",
+          "amount": 20000,
+          "rate": 8,
+          "years": 5,
+          "demand": "GSC: already getting impressions for this"
+        },
+        {
+          "slug": "loan-20000-at-12-percent-5-years",
+          "amount": 20000,
+          "rate": 12,
+          "years": 5,
+          "demand": "average rate scenario"
+        },
+        {
+          "slug": "loan-25000-at-8-percent-5-years",
+          "amount": 25000,
+          "rate": 8,
+          "years": 5,
+          "demand": "autocomplete: '25000 loan 5 years'"
+        },
+        {
+          "slug": "loan-30000-at-8-percent-5-years",
+          "amount": 30000,
+          "rate": 8,
+          "years": 5,
+          "demand": "common loan amount search"
+        },
+        {
+          "slug": "loan-30000-at-12-percent-7-years",
+          "amount": 30000,
+          "rate": 12,
+          "years": 7,
+          "demand": "longer-term scenario"
+        },
+        {
+          "slug": "loan-5000-at-15-percent-2-years",
+          "amount": 5000,
+          "rate": 15,
+          "years": 2,
+          "demand": "small loan high rate"
+        },
+        {
+          "slug": "loan-10000-at-6-percent-3-years",
+          "amount": 10000,
+          "rate": 6,
+          "years": 3,
+          "demand": "excellent credit scenario"
+        },
+        {
+          "slug": "loan-15000-at-7-percent-4-years",
+          "amount": 15000,
+          "rate": 7,
+          "years": 4,
+          "demand": "good credit auto loan"
+        },
+        {
+          "slug": "loan-20000-at-6-percent-3-years",
+          "amount": 20000,
+          "rate": 6,
+          "years": 3,
+          "demand": "short-term low rate"
+        },
+        {
+          "slug": "loan-25000-at-10-percent-7-years",
+          "amount": 25000,
+          "rate": 10,
+          "years": 7,
+          "demand": "debt consolidation common"
+        },
+        {
+          "slug": "loan-35000-at-8-percent-5-years",
+          "amount": 35000,
+          "rate": 8,
+          "years": 5,
+          "demand": "higher amount auto/home"
+        },
+        {
+          "slug": "loan-40000-at-9-percent-7-years",
+          "amount": 40000,
+          "rate": 9,
+          "years": 7,
+          "demand": "large personal loan"
+        },
+        {
+          "slug": "loan-50000-at-7-percent-10-years",
+          "amount": 50000,
+          "rate": 7,
+          "years": 10,
+          "demand": "long-term large loan"
+        },
+        {
+          "slug": "loan-7500-at-12-percent-3-years",
+          "amount": 7500,
+          "rate": 12,
+          "years": 3,
+          "demand": "mid-range common"
+        },
+        {
+          "slug": "loan-10000-at-18-percent-3-years",
+          "amount": 10000,
+          "rate": 18,
+          "years": 3,
+          "demand": "fair credit scenario"
+        },
+        {
+          "slug": "loan-15000-at-20-percent-5-years",
+          "amount": 15000,
+          "rate": 20,
+          "years": 5,
+          "demand": "poor credit scenario"
+        },
+        {
+          "slug": "loan-5000-at-25-percent-2-years",
+          "amount": 5000,
+          "rate": 25,
+          "years": 2,
+          "demand": "high-rate short loan"
+        },
+        {
+          "slug": "loan-20000-at-15-percent-7-years",
+          "amount": 20000,
+          "rate": 15,
+          "years": 7,
+          "demand": "debt consolidation"
+        },
+        {
+          "slug": "loan-30000-at-6-percent-5-years",
+          "amount": 30000,
+          "rate": 6,
+          "years": 5,
+          "demand": "best rate scenario"
+        },
+        {
+          "slug": "loan-10000-at-5-percent-2-years",
+          "amount": 10000,
+          "rate": 5,
+          "years": 2,
+          "demand": "short-term excellent credit"
+        },
+        {
+          "slug": "loan-25000-at-12-percent-5-years",
+          "amount": 25000,
+          "rate": 12,
+          "years": 5,
+          "demand": "common query"
+        },
+        {
+          "slug": "loan-20000-at-10-percent-7-years",
+          "amount": 20000,
+          "rate": 10,
+          "years": 7,
+          "demand": "longer term common"
+        }
+      ]
+    },
+    "batch_2": {
+      "size": 25,
+      "type": "loan_payment_continued",
+      "pages": []
+    },
+    "batch_3": {
+      "size": 25,
+      "type": "mortgage_affordability",
+      "pages": []
+    },
+    "batch_4": {
+      "size": 25,
+      "type": "compound_debt_mixed",
+      "pages": []
+    }
+  },
+  "batch_1_deploy_plan": {
+    "step_1": "Create all 25 pages with quality >= 85",
+    "step_2": "Verify all HTTP 200",
+    "step_3": "Verify sitemap includes all 25",
+    "step_4": "Verify self-canonical on all pages",
+    "step_5": "Deploy to Vercel (git push)",
+    "step_6": "Monitor GSC for 7 days",
+    "step_7": "Check indexing rate after 7 days",
+    "success": ">= 15/25 indexed within 14 days",
+    "failure": "< 10/25 indexed after 21 days"
+  },
+  "note": "Batch 2 (loan continued), Batch 3 (mortgage), Batch 4 (compound + debt) to be filled after Batch 1 results validate the approach."
+}

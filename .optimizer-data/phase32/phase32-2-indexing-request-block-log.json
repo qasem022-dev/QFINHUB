@@ -1,0 +1,9 @@
+{
+  "phase": "32.2",
+  "status": "NO_MANUAL_INDEXING_REQUESTS",
+  "discovery_method": "Natural crawl via sitemap + internal links + /data hub + /loan-payment-table hub",
+  "no_indexing_api": true,
+  "no_validate_fix": true,
+  "no_gsc_ui_request": true,
+  "rationale": "Phase 32 policy: let Google discover quality pages naturally. Forced indexing on a site with 503 discovered-not-indexed pages is counterproductive. Build quality, wait for crawl."
+}

@@ -1,0 +1,42 @@
+{
+  "phase": "31.4",
+  "title": "Authority Flow Verification \u2014 Fixed Links Confirmed",
+  "version": "1.0.0",
+  "created": "2026-06-17T01:48:27.605450",
+  "targets": {
+    "loan_calculator": {
+      "url": "/calculators/loan-calculator",
+      "http_status": "200 verified",
+      "canonical": "self-canonical",
+      "indexable": true,
+      "incoming_blog_links_before": "7 (calculator-blog-links) + 64 broken (from blog relatedCalculators)",
+      "incoming_blog_links_after": "7 (calculator-blog-links) + 64 valid (from blog relatedCalculators fix)",
+      "sample_sources": [
+        "mortgage-rates blogs",
+        "fed-report blogs",
+        "housing blogs with relatedCalculators: ['mortgage-affordability','loan-calculator','savings-goal']"
+      ],
+      "anchor_text": "natural (from relatedCalculators title field)",
+      "source_pages_indexed": "Blog posts are indexed \u2014 authority now flows to loan-calculator instead of 404"
+    },
+    "budget_planner": {
+      "url": "/calculators/budget-planner",
+      "incoming_blog_links_before": "7 (calculator-blog-links) + 19 broken",
+      "incoming_blog_links_after": "7 + 19 valid",
+      "status": "FIXED"
+    },
+    "retirement_planning": {
+      "url": "/calculators/retirement-planning",
+      "incoming_blog_links_before": "7 + 6 broken",
+      "incoming_blog_links_after": "7 + 6 valid",
+      "status": "FIXED"
+    },
+    "inflation_calculator": {
+      "url": "/calculators/inflation-calculator",
+      "incoming_blog_links_before": "0 (1 broken)",
+      "incoming_blog_links_after": "1 valid",
+      "status": "FIXED"
+    }
+  },
+  "verification": "All target URLs return HTTP 200, are self-canonical, and indexable. Fixed blog links now point to correct calculator pages."
+}

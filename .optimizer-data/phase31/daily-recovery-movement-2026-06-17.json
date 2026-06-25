@@ -1,0 +1,104 @@
+{
+  "phase": "31.4",
+  "date": "2026-06-17",
+  "day": 1,
+  "updated": "2026-06-17T18:00:00+03:00",
+  "note": "Measurement day 1 evening check — fix deployed ~24 hours ago. GSC data shifted 1 day (now Jun 8-14). Early signals emerging.",
+
+  "gsc_7d": {
+    "clicks": 0,
+    "impressions": 562,
+    "ctr": "0.0%",
+    "avg_position": 35.4,
+    "pages_with_impressions": 71,
+    "data_range": "Jun 8-14",
+    "freshness": "FRESH — pulled Jun 17 15:01 UTC",
+    "vs_baseline": {
+      "impressions": "+32 (530→562)",
+      "pages": "+2 (69→71)",
+      "position": "+0.5 pts worse (34.9→35.4)",
+      "note": "Date range shift (Jun 7-13 → Jun 8-14). Increase likely from dropping a low day."
+    }
+  },
+
+  "gsc_28d": {
+    "clicks": 1,
+    "impressions": 1400,
+    "ctr": "0.1%",
+    "avg_position": 33.4,
+    "source": "Qasem GSC UI Jun 17"
+  },
+
+  "watchlist_pages": {
+    "20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions": 114,
+      "vs_baseline": "-10 (124→114)",
+      "clicks": 0,
+      "position": 10.8,
+      "vs_baseline_pos": "+0.1 better (10.9→10.8)",
+      "status": "STABLE — slight imp decline, position stable. Still at page 1 edge."
+    },
+    "loan_calculator": {
+      "url": "/calculators/loan-calculator",
+      "impressions": 4,
+      "clicks": 0,
+      "position": 7.0,
+      "links_fixed": 64,
+      "status": "VISIBLE — now in top 50 pages. Was 'unknown' at baseline."
+    },
+    "budget_planner": {
+      "url": "/calculators/budget-planner",
+      "impressions": 2,
+      "clicks": 0,
+      "position": 4.5,
+      "links_fixed": 19,
+      "status": "VISIBLE — now in top 50."
+    },
+    "retirement_planning": {
+      "url": "/calculators/retirement-planning",
+      "impressions": 14,
+      "vs_baseline": "+3 (11→14)",
+      "clicks": 0,
+      "position": 77.8,
+      "vs_baseline_pos": "+3.7 better (81.5→77.8)",
+      "links_fixed": 6,
+      "status": "IMPROVING — both impressions and position better. ⚠️ could be recrawl effect or natural variance."
+    },
+    "rent_vs_buy": {
+      "url": "/decision/rent-vs-buy",
+      "impressions": "not in top 50",
+      "clicks": 0,
+      "position": "not in top 50",
+      "note": "Scenario variant /decision/rent-vs-buy-with-100k-income appeared at pos 2.0, 1 imp"
+    },
+    "how_much_house": {
+      "url": "/decision/how-much-house",
+      "impressions": "not in top 50",
+      "clicks": 0,
+      "position": "not in top 50"
+    }
+  },
+
+  "indexing": {
+    "indexed": 286,
+    "not_indexed": 881,
+    "404s": 125,
+    "discovered_not_indexed": 503,
+    "note": "No change expected — fix <24h old. Next GSC UI check needed for indexing counts."
+  },
+
+  "link_regression_test": "PASS — 0 broken links (verify-internal-links.js)",
+  "deploy_status": "No new deploys since 2a4b41a (Phase 31.3)",
+  "first_content_click": "NOT_ACHIEVED",
+  "scoreboard": "OFF_TRACK",
+  
+  "early_signals": {
+    "retirement_planning_uptick": "POSITIVE — imp +3, pos +3.7. Monitor if sustained.",
+    "loan_blog_stable": "NEUTRAL — slight imp decline but position holds at 10.8.",
+    "loan_calculator_visible": "POSITIVE — now appearing in top 50 pages. 64 links fixed may be flowing authority."
+  },
+
+  "risks_detected": "None",
+  "next_check": "Jun 18"
+}

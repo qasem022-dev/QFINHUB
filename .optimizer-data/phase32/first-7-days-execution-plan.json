@@ -1,0 +1,36 @@
+{
+  "phase": 32,
+  "title": "First 7 Days Execution Plan",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:45:00+03:00",
+  "start": "2026-06-18",
+  "days": {
+    "day_1_jun18": {
+      "goal": "Foundation complete",
+      "status": "DONE \u2014 All 19 Phase 32 files created"
+    },
+    "day_2_jun19": {
+      "goal": "Build 25 loan payment pages (quality >= 85). Validate. NO DEPLOY until checks pass."
+    },
+    "day_3_jun20": {
+      "goal": "Deploy Batch 1 (25 loan). Build 25 more (loan + mortgage). Deploy if passes."
+    },
+    "day_4_jun21": {
+      "goal": "Build 25 mortgage affordability pages. Deploy. Start GSC monitoring."
+    },
+    "day_5_jun22": {
+      "goal": "Build 25 compound + debt pages. Deploy. 100 total pages live."
+    },
+    "day_6_jun23": {
+      "goal": "Build /data hub MVP. Publish first data asset."
+    },
+    "day_7_jun24": {
+      "goal": "Evaluate: indexing rate? impressions? Decision: SCALE (20/day), HOLD (10/day), or PAUSE (fix quality). Phase 31 edit hold expires."
+    }
+  },
+  "day_7_decision": {
+    ">40% indexed": "SCALE to 20/day",
+    "20-40%": "HOLD at 10/day",
+    "<20%": "PAUSE \u2014 fix quality before more pages"
+  }
+}

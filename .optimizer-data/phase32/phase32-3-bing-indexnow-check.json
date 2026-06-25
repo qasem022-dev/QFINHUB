@@ -1,0 +1,16 @@
+{
+  "phase": "32.3",
+  "title": "Bing / IndexNow Safe Check",
+  "checked_at": "2026-06-18T05:15:00+03:00",
+  "bing_webmaster": {
+    "configured": "UNKNOWN \u2014 needs verification",
+    "action": "Check if Bing Webmaster Tools account exists for qfinhub.com. If yes: submit sitemap. If no: create account (free) and submit."
+  },
+  "indexnow": {
+    "configured": "UNKNOWN",
+    "action": "IndexNow is supported by Next.js but requires key file at root. Check if /.well-known/indexnow API key file exists. If no: can add with low effort."
+  },
+  "no_google_indexing_api": true,
+  "no_paid_services": true,
+  "recommendation": "Bing/IndexNow are safe, free, and low-effort. Configure if possible. Do NOT require Qasem manual work \u2014 Hermes can set up if tokens/keys exist."
+}

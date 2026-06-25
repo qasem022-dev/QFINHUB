@@ -1,0 +1,105 @@
+{
+  "phase": 32,
+  "title": "Data Asset Engine V2 \u2014 Weekly Original Data Publications",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:40:00+03:00",
+  "schedule": "1 data asset per week",
+  "purpose": "Earn passive citations and backlinks without outreach. Create citeable original data.",
+  "assets_planned_months_1_3": [
+    {
+      "week": 1,
+      "title": "How Much House Can You Afford at Every Salary Level? ($40K\u2013$200K)",
+      "type": "data_table",
+      "source_database": "DB2_mortgage_affordability",
+      "content": "Table showing affordable home price for each salary level from $40K-$200K, assuming 28% front-end DTI, 6.5% rate, 20% down. Includes monthly payment breakdown.",
+      "formats": [
+        "HTML table",
+        "CSV download",
+        "short methodology",
+        "embed snippet"
+      ],
+      "journalist_angle": "Salary vs home affordability in 2026 \u2014 quick reference for reporters covering housing affordability"
+    },
+    {
+      "week": 2,
+      "title": "Monthly Payment Table for Personal Loans from $5K to $100K",
+      "type": "data_table",
+      "source_database": "DB3_loan_payment",
+      "content": "Matrix table: loan amounts ($5K-$100K) \u00d7 interest rates (6%-25%) \u00d7 terms (3-7 years) = monthly payment. Color-coded by affordability tiers.",
+      "formats": [
+        "HTML table",
+        "CSV download",
+        "chart if possible"
+      ],
+      "journalist_angle": "Quick reference for personal finance articles about borrowing costs"
+    },
+    {
+      "week": 3,
+      "title": "Debt Snowball vs Avalanche: Which Wins by Debt Size?",
+      "type": "comparison_analysis",
+      "source_database": "DB6_debt_payoff",
+      "content": "For debt amounts $5K-$50K, compare snowball vs avalanche: time to payoff, total interest paid, psychological wins. Data table + recommendation.",
+      "formats": [
+        "HTML table",
+        "CSV download",
+        "comparison chart"
+      ],
+      "journalist_angle": "Definitive data on which debt strategy works better \u2014 frequently debated topic"
+    },
+    {
+      "week": 4,
+      "title": "How Much $500/Month Becomes After 10, 20, and 30 Years",
+      "type": "data_table",
+      "source_database": "DB5_compound_interest",
+      "content": "Invest $100-$5,000/month at 5%-12% returns over 5-40 years. Table showing final portfolio value. Color-coded by milestone ($100K, $500K, $1M, $2M).",
+      "formats": [
+        "HTML table",
+        "CSV download",
+        "visual chart if possible"
+      ],
+      "journalist_angle": "Show the power of consistent investing \u2014 very shareable on social media"
+    },
+    {
+      "week": 5,
+      "title": "Retirement Savings Reality Table by Age and Savings",
+      "type": "data_table",
+      "source_database": "DB4_fire_retirement",
+      "content": "For ages 30-60 and savings $100K-$5M: can you retire? How long will it last? At what withdrawal rate? Reality check table.",
+      "formats": [
+        "HTML table",
+        "CSV download"
+      ],
+      "journalist_angle": "Retirement reality check \u2014 frequently requested by personal finance journalists"
+    },
+    {
+      "week": 6,
+      "title": "Salary After Tax: Take-Home Pay in All 50 States",
+      "type": "data_table",
+      "source_database": "DB1_salary_reality",
+      "content": "For $50K, $75K, $100K, $150K, $200K: take-home pay in every state. Highlight biggest differences (TX/FL vs CA/NY).",
+      "formats": [
+        "HTML table",
+        "CSV download",
+        "map visualization if possible"
+      ],
+      "journalist_angle": "Tax migration story \u2014 why people move states"
+    }
+  ],
+  "each_asset_must_have": [
+    "Original calculations (not scraped from elsewhere)",
+    "Clear methodology section (how we calculated it)",
+    "Data tables in HTML",
+    "Downloadable CSV file",
+    "Embed snippet for journalists to copy-paste",
+    "Journalist-friendly summary (200 words max)",
+    "Links to related database pages",
+    "Links to parent calculator",
+    "Publication date and methodology version",
+    "Cite this data section with preformatted citation"
+  ],
+  "success_metrics": {
+    "minimum": "1 citation or backlink within 60 days of publishing",
+    "good": "3-5 citations from blogs/news sites",
+    "great": "Cited by major publication or ranks for data queries"
+  }
+}

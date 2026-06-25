@@ -1,0 +1,51 @@
+{
+  "phase": "32.3",
+  "title": "Post-Deploy URL Verification \u2014 6 Live URLs",
+  "verified_at": "2026-06-18T05:15:00+03:00",
+  "urls": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "http": "200",
+      "canonical": "canonical\" href=\"https://qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent\"",
+      "title": "<title>$5,000 Emergency Loan at 15% APR \u2014 Monthly Payment Calculator | QFINHUB | QFINHUB</title>",
+      "noindex": "CLEAN"
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "http": "200",
+      "canonical": "canonical\" href=\"https://qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent\"",
+      "title": "<title>$20,000 Personal Loan at 8% APR \u2014 Good Credit Monthly Payment Calculator | QFINHUB | QFINHUB</title>",
+      "noindex": "CLEAN"
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "http": "200",
+      "canonical": "canonical\" href=\"https://qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent\"",
+      "title": "<title>Consolidate $25,000 Debt at 10% APR \u2014 Monthly Payment &amp; Savings Calculator | QFINHUB | QFINHUB</title>",
+      "noindex": "CLEAN"
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "http": "200",
+      "canonical": "canonical\" href=\"https://qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent\"",
+      "title": "<title>$20,000 Personal Loan at 20% APR \u2014 Fair Credit Cost Calculator &amp; Warning | QFINHUB | QFINHUB</title>",
+      "noindex": "CLEAN"
+    },
+    "/loan-payment-table": {
+      "http": "200",
+      "canonical": "canonical\" href=\"https://qfinhub.com/loan-payment-table\"",
+      "title": "<title>Personal Loan Payment Table \u2014 Compare Monthly Payments by Amount &amp; Rate | QFINHUB | QFINHUB</title>",
+      "noindex": "CLEAN"
+    },
+    "/data": {
+      "http": "200",
+      "canonical": "canonical\" href=\"https://qfinhub.com/data\"",
+      "title": "<title>Free Financial Data Tables \u2014 Loan Payments, Mortgage Affordability &amp; More | QFINHUB | QFINHUB</title>",
+      "noindex": "CLEAN"
+    }
+  },
+  "all_200": true,
+  "all_canonical": true,
+  "all_clean_noindex": true,
+  "phase_31_held_pages_verified_untouched": true,
+  "broken_links": "0 \u2014 verify-internal-links.js PASS",
+  "mobile_render": "Responsive tables confirmed",
+  "no_placeholder_content": true,
+  "summary": "All 6 URLs verified: 200 OK, self-canonical, indexable, 0 broken links."
+}

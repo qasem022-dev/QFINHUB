@@ -1,0 +1,156 @@
+{
+  "phase": 31,
+  "title": "Phase 31 Recovery Status — Jun 18, 2026",
+  "generated": "2026-06-18T12:04:21Z",
+  "expansion_freeze": "ACTIVE — ALL EXPANSION FROZEN",
+  "gsc_data": {
+    "source": "GSC API — FRESH pull Jun 18 12:04 UTC",
+    "date_range": "2026-06-09 to 2026-06-15",
+    "metrics_7d": {
+      "impressions": 569,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "avg_position": 35.9,
+      "pages_with_impressions": 71,
+      "query_count": 83
+    },
+    "metrics_28d": {
+      "impressions": 1680,
+      "clicks": 1,
+      "click_source": "homepage (brand click only)",
+      "content_clicks": 0,
+      "pages_with_impressions": 148,
+      "pages_with_clicks": 1
+    },
+    "week_over_week": {
+      "previous_7d_impressions": 424,
+      "current_7d_impressions": 569,
+      "change": 145,
+      "change_pct": 34.2,
+      "trend": "POSITIVE — impressions growing significantly week-over-week"
+    },
+    "corrected_estimate_fyi": {
+      "impressions": 816,
+      "avg_position": 31.8,
+      "note": "FYI ONLY — correction factor 1.434x NOT applied to official metrics"
+    }
+  },
+  "top_query": {
+    "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+    "impressions_7d": 81,
+    "position": 6.6,
+    "clicks": 0,
+    "diagnosis": "SNIPPET CANNIBALIZATION — Google shows answer ($405.53) directly in snippet. Phase 31 fix addresses this by changing H2 from answer-giveaway to curiosity question."
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "impressions_7d": 131,
+      "clicks": 0,
+      "position": 11.0,
+      "phase31_fix_deployed": true,
+      "google_last_crawl": "2026-06-04T17:23:57Z",
+      "recrawl_status": "NOT RECRAWLED YET — fix deployed Jun 17, last crawl Jun 4. Google has not seen the new title/H2/meta.",
+      "fix_summary": "Title: answer-giveaway → curiosity hook. H2: '$405.53 — Here's the Full Breakdown' → 'What's the Monthly Payment...?'. CTA: 'Try it yourself' → 'See YOUR exact payment'. Description: more personalized.",
+      "expected_effect": "When Google recrawls, the curiosity-driven title and question-H2 should reduce snippet cannibalization and improve CTR from 0% to 1-3%.",
+      "risk": "Duplicate blog post exists at /blog/20000-loan-5-years-8-percent-monthly-payment (Discovered-not-indexed, in sitemap) — leeching crawl budget. Flagged for cleanup PLAN (not execution under Phase 31 freeze).",
+      "status": "MONITORING — awaiting Google recrawl"
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "position": 2.0,
+      "phase31_fix_deployed": true,
+      "fix_summary": "Title broadened from '$100,000 Income specific' to general 'Rent vs Buy Calculator: Should You Rent or Buy a Home in 2026?' to capture broader queries.",
+      "status": "MONITORING — ultra-low volume (1 imp). Position 2.0 is excellent but query volume negligible."
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "position": 6.0,
+      "phase31_fix_deployed": true,
+      "fix_summary": "Title refined: front-loaded 'Free Calculator', more action-oriented description.",
+      "status": "MONITORING — ultra-low volume (1 imp). Position 6.0 is good but query volume negligible."
+    }
+  },
+  "other_notable_pages": {
+    "compound_100k_20yr_5pct_tool": {
+      "url": "/tools/compound-100k-20yr-5pct",
+      "impressions_7d": 33,
+      "clicks": 0,
+      "position": 9.2,
+      "note": "NEAR PAGE 1 with solid impressions but 0 clicks. Thin variant — Phase 20 freeze applies. NOT actionable."
+    },
+    "compound_500k_15yr_5pct_tool": {
+      "url": "/tools/compound-500k-15yr-5pct",
+      "impressions_7d": 19,
+      "clicks": 0,
+      "position": 9.5,
+      "note": "Another near-page-1 compound tool variant. Phase 20 freeze. NOT actionable."
+    },
+    "tax_calculator": {
+      "url": "/calculators/tax-calculator",
+      "impressions_7d": 100,
+      "clicks": 0,
+      "position": 85.0,
+      "note": "Deep ranking — DA bottleneck. Long-term internal link strategy."
+    },
+    "investment_return": {
+      "url": "/calculators/investment-return",
+      "impressions_7d": 77,
+      "clicks": 0,
+      "position": 79.2,
+      "note": "Deep ranking — DA bottleneck. Long-term internal link strategy."
+    }
+  },
+  "not_indexed_status": {
+    "gsc_reported_not_indexed": "~881 pages total (previous report)",
+    "note": "Bulk not-indexed audit NOT executed per Phase 31 rules (cleanup planning only, no execution)"
+  },
+  "duplicate_content_flag": {
+    "issue": "Two blog posts covering identical topic ($20k loan at 8% for 5 years)",
+    "post_1": {
+      "slug": "20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "status": "INDEXED — 131 imp, pos 11.0",
+      "title": "Improved (Phase 31 fix applied)"
+    },
+    "post_2": {
+      "slug": "20000-loan-5-years-8-percent-monthly-payment",
+      "status": "DISCOVERED-NOT-INDEXED — Google refused to index (duplicate detection?)",
+      "title": "OLD — gives away answer ($405.53) in title",
+      "action_needed": "Remove from sitemap + either redirect to post_1 or noindex. Cleanup PLAN only under Phase 31 freeze."
+    },
+    "both_in_sitemap": true
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_churn": "0 — only Phase 31 approved pages previously fixed",
+    "deploy_made": false,
+    "cleanup_planning_only": "Duplicate blog post flagged for removal plan"
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "positive_signs": [
+      "Impressions growing +34.2% week-over-week (424→569)",
+      "Phase 31 fix deployed on #1 first-click target (131 imp at pos 11.0)",
+      "All 3 first-click pages have improved titles/metas live on site",
+      "No new problems introduced — compliance 100%",
+      "71 pages with impressions (up from ~52 baseline)"
+    ],
+    "blockers": [
+      "Google has NOT recrawled the #1 target since Jun 4 — new title/H2 invisible to SERP",
+      "0 content clicks in 28 days (1 brand click only)",
+      "Low domain authority — most calculator pages at pos 70-100",
+      "Duplicate blog post in sitemap leaching crawl budget",
+      "Cannot request indexing under Phase 31 freeze"
+    ],
+    "next_natural_step": "Wait for Google recrawl of $20k loan blog. If impressions continue growing and a recrawl happens naturally, the curiosity-driven title/H2 should produce the first content click."
+  }
+}

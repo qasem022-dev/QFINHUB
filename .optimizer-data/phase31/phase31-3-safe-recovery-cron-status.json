@@ -1,0 +1,19 @@
+{
+  "phase": "31.3",
+  "job_id": "dcba952b4c45",
+  "mode": "SAFE_RECOVERY_MODE",
+  "allowed": [
+    "link verification",
+    "GSC monitoring",
+    "first-click monitoring",
+    "reports"
+  ],
+  "blocked": [
+    "new pages",
+    "outreach",
+    "indexing requests",
+    "Validate Fix",
+    "bulk cleanup",
+    "Phase 30 expansion"
+  ]
+}

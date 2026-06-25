@@ -1,0 +1,45 @@
+{
+  "phase": "31.4",
+  "title": "Post-Broken-Link Recovery Measurement - Final Report",
+  "version": "1.0.0",
+  "created": "2026-06-17T04:00:00+03:00",
+  "status": "MEASUREMENT_ACTIVE",
+
+  "key_accomplishment": "Measurement system deployed. All fixed pages on 7-day edit hold. No new changes until Google recrawls.",
+
+  "post_fix_baseline": {
+    "gsc_7d": {"clicks": 0, "impressions": 530, "ctr": "0.0%", "avg_position": 34.9},
+    "gsc_28d": {"clicks": 1, "impressions": 1400, "ctr": "0.1%", "avg_position": 33.4},
+    "indexing": {"indexed": 286, "not_indexed": 881, "404s": 125},
+    "first_content_click": "NOT_ACHIEVED"
+  },
+
+  "authority_flow_verified": {
+    "loan_calculator": {"links_fixed": 64, "all_resolve": true},
+    "budget_planner": {"links_fixed": 19, "all_resolve": true},
+    "retirement_planning": {"links_fixed": 6, "all_resolve": true},
+    "inflation_calculator": {"links_fixed": 1, "all_resolve": true}
+  },
+
+  "link_regression_test": {"script": "scripts/verify-internal-links.js", "result": "PASS", "broken": 0},
+
+  "gsc_watchlist": {"pages": 6, "measurement_windows": ["Jun 20", "Jun 24", "Jul 1", "Jul 15"]},
+
+  "cron": "SAFE_RECOVERY_MODE — monitor only",
+
+  "edit_hold": {"active": true, "until": "Jun 24", "pages_on_hold": 6},
+
+  "daily_reports": {"template": "daily-recovery-movement-YYYY-MM-DD.json", "days_prepared": 7},
+
+  "compliance": {
+    "no_new_pages": true, "no_outreach": true, "no_indexing_requests": true,
+    "no_validate_fix": true, "no_google_indexing_api": true,
+    "no_bulk_cleanup": true, "no_edits_to_fixed_pages": true
+  },
+
+  "scoreboard": "OFF_TRACK",
+
+  "next_decision_date": "Jun 24 — after 7-day measurement window",
+
+  "success_condition": "Measurement system correctly set up. No uncontrolled changes interfere with evaluating the ~96 broken-link fix."
+}

@@ -1,0 +1,44 @@
+{
+  "phase": "32.1",
+  "title": "Doorway Risk Audit \u2014 All 7 URLs",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:30:00+03:00",
+  "urls_audited": {
+    "/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "classification": "SAFE",
+      "reason": "Unique use case (small loan economics), unique explanation (why small loans cost more), not primarily funneling to calculator. Standalone educational value."
+    },
+    "/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "classification": "SAFE",
+      "reason": "GSC-validated demand. Serves calculator intent distinct from blog. Rich credit comparison content. Not a funnel page \u2014 user gets full answer here."
+    },
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "classification": "SAFE",
+      "reason": "Unique consolidation decision support. Credit card comparison creates standalone value. Not replicable by number-swap. Educational + calculator hybrid."
+    },
+    "/loan-scenarios/auto-large-purchase-loan-30000-7-percent": {
+      "classification": "NEEDS_MORE_UNIQUE_VALUE",
+      "reason": "Secured vs unsecured content is valuable but page needs deeper auto-loan-specific context. Slightly closer to a number-swap than other pages. Can be fixed."
+    },
+    "/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "classification": "SAFE",
+      "reason": "Credit education + reality check framing is unique. 'Is this loan worth it?' framing creates standalone value beyond calculation. Strongest differentiation."
+    },
+    "/loan-payment-table": {
+      "classification": "SAFE",
+      "reason": "Hub/aggregation page \u2014 legitimate site architecture, not a doorway. Links to scenario pages contextually. Has unique methodology + FAQ content."
+    },
+    "/data": {
+      "classification": "SAFE",
+      "reason": "Data hub \u2014 legitimate site section. Clearly structured with citations, methodology, CSV plans. Not a doorway \u2014 this is authority-building infrastructure."
+    }
+  },
+  "summary": {
+    "SAFE": 6,
+    "NEEDS_MORE_UNIQUE_VALUE": 1,
+    "CANNIBALIZATION_RISK": 0,
+    "DOORWAY_RISK": 0,
+    "REJECT": 0
+  },
+  "notes": "The hand-crafted approach (unique use cases per page) successfully avoided doorway risk. The original 25-page mass template approach failed because it was number-swapping. These 5 pages are genuinely differentiated."
+}

@@ -1,0 +1,162 @@
+{
+  "phase": 31,
+  "title": "Phase 31 Recovery Status — Jun 24, 2026",
+  "generated": "2026-06-24T13:30:00Z",
+  "expansion_freeze": "ACTIVE — ALL EXPANSION FROZEN",
+  "gsc_data": {
+    "source": "FRESH — Service Account auth (permanent)",
+    "status": "LIVE_API_OK",
+    "date_range": "2026-06-15 to 2026-06-21 (7d)",
+    "metrics_7d": {
+      "impressions": 404,
+      "clicks": 1,
+      "ctr_pct": 0.2,
+      "avg_position": 33.7,
+      "pages_with_impressions": 63,
+      "query_count": 82,
+      "query_impressions": 183
+    },
+    "metrics_28d": {
+      "impressions": 1672,
+      "clicks": 1,
+      "pages_with_impressions": 123,
+      "pages_with_clicks": 1,
+      "clicked_page": "https://www.qfinhub.com/tools/investment-25k-10yr"
+    },
+    "change_vs_previous_7d": {
+      "impressions": -158,
+      "pct": -28.1,
+      "previous_impressions": 562,
+      "assessment": "DECLINING — 28% drop vs previous period"
+    }
+  },
+  "token_status": {
+    "status": "LIVE — Service Account auth (permanent, no expiry)",
+    "auth_method": "service_account",
+    "service_account": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
+    "note": "Token issue RESOLVED. Old OAuth refresh_token is dead but Service Account replaces it permanently."
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "live_title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+      "impressions_7d": 59,
+      "clicks": 0,
+      "avg_position": 10.1,
+      "top_query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "top_query_position": 6.9,
+      "top_query_impressions": 43,
+      "last_recrawl": "2026-06-04T17:23:57Z (20 days ago)",
+      "recrawl_status": "NOT RECRAWLED — fix deployed Jun 17 still invisible to Google",
+      "assessment": "Best click candidate on site. Position 6.9 for main query is PAGE 1. Fix invisible until recrawl."
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "live_title": "Rent vs Buy Calculator: Should You Rent or Buy a Home in 2026? (Free Tool) | QFINHUB",
+      "impressions_7d": 3,
+      "clicks": 0,
+      "avg_position": 5.7,
+      "last_recrawl": "2026-05-28T19:37:52Z (27 days ago)",
+      "assessment": "Ultra-low volume (3 imp). Good position but negligible traffic."
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "impressions_7d": "<4 (not in top 63 pages)",
+      "clicks": 0,
+      "last_recrawl": "2026-05-28T22:02:38Z (27 days ago)",
+      "assessment": "Volume too low to track reliably. Below detection threshold."
+    }
+  },
+  "additional_discovery": {
+    "retirement_decision": {
+      "url": "/decision/how-much-do-i-need-to-retire",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "impressions_7d": 24,
+      "clicks": 0,
+      "avg_position": 4.8,
+      "last_recrawl": "2026-05-28T22:03:53Z (27 days ago)",
+      "assessment": "BEST-POSITIONED PAGE ON SITE (pos 4.8, 24 imp). NOT on approved breakthrough list. Cannot modify under Phase 31 freeze. Natural SERP CTR at position 4.8 should be 5-8% — 0 clicks suggests snippet cannibalization or title issue."
+    },
+    "compound_interest_variant": {
+      "url": "/tools/compound-100k-20yr-5pct",
+      "impressions_7d": 32,
+      "clicks": 0,
+      "avg_position": 9.2,
+      "assessment": "Tool variant. 32 impressions on page 1. No clicks — snippet may be giving away the answer."
+    }
+  },
+  "the_actual_first_click": {
+    "page": "/tools/investment-25k-10yr",
+    "http_status": 200,
+    "robots": "index, follow",
+    "canonical": "self",
+    "impressions_7d": 4,
+    "clicks_7d": 0,
+    "clicks_28d": 1,
+    "avg_position": 12.0,
+    "last_recrawl": "2026-06-04T07:58:17Z (20 days ago)",
+    "note": "FIRST REAL CONTENT CLICK CONFIRMED (28d window). Only 4 imp in 7d — very low volume. Click may have been from earlier period."
+  },
+  "top_pages_by_impression": [
+    {"url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment", "imp": 59, "clicks": 0, "pos": 10.1},
+    {"url": "/calculators/investment-return", "imp": 42, "clicks": 0, "pos": 86.0},
+    {"url": "/calculators/401k-calculator", "imp": 36, "clicks": 0, "pos": 70.2},
+    {"url": "/tools/compound-100k-20yr-5pct", "imp": 32, "clicks": 0, "pos": 9.2},
+    {"url": "/calculators/tax-calculator", "imp": 27, "clicks": 0, "pos": 83.9},
+    {"url": "/decision/how-much-do-i-need-to-retire", "imp": 24, "clicks": 0, "pos": 4.8}
+  ],
+  "deploy_activity": {
+    "last_deploy": "2026-06-21 (Phase 34.4)",
+    "deploys_since_last_report": 0,
+    "no_new_changes": true
+  },
+  "key_observations": {
+    "positive": [
+      "GSC TOKEN RESOLVED — Service Account permanent auth working. No more 7-day expiry.",
+      "First real click confirmed on /tools/investment-25k-10yr (28d window)",
+      "$20k loan blog at position 6.9 for its main query (PAGE 1!) — 43 of 59 impressions",
+      "Retirement decision page at position 4.8 (24 imp) — highest-ranked page on site",
+      "All 5 key pages HTTP 200, index/follow, self-canonical — zero technical issues",
+      "Live title fix confirmed on $20k loan blog: '$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule'",
+      "0 accidental changes — fully compliant with Phase 31 freeze"
+    ],
+    "negative": [
+      "28.1% impression DECLINE (562→404) vs previous 7d period",
+      "$20k loan blog NOT recrawled in 20 days. Fix deployed Jun 17 invisible to Google.",
+      "Retirement decision (pos 4.8) NOT recrawled in 27 days. 0 clicks despite page 1 position.",
+      "All calculator money pages at positions 70-89 — domain authority ceiling (0 backlinks)",
+      "1 click in 28 days across 1,672 impressions — 0.06% CTR"
+    ],
+    "blockers": [
+      "RECRAWL GAP — key pages 20-27 days since last crawl. All improvements invisible.",
+      "DA CEILING — calculator money pages at 70-89 due to 0 backlinks. No fix possible under freeze.",
+      "Impression decline trend — -28% suggests Google testing reduced rankings or query shifts"
+    ]
+  },
+  "compliance": {
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_indexing_requests": 0,
+    "validate_fix_used": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_churn": 0,
+    "deploy_made": false,
+    "notes": "Fully compliant with Phase 31 SAFE RECOVERY MODE. All work is read-only monitoring. No changes made."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "summary": "MIXED DAY. GSC token RESOLVED — Service Account auth live, fresh data flowing. But data shows 28% impression decline and 1 click/1,672 imp (0.06% CTR). The $20k loan blog at position 6.9 for its main query is the clear #1 click candidate but has NOT been recrawled in 20 days. Retirement decision at position 4.8 with 24 impressions should be getting 1-2 clicks at that position — 0 clicks suggests snippet or title issue. All pages technically healthy but invisible improvements + DA ceiling block progress. No changes made — fully compliant with Phase 31 freeze."
+  }
+}

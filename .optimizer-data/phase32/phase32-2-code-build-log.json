@@ -1,0 +1,27 @@
+{
+  "phase": "32.2",
+  "title": "Code Build Log — 6 Approved URLs",
+  "version": "1.0.0",
+  "created": "2026-06-18T04:30:00+03:00",
+  "files_created": [
+    "src/data/loan-scenarios.ts (content data for all 4 scenario pages)",
+    "src/app/loan-scenarios/[slug]/page.tsx (dynamic route rendering from content data)",
+    "src/app/loan-payment-table/page.tsx (hub page)",
+    "src/app/data/page.tsx (data hub MVP)"
+  ],
+  "build_result": "PASS — npx next build succeeded. All 6 new routes compiled.",
+  "http_200_verified": [
+    "/loan-scenarios/small-emergency-loan-5000-15-percent (200)",
+    "/loan-scenarios/good-credit-loan-20000-8-percent (200)",
+    "/loan-scenarios/debt-consolidation-loan-25000-10-percent (200)",
+    "/loan-scenarios/fair-credit-loan-20000-20-percent (200)",
+    "/loan-payment-table (200)",
+    "/data (200)"
+  ],
+  "canonical_verified": "Yes — self-canonical on all pages. Example: <link rel='canonical' href='https://qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent'/>",
+  "sitemap_inclusion": "PENDING VERIFICATION — SSG routes should auto-appear in sitemap after deploy",
+  "no_phase_31_pages_edited": true,
+  "total_new_files": 4,
+  "total_new_routes": 6,
+  "total_new_lines": "~600 lines of code + ~900 lines of content data"
+}

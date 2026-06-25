@@ -1,0 +1,61 @@
+{
+  "phase": "32-PATCH",
+  "title": "Doorway / Duplication Risk Audit \u2014 Long-Tail Pages",
+  "version": "1.0.0",
+  "created": "2026-06-18T02:20:00+03:00",
+  "principle": "Google's doorway page policy: Pages that are substantially similar, primarily funnel users to another page, or exist only to capture search traffic with thin differentiation are at risk.",
+  "risk_classification": {
+    "SAFE": "Page is meaningfully unique. Has distinct value beyond funneling. Can be published indexable.",
+    "NEEDS_MORE_UNIQUE_VALUE": "Page has unique calculation but explanation/context is too thin. Fix before publishing.",
+    "CANNIBALIZATION_RISK": "Page targets same or overlapping keywords as parent money page or sibling. Risk of diluting ranking signals.",
+    "DOORWAY_RISK": "Page is substantially similar to siblings, primarily funnels to parent calculator, or adds minimal unique value. HIGH RISK of Google penalty.",
+    "REJECT": "Page is clearly a doorway, duplicate, or number-swap variant. DO NOT PUBLISH."
+  },
+  "audit_by_risk_type": {
+    "number_swap_variants": {
+      "risk": "DOORWAY_RISK \u2014 HIGH",
+      "examples": [
+        "loan-20000-at-8-percent-5-years vs loan-20000-at-12-percent-5-years",
+        "Same template, different rate. Google may see these as doorway pages."
+      ],
+      "mitigation": "Only publish if each variant has SUBSTANTIALLY unique explanation referencing specific real-world scenarios. E.g., '8% is an excellent rate for good credit' vs '12% is an average rate for fair credit' \u2014 and each page must have 3+ unique content blocks.",
+      "max_variants_per_base": "3-5 variants per loan amount (different rates/terms) with strong differentiation. Do NOT publish all 1,620 loan variants."
+    },
+    "funnel_pages": {
+      "risk": "DOORWAY_RISK \u2014 MEDIUM",
+      "description": "Pages whose primary purpose is to show a number and then push users to the parent calculator",
+      "detection": "If above-fold content is calculation result + CTA to parent calculator, with minimal unique content below, this is a doorway pattern",
+      "mitigation": "Above-fold must include unique explanation/comparison/warning. CTA to parent calculator must be secondary to standalone value."
+    },
+    "near_duplicate_templates": {
+      "risk": "CANNIBALIZATION_RISK \u2014 HIGH",
+      "description": "Pages built from the same template where only the numbers change",
+      "examples": "All loan payment pages using identical section structure with swapped numbers",
+      "mitigation": "Each page must have at least 3 unique content sections not present in siblings. Must use different structural approaches (e.g., one page compares to auto loans, another to personal loans, another to student loans)."
+    },
+    "parent_cannibalization": {
+      "risk": "CANNIBALIZATION_RISK \u2014 MEDIUM",
+      "description": "Long-tail page may outrank parent money page for related head terms",
+      "mitigation": "Long-tail pages must target SPECIFIC long-tail queries only. Do not optimize for head terms. Parent page must remain the strongest page for the core calculator term."
+    }
+  },
+  "batch_1_25_pages_audit": {
+    "SAFE_0": "0 pages classified SAFE \u2014 all need additional unique value",
+    "NEEDS_MORE_UNIQUE_VALUE_1": "loan-20000-at-8-percent-5-years \u2014 strong demand (GSC), near 90 score. Fix: add rich comparison table, real-world context, credit score guidance.",
+    "DOORWAY_RISK_24": "24 pages show number-swap or template-duplication risk at current quality level",
+    "overall_assessment": "Cannot publish any of the 25 proposed pages as-is. All need significant unique content enhancement to pass 90/100 and avoid doorway risk."
+  },
+  "structural_fix_for_batch_1": {
+    "reduce_variants": "Select 3-5 STRONGEST variants (highest demand + most differentiated). Do not publish 25 near-identical pages.",
+    "per_page_unique_elements": [
+      "Unique real-world scenario tying numbers to actual financial situations",
+      "Comparison table with 2-3 different scenarios (higher/lower amount, different term)",
+      "Credit score guidance specific to this rate tier",
+      "Total cost breakdown specific to this calculation",
+      "Warning or tip unique to this loan size/rate/term",
+      "Related scenario links that are contextually relevant (not auto-generated)"
+    ],
+    "quality_over_quantity": "5 pages at 90+ > 25 pages at 70"
+  },
+  "ongoing_audit_requirement": "Every proposed batch must pass doorway audit BEFORE quality scoring. Pages flagged as DOORWAY_RISK are auto-rejected regardless of other scores."
+}

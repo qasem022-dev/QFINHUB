@@ -1,0 +1,192 @@
+{
+  "phase": "32-PATCH",
+  "title": "Corrected 1M Visitor Milestone Model \u2014 Built Backward",
+  "version": "2.0.0",
+  "created": "2026-06-18T02:25:00+03:00",
+  "replaces": "six-month-1m-milestones.json (v1.0.0)",
+  "methodology": "Built backward from 1M/month target. Each month's target is the minimum required to stay on trajectory.",
+  "probability_of_1M": "5-15% \u2014 requires exceptional execution + indexing breakthrough + at least 1 data asset going viral. Lowered from 10-20% after auditing reveals most pages fail 90/100 gate.",
+  "ctr_and_impression_math": {
+    "CTR_1pct": {
+      "ctr": "1%",
+      "impressions_needed_monthly": "100,000,000",
+      "impressions_needed_daily": "3,333,333"
+    },
+    "CTR_2pct": {
+      "ctr": "2%",
+      "impressions_needed_monthly": "50,000,000",
+      "impressions_needed_daily": "1,666,667"
+    },
+    "CTR_3pct": {
+      "ctr": "3%",
+      "impressions_needed_monthly": "33,333,333",
+      "impressions_needed_daily": "1,111,111"
+    },
+    "CTR_5pct": {
+      "ctr": "5%",
+      "impressions_needed_monthly": "20,000,000",
+      "impressions_needed_daily": "666,667"
+    }
+  },
+  "pages_and_traffic_math": {
+    "25_visits_per_page": {
+      "visits_per_page_per_month": 25,
+      "pages_needed": "40,000",
+      "realistic": false
+    },
+    "50_visits_per_page": {
+      "visits_per_page_per_month": 50,
+      "pages_needed": "20,000",
+      "realistic": true
+    },
+    "100_visits_per_page": {
+      "visits_per_page_per_month": 100,
+      "pages_needed": "10,000",
+      "realistic": true
+    },
+    "250_visits_per_page": {
+      "visits_per_page_per_month": 250,
+      "pages_needed": "4,000",
+      "realistic": true
+    }
+  },
+  "hybrid_realistic_path": {
+    "assumption": "Mix of page tiers with different traffic levels",
+    "tiers": {
+      "tier_1_money_pages": {
+        "count": 30,
+        "visits_each": "500-2,000",
+        "total": "15,000-60,000",
+        "ctr": "3-5%",
+        "position": "1-5"
+      },
+      "tier_2_strong_long_tail": {
+        "count": 100,
+        "visits_each": "200-500",
+        "total": "20,000-50,000",
+        "ctr": "2-3%",
+        "position": "3-8"
+      },
+      "tier_3_moderate_long_tail": {
+        "count": 500,
+        "visits_each": "50-150",
+        "total": "25,000-75,000",
+        "ctr": "1.5-2.5%",
+        "position": "5-15"
+      },
+      "tier_4_volume_long_tail": {
+        "count": 5000,
+        "visits_each": "10-30",
+        "total": "50,000-150,000",
+        "ctr": "0.5-1.5%",
+        "position": "10-30"
+      },
+      "tier_5_data_assets": {
+        "count": 12,
+        "visits_each": "1,000-10,000",
+        "total": "12,000-120,000",
+        "ctr": "3-8%",
+        "position": "1-5 for data queries"
+      },
+      "brand_direct": {
+        "visits": "5,000-25,000",
+        "source": "direct + brand search"
+      }
+    },
+    "estimated_total_range": "127,000-480,000 visits/month (BELOW 1M \u2014 needs stronger tier 1-4)",
+    "gap_to_1M": "520,000-873,000 visits/month gap \u2014 requires significantly more tier 1+2 pages or a viral asset"
+  },
+  "monthly_milestones": {
+    "month_1_jul": {
+      "goal": "Prove quality indexing works. Get first content clicks.",
+      "pages_created": "15-25 (hand-crafted at 90+, NOT mass-produced)",
+      "pages_indexed_target": "10-20 of new pages indexed within 30 days",
+      "total_indexed": "296-306 (from 286 baseline)",
+      "impressions_monthly": "5,000-25,000",
+      "clicks_monthly": "5-50 (FIRST CONTENT CLICKS)",
+      "ctr": "0.1-0.5%",
+      "data_hub": "MVP live with loan + mortgage tables",
+      "key_metric": "At least 1 content click. Indexing rate on new pages >= 50%.",
+      "fail_triggers": "0 clicks OR <30% indexing OR doorway/quality issues detected",
+      "scale_trigger": "If 5+ clicks + 50%+ indexing + 90+ quality maintained \u2192 move to 25 pages/week"
+    },
+    "month_2_aug": {
+      "goal": "Scale to 500+ approved pages if gates pass. First 100-1,000 clicks.",
+      "pages_created": "100-500 (25-125/week, 5-25/day, quality-gated)",
+      "pages_indexed_target": "150-500",
+      "total_indexed": "450-800",
+      "impressions_monthly": "50,000-250,000",
+      "clicks_monthly": "100-1,000",
+      "ctr": "0.2-1%",
+      "data_assets": "3-4 published, at least 1 getting organic traffic",
+      "key_metric": "At least 100 clicks. Impressions growing week-over-week.",
+      "fail_triggers": "<50 clicks OR <30% indexing OR discovered-not-indexed ratio worsening",
+      "scale_trigger": "If 500+ clicks + impressions growing + data asset getting traffic \u2192 expand to backup database"
+    },
+    "month_3_sep": {
+      "goal": "2,000-4,000 approved pages. First 3K-20K monthly clicks.",
+      "pages_created": "1,500-3,500",
+      "pages_indexed": "1,500-3,500",
+      "total_indexed": "2,000-4,000",
+      "impressions_monthly": "500,000-2,000,000",
+      "clicks_monthly": "3,000-20,000",
+      "ctr": "0.5-2%",
+      "winning_database": "Identified and doubled down. Losing databases killed.",
+      "key_metric": "3,000+ clicks. Winning database showing clear growth curve.",
+      "fail_triggers": "<1,000 clicks OR no winning database OR quality issues at scale",
+      "scale_trigger": "If 10,000+ clicks + winning database growing \u2192 expand to held databases"
+    },
+    "month_4_oct": {
+      "goal": "5,000-10,000 approved pages. 25K-100K monthly clicks.",
+      "pages_created": "3,000-6,000",
+      "pages_indexed": "5,000-10,000",
+      "impressions_monthly": "2,000,000-5,000,000",
+      "clicks_monthly": "25,000-100,000",
+      "ctr": "1-2.5%",
+      "data_assets": "8-12 published, at least 2-3 earning citations",
+      "key_metric": "50,000+ clicks. Data assets getting cited. Domain authority beginning to compound.",
+      "fail_triggers": "<15,000 clicks OR no external citations OR indexing rate declining",
+      "scale_trigger": "If 75,000+ clicks + citations appearing \u2192 move toward 1M trajectory"
+    },
+    "month_5_nov": {
+      "goal": "10,000-15,000 approved pages. 100K-500K monthly visits.",
+      "pages_created": "5,000-5,000 (slower \u2014 focus on quality, not volume)",
+      "pages_indexed": "10,000-15,000",
+      "impressions_monthly": "5,000,000-15,000,000",
+      "clicks_monthly": "100,000-500,000",
+      "ctr": "2-3%",
+      "critical_checkpoint": "MUST be at 100K+ visits by end of Month 5 or 1M is impossible in Month 6",
+      "fail_triggers": "<50,000 visits \u2014 1M trajectory DEAD. Extend timeline to 12 months.",
+      "scale_trigger": "If 250,000+ visits \u2192 1M in Month 6 is plausible"
+    },
+    "month_6_dec": {
+      "goal": "15,000-25,000 approved pages. 1M visits/month ONLY IF all prior months hit.",
+      "pages_created": "5,000-10,000",
+      "pages_indexed": "15,000-25,000",
+      "impressions_monthly": "15,000,000-35,000,000",
+      "clicks_monthly": "400,000-1,000,000",
+      "ctr": "2.5-3.5%",
+      "1M_possible_if": "Month 5 had 150K+ visits AND CTR improved AND domain authority DR 20+ AND winning database dominates niche",
+      "1M_likely_dead_if": "Month 5 below 100K visits OR CTR below 1.5% OR no external citations OR indexing issues persist",
+      "honest_assessment": "1M in Month 6 requires a compounding growth curve that starts slow and accelerates. The math works only if: (a) indexing problems resolve, (b) at least 1 database dominates its niche, (c) data assets earn citations building domain authority, (d) CTR optimization succeeds."
+    }
+  },
+  "failure_triggers_any_month": [
+    "Discovered-not-indexed ratio worsens significantly",
+    "Indexing rate drops below 25% on new pages",
+    "0 content clicks after 60 days of publishing",
+    "Google manual action or quality penalty",
+    "Build pipeline becomes unstable at scale",
+    "Cannibalization detected (money pages lose traffic to database pages)",
+    "Quality scores declining (rushing quantity over quality)"
+  ],
+  "scale_triggers_any_month": [
+    "Indexing rate consistently > 50% on new pages",
+    "Impressions growing week-over-week for 4+ consecutive weeks",
+    "CTR improving (0% \u2192 0.5% \u2192 1% \u2192 2%)",
+    "Winning database clearly identified with growth curve",
+    "At least 1 data asset earning natural citations or backlinks",
+    "Money pages gaining (not losing) traffic from database support"
+  ],
+  "bottom_line": "1M in 6 months requires everything to go right. Most realistic outcome: 100K-300K visits in 6 months, 1M in 12-18 months. The 6-month goal is a sprint target, not a guarantee."
+}

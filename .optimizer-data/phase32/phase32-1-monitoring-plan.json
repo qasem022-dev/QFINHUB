@@ -1,0 +1,57 @@
+{
+  "phase": "32.1",
+  "title": "Monitoring Plan \u2014 Deployed URLs",
+  "version": "1.0.0",
+  "created": "2026-06-18T03:45:00+03:00",
+  "urls_monitored": 6,
+  "measurement_windows": {
+    "day_0": {
+      "event": "Deploy to Vercel",
+      "check": "HTTP 200 on all 6 URLs. Sitemap includes all 6. Canonical correct."
+    },
+    "day_3": {
+      "event": "First Google crawl expected",
+      "check": "Check GSC URL Inspection for at least 1 URL showing 'URL is on Google'. No data change expected yet."
+    },
+    "day_7": {
+      "event": "Discovery window",
+      "check": "At least 3 of 6 URLs discovered by Google. No indexing expected yet. Check for crawl errors."
+    },
+    "day_14": {
+      "event": "Early indexing window",
+      "check": "At least 2 of 6 URLs indexed. Check impressions. No change in discovered-not-indexed ratio."
+    },
+    "day_21": {
+      "event": "Indexing decision window",
+      "check": "At least 4 of 6 URLs indexed. Any impressions on any page. No cannibalization detected on Loan Calculator."
+    },
+    "day_30": {
+      "event": "Full measurement",
+      "check": "Indexing rate >= 50% (3+/6). Any impressions turning into clicks. Parent calculator impressions stable or growing."
+    }
+  },
+  "success_criteria": {
+    "by_day_7": "3+ URLs discovered by Google",
+    "by_day_21": "4+ URLs indexed",
+    "by_day_30": "Any impressions on any scenario page. 0 cannibalization detected.",
+    "stretch": "At least 1 content click from any scenario page"
+  },
+  "failure_criteria": {
+    "by_day_14": "0 URLs indexed \u2192 investigate quality or crawl issues",
+    "by_day_21": "<2 URLs indexed \u2192 scenario pages may not index well at current authority level",
+    "by_day_30": "0 impressions \u2192 long-tail queries may have lower volume than estimated, or pages not ranking",
+    "any_time": "Discovered-not-indexed count increases by >50 \u2192 scenario pages may be adding to the problem"
+  },
+  "what_to_monitor": {
+    "gsc_daily": "Pull fresh GSC data via pipeline. Check page-level data for new URLs.",
+    "url_inspection_weekly": "Check 1-2 URLs per week via GSC URL Inspection API (if token works).",
+    "link_regression": "Run verify-internal-links.js after each deploy.",
+    "sitemap": "Verify sitemap includes all deployed URLs after each deploy.",
+    "parent_calculator": "Track Loan Calculator impressions and position. Any decline = alert."
+  },
+  "decision_points": {
+    "day_21_evaluation": "If 4+/6 indexed: SCALE \u2014 plan next 5-10 pages. If <2/6 indexed: HOLD \u2014 investigate and fix before more pages.",
+    "day_30_evaluation": "If any clicks + indexing >50%: APPROVE Phase 32.2 (next batch). If 0 clicks but indexing ok: extend measurement. If 0 indexing: pivot strategy."
+  },
+  "file": ".optimizer-data/phase32/phase32-1-monitoring-log.json (to be updated at each checkpoint)"
+}

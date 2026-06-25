@@ -1,0 +1,103 @@
+{
+  "phase": 32,
+  "title": "Existing Impression CTR Attack",
+  "version": "1.0.0",
+  "created": "2026-06-17T18:45:00+03:00",
+  "principle": "Existing pages with impressions are more valuable than new pages. Fix what's already visible.",
+  "daily_process": {
+    "step_1": "Pull fresh GSC page-level data",
+    "step_2": "Find pages with position 5-20 AND 0 clicks (highest priority)",
+    "step_3": "Improve title, meta description, and above-fold answer",
+    "step_4": "Do NOT give full answer away in snippet if it kills clicks",
+    "step_5": "Keep helpful but invite calculator use",
+    "step_6": "Max 3 pages per day \u2014 quality over quantity"
+  },
+  "current_candidates_from_gsc": {
+    "top_priority_pos_5_20_0_clicks": [
+      {
+        "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "impressions_7d": 114,
+        "position": 10.8,
+        "clicks": 0,
+        "action": "Optimize title and meta to include 'Calculator' and 'Monthly Payment'. Add direct answer above fold."
+      },
+      {
+        "url": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+        "impressions_7d": 11,
+        "position": 11.4,
+        "clicks": 0,
+        "action": "Review title \u2014 may be too news-focused. Add calculator CTA in meta."
+      },
+      {
+        "url": "/calculators/annuity-calculator",
+        "impressions_7d": 4,
+        "position": 8.2,
+        "clicks": 0,
+        "action": "Check if title and meta are compelling. Add 'calculate your payout' CTA."
+      },
+      {
+        "url": "/calculators/compound-interest",
+        "impressions_7d": 3,
+        "position": 6.7,
+        "clicks": 0,
+        "action": "Already ranking well. Title and meta may need stronger value prop."
+      },
+      {
+        "url": "/calculators/mortgage-affordability",
+        "impressions_7d": 3,
+        "position": 4.3,
+        "clicks": 0,
+        "action": "Near top. Meta may be giving answer away. Adjust to invite click."
+      },
+      {
+        "url": "/calculators/mortgage-calculator",
+        "impressions_7d": 5,
+        "position": 7.0,
+        "clicks": 0,
+        "action": "Title + meta audit. Consider adding '2026' for freshness."
+      }
+    ],
+    "secondary_pos_20_50_some_impressions": [
+      {
+        "url": "/calculators/investment-return",
+        "impressions_7d": 70,
+        "position": 79.3,
+        "clicks": 0,
+        "action": "Position too deep for CTR fix \u2014 needs ranking improvement first"
+      },
+      {
+        "url": "/calculators/retirement-planning",
+        "impressions_7d": 14,
+        "position": 77.8,
+        "clicks": 0,
+        "action": "Position improving but still deep. Monitor, don't edit (Phase 31 edit hold active)"
+      }
+    ]
+  },
+  "ctr_fix_template": {
+    "before_title": "Current title",
+    "after_title": "Proposed title with stronger CTA or number specificity",
+    "query_targeted": "The specific search query this page is targeting",
+    "expected_ctr_lift": "0.5-2% (from 0% to 0.5-2%)",
+    "date_changed": "YYYY-MM-DD",
+    "measurement_window": "14 days"
+  },
+  "tracking": {
+    "file": ".optimizer-data/phase32/ctr-attack-log.json",
+    "fields": [
+      "page_url",
+      "query",
+      "before_title",
+      "after_title",
+      "before_meta",
+      "after_meta",
+      "date_changed",
+      "before_impressions",
+      "before_clicks",
+      "after_impressions_14d",
+      "after_clicks_14d",
+      "ctr_lift_achieved"
+    ]
+  },
+  "dont_give_answer_away": "The snippet should show enough to prove relevance but not the full calculation result. The user should need to click to get their specific number. For calculator pages: 'Enter your numbers to see your personalized result' is better than showing a sample result."
+}

@@ -1,0 +1,290 @@
+{
+  "package": "Day 7 Decision Package — PREP (do not execute)",
+  "prepared": "2026-06-23T23:15:00+03:00",
+  "day7_checkpoint": "2026-06-25T04:27:00+03:00",
+  "time_to_checkpoint_hours": 29.2,
+  "phase": 32,
+  "status": "PENDING — wait for Day 7",
+
+  "report_labels": {
+    "report_generation_date": "2026-06-23",
+    "gsc_data_freshness_date": "2026-06-23T23:10:46+03:00",
+    "gsc_data_date_range": "2026-06-14 to 2026-06-20",
+    "gsc_reporting_lag_days": 3,
+    "gsc_reporting_lag_note": "Latest available GSC data is 3 days behind. No data exists for Jun 21-23. This is normal GSC API behavior.",
+    "true_phase32_page_age_hours": 138.8,
+    "true_phase32_page_age_days": 5.8,
+    "phase32_publish_timestamp": "2026-06-18T04:27:00+03:00"
+  },
+
+  "phase32_url_crawl_index_status": {
+    "source": "URL Inspection API via Service Account",
+    "inspected_at": "2026-06-23T23:10:00+03:00",
+    "discovery_fluctuation_note": "At Day 5 (138h), fluctuation is NORMAL per Phase 32.4D-F docs. Only worry at Day 7 if all URLs still unknown.",
+    "urls": {
+      "loan_scenarios_small_emergency_loan": {
+        "url": "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+        "coverageState": "URL is unknown to Google",
+        "verdict": "NEUTRAL",
+        "lastCrawlTime": "N/A",
+        "crawled": false,
+        "status": "UNKNOWN — not yet discovered"
+      },
+      "loan_scenarios_good_credit_loan": {
+        "url": "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+        "coverageState": "Discovered - currently not indexed",
+        "verdict": "NEUTRAL",
+        "lastCrawlTime": "N/A",
+        "crawled": false,
+        "status": "DISCOVERED — waiting for crawl"
+      },
+      "loan_scenarios_debt_consolidation": {
+        "url": "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+        "coverageState": "URL is unknown to Google",
+        "verdict": "NEUTRAL",
+        "lastCrawlTime": "N/A",
+        "crawled": false,
+        "status": "UNKNOWN — not yet discovered"
+      },
+      "loan_scenarios_fair_credit_loan": {
+        "url": "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+        "coverageState": "URL is unknown to Google",
+        "verdict": "NEUTRAL",
+        "lastCrawlTime": "N/A",
+        "crawled": false,
+        "status": "UNKNOWN — not yet discovered"
+      },
+      "loan_payment_table_hub": {
+        "url": "https://www.qfinhub.com/loan-payment-table",
+        "coverageState": "Discovered - currently not indexed",
+        "verdict": "NEUTRAL",
+        "lastCrawlTime": "N/A",
+        "crawled": false,
+        "status": "DISCOVERED — waiting for crawl"
+      },
+      "data_hub": {
+        "url": "https://www.qfinhub.com/data",
+        "coverageState": "URL is unknown to Google",
+        "verdict": "NEUTRAL",
+        "lastCrawlTime": "N/A",
+        "crawled": false,
+        "status": "UNKNOWN — not yet discovered"
+      }
+    },
+    "summary": {
+      "discovered_not_indexed": 2,
+      "unknown_to_google": 4,
+      "indexed": 0,
+      "crawled": 0,
+      "assessment": "BETTER THAN EXPECTED at Day 5 — 2/6 URLs discovered. Google is processing the sitemap. Expect 4-6 discovered by Day 7."
+    }
+  },
+
+  "sitewide_gsc_trend": {
+    "data_source": "Service Account — Fresh pull Jun 23",
+    "auth_method": "service_account (permanent)",
+    "current_7d": {
+      "date_range": "2026-06-14 to 2026-06-20",
+      "impressions": 435,
+      "clicks": 1,
+      "ctr_pct": 0.2,
+      "avg_position": 32.9,
+      "pages_with_impressions": 64,
+      "query_count": 87
+    },
+    "previous_7d": {
+      "date_range": "2026-06-07 to 2026-06-13",
+      "impressions": 530,
+      "change": -95,
+      "change_pct": -17.9
+    },
+    "28d": {
+      "date_range": "2026-05-24 to 2026-06-20",
+      "impressions": 1641,
+      "clicks": 1,
+      "pages_with_impressions": 123,
+      "clicked_pages": ["/tools/investment-25k-10yr"]
+    },
+    "trend_assessment": "DECLINING — 17.9% drop from previous 7d window. Position worsened from 25.7 to 32.9. Likely caused by weekend traffic pattern shift in date window. First click still at 1 — no second click yet. Low-volume site, volatility expected."
+  },
+
+  "first_click_candidates": {
+    "only_clicked_page": {
+      "url": "/tools/investment-25k-10yr",
+      "clicks_28d": 1,
+      "note": "Only page with a click in 28 days"
+    },
+    "top_impression_candidates_pos_under_12": [
+      {
+        "url": "/tools/mortgage-900k-30yr-7pct",
+        "position": 6.0,
+        "impressions_28d": 25,
+        "clicks": 0,
+        "recrawl_age": "UNKNOWN — static calculator, never updated"
+      },
+      {
+        "url": "/tools/mortgage-200k-15yr-5-5pct",
+        "position": 7.8,
+        "impressions_28d": 32,
+        "clicks": 0,
+        "recrawl_age": "UNKNOWN — static calculator"
+      },
+      {
+        "url": "/tools/compound-100k-20yr-5pct",
+        "position": 9.3,
+        "impressions_28d": 81,
+        "clicks": 0,
+        "recrawl_age": "UNKNOWN — static calculator",
+        "note": "HIGHEST impressions near top — 81 imp, pos 9.3, 0 clicks = strong CTR opportunity"
+      },
+      {
+        "url": "/tools/compound-500k-15yr-5pct",
+        "position": 9.6,
+        "impressions_28d": 58,
+        "clicks": 0,
+        "recrawl_age": "UNKNOWN"
+      }
+    ],
+    "blog_candidates": [
+      {
+        "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "position_7d": 10.1,
+        "impressions_7d": 59,
+        "clicks": 0,
+        "last_recrawl": "2026-06-04",
+        "recrawl_age_days": 19,
+        "note": "FIX DEPLOYED Jun 17 but NOT recrawled. Title improved but invisible to Google. #1 candidate if recrawl occurs."
+      },
+      {
+        "url": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+        "position_28d": 10.2,
+        "impressions_28d": 21,
+        "clicks": 0,
+        "recrawl_age": "UNKNOWN"
+      }
+    ],
+    "decision_page_candidates": [
+      {
+        "url": "/decision/how-much-do-i-need-to-retire",
+        "position_28d": 4.8,
+        "impressions_28d": 24,
+        "last_recrawl": "2026-05-28",
+        "recrawl_age_days": 26,
+        "note": "BEST POSITION ON ENTIRE SITE but no recrawl in 26 days. Cannot modify under Phase 31 freeze."
+      },
+      {
+        "url": "/decision/rent-vs-buy-with-100k-income",
+        "position_28d": 4.5,
+        "impressions_28d": 6,
+        "last_recrawl": "2026-05-28",
+        "recrawl_age_days": 26,
+        "note": "Ultra-low volume. Cannot modify under Phase 31."
+      }
+    ]
+  },
+
+  "recrawl_gap_analysis": {
+    "worst_offenders": [
+      {"page": "Retirement decision", "age_days": 26, "position": 4.8},
+      {"page": "Rent vs buy decision", "age_days": 26, "position": 4.5},
+      {"page": "How much house decision", "age_days": 26, "position": "N/A (low volume)"},
+      {"page": "20k loan blog", "age_days": 19, "position": 10.1, "note": "Fix deployed, invisible"}
+    ],
+    "assessment": "Google's natural recrawl schedule is SLOW for this site (~25-30 day gaps). No intervention allowed under Phase 31. Recrawl gap is the single biggest bottleneck after GSC token (now solved)."
+  },
+
+  "sitemap_status": {
+    "total_urls": 528,
+    "last_checked": "2026-06-23T23:00:00+03:00",
+    "http_status": 200,
+    "phase32_urls_present": 6,
+    "lastmod_for_phase32_pages": "2026-06-21T19:37:54.214Z (all 6 pages same timestamp — build-time generation)",
+    "lastmod_assessment": "All Phase 32 pages show build-time lastmod. This is correct for SSG — the build timestamp is the actual last modification time. No manual lastmod update needed unless content changes."
+  },
+
+  "rss_feed_status": {
+    "feed_url": "https://www.qfinhub.com/feed.xml",
+    "http_status": 200,
+    "content_check": "NOT VERIFIED — need to check if feed contains Phase 32 pages or recent blog posts",
+    "rss_xml": "404 (no RSS feed at /rss.xml)",
+    "assessment": "Feed exists at /feed.xml. Content unknown. If it lists blog posts only (not tools/calculators), it won't help Phase 32 discovery."
+  },
+
+  "bing_indexnow_status": {
+    "indexnow_url": "https://www.qfinhub.com/indexnow.xml",
+    "http_status": 404,
+    "assessment": "IndexNow is NOT configured. Not a priority — Google is the primary search engine for this site. Bing/IndexNow can be implemented later but won't affect GSC indexing."
+  },
+
+  "robots_txt": {
+    "http_status": 200,
+    "rules": "User-Agent: *, Allow: /",
+    "sitemaps_declared": ["/sitemap.xml", "/news-sitemap.xml"],
+    "assessment": "Clean — no crawl blocks. Two sitemaps declared."
+  },
+
+  "batch_2_status": {
+    "status": "BLOCKED",
+    "pages_staged": 5,
+    "pages_deployed": 0,
+    "gate_condition": "Batch 1 must prove discovery (>=1 Phase 32 page indexed with impressions) before Batch 2 deploys",
+    "current_progress": "0/6 Phase 32 pages indexed. 2/6 discovered. Batch 2 remains BLOCKED until at least 1 Phase 32 page is indexed.",
+    "earliest_possible_unblock": "Day 14 (Jul 2) at the earliest if discovery converts to indexing by Day 7-10"
+  },
+
+  "safe_recrawl_pressure_recommendations": {
+    "allowed_actions": [
+      "Correct sitemap lastmod if content genuinely changed",
+      "Strong contextual internal links from high-traffic pages to Phase 32 pages",
+      "Update RSS/feed if content genuinely changed (blog posts only)",
+      "Natural social links (not spam pings)",
+      "Ensure Phase 32 pages are linked from homepage or prominent navigation"
+    ],
+    "blocked_actions": [
+      "NO Google Indexing API requests",
+      "NO GSC UI manual indexing requests",
+      "NO Validate Fix clicks",
+      "NO repeated spam pings to Google",
+      "NO PropellerAds or paid discovery",
+      "NO bulk internal link campaigns"
+    ],
+    "specific_recommendation": "One low-risk action today: ensure Phase 32 loan scenario pages are linked from the /loan-payment-table hub page and from relevant blog posts. These are natural contextual links, not spam. Deploy only if internal links are genuinely relevant and useful to users. If links already exist, no action needed."
+  },
+
+  "pruning_test_eligibility": {
+    "status": "NOT ALLOWED",
+    "reason": "AdSense review is ACTIVE. Any URL count changes could trigger re-review. Phase 31 freeze blocks all cleanup execution. Pruning can be considered after AdSense approval AND Phase 31 freeze lifted."
+  },
+
+  "adsense_review_status": {
+    "submitted": "2026-06-21",
+    "days_in_review": 2,
+    "stability_mode": "ACTIVE — no edits to review-critical pages",
+    "review_critical_pages": "homepage, calculators, trust pages, /data, /loan-payment-table, footer, nav, editorial policy, methodology, en.json, sitemap"
+  },
+
+  "day7_decision_checklist": {
+    "required_data_points": [
+      "Fresh GSC pull (Jun 24 AM cron) — will cover Jun 15-21",
+      "Re-run URL Inspection on all 6 Phase 32 pages — check if more discovered",
+      "Check if any Phase 32 page shows impressions in GSC",
+      "Verify GSC pipeline is still healthy (service account, no token issues)",
+      "Confirm 0 deploys since Jun 21 (stability intact)",
+      "Confirm no accidental edits to AdSense review-critical pages"
+    ],
+    "decision_framework": {
+      "scale_if": "3+/6 URLs indexed with impressions, no technical issues, parent pages safe",
+      "hold_if": "0 indexed, or discovery regression, or technical issues",
+      "abort_if": "Site-wide indexing penalty, manual action, or AdSense rejection"
+    },
+    "current_outlook": "HOLD is most likely. At Day 5 with 2/6 discovered and 0 indexed, reaching 3+/6 indexed by Day 7 is improbable. Google's indexing pipeline for new small sites typically takes 7-21 days. Most realistic target: Day 14 (Jul 2) for first Phase 32 page indexed."
+  },
+
+  "4_axis_compound_status": {
+    "tech_discovery_infrastructure": "ON_TRACK",
+    "million_visitor_traffic_goal": "OFF_TRACK",
+    "phase32_content_model": "UNPROVEN",
+    "batch_2": "BLOCKED",
+    "adsense_review_stability": "ACTIVE"
+  }
+}

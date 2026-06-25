@@ -1,0 +1,23 @@
+{
+  "phase": "31.4",
+  "job_id": "dcba952b4c45",
+  "mode": "SAFE_RECOVERY_MODE",
+  "allowed": [
+    "GSC monitoring",
+    "link regression check",
+    "uptime checks",
+    "watchlist update",
+    "indexing count tracking",
+    "report generation"
+  ],
+  "blocked": [
+    "new pages",
+    "outreach",
+    "indexing requests",
+    "Validate Fix",
+    "bulk links",
+    "bulk cleanup",
+    "content rewrites",
+    "normal expansion"
+  ]
+}
