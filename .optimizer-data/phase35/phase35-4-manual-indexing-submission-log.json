@@ -1,0 +1,89 @@
+{
+  "phase": "35.4",
+  "title": "Phase 35.4 — Manual Indexing Submission Queue",
+  "generated": "2026-06-26T22:08:00Z",
+  "status": "AWAITING_CLOAKBROWSER_EXECUTION",
+  "note": "GSC 'Test Live URL' and 'Request Indexing' are GSC web UI-only features. They cannot be performed via API. CloakBrowser with authenticated GSC session is required to execute this queue.",
+
+  "queueRules": {
+    "maxPerDay": 10,
+    "maxRetriesPerURL": 1,
+    "consecutiveDelay": "At least 30 seconds between submissions",
+    "ifRejectedAgain": "STOP for that URL. Record exact GSC message. Do not retry.",
+    "ifCaptchaOrChallenge": "PAUSE and report to Qasem. Do NOT bypass.",
+    "submitOnlyAfterTestLiveURL": true,
+    "submitOnlyIfAvailable": true,
+    "noIndexingAPI": true,
+    "noSpamRetries": true
+  },
+
+  "queue": {
+    "priority1": [
+      {
+        "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+        "label": "blog_20k_loan",
+        "preCheck": "HTTP 200 ✓, Canonical ✓, Robots index,follow ✓, Content 73KB ✓, Phase 35 snippet fix live ✓",
+        "step1": "GSC → URL Inspection → enter URL → Inspect",
+        "step2": "Click 'Test Live URL'",
+        "step3": "Record result: page fetch status, indexing allowed, canonical",
+        "step4": "If 'URL is available to Google' → click 'Request Indexing'",
+        "step5": "Record ACCEPTED or REJECTED with exact GSC message"
+      },
+      {
+        "url": "https://www.qfinhub.com/loan-payment-table",
+        "label": "loan_payment_table",
+        "preCheck": "HTTP 200 ✓, Canonical ✓, Robots index,follow ✓, Content 59KB ✓",
+        "steps": "Same flow as blog"
+      },
+      {
+        "url": "https://www.qfinhub.com/data",
+        "label": "data_page",
+        "preCheck": "HTTP 200 ✓, Canonical ✓, Robots index,follow ✓, Content 47KB ✓",
+        "steps": "Same flow"
+      }
+    ],
+    "priority2": [
+      {
+        "url": "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+        "label": "good_credit_loan"
+      },
+      {
+        "url": "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+        "label": "small_emergency_loan"
+      },
+      {
+        "url": "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+        "label": "debt_consolidation_loan"
+      },
+      {
+        "url": "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+        "label": "fair_credit_loan"
+      }
+    ]
+  },
+
+  "resultsLog": {
+    "target": ".optimizer-data/phase35/phase35-4-manual-indexing-submission-results.json",
+    "fieldsPerURL": [
+      "url",
+      "label",
+      "testLiveURL_result",
+      "pageFetchState",
+      "indexingAllowed",
+      "urlAvailableToGoogle",
+      "canonicalStatus",
+      "requestIndexingResult (ACCEPTED/REJECTED)",
+      "gscExactMessage",
+      "timestamp",
+      "cloakbrowserScreenshotIfAvailable"
+    ]
+  },
+
+  "doNotSubmit": [
+    "Any parent calculator — already indexed",
+    "/tools/investment-25k-10yr — tool variant",
+    "/all-pages — noindex + temp removal",
+    "Any noindexed formula variant",
+    "Any temporary removal URL"
+  ]
+}

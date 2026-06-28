@@ -1,0 +1,187 @@
+{
+  "phase": "35",
+  "mode": "MONITORING",
+  "title": "Phase 35 — 72-Hour Monitoring Report",
+  "reportGenerated": "2026-06-26T18:10:00Z",
+  "gscDataFreshness": "2026-06-26T21:03:34Z",
+  "gscDateRange": "Jun 17-23, 2026",
+  "gscReportingLag": "3 days",
+  "fixDeployDate": "Jun 25, 2026",
+  "hoursSinceFix": 36,
+  "dataOverlapWithFix": "NONE — GSC data window (Jun 17-23) is entirely BEFORE Phase 35 deployment (Jun 25)",
+  "nextMeaningfulData": "Jun 28-29 (first data window with 1-2 days of post-fix overlap)",
+
+  "sitewideMetrics": {
+    "impressions7d": 389,
+    "clicks7d": 1,
+    "ctrPct": 0.3,
+    "avgPosition": 37.8,
+    "pagesWithImpressions": 65,
+    "queryCount": 84,
+    "change7d": {
+      "impressions": -175,
+      "impressionsPct": -31.0,
+      "previousWindow": "Jun 10-16: 564 impressions",
+      "note": "Decline is PRE-FIX — Phase 35 not yet in data window"
+    },
+    "impressions28d": 1721,
+    "clicks28d": 1,
+    "pagesWithImpressions28d": 121,
+    "clickedPages": [
+      "https://www.qfinhub.com/tools/investment-25k-10yr"
+    ],
+    "clickedPagesCount": 1,
+    "contentClicks": 0,
+    "allClicksFromToolVariants": true
+  },
+
+  "parentCalculators": {
+    "compoundInterest": {
+      "url": "/calculators/compound-interest",
+      "impressions7d": 1,
+      "clicks7d": 0,
+      "position": 5.0,
+      "status": "NEAR-ZERO — Only 1 impression despite position 5. Classic zero-click architecture. Tool variant was cannibalizing. Title fix deployed Jun 25.",
+      "target": "30+ imp/7d by Week 2 (Jul 9)"
+    },
+    "mortgageCalculator": {
+      "url": "/calculators/mortgage-calculator",
+      "impressions7d": 1,
+      "clicks7d": 0,
+      "position": 10.0,
+      "status": "NEAR-ZERO — 1 impression at position 10. Title fix deployed Jun 25.",
+      "target": "20+ imp/7d by Week 2 (Jul 9)"
+    },
+    "loanCalculator": {
+      "url": "/calculators/loan-calculator",
+      "impressions7d": 0,
+      "clicks7d": 0,
+      "status": "ZERO — No GSC data at all. Title fix deployed Jun 25.",
+      "target": "Appear in GSC by Week 2 (Jul 9)"
+    }
+  },
+
+  "noindexedVariants": {
+    "compoundVariants": {
+      "preFixImpressions28d": 168,
+      "status": "Noindexed Jun 25. 7 removals submitted via GSC. Impressions should decline as Google processes removals.",
+      "currentGSCWindow": "0 variant page impressions for test queries — good sign, but data window is pre-fix"
+    },
+    "mortgageVariants": {
+      "preFixImpressions28d": 78,
+      "status": "Noindexed Jun 25. 4 removals submitted. Impressions should decline."
+    },
+    "removalProcessingStatus": "Submitted Jun 25. Google typically processes in 1-2 weeks. Check GSC Removals tool after Jul 2.",
+    "expectedOutcome": "246 monthly impressions reclaimed for parent calculators"
+  },
+
+  "allPagesRemoval": {
+    "url": "/all-pages",
+    "impressions7dPreFix": 4,
+    "position": 8.0,
+    "status": "STILL APPEARING — 4 impressions at position 8. Normal — noindex deployed Jun 25, data window is Jun 17-23 (pre-fix). Google has not recrawled yet.",
+    "expectedOutcome": "Should disappear from GSC after Google recrawls (1-4 weeks). 10 URL Inspections submitted Jun 25 to accelerate."
+  },
+
+  "blog20kLoan": {
+    "url": "/blog/20000-loan-payment-8-percent",
+    "impressions7d": 0,
+    "clicks7d": 0,
+    "preFixImpressions28d": 344,
+    "preFixPosition": 7.3,
+    "status": "ZERO in 7d window — but was 344 imp/28d. Page-level equals filter may miss due to URL variants. Need broader check.",
+    "fixDeployed": "First H2 changed from exact answer to curiosity hook. CTA added above answer. FAQ answers changed to CTA-driven.",
+    "expectedCTR": "3-5% at position 7 when Google recrawls"
+  },
+
+  "contentClicks": {
+    "nonToolClicks7d": 0,
+    "status": "ZERO — All 1 site-wide click came from /tools/investment-25k-10yr (tool variant, not content page)",
+    "target": "First non-tool content click by Week 3 (Jul 16)"
+  },
+
+  "adsenseStatus": {
+    "active": true,
+    "approvedDate": "Jun 21, 2026",
+    "stable": true,
+    "noReviewCriticalEdits": true,
+    "noPolicyPagesChanged": true
+  },
+
+  "urlInspectionStatus": {
+    "submitted": 10,
+    "date": "Jun 25, 2026",
+    "pages": [
+      "/calculators/compound-interest",
+      "/calculators/mortgage-calculator",
+      "/calculators/loan-calculator",
+      "/blog/20000-loan-payment-8-percent",
+      "6 related pages"
+    ],
+    "status": "Submitted — awaiting Google recrawl"
+  },
+
+  "gscRemovalsStatus": {
+    "submitted": 7,
+    "date": "Jun 25, 2026",
+    "type": "Temporary Removals",
+    "pages": [
+      "4 compound interest variants",
+      "3 mortgage variants"
+    ],
+    "status": "Submitted — Google processing. Check after Jul 2."
+  },
+
+  "answers": {
+    "didParentCalculatorImpressionsIncrease": "UNKNOWN — Data window (Jun 17-23) is pre-fix. Parent calculators had 0-1 impressions each. First post-fix data expected Jun 28-29.",
+    "didNoindexedVariantImpressionsDecline": "UNKNOWN — Data window is pre-fix. Impressions should decline as Google processes noindex tags and removals.",
+    "didBlog20kCTRImprove": "UNKNOWN — Data window is pre-fix. Blog had 0 impressions in 7d GSC page dimension but 344/28d previously. Need broader URL matching.",
+    "didAllPagesDisappear": "NOT YET — 4 impressions still showing (pre-fix data). Should decline after Google recrawls.",
+    "didContentClicksIncrease": "NO — 0 content clicks. All 1 site-wide click from /tools/investment-25k-10yr (tool variant).",
+    "isAdSenseStillStable": "YES — AdSense approved Jun 21, no changes to review-critical pages.",
+    "areWeCloserToTrafficRevenueGoals": "TOO EARLY — Phase 35 deployed 36 hours ago. GSC data has 3-day lag. First measurable signal expected Jun 28-29. Current metrics are pre-fix baseline."
+  },
+
+  "monitoringRules": {
+    "active": true,
+    "duration": "72 hours (Jun 26 18:00 → Jun 29 18:00)",
+    "restrictions": [
+      "NO new SEO pages",
+      "NO new titles",
+      "NO sitemap changes",
+      "NO GSC removal changes",
+      "NO repeat indexing requests",
+      "NO Batch 2",
+      "NO PropellerAds",
+      "NO fake traffic",
+      "NO AdSense review-critical edits",
+      "NO new architecture systems"
+    ],
+    "allowedActions": [
+      "Daily GSC data pull (cron ae8940265cb8 at 10 AM EEST)",
+      "Monitoring report updates",
+      "Critical bug fixes (security, 500 errors, broken pages)",
+      "Phase 31 safe recovery cron monitoring"
+    ]
+  },
+
+  "nextCheckpoints": {
+    "day3": {
+      "date": "Jun 28, 2026",
+      "action": "Pull fresh GSC — first data window with 1 day of post-fix overlap (Jun 25). Look for recrawl signals.",
+      "gscWindow": "Jun 19-25"
+    },
+    "day7": {
+      "date": "Jul 2, 2026",
+      "action": "First full 7-day post-fix window. If no parent calc movement, intensify internal links.",
+      "gscWindow": "Jun 25 - Jul 1"
+    },
+    "day14": {
+      "date": "Jul 9, 2026",
+      "action": "Decision point: if no parent calculator lift, consider content upgrade.",
+      "gscWindow": "Jul 2-8"
+    }
+  },
+
+  "status": "MONITORING — No action needed. Phase 35 fixes deployed, waiting for Google recrawl and GSC data to catch up."
+}

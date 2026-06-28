@@ -1,0 +1,169 @@
+{
+  "phase": "35.3",
+  "title": "Search-Demand Gate Build Integration",
+  "status": "DEPLOYED",
+  "deployedAt": "2026-06-26T18:00:00Z",
+  "parentPhase": "35.2 (checker script created)",
+  "rule": "SEARCH_DEMAND_FIRST (permanent, effective Jun 26 2026)",
+
+  "packageJsonScripts": {
+    "check-gate": {
+      "command": "node scripts/check-search-demand-gate.js --staged",
+      "purpose": "Local/agent workflow — checks staged files before commit",
+      "added": true
+    },
+    "check-gate:ci": {
+      "command": "node scripts/check-search-demand-gate.js --ci",
+      "purpose": "CI/Vercel deploy — checks deployment commit range",
+      "added": true
+    },
+    "check-gate:all": {
+      "command": "node scripts/check-search-demand-gate.js --all",
+      "purpose": "Full repo audit — scans all existing SEO-sensitive files",
+      "added": true
+    },
+    "prebuild": {
+      "command": "npm run check-gate:ci",
+      "purpose": "npm lifecycle hook — runs automatically before 'npm run build'",
+      "added": true,
+      "existingPrebuild": false,
+      "noOverwrite": true,
+      "chained": "check-gate:ci → build"
+    }
+  },
+
+  "vercelJsonUpdate": {
+    "previousBuildCommand": "next build",
+    "newBuildCommand": "npm run check-gate:ci && next build",
+    "rationale": "Vercel's buildCommand was 'next build' which bypasses npm lifecycle hooks. Updated to run the gate first via npm script, then next build. If gate fails (exit 1), the && chain stops and build is blocked.",
+    "noBuildCommandOverwrite": true,
+    "preserved": "All other vercel.json config (headers, redirects, regions, installCommand) unchanged"
+  },
+
+  "ciMode": {
+    "implemented": true,
+    "detectionFallbackOrder": [
+      "1. VERCEL_GIT_COMMIT_SHA — diff deployment commit against parent",
+      "2. VERCEL_GIT_COMMIT_SHA — diff against previous HEAD",
+      "3. Local git HEAD~1..HEAD",
+      "4. Conservative full SEO-sensitive file scan (NEVER passes blindly)"
+    ],
+    "failsafe": "If no git history available, scans ALL SEO-sensitive files in src/ instead of passing silently. This prevents bypass via shallow clones.",
+    "stagedOnlyRisk": "ELIMINATED — CI mode does not rely on staged files. Uses commit-level diff."
+  },
+
+  "evidenceLocation": {
+    "path": ".optimizer-data/search-demand-gate/",
+    "gitignored": false,
+    "trackedInGit": true,
+    "availableInCI": true,
+    "vercelVisibility": "YES — directory is committed to repo, visible during Vercel build",
+    "noVersionedLocationNeeded": true,
+    "note": "No separate src/seo-evidence/ needed. .optimizer-data/ is already in git."
+  },
+
+  "failureBehavior": {
+    "exitCode": 1,
+    "failureReportPath": ".optimizer-data/phase35/search-demand-gate-failure-report.json",
+    "reportContents": [
+      "timestamp",
+      "phase",
+      "gate name",
+      "result: FAILED",
+      "total files checked",
+      "total failures",
+      "each failure: pageId, label, file, status, reason, detail, scoreFailures",
+      "allResults array",
+      "action: BLOCK_DEPLOY"
+    ],
+    "consoleOutput": [
+      "Exact missing evidence path printed",
+      "Exact score failures listed with current/required values",
+      "Instructions to fix or revert"
+    ],
+    "buildBlocked": true,
+    "deployBlocked": true
+  },
+
+  "testResults": {
+    "test1_localStagedSEOWithEvidence": {
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/calculators/[slug]/page.tsx'",
+      "expected": "PASS",
+      "actual": "PASS",
+      "exitCode": 0,
+      "detail": "calculator-metadata evidence loaded, IMPROVE_EXISTING decision, gate passes"
+    },
+    "test2_localStagedSEOWithoutEvidence": {
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/blog/[slug]/page.tsx'",
+      "expected": "FAIL (MISSING_EVIDENCE)",
+      "actual": "FAIL (MISSING_EVIDENCE)",
+      "exitCode": 1,
+      "detail": "No evidence file for blog-page-template, deploy blocked"
+    },
+    "test3_ciModeSEOWithEvidence": {
+      "command": "npm run check-gate:ci",
+      "expected": "PASS",
+      "actual": "PASS",
+      "exitCode": 0,
+      "detail": "CI mode detected changes via git diff HEAD~1..HEAD, calculator-metadata evidence valid, gate passes"
+    },
+    "test4_nonSEOEdit": {
+      "command": "node scripts/check-search-demand-gate.js --files 'src/components/ui/button.tsx'",
+      "expected": "PASS (skipped)",
+      "actual": "PASS (skipped)",
+      "exitCode": 0,
+      "detail": "Non-SEO file correctly identified and skipped"
+    },
+    "test5_lowScoreEvidence": {
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/scenario/[id]/page.tsx' (with low-score evidence)",
+      "expected": "FAIL (4 score failures)",
+      "actual": "FAIL (4 score failures)",
+      "exitCode": 1,
+      "detail": "searchDemandScore=40<70, clickPotentialScore=30<70, uniquenessScore=50<90, adSenseSafetyScore=20<90 — all 4 thresholds flagged"
+    },
+    "test6_npmRunCheckGate": {
+      "command": "npm run check-gate",
+      "expected": "PASS (no staged changes)",
+      "actual": "PASS (no staged changes)",
+      "exitCode": 0,
+      "detail": "Staged check runs correctly, no files staged = pass"
+    },
+    "test7_npmRunBuild": {
+      "command": "npm run build",
+      "expected": "prebuild → check-gate:ci PASS → next build SUCCESS",
+      "actual": "prebuild → check-gate:ci PASS → next build SUCCESS (Compiled, TypeScript OK, static pages generated)",
+      "exitCode": 0,
+      "detail": "npm lifecycle hook triggers prebuild automatically. Gate runs, passes, then next build proceeds normally. Full build completed successfully with 3999 static pages."
+    }
+  },
+
+  "allTestsPassed": true,
+
+  "bypassRisksRemaining": {
+    "directNextBuild": "Vercel's buildCommand now runs check-gate:ci first — bypassing requires editing vercel.json directly.",
+    "gitCommitHookBypass": "No pre-commit hook installed. Committing without staging can bypass local --staged check. Mitigated by CI check on deploy — commit will still fail at build time.",
+    "forcePushSkipCI": "Vercel auto-deploys on push — cannot be skipped by the pusher.",
+    "manualVercelRedeploy": "Vercel dashboard redeploy uses the same buildCommand — gate still runs.",
+    "evidenceFileForgery": "A determined actor could create fake evidence files. Gate enforces process, not honesty.",
+    "recommendation": "Consider adding pre-commit hook in Phase 35.4: 'git diff --cached --name-only | node scripts/check-search-demand-gate.js --files -'"
+  },
+
+  "confirmation": {
+    "noPagesCreated": "TRUE — Zero new SEO pages. Enforcement infrastructure only.",
+    "noTitleEdits": "TRUE — Zero title or meta edits.",
+    "noSitemapChanges": "TRUE — Zero sitemap modifications.",
+    "noIndexingRequests": "TRUE — Zero GSC indexing requests submitted.",
+    "noPhase35MonitoringDisruption": "TRUE — Phase 35 measurement dashboard and monitoring cron are completely independent of gate enforcement.",
+    "noAdSenseDisruption": "TRUE — Zero AdSense review-critical pages touched.",
+    "gateIntegratedIntoBuild": "TRUE — package.json prebuild hook + vercel.json buildCommand both run the gate.",
+    "gateCannotBeBypassedByNormalExecution": "TRUE — npm run build, Vercel deploy, and npm run check-gate:ci all enforce the gate.",
+    "imaginationFirstPublishingBlocked": "TRUE — Any SEO-sensitive file change without valid evidence fails build with exit 1."
+  },
+
+  "canonicalEvidenceRequired": {
+    "calculatorMetadata": "calculator-metadata.json — EXISTS (Phase 35.2 template)",
+    "allOtherPageIds": "BLOCKED until evidence files are created. See --all audit output for full list of 26 evidence files needed."
+  },
+
+  "phase35_3Status": "COMPLETE — Gate is wired into build/deploy and cannot be bypassed by normal Hermes or Vercel execution."
+}

@@ -27,7 +27,11 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "generate-og": "node scripts/generate-og.mjs"
+    "generate-og": "node scripts/generate-og.mjs",
+    "check-gate": "node scripts/check-search-demand-gate.js --staged",
+    "check-gate:ci": "node scripts/check-search-demand-gate.js --ci",
+    "check-gate:all": "node scripts/check-search-demand-gate.js --all",
+    "prebuild": "npm run check-gate:ci"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

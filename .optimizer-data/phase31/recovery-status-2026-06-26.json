@@ -1,0 +1,171 @@
+{
+  "phase": "35 (Phase 31 freeze LIFTED by Qasem)",
+  "title": "QFINHUB Recovery Status — Jun 26, 2026 (Day 1 Post-Phase 35)",
+  "generated": "2026-06-26T12:05:00Z",
+  "expansion_freeze": "LIFTED — Phase 35 aggressive recovery executed Jun 25 per Qasem approval",
+  "current_phase": 35,
+  "gsc_data": {
+    "source": "FRESH — Service Account auth (permanent)",
+    "status": "LIVE_API_OK",
+    "date_range_7d": "2026-06-17 to 2026-06-23",
+    "metrics_7d": {
+      "impressions": 389,
+      "clicks": 1,
+      "ctr_pct": 0.3,
+      "avg_position": 37.8,
+      "pages_with_impressions": 65,
+      "query_count": 84
+    },
+    "metrics_28d": {
+      "impressions": 1721,
+      "clicks": 1,
+      "pages_with_impressions": 121,
+      "clicked_page": "https://www.qfinhub.com/tools/investment-25k-10yr"
+    },
+    "change_vs_previous_7d": {
+      "impressions": -175,
+      "pct": -31.0,
+      "previous_impressions": 564,
+      "assessment": "31% DECLINE — consistent multi-week downward trend. This data window (Jun 17-23) still predates all Phase 35 fixes."
+    },
+    "data_limitation": "CRITICAL — today's data window ENDS Jun 23, but Phase 35 fixes deployed Jun 25. Zero overlap. Effects will appear in data windows starting Jun 26+."
+  },
+  "token_status": {
+    "status": "LIVE — Service Account auth (permanent, no expiry)",
+    "auth_method": "service_account"
+  },
+  "phase35_execution": {
+    "status": "COMPLETE — 12/12 tasks verified LIVE in production",
+    "executed": "2026-06-25T04:26-04:42 EEST",
+    "commits": ["68463fb (Phase 35)", "13f6e0c (Phase 35.1)"],
+    "actions": {
+      "all_pages_noindex": "VERIFIED — <meta name=\"robots\" content=\"noindex, follow\"> live",
+      "all_pages_sitemap_removal": "VERIFIED — 0 matches in sitemap.xml. Sitemap now 527 URLs (was 649)",
+      "blog_20k_restructure": "VERIFIED — curiosity-hook H2 first ('What's the Monthly Payment...'), calculator CTA before answer, answer moved to 2nd H2",
+      "parent_calculator_titles": {
+        "compound_interest": "VERIFIED — 'Calculate Growth by Rate, Years & Contributions'",
+        "mortgage": "VERIFIED — 'Estimate Monthly Payment, Interest & Amortization'",
+        "loan": "VERIFIED — 'Calculate Monthly Payment, Total Interest & Payoff Schedule'"
+      },
+      "tool_variant_parent_link": "VERIFIED — above-fold 'Try the full calculator →' link on formula variant pages",
+      "gsc_operations": "10/10 URL Inspection + Request Indexing, 7/7 Temporary Removals, 1/1 Sitemap Resubmission",
+      "gsc_removal_targets": "7 tool variants (compound: 4, mortgage: 3) + /all-pages"
+    }
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "impressions_7d": 31,
+      "clicks": 0,
+      "avg_position": 7.3,
+      "main_query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+      "main_query_position": 7.1,
+      "main_query_impressions": 23,
+      "phase35_fix": "Blog restructured — curiosity hook H2 first, calculator CTA before answer, answer paragraph moved to 2nd H2. FAQ schema answers changed to CTA-driven responses.",
+      "assessment": "Position stable at 7.1-7.3 (page 1). 31 imp/7d, 0 clicks. Fix deployed Jun 25 — awaiting Google recrawl. Expected CTR 3-5% after recrawl = 1-2 clicks/week.",
+      "pre_fix_data": true
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "impressions_7d": 3,
+      "clicks": 0,
+      "avg_position": 5.7,
+      "assessment": "Minimal recovery (1→3 imp, pos 10→5.7). Good position but ultra-low volume query. Not modified in Phase 35.",
+      "pre_fix_data": true
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "impressions_7d": "<4 (below detection threshold)",
+      "assessment": "Still below detection. Not modified in Phase 35.",
+      "pre_fix_data": true
+    }
+  },
+  "top_pages_by_impression_7d": [
+    {"url": "/calculators/401k-calculator", "imp": 54, "clicks": 0, "pos": 71.4},
+    {"url": "/calculators/investment-return", "imp": 41, "clicks": 0, "pos": 84.5},
+    {"url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment", "imp": 31, "clicks": 0, "pos": 7.3},
+    {"url": "/decision/how-much-do-i-need-to-retire", "imp": 25, "clicks": 0, "pos": 4.9},
+    {"url": "/calculators/tax-calculator", "imp": 23, "clicks": 0, "pos": 79.9}
+  ],
+  "retirement_decision_recovery": {
+    "url": "/decision/how-much-do-i-need-to-retire",
+    "previous": "1 imp, pos 9.0 (collapsed Jun 24-25)",
+    "now": "25 imp, pos 4.9 (Jun 17-23)",
+    "assessment": "RECOVERED — previous collapse was a window-shift artifact, not actual decline. Position 4.9 with 25 imp but 0 clicks — potential snippet cannibalization candidate."
+  },
+  "the_actual_click": {
+    "page": "/tools/investment-25k-10yr",
+    "impressions_7d": 3,
+    "clicks_7d": 1,
+    "avg_position": 12.0,
+    "note": "Still the ONLY page with a click across entire site. Not a Phase 35 target."
+  },
+  "phase35_recovery_targets": {
+    "targeted_impressions": 616,
+    "breakdown": {
+      "tool_variants_compound": 168,
+      "tool_variants_mortgage": 78,
+      "all_pages": 26,
+      "blog_20k_ctr_improvement": 344
+    },
+    "expected_week_1": "Parent calculator impressions begin rising as variants de-index. 20k blog CTR > 0%.",
+    "expected_week_2": "Compound interest: 4→30+ imp. Mortgage: 5→20+ imp.",
+    "expected_week_3": "First non-brand content click beyond /tools/investment-25k-10yr.",
+    "expected_month_1": "Sitewide CTR: 0.3%→1-2%. Clicks: 1/month→5-10/month.",
+    "monitoring_required": "Next GSC check Jun 27 (window shifts to Jun 18-24, still pre-fix). First partial post-fix data Jun 28 (Jun 19-25, 1 day overlap). Full post-fix data ~Jul 2-3 (7 days post-deploy)."
+  },
+  "compliance_report": {
+    "phase": "Phase 35 — Qasem-approved aggressive execution (freeze LIFTED Jun 25)",
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_request_indexing": "10 URLs (Phase 35 approved operation)",
+    "gsc_temporary_removals": "7 URLs (Phase 35 approved operation)",
+    "validate_fix_used": 0,
+    "sitemap_resubmission": "1 (Phase 35 approved operation)",
+    "bulk_cleanup_executed": 0,
+    "title_meta_changes": "3 parent calculator titles (Phase 35 approved) + tool variant template (Phase 35 approved)",
+    "content_changes": "1 blog restructure (Phase 35 approved)",
+    "noindex_added": "1 page (/all-pages, Phase 35 approved)",
+    "sitemap_removals": "1 page (/all-pages, Phase 35 approved)",
+    "notes": "Phase 35 executed with full Qasem approval (freeze-lift condition #3). Aggressive but targeted — exact URLs only, no mass changes, no Indexing API, no paid traffic. All operations verified live in production."
+  },
+  "key_observations": {
+    "positive": [
+      "Phase 35 AGGRESSIVE FIX DEPLOYED — 12/12 verified LIVE in production",
+      "Freeze LIFTED by Qasem — moving from passive monitoring to aggressive recovery",
+      "Parent calculator titles now describe function not example answers (Phase 35.1)",
+      "Blog restructured: curiosity hook before answer — strongest zero-click repair signal",
+      "/all-pages removed from sitemap + noindexed — stops utility page ranking in SERP",
+      "GSC Temporary Removals submitted for 7 highest-impression tool variants",
+      "Service Account auth PERMANENT — zero token issues",
+      "All verified pages HTTP 200, correct robots, correct canonicals — zero regressions"
+    ],
+    "negative": [
+      "31% impression DECLINE continues (564→389) — data predates Phase 35, but trend is concerning",
+      "0 content clicks — only click is a tool variant (/tools/investment-25k-10yr)",
+      "Recrawl gap: Phase 35 deployed Jun 25, GSC data only through Jun 23 — zero overlap",
+      "Calculator money pages at positions 71-91 — domain authority ceiling unchanged"
+    ],
+    "blockers": [
+      "GOOGLE RECRAWL LAG: Fixes live but unseen. Full effect 7-14 days post-deploy (~Jul 2-9).",
+      "DOMAIN AUTHORITY CEILING: 0 backlinks, 6-month-old domain vs DR 70-100 competitors.",
+      "GSC TEMPORARY REMOVALS: 6-month limit — variants come back if not fully de-indexed.",
+      "IMPRESSION DECLINE TREND: If decline continues, parent lift from variant shift may be masked."
+    ]
+  },
+  "phase35_next_milestones": {
+    "day_3_jun_28": "First GSC window with 1 day of post-fix data (Jun 25). Check for any recrawl signals.",
+    "day_5_jun_30": "3 days post-fix overlap. Check parent calculator impressions, 20k blog position.",
+    "day_7_jul_2": "Full 7-day post-fix window begins. First meaningful read on whether fixes are working.",
+    "day_14_jul_9": "If no parent lift: start parent calculator content upgrade (Phase 35 escalation)."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK — awaiting Phase 35 recrawl",
+    "summary": "PHASE 35 AGGRESSIVE RECOVERY EXECUTED. The freeze is lifted, 12 targeted fixes deployed, all verified live. Root cause identified: zero-click architecture where tool variants outrank parents and give answers in SERP snippets. Phase 35 addresses this via noindexing cannibal variants, strengthening parent titles, restructuring the #1 blog, and submitting GSC removals + recrawl requests. Today's GSC data (Jun 17-23) predates all fixes — zero measurable effect yet. The real test begins Jul 2-9 when Google recrawls. Until then: OFF_TRACK but with a deployed fix plan.",
+    "critical_path": "Google recrawl → parent calculator impression lift → 20k blog CTR > 0% → first non-tool-variant content click → early validation that architecture repair works → expand to remaining calculators if confirmed."
+  }
+}

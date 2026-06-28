@@ -1,18 +1,18 @@
 {
   "source": "GSC_API_RAW \u2014 CORRECTION DISABLED PER PHASE 19.2",
-  "generated": "2026-06-25T00:36:08Z",
+  "generated": "2026-06-28T19:41:22Z",
   "date_range": {
-    "start": "2026-06-16",
-    "end": "2026-06-22"
+    "start": "2026-06-19",
+    "end": "2026-06-25"
   },
-  "checksum": "b167784d9444",
+  "checksum": "e37a4e76ec15",
   "auth_method": "service_account",
   "api_raw": {
-    "impressions": 391,
+    "impressions": 379,
     "clicks": 1,
-    "pages_with_impressions": 70,
-    "avg_position": 34.8,
-    "query_level_impressions": 174
+    "pages_with_impressions": 58,
+    "avg_position": 47.5,
+    "query_level_impressions": 200
   },
   "correction": {
     "factor_impressions": 1.434,
@@ -23,9 +23,9 @@
     "note": "Correction factor is DOCUMENTATION ONLY."
   },
   "corrected_estimate_fyi": {
-    "impressions": 561,
+    "impressions": 543,
     "clicks": 1,
-    "avg_position": 30.8,
+    "avg_position": 42.1,
     "note": "FYI ONLY \u2014 NOT official."
   }
 }

@@ -1,0 +1,84 @@
+{
+  "phase": "35.1",
+  "title": "PHASE 35.1 — Parent Title Sanity Patch",
+  "executed": "2026-06-25T04:44:00+03:00",
+  "status": "DEPLOYED — BUILD PROMOTION IN PROGRESS",
+
+  "rationale": "The Phase 35 parent calculator titles contained static-answer examples (e.g. 'See How $100K Grows to $265K in 20 Years'). This repeats the zero-click problem removed from tool variants — Google scrapes the example number from the title. Fix: describe what the calculator DOES, not what result it produces.",
+
+  "title_changes": {
+    "compound-interest": {
+      "before": "Compound Interest Calculator — See How $100K Grows to $265K in 20 Years",
+      "after": "Compound Interest Calculator — Calculate Growth by Rate, Years & Contributions",
+      "problem": "Title contains specific example result — same zero-click pattern as tool variants",
+      "fix": "Describes calculator function (rate, years, contributions) without example numbers"
+    },
+    "mortgage-calculator": {
+      "before": "Mortgage Calculator — See Your Monthly Payment on Any Home ($200K, $500K, $900K)",
+      "after": "Mortgage Calculator — Estimate Monthly Payment, Interest & Amortization",
+      "problem": "Lists specific dollar amounts — creates exact-match expectations",
+      "fix": "Describes calculator function (payment, interest, amortization) without price anchors"
+    },
+    "loan-calculator": {
+      "before": "Loan Calculator — Calculate Any Monthly Payment: Personal, Auto, Student Loans",
+      "after": "Loan Calculator — Calculate Monthly Payment, Total Interest & Payoff Schedule",
+      "problem": "Lists loan types — narrows search intent",
+      "fix": "Describes calculator function (payment, interest, payoff schedule) — covers all loan types"
+    }
+  },
+
+  "code_change": {
+    "file": "src/app/calculators/[slug]/page.tsx",
+    "location": "ctrTitles object — compound-interest, mortgage-calculator, loan-calculator entries",
+    "git_commit": "13f6e0c0 (to be confirmed after build)"
+  },
+
+  "verification": {
+    "parent_pages_index_follow": "PASS — all 3 return <meta name=\"robots\" content=\"index, follow\">",
+    "no_noindex_on_parents": "PASS — no noindex meta on any parent calculator page",
+    "http_200": "PASS — all 3 parent calculators + blog + /all-pages return 200 OK",
+    "no_broken_links": "PASS — all target URLs resolving correctly",
+    "sitemap_unchanged": "PASS — parent calculators remain in sitemap, /all-pages remains excluded",
+    "titles_live": "PENDING — Vercel build in progress (sha:13f6e0c0, state:BUILDING)"
+  },
+
+  "noindex_decisions_preserved": [
+    "6 tool variants — noindex remains active",
+    "/all-pages — noindex remains active",
+    "GSC temporary removals — 7 URLs submitted, not re-submitted",
+    "GSC URL inspection — 10 URLs requested earlier, not re-requested"
+  ],
+
+  "rules_followed": [
+    "No GSC indexing re-requested",
+    "No additional temporary removals",
+    "No AdSense review-critical pages touched (metadata only)",
+    "No sitemap changes",
+    "No new pages created",
+    "No Batch 2",
+    "No PropellerAds",
+    "No fake traffic",
+    "No noindex/removal decisions changed"
+  ],
+
+  "monitoring_mode": {
+    "status": "ENTERING 72-HOUR PROCESSING MODE",
+    "rules": [
+      "Monitor only — no new SEO changes unless critical bug",
+      "Daily track: parent calculator impressions, variant impressions, 20k blog CTR, /all-pages removal status, AdSense status",
+      "Day 3 pull: fresh GSC data via gsc-daily-pipeline.py",
+      "Report any unexpected recrawl signals or drops"
+    ],
+    "daily_fields": [
+      "sitewide_impressions",
+      "sitewide_clicks",
+      "parent_compound_interest_impressions",
+      "parent_mortgage_calculator_impressions",
+      "parent_loan_calculator_impressions",
+      "noindexed_variant_impressions",
+      "blog_20k_impressions + clicks + CTR",
+      "all_pages_impressions + index_status",
+      "adsense_status"
+    ]
+  }
+}

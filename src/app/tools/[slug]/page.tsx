@@ -362,5 +362,24 @@ export default async function ToolsSlugPage({ params }: ToolsPageProps) {
     notFound();
   }
 
+  // Phase 36: 301 redirect ALL formula tool variants to parent calculators.
+  // Formula variants (parameterized pages like loan-20k-5yr-8pct) hoard
+  // ranking authority from parent calculators despite noindex tags.
+  // Redirecting consolidates all signal to the real calculator pages.
+  const parts = slug.split("-");
+  const hasPct = parts.some((p) => p.endsWith("pct"));
+  const hasYr = parts.some((p) => p.endsWith("yr"));
+  const hasMo = parts.some((p) => p.endsWith("mo"));
+  const hasNumParams =
+    parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 3;
+  const formulaPattern = /^[a-z]+-\d/;
+  const isFormulaVariant =
+    (hasPct && (hasYr || hasMo)) ||
+    (formulaPattern.test(slug) && hasNumParams);
+
+  if (isFormulaVariant && variant.calculatorId) {
+    redirect(`/calculators/${variant.calculatorId}`);
+  }
+
   return <VariantContentPage variant={variant} />;
 }

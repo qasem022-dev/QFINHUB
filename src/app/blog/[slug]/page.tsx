@@ -8,6 +8,12 @@ import { allCalculators } from "@/lib/calculators";
 
 const baseUrl = "https://www.qfinhub.com";
 
+// Phase 36: Duplicate/near-duplicate blog posts that compete with the primary version.
+// The primary version is the longer, ranking one (10 min read at another slug).
+const NOINDEX_DUPLICATE_SLUGS = new Set([
+  "20000-loan-5-years-8-percent-monthly-payment",  // Duplicate of 20000-loan-at-8-percent-for-5-years-monthly-payment
+]);
+
 // ISR: revalidate blog pages every hour for fresh schema + canonical updates
 export const revalidate = 3600;
 
@@ -231,6 +237,9 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
+    robots: NOINDEX_DUPLICATE_SLUGS.has(slug)
+      ? { index: false, follow: true }
+      : undefined,
     openGraph: {
       title: `${post.title} | QFINHUB Blog`,
       description: post.description,

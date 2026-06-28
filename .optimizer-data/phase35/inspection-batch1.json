@@ -1,0 +1,26 @@
+{
+  "https://www.qfinhub.com/calculators/compound-interest": {
+    "verdict": "ERROR",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "https://www.qfinhub.com/calculators/mortgage-calculator": {
+    "verdict": "ERROR",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "https://www.qfinhub.com/calculators/loan-calculator": {
+    "verdict": "ERROR",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment": {
+    "verdict": "ERROR",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "https://www.qfinhub.com/blog/20000-loan-payment-8-percent": {
+    "verdict": "ERROR",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "https://www.qfinhub.com/loan-payment-table": {
+    "verdict": "ERROR",
+    "error": "HTTP Error 403: Forbidden"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "phase": "35.2",
+  "title": "Search-Demand Gate Automatic Enforcement",
+  "status": "DEPLOYED",
+  "deployedAt": "2026-06-26T17:30:00Z",
+  "rule": "SEARCH_DEMAND_FIRST (permanent, effective Jun 26 2026)",
+
+  "checker": {
+    "script": "scripts/check-search-demand-gate.js",
+    "location": "Repo root — integrated into pre-deploy validation flow",
+    "node_version": "Node.js 18+ (ES2022)",
+    "exit_codes": {
+      "0": "Gate passed or no SEO-sensitive files changed",
+      "1": "Gate FAILED — missing evidence or scores below threshold",
+      "2": "Script error"
+    },
+    "usage": [
+      "node scripts/check-search-demand-gate.js",
+      "node scripts/check-search-demand-gate.js --staged",
+      "node scripts/check-search-demand-gate.js --since HEAD~1",
+      "node scripts/check-search-demand-gate.js --files 'src/app/calculators/[slug]/page.tsx'"
+    ]
+  },
+
+  "filesMonitored": {
+    "calculatorMetadata": "src/app/calculators/[slug]/page.tsx — ctrTitles map, title/meta changes",
+    "calculatorConfig": "src/lib/calculators/index.ts — allCalculators array, title/description",
+    "calculatorContent": "src/lib/calculators/calculator-content.ts — long-form SEO content",
+    "blogPostsData": "src/lib/blog/posts.ts — blog post entries",
+    "blogPageTemplate": "src/app/blog/[slug]/page.tsx — blog rendering",
+    "blogContentFiles": "src/content/blog/*.mdx — individual blog posts",
+    "guidePageTemplate": "src/app/guides/[slug]/page.tsx",
+    "comparisonPageTemplate": "src/app/compare/[slug]/page.tsx",
+    "comparisonsData": "src/lib/programmatic-seo/comparisons.ts",
+    "scenarioPageTemplate": "src/app/scenario/[id]/page.tsx",
+    "decisionPageTemplate": "src/app/decision/[slug]/page.tsx",
+    "decisionPagesData": "src/lib/decision-pages.ts",
+    "loanScenarioTemplate": "src/app/loan-scenarios/[slug]/page.tsx",
+    "programmaticSEOGenerator": "src/lib/programmatic-seo/generator + comparisons",
+    "dataPage": "src/app/data/page.tsx",
+    "loanPaymentTable": "src/app/loan-payment-table/page.tsx",
+    "sitemap": "src/app/sitemap.ts",
+    "toolVariantTemplate": "src/app/tools/[slug]/page.tsx",
+    "geoTargetedTemplate": "src/app/calculators/[slug]/[geo]/page.tsx",
+    "geoCitiesData": "src/lib/programmatic-seo/data/us-cities.ts",
+    "widgetPages": "src/app/widgets/*/page.tsx",
+    "embedPages": "src/app/embed/*/page.tsx",
+    "newSEOPages": "Any new page.tsx in src/app/ that is not auth/dashboard/api/all-pages/cookies/privacy/terms/contact/about/methodology/editorial-policy"
+  },
+
+  "nonSEOPages": [
+    "src/app/auth/ — authentication pages",
+    "src/app/(dashboard)/ — auth-gated dashboard",
+    "src/app/api/ — API routes",
+    "src/app/all-pages/ — noindexed admin utility",
+    "src/app/cookies/ — noindex page",
+    "src/app/disclaimer/ — static legal",
+    "src/app/privacy/ — static legal",
+    "src/app/terms/ — static legal",
+    "src/app/contact/ — static page",
+    "src/app/about/ — static page",
+    "src/app/methodology/ — static page",
+    "src/app/editorial-policy/ — static page",
+    "src/app/for-ai-developers/ — non-SEO page",
+    "src/components/ — React components, not pages",
+    "*.test.* / *.spec.* / __tests__/ — test files"
+  ],
+
+  "evidenceFormat": {
+    "location": ".optimizer-data/search-demand-gate/<page-id>.json",
+    "requiredFields": [
+      "targetQuery",
+      "evidenceSource",
+      "serpIntent",
+      "competitorWeakness",
+      "pageTypeDecision",
+      "titleMetaDecision",
+      "searchDemandScore",
+      "rankingDifficultyScore",
+      "clickPotentialScore",
+      "uniquenessScore",
+      "adSenseSafetyScore",
+      "expectedFirst30DayImpressions",
+      "expectedFirst90DayClicks",
+      "improveExistingPageCheck",
+      "finalDecision"
+    ],
+    "optionalFields": [
+      "gscEvidence (object with hasGSCData, impressions28d, averagePosition, ctr, currentRankingUrl, wrongPageRanking)"
+    ],
+    "templateFile": ".optimizer-data/search-demand-gate/calculator-metadata.json"
+  },
+
+  "passFailThresholds": {
+    "searchDemandScore": { "minimum": 70, "max": 100 },
+    "clickPotentialScore": { "minimum": 70, "max": 100 },
+    "uniquenessScore": { "minimum": 90, "max": 100 },
+    "adSenseSafetyScore": { "minimum": 90, "max": 100 },
+    "rankingDifficultyScore": "Informational — no hard floor, but must be 0-100",
+    "finalDecision": {
+      "BUILD": "Gate passes (all scores above threshold)",
+      "IMPROVE_EXISTING": "Gate passes — improving existing page",
+      "HOLD": "Gate passes with warning — evidence complete but decision is to hold",
+      "REJECT": "Gate FAILS — decision is to reject, do not deploy"
+    }
+  },
+
+  "testCases": {
+    "validEvidencePasses": {
+      "description": "Evidence file with all required fields and scores above thresholds",
+      "testFile": ".optimizer-data/search-demand-gate/calculator-metadata.json",
+      "expectedResult": "PASS — all scores above thresholds, finalDecision IMPROVE_EXISTING",
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/calculators/[slug]/page.tsx'"
+    },
+    "missingEvidenceFails": {
+      "description": "SEO-sensitive file changed without matching evidence file",
+      "scenario": "Modify src/app/calculators/[slug]/page.tsx without creating calculator-metadata.json",
+      "expectedResult": "FAIL — MISSING_EVIDENCE. Deploy blocked.",
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/calculators/[slug]/page.tsx' (without evidence file)"
+    },
+    "lowScoreEvidenceFails": {
+      "description": "Evidence file present but uniqueness score below 90",
+      "scenario": "Evidence with uniquenessScore=65 fails gate",
+      "expectedResult": "FAIL — Score failure: uniquenessScore=65 (below threshold 90)",
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/blog/[slug]/page.tsx'"
+    },
+    "rejectedDecisionBlocks": {
+      "description": "Evidence complete but finalDecision is REJECT",
+      "expectedResult": "FAIL — FINAL_DECISION_REJECT. Deploy blocked.",
+      "command": "node scripts/check-search-demand-gate.js --files 'src/app/scenario/[id]/page.tsx'"
+    },
+    "noSEOChangesPasses": {
+      "description": "Only non-SEO files changed (e.g., components, auth pages)",
+      "scenario": "Modify src/components/ui/button.tsx",
+      "expectedResult": "PASS — no SEO-sensitive files detected",
+      "command": "node scripts/check-search-demand-gate.js --files 'src/components/ui/button.tsx'"
+    }
+  },
+
+  "confirmation": {
+    "noPageCreatedFromImagination": "TRUE — Every new SEO page or title change requires .optimizer-data/search-demand-gate/<page-id>.json with GSC evidence, SERP intent check, competitor weakness analysis, and 5-axis scoring.",
+    "noDeployIfGateFails": "TRUE — Script exits with code 1 on any failure. Must be integrated into pre-deploy validation. If gate fails, deploy is blocked.",
+    "noNewPagesCreated": "TRUE — This is enforcement infrastructure only. Zero new SEO pages, zero title edits, zero sitemap changes.",
+    "noTitleEdits": "TRUE — No titles modified. Enforcement system is passive until changes are attempted.",
+    "noSitemapChanges": "TRUE — No sitemap modifications.",
+    "noIndexingRequests": "TRUE — No GSC indexing requests submitted.",
+    "noAdSenseDisruption": "TRUE — No AdSense pages affected.",
+    "noPhase35MonitoringDisruption": "TRUE — Phase 35 continues independently. This is a gate, not a monitor.",
+    "nonDestructiveEnforcement": "TRUE — Checker reads files only. Does not modify repo, revert changes, or alter anything. It only reports pass/fail."
+  },
+
+  "nextSteps": {
+    "integration": "Add to pre-deploy validation (package.json scripts or Vercel build step)",
+    "packageJsonSuggestion": "\"check-gate\": \"node scripts/check-search-demand-gate.js --staged\", \"prebuild\": \"npm run check-gate\"",
+    "existingEvidence": "Only calculator-metadata.json (sample template). All other page IDs need evidence files BEFORE any changes to those files.",
+    "cronMonitoring": "Optional — could add daily cron to check for uncommitted SEO-sensitive changes"
+  }
+}

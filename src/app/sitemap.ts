@@ -1,9 +1,9 @@
 import { allCalculators } from "@/lib/calculators";
 import { blogPosts } from "@/lib/blog/posts";
 import { decisionPages } from "@/lib/decision-pages";
-import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 // Phase 34 Cycle 3: getAllHowToGuides removed — thin programmatic content excluded from sitemap
+// Phase 36: getAllVariantPages removed — all tool variants are 301 redirected
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -43,9 +43,6 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    // Auth & Cookie pages REMOVED from sitemap (PHASE 13C.9, Jun 4)
-    // /auth/login, /auth/signup — authentication pages, not public content
-    // /cookies — noindex page, should not be in sitemap
     {
       url: `${BASE_URL}/privacy`,
       lastModified: new Date(),
@@ -76,18 +73,6 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    // Phase 34 Cycle 3: How-to-use guides removed from sitemap — programmatic thin content
-    // /guides hub removed from sitemap — massive listing of thin guide pages
-    // Guides pages remain accessible but won't be promoted to search engines
-    // Blog posts (107 quality articles) remain in sitemap
-    /* Guides removed — Phase 34 Cycle 3
-    {
-      url: `${BASE_URL}/guides`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    */
     {
       url: `${BASE_URL}/compare`,
       lastModified: new Date(),
@@ -100,10 +85,6 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "monthly",
       priority: 0.4,
     },
-    // Dashboard URLs REMOVED from sitemap (PHASE 13C.7, Jun 4)
-    // Reason: Auth-gated pages return 307 redirect, not public content
-    // /dashboard, /dashboard/plans, /dashboard/settings → redirect to /auth/login
-    // Dashboard functionality is completely unaffected
     {
       url: `${BASE_URL}/methodology`,
       lastModified: new Date(),
@@ -128,9 +109,6 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    // /all-pages REMOVED from sitemap — Phase 35: admin utility page, no search intent value.
-    // Noindexed via page metadata (robots: { index: false }). See phase35/aggressive-all-pages-removal.json
-    // Phase 32: Loan scenario pages + hubs
     {
       url: `${BASE_URL}/loan-payment-table`,
       lastModified: new Date(),
@@ -184,53 +162,11 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // V2 Correction Phase 3: Sitemap cleanup — exclude noindexed pages.
-  // Formula variants (loan-20k-5yr-8pct patterns) are noindexed + canonicalized → excluded.
-  // Phase 32.4C: TOOL_GSC_SLUGS emptied — afford-100k/130k are noindexed, should NOT be in sitemap.
-  const TOOL_GSC_SLUGS = new Set<string>([]);
+  // Phase 36: ALL tool variants are now 301 redirected to parent calculators.
+  // All variant-related sitemap logic is dead code — removed.
+  const variantPages: SitemapEntry[] = [];
 
-  // Phase 16.12F: Blocklist — variant pages that are noindexed by the scenario page logic.
-  // These have hex-suffixed slugs (auto-generated) and are noindex,follow at /scenario/[id].
-  // They should NOT be in the main sitemap — Google crawls them but won't index them anyway.
-  // Phase 32.4C: Added retirement-1M-30yr — HTTP 404, must not be in sitemap.
-  // Phase 32.4C: Added afford-100k/130k — noindexed, isFormulaVariant misses them (no yr/mo in slug).
-  const NOINDEXED_VARIANT_SLUGS = new Set([
-    "auto-loan-717d83b1",
-    "auto-loan-92918ea9",
-    "retirement-planning-eb1dd78b",
-    "retirement-1M-30yr",
-    "afford-100k-40k-6-5pct",
-    "afford-130k-40k-7pct",
-  ]);
-
-  function isFormulaVariant(slug: string): boolean {
-    const parts = slug.split("-");
-    const hasPct = parts.some((p) => p.endsWith("pct"));
-    const hasYr = parts.some((p) => p.endsWith("yr"));
-    const hasMo = parts.some((p) => p.endsWith("mo"));
-    const numCount = parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length;
-    // Formula = percentage-based slug with year/month terms, or multi-parameter numeric slug
-    return (hasPct && (hasYr || hasMo)) || (/^[a-z]+-\d/.test(slug) && numCount >= 3);
-  }
-
-  let variantPages: SitemapEntry[] = [];
-  try {
-    const variants = getAllVariantPages();
-    variantPages = variants
-      .filter((v) => !isFormulaVariant(v.slug) || TOOL_GSC_SLUGS.has(v.slug))
-      .filter((v) => !NOINDEXED_VARIANT_SLUGS.has(v.slug))
-      .map((v) => ({
-        url: `${BASE_URL}/tools/${v.slug}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly" as ChangeFrequency,
-        priority: 0.7,
-      }));
-  } catch (e) {
-    console.warn("Failed to generate variant pages:", e);
-  }
-
-  // V2 Correction Phase 3: Geo pages — only keep the 3 with GSC impressions.
-  // All other geo pages are noindexed (doorway risk) → excluded from sitemap.
+  // Geo pages — only keep the 3 with GSC impressions.
   const GEO_GSC_PATHS = new Set([
     "/calculators/loan/nashville-tn",
     "/calculators/loan/reno-nv",
@@ -266,14 +202,10 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // Phase 34 Cycle 3: How-to-use guide pages REMOVED from sitemap.
-  // These are programmatic thin content (~124 pages, near-zero impressions/0 clicks per Phase 32).
-  // Each guide follows identical template: generic steps for each calculator.
-  // Pages remain live/accessible but won't pollute sitemap or AdSense perception.
-  // Blog posts (107 quality articles in blogPosts) remain in sitemap — these are NOT thin.
+  // How-to-use guide pages removed — programmatic thin content
   const guidePages: SitemapEntry[] = [];
 
-  // V2: Decision pages (quality-gated financial decision guides)
+  // Decision pages (quality-gated financial decision guides)
   const decisionPageEntries: SitemapEntry[] = decisionPages.map((d) => ({
     url: `${BASE_URL}/decision/${d.slug}`,
     lastModified: new Date(),

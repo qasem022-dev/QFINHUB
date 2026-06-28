@@ -1,0 +1,94 @@
+{
+  "phase": "35.4",
+  "title": "Phase 35.4 — Indexing Fix Log",
+  "generated": "2026-06-26T22:05:00Z",
+
+  "rootCauseAnalysis": {
+    "whyRequestsWereRejected": {
+      "parentCalculators": "REJECTED because already indexed. Google does not accept 'Request Indexing' for pages already in the index. This is EXPECTED behavior — not a bug. The pages will be re-crawled naturally over time.",
+      "neverCrawledPages": "REJECTED because Google has never crawled these pages. The 'Request Indexing' function requires a successful 'Test Live URL' first (which triggers Google to fetch the page). Without a crawl, Google cannot evaluate indexability and rejects the request.",
+      "investmentToolVariant": "ACCEPTED because it was already indexed — Google processed the request trivially since the page was already in the index."
+    },
+    "coreIssue": "CRAWL BUDGET — All 7 never-crawled URLs are technically perfect (HTTP 200, correct canonicals, index,follow, substantial content, in sitemap). Google simply hasn't allocated crawl budget to fetch them. Internal links exist in code but Google hasn't re-crawled the linking pages recently enough (parent calculators last crawled Jun 1, 25 days ago)."
+  },
+
+  "fixesApplied": {
+    "technicalFixes": {
+      "status": "NO TECHNICAL FIXES NEEDED — All 7 URLs were verified technically perfect",
+      "httpStatus": "ALL 200 OK",
+      "canonicalTags": "ALL correct (self-canonical)",
+      "robotsMeta": "ALL index, follow",
+      "robotsTxt": "ALL Allow: /",
+      "contentSize": "ALL 46-73KB (not thin)",
+      "sitemapInclusion": "ALL in sitemap"
+    },
+    "internalLinking": {
+      "existingLinks": "Loan calculator already links to the 20k blog post via CALCULATOR_BLOG_LINKS. Parent calculators are in sitemap and linked from /calculators hub.",
+      "issue": "Google hasn't re-crawled parent calculators since Jun 1, so these internal links are invisible to Google's latest crawl.",
+      "enhancementPlanned": "Adding loan-payment-table, data, and loan scenarios to calculator-blog-links or related sections for the loan calculator. Deploy with next push."
+    },
+    "sitemapStatus": {
+      "allURLsInSitemap": true,
+      "sitemapLastSubmitted": "Jun 25, 2026 (Phase 35 sitemap resubmission)",
+      "needsResubmission": false,
+      "note": "Sitemap was already submitted. Google may need time to process. Some URLs show 'URL unknown' despite being in sitemap — this is normal for recently submitted sitemaps."
+    }
+  },
+
+  "remainingFixQueue": {
+    "method": "CloakBrowser GSC UI — Test Live URL + Request Indexing",
+    "reason": "GSC API cannot perform 'Test Live URL' or 'Request Indexing'. These are GSC web UI-only features. CloakBrowser with Qasem's authenticated session is required.",
+    "priority1_urls": [
+      {
+        "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+        "label": "blog_20k_loan",
+        "category": "G_DISCOVERED_NOT_INDEXED",
+        "step1": "Inspect URL in GSC",
+        "step2": "Click 'Test Live URL'",
+        "step3": "If 'URL is available to Google' → click 'Request Indexing'",
+        "step4": "Record ACCEPTED or REJECTED with exact message"
+      },
+      {
+        "url": "https://www.qfinhub.com/loan-payment-table",
+        "label": "loan_payment_table",
+        "category": "G_DISCOVERED_NOT_INDEXED",
+        "steps": "Same as above"
+      },
+      {
+        "url": "https://www.qfinhub.com/data",
+        "label": "data_page",
+        "category": "G_DISCOVERED_NOT_INDEXED",
+        "steps": "Same as above"
+      }
+    ],
+    "priority2_urls": [
+      "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+      "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent"
+    ],
+    "doNotSubmit": [
+      "Parent calculators — already indexed, re-indexing unnecessary",
+      "/tools/investment-25k-10yr — tool variant, intentionally noindexed",
+      "/all-pages — intentionally noindexed, temporary removal active",
+      "Any tool variant URL — intentionally noindexed/canonicalized"
+    ],
+    "dailyLimit": "Do not exceed 10-15 indexing requests per day to avoid triggering GSC anti-abuse.",
+    "maxRetries": 1,
+    "ruleIfRejectedAgain": "STOP for that URL. Record exact rejection message. Do not retry.",
+    "noIndexingAPI": true,
+    "noSpamPings": true
+  },
+
+  "skipList": {
+    "parent_calculators": {
+      "compound_interest": "ALREADY_INDEXED — Skip. Natural recrawl needed.",
+      "mortgage_calculator": "ALREADY_INDEXED — Skip. Last crawled Jun 21.",
+      "loan_calculator": "ALREADY_INDEXED — Skip. Last crawled Jun 1."
+    },
+    "tool_variants": {
+      "investment_25k": "TOOL_VARIANT — Already indexed but intentionally noindexed. Do NOT submit."
+    },
+    "all_pages": "NOINDEX + TEMP_REMOVAL — Do NOT submit."
+  }
+}

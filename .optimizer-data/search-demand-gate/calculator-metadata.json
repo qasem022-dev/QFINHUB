@@ -1,0 +1,45 @@
+{
+  "_template": true,
+  "_description": "SAMPLE — Evidence file template for search-demand gate. Copy this and fill in for any new SEO page or title change. All fields are required.",
+  "_usage": "cp .optimizer-data/search-demand-gate/calculator-metadata.json .optimizer-data/search-demand-gate/<your-page-id>.json",
+
+  "targetQuery": "mortgage calculator",
+  "evidenceSource": "GSC query data (494 impressions over 28 days, position 41.3, CTR 0%)",
+  "gscEvidence": {
+    "hasGSCData": true,
+    "impressions28d": 494,
+    "averagePosition": 41.3,
+    "ctr": 0.0,
+    "currentRankingUrl": "/calculators/mortgage-calculator",
+    "wrongPageRanking": false
+  },
+  "serpIntent": "Calculator — users want to input loan amount, rate, term and get monthly payment, amortization",
+  "competitorWeakness": "Bankrate (strong brand, position 1), NerdWallet (strong, position 2). But positions 5-10 are weaker generic calculators with thin content. QFINHUB can compete with interactive calculator + SEO content.",
+  "pageTypeDecision": "parent calculator — improve existing /calculators/mortgage-calculator title and meta description",
+  "titleMetaDecision": {
+    "title": "Mortgage Calculator — Estimate Monthly Payment, Interest & Amortization",
+    "ogTitle": "Mortgage Calculator — Estimate Monthly Payment, Interest & Amortization",
+    "metaDesc": "See your exact monthly mortgage payment in seconds — principal, interest, taxes & insurance included. Compare 15 vs 30-year terms. Free instant results, no signup.",
+    "rationale": "Title describes what the calculator DOES (function), not example results. Creates click intent without giving away the answer."
+  },
+
+  "searchDemandScore": 85,
+  "rankingDifficultyScore": 55,
+  "clickPotentialScore": 82,
+  "uniquenessScore": 92,
+  "adSenseSafetyScore": 95,
+
+  "expectedFirst30DayImpressions": 50,
+  "expectedFirst90DayClicks": 5,
+
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": true,
+    "existingPageUrl": "/calculators/mortgage-calculator",
+    "action": "IMPROVE_EXISTING — title and meta optimization only"
+  },
+
+  "finalDecision": "IMPROVE_EXISTING",
+
+  "createdBy": "Phase 35.2 enforcement setup",
+  "createdAt": "2026-06-26T17:30:00Z"
+}

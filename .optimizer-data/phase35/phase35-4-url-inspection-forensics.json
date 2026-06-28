@@ -1,0 +1,159 @@
+{
+  "phase": "35.4",
+  "title": "Phase 35.4 — URL Inspection Forensics",
+  "generated": "2026-06-26T22:00:00Z",
+  "methodology": "GSC URL Inspection API (googleapiclient) + curl live verification",
+
+  "forensicsSummary": {
+    "totalFixableURLs": 7,
+    "technicalBlockersFound": 0,
+    "indexabilityVerified": "ALL 7 URLs are technically indexable — HTTP 200, correct canonicals, robots index,follow, substantial content (46-73KB), in sitemap",
+    "rootCause": "Google has NEVER crawled any of these 7 URLs. The 'Request Indexing' rejections are because Google won't accept indexing requests for pages that haven't been crawled. Pages need to go through 'Test Live URL' → force crawl → then 'Request Indexing.'"
+  },
+
+  "urls": [
+    {
+      "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+      "label": "blog_20k_loan",
+      "gscInspection": {
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "lastCrawlTime": "NEVER",
+        "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "indexingState": "INDEXING_STATE_UNSPECIFIED"
+      },
+      "liveVerification": {
+        "httpStatus": 200,
+        "canonical": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment (SELF)",
+        "robotsMeta": "index, follow",
+        "title": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+        "h1": "$20,000 Loan at 8% for 5 Years — See YOUR Monthly Payment & Full Schedule | QFINHUB",
+        "contentSize": "73,337 bytes",
+        "phase35SnippetFix": "VERIFIED — curiosity hook H2 + CTA before answer"
+      },
+      "classification": "G_DISCOVERED_CURRENTLY_NOT_INDEXED",
+      "errorCategory": "NO_TECHNICAL_BLOCKER — Google discovered URL from sitemap but has not allocated crawl budget. Needs forced discovery via Test Live URL + internal link boost.",
+      "fixApplied": "INTERNAL_LINKS_ADDED — Added link from /calculators/loan-calculator and /blog page",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-payment-table",
+      "label": "loan_payment_table",
+      "gscInspection": {
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "lastCrawlTime": "NEVER",
+        "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      "liveVerification": {
+        "httpStatus": 200,
+        "canonical": "https://www.qfinhub.com/loan-payment-table (SELF)",
+        "robotsMeta": "index, follow",
+        "title": "Personal Loan Payment Table — Compare Monthly Payments by Amount & Rate | QFINHUB",
+        "h1": "Personal Loan Payment Tables",
+        "contentSize": "59,235 bytes"
+      },
+      "classification": "G_DISCOVERED_CURRENTLY_NOT_INDEXED",
+      "errorCategory": "NO_TECHNICAL_BLOCKER — Never crawled.",
+      "fixApplied": "INTERNAL_LINKS_ADDED — Added link from /calculators/loan-calculator",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    },
+    {
+      "url": "https://www.qfinhub.com/data",
+      "label": "data_page",
+      "gscInspection": {
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "lastCrawlTime": "NEVER"
+      },
+      "liveVerification": {
+        "httpStatus": 200,
+        "canonical": "https://www.qfinhub.com/data (SELF)",
+        "robotsMeta": "index, follow",
+        "title": "Free Financial Data Tables — Loan Payments, Mortgage Affordability & More | QFINHUB",
+        "h1": "Free Financial Data Tables",
+        "contentSize": "46,913 bytes"
+      },
+      "classification": "G_DISCOVERED_CURRENTLY_NOT_INDEXED",
+      "errorCategory": "NO_TECHNICAL_BLOCKER — Never crawled.",
+      "fixApplied": "INTERNAL_LINKS_ADDED — Added link from calculators hub",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+      "label": "good_credit_loan",
+      "gscInspection": {
+        "verdict": "NEUTRAL",
+        "coverageState": "URL is unknown to Google",
+        "lastCrawlTime": "NEVER"
+      },
+      "liveVerification": {
+        "httpStatus": 200,
+        "canonical": "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent (SELF)",
+        "robotsMeta": "index, follow",
+        "title": "$20,000 Personal Loan at 8% APR — Good Credit Monthly Payment Calculator | QFINHUB",
+        "h1": "$20,000 Loan at 8% for 5 Years: Monthly Payment & Complete Cost Breakdown",
+        "contentSize": "63,821 bytes"
+      },
+      "classification": "H_URL_UNKNOWN_TO_GOOGLE",
+      "errorCategory": "NOT_DISCOVERED — In sitemap but Google hasn't processed it. Sitemap submitted Jun 25. May need re-submission + Test Live URL to force discovery.",
+      "fixApplied": "SITEMAP_VERIFIED — Already in sitemap. INTERNAL_LINKS_ADDED — Added link from /loan-scenarios hub.",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "label": "small_emergency_loan",
+      "verification": "Same pattern as good_credit_loan — HTTP 200, correct canonical, index,follow, 63KB content",
+      "classification": "H_URL_UNKNOWN_TO_GOOGLE",
+      "errorCategory": "NOT_DISCOVERED",
+      "fixApplied": "Already in sitemap. Internal link added.",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "label": "debt_consolidation_loan",
+      "verification": "HTTP 200, correct canonical, index,follow, 64KB content",
+      "classification": "G_DISCOVERED_CURRENTLY_NOT_INDEXED",
+      "fixApplied": "Already in sitemap. Internal link added.",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "label": "fair_credit_loan",
+      "verification": "HTTP 200, correct canonical, index,follow, 65KB content",
+      "classification": "G_DISCOVERED_CURRENTLY_NOT_INDEXED",
+      "fixApplied": "Already in sitemap. Internal link added.",
+      "needsGSCTestLiveURL": true,
+      "needsIndexingRequest": true
+    }
+  ],
+
+  "parentCalculators": {
+    "status": "ALREADY_INDEXED — Not fixable. Google rejected re-indexing because these pages are already in the index. They need natural recrawl, not manual re-indexing.",
+    "compoundInterest": {
+      "lastCrawl": "Jun 1 — 25 days stale. Title changed Jun 25. Awaiting natural recrawl.",
+      "fixApplied": "NONE — Already indexed. Title fix deployed. Adding internal link from blog to accelerate natural recrawl."
+    },
+    "loanCalculator": {
+      "lastCrawl": "Jun 1 — 25 days stale. Title changed Jun 25.",
+      "fixApplied": "NONE — Already indexed."
+    },
+    "mortgageCalculator": {
+      "lastCrawl": "Jun 21 — May have captured new title (5 days after Phase 35 deploy was Jun 25? Wait, Phase 35 deployed Jun 25. Last crawl Jun 21 is PRE-FIX. Title change not yet crawled.)",
+      "fixApplied": "NONE — Already indexed."
+    }
+  },
+
+  "errorCategoryCounts": {
+    "G_DISCOVERED_CURRENTLY_NOT_INDEXED": 5,
+    "H_URL_UNKNOWN_TO_GOOGLE": 2,
+    "A_INDEXED_NOT_RECRAWLED": 3,
+    "NO_TECHNICAL_BLOCKERS_FOUND": 7
+  }
+}

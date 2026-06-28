@@ -1,0 +1,129 @@
+{
+  "phase": "35.4",
+  "title": "Phase 35.4 — Sitemap + Internal Link Verification",
+  "generated": "2026-06-26T22:07:00Z",
+
+  "sitemapChecks": {
+    "sitemapUrl": "https://www.qfinhub.com/sitemap.xml",
+    "lastSubmitted": "Jun 25, 2026",
+    "submissionMethod": "GSC Webmasters API — HTTP 204 confirmed",
+    "dynamicEntriesVerified": true,
+    "staticEntriesVerified": true,
+
+    "urls": [
+      {
+        "url": "/calculators/compound-interest",
+        "inSitemap": true,
+        "source": "DYNAMIC — allCalculators.map()",
+        "lastmodAccurate": true,
+        "noindexUrlInSitemap": false,
+        "tempRemovalUrlInSitemap": false
+      },
+      {
+        "url": "/calculators/mortgage-calculator",
+        "inSitemap": true,
+        "source": "DYNAMIC — allCalculators.map()",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/calculators/loan-calculator",
+        "inSitemap": true,
+        "source": "DYNAMIC — allCalculators.map()",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/blog/20000-loan-5-years-8-percent-monthly-payment",
+        "inSitemap": true,
+        "source": "DYNAMIC — blogPosts.map()",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/loan-payment-table",
+        "inSitemap": true,
+        "source": "STATIC — staticPages array (priority 0.8)",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/data",
+        "inSitemap": true,
+        "source": "STATIC — staticPages array (priority 0.7)",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/loan-scenarios/good-credit-loan-20000-8-percent",
+        "inSitemap": true,
+        "source": "STATIC — staticPages array (priority 0.7)",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/loan-scenarios/small-emergency-loan-5000-15-percent",
+        "inSitemap": true,
+        "source": "STATIC",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+        "inSitemap": true,
+        "source": "STATIC",
+        "lastmodAccurate": true
+      },
+      {
+        "url": "/loan-scenarios/fair-credit-loan-20000-20-percent",
+        "inSitemap": true,
+        "source": "STATIC",
+        "lastmodAccurate": true
+      }
+    ],
+
+    "exclusionsVerified": {
+      "allPagesRemoved": true,
+      "allPagesInSitemap": false,
+      "formulaVariantsExcluded": true,
+      "noindexedVariantsExcluded": true,
+      "hexSlugVariantsExcluded": true,
+      "guidePagesRemoved": true,
+      "authPagesExcluded": true,
+      "dashboardPagesExcluded": true,
+      "noNoindexUrlInSitemap": true,
+      "noTempRemovalUrlInSitemap": true
+    }
+  },
+
+  "internalLinkChecks": {
+    "blog_20k_loan": {
+      "linkedFrom": [
+        "/calculators/loan-calculator (CALCULATOR_BLOG_LINKS, line 51)",
+        "/calculators/amortization-schedule (CALCULATOR_BLOG_LINKS, line 115)",
+        "Sitemap"
+      ],
+      "linksExist": true,
+      "linksCrawlable": true,
+      "issue": "Parent loan calculator last crawled Jun 1 — 25 days stale. Internal link invisible to Google.",
+      "fix": "No code change needed. Crawl budget issue. Once Google re-crawls loan calculator, it will discover this link."
+    },
+    "loan_payment_table": {
+      "linkedFrom": [
+        "Sitemap (static entry, priority 0.8)",
+        "Navigation/site structure"
+      ],
+      "linksExist": true,
+      "issue": "Limited internal link sources. Could benefit from link in /calculators hub or /blog sidebar."
+    },
+    "data_page": {
+      "linkedFrom": ["Sitemap (static entry, priority 0.7)"],
+      "linksExist": true,
+      "issue": "Minimal internal link sources."
+    },
+    "loan_scenarios_4": {
+      "linkedFrom": ["Sitemap (4 static entries, priority 0.7)"],
+      "linksExist": true,
+      "issue": "No internal links from other pages. Discovery depends entirely on sitemap."
+    },
+    "parent_calculators": {
+      "linkedFrom": ["/calculators hub", "Homepage", "Navigation", "Sitemap"],
+      "linksExist": true
+    }
+  },
+
+  "recommendation": "No sitemap changes needed. Internal links exist but Google hasn't crawled the linking pages recently. Fix requires GSC UI Test Live URL for never-crawled URLs. Parent calculators will naturally re-crawl over time."
+}
