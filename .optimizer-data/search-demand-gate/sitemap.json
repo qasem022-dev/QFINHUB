@@ -1,0 +1,24 @@
+{
+  "pageId": "sitemap",
+  "targetQuery": "N/A — sitemap cleanup, not new page",
+  "evidenceSource": "301 redirects implemented; including redirected URLs in sitemap sends conflicting signals",
+  "serpIntent": "N/A — sitemap configuration fix",
+  "competitorWeakness": "N/A",
+  "titleMetaDecision": {
+    "title": "N/A",
+    "rationale": "Removing tool variant URLs from sitemap (all 301 redirected)"
+  },
+  "pageTypeDecision": "fix — remove redirected URLs from sitemap",
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": true,
+    "action": "FIX — removed tool variants from sitemap"
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "finalDecision": "IMPROVE_EXISTING"
+}

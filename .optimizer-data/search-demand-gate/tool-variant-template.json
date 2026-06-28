@@ -1,0 +1,24 @@
+{
+  "pageId": "tool-variant-template",
+  "targetQuery": "N/A — redirect fix, not new page",
+  "evidenceSource": "GSC shows tool variants at pos 3-10 with 0 clicks hoarding authority from parent calculators at pos 70-90",
+  "serpIntent": "N/A — fixing authority dilution",
+  "competitorWeakness": "N/A — internal redirect fix",
+  "titleMetaDecision": {
+    "title": "N/A",
+    "rationale": "Adding 301 redirect for formula variants to parent calculators"
+  },
+  "pageTypeDecision": "fix — 301 redirect formula variants to consolidate ranking signals",
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": true,
+    "action": "FIX — 301 redirect noindexed tool variants"
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "finalDecision": "IMPROVE_EXISTING"
+}

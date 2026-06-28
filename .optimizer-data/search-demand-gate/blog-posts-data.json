@@ -1,0 +1,25 @@
+{
+  "pageId": "blog-posts-data",
+  "targetQuery": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+  "evidenceSource": "GSC: position 7.1, 9 impressions, 0 clicks — snippet shows answer ($405.53) rather than CTA",
+  "serpIntent": "Calculator intent — users want their own personalized monthly payment, not a static answer",
+  "competitorWeakness": "Calculator.net shows generic answer without interactive calculator embed",
+  "titleMetaDecision": {
+    "title": "Restructured: moved CTA above answer, removed answer from snippet-visible content",
+    "rationale": "The previous structure put the exact answer ($405.53) in the first H2, which Google showed as snippet. Users got their answer without clicking. Now CTA appears first."
+  },
+  "pageTypeDecision": "IMPROVE_EXISTING — fix blog CTA to convert position 7.1 impressions",
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": true,
+    "existingPageUrl": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "action": "IMPROVE_EXISTING — moved CTA above answer"
+  },
+  "searchDemandScore": 90,
+  "rankingDifficultyScore": 85,
+  "clickPotentialScore": 90,
+  "uniquenessScore": 92,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 9,
+  "expectedFirst90DayClicks": 3,
+  "finalDecision": "IMPROVE_EXISTING"
+}
