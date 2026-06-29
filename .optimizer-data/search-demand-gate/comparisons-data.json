@@ -1,0 +1,24 @@
+{
+  "pageId": "comparisons-data",
+  "targetQuery": "N/A \u2014 data/config file, not new page",
+  "evidenceSource": "Existing data \u2014 maintaining/improving",
+  "serpIntent": "N/A \u2014 internal data",
+  "competitorWeakness": "N/A \u2014 internal improvement",
+  "titleMetaDecision": {
+    "title": "N/A",
+    "rationale": "Internal data/config maintenance"
+  },
+  "pageTypeDecision": "IMPROVE_EXISTING",
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": true,
+    "action": "IMPROVE"
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "finalDecision": "IMPROVE_EXISTING"
+}

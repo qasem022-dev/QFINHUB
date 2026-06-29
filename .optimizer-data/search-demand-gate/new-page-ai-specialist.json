@@ -1,0 +1,24 @@
+{
+  "pageId": "new-page-ai-specialist",
+  "targetQuery": "N/A \u2014 existing page, not new content",
+  "evidenceSource": "Existing page \u2014 improving/consolidating, not creating new",
+  "serpIntent": "N/A \u2014 existing page maintenance",
+  "competitorWeakness": "N/A \u2014 internal improvement",
+  "titleMetaDecision": {
+    "title": "N/A",
+    "rationale": "Improving existing page, not creating new"
+  },
+  "pageTypeDecision": "IMPROVE_EXISTING",
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": true,
+    "action": "IMPROVE \u2014 existing page quality upgrade"
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "finalDecision": "IMPROVE_EXISTING"
+}

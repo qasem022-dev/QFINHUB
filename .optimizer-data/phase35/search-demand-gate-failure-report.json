@@ -1,84 +1,276 @@
 {
-  "timestamp": "2026-06-28T20:06:05.928Z",
+  "timestamp": "2026-06-29T21:13:27.154Z",
   "phase": "35.3",
   "gate": "SEARCH_DEMAND_FIRST",
   "result": "FAILED",
-  "totalFilesChecked": 4,
-  "totalFailures": 4,
+  "totalFilesChecked": 27,
+  "totalFailures": 6,
   "failures": [
     {
-      "pageId": "blog-page-template",
-      "label": "Blog page template",
-      "file": "src/app/blog/[slug]/page.tsx",
+      "pageId": "new-page-widgets",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/widgets/page.tsx",
       "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — fix duplicate cannibalization, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/new-page-widgets.json"
     },
     {
-      "pageId": "sitemap",
-      "label": "Sitemap configuration",
-      "file": "src/app/sitemap.ts",
+      "pageId": "calculator-content",
+      "label": "Calculator long-form content",
+      "file": "src/lib/calculators/calculator-content.ts",
       "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — sitemap cleanup for 301 redirected URLs\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/calculator-content.json"
     },
     {
-      "pageId": "tool-variant-template",
-      "label": "Tool variant page template",
-      "file": "src/app/tools/[slug]/page.tsx",
+      "pageId": "calculator-config",
+      "label": "Calculator config (title/description in index.ts)",
+      "file": "src/lib/calculators/index.ts",
       "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — 301 redirects, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/calculator-config.json"
     },
     {
-      "pageId": "blog-posts-data",
-      "label": "Blog posts data (posts.ts)",
-      "file": "src/lib/blog/posts.ts",
+      "pageId": "comparisons-data",
+      "label": "Comparison pages data",
+      "file": "src/lib/programmatic-seo/comparisons.ts",
       "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — improving existing content conversion, not new page\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/comparisons-data.json"
+    },
+    {
+      "pageId": "geo-cities-data",
+      "label": "Geo-targeted cities data",
+      "file": "src/lib/programmatic-seo/data/us-cities.ts",
+      "status": "FAIL",
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/geo-cities-data.json"
+    },
+    {
+      "pageId": "programmatic-seo-generator",
+      "label": "Programmatic SEO page generator",
+      "file": "src/lib/programmatic-seo/generator.ts",
+      "status": "FAIL",
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/programmatic-seo-generator.json"
     }
   ],
   "allResults": [
     {
+      "pageId": "new-page-ai-specialist",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/ai-specialist/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
       "pageId": "blog-page-template",
       "label": "Blog page template",
       "file": "src/app/blog/[slug]/page.tsx",
-      "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — fix duplicate cannibalization, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "new-page-blog",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/blog/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "geo-calculator-template",
+      "label": "Geo-targeted calculator page template",
+      "file": "src/app/calculators/[slug]/[geo]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "new-page-calculators-:slug-embed",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/calculators/[slug]/embed/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "calculator-metadata",
+      "label": "Calculator metadata/titles (ctrTitles in page.tsx)",
+      "file": "src/app/calculators/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "new-page-calculators",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/calculators/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "comparison-page-template",
+      "label": "Comparison page template",
+      "file": "src/app/compare/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "new-page-compare",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/compare/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "data-page",
+      "label": "Data page",
+      "file": "src/app/data/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "decision-page-template",
+      "label": "Decision page template",
+      "file": "src/app/decision/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "embed-pages",
+      "label": "Embed page",
+      "file": "src/app/embed/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "guide-page-template",
+      "label": "Guide page template",
+      "file": "src/app/guides/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "new-page-guides",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/guides/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "loan-payment-table",
+      "label": "Loan payment table page",
+      "file": "src/app/loan-payment-table/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "loan-scenario-template",
+      "label": "Loan scenario page template",
+      "file": "src/app/loan-scenarios/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "scenario-page-template",
+      "label": "Scenario page template",
+      "file": "src/app/scenario/[id]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
     },
     {
       "pageId": "sitemap",
       "label": "Sitemap configuration",
       "file": "src/app/sitemap.ts",
-      "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — sitemap cleanup for 301 redirected URLs\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
     },
     {
       "pageId": "tool-variant-template",
       "label": "Tool variant page template",
       "file": "src/app/tools/[slug]/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "widget-pages",
+      "label": "Widget/embed page",
+      "file": "src/app/widgets/debt-snowball-vs-avalanche-embed/page.tsx",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "new-page-widgets",
+      "label": "New SEO-relevant app route page",
+      "file": "src/app/widgets/page.tsx",
       "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — 301 redirects, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/new-page-widgets.json"
     },
     {
       "pageId": "blog-posts-data",
       "label": "Blog posts data (posts.ts)",
       "file": "src/lib/blog/posts.ts",
+      "status": "PASS",
+      "reason": "IMPROVE_EXISTING",
+      "detail": "Improving existing page rather than creating new one"
+    },
+    {
+      "pageId": "calculator-content",
+      "label": "Calculator long-form content",
+      "file": "src/lib/calculators/calculator-content.ts",
       "status": "FAIL",
-      "reason": "INVALID_EVIDENCE",
-      "detail": "Invalid finalDecision: \"DEPLOY — improving existing content conversion, not new page\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
-      "scoreFailures": []
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/calculator-content.json"
+    },
+    {
+      "pageId": "calculator-config",
+      "label": "Calculator config (title/description in index.ts)",
+      "file": "src/lib/calculators/index.ts",
+      "status": "FAIL",
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/calculator-config.json"
+    },
+    {
+      "pageId": "comparisons-data",
+      "label": "Comparison pages data",
+      "file": "src/lib/programmatic-seo/comparisons.ts",
+      "status": "FAIL",
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/comparisons-data.json"
+    },
+    {
+      "pageId": "geo-cities-data",
+      "label": "Geo-targeted cities data",
+      "file": "src/lib/programmatic-seo/data/us-cities.ts",
+      "status": "FAIL",
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/geo-cities-data.json"
+    },
+    {
+      "pageId": "programmatic-seo-generator",
+      "label": "Programmatic SEO page generator",
+      "file": "src/lib/programmatic-seo/generator.ts",
+      "status": "FAIL",
+      "reason": "MISSING_EVIDENCE",
+      "detail": "No evidence file at .optimizer-data/search-demand-gate/programmatic-seo-generator.json"
     }
   ],
   "action": "BLOCK_DEPLOY — Fix evidence files or revert changes before deploying."
