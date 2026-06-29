@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
 import { ArrowLeft, Loader2 } from "lucide-react";
@@ -357,7 +357,7 @@ export default async function ToolsSlugPage({ params }: ToolsPageProps) {
   if (!variant) {
     const calculator = getCalculatorBySlug(slug);
     if (calculator) {
-      redirect(`/calculators/${slug}`);
+      permanentRedirect(`/calculators/${slug}`);
     }
     notFound();
   }
@@ -378,7 +378,7 @@ export default async function ToolsSlugPage({ params }: ToolsPageProps) {
     (formulaPattern.test(slug) && hasNumParams);
 
   if (isFormulaVariant && variant.calculatorId) {
-    redirect(`/calculators/${variant.calculatorId}`);
+    permanentRedirect(`/calculators/${variant.calculatorId}`);
   }
 
   return <VariantContentPage variant={variant} />;

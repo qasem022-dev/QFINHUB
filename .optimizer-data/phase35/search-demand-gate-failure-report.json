@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-06-28T20:06:05.928Z",
+  "phase": "35.3",
+  "gate": "SEARCH_DEMAND_FIRST",
+  "result": "FAILED",
+  "totalFilesChecked": 4,
+  "totalFailures": 4,
+  "failures": [
+    {
+      "pageId": "blog-page-template",
+      "label": "Blog page template",
+      "file": "src/app/blog/[slug]/page.tsx",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — fix duplicate cannibalization, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    },
+    {
+      "pageId": "sitemap",
+      "label": "Sitemap configuration",
+      "file": "src/app/sitemap.ts",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — sitemap cleanup for 301 redirected URLs\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    },
+    {
+      "pageId": "tool-variant-template",
+      "label": "Tool variant page template",
+      "file": "src/app/tools/[slug]/page.tsx",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — 301 redirects, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    },
+    {
+      "pageId": "blog-posts-data",
+      "label": "Blog posts data (posts.ts)",
+      "file": "src/lib/blog/posts.ts",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — improving existing content conversion, not new page\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    }
+  ],
+  "allResults": [
+    {
+      "pageId": "blog-page-template",
+      "label": "Blog page template",
+      "file": "src/app/blog/[slug]/page.tsx",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — fix duplicate cannibalization, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    },
+    {
+      "pageId": "sitemap",
+      "label": "Sitemap configuration",
+      "file": "src/app/sitemap.ts",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — sitemap cleanup for 301 redirected URLs\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    },
+    {
+      "pageId": "tool-variant-template",
+      "label": "Tool variant page template",
+      "file": "src/app/tools/[slug]/page.tsx",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — 301 redirects, not new content\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    },
+    {
+      "pageId": "blog-posts-data",
+      "label": "Blog posts data (posts.ts)",
+      "file": "src/lib/blog/posts.ts",
+      "status": "FAIL",
+      "reason": "INVALID_EVIDENCE",
+      "detail": "Invalid finalDecision: \"DEPLOY — improving existing content conversion, not new page\" (must be BUILD, IMPROVE_EXISTING, HOLD, or REJECT)",
+      "scoreFailures": []
+    }
+  ],
+  "action": "BLOCK_DEPLOY — Fix evidence files or revert changes before deploying."
+}

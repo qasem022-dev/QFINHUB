@@ -1,0 +1,5051 @@
+{
+  "report_type": "GSC_Deep_Dive_Analysis",
+  "generated": "2026-06-29T14:45:55Z",
+  "generated_at_timestamp": "2026-06-29T14:45:55.833476+00:00",
+  "property": "https://www.qfinhub.com",
+  "auth_method": "service_account",
+  "data_freshness": {
+    "gsc_lag_days": 3,
+    "latest_data_date": "2026-06-26",
+    "pull_timestamp": "2026-06-29T14:45:55.833476+00:00"
+  },
+  "date_windows": {
+    "7_day": {
+      "start": "2026-06-20",
+      "end": "2026-06-26"
+    },
+    "28_day": {
+      "start": "2026-05-30",
+      "end": "2026-06-26"
+    },
+    "previous_7_day": {
+      "start": "2026-06-13",
+      "end": "2026-06-19"
+    }
+  },
+  "pull_summary": {
+    "dimensions_pulled": [
+      "page",
+      "query",
+      "query+page"
+    ],
+    "row_limit_per_pull": 500,
+    "total_api_calls": 9,
+    "checksums": {
+      "d7_page": "ed833f6a8be3",
+      "d7_query": "438faf797e96",
+      "d7_qp": "9ebe949019a7",
+      "d28_page": "a78f7f409c27",
+      "d28_query": "8bdd1da7fd4d",
+      "d28_qp": "4bb19cd65543",
+      "prev_page": "1b4e31bf3d18",
+      "prev_query": "7d65670cf321",
+      "prev_qp": "c0b3f4180401"
+    }
+  },
+  "indexing_state": {
+    "sitemaps": {
+      "count": 2,
+      "total_submitted": 530,
+      "total_indexed": 0,
+      "total_warnings": 0,
+      "entries": [
+        {
+          "path": "https://www.qfinhub.com/sitemap.xml",
+          "lastSubmitted": "2026-06-28T20:04:37.802Z",
+          "isPending": false,
+          "warnings": "0",
+          "errors": "0",
+          "contents": [
+            {
+              "type": "web",
+              "submitted": 527,
+              "indexed": 0
+            }
+          ]
+        },
+        {
+          "path": "https://www.qfinhub.com/news-sitemap.xml",
+          "lastSubmitted": "2026-06-07T02:01:40.624Z",
+          "isPending": false,
+          "warnings": "0",
+          "errors": "0",
+          "contents": [
+            {
+              "type": "web",
+              "submitted": 3,
+              "indexed": 0
+            }
+          ]
+        }
+      ]
+    },
+    "crawl_stats": {
+      "note": "GSC API doesn't expose crawl stats via standard endpoint. Index coverage is approximated from sitemap data above."
+    }
+  },
+  "trends": {
+    "metrics_comparison": {
+      "7d": {
+        "impressions": 352,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "avg_position": 51.8,
+        "unique_pages": 58,
+        "unique_queries": 93,
+        "query_page_pairs": 93,
+        "date_range": {
+          "start": "2026-06-20",
+          "end": "2026-06-26"
+        }
+      },
+      "28d": {
+        "impressions": 1797,
+        "clicks": 1,
+        "ctr_pct": 0.06,
+        "avg_position": 36.1,
+        "unique_pages": 121,
+        "unique_queries": 241,
+        "query_page_pairs": 242,
+        "date_range": {
+          "start": "2026-05-30",
+          "end": "2026-06-26"
+        }
+      },
+      "previous_7d": {
+        "impressions": 502,
+        "clicks": 1,
+        "ctr_pct": 0.2,
+        "avg_position": 25.7,
+        "unique_pages": 81,
+        "unique_queries": 74,
+        "query_page_pairs": 75,
+        "date_range": {
+          "start": "2026-06-13",
+          "end": "2026-06-19"
+        }
+      }
+    },
+    "changes_7d_vs_prev7d": {
+      "impressions_change": -150,
+      "impressions_change_pct": -29.9,
+      "clicks_change": -1,
+      "clicks_change_pct": -100.0,
+      "position_change": 26.1,
+      "pages_gained": 13,
+      "pages_lost": 36,
+      "queries_gained": 72,
+      "queries_lost": 53,
+      "new_pages": [
+        "https://www.qfinhub.com/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+        "https://www.qfinhub.com/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+        "https://www.qfinhub.com/blog/investing-here-is-why-nrx-pharmaceuticals-nrxp-is-a-top-penny-stock-pick",
+        "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+        "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+        "https://www.qfinhub.com/scenario/auto-loan-2a9cffb2",
+        "https://www.qfinhub.com/scenario/auto-loan-ac3ddd84",
+        "https://www.qfinhub.com/scenario/mortgage-450k-5dp-20yr-7-5pct",
+        "https://www.qfinhub.com/scenario/retirement-planning-4cd08066",
+        "https://www.qfinhub.com/tools/investment-100k-7yr",
+        "https://www.qfinhub.com/tools/loan-250k-25yr-8pct",
+        "https://www.qfinhub.com/tools/loan-500k-20yr-6pct",
+        "https://www.qfinhub.com/tools/tax-200k-married-separate"
+      ],
+      "lost_pages": [
+        "https://www.qfinhub.com/",
+        "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+        "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+        "https://www.qfinhub.com/blog/housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+        "https://www.qfinhub.com/calculators/budget-planner",
+        "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+        "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+        "https://www.qfinhub.com/guides/how-to-use-overtime-calculator",
+        "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+        "https://www.qfinhub.com/scenario/auto-loan-dec26d83",
+        "https://www.qfinhub.com/scenario/budget-planner-db94310d",
+        "https://www.qfinhub.com/scenario/compound-interest-1000-8pct-20yr-m250",
+        "https://www.qfinhub.com/scenario/compound-interest-10000-5pct-15yr",
+        "https://www.qfinhub.com/scenario/compound-interest-100000-10pct-10yr-m500",
+        "https://www.qfinhub.com/scenario/compound-interest-5000-8pct-30yr-m1000",
+        "https://www.qfinhub.com/scenario/compound-interest-500000-10pct-15yr-m500",
+        "https://www.qfinhub.com/scenario/debt-payoff-5b3809a6",
+        "https://www.qfinhub.com/scenario/debt-payoff-6e21c1c1",
+        "https://www.qfinhub.com/scenario/debt-payoff-c91e3eaf",
+        "https://www.qfinhub.com/scenario/mortgage-450k-3dp-15yr-8-0pct",
+        "https://www.qfinhub.com/scenario/retirement-planning-18581987",
+        "https://www.qfinhub.com/scenario/retirement-planning-6c28f1fb",
+        "https://www.qfinhub.com/scenario/retirement-planning-7c0895d9",
+        "https://www.qfinhub.com/scenario/retirement-planning-965ef0a4",
+        "https://www.qfinhub.com/scenario/retirement-planning-c0b59ed1",
+        "https://www.qfinhub.com/tools/cc-5k-0pct-150mo",
+        "https://www.qfinhub.com/tools/investment-2M-10yr",
+        "https://www.qfinhub.com/tools/investment-5k-20yr",
+        "https://www.qfinhub.com/tools/loan-175k-20yr-6pct",
+        "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+      ],
+      "new_queries": [
+        "401 k calculator",
+        "401k cal",
+        "401k calculator retirement",
+        "401k compound calculator",
+        "401k compound interest calculator",
+        "401k compounded interest calculator",
+        "401k estimator",
+        "401k interest calculator",
+        "401k investment calculator",
+        "401k moneychimp calculator",
+        "401k predictor",
+        "401k simulation",
+        "annualized gain calculator",
+        "annualized investment return calculator",
+        "average annual rate of return calculator",
+        "based on income what mortgage can i afford",
+        "best free tax calculator 2026",
+        "calcul taxes",
+        "calculate investment income",
+        "calculate investment return",
+        "calculate investment returns",
+        "calculate tax liability",
+        "calculate taxes owed",
+        "calculating how much mortgage i can afford",
+        "calculation of annual return on investment",
+        "calculator how much home can i afford",
+        "calculator tax online",
+        "capital withdrawal financial planning tool",
+        "financial return calculator",
+        "how much house can i afford calculator"
+      ],
+      "lost_queries": [
+        "$20 000 loan monthly payment",
+        "20 000 loan payment",
+        "20000 48",
+        "20000 at 8 for 5 years",
+        "2022 tax estimator",
+        "2023 tax calculator",
+        "2026 effective tax rate calculator",
+        "401k calculator 2025",
+        "401k formula",
+        "401k moneychimp",
+        "40k calculator",
+        "accountant tax calculator",
+        "annual return on investment",
+        "annual returns calculator",
+        "annualized return calculator monthly",
+        "apr return calculator",
+        "asset return calculator",
+        "average tax rate calculator",
+        "bloomberg 401k calculator",
+        "budget online tool",
+        "calculate annual rate of return calculator",
+        "calculate annual return on investment",
+        "calculate investment rate of return",
+        "calculate tax burden",
+        "calculate tax owing",
+        "calculating investment returns",
+        "detailed retirement calculator",
+        "find rate of return",
+        "free tax calculator 2023",
+        "how to calculate annual return on investment"
+      ]
+    },
+    "daily_trend_note": "GSC API returns aggregated data for the date range. Daily breakdown requires separate per-day pulls (not performed in this deep analysis to stay within row limits)."
+  },
+  "analysis_1_snippet_leakage": {
+    "description": "Pages getting the most impressions but zero clicks \u2014 'snippet leakage' where Google shows the page in results but users don't click through. These need title/meta-description optimization.",
+    "7_day": {
+      "label": "7-day",
+      "total_zero_click_pages": 58,
+      "total_pages_with_impressions": 58,
+      "leaking_page_pct": 100.0,
+      "impressions_lost_to_leakage": 352,
+      "impressions_lost_pct": 100.0,
+      "top_leakers": [
+        {
+          "page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "slug": "/calculators/401k-calculator",
+          "type": "calculator",
+          "impressions": 69,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 72.9
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "type": "calculator",
+          "impressions": 49,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 84.5
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "slug": "/calculators/mortgage-affordability",
+          "type": "calculator",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 87.8
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "slug": "/calculators/tax-calculator",
+          "type": "calculator",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 70.5
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+          "slug": "/decision/pay-off-debt-or-invest",
+          "type": "other",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 48
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+          "slug": "/tools/compound-100k-20yr-5pct",
+          "type": "tool",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.8
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct",
+          "slug": "/tools/mortgage-450k-30yr-6-5pct",
+          "type": "tool",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.7
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+          "slug": "/tools/mortgage-200k-15yr-5-5pct",
+          "type": "tool",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 8
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+          "slug": "/tools/compound-1k-30yr-6pct",
+          "type": "tool",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 7.5
+        },
+        {
+          "page": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+          "slug": "/guides/how-to-use-mortgage-calculator",
+          "type": "other",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 70.3
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "slug": "/calculators/retirement-planning",
+          "type": "calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 52.7
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+          "slug": "/decision/how-much-do-i-need-to-retire",
+          "type": "other",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 26.8
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+          "slug": "/blog/investment-calculator-withdrawals",
+          "type": "blog",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 51.5
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators",
+          "slug": "/calculators",
+          "type": "other",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 36.5
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/debt-payoff",
+          "slug": "/calculators/debt-payoff",
+          "type": "calculator",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 17
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+          "slug": "/scenario/compound-interest-1000-10pct-15yr-m1000",
+          "type": "other",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.5
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/compound-interest-100000-10pct-15yr-m250",
+          "slug": "/scenario/compound-interest-100000-10pct-15yr-m250",
+          "type": "other",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 10.2
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+          "slug": "/tools/compound-150k-10yr-5pct",
+          "type": "tool",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+          "slug": "/tools/compound-500k-15yr-5pct",
+          "type": "tool",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 11
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/investment-1k-5yr",
+          "slug": "/tools/investment-1k-5yr",
+          "type": "tool",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 8.2
+        }
+      ]
+    },
+    "28_day": {
+      "label": "28-day",
+      "total_zero_click_pages": 120,
+      "total_pages_with_impressions": 121,
+      "leaking_page_pct": 99.2,
+      "impressions_lost_to_leakage": 1792,
+      "impressions_lost_pct": 99.7,
+      "top_leakers": [
+        {
+          "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "slug": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "type": "blog",
+          "impressions": 338,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 11.8
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "slug": "/calculators/tax-calculator",
+          "type": "calculator",
+          "impressions": 190,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 83.7
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "type": "calculator",
+          "impressions": 188,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 81.8
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+          "slug": "/decision/pay-off-debt-or-invest",
+          "type": "other",
+          "impressions": 91,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 27.2
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+          "slug": "/tools/compound-100k-20yr-5pct",
+          "type": "tool",
+          "impressions": 82,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.4
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "slug": "/calculators/401k-calculator",
+          "type": "calculator",
+          "impressions": 80,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 71.8
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "slug": "/calculators/retirement-planning",
+          "type": "calculator",
+          "impressions": 67,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 82.0
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+          "slug": "/tools/compound-500k-15yr-5pct",
+          "type": "tool",
+          "impressions": 57,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.6
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "slug": "/calculators/mortgage-affordability",
+          "type": "calculator",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 81.6
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+          "slug": "/decision/how-much-do-i-need-to-retire",
+          "type": "other",
+          "impressions": 40,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 17.4
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+          "slug": "/tools/mortgage-200k-15yr-5-5pct",
+          "type": "tool",
+          "impressions": 36,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 7.8
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+          "slug": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+          "type": "blog",
+          "impressions": 31,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 14.8
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+          "slug": "/calculators/tax/philadelphia-pa",
+          "type": "calculator",
+          "impressions": 28,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 19.9
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+          "slug": "/tools/compound-150k-10yr-5pct",
+          "type": "tool",
+          "impressions": 27,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+          "slug": "/tools/mortgage-900k-30yr-7pct",
+          "type": "tool",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 5.6
+        },
+        {
+          "page": "https://www.qfinhub.com/all-pages",
+          "slug": "/all-pages",
+          "type": "other",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 6.7
+        },
+        {
+          "page": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+          "slug": "/guides/how-to-use-mortgage-calculator",
+          "type": "other",
+          "impressions": 22,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 63.2
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+          "slug": "/tools/mortgage-200k-30yr-6pct",
+          "type": "tool",
+          "impressions": 22,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 8.2
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+          "slug": "/tools/compound-1k-30yr-6pct",
+          "type": "tool",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 7.1
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct",
+          "slug": "/tools/mortgage-450k-30yr-6-5pct",
+          "type": "tool",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 8.7
+        }
+      ]
+    },
+    "previous_7_day": {
+      "label": "previous-7-day",
+      "total_zero_click_pages": 80,
+      "total_pages_with_impressions": 81,
+      "leaking_page_pct": 98.8,
+      "impressions_lost_to_leakage": 498,
+      "impressions_lost_pct": 99.2,
+      "top_leakers": [
+        {
+          "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "slug": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "type": "blog",
+          "impressions": 93,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.5
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "type": "calculator",
+          "impressions": 46,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 75.5
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "slug": "/calculators/tax-calculator",
+          "type": "calculator",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 82.2
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+          "slug": "/tools/compound-100k-20yr-5pct",
+          "type": "tool",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.1
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+          "slug": "/decision/how-much-do-i-need-to-retire",
+          "type": "other",
+          "impressions": 28,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 11.6
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+          "slug": "/tools/compound-500k-15yr-5pct",
+          "type": "tool",
+          "impressions": 18,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.1
+        },
+        {
+          "page": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+          "slug": "/guides/how-to-use-mortgage-calculator",
+          "type": "other",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 59.9
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+          "slug": "/tools/mortgage-200k-15yr-5-5pct",
+          "type": "tool",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 8.4
+        },
+        {
+          "page": "https://www.qfinhub.com/all-pages",
+          "slug": "/all-pages",
+          "type": "other",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 6.2
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+          "slug": "/tools/compound-150k-10yr-5pct",
+          "type": "tool",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 9.5
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "slug": "/calculators/401k-calculator",
+          "type": "calculator",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 70.2
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+          "slug": "/decision/pay-off-debt-or-invest",
+          "type": "other",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 41.9
+        },
+        {
+          "page": "https://www.qfinhub.com/",
+          "slug": "/",
+          "type": "homepage",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 2.3
+        },
+        {
+          "page": "https://www.qfinhub.com/methodology",
+          "slug": "/methodology",
+          "type": "other",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 6.7
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+          "slug": "/tools/mortgage-900k-30yr-7pct",
+          "type": "tool",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 8.4
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators",
+          "slug": "/calculators",
+          "type": "other",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 6.3
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "slug": "/calculators/retirement-planning",
+          "type": "calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 60.7
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+          "slug": "/calculators/tax/philadelphia-pa",
+          "type": "calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 27
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+          "slug": "/tools/compound-1k-30yr-6pct",
+          "type": "tool",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 7.7
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-calculator",
+          "slug": "/calculators/mortgage-calculator",
+          "type": "calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0.0,
+          "avg_position": 7
+        }
+      ]
+    }
+  },
+  "analysis_2_position_impression_ratio": {
+    "description": "Queries with the best position-to-impression ratio \u2014 high visibility efficiency. Also identifies undervalued queries (good position, low CTR) and top performers.",
+    "7_day": {
+      "label": "7-day",
+      "total_queries": 93,
+      "top_by_efficiency": [
+        {
+          "query": "401k calculator",
+          "impressions": 26,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.9,
+          "efficiency_score": 0.4,
+          "undervalued": false
+        },
+        {
+          "query": "401 k calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 70.2,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k compound interest calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k estimator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82.4,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculate 401k",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 77,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 70.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "hungary mortgage interest rates 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment return",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 86.8,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment returns",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 67.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "is it better to pay off debt or invest",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 58,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "should i pay off debt or invest",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 53,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k cal",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 71,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator retirement",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 68,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k compound calculator",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 80,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k compounded interest calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 77.7,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k growth calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 69,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k interest calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k investment calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k moneychimp calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 62,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k predictor",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 80.5,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k simulation",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 77,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 84,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual return on investment calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82.7,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annualized gain calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 88,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annualized investment return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 80,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annualized return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "average annual rate of return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 84,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "based on income what mortgage can i afford",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 92,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "best free tax calculator 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 74,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "calcul taxes",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        }
+      ],
+      "undervalued_queries": [],
+      "top_ctr_queries": [
+        {
+          "query": "401k calculator",
+          "impressions": 26,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.9,
+          "efficiency_score": 0.4,
+          "undervalued": false
+        },
+        {
+          "query": "401 k calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 70.2,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k compound interest calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k estimator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82.4,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculate 401k",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 77,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 70.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "hungary mortgage interest rates 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment return",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 86.8,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment returns",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 67.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "is it better to pay off debt or invest",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 58,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "should i pay off debt or invest",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 53,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k cal",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 71,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator retirement",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 68,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k compound calculator",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 80,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k compounded interest calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 77.7,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k growth calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 69,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k interest calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k investment calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k moneychimp calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 62,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k predictor",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 80.5,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        }
+      ],
+      "top_position_queries": [],
+      "efficiency_stats": {
+        "max_efficiency": 0.4,
+        "avg_efficiency": 0.0,
+        "queries_above_avg_efficiency": 11
+      }
+    },
+    "28_day": {
+      "label": "28-day",
+      "total_queries": 241,
+      "top_by_efficiency": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 233,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2,
+          "efficiency_score": 32.3,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.8,
+          "efficiency_score": 3.2,
+          "undervalued": true
+        },
+        {
+          "query": "investment returns",
+          "impressions": 42,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 74,
+          "efficiency_score": 0.6,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator",
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.8,
+          "efficiency_score": 0.4,
+          "undervalued": false
+        },
+        {
+          "query": "90 day fiance paducah",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 5,
+          "efficiency_score": 0.4,
+          "undervalued": true
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.6,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "investment return",
+          "impressions": 28,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 83.6,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "paying down debt is equivalent to earning a risk-free return equal to the interest rate",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10.3,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "retirement planner",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 87.6,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "20000 at 8 for 5 years",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9.5,
+          "efficiency_score": 0.2,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be?",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6,
+          "efficiency_score": 0.2,
+          "undervalued": true
+        },
+        {
+          "query": "401 k calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 70.2,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k compound interest calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k estimator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82.4,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "annual return on investment calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 86.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculate 401k",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 76.7,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculate investment return",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 95.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculating investment returns",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 91.6,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "can i retire at 45 with 1 million",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 17,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "free tax calculator 2023",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 90.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "how do personal loans compare to home equity loans or helocs for financing renovations",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 91.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "how to pay off debt faster (avalanche vs. snowball methods)",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 91.4,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "hungary mortgage interest rates 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment rate of return calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 90.2,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "is it better to pay off debt or invest",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 58.2,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "paying down debt is equivalent to earning a risk-free return equal to the interest rate explanation",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "paying off debt is equivalent to earning a risk-free return equal to the interest rate",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8,
+          "efficiency_score": 0.1,
+          "undervalued": true
+        },
+        {
+          "query": "rate of return investment calculator",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 93.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "retirement planner calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 94,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "retirement planning calculator",
+          "impressions": 12,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 89.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        }
+      ],
+      "undervalued_queries": [
+        {
+          "query": "90 day fiance paducah",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 5,
+          "efficiency_score": 0.4,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be?",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6,
+          "efficiency_score": 0.2,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 233,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2,
+          "efficiency_score": 32.3,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.8,
+          "efficiency_score": 3.2,
+          "undervalued": true
+        },
+        {
+          "query": "paying off debt is equivalent to earning a risk-free return equal to the interest rate",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8,
+          "efficiency_score": 0.1,
+          "undervalued": true
+        },
+        {
+          "query": "20000 at 8 for 5 years",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9.5,
+          "efficiency_score": 0.2,
+          "undervalued": true
+        }
+      ],
+      "top_ctr_queries": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 233,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2,
+          "efficiency_score": 32.3,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.8,
+          "efficiency_score": 3.2,
+          "undervalued": true
+        },
+        {
+          "query": "investment returns",
+          "impressions": 42,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 74,
+          "efficiency_score": 0.6,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator",
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.8,
+          "efficiency_score": 0.4,
+          "undervalued": false
+        },
+        {
+          "query": "90 day fiance paducah",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 5,
+          "efficiency_score": 0.4,
+          "undervalued": true
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.6,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "investment return",
+          "impressions": 28,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 83.6,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "paying down debt is equivalent to earning a risk-free return equal to the interest rate",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10.3,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "retirement planner",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 87.6,
+          "efficiency_score": 0.3,
+          "undervalued": false
+        },
+        {
+          "query": "20000 at 8 for 5 years",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9.5,
+          "efficiency_score": 0.2,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be?",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6,
+          "efficiency_score": 0.2,
+          "undervalued": true
+        },
+        {
+          "query": "401 k calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 70.2,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k compound interest calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 79.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "401k estimator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82.4,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "annual return on investment calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 86.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculate 401k",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 76.7,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculate investment return",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 95.5,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "calculating investment returns",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 91.6,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "can i retire at 45 with 1 million",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 17,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "free tax calculator 2023",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 90.3,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        }
+      ],
+      "top_position_queries": [],
+      "efficiency_stats": {
+        "max_efficiency": 32.3,
+        "avg_efficiency": 0.2,
+        "queries_above_avg_efficiency": 11
+      }
+    },
+    "previous_7_day": {
+      "label": "previous-7-day",
+      "total_queries": 74,
+      "top_by_efficiency": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 65,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6.7,
+          "efficiency_score": 9.6,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2,
+          "efficiency_score": 0.8,
+          "undervalued": true
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 12,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 73.9,
+          "efficiency_score": 0.2,
+          "undervalued": false
+        },
+        {
+          "query": "20000 at 8 for 5 years",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment return",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 85,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment returns",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.6,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "$20 000 loan monthly payment",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 100,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "20 000 loan payment",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 46,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "20000 48",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "2022 tax estimator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 87,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "2023 tax calculator",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 92.5,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "2026 effective tax rate calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 96,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator 2025",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 64,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k formula",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 65,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k growth calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 68,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k moneychimp",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 64,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "40k calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 93,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "accountant tax calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 86,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 96,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual return on investment",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 81,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual return on investment calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 95,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual returns calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 92,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annualized return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 85,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annualized return calculator monthly",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 90,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "apr return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 98,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "asset return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 92,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "average tax rate calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 65,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "bloomberg 401k calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 57,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "budget online tool",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 89,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        }
+      ],
+      "undervalued_queries": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 65,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6.7,
+          "efficiency_score": 9.6,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2,
+          "efficiency_score": 0.8,
+          "undervalued": true
+        }
+      ],
+      "top_ctr_queries": [
+        {
+          "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+          "impressions": 65,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6.7,
+          "efficiency_score": 9.6,
+          "undervalued": true
+        },
+        {
+          "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2,
+          "efficiency_score": 0.8,
+          "undervalued": true
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 12,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 73.9,
+          "efficiency_score": 0.2,
+          "undervalued": false
+        },
+        {
+          "query": "20000 at 8 for 5 years",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment return",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 85,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "investment returns",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.6,
+          "efficiency_score": 0.1,
+          "undervalued": false
+        },
+        {
+          "query": "$20 000 loan monthly payment",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 100,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "20 000 loan payment",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 46,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "20000 48",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "2022 tax estimator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 87,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "2023 tax calculator",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 92.5,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "2026 effective tax rate calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 96,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k calculator 2025",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 64,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k formula",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 65,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k growth calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 68,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "401k moneychimp",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 64,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "40k calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 93,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "accountant tax calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 86,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        },
+        {
+          "query": "annual return calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 96,
+          "efficiency_score": 0.0,
+          "undervalued": false
+        }
+      ],
+      "top_position_queries": [],
+      "efficiency_stats": {
+        "max_efficiency": 9.6,
+        "avg_efficiency": 0.1,
+        "queries_above_avg_efficiency": 3
+      }
+    }
+  },
+  "analysis_3_content_gaps": {
+    "description": "Content gaps between what people search and what pages exist. Identifies high-demand queries with poor positions, topic clusters without dedicated pages, and pages ranking for irrelevant queries.",
+    "7_day": {
+      "label": "7-day",
+      "unique_queries": 93,
+      "unique_pages": 58,
+      "query_page_pairs": 93,
+      "high_demand_poor_position": [
+        {
+          "query": "401k calculator",
+          "impressions": 26,
+          "avg_position": 72.9,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "best_page_position": 72.9
+        }
+      ],
+      "topic_clusters": [
+        {
+          "topic": "calculator",
+          "query_count": 46,
+          "total_impressions": 100,
+          "unique_pages_serving": 6,
+          "coverage_ratio": 0.13
+        },
+        {
+          "topic": "401k",
+          "query_count": 16,
+          "total_impressions": 60,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.06
+        },
+        {
+          "topic": "mortgage",
+          "query_count": 26,
+          "total_impressions": 43,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.12
+        },
+        {
+          "topic": "investment",
+          "query_count": 16,
+          "total_impressions": 38,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.12
+        },
+        {
+          "topic": "return",
+          "query_count": 19,
+          "total_impressions": 35,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.05
+        },
+        {
+          "topic": "calculate",
+          "query_count": 9,
+          "total_impressions": 21,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.44
+        },
+        {
+          "topic": "income",
+          "query_count": 12,
+          "total_impressions": 18,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.17
+        },
+        {
+          "topic": "afford",
+          "query_count": 14,
+          "total_impressions": 18,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.07
+        },
+        {
+          "topic": "tax",
+          "query_count": 13,
+          "total_impressions": 13,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.15
+        },
+        {
+          "topic": "much",
+          "query_count": 11,
+          "total_impressions": 13,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.18
+        },
+        {
+          "topic": "interest",
+          "query_count": 4,
+          "total_impressions": 11,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.5
+        },
+        {
+          "topic": "rate",
+          "query_count": 7,
+          "total_impressions": 10,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.14
+        },
+        {
+          "topic": "estimator",
+          "query_count": 4,
+          "total_impressions": 9,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.5
+        },
+        {
+          "topic": "based",
+          "query_count": 6,
+          "total_impressions": 8,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.17
+        },
+        {
+          "topic": "affordability",
+          "query_count": 3,
+          "total_impressions": 8,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.33
+        },
+        {
+          "topic": "retirement",
+          "query_count": 4,
+          "total_impressions": 6,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.5
+        },
+        {
+          "topic": "annual",
+          "query_count": 4,
+          "total_impressions": 6,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.25
+        },
+        {
+          "topic": "payment",
+          "query_count": 4,
+          "total_impressions": 5,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.25
+        },
+        {
+          "topic": "annualized",
+          "query_count": 3,
+          "total_impressions": 3,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.33
+        },
+        {
+          "topic": "2026",
+          "query_count": 3,
+          "total_impressions": 3,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.67
+        },
+        {
+          "topic": "taxes",
+          "query_count": 3,
+          "total_impressions": 3,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.33
+        },
+        {
+          "topic": "liability",
+          "query_count": 3,
+          "total_impressions": 3,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.33
+        }
+      ],
+      "misaligned_pages": [
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "slug": "/calculators/mortgage-affordability",
+          "mismatched_queries": 3,
+          "mismatch_impressions": 4,
+          "examples": [
+            "calculator how much home can i afford",
+            "how much house can i afford calculator",
+            "how much house could i afford"
+          ]
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+          "slug": "/blog/investment-calculator-withdrawals",
+          "mismatched_queries": 1,
+          "mismatch_impressions": 3,
+          "examples": [
+            "capital withdrawal financial planning tool"
+          ]
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "mismatched_queries": 1,
+          "mismatch_impressions": 1,
+          "examples": [
+            "annualized gain calculator"
+          ]
+        }
+      ],
+      "gap_assessment": {
+        "high_demand_poor_position_queries": 1,
+        "topic_clusters": 18,
+        "misaligned_pages": 3,
+        "overall_gap_severity": "LOW"
+      }
+    },
+    "28_day": {
+      "label": "28-day",
+      "unique_queries": 241,
+      "unique_pages": 121,
+      "query_page_pairs": 242,
+      "high_demand_poor_position": [
+        {
+          "query": "investment returns",
+          "impressions": 42,
+          "avg_position": 74,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/investment-return",
+          "best_page_position": 74
+        },
+        {
+          "query": "401k calculator",
+          "impressions": 29,
+          "avg_position": 72.8,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "best_page_position": 72.8
+        },
+        {
+          "query": "investment return",
+          "impressions": 28,
+          "avg_position": 83.6,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/investment-return",
+          "best_page_position": 83.6
+        },
+        {
+          "query": "retirement planner",
+          "impressions": 25,
+          "avg_position": 87.6,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "best_page_position": 87.6
+        },
+        {
+          "query": "how to use a mortgage calculator",
+          "impressions": 19,
+          "avg_position": 72.6,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+          "best_page_position": 72.6
+        },
+        {
+          "query": "retirement planning calculator",
+          "impressions": 12,
+          "avg_position": 89.5,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "best_page_position": 89.5
+        },
+        {
+          "query": "rate of return investment calculator",
+          "impressions": 11,
+          "avg_position": 93.5,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/investment-return",
+          "best_page_position": 93.5
+        },
+        {
+          "query": "free tax calculator 2023",
+          "impressions": 10,
+          "avg_position": 90.3,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "best_page_position": 90.3
+        },
+        {
+          "query": "tax calculator 2023",
+          "impressions": 10,
+          "avg_position": 90.6,
+          "matching_pages": 1,
+          "best_page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "best_page_position": 90.6
+        }
+      ],
+      "topic_clusters": [
+        {
+          "topic": "rate",
+          "query_count": 28,
+          "total_impressions": 306,
+          "unique_pages_serving": 7,
+          "coverage_ratio": 0.25
+        },
+        {
+          "topic": "calculator",
+          "query_count": 116,
+          "total_impressions": 279,
+          "unique_pages_serving": 8,
+          "coverage_ratio": 0.07
+        },
+        {
+          "topic": "annual",
+          "query_count": 14,
+          "total_impressions": 276,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.21
+        },
+        {
+          "topic": "payment",
+          "query_count": 13,
+          "total_impressions": 270,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.31
+        },
+        {
+          "topic": "monthly",
+          "query_count": 10,
+          "total_impressions": 266,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.4
+        },
+        {
+          "topic": "years",
+          "query_count": 9,
+          "total_impressions": 266,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.22
+        },
+        {
+          "topic": "you",
+          "query_count": 6,
+          "total_impressions": 264,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.67
+        },
+        {
+          "topic": "borrow",
+          "query_count": 3,
+          "total_impressions": 259,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.67
+        },
+        {
+          "topic": "investment",
+          "query_count": 28,
+          "total_impressions": 140,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.14
+        },
+        {
+          "topic": "tax",
+          "query_count": 63,
+          "total_impressions": 120,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.06
+        },
+        {
+          "topic": "return",
+          "query_count": 40,
+          "total_impressions": 108,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.05
+        },
+        {
+          "topic": "401k",
+          "query_count": 21,
+          "total_impressions": 70,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.1
+        },
+        {
+          "topic": "retirement",
+          "query_count": 16,
+          "total_impressions": 63,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.12
+        },
+        {
+          "topic": "mortgage",
+          "query_count": 27,
+          "total_impressions": 56,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.11
+        },
+        {
+          "topic": "returns",
+          "query_count": 4,
+          "total_impressions": 49,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.25
+        },
+        {
+          "topic": "debt",
+          "query_count": 19,
+          "total_impressions": 42,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.16
+        },
+        {
+          "topic": "calculate",
+          "query_count": 19,
+          "total_impressions": 40,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.21
+        },
+        {
+          "topic": "planner",
+          "query_count": 5,
+          "total_impressions": 37,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.4
+        },
+        {
+          "topic": "000",
+          "query_count": 8,
+          "total_impressions": 34,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.25
+        },
+        {
+          "topic": "pay",
+          "query_count": 13,
+          "total_impressions": 33,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.23
+        },
+        {
+          "topic": "off",
+          "query_count": 13,
+          "total_impressions": 33,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.23
+        },
+        {
+          "topic": "2023",
+          "query_count": 8,
+          "total_impressions": 31,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.12
+        },
+        {
+          "topic": "income",
+          "query_count": 18,
+          "total_impressions": 29,
+          "unique_pages_serving": 4,
+          "coverage_ratio": 0.22
+        },
+        {
+          "topic": "invest",
+          "query_count": 10,
+          "total_impressions": 26,
+          "unique_pages_serving": 1,
+          "coverage_ratio": 0.1
+        },
+        {
+          "topic": "planning",
+          "query_count": 6,
+          "total_impressions": 25,
+          "unique_pages_serving": 3,
+          "coverage_ratio": 0.5
+        },
+        {
+          "topic": "interest",
+          "query_count": 11,
+          "total_impressions": 20,
+          "unique_pages_serving": 6,
+          "coverage_ratio": 0.55
+        },
+        {
+          "topic": "afford",
+          "query_count": 15,
+          "total_impressions": 19,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.13
+        },
+        {
+          "topic": "much",
+          "query_count": 15,
+          "total_impressions": 17,
+          "unique_pages_serving": 5,
+          "coverage_ratio": 0.33
+        },
+        {
+          "topic": "estimator",
+          "query_count": 7,
+          "total_impressions": 16,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.29
+        },
+        {
+          "topic": "loan",
+          "query_count": 13,
+          "total_impressions": 13,
+          "unique_pages_serving": 2,
+          "coverage_ratio": 0.15
+        }
+      ],
+      "misaligned_pages": [
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "slug": "/calculators/mortgage-affordability",
+          "mismatched_queries": 3,
+          "mismatch_impressions": 4,
+          "examples": [
+            "calculator how much home can i afford",
+            "how much house can i afford calculator",
+            "how much house could i afford"
+          ]
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+          "slug": "/blog/investment-calculator-withdrawals",
+          "mismatched_queries": 1,
+          "mismatch_impressions": 3,
+          "examples": [
+            "capital withdrawal financial planning tool"
+          ]
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "mismatched_queries": 1,
+          "mismatch_impressions": 1,
+          "examples": [
+            "annualized gain calculator"
+          ]
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+          "slug": "/tools/loan-20k-5yr-8pct",
+          "mismatched_queries": 1,
+          "mismatch_impressions": 1,
+          "examples": [
+            "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be"
+          ]
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators",
+          "slug": "/calculators",
+          "mismatched_queries": 1,
+          "mismatch_impressions": 1,
+          "examples": [
+            "incremental borrowing rate calculator"
+          ]
+        }
+      ],
+      "gap_assessment": {
+        "high_demand_poor_position_queries": 9,
+        "topic_clusters": 48,
+        "misaligned_pages": 5,
+        "overall_gap_severity": "MEDIUM"
+      }
+    }
+  },
+  "analysis_4_page_level_deep_dive": {
+    "description": "Per-page performance breakdown with query attribution. Classifies pages into performance tiers and breaks down by page type.",
+    "7_day": {
+      "label": "7-day",
+      "total_page_rows_analyzed": 50,
+      "page_details": [
+        {
+          "page": "https://www.qfinhub.com/all-pages",
+          "slug": "/all-pages",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+          "slug": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+          "slug": "/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+          "slug": "/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+          "type": "blog",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 15,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+          "slug": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+          "type": "blog",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8.3,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "hungary mortgage interest rates 2026",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 11
+            }
+          ],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investing-here-is-why-nrx-pharmaceuticals-nrxp-is-a-top-penny-stock-pick",
+          "slug": "/blog/investing-here-is-why-nrx-pharmaceuticals-nrxp-is-a-top-penny-stock-pick",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+          "slug": "/blog/investment-calculator-withdrawals",
+          "type": "blog",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 51.5,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "capital withdrawal financial planning tool",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 65.7
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+          "slug": "/blog/monthly-mortgage-payment-formula-tax-insurance",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+          "slug": "/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators",
+          "slug": "/calculators",
+          "type": "other",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 36.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "slug": "/calculators/401k-calculator",
+          "type": "calculator",
+          "impressions": 69,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 72.9,
+          "query_count": 17,
+          "top_queries": [
+            {
+              "query": "401k calculator",
+              "impressions": 26,
+              "clicks": 0,
+              "position": 72.9
+            },
+            {
+              "query": "401k compound interest calculator",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 79.5
+            },
+            {
+              "query": "calculate 401k",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 77
+            },
+            {
+              "query": "401 k calculator",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 70.2
+            },
+            {
+              "query": "401k estimator",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 82.4
+            },
+            {
+              "query": "401k compounded interest calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 77.7
+            },
+            {
+              "query": "401k compound calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 80
+            },
+            {
+              "query": "401k predictor",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 80.5
+            },
+            {
+              "query": "retirement estimator 401k",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 81
+            },
+            {
+              "query": "401k cal",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 71
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/compound-interest",
+          "slug": "/calculators/compound-interest",
+          "type": "calculator",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/debt-payoff",
+          "slug": "/calculators/debt-payoff",
+          "type": "calculator",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 17,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "type": "calculator",
+          "impressions": 49,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 84.5,
+          "query_count": 24,
+          "top_queries": [
+            {
+              "query": "investment returns",
+              "impressions": 7,
+              "clicks": 0,
+              "position": 67.3
+            },
+            {
+              "query": "investment return",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 86.8
+            },
+            {
+              "query": "calculate investment return",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 96.2
+            },
+            {
+              "query": "annual return on investment calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 82.7
+            },
+            {
+              "query": "how to calculate investment return",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 91
+            },
+            {
+              "query": "investment rate of return calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 91.3
+            },
+            {
+              "query": "calculate investment income",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 95
+            },
+            {
+              "query": "rate of return investment calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 92.5
+            },
+            {
+              "query": "real return calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 86.5
+            },
+            {
+              "query": "annual return calculator",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 84
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/loan-calculator",
+          "slug": "/calculators/loan-calculator",
+          "type": "calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 15,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "slug": "/calculators/mortgage-affordability",
+          "type": "calculator",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 87.8,
+          "query_count": 28,
+          "top_queries": [
+            {
+              "query": "mortgage affordability",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 97.2
+            },
+            {
+              "query": "income to mortgage calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 97.3
+            },
+            {
+              "query": "mortage affordability",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 95.3
+            },
+            {
+              "query": "mortgage based on income",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 97.3
+            },
+            {
+              "query": "how much house can i afford calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 82.5
+            },
+            {
+              "query": "how to calculate how much mortgage you can afford",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 75.5
+            },
+            {
+              "query": "how to work out what mortgage you can afford",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 78.5
+            },
+            {
+              "query": "mortgage calculator by income",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 96
+            },
+            {
+              "query": "what mortgage payment can i afford",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 89
+            },
+            {
+              "query": "based on income what mortgage can i afford",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 92
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-calculator",
+          "slug": "/calculators/mortgage-calculator",
+          "type": "calculator",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "slug": "/calculators/retirement-planning",
+          "type": "calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 52.7,
+          "query_count": 2,
+          "top_queries": [
+            {
+              "query": "retirement planner calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 94
+            },
+            {
+              "query": "retirement planner",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 86
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "slug": "/calculators/tax-calculator",
+          "type": "calculator",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 70.5,
+          "query_count": 15,
+          "top_queries": [
+            {
+              "query": "best free tax calculator 2026",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 74
+            },
+            {
+              "query": "calcul taxes",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 79
+            },
+            {
+              "query": "calculate tax liability",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 73
+            },
+            {
+              "query": "calculate taxes owed",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 73
+            },
+            {
+              "query": "calculator tax online",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 93
+            },
+            {
+              "query": "how much tax do i owe",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 106
+            },
+            {
+              "query": "tax calculator 2022",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 76
+            },
+            {
+              "query": "tax calculator online",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 79
+            },
+            {
+              "query": "tax estimate calculator 2026",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 80
+            },
+            {
+              "query": "tax estimator 2022",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 82
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+          "slug": "/calculators/tax/philadelphia-pa",
+          "type": "calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 29,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "personal tax in philadelphia pa",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 65
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+          "slug": "/decision/how-much-do-i-need-to-retire",
+          "type": "other",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 26.8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+          "slug": "/decision/pay-off-debt-or-invest",
+          "type": "other",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 48,
+          "query_count": 2,
+          "top_queries": [
+            {
+              "query": "is it better to pay off debt or invest",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 58
+            },
+            {
+              "query": "should i pay off debt or invest",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 53
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+          "slug": "/decision/pay-off-student-loans-or-invest",
+          "type": "other",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+          "slug": "/decision/rent-vs-buy-with-100k-income",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 11,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan",
+          "slug": "/decision/should-i-use-a-heloc-or-personal-loan",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 51,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "how do personal loans compare to home equity loans or helocs for financing renovations",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 90
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+          "slug": "/decision/what-tax-bracket-am-i-in",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+          "slug": "/guides/how-to-use-mortgage-calculator",
+          "type": "other",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 70.3,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "how to use a mortgage calculator",
+              "impressions": 7,
+              "clicks": 0,
+              "position": 70.3
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/methodology",
+          "slug": "/methodology",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+          "slug": "/scenario/401k-75000-10pct-10yr",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/auto-loan-2a9cffb2",
+          "slug": "/scenario/auto-loan-2a9cffb2",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 4,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/auto-loan-ac3ddd84",
+          "slug": "/scenario/auto-loan-ac3ddd84",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+          "slug": "/scenario/compound-interest-1000-10pct-15yr-m1000",
+          "type": "other",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/compound-interest-100000-10pct-15yr-m250",
+          "slug": "/scenario/compound-interest-100000-10pct-15yr-m250",
+          "type": "other",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10.2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/compound-interest-250000-3pct-30yr-m2000",
+          "slug": "/scenario/compound-interest-250000-3pct-30yr-m2000",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 11,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/debt-payoff-e860e4b1",
+          "slug": "/scenario/debt-payoff-e860e4b1",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/mortgage-450k-5dp-20yr-7-5pct",
+          "slug": "/scenario/mortgage-450k-5dp-20yr-7-5pct",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 17,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/scenario/retirement-planning-4cd08066",
+          "slug": "/scenario/retirement-planning-4cd08066",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/budget-150k-35-8-5",
+          "slug": "/tools/budget-150k-35-8-5",
+          "type": "tool",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+          "slug": "/tools/compound-100k-20yr-5pct",
+          "type": "tool",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9.8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+          "slug": "/tools/compound-150k-10yr-5pct",
+          "type": "tool",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+          "slug": "/tools/compound-1k-30yr-6pct",
+          "type": "tool",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 7.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+          "slug": "/tools/compound-1k-5yr-5pct-daily",
+          "type": "tool",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+          "slug": "/tools/compound-500k-15yr-5pct",
+          "type": "tool",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 11,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/investment-100k-7yr",
+          "slug": "/tools/investment-100k-7yr",
+          "type": "tool",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/investment-1k-5yr",
+          "slug": "/tools/investment-1k-5yr",
+          "type": "tool",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8.2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/investment-25k-10yr",
+          "slug": "/tools/investment-25k-10yr",
+          "type": "tool",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/investment-25k-5yr",
+          "slug": "/tools/investment-25k-5yr",
+          "type": "tool",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/investment-50k-15yr-1000mo",
+          "slug": "/tools/investment-50k-15yr-1000mo",
+          "type": "tool",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 7,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+          "slug": "/tools/loan-20k-5yr-8pct",
+          "type": "tool",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/tools/loan-250k-25yr-8pct",
+          "slug": "/tools/loan-250k-25yr-8pct",
+          "type": "tool",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 3.3,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        }
+      ],
+      "type_breakdown": {
+        "blog": {
+          "count": 8,
+          "impressions": 14,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "calculator": {
+          "count": 10,
+          "impressions": 208,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "other": {
+          "count": 19,
+          "impressions": 58,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "tool": {
+          "count": 13,
+          "impressions": 43,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        }
+      },
+      "performance_summary": {
+        "high_performers": 0,
+        "underperformers": 34,
+        "low_visibility": 12,
+        "average": 4
+      }
+    },
+    "28_day": {
+      "label": "28-day",
+      "total_page_rows_analyzed": 50,
+      "page_details": [
+        {
+          "page": "https://www.qfinhub.com/tools/investment-25k-10yr",
+          "slug": "/tools/investment-25k-10yr",
+          "type": "tool",
+          "impressions": 5,
+          "clicks": 1,
+          "ctr_pct": 20.0,
+          "avg_position": 11,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/",
+          "slug": "/",
+          "type": "homepage",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/all-pages",
+          "slug": "/all-pages",
+          "type": "other",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6.7,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "slug": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+          "type": "blog",
+          "impressions": 338,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 11.8,
+          "query_count": 17,
+          "top_queries": [
+            {
+              "query": "if you borrow $20,000 for 5 years at an annual rate of 8%, what would the monthly payment be",
+              "impressions": 232,
+              "clicks": 0,
+              "position": 7.2
+            },
+            {
+              "query": "if you borrow $20 000 for 5 years at an annual rate of 8 what would the monthly payment be",
+              "impressions": 25,
+              "clicks": 0,
+              "position": 7.8
+            },
+            {
+              "query": "20000 48",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 72.3
+            },
+            {
+              "query": "20000 at 8 for 5 years",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 9.5
+            },
+            {
+              "query": "$20 000 loan monthly payment",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 100
+            },
+            {
+              "query": "20 000 loan for 5 years",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 99
+            },
+            {
+              "query": "20 000 loan interest rate",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 85
+            },
+            {
+              "query": "20 000 loan payment",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 46
+            },
+            {
+              "query": "20 000 personal loan monthly payment",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 91
+            },
+            {
+              "query": "20000 loan 5 years",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 70
+            }
+          ],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+          "slug": "/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+          "type": "blog",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9.8,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "90 day fiance paducah",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 5
+            }
+          ],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
+          "slug": "/blog/blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 12,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+          "slug": "/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+          "slug": "/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+          "type": "blog",
+          "impressions": 17,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10.4,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+          "slug": "/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+          "slug": "/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+          "type": "blog",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 12.7,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+          "slug": "/blog/housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+          "type": "blog",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+          "slug": "/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+          "type": "blog",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 18,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "credit card debt strategy pay off",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 42
+            }
+          ],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+          "slug": "/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+          "type": "blog",
+          "impressions": 31,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 14.8,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "hungary mortgage interest rates 2026",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 11
+            }
+          ],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+          "slug": "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investing-here-is-why-nrx-pharmaceuticals-nrxp-is-a-top-penny-stock-pick",
+          "slug": "/blog/investing-here-is-why-nrx-pharmaceuticals-nrxp-is-a-top-penny-stock-pick",
+          "type": "blog",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 14.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investing-resurgent-political-risk-derails-emerging-market-rallies",
+          "slug": "/blog/investing-resurgent-political-risk-derails-emerging-market-rallies",
+          "type": "blog",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 48.2,
+          "query_count": 3,
+          "top_queries": [
+            {
+              "query": "political risk factor investing",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 60.5
+            },
+            {
+              "query": "factor investing for political risk",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 83
+            },
+            {
+              "query": "factor investing political risk",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 66
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+          "slug": "/blog/investment-calculator-withdrawals",
+          "type": "blog",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 41,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "capital withdrawal financial planning tool",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 65.7
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+          "slug": "/blog/monthly-mortgage-payment-formula-tax-insurance",
+          "type": "blog",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 4.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+          "slug": "/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
+          "slug": "/blog/new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 3,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+          "slug": "/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+          "type": "blog",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+          "slug": "/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+          "type": "blog",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 10,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators",
+          "slug": "/calculators",
+          "type": "other",
+          "impressions": 14,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 25.4,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "incremental borrowing rate calculator",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 78
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/401k-calculator",
+          "slug": "/calculators/401k-calculator",
+          "type": "calculator",
+          "impressions": 80,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 71.8,
+          "query_count": 22,
+          "top_queries": [
+            {
+              "query": "401k calculator",
+              "impressions": 29,
+              "clicks": 0,
+              "position": 72.8
+            },
+            {
+              "query": "calculate 401k",
+              "impressions": 7,
+              "clicks": 0,
+              "position": 76.7
+            },
+            {
+              "query": "401k compound interest calculator",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 79.5
+            },
+            {
+              "query": "401 k calculator",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 70.2
+            },
+            {
+              "query": "401k estimator",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 82.4
+            },
+            {
+              "query": "401k compounded interest calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 77.7
+            },
+            {
+              "query": "401k compound calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 80
+            },
+            {
+              "query": "401k growth calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 68.5
+            },
+            {
+              "query": "401k predictor",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 80.5
+            },
+            {
+              "query": "retirement estimator 401k",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 81
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/annuity-calculator",
+          "slug": "/calculators/annuity-calculator",
+          "type": "calculator",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8.2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/budget-planner",
+          "slug": "/calculators/budget-planner",
+          "type": "calculator",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 32.7,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "budget online tool",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 89
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/compound-interest",
+          "slug": "/calculators/compound-interest",
+          "type": "calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 7.7,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/debt-payoff",
+          "slug": "/calculators/debt-payoff",
+          "type": "calculator",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 13,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/investment-return",
+          "slug": "/calculators/investment-return",
+          "type": "calculator",
+          "impressions": 188,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 81.8,
+          "query_count": 45,
+          "top_queries": [
+            {
+              "query": "investment returns",
+              "impressions": 42,
+              "clicks": 0,
+              "position": 74
+            },
+            {
+              "query": "investment return",
+              "impressions": 28,
+              "clicks": 0,
+              "position": 83.6
+            },
+            {
+              "query": "rate of return investment calculator",
+              "impressions": 11,
+              "clicks": 0,
+              "position": 93.5
+            },
+            {
+              "query": "calculate investment return",
+              "impressions": 8,
+              "clicks": 0,
+              "position": 95.5
+            },
+            {
+              "query": "annual return on investment calculator",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 86.3
+            },
+            {
+              "query": "calculating investment returns",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 91.6
+            },
+            {
+              "query": "investment rate of return calculator",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 90.2
+            },
+            {
+              "query": "calculate investment income",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 87
+            },
+            {
+              "query": "how to calculate investment return",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 92.5
+            },
+            {
+              "query": "rate of return calculator investment",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 92.5
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/loan-calculator",
+          "slug": "/calculators/loan-calculator",
+          "type": "calculator",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8.6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+          "slug": "/calculators/mortgage-affordability",
+          "type": "calculator",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 81.6,
+          "query_count": 29,
+          "top_queries": [
+            {
+              "query": "mortgage affordability",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 97.2
+            },
+            {
+              "query": "income to mortgage calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 97.3
+            },
+            {
+              "query": "mortage affordability",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 95.3
+            },
+            {
+              "query": "mortgage based on income",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 97.3
+            },
+            {
+              "query": "how much house can i afford calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 82.5
+            },
+            {
+              "query": "how to calculate how much mortgage you can afford",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 75.5
+            },
+            {
+              "query": "how to work out what mortgage you can afford",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 78.5
+            },
+            {
+              "query": "mortgage calculator by income",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 96
+            },
+            {
+              "query": "what mortgage payment can i afford",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 89
+            },
+            {
+              "query": "based on income what mortgage can i afford",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 92
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/mortgage-calculator",
+          "slug": "/calculators/mortgage-calculator",
+          "type": "calculator",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/rent-vs-buy/orlando-fl",
+          "slug": "/calculators/rent-vs-buy/orlando-fl",
+          "type": "calculator",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 6,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/retirement-planning",
+          "slug": "/calculators/retirement-planning",
+          "type": "calculator",
+          "impressions": 67,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 82.0,
+          "query_count": 14,
+          "top_queries": [
+            {
+              "query": "retirement planner",
+              "impressions": 25,
+              "clicks": 0,
+              "position": 87.6
+            },
+            {
+              "query": "retirement planning calculator",
+              "impressions": 12,
+              "clicks": 0,
+              "position": 89.5
+            },
+            {
+              "query": "retirement planner calculator",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 94
+            },
+            {
+              "query": "financial retirement planner",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 86.3
+            },
+            {
+              "query": "retirement income planner",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 93
+            },
+            {
+              "query": "calculating retirement savings growth",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 87
+            },
+            {
+              "query": "retirement planning online",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 79
+            },
+            {
+              "query": "retirement projection calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 96.5
+            },
+            {
+              "query": "comprehensive retirement calculator",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 86
+            },
+            {
+              "query": "detailed retirement calculator",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 86
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax-calculator",
+          "slug": "/calculators/tax-calculator",
+          "type": "calculator",
+          "impressions": 190,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 83.7,
+          "query_count": 71,
+          "top_queries": [
+            {
+              "query": "free tax calculator 2023",
+              "impressions": 10,
+              "clicks": 0,
+              "position": 90.3
+            },
+            {
+              "query": "tax calculator 2023",
+              "impressions": 10,
+              "clicks": 0,
+              "position": 90.6
+            },
+            {
+              "query": "tax burden calculator",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 81
+            },
+            {
+              "query": "tax calculator 2022",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 88.7
+            },
+            {
+              "query": "tax planning calculator",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 89.3
+            },
+            {
+              "query": "2022 tax calculator",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 90.5
+            },
+            {
+              "query": "2023 tax calculator",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 92.8
+            },
+            {
+              "query": "tax calculator 2026",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 82.5
+            },
+            {
+              "query": "tax liability calculator",
+              "impressions": 4,
+              "clicks": 0,
+              "position": 80.2
+            },
+            {
+              "query": "2023 tax estimator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 90.7
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+          "slug": "/calculators/tax/philadelphia-pa",
+          "type": "calculator",
+          "impressions": 28,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 19.9,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "personal tax in philadelphia pa",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 64
+            }
+          ],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/cookies",
+          "slug": "/cookies",
+          "type": "other",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 3,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+          "slug": "/decision/can-i-afford-a-400k-home",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 38,
+          "query_count": 2,
+          "top_queries": [
+            {
+              "query": "can i afford a 400k house",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 41
+            },
+            {
+              "query": "down payment needed for 400k house",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 35
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+          "slug": "/decision/how-much-do-i-need-to-retire",
+          "type": "other",
+          "impressions": 40,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 17.4,
+          "query_count": 2,
+          "top_queries": [
+            {
+              "query": "is $400 000 enough to retire at 65",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 95.7
+            },
+            {
+              "query": "how much will i need to retire in 2050",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 95
+            }
+          ],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+          "slug": "/decision/how-much-emergency-fund-do-i-need",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 3,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+          "slug": "/decision/how-much-house-can-i-afford",
+          "type": "other",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 8.2,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+          "slug": "/decision/pay-off-debt-or-invest",
+          "type": "other",
+          "impressions": 91,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 27.2,
+          "query_count": 16,
+          "top_queries": [
+            {
+              "query": "is it better to pay off debt or invest",
+              "impressions": 8,
+              "clicks": 0,
+              "position": 58.2
+            },
+            {
+              "query": "should i pay off debt or invest",
+              "impressions": 7,
+              "clicks": 0,
+              "position": 57.6
+            },
+            {
+              "query": "paying down debt is equivalent to earning a risk-free return equal to the interest rate",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 10.3
+            },
+            {
+              "query": "should i pay off debt or invest calculator",
+              "impressions": 3,
+              "clicks": 0,
+              "position": 52.3
+            },
+            {
+              "query": "debt vs investment calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 76
+            },
+            {
+              "query": "invest or pay off debt calculator",
+              "impressions": 2,
+              "clicks": 0,
+              "position": 60
+            },
+            {
+              "query": "investing vs paying off debt calculator",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 55
+            },
+            {
+              "query": "is it better to invest or pay off debt?",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 64
+            },
+            {
+              "query": "is it better to pay down debt or invest",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 74
+            },
+            {
+              "query": "pay down debt or invest calculator",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 76
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+          "slug": "/decision/pay-off-student-loans-or-invest",
+          "type": "other",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 17,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "loan interest saved vs investment gains",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 74
+            }
+          ],
+          "performance_tier": "AVERAGE"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+          "slug": "/decision/rent-vs-buy-with-100k-income",
+          "type": "other",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 5.4,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+          "slug": "/decision/retire-at-45-with-1-million",
+          "type": "other",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 28.1,
+          "query_count": 3,
+          "top_queries": [
+            {
+              "query": "can i retire at 45 with 1 million",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 17
+            },
+            {
+              "query": "can i retire at 45 with 2 million",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 26
+            },
+            {
+              "query": "how much to retire at 45 in us",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 100
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+          "slug": "/decision/roth-vs-traditional-401k-decision",
+          "type": "other",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 12.3,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "roth 401k vs traditional 401k differences pros cons 2026",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 20
+            }
+          ],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+          "slug": "/decision/should-i-refinance-my-mortgage",
+          "type": "other",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 9.5,
+          "query_count": 0,
+          "top_queries": [],
+          "performance_tier": "UNDERPERFORMER"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan",
+          "slug": "/decision/should-i-use-a-heloc-or-personal-loan",
+          "type": "other",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 70.5,
+          "query_count": 1,
+          "top_queries": [
+            {
+              "query": "how do personal loans compare to home equity loans or helocs for financing renovations",
+              "impressions": 6,
+              "clicks": 0,
+              "position": 91.3
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+          "slug": "/decision/snowball-vs-avalanche-which-wins",
+          "type": "other",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 92.8,
+          "query_count": 2,
+          "top_queries": [
+            {
+              "query": "how to pay off debt faster (avalanche vs. snowball methods)",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 91.4
+            },
+            {
+              "query": "avalanche vs snowball method debt payoff which works",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 100
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        },
+        {
+          "page": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+          "slug": "/decision/what-tax-bracket-am-i-in",
+          "type": "other",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0,
+          "avg_position": 64.2,
+          "query_count": 3,
+          "top_queries": [
+            {
+              "query": "effective tax brackets",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 76
+            },
+            {
+              "query": "effective tax rate brackets",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 72
+            },
+            {
+              "query": "what tax bracket am i in",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 96
+            }
+          ],
+          "performance_tier": "LOW_VISIBILITY"
+        }
+      ],
+      "type_breakdown": {
+        "blog": {
+          "count": 19,
+          "impressions": 425,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "calculator": {
+          "count": 13,
+          "impressions": 638,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "homepage": {
+          "count": 1,
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "other": {
+          "count": 16,
+          "impressions": 225,
+          "clicks": 0,
+          "ctr_pct": 0.0
+        },
+        "tool": {
+          "count": 1,
+          "impressions": 5,
+          "clicks": 1,
+          "ctr_pct": 20.0
+        }
+      },
+      "performance_summary": {
+        "high_performers": 0,
+        "underperformers": 30,
+        "low_visibility": 15,
+        "average": 5
+      }
+    }
+  },
+  "executive_summary": {
+    "headline_7d": "352 impressions, 0 clicks, CTR 0.0%, avg pos 51.8",
+    "trend_vs_prev": "Impressions \u2193150 (-29.9%)",
+    "indexing_status": "0 indexed / 530 submitted",
+    "top_leakage_count": 58,
+    "top_gap_queries": "LOW",
+    "pages_gained_7d": 13,
+    "pages_lost_7d": 36,
+    "high_performers": 0,
+    "underperformers": 34
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "title": "QFINHUB Phase 36 — Acceleration Execution Report",
+  "generated": "2026-06-28T20:10:00Z",
+  "status": "DEPLOYED_PENDING_CDN_PROPAGATION",
+  
+  "pre_execution_state": {
+    "gsc_7d_impressions": 379,
+    "gsc_7d_clicks": 1,
+    "gsc_avg_position": 47.5,
+    "trend": "DECLINING (-24%)",
+    "backlinks": 0,
+    "revenue": 0
+  },
+
+  "changes_deployed": {
+    "tool_variant_redirects": {
+      "action": "All /tools/* formula variants now 301 redirect to parent /calculators/*",
+      "files": ["src/app/tools/[slug]/page.tsx"],
+      "impact": "Consolidates ranking authority from noindexed variants (pos 3-10) to real calculators (pos 70-90)",
+      "status": "COMMITTED + PUSHED, awaiting Vercel CDN propagation"
+    },
+    "blog_cta_fix": {
+      "action": "Restructured $20K loan blog — CTA now above answer to fix zero-click snippet",
+      "files": ["src/lib/blog/posts.ts (line 2141)"],
+      "impact": "Blog at position 7.1 (9 impressions, 0 clicks) should now convert impressions to clicks",
+      "status": "COMMITTED + PUSHED"
+    },
+    "duplicate_blog_noindex": {
+      "action": "Noindexed duplicate blog post (20000-loan-5-years-8-percent-monthly-payment)",
+      "files": ["src/app/blog/[slug]/page.tsx"],
+      "impact": "Prevents cannibalization between two near-identical blog posts",
+      "status": "COMMITTED + PUSHED"
+    },
+    "sitemap_cleanup": {
+      "action": "Removed all tool variants from sitemap (now 301 redirected)",
+      "files": ["src/app/sitemap.ts"],
+      "impact": "Cleaner sitemap, no conflicting signals",
+      "status": "COMMITTED + PUSHED"
+    }
+  },
+
+  "automation_created": {
+    "pinterest_daily_poster": {
+      "job_id": "a189625a4ab2",
+      "schedule": "Daily at 2 PM",
+      "description": "Posts 3-5 pins from 277-image library across calculator boards",
+      "skills": ["qfinhub-quick", "pinterest-creative-system", "pinterest-csv-format", "cloakbrowser-automation"]
+    },
+    "gsc_sitemap_submitted": "HTTP 204 — sitemap resubmitted to Google Search Console"
+  },
+
+  "haro_status": "SCRIPTS DISABLED (.DISABLED suffix). Account verification was a recurring problem. Held for now.",
+
+  "strategy_going_forward": {
+    "priority_1_authority": "Without backlinks, the site stays in positions 50-90. Pinterest (automated) is step 1. Next: explore alternative outreach channels (not cold email — proven failure rate 0/78).",
+    "priority_2_conversion": "The blog CTA fix should produce first content clicks from position 7.1. Monitor GSC in 3-7 days.",
+    "priority_3_consolidation": "301 redirects will consolidate ranking signals. Parent calculators should improve from pos 70-90 within weeks.",
+    "daily_cron": "dcba952b4c45 (SAFE RECOVERY) — needs update to Phase 36 context. Currently running Phase 31 logic."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-06-29T19:06:09.126094+00:00",
+  "date": "2026-06-29",
+  "phase": "Phase 36",
+  "run_type": "autonomous_daily",
+  "trigger": "cron_2pm",
+  "summary": {
+    "pins_attempted": 5,
+    "pins_posted": 5,
+    "pins_failed": 0,
+    "method": "cloakbrowser_internal_api",
+    "success_rate": "100%"
+  },
+  "pins": [
+    {
+      "slug": "retirement-compare",
+      "title": "FIRE at 40  vs  Traditional at 65",
+      "board": "Retirement Planning",
+      "category": "retirement",
+      "image": "pin-retirement-compare-730043.png",
+      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNDE=\",\"domain\":\"qfinhub.com\",\"created_at\":\"Mon, ",
+      "status": "posted"
+    },
+    {
+      "slug": "mortgages-did-you-know",
+      "title": "Did You Know? You pay 56% in interest over 30 years",
+      "board": "Mortgage Calculators",
+      "category": "mortgages",
+      "image": "pin-mortgages-did_you_know-1af697.png",
+      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNDY=\",\"is_repin\":false,\"type\":\"pin\",\"rich_summar",
+      "status": "posted"
+    },
+    {
+      "slug": "debt-did-you-know",
+      "title": "Did You Know? Adding $200/month saves $1,800 in interest",
+      "board": "Debt Payoff Tools",
+      "category": "debt",
+      "image": "pin-debt-did_you_know-e1820e.png",
+      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNTM=\",\"is_quick_promotable\":false,\"domain\":\"qfin",
+      "status": "posted"
+    },
+    {
+      "slug": "loans-did-you-know",
+      "title": "Did You Know? Total interest on 5yr $30K loan at 8%: $6,500",
+      "board": "Loan Calculators",
+      "category": "loans",
+      "image": "pin-loans-did_you_know-e3323f.png",
+      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNjA=\",\"is_quick_promotable_by_pinner\":false,\"typ",
+      "status": "posted"
+    },
+    {
+      "slug": "taxes-compare",
+      "title": "Standard Deduction  vs  Itemized Deductions",
+      "board": "Tax Calculators",
+      "category": "taxes",
+      "image": "pin-taxes-compare-3e1bb9.png",
+      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNjc=\",\"link\":\"https://www.qfinhub.com/calculator",
+      "status": "posted"
+    }
+  ],
+  "categories_covered": [
+    "debt",
+    "loans",
+    "mortgages",
+    "retirement",
+    "taxes"
+  ],
+  "csv_backup": ".pinterest-data/csv-imports/pinterest-daily-2026-06-29.csv",
+  "cloakbrowser": {
+    "profile": "~/.hermes/cloak-profiles/pinterest-poster",
+    "authenticated": true,
+    "version": "0.4.5"
+  }
+}

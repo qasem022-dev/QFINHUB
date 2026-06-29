@@ -14,8 +14,8 @@ const NOINDEX_DUPLICATE_SLUGS = new Set([
   "20000-loan-5-years-8-percent-monthly-payment",  // Duplicate of 20000-loan-at-8-percent-for-5-years-monthly-payment
 ]);
 
-// ISR: revalidate blog pages every hour for fresh schema + canonical updates
-export const revalidate = 3600;
+// ISR: revalidate blog pages every 5 minutes for Phase 36 noindex propagation
+export const revalidate = 300;
 
 const categoryLabels: Record<BlogPost["category"], string> = {
   mortgage: "Mortgage",
