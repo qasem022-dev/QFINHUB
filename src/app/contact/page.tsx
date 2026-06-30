@@ -46,7 +46,7 @@ const contactMethods = [
 const faqs = [
   {
     q: "Is QFINHUB really free?",
-    a: "Yes, completely. All 124 calculators, the AI Specialist, and every feature on QFINHUB are 100% free — no hidden fees, no premium tiers, no credit card required.",
+    a: "Yes, completely. All 125 calculators, the AI Specialist, and every feature on QFINHUB are 100% free — no hidden fees, no premium tiers, no credit card required.",
   },
   {
     q: "Do I need an account to use the calculators?",

@@ -178,7 +178,7 @@ export default function BlogPage() {
             href="/calculators"
             className="inline-flex h-12 min-w-[180px] items-center justify-center gap-2 rounded-xl bg-primary-600 px-6 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-700 active:scale-[0.98]"
           >
-            Browse All 124 Calculators
+            Browse All 125 Calculators
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

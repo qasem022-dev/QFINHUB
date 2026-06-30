@@ -24,11 +24,12 @@ def load_log():
 
 def get_urls(queue, log, max_n=MAX_PER_DAY):
     today = time.strftime("%Y-%m-%d")
-    today_count = sum(1 for s in log["submissions"] if s.get("date","").startswith(today))
-    if today_count >= MAX_PER_DAY:
-        print(f"DAILY LIMIT: {today_count}/{MAX_PER_DAY}")
+    today_entries = [s for s in log["submissions"] if s.get("date","").startswith(today)]
+    today_count_unique = len({s["url"] for s in today_entries})
+    if today_count_unique >= max_n:
+        print(f"DAILY LIMIT: {today_count_unique}/{max_n}")
         return []
-    remaining = MAX_PER_DAY - today_count
+    remaining = max_n - today_count_unique
     submitted = {s["url"] for s in log["submissions"]}
     urls = []
     for url in queue.get("unknown_pages", []):
@@ -190,14 +191,35 @@ def submit(urls, dry_run=False):
     return {"submitted": len(results), "results": results}
 
 def save_results(results, stage=""):
+    """Append only NEW results (not already in log), dedup by url+date."""
     log = load_log()
+    existing = {(s["url"], s.get("date","")) for s in log["submissions"]}
+    new_added = 0
     for r in results:
-        log["submissions"].append(r)
-    log["total"] = len(log["submissions"])
+        k = (r["url"], r.get("date",""))
+        if k not in existing:
+            log["submissions"].append(r)
+            existing.add(k)
+            new_added += 1
+    # Dedup by url only (keep earliest)
+    seen = set()
+    deduped = []
+    for s in log["submissions"]:
+        if s["url"] not in seen:
+            deduped.append(s)
+            seen.add(s["url"])
+    log["submissions"] = deduped
+    log["total"] = len(deduped)
+    # Track daily counts
+    daily = {}
+    for s in log["submissions"]:
+        d = s.get("date","")[:10]
+        daily[d] = daily.get(d, 0) + 1
+    log["daily_counts"] = daily
     with open(LOG_FILE, 'w') as f:
         json.dump(log, f, indent=2)
     if stage:
-        print(f"  [saved {stage}]")
+        print(f"  [saved {stage}] {new_added} new, total={log['total']}")
 
 def main():
     parser = argparse.ArgumentParser()

@@ -66,7 +66,7 @@ export function generateOutreachEmail(
     ``,
     `I came across your excellent content about ${blogTopic} and think an interactive ${calc.title} widget would be a great addition for your readers.`,
     ``,
-    `I built QFINHUB (${BASE_URL}) — a free collection of 124+ financial calculators.`,
+    `I built QFINHUB (${BASE_URL}) — a free collection of 125+ financial calculators.`,
     `I'm offering you a free, embeddable ${calc.title} widget for your site:`,
     ``,
     `✨ Interactive — Your readers can calculate payments and scenarios right on your page`,

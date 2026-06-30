@@ -122,7 +122,7 @@ const organizationJsonLd = {
     availableLanguage: ["English"],
   },
   description:
-    "Free online financial calculator platform with 124+ tools for loans, mortgages, investments, retirement, taxes, and personal finance.",
+    "Free online financial calculator platform with 125+ tools for loans, mortgages, investments, retirement, taxes, and personal finance.",
 };
 
 const jsonLd = {

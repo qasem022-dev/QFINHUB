@@ -1,7 +1,7 @@
 import { CalculatorContent } from "@/types/calculator-content";
 
 /**
- * SEO-optimized educational content for all 124 calculators.
+ * SEO-optimized educational content for all 125 calculators.
  * Generated via Google Gemini API.
  */
 export const calculatorContent: Record<string, CalculatorContent> = {
