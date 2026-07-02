@@ -1,0 +1,210 @@
+{
+  "report_date": "2026-06-30",
+  "report_type": "Daily Indexing Progress Report",
+  "generated_at": "2026-07-01T01:04:46.997289Z",
+  "source_files": {
+    "fix_queue_generated": "2026-06-30",
+    "submission_log_total": 39,
+    "submission_log_today": 13,
+    "gsc_truth_freshness": "FRESH",
+    "gsc_truth_pulled_at": "2026-06-30T20:03:22Z",
+    "previous_report_generated": "2026-06-30T01:26:15Z"
+  },
+  "summary": {
+    "indexed_total": 63,
+    "inspected_total": 303,
+    "still_indexed_of_38_baseline": 34,
+    "lost_indexing_urls": [
+      "https://www.qfinhub.com/tools/investment-1k-5yr",
+      "https://www.qfinhub.com/tools/investment-100k-7yr",
+      "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "https://www.qfinhub.com/guides/how-to-use-child-care-cost"
+    ],
+    "newly_indexed_today": 3,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "https://www.qfinhub.com/calculators/inventory-turnover"
+    ],
+    "newly_indexed_note": "All three newly-indexed pages were UNKNOWN category URLs submitted earlier via GSC UI; Google confirmed them in last 24h. Sample inspected today: 21 URLs.",
+    "newly_discovered_today": 7,
+    "newly_discovered_urls": [
+      "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+      "https://www.qfinhub.com/loan-payment-table",
+      "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+      "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy",
+      "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability"
+    ],
+    "submitted_today": 13,
+    "submitted_today_first_5": [
+      {
+        "url": "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio",
+        "category": "UNKNOWN",
+        "result": "CLICKED_BUTTON",
+        "date": "2026-06-30 11:02:26"
+      },
+      {
+        "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+        "category": "UNKNOWN",
+        "result": "REQUESTED ✓",
+        "date": "2026-06-30 11:02:35"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/present-value",
+        "category": "UNKNOWN",
+        "result": "CLICKED_BUTTON",
+        "date": "2026-06-30 11:02:44"
+      },
+      {
+        "url": "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to",
+        "category": "UNKNOWN",
+        "result": "CLICKED_BUTTON",
+        "date": "2026-06-30 11:02:53"
+      },
+      {
+        "url": "https://www.qfinhub.com/calculators/1099-calculator",
+        "category": "UNKNOWN",
+        "result": "CLICKED_BUTTON",
+        "date": "2026-06-30 11:03:02"
+      }
+    ],
+    "submitted_yesterday": 26,
+    "queued_for_tomorrow": {
+      "unknown_to_google": 65,
+      "discovered_not_indexed": 133,
+      "total_remaining_queue": 198,
+      "high_priority_for_tomorrow": {
+        "recent_submissions_with_48h_cooldown": [
+          "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio",
+          "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+          "https://www.qfinhub.com/calculators/present-value",
+          "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to",
+          "https://www.qfinhub.com/calculators/1099-calculator",
+          "https://www.qfinhub.com/calculators/beta-calculator",
+          "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals",
+          "https://www.qfinhub.com/blog/stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers",
+          "https://www.qfinhub.com/calculators/paycheck-calculator",
+          "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+          "https://www.qfinhub.com/calculators/water-bill",
+          "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
+          "https://www.qfinhub.com/compare/best-budget-calculator"
+        ],
+        "newly_discovered_today": [
+          "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+          "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+          "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+          "https://www.qfinhub.com/loan-payment-table",
+          "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+          "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy",
+          "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability"
+        ],
+        "still_unknown_pages_sample": [
+          "https://www.qfinhub.com/data",
+          "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent"
+        ]
+      }
+    }
+  },
+  "inventory_snapshot": {
+    "inspected_total": 303,
+    "indexed_pass": 63,
+    "discovered_not_indexed": 133,
+    "unknown_to_google": 65,
+    "uninspected": 0,
+    "indexed_pct_of_inspected": 20.8
+  },
+  "seven_day_trend": {
+    "source": "gsc-api-truth-current.json (freshness=FRESH)",
+    "impressions_7d": 318,
+    "clicks_7d": 1,
+    "ctr_pct_7d": 0.3,
+    "avg_position_7d": 51.7,
+    "pages_with_impressions_7d": 61,
+    "query_count_7d": 93,
+    "previous_7d_impressions": 435,
+    "week_over_week_impressions_change_pct": -26.9,
+    "delta_vs_prior_report": {
+      "impressions_delta": -34,
+      "impressions_pct": -9.7,
+      "clicks_delta": 1,
+      "pages_with_impressions_delta": 3
+    },
+    "trend_note": "7-day impressions -26.9% vs prior 7-day window (435 -> 318). FIRST CLICK RECORDED in 7-day GSC API window: clicks 0 -> 1 since prior report. Indexing trend POSITIVE: 3 URLs transitioned UNKNOWN -> INDEXED in last 24h."
+  },
+  "submission_breakdown": {
+    "today_total": 13,
+    "today_by_result": {
+      "CLICKED_BUTTON": 11,
+      "REQUESTED": 2
+    },
+    "yesterday_total": 26,
+    "yesterday_by_result": {
+      "CLICKED_BUTTON": 21,
+      "REQUESTED": 5
+    }
+  },
+  "state_transitions_full": {
+    "https://www.qfinhub.com/data": {
+      "from": "UNKNOWN",
+      "to": "URL is unknown to Google"
+    },
+    "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "from": "UNKNOWN",
+      "to": "URL is unknown to Google"
+    },
+    "https://www.qfinhub.com/loan-payment-table": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/decision/how-much-house-can-i-afford": {
+      "from": "UNKNOWN",
+      "to": "Submitted and indexed"
+    },
+    "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for": {
+      "from": "URL is unknown to Google",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy": {
+      "from": "URL is unknown to Google",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability": {
+      "from": "URL is unknown to Google",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in": {
+      "from": "UNKNOWN",
+      "to": "Submitted and indexed"
+    },
+    "https://www.qfinhub.com/calculators/inventory-turnover": {
+      "from": "UNKNOWN",
+      "to": "Submitted and indexed"
+    }
+  },
+  "recrawl_activity": {
+    "last_24h": "3 URLs transitioned UNKNOWN -> Submitted and indexed (decision/how-much-house-can-i-afford, decision/what-tax-bracket-am-i-in, calculators/inventory-turnover). 4 URLs transitioned UNKNOWN -> Discovered-not-indexed (3 loan-scenarios + loan-payment-table). 3 URLs transitioned previously-unknown -> Discovered-not-indexed (banks-start-warner-bros, compare-lease-vs-buy-vs-rent-vs-buy, compare-mortgage-calc-vs-mortgage-affordability). 2 URLs transitioned UNKNOWN -> URL is unknown (data, loan-scenarios/fair-credit-loan-20000-20-percent)."
+  },
+  "headline": "63 indexed | 13 submitted today | 198 queued for tomorrow",
+  "data_source_policy": "RAW_GSC_API_ONLY",
+  "correction_factor_status": "DISABLED — not applied to official metrics per Phase 19.2 normalization",
+  "warnings": [
+    "GSC API historical undercount vs UI is ~30-50%. Numbers reported here are RAW API.",
+    "First click milestone reached in 7-day API window (prior report showed 0).",
+    "13 URLs submitted today are in 48h cooldown — recheck indexing state for these URLs tomorrow+.",
+    "Absolute impression count slightly weaker than prior week (-26.9% w-o-w). Trend is monitoring-level not alarming yet; check Qasem's last manual UI snapshot if available."
+  ]
+}

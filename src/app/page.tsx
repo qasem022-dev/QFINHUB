@@ -119,7 +119,7 @@ const quickCalcs = [
 ];
 
 const perks = [
-  { icon: Calculator, text: "125 Live Calculators", color: "text-primary-500" },
+  { icon: Calculator, text: "126 Free Calculators", color: "text-primary-500" },
   { icon: Zap, text: "Instant Results — No Wait", color: "text-amber-500" },
   { icon: BarChart3, text: "Interactive Charts on Every Tool", color: "text-blue-500" },
   { icon: Download, text: "Export as PDF or Image", color: "text-emerald-500" },
@@ -160,7 +160,7 @@ const useCases = [
 
 const features = [
   {
-    title: "125 Calculators — All Free",
+    title: "126 Calculators — All Free",
     desc: "Reliable calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance. Every single one is 100% free.",
     icon: Calculator,
     color: "from-blue-500 to-blue-600",
@@ -198,7 +198,7 @@ const features = [
 ];
 
 const stats = [
-  { value: "125", label: "Live Calculators", icon: Calculator },
+  { value: "126", label: "Free Calculators", icon: Calculator },
   { value: "8", label: "Categories", icon: BarChart3 },
   { value: "Instant", label: "No Account Required", icon: Zap },
   { value: "100%", label: "Free — Always", icon: Shield },
@@ -225,7 +225,7 @@ export default function Home() {
               <input
                 name="q"
                 type="search"
-                placeholder='Search all 125 calculators — "mortgage", "retirement", "compound interest"...'
+                placeholder='Search all 126 calculators — "mortgage", "retirement", "compound interest"...'
                 className="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm text-gray-900 placeholder:text-gray-400 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-400/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-primary-500"
               />
             </div>
@@ -247,7 +247,7 @@ export default function Home() {
             {/* Badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-900/30 dark:text-primary-300">
               <span className="h-2 w-2 rounded-full bg-primary-500" />
-              <strong>125 Free Calculators</strong> — Instant, Accurate, No Sign-Up
+              <strong>126 Free Calculators</strong> — Instant, Accurate, No Sign-Up
             </div>
 
             {/* Headline with calculator emoji feel */}
@@ -270,7 +270,7 @@ export default function Home() {
               <Button asChild size="lg" className="min-h-[56px] w-full sm:w-auto rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] touch-manipulation">
                 <Link href="/calculators" prefetch={true}>
                   <Calculator className="mr-2 h-5 w-5" />
-                  Browse All 125 Calculators
+                  Browse All 126 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -290,7 +290,7 @@ export default function Home() {
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700 shadow-sm dark:bg-purple-900/30 dark:text-purple-400">
                 <CheckCircle2 className="h-3.5 w-3.5" />
-                125 free tools, no account needed
+                126 free tools, no account needed
               </span>
             </div>
 
@@ -455,7 +455,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
               <Link href="/calculators" prefetch={true}>
-                View All 125 Calculators
+                View All 126 Calculators
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -544,7 +544,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
               <Link href="/calculators" prefetch={true}>
-                View All 125 Calculators <ArrowRight className="ml-2 h-4 w-4" />
+                View All 126 Calculators <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -604,7 +604,7 @@ export default function Home() {
             <Calculator className="h-8 w-8 text-accent-400" />
           </div>
           <h2 className="mb-4 text-3xl font-bold text-white">
-            Start Using 125 Free Calculators
+            Start Using 126 Free Calculators
           </h2>
           <p className="mb-3 text-lg text-gray-300">
             No sign-up. No credit card. No limits. Just fast, accurate

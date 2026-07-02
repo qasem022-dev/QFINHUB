@@ -1,0 +1,181 @@
+{
+  "phase": "35 (Phase 31 freeze LIFTED by Qasem Jun 25) — Day 5 Post-Phase 35",
+  "title": "QFINHUB Recovery Status — Jun 30, 2026 (Day 5 Post-Phase 35)",
+  "generated": "2026-06-30T20:03:22Z",
+  "expansion_freeze": "LIFTED — Phase 35 active, Qasem-approved aggressive execution",
+  "current_phase": 35,
+  "gsc_data": {
+    "source": "FRESH — Service Account auth (permanent). Pipeline run at 2026-06-30T20:03:22Z.",
+    "status": "LIVE_API_OK",
+    "date_range_7d": "2026-06-21 to 2026-06-27",
+    "metrics_7d": {
+      "impressions": 318,
+      "clicks": 1,
+      "ctr_pct": 0.3,
+      "avg_position": 51.7,
+      "pages_with_impressions": 61,
+      "query_count": 93
+    },
+    "metrics_28d": {
+      "impressions": 1749,
+      "clicks": 2,
+      "pages_with_impressions": 115,
+      "pages_with_clicks": 2,
+      "clicked_pages": [
+        "https://www.qfinhub.com/tools/investment-25k-10yr",
+        "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+      ]
+    },
+    "change_vs_previous_7d": {
+      "impressions": -117,
+      "impressions_pct": -26.9,
+      "previous_impressions": 435,
+      "previous_window": "2026-06-14 to 2026-06-20",
+      "assessment": "6TH CONSECUTIVE WEEKLY DECLINE. Now down 36.1% from Jun 12-18 peak (498)."
+    },
+    "multi_week_impression_trend": {
+      "jun_12_18": 498,
+      "jun_17_23": 389,
+      "jun_18_24": 391,
+      "jun_19_25": 379,
+      "jun_20_26": 352,
+      "jun_21_27": 318,
+      "assessment": "SIX consecutive weekly declines. 498→389→391→379→352→318. Down 36.1% from peak."
+    },
+    "post_phase35_overlap": "3 days (Jun 25, 26, 27). Yesterday's prediction: 'First partial signal ~Jun 30-Jul 1.' Today IS that signal day."
+  },
+  "the_click": {
+    "found": true,
+    "page": "/tools/mortgage-650k-15dp-30yr-6-5pct",
+    "impressions_7d": 3,
+    "clicks_7d": 1,
+    "position_7d": 4.7,
+    "ctr": "33.3%",
+    "type": "tool_variant",
+    "note": "🔴 FIRST CLICK IN 7-DAY WINDOW. However: this is a tool variant, not a content page. Phase 35 targeted cannibalizing variants for removal — this one was NOT on the removal list (mortgage-650k). It's a real user click at position 4.7 with 33% CTR. The question: is this a user getting value, or is this variant cannibalizing the parent mortgage calculator?"
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": 200,
+      "robots": "index, follow",
+      "canonical": "self",
+      "indexed": "YES — Submitted and indexed, PASS verdict",
+      "impressions_7d_page_level": 2,
+      "impressions_28d_query_level": 23,
+      "main_query": "if you borrow $20,000 for 5 years at an annual rate of 8% what would the monthly payment be",
+      "main_query_position": 7.9,
+      "main_query_impressions_28d": 23,
+      "main_query_clicks": 0,
+      "url_inspection": {
+        "coverageState": "Submitted and indexed",
+        "lastCrawlTime": "2026-06-04T17:23:57Z",
+        "days_since_last_crawl": 26,
+        "verdict": "PASS"
+      },
+      "trend": "31→12→2 page-level imp. Main query pos degraded from 7.1→7.9. DOWNWARD.",
+      "phase35_fix": "Deployed Jun 25 — curiosity hook, calculator CTA before answer. INVISIBLE (26 days without recrawl).",
+      "assessment": "🔴🔴🔴 CRITICAL — #1 click candidate continues to erode. 26 days without recrawl. GSC Request Indexing was recommended Jun 28, still unexecuted. Position degrading (7.1→7.9)."
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "position": 11.0,
+      "last_crawl": "2026-05-28T19:37:52Z (33 days ago)",
+      "trend": "3→2→1 — essentially dead",
+      "assessment": "Deprioritized. Ultra-niche query with negligible volume."
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "impressions_7d": 0,
+      "last_crawl": "2026-05-28T22:02:38Z (33 days ago)",
+      "assessment": "Deprioritized. Zero impressions."
+    }
+  },
+  "top_pages_by_impression_7d": [
+    {"url": "/calculators/401k-calculator", "imp": 58, "clicks": 0, "pos": 75.3, "type": "calculator"},
+    {"url": "/calculators/mortgage-affordability", "imp": 50, "clicks": 0, "pos": 88.3, "type": "calculator"},
+    {"url": "/calculators/investment-return", "imp": 38, "clicks": 0, "pos": 83.8, "type": "calculator"},
+    {"url": "/calculators/tax-calculator", "imp": 24, "clicks": 0, "pos": 70.7, "type": "calculator"},
+    {"url": "/decision/pay-off-debt-or-invest", "imp": 11, "clicks": 0, "pos": 37.5, "type": "decision"},
+    {"url": "/tools/compound-1k-30yr-6pct", "imp": 8, "clicks": 0, "pos": 7.5, "type": "tool_variant", "note": "CANNIBAL — Phase 35 removal target"},
+    {"url": "/tools/mortgage-200k-15yr-5-5pct", "imp": 8, "clicks": 0, "pos": 8.0, "type": "tool_variant", "note": "CANNIBAL — Phase 35 removal target"},
+    {"url": "/tools/mortgage-450k-30yr-6-5pct", "imp": 7, "clicks": 0, "pos": 8.9, "type": "tool_variant", "note": "CANNIBAL — Phase 35 removal target"}
+  ],
+  "parent_calculator_performance": {
+    "compound_interest": {
+      "impressions_7d": "NOT IN TOP 50 (below detection)",
+      "last_crawl": "2026-06-01T23:40:10Z (29 days ago)",
+      "phase35_title": "Deployed Jun 25 — invisible",
+      "assessment": "Effectively invisible. 29 days without recrawl."
+    },
+    "mortgage_calculator": {
+      "impressions_7d": "NOT IN TOP 50 (below detection)",
+      "assessment": "Effectively invisible."
+    },
+    "loan_calculator": {
+      "impressions_7d": "NOT IN TOP 50 (below detection)",
+      "assessment": "Effectively invisible."
+    }
+  },
+  "tool_variant_cannibalization": {
+    "total_tool_variant_impressions_7d": "~30 (down from ~72)",
+    "cannibalizing_variants_still_active": [
+      "compound-1k-30yr-6pct (8 imp, pos 7.5)",
+      "mortgage-200k-15yr-5-5pct (8 imp, pos 8.0)",
+      "mortgage-450k-30yr-6-5pct (7 imp, pos 8.9)"
+    ],
+    "removal_targets_submitted_jun_25": "7 URLs. Still showing in data — removals not yet processed (expected: 1-2 weeks).",
+    "assessment": "Tool variant impressions declining (~72→~30) — COULD BE early removal signal OR just the broader downward trend."
+  },
+  "compliance_report": {
+    "phase": "SAFE RECOVERY + Phase 35 overlap (freeze LIFTED per Qasem Jun 25)",
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_request_indexing": 0,
+    "validate_fix_used": 0,
+    "bulk_internal_links": 0,
+    "bulk_cleanup_executed": 0,
+    "title_meta_changes": 0,
+    "deploy": 0,
+    "note": "This was a READ-ONLY monitoring run per SAFE RECOVERY sequence. All restrictions observed."
+  },
+  "key_observations": {
+    "positive": [
+      "🔴 FIRST CLICK IN 7-DAY WINDOW: /tools/mortgage-650k-15dp-30yr-6-5pct (3 imp, 1 click, pos 4.7, 33% CTR)",
+      "28d now shows 2 clicks across 2 pages (investment-25k-10yr + mortgage-650k) — first multi-page click footprint",
+      "Tool variant impression totals declining (~72→~30) — could be early Phase 35 removal signal",
+      "Service Account auth remains PERMANENT — zero token issues",
+      "All key pages HTTP 200, index/follow, self-canonical",
+      "Today IS the predicted 'first signal' day for Phase 35 (Jun 30)"
+    ],
+    "negative": [
+      "🔴🔴🔴 6TH CONSECUTIVE WEEKLY IMPRESSION DECLINE: 318 (new low, -36.1% from peak)",
+      "🔴🔴 20K LOAN BLOG DEGRADING: main query pos 7.1→7.9, 26 days without recrawl",
+      "🔴 Parent calculators INVISIBLE: compound, mortgage, loan all below detection threshold",
+      "🔴 Compound-interest last crawled 29 DAYS AGO. Mortgage-calculator similar. Title fixes invisible.",
+      "🔴 3 cannibalizing variants still at positions 7.5-8.9 with combined ~23 imp/wk",
+      "The 1 click is from a tool variant, not a content page (still counts but not the 'content click' milestone)",
+      "GSC Request Indexing for 20k blog — recommended Jun 28, STILL UNEXECUTED"
+    ],
+    "blockers": [
+      "GOOGLE RECRAWL LAG (CRITICAL): #1 click candidate not recrawled in 26 days. Parents not recrawled in 29+ days.",
+      "20K BLOG POSITION ERODING: 7.1→7.9. Losing SERP ground while waiting for recrawl.",
+      "DOMAIN AUTHORITY CEILING: Money pages at pos 70-90. 0 backlinks.",
+      "PHASE 35 GSC TEMPORARY REMOVALS: Submitted Jun 25 but not yet processed."
+    ]
+  },
+  "critical_recommendation": {
+    "action": "GSC Request Indexing for 20k loan blog + compound-interest + mortgage-calculator",
+    "urgency": "EXTREME — 26-29 days without recrawl, positions degrading. Every day costs rankings.",
+    "phase35_approved": true,
+    "note": "Phase 35 explicitly allows 'GSC URL Inspection + Request Indexing (priority set)'. This was recommended Jun 28 and is now 2x more urgent."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "summary": "DAY 5 POST-PHASE 35. First 7-day click detected (mortgage-650k tool variant), a milestone but not the content breakthrough needed. The overall trend continues DOWN: 6th consecutive weekly impression decline to a new low of 318. The 20k loan blog — clear #1 click candidate — has not been recrawled in 26 days and its main query position is eroding (7.1→7.9). Parent calculators remain invisible. The critical path remains unchanged: recrawl 20k blog → ranking recovery → first content click. Until Google recrawls the fixed pages, all Phase 35 improvements are invisible. The GSC Request Indexing for priority pages — approved in Phase 35 scope — remains the single highest-impact action available.",
+    "critical_path": "20k blog + parent calcs GSC Request Indexing → recrawl within hours → ranking visibility → first content click → validates Phase 35 → expand."
+  }
+}

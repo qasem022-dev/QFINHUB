@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-06-29T19:06:09.126094+00:00",
-  "date": "2026-06-29",
-  "phase": "Phase 36",
-  "run_type": "autonomous_daily",
-  "trigger": "cron_2pm",
-  "summary": {
-    "pins_attempted": 5,
-    "pins_posted": 5,
-    "pins_failed": 0,
-    "method": "cloakbrowser_internal_api",
-    "success_rate": "100%"
-  },
+  "report_date": "2026-07-01",
+  "report_timestamp": "2026-07-01T14:05:44.183675",
+  "phase": "Phase 36 Autonomous",
+  "total_pins_this_run": 5,
+  "pins_posted_via_api": 2,
+  "pins_in_csv": 3,
+  "csv_path": ".pinterest-data/csv-imports/pinterest-daily-2026-07-01.csv",
   "pins": [
     {
       "slug": "retirement-compare",
-      "title": "FIRE at 40  vs  Traditional at 65",
-      "board": "Retirement Planning",
       "category": "retirement",
-      "image": "pin-retirement-compare-730043.png",
-      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNDE=\",\"domain\":\"qfinhub.com\",\"created_at\":\"Mon, ",
-      "status": "posted"
+      "board": "Retirement Planning",
+      "title": "FIRE at 40 vs Traditional at 65 \u2014 Which Saves More?",
+      "destination": "/calculators/financial-independence",
+      "method": "cloakbrowser_api",
+      "status": "POSTED",
+      "pin_id": "1086071266412819450"
     },
     {
-      "slug": "mortgages-did-you-know",
-      "title": "Did You Know? You pay 56% in interest over 30 years",
-      "board": "Mortgage Calculators",
+      "slug": "mortgages-did_you_know",
       "category": "mortgages",
-      "image": "pin-mortgages-did_you_know-1af697.png",
-      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNDY=\",\"is_repin\":false,\"type\":\"pin\",\"rich_summar",
-      "status": "posted"
+      "board": "Mortgage Calculators",
+      "title": "Did You Know? A 1%% Rate Drop Could Save You $200/Month",
+      "destination": "/calculators/mortgage-calculator",
+      "method": "cloakbrowser_api",
+      "status": "POSTED",
+      "pin_id": "1086071266412819452"
     },
     {
-      "slug": "debt-did-you-know",
-      "title": "Did You Know? Adding $200/month saves $1,800 in interest",
-      "board": "Debt Payoff Tools",
-      "category": "debt",
-      "image": "pin-debt-did_you_know-e1820e.png",
-      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNTM=\",\"is_quick_promotable\":false,\"domain\":\"qfin",
-      "status": "posted"
-    },
-    {
-      "slug": "loans-did-you-know",
-      "title": "Did You Know? Total interest on 5yr $30K loan at 8%: $6,500",
-      "board": "Loan Calculators",
-      "category": "loans",
-      "image": "pin-loans-did_you_know-e3323f.png",
-      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNjA=\",\"is_quick_promotable_by_pinner\":false,\"typ",
-      "status": "posted"
+      "slug": "investing-before_decide",
+      "category": "investing",
+      "board": "Investment Calculators",
+      "title": "Before You Open a Brokerage Account, Check This First",
+      "destination": "/calculators/investment-return",
+      "method": "csv_batch",
+      "status": "CSV_GENERATED"
     },
     {
       "slug": "taxes-compare",
-      "title": "Standard Deduction  vs  Itemized Deductions",
-      "board": "Tax Calculators",
       "category": "taxes",
-      "image": "pin-taxes-compare-3e1bb9.png",
-      "node_id": "{\"resource_response\":{\"status\":\"success\",\"code\":0,\"message\":\"OK\",\"endpoint_name\":\"v3_create_pin_handler\",\"data\":{\"node_id\":\"UGluOjEwODYwNzEyNjY0MTI2NzQwNjc=\",\"link\":\"https://www.qfinhub.com/calculator",
-      "status": "posted"
+      "board": "Tax Calculators",
+      "title": "Tax Bracket vs Effective Rate \u2014 What You Actually Pay",
+      "destination": "/calculators/tax-calculator",
+      "method": "csv_batch",
+      "status": "CSV_GENERATED"
+    },
+    {
+      "slug": "debt-did_you_know",
+      "category": "debt",
+      "board": "Debt Payoff Tools",
+      "title": "Did You Know? The Avalanche Method Saves $2,347 More Interest",
+      "destination": "/calculators/credit-card-payoff",
+      "method": "csv_batch",
+      "status": "CSV_GENERATED"
     }
   ],
-  "categories_covered": [
-    "debt",
-    "loans",
-    "mortgages",
-    "retirement",
-    "taxes"
+  "boards_used": [
+    "Retirement Planning",
+    "Mortgage Calculators",
+    "Investment Calculators",
+    "Tax Calculators",
+    "Debt Payoff Tools"
   ],
-  "csv_backup": ".pinterest-data/csv-imports/pinterest-daily-2026-06-29.csv",
-  "cloakbrowser": {
-    "profile": "~/.hermes/cloak-profiles/pinterest-poster",
-    "authenticated": true,
-    "version": "0.4.5"
-  }
+  "categories_covered": [
+    "retirement",
+    "mortgages",
+    "investing",
+    "taxes",
+    "debt"
+  ],
+  "image_library_size": 185,
+  "status": "SUCCESS"
 }

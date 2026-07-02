@@ -37,12 +37,7 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
       changeFrequency: "daily",
       priority: 0.9,
     },
-    {
-      url: `${BASE_URL}/ai-specialist`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+    // Phase 38: /ai-specialist removed from sitemap — now noindex (client-side tool)
     {
       url: `${BASE_URL}/privacy`,
       lastModified: new Date(),

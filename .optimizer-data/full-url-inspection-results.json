@@ -643,10 +643,10 @@
     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
     "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
     "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
+    "last_crawl_time": null,
     "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/calculators/pmi-calculator": {
     "coverage_state": "Duplicate, Google chose different canonical than user",
@@ -709,10 +709,10 @@
     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
     "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
     "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
+    "last_crawl_time": null,
     "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/calculators/bond-yield": {
     "coverage_state": "Discovered - currently not indexed",
@@ -852,10 +852,10 @@
     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
     "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
     "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
+    "last_crawl_time": null,
     "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/calculators/npv-calculator": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1151,12 +1151,15 @@
     "success": true
   },
   "https://www.qfinhub.com/calculators/inventory-turnover": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "indexing_state": "INDEXING_ALLOWED",
+    "robots_txt_state": "ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-06-29T15:35:34Z",
+    "crawled_as": "MOBILE",
+    "google_canonical": "https://www.qfinhub.com/calculators/inventory-turnover",
+    "user_canonical": "https://www.qfinhub.com/calculators/inventory-turnover"
   },
   "https://www.qfinhub.com/calculators/customer-acquisition-cost": {
     "verdict": "NEUTRAL",
@@ -1300,7 +1303,13 @@
   "https://www.qfinhub.com/calculators/date-difference": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/calculators/age-calculator": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1405,7 +1414,13 @@
   "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1610,7 +1625,13 @@
   "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": null,
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1668,9 +1689,15 @@
     "last_crawl_time": "2026-06-04T13:56:15"
   },
   "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/blog/fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1710,7 +1737,13 @@
   "https://www.qfinhub.com/blog/fed-s-new-payment-account-proposal-what-it-means-for-your-mortgage-and-savings": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/blog/fed-minutes-april-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving": {
     "coverage_state": "Submitted and indexed",
@@ -2996,7 +3029,15 @@
     "coverage_state": "Discovered - currently not indexed"
   },
   "https://www.qfinhub.com/calculators/loan/nashville-tn": {
-    "coverage_state": "Submitted and indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "indexing_state": "INDEXING_ALLOWED",
+    "robots_txt_state": "ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-05-19T18:53:50Z",
+    "crawled_as": "MOBILE",
+    "google_canonical": "https://www.qfinhub.com/calculators/loan/nashville-tn",
+    "user_canonical": "https://www.qfinhub.com/calculators/loan/nashville-tn"
   },
   "https://www.qfinhub.com/calculators/loan/reno-nv": {
     "coverage_state": "Submitted and indexed"
@@ -3008,7 +3049,15 @@
     "coverage_state": "Discovered - currently not indexed"
   },
   "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed": {
     "coverage_state": "URL is unknown to Google"
@@ -3044,7 +3093,15 @@
     "coverage_state": "Discovered - currently not indexed"
   },
   "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate": {
-    "coverage_state": "Submitted and indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "indexing_state": "INDEXING_ALLOWED",
+    "robots_txt_state": "ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-06-02T15:16:51Z",
+    "crawled_as": "MOBILE",
+    "google_canonical": "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate",
+    "user_canonical": "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate"
   },
   "https://www.qfinhub.com/compare/compare-tax-bracket-vs-effective-tax-rate": {
     "coverage_state": "Submitted and indexed"
@@ -3059,7 +3116,15 @@
     "coverage_state": "URL is unknown to Google"
   },
   "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   },
   "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal": {
     "coverage_state": "URL is unknown to Google"
@@ -3413,14 +3478,15 @@
     "success": true
   },
   "https://www.qfinhub.com/decision/how-much-house-can-i-afford": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:02:38Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
-    "userCanonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "indexing_state": "INDEXING_ALLOWED",
+    "robots_txt_state": "ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-05-28T22:02:38Z",
+    "crawled_as": "MOBILE",
+    "google_canonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+    "user_canonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford"
   },
   "https://www.qfinhub.com/decision/pay-off-debt-or-invest": {
     "verdict": "PASS",
@@ -3493,12 +3559,15 @@
     "success": true
   },
   "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:15:42Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
-    "success": true
+    "indexing_state": "INDEXING_ALLOWED",
+    "robots_txt_state": "ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-05-28T22:15:42Z",
+    "crawled_as": "MOBILE",
+    "google_canonical": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+    "user_canonical": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in"
   },
   "https://www.qfinhub.com/guides/how-to-use-1099-calculator": {
     "verdict": "PASS",
@@ -3691,5 +3760,71 @@
     "lastCrawlTime": "",
     "googleCanonical": "",
     "success": true
+  },
+  "https://www.qfinhub.com/data": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": null,
+    "google_canonical": null,
+    "user_canonical": null
+  },
+  "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
+  },
+  "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
+  },
+  "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
+  },
+  "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": null,
+    "google_canonical": null,
+    "user_canonical": null
+  },
+  "https://www.qfinhub.com/loan-payment-table": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "last_crawl_time": null,
+    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+    "google_canonical": null,
+    "user_canonical": null
   }
 }

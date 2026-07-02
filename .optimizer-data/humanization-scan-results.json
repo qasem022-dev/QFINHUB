@@ -1,171 +1,16 @@
 {
   "generated": "2026-06-30",
-  "total_with_patterns": 86,
+  "total_with_patterns": 74,
   "by_priority": {
-    "P0_UNKNOWN": 6,
-    "P1_DISCOVERED": 4,
-    "P2_OTHER": 76
+    "P0_UNKNOWN": 13,
+    "P1_DISCOVERED": 48,
+    "P2_OTHER": 13
   },
   "queue": [
     {
-      "slug": "dcf-analysis",
-      "url": "https://www.qfinhub.com/calculators/dcf-analysis",
-      "priority": "P0_UNKNOWN",
-      "ai_tell_count": 4,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term",
-            "long-term"
-          ]
-        },
-        "example": {
-          "copula_avoidance": [
-            "represent a"
-          ]
-        },
-        "keyTakeaways[3]": {
-          "hyphenated_pairs": [
-            "decision-making"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "lifetime-value",
-      "url": "https://www.qfinhub.com/calculators/lifetime-value",
-      "priority": "P0_UNKNOWN",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term",
-            "long-term"
-          ]
-        },
-        "keyTakeaways[0]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "car-affordability",
-      "url": "https://www.qfinhub.com/calculators/car-affordability",
-      "priority": "P0_UNKNOWN",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "child-care-cost",
-      "url": "https://www.qfinhub.com/calculators/child-care-cost",
-      "priority": "P0_UNKNOWN",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "credit-card-payoff",
-      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
-      "priority": "P0_UNKNOWN",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "operating-margin",
-      "url": "https://www.qfinhub.com/calculators/operating-margin",
-      "priority": "P0_UNKNOWN",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "data-driven"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "net-profit-margin",
-      "url": "https://www.qfinhub.com/calculators/net-profit-margin",
-      "priority": "P1_DISCOVERED",
-      "ai_tell_count": 3,
-      "patterns": {
-        "explanation": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ]
-        },
-        "tips[2]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "cash-flow",
-      "url": "https://www.qfinhub.com/calculators/cash-flow",
-      "priority": "P1_DISCOVERED",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "moving-cost",
-      "url": "https://www.qfinhub.com/calculators/moving-cost",
-      "priority": "P1_DISCOVERED",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "ai_vocab": [
-            "Additionally"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "wedding-budget",
-      "url": "https://www.qfinhub.com/calculators/wedding-budget",
-      "priority": "P1_DISCOVERED",
-      "ai_tell_count": 1,
-      "patterns": {
-        "definition": {
-          "ai_vocab": [
-            "align with"
-          ]
-        }
-      }
-    },
-    {
       "slug": "capital-gains-tax",
       "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
-      "priority": "P2_OTHER",
+      "priority": "P0_UNKNOWN",
       "ai_tell_count": 6,
       "patterns": {
         "realWorldUse": {
@@ -201,9 +46,200 @@
       }
     },
     {
+      "slug": "student-loan",
+      "url": "https://www.qfinhub.com/calculators/student-loan",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 5,
+      "patterns": {
+        "realWorldUse": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "ai_vocab": [
+            "Furthermore"
+          ],
+          "copula_avoidance": [
+            "serves as"
+          ],
+          "hyphenated_pairs": [
+            "decision-making",
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "currency-converter",
+      "url": "https://www.qfinhub.com/calculators/currency-converter",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 4,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "real-time"
+          ]
+        },
+        "keyFactors[0]": {
+          "hyphenated_pairs": [
+            "Real-time"
+          ]
+        },
+        "keyTakeaways[0]": {
+          "hyphenated_pairs": [
+            "real-time",
+            "real-time"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "position-sizing",
+      "url": "https://www.qfinhub.com/calculators/position-sizing",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "decision-making",
+            "long-term"
+          ]
+        },
+        "keyTakeaways[3]": {
+          "hyphenated_pairs": [
+            "decision-making"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "inflation-calculator",
+      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 2,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "tips[1]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "salary-calculator",
+      "url": "https://www.qfinhub.com/calculators/salary-calculator",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 2,
+      "patterns": {
+        "realWorldUse": {
+          "copula_avoidance": [
+            "offers a"
+          ],
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "beta-calculator",
+      "url": "https://www.qfinhub.com/calculators/beta-calculator",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "fha-loan",
+      "url": "https://www.qfinhub.com/calculators/fha-loan",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "fica-calculator",
+      "url": "https://www.qfinhub.com/calculators/fica-calculator",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "tips[1]": {
+          "ai_vocab": [
+            "align with"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "present-value",
+      "url": "https://www.qfinhub.com/calculators/present-value",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "ai_vocab": [
+            "align with"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "property-tax",
+      "url": "https://www.qfinhub.com/calculators/property-tax",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "social-security",
+      "url": "https://www.qfinhub.com/calculators/social-security",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "water-bill",
+      "url": "https://www.qfinhub.com/calculators/water-bill",
+      "priority": "P0_UNKNOWN",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "ai_vocab": [
+            "Additionally"
+          ]
+        }
+      }
+    },
+    {
       "slug": "irr-calculator",
       "url": "https://www.qfinhub.com/calculators/irr-calculator",
-      "priority": "P2_OTHER",
+      "priority": "P1_DISCOVERED",
       "ai_tell_count": 5,
       "patterns": {
         "realWorldUse": {
@@ -228,7 +264,7 @@
     {
       "slug": "portfolio-allocator",
       "url": "https://www.qfinhub.com/calculators/portfolio-allocator",
-      "priority": "P2_OTHER",
+      "priority": "P1_DISCOVERED",
       "ai_tell_count": 5,
       "patterns": {
         "explanation": {
@@ -259,56 +295,9 @@
       }
     },
     {
-      "slug": "student-loan",
-      "url": "https://www.qfinhub.com/calculators/student-loan",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 5,
-      "patterns": {
-        "realWorldUse": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "ai_vocab": [
-            "Furthermore"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ],
-          "hyphenated_pairs": [
-            "decision-making",
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "currency-converter",
-      "url": "https://www.qfinhub.com/calculators/currency-converter",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 4,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "real-time"
-          ]
-        },
-        "keyFactors[0]": {
-          "hyphenated_pairs": [
-            "Real-time"
-          ]
-        },
-        "keyTakeaways[0]": {
-          "hyphenated_pairs": [
-            "real-time",
-            "real-time"
-          ]
-        }
-      }
-    },
-    {
       "slug": "gas-mileage",
       "url": "https://www.qfinhub.com/calculators/gas-mileage",
-      "priority": "P2_OTHER",
+      "priority": "P1_DISCOVERED",
       "ai_tell_count": 4,
       "patterns": {
         "realWorldUse": {
@@ -330,7 +319,7 @@
     {
       "slug": "home-equity",
       "url": "https://www.qfinhub.com/calculators/home-equity",
-      "priority": "P2_OTHER",
+      "priority": "P1_DISCOVERED",
       "ai_tell_count": 4,
       "patterns": {
         "realWorldUse": {
@@ -348,61 +337,9 @@
       }
     },
     {
-      "slug": "lease-vs-buy",
-      "url": "https://www.qfinhub.com/calculators/lease-vs-buy",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 4,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "data-driven"
-          ]
-        },
-        "formulaDescription": {
-          "em_dash": [
-            "\u2014including initial payments and recurring costs\u2014"
-          ]
-        },
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "tips[2]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "net-worth",
-      "url": "https://www.qfinhub.com/calculators/net-worth",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 4,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "realWorldUse": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
       "slug": "phone-plan-comparison",
       "url": "https://www.qfinhub.com/calculators/phone-plan-comparison",
-      "priority": "P2_OTHER",
+      "priority": "P1_DISCOVERED",
       "ai_tell_count": 4,
       "patterns": {
         "explanation": {
@@ -426,7 +363,7 @@
     {
       "slug": "risk-reward",
       "url": "https://www.qfinhub.com/calculators/risk-reward",
-      "priority": "P2_OTHER",
+      "priority": "P1_DISCOVERED",
       "ai_tell_count": 4,
       "patterns": {
         "explanation": {
@@ -447,6 +384,711 @@
         "keyTakeaways[0]": {
           "passive_voice": [
             "are calculated by"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "amortization-schedule",
+      "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term",
+            "long-term"
+          ]
+        },
+        "tips[2]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "bmi-calculator",
+      "url": "https://www.qfinhub.com/calculators/bmi-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "ai_vocab": [
+            "Furthermore"
+          ],
+          "copula_avoidance": [
+            "serves as"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "date-difference",
+      "url": "https://www.qfinhub.com/calculators/date-difference",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "ai_vocab": [
+            "Additionally"
+          ],
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "tips[0]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "debt-snowball",
+      "url": "https://www.qfinhub.com/calculators/debt-snowball",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "explanation": {
+          "generic_conclusion": [
+            "journey toward"
+          ]
+        },
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "tips[1]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "dividend-calculator",
+      "url": "https://www.qfinhub.com/calculators/dividend-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "tips[3]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "keyTakeaways[2]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "gross-margin",
+      "url": "https://www.qfinhub.com/calculators/gross-margin",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "explanation": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "copula_avoidance": [
+            "serves as"
+          ]
+        },
+        "realWorldUse": {
+          "ai_vocab": [
+            "Furthermore"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "loan-comparison",
+      "url": "https://www.qfinhub.com/calculators/loan-comparison",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "copula_avoidance": [
+            "offers a"
+          ],
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "keyTakeaways[3]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "mortgage-payoff",
+      "url": "https://www.qfinhub.com/calculators/mortgage-payoff",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "example": {
+          "ai_vocab": [
+            "Furthermore"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "payback-period",
+      "url": "https://www.qfinhub.com/calculators/payback-period",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "copula_avoidance": [
+            "serves as"
+          ],
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "perpetuity-calculator",
+      "url": "https://www.qfinhub.com/calculators/perpetuity-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "copula_avoidance": [
+            "serves as"
+          ],
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "retirement-expenses",
+      "url": "https://www.qfinhub.com/calculators/retirement-expenses",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "example": {
+          "significance_inflation": [
+            "highlights the importance"
+          ],
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "tips[1]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "time-value-of-money",
+      "url": "https://www.qfinhub.com/calculators/time-value-of-money",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 3,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term",
+            "long-term"
+          ]
+        },
+        "tips[1]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "asset-correlation",
+      "url": "https://www.qfinhub.com/calculators/asset-correlation",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "example": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "tips[0]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "basic-calculator",
+      "url": "https://www.qfinhub.com/calculators/basic-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "explanation": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "copula_avoidance": [
+            "serves as"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "calorie-calculator",
+      "url": "https://www.qfinhub.com/calculators/calorie-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "data-driven"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "dollar-cost-average",
+      "url": "https://www.qfinhub.com/calculators/dollar-cost-average",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "keyTakeaways[3]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "future-value",
+      "url": "https://www.qfinhub.com/calculators/future-value",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "home-renovation",
+      "url": "https://www.qfinhub.com/calculators/home-renovation",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "explanation": {
+          "ai_vocab": [
+            "align with"
+          ]
+        },
+        "realWorldUse": {
+          "ai_vocab": [
+            "Furthermore"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "personal-loan",
+      "url": "https://www.qfinhub.com/calculators/personal-loan",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "explanation": {
+          "ai_vocab": [
+            "align with"
+          ]
+        },
+        "tips[0]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "roth-ira",
+      "url": "https://www.qfinhub.com/calculators/roth-ira",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "example": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "va-loan",
+      "url": "https://www.qfinhub.com/calculators/va-loan",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 2,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        },
+        "keyTakeaways[3]": {
+          "passive_voice": [
+            "are issued by"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "1099-calculator",
+      "url": "https://www.qfinhub.com/calculators/1099-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "keyTakeaways[2]": {
+          "passive_voice": [
+            "are calculated by"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "arm-calculator",
+      "url": "https://www.qfinhub.com/calculators/arm-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "auto-loan",
+      "url": "https://www.qfinhub.com/calculators/auto-loan",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "bond-price",
+      "url": "https://www.qfinhub.com/calculators/bond-price",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "definition": {
+          "ing_phrases": [
+            "reflecting the"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "bond-yield",
+      "url": "https://www.qfinhub.com/calculators/bond-yield",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "data-driven"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "discount-calculator",
+      "url": "https://www.qfinhub.com/calculators/discount-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "example": {
+          "ai_vocab": [
+            "Consequently"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "estate-tax",
+      "url": "https://www.qfinhub.com/calculators/estate-tax",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "ai_vocab": [
+            "testament"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "financial-ratios",
+      "url": "https://www.qfinhub.com/calculators/financial-ratios",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "data-driven"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "fraction-calculator",
+      "url": "https://www.qfinhub.com/calculators/fraction-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "ai_vocab": [
+            "Additionally"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "monte-carlo-simulation",
+      "url": "https://www.qfinhub.com/calculators/monte-carlo-simulation",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "example": {
+          "excessive_hedging": [
+            "could potentially"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "option-profit",
+      "url": "https://www.qfinhub.com/calculators/option-profit",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "ai_vocab": [
+            "align with"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "pension-calculator",
+      "url": "https://www.qfinhub.com/calculators/pension-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "refinance-calculator",
+      "url": "https://www.qfinhub.com/calculators/refinance-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "retirement-income",
+      "url": "https://www.qfinhub.com/calculators/retirement-income",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "tips[0]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "roi-calculator",
+      "url": "https://www.qfinhub.com/calculators/roi-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "data-driven"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "sales-tax",
+      "url": "https://www.qfinhub.com/calculators/sales-tax",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "example": {
+          "ai_vocab": [
+            "Consequently"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "savings-goal",
+      "url": "https://www.qfinhub.com/calculators/savings-goal",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "sharpe-ratio",
+      "url": "https://www.qfinhub.com/calculators/sharpe-ratio",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "decision-making"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "stock-return",
+      "url": "https://www.qfinhub.com/calculators/stock-return",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "traditional-ira",
+      "url": "https://www.qfinhub.com/calculators/traditional-ira",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "explanation": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "fire-calculator",
+      "url": "https://www.qfinhub.com/calculators/fire-calculator",
+      "priority": "P1_DISCOVERED",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "data-driven"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "dcf-analysis",
+      "url": "https://www.qfinhub.com/calculators/dcf-analysis",
+      "priority": "P2_OTHER",
+      "ai_tell_count": 4,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term",
+            "long-term"
+          ]
+        },
+        "example": {
+          "copula_avoidance": [
+            "represent a"
+          ]
+        },
+        "keyTakeaways[3]": {
+          "hyphenated_pairs": [
+            "decision-making"
           ]
         }
       }
@@ -476,8 +1118,8 @@
       }
     },
     {
-      "slug": "amortization-schedule",
-      "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+      "slug": "lifetime-value",
+      "url": "https://www.qfinhub.com/calculators/lifetime-value",
       "priority": "P2_OTHER",
       "ai_tell_count": 3,
       "patterns": {
@@ -485,6 +1127,27 @@
           "hyphenated_pairs": [
             "long-term",
             "long-term"
+          ]
+        },
+        "keyTakeaways[0]": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "net-profit-margin",
+      "url": "https://www.qfinhub.com/calculators/net-profit-margin",
+      "priority": "P2_OTHER",
+      "ai_tell_count": 3,
+      "patterns": {
+        "explanation": {
+          "significance_inflation": [
+            "serves as"
+          ],
+          "copula_avoidance": [
+            "serves as"
           ]
         },
         "tips[2]": {
@@ -495,388 +1158,8 @@
       }
     },
     {
-      "slug": "biweekly-mortgage",
-      "url": "https://www.qfinhub.com/calculators/biweekly-mortgage",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "example": {
-          "ai_vocab": [
-            "Furthermore"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "bmi-calculator",
-      "url": "https://www.qfinhub.com/calculators/bmi-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "ai_vocab": [
-            "Furthermore"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "compound-interest",
-      "url": "https://www.qfinhub.com/calculators/compound-interest",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "realWorldUse": {
-          "significance_inflation": [
-            "highlights the importance"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "date-difference",
-      "url": "https://www.qfinhub.com/calculators/date-difference",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "ai_vocab": [
-            "Additionally"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "tips[0]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "debt-snowball",
-      "url": "https://www.qfinhub.com/calculators/debt-snowball",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "explanation": {
-          "generic_conclusion": [
-            "journey toward"
-          ]
-        },
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "tips[1]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "dividend-calculator",
-      "url": "https://www.qfinhub.com/calculators/dividend-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "tips[3]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "keyTakeaways[2]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "gross-margin",
-      "url": "https://www.qfinhub.com/calculators/gross-margin",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "explanation": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ]
-        },
-        "realWorldUse": {
-          "ai_vocab": [
-            "Furthermore"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "loan-comparison",
-      "url": "https://www.qfinhub.com/calculators/loan-comparison",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "copula_avoidance": [
-            "offers a"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "keyTakeaways[3]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "mortgage-payoff",
-      "url": "https://www.qfinhub.com/calculators/mortgage-payoff",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "example": {
-          "ai_vocab": [
-            "Furthermore"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "payback-period",
-      "url": "https://www.qfinhub.com/calculators/payback-period",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "perpetuity-calculator",
-      "url": "https://www.qfinhub.com/calculators/perpetuity-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "position-sizing",
-      "url": "https://www.qfinhub.com/calculators/position-sizing",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "decision-making",
-            "long-term"
-          ]
-        },
-        "keyTakeaways[3]": {
-          "hyphenated_pairs": [
-            "decision-making"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "retirement-expenses",
-      "url": "https://www.qfinhub.com/calculators/retirement-expenses",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "example": {
-          "significance_inflation": [
-            "highlights the importance"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "tips[1]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "time-value-of-money",
-      "url": "https://www.qfinhub.com/calculators/time-value-of-money",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 3,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term",
-            "long-term"
-          ]
-        },
-        "tips[1]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "401k-calculator",
-      "url": "https://www.qfinhub.com/calculators/401k-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "real-time"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "asset-correlation",
-      "url": "https://www.qfinhub.com/calculators/asset-correlation",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "example": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "tips[0]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "basic-calculator",
-      "url": "https://www.qfinhub.com/calculators/basic-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "explanation": {
-          "significance_inflation": [
-            "serves as"
-          ],
-          "copula_avoidance": [
-            "serves as"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "calorie-calculator",
-      "url": "https://www.qfinhub.com/calculators/calorie-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "data-driven"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "dollar-cost-average",
-      "url": "https://www.qfinhub.com/calculators/dollar-cost-average",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "keyTakeaways[3]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "future-value",
-      "url": "https://www.qfinhub.com/calculators/future-value",
+      "slug": "margin-calculator",
+      "url": "https://www.qfinhub.com/calculators/margin-calculator",
       "priority": "P2_OTHER",
       "ai_tell_count": 2,
       "patterns": {
@@ -893,301 +1176,60 @@
       }
     },
     {
-      "slug": "home-renovation",
-      "url": "https://www.qfinhub.com/calculators/home-renovation",
+      "slug": "car-affordability",
+      "url": "https://www.qfinhub.com/calculators/car-affordability",
       "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "explanation": {
-          "ai_vocab": [
-            "align with"
-          ]
-        },
-        "realWorldUse": {
-          "ai_vocab": [
-            "Furthermore"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "inflation-calculator",
-      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
+      "ai_tell_count": 1,
       "patterns": {
         "realWorldUse": {
           "hyphenated_pairs": [
             "long-term"
           ]
-        },
-        "tips[1]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
         }
       }
     },
     {
-      "slug": "personal-loan",
-      "url": "https://www.qfinhub.com/calculators/personal-loan",
+      "slug": "cash-flow",
+      "url": "https://www.qfinhub.com/calculators/cash-flow",
       "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "explanation": {
-          "ai_vocab": [
-            "align with"
-          ]
-        },
-        "tips[0]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "rent-vs-buy",
-      "url": "https://www.qfinhub.com/calculators/rent-vs-buy",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
+      "ai_tell_count": 1,
       "patterns": {
         "explanation": {
           "hyphenated_pairs": [
             "long-term"
           ]
-        },
-        "keyTakeaways[3]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
         }
       }
     },
     {
-      "slug": "roth-ira",
-      "url": "https://www.qfinhub.com/calculators/roth-ira",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "example": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "salary-calculator",
-      "url": "https://www.qfinhub.com/calculators/salary-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "realWorldUse": {
-          "copula_avoidance": [
-            "offers a"
-          ],
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "va-loan",
-      "url": "https://www.qfinhub.com/calculators/va-loan",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 2,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        },
-        "keyTakeaways[3]": {
-          "passive_voice": [
-            "are issued by"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "1099-calculator",
-      "url": "https://www.qfinhub.com/calculators/1099-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "keyTakeaways[2]": {
-          "passive_voice": [
-            "are calculated by"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "arm-calculator",
-      "url": "https://www.qfinhub.com/calculators/arm-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "auto-loan",
-      "url": "https://www.qfinhub.com/calculators/auto-loan",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "beta-calculator",
-      "url": "https://www.qfinhub.com/calculators/beta-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "bond-price",
-      "url": "https://www.qfinhub.com/calculators/bond-price",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "definition": {
-          "ing_phrases": [
-            "reflecting the"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "bond-yield",
-      "url": "https://www.qfinhub.com/calculators/bond-yield",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "data-driven"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "debt-payoff",
-      "url": "https://www.qfinhub.com/calculators/debt-payoff",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "tips[0]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "discount-calculator",
-      "url": "https://www.qfinhub.com/calculators/discount-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "example": {
-          "ai_vocab": [
-            "Consequently"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "electricity-cost",
-      "url": "https://www.qfinhub.com/calculators/electricity-cost",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "passive_voice": [
-            "are surprised by"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "estate-tax",
-      "url": "https://www.qfinhub.com/calculators/estate-tax",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "ai_vocab": [
-            "testament"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "fha-loan",
-      "url": "https://www.qfinhub.com/calculators/fha-loan",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "fica-calculator",
-      "url": "https://www.qfinhub.com/calculators/fica-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "tips[1]": {
-          "ai_vocab": [
-            "align with"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "financial-ratios",
-      "url": "https://www.qfinhub.com/calculators/financial-ratios",
+      "slug": "child-care-cost",
+      "url": "https://www.qfinhub.com/calculators/child-care-cost",
       "priority": "P2_OTHER",
       "ai_tell_count": 1,
       "patterns": {
         "explanation": {
           "hyphenated_pairs": [
-            "data-driven"
+            "long-term"
           ]
         }
       }
     },
     {
-      "slug": "fraction-calculator",
-      "url": "https://www.qfinhub.com/calculators/fraction-calculator",
+      "slug": "credit-card-payoff",
+      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
+      "priority": "P2_OTHER",
+      "ai_tell_count": 1,
+      "patterns": {
+        "realWorldUse": {
+          "hyphenated_pairs": [
+            "long-term"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "moving-cost",
+      "url": "https://www.qfinhub.com/calculators/moving-cost",
       "priority": "P2_OTHER",
       "ai_tell_count": 1,
       "patterns": {
@@ -1199,92 +1241,14 @@
       }
     },
     {
-      "slug": "investment-return",
-      "url": "https://www.qfinhub.com/calculators/investment-return",
+      "slug": "operating-margin",
+      "url": "https://www.qfinhub.com/calculators/operating-margin",
       "priority": "P2_OTHER",
       "ai_tell_count": 1,
       "patterns": {
         "realWorldUse": {
           "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "loan-calculator",
-      "url": "https://www.qfinhub.com/calculators/loan-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "monte-carlo-simulation",
-      "url": "https://www.qfinhub.com/calculators/monte-carlo-simulation",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "example": {
-          "excessive_hedging": [
-            "could potentially"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "mortgage-affordability",
-      "url": "https://www.qfinhub.com/calculators/mortgage-affordability",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "tips[2]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "option-profit",
-      "url": "https://www.qfinhub.com/calculators/option-profit",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "ai_vocab": [
-            "align with"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "pension-calculator",
-      "url": "https://www.qfinhub.com/calculators/pension-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "percentage-calculator",
-      "url": "https://www.qfinhub.com/calculators/percentage-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "ai_vocab": [
-            "Furthermore"
+            "data-driven"
           ]
         }
       }
@@ -1303,187 +1267,18 @@
       }
     },
     {
-      "slug": "present-value",
-      "url": "https://www.qfinhub.com/calculators/present-value",
+      "slug": "wedding-budget",
+      "url": "https://www.qfinhub.com/calculators/wedding-budget",
       "priority": "P2_OTHER",
       "ai_tell_count": 1,
       "patterns": {
-        "realWorldUse": {
+        "definition": {
           "ai_vocab": [
             "align with"
           ]
         }
       }
-    },
-    {
-      "slug": "property-tax",
-      "url": "https://www.qfinhub.com/calculators/property-tax",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "refinance-calculator",
-      "url": "https://www.qfinhub.com/calculators/refinance-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "retirement-income",
-      "url": "https://www.qfinhub.com/calculators/retirement-income",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "tips[0]": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "retirement-planning",
-      "url": "https://www.qfinhub.com/calculators/retirement-planning",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "roi-calculator",
-      "url": "https://www.qfinhub.com/calculators/roi-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "data-driven"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "sales-tax",
-      "url": "https://www.qfinhub.com/calculators/sales-tax",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "example": {
-          "ai_vocab": [
-            "Consequently"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "savings-goal",
-      "url": "https://www.qfinhub.com/calculators/savings-goal",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "sharpe-ratio",
-      "url": "https://www.qfinhub.com/calculators/sharpe-ratio",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "decision-making"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "social-security",
-      "url": "https://www.qfinhub.com/calculators/social-security",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "stock-return",
-      "url": "https://www.qfinhub.com/calculators/stock-return",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "traditional-ira",
-      "url": "https://www.qfinhub.com/calculators/traditional-ira",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "explanation": {
-          "hyphenated_pairs": [
-            "long-term"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "water-bill",
-      "url": "https://www.qfinhub.com/calculators/water-bill",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "ai_vocab": [
-            "Additionally"
-          ]
-        }
-      }
-    },
-    {
-      "slug": "fire-calculator",
-      "url": "https://www.qfinhub.com/calculators/fire-calculator",
-      "priority": "P2_OTHER",
-      "ai_tell_count": 1,
-      "patterns": {
-        "realWorldUse": {
-          "hyphenated_pairs": [
-            "data-driven"
-          ]
-        }
-      }
     }
   ],
-  "indexed_locked": 1
+  "indexed_locked": 23
 }

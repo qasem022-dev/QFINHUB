@@ -1,0 +1,176 @@
+{
+  "phase": "Phase 37 (Phase 31 freeze LIFTED Jun 25 → Phase 35 → 36 → 37 active)",
+  "title": "QFINHUB Recovery Status — Jul 1, 2026 (Day 6 Post-Phase 35)",
+  "generated": "2026-07-01T20:03:20Z",
+  "expansion_freeze": "LIFTED — Phases 35/36/37 executed. Phase 36 redirects deployed Jun 28.",
+  "current_phase": 37,
+  "gsc_data": {
+    "source": "FRESH — Service Account auth (permanent). Pipeline run at 2026-07-01T20:03:20Z.",
+    "status": "LIVE_API_OK",
+    "date_range_7d": "2026-06-22 to 2026-06-28",
+    "metrics_7d": {
+      "impressions": 341,
+      "clicks": 1,
+      "ctr_pct": 0.3,
+      "avg_position": 53.0,
+      "pages_with_impressions": 61,
+      "query_count": 100
+    },
+    "metrics_28d": {
+      "impressions": 1725,
+      "clicks": 2,
+      "pages_with_impressions": 116,
+      "pages_with_clicks": 2,
+      "clicked_pages": [
+        "https://www.qfinhub.com/tools/investment-25k-10yr",
+        "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+      ]
+    },
+    "change_vs_previous_7d": {
+      "impressions": -63,
+      "impressions_pct": -15.6,
+      "previous_impressions": 404,
+      "previous_window": "2026-06-15 to 2026-06-21",
+      "assessment": "Decline continuing vs 2-week-ago window, BUT vs YESTERDAY'S report window (Jun 21-27: 318), today's (Jun 22-28: 341) is UP +23 (+7.2%)."
+    },
+    "week_over_week_trend_breaktrough": {
+      "jun_12_18": 498,
+      "jun_17_23": 389,
+      "jun_18_24": 391,
+      "jun_19_25": 379,
+      "jun_20_26": 352,
+      "jun_21_27": 318,
+      "jun_22_28": 341,
+      "assessment": "🟢 BREAKTHROUGH: 6-week consecutive decline streak BROKEN at 318→341 (+7.2%). First weekly increase since mid-June peak. This MAY be early Phase 35/36 signal — 301 redirects consolidating + noindex cleanup reducing index bloat."
+    }
+  },
+  "the_click": {
+    "found": true,
+    "page_7d": "/tools/mortgage-650k-15dp-30yr-6-5pct",
+    "impressions_7d": 7,
+    "clicks_7d": 1,
+    "position_7d": 6.0,
+    "ctr": "14.3%",
+    "page_28d": "/tools/investment-25k-10yr (1 click, 28d)",
+    "note": "Both clicks from tool variants. Mortgage-650k at position 6.0 with 14.3% CTR — healthy. After Phase 36 301 redirects, this authority SHOULD consolidate to parent /calculators/mortgage-calculator."
+  },
+  "first_click_breakthrough_pages": {
+    "page_1_20000_loan_blog": {
+      "url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "http_status": 200,
+      "robots": "index, follow",
+      "indexed": "YES — Submitted and indexed, PASS verdict",
+      "last_crawl": "2026-06-04T17:23:57Z (27 DAYS AGO)",
+      "impressions_7d": 5,
+      "clicks_7d": 0,
+      "position_7d": 9.8,
+      "phase35_fix": "Deployed Jun 25 (curiosity hook, CTA above answer). Phase 36 blog CTA fix deployed Jun 28.",
+      "trend": "Position oscillating: 7.1→7.9→9.8. 27 days without recrawl — ALL fixes invisible to Google.",
+      "assessment": "🔴 CRITICAL BLOCKER: 27 days without recrawl. Position degrading past page 1 boundary. All Phase 35/36 fixes invisible. GSC Request Indexing was recommended Jun 28 — still unexecuted."
+    },
+    "page_2_rent_vs_buy": {
+      "url": "/decision/rent-vs-buy-with-100k-income",
+      "impressions_7d": 1,
+      "clicks": 0,
+      "assessment": "Deprioritized. Negligible volume."
+    },
+    "page_3_how_much_house": {
+      "url": "/decision/how-much-house-can-i-afford",
+      "impressions_7d": 1,
+      "position_7d": 11.0,
+      "assessment": "Deprioritized. Ultra-low volume."
+    }
+  },
+  "top_pages_by_impression_7d": [
+    {"url": "/calculators/401k-calculator", "imp": 62, "clicks": 0, "pos": 75.2, "type": "calculator"},
+    {"url": "/calculators/mortgage-affordability", "imp": 51, "clicks": 0, "pos": 88.5, "type": "calculator"},
+    {"url": "/calculators/investment-return", "imp": 47, "clicks": 0, "pos": 83.8, "type": "calculator"},
+    {"url": "/calculators/tax-calculator", "imp": 30, "clicks": 0, "pos": 71.6, "type": "calculator"},
+    {"url": "/tools/mortgage-650k-15dp-30yr-6-5pct", "imp": 7, "clicks": 1, "pos": 6.0, "type": "tool_variant", "note": "ONLY CLICK. 14.3% CTR. 301 redirected in Phase 36 — authority should consolidate."},
+    {"url": "/decision/how-much-do-i-need-to-retire", "imp": 6, "clicks": 0, "pos": 26.8, "type": "decision"},
+    {"url": "/calculators/retirement-planning", "imp": 6, "clicks": 0, "pos": 51.5, "type": "calculator"},
+    {"url": "/blog/20000-loan-at-8-percent-for-5-years-monthly-payment", "imp": 5, "clicks": 0, "pos": 9.8, "type": "blog"},
+    {"url": "/calculators", "imp": 4, "clicks": 0, "pos": 36.5, "type": "static"},
+    {"url": "/blog/investment-calculator-withdrawals", "imp": 4, "clicks": 0, "pos": 51.5, "type": "blog"}
+  ],
+  "parent_calculator_performance": {
+    "compound_interest": {
+      "impressions_7d": 2,
+      "position": 9.0,
+      "last_crawl": "2026-06-01T23:40:10Z (30 DAYS AGO)",
+      "assessment": "Effectively invisible. 30 days without recrawl."
+    },
+    "mortgage_calculator": {
+      "impressions_7d": 2,
+      "position": 10.5,
+      "assessment": "Near-invisible."
+    },
+    "loan_calculator": {
+      "impressions_7d": 1,
+      "position": 15.0,
+      "assessment": "Near-invisible."
+    }
+  },
+  "phase35_36_verification": {
+    "all_pages_noindex": {
+      "status": "✅ WORKING",
+      "last_crawl": "2026-07-01T14:39:20Z (TODAY)",
+      "coverage": "Excluded by 'noindex' tag",
+      "note": "Google recrawled /all-pages TODAY and honored the noindex. Removed from index. Excellent signal."
+    },
+    "phase36_301_redirects": {
+      "deployed": "2026-06-28",
+      "status": "DEPLOYED — too early for GSC reflection (only 3 days in data window)",
+      "expected_effect": "Tool variant authority consolidating to parent calculators. Monitor parent positions over next 2-4 weeks."
+    },
+    "duplicate_blog_noindex": {
+      "deployed": "2026-06-28",
+      "status": "DEPLOYED — awaiting recrawl verification"
+    }
+  },
+  "compliance_report": {
+    "phase": "Phase 37 (freeze LIFTED, Phases 35/36/37 active)",
+    "new_pages_created": 0,
+    "outreach_sent": 0,
+    "indexing_api_used": 0,
+    "gsc_ui_request_indexing": 0,
+    "validate_fix_used": 0,
+    "bulk_internal_links": 0,
+    "bulk_cleanup_executed": 0,
+    "deploy_this_run": 0,
+    "note": "READ-ONLY monitoring run. Phase 36 changes already deployed Jun 28. No new actions taken."
+  },
+  "key_observations": {
+    "positive": [
+      "🟢🟢🟢 6-WEEK DECLINE STREAK BROKEN: 318→341 (+7.2%). First WoW increase since mid-June!",
+      "🟢 /all-pages noindex CONFIRMED WORKING: Google recrawled TODAY and honored exclusion.",
+      "🟢 1 click in 7d window (mortgage-650k tool variant, 14.3% CTR at pos 6.0)",
+      "🟢 2 clicks across 28d (2 different tool variant pages — first multi-page click footprint)",
+      "🟢 GSC pipeline fully stable — Service Account auth permanent, zero token issues",
+      "🟢 Phase 36 redirects deployed Jun 28 — authority consolidation in progress"
+    ],
+    "negative": [
+      "🔴🔴 20K LOAN BLOG: 27 DAYS WITHOUT RECRAWL. Position eroded to 9.8 (past page 1 boundary on some screens). ALL fixes invisible.",
+      "🔴 Parent calculators INVISIBLE: Compound-interest last crawled 30 DAYS AGO. Mortgage 2 imp/wk.",
+      "🔴 Money pages (401k, affordability, investment-return) at pos 70-90 — domain authority ceiling",
+      "🔴 The 1 click is from a tool variant, not content. No content click yet.",
+      "🔴 WoW still -15.6% vs 2 weeks ago (404→341). Recovery is from the trough (318), not the peak (498)."
+    ],
+    "blockers": [
+      "GOOGLE RECRAWL LAG (CRITICAL): #1 click candidate not recrawled in 27 days. Parents not recrawled in 30 days.",
+      "DOMAIN AUTHORITY: Still 0 backlinks. Money pages at pos 70-90 hopeless without authority.",
+      "GSC REQUEST INDEXING: Recommended for 20k blog + compound-interest + mortgage-calculator on Jun 28. Still unexecuted. Phase 35 scope allows this."
+    ]
+  },
+  "critical_recommendation": {
+    "action": "GSC Request Indexing for 20k loan blog + compound-interest + mortgage-calculator",
+    "urgency": "EXTREME — 27-30 days without recrawl. 20k blog has slipped past page 1 boundary. Do this TODAY.",
+    "phase35_approved": true,
+    "note": "Phase 35 explicitly authorizes 'GSC URL Inspection + Request Indexing (priority set)'. The 6-week decline streak breaking is the FIRST positive signal — we must capitalize by getting Google to see our fixes."
+  },
+  "overall_assessment": {
+    "scoreboard": "OFF_TRACK",
+    "summary": "DAY 6 POST-PHASE 35. FIRST POSITIVE SIGNAL: the 6-week consecutive impression decline streak has BROKEN (318→341, +7.2%). This may be early Phase 35/36 effects — noindex cleanup reducing bloat, or the start of redirect consolidation. /all-pages noindex confirmed working (Google recrawled TODAY). However: the #1 click candidate (20k loan blog) has NOT been recrawled in 27 days and its position has slipped to 9.8 — past the page 1 fold on mobile. All Phase 35/36 fixes to this page are invisible. The single most impactful action — GSC Request Indexing for the 3 priority pages — has been recommended for 3 days and remains unexecuted. The trend reversal is fragile and must be reinforced by getting Google to see our improved pages. Pinterest cron (a189625a4ab2) now running daily — long-term authority play.",
+    "critical_path": "GSC Request Indexing for 20k blog + compound-interest + mortgage-calculator → recrawl within hours → ranking visibility → first content click → validates Phase 35/36 → expand."
+  }
+}

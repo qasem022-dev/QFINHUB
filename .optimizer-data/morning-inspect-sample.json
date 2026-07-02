@@ -1,0 +1,62 @@
+{
+  "sample": [
+    "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+    "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+    "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+    "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+    "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+    "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+    "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+    "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+    "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+    "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+    "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+    "https://www.qfinhub.com/calculators/biweekly-mortgage",
+    "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+    "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate",
+    "https://www.qfinhub.com/disclaimer",
+    "https://www.qfinhub.com/methodology",
+    "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+    "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+    "https://www.qfinhub.com/calculators/tax-bracket",
+    "https://www.qfinhub.com/calculators/lease-vs-buy",
+    "https://www.qfinhub.com/calculators/capm-calculator",
+    "https://www.qfinhub.com/calculators/loan-refinancing",
+    "https://www.qfinhub.com/calculators/home-renovation",
+    "https://www.qfinhub.com/calculators/1099-calculator",
+    "https://www.qfinhub.com/calculators/marginal-tax-rate"
+  ],
+  "strata": {
+    "A_uninspected": [
+      "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+      "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+      "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+      "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+      "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need"
+    ],
+    "B_indexed": [
+      "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "https://www.qfinhub.com/calculators/biweekly-mortgage",
+      "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+      "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate",
+      "https://www.qfinhub.com/disclaimer",
+      "https://www.qfinhub.com/methodology",
+      "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in"
+    ],
+    "C_unknown": [
+      "https://www.qfinhub.com/calculators/tax-bracket",
+      "https://www.qfinhub.com/calculators/lease-vs-buy",
+      "https://www.qfinhub.com/calculators/capm-calculator",
+      "https://www.qfinhub.com/calculators/loan-refinancing",
+      "https://www.qfinhub.com/calculators/home-renovation",
+      "https://www.qfinhub.com/calculators/1099-calculator",
+      "https://www.qfinhub.com/calculators/marginal-tax-rate"
+    ]
+  }
+}

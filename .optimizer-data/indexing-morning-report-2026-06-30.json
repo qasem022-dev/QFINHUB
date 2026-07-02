@@ -1,0 +1,91 @@
+{
+  "report_date": "2026-06-30",
+  "report_time_utc": "2026-06-30T12:07:32Z",
+  "pipeline_status": "FRESH",
+  "gsc_data_7d": {
+    "impressions": 318,
+    "clicks": 1,
+    "ctr_pct": 0.3,
+    "avg_position": 51.7,
+    "pages_with_impressions": 61,
+    "query_count": 93,
+    "date_range": {
+      "start": "2026-06-21",
+      "end": "2026-06-27"
+    }
+  },
+  "sitemap_status": {
+    "total_urls": 303
+  },
+  "inspection_summary": {
+    "inspected": 303,
+    "indexed": 63,
+    "discovered_not_indexed": 133,
+    "unknown_to_google": 65,
+    "uninspected": 0
+  },
+  "today_sample_inspection": {
+    "sample_size": 21,
+    "indexed": 5,
+    "discovered_not_indexed": 13,
+    "unknown_to_google": 3
+  },
+  "state_transitions": {
+    "https://www.qfinhub.com/data": {
+      "from": "UNKNOWN",
+      "to": "URL is unknown to Google"
+    },
+    "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "from": "UNKNOWN",
+      "to": "URL is unknown to Google"
+    },
+    "https://www.qfinhub.com/loan-payment-table": {
+      "from": "UNKNOWN",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/decision/how-much-house-can-i-afford": {
+      "from": "UNKNOWN",
+      "to": "Submitted and indexed"
+    },
+    "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for": {
+      "from": "URL is unknown to Google",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy": {
+      "from": "URL is unknown to Google",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability": {
+      "from": "URL is unknown to Google",
+      "to": "Discovered - currently not indexed"
+    },
+    "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in": {
+      "from": "UNKNOWN",
+      "to": "Submitted and indexed"
+    },
+    "https://www.qfinhub.com/calculators/inventory-turnover": {
+      "from": "UNKNOWN",
+      "to": "Submitted and indexed"
+    }
+  },
+  "notes": [
+    "GSC pipeline ran with Service Account auth (no OAuth refresh needed)",
+    "URL inspection sampled 21 URLs from sitemap (303 total sitemap entries)",
+    "No code changes made \u2014 report only",
+    "Field name verification: indexStatusResult (SINGULAR) used per SA skill pitfall",
+    "Sample was stratified: 12 uninspected + 8 previously indexed + 7 unknown-state URLs",
+    "CRITICAL metric \u2014 first click detected since Phase 35 began (Jun 25)"
+  ]
+}
