@@ -1,0 +1,164 @@
+{
+  "date": "2026-07-04",
+  "sample_size": 25,
+  "state_counts": {
+    "INDEXED": 12,
+    "UNKNOWN": 4,
+    "DISCOVERED": 9
+  },
+  "newly_indexed": [],
+  "regressions": [],
+  "transitions": [],
+  "results": [
+    {
+      "url": "https://www.qfinhub.com",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/car-affordability",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/ai-specialist",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/compound-interest-explained",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/about",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/200k-mortgage-payment-30-years",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    }
+  ]
+}

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | QFINHUB",
   },
   description:
-    "Calculate your loan payments, mortgage affordability, retirement savings, tax estimates, and more — 125+ free financial calculators, instant results, no sign-up.",
+    "Calculate your loan payments, mortgage affordability, retirement savings, tax estimates, and more — 126+ free financial calculators, instant results, no sign-up.",
   keywords: [
     "financial calculator",
     "loan calculator",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "QFINHUB",
     title: "QFINHUB — Free Financial Calculators Online",
     description:
-      "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+      "126+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
     url: baseUrl,
     images: [
       {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QFINHUB — Free Financial Calculators Online",
     description:
-      "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+      "126+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -122,7 +122,7 @@ const organizationJsonLd = {
     availableLanguage: ["English"],
   },
   description:
-    "Free online financial calculator platform with 125+ tools for loans, mortgages, investments, retirement, taxes, and personal finance.",
+    "Free online financial calculator platform with 126+ tools for loans, mortgages, investments, retirement, taxes, and personal finance.",
 };
 
 const jsonLd = {
@@ -131,7 +131,7 @@ const jsonLd = {
   name: "QFINHUB",
   url: baseUrl,
   description:
-    "125+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
+    "126+ free financial calculators for loans, mortgages, investments, retirement, taxes, and personal finance.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "All",
   browserRequirements: "Requires JavaScript",
@@ -157,7 +157,7 @@ const jsonLd = {
   },
   availableLanguage: ALL_LANGUAGES.map((l) => l.name),
   featureList: [
-    "125+ Financial Calculators",
+    "126+ Financial Calculators",
     "AI Custom Calculator",
     "Multi-Language Support",
     "Export to PDF & Image",

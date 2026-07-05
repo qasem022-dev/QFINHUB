@@ -1,18 +1,18 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-07-01T20:03:20.585829+00:00",
-  "pulled_at": "2026-07-01T20:03:20Z",
+  "generated": "2026-07-04T15:00:43.322617+00:00",
+  "pulled_at": "2026-07-04T15:00:43Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "auth_method": "service_account",
   "service_account_email": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
   "date_range": {
-    "start": "2026-06-22",
-    "end": "2026-06-28"
+    "start": "2026-06-25",
+    "end": "2026-07-01"
   },
   "previous_7d_range": {
-    "start": "2026-06-15",
-    "end": "2026-06-21"
+    "start": "2026-06-18",
+    "end": "2026-06-24"
   },
   "dimensions_pulled": [
     "page",
@@ -21,19 +21,19 @@
   ],
   "row_limits": 500,
   "metrics_7d": {
-    "impressions": 341,
+    "impressions": 519,
     "clicks": 1,
-    "ctr_pct": 0.3,
-    "avg_position": 53.0,
-    "pages_with_impressions": 61,
-    "query_count": 100,
-    "query_impressions": 181,
-    "query_page_rows": 100
+    "ctr_pct": 0.2,
+    "avg_position": 59.2,
+    "pages_with_impressions": 65,
+    "query_count": 181,
+    "query_impressions": 329,
+    "query_page_rows": 181
   },
   "metrics_28d": {
-    "impressions": 1725,
+    "impressions": 1828,
     "clicks": 2,
-    "pages_with_impressions": 116,
+    "pages_with_impressions": 127,
     "pages_with_clicks": 2,
     "clicked_pages": [
       "https://www.qfinhub.com/tools/investment-25k-10yr",
@@ -41,19 +41,19 @@
     ]
   },
   "previous_7d": {
-    "start": "2026-06-15",
-    "end": "2026-06-21",
-    "impressions": 404
+    "start": "2026-06-18",
+    "end": "2026-06-24",
+    "impressions": 357
   },
   "change_7d": {
-    "impressions": -63,
-    "impressions_pct": -15.6
+    "impressions": 162,
+    "impressions_pct": 45.4
   },
   "freshness_proof": {
     "freshness": "FRESH",
-    "checksum": "b3c9236d2dd4",
+    "checksum": "493295155ae2",
     "previous_checksum": null,
-    "date_range_advanced": false,
+    "date_range_advanced": true,
     "cache_used": false,
     "source_file": ".optimizer-data/gsc-api-truth-current.json"
   },

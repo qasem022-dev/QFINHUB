@@ -57,7 +57,7 @@ export default function CompareHubPage() {
             Need a Calculator?
           </h3>
           <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-            Browse all 125 free financial calculators.
+            Browse all 126 free financial calculators.
           </p>
           <Link
             href="/calculators"

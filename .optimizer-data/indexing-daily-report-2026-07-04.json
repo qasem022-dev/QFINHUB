@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-04",
+  "generated_at": "2026-07-04 10:07:20 UTC",
+  "gsc_metrics_7d": {
+    "impressions": 519,
+    "clicks": 1,
+    "ctr_pct": 0.2,
+    "avg_position": 59.2,
+    "pages_with_impressions": 65
+  },
+  "full_inspection_state": {
+    "INDEXED": 103,
+    "UNKNOWN": 162,
+    "DISCOVERED": 219,
+    "OTHER": 148,
+    "ALTERNATE": 1
+  },
+  "total_in_inspection_file": 633,
+  "morning_sample": {
+    "size": 25,
+    "state_counts": {
+      "INDEXED": 12,
+      "UNKNOWN": 4,
+      "DISCOVERED": 9
+    },
+    "newly_indexed": 0,
+    "regressions": 0,
+    "transitions": 0
+  },
+  "submissions_today": {
+    "count": 13,
+    "success_clicked": 13,
+    "urls": [
+      "https://www.qfinhub.com/calculators/inflation-calculator",
+      "https://www.qfinhub.com/calculators/overtime-calculator",
+      "https://www.qfinhub.com/calculators/position-sizing",
+      "https://www.qfinhub.com/calculators/property-tax",
+      "https://www.qfinhub.com/calculators/salary-calculator",
+      "https://www.qfinhub.com/calculators/self-employment-tax",
+      "https://www.qfinhub.com/calculators/social-security",
+      "https://www.qfinhub.com/calculators/student-loan",
+      "https://www.qfinhub.com/calculators/tip-calculator",
+      "https://www.qfinhub.com/compare/best-tax-calculator",
+      "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "https://www.qfinhub.com/compare/compare-break-even-vs-roi-calculator",
+      "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal"
+    ]
+  },
+  "notes": [
+    "GSC data FRESH (Service Account auth, no token issues)",
+    "All 13 submissions returned CLICKED_BUTTON (success per skill)",
+    "No regressions or newly-indexed detected in morning sample",
+    "Status field shows ? \u2014 script uses result=CLICKED_BUTTON instead",
+    "Previous indexed count: 103 (from full inspection file); skill baseline was 74 on Jul 1"
+  ]
+}

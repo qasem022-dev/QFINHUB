@@ -311,12 +311,170 @@
       "category": "UNKNOWN",
       "result": "REQUESTED \u2713",
       "date": "2026-07-01 11:03:52"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:07:20"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:07:29"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:07:38"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:07:47"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-a-former-bank-employee-means-for-your-",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:07:56"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-community-bankshares-means-for-your-mo",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:08:05"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/break-even",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:08:14"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:08:23"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/currency-converter",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:08:32"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-consolidation",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:08:41"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/fha-loan",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:08:50"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/fica-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:09:00"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/hourly-to-salary",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-03 10:09:09"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:05:06"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/overtime-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:05:15"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/position-sizing",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:05:24"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/property-tax",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:05:33"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/salary-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:05:43"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/self-employment-tax",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:05:52"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/social-security",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:01"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/student-loan",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:10"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/tip-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:19"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/best-tax-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:28"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:37"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-break-even-vs-roi-calculator",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:46"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-07-04 10:06:55"
     }
   ],
-  "total": 52,
+  "total": 78,
   "daily_counts": {
     "2026-06-29": 26,
     "2026-06-30": 13,
-    "2026-07-01": 13
+    "2026-07-01": 13,
+    "2026-07-03": 13,
+    "2026-07-04": 13
   }
 }

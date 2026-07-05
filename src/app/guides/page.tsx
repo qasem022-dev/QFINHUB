@@ -61,7 +61,7 @@ export default function GuidesHubPage() {
           Need a calculator instead?
         </h3>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-          Browse all 125 free financial calculators — no sign-up required.
+          Browse all 126 free financial calculators — no sign-up required.
         </p>
         <Link
           href="/calculators"

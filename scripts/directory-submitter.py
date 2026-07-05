@@ -1,229 +1,168 @@
 #!/usr/bin/env python3
 """
-QFINHUB Directory Submission Bot — CloakBrowser automation
-Submits qfinhub.com to finance/business directories for backlinks.
-Handles different form patterns via evaluate() injection.
+QFINHUB Directory Submission Script - Phase 38
+Submits QFINHUB to free tool directories using CloakBrowser.
+Uses page.type() and page.fill() to avoid f-string backslash issues.
 """
+import os, time, sys
 
-import sys, os, time, json, random
-from datetime import datetime
+os.environ['LD_LIBRARY_PATH'] = os.path.expanduser('~/.local/lib')
 from cloakbrowser import launch_persistent_context
 
-QFINHUB_NAME = "QFINHUB"
-QFINHUB_URL = "https://qfinhub.com"
-QFINHUB_SHORT_DESC = "125 free financial calculators - mortgage, compound interest, retirement, tax, and more."
-QFINHUB_EMAIL = "q.finhub@gmail.com"
-QFINHUB_TAGS = "financial calculators, mortgage calculator, compound interest, retirement calculator, tax calculator, free finance tools, personal finance, fintech"
-QFINHUB_FOUNDED = "2025"
+SITE_DATA = {
+    "name": "QFINHUB",
+    "url": "https://www.qfinhub.com",
+    "description": "126 free financial calculators for mortgages, loans, investments, retirement, taxes, and business finance. No signup required.",
+    "short_desc": "126 free financial calculators - instant results, no signup required.",
+    "category": "Finance",
+    "tags": "finance, calculator, mortgage, investment, retirement, tax, loan",
+    "email": "qasem022@gmail.com",
+}
 
-PROFILE_DIR = os.path.expanduser("~/.hermes/cloak-profiles/directory-submitter")
-LOG_FILE = os.path.expanduser("/home/admin1/qfinhub/.directory-submissions/log.json")
-os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
-
-# Directories to submit — priority order
-DIRECTORIES = [
-    # Tier 1: Highest DA (manual forms, try common patterns)
-    {"name": "Crunchbase", "url": "https://www.crunchbase.com/organization/new", "da": 80},
-    {"name": "Product Hunt", "url": "https://www.producthunt.com/posts/create", "da": 89},
-    {"name": "G2", "url": "https://www.g2.com/products/new", "da": 85},
-    {"name": "Capterra", "url": "https://www.capterra.com/p/0/0/product/new", "da": 84},
-    {"name": "SourceForge", "url": "https://sourceforge.net/software/new/", "da": 92},
-    {"name": "Trustpilot", "url": "https://www.trustpilot.com/evaluate/qfinhub.com", "da": 92},
-    {"name": "SaaSHub", "url": "https://www.saashub.com/submit/list", "da": 65},
-    {"name": "GetApp", "url": "https://www.getapp.com/add-product/", "da": 76},
-    {"name": "Indie Hackers", "url": "https://www.indiehackers.com/products/new", "da": 78},
-    {"name": "AlternativeTo", "url": "https://alternativeto.net/software/qfinhub/", "da": 76},
-    # Tier 2: Business directories
-    {"name": "Brownbook", "url": "https://www.brownbook.net/business/add/", "da": 45},
-    {"name": "2FindLocal", "url": "https://www.2findlocal.com/b/add", "da": 40},
-    {"name": "Bizcommunity", "url": "https://www.bizcommunity.com/company/create", "da": 63},
-    {"name": "Foursquare", "url": "https://www.foursquare.com/business/", "da": 75},
-    {"name": "Yelp", "url": "https://www.yelp.com/business", "da": 91},
-    # Tier 3: Startup platforms
-    {"name": "BetaList", "url": "https://betapage.co/submit", "da": 72},
-    {"name": "Launching Next", "url": "https://www.launchingnext.com/submit/", "da": 58},
-]
-
-def load_log():
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE) as f:
-            return json.load(f)
-    return {"submitted": [], "failed": [], "last_run": None}
-
-def save_log(log):
-    log["last_run"] = datetime.now().isoformat()
-    with open(LOG_FILE, "w") as f:
-        json.dump(log, f, indent=2)
-
-def try_submit(page, directory, log):
-    """Attempt to submit to a directory by trying common form patterns."""
-    name = directory["name"]
-    url = directory["url"]
-    da = directory["da"]
+def check_page(page, label):
+    """Check if page loaded properly and capture form fields"""
+    print(f"\n=== {label} ===")
+    print(f"URL: {page.url}")
+    body = page.evaluate("document.body.innerText.substring(0, 800)")
+    print(f"Body: {body[:400]}")
     
-    if name in [s["name"] for s in log["submitted"]]:
-        print(f"  ⏭️  {name} — already submitted, skipping")
-        return
-    
-    print(f"\n  📋 {name} (DA {da})")
-    print(f"     URL: {url}")
-    
-    try:
-        page.goto(url, wait_until="domcontentloaded", timeout=20000)
-        time.sleep(4)
+    fields = page.evaluate("""
+        (function() {
+            var inputs = document.querySelectorAll('input, textarea, select');
+            var results = [];
+            for (var el of inputs) {
+                if (el.type && el.type !== 'hidden' && el.type !== 'submit' && el.type !== 'button') {
+                    results.push({
+                        type: el.type,
+                        name: el.name || el.id || '',
+                        placeholder: el.placeholder || '',
+                        label: el.getAttribute('aria-label') || ''
+                    });
+                }
+            }
+            return results;
+        })()
+    """)
+    print(f"Form fields ({len(fields)}):")
+    for f in fields[:15]:
+        print(f"  type={f['type']} name={f['name']} placeholder={f['placeholder'][:30]}")
+    return fields
+
+def try_fill_and_submit(page, fields):
+    """Try to fill common form fields and submit"""
+    for field in fields:
+        name = (field.get('name', '') + ' ' + field.get('placeholder', '') + ' ' + field.get('label', '')).lower()
         
-        # Take screenshot for debugging
-        os.makedirs("/tmp/dir-subs", exist_ok=True)
-        page.screenshot(path=f"/tmp/dir-subs/{name.lower().replace(' ', '-')}.png")
-        
-        # Try common form field patterns
-        results = page.evaluate(f"""
-            (function() {{
-                const info = {{
-                    name: '{QFINHUB_NAME}',
-                    url: '{QFINHUB_URL}',
-                    desc: '{QFINHUB_SHORT_DESC}',
-                    email: '{QFINHUB_EMAIL}',
-                    tags: '{QFINHUB_TAGS}',
-                    founded: '{QFINHUB_FOUNDED}'
-                }};
-                
-                const fields = document.querySelectorAll('input, textarea, select');
-                const found = [];
-                
-                fields.forEach(f => {{
-                    const attrs = {{
-                        name: f.name || '',
-                        id: f.id || '',
-                        type: f.type || '',
-                        placeholder: (f.placeholder || '').toLowerCase(),
-                        label: ''
-                    }};
+        try:
+            if 'name' in name and 'tool' not in name or 'tool name' in name:
+                el = page.locator(f'input[name="{field["name"]}"], input[placeholder*="name" i]').first
+                if el.count() > 0:
+                    el.fill(SITE_DATA["name"])
+                    time.sleep(1)
                     
-                    // Find associated label
-                    if (f.id) {{
-                        const label = document.querySelector('label[for="' + f.id + '"]');
-                        if (label) attrs.label = (label.textContent || '').toLowerCase();
-                    }}
+            elif 'url' in name or 'website' in name or 'link' in name:
+                el = page.locator('input[placeholder*="url" i], input[placeholder*="website" i], input[name*="url" i]').first
+                if el.count() > 0:
+                    el.fill(SITE_DATA["url"])
+                    time.sleep(1)
                     
-                    found.push(attrs);
-                }});
-                
-                return JSON.stringify({{
-                    totalFields: fields.length,
-                    fields: found.slice(0, 15),
-                    pageTitle: document.title,
-                    hasForm: document.querySelector('form') !== null
-                }});
-            }})();
-        """)
-        
-        data = json.loads(results)
-        print(f"     Fields found: {data.get('totalFields', 0)}, Has form: {data.get('hasForm', False)}")
-        
-        # Show key fields
-        for f in data.get("fields", [])[:8]:
-            label = f.get("label", "") or f.get("placeholder", "")
-            if any(kw in label.lower() for kw in ["name", "url", "email", "company", "product", "website"]):
-                print(f"     → {f.get('name') or f.get('id')} ({f.get('type')}): \"{label[:60]}\"")
-        
-        # Try to fill common fields
-        fill_script = f"""
-            (function() {{
-                function setVal(sel, val) {{
-                    const el = document.querySelector(sel);
-                    if (el) {{
-                        const s = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-                        try {{ s.call(el, val); }} catch(e) {{ el.value = val; }}
-                        el.dispatchEvent(new Event('input', {{ bubbles: true }}));
-                        el.dispatchEvent(new Event('change', {{ bubbles: true }}));
-                        return true;
-                    }}
-                    return false;
-                }}
-                
-                // Try various selectors
-                setVal('input[name*="name" i], input[id*="name" i], input[name*="company" i], input[name*="product" i]', '{QFINHUB_NAME}');
-                setVal('input[name*="url" i], input[name*="website" i], input[type="url"]', '{QFINHUB_URL}');
-                setVal('input[name*="email" i], input[type="email"]', '{QFINHUB_EMAIL}');
-                
-                // Try textarea for description
-                const descEl = document.querySelector('textarea[name*="desc" i], textarea[id*="desc" i], textarea[name*="summary" i]');
-                if (descEl) {{
-                    descEl.focus();
-                    descEl.value = '{QFINHUB_SHORT_DESC}';
-                    descEl.dispatchEvent(new Event('input', {{ bubbles: true }}));
-                }}
-                
-                return 'fields_filled';
-            }})();
-        """
-        
-        page.evaluate(fill_script)
-        time.sleep(1)
-        
-        log["submitted"].append({
-            "name": name,
-            "url": url,
-            "da": da,
-            "fields_found": data.get("totalFields", 0),
-            "has_form": data.get("hasForm", False),
-            "time": datetime.now().isoformat(),
-            "status": "form_filled",
-        })
-        
-        print(f"     ✅ Form fields populated — needs manual review/submit")
-        
-    except Exception as e:
-        print(f"     ⚠️  Failed: {str(e)[:80]}")
-        log["failed"].append({
-            "name": name,
-            "url": url,
-            "error": str(e)[:200],
-            "time": datetime.now().isoformat(),
-        })
+            elif 'email' in name:
+                el = page.locator('input[type="email"], input[placeholder*="email" i]').first
+                if el.count() > 0:
+                    el.fill(SITE_DATA["email"])
+                    time.sleep(1)
+                    
+            elif 'description' in name or 'desc' in name:
+                el = page.locator('textarea[placeholder*="desc" i], textarea[name*="desc" i]').first
+                if el.count() > 0:
+                    el.fill(SITE_DATA["description"])
+                    time.sleep(1)
+                    
+        except Exception:
+            pass
+    
+    # Try submit
+    time.sleep(2)
+    submitted = page.evaluate("""
+        (function() {
+            var btns = document.querySelectorAll('button, input[type="submit"], [role="button"]');
+            for (var btn of btns) {
+                var t = (btn.textContent || btn.value || '').toLowerCase();
+                if (t.includes('submit') || t.includes('create') || t.includes('add') || t.includes('publish')) {
+                    btn.click();
+                    return 'CLICKED: ' + t.trim();
+                }
+            }
+            return 'NO_SUBMIT_BUTTON';
+        })()
+    """)
+    print(f"Submit: {submitted}")
+    time.sleep(5)
+    print(f"Post-submit URL: {page.url}")
+    return True
 
 def main():
-    print(f"\n{'='*60}")
-    print(f"  QFINHUB Directory Submission Bot")
-    print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    print(f"{'='*60}")
-    
-    log = load_log()
-    print(f"  Previously submitted: {len(log['submitted'])}")
-    print(f"  Previously failed: {len(log['failed'])}")
-    
-    context = launch_persistent_context(
-        user_data_dir=PROFILE_DIR,
+    print("=== QFINHUB Directory Submission Phase 38 ===")
+
+    ctx = launch_persistent_context(
+        user_data_dir=os.path.expanduser("~/.hermes/cloak-profiles/directory-submitter"),
         headless=True,
         humanize=True,
     )
-    
+    page = ctx.pages[0] if ctx.pages else ctx.new_page()
+
+    # 1. Toolify.ai
     try:
-        page = context.new_page()
-        page.set_default_timeout(30000)
-        
-        for directory in DIRECTORIES:
-            if len(log["submitted"]) >= 10:
-                print(f"\n  ✅ Reached 10 submissions target. Stopping.")
-                break
-            try_submit(page, directory, log)
-            time.sleep(random.uniform(3, 6))
-        
+        page.goto("https://www.toolify.ai/submit", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(5)
+        fields = check_page(page, "Toolify.ai")
+        if "login" not in page.url.lower():
+            try_fill_and_submit(page, fields)
+        else:
+            print("Toolify: NEEDS LOGIN")
     except Exception as e:
-        print(f"\n  FATAL: {e}")
-    finally:
-        context.close()
-        save_log(log)
-        
-        submitted = len(log["submitted"])
-        failed = len(log["failed"])
-        total_da = sum(s.get("da", 0) for s in log["submitted"])
-        print(f"\n{'='*60}")
-        print(f"  RESULTS: {submitted} submitted, {failed} failed")
-        print(f"  Total DA from submissions: {total_da}")
-        print(f"  Log: {LOG_FILE}")
-        print(f"{'='*60}\n")
+        print(f"Toolify error: {e}")
+
+    # 2. Futurepedia
+    try:
+        page.goto("https://www.futurepedia.io/submit-tool", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(5)
+        fields = check_page(page, "Futurepedia.io")
+        if "login" not in page.url.lower():
+            try_fill_and_submit(page, fields)
+        else:
+            print("Futurepedia: NEEDS LOGIN")
+    except Exception as e:
+        print(f"Futurepedia error: {e}")
+
+    # 3. TheresAnAIForThat
+    try:
+        page.goto("https://theresanaiforthat.com/submit", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(5)
+        fields = check_page(page, "TheresAnAIForThat.com")
+    except Exception as e:
+        print(f"TAAFT error: {e}")
+
+    # 4. Aivalley
+    try:
+        page.goto("https://aivalley.ai/submit-a-tool/", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(5)
+        fields = check_page(page, "AIValley.ai")
+        if "login" not in page.url.lower():
+            try_fill_and_submit(page, fields)
+    except Exception as e:
+        print(f"AIValley error: {e}")
+
+    # 5. FindMyAITool
+    try:
+        page.goto("https://www.findmyaitool.com/submit", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(5)
+        fields = check_page(page, "FindMyAITool.com")
+    except Exception as e:
+        print(f"FindMyAITool error: {e}")
+
+    print("\n=== Directory Submission Complete ===")
+    ctx.close()
 
 if __name__ == "__main__":
     main()

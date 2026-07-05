@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-03",
+  "generated": "2026-07-03T10:09:54",
+  "gsc_7d_metrics": {
+    "impressions": 405,
+    "clicks": 1,
+    "ctr_pct": 0.2,
+    "avg_position": 62.4,
+    "pages_with_impressions": 55,
+    "freshness": "FRESH"
+  },
+  "indexing_status": {
+    "prior_indexed": 74,
+    "sample_size": 25,
+    "sample_indexed": 12,
+    "sample_discovered": 11,
+    "sample_unknown": 2,
+    "newly_indexed_in_sample": 12,
+    "unknown_to_discovered_in_sample": 11,
+    "regressions_in_sample": 0
+  },
+  "submissions_today": {
+    "count": 13,
+    "daily_limit": 13,
+    "status": "CLICKED_BUTTON (all successful)"
+  },
+  "newly_indexed_urls": [
+    "https://www.qfinhub.com",
+    "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+    "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+    "https://www.qfinhub.com/blog/energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
+    "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+    "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+    "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+    "https://www.qfinhub.com/blog/student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
+    "https://www.qfinhub.com/blog/what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+    "https://www.qfinhub.com/ai-specialist",
+    "https://www.qfinhub.com/blog",
+    "https://www.qfinhub.com/blog/compound-interest-explained"
+  ],
+  "unknown_to_discovered_urls": [
+    "https://www.qfinhub.com/calculators/car-affordability",
+    "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+    "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+    "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
+    "https://www.qfinhub.com/blog/ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings",
+    "https://www.qfinhub.com/about",
+    "https://www.qfinhub.com/blog/200k-mortgage-payment-30-years",
+    "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+    "https://www.qfinhub.com/blog/bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving",
+    "https://www.qfinhub.com/blog/columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+    "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026"
+  ],
+  "regression_urls": [],
+  "issues": []
+}
