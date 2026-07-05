@@ -362,24 +362,11 @@ export default async function ToolsSlugPage({ params }: ToolsPageProps) {
     notFound();
   }
 
-  // Phase 36: 301 redirect ALL formula tool variants to parent calculators.
-  // Formula variants (parameterized pages like loan-20k-5yr-8pct) hoard
-  // ranking authority from parent calculators despite noindex tags.
-  // Redirecting consolidates all signal to the real calculator pages.
-  const parts = slug.split("-");
-  const hasPct = parts.some((p) => p.endsWith("pct"));
-  const hasYr = parts.some((p) => p.endsWith("yr"));
-  const hasMo = parts.some((p) => p.endsWith("mo"));
-  const hasNumParams =
-    parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 3;
-  const formulaPattern = /^[a-z]+-\d/;
-  const isFormulaVariant =
-    (hasPct && (hasYr || hasMo)) ||
-    (formulaPattern.test(slug) && hasNumParams);
-
-  if (isFormulaVariant && variant.calculatorId) {
-    permanentRedirect(`/calculators/${variant.calculatorId}`);
-  }
+  // Phase 38 FIX (Jul 4): 301 redirects REMOVED — they caused 286→207 indexing regression.
+  // Tool variant pages WERE indexed and getting impressions/clicks. 301 redirecting them
+  // told Google they're permanently gone → Google de-indexed them → lost 79 pages in 6 days.
+  // FIX: Serve tool variants as 200 pages again (no redirect). generateMetadata already
+  // handles indexability (formula variants get noindex+canonical, clean variants stay indexable).
 
   return <VariantContentPage variant={variant} />;
 }

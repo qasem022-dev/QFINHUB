@@ -3,7 +3,8 @@ import { blogPosts } from "@/lib/blog/posts";
 import { decisionPages } from "@/lib/decision-pages";
 import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 // Phase 34 Cycle 3: getAllHowToGuides removed — thin programmatic content excluded from sitemap
-// Phase 36: getAllVariantPages removed — all tool variants are 301 redirected
+// Phase 38 FIX (Jul 4): Re-add tool variants — 301 redirects caused 286→207 indexing regression
+import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -157,9 +158,43 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // Phase 36: ALL tool variants are now 301 redirected to parent calculators.
-  // All variant-related sitemap logic is dead code — removed.
-  const variantPages: SitemapEntry[] = [];
+  // Phase 38 FIX (Jul 4): Re-add tool variant pages to sitemap.
+  // Phase 36 removed these + 301 redirected them → Google de-indexed 79 pages (286→207).
+  // FIX: Restore all non-formula variants to sitemap. Formula variants stay noindex (via
+  // generateMetadata) but are NOT 301 redirected — they serve 200 with noindex+canonical.
+  const NOINDEXED_VARIANT_SLUGS = new Set([
+    "auto-loan-717d83b1",
+    "auto-loan-92918ea9",
+    "retirement-planning-eb1dd78b",
+    "retirement-1M-30yr",
+    "afford-100k-40k-6-5pct",
+    "afford-130k-40k-7pct",
+  ]);
+
+  function isFormulaVariant(slug: string): boolean {
+    const parts = slug.split("-");
+    const hasPct = parts.some((p) => p.endsWith("pct"));
+    const hasYr = parts.some((p) => p.endsWith("yr"));
+    const hasMo = parts.some((p) => p.endsWith("mo"));
+    const numCount = parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length;
+    return (hasPct && (hasYr || hasMo)) || (/^[a-z]+-\d/.test(slug) && numCount >= 3);
+  }
+
+  let variantPages: SitemapEntry[] = [];
+  try {
+    const variants = getAllVariantPages();
+    variantPages = variants
+      .filter((v) => !isFormulaVariant(v.slug))
+      .filter((v) => !NOINDEXED_VARIANT_SLUGS.has(v.slug))
+      .map((v) => ({
+        url: `${BASE_URL}/tools/${v.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as ChangeFrequency,
+        priority: 0.6,
+      }));
+  } catch (e) {
+    console.warn("Failed to generate variant pages for sitemap:", e);
+  }
 
   // Geo pages — only keep the 3 with GSC impressions.
   const GEO_GSC_PATHS = new Set([
