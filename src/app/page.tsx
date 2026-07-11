@@ -551,6 +551,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Latest Fed Insights (Phase 39.3 hubs) ── */}
+      <section className="bg-blue-50 px-4 py-16 dark:bg-blue-950/20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
+              Federal Reserve & Your Money
+            </h2>
+            <p className="mx-auto max-w-xl text-gray-500 dark:text-gray-400">
+              Practical guides on how Fed policy actually moves your mortgage, savings, and investments.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { name: "Fed & Your Mortgage", slug: "fed-and-your-mortgage", desc: "How FOMC decisions move your monthly payment", icon: "🏛️" },
+              { name: "FOMC Rate Decisions", slug: "fomc-rate-decisions-explained", desc: "Read Fed statements like an economist", icon: "📊" },
+              { name: "Fed & Your Savings", slug: "fed-and-your-savings-investments", desc: "Where to put cash when rates change", icon: "💰" },
+              { name: "Fed Stock & Bonds", slug: "fed-stock-market-and-bonds", desc: "How policy moves Treasury yields", icon: "📈" },
+              { name: "Fed Enforcement Actions", slug: "fed-enforcement-actions", desc: "What fines mean for your bank", icon: "⚖️" },
+              { name: "Fed Personnel & Policy", slug: "fed-personnel-and-policy", desc: "How leadership changes shift direction", icon: "👤" },
+              { name: "Fed Bank Mergers", slug: "fed-bank-mergers-approvals", desc: "Why your bank branch may close", icon: "🏦" },
+              { name: "Global Central Banks", slug: "global-central-banks", desc: "How the Fed compares to ECB & BoJ", icon: "🌍" },
+            ].map((hub) => (
+              <Link
+                key={hub.slug}
+                href={`/blog/${hub.slug}`}
+                prefetch={true}
+                className="group flex flex-col gap-2 p-5 rounded-xl border border-blue-200 dark:border-blue-800 bg-white dark:bg-zinc-900/50 hover:border-blue-400 dark:hover:border-blue-600 hover:shadow-md transition-all duration-150"
+              >
+                <span className="text-2xl">{hub.icon}</span>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {hub.name}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+                  {hub.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Smart Financial Decisions Section ── */}
       <section className="bg-white px-4 py-16 dark:bg-surface-dark">
         <div className="mx-auto max-w-6xl">
