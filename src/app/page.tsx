@@ -160,7 +160,7 @@ const useCases = [
 
 const features = [
   {
-    title: "126 Calculators — All Free",
+    title: "125 Calculators — All Free",
     desc: "Reliable calculators for loans, mortgages, investments, retirement, taxes, business, and personal finance. Every single one is 100% free.",
     icon: Calculator,
     color: "from-blue-500 to-blue-600",
@@ -225,7 +225,7 @@ export default function Home() {
               <input
                 name="q"
                 type="search"
-                placeholder='Search all 126 calculators — "mortgage", "retirement", "compound interest"...'
+                placeholder='Search all 125 calculators — "mortgage", "retirement", "compound interest"...'
                 className="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm text-gray-900 placeholder:text-gray-400 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-400/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500 dark:focus:border-primary-500"
               />
             </div>
@@ -270,7 +270,7 @@ export default function Home() {
               <Button asChild size="lg" className="min-h-[56px] w-full sm:w-auto rounded-xl bg-primary-600 px-8 text-base font-semibold text-white shadow-lg shadow-primary-600/30 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/40 active:scale-[0.98] touch-manipulation">
                 <Link href="/calculators" prefetch={true}>
                   <Calculator className="mr-2 h-5 w-5" />
-                  Browse All 126 Calculators
+                  Browse All 125 Calculators
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -455,7 +455,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
               <Link href="/calculators" prefetch={true}>
-                View All 126 Calculators
+                View All 125 Calculators
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -544,7 +544,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Button asChild variant="outline" className="rounded-xl border-zinc-300 px-6 dark:border-zinc-600">
               <Link href="/calculators" prefetch={true}>
-                View All 126 Calculators <ArrowRight className="ml-2 h-4 w-4" />
+                View All 125 Calculators <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
