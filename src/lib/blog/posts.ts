@@ -2197,7 +2197,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "mortgage",
     publishedAt: new Date("2026-07-11"),
     readingTime: 14,
-    relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "refinance-calculator", "amortization-schedule"],
+    relatedCalculators: ["mortgage-calculator", "mortgage-affordability", "refinance-calculator", "amortization-schedule", "loan-calculator", "debt-payoff", "401k-calculator", "investment-return"],
     content: `<h2>Why the Fed Matters More for Your Mortgage Than You'd Think</h2>
 <p>I built this guide after watching the same conversation happen every FOMC week. A friend texts me: "The Fed held rates. What does that mean for my mortgage?" The honest answer is "less than you think, but not nothing." The Fed doesn't set mortgage rates directly. It sets the federal funds rate, which influences the 10-year Treasury yield, which is what mortgage rates roughly track. The chain has 4 links. Let me walk through each one.</p>
 
@@ -2253,7 +2253,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "investment",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["investment-return", "compound-interest", "savings-goal", "inflation-calculator"],
+    relatedCalculators: ["investment-return", "compound-interest", "savings-goal", "inflation-calculator", "401k-calculator", "mortgage-calculator", "loan-calculator", "tax-calculator"],
     content: `<h2>Why FOMC Decisions Move Markets (and Why Most People Misunderstand Them)</h2>
 <p>I spent years watching FOMC days the wrong way. I'd refresh financial news at 2pm, see the headline "Fed Holds Rates Steady," and try to figure out why markets were down 1.5% by 3pm. The Fed did exactly what everyone expected. So why the move? Because the Fed isn't just one decision. It's three: the rate decision, the statement language, and the dot plot. Read all three or you'll miss the real story every time.</p>
 
@@ -2330,7 +2330,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "investment",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["savings-goal", "compound-interest", "investment-return", "inflation-calculator"],
+    relatedCalculators: ["savings-goal", "compound-interest", "investment-return", "inflation-calculator", "401k-calculator", "tax-calculator", "debt-payoff", "loan-calculator"],
     content: `<h2>Why Savings Rates Follow the Fed (With a Lag)</h2>
 <p>I built this guide because the question I get asked most often after "should I refinance" is "where should I keep my cash?" The answer depends almost entirely on where the Fed is in its rate cycle. In mid-2026, the Fed has begun modest cuts from a peak of 5.25-5.50%. Savings APYs have already started falling from their 2024-2025 peaks. If you locked in a 5% HYSA in 2024, you're now seeing 4% or lower as new rates. The 1-point drop matters when you've got $50,000 sitting there. That's $500/year in lost interest.</p>
 
@@ -2390,7 +2390,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "personal",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["savings-goal", "budget-planner", "emergency-fund", "debt-payoff"],
+    relatedCalculators: ["savings-goal", "budget-planner", "em-fund", "debt-payoff", "loan-calculator", "mortgage-calculator", "compound-interest", "401k-calculator"],
     content: `<h2>Why You Should Care About a Fed Enforcement Action Against a Bank You've Never Heard Of</h2>
 <p>I used to ignore Fed enforcement actions. Then I watched a regional bank fail in 2023 after years of accumulated Fed warnings. The customers who paid attention to the Fed's enforcement notices had time to move their money. The ones who didn't learned a hard lesson about FDIC insurance limits. This guide explains what Fed enforcement actions actually mean for your money and what to do about them.</p>
 
@@ -2453,7 +2453,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "personal",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["savings-goal", "mortgage-calculator", "credit-card-payoff", "budget-planner"],
+    relatedCalculators: ["savings-goal", "mortgage-calculator", "credit-card-payoff", "budget-planner", "compound-interest", "loan-calculator", "debt-payoff", "401k-calculator"],
     content: `<h2>Why "Fed Approves X Bank Merger" Should Be On Your Radar</h2>
 <p>I noticed a pattern in 2025. Whenever the Fed approved a mid-size bank merger, the resulting combined institution tightened lending standards by 5 to 15 basis points within 6 months. Nothing dramatic, but real. If you were about to refi a mortgage or apply for a HELOC, the timing mattered. This guide explains how Fed merger approvals actually trickle down to the rates and products you see.</p>
 
@@ -2544,7 +2544,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "investment",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["investment-return", "compound-interest", "savings-goal", "401k-calculator"],
+    relatedCalculators: ["investment-return", "compound-interest", "savings-goal", "401k-calculator", "tax-calculator", "mortgage-calculator", "loan-calculator", "lifetime-value"],
     content: `<h2>Why a Single Personnel Change Can Move Markets 5% in a Day</h2>
 <p>I watched the S&P 500 drop 4.2% in three trading sessions when Kevin Warsh's Fed Chair confirmation hit trouble in early 2025. Then it rallied 3.8% on the next favorable headline. That's $3,800 of movement on a $100K portfolio in under a week, all driven by personnel news. This guide explains why Fed personnel moves matter so much and what to actually do about them.</p>
 
@@ -2628,7 +2628,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "investment",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["investment-return", "compound-interest", "savings-goal", "401k-calculator"],
+    relatedCalculators: ["investment-return", "compound-interest", "savings-goal", "401k-calculator", "tax-calculator", "mortgage-calculator", "lifetime-value", "loan-calculator"],
     content: `<h2>Why This Guide Matters</h2>
 <p>I built this after watching a friend sell his bond fund at a 12% loss in October 2023, three months before the Fed pivoted and bond prices rallied 15%. He didn't understand the inverse relationship between yields and bond prices. He didn't understand how the Fed drives both bonds and stocks. He just saw red numbers and panicked. This guide is for him and everyone else who's lost money by treating Fed policy as background noise.</p>
 
@@ -2726,7 +2726,7 @@ The best time to inflation-proof your finances was yesterday. The second best ti
     category: "investment",
     publishedAt: new Date("2026-07-11"),
     readingTime: 13,
-    relatedCalculators: ["investment-return", "savings-goal", "compound-interest", "401k-calculator"],
+    relatedCalculators: ["investment-return", "savings-goal", "compound-interest", "401k-calculator", "tax-calculator", "mortgage-calculator", "loan-calculator", "inventory-turnover"],
     content: `<h2>Why the ECB Matters Even If You've Never Lived in Europe</h2>
 <p>I learned this the hard way in 2022. The European Central Bank started hiking rates before the Fed. The euro weakened against the dollar as a result. U.S. companies with European exposure saw their earnings get hit twice: once from the strong dollar, once from the European recession that followed. My portfolio took a hit I didn't see coming because I was only watching the Fed. This guide is for anyone who makes that same mistake.</p>
 
