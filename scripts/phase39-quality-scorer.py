@@ -73,7 +73,11 @@ EEAT_CAVEATS = [
 
 
 def extract_prose(content_obj: dict) -> str:
-    """Concatenate all prose fields for analysis."""
+    """Concatenate all prose fields for analysis.
+
+    Strips HTML tags and inserts period boundaries at paragraph breaks so
+    sentence-length analysis works correctly on HTML-embedded blog content.
+    """
     fields = ['explanation', 'formulaDescription', 'realWorldUse',
               'example', 'definition', 'keyFactors', 'tips',
               'keyTakeaways', 'citations', 'relatedCalculators']
@@ -84,7 +88,12 @@ def extract_prose(content_obj: dict) -> str:
             v = ', '.join(str(x) for x in v)
         if v:
             parts.append(v)
-    return '\n'.join(parts)
+    text = '\n'.join(parts)
+    # Strip HTML tags
+    text = re.sub(r'<[^>]+>', ' ', text)
+    # Normalize whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
 
 
 def gate_1_ai_score(text: str) -> dict:
