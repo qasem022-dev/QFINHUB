@@ -44,3 +44,4 @@ next-env.d.ts
 # Phase 39 diagnostic artifacts (regenerated on demand — not for Vercel)
 .optimizer-data/phase39-*
 .optimizer-data/PHASE39_*
+scripts/__pycache__/
