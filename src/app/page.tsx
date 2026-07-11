@@ -115,6 +115,8 @@ const quickCalcs = [
   { name: "Debt Payoff", href: "/calculators/debt-payoff", category: "Personal" },
   { name: "Credit Card Payoff", href: "/calculators/credit-card-payoff", category: "Personal" },
   { name: "401k Calculator", href: "/calculators/401k-calculator", category: "Retirement" },
+  { name: "Lifetime Value", href: "/calculators/lifetime-value", category: "Business" },
+  { name: "Inventory Turnover", href: "/calculators/inventory-turnover", category: "Business" },
   { name: "Amortization Schedule", href: "/calculators/amortization-schedule", category: "Loan" },
 ];
 
@@ -521,7 +523,8 @@ export default function Home() {
               { name: "Debt Payoff", slug: "debt-payoff", desc: "Compare snowball vs avalanche strategies side by side", icon: "💳" },
               { name: "Budget Planner", slug: "budget-planner", desc: "Create a 50/30/20 budget in seconds", icon: "📊" },
               { name: "Investment Return", slug: "investment-return", desc: "Calculate CAGR, absolute return, and annualized performance", icon: "📉" },
-              { name: "ROI Calculator", slug: "roi-calculator", desc: "Measure return on investment for any project", icon: "🎯" },
+              { name: "Lifetime Value", slug: "lifetime-value", desc: "Project customer lifetime revenue for SaaS & subscription businesses", icon: "👥" },
+              { name: "Inventory Turnover", slug: "inventory-turnover", desc: "Measure how efficiently you sell and replace stock", icon: "📦" },
               { name: "FIRE Calculator", slug: "early-retirement", desc: "Calculate your path to financial independence", icon: "🔥" },
               { name: "APR Calculator", slug: "apr-calculator", desc: "Compare loan offers with true annual percentage rate", icon: "💵" },
             ].map((calc) => (
