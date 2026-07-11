@@ -4,7 +4,9 @@ import { decisionPages } from "@/lib/decision-pages";
 import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 // Phase 34 Cycle 3: getAllHowToGuides removed — thin programmatic content excluded from sitemap
 // Phase 38 FIX (Jul 4): Re-add tool variants — 301 redirects caused 286→207 indexing regression
+// Phase 39.4: Selective restore of 4 guides verified-indexed in GSC to preserve indexing
 import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
+import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -232,8 +234,32 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // How-to-use guide pages removed — programmatic thin content
-  const guidePages: SitemapEntry[] = [];
+  // How-to-use guide pages — Phase 39.4 selective restore
+  // Only re-add guides that GSC confirms are indexed (preserves their indexing status)
+  // Source: .optimizer-data/gsc-pages-submitted-and-indexed-urls.json (93 indexed)
+  const INDEXED_GUIDE_SLUGS = new Set([
+    "how-to-use-1099-calculator",
+    "how-to-use-child-care-cost",
+    "how-to-use-date-difference",
+    "how-to-use-fraction-calculator",
+  ]);
+  const indexedGuides = getAllHowToGuides().filter((g) =>
+    INDEXED_GUIDE_SLUGS.has(g.slug)
+  );
+  const guidePages: SitemapEntry[] = indexedGuides.map((g) => ({
+    url: `${BASE_URL}/guides/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.5,
+  }));
+
+  // HTML sitemap page — Phase 39.4 restore (verified indexed, was orphaned)
+  const allPagesEntry: SitemapEntry = {
+    url: `${BASE_URL}/all-pages`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as ChangeFrequency,
+    priority: 0.4,
+  };
 
   // Decision pages (quality-gated financial decision guides)
   const decisionPageEntries: SitemapEntry[] = decisionPages.map((d) => ({
@@ -243,5 +269,5 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...decisionPageEntries];
+  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, allPagesEntry, ...decisionPageEntries];
 }
