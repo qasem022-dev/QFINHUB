@@ -172,9 +172,90 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* ── Featured Topics ── */}
+      <section className="bg-gray-50 dark:bg-zinc-900/50 px-4 py-12">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
+            Featured Topics
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                href: "/blog/fed-and-your-mortgage",
+                title: "Fed & Mortgage",
+                desc: "How Federal Reserve policy shapes mortgage rates and your home loan",
+                icon: "🏠",
+              },
+              {
+                href: "/blog/fomc-rate-decisions-explained",
+                title: "FOMC Decisions",
+                desc: "How the Fed's interest rate decisions affect your finances",
+                icon: "📊",
+              },
+              {
+                href: "/blog/fed-enforcement-actions",
+                title: "Fed Enforcement",
+                desc: "How the Fed's bank enforcement actions protect consumers",
+                icon: "⚖️",
+              },
+              {
+                href: "/blog/fed-personnel-and-policy",
+                title: "Fed Leadership",
+                desc: "Key Fed officials, speeches, and how they shape policy",
+                icon: "👔",
+              },
+              {
+                href: "/blog/fed-and-your-savings-investments",
+                title: "Fed & Savings",
+                desc: "How Fed policy affects your savings, CDs, and investment returns",
+                icon: "💰",
+              },
+              {
+                href: "/blog/fed-bank-mergers-approvals",
+                title: "Bank Mergers",
+                desc: "How the Fed approves or rejects major bank mergers",
+                icon: "🏦",
+              },
+              {
+                href: "/blog/fed-stock-market-and-bonds",
+                title: "Fed & Markets",
+                desc: "How Fed actions move stock and bond markets",
+                icon: "📈",
+              },
+              {
+                href: "/blog/global-central-banks",
+                title: "Global Central Banks",
+                desc: "ECB, BOE, BOJ and how their policies ripple to your finances",
+                icon: "🌍",
+              },
+            ].map((topic) => (
+              <Link
+                key={topic.href}
+                href={topic.href}
+                className="group rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:scale-[1.02] hover:shadow-md hover:border-primary-200 dark:border-zinc-700 dark:bg-zinc-800"
+              >
+                <span className="mb-2 block text-2xl">{topic.icon}</span>
+                <h3 className="mb-1 text-sm font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
+                  {topic.title}
+                </h3>
+                <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+                  {topic.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Blog Posts ── */}
       <section className="px-4 py-16">
         <div className="mx-auto max-w-6xl">
+          <div className="mb-8 flex items-center justify-between">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">All Articles</h2>
+            <span className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-500 dark:bg-zinc-800 dark:text-gray-400">
+              {blogPosts.filter((p) => !REDIRECTED_SLUGS.has(p.slug)).length} articles
+            </span>
+          </div>
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {blogPosts
               .filter((post) => !REDIRECTED_SLUGS.has(post.slug))
