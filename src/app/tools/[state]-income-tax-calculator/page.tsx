@@ -261,10 +261,21 @@ const STATES: Record<string, StateData> = {
   },
 };
 
-const SUPPORTED_SLUGS = Object.keys(STATES);
+// SUPPORTED_SLUGS uses the full URL slug pattern: e.g. "california-income-tax-calculator"
+// The dynamic route is /tools/[state]-income-tax-calculator so {state} captures
+// everything BEFORE "-income-tax-calculator". For example:
+//   /tools/california-income-tax-calculator → state = "california"
+const SUPPORTED_SLUGS = Object.keys(STATES).map((s) => `${s}-income-tax-calculator`);
+
+function getStateKeyFromSlug(slug: string): string | null {
+  // Strip the "-income-tax-calculator" suffix
+  if (!slug.endsWith("-income-tax-calculator")) return null;
+  const key = slug.slice(0, -"-income-tax-calculator".length);
+  return key in STATES ? key : null;
+}
 
 export async function generateStaticParams() {
-  return SUPPORTED_SLUGS.map((slug) => ({ state: slug }));
+  return SUPPORTED_SLUGS.map((slug) => ({ state: slug.replace(/-income-tax-calculator$/, "") }));
 }
 
 export const revalidate = 86400;
@@ -274,8 +285,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ state: string }>;
 }): Promise<Metadata> {
-  const { state } = await params;
-  const stateData = STATES[state];
+  const { state: rawState } = await params;
+  const state = getStateKeyFromSlug(rawState);
+  const stateData = state ? STATES[state] : null;
   if (!stateData) return {};
 
   const title = `${stateData.name} Income Tax Calculator 2026 | QFINHUB`;
@@ -416,9 +428,10 @@ interface PageProps {
 }
 
 export default async function StateIncomeTaxCalculatorPage({ params }: PageProps) {
-  const { state } = await params;
+  const { state: rawState } = await params;
+  const state = getStateKeyFromSlug(rawState);
 
-  if (!SUPPORTED_SLUGS.includes(state)) {
+  if (!state || !SUPPORTED_SLUGS.includes(`${rawState}`)) {
     notFound();
   }
 
