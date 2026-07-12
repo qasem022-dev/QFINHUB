@@ -29,6 +29,25 @@ const categoryLabels: Record<BlogPost["category"], string> = {
   personal: "Personal Finance",
 };
 
+// Phase 39.4: These slugs redirect to other pages — don't show in blog index
+const REDIRECTED_SLUGS = new Set([
+  // Thin posts (<500w)
+  "retire-by-40-calculator-how-much-needed",
+  "monthly-mortgage-payment-formula-tax-insurance",
+  "200k-mortgage-payment-30-years",
+  "how-much-mortgage-afford-100k-salary",
+  "20000-loan-5-years-8-percent-monthly-payment",
+  "investment-calculator-withdrawals",
+  "treasury-selloff-hits-mortgages-how-to-protect-your-home-loan",
+  "housing-affordability-breakthrough-how-new-policies-could-impact-your-mortgage-a",
+  "stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homeowner",
+  "investing-cybersecurity-stocks-are-surging-one-looks-promising",
+  // NJ month-year posts
+  "fed-minutes-march-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+  "fed-minutes-april-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+  "mortgage-rates-june-2026-current-rates-home-affordability-calculator",
+]);
+
 const categoryColors: Record<BlogPost["category"], string> = {
   mortgage: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   loan: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
@@ -157,7 +176,9 @@ export default function BlogPage() {
       <section className="px-4 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-            {blogPosts.map((post) => (
+            {blogPosts
+              .filter((post) => !REDIRECTED_SLUGS.has(post.slug))
+              .map((post) => (
               <BlogCard key={post.slug} post={post} />
             ))}
           </div>
