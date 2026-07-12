@@ -447,6 +447,17 @@ export default async function StateIncomeTaxCalculatorPage({ params }: PageProps
         <CalculatorLayout
           title={`${stateData.name} Income Tax Calculator 2026`}
           description={stateData.description}
+          results={
+            <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6 text-sm text-slate-300">
+              <p className="mb-2 font-semibold text-white">Live results</p>
+              <p>
+                Your state income tax breakdown will appear here as you fill in the
+                calculator on the left. Enter your filing status, taxable income,
+                and any adjustments to see your effective rate, marginal bracket,
+                and total state tax owed for {stateData.name}.
+              </p>
+            </div>
+          }
         >
           {/* Intro Section */}
           <div className="mb-6 rounded-xl border border-slate-800 bg-slate-900/50 p-6">
