@@ -135,7 +135,7 @@ export default function ForAIDevelopersPage() {
   "name": "Mortgage Calculator",
   "applicationCategory":
     "FinanceApplication",
-  "url": "https://qfinhub.com/
+  "url": "https://www.qfinhub.com/
     calculators/mortgage-calculator"
 }`}
               </pre>

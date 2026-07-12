@@ -24,7 +24,7 @@ export default function AboutPage() {
             "@context": "https://schema.org",
             "@type": "Person",
             name: "Qasem Mohammed",
-            url: "https://qfinhub.com/about",
+            url: "https://www.qfinhub.com/about",
             jobTitle: "AI & Software Engineer, Founder & Lead Developer",
             worksFor: {
               "@type": "Organization",

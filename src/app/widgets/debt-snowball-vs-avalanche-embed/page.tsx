@@ -99,7 +99,7 @@ export default function DebtSnowballVsAvalancheWidgetPage() {
             author: {
               "@type": "Person",
               name: "Qasem Mohammed",
-              url: "https://qfinhub.com/about",
+              url: "https://www.qfinhub.com/about",
             },
           }),
         }}

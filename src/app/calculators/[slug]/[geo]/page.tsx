@@ -118,7 +118,7 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
             url: `https://qfinhub.com/calculators/${slug}/${geo}`,
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
             areaServed: { "@type": "City", name: city.name },
-            author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
+            author: { "@type": "Person", name: "Qasem Mohammed", url: "https://www.qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
           }),
         }}
       />
@@ -129,8 +129,8 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://qfinhub.com/" },
-              { "@type": "ListItem", position: 2, name: "Calculators", item: "https://qfinhub.com/calculators" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.qfinhub.com/" },
+              { "@type": "ListItem", position: 2, name: "Calculators", item: "https://www.qfinhub.com/calculators" },
               { "@type": "ListItem", position: 3, name: `${calcConfig.label} for ${cityDisplay}`, item: `https://qfinhub.com/calculators/${slug}/${geo}` },
             ],
           }),

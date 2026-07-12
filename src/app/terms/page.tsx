@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Terms of Service | QFINHUB",
     description:
       "QFINHUB Terms of Service — Acceptable use, user responsibilities, disclaimers, and legal agreements.",
-    url: "https://qfinhub.com/terms",
+    url: "https://www.qfinhub.com/terms",
   },
 };
 

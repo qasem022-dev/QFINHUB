@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "compound interest calculator",
     "free finance tools",
   ],
-  authors: [{ name: "Qasem Mohammed", url: "https://qfinhub.com/about" }],
+  authors: [{ name: "Qasem Mohammed", url: "https://www.qfinhub.com/about" }],
   creator: "Qasem Mohammed",
   publisher: "QFINHUB",
   icons: {
@@ -143,7 +143,7 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Qasem Mohammed",
-    url: "https://qfinhub.com/about",
+    url: "https://www.qfinhub.com/about",
     sameAs: [
       "https://www.linkedin.com/in/qasem-mohammed",
       "https://github.com/qasem-mohammed",

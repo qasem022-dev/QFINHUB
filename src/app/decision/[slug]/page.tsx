@@ -53,7 +53,7 @@ export default async function DecisionPage({ params }: Props) {
         "@type": "Article",
         headline: page.title,
         description: page.description,
-        author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about" },
+        author: { "@type": "Person", name: "Qasem Mohammed", url: "https://www.qfinhub.com/about" },
         datePublished: "2026-05-28",
       };
 

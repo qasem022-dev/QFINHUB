@@ -215,8 +215,8 @@ export default async function CalculatorDetailPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://qfinhub.com/" },
-      { "@type": "ListItem", position: 2, name: "Calculators", item: "https://qfinhub.com/calculators" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.qfinhub.com/" },
+      { "@type": "ListItem", position: 2, name: "Calculators", item: "https://www.qfinhub.com/calculators" },
       { "@type": "ListItem", position: 3, name: calculator.title, item: `https://qfinhub.com/calculators/${slug}` },
     ],
   };
@@ -259,7 +259,7 @@ export default async function CalculatorDetailPage({
     author: {
       "@type": "Person",
       name: "Qasem Mohammed",
-      url: "https://qfinhub.com/about",
+      url: "https://www.qfinhub.com/about",
       sameAs: ["https://www.linkedin.com/in/qasem-mohammed"],
       jobTitle: "AI & Software Engineer, Founder & Lead Developer",
     },

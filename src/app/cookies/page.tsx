@@ -320,7 +320,7 @@ const sections = [
           <li>
             <strong>Website:</strong>{" "}
             <a
-              href="https://qfinhub.com/contact"
+              href="https://www.qfinhub.com/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent-600 underline underline-offset-2 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"

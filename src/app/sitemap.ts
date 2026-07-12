@@ -158,27 +158,80 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     "fed-personnel-and-policy", "fed-and-your-savings-investments", "fed-bank-mergers-approvals",
     "fed-stock-market-and-bonds", "global-central-banks",
   ]);
-  const blogPages: SitemapEntry[] = blogPosts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.publishedAt,
-    changeFrequency: "monthly" as ChangeFrequency,
-    // Phase 39.4: Boost 8 hub posts to high priority — topical authority anchors
-    priority: HUB_SLUGS.has(post.slug) ? 0.8 : 0.6,
-  }));
+  // Week 1 Indexing Cleanup (Jul 12, 2026): Exclude 49 blog slugs that 301-redirect
+  // (per next.config.ts). Sitemap advertising redirected URLs confuses GSC — they
+  // show up as "Discovered" but never index because the redirect sends Google elsewhere.
+  // Mirrors REDIRECTED_SLUGS in src/app/blog/page.tsx (Phase 39.4).
+  const REDIRECTED_BLOG_SLUGS = new Set([
+    "fed-holds-rates-steady-what-the-fomc-statement-means-for-your-mortgage-in-2025",
+    "kevin-warsh-fed-rate-decision-how-rising-inflation-impacts-your-mortgage-affordabilit",
+    "fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings",
+    "fed-rate-hike-in-july-2025-how-bond-vigilantes-could-impact-your-mortgage-and-sa",
+    "fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-",
+    "fed-s-rising-inflation-forecast-how-to-protect-your-mortgage-and-savings",
+    "usd-surge-fed-policy-how-to-protect-your-mortgage-affordability-in-2025",
+    "kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+    "fed-s-new-payment-account-proposal-what-it-means-for-your-mortgage-and-savings",
+    "morgan-stanley-bank-exemption-your-mortgage-what-the-fed-s-23a-ruling-means-for-",
+    "stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+    "fed-approves-united-texas-bank-conversion-what-it-means-for-your-mortgage-and-sa",
+    "federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+    "fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-",
+    "stephen-miran-exits-the-fed-how-his-policies-could-impact-your-mortgage-affordab",
+    "fed-minutes-march-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+    "fed-minutes-april-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+    "fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi",
+    "how-the-fed-s-modernization-plans-could-impact-your-mortgage-and-savings-goals",
+    "what-the-fed-s-termination-of-enforcement-actions-means-for-your-mortgage-afford",
+    "what-the-fed-s-enforcement-action-against-a-former-bank-employee-means-for-your-",
+    "what-the-fed-s-enforcement-action-against-community-bankshares-means-for-your-mo",
+    "fed-ends-enforcement-actions-against-major-banks-what-it-means-for-your-mortgage",
+    "fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+    "fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa",
+    "federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-",
+    "what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+    "fed-discount-window-survey-what-it-means-for-your-mortgage-and-savings",
+    "fed-approves-burke-herbert-bank-merger-what-it-means-for-your-mortgage-and-savin",
+    "what-the-fed-s-approval-of-banco-de-credito-del-peru-means-for-your-mortgage-and",
+    "fed-board-resignation-shakes-markets-how-to-protect-your-mortgage-affordability-",
+    "fed-chair-change-how-powell-s-pro-tempore-role-and-warsh-s-appointment-could-imp",
+    "bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving",
+    "blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
+    "stock-market-week-ahead-nvidia-alphabet-earnings-atlanta-fed-how-to-protect-your",
+    "rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg",
+    "ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings",
+    "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+    "retire-by-40-calculator-how-much-needed",
+    "monthly-mortgage-payment-formula-tax-insurance",
+    "200k-mortgage-payment-30-years",
+    "how-much-mortgage-afford-100k-salary",
+    "20000-loan-5-years-8-percent-monthly-payment",
+    "investment-calculator-withdrawals",
+    "treasury-selloff-hits-mortgages-how-to-protect-your-home-loan-plans",
+    "housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+    "stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers",
+    "investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+    "mortgage-rates-june-2026-current-rates-home-affordability-calculator",
+  ]);
+  const blogPages: SitemapEntry[] = blogPosts
+    .filter((post) => !REDIRECTED_BLOG_SLUGS.has(post.slug))
+    .map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.publishedAt,
+      changeFrequency: "monthly" as ChangeFrequency,
+      // Phase 39.4: Boost 8 hub posts to high priority — topical authority anchors
+      priority: HUB_SLUGS.has(post.slug) ? 0.8 : 0.6,
+    }));
 
   // Phase 38 FIX (Jul 4): Re-add tool variant pages to sitemap.
   // Phase 36 removed these + 301 redirected them → Google de-indexed 79 pages (286→207).
   // FIX: Restore all non-formula variants to sitemap. Formula variants stay noindex (via
   // generateMetadata) but are NOT 301 redirected — they serve 200 with noindex+canonical.
-  const NOINDEXED_VARIANT_SLUGS = new Set([
-    "auto-loan-717d83b1",
-    "auto-loan-92918ea9",
-    "retirement-planning-eb1dd78b",
-    "retirement-1M-30yr",
-    "afford-100k-40k-6-5pct",
-    "afford-130k-40k-7pct",
+  // Week 1 Indexing Cleanup (Jul 12, 2026): afford-* variants are actually index/follow
+  // per live HTML metadata. NOINDEXED_VARIANT_SLUGS is stale — keep set empty until verified.
+  const NOINDEXED_VARIANT_SLUGS = new Set<string>([
+    // Empty — all current variant pages emit index, follow (verified Jul 12)
   ]);
-
   function isFormulaVariant(slug: string): boolean {
     const parts = slug.split("-");
     const hasPct = parts.some((p) => p.endsWith("pct"));
@@ -243,11 +296,25 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
   // How-to-use guide pages — Phase 39.4 selective restore
   // Only re-add guides that GSC confirms are indexed (preserves their indexing status)
   // Source: .optimizer-data/gsc-pages-submitted-and-indexed-urls.json (93 indexed)
+  // Week 1 Indexing Cleanup (Jul 12): Expanded to 12 verified-indexed guides (was 4)
+  // 10 new orphans: how-to-use-{basic-calculator, simple-interest, tax-calculator,
+  // currency-converter, loan-comparison, debt-avalanche, perpetuity-calculator,
+  // npv-calculator, social-security, retirement-income} — all GSC-verified indexed.
   const INDEXED_GUIDE_SLUGS = new Set([
     "how-to-use-1099-calculator",
     "how-to-use-child-care-cost",
     "how-to-use-date-difference",
     "how-to-use-fraction-calculator",
+    "how-to-use-basic-calculator",
+    "how-to-use-simple-interest",
+    "how-to-use-tax-calculator",
+    "how-to-use-currency-converter",
+    "how-to-use-loan-comparison",
+    "how-to-use-debt-avalanche",
+    "how-to-use-perpetuity-calculator",
+    "how-to-use-npv-calculator",
+    "how-to-use-social-security",
+    "how-to-use-retirement-income",
   ]);
   const indexedGuides = getAllHowToGuides().filter((g) =>
     INDEXED_GUIDE_SLUGS.has(g.slug)

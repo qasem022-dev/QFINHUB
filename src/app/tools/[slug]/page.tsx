@@ -109,7 +109,7 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
                 operatingSystem: "All",
                 url: `https://qfinhub.com/tools/${variant.slug}`,
                 offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-                author: { "@type": "Person", name: "Qasem Mohammed", url: "https://qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
+                author: { "@type": "Person", name: "Qasem Mohammed", url: "https://www.qfinhub.com/about", sameAs: ["https://www.linkedin.com/in/qasem-mohammed"], jobTitle: "AI & Software Engineer, Founder & Lead Developer" },
               },
               variant.schema.howToSchema,
               ...(variant.faqs.length > 0
@@ -132,8 +132,8 @@ function VariantContentPage({ variant }: { variant: NonNullable<ReturnType<typeo
               {
                 "@type": "BreadcrumbList",
                 itemListElement: [
-                  { "@type": "ListItem", position: 1, name: "Home", item: "https://qfinhub.com/" },
-                  { "@type": "ListItem", position: 2, name: "Tools", item: "https://qfinhub.com/tools" },
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.qfinhub.com/" },
+                  { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.qfinhub.com/tools" },
                   { "@type": "ListItem", position: 3, name: variant.meta.title, item: `https://qfinhub.com/tools/${variant.slug}` },
                 ],
               },

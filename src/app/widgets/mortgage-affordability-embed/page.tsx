@@ -80,7 +80,7 @@ export default function MortgageAffordabilityWidgetPage() {
             author: {
               "@type": "Person",
               name: "Qasem Mohammed",
-              url: "https://qfinhub.com/about",
+              url: "https://www.qfinhub.com/about",
             },
           }),
         }}
