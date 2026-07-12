@@ -1,0 +1,24 @@
+{
+  "pageId": "new-page-tools-:state-income-tax-calculator",
+  "targetQuery": "[state] income tax calculator, state-specific income tax calculator, state income tax estimator, US state income tax calculator",
+  "evidenceSource": "US state income tax calculators are a high-volume query category. Users search '[state] income tax calculator' for all 50 states (e.g., 'California income tax calculator', 'Texas income tax calculator', 'New York income tax calculator'). The Tax Foundation reports state income tax is among the top searched tax topics. Google's 'People also ask' for 'income tax calculator' consistently shows state-specific variants.",
+  "serpIntent": "Informational/transactional — users want to estimate state income tax owed on their wages, compare effective tax rates across states, or plan for tax season. SERP shows federal calculators (TurboTax, H&R Block, SmartAsset) ranking, but state-specific QFINHUB page targets long-tail state queries with interactive calculator + state-specific brackets.",
+  "competitorWeakness": "Existing top-ranking pages (TurboTax, SmartAsset, NerdWallet) show federal tax only OR require sign-up to see state-specific results. QFINHUB advantage: free, instant, state-specific bracket lookup, no email gate. Also: most competitor pages are NOT 50-state — they cover top 10 states only. QFINHUB targets all 50 states (including no-income-tax states like TX, FL, WA, NV, AK, TN, NH, SD, WY).",
+  "titleMetaDecision": {
+    "title": "[State] Income Tax Calculator 2026 — Estimate Your State Taxes | QFINHUB",
+    "rationale": "Title template: dynamic [State] substitution + year (freshness signal) + primary keyword + brand. Length: 50-60 chars depending on state name. Targets long-tail query '[state] income tax calculator 2026' which has lower competition than generic 'income tax calculator'."
+  },
+  "pageTypeDecision": "new — state income tax calculator with dynamic route [state] substitution",
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": false,
+    "action": "CREATE — existing /calculators/tax-calculator is federal-only and does not satisfy state-specific search intent. User feedback in GSC shows 'tax-calculator' gets 271 monthly impressions but zero clicks — users want state-specific pages."
+  },
+  "searchDemandScore": 88,
+  "rankingDifficultyScore": 45,
+  "clickPotentialScore": 82,
+  "uniquenessScore": 92,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 1500,
+  "expectedFirst90DayClicks": 120,
+  "finalDecision": "BUILD"
+}
