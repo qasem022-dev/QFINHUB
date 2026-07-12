@@ -4,9 +4,10 @@ export const metadata: Metadata = {
   title: "AI Financial Specialist — Custom Calculator Builder",
   description:
     "Describe your financial scenario in plain language and our AI builds a custom calculator with interactive charts, personalized analysis, and actionable plans — instantly and free.",
-  // Phase 38: noindex — client-side interactive tool, not content page.
-  // Prevents AdSense from flagging as thin content (spinner-only SSR).
-  robots: { index: false, follow: true },
+  // Indexed: page now has 1,500+ words of SSR content beneath the AI widget
+  // (methodology, use cases, limitations, FAQ). AdSense "low value content"
+  // remediation: content must be crawlable, not hidden behind JS.
+  robots: { index: true, follow: true },
   openGraph: {
     title: "AI Financial Specialist | QFINHUB",
     description:

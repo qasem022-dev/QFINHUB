@@ -1,0 +1,66 @@
+{
+  "generated": "2026-07-11T19:00Z",
+  "methodology": "Regex-extracted content field word counts from posts.ts",
+  "total_posts": 114,
+  "non_nj_hub": 96,
+  "priority_bands": {
+    "P1_under_500w": 10,
+    "P2_500_700w": 55,
+    "P3_700_1000w": 11,
+    "OK_1000w_plus": 20
+  },
+  "p1_thin_posts": [
+    {
+      "slug": "retire-by-40-calculator-how-much-needed",
+      "words": 180,
+      "redirect_to": "/blog/fed-and-your-savings-investments"
+    },
+    {
+      "slug": "monthly-mortgage-payment-formula-tax-insurance",
+      "words": 184,
+      "redirect_to": "/calculators/mortgage-calculator"
+    },
+    {
+      "slug": "200k-mortgage-payment-30-years",
+      "words": 190,
+      "redirect_to": "/calculators/mortgage-calculator"
+    },
+    {
+      "slug": "how-much-mortgage-afford-100k-salary",
+      "words": 251,
+      "redirect_to": "/calculators/mortgage-affordability"
+    },
+    {
+      "slug": "20000-loan-5-years-8-percent-monthly-payment",
+      "words": 315,
+      "redirect_to": "/calculators/loan-calculator"
+    },
+    {
+      "slug": "investment-calculator-withdrawals",
+      "words": 409,
+      "redirect_to": "/calculators/investment-return"
+    },
+    {
+      "slug": "treasury-selloff-hits-mortgages-how-to-protect-your-home-loan",
+      "words": 456,
+      "redirect_to": "/blog/fed-and-your-mortgage"
+    },
+    {
+      "slug": "housing-affordability-breakthrough-how-new-policies-could-ma",
+      "words": 464,
+      "redirect_to": "/blog/fed-and-your-mortgage"
+    },
+    {
+      "slug": "stablecoin-regulation-and-your-mortgage-what-the-genius-act-",
+      "words": 471,
+      "redirect_to": "/blog/fed-enforcement-actions"
+    },
+    {
+      "slug": "investing-cybersecurity-stocks-are-surging-one-looks-promisi",
+      "words": 483,
+      "redirect_to": "/blog/fed-and-your-savings-investments"
+    }
+  ],
+  "p2_posts_count": 55,
+  "nj_post_count": 26
+}

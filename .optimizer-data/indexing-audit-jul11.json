@@ -75,5 +75,64 @@
     ".optimizer-data/WEEK1_PRIORITY_QUEUE_REFRESH.md",
     ".optimizer-data/phase39-indexing-submission-list.json",
     ".optimizer-data/indexing-audit-jul11.json (this file)"
+  ],
+  "action_executed": {
+    "date": "2026-07-11T23:35Z",
+    "commit": "feb7244",
+    "action": "Expanded relatedCalculators on 8 Phase 39.3 hubs from 4 to 8 each (32 new internal links added)",
+    "also_fixed": "Broken emergency-fund link in fed-enforcement-actions (was 404, now links to valid em-fund slug)",
+    "verification": {
+      "all_8_hubs_live": true,
+      "calc_links_per_hub": {
+        "min": 8,
+        "max": 9,
+        "avg": 8.25
+      },
+      "phase39_2_calcs_with_4_plus_incoming": [
+        "401k-calculator (8)",
+        "loan-calculator (8)",
+        "mortgage-calculator (7)",
+        "compound-interest (7)",
+        "investment-return (6)",
+        "tax-calculator (5)",
+        "debt-payoff (4)"
+      ],
+      "phase39_2_calcs_with_1_to_3_incoming": [
+        "mortgage-affordability (1)",
+        "lifetime-value (2)",
+        "inventory-turnover (1)"
+      ],
+      "typescript_clean": true,
+      "broken_link_fixed": "emergency-fund -> em-fund (200 OK)"
+    }
+  },
+  "model_routing_fix": {
+    "date": "2026-07-11T18:48Z",
+    "issue_1": "delegation.model=deepseek-v4-pro + provider=deepseek with empty api_key. DEEPSEEK_API_KEY unset in shell env. Subagents fell back to DEEPINFRA_API_KEY (invalid).",
+    "issue_2": "Model name 'MiniMax-M3' is invalid \u2014 supported names are 'MiniMax-M2.7' and 'MiniMax-M2.7-highspeed' per hermes-agent docs.",
+    "fix": "Changed ~/.hermes/config.yaml: model.default + models.default/pro/content + delegation.model all = 'MiniMax-M2.7'. provider=minimax.",
+    "verification": "smoke test deleg_3611620b in flight"
+  },
+  "deploys_jul11": [
+    {
+      "commit": "feb7244",
+      "action": "Expand hub relatedCalculators 4->8",
+      "verified": true
+    },
+    {
+      "commit": "a61efd7",
+      "action": "Restore 5 indexed orphans to sitemap (532->539)",
+      "verified": true
+    },
+    {
+      "commit": "38a683d",
+      "action": "Add 'Federal Reserve & Your Money' homepage section (8 hub links)",
+      "verified": true
+    },
+    {
+      "commit": "afa5953",
+      "action": "Add lifetime-value + inventory-turnover to homepage (2 missing Phase 39.2 calcs)",
+      "verified": true
+    }
   ]
 }

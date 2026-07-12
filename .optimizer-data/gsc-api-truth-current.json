@@ -1,18 +1,18 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-07-04T15:00:43.322617+00:00",
-  "pulled_at": "2026-07-04T15:00:43Z",
+  "generated": "2026-07-12T00:36:32.373422+00:00",
+  "pulled_at": "2026-07-12T00:36:32Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "auth_method": "service_account",
   "service_account_email": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
   "date_range": {
-    "start": "2026-06-25",
-    "end": "2026-07-01"
+    "start": "2026-07-03",
+    "end": "2026-07-09"
   },
   "previous_7d_range": {
-    "start": "2026-06-18",
-    "end": "2026-06-24"
+    "start": "2026-06-26",
+    "end": "2026-07-02"
   },
   "dimensions_pulled": [
     "page",
@@ -21,19 +21,19 @@
   ],
   "row_limits": 500,
   "metrics_7d": {
-    "impressions": 519,
-    "clicks": 1,
-    "ctr_pct": 0.2,
-    "avg_position": 59.2,
-    "pages_with_impressions": 65,
-    "query_count": 181,
-    "query_impressions": 329,
-    "query_page_rows": 181
+    "impressions": 486,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 63.4,
+    "pages_with_impressions": 45,
+    "query_count": 169,
+    "query_impressions": 333,
+    "query_page_rows": 169
   },
   "metrics_28d": {
-    "impressions": 1828,
+    "impressions": 1886,
     "clicks": 2,
-    "pages_with_impressions": 127,
+    "pages_with_impressions": 124,
     "pages_with_clicks": 2,
     "clicked_pages": [
       "https://www.qfinhub.com/tools/investment-25k-10yr",
@@ -41,17 +41,17 @@
     ]
   },
   "previous_7d": {
-    "start": "2026-06-18",
-    "end": "2026-06-24",
-    "impressions": 357
+    "start": "2026-06-26",
+    "end": "2026-07-02",
+    "impressions": 523
   },
   "change_7d": {
-    "impressions": 162,
-    "impressions_pct": 45.4
+    "impressions": -37,
+    "impressions_pct": -7.1
   },
   "freshness_proof": {
     "freshness": "FRESH",
-    "checksum": "493295155ae2",
+    "checksum": "31349c51dcc2",
     "previous_checksum": null,
     "date_range_advanced": true,
     "cache_used": false,
