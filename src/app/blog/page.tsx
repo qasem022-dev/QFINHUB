@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Calendar, Clock, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blog — Financial Guides, Calculator Tutorials & Personal Finance Tips",
   description:
-    "Practical financial tips, calculator guides, and personal finance insights from QFINHUB. Learn about mortgages, loans, investing, retirement, taxes, and more.",
+    "Practical financial tips, calculator guides, and personal finance insights — written for real people, not experts. Covers mortgages, loans, investing, retirement, taxes, and more.",
   openGraph: {
     title: "Blog | QFINHUB",
     description:
