@@ -234,22 +234,22 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/blog/treasury-selloff-hits-mortgages-how-to-protect-your-home-loan",
+        source: "/blog/treasury-selloff-hits-mortgages-how-to-protect-your-home-loan-plans",
         destination: "/blog/fed-and-your-mortgage",
         permanent: true,
       },
       {
-        source: "/blog/housing-affordability-breakthrough-how-new-policies-could-impact-your-mortgage-a",
+        source: "/blog/housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
         destination: "/blog/fed-and-your-mortgage",
         permanent: true,
       },
       {
-        source: "/blog/stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homeowner",
+        source: "/blog/stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers",
         destination: "/blog/fed-enforcement-actions",
         permanent: true,
       },
       {
-        source: "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising",
+        source: "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
         destination: "/blog/fed-and-your-savings-investments",
         permanent: true,
       },
