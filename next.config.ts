@@ -202,7 +202,73 @@ const nextConfig: NextConfig = {
         destination: "/blog/global-central-banks",
         permanent: true,
       },
-
+      // Phase 39.4: Thin evergreen posts (<500w) → hubs/calcs
+      {
+        source: "/blog/retire-by-40-calculator-how-much-needed",
+        destination: "/blog/fed-and-your-savings-investments",
+        permanent: true,
+      },
+      {
+        source: "/blog/monthly-mortgage-payment-formula-tax-insurance",
+        destination: "/calculators/mortgage-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/200k-mortgage-payment-30-years",
+        destination: "/calculators/mortgage-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/how-much-mortgage-afford-100k-salary",
+        destination: "/calculators/mortgage-affordability",
+        permanent: true,
+      },
+      {
+        source: "/blog/20000-loan-5-years-8-percent-monthly-payment",
+        destination: "/calculators/loan-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/investment-calculator-withdrawals",
+        destination: "/calculators/investment-return",
+        permanent: true,
+      },
+      {
+        source: "/blog/treasury-selloff-hits-mortgages-how-to-protect-your-home-loan",
+        destination: "/blog/fed-and-your-mortgage",
+        permanent: true,
+      },
+      {
+        source: "/blog/housing-affordability-breakthrough-how-new-policies-could-impact-your-mortgage-a",
+        destination: "/blog/fed-and-your-mortgage",
+        permanent: true,
+      },
+      {
+        source: "/blog/stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homeowner",
+        destination: "/blog/fed-enforcement-actions",
+        permanent: true,
+      },
+      {
+        source: "/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising",
+        destination: "/blog/fed-and-your-savings-investments",
+        permanent: true,
+      },
+      // Phase 39.4: Remaining NJ posts (month-year slugs)
+      {
+        source: "/blog/fed-minutes-march-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+        destination: "/blog/fomc-rate-decisions-explained",
+        permanent: true,
+      },
+      {
+        source: "/blog/fed-minutes-april-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+        destination: "/blog/fomc-rate-decisions-explained",
+        permanent: true,
+      },
+      {
+        source: "/blog/mortgage-rates-june-2026-current-rates-home-affordability-calculator",
+        destination: "/blog/fed-and-your-mortgage",
+        permanent: true,
+      },
     ];
   },
 };
