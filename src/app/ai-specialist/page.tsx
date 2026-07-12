@@ -801,26 +801,38 @@ export default function AISpecialistPage() {
           </section>
 
           <footer className="text-xs text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-6">
-            <p>
-              The AI Financial Specialist is part of QFINHUB&apos;s
-              mission to make accurate financial information universally
-              accessible. Learn more about our editorial standards on our{" "}
-              <a
-                href="/editorial-policy"
-                className="text-primary-600 dark:text-primary-400 underline"
-              >
-                Editorial Policy
-              </a>{" "}
-              page or read about our formula sources on the{" "}
-              <a
-                href="/methodology"
-                className="text-primary-600 dark:text-primary-400 underline"
-              >
-                Methodology
-              </a>{" "}
-              page.
-            </p>
-          </footer>
+                      <p>
+                        The AI Financial Specialist is part of QFINHUB&apos;s
+                        mission to make accurate financial information universally
+                        accessible. Our team of financial analysts and software
+                        engineers continuously review and refine the underlying
+                        prompts and output schemas to ensure the AI-generated
+                        calculators match the same accuracy standards as our
+                        hand-built ones. Learn more about our editorial standards on our{' '}
+                        <a
+                          href="/editorial-policy"
+                          className="text-primary-600 dark:text-primary-400 underline"
+                        >
+                          Editorial Policy
+                        </a>{' '}
+                        page or read about our formula sources on the{' '}
+                        <a
+                          href="/methodology"
+                          className="text-primary-600 dark:text-primary-400 underline"
+                        >
+                          Methodology
+                        </a>{' '}
+                        page. To report an inaccurate AI-generated result or
+                        suggest an improvement, please use our{' '}
+                        <a
+                          href="/contact"
+                          className="text-primary-600 dark:text-primary-400 underline"
+                        >
+                          contact form
+                        </a>{' '}
+                        and we will investigate within 48 hours.
+                      </p>
+                    </footer>
         </div>
       </article>
     </>
