@@ -319,6 +319,200 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Mission & Values */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Our Mission
+          </h2>
+          <div className="prose prose-gray dark:prose-invert max-w-none">
+            <p>
+              <strong>To make accurate financial information universally
+              accessible.</strong> A 22-year-old opening their first savings
+              account, a 55-year-old planning for retirement, a small
+              business owner calculating payroll taxes — all of them deserve
+              the same accurate, unbiased financial calculations that
+              multi-million-dollar institutions use internally.
+            </p>
+            <p>
+              We believe the cost of financial illiteracy is one of the
+              largest economic drags on individuals and families. Bad
+              decisions about mortgages, retirement savings, and debt
+              compound over decades, costing the average household tens or
+              hundreds of thousands of dollars over a lifetime. Better tools
+              can change that.
+            </p>
+          </div>
+        </section>
+
+        {/* Values */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            What We Stand For
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                🎯 Accuracy Above All
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                A wrong number in a financial calculator can cost real
+                money. We treat accuracy like a medical device company
+                treats precision — as the foundation of everything else.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                🔓 Always Free
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                No paywalls. No premium tiers. No &quot;upgrade to
+                see results&quot;. Every calculator and every feature is
+                free for everyone, forever, with no sign-up required.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                🛡️ Privacy First
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                We don&apos;t sell your data, we don&apos;t require accounts
+                to use calculators, and we collect only what we need to run
+                the site. Your financial questions are your business.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                🌐 Editorial Independence
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Advertisers don&apos;t influence our recommendations,
+                formulas, or editorial output. Our only commitment is to
+                our users&apos; best interests.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                🌍 Global Accessibility
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Available in 33 languages and counting. Financial literacy
+                shouldn&apos;t be limited by geography or native language.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                📚 Education Over Sales
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                We&apos;re not selling you a product. We&apos;re teaching
+                you how to make better financial decisions with tools that
+                show your work.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* History */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Our Story
+          </h2>
+          <div className="prose prose-gray dark:prose-invert max-w-none">
+            <p>
+              QFINHUB launched in 2024 as a response to a frustration many
+              people share: every financial calculator site seems to be
+              either paywalled, ad-cluttered, or actively trying to sell
+              you something. I wanted a clean, fast, accurate place to
+              quickly run a mortgage calculation or check a retirement
+              projection without signing up, watching a video ad, or
+              handing over my email address.
+            </p>
+            <p>
+              The first version of QFINHUB was 12 calculators on a single
+              page. It grew from there based on user requests — every
+              calculator we&apos;ve added since has been suggested by at
+              least one user who needed it for a real decision. Today, the
+              platform hosts 125+ calculators, 1,700+ indexed pages, and
+              serves users in 33 languages across more than 150 countries.
+            </p>
+            <p>
+              We&apos;re still a small, independent team. We&apos;re not
+              backed by venture capital and we don&apos;t have outside
+              investors pushing for growth at any cost. We&apos;re funded
+              by contextual advertising and we&apos;re committed to keeping
+              QFINHUB free and accessible for as long as possible.
+            </p>
+          </div>
+        </section>
+
+        {/* Connect */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Connect
+          </h2>
+          <div className="prose prose-gray dark:prose-invert max-w-none">
+            <p>
+              We&apos;d love to hear from you — whether you have a
+              question, a calculator suggestion, an error report, or just
+              want to say hello. The fastest way to reach us is via our{" "}
+              <Link
+                href="/contact"
+                className="text-blue-600 dark:text-blue-400 underline"
+              >
+                contact form
+              </Link>
+              . You can also find us on social media:
+            </p>
+            <ul>
+              <li>
+                <strong>LinkedIn:</strong>{" "}
+                <a
+                  href="https://www.linkedin.com/in/qasem-mohammed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 underline"
+                >
+                  linkedin.com/in/qasem-mohammed
+                </a>
+              </li>
+              <li>
+                <strong>GitHub:</strong>{" "}
+                <a
+                  href="https://github.com/qasem-mohammed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 underline"
+                >
+                  github.com/qasem-mohammed
+                </a>
+              </li>
+              <li>
+                <strong>X (Twitter):</strong>{" "}
+                <a
+                  href="https://x.com/qfinhub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 underline"
+                >
+                  @qfinhub
+                </a>
+              </li>
+            </ul>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              For press inquiries, partnership requests, or general media
+              questions, please email{" "}
+              <a
+                href="mailto:q.finhub@gmail.com"
+                className="text-blue-600 dark:text-blue-400 underline"
+              >
+                q.finhub@gmail.com
+              </a>{" "}
+              with the subject line starting with &quot;PRESS:&quot; or
+              &quot;PARTNERSHIP:&quot; for fastest routing.
+            </p>
+          </div>
+        </section>
+
         {/* Disclaimer */}
         <YMYLDisclaimer />
       </div>

@@ -46,7 +46,7 @@ const contactMethods = [
 const faqs = [
   {
     q: "Is QFINHUB really free?",
-    a: "Yes, completely. All 125 calculators, the AI Specialist, and every feature on QFINHUB are 100% free — no hidden fees, no premium tiers, no credit card required.",
+    a: "Yes, completely. All 125 calculators, the AI Specialist, and every feature on QFINHUB are 100% free — no hidden fees, no premium tiers, no credit card required. We are funded by non-intrusive advertising, which is clearly labeled.",
   },
   {
     q: "Do I need an account to use the calculators?",
@@ -54,7 +54,43 @@ const faqs = [
   },
   {
     q: "How long does it take to get a response?",
-    a: "We respond to all inquiries within 24 hours during business days. For urgent matters, please include 'URGENT' in your email subject line.",
+    a: "We respond to all inquiries within 24 hours during business days (Monday–Friday). For urgent matters, please include 'URGENT' in your email subject line and we will prioritize your message.",
+  },
+  {
+    q: "Do you offer phone support?",
+    a: "We are a small remote team and do not currently offer phone support. Email is the fastest and most reliable way to reach us — every inquiry receives a written response with clear documentation of the resolution.",
+  },
+  {
+    q: "Can I suggest a new calculator or feature?",
+    a: "Absolutely. We actively review user suggestions and prioritize them based on demand and alignment with our editorial standards. Several of our calculators were built directly from user requests. Use the contact form or email us with your idea.",
+  },
+  {
+    q: "Do you provide financial advice?",
+    a: "No. QFINHUB provides educational tools and informational calculators, not personalized financial advice. For decisions involving significant money, taxes, or investments, please consult a qualified CFP®, CPA, or licensed attorney in your jurisdiction.",
+  },
+  {
+    q: "How do I report an error in a calculator?",
+    a: "Use the contact form or email us directly with the calculator URL, the inputs you entered, the result you received, and the result you expected. We investigate every report within 48 hours and credit verified corrections on the affected page.",
+  },
+  {
+    q: "Is my data private?",
+    a: "Yes. We do not sell your data, we do not require an account to use calculators, and we minimize the data we collect. See our Privacy Policy for the complete details on what we collect, why, and how long we keep it.",
+  },
+  {
+    q: "Do you work with advertisers or sponsors?",
+    a: "We display contextual advertising (Google AdSense) to support the site. Advertisers have no influence on our editorial content, calculator formulas, or recommendations. We do not accept payment for product placements or favorable treatment.",
+  },
+  {
+    q: "Can I use QFINHUB content or screenshots on my own site?",
+    a: "Our content is copyrighted. You may share links to our calculators freely. To reproduce our written content (guides, articles, calculator explanations), please contact us first — we grant permission in most cases with attribution.",
+  },
+  {
+    q: "How can I support QFINHUB?",
+    a: "The best way to support us is to share QFINHUB with anyone who might find it useful — friends, family, social media, online forums. You can also disable ad blockers on our site (we show minimal, non-intrusive ads only) or send us feedback to help us improve.",
+  },
+  {
+    q: "Where is QFINHUB based?",
+    a: "QFINHUB is operated by a fully-remote team headquartered in San Francisco, California, USA. We serve users worldwide and our calculators are available in 33 languages.",
   },
 ];
 
@@ -216,6 +252,106 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── What to Expect ── */}
+      <section className="px-4 py-12 bg-gray-50 dark:bg-surface-dark-elevated">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 text-center">
+            What to Expect When You Reach Out
+          </h2>
+          <p className="text-center text-sm text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+            We treat every message as an opportunity to make QFINHUB better.
+            Here&apos;s what happens after you send us a note.
+          </p>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-xl bg-white dark:bg-surface-dark p-6 border border-gray-200 dark:border-gray-700">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                <CheckCircle2 className="h-5 w-5" />
+              </div>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                1. Confirmation
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Within 1 hour during business hours you will receive an
+                auto-reply confirming we received your message and assigning a
+                tracking number.
+              </p>
+            </div>
+            <div className="rounded-xl bg-white dark:bg-surface-dark p-6 border border-gray-200 dark:border-gray-700">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                <MessageSquare className="h-5 w-5" />
+              </div>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                2. Personal Response
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Within 24 hours, a member of our team — usually Qasem directly
+                — will reply personally. We do not use templated responses or
+                chatbots for support.
+              </p>
+            </div>
+            <div className="rounded-xl bg-white dark:bg-surface-dark p-6 border border-gray-200 dark:border-gray-700">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
+                <ArrowRight className="h-5 w-5" />
+              </div>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                3. Resolution
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                We resolve 90%+ of inquiries in a single reply. For complex
+                issues (calculator bugs, account issues), we follow up with
+                status updates every 48 hours until resolved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── About our team ── */}
+      <section className="px-4 py-12">
+        <div className="mx-auto max-w-4xl">
+          <div className="rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-surface-dark-elevated p-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+              Who&apos;s Answering Your Message
+            </h2>
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              QFINHUB is built and maintained by a small, fully-remote team
+              led by{" "}
+              <Link
+                href="/about"
+                className="text-primary-600 dark:text-primary-400 underline font-medium"
+              >
+                Qasem Mohammed
+              </Link>
+              , an AI &amp; Software Engineer with 8+ years of experience in
+              financial technology and full-stack development. Every support
+              email you send is read by a real person on our team — never by
+              an automated system or an outsourced support agent.
+            </p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              We believe that building trust with our users starts with being
+              accessible, responsive, and transparent. If you ever feel that
+              we have fallen short of those standards, please tell us — your
+              feedback directly shapes how we improve.
+            </p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              For privacy-related inquiries (data deletion, account removal,
+              GDPR/CCPA requests), please email us with the subject line{" "}
+              <code className="px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-xs">
+                Privacy Request
+              </code>{" "}
+              and we will respond within 48 hours. See our{" "}
+              <Link
+                href="/privacy"
+                className="text-primary-600 dark:text-primary-400 underline font-medium"
+              >
+                Privacy Policy
+              </Link>{" "}
+              for full details.
+            </p>
           </div>
         </div>
       </section>
