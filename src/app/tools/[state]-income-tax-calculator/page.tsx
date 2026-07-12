@@ -267,14 +267,16 @@ const STATES: Record<string, StateData> = {
 //   /tools/california-income-tax-calculator → state = "california"
 const SUPPORTED_SLUGS = Object.keys(STATES).map((s) => `${s}-income-tax-calculator`);
 
-function getStateKeyFromSlug(slug: string): string | null {
-  // Strip the "-income-tax-calculator" suffix
+function getStateKeyFromSlug(slug: string | undefined): string | null {
+  // Defensive: Next.js may call this during prerender flows where
+  // params are still being resolved and could be undefined.
+  if (!slug || typeof slug !== "string") return null;
   if (!slug.endsWith("-income-tax-calculator")) return null;
   const key = slug.slice(0, -"-income-tax-calculator".length);
   return key in STATES ? key : null;
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return SUPPORTED_SLUGS.map((slug) => ({ state: slug.replace(/-income-tax-calculator$/, "") }));
 }
 
