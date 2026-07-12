@@ -153,11 +153,17 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
   }));
 
   // Blog post pages
+  const HUB_SLUGS = new Set([
+    "fed-and-your-mortgage", "fomc-rate-decisions-explained", "fed-enforcement-actions",
+    "fed-personnel-and-policy", "fed-and-your-savings-investments", "fed-bank-mergers-approvals",
+    "fed-stock-market-and-bonds", "global-central-banks",
+  ]);
   const blogPages: SitemapEntry[] = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: post.publishedAt,
     changeFrequency: "monthly" as ChangeFrequency,
-    priority: 0.6,
+    // Phase 39.4: Boost 8 hub posts to high priority — topical authority anchors
+    priority: HUB_SLUGS.has(post.slug) ? 0.8 : 0.6,
   }));
 
   // Phase 38 FIX (Jul 4): Re-add tool variant pages to sitemap.
