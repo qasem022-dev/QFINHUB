@@ -15,6 +15,12 @@ import { parseVariantSlug } from "@/lib/programmatic-seo/seo-utils";
 import { ShareDialog } from "@/components/calculators/share-dialog";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
 import type { CategoryType } from "@/types/calculator";
+import {
+  STATE_INCOME_TAX_DATA,
+  STATE_INCOME_TAX_SLUGS,
+  getStateKeyFromTaxSlug,
+} from "@/lib/state-income-tax";
+import { StateTaxCalculatorClient } from "@/components/calculators/state-tax-calculator-client";
 
 interface ToolsPageProps {
   params: Promise<{ slug: string }>;
@@ -24,11 +30,49 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   const variants = getAllVariantPages();
-  return variants.map((v) => ({ slug: v.slug }));
+  // Also include state income tax URLs (e.g. /tools/california-income-tax-calculator).
+  // These used to live at /tools/[state]-income-tax-calculator but Next.js App Router
+  // does NOT honor literal text after a dynamic segment in the same folder name —
+  // that folder was being registered as a literal, unreachable path. State tax URLs
+  // are now served from this catch-all /tools/[slug] route.
+  return [
+    ...variants.map((v) => ({ slug: v.slug })),
+    ...STATE_INCOME_TAX_SLUGS.map((slug) => ({ slug })),
+  ];
+}
+
+// Helper: detect state tax URL and return state key + canonical slug
+function resolveStateTaxSlug(slug: string): string | null {
+  if (!STATE_INCOME_TAX_SLUGS.includes(slug)) return null;
+  return getStateKeyFromTaxSlug(slug);
 }
 
 export async function generateMetadata({ params }: ToolsPageProps) {
   const { slug } = await params;
+
+  // State income tax calculator: handle BEFORE variant lookup
+  const stateKey = resolveStateTaxSlug(slug);
+  if (stateKey) {
+    const stateData = STATE_INCOME_TAX_DATA[stateKey]!;
+    const title = `${stateData.name} Income Tax Calculator 2026`;
+    const description = `Calculate your ${stateData.name} state income tax for 2026. ${stateData.description} Use our free ${stateData.name} tax calculator to estimate your tax owed, effective rate, and take-home pay.`;
+    return {
+      title,
+      description,
+      robots: { index: true, follow: true },
+      alternates: {
+        canonical: `https://www.qfinhub.com/tools/${slug}`,
+      },
+      openGraph: {
+        title,
+        description,
+        url: `https://www.qfinhub.com/tools/${slug}`,
+        siteName: "QFINHUB",
+        type: "website",
+      },
+    };
+  }
+
   const variant = getVariantBySlug(slug);
 
   if (!variant) {
@@ -351,6 +395,54 @@ function escHtml(str: string): string {
 
 export default async function ToolsSlugPage({ params }: ToolsPageProps) {
   const { slug } = await params;
+
+  // State income tax calculator: render BEFORE variant lookup
+  const stateKey = resolveStateTaxSlug(slug);
+  if (stateKey) {
+    const stateData = STATE_INCOME_TAX_DATA[stateKey]!;
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: stateData.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      })),
+    };
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+          <CalculatorLayout
+            title={`${stateData.name} Income Tax Calculator 2026`}
+            description={stateData.description}
+            results={
+              <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6 text-sm text-slate-300">
+                <p className="mb-2 font-semibold text-white">Live results</p>
+                <p>
+                  Your state income tax breakdown will appear here as you fill in the
+                  calculator on the left. Enter your filing status, taxable income,
+                  and any adjustments to see your effective rate, marginal bracket,
+                  and total state tax owed for {stateData.name}.
+                </p>
+              </div>
+            }
+          >
+            <div className="mb-6 rounded-xl border border-slate-800 bg-slate-900/50 p-6">
+              <p className="text-sm leading-relaxed text-slate-300">{stateData.intro}</p>
+            </div>
+            <div className="space-y-6">
+              <StateTaxCalculatorClient state={stateKey} stateData={stateData} />
+            </div>
+          </CalculatorLayout>
+        </div>
+      </>
+    );
+  }
+
   const variant = getVariantBySlug(slug);
 
   // If no variant found, check if it's a direct calculator slug and redirect
