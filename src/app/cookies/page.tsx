@@ -4,9 +4,12 @@ export const metadata: Metadata = {
   title: "Cookie Policy",
   description:
     "QFINHUB Cookie Policy — Learn about the cookies and similar tracking technologies used on our platform and how you can control them.",
+  alternates: {
+    canonical: "https://www.qfinhub.com/cookies",
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

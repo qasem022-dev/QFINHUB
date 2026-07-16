@@ -4,10 +4,18 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "QFINHUB Privacy Policy — Learn how we collect, use, store, and protect your personal data when you use our financial tools and services.",
+  alternates: {
+    canonical: "https://www.qfinhub.com/privacy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Privacy Policy | QFINHUB",
     description:
       "Learn how QFINHUB collects, uses, stores, and protects your personal data.",
+    url: "https://www.qfinhub.com/privacy",
   },
 };
 

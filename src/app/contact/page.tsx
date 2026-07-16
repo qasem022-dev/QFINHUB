@@ -7,10 +7,18 @@ export const metadata: Metadata = {
   title: "Contact Us — Get Support & Send Feedback",
   description:
     "Have a question or feedback for QFINHUB? Contact our team via email at q.finhub@gmail.com. We respond to all inquiries within 24 hours. We're here to help.",
+  alternates: {
+    canonical: "https://www.qfinhub.com/contact",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Contact QFINHUB | Free Financial Calculators Support",
     description:
       "Need help or have feedback? Contact the QFINHUB team. We respond to all inquiries within 24 hours.",
+    url: "https://www.qfinhub.com/contact",
   },
 };
 

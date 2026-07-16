@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "QFINHUB Terms of Service — Acceptable use, user responsibilities, disclaimers, and legal agreements for using our financial tools platform.",
+  alternates: {
+    canonical: "https://www.qfinhub.com/terms",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Terms of Service | QFINHUB",
     description:
