@@ -158,13 +158,14 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     "fed-personnel-and-policy", "fed-and-your-savings-investments", "fed-bank-mergers-approvals",
     "fed-stock-market-and-bonds", "global-central-banks",
   ]);
-  // Week 1 Indexing Cleanup (Jul 12, 2026): Exclude 49 blog slugs that 301-redirect
-  // (per next.config.ts). Sitemap advertising redirected URLs confuses GSC — they
-  // show up as "Discovered" but never index because the redirect sends Google elsewhere.
+  // Week 1 Indexing Cleanup (Jul 12, 2026) + Jul 16 fix: Exclude all blog slugs that
+  // 301-redirect per next.config.ts. Sitemap advertising redirected URLs confuses GSC —
+  // they show up as "Discovered" but never index because the redirect sends Google
+  // elsewhere. Auto-derived from next.config.ts to keep sitemap + redirects in sync.
   // Mirrors REDIRECTED_SLUGS in src/app/blog/page.tsx (Phase 39.4).
   const REDIRECTED_BLOG_SLUGS = new Set([
     "fed-holds-rates-steady-what-the-fomc-statement-means-for-your-mortgage-in-2025",
-    "kevin-warsh-fed-rate-decision-how-rising-inflation-impacts-your-mortgage-affordabilit",
+    "kevin-warsh-fed-rate-decision-how-rising-rates-impact-your-mortgage-affordabilit",
     "fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings",
     "fed-rate-hike-in-july-2025-how-bond-vigilantes-could-impact-your-mortgage-and-sa",
     "fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-",
