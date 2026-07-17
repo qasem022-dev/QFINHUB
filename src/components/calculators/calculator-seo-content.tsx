@@ -1,6 +1,7 @@
 import { CalculatorContent } from "@/types/calculator-content";
 import Link from "next/link";
-import { blogPosts } from "@/lib/blog/posts";
+import { blogPosts, type BlogPost } from "@/lib/blog/posts";
+import { CALCULATOR_BLOG_LINKS } from "@/lib/calculator-blog-links";
 
 interface CalculatorSEOContentProps {
   content: CalculatorContent;
@@ -10,15 +11,39 @@ interface CalculatorSEOContentProps {
 /**
  * Renders educational SEO content (500-800 words) on calculator pages.
  * This helps with Google E-E-A-T, YMYL compliance, and organic search ranking.
+ *
+ * Related-blog-post strategy (Jul 17 fix): primary source is blog posts whose
+ * relatedCalculators includes currentSlug (max 4). If that's empty, fall back
+ * to the CALCULATOR_BLOG_LINKS map (max 4) so every calculator page renders
+ * at least 1 set of internal blog links — Google's discovery signal.
  */
 export function CalculatorSEOContent({
   content,
   currentSlug,
 }: CalculatorSEOContentProps) {
-  // Find blog posts that reference this calculator
-  const relatedBlogPosts = blogPosts
+  // Primary: blog posts that reference this calculator
+  const primary = blogPosts
     .filter((post) => post.relatedCalculators?.includes(currentSlug))
     .slice(0, 4);
+
+  // Fallback: top 4 entries from the calculator-blog link map. The downstream
+  // consumer only reads slug/title/description/readingTime, so we synthesize a
+  // minimal BlogPost-shaped object to satisfy TS without false required-field
+  // promises about content/category/publishedAt.
+  const fallback = (CALCULATOR_BLOG_LINKS[currentSlug] || [])
+    .slice(0, 4)
+    .map((entry): BlogPost | null => {
+      const full = blogPosts.find((p) => p.slug === entry.slug);
+      if (!full) return null;
+      return {
+        ...full,
+        slug: full.slug,
+        title: full.title,
+      } as BlogPost;
+    })
+    .filter((p): p is BlogPost => p !== null);
+
+  const relatedBlogPosts: BlogPost[] = primary.length > 0 ? primary : fallback;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

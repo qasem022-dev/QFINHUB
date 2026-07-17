@@ -353,7 +353,7 @@ export default async function CalculatorDetailPage({
         <RelatedArticles
           calculatorSlug={slug}
           articles={CALCULATOR_BLOG_LINKS[slug] || []}
-          maxResults={5}
+          maxResults={9}
         />
         <RelatedDecisions
           calculatorSlug={slug}
