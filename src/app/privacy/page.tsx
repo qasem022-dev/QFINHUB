@@ -321,6 +321,68 @@ const sections = [
     ),
   },
   {
+    title: "Advertising and Google AdSense",
+    content: (
+      <>
+        <p className="mb-4">
+          QFINHUB uses Google AdSense, a third-party advertising service
+          provided by Google LLC. AdSense uses cookies and similar technologies
+          to serve ads based on a user&apos;s prior visits to our website or other
+          sites on the internet. Google&apos;s use of advertising cookies enables
+          it and its partners to serve ads based on your visit to our site and/or
+          other sites on the internet.
+        </p>
+        <p className="mb-4">
+          You may opt out of personalized advertising by visiting{" "}
+          <a
+            href="https://www.google.com/settings/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-600 underline underline-offset-2 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+          >
+            Google Ads Settings
+          </a>
+          . You may also opt out of certain third-party vendors&apos; use of
+          cookies for personalized advertising by visiting{" "}
+          <a
+            href="https://www.aboutads.info"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-600 underline underline-offset-2 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+          >
+            www.aboutads.info
+          </a>
+          .
+        </p>
+        <p>
+          Third-party vendors, including Google, use cookies to serve ads based
+          on a user&apos;s prior visits to our website. Users may opt out of the
+          use of the DART cookie by visiting the Google Ad and Content Network
+          privacy policy. We do not control third-party advertisers&apos; data
+          practices, and any questions about their use of your information
+          should be directed to them.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Calculator Inputs: Local Processing Statement",
+    content: (
+      <p>
+        When you use any of our financial calculators, the numerical values you
+        enter are processed locally in your browser using JavaScript. We do not
+        transmit the inputs you type into our calculators to our servers, and
+        we do not store them in any database. This means your financial
+        scenario data — loan amounts, salaries, asset values, etc. — never
+        leaves your device. This is by design: it preserves your privacy, makes
+        the tools feel instant, and eliminates an entire class of data breach
+        risks. Aggregated, anonymized usage analytics may be collected about
+        which calculators are most popular, but never the specific values you
+        entered into them.
+      </p>
+    ),
+  },
+  {
     title: "Changes to This Policy",
     content: (
       <p>

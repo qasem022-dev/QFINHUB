@@ -136,6 +136,54 @@ export default function DisclaimerPage() {
             after any changes constitutes acceptance of the updated Disclaimer.
           </p>
         </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Data Sources and Methodology</h2>
+          <p className="mt-3 leading-relaxed">
+            QFINHUB calculators rely on data from authoritative public sources, including the
+            Internal Revenue Service (IRS) for federal tax brackets and contribution limits, the
+            U.S. Bureau of Labor Statistics (BLS) for cost-of-living indices, the Federal Reserve
+            Economic Data (FRED) for historical interest rates and market returns, the Social
+            Security Administration (SSA) for bend points and benefit calculations, the Federal
+            Housing Finance Agency (FHFA) for conforming loan limits, and individual state revenue
+            departments for state income tax brackets. We refresh this data annually or whenever
+            official sources publish material updates. Despite these rigorous sources, calculation
+            outputs may differ from official figures due to rounding, simplification of complex tax
+            provisions, or omission of jurisdiction-specific factors. When in doubt, cross-reference
+            our results against the source publication or a qualified professional in your state.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Jurisdiction and Applicable Law</h2>
+          <p className="mt-3 leading-relaxed">
+            QFINHUB is operated from the United States and the calculators are calibrated for U.S.
+            financial products, U.S. dollar amounts, and U.S. tax law as of the publication date.
+            Users accessing this site from other jurisdictions do so at their own initiative and
+            remain responsible for understanding whether local regulations make the calculators
+            applicable. This Disclaimer and your use of QFINHUB are governed by the laws of the
+            State of Delaware, without regard to its conflict of law principles. Any disputes
+            arising from use of this site shall be resolved exclusively in the state and federal
+            courts located in Delaware. If any provision of this Disclaimer is held unenforceable,
+            the remaining provisions remain in full force and effect.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Limitation of Liability</h2>
+          <p className="mt-3 leading-relaxed">
+            To the maximum extent permitted by applicable law, QFINHUB, its owners, employees,
+            contractors, and affiliates shall not be liable for any indirect, incidental, special,
+            consequential, or punitive damages, including but not limited to loss of profits, data,
+            goodwill, or other intangible losses, resulting from your access to or use of our
+            calculators and content. This limitation applies whether the alleged liability is
+            based on contract, tort, negligence, statute, or any other basis, and even if QFINHUB
+            has been advised of the possibility of such damages. In jurisdictions that do not
+            allow the exclusion or limitation of certain damages, our liability shall be limited to
+            the fullest extent permitted by law. Your sole remedy for dissatisfaction with the site
+            is to stop using it.
+          </p>
+        </section>
       </div>
 
       <div className="mt-12 rounded-xl border border-zinc-200 bg-gray-50 p-6 dark:border-zinc-700 dark:bg-zinc-900/50">

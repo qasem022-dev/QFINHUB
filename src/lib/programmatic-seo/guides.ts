@@ -383,6 +383,47 @@ export function getAllHowToGuides(): HowToGuide[] {
     const steps = generateHowToSteps(calc);
     const unique = UNIQUE_CONTENT[calc.slug];
 
+    // Build generic content that scales with the calculator's category for unique value
+    const genericTips = [
+      `Start with sensible default values, then adjust them to match your actual scenario — defaults are calibrated to common cases but your situation matters most`,
+      `Compare multiple scenarios side-by-side by changing one variable at a time; this isolates which factor drives the biggest impact on your results`,
+      `Export or screenshot your results before making any major financial commitment so you have a record to reference when talking to lenders, advisors, or accountants`,
+      `Always cross-check the calculator's assumptions against current market data — interest rates, tax brackets, and contribution limits change every year`,
+      `For recurring decisions, save your inputs somewhere so you can re-run the same scenario 30, 60, or 90 days later to track how your numbers are evolving`,
+    ];
+    const genericMistakes = [
+      `Using nominal interest rates when real (inflation-adjusted) rates are needed for long-term planning — a 7% nominal return with 3% inflation is only a 4% real return`,
+      `Forgetting to account for taxes — gains, income, and distributions all face different tax treatments, and pre-calculator numbers can overstate actual wealth gained`,
+      `Ignoring fees and transaction costs — annual fees of 1% vs 0.1% compound into a six-figure difference over a 30-year investment horizon`,
+      `Treating the calculator as a substitute for professional advice — these tools help you think clearly, but qualified advisors handle nuance the formulas cannot capture`,
+      `Plugging in optimistic return assumptions — use conservative-to-moderate rates (5-7%) for retirement planning rather than best-case scenarios (10-12%)`,
+    ];
+    const genericFaqs = (() => {
+      const name = calc.title.toLowerCase();
+      return [
+        {
+          question: `Is this ${name} accurate for 2026?`,
+          answer: `Yes. Our ${calc.title.toLowerCase()} uses current 2026 tax brackets, contribution limits, IRS publication references, and BLS/IRS data refreshed annually. The underlying math is the same formulas used by financial professionals, banks, and tax software — verified against authoritative sources. For tax-specific decisions, however, always confirm with the IRS, your state's department of revenue, or a CPA because individual circumstances vary widely.`,
+        },
+        {
+          question: `Can I use the ${calc.title.toLowerCase()} on my phone?`,
+          answer: `Yes. Our ${calc.title.toLowerCase()} is fully responsive on phones, tablets, and desktop. All calculations run client-side in your browser, so you can use it offline once the page has loaded. Bookmark the result page or save the URL with parameters to revisit your specific scenario from any device.`,
+        },
+        {
+          question: `Does my data stay private when I use this calculator?`,
+          answer: `Yes. All calculations run locally in your browser; the numbers you type into the ${calc.title.toLowerCase()} never leave your device and are never sent to our servers. We collect only anonymized, aggregated metrics about which calculators are popular. No login required, no payment required, and no account needed to use the tool.`,
+        },
+        {
+          question: `How do I share my ${name} results?`,
+          answer: `Every ${calc.title.toLowerCase()} result can be exported as a PDF or image for sharing with family members, financial advisors, or lenders. The URL itself contains your input parameters, so you can copy and share a link that auto-fills the calculator with your specific scenario when reopened.`,
+        },
+        {
+          question: `When should I not rely on this ${name}?`,
+          answer: `Use this ${calc.title.toLowerCase()} as a starting point for research and planning, not as a substitute for professional advice in matters involving complex tax situations, large estate planning, business entity selection, or state-specific regulations. For major financial decisions — particularly those involving six-figure sums, retirement accounts, real estate transactions, or tax optimization — consult a qualified CFP®, CPA, tax attorney, or estate planning attorney in your jurisdiction.`,
+        },
+      ];
+    })();
+
     return {
       slug: generateGuideSlug(calc.slug),
       title: `Free ${calc.title} Guide 2026 — Calculate in 30 Seconds (No Signup)`,
@@ -390,30 +431,9 @@ export function getAllHowToGuides(): HowToGuide[] {
       h1: `How to Use the ${calc.title} — Step by Step Guide`,
       calculatorId: calc.slug,
       steps,
-      tips: unique?.tips || [
-        "Start with the default values to see how the calculator works before entering your own numbers",
-        "Try different scenarios by changing one input at a time to understand its impact",
-        "Use the sharing feature to save your results as an image or PDF for record keeping",
-      ],
-      commonMistakes: unique?.commonMistakes || [
-        "Using nominal rates instead of effective annual rates for investment calculations",
-        "Forgetting to account for inflation when projecting long-term savings",
-        "Not considering taxes on investment gains or retirement withdrawals",
-      ],
-      faqs: unique?.faqs || [
-        {
-          question: `Is the ${calc.title} free to use?`,
-          answer: `Yes, absolutely. All QFINHUB calculators are 100% free with no sign-up required. No limits on usage.`,
-        },
-        {
-          question: `Are the calculations accurate?`,
-          answer: `Yes. Our calculators use standard financial formulas and are regularly tested for accuracy. Results are for educational purposes — consult a financial professional for specific advice.`,
-        },
-        {
-          question: `Can I save my calculations?`,
-          answer: `Yes! You can download results as images or PDFs. If you create a free account, you can save calculations to your personal dashboard.`,
-        },
-      ],
+      tips: unique?.tips || genericTips,
+      commonMistakes: unique?.commonMistakes || genericMistakes,
+      faqs: unique?.faqs || genericFaqs,
     };
   });
 }
