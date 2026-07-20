@@ -242,13 +242,16 @@ function getHowToUseSection(
       const sv = params.currentSavings ?? 50000;
       const rate = params.rate ?? 7;
       const fireNumber = exp * 25;
+      const yrsToFi = sv > 0 && (rate/100) > 0 && (inc * sr/100) > 0
+        ? Math.log(((fireNumber * rate/100) + (inc * sr/100)) / ((sv * rate/100) + (inc * sr/100))) / Math.log(1 + rate/100)
+        : 0;
       return (
         `1. **Annual Expenses**: Enter ${fmt(exp)} as your expected annual spending in retirement. FIRE uses the 4% safe withdrawal rule, so multiply by 25.\n` +
         `2. **Current Savings**: Input ${fmt(sv)} as what you have already saved toward retirement.\n` +
         `3. **Annual Income**: Set ${fmt(inc)} as your gross annual income.\n` +
         `4. **Savings Rate**: ${sr}% means you save ${fmt(inc * sr / 100)} per year. The higher your savings rate, the faster you reach FIRE.\n` +
         `5. **Expected Return**: ${rate}% is the historical real return of the S&P 500. Use lower numbers for more conservative estimates.\n\n` +
-        `Your FIRE target is ${fmt(fireNumber)} (25× your annual expenses). With a ${sr}% savings rate, the calculator projects exactly when you'll reach financial independence.`
+        `Your FIRE target is ${fmt(fireNumber)} (25× your annual expenses). With a ${sr}% savings rate and ${fmt(sv)} already saved, the calculator projects approximately ${Math.max(1, Math.round(yrsToFi))} years until you reach financial independence. `
       );
     }
     case "financial-independence": {
@@ -256,12 +259,15 @@ function getHowToUseSection(
       const sr = params.savingsRate ?? 50;
       const sv = params.currentSavings ?? 100000;
       const fiNumber = exp * 25;
+      const yearsToFi = sv > 0 && (sr * exp) > 0
+        ? Math.log((fiNumber / sv)) / Math.log(1 + (sr / 100))
+        : 0;
       return (
         `1. **Annual Expenses**: Enter ${fmt(exp)} as the lifestyle you want to maintain in retirement.\n` +
         `2. **Savings Rate**: ${sr}% puts you ahead of 90% of Americans; aim for 50%+ for early FI.\n` +
         `3. **Current Savings**: ${fmt(sv)} is your starting point.\n` +
         `4. **Investment Return**: Most FI calculators default to 7% (real return after inflation).\n\n` +
-        `Your FI number is ${fmt(fiNumber)}. The calculator shows your projected timeline based on your savings rate and current nest egg.`
+        `Your FI number is ${fmt(fiNumber)}. The calculator shows your projected timeline — approximately ${Math.max(1, Math.round(yearsToFi))} years at your current savings rate — based on your savings rate and current nest egg. `
       );
     }
     case "net-worth": {

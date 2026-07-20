@@ -217,6 +217,47 @@ export default async function GeotargetedPage({ params }: GeoPageProps) {
             All calculations run directly in your browser — your financial data never leaves your device.
           </p>
 
+          <h2>{city.name} Real Estate Market Snapshot</h2>
+          <p>
+            {city.name} sits in the {city.region} region with a population of approximately {(city.population / 1000).toFixed(0)}K residents.
+            The local housing market reflects broader {city.stateAbbr} trends — including state-level property tax rates, regional
+            construction costs, and demand from major employers. With a median home price of {medianFormatted},
+            {city.name} buyers should plan for closing costs of 2-5% of the purchase price (roughly
+            ${Math.round(city.medianHomePrice * 0.03 / 1000)}K-${Math.round(city.medianHomePrice * 0.05 / 1000)}K on a median-priced home),
+            separate from the down payment. Local first-time homebuyer programs, USDA rural development loans (where applicable),
+            and VA loans (for eligible veterans) can dramatically reduce upfront costs. We recommend getting
+            pre-approved with 2-3 {city.stateAbbr} lenders before house hunting — rates can vary by 0.25-0.5%
+            between lenders, which translates to tens of thousands of dollars over a 30-year mortgage.
+          </p>
+
+          <h2>Frequently Asked Questions About {city.name} Mortgages</h2>
+          <h3>What credit score do I need to buy in {city.name}?</h3>
+          <p>
+            Most {city.name} lenders require a minimum FICO score of 620 for conventional loans,
+            though FHA loans accept scores as low as 580 with a 3.5% down payment. VA loans
+            (for eligible military members) and USDA loans (in eligible rural areas near {city.name})
+            often have more flexible credit requirements. Higher scores unlock better rates: a
+            740+ score typically gets the most competitive offers, while sub-700 scores pay a meaningful premium.
+          </p>
+          <h3>How much house can I afford in {city.name}?</h3>
+          <p>
+            Use the 28/36 rule: monthly housing costs should stay under 28% of gross income (front-end ratio),
+            and total debt payments under 36% (back-end ratio). On a $75,000 salary, that's roughly $1,750/month
+            for housing. With {city.name}'s median home value of {medianFormatted}, you'd typically need
+            a household income of at least ${Math.round(city.medianHomePrice * 0.28 * 12 / 0.28 / 1000)}K for
+            a median-priced home at current rates. Our affordability calculator can refine this estimate
+            with your specific debt obligations.
+          </p>
+          <h3>Are property taxes high in {city.name}?</h3>
+          <p>
+            Property taxes in {city.name} reflect {city.stateAbbr} state rates plus local county and
+            municipal levies. {city.stateAbbr}-wide effective property tax rates typically range from 0.5% to 2.5%
+            of assessed value annually. On a {medianFormatted} home in {city.name}, that's roughly
+            ${Math.round(city.medianHomePrice * 0.015 / 1000)}K/year in property taxes — fold this into your
+            total monthly payment, not just the principal and interest. Our calculator factors in estimated
+            taxes based on {city.stateAbbr} statewide averages.
+          </p>
+
           <h2>Nearby Cities</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 not-prose">
             {US_CITIES.filter(
