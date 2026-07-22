@@ -1,0 +1,117 @@
+{
+  "title": "200K Organic Visitors in 4 Months — Baseline & Gap Analysis",
+  "generated": "2026-07-20",
+  "data_sources": [
+    "GSC API live query+page pull (90d, 2026-04-22 to 2026-07-20)",
+    "URL Inspection API master state (499 URLs, Jul 20)",
+    "Live production crawl checks (curl)",
+    "Existing programmatic SEO infrastructure (calc registry, slug generator)"
+  ],
+  "current_state": {
+    "28d_impressions": 1235,
+    "28d_clicks": 0,
+    "28d_ctr_pct": 0.0,
+    "90d_impressions": 2185,
+    "90d_clicks": 0,
+    "avg_position": 70,
+    "indexed_urls": 147,
+    "indexed_pct": 29.5,
+    "live_sitemap_urls": 498,
+    "discovered_not_indexed": 287,
+    "unknown_to_google": 62,
+    "internal_link_coverage": {
+      "tools_section": "ZERO inbound links from non-tools pages",
+      "compare_section": "ZERO inbound links from non-compare pages"
+    },
+    "backlinks_known": 0,
+    "domain_authority_estimated": "<10",
+    "section_breakdown_90d_impressions": {
+      "calculators": 1539,
+      "blog": 314,
+      "decision": 102,
+      "tools": 73,
+      "guides": 31,
+      "compare": 1
+    },
+    "topic_demand_seen_90d": {
+      "loan": 395,
+      "investment": 321,
+      "tax": 308,
+      "mortgage": 291,
+      "debt": 247,
+      "business": 176,
+      "retirement": 139,
+      "income_salary": 99,
+      "savings": 20
+    }
+  },
+  "target_state": {
+    "monthly_organic_visitors": 50000,
+    "monthly_impressions_needed_at_2pct_ctr": 2500000,
+    "monthly_impressions_needed_at_5pct_ctr": 1000000,
+    "current_to_target_multiplier": "1000x impressions, infinite clicks (from 0)"
+  },
+  "gap_analysis": {
+    "gap_indexing": {
+      "current_indexed": 147,
+      "needed_for_2pct_ctr_path": 5000,
+      "gap_factor": "34x more indexed URLs needed"
+    },
+    "gap_position": {
+      "current_avg_position": 70,
+      "needed_for_clicks": "top 10",
+      "gap_factor": "move from page 7 to page 1"
+    },
+    "gap_authority": {
+      "current_backlinks": 0,
+      "needed_for_finance_competitive": "200+ referring domains",
+      "gap_factor": "from 0 to 200+"
+    },
+    "gap_content_quality": {
+      "current_unique_value": "template variants with same structure",
+      "needed_for_top10": "original data, expert authorship, unique insights per page"
+    }
+  },
+  "realistic_scenarios_4mo": {
+    "scenario_a_do_nothing_new": {
+      "monthly_visitors_by_m4": "100-300",
+      "rationale": "current trajectory; tools/* get crawled over time, slow indexing"
+    },
+    "scenario_b_deploy_current_fixes_only": {
+      "monthly_visitors_by_m4": "500-2,000",
+      "rationale": "ads.txt fix unblocks AdSense approval (revenue, not visitors); internal links double indexed count over 30-60d; CTR stays at ~0% due to position 70+"
+    },
+    "scenario_c_scale_programmatic_10x": {
+      "monthly_visitors_by_m4": "5,000-15,000",
+      "rationale": "Add 5,000+ new tool/scenario/geo pages; indexing pipeline matures; 5,500 indexed URLs at current impression-per-URL rate; still position 50-70 for most"
+    },
+    "scenario_d_full_seo_offensive": {
+      "monthly_visitors_by_m4": "30,000-80,000",
+      "rationale": "Scale + authority + content quality + on-page SEO + link acquisition 100+ domains/month"
+    },
+    "scenario_e_200k_target": {
+      "monthly_visitors_by_m4": "200,000",
+      "rationale": "Requires either: (1) viral event in finance media, (2) major paid acquisition layered on top, (3) 18+ months of compounding authority not 4 months"
+    }
+  },
+  "blockers_to_200k": {
+    "blocker_1": "Domain authority — competing against Bankrate (DA 85), NerdWallet (DA 80), Investopedia (DA 90), SmartAsset (DA 75). Without backlinks, cannot crack top 10 for any high-volume keyword.",
+    "blocker_2": "Content uniqueness — 221 tools/* URLs are near-duplicate template content. Google explicitly de-prioritizes this. Adding 5,000 more would trigger Panda-style quality issues if not differentiated.",
+    "blocker_3": "Brand search — site has no branded search volume. Users searching 'mortgage calculator' find competitors first. No inbound traffic means no engagement signals.",
+    "blocker_4": "Indexing velocity — Google is currently crawling the site slowly. Even if 5,000 new pages are added, indexing them in 30 days would require a major crawl budget increase that requires authority.",
+    "blocker_5": "CTR floor — at position 70, CTR is 0%. Even with 100,000 impressions/month, you'd get 100 clicks. Position must improve before volume matters."
+  },
+  "what_would_actually_get_to_200k": {
+    "minimum_combination": [
+      "1. Build a topical authority cluster around ONE high-volume niche (recommend: mortgage — 291 imp already, US$45B market, calc-friendly)",
+      "2. Add 200+ original expert content pages (mortgage guides, lender comparisons, rate analysis, market commentary) — NOT template variants",
+      "3. Acquire 100+ referring domains in 4 months via HARO, guest posts, digital PR (mortgage is linkable topic)",
+      "4. Build proprietary data assets: weekly mortgage rate tracker (crawl + publish), affordability index by city",
+      "5. Programmatic long-tail only AFTER authority — geo pages (city+mortgage rate), calculator+state combos",
+      "6. Off-page amplification: Reddit, Quora, niche forums in r/personalfinance, r/RealEstate, BiggerPockets, etc.",
+      "7. Brand campaigns to drive direct + branded search (any direct traffic lifts all rankings)"
+    ],
+    "still_risky": "Even with all of the above, 200K organic/month in 4 months would be aggressive for a finance site. Comparable sites took 12-18 months."
+  },
+  "next_decision_needed": "The user must decide: (a) is 200K a hard target or aspirational, (b) is there budget for paid acquisition / link building / original content production, (c) is qfinhub the right vehicle or should a different site be built for this goal. Without answers to these, the work above cannot be prioritized into a coherent 4-month sprint."
+}

@@ -7,6 +7,7 @@ import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 // Phase 39.4: Selective restore of 4 guides verified-indexed in GSC to preserve indexing
 import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
+import { getAllMortgageByIncomeGuides } from "@/lib/programmatic-seo/mortgage-by-income";
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -265,7 +266,7 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     "/calculators/tax/philadelphia-pa",
   ]);
 
-  let geotargetedPages: SitemapEntry[] = [];
+  const geotargetedPages: SitemapEntry[] = [];
   try {
     const { US_CITIES, GEOTARGETED_CALCULATORS } = await import("@/lib/programmatic-seo/data/us-cities");
     for (const calc of GEOTARGETED_CALCULATORS) {
@@ -327,6 +328,15 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.5,
   }));
 
+  // Mortgage-by-income guides — original expert content cluster
+  // Targets queries like "what mortgage can i afford on 60k" (real GSC demand)
+  const mortgageByIncomePages: SitemapEntry[] = getAllMortgageByIncomeGuides().map((g) => ({
+    url: `${BASE_URL}/guides/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.6,
+  }));
+
   // HTML sitemap page — Phase 39.4 restore (verified indexed, was orphaned)
   const allPagesEntry: SitemapEntry = {
     url: `${BASE_URL}/all-pages`,
@@ -343,5 +353,5 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, allPagesEntry, ...decisionPageEntries];
+  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...mortgageByIncomePages, allPagesEntry, ...decisionPageEntries];
 }

@@ -112,6 +112,12 @@
   "redirects": [
     {
       "source": "/ads.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "qfinhub.com"
+        }
+      ],
       "destination": "https://www.qfinhub.com/ads.txt",
       "permanent": true
     },

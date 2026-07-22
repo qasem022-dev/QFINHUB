@@ -1,0 +1,77 @@
+{
+  "title": "Mortgage-by-Income Authority Cluster — Implementation",
+  "generated": "2026-07-20",
+  "type": "content_cluster",
+  "rationale": "GSC API live data (90d, 640 query+page rows) showed 116 unique mortgage queries with real demand but zero indexed targeted pages. The site currently appears at position 70-97 (page 7-9) for these queries. Created 10 original income-tier guides targeting the highest-volume queries.",
+  "data_basis": {
+    "gsc_queries_targeted": [
+      {"query": "what mortgage can i afford on 40k", "impressions_90d": 8, "position": 97},
+      {"query": "what mortgage can i afford on 100k", "impressions_90d": 6, "position": 96},
+      {"query": "if i make 100k what mortgage can i afford", "impressions_90d": 6, "position": 97},
+      {"query": "how much mortgage can i afford on 100k", "impressions_90d": 6, "position": 96},
+      {"query": "how much mortgage can i afford", "impressions_90d": 11, "position": 91},
+      {"query": "mortgage based on income", "impressions_90d": 9, "position": 91},
+      {"query": "income to mortgage calculator", "impressions_90d": 8, "position": 94}
+    ],
+    "section_impressions_90d": {
+      "calculators": 1539,
+      "tools": 73
+    }
+  },
+  "pages_created": [
+    "/guides/mortgage-on-30k",
+    "/guides/mortgage-on-40k",
+    "/guides/mortgage-on-50k",
+    "/guides/mortgage-on-60k",
+    "/guides/mortgage-on-75k",
+    "/guides/mortgage-on-85k",
+    "/guides/mortgage-on-100k",
+    "/guides/mortgage-on-125k",
+    "/guides/mortgage-on-150k",
+    "/guides/mortgage-on-200k"
+  ],
+  "content_structure_per_page": {
+    "schema_markup": ["Article", "FAQPage"],
+    "components": [
+      "Breadcrumb",
+      "H1 with icon",
+      "Quick Answer card (3-tier affordability matrix)",
+      "CTA buttons (Run Numbers + Decision Guide)",
+      "Income Context card",
+      "5-7 detailed content sections (3000+ words total)",
+      "8 FAQ entries with income-specific math",
+      "Related Calculators (3 internal links)",
+      "Income Cluster Cross-Links (9 peer pages)"
+    ],
+    "word_count_target": "2500-3500 words per page",
+    "math_verified": "DTI calculations independently verified via node REPL: 60K/yr @ 28% DTI = $218,848 home (matches)"
+  },
+  "internal_linking_added": [
+    "Home page → 8 /tools/* URLs (popular calculators section)",
+    "Calculators hub → 8 /tools/* URLs (popular scenarios section)",
+    "Mortgage calculator page → all 10 mortgage-on-* guides (income tier buttons)",
+    "Each mortgage-on-* page → 3 related tools/* + 9 peer income pages"
+  ],
+  "verification": {
+    "typecheck": "npx tsc --noEmit exit 0",
+    "lint": "npm run lint exit 0 (78 warnings, 0 errors)",
+    "build": "npx next build succeeded, all 10 pages prerendered as SSG",
+    "sitemap": "10 mortgage-on-* URLs included in sitemap.xml"
+  },
+  "expected_impact_timeline": {
+    "week_1": "Pages live, Google discovers via new internal links",
+    "week_2_to_4": "Google crawls and indexes; first impressions trickle in",
+    "month_2_to_3": "Position improvements as Google validates content quality and internal linking",
+    "month_4": "Mature rankings; should be producing measurable impressions"
+  },
+  "honest_caps": {
+    "10_pages_alone_wont_hit_200k": "This is one cluster of 10 pages. Hitting 200K/month requires ~100x this scale across multiple topic clusters + backlinks + brand authority.",
+    "indexing_not_guaranteed": "Same Google quality filter that de-indexed the tools/* templates could apply here. The math is original but the template structure is shared.",
+    "position_uncertainty": "Even with original content, ranking top 10 requires authority signals we don't have yet."
+  },
+  "next_clusters_to_build": {
+    "investment_by_income": "Same pattern for investment questions (60+ imp across 'how much should i invest on $X' queries)",
+    "retirement_by_age": "Pattern for age-based retirement queries ('can i retire at X with $Y')",
+    "debt_payoff_by_balance": "Pattern for 'how long to pay off $X debt at Y%'"
+  }
+}

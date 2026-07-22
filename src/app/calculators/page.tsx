@@ -96,6 +96,36 @@ export default async function CalculatorsPage({ searchParams }: CalculatorsPageP
           ))}
         </div>
       </noscript>
+
+      {/* Popular pre-calculated scenarios — surfaces /tools/* for crawl discovery */}
+      <section className="mt-16 border-t border-zinc-100 pt-12 dark:border-zinc-800">
+        <div className="mb-6">
+          <h2 className="text-xl font-bold text-zinc-900 dark:text-white">Popular Pre-Calculated Scenarios</h2>
+          <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+            See worked examples for the most common financial questions — then plug your own numbers in.
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { label: "$10K Invested for 10 Years", slug: "investment-10k-10yr" },
+            { label: "$100K for 15 Years", slug: "investment-100k-15yr" },
+            { label: "$60K Salary — Single", slug: "tax-60k-single" },
+            { label: "$100K — Married Joint", slug: "tax-100k-married-joint" },
+            { label: "6-Month Emergency Fund", slug: "emergency-fund-5k-6mo" },
+            { label: "Net Worth at 40", slug: "net-worth-40s-peak" },
+            { label: "DTI 28% on $75K", slug: "dti-75k-28pct" },
+            { label: "Lean FIRE — $40K Expenses", slug: "fire-40k-lean-800k" },
+          ].map((t) => (
+            <a
+              key={t.slug}
+              href={`/tools/${t.slug}`}
+              className="rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-700 hover:border-blue-400 hover:text-blue-700 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:border-blue-500 dark:hover:text-blue-400 transition-colors"
+            >
+              {t.label}
+            </a>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

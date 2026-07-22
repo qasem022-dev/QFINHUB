@@ -641,6 +641,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Popular Tools Section — surfaces programmatic /tools/* pages for crawl discovery ── */}
+      <section className="border-t border-zinc-100 bg-zinc-50/60 py-14 dark:border-zinc-800 dark:bg-zinc-900/30">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
+              Popular Calculators by Scenario
+            </h2>
+            <p className="mx-auto max-w-xl text-gray-500 dark:text-gray-400">
+              Pre-calculated examples for the most-searched financial questions. Plug your numbers in to refine.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { title: "$10K Invested for 10 Years", slug: "investment-10k-10yr", desc: "Compound growth at 7% over a decade" },
+              { title: "$100K Invested for 15 Years", slug: "investment-100k-15yr", desc: "Long-horizon retirement planning example" },
+              { title: "$60K Salary — Single Filer Taxes", slug: "tax-60k-single", desc: "Federal tax breakdown for a typical earner" },
+              { title: "$100K Salary — Married Filing Jointly", slug: "tax-100k-married-joint", desc: "Dual-income household federal tax view" },
+              { title: "Emergency Fund: $5K Target, 6 Months", slug: "emergency-fund-5k-6mo", desc: "How long to build, where to keep it" },
+              { title: "Net Worth at 40 — Peak Earner", slug: "net-worth-40s-peak", desc: "Milestone tracking for high savers" },
+              { title: "DTI: $75K Income, 28% Ratio", slug: "dti-75k-28pct", desc: "Healthy debt-to-income benchmark" },
+              { title: "FIRE: $40K Expenses, $800K Portfolio", slug: "fire-40k-lean-800k", desc: "Lean FIRE retirement feasibility" },
+            ].map((t) => (
+              <Link
+                key={t.slug}
+                href={`/tools/${t.slug}`}
+                prefetch={true}
+                className="group flex flex-col gap-1 rounded-lg border border-zinc-200 bg-white p-4 hover:border-blue-400 hover:shadow-sm dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-blue-500 transition-all"
+              >
+                <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-700 dark:text-white dark:group-hover:text-blue-400">
+                  {t.title}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">{t.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA Section ── */}
       <section className="bg-gradient-to-r from-primary-900 via-primary-800 to-primary-950 px-4 py-20">
         <div className="mx-auto max-w-3xl text-center">

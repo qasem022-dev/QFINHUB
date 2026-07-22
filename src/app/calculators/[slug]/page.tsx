@@ -10,7 +10,7 @@ import { YMYLDisclaimer } from "@/components/layout/ymyl-disclaimer";
 import { LastReviewedBy } from "@/components/layout/last-reviewed";
 import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
 import { calculatorContent } from "@/lib/calculators/calculator-content";
-import { getCalculatorComponent } from "@/components/calculators/registry";
+import { getCalculatorComponent, CalculatorSlot } from "@/components/calculators/registry";
 import { ShareDialog } from "@/components/calculators/share-dialog";
 import { BreadcrumbNav } from "@/components/calculators/breadcrumb-nav";
 import { RelatedCalculators } from "@/components/calculators/related-calculators";
@@ -312,7 +312,7 @@ export default async function CalculatorDetailPage({
           </div>
         }
       >
-        <CalculatorComponent />
+        <CalculatorSlot Component={CalculatorComponent} />
       </Suspense>
       <YMYLDisclaimer />
       {calculatorContent[slug] && (
@@ -337,6 +337,32 @@ export default async function CalculatorDetailPage({
               </Link>{" "}
               on your site — free, no signup, no data collection.
             </p>
+          </div>
+        </div>
+      )}
+
+      {/* Affordability by Income — internal links to mortgage-by-income guides */}
+      {slug === "mortgage-calculator" && (
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pb-6">
+          <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-5 dark:border-emerald-900/30 dark:bg-emerald-900/10">
+            <h2 className="text-base font-semibold text-emerald-900 dark:text-emerald-200 mb-3">
+              What mortgage can you afford on your income?
+            </h2>
+            <p className="text-sm text-emerald-800 dark:text-emerald-300 mb-4">
+              See the exact home price, monthly payment, and DTI breakdown for your salary — with location-specific advice and lender logic explained.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Link href="/guides/mortgage-on-30k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$30K/yr</Link>
+              <Link href="/guides/mortgage-on-40k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$40K/yr</Link>
+              <Link href="/guides/mortgage-on-50k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$50K/yr</Link>
+              <Link href="/guides/mortgage-on-60k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$60K/yr</Link>
+              <Link href="/guides/mortgage-on-75k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$75K/yr</Link>
+              <Link href="/guides/mortgage-on-85k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$85K/yr</Link>
+              <Link href="/guides/mortgage-on-100k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$100K/yr</Link>
+              <Link href="/guides/mortgage-on-125k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$125K/yr</Link>
+              <Link href="/guides/mortgage-on-150k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$150K/yr</Link>
+              <Link href="/guides/mortgage-on-200k" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">$200K/yr</Link>
+            </div>
           </div>
         </div>
       )}
