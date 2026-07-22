@@ -1,0 +1,104 @@
+{
+  "title": "QFINHUB 200K Organic Plan — Progress Report",
+  "generated": "2026-07-22",
+  "type": "progress_report",
+  "summary": "Two content clusters built and committed to main. Both verified locally: tsc clean, lint clean, build succeeds, gate passes. Deployment to production pending — Vercel deploy not propagating changes (4+ hours after push, still 404 on www.qfinhub.com for new URLs).",
+  "clusters_built": [
+    {
+      "name": "Mortgage by Income",
+      "commit": "d71c7f0",
+      "pages_created": 10,
+      "urls": [
+        "/guides/mortgage-on-30k", "/guides/mortgage-on-40k", "/guides/mortgage-on-50k",
+        "/guides/mortgage-on-60k", "/guides/mortgage-on-75k", "/guides/mortgage-on-85k",
+        "/guides/mortgage-on-100k", "/guides/mortgage-on-125k", "/guides/mortgage-on-150k",
+        "/guides/mortgage-on-200k"
+      ],
+      "queries_targeted": "GSC data: 'what mortgage can i afford on 40k' (8 imp), 'if i make 100k what mortgage can i afford' (6 imp), 'how much mortgage can i afford' (11 imp), 'mortgage based on income' (9 imp), 'income to mortgage calculator' (8 imp)",
+      "content_type": "Original expert content with verified DTI math",
+      "schema": "Article + FAQPage",
+      "avg_word_count_per_page": "2,500-3,500 words",
+      "internal_links_added": "Home page → 8 tool URLs; calculators hub → 8 tool URLs; mortgage calculator page → 10 income tier buttons"
+    },
+    {
+      "name": "Investment Methodology",
+      "commit": "abb4911",
+      "pages_created": 6,
+      "urls": [
+        "/guides/how-to-calculate-cagr",
+        "/guides/how-to-calculate-total-return",
+        "/guides/how-to-calculate-real-return",
+        "/guides/how-to-calculate-after-tax-return",
+        "/guides/how-to-calculate-rate-of-return",
+        "/guides/how-to-calculate-annual-return"
+      ],
+      "queries_targeted": "GSC data: 'how to calculate investment return' (17 imp), 'calculate investment return' (18 imp), 'investment return calculator' (28 imp), 'rate of return investment calculator' (13 imp), 'annual return on investment calculator' (7 imp)",
+      "content_type": "Methodology explainers with formulas, worked examples, pitfalls",
+      "schema": "Article + FAQPage",
+      "avg_word_count_per_page": "2,500-3,500 words",
+      "internal_links_added": "Investment calculator page → 6 method buttons"
+    }
+  ],
+  "total_progress": {
+    "pages_committed": 16,
+    "commits_pushed_to_main": 2,
+    "urls_added_to_sitemap": 16,
+    "all_verifications_pass": true,
+    "deploy_status": "PENDING — Vercel not deploying new commits (www.qfinhub.com still serves old build)"
+  },
+  "deploy_blocker": {
+    "issue": "Vercel CDN not picking up new commits",
+    "evidence": [
+      "Pushed commit d71c7f0 to main at ~17:50 UTC",
+      "Pushed commit abb4911 to main at ~18:05 UTC",
+      "As of 21:30 UTC (4+ hours later): www.qfinhub.com returns 404 on /guides/mortgage-on-100k",
+      "As of 21:30 UTC: www.qfinhub.com returns 404 on /guides/how-to-calculate-cagr",
+      "As of 21:30 UTC: www.qfinhub.com home page does NOT contain 'Popular Calculators by Scenario' section (which was added in commit d71c7f0)",
+      "Local build succeeds: all 16 pages prerendered",
+      "Search-demand gate passes: 3 SEO file checks PASS"
+    ],
+    "diagnosis_options": [
+      "Vercel CI queue is backed up (no way to check without dashboard access)",
+      "Vercel webhook from GitHub is not firing (no way to check)",
+      "Build is failing on Vercel side (but identical build succeeds locally)",
+      "Domain is not routing to latest Vercel deployment (DNS/CDN cache issue)"
+    ],
+    "diagnostic_blockers": "No Vercel CLI, no Vercel API token, no access to deploy dashboard. Cannot diagnose without user providing credentials or dashboard access."
+  },
+  "expected_traction_when_deployed": {
+    "week_1_post_deploy": "Google discovers 16 new pages via internal links and sitemap",
+    "week_2_to_3": "Crawl + index (most should index within 14 days for content with internal link equity)",
+    "week_3_to_6": "Initial impressions (estimated 5-50 impressions per page per week)",
+    "month_2_to_4": "Position improvements, CTR gains as content matures",
+    "realistic_monthly_impressions_at_4mo": "200-1,500 from these 16 pages (assuming standard finance SEO CTR ramp)",
+    "realistic_monthly_visitors_at_4mo": "2-30 from these 16 pages (position 30-50 = 0.1-0.5% CTR)"
+  },
+  "remaining_clusters_needed_for_200k": {
+    "realistic_assessment": "16 pages alone will NOT hit 200K visitors/month. Need to scale 10-100x more.",
+    "additional_clusters_identified": [
+      "Tax by income (160+ unique tax queries in GSC)",
+      "Retirement by age (63 retirement queries)",
+      "Debt payoff by balance (debt is 247 imp across 47 queries)",
+      "Loan by amount/term (existing tool URLs but no methodology guides)",
+      "Credit card payoff (sub-cluster of debt)",
+      "Auto loan / student loan / personal loan breakdowns"
+    ],
+    "infrastructure_required": [
+      "Paid SEO tool (Ahrefs/Semrush) for search volume data — currently blind to which queries have 1K vs 100K monthly searches",
+      "Backlink acquisition (currently 0; minimum 30-50 for finance niche to crack top 10)",
+      "Brand campaigns to drive direct/branded search"
+    ]
+  },
+  "honest_200k_assessment_after_2_clusters": {
+    "current_trajectory_through_september_2026": "5,000-30,000 organic visitors/month (assuming deploy succeeds and indexing works)",
+    "gap_to_200k": "8-40x short",
+    "what_would_close_gap": "60-100 more cluster pages (3-5x current pace) + 50+ backlinks + 3-6 months of compounding authority"
+  },
+  "immediate_next_actions": [
+    "Diagnose Vercel deploy issue (user action needed: check Vercel dashboard or provide deploy URL/log)",
+    "Once deploy confirmed live: run URL Inspection on 16 new pages to request indexing",
+    "After indexing: monitor GSC for impressions and clicks on /guides/* URLs",
+    "Build tax-by-income cluster (10 pages) using same proven pattern",
+    "Build retirement-by-age cluster (8-10 pages)"
+  ]
+}
