@@ -367,6 +367,28 @@ export default async function CalculatorDetailPage({
         </div>
       )}
 
+      {/* Methodology guides — internal links for investment calculator */}
+      {slug === "investment-return" && (
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pb-6">
+          <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-5 dark:border-emerald-900/30 dark:bg-emerald-900/10">
+            <h2 className="text-base font-semibold text-emerald-900 dark:text-emerald-200 mb-3">
+              Learn the math behind investment returns
+            </h2>
+            <p className="text-sm text-emerald-800 dark:text-emerald-300 mb-4">
+              Each method below explains a different way to measure investment performance — with formulas, worked examples, and common mistakes to avoid.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Link href="/guides/how-to-calculate-cagr" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">CAGR</Link>
+              <Link href="/guides/how-to-calculate-total-return" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">Total Return</Link>
+              <Link href="/guides/how-to-calculate-real-return" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">Real Return (Inflation-Adjusted)</Link>
+              <Link href="/guides/how-to-calculate-after-tax-return" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">After-Tax Return</Link>
+              <Link href="/guides/how-to-calculate-rate-of-return" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">Rate of Return (TWR vs MWR)</Link>
+              <Link href="/guides/how-to-calculate-annual-return" className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-emerald-700 shadow-sm hover:bg-emerald-100 dark:bg-surface-dark-elevated dark:text-emerald-300 dark:hover:bg-emerald-900/50">Annual Return</Link>
+            </div>
+          </div>
+        </div>
+      )}
+
       <LastReviewedBy />
       {/* ── Cross-linking for SEO crawl discovery ── */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12">

@@ -8,6 +8,7 @@ import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
 import { getAllMortgageByIncomeGuides } from "@/lib/programmatic-seo/mortgage-by-income";
+import { getAllInvestmentMethodGuides } from "@/lib/programmatic-seo/investment-methods";
 
 const BASE_URL = "https://www.qfinhub.com";
 
@@ -337,6 +338,15 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
+  // Investment methodology guides — original content cluster
+  // Targets queries like "how to calculate investment return", "CAGR", etc.
+  const investmentMethodPages: SitemapEntry[] = getAllInvestmentMethodGuides().map((g) => ({
+    url: `${BASE_URL}/guides/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as ChangeFrequency,
+    priority: 0.6,
+  }));
+
   // HTML sitemap page — Phase 39.4 restore (verified indexed, was orphaned)
   const allPagesEntry: SitemapEntry = {
     url: `${BASE_URL}/all-pages`,
@@ -353,5 +363,5 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...mortgageByIncomePages, allPagesEntry, ...decisionPageEntries];
+  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...mortgageByIncomePages, ...investmentMethodPages, allPagesEntry, ...decisionPageEntries];
 }
