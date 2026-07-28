@@ -1,0 +1,487 @@
+{
+  "generated": "2026-07-28",
+  "total_drafts": 20,
+  "instructions": "For each prospect: (1) verify the broken link, (2) find author email via page footer or Hunter.io, (3) personalize the [First Name] placeholder, (4) send. Track send status by updating send_status field.",
+  "drafts": [
+    {
+      "prospect_number": 1,
+      "qfh_replacement": "Mortgage affordability calculator",
+      "broken_tool": "Dinkytown mortgage calculator (old domain)",
+      "page_url_hint": "University financial literacy pages linking to dinkytown.net mortgage calculator",
+      "outreach_angle": "Your page links to a calculator that no longer works \u2014 here's a free replacement",
+      "score": 88,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [University financial literacy pages linking to dinkytown.net] links to Dinkytown mortgage calculator (old domain), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Mortgage affordability calculator that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Mortgage affordability calculator\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Mortgage affordability calculator",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "University financial literacy pages linking to dinkytown.net mortgage calculator"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 2,
+      "qfh_replacement": "Budget planner",
+      "broken_tool": "Old Bankrate budget calculator (redirected/404)",
+      "page_url_hint": "Nonprofit budget counseling pages with broken Bankrate calculator embeds",
+      "outreach_angle": "I noticed your budget calculator link is broken \u2014 here's a working replacement",
+      "score": 90,
+      "subjects": [
+        "Quick heads-up \u2014 your budget calculator link 404s",
+        "Your budget calculator link is broken",
+        "FYI: budget calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your budget calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Nonprofit budget counseling pages with broken Bankrate calcu] links to Old Bankrate budget calculator (redirected/404), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Budget planner that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Budget planner\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Budget planner",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Nonprofit budget counseling pages with broken Bankrate calculator embeds"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 3,
+      "qfh_replacement": "Mortgage affordability widget (responsive iframe)",
+      "broken_tool": "Outdated mortgage widget (often Flash-based or non-responsive)",
+      "page_url_hint": "Real estate agent blogs with old mortgage calculator widgets",
+      "outreach_angle": "Your mortgage calculator doesn't work on phones \u2014 here's a mobile-friendly replacement",
+      "score": 92,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Real estate agent blogs with old mortgage calculator widgets] links to Outdated mortgage widget (often Flash-based or non-responsive), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Mortgage affordability widget (responsive iframe) that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Mortgage affordability widget (responsive iframe)\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Mortgage affordability widget (responsive iframe)",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Real estate agent blogs with old mortgage calculator widgets"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 4,
+      "qfh_replacement": "Loan calculator",
+      "broken_tool": "Old loan amortization calculator",
+      "page_url_hint": "Credit union education pages with defunct loan calculator links",
+      "outreach_angle": "Your loan calculator link appears to be broken \u2014 here's a free updated version",
+      "score": 85,
+      "subjects": [
+        "Quick heads-up \u2014 your financial calculator link 404s",
+        "Your financial calculator link is broken",
+        "FYI: financial calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your financial calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Credit union education pages with defunct loan calculator li] links to Old loan amortization calculator, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Loan calculator that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Loan calculator\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Loan calculator",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Credit union education pages with defunct loan calculator links"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 5,
+      "qfh_replacement": "Mortgage affordability widget",
+      "broken_tool": "Old HUD affordability worksheet (non-interactive)",
+      "page_url_hint": "Government HUD counseling pages with outdated affordability tools",
+      "outreach_angle": "Your affordability tool is a static worksheet \u2014 here's an interactive replacement",
+      "score": 88,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Government HUD counseling pages with outdated affordability ] links to Old HUD affordability worksheet (non-interactive), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Mortgage affordability widget that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Mortgage affordability widget\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Mortgage affordability widget",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Government HUD counseling pages with outdated affordability tools"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 6,
+      "qfh_replacement": "Full calculator suite",
+      "broken_tool": "Various dead calculator links",
+      "page_url_hint": "Library resource guides with dead financial calculator links",
+      "outreach_angle": "Several calculator links on your personal finance guide appear broken \u2014 here are working replacements",
+      "score": 92,
+      "subjects": [
+        "Quick heads-up \u2014 your financial calculator link 404s",
+        "Your financial calculator link is broken",
+        "FYI: financial calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your financial calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Library resource guides with dead financial calculator links] links to Various dead calculator links, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Full calculator suite that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Full calculator suite\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Full calculator suite",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Library resource guides with dead financial calculator links"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 7,
+      "qfh_replacement": "Retirement planning calculator",
+      "broken_tool": "Old retirement calculator (not updated for current tax law)",
+      "page_url_hint": "FIRE blogger resource pages with outdated retirement calculators",
+      "outreach_angle": "Your retirement calculator uses old tax brackets \u2014 here's an updated version",
+      "score": 86,
+      "subjects": [
+        "Quick heads-up \u2014 your retirement calculator link 404s",
+        "Your retirement calculator link is broken",
+        "FYI: retirement calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your retirement calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [FIRE blogger resource pages with outdated retirement calcula] links to Old retirement calculator (not updated for current tax law), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Retirement planning calculator that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Retirement planning calculator\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Retirement planning calculator",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "FIRE blogger resource pages with outdated retirement calculators"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 8,
+      "qfh_replacement": "Debt snowball vs avalanche widget",
+      "broken_tool": "Simple/static debt payoff table",
+      "page_url_hint": "Debt counseling nonprofit pages with basic/non-interactive payoff calculators",
+      "outreach_angle": "Your debt payoff tool is static \u2014 here's an interactive snowball vs avalanche replacement",
+      "score": 88,
+      "subjects": [
+        "Quick heads-up \u2014 your debt calculator link 404s",
+        "Your debt calculator link is broken",
+        "FYI: debt calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your debt calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Debt counseling nonprofit pages with basic/non-interactive p] links to Simple/static debt payoff table, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Debt snowball vs avalanche widget that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Debt snowball vs avalanche widget\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Debt snowball vs avalanche widget",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Debt counseling nonprofit pages with basic/non-interactive payoff calculators"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 9,
+      "qfh_replacement": "Mortgage calculator",
+      "broken_tool": "Old rate comparison calculator (non-responsive)",
+      "page_url_hint": "Small mortgage broker sites with old rate calculator embeds",
+      "outreach_angle": "Your rate calculator embed appears broken \u2014 here's a free working replacement",
+      "score": 90,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Small mortgage broker sites with old rate calculator embeds] links to Old rate comparison calculator (non-responsive), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Mortgage calculator that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Mortgage calculator\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Mortgage calculator",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Small mortgage broker sites with old rate calculator embeds"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 10,
+      "qfh_replacement": "Compound interest calculator",
+      "broken_tool": "Old compound interest visualizer (Flash-based)",
+      "page_url_hint": "Financial advisor blogs with broken compound interest embeds",
+      "outreach_angle": "Your compound interest tool (Flash-based) no longer works \u2014 here's a modern replacement",
+      "score": 87,
+      "subjects": [
+        "Quick heads-up \u2014 your financial calculator link 404s",
+        "Your financial calculator link is broken",
+        "FYI: financial calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your financial calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Financial advisor blogs with broken compound interest embeds] links to Old compound interest visualizer (Flash-based), which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Compound interest calculator that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Compound interest calculator\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Compound interest calculator",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Financial advisor blogs with broken compound interest embeds"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 11,
+      "qfh_replacement": "Full suite: budget, debt, retirement",
+      "broken_tool": "Old military financial planning tools",
+      "page_url_hint": "Military family support sites with outdated financial calculators",
+      "outreach_angle": "Your financial tools page has several broken calculators \u2014 here are working replacements",
+      "score": 89,
+      "subjects": [
+        "Quick heads-up \u2014 your budget calculator link 404s",
+        "Your budget calculator link is broken",
+        "FYI: budget calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your budget calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Military family support sites with outdated financial calcul] links to Old military financial planning tools, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Full suite: budget, debt, retirement that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Full suite: budget, debt, retirement\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Full suite: budget, debt, retirement",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Military family support sites with outdated financial calculators"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 12,
+      "qfh_replacement": "Full calculator suite",
+      "broken_tool": "Various dead calculator links from old providers",
+      "page_url_hint": "Community college financial literacy pages with dead links",
+      "outreach_angle": "Several financial calculator links on your page are broken \u2014 here are free replacements",
+      "score": 90,
+      "subjects": [
+        "Quick heads-up \u2014 your financial calculator link 404s",
+        "Your financial calculator link is broken",
+        "FYI: financial calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your financial calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Community college financial literacy pages with dead links] links to Various dead calculator links from old providers, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Full calculator suite that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Full calculator suite\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Full calculator suite",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Community college financial literacy pages with dead links"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 13,
+      "qfh_replacement": "Mortgage affordability widget",
+      "broken_tool": "Outdated affordability estimator",
+      "page_url_hint": "State housing authority first-time buyer pages",
+      "outreach_angle": "Your affordability estimator is dated \u2014 here's an interactive, mobile-friendly replacement",
+      "score": 87,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [State housing authority first-time buyer pages] links to Outdated affordability estimator, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Mortgage affordability widget that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Mortgage affordability widget\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Mortgage affordability widget",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "State housing authority first-time buyer pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 14,
+      "qfh_replacement": "Budget + debt + mortgage calculators",
+      "broken_tool": "Various county-level financial tool links",
+      "page_url_hint": "NACo (county) extension financial resource pages",
+      "outreach_angle": "Your financial tools page has several broken links \u2014 here are updated free replacements",
+      "score": 84,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [NACo (county) extension financial resource pages] links to Various county-level financial tool links, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Budget + debt + mortgage calculators that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Budget + debt + mortgage calculators\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Budget + debt + mortgage calculators",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "NACo (county) extension financial resource pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 15,
+      "qfh_replacement": "Savings goal + debt payoff + budget planner",
+      "broken_tool": "Outdated savings and debt calculators",
+      "page_url_hint": "Women's financial empowerment nonprofit pages",
+      "outreach_angle": "Your financial tools could be more interactive \u2014 here are free embeddable replacements",
+      "score": 88,
+      "subjects": [
+        "Quick heads-up \u2014 your budget calculator link 404s",
+        "Your budget calculator link is broken",
+        "FYI: budget calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your budget calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Women's financial empowerment nonprofit pages] links to Outdated savings and debt calculators, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Savings goal + debt payoff + budget planner that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Savings goal + debt payoff + budget planner\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Savings goal + debt payoff + budget planner",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Women's financial empowerment nonprofit pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 16,
+      "qfh_replacement": "Retirement planning + Social Security timing calculator",
+      "broken_tool": "Outdated retirement income calculators",
+      "page_url_hint": "Senior citizen financial education pages (AARP, NCOA affiliates)",
+      "outreach_angle": "Your retirement calculator uses old Social Security rules \u2014 here's an updated version",
+      "score": 86,
+      "subjects": [
+        "Quick heads-up \u2014 your retirement calculator link 404s",
+        "Your retirement calculator link is broken",
+        "FYI: retirement calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your retirement calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Senior citizen financial education pages (AARP, NCOA affilia] links to Outdated retirement income calculators, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Retirement planning + Social Security timing calculator that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Retirement planning + Social Security timing calculator\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Retirement planning + Social Security timing calculator",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Senior citizen financial education pages (AARP, NCOA affiliates)"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 17,
+      "qfh_replacement": "Loan + investment return calculators",
+      "broken_tool": "Old business loan/ROI calculators",
+      "page_url_hint": "Small business development center financial resource pages",
+      "outreach_angle": "Your business finance calculator links appear broken \u2014 here are free replacements",
+      "score": 82,
+      "subjects": [
+        "Quick heads-up \u2014 your financial calculator link 404s",
+        "Your financial calculator link is broken",
+        "FYI: financial calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your financial calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Small business development center financial resource pages] links to Old business loan/ROI calculators, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Loan + investment return calculators that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Loan + investment return calculators\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Loan + investment return calculators",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Small business development center financial resource pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 18,
+      "qfh_replacement": "Full calculator suite (multi-language)",
+      "broken_tool": "Various broken or non-multilingual financial tools",
+      "page_url_hint": "Immigrant financial literacy resource pages",
+      "outreach_angle": "Your financial tools page has broken links \u2014 here are free replacements available in multiple languages",
+      "score": 90,
+      "subjects": [
+        "Quick heads-up \u2014 your financial calculator link 404s",
+        "Your financial calculator link is broken",
+        "FYI: financial calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your financial calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Immigrant financial literacy resource pages] links to Various broken or non-multilingual financial tools, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Full calculator suite (multi-language) that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Full calculator suite (multi-language)\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Full calculator suite (multi-language)",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Immigrant financial literacy resource pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 19,
+      "qfh_replacement": "Budget planner + savings goal calculators",
+      "broken_tool": "Outdated benefits and budget calculators",
+      "page_url_hint": "Disability financial planning resource pages",
+      "outreach_angle": "Your financial planning calculator is out of date \u2014 here's a free replacement that works for benefits calculations too",
+      "score": 85,
+      "subjects": [
+        "Quick heads-up \u2014 your budget calculator link 404s",
+        "Your budget calculator link is broken",
+        "FYI: budget calculator on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your budget calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Disability financial planning resource pages] links to Outdated benefits and budget calculators, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Budget planner + savings goal calculators that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Budget planner + savings goal calculators\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Budget planner + savings goal calculators",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Disability financial planning resource pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    },
+    {
+      "prospect_number": 20,
+      "qfh_replacement": "Budget + debt + mortgage + retirement calculators",
+      "broken_tool": "Old VA financial planning tools",
+      "page_url_hint": "Veterans financial education resource pages",
+      "outreach_angle": "Several financial tool links on your veterans resource page are broken \u2014 here are free replacements",
+      "score": 88,
+      "subjects": [
+        "Quick heads-up \u2014 your mortgage calculator link 404s",
+        "Your mortgage calculator link is broken",
+        "FYI: mortgage calculator link on your page is dead"
+      ],
+      "recommended_subject": "Quick heads-up \u2014 your mortgage calculator link 404s",
+      "pitch_template": "Hi [First Name],\n\nI noticed your page at [Veterans financial education resource pages] links to Old VA financial planning tools, which appears to be returning a 404 since their site restructured.\n\nI'm with QFINHUB (qfinhub.com) \u2014 we built a free, no-signup Budget + debt + mortgage + retirement calculators that does the same thing plus responsive mobile support. You can use it directly: https://www.qfinhub.com/calculators/Budget + debt + mortgage + retirement calculators\n\nEither way, you may want to swap the link. No obligation.\n\n\u2014 Qasem Mohammed\nQFINHUB (qfinhub.com)",
+      "qfh_target_url": "https://www.qfinhub.com/calculators/Budget + debt + mortgage + retirement calculators",
+      "verification_checklist": {
+        "broken_link_still_broken": "Check Wayback Machine (web.archive.org) \u2014 does the original URL still 404?",
+        "find_author_email": "Look in page footer, About page, or use Hunter.io free tier (50 credits/month)",
+        "personalize_opening": "Replace [First Name] with the actual author/editor name",
+        "page_url_hint": "Veterans financial education resource pages"
+      },
+      "send_status": "pending",
+      "sent_date": null
+    }
+  ]
+}
