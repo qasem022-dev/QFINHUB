@@ -95,6 +95,16 @@ const NOINDEX_DUPLICATE_SLUGS = new Set([
   "energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
   "what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
   "student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
+
+  // ── Phase 40.2 (Jul 28): Thin programmatic + YMYL-flagged posts ──
+  // Under 500 words + YMYL concern (specific stock recommendation)
+  "investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+  // Thin programmatic variants (180-250w, single-number content)
+  "investment-calculator-withdrawals",
+  "200k-mortgage-payment-30-years",
+  "retire-by-40-calculator-how-much-needed",
+  "monthly-mortgage-payment-formula-tax-insurance",
+  "how-much-mortgage-afford-100k-salary",
 ]);
 
 // ISR: revalidate blog pages every 5 minutes for Phase 36 noindex propagation
