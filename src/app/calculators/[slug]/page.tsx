@@ -312,7 +312,7 @@ export default async function CalculatorDetailPage({
           </div>
         }
       >
-        <CalculatorSlot Component={CalculatorComponent} />
+        <CalculatorSlot slug={slug} />
       </Suspense>
       <YMYLDisclaimer />
       {calculatorContent[slug] && (

@@ -1,6 +1,12 @@
 import dynamic from "next/dynamic";
 import type { ComponentType } from "react";
 
+// Re-export the CalculatorSlot wrapper so consumers can import both the
+// registry lookup and the wrapper from a single path. The wrapper itself
+// lives in ./calculator-slot.tsx to keep this file focused on the lookup
+// table.
+export { CalculatorSlot } from "./calculator-slot";
+
 const calculatorMap: Record<string, ComponentType<any>> = {
   "compound-interest": dynamic(() => import("./impl/compound-interest")),
   "simple-interest": dynamic(() => import("./impl/simple-interest")),
