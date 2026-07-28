@@ -30,6 +30,11 @@ const categoryLabels: Record<BlogPost["category"], string> = {
 };
 
 // Phase 39.4: These slugs redirect to other pages — don't show in blog index
+// Phase 40 (2026-07-28): AdSense rejection for "low value content". Added 17 more
+// news-jacking templated posts that follow the same "What Happened" / "What It Means
+// for Your Mortgage" pattern. Total 66 templated posts now hidden. HUB-level
+// editorial posts (fed-and-your-mortgage, etc.) are kept because they're genuinely
+// original content with unique H2s and 1,000+ words.
 const REDIRECTED_SLUGS = new Set([
   // Thin posts (<500w)
   "retire-by-40-calculator-how-much-needed",
@@ -83,6 +88,24 @@ const REDIRECTED_SLUGS = new Set([
   "rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg",
   "ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings",
   "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+  // Phase 40 (Jul 28): additional news-jacking templated posts
+  "allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+  "columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+  "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+  "energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
+  "gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you",
+  "investor-angst-emerges-in-riskiest-stocks-on-rate-uncertainty-mortgage-rates-202",
+  "mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances",
+  "mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained",
+  "mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+  "mortgage-rates-2025-can-the-housing-market-weather-the-storm",
+  "mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36",
+  "mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+  "mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division",
+  "mortgage-rates-hit-9-month-high-how-to-protect-your-home-buying-power",
+  "mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+  "oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i",
+  "uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
 ]);
 
 const categoryColors: Record<BlogPost["category"], string> = {

@@ -10,8 +10,44 @@ const baseUrl = "https://www.qfinhub.com";
 
 // Phase 36: Duplicate/near-duplicate blog posts that compete with the primary version.
 // The primary version is the longer, ranking one (10 min read at another slug).
+//
+// Phase 40 (2026-07-28): AdSense rejection for "low value content". Google sees 22
+// "Fed X / Bank Y approval: What It Means for Your Mortgage and Savings" posts
+// as scaled content abuse — same template, different fact slot. All follow:
+//   - TL;DR section
+//   - "What Happened" section with [date placeholder]
+//   - "Why It Matters" section
+//   - Mortgage advice + calculator CTAs
+// Different fact + same skeleton = exactly the pattern Google has rejected since
+// the March 2024 Helpful Content Update. Noindex these to remove them from search
+// and AdSense review. Original editorial posts (3 explainers, decision guides,
+// genuine methodology content) stay indexed.
 const NOINDEX_DUPLICATE_SLUGS = new Set([
   "20000-loan-5-years-8-percent-monthly-payment",  // Duplicate of 20000-loan-at-8-percent-for-5-years-monthly-payment
+
+  // ── Fed-event-mortgage template posts (Phase 40 AdSense rejection cleanup) ──
+  "columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+  "oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i",
+  "fed-approves-burke-herbert-bank-merger-what-it-means-for-your-mortgage-and-savin",
+  "fed-ends-enforcement-actions-against-major-banks-what-it-means-for-your-mortgage",
+  "fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals",
+  "fed-discount-window-survey-what-it-means-for-your-mortgage-and-savings",
+  "fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+  "fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa",
+  "bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving",
+  "stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+  "fed-approves-united-texas-bank-conversion-what-it-means-for-your-mortgage-and-sa",
+  "kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+  "foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin",
+  "allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+  "fed-s-new-payment-account-proposal-what-it-means-for-your-mortgage-and-savings",
+  "federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-",
+  "prediction-markets-vs-regulators-what-it-means-for-your-mortgage-and-savings-goa",
+  "mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances",
+  "new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
+  "uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+  "ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+  "core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
 ]);
 
 // ISR: revalidate blog pages every 5 minutes for Phase 36 noindex propagation
