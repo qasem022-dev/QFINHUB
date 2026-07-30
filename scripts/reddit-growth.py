@@ -18,9 +18,20 @@ from datetime import datetime
 PROJECT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT / ".reddit-growth"
 SESSION_DIR = os.path.expanduser("~/.hermes/cloak-profiles/reddit-qasemqh")
+sys.path.insert(0, os.path.expanduser("~/.hermes"))
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 os.makedirs(SESSION_DIR, exist_ok=True)
+
+
+def get_proxy():
+    """Load residential proxy for Reddit automation."""
+    try:
+        from proxy_helper import get_playwright_proxy
+        return get_playwright_proxy()
+    except Exception as e:
+        print(f"⚠️ Proxy load failed (continuing without proxy): {e}")
+        return None
 
 
 def load_env():
@@ -225,7 +236,7 @@ def upvote_posts(page, state, count=5):
 
     # Browse a finance subreddit
     sub = random.choice(SUBREDDITS_PHASE1)
-    page.goto(f"https://www.reddit.com/r/{sub}/", wait_until="domcontentloaded", timeout=30000)
+    page.goto(f"https://old.reddit.com/r/{sub}/", wait_until="domcontentloaded", timeout=30000)
     hs(4)
 
     upvoted = 0
@@ -239,28 +250,31 @@ def upvote_posts(page, state, count=5):
         # Find upvote buttons
         try:
             # Randomly decide to upvote (not every post)
-            if random.random() < 0.4:
-                buttons = page.locator('button[aria-label="Upvote"], button[data-click-id="upvote"]')
+            if random.random() < 0.6:
+                # Old Reddit has clearer DOM
+                buttons = page.locator('div.arrow.up, button.upvote')
                 count_btns = buttons.count()
                 if count_btns > 0:
-                    idx = random.randint(0, min(count_btns - 1, 10))
+                    idx = random.randint(0, min(count_btns - 1, 15))
                     btn = buttons.nth(idx)
 
                     # Check if it's a finance post first
                     parent_text = page.evaluate(f"""
                         (function() {{
-                            var btns = document.querySelectorAll('button[aria-label="Upvote"], button[data-click-id="upvote"]');
-                            if (btns[{idx}]) {{
-                                var card = btns[{idx}].closest('article, [data-testid="post-container"], shreddit-post');
-                                return card ? card.textContent.slice(0, 200) : '';
+                            var arrows = document.querySelectorAll('div.arrow.up, button.upvote');
+                            if (arrows[{idx}]) {{
+                                var post = arrows[{idx}].closest('.thing, .entry, shreddit-post');
+                                return post ? post.textContent.slice(0, 400) : '';
                             }}
                             return '';
                         }})()
                     """)
 
-                    if any(kw in parent_text.lower() for kw in FINANCE_KEYWORDS[:10]):
+                    if any(kw in parent_text.lower() for kw in FINANCE_KEYWORDS):
                         btn.click()
                         upvoted += 1
+                        state.setdefault("upvoted", []).append(f"r/{sub}")
+                        save_state(state)
                         hs(2)
         except:
             pass
@@ -351,7 +365,7 @@ def make_comment(page, state):
     small_subs = ["debtfree", "leanfire", "dividends", "studentloans", "budget"]
     sub = random.choice([s for s in small_subs if s in state.get("joined", small_subs)])
 
-    page.goto(f"https://www.reddit.com/r/{sub}/new/", wait_until="domcontentloaded", timeout=30000)
+    page.goto(f"https://old.reddit.com/r/{sub}/new/", wait_until="domcontentloaded", timeout=30000)
     hs(4)
     random_scroll(page)
 
@@ -359,7 +373,7 @@ def make_comment(page, state):
 
     try:
         # Find the first post and open it
-        posts = page.locator('a[data-click-id="body"]')
+        posts = page.locator('a.title.may-blank')
         if posts.count() > 0:
             posts.first.click()
             hs(4)
@@ -367,31 +381,29 @@ def make_comment(page, state):
             # Pre-compute escaped comment text
             escaped_comment = comment_text.replace("'", "\\'").replace("\n", " ")
 
-            # Find comment box and type
+            # Find comment box and type — old reddit uses textarea
             comment_js = (
                 "(function() {"
-                "  var textareas = document.querySelectorAll('textarea, [contenteditable=\"true\"], div[role=\"textbox\"]');"
+                "  var textareas = document.querySelectorAll('textarea');"
                 "  for (var el of textareas) {"
-                "    el.focus();"
-                "    if (el.contentEditable === 'true') {"
-                "      el.textContent = '" + escaped_comment + "';"
-                "    } else {"
+                "    if (el.name && el.name.includes('comment')) {"
+                "      el.focus();"
                 "      el.value = '" + escaped_comment + "';"
+                "      el.dispatchEvent(new Event('input', { bubbles: true }));"
+                "      break;"
                 "    }"
-                "    el.dispatchEvent(new Event('input', { bubbles: true }));"
-                "    break;"
                 "  }"
                 "})()"
             )
             page.evaluate(comment_js)
             hs(3)
 
-            # Click comment button
+            # Click save button
             page.evaluate("""
                 (function() {
-                    var btns = document.querySelectorAll('button');
+                    var btns = document.querySelectorAll('button[type="submit"], button.save, button.btn');
                     for (var b of btns) {
-                        if (b.textContent.trim() === 'Comment') { b.click(); return; }
+                        if (b.textContent.includes('Save') || b.value === 'Save') { b.click(); return; }
                     }
                 })()
             """)
@@ -403,6 +415,33 @@ def make_comment(page, state):
 
     except Exception as e:
         print(f"  ⚠️ Comment failed: {e}")
+
+
+def check_karma(page):
+    """Visit user profile, parse karma from page text. Returns int or 0 on failure."""
+    try:
+        page.goto("https://old.reddit.com/user/QASEMQH/", wait_until="domcontentloaded", timeout=20000)
+        hs(3)
+        text = page.evaluate("document.body.innerText")
+        # Try multiple formats: "QASEMQH (1)|messages", "1 post karma", "0 comment karma"
+        # Most reliable: look for "X post karma" or "X comment karma"
+        post = re.search(r"(\d[\d,]*)\s*post karma", text.lower())
+        comment = re.search(r"(\d[\d,]*)\s*comment karma", text.lower())
+        if post or comment:
+            total = 0
+            if post:
+                total += int(post.group(1).replace(",", ""))
+            if comment:
+                total += int(comment.group(1).replace(",", ""))
+            return total
+        # Fallback: header format "QASEMQH (N)|messages"
+        header = re.search(r"QASEMQH\s*\((\d[\d,]*)\)", text)
+        if header:
+            return int(header.group(1).replace(",", ""))
+        return 0
+    except Exception as e:
+        print(f"  ⚠️ Karma check failed: {e}")
+        return 0
 
 
 def daily_routine(visible=False):
@@ -427,6 +466,7 @@ def daily_routine(visible=False):
         humanize=True,
         human_preset="careful",
         viewport={"width": 1440, "height": 900},
+        proxy=get_proxy(),
     )
 
     try:
@@ -465,13 +505,41 @@ def daily_routine(visible=False):
 
         else:
             print(f"\n📅 Phase 2: Growth (Day {account_age_days})")
-            print("   Activities: browse + upvote + value posts + engagement")
+            print("   Activities: browse + upvote + comments + selective engagement")
 
-            browse_feed(page, 5)
-            upvote_posts(page, state, 5)
+            browse_feed(page, 4)
+            upvote_posts(page, state, 8)
 
-            # TODO: Phase 2 — value posts (implemented when account is ready)
-            print("   ⏳ Value posting unlocked at Day 10+")
+            # Phase 2A (Days 8-14): Increase comment volume in small subs only
+            # Phase 2B (Days 15+): Add comments in larger finance subs once karma > 50
+            karma_estimate = state.get("karma_estimate", 1)
+            print(f"   Current karma estimate: {karma_estimate}")
+
+            if account_age_days <= 14:
+                # Small subs only — safe karma building
+                comment_count = min(account_age_days - 7, 4)  # 1-4 comments
+                for _ in range(comment_count):
+                    make_comment(page, state)
+                    hs(random.uniform(15, 45))  # Long pause between comments
+            elif karma_estimate < 50:
+                # Still in small subs until karma is high enough
+                comment_count = 3
+                for _ in range(comment_count):
+                    make_comment(page, state)
+                    hs(random.uniform(20, 60))
+            else:
+                # Phase 2B: Larger subs + 1 value post per day with NO links
+                print("   🎉 Karma threshold reached — Phase 2B active")
+                comment_count = 4
+                for _ in range(comment_count):
+                    make_comment(page, state)
+                    hs(random.uniform(25, 70))
+                # Save top posts for future QFINHUB link opportunities (no posting yet)
+                save_posts(page, state, 5)
+
+            # Refresh karma estimate
+            karma_estimate = check_karma(page)
+            state["karma_estimate"] = karma_estimate
 
         save_state(state)
         phase_label = "Phase 1: Aging" if account_age_days <= 7 else "Phase 2: Growth"
@@ -489,9 +557,30 @@ if __name__ == "__main__":
     p.add_argument("--login-only", action="store_true", help="Just login and save session")
     p.add_argument("--dry-run", action="store_true", help="Show plan without executing")
     p.add_argument("--visible", action="store_true", help="Show browser window")
+    p.add_argument("--karma-check", action="store_true", help="Just check current karma")
+    p.add_argument("--quick", action="store_true", help="Quick session: 1-2 comments, no browse (for testing)")
     args = p.parse_args()
 
-    if args.login_only:
+    if args.karma_check:
+        load_env()
+        from cloakbrowser import launch_persistent_context
+        context = launch_persistent_context(
+                str(SESSION_DIR), headless=True, humanize=True, human_preset="careful",
+                viewport={"width": 1440, "height": 900},
+                proxy=get_proxy(),
+            )
+        try:
+            page = context.new_page()
+            page.goto("https://www.reddit.com/", wait_until="domcontentloaded", timeout=30000)
+            hs(4)
+            karma = check_karma(page)
+            print(f"\n💎 Current karma: {karma}")
+            state = load_state()
+            state["karma_estimate"] = karma
+            save_state(state)
+        finally:
+            context.close()
+    elif args.login_only:
         load_env()
         from cloakbrowser import launch_persistent_context
         context = launch_persistent_context(str(SESSION_DIR), headless=False, humanize=True, human_preset="careful")
@@ -504,5 +593,32 @@ if __name__ == "__main__":
     elif args.dry_run:
         print("🔍 DRY RUN — Day", load_state().get("day", 0) + 1)
         print("Would: browse feeds, upvote finance posts, join subs, save posts, light comment")
+    elif args.quick:
+        # Quick session for cron — just karma check + 2 upvotes + 1 comment
+        load_env()
+        state = load_state()
+        from cloakbrowser import launch_persistent_context
+        context = launch_persistent_context(
+                str(SESSION_DIR), headless=True, humanize=True, human_preset="careful",
+                viewport={"width": 1440, "height": 900},
+                proxy=get_proxy(),
+            )
+        try:
+            page = context.new_page()
+            logged_in, page = login_reddit(context)
+            if not logged_in:
+                print("❌ Login failed")
+                context.close()
+                sys.exit(1)
+            print("🚀 Quick session")
+            upvote_posts(page, state, 3)
+            make_comment(page, state)
+            karma = check_karma(page)
+            state["karma_estimate"] = karma
+            state["last_run"] = datetime.utcnow().isoformat()
+            save_state(state)
+            print(f"\n✅ Quick session complete | karma: {karma}")
+        finally:
+            context.close()
     else:
         daily_routine(visible=args.visible)
