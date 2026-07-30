@@ -218,5 +218,129 @@
       "kw": "mortgage rates 2025 ‘Borderline Desperate’ Buyers ",
       "source": "trend"
     }
+  },
+  {
+    "ts": "2026-07-30T18:42:44.156Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "mortgage payment calculation",
+      "issues": [
+        "Only 3 internal links to /calculators/ (need 4-6)",
+        "Humanize skill score 7 (top hits: hedge-crucial×1, hedge-essential×1, hedge-comprehensive×1)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T18:43:19.621Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "mortgage payment calculation",
+      "issues": [
+        "Only 3 internal links to /calculators/ (need 4-6)",
+        "Meta description: 185 chars (target 150-160, max 170)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T18:44:01.131Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "mortgage payment calculation",
+      "issues": [
+        "Only 0 internal links to /calculators/ (need 4-6)",
+        "Meta description: 188 chars (target 150-160, max 185)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T18:47:41.969Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "mortgage payment calculation",
+      "issues": [
+        "Only 0 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T18:48:51.403Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "mortgage payment calculation",
+      "issues": [
+        "Only 0 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T19:19:24.153Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "mortgage payment calculation",
+      "issues": [
+        "Only 0 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T19:20:54.786Z",
+    "type": "published",
+    "details": {
+      "slug": "calculate-your-mortgage-payment-step-by-step-in-2026",
+      "kw": "mortgage payment calculation",
+      "cat": "mortgage",
+      "source": "evergreen",
+      "wordCount": 1216
+    }
+  },
+  {
+    "ts": "2026-07-30T19:25:59.559Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "compound interest explained",
+      "issues": [
+        "Humanize skill score 14 (top hits: hedge-crucial×1, hedge-essential×1, hedge-powerful×3)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T19:26:35.797Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "compound interest explained",
+      "issues": [
+        "Meta description: 190 chars (target 150-160, max 185)",
+        "Humanize skill score 15 (top hits: hedge-leverage×3, hedge-powerful×3)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-07-30T19:28:31.284Z",
+    "type": "generation_failed",
+    "details": {
+      "kw": "compound interest explained"
+    }
+  },
+  {
+    "ts": "2026-07-30T19:29:11.043Z",
+    "type": "published",
+    "details": {
+      "slug": "compound-interest-explained-why-1-000-becomes-10-000",
+      "kw": "compound interest explained",
+      "cat": "investment",
+      "source": "evergreen",
+      "wordCount": 991
+    }
+  },
+  {
+    "ts": "2026-07-30T19:34:30.315Z",
+    "type": "published",
+    "details": {
+      "slug": "your-30s-retirement-planning-guide-a-concrete-30-year-plan",
+      "kw": "retirement planning 30s guide",
+      "cat": "retirement",
+      "source": "evergreen",
+      "wordCount": 1187
+    }
   }
 ]
