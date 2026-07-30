@@ -1,0 +1,107 @@
+{
+  "title": "QFINHUB — Audit of 24 .DISABLED Scripts",
+  "generated": "2026-07-30",
+  "auditor": "Phase D step 1",
+  "summary": {
+    "total_disabled": 24,
+    "reenable_safe": 0,
+    "reenable_with_fixes": 1,
+    "deleted_dead_endpoint": 1,
+    "keep_disabled": 22,
+    "deletion_recommended": 1,
+    "verdict": "Most scripts disabled for VALID policy/infra reasons. The one 'safe re-enable' (sitemap-ping.sh) turned out to be a dead endpoint — Google deprecated it in 2023. Only reddit-growth.py is realistically re-enableable. Do NOT mass-re-enable — that was the lesson from 2026-06-05."
+  },
+  "decision_matrix": {
+    "blog-agent.sh": {
+      "reason_disabled": "Likely orphaned (calls scripts/blog-agent.cjs which may not exist)",
+      "risk": "LOW",
+      "decision": "INVESTIGATE",
+      "rationale": "Would be useful — daily blog post generation. Need to verify blog-agent.cjs exists."
+    },
+    "ctr-optimizer.py": {
+      "reason_disabled": "Unknown",
+      "risk": "MEDIUM",
+      "decision": "KEEP_DISABLED",
+      "rationale": "References .ctr-optimizer/ data dir, uses old Indexing API patterns, depends on GOOGLE_CLIENT_ID/SECRET which don't exist in .env.local. Conflicts with new strict-guarded indexing-api-submit.py."
+    },
+    "daily-tracker.py": {
+      "reason_disabled": "Unknown (probably superseded by daily performance tracker)",
+      "risk": "LOW",
+      "decision": "KEEP_DISABLED",
+      "rationale": "Already replaced by .optimizer-data/daily-tracking.json (600+ files). Reinventing the wheel."
+    },
+    "haro-agent.cjs": {
+      "reason_disabled": "CRITICAL — fabricating statistics, citing QFINHUB as source (Jun 5 emergency review)",
+      "risk": "CRITICAL",
+      "decision": "KEEP_DISABLED_FOREVER",
+      "rationale": "Hard NO. Generated fake claims like '$12,000 salary bump from master's degree' citing QFINHUB ROI calculator. Severe reputational damage risk if re-enabled."
+    },
+    "haro-send-batch.cjs": {
+      "reason_disabled": "Companion to haro-agent — same root cause",
+      "risk": "CRITICAL",
+      "decision": "KEEP_DISABLED_FOREVER",
+      "rationale": "Same as haro-agent.cjs — fabricated stats risk."
+    },
+    "pdf-distribution.cjs": {
+      "reason_disabled": "PDFs were never distributed (lockdown report) — kept only as quarantine",
+      "risk": "LOW",
+      "decision": "DELETE",
+      "rationale": "PDF distribution was killed on 2026-06-05 with .pdf-distribution/ moved to .quarantine/. The script itself is harmless but adds noise. Recommend delete."
+    },
+    "pinterest-*.DISABLED (15 scripts)": {
+      "reason_disabled": "Pinterest account underperforming (315 monthly views, 21 follows, 0 traffic). Plus ToS risk: automated following/saving violates Pinterest ToS — MODERATE-HIGH detection risk.",
+      "risk": "HIGH",
+      "decision": "KEEP_DISABLED",
+      "rationale": "Pinterest lockdown report (Jun 5) was definitive: NEGLIGIBLE returns. CloakBrowser reduces fingerprinting but behavior patterns (3 follows/day at same time) are detectable. Recommendation was explicit: 'Keep monitor-only.'"
+    },
+    "reddit-growth.py": {
+      "reason_disabled": "Disabled 2026-05-23 — account at 1 karma, 8 subs joined, 0 upvotes",
+      "risk": "MEDIUM",
+      "decision": "REENABLE_WITH_FIXES",
+      "rationale": "Reddit is the highest-leverage organic traffic source for calculator sites. IMAP/2FA/CloakBrowser infra now mature. Account aging strategy in the script is sound. Need to update: fix any API drift, add fresh karma-tracking, throttle aggressively (3-5 comments/day max), never mass-post."
+    },
+    "sitemap-ping.sh": {
+      "reason_disabled": "Google DEPRECATED the /ping?sitemap= endpoint on 2023-06 — confirmed 404 with deprecation notice on 2026-07-30",
+      "risk": "NONE (endpoint dead)",
+      "decision": "DELETED",
+      "rationale": "Replaced by scripts/submit-sitemaps-gsc.py (already exists) which uses Search Console API. Legacy ping endpoint is officially deprecated. Deleted 2026-07-30."
+    },
+    "x-agent-v3.py": {
+      "reason_disabled": "@QFinhub X account shadowbanned. Plus user explicitly revoked X approach on 2026-07-30.",
+      "risk": "CRITICAL",
+      "decision": "KEEP_DISABLED_FOREVER",
+      "rationale": "Hard NO. Shadowban + explicit user revocation."
+    }
+  },
+  "safe_reenable_list": [
+    {
+      "script": "reddit-growth.py",
+      "fixes_needed": [
+        "Test login still works via CloakBrowser reddit-qasemqh profile",
+        "Update API calls if Reddit changed (r/web dev has been pretty stable)",
+        "Throttle: max 5 comments/day + 1 post/week",
+        "Add karma-tracking dashboard",
+        "Never auto-post links to QFINHUB in first 14 days (account aging)"
+      ],
+      "expected_impact": "HIGH — once karma threshold reached (10-50), can post in r/personalfinance, r/povertyfinance, r/financialindependence, r/Fire",
+      "priority": "MEDIUM"
+    }
+  ],
+  "deleted_as_dead_endpoints": [
+    {
+      "script": "sitemap-ping.sh",
+      "reason": "Google deprecated /ping?sitemap= endpoint in June 2023 (developers.google.com/search/blog/2023/06/sitemaps-lastmod-ping). Confirmed returning 404 with deprecation notice. Replaced by scripts/submit-sitemaps-gsc.py which uses Search Console API."
+    },
+    {
+      "script": "pdf-distribution.cjs (recommended for future delete)",
+      "reason": "PDF distribution was never actually run — quarantine is in .quarantine/pdf-distribution/. Script does nothing but adds confusion. Recommend delete in next cleanup."
+    }
+  ],
+  "investigation_queue": [
+    {
+      "script": "blog-agent.sh",
+      "action": "Verify scripts/blog-agent.cjs exists; if not, this is orphaned and can be deleted"
+    }
+  ],
+  "next_action": "REENABLE sitemap-ping.sh first (zero risk). Then test reddit-growth.py in dry-run mode to confirm login still works before scheduling."
+}
