@@ -747,6 +747,90 @@ async function main() {
     return;
   }
 
+  if (args.includes("--selftest")) {
+    // Pre-flight self-test: verify all skills are working. Exit 0 = pass, 1 = fail.
+    console.log("🧪 Running engine self-test...");
+    let allPass = true;
+
+    // Test 1: Skill module loads
+    try {
+      require("./blog-quality-skills.cjs");
+      console.log("  ✓ Skill module loads");
+    } catch (e) {
+      console.error("  ✗ Skill module fails to load:", e.message);
+      allPass = false;
+    }
+
+    // Test 2: Valid slugs load
+    try {
+      const slugs = skills.loadValidCalculatorSlugs();
+      if (slugs.length > 50) console.log(`  ✓ ${slugs.length} calculator slugs loaded`);
+      else { console.error(`  ✗ Only ${slugs.length} calculator slugs loaded`); allPass = false; }
+    } catch (e) {
+      console.error("  ✗ Slug loader fails:", e.message);
+      allPass = false;
+    }
+
+    // Test 3: History loads
+    try {
+      const history = await skills.loadPublishedHistory();
+      if (history.length > 100) console.log(`  ✓ ${history.length} published posts in history`);
+      else { console.error(`  ✗ Only ${history.length} posts in history`); allPass = false; }
+    } catch (e) {
+      console.error("  ✗ History loader fails:", e.message);
+      allPass = false;
+    }
+
+    // Test 4: Humanize skill discriminates
+    try {
+      const h = skills.humanizeSkillScore("In today's fast-paced landscape, delve into the crucial tapestry of options. Top 5 ways to leverage your potential.");
+      const low = skills.humanizeSkillScore("Your monthly mortgage payment depends on the loan amount, interest rate, and loan term.");
+      if (h.score > low.score && h.score >= 10 && low.score <= 5) {
+        console.log(`  ✓ Humanize skill (AI: ${h.score}, Human: ${low.score})`);
+      } else {
+        console.error(`  ✗ Humanize skill misfired (AI: ${h.score}, Human: ${low.score})`);
+        allPass = false;
+      }
+    } catch (e) {
+      console.error("  ✗ Humanize fails:", e.message);
+      allPass = false;
+    }
+
+    // Test 5: Markdown → HTML conversion
+    try {
+      const md = "Hello [world](/test). Visit [us](https://example.com).";
+      const html = skills.convertMarkdownLinksToHtml(md);
+      if (html.includes('<a href="/test">world</a>') && html.includes('<a href="https://example.com">us</a>')) {
+        console.log("  ✓ Markdown link converter works");
+      } else {
+        console.error("  ✗ Markdown converter broken:", html);
+        allPass = false;
+      }
+    } catch (e) {
+      console.error("  ✗ Markdown converter fails:", e.message);
+      allPass = false;
+    }
+
+    // Test 6: Link-fix skill
+    try {
+      const slugs = skills.loadValidCalculatorSlugs();
+      const links = [{ href: "/calculators/unicorn-tool", anchor: "Unicorn" }];
+      const fix = skills.linkFixSkill(links, slugs);
+      if (fix.brokenCount === 1 && fix.fixedCount === 1 && fix.fixed[0].newHref) {
+        console.log(`  ✓ Link-fix: 1 broken → ${fix.fixed[0].newHref}`);
+      } else {
+        console.error("  ✗ Link-fix broken:", JSON.stringify(fix));
+        allPass = false;
+      }
+    } catch (e) {
+      console.error("  ✗ Link-fix fails:", e.message);
+      allPass = false;
+    }
+
+    console.log(allPass ? "\n✅ All self-tests passed" : "\n❌ Self-test FAILED");
+    process.exit(allPass ? 0 : 1);
+  }
+
   if (args.includes("--dump")) {
     console.log("\n✍️ Generating blog post (DUMP mode — full content to stdout)...");
     const post = await generateBlogPost(topic);
