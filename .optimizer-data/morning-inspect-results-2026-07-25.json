@@ -1,0 +1,170 @@
+{
+  "generated": "2026-07-25T15:06:28Z",
+  "date": "2026-07-25",
+  "sample_size": 16,
+  "wall_clock_seconds": 25,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/compare/compare-loan-calculator-vs-amortization-schedule",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-07-24T15:22:31Z",
+      "category": "INDEXED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100k-10yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/npv-calculator",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-07-24T15:22:31Z",
+      "category": "INDEXED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/irr-calculator",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-07-24T15:22:31Z",
+      "category": "INDEXED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-90k-late-start",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/retirement-income",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-07-24T15:20:27Z",
+      "category": "INDEXED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-60k-40pct-save",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-150k-30yr",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-30k-extreme",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/property-tax",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/perpetuity-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/markup-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-250k-head-of-household",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-to-income",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-25k-van-life",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 1
+    }
+  ],
+  "newly_indexed": [
+    "https://www.qfinhub.com/compare/compare-loan-calculator-vs-amortization-schedule",
+    "https://www.qfinhub.com/calculators/npv-calculator",
+    "https://www.qfinhub.com/calculators/irr-calculator",
+    "https://www.qfinhub.com/calculators/retirement-income"
+  ],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/tools/investment-100k-10yr",
+    "https://www.qfinhub.com/tools/fire-90k-late-start",
+    "https://www.qfinhub.com/tools/fi-60k-40pct-save",
+    "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "INDEXED": 4,
+    "DISCOVERED": 11,
+    "UNKNOWN": 1
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-16",
+  "report_type": "Daily GSC Operations",
+  "metrics_7d": {
+    "impressions": 646,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 67.5,
+    "pages_with_impressions": 48,
+    "query_count": 226,
+    "freshness": "FRESH"
+  },
+  "indexing_status": {
+    "indexed_pages": 103,
+    "discovered_pages": 190,
+    "unknown_pages": 98,
+    "crawled_pages": 2,
+    "uninspected_pages": 106,
+    "total_sitemap_urls": 499
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "sample_results": {
+      "indexed": 3,
+      "discovered": 14,
+      "unknown": 6,
+      "crawled": 1,
+      "other": 0
+    },
+    "transitions": {
+      "newly_indexed": 3,
+      "unknown_to_discovered": 5,
+      "regressions": 0
+    },
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/tools/investment-2M-10yr",
+      "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps"
+    ]
+  },
+  "submissions": {
+    "submitted_today": 13,
+    "successful": 13,
+    "failed": 0,
+    "quota_remaining": 0,
+    "submitted_urls": [
+      "https://www.qfinhub.com/calculators/lease-vs-buy",
+      "https://www.qfinhub.com/compare/compare-npv-calculator-vs-irr-calculator",
+      "https://www.qfinhub.com/tools/tax-100k-head-of-household",
+      "https://www.qfinhub.com/calculators/refinance-calculator",
+      "https://www.qfinhub.com/tools/dti-50k-36pct",
+      "https://www.qfinhub.com/tools/dti-200k-investor",
+      "https://www.qfinhub.com/tools/fire-45k-barista",
+      "https://www.qfinhub.com/tools/fire-40k-military",
+      "https://www.qfinhub.com/calculators/loan-refinancing",
+      "https://www.qfinhub.com/tools/fi-60k-40pct-save",
+      "https://www.qfinhub.com/tools/tax-350k-single",
+      "https://www.qfinhub.com/tools/tax-25k-single",
+      "https://www.qfinhub.com/tools/tax-45k-married-separate"
+    ]
+  },
+  "queue_maintenance": {
+    "stale_urls_removed": 0,
+    "sitemap_url_count": 499
+  },
+  "session_status": "valid",
+  "issues": [
+    "GSC avg position 67.5 still deep — most impressions on page 7+",
+    "0 clicks in 7d despite 646 impressions — CTR extraction opportunity",
+    "DISCOVERED pages (190) need content humanization pipeline before re-submission",
+    "gsc-morning-diagnosis.py still missing from scripts/ — used throwaway template"
+  ],
+  "next_actions": [
+    "Jul 17: run morning diagnosis to check for newly-indexed URLs from today's submission batch",
+    "Prioritize lease-vs-buy and refinance-calculator — these are high-value UNKNOWN pages",
+    "Process DISCOVERED pages through humanization pipeline (Phase 39 methodology)"
+  ]
+}

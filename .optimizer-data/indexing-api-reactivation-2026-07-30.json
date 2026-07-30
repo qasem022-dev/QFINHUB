@@ -1,0 +1,64 @@
+{
+  "title": "Daily Indexing Request Rules — Phase D (Reactivated 2026-07-30)",
+  "generated": "2026-07-30",
+  "supersedes": "All previous no_indexing_api policy",
+  "reactivation_reason": "After 49 days of disable (2026-06-12 → 2026-07-30), Indexing API reactivated with strict guardrails. Initial submission batch: 101 URLs, 0 rejections, 100% success rate.",
+  "core_rule": "Do not request indexing for the same URL within 14 days. No thin programmatic pages. No URL patterns matching /tools/[numeric-variants] or /scenario/. Never exceed 180 submissions/day (cap is 200).",
+  "eligibility_criteria": {
+    "page_is_high_value": {
+      "description": "Real calculators, real guides, real blogs with unique content. NO thin tools, NO formula variants, NO hash-ID scenarios.",
+      "must_NOT_match": [
+        "/tools/investment-*-*",
+        "/tools/tax-*-*",
+        "/tools/loan-*-*",
+        "/tools/mortgage-*-*",
+        "/scenario/",
+        "/loan-payment-table/"
+      ]
+    },
+    "eligible": {
+      "description": "HTTP 200, no noindex tag, no redirect, in sitemap.",
+      "auto_disqualify": "noindex, canonical-to-other, redirect, 404, in NOINDEX_DUPLICATE_SLUGS"
+    },
+    "cooldown_14_days": {
+      "description": "Min 14 days between submissions for the same URL.",
+      "tracking_file": ".optimizer-data/indexing-api-submission-log.json"
+    },
+    "not_already_indexed": {
+      "description": "Already-indexed pages do not need re-requesting. Focus on unindexed or 'Discovered - currently not indexed'."
+    }
+  },
+  "daily_indexing_budget": {
+    "max_requests_per_day": 180,
+    "google_quota": 200,
+    "headroom": 20,
+    "reason": "Leave 20-request headroom for debugging + manual single-URL submits during the day."
+  },
+  "guardrails_implemented": {
+    "url_exclude_list": "Block regex patterns for thin programmatic pages (see eligibility.must_NOT_match).",
+    "dedup": "Same URL never submitted twice in same batch.",
+    "cooldown": "14-day minimum between submissions per URL.",
+    "daily_cap": "180 max per day.",
+    "audit_log": "Every submission logged to .optimizer-data/indexing-api-submission-log.json with timestamp, source bucket, result.",
+    "rejection_tracking": "Rejections logged separately with HTTP code + body for diagnosis."
+  },
+  "bucket_sources": {
+    "ready": "Pages with HTTP 200, no noindex, no redirect — eligible immediately.",
+    "auto_fix_redirect": "Submit the FINAL URL after a 301 chain, not the original (Google has the original cached as 'Discovered' but never indexed the canonical).",
+    "needs_improvement": "Thin/duplicate pages — fix content first, then submit.",
+    "exclude": "Broken 404 / no HTML — investigate before any decision."
+  },
+  "initial_reactivation_report": {
+    "date": "2026-07-30",
+    "submitted": 101,
+    "rejected": 0,
+    "categories": {
+      "calculators": 66,
+      "blog": 16,
+      "guides": 13,
+      "root": 6
+    },
+    "remaining_quota_today": 99,
+    "next_action": "Continue submitting remaining eligible URLs from discovered-not-indexed list across next 2 days. Then daily cron picks up new discoveries."
+  }
+}

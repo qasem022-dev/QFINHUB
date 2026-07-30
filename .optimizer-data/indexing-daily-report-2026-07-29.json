@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T15:31:00Z",
+  "status": "COMPLETE",
+  "gsc_data": {
+    "freshness": "FRESH",
+    "auth_method": "service_account",
+    "date_range": {
+      "start": "2026-07-20",
+      "end": "2026-07-26"
+    },
+    "metrics_7d": {
+      "impressions": 804,
+      "clicks": 1,
+      "ctr_pct": 0.1,
+      "avg_position": 55.3,
+      "pages_with_impressions": 79
+    },
+    "previous_7d_impressions": 435,
+    "impressions_change_pct": 84.8,
+    "metrics_28d": {
+      "impressions": 2391,
+      "clicks": 2,
+      "pages_with_impressions": 125
+    }
+  },
+  "url_inspection": {
+    "inspected": 1900,
+    "wall_clock_seconds": 1528,
+    "newly_indexed_observations": 393,
+    "unknown_to_discovered_transitions": 479,
+    "regressions": 0,
+    "master_entries": 660,
+    "master_state_counts": {
+      "indexed": 209,
+      "discovered": 301,
+      "unknown": 126,
+      "crawled_rejected": 3,
+      "other": 21
+    },
+    "queue_counts_after_rebuild": {
+      "indexed": 192,
+      "discovered": 253,
+      "unknown": 71,
+      "uninspected": 0
+    },
+    "note": "The run inspected a cycled 1,900-request sample. newly_indexed_observations counts inspection transitions within that cycled run; the deduplicated current indexed total is 209 in the accumulated master file and 192 in the live-sitemap queue."
+  },
+  "gsc_ui_submission": {
+    "submitted_today": 13,
+    "unique_urls": 13,
+    "results": {
+      "clicked_button": 3,
+      "requested_confirmed": 10,
+      "failures": 0
+    },
+    "session_status": "ACTIVE",
+    "safety_checks": {
+      "queue_filtered_against_live_sitemap": true,
+      "stale_urls_removed": 0,
+      "sample_urls_http_200": true,
+      "indexed_pages_resubmitted": false
+    }
+  },
+  "issues_or_blockers": [],
+  "data_policy": "Raw GSC Search Analytics API metrics; no correction factor applied. URL Inspection API and GSC UI Request Indexing are reported separately. Google Indexing API was not used."
+}

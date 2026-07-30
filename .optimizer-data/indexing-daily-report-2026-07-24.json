@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T15:22:08.794722+00:00",
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "3bace3e533bd",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "metrics_7d": {
+    "impressions": 340,
+    "clicks": 1,
+    "ctr_pct": 0.3,
+    "avg_position": 54.9,
+    "pages_with_impressions": 60,
+    "query_count": 134,
+    "query_impressions": 210,
+    "query_page_rows": 134
+  },
+  "metrics_28d": {
+    "impressions": 1941,
+    "clicks": 2,
+    "pages_with_impressions": 105,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/methodology",
+      "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+    ]
+  },
+  "indexed_total": 162,
+  "discovered_total": 279,
+  "unknown_total": 55,
+  "crawled_total": 3,
+  "other_total": 0,
+  "master_file_total": 499,
+  "sitemap_url_count": 498,
+  "morning_diagnosis": {
+    "inspected": 1266,
+    "duration_s": 1030,
+    "newly_indexed_count": 43,
+    "unknown_to_discovered_count": 461,
+    "regressions_count": 0,
+    "category_counts": {
+      "INDEXED": 43,
+      "DISCOVERED": 962,
+      "UNKNOWN": 253,
+      "CRAWLED_REJECTED": 8
+    },
+    "rate_per_sec": 1.23
+  },
+  "submissions_today": {
+    "count": 13,
+    "quota": "13/13",
+    "results": {
+      "requested_checkmark": 10,
+      "clicked_button": 3,
+      "failures": 0
+    }
+  },
+  "queue_after": {
+    "indexed_pass_count": 162,
+    "discovered_count": 282,
+    "unknown_count": 54,
+    "uninspected_count": 0,
+    "freshness": "FRESH"
+  },
+  "health_checks": {
+    "queue_vs_sitemap_drift_urls_removed": 0,
+    "session_expired": false,
+    "captcha_2fa": false,
+    "gsc_pipeline_fresh": true
+  },
+  "notes": [
+    "Steady state: pool exhausted (pitfall #69). 336 URLs in queue, 1266 inspected today.",
+    "43 organic newly-indexed today (tied for largest single-day gain since Jul 21).",
+    "461 unknown \u2192 discovered transitions \u2014 Google actively re-categorizing.",
+    "0 regressions \u2014 no pages lost indexing.",
+    "STEP B-pre: 0 stale URLs removed (7th consecutive day \u2014 pitfall #50 holds).",
+    "13/13 CloakBrowser submissions succeeded (10 REQUESTED + 3 CLICKED_BUTTON).",
+    "7-day re-measurement cron 61e86e21a5b3 has date typo in schedule (Jul not Jun) \u2014 consider fixing."
+  ]
+}

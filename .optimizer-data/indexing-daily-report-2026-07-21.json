@@ -1,0 +1,97 @@
+{
+  "date": "2026-07-21",
+  "pipeline": {
+    "freshness": "FRESH",
+    "metrics_7d": {
+      "impressions": 454,
+      "clicks": 1,
+      "ctr_pct": 0.2,
+      "avg_position": 62.0,
+      "pages_with_impressions": 55,
+      "query_count": 184,
+      "query_impressions": 306,
+      "query_page_rows": 184
+    },
+    "api_raw_imp": 454,
+    "api_raw_clicks": 1,
+    "date_range": "2026-07-12 to 2026-07-18"
+  },
+  "indexing": {
+    "master_entries": 499,
+    "counts": {
+      "INDEXED": 152,
+      "UNKNOWN": 99,
+      "DISCOVERED": 245,
+      "CRAWLED": 3
+    },
+    "sitemap_url_count": 498,
+    "newly_indexed_organic": 55,
+    "unknown_to_discovered": 388,
+    "regressions": 0
+  },
+  "morning_diagnosis": {
+    "sample_size": 1266,
+    "wall_clock_seconds": 1027,
+    "rate_per_second": 1.2,
+    "category_counts": {
+      "INDEXED": 55,
+      "UNKNOWN": 366,
+      "DISCOVERED": 838,
+      "CRAWLED_REJECTED": 7
+    },
+    "429_throttles": 0
+  },
+  "submissions": {
+    "today_count": 13,
+    "results": [
+      "CLICKED_BUTTON",
+      "CLICKED_BUTTON",
+      "CLICKED_BUTTON",
+      "CLICKED_BUTTON",
+      "CLICKED_BUTTON",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713",
+      "REQUESTED \u2713"
+    ],
+    "all_unique_urls": [
+      "https://www.qfinhub.com/blog/mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances",
+      "https://www.qfinhub.com/blog/mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained",
+      "https://www.qfinhub.com/blog/mortgage-rates-2025-can-the-housing-market-weather-the-storm",
+      "https://www.qfinhub.com/blog/rent-vs-buy-which-is-better",
+      "https://www.qfinhub.com/calculators/inheritance-tax",
+      "https://www.qfinhub.com/calculators/payback-period",
+      "https://www.qfinhub.com/tools/budget-65k-zero-based",
+      "https://www.qfinhub.com/tools/dti-75k-28pct",
+      "https://www.qfinhub.com/tools/emergency-fund-4k-12mo",
+      "https://www.qfinhub.com/tools/fire-35k-geo-arb",
+      "https://www.qfinhub.com/tools/investment-500k-20yr",
+      "https://www.qfinhub.com/tools/investment-600k-12yr",
+      "https://www.qfinhub.com/tools/net-worth-30s-growth"
+    ],
+    "category_mix": "5 unknown + 8 discovered (rebalanced by queue post-diagnosis)"
+  },
+  "queue_after_run": {
+    "indexed_pass": 0,
+    "discovered_pages": 248,
+    "unknown_pages": 98,
+    "uninspected_pages": 0,
+    "stale_urls_removed_by_bpre": 0
+  },
+  "blockers": [],
+  "consecutive_clean_runs": 5,
+  "notes": [
+    "Morning diagnosis: 1,266 URLs inspected (pool exhausted at uninspected=0/unknown=61/discovered=290 cycling) \u2014 all 200 OK, 0 throttles",
+    "55 organic newly-indexed pages detected (5 net INDEXED growth vs Jul 20: 147 \u2192 152)",
+    "388 unknown\u2192discovered transitions (Google re-categorizing as crawl progresses)",
+    "0 regressions",
+    "13/13 CloakBrowser GSC UI submissions succeeded (5 CLICKED_BUTTON + 8 REQUESTED \u2713)",
+    "STEP B-pre removed 0 stale URLs (steady state \u2014 pitfall #50)",
+    "No CAPTCHA, no session expiry, no 2FA",
+    "Pipeline FRESH (454 raw imp, 1 click, 55 pages, pos 62.0 over Jul 12-18)"
+  ]
+}

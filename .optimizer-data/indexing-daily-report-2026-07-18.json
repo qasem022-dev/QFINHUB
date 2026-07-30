@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "pipeline": {
+    "freshness": "FRESH",
+    "auth": "service_account",
+    "metrics_7d": {
+      "impressions": 661,
+      "clicks": 1,
+      "ctr_pct": 0.2,
+      "avg_position": 65.9,
+      "pages_with_impressions": 56,
+      "query_count": 238
+    },
+    "previous_7d": {
+      "impressions": 439,
+      "clicks": null,
+      "avg_position": null
+    },
+    "change_7d": {
+      "impressions": 222,
+      "impressions_pct": 50.6
+    },
+    "correction_factor_status": "DISABLED \u2014 not applied to official metrics per Phase 19.2 normalization"
+  },
+  "morning_diagnosis": {
+    "inspected_urls": 1900,
+    "duration_seconds": 1526,
+    "rate_per_sec": 1.25,
+    "errors": 24,
+    "category_counts": {
+      "ERROR": 24,
+      "DISCOVERED": 1135,
+      "UNKNOWN": 202,
+      "CRAWLED_REJECTED": 9,
+      "INDEXED": 530
+    },
+    "transitions": {
+      "newly_indexed_organic": 530,
+      "unknown_to_discovered": 497,
+      "regressions": 0
+    }
+  },
+  "indexing_state": {
+    "indexed_total": 140,
+    "discovered_not_indexed": 313,
+    "unknown_to_google": 45,
+    "uninspected": 0,
+    "queue_freshness": "FRESH",
+    "queue_generated": "2026-07-18T15:26:07Z"
+  },
+  "submissions": {
+    "date": "2026-07-18",
+    "quota_used": 13,
+    "quota_limit": 13,
+    "unique_urls_submitted": 13,
+    "result_distribution": {
+      "CLICKED_BUTTON": 5,
+      "REQUESTED \u2713": 8
+    }
+  },
+  "retry_backlog": {
+    "queue-retry-429-jul17.json": {
+      "urls_pending": 310,
+      "count_field": 310
+    }
+  },
+  "issues_or_blockers": [
+    "Morning diagnosis had 24 HTTP errors"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T15:05:27.419224+00:00",
+  "summary": {
+    "total_indexed": 117,
+    "total_discovered": 214,
+    "total_unknown": 161,
+    "total_other": 142,
+    "master_file_entries": 634
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "category_counts": {
+      "INDEXED": 14,
+      "OTHER": 1,
+      "UNKNOWN": 7,
+      "DISCOVERED": 3
+    },
+    "newly_indexed_count": 14,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+      "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "https://www.qfinhub.com/blog/student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
+      "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+      "https://www.qfinhub.com/blog/energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
+      "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+      "https://www.qfinhub.com",
+      "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "https://www.qfinhub.com/blog",
+      "https://www.qfinhub.com/ai-specialist",
+      "https://www.qfinhub.com/blog/compound-interest-explained",
+      "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+      "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026"
+    ],
+    "unknown_to_discovered_count": 2,
+    "unknown_to_discovered_urls": [
+      "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+      "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche"
+    ],
+    "regressions_count": 0,
+    "regressions_urls": []
+  },
+  "submissions": {
+    "submitted_today": 13,
+    "successful_today": 13,
+    "failed_today": 0,
+    "daily_quota_used": "13/13",
+    "submitted_urls": [
+      "https://www.qfinhub.com/tools/tax-400k-married-joint",
+      "https://www.qfinhub.com/tools/tax-80k-married-separate",
+      "https://www.qfinhub.com/tools/fi-15k-lean-extreme",
+      "https://www.qfinhub.com/tools/tax-1M-married-joint",
+      "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "https://www.qfinhub.com/tools/tax-60k-head-of-household",
+      "https://www.qfinhub.com/tools/fire-0k-100k-starter",
+      "https://www.qfinhub.com/calculators/loan-refinancing",
+      "https://www.qfinhub.com/tools/fi-70k-late-50pct",
+      "https://www.qfinhub.com/tools/dti-65k-medical",
+      "https://www.qfinhub.com/tools/fire-90k-late-start",
+      "https://www.qfinhub.com/tools/tax-750k-married-joint"
+    ]
+  },
+  "gsc_metrics_7d": {
+    "impressions": 678,
+    "clicks": 1,
+    "avg_position": null,
+    "pages_with_impressions": null
+  },
+  "pipeline_status": {
+    "gsc_freshness": "FRESH",
+    "morning_inspect_completed": true,
+    "submissions_completed": true
+  },
+  "health_checks": {
+    "queue_vs_sitemap_drift_removed": 0,
+    "retry_queue_files": 0,
+    "captcha_encountered": false,
+    "session_expired": false,
+    "all_samples_http_200": true
+  },
+  "milestones": {
+    "first_click_preserved_28d": true,
+    "indexed_set_growth_organic_today": 14,
+    "highest_organic_gain_recorded": true
+  }
+}

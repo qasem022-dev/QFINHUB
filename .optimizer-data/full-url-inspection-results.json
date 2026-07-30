@@ -11,70 +11,46 @@
     "user_canonical": "https://www.qfinhub.com/calculators"
   },
   "https://www.qfinhub.com/ai-specialist": {
-    "coverage_state": "URL is unknown to Google",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-01T16:04:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/privacy": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/terms": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-23T15:04:35Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/about": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/contact": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog": {
-    "coverage_state": "URL is unknown to Google",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-01T16:04:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/guides": {
     "coverage_state": "URL is unknown to Google",
@@ -88,15 +64,11 @@
     "user_canonical": ""
   },
   "https://www.qfinhub.com/compare": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/disclaimer": {
     "coverage_state": "Submitted and indexed",
@@ -121,15 +93,11 @@
     "user_canonical": "https://www.qfinhub.com/methodology"
   },
   "https://www.qfinhub.com/editorial-policy": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:53:19Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/widgets/mortgage-affordability-embed": {
     "coverage_state": "Submitted and indexed",
@@ -143,15 +111,11 @@
     "user_canonical": "https://www.qfinhub.com/widgets/mortgage-affordability-embed"
   },
   "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/all-pages": {
     "coverage_state": "Submitted and indexed",
@@ -165,15 +129,11 @@
     "user_canonical": "https://www.qfinhub.com/all-pages"
   },
   "https://www.qfinhub.com/calculators/basic-calculator": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/compound-interest": {
     "coverage_state": "Submitted and indexed",
@@ -189,13 +149,9 @@
   "https://www.qfinhub.com/calculators/simple-interest": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/investment-return": {
     "coverage_state": "Submitted and indexed",
@@ -242,15 +198,11 @@
     "user_canonical": "https://www.qfinhub.com/calculators/tax-calculator"
   },
   "https://www.qfinhub.com/calculators/capital-gains-tax": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/loan-calculator": {
     "coverage_state": "Submitted and indexed",
@@ -266,13 +218,9 @@
   "https://www.qfinhub.com/calculators/amortization-schedule": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/mortgage-calculator": {
     "coverage_state": "Submitted and indexed",
@@ -299,24 +247,16 @@
   "https://www.qfinhub.com/calculators/roi-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/break-even": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/budget-planner": {
     "coverage_state": "Submitted and indexed",
@@ -341,158 +281,102 @@
     "user_canonical": "https://www.qfinhub.com/calculators/net-worth"
   },
   "https://www.qfinhub.com/calculators/savings-goal": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/inflation-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/currency-converter": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/tip-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/discount-calculator": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
-  },
-  "https://www.qfinhub.com/calculators/salary-calculator": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/calculators/salary-calculator": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/stock-return": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/dividend-calculator": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/dollar-cost-average": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/auto-loan": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/student-loan": {
-    "coverage_state": "URL is unknown to Google",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
-  },
-  "https://www.qfinhub.com/calculators/personal-loan": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/calculators/personal-loan": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-26T15:05:47Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/debt-consolidation": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/loan-comparison": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/debt-payoff": {
     "coverage_state": "Submitted and indexed",
@@ -508,57 +392,37 @@
   "https://www.qfinhub.com/calculators/debt-snowball": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/debt-avalanche": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/loan-refinancing": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/lease-vs-buy": {
-    "coverage_state": "URL is unknown to Google",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-27T17:29:26Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/refinance-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/rent-vs-buy": {
     "coverage_state": "Submitted and indexed",
@@ -572,37 +436,25 @@
     "user_canonical": "https://www.qfinhub.com/"
   },
   "https://www.qfinhub.com/calculators/home-equity": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/closing-costs": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/mortgage-payoff": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-27T18:06:59Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/biweekly-mortgage": {
     "coverage_state": "Submitted and indexed",
@@ -616,191 +468,123 @@
     "user_canonical": "https://www.qfinhub.com/calculators/biweekly-mortgage"
   },
   "https://www.qfinhub.com/calculators/fha-loan": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/va-loan": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/arm-calculator": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-23T15:04:35Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/pmi-calculator": {
-    "coverage_state": "Duplicate, Google chose different canonical than user",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_ALLOWED",
-    "robots_txt_state": "ALLOWED",
-    "page_fetch_state": "SUCCESSFUL",
-    "last_crawl_time": "2026-05-23T00:41:39",
-    "crawled_as": "MOBILE",
-    "google_canonical": "https://qfinhub.com/calculators/pmi-calculator",
-    "user_canonical": "https://www.qfinhub.com/calculators/pmi-calculator"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-18T12:13:21Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/home-renovation": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/portfolio-allocator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/risk-reward": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
-  },
-  "https://www.qfinhub.com/calculators/position-sizing": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/calculators/position-sizing": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/option-profit": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/bond-yield": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/bond-price": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/capm-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/sharpe-ratio": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/alpha-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/beta-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/asset-correlation": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/monte-carlo-simulation": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:20:59Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/annuity-calculator": {
     "coverage_state": "Submitted and indexed",
@@ -816,123 +600,79 @@
   "https://www.qfinhub.com/calculators/perpetuity-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/present-value": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/future-value": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/irr-calculator": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/npv-calculator": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/payback-period": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-21T15:23:34Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/financial-ratios": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/roth-ira": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/traditional-ira": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/social-security": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/pension-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/retirement-withdrawal": {
     "coverage_state": "Submitted and indexed",
@@ -946,209 +686,144 @@
     "user_canonical": "https://www.qfinhub.com/calculators/retirement-withdrawal"
   },
   "https://www.qfinhub.com/calculators/required-minimum-distribution": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-25T15:20:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/retirement-income": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:20:27Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/early-retirement": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/retirement-expenses": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/sales-tax": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
-  },
-  "https://www.qfinhub.com/calculators/property-tax": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
-  "https://www.qfinhub.com/calculators/estate-tax": {
+  "https://www.qfinhub.com/calculators/property-tax": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/calculators/estate-tax": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/inheritance-tax": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/self-employment-tax": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/effective-tax-rate": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/marginal-tax-rate": {
-    "coverage_state": "URL is unknown to Google",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:30:25Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/tax-bracket": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/w4-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/1099-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "?",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/gross-margin": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": "",
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": "",
-    "user_canonical": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/markup-calculator": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/margin-calculator": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-27T22:34:45Z",
-    "googleCanonical": "https://www.qfinhub.com/calculators/margin-calculator",
-    "success": true
+    "last_crawl": "2026-05-27T22:34:45Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/operating-margin": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-29T15:34:00Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/cash-flow": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-23T15:04:35Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/dcf-analysis": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-29T15:34:00Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/inventory-turnover": {
     "coverage_state": "Submitted and indexed",
@@ -1162,128 +837,123 @@
     "user_canonical": "https://www.qfinhub.com/calculators/inventory-turnover"
   },
   "https://www.qfinhub.com/calculators/customer-acquisition-cost": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/lifetime-value": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T06:32:50Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/em-fund": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-29T15:35:34Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/debt-to-income": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/credit-card-payoff": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/college-savings": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/car-affordability": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/insurance-needs": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/child-care-cost": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/moving-cost": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/wedding-budget": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/vacation-budget": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
-  },
-  "https://www.qfinhub.com/calculators/side-hustle-calculator": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
-  },
-  "https://www.qfinhub.com/calculators/fica-calculator": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/calculators/side-hustle-calculator": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:23:58Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
+  },
+  "https://www.qfinhub.com/calculators/fica-calculator": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/hourly-to-salary": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/overtime-calculator": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/paycheck-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/percentage-calculator": {
     "coverage_state": "Submitted and indexed",
@@ -1293,43 +963,51 @@
   "https://www.qfinhub.com/calculators/bmi-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/calorie-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/date-difference": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/age-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/time-value-of-money": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/rule-of-72": {
-    "coverage_state": "Alternate page with proper canonical tag",
-    "verdict": "NEUTRAL",
-    "last_crawl_time": "2026-05-13T02:34:40"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-24T07:41:07Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/calculators/fraction-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/unit-converter": {
     "coverage_state": "Submitted and indexed",
@@ -1339,12 +1017,16 @@
   "https://www.qfinhub.com/calculators/gas-mileage": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/fuel-cost": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/electricity-cost": {
     "coverage_state": "Submitted and indexed",
@@ -1352,24 +1034,32 @@
     "last_crawl_time": "2026-05-26T12:10:18"
   },
   "https://www.qfinhub.com/calculators/water-bill": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/fire-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/phone-plan-comparison": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/how-to-calculate-monthly-mortgage-payment": {
     "coverage_state": "Submitted and indexed",
@@ -1377,19 +1067,25 @@
     "last_crawl_time": "2026-06-05T05:41:51"
   },
   "https://www.qfinhub.com/blog/compound-interest-explained": {
-    "coverage_state": "URL is unknown to Google",
-    "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-01T16:04:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/rent-vs-buy-which-is-better": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-26T15:05:47Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/how-student-loan-payments-affect-monthly-budget": {
     "coverage_state": "Submitted and indexed",
@@ -1399,33 +1095,37 @@
   "https://www.qfinhub.com/blog/understanding-tax-brackets-what-rate-do-you-actually-pay": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/how-inflation-affects-your-savings-and-investments": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-2025-report-how-household-economic-well-being-impacts-your-mortgage-and-savi": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/what-the-fed-s-termination-of-enforcement-actions-means-for-your-mortgage-afford": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1433,9 +1133,11 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-holds-rates-steady-what-the-fomc-statement-means-for-your-mortgage-in-2025": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1445,7 +1147,9 @@
   "https://www.qfinhub.com/blog/oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-a-former-bank-employee-means-for-your-": {
     "coverage_state": "URL is unknown to Google",
@@ -1453,9 +1157,11 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/what-the-fed-s-approval-of-banco-de-credito-del-peru-means-for-your-mortgage-and": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1483,9 +1189,11 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-discount-window-survey-what-it-means-for-your-mortgage-and-savings": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1510,7 +1218,9 @@
   "https://www.qfinhub.com/blog/why-britain-s-potential-next-pm-is-putting-investors-on-edge": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1518,9 +1228,11 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/bowman-s-fed-speech-on-banking-future-what-it-means-for-your-mortgage-and-saving": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/fed-chair-change-how-powell-s-pro-tempore-role-and-warsh-s-appointment-could-imp": {
     "coverage_state": "Submitted and indexed",
@@ -1555,7 +1267,9 @@
   "https://www.qfinhub.com/blog/mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1570,7 +1284,9 @@
   "https://www.qfinhub.com/blog/trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings": {
     "coverage_state": "URL is unknown to Google",
@@ -1578,9 +1294,11 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/stephen-miran-exits-the-fed-how-his-policies-could-impact-your-mortgage-affordab": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1590,7 +1308,9 @@
   "https://www.qfinhub.com/blog/ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f": {
     "coverage_state": "URL is unknown to Google",
@@ -1610,7 +1330,9 @@
   "https://www.qfinhub.com/blog/foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/stock-market-week-ahead-nvidia-alphabet-earnings-atlanta-fed-how-to-protect-your": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1618,25 +1340,25 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "last_crawl_time": ""
-  },
-  "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": null,
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
-  "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now": {
+  "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-15T15:07:14Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc": {
     "coverage_state": "Submitted and indexed",
@@ -1666,7 +1388,9 @@
   "https://www.qfinhub.com/blog/rate-cuts-are-off-the-table-2-stocks-under-30-for-this-market-how-to-protect-you": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/fed-s-rising-inflation-forecast-how-to-protect-your-mortgage-and-savings": {
     "coverage_state": "URL is unknown to Google",
@@ -1679,9 +1403,11 @@
     "last_crawl_time": ""
   },
   "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/investor-angst-emerges-in-riskiest-stocks-on-rate-uncertainty-mortgage-rates-202": {
     "coverage_state": "Submitted and indexed",
@@ -1689,15 +1415,11 @@
     "last_crawl_time": "2026-06-04T13:56:15"
   },
   "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-25T15:20:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1712,17 +1434,23 @@
   "https://www.qfinhub.com/blog/mortgage-rates-2025-can-the-housing-market-weather-the-storm": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/investing-massive-options-bet-rattles-oil-market-amid-iran-war-fears": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/investing-in-lowe-s-stock-a-comprehensive-guide-for-2025": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for": {
     "coverage_state": "Submitted and indexed",
@@ -1751,9 +1479,11 @@
     "last_crawl_time": "2026-05-21T19:58:11"
   },
   "https://www.qfinhub.com/blog/mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1773,32 +1503,44 @@
   "https://www.qfinhub.com/blog/retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-21T15:23:34Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/blog/when-to-refinance-your-mortgage-complete-guide-2026": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/200k-mortgage-payment-30-years": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/retire-by-40-calculator-how-much-needed": {
     "coverage_state": "Discovered - currently not indexed",
@@ -1831,9 +1573,11 @@
     "last_crawl_time": "2026-05-26T03:16:51"
   },
   "https://www.qfinhub.com/blog/mortgage-rates-hit-9-month-high-how-to-protect-your-home-buying-power": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "last_crawl_time": ""
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-17T07:27:30Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a": {
     "coverage_state": "Submitted and indexed",
@@ -1881,783 +1625,756 @@
     "last_crawl_time": "2026-05-28T01:25:44"
   },
   "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T04:21:55Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
-    "success": true
+    "last_crawl": "2026-05-28T04:21:55Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T01:31:53Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
-    "success": true
+    "last_crawl": "2026-05-28T01:31:53Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T17:35:04Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
-    "success": true
+    "last_crawl": "2026-05-28T17:35:04Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-04T17:23:57Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
-    "success": true
+    "last_crawl": "2026-07-20T10:37:03Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-29T16:31:53Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
-    "success": true
+    "last_crawl": "2026-05-29T16:31:53Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T17:16:17Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/energy-inflation-persists-how-higher-oil-prices-impact-your-mortgage-and-savings",
-    "success": true
+    "last_crawl": "2026-05-28T17:16:17Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone": {
-    "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-01T05:08:53Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
-    "success": true
+    "coverage_state": "Page with redirect",
+    "verdict": "NEUTRAL",
+    "last_crawl": "2026-07-20T15:34:17Z",
+    "category": "OTHER",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/blog/student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-01T03:38:45Z",
-    "googleCanonical": "https://www.qfinhub.com/blog/student-loan-repayment-options-2025-how-to-choose-the-best-plan-for-your-budget",
-    "success": true
+    "last_crawl": "2026-07-19T23:39:02Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
   },
   "https://www.qfinhub.com/tools/investment-1k-5yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-19T18:54:16Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-1k-5yr",
-    "success": true
+    "last_crawl": "2026-07-23T18:52:13Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-5k-3yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-10k-5yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-10k-10yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-25k-5yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:19:27Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-25k-5yr",
-    "success": true
+    "last_crawl": "2026-05-28T22:19:27Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-25k-10yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-04T07:58:17Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-25k-10yr",
-    "success": true
+    "last_crawl": "2026-06-04T07:58:17Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-50k-7yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-50k-10yr": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100k-10yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100k-15yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100k-20yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-250k-10yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-250k-15yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-500k-10yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-500k-15yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-1M-10yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:30:25Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-1M-15yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-02T15:06:45Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-1M-15yr",
-    "success": true
+    "last_crawl": "2026-06-02T15:06:45Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-2k-3yr": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-5k-7yr": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-15k-4yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-20k-5yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-30k-6yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-40k-7yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-75k-12yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-150k-15yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-18T15:30:13Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-200k-10yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-300k-12yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-14T06:12:15Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-750k-20yr": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-2M-20yr": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-1k-3yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-03T00:03:22Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-1k-3yr",
-    "success": true
+    "last_crawl": "2026-07-19T17:16:34Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-50k-3yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:23:58Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-100k-3yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-27T18:15:15Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-250k-3yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-10k-8yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-50k-5yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-200k-5yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-10k-15yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100k-7yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-19T19:17:01Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-100k-7yr",
-    "success": true
+    "last_crawl": "2026-07-15T22:36:30Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-500k-7yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-20T15:19:07Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-25k-20yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100k-25yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-500k-20yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-1M-25yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100-1yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-75k-15yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T13:45:08Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-150k-20yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-2M-10yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-04T09:46:16Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-2M-10yr",
-    "success": true
+    "last_crawl": "2026-07-25T17:05:23Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-5M-10yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-02T14:45:39Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-5M-10yr",
-    "success": true
+    "last_crawl": "2026-06-02T14:45:39Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-1k-10yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-20T15:21:19Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-50k-15yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-3M-20yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-18T15:30:13Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-500-5yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-10k-3yr-loss": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:30:25Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-50k-5yr-loss": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-100k-2yr-loss": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-200k-4yr-loss": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-500k-3yr-loss": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:23:58Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-1k-6mo": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-5k-6mo": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-10k-6mo": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-25k-6mo": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-200k-20yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-500-3yr": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-19T22:19:28Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-500-3yr",
-    "success": true
+    "last_crawl": "2026-07-16T17:33:05Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-5k-20yr": {
-    "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-21T03:22:51Z",
-    "googleCanonical": "https://www.qfinhub.com/tools/investment-5k-20yr",
-    "success": true
+    "coverage_state": "Crawled - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "2026-05-21T03:22:51Z",
+    "category": "CRAWLED_REJECTED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-30k-10yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-80k-8yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-400k-18yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-600k-12yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-21T15:23:34Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-50k-25yr": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/investment-150k-30yr": {
-    "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-25T15:20:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-40k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-60k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-80k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-100k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-120k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-150k-single": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-200k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-250k-single": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-300k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-400k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-500k-single": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-60k-married-joint": {
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-100k-married-joint": {
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "coverageState": "URL is unknown to Google",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "success": true
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-150k-married-joint": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-200k-married-joint": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-250k-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-300k-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-400k-married-joint": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-500k-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-750k-married-joint": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-1M-married-joint": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T15:07:39Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-50k-head-of-household": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-75k-head-of-household": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-100k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-150k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-200k-head-of-household": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-250k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-300k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-45k-married-separate": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-80k-married-separate": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T15:05:27Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-120k-married-separate": {
     "coverage_state": "Submitted and indexed"
@@ -2666,43 +2383,91 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-35k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-55k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-95k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-140k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-175k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-225k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-350k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-600k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-80k-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-180k-married-joint": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-350k-married-joint": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-600k-married-joint": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-85k-head-of-household": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-22T15:03:21Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-125k-head-of-household": {
     "coverage_state": "Submitted and indexed"
@@ -2711,67 +2476,147 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-275k-head-of-household": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-500k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-65k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-110k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-18T15:30:13Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-160k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-10k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-15k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-20k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:30:25Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-25k-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-30k-single": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-750k-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-23T15:06:13Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-1M-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-1-5M-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-2M-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T14:52:39Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-3M-single": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-5M-single": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-2M-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-3M-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-5M-married-joint": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-30k-married-separate": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-60k-married-separate": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-100k-married-separate": {
     "coverage_state": "Submitted and indexed"
@@ -2780,34 +2625,66 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-250k-married-separate": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-350k-married-separate": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-500k-married-separate": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-30k-head-of-household": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/tax-40k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-60k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-350k-head-of-household": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/tax-400k-head-of-household": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:30:25Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/budget-40k-zero-based": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T15:07:40Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/budget-65k-zero-based": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-21T15:21:37Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct": {
     "coverage_state": "Submitted and indexed"
@@ -2816,43 +2693,87 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/emergency-fund-3k-3mo": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/emergency-fund-3k-6mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/emergency-fund-4k-6mo": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/emergency-fund-4k-12mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/emergency-fund-5k-6mo": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/emergency-fund-2k-3mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/emergency-fund-6k-6mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-18T15:30:13Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/emergency-fund-8k-6mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:23:58Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/emergency-fund-10k-12mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/emergency-fund-1-5k-1mo": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-25T15:18:51Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/net-worth-20s-starter": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-30s-growth": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-40s-peak": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-50s-prep": {
     "coverage_state": "Submitted and indexed"
@@ -2861,43 +2782,83 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/net-worth-100k-builder": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-500k-milestone": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/net-worth-1M-milestone": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-26T15:05:47Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/net-worth-debt-heavy": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-real-estate": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:23:58Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/net-worth-fire-track": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/net-worth-minimalist": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-high-income": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/net-worth-empty-nester": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/net-worth-entrepreneur": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-50k-36pct": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-75k-28pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-100k-43pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-60k-20pct": {
     "coverage_state": "Submitted and indexed"
@@ -2906,10 +2867,18 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/dti-150k-25pct": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-85k-first-home": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-120k-student-loans": {
     "coverage_state": "Submitted and indexed"
@@ -2918,115 +2887,243 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/dti-200k-investor": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-35k-credit-repair": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/dti-90k-two-cars": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-65k-medical": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-250k-luxury": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/dti-45k-grad": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-50k-expenses-1M": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-40k-lean-800k": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/fire-60k-coast-500k": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-30k-extreme": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-80k-fat-fire-2M": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:21:06Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/fire-45k-barista": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-35k-geo-arb": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-21T15:21:37Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/fire-0k-100k-starter": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-55k-slow": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-25k-van-life": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:31:36Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-90k-late-start": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-40k-military": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fire-50k-dual-income": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/roi-10k-to-8k-neg20pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/roi-75k-to-60k-neg20pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-20T15:21:19Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/roi-20k-breakeven": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/fi-30k-expenses-750k": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-50k-50pct-save": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/fi-60k-40pct-save": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-40k-60pct-save": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-20T15:21:19Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/fi-80k-family-45pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-100k-fire-55pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-25k-minimal": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-45k-coast": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-70k-late-50pct": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-35k-geo-arb": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-90k-executive": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-15k-lean-extreme": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T15:05:27Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/fi-55k-dual-55pct": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/tools/fi-0k-50pct-fresh": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/tools/fi-120k-fat-60pct": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/calculators/loan/nashville-tn": {
     "coverage_state": "Submitted and indexed",
@@ -3046,51 +3143,95 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-loan-calculator-vs-amortization-schedule": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-24T15:22:31Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-25T15:20:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-compound-interest-vs-simple-interest": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-investment-return-vs-compound-interest": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Crawled - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "2026-06-14T12:18:35Z",
+    "category": "CRAWLED_REJECTED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-401k-calculator-vs-roth-ira": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-retirement-planning-vs-early-retirement": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-social-security-vs-retirement-income": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-tax-calculator-vs-effective-tax-rate": {
     "coverage_state": "Submitted and indexed",
@@ -3107,72 +3248,140 @@
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/compare/compare-capital-gains-tax-vs-tax-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-break-even-vs-roi-calculator": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-28T17:11:36Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/compare/compare-npv-calculator-vs-irr-calculator": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-net-worth-vs-budget-planner": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-debt-consolidation-vs-loan-comparison": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Crawled - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "2026-07-13T15:09:57Z",
+    "category": "CRAWLED_REJECTED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-dollar-cost-average-vs-lump-sum": {
     "coverage_state": "Submitted and indexed"
   },
   "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-06-30T16:03:51Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/compare/best-mortgage-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-compound-interest-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-retirement-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-loan-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-401k-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-tax-calculator": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-investment-calculator": {
-    "coverage_state": "Discovered - currently not indexed"
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/compare/best-budget-calculator": {
-    "coverage_state": "URL is unknown to Google"
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/guides/how-to-use-basic-calculator": {
     "coverage_state": "Submitted and indexed"
@@ -3418,64 +3627,46 @@
     "coverage_state": "URL is unknown to Google"
   },
   "https://www.qfinhub.com/calculators/net-profit-margin": {
-    "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawlTime": "",
-    "googleCanonical": "",
-    "userCanonical": "",
-    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "success": true
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-29T15:30:25Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/decision/401k-vs-taxable-investing": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T19:42:14Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
-    "userCanonical": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-19T12:59:40Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/can-i-afford-a-400k-home": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T20:10:23Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
-    "userCanonical": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-19T09:15:28Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:04:26Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
-    "userCanonical": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-19T09:21:19Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:03:53Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
-    "userCanonical": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-06-29T10:46:20Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:17:37Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
-    "userCanonical": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-20T08:17:55Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/how-much-house-can-i-afford": {
     "coverage_state": "Submitted and indexed",
@@ -3489,74 +3680,60 @@
     "user_canonical": "https://www.qfinhub.com/decision/how-much-house-can-i-afford"
   },
   "https://www.qfinhub.com/decision/pay-off-debt-or-invest": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T19:43:18Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
-    "userCanonical": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-20T02:45:57Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:04:23Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
-    "userCanonical": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-19T09:20:28Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T19:37:52Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
-    "userCanonical": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
-    "robotsTxtState": "ALLOWED",
-    "success": true
+    "last_crawl": "2026-07-22T11:58:04Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/retire-at-45-with-1-million": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T19:38:59Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
-    "success": true
+    "last_crawl": "2026-05-28T19:38:59Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:15:38Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
-    "success": true
+    "last_crawl": "2026-05-28T22:15:38Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:02:36Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
-    "success": true
+    "last_crawl": "2026-07-19T06:55:24Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:04:20Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan",
-    "success": true
+    "last_crawl": "2026-07-01T00:58:29Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-28T22:02:41Z",
-    "googleCanonical": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
-    "success": true
+    "last_crawl": "2026-05-28T22:02:41Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in": {
     "coverage_state": "Submitted and indexed",
@@ -3570,12 +3747,11 @@
     "user_canonical": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in"
   },
   "https://www.qfinhub.com/guides/how-to-use-1099-calculator": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-19T18:56:21Z",
-    "googleCanonical": "https://www.qfinhub.com/guides/how-to-use-1099-calculator",
-    "success": true
+    "last_crawl": "2026-05-19T18:56:21Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/guides/how-to-use-age-calculator": {
     "verdict": "NEUTRAL",
@@ -3618,12 +3794,11 @@
     "success": true
   },
   "https://www.qfinhub.com/guides/how-to-use-child-care-cost": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-19T18:52:10Z",
-    "googleCanonical": "https://www.qfinhub.com/guides/how-to-use-child-care-cost",
-    "success": true
+    "last_crawl": "2026-05-19T18:52:10Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/guides/how-to-use-college-savings": {
     "verdict": "NEUTRAL",
@@ -3650,12 +3825,11 @@
     "success": true
   },
   "https://www.qfinhub.com/guides/how-to-use-date-difference": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-05-19T18:59:17Z",
-    "googleCanonical": "https://www.qfinhub.com/guides/how-to-use-date-difference",
-    "success": true
+    "last_crawl": "2026-05-19T18:59:17Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/guides/how-to-use-dcf-analysis": {
     "verdict": "NEUTRAL",
@@ -3706,12 +3880,11 @@
     "success": true
   },
   "https://www.qfinhub.com/guides/how-to-use-fraction-calculator": {
+    "coverage_state": "Submitted and indexed",
     "verdict": "PASS",
-    "coverageState": "Submitted and indexed",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawlTime": "2026-06-03T04:30:01Z",
-    "googleCanonical": "https://www.qfinhub.com/guides/how-to-use-fraction-calculator",
-    "success": true
+    "last_crawl": "2026-06-03T04:30:01Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/guides/how-to-use-fuel-cost": {
     "verdict": "NEUTRAL",
@@ -3762,69 +3935,234 @@
     "success": true
   },
   "https://www.qfinhub.com/data": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": null,
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   },
   "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
-  },
-  "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent": {
-    "coverage_state": "Discovered - currently not indexed",
-    "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
-  },
-  "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent": {
     "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": null,
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-25T15:20:52Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
+  },
+  "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T15:07:36Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/loan-payment-table": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-28T13:20:29Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-28"
+  },
+  "https://www.qfinhub.com/blog/auto-loan-true-cost-calculator": {
     "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
-    "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-    "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-    "last_crawl_time": null,
-    "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
-    "google_canonical": null,
-    "user_canonical": null
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-60k": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/how-to-calculate-real-return": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-50k": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-125k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-100k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-200k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/how-to-calculate-cagr": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/how-to-calculate-rate-of-return": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/fed-and-your-mortgage": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-19T11:52:43Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
+  },
+  "https://www.qfinhub.com/blog/global-central-banks": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/fed-bank-mergers-approvals": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/fed-stock-market-and-bonds": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-150k": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-75k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-40k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-85k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/fomc-rate-decisions-explained": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-26T15:05:47Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
+  },
+  "https://www.qfinhub.com/guides/how-to-calculate-after-tax-return": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/fed-and-your-savings-investments": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-27T15:51:47Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
+  },
+  "https://www.qfinhub.com/blog/fed-personnel-and-policy": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth": {
+    "coverage_state": "URL is unknown to Google",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "UNKNOWN",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/mortgage-on-30k": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/guides/how-to-calculate-total-return": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
+  },
+  "https://www.qfinhub.com/blog/fed-enforcement-actions": {
+    "coverage_state": "Submitted and indexed",
+    "verdict": "PASS",
+    "last_crawl": "2026-07-20T15:34:17Z",
+    "category": "INDEXED",
+    "last_updated": "2026-07-29"
+  },
+  "https://www.qfinhub.com/guides/how-to-calculate-annual-return": {
+    "coverage_state": "Discovered - currently not indexed",
+    "verdict": "NEUTRAL",
+    "last_crawl": "",
+    "category": "DISCOVERED",
+    "last_updated": "2026-07-30"
   }
 }

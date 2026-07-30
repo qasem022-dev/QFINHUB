@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-26",
+  "generated": "2026-07-26T15:20:46.110733+00:00",
+  "phase": "Daily GSC Operations - Phase 38",
+  "summary": {
+    "wall_clock_total_minutes": 17,
+    "morning_diagnosis": {
+      "urls_inspected": 1266,
+      "wall_clock_seconds": 1001,
+      "newly_indexed_organic": 147,
+      "unknown_to_discovered_transitions": 428,
+      "regressions": 0,
+      "category_counts": {
+        "INDEXED": 147,
+        "UNKNOWN": 149,
+        "DISCOVERED": 964,
+        "CRAWLED_REJECTED": 6
+      }
+    },
+    "submissions": {
+      "unique_today": 13,
+      "quota_used": "13/13",
+      "clicked_button": 9,
+      "requested_checkmark": 4,
+      "failures": 0,
+      "all_urls": [
+        "https://www.qfinhub.com/tools/net-worth-1M-milestone",
+        "https://www.qfinhub.com/calculators/personal-loan",
+        "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026",
+        "https://www.qfinhub.com/tools/investment-25k-6mo",
+        "https://www.qfinhub.com/blog/fomc-rate-decisions-explained",
+        "https://www.qfinhub.com/calculators/gas-mileage",
+        "https://www.qfinhub.com/blog/investing-in-lowe-s-stock-a-comprehensive-guide-for-2025",
+        "https://www.qfinhub.com/tools/tax-300k-head-of-household",
+        "https://www.qfinhub.com/tools/tax-40k-single",
+        "https://www.qfinhub.com/tools/fi-45k-coast",
+        "https://www.qfinhub.com/tools/investment-50k-5yr-loss",
+        "https://www.qfinhub.com/calculators/wedding-budget",
+        "https://www.qfinhub.com/loan-payment-table"
+      ]
+    },
+    "pipeline_metrics_7d": {
+      "impressions": 425,
+      "clicks": 0,
+      "position": "N/A",
+      "freshness": "FRESH"
+    },
+    "indexing_state": {
+      "indexed": 180,
+      "discovered": 275,
+      "unknown": 41,
+      "crawled_rejected": 3,
+      "other": 0,
+      "total": 499,
+      "success_rate_pct": 36.1
+    },
+    "queue": {
+      "indexed_pages_count": 180,
+      "discovered_pages_count": 278,
+      "unknown_pages_count": 40,
+      "uninspected_count": 0,
+      "queue_total": 0,
+      "freshness": "FRESH"
+    },
+    "blockers": [],
+    "next_actions": [
+      "Indexed crossed 180 threshold (180 \u2014 was 162 at Jul 24 baseline, +18 organic growth).",
+      "Continue daily operations \u2014 pool exhausted in uninspected bucket (cycling payoff pattern continues).",
+      "13 submissions now in 7-day cooldown \u2014 tomorrow's submission targets will draw from top of DISCOVERED queue."
+    ]
+  }
+}

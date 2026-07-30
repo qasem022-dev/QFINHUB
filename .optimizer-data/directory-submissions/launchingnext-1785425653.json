@@ -1,0 +1,20 @@
+{
+  "url": "https://www.launchingnext.com/submit/",
+  "fields_filled": [
+    "startupname",
+    "startupurl",
+    "description",
+    "fulldescription",
+    "tags",
+    "funding",
+    "user",
+    "email",
+    "newsletter_optin",
+    "math"
+  ],
+  "errors": [],
+  "success": true,
+  "post_submit_url": "https://www.launchingnext.com/submit/",
+  "post_submit_title": "Submit Your Project | Launching Next",
+  "post_submit_content_excerpt": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"utf-8\">\n\t<link rel=\"shortcut icon\" href=\"/images/favicon.ico\">\n  <script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n\n  gtag('consent', 'default', {\n    'analytics_storage': 'denied'\n  });\n</script>\n\n<link rel=\"stylesheet\" href=\"/js/cookie-banner/silktide-consent-manager.css\">\n<script src=\"/js/cookie-banner/silktide-consent-manager.js\"></script>\n<script>\nsilktideCookieBannerManager.updateCookieBannerConfig({\n  background: { showBackground: true },\n  cookieIcon: { position: \"bottomLeft\" },\n  cookieTypes: [\n    {\n      id: \"necessary\",\n      name: \"Necessary\",\n      description: \"<p>Essential for site function.</p>\",\n      required: true\n    },\n    {\n      id: \"analytics\",\n      name: \"Analytics\",\n      description: \"<p>Google Analytics tracking.</p>\",\n      required: false,\n      onAccept: function() {\n        gtag('consent', 'update', { 'analytics_storage': 'granted' });\n      }\n   "
+}

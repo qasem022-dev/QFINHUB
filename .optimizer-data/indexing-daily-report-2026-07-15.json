@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T15:06:57Z",
+  "master_indexing_state": {
+    "total_inspected": 634,
+    "indexed": 115,
+    "discovered_not_indexed": 237,
+    "unknown_to_google": 152,
+    "other": 130
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "category_counts": {
+      "DISCOVERED": 18,
+      "INDEXED": 3,
+      "CRAWLED_REJECTED": 1,
+      "UNKNOWN": 3
+    },
+    "newly_indexed": 3,
+    "unknown_to_discovered": 7,
+    "regressions": 0
+  },
+  "submission_run": {
+    "daily_quota": "13/13",
+    "unique_urls_submitted": 13,
+    "successful_results": 13,
+    "failed_results": 0,
+    "session_status": "ACTIVE"
+  },
+  "gsc_api_metrics_7d": {
+    "impressions": 580,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 65.0,
+    "pages_with_impressions": 48,
+    "query_count": 197,
+    "query_impressions": 413,
+    "query_page_rows": 197
+  },
+  "gsc_api_raw_7d": {},
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "a8ec370243fe",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "queue_state": {
+    "sitemap_total": 499,
+    "indexed_pass": 115,
+    "discovered_pages": 237,
+    "unknown_pages": 152,
+    "uninspected": 130
+  }
+}

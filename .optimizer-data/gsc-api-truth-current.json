@@ -1,18 +1,18 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-07-12T00:36:32.373422+00:00",
-  "pulled_at": "2026-07-12T00:36:32Z",
+  "generated": "2026-07-30T15:00:59.197492+00:00",
+  "pulled_at": "2026-07-30T15:00:59Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "auth_method": "service_account",
   "service_account_email": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
   "date_range": {
-    "start": "2026-07-03",
-    "end": "2026-07-09"
+    "start": "2026-07-21",
+    "end": "2026-07-27"
   },
   "previous_7d_range": {
-    "start": "2026-06-26",
-    "end": "2026-07-02"
+    "start": "2026-07-14",
+    "end": "2026-07-20"
   },
   "dimensions_pulled": [
     "page",
@@ -21,37 +21,37 @@
   ],
   "row_limits": 500,
   "metrics_7d": {
-    "impressions": 486,
-    "clicks": 0,
-    "ctr_pct": 0.0,
-    "avg_position": 63.4,
-    "pages_with_impressions": 45,
-    "query_count": 169,
-    "query_impressions": 333,
-    "query_page_rows": 169
+    "impressions": 962,
+    "clicks": 1,
+    "ctr_pct": 0.1,
+    "avg_position": 55.9,
+    "pages_with_impressions": 88,
+    "query_count": 324,
+    "query_impressions": 640,
+    "query_page_rows": 324
   },
   "metrics_28d": {
-    "impressions": 1886,
+    "impressions": 2527,
     "clicks": 2,
-    "pages_with_impressions": 124,
+    "pages_with_impressions": 130,
     "pages_with_clicks": 2,
     "clicked_pages": [
-      "https://www.qfinhub.com/tools/investment-25k-10yr",
-      "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+      "https://www.qfinhub.com/methodology",
+      "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct"
     ]
   },
   "previous_7d": {
-    "start": "2026-06-26",
-    "end": "2026-07-02",
-    "impressions": 523
+    "start": "2026-07-14",
+    "end": "2026-07-20",
+    "impressions": 352
   },
   "change_7d": {
-    "impressions": -37,
-    "impressions_pct": -7.1
+    "impressions": 610,
+    "impressions_pct": 173.3
   },
   "freshness_proof": {
     "freshness": "FRESH",
-    "checksum": "31349c51dcc2",
+    "checksum": "4207cbbd772a",
     "previous_checksum": null,
     "date_range_advanced": true,
     "cache_used": false,

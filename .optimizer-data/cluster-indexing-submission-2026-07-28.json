@@ -1,0 +1,153 @@
+{
+  "date": "2026-07-28T08:59:00.053651+00:00",
+  "submitter": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
+  "site_url": "https://www.qfinhub.com/",
+  "submitted_count": 16,
+  "errors_count": 0,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-30k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-30k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-40k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-40k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-50k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-50k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-60k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-60k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-75k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-75k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-85k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-85k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-100k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-100k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-125k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-125k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-150k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-150k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-200k",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/mortgage-on-200k"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-cagr",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/how-to-calculate-cagr"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-total-return",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/how-to-calculate-total-return"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-real-return",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/how-to-calculate-real-return"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-after-tax-return",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/how-to-calculate-after-tax-return"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-rate-of-return",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/how-to-calculate-rate-of-return"
+        }
+      }
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-annual-return",
+      "status": "submitted",
+      "response": {
+        "urlNotificationMetadata": {
+          "url": "https://www.qfinhub.com/guides/how-to-calculate-annual-return"
+        }
+      }
+    }
+  ]
+}

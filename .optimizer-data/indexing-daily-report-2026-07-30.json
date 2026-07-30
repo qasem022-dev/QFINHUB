@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-30",
+  "generated": "2026-07-30T15:21:08Z",
+  "gsc_pipeline": {
+    "freshness": "FRESH",
+    "date_range": {
+      "start": "2026-07-21",
+      "end": "2026-07-27"
+    },
+    "auth": "service_account"
+  },
+  "metrics_7d": {
+    "impressions": 962,
+    "clicks": 1,
+    "ctr_pct": 0.1,
+    "avg_position": 55.9,
+    "pages_with_impressions": 88,
+    "query_count": 324,
+    "query_impressions": 640,
+    "query_page_rows": 324
+  },
+  "change_7d": {
+    "impressions": 610,
+    "impressions_pct": 173.3
+  },
+  "metrics_28d": {
+    "impressions": 2527,
+    "clicks": 2,
+    "pages_with_impressions": 130,
+    "pages_with_clicks": 2
+  },
+  "clicked_pages_28d": [
+    "https://www.qfinhub.com/methodology",
+    "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct"
+  ],
+  "morning_diagnosis": {
+    "date": "2026-07-30",
+    "sample_size": 1266,
+    "wall_clock_seconds": 1022,
+    "newly_indexed_count": 63,
+    "unknown_to_discovered_count": 442,
+    "regressions_count": 0,
+    "category_counts": {
+      "INDEXED": 63,
+      "UNKNOWN": 236,
+      "DISCOVERED": 961,
+      "CRAWLED_REJECTED": 6
+    }
+  },
+  "queue": {
+    "indexed_count": 0,
+    "discovered_count": 0,
+    "unknown_count": 0,
+    "uninspected_count": 0
+  },
+  "cloaksubmissions": {
+    "submitted_today": 13,
+    "successes_today": 13,
+    "daily_count": 13,
+    "quota_remaining": 0
+  },
+  "first_click_milestone": {
+    "clicks_28d": 2,
+    "preserved": true
+  },
+  "status": "COMPLETE"
+}

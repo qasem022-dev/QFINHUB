@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-13",
+  "generated": "2026-07-13T15:09:42Z",
+  "pipeline_status": {
+    "gsc_pull": "OK",
+    "gsc_freshness": "FRESH",
+    "morning_diagnosis": "OK",
+    "submission_run": "OK"
+  },
+  "indexing_state": {
+    "total_sitemap_urls": 304,
+    "inspected": 271,
+    "indexed_pass": 74,
+    "discovered_not_indexed": 139,
+    "unknown_to_google": 58,
+    "uninspected": 33
+  },
+  "gsc_metrics_7d": {
+    "impressions": 567,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 64.8,
+    "pages_with_impressions": 46
+  },
+  "gsc_metrics_28d": {
+    "impressions": 1968,
+    "clicks": 2,
+    "pages_with_impressions": 125,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/tools/investment-25k-10yr",
+      "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+    ]
+  },
+  "change_7d": {
+    "impressions": 20,
+    "impressions_pct": 3.7
+  },
+  "morning_diagnosis_sample": {
+    "sample_size": 25,
+    "indexed": 12,
+    "discovered_not_indexed": 12,
+    "unknown_to_google": 1,
+    "newly_indexed": 3,
+    "unknown_to_discovered": 4,
+    "regressions": 0
+  },
+  "submission_today": {
+    "attempted": 13,
+    "unique_urls": 13,
+    "requested_explicit": 8,
+    "clicked_button": 5,
+    "failures": 0,
+    "daily_quota": "13/13",
+    "urls": [
+      "https://www.qfinhub.com/about",
+      "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+      "https://www.qfinhub.com/blog/columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+      "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026",
+      "https://www.qfinhub.com/blog/foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin",
+      "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value",
+      "https://www.qfinhub.com/compare/compare-net-worth-vs-budget-planner",
+      "https://www.qfinhub.com/compare/compare-npv-calculator-vs-irr-calculator",
+      "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio",
+      "https://www.qfinhub.com/data",
+      "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed"
+    ]
+  },
+  "queue_maintenance": {
+    "stale_urls_removed": 36,
+    "note": "Removed URLs not in live sitemap (mostly 301-redirected newsjack posts from Phase 39.3 + orphans)"
+  },
+  "notes": [
+    "INDEXED: 74 pages (+11 newly indexed since last refresh per queue state_transitions).",
+    "No regressions detected in morning sample (0 lost indexing).",
+    "4 unknown\u2192discovered transitions = Google finding new pages organically.",
+    "GSC API: 567 imp / 0 clicks / pos 64.8 \u2014 no clicks in 7d. 28d: 2 clicks on /tools/investment-25k-10yr + /tools/mortgage-650k-15dp-30yr-6-5pct.",
+    "All 13 submissions today succeeded (8 REQUESTED \u2713 + 5 CLICKED_BUTTON).",
+    "CloakBrowser session healthy, no CAPTCHA, no 2FA challenges."
+  ],
+  "tomorrow_plan": [
+    "7 AM: Morning diagnosis cron pulls next 25-URL stratified sample.",
+    "11 AM: Submit next 13 URLs (cap held at 13/day).",
+    "8 PM: Daily progress report."
+  ]
+}

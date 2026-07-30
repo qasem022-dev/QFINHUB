@@ -1,0 +1,461 @@
+[
+  {
+    "id": "toolify",
+    "name": "Toolify.ai",
+    "url": "https://www.toolify.ai/submit",
+    "method": "browser",
+    "dr": 75,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "futurepedia",
+    "name": "Futurepedia.io",
+    "url": "https://www.futurepedia.io/submit-tool",
+    "method": "browser",
+    "dr": 72,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "theresanaiforthat",
+    "name": "Theresanaiforthat",
+    "url": "https://theresanaiforthat.com/submit",
+    "method": "browser",
+    "dr": 68,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "findmyaitool",
+    "name": "FindMyAITool",
+    "url": "https://www.findmyaitool.com/submit",
+    "method": "browser",
+    "dr": 45,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "toolbankai",
+    "name": "ToolBankAI",
+    "url": "https://www.toolbankai.com/submit",
+    "method": "browser",
+    "dr": 40,
+    "probe_code": "ERR: URLError",
+    "probe_status": "http_ERR: URLError"
+  },
+  {
+    "id": "aitoolstome",
+    "name": "AIToolsToMe",
+    "url": "https://aitoolstome.com/submit",
+    "method": "browser",
+    "dr": 42,
+    "probe_code": "ERR: URLError",
+    "probe_status": "http_ERR: URLError"
+  },
+  {
+    "id": "topaitools",
+    "name": "TopAI.tools",
+    "url": "https://topai.tools/submit",
+    "method": "browser",
+    "dr": 65,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "opentools",
+    "name": "OpenTools.ai",
+    "url": "https://opentools.ai/",
+    "method": "browser",
+    "dr": 50,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "aivalley",
+    "name": "AIV alley",
+    "url": "https://aivalley.ai/submit-a-tool/",
+    "method": "browser",
+    "dr": 55,
+    "status_check": "https://aivalley.ai/?s=qfinhub",
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "producthunt",
+    "name": "Product Hunt",
+    "url": "https://www.producthunt.com/posts/new",
+    "method": "browser",
+    "dr": 91,
+    "note": "login required",
+    "probe_code": 429,
+    "probe_status": "rate_limited"
+  },
+  {
+    "id": "saashub",
+    "name": "SaaSHub",
+    "url": "https://www.saashub.com/submit",
+    "method": "browser",
+    "dr": 70,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "capterra",
+    "name": "Capterra",
+    "url": "https://www.capterra.com/submit-software/",
+    "method": "browser",
+    "dr": 92,
+    "note": "manual review",
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "g2",
+    "name": "G2",
+    "url": "https://www.g2.com/products/new",
+    "method": "browser",
+    "dr": 93,
+    "note": "manual review",
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "getapp",
+    "name": "GetApp",
+    "url": "https://www.getapp.com/submit",
+    "method": "browser",
+    "dr": 80,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "sourceforge",
+    "name": "SourceForge",
+    "url": "https://sourceforge.net/software/submit/",
+    "method": "browser",
+    "dr": 92,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "alternative_to",
+    "name": "AlternativeTo",
+    "url": "https://alternativeto.net/add",
+    "method": "browser",
+    "dr": 90,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "slant_co",
+    "name": "Slant.co",
+    "url": "https://www.slant.co/items/new",
+    "method": "browser",
+    "dr": 80,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "producthunt_alts",
+    "name": "BetaList",
+    "url": "https://betalist.com/submit",
+    "method": "browser",
+    "dr": 78,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "investopedia_dir",
+    "name": "Investopedia Submit",
+    "url": "https://www.investopedia.com/submit-link",
+    "method": "browser",
+    "dr": 92,
+    "note": "manual review",
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "nerdwallet_dir",
+    "name": "NerdWallet Submit",
+    "url": "https://www.nerdwallet.com/about/contact",
+    "method": "browser",
+    "dr": 89,
+    "note": "manual review",
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "bankrate_dir",
+    "name": "Bankrate Submit",
+    "url": "https://www.bankrate.com/contact-us/",
+    "method": "browser",
+    "dr": 86,
+    "note": "manual review",
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "dmoz_alts",
+    "name": "Curlie",
+    "url": "https://curlie.org/add-url",
+    "method": "browser",
+    "dr": 75,
+    "probe_code": "ERR: TimeoutError",
+    "probe_status": "http_ERR: TimeoutError"
+  },
+  {
+    "id": "best_of_web",
+    "name": "Best of the Web",
+    "url": "https://botw.org/contact/",
+    "method": "browser",
+    "dr": 70,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "jimtools",
+    "name": "JimTools",
+    "url": "https://www.jimtools.com/submit.php",
+    "method": "browser",
+    "dr": 50,
+    "probe_code": "ERR: URLError",
+    "probe_status": "http_ERR: URLError"
+  },
+  {
+    "id": "betalist",
+    "name": "BetaList",
+    "url": "https://betalist.com/submit",
+    "method": "browser",
+    "dr": 78,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "startupstash",
+    "name": "Startup Stash",
+    "url": "https://startupstash.com/submit/",
+    "method": "browser",
+    "dr": 55,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "launchingnext",
+    "name": "Launching Next",
+    "url": "https://www.launchingnext.com/submit/",
+    "method": "browser",
+    "dr": 50,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "f6s",
+    "name": "F6S",
+    "url": "https://www.f6s.com/about/submit",
+    "method": "browser",
+    "dr": 65,
+    "probe_code": 405,
+    "probe_status": "http_405"
+  },
+  {
+    "id": "crunchbase_company",
+    "name": "Crunchbase",
+    "url": "https://www.crunchbase.com/add-company-profile",
+    "method": "browser",
+    "dr": 91,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "medium_archive",
+    "name": "Medium @q.finhub",
+    "url": "https://medium.com/@q.finhub",
+    "method": "browser",
+    "dr": 95,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "hashnode_pub",
+    "name": "Hashnode",
+    "url": "https://hashnode.com/onboard",
+    "method": "browser",
+    "dr": 78,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "dev_to",
+    "name": "DEV.to",
+    "url": "https://dev.to/enter",
+    "method": "browser",
+    "dr": 89,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "substack_pub",
+    "name": "Substack",
+    "url": "https://substack.com/signup",
+    "method": "browser",
+    "dr": 93,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "calculatornet",
+    "name": "Calculator.net",
+    "url": "https://www.calculator.net/submit-calculator",
+    "method": "browser",
+    "dr": 85,
+    "note": "manual review",
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "calculator_1",
+    "name": "Calculator-1.com",
+    "url": "https://www.calculator-1.com/submit.php",
+    "method": "browser",
+    "dr": 40,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "reddit_save",
+    "name": "Reddit r/calculators",
+    "url": "https://www.reddit.com/r/calculators/submit",
+    "method": "browser",
+    "dr": 99,
+    "note": "karma minimum",
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "mix",
+    "name": "Mix.com",
+    "url": "https://mix.com/add",
+    "method": "browser",
+    "dr": 88,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "diigo",
+    "name": "Diigo",
+    "url": "https://www.diigo.com/submit",
+    "method": "browser",
+    "dr": 86,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "scoop_it",
+    "name": "Scoop.it",
+    "url": "https://www.scoop.it/submit",
+    "method": "browser",
+    "dr": 90,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "pinterest_pin",
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com/pin-builder/",
+    "method": "browser",
+    "dr": 95,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "flipboard",
+    "name": "Flipboard",
+    "url": "https://about.flipboard.com/submit",
+    "method": "browser",
+    "dr": 92,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "folkd",
+    "name": "Folkd.com",
+    "url": "https://www.folkd.com/page/add.html",
+    "method": "browser",
+    "dr": 60,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "quora_ans",
+    "name": "Quora",
+    "url": "https://www.quora.com/",
+    "method": "browser",
+    "dr": 93,
+    "probe_code": 403,
+    "probe_status": "needs_login"
+  },
+  {
+    "id": "tptv_directory",
+    "name": "TPTV Directory",
+    "url": "https://www.theproducttool.com/submit",
+    "method": "browser",
+    "dr": 30,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "aichorus",
+    "name": "AI Chorus",
+    "url": "https://aichorus.com/submit/",
+    "method": "browser",
+    "dr": 40,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "toolscout",
+    "name": "ToolScout",
+    "url": "https://toolscout.ai/submit",
+    "method": "browser",
+    "dr": 35,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "stackshare",
+    "name": "StackShare",
+    "url": "https://stackshare.io/submit-a-tool",
+    "method": "browser",
+    "dr": 70,
+    "probe_code": 429,
+    "probe_status": "rate_limited"
+  },
+  {
+    "id": "toolfinder",
+    "name": "ToolFinder",
+    "url": "https://toolfinder.co/submit",
+    "method": "browser",
+    "dr": 45,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  },
+  {
+    "id": "toolshunt",
+    "name": "ToolsHunt",
+    "url": "https://toolshunt.com/submit",
+    "method": "browser",
+    "dr": 38,
+    "probe_code": 404,
+    "probe_status": "not_found"
+  },
+  {
+    "id": "aitools_fyi",
+    "name": "AITools.fyi",
+    "url": "https://aitools.fyi/submit",
+    "method": "browser",
+    "dr": 35,
+    "probe_code": 200,
+    "probe_status": "reachable"
+  }
+]

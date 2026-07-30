@@ -1,0 +1,156 @@
+{
+  "date": "2026-07-16",
+  "sample_size": 25,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/tools/investment-2M-10yr",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/markup-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/side-hustle-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-150k-15yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-75k-12yr",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "coverage_state": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-10k-3yr-loss",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1k-10yr",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-3yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "indexingState": "INDEXING_ALLOWED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-50k-dual-income",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-70k-late-50pct",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/dti-45k-grad",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-30k-expenses-750k",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-entrepreneur",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-consolidation",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-net-worth-vs-budget-planner",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/savings-goal",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-110k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-80k-married-joint",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/roth-ira",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-avalanche",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED"
+    }
+  ]
+}

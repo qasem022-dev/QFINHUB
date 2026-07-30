@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-17",
+  "generated": "2026-07-17T15:15:38Z",
+  "phase": "Phase 38 + 39 \u2014 daily GSC operations",
+  "freshness": "FRESH",
+  "gsc_search_analytics_7d": {
+    "impressions": 655,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 66.9,
+    "pages_with_impressions": 49,
+    "previous_7d_imp": 541,
+    "change_pct": 21.1
+  },
+  "gsc_search_analytics_28d": {
+    "impressions": 1990,
+    "clicks": 2,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/tools/investment-25k-10yr",
+      "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+    ]
+  },
+  "indexing_state_master_file": {
+    "indexed": 139,
+    "discovered_not_indexed": 279,
+    "unknown_to_google": 77,
+    "crawled_rejected": 3,
+    "other": 1,
+    "total": 499,
+    "sitemap_urls": 499,
+    "note": "Master file post-morning-diagnosis \u2014 covers 499 sitemap URLs after Jul 16 ghost cleanup"
+  },
+  "todays_actions": {
+    "pipeline_pulled_at": "FRESH",
+    "morning_diagnosis": {
+      "sample_size": 1900,
+      "wall_clock_seconds": 631,
+      "rate_per_second": 3.01,
+      "category_breakdown": {
+        "OTHER": 634,
+        "DISCOVERED": 725,
+        "UNKNOWN": 189,
+        "CRAWLED_REJECTED": 2,
+        "ERROR": 350
+      },
+      "http_429_errors": 350,
+      "note_429": "350 ERRORs in tail = HTTP 429 per-minute quota hit (pitfall #57). 1,550/1,900 OK results produced and saved to master file."
+    },
+    "cloakbrowser_submissions": {
+      "submitted_today": 13,
+      "daily_limit": 13,
+      "all_clicked_button": true
+    },
+    "transitions_detected": {
+      "newly_indexed": 0,
+      "unknown_to_discovered": 505,
+      "regressions": 0
+    }
+  },
+  "blockers": [
+    "No CAPTCHAs, no 2FA, no session expiry during 13 CloakBrowser submissions.",
+    "Morning diagnosis hit HTTP 429 (per-minute quota) at the end (URLs ~1550-1900). 350 of 1,900 inspected URLs returned 429 and were not data-updated. Next-day retry will pick them up at lower effective rate.",
+    "Indexed count stable at 139 today (no organic transitions), but 505 unknown\u2192discovered transitions detected \u2014 Google is re-categorizing pages as crawl signals cycle through."
+  ],
+  "next_steps": [
+    "Tomorrow (Jul 18): Pipeline + diagnosis + 13 submissions (UNKNOWN bucket now 77 URLs)",
+    "DISCOVERED bucket (282) \u2014 needs humanization before submission (out of scope for daily cron)"
+  ]
+}

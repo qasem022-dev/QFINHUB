@@ -1,0 +1,63 @@
+{
+  "date": "2026-07-23",
+  "pipeline_status": "FRESH",
+  "metrics_7d": {
+    "impressions": 352,
+    "clicks": 1,
+    "ctr_pct": 0.3,
+    "avg_position": 57.9,
+    "pages_with_impressions": 56,
+    "query_count": 145,
+    "query_impressions": 232,
+    "query_page_rows": 145
+  },
+  "metrics_28d": {
+    "impressions": 1922,
+    "clicks": 2,
+    "pages_with_impressions": 105,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/methodology",
+      "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+    ]
+  },
+  "master_buckets": {
+    "INDEXED": 156,
+    "DISCOVERED": 249,
+    "UNKNOWN": 91,
+    "CRAWLED": 3,
+    "OTHER": 0
+  },
+  "master_total": 499,
+  "morning_diagnosis": {
+    "inspected": 16,
+    "sample_target": 25,
+    "pool_exhausted_short": 9,
+    "newly_indexed": 1,
+    "unknown_to_discovered": 4,
+    "regressions": 0,
+    "category_counts": {
+      "DISCOVERED": 12,
+      "UNKNOWN": 3,
+      "INDEXED": 1
+    }
+  },
+  "submissions_today": {
+    "total": 13,
+    "clicked_button": 6,
+    "requested": 7,
+    "unknown_category": 13,
+    "all_categories_unknown": true
+  },
+  "first_click_status": "PRESERVED (7 consecutive days Jul 17-Jul 23)",
+  "first_click_pages": [
+    "https://www.qfinhub.com/methodology",
+    "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+  ],
+  "queue_stale_removed": 0,
+  "queue_after": {
+    "INDEXED": 156,
+    "DISCOVERED": 249,
+    "UNKNOWN": 91
+  }
+}

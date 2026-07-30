@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-25",
+  "generated": "2026-07-25T15:20:47.968314Z",
+  "phase": "Phase 39 \u2014 Daily GSC Operations",
+  "step1_gsc_pipeline": {
+    "script": "scripts/gsc-daily-pipeline.py",
+    "freshness": "FRESH",
+    "date_range": "2026-07-16 to 2026-07-22",
+    "api_7d": {
+      "impressions": 350,
+      "clicks": 0,
+      "pages": 59,
+      "avg_position": 52.5,
+      "queries": 129
+    }
+  },
+  "step2_morning_diagnosis": {
+    "script": "scripts/gsc-morning-diagnosis.py",
+    "sample_size": 16,
+    "target": 25,
+    "pool_status": "exhausted (uninspected=0, sample short by 9 \u2014 expected steady state)",
+    "wall_clock_seconds": 25,
+    "category_counts": {
+      "INDEXED": 4,
+      "DISCOVERED": 11,
+      "UNKNOWN": 1
+    },
+    "transitions": {
+      "newly_indexed": 4,
+      "unknown_to_discovered": 4,
+      "regressions": 0
+    },
+    "errors": 0
+  },
+  "step3_submissions": {
+    "script": "scripts/gsc-request-indexing-one-by-one.py",
+    "submitted": 13,
+    "target": 13,
+    "unique_urls": 13,
+    "daily_count": "13/13",
+    "results": {
+      "CLICKED_BUTTON": 2,
+      "REQUESTED \u2713": 11
+    },
+    "all_successful": true,
+    "category_breakdown": {
+      "UNKNOWN": 6,
+      "DISCOVERED": 7
+    },
+    "captcha_or_2fa": 0,
+    "session_expired": false
+  },
+  "indexing_state": {
+    "master_entries": 499,
+    "INDEXED": 166,
+    "DISCOVERED": 282,
+    "UNKNOWN": 48,
+    "CRAWLED": 3,
+    "other_or_empty": 0,
+    "sitemap_urls": 498
+  },
+  "step_b_pre": {
+    "stale_urls_removed": 0,
+    "steady_state": true,
+    "note": "0 stale URLs removed \u2014 queue in sync with live sitemap"
+  },
+  "daily_change": {
+    "INDEXED_delta": 4,
+    "master_yesterday": 162,
+    "master_today": 166,
+    "note": "+4 organic newly-indexed, matching morning diagnosis transitions"
+  },
+  "health_checks": {
+    "step_a_quota": "0/13 \u2014 fresh day, full budget available",
+    "step_b_drift": "0 stale URLs \u2014 steady state (pitfall #50)",
+    "step_c_http_200": "5/5 spot-checked URLs returned 200",
+    "session_valid": true,
+    "rate_limits_hit": 0
+  },
+  "issues": [],
+  "next_day_plan": [
+    "Jul 25 quota exhausted (13/13) \u2014 morning diagnosis Jul 26 will operate at 0/13",
+    "UNKNOWNS queue healthy (48 URLs), DISCOVERED queue growing (282)",
+    "7-day cooldown applies to 13 URLs submitted today \u2014 they cannot re-submit before Aug 1"
+  ]
+}

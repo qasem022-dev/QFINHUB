@@ -1,0 +1,94 @@
+{
+  "generated": "2026-07-16T21:47:23Z",
+  "date": "2026-07-16-test",
+  "sample_size": 9,
+  "wall_clock_seconds": 67,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-05-28T22:04:26Z",
+      "category": "INDEXED",
+      "prior_state": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-use-fraction-calculator",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-06-03T04:30:01Z",
+      "category": "INDEXED",
+      "prior_state": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-100k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": ""
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/property-tax",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/lease-vs-buy",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-06-27T17:29:26Z",
+      "category": "INDEXED",
+      "prior_state": "url is unknown to google"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/paycheck-calculator",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-225k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/roth-ira",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-5M-married-joint",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed"
+    }
+  ],
+  "newly_indexed": [
+    "https://www.qfinhub.com/decision/can-i-retire-with-500k-at-55",
+    "https://www.qfinhub.com/guides/how-to-use-fraction-calculator",
+    "https://www.qfinhub.com/calculators/lease-vs-buy"
+  ],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/calculators/property-tax"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "INDEXED": 3,
+    "DISCOVERED": 4,
+    "UNKNOWN": 2
+  }
+}

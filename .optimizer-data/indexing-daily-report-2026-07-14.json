@@ -1,0 +1,94 @@
+{
+  "date": "2026-07-14",
+  "generated": "2026-07-14T15:09:31Z",
+  "phase": "Phase 39.x \u2014 Daily GSC Operations",
+  "gsc_api_7d": {
+    "date_range": {
+      "start": "2026-07-05",
+      "end": "2026-07-11"
+    },
+    "impressions": 561,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 66.0,
+    "pages_with_impressions": 44,
+    "change_vs_prev_7d": {
+      "impressions": -19,
+      "impressions_pct": -3.3
+    }
+  },
+  "gsc_api_28d": {
+    "impressions": 1894,
+    "clicks": 2,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/tools/investment-25k-10yr",
+      "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct"
+    ]
+  },
+  "morning_diagnosis": {
+    "inspected": 25,
+    "category_counts": {
+      "INDEXED": 9,
+      "DISCOVERED": 13,
+      "UNKNOWN": 3
+    },
+    "newly_indexed": 9,
+    "unknown_to_discovered": 6,
+    "regressions": 0
+  },
+  "master_indexing_distribution": {
+    "INDEXED": 112,
+    "UNKNOWN": 157,
+    "DISCOVERED": 225,
+    "OTHER": 2,
+    "OTHER/UNINSPECTED": 138
+  },
+  "fix_queue_status": {
+    "total_sitemap_urls": 499,
+    "indexed_pass": 97,
+    "discovered_not_indexed": 172,
+    "unknown_to_google": 104,
+    "uninspected": 126
+  },
+  "submissions_today": {
+    "count": 13,
+    "daily_quota": "13/13 EXHAUSTED",
+    "success": 13,
+    "failures": 0,
+    "categories": {
+      "UNKNOWN": 13
+    },
+    "urls": [
+      "https://www.qfinhub.com/blog/foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin",
+      "https://www.qfinhub.com/tools/fire-55k-slow",
+      "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value",
+      "https://www.qfinhub.com/tools/tax-600k-single",
+      "https://www.qfinhub.com/tools/tax-60k-head-of-household",
+      "https://www.qfinhub.com/tools/tax-60k-married-separate",
+      "https://www.qfinhub.com/tools/fire-50k-expenses-1M",
+      "https://www.qfinhub.com/tools/fire-60k-coast-500k",
+      "https://www.qfinhub.com/tools/dti-85k-first-home",
+      "https://www.qfinhub.com/tools/tax-10k-single",
+      "https://www.qfinhub.com/tools/emergency-fund-3k-3mo",
+      "https://www.qfinhub.com/tools/tax-350k-married-joint",
+      "https://www.qfinhub.com/tools/fire-0k-100k-starter"
+    ]
+  },
+  "queue_maintenance": {
+    "stale_urls_removed_from_queue": 36,
+    "rationale": "Phase 39 queue-vs-sitemap drift cleanup (pitfall #41)"
+  },
+  "key_metrics_summary": {
+    "indexed_total": 112,
+    "indexed_growth_since_jul4": 9,
+    "organic_indexing_trend": "+9 newly indexed in 25-URL sample today (organic, no submission)",
+    "first_clicks": 2
+  },
+  "blockers": [],
+  "next_steps": [
+    "Monitor 13 submitted URLs for indexing state transitions in next 24-72h",
+    "Wait 7 days before re-submitting any of these URLs (cooldown)",
+    "Continue organic growth: 9 newly-indexed in 25-URL sample = Google confirming pages without submission"
+  ]
+}

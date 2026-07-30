@@ -1,0 +1,19 @@
+{
+  "url": "https://www.launchingnext.com/submit/",
+  "fields_filled": [
+    "startupname",
+    "startupurl",
+    "description",
+    "fulldescription",
+    "tags",
+    "funding",
+    "user",
+    "email",
+    "newsletter_optin",
+    "math"
+  ],
+  "errors": [
+    "Fatal: Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=formSubmit]\").first\n    - locator resolved to <input type=\"submit\" name=\"formSubmit\" value=\"Submit Startup\" class=\"btn btn-primary\"/>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"silktide-backdrop\"></div> from <div id=\"silktide-wrapper\">\u2026</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    11 \u00d7 waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"silktide-backdrop\"></div> from <div id=\"silktide-wrapper\">\u2026</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  40 \u00d7 retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"silktide-backdrop\"></div> from <div id=\"silktide-wrapper\">\u2026</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n"
+  ],
+  "success": false
+}

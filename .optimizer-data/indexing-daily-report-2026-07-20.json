@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-20",
+  "phase": "Phase 38 + 39 — daily GSC operations",
+  "freshness": "FRESH",
+  "sources": {
+    "search_analytics": ".optimizer-data/gsc-api-truth-current.json",
+    "inspection_master": ".optimizer-data/full-url-inspection-results.json",
+    "morning_diagnosis": ".optimizer-data/morning-inspect-results-2026-07-20.json",
+    "submissions": ".optimizer-data/gsc-submission-log.json"
+  },
+  "gsc_search_analytics_7d": {
+    "date_range": "2026-07-11 to 2026-07-17",
+    "impressions": 491,
+    "clicks": 1,
+    "ctr_pct": 0.2,
+    "avg_position": 63.1,
+    "pages_with_impressions": 55,
+    "previous_7d_impressions": 567,
+    "impressions_change_pct": -13.4
+  },
+  "gsc_search_analytics_28d": {
+    "impressions": 1957,
+    "clicks": 2,
+    "pages_with_impressions": 107,
+    "pages_with_clicks": 2
+  },
+  "indexing_state_master_file": {
+    "indexed": 147,
+    "discovered_not_indexed": 290,
+    "unknown_to_google": 61,
+    "uninspected": 0,
+    "total_live_sitemap_urls": 498
+  },
+  "todays_actions": {
+    "morning_diagnosis": {
+      "inspected": 1266,
+      "target": 1900,
+      "wall_clock_seconds": 1020,
+      "category_breakdown": {
+        "discovered": 1017,
+        "unknown": 228,
+        "indexed": 15,
+        "crawled_rejected": 6
+      },
+      "newly_indexed": 15,
+      "unknown_to_discovered": 491,
+      "regressions": 0,
+      "http_errors": 0
+    },
+    "queue_maintenance": {
+      "stale_urls_removed": 0
+    },
+    "cloakbrowser_submissions": {
+      "submitted_today": 13,
+      "daily_limit": 13,
+      "clicked_button": 4,
+      "requested_confirmed": 9,
+      "failures": 0,
+      "session_expired": false
+    }
+  },
+  "issues_or_blockers": [
+    "Morning diagnosis inspected 1266 rather than 1900 because the eligible UNKNOWN and DISCOVERED pools were exhausted; all 498 sitemap URLs remain represented in the master state.",
+    "7-day impressions declined 13.4% versus the previous 7-day window, while the first-click milestone remains intact."
+  ]
+}

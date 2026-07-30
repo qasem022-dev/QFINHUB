@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T15:08:02Z",
+  "phase": "Phase 38 Daily Ops",
+  "gsc_pipeline": {
+    "freshness": "FRESH",
+    "date_range": {
+      "start": "2026-07-10",
+      "end": "2026-07-16"
+    },
+    "impressions_7d": 580,
+    "clicks_7d": 1,
+    "ctr_pct_7d": 0.2,
+    "avg_position_7d": 65.1,
+    "pages_with_impressions_7d": 58
+  },
+  "indexing_state": {
+    "indexed_pages": 145,
+    "discovered_not_indexed": 305,
+    "unknown_to_google": 48,
+    "uninspected": 0,
+    "total_in_queue": 0,
+    "queue_freshness": "FRESH"
+  },
+  "submissions_today": {
+    "count": 13,
+    "unique_urls": 13,
+    "clicked_button": 13,
+    "failures": 0,
+    "quota_used": "13/13"
+  },
+  "morning_diagnosis": {
+    "inspected": null,
+    "newly_indexed_count": 5,
+    "unknown_to_discovered_count": 30,
+    "regressions_count": 0,
+    "duration_seconds": null,
+    "retry_backlog_processed": 0,
+    "categories": {
+      "DISCOVERED": 259,
+      "UNKNOWN": 43,
+      "INDEXED": 5,
+      "CRAWLED_REJECTED": 3
+    }
+  },
+  "issues_or_blockers": [
+    "1 retry queue file(s) still present: ['.optimizer-data/queue-retry-429-jul17.json']"
+  ]
+}
