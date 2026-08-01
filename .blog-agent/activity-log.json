@@ -342,5 +342,23 @@
       "source": "evergreen",
       "wordCount": 1187
     }
+  },
+  {
+    "ts": "2026-07-31T12:01:15.331Z",
+    "type": "generation_failed",
+    "details": {
+      "kw": "debt snowball avalanche comparison"
+    }
+  },
+  {
+    "ts": "2026-08-01T12:00:54.098Z",
+    "type": "published",
+    "details": {
+      "slug": "debt-snowball-vs-avalanche-comparison-which-saves-more",
+      "kw": "debt snowball avalanche comparison",
+      "cat": "loan",
+      "source": "evergreen",
+      "wordCount": 1178
+    }
   }
 ]
