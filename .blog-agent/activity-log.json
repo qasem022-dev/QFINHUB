@@ -360,5 +360,33 @@
       "source": "evergreen",
       "wordCount": 1178
     }
+  },
+  {
+    "ts": "2026-08-02T12:00:49.708Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "emergency fund amount 2026",
+      "issues": [
+        "Humanize skill score 30 (top hits: hedge-essential×14, hedge-robust×1)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-03T12:00:57.575Z",
+    "type": "generation_failed",
+    "details": {
+      "kw": "emergency fund amount 2026"
+    }
+  },
+  {
+    "ts": "2026-08-04T12:00:33.063Z",
+    "type": "published",
+    "details": {
+      "slug": "emergency-fund-amount-2026-how-much-do-you-really-need",
+      "kw": "emergency fund amount 2026",
+      "cat": "personal",
+      "source": "evergreen",
+      "wordCount": 1119
+    }
   }
 ]
