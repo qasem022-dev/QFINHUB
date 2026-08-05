@@ -115,6 +115,35 @@ COMMENT_TEMPLATES = [
 ]
 
 
+# ─── Personal profile post templates (u/QASEMQH submissions) ───
+# Posts to your OWN user profile (/user/QASEMQH/submit). These count as
+# post karma when upvoted AND bypass many subreddit restrictions because
+# you're posting to your own feed. Reddit shows these on your profile.
+# They also serve as evergreen content — when someone checks your profile,
+# they see thoughtful posts (not spam).
+PERSONAL_POST_TEMPLATES = [
+    # Finance lessons / reflections (highest engagement)
+    "After 5 years of tracking every expense, here's what I learned about where money actually goes (it's not what most budgets say).",
+    "The 3 financial rules I followed that made a bigger difference than my salary: starting early, automating, and ignoring most advice.",
+    "I ran the numbers on renting vs buying in 2026 for my city. The break-even point was way longer than I expected.",
+    "Why I stopped optimizing for the highest savings rate and started optimizing for 'consistent enough to keep doing it'.",
+    "The compounding effect is real but it's boring. Here are 4 small boring habits that compounded into a meaningful nest egg.",
+    "I tracked my net worth monthly for 3 years. The graph is the only motivation I needed.",
+    "What's changed in my financial philosophy from age 25 to 35 — and what I'd tell my younger self.",
+    "The honest math on how much you need invested to retire at 45, 55, or 65 — with realistic return assumptions for 2026.",
+
+    # Personal finance questions to invite engagement
+    "Question for people who paid off student loans: what was the moment you realized it was actually going to happen?",
+    "For those who hit $100K in savings: did it feel like a milestone or just another number? Curious about the psychology.",
+    "What's a 'boring' financial product (HYSA, CD, Treasury) you've been really happy with this year? Looking for ideas.",
+    "Anyone else find that their best financial decisions came from lifestyle changes, not optimization? Mine was moving closer to work.",
+
+    # r/QFINHUB-friendly (subtle, no links)
+    "I'm building a free set of personal finance calculators. Here's what I learned about why most financial tools feel scammy.",
+    "Why most 'budget templates' fail: they assume your spending is rational. Mine never was.",
+]
+
+
 def load_state():
     path = DATA_DIR / "state.json"
     if path.exists():
@@ -309,16 +338,37 @@ def comment_in_sub(page, state, sub_name, sub_type):
         return "filtered"
 
 
-def make_text_post(page, state, sub_name, sub_type):
-    """Post a text post in a karma-friendly sub. Returns 'posted', 'filtered', or 'failed'."""
-    print(f"  📝 Posting in r/{sub_name}...")
+def make_text_post(page, state, sub_name, sub_type, personal=False):
+    """Post a text post in a karma-friendly sub OR on the user's own profile.
+
+    Args:
+        sub_name: subreddit name (ignored if personal=True, then submits to /user/QASEMQH)
+        sub_type: tier type (ignored if personal=True)
+        personal: if True, posts to /user/QASEMQH/submit (own profile)
+
+    Returns: 'posted', 'filtered', or 'failed'.
+    """
+    if personal:
+        # Submit to own profile
+        submit_url = "https://old.reddit.com/user/QASEMQH/submit"
+        target_label = "u/QASEMQH (personal profile)"
+        title = random.choice(PERSONAL_POST_TEMPLATES)
+        body = "Sharing this in case it helps someone else on a similar path."
+        verify_url = "https://old.reddit.com/user/QASEMQH/"
+        location = "personal"
+    else:
+        submit_url = f"https://old.reddit.com/r/{sub_name}/submit"
+        target_label = f"r/{sub_name}"
+        title = random.choice(TEXT_POST_TEMPLATES)
+        body = "Curious what worked for others. Would love to hear different perspectives."
+        verify_url = "https://old.reddit.com/user/QASEMQH/"
+        location = sub_name
+
+    print(f"  📝 Posting in {target_label}...")
 
     # Go to submit page
-    page.goto(f"https://old.reddit.com/r/{sub_name}/submit", wait_until="domcontentloaded", timeout=20000)
+    page.goto(submit_url, wait_until="domcontentloaded", timeout=20000)
     hs(3)
-
-    # Pick a title template
-    title = random.choice(TEXT_POST_TEMPLATES)
 
     # Fill title
     filled_title = page.evaluate(f"""
@@ -339,7 +389,6 @@ def make_text_post(page, state, sub_name, sub_type):
     hs(2)
 
     # Fill body (text post body)
-    body = "Curious what worked for others. Would love to hear different perspectives."
     page.evaluate(f"""
         (function() {{
             var ta = document.querySelector('textarea[name="text"], textarea[name="body"]');
@@ -377,7 +426,7 @@ def make_text_post(page, state, sub_name, sub_type):
     hs(6)
 
     # Verify by visiting profile overview
-    page.goto("https://old.reddit.com/user/QASEMQH/", wait_until="domcontentloaded", timeout=20000)
+    page.goto(verify_url, wait_until="domcontentloaded", timeout=20000)
     hs(3)
 
     verified = page.evaluate(f"""
@@ -394,13 +443,14 @@ def make_text_post(page, state, sub_name, sub_type):
 
     if verified == "verified":
         state.setdefault("posts_made", []).append({
-            "sub": sub_name,
+            "sub": location,  # "personal" for own profile, else sub name
             "title": title[:80],
             "ts": datetime.now(timezone.utc).isoformat(),
             "verified": True,
+            "personal": personal,
         })
         save_state(state)
-        print(f"    ✅ Text post verified live in r/{sub_name}")
+        print(f"    ✅ Text post verified live in {target_label}")
         return "posted"
     else:
         state["comment_filtered_count"] = state.get("comment_filtered_count", 0) + 1
@@ -422,11 +472,25 @@ def run_cron_mode():
     # Pre-flight: check if we should skip today (already posted a lot)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     posts_today = [p for p in state.get("posts_made", []) if p.get("ts", "").startswith(today)]
+    personal_posts_today = [p for p in posts_today if p.get("personal")]
+    sub_posts_today = [p for p in posts_today if not p.get("personal")]
     comments_today = [c for c in state.get("commented", []) if c.get("ts", "").startswith(today)]
 
-    if len(posts_today) >= 1 and len(comments_today) >= 2:
-        print(f"  ⏭️ Already posted 1 text post + 2 comments today. Skipping.")
-        return {"skipped": True, "reason": "daily_limit_reached"}
+    # Daily targets:
+    #   3 personal profile posts (u/QASEMQH) — these always succeed (no sub restrictions)
+    #   1 sub text post (karma-friendly sub)
+    #   2 diversified comments
+    DAILY_TARGETS = {
+        "personal_posts": 3,
+        "sub_posts": 1,
+        "comments": 2,
+    }
+
+    if (len(personal_posts_today) >= DAILY_TARGETS["personal_posts"]
+        and len(sub_posts_today) >= DAILY_TARGETS["sub_posts"]
+        and len(comments_today) >= DAILY_TARGETS["comments"]):
+        print(f"  ⏭️ All daily targets hit. Skipping.")
+        return {"skipped": True, "reason": "daily_targets_complete"}
 
     # Launch CloakBrowser
     try:
@@ -484,34 +548,54 @@ def run_cron_mode():
         state["karma_history"] = state["karma_history"][-60:]
         save_state(state)
 
-        # STEP 2: Post 1 text post (most karma per action)
-        if len(posts_today) == 0:
-            print("\n📝 STEP 2: Post 1 text post")
-            # Pick a karma-friendly sub (avoid ones we've already posted in today)
-            today_posts_subs = [p["sub"] for p in state.get("posts_made", []) if p.get("ts", "").startswith(today)]
+        # STEP 2: Personal profile posts (3/day — most reliable, no sub restrictions)
+        personal_remaining = DAILY_TARGETS["personal_posts"] - len(personal_posts_today)
+        if personal_remaining > 0:
+            print(f"\n📝 STEP 2: Personal profile posts ({personal_remaining} remaining of {DAILY_TARGETS['personal_posts']})")
+            for i in range(personal_remaining):
+                # Avoid same title as today's personal posts
+                today_titles = [p["title"] for p in personal_posts_today]
+                available = [t for t in PERSONAL_POST_TEMPLATES if t[:40] not in [x[:40] for x in today_titles]]
+                if not available:
+                    available = PERSONAL_POST_TEMPLATES
+
+                result = make_text_post(page, state, "personal", "personal", personal=True)
+                hs(8)  # Space out personal posts
+
+                if result == "filtered":
+                    # Personal posts rarely get filtered, but if so, retry once
+                    print(f"    ↻ Retrying personal post with different template")
+                    result = make_text_post(page, state, "personal", "personal", personal=True)
+                    hs(5)
+        else:
+            print(f"\n📝 STEP 2: All {DAILY_TARGETS['personal_posts']} personal posts done for today")
+
+        # STEP 3: Sub text post (1/day — for cross-subreddit karma)
+        sub_remaining = DAILY_TARGETS["sub_posts"] - len(sub_posts_today)
+        if sub_remaining > 0:
+            print(f"\n📝 STEP 3: Sub text post ({sub_remaining} remaining of {DAILY_TARGETS['sub_posts']})")
+            today_posts_subs = [p["sub"] for p in sub_posts_today]
             candidates = [(s, t) for s, t in KARMA_FRIENDLY_SUBS if s not in today_posts_subs]
-            # Bias toward Tier 1 subs (most karma-friendly)
             tier1 = [c for c in candidates if c[1] in ("conversation", "ask", "thought", "fact", "tip")]
             sub_name, sub_type = random.choice(tier1 if tier1 else candidates)
 
-            post_result = make_text_post(page, state, sub_name, sub_type)
+            post_result = make_text_post(page, state, sub_name, sub_type, personal=False)
             hs(5)
 
-            # If filtered, try once more in a different sub
             if post_result == "filtered":
                 backup = [c for c in KARMA_FRIENDLY_SUBS if c[0] != sub_name]
                 if backup:
                     sub2, _ = random.choice(backup[:5])
-                    post_result = make_text_post(page, state, sub2, "ask")
+                    post_result = make_text_post(page, state, sub2, "ask", personal=False)
         else:
-            print("\n📝 STEP 2: Already posted today, skipping")
+            print(f"\n📝 STEP 3: Sub post already done today")
 
-        # STEP 3: Diversified comments (different sub from today + from text post)
-        print("\n💬 STEP 3: Comments")
-        today_comments_subs = [c["sub"] for c in state.get("commented", []) if c.get("ts", "").startswith(today)]
-        comments_to_make = max(1, 2 - len(today_comments_subs))
+        # STEP 4: Diversified comments (2/day)
+        print(f"\n💬 STEP 4: Comments")
+        today_comments_subs = [c["sub"] for c in comments_today]
+        comments_remaining = DAILY_TARGETS["comments"] - len(comments_today)
 
-        for i in range(comments_to_make):
+        for i in range(comments_remaining):
             candidates = [(s, t) for s, t in KARMA_FRIENDLY_SUBS if s not in today_comments_subs]
             if not candidates:
                 break
@@ -544,7 +628,8 @@ def run_cron_mode():
             "day": state["day"],
             "karma_start": total_karma,
             "karma_end": (final_post + final_comment) if (final_post is not None and final_comment is not None) else None,
-            "posts_made_today": len([p for p in state.get("posts_made", []) if p.get("ts", "").startswith(today)]),
+            "personal_posts_today": len([p for p in state.get("posts_made", []) if p.get("ts", "").startswith(today) and p.get("personal")]),
+            "sub_posts_today": len([p for p in state.get("posts_made", []) if p.get("ts", "").startswith(today) and not p.get("personal")]),
             "comments_today": len([c for c in state.get("commented", []) if c.get("ts", "").startswith(today)]),
             "filtered_total": state.get("comment_filtered_count", 0),
         }
