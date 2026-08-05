@@ -43,6 +43,7 @@ export const calculatorContent: Record<string, CalculatorContent> = {
       "compound-interest",
       "roth-ira",
       "traditional-ira",
+      "required-minimum-distribution"
     ],
     citations: [
       "IRS Notice 2025-XX (2026 contribution limits)",
@@ -94,7 +95,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you take out a $200,000 mortgage at a 6% annual interest rate over a 30-year term, your fixed monthly payment will be approximately $1,199.10. The amortization schedule will show that in the first month, $1,000 goes toward interest and only $199.10 reduces your principal, a ratio that shifts in your favor as you near the end of the loan.`,
     keyFactors: ["Loan Principal Amount", "Annual Interest Rate", "Loan Term Duration", "Payment Frequency", "Additional Principal Payments"],
     tips: ["Use the schedule to identify how much you could save in total interest by making just one extra payment per year.", "Pay close attention to the principal reduction column to see when you start paying more toward the balance than the interest.", "Consider adding extra payments early in the loan term to maximize your long-term interest savings."],
-    relatedCalculators: ["loan-calculator", "mortgage-calculator", "refinance-calculator", "debt-snowball"],
+    relatedCalculators: [
+      "loan-calculator",
+      "mortgage-calculator",
+      "refinance-calculator",
+      "debt-snowball",
+      "arm-calculator"
+    ],
     citations: ["CFPB \u2014 What is an amortization schedule?", "Federal Reserve \u2014 Amortization and Loan Payments", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
     definition: `An amortization schedule is a detailed table showing each loan payment over time, breaking down how much goes toward principal versus interest and the remaining balance after each payment.`,
     keyTakeaways: ["An amortization schedule shows the exact breakdown of each payment into principal and interest over the life of a loan.", "Early payments in an amortization schedule are mostly interest, while later payments are mostly principal.", "Using an amortization schedule can help borrowers understand total interest costs and plan for extra principal payments to save on interest.", "Amortization schedules are commonly used for fixed-rate mortgages, auto loans, and other installment loans."],
@@ -248,7 +255,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If your fixed monthly costs are $5,000 and you sell a product for $50 that costs $30 to produce, your contribution margin is $20 per unit. Using the formula, you divide $5,000 by $20, resulting in a break-even point of 250 units per month.`,
     keyFactors: ["Fixed Costs: Ongoing expenses like rent and insurance that remain constant.", "Variable Costs: Expenses that fluctuate based on production volume, such as raw materials.", "Selling Price: The amount charged to customers per unit sold.", "Sales Volume: The total number of units required to reach the break-even threshold."],
     tips: ["Perform a sensitivity analysis by adjusting your selling price to see how it impacts your required sales volume.", "Regularly update your variable costs to account for inflation or changes in supplier pricing.", "Aim to calculate your break-even point both monthly and annually to understand seasonal fluctuations in demand."],
-    relatedCalculators: ["roi-calculator", "budget-planner", "npv-calculator", "irr-calculator"],
+    relatedCalculators: [
+      "roi-calculator",
+      "budget-planner",
+      "npv-calculator",
+      "irr-calculator",
+      "operating-margin"
+    ],
     citations: ["CFPB \u2014 Understanding business financials", "IRS Publication 535 \u2014 Business Expenses", "Federal Reserve \u2014 Analyzing business profitability"],
     definition: `Break-even analysis calculates the sales volume at which total revenue equals total costs, resulting in zero profit or loss. It helps businesses determine the minimum sales needed to cover fixed and variable expenses.`,
     keyTakeaways: ["Break-even point is calculated by dividing total fixed costs by the contribution margin per unit.", "A lower break-even point indicates less risk, as fewer sales are required to become profitable.", "Changes in fixed costs, variable costs, or selling price directly affect the break-even point.", "Break-even analysis can be used to evaluate the impact of pricing strategies and cost control measures."],
@@ -262,7 +275,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If your household earns $5,000 per month and your combined fixed and variable expenses total $4,200, the calculator reveals a monthly surplus of $800. You can then decide to allocate that remaining $800 toward an emergency fund or high-interest debt to improve your overall financial health.`,
     keyFactors: ["Consistent monthly income streams", "Accurate tracking of fixed recurring bills", "Estimation of variable discretionary spending", "Defined financial savings objectives"],
     tips: ["Review your bank statements from the last three months to get a realistic average for your variable expenses.", "Categorize your spending strictly to identify 'leaks' in your budget where small, frequent purchases add up.", "Adjust your budget monthly to account for seasonal changes in utility costs or annual subscription renewals.", "Prioritize your savings goal as a 'fixed expense' to ensure you pay yourself first every month."],
-    relatedCalculators: ["savings-goal", "child-care-cost", "em-fund", "net-worth", "debt-snowball", "break-even"],
+    relatedCalculators: [
+      "savings-goal",
+      "child-care-cost",
+      "em-fund",
+      "net-worth",
+      "cash-flow"
+    ],
     citations: ["CFPB \u2014 Creating a budget and sticking to it", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS Publication 17 \u2014 Your Federal Income Tax (for budgeting tax payments)"],
     definition: `A Budget Planner calculator helps individuals create a detailed spending plan by comparing their income against fixed and variable expenses, enabling them to track cash flow, identify savings opportunities, and achieve financial goals.`,
     keyTakeaways: ["A budget planner calculator typically categorizes expenses into fixed costs like rent and variable costs like groceries to provide a clear picture of monthly cash flow.", "Using a budget planner can help identify areas where spending exceeds income, allowing users to adjust habits and increase savings.", "Regularly updating a budget planner with actual expenses improves accuracy and helps users stay on track with financial goals.", "Many budget planners incorporate the 50/30/20 rule, allocating 50% of income to needs, 30% to wants, and 20% to savings and debt repayment."],
@@ -290,7 +309,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `You purchased stock for $5,000 and sold it for $8,000 after two years. Your capital gain is $3,000. At the 15% rate (which applies to most middle-income earners in 2026), you owe $450. If you had sold after just 8 months instead, that same $3,000 would be taxed at your ordinary rate — potentially $1,110 if you are in the 37% bracket.`,
     keyFactors: ["How long you held the asset (over 12 months gets the lower rate)", "Your total taxable income for the year", "What you originally paid (your cost basis)", "Any commissions or fees from the sale"],
     tips: ["Track your exact purchase price including commissions — even a $10 fee increases your cost basis and reduces your taxable gain.", "If you are near a bracket threshold, consider waiting until January to sell. Crossing from $518,900 into $518,001 in taxable income can drop your rate from 20% to 15% on a large gain.", "Losses offset gains. If you sold one stock for a $3,000 gain and another for a $1,000 loss, you only pay tax on $2,000 of net profit."],
-    relatedCalculators: ["investment-return", "roi-calculator", "tax-calculator", "net-worth"],
+    relatedCalculators: [
+      "investment-return",
+      "roi-calculator",
+      "tax-calculator",
+      "net-worth",
+      "marginal-tax-rate"
+    ],
     citations: ["IRS Publication 550 \u2014 Investment Income and Expenses", "IRS Topic No. 409 \u2014 Capital Gains and Losses", "Federal Reserve \u2014 Survey of Consumer Finances on Asset Ownership"],
     definition: `A capital gains tax calculator estimates the tax owed on the profit from selling an asset, based on how long you held it and your income bracket.`,
     keyTakeaways: ["Short-term gains (held 12 months or less) are taxed at your ordinary income rate — up to 37% in 2026.", "Extended holds (over 12 months) qualify for the 0%, 15%, or 20% rate, which is substantially lower for most earners.", "Your overall taxable income determines which bracket you fall in — selling in a low-income year can save thousands.", "The primary residence exclusion can shield up to $250,000 of gain ($500,000 for married couples) from taxation entirely."],
@@ -332,7 +357,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If a boutique retail store has $20,000 in cash from operations, spends $5,000 on new equipment, and receives a $10,000 loan, the net cash flow for that period is $25,000. When added to their beginning balance of $5,000, the business ends the period with a total of $30,000 in liquid assets.`,
     keyFactors: ["Accounts receivable and payable timelines", "Capital expenditure requirements", "Debt repayment schedules", "Operational overhead and variable costs", "Inventory turnover rates"],
     tips: ["Update your entries monthly to identify seasonal trends in your cash flow.", "Categorize your expenses accurately to distinguish between one-time investments and recurring operating costs.", "Use the results to build a cash reserve that can cover at least three to six months of operating expenses.", "Compare your projected cash flow against actual performance to refine your future budgeting accuracy."],
-    relatedCalculators: ["roi-calculator", "budget-planner", "npv-calculator", "irr-calculator"],
+    relatedCalculators: [
+      "roi-calculator",
+      "budget-planner",
+      "npv-calculator",
+      "irr-calculator",
+      "operating-margin"
+    ],
     citations: ["CFPB \u2014 Understanding cash flow for small businesses", "Federal Reserve \u2014 Small Business Cash Flow Management", "IRS Publication 535 \u2014 Business Expenses"],
     definition: `A cash flow calculator estimates the net cash generated by a business over a specific period by subtracting cash outflows from cash inflows, helping assess liquidity and financial health.`,
     keyTakeaways: ["Cash flow calculators help businesses monitor their ability to meet short-term obligations by comparing incoming and outgoing cash.", "Positive cash flow indicates a company has more cash coming in than going out, which is essential for growth and stability.", "Regular use of a cash flow calculator can identify trends and potential cash shortages before they become critical.", "Accurate cash flow forecasting relies on timely and precise recording of all cash transactions, including operating, investing, and financing activities."],
@@ -403,6 +434,7 @@ export const calculatorContent: Record<string, CalculatorContent> = {
       "investment-return",
       "401k-calculator",
       "roth-ira",
+      "monte-carlo-simulation"
     ],
     citations: [
       "Federal Reserve historical S&P 500 data (FRED SP500)",
@@ -800,7 +832,14 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If your company generates $100,000 in revenue and the cost of goods sold is $60,000, your gross profit is $40,000. Applying the formula, your gross margin would be 40%, meaning you retain 40 cents of every dollar earned to cover operating costs.`,
     keyFactors: ["Cost of Goods Sold (COGS)", "Total Revenue", "Pricing Strategy", "Production Efficiency"],
     tips: ["Always ensure your COGS figures include all direct costs, such as raw materials and direct labor, to get an accurate reading.", "Compare your calculated margin against industry benchmarks to see how your business performs relative to competitors.", "Use this calculator regularly to monitor the impact of price adjustments or supplier cost changes on your profitability.", "Do not confuse gross margin with net profit margin, as gross margin excludes overhead costs like rent, marketing, and administrative salaries."],
-    relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "budget-planner"],
+    relatedCalculators: [
+      "roi-calculator",
+      "irr-calculator",
+      "npv-calculator",
+      "budget-planner",
+      "home-equity",
+      "operating-margin",
+    ],
     citations: ["IRS Publication 535 \u2014 Business Expenses: Cost of Goods Sold", "Federal Reserve \u2014 Financial Accounts of the United States: Corporate Profit Measures", "CFPB \u2014 What is a profit margin?"],
     definition: `A gross margin calculator determines the percentage of revenue that exceeds the cost of goods sold (COGS), indicating how efficiently a company generates profit from its core operations.`,
     keyTakeaways: ["Gross margin is calculated by subtracting COGS from revenue and dividing the result by revenue.", "A higher gross margin indicates a company retains more profit per dollar of sales after accounting for production costs.", "Gross margin varies significantly by industry, so comparisons are most meaningful within the same sector.", "Monitoring gross margin trends helps businesses assess pricing strategies and cost control effectiveness."],
@@ -951,6 +990,7 @@ export const calculatorContent: Record<string, CalculatorContent> = {
       "compound-interest",
       "inflation-calculator",
       "cagr-calculator",
+      "monte-carlo-simulation"
     ],
     citations: [
       "FRED S&P 500 index data (SP500)",
@@ -974,7 +1014,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you invest $10,000 today and receive $3,000 at the end of each year for four years, the IRR calculator will determine your specific rate of return. In this scenario, the IRR is approximately 7.72%, helping you decide if that return meets your financial goals.`,
     keyFactors: ["Initial investment amount", "Timing of cash inflows and outflows", "Duration of the investment period", "Reinvestment rate assumptions"],
     tips: ["Always ensure your cash flow entries are accurate to avoid skewed results.", "Compare the calculated IRR against your required rate of return or the inflation rate.", "Use IRR in conjunction with NPV for a more complete picture of investment risk.", "Be aware that IRR assumes cash flows are reinvested at the same internal rate."],
-    relatedCalculators: ["npv-calculator", "roi-calculator", "investment-return", "present-value"],
+    relatedCalculators: [
+      "npv-calculator",
+      "roi-calculator",
+      "investment-return",
+      "present-value",
+      "payback-period"
+    ],
     citations: ["CFPB \u2014 What is the internal rate of return?", "Federal Reserve \u2014 Discount rate and internal rate of return in investment analysis", "IRS \u2014 Publication 550: Investment Income and Expenses"],
     definition: `An IRR calculator estimates the internal rate of return, the annualized rate of return at which the net present value of all cash flows from an investment equals zero, used to evaluate investment profitability.`,
     keyTakeaways: ["IRR is the discount rate that makes the net present value of all cash flows from a project equal to zero, representing the break-even rate of return.", "A higher IRR indicates a more profitable investment, but it should be compared to the cost of capital or required rate of return for decision-making.", "IRR assumes that all intermediate cash flows are reinvested at the same rate, which may not reflect real-world conditions, so it is often used alongside net present value.", "The IRR calculation can produce multiple values if cash flows change direction more than once, leading to potential misinterpretation without careful analysis."],
@@ -1177,6 +1223,7 @@ export const calculatorContent: Record<string, CalculatorContent> = {
       "debt-to-income",
       "down-payment",
       "loan-calculator",
+      "arm-calculator"
     ],
     citations: [
       "Federal Housing Finance Agency (FHFA) 2026 conforming loan limits announcement",
@@ -1215,6 +1262,7 @@ export const calculatorContent: Record<string, CalculatorContent> = {
       "amortization-schedule",
       "refinance-calculator",
       "down-payment",
+      "arm-calculator"
     ],
     citations: [
       "Federal Reserve H.15 Selected Interest Rates (MORTGAGE30US)",
@@ -1266,7 +1314,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If a retail store generates $100,000 in total revenue and has a net income of $15,000 after paying for inventory, rent, salaries, and taxes, the calculation would be ($15,000 / $100,000) * 100. This results in a net profit margin of 15%, meaning for every dollar earned, the business keeps 15 cents as pure profit.`,
     keyFactors: ["Cost of Goods Sold (COGS)", "Operating Expenses and Overhead", "Tax Liabilities", "Interest Payments on Debt", "Total Sales Revenue"],
     tips: ["Compare your margin against industry averages to see if your business is underperforming or outperforming competitors.", "Use accurate data from your latest income statement to ensure the calculation reflects your current financial reality.", "Monitor your net profit margin over multiple periods to identify long-term trends in efficiency and profitability."],
-    relatedCalculators: ["roi-calculator", "budget-planner", "tax-calculator", "npv-calculator"],
+    relatedCalculators: [
+      "roi-calculator",
+      "budget-planner",
+      "tax-calculator",
+      "npv-calculator",
+      "cash-flow"
+    ],
     citations: ["IRS \u2014 Publication 334: Tax Guide for Small Business", "Federal Reserve \u2014 Financial Accounts of the United States", "CFPB \u2014 Small Business Lending Data Collection"],
     definition: `A net profit margin calculator computes the percentage of revenue that remains as profit after all expenses, taxes, and costs are deducted, indicating a company's overall profitability.`,
     keyTakeaways: ["Net profit margin is calculated by dividing net profit by total revenue and multiplying by 100.", "A higher net profit margin indicates a more profitable company that retains more revenue as profit.", "Net profit margin differs from gross profit margin as it accounts for all expenses, including operating costs, interest, and taxes.", "Comparing net profit margins across industries is essential, as margins vary significantly by sector."],
@@ -1294,7 +1348,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `Imagine you are considering a project that costs $10,000 today and is expected to return $5,000 at the end of each year for three years, using a discount rate of 10%. Using the NPV Calculator, you would find that the present value of these inflows is approximately $12,434, resulting in a positive NPV of $2,434, confirming the investment's profitability.`,
     keyFactors: ["Initial investment cost", "Estimated future cash flows", "Discount rate (cost of capital)", "Time horizon of the project"],
     tips: ["Ensure your discount rate reflects the true opportunity cost of your capital.", "Be conservative with your cash flow projections to avoid overestimating returns.", "Use this calculator alongside the IRR calculator for a more complete picture of investment performance."],
-    relatedCalculators: ["irr-calculator", "roi-calculator", "present-value", "investment-return"],
+    relatedCalculators: [
+      "irr-calculator",
+      "roi-calculator",
+      "present-value",
+      "investment-return",
+      "payback-period"
+    ],
     citations: ["Federal Reserve \u2014 The Discount Rate and Time Value of Money", "CFPB \u2014 Understanding Net Present Value in Investment Decisions", "IRS Publication 535 \u2014 Business Expenses and Capitalization"],
     definition: `The NPV (Net Present Value) Calculator determines the current value of a series of future cash flows by discounting them at a specified rate, helping investors evaluate the profitability of an investment.`,
     keyTakeaways: ["Net Present Value (NPV) is the sum of all future cash flows, both incoming and outgoing, discounted back to their present value.", "A positive NPV indicates that the projected earnings exceed the anticipated costs, suggesting a profitable investment.", "The discount rate used in NPV calculations reflects the time value of money and the risk associated with the investment.", "NPV is a core tool in capital budgeting and investment analysis, allowing comparison of projects with different cash flow patterns."],
@@ -1308,7 +1368,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If a company generates $500,000 in net sales and has an operating income of $75,000, the calculation results in an operating margin of 15%. This means for every dollar earned, the company keeps $0.15 as profit before interest and taxes.`,
     keyFactors: ["Cost of Goods Sold (COGS)", "Operating Expenses (SG&A)", "Total Net Revenue", "Operational Efficiency"],
     tips: ["Always use consistent time periods, such as a single fiscal quarter or year, for both revenue and expenses to ensure accuracy.", "Compare your operating margin against industry benchmarks to see if your performance is competitive.", "Exclude non-operating items like interest payments or one-time tax gains to get a true picture of core business performance."],
-    relatedCalculators: ["roi-calculator", "irr-calculator", "npv-calculator", "budget-planner"],
+    relatedCalculators: [
+      "roi-calculator",
+      "irr-calculator",
+      "npv-calculator",
+      "budget-planner",
+      "net-profit-margin"
+    ],
     citations: ["SEC \u2014 Operating Income and Margin Definition", "IRS Publication 535 \u2014 Business Expenses", "Federal Reserve \u2014 Financial Performance Reports"],
     definition: `An operating margin calculator measures a company's operating profitability by dividing its operating income (earnings before interest and taxes) by its net sales, expressed as a percentage.`,
     keyTakeaways: ["Operating margin shows how much profit a company makes from its core operations per dollar of sales, excluding interest and taxes.", "A higher operating margin indicates better cost control and operational efficiency relative to revenue.", "Operating margin is distinct from net profit margin because it excludes non-operating expenses like interest and taxes.", "Comparing operating margins within the same industry provides insight into relative competitive performance."],
@@ -1518,7 +1584,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If your refinancing closing costs are $4,000 and the new loan saves you $200 per month, the break-even point is 20 months. You would need to stay in the home for at least 20 months to ensure the refinance becomes a profitable financial decision.`,
     keyFactors: ["Current interest rate vs. new interest rate", "Total closing costs and origination fees", "Remaining loan balance and term length", "Duration of time you plan to stay in the home"],
     tips: ["Always factor in the total closing costs, not just the interest rate reduction.", "Use the break-even point to decide if a refinance is suitable based on your future moving plans.", "Compare the total interest paid over the life of the loan rather than just focusing on lower monthly payments."],
-    relatedCalculators: ["mortgage-calculator", "amortization-schedule", "loan-calculator", "mortgage-affordability"],
+    relatedCalculators: [
+      "mortgage-calculator",
+      "amortization-schedule",
+      "loan-calculator",
+      "mortgage-affordability",
+      "arm-calculator"
+    ],
     citations: ["CFPB \u2014 What is refinancing and how does it work?", "Federal Reserve \u2014 The Cost of Refinancing a Mortgage", "IRS Publication 936 \u2014 Home Mortgage Interest Deduction"],
     definition: `A refinance calculator estimates potential savings or costs from replacing your current mortgage with a new loan, factoring in interest rates, closing costs, and loan terms.`,
     keyTakeaways: ["Refinancing can lower your monthly payment if you secure a lower interest rate, but closing costs may offset savings over time.", "The break-even point\u2014when savings exceed refinancing costs\u2014is a key metric for deciding if refinancing is worthwhile.", "Your credit score significantly affects the interest rate you qualify for, impacting potential savings from refinancing.", "Refinancing to a shorter loan term can increase monthly payments but reduce total interest paid over the life of the loan."],
@@ -1588,7 +1660,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you start with $50,000 and contribute $1,000 monthly for 30 years at an average annual return of 7%, your account would grow to approximately $1,370,000. This example demonstrates how consistent contributions and the power of compounding interest significantly impact your retirement readiness.`,
     keyFactors: ["Current age and planned retirement age", "Expected annual rate of return on investments", "Monthly or annual contribution amounts", "Current retirement account balance", "Estimated annual inflation rate"],
     tips: ["Run multiple scenarios by adjusting your rate of return to see how conservative vs. aggressive portfolios affect your outcome.", "Factor in inflation to ensure your future savings have the purchasing power you expect.", "Revisit this calculator annually to adjust your plan based on actual market performance and changes in your income.", "Use the 4% rule as a benchmark: multiply your projected nest egg by 0.04 to estimate your annual retirement income — then ask yourself if that's enough to live on."],
-    relatedCalculators: ["compound-interest", "401k-calculator", "cash-flow", "roth-ira", "inflation-calculator", "em-fund", "savings-goal"],
+    relatedCalculators: [
+      "compound-interest",
+      "401k-calculator",
+      "cash-flow",
+      "roth-ira",
+      "monte-carlo-simulation"
+    ],
     citations: ["CFPB \u2014 Planning for Retirement: How to Estimate Your Needs", "Federal Reserve \u2014 Report on the Economic Well-Being of U.S. Households", "IRS \u2014 Retirement Savings Contribution Credit (Saver's Credit)"],
     definition: `A retirement planning calculator estimates how much you need to save each month to reach your retirement income goal, factoring in your current savings, expected Social Security benefits, and assumed rate of return.`,
     keyTakeaways: ["Starting to save early significantly increases the total amount accumulated due to compound interest.", "Your retirement income goal should account for inflation and potential healthcare costs in later years.", "Social Security benefits are designed to replace only about 40% of pre-retirement earnings for average earners.", "Regularly reviewing and adjusting your retirement plan is essential as life circumstances and market conditions change."],
@@ -1630,7 +1708,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you invest $5,000 in a business project and it eventually returns $7,500, your net profit is $2,500. Dividing that $2,500 by the original $5,000 cost results in an ROI of 50%.`,
     keyFactors: ["Initial cost of investment", "Total current value or revenue generated", "Time duration of the investment", "Additional operational or maintenance expenses"],
     tips: ["Account for all hidden costs, such as maintenance or transaction fees, to get a truly accurate ROI.", "Use the annualized ROI feature if you are comparing investments with different holding periods.", "Remember that ROI does not account for risk; always pair this calculation with a risk assessment."],
-    relatedCalculators: ["investment-return", "irr-calculator", "npv-calculator", "capital-gains-tax"],
+    relatedCalculators: [
+      "investment-return",
+      "irr-calculator",
+      "npv-calculator",
+      "capital-gains-tax",
+      "cash-flow"
+    ],
     citations: ["CFPB \u2014 Understanding return on investment for small businesses", "Federal Reserve \u2014 Measuring the return on business investments", "IRS Publication 535 \u2014 Business expenses and investment returns"],
     definition: `An ROI calculator estimates the return on investment for a business expenditure by comparing the net profit or benefit gained to the initial cost, expressed as a percentage.`,
     keyTakeaways: ["ROI is calculated by dividing the net profit of an investment by its total cost, then multiplying by 100 to get a percentage.", "A positive ROI indicates the investment generated more value than it cost, while a negative ROI signals a loss.", "ROI calculators can be used to compare the profitability of different business projects or marketing campaigns.", "Accurate ROI calculations require including all relevant costs and benefits, not just initial expenses."],
@@ -1644,7 +1728,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you start with a $5,000 balance and contribute $6,500 annually for 30 years with an average annual return of 7%, your Roth IRA would grow to approximately $685,000. This demonstrates the powerful effect of long-term compounding on your tax-advantaged savings.`,
     keyFactors: ["Annual contribution amounts", "Expected annual rate of return", "Current account balance", "Time horizon until retirement", "IRS annual contribution limits"],
     tips: ["Always use conservative estimates for your rate of return to avoid overestimating your final balance.", "Try to maximize your annual contributions up to the current IRS limit to take full advantage of tax-free growth.", "Revisit this calculator annually to adjust for changes in your income or shifts in your investment strategy."],
-    relatedCalculators: ["retirement-planning", "compound-interest", "traditional-ira", "401k-calculator"],
+    relatedCalculators: [
+      "retirement-planning",
+      "compound-interest",
+      "traditional-ira",
+      "401k-calculator",
+      "required-minimum-distribution"
+    ],
     citations: ["IRS Publication 590-A \u2014 Contributions to Individual Retirement Arrangements (IRAs)", "IRS Publication 590-B \u2014 Distributions from Individual Retirement Arrangements (IRAs)", "CFPB \u2014 What is a Roth IRA?"],
     definition: `A Roth IRA calculator estimates the future value of after-tax retirement contributions, projecting tax-free growth and withdrawals based on your age, income, contribution amount, and expected rate of return.`,
     keyTakeaways: ["Roth IRA contributions are made with after-tax dollars, allowing for tax-free growth and tax-free withdrawals in retirement.", "Eligibility to contribute to a Roth IRA is phased out at higher income levels, with single filers in 2025 limited once modified AGI exceeds $150,000 and phased out completely at $165,000.", "Annual contribution limits for 2025 are $7,000 (or $8,000 if age 50 or older), and you can contribute up to the tax filing deadline without an extension.", "Withdrawals of contributions are always tax- and penalty-free, but earnings may be subject to taxes and penalties if withdrawn before age 59\u00bd and a five-year holding period."],
@@ -1700,7 +1790,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you want to save $20,000 in 3 years with an initial deposit of $2,000 at a 4% annual interest rate, the calculator determines you need to contribute approximately $485 per month. This simple calculation provides the immediate clarity needed to adjust your monthly budget and prioritize your savings.`,
     keyFactors: ["Initial savings balance", "Total target amount", "Time horizon in years or months", "Annual interest rate or expected yield", "Frequency of compounding interest"],
     tips: ["Use a conservative interest rate estimate to avoid overestimating your future earnings.", "Revisit the calculator annually to adjust your contributions as your income or financial goals change.", "Automate your monthly savings amount once you have determined the necessary figure from the results."],
-    relatedCalculators: ["compound-interest", "budget-planner", "em-fund", "inflation-calculator"],
+    relatedCalculators: [
+      "compound-interest",
+      "budget-planner",
+      "em-fund",
+      "inflation-calculator",
+      "monte-carlo-simulation"
+    ],
     citations: ["CFPB \u2014 Saving for a goal: how to set and reach your savings goals", "Federal Reserve \u2014 Consumer's Guide to Saving and Investing", "IRS Publication 590-A \u2014 Contributions to Individual Retirement Arrangements (IRAs)"],
     definition: `A savings goal calculator helps you determine how much you need to save regularly to reach a specific financial target, such as an emergency fund or a down payment, by a certain date, considering factors like initial deposit, interest rate, and compounding frequency.`,
     keyTakeaways: ["A savings goal calculator estimates the periodic savings needed to achieve a target amount within a set timeframe.", "It accounts for initial deposits, interest rates, and compounding to provide a realistic savings plan.", "Using this tool can help you set achievable financial goals and track progress toward them.", "Regular contributions, even small ones, can significantly grow savings over time due to compound interest."],
@@ -1714,7 +1810,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If your net self-employment earnings for the year are $50,000, the calculator first determines the taxable amount of $46,175. Multiplying this by the 15.3% rate results in a total self-employment tax liability of approximately $7,065.`,
     keyFactors: ["Net annual self-employment income", "Current federal Social Security tax rate (12.4%)", "Current federal Medicare tax rate (2.9%)", "Applicable tax deductions and business expenses"],
     tips: ["Always use your net profit (gross income minus deductible business expenses) rather than your total revenue for the most accurate result.", "Remember that self-employment tax is separate from federal and state income tax, so plan your budget accordingly.", "Consider making quarterly estimated tax payments to avoid underpayment penalties from the IRS."],
-    relatedCalculators: ["tax-calculator", "budget-planner", "retirement-planning", "capital-gains-tax"],
+    relatedCalculators: [
+      "tax-calculator",
+      "budget-planner",
+      "retirement-planning",
+      "capital-gains-tax",
+      "marginal-tax-rate"
+    ],
     citations: ["IRS \u2014 Self-Employment Tax (SE Tax)", "IRS Publication 334 \u2014 Tax Guide for Small Business", "IRS Publication 535 \u2014 Business Expenses"],
     definition: `The Self-Employment Tax Calculator estimates the Social Security and Medicare taxes owed by individuals who work for themselves, based on net earnings from self-employment.`,
     keyTakeaways: ["Self-employment tax is calculated on net earnings, which is gross income minus allowable business expenses.", "The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare.", "You may deduct half of your self-employment tax when calculating your adjusted gross income on your tax return.", "If your net earnings are less than $400, you generally do not owe self-employment tax."],
@@ -1841,6 +1943,7 @@ export const calculatorContent: Record<string, CalculatorContent> = {
       "payroll-calculator",
       "retirement-withdrawal",
       "roth-ira",
+      "marginal-tax-rate"
     ],
     citations: [
       "IRS Rev. Proc. 2025-XX (2026 inflation adjustments)",
@@ -1892,7 +1995,13 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     example: `If you contribute $6,000 annually to a Traditional IRA for 30 years with an average annual return of 7%, your account could grow to approximately $566,648. This calculation accounts for the power of compound interest working over three decades to build your retirement fund.`,
     keyFactors: ["Annual contribution amount", "Expected annual rate of return", "Time horizon until retirement", "Current age and planned retirement age"],
     tips: ["Run multiple scenarios with conservative and aggressive return rates to account for market volatility.", "Try increasing your annual contribution by just 5% each year to see the massive impact of incremental increases.", "Use this calculator alongside a tax calculator to understand the immediate tax-deduction benefits of your contributions."],
-    relatedCalculators: ["roth-ira", "retirement-planning", "compound-interest", "401k-calculator"],
+    relatedCalculators: [
+      "roth-ira",
+      "retirement-planning",
+      "compound-interest",
+      "401k-calculator",
+      "required-minimum-distribution"
+    ],
     citations: ["IRS \u2014 Retirement Topics: IRA Contribution Limits", "CFPB \u2014 What is a Traditional IRA?", "Federal Reserve \u2014 Survey of Consumer Finances: Retirement Accounts"],
     definition: `A Traditional IRA calculator estimates the potential future value of retirement savings in a Traditional Individual Retirement Account, factoring in tax-deductible contributions, investment growth, and taxes on withdrawals.`,
     keyTakeaways: ["Contributions to a Traditional IRA may be tax-deductible in the year they are made, reducing current taxable income.", "Earnings in a Traditional IRA grow tax-deferred until withdrawal, typically in retirement.", "Withdrawals from a Traditional IRA are taxed as ordinary income, and early withdrawals before age 59\u00bd may incur a 10% penalty.", "Required minimum distributions (RMDs) must begin at age 73 for Traditional IRAs, as of 2024."],
