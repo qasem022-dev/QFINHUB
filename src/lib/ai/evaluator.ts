@@ -1,7 +1,7 @@
 import { create, all, type MathJsInstance } from "mathjs";
 import type { AIChartConfig, AITableConfig } from "@/types/ai";
 
-const math: MathJsInstance = create(all as any);
+const math: MathJsInstance = create(all as Parameters<typeof create>[0]);
 
 /**
  * Safely evaluate a math expression with given variables.

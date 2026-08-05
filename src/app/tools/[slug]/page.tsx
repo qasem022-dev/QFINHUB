@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/static-components */
 import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";

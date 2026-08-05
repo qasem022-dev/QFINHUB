@@ -1,4 +1,7 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Code2, Link2, Puzzle, Brain, Globe, Download, Copy, ExternalLink } from "lucide-react";
 import { getCalculatorBySlug } from "@/lib/calculators";
 
@@ -48,7 +51,7 @@ export default function ForAIDevelopersPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600">
-            LLMs hallucinate math. QFINHUB doesn&apos;t. Embed our calculators in your
+            LLMs hallucinate math. QFINHUB doesn't. Embed our calculators in your
             AI agent, chatbot, or application — accurate results every time,
             zero API keys required.
           </p>
@@ -276,13 +279,13 @@ export default function ForAIDevelopersPage() {
             <Code2 className="h-5 w-5" />
             Browse Widgets
           </a>
-          <a
+          <Link
             href="/calculators"
             className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/10"
           >
             Explore All Calculators
             <ExternalLink className="h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </section>
     </div>

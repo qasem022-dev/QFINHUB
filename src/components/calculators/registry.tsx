@@ -7,7 +7,7 @@ import type { ComponentType } from "react";
 // table.
 export { CalculatorSlot } from "./calculator-slot";
 
-const calculatorMap: Record<string, ComponentType<any>> = {
+const calculatorMap: Record<string, ComponentType<Record<string, unknown>>> = {
   "compound-interest": dynamic(() => import("./impl/compound-interest")),
   "simple-interest": dynamic(() => import("./impl/simple-interest")),
   "investment-return": dynamic(() => import("./impl/investment-return")),
@@ -137,6 +137,6 @@ const calculatorMap: Record<string, ComponentType<any>> = {
 
 export function getCalculatorComponent(
   slug: string,
-): ComponentType<any> | null {
+): ComponentType<Record<string, unknown>> | null {
   return calculatorMap[slug] ?? null;
 }

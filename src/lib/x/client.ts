@@ -52,8 +52,8 @@ export async function postTweet(
     const tweet = await xClient.v2.tweet(tweetText);
     console.log(`[X] Posted tweet ${tweet.data.id}: ${tweetText.slice(0, 60)}...`);
     return { id: tweet.data.id, text: tweetText };
-  } catch (error: any) {
-    console.error("[X] Failed to post tweet:", error?.message || error);
+  } catch (error: unknown) {
+    console.error("[X] Failed to post tweet:", (error instanceof Error ? error.message : String(error)));
     return null;
   }
 }
@@ -70,8 +70,8 @@ export async function replyToTweet(
     await xClient.v2.reply(text, tweetId);
     console.log(`[X] Replied to ${tweetId}`);
     return true;
-  } catch (error: any) {
-    console.error("[X] Failed to reply:", error?.message || error);
+  } catch (error: unknown) {
+    console.error("[X] Failed to reply:", (error instanceof Error ? error.message : String(error)));
     return false;
   }
 }

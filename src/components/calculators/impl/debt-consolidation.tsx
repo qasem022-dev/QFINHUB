@@ -48,7 +48,7 @@ export default function DebtConsolidationCalculator() {
   // Calculate current payoff time and interest with minimum payments
   let currentMonths = 0;
   let currentInterest = 0;
-  let balances = debts.map(d => d.balance);
+  const balances = debts.map(d => d.balance);
   const minPayments = debts.map(d => d.minPayment);
   while (balances.some(b => b > 0) && currentMonths < 600) {
     currentMonths++;

@@ -239,14 +239,14 @@ export function generateComparisonTableSVG(
   const headerH = 40;
   const startY = 90;
 
-  let headersHTML = columns
+  const headersHTML = columns
     .map((col, i) => {
       const x = 20 + i * colW;
       return `<text x="${x + colW / 2}" y="${startY - 10}" text-anchor="middle" font-size="12" font-weight="600" fill="${BRAND_COLORS.primary}">${col}</text>`;
     })
     .join("");
 
-  let rowsHTML = rows
+  const rowsHTML = rows
     .map((row, i) => {
       const y = startY + i * rowH;
       const bgColor = row.highlight ? BRAND_COLORS.lightBg : "transparent";

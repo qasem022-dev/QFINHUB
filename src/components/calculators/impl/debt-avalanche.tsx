@@ -37,7 +37,7 @@ export default function DebtAvalancheCalculator() {
   const avalancheOrder = [...debts].sort((a, b) => b.rate - a.rate);
 
   function simulatePayoff(order: DebtInfo[]): { months: number; interest: number; names: string[] } {
-    let balances = order.map(d => d.balance);
+    const balances = order.map(d => d.balance);
     const rates = order.map(d => d.rate);
     const mins = order.map(d => d.minPayment);
     let months = 0;

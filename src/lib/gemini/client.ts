@@ -52,8 +52,9 @@ export async function generateWithGemini(
     const data = await resp.json();
     const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || null;
     return text;
-  } catch (err: any) {
-    console.error("[Gemini] Request failed:", err?.message || err);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("[Gemini] Request failed:", message);
     return null;
   }
 }
@@ -65,7 +66,7 @@ export async function generateWithGemini(
  */
 export async function generateImagePrompt(
   topic: string,
-  data?: Record<string, any>
+  data?: Record<string, string | number | boolean | null>
 ): Promise<string | null> {
   if (!isGeminiReady()) return null;
 

@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Standalone Node scripts — not lint targets (CommonJS modules, run independently)
+    "scripts/**/*.cjs",
+    "scripts/**/*.js",
+    ".optimizer-data/**",
+    "node_modules/**",
   ]),
 ]);
 

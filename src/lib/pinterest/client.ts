@@ -42,7 +42,7 @@ interface PinAnalytics {
   impressions: number;
   saves: number;
   clicks: number;
-  [key: string]: any;
+  [key: string]: string | number | boolean | null;
 }
 
 type DeepPartial<T> = T extends object ? { [P in keyof T]?: DeepPartial<T[P]> } : T;
@@ -78,7 +78,7 @@ export class PinterestClient {
   private async request<T>(
     method: string,
     path: string,
-    body?: any,
+    body?: unknown,
     retries = 2
   ): Promise<T> {
     this.checkRateLimit();
@@ -184,14 +184,14 @@ export class PinterestClient {
 
   // ─── Pins ───
 
-  async createPin(pin: Pin): Promise<any> {
-    return this.request("POST", "/pins", pin);
+  async createPin(pin: Pin): Promise<Pin> {
+    return this.request<Pin>("POST", "/pins", pin);
   }
 
-  async listPins(boardId?: string, pageSize = 25): Promise<any[]> {
+  async listPins(boardId?: string, pageSize = 25): Promise<Pin[]> {
     let path = `/pins?page_size=${pageSize}`;
     if (boardId) path += `&board_id=${boardId}`;
-    const data = await this.request<{ items: any[] }>("GET", path);
+    const data = await this.request<{ items: Pin[] }>("GET", path);
     return data.items || [];
   }
 
@@ -203,7 +203,7 @@ export class PinterestClient {
 
   async getPinAnalytics(pinId: string): Promise<PinAnalytics | null> {
     try {
-      const data = await request<any>("GET", `/pins/${pinId}/analytics`);
+      const data = await request<PinAnalytics>("GET", `/pins/${pinId}/analytics`);
       return data;
     } catch {
       return null;
@@ -323,7 +323,7 @@ async function request<T>(
   method: string,
   url: string,
   headers?: Record<string, string>,
-  body?: any
+  body?: unknown
 ): Promise<T> {
   const options: RequestInit = { method, headers };
   if (body && method !== "GET") {

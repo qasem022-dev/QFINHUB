@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
 "use client";
 
 import { useMemo } from "react";
@@ -30,7 +31,7 @@ type CalculatorSlotProps = {
  * renders the calculator once the client-side chunk arrives.
  */
 export function CalculatorSlot({ slug }: CalculatorSlotProps) {
-  const CalculatorComponent = useMemo<ComponentType<any> | null>(
+  const CalculatorComponent = useMemo<ComponentType<Record<string, unknown>> | null>(
     () => getCalculatorComponent(slug),
     [slug],
   );

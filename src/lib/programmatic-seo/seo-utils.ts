@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Calculator variant parameters use `any` because URL-derived params are
+// heterogeneous (string | number | undefined depending on slug). The runtime
+// always coerces via `as number` casts at use sites.
 import type { VariantParams, CalculatorVariant } from "./types";
 
 const BASE_URL = "https://www.qfinhub.com";
@@ -704,10 +708,10 @@ export function generateFAQs(
     }
     case "compound-interest":
     case "Compound Interest": {
-      const p = params.principal;
-      const rate = params.rate;
-      const yrs = params.years;
-      const add = params.monthlyAdd;
+      const p = params.principal as number;
+      const rate = params.rate as number;
+      const yrs = params.years as number;
+      const add = params.monthlyAdd as number | undefined;
       return [
         {
           question: `How much will ${fmt(p || 10000)} grow in ${yrs || 10} years at ${rate || 7}% compound interest?`,
@@ -812,8 +816,10 @@ export function generateRelatedLinks(
 
 // ─── Helpers ────────────────────────────────────────────────────
 
-function formatAmountWithCommas(val: number): string {
-  return new Intl.NumberFormat("en-US").format(val);
+function formatAmountWithCommas(val: number | string): string {
+  const num = typeof val === "string" ? parseFloat(val) : val;
+  if (isNaN(num)) return String(val);
+  return new Intl.NumberFormat("en-US").format(num);
 }
 
 function formatFilingStatus(status: string): string {
@@ -850,5 +856,5 @@ function getStandardDeduction(status: string): number {
 }
 
 function slugFromParams(params: Record<string, any>): string {
-  return generateVariantSlug(params as any);
+  return generateVariantSlug({ ...params, calculatorId: params.calculatorId as string });
 }

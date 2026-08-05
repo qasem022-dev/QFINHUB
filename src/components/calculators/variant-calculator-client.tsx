@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 
 interface VariantCalculatorClientProps {
   calculatorId: string;
-  params: Record<string, any>;
+  params: Record<string, string | number | boolean>;
 }
 
 /**

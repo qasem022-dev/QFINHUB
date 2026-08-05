@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/static-components */
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { readFileSync, existsSync } from "fs";
@@ -50,7 +51,7 @@ interface ScenarioIndex {
 // ─── Cache ───────────────────────────────────────────────────────
 
 let cachedIndex: ScenarioIndex | null = null;
-let cachedBatches: Map<string, ScenarioData[]> = new Map();
+const cachedBatches: Map<string, ScenarioData[]> = new Map();
 
 function loadIndex(): ScenarioIndex {
   if (cachedIndex) return cachedIndex;

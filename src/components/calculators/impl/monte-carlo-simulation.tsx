@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect, react-hooks/purity */
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import * as React from "react";

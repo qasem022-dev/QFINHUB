@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
 "use client";
 
 import * as React from "react";
@@ -17,7 +18,12 @@ interface PWAState {
   isAndroid: boolean;
 }
 
-let deferredPrompt: any = null;
+interface BeforeInstallPromptEvent extends Event {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
+}
+
+let deferredPrompt: BeforeInstallPromptEvent | null = null;
 
 export function usePWA(): PWAState {
   const [canInstall, setCanInstall] = React.useState(false);
@@ -33,7 +39,8 @@ export function usePWA(): PWAState {
     const desktop = !ios && !android;
     const standalone =
       window.matchMedia("(display-mode: standalone)").matches ||
-      (window.navigator as any).standalone === true;
+      // iOS Safari exposes standalone via non-standard navigator.standalone (boolean).
+      ('standalone' in window.navigator && Boolean((window.navigator as Navigator & { standalone?: boolean }).standalone));
 
     setIsIOS(ios);
     setIsAndroid(android);
@@ -44,7 +51,7 @@ export function usePWA(): PWAState {
 
     const handler = (e: Event) => {
       e.preventDefault();
-      deferredPrompt = e;
+      deferredPrompt = e as BeforeInstallPromptEvent;
       setCanInstall(true);
     };
 

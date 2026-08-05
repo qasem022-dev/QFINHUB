@@ -172,10 +172,10 @@ export function updateGtagConsent(settings: ConsentSettings): void {
     // Ensure dataLayer exists
     window.dataLayer = window.dataLayer || [];
     // Google's gtag function
-    (window as any).gtag =
-      (window as any).gtag ||
-      function () {
-        (window.dataLayer as unknown[]).push(arguments);
+    (window as unknown as { gtag: (...args: unknown[]) => void }).gtag =
+      ((window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) ||
+      function (...args: unknown[]) {
+        (window.dataLayer as unknown[]).push(args);
       };
     (window as any).gtag('consent', 'update', settings);
   } catch {

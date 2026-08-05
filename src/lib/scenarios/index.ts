@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
-let cachedIndex: Record<string, { batch: string; title: string; calculatorSlug: string; category: string }> | null = null;
+let cachedIndex: Record<string, { batch: string; title: string; calculatorSlug: string; category: string; upgraded?: boolean }> | null = null;
 
 function loadScenarioIndex() {
   if (cachedIndex) return cachedIndex;
@@ -31,7 +31,7 @@ export function getScenariosForCalculator(calculatorSlug: string, maxResults = 8
         title: entry.title,
         calculatorSlug: entry.calculatorSlug,
         category: entry.category,
-        upgraded: (entry as any).upgraded === true,
+        upgraded: entry.upgraded === true,
       });
     }
   }

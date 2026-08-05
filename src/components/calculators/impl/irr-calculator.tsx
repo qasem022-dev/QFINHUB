@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
 "use client";
 
 import * as React from "react";

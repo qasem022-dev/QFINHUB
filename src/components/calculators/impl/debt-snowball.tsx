@@ -35,7 +35,7 @@ export default function DebtSnowballCalculator() {
   const snowballOrder = [...debts].sort((a, b) => a.balance - b.balance);
 
   // Calculate payoff using snowball
-  let snowBalances = snowballOrder.map(d => d.balance);
+  const snowBalances = snowballOrder.map(d => d.balance);
   const snowRates = snowballOrder.map(d => d.rate);
   const snowMins = snowballOrder.map(d => d.minPayment);
   let snowMonths = 0;

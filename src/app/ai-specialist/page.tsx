@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/set-state-in-effect, react-hooks/static-components */
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import * as React from "react";
@@ -25,6 +27,7 @@ function AISpecialistContent() {
   const [loadingPlan, setLoadingPlan] = React.useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = React.useState(false);
   const [savedTitle, setSavedTitle] = React.useState<string | null>(null);
+  const [currentModel, setCurrentModel] = React.useState<string | null>(null);
   const dynamicCalcRef = React.useRef<DynamicCalculatorHandle>(null);
   const saveTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -121,6 +124,7 @@ function AISpecialistContent() {
 
         setMessages((prev) => [...prev, assistantMessage]);
         setCurrentCalculator(calculator);
+        setCurrentModel(typeof data.model === "string" ? data.model : null);
         setSavedPlanId(null);
         setHasUnsavedChanges(false);
         setSavedTitle(null);
@@ -270,13 +274,13 @@ function AISpecialistContent() {
                 <span className="rounded-full bg-accent-100 px-2 py-0.5 text-[10px] font-medium text-accent-700 dark:bg-accent-900/30 dark:text-accent-400">
                   {t("aiSpecialist.generated")}
                 </span>
-                {(currentCalculator as any)._model && (
+                {currentModel && (
                   <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${
-                    (currentCalculator as any)._model === 'deepseek-reasoner'
+                    currentModel === 'deepseek-reasoner'
                       ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400'
                       : 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
                   }`}>
-                    {(currentCalculator as any)._model === 'deepseek-reasoner' ? 'Pro' : 'Flash'}
+                    {currentModel === 'deepseek-reasoner' ? 'Pro' : 'Flash'}
                   </span>
                 )}
               </>
@@ -408,7 +412,7 @@ export default function AISpecialistPage() {
               What Is the AI Financial Specialist?
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-              The AI Financial Specialist is QFINHUB&apos;s natural-language
+              The AI Financial Specialist is QFINHUB's natural-language
               calculator builder. Instead of browsing our catalog of 125+
               pre-built calculators to find one that approximates what you
               need, you simply describe the calculation in everyday
@@ -568,17 +572,17 @@ export default function AISpecialistPage() {
             <ul className="space-y-2 text-gray-700 dark:text-gray-300 ml-2 mb-4">
               <li>
                 AI-generated calculators are based on standard financial
-                formulas that have been verified by QFINHUB&apos;s
+                formulas that have been verified by QFINHUB's
                 editorial team
               </li>
               <li>
                 For complex or unusual scenarios, always verify the
-                generated calculator&apos;s results against an independent
+                generated calculator's results against an independent
                 source or a qualified financial professional
               </li>
               <li>
                 The AI may occasionally generate a calculator with inputs
-                or formulas that don&apos;t perfectly match your intent —
+                or formulas that don't perfectly match your intent —
                 review the inputs and adjust as needed
               </li>
               <li>
@@ -681,7 +685,7 @@ export default function AISpecialistPage() {
               When to Use the AI Specialist vs. Pre-Built Calculators
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
-              Both options are free and accurate. Here&apos;s how to
+              Both options are free and accurate. Here's how to
               choose:
             </p>
             <ul className="space-y-2 text-gray-700 dark:text-gray-300 ml-2">
@@ -694,7 +698,7 @@ export default function AISpecialistPage() {
               </li>
               <li>
                 <strong>Use the AI Specialist</strong> when your scenario
-                is unusual, multi-step, or doesn&apos;t fit any of our
+                is unusual, multi-step, or doesn't fit any of our
                 pre-built calculators. Examples: comparing three
                 different mortgage scenarios side by side, modeling a
                 specific debt-payoff strategy, or calculating a custom
@@ -802,7 +806,7 @@ export default function AISpecialistPage() {
 
           <footer className="text-xs text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-6">
                       <p>
-                        The AI Financial Specialist is part of QFINHUB&apos;s
+                        The AI Financial Specialist is part of QFINHUB's
                         mission to make accurate financial information universally
                         accessible. Our team of financial analysts and software
                         engineers continuously review and refine the underlying

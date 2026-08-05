@@ -113,7 +113,7 @@ export const DynamicCalculator = React.forwardRef<DynamicCalculatorHandle, Dynam
   }, [config.chart, inputValues]);
 
   // Generate table data
-  const tableData = React.useMemo(() => {
+  const tableData: Record<string, string | number>[] = React.useMemo(() => {
     if (!config.table) return [];
     return generateTableData(config.table, inputValues);
   }, [config.table, inputValues]);
@@ -222,7 +222,7 @@ export const DynamicCalculator = React.forwardRef<DynamicCalculatorHandle, Dynam
                 {config.inputs.map((input) => (
                   <CalculatorInput
                     key={input.id}
-                    input={adaptInput(input) as any}
+                    input={adaptInput(input) as Parameters<typeof CalculatorInput>[0]["input"]}
                     value={inputValues[input.id] ?? input.defaultValue}
                     onChange={(val: number) => handleInputChange(input.id, val)}
                   />
@@ -285,7 +285,7 @@ export const DynamicCalculator = React.forwardRef<DynamicCalculatorHandle, Dynam
                   <table className="w-full text-left text-sm">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-700">
-                        {config.table.columns.map((col) => (
+                        {config.table.columns.map((col: { key: string; label: string }) => (
                           <th
                             key={col.key}
                             className="px-4 py-2.5 text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400"
@@ -301,7 +301,7 @@ export const DynamicCalculator = React.forwardRef<DynamicCalculatorHandle, Dynam
                           key={idx}
                           className="border-b border-gray-100 last:border-0 dark:border-gray-800"
                         >
-                          {config.table!.columns.map((col) => (
+                          {config.table!.columns.map((col: { key: string; label: string }) => (
                             <td
                               key={col.key}
                               className="px-4 py-2.5 text-gray-900 dark:text-gray-100"

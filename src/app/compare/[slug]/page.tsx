@@ -135,7 +135,7 @@ export default async function ComparisonPage({ params }: ComparePageProps) {
                 <li>• Your situation matches this alternative approach</li>
                 <li>• You want to compare results side by side</li>
                 <li>• The assumptions in this calculator fit your needs better</li>
-                <li>• You're exploring different financial strategies</li>
+                <li>• You&apos;re exploring different financial strategies</li>
               </ul>
             </div>
           </div>

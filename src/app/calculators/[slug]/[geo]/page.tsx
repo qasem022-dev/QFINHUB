@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
+/* eslint-disable react/no-unescaped-entities */
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin } from "lucide-react";

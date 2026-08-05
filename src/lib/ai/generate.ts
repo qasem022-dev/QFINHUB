@@ -145,7 +145,7 @@ const COMPLEX_KEYWORDS = [
 function assessComplexity(query: string): { score: number; reason: string } {
   const lower = query.toLowerCase();
   let score = 0;
-  let matchedKeywords: string[] = [];
+  const matchedKeywords: string[] = [];
 
   // Factor 1: Keyword matches (each match adds to score)
   for (const keyword of COMPLEX_KEYWORDS) {

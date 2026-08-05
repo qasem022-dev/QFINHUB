@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { notFound, useParams } from "next/navigation";

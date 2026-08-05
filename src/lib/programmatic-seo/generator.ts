@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Calculator variant parameters use `any` because URL-derived params are
+// heterogeneous (string | number | undefined depending on slug). Runtime
+// always coerces via `as number` casts at use sites.
 import type { CalculatorVariant } from "./types";
 import { variantTemplates, getAllTemplates } from "./variant-templates";
 import {
@@ -839,7 +843,7 @@ function generateSchema(
   title: string,
   description: string,
   faqs: { question: string; answer: string }[],
-): Record<string, any> {
+): Record<string, unknown> {
   const url = `https://www.qfinhub.com/tools/${slug}`;
 
   const webAppSchema = {

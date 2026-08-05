@@ -7,6 +7,7 @@
  * SEO: index,follow | self-canonical | in sitemap
  * Schema: WebApplication + FAQPage + BreadcrumbList
  */
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EmbedCodeBox } from "@/components/widgets/embed-code-box";

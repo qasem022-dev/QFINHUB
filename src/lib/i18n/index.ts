@@ -25,6 +25,7 @@ function loadTranslation(locale: string): Record<string, unknown> | null {
 
   try {
     // Dynamic require — all locale files are pre-generated
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const data = require(`@/i18n/locales/${locale}.json`);
     translationCache[locale] = data as Record<string, unknown>;
     return translationCache[locale];
@@ -32,6 +33,7 @@ function loadTranslation(locale: string): Record<string, unknown> | null {
     // Fallback to English if locale file doesn't exist
     if (locale !== "en") {
       try {
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
         const data = require(`@/i18n/locales/en.json`);
         translationCache[locale] = data as Record<string, unknown>;
         return translationCache[locale];

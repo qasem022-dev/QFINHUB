@@ -10,14 +10,14 @@ export interface CalculatorVariant {
   h1: string;
   content: string;
   calculatorId: string;
-  params: Record<string, any>;
+  params: Record<string, string | number | boolean>;
   meta: {
     title: string;
     description: string;
   };
   faqs: { question: string; answer: string }[];
   relatedLinks: { href: string; label: string }[];
-  schema: Record<string, any>;
+  schema: Record<string, unknown>;
 }
 
 export interface VariantTemplate {
@@ -30,7 +30,7 @@ export interface VariantTemplate {
 
 export interface TemplateVariant {
   slug: string;
-  params: Record<string, any>;
+  params: Record<string, string | number | boolean>;
   title: string;
   description: string;
 }
