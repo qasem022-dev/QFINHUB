@@ -89,15 +89,24 @@ export async function generateMetadata({ params }: ToolsPageProps) {
   ]);
   const hasGscImpressions = TOOL_GSC_PAGES.has(toolPath);
 
-  // Detect formula slug pattern (parameter combinations like loan-20k-5yr-8pct)
+  // Detect formula slug pattern (parameter combinations like loan-20k-5yr-8pct or investment-5k-20yr)
   const formulaPattern = /^[a-z]+-\d/;
   const parts = slug.split("-");
   const hasPct = parts.some((p) => p.endsWith("pct"));
   const hasYr = parts.some((p) => p.endsWith("yr"));
   const hasMo = parts.some((p) => p.endsWith("mo"));
-  const hasNumParams =
-    parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length >= 3;
-  const isFormulaVariant = (hasPct && (hasYr || hasMo)) || (formulaPattern.test(slug) && hasNumParams);
+  const hasK = parts.some((p) => /^\d+k$/.test(p));           // e.g. "5k", "100k"
+  const hasDp = parts.some((p) => p.endsWith("dp"));            // e.g. "25dp", "3dp"
+  const hasPctPlain = parts.some((p) => /^\d+pct$/.test(p));    // e.g. "8pct", "7pct"
+  const hasYrPlain = parts.some((p) => /^\d+yr$/.test(p));      // e.g. "5yr", "20yr"
+  const hasMoPlain = parts.some((p) => /^\d+mo$/.test(p));      // e.g. "500mo"
+  const paramCount = parts.filter((p) => /^\d/.test(p) || hasPct || hasYr || hasMo || hasK || hasDp).length;
+  const hasNumParams = paramCount >= 2; // a real formula has 2+ numeric params
+  const isFormulaVariant =
+    (hasPct && (hasYr || hasMo)) ||
+    (hasPctPlain && (hasYrPlain || hasMoPlain)) ||
+    (hasK && (hasYrPlain || hasMoPlain || hasPctPlain || hasDp)) ||
+    (formulaPattern.test(slug) && hasNumParams);
 
   // Determine canonical: formula variants → parent calculator
   const parentCalcSlug = variant.calculatorId;
