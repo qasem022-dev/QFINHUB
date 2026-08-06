@@ -4,7 +4,7 @@ import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput } from "..";
 import type { PeriodUnit } from "..";
 import { toPeriods } from "..";
-import { formatCurrency, formatPercentage } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 export default function PerpetuityCalculator() {
   const [payment, setPayment] = React.useState(1000);

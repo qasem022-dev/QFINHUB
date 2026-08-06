@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslation } from "@/app/i18n-provider";
-import { locales } from "@/lib/i18n";
-import { ALL_LANGUAGES, getLanguageInfo } from "@/lib/i18n/languages";
-import type { LanguageInfo } from "@/lib/i18n/languages";
+import {} from "@/lib/i18n";
+import {getLanguageInfo } from "@/lib/i18n/languages";
+import type {} from "@/lib/i18n/languages";
 import {
   DropdownMenu,
   DropdownMenuContent,

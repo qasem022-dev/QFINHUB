@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatNumber } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 export default function SideHustleCalculator() {
   const [revenue, setRevenue] = React.useState(2000);

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatPercentage } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 import { PeriodInput, toMonths, type PeriodUnit } from "@/components/calculators/period-input";
 
 function safeFV(PV: number, PMT: number, r: number, n: number, t: number): number {

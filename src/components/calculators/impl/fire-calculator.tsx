@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatPercentage } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 export default function FireCalculator() {
   const [currentAge, setCurrentAge] = React.useState(30);

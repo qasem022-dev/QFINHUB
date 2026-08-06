@@ -3,7 +3,7 @@
 // heterogeneous (string | number | undefined depending on slug). Runtime
 // always coerces via `as number` casts at use sites.
 import type { CalculatorVariant } from "./types";
-import { variantTemplates, getAllTemplates } from "./variant-templates";
+import {getAllTemplates } from "./variant-templates";
 import {
   generateVariantSlug,
   generateMetaTitle,

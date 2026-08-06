@@ -10,7 +10,7 @@ import { ConsentBanner } from "@/components/ui/consent-banner";
 import { Analytics } from "@vercel/analytics/next";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { AdsterraBanner } from "@/components/ads/adsterra-banner";
-import { defaultLocale, locales } from "@/lib/i18n";
+import { defaultLocale} from "@/lib/i18n";
 import { ALL_LANGUAGES } from "@/lib/i18n/languages";
 import { HreflangTags } from "@/components/seo/hreflang-tags";
 

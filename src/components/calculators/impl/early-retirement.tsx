@@ -3,7 +3,7 @@
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
 import { formatCurrency, formatNumber } from "@/lib/utils";
-import { PeriodInput } from "@/components/calculators/period-input";
+import {} from "@/components/calculators/period-input";
 
 export default function EarlyRetirementCalculator() {
   const [currentAge, setCurrentAge] = React.useState(30);

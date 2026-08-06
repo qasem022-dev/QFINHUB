@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatNumber } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 const FEDERAL_EXEMPTION_2024 = 12920000;
 const FEDERAL_ESTATE_RATE = 0.40;

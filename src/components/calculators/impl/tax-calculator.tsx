@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatPercentage, formatNumber } from "@/lib/utils";
+import { formatCurrency, formatPercentage} from "@/lib/utils";
 
 const BRACKETS_2024_SINGLE = [
   { rate: 0.10, from: 0, to: 11600 },

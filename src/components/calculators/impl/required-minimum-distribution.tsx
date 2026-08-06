@@ -3,7 +3,7 @@
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
 import { formatCurrency, formatNumber } from "@/lib/utils";
-import { PeriodInput } from "@/components/calculators/period-input";
+import {} from "@/components/calculators/period-input";
 
 const RMD_FACTORS: Record<number, number> = {
   72: 27.4, 73: 26.5, 74: 25.5, 75: 24.6, 76: 23.7, 77: 22.9, 78: 22.0,

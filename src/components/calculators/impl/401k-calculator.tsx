@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatNumber } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 import { PeriodInput, toMonths, type PeriodUnit } from "@/components/calculators/period-input";
 
 export default function Four01kCalculator() {

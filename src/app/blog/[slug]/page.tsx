@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { blogPosts, type BlogPost } from "@/lib/blog/posts";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, ArrowRight, Calendar, Clock, Tag, ExternalLink } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Tag, ExternalLink } from "lucide-react";
 import { allCalculators } from "@/lib/calculators";
 
 const baseUrl = "https://www.qfinhub.com";

@@ -23,7 +23,7 @@ import {
 } from "@/types/calculator";
 import { useTranslation } from "@/app/i18n-provider";
 import type { CalculatorConfig } from "@/types/calculator";
-import { cn } from "@/lib/utils";
+import {} from "@/lib/utils";
 
 interface CalculatorListingClientProps {
   calculators: CalculatorConfig[];

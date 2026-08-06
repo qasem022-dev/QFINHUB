@@ -3,7 +3,7 @@
 "use client";
 
 import * as React from "react";
-import { X, Download, Smartphone, Share2, Plus, Check, ExternalLink } from "lucide-react";
+import { X, Download, Smartphone, Share2, Plus, Check} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { usePWA } from "@/hooks/use-pwa";

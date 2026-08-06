@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatPercentage, formatNumber } from "@/lib/utils";
+import { formatCurrency, formatPercentage} from "@/lib/utils";
 
 export default function FicaCalculator() {
   const [wages, setWages] = React.useState(100000);

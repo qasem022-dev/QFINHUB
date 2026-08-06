@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toMonths, toPeriods } from "..";
-import { formatCurrency, formatNumber, formatPercentage } from "@/lib/utils";
+import {formatNumber} from "@/lib/utils";
 export default function RuleOf72() {
   const [rate, setRate] = React.useState(7);
   const [period, setPeriod] = React.useState(10);

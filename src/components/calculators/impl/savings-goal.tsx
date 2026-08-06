@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toPeriods } from "..";
-import { formatCurrency, formatNumber } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 export default function SavingsGoalCalculator() {
   const [target, setTarget] = React.useState(50000);

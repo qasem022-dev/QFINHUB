@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toMonths, toPeriods } from "..";
-import { formatCurrency, formatPercentage, formatNumber } from "@/lib/utils";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toMonths} from "..";
+import { formatCurrency, formatNumber } from "@/lib/utils";
 
 export default function LifetimeValueCalculator() {
   const [purchaseValue, setPurchaseValue] = React.useState(100);

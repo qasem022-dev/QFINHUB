@@ -4,14 +4,14 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { CalculatorLayout } from "@/components/calculators";
+import {} from "@/components/calculators";
 import { YMYLDisclaimer } from "@/components/layout/ymyl-disclaimer";
 import { LastReviewedBy } from "@/components/layout/last-reviewed";
 import { getCalculatorBySlug } from "@/lib/calculators";
 import { getCalculatorComponent } from "@/components/calculators/registry";
 import { US_CITIES, GEOTARGETED_CALCULATORS } from "@/lib/programmatic-seo/data/us-cities";
-import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
-import type { CategoryType } from "@/types/calculator";
+import {} from "@/types/calculator";
+import type {} from "@/types/calculator";
 
 interface GeoPageProps {
   params: Promise<{ slug: string; geo: string }>;

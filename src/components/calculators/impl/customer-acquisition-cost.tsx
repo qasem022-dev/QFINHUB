@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toMonths, toPeriods } from "..";
+import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard, PeriodInput, toPeriods } from "..";
 import { formatCurrency } from "@/lib/utils";
 
 export default function CustomerAcquisitionCostCalculator() {

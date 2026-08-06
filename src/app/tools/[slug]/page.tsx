@@ -6,13 +6,13 @@ import { ArrowLeft, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CalculatorLayout } from "@/components/calculators";
-import { getCalculatorBySlug, allCalculators } from "@/lib/calculators";
+import { getCalculatorBySlug} from "@/lib/calculators";
 import { getCalculatorComponent } from "@/components/calculators/registry";
 import {
   getAllVariantPages,
   getVariantBySlug,
 } from "@/lib/programmatic-seo/generator";
-import { parseVariantSlug } from "@/lib/programmatic-seo/seo-utils";
+import {} from "@/lib/programmatic-seo/seo-utils";
 import { ShareDialog } from "@/components/calculators/share-dialog";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
 import type { CategoryType } from "@/types/calculator";

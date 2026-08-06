@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Scale, ArrowRight } from "lucide-react";
+import {Scale, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import {} from "@/components/ui/badge";
 import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 import { getCalculatorBySlug } from "@/lib/calculators";
 import type { Metadata } from "next";

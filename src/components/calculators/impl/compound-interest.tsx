@@ -3,7 +3,7 @@
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
 import { PeriodInput, toMonths, type PeriodUnit } from "@/components/calculators/period-input";
-import { formatCurrency, formatPercentage } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 export default function CompoundInterestCalculator() {
   const [principal, setPrincipal] = React.useState(10000);

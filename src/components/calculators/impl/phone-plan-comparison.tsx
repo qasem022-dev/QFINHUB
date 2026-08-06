@@ -3,7 +3,7 @@
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
 import { formatCurrency } from "@/lib/utils";
-import { formatNumber } from "@/lib/utils";
+import {} from "@/lib/utils";
 
 export default function PhonePlanComparison() {
   const [plan1Monthly, setPlan1Monthly] = React.useState(50);

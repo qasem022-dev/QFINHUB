@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import { CalculatorLayout, CalculatorInput, CalculatorChart, ResultCard } from "..";
-import { formatCurrency, formatPercentage } from "@/lib/utils";
+import { formatCurrency} from "@/lib/utils";
 
 function calculateNPV(initialInvestment: number, cashFlows: number[], rate: number): number {
   let npv = initialInvestment;

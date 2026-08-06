@@ -1,8 +1,8 @@
  
 /* eslint-disable react/no-unescaped-entities */
 import { allCalculators } from "@/lib/calculators";
-import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";
-import type { CategoryType } from "@/types/calculator";
+import {} from "@/types/calculator";
+import type {} from "@/types/calculator";
 import type { Metadata } from "next";
 import { WidgetCard } from "./widget-card";
 

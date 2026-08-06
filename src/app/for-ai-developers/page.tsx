@@ -3,7 +3,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Code2, Link2, Puzzle, Brain, Globe, Download, Copy, ExternalLink } from "lucide-react";
-import { getCalculatorBySlug } from "@/lib/calculators";
+import {} from "@/lib/calculators";
 
 export const metadata: Metadata = {
   title: "For AI Developers — Embed Free Financial Calculators",

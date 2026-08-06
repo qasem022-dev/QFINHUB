@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type {} from "next";
 
 export interface LoanScenario {
   slug: string;
