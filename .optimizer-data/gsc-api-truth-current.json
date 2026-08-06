@@ -1,18 +1,18 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-07-30T15:00:59.197492+00:00",
-  "pulled_at": "2026-07-30T15:00:59Z",
+  "generated": "2026-08-06T13:42:13.314779+00:00",
+  "pulled_at": "2026-08-06T13:42:13Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "auth_method": "service_account",
   "service_account_email": "qfinhub-gsc-pipeline@qfinhub-indexing.iam.gserviceaccount.com",
   "date_range": {
-    "start": "2026-07-21",
-    "end": "2026-07-27"
+    "start": "2026-07-28",
+    "end": "2026-08-03"
   },
   "previous_7d_range": {
-    "start": "2026-07-14",
-    "end": "2026-07-20"
+    "start": "2026-07-21",
+    "end": "2026-07-27"
   },
   "dimensions_pulled": [
     "page",
@@ -21,19 +21,19 @@
   ],
   "row_limits": 500,
   "metrics_7d": {
-    "impressions": 962,
-    "clicks": 1,
-    "ctr_pct": 0.1,
-    "avg_position": 55.9,
-    "pages_with_impressions": 88,
-    "query_count": 324,
-    "query_impressions": 640,
-    "query_page_rows": 324
+    "impressions": 2000,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 59.4,
+    "pages_with_impressions": 119,
+    "query_count": 500,
+    "query_impressions": 1203,
+    "query_page_rows": 500
   },
   "metrics_28d": {
-    "impressions": 2527,
+    "impressions": 3960,
     "clicks": 2,
-    "pages_with_impressions": 130,
+    "pages_with_impressions": 164,
     "pages_with_clicks": 2,
     "clicked_pages": [
       "https://www.qfinhub.com/methodology",
@@ -41,17 +41,17 @@
     ]
   },
   "previous_7d": {
-    "start": "2026-07-14",
-    "end": "2026-07-20",
-    "impressions": 352
+    "start": "2026-07-21",
+    "end": "2026-07-27",
+    "impressions": 962
   },
   "change_7d": {
-    "impressions": 610,
-    "impressions_pct": 173.3
+    "impressions": 1038,
+    "impressions_pct": 107.9
   },
   "freshness_proof": {
     "freshness": "FRESH",
-    "checksum": "4207cbbd772a",
+    "checksum": "34a188028efc",
     "previous_checksum": null,
     "date_range_advanced": true,
     "cache_used": false,

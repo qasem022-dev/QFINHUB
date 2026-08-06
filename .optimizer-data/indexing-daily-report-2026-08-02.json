@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-02",
+  "generated": "2026-08-02T15:26:08Z",
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "4369f4b19463",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "pipeline": {
+    "date_range": {
+      "start": "2026-07-24",
+      "end": "2026-07-30"
+    },
+    "api_7d": {
+      "impressions": 1590,
+      "clicks": 1,
+      "position": null
+    },
+    "28d": {
+      "impressions": 3081,
+      "clicks": 2
+    }
+  },
+  "morning_diagnosis": {
+    "sample_size": 1900,
+    "wall_clock_seconds": 1515,
+    "category_counts": {
+      "ERROR": 8,
+      "DISCOVERED": 1461,
+      "UNKNOWN": 298,
+      "INDEXED": 126,
+      "CRAWLED_REJECTED": 7
+    },
+    "newly_indexed_organic": 126,
+    "unknown_to_discovered_transitions": 440,
+    "regressions": 0
+  },
+  "submissions_today": {
+    "total": 13,
+    "unique_urls": 13,
+    "results": {
+      "CLICKED_BUTTON": 11,
+      "REQUESTED \u2713": 2
+    },
+    "urls": [
+      "https://www.qfinhub.com/tools/tax-300k-head-of-household",
+      "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan",
+      "https://www.qfinhub.com/blog/retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net",
+      "https://www.qfinhub.com/tools/investment-50k-15yr",
+      "https://www.qfinhub.com/tools/tax-250k-head-of-household",
+      "https://www.qfinhub.com/blog/auto-loan-true-cost-calculator",
+      "https://www.qfinhub.com/calculators/debt-snowball",
+      "https://www.qfinhub.com/blog/fed-bank-mergers-approvals",
+      "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "https://www.qfinhub.com/calculators/auto-loan",
+      "https://www.qfinhub.com/calculators/financial-ratios",
+      "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "https://www.qfinhub.com/calculators/date-difference"
+    ]
+  },
+  "indexing_state": {
+    "queue": {
+      "indexed": 214,
+      "discovered": 266,
+      "unknown": 38,
+      "uninspected": 0,
+      "total_sitemap_urls": 304
+    },
+    "master_file": {
+      "indexed": 231,
+      "discovered": 314,
+      "unknown": 93,
+      "other": 21,
+      "crawled": 3,
+      "total": 662
+    }
+  },
+  "first_click_status": "preserved (2 clicks / 28d \u2014 milestone intact)",
+  "blockers": [],
+  "next_actions": [
+    "STEP B-pre removed 0 stale URLs (steady state held \u2014 pitfall #50)",
+    "Morning diagnosis cycle 1,900 URLs complete in 25m wall clock",
+    "13/13 CloakBrowser submissions succeeded",
+    "126 organic newly-indexed transitions detected \u2014 strongest single-day signal since cycling phase began",
+    "440 unknown\u2192discovered transitions = Google re-categorizing batch",
+    "First-click milestone preserved (2 clicks / 28d)"
+  ]
+}

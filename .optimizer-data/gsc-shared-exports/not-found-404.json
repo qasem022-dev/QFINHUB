@@ -1,11 +1,16 @@
 {
   "report_name": "not-found-404",
-  "url_count": 5,
+  "url_count": 10,
   "urls": [
-    "https://www.qfinhub.com/scenario/401k-50000-10pct-30yr",
-    "https://www.qfinhub.com/calculators/refinance/las-vegas-nv",
-    "https://www.qfinhub.com/scenario/mortgage-250k-30dp-40yr-6-5pct",
-    "https://www.qfinhub.com/scenario/mortgage-350k-15dp-15yr-5-0pct",
-    "https://www.qfinhub.com/calculators/refinance/phoenix-az"
+    "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+    "https://www.qfinhub.com/scenario/compound-interest-10000-5pct-15yr",
+    "https://www.qfinhub.com/scenario/compound-interest-500000-10pct-20yr-m1000",
+    "https://www.qfinhub.com/scenario/401k-200000-15pct-30yr",
+    "https://www.qfinhub.com/calculators/refinance/winston-salem-nc",
+    "https://www.qfinhub.com/da",
+    "https://www.qfinhub.com/scenario/mortgage-400k-3dp-40yr-8-5pct",
+    "https://www.qfinhub.com/scenario/compound-interest-500000-9pct-15yr-m100",
+    "https://www.qfinhub.com/scenario/compound-interest-25000-6pct-25yr-m250",
+    "https://www.qfinhub.com/scenario/mortgage-400k-25dp-20yr-8-5pct"
   ]
 }

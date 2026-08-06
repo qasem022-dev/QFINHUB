@@ -1,0 +1,54 @@
+{
+  "generated": "2026-08-05T13:55:35Z",
+  "site": "https://www.qfinhub.com/",
+  "reasons": {
+    "crawled": {
+      "label": "Crawled - currently not indexed",
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+        "https://www.qfinhub.com/blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap",
+        "https://www.qfinhub.com/blog/tax-tips-007-first-light-metacritic-smart-financial-planning",
+        "https://www.qfinhub.com/calculators/loan/columbus-oh",
+        "https://www.qfinhub.com/calculators/required-minimum-distribution",
+        "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan",
+        "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value",
+        "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+        "https://www.qfinhub.com/tools/emergency-fund-1-5k-1mo",
+        "https://www.qfinhub.com/tools/investment-150k-30yr"
+      ],
+      "source": "text_extraction"
+    },
+    "redirect": {
+      "label": "Page with redirect",
+      "count": 7,
+      "urls": [
+        "https://www.qfinhub.com/blog/what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+        "https://www.qfinhub.com/en",
+        "https://www.qfinhub.com/es",
+        "https://www.qfinhub.com/hi",
+        "https://www.qfinhub.com/tools/budget-25k-50-20-10",
+        "https://www.qfinhub.com/tools/mortgage-475k-30yr-6pct",
+        "https://www.qfinhub.com/tools/retirement-45-2M-5pct-800k?lang=fr"
+      ],
+      "source": "text_extraction"
+    },
+    "not_found": {
+      "label": "Not found (404)",
+      "count": 10,
+      "urls": [
+        "https://www.qfinhub.com/calculators/refinance/winston-salem-nc",
+        "https://www.qfinhub.com/da",
+        "https://www.qfinhub.com/scenario/401k-200000-15pct-30yr",
+        "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+        "https://www.qfinhub.com/scenario/compound-interest-10000-5pct-15yr",
+        "https://www.qfinhub.com/scenario/compound-interest-25000-6pct-25yr-m250",
+        "https://www.qfinhub.com/scenario/compound-interest-500000-10pct-20yr-m1000",
+        "https://www.qfinhub.com/scenario/compound-interest-500000-9pct-15yr-m100",
+        "https://www.qfinhub.com/scenario/mortgage-400k-25dp-20yr-8-5pct",
+        "https://www.qfinhub.com/scenario/mortgage-400k-3dp-40yr-8-5pct"
+      ],
+      "source": "text_extraction"
+    }
+  }
+}

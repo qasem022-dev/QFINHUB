@@ -85,6 +85,36 @@ export async function generateMetadata({ params }: CalculatorPageProps) {
       metaDesc: "Enter your income and filing status to estimate your 2026 federal tax bill in seconds. Compare tax brackets, deductions, and credits — free instant results.",
       ogDesc: "Enter your income to estimate your 2026 federal tax bill instantly. Compare tax brackets and deductions. Try it free — no signup needed.",
     },
+    "cash-flow": {
+      title: "Cash Flow Calculator: See Your Take-Home Pay by Month (2026)",
+      ogTitle: "Cash Flow Calculator | See Your Monthly Take-Home Pay",
+      metaDesc: "Track every dollar in and out of your business or household. See net cash flow, runway, and burn rate in seconds — free instant results, no signup.",
+      ogDesc: "Track every dollar in and out of your business or household. See net cash flow and burn rate instantly. Try it free — no signup, instant results.",
+    },
+    "monte-carlo-simulation": {
+      title: "Monte Carlo Simulation Calculator: Model 10,000 Market Scenarios (Free)",
+      ogTitle: "Monte Carlo Simulation | Model 10,000 Market Scenarios",
+      metaDesc: "Run a free Monte Carlo simulation on your portfolio. Model retirement outcomes with 10,000 random market paths — see success rate, worst case, and median. No signup.",
+      ogDesc: "Run a free Monte Carlo simulation on your portfolio. Model 10,000 market paths — see success rate, worst case, median. Try it free — no signup.",
+    },
+    "marginal-tax-rate": {
+      title: "Marginal Tax Rate Calculator — What You Really Pay on the Next Dollar (2026)",
+      ogTitle: "Marginal Tax Rate Calculator | What You Really Pay",
+      metaDesc: "Find your federal marginal tax bracket in seconds. See exactly what % you pay on the next dollar earned — by income, filing status, and 2026 brackets. Free.",
+      ogDesc: "Find your federal marginal tax bracket instantly. See exactly what % you pay on the next dollar. Try it free — no signup, instant results.",
+    },
+    "traditional-ira": {
+      title: "Traditional IRA Calculator — Deduction, Growth & Tax Owed at Withdrawal (2026)",
+      ogTitle: "Traditional IRA Calculator | Deduction, Growth & Tax at Withdrawal",
+      metaDesc: "See your Traditional IRA deduction, tax-deferred growth, and taxes owed at retirement. Compare 2026 contribution limits by age and income — free instant results.",
+      ogDesc: "See your Traditional IRA deduction, tax-deferred growth, and taxes at retirement. Compare 2026 limits by age. Try it free — no signup, instant results.",
+    },
+    "npv-calculator": {
+      title: "NPV Calculator — Net Present Value of Any Cash Flow Series (Free 2026)",
+      ogTitle: "NPV Calculator | Net Present Value of Any Cash Flow",
+      metaDesc: "Calculate the net present value of any investment or project. Enter up to 30 irregular cash flows and a discount rate — get NPV, IRR, and ROI. Free, no signup.",
+      ogDesc: "Calculate NPV of any investment or project. Enter up to 30 irregular cash flows and a discount rate — get NPV, IRR, ROI. Try it free — no signup.",
+    },
   };
 
   const ctr = ctrTitles[slug];

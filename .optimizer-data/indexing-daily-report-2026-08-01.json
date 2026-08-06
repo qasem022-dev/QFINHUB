@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-01",
+  "generated_at": "2026-08-01T15:13:49.980504+00:00",
+  "source": "URL Inspection API master + GSC submission log + Service Account pipeline",
+  "indexed_pages": 216,
+  "inspection_entries": 660,
+  "inspection_category_counts": {
+    "INDEXED": 216,
+    "DISCOVERED": 302,
+    "UNKNOWN": 118,
+    "OTHER": 24
+  },
+  "new_pages_indexed_today": null,
+  "pages_submitted_today": 4,
+  "submission_results": {
+    "CLICKED_BUTTON": 4,
+    "REQUESTED \u2713": 9
+  },
+  "gsc_7d": {
+    "impressions": 1415,
+    "clicks": 1,
+    "ctr_pct": 0.1,
+    "avg_position": 57.2,
+    "pages_with_impressions": 106,
+    "query_count": 441,
+    "query_impressions": 970,
+    "query_page_rows": 441
+  },
+  "freshness": {
+    "freshness": "FRESH",
+    "checksum": "895b90823bfb",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "notes": [
+    "Morning diagnosis exceeded the foreground timeout and was still running when report generation began; final diagnosis transitions are pending.",
+    "CloakBrowser completed 13 URL attempts; 13 URL entries were logged as REQUESTED/CLICKED_BUTTON-class successes, despite the script stdout counter showing 9/13."
+  ]
+}

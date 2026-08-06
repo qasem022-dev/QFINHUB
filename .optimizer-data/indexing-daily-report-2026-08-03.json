@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-03",
+  "generated": "2026-08-03T15:04:15Z",
+  "source": "QFINHUB daily GSC operations",
+  "data_status": "FRESH",
+  "indexed_pages": 231,
+  "inspection_master_entries": 662,
+  "newly_indexed_today": 0,
+  "unknown_to_discovered_today": 7,
+  "regressions_today": 0,
+  "inspected_today": 16,
+  "submitted_today": 13,
+  "submission_results": {
+    "CLICKED_BUTTON": 1,
+    "REQUESTED \u2713": 12
+  },
+  "gsc_metrics_7d": {
+    "impressions": 1674,
+    "clicks": 1,
+    "ctr_pct": 0.1,
+    "avg_position": 57.9,
+    "pages_with_impressions": 120,
+    "query_count": 500,
+    "query_impressions": 1140,
+    "query_page_rows": 500
+  },
+  "queue_counts": {
+    "INDEXED": 231,
+    "DISCOVERED": 317,
+    "UNKNOWN": 90,
+    "OTHER": 24
+  },
+  "issues": [
+    "Submission log records 12 REQUESTED \u2713 and 1 CLICKED_BUTTON; all 13 are successful UI submissions.",
+    "Inspection sample pool exhausted: 16 of target 25 URLs inspected."
+  ]
+}

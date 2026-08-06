@@ -1,0 +1,167 @@
+{
+  "generated": "2026-08-03T15:01:11Z",
+  "date": "2026-08-03",
+  "sample_size": 16,
+  "wall_clock_seconds": 13,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/calculators/moving-cost",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/gross-margin",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-55k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-200k-20yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/age-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/simple-interest",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-real-return",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/contact",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-snowball",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/college-savings",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-0k-100k-starter",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/fuel-cost",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/discount-calculator",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    }
+  ],
+  "newly_indexed": [],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/calculators/moving-cost",
+    "https://www.qfinhub.com/calculators/gross-margin",
+    "https://www.qfinhub.com/tools/tax-55k-single",
+    "https://www.qfinhub.com/tools/investment-200k-20yr",
+    "https://www.qfinhub.com/calculators/age-calculator",
+    "https://www.qfinhub.com/calculators/simple-interest",
+    "https://www.qfinhub.com/guides/how-to-calculate-real-return"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "DISCOVERED": 11,
+    "UNKNOWN": 5
+  }
+}

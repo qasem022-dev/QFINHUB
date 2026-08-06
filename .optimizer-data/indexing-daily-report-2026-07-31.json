@@ -1,0 +1,52 @@
+{
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T10:22:51",
+  "pipeline_status": {
+    "freshness": "FRESH",
+    "checksum": "9e339d7dd462",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "7d_metrics": {
+    "impressions": 1162,
+    "clicks": 1,
+    "avg_position": null,
+    "pages_with_impressions": null
+  },
+  "master_file_counts": {
+    "total_entries": 660,
+    "INDEXED": 216,
+    "DISCOVERED": 302,
+    "UNKNOWN": 118,
+    "REDIRECT": 1,
+    "CRAWLED_REJECTED": 3,
+    "OTHER": 20
+  },
+  "morning_diagnosis": {
+    "sample_size": 1266,
+    "wall_clock_seconds": 1015,
+    "newly_indexed_organic_count": 0,
+    "unknown_to_discovered_count": 475,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 995,
+      "UNKNOWN": 262,
+      "CRAWLED_REJECTED": 9
+    }
+  },
+  "submissions_today": {
+    "total_unique_urls": 13,
+    "daily_count": 13,
+    "daily_limit": 13
+  },
+  "queue_state": {
+    "indexed": 199,
+    "discovered": 254,
+    "unknown": 63,
+    "uninspected": 1
+  },
+  "live_sitemap_count": 517,
+  "master_file_ghosts": 143
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T15:39:17Z",
+  "status": "COMPLETE",
+  "gsc_data": {
+    "freshness": "FRESH",
+    "auth_method": "service_account",
+    "date_range": {
+      "start": "2026-07-26",
+      "end": "2026-08-01"
+    },
+    "metrics_7d": {
+      "impressions": 1851,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "avg_position": 58.8,
+      "pages_with_impressions": 118
+    },
+    "metrics_28d": {
+      "impressions": 3544,
+      "clicks": 2,
+      "pages_with_impressions": 159
+    }
+  },
+  "url_inspection": {
+    "inspected": 1266,
+    "wall_clock_seconds": 1297,
+    "newly_indexed_observations": 19,
+    "unknown_to_discovered_transitions": 515,
+    "regressions": 0,
+    "master_entries": 662,
+    "master_state_counts": {
+      "indexed": 232,
+      "discovered": 319,
+      "unknown": 87,
+      "other": 24
+    }
+  },
+  "gsc_ui_submission": {
+    "submitted_today": 13,
+    "unique_urls": 13,
+    "results": {
+      "CLICKED_BUTTON": 11,
+      "REQUESTED \u2713": 2
+    },
+    "session_status": "ACTIVE"
+  },
+  "issues_or_blockers": [],
+  "data_policy": "Raw GSC Search Analytics API metrics; no correction factor applied. URL Inspection API and GSC UI Request Indexing are reported separately. Google Indexing API was not used."
+}

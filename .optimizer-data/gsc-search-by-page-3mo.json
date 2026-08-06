@@ -1,0 +1,1780 @@
+{
+  "site": "https://www.qfinhub.com/",
+  "date_range": "2026-05-08 \u2192 2026-08-05",
+  "row_count": 253,
+  "total_clicks": 5,
+  "total_impressions": 6994,
+  "rows": [
+    {
+      "page": "https://www.qfinhub.com/",
+      "clicks": 1,
+      "impressions": 44,
+      "ctr": 0.022727272727272728,
+      "position": 2.9318181818181817
+    },
+    {
+      "page": "https://www.qfinhub.com/methodology",
+      "clicks": 1,
+      "impressions": 18,
+      "ctr": 0.05555555555555555,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-25k-10yr",
+      "clicks": 1,
+      "impressions": 14,
+      "ctr": 0.07142857142857142,
+      "position": 9.142857142857142
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct",
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 0.022222222222222223,
+      "position": 8.444444444444445
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-650k-15dp-30yr-6-5pct",
+      "clicks": 1,
+      "impressions": 31,
+      "ctr": 0.03225806451612903,
+      "position": 8.096774193548388
+    },
+    {
+      "page": "https://www.qfinhub.com/ai-specialist",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 47.09090909090909
+    },
+    {
+      "page": "https://www.qfinhub.com/all-pages",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 6.518518518518518
+    },
+    {
+      "page": "https://www.qfinhub.com/blog",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 26.384615384615383
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/20000-loan-at-8-percent-for-5-years-monthly-payment",
+      "clicks": 0,
+      "impressions": 410,
+      "ctr": 0,
+      "position": 11.653658536585366
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/2027-social-security-cola-forecast-jumps-to-3-9-what-retirees-need-to-know-now",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/30-year-treasury-yield-hits-1999-levels-how-to-protect-your-savings-and-retireme",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.25
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 11.75
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/blackrock-s-saigal-sees-fed-rate-cut-ahead-what-it-means-for-your-mortgage-and-s",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 8.3125
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/complete-guide-to-retirement-planning-2026",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 43.77777777777778
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/compound-interest-explained",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 24.444444444444443
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/ecb-rate-hike-impact-on-mortgages-how-to-protect-your-finances",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 11.2
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-and-your-mortgage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-and-your-savings-investments",
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 50.979166666666664
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-and-your-savings-investments?lang=fr",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 54.25
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-chair-change-how-powell-s-pro-tempore-role-and-warsh-s-appointment-could-imp",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-enforcement-action-at-united-bank-what-it-means-for-your-mortgage-and-person",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.4
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-enforcement-actions",
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 25.53488372093023
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fed-minutes-april-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 17.5
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/federal-reserve-operations-update-how-waller-s-speech-impacts-your-mortgage-affo",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 11.2
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/fomc-rate-decisions-explained",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 32.10526315789474
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/gold-inches-up-amid-iran-deal-uncertainty-and-inflation-fears-how-to-protect-you",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 6.857142857142857
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/housing-affordability-breakthrough-how-new-policies-could-make-homeownership-acc",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/how-to-calculate-monthly-mortgage-payment",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 13.818181818181818
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/how-to-pay-off-credit-card-debt-fast-2026-proven-strategies",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 20.333333333333332
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 16.391304347826086
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/if-you-borrow-20-000-for-5-years-at-8-apr-whats-your-monthly-payment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/investing-cybersecurity-stocks-are-surging-one-looks-promising-into-earnings",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/investing-here-is-why-nrx-pharmaceuticals-nrxp-is-a-top-penny-stock-pick",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 9.833333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/investing-resurgent-political-risk-derails-emerging-market-rallies",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 32.5
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/investment-calculator-withdrawals",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 33.666666666666664
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/jeff-bezos-proposes-zero-income-tax-for-bottom-half-of-earners-what-it-means-for",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 12.76923076923077
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/mexico-inflation-slows-in-may-what-it-means-for-your-mortgage-and-finances",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/monthly-mortgage-payment-formula-tax-insurance",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 66.9375
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/mortgage-rates-2025-borderline-desperate-buyers-winning-bidding-wars",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/mortgage-rates-june-2026-current-rates-home-affordability-calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/new-federal-housing-funding-what-it-means-for-your-mortgage-and-rental-budget",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 32.5
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 7.894736842105263
+    },
+    {
+      "page": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 11.833333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 24.391304347826086
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/401k-calculator",
+      "clicks": 0,
+      "impressions": 233,
+      "ctr": 0,
+      "position": 71.16309012875537
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/annuity-calculator",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 15.6
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/arm-calculator",
+      "clicks": 0,
+      "impressions": 69,
+      "ctr": 0,
+      "position": 67.73913043478261
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/budget-planner",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 42.925925925925924
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/cash-flow",
+      "clicks": 0,
+      "impressions": 212,
+      "ctr": 0,
+      "position": 65.48113207547169
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/compound-interest",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 7.166666666666667
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/dcf-analysis",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 55.142857142857146
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/debt-payoff",
+      "clicks": 0,
+      "impressions": 235,
+      "ctr": 0,
+      "position": 70.9063829787234
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/em-fund",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 50.8
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/estate-tax",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 69.04545454545455
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/home-equity",
+      "clicks": 0,
+      "impressions": 180,
+      "ctr": 0,
+      "position": 74.7611111111111
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/inventory-turnover",
+      "clicks": 0,
+      "impressions": 166,
+      "ctr": 0,
+      "position": 63.825301204819276
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/investment-return",
+      "clicks": 0,
+      "impressions": 646,
+      "ctr": 0,
+      "position": 70.85448916408669
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/irr-calculator",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 67.04
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/lifetime-value",
+      "clicks": 0,
+      "impressions": 94,
+      "ctr": 0,
+      "position": 70.23404255319149
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/loan-calculator",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 12.090909090909092
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/loan/nashville-tn",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/loan/reno-nv",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/marginal-tax-rate",
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 46.58139534883721
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/monte-carlo-simulation",
+      "clicks": 0,
+      "impressions": 135,
+      "ctr": 0,
+      "position": 50.8
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/mortgage-affordability",
+      "clicks": 0,
+      "impressions": 432,
+      "ctr": 0,
+      "position": 83.40046296296296
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/mortgage-calculator",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 9.636363636363637
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/mortgage-payoff",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/net-profit-margin",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 67.61111111111111
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/npv-calculator",
+      "clicks": 0,
+      "impressions": 58,
+      "ctr": 0,
+      "position": 68.36206896551724
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/operating-margin",
+      "clicks": 0,
+      "impressions": 118,
+      "ctr": 0,
+      "position": 76.51694915254237
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/payback-period",
+      "clicks": 0,
+      "impressions": 88,
+      "ctr": 0,
+      "position": 44.63636363636363
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/percentage-calculator",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 9.583333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/personal-loan",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 73.3
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/rent-vs-buy",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 3.6
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/rent-vs-buy/orlando-fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/required-minimum-distribution",
+      "clicks": 0,
+      "impressions": 161,
+      "ctr": 0,
+      "position": 67.88819875776397
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/retirement-income",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 68.71428571428571
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/retirement-planning",
+      "clicks": 0,
+      "impressions": 123,
+      "ctr": 0,
+      "position": 82.1219512195122
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/retirement-withdrawal",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/savings-goal",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/side-hustle-calculator",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax-calculator",
+      "clicks": 0,
+      "impressions": 672,
+      "ctr": 0,
+      "position": 79.2827380952381
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/tax/philadelphia-pa",
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 22.69811320754717
+    },
+    {
+      "page": "https://www.qfinhub.com/calculators/traditional-ira",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 45.833333333333336
+    },
+    {
+      "page": "https://www.qfinhub.com/compare/best-investment-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 102.33333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 27.63157894736842
+    },
+    {
+      "page": "https://www.qfinhub.com/compare/compare-dollar-cost-average-vs-lump-sum",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.125
+    },
+    {
+      "page": "https://www.qfinhub.com/compare/compare-loan-calculator-vs-amortization-schedule",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66.33333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/cookies",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 2.166666666666667
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/401k-vs-taxable-investing",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/can-i-afford-a-400k-home",
+      "clicks": 0,
+      "impressions": 217,
+      "ctr": 0,
+      "position": 57.57142857142857
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/how-much-do-i-need-to-retire",
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0,
+      "position": 48.20253164556962
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/how-much-emergency-fund-do-i-need",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/how-much-house-can-i-afford",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 8.142857142857142
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest",
+      "clicks": 0,
+      "impressions": 129,
+      "ctr": 0,
+      "position": 31.953488372093023
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/pay-off-debt-or-invest?lang=en",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/pay-off-student-loans-or-invest",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 18.307692307692307
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 8.521739130434781
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/retire-at-45-with-1-million",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 28.666666666666668
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/roth-vs-traditional-401k-decision",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/should-i-refinance-my-mortgage?lang=en",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/should-i-use-a-heloc-or-personal-loan",
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 82.04761904761905
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/snowball-vs-avalanche-which-wins",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 80.28571428571429
+    },
+    {
+      "page": "https://www.qfinhub.com/decision/what-tax-bracket-am-i-in",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 69.83333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/disclaimer",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.333333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/editorial-policy",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 3.2
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-calculate-cagr",
+      "clicks": 0,
+      "impressions": 102,
+      "ctr": 0,
+      "position": 79.04901960784314
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-child-care-cost",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-fraction-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-loan-comparison",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 3.7142857142857144
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-marginal-tax-rate",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 79.33333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-mortgage-affordability",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-mortgage-calculator",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 60.56521739130435
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-overtime-calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-portfolio-allocator",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 66.28571428571429
+    },
+    {
+      "page": "https://www.qfinhub.com/guides/how-to-use-retirement-income",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 59.27272727272727
+    },
+    {
+      "page": "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 45.77777777777778
+    },
+    {
+      "page": "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.75
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/401k-75000-10pct-10yr",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 8.25
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-2a9cffb2",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 1.7333333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-2eac6960",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-86e31b82",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-97e4d503",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-ac3ddd84",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-bc834ee2",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 4.166666666666666
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/auto-loan-dec26d83",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/budget-planner-db94310d",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/budget-planner-f43db238",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-1000-10pct-15yr-m1000",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 8.947368421052632
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-1000-7pct-15yr-m500",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-1000-8pct-20yr-m250",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-10000-5pct-15yr",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-100000-10pct-10yr-m500",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-100000-10pct-15yr-m250",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 8.875
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-25000-7pct-15yr-m1000",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-250000-3pct-30yr-m2000",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-250000-6pct-20yr-m2000",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 18.428571428571427
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-5000-8pct-30yr-m1000",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-50000-4pct-25yr-m1000",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/compound-interest-500000-10pct-15yr-m500",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/debt-payoff-5b3809a6",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/debt-payoff-6e21c1c1",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/debt-payoff-c91e3eaf",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/debt-payoff-e860e4b1",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/mortgage-1000k-15dp-10yr-6-5pct",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/mortgage-400k-25dp-20yr-8-5pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/mortgage-450k-3dp-15yr-8-0pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/mortgage-450k-5dp-20yr-7-5pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/mortgage-750k-25dp-20yr-8-0pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/mortgage-750k-5dp-20yr-7-0pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-18581987",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-4cd08066",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-5c0e8e25",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.2
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-6c28f1fb",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 12.5
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-7c0895d9",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.666666666666667
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-965ef0a4",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-c0b59ed1",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "page": "https://www.qfinhub.com/scenario/retirement-planning-ddd44764",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/terms",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 2.571428571428571
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/401k-50k-1000mo-7pct-25yr",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 16.333333333333336
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/afford-100k-40k-6-5pct",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 94.0952380952381
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/afford-130k-40k-7pct",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/afford-400k-250k-6pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/afford-45k-10k-7pct",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66.33333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/budget-150k-35-8-5",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/budget-65k-zero-based",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/budget-70k-30-13-9",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/cc-10k-29pct-350mo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/cc-15k-14pct-500mo",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 43.666666666666664
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/cc-5k-0pct-150mo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/cc-5k-15pct-200mo",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-100k-20yr-5pct",
+      "clicks": 0,
+      "impressions": 142,
+      "ctr": 0,
+      "position": 9.873239436619718
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-150k-10yr-5pct",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 8.885714285714286
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-1k-30yr-6pct",
+      "clicks": 0,
+      "impressions": 94,
+      "ctr": 0,
+      "position": 7.085106382978723
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-1k-5yr-5pct-daily",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.666666666666667
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/compound-500k-15yr-5pct",
+      "clicks": 0,
+      "impressions": 96,
+      "ctr": 0,
+      "position": 9.791666666666666
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/debt-5k-15pct-250mo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/dti-40k-high",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/dti-55k-car-buyer",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 51.666666666666664
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/emergency-fund-4k-6mo",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/emergency-fund-6k-6mo",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 65.02941176470588
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/fi-15k-lean-extreme",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/fi-40k-60pct-save",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 82.66666666666667
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/fi-55k-dual-55pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/fire-35k-geo-arb",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/fire-40k-lean-800k",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 38.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/fire-80k-fat-fire-2M",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-100k-20yr",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-100k-3yr",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 23.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-100k-7yr",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-150k-15yr",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-150k-30yr",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 34.44444444444444
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-1M-10yr",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-1k-10yr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-1k-3yr",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 44.666666666666664
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-1k-5yr",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 10.25
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-25k-5yr",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 11.076923076923077
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-2M-10yr",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-3M-20yr",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 33
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-500-3yr",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 10.476190476190476
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-500k-3yr-loss",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 35.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-500k-7yr",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-50k-15yr-1000mo",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 20.666666666666668
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-50k-3yr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-5M-10yr",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 11.666666666666666
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-600k-12yr",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 19.333333333333332
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/investment-75k-15yr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-150k-15yr-9pct",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 26.333333333333332
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-175k-20yr-6pct",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-20k-5yr-8pct",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 14.82857142857143
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-250k-25yr-8pct",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 20.857142857142858
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-2k-1yr-6pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-30k-5yr-6pct",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 10.928571428571429
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-3k-2yr-24pct",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-500k-20yr-6pct",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/loan-95k-12yr-7-5pct",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 46.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-150k-3dp-30yr-7-5pct",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 5.190476190476191
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-200k-15yr-5-5pct",
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 8.145833333333332
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-200k-30yr-6pct",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 11.233333333333333
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/mortgage-900k-30yr-7pct",
+      "clicks": 0,
+      "impressions": 50,
+      "ctr": 0,
+      "position": 7.44
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/net-worth-60s-retire",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/net-worth-real-estate",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 95.66666666666667
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/pv-2M-30yr-4pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/refi-320k-6to4-5pct-25yr",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/retirement-30-0-6pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/retirement-35-100k-6pct",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/retirement-40-0-8pct",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/retirement-55-0-8pct",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 73.25
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/roth-ira-200k-0mo-8pct-25yr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/savings-25k-1000mo-5pct",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-110k-single",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 46.8
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-120k-married-separate",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-125k-head-of-household",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 11.333333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-150k-married-separate",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-150k-single",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 70.55555555555556
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-175k-head-of-household",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-180k-married-joint",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 10.818181818181818
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-1M-married-joint",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-200k-married-separate",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 25.4
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-20k-single",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 17.25
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-2M-single",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 14.083333333333334
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-350k-married-separate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-500k-head-of-household",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-750k-single",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 17.8
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-80k-married-separate",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66.5
+    },
+    {
+      "page": "https://www.qfinhub.com/tools/tax-85k-head-of-household",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 29.5
+    },
+    {
+      "page": "https://www.qfinhub.com/widgets/mortgage-affordability-embed",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 27
+    }
+  ]
+}

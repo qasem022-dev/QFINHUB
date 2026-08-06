@@ -1,7 +1,13 @@
 {
   "report_name": "page-with-redirect",
-  "url_count": 1,
+  "url_count": 7,
   "urls": [
-    "https://www.qfinhub.com/hi"
+    "https://www.qfinhub.com/en",
+    "https://www.qfinhub.com/es",
+    "https://www.qfinhub.com/hi",
+    "https://www.qfinhub.com/blog/what-the-fed-s-bank-employee-enforcement-actions-mean-for-your-mortgage-and-mone",
+    "https://www.qfinhub.com/tools/retirement-45-2M-5pct-800k?lang=fr",
+    "https://www.qfinhub.com/tools/budget-25k-50-20-10",
+    "https://www.qfinhub.com/tools/mortgage-475k-30yr-6pct"
   ]
 }

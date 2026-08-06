@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-05",
+  "generated": "2026-08-05T15:05:39Z",
+  "phase": "Phase 38 Daily Operations",
+  "step_0_preflight": {
+    "gsc_quota_used": 13,
+    "gsc_quota_limit": 13,
+    "morning_work_pre_existing": false,
+    "late_day_retrigger": false
+  },
+  "step_1_pipeline": {
+    "status": "success",
+    "freshness": "FRESH",
+    "api_imp_7d": 1980,
+    "api_clicks_7d": 0,
+    "api_position_7d": 59.3,
+    "pages_with_imp_7d": 120,
+    "date_range": {
+      "start": "2026-07-27",
+      "end": "2026-08-02"
+    }
+  },
+  "step_2_morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 26,
+    "newly_indexed_count": 1,
+    "unknown_to_discovered_count": 6,
+    "regressions_count": 0,
+    "category_counts": {
+      "UNKNOWN": 6,
+      "DISCOVERED": 17,
+      "INDEXED": 1,
+      "CRAWLED_REJECTED": 1
+    }
+  },
+  "step_3_cloakbrowser_submissions": {
+    "submitted_today": 13,
+    "successful": 13,
+    "failed": 0,
+    "by_category": {
+      "UNKNOWN": 8,
+      "DISCOVERED": 5
+    },
+    "results_breakdown": {
+      "REQUESTED \u2713": 5,
+      "CLICKED_BUTTON": 8
+    }
+  },
+  "indexing_state": {
+    "indexed": 233,
+    "discovered": 325,
+    "unknown": 81,
+    "crawled_rejected": 3,
+    "master_total": 663,
+    "live_sitemap": 520
+  },
+  "issues": [],
+  "notes": [
+    "Morning diagnosis used sample_size=25 (safe budget per pitfall #71)",
+    "1 newly indexed + 6 unknown\u2192discovered transitions + 0 regressions",
+    "All 13 CloakBrowser submissions successful (5 UNKNOWN + 8 DISCOVERED)",
+    "Queue in steady state (0 stale URLs removed in STEP B-pre)"
+  ]
+}

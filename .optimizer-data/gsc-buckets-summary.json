@@ -1,0 +1,81 @@
+{
+  "total_inspected": 664,
+  "buckets": [
+    {
+      "reason": "Discovered - currently not indexed",
+      "count": 331
+    },
+    {
+      "reason": "Excluded by 'noindex' tag",
+      "count": 0
+    },
+    {
+      "reason": "Crawled - currently not indexed",
+      "count": 3
+    },
+    {
+      "reason": "Page with redirect",
+      "count": 1
+    },
+    {
+      "reason": "Duplicate without user-selected canonical",
+      "count": 0
+    },
+    {
+      "reason": "Duplicate, Google chose different canonical than user",
+      "count": 0
+    },
+    {
+      "reason": "Alternate page with proper canonical tag",
+      "count": 0
+    },
+    {
+      "reason": "Not found (404)",
+      "count": 0
+    },
+    {
+      "reason": "Submitted and indexed",
+      "count": 234
+    },
+    {
+      "reason": "URL is unknown to Google",
+      "count": 75
+    },
+    {
+      "reason": "OTHER",
+      "count": 20
+    }
+  ],
+  "files_written": [
+    {
+      "reason": "Discovered - currently not indexed",
+      "count": 331,
+      "path": "/home/admin1/qfinhub/.optimizer-data/gsc-bucket-discovered---currently-not-indexed.json"
+    },
+    {
+      "reason": "Crawled - currently not indexed",
+      "count": 3,
+      "path": "/home/admin1/qfinhub/.optimizer-data/gsc-bucket-crawled---currently-not-indexed.json"
+    },
+    {
+      "reason": "Page with redirect",
+      "count": 1,
+      "path": "/home/admin1/qfinhub/.optimizer-data/gsc-bucket-page-with-redirect.json"
+    },
+    {
+      "reason": "Submitted and indexed",
+      "count": 234,
+      "path": "/home/admin1/qfinhub/.optimizer-data/gsc-bucket-submitted-and-indexed.json"
+    },
+    {
+      "reason": "URL is unknown to Google",
+      "count": 75,
+      "path": "/home/admin1/qfinhub/.optimizer-data/gsc-bucket-url-is-unknown-to-google.json"
+    },
+    {
+      "reason": "OTHER",
+      "count": 20,
+      "path": "/home/admin1/qfinhub/.optimizer-data/gsc-bucket-other.json"
+    }
+  ]
+}

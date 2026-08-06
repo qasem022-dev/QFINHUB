@@ -1,6 +1,24 @@
 {
   "day": 9,
-  "upvoted": [],
+  "upvoted": [
+    "r/realestateinvesting",
+    "r/realestateinvesting",
+    "r/realestateinvesting",
+    "r/tax",
+    "r/tax",
+    "r/tax",
+    "r/tax",
+    "r/tax",
+    "r/tax",
+    "r/realestateinvesting",
+    "r/realestateinvesting",
+    "r/realestateinvesting",
+    "r/Economics",
+    "r/creditcards",
+    "r/studentloans",
+    "r/studentloans",
+    "r/studentloans"
+  ],
   "joined": [
     "personalfinance",
     "FIRE",
@@ -11,12 +29,42 @@
     "debtfree",
     "povertyfinance"
   ],
-  "commented": [],
+  "commented": [
+    {
+      "sub": "debtfree",
+      "text": "Good question \u2014 I've been looking into t"
+    },
+    {
+      "sub": "debtfree",
+      "text": "This is solid advice. Tracking every exp"
+    },
+    {
+      "sub": "debtfree",
+      "text": "This is solid advice. Tracking every exp"
+    },
+    {
+      "sub": "debtfree",
+      "text": "I had the same question. The 28/36 rule "
+    },
+    {
+      "sub": "debtfree",
+      "text": "This helped me a lot when I was starting"
+    },
+    {
+      "sub": "debtfree",
+      "text": "Solid advice. Automating savings was the"
+    },
+    {
+      "sub": "debtfree",
+      "text": "Great breakdown. The psychological aspec"
+    }
+  ],
   "saved": [
     "r/realestate",
     "r/investing",
     "r/investing"
   ],
   "posts_made": [],
-  "last_run": "2026-05-31T13:08:16.969309"
+  "last_run": "2026-08-05T16:03:25.352360",
+  "karma_estimate": 1
 }

@@ -1,0 +1,14 @@
+{
+  "buckets": {
+    "Discovered - currently not indexed": 331,
+    "Excluded by 'noindex' tag": 0,
+    "Crawled - currently not indexed": 3,
+    "Page with redirect": 1,
+    "Alternate page with proper canonical tag": 0,
+    "Not found (404)": 0,
+    "Submitted and indexed": 234,
+    "URL is unknown to Google": 312,
+    "OTHER": 20
+  },
+  "total": 901
+}

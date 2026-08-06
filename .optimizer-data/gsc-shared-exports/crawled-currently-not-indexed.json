@@ -1,11 +1,16 @@
 {
   "report_name": "crawled-currently-not-indexed",
-  "url_count": 5,
+  "url_count": 10,
   "urls": [
-    "https://www.qfinhub.com/guides/how-to-use-social-security",
-    "https://www.qfinhub.com/scenario/auto-loan-92918ea9",
-    "https://www.qfinhub.com/scenario/auto-loan-717d83b1",
-    "https://www.qfinhub.com/scenario/retirement-planning-eb1dd78b",
-    "https://www.qfinhub.com/favicon.ico"
+    "https://www.qfinhub.com/blog/banks-start-6-2-billion-warner-bros-debt-cleanup-before-merger-what-it-means-for",
+    "https://www.qfinhub.com/calculators/required-minimum-distribution",
+    "https://www.qfinhub.com/compare/compare-auto-loan-vs-personal-loan",
+    "https://www.qfinhub.com/loan-scenarios/good-credit-loan-20000-8-percent",
+    "https://www.qfinhub.com/tools/investment-150k-30yr",
+    "https://www.qfinhub.com/tools/emergency-fund-1-5k-1mo",
+    "https://www.qfinhub.com/blog/investing-europe-s-vc-market-is-splitting-ai-drives-the-gap",
+    "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value",
+    "https://www.qfinhub.com/blog/tax-tips-007-first-light-metacritic-smart-financial-planning",
+    "https://www.qfinhub.com/calculators/loan/columbus-oh"
   ]
 }
