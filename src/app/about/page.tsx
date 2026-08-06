@@ -515,6 +515,19 @@ export default function AboutPage() {
 
         {/* Disclaimer */}
         <YMYLDisclaimer />
+
+        {/* Last updated */}
+        <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+            <strong>Last updated:</strong>{" "}
+            {new Date().toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}{" "}
+            · Maintained by Qasem Mohammed, Founder of QFINHUB
+          </p>
+        </div>
       </div>
     </div>
   );

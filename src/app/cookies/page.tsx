@@ -355,7 +355,12 @@ export default function CookiePolicyPage() {
             How QFINHUB uses cookies and similar technologies
           </p>
           <p className="mt-4 text-sm text-gray-400">
-            Last Updated: May 9, 2026
+            Last Updated:{" "}
+            {new Date().toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
           </p>
         </div>
       </section>

@@ -458,7 +458,12 @@ export default function PrivacyPage() {
             How QFINHUB collects, uses, and protects your data
           </p>
           <p className="mt-4 text-sm text-gray-400">
-            Last Updated: May 15, 2026
+            Last Updated:{" "}
+            {new Date().toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
           </p>
         </div>
       </section>

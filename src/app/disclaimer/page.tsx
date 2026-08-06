@@ -18,7 +18,12 @@ export default function DisclaimerPage() {
         Disclaimer
       </h1>
       <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-        Last updated: July 15, 2026
+        Last updated:{" "}
+        {new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
       </p>
 
       <div className="mt-8 space-y-6 text-gray-700 dark:text-gray-300">
