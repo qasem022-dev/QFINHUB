@@ -5,7 +5,7 @@
 import type { CalculatorVariant } from "./types";
 import {getAllTemplates } from "./variant-templates";
 import {
-  generateVariantSlug,
+
   generateMetaTitle,
   generateMetaDescription,
   generateIntroParagraph,
@@ -555,7 +555,6 @@ function getKeyConsiderations(
     case "retirement-planning": {
       const age = params.currentAge;
       const inc = params.currentIncome;
-      const sv = params.currentSavings;
       return (
         `- **Start Early**: Starting at age ${age} gives your investments decades to compound. Time is your greatest asset in retirement planning.\n` +
         `- **Income Replacement**: Financial planners typically recommend targeting 70-80% of your pre-retirement income in retirement. Your current income of ${fmt(inc)} means targeting ${fmt(inc * 0.75)} per year in retirement income.\n` +
@@ -565,7 +564,6 @@ function getKeyConsiderations(
       );
     }
     case "tax-calculator": {
-      const inc = params.income;
       return (
         `- **Standard Deduction**: The standard deduction reduces your taxable income. For 2026, this is $15,000 for single filers and $30,000 for married filing jointly.\n` +
         `- **Marginal vs Effective Rate**: Your marginal tax rate applies to your last dollar earned, but your effective tax rate (total tax / total income) is typically much lower due to progressive brackets and deductions.\n` +
@@ -594,8 +592,7 @@ function getKeyConsiderations(
       );
     }
     case "debt-to-income": {
-      const inc = params.income ?? 50000;
-      const dti = params.dti ?? 36;
+      const _dti = params.dti ?? 36;
       return (
         `- **Lender Thresholds**: Most conventional loans require DTI ≤ 43%. FHA allows up to 50%, and VA loans don't have a hard cap but prefer ≤ 41%.\n` +
         `- **Front-End vs Back-End**: Front-end ratio (housing only) ≤ 28% is preferred; back-end ratio (housing + all other debts) ≤ 36% is the traditional benchmark.\n` +
@@ -627,7 +624,6 @@ function getKeyConsiderations(
       );
     }
     case "net-worth": {
-      const nw = (params.totalAssets ?? 250000) - (params.totalLiabilities ?? 100000);
       return (
         `- **Liquid vs Illiquid Assets**: A high net worth tied up in home equity is different from the same number in cash or stocks. Liquidity matters for resilience.\n` +
         `- **Negative Net Worth Is Common**: Most Americans under 35 have negative net worth due to student loans. Recovery is the goal, not instantaneous profitability.\n` +
@@ -674,10 +670,8 @@ function getKeyConsiderations(
       );
     }
     case "401k-calculator": {
-      const inc = params.salary ?? 75000;
-      const contrib = params.contributionPercent ?? 6;
-      const match = params.employerMatch ?? 50;
-      const annualMatch = Math.min(inc * 0.06 * match / 100, inc * match * 0.06 / 100);
+      const _inc = params.salary ?? 75000;
+      const _match = params.employerMatch ?? 50;
       return (
         `- **Always Capture the Full Match**: Contributing at least enough to get your employer's full match is a 50-100% instant return with zero risk. Skipping it is leaving free money on the table.\n` +
         `- **2026 Contribution Limits**: $24,500/year for under-50 employees; $32,500 for 50+ (includes $7,500 catch-up).\n` +
@@ -687,7 +681,6 @@ function getKeyConsiderations(
       );
     }
     case "annuity-calculator": {
-      const yrs = params.years ?? 20;
       return (
         `- **Immediate vs Deferred**: Immediate annuities start paying out now; deferred annuities accumulate first. Deferred is more common for retirement planning.\n` +
         `- **Fixed vs Variable**: Fixed annuities guarantee a payment; variable payments depend on investment performance. Fixed means predictable income at the cost of upside.\n` +
@@ -698,7 +691,7 @@ function getKeyConsiderations(
     }
     case "auto-loan": {
       const term = params.term ?? 60;
-      const rate = params.rate ?? 6.5;
+      const _rate = params.rate ?? 6.5;
       return (
         `- **Loan Term Length**: ${term} months (${(term / 12).toFixed(1)} years). 60 months is standard; 72+ months stretch payments but balloon interest costs.\n` +
         `- **New vs Used Rates**: New car loans typically run 0.5-1.5% below used car loans because depreciation favors new vehicles as collateral.\n` +
@@ -729,7 +722,7 @@ function getKeyConsiderations(
       );
     }
     case "debt-payoff": {
-      const debts = params.debts ?? 15000;
+      const _debts = params.debts ?? 15000;
       const rate = params.rate ?? 8;
       return (
         `- **Order Matters**: Pay highest-rate debt first (avalanche) or smallest-balance first (snowball). Same total, different psychological impact.\n` +
@@ -740,8 +733,6 @@ function getKeyConsiderations(
       );
     }
     case "roth-ira": {
-      const inc = params.income ?? 75000;
-      const yrs = params.years ?? 30;
       return (
         `- **Income Limits**: Roth IRA contributions phase out at ${fmt(153000)}-${fmt(168000)} MAGI for single filers in 2026; ${fmt(240000)}-${fmt(258000)} for married filing jointly. Above the limit, you can use a backdoor Roth.\n` +
         `- **Backdoor Roth**: High earners contribute to a non-deductible Traditional IRA, then convert to Roth. No income limit; watch the pro-rata rule if you have other pre-tax IRA money.\n` +
@@ -762,8 +753,6 @@ function getKeyConsiderations(
       );
     }
     case "mortgage-affordability": {
-      const inc = params.annualIncome ?? 80000;
-      const dp = params.downPayment ?? 20000;
       return (
         `- **28/36 Rule**: Lenders prefer housing ≤ 28% of gross income (front-end) and total debt ≤ 36% (back-end). FHA allows up to 50% back-end.\n` +
         `- **Income Type**: Salaried income is most lender-friendly. Self-employed, commissioned, and variable-income need 2-year averages and reserve documentation.\n` +
@@ -773,8 +762,7 @@ function getKeyConsiderations(
       );
     }
     case "refinance-calculator": {
-      const curRate = params.currentRate ?? 7;
-      const newRate = params.newRate ?? 6;
+      const _newRate = params.newRate ?? 6;
       return (
         `- **Break-Even Period**: Compare total closing costs to monthly savings. If break-even is 24+ months and you won't keep the loan that long, refinancing doesn't pay.\n` +
         `- **Closing Costs**: Typical refi closing costs are 2-5% of the loan amount (${fmt((params.currentBalance ?? 250000) * 0.03)} on a $250k loan). Some lenders offer no-closing-cost refis as a higher rate.\n` +
@@ -784,7 +772,6 @@ function getKeyConsiderations(
       );
     }
     case "future-value": {
-      const yrs = params.years ?? 20;
       return (
         `- **Compound Growth**: Future value grows exponentially with time. Doubling the time horizon more than doubles the future value due to compounding.\n` +
         `- **Real vs Nominal**: Future value calculations typically use nominal returns. Subtract inflation (3% historical) to get purchasing power in today's dollars.\n` +
@@ -794,7 +781,6 @@ function getKeyConsiderations(
       );
     }
     case "present-value": {
-      const yrs = params.years ?? 10;
       return (
         `- **Discount Rate Sensitivity**: A higher discount rate reduces present value. If you're more risk-averse, use a higher discount rate.\n` +
         `- **Inflation-Adjusted**: When future values are already inflation-adjusted, use a real (after-inflation) discount rate. With non-adjusted values, use nominal rates.\n` +
