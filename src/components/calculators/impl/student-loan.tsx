@@ -51,7 +51,7 @@ export default function StudentLoanCalculator() {
     totalInterestPaid = totalPaid - safeLoan;
   }
 
-  const monthlyDisplay = useCustom ? customPayment : standardPayment;
+  const _monthlyDisplay = useCustom ? customPayment : standardPayment;
   const isUnpaid = useCustom && payoffMonths >= 600;
 
   // Build chart data

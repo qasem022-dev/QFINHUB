@@ -40,7 +40,7 @@ export default function MortgageCalculator() {
   const hasPMI = safeDownPct < 20 && loanAmount > 0;
   const pmiRate = hasPMI ? (loanAmount * 0.005) / 12 : 0;
   const totalMonthly = pAndI + monthlyTaxes + monthlyInsurance + pmiRate;
-  const totalPayment = totalMonthly * termMonths;
+  const _totalPayment = totalMonthly * termMonths;
   const totalInterest = (pAndI * termMonths) - loanAmount;
 
   const pieData = [

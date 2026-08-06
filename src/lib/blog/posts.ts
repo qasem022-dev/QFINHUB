@@ -9,7 +9,7 @@ export interface BlogPost {
   relatedCalculators: string[];
 }
 
-const baseUrl = "https://www.qfinhub.com";
+const _baseUrl = "https://www.qfinhub.com";
 
 export const blogPosts: BlogPost[] = [
   {

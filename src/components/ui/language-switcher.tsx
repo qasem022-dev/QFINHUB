@@ -113,7 +113,7 @@ export function LanguageSwitcherMobile({
   className?: string;
 }) {
   const { t, locale, setLocale } = useTranslation();
-  const currentLang = getLanguageInfo(locale);
+  const _currentLang = getLanguageInfo(locale);
 
   return (
     <div className={cn("space-y-1", className)}>

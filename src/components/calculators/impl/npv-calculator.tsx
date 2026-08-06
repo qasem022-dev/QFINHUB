@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect, react-hooks/purity, react-hooks/immutability */
+/* eslint-disable react-hooks/immutability */
 "use client";
 
 import * as React from "react";

@@ -38,7 +38,7 @@ export default function Four01kCalculator() {
   const maxYears = Math.min(Math.round(yearsToRetireInYears), 36);
 
   for (let y = 0; y <= maxYears; y++) {
-    const growthPortion = currentBalance - totalEmployeeContrib - totalEmployerContrib;
+    const _growthPortion = currentBalance - totalEmployeeContrib - totalEmployerContrib;
     if (y === 0) {
       chartData.push({
         year: `Year ${y}`,

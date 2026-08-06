@@ -221,7 +221,7 @@ function BlogCard({ post }: { post: BlogPost }) {
 }
 
 export default function BlogPage() {
-  const categories: BlogPost["category"][] = [
+  const _categories: BlogPost["category"][] = [
     "mortgage",
     "loan",
     "investment",

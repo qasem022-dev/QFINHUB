@@ -23,7 +23,7 @@ export function generateWidgetCode(slug: string): WidgetCode | null {
   if (!calc) return null;
 
   const calcUrl = `${BASE_URL}/calculators/${slug}`;
-  const embedUrl = `${BASE_URL}/embed/${slug}`;
+  const _embedUrl = `${BASE_URL}/embed/${slug}`;
   const widgetUrl = `${BASE_URL}/api/widget/${slug}`;
 
   // Iframe embed — works on every platform (WordPress, Wix, etc.)

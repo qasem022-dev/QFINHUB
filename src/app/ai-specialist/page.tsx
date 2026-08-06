@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/set-state-in-effect, react-hooks/static-components */
+/* eslint-disable react-hooks/set-state-in-effect */
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
@@ -26,10 +26,10 @@ function AISpecialistContent() {
   const [savedPlanId, setSavedPlanId] = React.useState<string | null>(null);
   const [loadingPlan, setLoadingPlan] = React.useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = React.useState(false);
-  const [savedTitle, setSavedTitle] = React.useState<string | null>(null);
+  const [_savedTitle, setSavedTitle] = React.useState<string | null>(null);
   const [currentModel, setCurrentModel] = React.useState<string | null>(null);
   const dynamicCalcRef = React.useRef<DynamicCalculatorHandle>(null);
-  const saveTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const _saveTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Load plan if ?id= query param is present
   React.useEffect(() => {

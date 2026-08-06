@@ -240,9 +240,9 @@ export default function Home() {
 
       {/* ── Hero Section ── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50 px-4 pb-20 pt-16 dark:from-surface-dark dark:via-surface-dark dark:to-primary-950/20">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-[radial-gradient(ellipse_at_center_left,_var(--tw-gradient-stops))] from-emerald-500/5 via-transparent to-transparent" />
-        <div className="absolute inset-y-0 right-0 w-1/3 bg-[radial-gradient(ellipse_at_center_right,_var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-[radial-gradient(ellipse_at_center_left,var(--tw-gradient-stops))] from-emerald-500/5 via-transparent to-transparent" />
+        <div className="absolute inset-y-0 right-0 w-1/3 bg-[radial-gradient(ellipse_at_center_right,var(--tw-gradient-stops))] from-primary-500/5 via-transparent to-transparent" />
 
         <div className="relative z-10 mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">

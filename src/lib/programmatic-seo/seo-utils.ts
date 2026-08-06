@@ -4,7 +4,7 @@
 // always coerces via `as number` casts at use sites.
 import type { VariantParams, CalculatorVariant } from "./types";
 
-const BASE_URL = "https://www.qfinhub.com";
+const _BASE_URL = "https://www.qfinhub.com";
 
 // ─── Slug Parsing ───────────────────────────────────────────────
 
@@ -525,7 +525,7 @@ export function generateH1(
     case "mortgage-calculator":
     case "Mortgage Calculator": {
       const hp = params.homePrice;
-      const term = params.term;
+      const _term = params.term;
       const rate = params.rate;
       let h1 = `Mortgage Payment Calculator`;
       if (hp) h1 += ` for ${fmt(hp)}`;
@@ -590,7 +590,7 @@ export function generateFAQs(
 ): { question: string; answer: string }[] {
   const fmt = (n: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
-  const fmtDollar = (n: number) =>
+  const _fmtDollar = (n: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
 
   switch (calculatorName) {
@@ -755,7 +755,7 @@ export function generateRelatedLinks(
     (v) => v.params.calculatorId === params.calculatorId && v.slug !== slugFromParams(params),
   );
 
-  const links: { href: string; label: string }[] = [];
+  const _links: { href: string; label: string }[] = [];
 
   switch (calculatorName) {
     case "mortgage-calculator":

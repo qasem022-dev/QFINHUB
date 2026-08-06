@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
+ 
 /* eslint-disable react/no-unescaped-entities */
 import { allCalculators } from "@/lib/calculators";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/types/calculator";

@@ -1,5 +1,5 @@
-/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect, react-hooks/purity */
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react-hooks/purity */
+ 
 "use client";
 
 import * as React from "react";
@@ -15,10 +15,10 @@ export default function MonteCarloSimulation() {
   const [yearsUnit, setYearsUnit] = React.useState<PeriodUnit>("years");
   const [simulations, setSimulations] = React.useState(1000);
 
-  const safeInitial = Math.max(0, initialInvestment ?? 0);
-  const safeReturn = Math.max(-100, Math.min(expectedReturn ?? 0, 100));
-  const safeVol = Math.max(0.01, Math.min(volatility ?? 0, 100));
-  const safeSims = Math.max(100, Math.min(simulations ?? 0, 10000));
+  const _safeInitial = Math.max(0, initialInvestment ?? 0);
+  const _safeReturn = Math.max(-100, Math.min(expectedReturn ?? 0, 100));
+  const _safeVol = Math.max(0.01, Math.min(volatility ?? 0, 100));
+  const _safeSims = Math.max(100, Math.min(simulations ?? 0, 10000));
   const effectiveYears = Math.min(Math.max(1, Math.round(toMonths(years, yearsUnit) / 12)), 50);
 
   // Box-Muller transform for normal random

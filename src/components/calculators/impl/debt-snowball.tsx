@@ -62,7 +62,7 @@ export default function DebtSnowballCalculator() {
 
   const isUnpaid = snowMonths >= maxPeriods;
 
-  const chartData = snowballOrder.map((d, i) => ({
+  const chartData = snowballOrder.map((d, _i) => ({
     name: d.name,
     "Balance": Math.round(d.balance),
   }));

@@ -21,7 +21,7 @@ export default function LifetimeValueCalculator() {
   const ltvCacRatio = cac > 0 && isFinite(ltv) ? ltv / cac : 0;
 
   // Lifespan in user-selected unit
-  const lifespanInMonths = isFinite(avgLifespan) ? avgLifespan * 12 : Infinity;
+  const _lifespanInMonths = isFinite(avgLifespan) ? avgLifespan * 12 : Infinity;
   const safeLifespanValue = isFinite(lifespanValue) ? Math.max(1, lifespanValue) : 1;
   const displayLifespan = isFinite(avgLifespan)
     ? avgLifespan * (lifespanUnit === "years" ? 1 : lifespanUnit === "months" ? 12 : lifespanUnit === "weeks" ? 52 : 365)

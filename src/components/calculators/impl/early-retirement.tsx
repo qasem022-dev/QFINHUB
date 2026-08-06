@@ -81,7 +81,7 @@ export default function EarlyRetirementCalculator() {
   // FIRE milestones
   const milestone25 = fireNumber * 0.25;
   const milestone50 = fireNumber * 0.5;
-  const milestone75 = fireNumber * 0.75;
+  const _milestone75 = fireNumber * 0.75;
 
   const maxChartYears = yearsToFI !== Infinity
     ? Math.min(yearsToFI + 10, 60)

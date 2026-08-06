@@ -47,7 +47,7 @@ export default function PaycheckCalculator() {
   const netPay = grossPerPeriod - federalTax - stateTax - ss - medicare - safePreTax - safePostTax;
 
   const freqLabel = freqMap[payFreq]?.label || "Biweekly";
-  const stateLabels: Record<number, string> = { 1: "CA", 2: "TX", 3: "NY", 4: "FL", 5: "IL", 6: "Other" };
+  const _stateLabels: Record<number, string> = { 1: "CA", 2: "TX", 3: "NY", 4: "FL", 5: "IL", 6: "Other" };
 
   const pieData = [
     { name: "Net Pay", value: netPay },

@@ -21,7 +21,7 @@ export default function RefinanceCalculator() {
   const [remainingTermUnit, setRemainingTermUnit] = React.useState<"days" | "weeks" | "months" | "years">("years");
   const [newRate, setNewRate] = React.useState(5.5);
   const [newTerm, setNewTerm] = React.useState(30);
-  const [newTermUnit, setNewTermUnit] = React.useState<"days" | "weeks" | "months" | "years">("years");
+  const [newTermUnit, _setNewTermUnit] = React.useState<"days" | "weeks" | "months" | "years">("years");
   const [closingCosts, setClosingCosts] = React.useState(5000);
 
   const safeBalance = Math.max(0, balance ?? 0);

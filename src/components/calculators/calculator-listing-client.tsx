@@ -39,7 +39,7 @@ export function CalculatorListingClient({
   initialCategory,
 }: CalculatorListingClientProps) {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const _searchParams = useSearchParams();
   const { t } = useTranslation();
 
   const [search, setSearch] = React.useState(initialSearch);
@@ -65,7 +65,7 @@ export function CalculatorListingClient({
     return slugs;
   }, [allCalculators]);
 
-  const implementedCount = implementedSlugs.size;
+  const _implementedCount = implementedSlugs.size;
 
   const grouped = filteredCalculators.reduce<
     Record<string, typeof allCalculators>

@@ -48,7 +48,7 @@ export default function FractionCalculator() {
   }
 
   // Simplify
-  const absNum = Math.abs(resultNum);
+  const _absNum = Math.abs(resultNum);
   const g = resultDen !== 0 && resultNum !== 0 ? gcd(resultNum, resultDen) : 1;
   const simplifiedNum = resultDen !== 0 ? resultNum / g : 0;
   const simplifiedDen = resultDen !== 0 ? resultDen / g : 1;

@@ -9,7 +9,7 @@ export function getXClient(): TwitterApi {
   const apiSecret = process.env.X_API_SECRET!;
   const accessToken = process.env.X_ACCESS_TOKEN!;
   const accessSecret = process.env.X_ACCESS_SECRET!;
-  const bearerToken = process.env.X_BEARER_TOKEN!;
+  const _bearerToken = process.env.X_BEARER_TOKEN!;
 
   if (!apiKey || !apiSecret || !accessToken || !accessSecret) {
     throw new Error("X API credentials not configured in .env.local");

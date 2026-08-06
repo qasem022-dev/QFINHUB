@@ -31,7 +31,7 @@ export function ThemeProvider({
   defaultTheme = "system",
   storageKey = "qfinhub-theme",
   enableSystem = true,
-  ...props
+  ..._props
 }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<Theme>(defaultTheme);
   const [mounted, setMounted] = useState(false);

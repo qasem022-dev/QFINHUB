@@ -368,7 +368,7 @@ export default async function BlogPostPage({
 
   // Extract the H1 title from content (first # heading)
   const contentWithoutH1 = post.content.replace(/^# (.+)$/m, "").trim();
-  const h1Title = post.title;
+  const _h1Title = post.title;
 
   // Extract FAQ questions from content for JSON-LD schema
   const faqItems: { question: string; answer: string }[] = [];

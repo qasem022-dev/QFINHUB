@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/static-components, react-hooks/set-state-in-effect */
+/* eslint-disable react-hooks/static-components */
 'use client';
 
 import { Suspense } from "react";

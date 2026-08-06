@@ -48,7 +48,7 @@ export default function RetirementWithdrawalCalculator() {
 
   // Safe withdrawal rate scenarios
   const swr3 = safeSavings * 0.03;
-  const swr4 = safeSavings * 0.04;
+  const _swr4 = safeSavings * 0.04;
   const swr5 = safeSavings * 0.05;
 
   return (

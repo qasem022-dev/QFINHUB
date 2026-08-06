@@ -118,7 +118,7 @@ export function generateStatCardSVG(
   title: string,
   stat: string,
   description: string,
-  link: string
+  _link: string
 ): string {
   const w = 800;
   const h = 418;
@@ -236,7 +236,7 @@ export function generateComparisonTableSVG(
   const h = 418;
   const colW = Math.floor((w - 40) / columns.length);
   const rowH = 32;
-  const headerH = 40;
+  const _headerH = 40;
   const startY = 90;
 
   const headersHTML = columns

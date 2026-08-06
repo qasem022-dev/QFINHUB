@@ -16,7 +16,7 @@ export default function RuleOf72() {
   const periodInMonths = toMonths(safePeriod, periodUnit);
   const actualMultiplier = Math.pow(1 + safeRate / 100, periodInMonths / 12);
 
-  const periodInYears = periodInMonths / 12;
+  const _periodInYears = periodInMonths / 12;
   const numSteps = Math.max(2, Math.round(periodInMonths));
   const chartData = Array.from({ length: Math.min(numSteps + 1, 120) }, (_, i) => {
     const monthsElapsed = (i / numSteps) * periodInMonths;

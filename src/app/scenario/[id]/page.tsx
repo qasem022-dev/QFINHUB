@@ -152,7 +152,7 @@ export default async function ScenarioPage({ params }: ScenarioPageProps) {
 
   if (!scenario) notFound();
 
-  const calculator = getCalculatorBySlug(scenario.calculatorSlug);
+  const _calculator = getCalculatorBySlug(scenario.calculatorSlug);
   const category = (scenario.category as CategoryType) || "basic";
   const CalculatorComponent = getCalculatorComponent(scenario.calculatorSlug);
 

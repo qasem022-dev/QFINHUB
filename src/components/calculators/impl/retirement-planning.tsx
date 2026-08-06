@@ -30,7 +30,7 @@ export default function RetirementPlanningCalculator() {
 
   const r = safeReturn / 100;
   const yearsToRetireInYears = toMonths(yearsToRetire, yearsToRetireUnit) / 12;
-  const retirementAge = currentAge + yearsToRetireInYears;
+  const _retirementAge = currentAge + yearsToRetireInYears;
   const n = 12;
   const t = yearsToRetireInYears;
 

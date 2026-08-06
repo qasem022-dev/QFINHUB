@@ -24,7 +24,7 @@ export default function BiweeklyMortgageCalculator() {
 
   const safeBalance = Math.max(0, balance ?? 0);
   const safeRate = Math.max(0, Math.min(rate ?? 0, 100));
-  const termMonths = Math.max(1, toMonths(originalTerm, originalTermUnit));
+  const _termMonths = Math.max(1, toMonths(originalTerm, originalTermUnit));
   const remainingMonths = Math.max(1, toMonths(yearsRemaining, yearsRemainingUnit));
   const mr = safeRate / 100 / 12;
 

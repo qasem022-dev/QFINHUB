@@ -48,7 +48,7 @@ export default function MortgageAffordabilityCalculator() {
     ? affordableLoan / downPaymentPct
     : affordableLoan;
 
-  const monthlyHousingCalc = safeDownPct < 100
+  const _monthlyHousingCalc = safeDownPct < 100
     ? calcMonthlyPayment(affordableLoan, safeRate, termMonths)
     : 0;
 
