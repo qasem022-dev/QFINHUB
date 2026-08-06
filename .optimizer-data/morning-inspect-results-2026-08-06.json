@@ -1,0 +1,167 @@
+{
+  "generated": "2026-08-06T16:10:28Z",
+  "date": "2026-08-06",
+  "sample_size": 16,
+  "wall_clock_seconds": 14,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-30s-growth",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-75k-head-of-household",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/bond-yield",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/rent-vs-buy-a-2026-rent-vs-buy-decision-framework",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/best-retirement-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-140k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-snowball",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/contact",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-160k-single",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-40k",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-90k-executive",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-400k-18yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-3yr",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    }
+  ],
+  "newly_indexed": [],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/tools/net-worth-30s-growth",
+    "https://www.qfinhub.com/tools/tax-75k-head-of-household",
+    "https://www.qfinhub.com/calculators/amortization-schedule",
+    "https://www.qfinhub.com/calculators/bond-yield",
+    "https://www.qfinhub.com/compare/best-retirement-calculator",
+    "https://www.qfinhub.com/tools/tax-140k-single",
+    "https://www.qfinhub.com/calculators/debt-snowball"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "DISCOVERED": 11,
+    "UNKNOWN": 5
+  }
+}

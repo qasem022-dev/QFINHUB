@@ -1,7 +1,7 @@
 {
   "status": "LIVE_API_OK",
-  "generated": "2026-08-06T13:42:13.314779+00:00",
-  "pulled_at": "2026-08-06T13:42:13Z",
+  "generated": "2026-08-06T16:10:08.332091+00:00",
+  "pulled_at": "2026-08-06T16:10:08Z",
   "property": "https://www.qfinhub.com",
   "search_type": "web",
   "auth_method": "service_account",
@@ -53,7 +53,7 @@
     "freshness": "FRESH",
     "checksum": "34a188028efc",
     "previous_checksum": null,
-    "date_range_advanced": true,
+    "date_range_advanced": false,
     "cache_used": false,
     "source_file": ".optimizer-data/gsc-api-truth-current.json"
   },

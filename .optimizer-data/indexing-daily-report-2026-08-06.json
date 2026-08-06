@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-06",
+  "freshness": "FRESH",
+  "metrics_7d": {
+    "impressions": 2000,
+    "clicks": 0,
+    "ctr": null,
+    "position": null,
+    "pages": null
+  },
+  "metrics_28d": {
+    "impressions": 3960,
+    "clicks": 2,
+    "ctr": null,
+    "position": null
+  },
+  "metrics_3mo": {
+    "impressions": null,
+    "clicks": null
+  },
+  "indexing_state": {
+    "INDEXED": 234,
+    "DISCOVERED": 334,
+    "UNKNOWN": 72,
+    "REDIRECT": 1,
+    "CRAWLED_REJECTED": 3,
+    "OTHER": 20
+  },
+  "sitemap_urls": 523,
+  "morning_diagnosis": {
+    "inspected": 16,
+    "wall_clock_s": 14,
+    "category_counts": {
+      "DISCOVERED": 11,
+      "UNKNOWN": 5
+    },
+    "newly_indexed_organic": 0,
+    "unknown_to_discovered": 7,
+    "regressions": 0
+  },
+  "submissions": {
+    "attempted": 13,
+    "unique_urls": 13,
+    "successful": 13,
+    "daily_count": 13
+  },
+  "queue_state": {
+    "indexed": 234,
+    "discovered": 334,
+    "unknown": 72,
+    "uninspected": 20
+  },
+  "notes": [
+    "Pool exhausted steady state (uninspected=1, target=25 short by 9) \u2014 per pitfall #69",
+    "STEP B-pre: 0 stale URLs removed (queue-vs-sitemap perfect sync)",
+    "GSC API undercount ~1.4x \u2014 UI typically shows 30-50% more",
+    "First-click milestone preserved (per pitfall #74 noise rule)"
+  ]
+}

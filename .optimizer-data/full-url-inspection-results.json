@@ -43,7 +43,7 @@
     "verdict": "NEUTRAL",
     "last_crawl": "",
     "category": "DISCOVERED",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/blog": {
     "coverage_state": "Submitted and indexed",
@@ -115,7 +115,7 @@
     "verdict": "NEUTRAL",
     "last_crawl": "",
     "category": "DISCOVERED",
-    "last_updated": "2026-08-04"
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/all-pages": {
     "coverage_state": "Submitted and indexed",
@@ -216,11 +216,11 @@
     "user_canonical": "https://www.qfinhub.com/calculators/loan-calculator"
   },
   "https://www.qfinhub.com/calculators/amortization-schedule": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-04"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/calculators/mortgage-calculator": {
     "coverage_state": "Submitted and indexed",
@@ -390,11 +390,11 @@
     "user_canonical": "https://www.qfinhub.com/calculators/debt-payoff"
   },
   "https://www.qfinhub.com/calculators/debt-snowball": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-04"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/calculators/debt-avalanche": {
     "coverage_state": "Discovered - currently not indexed",
@@ -531,11 +531,11 @@
     "last_updated": "2026-08-04"
   },
   "https://www.qfinhub.com/calculators/bond-yield": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-04"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/calculators/bond-price": {
     "coverage_state": "URL is unknown to Google",
@@ -1688,11 +1688,11 @@
     "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/investment-5k-3yr": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "DISCOVERED",
-    "last_updated": "2026-08-04"
+    "category": "UNKNOWN",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/investment-10k-5yr": {
     "coverage_state": "Discovered - currently not indexed",
@@ -2147,7 +2147,7 @@
     "verdict": "NEUTRAL",
     "last_crawl": "",
     "category": "DISCOVERED",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/investment-600k-12yr": {
     "coverage_state": "Submitted and indexed",
@@ -2321,11 +2321,11 @@
     "last_updated": "2026-08-04"
   },
   "https://www.qfinhub.com/tools/tax-75k-head-of-household": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-05"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/tax-100k-head-of-household": {
     "coverage_state": "Discovered - currently not indexed",
@@ -2404,11 +2404,11 @@
     "last_updated": "2026-08-04"
   },
   "https://www.qfinhub.com/tools/tax-140k-single": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-04"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/tax-175k-single": {
     "coverage_state": "Discovered - currently not indexed",
@@ -2504,11 +2504,11 @@
     "last_updated": "2026-07-29"
   },
   "https://www.qfinhub.com/tools/tax-160k-single": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "DISCOVERED",
-    "last_updated": "2026-08-04"
+    "category": "UNKNOWN",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/tax-10k-single": {
     "coverage_state": "Discovered - currently not indexed",
@@ -2762,11 +2762,11 @@
     "last_updated": "2026-08-04"
   },
   "https://www.qfinhub.com/tools/net-worth-30s-growth": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-04"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/net-worth-40s-peak": {
     "coverage_state": "Discovered - currently not indexed",
@@ -3095,11 +3095,11 @@
     "last_updated": "2026-08-04"
   },
   "https://www.qfinhub.com/tools/fi-90k-executive": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "DISCOVERED",
-    "last_updated": "2026-08-04"
+    "category": "UNKNOWN",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/tools/fi-15k-lean-extreme": {
     "coverage_state": "Submitted and indexed",
@@ -3342,11 +3342,11 @@
     "last_updated": "2026-08-04"
   },
   "https://www.qfinhub.com/compare/best-retirement-calculator": {
-    "coverage_state": "URL is unknown to Google",
+    "coverage_state": "Discovered - currently not indexed",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "UNKNOWN",
-    "last_updated": "2026-08-04"
+    "category": "DISCOVERED",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/compare/best-loan-calculator": {
     "coverage_state": "Discovered - currently not indexed",
@@ -4093,7 +4093,7 @@
     "verdict": "NEUTRAL",
     "last_crawl": "",
     "category": "DISCOVERED",
-    "last_updated": "2026-08-04"
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/guides/mortgage-on-85k": {
     "coverage_state": "Discovered - currently not indexed",
@@ -4131,11 +4131,11 @@
     "last_updated": "2026-08-05"
   },
   "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth": {
-    "coverage_state": "Discovered - currently not indexed",
+    "coverage_state": "URL is unknown to Google",
     "verdict": "NEUTRAL",
     "last_crawl": "",
-    "category": "DISCOVERED",
-    "last_updated": "2026-08-04"
+    "category": "UNKNOWN",
+    "last_updated": "2026-08-06"
   },
   "https://www.qfinhub.com/guides/mortgage-on-30k": {
     "coverage_state": "Discovered - currently not indexed",
@@ -4191,6 +4191,6 @@
     "verdict": "NEUTRAL",
     "last_crawl": "",
     "category": "UNKNOWN",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-06"
   }
 }

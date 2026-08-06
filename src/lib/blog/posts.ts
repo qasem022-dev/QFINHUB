@@ -3352,4 +3352,132 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 <p>Run the numbers yourself: <a href="/calculators/tax-calculator">Tax Calculator</a></p></div>`,
     relatedCalculators: [],
   },
+  {
+    slug: "how-much-income-needed-to-afford-a-400k-home-2026",
+    title: "How Much Income Do You Need to Afford a $400K Home? (2026 Salary Guide)",
+    description: "Exact salary needed for a $400,000 house in 2026. See income requirements for $50K, $75K, $100K, $125K, and $150K earners. Includes down payment, closing costs, and a free affordability calculator.",
+    category: "mortgage",
+    publishedAt: new Date("2026-08-06"),
+    readingTime: 9,
+    relatedCalculators: ["mortgage-affordability", "mortgage-calculator", "budget-planner", "debt-payoff"],
+    content: `<h2>Quick Answer: How Much Income to Afford a $400,000 Home?</h2>
+<p>To afford a $400,000 home in 2026 with a 20% down payment at today's 6.5% mortgage rate, you need roughly <strong>$104,000 per year in gross household income</strong>. With a 10% down payment, that jumps to about $116,000. With a 5% down payment and PMI, you'll need closer to $124,000. These numbers assume you have little other debt, decent credit (700+), and can save 3% of the loan amount for closing costs.</p>
+<p>Run your specific numbers in our <a href="/decision/can-i-afford-a-400k-home">$400K home decision guide</a> or use the <a href="/calculators/mortgage-affordability">mortgage affordability calculator</a> to get a personalized answer in 30 seconds.</p>
+
+<h2>The Income Breakdown by Down Payment</h2>
+<p>The down payment dramatically changes what income you need because lower down payments mean larger loans, higher rates, and PMI. Here's the exact salary required for a $400K home at each down payment level, assuming 6.5% interest (or 6.8% with PMI), 1.1% property tax, $1,600/year insurance, and the 28% front-end DTI rule:</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr><th>Down Payment</th><th>Loan Amount</th><th>Monthly PITI</th><th>Cash Needed at Closing</th><th>Required Income</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5% ($20,000)</td><td>$380,000</td><td>$2,882</td><td>$31,400</td><td>$124,000</td></tr>
+    <tr><td>10% ($40,000)</td><td>$360,000</td><td>$2,762</td><td>$50,800</td><td>$118,000</td></tr>
+    <tr><td>15% ($60,000)</td><td>$340,000</td><td>$2,480</td><td>$70,200</td><td>$106,000</td></tr>
+    <tr><td>20% ($80,000)</td><td>$320,000</td><td>$2,425</td><td>$89,600</td><td>$104,000</td></tr>
+    <tr><td>25% ($100,000)</td><td>$300,000</td><td>$2,224</td><td>$109,000</td><td>$95,000</td></tr>
+  </tbody>
+</table>
+<p><strong>Rule of thumb:</strong> A $400K home is comfortable for households earning $104K+ with $90K in savings, but accessible on lower incomes if you accept PMI and a smaller down payment.</p>
+
+<h2>Can I Afford a $400K Home on a $100K Salary?</h2>
+<p>Yes — but it'll be tight. With $100K household income, you can qualify for a $400K home with 10-15% down, but your housing costs will consume 35-37% of your gross income. That's above the 28% rule but workable if you have:</p>
+<ul>
+  <li>Minimal other debt (car loans, student loans, credit cards below 8% of income)</li>
+  <li>Emergency fund of 3+ months still in place after closing</li>
+  <li>Stable income in a recession-resistant field</li>
+  <li>DTI under 36% total (including mortgage, all other debts)</li>
+</ul>
+<p>On $100K, the realistic play is 10% down ($40K) with PMI. That puts your monthly payment at $2,762 and your total DTI at 33%. Modest, but doable. See the full breakdown in our <a href="/decision/can-i-afford-a-400k-home">$400K home decision guide</a>.</p>
+
+<h2>What Salary Do You Need to Afford a $400K House on 100K Salary?</h2>
+<p>If you're a single buyer earning $100K, the same math applies — you can afford a $400K home with 10% down, but it's a stretch. Most lenders want to see your total DTI (mortgage + car + student loans + credit cards) below 36%. On $100K gross, that's $36,000/year or $3,000/month in total debt payments. A $2,762 mortgage leaves you only $238/month for other debt — not realistic for most people with car payments or student loans.</p>
+<p>The honest answer: <strong>$100K works for a $400K home only if you have low other debt and put 10-15% down</strong>. If you have car payments or student loans above $400/month, you'll need closer to $115-120K to comfortably qualify.</p>
+
+<h2>How Much Do You Need to Earn to Buy a $400K House?</h2>
+<p>The exact number depends on your down payment, debt, and credit score. Here's a quick reference chart for 2026:</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr><th>Your Income</th><th>What's Affordable</th><th>Realistic Plan</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>$50,000</td><td>$200K home max</td><td>Save aggressively for 5+ years, look at FHA loans, consider cheaper markets</td></tr>
+    <tr><td>$75,000</td><td>$300K home max</td><td>10% down with PMI, look at 3-bedroom condos in mid-size cities</td></tr>
+    <tr><td>$100,000</td><td>$380K home max</td><td>10-15% down with PMI, $400K home is borderline but achievable</td></tr>
+    <tr><td>$125,000</td><td>$475K home max</td><td>20% down comfortably, $400K home is easy with room for higher taxes/insurance</td></tr>
+    <tr><td>$150,000</td><td>$550K+ home max</td><td>20% down + extra cash reserves, $400K home is very comfortable</td></tr>
+  </tbody>
+</table>
+<p>These numbers assume 6.5% mortgage rate, 28% front-end DTI, 720+ credit score, and 1.1% property tax. Your local property tax could push these figures up or down significantly.</p>
+
+<h2>How Much Income to Buy a $400K House?</h2>
+<p>The income requirement formula is straightforward: <strong>Required Income = (Monthly PITI × 12) ÷ 0.28</strong>. For a $400K home with 20% down at 6.5%, that's $2,425 × 12 = $29,100 ÷ 0.28 = $104,000.</p>
+<p>But that ignores PMI, HOA, and other costs. A more realistic formula adds a buffer:</p>
+<p><strong>Realistic Income = ((Monthly PITI + $200) × 12) ÷ 0.28</strong></p>
+<p>That gives you $114,000 for a $400K home with 20% down — covering homeowner surprises, HOA fees, and modest maintenance reserves. Use the <a href="/calculators/mortgage-affordability">mortgage affordability calculator</a> to plug in your zip code and get a tailored number.</p>
+
+<h2>How Much Money Do You Need to Make to Afford a $400K House?</h2>
+<p>Beyond income, you need cash at closing. For a $400K home with 20% down, plan to bring $89,600 in cash ($80K down payment + $9,600 closing costs). On a $100K salary, that's 90% of your annual gross income — a serious chunk. Most buyers save for 3-5 years to accumulate this.</p>
+<p>If you don't have $90K sitting around, here are realistic paths:</p>
+<ul>
+  <li><strong>10% down path:</strong> $50,800 cash needed, easier to save in 1-2 years</li>
+  <li><strong>FHA loan (3.5% down):</strong> $14,000 + closing costs = ~$26,000 needed, but requires PMI and MIP</li>
+  <li><strong>First-time homebuyer assistance:</strong> Many states offer $5K-$15K in down payment help</li>
+  <li><strong>Gift funds:</strong> Family members can gift down payment money (with paperwork)</li>
+</ul>
+<p>Calculate your exact closing costs with our <a href="/calculators/closing-costs">closing costs calculator</a> and your affordable price with the <a href="/calculators/mortgage-affordability">mortgage affordability calculator</a>.</p>
+
+<h2>How Much Is a $400K Home After It's Paid Off?</h2>
+<p>A $400K home paid off in 30 years is worth $400K in equity (assuming no depreciation). But the total you paid over 30 years is much higher. Let's break it down for a $400K home with 20% down at 6.5%:</p>
+<ul>
+  <li><strong>Total principal paid:</strong> $320,000 (the loan amount)</li>
+  <li><strong>Total interest paid:</strong> $408,649 (over 30 years)</li>
+  <li><strong>Total property tax:</strong> $132,000 ($400K × 1.1% × 30 years)</li>
+  <li><strong>Total insurance:</strong> $48,000 ($1,600/year × 30 years)</li>
+  <li><strong>Total cost:</strong> $908,649 (2.27× the purchase price)</li>
+</ul>
+<p>That's the real cost of a $400K home. By the time you finish paying, you've spent nearly $1 million. Importantly, you also have $400K in equity (assuming no appreciation) — so your net "cost" is the $500K+ in interest, taxes, and insurance. Use the <a href="/calculators/mortgage-calculator">mortgage calculator</a> to see your specific numbers.</p>
+
+<h2>How Much Would You Have to Make to Afford a $400K House?</h2>
+<p>We've covered the math. The short answer: <strong>$104K with 20% down, $118K with 10% down, $124K with 5% down</strong>. These are realistic 2026 numbers, not theoretical best cases.</p>
+<p>But here's the uncomfortable truth: <strong>income alone doesn't determine affordability</strong>. Other factors matter as much:</p>
+<ol>
+  <li><strong>Existing debt:</strong> A $400/month car payment raises your required income by ~$14K</li>
+  <li><strong>Property taxes:</strong> In Texas or Illinois, 2.5% property tax means you need $20K more income than in Hawaii</li>
+  <li><strong>Credit score:</strong> Below 680, your rate jumps to 7.5%+, requiring $8K more income for the same home</li>
+  <li><strong>Lifestyle costs:</strong> Longer commute, HOA fees, higher utilities — all affect what you can truly afford</li>
+</ol>
+<p>Run the numbers for YOUR situation in our <a href="/decision/can-i-afford-a-400k-home">$400K home decision guide</a> — it includes a calculator with all these factors built in.</p>
+
+<h2>Frequently Asked Questions About $400K Home Affordability</h2>
+
+<h3>Can I afford a $400K home with $50K down?</h3>
+<p>Yes, $50K is 12.5% down — enough to avoid jumbo loan territory in most areas. With $50K down, your loan is $350K, your monthly payment (at 6.5%) is approximately $2,580, and you need around $110K income. PMI applies since you're below 20%, costing roughly $190/month until you reach 20% equity.</p>
+
+<h3>Can I afford a $400K home with $20K down?</h3>
+<p>Yes, but it's tight. $20K is 5% down — you'll pay PMI ($206/month), your loan is $380K, monthly payment is $2,882, and you need ~$124K income. Many first-time buyers use this path, but the PMI adds $50K+ to your 30-year cost.</p>
+
+<h3>What credit score do I need for a $400K home?</h3>
+<p>740+ for the best rates (6.5%). 680-739 still qualifies but at 7.0-7.5%. Below 680, expect 8%+ rates and stricter requirements. Most lenders want to see 620+ for FHA loans, but FHA charges mortgage insurance premiums for the life of the loan.</p>
+
+<h3>What if I have student loans?</h3>
+<p>Student loans count in your DTI. On $100K income with $400/month student loans, your effective DTI allowance drops from $3,000 to $2,600, reducing your maximum mortgage to ~$340K. You'd need to either pay down loans or increase income to afford a $400K home.</p>
+
+<h3>How much house can I afford on $80K salary?</h3>
+<p>On $80K salary with low debt, you can afford about $300K with 20% down. With 10% down and PMI, you can stretch to $340K. A $400K home on $80K would require either a co-signer, aggressive debt payoff, or a less expensive market.</p>
+
+<h3>Is $400K a lot for a house?</h3>
+<p>It depends on your market. In San Francisco or NYC, $400K is a starter condo. In Boise, Indianapolis, or Pittsburgh, $400K is a luxury 4-bedroom home. The median US home price in 2026 is approximately $385K — so $400K is roughly the national median, slightly above average.</p>
+
+<h2>Run Your Numbers Now</h2>
+<p>Stop guessing. Use these free QFINHUB tools to get exact answers for your situation:</p>
+<ul>
+  <li><a href="/decision/can-i-afford-a-400k-home">$400K Home Decision Guide</a> — full cost breakdown with calculator</li>
+  <li><a href="/calculators/mortgage-affordability">Mortgage Affordability Calculator</a> — what home price fits YOUR income</li>
+  <li><a href="/calculators/mortgage-calculator">Mortgage Calculator</a> — exact monthly payment with taxes and insurance</li>
+  <li><a href="/calculators/closing-costs">Closing Costs Calculator</a> — exact cash needed at closing</li>
+  <li><a href="/calculators/debt-payoff">Debt Payoff Calculator</a> — pay down debt to qualify for more</li>
+</ul>
+<p>The 28/36 rule is a starting point, not gospel. Your real affordability depends on your debts, your market, your job stability, and your lifestyle. Run the numbers, then decide.</p>`,
+  },
 ];

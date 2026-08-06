@@ -1110,6 +1110,42 @@
           "url": "https://www.qfinhub.com/calculators/mortgage-affordability"
         }
       }
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/cash-flow",
+      "date": "2026-08-06T13:55:00Z",
+      "type": "URL_UPDATED",
+      "notified": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/monte-carlo-simulation",
+      "date": "2026-08-06T13:55:00Z",
+      "type": "URL_UPDATED",
+      "notified": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/marginal-tax-rate",
+      "date": "2026-08-06T13:55:00Z",
+      "type": "URL_UPDATED",
+      "notified": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/traditional-ira",
+      "date": "2026-08-06T13:55:00Z",
+      "type": "URL_UPDATED",
+      "notified": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/npv-calculator",
+      "date": "2026-08-06T13:55:00Z",
+      "type": "URL_UPDATED",
+      "notified": "unknown"
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/tax-calculator",
+      "date": "2026-08-06T13:55:00Z",
+      "type": "URL_UPDATED",
+      "notified": "unknown"
     }
   ],
   "rejections": [],

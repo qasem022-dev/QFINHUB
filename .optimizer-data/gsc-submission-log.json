@@ -1182,61 +1182,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/about",
-      "source": "live-discovered-v7",
-      "ts": 1785959615.706109,
-      "date": "2026-08-05T19:53:35.706118+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/about"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/contact",
-      "source": "live-discovered-v7",
-      "ts": 1785959616.082483,
-      "date": "2026-08-05T19:53:36.082491+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/contact"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/compare",
-      "source": "live-discovered-v7",
-      "ts": 1785959616.346592,
-      "date": "2026-08-05T19:53:36.346599+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
-      "source": "live-discovered-v7",
-      "ts": 1785959616.7349353,
-      "date": "2026-08-05T19:53:36.734945+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/basic-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959617.1092057,
-      "date": "2026-08-05T19:53:37.109213+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/basic-calculator"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/simple-interest",
       "source": "live-discovered-v7",
       "ts": 1785959617.5238888,
@@ -1244,94 +1189,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/simple-interest"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
-      "source": "live-discovered-v7",
-      "ts": 1785959617.839273,
-      "date": "2026-08-05T19:53:37.839282+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/capital-gains-tax"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/roi-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959618.1933737,
-      "date": "2026-08-05T19:53:38.193383+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/roi-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/break-even",
-      "source": "live-discovered-v7",
-      "ts": 1785959618.5500824,
-      "date": "2026-08-05T19:53:38.550091+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/break-even"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959618.8050926,
-      "date": "2026-08-05T19:53:38.805101+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/inflation-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/currency-converter",
-      "source": "live-discovered-v7",
-      "ts": 1785959619.1598945,
-      "date": "2026-08-05T19:53:39.159937+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/currency-converter"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/tip-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959619.4434028,
-      "date": "2026-08-05T19:53:39.443410+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/tip-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/discount-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959619.7541356,
-      "date": "2026-08-05T19:53:39.754145+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/discount-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/salary-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959620.0732074,
-      "date": "2026-08-05T19:53:40.073215+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/salary-calculator"
         }
       }
     },
@@ -1347,17 +1204,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/dividend-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959620.7204583,
-      "date": "2026-08-05T19:53:40.720463+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/dividend-calculator"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/dollar-cost-average",
       "source": "live-discovered-v7",
       "ts": 1785959621.0777812,
@@ -1369,50 +1215,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/auto-loan",
-      "source": "live-discovered-v7",
-      "ts": 1785959621.4827523,
-      "date": "2026-08-05T19:53:41.482761+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/auto-loan"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/student-loan",
-      "source": "live-discovered-v7",
-      "ts": 1785959621.7589877,
-      "date": "2026-08-05T19:53:41.758996+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/student-loan"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/debt-avalanche",
-      "source": "live-discovered-v7",
-      "ts": 1785959622.1374953,
-      "date": "2026-08-05T19:53:42.137503+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/debt-avalanche"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/loan-refinancing",
-      "source": "live-discovered-v7",
-      "ts": 1785959622.507201,
-      "date": "2026-08-05T19:53:42.507210+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/loan-refinancing"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/refinance-calculator",
       "source": "live-discovered-v7",
       "ts": 1785959622.8654006,
@@ -1420,28 +1222,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/refinance-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/closing-costs",
-      "source": "live-discovered-v7",
-      "ts": 1785959623.1444273,
-      "date": "2026-08-05T19:53:43.144436+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/closing-costs"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/fha-loan",
-      "source": "live-discovered-v7",
-      "ts": 1785959623.420456,
-      "date": "2026-08-05T19:53:43.420463+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/fha-loan"
         }
       }
     },
@@ -1468,39 +1248,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/portfolio-allocator",
-      "source": "live-discovered-v7",
-      "ts": 1785959624.3796995,
-      "date": "2026-08-05T19:53:44.379723+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/portfolio-allocator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/risk-reward",
-      "source": "live-discovered-v7",
-      "ts": 1785959624.719442,
-      "date": "2026-08-05T19:53:44.719452+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/risk-reward"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/position-sizing",
-      "source": "live-discovered-v7",
-      "ts": 1785959625.0778122,
-      "date": "2026-08-05T19:53:45.077824+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/position-sizing"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/option-profit",
       "source": "live-discovered-v7",
       "ts": 1785959625.442517,
@@ -1508,17 +1255,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/option-profit"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/capm-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959625.8022583,
-      "date": "2026-08-05T19:53:45.802266+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/capm-calculator"
         }
       }
     },
@@ -1545,17 +1281,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/beta-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959626.8268578,
-      "date": "2026-08-05T19:53:46.826866+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/beta-calculator"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/asset-correlation",
       "source": "live-discovered-v7",
       "ts": 1785959627.185992,
@@ -1563,28 +1288,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/asset-correlation"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/perpetuity-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959627.461951,
-      "date": "2026-08-05T19:53:47.461961+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/perpetuity-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/present-value",
-      "source": "live-discovered-v7",
-      "ts": 1785959627.8227715,
-      "date": "2026-08-05T19:53:47.822783+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/present-value"
         }
       }
     },
@@ -1600,39 +1303,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/financial-ratios",
-      "source": "live-discovered-v7",
-      "ts": 1785959628.4455757,
-      "date": "2026-08-05T19:53:48.445585+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/financial-ratios"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/roth-ira",
-      "source": "live-discovered-v7",
-      "ts": 1785959628.8091187,
-      "date": "2026-08-05T19:53:48.809127+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/roth-ira"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/social-security",
-      "source": "live-discovered-v7",
-      "ts": 1785959629.1756878,
-      "date": "2026-08-05T19:53:49.175698+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/social-security"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/early-retirement",
       "source": "live-discovered-v7",
       "ts": 1785959629.5010004,
@@ -1640,39 +1310,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/early-retirement"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/retirement-expenses",
-      "source": "live-discovered-v7",
-      "ts": 1785959629.8626933,
-      "date": "2026-08-05T19:53:49.862702+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/retirement-expenses"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/sales-tax",
-      "source": "live-discovered-v7",
-      "ts": 1785959630.1391594,
-      "date": "2026-08-05T19:53:50.139169+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/sales-tax"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/property-tax",
-      "source": "live-discovered-v7",
-      "ts": 1785959630.4171271,
-      "date": "2026-08-05T19:53:50.417140+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/property-tax"
         }
       }
     },
@@ -1688,17 +1325,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/self-employment-tax",
-      "source": "live-discovered-v7",
-      "ts": 1785959631.1445496,
-      "date": "2026-08-05T19:53:51.144564+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/self-employment-tax"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/effective-tax-rate",
       "source": "live-discovered-v7",
       "ts": 1785959631.5005767,
@@ -1710,17 +1336,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/tax-bracket",
-      "source": "live-discovered-v7",
-      "ts": 1785959631.860183,
-      "date": "2026-08-05T19:53:51.860194+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/tax-bracket"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/w4-calculator",
       "source": "live-discovered-v7",
       "ts": 1785959632.2208033,
@@ -1728,17 +1343,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/w4-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/1099-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959632.571663,
-      "date": "2026-08-05T19:53:52.571674+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/1099-calculator"
         }
       }
     },
@@ -1765,83 +1369,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/customer-acquisition-cost",
-      "source": "live-discovered-v7",
-      "ts": 1785959633.5919678,
-      "date": "2026-08-05T19:53:53.591977+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/customer-acquisition-cost"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/debt-to-income",
-      "source": "live-discovered-v7",
-      "ts": 1785959633.860457,
-      "date": "2026-08-05T19:53:53.860465+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/debt-to-income"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
-      "source": "live-discovered-v7",
-      "ts": 1785959634.2151341,
-      "date": "2026-08-05T19:53:54.215143+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/credit-card-payoff"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/college-savings",
-      "source": "live-discovered-v7",
-      "ts": 1785959634.4911127,
-      "date": "2026-08-05T19:53:54.491123+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/college-savings"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/car-affordability",
-      "source": "live-discovered-v7",
-      "ts": 1785959634.7623527,
-      "date": "2026-08-05T19:53:54.762359+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/car-affordability"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/insurance-needs",
-      "source": "live-discovered-v7",
-      "ts": 1785959635.0814261,
-      "date": "2026-08-05T19:53:55.081435+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/insurance-needs"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/child-care-cost",
-      "source": "live-discovered-v7",
-      "ts": 1785959635.4305751,
-      "date": "2026-08-05T19:53:55.430584+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/child-care-cost"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/wedding-budget",
       "source": "live-discovered-v7",
       "ts": 1785959635.7701666,
@@ -1853,50 +1380,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/vacation-budget",
-      "source": "live-discovered-v7",
-      "ts": 1785959636.0401614,
-      "date": "2026-08-05T19:53:56.040172+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/vacation-budget"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/hourly-to-salary",
-      "source": "live-discovered-v7",
-      "ts": 1785959636.3914177,
-      "date": "2026-08-05T19:53:56.391427+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/hourly-to-salary"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/overtime-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959636.7424655,
-      "date": "2026-08-05T19:53:56.742472+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/overtime-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/paycheck-calculator",
-      "source": "live-discovered-v7",
-      "ts": 1785959637.0925066,
-      "date": "2026-08-05T19:53:57.092515+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/paycheck-calculator"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/calculators/bmi-calculator",
       "source": "live-discovered-v7",
       "ts": 1785959637.43153,
@@ -1904,17 +1387,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/calculators/bmi-calculator"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/date-difference",
-      "source": "live-discovered-v7",
-      "ts": 1785959637.7786002,
-      "date": "2026-08-05T19:53:57.778612+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/date-difference"
         }
       }
     },
@@ -1963,39 +1435,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/calculators/water-bill",
-      "source": "live-discovered-v7",
-      "ts": 1785959639.4496346,
-      "date": "2026-08-05T19:53:59.449643+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/water-bill"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/calculators/phone-plan-comparison",
-      "source": "live-discovered-v7",
-      "ts": 1785959639.7103515,
-      "date": "2026-08-05T19:53:59.710358+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/calculators/phone-plan-comparison"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026",
-      "source": "live-discovered-v7",
-      "ts": 1785959640.0604956,
-      "date": "2026-08-05T19:54:00.060504+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/blog/rent-vs-buy-which-is-better",
       "source": "live-discovered-v7",
       "ts": 1785959640.3298216,
@@ -2014,39 +1453,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/blog/understanding-tax-brackets-what-rate-do-you-actually-pay"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
-      "source": "live-discovered-v7",
-      "ts": 1785959640.9192035,
-      "date": "2026-08-05T19:54:00.919215+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/how-inflation-affects-your-savings-and-investments",
-      "source": "live-discovered-v7",
-      "ts": 1785959641.265214,
-      "date": "2026-08-05T19:54:01.265224+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/how-inflation-affects-your-savings-and-investments"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
-      "source": "live-discovered-v7",
-      "ts": 1785959641.610261,
-      "date": "2026-08-05T19:54:01.610272+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off"
         }
       }
     },
@@ -2084,17 +1490,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/blog/debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you",
-      "source": "live-discovered-v7",
-      "ts": 1785959642.846028,
-      "date": "2026-08-05T19:54:02.846037+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/blog/what-the-fed-s-approval-of-banco-de-credito-del-peru-means-for-your-mortgage-and",
       "source": "live-discovered-v7",
       "ts": 1785959643.227584,
@@ -2124,17 +1519,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/blog/fed-ends-enforcement-actions-against-major-banks-what-it-means-for-your-mortgage"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals",
-      "source": "live-discovered-v7",
-      "ts": 1785959644.1613483,
-      "date": "2026-08-05T19:54:04.161358+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals"
         }
       }
     },
@@ -2194,17 +1578,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained",
-      "source": "live-discovered-v7",
-      "ts": 1785959646.1394103,
-      "date": "2026-08-05T19:54:06.139419+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/blog/fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-",
       "source": "live-discovered-v7",
       "ts": 1785959646.3732862,
@@ -2234,17 +1607,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/blog/trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36",
-      "source": "live-discovered-v7",
-      "ts": 1785959647.2541394,
-      "date": "2026-08-05T19:54:07.254147+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36"
         }
       }
     },
@@ -2293,17 +1655,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
-      "source": "live-discovered-v7",
-      "ts": 1785959648.870634,
-      "date": "2026-08-05T19:54:08.870641+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/blog/rate-cuts-are-off-the-table-2-stocks-under-30-for-this-market-how-to-protect-you",
       "source": "live-discovered-v7",
       "ts": 1785959649.2280464,
@@ -2322,17 +1673,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/blog/rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget",
-      "source": "live-discovered-v7",
-      "ts": 1785959649.8516994,
-      "date": "2026-08-05T19:54:09.851720+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget"
         }
       }
     },
@@ -2403,17 +1743,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division",
-      "source": "live-discovered-v7",
-      "ts": 1785959651.7825937,
-      "date": "2026-08-05T19:54:11.782601+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/blog/federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-",
       "source": "live-discovered-v7",
       "ts": 1785959652.0505192,
@@ -2421,28 +1750,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/blog/federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net",
-      "source": "live-discovered-v7",
-      "ts": 1785959652.3139932,
-      "date": "2026-08-05T19:54:12.314001+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to",
-      "source": "live-discovered-v7",
-      "ts": 1785959652.6510818,
-      "date": "2026-08-05T19:54:12.651088+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to"
         }
       }
     },
@@ -2480,17 +1787,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy",
-      "source": "live-discovered-v7",
-      "ts": 1785959653.9521317,
-      "date": "2026-08-05T19:54:13.952140+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability",
       "source": "live-discovered-v7",
       "ts": 1785959654.2560964,
@@ -2498,39 +1794,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
-      "source": "live-discovered-v7",
-      "ts": 1785959654.6150298,
-      "date": "2026-08-05T19:54:14.615039+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan",
-      "source": "live-discovered-v7",
-      "ts": 1785959654.9456155,
-      "date": "2026-08-05T19:54:14.945624+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
-      "source": "live-discovered-v7",
-      "ts": 1785959655.213277,
-      "date": "2026-08-05T19:54:15.213285+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche"
         }
       }
     },
@@ -2612,28 +1875,6 @@
       }
     },
     {
-      "url": "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal",
-      "source": "live-discovered-v7",
-      "ts": 1785959657.5797045,
-      "date": "2026-08-05T19:54:17.579756+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/compare/compare-debt-consolidation-vs-loan-comparison",
-      "source": "live-discovered-v7",
-      "ts": 1785959657.9297807,
-      "date": "2026-08-05T19:54:17.929788+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-debt-consolidation-vs-loan-comparison"
-        }
-      }
-    },
-    {
       "url": "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return",
       "source": "live-discovered-v7",
       "ts": 1785959658.1882076,
@@ -2641,17 +1882,6 @@
       "result": {
         "urlNotificationMetadata": {
           "url": "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return"
-        }
-      }
-    },
-    {
-      "url": "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio",
-      "source": "live-discovered-v7",
-      "ts": 1785959658.4564157,
-      "date": "2026-08-05T19:54:18.456425+00:00",
-      "result": {
-        "urlNotificationMetadata": {
-          "url": "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio"
         }
       }
     },
@@ -2676,9 +1906,87 @@
           "url": "https://www.qfinhub.com/compare/best-compound-interest-calculator"
         }
       }
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-160k-single",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-08-06 11:11:01"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/rent-vs-buy-a-2026-rent-vs-buy-decision-framework",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-08-06 11:11:10"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-90k-executive",
+      "category": "UNKNOWN",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-08-06 11:11:19"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-1M-25yr",
+      "category": "DISCOVERED",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-08-06 11:11:28"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-5M-married-joint",
+      "category": "DISCOVERED",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-08-06 11:11:37"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/emergency-fund-amount-2026-how-much-do-you-really-need",
+      "category": "DISCOVERED",
+      "result": "CLICKED_BUTTON",
+      "date": "2026-08-06 11:11:46"
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/fed-stock-market-and-bonds",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:11:56"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-50k-dual-income",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:12:05"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-200k-head-of-household",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:12:14"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-debt-heavy",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:12:23"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-30k-married-separate",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:12:32"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-100-1yr",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:12:41"
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fi-30k-expenses-750k",
+      "category": "DISCOVERED",
+      "result": "REQUESTED \u2713",
+      "date": "2026-08-06 11:12:50"
     }
   ],
-  "total": 195,
+  "total": 275,
   "daily_counts": {
     "2026-06-29": 26,
     "2026-06-30": 13,
@@ -2693,6 +2001,7 @@
     "2026-08-02": 13,
     "2026-08-03": 13,
     "2026-08-04": 13,
-    "2026-08-05": 13
+    "2026-08-05": 80,
+    "2026-08-06": 13
   }
 }
