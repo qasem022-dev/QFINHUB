@@ -50,9 +50,12 @@ function loadEnv() {
   }
 }
 loadEnv();
-const DEEPSEEK_KEY = process.env.DEEPSEEK_API_KEY || process.env.DEEPSEEK_PRO_API_KEY;
-const GEMINI_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+// MiniMax M3 (Anthropic-compatible API) — single provider for blog content
+// Updated 2026-08-07: Removed Gemini + DeepSeek. Only MiniMax M3 is used.
+const MINIMAX_API_KEY = process.env.MINIMAX_API_KEY;
+const MINIMAX_MODEL = process.env.MINIMAX_MODEL || "MiniMax-M3";
+const MINIMAX_BASE_URL = process.env.MINIMAX_BASE_URL || "https://api.minimax.io/anthropic";
+const MINIMAX_API_VERSION = "2023-06-01";
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.qfinhub.com";
 
 if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
@@ -212,32 +215,51 @@ function markTopicUsed(chosen) {
   writeFileSync(TOPICS_FILE, JSON.stringify(used));
 }
 
-// ─── Quality-First Generation (Gemini preferred for content per memory) ───
-async function generateBlogPostGemini(topic, prompt, retries = 2) {
-  if (!GEMINI_KEY) return null;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_KEY}`;
+// ─── Quality-First Generation (MiniMax M3 — Anthropic-compatible) ───
+// Single provider. Updated 2026-08-07: removed Gemini + DeepSeek.
+async function generateBlogPostMiniMax(topic, prompt, retries = 2) {
+  if (!MINIMAX_API_KEY) {
+    console.error("  MINIMAX_API_KEY not set");
+    return null;
+  }
+  const url = `${MINIMAX_BASE_URL}/v1/messages`;
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const resp = await fetch(url, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": MINIMAX_API_KEY,
+          "anthropic-version": MINIMAX_API_VERSION,
+        },
         body: JSON.stringify({
-          contents: [{ role: "user", parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 8000 },
+          model: MINIMAX_MODEL,
+          max_tokens: 8000,
+          messages: [{ role: "user", content: prompt }],
         }),
       });
-      if (resp.status === 503 && attempt < retries) {
-        const wait = 2 + attempt * 3;  // 2s, 5s, 8s
-        console.log(`  Gemini 503 (attempt ${attempt+1}/${retries+1}), retrying in ${wait}s...`);
-        await new Promise(r => setTimeout(r, wait * 1000));
+      if (resp.status === 529 && attempt < retries) {
+        const wait = 2 + attempt * 3;
+        console.log(`  MiniMax overloaded (attempt ${attempt + 1}/${retries + 1}), retrying in ${wait}s...`);
+        await new Promise((r) => setTimeout(r, wait * 1000));
         continue;
       }
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${(await resp.text()).substring(0, 200)}`);
+      if (!resp.ok) {
+        const errText = (await resp.text()).substring(0, 200);
+        throw new Error(`HTTP ${resp.status}: ${errText}`);
+      }
       const data = await resp.json();
-      return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      // Anthropic-style response: { content: [{type: "text", text: "..."}] }
+      const blocks = data.content || [];
+      const text = blocks
+        .filter((b) => b.type === "text")
+        .map((b) => b.text)
+        .join("");
+      if (text) return text;
+      throw new Error("Empty response from MiniMax");
     } catch (e) {
       if (attempt === retries) {
-        console.error(`  Gemini gen error: ${e.message}`);
+        console.error(`  MiniMax gen error: ${e.message}`);
         return null;
       }
     }
@@ -245,31 +267,9 @@ async function generateBlogPostGemini(topic, prompt, retries = 2) {
   return null;
 }
 
-async function generateBlogPostDeepSeek(topic, prompt) {
-  if (!DEEPSEEK_KEY) return null;
-  try {
-    const resp = await fetch("https://api.deepseek.com/v1/chat/completions", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Authorization": `Bearer ${DEEPSEEK_KEY}` },
-      body: JSON.stringify({
-        model: "deepseek-chat",
-        messages: [{ role: "user", content: prompt }],
-        temperature: 0.65,
-        max_tokens: 4500,
-      }),
-    });
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const data = await resp.json();
-    return data.choices?.[0]?.message?.content || "";
-  } catch (e) {
-    console.error(`  DeepSeek gen error: ${e.message}`);
-    return null;
-  }
-}
-
 async function generateBlogPost(topic) {
-  if (!GEMINI_KEY && !DEEPSEEK_KEY) {
-    console.error("  No AI provider configured (GEMINI_API_KEY or DEEPSEEK_API_KEY required)");
+  if (!MINIMAX_API_KEY) {
+    console.error("  MINIMAX_API_KEY not set — blog content generation requires MiniMax M3");
     return null;
   }
 
@@ -349,16 +349,11 @@ OUTPUT EXACTLY THIS JSON (no markdown outside the JSON, no code fences, no pream
   "relatedCalculators": ["${calc.slug}", "budget", "savings-goal", "retirement"]
 }`;
 
-  // Try Gemini first (preferred for content)
-  let raw = await generateBlogPostGemini(topic, prompt);
-  let provider = "gemini";
+  // Single provider: MiniMax M3 (Anthropic-compatible)
+  const raw = await generateBlogPostMiniMax(topic, prompt);
+  const provider = "minimax";
   if (!raw) {
-    console.log("  Gemini failed, trying DeepSeek fallback...");
-    raw = await generateBlogPostDeepSeek(topic, prompt);
-    provider = "deepseek";
-  }
-  if (!raw) {
-    console.error("  All AI providers failed.");
+    console.error("  MiniMax generation failed.");
     return null;
   }
   console.log(`  Generated by: ${provider}`);
@@ -845,10 +840,10 @@ async function main() {
   }
 
   if (args.includes("--raw")) {
-    // Force-save raw Gemini output to /tmp/blog-agent-raw.txt and exit
+    // Force-save raw MiniMax output to /tmp/blog-agent-raw.txt and exit
     try {
       const topic_prompt = `Generate a 200-word blog JSON about ${topic.title} for ${topic.cat}. Include 4 internal links to /calculators/SLUG.`;
-      const raw = await generateBlogPostGemini(topic, topic_prompt);
+      const raw = await generateBlogPostMiniMax(topic, topic_prompt);
       require("fs").writeFileSync("/tmp/blog-agent-raw.txt", raw);
       console.log("✓ Raw saved to /tmp/blog-agent-raw.txt (length:", raw.length, ")");
     } catch (e) {
@@ -857,7 +852,7 @@ async function main() {
     return;
   }
 
-  console.log("\n✍️ Generating blog post via Gemini (DeepSeek fallback)...");
+  console.log("\n✍️ Generating blog post via MiniMax M3...");
   const post = await generateBlogPost(topic);
   if (!post) {
     console.error("❌ Generation failed.");
