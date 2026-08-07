@@ -3480,4 +3480,43 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 </ul>
 <p>The 28/36 rule is a starting point, not gospel. Your real affordability depends on your debts, your market, your job stability, and your lifestyle. Run the numbers, then decide.</p>`,
   },
+  {
+    slug: "50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+    title: "50/30/20 Budget Rule Guide: Simple Plan That Works in 2026",
+    description: "Learn the 50/30/20 budget rule guide with real 2026 dollar examples, a worked math breakdown, step-by-step setup, and common mistakes to avoid.",
+    category: "personal",
+    publishedAt: new Date("2026-08-07"),
+    readingTime: 6,
+    content: `<div><h2>Quick Answer</h2><p>The 50/30/20 budget rule splits your after-tax income into three buckets: 50% for needs like rent and groceries, 30% for wants like dining and streaming, and 20% for savings and debt payoff. It works because the percentages are simple enough to remember but flexible enough to fit most incomes. If you bring home $5,000 a month, that is $2,500 for needs, ];,500 for wants, and ];,000 for savings and debt.</p>
+
+<h2>The Basics</h2><p>The 50/30/20 rule was popularized by Senator Elizabeth Warren in her book <em>All Your Worth</em>, and it remains one of the most practical budgeting frameworks for everyday people. You do not need a finance degree to use it. You need a paycheck and a calculator.</p>
+<p>Your starting number is your <strong>after-tax income</strong>. That is the money that actually lands in your bank account, not your gross salary. For someone earning $75,000 a year in 2026, after federal income tax, Social Security, Medicare, and a typical state tax, take-home pay often lands around $58,000, or roughly $4,833 a month.</p>
+<p>The 50% slice covers non-negotiable expenses: rent or mortgage payments, utilities, groceries, insurance, minimum debt payments, and transportation. If your needs consistently exceed 50%, that is a signal your housing or transportation costs are out of balance, not that the rule is wrong.</p><p>The 30% slice covers wants: dining out, subscriptions, hobbies, vacations, the new phone. Guilt-free spending lives here. The point is to plan for it, not to feel bad about it.</p><p>The 20% slice is the future-you bucket. It funds emergency savings, retirement contributions, extra debt payments beyond the minimum, and long-term goals like a home down payment. If you cannot hit 20% right away, start with 10% and build up.</p><p>If you want to see the math play out live, try the <a href="/calculators/mortgage-calculator">Budget Planner</a> and plug in your real numbers.</p>
+
+<h2>The Math</h2><p>Let us run a real example. Take-home pay is $5,000 per month.</p><table>
+<thead>
+<tr><th>Category</th><th>Percent</th><th>Monthly</th><th>Annual</th></tr>
+</thead>
+<tbody>
+<tr><td>Needs</td><td>50%</td><td>$2,500</td><td>$30,000</td></tr>
+<tr><td>Wants</td><td>30%</td><td>];,500</td><td>];8,000</td></tr>
+<tr><td>Savings & Debt</td><td>20%</td><td>];,000</td><td>];2,000</td></tr>
+</tbody>
+</table>
+<p>Put that ];,000 monthly savings into a retirement account earning 7% annually. After 30 years, the math says roughly ];,224,000, assuming monthly contributions. That is the quiet power of the 20% slice: it is not dramatic, but it compounds hard over decades.</p><p>Even at $400 a month into savings, the same 7% return over 30 years lands near $610,000. Starting smaller beats starting later.</p>
+
+<h2>Step-by-Step</h2><ol>
+<li><strong>Calculate your real take-home pay.</strong> Look at your last pay stub. Use the net figure, not the gross. If your income varies, average the last three months.</li>
+<li><strong>Apply the percentages.</strong> Multiply your take-home by 0.50, 0.30, and 0.20. Write these three numbers down. They are your monthly targets.</li>
+<li><strong>Categorize your last 30 days of spending.</strong> Pull up your bank or card statement. Tag every expense as a need, want, or savings/debt. Compare your actuals to your targets.</li>
+<li><strong>Adjust one category at a time.</strong> Pick the largest gap between actual and target. If wants are 45% instead of 30%, trim two subscriptions and two takeout orders. If needs are 65%, review your largest fixed cost, usually housing, using the <a href="/calculators/refinance-calculator">Home Affordability Calculator</a>.</li>
+</ol>
+
+<h2>Common Mistakes</h2><p><strong>Mistake 1: Counting credit card payments as needs.</strong> Only the minimum payment is a need. Anything you charge beyond what you can pay off that month is a want, and the balance you carry is debt to attack with your 20% slice.</p><p><strong>Mistake 2: Saving whatever is left at the end of the month.</strong> Reverse the order. Move savings first, then spend what is left. Even $50 a month, automated, beats ];00 a month you keep meaning to save.</p><p><strong>Mistake 3: Letting housing eat 40% or more.</strong> If your rent or <a href="/calculators/mortgage-calculator">mortgage payment</a> pushes needs above 60%, the rest of the budget collapses. Test a realistic scenario with the <a href="/calculators/net-profit-margin">Rent vs Buy Calculator</a> before signing a new lease or offer.</p>
+
+<h2>Frequently Asked Questions</h2><h3>What is the 50/30/20 budget rule?</h3><p>The 50/30/20 budget rule is a simple framework that splits after-tax income into 50% needs, 30% wants, and 20% savings or debt repayment. It gives every dollar a job without requiring detailed tracking or spreadsheets.</p><h3>How does the 50/30/20 rule work for irregular income?</h3><p>Use your lowest typical month as the baseline for the 50/30/20 split. When higher-income months arrive, route the surplus straight into your 20% savings slice or a buffer account so slow months still fit the framework.</p><h3>When should I use the 50/30/20 rule?</h3><p>Use it when you want a low-maintenance budgeting system or when you are starting from zero. If your debts are high and interest rates are painful, some versions tilt savings closer to 30% until balances drop.</p><h3>Is the 50/30/20 rule good for high earners?</h3><p>Yes, though high earners often shift more toward the 20% slice for early retirement or wealth building. The percentages are a starting point, and the discipline matters more than the exact ratio once your needs are comfortably under 50%.</p>
+
+<p>Run the numbers yourself: <a href="/calculators/mortgage-calculator">Budget Planner</a></p></div>`,
+    relatedCalculators: ["savings-goal"],
+  },
 ];
