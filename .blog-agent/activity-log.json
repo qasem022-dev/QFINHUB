@@ -410,5 +410,34 @@
       "source": "evergreen",
       "wordCount": 1163
     }
+  },
+  {
+    "ts": "2026-08-07T12:00:56.562Z",
+    "type": "generation_failed",
+    "details": {
+      "kw": "50 30 20 budget rule guide"
+    }
+  },
+  {
+    "ts": "2026-08-07T18:04:45.085Z",
+    "type": "published",
+    "details": {
+      "slug": "50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+      "kw": "50 30 20 budget rule guide",
+      "cat": "personal",
+      "source": "evergreen",
+      "wordCount": 835
+    }
+  },
+  {
+    "ts": "2026-08-08T12:01:12.552Z",
+    "type": "published",
+    "details": {
+      "slug": "first-time-home-buyer-guide-2026-costs-steps-and-real-numbers",
+      "kw": "first time home buyer guide 2026",
+      "cat": "mortgage",
+      "source": "evergreen",
+      "wordCount": 1003
+    }
   }
 ]
