@@ -3583,4 +3583,67 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 <p>Run the numbers yourself: <a href="/calculators/mortgage-affordability">Mortgage Affordability Calculator</a></p></div>`,
     relatedCalculators: ["mortgage-affordability", "mortgage-calculator"],
   },
+  {
+    slug: "student-loan-repayment-strategy-comparison-find-your-fit",
+    title: "Student Loan Repayment Strategy Comparison: Find Your Fit",
+    description: "Compare federal student loan repayment plans side by side with real 2026 dollar examples. See which plan saves you money and fits your budget best.",
+    category: "loan",
+    publishedAt: new Date("2026-08-10"),
+    readingTime: 6,
+    content: `<div><h2>Quick Answer</h2>
+<p>Choosing the right federal student loan repayment plan usually comes down to three questions: how much do you owe, what does your monthly cash flow look like, and how long until you want to be debt free? Your <strong>student loan repayment strategy comparison</strong> should weigh monthly payment, total interest paid, and forgiveness eligibility, because the cheapest plan on paper isn't always the cheapest plan for your life.</p>
+
+<h2>The Basics</h2>
+<p>Federal student loans come with several repayment paths, and each one treats your balance, your income, and your timeline differently. The Standard plan spreads payments over 10 years. Graduated starts low and rises every two years. Extended stretches the term to 20 or 25 years.</p>
+<p>Income-Driven Repayment (IDR) plans like SAVE, PAYE, IBR, and ICR cap your payment at a percentage of your discretionary income, usually 5% to 20%. Most IDR plans also offer forgiveness after 20 to 25 years of qualifying payments, though the forgiven balance is taxable.</p>
+<p>Consolidation through Direct Consolidation Loans lets you combine multiple federal loans into one. It doesn't lower your rate (it uses a weighted average), but it can unlock certain plans and simplify billing.</p>
+<p>Refinancing into a private loan can drop your rate if your credit is strong, but you give up federal protections like deferment, forbearance, and IDR. That's a one-way door most people shouldn't walk through without running the numbers first.</p>
+<p>The plan you pick affects how much interest you pay over the life of the loan. A <a href="/calculators/hourly-to-salary">Student Loan Calculator</a> lets you model each option in minutes and see the actual dollar difference, not just guess.</p>
+<p>If your loans are sitting with a servicer today, you're allowed to change plans once or even twice a year. So this isn't a permanent decision. It's the first decision.</p>
+
+<h2>The Math</h2>
+<p>Consider $35,000 in federal unsubsidized loans at 6.5% APR, the typical 2026 rate for a graduate borrower.</p>
+<p>On the <strong>Standard 10-year plan</strong>, the monthly payment is about $398 and total interest paid is ];2,758. You finish debt-free in a decade.</p>
+<p>On the <strong>Graduated plan</strong>, you start around $246 a month and payments climb every 24 months. Total interest climbs to roughly ];5,420.</p>
+<p>On an <strong>IDR plan with a 10% discretionary income cap</strong>, assume a starting salary of $52,000. Your year-one payment lands near ];83. Over 20 years you'll pay around $43,900 total, with forgiveness of the remaining balance, which may be taxed as income.</p>
+<p>The Standard plan costs the least in raw dollars. The IDR plan costs the most but keeps your cash flow loose when you're early in your career. Run both through a <a href="/calculators/discount-calculator">Loan Amortization Calculator</a> before you commit.</p>
+
+<table>
+<thead>
+<tr><th>Plan Type</th><th>Monthly Payment (Year 1)</th><th>Total Interest Paid</th><th>Payoff Timeline</th></tr>
+</thead>
+<tbody>
+<tr><td>Standard 10-year</td><td>$398</td><td>];2,758</td><td>10 years</td></tr>
+<tr><td>Graduated 10-year</td><td>$246 rising</td><td>];5,420</td><td>10 years</td></tr>
+<tr><td>Extended 25-year</td><td>$245</td><td>$38,400</td><td>25 years</td></tr>
+<tr><td>IDR (10% cap)</td><td>];83</td><td>$43,900 paid</td><td>20 years + forgiveness</td></tr>
+</tbody>
+</table>
+
+<h2>Step-by-Step</h2>
+<ol>
+<li><strong>Pull your real numbers.</strong> Log in to your servicer, grab the total balance, interest rate per loan, and minimum due. A <a href="/calculators/college-savings">Loan Payment Calculator</a> makes this faster than spreadsheet formulas.</li>
+<li><strong>Model three scenarios.</strong> Run the math on Standard, on the IDR plan you'd qualify for, and on Extended. Compare monthly payment, total interest, and payoff date side by side.</li>
+<li><strong>Stress-test your cash flow.</strong> If your IDR payment is $200 and your actual budget allows $350, paying the higher amount accelerates payoff and cuts interest. Try those extra payments in an <a href="/calculators/inventory-turnover">Early Payoff Calculator</a> to see how much time falls off the calendar.</li>
+<li><strong>Recheck every 12 months.</strong> Recertify your income for IDR, and revisit your plan choice after a raise or a job change. Your best plan at $52,000 may not be your best plan at $74,000.</li>
+</ol>
+
+<h2>Common Mistakes</h2>
+<p><strong>Mistake 1: Picking Standard without checking IDR eligibility.</strong> Borrowers who would have qualified for a $200 IDR payment default to a $398 Standard payment and stretch their budget thin. The fix: check IDR eligibility before assuming Standard is your only option.</p>
+<p><strong>Mistake 2: Ignoring capitalization.</strong> Unpaid interest on unsubsidized loans capitalizes when you enter repayment, meaning it's added to your principal balance. If your balance was $30,000 and $2,400 of interest capitalizes, you now owe $32,400. The fix: pay the accruing interest during school or grace period whenever possible.</p>
+<p><strong>Mistake 3: Chasing forgiveness without running the tax math.</strong> A forgiven IDR balance can be treated as taxable income in the year of forgiveness. A $30,000 forgiveness could add $4,500 to $7,500 to your tax bill depending on your bracket. The fix: model the tax hit before counting on forgiveness as a windfall.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is the difference between Standard and Graduated repayment?</h3>
+<p>Standard keeps your payment the same for all 120 months. Graduated starts lower and bumps up every 24 months. Standard costs less in total interest but demands more cash flow upfront. Graduated suits borrowers whose income is rising fast.</p>
+<h3>How does Income-Driven Repayment actually work?</h3>
+<p>Your payment is set to a percentage of your discretionary income, usually 10% to 20%, depending on the plan. You recertify income annually. After 20 or 25 years of qualifying payments, the remaining balance may be forgiven, though it can be taxed as ordinary income.</p>
+<h3>When should you refinance federal loans into a private loan?</h3>
+<p>Only when your rate drops significantly, your income and job are stable, and you don't expect to need IDR, deferment, or federal forgiveness. For most federal borrowers, the protections outweigh a 1% rate cut.</p>
+<h3>Is consolidation the same as refinancing?</h3>
+<p>No. Federal Direct Consolidation combines your federal loans at a weighted average rate with no credit check. Private refinancing replaces federal loans with a new private loan based on your credit score. The first protects your federal benefits. The second usually erases them.</p>
+<p>Want a quick way to see how extra payments change your timeline? Compare consolidation options through a <a href="/calculators/lifetime-value">Debt Consolidation Calculator</a> or model accelerated payoff with a <a href="/calculators/sales-tax">Personal Loan Calculator</a> to see what your payment would look like if you refinanced.</p>
+<p>Run the numbers yourself: <a href="/calculators/credit-card-payoff">Debt Payoff Calculator</a></p></div>`,
+    relatedCalculators: ["credit-card-payoff", "savings-goal"],
+  },
 ];

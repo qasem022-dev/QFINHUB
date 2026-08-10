@@ -439,5 +439,26 @@
       "source": "evergreen",
       "wordCount": 1003
     }
+  },
+  {
+    "ts": "2026-08-09T12:00:41.289Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "student loan repayment strategy comparison",
+      "issues": [
+        "Missing comparison table"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-10T12:01:02.531Z",
+    "type": "published",
+    "details": {
+      "slug": "student-loan-repayment-strategy-comparison-find-your-fit",
+      "kw": "student loan repayment strategy comparison",
+      "cat": "loan",
+      "source": "evergreen",
+      "wordCount": 1008
+    }
   }
 ]
