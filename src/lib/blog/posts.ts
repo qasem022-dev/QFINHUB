@@ -3646,4 +3646,36 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 <p>Run the numbers yourself: <a href="/calculators/credit-card-payoff">Debt Payoff Calculator</a></p></div>`,
     relatedCalculators: ["credit-card-payoff", "savings-goal"],
   },
+  {
+    slug: "net-worth-by-age-comparison-where-should-you-be-in-2026",
+    title: "Net Worth by Age Comparison: Where Should You Be in 2026?",
+    description: "Net worth by age comparison for 2026. See real benchmarks for your 30s, 40s, and 50s, plus the math behind catching up and growing wealth faster.",
+    category: "personal",
+    publishedAt: new Date("2026-08-12"),
+    readingTime: 6,
+    content: `<div><h2>Quick Answer</h2><p>Most benchmarks suggest a net worth near $200,000 by 30, around $550,000 by 40, and roughly ];.1 million by 50, though these numbers shift with income, debt, and where you live. The honest truth is that net worth is a trailing indicator, not a scoreboard. What matters more is your savings rate, your debt trajectory, and whether your wealth is compounding.</p><h2>The Basics</h2><p>Net worth sounds formal, but the math is simple: add everything you own (house, retirement accounts, brokerage, cash, car value), then subtract everything you owe (mortgage, student loans, credit cards, car loans). The result is your net worth. A negative number isn't a moral failing; many 25-year-olds with student loans start in the red.</p><p>Benchmarks by age exist because people need reference points. If you don't know what "normal" looks like, you can't tell whether you're behind, ahead, or right on track. The most-cited dataset comes from Federal Reserve survey data, which publishes median and mean net worth by age group every few years. The median is usually more useful than the average, since a few multimillionaires pull the mean higher.</p><p>Here's a rough 2026 net worth comparison by age using adjusted survey medians. Treat these as guardrails, not goals.</p><table>
+<thead>
+<tr><th>Age</th><th>Median Net Worth (2026 est.)</th><th>Comfortable Range</th></tr>
+</thead>
+<tbody>
+<tr><td>30</td><td>$40,000</td><td>];00,000–$250,000</td></tr>
+<tr><td>40</td><td>];35,000</td><td>$300,000–$700,000</td></tr>
+<tr><td>50</td><td>$246,000</td><td>$600,000–];,200,000</td></tr>
+<tr><td>60</td><td>$364,000</td><td>$900,000–];,800,000</td></tr>
+</tbody>
+</table><p>If you're above the median for your age, you're doing better than half of your peers. If you're below, you're not failing; you may just be in a high-cost-of-living area, paying off student debt, or earlier in your career.</p><p>The bigger mistake is comparing yourself to a 50-year-old when you're 32. Time is your most valuable asset, and compounding rewards patience. A <a href="/calculators/mortgage-calculator">Budget Planner</a> can help you see where your money is going each month, which is the first step toward directing more toward savings and investments.</p>
+<h2>The Math</h2><p>Suppose you're 32 with $50,000 in net worth and want to reach ]; million by 60. That's 28 years of compounding. At a 7% real annual return, $50,000 grows to roughly $403,000 on its own. To close the gap to ];,000,000, you'd need to contribute about $575 per month for 28 years, totaling roughly ];93,000 in personal contributions.</p><p>The same $50,000 over 38 years (age 22 to 60) at 7% becomes about $819,000 without further contributions. Add $250 a month and you cross ]; million. The math isn't magic; it's consistency.</p>
+<h2>Step-by-Step</h2><ol>
+<li><strong>Calculate your net worth today.</strong> List every asset and every liability. Use a spreadsheet, an app, or our <a href="/calculators/mortgage-calculator">Budget Planner</a> to track cash flow alongside.</li>
+<li><strong>Compare to the benchmarks above.</strong> Note whether you're below, at, or above the median for your age, then ignore the comparison and focus on your own trend.</li>
+<li><strong>Set a savings rate target.</strong> 15% of gross income is a solid starting point. If that's painful, start at 5% and raise it 1% every six months.</li>
+<li><strong>Automate contributions to tax-advantaged accounts first.</strong> 401(k) match, then Roth IRA, then a taxable brokerage. Automate on payday so the money never lands in your checking account.</li>
+</ol>
+<h2>Common Mistakes</h2><p><strong>Mistake 1: Counting your home equity as liquid wealth.</strong> Your house counts toward net worth, but you can't spend equity without selling or borrowing. A $500,000 home with a $400,000 mortgage gives you ];00,000 in equity, not $500,000 in spendable assets. The fix: track liquid net worth (cash, investments, retirement) separately from total net worth so you see your true flexibility. A <a href="/calculators/mortgage-calculator">home affordability calculator</a> helps you think clearly about how much house actually fits your financial plan.</p><p><strong>Mistake 2: Ignoring student loans while comparing to peers.</strong> Someone with $0 in student debt looks richer on paper at 30, even if they're saving nothing. Debt carried into your 30s is normal. The fix: focus on debt payoff and retirement contributions simultaneously if your employer offers a match; never leave the match on the table.</p><p><strong>Mistake 3: Lifestyle inflation as income rises.</strong> A 10% raise that becomes a 10% bigger apartment leaves your savings rate flat. The fix: lock in your savings rate the day a raise lands. If you're saving 10% now and get a 10% raise, jump to 15% before you adjust spending. Run the new numbers through a <a href="/calculators/mortgage-calculator">budget planner</a> to see how much faster you can move.</p>
+<h2>Frequently Asked Questions</h2><h3>What is a healthy net worth by age?</h3><p>A healthy net worth by age roughly doubles every decade: around ];00,000 by 30, $300,000 by 40, and $700,000 by 50, depending on income and region. These are guardrails, not pass/fail scores, and high-cost cities shift the math considerably.</p>
+<h3>How does net worth differ from income?</h3><p>Income is what you earn each year, while net worth is everything you own minus everything you owe at a single moment. A high earner with no savings can have a low net worth, and a modest earner who saves aggressively can have a high one.</p>
+<h3>When should I start worrying about my net worth?</h3><p>Start paying attention in your late 20s, when compounding has time to matter. If your net worth is shrinking or flat by 35, that's a signal to revisit your savings rate and debt plan; our <a href="/calculators/mortgage-calculator">budget planner</a> can surface where money is leaking.</p>
+<h3>Is it normal to have a negative net worth at 30?</h3><p>Yes, especially with student loans or medical debt. A negative net worth at 30 isn't a disaster; a negative net worth at 45 with no clear plan to reverse it is worth addressing with a <a href="/calculators/pmi-calculator">mortgage payoff calculator</a> or similar tools to map debt reduction.</p><p>Run the numbers yourself: <a href="/calculators/mortgage-calculator">Budget Planner</a></p></div>`,
+    relatedCalculators: ["savings-goal"],
+  },
 ];

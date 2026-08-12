@@ -460,5 +460,26 @@
       "source": "evergreen",
       "wordCount": 1008
     }
+  },
+  {
+    "ts": "2026-08-11T12:00:49.273Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "net worth by age comparison",
+      "issues": [
+        "Only 3 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-12T12:01:15.298Z",
+    "type": "published",
+    "details": {
+      "slug": "net-worth-by-age-comparison-where-should-you-be-in-2026",
+      "kw": "net worth by age comparison",
+      "cat": "personal",
+      "source": "evergreen",
+      "wordCount": 933
+    }
   }
 ]
