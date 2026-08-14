@@ -3741,4 +3741,70 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 <p>Run the numbers yourself: <a href="/calculators/compound-interest">Compound Interest Calculator</a></p></div>`,
     relatedCalculators: ["compound-interest", "dividend-calculator"],
   },
+  {
+    slug: "how-much-house-can-i-afford-the-28-36-rule-explained",
+    title: "How Much House Can I Afford? The 28/36 Rule Explained",
+    description: "Learn how much house can I afford using the 28/36 rule. See real 2026 examples, a step-by-step affordability calculation, and common mistakes to avoid.",
+    category: "mortgage",
+    publishedAt: new Date("2026-08-14"),
+    readingTime: 6,
+    content: `<div><h2>Quick Answer</h2>
+<p>The 28/36 rule says your monthly housing costs should stay under 28% of your gross income, and your total debt payments should stay under 36%. On a ];20,000 salary, that means a housing budget of about $2,800/month and total debt under $3,600/month. In 2026, with 30-year mortgage rates hovering around 6.75%, that translates to roughly a $470,000 mortgage, or a home price near $495,000 after a 5% down payment.</p>
+
+<h2>The Basics</h2>
+<p>The 28/36 rule is one of the oldest and most trusted guidelines in personal finance. Lenders have used it for decades because it actually predicts who can keep up with their payments. The "28" is your front-end ratio: housing costs only. The "36" is your back-end ratio: housing plus every other debt payment you carry.</p>
+<p>Housing costs include more than just principal and interest. You also need to count property taxes, homeowners insurance, and HOA dues if any apply. Lenders call this full picture PITI, and it's what actually shows up on your monthly statement.</p>
+<p>The 36% back-end ratio covers car loans, student loans, credit card minimums, and any other monthly debt obligations. If you're carrying $600/month in student loans and a $350/month car payment, that $950 reduces what you can safely spend on a house.</p>
+<p>One thing the rule does not capture is your down payment. A larger down payment lowers your monthly payment and can help you qualify for better rates. In 2026, putting 20% down also lets you skip private mortgage insurance, which usually adds 0.5% to 1.5% of the loan amount to your yearly cost.</p>
+<p>The 28/36 rule is a starting point, not a law. Some buyers in expensive coastal markets stretch past 28% just to afford something reasonable, and that's a choice they can make with eyes open. Use our <a href="/calculators/pmi-calculator">home affordability calculator</a> to test your own numbers in seconds.</p>
+
+<h2>The Math</h2>
+<p>Here's a real 2026 example using a household gross income of ];20,000/year, which works out to ];0,000/month.</p>
+<p><strong>Step 1: Front-end ceiling.</strong> 28% of ];0,000 = $2,800/month for PITI.</p>
+<p><strong>Step 2: Back-end ceiling.</strong> 36% of ];0,000 = $3,600/month for all debt.</p>
+<p><strong>Step 3: Subtract existing debt.</strong> Say you have $700/month in student loans and a $400/month car payment. That leaves $2,500/month for PITI under the 36% rule, which is now the binding limit.</p>
+<p><strong>Step 4: Convert to loan amount.</strong> At 6.75% over 30 years, a $2,500/month PITI (with roughly $400/month for taxes and insurance on a mid-range home) supports about $350,000 in principal and interest. That funds a loan near $385,000, or a $405,000 home with 5% down.</p>
+<p><strong>Step 5: Stretch test.</strong> If you had no other debt, the front-end 28% rule would allow $2,800/month, supporting a loan around $430,000 and a home near $452,000. Same income, different answer, purely based on existing debt.</p>
+
+<h2>Step-by-Step</h2>
+<ol>
+  <li><strong>Add up your gross monthly income.</strong> Use income before taxes. Include base salary, bonuses averaged over two years, and any reliable side income. If you're buying with a partner, combine both incomes.</li>
+  <li><strong>Multiply by 0.28 to find your housing ceiling.</strong> That number is your maximum PITI, including taxes, insurance, and HOA fees. Anything above this is generally considered house-poor.</li>
+  <li><strong>Add up your other monthly debt payments.</strong> Car loans, student loans, credit card minimums, personal loans, and child support all count. Multiply your gross monthly income by 0.36, then subtract your other debt to find what remains for housing.</li>
+  <li><strong>Use the lower of the two numbers as your true housing budget.</strong> Then plug that figure into the <a href="/calculators/mortgage-affordability">mortgage affordability calculator</a> along with your down payment and current rate to see what home price you can actually afford.</li>
+</ol>
+
+<h2>Common Mistakes</h2>
+<p><strong>Mistake 1: Forgetting taxes and insurance.</strong> A lot of buyers shop for a home based only on the mortgage payment they were pre-approved for. Then property tax and insurance hit, and the real payment is $400-$700 higher. Always run the full PITI number before you make an offer.</p>
+<p><strong>Mistake 2: Quoting gross instead of take-home.</strong> The 28/36 rule uses gross income, but your actual budget runs on what hits your bank account. A $2,800 housing payment on ];0,000 gross income can still feel tight after 25% goes to federal and state taxes, plus 7.65% to payroll taxes, plus retirement contributions. Plan your cash flow with a <a href="/calculators/refinance-calculator">mortgage amortization calculator</a> so you see the true monthly hit.</p>
+<p><strong>Mistake 3: Ignoring maintenance and repairs.</strong> A common rule of thumb is 1% of your home's value per year for upkeep. On a $450,000 home, that's $3,750/year, or about $312/month. Budget for it before you commit, or <a href="/calculators/net-profit-margin">rent vs buy calculator</a> might surprise you.</p>
+
+<h2>Income Scenarios at a Glance</h2>
+<table>
+<thead>
+<tr><th>Gross Income (2026)</th><th>28% Housing Ceiling</th><th>36% Total Debt Ceiling</th><th>Estimated Home Price (5% down, 6.75%)</th></tr>
+</thead>
+<tbody>
+<tr><td>$60,000</td><td>];,400/mo</td><td>];,800/mo</td><td>$205,000</td></tr>
+<tr><td>$90,000</td><td>$2,100/mo</td><td>$2,700/mo</td><td>$305,000</td></tr>
+<tr><td>];20,000</td><td>$2,800/mo</td><td>$3,600/mo</td><td>$405,000</td></tr>
+<tr><td>];60,000</td><td>$3,733/mo</td><td>$4,800/mo</td><td>$540,000</td></tr>
+<tr><td>$200,000</td><td>$4,667/mo</td><td>$6,000/mo</td><td>$675,000</td></tr>
+</tbody>
+</table>
+<p>Estimates assume $400/month in taxes and insurance on lower-priced homes and $700/month on higher-priced homes, with no other monthly debt. If you carry other debt, the 36% column becomes the binding limit, and your real home price drops accordingly.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is the 28/36 rule for buying a house?</h3>
+<p>The 28/36 rule says spend no more than 28% of gross monthly income on housing costs (PITI) and no more than 36% on total monthly debt. It's a quick sanity check used by lenders and homebuyers alike to gauge affordability without running a full underwriting model.</p>
+<h3>How does the 28/36 rule work with existing debt?</h3>
+<p>Existing debt eats into your housing budget under the 36% back-end limit. If your gross income is ];0,000/month and you already pay ];,000 toward other debts, only $2,600 remains for housing under the back-end rule, even though the front-end 28% rule alone would allow $2,800.</p>
+<h3>When should I stretch past the 28/36 rule?</h3>
+<p>Stretching past the rule can make sense in high-cost areas where renting is even more expensive, when you have a large emergency fund, when your income is rising, or when you're buying a starter home you'll keep for under five years. Just make sure the stretch is conscious and temporary, not a 30-year grind.</p>
+<h3>Is the 28/36 rule still accurate in 2026?</h3>
+<p>Yes, the math still holds, though qualifying for a mortgage today is harder than the rule suggests. Lenders now typically approve ratios closer to 30/45 with strong credit and reserves, and FHA loans may go to 31/43. The 28/36 rule remains the most conservative and most sustainable benchmark for real affordability. You can compare scenarios with our <a href="/calculators/refinance-calculator">refinance calculator</a> if you're weighing a future move.</p>
+
+<p>Run the numbers yourself: <a href="/calculators/mortgage-affordability">Mortgage Affordability Calculator</a></p></div>`,
+    relatedCalculators: ["mortgage-affordability", "savings-goal"],
+  },
 ];
