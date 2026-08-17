@@ -5,12 +5,14 @@ Submits URLs one-by-one via GSC URL Inspection + Request Indexing.
 """
 
 import json, time, os, sys, argparse
+from datetime import datetime, timedelta
 
 os.environ["LD_LIBRARY_PATH"] = os.path.expanduser("~/.local/lib")
 
 QUEUE_FILE = ".optimizer-data/indexing-fix-queue.json"
 LOG_FILE = ".optimizer-data/gsc-submission-log.json"
 MAX_PER_DAY = 13
+COOLDOWN_DAYS = 7
 
 def load_queue():
     with open(QUEUE_FILE) as f:
@@ -30,15 +32,24 @@ def get_urls(queue, log, max_n=MAX_PER_DAY):
         print(f"DAILY LIMIT: {today_count_unique}/{max_n}")
         return []
     remaining = max_n - today_count_unique
-    submitted = {s["url"] for s in log["submissions"]}
+    # 7-day cooldown filter (pitfall #36): only consider URLs submitted within last 7 days as "in cooldown"
+    cutoff = datetime.now() - timedelta(days=COOLDOWN_DAYS)
+    in_cooldown = set()
+    for s in log["submissions"]:
+        try:
+            d = datetime.strptime(s.get("date", "")[:19], "%Y-%m-%d %H:%M:%S")
+            if d >= cutoff:
+                in_cooldown.add(s["url"])
+        except (ValueError, KeyError):
+            continue
     urls = []
     for url in queue.get("unknown_pages", []):
-        if url not in submitted:
+        if url not in in_cooldown:
             urls.append({"url": url, "category": "UNKNOWN"})
             if len(urls) >= remaining: break
     if len(urls) < remaining:
         for url in queue.get("discovered_pages", []):
-            if url not in submitted:
+            if url not in in_cooldown:
                 urls.append({"url": url, "category": "DISCOVERED"})
                 if len(urls) >= remaining: break
     return urls
@@ -201,15 +212,11 @@ def save_results(results, stage=""):
             log["submissions"].append(r)
             existing.add(k)
             new_added += 1
-    # Dedup by url only (keep earliest)
-    seen = set()
-    deduped = []
-    for s in log["submissions"]:
-        if s["url"] not in seen:
-            deduped.append(s)
-            seen.add(s["url"])
-    log["submissions"] = deduped
-    log["total"] = len(deduped)
+    # Note: do NOT dedup by URL across the log — keep every submission as a
+    # separate event so daily_counts and the 7-day cooldown window both work
+    # correctly. The eligibility filter (get_urls) already restricts to the
+    # 7-day window; cross-day dedup would erase that signal.
+    log["total"] = len(log["submissions"])
     # Track daily counts
     daily = {}
     for s in log["submissions"]:
