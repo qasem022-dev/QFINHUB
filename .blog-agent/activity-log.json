@@ -503,5 +503,36 @@
       "source": "evergreen",
       "wordCount": 1098
     }
+  },
+  {
+    "ts": "2026-08-15T12:01:06.566Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "CD vs savings account comparison",
+      "issues": [
+        "Only 3 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-16T12:00:36.241Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "CD vs savings account comparison",
+      "issues": [
+        "Only 2 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-17T12:01:18.746Z",
+    "type": "published",
+    "details": {
+      "slug": "cd-vs-savings-account-comparison-where-to-park-cash-in-2026",
+      "kw": "CD vs savings account comparison",
+      "cat": "personal",
+      "source": "evergreen",
+      "wordCount": 996
+    }
   }
 ]

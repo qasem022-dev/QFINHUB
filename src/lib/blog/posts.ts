@@ -3807,4 +3807,61 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 <p>Run the numbers yourself: <a href="/calculators/mortgage-affordability">Mortgage Affordability Calculator</a></p></div>`,
     relatedCalculators: ["mortgage-affordability", "savings-goal"],
   },
+  {
+    slug: "cd-vs-savings-account-comparison-where-to-park-cash-in-2026",
+    title: "CD vs Savings Account Comparison: Where to Park Cash in 2026",
+    description: "CD vs savings account comparison for 2026. See real rates, exact dollar returns, and which option fits your timeline, goals, and emergency fund needs.",
+    category: "personal",
+    publishedAt: new Date("2026-08-17"),
+    readingTime: 6,
+    content: `<div><h2>Quick Answer</h2>
+<p>A high-yield savings account is the better home for cash you might need within the next 12 months, especially your emergency fund. A <a href="/calculators/mortgage-calculator">certificate of deposit</a> rewards you with a slightly higher rate in exchange for locking your money away for a set term. In 2026, the gap between the two is narrower than it used to be, so flexibility often wins.</p>
+
+<h2>The Basics</h2>
+<p>A high-yield savings account (HYSA) is a federally insured deposit account that pays a variable interest rate. You can add or withdraw money at any time, up to federal limits. Most online banks offering HYSAs in 2026 advertise rates in the 4.00% to 4.50% range.</p>
+<p>A certificate of deposit is also federally insured, but you commit to a fixed term, typically 6, 12, 18, or 24 months. The rate is locked in when you open the CD, and pulling money out early usually triggers a penalty that wipes out several months of interest.</p>
+<p>The trade-off is simple. HYSAs give you liquidity. CDs give you a small rate premium for giving up that liquidity. Whether that premium is worth it depends on your timeline.</p>
+<p>Both account types are insured by the FDIC at banks or the NCUA at credit unions, up to $250,000 per depositor, per institution. That insurance makes them the safest places for short-term cash, safer than brokerage sweep accounts or money market funds.</p>
+<p>One nuance worth knowing: HYSA rates can drop at any time when the Federal Reserve cuts its benchmark rate. CD rates stay fixed for the entire term, which is a quiet form of protection against rate cuts.</p>
+<p>If you are saving for a known expense in the next 1 to 3 years, like a home down payment, the right answer is usually to split your cash between an HYSA for the near-term portion and a CD ladder for the rest. Laddering means staggering CDs so a portion matures each year.</p>
+
+<h2>The Math</h2>
+<p>Here is what ];0,000 actually earns over one year in 2026, assuming the rates stay flat for simplicity.</p>
+<table>
+<thead>
+<tr><th>Account Type</th><th>Rate (2026)</th><th>Interest Earned</th><th>Ending Balance</th><th>Access to Funds</th></tr>
+</thead>
+<tbody>
+<tr><td>High-Yield Savings</td><td>4.25% APY</td><td>$425.00</td><td>];0,425.00</td><td>Any time, no penalty</td></tr>
+<tr><td>12-Month CD</td><td>4.65% APY</td><td>$465.00</td><td>];0,465.00</td><td>Locked 12 months, 3-month interest penalty for early withdrawal</td></tr>
+<tr><td>24-Month CD</td><td>4.40% APY</td><td>$898.96</td><td>];0,898.96</td><td>Locked 24 months</td></tr>
+</tbody>
+</table>
+<p>The CD wins on raw dollars, but only by $40 to $474 over the year. If you withdraw from the 12-month CD after 6 months, the 3-month interest penalty costs about ];16, which flips the math and leaves you with less than the HYSA.</p>
+
+<h2>Step-by-Step</h2>
+<ol>
+<li>Sort your cash into three buckets: emergency fund (3-6 months of expenses), near-term goals (under 12 months out), and mid-term goals (1-3 years out).</li>
+<li>Put the emergency fund and any cash you might need within 12 months into a high-yield savings account. Liquidity matters more than the extra $40 per ];0,000.</li>
+<li>For mid-term goals, open a CD ladder by splitting the balance across 12-month and 24-month CDs. You earn a higher rate on the longer CD while keeping the 12-month CD as a near-cash option when it matures.</li>
+<li>Recheck your rates every six months using the <a href="/calculators/mortgage-calculator">Budget Planner</a> to track your cash runway. If your HYSA rate drops and a no-penalty CD pays more, roll part of your savings into it.</li>
+</ol>
+
+<h2>Common Mistakes</h2>
+<p><strong>Mistake 1: Putting emergency fund money in a CD.</strong> The whole point of an emergency fund is instant access. Locking $8,000 into an 18-month CD to earn an extra $48 per year is not worth the stress when your car breaks down in month 4. Fix: keep 3-6 months of expenses in an HYSA, no exceptions.</p>
+<p><strong>Mistake 2: Chasing a teaser CD rate that requires a large minimum.</strong> Some banks advertise 5.00% APY on a 12-month CD, but only if you deposit $25,000 or more. For most households, the realistic ];0,000 tier pays 4.40% to 4.65%. Fix: read the rate sheet for your actual deposit size, not the headline rate.</p>
+<p><strong>Mistake 3: Building a CD ladder without a plan for the maturing CDs.</strong> When a CD matures, banks often roll it into a new CD at whatever the current low rate is. You wake up one day locked into a 2% CD. Fix: set a calendar reminder 7 days before each maturity date and decide in advance where the money should go. The <a href="/calculators/refinance-calculator">Refinance Calculator</a> can help you model different cash scenarios.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is a CD in simple terms?</h3>
+<p>A CD is a deposit account where you agree to leave your money untouched for a set period, usually 6 to 24 months, in exchange for a fixed interest rate higher than a regular savings account. Pull the money out early and you pay a penalty, often 3 to 6 months of interest.</p>
+<h3>How does a high-yield savings account differ from a regular savings account?</h3>
+<p>The difference is the interest rate. A regular savings account at a big bank paid around 0.05% APY for most of the last decade. A high-yield savings account at an online bank typically pays 4.00% to 4.50% APY in 2026, because online banks have lower overhead and pass the savings to you.</p>
+<h3>When should I choose a CD over a savings account?</h3>
+<p>Choose a CD when you have a specific expense 1 to 3 years away and you will not need the cash before the CD matures. A down payment fund, a known wedding date, or a planned home renovation are good fits. Choose an HYSA when your timeline is fuzzy or under 12 months.</p>
+<h3>Is it smart to put $20,000 in a CD in 2026?</h3>
+<p>It can be, if you genuinely will not need that $20,000 for the full CD term. At 4.65% APY on a 12-month CD, $20,000 earns about $930, compared to $850 in an HYSA at 4.25%. The $80 difference is real, but only meaningful if you resist the urge to withdraw early.</p>
+<p>Run the numbers yourself: <a href="/calculators/mortgage-calculator">Budget Planner</a></p></div>`,
+    relatedCalculators: ["savings-goal"],
+  },
 ];
