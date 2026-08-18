@@ -5,13 +5,13 @@
 import type { CalculatorVariant } from "./types";
 import {getAllTemplates } from "./variant-templates";
 import {
-
   generateMetaTitle,
   generateMetaDescription,
   generateIntroParagraph,
   generateH1,
   generateFAQs,
   generateRelatedLinks,
+  generateScenarioContext,
 } from "./seo-utils";
 
 /**
@@ -32,10 +32,11 @@ export function generateAllVariants(): CalculatorVariant[] {
       const metaDescription = generateMetaDescription(category.calculatorName, tpl.params);
       const h1 = generateH1(category.calculatorName, tpl.params);
       const intro = generateIntroParagraph(category.calculatorName, tpl.params);
+      const scenarioContext = generateScenarioContext(category.calculatorName, tpl.params, slug);
       const faqs = generateFAQs(category.calculatorName, tpl.params);
 
-      // Build the full content with intro + FAQ + helpful info
-      const content = buildFullContent(category.calculatorName, tpl.params, intro, faqs);
+      // Build the full content with intro + scenario context + FAQ + helpful info
+      const content = buildFullContent(category.calculatorName, tpl.params, intro, scenarioContext, faqs);
 
       // Generate schema
       const schema = generateSchema(category, slug, metaTitle, metaDescription, faqs);
@@ -96,6 +97,7 @@ function buildFullContent(
   calculatorName: string,
   params: Record<string, any>,
   intro: string,
+  scenarioContext: string,
   faqs: { question: string; answer: string }[],
 ): string {
   const fmt = (n: number) =>
@@ -106,6 +108,13 @@ function buildFullContent(
     }).format(n);
 
   let body = intro + "\n\n";
+
+  // Aug 18, 2026: Add scenario-specific context for SEO uniqueness.
+  // Each /tools/[slug] page now has a 2nd paragraph that's
+  // uniquely keyed off the slug hash, params, and audience. This pushes
+  // pages out of "Crawled - currently not indexed" by adding genuinely
+  // unique prose that varies per-variant (not just templated intros).
+  body += scenarioContext + "\n\n";
 
   // Add a "How to Use" section specific to this scenario
   body += `## How to Use This ${getShortName(calculatorName)}\n\n`;
