@@ -70,7 +70,22 @@ function isLiveScenario(slug: string): boolean {
 }
 
 export async function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname, searchParams } = request.nextUrl;
+
+  // ── Aug 18, 2026: noindex,nofollow for any URL with ?lang= query param ──
+  // The <HreflangTags /> component emits 8 alternate URLs per page (?lang=en|es|fr|
+  // de|it|pt|hi|zh). Without this, Google indexes them and GSC reports them as
+  // "Alternative page with proper canonical tag" (currently 59 pages in this bucket).
+  // The X-Robots-Tag HTTP header is the canonical signal Google honors — no DOM
+  // injection needed in middleware. They will deindex within 1-2 crawls.
+  const lang = searchParams.get("lang");
+  if (lang) {
+    const response = NextResponse.next({
+      request: { headers: new Headers(request.headers) },
+    });
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    return response;
+  }
 
   // ── 410 Gone for confirmed obsolete pages ────────────────────────
   // Phase 12.13 hardcoded paths
@@ -158,11 +173,18 @@ export async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Phase 12.13 + Jul 16: 410 Gone for obsolete scenario/geo pages
-    "/scenario/:path*",
-    "/calculators/refinance/:path*",
-    // Existing auth matchers
-    "/dashboard/:path*",
-    "/auth/:path*",
+    /*
+     * Aug 18, 2026: Catch-all matcher so the ?lang= noindex header is applied to
+     * every page (not just the explicit scenario/refinance/dashboard/auth paths).
+     * Without this, /blog?lang=fr, /decision?lang=en, /calculators/*?lang=hi etc.
+     * would not pass through the proxy and Google would continue indexing them.
+     *
+     * Excludes:
+     * - api/* (API routes, handle own headers)
+     * - _next/static, _next/image (static files)
+     * - favicon.ico
+     * - public files (sitemaps, robots, etc.)
+     */
+    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|news-sitemap.xml|.*\\.).*)",
   ],
 };

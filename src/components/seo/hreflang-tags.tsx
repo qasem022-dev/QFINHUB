@@ -12,7 +12,13 @@ const LOCALES = ["en", "es", "fr", "de", "it", "pt", "hi", "zh"];
  * Fixes GSC error: "Duplicate, Google chose different canonical than user"
  * Root cause: Hardcoded hreflang tags always pointed to /?lang=xx
  * instead of /current-page?lang=xx, creating a canonical conflict.
+ *
+ * Aug 18, 2026 note: The `?lang=` noindex signal is now handled ENTIRELY by
+ * the proxy.ts middleware (X-Robots-Tag HTTP header) — this component just
+ * continues emitting the hreflang links so international SEO stays intact.
+ * If we ever ship real translations, change ?lang= to /en/, /es/, etc.
  */
+
 export function HreflangTags() {
   const pathname = usePathname();
 
