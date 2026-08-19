@@ -3914,4 +3914,65 @@ Debt payoff is a marathon, not a sprint. Especially in the early stages, progres
 <p>Run the numbers yourself: <a href="/calculators/401k-calculator">Retirement Calculator</a></p></div>`,
     relatedCalculators: ["401k-calculator"],
   },
+  {
+    slug: "home-equity-loan-vs-heloc-costs-risks-and-real-uses",
+    title: "Home Equity Loan vs HELOC: Costs, Risks, and Real Uses",
+    description: "Home equity loan vs HELOC explained with real 2026 dollar examples. Compare rates, payments, risks, and which fits your situation before you borrow.",
+    category: "mortgage",
+    publishedAt: new Date("2026-08-19"),
+    readingTime: 6,
+    content: `<div><p>Borrowing against your home is one of the cheapest ways to access cash, but the loan you pick changes everything about how you repay. Here is the plain-English version, with real numbers, so you can decide which one fits your situation.</p>
+
+<h2>Quick Answer</h2>
+<p>A <strong>home equity loan</strong> gives you a lump sum at a fixed rate with fixed monthly payments. A <strong>HELOC</strong> works like a credit card: draw what you need, repay over time, and the rate is usually variable. Lump-sum, predictable expense? Home equity loan. Ongoing project with costs spread over years? HELOC.</p>
+
+<h2>The Basics</h2>
+<p>Both loans use your home as collateral, which is why their rates run lower than credit cards or personal loans. As of early 2026, home equity loan rates sit around 7.5-8.5% APR, while HELOC rates hover near 8.5-9.5% variable. Either way, your house is on the line if you stop paying.</p>
+<p>A home equity loan is straightforward. You borrow $50,000 at 7.75% fixed, and you get a check or deposit for the full amount at closing. Repayment starts immediately, usually over 10-20 years, with the same payment every month. There are no surprises, no draw periods, and no balloon payments.</p>
+<p>A HELOC has two phases. During the <strong>draw period</strong>, typically 10 years, you can borrow up to your credit limit and only pay interest on what you use. During the <strong>repayment period</strong>, usually 15-20 years, you can no longer borrow, and you start paying back principal plus interest.</p>
+<p>The variable rate is the catch. If the prime rate rises from 7.5% to 9.5%, your minimum HELOC payment jumps. A $50,000 balance at 7.5% costs about $313/month in interest alone. At 9.5%, that same balance costs $396/month, an extra $83 every month on the same debt.</p>
+<p>Closing costs also differ. Home equity loans run 2-5% of the loan amount. HELOCs often have lower upfront fees, but some lenders charge an annual fee of $50-100 and inactivity fees if you don't draw within a set window. Read the disclosure page before signing.</p>
+<p>Before you commit, run the numbers through our <a href="/calculators/mortgage-affordability">Mortgage Affordability Calculator</a> so the new payment fits comfortably inside your budget.</p>
+
+<h2>The Math</h2>
+<p>Imagine you own a home worth $450,000 with a $280,000 mortgage balance. You want to borrow $50,000 for a kitchen remodel.</p>
+<table>
+<thead><tr><th>Feature</th><th>Home Equity Loan</th><th>HELOC</th></tr></thead>
+<tbody>
+<tr><td>Rate (early 2026)</td><td>7.75% fixed</td><td>8.75% variable</td></tr>
+<tr><td>Loan amount</td><td>$50,000 lump sum</td><td>$50,000 credit line</td></tr>
+<tr><td>Term</td><td>15 years</td><td>10-yr draw, 15-yr repay</td></tr>
+<tr><td>Monthly payment</td><td>$474</td><td>$364 interest-only, then ~$494</td></tr>
+<tr><td>Total interest paid</td><td>$35,320</td><td>~$42,800 (if rate holds)</td></tr>
+<tr><td>Closing costs</td><td>~$2,000</td><td>~$500 + $75/yr</td></tr>
+</tbody>
+</table>
+<p>The HELOC looks cheaper at first because interest-only payments during the draw period keep cash flow low. But over the full life of the loan, you pay roughly $7,500 more in interest, and that gap widens if rates rise. Use our <a href="/calculators/mortgage-calculator">Mortgage Amortization Calculator</a> to model both loans with your real numbers.</p>
+
+<h2>Step-by-Step</h2>
+<ol>
+  <li><strong>Check your equity position.</strong> Most lenders want at least 15-20% equity after the new loan. On a $450,000 home, that means owing no more than $360,000-$382,500 combined across all mortgages.</li>
+  <li><strong>Pull your credit score and DTI.</strong> A score above 680 usually unlocks the best rates. Lenders also want your total debt payments, including the new loan, under 43% of gross income.</li>
+  <li><strong>Shop 3-5 lenders in a 14-day window.</strong> Multiple mortgage credit inquiries within 14 days count as one on your FICO score. Compare APR, not just rate, since APR folds in closing costs.</li>
+  <li><strong>Run the payment through your budget.</strong> Add the new payment to your current obligations. If it crowds out retirement savings or emergency fund contributions, the loan is too big. Try the <a href="/calculators/refinance-calculator">Home Affordability Calculator</a> for a stress test.</li>
+</ol>
+
+<h2>Common Mistakes</h2>
+<p><strong>Mistake 1: Treating a HELOC like free money.</strong> The draw period feels easy because minimum payments are low. Borrowers rack up balances, then the repayment phase hits and payments double or triple. Fix: set a hard repayment plan now, even if the lender doesn't require it.</p>
+<p><strong>Mistake 2: Ignoring variable-rate risk.</strong> A HELOC starting at 8.75% could easily reach 11% over a 10-year draw period. On a $50,000 balance, that adds ];04/month in interest costs. Fix: ask the lender for the lifetime cap and the margin above prime, then model the worst case.</p>
+<p><strong>Mistake 3: Borrowing against the house to pay unsecured debt.</strong> Rolling $20,000 of credit card debt at 22% into a home equity loan at 8% saves real money. But spending $50,000 on a vacation at 8% means you're paying ];4,000 in interest for a trip. Fix: only borrow for things that add value or replace higher-cost debt.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is the main difference between a home equity loan and a HELOC?</h3>
+<p>A home equity loan gives you a lump sum at a fixed rate with fixed payments from day one. A HELOC is a revolving credit line with a variable rate, where you only pay interest on what you've drawn during the draw period.</p>
+<h3>How does a HELOC draw period work?</h3>
+<p>During the draw period (usually 10 years), you can borrow up to your credit limit, repay, and borrow again. Most lenders require only interest payments during this phase. When the draw period ends, you can no longer borrow and must start repaying principal plus interest over the remaining 15-20 years.</p>
+<h3>When should I choose a home equity loan over a HELOC?</h3>
+<p>Pick a home equity loan when you know the exact amount you need, want a predictable payment, and prefer rate certainty. It's the better fit for one-time expenses like a roof, a remodel, or consolidating high-interest debt at a known balance.</p>
+<h3>Is a HELOC a good idea in 2026?</h3>
+<p>A HELOC makes sense if you have a multi-year project with staggered costs, a steady income that can absorb payment increases, and a plan to pay it down before the draw period ends. If rates keep rising, the variable structure becomes a risk, so model a 2-3% rate jump before you commit.</p>
+
+<p>Run the numbers yourself: <a href="/calculators/mortgage-affordability">Mortgage Affordability Calculator</a></p></div>`,
+    relatedCalculators: ["mortgage-affordability", "savings-goal"],
+  },
 ];
