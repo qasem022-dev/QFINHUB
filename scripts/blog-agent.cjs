@@ -10,7 +10,7 @@
  * - EVERGREEN topics are now the DEFAULT (was: trending first)
  * - Trending is only a fallback when evergreen bank is exhausted
  * - Hard filters block stock-picks, news-jacking, penny-stock patterns
- * - Quality rules in the DeepSeek prompt: specific dollar examples,
+ * - Quality rules in the MiniMax prompt: specific dollar examples,
  *   conversational voice, no AI-isms, no specific stock tickers
  * - --quality-check mode validates a draft against QFINHUB standards
  * - --preview mode shows the post body before commit/push

@@ -45,8 +45,8 @@ const sections = [
           <li>
             <strong>AI Analysis Data.</strong> When you interact with our AI
             Specialist feature, the financial questions and context you provide
-            are sent to our AI provider (DeepSeek) to generate personalized
-            responses. We do not use this data to train or fine-tune AI models.
+            are sent to our AI provider to generate personalized responses. We
+            do not use this data to train or fine-tune AI models.
           </li>
           <li>
             <strong>Usage Data.</strong> We automatically collect anonymized
@@ -84,9 +84,9 @@ const sections = [
           </li>
           <li>
             <strong>AI-Powered Analysis.</strong> Sending your financial
-            questions and context to DeepSeek AI to generate customized advice
-            and plans. Responses are returned to you in real time and are not
-            retained by third parties beyond the request lifecycle.
+            questions and context to our AI provider to generate customized
+            advice and plans. Responses are returned to you in real time and are
+            not retained by third parties beyond the request lifecycle.
           </li>
           <li>
             <strong>Customer Support.</strong> Responding to your inquiries,
@@ -166,18 +166,18 @@ const sections = [
             .
           </li>
           <li>
-            <strong>DeepSeek AI.</strong> Our AI Specialist feature uses
-            DeepSeek&apos;s API to generate financial analysis and personalized
-            plans. Financial context you provide is sent to DeepSeek solely for
-            the purpose of generating a response and is not stored or used for
-            training. See{" "}
+            <strong>AI Provider.</strong> Our AI Specialist feature uses a
+            third-party large language model API to generate financial analysis
+            and personalized plans. Financial context you provide is sent to
+            this provider solely for the purpose of generating a response and
+            is not stored or used for training. See{" "}
             <a
-              href="https://platform.deepseek.com/privacy"
+              href="https://api.minimax.io/anthropic/privacy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent-600 underline underline-offset-2 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
             >
-              DeepSeek Privacy Policy
+              AI Provider Privacy Policy
             </a>
             .
           </li>
