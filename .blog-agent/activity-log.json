@@ -656,5 +656,36 @@
       "source": "evergreen",
       "wordCount": 973
     }
+  },
+  {
+    "ts": "2026-08-27T12:01:15.654Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "4 percent rule retirement 2026",
+      "issues": [
+        "AI-ism detected: \"in today's\""
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-28T12:00:35.125Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "4 percent rule retirement 2026",
+      "issues": [
+        "AI-ism detected: \"in today's\""
+      ]
+    }
+  },
+  {
+    "ts": "2026-08-29T12:00:45.250Z",
+    "type": "published",
+    "details": {
+      "slug": "4-percent-rule-retirement-2026-does-it-still-work",
+      "kw": "4 percent rule retirement 2026",
+      "cat": "retirement",
+      "source": "evergreen",
+      "wordCount": 1038
+    }
   }
 ]
