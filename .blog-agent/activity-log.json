@@ -698,5 +698,43 @@
       "source": "evergreen",
       "wordCount": 1201
     }
+  },
+  {
+    "ts": "2026-08-31T12:01:17.418Z",
+    "type": "generation_failed",
+    "details": {
+      "kw": "zero based budget method explained"
+    }
+  },
+  {
+    "ts": "2026-08-31T12:01:42.206Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "zero based budget method explained",
+      "issues": [
+        "Missing FAQ section. Need an H2/H3 with one of: 'FAQ', 'Frequently Asked Questions', 'Common Questions', 'Questions', 'Q&A'. Google extracts visible Q&A for featured snippets."
+      ]
+    }
+  },
+  {
+    "ts": "2026-09-01T12:00:44.319Z",
+    "type": "quality_rejected",
+    "details": {
+      "kw": "zero based budget method explained",
+      "issues": [
+        "Only 3 internal links to /calculators/ (need 4-6)"
+      ]
+    }
+  },
+  {
+    "ts": "2026-09-02T12:01:17.180Z",
+    "type": "published",
+    "details": {
+      "slug": "zero-based-budget-method-explained-a-simple-step-by-step-guide",
+      "kw": "zero based budget method explained",
+      "cat": "personal",
+      "source": "evergreen",
+      "wordCount": 964
+    }
   }
 ]
