@@ -70,7 +70,7 @@ export default function PortfolioAllocator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Portfolio Allocation" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Portfolio Allocation" />
       <CalculatorInput
         input={{
           id: "stockPct",

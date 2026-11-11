@@ -82,7 +82,7 @@ export default function DebtSnowballCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="Balance" title="Debt Balances (Smallest First)" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="Balance" title="Debt Balances (Smallest First)" />
       <CalculatorInput input={{ id: "debt1Balance", label: "Debt 1 - Balance", type: "number", defaultValue: 2500, suffix: "$", min: 0, tooltip: "Current balance of the first debt." }} value={debt1.balance} onChange={(v) => setDebt1({ ...debt1, balance: v })} />
       <CalculatorInput input={{ id: "debt1Min", label: "Debt 1 - Min Payment", type: "number", defaultValue: 75, suffix: "$", min: 0, tooltip: "Minimum monthly payment for the first debt." }} value={debt1.minPayment} onChange={(v) => setDebt1({ ...debt1, minPayment: v })} />
       <CalculatorInput input={{ id: "debt1Rate", label: "Debt 1 - Rate", type: "number", defaultValue: 18, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Annual interest rate for the first debt." }} value={debt1.rate} onChange={(v) => setDebt1({ ...debt1, rate: v })} />

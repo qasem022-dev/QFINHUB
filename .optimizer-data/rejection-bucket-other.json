@@ -1,0 +1,68 @@
+[
+  {
+    "url": "https://www.qfinhub.com/calculators/wedding-budget",
+    "coverage": "ERROR",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026",
+    "coverage": "ERROR",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a",
+    "userCanonical": "https://www.qfinhub.com/blog/90-day-fiance-star-s-kentucky-home-a-lesson-in-mortgage-affordability-and-dead-a"
+  },
+  {
+    "url": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a",
+    "userCanonical": "https://www.qfinhub.com/blog/uk-gilt-yields-retreat-from-multi-decade-highs-what-it-means-for-your-mortgage-a"
+  },
+  {
+    "url": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a",
+    "userCanonical": "https://www.qfinhub.com/blog/hungary-holds-key-interest-rate-steady-how-june-cut-could-impact-your-mortgage-a"
+  },
+  {
+    "url": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings",
+    "userCanonical": "https://www.qfinhub.com/blog/core-inflation-holds-steady-at-3-3-what-it-means-for-your-mortgage-and-savings"
+  },
+  {
+    "url": "https://www.qfinhub.com/tools/tax-150k-married-separate",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/tools/tax-150k-married-separate",
+    "userCanonical": "https://www.qfinhub.com/calculators/tax-calculator"
+  },
+  {
+    "url": "https://www.qfinhub.com/tools/fire-40k-lean-800k",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/tools/fire-40k-lean-800k",
+    "userCanonical": "https://www.qfinhub.com/calculators/fire-calculator"
+  },
+  {
+    "url": "https://www.qfinhub.com/all-pages",
+    "coverage": "Excluded by \u2018noindex\u2019 tag",
+    "verdict": "NEUTRAL",
+    "indexing": "BLOCKED_BY_META_TAG",
+    "googleCanonical": "https://www.qfinhub.com/all-pages",
+    "userCanonical": "https://www.qfinhub.com/all-pages"
+  }
+]

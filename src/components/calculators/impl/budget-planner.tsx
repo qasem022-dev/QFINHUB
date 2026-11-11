@@ -50,7 +50,7 @@ export default function BudgetPlannerCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Expense Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Expense Breakdown" />
       <CalculatorInput input={{ id: "salary", label: "Annual Salary (After Tax)", type: "number", defaultValue: 60000, suffix: "$", min: 0, tooltip: "Your annual take-home pay after taxes." }} value={salary} onChange={setSalary} />
       <CalculatorInput input={{ id: "rent", label: "Rent / Mortgage", type: "number", defaultValue: 1500, suffix: "$", min: 0, tooltip: "Monthly housing payment." }} value={rent} onChange={setRent} />
       <CalculatorInput input={{ id: "utilities", label: "Utilities", type: "number", defaultValue: 200, suffix: "$", min: 0, tooltip: "Electricity, water, gas, internet, etc." }} value={utilities} onChange={setUtilities} />

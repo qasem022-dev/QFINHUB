@@ -24,9 +24,17 @@ export default function FutureValueCalculator() {
   const pmt = safePmt;
 
   const safeFV = (y: number): number => {
+    if (y <= 0) return safePv;
     if (r === 0) return safePv + pmt * 12 * y;
-    const factor = Math.pow(1 + r / n, n * y);
-    return safePv * factor + pmt * ((factor - 1) / (r / n));
+    // Principal compounds at the selected frequency.
+    const principalFV = safePv * Math.pow(1 + r / n, n * y);
+    // Contributions are monthly, so derive the equivalent MONTHLY rate before
+    // applying the annuity factor. Using r/n (the per-compounding-period rate)
+    // overstated growth whenever compounding was anything other than monthly.
+    const im = Math.pow(1 + r / n, n / 12) - 1;
+    const months = 12 * y;
+    if (im === 0) return principalFV + pmt * months;
+    return principalFV + pmt * ((Math.pow(1 + im, months) - 1) / im);
   };
 
   const futureValue = safeFV(t);
@@ -85,7 +93,7 @@ export default function FutureValueCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="area"
         data={chartData}
         xKey="year"

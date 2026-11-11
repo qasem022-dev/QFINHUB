@@ -52,7 +52,7 @@ export default function FicaCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey={["value"]} title="FICA Tax Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey={["value"]} title="FICA Tax Breakdown" />
       <CalculatorInput input={{ id: "wages", label: "Annual Wages", type: "number", defaultValue: 100000, suffix: "$", min: 0, tooltip: "Your total annual wages or self-employment income." }} value={wages} onChange={setWages} />
       <CalculatorInput input={{ id: "filing-status", label: "Filing Status", type: "select", defaultValue: 1, options: [{ label: "Single", value: 1 }, { label: "Married", value: 2 }], tooltip: "Your tax filing status (affects additional Medicare thresholds)." }} value={filingStatus} onChange={setFilingStatus} />
       <CalculatorInput input={{ id: "self-employed", label: "Self-Employed", type: "select", defaultValue: 0, options: [{ label: "No", value: 0 }, { label: "Yes", value: 1 }], tooltip: "Self-employed individuals pay both the employee and employer portions of FICA." }} value={selfEmployed} onChange={setSelfEmployed} />

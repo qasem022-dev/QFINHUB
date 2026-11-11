@@ -154,7 +154,7 @@ export default function FireCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="line"
         data={chartData}
         xKey="year"

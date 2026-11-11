@@ -37,7 +37,7 @@ export default function DiscountCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Price Comparison" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Price Comparison" height={250} />
       <CalculatorInput
         input={{ id: "originalPrice", label: "Original Price", type: "number", defaultValue: 100, suffix: "$", min: 0, tooltip: "The original price of the item before discount." }}
         value={originalPrice}

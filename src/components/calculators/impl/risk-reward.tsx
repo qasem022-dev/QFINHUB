@@ -42,7 +42,7 @@ export default function RiskRewardCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="metric" yKey="value" title="Risk/Reward Per Share ($)" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="metric" yKey="value" title="Risk/Reward Per Share ($)" />
       <CalculatorInput
         input={{ id: "entryPrice", label: "Entry Price", type: "number", defaultValue: 50, suffix: "$", min: 0, step: 0.01, tooltip: "The price at which you enter the trade." }}
         value={entryPrice}

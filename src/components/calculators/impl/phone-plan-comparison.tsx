@@ -45,7 +45,7 @@ export default function PhonePlanComparison() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey={["Monthly Cost", "Annual Cost"]} title="Plan Comparison" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey={["Monthly Cost", "Annual Cost"]} title="Plan Comparison" height={250} />
       <CalculatorInput
         input={{ id: "plan1Monthly", label: "Plan 1 Monthly Cost", type: "number", defaultValue: 50, suffix: "$", min: 0, tooltip: "Monthly cost of plan 1." }}
         value={plan1Monthly}

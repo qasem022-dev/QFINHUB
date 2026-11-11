@@ -47,7 +47,7 @@ export default function DebtToIncomeCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Debt Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Debt Breakdown" />
       <CalculatorInput input={{ id: "income", label: "Monthly Gross Income", type: "number", defaultValue: 6000, suffix: "$", min: 0, tooltip: "Your total monthly income before taxes." }} value={income} onChange={setIncome} />
       <CalculatorInput input={{ id: "housing", label: "Housing Debt", type: "number", defaultValue: 1500, suffix: "$", min: 0, tooltip: "Mortgage or rent payment." }} value={housing} onChange={setHousing} />
       <CalculatorInput input={{ id: "auto-loan", label: "Auto Loan", type: "number", defaultValue: 400, suffix: "$", min: 0, tooltip: "Monthly car loan payment." }} value={autoLoan} onChange={setAutoLoan} />

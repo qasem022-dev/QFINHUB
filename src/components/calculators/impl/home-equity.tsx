@@ -42,7 +42,7 @@ export default function HomeEquityCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Equity vs. Debt" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Equity vs. Debt" />
       <CalculatorInput
         input={{ id: "homeValue", label: "Home Value", type: "number", defaultValue: 350000, suffix: "$", min: 0, tooltip: "Current estimated market value of your home." }}
         value={homeValue}

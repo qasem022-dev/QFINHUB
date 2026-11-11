@@ -39,7 +39,7 @@ export default function GasMileageCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Trip Summary" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Trip Summary" height={250} />
       <CalculatorInput
         input={{ id: "distance", label: "Distance Traveled", type: "number", defaultValue: 300, suffix: "miles", min: 0, tooltip: "Total distance driven." }}
         value={distance}

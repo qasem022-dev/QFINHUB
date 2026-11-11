@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T10:03:46.559213Z",
+  "freshness": "FRESH",
+  "gsc_metrics_7d": {
+    "impressions": 2507,
+    "clicks": 0,
+    "avg_position": 69.4,
+    "pages_with_impressions": 105,
+    "ctr_pct": 0.0
+  },
+  "indexing_state": {
+    "sitemap_total": 529,
+    "indexed": 224,
+    "discovered_not_indexed": 275,
+    "unknown_to_google": 29,
+    "uninspected": 1,
+    "index_rate_pct": 42.34
+  },
+  "morning_diagnosis": {
+    "sample_size": 16,
+    "wall_clock_seconds": 14,
+    "newly_indexed": 0,
+    "unknown_to_discovered": 5,
+    "regressions": 0,
+    "category_counts": {
+      "DISCOVERED": 10,
+      "UNKNOWN": 6
+    }
+  },
+  "submissions_today": {
+    "log_count": 13,
+    "clicked_button": 13,
+    "daily_counter": 13,
+    "limit": 13,
+    "by_category": {
+      "UNKNOWN": 13
+    }
+  },
+  "blockers": [],
+  "next_run": "Tomorrow 7 AM EEST"
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-25T15:30:00Z",
+  "7d_window": {
+    "start": "2026-08-18",
+    "end": "2026-08-24",
+    "pages_with_impressions": 92
+  },
+  "28d_window": {
+    "start": "2026-07-28",
+    "end": "2026-08-24",
+    "pages_with_impressions": 201
+  },
+  "note": "Pages with impressions is the closest GSC API proxy for total indexed pages with any traffic signal"
+}

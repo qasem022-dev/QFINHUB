@@ -68,7 +68,7 @@ export default function CapitalGainsTaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Gain Breakdown" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Gain Breakdown" />
       <CalculatorInput input={{ id: "costBasis", label: "Cost Basis", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The original purchase price including commissions and fees." }} value={costBasis} onChange={setCostBasis} />
       <CalculatorInput input={{ id: "proceeds", label: "Sale Proceeds", type: "number", defaultValue: 20000, suffix: "$", min: 0, tooltip: "The total amount received from the sale." }} value={proceeds} onChange={setProceeds} />
       <PeriodInput id="holdingPeriod" label="Holding Period" value={holdingValue} unit={holdingUnit} onValueChange={setHoldingValue} onUnitChange={setHoldingUnit} min={1} max={50} />

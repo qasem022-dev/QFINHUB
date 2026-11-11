@@ -1,0 +1,60 @@
+{
+  "diagnosis": "Adsterra publisher pl29448163 not serving ads — invoke.js returns 0 bytes",
+  "verified_date": "2026-08-27",
+  "evidence": [
+    {
+      "test": "curl HEAD",
+      "url": "https://pl29448163.profitablecpmratenetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js",
+      "result": "HTTP 200, body 0 bytes, Content-Type: application/javascript"
+    },
+    {
+      "test": "curl GET with browser User-Agent",
+      "url": "same",
+      "result": "HTTP 200, 0 bytes"
+    },
+    {
+      "test": "live browser fetch",
+      "url": "same",
+      "result": "status 200, body length 0"
+    },
+    {
+      "test": "live browser, alt spelling profitableratecpmnetwork.com (singular rate)",
+      "url": "https://pl29448163.profitableratecpmnetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js",
+      "result": "status 200, body length 0"
+    },
+    {
+      "test": "root publisher domain",
+      "url": "https://pl29448163.profitablecpmratenetwork.com/",
+      "result": "HTTP 301 redirect to https://google.com (parked domain)"
+    },
+    {
+      "test": "live browser, after Accept All click + 8s wait",
+      "result": "DOM container exists but contains only skeleton (hidden). 0 ad iframes. 0 AdSense ins tags. Performance entries show transferSize=0, decodedBodySize=0 for the invoke.js URL."
+    }
+  ],
+  "code_in_repo": [
+    "src/components/ads/adsterra-banner.tsx (active, used in layout.tsx)",
+    "src/components/ui/adsterra-banner.tsx (dead code, unused)"
+  ],
+  "hardcoded_keys": {
+    "publisher_id": "pl29448163",
+    "placement_key": "93e6358fa4836a576dd463e0a148a834"
+  },
+  "consent_state_default": {
+    "ad_storage": "denied",
+    "ad_user_data": "denied",
+    "ad_personalization": "denied"
+  },
+  "consent_impact_note": "Even after Accept All, Adsterra still returns 0 bytes. Consent is NOT the blocker — the Adsterra publisher account is.",
+  "conclusion": "Publisher pl29448163 is suspended, parked, or never activated. Replacing the code snippet with the user-supplied exact bytes will not fix it. The Adsterra dashboard must be logged into and the account status verified, OR a new publisher account must be registered.",
+  "user_supplied_snippet_for_reference": {
+    "type": "Native Banner",
+    "snippet": "<script async=\"async\" data-cfasync=\"false\" src=\"https://pl29448163.profitableratecpmnetwork.com/93e6358fa4836a576dd463e0a148a834/invoke.js\"></script><div id=\"container-93e6358fa4836a576dd463e0a148a834\"></div>",
+    "diff_from_repo": "URL spelling: repo has 'profitablecpmratenetwork.com' (plural rate), user gave 'profitableratecpmnetwork.com' (singular rate). Both return 0 bytes — same publisher."
+  },
+  "next_steps_options_for_user": [
+    "1. Log into Adsterra dashboard with the email that registered pl29448163 — confirm account status, generate fresh key",
+    "2. Register new Adsterra account and provide new publisher ID + key",
+    "3. Remove Adsterra entirely, wait for AdSense re-approval (~Aug 11 eligibility window)"
+  ]
+}

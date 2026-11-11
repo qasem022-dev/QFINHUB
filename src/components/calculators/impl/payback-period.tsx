@@ -77,7 +77,7 @@ export default function PaybackPeriodCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Simple Payback", "Discounted Payback"]} title="Cumulative Cash Flow" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Simple Payback", "Discounted Payback"]} title="Cumulative Cash Flow" />
       <CalculatorInput
         input={{ id: "initialInvestment", label: "Initial Investment", type: "number", defaultValue: 50000, suffix: "$", min: 0, step: 100, tooltip: "The upfront cost of the investment." }}
         value={initialInvestment}

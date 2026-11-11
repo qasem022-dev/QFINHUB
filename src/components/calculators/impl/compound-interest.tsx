@@ -24,9 +24,17 @@ export default function CompoundInterestCalculator() {
   const pmt = safePmt;
 
   const safeFV = (y: number): number => {
+    if (y <= 0) return safePrincipal;
     if (r === 0) return safePrincipal + pmt * 12 * y;
-    const factor = Math.pow(1 + r / n, n * y);
-    return safePrincipal * factor + pmt * ((factor - 1) / (r / n));
+    // Principal compounds at the selected frequency.
+    const principalFV = safePrincipal * Math.pow(1 + r / n, n * y);
+    // Contributions are monthly, so derive the equivalent MONTHLY rate before
+    // applying the annuity factor. Using r/n (the per-compounding-period rate)
+    // overstated growth whenever compounding was anything other than monthly.
+    const im = Math.pow(1 + r / n, n / 12) - 1;
+    const months = 12 * y;
+    if (im === 0) return principalFV + pmt * months;
+    return principalFV + pmt * ((Math.pow(1 + im, months) - 1) / im);
   };
 
   const futureValue = safeFV(t);
@@ -69,7 +77,7 @@ export default function CompoundInterestCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="line"
         data={chartData}
         xKey="year"

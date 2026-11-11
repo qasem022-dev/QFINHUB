@@ -64,7 +64,7 @@ export default function PensionCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={colaChartData} xKey="year" yKey={["Pension Income"]} title="Pension Income with COLA Growth" height={300} />
+      <CalculatorChart format="currency" type="line" data={colaChartData} xKey="year" yKey={["Pension Income"]} title="Pension Income with COLA Growth" height={300} />
       <CalculatorInput
         input={{ id: "currentAge", label: "Current Age", type: "number", defaultValue: 30, suffix: "years", min: 18, max: 80, step: 1, tooltip: "Your current age." }}
         value={currentAge}

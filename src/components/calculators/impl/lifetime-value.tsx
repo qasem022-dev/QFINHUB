@@ -55,7 +55,7 @@ export default function LifetimeValueCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="LTV vs CAC" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="LTV vs CAC" />
       <CalculatorInput input={{ id: "purchaseValue", label: "Avg Purchase Value", type: "number", defaultValue: 100, suffix: "$", min: 0, step: 0.01, tooltip: "Average amount a customer spends per purchase." }} value={purchaseValue} onChange={setPurchaseValue} />
       <CalculatorInput input={{ id: "frequency", label: "Purchase Frequency / Year", type: "number", defaultValue: 4, min: 0, step: 0.1, tooltip: "How many times a customer purchases per year." }} value={frequency} onChange={setFrequency} />
       <CalculatorInput input={{ id: "retentionRate", label: "Customer Retention Rate", type: "number", defaultValue: 75, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Percentage of customers retained year over year. At 100%, customer lifespan is infinite." }} value={retentionRate} onChange={setRetentionRate} />

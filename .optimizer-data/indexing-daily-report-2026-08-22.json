@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-22",
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "c0ec56778b2b",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "metrics_7d": {
+    "impressions": 2575,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 71.8,
+    "pages_with_impressions": 104
+  },
+  "indexing_state": {
+    "indexed": 225,
+    "discovered_not_indexed": 279,
+    "unknown_to_google": 25,
+    "uninspected": 1,
+    "sitemap_total": 531,
+    "index_rate_pct": 42.53
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 26,
+    "newly_indexed": 2,
+    "unknown_to_discovered": 0,
+    "regressions": 0,
+    "category_counts": {
+      "DISCOVERED": 19,
+      "UNKNOWN": 4,
+      "INDEXED": 2
+    }
+  },
+  "submissions_today": 13,
+  "daily_limit": 13,
+  "log_total_all_time": 460,
+  "blockers": [],
+  "next_actions": [],
+  "cooldown_state": {
+    "unique_urls_in_7d_cooldown": 80
+  }
+}

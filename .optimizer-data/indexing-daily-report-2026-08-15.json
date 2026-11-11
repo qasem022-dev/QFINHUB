@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-15",
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "f27a566bdfbe",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "metrics_7d": {
+    "impressions": 2457,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 68.0,
+    "pages_with_impressions": 130,
+    "query_count": 500,
+    "query_impressions": 1068,
+    "query_page_rows": 500
+  },
+  "metrics_28d": {
+    "impressions": 6268,
+    "clicks": 2,
+    "pages_with_impressions": 187,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+      "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct"
+    ]
+  },
+  "queue_state": {
+    "indexed": 224,
+    "discovered": 271,
+    "unknown": 33,
+    "uninspected": 0,
+    "total_sitemap": 528
+  },
+  "sitemap_index_rate_pct": 42.4,
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "newly_indexed_count": 0,
+    "unknown_to_discovered_count": 5,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 19,
+      "UNKNOWN": 6
+    }
+  },
+  "submissions_today": {
+    "total": 3,
+    "daily_count": 3
+  }
+}

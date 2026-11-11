@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-26",
+  "generated": "2026-08-26T10:03:11.815484",
+  "sitemap_index_rate": {
+    "indexed": 225,
+    "discovered": 279,
+    "unknown": 25,
+    "uninspected": 1,
+    "total_sitemap": 531,
+    "index_rate_pct": 42.37
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 26,
+    "newly_indexed_count": 3,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "https://www.qfinhub.com/compare/best-budget-calculator",
+      "https://www.qfinhub.com/calculators/portfolio-allocator"
+    ],
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 17,
+      "UNKNOWN": 5,
+      "INDEXED": 3
+    }
+  },
+  "submissions_today": {
+    "count": 13,
+    "log_total": 512
+  },
+  "gsc_7d_metrics": {
+    "impressions": 2239,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 71.2,
+    "pages_with_impressions": 101,
+    "query_count": 500,
+    "query_impressions": 780,
+    "query_page_rows": 500
+  },
+  "gsc_28d_metrics": {
+    "impressions": 9053,
+    "clicks": 2,
+    "pages_with_impressions": 204,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+      "https://www.qfinhub.com/widgets/mortgage-affordability-embed"
+    ]
+  },
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "c2063723e661",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "notes": [
+    "Steady-state fingerprint holds: 225/279/25/1 (8th consecutive run).",
+    "Phase 39 humanization pipeline is the ONLY remaining growth lever.",
+    "Pitfall #19 fix confirmed clean (8th straight day): log appends intact.",
+    "Pitfall #20 reproduced \u2014 line 278 crash (8 days unfixed). JSON save precedes crash; summary intact.",
+    "Pitfall #23 reproduced \u2014 stdout \"6/13 requested\" vs log +13 actual.",
+    "3 newly indexed today from morning diagnosis sample."
+  ]
+}

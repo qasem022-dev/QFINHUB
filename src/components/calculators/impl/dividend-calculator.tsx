@@ -50,7 +50,7 @@ export default function DividendCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="year" yKey="Dividend Income" title="Dividend Growth" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="year" yKey="Dividend Income" title="Dividend Growth" />
       <CalculatorInput input={{ id: "investment", label: "Initial Investment", type: "number", defaultValue: 50000, suffix: "$", min: 0, tooltip: "The amount you are investing in dividend-paying stocks." }} value={investment} onChange={setInvestment} />
       <CalculatorInput input={{ id: "yieldPct", label: "Dividend Yield", type: "number", defaultValue: 3.5, suffix: "%", min: 0, max: 20, step: 0.1, tooltip: "The current annual dividend yield of the investment." }} value={yieldPct} onChange={setYieldPct} />
       <CalculatorInput input={{ id: "growth", label: "Annual Dividend Growth", type: "number", defaultValue: 6, suffix: "%", min: 0, max: 50, step: 0.1, tooltip: "The expected annual growth rate of dividend payments." }} value={growth} onChange={setGrowth} />

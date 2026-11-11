@@ -42,7 +42,7 @@ export default function ChildCareCostCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Annual Cost Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Annual Cost Breakdown" />
       <CalculatorInput input={{ id: "daycare", label: "Daycare (Monthly)", type: "number", defaultValue: 1200, suffix: "$", min: 0, tooltip: "Monthly daycare center costs." }} value={daycare} onChange={setDaycare} />
       <CalculatorInput input={{ id: "nanny", label: "Nanny (Monthly)", type: "number", defaultValue: 2000, suffix: "$", min: 0, tooltip: "Monthly nanny or babysitter costs." }} value={nanny} onChange={setNanny} />
       <CalculatorInput input={{ id: "after-school", label: "After-School (Monthly)", type: "number", defaultValue: 500, suffix: "$", min: 0, tooltip: "Monthly after-school program costs." }} value={afterSchool} onChange={setAfterSchool} />

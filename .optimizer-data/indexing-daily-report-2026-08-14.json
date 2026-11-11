@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-14",
+  "generated_at": "2026-08-14T15:04:00.789469+00:00",
+  "pipeline_version": "Service Account V3",
+  "freshness": "FRESH",
+  "indexing_state": {
+    "sitemap_urls": 528,
+    "indexed": 224,
+    "index_rate_pct": 42.4,
+    "discovered_not_indexed": 266,
+    "unknown_to_google": 36,
+    "uninspected": 2
+  },
+  "today_actions": {
+    "morning_diagnosis": {
+      "inspected": 16,
+      "wall_clock_seconds": 14,
+      "category_counts": {
+        "UNKNOWN": 7,
+        "DISCOVERED": 8,
+        "CRAWLED_REJECTED": 1
+      },
+      "newly_indexed_count": 0,
+      "unknown_to_discovered_count": 4,
+      "regressions_count": 0
+    },
+    "submissions": {
+      "requested": 13,
+      "clicked_button": 13,
+      "daily_count": 13,
+      "quota_used_pct": 100.0
+    }
+  },
+  "gsc_metrics_7d": {
+    "impressions_7d": 2532,
+    "clicks_7d": 1,
+    "avg_position_7d": 67.6,
+    "ctr_pct_7d": 0.0,
+    "pages_with_impressions": 128
+  },
+  "blockers": [],
+  "tomorrow_plan": [
+    "Continue daily diagnosis (sample_size 25) at 7 AM EEST",
+    "Continue GSC UI submissions (13/day) at 11 AM EEST \u2014 pool has 304+ candidates (DISCOVERED+UNKNOWN+UNINSPECTED)",
+    "Monitor 7d metrics for click extraction after recent submissions",
+    "Phase 39 humanization pipeline is the primary growth lever \u2014 DISCOVERED pages blocked by content quality"
+  ]
+}

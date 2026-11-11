@@ -92,7 +92,7 @@ export default function Form1099Calculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Tax Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Tax Breakdown" />
       <CalculatorInput
         input={{ id: "income1099", label: "1099 Income", type: "number", defaultValue: 80000, suffix: "$", min: 0, step: 1000, tooltip: "Your total gross income from 1099/self-employment work." }}
         value={income1099}

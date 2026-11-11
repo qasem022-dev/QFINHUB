@@ -43,7 +43,7 @@ export default function BreakEvenCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="units" yKey={["Total Revenue", "Total Cost"]} title="Cost vs Revenue" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="units" yKey={["Total Revenue", "Total Cost"]} title="Cost vs Revenue" />
       <CalculatorInput input={{ id: "fixedCosts", label: "Fixed Costs", type: "number", defaultValue: 50000, suffix: "$", min: 0, tooltip: "Rent, salaries, equipment — costs that don't change with production volume." }} value={fixedCosts} onChange={setFixedCosts} />
       <CalculatorInput input={{ id: "varCostPerUnit", label: "Variable Cost Per Unit", type: "number", defaultValue: 15, suffix: "$", min: 0, step: 0.01, tooltip: "The per-unit cost that varies with production volume (materials, labor)." }} value={varCostPerUnit} onChange={setVarCostPerUnit} />
       <CalculatorInput input={{ id: "pricePerUnit", label: "Price Per Unit", type: "number", defaultValue: 40, suffix: "$", min: 0, step: 0.01, tooltip: "The selling price for each unit of product or service." }} value={pricePerUnit} onChange={setPricePerUnit} />

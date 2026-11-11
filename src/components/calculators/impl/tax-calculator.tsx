@@ -80,7 +80,7 @@ export default function TaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax by Bracket" />
+      <CalculatorChart format="currency" type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax by Bracket" />
       <CalculatorInput input={{ id: "income", label: "Annual Income", type: "number", defaultValue: 75000, suffix: "$", min: 0, tooltip: "Your total gross annual income before deductions." }} value={income} onChange={setIncome} />
       <CalculatorInput input={{ id: "w2Income", label: "W-2 Wages", type: "number", defaultValue: 0, suffix: "$", min: 0, tooltip: "If you have W-2 wages, enter the amount to estimate withholding vs. tax owed." }} value={w2Income} onChange={setW2Income} />
       <CalculatorInput input={{ id: "filingStatus", label: "Filing Status", type: "select", defaultValue: 0, options: [{ label: "Single", value: 0 }, { label: "Married Filing Jointly", value: 1 }], tooltip: "Your tax filing status determines which tax brackets and standard deduction apply." }} value={filingStatus} onChange={setFilingStatus} />

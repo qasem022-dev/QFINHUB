@@ -36,7 +36,7 @@ export default function FuelCostCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Cost Breakdown" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Cost Breakdown" height={250} />
       <CalculatorInput
         input={{ id: "distance", label: "Distance", type: "number", defaultValue: 300, suffix: "miles", min: 0, tooltip: "Total trip distance." }}
         value={distance}

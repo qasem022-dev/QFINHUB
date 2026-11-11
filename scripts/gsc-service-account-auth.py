@@ -10,6 +10,7 @@ Key file: ~/.hermes/gsc-service-account-key.json
 
 import json
 import os
+import sys
 import time
 import urllib.request
 import urllib.parse
@@ -24,6 +25,7 @@ except ImportError:
     HAS_GOOGLE_AUTH = False
 
 KEY_PATH = os.path.expanduser("~/.hermes/gsc-service-account-key.json")
+OAUTH_TOKEN_PATH = os.path.expanduser("~/.hermes/gsc-oauth-token.json")
 SCOPES = [
     "https://www.googleapis.com/auth/webmasters",
     "https://www.googleapis.com/auth/indexing",
@@ -43,11 +45,22 @@ def get_access_token():
     if _cached_token and time.time() < (_cached_expiry - 60):
         return _cached_token
 
-    # Generate fresh token
-    if HAS_GOOGLE_AUTH:
-        _cached_token, _cached_expiry = _get_token_google_auth()
-    else:
-        _cached_token, _cached_expiry = _get_token_stdlib()
+    # Route: try service-account key first, fall back to user OAuth on any failure
+    if os.path.exists(KEY_PATH):
+        try:
+            if HAS_GOOGLE_AUTH:
+                _cached_token, _cached_expiry = _get_token_google_auth()
+            else:
+                _cached_token, _cached_expiry = _get_token_stdlib()
+            return _cached_token
+        except Exception as e:
+            print(
+                f"WARN: service-account auth failed ({type(e).__name__}: {e}); "
+                f"falling back to OAuth",
+                file=sys.stderr,
+            )
+
+    _cached_token, _cached_expiry = _get_token_oauth()
 
     return _cached_token
 
@@ -61,6 +74,65 @@ def _get_token_google_auth():
     credentials.refresh(request)
     # google-auth handles expiry internally; we just extract for our cache
     return credentials.token, credentials.expiry.timestamp() if credentials.expiry else time.time() + 3599
+
+
+def _get_token_oauth():
+    """
+    Use the user OAuth token at ~/.hermes/gsc-oauth-token.json.
+
+    Fallback used when no service-account key exists (e.g. Google Cloud org
+    policy blocks key creation). Refreshes via the stored refresh_token and
+    persists the new access token.
+    """
+    if not os.path.exists(OAUTH_TOKEN_PATH):
+        raise RuntimeError(
+            f"No credentials found. Need either a service-account key at {KEY_PATH} "
+            f"or an OAuth token at {OAUTH_TOKEN_PATH}. "
+            f"Run: python3 scripts/gsc-oauth-setup.py --auth-url"
+        )
+
+    with open(OAUTH_TOKEN_PATH) as f:
+        data = json.load(f)
+
+    if not data.get("refresh_token"):
+        raise RuntimeError(
+            f"OAuth token at {OAUTH_TOKEN_PATH} has no refresh_token; re-run "
+            f"scripts/gsc-oauth-setup.py --auth-url with access_type=offline."
+        )
+
+    body = urllib.parse.urlencode({
+        "client_id": data["client_id"],
+        "client_secret": data["client_secret"],
+        "refresh_token": data["refresh_token"],
+        "grant_type": "refresh_token",
+    }).encode()
+
+    req = urllib.request.Request(
+        data["token_uri"],
+        data=body,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            tok = json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(
+            f"OAuth refresh failed: HTTP {e.code} — {e.read().decode()[:300]}\n"
+            f"Re-run: python3 scripts/gsc-oauth-setup.py --auth-url"
+        )
+
+    access_token = tok["access_token"]
+    expiry = time.time() + tok.get("expires_in", 3599)
+
+    # persist refreshed access token (best-effort)
+    try:
+        data["token"] = access_token
+        with open(OAUTH_TOKEN_PATH, "w") as f:
+            json.dump(data, f, indent=2)
+    except OSError:
+        pass
+
+    return access_token, expiry
 
 
 def _get_token_stdlib():

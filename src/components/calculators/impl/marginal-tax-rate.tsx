@@ -83,7 +83,7 @@ export default function MarginalTaxRateCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax Owed by Bracket" colors={BRACKET_COLORS} />
+      <CalculatorChart format="currency" type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax Owed by Bracket" colors={BRACKET_COLORS} />
       <CalculatorInput
         input={{ id: "taxableIncome", label: "Taxable Income", type: "number", defaultValue: 100000, suffix: "$", min: 0, step: 1000, tooltip: "Your income after deductions and adjustments — the amount actually subject to tax." }}
         value={taxableIncome}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-09",
+  "generated": "2026-08-09T15:04:01.586719+00:00",
+  "source": "Phase 38 daily ops cron \u2014 consolidated run",
+  "step1_gsc_pipeline": {
+    "freshness": "FRESH",
+    "date_range": "2026-07-31 to 2026-08-06",
+    "metrics_7d": {
+      "impressions": 2164,
+      "clicks": 1,
+      "position": 65.2,
+      "ctr_pct": 0.0,
+      "pages_with_impressions": 103
+    },
+    "metrics_28d": {
+      "impressions": 4759,
+      "clicks": 3
+    },
+    "wow_change": {
+      "impressions_delta_pct": 5.8,
+      "impressions_delta_abs": 118,
+      "note": "Single-day WoW <50% = noise (pitfall #74); not strategy signal"
+    },
+    "first_click_milestone": "PRESERVED (1 click / 7d, 3 clicks / 28d)"
+  },
+  "step2_morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "category_counts": {
+      "UNKNOWN": 7,
+      "DISCOVERED": 16,
+      "INDEXED": 1,
+      "CRAWLED_REJECTED": 1
+    },
+    "newly_indexed": 1,
+    "newly_indexed_url": "https://www.qfinhub.com/guides/mortgage-on-125k",
+    "unknown_to_discovered": 4,
+    "regressions": 0,
+    "queue_rebuild": {
+      "indexed": 221,
+      "discovered": 262,
+      "unknown": 41,
+      "uninspected": 0
+    },
+    "queue_drift": "STEP B-pre removed 0 stale URLs (steady state \u2014 pitfall #50)"
+  },
+  "step3_cloakbrowser_submissions": {
+    "submitted_today": 13,
+    "unique_urls": 13,
+    "clicked_button": 13,
+    "failures": 0,
+    "session_status": "AUTHENTICATED",
+    "captcha_or_2fa": false,
+    "session_expired": false,
+    "python_used": "~/.hermes/venv/bin/python3 (cloakbrowser 0.5.3 \u2014 found after agent venv lacked module)"
+  },
+  "indexing_status": {
+    "total_in_master": 668,
+    "sitemap_urls": 524,
+    "ghost_drift": 144,
+    "indexed": 238,
+    "discovered": 310,
+    "unknown": 96,
+    "crawled_rejected": 3,
+    "redirect": 1,
+    "other": 20,
+    "indexed_pct_of_sitemap": 45.4
+  },
+  "daily_progress": {
+    "newly_indexed_organic": 1,
+    "submitted_for_indexing": 13,
+    "indexed_set_growth_aug6_to_aug9": "+4 organic (234 \u2192 238)",
+    "transition_count": 4,
+    "regression_count": 0
+  },
+  "notes": [
+    "Pool exhaustion confirmed (3 uninspected + 50 unknown) \u2014 cycling strategy working",
+    "Found cloakbrowser 0.5.3 at ~/.hermes/venv/bin/python3 (not agent venv as docs claimed \u2014 pitfall updated)",
+    "First-click milestone preserved (1 click / 7d, 3 clicks / 28d)",
+    "13/13 UNKNOWN pages submitted \u2014 fastest-win category per pitfall #34",
+    "STEP B-pre clean (0 stale) \u2014 queue drift resolved at data-source level",
+    "Single-day 7d WoW +5.8% impressions within noise threshold (<50%)"
+  ]
+}

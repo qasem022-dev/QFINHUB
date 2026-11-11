@@ -91,7 +91,7 @@ export default function CreditCardPayoffCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={fullChartData} xKey="month" yKey={["Minimum Only", "With Extra"]} title="Balance Over Time" />
+      <CalculatorChart format="currency" type="line" data={fullChartData} xKey="month" yKey={["Minimum Only", "With Extra"]} title="Balance Over Time" />
       <CalculatorInput input={{ id: "balance", label: "Current Balance", type: "number", defaultValue: 5000, suffix: "$", min: 0, tooltip: "Your current credit card balance." }} value={balance} onChange={setBalance} />
       <CalculatorInput input={{ id: "apr", label: "APR", type: "number", defaultValue: 22, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Your credit card's annual percentage rate." }} value={apr} onChange={setApr} />
       <CalculatorInput input={{ id: "min-percent", label: "Minimum Payment %", type: "number", defaultValue: 2, suffix: "%", min: 1, max: 100, step: 0.5, tooltip: "Minimum payment as a percentage of the balance." }} value={minPercent} onChange={setMinPercent} />

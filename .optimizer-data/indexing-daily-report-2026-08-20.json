@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-20",
+  "freshness": "FRESH",
+  "indexing_state": {
+    "sitemap_total": 529,
+    "indexed": 225,
+    "discovered": 279,
+    "unknown": 25,
+    "uninspected": 1,
+    "index_rate_pct": 42.53
+  },
+  "gsc_7d": {
+    "impressions": 2590,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 71.5,
+    "pages_with_impressions": 104
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 26,
+    "newly_indexed_count": 2,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "https://www.qfinhub.com/calculators/portfolio-allocator"
+    ],
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 17,
+      "UNKNOWN": 6,
+      "INDEXED": 2
+    }
+  },
+  "submissions_today": {
+    "total": 13,
+    "daily_count": 13,
+    "results_breakdown": {
+      "CLICKED_BUTTON": 8,
+      "REQUESTED \u2713": 4,
+      "ALREADY_REQUESTED": 1
+    },
+    "urls": [
+      "https://www.qfinhub.com/calculators/risk-reward",
+      "https://www.qfinhub.com/tools/net-worth-100k-builder",
+      "https://www.qfinhub.com/calculators/vacation-budget",
+      "https://www.qfinhub.com/tools/net-worth-40s-peak",
+      "https://www.qfinhub.com/tools/emergency-fund-2k-3mo",
+      "https://www.qfinhub.com/calculators/social-security",
+      "https://www.qfinhub.com/tools/tax-120k-single",
+      "https://www.qfinhub.com/tools/investment-200k-5yr",
+      "https://www.qfinhub.com/calculators/asset-correlation",
+      "https://www.qfinhub.com/tools/tax-250k-married-separate",
+      "https://www.qfinhub.com/tools/fi-80k-family-45pct",
+      "https://www.qfinhub.com/tools/fire-55k-slow",
+      "https://www.qfinhub.com/tools/tax-1M-single"
+    ]
+  },
+  "log_integrity": {
+    "log_total": 434,
+    "last_entry_date": "2026-08-20 10:03:52",
+    "pitfall_19_clean": true
+  },
+  "issues_blockers": [
+    "morning-diagnosis.py crashes post-save at line 278 (master list\u2192dict bug) \u2014 non-fatal, summary intact (pitfall #20)",
+    "duplicate URLs in morning results list \u2014 non-fatal, aggregates correct (pitfall #20)"
+  ]
+}

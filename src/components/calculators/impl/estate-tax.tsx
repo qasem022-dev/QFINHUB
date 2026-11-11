@@ -49,7 +49,7 @@ export default function EstateTaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Estate Distribution" height={300} />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Estate Distribution" height={300} />
       <CalculatorInput
         input={{ id: "estateValue", label: "Total Estate Value", type: "number", defaultValue: 5000000, suffix: "$", min: 0, step: 100000, tooltip: "The total fair market value of all assets in the estate." }}
         value={estateValue}

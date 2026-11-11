@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -102,7 +106,7 @@ export default function DebtConsolidationCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="Monthly Payment" title="Monthly Payment Comparison" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="Monthly Payment" title="Monthly Payment Comparison" />
       <CalculatorInput input={{ id: "debt1Balance", label: "Debt 1 - Balance", type: "number", defaultValue: 5000, suffix: "$", min: 0, tooltip: "Balance for the first debt." }} value={debt1.balance} onChange={(v) => setDebt1({ ...debt1, balance: v })} />
       <CalculatorInput input={{ id: "debt1Rate", label: "Debt 1 - Rate", type: "number", defaultValue: 18, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Annual interest rate for the first debt." }} value={debt1.rate} onChange={(v) => setDebt1({ ...debt1, rate: v })} />
       <CalculatorInput input={{ id: "debt1Min", label: "Debt 1 - Min Payment", type: "number", defaultValue: 150, suffix: "$", min: 0, tooltip: "Minimum monthly payment for the first debt." }} value={debt1.minPayment} onChange={(v) => setDebt1({ ...debt1, minPayment: v })} />

@@ -41,7 +41,7 @@ export default function CashFlowCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Cash Flow Categories" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Cash Flow Categories" />
       <CalculatorInput input={{ id: "netIncome", label: "Net Income", type: "number", defaultValue: 200000, suffix: "$", min: 0, step: 1000, tooltip: "Net profit from the income statement." }} value={netIncome} onChange={setNetIncome} />
       <CalculatorInput input={{ id: "depreciation", label: "Depreciation & Amortization", type: "number", defaultValue: 30000, suffix: "$", step: 1000, tooltip: "Non-cash depreciation and amortization expenses." }} value={depreciation} onChange={setDepreciation} />
       <CalculatorInput input={{ id: "arChange", label: "Change in AR", type: "number", defaultValue: -10000, suffix: "$", step: 1000, tooltip: "Change in Accounts Receivable (negative = increase in AR)." }} value={arChange} onChange={setArChange} />

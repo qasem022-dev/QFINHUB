@@ -46,7 +46,7 @@ export default function SideHustleCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey={["value"]} title="Income Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey={["value"]} title="Income Breakdown" />
       <CalculatorInput input={{ id: "revenue", label: "Monthly Revenue", type: "number", defaultValue: 2000, suffix: "$", min: 0, tooltip: "Average monthly revenue from your side hustle." }} value={revenue} onChange={setRevenue} />
       <CalculatorInput input={{ id: "expenses", label: "Monthly Expenses", type: "number", defaultValue: 300, suffix: "$", min: 0, tooltip: "Average monthly business expenses." }} value={expenses} onChange={setExpenses} />
       <CalculatorInput input={{ id: "hours-per-week", label: "Hours Per Week", type: "number", defaultValue: 10, suffix: "hrs", min: 1, max: 168, tooltip: "Average hours per week spent on your side hustle." }} value={hoursPerWeek} onChange={setHoursPerWeek} />

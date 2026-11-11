@@ -48,7 +48,7 @@ export default function HourlyToSalaryCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey={["value"]} title="Pay Period Comparison" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey={["value"]} title="Pay Period Comparison" />
       <CalculatorInput input={{ id: "hourly-rate", label: "Hourly Rate", type: "number", defaultValue: 25, suffix: "$", min: 0, step: 0.5, tooltip: "Your hourly wage before taxes." }} value={hourlyRate} onChange={setHourlyRate} />
       <CalculatorInput input={{ id: "hours-per-week", label: "Hours Per Week", type: "number", defaultValue: 40, suffix: "hrs", min: 1, max: 168, tooltip: "Regular hours worked per week." }} value={hoursPerWeek} onChange={setHoursPerWeek} />
       <CalculatorInput input={{ id: "paid-weeks", label: "Paid Weeks Per Year", type: "number", defaultValue: 52, suffix: "wks", min: 1, max: 52, tooltip: "Weeks per year you work (52 for full-time, less if unpaid time off)." }} value={paidWeeks} onChange={setPaidWeeks} />

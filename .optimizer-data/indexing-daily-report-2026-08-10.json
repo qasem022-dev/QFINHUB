@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-10",
+  "generated": "2026-08-10T15:04:50+00:00",
+  "source": "Phase 38 daily ops cron \u2014 consolidated run (Aug 10)",
+  "sitemap_count": 525,
+  "step1_gsc_pipeline": {
+    "freshness": "FRESH",
+    "date_range": {
+      "start": "2026-08-01",
+      "end": "2026-08-07"
+    },
+    "metrics_7d": {
+      "impressions": 2167,
+      "clicks": 1,
+      "ctr_pct": 0.0,
+      "avg_position": 64.8,
+      "pages_with_impressions": 132,
+      "query_count": 500,
+      "query_impressions": 1230,
+      "query_page_rows": 500
+    },
+    "metrics_28d": {
+      "impressions": 4905,
+      "clicks": 3,
+      "pages_with_impressions": 186,
+      "pages_with_clicks": 3,
+      "clicked_pages": [
+        "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+        "https://www.qfinhub.com/methodology",
+        "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct"
+      ]
+    },
+    "wow_change": {}
+  },
+  "step2_morning_diagnosis": {
+    "status": "RUNNING \u2014 background PID 1173740",
+    "sample_size_target": 1900,
+    "sample_size_actual": 1266,
+    "note": "Pool exhausted (pitfall #69/71): uninspected=0 unknown=41 discovered=262. 634 below target \u2014 expected."
+  },
+  "step3_cloakbrowser_submissions": {
+    "submitted_today": 13,
+    "clicked_button": 11,
+    "requested_status": 2,
+    "total_successful": 13,
+    "quota": "13/13",
+    "result": "SUCCESS",
+    "note": "11 CLICKED_BUTTON + 2 REQUESTED \u2713 \u2014 all 13 valid per pitfall #42."
+  },
+  "indexed_state_in_sitemap": {
+    "INDEXED": 221,
+    "DISCOVERED": 259,
+    "UNKNOWN": 41,
+    "CRAWLED_REJECTED": 3,
+    "REDIRECT": 0,
+    "OTHER": 0,
+    "GHOST": 144
+  },
+  "indexed_pct_of_sitemap": 42.1,
+  "submissions_today_urls": [
+    "https://www.qfinhub.com/guides/mortgage-on-50k",
+    "https://www.qfinhub.com/guides/mortgage-on-75k",
+    "https://www.qfinhub.com/tools/fi-120k-fat-60pct",
+    "https://www.qfinhub.com/tools/fi-45k-coast",
+    "https://www.qfinhub.com/tools/investment-100k-25yr",
+    "https://www.qfinhub.com/tools/investment-10k-8yr",
+    "https://www.qfinhub.com/tools/investment-200k-5yr",
+    "https://www.qfinhub.com/tools/investment-400k-18yr",
+    "https://www.qfinhub.com/tools/investment-500-5yr",
+    "https://www.qfinhub.com/tools/tax-300k-married-joint",
+    "https://www.qfinhub.com/tools/tax-500k-single",
+    "https://www.qfinhub.com/tools/tax-60k-married-joint",
+    "https://www.qfinhub.com/tools/tax-95k-single"
+  ],
+  "queue_state": {
+    "generated": "2026-08-09T15:01:03Z",
+    "total": 304,
+    "indexed_pages": 221,
+    "discovered_pages": 262,
+    "unknown_pages": 41,
+    "uninspected_pages": 0,
+    "indexed_pass_count": 221,
+    "discovered_not_indexed_count": 262,
+    "unknown_to_google_count": 41,
+    "uninspected_count": 0,
+    "inspected_count": 304,
+    "freshness": "FRESH"
+  }
+}

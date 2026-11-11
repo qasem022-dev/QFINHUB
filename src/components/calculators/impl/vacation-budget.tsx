@@ -51,7 +51,7 @@ export default function VacationBudgetCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey={["value"]} title="Trip Cost Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey={["value"]} title="Trip Cost Breakdown" />
       <CalculatorInput input={{ id: "flights", label: "Flights", type: "number", defaultValue: 800, suffix: "$", min: 0, tooltip: "Round-trip flight costs for all travelers." }} value={flights} onChange={setFlights} />
       <CalculatorInput input={{ id: "hotel-per-night", label: "Hotel Per Night", type: "number", defaultValue: 200, suffix: "$", min: 0, tooltip: "Average nightly rate for accommodations." }} value={hotelPerNight} onChange={setHotelPerNight} />
       <CalculatorInput input={{ id: "nights", label: "Number of Nights", type: "slider", defaultValue: 5, min: 1, max: 30, suffix: "nts", tooltip: "Total number of nights you'll be away." }} value={nights} onChange={setNights} />

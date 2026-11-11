@@ -62,7 +62,7 @@ export default function TraditionalIraCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Pre-Tax vs After-Tax Balance" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Pre-Tax vs After-Tax Balance" />
       <CalculatorInput input={{ id: "annualContribution", label: "Annual Contribution", type: "number", defaultValue: 7000, suffix: "$", min: 0, tooltip: "How much you contribute each year to your Traditional IRA." }} value={annualContribution} onChange={setAnnualContribution} />
       <CalculatorInput input={{ id: "currentAge", label: "Current Age", type: "slider", defaultValue: 35, suffix: "years", min: 18, max: 70, step: 1, tooltip: "Your current age used to determine how many years your Traditional IRA has to grow." }} value={currentAge} onChange={setCurrentAge} />
       <PeriodInput

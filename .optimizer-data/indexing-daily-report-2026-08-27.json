@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-27",
+  "generated": "2026-08-27T10:04:31.183111",
+  "sitemap_index_rate": {
+    "indexed": 225,
+    "discovered": 279,
+    "unknown": 25,
+    "uninspected": 1,
+    "total_sitemap": 531,
+    "index_rate_pct": 42.37
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "newly_indexed_count": 3,
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 17,
+      "INDEXED": 3,
+      "UNKNOWN": 5
+    }
+  },
+  "submissions_today": {
+    "count": 13,
+    "log_total": 525
+  },
+  "gsc_7d_metrics": {
+    "impressions": 2102,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 70.5,
+    "pages_with_impressions": 100,
+    "query_count": 500,
+    "query_impressions": 761,
+    "query_page_rows": 500
+  },
+  "gsc_28d_metrics": {
+    "impressions": 9060,
+    "clicks": 3,
+    "pages_with_impressions": 205,
+    "pages_with_clicks": 3,
+    "clicked_pages": [
+      "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+      "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "https://www.qfinhub.com/widgets/mortgage-affordability-embed"
+    ]
+  },
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "ff132e28ea75",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  }
+}

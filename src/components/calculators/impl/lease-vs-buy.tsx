@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -72,7 +76,7 @@ export default function LeaseVsBuyCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey={["Monthly Payment", "Total Cost"]} title="Lease vs Buy Comparison" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey={["Monthly Payment", "Total Cost"]} title="Lease vs Buy Comparison" />
       <CalculatorInput input={{ id: "vehiclePrice", label: "Vehicle Price", type: "number", defaultValue: 40000, suffix: "$", min: 0, tooltip: "The purchase price of the vehicle." }} value={vehiclePrice} onChange={setVehiclePrice} />
       <CalculatorInput input={{ id: "downPayment", label: "Down Payment", type: "number", defaultValue: 5000, suffix: "$", min: 0, tooltip: "Cash paid upfront (applies to both lease and buy)." }} value={downPayment} onChange={setDownPayment} />
       <PeriodInput id="leaseTerm" label="Lease Term" value={leaseTerm} unit={leaseTermUnit} onValueChange={setLeaseTerm} onUnitChange={setLeaseTermUnit} min={6} max={120} />

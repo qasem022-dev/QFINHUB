@@ -1,0 +1,160 @@
+{
+  "generated": "2026-08-16T15:01:19Z",
+  "date": "2026-08-16",
+  "sample_size": 16,
+  "wall_clock_seconds": 37,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-empty-nester",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/bond-price",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/student-loan",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500-5yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/dti-150k-25pct",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/financial-ratios",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-5k-3yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-2k-3mo",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/customer-acquisition-cost",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/fire-40k-military",
+      "error": "The read operation timed out",
+      "category": "ERROR",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/hourly-to-salary",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-500k-15yr",
+      "error": "The read operation timed out",
+      "category": "ERROR",
+      "retries": 0
+    }
+  ],
+  "newly_indexed": [],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+    "https://www.qfinhub.com/calculators/bond-price",
+    "https://www.qfinhub.com/calculators/student-loan",
+    "https://www.qfinhub.com/calculators/credit-card-payoff",
+    "https://www.qfinhub.com/tools/investment-500-5yr"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "DISCOVERED": 9,
+    "UNKNOWN": 5,
+    "ERROR": 2
+  }
+}

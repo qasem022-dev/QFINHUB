@@ -68,8 +68,8 @@ export default function HomeRenovationCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Cost by Room" />
-      <CalculatorChart type="bar" data={barData} xKey="name" yKey={["Cost"]} title="Room Costs Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Cost by Room" />
+      <CalculatorChart format="currency" type="bar" data={barData} xKey="name" yKey={["Cost"]} title="Room Costs Breakdown" />
       <CalculatorInput
         input={{ id: "livingRoom", label: "Living Room Budget", type: "number", defaultValue: 8000, suffix: "$", min: 0, tooltip: "Budget allocated for living room renovations." }}
         value={livingRoom}

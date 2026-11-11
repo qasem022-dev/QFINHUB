@@ -73,7 +73,7 @@ export default function ClosingCostsCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="pie"
         data={pieData}
         xKey="name"

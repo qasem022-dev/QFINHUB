@@ -18,7 +18,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
-import { cn, formatNumber } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { HelpCircle } from "lucide-react";
 import type { CalculatorInput as CalculatorInputType } from "@/types/calculator";
 
@@ -30,7 +30,14 @@ interface CalculatorInputProps {
 }
 
 function formatDisplayValue(value: number): string {
-  return formatNumber(value, 0);
+  if (!isFinite(value)) return "";
+  // maximumFractionDigits (not minimum) so integers stay clean while decimals
+  // survive: 4.5 must render "4.5", not "5". The previous formatNumber(value, 0)
+  // rounded every fractional input away, making rates like 4.5% impossible to type.
+  return new Intl.NumberFormat("en-US", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  }).format(value);
 }
 
 export function CalculatorInput({
@@ -41,9 +48,26 @@ export function CalculatorInput({
 }: CalculatorInputProps) {
   const { id, label, type, suffix, placeholder, tooltip, options, min, max, step } = input;
 
+  // While the user is typing we keep the raw text so partial values ("4." / "-")
+  // are not reformatted out from under the caret mid-keystroke.
+  const [draft, setDraft] = React.useState<string | null>(null);
+
+  const clampToRange = (n: number): number => {
+    let out = n;
+    if (typeof min === "number" && out < min) out = min;
+    if (typeof max === "number" && out > max) out = max;
+    return out;
+  };
+
   const handleNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value.replace(/[^0-9.-]/g, "");
-    const num = raw === "" ? 0 : parseFloat(raw);
+    if (!/^-?\d*\.?\d*$/.test(raw)) return;
+    setDraft(raw);
+    if (raw === "" || raw === "-" || raw === "." || raw === "-.") {
+      onChange(0);
+      return;
+    }
+    const num = parseFloat(raw);
     if (!isNaN(num)) {
       onChange(num);
     }
@@ -155,12 +179,15 @@ export function CalculatorInput({
           id={id}
           type="text"
           inputMode="decimal"
-          value={formatDisplayValue(value)}
+          value={draft ?? formatDisplayValue(value)}
           onChange={handleNumberChange}
+          onFocus={() => setDraft(String(value))}
+          onBlur={() => {
+            setDraft(null);
+            const clamped = clampToRange(value);
+            if (clamped !== value) onChange(clamped);
+          }}
           placeholder={placeholder ?? "Enter value..."}
-          min={min}
-          max={max}
-          step={step}
           className={cn(
             "pr-12",
             "focus-visible:ring-primary-500",

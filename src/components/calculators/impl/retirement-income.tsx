@@ -96,7 +96,7 @@ export default function RetirementIncomeCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="area"
         data={balanceChart}
         xKey="year"

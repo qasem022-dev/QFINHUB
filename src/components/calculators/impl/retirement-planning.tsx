@@ -73,7 +73,7 @@ export default function RetirementPlanningCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="year" yKey={["Nest Egg", "Contributions"]} title="Savings Growth" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="year" yKey={["Nest Egg", "Contributions"]} title="Savings Growth" />
       <CalculatorInput input={{ id: "currentAge", label: "Current Age", type: "number", defaultValue: 30, suffix: "years", min: 18, max: 80, tooltip: "Your current age. Used to calculate years until retirement." }} value={currentAge} onChange={setCurrentAge} />
       <PeriodInput
         id="yearsToRetire"

@@ -65,7 +65,7 @@ export default function InheritanceTaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Inheritance Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Inheritance Breakdown" />
       <CalculatorInput
         input={{ id: "inheritanceAmount", label: "Inheritance Amount", type: "number", defaultValue: 500000, suffix: "$", min: 0, step: 10000, tooltip: "The total value of the inheritance received." }}
         value={inheritanceAmount}

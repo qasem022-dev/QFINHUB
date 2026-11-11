@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-25",
+  "pipeline_version": "Phase 38 (Service Account auth)",
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "7d9fc35d2702",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "data_window": {},
+  "sitemap": {
+    "total_urls": 531
+  },
+  "indexing": {
+    "indexed_pass": 225,
+    "discovered_not_indexed": 279,
+    "unknown_to_google": 25,
+    "uninspected": 1,
+    "sitemap_scoped_index_rate_pct": 42.53,
+    "newly_indexed_from_morning_diagnosis": 2,
+    "morning_diagnosis_inspected": 25,
+    "morning_diagnosis_unknown_to_discovered": 0
+  },
+  "submissions_today": 13,
+  "submission_log_total": 499,
+  "submission_28d_unique": 310,
+  "gsc_metrics_7d": {
+    "impressions": 2366,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 71.9,
+    "pages_with_impressions": 104
+  },
+  "known_issues": [
+    "Pitfall #20 (gsc-morning-diagnosis.py line 278 crash): reproduced again \u2014 6th straight day, one-line fix (master=[] \u2192 master={}) still unpatched. JSON save precedes crash so data intact.",
+    "Pitfall #23 (stdout \"4/13 requested\" vs log +13): confirmed again \u2014 display rounding in trailing summary, JSON log is source of truth.",
+    "Pitfall #19 (cross-day dedup erases log): confirmed CLEAN \u2014 log.total grew 486\u2192499 (+13), daily_counts[2026-08-25]=13."
+  ],
+  "phase": "Phase 38 / Phase 39 (humanization is only remaining growth lever; cycling payoff exhausted)"
+}

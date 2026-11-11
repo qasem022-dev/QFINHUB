@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T10:14:28.313622",
+  "phase": "Phase 38 Daily Ops",
+  "auth_method": "service_account",
+  "gsc_metrics_7d": {
+    "impressions": 2363,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 67.0,
+    "pages_with_impressions": 129
+  },
+  "indexing_state": {
+    "indexed": 224,
+    "discovered": 265,
+    "unknown": 37,
+    "uninspected": 0,
+    "total_sitemap": 526,
+    "index_rate_pct": 42.6
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "newly_indexed_count": 0,
+    "unknown_to_discovered_count": 8,
+    "regressions_count": 0
+  },
+  "submissions_today": {
+    "total": 13,
+    "quota": 13,
+    "breakdown": {
+      "UNKNOWN-CLICKED_BUTTON": 3,
+      "DISCOVERED-CLICKED_BUTTON": 7,
+      "DISCOVERED-REQUESTED \u2713": 3
+    }
+  },
+  "actions_taken": [
+    "Pulled fresh GSC API data (7d): 2363 imp, 1 click, pos 67.0",
+    "Morning diagnosis: 25 URLs inspected (1.0/s)",
+    "Submitted 13 URLs via CloakBrowser GSC UI",
+    "Queue maintained: 0 stale URLs removed"
+  ],
+  "issues_blockers": [],
+  "tomorrow_plan": [
+    "Continue GSC submission daily cadence (13/day quota)",
+    "Monitor 13 submissions today for indexing transitions",
+    "Background: 265 DISCOVERED pages await quality humanization"
+  ]
+}

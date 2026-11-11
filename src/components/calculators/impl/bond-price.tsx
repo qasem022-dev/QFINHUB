@@ -64,8 +64,8 @@ export default function BondPriceCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={barData} xKey="component" yKey="value" title="Bond Price Breakdown ($)" />
-      <CalculatorChart type="line" data={yieldImpactData} xKey="ytm" yKey="Price" title="Price vs YTM" />
+      <CalculatorChart format="currency" type="bar" data={barData} xKey="component" yKey="value" title="Bond Price Breakdown ($)" />
+      <CalculatorChart format="currency" type="line" data={yieldImpactData} xKey="ytm" yKey="Price" title="Price vs YTM" />
       <CalculatorInput
         input={{ id: "faceValue", label: "Face Value", type: "number", defaultValue: 1000, suffix: "$", min: 1, step: 10, tooltip: "The bond's par value paid at maturity." }}
         value={faceValue}

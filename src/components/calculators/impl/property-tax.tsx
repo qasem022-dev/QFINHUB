@@ -41,7 +41,7 @@ export default function PropertyTaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Property Tax Overview" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Property Tax Overview" />
       <CalculatorInput
         input={{ id: "homeValue", label: "Home Value", type: "number", defaultValue: 400000, suffix: "$", min: 0, step: 10000, tooltip: "The estimated market value of your home." }}
         value={homeValue}

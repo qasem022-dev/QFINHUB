@@ -1,0 +1,249 @@
+{
+  "generated": "2026-08-09T15:01:03Z",
+  "date": "2026-08-09",
+  "sample_size": 25,
+  "wall_clock_seconds": 25,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/blog/first-time-home-buyer-guide-2026-costs-steps-and-real-numbers",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-much-income-needed-to-afford-a-400k-home-2026",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/first-time-home-buyer-guide-2026-costs-steps-and-real-numbers",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/first-time-home-buyer-guide-2026-costs-steps-and-real-numbers",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-much-income-needed-to-afford-a-400k-home-2026",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/how-much-income-needed-to-afford-a-400k-home-2026",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-125k",
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "last_crawl": "2026-08-08T15:31:02Z",
+      "category": "INDEXED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-empty-nester",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-200k",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-3M-married-joint",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/best-401k-calculator",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-85k",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-investment-return-vs-compound-interest",
+      "coverage_state": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "2026-06-14T12:18:35Z",
+      "category": "CRAWLED_REJECTED",
+      "prior_state": "crawled - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/net-worth-20s-starter",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-25k-20yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-4k-12mo",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-65k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-600k-single",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-7yr",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/auto-loan-true-cost-calculator",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/phone-plan-comparison",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    }
+  ],
+  "newly_indexed": [
+    "https://www.qfinhub.com/guides/mortgage-on-125k"
+  ],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/tools/net-worth-empty-nester",
+    "https://www.qfinhub.com/guides/mortgage-on-200k",
+    "https://www.qfinhub.com/tools/tax-3M-married-joint",
+    "https://www.qfinhub.com/compare/best-401k-calculator"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "UNKNOWN": 7,
+    "DISCOVERED": 16,
+    "INDEXED": 1,
+    "CRAWLED_REJECTED": 1
+  }
+}

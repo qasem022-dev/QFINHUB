@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-07",
+  "generated": "2026-08-07T15:15:00Z",
+  "gsc_data": {
+    "status": "FRESH",
+    "date_range": {
+      "start": "2026-07-29",
+      "end": "2026-08-04"
+    },
+    "metrics_7d": {
+      "impressions": 1927,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "avg_position": 60.6,
+      "pages_with_impressions": 109
+    },
+    "previous_7d_impressions": 1162,
+    "impressions_change_pct": 65.8,
+    "metrics_28d": {
+      "impressions": 4084,
+      "clicks": 2
+    }
+  },
+  "indexing": {
+    "master_entries": 664,
+    "indexed": 234,
+    "discovered": 334,
+    "unknown": 72,
+    "other": 24,
+    "newly_indexed_today": null,
+    "morning_diagnosis_status": "TIMED_OUT_BEFORE_OUTPUT",
+    "morning_diagnosis_note": "Default run exceeded the 600-second foreground limit and produced no 2026-08-07 results artifact. Existing master counts are therefore the latest available per-URL state; today's newly-indexed count is unknown."
+  },
+  "submissions": {
+    "submitted_today": 13,
+    "successful_button_actions": 13,
+    "clicked_button": 3,
+    "requested_confirmed": 10,
+    "daily_limit": 13,
+    "session_status": "AUTHENTICATED",
+    "captcha_or_2fa": false
+  },
+  "issues": [
+    "Morning URL Inspection diagnosis exceeded the 600-second foreground execution limit and did not write today's result file.",
+    "The documented Hermes-agent venv lacked cloakbrowser; execution succeeded using /home/admin1/.hermes/venv/bin/python3, where cloakbrowser is installed."
+  ]
+}

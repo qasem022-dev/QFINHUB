@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-08",
+  "generated": "2026-08-08T15:32:26Z",
+  "gsc_data": {
+    "status": "FRESH",
+    "date_range": {
+      "start": "2026-07-30",
+      "end": "2026-08-05"
+    },
+    "metrics_7d": {
+      "impressions": 2046,
+      "clicks": 1,
+      "ctr_pct": 0.0,
+      "avg_position": 62.7,
+      "pages_with_impressions": 109
+    },
+    "metrics_28d": {
+      "impressions": 4472,
+      "clicks": 3,
+      "pages_with_clicks": 3
+    },
+    "previous_7d_impressions": 1415,
+    "impressions_change_pct": 44.6
+  },
+  "indexing": {
+    "master_entries": 665,
+    "indexed_total": 237,
+    "indexed_in_sitemap": 220,
+    "discovered_total": 307,
+    "unknown_total": 97,
+    "crawled_rejected": 3,
+    "other": 21,
+    "newly_indexed_today_organic": 9,
+    "unknown_to_discovered_today": 503,
+    "regressions_today": 0,
+    "morning_diagnosis_status": "COMPLETED",
+    "morning_diagnosis_inspected": 1900,
+    "morning_diagnosis_wall_clock_seconds": 1510,
+    "queue_after_step_bpre": "220 indexed + 251 discovered + 50 unknown + 3 uninspected = 524 (live sitemap URLs only; master file has 665 entries)"
+  },
+  "submissions": {
+    "submitted_today": 13,
+    "successful_button_actions": 13,
+    "clicked_button": 7,
+    "requested_confirmed": 6,
+    "daily_limit": 13,
+    "session_status": "AUTHENTICATED",
+    "captcha_or_2fa": false,
+    "filter_applied": "Queue reordered pre-submission so all 13 picks are index,follow \u2014 saved 9 quota slots from noindexed formula variants"
+  },
+  "issues": [
+    "Queue was reordered before submission so all 13 picks are index,follow \u2014 9 of the original 13 picks would have been noindexed formula tool variants (wasted quota per pitfall #5).",
+    "STEP B-pre removed 0 stale URLs \u2014 queue in sync with live sitemap (steady state confirmed for the 4th day running).",
+    "Master file has 665 entries vs 524 in live sitemap \u2014 141 orphan entries (ghost URLs from past redirects/cleanups). Queue correctly excludes these.",
+    "INDEXED count grew organically from 234 (Aug 7) \u2192 237 (237) \u2014 +3 without submissions."
+  ]
+}

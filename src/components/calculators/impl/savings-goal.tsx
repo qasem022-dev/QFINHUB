@@ -73,7 +73,7 @@ export default function SavingsGoalCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="month" yKey={["Savings Progress", "Target"]} title="Progress to Goal" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="month" yKey={["Savings Progress", "Target"]} title="Progress to Goal" />
       <CalculatorInput input={{ id: "target", label: "Target Amount", type: "number", defaultValue: 50000, suffix: "$", min: 0, tooltip: "The total savings amount you want to reach." }} value={target} onChange={setTarget} />
       <CalculatorInput input={{ id: "currentSavings", label: "Current Savings", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "Amount you have already saved toward this goal." }} value={currentSavings} onChange={setCurrentSavings} />
       <CalculatorInput input={{ id: "monthlyContrib", label: "Monthly Contribution", type: "number", defaultValue: 500, suffix: "$", min: 0, tooltip: "How much you can save each month." }} value={monthlyContrib} onChange={setMonthlyContrib} />

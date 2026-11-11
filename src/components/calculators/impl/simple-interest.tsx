@@ -42,7 +42,7 @@ export default function SimpleInterestCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Total Amount", "Interest", "Principal"]} title="Growth Over Time" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Total Amount", "Interest", "Principal"]} title="Growth Over Time" />
       <CalculatorInput input={{ id: "principal", label: "Principal Amount", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The initial amount of money being invested or borrowed." }} value={principal} onChange={setPrincipal} />
       <CalculatorInput input={{ id: "rate", label: "Annual Interest Rate", type: "number", defaultValue: 5, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "The annual simple interest rate." }} value={rate} onChange={setRate} />
       <PeriodInput

@@ -48,7 +48,7 @@ export default function PositionSizingCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="metric" yKey="value" title="Position Sizing ($)" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="metric" yKey="value" title="Position Sizing ($)" />
       <CalculatorInput
         input={{ id: "accountSize", label: "Account Size", type: "number", defaultValue: 50000, suffix: "$", min: 0, step: 100, tooltip: "Total trading account value." }}
         value={accountSize}

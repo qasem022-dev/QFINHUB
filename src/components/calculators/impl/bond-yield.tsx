@@ -53,7 +53,7 @@ export default function BondYieldCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Current Yield", "YTM"]} title="Yield Over Time (%)" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Current Yield", "YTM"]} title="Yield Over Time (%)" />
       <CalculatorInput
         input={{ id: "faceValue", label: "Face Value", type: "number", defaultValue: 1000, suffix: "$", min: 1, step: 10, tooltip: "The bond's par value paid at maturity." }}
         value={faceValue}

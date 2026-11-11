@@ -54,7 +54,7 @@ export default function OptionProfitCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="price" yKey={["profit"]} title="Profit/Loss vs Stock Price" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="price" yKey={["profit"]} title="Profit/Loss vs Stock Price" />
       <CalculatorInput
         input={{ id: "optionType", label: "Option Type", type: "select", defaultValue: 0, options: [{ label: "Call", value: 0 }, { label: "Put", value: 1 }], tooltip: "Choose between a call option (right to buy) or put option (right to sell)." }}
         value={optionType}

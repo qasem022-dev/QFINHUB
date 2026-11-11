@@ -36,7 +36,7 @@ export default function TipCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={chartData} xKey="name" yKey="value" title="Bill vs Tip" height={250} />
+      <CalculatorChart format="currency" type="pie" data={chartData} xKey="name" yKey="value" title="Bill vs Tip" height={250} />
       <CalculatorInput
         input={{ id: "bill", label: "Bill Amount", type: "number", defaultValue: 100, suffix: "$", min: 0, tooltip: "The total bill amount before tip." }}
         value={bill}

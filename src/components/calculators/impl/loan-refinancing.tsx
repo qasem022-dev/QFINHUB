@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -66,7 +70,7 @@ export default function LoanRefinancingCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey={["Monthly Payment", "Total Interest"]} title="Current vs Refinanced" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey={["Monthly Payment", "Total Interest"]} title="Current vs Refinanced" />
       <CalculatorInput input={{ id: "currentBalance", label: "Current Balance", type: "number", defaultValue: 25000, suffix: "$", min: 0, tooltip: "Remaining balance on your current loan." }} value={currentBalance} onChange={setCurrentBalance} />
       <CalculatorInput input={{ id: "currentRate", label: "Current Rate", type: "number", defaultValue: 8, suffix: "%", min: 0, max: 30, step: 0.1, tooltip: "Your current annual interest rate." }} value={currentRate} onChange={setCurrentRate} />
       <PeriodInput id="currentTermRemaining" label="Current Remaining Term" value={currentTermRemaining} unit={currentTermUnit} onValueChange={setCurrentTermRemaining} onUnitChange={setCurrentTermUnit} min={1} max={360} />

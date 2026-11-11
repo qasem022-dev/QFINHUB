@@ -54,7 +54,7 @@ export default function TimeValueOfMoney() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="period" yKey="Value" title="Value Over Time" height={250} />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="period" yKey="Value" title="Value Over Time" height={250} />
       <CalculatorInput
         input={{ id: "presentValue", label: "Present Value", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The initial lump sum amount (PV)." }}
         value={presentValue}

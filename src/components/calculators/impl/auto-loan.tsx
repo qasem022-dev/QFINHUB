@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -71,7 +75,7 @@ export default function AutoLoanCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="month" yKey={["Principal", "Interest"]} title="Principal vs Interest Amortization" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="month" yKey={["Principal", "Interest"]} title="Principal vs Interest Amortization" />
       <CalculatorInput input={{ id: "carPrice", label: "Car Price", type: "number", defaultValue: 35000, suffix: "$", min: 0, tooltip: "The purchase price of the vehicle." }} value={carPrice} onChange={setCarPrice} />
       <CalculatorInput input={{ id: "downPayment", label: "Down Payment", type: "number", defaultValue: 5000, suffix: "$", min: 0, tooltip: "Cash you pay upfront toward the car." }} value={downPayment} onChange={setDownPayment} />
       <CalculatorInput input={{ id: "tradeInValue", label: "Trade-In Value", type: "number", defaultValue: 0, suffix: "$", min: 0, tooltip: "Value of your current car being traded in." }} value={tradeInValue} onChange={setTradeInValue} />

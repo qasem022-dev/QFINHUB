@@ -40,7 +40,7 @@ export default function SalesTaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Purchase Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Purchase Breakdown" />
       <CalculatorInput
         input={{ id: "purchaseAmount", label: "Purchase Amount", type: "number", defaultValue: 100, suffix: "$", min: 0, step: 10, tooltip: "The total purchase price before tax." }}
         value={purchaseAmount}

@@ -84,7 +84,7 @@ export default function MonteCarloSimulation() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="year" yKey={["95th Percentile", "Median", "5th Percentile"]} title="Simulated Portfolio Growth" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="year" yKey={["95th Percentile", "Median", "5th Percentile"]} title="Simulated Portfolio Growth" />
       <CalculatorInput
         input={{ id: "initialInvestment", label: "Initial Investment", type: "number", defaultValue: 10000, suffix: "$", min: 0, step: 100, tooltip: "Starting portfolio value." }}
         value={initialInvestment}

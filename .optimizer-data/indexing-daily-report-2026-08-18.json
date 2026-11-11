@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-18",
+  "freshness": "FRESH",
+  "queue": {
+    "indexed_pass_count": 225,
+    "discovered_not_indexed_count": 279,
+    "unknown_to_google_count": 25,
+    "uninspected_count": 1,
+    "sitemap_scoped_index_rate_pct": 42.53,
+    "sitemap_scoped_total": 529
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "newly_indexed_count": 1,
+    "unknown_to_discovered_count": 4,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 17,
+      "UNKNOWN": 7,
+      "INDEXED": 1
+    }
+  },
+  "submissions_today": {
+    "count": 13,
+    "quota": 13,
+    "max_results": [
+      "CLICKED_BUTTON",
+      "REQUESTED"
+    ]
+  },
+  "gsc_metrics_7d": {
+    "impressions": 2686,
+    "clicks": 0,
+    "avg_position": 70.1,
+    "pages_with_impressions": 106,
+    "queries": 0
+  },
+  "status": "COMPLETE",
+  "blockers": []
+}

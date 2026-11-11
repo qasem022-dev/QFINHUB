@@ -1,0 +1,165 @@
+{
+  "generated": "2026-08-17T15:00:31Z",
+  "date": "2026-08-17",
+  "sample_size": 16,
+  "wall_clock_seconds": 14,
+  "results": [
+    {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-2k-3mo",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/privacy",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-100k",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-50k-5yr-loss",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/fha-loan",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-2M-married-joint",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/debt-to-income",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "url is unknown to google",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/blog/why-britain-s-potential-next-pm-is-putting-investors-on-edge",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/beta-calculator",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/asset-correlation",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/va-loan",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/investment-150k-20yr",
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "UNKNOWN",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/calculators/option-profit",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-350k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    },
+    {
+      "url": "https://www.qfinhub.com/tools/tax-60k-single",
+      "coverage_state": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "last_crawl": "",
+      "category": "DISCOVERED",
+      "prior_state": "discovered - currently not indexed",
+      "retries": 0
+    }
+  ],
+  "newly_indexed": [],
+  "unknown_to_discovered": [
+    "https://www.qfinhub.com/tools/emergency-fund-2k-3mo",
+    "https://www.qfinhub.com/privacy",
+    "https://www.qfinhub.com/guides/mortgage-on-100k",
+    "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+    "https://www.qfinhub.com/tools/tax-2M-married-joint"
+  ],
+  "regressions": [],
+  "category_counts": {
+    "DISCOVERED": 10,
+    "UNKNOWN": 6
+  }
+}

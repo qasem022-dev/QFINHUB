@@ -52,7 +52,7 @@ export default function RequiredMinimumDistributionCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={rmdChartData} xKey="age" yKey={["RMD"]} title="RMD at Different Ages" height={250} />
+      <CalculatorChart format="currency" type="bar" data={rmdChartData} xKey="age" yKey={["RMD"]} title="RMD at Different Ages" height={250} />
       <CalculatorInput
         input={{ id: "accountBalance", label: "Account Balance", type: "number", defaultValue: 500000, suffix: "$", min: 0, step: 10000, tooltip: "Your current retirement account balance." }}
         value={accountBalance}

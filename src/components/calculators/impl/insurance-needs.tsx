@@ -54,7 +54,7 @@ export default function InsuranceNeedsCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={stackData} xKey="name" yKey="value" title="Needs Breakdown" />
+      <CalculatorChart format="currency" type="bar" data={stackData} xKey="name" yKey="value" title="Needs Breakdown" />
       <CalculatorInput input={{ id: "annual-income", label: "Annual Income", type: "number", defaultValue: 80000, suffix: "$", min: 0, tooltip: "Your current annual income." }} value={annualIncome} onChange={setAnnualIncome} />
       <PeriodInput
         id="years-to-replace"

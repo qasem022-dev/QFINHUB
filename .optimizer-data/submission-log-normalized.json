@@ -1,0 +1,1927 @@
+{
+  "total": 525,
+  "unique_urls": 383,
+  "by_type": {
+    "CLICKED_BUTTON": 297,
+    "REQUESTED \u2713": 160,
+    "?": 67,
+    "ALREADY_REQUESTED": 1
+  },
+  "latest_per_url": {
+    "https://www.qfinhub.com/calculators/car-affordability": {
+      "url": "https://www.qfinhub.com/calculators/car-affordability",
+      "date": "2026-08-24 10:02:14",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/operating-margin": {
+      "url": "https://www.qfinhub.com/calculators/operating-margin",
+      "date": "2026-06-29 10:31:50",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/dcf-analysis": {
+      "url": "https://www.qfinhub.com/calculators/dcf-analysis",
+      "date": "2026-06-29 10:31:59",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/inventory-turnover": {
+      "url": "https://www.qfinhub.com/calculators/inventory-turnover",
+      "date": "2026-06-29 10:32:08",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/customer-acquisition-cost": {
+      "url": "https://www.qfinhub.com/calculators/customer-acquisition-cost",
+      "date": "2026-08-24 10:02:41",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/lifetime-value": {
+      "url": "https://www.qfinhub.com/calculators/lifetime-value",
+      "date": "2026-06-29 10:32:26",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/em-fund": {
+      "url": "https://www.qfinhub.com/calculators/em-fund",
+      "date": "2026-06-29 10:32:35",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/debt-to-income": {
+      "url": "https://www.qfinhub.com/calculators/debt-to-income",
+      "date": "2026-08-25 10:01:44",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/credit-card-payoff": {
+      "url": "https://www.qfinhub.com/calculators/credit-card-payoff",
+      "date": "2026-08-27 10:04:05",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/college-savings": {
+      "url": "https://www.qfinhub.com/calculators/college-savings",
+      "date": "2026-06-29 10:33:02",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/insurance-needs": {
+      "url": "https://www.qfinhub.com/calculators/insurance-needs",
+      "date": "2026-06-29 10:33:11",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/child-care-cost": {
+      "url": "https://www.qfinhub.com/calculators/child-care-cost",
+      "date": "2026-08-23 10:01:49",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/vacation-budget": {
+      "url": "https://www.qfinhub.com/calculators/vacation-budget",
+      "date": "2026-08-20 10:02:21",
+      "type": "ALREADY_REQUESTED"
+    },
+    "https://www.qfinhub.com/tools/investment-10k-5yr": {
+      "url": "https://www.qfinhub.com/tools/investment-10k-5yr",
+      "date": "2026-06-29 18:57:53",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-50k-7yr": {
+      "url": "https://www.qfinhub.com/tools/investment-50k-7yr",
+      "date": "2026-06-29 18:58:02",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-100k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-100k-10yr",
+      "date": "2026-06-29 18:58:11",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-100k-15yr": {
+      "url": "https://www.qfinhub.com/tools/investment-100k-15yr",
+      "date": "2026-06-29 18:58:20",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-250k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-250k-10yr",
+      "date": "2026-06-29 18:58:29",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-500k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-500k-10yr",
+      "date": "2026-06-29 18:58:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-500k-15yr": {
+      "url": "https://www.qfinhub.com/tools/investment-500k-15yr",
+      "date": "2026-06-29 18:58:47",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-2k-3yr": {
+      "url": "https://www.qfinhub.com/tools/investment-2k-3yr",
+      "date": "2026-06-29 18:58:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-15k-4yr": {
+      "url": "https://www.qfinhub.com/tools/investment-15k-4yr",
+      "date": "2026-06-29 18:59:05",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-75k-12yr": {
+      "url": "https://www.qfinhub.com/tools/investment-75k-12yr",
+      "date": "2026-06-29 18:59:14",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-200k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-200k-10yr",
+      "date": "2026-06-29 18:59:23",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-300k-12yr": {
+      "url": "https://www.qfinhub.com/tools/investment-300k-12yr",
+      "date": "2026-06-29 18:59:32",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-750k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-750k-20yr",
+      "date": "2026-06-29 18:59:41",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio": {
+      "url": "https://www.qfinhub.com/compare/compare-capm-calculator-vs-sharpe-ratio",
+      "date": "2026-06-30 11:02:26",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment": {
+      "url": "https://www.qfinhub.com/blog/20000-loan-5-years-8-percent-monthly-payment",
+      "date": "2026-06-30 11:02:35",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/present-value": {
+      "url": "https://www.qfinhub.com/calculators/present-value",
+      "date": "2026-06-30 11:02:44",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to": {
+      "url": "https://www.qfinhub.com/blog/florida-insurance-crisis-why-homeowners-need-r-pace-and-smart-financial-tools-to",
+      "date": "2026-06-30 11:02:53",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/1099-calculator": {
+      "url": "https://www.qfinhub.com/calculators/1099-calculator",
+      "date": "2026-06-30 11:03:02",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/beta-calculator": {
+      "url": "https://www.qfinhub.com/calculators/beta-calculator",
+      "date": "2026-08-26 10:01:43",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals": {
+      "url": "https://www.qfinhub.com/blog/fednow-intermediary-proposal-what-it-means-for-your-mortgage-and-savings-goals",
+      "date": "2026-06-30 11:03:21",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers": {
+      "url": "https://www.qfinhub.com/blog/stablecoin-regulation-and-your-mortgage-what-the-genius-act-means-for-homebuyers",
+      "date": "2026-06-30 11:03:30",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/paycheck-calculator": {
+      "url": "https://www.qfinhub.com/calculators/paycheck-calculator",
+      "date": "2026-06-30 11:03:39",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond": {
+      "url": "https://www.qfinhub.com/blog/allianzgi-warns-of-overpriced-inflation-what-it-means-for-your-mortgage-and-bond",
+      "date": "2026-06-30 11:03:48",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/water-bill": {
+      "url": "https://www.qfinhub.com/calculators/water-bill",
+      "date": "2026-06-30 11:03:57",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche": {
+      "url": "https://www.qfinhub.com/compare/compare-debt-snowball-vs-debt-avalanche",
+      "date": "2026-08-25 10:02:21",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/compare/best-budget-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-budget-calculator",
+      "date": "2026-08-25 10:01:35",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/ai-specialist": {
+      "url": "https://www.qfinhub.com/ai-specialist",
+      "date": "2026-07-01 11:02:03",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog": {
+      "url": "https://www.qfinhub.com/blog",
+      "date": "2026-07-01 11:02:12",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/compound-interest-explained": {
+      "url": "https://www.qfinhub.com/blog/compound-interest-explained",
+      "date": "2026-07-01 11:02:21",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you": {
+      "url": "https://www.qfinhub.com/blog/debt-pentagon-federal-credit-union-review-2026-is-it-right-for-you",
+      "date": "2026-07-01 11:02:30",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche": {
+      "url": "https://www.qfinhub.com/blog/debt-snowball-vs-debt-avalanche",
+      "date": "2026-07-01 11:02:39",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings": {
+      "url": "https://www.qfinhub.com/blog/ecb-rate-hike-2025-how-a-modest-increase-affects-your-mortgage-and-savings",
+      "date": "2026-07-01 11:02:48",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/fed-approves-united-texas-bank-conversion-what-it-means-for-your-mortgage-and-sa": {
+      "url": "https://www.qfinhub.com/blog/fed-approves-united-texas-bank-conversion-what-it-means-for-your-mortgage-and-sa",
+      "date": "2026-07-01 11:02:58",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/fed-minutes-march-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving": {
+      "url": "https://www.qfinhub.com/blog/fed-minutes-march-2026-what-the-fomc-decision-means-for-your-mortgage-and-saving",
+      "date": "2026-07-01 11:03:07",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings": {
+      "url": "https://www.qfinhub.com/blog/fed-rate-hike-ahead-how-rising-inflation-impacts-your-mortgage-and-savings",
+      "date": "2026-07-01 11:03:16",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/fed-s-rising-inflation-forecast-how-to-protect-your-mortgage-and-savings": {
+      "url": "https://www.qfinhub.com/blog/fed-s-rising-inflation-forecast-how-to-protect-your-mortgage-and-savings",
+      "date": "2026-07-01 11:03:25",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/how-inflation-affects-your-savings-and-investments": {
+      "url": "https://www.qfinhub.com/blog/how-inflation-affects-your-savings-and-investments",
+      "date": "2026-07-01 11:03:34",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026": {
+      "url": "https://www.qfinhub.com/blog/how-much-emergency-fund-do-i-need-2026",
+      "date": "2026-07-01 11:03:43",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/investing-massive-options-bet-rattles-oil-market-amid-iran-war-fears": {
+      "url": "https://www.qfinhub.com/blog/investing-massive-options-bet-rattles-oil-market-amid-iran-war-fears",
+      "date": "2026-07-01 11:03:52",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f": {
+      "url": "https://www.qfinhub.com/blog/kevin-warsh-sworn-in-as-fed-chair-what-it-means-for-your-mortgage-and-personal-f",
+      "date": "2026-07-03 10:07:20",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36": {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-how-to-buy-a-415k-home-at-6-36",
+      "date": "2026-07-03 10:07:29",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division": {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-southern-land-adds-an-integrated-mortgage-division",
+      "date": "2026-07-03 10:07:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget": {
+      "url": "https://www.qfinhub.com/blog/trump-gas-tax-holiday-how-lower-fuel-costs-could-impact-your-mortgage-and-budget",
+      "date": "2026-07-03 10:07:47",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-a-former-bank-employee-means-for-your-": {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-a-former-bank-employee-means-for-your-",
+      "date": "2026-07-03 10:07:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-community-bankshares-means-for-your-mo": {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-enforcement-action-against-community-bankshares-means-for-your-mo",
+      "date": "2026-07-03 10:08:05",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/break-even": {
+      "url": "https://www.qfinhub.com/calculators/break-even",
+      "date": "2026-07-03 10:08:14",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/capital-gains-tax": {
+      "url": "https://www.qfinhub.com/calculators/capital-gains-tax",
+      "date": "2026-08-27 10:03:28",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/currency-converter": {
+      "url": "https://www.qfinhub.com/calculators/currency-converter",
+      "date": "2026-08-21 10:02:46",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/debt-consolidation": {
+      "url": "https://www.qfinhub.com/calculators/debt-consolidation",
+      "date": "2026-07-03 10:08:41",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/fha-loan": {
+      "url": "https://www.qfinhub.com/calculators/fha-loan",
+      "date": "2026-08-25 10:02:30",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/fica-calculator": {
+      "url": "https://www.qfinhub.com/calculators/fica-calculator",
+      "date": "2026-08-21 10:02:55",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/hourly-to-salary": {
+      "url": "https://www.qfinhub.com/calculators/hourly-to-salary",
+      "date": "2026-08-26 10:02:01",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/inflation-calculator": {
+      "url": "https://www.qfinhub.com/calculators/inflation-calculator",
+      "date": "2026-07-04 10:05:06",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/overtime-calculator": {
+      "url": "https://www.qfinhub.com/calculators/overtime-calculator",
+      "date": "2026-08-25 10:02:03",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/position-sizing": {
+      "url": "https://www.qfinhub.com/calculators/position-sizing",
+      "date": "2026-07-04 10:05:24",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/property-tax": {
+      "url": "https://www.qfinhub.com/calculators/property-tax",
+      "date": "2026-07-04 10:05:33",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/salary-calculator": {
+      "url": "https://www.qfinhub.com/calculators/salary-calculator",
+      "date": "2026-07-04 10:05:43",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/self-employment-tax": {
+      "url": "https://www.qfinhub.com/calculators/self-employment-tax",
+      "date": "2026-07-04 10:05:52",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/social-security": {
+      "url": "https://www.qfinhub.com/calculators/social-security",
+      "date": "2026-08-20 10:02:48",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/student-loan": {
+      "url": "https://www.qfinhub.com/calculators/student-loan",
+      "date": "2026-07-04 10:06:10",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/tip-calculator": {
+      "url": "https://www.qfinhub.com/calculators/tip-calculator",
+      "date": "2026-07-04 10:06:19",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/best-tax-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-tax-calculator",
+      "date": "2026-07-04 10:06:28",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed": {
+      "url": "https://www.qfinhub.com/compare/compare-30yr-fixed-vs-15yr-fixed",
+      "date": "2026-07-04 10:06:37",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-break-even-vs-roi-calculator": {
+      "url": "https://www.qfinhub.com/compare/compare-break-even-vs-roi-calculator",
+      "date": "2026-07-04 10:06:46",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal": {
+      "url": "https://www.qfinhub.com/compare/compare-budget-planner-vs-savings-goal",
+      "date": "2026-07-04 10:06:55",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-400k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-400k-married-joint",
+      "date": "2026-07-28 10:02:04",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-80k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-80k-married-separate",
+      "date": "2026-07-28 10:02:13",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-15k-lean-extreme": {
+      "url": "https://www.qfinhub.com/tools/fi-15k-lean-extreme",
+      "date": "2026-07-28 10:02:23",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-1M-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-1M-married-joint",
+      "date": "2026-07-28 10:02:32",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/budget-40k-zero-based": {
+      "url": "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "date": "2026-07-28 10:02:41",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent": {
+      "url": "https://www.qfinhub.com/loan-scenarios/fair-credit-loan-20000-20-percent",
+      "date": "2026-07-28 10:02:50",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-60k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-60k-head-of-household",
+      "date": "2026-08-22 10:03:14",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-0k-100k-starter": {
+      "url": "https://www.qfinhub.com/tools/fire-0k-100k-starter",
+      "date": "2026-07-28 10:03:08",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/loan-refinancing": {
+      "url": "https://www.qfinhub.com/calculators/loan-refinancing",
+      "date": "2026-07-28 10:03:17",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-70k-late-50pct": {
+      "url": "https://www.qfinhub.com/tools/fi-70k-late-50pct",
+      "date": "2026-07-28 10:03:26",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/dti-65k-medical": {
+      "url": "https://www.qfinhub.com/tools/dti-65k-medical",
+      "date": "2026-07-28 10:03:35",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-90k-late-start": {
+      "url": "https://www.qfinhub.com/tools/fire-90k-late-start",
+      "date": "2026-07-28 10:03:44",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-750k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-750k-married-joint",
+      "date": "2026-07-28 10:03:54",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-10k-3yr-loss": {
+      "url": "https://www.qfinhub.com/tools/investment-10k-3yr-loss",
+      "date": "2026-07-29 10:27:00",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-20k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-20k-single",
+      "date": "2026-07-29 10:27:09",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/net-profit-margin": {
+      "url": "https://www.qfinhub.com/calculators/net-profit-margin",
+      "date": "2026-07-29 10:27:18",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-1M-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-1M-10yr",
+      "date": "2026-07-29 10:27:27",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-400k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-400k-head-of-household",
+      "date": "2026-07-29 10:27:36",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/marginal-tax-rate": {
+      "url": "https://www.qfinhub.com/calculators/marginal-tax-rate",
+      "date": "2026-07-29 10:27:46",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-25k-van-life": {
+      "url": "https://www.qfinhub.com/tools/fire-25k-van-life",
+      "date": "2026-07-29 10:27:55",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/moving-cost": {
+      "url": "https://www.qfinhub.com/calculators/moving-cost",
+      "date": "2026-07-29 10:28:04",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-50k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-50k-head-of-household",
+      "date": "2026-07-29 10:28:13",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/compare/compare-debt-consolidation-vs-loan-comparison": {
+      "url": "https://www.qfinhub.com/compare/compare-debt-consolidation-vs-loan-comparison",
+      "date": "2026-08-17 15:01:44",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio": {
+      "url": "https://www.qfinhub.com/compare/compare-portfolio-allocator-vs-sharpe-ratio",
+      "date": "2026-07-29 10:28:31",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-120k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-120k-single",
+      "date": "2026-08-20 10:02:57",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-250k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-250k-single",
+      "date": "2026-07-29 10:28:49",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/about": {
+      "url": "https://www.qfinhub.com/about",
+      "date": "2026-08-22 10:03:41",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth": {
+      "url": "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "date": "2026-08-26 10:01:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/basic-calculator": {
+      "url": "https://www.qfinhub.com/calculators/basic-calculator",
+      "date": "2026-08-23 10:03:01",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-50k-5yr-loss": {
+      "url": "https://www.qfinhub.com/tools/investment-50k-5yr-loss",
+      "date": "2026-08-25 10:02:12",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-2M-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-2M-20yr",
+      "date": "2026-07-30 10:19:30",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/sales-tax": {
+      "url": "https://www.qfinhub.com/calculators/sales-tax",
+      "date": "2026-07-30 10:19:39",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-250k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-250k-married-separate",
+      "date": "2026-08-20 10:03:24",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/risk-reward": {
+      "url": "https://www.qfinhub.com/calculators/risk-reward",
+      "date": "2026-08-20 10:02:05",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-275k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-275k-head-of-household",
+      "date": "2026-07-30 10:20:06",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-250k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-250k-married-joint",
+      "date": "2026-08-23 10:02:25",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent": {
+      "url": "https://www.qfinhub.com/loan-scenarios/small-emergency-loan-5000-15-percent",
+      "date": "2026-08-26 10:01:34",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-35k-geo-arb": {
+      "url": "https://www.qfinhub.com/tools/fi-35k-geo-arb",
+      "date": "2026-07-30 10:20:34",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare": {
+      "url": "https://www.qfinhub.com/compare",
+      "date": "2026-07-30 10:20:43",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-40k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-40k-single",
+      "date": "2026-07-31 10:20:47",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/traditional-ira": {
+      "url": "https://www.qfinhub.com/calculators/traditional-ira",
+      "date": "2026-07-31 10:20:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-80k-8yr": {
+      "url": "https://www.qfinhub.com/tools/investment-80k-8yr",
+      "date": "2026-07-31 10:21:05",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-500k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-500k-head-of-household",
+      "date": "2026-07-31 10:21:14",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/calorie-calculator": {
+      "url": "https://www.qfinhub.com/calculators/calorie-calculator",
+      "date": "2026-07-31 10:21:23",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/compare/best-investment-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-investment-calculator",
+      "date": "2026-07-31 10:21:32",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-100k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-100k-20yr",
+      "date": "2026-07-31 10:21:41",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/guides/how-to-calculate-cagr": {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-cagr",
+      "date": "2026-07-31 10:21:50",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/portfolio-allocator": {
+      "url": "https://www.qfinhub.com/calculators/portfolio-allocator",
+      "date": "2026-08-26 10:01:16",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-3M-single": {
+      "url": "https://www.qfinhub.com/tools/tax-3M-single",
+      "date": "2026-07-31 10:22:08",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/net-worth-100k-builder": {
+      "url": "https://www.qfinhub.com/tools/net-worth-100k-builder",
+      "date": "2026-08-20 10:02:14",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/retirement-expenses": {
+      "url": "https://www.qfinhub.com/calculators/retirement-expenses",
+      "date": "2026-08-24 10:02:04",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-60k-coast-500k": {
+      "url": "https://www.qfinhub.com/tools/fire-60k-coast-500k",
+      "date": "2026-07-31 10:22:36",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/data": {
+      "url": "https://www.qfinhub.com/data",
+      "date": "2026-08-01 10:11:42",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-net-worth-vs-budget-planner": {
+      "url": "https://www.qfinhub.com/compare/compare-net-worth-vs-budget-planner",
+      "date": "2026-08-01 10:11:51",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/net-worth-minimalist": {
+      "url": "https://www.qfinhub.com/tools/net-worth-minimalist",
+      "date": "2026-08-01 10:12:00",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy": {
+      "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-rent-vs-buy",
+      "date": "2026-08-01 10:12:10",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/dti-100k-43pct": {
+      "url": "https://www.qfinhub.com/tools/dti-100k-43pct",
+      "date": "2026-08-01 10:12:19",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/fire-calculator": {
+      "url": "https://www.qfinhub.com/calculators/fire-calculator",
+      "date": "2026-08-01 10:12:28",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-100k-2yr-loss": {
+      "url": "https://www.qfinhub.com/tools/investment-100k-2yr-loss",
+      "date": "2026-08-01 10:12:37",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/perpetuity-calculator": {
+      "url": "https://www.qfinhub.com/calculators/perpetuity-calculator",
+      "date": "2026-08-23 10:03:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-30k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-30k-10yr",
+      "date": "2026-08-01 10:12:55",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/tax-bracket": {
+      "url": "https://www.qfinhub.com/calculators/tax-bracket",
+      "date": "2026-08-01 10:13:04",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/global-central-banks": {
+      "url": "https://www.qfinhub.com/blog/global-central-banks",
+      "date": "2026-08-01 10:13:13",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-30k-6yr": {
+      "url": "https://www.qfinhub.com/tools/investment-30k-6yr",
+      "date": "2026-08-01 10:13:22",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-150k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-150k-20yr",
+      "date": "2026-08-17 15:01:51",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-300k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-300k-head-of-household",
+      "date": "2026-08-02 10:01:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan": {
+      "url": "https://www.qfinhub.com/compare/compare-student-loan-vs-personal-loan",
+      "date": "2026-08-02 10:01:47",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net": {
+      "url": "https://www.qfinhub.com/blog/retirement-planning-could-cost-2-5-mil-by-2043-is-your-home-your-safety-net",
+      "date": "2026-08-02 10:01:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-50k-15yr": {
+      "url": "https://www.qfinhub.com/tools/investment-50k-15yr",
+      "date": "2026-08-02 10:02:05",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-250k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-250k-head-of-household",
+      "date": "2026-08-02 10:02:14",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/auto-loan-true-cost-calculator": {
+      "url": "https://www.qfinhub.com/blog/auto-loan-true-cost-calculator",
+      "date": "2026-08-02 10:02:23",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/debt-snowball": {
+      "url": "https://www.qfinhub.com/calculators/debt-snowball",
+      "date": "2026-08-24 10:03:45",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/fed-bank-mergers-approvals": {
+      "url": "https://www.qfinhub.com/blog/fed-bank-mergers-approvals",
+      "date": "2026-08-02 10:02:42",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off": {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-rates-move-to-highest-in-5-weeks-but-homebuyers-shake-it-off",
+      "date": "2026-08-02 10:02:51",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/auto-loan": {
+      "url": "https://www.qfinhub.com/calculators/auto-loan",
+      "date": "2026-08-02 10:03:00",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/financial-ratios": {
+      "url": "https://www.qfinhub.com/calculators/financial-ratios",
+      "date": "2026-08-02 10:03:09",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed": {
+      "url": "https://www.qfinhub.com/widgets/debt-snowball-vs-avalanche-embed",
+      "date": "2026-08-24 10:02:50",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/date-difference": {
+      "url": "https://www.qfinhub.com/calculators/date-difference",
+      "date": "2026-08-02 10:03:27",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/fraction-calculator": {
+      "url": "https://www.qfinhub.com/calculators/fraction-calculator",
+      "date": "2026-08-03 10:01:48",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/debt-snowball-vs-avalanche-comparison-which-saves-more": {
+      "url": "https://www.qfinhub.com/blog/debt-snowball-vs-avalanche-comparison-which-saves-more",
+      "date": "2026-08-03 10:01:57",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/dividend-calculator": {
+      "url": "https://www.qfinhub.com/calculators/dividend-calculator",
+      "date": "2026-08-03 10:02:06",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-175k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-175k-single",
+      "date": "2026-08-03 10:02:15",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/phone-plan-comparison": {
+      "url": "https://www.qfinhub.com/calculators/phone-plan-comparison",
+      "date": "2026-08-26 10:02:20",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/dti-75k-28pct": {
+      "url": "https://www.qfinhub.com/tools/dti-75k-28pct",
+      "date": "2026-08-24 10:02:32",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/closing-costs": {
+      "url": "https://www.qfinhub.com/calculators/closing-costs",
+      "date": "2026-08-21 10:03:40",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-5k-3yr": {
+      "url": "https://www.qfinhub.com/tools/investment-5k-3yr",
+      "date": "2026-08-24 10:03:27",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-40k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-40k-head-of-household",
+      "date": "2026-08-03 10:03:01",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/dti-50k-36pct": {
+      "url": "https://www.qfinhub.com/tools/dti-50k-36pct",
+      "date": "2026-08-03 10:03:10",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/net-worth-40s-peak": {
+      "url": "https://www.qfinhub.com/tools/net-worth-40s-peak",
+      "date": "2026-08-20 10:02:30",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/discount-calculator": {
+      "url": "https://www.qfinhub.com/calculators/discount-calculator",
+      "date": "2026-08-03 10:03:28",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-100k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-100k",
+      "date": "2026-08-03 10:03:37",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/emergency-fund-10k-12mo": {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-10k-12mo",
+      "date": "2026-08-04 10:35:40",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-60k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-60k-single",
+      "date": "2026-08-23 10:02:52",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-1-5M-single": {
+      "url": "https://www.qfinhub.com/tools/tax-1-5M-single",
+      "date": "2026-08-25 10:02:48",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-75k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-75k-head-of-household",
+      "date": "2026-08-04 10:36:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/fed-personnel-and-policy": {
+      "url": "https://www.qfinhub.com/blog/fed-personnel-and-policy",
+      "date": "2026-08-27 10:03:10",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/bond-yield": {
+      "url": "https://www.qfinhub.com/calculators/bond-yield",
+      "date": "2026-08-04 10:36:26",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/best-retirement-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-retirement-calculator",
+      "date": "2026-08-23 10:01:58",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-100k-fire-55pct": {
+      "url": "https://www.qfinhub.com/tools/fi-100k-fire-55pct",
+      "date": "2026-08-04 10:36:44",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-300k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-300k-single",
+      "date": "2026-08-04 10:36:53",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-25k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-25k-single",
+      "date": "2026-08-04 10:37:02",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-80k-family-45pct": {
+      "url": "https://www.qfinhub.com/tools/fi-80k-family-45pct",
+      "date": "2026-08-20 10:03:33",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/pension-calculator": {
+      "url": "https://www.qfinhub.com/calculators/pension-calculator",
+      "date": "2026-08-04 10:37:20",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/amortization-schedule": {
+      "url": "https://www.qfinhub.com/calculators/amortization-schedule",
+      "date": "2026-08-25 10:01:53",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/loan-comparison": {
+      "url": "https://www.qfinhub.com/calculators/loan-comparison",
+      "date": "2026-08-05 10:03:27",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/roi-calculator": {
+      "url": "https://www.qfinhub.com/calculators/roi-calculator",
+      "date": "2026-08-24 10:01:55",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/contact": {
+      "url": "https://www.qfinhub.com/contact",
+      "date": "2026-08-05 10:03:45",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-140k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-140k-single",
+      "date": "2026-08-05 10:03:54",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/bond-price": {
+      "url": "https://www.qfinhub.com/calculators/bond-price",
+      "date": "2026-08-24 10:03:09",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin": {
+      "url": "https://www.qfinhub.com/blog/columbia-bank-mhc-acquisition-approved-what-it-means-for-your-mortgage-and-savin",
+      "date": "2026-08-05 10:04:12",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/net-worth-30s-growth": {
+      "url": "https://www.qfinhub.com/tools/net-worth-30s-growth",
+      "date": "2026-08-05 10:04:21",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira": {
+      "url": "https://www.qfinhub.com/compare/compare-roth-ira-vs-traditional-ira",
+      "date": "2026-08-05 10:04:31",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained": {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-2026-housingwire-homebuilder-rankings-explained",
+      "date": "2026-08-05 10:04:40",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent": {
+      "url": "https://www.qfinhub.com/loan-scenarios/debt-consolidation-loan-25000-10-percent",
+      "date": "2026-08-05 10:04:49",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/capm-calculator": {
+      "url": "https://www.qfinhub.com/calculators/capm-calculator",
+      "date": "2026-08-05 10:04:58",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/roth-ira": {
+      "url": "https://www.qfinhub.com/calculators/roth-ira",
+      "date": "2026-08-05 10:05:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/debt-avalanche": {
+      "url": "https://www.qfinhub.com/calculators/debt-avalanche",
+      "date": "2026-08-22 10:04:18",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/privacy": {
+      "url": "https://www.qfinhub.com/privacy",
+      "date": "2026-08-05T19:53:35.387784+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/simple-interest": {
+      "url": "https://www.qfinhub.com/calculators/simple-interest",
+      "date": "2026-08-05T19:53:37.523898+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/stock-return": {
+      "url": "https://www.qfinhub.com/calculators/stock-return",
+      "date": "2026-08-05T19:53:40.349195+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/dollar-cost-average": {
+      "url": "https://www.qfinhub.com/calculators/dollar-cost-average",
+      "date": "2026-08-05T19:53:41.077789+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/refinance-calculator": {
+      "url": "https://www.qfinhub.com/calculators/refinance-calculator",
+      "date": "2026-08-23 10:02:34",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/va-loan": {
+      "url": "https://www.qfinhub.com/calculators/va-loan",
+      "date": "2026-08-05T19:53:43.656332+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/home-renovation": {
+      "url": "https://www.qfinhub.com/calculators/home-renovation",
+      "date": "2026-08-23 10:03:29",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/option-profit": {
+      "url": "https://www.qfinhub.com/calculators/option-profit",
+      "date": "2026-08-24 10:03:00",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/sharpe-ratio": {
+      "url": "https://www.qfinhub.com/calculators/sharpe-ratio",
+      "date": "2026-08-05T19:53:46.187396+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/alpha-calculator": {
+      "url": "https://www.qfinhub.com/calculators/alpha-calculator",
+      "date": "2026-08-05T19:53:46.465815+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/asset-correlation": {
+      "url": "https://www.qfinhub.com/calculators/asset-correlation",
+      "date": "2026-08-20 10:03:15",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/future-value": {
+      "url": "https://www.qfinhub.com/calculators/future-value",
+      "date": "2026-08-05T19:53:48.171396+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/early-retirement": {
+      "url": "https://www.qfinhub.com/calculators/early-retirement",
+      "date": "2026-08-27 10:03:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/inheritance-tax": {
+      "url": "https://www.qfinhub.com/calculators/inheritance-tax",
+      "date": "2026-08-23 10:03:11",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/effective-tax-rate": {
+      "url": "https://www.qfinhub.com/calculators/effective-tax-rate",
+      "date": "2026-08-05T19:53:51.500589+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/w4-calculator": {
+      "url": "https://www.qfinhub.com/calculators/w4-calculator",
+      "date": "2026-08-23 10:02:43",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/gross-margin": {
+      "url": "https://www.qfinhub.com/calculators/gross-margin",
+      "date": "2026-08-25 10:02:58",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/calculators/markup-calculator": {
+      "url": "https://www.qfinhub.com/calculators/markup-calculator",
+      "date": "2026-08-23 10:03:20",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/calculators/wedding-budget": {
+      "url": "https://www.qfinhub.com/calculators/wedding-budget",
+      "date": "2026-08-05T19:53:55.770174+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/bmi-calculator": {
+      "url": "https://www.qfinhub.com/calculators/bmi-calculator",
+      "date": "2026-08-05T19:53:57.431541+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/age-calculator": {
+      "url": "https://www.qfinhub.com/calculators/age-calculator",
+      "date": "2026-08-05T19:53:58.042622+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/time-value-of-money": {
+      "url": "https://www.qfinhub.com/calculators/time-value-of-money",
+      "date": "2026-08-05T19:53:58.394218+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/gas-mileage": {
+      "url": "https://www.qfinhub.com/calculators/gas-mileage",
+      "date": "2026-08-05T19:53:58.737760+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/calculators/fuel-cost": {
+      "url": "https://www.qfinhub.com/calculators/fuel-cost",
+      "date": "2026-08-05T19:53:59.099597+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/rent-vs-buy-which-is-better": {
+      "url": "https://www.qfinhub.com/blog/rent-vs-buy-which-is-better",
+      "date": "2026-08-05T19:54:00.329830+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/understanding-tax-brackets-what-rate-do-you-actually-pay": {
+      "url": "https://www.qfinhub.com/blog/understanding-tax-brackets-what-rate-do-you-actually-pay",
+      "date": "2026-08-05T19:54:00.679278+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/what-the-fed-s-termination-of-enforcement-actions-means-for-your-mortgage-afford": {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-termination-of-enforcement-actions-means-for-your-mortgage-afford",
+      "date": "2026-08-05T19:54:01.960065+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-holds-rates-steady-what-the-fomc-statement-means-for-your-mortgage-in-2025": {
+      "url": "https://www.qfinhub.com/blog/fed-holds-rates-steady-what-the-fomc-statement-means-for-your-mortgage-in-2025",
+      "date": "2026-08-05T19:54:02.230439+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i": {
+      "url": "https://www.qfinhub.com/blog/oceanfirst-financial-corp-approval-what-it-means-for-your-mortgage-and-savings-i",
+      "date": "2026-08-05T19:54:02.495687+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/what-the-fed-s-approval-of-banco-de-credito-del-peru-means-for-your-mortgage-and": {
+      "url": "https://www.qfinhub.com/blog/what-the-fed-s-approval-of-banco-de-credito-del-peru-means-for-your-mortgage-and",
+      "date": "2026-08-05T19:54:03.227599+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-approves-burke-herbert-bank-merger-what-it-means-for-your-mortgage-and-savin": {
+      "url": "https://www.qfinhub.com/blog/fed-approves-burke-herbert-bank-merger-what-it-means-for-your-mortgage-and-savin",
+      "date": "2026-08-05T19:54:03.565402+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-ends-enforcement-actions-against-major-banks-what-it-means-for-your-mortgage": {
+      "url": "https://www.qfinhub.com/blog/fed-ends-enforcement-actions-against-major-banks-what-it-means-for-your-mortgage",
+      "date": "2026-08-05T19:54:03.917525+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-discount-window-survey-what-it-means-for-your-mortgage-and-savings": {
+      "url": "https://www.qfinhub.com/blog/fed-discount-window-survey-what-it-means-for-your-mortgage-and-savings",
+      "date": "2026-08-05T19:54:04.512109+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/morgan-stanley-bank-exemption-your-mortgage-what-the-fed-s-23a-ruling-means-for-": {
+      "url": "https://www.qfinhub.com/blog/morgan-stanley-bank-exemption-your-mortgage-what-the-fed-s-23a-ruling-means-for-",
+      "date": "2026-08-05T19:54:04.854624+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/why-britain-s-potential-next-pm-is-putting-investors-on-edge": {
+      "url": "https://www.qfinhub.com/blog/why-britain-s-potential-next-pm-is-putting-investors-on-edge",
+      "date": "2026-08-17 15:01:37",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa": {
+      "url": "https://www.qfinhub.com/blog/fed-ends-enforcement-on-ubs-credit-suisse-what-it-means-for-your-mortgage-and-sa",
+      "date": "2026-08-05T19:54:05.546652+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/how-the-fed-s-modernization-plans-could-impact-your-mortgage-and-savings-goals": {
+      "url": "https://www.qfinhub.com/blog/how-the-fed-s-modernization-plans-could-impact-your-mortgage-and-savings-goals",
+      "date": "2026-08-05T19:54:05.907024+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-": {
+      "url": "https://www.qfinhub.com/blog/fed-s-jefferson-speech-how-economic-outlook-energy-effects-impact-your-mortgage-",
+      "date": "2026-08-05T19:54:06.373295+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/kevin-warsh-fed-rate-decision-how-rising-rates-impact-your-mortgage-affordabilit": {
+      "url": "https://www.qfinhub.com/blog/kevin-warsh-fed-rate-decision-how-rising-rates-impact-your-mortgage-affordabilit",
+      "date": "2026-08-05T19:54:06.681192+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y": {
+      "url": "https://www.qfinhub.com/blog/trump-administration-s-proposed-scsep-cuts-what-it-means-for-older-workers-and-y",
+      "date": "2026-08-24 10:03:18",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/stephen-miran-exits-the-fed-how-his-policies-could-impact-your-mortgage-affordab": {
+      "url": "https://www.qfinhub.com/blog/stephen-miran-exits-the-fed-how-his-policies-could-impact-your-mortgage-affordab",
+      "date": "2026-08-05T19:54:07.590264+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin": {
+      "url": "https://www.qfinhub.com/blog/foreign-holdings-of-us-treasuries-drop-what-it-means-for-your-mortgage-and-savin",
+      "date": "2026-08-05T19:54:07.940952+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/stock-market-week-ahead-nvidia-alphabet-earnings-atlanta-fed-how-to-protect-your": {
+      "url": "https://www.qfinhub.com/blog/stock-market-week-ahead-nvidia-alphabet-earnings-atlanta-fed-how-to-protect-your",
+      "date": "2026-08-05T19:54:08.295434+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare": {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-today-may-18-2026-will-they-rise-or-fall-this-week-how-to-prepare",
+      "date": "2026-08-05T19:54:08.556483+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/rate-cuts-are-off-the-table-2-stocks-under-30-for-this-market-how-to-protect-you": {
+      "url": "https://www.qfinhub.com/blog/rate-cuts-are-off-the-table-2-stocks-under-30-for-this-market-how-to-protect-you",
+      "date": "2026-08-17 15:01:30",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg": {
+      "url": "https://www.qfinhub.com/blog/rising-bond-yields-and-stock-market-drop-how-fed-hike-anxiety-impacts-your-mortg",
+      "date": "2026-08-05T19:54:09.577323+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-": {
+      "url": "https://www.qfinhub.com/blog/fed-rate-hike-odds-rising-by-july-2027-how-to-protect-your-mortgage-and-savings-",
+      "date": "2026-08-05T19:54:10.079742+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/treasury-selloff-hits-mortgages-how-to-protect-your-home-loan-plans": {
+      "url": "https://www.qfinhub.com/blog/treasury-selloff-hits-mortgages-how-to-protect-your-home-loan-plans",
+      "date": "2026-08-05T19:54:10.345996+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/mortgage-rates-2025-can-the-housing-market-weather-the-storm": {
+      "url": "https://www.qfinhub.com/blog/mortgage-rates-2025-can-the-housing-market-weather-the-storm",
+      "date": "2026-08-05T19:54:10.572342+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/investing-in-lowe-s-stock-a-comprehensive-guide-for-2025": {
+      "url": "https://www.qfinhub.com/blog/investing-in-lowe-s-stock-a-comprehensive-guide-for-2025",
+      "date": "2026-08-05T19:54:10.921046+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/usd-surge-fed-policy-how-to-protect-your-mortgage-affordability-in-2025": {
+      "url": "https://www.qfinhub.com/blog/usd-surge-fed-policy-how-to-protect-your-mortgage-affordability-in-2025",
+      "date": "2026-08-05T19:54:11.229765+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/fed-s-new-payment-account-proposal-what-it-means-for-your-mortgage-and-savings": {
+      "url": "https://www.qfinhub.com/blog/fed-s-new-payment-account-proposal-what-it-means-for-your-mortgage-and-savings",
+      "date": "2026-08-05T19:54:11.517774+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-": {
+      "url": "https://www.qfinhub.com/blog/federal-reserve-enforcement-action-against-commerce-bank-what-it-means-for-your-",
+      "date": "2026-08-05T19:54:12.050527+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/when-to-refinance-your-mortgage-complete-guide-2026": {
+      "url": "https://www.qfinhub.com/blog/when-to-refinance-your-mortgage-complete-guide-2026",
+      "date": "2026-08-05T19:54:12.988854+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/retire-by-40-calculator-how-much-needed": {
+      "url": "https://www.qfinhub.com/blog/retire-by-40-calculator-how-much-needed",
+      "date": "2026-08-05T19:54:13.332768+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/blog/how-much-mortgage-afford-100k-salary": {
+      "url": "https://www.qfinhub.com/blog/how-much-mortgage-afford-100k-salary",
+      "date": "2026-08-05T19:54:13.683261+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability": {
+      "url": "https://www.qfinhub.com/compare/compare-mortgage-calculator-vs-mortgage-affordability",
+      "date": "2026-08-05T19:54:14.256107+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-compound-interest-vs-simple-interest": {
+      "url": "https://www.qfinhub.com/compare/compare-compound-interest-vs-simple-interest",
+      "date": "2026-08-27 10:03:37",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-401k-calculator-vs-roth-ira": {
+      "url": "https://www.qfinhub.com/compare/compare-401k-calculator-vs-roth-ira",
+      "date": "2026-08-23 10:02:16",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/compare/compare-retirement-planning-vs-early-retirement": {
+      "url": "https://www.qfinhub.com/compare/compare-retirement-planning-vs-early-retirement",
+      "date": "2026-08-05T19:54:16.052344+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-social-security-vs-retirement-income": {
+      "url": "https://www.qfinhub.com/compare/compare-social-security-vs-retirement-income",
+      "date": "2026-08-05T19:54:16.372387+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-capital-gains-tax-vs-tax-calculator": {
+      "url": "https://www.qfinhub.com/compare/compare-capital-gains-tax-vs-tax-calculator",
+      "date": "2026-08-05T19:54:16.641821+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-npv-calculator-vs-irr-calculator": {
+      "url": "https://www.qfinhub.com/compare/compare-npv-calculator-vs-irr-calculator",
+      "date": "2026-08-05T19:54:16.887344+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy": {
+      "url": "https://www.qfinhub.com/compare/compare-lease-vs-buy-vs-rent-vs-buy",
+      "date": "2026-08-05T19:54:17.235826+00:00",
+      "type": "?"
+    },
+    "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return": {
+      "url": "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return",
+      "date": "2026-08-21 10:03:13",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/best-mortgage-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-mortgage-calculator",
+      "date": "2026-08-27 10:03:47",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/best-compound-interest-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-compound-interest-calculator",
+      "date": "2026-08-26 10:02:29",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-160k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-160k-single",
+      "date": "2026-08-22 10:03:32",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/rent-vs-buy-a-2026-rent-vs-buy-decision-framework": {
+      "url": "https://www.qfinhub.com/blog/rent-vs-buy-a-2026-rent-vs-buy-decision-framework",
+      "date": "2026-08-06 11:11:10",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-90k-executive": {
+      "url": "https://www.qfinhub.com/tools/fi-90k-executive",
+      "date": "2026-08-06 11:11:19",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-1M-25yr": {
+      "url": "https://www.qfinhub.com/tools/investment-1M-25yr",
+      "date": "2026-08-06 11:11:28",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-5M-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-5M-married-joint",
+      "date": "2026-08-06 11:11:37",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/emergency-fund-amount-2026-how-much-do-you-really-need": {
+      "url": "https://www.qfinhub.com/blog/emergency-fund-amount-2026-how-much-do-you-really-need",
+      "date": "2026-08-06 11:11:46",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/fed-stock-market-and-bonds": {
+      "url": "https://www.qfinhub.com/blog/fed-stock-market-and-bonds",
+      "date": "2026-08-06 11:11:56",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-50k-dual-income": {
+      "url": "https://www.qfinhub.com/tools/fire-50k-dual-income",
+      "date": "2026-08-26 10:02:47",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-200k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-200k-head-of-household",
+      "date": "2026-08-25 10:02:39",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/net-worth-debt-heavy": {
+      "url": "https://www.qfinhub.com/tools/net-worth-debt-heavy",
+      "date": "2026-08-27 10:03:01",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-30k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-30k-married-separate",
+      "date": "2026-08-06 11:12:32",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-100-1yr": {
+      "url": "https://www.qfinhub.com/tools/investment-100-1yr",
+      "date": "2026-08-26 10:01:52",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fi-30k-expenses-750k": {
+      "url": "https://www.qfinhub.com/tools/fi-30k-expenses-750k",
+      "date": "2026-08-24 10:02:23",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/your-30s-retirement-planning-guide-a-concrete-30-year-plan": {
+      "url": "https://www.qfinhub.com/blog/your-30s-retirement-planning-guide-a-concrete-30-year-plan",
+      "date": "2026-08-07 10:12:24",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-10k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-10k-10yr",
+      "date": "2026-08-07 10:12:33",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-10k-15yr": {
+      "url": "https://www.qfinhub.com/tools/investment-10k-15yr",
+      "date": "2026-08-07 10:12:42",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-150k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-150k-head-of-household",
+      "date": "2026-08-07 10:12:51",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-40k-7yr": {
+      "url": "https://www.qfinhub.com/tools/investment-40k-7yr",
+      "date": "2026-08-22 10:03:50",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-25k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-25k-20yr",
+      "date": "2026-08-07 10:13:09",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-50k-5yr": {
+      "url": "https://www.qfinhub.com/tools/investment-50k-5yr",
+      "date": "2026-08-27 10:02:52",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-400k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-400k-single",
+      "date": "2026-08-26 10:02:11",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/how-to-calculate-annual-return": {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-annual-return",
+      "date": "2026-08-07 10:13:36",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fi-25k-minimal": {
+      "url": "https://www.qfinhub.com/tools/fi-25k-minimal",
+      "date": "2026-08-07 10:13:45",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/dti-200k-investor": {
+      "url": "https://www.qfinhub.com/tools/dti-200k-investor",
+      "date": "2026-08-26 10:02:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/best-loan-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-loan-calculator",
+      "date": "2026-08-07 10:14:04",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-2M-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-2M-married-joint",
+      "date": "2026-08-21 10:03:04",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-125k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-125k",
+      "date": "2026-08-08 10:29:13",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/net-worth-empty-nester": {
+      "url": "https://www.qfinhub.com/tools/net-worth-empty-nester",
+      "date": "2026-08-26 10:01:25",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-3M-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-3M-married-joint",
+      "date": "2026-08-23 10:02:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/best-401k-calculator": {
+      "url": "https://www.qfinhub.com/compare/best-401k-calculator",
+      "date": "2026-08-08 10:29:40",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-200k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-200k",
+      "date": "2026-08-08 10:29:49",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-investment-return-vs-compound-interest": {
+      "url": "https://www.qfinhub.com/compare/compare-investment-return-vs-compound-interest",
+      "date": "2026-08-08 10:29:58",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-85k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-85k",
+      "date": "2026-08-08 10:30:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/net-worth-20s-starter": {
+      "url": "https://www.qfinhub.com/tools/net-worth-20s-starter",
+      "date": "2026-08-25 10:03:25",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/how-to-calculate-total-return": {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-total-return",
+      "date": "2026-08-08 10:30:26",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/guides/how-to-calculate-real-return": {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-real-return",
+      "date": "2026-08-08 10:30:35",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/how-to-calculate-after-tax-return": {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-after-tax-return",
+      "date": "2026-08-08 10:30:44",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/loan-payment-table": {
+      "url": "https://www.qfinhub.com/loan-payment-table",
+      "date": "2026-08-21 10:03:49",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-1M-single": {
+      "url": "https://www.qfinhub.com/tools/tax-1M-single",
+      "date": "2026-08-20 10:03:52",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/emergency-fund-2k-3mo": {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-2k-3mo",
+      "date": "2026-08-20 10:02:39",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-600k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-600k-single",
+      "date": "2026-08-09 10:01:50",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-250k-3yr": {
+      "url": "https://www.qfinhub.com/tools/investment-250k-3yr",
+      "date": "2026-08-22 10:03:05",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-55k-slow": {
+      "url": "https://www.qfinhub.com/tools/fire-55k-slow",
+      "date": "2026-08-20 10:03:42",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-200k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-200k-single",
+      "date": "2026-08-22 10:03:23",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026": {
+      "url": "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026",
+      "date": "2026-08-21 10:03:58",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-350k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-350k-married-joint",
+      "date": "2026-08-09 10:02:36",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-80k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-80k-married-joint",
+      "date": "2026-08-09 10:02:45",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-15k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-15k-single",
+      "date": "2026-08-09 10:02:54",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/emergency-fund-3k-6mo": {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-3k-6mo",
+      "date": "2026-08-26 10:02:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-35k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-35k-single",
+      "date": "2026-08-09 10:03:12",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/roi-10k-to-8k-neg20pct": {
+      "url": "https://www.qfinhub.com/tools/roi-10k-to-8k-neg20pct",
+      "date": "2026-08-09 10:03:21",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/first-time-home-buyer-guide-2026-costs-steps-and-real-numbers": {
+      "url": "https://www.qfinhub.com/blog/first-time-home-buyer-guide-2026-costs-steps-and-real-numbers",
+      "date": "2026-08-09 10:03:30",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-400k-18yr": {
+      "url": "https://www.qfinhub.com/tools/investment-400k-18yr",
+      "date": "2026-08-21 10:03:31",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-300k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-300k-married-joint",
+      "date": "2026-08-25 10:03:16",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-100k-25yr": {
+      "url": "https://www.qfinhub.com/tools/investment-100k-25yr",
+      "date": "2026-08-10 10:01:48",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-95k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-95k-single",
+      "date": "2026-08-10 10:01:57",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-10k-8yr": {
+      "url": "https://www.qfinhub.com/tools/investment-10k-8yr",
+      "date": "2026-08-10 10:02:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-50k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-50k",
+      "date": "2026-08-10 10:02:16",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-60k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-60k-married-joint",
+      "date": "2026-08-10 10:02:25",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-500-5yr": {
+      "url": "https://www.qfinhub.com/tools/investment-500-5yr",
+      "date": "2026-08-24 10:03:36",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-500k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-500k-single",
+      "date": "2026-08-10 10:02:43",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-200k-5yr": {
+      "url": "https://www.qfinhub.com/tools/investment-200k-5yr",
+      "date": "2026-08-20 10:03:06",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-120k-fat-60pct": {
+      "url": "https://www.qfinhub.com/tools/fi-120k-fat-60pct",
+      "date": "2026-08-27 10:03:19",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-75k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-75k",
+      "date": "2026-08-10 10:03:10",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fi-45k-coast": {
+      "url": "https://www.qfinhub.com/tools/fi-45k-coast",
+      "date": "2026-08-10 10:03:19",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-150k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-150k",
+      "date": "2026-08-11 10:03:16",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-5k-7yr": {
+      "url": "https://www.qfinhub.com/tools/investment-5k-7yr",
+      "date": "2026-08-27 10:02:25",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-500k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-500k-married-separate",
+      "date": "2026-08-27 10:02:15",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-30k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-30k",
+      "date": "2026-08-27 10:02:43",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/emergency-fund-3k-3mo": {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-3k-3mo",
+      "date": "2026-08-11 10:03:53",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fi-60k-40pct-save": {
+      "url": "https://www.qfinhub.com/tools/fi-60k-40pct-save",
+      "date": "2026-08-11 10:04:02",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-55k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-55k-single",
+      "date": "2026-08-27 10:02:34",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/dti-85k-first-home": {
+      "url": "https://www.qfinhub.com/tools/dti-85k-first-home",
+      "date": "2026-08-11 10:04:20",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-200k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-200k-20yr",
+      "date": "2026-08-11 10:04:29",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-25k-6mo": {
+      "url": "https://www.qfinhub.com/tools/investment-25k-6mo",
+      "date": "2026-08-11 10:04:38",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-500k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-500k-married-joint",
+      "date": "2026-08-11 10:04:48",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-1k-6mo": {
+      "url": "https://www.qfinhub.com/tools/investment-1k-6mo",
+      "date": "2026-08-11 10:04:57",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/dti-250k-luxury": {
+      "url": "https://www.qfinhub.com/tools/dti-250k-luxury",
+      "date": "2026-08-11 10:05:06",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-20k-5yr": {
+      "url": "https://www.qfinhub.com/tools/investment-20k-5yr",
+      "date": "2026-08-12 10:12:02",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-350k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-350k-single",
+      "date": "2026-08-12 10:12:11",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-350k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-350k-head-of-household",
+      "date": "2026-08-12 10:12:20",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-225k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-225k-single",
+      "date": "2026-08-12 10:12:29",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-40k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-40k",
+      "date": "2026-08-12 10:12:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/how-to-calculate-rate-of-return": {
+      "url": "https://www.qfinhub.com/guides/how-to-calculate-rate-of-return",
+      "date": "2026-08-22 10:04:09",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-600k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-600k-married-joint",
+      "date": "2026-08-12 10:12:57",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/guides/mortgage-on-60k": {
+      "url": "https://www.qfinhub.com/guides/mortgage-on-60k",
+      "date": "2026-08-22 10:02:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-100k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-100k-married-joint",
+      "date": "2026-08-12 10:13:15",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-250k-15yr": {
+      "url": "https://www.qfinhub.com/tools/investment-250k-15yr",
+      "date": "2026-08-12 10:13:24",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-50k-10yr": {
+      "url": "https://www.qfinhub.com/tools/investment-50k-10yr",
+      "date": "2026-08-12 10:13:33",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-10k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-10k-single",
+      "date": "2026-08-12 10:13:42",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-5k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-5k-20yr",
+      "date": "2026-08-12 10:13:51",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-65k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-65k-single",
+      "date": "2026-08-21 10:02:36",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-100k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-100k-single",
+      "date": "2026-08-21 10:02:27",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/dti-150k-25pct": {
+      "url": "https://www.qfinhub.com/tools/dti-150k-25pct",
+      "date": "2026-08-21 10:02:09",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fire-40k-military": {
+      "url": "https://www.qfinhub.com/tools/fire-40k-military",
+      "date": "2026-08-21 10:02:18",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/emergency-fund-4k-12mo": {
+      "url": "https://www.qfinhub.com/tools/emergency-fund-4k-12mo",
+      "date": "2026-08-13 10:12:20",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/net-worth-entrepreneur": {
+      "url": "https://www.qfinhub.com/tools/net-worth-entrepreneur",
+      "date": "2026-08-13 10:12:29",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/how-much-income-needed-to-afford-a-400k-home-2026": {
+      "url": "https://www.qfinhub.com/blog/how-much-income-needed-to-afford-a-400k-home-2026",
+      "date": "2026-08-13 10:12:38",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value": {
+      "url": "https://www.qfinhub.com/compare/compare-inflation-calculator-vs-future-value",
+      "date": "2026-08-22 10:03:59",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-60k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-60k-married-separate",
+      "date": "2026-08-13 10:12:56",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/dti-45k-grad": {
+      "url": "https://www.qfinhub.com/tools/dti-45k-grad",
+      "date": "2026-08-13 10:13:06",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-10k-6mo": {
+      "url": "https://www.qfinhub.com/tools/investment-10k-6mo",
+      "date": "2026-08-13 10:13:15",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/tax-100k-head-of-household": {
+      "url": "https://www.qfinhub.com/tools/tax-100k-head-of-household",
+      "date": "2026-08-13 10:13:24",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/investment-50k-25yr": {
+      "url": "https://www.qfinhub.com/tools/investment-50k-25yr",
+      "date": "2026-08-13 10:13:33",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/tools/fire-45k-barista": {
+      "url": "https://www.qfinhub.com/tools/fire-45k-barista",
+      "date": "2026-08-14 10:01:32",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-500k-20yr": {
+      "url": "https://www.qfinhub.com/tools/investment-500k-20yr",
+      "date": "2026-08-14 10:01:41",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/net-worth-by-age-comparison-where-should-you-be-in-2026": {
+      "url": "https://www.qfinhub.com/blog/net-worth-by-age-comparison-where-should-you-be-in-2026",
+      "date": "2026-08-22 10:04:27",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fire-30k-extreme": {
+      "url": "https://www.qfinhub.com/tools/fire-30k-extreme",
+      "date": "2026-08-22 10:02:46",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-45k-married-separate": {
+      "url": "https://www.qfinhub.com/tools/tax-45k-married-separate",
+      "date": "2026-08-14 10:02:09",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/tax-brackets-2026-explained-your-actual-tax-rate": {
+      "url": "https://www.qfinhub.com/blog/tax-brackets-2026-explained-your-actual-tax-rate",
+      "date": "2026-08-14 10:02:18",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-200k-4yr-loss": {
+      "url": "https://www.qfinhub.com/tools/investment-200k-4yr-loss",
+      "date": "2026-08-14 10:02:27",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fi-0k-50pct-fresh": {
+      "url": "https://www.qfinhub.com/tools/fi-0k-50pct-fresh",
+      "date": "2026-08-14 10:02:36",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-200k-married-joint": {
+      "url": "https://www.qfinhub.com/tools/tax-200k-married-joint",
+      "date": "2026-08-14 10:02:45",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/fire-50k-expenses-1M": {
+      "url": "https://www.qfinhub.com/tools/fire-50k-expenses-1M",
+      "date": "2026-08-14 10:02:55",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/dti-90k-two-cars": {
+      "url": "https://www.qfinhub.com/tools/dti-90k-two-cars",
+      "date": "2026-08-14 10:03:04",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/investment-5k-6mo": {
+      "url": "https://www.qfinhub.com/tools/investment-5k-6mo",
+      "date": "2026-08-14 10:03:13",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-5M-single": {
+      "url": "https://www.qfinhub.com/tools/tax-5M-single",
+      "date": "2026-08-25 10:03:07",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/how-much-house-can-i-afford-the-28-36-rule-explained": {
+      "url": "https://www.qfinhub.com/blog/how-much-house-can-i-afford-the-28-36-rule-explained",
+      "date": "2026-08-22 10:02:37",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/tools/tax-80k-single": {
+      "url": "https://www.qfinhub.com/tools/tax-80k-single",
+      "date": "2026-08-15 10:02:08",
+      "type": "REQUESTED \u2713"
+    },
+    "https://www.qfinhub.com/blog/simple-vs-compound-interest-difference-how-money-really-grows": {
+      "url": "https://www.qfinhub.com/blog/simple-vs-compound-interest-difference-how-money-really-grows",
+      "date": "2026-08-15 10:02:17",
+      "type": "CLICKED_BUTTON"
+    },
+    "https://www.qfinhub.com/blog/cd-vs-savings-account-comparison-where-to-park-cash-in-2026": {
+      "url": "https://www.qfinhub.com/blog/cd-vs-savings-account-comparison-where-to-park-cash-in-2026",
+      "date": "2026-08-21 10:03:22",
+      "type": "CLICKED_BUTTON"
+    }
+  }
+}

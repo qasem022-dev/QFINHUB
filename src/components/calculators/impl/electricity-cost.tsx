@@ -39,7 +39,7 @@ export default function ElectricityCostCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData.slice(0, 7)} xKey="day" yKey="Cost" title="Daily Cost Breakdown" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData.slice(0, 7)} xKey="day" yKey="Cost" title="Daily Cost Breakdown" height={250} />
       <CalculatorInput
         input={{ id: "wattage", label: "Appliance Wattage", type: "number", defaultValue: 1000, suffix: "W", min: 1, max: 100000, tooltip: "Power rating of the appliance in watts." }}
         value={wattage}

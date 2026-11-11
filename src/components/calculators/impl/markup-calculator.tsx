@@ -33,7 +33,7 @@ export default function MarkupCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Cost vs Profit" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Cost vs Profit" />
       <CalculatorInput input={{ id: "cost", label: "Cost", type: "number", defaultValue: 100, suffix: "$", min: 0, step: 0.01, tooltip: "The wholesale or production cost of the item." }} value={cost} onChange={setCost} />
       <CalculatorInput input={{ id: "markup", label: "Markup Percentage", type: "number", defaultValue: 50, suffix: "%", min: 0, step: 0.1, tooltip: "Percentage added to cost to determine selling price." }} value={markup} onChange={setMarkup} />
     </CalculatorLayout>

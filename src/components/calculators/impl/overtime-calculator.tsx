@@ -41,7 +41,7 @@ export default function OvertimeCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey={["value"]} title="Regular vs Overtime Pay" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey={["value"]} title="Regular vs Overtime Pay" />
       <CalculatorInput input={{ id: "hourly-rate", label: "Hourly Rate", type: "number", defaultValue: 25, suffix: "$", min: 0, step: 0.5, tooltip: "Your standard hourly wage." }} value={hourlyRate} onChange={setHourlyRate} />
       <CalculatorInput input={{ id: "regular-hours", label: "Regular Hours", type: "number", defaultValue: 40, suffix: "hrs", min: 0, max: 168, tooltip: "Regular hours worked per week." }} value={regularHours} onChange={setRegularHours} />
       <CalculatorInput input={{ id: "overtime-hours", label: "Overtime Hours", type: "number", defaultValue: 5, suffix: "hrs", min: 0, max: 100, tooltip: "Overtime hours worked per week." }} value={overtimeHours} onChange={setOvertimeHours} />

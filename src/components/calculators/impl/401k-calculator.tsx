@@ -75,7 +75,7 @@ export default function Four01kCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="year" yKey={["Your Contributions", "Employer Contributions", "Investment Growth"]} title="401(k) Growth Breakdown" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="year" yKey={["Your Contributions", "Employer Contributions", "Investment Growth"]} title="401(k) Growth Breakdown" />
       <CalculatorInput input={{ id: "balance", label: "Current 401(k) Balance", type: "number", defaultValue: 25000, suffix: "$", min: 0, tooltip: "Your current 401(k) account balance." }} value={balance} onChange={setBalance} />
       <CalculatorInput input={{ id: "annualContrib", label: "Annual Contribution", type: "number", defaultValue: 15000, suffix: "$", min: 0, tooltip: "Your annual pre-tax contribution." }} value={annualContrib} onChange={setAnnualContrib} />
       <CalculatorInput input={{ id: "employerMatch", label: "Employer Match", type: "number", defaultValue: 50, suffix: "%", min: 0, max: 100, tooltip: "Percentage of your contribution your employer matches (e.g., 50% means they match $0.50 per $1)." }} value={employerMatch} onChange={setEmployerMatch} />

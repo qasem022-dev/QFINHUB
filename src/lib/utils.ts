@@ -20,8 +20,12 @@ export function formatCurrency(
 export function formatPercentage(
   value: number,
   decimals: number = 2,
+  signed: boolean = false,
 ): string {
-  return `${value >= 0 ? "+" : ""}${value.toFixed(decimals)}%`;
+  // Only prefix "+" when the caller says the number is a change/delta. Ratios and
+  // rates (debt-to-asset, APR, tax rate) must not display a leading plus.
+  const prefix = signed && value > 0 ? "+" : "";
+  return `${prefix}${value.toFixed(decimals)}%`;
 }
 
 export function formatNumber(value: number, decimals: number = 2): string {

@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -102,7 +106,7 @@ export default function RentVsBuyCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Rent Cost", "Buy Cost"]} title="Cumulative Costs" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Rent Cost", "Buy Cost"]} title="Cumulative Costs" />
       <CalculatorInput input={{ id: "rent", label: "Monthly Rent", type: "number", defaultValue: 2000, suffix: "$", min: 0, tooltip: "Your current monthly rent payment." }} value={rent} onChange={setRent} />
       <CalculatorInput input={{ id: "homePrice", label: "Home Price", type: "number", defaultValue: 350000, suffix: "$", min: 0, tooltip: "Purchase price of the home you are considering." }} value={homePrice} onChange={setHomePrice} />
       <CalculatorInput input={{ id: "downPct", label: "Down Payment", type: "slider", defaultValue: 20, suffix: "%", min: 0, max: 100, step: 1, tooltip: "Percentage you can put down on the home." }} value={downPct} onChange={setDownPct} />

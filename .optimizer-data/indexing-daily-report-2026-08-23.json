@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-23",
+  "freshness_proof": {
+    "freshness": "FRESH",
+    "checksum": "12309a19075c",
+    "previous_checksum": null,
+    "date_range_advanced": true,
+    "cache_used": false,
+    "source_file": ".optimizer-data/gsc-api-truth-current.json"
+  },
+  "metrics_7d": {
+    "impressions": 2517,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 71.9,
+    "pages_with_impressions": 105,
+    "query_count": 500,
+    "query_impressions": 763,
+    "query_page_rows": 500
+  },
+  "indexing_state": {
+    "indexed": 225,
+    "discovered_not_indexed": 279,
+    "unknown_to_google": 25,
+    "uninspected": 1,
+    "sitemap_total": 531,
+    "index_rate_pct": 42.53
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "newly_indexed_count": 2,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "https://www.qfinhub.com/calculators/portfolio-allocator"
+    ],
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 18,
+      "UNKNOWN": 5,
+      "INDEXED": 2
+    }
+  },
+  "submissions_today": 13,
+  "submissions_breakdown": {
+    "REQUESTED": 8,
+    "CLICKED_BUTTON": 5
+  },
+  "daily_limit": 13,
+  "log_total_all_time": 473,
+  "cooldown_state": {
+    "unique_urls_in_7d_cooldown": 91
+  },
+  "blockers": [],
+  "next_actions": [
+    "Monitor DISCOVERED submissions for state transitions (7d window)",
+    "Continue daily morning diagnosis + submission cycle"
+  ]
+}

@@ -147,7 +147,7 @@ export default function SocialSecurityCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="age" yKey="Monthly Benefit" title="Monthly Benefit at Different Claiming Ages" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="age" yKey="Monthly Benefit" title="Monthly Benefit at Different Claiming Ages" />
       <CalculatorInput
         input={{ id: "currentAge", label: "Current Age", type: "slider", defaultValue: 35, suffix: "", min: 18, max: 70, step: 1, tooltip: "Your current age used for life expectancy estimation." }}
         value={currentAge}

@@ -88,7 +88,7 @@ export default function DebtPayoffCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="month" yKey={["With Extra Payment", "Without Extra"]} title="Debt Balance Over Time" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="month" yKey={["With Extra Payment", "Without Extra"]} title="Debt Balance Over Time" />
       <CalculatorInput input={{ id: "totalDebt", label: "Total Debt", type: "number", defaultValue: 15000, suffix: "$", min: 0, tooltip: "Your total outstanding debt balance." }} value={totalDebt} onChange={setTotalDebt} />
       <CalculatorInput input={{ id: "rate", label: "Annual Interest Rate", type: "number", defaultValue: 18, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "Weighted average interest rate on your debts." }} value={rate} onChange={setRate} />
       <CalculatorInput input={{ id: "monthlyPayment", label: "Monthly Payment", type: "number", defaultValue: 500, suffix: "$", min: 0, tooltip: "Your base monthly payment amount." }} value={monthlyPayment} onChange={setMonthlyPayment} />

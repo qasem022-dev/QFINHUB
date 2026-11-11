@@ -47,7 +47,7 @@ export default function InvestmentReturnCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Portfolio Value", "Initial"]} title="Value Over Time" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Portfolio Value", "Initial"]} title="Value Over Time" />
       <CalculatorInput input={{ id: "initial", label: "Initial Investment", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The initial amount invested." }} value={initial} onChange={setInitial} />
       <CalculatorInput input={{ id: "finalVal", label: "Final Value", type: "number", defaultValue: 18000, suffix: "$", min: 0, tooltip: "The ending value of the investment." }} value={finalVal} onChange={setFinalVal} />
       <PeriodInput

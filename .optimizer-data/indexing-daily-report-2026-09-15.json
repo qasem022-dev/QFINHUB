@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-15",
+  "generated": "2026-09-15T10:01:58.896226",
+  "auth_status": {
+    "service_account": "DEAD \u2014 invalid_grant account not found (revoked/deleted)",
+    "oauth_token": "EXPIRED \u2014 401 on URL Inspection",
+    "gsc_cloakbrowser_session": "PRESENT but unusable without API auth (quota gating)"
+  },
+  "pipeline_execution": {
+    "step1_gsc_daily_pipeline": "FAILED \u2014 SA auth dead",
+    "step2_morning_diagnosis": "SKIPPED \u2014 depends on SA token",
+    "step3_cloakbrowser_submission": "SKIPPED \u2014 script depends on SA auth for quota/queue management",
+    "step4_daily_report": "BUILT FROM CACHED STATE"
+  },
+  "sitemap_index_rate": {
+    "indexed": 225,
+    "discovered": 279,
+    "unknown": 25,
+    "uninspected": 1,
+    "total_sitemap": 531,
+    "index_rate_pct": 42.37,
+    "queue_freshness": "2026-08-18T15:01:11Z"
+  },
+  "submissions_today": {
+    "count": 0,
+    "log_total": 577,
+    "last_submission_date": "2026-08-31 10:05:19",
+    "days_since_last_submission": 15
+  },
+  "gsc_cached_7d_metrics": {
+    "date_range": "2026-08-30 to 2026-09-05",
+    "pulled_at": "2026-09-08T22:25:21Z",
+    "freshness": "FRESH",
+    "impressions": 1902,
+    "clicks": 1,
+    "ctr_pct": 0.1,
+    "avg_position": 64.9,
+    "pages_with_impressions": 90
+  },
+  "gsc_cached_28d_metrics": {
+    "impressions": 9424,
+    "clicks": 4,
+    "pages_with_impressions": 183,
+    "pages_with_clicks": 4,
+    "clicked_pages": [
+      "https://www.qfinhub.com/calculators/basic-calculator",
+      "https://www.qfinhub.com/calculators/compound-interest",
+      "https://www.qfinhub.com/decision/rent-vs-buy-with-100k-income",
+      "https://www.qfinhub.com/widgets/mortgage-affordability-embed"
+    ]
+  },
+  "blocker": "Service Account auth permanently dead (invalid_grant account not found). All automated GSC ops blocked until Qasem re-creates SA key + re-adds to GSC property. Last successful GSC API pull: 2026-09-08 (7 days ago). Last successful submission: 2026-08-31 (15 days ago)."
+}

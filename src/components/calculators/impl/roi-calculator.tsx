@@ -43,7 +43,7 @@ export default function ROICalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Total Value", "Cost Basis"]} title="Investment Growth" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Total Value", "Cost Basis"]} title="Investment Growth" />
       <CalculatorInput input={{ id: "cost", label: "Initial Cost", type: "number", defaultValue: 10000, suffix: "$", min: 0, tooltip: "The total cost or initial investment amount." }} value={cost} onChange={setCost} />
       <CalculatorInput input={{ id: "finalVal", label: "Final Value", type: "number", defaultValue: 15000, suffix: "$", min: 0, tooltip: "The ending value of the investment after the holding period." }} value={finalVal} onChange={setFinalVal} />
       <PeriodInput

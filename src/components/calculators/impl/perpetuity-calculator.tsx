@@ -60,7 +60,7 @@ export default function PerpetuityCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={barData} xKey="metric" yKey="value" title="Perpetuity Values ($)" />
+      <CalculatorChart format="currency" type="bar" data={barData} xKey="metric" yKey="value" title="Perpetuity Values ($)" />
       <CalculatorInput
         input={{ id: "payment", label: "Periodic Payment", type: "number", defaultValue: 1000, suffix: "$", min: 0.01, step: 10, tooltip: "The fixed payment amount per period." }}
         value={payment}

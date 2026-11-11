@@ -60,7 +60,9 @@ export function CalculatorLayout({
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">{children}</div>
+              {/* flex-col (not space-y) so <CalculatorChart /> can use order-last
+                  to render below the inputs regardless of JSX child order. */}
+              <div className="flex flex-col gap-4">{children}</div>
             </CardContent>
           </Card>
         </div>

@@ -149,7 +149,7 @@ export default function EarlyRetirementCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="line"
         data={chartData}
         xKey="year"

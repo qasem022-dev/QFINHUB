@@ -73,7 +73,7 @@ export default function CollegeSavingsCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Projected Savings", "Tuition Cost"]} title="Savings Growth vs Tuition Cost" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Projected Savings", "Tuition Cost"]} title="Savings Growth vs Tuition Cost" />
       <CalculatorInput input={{ id: "child-age", label: "Child's Current Age", type: "number", defaultValue: 5, suffix: "yrs", min: 0, max: 17, tooltip: "Current age of the child." }} value={childAge} onChange={setChildAge} />
       <CalculatorInput input={{ id: "college-start", label: "College Start Age", type: "number", defaultValue: 18, suffix: "yrs", min: 1, max: 30, tooltip: "Expected age when the child starts college." }} value={collegeStart} onChange={setCollegeStart} />
       <CalculatorInput input={{ id: "annual-tuition", label: "Current Annual Tuition", type: "number", defaultValue: 25000, suffix: "$", min: 0, tooltip: "Today's cost of one year of college tuition." }} value={annualTuition} onChange={setAnnualTuition} />

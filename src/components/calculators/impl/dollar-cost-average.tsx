@@ -58,7 +58,7 @@ export default function DollarCostAverageCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="period" yKey={["Share Price", "Avg Cost"]} title="Prices vs Average Cost" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="period" yKey={["Share Price", "Avg Cost"]} title="Prices vs Average Cost" />
       <CalculatorInput
         input={{ id: "totalInvested", label: "Total Amount Invested", type: "number", defaultValue: 6000, suffix: "$", min: 0, tooltip: "Total amount of money invested across all periods." }}
         value={totalInvested}

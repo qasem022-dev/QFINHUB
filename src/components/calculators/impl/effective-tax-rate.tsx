@@ -117,7 +117,7 @@ export default function EffectiveTaxRateCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax Owed by Bracket" colors={BRACKET_COLORS} />
+      <CalculatorChart format="currency" type="bar" data={bracketBreakdown} xKey="name" yKey="value" title="Tax Owed by Bracket" colors={BRACKET_COLORS} />
       <CalculatorInput input={{ id: "annualIncome", label: "Annual Income", type: "number", defaultValue: 80000, suffix: "$", min: 0, tooltip: "Your total gross annual income from all sources." }} value={annualIncome} onChange={setAnnualIncome} />
       <CalculatorInput input={{ id: "filingStatus", label: "Filing Status", type: "select", defaultValue: 0, options: [{ label: "Single", value: 0 }, { label: "Married Jointly", value: 1 }, { label: "Head of Household", value: 2 }], tooltip: "Your tax filing status determines the applicable brackets and standard deduction." }} value={filingStatus} onChange={handleFilingStatusChange} />
       <CalculatorInput input={{ id: "preTaxDeductions", label: "Pre-Tax Deductions", type: "number", defaultValue: 0, suffix: "$", min: 0, tooltip: "Pre-tax deductions such as 401(k), HSA, FSA, and traditional IRA contributions." }} value={preTaxDeductions} onChange={setPreTaxDeductions} />

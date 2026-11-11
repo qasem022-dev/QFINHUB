@@ -31,7 +31,7 @@ export default function MarginCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Cost vs Profit" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Cost vs Profit" />
       <CalculatorInput input={{ id: "cost", label: "Cost", type: "number", defaultValue: 100, suffix: "$", min: 0, step: 0.01, tooltip: "The wholesale or production cost of the item." }} value={cost} onChange={setCost} />
       <CalculatorInput input={{ id: "margin", label: "Desired Margin", type: "number", defaultValue: 33.33, suffix: "%", min: 0, max: 99.99, step: 0.01, tooltip: "Desired profit margin as a percentage of selling price. Must be less than 100%." }} value={margin} onChange={setMargin} />
     </CalculatorLayout>

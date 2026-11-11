@@ -83,7 +83,7 @@ export default function RothIraCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={chartData} xKey="year" yKey={["Contributions", "Tax-Free Growth"]} title="Roth IRA Growth Over Time" />
+      <CalculatorChart format="currency" type="area" data={chartData} xKey="year" yKey={["Contributions", "Tax-Free Growth"]} title="Roth IRA Growth Over Time" />
       <CalculatorInput input={{ id: "annualContribution", label: "Annual Contribution", type: "number", defaultValue: 7000, suffix: "$", min: 0, tooltip: "How much you contribute each year to your Roth IRA." }} value={annualContribution} onChange={setAnnualContribution} />
       <CalculatorInput input={{ id: "currentAge", label: "Current Age", type: "slider", defaultValue: 30, suffix: "years", min: 18, max: 70, step: 1, tooltip: "Your current age used to determine how many years your Roth IRA has to grow." }} value={currentAge} onChange={setCurrentAge} />
       <PeriodInput

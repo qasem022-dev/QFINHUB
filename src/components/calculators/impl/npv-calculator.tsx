@@ -67,7 +67,7 @@ export default function NPVCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="area"
         data={chartData}
         xKey="year"

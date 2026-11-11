@@ -47,7 +47,7 @@ export default function CurrencyConverter() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Currency Comparison" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Currency Comparison" height={250} />
       <CalculatorInput
         input={{ id: "amount", label: "Amount", type: "number", defaultValue: 100, suffix: "$", min: 0, tooltip: "The amount of currency you want to convert." }}
         value={amount}

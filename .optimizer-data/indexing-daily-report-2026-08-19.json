@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-19",
+  "generated": "2026-08-19T15:04:08.417742Z",
+  "pipeline_version": "Phase 38 consolidated",
+  "gsc_api_metrics_7d": {
+    "impressions": 2628,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 70.7,
+    "pages_with_impressions": 106,
+    "query_count": 500,
+    "query_impressions": 891,
+    "query_page_rows": 500
+  },
+  "gsc_api_corrected": {
+    "correction_factor": null,
+    "imp_7d": null,
+    "clicks_7d": null
+  },
+  "indexing_state": {
+    "indexed_pass_count": 225,
+    "discovered_not_indexed_count": 279,
+    "unknown_to_google_count": 25,
+    "uninspected_count": 1,
+    "sitemap_scoped_index_rate": 0.4253,
+    "live_sitemap_total": 531
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "category_counts": {
+      "UNKNOWN": 13,
+      "INDEXED": 2,
+      "DISCOVERED": 10
+    },
+    "newly_indexed_count": 2,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "https://www.qfinhub.com/calculators/portfolio-allocator"
+    ],
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0
+  },
+  "submissions": {
+    "submitted_today": 13,
+    "categories_today": {
+      "UNKNOWN": 2,
+      "DISCOVERED": 11
+    },
+    "results_today": {
+      "CLICKED_BUTTON": 13
+    },
+    "log_total": 421
+  },
+  "blockers": [],
+  "notes": [
+    "Morning diagnosis has a non-fatal bug: gsc-morning-diagnosis.py fails on line 278 (master[url] = {...}) when master is a list, but the morning-inspect-results JSON is saved correctly before the crash. The summary output (saved before the crash) is accurate.",
+    "Sampling visible duplicate URLs in the morning-inspect-results JSON \u2014 sampling logic may have a bug but the independent metadata (newly_indexed, category_counts) is consistent.",
+    "Pitfall #19 (Aug 17 root-cause fix a61e0f4) confirmed working: 13/13 today entries saved, daily_counts auto-rebuilt correctly, no dedup erasures."
+  ]
+}

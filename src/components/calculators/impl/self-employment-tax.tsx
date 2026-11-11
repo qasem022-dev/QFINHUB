@@ -51,7 +51,7 @@ export default function SelfEmploymentTaxCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="SE Tax Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="SE Tax Breakdown" />
       <CalculatorInput
         input={{ id: "netEarnings", label: "Net Earnings from Self-Employment", type: "number", defaultValue: 80000, suffix: "$", min: 0, step: 1000, tooltip: "Your net self-employment income after business expenses (Schedule C line 31 or Schedule F line 34)." }}
         value={netEarnings}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T15:05:37Z",
+  "freshness": "FRESH",
+  "indexed_pages": 240,
+  "master_entries": 669,
+  "category_counts": {
+    "INDEXED": 240,
+    "DISCOVERED": 304,
+    "UNKNOWN": 101,
+    "OTHER": 24
+  },
+  "new_pages_indexed_today": 9,
+  "unknown_to_discovered_today": 4,
+  "regressions_today": 0,
+  "morning_inspected": 25,
+  "morning_wall_clock_seconds": 31,
+  "submitted_today": 13,
+  "submission_results": {
+    "CLICKED_BUTTON": 1,
+    "REQUESTED \u2713": 12
+  },
+  "gsc_metrics_7d": {
+    "impressions": 2094,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 65.6,
+    "pages_with_impressions": 131,
+    "query_count": 500,
+    "query_impressions": 1296,
+    "query_page_rows": 500
+  },
+  "notes": [
+    "Morning diagnosis full 1900-target run was stopped after slow ETA; completed safe 25-URL run instead.",
+    "No regressions detected."
+  ]
+}

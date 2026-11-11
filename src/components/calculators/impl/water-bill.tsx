@@ -34,7 +34,7 @@ export default function WaterBillCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={chartData} xKey="name" yKey="value" title="Bill Breakdown" height={250} />
+      <CalculatorChart format="currency" type="pie" data={chartData} xKey="name" yKey="value" title="Bill Breakdown" height={250} />
       <CalculatorInput
         input={{ id: "gallonsUsed", label: "Gallons Used", type: "number", defaultValue: 3000, suffix: "gal", min: 0, tooltip: "Total gallons of water used during the billing period." }}
         value={gallonsUsed}

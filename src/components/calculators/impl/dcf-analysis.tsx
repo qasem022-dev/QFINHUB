@@ -52,7 +52,7 @@ export default function DCFAnalysisCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="year" yKey="Present Value" title="Present Value of Cash Flows" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="year" yKey="Present Value" title="Present Value of Cash Flows" />
       <CalculatorInput input={{ id: "investment", label: "Initial Investment", type: "number", defaultValue: 1000000, suffix: "$", min: 0, step: 1000, tooltip: "The upfront cost of the investment or project." }} value={investment} onChange={setInvestment} />
       <CalculatorInput input={{ id: "cf1", label: "Year 1 Cash Flow", type: "number", defaultValue: 200000, suffix: "$", step: 1000, tooltip: "Projected cash flow for year 1." }} value={cf1} onChange={setCf1} />
       <CalculatorInput input={{ id: "cf2", label: "Year 2 Cash Flow", type: "number", defaultValue: 250000, suffix: "$", step: 1000, tooltip: "Projected cash flow for year 2." }} value={cf2} onChange={setCf2} />

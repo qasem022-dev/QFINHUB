@@ -52,7 +52,7 @@ export default function MovingCostCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Cost Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Cost Breakdown" />
       <CalculatorInput input={{ id: "distance", label: "Moving Distance", type: "slider", defaultValue: 500, min: 1, max: 3000, suffix: "mi", tooltip: "Distance of your move in miles." }} value={distance} onChange={setDistance} />
       <CalculatorInput input={{ id: "moving-truck", label: "Moving Truck Rental", type: "number", defaultValue: 1500, suffix: "$", min: 0, tooltip: "Cost of renting a moving truck." }} value={movingTruck} onChange={setMovingTruck} />
       <CalculatorInput input={{ id: "movers", label: "Movers", type: "number", defaultValue: 2000, suffix: "$", min: 0, tooltip: "Cost of hiring professional movers." }} value={movers} onChange={setMovers} />

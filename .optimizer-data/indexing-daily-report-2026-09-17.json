@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-17",
+  "generated": "2026-09-17T10:06:43.409448",
+  "auth_status": {
+    "service_account": "BROKEN \u2014 invalid_grant: account not found",
+    "oauth_token": "EXPIRED \u2014 access_token 56 days old, no refresh possible",
+    "cloakbrowser_session": "TIMEOUT_45S \u2014 GSC UI navigation hung after 3 attempts",
+    "recovery_action": "Qasem must re-authenticate: (a) regenerate SA key in GCP, OR (b) refresh OAuth token via desktop-oauth-refresh.py"
+  },
+  "sitemap_index_rate": {
+    "indexed": 217,
+    "discovered": 286,
+    "unknown": 17,
+    "uninspected": 1,
+    "sitemap_total_estimated": 521,
+    "index_rate_pct": 41.65
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "newly_indexed_count": 5,
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "category_counts": {
+      "DISCOVERED": 17,
+      "UNKNOWN": 2,
+      "INDEXED": 5,
+      "CRAWLED_REJECTED": 1
+    },
+    "note": "morning diagnosis did NOT run today \u2014 SA auth broken; using last cached morning results"
+  },
+  "submissions_today": {
+    "count": 0,
+    "log_total": 275,
+    "attempts_logged": "3 TIMEOUT_45S (cleaned from log per pitfall #36)",
+    "net_submissions": 0,
+    "note": "No successful submissions today. GSC UI session hangs at 45s \u2014 likely session expired and needs manual re-auth."
+  },
+  "gsc_7d_metrics": {
+    "impressions": 2000,
+    "clicks": 0,
+    "ctr_pct": 0.0,
+    "avg_position": 59.4,
+    "pages_with_impressions": 119,
+    "query_count": 500,
+    "query_impressions": 1203,
+    "query_page_rows": 500
+  },
+  "gsc_28d_metrics": {
+    "impressions": 3960,
+    "clicks": 2,
+    "pages_with_impressions": 164,
+    "pages_with_clicks": 2,
+    "clicked_pages": [
+      "https://www.qfinhub.com/methodology",
+      "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct"
+    ]
+  },
+  "freshness_proof": {
+    "api_freshness_flag": "FRESH",
+    "api_data_age_hours": 3.0,
+    "data_status": "STALE \u2014 SA auth broken, using cached data from this morning (already 3h old at report time)"
+  },
+  "blockers": [
+    "CRITICAL: Both GSC auth paths (Service Account + OAuth) are broken. All API operations halted.",
+    "Service Account: key returned \"invalid_grant: account not found\" \u2014 likely key revoked or project deleted.",
+    "OAuth: access_token expired, no refresh_token recovery possible without manual OAuth flow.",
+    "CloakBrowser GSC UI: 3 consecutive TIMEOUT_45S \u2014 session likely expired, requires headless=False re-auth.",
+    "No automated recovery. Qasem action required."
+  ]
+}

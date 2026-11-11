@@ -48,7 +48,7 @@ export default function InflationCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="year" yKey={["Purchasing Power", "Today's Value"]} title="Purchasing Power Over Time" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="year" yKey={["Purchasing Power", "Today's Value"]} title="Purchasing Power Over Time" />
       <CalculatorInput input={{ id: "currentAmount", label: "Current Amount", type: "number", defaultValue: 1000, suffix: "$", min: 0, tooltip: "The current amount of money you want to adjust for inflation." }} value={currentAmount} onChange={setCurrentAmount} />
       <CalculatorInput input={{ id: "inflationRate", label: "Inflation Rate", type: "number", defaultValue: 3, suffix: "%", min: 0, max: 100, step: 0.1, tooltip: "The annual inflation rate (e.g., 3 for 3%)." }} value={inflationRate} onChange={setInflationRate} />
       <PeriodInput

@@ -60,7 +60,7 @@ export default function PresentValueCalculator() {
         </div>
       }
     >
-      <CalculatorChart
+      <CalculatorChart format="currency"
         type="line"
         data={chartData}
         xKey="year"

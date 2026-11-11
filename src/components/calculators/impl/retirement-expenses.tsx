@@ -68,7 +68,7 @@ export default function RetirementExpensesCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Expense Breakdown" height={300} />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Expense Breakdown" height={300} />
       {EXPENSE_CATEGORIES.map((cat) => (
         <CalculatorInput
           key={cat.id}

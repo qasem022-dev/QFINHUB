@@ -1,0 +1,99 @@
+{
+  "date": "2026-08-12",
+  "generated_at": "2026-08-12T15:31:26Z",
+  "pipeline_status": {
+    "step_1_gsc_pipeline": "SUCCESS",
+    "step_2_morning_diagnosis": "SUCCESS",
+    "step_3_cloakbrowser_submission": "SUCCESS",
+    "step_4_report": "SUCCESS",
+    "background_jobs_used": true,
+    "foreground_timeout_hits": 1,
+    "recovery_strategy": "Killed foreground hit; restarted in background per pitfall #59"
+  },
+  "step_1_gsc_metrics": {
+    "freshness": "FRESH",
+    "auth_method": "Service Account (permanent)",
+    "date_range": {
+      "start": "2026-08-03",
+      "end": "2026-08-09"
+    },
+    "7d": {
+      "impressions": 2202,
+      "clicks": 1,
+      "ctr_pct": 0.0,
+      "avg_position": 66.2,
+      "pages_with_impressions": 130
+    },
+    "28d": {
+      "impressions": 5421,
+      "clicks": 3,
+      "pages_with_impressions": 187,
+      "pages_with_clicks": 3,
+      "clicked_pages": [
+        "https://www.qfinhub.com/blog/stephen-m-calk-2025-trust-fed-approval-what-it-means-for-your-mortgage-and-savin",
+        "https://www.qfinhub.com/methodology",
+        "https://www.qfinhub.com/tools/mortgage-450k-30yr-6-5pct"
+      ]
+    },
+    "previous_7d_impressions": 1980,
+    "change_7d_pct": 11.2
+  },
+  "step_2_morning_diagnosis": {
+    "sample_size": 1266,
+    "wall_clock_seconds": 1169,
+    "newly_indexed_organic": 14,
+    "unknown_to_discovered_transitions": 490,
+    "regressions": 0,
+    "category_counts": {
+      "DISCOVERED": 996,
+      "INDEXED": 14,
+      "UNKNOWN": 198,
+      "ERROR": 52,
+      "CRAWLED_REJECTED": 6
+    },
+    "pool_state": "Pool exhausted \u2014 uninspected=0, unknown=46, discovered=256 (steady state per pitfall #69/71)",
+    "started_in_foreground_killed": true,
+    "restarted_in_background": true
+  },
+  "step_3_submissions": {
+    "quota_used": 13,
+    "quota_limit": 13,
+    "unique_urls": 13,
+    "results_breakdown": {
+      "CLICKED_BUTTON": 13
+    },
+    "all_clicked_button": true,
+    "session_expired": false,
+    "captcha_or_2fa": false,
+    "log_stdout_counter_warning": "DONE: 0/13 requested (per pitfall #42 stdout counter is misleading \u2014 log file is source of truth)"
+  },
+  "site_indexing_state": {
+    "master_file_entries": 669,
+    "live_sitemap_urls": 526,
+    "indexed_in_sitemap": 224,
+    "sitemap_scoped_index_rate_pct": 42.59,
+    "coverage_categories_from_master": {
+      "INDEXED": 241,
+      "DISCOVERED": 307,
+      "UNKNOWN": 97,
+      "CRAWLED_REJECTED": 3,
+      "OTHER": 21
+    }
+  },
+  "growth_indicators": {
+    "indexed_yesterday": 223,
+    "indexed_today": 241,
+    "indexed_delta_overnight": 18,
+    "pool_state": "POST-210 STEADY STATE \u2014 Phase 39 humanization primary growth lever (pitfall #79)",
+    "impressions_7d_wow_pct": 11.2
+  },
+  "phase_status": {
+    "phase_38_daily_ops": "ACTIVE \u2014 14th consecutive clean run (Aug 12)",
+    "phase_39_humanization": "PRIMARY GROWTH LEVER",
+    "phase_35_safe_recovery": "LIFTED (lock v2)",
+    "expansion_freeze_v2": "LIFTED",
+    "safe_mode_recovery": false,
+    "wall_clock_envelope_min": 30,
+    "system_health": "GREEN \u2014 all 4 steps completed, no blockers"
+  }
+}

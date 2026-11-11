@@ -27,21 +27,38 @@ export function PWAInstallPrompt() {
     if (stored) setDismissed(true);
   }, []);
 
-  // Show the banner after a delay
+  // Show the banner only after real engagement: 20s of dwell time AND at least
+  // one meaningful scroll. The previous 3s timer fired before the visitor had
+  // read the calculator, and the banner then covered the results panel.
   React.useEffect(() => {
-    if (isStandalone) return;
+    if (isStandalone || dismissed) return;
 
-    const timer = setTimeout(() => {
-      if (canInstall) return;
-      if (isIOS) {
-        setShowIOSHint(true);
-        setShow(true);
-      } else if (!dismissed) {
-        setShow(true);
-      }
-    }, 3000);  // Show quickly for better visibility
+    let timer: ReturnType<typeof setTimeout> | undefined;
 
-    return () => clearTimeout(timer);
+    const startTimer = () => {
+      if (timer) return;
+      timer = setTimeout(() => {
+        if (canInstall) return;
+        if (isIOS) {
+          setShowIOSHint(true);
+          setShow(true);
+        } else {
+          setShow(true);
+        }
+      }, 20000);
+    };
+
+    const onScroll = () => {
+      if (window.scrollY > 500) startTimer();
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll(); // page may already be scrolled (history restore / anchor link)
+
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener("scroll", onScroll);
+    };
   }, [isStandalone, isIOS, canInstall, dismissed]);
 
   // Show immediately when Chrome fires beforeinstallprompt

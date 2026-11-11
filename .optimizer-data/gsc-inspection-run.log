@@ -1,0 +1,34 @@
+Fetching sitemaps...
+  sitemap.xml: 532 URLs
+  news-sitemap.xml: 16 URLs
+Total URLs to inspect: 548
+Done 50/548 (9.1%) - 476s elapsed, ~4744s remaining
+Done 100/548 (18.2%) - 948s elapsed, ~4248s remaining
+Done 150/548 (27.4%) - 1458s elapsed, ~3870s remaining
+Done 200/548 (36.5%) - 1799s elapsed, ~3131s remaining
+Done 250/548 (45.6%) - 2174s elapsed, ~2591s remaining
+Done 300/548 (54.7%) - 2506s elapsed, ~2072s remaining
+Done 350/548 (63.9%) - 2839s elapsed, ~1606s remaining
+Done 400/548 (73.0%) - 3173s elapsed, ~1174s remaining
+Done 450/548 (82.1%) - 3515s elapsed, ~765s remaining
+Done 500/548 (91.2%) - 3850s elapsed, ~370s remaining
+Done 548/548 (100.0%) - 4168s elapsed, ~0s remaining
+
+All 548 URLs inspected in 4169s
+
+=== REJECTION BUCKETS ===
+alternative_canonical: 0
+page_with_redirect: 0
+crawled_not_indexed: 16
+discovered_not_indexed: 252
+noindex: 0
+submitted_indexed: 217
+soft_404: 0
+unknown: 54
+other: 9
+TOTAL: 548
+
+=== UNCLASSIFIED COVERAGE STATES (7) ===
+  'Excluded by ‘noindex’ tag': 7
+
+Done. Files saved.

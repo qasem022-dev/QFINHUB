@@ -105,7 +105,7 @@ export default function IRRCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="year" yKey="Cash Flow" title="Period Cash Flows" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="year" yKey="Cash Flow" title="Period Cash Flows" />
       <CalculatorInput
         input={{ id: "irr_initial", label: "Initial Investment", type: "number", defaultValue: -50000, suffix: "$", tooltip: "The upfront investment amount (negative value represents cash outflow)." }}
         value={initialInvestment}

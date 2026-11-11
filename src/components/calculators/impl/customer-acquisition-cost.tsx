@@ -59,7 +59,7 @@ export default function CustomerAcquisitionCostCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={chartData} xKey="name" yKey="value" title="Spending by Channel" />
+      <CalculatorChart format="currency" type="pie" data={chartData} xKey="name" yKey="value" title="Spending by Channel" />
       <CalculatorInput input={{ id: "marketing", label: "Marketing Spend", type: "number", defaultValue: 50000, suffix: "$", min: 0, step: 1000, tooltip: "Total marketing department costs." }} value={marketing} onChange={setMarketing} />
       <CalculatorInput input={{ id: "salesTeam", label: "Sales Team Cost", type: "number", defaultValue: 80000, suffix: "$", min: 0, step: 1000, tooltip: "Salaries, commissions, and bonuses for the sales team." }} value={salesTeam} onChange={setSalesTeam} />
       <CalculatorInput input={{ id: "software", label: "Software & Tools", type: "number", defaultValue: 20000, suffix: "$", min: 0, step: 1000, tooltip: "CRM, analytics, and other software costs." }} value={software} onChange={setSoftware} />

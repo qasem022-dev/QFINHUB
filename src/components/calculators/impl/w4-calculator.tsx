@@ -93,7 +93,7 @@ export default function W4Calculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Withholding Overview" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Withholding Overview" />
       <CalculatorInput
         input={{ id: "annualIncome", label: "Annual Income (W-2)", type: "number", defaultValue: 75000, suffix: "$", min: 0, step: 1000, tooltip: "Your expected annual wage income from your W-2 job." }}
         value={annualIncome}

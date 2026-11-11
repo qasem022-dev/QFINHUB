@@ -67,7 +67,7 @@ export default function RetirementWithdrawalCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={balanceChartData} xKey="year" yKey={["Portfolio Balance"]} title="Portfolio Balance Over Time" height={300} />
+      <CalculatorChart format="currency" type="area" data={balanceChartData} xKey="year" yKey={["Portfolio Balance"]} title="Portfolio Balance Over Time" height={300} />
       <CalculatorInput
         input={{ id: "totalSavings", label: "Total Retirement Savings", type: "number", defaultValue: 1000000, suffix: "$", min: 0, step: 10000, tooltip: "Your total retirement savings balance at retirement." }}
         value={totalSavings}

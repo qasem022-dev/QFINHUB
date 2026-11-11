@@ -51,7 +51,7 @@ export default function SalaryCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Pay Breakdown" height={250} />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Pay Breakdown" height={250} />
       <PeriodInput id="payAmount" label={`${payUnitLabel} Pay`} value={payValue} unit={payUnit} onValueChange={setPayValue} onUnitChange={setPayUnit} min={0} max={99999999} />
     </CalculatorLayout>
   );

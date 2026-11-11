@@ -63,8 +63,8 @@ export default function AnnuityCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="line" data={chartData} xKey="period" yKey={["Future Value"]} title="Annuity Growth Over Time" />
-      <CalculatorChart type="bar" data={comparisonData} xKey="type" yKey="value" title="Ordinary vs Due Comparison" />
+      <CalculatorChart format="currency" type="line" data={chartData} xKey="period" yKey={["Future Value"]} title="Annuity Growth Over Time" />
+      <CalculatorChart format="currency" type="bar" data={comparisonData} xKey="type" yKey="value" title="Ordinary vs Due Comparison" />
       <CalculatorInput
         input={{ id: "payment", label: "Payment Amount", type: "number", defaultValue: 1000, suffix: "$", min: 0, step: 10, tooltip: "Amount paid/received each period." }}
         value={payment}

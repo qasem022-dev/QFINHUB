@@ -47,7 +47,7 @@ export default function EmergencyFundCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={barData} xKey="name" yKey="value" title="Target vs Current" />
+      <CalculatorChart format="currency" type="bar" data={barData} xKey="name" yKey="value" title="Target vs Current" />
       <CalculatorInput input={{ id: "monthly-expenses", label: "Monthly Expenses", type: "number", defaultValue: 5000, suffix: "$", min: 0, tooltip: "Your essential monthly expenses (housing, food, utilities, etc.)." }} value={monthlyExpenses} onChange={setMonthlyExpenses} />
       <PeriodInput
         id="months-to-cover"

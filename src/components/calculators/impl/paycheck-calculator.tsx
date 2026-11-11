@@ -75,7 +75,7 @@ export default function PaycheckCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey={["value"]} title="Paycheck Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey={["value"]} title="Paycheck Breakdown" />
       <CalculatorInput input={{ id: "salary", label: "Annual Salary", type: "number", defaultValue: 75000, suffix: "$", min: 0, tooltip: "Your total annual salary before taxes and deductions." }} value={salary} onChange={setSalary} />
       <CalculatorInput input={{ id: "pay-freq", label: "Pay Frequency", type: "select", defaultValue: 26, options: [{ label: "Weekly", value: 52 }, { label: "Biweekly", value: 26 }, { label: "Semi-Monthly", value: 24 }, { label: "Monthly", value: 12 }], tooltip: "How often you get paid." }} value={payFreq} onChange={setPayFreq} />
       <CalculatorInput input={{ id: "state", label: "State", type: "select", defaultValue: 1, options: [{ label: "CA", value: 1 }, { label: "TX", value: 2 }, { label: "NY", value: 3 }, { label: "FL", value: 4 }, { label: "IL", value: 5 }, { label: "Other", value: 6 }], tooltip: "Your state of residence for state tax calculation." }} value={state} onChange={setState} />

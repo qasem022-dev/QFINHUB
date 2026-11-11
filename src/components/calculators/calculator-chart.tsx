@@ -18,6 +18,41 @@ interface CalculatorChartProps {
   colors?: string[];
   className?: string;
   height?: number;
+  /** Formats axis ticks and data labels. Most financial calculators want "currency". */
+  format?: "currency" | "percent" | "number";
+}
+
+/** Compact form for axis ticks: 260000 -> "$260K". */
+function compactValue(n: number, format: "currency" | "percent" | "number"): string {
+  if (!isFinite(n)) return "";
+  if (format === "percent") return `${n.toFixed(Number.isInteger(n) ? 0 : 1)}%`;
+  if (format === "currency") {
+    const abs = Math.abs(n);
+    const sign = n < 0 ? "-" : "";
+    const trim = (v: number) => v.toFixed(1).replace(/\.0$/, "");
+    if (abs >= 1_000_000_000) return `${sign}$${trim(abs / 1_000_000_000)}B`;
+    if (abs >= 1_000_000) return `${sign}$${trim(abs / 1_000_000)}M`;
+    if (abs >= 1_000) return `${sign}$${trim(abs / 1_000)}K`;
+    return `${sign}$${abs.toFixed(0)}`;
+  }
+  return new Intl.NumberFormat("en-US", {
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(n);
+}
+
+/** Full form for data labels and tooltips: 260000 -> "$260,000". */
+function fullValue(n: number, format: "currency" | "percent" | "number"): string {
+  if (!isFinite(n)) return "";
+  if (format === "percent") return `${n.toFixed(1)}%`;
+  if (format === "currency") {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    }).format(n);
+  }
+  return new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(n);
 }
 
 const DEFAULT_COLORS = [
@@ -98,6 +133,7 @@ export function CalculatorChart({
   colors,
   className,
   height = 300,
+  format = "number",
 }: CalculatorChartProps) {
   const chartColors = colors ?? DEFAULT_COLORS;
   const keys = Array.isArray(yKey) ? yKey : [yKey];
@@ -136,6 +172,7 @@ export function CalculatorChart({
     ResponsiveContainer,
     Cell,
     Legend,
+    LabelList,
   } = (R ?? {}) as typeof RechartsModule;
 
   const renderChart = () => {
@@ -158,6 +195,8 @@ export function CalculatorChart({
               tick={{ fontSize: 12 }}
               stroke="currentColor"
               className="text-gray-500 dark:text-gray-400"
+              tickFormatter={(v: number) => compactValue(Number(v), format)}
+              width={56}
             />
             <RechartsTooltip
               content={<ChartTooltipContent xKey={xKey} yKey={yKey} />}
@@ -178,7 +217,7 @@ export function CalculatorChart({
 
       case "bar":
         return (
-          <BarChart data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
+          <BarChart data={data} margin={{ top: 18, right: 10, left: 0, bottom: 5 }}>
             <CartesianGrid
               strokeDasharray="3 3"
               stroke="currentColor"
@@ -194,6 +233,8 @@ export function CalculatorChart({
               tick={{ fontSize: 12 }}
               stroke="currentColor"
               className="text-gray-500 dark:text-gray-400"
+              tickFormatter={(v: number) => compactValue(Number(v), format)}
+              width={56}
             />
             <RechartsTooltip
               content={<ChartTooltipContent xKey={xKey} yKey={yKey} />}
@@ -204,7 +245,23 @@ export function CalculatorChart({
                 dataKey={key}
                 fill={chartColors[idx % chartColors.length]}
                 radius={[4, 4, 0, 0]}
-              />
+              >
+                {keys.length === 1 &&
+                  data.map((_entry, i) => (
+                    <Cell
+                      key={`cell-${i}`}
+                      fill={chartColors[i % chartColors.length]}
+                    />
+                  ))}
+                <LabelList
+                  dataKey={key}
+                  position="top"
+                  offset={8}
+                  className="fill-gray-600 dark:fill-gray-300"
+                  fontSize={11}
+                  formatter={(v: unknown) => compactValue(Number(v), format)}
+                />
+              </Bar>
             ))}
           </BarChart>
         );
@@ -227,6 +284,8 @@ export function CalculatorChart({
               tick={{ fontSize: 12 }}
               stroke="currentColor"
               className="text-gray-500 dark:text-gray-400"
+              tickFormatter={(v: number) => compactValue(Number(v), format)}
+              width={56}
             />
             <RechartsTooltip
               content={<ChartTooltipContent xKey={xKey} yKey={yKey} />}
@@ -284,7 +343,15 @@ export function CalculatorChart({
   };
 
   return (
-    <Card className={cn("border-gray-200 shadow-sm dark:border-gray-700", className)}>
+    <Card
+      className={cn(
+        // order-last keeps the visualisation BELOW the inputs: calculators pass
+        // <CalculatorChart /> as their first child, and the layout uses a flex
+        // column, so without this the chart renders above every input field.
+        "order-last border-gray-200 shadow-sm dark:border-gray-700",
+        className,
+      )}
+    >
       {title && (
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-semibold text-gray-900 dark:text-white">

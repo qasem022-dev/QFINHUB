@@ -58,7 +58,7 @@ export default function StockReturnCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Return Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Return Breakdown" />
       <CalculatorInput input={{ id: "buyPrice", label: "Buy Price Per Share", type: "number", defaultValue: 50, suffix: "$", min: 0, step: 0.01, tooltip: "The price per share at which you bought the stock." }} value={buyPrice} onChange={setBuyPrice} />
       <CalculatorInput input={{ id: "sellPrice", label: "Sell Price Per Share", type: "number", defaultValue: 75, suffix: "$", min: 0, step: 0.01, tooltip: "The price per share at which you sold (or plan to sell) the stock." }} value={sellPrice} onChange={setSellPrice} />
       <CalculatorInput input={{ id: "shares", label: "Number of Shares", type: "number", defaultValue: 100, suffix: "shares", min: 1, tooltip: "Total number of shares bought and sold." }} value={shares} onChange={setShares} />

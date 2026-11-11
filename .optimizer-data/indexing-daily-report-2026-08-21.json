@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-21",
+  "pipeline_version": "Phase 38 consolidated",
+  "freshness": "FRESH",
+  "gsc_7d_metrics": {
+    "impressions": 2597,
+    "clicks": 1,
+    "avg_position": 71.8,
+    "pages_with_impressions": 106
+  },
+  "indexing_state": {
+    "indexed_pass": 225,
+    "discovered_not_indexed": 279,
+    "unknown_to_google": 25,
+    "uninspected": 1,
+    "sitemap_scoped_index_rate_pct": 42.53
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 25,
+    "newly_indexed_count": 2,
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "category_counts": {
+      "UNKNOWN": 12,
+      "DISCOVERED": 11,
+      "INDEXED": 2
+    },
+    "note": "Pitfall #20: post-save crash on master[]= but summary data is intact"
+  },
+  "submissions_today": {
+    "total": 13,
+    "daily_count_check": 13,
+    "result_breakdown": {
+      "CLICKED_BUTTON": 12,
+      "REQUESTED \u2713": 1
+    },
+    "category_breakdown": {
+      "UNKNOWN": 3,
+      "DISCOVERED": 10
+    },
+    "urls": [
+      "https://www.qfinhub.com/tools/dti-150k-25pct",
+      "https://www.qfinhub.com/tools/fire-40k-military",
+      "https://www.qfinhub.com/tools/tax-100k-single",
+      "https://www.qfinhub.com/tools/tax-65k-single",
+      "https://www.qfinhub.com/calculators/currency-converter",
+      "https://www.qfinhub.com/calculators/fica-calculator",
+      "https://www.qfinhub.com/tools/tax-2M-married-joint",
+      "https://www.qfinhub.com/compare/compare-dividend-calculator-vs-stock-return",
+      "https://www.qfinhub.com/blog/cd-vs-savings-account-comparison-where-to-park-cash-in-2026",
+      "https://www.qfinhub.com/tools/investment-400k-18yr",
+      "https://www.qfinhub.com/calculators/closing-costs",
+      "https://www.qfinhub.com/loan-payment-table",
+      "https://www.qfinhub.com/blog/50-30-20-budget-rule-guide-simple-plan-that-works-in-2026"
+    ]
+  },
+  "blockers": [],
+  "status": "OK"
+}

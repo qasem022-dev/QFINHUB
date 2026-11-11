@@ -1,0 +1,218 @@
+#!/usr/bin/env python3
+"""
+QFINHUB live indexing audit.
+
+Inspects every URL in the live sitemap via the GSC URL Inspection API and
+buckets results by coverageState. Writes incrementally so progress survives
+interruption.
+
+Outputs:
+  .optimizer-data/indexing-audit-<DATE>.json   full per-URL results
+  .optimizer-data/indexing-audit-<DATE>-summary.json   bucket counts
+  /tmp/qfinhub-inspect-progress.txt            live progress
+
+Auth: reuses scripts/gsc-service-account-auth.py (service account, else OAuth).
+
+Usage:
+    python3 scripts/indexing-audit.py            # full run
+    python3 scripts/indexing-audit.py --resume   # skip URLs already done today
+"""
+
+import argparse
+import datetime
+import importlib.util
+import json
+import re
+import sys
+import time
+import urllib.parse
+import urllib.request
+import urllib.error
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / ".optimizer-data"
+SITE = "https://www.qfinhub.com/"
+PROGRESS = Path("/tmp/qfinhub-inspect-progress.txt")
+TODAY = datetime.date.today().isoformat()
+OUT = DATA / f"indexing-audit-{TODAY}.json"
+SUMMARY = DATA / f"indexing-audit-{TODAY}-summary.json"
+
+SLEEP = 1.0
+
+
+def load_auth():
+    spec = importlib.util.spec_from_file_location(
+        "gscauth", ROOT / "scripts" / "gsc-service-account-auth.py"
+    )
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def fetch_sitemap_urls():
+    req = urllib.request.Request(
+        "https://www.qfinhub.com/sitemap.xml",
+        headers={"User-Agent": "Mozilla/5.0 (compatible; qfinhub-audit/1.0)"},
+    )
+    with urllib.request.urlopen(req, timeout=45) as r:
+        xml = r.read().decode("utf-8", errors="replace")
+    urls = re.findall(r"<loc>\s*(.*?)\s*</loc>", xml)
+    return [u for u in dict.fromkeys(urls) if u.startswith("http")]
+
+
+def normalise(cs: str) -> str:
+    """Normalize curly quotes so substring matching is reliable."""
+    return (cs or "").replace("\u2018", "'").replace("\u2019", "'")
+
+
+def bucket(cs: str) -> str:
+    c = normalise(cs).lower()
+    if "submitted and indexed" in c:
+        return "indexed"
+    if "crawled - currently not indexed" in c:
+        return "crawled_not_indexed"
+    if "discovered - currently not indexed" in c:
+        return "discovered_not_indexed"
+    if "unknown to google" in c:
+        return "unknown_to_google"
+    if "noindex" in c:
+        return "noindex"
+    if "duplicate" in c and "canonical" in c:
+        return "duplicate_canonical"
+    if "alternate page with proper canonical" in c:
+        return "alternate_canonical"
+    if "not found" in c or "404" in c:
+        return "not_found"
+    if "redirect" in c:
+        return "redirect"
+    if "soft 404" in c:
+        return "soft_404"
+    return "other"
+
+
+def write_progress(done, total, indexed, current=""):
+    try:
+        PROGRESS.write_text(
+            f"{done}/{total} inspected | indexed={indexed} | {current[:80]}\n"
+        )
+    except OSError:
+        pass
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--resume", action="store_true")
+    ap.add_argument("--limit", type=int, default=0)
+    args = ap.parse_args()
+
+    auth = load_auth()
+
+    print("Fetching sitemap...", flush=True)
+    urls = fetch_sitemap_urls()
+    print(f"Sitemap: {len(urls)} URLs", flush=True)
+    if args.limit:
+        urls = urls[: args.limit]
+
+    results = {}
+    if args.resume and OUT.exists():
+        results = json.loads(OUT.read_text())
+        print(f"Resuming with {len(results)} existing results", flush=True)
+
+    todo = [u for u in urls if u not in results]
+    print(f"To inspect: {len(todo)}", flush=True)
+
+    indexed = sum(1 for r in results.values() if r.get("bucket") == "indexed")
+    t0 = time.time()
+
+    for i, url in enumerate(todo, 1):
+        token = auth.get_access_token()
+        payload = json.dumps(
+            {"inspectionUrl": url, "siteUrl": SITE, "languageCode": "en-US"}
+        ).encode()
+        req = urllib.request.Request(
+            "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.loads(r.read())
+            ir = d.get("inspectionResult", {}).get("indexStatusResult", {})
+            cs = ir.get("coverageState", "")
+            rec = {
+                "verdict": ir.get("verdict", ""),
+                "coverageState": cs,
+                "bucket": bucket(cs),
+                "indexingState": ir.get("indexingState", ""),
+                "robotsTxtState": ir.get("robotsTxtState", ""),
+                "pageFetchState": ir.get("pageFetchState", ""),
+                "lastCrawlTime": ir.get("lastCrawlTime", ""),
+                "googleCanonical": ir.get("googleCanonical", ""),
+                "userCanonical": ir.get("userCanonical", ""),
+                "inspectedAt": datetime.datetime.now().isoformat(timespec="seconds"),
+                "success": True,
+            }
+        except urllib.error.HTTPError as e:
+            rec = {
+                "success": False,
+                "error": f"HTTP {e.code}: {e.read().decode(errors='replace')[:150]}",
+                "bucket": "error",
+            }
+        except Exception as e:
+            rec = {"success": False, "error": f"{type(e).__name__}: {e}", "bucket": "error"}
+
+        results[url] = rec
+        if rec.get("bucket") == "indexed":
+            indexed += 1
+
+        write_progress(len(results), len(urls), indexed, url)
+
+        if i % 10 == 0 or i == len(todo):
+            SUMMARY.parent.mkdir(parents=True, exist_ok=True)
+            OUT.write_text(json.dumps(results, indent=2))
+            elapsed = time.time() - t0
+            rate = elapsed / i if i else 0
+            remaining = (len(todo) - i) * rate
+            print(
+                f"  {len(results)}/{len(urls)} | indexed={indexed} | "
+                f"{rate:.1f}s/url | ~{remaining/60:.0f}min left",
+                flush=True,
+            )
+
+        time.sleep(SLEEP)
+
+    OUT.write_text(json.dumps(results, indent=2))
+
+    buckets = {}
+    for u, r in results.items():
+        buckets.setdefault(r.get("bucket", "other"), []).append(u)
+
+    summary = {
+        "generatedAt": datetime.datetime.now().isoformat(timespec="seconds"),
+        "site": SITE,
+        "totalUrls": len(results),
+        "bucketCounts": {k: len(v) for k, v in sorted(buckets.items(), key=lambda x: -len(x[1]))},
+        "buckets": {k: v for k, v in buckets.items()},
+        "elapsedMinutes": round((time.time() - t0) / 60, 1),
+    }
+    SUMMARY.write_text(json.dumps(summary, indent=2))
+
+    print("\n=== SUMMARY ===", flush=True)
+    for k, v in summary["bucketCounts"].items():
+        print(f"  {k:26} {v}", flush=True)
+    print(f"\nSaved: {OUT}", flush=True)
+    print(f"Saved: {SUMMARY}", flush=True)
+
+    errors = summary["bucketCounts"].get("error", 0)
+    if errors > len(results) * 0.1:
+        print(f"WARNING: {errors} errors — check auth/rate limits", flush=True)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

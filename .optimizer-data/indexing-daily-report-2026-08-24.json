@@ -1,0 +1,52 @@
+{
+  "date": "2026-08-24",
+  "phase": "Phase 38 consolidated daily run",
+  "queue_state": {
+    "indexed_pass_count": 225,
+    "discovered_not_indexed_count": 279,
+    "unknown_to_google_count": 25,
+    "uninspected_count": 1,
+    "inspected_count": 303,
+    "sitemap_scoped_index_rate_pct": 42.53
+  },
+  "morning_diagnosis": {
+    "sample_size": 25,
+    "wall_clock_seconds": 26,
+    "category_counts": {
+      "DISCOVERED": 19,
+      "UNKNOWN": 4,
+      "INDEXED": 2
+    },
+    "newly_indexed_count": 2,
+    "newly_indexed_urls": [
+      "https://www.qfinhub.com/blog/how-to-calculate-your-net-worth",
+      "https://www.qfinhub.com/calculators/portfolio-allocator"
+    ],
+    "unknown_to_discovered_count": 0,
+    "regressions_count": 0,
+    "note": "Pitfall #20 line-278 traceback (non-fatal, JSON saved)"
+  },
+  "submissions_today": {
+    "count": 13,
+    "all_status": "REQUESTED",
+    "result_text": "12/13 requested (display); log shows 13/13",
+    "first": "calculators/roi-calculator",
+    "last": "calculators/debt-snowball"
+  },
+  "gsc_7d_metrics": {
+    "impressions": 2553,
+    "clicks": 1,
+    "ctr_pct": 0.0,
+    "avg_position": 72.2,
+    "pages_with_impressions": 106,
+    "query_count": 500,
+    "query_impressions": 756,
+    "query_page_rows": 500
+  },
+  "issues_blockers": [
+    "Pitfall #20 (gsc-morning-diagnosis.py line 278 crash) \u2014 5 days unfixed, non-fatal",
+    "Pitfall #22 (mixed date format) \u2014 mitigated by parse-log-date helper",
+    "Pool exhaustion: indexed holds at 225, DISCOVERED 279/279",
+    "Phase 39 humanization = primary growth lever now"
+  ]
+}

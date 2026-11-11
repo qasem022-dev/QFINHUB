@@ -60,8 +60,8 @@ export default function WeddingBudgetCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="pie" data={categoryData} xKey="name" yKey="value" title="Spending by Category" />
-      <CalculatorChart type="bar" data={budgetVsActual} xKey="name" yKey="value" title="Budget vs Actual" />
+      <CalculatorChart format="currency" type="pie" data={categoryData} xKey="name" yKey="value" title="Spending by Category" />
+      <CalculatorChart format="currency" type="bar" data={budgetVsActual} xKey="name" yKey="value" title="Budget vs Actual" />
       <CalculatorInput input={{ id: "budget", label: "Total Budget", type: "number", defaultValue: 30000, suffix: "$", min: 0, tooltip: "Your total wedding budget." }} value={budget} onChange={setBudget} />
       <CalculatorInput input={{ id: "venue", label: "Venue", type: "number", defaultValue: 9000, suffix: "$", min: 0, tooltip: "Cost of the ceremony and reception venue." }} value={venue} onChange={setVenue} />
       <CalculatorInput input={{ id: "catering", label: "Catering", type: "number", defaultValue: 7500, suffix: "$", min: 0, tooltip: "Food, drinks, and service costs." }} value={catering} onChange={setCatering} />

@@ -12,6 +12,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -81,7 +85,7 @@ export default function MortgageCalculator() {
         ]}
         url={typeof window !== "undefined" ? window.location.href : `https://www.qfinhub.com/calculators/mortgage-calculator`}
       />
-      <CalculatorChart type="pie" data={pieData} xKey="name" yKey="value" title="Annual Payment Breakdown" />
+      <CalculatorChart format="currency" type="pie" data={pieData} xKey="name" yKey="value" title="Annual Payment Breakdown" />
       <CalculatorInput input={{ id: "homePrice", label: "Home Price", type: "number", defaultValue: 350000, suffix: "$", min: 0, tooltip: "The purchase price of the home." }} value={homePrice} onChange={setHomePrice} />
       <CalculatorInput input={{ id: "downPct", label: "Down Payment", type: "slider", defaultValue: 20, suffix: "%", min: 0, max: 100, step: 1, tooltip: "Percentage of home price paid upfront. Below 20% requires PMI." }} value={downPct} onChange={setDownPct} />
       <CalculatorInput input={{ id: "rate", label: "Interest Rate", type: "number", defaultValue: 6.5, suffix: "%", min: 0, max: 20, step: 0.1, tooltip: "Annual mortgage interest rate." }} value={rate} onChange={setRate} />

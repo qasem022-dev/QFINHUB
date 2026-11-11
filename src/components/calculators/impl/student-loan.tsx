@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -79,7 +83,7 @@ export default function StudentLoanCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="label" yKey="Amount" title="Loan vs Interest Breakdown" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="label" yKey="Amount" title="Loan vs Interest Breakdown" />
       <CalculatorInput input={{ id: "totalLoan", label: "Total Loan Amount", type: "number", defaultValue: 35000, suffix: "$", min: 0, tooltip: "Your total student loan balance across all loans." }} value={totalLoan} onChange={setTotalLoan} />
       <CalculatorInput input={{ id: "rate", label: "Annual Interest Rate", type: "number", defaultValue: 5.5, suffix: "%", min: 0, max: 20, step: 0.1, tooltip: "Weighted average interest rate across all student loans." }} value={rate} onChange={setRate} />
       <PeriodInput id="standardTerm" label="Standard Term" value={standardTerm} unit={standardTermUnit} onValueChange={setStandardTerm} onUnitChange={setStandardTermUnit} min={5} max={30} />

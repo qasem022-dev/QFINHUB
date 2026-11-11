@@ -11,6 +11,10 @@ function calcMonthlyPayment(principal: number, annualRate: number, termMonths: n
   const t = Math.max(1, termMonths ?? 1);
   if (r === 0) return p / t;
   const mr = r / 100 / 12;
+  // 0% APR makes the amortisation formula degenerate to 0/0 (NaN), which broke
+  // every loan calculator at a 0% rate. With no interest the payment is simply
+  // the principal spread evenly across the term.
+  if (mr === 0) return p / t;
   return (p * mr * Math.pow(1 + mr, t)) / (Math.pow(1 + mr, t) - 1);
 }
 
@@ -66,7 +70,7 @@ export default function LoanCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="area" data={accurateChartData} xKey="month" yKey={["Principal Paid", "Interest Paid"]} title="Amortization Breakdown" />
+      <CalculatorChart format="currency" type="area" data={accurateChartData} xKey="month" yKey={["Principal Paid", "Interest Paid"]} title="Amortization Breakdown" />
       <CalculatorInput input={{ id: "loanAmount", label: "Loan Amount", type: "number", defaultValue: 25000, suffix: "$", min: 0, tooltip: "The total amount you plan to borrow." }} value={loanAmount} onChange={setLoanAmount} />
       <CalculatorInput input={{ id: "rate", label: "Annual Interest Rate", type: "number", defaultValue: 6, suffix: "%", min: 0, max: 30, step: 0.1, tooltip: "The annual interest rate for the loan." }} value={rate} onChange={setRate} />
       <PeriodInput id="term" label="Loan Term" value={term} unit={termUnit} onValueChange={setTerm} onUnitChange={setTermUnit} min={1} max={30} />

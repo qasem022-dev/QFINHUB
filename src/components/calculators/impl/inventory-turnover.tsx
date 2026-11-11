@@ -47,7 +47,7 @@ export default function InventoryTurnoverCalculator() {
         </div>
       }
     >
-      <CalculatorChart type="bar" data={chartData} xKey="name" yKey="value" title="Inventory Turnover vs Benchmark" />
+      <CalculatorChart format="currency" type="bar" data={chartData} xKey="name" yKey="value" title="Inventory Turnover vs Benchmark" />
       <CalculatorInput input={{ id: "beginningInventory", label: "Beginning Inventory", type: "number", defaultValue: 200000, suffix: "$", min: 0, step: 1000, tooltip: "Inventory value at the start of the period." }} value={beginningInventory} onChange={setBeginningInventory} />
       <CalculatorInput input={{ id: "endingInventory", label: "Ending Inventory", type: "number", defaultValue: 250000, suffix: "$", min: 0, step: 1000, tooltip: "Inventory value at the end of the period." }} value={endingInventory} onChange={setEndingInventory} />
       <CalculatorInput input={{ id: "cogs", label: "Cost of Goods Sold", type: "number", defaultValue: 1200000, suffix: "$", min: 0, step: 1000, tooltip: "Total cost of goods sold during the period." }} value={cogs} onChange={setCogs} />
