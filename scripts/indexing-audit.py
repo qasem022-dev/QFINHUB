@@ -133,7 +133,11 @@ def main():
         results = json.loads(OUT.read_text())
         print(f"Resuming with {len(results)} existing results", flush=True)
 
-    todo = [u for u in urls if u not in results]
+    todo = [
+        u
+        for u in urls
+        if u not in results or results.get(u, {}).get("bucket") == "error"
+    ]
     print(f"To inspect: {len(todo)}", flush=True)
 
     indexed = sum(1 for r in results.values() if r.get("bucket") == "indexed")
