@@ -104,6 +104,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument(
+        "--workers",
+        type=int,
+        default=3,
+        help="Concurrent inspections (default 3; keeps within API quota)",
+    )
     args = ap.parse_args()
 
     # Single-instance lock. Two concurrent runs race on the output JSON and
@@ -145,10 +151,20 @@ def main():
     indexed = sum(1 for r in results.values() if r.get("bucket") == "indexed")
     t0 = time.time()
 
-    for i, url in enumerate(todo, 1):
+    # Concurrent inspection. Sequential runs are ~7.5s/URL, so a 400-URL backlog
+    # takes ~50 minutes and gets killed by session cleanup partway through. Three
+    # workers stays well inside the URL Inspection API quota while cutting wall
+    # time by roughly 2.5x, and --resume makes any interruption survivable.
+    import threading
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    state_lock = threading.Lock()
+    counter = {"done": 0, "indexed": indexed}
+
+    def inspect_one(target_url: str) -> tuple[str, dict]:
         token = auth.get_access_token()
         payload = json.dumps(
-            {"inspectionUrl": url, "siteUrl": SITE, "languageCode": "en-US"}
+            {"inspectionUrl": target_url, "siteUrl": SITE, "languageCode": "en-US"}
         ).encode()
         req = urllib.request.Request(
             "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
@@ -163,7 +179,7 @@ def main():
                 d = json.loads(r.read())
             ir = d.get("inspectionResult", {}).get("indexStatusResult", {})
             cs = ir.get("coverageState", "")
-            rec = {
+            return target_url, {
                 "verdict": ir.get("verdict", ""),
                 "coverageState": cs,
                 "bucket": bucket(cs),
@@ -177,33 +193,41 @@ def main():
                 "success": True,
             }
         except urllib.error.HTTPError as e:
-            rec = {
+            return target_url, {
                 "success": False,
                 "error": f"HTTP {e.code}: {e.read().decode(errors='replace')[:150]}",
                 "bucket": "error",
             }
         except Exception as e:
-            rec = {"success": False, "error": f"{type(e).__name__}: {e}", "bucket": "error"}
+            return target_url, {
+                "success": False,
+                "error": f"{type(e).__name__}: {e}",
+                "bucket": "error",
+            }
 
-        results[url] = rec
-        if rec.get("bucket") == "indexed":
-            indexed += 1
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
+        futures = {pool.submit(inspect_one, u): u for u in todo}
+        for fut in as_completed(futures):
+            url, rec = fut.result()
+            with state_lock:
+                results[url] = rec
+                counter["done"] += 1
+                if rec.get("bucket") == "indexed":
+                    counter["indexed"] += 1
 
-        write_progress(len(results), len(urls), indexed, url)
+                write_progress(len(results), len(urls), counter["indexed"], url)
 
-        if i % 10 == 0 or i == len(todo):
-            SUMMARY.parent.mkdir(parents=True, exist_ok=True)
-            OUT.write_text(json.dumps(results, indent=2))
-            elapsed = time.time() - t0
-            rate = elapsed / i if i else 0
-            remaining = (len(todo) - i) * rate
-            print(
-                f"  {len(results)}/{len(urls)} | indexed={indexed} | "
-                f"{rate:.1f}s/url | ~{remaining/60:.0f}min left",
-                flush=True,
-            )
-
-        time.sleep(SLEEP)
+                if counter["done"] % 25 == 0 or counter["done"] == len(todo):
+                    SUMMARY.parent.mkdir(parents=True, exist_ok=True)
+                    OUT.write_text(json.dumps(results, indent=2))
+                    elapsed = time.time() - t0
+                    rate = elapsed / counter["done"] if counter["done"] else 0
+                    remaining = (len(todo) - counter["done"]) * rate
+                    print(
+                        f"  {len(results)}/{len(urls)} | indexed={counter['indexed']} | "
+                        f"{rate:.1f}s/url | ~{remaining/60:.0f}min left",
+                        flush=True,
+                    )
 
     OUT.write_text(json.dumps(results, indent=2))
 
