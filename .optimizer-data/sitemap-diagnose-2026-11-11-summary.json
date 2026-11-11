@@ -1,126 +1,74 @@
 {
-  "generatedAt": "2026-11-11T12:00:14",
-  "totalUrls": 405,
+  "generatedAt": "2026-11-11T12:22:36",
+  "totalUrls": 311,
   "statusCounts": {
-    "200": 405
+    "200": 311
   },
-  "problemCounts": {},
-  "problems": {},
+  "problemCounts": {
+    "canonical_mismatch": 15
+  },
+  "problems": {
+    "canonical_mismatch": [
+      "https://www.qfinhub.com/tools/tax-40k-single",
+      "https://www.qfinhub.com/tools/tax-80k-married-separate",
+      "https://www.qfinhub.com/tools/tax-150k-single",
+      "https://www.qfinhub.com/tools/tax-300k-head-of-household",
+      "https://www.qfinhub.com/tools/tax-110k-single",
+      "https://www.qfinhub.com/tools/tax-750k-single",
+      "https://www.qfinhub.com/tools/tax-5M-married-joint",
+      "https://www.qfinhub.com/tools/tax-400k-head-of-household",
+      "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "https://www.qfinhub.com/tools/budget-65k-zero-based",
+      "https://www.qfinhub.com/tools/net-worth-1M-milestone",
+      "https://www.qfinhub.com/tools/fi-15k-lean-extreme",
+      "https://www.qfinhub.com/tools/dti-55k-car-buyer",
+      "https://www.qfinhub.com/tools/fire-35k-geo-arb",
+      "https://www.qfinhub.com/tools/fire-25k-van-life"
+    ]
+  },
   "duplicateTitles": {
+    "Budget Planner - Free Online Calculator | QFINHUB | QFINHUB": [
+      "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "https://www.qfinhub.com/tools/budget-65k-zero-based"
+    ],
     "Net Worth Calculator - Free Online Calculator | QFINHUB | QFINHUB": [
-      "https://www.qfinhub.com/tools/net-worth-50s-prep",
-      "https://www.qfinhub.com/tools/net-worth-30s-growth",
-      "https://www.qfinhub.com/tools/net-worth-40s-peak",
-      "https://www.qfinhub.com/tools/net-worth-20s-starter",
-      "https://www.qfinhub.com/tools/net-worth-60s-retire",
-      "https://www.qfinhub.com/tools/net-worth-100k-builder",
+      "https://www.qfinhub.com/tools/net-worth-1M-milestone",
       "https://www.qfinhub.com/tools/net-worth-debt-heavy",
       "https://www.qfinhub.com/tools/net-worth-real-estate",
-      "https://www.qfinhub.com/tools/net-worth-500k-milestone",
-      "https://www.qfinhub.com/tools/net-worth-1M-milestone",
       "https://www.qfinhub.com/tools/net-worth-minimalist",
-      "https://www.qfinhub.com/tools/net-worth-fire-track",
       "https://www.qfinhub.com/tools/net-worth-high-income",
-      "https://www.qfinhub.com/tools/net-worth-entrepreneur",
-      "https://www.qfinhub.com/tools/net-worth-empty-nester"
-    ],
-    "Budget Planner - Free Online Calculator | QFINHUB | QFINHUB": [
-      "https://www.qfinhub.com/tools/budget-65k-zero-based",
-      "https://www.qfinhub.com/tools/budget-40k-zero-based"
-    ],
-    "Debt-to-Income Calculator - Free Online Calculator | QFINHUB | QFINHUB": [
-      "https://www.qfinhub.com/tools/dti-40k-high",
-      "https://www.qfinhub.com/tools/dti-85k-first-home",
-      "https://www.qfinhub.com/tools/dti-120k-student-loans",
-      "https://www.qfinhub.com/tools/dti-200k-investor",
-      "https://www.qfinhub.com/tools/dti-35k-credit-repair",
-      "https://www.qfinhub.com/tools/dti-55k-car-buyer",
-      "https://www.qfinhub.com/tools/dti-90k-two-cars",
-      "https://www.qfinhub.com/tools/dti-65k-medical",
-      "https://www.qfinhub.com/tools/dti-45k-grad",
-      "https://www.qfinhub.com/tools/dti-250k-luxury"
+      "https://www.qfinhub.com/tools/net-worth-empty-nester",
+      "https://www.qfinhub.com/tools/net-worth-fire-track",
+      "https://www.qfinhub.com/tools/net-worth-entrepreneur"
     ],
     "FIRE Calculator - Free Online Calculator | QFINHUB | QFINHUB": [
-      "https://www.qfinhub.com/tools/fire-30k-extreme",
-      "https://www.qfinhub.com/tools/fire-45k-barista",
       "https://www.qfinhub.com/tools/fire-35k-geo-arb",
-      "https://www.qfinhub.com/tools/fire-55k-slow",
-      "https://www.qfinhub.com/tools/fire-90k-late-start",
-      "https://www.qfinhub.com/tools/fire-25k-van-life",
-      "https://www.qfinhub.com/tools/fire-40k-military",
-      "https://www.qfinhub.com/tools/fire-50k-dual-income"
-    ],
-    "Financial Independence Calculator - Free Online Calculator | QFINHUB | QFINHUB": [
-      "https://www.qfinhub.com/tools/fi-35k-geo-arb",
-      "https://www.qfinhub.com/tools/fi-25k-minimal",
-      "https://www.qfinhub.com/tools/fi-90k-executive",
-      "https://www.qfinhub.com/tools/fi-45k-coast",
-      "https://www.qfinhub.com/tools/fi-15k-lean-extreme"
+      "https://www.qfinhub.com/tools/fire-25k-van-life"
     ]
   },
-  "duplicateTitleCount": 5,
+  "duplicateTitleCount": 3,
   "duplicateDescriptions": {
+    "Use our free Budget Planner to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed \u2014 try it now.": [
+      "https://www.qfinhub.com/tools/budget-40k-zero-based",
+      "https://www.qfinhub.com/tools/budget-65k-zero-based"
+    ],
     "Use our free Net Worth Calculator to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed \u2014 try it now.": [
-      "https://www.qfinhub.com/tools/net-worth-50s-prep",
-      "https://www.qfinhub.com/tools/net-worth-30s-growth",
-      "https://www.qfinhub.com/tools/net-worth-40s-peak",
-      "https://www.qfinhub.com/tools/net-worth-20s-starter",
-      "https://www.qfinhub.com/tools/net-worth-60s-retire",
-      "https://www.qfinhub.com/tools/net-worth-100k-builder",
+      "https://www.qfinhub.com/tools/net-worth-1M-milestone",
       "https://www.qfinhub.com/tools/net-worth-debt-heavy",
       "https://www.qfinhub.com/tools/net-worth-real-estate",
-      "https://www.qfinhub.com/tools/net-worth-500k-milestone",
-      "https://www.qfinhub.com/tools/net-worth-1M-milestone",
       "https://www.qfinhub.com/tools/net-worth-minimalist",
-      "https://www.qfinhub.com/tools/net-worth-fire-track",
       "https://www.qfinhub.com/tools/net-worth-high-income",
-      "https://www.qfinhub.com/tools/net-worth-entrepreneur",
-      "https://www.qfinhub.com/tools/net-worth-empty-nester"
-    ],
-    "Use our free Budget Planner to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed \u2014 try it now.": [
-      "https://www.qfinhub.com/tools/budget-65k-zero-based",
-      "https://www.qfinhub.com/tools/budget-40k-zero-based"
-    ],
-    "Use our free Debt-to-Income Calculator to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed \u2014 try it now.": [
-      "https://www.qfinhub.com/tools/dti-40k-high",
-      "https://www.qfinhub.com/tools/dti-85k-first-home",
-      "https://www.qfinhub.com/tools/dti-120k-student-loans",
-      "https://www.qfinhub.com/tools/dti-200k-investor",
-      "https://www.qfinhub.com/tools/dti-35k-credit-repair",
-      "https://www.qfinhub.com/tools/dti-55k-car-buyer",
-      "https://www.qfinhub.com/tools/dti-90k-two-cars",
-      "https://www.qfinhub.com/tools/dti-65k-medical",
-      "https://www.qfinhub.com/tools/dti-45k-grad",
-      "https://www.qfinhub.com/tools/dti-250k-luxury"
+      "https://www.qfinhub.com/tools/net-worth-empty-nester",
+      "https://www.qfinhub.com/tools/net-worth-fire-track",
+      "https://www.qfinhub.com/tools/net-worth-entrepreneur"
     ],
     "Use our free FIRE Calculator to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed \u2014 try it now.": [
-      "https://www.qfinhub.com/tools/fire-30k-extreme",
-      "https://www.qfinhub.com/tools/fire-45k-barista",
       "https://www.qfinhub.com/tools/fire-35k-geo-arb",
-      "https://www.qfinhub.com/tools/fire-55k-slow",
-      "https://www.qfinhub.com/tools/fire-90k-late-start",
-      "https://www.qfinhub.com/tools/fire-25k-van-life",
-      "https://www.qfinhub.com/tools/fire-40k-military",
-      "https://www.qfinhub.com/tools/fire-50k-dual-income"
-    ],
-    "Use our free Financial Independence Calculator to get instant, accurate results. See your exact numbers with detailed breakdown, formula, and expert tips. No signup needed \u2014 try it now.": [
-      "https://www.qfinhub.com/tools/fi-35k-geo-arb",
-      "https://www.qfinhub.com/tools/fi-25k-minimal",
-      "https://www.qfinhub.com/tools/fi-90k-executive",
-      "https://www.qfinhub.com/tools/fi-45k-coast",
-      "https://www.qfinhub.com/tools/fi-15k-lean-extreme"
+      "https://www.qfinhub.com/tools/fire-25k-van-life"
     ]
   },
-  "duplicateDescriptionCount": 5,
+  "duplicateDescriptionCount": 3,
   "bySection": {
-    "contact": {
-      "count": 1,
-      "thin": 0,
-      "noindex": 0,
-      "not200": 0,
-      "noJsonLd": 0,
-      "avgWords": 1063
-    },
     "privacy": {
       "count": 1,
       "thin": 0,
@@ -129,21 +77,13 @@
       "noJsonLd": 0,
       "avgWords": 1738
     },
-    "about": {
+    "contact": {
       "count": 1,
       "thin": 0,
       "noindex": 0,
       "not200": 0,
       "noJsonLd": 0,
-      "avgWords": 1316
-    },
-    "calculators": {
-      "count": 129,
-      "thin": 0,
-      "noindex": 0,
-      "not200": 0,
-      "noJsonLd": 0,
-      "avgWords": 1249
+      "avgWords": 1063
     },
     "terms": {
       "count": 1,
@@ -152,6 +92,14 @@
       "not200": 0,
       "noJsonLd": 0,
       "avgWords": 1534
+    },
+    "about": {
+      "count": 1,
+      "thin": 0,
+      "noindex": 0,
+      "not200": 0,
+      "noJsonLd": 0,
+      "avgWords": 1316
     },
     "compare": {
       "count": 36,
@@ -169,14 +117,6 @@
       "noJsonLd": 0,
       "avgWords": 1568
     },
-    "(home)": {
-      "count": 1,
-      "thin": 0,
-      "noindex": 0,
-      "not200": 0,
-      "noJsonLd": 0,
-      "avgWords": 1165
-    },
     "methodology": {
       "count": 1,
       "thin": 0,
@@ -184,6 +124,14 @@
       "not200": 0,
       "noJsonLd": 0,
       "avgWords": 1362
+    },
+    "(home)": {
+      "count": 1,
+      "thin": 0,
+      "noindex": 0,
+      "not200": 0,
+      "noJsonLd": 0,
+      "avgWords": 1165
     },
     "disclaimer": {
       "count": 1,
@@ -193,14 +141,6 @@
       "noJsonLd": 0,
       "avgWords": 1216
     },
-    "loan-payment-table": {
-      "count": 1,
-      "thin": 0,
-      "noindex": 0,
-      "not200": 0,
-      "noJsonLd": 0,
-      "avgWords": 1224
-    },
     "editorial-policy": {
       "count": 1,
       "thin": 0,
@@ -209,13 +149,13 @@
       "noJsonLd": 0,
       "avgWords": 1353
     },
-    "widgets": {
-      "count": 2,
+    "loan-payment-table": {
+      "count": 1,
       "thin": 0,
       "noindex": 0,
       "not200": 0,
       "noJsonLd": 0,
-      "avgWords": 1098
+      "avgWords": 1224
     },
     "data": {
       "count": 1,
@@ -225,6 +165,14 @@
       "noJsonLd": 0,
       "avgWords": 1005
     },
+    "widgets": {
+      "count": 2,
+      "thin": 0,
+      "noindex": 0,
+      "not200": 0,
+      "noJsonLd": 0,
+      "avgWords": 1098
+    },
     "loan-scenarios": {
       "count": 4,
       "thin": 0,
@@ -233,13 +181,21 @@
       "noJsonLd": 0,
       "avgWords": 832
     },
-    "tools": {
-      "count": 118,
+    "calculators": {
+      "count": 129,
       "thin": 0,
       "noindex": 0,
       "not200": 0,
       "noJsonLd": 0,
-      "avgWords": 1049
+      "avgWords": 1249
+    },
+    "tools": {
+      "count": 24,
+      "thin": 0,
+      "noindex": 0,
+      "not200": 0,
+      "noJsonLd": 0,
+      "avgWords": 924
     },
     "guides": {
       "count": 30,

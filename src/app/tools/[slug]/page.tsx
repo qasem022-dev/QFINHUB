@@ -95,16 +95,19 @@ export async function generateMetadata({ params }: ToolsPageProps) {
   // and sitemap.ts can never disagree about which variants are noindexed.
   const isFormulaVariant = isFormulaVariantSlug(slug);
 
-  // Determine canonical: formula variants → parent calculator
-  const parentCalcSlug = variant.calculatorId;
-  const canonicalUrl = isFormulaVariant && !hasGscImpressions
-    ? `https://www.qfinhub.com/calculators/${parentCalcSlug}`
-    : `https://www.qfinhub.com/tools/${slug}`;
-
   // Determine indexability: keep only if GSC impressions or clean variant
   // Uses the SAME helper as sitemap.ts (including the override allowlist of
   // variants Google has already indexed), so page and sitemap cannot diverge.
   const shouldIndex = isToolVariantIndexable(slug);
+
+  // Canonical MUST agree with robots. A page that says `index, follow` while
+  // pointing its canonical at the parent calculator is self-contradicting: Google
+  // follows the canonical and never indexes the page as its own URL. Only
+  // noindexed variants consolidate into the parent.
+  const parentCalcSlug = variant.calculatorId;
+  const canonicalUrl = shouldIndex
+    ? `https://www.qfinhub.com/tools/${slug}`
+    : `https://www.qfinhub.com/calculators/${parentCalcSlug}`;
 
   return {
     title: variant.meta.title,
