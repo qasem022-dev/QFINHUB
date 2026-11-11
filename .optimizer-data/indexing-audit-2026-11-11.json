@@ -53,15 +53,15 @@
   },
   "https://www.qfinhub.com/about": {
     "verdict": "NEUTRAL",
-    "coverageState": "Discovered - currently not indexed",
-    "bucket": "discovered_not_indexed",
+    "coverageState": "URL is unknown to Google",
+    "bucket": "unknown_to_google",
     "indexingState": "INDEXING_STATE_UNSPECIFIED",
     "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
     "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
     "lastCrawlTime": "",
     "googleCanonical": "",
     "userCanonical": "",
-    "inspectedAt": "2026-11-11T11:44:06",
+    "inspectedAt": "2026-11-11T11:44:01",
     "success": true
   },
   "https://www.qfinhub.com/contact": {
@@ -308,7 +308,7 @@
     "lastCrawlTime": "2026-10-06T19:39:08Z",
     "googleCanonical": "https://www.qfinhub.com/calculators/retirement-planning",
     "userCanonical": "https://www.qfinhub.com/calculators/retirement-planning",
-    "inspectedAt": "2026-11-11T11:44:13",
+    "inspectedAt": "2026-11-11T11:44:08",
     "success": true
   },
   "https://www.qfinhub.com/calculators/401k-calculator": {
@@ -321,7 +321,7 @@
     "lastCrawlTime": "2026-11-10T02:53:56Z",
     "googleCanonical": "https://www.qfinhub.com/calculators/401k-calculator",
     "userCanonical": "https://www.qfinhub.com/calculators/401k-calculator",
-    "inspectedAt": "2026-11-11T11:44:21",
+    "inspectedAt": "2026-11-11T11:44:16",
     "success": true
   },
   "https://www.qfinhub.com/calculators/tax-calculator": {
@@ -360,7 +360,7 @@
     "lastCrawlTime": "2026-10-25T14:12:02Z",
     "googleCanonical": "https://www.qfinhub.com/calculators/loan-calculator",
     "userCanonical": "https://www.qfinhub.com/calculators/loan-calculator",
-    "inspectedAt": "2026-11-11T11:44:28",
+    "inspectedAt": "2026-11-11T11:44:23",
     "success": true
   },
   "https://www.qfinhub.com/calculators/amortization-schedule": {
@@ -386,7 +386,7 @@
     "lastCrawlTime": "2026-10-25T00:23:54Z",
     "googleCanonical": "https://www.qfinhub.com/calculators/mortgage-calculator",
     "userCanonical": "https://www.qfinhub.com/calculators/mortgage-calculator",
-    "inspectedAt": "2026-11-11T11:44:36",
+    "inspectedAt": "2026-11-11T11:44:31",
     "success": true
   },
   "https://www.qfinhub.com/calculators/mortgage-affordability": {
@@ -399,7 +399,7 @@
     "lastCrawlTime": "2026-10-27T12:13:53Z",
     "googleCanonical": "https://www.qfinhub.com/calculators/mortgage-affordability",
     "userCanonical": "https://www.qfinhub.com/calculators/mortgage-affordability",
-    "inspectedAt": "2026-11-11T11:44:43",
+    "inspectedAt": "2026-11-11T11:44:38",
     "success": true
   },
   "https://www.qfinhub.com/calculators/roi-calculator": {
@@ -455,9 +455,17 @@
     "success": true
   },
   "https://www.qfinhub.com/calculators/savings-goal": {
-    "success": false,
-    "error": "TimeoutError: The read operation timed out",
-    "bucket": "error"
+    "verdict": "NEUTRAL",
+    "coverageState": "Crawled - currently not indexed",
+    "bucket": "crawled_not_indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-07-24T15:22:31Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/savings-goal",
+    "userCanonical": "https://www.qfinhub.com/calculators/savings-goal",
+    "inspectedAt": "2026-11-11T11:44:46",
+    "success": true
   },
   "https://www.qfinhub.com/calculators/inflation-calculator": {
     "verdict": "NEUTRAL",
@@ -837,24 +845,56 @@
     "success": true
   },
   "https://www.qfinhub.com/calculators/portfolio-allocator": {
-    "success": false,
-    "error": "TimeoutError: The read operation timed out",
-    "bucket": "error"
+    "verdict": "NEUTRAL",
+    "coverageState": "Crawled - currently not indexed",
+    "bucket": "crawled_not_indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-08-18T15:04:42Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/portfolio-allocator",
+    "userCanonical": "https://www.qfinhub.com/calculators/portfolio-allocator",
+    "inspectedAt": "2026-11-11T11:44:53",
+    "success": true
   },
   "https://www.qfinhub.com/calculators/risk-reward": {
-    "success": false,
-    "error": "TimeoutError: The read operation timed out",
-    "bucket": "error"
+    "verdict": "NEUTRAL",
+    "coverageState": "Crawled - currently not indexed",
+    "bucket": "crawled_not_indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-08-28T15:06:29Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/risk-reward",
+    "userCanonical": "https://www.qfinhub.com/calculators/risk-reward",
+    "inspectedAt": "2026-11-11T11:45:01",
+    "success": true
   },
   "https://www.qfinhub.com/calculators/position-sizing": {
-    "success": false,
-    "error": "TimeoutError: The read operation timed out",
-    "bucket": "error"
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "bucket": "discovered_not_indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:45:08",
+    "success": true
   },
   "https://www.qfinhub.com/calculators/option-profit": {
-    "success": false,
-    "error": "TimeoutError: The read operation timed out",
-    "bucket": "error"
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "bucket": "discovered_not_indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:45:16",
+    "success": true
   },
   "https://www.qfinhub.com/calculators/bond-yield": {
     "verdict": "NEUTRAL",
@@ -1403,9 +1443,17 @@
     "success": true
   },
   "https://www.qfinhub.com/calculators/inventory-turnover": {
-    "success": false,
-    "error": "TimeoutError: The read operation timed out",
-    "bucket": "error"
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "bucket": "indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-10-24T14:50:05Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/inventory-turnover",
+    "userCanonical": "https://www.qfinhub.com/calculators/inventory-turnover",
+    "inspectedAt": "2026-11-11T11:45:23",
+    "success": true
   },
   "https://www.qfinhub.com/calculators/customer-acquisition-cost": {
     "verdict": "NEUTRAL",
@@ -1639,6 +1687,110 @@
     "googleCanonical": "https://www.qfinhub.com/calculators/percentage-calculator",
     "userCanonical": "https://www.qfinhub.com/calculators/percentage-calculator",
     "inspectedAt": "2026-11-11T11:43:10",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/bmi-calculator": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered - currently not indexed",
+    "bucket": "discovered_not_indexed",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:45:31",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/calorie-calculator": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Crawled - currently not indexed",
+    "bucket": "crawled_not_indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-08-25T11:48:57Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/calorie-calculator",
+    "userCanonical": "https://www.qfinhub.com/calculators/calorie-calculator",
+    "inspectedAt": "2026-11-11T11:45:38",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/date-difference": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "bucket": "unknown_to_google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:45:45",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/age-calculator": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "bucket": "unknown_to_google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:45:53",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/time-value-of-money": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "bucket": "unknown_to_google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:46:00",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/rule-of-72": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "bucket": "unknown_to_google",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "lastCrawlTime": "",
+    "googleCanonical": "",
+    "userCanonical": "",
+    "inspectedAt": "2026-11-11T11:46:08",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/fraction-calculator": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Crawled - currently not indexed",
+    "bucket": "crawled_not_indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-08-03T15:03:04Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/fraction-calculator",
+    "userCanonical": "https://www.qfinhub.com/calculators/fraction-calculator",
+    "inspectedAt": "2026-11-11T11:46:16",
+    "success": true
+  },
+  "https://www.qfinhub.com/calculators/unit-converter": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Crawled - currently not indexed",
+    "bucket": "crawled_not_indexed",
+    "indexingState": "INDEXING_ALLOWED",
+    "robotsTxtState": "ALLOWED",
+    "pageFetchState": "SUCCESSFUL",
+    "lastCrawlTime": "2026-08-21T07:27:06Z",
+    "googleCanonical": "https://www.qfinhub.com/calculators/unit-converter",
+    "userCanonical": "https://www.qfinhub.com/calculators/unit-converter",
+    "inspectedAt": "2026-11-11T11:46:23",
     "success": true
   }
 }

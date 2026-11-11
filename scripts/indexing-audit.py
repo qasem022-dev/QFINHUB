@@ -125,19 +125,21 @@ def main():
     print("Fetching sitemap...", flush=True)
     urls = fetch_sitemap_urls()
     print(f"Sitemap: {len(urls)} URLs", flush=True)
-    if args.limit:
-        urls = urls[: args.limit]
 
     results = {}
     if args.resume and OUT.exists():
         results = json.loads(OUT.read_text())
         print(f"Resuming with {len(results)} existing results", flush=True)
 
+    # --limit must apply AFTER filtering out already-inspected URLs; slicing the
+    # sitemap first makes a resumed run re-slice the same head and inspect nothing.
     todo = [
         u
         for u in urls
         if u not in results or results.get(u, {}).get("bucket") == "error"
     ]
+    if args.limit:
+        todo = todo[: args.limit]
     print(f"To inspect: {len(todo)}", flush=True)
 
     indexed = sum(1 for r in results.values() if r.get("bucket") == "indexed")

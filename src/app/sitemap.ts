@@ -5,6 +5,11 @@ import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 // Phase 34 Cycle 3: getAllHowToGuides removed — thin programmatic content excluded from sitemap
 // Phase 38 FIX (Jul 4): Re-add tool variants — 301 redirects caused 286→207 indexing regression
 // Phase 39.4: Selective restore of 4 guides verified-indexed in GSC to preserve indexing
+import {
+  isFormulaVariantSlug,
+  NOINDEX_DUPLICATE_BLOG_SLUGS,
+  NOINDEX_STATIC_PATHS,
+} from "@/lib/seo/indexability";
 import { getAllVariantPages } from "@/lib/programmatic-seo/generator";
 import { getAllHowToGuides } from "@/lib/programmatic-seo/guides";
 import { getAllMortgageByIncomeGuides } from "@/lib/programmatic-seo/mortgage-by-income";
@@ -217,7 +222,12 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     "mortgage-rates-june-2026-current-rates-home-affordability-calculator",
   ]);
   const blogPages: SitemapEntry[] = blogPosts
-    .filter((post) => !REDIRECTED_BLOG_SLUGS.has(post.slug))
+    .filter(
+      (post) =>
+        !REDIRECTED_BLOG_SLUGS.has(post.slug) &&
+        // Posts that render noindex must never be submitted in the sitemap.
+        !NOINDEX_DUPLICATE_BLOG_SLUGS.has(post.slug),
+    )
     .map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
       lastModified: post.publishedAt,
@@ -235,14 +245,10 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
   const NOINDEXED_VARIANT_SLUGS = new Set<string>([
     // Empty — all current variant pages emit index, follow (verified Jul 12)
   ]);
-  function isFormulaVariant(slug: string): boolean {
-    const parts = slug.split("-");
-    const hasPct = parts.some((p) => p.endsWith("pct"));
-    const hasYr = parts.some((p) => p.endsWith("yr"));
-    const hasMo = parts.some((p) => p.endsWith("mo"));
-    const numCount = parts.filter((p) => /\d|pct|yr|mo/.test(p) && p.length <= 6).length;
-    return (hasPct && (hasYr || hasMo)) || (/^[a-z]+-\d/.test(slug) && numCount >= 3);
-  }
+  // Delegated to the shared classifier in @/lib/seo/indexability. The previous
+  // local copy did not recognise the `Nk`+`Nyr` pattern (e.g. investment-1k-5yr),
+  // so 198 tool variants that render `noindex` were submitted in the sitemap.
+  const isFormulaVariant = isFormulaVariantSlug;
 
   let variantPages: SitemapEntry[] = [];
   try {
@@ -347,14 +353,6 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.6,
   }));
 
-  // HTML sitemap page — Phase 39.4 restore (verified indexed, was orphaned)
-  const allPagesEntry: SitemapEntry = {
-    url: `${BASE_URL}/all-pages`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as ChangeFrequency,
-    priority: 0.4,
-  };
-
   // Decision pages (quality-gated financial decision guides)
   const decisionPageEntries: SitemapEntry[] = decisionPages.map((d) => ({
     url: `${BASE_URL}/decision/${d.slug}`,
@@ -363,5 +361,12 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...mortgageByIncomePages, ...investmentMethodPages, allPagesEntry, ...decisionPageEntries];
+  const entries = [...staticPages, ...calculatorPages, ...blogPages, ...variantPages, ...geotargetedPages, ...comparisonPages, ...guidePages, ...mortgageByIncomePages, ...investmentMethodPages, ...decisionPageEntries];
+
+  // Final guard: never emit a URL that renders noindex. Submitting noindex URLs
+  // is a direct sitemap-quality violation and costs crawl trust domain-wide.
+  return entries.filter((entry) => {
+    const path = entry.url.replace(BASE_URL, "") || "/";
+    return !NOINDEX_STATIC_PATHS.has(path);
+  });
 }
