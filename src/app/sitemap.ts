@@ -6,7 +6,7 @@ import { getAllComparisons } from "@/lib/programmatic-seo/comparisons";
 // Phase 38 FIX (Jul 4): Re-add tool variants — 301 redirects caused 286→207 indexing regression
 // Phase 39.4: Selective restore of 4 guides verified-indexed in GSC to preserve indexing
 import {
-  isFormulaVariantSlug,
+  isToolVariantIndexable,
   NOINDEX_DUPLICATE_BLOG_SLUGS,
   NOINDEX_STATIC_PATHS,
 } from "@/lib/seo/indexability";
@@ -245,16 +245,14 @@ export default async function sitemap(): Promise<SitemapEntry[]> {
   const NOINDEXED_VARIANT_SLUGS = new Set<string>([
     // Empty — all current variant pages emit index, follow (verified Jul 12)
   ]);
-  // Delegated to the shared classifier in @/lib/seo/indexability. The previous
-  // local copy did not recognise the `Nk`+`Nyr` pattern (e.g. investment-1k-5yr),
-  // so 198 tool variants that render `noindex` were submitted in the sitemap.
-  const isFormulaVariant = isFormulaVariantSlug;
+  // Indexability for tool variants is decided by the shared helper below so the
+  // sitemap and the page's own generateMetadata can never disagree.
 
   let variantPages: SitemapEntry[] = [];
   try {
     const variants = getAllVariantPages();
     variantPages = variants
-      .filter((v) => !isFormulaVariant(v.slug))
+      .filter((v) => isToolVariantIndexable(v.slug))
       .filter((v) => !NOINDEXED_VARIANT_SLUGS.has(v.slug))
       .map((v) => ({
         url: `${BASE_URL}/tools/${v.slug}`,

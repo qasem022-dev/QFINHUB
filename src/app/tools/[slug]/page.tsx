@@ -22,7 +22,7 @@ import {
   getStateKeyFromTaxSlug,
 } from "@/lib/state-income-tax";
 import { StateTaxCalculatorClient } from "@/components/calculators/state-tax-calculator-client";
-import { isFormulaVariantSlug } from "@/lib/seo/indexability";
+import { isFormulaVariantSlug, isToolVariantIndexable } from "@/lib/seo/indexability";
 
 interface ToolsPageProps {
   params: Promise<{ slug: string }>;
@@ -102,7 +102,9 @@ export async function generateMetadata({ params }: ToolsPageProps) {
     : `https://www.qfinhub.com/tools/${slug}`;
 
   // Determine indexability: keep only if GSC impressions or clean variant
-  const shouldIndex = hasGscImpressions || !isFormulaVariant;
+  // Uses the SAME helper as sitemap.ts (including the override allowlist of
+  // variants Google has already indexed), so page and sitemap cannot diverge.
+  const shouldIndex = isToolVariantIndexable(slug);
 
   return {
     title: variant.meta.title,

@@ -20,36 +20,44 @@
  */
 export function isFormulaVariantSlug(slug: string): boolean {
   const parts = slug.split("-");
-  const hasPct = parts.some((p) => p.endsWith("pct"));
-  const hasYr = parts.some((p) => p.endsWith("yr"));
-  const hasMo = parts.some((p) => p.endsWith("mo"));
-  const hasK = parts.some((p) => /^\d+k$/.test(p));              // 5k, 100k
-  const hasDp = parts.some((p) => p.endsWith("dp"));             // 25dp
-  const hasPctPlain = parts.some((p) => /^\d+pct$/.test(p));     // 8pct
-  const hasYrPlain = parts.some((p) => /^\d+yr$/.test(p));       // 5yr
-  const hasMoPlain = parts.some((p) => /^\d+mo$/.test(p));       // 500mo
-  const formulaPattern = /^[a-z]+-\d/;
-
-  const paramCount = parts.filter(
-    (p) => /^\d/.test(p) || p.endsWith("pct") || p.endsWith("yr") || p.endsWith("mo") || /^\d+k$/.test(p) || p.endsWith("dp"),
-  ).length;
-  const hasNumParams = paramCount >= 2;
-
-  return (
-    (hasPct && (hasYr || hasMo)) ||
-    (hasPctPlain && (hasYrPlain || hasMoPlain)) ||
-    (hasK && (hasYrPlain || hasMoPlain || hasPctPlain || hasDp)) ||
-    (formulaPattern.test(slug) && hasNumParams)
-  );
+  // Any slug carrying a parameter token (5k, 150k, 8pct, 20yr, 500mo, 1M, 3dp,
+  // 20s) is a generated variant. Measured on the live site: sibling variants are
+  // 97-99.5% textually identical — only the numbers change — so Google treats
+  // them as duplicates of one another.
+  if (parts.some((p) => /^\d/.test(p))) return true;
+  // Catch suffixes attached to words without a leading digit (e.g. "apr-pct").
+  return parts.some((p) => /(pct|yr|mo|dp)$/.test(p));
 }
 
 /**
- * Variants that DO have Search Console impressions, so they stay indexable even
- * though the slug looks like a formula variant.
+ * Variants that are ALREADY indexed by Google, so they stay indexable.
+ *
+ * Building this list from a live URL Inspection audit (Nov 11, 2026) rather than
+ * guesswork avoids deindexing pages that are currently winning — while letting
+ * the remaining ~100 near-duplicate variants drop out of the crawl surface.
  */
 export const INDEXABLE_VARIANT_OVERRIDES = new Set<string>([
   "/tools/afford-100k-40k-6-5pct",
   "/tools/afford-130k-40k-7pct",
+  // Verified indexed in the Nov 11, 2026 audit:
+  "/tools/budget-40k-zero-based",
+  "/tools/budget-65k-zero-based",
+  "/tools/dti-55k-car-buyer",
+  "/tools/fi-15k-lean-extreme",
+  "/tools/fire-25k-van-life",
+  "/tools/fire-35k-geo-arb",
+  "/tools/net-worth-1M-milestone",
+  "/tools/net-worth-entrepreneur",
+  "/tools/net-worth-minimalist",
+  "/tools/net-worth-real-estate",
+  "/tools/tax-110k-single",
+  "/tools/tax-150k-single",
+  "/tools/tax-300k-head-of-household",
+  "/tools/tax-400k-head-of-household",
+  "/tools/tax-40k-single",
+  "/tools/tax-5M-married-joint",
+  "/tools/tax-750k-single",
+  "/tools/tax-80k-married-separate",
 ]);
 
 /** A /tools/<slug> page is indexable when it is not an unproven formula variant. */
