@@ -106,6 +106,20 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
 
+    # Single-instance lock. Two concurrent runs race on the output JSON and
+    # triple the URL Inspection API call rate, which triggers 429s (observed:
+    # 11 errors out of 80 URLs when the daily cron overlapped a manual run).
+    lock_path = Path("/tmp/qfinhub-indexing-audit.lock")
+    lock_file = open(lock_path, "w")
+    try:
+        import fcntl
+
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except (ImportError, OSError):
+        print("Another indexing-audit run is already in progress. Exiting.", flush=True)
+        lock_file.close()
+        return 0
+
     auth = load_auth()
 
     print("Fetching sitemap...", flush=True)
@@ -139,7 +153,7 @@ def main():
             },
         )
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=75) as r:
                 d = json.loads(r.read())
             ir = d.get("inspectionResult", {}).get("indexStatusResult", {})
             cs = ir.get("coverageState", "")
