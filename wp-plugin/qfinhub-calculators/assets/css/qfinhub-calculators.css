@@ -1,0 +1,204 @@
+/**
+ * QFINHUB Financial Calculators — front-end styles.
+ *
+ * Scoped to .qfc- classes and written with CSS custom properties so a theme can
+ * restyle the calculator without editing plugin CSS. No reset, no global
+ * selectors: this loads inside other people's themes and must not touch them.
+ */
+
+.qfc-wrap {
+	--qfc-bg: #ffffff;
+	--qfc-fg: #111827;
+	--qfc-muted: #6b7280;
+	--qfc-border: #e5e7eb;
+	--qfc-field-bg: #ffffff;
+	--qfc-accent: #2563eb;
+	--qfc-accent-fg: #ffffff;
+	--qfc-radius: 10px;
+
+	margin: 1.5em 0;
+	color: var(--qfc-fg);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+	.qfc-wrap {
+		--qfc-bg: #1f2937;
+		--qfc-fg: #f9fafb;
+		--qfc-muted: #9ca3af;
+		--qfc-border: #374151;
+		--qfc-field-bg: #111827;
+		--qfc-accent: #3b82f6;
+	}
+}
+
+.qfc-title {
+	margin: 0 0 0.75em;
+	font-size: 1.15em;
+	font-weight: 600;
+	color: inherit;
+}
+
+.qfc-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+
+@media (min-width: 640px) {
+	.qfc-layout {
+		grid-template-columns: 1.2fr 1fr;
+		align-items: start;
+	}
+}
+
+.qfc-form {
+	display: grid;
+	gap: 12px;
+	padding: 16px;
+	background: var(--qfc-bg);
+	border: 1px solid var(--qfc-border);
+	border-radius: var(--qfc-radius);
+}
+
+.qfc-field {
+	display: grid;
+	gap: 4px;
+}
+
+.qfc-label {
+	font-size: 0.875em;
+	font-weight: 500;
+	color: var(--qfc-muted);
+}
+
+.qfc-input-wrap {
+	position: relative;
+	display: block;
+}
+
+.qfc-input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 9px 11px;
+	font: inherit;
+	font-size: 0.95em;
+	color: var(--qfc-fg);
+	background: var(--qfc-field-bg);
+	border: 1px solid var(--qfc-border);
+	border-radius: 8px;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.qfc-input-has-prefix {
+	padding-left: 26px;
+}
+
+.qfc-input-has-suffix {
+	padding-right: 30px;
+}
+
+.qfc-input:focus {
+	outline: none;
+	border-color: var(--qfc-accent);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+.qfc-unit {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.9em;
+	color: var(--qfc-muted);
+	pointer-events: none;
+	user-select: none;
+}
+
+.qfc-unit-prefix {
+	left: 11px;
+}
+
+.qfc-unit-suffix {
+	right: 11px;
+}
+
+.qfc-panel {
+	display: grid;
+	gap: 10px;
+	padding: 16px;
+	background: var(--qfc-bg);
+	border: 1px solid var(--qfc-border);
+	border-radius: var(--qfc-radius);
+}
+
+.qfc-result {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--qfc-border);
+}
+
+.qfc-result:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.qfc-result-label {
+	font-size: 0.875em;
+	color: var(--qfc-muted);
+}
+
+.qfc-result-value {
+	font-variant-numeric: tabular-nums;
+	font-size: 1em;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.qfc-result-primary .qfc-result-value {
+	font-size: 1.65em;
+	font-weight: 700;
+	color: var(--qfc-accent);
+}
+
+.qfc-note,
+.qfc-disclaimer {
+	margin: 12px 0 0;
+	font-size: 0.8em;
+	color: var(--qfc-muted);
+}
+
+.qfc-index {
+	margin: 1.5em 0;
+}
+
+.qfc-index-group {
+	margin-bottom: 1.25em;
+}
+
+.qfc-index-cat {
+	margin: 0 0 0.4em;
+	font-size: 0.95em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--qfc-muted, #6b7280);
+}
+
+.qfc-index-list {
+	margin: 0;
+	padding-left: 1.2em;
+	list-style: disc;
+}
+
+.qfc-index-list li {
+	margin: 0.2em 0;
+}
+
+/* Editor preview: mirror the front end closely enough to judge spacing. */
+.editor-styles-wrapper .qfc-wrap {
+	max-width: 780px;
+}

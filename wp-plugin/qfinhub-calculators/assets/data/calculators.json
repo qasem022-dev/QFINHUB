@@ -1,0 +1,215 @@
+[
+  {
+    "id": "mortgage-payment",
+    "name": "Mortgage Payment",
+    "category": "Mortgage",
+    "description": "Monthly principal and interest on a fixed-rate mortgage, plus total interest over the term.",
+    "fields": [
+      { "key": "price", "label": "Home price", "type": "number", "default": 400000, "min": 0, "step": 5000, "prefix": "$" },
+      { "key": "down", "label": "Down payment", "type": "number", "default": 80000, "min": 0, "step": 5000, "prefix": "$" },
+      { "key": "rate", "label": "Interest rate", "type": "number", "default": 6.5, "min": 0, "max": 25, "step": 0.125, "suffix": "%" },
+      { "key": "years", "label": "Term", "type": "select", "default": 30, "options": [10, 15, 20, 25, 30] }
+    ],
+    "outputs": [
+      { "key": "payment", "label": "Monthly payment", "format": "currency", "primary": true },
+      { "key": "loan", "label": "Loan amount", "format": "currency" },
+      { "key": "totalInterest", "label": "Total interest", "format": "currency" },
+      { "key": "totalPaid", "label": "Total paid", "format": "currency" },
+      { "key": "interestShare", "label": "Interest as % of payments", "format": "percent" }
+    ]
+  },
+  {
+    "id": "mortgage-affordability",
+    "name": "Home Affordability",
+    "category": "Mortgage",
+    "description": "The home price you can support from your income, using the 28/36 debt-to-income guideline.",
+    "fields": [
+      { "key": "income", "label": "Gross annual income", "type": "number", "default": 120000, "min": 0, "step": 5000, "prefix": "$" },
+      { "key": "monthlyDebt", "label": "Other monthly debt", "type": "number", "default": 500, "min": 0, "step": 50, "prefix": "$" },
+      { "key": "down", "label": "Down payment", "type": "number", "default": 60000, "min": 0, "step": 5000, "prefix": "$" },
+      { "key": "rate", "label": "Interest rate", "type": "number", "default": 6.5, "min": 0, "max": 25, "step": 0.125, "suffix": "%" },
+      { "key": "years", "label": "Term", "type": "select", "default": 30, "options": [15, 20, 25, 30] }
+    ],
+    "outputs": [
+      { "key": "maxPrice", "label": "Affordable home price", "format": "currency", "primary": true },
+      { "key": "maxLoan", "label": "Max loan", "format": "currency" },
+      { "key": "monthlyHousing", "label": "Monthly housing budget", "format": "currency" },
+      { "key": "dtiUsed", "label": "Housing ratio used", "format": "percent" }
+    ]
+  },
+  {
+    "id": "auto-loan",
+    "name": "Auto Loan",
+    "category": "Loans",
+    "description": "Monthly payment and total cost for a car loan, including the effect of a trade-in.",
+    "fields": [
+      { "key": "price", "label": "Vehicle price", "type": "number", "default": 32000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "down", "label": "Down payment", "type": "number", "default": 4000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "tradeIn", "label": "Trade-in value", "type": "number", "default": 0, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "rate", "label": "APR", "type": "number", "default": 7.5, "min": 0, "max": 30, "step": 0.1, "suffix": "%" },
+      { "key": "months", "label": "Term", "type": "select", "default": 60, "options": [24, 36, 48, 60, 72, 84] }
+    ],
+    "outputs": [
+      { "key": "payment", "label": "Monthly payment", "format": "currency", "primary": true },
+      { "key": "loan", "label": "Amount financed", "format": "currency" },
+      { "key": "totalInterest", "label": "Total interest", "format": "currency" },
+      { "key": "totalPaid", "label": "Total paid", "format": "currency" }
+    ]
+  },
+  {
+    "id": "loan-payment",
+    "name": "Personal Loan Payment",
+    "category": "Loans",
+    "description": "Monthly payment, total interest and payoff schedule for any fixed-term loan.",
+    "fields": [
+      { "key": "amount", "label": "Loan amount", "type": "number", "default": 15000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "rate", "label": "Interest rate", "type": "number", "default": 11.5, "min": 0, "max": 40, "step": 0.1, "suffix": "%" },
+      { "key": "months", "label": "Term (months)", "type": "number", "default": 36, "min": 1, "max": 360, "step": 1 }
+    ],
+    "outputs": [
+      { "key": "payment", "label": "Monthly payment", "format": "currency", "primary": true },
+      { "key": "totalInterest", "label": "Total interest", "format": "currency" },
+      { "key": "totalPaid", "label": "Total paid", "format": "currency" },
+      { "key": "costPerBorrowed", "label": "Cost per $1 borrowed", "format": "decimal" }
+    ]
+  },
+  {
+    "id": "refinance-breakeven",
+    "name": "Refinance Break-Even",
+    "category": "Mortgage",
+    "description": "How many months a refinance takes to pay for its own closing costs.",
+    "fields": [
+      { "key": "balance", "label": "Current balance", "type": "number", "default": 300000, "min": 0, "step": 5000, "prefix": "$" },
+      { "key": "currentRate", "label": "Current rate", "type": "number", "default": 7.25, "min": 0, "max": 25, "step": 0.125, "suffix": "%" },
+      { "key": "newRate", "label": "New rate", "type": "number", "default": 5.75, "min": 0, "max": 25, "step": 0.125, "suffix": "%" },
+      { "key": "years", "label": "Remaining term", "type": "select", "default": 30, "options": [10, 15, 20, 25, 30] },
+      { "key": "closingCosts", "label": "Closing costs", "type": "number", "default": 6000, "min": 0, "step": 500, "prefix": "$" }
+    ],
+    "outputs": [
+      { "key": "breakevenMonths", "label": "Break-even", "format": "months", "primary": true },
+      { "key": "monthlySaving", "label": "Monthly saving", "format": "currency" },
+      { "key": "lifetimeSaving", "label": "Saving over the term", "format": "currency" },
+      { "key": "worthIt", "label": "Verdict", "format": "text" }
+    ]
+  },
+  {
+    "id": "compound-interest",
+    "name": "Compound Interest",
+    "category": "Investing",
+    "description": "Growth of a lump sum with regular monthly contributions, compounded monthly.",
+    "fields": [
+      { "key": "principal", "label": "Starting amount", "type": "number", "default": 10000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "monthly", "label": "Monthly contribution", "type": "number", "default": 500, "min": 0, "step": 50, "prefix": "$" },
+      { "key": "rate", "label": "Annual return", "type": "number", "default": 7, "min": 0, "max": 40, "step": 0.25, "suffix": "%" },
+      { "key": "years", "label": "Years", "type": "number", "default": 20, "min": 1, "max": 60, "step": 1 }
+    ],
+    "outputs": [
+      { "key": "futureValue", "label": "Future value", "format": "currency", "primary": true },
+      { "key": "contributed", "label": "Total contributed", "format": "currency" },
+      { "key": "growth", "label": "Growth from compounding", "format": "currency" },
+      { "key": "multiple", "label": "Money multiple", "format": "decimal" }
+    ]
+  },
+  {
+    "id": "savings-goal",
+    "name": "Savings Goal",
+    "category": "Savings",
+    "description": "The monthly deposit needed to reach a target amount by a deadline.",
+    "fields": [
+      { "key": "target", "label": "Goal amount", "type": "number", "default": 50000, "min": 0, "step": 1000, "prefix": "$" },
+      { "key": "current", "label": "Already saved", "type": "number", "default": 5000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "rate", "label": "Expected return", "type": "number", "default": 4, "min": 0, "max": 30, "step": 0.25, "suffix": "%" },
+      { "key": "years", "label": "Years to goal", "type": "number", "default": 5, "min": 0.5, "max": 50, "step": 0.5 }
+    ],
+    "outputs": [
+      { "key": "monthlyNeeded", "label": "Monthly deposit needed", "format": "currency", "primary": true },
+      { "key": "totalContributed", "label": "Total you deposit", "format": "currency" },
+      { "key": "interestEarned", "label": "Interest earned", "format": "currency" }
+    ]
+  },
+  {
+    "id": "retirement-savings",
+    "name": "Retirement Savings",
+    "category": "Retirement",
+    "description": "Projected retirement balance and the sustainable annual income it supports.",
+    "fields": [
+      { "key": "age", "label": "Current age", "type": "number", "default": 35, "min": 16, "max": 80, "step": 1 },
+      { "key": "retireAge", "label": "Retirement age", "type": "number", "default": 65, "min": 30, "max": 90, "step": 1 },
+      { "key": "current", "label": "Current savings", "type": "number", "default": 60000, "min": 0, "step": 1000, "prefix": "$" },
+      { "key": "monthly", "label": "Monthly contribution", "type": "number", "default": 800, "min": 0, "step": 50, "prefix": "$" },
+      { "key": "rate", "label": "Annual return", "type": "number", "default": 7, "min": 0, "max": 30, "step": 0.25, "suffix": "%" }
+    ],
+    "outputs": [
+      { "key": "atRetirement", "label": "Balance at retirement", "format": "currency", "primary": true },
+      { "key": "yearsToGrow", "label": "Years of growth", "format": "years" },
+      { "key": "safeIncome", "label": "Sustainable income (4% rule)", "format": "currency" },
+      { "key": "totalContributed", "label": "Total contributed", "format": "currency" }
+    ]
+  },
+  {
+    "id": "debt-payoff",
+    "name": "Debt Payoff",
+    "category": "Debt",
+    "description": "How long a balance lasts at a fixed payment, and how much interest it costs.",
+    "fields": [
+      { "key": "balance", "label": "Balance owed", "type": "number", "default": 12000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "rate", "label": "APR", "type": "number", "default": 22.9, "min": 0, "max": 60, "step": 0.1, "suffix": "%" },
+      { "key": "payment", "label": "Monthly payment", "type": "number", "default": 400, "min": 1, "step": 25, "prefix": "$" }
+    ],
+    "outputs": [
+      { "key": "months", "label": "Months to clear", "format": "months", "primary": true },
+      { "key": "totalInterest", "label": "Total interest", "format": "currency" },
+      { "key": "totalPaid", "label": "Total paid", "format": "currency" },
+      { "key": "neverPays", "label": "Warning", "format": "text" }
+    ]
+  },
+  {
+    "id": "credit-card-minimum",
+    "name": "Credit Card Minimum Trap",
+    "category": "Debt",
+    "description": "What paying only the minimum on a card actually costs you in time and interest.",
+    "fields": [
+      { "key": "balance", "label": "Card balance", "type": "number", "default": 6000, "min": 0, "step": 100, "prefix": "$" },
+      { "key": "rate", "label": "APR", "type": "number", "default": 24.99, "min": 0, "max": 60, "step": 0.1, "suffix": "%" },
+      { "key": "minimumPct", "label": "Minimum payment", "type": "number", "default": 2, "min": 1, "max": 10, "step": 0.5, "suffix": "% of balance" }
+    ],
+    "outputs": [
+      { "key": "months", "label": "Months to clear", "format": "months", "primary": true },
+      { "key": "totalInterest", "label": "Interest paid", "format": "currency" },
+      { "key": "firstPayment", "label": "First payment", "format": "currency" },
+      { "key": "interestToBalance", "label": "Interest per $1 owed", "format": "decimal" }
+    ]
+  },
+  {
+    "id": "roi",
+    "name": "Return on Investment",
+    "category": "Investing",
+    "description": "Total and annualised return on an investment, including holding period.",
+    "fields": [
+      { "key": "cost", "label": "Amount invested", "type": "number", "default": 10000, "min": 1, "step": 500, "prefix": "$" },
+      { "key": "finalValue", "label": "Final value", "type": "number", "default": 16000, "min": 0, "step": 500, "prefix": "$" },
+      { "key": "years", "label": "Years held", "type": "number", "default": 5, "min": 0.08, "max": 60, "step": 0.25 }
+    ],
+    "outputs": [
+      { "key": "totalReturn", "label": "Total return", "format": "percent", "primary": true },
+      { "key": "annualised", "label": "Annualised return", "format": "percent" },
+      { "key": "profit", "label": "Profit", "format": "currency" }
+    ]
+  },
+  {
+    "id": "inflation",
+    "name": "Inflation Impact",
+    "category": "Savings",
+    "description": "What a sum of money will be worth after inflation, and what today's money buys later.",
+    "fields": [
+      { "key": "amount", "label": "Amount today", "type": "number", "default": 100000, "min": 0, "step": 1000, "prefix": "$" },
+      { "key": "rate", "label": "Inflation rate", "type": "number", "default": 3, "min": 0, "max": 30, "step": 0.1, "suffix": "%" },
+      { "key": "years", "label": "Years", "type": "number", "default": 20, "min": 1, "max": 60, "step": 1 }
+    ],
+    "outputs": [
+      { "key": "realValue", "label": "Real value in today's money", "format": "currency", "primary": true },
+      { "key": "purchasingPowerLoss", "label": "Purchasing power lost", "format": "percent" },
+      { "key": "neededForSame", "label": "Needed to match today", "format": "currency" }
+    ]
+  }
+]

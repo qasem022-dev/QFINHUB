@@ -45,3 +45,7 @@ next-env.d.ts
 .optimizer-data/phase39-*
 .optimizer-data/PHASE39_*
 scripts/__pycache__/
+
+# Outreach prospect data contains real people's contact details — keep it local.
+.optimizer-data/prospects-*.csv
+.optimizer-data/outreach-sent.csv
