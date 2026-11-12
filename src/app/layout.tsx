@@ -5,11 +5,7 @@ import { ThemeProvider } from "@/hooks/use-theme";
 import { Toaster } from "@/components/ui/toast";
 import { LocaleProvider } from "./i18n-provider";
 import { AuthProvider } from "@/components/providers/auth-provider";
-import { PWAInstallPrompt } from "@/components/ui/pwa-install-prompt";
-import { ConsentBanner } from "@/components/ui/consent-banner";
-import { Analytics } from "@vercel/analytics/next";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { AdsterraBanner } from "@/components/ads/adsterra-banner";
+import { SiteChrome } from "@/components/layout/site-chrome";
 import { defaultLocale} from "@/lib/i18n";
 import { ALL_LANGUAGES } from "@/lib/i18n/languages";
 import { HreflangTags } from "@/components/seo/hreflang-tags";
@@ -228,11 +224,7 @@ export default function RootLayout({
           <LocaleProvider>
             <AuthProvider>
               {children}
-              <Analytics />
-              <SiteFooter />
-              <AdsterraBanner />
-              <PWAInstallPrompt />
-              <ConsentBanner />
+              <SiteChrome />
             </AuthProvider>
           </LocaleProvider>
           <Toaster />
