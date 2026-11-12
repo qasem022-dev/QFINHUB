@@ -56,28 +56,53 @@ def get_access_token() -> str:
     return _refresh(creds)
 
 
-def send(to: str, subject: str, body: str, *, reply_to: str | None = None) -> dict:
+def send(
+    to: str,
+    subject: str,
+    body: str,
+    *,
+    reply_to: str | None = None,
+    in_reply_to: str | None = None,
+    references: str | None = None,
+    thread_id: str | None = None,
+) -> dict:
+    """Send a plain-text message. Returns Gmail's response plus the Message-ID used.
+
+    Threading matters for follow-ups: answering inside the original thread means
+    the prospect sees a reply to a message they already have, rather than a fresh
+    cold email from an unknown sender.
+    """
     token = get_access_token()
     msg = MIMEText(body, "plain", "utf-8")
     msg["To"] = to
     msg["From"] = formataddr((SENDER_NAME, SENDER))
     msg["Subject"] = subject
     msg["Date"] = formatdate(localtime=True)
-    msg["Message-ID"] = make_msgid(domain="qfinhub.com")
+    message_id = make_msgid(domain="qfinhub.com")
+    msg["Message-ID"] = message_id
     if reply_to:
         msg["Reply-To"] = reply_to
+    if in_reply_to:
+        msg["In-Reply-To"] = in_reply_to
+    if references:
+        msg["References"] = references
 
-    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+    payload: dict = {"raw": base64.urlsafe_b64encode(msg.as_bytes()).decode()}
+    if thread_id:
+        payload["threadId"] = thread_id
+
     req = urllib.request.Request(
         f"https://gmail.googleapis.com/gmail/v1/users/{SENDER}/messages/send",
-        data=json.dumps({"raw": raw}).encode(),
+        data=json.dumps(payload).encode(),
         headers={
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
         },
     )
     with urllib.request.urlopen(req, timeout=45) as r:
-        return json.loads(r.read())
+        res = json.loads(r.read())
+    res["message_id"] = message_id
+    return res
 
 
 def list_sent(n: int = 10) -> None:
@@ -111,6 +136,10 @@ def main() -> int:
     ap.add_argument("--subject", default="")
     ap.add_argument("--body")
     ap.add_argument("--body-file")
+    ap.add_argument("--in-reply-to", default=None)
+    ap.add_argument("--references", default=None)
+    ap.add_argument("--thread-id", default=None)
+    ap.add_argument("--json", action="store_true", help="print machine-readable result")
     ap.add_argument("--verify", action="store_true")
     ap.add_argument("--list-sent", type=int, default=0)
     ap.add_argument("--dry-run", action="store_true")
@@ -141,8 +170,22 @@ def main() -> int:
         print(f"DRY RUN\nTo: {args.to}\nSubject: {args.subject}\n\n{body}")
         return 0
 
-    res = send(args.to, args.subject, body)
-    print(f"sent -> id={res.get('id')} thread={res.get('threadId')}")
+    res = send(
+        args.to,
+        args.subject,
+        body,
+        in_reply_to=args.in_reply_to,
+        references=args.references,
+        thread_id=args.thread_id,
+    )
+    if args.json:
+        print(json.dumps({
+            "id": res.get("id"),
+            "threadId": res.get("threadId"),
+            "message_id": res.get("message_id"),
+        }))
+    else:
+        print(f"sent -> id={res.get('id')} thread={res.get('threadId')}")
     return 0
 
 

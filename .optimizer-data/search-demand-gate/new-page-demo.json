@@ -1,0 +1,37 @@
+{
+  "targetQuery": "N/A — /demo is a per-prospect sales preview, not an organic target. It is noindex, follow:false, nocache:true and is deliberately excluded from the sitemap. It exists only to show a named prospect a working, branded instance of a calculator after they receive outreach email.",
+  "evidenceSource": "N/A — no keyword research applies. This page does not compete for rankings and carries no ad or affiliate inventory. The commercial rationale was validated separately: agencies quote $13,000-25,000 for bespoke financial calculators while freelance marketplaces list unbranded single calculators at $100-500, leaving the $500-2,500 branded-suite price point uncontested.",
+  "gscEvidence": {
+    "hasGSCData": false,
+    "impressions28d": 0,
+    "averagePosition": 0,
+    "ctr": 0,
+    "currentRankingUrl": "N/A — page is noindex by design",
+    "wrongPageRanking": false
+  },
+  "serpIntent": "N/A — no SERP intent to match. The page is reached only from a cold outreach link, so its only job is to make a stranger click the calculator, change a number, and believe the product is real within five seconds.",
+  "competitorWeakness": "N/A for SERP. Commercially, cold outreach in this segment universally promises a build rather than demonstrating one. A working branded sample removes the prospect's need to imagine the outcome, which is the specific weakness this page exploits.",
+  "pageTypeDecision": "Dynamic app route at /demo reading ?co= and ?ref= query params — a client-demo surface, not a calculator index page, blog post, guide, or comparison.",
+  "titleMetaDecision": {
+    "title": "Mortgage calculator — preview",
+    "ogTitle": "Mortgage calculator — preview",
+    "metaDesc": "A live sample mortgage calculator prepared for your site.",
+    "rationale": "Metadata is irrelevant for ranking here; it is set only so that if the link is pasted into a chat internally by the prospect, it is not misrepresented. The substantive personalisation (company name) is in the page body, not the title."
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": false,
+    "existingPageUrl": "N/A — no existing page can present a calculator under a prospect's brand",
+    "action": "BUILD — a branded preview had no representation on the site"
+  },
+  "finalDecision": "BUILD",
+  "createdBy": "Calculator-build offer (30-day revenue push)",
+  "createdAt": "2026-11-12T19:30:00Z",
+  "_note": "Scores are nominal (95 across all axes) per the documented convention for non-SEO pages in this repo. They are NOT a claim that /demo has search demand — it is noindex and emits zero organic impressions by design. If this route is ever made indexable it must be re-gated with real GSC and Trends evidence."
+}
