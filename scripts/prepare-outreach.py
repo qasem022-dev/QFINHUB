@@ -48,6 +48,10 @@ BAD_DOMAIN = (
     "fairwaymc.com", "bankofoklahoma.com", "statesman.com", "austinhomemag.com",
     "americascreditunions.org", "mycreditunion.gov", "realty.com", "firstteam.com",
     "keenable.ai", "homeshow.ai", "moatable.com", "rate.com",
+    # Analytics/tag-manager vendors that leak into scraped pages as support or
+    # sales addresses. They are never the business being prospected.
+    "keen.io", "segment.io", "segment.com", "mixpanel.com", "amplitude.com",
+    "hotjar.com", "fullstory.com", "intercom.io", "intercom.com", "drift.com",
 )
 
 CALC_PATTERNS = (
@@ -102,15 +106,19 @@ def main() -> int:
     print(f"merged unique domains: {len(rows)}")
 
     kept, rejected = [], []
+    seen_emails: set[str] = set()
     for r in rows:
         email = r["email"].strip().lower()
         local, _, dom = email.partition("@")
         if local in BAD_LOCAL:
             rejected.append((email, f"role address: {local}@")); continue
+        if email in seen_emails:
+            rejected.append((email, "duplicate address")); continue
         if any(b in dom for b in BAD_DOMAIN):
             rejected.append((email, "not a buyer / too large")); continue
         if not mx_ok(dom):
             rejected.append((email, "no MX record")); continue
+        seen_emails.add(email)
         kept.append(r)
 
     print(f"\nrejected {len(rejected)}:")
