@@ -208,6 +208,11 @@ export function ConsentBanner() {
     // and there is no ad inventory on that route to consent to.
     if (pathname?.startsWith("/demo")) return;
 
+    // /embed renders inside a customer's own site. The host site is responsible
+    // for consent on its own pages, and a modal from our iframe would cover a
+    // widget they paid for. /embed carries no ad inventory either.
+    if (pathname?.startsWith("/embed")) return;
+
     // Delay the appearance slightly to avoid layout shift
     const timer = setTimeout(() => {
       if (shouldShowBanner()) {

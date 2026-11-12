@@ -1,70 +1,76 @@
-/* eslint-disable react-hooks/static-components */
-'use client';
-
-import { Suspense } from "react";
-import { useParams, notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getCalculatorBySlug } from "@/lib/calculators";
-import { getCalculatorComponent } from "@/components/calculators/registry";
-import { Loader2 } from "lucide-react";
-import { useTranslation } from "@/app/i18n-provider";
+import { EmbedShell } from "./embed-shell";
+import {
+  badgeAllowed,
+  cleanBrand,
+  cleanColor,
+  findClient,
+  isPaidLicence,
+  leadCaptureAllowed,
+} from "@/lib/embed/clients";
 
-export default function EmbedPage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const { t } = useTranslation();
+/**
+ * White-label embed target.
+ *
+ *   /embed/mortgage-calculator?brand=Acme%20CU&color=0b5ea8&key=LICENCE&leads=1
+ *
+ * Licence-gated parameters are resolved HERE, on the server. `?key=` decides
+ * whether the QFINHUB badge is rendered and whether lead capture is available;
+ * doing that in the client component would let anyone strip the badge by reading
+ * the bundle.
+ */
+
+// Branding and licence state vary per request, so this cannot be statically cached.
+export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false, nocache: true },
+};
+
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
+
+function first(v: string | string[] | undefined): string | undefined {
+  return Array.isArray(v) ? v[0] : v;
+}
+
+export default async function EmbedPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ slug: string }>;
+  searchParams: SearchParams;
+}) {
+  const { slug } = await params;
+  const sp = await searchParams;
 
   const calculator = getCalculatorBySlug(slug);
-  const CalculatorComponent = getCalculatorComponent(slug);
+  if (!calculator) notFound();
 
-  // Calculator not found at all
-  if (!calculator) {
-    notFound();
-  }
+  const client = findClient(first(sp.key));
+  const paid = isPaidLicence(client);
 
-  // Calculator found but no component registered yet
-  if (!CalculatorComponent) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-white p-8 dark:bg-surface-dark">
-        <div className="text-center">
-          <div className="mb-3 text-5xl opacity-30">
-            {typeof calculator.icon === "string"
-              ? calculator.icon
-              : "📊"}
-          </div>
-          <p className="text-sm text-gray-400 dark:text-gray-500">
-            {calculator.title} {t('embed.comingSoon')}
-          </p>
-          <div className="mt-6">
-            <a
-              href={`https://qfinhub.com/calculators/${slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
-            >
-              {t('embed.poweredBy')}
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  // A paid licence may default its branding to the customer's own name.
+  const requestedBrand = cleanBrand(first(sp.brand));
+  const brand = requestedBrand || (paid && client ? cleanBrand(client.name) : "");
+  const color = cleanColor(first(sp.color));
 
-  // Full embed: just the calculator + subtle footer
+  // Only paid licences may hide the badge or capture leads, whatever the URL says.
+  const showBadge = badgeAllowed(client);
+  const leadCapture = leadCaptureAllowed(client) && first(sp.leads) === "1";
+
   return (
-    <div className="w-full bg-white dark:bg-surface-dark">
-      <Suspense fallback={<div className="flex min-h-[300px] items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-gray-400" /></div>}>
-        <CalculatorComponent />
-      </Suspense>
-      <div className="border-t border-gray-100 py-2.5 text-center dark:border-gray-800">
-        <a
-          href={`https://qfinhub.com/calculators/${slug}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[11px] tracking-wide text-gray-400 transition-colors hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
-        >
-          {t('embed.poweredBy')}
-        </a>
-      </div>
-    </div>
+    <EmbedShell
+      slug={slug}
+      title={calculator.title}
+      brand={brand}
+      color={color}
+      showBadge={showBadge}
+      leadCapture={leadCapture}
+      // Only pass the key through when it is genuinely paid, so a bogus key is
+      // never echoed into the page or attached to a lead.
+      licenceKey={paid && client ? client.key : ""}
+    />
   );
 }

@@ -1,0 +1,21 @@
+{
+  "page": "/white-label",
+  "type": "b2b-conversion",
+  "status": "N/A",
+  "targetQuery": "N/A",
+  "evidenceSource": "Deliberate noindex. This is a B2B sales page for a paid product, reached from cold outreach and from emails quoting a branded demo link — not from search.",
+  "serpIntent": "N/A",
+  "reason": "Same rationale as /services and /demo: the page exists to convert a named prospect who arrived from an email, not to attract organic traffic. It competes for no keyword and carries no content that belongs in the index.",
+  "robotsDirective": "noindex, follow",
+  "gscEvidence": {
+    "hasGSCData": false,
+    "note": "Page did not exist before this change, so there is no GSC history to cite."
+  },
+  "internalLinks": [
+    "/embed/mortgage-calculator?brand=demo (live branded sample linked from the hero)"
+  ],
+  "conversionPath": "Hero demo link -> pricing -> mailto or checkout",
+  "alternativesConsidered": "Indexing it would compete with /calculators pages for 'financial calculators' queries, which are already thin, and would dilute the crawl budget the indexed calculator pages need.",
+  "reviewedBy": "agent",
+  "reviewedAt": "2026-11-12"
+}

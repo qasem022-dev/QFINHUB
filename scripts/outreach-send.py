@@ -44,8 +44,12 @@ from pathlib import Path
 DATA = Path(".optimizer-data")
 PROSPECTS = DATA / "prospects-final.csv"
 LOG = DATA / "outreach-sent.csv"
-OFFER_URL = "https://www.qfinhub.com/services"
-DEMO_BASE = "https://www.qfinhub.com/demo"
+OFFER_URL = "https://www.qfinhub.com/white-label"
+# The demo link now points at the real white-label product rather than the
+# one-off /demo page: the prospect sees the thing they would actually buy,
+# branded, with the lead form visible.
+DEMO_BASE = "https://www.qfinhub.com/embed/mortgage-calculator"
+DEMO_KEY = "qfinhub-demo-preview"
 SENDER = "Q.finhub@qfinhub.com"
 TOKEN_PATH = Path.home() / ".hermes" / "google_token.json"
 
@@ -59,14 +63,16 @@ SKIP_DOMAIN_HINTS = ("americascreditunions.org", "homeshow.ai", "mycreditunion.g
 TEMPLATES = {
     1: {
         "noc": {
-            "subject": "payment calculator for {domain}",
+            "subject": "calculators for {domain}",
             "body": """{greeting}
 
-I couldn't find a payment calculator on {domain}. So anyone who wants a number leaves your site for their bank's calculator, and the bank gets the enquiry.
+I couldn't find a payment calculator on {domain}, so anyone who wants a number leaves for their bank's calculator — and the bank gets the enquiry.
 
-Rather than describe what I'd build, I built it: {demo_url}
+I build these for a living and I have 129 of them working: mortgage, auto, retirement, debt payoff. Rather than sell you one build, you can put the set on {domain} with your own name and colour on it.
 
-It's live — change the numbers. If it's useful I'll wire it properly into {domain} with your rates and a lead form that reaches your CRM, inside 72 hours.
+Here it is branded for you, lead form included: {demo_url}
+
+Free to embed. $149 a month takes our badge off and sends the enquiries to your CRM instead of a lead broker.
 
 Qasem
 QFINHUB""",
@@ -75,13 +81,13 @@ QFINHUB""",
             "subject": "your calculator on {domain}",
             "body": """{greeting}
 
-You already have a calculator on {domain}, which puts you ahead of most brokers I look at. But it's a dead end: visitors get a number, then vanish, and you never learn who they were.
+You already have a calculator on {domain}, which puts you ahead of most firms I look at. The catch is it's a dead end — the visitor gets a number and disappears, and you never learn who they were.
 
-So I built the version that captures them: {demo_url}
+I build these, and I have 129 of them. This is the version that keeps the person: {demo_url}
 
-It's live — change the numbers. Same maths, plus a form that turns the calculation into a named enquiry.
+Same maths, plus a form that turns the calculation into a named enquiry, wearing your branding.
 
-Worth 60 seconds?
+Free to embed. $149 a month removes our badge and routes the leads to your CRM.
 
 Qasem
 QFINHUB""",
@@ -92,9 +98,11 @@ QFINHUB""",
             "subject": None,  # keep the original subject so the thread groups
             "body": """{greeting}
 
-Following up on the calculator I set up for {domain}: {demo_url}
+Following up on the calculators for {domain}: {demo_url}
 
-Nothing to install to look at it. If the timing is wrong just say so and I'll close the file — no hard feelings.
+Nothing to install to look at it — it is just a page, and the brand on it is yours.
+
+If the timing is wrong, say so and I'll close the file rather than keep emailing.
 
 Qasem""",
         },
@@ -104,11 +112,11 @@ Qasem""",
             "subject": None,
             "body": """{greeting}
 
-One question and then I'll stop.
+One question, then I'll stop.
 
-Is it that {domain} already has this covered somewhere, or that a calculator just isn't a priority this quarter?
+Is it that {domain} already has calculators covered somewhere, or that this isn't a priority this quarter?
 
-Both answers are useful to me. The second tells me I'm talking to the wrong kind of firm.
+Both answers help me. The first tells me I'm pitching something you already own; the second tells me I'm talking to the wrong kind of firm.
 
 Qasem""",
         },
@@ -229,8 +237,10 @@ def clean_org(org: str, domain: str) -> str:
 
 def demo_url(row: dict) -> str:
     q = urllib.parse.urlencode({
-        "co": clean_org(row["org"], row["domain"]),
-        "ref": row["domain"],
+        "brand": clean_org(row["org"], row["domain"]),
+        "color": "0b5ea8",
+        "key": DEMO_KEY,
+        "leads": "1",
     })
     return f"{DEMO_BASE}?{q}"
 
@@ -255,7 +265,16 @@ def render(row: dict, touch: int, angle: str) -> tuple[str, str]:
     body = t["body"].format(**vals)
     out = []
     for para in body.split("\n\n"):
-        out.append(para if "\n" in para else textwrap.fill(para, width=72))
+        # Never let the wrapper split the demo URL. A link broken across lines
+        # (".../mortgage-" / "calculator?...") arrives unclickable in a lot of
+        # mail clients, which kills the one thing this email is asking them to do.
+        out.append(
+            para
+            if "\n" in para
+            else textwrap.fill(
+                para, width=72, break_long_words=False, break_on_hyphens=False
+            )
+        )
     subject = t["subject"].format(**vals) if t["subject"] else ""
     return subject, "\n\n".join(out)
 
