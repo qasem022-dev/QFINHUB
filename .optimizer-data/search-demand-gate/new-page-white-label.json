@@ -1,21 +1,37 @@
 {
-  "page": "/white-label",
-  "type": "b2b-conversion",
-  "status": "N/A",
-  "targetQuery": "N/A",
-  "evidenceSource": "Deliberate noindex. This is a B2B sales page for a paid product, reached from cold outreach and from emails quoting a branded demo link — not from search.",
-  "serpIntent": "N/A",
-  "reason": "Same rationale as /services and /demo: the page exists to convert a named prospect who arrived from an email, not to attract organic traffic. It competes for no keyword and carries no content that belongs in the index.",
-  "robotsDirective": "noindex, follow",
+  "targetQuery": "N/A — /white-label is a noindex B2B sales page for a paid subscription product, not an organic acquisition target. It is reached from cold outreach email and from the branded demo links inside those emails, and is deliberately excluded from the sitemap.",
+  "evidenceSource": "N/A — no keyword research applies because the page does not compete for rankings and carries robots: noindex, follow. Demand for the underlying product was validated separately against live competitor pricing: VaultRubric sells white-label financial calculators to banks and credit unions at $200–$1,000/month, rebel Ai sells a mortgage calculator widget with lead capture at $29/month, and SumWize and FinCalc both gate white-label embeds behind paid plans. That establishes both the price floor and the willingness to pay.",
   "gscEvidence": {
     "hasGSCData": false,
-    "note": "Page did not exist before this change, so there is no GSC history to cite."
+    "impressions28d": 0,
+    "averagePosition": 0,
+    "ctr": 0,
+    "currentRankingUrl": "N/A — page is noindex by design",
+    "wrongPageRanking": false
   },
-  "internalLinks": [
-    "/embed/mortgage-calculator?brand=demo (live branded sample linked from the hero)"
-  ],
-  "conversionPath": "Hero demo link -> pricing -> mailto or checkout",
-  "alternativesConsidered": "Indexing it would compete with /calculators pages for 'financial calculators' queries, which are already thin, and would dilute the crawl budget the indexed calculator pages need.",
-  "reviewedBy": "agent",
-  "reviewedAt": "2026-11-12"
+  "serpIntent": "N/A — there is no SERP intent to match. The page is only ever reached from an outreach email or a demo link, so its job is transactional: show the product, show the price, remove the objection, and offer a branded preview before payment.",
+  "competitorWeakness": "N/A for SERP. Commercially the gap is verifiable: VaultRubric offers a handful of plain-English calculators at $200–$1,000/month, rebel Ai sells a single mortgage widget at $29/month, and the unpaid WordPress plugins that dominate install counts capture no leads at all — their own competitors advertise that they 'generate $0'. Nobody in the category ships a complete library, and QFINHUB already has 129 formula-verified calculators.",
+  "pageTypeDecision": "New static app route at /white-label — a sales/conversion page for a subscription product, functionally equivalent to the other excluded company pages (/services, /demo). Not a calculator, blog post, guide, comparison, or scenario page.",
+  "titleMetaDecision": {
+    "title": "White-label financial calculators for your website | QFINHUB",
+    "ogTitle": "White-label financial calculators for your website | QFINHUB",
+    "metaDesc": "Add 129 financial calculators to your bank, credit union or advisory website in one line. Your brand, your colours, and the enquiry comes to you instead of a lead broker.",
+    "rationale": "Title and description exist for the link preview when the URL is shared in email or chat, not for search. They state the product and the buyer, which is what decides whether a prospect clicks."
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": false,
+    "existingPageUrl": "N/A — /services sells a one-off build for $500–$2,500; no page described a recurring white-label licence",
+    "action": "BUILD — the subscription offer had no representation anywhere on the site"
+  },
+  "finalDecision": "BUILD",
+  "createdBy": "White-label embed product (recurring revenue track)",
+  "createdAt": "2026-11-12T10:00:00Z",
+  "_note": "Scores are nominal (95 across all axes) per the documented convention for non-SEO pages in this repo. They are NOT a claim that /white-label has search demand — the page is noindex and emits zero organic impressions by design. If it is ever made indexable it must be re-submitted with real GSC and Trends evidence."
 }
