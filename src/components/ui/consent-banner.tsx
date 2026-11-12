@@ -15,6 +15,7 @@ import {
   type ConsentState,
 } from "@/lib/consent-manager";
 import { X, Shield } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 // ── Constants ──
 
@@ -194,6 +195,7 @@ function CustomizeModal({
 // ── Consent Banner Component ──
 
 export function ConsentBanner() {
+  const pathname = usePathname();
   const [visible, setVisible] = React.useState(false);
   const [showModal, setShowModal] = React.useState(false);
   const [customSettings, setCustomSettings] = React.useState<ConsentSettings>(
@@ -201,6 +203,11 @@ export function ConsentBanner() {
   );
 
   React.useEffect(() => {
+    // /demo is a per-prospect sales preview. A consent banner sliding over the
+    // calculator makes the sample look broken to the stranger we just emailed,
+    // and there is no ad inventory on that route to consent to.
+    if (pathname?.startsWith("/demo")) return;
+
     // Delay the appearance slightly to avoid layout shift
     const timer = setTimeout(() => {
       if (shouldShowBanner()) {
@@ -208,7 +215,7 @@ export function ConsentBanner() {
       }
     }, 800);
     return () => clearTimeout(timer);
-  }, []);
+  }, [pathname]);
 
   const handleAcceptAll = React.useCallback(() => {
     applyConsent(ACCEPT_ALL_CONSENT);
