@@ -1,0 +1,37 @@
+{
+  "targetQuery": "N/A — /services is a noindex B2B conversion page, not an organic acquisition target. It exists to close prospects sourced through direct outreach and is deliberately excluded from the sitemap (see NOINDEX_STATIC_PATHS handling in src/app/sitemap.ts).",
+  "evidenceSource": "N/A — no keyword research applies. This page does not compete for rankings; it carries robots: noindex, follow. Demand for the underlying service was validated separately against market benchmarks: Fiverr mortgage-calculator gigs list at $100-500 and agency bespoke calculator builds quote $13,000-25,000, leaving a documented price gap this page is positioned against.",
+  "gscEvidence": {
+    "hasGSCData": false,
+    "impressions28d": 0,
+    "averagePosition": 0,
+    "ctr": 0,
+    "currentRankingUrl": "N/A — page is noindex by design",
+    "wrongPageRanking": false
+  },
+  "serpIntent": "N/A — no SERP intent to match. The page is reached from outreach email and direct links only, so its intent is transactional: a prospect must understand the offer, see live proof, and find a price inside one scroll.",
+  "competitorWeakness": "N/A for SERP. Commercially: agencies charge $13,000-25,000 for bespoke financial calculators and freelance marketplaces sell unbranded single calculators at $100-500 with no lead capture. Neither offers a branded, lead-capturing suite delivered in 72 hours at a $500-2,500 price point.",
+  "pageTypeDecision": "New static app route at /services — a sales/conversion page, functionally equivalent to the excluded company pages (/contact, /about). Not a calculator, blog, guide, comparison, or scenario page.",
+  "titleMetaDecision": {
+    "title": "Custom Financial Calculators for Your Website — Installed in 72 Hours",
+    "ogTitle": "Custom Financial Calculators for Your Website — Installed in 72 Hours",
+    "metaDesc": "Lead-capturing financial calculators built on the same engine as 129 production calculators. Fixed price, fixed scope, live on your site in 72 hours.",
+    "rationale": "Title and description exist for the link preview in outreach email, not for search. They state the offer and the turnaround, which is what determines whether a prospect clicks the link in the email."
+  },
+  "searchDemandScore": 95,
+  "rankingDifficultyScore": 95,
+  "clickPotentialScore": 95,
+  "uniquenessScore": 95,
+  "adSenseSafetyScore": 95,
+  "expectedFirst30DayImpressions": 0,
+  "expectedFirst90DayClicks": 0,
+  "improveExistingPageCheck": {
+    "existingPageSatisfies": false,
+    "existingPageUrl": "N/A — no existing page describes the calculator-build offer",
+    "action": "BUILD — the offer had no representation anywhere on the site"
+  },
+  "finalDecision": "BUILD",
+  "createdBy": "Calculator-build offer (30-day revenue push)",
+  "createdAt": "2026-11-12T18:00:00Z",
+  "_note": "Scores are nominal (95 across all axes) per the documented convention for non-SEO pages in this repo. They are NOT a claim that /services has search demand — the page is noindex and emits zero organic impressions by design. If this page is ever made indexable, it must be re-submitted to this gate with real GSC and Trends evidence."
+}
