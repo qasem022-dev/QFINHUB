@@ -136,12 +136,12 @@ export default function ServicesPage() {
             72 hours — before you pay anything.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="mailto:Q.finhub@qfinhub.com?subject=Calculator%20for%20my%20site"
+            <Link
+              href="/demo"
               className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-primary-700"
             >
-              Request a free sample
-            </a>
+              Try a live sample
+            </Link>
             <a
               href="#pricing"
               className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-6 py-3 text-base font-semibold text-gray-700 transition hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
@@ -149,6 +149,10 @@ export default function ServicesPage() {
               See pricing
             </a>
           </div>
+          <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+            No form, no email required — the sample is a working calculator, not a
+            screenshot.
+          </p>
         </div>
 
         {/* ROI strip */}

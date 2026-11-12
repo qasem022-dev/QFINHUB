@@ -26,7 +26,11 @@ import urllib.request
 from pathlib import Path
 
 DATA = Path(".optimizer-data")
-SOURCES = [DATA / "prospects-brokers.csv", DATA / "prospects-clean.csv"]
+SOURCES = [
+    DATA / "prospects-brokers.csv",
+    DATA / "prospects-expanded.csv",
+    DATA / "prospects-clean.csv",
+]
 OUT = DATA / "prospects-final.csv"
 UA = "Mozilla/5.0 (compatible; QFINHUB-research/1.0; +https://www.qfinhub.com)"
 
